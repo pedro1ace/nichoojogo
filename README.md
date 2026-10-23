@@ -14,8 +14,8 @@ Design: 2D, sprites em pixel art, chamativo.
 Como funciona hoje no protótipo:
 
 - Até 7 perguntas por dia, as mesmas para todo mundo, com **25 segundos** cada (o relógio começa depois de uma contagem de 3).
-- A viagem começa na Terra, com o céu claro. Cada resposta faz o astronauta viajar `pontos × 10` anos-luz,
-  sempre no mesmo tempo: as raras descem rápido e as óbvias quase não saem do lugar. Um astronautinha acompanha.
+- A viagem começa na Terra, com o céu claro. Cada resposta faz o tardígrado viajar `pontos × 10` anos-luz,
+  sempre no mesmo tempo: as raras descem rápido e as óbvias quase não saem do lugar. Um tardígrado de capacete (o mascote) acompanha.
 - No caminho: marcos (Lua, Marte, Júpiter... buraco negro), curiosidades nas laterais, régua de profundidade
   e linhas mostrando até onde cada faixa de raridade levaria nesta pergunta.
 - Faixas: ÓBVIA (0 a 4), COMUM (5 a 19), INCOMUM (20 a 49), RARA (50+) e a **supernova**,

@@ -173,38 +173,6 @@ const FOGUETE = [
   "....OOOOO....",
 ].reverse(); // de ponta-cabeça: o foguete desce
 
-// Astronauta (18x21): capacete grande com visor em degradê, mochila e luzinha na antena.
-const ASTRONAUTA_A = [
-  "........Y.........",
-  "........O.........",
-  "....OOOOOOOOOO....",
-  "...OWWWWWWWWWWO...",
-  "..OWWWWWWWWWWwwO..",
-  "..OWOOOOOOOOOOwO..",
-  ".GOWOddbbbBBcOwO..",
-  "GGOWOdbbbBBcHOwO..",
-  "GgOWOdbbBBcHcOwO..",
-  "GgOWOddbbBBBcOsO..",
-  "GgOWWOOOOOOOOwsO..",
-  ".GOwWWWWWWWWwwsO..",
-  "..OOwwwwwwwwssOO..",
-  ".OOOWWRRWWYWWwsOO.",
-  "OWWOWWRRWWWWWwsOwO",
-  "OWwOWWWWWWWWWwsOwO",
-  "OGgOwWWWsWWWwwsOgO",
-  ".OOOwWWWOOWWwssOO.",
-  "...OwWWO..OWwsO...",
-  "...OGGgO..OGggO...",
-  "...OOOOO..OOOOO...",
-];
-const ASTRONAUTA_B = ASTRONAUTA_A.map((l, i) => (i === 0 ? l.replace("Y", "y") : l));
-const MASCOTE = [ASTRONAUTA_A, ASTRONAUTA_B];
-const PALETA_ASTRONAUTA = {
-  O: "#1a0a1e", W: "#e8453c", w: "#b32a2e", s: "#6a1424",
-  d: "#0b2a55", b: "#1f6fa8", B: "#3fb8ec", c: "#9ff3ff", H: "#ffffff",
-  G: "#c9ccd8", g: "#6a6e84", R: "#f4f6ff", Y: "#ffd23f", y: "#8a6a10",
-};
-
 const SATELITE = [
   "BBb.....bBB",
   "BBbO...ObBB",
@@ -902,7 +870,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
   }
 
-  // O astronauta desce sozinho, seguindo a câmera com uma mola suave.
+  // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
+  const tardigrado = criarTardigrado();
+  let felizAte = 0;
   function desenharFoguete() {
     foguete.al += (camera.atual - foguete.al) * (1 - Math.exp(-dt * 7.5));
     foguete.al = Math.max(foguete.al, camera.atual - 50); // atrasa um pouco, mas nunca sai da tela
@@ -911,16 +881,24 @@ function criarCena(telaPixel, telaTexto, raiz) {
     mascote.pulo *= Math.exp(-dt * 6);
     foguete.x = Math.min(L - 26, L / 2 + Math.max(60, L * 0.28)) + lado;
     foguete.y = naTelaExata(foguete.al) - 6 + balanco - mascote.pulo;
-    const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.12 + Math.min(0.25, camera.velocidade / 4000);
+    const descendo = camera.velocidade > 20;
+    const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.08 + Math.min(0.3, camera.velocidade / 3000);
+    // quadro: perninhas remando (rápido descendo, devagar parado), pisca de vez em quando
+    const agoraS = performance.now();
+    const feliz = agoraS < felizAte;
+    const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
+    const piscando = !feliz && tempo % 3.7 < 0.13;
+    const img = piscando ? tardigrado.piscar : (feliz ? tardigrado.feliz : tardigrado.andar)[ciclo];
+    // cada pixel do bichinho vira 3 px na tela (2 no celular): nítido e do tamanho certo
+    const pz = Math.max(2, Math.round(escala * 0.75));
+    // "respira": estica e encolhe de leve
+    const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
     tx.save();
+    tx.imageSmoothingEnabled = false;
     tx.translate(foguete.x * escala, foguete.y * escala);
     tx.rotate(inclina);
-    // cada pixel do astronauta vira 3 px na tela (2 no celular): nítido e não gigante
-    const k = Math.max(2, Math.round(escala * 0.75)) / escala;
-    tx.scale(k, k);
-    tx.translate(-foguete.x * escala, -foguete.y * escala);
-    const q = MASCOTE[Math.floor(tempo * 1.8) % 2];
-    desenharSprite(alta, q, foguete.x - 9, foguete.y - 10.5, PALETA_ASTRONAUTA);
+    tx.scale(1 / resp, resp);
+    tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
     return { x: foguete.x, y: foguete.y };
   }
@@ -1072,6 +1050,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     flash = Math.max(flash, c.supernova ? 0.85 : k > 0.6 ? 0.35 : 0.12);
     tremer(6 + 22 * Math.min(1, k) + (c.supernova ? 10 : 0), 250 + 500 * k);
     mascote.pulo = 10 + 14 * k;
+    felizAte = performance.now() + 2200;
     if (window.Som && Som.brilho) Som.brilho(k);
   }
   function desenharEstouros() {
