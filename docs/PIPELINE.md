@@ -1,0 +1,58 @@
+# Pipeline do Nicho
+
+Etapas em ordem. Cada uma termina em algo que dá para testar.
+
+## Etapa 0: Repositório e dupla
+
+- [x] Repositório criado e estrutura inicial no ar.
+- [ ] Convidar o parceiro (`cincoano`) em Settings > Collaborators > Add people.
+- [ ] Combinar o fluxo: cada mudança numa branch com pull request, e o outro revisa.
+- [ ] Ligar o GitHub Pages (Settings > Pages > Deploy from a branch > `main`, pasta `/ (root)`) para jogar online.
+
+## Etapa 1: Peso de nicho (básico pronto)
+
+- [x] Baixar a base pt-BR (`scripts/baixar_dados.sh`).
+- [x] Calcular o peso por pergunta a partir do ICF (`scripts/pontuar.py`).
+- [x] Ajustes manuais por pergunta (`dados/ajustes/`).
+- [ ] Revisar as 5 perguntas iniciais e preencher as respostas marcadas `sem_dado`.
+- [ ] Fechar a fórmula: quanto pesa o percentil vs. a raridade global, e a curva dos pontos.
+
+## Etapa 2: Banco de perguntas (o gargalo)
+
+A sessão é remontada todo dia com perguntas inéditas. Com 7 por dia, um mês pede uns 200 conjuntos de respostas.
+A base pt-BR só tem palavras e não tem categorias, então cada pergunta precisa de curadoria.
+Seguimos o mesmo método do Krillion:
+
+- [ ] **Juntar fontes** por pergunta: listas da base, dicionários, páginas da Wikipédia, enciclopédias.
+      Mesclar e limpar num conjunto único (um script por tipo de fonte, por exemplo `scripts/importar_wikipedia.py`).
+- [ ] **Apelidos**: guardar grafias e nomes alternativos (`Fobos | Phobos`). Isso evita "minha resposta não foi aceita".
+- [ ] **Raridade em duas vias**:
+      - mecânica, pelo ICF, quando a resposta é uma palavra comum de texto (países, animais, profissões);
+      - LLM mais revisão humana quando o ICF não serve (nomes próprios, termos com duplo sentido como "Mesa").
+        Pedir "de 0 a 100, quantos brasileiros conhecem isto?" e gravar em `dados/ajustes/`.
+- [ ] **Supernova pela graça, não só pela raridade**: algo que poucos acertam, mas que alguns acertam de verdade.
+- [ ] Meta: 50 perguntas revisadas antes do lançamento, depois umas 7 novas por semana.
+
+## Etapa 3: Jogo em pixel art (protótipo pronto)
+
+- [x] Sessão diária com sorteio pela data, uma resposta por pergunta, 3 tentativas, supernova.
+- [x] Cena 2D em pixel art: foguete, estrelas, sprite por faixa de pontos (satélite, lua, planeta, supernova).
+- [x] Resultado em emoji para compartilhar, e progresso do dia salvo no navegador.
+- [ ] **Calendário de perguntas** (`dados/calendario.json`: data → perguntas), para garantir perguntas inéditas
+      e controlar a dificuldade, em vez do sorteio atual (que repete perguntas).
+- [ ] Autocorreção generosa: aceitar 1 ou 2 letras de diferença contra respostas e apelidos, com "você quis dizer…".
+- [ ] Mais sprites e animação: explosão da supernova, foguete trocando de fase conforme a distância, sons 8-bit.
+- [ ] Imagem do resultado (canvas em pixel art) para compartilhar além do texto.
+- [ ] Modo ilimitado e arquivo dos dias anteriores.
+
+## Etapa 4: Lançamento
+
+- [ ] Nome e domínio definitivos.
+- [ ] Teste com amigos. O que todo mundo responde é óbvio por definição, então usar essas respostas para recalibrar os pesos.
+- [ ] Estatísticas anônimas das respostas (o que foi digitado e não foi aceito mostra o que falta nas listas).
+- [ ] Depois: ranking entre amigos, multiplayer, pacotes temáticos.
+
+## Divisão sugerida para a dupla
+
+- Pessoa A: dados (Etapas 1 e 2), fontes, pesos, revisão das perguntas.
+- Pessoa B: jogo (Etapa 3), sprites, animações, deploy.

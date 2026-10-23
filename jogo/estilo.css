@@ -1,0 +1,106 @@
+:root {
+  --fundo: #07031f;
+  --caixa: #140c45;
+  --borda: #3ad7ff;
+  --texto: #f4f4ff;
+  --suave: #9aa3c7;
+  --amarelo: #ffd23f;
+  --rosa: #ff3dd6;
+  --verde: #7ef0c1;
+  --vermelho: #ff3d6e;
+  --titulo: "Press Start 2P", monospace;
+  --corpo: "VT323", monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  min-height: 100vh;
+  background-color: var(--fundo);
+  /* estrelinhas de 2px repetidas no fundo */
+  background-image:
+    radial-gradient(#ffffff 1px, transparent 1px),
+    radial-gradient(#8f86ff 1px, transparent 1px);
+  background-size: 97px 89px, 53px 61px;
+  background-position: 0 0, 23px 31px;
+  color: var(--texto);
+  font-family: var(--corpo);
+  font-size: 22px;
+  line-height: 1.25;
+}
+main { max-width: 560px; margin: 0 auto; padding: 24px 16px 48px; }
+header { text-align: center; margin-bottom: 16px; }
+h1 {
+  font-family: var(--titulo);
+  font-size: 40px;
+  margin: 0;
+  color: var(--amarelo);
+  text-shadow: 4px 4px 0 var(--rosa), 8px 8px 0 #3a1a8a;
+  letter-spacing: 4px;
+}
+.lema { color: var(--suave); margin: 12px 0 0; }
+
+#cena {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  margin-bottom: 16px;
+  box-shadow: 0 0 0 4px var(--fundo), 0 0 0 8px var(--borda);
+}
+
+/* Borda "em degraus" de pixel art */
+.caixa {
+  background: var(--caixa);
+  padding: 20px;
+  margin: 8px;
+  box-shadow:
+    0 -4px 0 0 var(--borda), 0 4px 0 0 var(--borda),
+    -4px 0 0 0 var(--borda), 4px 0 0 0 var(--borda),
+    8px 8px 0 0 #000;
+}
+.progresso { display: flex; justify-content: space-between; color: var(--suave); }
+#distancia { color: var(--amarelo); }
+h2 { font-family: var(--titulo); font-size: 15px; line-height: 1.7; margin: 16px 0; }
+form { display: flex; gap: 12px; }
+input {
+  flex: 1; min-width: 0;
+  padding: 10px 12px;
+  font: inherit;
+  background: #07031f; color: var(--texto);
+  border: 0; border-radius: 0;
+  box-shadow: inset 0 0 0 3px #5b4bd6;
+}
+input:focus { outline: none; box-shadow: inset 0 0 0 3px var(--amarelo); }
+button {
+  font-family: var(--titulo); font-size: 12px;
+  padding: 12px 14px;
+  border: 0; border-radius: 0;
+  background: var(--amarelo); color: #1a1000;
+  box-shadow: inset -4px -4px 0 #c79400, 4px 4px 0 #000;
+  cursor: pointer;
+}
+button:active { transform: translate(2px, 2px); box-shadow: inset -4px -4px 0 #c79400, 2px 2px 0 #000; }
+button:disabled { filter: grayscale(1); opacity: 0.5; cursor: default; }
+#combustivel { color: var(--suave); min-height: 1.2em; }
+#mensagem { min-height: 1.4em; }
+.acerto { color: var(--verde); }
+.erro { color: var(--vermelho); }
+.supernova { color: var(--rosa); animation: piscar 0.4s steps(2) 6; }
+@keyframes piscar { 50% { color: var(--amarelo); } }
+ol { padding-left: 1.4em; margin: 8px 0 16px; }
+li span, .suave { color: var(--suave); }
+pre {
+  font-family: var(--corpo); font-size: 24px;
+  white-space: pre-wrap; background: #07031f; padding: 12px;
+  box-shadow: inset 0 0 0 3px #5b4bd6;
+}
+#carregando { text-align: center; color: var(--suave); }
+
+@media (max-width: 420px) {
+  h1 { font-size: 30px; }
+  form { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .supernova { animation: none; }
+}

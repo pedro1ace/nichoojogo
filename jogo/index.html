@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicho</title>
+  <meta name="description" content="Jogo diário de palavras: quanto mais nichada a resposta, mais longe seu foguete vai.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>NICHO</h1>
+      <p class="lema">uma em um bilhão de estrelas</p>
+    </header>
+
+    <canvas id="cena" aria-hidden="true"></canvas>
+
+    <section id="painel" class="caixa" hidden>
+      <div class="progresso">
+        <span id="rodada"></span>
+        <span id="distancia">0 anos-luz</span>
+      </div>
+      <h2 id="pergunta"></h2>
+      <form id="formulario" autocomplete="off">
+        <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta" required>
+        <button type="submit">LANÇAR</button>
+      </form>
+      <p id="combustivel"></p>
+      <p id="mensagem" role="status"></p>
+      <div id="revelacao" hidden>
+        <p>As mais nichadas desta pergunta:</p>
+        <ol id="top"></ol>
+        <button id="proxima" type="button">PRÓXIMA ▶</button>
+      </div>
+    </section>
+
+    <section id="fim" class="caixa" hidden>
+      <h2>FIM DA VIAGEM</h2>
+      <p id="resumo"></p>
+      <pre id="compartilhar"></pre>
+      <button id="copiar" type="button">COPIAR RESULTADO</button>
+      <p class="suave">Novas perguntas amanhã.</p>
+    </section>
+
+    <p id="carregando">contagem regressiva…</p>
+  </main>
+  <script type="module" src="jogo.js"></script>
+</body>
+</html>
