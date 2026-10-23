@@ -34,6 +34,14 @@ Seguimos o mesmo método do Krillion:
 - [ ] **Supernova pela graça, não só pela raridade**: algo que poucos acertam, mas que alguns acertam de verdade.
 - [ ] Meta: 50 perguntas revisadas antes do lançamento, depois umas 7 novas por semana.
 
+### Categorias integradas e fontes
+
+- **Elementos químicos** (`dados/categorias/elementos-quimicos.txt`):
+  - **Fonte**: Wikidata SPARQL endpoint (`wd:Q11344` / chemical element, `wdt:P1086` números atômicos 1 a 118).
+  - **Script de importação**: `scripts/importar_elementos.py`.
+  - **Data**: 2026-10-23.
+  - **Validação**: Exatamente 118 elementos únicos, nomes preferenciais em pt-BR, com símbolos químicos IUPAC e variantes ortográficas em português registradas como apelidos.
+
 ## Etapa 3: Jogo em pixel art (protótipo pronto)
 
 - [x] Sessão diária com sorteio pela data, uma resposta por pergunta, 3 tentativas, supernova.

@@ -3,7 +3,7 @@
 // Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
 // Acertar a "supernova" (a resposta secreta da pergunta) dobra os pontos.
 // Vem de outros arquivos: window.NICHO_DADOS (dados.js), Som (som.js),
-// criarCena, faixaDe, FAIXAS, AL_POR_PONTO, DURACAO_DESCIDA (cena.js).
+// criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
 
 const RODADAS_POR_DIA = 7;
 const SEGUNDOS = 25;
@@ -179,7 +179,8 @@ function iniciar() {
     estado.historico = salvo.historico;
     estado.total = estado.totalMostrado = salvo.total;
     estado.rodada = salvo.historico.length;
-    cena.irPara(estado.total * AL_POR_PONTO);
+    cena.irPara(profundidade());
+    if (salvo.historico.some((h) => h.supernova)) cena.dourado(false);
     $("pontos").textContent = numero(estado.total);
   }
   montarQuadrados();
@@ -193,6 +194,16 @@ function iniciar() {
     $("comecar").textContent = "▼ CONTINUAR VIAGEM ▼";
     document.querySelector("#inicio [data-zerar]").hidden = false;
   }
+}
+
+// profundidade total do dia: soma da viagem de cada resposta
+function profundidade() {
+  return estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
+}
+
+function mostrarPergunta(ligada) {
+  $("cartao-pergunta").hidden = !ligada;
+  $("painel-resposta").hidden = !ligada;
 }
 
 function montarQuadrados() {
@@ -229,7 +240,7 @@ function iniciarRodada() {
   $("sugestao").hidden = true;
   avisar("", "");
   $("palpite").value = "";
-  $("cartao-pergunta").hidden = false;
+  mostrarPergunta(true);
 
   // contagem antes do relógio, para dar tempo de ler
   let n = 3;
@@ -336,18 +347,11 @@ function desenharRadar(fracao, urgente) {
     c.fillRect(m + Math.cos(ang) * dist * 24 - 1, m + Math.sin(ang) * dist * 24 - 1, 2, 2);
   }
   c.restore();
-  // planeta no centro, com sombra e anel
-  const planeta = c.createRadialGradient(m - 2, m - 2, 0.5, m, m, 5);
-  planeta.addColorStop(0, "#fff0a0");
-  planeta.addColorStop(1, urgente ? "#c0203a" : "#e08a00");
-  c.fillStyle = planeta;
+  // miolo escuro: o número do tempo fica em cima
+  c.fillStyle = "rgba(5, 3, 24, 0.85)";
   c.beginPath();
-  c.arc(m, m, 4.5, 0, Math.PI * 2);
+  c.arc(m, m, 13, 0, Math.PI * 2);
   c.fill();
-  c.strokeStyle = "rgba(255, 230, 160, 0.7)";
-  c.beginPath();
-  c.ellipse(m, m, 8, 2.2, -0.35, 0, Math.PI * 2);
-  c.stroke();
   // lua na ponta do feixe
   c.fillStyle = "#ffffff";
   c.beginPath();
@@ -442,7 +446,7 @@ function palpitar(evento) {
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
   const percentil = cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   cena.descer(achada.resposta, pontos, supernova);
   Som.descer(Math.min(1, pontos / 100));
   registrar(cat, achada.resposta, pontos, supernova, percentil);
@@ -454,7 +458,7 @@ function palpitar(evento) {
 function tempoEsgotado() {
   pararRelogio();
   const cat = estado.categorias[estado.rodada];
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   Som.erro();
   registrar(cat, null, 0, false, 0);
   mostrarResultado(cat, null, 0, false);
@@ -469,28 +473,17 @@ function registrar(cat, resposta, pontos, supernova, percentil) {
 function mostrarResultado(cat, resposta, pontos, supernova) {
   const faixa = resposta
     ? faixaDe(pontos, supernova)
-    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#9aa3c7", frase: "O relógio zerou. Esta fica sem pontos." };
+    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: "O relógio zerou. Esta fica sem pontos." };
   const card = $("resultado");
   card.style.setProperty("--cor-faixa", faixa.cor);
   $("icone").src = cena.icones[faixa.id];
   $("nome-faixa").textContent = faixa.nome;
   $("palavra").textContent = resposta ? `“${resposta}”` : "";
   $("linha-pontos").innerHTML = resposta
-    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(pontos * AL_POR_PONTO)} AL`
+    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(viagem(pontos))} AL`
     : "+0 PONTOS";
   $("frase").textContent = faixa.frase;
 
-  const top = [...cat.respostas].sort((a, b) => b.pontos - a.pontos).slice(0, 4);
-  if (!top.some((r) => r.resposta === cat.supernova)) top.push(cat.respostas.find((r) => r.resposta === cat.supernova));
-  $("mais-nichadas").innerHTML = "";
-  for (const r of top) {
-    const li = document.createElement("li");
-    li.textContent = r.resposta + " ";
-    const extra = document.createElement("span");
-    extra.textContent = r.resposta === cat.supernova ? `${r.pontos} ★` : `${r.pontos}`;
-    li.append(extra);
-    $("mais-nichadas").append(li);
-  }
   // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
   const nivel = !resposta ? 0 : supernova ? 4 : ["obvia", "comum", "incomum", "rara", "lendaria"].indexOf(faixa.id);
   const nome = $("nome-faixa");
@@ -509,12 +502,15 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
     requestAnimationFrame(contar);
   }
   const ultima = estado.rodada + 1 >= estado.categorias.length;
-  $("proxima").textContent = ultima ? "VER RESULTADO ▼" : "VIAJAR ▼";
+  $("proxima").textContent = ultima ? "VOLTAR ▲" : "VIAJAR ▼";
+  if (supernova) cena.dourado(true);
   card.hidden = false;
+  cena.resultado();
   if (supernova) Som.supernova();
   else if (resposta) Som.faixa(FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
-  Som.profundidade(estado.total * AL_POR_PONTO);
+  Som.profundidade(profundidade());
   montarQuadrados();
+  if (ultima) $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
   $("proxima").focus();
 }
 
@@ -525,27 +521,37 @@ function proxima() {
     iniciarRodada();
     return;
   }
-  mostrarFim(true);
+  // fim da viagem: o cenário sobe devagar de volta até a Terra, e aí vem o relatório
+  $("proxima").disabled = true;
+  cena.subir(SUBIDA);
+  setTimeout(() => {
+    $("proxima").disabled = false;
+    mostrarFim(true);
+  }, SUBIDA - 300);
 }
+const SUBIDA = 4200;
 
 // ---------- fim ----------
 
 function mostrarFim(comSom) {
   if (comSom) Som.fim();
+  else cena.irPara(0);
   cena.limpar();
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   $("fim").hidden = false;
   montarQuadrados();
   $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
   $("fim-pontos").textContent = numero(estado.total);
-  $("fim-profundidade").textContent = `↓ ${numero(estado.total * AL_POR_PONTO)} AL de profundidade`;
+  $("fim-profundidade").textContent = `↓ ${numero(profundidade())} AL de profundidade`;
   const media = estado.historico.reduce((s, h) => s + (h.percentil || 0), 0) / Math.max(1, estado.historico.length);
   $("fim-comparacao").textContent = `Suas respostas foram mais nichadas que ${Math.round(media * 100)}% das respostas possíveis.`;
   montarGrafico();
+  montarFaixas();
+  montarRespostas();
 
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(estado.total * AL_POR_PONTO)} AL 🐻`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(profundidade())} AL 🐻`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }
@@ -563,7 +569,7 @@ function montarGrafico() {
     g.append(e);
   });
   estado.historico.forEach((h, i) => {
-    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#5a5490" };
+    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#ff6b81" };
     const col = document.createElement("div");
     col.className = "coluna";
     col.style.color = faixa.cor;
@@ -585,6 +591,173 @@ function montarGrafico() {
     col.append(fio, img, num, dica);
     g.append(col);
   });
+}
+
+// Tabela das faixas, da mais rara para a mais óbvia; as que você alcançou hoje ficam acesas.
+function montarFaixas() {
+  const lista = $("tabela-faixas");
+  lista.innerHTML = "";
+  const alcancadas = new Set(estado.historico.filter((h) => h.resposta).map((h) => faixaDe(h.pontos, h.supernova).id));
+  const linhas = [
+    { ...SUPERNOVA, faixa: "★ 1 por pergunta", texto: "A resposta escondida. Só existe uma." },
+    ...FAIXAS.map((f, i) => ({
+      ...f,
+      faixa: i === 0 ? `${f.min}+ pts` : `${f.min}–${FAIXAS[i - 1].min - 1} pts`,
+      texto: f.frase,
+    })),
+  ];
+  for (const l of linhas) {
+    const li = document.createElement("li");
+    li.style.setProperty("--c", l.cor);
+    if (alcancadas.has(l.id)) li.className = "sua";
+    const img = document.createElement("img");
+    img.src = cena.icones[l.id];
+    img.alt = "";
+    const pts = document.createElement("span");
+    pts.className = "faixa-pts";
+    pts.textContent = l.faixa;
+    const txt = document.createElement("span");
+    txt.textContent = `${l.nome[0]}${l.nome.slice(1).toLowerCase()}. ${l.texto}`;
+    li.append(img, pts, txt);
+    lista.append(li);
+  }
+}
+
+// Cada incursão do dia: a pergunta, a sua resposta, a faixa e os pontos.
+function montarRespostas() {
+  const lista = $("respostas-dia");
+  lista.innerHTML = "";
+  estado.historico.forEach((h, i) => {
+    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#6b6a99", nome: "" };
+    const li = document.createElement("li");
+    li.style.setProperty("--c", faixa.cor);
+    if (!h.resposta) li.className = "vazia";
+    const n = document.createElement("span");
+    n.className = "n";
+    n.textContent = i + 1;
+    const img = document.createElement("img");
+    img.src = cena.icones[faixa.id];
+    img.alt = "";
+    const cat = document.createElement("span");
+    cat.className = "cat";
+    cat.textContent = h.categoria;
+    const resp = document.createElement("span");
+    resp.className = "resp";
+    resp.textContent = h.resposta || "— tempo esgotado";
+    const pts = document.createElement("span");
+    pts.className = "pts";
+    pts.textContent = `+${h.pontos}`;
+    const extra = document.createElement("span");
+    extra.className = "extra";
+    extra.textContent = !h.resposta
+      ? ""
+      : h.supernova
+        ? "Supernova! A resposta escondida desta pergunta."
+        : `${faixa.nome[0]}${faixa.nome.slice(1).toLowerCase()} · mais rara que ${Math.round((h.percentil || 0) * 100)}% das respostas`;
+    const seta = document.createElement("span");
+    seta.className = "seta";
+    seta.textContent = "▾";
+    li.append(n, img, cat, resp, pts, extra, seta);
+    li.tabIndex = 0;
+    li.setAttribute("role", "button");
+    li.setAttribute("aria-expanded", "false");
+    li.title = "Ver todas as respostas desta pergunta";
+    const alternar = (e) => {
+      if (e.target.closest(".banco")) return;
+      const abrir = !li.classList.contains("aberta");
+      li.classList.toggle("aberta", abrir);
+      li.setAttribute("aria-expanded", String(abrir));
+      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta));
+    };
+    li.addEventListener("click", alternar);
+    li.addEventListener("keydown", (e) => {
+      if ((e.key === "Enter" || e.key === " ") && !e.target.closest(".banco")) { e.preventDefault(); alternar(e); }
+    });
+    lista.append(li);
+  });
+}
+
+// Uma curiosidade para cada resposta escondida (supernova).
+const CURIOSIDADE_SUPERNOVA = {
+  "capitais-do-brasil": "A capital planejada mais nova do Brasil, fundada em 1989.",
+  constelacoes: "A única constelação com nome de uma pessoa real: a rainha Berenice II, do Egito.",
+  "estados-do-brasil": "O estado mais ao norte: lá fica o Monte Caburaí, o ponto mais setentrional do país.",
+  estrelas: "No telescópio ela vira duas: uma dourada e uma azul, lado a lado.",
+  "luas-do-sistema-solar": "Lua de Saturno que pode esconder um oceano debaixo do gelo.",
+  paises: "Tem só uns 20 km de litoral, todos na cidadezinha de Neum.",
+  "planetas-e-planetas-anoes": "Foi a descoberta dela, em 2005, que tirou Plutão da lista de planetas.",
+  "elementos-quimicos": "O elemento mais pesado já criado: só uns poucos átomos existiram, por menos de um milissegundo.",
+};
+
+// Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
+function montarBanco(cat, sua) {
+  const banco = document.createElement("div");
+  banco.className = "banco";
+  const itens = cat.respostas
+    .map((r) => {
+      const sn = r.resposta === cat.supernova;
+      const pontos = sn ? r.pontos * 2 : r.pontos;
+      return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn), sn };
+    })
+    .sort((a, b) => b.sn - a.sn || b.pontos - a.pontos || a.nome.localeCompare(b.nome, "pt"));
+  const filtros = [{ id: "todas", nome: "Todas", cor: "#eef0ff" }, SUPERNOVA, ...FAIXAS];
+  let ativo = "todas";
+  const chips = document.createElement("div");
+  chips.className = "chips";
+  for (const f of filtros) {
+    const qtd = f.id === "todas" ? itens.length : itens.filter((it) => it.faixa.id === f.id).length;
+    if (!qtd) continue;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.style.setProperty("--c", f.cor);
+    b.innerHTML = `${f.id === "todas" ? "Todas" : f.nome[0] + f.nome.slice(1).toLowerCase()} <b>${qtd}</b>`;
+    if (f.id === ativo) b.className = "ativo";
+    b.addEventListener("click", () => {
+      ativo = f.id;
+      chips.querySelectorAll("button").forEach((x) => x.classList.toggle("ativo", x === b));
+      desenhar();
+    });
+    chips.append(b);
+  }
+  const campo = document.createElement("input");
+  campo.type = "search";
+  campo.placeholder = "procurar uma resposta…";
+  campo.setAttribute("aria-label", "Procurar uma resposta");
+  campo.addEventListener("input", () => desenhar());
+  const lista = document.createElement("ul");
+  const rodape = document.createElement("p");
+  rodape.className = "rodape-banco";
+  function desenhar() {
+    const q = compactar(campo.value || "");
+    const vis = itens.filter((it) => (ativo === "todas" || it.faixa.id === ativo) && (!q || compactar(it.nome).includes(q)));
+    lista.innerHTML = "";
+    for (const it of vis) {
+      const li = document.createElement("li");
+      li.style.setProperty("--c", it.faixa.cor);
+      if (it.nome === sua) li.className = "sua";
+      const img = document.createElement("img");
+      img.src = cena.icones[it.faixa.id];
+      img.alt = "";
+      const nome = document.createElement("span");
+      nome.className = "nome";
+      nome.textContent = it.nome + (it.nome === sua ? "  ← você" : "");
+      const pts = document.createElement("span");
+      pts.className = "pts";
+      pts.textContent = `+${it.pontos}`;
+      li.append(img, nome, pts);
+      if (it.sn) {
+        const nota = document.createElement("span");
+        nota.className = "nota";
+        nota.textContent = `★ Supernova. ${CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
+        li.append(nota);
+      }
+      lista.append(li);
+    }
+    rodape.textContent = `${vis.length} de ${itens.length} respostas`;
+  }
+  desenhar();
+  banco.append(chips, campo, lista, rodape);
+  return banco;
 }
 
 function contarAteAmanha() {
