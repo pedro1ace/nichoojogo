@@ -116,6 +116,12 @@ const Som = (() => {
       for (let i = 0; i < 12; i++) tom(NOTAS[i % 6] * (i >= 6 ? 2 : 1), 0.12, { tipo: "square", volume: 0.06, atraso: 0.05 * i });
       ruido(1.2, { volume: 0.08, de: 6000, ate: 3000 });
     },
+    // brilho ao chegar numa resposta rara: arpejo subindo, mais longo quanto mais rara
+    brilho(k) {
+      const n = Math.round(4 + 8 * Math.min(1, k));
+      for (let i = 0; i < n; i++) tom(NOTAS[i % 6] * (i >= 6 ? 2 : 1), 0.1, { tipo: "triangle", volume: 0.05 + 0.03 * k, atraso: 0.04 * i });
+      if (k > 0.6) ruido(0.5, { volume: 0.04, de: 5000, ate: 9000 });
+    },
     fim() {
       [392, 523.25, 659.25, 783.99].forEach((f, i) => tom(f, 0.35, { tipo: "triangle", volume: 0.1, atraso: 0.15 * i }));
     },

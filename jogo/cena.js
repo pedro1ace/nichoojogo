@@ -909,7 +909,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3) * 2.5;
     const lado = reduzirMovimento ? 0 : Math.sin(tempo * 0.55) * 5;
     mascote.pulo *= Math.exp(-dt * 6);
-    foguete.x = Math.min(L - 26, L / 2 + Math.max(60, L * 0.22)) + lado;
+    foguete.x = Math.min(L - 26, L / 2 + Math.max(60, L * 0.28)) + lado;
     foguete.y = naTelaExata(foguete.al) - 6 + balanco - mascote.pulo;
     const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.12 + Math.min(0.25, camera.velocidade / 4000);
     tx.save();
@@ -1018,6 +1018,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
 
     desenharCaixas(agora);
+    desenharEstouros();
 
     // brilho em volta do foguete e vinheta, mais fortes no escuro
     const fx = foguete.x * escala;
@@ -1040,6 +1041,83 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.fillRect(0, 0, W, H);
       flash = Math.max(0, flash - 0.025);
     }
+  }
+
+  // ---------- recompensa ao chegar ----------
+  // Quanto mais rara, maior a festa: estrelas explodindo, anel de luz,
+  // brilho na cor da faixa nas bordas, tremor e flash. A óbvia quase não faz nada.
+  const estouros = [];
+  const aneis = [];
+  let bordaCor = null, borda = 0;
+  function chegada(c, cx, cy, w, h) {
+    const k = c.peso; // 0 a 1.2
+    if (k < 0.2) return; // comum e óbvia: só o pulinho da caixa
+    const n = Math.round(20 + 120 * Math.min(1, k));
+    for (let i = 0; i < n; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const v = (120 + Math.random() * 380) * (0.6 + k * 0.6);
+      estouros.push({
+        x: cx + Math.cos(a) * w * 0.3, y: cy + Math.sin(a) * h * 0.3,
+        vx: Math.cos(a) * v, vy: Math.sin(a) * v * 0.7 - 60,
+        vida: 0, dura: 0.7 + Math.random() * 0.9,
+        cor: Math.random() < 0.3 ? "#ffffff" : c.cor,
+        tam: Math.random() < 0.15 ? 3 : 2,
+        estrela: Math.random() < 0.25,
+      });
+    }
+    aneis.push({ x: cx, y: cy, vida: 0, dura: 0.7, cor: c.cor, max: 160 + 220 * k });
+    if (k > 0.6) aneis.push({ x: cx, y: cy, vida: -0.12, dura: 0.9, cor: "#ffffff", max: 260 + 260 * k });
+    bordaCor = c.cor;
+    borda = Math.min(1, 0.4 + k * 0.6);
+    flash = Math.max(flash, c.supernova ? 0.85 : k > 0.6 ? 0.35 : 0.12);
+    tremer(6 + 22 * Math.min(1, k) + (c.supernova ? 10 : 0), 250 + 500 * k);
+    mascote.pulo = 10 + 14 * k;
+    if (window.Som && Som.brilho) Som.brilho(k);
+  }
+  function desenharEstouros() {
+    const W = innerWidth, H = innerHeight;
+    if (borda > 0.01 && bordaCor) {
+      const g = tx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.75);
+      g.addColorStop(0, "rgba(0,0,0,0)");
+      g.addColorStop(1, bordaCor);
+      tx.globalAlpha = borda * 0.45;
+      tx.fillStyle = g;
+      tx.fillRect(0, 0, W, H);
+      tx.globalAlpha = 1;
+      borda *= Math.exp(-dt * 1.6);
+    }
+    for (let i = aneis.length - 1; i >= 0; i--) {
+      const a = aneis[i];
+      a.vida += dt;
+      const t = a.vida / a.dura;
+      if (t >= 1) { aneis.splice(i, 1); continue; }
+      if (t < 0) continue;
+      const r = a.max * (1 - Math.pow(1 - t, 3));
+      tx.globalAlpha = (1 - t) * 0.8;
+      tx.strokeStyle = a.cor;
+      tx.lineWidth = 2 + 6 * (1 - t);
+      tx.beginPath();
+      tx.ellipse(a.x, a.y, r, r * 0.6, 0, 0, Math.PI * 2);
+      tx.stroke();
+    }
+    for (let i = estouros.length - 1; i >= 0; i--) {
+      const e = estouros[i];
+      e.vida += dt;
+      if (e.vida >= e.dura) { estouros.splice(i, 1); continue; }
+      e.vx *= Math.exp(-dt * 2.2);
+      e.vy = e.vy * Math.exp(-dt * 2.2) + 140 * dt; // cai de leve
+      e.x += e.vx * dt;
+      e.y += e.vy * dt;
+      const t = e.vida / e.dura;
+      tx.globalAlpha = 1 - t * t;
+      tx.fillStyle = e.cor;
+      const tam = e.tam * escala * 0.5 * (1 - t * 0.5);
+      if (e.estrela) {
+        tx.fillRect(e.x - tam * 1.5, e.y - tam / 4, tam * 3, tam / 2);
+        tx.fillRect(e.x - tam / 4, e.y - tam * 1.5, tam / 2, tam * 3);
+      } else tx.fillRect(e.x - tam / 2, e.y - tam / 2, tam, tam);
+    }
+    tx.globalAlpha = 1;
   }
 
   function desenharCaixas(agora) {
@@ -1068,9 +1146,22 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.save();
       tx.globalAlpha = alfa;
       // flutua devagar, sem parar (posição fracionada: desliza liso)
-      const boiaX = reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 4;
-      const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 5;
+      const boiaX = reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7;
+      const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 8;
       tx.translate(x + w / 2 + boiaX, y - sumindo * 14 + boiaY);
+      // mola: ao aparecer cresce passando um pouco do tamanho e volta
+      const mola = 1 - Math.exp(-t / 140) * Math.cos(t / 55);
+      // ao chegar no fundo, dá um "pulo" maior quanto mais rara
+      const tc = t - DURACAO_DESCIDA;
+      const pop = tc > 0 ? c.peso * 0.35 * Math.exp(-tc / 160) * Math.cos(tc / 45) : 0;
+      const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3 + c.inicio) * 0.035 + Math.sin(tempo * 0.5) * 0.015;
+      tx.rotate(c.angulo * Math.exp(-t / 600) + balanco);
+      const esc = Math.max(0.05, mola + pop) * (1 - sumindo * 0.1);
+      tx.scale(esc, esc);
+      if (tc > 0 && !c.chegou) {
+        c.chegou = true;
+        chegada(c, x + w / 2 + boiaX, y + boiaY, w, h);
+      }
       const x0 = -w / 2, y0 = -h / 2;
       // vidro tingido pela cor do fundo naquela profundidade
       const f = corDoFundo(camera.atual).map((v) => Math.round(v * 0.35));
@@ -1200,13 +1291,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
         para: camera.para,
         inicio: agora,
         surgir: 120 + 400 * (1 - peso), // as óbvias aparecem um pouco mais devagar
-        angulo: (Math.random() - 0.5) * 0.08,
         brilho: 6 + 18 * peso,
         satelites: faixa.id === "obvia" ? 6 : faixa.id === "comum" ? 3 : 0,
+        peso: supernova ? 1.2 : peso,
+        supernova,
+        angulo: (Math.random() - 0.5) * 0.4, // entra torta e endireita
       });
       mascote.pulo = 6 + 10 * peso;
-      tremer(2 + 16 * peso + (supernova ? 12 : 0), 300 + 1000 * peso);
-      if (supernova) flash = 0.85;
+      tremer(2 + 6 * peso, 300 + 600 * peso); // o tremor grande vem na chegada
     },
     tremer,
     // Tela final: some com as caixinhas e as linhas das faixas.

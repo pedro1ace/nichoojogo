@@ -446,7 +446,9 @@ function palpitar(evento) {
   cena.descer(achada.resposta, pontos, supernova);
   Som.descer(Math.min(1, pontos / 100));
   registrar(cat, achada.resposta, pontos, supernova, percentil);
-  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), DURACAO_DESCIDA + 200);
+  // nas raras, a festa da chegada aparece sozinha antes do resultado
+  const pausa = supernova || pontos >= 50 ? 900 : pontos >= 20 ? 600 : 200;
+  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), DURACAO_DESCIDA + pausa);
 }
 
 function tempoEsgotado() {
@@ -488,6 +490,23 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
     extra.textContent = r.resposta === cat.supernova ? `${r.pontos} ★` : `${r.pontos}`;
     li.append(extra);
     $("mais-nichadas").append(li);
+  }
+  // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
+  const nivel = !resposta ? 0 : supernova ? 4 : ["obvia", "comum", "incomum", "rara", "lendaria"].indexOf(faixa.id);
+  const nome = $("nome-faixa");
+  nome.className = "";
+  void nome.offsetWidth;
+  nome.className = `pop nivel-${Math.max(0, nivel)}`;
+  const alvo = $("linha-pontos").querySelector("b");
+  if (alvo && pontos > 0) {
+    const inicio = performance.now();
+    const dura = 300 + Math.min(900, pontos * 8);
+    const contar = (agora) => {
+      const t = Math.min(1, (agora - inicio) / dura);
+      alvo.textContent = `+${Math.round(pontos * (1 - Math.pow(1 - t, 3)))} PONTOS`;
+      if (t < 1) requestAnimationFrame(contar);
+    };
+    requestAnimationFrame(contar);
   }
   const ultima = estado.rodada + 1 >= estado.categorias.length;
   $("proxima").textContent = ultima ? "VER RESULTADO ▼" : "VIAJAR ▼";
