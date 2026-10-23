@@ -260,8 +260,11 @@ function abrirRelogio() {
     const resta = Math.max(0, estado.fimDoTempo - performance.now()) / 1000;
     $("barra-tempo").style.width = `${(resta / SEGUNDOS) * 100}%`;
     const s = Math.ceil(resta);
-    $("tempo").textContent = `${s}s`;
+    $("tempo").textContent = String(s).padStart(2, "0");
+    desenharRadar(resta / SEGUNDOS, s <= 5);
+    // nos últimos segundos: relógio treme, número fica vermelho e as bordas da tela avermelham
     $("relogio").classList.toggle("urgente", s <= 5);
+    $("alerta").classList.toggle("ligado", s <= 5 && resta > 0);
     if (s < ultimoSegundo) {
       ultimoSegundo = s;
       if (s <= 5 && s > 0) Som.tique(true);
@@ -275,8 +278,100 @@ function abrirRelogio() {
   atualizar();
 }
 
+// Relógio-radar: um mini sistema solar com o feixe de um radar girando.
+// O anel de fora é o tempo que resta; a lua corre na ponta do feixe e
+// "acende" os pontinhos por onde passa. No fim, tudo fica vermelho e acelera.
+const PONTOS_RADAR = [[0.6, 0.9], [2.4, 0.55], [3.9, 0.8], [5.2, 0.4]];
+function desenharRadar(fracao, urgente) {
+  const tela = $("radar");
+  const tamanho = 64;
+  const dpr = window.devicePixelRatio || 1;
+  if (tela.width !== tamanho * dpr) {
+    tela.width = tela.height = tamanho * dpr;
+    tela.style.width = tela.style.height = `${tamanho}px`;
+  }
+  const c = tela.getContext("2d");
+  c.setTransform(dpr, 0, 0, dpr, 0, 0);
+  c.clearRect(0, 0, tamanho, tamanho);
+  const m = tamanho / 2;
+  const cor = urgente ? [255, 70, 90] : [95, 225, 255];
+  const rgba = (a) => `rgba(${cor[0]}, ${cor[1]}, ${cor[2]}, ${a})`;
+  const giro = (performance.now() / 1000) * Math.PI * (urgente ? 2.6 : 1.1);
+
+  // fundo
+  c.save();
+  c.beginPath();
+  c.arc(m, m, 26, 0, Math.PI * 2);
+  const fundo = c.createRadialGradient(m, m, 2, m, m, 26);
+  fundo.addColorStop(0, urgente ? "#2a0818" : "#121048");
+  fundo.addColorStop(1, "#05021a");
+  c.fillStyle = fundo;
+  c.fill();
+  c.clip();
+  // órbitas
+  c.strokeStyle = rgba(0.22);
+  c.lineWidth = 1;
+  c.setLineDash([2, 3]);
+  for (const r of [9, 16, 23]) {
+    c.beginPath();
+    c.arc(m, m, r, 0, Math.PI * 2);
+    c.stroke();
+  }
+  c.setLineDash([]);
+  // feixe do radar: fatias cada vez mais transparentes atrás da ponta
+  for (let i = 0; i < 28; i++) {
+    const a0 = giro - i * 0.05;
+    c.beginPath();
+    c.moveTo(m, m);
+    c.arc(m, m, 26, a0 - 0.05, a0);
+    c.closePath();
+    c.fillStyle = rgba(0.32 * (1 - i / 28));
+    c.fill();
+  }
+  // pontinhos que acendem quando o feixe passa
+  for (const [ang, dist] of PONTOS_RADAR) {
+    const atras = (((giro - ang) % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2);
+    const brilho = Math.max(0, 1 - atras / 2.5);
+    c.fillStyle = rgba(0.15 + 0.85 * brilho);
+    c.fillRect(m + Math.cos(ang) * dist * 24 - 1, m + Math.sin(ang) * dist * 24 - 1, 2, 2);
+  }
+  c.restore();
+  // planeta no centro, com sombra e anel
+  const planeta = c.createRadialGradient(m - 2, m - 2, 0.5, m, m, 5);
+  planeta.addColorStop(0, "#fff0a0");
+  planeta.addColorStop(1, urgente ? "#c0203a" : "#e08a00");
+  c.fillStyle = planeta;
+  c.beginPath();
+  c.arc(m, m, 4.5, 0, Math.PI * 2);
+  c.fill();
+  c.strokeStyle = "rgba(255, 230, 160, 0.7)";
+  c.beginPath();
+  c.ellipse(m, m, 8, 2.2, -0.35, 0, Math.PI * 2);
+  c.stroke();
+  // lua na ponta do feixe
+  c.fillStyle = "#ffffff";
+  c.beginPath();
+  c.arc(m + Math.cos(giro) * 16, m + Math.sin(giro) * 16, 2, 0, Math.PI * 2);
+  c.fill();
+  // anel do tempo que resta
+  c.lineWidth = 3.5;
+  c.lineCap = "round";
+  c.strokeStyle = "rgba(255, 255, 255, 0.08)";
+  c.beginPath();
+  c.arc(m, m, 29, 0, Math.PI * 2);
+  c.stroke();
+  c.shadowColor = rgba(0.9);
+  c.shadowBlur = 6;
+  c.strokeStyle = rgba(1);
+  c.beginPath();
+  c.arc(m, m, 29, -Math.PI / 2, -Math.PI / 2 + Math.max(0.001, fracao) * Math.PI * 2);
+  c.stroke();
+  c.shadowBlur = 0;
+}
+
 function pararRelogio() {
   estado.ativa = false;
+  $("alerta").classList.remove("ligado");
   cancelAnimationFrame(estado.relogio);
 }
 

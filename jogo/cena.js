@@ -137,7 +137,8 @@ function desenharSprite(ctx, linhas, x, y, paleta = PALETA) {
       const cor = paleta[linhas[j][i]];
       if (!cor) continue;
       ctx.fillStyle = cor;
-      ctx.fillRect(Math.round(x) + i, Math.round(y) + j, 1, 1);
+      if (ctx.suave) ctx.fillRect(x + i, y + j, 1, 1);
+      else ctx.fillRect(Math.round(x) + i, Math.round(y) + j, 1, 1);
     }
   }
 }
@@ -221,6 +222,7 @@ function esfera(ctx, cx, cy, r, tons, opcoes = {}) {
       const ny = dy / r;
       const nz = Math.sqrt(Math.max(0, 1 - nx * nx - ny * ny));
       let i = Math.max(0, nx * luz[0] + ny * luz[1] + nz * luz[2]);
+      if (opcoes.faixas) i = Math.min(1, i * 1.05);
       if (opcoes.faixas) i *= 0.85 + 0.15 * Math.sin((dy / r) * 9 + sorte(dy, 3) * 0.6);
       if (opcoes.crateras && sorte(Math.floor((dx + 40) / 2), Math.floor((dy + 40) / 2)) > 0.86) i *= 0.7;
       const v = i * (tons.length - 1);
@@ -234,19 +236,22 @@ function esfera(ctx, cx, cy, r, tons, opcoes = {}) {
 }
 
 function anel(ctx, cx, cy, r, cor, frente) {
-  for (let a = 0; a < Math.PI * 2; a += 0.01) {
-    for (const k of [1.7, 1.85, 2.0]) {
+  const passo = 0.6 / (r * 2);
+  for (let a = 0; a < Math.PI * 2; a += passo) {
+    for (let k = 1.55; k <= 2.15; k += 1 / r) {
       const x = Math.round(cx + Math.cos(a) * r * k);
       const y = Math.round(cy + Math.sin(a) * r * 0.42 * k);
       if ((y >= cy) !== frente) continue;
-      ctx.fillStyle = k === 1.85 ? cor : "#140f36";
+      const borda = k < 1.55 + 1.5 / r || k > 2.15 - 1.5 / r;
+      const divisao = Math.abs(k - 1.82) < 0.6 / r;
+      ctx.fillStyle = borda ? "#140f36" : divisao ? "rgba(20,15,54,0.7)" : k < 1.82 ? cor : "rgba(255,255,255,0.75)";
       ctx.fillRect(x, y, 1, 1);
     }
   }
 }
 
 // Desenha cada corpo uma vez numa tela própria (é caro para refazer a cada quadro).
-function criarCorpos() {
+function criarCorpos(fator = 1) {
   const tons = {
     lua: ["#3a3f58", "#6b7088", "#a3a8c0", "#d6daea", "#f4f6ff"],
     marte: ["#4a1408", "#8a2a12", "#c8481e", "#ee7a40", "#ffb07a"],
@@ -260,7 +265,7 @@ function criarCorpos() {
   const raio = { lua: 8, marte: 9, jupiter: 22, saturno: 15, urano: 12, netuno: 12, plutao: 5, estrela: 11, buraco: 13 };
   const corpos = {};
   for (const nome of Object.keys(raio)) {
-    const r = raio[nome];
+    const r = Math.round(raio[nome] * fator);
     const tela = novaTela(r * 6, r * 6);
     const ctx = tela.getContext("2d");
     const c = r * 3;
@@ -271,8 +276,8 @@ function criarCorpos() {
       ctx.fillRect(c - 1, c - r * 3, 3, r * 6);
     }
     if (nome === "buraco") {
-      for (let a = 0; a < Math.PI * 2; a += 0.004) {
-        const d = r + 2 + sorte(Math.floor(a * 300), 1) * 5;
+      for (let a = 0; a < Math.PI * 2; a += 0.0015) {
+        const d = r + 2 + sorte(Math.floor(a * 300), 1) * 5 * fator;
         ctx.fillStyle = sorte(Math.floor(a * 300), 2) > 0.5 ? "#ff9a1f" : "#ffd23f";
         ctx.fillRect(Math.round(c + Math.cos(a) * d * 1.8), Math.round(c + Math.sin(a) * d * 0.5), 1, 1);
       }
@@ -281,6 +286,7 @@ function criarCorpos() {
       esfera(ctx, c, c, r, tons[nome], { faixas: ["jupiter", "saturno", "netuno"].includes(nome), crateras: nome === "lua" || nome === "plutao" });
     }
     if (nome === "saturno" || nome === "urano") anel(ctx, c, c, r, nome === "saturno" ? "#e8d8a8" : "#bfeaf0", true);
+    tela.raio = r;
     corpos[nome] = tela;
   }
   return corpos;
@@ -319,6 +325,27 @@ function criarIcones() {
       }
     }
     esfera(ctx, 12, 12, 4, ["#ffd23f", "#fff3a0", "#ffffff"]);
+  });
+  fazer("relogio", (ctx) => {
+    // relógio de bolso: aro, mostrador, ponteiros e o botão de cima
+    for (let dy = -9; dy <= 9; dy++) {
+      for (let dx = -9; dx <= 9; dx++) {
+        const d = Math.hypot(dx, dy);
+        if (d > 9.4) continue;
+        ctx.fillStyle = d > 8 ? "#140f36" : d > 6.8 ? (dx + dy < 0 ? "#ffe680" : "#e0a020") : dx + dy < -6 ? "#ffffff" : "#e8ecff";
+        ctx.fillRect(12 + dx, 13 + dy, 1, 1);
+      }
+    }
+    ctx.fillStyle = "#140f36";
+    ctx.fillRect(11, 1, 3, 3);
+    ctx.fillRect(12, 7, 1, 7); // ponteiro dos minutos
+    ctx.fillRect(12, 13, 4, 1); // ponteiro das horas
+    ctx.fillStyle = "#ff3d6e";
+    ctx.fillRect(12, 13, 1, 1);
+    for (const [x, y] of [[12, 6], [19, 13], [12, 20], [5, 13]]) {
+      ctx.fillStyle = "#6b7088";
+      ctx.fillRect(x, y, 1, 1);
+    }
   });
   fazer("nada", (ctx) => esfera(ctx, 12, 12, 6, ["#1a1440", "#2a2458", "#3a3470"]));
   return icones;
@@ -365,7 +392,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   const ctx = telaPixel.getContext("2d");
   const tx = telaTexto.getContext("2d");
   const reduzirMovimento = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const corpos = criarCorpos();
+  let corpos = criarCorpos();
   const icones = criarIcones();
 
   let L = 0, A = 0, escala = 2, focoY = 0, dpr = 1;
@@ -381,6 +408,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
   const foguete = { al: 0, x: 0, y: 0 };
   let flash = 0;
   let quadro = 0;
+  let tempo = 0; // segundos: todo movimento usa o tempo, não o número do quadro
+  let dt = 1 / 60;
+  const cadentes = [];
+  const bolhas = [];
+  let proximaCadente = 3;
+  let proximaBolha = 2;
   let anterior = performance.now();
   let aoQuadro = () => {};
 
@@ -388,13 +421,17 @@ function criarCena(telaPixel, telaTexto, raiz) {
     dpr = window.devicePixelRatio || 1;
     escala = Math.max(2, Math.round(Math.min(innerWidth, innerHeight) / 230));
     L = Math.ceil(innerWidth / escala);
-    A = Math.ceil(innerHeight / escala);
+    A = Math.ceil(innerHeight / escala) + 2; // uma folga para o deslocamento suave
     telaPixel.width = L;
     telaPixel.height = A;
+    telaPixel.style.width = `${L * escala}px`;
+    telaPixel.style.height = `${A * escala}px`;
     telaTexto.width = Math.round(innerWidth * dpr);
     telaTexto.height = Math.round(innerHeight * dpr);
     focoY = Math.round(A * 0.36);
     terra = desenharTerra(L, Math.round(A * 0.6));
+    // planetas grandes, em escala com a tela (parte deles fica para fora)
+    corpos = criarCorpos(Math.max(1.3, Math.min(3, L / 150)));
     imagem = ctx.createImageData(L, A);
     pixels = new Uint32Array(imagem.data.buffer);
     ctx.imageSmoothingEnabled = false;
@@ -404,8 +441,23 @@ function criarCena(telaPixel, telaTexto, raiz) {
   ajustarTamanho();
   addEventListener("resize", ajustarTamanho);
 
-  const naTela = (al) => focoY + (al - camera.atual) * PX_POR_AL; // em pixels da cena
-  const naTelaTexto = (al) => naTela(al) * escala; // em pixels CSS
+  // Movimento suave: a tela de pixels só anda de pixel inteiro em pixel inteiro,
+  // então desenhamos com a câmera arredondada e deslocamos a tela inteira pela
+  // fração que sobrou (em CSS, sem limite de resolução). O foguete, o mascote,
+  // as estrelas e os textos vão na camada de alta resolução, com posição exata.
+  let cameraPx = 0; // câmera arredondada, em pixels da cena
+  const naTela = (al) => focoY + al * PX_POR_AL - cameraPx; // tela de pixels
+  const naTelaExata = (al) => focoY + (al - camera.atual) * PX_POR_AL; // camada alta, em pixels da cena
+  const naTelaTexto = (al) => naTelaExata(al) * escala; // em pixels CSS
+
+  // "Pincel" que desenha na camada alta usando coordenadas de pixels da cena.
+  const alta = {
+    suave: true,
+    set fillStyle(v) { tx.fillStyle = v; },
+    set globalAlpha(v) { tx.globalAlpha = v; },
+    get globalAlpha() { return tx.globalAlpha; },
+    fillRect(x, y, w, h) { tx.fillRect(x * escala, y * escala, w * escala, h * escala); },
+  };
 
   function atualizarCamera(agora) {
     const t = Math.min(1, (agora - camera.inicio) / DURACAO_DESCIDA);
@@ -413,6 +465,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const dt = Math.max(1, agora - anterior) / 1000;
     camera.velocidade = (nova - camera.atual) / dt;
     camera.atual = nova;
+    const px = camera.atual * PX_POR_AL;
+    cameraPx = Math.floor(px);
+    telaPixel.style.transform = `translateY(${-(px - cameraPx) * escala}px)`;
   }
 
   // Fundo: cada linha tem a cor da sua profundidade, misturada com a próxima faixa
@@ -421,7 +476,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const FAIXA = 24;
     const empacotar = (c) => (255 << 24) | (Math.round(c[2]) << 16) | (Math.round(c[1]) << 8) | Math.round(c[0]);
     for (let y = 0; y < A; y++) {
-      const al = camera.atual + (y - focoY) / PX_POR_AL;
+      const al = (cameraPx + y - focoY) / PX_POR_AL;
       const base = Math.floor(al / FAIXA) * FAIXA;
       const c0 = empacotar(corDoFundo(base));
       const c1 = empacotar(corDoFundo(base + FAIXA));
@@ -439,7 +494,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const forca = Math.max(0, 1 - camera.atual / 2500);
     if (forca <= 0) return;
     for (let i = 0; i < 5; i++) {
-      const base = (sorte(i, 11) * 1.4 - 0.2) * L + Math.sin(quadro / 200 + i) * 6;
+      const base = (sorte(i, 11) * 1.4 - 0.2) * L + Math.sin(tempo * 0.3 + i) * 6;
       const largura = 10 + sorte(i, 12) * 22;
       ctx.fillStyle = `rgba(255, 255, 255, ${0.05 * forca})`;
       ctx.beginPath();
@@ -475,38 +530,47 @@ function criarCena(telaPixel, telaTexto, raiz) {
           const yMundo = k * BLOCO + sorte(k, i * 7 + ci) * BLOCO;
           if (sorte(k, i * 7 + ci + 3) > densidadeEstrelas(yMundo / (PX_POR_AL * c.f))) continue;
           const x = Math.floor(sorte(k, i * 7 + ci + 1) * L);
-          const y = Math.floor(yMundo - desvio + focoY);
-          ctx.globalAlpha = sorte(k * 31 + i, (quadro >> 4) + ci) > 0.96 ? 0.35 : 1;
-          ctx.fillStyle = c.cor;
-          ctx.fillRect(x, y, 1, 1 + Math.round(rastro));
-          if (ci === 2 && sorte(k, i + 77) > 0.85) {
-            // estrela maior, em cruz
-            ctx.globalAlpha *= 0.5;
-            ctx.fillRect(x - 1, y, 3, 1);
-            ctx.fillRect(x, y - 1, 1, 3);
+          const y = yMundo - desvio + focoY;
+          // cintila: o brilho sobe e desce devagar, cada estrela no seu ritmo
+          const ritmo = 0.6 + sorte(k, i * 7 + ci + 5) * 1.6;
+          const fase = sorte(k, i * 7 + ci + 6) * 6.283;
+          const pisca = 0.5 + 0.5 * Math.sin(tempo * ritmo + fase);
+          alta.globalAlpha = 0.35 + 0.65 * pisca;
+          alta.fillStyle = c.cor;
+          alta.fillRect(x, y, 1, 1 + rastro);
+          if (ci >= 1 && sorte(k, i + 77) > (ci === 2 ? 0.8 : 0.93)) {
+            // estrela maior: uma cruz de luz que cresce quando ela brilha
+            const braco = 1 + pisca * 2.2;
+            alta.globalAlpha = 0.18 + 0.4 * pisca;
+            alta.fillRect(x - braco + 0.5, y + 0.35, braco * 2, 0.3);
+            alta.fillRect(x + 0.35, y - braco + 0.5, 0.3, braco * 2);
+            alta.globalAlpha = 0.12 * pisca;
+            alta.fillRect(x - 1, y - 1, 3, 3);
           }
         }
       }
     });
-    ctx.globalAlpha = 1;
+    alta.globalAlpha = 1;
   }
 
   // Nuvens perto da Terra, que andam devagar para o lado.
   function desenharNuvens() {
     for (let i = 0; i < 7; i++) {
       const al = 8 + sorte(i, 21) * 70;
-      const y = Math.round(naTela(al));
+      const y = naTelaExata(al);
       if (y < -20 || y > A + 20) continue;
       const largura = 18 + Math.floor(sorte(i, 22) * 26);
-      const x = Math.round(((sorte(i, 23) * (L + 80) + quadro * (0.04 + sorte(i, 24) * 0.05)) % (L + 80)) - 40);
+      // anda pelo tempo (não pelo quadro), com posição fracionada: desliza liso
+      const andou = (performance.now() / 1000) * (2.5 + sorte(i, 24) * 3);
+      const x = ((sorte(i, 23) * (L + 80) + andou) % (L + 80)) - 40;
       for (let b = 0; b < 5; b++) {
         const r = 3 + Math.floor(sorte(i, 30 + b) * 4);
         const bx = x + Math.floor((b / 4) * largura);
         const by = y - Math.floor(sorte(i, 40 + b) * 3);
         for (let dy = -r; dy <= r; dy++) {
           const meia = Math.floor(Math.sqrt(r * r - dy * dy));
-          ctx.fillStyle = dy > r * 0.3 ? "#d6ecff" : "#ffffff";
-          ctx.fillRect(bx - meia, by + dy, meia * 2 + 1, 1);
+          alta.fillStyle = dy > r * 0.3 ? "#d6ecff" : "#ffffff";
+          alta.fillRect(bx - meia, by + dy, meia * 2 + 1, 1);
         }
       }
     }
@@ -533,33 +597,237 @@ function criarCena(telaPixel, telaTexto, raiz) {
     ctx.fillRect(ex, ey - 6, 1, 3);
   }
 
-  // Rochas escuras nas laterais (silhuetas), com um pouco de paralaxe.
+  // Paredes de rocha nas laterais: quase nada perto da Terra, e vão fechando
+  // conforme você desce (o espaço fica mais apertado). Duas camadas com
+  // paralaxe: a de trás anda mais devagar e é mais clara.
+  function aperto(al) {
+    return Math.min(1, Math.max(0, (al - 250) / 9000));
+  }
   function desenharLaterais() {
-    const BLOCO = 60;
-    const f = 0.8;
-    const desvio = camera.atual * PX_POR_AL * f;
-    const primeiro = Math.floor((desvio - focoY - 40) / BLOCO);
-    const ultimo = Math.floor((desvio - focoY + A + 40) / BLOCO);
-    const forca = Math.min(1, Math.max(0, (camera.atual - 150) / 600));
-    if (forca <= 0) return;
-    for (let k = Math.max(0, primeiro); k <= ultimo; k++) {
-      for (const lado of [0, 1]) {
-        if (sorte(k, 200 + lado) > 0.6) continue;
-        const r = 6 + Math.floor(sorte(k, 210 + lado) * 18);
-        const cx = lado ? L - Math.floor(sorte(k, 220) * 18) : Math.floor(sorte(k, 221) * 18);
-        const cy = Math.round(k * BLOCO + sorte(k, 230 + lado) * BLOCO - desvio + focoY);
-        for (let dy = -r; dy <= r; dy++) {
-          const meia = Math.floor(Math.sqrt(r * r - dy * dy) * (0.8 + sorte(k + dy, 240) * 0.3));
-          ctx.fillStyle = `rgba(4, 2, 18, ${0.55 * forca})`;
-          ctx.fillRect(cx - meia, cy + dy, meia * 2 + 1, 1);
-          if (dy < -r * 0.5) {
-            ctx.fillStyle = `rgba(120, 110, 200, ${0.08 * forca})`; // luz no topo da rocha
-            ctx.fillRect(cx - meia, cy + dy, meia, 1);
+    const conf = aperto(camera.atual);
+    if (conf <= 0) return;
+    const fundo = corDoFundo(camera.atual);
+    const camadas = [
+      // de trás: mais larga, mais apagada (some no fundo)
+      { f: 0.55, largura: 0.07 + 0.11 * conf, cor: misturar(fundo, [34, 22, 70], 0.55), borda: [120, 100, 230], s: 300 },
+      // da frente: rocha com relevo, mais perto, contorno de luz
+      { f: 1, largura: 0.03 + 0.08 * conf, cor: misturar(fundo, [46, 30, 84], 0.8), borda: [170, 150, 255], s: 400, relevo: true },
+    ];
+    const PASSO = 1.5;
+    for (const c of camadas) {
+      const desvio = camera.atual * PX_POR_AL * c.f;
+      const larguraMax = L * c.largura * Math.min(1, conf * 4);
+      const corpo = `rgb(${c.cor.map(Math.round).join(",")})`;
+      const sombra = `rgba(0, 0, 8, 0.55)`;
+      const brilho = `rgba(${c.borda.join(",")}, ${0.25 + 0.3 * conf})`;
+      for (let y = -PASSO; y < A + PASSO; y += PASSO) {
+        const yMundo = y + desvio - focoY;
+        for (const lado of [0, 1]) {
+          const n =
+            0.55 * ruido(yMundo / 55, lado * 7, c.s) +
+            0.3 * ruido(yMundo / 18, lado * 7 + 3, c.s + 1) +
+            0.15 * ruido(yMundo / 6, lado * 7 + 5, c.s + 2);
+          const w = larguraMax * (0.35 + n * 0.9);
+          if (w < 0.5) continue;
+          alta.fillStyle = corpo;
+          if (lado) alta.fillRect(L - w, y, w, PASSO + 0.2);
+          else alta.fillRect(0, y, w, PASSO + 0.2);
+          if (c.relevo) {
+            // camadas de rocha (listras) e sombra perto da borda da tela
+            const listra = ruido(yMundo / 7, lado * 3, 777);
+            if (listra > 0.62) {
+              alta.fillStyle = "rgba(255, 255, 255, 0.05)";
+              const lw = w * (0.4 + 0.5 * listra);
+              if (lado) alta.fillRect(L - lw, y, lw - 1.5, PASSO + 0.2);
+              else alta.fillRect(1.5, y, lw - 1.5, PASSO + 0.2);
+            }
+            alta.fillStyle = sombra;
+            const sw = w * 0.45;
+            if (lado) alta.fillRect(L - sw, y, sw, PASSO + 0.2);
+            else alta.fillRect(0, y, sw, PASSO + 0.2);
           }
+          alta.fillStyle = brilho; // luz fininha na borda da rocha
+          if (lado) alta.fillRect(L - w - 0.6, y, 0.6, PASSO + 0.2);
+          else alta.fillRect(w, y, 0.6, PASSO + 0.2);
         }
+      }
+      // cristais que brilham dentro da rocha da frente, lá no fundo
+      if (c.f === 1 && conf > 0.15) {
+        const BLOCO = 30;
+        const primeiro = Math.floor((desvio - focoY) / BLOCO) - 1;
+        const ultimo = Math.floor((desvio - focoY + A) / BLOCO) + 1;
+        for (let k = primeiro; k <= ultimo; k++) {
+          if (sorte(k, 600) > 0.35 * conf + 0.1) continue;
+          const lado = sorte(k, 601) > 0.5 ? 1 : 0;
+          const d = 2 + sorte(k, 602) * larguraMax * 0.5;
+          const x = lado ? L - d : d;
+          const y = k * BLOCO + sorte(k, 603) * BLOCO - desvio + focoY;
+          const pulso = 0.5 + 0.5 * Math.sin(tempo * (1 + sorte(k, 604)) + k);
+          alta.globalAlpha = 0.25 + 0.5 * pulso;
+          alta.fillStyle = sorte(k, 605) > 0.5 ? "#5fe1ff" : "#ff4fd8";
+          alta.fillRect(x - 0.5, y - 1, 1, 2);
+          alta.globalAlpha = 0.12 * pulso;
+          alta.fillRect(x - 2, y - 2, 4, 4);
+        }
+        alta.globalAlpha = 1;
       }
     }
   }
+
+  // Poeira cósmica: pontinhos que flutuam devagar, sem parar, em várias distâncias.
+  function desenharPoeira() {
+    const forca = Math.min(1, Math.max(0.25, camera.atual / 300));
+    const BLOCO = 50;
+    for (const [ci, f] of [0.3, 0.6, 1.2].entries()) {
+      const desvio = camera.atual * PX_POR_AL * f;
+      const primeiro = Math.floor((desvio - focoY) / BLOCO) - 1;
+      const ultimo = Math.floor((desvio - focoY + A) / BLOCO) + 1;
+      for (let k = primeiro; k <= ultimo; k++) {
+        for (let i = 0; i < 3; i++) {
+          const sem = i * 13 + ci * 101;
+          const vx = (sorte(k, sem + 1) - 0.5) * 6;
+          const x = ((sorte(k, sem + 2) * L + tempo * vx + Math.sin(tempo * 0.4 + sem) * 6) % L + L) % L;
+          const y = k * BLOCO + sorte(k, sem + 3) * BLOCO - desvio + focoY + Math.sin(tempo * 0.3 + k + i) * 5;
+          const tam = 0.5 + ci * 0.35;
+          alta.globalAlpha = forca * (0.15 + 0.2 * ci) * (0.6 + 0.4 * Math.sin(tempo + sem));
+          alta.fillStyle = camera.atual < 200 ? "#ffffff" : ci === 2 ? "#cfe8ff" : "#9a92ff";
+          alta.fillRect(x, y, tam, tam);
+        }
+      }
+    }
+    alta.globalAlpha = 1;
+  }
+
+  // Estrelas cadentes que atravessam o fundo bem devagar, de vez em quando.
+  function desenharCadentes() {
+    if (camera.atual > 120 && !reduzirMovimento) {
+      proximaCadente -= dt;
+      if (proximaCadente <= 0) {
+        proximaCadente = 4 + Math.random() * 6;
+        const esquerda = Math.random() > 0.5;
+        cadentes.push({
+          x: esquerda ? Math.random() * innerWidth * 0.4 : innerWidth * (0.6 + Math.random() * 0.4),
+          y: Math.random() * innerHeight * 0.4,
+          vx: (esquerda ? 1 : -1) * (70 + Math.random() * 50),
+          vy: 30 + Math.random() * 30,
+          vida: 0,
+          dura: 2.5 + Math.random() * 1.5,
+        });
+      }
+    }
+    for (let i = cadentes.length - 1; i >= 0; i--) {
+      const c = cadentes[i];
+      c.vida += dt;
+      if (c.vida > c.dura) {
+        cadentes.splice(i, 1);
+        continue;
+      }
+      c.x += c.vx * dt;
+      c.y += c.vy * dt;
+      const a = Math.sin((c.vida / c.dura) * Math.PI); // aparece e some suave
+      const v = Math.hypot(c.vx, c.vy);
+      const cauda = 90;
+      const ux = c.vx / v, uy = c.vy / v;
+      const g = tx.createLinearGradient(c.x, c.y, c.x - ux * cauda, c.y - uy * cauda);
+      g.addColorStop(0, `rgba(255, 255, 255, ${0.9 * a})`);
+      g.addColorStop(0.3, `rgba(170, 220, 255, ${0.35 * a})`);
+      g.addColorStop(1, "rgba(120, 140, 255, 0)");
+      tx.strokeStyle = g;
+      tx.lineWidth = 1.6;
+      tx.lineCap = "round";
+      tx.beginPath();
+      tx.moveTo(c.x, c.y);
+      tx.lineTo(c.x - ux * cauda, c.y - uy * cauda);
+      tx.stroke();
+      tx.fillStyle = `rgba(255, 255, 255, ${0.25 * a})`;
+      tx.beginPath();
+      tx.arc(c.x, c.y, 3, 0, Math.PI * 2);
+      tx.fill();
+    }
+  }
+
+  // Bolhas de plasma: aparecem de vez em quando, crescem, sobem devagar e estouram.
+  function desenharBolhas() {
+    if (!reduzirMovimento) {
+      proximaBolha -= dt;
+      if (proximaBolha <= 0) {
+        proximaBolha = 1.5 + Math.random() * 3.5;
+        const lado = Math.random() > 0.5;
+        bolhas.push({
+          x: lado ? innerWidth * (0.05 + Math.random() * 0.25) : innerWidth * (0.7 + Math.random() * 0.25),
+          y: innerHeight * (0.3 + Math.random() * 0.65),
+          r: 8 + Math.random() * 20,
+          vida: 0,
+          dura: 3.5 + Math.random() * 3,
+          cor: Math.random() > 0.5 ? [95, 225, 255] : [255, 143, 200],
+          fase: Math.random() * 6.283,
+        });
+      }
+    }
+    for (let i = bolhas.length - 1; i >= 0; i--) {
+      const b = bolhas[i];
+      b.vida += dt;
+      const t = b.vida / b.dura;
+      if (t >= 1) {
+        bolhas.splice(i, 1);
+        continue;
+      }
+      const cresce = 1 - Math.pow(1 - Math.min(1, t * 2.5), 3);
+      const r = b.r * cresce * (1 + 0.05 * Math.sin(tempo * 3 + b.fase));
+      const a = t < 0.85 ? Math.min(1, t * 4) : (1 - t) / 0.15;
+      const x = b.x + Math.sin(tempo * 0.8 + b.fase) * 6;
+      const y = b.y - b.vida * 10;
+      const [cr, cg, cb] = b.cor;
+      const g = tx.createRadialGradient(x, y, r * 0.2, x, y, r);
+      g.addColorStop(0, `rgba(${cr},${cg},${cb},0)`);
+      g.addColorStop(0.75, `rgba(${cr},${cg},${cb},${0.14 * a})`);
+      g.addColorStop(1, `rgba(${cr},${cg},${cb},${0.35 * a})`);
+      tx.fillStyle = g;
+      tx.beginPath();
+      tx.arc(x, y, r, 0, Math.PI * 2);
+      tx.fill();
+      tx.strokeStyle = `rgba(${cr},${cg},${cb},${0.5 * a})`;
+      tx.lineWidth = 1;
+      tx.stroke();
+      tx.fillStyle = `rgba(255,255,255,${0.6 * a})`; // reflexo
+      tx.beginPath();
+      tx.arc(x - r * 0.4, y - r * 0.4, Math.max(1, r * 0.15), 0, Math.PI * 2);
+      tx.fill();
+    }
+  }
+
+  // Planetas grandes, desenhados na camada alta: ficam por cima das paredes
+  // e andam com a câmera sem degrau. A imagem é ampliada sem borrar o pixel.
+  function desenharCorpos() {
+    tx.imageSmoothingEnabled = false;
+    for (const m of MARCOS) {
+      if (!m.corpo) continue;
+      const img = corpos[m.corpo];
+      const y = naTelaExata(m.al);
+      if (y < -img.height || y > A + img.height) continue;
+      const x = posicaoCorpo(img) - img.width / 2;
+      tx.drawImage(img, x * escala, (y - img.height / 2) * escala, img.width * escala, img.height * escala);
+    }
+  }
+
+  // Brilho de atmosfera em volta dos planetas grandes.
+  function desenharHalos() {
+    for (const m of MARCOS) {
+      if (!m.corpo) continue;
+      const img = corpos[m.corpo];
+      const y = naTelaTexto(m.al);
+      const r = img.raio * escala;
+      if (y < -r * 3 || y > innerHeight + r * 3) continue;
+      const x = posicaoCorpo(img) * escala;
+      const cor = m.corpo === "buraco" ? "255,154,31" : m.corpo === "estrela" ? "255,210,63" : "160,200,255";
+      const g = tx.createRadialGradient(x, y, r * 0.9, x, y, r * (m.corpo === "estrela" ? 3 : 1.6));
+      g.addColorStop(0, `rgba(${cor},${m.corpo === "estrela" ? 0.35 : 0.18})`);
+      g.addColorStop(1, `rgba(${cor},0)`);
+      tx.fillStyle = g;
+      tx.fillRect(x - r * 3, y - r * 3, r * 6, r * 6);
+    }
+  }
+  const posicaoCorpo = (img) => L - img.raio * 0.75;
 
   function desenharAsteroide(x, y, tamanho, semente) {
     const tons = ["#2a2230", "#4a3f48", "#7a6a68", "#a89888"];
@@ -576,14 +844,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Objetos soltos: satélites perto da Terra, asteroides, cometas mais fundo.
   function desenharObjetos() {
     const BLOCO = 90;
-    const desvio = camera.atual * PX_POR_AL;
+    const desvio = cameraPx;
     const primeiro = Math.max(1, Math.floor((desvio - focoY - 30) / BLOCO));
     const ultimo = Math.floor((desvio - focoY + A + 30) / BLOCO);
     for (let k = primeiro; k <= ultimo; k++) {
       if (sorte(k, 501) > 0.5) continue;
       const yMundo = k * BLOCO + sorte(k, 502) * BLOCO;
       const al = yMundo / PX_POR_AL;
-      let x = sorte(k, 503) * L + Math.sin(quadro / 300 + k) * 4;
+      let x = sorte(k, 503) * L;
       if (Math.abs(x - L / 2) < 40) x += x < L / 2 ? -50 : 50;
       const y = yMundo - desvio + focoY;
       if (al < 300) desenharSprite(ctx, SATELITE, x, y);
@@ -602,11 +870,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function desenharMarcosPixel() {
     for (const m of MARCOS) {
       const y = Math.round(naTela(m.al));
-      if (y < -80 || y > A + 80) continue;
-      if (m.corpo) {
-        const img = corpos[m.corpo];
-        ctx.drawImage(img, Math.round(L * 0.78 - img.width / 2), Math.round(y - img.height / 2));
-      }
+      if (y < -200 || y > A + 200) continue;
       if (m.cinturao) {
         for (let i = 0; i < 40; i++) {
           desenharAsteroide(sorte(m.al, i) * L, y + (sorte(m.al, i + 50) - 0.5) * 30, Math.floor(sorte(m.al, i + 99) * 3), i);
@@ -625,34 +889,35 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   function desenharFoguete() {
     const descendo = camera.velocidade > 20;
-    foguete.al += (camera.atual - foguete.al) * 0.12;
+    foguete.al += (camera.atual - foguete.al) * (1 - Math.exp(-dt * 7.5));
     foguete.al = Math.max(foguete.al, camera.atual - 50); // atrasa um pouco, mas nunca sai da tela
-    const balanco = reduzirMovimento ? 0 : Math.sin(quadro / 40) * 2;
-    const lado = reduzirMovimento ? 0 : Math.sin(quadro / 110) * 5;
+    const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.5) * 2;
+    const lado = reduzirMovimento ? 0 : Math.sin(tempo * 0.55) * 5;
     foguete.x = L / 2 + 40 + lado;
-    foguete.y = naTela(foguete.al) - 18 + balanco;
-    const x = Math.round(foguete.x - 6);
-    const y = Math.round(foguete.y - 8);
+    foguete.y = naTelaExata(foguete.al) - 18 + balanco;
+    const x = foguete.x - 6;
+    const y = foguete.y - 8;
     // chama por cima, porque o foguete está de cabeça para baixo
     const tamanho = descendo ? Math.min(14, 4 + camera.velocidade / 60) : 3 + (quadro >> 3) % 2;
     for (let j = 0; j < tamanho; j++) {
       const largura = Math.max(1, Math.round(3 - j * 0.25 + Math.random() * 0.8));
-      ctx.fillStyle = j < 2 ? PALETA.F : j < tamanho * 0.6 ? PALETA.f : PALETA.e;
-      ctx.fillRect(x + 6 - Math.floor(largura / 2), y - 1 - j, largura, 1);
+      alta.fillStyle = j < 2 ? PALETA.F : j < tamanho * 0.6 ? PALETA.f : PALETA.e;
+      alta.fillRect(x + 6 - Math.floor(largura / 2), y - 1 - j, largura, 1);
     }
-    desenharSprite(ctx, FOGUETE, x, y);
+    desenharSprite(alta, FOGUETE, x, y);
     return { x: x + 6, y: y + 8 };
   }
 
   function desenharMascote(foguete) {
     // segue o foguete com atraso, flutuando
-    const alvoX = foguete.x + 22 + Math.sin(quadro / 70) * 5;
-    const alvoY = foguete.y - 6 + Math.sin(quadro / 45) * 3 - mascote.pulo;
-    mascote.x += (alvoX - mascote.x) * 0.06;
-    mascote.y += (alvoY - mascote.y) * 0.06;
-    mascote.pulo *= 0.9;
-    const q = MASCOTE[(quadro >> 5) % 2];
-    desenharSprite(ctx, q, mascote.x - 6, mascote.y - 7);
+    const alvoX = foguete.x + 22 + Math.sin(tempo * 0.85) * 5;
+    const alvoY = foguete.y - 6 + Math.sin(tempo * 1.3) * 3 - mascote.pulo;
+    const k = 1 - Math.exp(-dt * 3.6);
+    mascote.x += (alvoX - mascote.x) * k;
+    mascote.y += (alvoY - mascote.y) * k;
+    mascote.pulo *= Math.exp(-dt * 6);
+    const q = MASCOTE[Math.floor(tempo * 1.8) % 2];
+    desenharSprite(alta, q, mascote.x - 6, mascote.y - 7);
   }
 
   // Poeirinha subindo, como bolhas: dá a sensação de movimento.
@@ -669,16 +934,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const p = particulas[i];
       p.al -= p.sobe / 60;
       p.vida -= 0.006;
-      const y = Math.round(naTela(p.al));
+      const y = naTelaExata(p.al);
       if (p.vida <= 0 || y < -5) {
         particulas.splice(i, 1);
         continue;
       }
-      ctx.globalAlpha = p.vida * 0.8;
-      ctx.fillStyle = camera.atual < 300 ? "#ffffff" : "#bfe9ff";
-      ctx.fillRect(Math.round(p.x), y, 1, 1);
+      alta.globalAlpha = p.vida * 0.8;
+      alta.fillStyle = camera.atual < 300 ? "#ffffff" : "#bfe9ff";
+      alta.fillRect(p.x, y, 1, 1);
     }
-    ctx.globalAlpha = 1;
+    alta.globalAlpha = 1;
   }
 
   // ---------- camada de texto (alta resolução) ----------
@@ -693,8 +958,6 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function desenharTextos(agora) {
     const W = innerWidth;
     const H = innerHeight;
-    tx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    tx.clearRect(0, 0, W, H);
     const escuro = escuridao(camera.atual);
     const corSuave = camera.atual < 250 ? "rgba(20, 30, 80, 0.75)" : "rgba(200, 210, 240, 0.55)";
     const centro0 = W * 0.16;
@@ -840,12 +1103,21 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   function passo(agora) {
     quadro++;
+    dt = Math.min(0.1, Math.max(0.001, (agora - anterior) / 1000));
+    tempo = agora / 1000;
     atualizarCamera(agora);
     anterior = agora;
     desenharFundo();
     desenharRaios();
+    tx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    tx.clearRect(0, 0, innerWidth, innerHeight);
     desenharEstrelas();
+    desenharCadentes();
+    desenharPoeira();
     desenharLaterais();
+    desenharHalos();
+    desenharCorpos();
+    desenharBolhas();
     desenharNuvens();
     desenharTerraNaCena();
     desenharObjetos();
@@ -910,6 +1182,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Coloca a câmera numa profundidade sem animação (ao retomar o dia).
     irPara(al) {
       camera.de = camera.para = camera.atual = foguete.al = al;
+    mascote.y = focoY;
     },
     aoQuadro(fn) {
       aoQuadro = fn;

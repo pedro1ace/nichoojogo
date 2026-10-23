@@ -27,12 +27,31 @@ body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-hei
 #tela { position: fixed; inset: 0; overflow: hidden; }
 #cena, #camada { position: absolute; inset: 0; width: 100%; height: 100%; }
 #cena { image-rendering: pixelated; image-rendering: crisp-edges; }
-/* linhas de varredura bem leves, como num monitor antigo */
+/* Filtro de mídia antiga (CRT): linhas horizontais, uma faixa clara passando
+   devagar, leve cintilação e bordas mais escuras. Fica por cima de tudo. */
 #tela::after {
-  content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0 1px, transparent 1px 3px);
-  mix-blend-mode: multiply;
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 10;
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 0, 12, 0.26) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at center, transparent 62%, rgba(0, 0, 10, 0.35) 100%);
+  animation: cintilar 0.12s steps(2) infinite;
 }
+#tela::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -30%; height: 30%; pointer-events: none; z-index: 10;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.045) 50%, transparent);
+  animation: varredura 7s linear infinite;
+}
+@keyframes cintilar { 50% { opacity: 0.88; } }
+@keyframes varredura { to { transform: translateY(440%); } }
+
+/* bordas vermelhas quando o tempo está acabando */
+#alerta {
+  position: absolute; inset: 0; z-index: 9; pointer-events: none; opacity: 0;
+  box-shadow: inset 0 0 120px 30px rgba(255, 20, 60, 0.75);
+  transition: opacity 0.3s;
+}
+#alerta.ligado { opacity: 1; animation: pulsar-alerta 1s ease-in-out infinite; }
+@keyframes pulsar-alerta { 50% { opacity: 0.45; } }
 
 .rotulo { font-family: var(--mono); font-size: 15px; letter-spacing: 3px; color: var(--suave); margin: 0; }
 .suave { color: var(--suave); }
@@ -138,11 +157,19 @@ form button {
 #mensagem { min-height: 1.3em; margin: 8px 0 0; font-size: 17px; }
 #mensagem.erro { color: var(--vermelho); }
 #mensagem.aviso { color: var(--amarelo); }
-#relogio { position: relative; height: 18px; margin-top: 10px; background: #050220; }
-#barra-tempo { position: absolute; inset: 0 auto 0 0; width: 100%; background: var(--ciano); transition: width 0.25s linear; }
+#relogio { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+#radar { width: 64px; height: 64px; flex: none; }
+#tempo { font-family: var(--titulo); font-size: 26px; color: var(--ciano); min-width: 2.2em; font-variant-numeric: tabular-nums; }
+.trilho { flex: 1; height: 10px; background: #050220; box-shadow: inset 0 0 0 1px #2c2870; }
+#barra-tempo { height: 100%; width: 100%; background: var(--ciano); }
+#relogio.urgente #tempo { color: var(--vermelho); text-shadow: 0 0 10px rgba(255, 60, 80, 0.8); }
 #relogio.urgente #barra-tempo { background: var(--vermelho); }
-#tempo { position: absolute; right: 6px; top: -1px; font-family: var(--mono); font-size: 18px; color: #06122a; mix-blend-mode: normal; }
-#relogio.urgente #tempo { color: #fff; }
+#relogio.urgente #radar, #relogio.urgente #tempo { animation: tremer-relogio 0.25s linear infinite; }
+@keyframes tremer-relogio {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  25% { transform: translate(-2px, 1px) rotate(-8deg); }
+  75% { transform: translate(2px, -1px) rotate(8deg); }
+}
 .pilula {
   position: absolute; z-index: 2; left: 50%; bottom: max(20px, env(safe-area-inset-bottom)); transform: translateX(-50%);
   margin: 0; padding: 8px 18px; background: var(--painel); clip-path: var(--recorte);
@@ -218,5 +245,6 @@ pre {
   .pilula { font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  #titulo span, #icone, #quadrados span.atual { animation: none; }
+  #titulo span, #icone, #quadrados span.atual, #tela::after, #tela::before, #alerta.ligado,
+  #relogio.urgente #radar, #relogio.urgente #tempo { animation: none; }
 }
