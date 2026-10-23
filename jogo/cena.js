@@ -33,6 +33,13 @@ const FAIXAS = [
 ];
 const SUPERNOVA = { id: "supernova", nome: "SUPERNOVA", cor: "#ff4fd8", emoji: "🌟", frase: "Você achou a resposta escondida desta pergunta!" };
 
+// mistura duas cores "#rrggbb" (k = 0 dá a primeira, 1 dá a segunda)
+function misturarCor(a, b, k) {
+  const ca = [1, 3, 5].map((i) => parseInt(a.slice(i, i + 2), 16));
+  const cb = [1, 3, 5].map((i) => parseInt(b.slice(i, i + 2), 16));
+  return `rgb(${ca.map((v, i) => Math.round(v + (cb[i] - v) * k)).join(",")})`;
+}
+
 function faixaDe(pontos, supernova) {
   if (supernova) return SUPERNOVA;
   return FAIXAS.find((f) => pontos >= f.min);
@@ -425,6 +432,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let larguraCaixa = 200;
   let cobertas = [];
   let alfaCurio = 1;
+  let digitando = false;
+  let mostrandoResultado = false;
   let fimDeJogo = false; // na tela final as curiosidades somem
   const rastro = [];
   const caixas = [];
@@ -677,17 +686,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
       ctx.fillStyle = "#163a8a";
       ctx.fillRect(0, 0, L, fundo - terra.height);
     }
-    // estação espacial na borda da Terra (o "barquinho" do início)
-    const ex = Math.round(L * 0.3);
-    const ey = fundo - 2;
-    ctx.fillStyle = "#140f36";
-    ctx.fillRect(ex - 12, ey, 25, 2);
-    ctx.fillRect(ex - 2, ey - 3, 5, 7);
-    ctx.fillStyle = "#5fe1ff";
-    ctx.fillRect(ex - 11, ey - 2, 7, 5);
-    ctx.fillRect(ex + 5, ey - 2, 7, 5);
-    ctx.fillStyle = "#ff3d6e";
-    ctx.fillRect(ex, ey - 6, 1, 3);
+    // satélite na borda da Terra (o "barquinho" do início), no mesmo estilo dos outros
+    const pz = Math.max(2, Math.round(escala * 0.5));
+    const ey = (naTelaExata(0) - 40) * escala + Math.sin(tempo * 0.8) * 2;
+    desenharNave(naves.satelite, L * 0.3 * escala, ey, pz, Math.sin(tempo * 0.5) * 0.06, "rgba(255, 200, 120, 0.5)");
   }
 
   // Paredes de rocha nas laterais: quase nada perto da Terra, e vão fechando
@@ -813,38 +815,34 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // A Estação Espacial Internacional (ISS) cruzando devagar perto da Terra.
+  // Vai mais rápido que as nuvens e é desenhada por cima delas, para não sumir atrás.
   function desenharISS() {
-    const y = naTelaExata(62);
-    if (y < -30 || y > A + 30) return;
-    const x = ((tempo * 3.2) % (L + 90)) - 45;
-    const p = (c, dx, dy, w, h) => { alta.fillStyle = c; alta.fillRect(x + dx, y + dy, w, h); };
-    // painéis solares: quatro pares, com grade
-    for (const px of [-22, -14, 9, 17]) {
-      for (const py of [-9, 2]) {
-        p("#140f36", px - 0.5, py - 0.5, 6, 8);
-        p("#1f4fa8", px, py, 5, 7);
-        p("#5f9bff", px, py, 5, 1);
-        p("#3a6fd0", px + 2, py, 1, 7);
-        p("#ffd23f", px, py + 3, 5, 0.6);
-      }
-    }
-    p("#140f36", -25, -1.5, 50, 3); // treliça
-    p("#b8bfe0", -24, -1, 48, 2);
-    p("#ffffff", -24, -1, 48, 0.6);
-    // módulos do meio
-    p("#140f36", -6, -4, 12, 8);
-    p("#f4f4ff", -5, -3, 10, 6);
-    p("#b8bfe0", -5, 1, 10, 2);
-    p("#140f36", -1.5, -7, 3, 14);
-    p("#e8ecff", -1, -6.5, 2, 13);
-    p("#7a80a0", -3, 4, 6, 2);
-    // radiadores
-    p("#e8ecff", -9, 3, 2, 5);
-    p("#e8ecff", 7, 3, 2, 5);
-    // luzinha piscando
-    alta.globalAlpha = 0.5 + 0.5 * Math.sin(tempo * 4);
-    p("#ff3d6e", 0, -7.5, 1, 1);
-    alta.globalAlpha = 1;
+    const img = naves.iss;
+    const pz = Math.max(2, Math.round(escala * 0.5));
+    const w = img.width * pz, h = img.height * pz;
+    const y = naTelaTexto(62);
+    if (y < -h || y > innerHeight + h) return;
+    const x = ((tempo * 7 * escala) % (innerWidth + w * 2)) - w;
+    desenharNave(img, x, y + Math.sin(tempo * 0.7) * 3, pz, Math.sin(tempo * 0.4) * 0.04, "rgba(220, 235, 255, 0.55)");
+    // luzinha piscando na ponta
+    tx.globalAlpha = Math.max(0, Math.sin(tempo * 4));
+    tx.fillStyle = "#ff3d6e";
+    tx.fillRect(x - pz / 2, y + Math.sin(tempo * 0.7) * 3 - h / 2 + pz * 3, pz, pz);
+    tx.globalAlpha = 1;
+  }
+
+  // Desenha uma nave pronta (satélite, ISS) nítida, com um brilho leve em volta.
+  function desenharNave(img, x, y, pz, giro, brilho) {
+    tx.save();
+    // atrás de um painel (pergunta, resultado) ela fica bem apagadinha
+    if (cobertas.some(([a, b]) => y > a - 20 && y < b + 20)) tx.globalAlpha = 0.18;
+    tx.imageSmoothingEnabled = false;
+    tx.translate(x, y);
+    tx.rotate(giro);
+    tx.shadowColor = brilho;
+    tx.shadowBlur = pz * 4;
+    tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
+    tx.restore();
   }
 
   // Brilho de atmosfera em volta dos planetas grandes.
@@ -891,7 +889,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
       let x = sorte(k, 503) * L;
       if (Math.abs(x - L / 2) < 40) x += x < L / 2 ? -50 : 50;
       const y = yMundo - desvio + focoY;
-      if (al < 300) desenharSprite(ctx, SATELITE, x, y);
+      if (al < 300) {
+        const pz = Math.max(2, Math.round(escala * 0.5));
+        const yt = (yMundo - camera.atual * PX_POR_AL + focoY) * escala;
+        desenharNave(naves.satelite, x * escala, yt, pz, Math.sin(tempo * 0.5 + k) * 0.12, "rgba(255, 200, 120, 0.5)");
+      }
       else if (al < 8000 && sorte(k, 504) > 0.25) desenharAsteroide(x, y, 1 + Math.floor(sorte(k, 505) * 3), k);
       else {
         ctx.fillStyle = "#e8fbff";
@@ -926,6 +928,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
   const tardigrado = criarTardigrado();
+  const naves = criarNaves();
   let felizAte = 0;
   function desenharFoguete() {
     foguete.al += (camera.atual - foguete.al) * (1 - Math.exp(-dt * 7.5));
@@ -941,7 +944,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const yCaixa = naTelaExata(foguete.al) + 4 - (xLivre > L - 26 ? 34 : 0);
     // no cantinho esquerdo, flutuando, enquanto você digita
     const xCanto = Math.max(22, L * 0.08);
-    const yCanto = A * 0.55;
+    // no celular, com o resultado no meio, ele sobe para não ficar por cima do texto
+    const yCanto = mostrandoResultado && innerWidth < 560 ? A * 0.2 : A * 0.55;
     const m = suave(Math.min(1, Math.max(0, modoCanto)));
     foguete.x = xCaixa + (xCanto - xCaixa) * m + lado;
     foguete.y = yCaixa + (yCanto - yCaixa) * m + balanco - mascote.pulo;
@@ -1039,12 +1043,20 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // marcos e curiosidades (escondidos na tela de início, para não brigar com o título)
     const noInicio = document.getElementById("inicio")?.hidden === false;
     tx.textAlign = "left";
+    // perto da linha de foco (onde a caixa passa) eles acendem; longe, ficam bem discretos
+    const yFoco = naTelaTexto(camera.atual);
+    const aceso = (y) => Math.max(0, 1 - Math.abs(y - yFoco) / 110);
     for (const m of noInicio ? [] : MARCOS) {
       const y = naTelaTexto(m.al);
       if (y < -20 || y > H + 20) continue;
-      linhaTracejada(y, centro0, centro1, "#ffd23f", 0.45);
+      const k = aceso(y);
+      linhaTracejada(y, centro0, centro1, "#ffd23f", 0.16 + 0.5 * k);
       tx.font = "16px 'Space Mono', monospace";
+      tx.globalAlpha = 0.38 + 0.62 * k;
+      if (k > 0.05 && !claro) { tx.shadowColor = "#ffd23f"; tx.shadowBlur = 12 * k; }
       escrever(`${m.al.toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12, claro ? "#7a4a00" : "#ffd23f");
+      tx.shadowBlur = 0;
+      tx.globalAlpha = 1;
     }
     // onde estão as linhas das faixas agora (para a curiosidade não ficar por cima)
     const linhasY = mostrarLinhas ? FAIXAS.filter((f) => f.min).map((f) => naTelaTexto(rodadaAl + viagem(f.min))) : [];
@@ -1058,7 +1070,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         .map((el) => { const r = el.getBoundingClientRect(); return [r.top - 14, r.bottom + 14]; });
     }
     // enquanto você digita, as curiosidades somem devagar: só a pergunta e o campo na tela
-    alfaCurio += ((alvoCanto || fimDeJogo ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
+    alfaCurio += ((digitando || fimDeJogo ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
     tx.globalAlpha = alfaCurio;
     CURIOSIDADES.forEach(([al, texto], i) => {
       if (noInicio || alfaCurio < 0.02) return;
@@ -1073,17 +1085,23 @@ function criarCena(telaPixel, telaTexto, raiz) {
         const meio = texto.lastIndexOf(" ", Math.ceil(texto.length / 2) + 4);
         linhas = [texto.slice(0, meio), texto.slice(meio + 1)];
       }
+      const k = aceso(y);
+      tx.globalAlpha = alfaCurio * (0.34 + 0.66 * k);
+      const cor = k > 0.05 && !claro ? misturarCor("#c9d0f0", "#8ff0ff", k) : corSuave;
+      if (k > 0.05 && !claro) { tx.shadowColor = "#5fe1ff"; tx.shadowBlur = 10 * k; }
       linhas.forEach((t, j) => {
         const ly = y + (j - (linhas.length - 1) / 2) * 16;
         if (i % 2) {
           tx.textAlign = "right";
-          escrever(j === 0 ? `${t} —` : `${t}  `, W - 40, ly, corSuave);
+          escrever(j === 0 ? `${t} —` : `${t}  `, W - 40, ly, cor);
         } else {
           tx.textAlign = "left";
-          escrever(j === 0 ? `— ${t}` : `  ${t}`, 16, ly, corSuave);
+          escrever(j === 0 ? `— ${t}` : `  ${t}`, 16, ly, cor);
         }
       });
-    });    tx.globalAlpha = 1;
+      tx.shadowBlur = 0;
+    });
+    tx.globalAlpha = 1;
 
 
     // linhas das faixas: até onde cada faixa de raridade levaria nesta pergunta
@@ -1366,19 +1384,6 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.globalAlpha = alfa * 0.35;
       tx.fillText(texto, 0, p * 0.5);
       tx.restore();
-      // satélites em volta das respostas óbvias: muita gente foi nessa
-      for (let s = 0; s < c.satelites; s++) {
-        const a = agora / 900 + (s / c.satelites) * Math.PI * 2;
-        const sx = x + w / 2 + Math.cos(a) * (w / 2 + 12);
-        const sy = y + Math.sin(a) * (h / 2 + 10);
-        tx.globalAlpha = Math.min(1, t / c.surgir) * 0.9 * (1 - sumindo);
-        tx.fillStyle = "#5fe1ff";
-        tx.fillRect(sx - 4, sy - 1, 3, 3);
-        tx.fillRect(sx + 2, sy - 1, 3, 3);
-        tx.fillStyle = "#ffffff";
-        tx.fillRect(sx - 1, sy - 1, 3, 3);
-        tx.globalAlpha = 1;
-      }
     }
   }
 
@@ -1395,10 +1400,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
     desenharEstrelas();
     desenharCadentes();
     desenharLaterais();
-    desenharISS();
     desenharHalos();
     desenharCorpos();
     desenharNuvens();
+    desenharISS();
     desenharTerraNaCena();
     desenharObjetos();
     desenharMarcosPixel();
@@ -1435,6 +1440,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const agora = performance.now();
       for (const k of Object.keys(acesas)) delete acesas[k];
       alvoCanto = 1;
+      digitando = true;
+      mostrandoResultado = false;
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       rodadaAl = camera.para;
       mostrarLinhas = true;
@@ -1446,6 +1453,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const faixa = faixaDe(pontos, supernova);
       const distancia = viagem(pontos);
       alvoCanto = 0;
+      digitando = false;
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
@@ -1460,7 +1468,6 @@ function criarCena(telaPixel, telaTexto, raiz) {
         inicio: agora,
         surgir: 120 + 400 * (1 - peso), // as óbvias aparecem um pouco mais devagar
         brilho: 6 + 18 * peso,
-        satelites: faixa.id === "obvia" ? 6 : faixa.id === "comum" ? 3 : 0,
         peso: supernova ? 1.2 : peso,
         supernova,
         angulo: (Math.random() - 0.5) * 0.4, // entra torta e endireita
@@ -1469,6 +1476,15 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tremer(2 + 6 * peso, 300 + 600 * peso); // o tremor grande vem na chegada
     },
     tremer,
+    // Hora do resultado: a caixa da resposta some (o resultado fica sozinho no meio da tela)
+    // e o tardígrado volta para o cantinho.
+    resultado() {
+      const agora = performance.now();
+      for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
+      alvoCanto = 1;
+      mostrandoResultado = true;
+      mostrarLinhas = false;
+    },
     // Fim da viagem: o cenário volta devagar até a Terra.
     subir(dura) {
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = performance.now();
