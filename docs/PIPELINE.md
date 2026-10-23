@@ -21,6 +21,7 @@ Etapas em ordem. Cada uma termina em algo que dá para testar.
 
 A sessão é remontada todo dia com perguntas inéditas. Com 7 por dia, um mês pede uns 200 conjuntos de respostas.
 A base pt-BR só tem palavras e não tem categorias, então cada pergunta precisa de curadoria.
+Pesquisa de fontes, sinais de raridade, LLM e apelidos: [BANCO-DE-PALAVRAS.md](BANCO-DE-PALAVRAS.md).
 Seguimos o mesmo método do Krillion:
 
 - [ ] **Juntar fontes** por pergunta: listas da base, dicionários, páginas da Wikipédia, enciclopédias.
