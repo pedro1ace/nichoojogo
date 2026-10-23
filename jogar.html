@@ -213,31 +213,25 @@ form button {
 
 /* ---------- resultado da resposta ---------- */
 .cartao-resultado {
-  position: absolute; z-index: 2; left: 50%; top: calc(40% + 66px); transform: translateX(-50%);
-  width: min(560px, calc(100% - 32px)); max-height: calc(60% - 76px);
-  display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 2px;
-  padding: 14px 22px 16px; text-align: center; overflow-y: auto; scrollbar-width: none;
-  /* mesmo vidro da pergunta, mas quase sólido: o cenário não atrapalha a leitura */
-  clip-path: polygon(0 12px, 4px 12px, 4px 8px, 8px 8px, 8px 4px, 12px 4px, 12px 0, calc(100% - 12px) 0, calc(100% - 12px) 4px, calc(100% - 8px) 4px, calc(100% - 8px) 8px, calc(100% - 4px) 8px, calc(100% - 4px) 12px, 100% 12px, 100% calc(100% - 12px), calc(100% - 4px) calc(100% - 12px), calc(100% - 4px) calc(100% - 8px), calc(100% - 8px) calc(100% - 8px), calc(100% - 8px) calc(100% - 4px), calc(100% - 12px) calc(100% - 4px), calc(100% - 12px) 100%, 12px 100%, 12px calc(100% - 4px), 8px calc(100% - 4px), 8px calc(100% - 8px), 4px calc(100% - 8px), 4px calc(100% - 12px), 0 calc(100% - 12px));
-  background:
-    radial-gradient(ellipse at 50% 0%, color-mix(in srgb, var(--cor-faixa, #9aa3c7) 18%, transparent), transparent 70%),
-    rgba(var(--tinta), 0.93);
-  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  position: absolute; z-index: 2; left: 50%; top: calc(40% + 58px); transform: translateX(-50%);
+  width: min(620px, calc(100% - 32px)); max-height: calc(60% - 66px);
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 4px;
+  padding: 10px 22px 16px; text-align: center; overflow-y: auto; scrollbar-width: none;
+  /* sem caixa: só uma sombra macia atrás do texto, que some nas bordas */
+  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(var(--tinta), 0.82) 0%, rgba(var(--tinta), 0.6) 45%, rgba(var(--tinta), 0) 100%);
   animation: surgir 0.4s ease-out;
 }
 .cartao-resultado::-webkit-scrollbar { display: none; }
 .cartao-resultado .botao-grande { padding: 12px 24px; margin-top: 4px; }
 @keyframes surgir { from { opacity: 0; transform: translateX(-50%) scale(0.96); } }
-#icone { width: 40px; height: 40px; image-rendering: pixelated; filter: drop-shadow(0 0 12px var(--cor-faixa, #fff)); animation: flutuar 2.4s ease-in-out infinite; }
-@keyframes flutuar { 50% { transform: translateY(-6px); } }
+#icone { width: 72px; height: 72px; image-rendering: pixelated; filter: drop-shadow(0 0 10px var(--cor-faixa, #fff)) drop-shadow(0 0 22px color-mix(in srgb, var(--cor-faixa, #fff) 45%, transparent)); animation: flutuar 5.5s ease-in-out infinite; margin-bottom: 2px; }
+@keyframes flutuar { 0%, 100% { transform: translateY(2px) rotate(-3deg); } 50% { transform: translateY(-7px) rotate(3deg); } }
 #nome-faixa { font-family: var(--corpo); font-weight: 400; font-size: clamp(30px, 5.5vw, 48px); line-height: 1.05; margin: 4px 0; color: var(--cor-faixa, #fff); text-shadow: 0 0 18px var(--cor-faixa, #fff); letter-spacing: 0.18em; }
 #palavra { font-weight: 700; font-size: 22px; margin: 0; text-shadow: 0 0 12px rgba(255, 255, 255, 0.45); }
 #linha-pontos { font-size: 19px; margin: 0; letter-spacing: 0.04em; }
 #linha-pontos b { text-shadow: 0 0 12px var(--cor-faixa, #fff); }
 #linha-pontos b { color: var(--cor-faixa, #fff); }
-#frase { margin: 0 0 10px; font-size: 15px; color: #c9cfee; letter-spacing: 0.08em; }
-#mais-nichadas { list-style: none; padding: 0; margin: 2px 0 6px; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; font-size: 16px; }
-#mais-nichadas li span { color: #b9c0e4; }
+#frase { margin: 2px 0 14px; font-size: 14px; color: #c9cfee; letter-spacing: 0.08em; }
 .cartao-resultado .botao-grande { min-width: min(320px, 100%); }
 
 /* ---------- fim ---------- */
@@ -297,7 +291,8 @@ pre {
   .fim-conteudo { padding-top: max(140px, calc(env(safe-area-inset-top) + 132px)); }
   .cartao { top: max(140px, 18%); max-height: 34%; padding: 16px 18px; }
   .painel-resposta { gap: 10px; }
-  .cartao-resultado { top: calc(40% + 56px); max-height: calc(60% - 64px); padding: 12px 14px; }
+  .cartao-resultado { top: calc(40% + 50px); max-height: calc(60% - 56px); padding: 8px 14px 12px; }
+  #icone { width: 56px; height: 56px; }
   .pilula { font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -390,8 +385,6 @@ pre {
       <p id="palavra"></p>
       <p id="linha-pontos"></p>
       <p id="frase" class="suave"></p>
-      <p class="rotulo">AS MAIS NICHADAS</p>
-      <ol id="mais-nichadas"></ol>
       <button id="proxima" type="button" class="botao-grande">VIAJAR ▼</button>
     </section>
 
@@ -561,132 +554,83 @@ const Som = (() => {
 })();
 </script>
   <script>
-// Tardígrado mascote, desenhado pixel a pixel por código (40x30).
-// Cabeção redondo, corpo gordinho em gomos, 8 perninhas com garrinhas,
-// olhão brilhante, bochecha rosada e capacete de vidro.
+// Tardígrado mascote (28x16), desenhado pixel a pixel por código.
+// Sóbrio, sem cara de desenho infantil: corpo em barril com dobras, cabeça
+// rombuda com a boquinha em tubo, 8 patinhas curtas com garras claras.
+// Sem contorno: a borda é o próprio tom do corpo meio transparente, e o brilho
+// quente em volta é desenhado na cena. Olha para a direita; a cena espelha.
 function criarTardigrado() {
-  const LW = 40, LH = 30;
-  const TONS = ["#2e1a66", "#6450bf", "#8c78df", "#b6a6f3", "#e4dbff"]; // contorno, sombra, meio, luz, brilho
-  const L = (() => { const v = [-0.5, -0.8, 0.55]; const n = Math.hypot(...v); return v.map((x) => x / n); })();
+  const LW = 28, LH = 16;
+  const TONS = ["#3a1a0c", "#663218", "#934d24", "#bd7036", "#dd9a5a", "#f0c08a"];
   const BAYER4 = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map((v) => (v + 0.5) / 16);
-  // partes como elipsoides: [cx, cy, rx, ry]
-  const PARTES = [
-    [12.5, 16.5, 7.5, 6.2], // traseiro
-    [18.5, 15.5, 6.5, 6.6], // meio
-    [27, 13.5, 8, 7.6],     // cabeça
-  ];
-  const dentro = (x, y) => PARTES.some(([cx, cy, rx, ry]) => ((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2 <= 1);
-  function intensidade(x, y) {
-    let melhor = null, d = -1;
-    for (const [cx, cy, rx, ry] of PARTES) {
-      const nx = (x - cx) / rx, ny = (y - cy) / ry, q = 1 - nx * nx - ny * ny;
-      if (q > d) { d = q; melhor = [nx, ny, Math.sqrt(Math.max(0, q))]; }
-    }
-    return Math.max(0, melhor[0] * L[0] + melhor[1] * L[1] + melhor[2] * L[2]);
-  }
+  const CORPO = { cx: 12.5, cy: 7.2, rx: 11, ry: 5.0 };
+  const CABECA = { cx: 23, cy: 7.9, rx: 3.6, ry: 3.5 };
+  const DOBRAS = [6.2, 10.4, 14.6, 18.6];
+  const se = (x, y, e, p = 2.6) => 1 - Math.abs((x - e.cx) / e.rx) ** p - Math.abs((y - e.cy) / e.ry) ** p;
+  const valor = (x, y) => {
+    // dorso com gomos: cada dobra afunda um pouco o contorno de cima
+    let afunda = 0;
+    for (const d of DOBRAS) afunda = Math.max(afunda, Math.max(0, 1 - Math.abs(x - d) / 1.3) * 0.55);
+    const yy = y < CORPO.cy ? y - afunda : y;
+    return Math.max(se(x, yy, CORPO), se(x, y, CABECA, 2.2));
+  };
+  const dentro = (x, y) => valor(x, y) >= 0;
 
-  function quadro({ passo = 0, olho = "aberto", pulo = 0 } = {}) {
+  function quadro(passo, olhoFechado) {
     const c = document.createElement("canvas");
     c.width = LW; c.height = LH;
     const g = c.getContext("2d");
-    const px = (x, y, cor) => { g.fillStyle = cor; g.fillRect(x, y, 1, 1); };
+    const px = (x, y, cor, a = 1) => { g.globalAlpha = a; g.fillStyle = cor; g.fillRect(x, y, 1, 1); g.globalAlpha = 1; };
 
-    // perninha gordinha: 3 de largura, ponta mais escura e duas garrinhas
-    const perna = (bx, by, fase, tons) => {
-      const lift = Math.max(0, Math.sin(passo + fase)) * 1.4;
-      const dx = Math.round(Math.cos(passo + fase) * 1);
-      const topo = by - Math.round(lift);
-      for (let yy = 0; yy < 4; yy++) {
-        const x0 = bx - 1 + (yy >= 2 ? dx : 0);
-        px(x0 - 1, topo + yy, tons[0]);
-        px(x0, topo + yy, tons[3]);
-        px(x0 + 1, topo + yy, tons[2]);
-        px(x0 + 2, topo + yy, tons[1]);
-        px(x0 + 3, topo + yy, tons[0]);
-      }
-      const x0 = bx - 1 + dx;
-      for (let xx = -1; xx <= 3; xx++) px(x0 + xx, topo + 4, tons[0]);
-      px(x0, topo + 5, "#f2eaff"); px(x0 + 2, topo + 5, "#f2eaff"); // garrinhas
+    // patinha: toco de 2 px de largura, garras claras viradas para a frente
+    const pata = (bx, fase, escura) => {
+      const s = Math.sin(passo + fase);
+      const ergue = s > 0.35 ? 1 : 0;
+      const dx = Math.cos(passo + fase) > 0 ? 1 : 0;
+      const a = escura ? TONS[1] : TONS[2], b = escura ? TONS[0] : TONS[1];
+      const y0 = 11, y1 = 13 - ergue;
+      for (let y = y0; y <= y1; y++) { const d = y === y1 ? dx : 0; px(bx + d, y, a); px(bx + 1 + d, y, b); }
+      const gx = bx + dx;
+      px(gx + 1, y1 + 1, escura ? "#b89478" : "#f2d8b8", escura ? 0.6 : 0.95);
+      px(gx + 2, y1 + 1, escura ? "#b89478" : "#f2d8b8", escura ? 0.4 : 0.7);
     };
-    const FUNDO = ["#24145a", "#3b2a86", "#4a3a9c", "#5848b0"];
-    const FRENTE = ["#2e1a66", "#6450bf", "#8c78df", "#b6a6f3"];
-    [8, 13, 18, 23].forEach((x, i) => perna(x + 2, 19, i * 1.6 + Math.PI, FUNDO));
+    [7, 12, 17].forEach((x, i) => pata(x, i * 1.6 + Math.PI, true));
 
-    // corpo com luz suave (dithering só na passagem entre tons)
     for (let y = 0; y < LH; y++) for (let x = 0; x < LW; x++) {
-      const cx = x + 0.5, cy = y + 0.5;
-      if (!dentro(cx, cy)) continue;
-      const borda = !dentro(cx - 1, cy) || !dentro(cx + 1, cy) || !dentro(cx, cy - 1) || !dentro(cx, cy + 1);
-      if (borda) { px(x, y, TONS[0]); continue; }
-      let i = intensidade(cx, cy);
-      // gomos: sulcos curvos no dorso
-      for (const sx of [10.5, 15.5]) {
-        const curva = sx + (cy - 12) * 0.25;
-        if (Math.abs(cx - curva) < 0.55 && cy < 20) i *= 0.62;
+      const cx = x + 0.5, cy = y + 0.5, v = valor(cx, cy);
+      if (v < 0) {
+        if (v > -0.22 && dentro(cx, cy + 1)) px(x, y, TONS[3], 0.35); // borda de cima esfumada
+        continue;
       }
-      const v = 1 + i * 3.1;
-      let k = Math.floor(v);
-      if (v - k > 0.35 + BAYER4[(y & 3) * 4 + (x & 3)] * 0.4) k++;
-      px(x, y, TONS[Math.max(1, Math.min(4, k))]);
-    }
-    // contorno interno de luz na barriga (luz refletida)
-    for (let x = 8; x < 26; x++) {
-      for (let y = LH - 1; y > 0; y--) if (dentro(x + 0.5, y + 0.5)) { if (dentro(x + 0.5, y - 1.5)) px(x, y - 1, TONS[2]); break; }
+      // luz de cima: claro no dorso, escuro na barriga
+      const ny = (cy - 2) / 10.5;
+      let t = 5.2 - ny * 5.4 - (cx < 4 ? 0.6 : 0) + Math.min(0, (v - 0.25) * 2.5);
+      for (const d of DOBRAS) {
+        const dist = Math.abs(cx - d - (cy - 4) * 0.12);
+        if (dist < 0.6 && cy > 2 && cy < 10.5) t -= 1.1;
+      }
+      let k = Math.floor(t);
+      if (t - k > 0.25 + BAYER4[(y & 3) * 4 + (x & 3)] * 0.5) k++;
+      k = Math.max(0, Math.min(5, k));
+      const borda = !dentro(cx - 1, cy) || !dentro(cx + 1, cy) || !dentro(cx, cy - 1) || !dentro(cx, cy + 1);
+      px(x, y, TONS[k], borda ? 0.7 : 1);
     }
 
-    [8, 13, 18, 23].forEach((x, i) => perna(x, 20, i * 1.6, FRENTE));
+    [5, 10, 15, 20].forEach((x, i) => pata(x, i * 1.6, false));
+    // par de trás, saindo do fim do corpo
+    px(2, 10, TONS[2]); px(3, 10, TONS[1]); px(1, 11, TONS[2]); px(2, 11, TONS[1]);
+    px(0, 12, "#f2d8b8", 0.85); px(1, 12, "#f2d8b8", 0.6);
 
-    // olhão: 4x5, pupila escura, dois brilhos
-    const ex = 28, ey = 9;
-    const ESC = "#160b36";
-    if (olho === "aberto") {
-      const mapa = [".##.", "####", "####", "####", ".##."];
-      mapa.forEach((l, j) => [...l].forEach((ch, i) => ch === "#" && px(ex + i, ey + j, ESC)));
-      px(ex + 1, ey + 1, "#ffffff"); px(ex + 2, ey + 1, "#ffffff"); px(ex + 1, ey + 2, "#ffffff");
-      px(ex + 2, ey + 3, "#7fdcff"); // reflexo azul
-    } else if (olho === "feliz") {
-      px(ex, ey + 3, ESC); px(ex + 1, ey + 2, ESC); px(ex + 2, ey + 2, ESC); px(ex + 3, ey + 3, ESC);
-    } else {
-      for (let i = 0; i < 4; i++) px(ex + i, ey + 3, ESC);
-      px(ex - 1, ey + 2, ESC);
-    }
-    // sobrancelhinha, bochecha e boquinha redonda de tardígrado
-    px(26, 16, "#ff8fc8"); px(27, 16, "#ff8fc8"); px(26, 17, "#ff6fae"); px(27, 17, "#ffb3dc");
-    const mx = 33, my = 15;
-    if (olho === "feliz") { px(mx, my, ESC); px(mx + 1, my + 1, ESC); px(mx, my + 1, "#ff6fae"); }
-    else { px(mx, my, ESC); px(mx + 1, my, ESC); px(mx, my + 1, ESC); px(mx + 1, my + 1, "#4a2a6a"); }
-
-    // capacete de vidro em volta da cabeça
-    const hx = 27.5, hy = 12.5, r = 10;
-    for (let y = 0; y < LH; y++) for (let x = 12; x < LW; x++) {
-      const d = Math.hypot(x + 0.5 - hx, y + 0.5 - hy);
-      if (d > r) continue;
-      if (d > r - 1) g.fillStyle = x + 0.5 < hx - 4 ? "rgba(180, 240, 255, 0.45)" : "rgba(180, 240, 255, 0.8)";
-      else if (!dentro(x + 0.5, y + 0.5)) g.fillStyle = "rgba(150, 225, 255, 0.12)";
-      else continue;
-      g.fillRect(x, y, 1, 1);
-    }
-    // reflexo do vidro
-    g.fillStyle = "rgba(255, 255, 255, 0.95)";
-    for (const [a, b] of [[3, -8], [4, -7], [5, -7], [6, -6], [7, -5], [7, -4]]) g.fillRect(Math.round(hx + a), Math.round(hy + b), 1, 1);
-    g.fillStyle = "rgba(255, 255, 255, 0.6)";
-    g.fillRect(Math.round(hx + 8), Math.round(hy - 2), 1, 1);
-
-    if (pulo) {
-      const d = document.createElement("canvas"); d.width = LW; d.height = LH;
-      d.getContext("2d").drawImage(c, 0, -pulo); return d;
-    }
+    // olho: um ponto escuro, sem expressão
+    if (olhoFechado) { px(23, 6, TONS[1]); }
+    else { px(23, 6, "#140803"); px(24, 6, "#140803", 0.55); }
+    // boca em tubo na ponta do focinho
+    px(26, 8, TONS[1]); px(27, 8, "#1e0c05", 0.9); px(27, 9, TONS[2], 0.5);
     return c;
   }
 
-  const andar = [0, 1, 2, 3].map((i) => quadro({ passo: (i / 4) * Math.PI * 2 }));
-  return {
-    andar,
-    piscar: quadro({ olho: "fechado" }),
-    feliz: [0, 1, 2, 3].map((i) => quadro({ passo: (i / 4) * Math.PI * 2, olho: "feliz" })),
-    largura: LW,
-    altura: LH,
-  };
+  const andar = [0, 1, 2, 3].map((i) => quadro((i / 4) * Math.PI * 2, false));
+  return { andar, feliz: andar, piscar: quadro(0, true), largura: LW, altura: LH };
 }
 </script>
   <script>
@@ -971,10 +915,44 @@ function criarIcones() {
   const icones = {};
   const fazer = (id, desenhar) => {
     const t = novaTela(24, 24);
-    desenhar(t.getContext("2d"));
+    const ctx = t.getContext("2d");
+    desenhar(ctx);
+    if (MONO[id]) pintarDeUmaCor(ctx, MONO[id]);
     icones[id] = t.toDataURL();
   };
-  fazer("obvia", (ctx) => desenharSprite(ctx, SATELITE, 6, 8));
+  // cada faixa num tom só (escuro, médio, a cor, e um brilho claro): simples, sem confusão de cores.
+  // A supernova fica colorida de propósito.
+  const MONO = { obvia: "#e8f0ff", comum: "#5fe1ff", incomum: "#ffd23f", rara: "#c38bff" };
+  function pintarDeUmaCor(ctx, hex) {
+    const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+    const mistura = (k, alvo) => c.map((v) => Math.round(v + (alvo - v) * k));
+    const rampa = [c.map((v) => v * 0.32), c.map((v) => v * 0.62), c, mistura(0.55, 255)];
+    const img = ctx.getImageData(0, 0, 24, 24), d = img.data;
+    for (let i = 0; i < d.length; i += 4) {
+      if (!d[i + 3]) continue;
+      const lum = (d[i] * 0.3 + d[i + 1] * 0.55 + d[i + 2] * 0.15) / 255;
+      const k = lum < 0.3 ? 0 : lum < 0.55 ? 1 : lum < 0.82 ? 2 : 3;
+      [d[i], d[i + 1], d[i + 2]] = rampa[k];
+    }
+    ctx.putImageData(img, 0, 0);
+  }
+  fazer("obvia", (ctx) => {
+    // satélite grande: duas placas solares e o corpo com antena
+    const r = (x, y, w, h, c) => { ctx.fillStyle = c; ctx.fillRect(x, y, w, h); };
+    for (const x0 of [1, 16]) {
+      r(x0, 8, 7, 9, "#9aa0b0");
+      for (let k = 0; k < 3; k++) r(x0 + 1 + k * 2, 9, 1, 7, "#d8dcea");
+      r(x0, 8, 7, 1, "#ffffff");
+    }
+    r(8, 12, 8, 1, "#9aa0b0");
+    r(9, 7, 6, 11, "#d8dcea");
+    r(9, 7, 6, 1, "#ffffff");
+    r(10, 9, 4, 3, "#ffffff");
+    r(9, 16, 6, 2, "#9aa0b0");
+    r(11, 3, 2, 4, "#d8dcea");
+    r(10, 2, 4, 1, "#ffffff");
+    r(11, 18, 2, 3, "#9aa0b0");
+  });
   fazer("comum", (ctx) => esfera(ctx, 12, 12, 9, ["#3a3f58", "#6b7088", "#a3a8c0", "#d6daea", "#f4f6ff"], { crateras: true }));
   fazer("incomum", (ctx) => {
     anel(ctx, 12, 12, 6, "#ffe9a0", false);
@@ -982,12 +960,15 @@ function criarIcones() {
     anel(ctx, 12, 12, 6, "#ffe9a0", true);
   });
   fazer("rara", (ctx) => {
-    for (let t = 0; t < 14; t++) {
-      ctx.fillStyle = t % 3 ? "rgba(195, 139, 255, 0.55)" : "rgba(255, 143, 200, 0.5)";
-      ctx.fillRect(9 + t, 14 - t, 2, 2);
-      if (t % 2) ctx.fillRect(10 + t, 16 - t, 1, 1);
+    // cometa: cauda larga que afina, cabeça brilhante embaixo
+    for (let t = 0; t < 15; t++) {
+      const larg = Math.max(1, Math.round(4 - t * 0.25));
+      ctx.globalAlpha = 1 - t / 18;
+      ctx.fillStyle = t % 4 === 1 ? "#ffffff" : "#c8c8d8";
+      for (let k = -larg; k <= larg; k++) ctx.fillRect(9 + t + Math.round(k * 0.7), 13 - t + Math.round(k * 0.7), 1, 1);
     }
-    esfera(ctx, 7, 17, 5, ["#3a1a7a", "#7a3cff", "#c38bff", "#f0e0ff"]);
+    ctx.globalAlpha = 1;
+    esfera(ctx, 7, 16, 5, ["#606070", "#a0a0b0", "#e0e0ea", "#ffffff"]);
   });
   fazer("supernova", (ctx) => {
     for (let a = 0; a < 16; a++) {
@@ -1079,9 +1060,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
   let larguraCaixa = 200;
   let cobertas = [];
+  let alfaCurio = 1;
   const rastro = [];
   const caixas = [];
-    const mascote = { x: 0, y: 0, pulo: 0 };
+  const mascote = { x: 0, y: 0, pulo: 0, virar: 1 };
   // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
   const foguete = { al: 0, x: 0, y: 0 };
   let flash = 0;
@@ -1606,15 +1588,32 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
     const piscando = !feliz && tempo % 3.7 < 0.13;
     const img = piscando ? tardigrado.piscar : (feliz ? tardigrado.feliz : tardigrado.andar)[ciclo];
-    // cada pixel do bichinho vira 3 px na tela (2 no celular): nítido e do tamanho certo
-    const pz = Math.max(2, Math.round(escala * 0.75));
+    // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
+    const pz = Math.max(2, Math.round(escala * 0.5));
     // "respira": estica e encolhe de leve
     const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
+    // olha sempre para o meio da tela (para a caixa): vira devagar, como quem se ajeita
+    const alvoVirar = foguete.x * escala > innerWidth / 2 ? -1 : 1;
+    mascote.virar += (alvoVirar - mascote.virar) * (1 - Math.exp(-dt * 8));
+    const sx = foguete.x * escala, sy = foguete.y * escala;
+    // brilho quente em volta, que mistura o bicho com o cenário (sem contorno)
+    const rb = img.width * pz * 0.85;
+    const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
+    halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
+    halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
+    halo.addColorStop(1, "rgba(255, 110, 40, 0)");
+    tx.save();
+    tx.globalCompositeOperation = "lighter";
+    tx.fillStyle = halo;
+    tx.fillRect(sx - rb, sy - rb, rb * 2, rb * 2);
+    tx.restore();
     tx.save();
     tx.imageSmoothingEnabled = false;
-    tx.translate(foguete.x * escala, foguete.y * escala);
-    tx.rotate(inclina);
-    tx.scale(1 / resp, resp);
+    tx.translate(sx, sy);
+    tx.rotate(inclina * Math.sign(mascote.virar || 1));
+    tx.scale(mascote.virar / resp, resp);
+    tx.shadowColor = "rgba(255, 140, 60, 0.75)";
+    tx.shadowBlur = pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
     return { x: foguete.x, y: foguete.y };
@@ -1684,8 +1683,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
         .filter((el) => el && !el.hidden)
         .map((el) => { const r = el.getBoundingClientRect(); return [r.top - 14, r.bottom + 14]; });
     }
+    // enquanto você digita, as curiosidades somem devagar: só a pergunta e o campo na tela
+    alfaCurio += ((alvoCanto ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
+    tx.globalAlpha = alfaCurio;
     CURIOSIDADES.forEach(([al, texto], i) => {
-      if (noInicio) return;
+      if (noInicio || alfaCurio < 0.02) return;
       const yc = naTelaTexto(al);
       if (cobertas.some(([a, b]) => yc > a && yc < b)) return;
       const y = naTelaTexto(al);
@@ -1707,7 +1709,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
           escrever(j === 0 ? `— ${t}` : `  ${t}`, 16, ly, corSuave);
         }
       });
-    });
+    });    tx.globalAlpha = 1;
+
 
     // linhas das faixas: até onde cada faixa de raridade levaria nesta pergunta
     if (mostrarLinhas) {
@@ -2594,17 +2597,6 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
     : "+0 PONTOS";
   $("frase").textContent = faixa.frase;
 
-  const top = [...cat.respostas].sort((a, b) => b.pontos - a.pontos).slice(0, 4);
-  if (!top.some((r) => r.resposta === cat.supernova)) top.push(cat.respostas.find((r) => r.resposta === cat.supernova));
-  $("mais-nichadas").innerHTML = "";
-  for (const r of top) {
-    const li = document.createElement("li");
-    li.textContent = r.resposta + " ";
-    const extra = document.createElement("span");
-    extra.textContent = r.resposta === cat.supernova ? `${r.pontos} ★` : `${r.pontos}`;
-    li.append(extra);
-    $("mais-nichadas").append(li);
-  }
   // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
   const nivel = !resposta ? 0 : supernova ? 4 : ["obvia", "comum", "incomum", "rara", "lendaria"].indexOf(faixa.id);
   const nome = $("nome-faixa");

@@ -279,10 +279,44 @@ function criarIcones() {
   const icones = {};
   const fazer = (id, desenhar) => {
     const t = novaTela(24, 24);
-    desenhar(t.getContext("2d"));
+    const ctx = t.getContext("2d");
+    desenhar(ctx);
+    if (MONO[id]) pintarDeUmaCor(ctx, MONO[id]);
     icones[id] = t.toDataURL();
   };
-  fazer("obvia", (ctx) => desenharSprite(ctx, SATELITE, 6, 8));
+  // cada faixa num tom só (escuro, médio, a cor, e um brilho claro): simples, sem confusão de cores.
+  // A supernova fica colorida de propósito.
+  const MONO = { obvia: "#e8f0ff", comum: "#5fe1ff", incomum: "#ffd23f", rara: "#c38bff" };
+  function pintarDeUmaCor(ctx, hex) {
+    const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+    const mistura = (k, alvo) => c.map((v) => Math.round(v + (alvo - v) * k));
+    const rampa = [c.map((v) => v * 0.32), c.map((v) => v * 0.62), c, mistura(0.55, 255)];
+    const img = ctx.getImageData(0, 0, 24, 24), d = img.data;
+    for (let i = 0; i < d.length; i += 4) {
+      if (!d[i + 3]) continue;
+      const lum = (d[i] * 0.3 + d[i + 1] * 0.55 + d[i + 2] * 0.15) / 255;
+      const k = lum < 0.3 ? 0 : lum < 0.55 ? 1 : lum < 0.82 ? 2 : 3;
+      [d[i], d[i + 1], d[i + 2]] = rampa[k];
+    }
+    ctx.putImageData(img, 0, 0);
+  }
+  fazer("obvia", (ctx) => {
+    // satélite grande: duas placas solares e o corpo com antena
+    const r = (x, y, w, h, c) => { ctx.fillStyle = c; ctx.fillRect(x, y, w, h); };
+    for (const x0 of [1, 16]) {
+      r(x0, 8, 7, 9, "#9aa0b0");
+      for (let k = 0; k < 3; k++) r(x0 + 1 + k * 2, 9, 1, 7, "#d8dcea");
+      r(x0, 8, 7, 1, "#ffffff");
+    }
+    r(8, 12, 8, 1, "#9aa0b0");
+    r(9, 7, 6, 11, "#d8dcea");
+    r(9, 7, 6, 1, "#ffffff");
+    r(10, 9, 4, 3, "#ffffff");
+    r(9, 16, 6, 2, "#9aa0b0");
+    r(11, 3, 2, 4, "#d8dcea");
+    r(10, 2, 4, 1, "#ffffff");
+    r(11, 18, 2, 3, "#9aa0b0");
+  });
   fazer("comum", (ctx) => esfera(ctx, 12, 12, 9, ["#3a3f58", "#6b7088", "#a3a8c0", "#d6daea", "#f4f6ff"], { crateras: true }));
   fazer("incomum", (ctx) => {
     anel(ctx, 12, 12, 6, "#ffe9a0", false);
@@ -290,12 +324,15 @@ function criarIcones() {
     anel(ctx, 12, 12, 6, "#ffe9a0", true);
   });
   fazer("rara", (ctx) => {
-    for (let t = 0; t < 14; t++) {
-      ctx.fillStyle = t % 3 ? "rgba(195, 139, 255, 0.55)" : "rgba(255, 143, 200, 0.5)";
-      ctx.fillRect(9 + t, 14 - t, 2, 2);
-      if (t % 2) ctx.fillRect(10 + t, 16 - t, 1, 1);
+    // cometa: cauda larga que afina, cabeça brilhante embaixo
+    for (let t = 0; t < 15; t++) {
+      const larg = Math.max(1, Math.round(4 - t * 0.25));
+      ctx.globalAlpha = 1 - t / 18;
+      ctx.fillStyle = t % 4 === 1 ? "#ffffff" : "#c8c8d8";
+      for (let k = -larg; k <= larg; k++) ctx.fillRect(9 + t + Math.round(k * 0.7), 13 - t + Math.round(k * 0.7), 1, 1);
     }
-    esfera(ctx, 7, 17, 5, ["#3a1a7a", "#7a3cff", "#c38bff", "#f0e0ff"]);
+    ctx.globalAlpha = 1;
+    esfera(ctx, 7, 16, 5, ["#606070", "#a0a0b0", "#e0e0ea", "#ffffff"]);
   });
   fazer("supernova", (ctx) => {
     for (let a = 0; a < 16; a++) {
@@ -387,9 +424,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
   let larguraCaixa = 200;
   let cobertas = [];
+  let alfaCurio = 1;
   const rastro = [];
   const caixas = [];
-    const mascote = { x: 0, y: 0, pulo: 0 };
+  const mascote = { x: 0, y: 0, pulo: 0, virar: 1 };
   // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
   const foguete = { al: 0, x: 0, y: 0 };
   let flash = 0;
@@ -914,15 +952,32 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
     const piscando = !feliz && tempo % 3.7 < 0.13;
     const img = piscando ? tardigrado.piscar : (feliz ? tardigrado.feliz : tardigrado.andar)[ciclo];
-    // cada pixel do bichinho vira 3 px na tela (2 no celular): nítido e do tamanho certo
-    const pz = Math.max(2, Math.round(escala * 0.75));
+    // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
+    const pz = Math.max(2, Math.round(escala * 0.5));
     // "respira": estica e encolhe de leve
     const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
+    // olha sempre para o meio da tela (para a caixa): vira devagar, como quem se ajeita
+    const alvoVirar = foguete.x * escala > innerWidth / 2 ? -1 : 1;
+    mascote.virar += (alvoVirar - mascote.virar) * (1 - Math.exp(-dt * 8));
+    const sx = foguete.x * escala, sy = foguete.y * escala;
+    // brilho quente em volta, que mistura o bicho com o cenário (sem contorno)
+    const rb = img.width * pz * 0.85;
+    const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
+    halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
+    halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
+    halo.addColorStop(1, "rgba(255, 110, 40, 0)");
+    tx.save();
+    tx.globalCompositeOperation = "lighter";
+    tx.fillStyle = halo;
+    tx.fillRect(sx - rb, sy - rb, rb * 2, rb * 2);
+    tx.restore();
     tx.save();
     tx.imageSmoothingEnabled = false;
-    tx.translate(foguete.x * escala, foguete.y * escala);
-    tx.rotate(inclina);
-    tx.scale(1 / resp, resp);
+    tx.translate(sx, sy);
+    tx.rotate(inclina * Math.sign(mascote.virar || 1));
+    tx.scale(mascote.virar / resp, resp);
+    tx.shadowColor = "rgba(255, 140, 60, 0.75)";
+    tx.shadowBlur = pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
     return { x: foguete.x, y: foguete.y };
@@ -992,8 +1047,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
         .filter((el) => el && !el.hidden)
         .map((el) => { const r = el.getBoundingClientRect(); return [r.top - 14, r.bottom + 14]; });
     }
+    // enquanto você digita, as curiosidades somem devagar: só a pergunta e o campo na tela
+    alfaCurio += ((alvoCanto ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
+    tx.globalAlpha = alfaCurio;
     CURIOSIDADES.forEach(([al, texto], i) => {
-      if (noInicio) return;
+      if (noInicio || alfaCurio < 0.02) return;
       const yc = naTelaTexto(al);
       if (cobertas.some(([a, b]) => yc > a && yc < b)) return;
       const y = naTelaTexto(al);
@@ -1015,7 +1073,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
           escrever(j === 0 ? `— ${t}` : `  ${t}`, 16, ly, corSuave);
         }
       });
-    });
+    });    tx.globalAlpha = 1;
+
 
     // linhas das faixas: até onde cada faixa de raridade levaria nesta pergunta
     if (mostrarLinhas) {

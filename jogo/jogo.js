@@ -483,17 +483,6 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
     : "+0 PONTOS";
   $("frase").textContent = faixa.frase;
 
-  const top = [...cat.respostas].sort((a, b) => b.pontos - a.pontos).slice(0, 4);
-  if (!top.some((r) => r.resposta === cat.supernova)) top.push(cat.respostas.find((r) => r.resposta === cat.supernova));
-  $("mais-nichadas").innerHTML = "";
-  for (const r of top) {
-    const li = document.createElement("li");
-    li.textContent = r.resposta + " ";
-    const extra = document.createElement("span");
-    extra.textContent = r.resposta === cat.supernova ? `${r.pontos} ★` : `${r.pontos}`;
-    li.append(extra);
-    $("mais-nichadas").append(li);
-  }
   // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
   const nivel = !resposta ? 0 : supernova ? 4 : ["obvia", "comum", "incomum", "rara", "lendaria"].indexOf(faixa.id);
   const nome = $("nome-faixa");
