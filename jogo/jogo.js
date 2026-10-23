@@ -189,7 +189,10 @@ function iniciar() {
     mostrarFim(false);
     return;
   }
-  if (estado.rodada > 0) $("comecar").textContent = "▼ CONTINUAR DESCIDA ▼";
+  if (estado.rodada > 0) {
+    $("comecar").textContent = "▼ CONTINUAR DESCIDA ▼";
+    document.querySelector("#inicio [data-zerar]").hidden = false;
+  }
 }
 
 function montarQuadrados() {
@@ -521,4 +524,14 @@ $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());
 });
+// Modo teste: apaga o progresso de hoje e recomeça, sem esperar o dia seguinte.
+// (Tirar antes do lançamento, ou deixar só para quem desenvolve.)
+function zerarDia() {
+  try {
+    localStorage.removeItem(`nicho:${estado.data}`);
+  } catch {}
+  location.reload();
+}
+document.querySelectorAll("[data-zerar]").forEach((b) => b.addEventListener("click", zerarDia));
+
 iniciar();
