@@ -46,31 +46,40 @@ const MARCOS = [
 ];
 const CURIOSIDADES = [
   [40, "aqui o céu azul começa a virar preto"],
-  [100, "a Estação Espacial dá 16 voltas na Terra por dia"],
+  [75, "a ISS dá 16 voltas na Terra por dia"],
+  [110, "Gravidade (2013): a Dra. Stone gira solta por aqui"],
+  [190, "Apollo 13: \u201cHouston, temos um problema\u201d"],
   [280, "a Lua se afasta da Terra 3,8 cm por ano"],
-  [600, "um dia em Marte dura quase 24 h e 40 min"],
+  [470, "Perdido em Marte: Mark Watney plantou batatas aqui"],
+  [640, "um dia em Marte dura quase 24 h e 40 min"],
   [1000, "Júpiter tem mais de 90 luas"],
-  [1500, "a Grande Mancha Vermelha é maior que a Terra"],
-  [2100, "Saturno flutuaria numa banheira gigante"],
+  [1300, "2001: Uma Odisseia no Espaço: a Discovery One veio até aqui"],
+  [1550, "a Grande Mancha Vermelha é maior que a Terra"],
+  [1950, "Interestelar: o buraco de minhoca abre perto de Saturno"],
+  [2200, "Saturno flutuaria numa banheira gigante"],
   [2900, "Urano gira deitado de lado"],
   [3800, "Netuno tem os ventos mais rápidos do Sistema Solar"],
   [4800, "Plutão é menor que a nossa Lua"],
   [6200, "a Voyager 1 é o objeto humano mais distante da Terra"],
-  [8000, "a Nuvem de Oort guarda trilhões de cometas"],
+  [7600, "Toy Story: ao infinito e além!"],
+  [8300, "a Nuvem de Oort guarda trilhões de cometas"],
   [10500, "Alfa Centauri é o sistema estelar mais perto do Sol"],
+  [12800, "Guardiões da Galáxia: tá tocando Awesome Mix aqui"],
   [14000, "na Nebulosa de Órion nascem estrelas novas"],
-  [17000, "nem a luz escapa de um buraco negro"],
+  [16600, "Interestelar: Gargântua, o buraco negro do filme"],
+  [17200, "nem a luz escapa de um buraco negro"],
 ];
 
 // Cor do fundo por profundidade: céu claro perto da Terra, escurecendo até o preto.
 const PARADAS_FUNDO = [
-  [0, [196, 234, 255]],
-  [60, [140, 202, 250]],
-  [200, [66, 128, 224]],
-  [500, [28, 52, 140]],
-  [1200, [14, 18, 74]],
-  [4000, [9, 5, 38]],
-  [12000, [3, 1, 12]],
+  [0, [190, 230, 255]],
+  [35, [120, 188, 245]],
+  [80, [52, 104, 196]],
+  [130, [20, 32, 82]],
+  [190, [8, 9, 26]],
+  [600, [6, 5, 17]],
+  [4000, [5, 3, 14]],
+  [12000, [2, 1, 6]],
 ];
 
 // ---------- utilidades ----------
@@ -402,8 +411,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let rodadaAl = 0; // onde começou a pergunta atual (para as linhas das faixas)
   let mostrarLinhas = false;
   const caixas = [];
-  const particulas = [];
-  const mascote = { x: 0, y: 0, pulo: 0 };
+    const mascote = { x: 0, y: 0, pulo: 0 };
   // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
   const foguete = { al: 0, x: 0, y: 0 };
   let flash = 0;
@@ -411,9 +419,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let tempo = 0; // segundos: todo movimento usa o tempo, não o número do quadro
   let dt = 1 / 60;
   const cadentes = [];
-  const bolhas = [];
   let proximaCadente = 3;
-  let proximaBolha = 2;
   let anterior = performance.now();
   let aoQuadro = () => {};
 
@@ -689,7 +695,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
           const x = ((sorte(k, sem + 2) * L + tempo * vx + Math.sin(tempo * 0.4 + sem) * 6) % L + L) % L;
           const y = k * BLOCO + sorte(k, sem + 3) * BLOCO - desvio + focoY + Math.sin(tempo * 0.3 + k + i) * 5;
           const tam = 0.5 + ci * 0.35;
-          alta.globalAlpha = forca * (0.15 + 0.2 * ci) * (0.6 + 0.4 * Math.sin(tempo + sem));
+          alta.globalAlpha = forca * (0.06 + 0.08 * ci) * (0.6 + 0.4 * Math.sin(tempo + sem));
           alta.fillStyle = camera.atual < 200 ? "#ffffff" : ci === 2 ? "#cfe8ff" : "#9a92ff";
           alta.fillRect(x, y, tam, tam);
         }
@@ -746,56 +752,6 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
   }
 
-  // Bolhas de plasma: aparecem de vez em quando, crescem, sobem devagar e estouram.
-  function desenharBolhas() {
-    if (!reduzirMovimento) {
-      proximaBolha -= dt;
-      if (proximaBolha <= 0) {
-        proximaBolha = 1.5 + Math.random() * 3.5;
-        const lado = Math.random() > 0.5;
-        bolhas.push({
-          x: lado ? innerWidth * (0.05 + Math.random() * 0.25) : innerWidth * (0.7 + Math.random() * 0.25),
-          y: innerHeight * (0.3 + Math.random() * 0.65),
-          r: 8 + Math.random() * 20,
-          vida: 0,
-          dura: 3.5 + Math.random() * 3,
-          cor: Math.random() > 0.5 ? [95, 225, 255] : [255, 143, 200],
-          fase: Math.random() * 6.283,
-        });
-      }
-    }
-    for (let i = bolhas.length - 1; i >= 0; i--) {
-      const b = bolhas[i];
-      b.vida += dt;
-      const t = b.vida / b.dura;
-      if (t >= 1) {
-        bolhas.splice(i, 1);
-        continue;
-      }
-      const cresce = 1 - Math.pow(1 - Math.min(1, t * 2.5), 3);
-      const r = b.r * cresce * (1 + 0.05 * Math.sin(tempo * 3 + b.fase));
-      const a = t < 0.85 ? Math.min(1, t * 4) : (1 - t) / 0.15;
-      const x = b.x + Math.sin(tempo * 0.8 + b.fase) * 6;
-      const y = b.y - b.vida * 10;
-      const [cr, cg, cb] = b.cor;
-      const g = tx.createRadialGradient(x, y, r * 0.2, x, y, r);
-      g.addColorStop(0, `rgba(${cr},${cg},${cb},0)`);
-      g.addColorStop(0.75, `rgba(${cr},${cg},${cb},${0.14 * a})`);
-      g.addColorStop(1, `rgba(${cr},${cg},${cb},${0.35 * a})`);
-      tx.fillStyle = g;
-      tx.beginPath();
-      tx.arc(x, y, r, 0, Math.PI * 2);
-      tx.fill();
-      tx.strokeStyle = `rgba(${cr},${cg},${cb},${0.5 * a})`;
-      tx.lineWidth = 1;
-      tx.stroke();
-      tx.fillStyle = `rgba(255,255,255,${0.6 * a})`; // reflexo
-      tx.beginPath();
-      tx.arc(x - r * 0.4, y - r * 0.4, Math.max(1, r * 0.15), 0, Math.PI * 2);
-      tx.fill();
-    }
-  }
-
   // Planetas grandes, desenhados na camada alta: ficam por cima das paredes
   // e andam com a câmera sem degrau. A imagem é ampliada sem borrar o pixel.
   function desenharCorpos() {
@@ -808,6 +764,41 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const x = posicaoCorpo(img) - img.width / 2;
       tx.drawImage(img, x * escala, (y - img.height / 2) * escala, img.width * escala, img.height * escala);
     }
+  }
+
+  // A Estação Espacial Internacional (ISS) cruzando devagar perto da Terra.
+  function desenharISS() {
+    const y = naTelaExata(62);
+    if (y < -30 || y > A + 30) return;
+    const x = ((tempo * 3.2) % (L + 90)) - 45;
+    const p = (c, dx, dy, w, h) => { alta.fillStyle = c; alta.fillRect(x + dx, y + dy, w, h); };
+    // painéis solares: quatro pares, com grade
+    for (const px of [-22, -14, 9, 17]) {
+      for (const py of [-9, 2]) {
+        p("#140f36", px - 0.5, py - 0.5, 6, 8);
+        p("#1f4fa8", px, py, 5, 7);
+        p("#5f9bff", px, py, 5, 1);
+        p("#3a6fd0", px + 2, py, 1, 7);
+        p("#ffd23f", px, py + 3, 5, 0.6);
+      }
+    }
+    p("#140f36", -25, -1.5, 50, 3); // treliça
+    p("#b8bfe0", -24, -1, 48, 2);
+    p("#ffffff", -24, -1, 48, 0.6);
+    // módulos do meio
+    p("#140f36", -6, -4, 12, 8);
+    p("#f4f4ff", -5, -3, 10, 6);
+    p("#b8bfe0", -5, 1, 10, 2);
+    p("#140f36", -1.5, -7, 3, 14);
+    p("#e8ecff", -1, -6.5, 2, 13);
+    p("#7a80a0", -3, 4, 6, 2);
+    // radiadores
+    p("#e8ecff", -9, 3, 2, 5);
+    p("#e8ecff", 7, 3, 2, 5);
+    // luzinha piscando
+    alta.globalAlpha = 0.5 + 0.5 * Math.sin(tempo * 4);
+    p("#ff3d6e", 0, -7.5, 1, 1);
+    alta.globalAlpha = 1;
   }
 
   // Brilho de atmosfera em volta dos planetas grandes.
@@ -887,63 +878,26 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
   }
 
+  // O astronauta desce sozinho, seguindo a câmera com uma mola suave.
+  const TAMANHO_ASTRONAUTA = 1.7;
   function desenharFoguete() {
-    const descendo = camera.velocidade > 20;
     foguete.al += (camera.atual - foguete.al) * (1 - Math.exp(-dt * 7.5));
     foguete.al = Math.max(foguete.al, camera.atual - 50); // atrasa um pouco, mas nunca sai da tela
-    const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.5) * 2;
+    const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3) * 2.5;
     const lado = reduzirMovimento ? 0 : Math.sin(tempo * 0.55) * 5;
-    foguete.x = L / 2 + 40 + lado;
-    foguete.y = naTelaExata(foguete.al) - 18 + balanco;
-    const x = foguete.x - 6;
-    const y = foguete.y - 8;
-    // chama por cima, porque o foguete está de cabeça para baixo
-    const tamanho = descendo ? Math.min(14, 4 + camera.velocidade / 60) : 3 + (quadro >> 3) % 2;
-    for (let j = 0; j < tamanho; j++) {
-      const largura = Math.max(1, Math.round(3 - j * 0.25 + Math.random() * 0.8));
-      alta.fillStyle = j < 2 ? PALETA.F : j < tamanho * 0.6 ? PALETA.f : PALETA.e;
-      alta.fillRect(x + 6 - Math.floor(largura / 2), y - 1 - j, largura, 1);
-    }
-    desenharSprite(alta, FOGUETE, x, y);
-    return { x: x + 6, y: y + 8 };
-  }
-
-  function desenharMascote(foguete) {
-    // segue o foguete com atraso, flutuando
-    const alvoX = foguete.x + 22 + Math.sin(tempo * 0.85) * 5;
-    const alvoY = foguete.y - 6 + Math.sin(tempo * 1.3) * 3 - mascote.pulo;
-    const k = 1 - Math.exp(-dt * 3.6);
-    mascote.x += (alvoX - mascote.x) * k;
-    mascote.y += (alvoY - mascote.y) * k;
     mascote.pulo *= Math.exp(-dt * 6);
+    foguete.x = L / 2 + 44 + lado;
+    foguete.y = naTelaExata(foguete.al) - 6 + balanco - mascote.pulo;
+    const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.12 + Math.min(0.25, camera.velocidade / 4000);
+    tx.save();
+    tx.translate(foguete.x * escala, foguete.y * escala);
+    tx.rotate(inclina);
+    tx.scale(TAMANHO_ASTRONAUTA, TAMANHO_ASTRONAUTA);
+    tx.translate(-foguete.x * escala, -foguete.y * escala);
     const q = MASCOTE[Math.floor(tempo * 1.8) % 2];
-    desenharSprite(alta, q, mascote.x - 6, mascote.y - 7);
-  }
-
-  // Poeirinha subindo, como bolhas: dá a sensação de movimento.
-  function desenharParticulas(foguete) {
-    if (quadro % 4 === 0 && particulas.length < 60) {
-      particulas.push({
-        x: foguete.x + (Math.random() - 0.5) * 60,
-        al: camera.atual + (Math.random() * 40 + 10) / PX_POR_AL * 0.5,
-        vida: 1,
-        sobe: 3 + Math.random() * 6,
-      });
-    }
-    for (let i = particulas.length - 1; i >= 0; i--) {
-      const p = particulas[i];
-      p.al -= p.sobe / 60;
-      p.vida -= 0.006;
-      const y = naTelaExata(p.al);
-      if (p.vida <= 0 || y < -5) {
-        particulas.splice(i, 1);
-        continue;
-      }
-      alta.globalAlpha = p.vida * 0.8;
-      alta.fillStyle = camera.atual < 300 ? "#ffffff" : "#bfe9ff";
-      alta.fillRect(p.x, y, 1, 1);
-    }
-    alta.globalAlpha = 1;
+    desenharSprite(alta, q, foguete.x - 6, foguete.y - 7.5);
+    tx.restore();
+    return { x: foguete.x, y: foguete.y };
   }
 
   // ---------- camada de texto (alta resolução) ----------
@@ -959,12 +913,23 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const W = innerWidth;
     const H = innerHeight;
     const escuro = escuridao(camera.atual);
-    const corSuave = camera.atual < 250 ? "rgba(20, 30, 80, 0.75)" : "rgba(200, 210, 240, 0.55)";
+    const claro = camera.atual < 110; // céu claro perto da Terra: texto escuro
+    const corSuave = claro ? "#0d1a4a" : "rgba(215, 222, 250, 0.82)";
+    const contorno = claro ? "rgba(255, 255, 255, 0.55)" : "rgba(0, 0, 8, 0.85)";
+    // escreve com um contorno da cor oposta: dá para ler em qualquer fundo
+    const escrever = (t, x, y, cor, borda = contorno) => {
+      tx.lineJoin = "round";
+      tx.lineWidth = 3;
+      tx.strokeStyle = borda;
+      tx.strokeText(t, x, y);
+      tx.fillStyle = cor;
+      tx.fillText(t, x, y);
+    };
     const centro0 = W * 0.16;
     const centro1 = W * 0.84;
 
     // régua da direita
-    tx.font = "14px VT323, monospace";
+    tx.font = "13px Tiny5, monospace";
     tx.textAlign = "right";
     tx.textBaseline = "middle";
     const alTopo = camera.atual - focoY / PX_POR_AL;
@@ -975,7 +940,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const y = naTelaTexto(al);
       const grande = al % 500 === 0;
       tx.fillRect(W - (grande ? 22 : 15), Math.round(y), grande ? 12 : 5, 1);
-      if (grande) tx.fillText(`${al.toLocaleString("pt-BR")} AL`, W - 26, y);
+      if (grande) escrever(`${al.toLocaleString("pt-BR")} AL`, W - 26, y, corSuave);
     }
 
     // marcos e curiosidades
@@ -984,35 +949,44 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const y = naTelaTexto(m.al);
       if (y < -20 || y > H + 20) continue;
       linhaTracejada(y, centro0, centro1, "#ffd23f", 0.45);
-      tx.font = "18px VT323, monospace";
-      tx.fillStyle = "#ffd23f";
-      tx.fillText(`${m.al.toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12);
+      tx.font = "16px Tiny5, monospace";
+      escrever(`${m.al.toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12, claro ? "#7a4a00" : "#ffd23f");
     }
-    tx.font = "17px VT323, monospace";
+    // onde estão as linhas das faixas agora (para a curiosidade não ficar por cima)
+    const linhasY = mostrarLinhas ? FAIXAS.filter((f) => f.min).map((f) => naTelaTexto(rodadaAl + f.min * AL_POR_PONTO)) : [];
+    tx.font = `${W < 560 ? 13 : 15}px Tiny5, monospace`;
     CURIOSIDADES.forEach(([al, texto], i) => {
       const y = naTelaTexto(al);
-      if (y < -20 || y > H + 20) return;
-      tx.fillStyle = corSuave;
-      if (i % 2) {
-        tx.textAlign = "right";
-        tx.fillText(`${texto} ——`, W - 110, y);
-      } else {
-        tx.textAlign = "left";
-        tx.fillText(`—— ${texto}`, 16, y);
+      if (y < -30 || y > H + 30) return;
+      if (linhasY.some((ly) => Math.abs(ly - 10 - y) < 22)) return;
+      // texto comprido quebra em duas linhas para caber na tela
+      let linhas = [texto];
+      if (tx.measureText(texto).width > W * 0.55) {
+        const meio = texto.lastIndexOf(" ", Math.ceil(texto.length / 2) + 4);
+        linhas = [texto.slice(0, meio), texto.slice(meio + 1)];
       }
+      linhas.forEach((t, j) => {
+        const ly = y + (j - (linhas.length - 1) / 2) * 16;
+        if (i % 2) {
+          tx.textAlign = "right";
+          escrever(j === 0 ? `${t} —` : `${t}  `, W - 40, ly, corSuave);
+        } else {
+          tx.textAlign = "left";
+          escrever(j === 0 ? `— ${t}` : `  ${t}`, 16, ly, corSuave);
+        }
+      });
     });
 
     // linhas das faixas: até onde cada faixa de raridade levaria nesta pergunta
     if (mostrarLinhas) {
       tx.textAlign = "right";
-      tx.font = "16px VT323, monospace";
+      tx.font = "14px Tiny5, monospace";
       for (const f of FAIXAS) {
         if (!f.min) continue;
         const y = naTelaTexto(rodadaAl + f.min * AL_POR_PONTO);
         if (y < -20 || y > H + 20) continue;
         linhaTracejada(y, centro0, centro1, f.cor, 0.7);
-        tx.fillStyle = f.cor;
-        tx.fillText(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10);
+        escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
       }
     }
 
@@ -1050,24 +1024,28 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const al = c.de + (c.para - c.de) * suave(Math.min(1, t / DURACAO_DESCIDA));
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
-      if (y < -60) {
+      const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
+      if (y < -80 || sumindo >= 1) {
         caixas.splice(i, 1);
         continue;
       }
-      const texto = `“${c.texto}” ▾`;
-      tx.font = "bold 20px 'Pixelify Sans', monospace";
-      const w = Math.ceil(tx.measureText(texto).width) + 28;
-      const h = 40;
-      // no centro da tela; o foguete fica ao lado
-      const x = Math.max(8, Math.min(W - w - 40, W / 2 - w / 2 - 30));
+      const texto = `“${c.texto}”`;
+      const pequena = W < 560;
+      tx.font = `${pequena ? 24 : 30}px Tiny5, monospace`;
+      const w = Math.ceil(tx.measureText(texto).width) + (pequena ? 32 : 44);
+      const h = pequena ? 48 : 58;
+      // no centro da tela, sem encostar no astronauta (que fica à direita)
+      const astronauta = (foguete.x - 6 * TAMANHO_ASTRONAUTA) * escala;
+      const x = Math.max(8, Math.min(W / 2 - w / 2, astronauta - 18 - w));
       tx.save();
-      tx.globalAlpha = Math.min(1, t / c.surgir);
-      tx.translate(x + w / 2, y);
+      tx.globalAlpha = Math.min(1, t / c.surgir) * (1 - sumindo);
+      tx.translate(x + w / 2, y - sumindo * 14);
       tx.rotate(c.angulo);
+      tx.scale(1 - sumindo * 0.1, 1 - sumindo * 0.1);
       // caixa com cantos recortados (estilo pixel)
-      tx.fillStyle = "rgba(12, 8, 40, 0.88)";
+      tx.fillStyle = "rgba(10, 8, 34, 0.9)";
       tx.beginPath();
-      const m = 6;
+      const m = 8;
       tx.moveTo(-w / 2 + m, -h / 2);
       tx.lineTo(w / 2 - m, -h / 2);
       tx.lineTo(w / 2, -h / 2 + m);
@@ -1078,6 +1056,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.lineTo(-w / 2, -h / 2 + m);
       tx.closePath();
       tx.fill();
+      tx.strokeStyle = c.cor; // borda na cor da faixa
+      tx.globalAlpha *= 0.85;
+      tx.lineWidth = 2;
+      tx.stroke();
+      tx.globalAlpha /= 0.85;
       tx.shadowColor = c.cor;
       tx.shadowBlur = c.brilho;
       tx.fillStyle = c.cor;
@@ -1089,8 +1072,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
       for (let s = 0; s < c.satelites; s++) {
         const a = agora / 900 + (s / c.satelites) * Math.PI * 2;
         const sx = x + w / 2 + Math.cos(a) * (w / 2 + 12);
-        const sy = y + Math.sin(a) * 26;
-        tx.globalAlpha = Math.min(1, t / c.surgir) * 0.9;
+        const sy = y + Math.sin(a) * 36;
+        tx.globalAlpha = Math.min(1, t / c.surgir) * 0.9 * (1 - sumindo);
         tx.fillStyle = "#5fe1ff";
         tx.fillRect(sx - 4, sy - 1, 3, 3);
         tx.fillRect(sx + 2, sy - 1, 3, 3);
@@ -1115,16 +1098,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
     desenharCadentes();
     desenharPoeira();
     desenharLaterais();
+    desenharISS();
     desenharHalos();
     desenharCorpos();
-    desenharBolhas();
     desenharNuvens();
     desenharTerraNaCena();
     desenharObjetos();
     desenharMarcosPixel();
     const foguete = desenharFoguete();
-    desenharParticulas(foguete);
-    desenharMascote(foguete);
     desenharTextos(agora);
     aoQuadro(camera.atual);
     requestAnimationFrame(passo);
@@ -1158,6 +1139,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
+      // a caixa anterior some (não ficam umas por cima das outras)
+      for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       caixas.push({
         texto: texto.toUpperCase(),
         cor: faixa.cor,

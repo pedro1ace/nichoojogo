@@ -7,20 +7,20 @@
   --painel: rgba(12, 8, 40, 0.9);
   --painel-borda: rgba(120, 140, 220, 0.35);
   --texto: #eef0ff;
-  --suave: #9aa3c7;
+  --suave: #b3bbdf;
   --ciano: #5fe1ff;
   --rosa: #ff4f8b;
   --amarelo: #ffd23f;
   --roxo: #c38bff;
   --vermelho: #ff5a6e;
   --titulo: "Press Start 2P", monospace;
-  --corpo: "Pixelify Sans", "VT323", monospace;
-  --mono: "VT323", monospace;
+  --corpo: "Tiny5", monospace;
+  --mono: "Tiny5", monospace;
   --recorte: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; overflow: hidden; background: var(--fundo); }
-body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-height: 1.3; }
+body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-height: 1.3; font-synthesis: none; -webkit-font-smoothing: none; }
 [hidden] { display: none !important; }
 
 /* Tudo dentro de #tela, para o tremor sacudir a tela inteira */
@@ -32,17 +32,9 @@ body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-hei
 #tela::after {
   content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 10;
   background:
-    repeating-linear-gradient(0deg, rgba(0, 0, 12, 0.26) 0 1px, transparent 1px 3px),
-    radial-gradient(ellipse at center, transparent 62%, rgba(0, 0, 10, 0.35) 100%);
-  animation: cintilar 0.12s steps(2) infinite;
+    repeating-linear-gradient(0deg, rgba(0, 0, 12, 0.09) 0 1px, transparent 1px 4px),
+    radial-gradient(ellipse at center, transparent 70%, rgba(0, 0, 10, 0.22) 100%);
 }
-#tela::before {
-  content: ""; position: absolute; left: 0; right: 0; top: -30%; height: 30%; pointer-events: none; z-index: 10;
-  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.045) 50%, transparent);
-  animation: varredura 7s linear infinite;
-}
-@keyframes cintilar { 50% { opacity: 0.88; } }
-@keyframes varredura { to { transform: translateY(440%); } }
 
 /* bordas vermelhas quando o tempo está acabando */
 #alerta {
@@ -53,7 +45,7 @@ body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-hei
 #alerta.ligado { opacity: 1; animation: pulsar-alerta 1s ease-in-out infinite; }
 @keyframes pulsar-alerta { 50% { opacity: 0.45; } }
 
-.rotulo { font-family: var(--mono); font-size: 15px; letter-spacing: 3px; color: var(--suave); margin: 0; }
+.rotulo { font-family: var(--mono); font-weight: 600; font-size: 13px; letter-spacing: 2px; color: var(--suave); margin: 0; }
 .suave { color: var(--suave); }
 .ciano { color: var(--ciano); }
 .rosa { color: var(--rosa); }
@@ -130,13 +122,30 @@ button:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 3px; }
 .cartao {
   position: absolute; z-index: 2; left: 50%; top: 52%; transform: translate(-50%, 0);
   width: min(620px, calc(100% - 32px)); max-height: calc(48% - 8px); overflow-y: auto;
-  padding: 18px 22px 16px; background: var(--painel); clip-path: var(--recorte);
-  box-shadow: 0 0 0 2px var(--painel-borda);
+  padding: 20px 24px 18px; clip-path: var(--recorte);
+  background:
+    linear-gradient(180deg, rgba(95, 225, 255, 0.10), transparent 40%),
+    rgba(10, 8, 34, 0.78);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  box-shadow:
+    inset 0 0 0 2px rgba(95, 225, 255, 0.55),
+    inset 0 0 0 4px rgba(10, 8, 34, 0.9),
+    inset 0 0 0 5px rgba(195, 139, 255, 0.35),
+    inset 0 2px 24px rgba(95, 225, 255, 0.12);
   animation: entrar 0.35s ease-out;
 }
+/* cantinhos de luz nas quatro pontas da moldura */
+.cartao::before, .cartao::after {
+  content: ""; position: absolute; width: 14px; height: 14px; pointer-events: none;
+  border: 3px solid var(--ciano);
+}
+.cartao::before { top: 6px; left: 6px; border-right: 0; border-bottom: 0; }
+.cartao::after { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+#rotulo-pergunta { display: flex; align-items: center; gap: 8px; color: var(--ciano); }
+#rotulo-pergunta::before { content: ""; width: 8px; height: 8px; background: var(--rosa); box-shadow: 0 0 8px var(--rosa); }
 @keyframes entrar { from { opacity: 0; transform: translate(-50%, 14px); } }
 .cartao h2 { font-family: var(--corpo); font-weight: 600; font-size: clamp(20px, 3.2vw, 28px); line-height: 1.3; margin: 8px 0 6px; text-wrap: balance; }
-.dica { font-family: var(--mono); font-size: 16px; letter-spacing: 2px; color: var(--suave); margin: 0 0 12px; }
+.dica { font-family: var(--mono); font-size: 15px; letter-spacing: 1px; color: var(--suave); margin: 0 0 12px; }
 form { display: flex; gap: 10px; }
 input {
   flex: 1; min-width: 0; padding: 10px 12px; font: inherit; font-size: 20px;
@@ -173,27 +182,31 @@ form button {
 .pilula {
   position: absolute; z-index: 2; left: 50%; bottom: max(20px, env(safe-area-inset-bottom)); transform: translateX(-50%);
   margin: 0; padding: 8px 18px; background: var(--painel); clip-path: var(--recorte);
-  font-family: var(--mono); font-size: 18px; letter-spacing: 2px; color: var(--suave); white-space: nowrap;
+  font-family: var(--mono); font-size: 17px; letter-spacing: 1px; color: var(--texto); white-space: nowrap;
 }
 .pilula b { color: var(--ciano); }
 
 /* ---------- resultado da resposta ---------- */
 .cartao-resultado {
-  position: absolute; z-index: 2; inset: auto 0 max(16px, env(safe-area-inset-bottom)) 0; top: 48%;
+  position: absolute; z-index: 2; left: 50%; top: 47%; transform: translateX(-50%);
+  width: min(560px, calc(100% - 32px)); max-height: calc(53% - 16px);
   display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 4px;
-  padding: 0 16px; text-align: center; overflow-y: auto;
+  padding: 16px 20px 18px; text-align: center; overflow-y: auto; clip-path: var(--recorte);
+  background: rgba(10, 8, 34, 0.8);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  box-shadow: inset 0 0 0 2px var(--cor-faixa, #9aa3c7), inset 0 0 0 4px rgba(10, 8, 34, 0.9), inset 0 0 30px rgba(255, 255, 255, 0.05);
   animation: surgir 0.4s ease-out;
 }
-@keyframes surgir { from { opacity: 0; transform: scale(0.96); } }
+@keyframes surgir { from { opacity: 0; transform: translateX(-50%) scale(0.96); } }
 #icone { width: 72px; height: 72px; image-rendering: pixelated; filter: drop-shadow(0 0 12px var(--cor-faixa, #fff)); animation: flutuar 2.4s ease-in-out infinite; }
 @keyframes flutuar { 50% { transform: translateY(-6px); } }
-#nome-faixa { font-family: var(--titulo); font-size: clamp(22px, 4vw, 34px); margin: 4px 0; color: var(--cor-faixa, #fff); text-shadow: 0 0 16px var(--cor-faixa, #fff); letter-spacing: 4px; }
+#nome-faixa { font-family: var(--corpo); font-weight: 700; font-size: clamp(30px, 5vw, 44px); line-height: 1; margin: 4px 0; color: var(--cor-faixa, #fff); text-shadow: 0 0 14px var(--cor-faixa, #fff); letter-spacing: 3px; }
 #palavra { font-weight: 700; font-size: 22px; margin: 0; }
 #linha-pontos { font-size: 20px; margin: 0; }
 #linha-pontos b { color: var(--cor-faixa, #fff); }
-#frase { margin: 0 0 10px; font-family: var(--mono); font-size: 18px; letter-spacing: 1px; }
+#frase { margin: 0 0 10px; font-size: 17px; color: #c9cfee; }
 #mais-nichadas { list-style: none; padding: 0; margin: 2px 0 6px; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; font-size: 16px; }
-#mais-nichadas li span { color: var(--suave); }
+#mais-nichadas li span { color: #b9c0e4; }
 .cartao-resultado .botao-grande { min-width: min(320px, 100%); }
 
 /* ---------- fim ---------- */
@@ -245,6 +258,6 @@ pre {
   .pilula { font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  #titulo span, #icone, #quadrados span.atual, #tela::after, #tela::before, #alerta.ligado,
+  #titulo span, #icone, #quadrados span.atual, #alerta.ligado,
   #relogio.urgente #radar, #relogio.urgente #tempo { animation: none; }
 }
