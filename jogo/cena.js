@@ -200,9 +200,9 @@ const ASTRONAUTA_A = [
 const ASTRONAUTA_B = ASTRONAUTA_A.map((l, i) => (i === 0 ? l.replace("Y", "y") : l));
 const MASCOTE = [ASTRONAUTA_A, ASTRONAUTA_B];
 const PALETA_ASTRONAUTA = {
-  O: "#140f36", W: "#f4f6ff", w: "#c2c8e8", s: "#7f86b8",
+  O: "#1a0a1e", W: "#e8453c", w: "#b32a2e", s: "#6a1424",
   d: "#0b2a55", b: "#1f6fa8", B: "#3fb8ec", c: "#9ff3ff", H: "#ffffff",
-  G: "#8a90b0", g: "#4a4f70", R: "#ff3d6e", Y: "#ffd23f", y: "#8a6a10",
+  G: "#c9ccd8", g: "#6a6e84", R: "#f4f6ff", Y: "#ffd23f", y: "#8a6a10",
 };
 
 const SATELITE = [
@@ -429,7 +429,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     telaPixel.style.height = `${A * escala}px`;
     telaTexto.width = Math.round(innerWidth * dpr);
     telaTexto.height = Math.round(innerHeight * dpr);
-    focoY = Math.round(A * 0.3);
+    focoY = Math.round(A * 0.4);
     terra = desenharTerra(L, Math.round(A * 0.6));
     // planetas grandes, em escala com a tela (parte deles fica para fora)
     corpos = criarCorpos(Math.max(1.3, Math.min(3, L / 150)));
@@ -500,6 +500,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Paredes de rocha desenhadas pixel a pixel: borda com luz, meio-tom,
   // sombra perto da beirada da tela (com dithering) e crateras.
   const CAMADAS_PAREDE = [
+    { f: 0.3, largura: (c) => 0.1 + 0.14 * c, s: 200, tons: [[46, 40, 96], [24, 20, 54], [18, 14, 42], [14, 10, 32]], longe: 0.55 },
     { f: 0.55, largura: (c) => 0.07 + 0.11 * c, s: 300, tons: [[76, 64, 150], [34, 26, 74], [22, 16, 50], [14, 10, 34]] },
     { f: 1, largura: (c) => 0.035 + 0.085 * c, s: 400, tons: [[170, 150, 255], [74, 58, 140], [42, 30, 88], [18, 12, 40]] },
   ];
@@ -525,7 +526,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const fundo = corDoFundo(camera.atual);
     const surgir = Math.min(1, conf * 6); // aparecem aos poucos
     for (const c of CAMADAS_PAREDE) {
-      const tons = c.tons.map((t) => empacotar(misturar(fundo, t, surgir * (c.f < 1 ? 0.8 : 1))));
+      const tons = c.tons.map((t) => empacotar(misturar(fundo, t, surgir * (c.longe || (c.f < 1 ? 0.8 : 1)))));
       const desvio = Math.round(cameraPx * c.f);
       for (let y = 0; y < A; y++) {
         const yMundo = y + desvio - focoY;
@@ -677,7 +678,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function desenharLaterais() {
     const conf = aperto(camera.atual);
     if (conf <= 0.15) return;
-    const c = CAMADAS_PAREDE[1];
+    const c = CAMADAS_PAREDE[2];
     const desvio = cameraPx;
     const BLOCO = 30;
     const primeiro = Math.floor((desvio - focoY) / BLOCO) - 1;
@@ -908,7 +909,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3) * 2.5;
     const lado = reduzirMovimento ? 0 : Math.sin(tempo * 0.55) * 5;
     mascote.pulo *= Math.exp(-dt * 6);
-    foguete.x = Math.min(L - 16, L / 2 + Math.max(60, L * 0.22)) + lado;
+    foguete.x = Math.min(L - 26, L / 2 + Math.max(60, L * 0.22)) + lado;
     foguete.y = naTelaExata(foguete.al) - 6 + balanco - mascote.pulo;
     const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.12 + Math.min(0.25, camera.velocidade / 4000);
     tx.save();
@@ -1055,50 +1056,66 @@ function criarCena(telaPixel, telaTexto, raiz) {
         caixas.splice(i, 1);
         continue;
       }
-      const texto = `“${c.texto}”`;
+      const texto = c.texto;
       const pequena = W < 560;
-      tx.font = `${pequena ? 24 : 30}px 'Space Mono', monospace`;
-      const w = Math.ceil(tx.measureText(texto).width) + (pequena ? 32 : 44);
-      const h = pequena ? 48 : 58;
-      // no centro da tela, sem encostar no astronauta (que fica à direita)
-      const astronauta = foguete.x * escala - 9 * Math.max(2, Math.round(escala * 0.75));
-      const x = Math.max(8, Math.min(W / 2 - w / 2, astronauta - 18 - w));
+      const p = escala; // um pixel da cena: a borda segue a mesma grade do cenário
+      tx.font = `${pequena ? 14 : 20}px 'Press Start 2P', monospace`;
+      const w = Math.ceil((Math.ceil(tx.measureText(texto).width) + (pequena ? 36 : 56)) / p) * p;
+      const h = (pequena ? 12 : 14) * p;
+      // centralizada na tela: é ali que o jogo acontece
+      const x = Math.round(Math.max(8, W / 2 - w / 2) / p) * p;
+      const alfa = Math.min(1, t / c.surgir) * (1 - sumindo);
       tx.save();
-      tx.globalAlpha = Math.min(1, t / c.surgir) * (1 - sumindo);
-      tx.translate(x + w / 2, y - sumindo * 14);
-      tx.rotate(c.angulo);
-      tx.scale(1 - sumindo * 0.1, 1 - sumindo * 0.1);
-      // caixa com cantos recortados (estilo pixel)
-      tx.fillStyle = "rgba(10, 8, 34, 0.9)";
-      tx.beginPath();
-      const m = 8;
-      tx.moveTo(-w / 2 + m, -h / 2);
-      tx.lineTo(w / 2 - m, -h / 2);
-      tx.lineTo(w / 2, -h / 2 + m);
-      tx.lineTo(w / 2, h / 2 - m);
-      tx.lineTo(w / 2 - m, h / 2);
-      tx.lineTo(-w / 2 + m, h / 2);
-      tx.lineTo(-w / 2, h / 2 - m);
-      tx.lineTo(-w / 2, -h / 2 + m);
-      tx.closePath();
-      tx.fill();
-      tx.strokeStyle = c.cor; // borda na cor da faixa
-      tx.globalAlpha *= 0.85;
-      tx.lineWidth = 2;
-      tx.stroke();
-      tx.globalAlpha /= 0.85;
+      tx.globalAlpha = alfa;
+      // flutua devagar, sem parar (posição fracionada: desliza liso)
+      const boiaX = reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 4;
+      const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 5;
+      tx.translate(x + w / 2 + boiaX, y - sumindo * 14 + boiaY);
+      const x0 = -w / 2, y0 = -h / 2;
+      // vidro tingido pela cor do fundo naquela profundidade
+      const f = corDoFundo(camera.atual).map((v) => Math.round(v * 0.35));
+      const caixa = (dx, dy, cw, ch) => tx.fillRect(x0 + dx, y0 + dy, cw, ch);
+      tx.fillStyle = `rgba(${f[0]}, ${f[1]}, ${f[2]}, 0.62)`;
+      caixa(2 * p, 0, w - 4 * p, h);
+      caixa(p, p, w - 2 * p, h - 2 * p);
+      caixa(0, 2 * p, w, h - 4 * p);
+      // brilho em volta, na cor da faixa
       tx.shadowColor = c.cor;
-      tx.shadowBlur = c.brilho;
+      tx.shadowBlur = c.brilho + 6;
       tx.fillStyle = c.cor;
+      tx.globalAlpha = alfa * 0.9;
+      // borda em degraus de pixel (cantos recortados)
+      caixa(2 * p, 0, w - 4 * p, p);
+      caixa(2 * p, h - p, w - 4 * p, p);
+      caixa(0, 2 * p, p, h - 4 * p);
+      caixa(w - p, 2 * p, p, h - 4 * p);
+      caixa(p, p, p, p);
+      caixa(w - 2 * p, p, p, p);
+      caixa(p, h - 2 * p, p, p);
+      caixa(w - 2 * p, h - 2 * p, p, p);
+      // reflexo no topo do vidro
+      tx.shadowBlur = 0;
+      tx.globalAlpha = alfa * 0.18;
+      tx.fillStyle = "#ffffff";
+      caixa(2 * p, p, w - 4 * p, p);
+      // texto grosso, pixelado e brilhando (duas passadas de brilho)
+      tx.globalAlpha = alfa;
       tx.textAlign = "center";
       tx.textBaseline = "middle";
-      tx.fillText(texto, 0, 1);
+      tx.shadowColor = c.cor;
+      tx.shadowBlur = 18;
+      tx.fillStyle = c.cor;
+      tx.fillText(texto, 0, p * 0.5);
+      tx.shadowBlur = 4;
+      tx.fillStyle = "#ffffff";
+      tx.globalAlpha = alfa * 0.35;
+      tx.fillText(texto, 0, p * 0.5);
       tx.restore();
       // satélites em volta das respostas óbvias: muita gente foi nessa
       for (let s = 0; s < c.satelites; s++) {
         const a = agora / 900 + (s / c.satelites) * Math.PI * 2;
         const sx = x + w / 2 + Math.cos(a) * (w / 2 + 12);
-        const sy = y + Math.sin(a) * 36;
+        const sy = y + Math.sin(a) * (h / 2 + 10);
         tx.globalAlpha = Math.min(1, t / c.surgir) * 0.9 * (1 - sumindo);
         tx.fillStyle = "#5fe1ff";
         tx.fillRect(sx - 4, sy - 1, 3, 3);
@@ -1132,6 +1149,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
     desenharMarcosPixel();
     const foguete = desenharFoguete();
     desenharTextos(agora);
+    if (quadro % 6 === 0) {
+      // as caixas da interface pegam a cor do fundo: parecem parte do cenário
+      const f = corDoFundo(camera.atual);
+      const tinta = misturar(f.map((v) => v * 0.2), [10, 10, 46], 0.7).map(Math.round);
+      const luz = misturar(f, [255, 255, 255], 0.55).map(Math.round);
+      document.documentElement.style.setProperty("--tinta", `${tinta.join(", ")}`);
+      document.documentElement.style.setProperty("--luz", `${luz.join(", ")}`);
+    }
     aoQuadro(camera.atual);
     requestAnimationFrame(passo);
   }
@@ -1152,6 +1177,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     icones,
     // Marca o começo de uma pergunta: as linhas das faixas partem daqui.
     novaRodada() {
+      const agora = performance.now();
+      for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       rodadaAl = camera.para;
       mostrarLinhas = true;
     },

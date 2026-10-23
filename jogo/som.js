@@ -26,12 +26,12 @@ const Som = (() => {
   function criarAmbiente() {
     const filtro = ac.createBiquadFilter();
     filtro.type = "lowpass";
-    filtro.frequency.value = 500;
+    filtro.frequency.value = 180;
     const ganho = ac.createGain();
-    ganho.gain.value = 0.05;
-    const osc = [55, 82.4, 110.3].map((f) => {
+    ganho.gain.value = 0.016;
+    const osc = [41.2, 55, 61.7].map((f) => {
       const o = ac.createOscillator();
-      o.type = "triangle";
+      o.type = "sine";
       o.frequency.value = f;
       o.connect(filtro);
       o.start();
@@ -40,7 +40,7 @@ const Som = (() => {
     const lfo = ac.createOscillator();
     const lfoGanho = ac.createGain();
     lfo.frequency.value = 0.07;
-    lfoGanho.gain.value = 180;
+    lfoGanho.gain.value = 50;
     lfo.connect(lfoGanho).connect(filtro.frequency);
     lfo.start();
     filtro.connect(ganho).connect(mestre);
@@ -122,7 +122,7 @@ const Som = (() => {
     profundidade(al) {
       if (!ambiente) return;
       const f = Math.max(0.6, 1 - al / 20000);
-      ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime([55, 82.4, 110.3][i] * f, ac.currentTime, 0.5));
+      ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime([41.2, 55, 61.7][i] * f, ac.currentTime, 0.5));
     },
   };
 })();
