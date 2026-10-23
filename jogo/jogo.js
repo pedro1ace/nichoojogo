@@ -3,7 +3,7 @@
 // Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
 // Acertar a "supernova" (a resposta secreta da pergunta) dobra os pontos.
 // Vem de outros arquivos: window.NICHO_DADOS (dados.js), Som (som.js),
-// criarCena, faixaDe, FAIXAS, AL_POR_PONTO, DURACAO_DESCIDA (cena.js).
+// criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
 
 const RODADAS_POR_DIA = 7;
 const SEGUNDOS = 25;
@@ -179,7 +179,7 @@ function iniciar() {
     estado.historico = salvo.historico;
     estado.total = estado.totalMostrado = salvo.total;
     estado.rodada = salvo.historico.length;
-    cena.irPara(estado.total * AL_POR_PONTO);
+    cena.irPara(profundidade());
     $("pontos").textContent = numero(estado.total);
   }
   montarQuadrados();
@@ -193,6 +193,11 @@ function iniciar() {
     $("comecar").textContent = "▼ CONTINUAR VIAGEM ▼";
     document.querySelector("#inicio [data-zerar]").hidden = false;
   }
+}
+
+// profundidade total do dia: soma da viagem de cada resposta
+function profundidade() {
+  return estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
 }
 
 function mostrarPergunta(ligada) {
@@ -474,7 +479,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   $("nome-faixa").textContent = faixa.nome;
   $("palavra").textContent = resposta ? `“${resposta}”` : "";
   $("linha-pontos").innerHTML = resposta
-    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(pontos * AL_POR_PONTO)} AL`
+    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(viagem(pontos))} AL`
     : "+0 PONTOS";
   $("frase").textContent = faixa.frase;
 
@@ -511,7 +516,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   card.hidden = false;
   if (supernova) Som.supernova();
   else if (resposta) Som.faixa(FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
-  Som.profundidade(estado.total * AL_POR_PONTO);
+  Som.profundidade(profundidade());
   montarQuadrados();
   $("proxima").focus();
 }
@@ -536,14 +541,14 @@ function mostrarFim(comSom) {
   montarQuadrados();
   $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
   $("fim-pontos").textContent = numero(estado.total);
-  $("fim-profundidade").textContent = `↓ ${numero(estado.total * AL_POR_PONTO)} AL de profundidade`;
+  $("fim-profundidade").textContent = `↓ ${numero(profundidade())} AL de profundidade`;
   const media = estado.historico.reduce((s, h) => s + (h.percentil || 0), 0) / Math.max(1, estado.historico.length);
   $("fim-comparacao").textContent = `Suas respostas foram mais nichadas que ${Math.round(media * 100)}% das respostas possíveis.`;
   montarGrafico();
 
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(estado.total * AL_POR_PONTO)} AL 🐻`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(profundidade())} AL 🐻`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }

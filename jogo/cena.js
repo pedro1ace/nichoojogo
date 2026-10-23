@@ -11,6 +11,16 @@
 // percorre muito mais espaço nesse tempo, então cai rápido; a óbvia mal se mexe.
 
 const AL_POR_PONTO = 10;
+// Quanto cada resposta faz viajar (AL). Cada faixa começa bem mais longe que
+// a anterior, então a diferença de raridade fica visível na tela:
+// óbvia quase não sai do lugar, comum desce um pouco, incomum bastante, rara muito.
+function viagem(pontos) {
+  if (pontos <= 0) return 0;
+  if (pontos < 5) return 4 * pontos;
+  if (pontos < 20) return 60 + 8 * (pontos - 5);
+  if (pontos < 50) return 300 + 14 * (pontos - 20);
+  return 900 + 22 * (pontos - 50);
+}
 const PX_POR_AL = 0.5; // pixels da cena por ano-luz
 const DURACAO_DESCIDA = 2400; // ms, igual para toda resposta
 
@@ -376,6 +386,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   const acesas = {}; // linhas de faixa que a caixa já cruzou nesta rodada (id -> hora)
   let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
   let larguraCaixa = 200;
+  let cobertas = [];
   const rastro = [];
   const caixas = [];
     const mascote = { x: 0, y: 0, pulo: 0 };
@@ -885,8 +896,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
     mascote.pulo *= Math.exp(-dt * 6);
     modoCanto += (alvoCanto - modoCanto) * (1 - Math.exp(-dt * 3));
     // ao lado direito da caixa (que fica no centro da tela)
-    const xCaixa = Math.min(L - 26, (innerWidth / 2 + larguraCaixa / 2) / escala + 28);
-    const yCaixa = naTelaExata(foguete.al) + 4;
+    const xLivre = (innerWidth / 2 + larguraCaixa / 2) / escala + 28;
+    const xCaixa = Math.min(L - 26, xLivre);
+    // tela estreita: sem espaço do lado, ele flutua logo acima da caixa
+    const yCaixa = naTelaExata(foguete.al) + 4 - (xLivre > L - 26 ? 34 : 0);
     // no cantinho esquerdo, flutuando, enquanto você digita
     const xCanto = Math.max(22, L * 0.08);
     const yCanto = A * 0.55;
@@ -969,10 +982,20 @@ function criarCena(telaPixel, telaTexto, raiz) {
       escrever(`${m.al.toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12, claro ? "#7a4a00" : "#ffd23f");
     }
     // onde estão as linhas das faixas agora (para a curiosidade não ficar por cima)
-    const linhasY = mostrarLinhas ? FAIXAS.filter((f) => f.min).map((f) => naTelaTexto(rodadaAl + f.min * AL_POR_PONTO)) : [];
+    const linhasY = mostrarLinhas ? FAIXAS.filter((f) => f.min).map((f) => naTelaTexto(rodadaAl + viagem(f.min))) : [];
     tx.font = `${W < 560 ? 13 : 15}px 'Space Mono', monospace`;
+    // faixas da tela cobertas por painéis (pergunta, resposta, resultado):
+    // ali as curiosidades não aparecem, para não misturar com o texto do painel
+    if (quadro % 10 === 0) {
+      cobertas = ["cartao-pergunta", "painel-resposta", "resultado"]
+        .map((id) => document.getElementById(id))
+        .filter((el) => el && !el.hidden)
+        .map((el) => { const r = el.getBoundingClientRect(); return [r.top - 14, r.bottom + 14]; });
+    }
     CURIOSIDADES.forEach(([al, texto], i) => {
       if (noInicio) return;
+      const yc = naTelaTexto(al);
+      if (cobertas.some(([a, b]) => yc > a && yc < b)) return;
       const y = naTelaTexto(al);
       if (y < -30 || y > H + 30) return;
       if (linhasY.some((ly) => Math.abs(ly - 10 - y) < 22)) return;
@@ -1000,7 +1023,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.font = "14px 'Space Mono', monospace";
       for (const f of FAIXAS) {
         if (!f.min) continue;
-        const y = naTelaTexto(rodadaAl + f.min * AL_POR_PONTO);
+        const y = naTelaTexto(rodadaAl + viagem(f.min));
         if (y < -20 || y > H + 20) continue;
         const acesa = acesas[f.id];
         if (acesa) {
@@ -1191,7 +1214,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       if (!c.saida && mostrarLinhas) {
         for (const f of FAIXAS) {
           if (!f.min || acesas[f.id]) continue;
-          if (al >= rodadaAl + f.min * AL_POR_PONTO) {
+          if (al >= rodadaAl + viagem(f.min)) {
             acesas[f.id] = agora;
             if (window.Som && Som.limiar) Som.limiar(FAIXAS.length - 1 - FAIXAS.indexOf(f));
           }
@@ -1352,7 +1375,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const agora = performance.now();
       const peso = Math.min(1, pontos / 100);
       const faixa = faixaDe(pontos, supernova);
-      const distancia = pontos * AL_POR_PONTO;
+      const distancia = viagem(pontos);
       alvoCanto = 0;
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
