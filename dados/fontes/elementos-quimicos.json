@@ -1,0 +1,24 @@
+{
+ "titulo": "Elementos químicos",
+ "pergunta": "Cite um elemento químico da tabela periódica",
+ "wikidata": {
+  "classe": "Q11344",
+  "ordem": "P1086",
+  "ordem_faixa": [1, 118],
+  "propriedades_apelido": ["P246"],
+  "filtros_sparql": []
+ },
+ "contagem": {"min": 118, "max": 118},
+ "ordem_completa": true,
+ "apelidos_remover": ["vestium", "céltio", "kurchatovium", "nipónio", "niponio"],
+ "apelidos_remover_prefixos": ["elemento ", "eka-", "unun", "unnil", "unún"],
+ "apelidos_remover_regex": ["^U[a-z]{2}$"],
+ "correcoes": {
+  "113": {"nome": "Nihônio", "adicionar_apelidos": ["Niônio"]}
+ },
+ "apelidos_curtos": "permitir",
+ "_notas": {
+  "apelidos_curtos": "os símbolos (H, He, Na...) são apelidos de propósito",
+  "apelidos_remover_regex": "símbolos provisórios de 3 letras (Uue, Ubn...)"
+ }
+}

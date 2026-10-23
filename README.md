@@ -41,6 +41,7 @@ Precisa de Python 3 (sem dependências).
 ```bash
 ./scripts/baixar_dados.sh          # baixa a base de palavras (fica fora do git)
 python3 scripts/importar_listas.py # cria categorias a partir das listas prontas da base
+python3 scripts/importar.py        # gera as categorias que têm receita em dados/fontes/ (Wikidata)
 python3 scripts/pontuar.py         # calcula os pesos e atualiza jogo/dados.js e jogar.html
 ```
 
@@ -50,14 +51,21 @@ python3 scripts/pontuar.py         # calcula os pesos e atualiza jogo/dados.js e
 dados/
   categorias/<cat>.txt     respostas aceitas (uma por linha, apelidos com " | ")
   ajustes/<cat>.csv        correções manuais do peso e escolha da supernova
+  fontes/<cat>.json        receita de importação do Wikidata (classe, filtros, contagem, limpeza)
   pesos/<cat>.json         saída do pontuar.py, carregada pelo jogo
   pesos/revisao/<cat>.csv  mesma saída em tabela, para revisar
+  sinais/                  sinais extras (Wikidata, LLM, jogadores) e a tabela de comparação
   brutos/                  base pt-BR baixada (ignorada pelo git)
 scripts/
   baixar_dados.sh          baixa a base fserb/pt-br
   importar_listas.py       transforma listas da base em categorias
+  importar.py              gera categorias do Wikidata a partir de dados/fontes/<id>.json, com validações
   pontuar.py               calcula os pesos de nicho
   montar_jogo.py           gera jogo/dados.js e jogar.html
+  sinais.py                protótipo: junta sinais de fama e propõe um peso novo (não mexe no jogo)
+  buscar_wikidata.py       protótipo: sitelinks, visitas na Wikipédia e apelidos do Wikidata
+  llm_nicho.py             protótipo: estimativa do Claude de "quantos em 1000 dariam esta resposta"
+  casar.py                 protótipo: autocorreção em camadas, com --avaliar
 jogar.html                 o jogo num arquivo só (gerado, não edite à mão)
 jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
   dados.js                 perguntas e pesos (gerado pelo pontuar.py)
@@ -65,6 +73,7 @@ jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
   som.js                   sons 8-bit (Web Audio)
   jogo.js                  regras, rodada diária, salvar e compartilhar
 docs/PIPELINE.md           etapas do projeto e próximos passos
+docs/BANCO-DE-PALAVRAS.md  fontes de palavras, raridade, LLM e apelidos (pesquisa e proposta)
 ```
 
 ## Como o "quão nichada" é calculado

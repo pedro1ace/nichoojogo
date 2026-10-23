@@ -21,6 +21,7 @@ Etapas em ordem. Cada uma termina em algo que dá para testar.
 
 A sessão é remontada todo dia com perguntas inéditas. Com 7 por dia, um mês pede uns 200 conjuntos de respostas.
 A base pt-BR só tem palavras e não tem categorias, então cada pergunta precisa de curadoria.
+Pesquisa de fontes, sinais de raridade, LLM e apelidos: [BANCO-DE-PALAVRAS.md](BANCO-DE-PALAVRAS.md).
 Seguimos o mesmo método do Krillion:
 
 - [ ] **Juntar fontes** por pergunta: listas da base, dicionários, páginas da Wikipédia, enciclopédias.
@@ -35,9 +36,13 @@ Seguimos o mesmo método do Krillion:
 
 ### Categorias integradas e fontes
 
+Categorias vindas do Wikidata têm uma receita em `dados/fontes/<id>.json` e são geradas por
+`python3 scripts/importar.py <id>` (validações comuns: contagem, duplicatas, colisão de apelidos,
+apelidos curtos e apelidos que são palavra comum). `--conferir` mostra se o `.txt` mudaria.
+
 - **Elementos químicos** (`dados/categorias/elementos-quimicos.txt`):
   - **Fonte**: Wikidata SPARQL endpoint (`wd:Q11344` / chemical element, `wdt:P1086` números atômicos 1 a 118).
-  - **Script de importação**: `scripts/importar_elementos.py`.
+  - **Receita**: `dados/fontes/elementos-quimicos.json` (antes era `scripts/importar_elementos.py`).
   - **Data**: 2026-10-23.
   - **Validação**: Exatamente 118 elementos únicos, nomes preferenciais em pt-BR, com símbolos químicos IUPAC e variantes ortográficas em português registradas como apelidos.
 
