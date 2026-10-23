@@ -210,12 +210,19 @@ function mostrarFim() {
 
 function copiar() {
   const texto = $("compartilhar").textContent;
-  const avisarCopia = (ok) => ($("copiar").textContent = ok ? "COPIADO!" : "NÃO DEU PARA COPIAR");
-  if (navigator.share && matchMedia("(pointer: coarse)").matches) {
-    navigator.share({ text: texto }).catch(() => {});
-    return;
+  const selecionar = () => {
+    // sem acesso à área de transferência: seleciona o texto para copiar à mão
+    const faixaTexto = document.createRange();
+    faixaTexto.selectNodeContents($("compartilhar"));
+    getSelection().removeAllRanges();
+    getSelection().addRange(faixaTexto);
+    $("copiar").textContent = "SELECIONADO, É SÓ COPIAR";
+  };
+  try {
+    navigator.clipboard.writeText(texto).then(() => ($("copiar").textContent = "COPIADO!"), selecionar);
+  } catch {
+    selecionar();
   }
-  navigator.clipboard?.writeText(texto).then(() => avisarCopia(true), () => avisarCopia(false));
 }
 
 $("formulario").addEventListener("submit", palpitar);
