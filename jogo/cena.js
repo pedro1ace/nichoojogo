@@ -377,6 +377,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
   const caixas = [];
   const particulas = [];
   const mascote = { x: 0, y: 0, pulo: 0 };
+  // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
+  const foguete = { al: 0, x: 0, y: 0 };
   let flash = 0;
   let quadro = 0;
   let anterior = performance.now();
@@ -396,7 +398,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     imagem = ctx.createImageData(L, A);
     pixels = new Uint32Array(imagem.data.buffer);
     ctx.imageSmoothingEnabled = false;
-    mascote.x = L / 2 + 16;
+    mascote.x = L / 2 + 60;
     mascote.y = focoY;
   }
   ajustarTamanho();
@@ -511,7 +513,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   function desenharTerraNaCena() {
-    const fundo = Math.round(naTela(0)) - 14;
+    const fundo = Math.round(naTela(0)) - 34;
     if (fundo < 0) return;
     ctx.drawImage(terra, 0, fundo - terra.height);
     if (fundo > terra.height) {
@@ -623,10 +625,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   function desenharFoguete() {
     const descendo = camera.velocidade > 20;
-    const balanco = reduzirMovimento || descendo ? 0 : Math.round(Math.sin(quadro / 30) * 1.5);
-    const tremido = !reduzirMovimento && descendo ? Math.round((Math.random() - 0.5) * 2) : 0;
-    const x = Math.round(L / 2 - 6) + tremido;
-    const y = focoY - 8 + balanco;
+    foguete.al += (camera.atual - foguete.al) * 0.12;
+    foguete.al = Math.max(foguete.al, camera.atual - 50); // atrasa um pouco, mas nunca sai da tela
+    const balanco = reduzirMovimento ? 0 : Math.sin(quadro / 40) * 2;
+    const lado = reduzirMovimento ? 0 : Math.sin(quadro / 110) * 5;
+    foguete.x = L / 2 + 40 + lado;
+    foguete.y = naTela(foguete.al) - 18 + balanco;
+    const x = Math.round(foguete.x - 6);
+    const y = Math.round(foguete.y - 8);
     // chama por cima, porque o foguete está de cabeça para baixo
     const tamanho = descendo ? Math.min(14, 4 + camera.velocidade / 60) : 3 + (quadro >> 3) % 2;
     for (let j = 0; j < tamanho; j++) {
@@ -750,8 +756,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     desenharCaixas(agora);
 
     // brilho em volta do foguete e vinheta, mais fortes no escuro
-    const fx = W / 2;
-    const fy = focoY * escala;
+    const fx = foguete.x * escala;
+    const fy = foguete.y * escala;
     if (escuro > 0.05) {
       const brilho = tx.createRadialGradient(fx, fy, 0, fx, fy, 160);
       brilho.addColorStop(0, `rgba(95, 225, 255, ${0.13 * escuro})`);
@@ -777,11 +783,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
     for (let i = caixas.length - 1; i >= 0; i--) {
       const c = caixas[i];
       const t = agora - c.inicio;
-      // afunda junto com o foguete; depois sobe devagar em direção à superfície
-      let al;
-      if (t < DURACAO_DESCIDA) al = c.de + (c.para - c.de) * suave(t / DURACAO_DESCIDA);
-      else al = c.para - ((t - DURACAO_DESCIDA) / 1000) * c.subida;
-      const y = naTelaTexto(al) + 6;
+      // cai junto com a câmera e fica onde parou; as antigas vão ficando para trás
+      const al = c.de + (c.para - c.de) * suave(Math.min(1, t / DURACAO_DESCIDA));
+      const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
+      const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       if (y < -60) {
         caixas.splice(i, 1);
         continue;
@@ -790,8 +795,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.font = "bold 20px 'Pixelify Sans', monospace";
       const w = Math.ceil(tx.measureText(texto).width) + 28;
       const h = 40;
-      // ao lado do foguete (o outro lado é do mascote)
-      const x = Math.max(8, Math.min(W - w - 40, W / 2 - w - 46 + c.desvioX));
+      // no centro da tela; o foguete fica ao lado
+      const x = Math.max(8, Math.min(W - w - 40, W / 2 - w / 2 - 30));
       tx.save();
       tx.globalAlpha = Math.min(1, t / c.surgir);
       tx.translate(x + w / 2, y);
@@ -885,12 +890,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
         texto: texto.toUpperCase(),
         cor: faixa.cor,
         de: camera.de,
-        para: camera.para + Math.min(30, distancia * 0.05) * peso, // as densas afundam um pouco além do foguete
+        para: camera.para,
         inicio: agora,
-        surgir: 80 + 1500 * (1 - peso), // as óbvias aparecem devagar
-        subida: 30 - 20 * peso, // AL por segundo subindo depois
+        surgir: 120 + 400 * (1 - peso), // as óbvias aparecem um pouco mais devagar
         angulo: (Math.random() - 0.5) * 0.08,
-        desvioX: -(caixas.length % 3) * 14,
         brilho: 6 + 18 * peso,
         satelites: faixa.id === "obvia" ? 6 : faixa.id === "comum" ? 3 : 0,
       });
@@ -906,7 +909,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     },
     // Coloca a câmera numa profundidade sem animação (ao retomar o dia).
     irPara(al) {
-      camera.de = camera.para = camera.atual = al;
+      camera.de = camera.para = camera.atual = foguete.al = al;
     },
     aoQuadro(fn) {
       aoQuadro = fn;

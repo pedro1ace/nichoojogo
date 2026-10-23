@@ -20,7 +20,7 @@ Como funciona hoje no protótipo:
   e linhas mostrando até onde cada faixa de raridade levaria nesta pergunta.
 - Faixas: ÓBVIA (0 a 4), COMUM (5 a 19), INCOMUM (20 a 49), RARA (50+) e a **supernova**,
   a resposta secreta de cada pergunta, que vale o dobro.
-- A tela inteira treme mais quanto mais rara a resposta; a palavra aparece numa caixinha da cor da faixa.
+- A tela inteira treme mais quanto mais rara a resposta. A palavra aparece numa caixinha da cor da faixa e cai junto com a câmera; o foguete vai ao lado, acompanhando com um balanço suave.
 - Autocorreção: se a palavra está quase certa (inclusive contra os apelidos), o jogo sugere e preenche o campo,
   e você confirma com LANÇAR. Ele nunca envia sozinho.
 - Sons 8-bit gerados no navegador (botão ♪ para desligar).
