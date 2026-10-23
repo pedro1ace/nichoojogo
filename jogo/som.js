@@ -1,0 +1,128 @@
+// Sons 8-bit gerados na hora (Web Audio), sem arquivos de áudio.
+// O navegador só deixa tocar som depois de um clique, então Som.ligar()
+// é chamado no botão de começar.
+
+const Som = (() => {
+  let ac = null;
+  let mestre = null;
+  let ambiente = null;
+  let mudo = false;
+  try {
+    mudo = localStorage.getItem("nicho:mudo") === "1";
+  } catch {}
+
+  function ligar() {
+    if (ac) return;
+    const Contexto = window.AudioContext || window.webkitAudioContext;
+    if (!Contexto) return;
+    ac = new Contexto();
+    mestre = ac.createGain();
+    mestre.gain.value = mudo ? 0 : 0.5;
+    mestre.connect(ac.destination);
+    criarAmbiente();
+  }
+
+  // Zumbido grave e calmo de fundo, que fica mais grave conforme desce.
+  function criarAmbiente() {
+    const filtro = ac.createBiquadFilter();
+    filtro.type = "lowpass";
+    filtro.frequency.value = 500;
+    const ganho = ac.createGain();
+    ganho.gain.value = 0.05;
+    const osc = [55, 82.4, 110.3].map((f) => {
+      const o = ac.createOscillator();
+      o.type = "triangle";
+      o.frequency.value = f;
+      o.connect(filtro);
+      o.start();
+      return o;
+    });
+    const lfo = ac.createOscillator();
+    const lfoGanho = ac.createGain();
+    lfo.frequency.value = 0.07;
+    lfoGanho.gain.value = 180;
+    lfo.connect(lfoGanho).connect(filtro.frequency);
+    lfo.start();
+    filtro.connect(ganho).connect(mestre);
+    ambiente = { osc, filtro };
+  }
+
+  function tom(freq, duracao, { tipo = "square", volume = 0.12, atraso = 0, ate = null } = {}) {
+    if (!ac) return;
+    const t = ac.currentTime + atraso;
+    const o = ac.createOscillator();
+    const g = ac.createGain();
+    o.type = tipo;
+    o.frequency.setValueAtTime(freq, t);
+    if (ate) o.frequency.exponentialRampToValueAtTime(ate, t + duracao);
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(volume, t + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + duracao);
+    o.connect(g).connect(mestre);
+    o.start(t);
+    o.stop(t + duracao + 0.05);
+  }
+
+  function ruido(duracao, { volume = 0.1, de = 2000, ate = 200 } = {}) {
+    if (!ac) return;
+    const t = ac.currentTime;
+    const buffer = ac.createBuffer(1, Math.ceil(ac.sampleRate * duracao), ac.sampleRate);
+    const dados = buffer.getChannelData(0);
+    for (let i = 0; i < dados.length; i++) dados[i] = Math.random() * 2 - 1;
+    const fonte = ac.createBufferSource();
+    fonte.buffer = buffer;
+    const filtro = ac.createBiquadFilter();
+    filtro.type = "bandpass";
+    filtro.frequency.setValueAtTime(de, t);
+    filtro.frequency.exponentialRampToValueAtTime(ate, t + duracao);
+    const g = ac.createGain();
+    g.gain.setValueAtTime(volume, t);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + duracao);
+    fonte.connect(filtro).connect(g).connect(mestre);
+    fonte.start(t);
+  }
+
+  const NOTAS = [523.25, 659.25, 783.99, 1046.5, 1318.5, 1568]; // dó maior subindo
+
+  return {
+    ligar,
+    estaMudo: () => mudo,
+    alternar() {
+      mudo = !mudo;
+      try {
+        localStorage.setItem("nicho:mudo", mudo ? "1" : "0");
+      } catch {}
+      if (mestre) mestre.gain.setTargetAtTime(mudo ? 0 : 0.5, ac.currentTime, 0.05);
+      return mudo;
+    },
+    tecla: () => tom(1800 + Math.random() * 400, 0.025, { volume: 0.03 }),
+    erro: () => {
+      tom(160, 0.18, { tipo: "sawtooth", volume: 0.08 });
+      tom(120, 0.22, { tipo: "sawtooth", volume: 0.06, atraso: 0.08 });
+    },
+    sugestao: () => tom(880, 0.08, { tipo: "triangle", volume: 0.08, ate: 1175 }),
+    tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
+    contagem: (ultimo) => tom(ultimo ? 880 : 440, ultimo ? 0.25 : 0.12, { tipo: "triangle", volume: 0.1 }),
+    // descida: um "vuuum" mais longo e grave quanto mais rara a resposta
+    descer(peso) {
+      ruido(0.6 + peso * 1.8, { volume: 0.05 + peso * 0.12, de: 2400, ate: 120 + (1 - peso) * 400 });
+      tom(220, 0.5 + peso * 1.5, { tipo: "sine", volume: 0.08, ate: 60 });
+    },
+    // acorde da faixa: mais notas para faixas mais raras
+    faixa(nivel) {
+      for (let i = 0; i <= nivel + 1; i++) tom(NOTAS[i], 0.18, { tipo: "square", volume: 0.07, atraso: 0.09 * i });
+    },
+    supernova() {
+      for (let i = 0; i < 12; i++) tom(NOTAS[i % 6] * (i >= 6 ? 2 : 1), 0.12, { tipo: "square", volume: 0.06, atraso: 0.05 * i });
+      ruido(1.2, { volume: 0.08, de: 6000, ate: 3000 });
+    },
+    fim() {
+      [392, 523.25, 659.25, 783.99].forEach((f, i) => tom(f, 0.35, { tipo: "triangle", volume: 0.1, atraso: 0.15 * i }));
+    },
+    profundidade(al) {
+      if (!ambiente) return;
+      const f = Math.max(0.6, 1 - al / 20000);
+      ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime([55, 82.4, 110.3][i] * f, ac.currentTime, 0.5));
+    },
+  };
+})();

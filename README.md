@@ -13,17 +13,19 @@ Design: 2D, sprites em pixel art, chamativo.
 
 Como funciona hoje no protótipo:
 
-- Até 7 perguntas por dia, as mesmas para todo mundo (sorteio pela data).
-- Uma resposta por pergunta e 3 tentativas ("combustível") para acertar uma resposta válida.
-- Os pontos são **anos-luz**: respostas óbvias valem quase nada, nichadas levam o foguete longe.
-- Cada pergunta esconde uma **supernova**, a resposta secreta que vale o dobro (o "krillion" do original).
-- A tela inteira é o espaço: o foguete parte da Terra e desce. Cada resposta faz ele descer os anos-luz
-  que ela vale, sempre no mesmo tempo, então as raras descem rápido e as óbvias quase não saem do lugar.
-  No caminho aparecem marcos (Lua, Marte, Júpiter...), e o céu escurece conforme você se afasta.
-- A palavra aparece numa caixinha: roxa e afundando rápido se for rara, clara e lenta se for óbvia.
-- Erros de digitação são corrigidos (também contra os apelidos), e acentos e artigos são ignorados.
-- Faixas no resultado: 🛰️ até 19, 🌙 20 a 49, 🪐 50 ou mais, 🌟 supernova.
-- No fim, um resultado em emoji para colar no grupo. O progresso do dia fica salvo no navegador.
+- Até 7 perguntas por dia, as mesmas para todo mundo, com **25 segundos** cada (o relógio começa depois de uma contagem de 3).
+- A viagem começa na Terra, com o céu claro. Cada resposta faz o foguete descer `pontos × 10` anos-luz,
+  sempre no mesmo tempo: as raras descem rápido e as óbvias quase não saem do lugar. Um astronautinha acompanha.
+- No caminho: marcos (Lua, Marte, Júpiter... buraco negro), curiosidades nas laterais, régua de profundidade
+  e linhas mostrando até onde cada faixa de raridade levaria nesta pergunta.
+- Faixas: ÓBVIA (0 a 4), COMUM (5 a 19), INCOMUM (20 a 49), RARA (50+) e a **supernova**,
+  a resposta secreta de cada pergunta, que vale o dobro.
+- A tela inteira treme mais quanto mais rara a resposta; a palavra aparece numa caixinha da cor da faixa.
+- Autocorreção: se a palavra está quase certa (inclusive contra os apelidos), o jogo sugere e preenche o campo,
+  e você confirma com LANÇAR. Ele nunca envia sozinho.
+- Sons 8-bit gerados no navegador (botão ♪ para desligar).
+- No fim: pontos, profundidade, diário de bordo com cada resposta, e um resultado em emoji para compartilhar.
+  O progresso do dia fica salvo no navegador.
 
 ## Como jogar
 
@@ -59,7 +61,8 @@ scripts/
 jogar.html                 o jogo num arquivo só (gerado, não edite à mão)
 jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
   dados.js                 perguntas e pesos (gerado pelo pontuar.py)
-  cena.js                  sprites em pixel art e animação do foguete
+  cena.js                  cena em pixel art: fundo, Terra, planetas, foguete, mascote, textos
+  som.js                   sons 8-bit (Web Audio)
   jogo.js                  regras, rodada diária, salvar e compartilhar
 docs/PIPELINE.md           etapas do projeto e próximos passos
 ```

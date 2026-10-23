@@ -43,11 +43,13 @@ Seguimos o mesmo método do Krillion:
 - [x] Descida suave no mesmo tempo para toda resposta: as raras descem muito mais nesse tempo, então caem rápido.
 - [x] Tremor da tela inteira proporcional à raridade, e flash na supernova.
 - [x] Palavra numa caixinha que afunda junto e depois sobe para a superfície; roxa e rápida se for rara, clara e lenta se for óbvia.
-- [x] Autocorreção generosa contra respostas e apelidos, ignorando acentos, artigos e espaços.
+- [x] Autocorreção generosa contra respostas e apelidos, ignorando acentos, artigos e espaços. Sugere e preenche, sem enviar.
+- [x] Cronômetro de 25 s, cartão de resultado por resposta, mascote, sons 8-bit, diário de bordo no fim.
 - [ ] **Calendário de perguntas** (`dados/calendario.json`: data → perguntas), para garantir perguntas inéditas
       e controlar a dificuldade, em vez do sorteio atual (que repete perguntas).
 - [ ] Revisar a autocorreção com perguntas grandes: bloquear casamentos estranhos (o problema "sea donkey" do FAQ do Krillion).
-- [ ] Mais sprites e animação: explosão da supernova, foguete trocando de fase conforme a distância, sons 8-bit.
+- [ ] Mais sprites e animação: explosão da supernova, foguete trocando de fase conforme a distância, mascote reagindo à faixa.
+- [ ] Comparação com os outros jogadores do dia (precisa de um servidor guardando os resultados).
 - [ ] Ajustar o ritmo: distância entre marcos e cores do fundo conforme as pontuações reais dos jogadores.
 - [ ] Imagem do resultado (canvas em pixel art) para compartilhar além do texto.
 - [ ] Modo ilimitado e arquivo dos dias anteriores.

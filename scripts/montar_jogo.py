@@ -10,6 +10,7 @@ Gera:
                     Dá para mandar esse arquivo para alguém e abrir direto.
 """
 import json
+import re
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -32,11 +33,9 @@ def main() -> None:
 
     html = (JOGO / "index.html").read_text(encoding="utf-8")
     css = (JOGO / "estilo.css").read_text(encoding="utf-8")
-    scripts = {
-        "dados.js": dados_js,
-        "cena.js": (JOGO / "cena.js").read_text(encoding="utf-8"),
-        "jogo.js": (JOGO / "jogo.js").read_text(encoding="utf-8"),
-    }
+    # embute todo <script src="..."> de jogo/index.html, na mesma ordem
+    nomes = re.findall(r'<script src="([^"]+)"></script>', html)
+    scripts = {n: dados_js if n == "dados.js" else (JOGO / n).read_text(encoding="utf-8") for n in nomes}
     html = html.replace('<link rel="stylesheet" href="estilo.css">', "<style>\n" + css + "</style>")
     for nome, codigo in scripts.items():
         marca = f'<script src="{nome}"></script>'

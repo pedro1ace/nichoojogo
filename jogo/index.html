@@ -7,56 +7,93 @@
   <meta name="description" content="Jogo diário de palavras: quanto mais nichada a resposta, mais fundo seu foguete desce no espaço.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
   <div id="tela">
     <canvas id="cena" aria-hidden="true"></canvas>
+    <canvas id="camada" aria-hidden="true"></canvas>
 
     <div id="hud" hidden>
-      <div>
+      <div class="placa">
         <span class="rotulo">PROFUNDIDADE</span>
-        <span id="distancia">0 AL</span>
+        <span id="distancia" class="valor ciano">0 AL</span>
       </div>
-      <div class="direita">
-        <span id="rodada"></span>
-        <span id="combustivel"></span>
+      <div class="progresso">
+        <div id="quadrados"></div>
+        <span id="rotulo-rodada" class="rotulo"></span>
+      </div>
+      <div class="placa direita">
+        <span class="rotulo">PONTOS</span>
+        <span id="pontos" class="valor rosa">0</span>
       </div>
     </div>
+    <button id="som" type="button" aria-label="Ligar ou desligar o som">♪</button>
 
-    <section id="inicio" class="sobreposto">
-      <h1>NICHO</h1>
-      <p>Responda cada pergunta com a palavra mais nichada que conseguir.<br>
-         Quanto mais rara, mais fundo o foguete desce no espaço.</p>
-      <button id="comecar" type="button">MERGULHAR</button>
-      <p id="carregando" class="suave"></p>
+    <section id="inicio">
+      <h1 id="titulo" aria-label="Nicho"></h1>
+      <p class="subtitulo">A DESCIDA DIÁRIA</p>
+      <p id="regras" class="regras"></p>
+      <p id="dia" class="regras"></p>
+      <button id="comecar" type="button" class="botao-grande">▼ INICIAR DESCIDA ▼</button>
+      <details class="como-jogar">
+        <summary>como jogar</summary>
+        <p>Cada pergunta pede uma palavra de um tema. Você tem 25 segundos.
+           Respostas óbvias mal tiram o foguete do lugar; as nichadas levam você para o fundo do espaço.
+           Cada pergunta esconde uma <b>supernova</b>, a resposta secreta que vale o dobro.
+           Errou a grafia? O jogo sugere a correção, e você confirma.</p>
+      </details>
     </section>
 
-    <section id="painel" class="caixa" hidden>
+    <section id="cartao-pergunta" class="cartao" hidden>
+      <p id="rotulo-pergunta" class="rotulo rosa"></p>
       <h2 id="pergunta"></h2>
-      <form id="formulario" autocomplete="off">
+      <p class="dica">▼ quanto mais rara, mais fundo ▼</p>
+      <form id="formulario" autocomplete="off" hidden>
         <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
-               autocapitalize="off" autocorrect="off" spellcheck="false" required>
+               autocapitalize="off" autocorrect="off" spellcheck="false">
         <button type="submit">LANÇAR</button>
       </form>
+      <button id="sugestao" type="button" hidden></button>
       <p id="mensagem" role="status"></p>
-      <div id="revelacao" hidden>
-        <p class="suave">As mais nichadas (anos-luz, ★ = supernova):</p>
-        <ol id="top"></ol>
-        <button id="proxima" type="button">PRÓXIMA ▶</button>
-      </div>
+      <div id="relogio" hidden><div id="barra-tempo"></div><span id="tempo"></span></div>
     </section>
 
-    <section id="fim" class="caixa" hidden>
-      <h2>FIM DA VIAGEM</h2>
-      <p id="resumo"></p>
-      <pre id="compartilhar"></pre>
-      <button id="copiar" type="button">COPIAR RESULTADO</button>
-      <p class="suave">Novas perguntas amanhã.</p>
+    <p id="aviso" class="pilula" hidden></p>
+
+    <section id="resultado" class="cartao-resultado" hidden>
+      <img id="icone" alt="">
+      <p id="nome-faixa"></p>
+      <p id="palavra"></p>
+      <p id="linha-pontos"></p>
+      <p id="frase" class="suave"></p>
+      <p class="rotulo">AS MAIS NICHADAS</p>
+      <ol id="mais-nichadas"></ol>
+      <button id="proxima" type="button" class="botao-grande">DESCER ▼</button>
+    </section>
+
+    <section id="fim" hidden>
+      <div class="fim-conteudo">
+        <p class="rotulo">NICHO · <span id="fim-dia"></span></p>
+        <p id="fim-pontos"></p>
+        <p id="fim-profundidade" class="ciano"></p>
+        <p id="fim-comparacao"></p>
+        <div class="diario">
+          <p class="rotulo">DIÁRIO DE BORDO <span class="suave">· mais fundo = mais raro</span></p>
+          <div id="grafico"></div>
+        </div>
+        <pre id="compartilhar"></pre>
+        <div class="botoes">
+          <button id="copiar" type="button" class="botao-rosa">COPIAR RESULTADO</button>
+          <button id="enviar" type="button" class="botao-escuro" hidden>COMPARTILHAR</button>
+        </div>
+        <p id="amanha" class="suave"></p>
+      </div>
     </section>
   </div>
   <script src="dados.js"></script>
+  <script src="som.js"></script>
   <script src="cena.js"></script>
   <script src="jogo.js"></script>
 </body>
