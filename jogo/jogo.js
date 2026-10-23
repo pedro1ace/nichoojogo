@@ -526,7 +526,7 @@ function mostrarFim(comSom) {
 
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(estado.total * AL_POR_PONTO)} AL 🚀`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(estado.total * AL_POR_PONTO)} AL 🧑‍🚀`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }
@@ -547,7 +547,6 @@ function montarGrafico() {
     const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#5a5490" };
     const col = document.createElement("div");
     col.className = "coluna";
-    col.tabIndex = 0;
     col.style.color = faixa.cor;
     const fio = document.createElement("div");
     fio.className = "fio";
@@ -561,6 +560,9 @@ function montarGrafico() {
     const dica = document.createElement("span");
     dica.className = "dica-coluna";
     dica.textContent = h.resposta ? `${h.categoria}: ${h.resposta} (+${h.pontos})` : `${h.categoria}: sem resposta`;
+    // a dica fica logo acima do ícone, só enquanto o mouse estiver em cima
+    dica.style.top = `${Math.max(2, (h.pontos / maximo) * altura) - 34}px`;
+    col.setAttribute("aria-label", dica.textContent);
     col.append(fio, img, num, dica);
     g.append(col);
   });
