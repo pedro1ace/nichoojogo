@@ -677,43 +677,37 @@ const FOGUETE = [
   "....OOOOO....",
 ].reverse(); // de ponta-cabeça: o foguete desce
 
-// Mascote: o astronautinha que acompanha a viagem (dois quadros de animação).
-const MASCOTE = [
-  [
-    ".....Y......",
-    ".....O......",
-    "...OOOOOO...",
-    "..OWWWWWWO..",
-    ".OWBBBBBBWO.",
-    ".OWBHBBBBWO.",
-    ".OWBBHBbBWO.",
-    ".OWPbBBbPwO.",
-    "..OWWWWWwO..",
-    ".OOWRWWRWOO.",
-    "OWOWWWWWwOWO",
-    "OwOWWYYWwOwO",
-    ".O.OWWWwwO.O",
-    "...OWO.OwO..",
-    "...OOO.OOO..",
-  ],
-  [
-    "......Y.....",
-    ".....O......",
-    "...OOOOOO...",
-    "..OWWWWWWO..",
-    ".OWBBBBBBWO.",
-    ".OWBHBBBBWO.",
-    ".OWBBHBbBWO.",
-    ".OWPbBBbPwO.",
-    "..OWWWWWwO.O",
-    ".OOWRWWRWOOW",
-    "OWOWWWWWwO.O",
-    "OwOWWYYWwO..",
-    ".O.OWWWwwO..",
-    "...OwO.OWO..",
-    "...OOO.OOO..",
-  ],
+// Astronauta (18x21): capacete grande com visor em degradê, mochila e luzinha na antena.
+const ASTRONAUTA_A = [
+  "........Y.........",
+  "........O.........",
+  "....OOOOOOOOOO....",
+  "...OWWWWWWWWWWO...",
+  "..OWWWWWWWWWWwwO..",
+  "..OWOOOOOOOOOOwO..",
+  ".GOWOddbbbBBcOwO..",
+  "GGOWOdbbbBBcHOwO..",
+  "GgOWOdbbBBcHcOwO..",
+  "GgOWOddbbBBBcOsO..",
+  "GgOWWOOOOOOOOwsO..",
+  ".GOwWWWWWWWWwwsO..",
+  "..OOwwwwwwwwssOO..",
+  ".OOOWWRRWWYWWwsOO.",
+  "OWWOWWRRWWWWWwsOwO",
+  "OWwOWWWWWWWWWwsOwO",
+  "OGgOwWWWsWWWwwsOgO",
+  ".OOOwWWWOOWWwssOO.",
+  "...OwWWO..OWwsO...",
+  "...OGGgO..OGggO...",
+  "...OOOOO..OOOOO...",
 ];
+const ASTRONAUTA_B = ASTRONAUTA_A.map((l, i) => (i === 0 ? l.replace("Y", "y") : l));
+const MASCOTE = [ASTRONAUTA_A, ASTRONAUTA_B];
+const PALETA_ASTRONAUTA = {
+  O: "#140f36", W: "#f4f6ff", w: "#c2c8e8", s: "#7f86b8",
+  d: "#0b2a55", b: "#1f6fa8", B: "#3fb8ec", c: "#9ff3ff", H: "#ffffff",
+  G: "#8a90b0", g: "#4a4f70", R: "#ff3d6e", Y: "#ffd23f", y: "#8a6a10",
+};
 
 const SATELITE = [
   "BBb.....bBB",
@@ -930,7 +924,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   function ajustarTamanho() {
     dpr = window.devicePixelRatio || 1;
-    escala = Math.max(2, Math.round(Math.min(innerWidth, innerHeight) / 230));
+    escala = Math.max(2, Math.round(Math.max(innerWidth, innerHeight * 1.6) / 330));
     L = Math.ceil(innerWidth / escala);
     A = Math.ceil(innerHeight / escala) + 2; // uma folga para o deslocamento suave
     telaPixel.width = L;
@@ -1003,7 +997,69 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const padrao = [0, 1, 2, 3].map((i) => (frac > BAYER[b + i] ? c1 : c0));
       for (let x = 0; x < L; x++) pixels[linha + x] = padrao[x & 3];
     }
+    desenharParedesPixel(empacotar);
     ctx.putImageData(imagem, 0, 0);
+  }
+
+  // Paredes de rocha desenhadas pixel a pixel: borda com luz, meio-tom,
+  // sombra perto da beirada da tela (com dithering) e crateras.
+  const CAMADAS_PAREDE = [
+    { f: 0.55, largura: (c) => 0.07 + 0.11 * c, s: 300, tons: [[76, 64, 150], [34, 26, 74], [22, 16, 50], [14, 10, 34]] },
+    { f: 1, largura: (c) => 0.035 + 0.085 * c, s: 400, tons: [[170, 150, 255], [74, 58, 140], [42, 30, 88], [18, 12, 40]] },
+  ];
+  function larguraParede(c, yMundo, lado, conf) {
+    const n =
+      0.55 * ruido(yMundo / 55, lado * 7, c.s) +
+      0.3 * ruido(yMundo / 18, lado * 7 + 3, c.s + 1) +
+      0.15 * ruido(yMundo / 6, lado * 7 + 5, c.s + 2);
+    return L * c.largura(conf) * Math.min(1, conf * 4) * (0.35 + n * 0.9);
+  }
+  function naParede(x, y) {
+    const conf = aperto(camera.atual);
+    if (conf <= 0) return false;
+    for (const c of CAMADAS_PAREDE) {
+      const yMundo = Math.round(y) + Math.round(cameraPx * c.f) - focoY;
+      if (x < larguraParede(c, yMundo, 0, conf) + 1 || x > L - 2 - larguraParede(c, yMundo, 1, conf)) return true;
+    }
+    return false;
+  }
+  function desenharParedesPixel(empacotar) {
+    const conf = aperto(camera.atual);
+    if (conf <= 0) return;
+    const fundo = corDoFundo(camera.atual);
+    const surgir = Math.min(1, conf * 6); // aparecem aos poucos
+    for (const c of CAMADAS_PAREDE) {
+      const tons = c.tons.map((t) => empacotar(misturar(fundo, t, surgir * (c.f < 1 ? 0.8 : 1))));
+      const desvio = Math.round(cameraPx * c.f);
+      for (let y = 0; y < A; y++) {
+        const yMundo = y + desvio - focoY;
+        const linha = y * L;
+        for (const lado of [0, 1]) {
+          const w = Math.round(larguraParede(c, yMundo, lado, conf));
+          if (w < 1) continue;
+          // a borda de cima/baixo recebe luz quando a parede "entra" na tela
+          const wAcima = larguraParede(c, yMundo - 1, lado, conf);
+          const degrau = w - wAcima > 0.6;
+          for (let d = 0; d < w; d++) {
+            const x = lado ? L - 1 - d : d;
+            const daBorda = w - 1 - d; // 0 = beirada de dentro
+            let k;
+            if (daBorda < 1) k = 0;
+            else if (daBorda < 2 || (degrau && daBorda < 4)) k = 1;
+            else {
+              // do meio-tom (2) para a sombra (3) com dithering
+              const t = Math.min(1, (daBorda - 2) / Math.max(3, w * 0.6));
+              k = t > BAYER[(y & 3) * 4 + (x & 3)] ? 3 : 2;
+              // crateras e manchas
+              const cr = ruido(x / 4 + lado * 50, yMundo / 4, c.s + 9);
+              if (cr > 0.78) k = 3;
+              else if (cr > 0.72) k = 1;
+            }
+            pixels[linha + x] = tons[k];
+          }
+        }
+      }
+    }
   }
 
   // Raios de luz vindos da Terra, que somem conforme você se afasta.
@@ -1048,6 +1104,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
           if (sorte(k, i * 7 + ci + 3) > densidadeEstrelas(yMundo / (PX_POR_AL * c.f))) continue;
           const x = Math.floor(sorte(k, i * 7 + ci + 1) * L);
           const y = yMundo - desvio + focoY;
+          if (naParede(x, y)) continue;
           // cintila: o brilho sobe e desce devagar, cada estrela no seu ritmo
           const ritmo = 0.6 + sorte(k, i * 7 + ci + 5) * 1.6;
           const fase = sorte(k, i * 7 + ci + 6) * 6.283;
@@ -1120,75 +1177,34 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function aperto(al) {
     return Math.min(1, Math.max(0, (al - 250) / 9000));
   }
+  // Cristais que brilham dentro da rocha da frente, lá no fundo.
   function desenharLaterais() {
     const conf = aperto(camera.atual);
-    if (conf <= 0) return;
-    const fundo = corDoFundo(camera.atual);
-    const camadas = [
-      // de trás: mais larga, mais apagada (some no fundo)
-      { f: 0.55, largura: 0.07 + 0.11 * conf, cor: misturar(fundo, [34, 22, 70], 0.55), borda: [120, 100, 230], s: 300 },
-      // da frente: rocha com relevo, mais perto, contorno de luz
-      { f: 1, largura: 0.03 + 0.08 * conf, cor: misturar(fundo, [46, 30, 84], 0.8), borda: [170, 150, 255], s: 400, relevo: true },
-    ];
-    const PASSO = 1.5;
-    for (const c of camadas) {
-      const desvio = camera.atual * PX_POR_AL * c.f;
-      const larguraMax = L * c.largura * Math.min(1, conf * 4);
-      const corpo = `rgb(${c.cor.map(Math.round).join(",")})`;
-      const sombra = `rgba(0, 0, 8, 0.55)`;
-      const brilho = `rgba(${c.borda.join(",")}, ${0.25 + 0.3 * conf})`;
-      for (let y = -PASSO; y < A + PASSO; y += PASSO) {
-        const yMundo = y + desvio - focoY;
-        for (const lado of [0, 1]) {
-          const n =
-            0.55 * ruido(yMundo / 55, lado * 7, c.s) +
-            0.3 * ruido(yMundo / 18, lado * 7 + 3, c.s + 1) +
-            0.15 * ruido(yMundo / 6, lado * 7 + 5, c.s + 2);
-          const w = larguraMax * (0.35 + n * 0.9);
-          if (w < 0.5) continue;
-          alta.fillStyle = corpo;
-          if (lado) alta.fillRect(L - w, y, w, PASSO + 0.2);
-          else alta.fillRect(0, y, w, PASSO + 0.2);
-          if (c.relevo) {
-            // camadas de rocha (listras) e sombra perto da borda da tela
-            const listra = ruido(yMundo / 7, lado * 3, 777);
-            if (listra > 0.62) {
-              alta.fillStyle = "rgba(255, 255, 255, 0.05)";
-              const lw = w * (0.4 + 0.5 * listra);
-              if (lado) alta.fillRect(L - lw, y, lw - 1.5, PASSO + 0.2);
-              else alta.fillRect(1.5, y, lw - 1.5, PASSO + 0.2);
-            }
-            alta.fillStyle = sombra;
-            const sw = w * 0.45;
-            if (lado) alta.fillRect(L - sw, y, sw, PASSO + 0.2);
-            else alta.fillRect(0, y, sw, PASSO + 0.2);
-          }
-          alta.fillStyle = brilho; // luz fininha na borda da rocha
-          if (lado) alta.fillRect(L - w - 0.6, y, 0.6, PASSO + 0.2);
-          else alta.fillRect(w, y, 0.6, PASSO + 0.2);
-        }
-      }
-      // cristais que brilham dentro da rocha da frente, lá no fundo
-      if (c.f === 1 && conf > 0.15) {
-        const BLOCO = 30;
-        const primeiro = Math.floor((desvio - focoY) / BLOCO) - 1;
-        const ultimo = Math.floor((desvio - focoY + A) / BLOCO) + 1;
-        for (let k = primeiro; k <= ultimo; k++) {
-          if (sorte(k, 600) > 0.35 * conf + 0.1) continue;
-          const lado = sorte(k, 601) > 0.5 ? 1 : 0;
-          const d = 2 + sorte(k, 602) * larguraMax * 0.5;
-          const x = lado ? L - d : d;
-          const y = k * BLOCO + sorte(k, 603) * BLOCO - desvio + focoY;
-          const pulso = 0.5 + 0.5 * Math.sin(tempo * (1 + sorte(k, 604)) + k);
-          alta.globalAlpha = 0.25 + 0.5 * pulso;
-          alta.fillStyle = sorte(k, 605) > 0.5 ? "#5fe1ff" : "#ff4fd8";
-          alta.fillRect(x - 0.5, y - 1, 1, 2);
-          alta.globalAlpha = 0.12 * pulso;
-          alta.fillRect(x - 2, y - 2, 4, 4);
-        }
-        alta.globalAlpha = 1;
-      }
+    if (conf <= 0.15) return;
+    const c = CAMADAS_PAREDE[1];
+    const desvio = cameraPx;
+    const BLOCO = 30;
+    const primeiro = Math.floor((desvio - focoY) / BLOCO) - 1;
+    const ultimo = Math.floor((desvio - focoY + A) / BLOCO) + 1;
+    for (let k = primeiro; k <= ultimo; k++) {
+      if (sorte(k, 600) > 0.35 * conf + 0.1) continue;
+      const lado = sorte(k, 601) > 0.5 ? 1 : 0;
+      const yMundo = k * BLOCO + sorte(k, 603) * BLOCO;
+      const w = larguraParede(c, yMundo, lado, conf);
+      if (w < 6) continue;
+      const d = 3 + Math.floor(sorte(k, 602) * (w - 5));
+      const x = lado ? L - 1 - d : d;
+      const y = Math.round(yMundo - desvio + focoY) - (camera.atual * PX_POR_AL - cameraPx);
+      const pulso = 0.5 + 0.5 * Math.sin(tempo * (1 + sorte(k, 604)) + k);
+      const cor = sorte(k, 605) > 0.5 ? "#5fe1ff" : "#ff4fd8";
+      alta.fillStyle = cor;
+      alta.globalAlpha = 0.6 + 0.4 * pulso;
+      alta.fillRect(x, y - 1, 1, 3);
+      alta.fillRect(x - 1, y, 3, 1);
+      alta.globalAlpha = 0.15 * pulso;
+      alta.fillRect(x - 2, y - 2, 5, 5);
     }
+    alta.globalAlpha = 1;
   }
 
   // Poeira cósmica: pontinhos que flutuam devagar, sem parar, em várias distâncias.
@@ -1390,7 +1406,6 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // O astronauta desce sozinho, seguindo a câmera com uma mola suave.
-  const TAMANHO_ASTRONAUTA = 1.15;
   function desenharFoguete() {
     foguete.al += (camera.atual - foguete.al) * (1 - Math.exp(-dt * 7.5));
     foguete.al = Math.max(foguete.al, camera.atual - 50); // atrasa um pouco, mas nunca sai da tela
@@ -1403,10 +1418,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.save();
     tx.translate(foguete.x * escala, foguete.y * escala);
     tx.rotate(inclina);
-    tx.scale(TAMANHO_ASTRONAUTA, TAMANHO_ASTRONAUTA);
+    // cada pixel do astronauta vira 3 px na tela (2 no celular): nítido e não gigante
+    const k = Math.max(2, Math.round(escala * 0.75)) / escala;
+    tx.scale(k, k);
     tx.translate(-foguete.x * escala, -foguete.y * escala);
     const q = MASCOTE[Math.floor(tempo * 1.8) % 2];
-    desenharSprite(alta, q, foguete.x - 6, foguete.y - 7.5);
+    desenharSprite(alta, q, foguete.x - 9, foguete.y - 10.5, PALETA_ASTRONAUTA);
     tx.restore();
     return { x: foguete.x, y: foguete.y };
   }
@@ -1548,7 +1565,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const w = Math.ceil(tx.measureText(texto).width) + (pequena ? 32 : 44);
       const h = pequena ? 48 : 58;
       // no centro da tela, sem encostar no astronauta (que fica à direita)
-      const astronauta = (foguete.x - 6 * TAMANHO_ASTRONAUTA) * escala;
+      const astronauta = foguete.x * escala - 9 * Math.max(2, Math.round(escala * 0.75));
       const x = Math.max(8, Math.min(W / 2 - w / 2, astronauta - 18 - w));
       tx.save();
       tx.globalAlpha = Math.min(1, t / c.surgir) * (1 - sumindo);
