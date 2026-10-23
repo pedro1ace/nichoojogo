@@ -11,6 +11,16 @@
 // percorre muito mais espaço nesse tempo, então cai rápido; a óbvia mal se mexe.
 
 const AL_POR_PONTO = 10;
+// Quanto cada resposta faz viajar (AL). Cada faixa começa bem mais longe que
+// a anterior, então a diferença de raridade fica visível na tela:
+// óbvia quase não sai do lugar, comum desce um pouco, incomum bastante, rara muito.
+function viagem(pontos) {
+  if (pontos <= 0) return 0;
+  if (pontos < 5) return 4 * pontos;
+  if (pontos < 20) return 60 + 8 * (pontos - 5);
+  if (pontos < 50) return 300 + 14 * (pontos - 20);
+  return 900 + 22 * (pontos - 50);
+}
 const PX_POR_AL = 0.5; // pixels da cena por ano-luz
 const DURACAO_DESCIDA = 2400; // ms, igual para toda resposta
 
@@ -172,38 +182,6 @@ const FOGUETE = [
   "OrO.OgggO.OrO",
   "....OOOOO....",
 ].reverse(); // de ponta-cabeça: o foguete desce
-
-// Astronauta (18x21): capacete grande com visor em degradê, mochila e luzinha na antena.
-const ASTRONAUTA_A = [
-  "........Y.........",
-  "........O.........",
-  "....OOOOOOOOOO....",
-  "...OWWWWWWWWWWO...",
-  "..OWWWWWWWWWWwwO..",
-  "..OWOOOOOOOOOOwO..",
-  ".GOWOddbbbBBcOwO..",
-  "GGOWOdbbbBBcHOwO..",
-  "GgOWOdbbBBcHcOwO..",
-  "GgOWOddbbBBBcOsO..",
-  "GgOWWOOOOOOOOwsO..",
-  ".GOwWWWWWWWWwwsO..",
-  "..OOwwwwwwwwssOO..",
-  ".OOOWWRRWWYWWwsOO.",
-  "OWWOWWRRWWWWWwsOwO",
-  "OWwOWWWWWWWWWwsOwO",
-  "OGgOwWWWsWWWwwsOgO",
-  ".OOOwWWWOOWWwssOO.",
-  "...OwWWO..OWwsO...",
-  "...OGGgO..OGggO...",
-  "...OOOOO..OOOOO...",
-];
-const ASTRONAUTA_B = ASTRONAUTA_A.map((l, i) => (i === 0 ? l.replace("Y", "y") : l));
-const MASCOTE = [ASTRONAUTA_A, ASTRONAUTA_B];
-const PALETA_ASTRONAUTA = {
-  O: "#1a0a1e", W: "#e8453c", w: "#b32a2e", s: "#6a1424",
-  d: "#0b2a55", b: "#1f6fa8", B: "#3fb8ec", c: "#9ff3ff", H: "#ffffff",
-  G: "#c9ccd8", g: "#6a6e84", R: "#f4f6ff", Y: "#ffd23f", y: "#8a6a10",
-};
 
 const SATELITE = [
   "BBb.....bBB",
@@ -405,6 +383,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
   const camera = { de: 0, para: 0, inicio: 0, atual: 0, velocidade: 0 };
   let rodadaAl = 0; // onde começou a pergunta atual (para as linhas das faixas)
   let mostrarLinhas = false;
+  const acesas = {}; // linhas de faixa que a caixa já cruzou nesta rodada (id -> hora)
+  let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
+  let larguraCaixa = 200;
+  let cobertas = [];
+  const rastro = [];
   const caixas = [];
     const mascote = { x: 0, y: 0, pulo: 0 };
   // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
@@ -902,25 +885,45 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
   }
 
-  // O astronauta desce sozinho, seguindo a câmera com uma mola suave.
+  // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
+  const tardigrado = criarTardigrado();
+  let felizAte = 0;
   function desenharFoguete() {
     foguete.al += (camera.atual - foguete.al) * (1 - Math.exp(-dt * 7.5));
     foguete.al = Math.max(foguete.al, camera.atual - 50); // atrasa um pouco, mas nunca sai da tela
     const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3) * 2.5;
     const lado = reduzirMovimento ? 0 : Math.sin(tempo * 0.55) * 5;
     mascote.pulo *= Math.exp(-dt * 6);
-    foguete.x = Math.min(L - 26, L / 2 + Math.max(60, L * 0.22)) + lado;
-    foguete.y = naTelaExata(foguete.al) - 6 + balanco - mascote.pulo;
-    const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.12 + Math.min(0.25, camera.velocidade / 4000);
+    modoCanto += (alvoCanto - modoCanto) * (1 - Math.exp(-dt * 3));
+    // ao lado direito da caixa (que fica no centro da tela)
+    const xLivre = (innerWidth / 2 + larguraCaixa / 2) / escala + 28;
+    const xCaixa = Math.min(L - 26, xLivre);
+    // tela estreita: sem espaço do lado, ele flutua logo acima da caixa
+    const yCaixa = naTelaExata(foguete.al) + 4 - (xLivre > L - 26 ? 34 : 0);
+    // no cantinho esquerdo, flutuando, enquanto você digita
+    const xCanto = Math.max(22, L * 0.08);
+    const yCanto = A * 0.55;
+    const m = suave(Math.min(1, Math.max(0, modoCanto)));
+    foguete.x = xCaixa + (xCanto - xCaixa) * m + lado;
+    foguete.y = yCaixa + (yCanto - yCaixa) * m + balanco - mascote.pulo;
+    const descendo = camera.velocidade > 20;
+    const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.08 + Math.min(0.3, camera.velocidade / 3000);
+    // quadro: perninhas remando (rápido descendo, devagar parado), pisca de vez em quando
+    const agoraS = performance.now();
+    const feliz = agoraS < felizAte;
+    const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
+    const piscando = !feliz && tempo % 3.7 < 0.13;
+    const img = piscando ? tardigrado.piscar : (feliz ? tardigrado.feliz : tardigrado.andar)[ciclo];
+    // cada pixel do bichinho vira 3 px na tela (2 no celular): nítido e do tamanho certo
+    const pz = Math.max(2, Math.round(escala * 0.75));
+    // "respira": estica e encolhe de leve
+    const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
     tx.save();
+    tx.imageSmoothingEnabled = false;
     tx.translate(foguete.x * escala, foguete.y * escala);
     tx.rotate(inclina);
-    // cada pixel do astronauta vira 3 px na tela (2 no celular): nítido e não gigante
-    const k = Math.max(2, Math.round(escala * 0.75)) / escala;
-    tx.scale(k, k);
-    tx.translate(-foguete.x * escala, -foguete.y * escala);
-    const q = MASCOTE[Math.floor(tempo * 1.8) % 2];
-    desenharSprite(alta, q, foguete.x - 9, foguete.y - 10.5, PALETA_ASTRONAUTA);
+    tx.scale(1 / resp, resp);
+    tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
     return { x: foguete.x, y: foguete.y };
   }
@@ -979,10 +982,20 @@ function criarCena(telaPixel, telaTexto, raiz) {
       escrever(`${m.al.toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12, claro ? "#7a4a00" : "#ffd23f");
     }
     // onde estão as linhas das faixas agora (para a curiosidade não ficar por cima)
-    const linhasY = mostrarLinhas ? FAIXAS.filter((f) => f.min).map((f) => naTelaTexto(rodadaAl + f.min * AL_POR_PONTO)) : [];
+    const linhasY = mostrarLinhas ? FAIXAS.filter((f) => f.min).map((f) => naTelaTexto(rodadaAl + viagem(f.min))) : [];
     tx.font = `${W < 560 ? 13 : 15}px 'Space Mono', monospace`;
+    // faixas da tela cobertas por painéis (pergunta, resposta, resultado):
+    // ali as curiosidades não aparecem, para não misturar com o texto do painel
+    if (quadro % 10 === 0) {
+      cobertas = ["cartao-pergunta", "painel-resposta", "resultado"]
+        .map((id) => document.getElementById(id))
+        .filter((el) => el && !el.hidden)
+        .map((el) => { const r = el.getBoundingClientRect(); return [r.top - 14, r.bottom + 14]; });
+    }
     CURIOSIDADES.forEach(([al, texto], i) => {
       if (noInicio) return;
+      const yc = naTelaTexto(al);
+      if (cobertas.some(([a, b]) => yc > a && yc < b)) return;
       const y = naTelaTexto(al);
       if (y < -30 || y > H + 30) return;
       if (linhasY.some((ly) => Math.abs(ly - 10 - y) < 22)) return;
@@ -1010,14 +1023,33 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.font = "14px 'Space Mono', monospace";
       for (const f of FAIXAS) {
         if (!f.min) continue;
-        const y = naTelaTexto(rodadaAl + f.min * AL_POR_PONTO);
+        const y = naTelaTexto(rodadaAl + viagem(f.min));
         if (y < -20 || y > H + 20) continue;
-        linhaTracejada(y, centro0, centro1, f.cor, 0.7);
-        escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+        const acesa = acesas[f.id];
+        if (acesa) {
+          // linha acesa: cheia, com brilho, e um pulso logo que a caixa passa
+          const t = (agora - acesa) / 1000;
+          const pulso = Math.exp(-t * 3);
+          tx.save();
+          tx.shadowColor = f.cor;
+          tx.shadowBlur = 8 + 18 * pulso;
+          tx.globalAlpha = 0.9;
+          tx.fillStyle = f.cor;
+          for (let x = centro0; x < centro1; x += 8) tx.fillRect(x, Math.round(y) - 0.5, 6, 2 + pulso * 2);
+          tx.restore();
+          tx.font = `${14 + Math.round(pulso * 4)}px 'Space Mono', monospace`;
+          escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+          tx.font = "14px 'Space Mono', monospace";
+        } else {
+          linhaTracejada(y, centro0, centro1, f.cor, 0.45);
+          escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+        }
       }
     }
 
+    desenharRastro();
     desenharCaixas(agora);
+    desenharEstouros();
 
     // brilho em volta do foguete e vinheta, mais fortes no escuro
     const fx = foguete.x * escala;
@@ -1042,6 +1074,136 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
   }
 
+  // ---------- recompensa ao chegar ----------
+  // Quanto mais rara, maior a festa: estrelas explodindo, anel de luz,
+  // brilho na cor da faixa nas bordas, tremor e flash. A óbvia quase não faz nada.
+  const estouros = [];
+  const aneis = [];
+  let bordaCor = null, borda = 0;
+  function chegada(c, cx, cy, w, h) {
+    const k = c.peso; // 0 a 1.2
+    if (k < 0.2) return; // comum e óbvia: só o pulinho da caixa
+    const n = Math.round(20 + 120 * Math.min(1, k));
+    for (let i = 0; i < n; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const v = (120 + Math.random() * 380) * (0.6 + k * 0.6);
+      estouros.push({
+        x: cx + Math.cos(a) * w * 0.3, y: cy + Math.sin(a) * h * 0.3,
+        vx: Math.cos(a) * v, vy: Math.sin(a) * v * 0.7 - 60,
+        vida: 0, dura: 0.7 + Math.random() * 0.9,
+        cor: Math.random() < 0.3 ? "#ffffff" : c.cor,
+        tam: Math.random() < 0.15 ? 3 : 2,
+        estrela: Math.random() < 0.25,
+      });
+    }
+    aneis.push({ x: cx, y: cy, vida: 0, dura: 0.7, cor: c.cor, max: 160 + 220 * k });
+    if (k > 0.6) aneis.push({ x: cx, y: cy, vida: -0.12, dura: 0.9, cor: "#ffffff", max: 260 + 260 * k });
+    bordaCor = c.cor;
+    borda = Math.min(1, 0.4 + k * 0.6);
+    flash = Math.max(flash, c.supernova ? 0.85 : k > 0.6 ? 0.35 : 0.12);
+    tremer(6 + 22 * Math.min(1, k) + (c.supernova ? 10 : 0), 250 + 500 * k);
+    mascote.pulo = 10 + 14 * k;
+    felizAte = performance.now() + 2200;
+    if (window.Som && Som.brilho) Som.brilho(k);
+  }
+  function desenharEstouros() {
+    const W = innerWidth, H = innerHeight;
+    if (borda > 0.01 && bordaCor) {
+      const g = tx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.75);
+      g.addColorStop(0, "rgba(0,0,0,0)");
+      g.addColorStop(1, bordaCor);
+      tx.globalAlpha = borda * 0.45;
+      tx.fillStyle = g;
+      tx.fillRect(0, 0, W, H);
+      tx.globalAlpha = 1;
+      borda *= Math.exp(-dt * 1.6);
+    }
+    for (let i = aneis.length - 1; i >= 0; i--) {
+      const a = aneis[i];
+      a.vida += dt;
+      const t = a.vida / a.dura;
+      if (t >= 1) { aneis.splice(i, 1); continue; }
+      if (t < 0) continue;
+      const r = a.max * (1 - Math.pow(1 - t, 3));
+      tx.globalAlpha = (1 - t) * 0.8;
+      tx.strokeStyle = a.cor;
+      tx.lineWidth = 2 + 6 * (1 - t);
+      tx.beginPath();
+      tx.ellipse(a.x, a.y, r, r * 0.6, 0, 0, Math.PI * 2);
+      tx.stroke();
+    }
+    for (let i = estouros.length - 1; i >= 0; i--) {
+      const e = estouros[i];
+      e.vida += dt;
+      if (e.vida >= e.dura) { estouros.splice(i, 1); continue; }
+      e.vx *= Math.exp(-dt * 2.2);
+      e.vy = e.vy * Math.exp(-dt * 2.2) + 140 * dt; // cai de leve
+      e.x += e.vx * dt;
+      e.y += e.vy * dt;
+      const t = e.vida / e.dura;
+      tx.globalAlpha = 1 - t * t;
+      tx.fillStyle = e.cor;
+      const tam = e.tam * escala * 0.5 * (1 - t * 0.5);
+      if (e.estrela) {
+        tx.fillRect(e.x - tam * 1.5, e.y - tam / 4, tam * 3, tam / 2);
+        tx.fillRect(e.x - tam / 4, e.y - tam * 1.5, tam / 2, tam * 3);
+      } else tx.fillRect(e.x - tam / 2, e.y - tam / 2, tam, tam);
+    }
+    tx.globalAlpha = 1;
+  }
+
+  // Rastro que sai de cima da caixa enquanto ela cai, conforme a raridade:
+  // poeira estelar nas óbvias/comuns, faíscas douradas nas incomuns,
+  // fumaça escura avermelhada nas raras e plasma rosa na supernova.
+  function soltarRastro(c, al, t) {
+    const vel = Math.abs(camera.velocidade);
+    const n = Math.min(4, vel / 300 + 0.3);
+    for (let i = 0; i < n; i++) {
+      if (Math.random() > n / Math.ceil(n)) continue;
+      const tipo = c.supernova ? "plasma" : c.peso >= 0.5 ? "fumaca" : c.peso >= 0.2 ? "faisca" : "poeira";
+      const fumaca = tipo === "fumaca" || tipo === "plasma";
+      rastro.push({
+        al: al - (18 + Math.random() * 10) / (PX_POR_AL * escala), // logo acima da caixa
+        x: innerWidth / 2 + (Math.random() - 0.5) * larguraCaixa * 0.8,
+        vx: (Math.random() - 0.5) * 20,
+        vida: 0,
+        dura: fumaca ? 1.4 + Math.random() : 0.6 + Math.random() * 0.6,
+        r: fumaca ? 6 + Math.random() * 8 : 1 + Math.random() * 1.5,
+        tipo,
+        cor: tipo === "plasma" ? (Math.random() < 0.5 ? "255, 79, 216" : "180, 60, 255")
+          : tipo === "fumaca" ? (Math.random() < 0.6 ? "92, 24, 38" : "60, 16, 44")
+          : tipo === "faisca" ? (Math.random() < 0.5 ? "255, 210, 63" : "255, 160, 60")
+          : (Math.random() < 0.5 ? "232, 240, 255" : "95, 225, 255"),
+      });
+    }
+  }
+  function desenharRastro() {
+    for (let i = rastro.length - 1; i >= 0; i--) {
+      const r = rastro[i];
+      r.vida += dt;
+      const t = r.vida / r.dura;
+      if (t >= 1) { rastro.splice(i, 1); continue; }
+      r.x += r.vx * dt;
+      const y = naTelaTexto(r.al);
+      if (r.tipo === "fumaca" || r.tipo === "plasma") {
+        const raio = r.r * (1 + t * 2.2);
+        const g = tx.createRadialGradient(r.x, y, 0, r.x, y, raio);
+        const a = (r.tipo === "plasma" ? 0.35 : 0.55) * (1 - t);
+        g.addColorStop(0, `rgba(${r.cor}, ${a})`);
+        g.addColorStop(1, `rgba(${r.cor}, 0)`);
+        tx.fillStyle = g;
+        tx.fillRect(r.x - raio, y - raio, raio * 2, raio * 2);
+      } else {
+        tx.globalAlpha = 1 - t;
+        tx.fillStyle = `rgb(${r.cor})`;
+        const tam = r.r * escala * 0.5;
+        tx.fillRect(r.x - tam / 2, y - tam / 2, tam, tam);
+        if (r.tipo === "faisca") tx.fillRect(r.x - 0.5, y - tam * 2, 1, tam * 2);
+        tx.globalAlpha = 1;
+      }
+    }
+  }
+
   function desenharCaixas(agora) {
     const W = innerWidth;
     for (let i = caixas.length - 1; i >= 0; i--) {
@@ -1049,6 +1211,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const t = agora - c.inicio;
       // cai junto com a câmera e fica onde parou; as antigas vão ficando para trás
       const al = c.de + (c.para - c.de) * suave(Math.min(1, t / DURACAO_DESCIDA));
+      if (!c.saida && mostrarLinhas) {
+        for (const f of FAIXAS) {
+          if (!f.min || acesas[f.id]) continue;
+          if (al >= rodadaAl + viagem(f.min)) {
+            acesas[f.id] = agora;
+            if (window.Som && Som.limiar) Som.limiar(FAIXAS.length - 1 - FAIXAS.indexOf(f));
+          }
+        }
+      }
+      if (!c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -1061,6 +1233,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const p = escala; // um pixel da cena: a borda segue a mesma grade do cenário
       tx.font = `${pequena ? 14 : 20}px 'Press Start 2P', monospace`;
       const w = Math.ceil((Math.ceil(tx.measureText(texto).width) + (pequena ? 36 : 56)) / p) * p;
+      if (!c.saida) larguraCaixa = w;
       const h = (pequena ? 12 : 14) * p;
       // centralizada na tela: é ali que o jogo acontece
       const x = Math.round(Math.max(8, W / 2 - w / 2) / p) * p;
@@ -1068,9 +1241,22 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.save();
       tx.globalAlpha = alfa;
       // flutua devagar, sem parar (posição fracionada: desliza liso)
-      const boiaX = reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 4;
-      const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 5;
+      const boiaX = reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7;
+      const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 8;
       tx.translate(x + w / 2 + boiaX, y - sumindo * 14 + boiaY);
+      // mola: ao aparecer cresce passando um pouco do tamanho e volta
+      const mola = 1 - Math.exp(-t / 140) * Math.cos(t / 55);
+      // ao chegar no fundo, dá um "pulo" maior quanto mais rara
+      const tc = t - DURACAO_DESCIDA;
+      const pop = tc > 0 ? c.peso * 0.35 * Math.exp(-tc / 160) * Math.cos(tc / 45) : 0;
+      const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3 + c.inicio) * 0.035 + Math.sin(tempo * 0.5) * 0.015;
+      tx.rotate(c.angulo * Math.exp(-t / 600) + balanco);
+      const esc = Math.max(0.05, mola + pop) * (1 - sumindo * 0.1);
+      tx.scale(esc, esc);
+      if (tc > 0 && !c.chegou) {
+        c.chegou = true;
+        chegada(c, x + w / 2 + boiaX, y + boiaY, w, h);
+      }
       const x0 = -w / 2, y0 = -h / 2;
       // vidro tingido pela cor do fundo naquela profundidade
       const f = corDoFundo(camera.atual).map((v) => Math.round(v * 0.35));
@@ -1178,6 +1364,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Marca o começo de uma pergunta: as linhas das faixas partem daqui.
     novaRodada() {
       const agora = performance.now();
+      for (const k of Object.keys(acesas)) delete acesas[k];
+      alvoCanto = 1;
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       rodadaAl = camera.para;
       mostrarLinhas = true;
@@ -1187,7 +1375,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const agora = performance.now();
       const peso = Math.min(1, pontos / 100);
       const faixa = faixaDe(pontos, supernova);
-      const distancia = pontos * AL_POR_PONTO;
+      const distancia = viagem(pontos);
+      alvoCanto = 0;
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
@@ -1200,18 +1389,20 @@ function criarCena(telaPixel, telaTexto, raiz) {
         para: camera.para,
         inicio: agora,
         surgir: 120 + 400 * (1 - peso), // as óbvias aparecem um pouco mais devagar
-        angulo: (Math.random() - 0.5) * 0.08,
         brilho: 6 + 18 * peso,
         satelites: faixa.id === "obvia" ? 6 : faixa.id === "comum" ? 3 : 0,
+        peso: supernova ? 1.2 : peso,
+        supernova,
+        angulo: (Math.random() - 0.5) * 0.4, // entra torta e endireita
       });
       mascote.pulo = 6 + 10 * peso;
-      tremer(2 + 16 * peso + (supernova ? 12 : 0), 300 + 1000 * peso);
-      if (supernova) flash = 0.85;
+      tremer(2 + 6 * peso, 300 + 600 * peso); // o tremor grande vem na chegada
     },
     tremer,
     // Tela final: some com as caixinhas e as linhas das faixas.
     limpar() {
       caixas.length = 0;
+      alvoCanto = 0;
       mostrarLinhas = false;
     },
     // Coloca a câmera numa profundidade sem animação (ao retomar o dia).

@@ -3,7 +3,7 @@
 // Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
 // Acertar a "supernova" (a resposta secreta da pergunta) dobra os pontos.
 // Vem de outros arquivos: window.NICHO_DADOS (dados.js), Som (som.js),
-// criarCena, faixaDe, FAIXAS, AL_POR_PONTO, DURACAO_DESCIDA (cena.js).
+// criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
 
 const RODADAS_POR_DIA = 7;
 const SEGUNDOS = 25;
@@ -179,7 +179,7 @@ function iniciar() {
     estado.historico = salvo.historico;
     estado.total = estado.totalMostrado = salvo.total;
     estado.rodada = salvo.historico.length;
-    cena.irPara(estado.total * AL_POR_PONTO);
+    cena.irPara(profundidade());
     $("pontos").textContent = numero(estado.total);
   }
   montarQuadrados();
@@ -193,6 +193,16 @@ function iniciar() {
     $("comecar").textContent = "▼ CONTINUAR VIAGEM ▼";
     document.querySelector("#inicio [data-zerar]").hidden = false;
   }
+}
+
+// profundidade total do dia: soma da viagem de cada resposta
+function profundidade() {
+  return estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
+}
+
+function mostrarPergunta(ligada) {
+  $("cartao-pergunta").hidden = !ligada;
+  $("painel-resposta").hidden = !ligada;
 }
 
 function montarQuadrados() {
@@ -229,7 +239,7 @@ function iniciarRodada() {
   $("sugestao").hidden = true;
   avisar("", "");
   $("palpite").value = "";
-  $("cartao-pergunta").hidden = false;
+  mostrarPergunta(true);
 
   // contagem antes do relógio, para dar tempo de ler
   let n = 3;
@@ -336,18 +346,11 @@ function desenharRadar(fracao, urgente) {
     c.fillRect(m + Math.cos(ang) * dist * 24 - 1, m + Math.sin(ang) * dist * 24 - 1, 2, 2);
   }
   c.restore();
-  // planeta no centro, com sombra e anel
-  const planeta = c.createRadialGradient(m - 2, m - 2, 0.5, m, m, 5);
-  planeta.addColorStop(0, "#fff0a0");
-  planeta.addColorStop(1, urgente ? "#c0203a" : "#e08a00");
-  c.fillStyle = planeta;
+  // miolo escuro: o número do tempo fica em cima
+  c.fillStyle = "rgba(5, 3, 24, 0.85)";
   c.beginPath();
-  c.arc(m, m, 4.5, 0, Math.PI * 2);
+  c.arc(m, m, 13, 0, Math.PI * 2);
   c.fill();
-  c.strokeStyle = "rgba(255, 230, 160, 0.7)";
-  c.beginPath();
-  c.ellipse(m, m, 8, 2.2, -0.35, 0, Math.PI * 2);
-  c.stroke();
   // lua na ponta do feixe
   c.fillStyle = "#ffffff";
   c.beginPath();
@@ -442,17 +445,19 @@ function palpitar(evento) {
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
   const percentil = cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   cena.descer(achada.resposta, pontos, supernova);
   Som.descer(Math.min(1, pontos / 100));
   registrar(cat, achada.resposta, pontos, supernova, percentil);
-  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), DURACAO_DESCIDA + 200);
+  // nas raras, a festa da chegada aparece sozinha antes do resultado
+  const pausa = supernova || pontos >= 50 ? 900 : pontos >= 20 ? 600 : 200;
+  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), DURACAO_DESCIDA + pausa);
 }
 
 function tempoEsgotado() {
   pararRelogio();
   const cat = estado.categorias[estado.rodada];
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   Som.erro();
   registrar(cat, null, 0, false, 0);
   mostrarResultado(cat, null, 0, false);
@@ -474,7 +479,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   $("nome-faixa").textContent = faixa.nome;
   $("palavra").textContent = resposta ? `“${resposta}”` : "";
   $("linha-pontos").innerHTML = resposta
-    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(pontos * AL_POR_PONTO)} AL`
+    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(viagem(pontos))} AL`
     : "+0 PONTOS";
   $("frase").textContent = faixa.frase;
 
@@ -489,12 +494,29 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
     li.append(extra);
     $("mais-nichadas").append(li);
   }
+  // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
+  const nivel = !resposta ? 0 : supernova ? 4 : ["obvia", "comum", "incomum", "rara", "lendaria"].indexOf(faixa.id);
+  const nome = $("nome-faixa");
+  nome.className = "";
+  void nome.offsetWidth;
+  nome.className = `pop nivel-${Math.max(0, nivel)}`;
+  const alvo = $("linha-pontos").querySelector("b");
+  if (alvo && pontos > 0) {
+    const inicio = performance.now();
+    const dura = 300 + Math.min(900, pontos * 8);
+    const contar = (agora) => {
+      const t = Math.min(1, (agora - inicio) / dura);
+      alvo.textContent = `+${Math.round(pontos * (1 - Math.pow(1 - t, 3)))} PONTOS`;
+      if (t < 1) requestAnimationFrame(contar);
+    };
+    requestAnimationFrame(contar);
+  }
   const ultima = estado.rodada + 1 >= estado.categorias.length;
   $("proxima").textContent = ultima ? "VER RESULTADO ▼" : "VIAJAR ▼";
   card.hidden = false;
   if (supernova) Som.supernova();
   else if (resposta) Som.faixa(FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
-  Som.profundidade(estado.total * AL_POR_PONTO);
+  Som.profundidade(profundidade());
   montarQuadrados();
   $("proxima").focus();
 }
@@ -514,19 +536,19 @@ function proxima() {
 function mostrarFim(comSom) {
   if (comSom) Som.fim();
   cena.limpar();
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   $("fim").hidden = false;
   montarQuadrados();
   $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
   $("fim-pontos").textContent = numero(estado.total);
-  $("fim-profundidade").textContent = `↓ ${numero(estado.total * AL_POR_PONTO)} AL de profundidade`;
+  $("fim-profundidade").textContent = `↓ ${numero(profundidade())} AL de profundidade`;
   const media = estado.historico.reduce((s, h) => s + (h.percentil || 0), 0) / Math.max(1, estado.historico.length);
   $("fim-comparacao").textContent = `Suas respostas foram mais nichadas que ${Math.round(media * 100)}% das respostas possíveis.`;
   montarGrafico();
 
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(estado.total * AL_POR_PONTO)} AL 🧑‍🚀`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(profundidade())} AL 🐻`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }

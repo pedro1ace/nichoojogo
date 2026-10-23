@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Nicho</title>
-  <meta name="description" content="Jogo diário de palavras: quanto mais nichada a resposta, mais longe seu astronauta viaja no espaço.">
+  <meta name="description" content="Jogo diário de palavras: quanto mais nichada a resposta, mais longe seu tardígrado viaja no espaço.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -52,17 +52,22 @@
       <p id="rotulo-pergunta" class="rotulo rosa"></p>
       <h2 id="pergunta"></h2>
       <p class="dica">▼ quanto mais rara, mais fundo ▼</p>
-      <form id="formulario" autocomplete="off" hidden>
-        <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
-               autocapitalize="off" autocorrect="off" spellcheck="false">
-        <button type="submit">LANÇAR</button>
-      </form>
-      <button id="sugestao" type="button" hidden></button>
-      <p id="mensagem" role="status"></p>
+    </section>
+
+    <section id="painel-resposta" class="painel-resposta" hidden>
       <div id="relogio" hidden>
         <canvas id="radar" aria-hidden="true"></canvas>
         <span id="tempo">25</span>
+      </div>
+      <div class="coluna-resposta">
+        <form id="formulario" autocomplete="off" hidden>
+          <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
+                 autocapitalize="off" autocorrect="off" spellcheck="false">
+          <button type="submit">LANÇAR</button>
+        </form>
         <div class="trilho"><div id="barra-tempo"></div></div>
+        <button id="sugestao" type="button" hidden></button>
+        <p id="mensagem" role="status"></p>
       </div>
     </section>
 
@@ -101,6 +106,7 @@
   </div>
   <script src="dados.js"></script>
   <script src="som.js"></script>
+  <script src="mascote.js"></script>
   <script src="cena.js"></script>
   <script src="jogo.js"></script>
 </body>
