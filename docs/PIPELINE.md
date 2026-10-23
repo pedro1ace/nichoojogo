@@ -56,6 +56,8 @@ Seguimos o mesmo método do Krillion:
 
 ## Etapa 4: Lançamento
 
+- [ ] Tirar ou esconder o botão de modo teste ("jogar de novo") antes de publicar.
+
 - [ ] Nome e domínio definitivos.
 - [ ] Teste com amigos. O que todo mundo responde é óbvio por definição, então usar essas respostas para recalibrar os pesos.
 - [ ] Estatísticas anônimas das respostas (o que foi digitado e não foi aceito mostra o que falta nas listas).
