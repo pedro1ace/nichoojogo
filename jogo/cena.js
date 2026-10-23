@@ -72,11 +72,12 @@ const CURIOSIDADES = [
 
 // Cor do fundo por profundidade: céu claro perto da Terra, escurecendo até o preto.
 const PARADAS_FUNDO = [
-  [0, [190, 230, 255]],
-  [35, [120, 188, 245]],
-  [80, [52, 104, 196]],
-  [130, [20, 32, 82]],
-  [190, [8, 9, 26]],
+  [0, [204, 238, 255]],
+  [90, [164, 216, 252]],
+  [170, [116, 176, 240]],
+  [250, [62, 104, 196]],
+  [320, [22, 30, 74]],
+  [400, [8, 8, 24]],
   [600, [6, 5, 17]],
   [4000, [5, 3, 14]],
   [12000, [2, 1, 6]],
@@ -434,7 +435,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     telaPixel.style.height = `${A * escala}px`;
     telaTexto.width = Math.round(innerWidth * dpr);
     telaTexto.height = Math.round(innerHeight * dpr);
-    focoY = Math.round(A * 0.36);
+    focoY = Math.round(A * 0.3);
     terra = desenharTerra(L, Math.round(A * 0.6));
     // planetas grandes, em escala com a tela (parte deles fica para fora)
     corpos = criarCorpos(Math.max(1.3, Math.min(3, L / 150)));
@@ -488,6 +489,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const c1 = empacotar(corDoFundo(base + FAIXA));
       const frac = (al - base) / FAIXA;
       const linha = y * L;
+      if (al < 380) {
+        // perto da Terra: degradê liso, cada linha com a cor exata
+        const c = empacotar(corDoFundo(al));
+        pixels.fill(c, linha, linha + L);
+        continue;
+      }
       const b = (y & 3) * 4;
       const padrao = [0, 1, 2, 3].map((i) => (frac > BAYER[b + i] ? c1 : c0));
       for (let x = 0; x < L; x++) pixels[linha + x] = padrao[x & 3];
@@ -497,7 +504,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   // Raios de luz vindos da Terra, que somem conforme você se afasta.
   function desenharRaios() {
-    const forca = Math.max(0, 1 - camera.atual / 2500);
+    const forca = Math.max(0, 1 - camera.atual / 600);
     if (forca <= 0) return;
     for (let i = 0; i < 5; i++) {
       const base = (sorte(i, 11) * 1.4 - 0.2) * L + Math.sin(tempo * 0.3 + i) * 6;
@@ -521,9 +528,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   function desenharEstrelas() {
     const camadas = [
-      { f: 0.15, cor: "#5a4fb8", n: 7 },
-      { f: 0.35, cor: "#9a92ff", n: 5 },
-      { f: 0.7, cor: "#ffffff", n: 3 },
+      { f: 0.15, cor: "#5a4fb8", n: 3 },
+      { f: 0.35, cor: "#9a92ff", n: 3 },
+      { f: 0.7, cor: "#ffffff", n: 2 },
     ];
     const BLOCO = 40;
     camadas.forEach((c, ci) => {
@@ -879,14 +886,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // O astronauta desce sozinho, seguindo a câmera com uma mola suave.
-  const TAMANHO_ASTRONAUTA = 1.7;
+  const TAMANHO_ASTRONAUTA = 1.15;
   function desenharFoguete() {
     foguete.al += (camera.atual - foguete.al) * (1 - Math.exp(-dt * 7.5));
     foguete.al = Math.max(foguete.al, camera.atual - 50); // atrasa um pouco, mas nunca sai da tela
     const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3) * 2.5;
     const lado = reduzirMovimento ? 0 : Math.sin(tempo * 0.55) * 5;
     mascote.pulo *= Math.exp(-dt * 6);
-    foguete.x = L / 2 + 44 + lado;
+    foguete.x = Math.min(L - 16, L / 2 + Math.max(60, L * 0.22)) + lado;
     foguete.y = naTelaExata(foguete.al) - 6 + balanco - mascote.pulo;
     const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.12 + Math.min(0.25, camera.velocidade / 4000);
     tx.save();
@@ -913,7 +920,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const W = innerWidth;
     const H = innerHeight;
     const escuro = escuridao(camera.atual);
-    const claro = camera.atual < 110; // céu claro perto da Terra: texto escuro
+    const claro = camera.atual < 230; // céu claro perto da Terra: texto escuro
     const corSuave = claro ? "#0d1a4a" : "rgba(215, 222, 250, 0.82)";
     const contorno = claro ? "rgba(255, 255, 255, 0.55)" : "rgba(0, 0, 8, 0.85)";
     // escreve com um contorno da cor oposta: dá para ler em qualquer fundo
@@ -929,7 +936,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const centro1 = W * 0.84;
 
     // régua da direita
-    tx.font = "13px Tiny5, monospace";
+    tx.font = "13px 'Space Mono', monospace";
     tx.textAlign = "right";
     tx.textBaseline = "middle";
     const alTopo = camera.atual - focoY / PX_POR_AL;
@@ -943,19 +950,21 @@ function criarCena(telaPixel, telaTexto, raiz) {
       if (grande) escrever(`${al.toLocaleString("pt-BR")} AL`, W - 26, y, corSuave);
     }
 
-    // marcos e curiosidades
+    // marcos e curiosidades (escondidos na tela de início, para não brigar com o título)
+    const noInicio = document.getElementById("inicio")?.hidden === false;
     tx.textAlign = "left";
-    for (const m of MARCOS) {
+    for (const m of noInicio ? [] : MARCOS) {
       const y = naTelaTexto(m.al);
       if (y < -20 || y > H + 20) continue;
       linhaTracejada(y, centro0, centro1, "#ffd23f", 0.45);
-      tx.font = "16px Tiny5, monospace";
+      tx.font = "16px 'Space Mono', monospace";
       escrever(`${m.al.toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12, claro ? "#7a4a00" : "#ffd23f");
     }
     // onde estão as linhas das faixas agora (para a curiosidade não ficar por cima)
     const linhasY = mostrarLinhas ? FAIXAS.filter((f) => f.min).map((f) => naTelaTexto(rodadaAl + f.min * AL_POR_PONTO)) : [];
-    tx.font = `${W < 560 ? 13 : 15}px Tiny5, monospace`;
+    tx.font = `${W < 560 ? 13 : 15}px 'Space Mono', monospace`;
     CURIOSIDADES.forEach(([al, texto], i) => {
+      if (noInicio) return;
       const y = naTelaTexto(al);
       if (y < -30 || y > H + 30) return;
       if (linhasY.some((ly) => Math.abs(ly - 10 - y) < 22)) return;
@@ -980,7 +989,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // linhas das faixas: até onde cada faixa de raridade levaria nesta pergunta
     if (mostrarLinhas) {
       tx.textAlign = "right";
-      tx.font = "14px Tiny5, monospace";
+      tx.font = "14px 'Space Mono', monospace";
       for (const f of FAIXAS) {
         if (!f.min) continue;
         const y = naTelaTexto(rodadaAl + f.min * AL_POR_PONTO);
@@ -1031,7 +1040,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       }
       const texto = `“${c.texto}”`;
       const pequena = W < 560;
-      tx.font = `${pequena ? 24 : 30}px Tiny5, monospace`;
+      tx.font = `${pequena ? 24 : 30}px 'Space Mono', monospace`;
       const w = Math.ceil(tx.measureText(texto).width) + (pequena ? 32 : 44);
       const h = pequena ? 48 : 58;
       // no centro da tela, sem encostar no astronauta (que fica à direita)
@@ -1096,7 +1105,6 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.clearRect(0, 0, innerWidth, innerHeight);
     desenharEstrelas();
     desenharCadentes();
-    desenharPoeira();
     desenharLaterais();
     desenharISS();
     desenharHalos();

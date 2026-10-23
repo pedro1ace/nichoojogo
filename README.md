@@ -14,7 +14,7 @@ Design: 2D, sprites em pixel art, chamativo.
 Como funciona hoje no protótipo:
 
 - Até 7 perguntas por dia, as mesmas para todo mundo, com **25 segundos** cada (o relógio começa depois de uma contagem de 3).
-- A viagem começa na Terra, com o céu claro. Cada resposta faz o foguete descer `pontos × 10` anos-luz,
+- A viagem começa na Terra, com o céu claro. Cada resposta faz o astronauta viajar `pontos × 10` anos-luz,
   sempre no mesmo tempo: as raras descem rápido e as óbvias quase não saem do lugar. Um astronautinha acompanha.
 - No caminho: marcos (Lua, Marte, Júpiter... buraco negro), curiosidades nas laterais, régua de profundidade
   e linhas mostrando até onde cada faixa de raridade levaria nesta pergunta.

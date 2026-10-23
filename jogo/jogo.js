@@ -104,12 +104,12 @@ function numeroDoDia(data) {
 // Se o armazenamento estiver bloqueado, o jogo funciona igual, só não lembra.
 function salvarProgresso() {
   try {
-    localStorage.setItem(`nicho:${estado.data}`, JSON.stringify({ historico: estado.historico, total: estado.total }));
+    localStorage.setItem(`nicho:v7:${estado.data}`, JSON.stringify({ historico: estado.historico, total: estado.total }));
   } catch {}
 }
 function lerProgresso() {
   try {
-    return JSON.parse(localStorage.getItem(`nicho:${estado.data}`) || "null");
+    return JSON.parse(localStorage.getItem(`nicho:v7:${estado.data}`) || "null");
   } catch {
     return null;
   }
@@ -169,7 +169,7 @@ function iniciar() {
     s.setAttribute("aria-hidden", "true");
     titulo.append(s);
   });
-  $("regras").textContent = `${estado.categorias.length} perguntas · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
+  $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
   $("dia").textContent = `DIA #${numeroDoDia(estado.data)}`;
   $("fim-dia").textContent = `DIA #${numeroDoDia(estado.data)}`;
   $("som").classList.toggle("mudo", Som.estaMudo());
@@ -190,7 +190,7 @@ function iniciar() {
     return;
   }
   if (estado.rodada > 0) {
-    $("comecar").textContent = "▼ CONTINUAR DESCIDA ▼";
+    $("comecar").textContent = "▼ CONTINUAR VIAGEM ▼";
     document.querySelector("#inicio [data-zerar]").hidden = false;
   }
 }
@@ -206,7 +206,7 @@ function montarQuadrados() {
     caixa.append(q);
   });
   const n = Math.min(estado.rodada + 1, estado.categorias.length);
-  $("rotulo-rodada").textContent = `PERGUNTA ${n} DE ${estado.categorias.length}`;
+  $("rotulo-rodada").textContent = `INCURSÃO ${n} DE ${estado.categorias.length}`;
 }
 
 function comecar() {
@@ -222,7 +222,7 @@ function iniciarRodada() {
   const cat = estado.categorias[estado.rodada];
   cena.novaRodada();
   montarQuadrados();
-  $("rotulo-pergunta").textContent = `· PERGUNTA ${estado.rodada + 1} DE ${estado.categorias.length}`;
+  $("rotulo-pergunta").textContent = `INCURSÃO ${estado.rodada + 1} DE ${estado.categorias.length}`;
   $("pergunta").textContent = cat.pergunta || cat.titulo;
   $("formulario").hidden = true;
   $("relogio").hidden = true;
@@ -239,7 +239,7 @@ function iniciarRodada() {
       abrirRelogio();
       return;
     }
-    $("aviso").innerHTML = `descendo · o relógio começa em <b>${n}</b>`;
+    $("aviso").innerHTML = `preparando a incursão · o relógio começa em <b>${n}</b>`;
     $("aviso").hidden = false;
     Som.contagem(false);
     n--;
@@ -474,7 +474,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   $("nome-faixa").textContent = faixa.nome;
   $("palavra").textContent = resposta ? `“${resposta}”` : "";
   $("linha-pontos").innerHTML = resposta
-    ? `<b>+${pontos} PONTOS</b> · desceu ${numero(pontos * AL_POR_PONTO)} AL`
+    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(pontos * AL_POR_PONTO)} AL`
     : "+0 PONTOS";
   $("frase").textContent = faixa.frase;
 
@@ -490,7 +490,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
     $("mais-nichadas").append(li);
   }
   const ultima = estado.rodada + 1 >= estado.categorias.length;
-  $("proxima").textContent = ultima ? "VER RESULTADO ▼" : "DESCER ▼";
+  $("proxima").textContent = ultima ? "VER RESULTADO ▼" : "VIAJAR ▼";
   card.hidden = false;
   if (supernova) Som.supernova();
   else if (resposta) Som.faixa(FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
@@ -623,7 +623,7 @@ $("som").addEventListener("click", () => {
 // (Tirar antes do lançamento, ou deixar só para quem desenvolve.)
 function zerarDia() {
   try {
-    localStorage.removeItem(`nicho:${estado.data}`);
+    localStorage.removeItem(`nicho:v7:${estado.data}`);
   } catch {}
   location.reload();
 }
