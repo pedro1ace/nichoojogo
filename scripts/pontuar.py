@@ -13,6 +13,7 @@ Saída:
     dados/pesos/<cat>.json          o que o jogo carrega
     dados/pesos/revisao/<cat>.csv   tabela para revisar à mão
     dados/pesos/indice.json         lista de categorias prontas
+    jogo/dados.js e jogar.html      atualizados no fim (scripts/montar_jogo.py)
 
 Como o peso é calculado (0 a 1, onde 1 = muito nichado):
     1. ICF da resposta: quanto maior, mais rara a palavra no português em geral.
@@ -216,6 +217,12 @@ def main() -> None:
         dados = json.loads(j.read_text(encoding="utf-8"))
         indice.append({"id": dados["id"], "titulo": dados["titulo"], "pergunta": dados["pergunta"]})
     (SAIDA / "indice.json").write_text(json.dumps(indice, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+    # atualiza jogo/dados.js e jogar.html com os pesos novos
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import montar_jogo
+
+    montar_jogo.main()
 
 
 if __name__ == "__main__":

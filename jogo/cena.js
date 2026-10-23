@@ -122,7 +122,7 @@ function desenharTexto(ctx, texto, x, y, cor) {
   });
 }
 
-export function criarCena(canvas) {
+function criarCena(canvas) {
   canvas.width = LARGURA;
   canvas.height = ALTURA;
   const ctx = canvas.getContext("2d");
@@ -186,7 +186,7 @@ export function criarCena(canvas) {
   };
 }
 
-export function faixa(pontos, supernova) {
+function faixa(pontos, supernova) {
   if (supernova) return "supernova";
   if (pontos >= 50) return "planeta";
   if (pontos >= 15) return "lua";

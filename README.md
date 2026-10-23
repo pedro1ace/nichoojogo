@@ -20,19 +20,22 @@ Como funciona hoje no protótipo:
 - Faixas de pontos com sprite próprio: 🛰️ satélite (até 14), 🌙 lua (15 a 49), 🪐 planeta (50+), 🌟 supernova.
 - No fim, um resultado em emoji para colar no grupo. O progresso do dia fica salvo no navegador.
 
-## Como rodar
+## Como jogar
 
-Precisa só de Python 3 (sem dependências) e um navegador.
+Baixe o arquivo [`jogar.html`](jogar.html) e abra com dois cliques. Ele tem o jogo inteiro e funciona sem
+instalar nada (só precisa de internet para as fontes pixeladas; sem internet aparece uma fonte comum).
+
+Com o projeto todo baixado, abrir `index.html` ou `jogo/index.html` com dois cliques também funciona.
+
+## Como atualizar as perguntas
+
+Precisa de Python 3 (sem dependências).
 
 ```bash
 ./scripts/baixar_dados.sh          # baixa a base de palavras (fica fora do git)
 python3 scripts/importar_listas.py # cria categorias a partir das listas prontas da base
-python3 scripts/pontuar.py         # calcula o peso de nicho de cada resposta
-python3 -m http.server 8000        # sirva a pasta do projeto
+python3 scripts/pontuar.py         # calcula os pesos e atualiza jogo/dados.js e jogar.html
 ```
-
-Abra <http://localhost:8000/jogo/>. O jogo precisa ser servido por HTTP (abrir o arquivo direto não funciona,
-porque ele carrega os JSON com `fetch`).
 
 ## Estrutura
 
@@ -47,7 +50,10 @@ scripts/
   baixar_dados.sh          baixa a base fserb/pt-br
   importar_listas.py       transforma listas da base em categorias
   pontuar.py               calcula os pesos de nicho
-jogo/                      protótipo do jogo (HTML + CSS + JS puro, sem build)
+  montar_jogo.py           gera jogo/dados.js e jogar.html
+jogar.html                 o jogo num arquivo só (gerado, não edite à mão)
+jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
+  dados.js                 perguntas e pesos (gerado pelo pontuar.py)
   cena.js                  sprites em pixel art e animação do foguete
   jogo.js                  regras, rodada diária, salvar e compartilhar
 docs/PIPELINE.md           etapas do projeto e próximos passos

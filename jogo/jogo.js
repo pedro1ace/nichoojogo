@@ -2,9 +2,8 @@
 // Cada rodada mostra uma pergunta-tema; o jogador dá UMA resposta válida.
 // Quanto mais nichada a resposta, mais anos-luz ela vale.
 // Acertar a "supernova" (a resposta secreta da pergunta) dobra os pontos.
-import { criarCena, faixa } from "./cena.js";
+// criarCena e faixa vêm de cena.js; as perguntas vêm de dados.js (window.NICHO_DADOS).
 
-const DADOS = "../dados/pesos/";
 const RODADAS_POR_DIA = 7;
 const TENTATIVAS = 3;
 const ICONES = { satelite: "🛰️", lua: "🌙", planeta: "🪐", supernova: "🌟", nada: "⚫" };
@@ -71,19 +70,14 @@ const estado = {
   historico: [], // { categoria, resposta, pontos, supernova }
 };
 
-async function iniciar() {
-  try {
-    const indice = await (await fetch(DADOS + "indice.json")).json();
-    const escolhidas = embaralhar(indice, geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
-    estado.categorias = await Promise.all(
-      escolhidas.map(async (c) => prepararCategoria(await (await fetch(DADOS + c.id + ".json")).json()))
-    );
-  } catch (erro) {
-    $("carregando").textContent =
-      "Não consegui carregar as perguntas. Rode o jogo por um servidor (veja o README).";
-    console.error(erro);
+function iniciar() {
+  const dados = window.NICHO_DADOS;
+  if (!dados) {
+    $("carregando").textContent = "Não achei as perguntas (jogo/dados.js). Rode python3 scripts/pontuar.py.";
     return;
   }
+  const escolhidas = embaralhar(dados.indice, geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
+  estado.categorias = escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
   $("carregando").hidden = true;
 
   const salvo = lerProgresso();
