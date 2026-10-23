@@ -473,7 +473,7 @@ function registrar(cat, resposta, pontos, supernova, percentil) {
 function mostrarResultado(cat, resposta, pontos, supernova) {
   const faixa = resposta
     ? faixaDe(pontos, supernova)
-    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#9aa3c7", frase: "O relógio zerou. Esta fica sem pontos." };
+    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: "O relógio zerou. Esta fica sem pontos." };
   const card = $("resultado");
   card.style.setProperty("--cor-faixa", faixa.cor);
   $("icone").src = cena.icones[faixa.id];
@@ -569,7 +569,7 @@ function montarGrafico() {
     g.append(e);
   });
   estado.historico.forEach((h, i) => {
-    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#5a5490" };
+    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#ff6b81" };
     const col = document.createElement("div");
     col.className = "coluna";
     col.style.color = faixa.cor;

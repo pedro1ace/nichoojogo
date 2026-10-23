@@ -89,10 +89,10 @@ const CURIOSIDADES = [
 
 // Cor do fundo por profundidade: céu claro perto da Terra, escurecendo até o preto.
 const PARADAS_FUNDO = [
-  [0, [204, 238, 255]],
-  [90, [164, 216, 252]],
-  [170, [116, 176, 240]],
-  [250, [62, 104, 196]],
+  [0, [92, 160, 232]],
+  [90, [66, 128, 214]],
+  [170, [44, 92, 186]],
+  [250, [28, 56, 140]],
   [320, [22, 30, 74]],
   [400, [8, 8, 24]],
   [600, [6, 5, 17]],
@@ -293,7 +293,7 @@ function criarIcones() {
   };
   // cada faixa num tom só (escuro, médio, a cor, e um brilho claro): simples, sem confusão de cores.
   // A supernova fica colorida de propósito.
-  const MONO = { obvia: "#e8f0ff", comum: "#5fe1ff", incomum: "#ffd23f", rara: "#c38bff" };
+  const MONO = { obvia: "#e8f0ff", comum: "#5fe1ff", incomum: "#ffd23f", rara: "#c38bff", nada: "#ff6b81" };
   function pintarDeUmaCor(ctx, hex) {
     const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
     const mistura = (k, alvo) => c.map((v) => Math.round(v + (alvo - v) * k));
@@ -373,7 +373,27 @@ function criarIcones() {
       ctx.fillRect(x, y, 1, 1);
     }
   });
-  fazer("nada", (ctx) => esfera(ctx, 12, 12, 6, ["#1a1440", "#2a2458", "#3a3470"]));
+  fazer("nada", (ctx) => {
+    // relógio de bolso: aro, mostrador, ponteiros e o botão de cima
+    for (let dy = -9; dy <= 9; dy++) {
+      for (let dx = -9; dx <= 9; dx++) {
+        const d = Math.hypot(dx, dy);
+        if (d > 9.4) continue;
+        ctx.fillStyle = d > 8 ? "#140f36" : d > 6.8 ? (dx + dy < 0 ? "#ffe680" : "#e0a020") : dx + dy < -6 ? "#ffffff" : "#e8ecff";
+        ctx.fillRect(12 + dx, 13 + dy, 1, 1);
+      }
+    }
+    ctx.fillStyle = "#140f36";
+    ctx.fillRect(11, 1, 3, 3);
+    ctx.fillRect(12, 7, 1, 7); // ponteiro dos minutos
+    ctx.fillRect(12, 13, 4, 1); // ponteiro das horas
+    ctx.fillStyle = "#ff3d6e";
+    ctx.fillRect(12, 13, 1, 1);
+    for (const [x, y] of [[12, 6], [19, 13], [12, 20], [5, 13]]) {
+      ctx.fillStyle = "#6b7088";
+      ctx.fillRect(x, y, 1, 1);
+    }
+  });
   return icones;
 }
 
@@ -1010,7 +1030,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const W = innerWidth;
     const H = innerHeight;
     const escuro = escuridao(camera.atual);
-    const claro = camera.atual < 230; // céu claro perto da Terra: texto escuro
+    const claro = false; // o céu do início é azul médio: texto claro com contorno escuro serve em todo lugar
     const corSuave = claro ? "#0d1a4a" : "rgba(215, 222, 250, 0.82)";
     const contorno = claro ? "rgba(255, 255, 255, 0.55)" : "rgba(0, 0, 8, 0.85)";
     // escreve com um contorno da cor oposta: dá para ler em qualquer fundo
@@ -1053,6 +1073,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       linhaTracejada(y, centro0, centro1, "#ffd23f", 0.16 + 0.5 * k);
       tx.font = "16px 'Space Mono', monospace";
       tx.globalAlpha = 0.38 + 0.62 * k;
+      if (cobertas.some(([a, b]) => y - 12 > a && y - 12 < b)) tx.globalAlpha = 0;
       if (k > 0.05 && !claro) { tx.shadowColor = "#ffd23f"; tx.shadowBlur = 12 * k; }
       escrever(`${m.al.toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12, claro ? "#7a4a00" : "#ffd23f");
       tx.shadowBlur = 0;
@@ -1128,7 +1149,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
           escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
           tx.font = "14px 'Space Mono', monospace";
         } else {
-          linhaTracejada(y, centro0, centro1, f.cor, 0.45);
+          linhaTracejada(y, centro0, centro1, f.cor, 0.75);
+          tx.font = "bold 15px 'Space Mono', monospace";
           escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
         }
       }
