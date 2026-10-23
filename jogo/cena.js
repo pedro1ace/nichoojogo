@@ -425,6 +425,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let larguraCaixa = 200;
   let cobertas = [];
   let alfaCurio = 1;
+  let fimDeJogo = false; // na tela final as curiosidades somem
   const rastro = [];
   const caixas = [];
   const mascote = { x: 0, y: 0, pulo: 0, virar: 1 };
@@ -482,7 +483,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   };
 
   function atualizarCamera(agora) {
-    const t = Math.min(1, (agora - camera.inicio) / DURACAO_DESCIDA);
+    const t = Math.min(1, (agora - camera.inicio) / (camera.dura || DURACAO_DESCIDA));
     const nova = camera.de + (camera.para - camera.de) * suave(t);
     const dt = Math.max(1, agora - anterior) / 1000;
     camera.velocidade = (nova - camera.atual) / dt;
@@ -951,7 +952,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const feliz = agoraS < felizAte;
     const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
     const piscando = !feliz && tempo % 3.7 < 0.13;
-    const img = piscando ? tardigrado.piscar : (feliz ? tardigrado.feliz : tardigrado.andar)[ciclo];
+    const pele = mascote.dourado ? tardigrado.dourado : tardigrado;
+    const img = piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
     // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
     const pz = Math.max(2, Math.round(escala * 0.5));
     // "respira": estica e encolhe de leve
@@ -961,11 +963,19 @@ function criarCena(telaPixel, telaTexto, raiz) {
     mascote.virar += (alvoVirar - mascote.virar) * (1 - Math.exp(-dt * 8));
     const sx = foguete.x * escala, sy = foguete.y * escala;
     // brilho quente em volta, que mistura o bicho com o cenário (sem contorno)
-    const rb = img.width * pz * 0.85;
+    // na hora em que vira dourado: um clarão que se espalha e some em ~2 s
+    const festa = mascote.festaOuro ? Math.max(0, 1 - (performance.now() - mascote.festaOuro) / 2200) : 0;
+    const rb = img.width * pz * (0.85 + festa * 1.6);
     const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
-    halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
-    halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
-    halo.addColorStop(1, "rgba(255, 110, 40, 0)");
+    if (mascote.dourado) {
+      halo.addColorStop(0, `rgba(255, 220, 110, ${0.34 + festa * 0.5})`);
+      halo.addColorStop(0.45, `rgba(255, 190, 70, ${0.14 + festa * 0.25})`);
+      halo.addColorStop(1, "rgba(255, 170, 40, 0)");
+    } else {
+      halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
+      halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
+      halo.addColorStop(1, "rgba(255, 110, 40, 0)");
+    }
     tx.save();
     tx.globalCompositeOperation = "lighter";
     tx.fillStyle = halo;
@@ -976,7 +986,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.translate(sx, sy);
     tx.rotate(inclina * Math.sign(mascote.virar || 1));
     tx.scale(mascote.virar / resp, resp);
-    tx.shadowColor = "rgba(255, 140, 60, 0.75)";
+    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : "rgba(255, 140, 60, 0.75)";
     tx.shadowBlur = pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
@@ -1048,7 +1058,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         .map((el) => { const r = el.getBoundingClientRect(); return [r.top - 14, r.bottom + 14]; });
     }
     // enquanto você digita, as curiosidades somem devagar: só a pergunta e o campo na tela
-    alfaCurio += ((alvoCanto ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
+    alfaCurio += ((alvoCanto || fimDeJogo ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
     tx.globalAlpha = alfaCurio;
     CURIOSIDADES.forEach(([al, texto], i) => {
       if (noInicio || alfaCurio < 0.02) return;
@@ -1439,6 +1449,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
+      camera.dura = DURACAO_DESCIDA;
       // a caixa anterior some (não ficam umas por cima das outras)
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       caixas.push({
@@ -1458,8 +1469,24 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tremer(2 + 6 * peso, 300 + 600 * peso); // o tremor grande vem na chegada
     },
     tremer,
+    // Fim da viagem: o cenário volta devagar até a Terra.
+    subir(dura) {
+      for (const antiga of caixas) if (!antiga.saida) antiga.saida = performance.now();
+      alvoCanto = 0;
+      mostrarLinhas = false;
+      camera.de = camera.atual;
+      camera.para = 0;
+      camera.inicio = performance.now();
+      camera.dura = dura;
+    },
+    // Tardígrado dourado (supernova): com festa só na hora em que acontece.
+    dourado(festa) {
+      mascote.dourado = true;
+      if (festa) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
+    },
     // Tela final: some com as caixinhas e as linhas das faixas.
     limpar() {
+      fimDeJogo = true;
       caixas.length = 0;
       alvoCanto = 0;
       mostrarLinhas = false;

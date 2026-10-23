@@ -235,7 +235,8 @@ form button {
 .cartao-resultado .botao-grande { min-width: min(320px, 100%); }
 
 /* ---------- fim ---------- */
-#fim { position: absolute; z-index: 2; inset: 0; overflow-y: auto; background: rgba(3, 1, 14, 0.55); }
+#fim { position: absolute; z-index: 2; inset: 0; overflow-y: auto; background: linear-gradient(rgba(3, 1, 14, 0.62), rgba(3, 1, 14, 0.84) 45%, rgba(3, 1, 14, 0.92)); animation: aparecer-fim 1.2s ease-out; }
+@keyframes aparecer-fim { from { opacity: 0; } }
 .fim-conteudo {
   max-width: 620px; margin: 0 auto; text-align: center;
   padding: max(80px, calc(env(safe-area-inset-top) + 72px)) max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left));
@@ -244,7 +245,44 @@ form button {
 #fim-pontos { font-family: var(--titulo); font-size: clamp(56px, 14vw, 104px); margin: 8px 0 0; color: var(--texto); text-shadow: 4px 4px 0 var(--rosa); }
 #fim-profundidade { font-family: var(--titulo); font-size: 16px; margin: 0; }
 #fim-comparacao { font-family: var(--mono); font-size: 20px; letter-spacing: 1px; color: var(--ciano); margin: 4px 0 8px; }
-.diario { background: var(--painel); clip-path: var(--recorte); padding: 14px 16px; text-align: left; }
+.secao { text-align: left; padding: 14px 0 6px; }
+.secao > .rotulo { display: flex; align-items: center; gap: 10px; margin: 0 0 6px; }
+.secao > .rotulo::after { content: ""; flex: 1; border-top: 1px dashed rgba(154, 163, 199, 0.3); }
+.diario { padding-left: 4px; padding-right: 4px; }
+#tabela-faixas, #respostas-dia { list-style: none; margin: 0; padding: 0; }
+#tabela-faixas li { display: grid; grid-template-columns: 34px 92px 1fr; align-items: center; gap: 10px; padding: 9px 4px; border-bottom: 1px solid rgba(154, 163, 199, 0.12); color: var(--suave); font-size: 15px; }
+#tabela-faixas li img, #respostas-dia li img { width: 28px; height: 28px; image-rendering: pixelated; filter: drop-shadow(0 0 5px var(--c)); }
+#tabela-faixas .faixa-pts { color: var(--c); font-weight: 700; letter-spacing: 0.05em; }
+#tabela-faixas li.sua { color: var(--texto); font-weight: 700; }
+#tabela-faixas li:not(.sua) img { opacity: 0.55; }
+#respostas-dia li { display: grid; grid-template-columns: 22px 34px 1fr auto; align-items: center; gap: 4px 10px; padding: 12px 4px; border-bottom: 1px solid rgba(154, 163, 199, 0.12); }
+#respostas-dia .n { color: var(--suave); font-size: 14px; }
+#respostas-dia .cat { grid-column: 3 / -1; grid-row: 1; font-size: 12px; letter-spacing: 0.08em; color: var(--suave); text-transform: uppercase; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#respostas-dia .n, #respostas-dia img { grid-row: 1 / span 3; }
+#respostas-dia .resp { grid-column: 3; font-weight: 700; font-size: 19px; color: var(--texto); }
+#respostas-dia .pts { grid-column: 4; grid-row: 2; color: var(--c); font-weight: 700; }
+#respostas-dia .extra { grid-column: 3 / -1; font-size: 13px; color: var(--c); opacity: 0.85; }
+#respostas-dia li.vazia .resp { color: var(--suave); font-weight: 400; }
+#respostas-dia > li { cursor: pointer; transition: background 0.15s; }
+#respostas-dia > li:hover, #respostas-dia > li:focus-visible { background: rgba(160, 170, 255, 0.06); outline: none; }
+#respostas-dia .seta { grid-column: 4; grid-row: 1; justify-self: end; color: var(--suave); font-size: 13px; transition: transform 0.2s; }
+#respostas-dia li.aberta .seta { transform: rotate(180deg); }
+#respostas-dia li.vazia .seta { color: var(--suave); }
+.banco { grid-column: 1 / -1; margin-top: 10px; cursor: default; }
+.banco .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.banco .chips button { font: inherit; font-size: 13px; padding: 6px 10px; background: rgba(8, 6, 30, 0.7); color: var(--c); border: 1px solid rgba(154, 163, 199, 0.3); cursor: pointer; }
+.banco .chips button b { color: var(--suave); font-weight: 400; margin-left: 4px; }
+.banco .chips button.ativo { border-color: var(--c); box-shadow: 0 0 10px color-mix(in srgb, var(--c) 35%, transparent); }
+.banco input { width: 100%; box-sizing: border-box; font: inherit; font-size: 15px; padding: 9px 12px; background: rgba(8, 6, 30, 0.8); color: var(--texto); border: 1px solid rgba(154, 163, 199, 0.3); outline: none; }
+.banco input:focus { border-color: var(--ciano); }
+.banco ul { list-style: none; margin: 8px 0 0; padding: 0 6px 0 0; max-height: 300px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: rgba(154, 163, 199, 0.4) transparent; }
+#respostas-dia .banco li { cursor: default; background: none; display: grid; grid-template-columns: 22px 1fr auto; align-items: center; gap: 2px 10px; padding: 7px 2px; border-bottom: 1px solid rgba(154, 163, 199, 0.08); }
+#respostas-dia .banco li img { grid-row: 1;  width: 20px; height: 20px; image-rendering: pixelated; filter: drop-shadow(0 0 4px var(--c)); }
+#respostas-dia .banco .nome { color: var(--texto); font-size: 15px; }
+#respostas-dia .banco li.sua .nome { color: var(--c); font-weight: 700; }
+#respostas-dia .banco .pts { grid-column: 3; grid-row: 1; font-size: 14px; color: var(--c); font-size: 14px; font-weight: 700; }
+#respostas-dia .banco .nota { grid-column: 2 / -1; font-size: 13px; color: #d9a8f0; line-height: 1.4; }
+.rodape-banco { margin: 6px 0 0; font-size: 12px; color: var(--suave); }
 #grafico { position: relative; height: 220px; margin-top: 10px; display: flex; gap: 4px; padding-left: 34px; }
 #grafico .eixo { position: absolute; left: 0; right: 0; font-family: var(--mono); font-size: 14px; color: var(--suave); border-top: 1px dashed rgba(154, 163, 199, 0.3); }
 #grafico .coluna { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; }
@@ -394,9 +432,17 @@ pre {
         <p id="fim-pontos"></p>
         <p id="fim-profundidade" class="ciano"></p>
         <p id="fim-comparacao"></p>
-        <div class="diario">
+        <div class="diario secao">
           <p class="rotulo">DIÁRIO DE BORDO <span class="suave">· mais fundo = mais raro</span></p>
           <div id="grafico"></div>
+        </div>
+        <div class="secao">
+          <p class="rotulo">AS FAIXAS</p>
+          <ul id="tabela-faixas"></ul>
+        </div>
+        <div class="secao">
+          <p class="rotulo">SUAS RESPOSTAS</p>
+          <ol id="respostas-dia"></ol>
         </div>
         <pre id="compartilhar"></pre>
         <div class="botoes">
@@ -561,7 +607,10 @@ const Som = (() => {
 // quente em volta é desenhado na cena. Olha para a direita; a cena espelha.
 function criarTardigrado() {
   const LW = 28, LH = 16;
-  const TONS = ["#3a1a0c", "#663218", "#934d24", "#bd7036", "#dd9a5a", "#f0c08a"];
+  const MARROM = ["#3a1a0c", "#663218", "#934d24", "#bd7036", "#dd9a5a", "#f0c08a"];
+  // dourado: depois de achar uma supernova, ele fica assim pelo resto do dia
+  const OURO = ["#5a3a06", "#8f6410", "#c3921c", "#e8bd34", "#fbdc6a", "#fff4b8"];
+  let TONS = MARROM;
   const BAYER4 = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map((v) => (v + 0.5) / 16);
   const CORPO = { cx: 12.5, cy: 7.2, rx: 11, ry: 5.0 };
   const CABECA = { cx: 23, cy: 7.9, rx: 3.6, ry: 3.5 };
@@ -629,8 +678,15 @@ function criarTardigrado() {
     return c;
   }
 
-  const andar = [0, 1, 2, 3].map((i) => quadro((i / 4) * Math.PI * 2, false));
-  return { andar, feliz: andar, piscar: quadro(0, true), largura: LW, altura: LH };
+  const jogo = (tons) => {
+    TONS = tons;
+    const andar = [0, 1, 2, 3].map((i) => quadro((i / 4) * Math.PI * 2, false));
+    return { andar, feliz: andar, piscar: quadro(0, true) };
+  };
+  const normal = jogo(MARROM);
+  const dourado = jogo(OURO);
+  TONS = MARROM;
+  return { ...normal, dourado, largura: LW, altura: LH };
 }
 </script>
   <script>
@@ -1061,6 +1117,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let larguraCaixa = 200;
   let cobertas = [];
   let alfaCurio = 1;
+  let fimDeJogo = false; // na tela final as curiosidades somem
   const rastro = [];
   const caixas = [];
   const mascote = { x: 0, y: 0, pulo: 0, virar: 1 };
@@ -1118,7 +1175,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   };
 
   function atualizarCamera(agora) {
-    const t = Math.min(1, (agora - camera.inicio) / DURACAO_DESCIDA);
+    const t = Math.min(1, (agora - camera.inicio) / (camera.dura || DURACAO_DESCIDA));
     const nova = camera.de + (camera.para - camera.de) * suave(t);
     const dt = Math.max(1, agora - anterior) / 1000;
     camera.velocidade = (nova - camera.atual) / dt;
@@ -1587,7 +1644,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const feliz = agoraS < felizAte;
     const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
     const piscando = !feliz && tempo % 3.7 < 0.13;
-    const img = piscando ? tardigrado.piscar : (feliz ? tardigrado.feliz : tardigrado.andar)[ciclo];
+    const pele = mascote.dourado ? tardigrado.dourado : tardigrado;
+    const img = piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
     // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
     const pz = Math.max(2, Math.round(escala * 0.5));
     // "respira": estica e encolhe de leve
@@ -1597,11 +1655,19 @@ function criarCena(telaPixel, telaTexto, raiz) {
     mascote.virar += (alvoVirar - mascote.virar) * (1 - Math.exp(-dt * 8));
     const sx = foguete.x * escala, sy = foguete.y * escala;
     // brilho quente em volta, que mistura o bicho com o cenário (sem contorno)
-    const rb = img.width * pz * 0.85;
+    // na hora em que vira dourado: um clarão que se espalha e some em ~2 s
+    const festa = mascote.festaOuro ? Math.max(0, 1 - (performance.now() - mascote.festaOuro) / 2200) : 0;
+    const rb = img.width * pz * (0.85 + festa * 1.6);
     const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
-    halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
-    halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
-    halo.addColorStop(1, "rgba(255, 110, 40, 0)");
+    if (mascote.dourado) {
+      halo.addColorStop(0, `rgba(255, 220, 110, ${0.34 + festa * 0.5})`);
+      halo.addColorStop(0.45, `rgba(255, 190, 70, ${0.14 + festa * 0.25})`);
+      halo.addColorStop(1, "rgba(255, 170, 40, 0)");
+    } else {
+      halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
+      halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
+      halo.addColorStop(1, "rgba(255, 110, 40, 0)");
+    }
     tx.save();
     tx.globalCompositeOperation = "lighter";
     tx.fillStyle = halo;
@@ -1612,7 +1678,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.translate(sx, sy);
     tx.rotate(inclina * Math.sign(mascote.virar || 1));
     tx.scale(mascote.virar / resp, resp);
-    tx.shadowColor = "rgba(255, 140, 60, 0.75)";
+    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : "rgba(255, 140, 60, 0.75)";
     tx.shadowBlur = pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
@@ -1684,7 +1750,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         .map((el) => { const r = el.getBoundingClientRect(); return [r.top - 14, r.bottom + 14]; });
     }
     // enquanto você digita, as curiosidades somem devagar: só a pergunta e o campo na tela
-    alfaCurio += ((alvoCanto ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
+    alfaCurio += ((alvoCanto || fimDeJogo ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
     tx.globalAlpha = alfaCurio;
     CURIOSIDADES.forEach(([al, texto], i) => {
       if (noInicio || alfaCurio < 0.02) return;
@@ -2075,6 +2141,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
+      camera.dura = DURACAO_DESCIDA;
       // a caixa anterior some (não ficam umas por cima das outras)
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       caixas.push({
@@ -2094,8 +2161,24 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tremer(2 + 6 * peso, 300 + 600 * peso); // o tremor grande vem na chegada
     },
     tremer,
+    // Fim da viagem: o cenário volta devagar até a Terra.
+    subir(dura) {
+      for (const antiga of caixas) if (!antiga.saida) antiga.saida = performance.now();
+      alvoCanto = 0;
+      mostrarLinhas = false;
+      camera.de = camera.atual;
+      camera.para = 0;
+      camera.inicio = performance.now();
+      camera.dura = dura;
+    },
+    // Tardígrado dourado (supernova): com festa só na hora em que acontece.
+    dourado(festa) {
+      mascote.dourado = true;
+      if (festa) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
+    },
     // Tela final: some com as caixinhas e as linhas das faixas.
     limpar() {
+      fimDeJogo = true;
       caixas.length = 0;
       alvoCanto = 0;
       mostrarLinhas = false;
@@ -2294,6 +2377,7 @@ function iniciar() {
     estado.total = estado.totalMostrado = salvo.total;
     estado.rodada = salvo.historico.length;
     cena.irPara(profundidade());
+    if (salvo.historico.some((h) => h.supernova)) cena.dourado(false);
     $("pontos").textContent = numero(estado.total);
   }
   montarQuadrados();
@@ -2615,12 +2699,14 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
     requestAnimationFrame(contar);
   }
   const ultima = estado.rodada + 1 >= estado.categorias.length;
-  $("proxima").textContent = ultima ? "VER RESULTADO ▼" : "VIAJAR ▼";
+  $("proxima").textContent = ultima ? "VOLTAR ▲" : "VIAJAR ▼";
+  if (supernova) cena.dourado(true);
   card.hidden = false;
   if (supernova) Som.supernova();
   else if (resposta) Som.faixa(FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
   Som.profundidade(profundidade());
   montarQuadrados();
+  if (ultima) $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
   $("proxima").focus();
 }
 
@@ -2631,13 +2717,21 @@ function proxima() {
     iniciarRodada();
     return;
   }
-  mostrarFim(true);
+  // fim da viagem: o cenário sobe devagar de volta até a Terra, e aí vem o relatório
+  $("proxima").disabled = true;
+  cena.subir(SUBIDA);
+  setTimeout(() => {
+    $("proxima").disabled = false;
+    mostrarFim(true);
+  }, SUBIDA - 300);
 }
+const SUBIDA = 4200;
 
 // ---------- fim ----------
 
 function mostrarFim(comSom) {
   if (comSom) Som.fim();
+  else cena.irPara(0);
   cena.limpar();
   mostrarPergunta(false);
   $("fim").hidden = false;
@@ -2648,6 +2742,8 @@ function mostrarFim(comSom) {
   const media = estado.historico.reduce((s, h) => s + (h.percentil || 0), 0) / Math.max(1, estado.historico.length);
   $("fim-comparacao").textContent = `Suas respostas foram mais nichadas que ${Math.round(media * 100)}% das respostas possíveis.`;
   montarGrafico();
+  montarFaixas();
+  montarRespostas();
 
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
@@ -2691,6 +2787,172 @@ function montarGrafico() {
     col.append(fio, img, num, dica);
     g.append(col);
   });
+}
+
+// Tabela das faixas, da mais rara para a mais óbvia; as que você alcançou hoje ficam acesas.
+function montarFaixas() {
+  const lista = $("tabela-faixas");
+  lista.innerHTML = "";
+  const alcancadas = new Set(estado.historico.filter((h) => h.resposta).map((h) => faixaDe(h.pontos, h.supernova).id));
+  const linhas = [
+    { ...SUPERNOVA, faixa: "★ 1 por pergunta", texto: "A resposta escondida. Só existe uma." },
+    ...FAIXAS.map((f, i) => ({
+      ...f,
+      faixa: i === 0 ? `${f.min}+ pts` : `${f.min}–${FAIXAS[i - 1].min - 1} pts`,
+      texto: f.frase,
+    })),
+  ];
+  for (const l of linhas) {
+    const li = document.createElement("li");
+    li.style.setProperty("--c", l.cor);
+    if (alcancadas.has(l.id)) li.className = "sua";
+    const img = document.createElement("img");
+    img.src = cena.icones[l.id];
+    img.alt = "";
+    const pts = document.createElement("span");
+    pts.className = "faixa-pts";
+    pts.textContent = l.faixa;
+    const txt = document.createElement("span");
+    txt.textContent = `${l.nome[0]}${l.nome.slice(1).toLowerCase()}. ${l.texto}`;
+    li.append(img, pts, txt);
+    lista.append(li);
+  }
+}
+
+// Cada incursão do dia: a pergunta, a sua resposta, a faixa e os pontos.
+function montarRespostas() {
+  const lista = $("respostas-dia");
+  lista.innerHTML = "";
+  estado.historico.forEach((h, i) => {
+    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#6b6a99", nome: "" };
+    const li = document.createElement("li");
+    li.style.setProperty("--c", faixa.cor);
+    if (!h.resposta) li.className = "vazia";
+    const n = document.createElement("span");
+    n.className = "n";
+    n.textContent = i + 1;
+    const img = document.createElement("img");
+    img.src = cena.icones[faixa.id];
+    img.alt = "";
+    const cat = document.createElement("span");
+    cat.className = "cat";
+    cat.textContent = h.categoria;
+    const resp = document.createElement("span");
+    resp.className = "resp";
+    resp.textContent = h.resposta || "— tempo esgotado";
+    const pts = document.createElement("span");
+    pts.className = "pts";
+    pts.textContent = `+${h.pontos}`;
+    const extra = document.createElement("span");
+    extra.className = "extra";
+    extra.textContent = !h.resposta
+      ? ""
+      : h.supernova
+        ? "Supernova! A resposta escondida desta pergunta."
+        : `${faixa.nome[0]}${faixa.nome.slice(1).toLowerCase()} · mais rara que ${Math.round((h.percentil || 0) * 100)}% das respostas`;
+    const seta = document.createElement("span");
+    seta.className = "seta";
+    seta.textContent = "▾";
+    li.append(n, img, cat, resp, pts, extra, seta);
+    li.tabIndex = 0;
+    li.setAttribute("role", "button");
+    li.setAttribute("aria-expanded", "false");
+    li.title = "Ver todas as respostas desta pergunta";
+    const alternar = (e) => {
+      if (e.target.closest(".banco")) return;
+      const abrir = !li.classList.contains("aberta");
+      li.classList.toggle("aberta", abrir);
+      li.setAttribute("aria-expanded", String(abrir));
+      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta));
+    };
+    li.addEventListener("click", alternar);
+    li.addEventListener("keydown", (e) => {
+      if ((e.key === "Enter" || e.key === " ") && !e.target.closest(".banco")) { e.preventDefault(); alternar(e); }
+    });
+    lista.append(li);
+  });
+}
+
+// Uma curiosidade para cada resposta escondida (supernova).
+const CURIOSIDADE_SUPERNOVA = {
+  "capitais-do-brasil": "A capital planejada mais nova do Brasil, fundada em 1989.",
+  constelacoes: "A única constelação com nome de uma pessoa real: a rainha Berenice II, do Egito.",
+  "estados-do-brasil": "O estado mais ao norte: lá fica o Monte Caburaí, o ponto mais setentrional do país.",
+  estrelas: "No telescópio ela vira duas: uma dourada e uma azul, lado a lado.",
+  "luas-do-sistema-solar": "Lua de Saturno que pode esconder um oceano debaixo do gelo.",
+  paises: "Tem só uns 20 km de litoral, todos na cidadezinha de Neum.",
+  "planetas-e-planetas-anoes": "Foi a descoberta dela, em 2005, que tirou Plutão da lista de planetas.",
+};
+
+// Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
+function montarBanco(cat, sua) {
+  const banco = document.createElement("div");
+  banco.className = "banco";
+  const itens = cat.respostas
+    .map((r) => {
+      const sn = r.resposta === cat.supernova;
+      const pontos = sn ? r.pontos * 2 : r.pontos;
+      return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn), sn };
+    })
+    .sort((a, b) => b.sn - a.sn || b.pontos - a.pontos || a.nome.localeCompare(b.nome, "pt"));
+  const filtros = [{ id: "todas", nome: "Todas", cor: "#eef0ff" }, SUPERNOVA, ...FAIXAS];
+  let ativo = "todas";
+  const chips = document.createElement("div");
+  chips.className = "chips";
+  for (const f of filtros) {
+    const qtd = f.id === "todas" ? itens.length : itens.filter((it) => it.faixa.id === f.id).length;
+    if (!qtd) continue;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.style.setProperty("--c", f.cor);
+    b.innerHTML = `${f.id === "todas" ? "Todas" : f.nome[0] + f.nome.slice(1).toLowerCase()} <b>${qtd}</b>`;
+    if (f.id === ativo) b.className = "ativo";
+    b.addEventListener("click", () => {
+      ativo = f.id;
+      chips.querySelectorAll("button").forEach((x) => x.classList.toggle("ativo", x === b));
+      desenhar();
+    });
+    chips.append(b);
+  }
+  const campo = document.createElement("input");
+  campo.type = "search";
+  campo.placeholder = "procurar uma resposta…";
+  campo.setAttribute("aria-label", "Procurar uma resposta");
+  campo.addEventListener("input", () => desenhar());
+  const lista = document.createElement("ul");
+  const rodape = document.createElement("p");
+  rodape.className = "rodape-banco";
+  function desenhar() {
+    const q = compactar(campo.value || "");
+    const vis = itens.filter((it) => (ativo === "todas" || it.faixa.id === ativo) && (!q || compactar(it.nome).includes(q)));
+    lista.innerHTML = "";
+    for (const it of vis) {
+      const li = document.createElement("li");
+      li.style.setProperty("--c", it.faixa.cor);
+      if (it.nome === sua) li.className = "sua";
+      const img = document.createElement("img");
+      img.src = cena.icones[it.faixa.id];
+      img.alt = "";
+      const nome = document.createElement("span");
+      nome.className = "nome";
+      nome.textContent = it.nome + (it.nome === sua ? "  ← você" : "");
+      const pts = document.createElement("span");
+      pts.className = "pts";
+      pts.textContent = `+${it.pontos}`;
+      li.append(img, nome, pts);
+      if (it.sn) {
+        const nota = document.createElement("span");
+        nota.className = "nota";
+        nota.textContent = `★ Supernova. ${CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
+        li.append(nota);
+      }
+      lista.append(li);
+    }
+    rodape.textContent = `${vis.length} de ${itens.length} respostas`;
+  }
+  desenhar();
+  banco.append(chips, campo, lista, rodape);
+  return banco;
 }
 
 function contarAteAmanha() {

@@ -5,7 +5,10 @@
 // quente em volta é desenhado na cena. Olha para a direita; a cena espelha.
 function criarTardigrado() {
   const LW = 28, LH = 16;
-  const TONS = ["#3a1a0c", "#663218", "#934d24", "#bd7036", "#dd9a5a", "#f0c08a"];
+  const MARROM = ["#3a1a0c", "#663218", "#934d24", "#bd7036", "#dd9a5a", "#f0c08a"];
+  // dourado: depois de achar uma supernova, ele fica assim pelo resto do dia
+  const OURO = ["#5a3a06", "#8f6410", "#c3921c", "#e8bd34", "#fbdc6a", "#fff4b8"];
+  let TONS = MARROM;
   const BAYER4 = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map((v) => (v + 0.5) / 16);
   const CORPO = { cx: 12.5, cy: 7.2, rx: 11, ry: 5.0 };
   const CABECA = { cx: 23, cy: 7.9, rx: 3.6, ry: 3.5 };
@@ -73,6 +76,13 @@ function criarTardigrado() {
     return c;
   }
 
-  const andar = [0, 1, 2, 3].map((i) => quadro((i / 4) * Math.PI * 2, false));
-  return { andar, feliz: andar, piscar: quadro(0, true), largura: LW, altura: LH };
+  const jogo = (tons) => {
+    TONS = tons;
+    const andar = [0, 1, 2, 3].map((i) => quadro((i / 4) * Math.PI * 2, false));
+    return { andar, feliz: andar, piscar: quadro(0, true) };
+  };
+  const normal = jogo(MARROM);
+  const dourado = jogo(OURO);
+  TONS = MARROM;
+  return { ...normal, dourado, largura: LW, altura: LH };
 }
