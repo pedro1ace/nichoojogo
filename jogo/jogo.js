@@ -18,6 +18,55 @@ function normalizar(texto) {
     .trim();
 }
 
+// Tira artigos do começo ("o Acre", "a Lua") e espaços, para comparar.
+function compactar(texto) {
+  return normalizar(texto).replace(/^(o|a|os|as|um|uma) /, "").replaceAll(" ", "");
+}
+
+// Distância de edição (com troca de letras vizinhas): quantas letras faltam,
+// sobram, estão erradas ou trocadas de lugar.
+function distancia(a, b) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      const custo = a[i - 1] === b[j - 1] ? 0 : 1;
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + custo);
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
+      }
+    }
+  }
+  return d[a.length][b.length];
+}
+
+// Autocorreção generosa: compara com todas as respostas e apelidos.
+// Palavras curtas precisam vir quase certas; longas aceitam mais erros.
+function tolerancia(tamanho) {
+  if (tamanho <= 3) return 0;
+  if (tamanho <= 5) return 1;
+  if (tamanho <= 9) return 2;
+  return 3;
+}
+
+function buscar(cat, texto) {
+  const alvo = compactar(texto);
+  if (!alvo) return null;
+  if (cat.mapa.has(alvo)) return { resposta: cat.mapa.get(alvo), corrigido: false };
+  const limite = tolerancia(alvo.length);
+  let melhor = null;
+  let menor = Infinity;
+  for (const [nome, resposta] of cat.mapa) {
+    if (Math.abs(nome.length - alvo.length) > limite) continue;
+    const d = distancia(alvo, nome);
+    if (d < menor) {
+      menor = d;
+      melhor = resposta;
+    }
+  }
+  return menor <= limite ? { resposta: melhor, corrigido: true } : null;
+}
+
 // Sorteio determinístico pela data: todo mundo recebe as mesmas perguntas no dia.
 function geradorDoDia(data) {
   let semente = Number(data.replaceAll("-", ""));
@@ -59,7 +108,8 @@ function lerProgresso() {
 }
 
 const $ = (id) => document.getElementById(id);
-const cena = criarCena($("cena"));
+const cena = criarCena($("cena"), $("tela"));
+cena.aoQuadro((al) => ($("distancia").textContent = `${Math.round(al)} AL`));
 
 const estado = {
   data: hojeLocal(),
@@ -78,18 +128,28 @@ function iniciar() {
   }
   const escolhidas = embaralhar(dados.indice, geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
   estado.categorias = escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
-  $("carregando").hidden = true;
 
   const salvo = lerProgresso();
   if (salvo) {
     estado.historico = salvo.historico;
     estado.total = salvo.total;
     estado.rodada = salvo.historico.length;
+    cena.irPara(estado.total);
   }
   if (estado.rodada >= estado.categorias.length) {
+    $("inicio").hidden = true;
+    $("hud").hidden = false;
     mostrarFim();
     return;
   }
+  if (estado.rodada > 0) $("comecar").textContent = "CONTINUAR";
+  $("comecar").focus();
+}
+
+// Começa na superfície da Terra; o primeiro clique solta o foguete.
+function comecar() {
+  $("inicio").hidden = true;
+  $("hud").hidden = false;
   $("painel").hidden = false;
   mostrarRodada();
 }
@@ -97,7 +157,7 @@ function iniciar() {
 function prepararCategoria(cat) {
   const mapa = new Map();
   for (const r of cat.respostas) {
-    for (const nome of [r.resposta, ...r.apelidos]) mapa.set(normalizar(nome), r);
+    for (const nome of [r.resposta, ...r.apelidos]) mapa.set(compactar(nome), r);
   }
   return { ...cat, mapa };
 }
@@ -105,7 +165,7 @@ function prepararCategoria(cat) {
 function mostrarRodada() {
   const cat = estado.categorias[estado.rodada];
   estado.tentativas = TENTATIVAS;
-  $("rodada").textContent = `pergunta ${estado.rodada + 1}/${estado.categorias.length}`;
+  $("rodada").textContent = `PERGUNTA ${estado.rodada + 1}/${estado.categorias.length}`;
   $("pergunta").textContent = cat.pergunta || cat.titulo;
   avisar("", "");
   $("revelacao").hidden = true;
@@ -118,8 +178,7 @@ function mostrarRodada() {
 
 function atualizarPainel() {
   $("combustivel").textContent =
-    "combustível " + "■".repeat(estado.tentativas) + "□".repeat(TENTATIVAS - estado.tentativas);
-  $("distancia").textContent = `${estado.total} anos-luz`;
+    "COMBUSTÍVEL " + "■".repeat(estado.tentativas) + "□".repeat(TENTATIVAS - estado.tentativas);
 }
 
 function palpitar(evento) {
@@ -127,9 +186,9 @@ function palpitar(evento) {
   const cat = estado.categorias[estado.rodada];
   const texto = $("palpite").value.trim();
   if (!texto) return;
-  const achada = cat.mapa.get(normalizar(texto));
+  const busca = buscar(cat, texto);
 
-  if (!achada) {
+  if (!busca) {
     estado.tentativas -= 1;
     atualizarPainel();
     $("palpite").value = "";
@@ -142,14 +201,16 @@ function palpitar(evento) {
     return;
   }
 
+  const achada = busca.resposta;
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
+  const correcao = busca.corrigido ? ` (você digitou "${texto}")` : "";
   if (supernova) {
-    avisar(`SUPERNOVA! ${achada.resposta} vale ${pontos} anos-luz.`, "supernova");
+    avisar(`SUPERNOVA! ${achada.resposta} vale ${pontos} anos-luz.${correcao}`, "supernova");
   } else {
-    avisar(`${achada.resposta}: +${pontos} anos-luz.`, "acerto");
+    avisar(`${achada.resposta}: +${pontos} anos-luz.${correcao}`, pontos >= 50 ? "profundo" : "acerto");
   }
-  cena.comemorar(pontos, supernova);
+  cena.descer(achada.resposta, pontos, supernova);
   encerrarRodada(achada.resposta, pontos, supernova);
 }
 
@@ -171,7 +232,7 @@ function encerrarRodada(resposta, pontos, supernova) {
     const li = document.createElement("li");
     li.textContent = r.resposta + " ";
     const extra = document.createElement("span");
-    extra.textContent = `${r.pontos} anos-luz${r.resposta === cat.supernova ? " · supernova" : ""}`;
+    extra.textContent = r.resposta === cat.supernova ? `${r.pontos} ★` : `${r.pontos}`;
     li.append(extra);
     $("top").append(li);
   }
@@ -219,6 +280,7 @@ function copiar() {
   }
 }
 
+$("comecar").addEventListener("click", comecar);
 $("formulario").addEventListener("submit", palpitar);
 $("proxima").addEventListener("click", proxima);
 $("copiar").addEventListener("click", copiar);

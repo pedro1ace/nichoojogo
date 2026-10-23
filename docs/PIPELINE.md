@@ -38,10 +38,17 @@ Seguimos o mesmo método do Krillion:
 - [x] Sessão diária com sorteio pela data, uma resposta por pergunta, 3 tentativas, supernova.
 - [x] Cena 2D em pixel art: foguete, estrelas, sprite por faixa de pontos (satélite, lua, planeta, supernova).
 - [x] Resultado em emoji para compartilhar, e progresso do dia salvo no navegador.
+- [x] Tela cheia: o foguete parte da Terra e desce; o fundo vai do céu claro ao preto e as estrelas rareiam.
+- [x] Marcos de profundidade (Lua, Marte, Júpiter... buraco negro) e objetos no caminho (satélites, asteroides, cometas).
+- [x] Descida suave no mesmo tempo para toda resposta: as raras descem muito mais nesse tempo, então caem rápido.
+- [x] Tremor da tela inteira proporcional à raridade, e flash na supernova.
+- [x] Palavra numa caixinha que afunda junto e depois sobe para a superfície; roxa e rápida se for rara, clara e lenta se for óbvia.
+- [x] Autocorreção generosa contra respostas e apelidos, ignorando acentos, artigos e espaços.
 - [ ] **Calendário de perguntas** (`dados/calendario.json`: data → perguntas), para garantir perguntas inéditas
       e controlar a dificuldade, em vez do sorteio atual (que repete perguntas).
-- [ ] Autocorreção generosa: aceitar 1 ou 2 letras de diferença contra respostas e apelidos, com "você quis dizer…".
+- [ ] Revisar a autocorreção com perguntas grandes: bloquear casamentos estranhos (o problema "sea donkey" do FAQ do Krillion).
 - [ ] Mais sprites e animação: explosão da supernova, foguete trocando de fase conforme a distância, sons 8-bit.
+- [ ] Ajustar o ritmo: distância entre marcos e cores do fundo conforme as pontuações reais dos jogadores.
 - [ ] Imagem do resultado (canvas em pixel art) para compartilhar além do texto.
 - [ ] Modo ilimitado e arquivo dos dias anteriores.
 

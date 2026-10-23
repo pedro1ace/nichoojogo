@@ -2,115 +2,112 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Nicho</title>
-  <meta name="description" content="Jogo diário de palavras: quanto mais nichada a resposta, mais longe seu foguete vai.">
+  <meta name="description" content="Jogo diário de palavras: quanto mais nichada a resposta, mais fundo seu foguete desce no espaço.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <style>
 :root {
+  color-scheme: dark;
   --fundo: #07031f;
-  --caixa: #140c45;
+  --caixa: rgba(14, 8, 52, 0.88);
   --borda: #3ad7ff;
   --texto: #f4f4ff;
-  --suave: #9aa3c7;
+  --suave: #b8bfe0;
   --amarelo: #ffd23f;
   --rosa: #ff3dd6;
+  --roxo: #b06bff;
   --verde: #7ef0c1;
   --vermelho: #ff3d6e;
   --titulo: "Press Start 2P", monospace;
   --corpo: "VT323", monospace;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; }
-body {
-  min-height: 100vh;
-  background-color: var(--fundo);
-  /* estrelinhas de 2px repetidas no fundo */
-  background-image:
-    radial-gradient(#ffffff 1px, transparent 1px),
-    radial-gradient(#8f86ff 1px, transparent 1px);
-  background-size: 97px 89px, 53px 61px;
-  background-position: 0 0, 23px 31px;
-  color: var(--texto);
-  font-family: var(--corpo);
-  font-size: 22px;
-  line-height: 1.25;
-}
-main { max-width: 560px; margin: 0 auto; padding: 24px 16px 48px; }
-header { text-align: center; margin-bottom: 16px; }
-h1 {
-  font-family: var(--titulo);
-  font-size: 40px;
-  margin: 0;
-  color: var(--amarelo);
-  text-shadow: 4px 4px 0 var(--rosa), 8px 8px 0 #3a1a8a;
-  letter-spacing: 4px;
-}
-.lema { color: var(--suave); margin: 12px 0 0; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--fundo); }
+body { color: var(--texto); font-family: var(--corpo); font-size: 22px; line-height: 1.2; }
 
+/* Tudo dentro de #tela, para o tremor sacudir a tela inteira */
+#tela { position: fixed; inset: 0; }
 #cena {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  margin-bottom: 16px;
-  box-shadow: 0 0 0 4px var(--fundo), 0 0 0 8px var(--borda);
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  image-rendering: pixelated; image-rendering: crisp-edges;
 }
 
-/* Borda "em degraus" de pixel art */
+#hud {
+  position: absolute; top: 0; left: 0; right: 0;
+  display: flex; justify-content: space-between; gap: 16px;
+  padding: max(12px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left));
+  font-family: var(--titulo); font-size: 12px; text-shadow: 2px 2px 0 #000;
+  pointer-events: none;
+}
+#hud div { display: flex; flex-direction: column; gap: 6px; }
+#hud .direita { align-items: flex-end; }
+#hud .rotulo { color: var(--suave); font-size: 9px; }
+#distancia { color: var(--amarelo); font-size: 20px; font-variant-numeric: tabular-nums; }
+
+.sobreposto {
+  position: absolute; left: 0; right: 0; bottom: 12%;
+  text-align: center; padding: 0 16px;
+}
+h1 {
+  font-family: var(--titulo); font-size: clamp(36px, 9vw, 72px); margin: 0 0 16px;
+  color: var(--amarelo); letter-spacing: 6px;
+  text-shadow: 4px 4px 0 var(--rosa), 8px 8px 0 #1a0a4a;
+}
+#inicio p { text-shadow: 2px 2px 0 #07031f; max-width: 32em; margin: 0 auto 20px; }
+
+/* Painel da pergunta: embaixo, sem tampar o foguete */
 .caixa {
-  background: var(--caixa);
-  padding: 20px;
-  margin: 8px;
+  position: absolute; left: 50%; bottom: max(16px, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  width: min(560px, calc(100% - 32px));
+  max-height: 52%; overflow-y: auto;
+  background: var(--caixa); padding: 16px 18px;
   box-shadow:
     0 -4px 0 0 var(--borda), 0 4px 0 0 var(--borda),
     -4px 0 0 0 var(--borda), 4px 0 0 0 var(--borda),
     8px 8px 0 0 #000;
 }
-.progresso { display: flex; justify-content: space-between; color: var(--suave); }
-#distancia { color: var(--amarelo); }
-h2 { font-family: var(--titulo); font-size: 15px; line-height: 1.7; margin: 16px 0; }
+h2 { font-family: var(--titulo); font-size: 14px; line-height: 1.7; margin: 0 0 12px; text-wrap: balance; }
 form { display: flex; gap: 12px; }
 input {
-  flex: 1; min-width: 0;
-  padding: 10px 12px;
-  font: inherit;
-  background: #07031f; color: var(--texto);
-  border: 0; border-radius: 0;
+  flex: 1; min-width: 0; padding: 10px 12px; font: inherit;
+  background: #07031f; color: var(--texto); border: 0; border-radius: 0;
   box-shadow: inset 0 0 0 3px #5b4bd6;
 }
 input:focus { outline: none; box-shadow: inset 0 0 0 3px var(--amarelo); }
 button {
-  font-family: var(--titulo); font-size: 12px;
-  padding: 12px 14px;
-  border: 0; border-radius: 0;
-  background: var(--amarelo); color: #1a1000;
-  box-shadow: inset -4px -4px 0 #c79400, 4px 4px 0 #000;
-  cursor: pointer;
+  font-family: var(--titulo); font-size: 12px; padding: 12px 14px;
+  border: 0; border-radius: 0; background: var(--amarelo); color: #1a1000;
+  box-shadow: inset -4px -4px 0 #c79400, 4px 4px 0 #000; cursor: pointer;
 }
+button:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; }
 button:active { transform: translate(2px, 2px); box-shadow: inset -4px -4px 0 #c79400, 2px 2px 0 #000; }
 button:disabled { filter: grayscale(1); opacity: 0.5; cursor: default; }
-#combustivel { color: var(--suave); min-height: 1.2em; }
-#mensagem { min-height: 1.4em; }
+#comecar { font-size: 16px; padding: 16px 22px; }
+#mensagem { min-height: 1.2em; margin: 10px 0 0; }
 .acerto { color: var(--verde); }
+.profundo { color: var(--roxo); }
 .erro { color: var(--vermelho); }
 .supernova { color: var(--rosa); animation: piscar 0.4s steps(2) 6; }
 @keyframes piscar { 50% { color: var(--amarelo); } }
-ol { padding-left: 1.4em; margin: 8px 0 16px; }
+/* lista das mais nichadas em "fichas", para ocupar pouca altura */
+ol { list-style: none; padding: 0; margin: 6px 0 12px; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+li { white-space: nowrap; }
 li span, .suave { color: var(--suave); }
+#revelacao p { margin: 10px 0 0; }
 pre {
-  font-family: var(--corpo); font-size: 24px;
-  white-space: pre-wrap; background: #07031f; padding: 12px;
-  box-shadow: inset 0 0 0 3px #5b4bd6;
+  font-family: var(--corpo); font-size: 24px; white-space: pre-wrap;
+  background: #07031f; padding: 12px; box-shadow: inset 0 0 0 3px #5b4bd6;
 }
-#carregando { text-align: center; color: var(--suave); }
 
-@media (max-width: 420px) {
-  h1 { font-size: 30px; }
+@media (max-width: 480px) {
+  body { font-size: 20px; }
   form { flex-direction: column; }
+  #hud { font-size: 10px; }
+  #distancia { font-size: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .supernova { animation: none; }
@@ -118,28 +115,38 @@ pre {
 </style>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>NICHO</h1>
-      <p class="lema">uma em um bilhão de estrelas</p>
-    </header>
-
+  <div id="tela">
     <canvas id="cena" aria-hidden="true"></canvas>
 
-    <section id="painel" class="caixa" hidden>
-      <div class="progresso">
-        <span id="rodada"></span>
-        <span id="distancia">0 anos-luz</span>
+    <div id="hud" hidden>
+      <div>
+        <span class="rotulo">PROFUNDIDADE</span>
+        <span id="distancia">0 AL</span>
       </div>
+      <div class="direita">
+        <span id="rodada"></span>
+        <span id="combustivel"></span>
+      </div>
+    </div>
+
+    <section id="inicio" class="sobreposto">
+      <h1>NICHO</h1>
+      <p>Responda cada pergunta com a palavra mais nichada que conseguir.<br>
+         Quanto mais rara, mais fundo o foguete desce no espaço.</p>
+      <button id="comecar" type="button">MERGULHAR</button>
+      <p id="carregando" class="suave"></p>
+    </section>
+
+    <section id="painel" class="caixa" hidden>
       <h2 id="pergunta"></h2>
       <form id="formulario" autocomplete="off">
-        <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta" required>
+        <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
+               autocapitalize="off" autocorrect="off" spellcheck="false" required>
         <button type="submit">LANÇAR</button>
       </form>
-      <p id="combustivel"></p>
       <p id="mensagem" role="status"></p>
       <div id="revelacao" hidden>
-        <p>As mais nichadas desta pergunta:</p>
+        <p class="suave">As mais nichadas (anos-luz, ★ = supernova):</p>
         <ol id="top"></ol>
         <button id="proxima" type="button">PRÓXIMA ▶</button>
       </div>
@@ -152,100 +159,127 @@ pre {
       <button id="copiar" type="button">COPIAR RESULTADO</button>
       <p class="suave">Novas perguntas amanhã.</p>
     </section>
-
-    <p id="carregando">contagem regressiva…</p>
-  </main>
+  </div>
   <script>
 // Gerado por scripts/montar_jogo.py. Não edite à mão.
 window.NICHO_DADOS = {"indice":[{"id":"constelacoes","titulo":"Constelações","pergunta":"Cite uma das 88 constelações oficiais"},{"id":"estados-do-brasil","titulo":"Estados do Brasil","pergunta":"Cite um estado brasileiro"},{"id":"luas-do-sistema-solar","titulo":"Luas do Sistema Solar","pergunta":"Cite uma lua (satélite natural) do Sistema Solar"},{"id":"paises","titulo":"Países","pergunta":"Cite um país"},{"id":"planetas-e-planetas-anoes","titulo":"Planetas e planetas anões","pergunta":"Cite um planeta ou planeta anão do Sistema Solar"}],"categorias":{"constelacoes":{"id":"constelacoes","titulo":"Constelações","pergunta":"Cite uma das 88 constelações oficiais","respostas":[{"resposta":"Cruzeiro do Sul","apelidos":["Cruzeiro"],"sem_dado":false,"icf":9.139,"ajustado":false,"percentil":0.023,"peso":0.101,"pontos":1},{"resposta":"Cão Menor","apelidos":[],"sem_dado":false,"icf":9.564,"ajustado":false,"percentil":0.034,"peso":0.115,"pontos":1},{"resposta":"Cavalo Menor","apelidos":["Equuleus"],"sem_dado":false,"icf":9.632,"ajustado":false,"percentil":0.046,"peso":0.124,"pontos":2},{"resposta":"Câncer","apelidos":["Caranguejo"],"sem_dado":false,"icf":9.876,"ajustado":false,"percentil":0.069,"peso":0.143,"pontos":2},{"resposta":"Leão Menor","apelidos":[],"sem_dado":false,"icf":9.653,"ajustado":false,"percentil":0.057,"peso":0.132,"pontos":2},{"resposta":"Relógio","apelidos":["Horologium"],"sem_dado":false,"icf":10.15,"ajustado":false,"percentil":0.08,"peso":0.155,"pontos":2},{"resposta":"Cães de Caça","apelidos":[],"sem_dado":false,"icf":10.436,"ajustado":false,"percentil":0.103,"peso":0.175,"pontos":3},{"resposta":"Leão","apelidos":[],"sem_dado":false,"icf":10.437,"ajustado":false,"percentil":0.115,"peso":0.183,"pontos":3},{"resposta":"Peixes","apelidos":[],"sem_dado":false,"icf":10.383,"ajustado":false,"percentil":0.092,"peso":0.166,"pontos":3},{"resposta":"Dourado","apelidos":["Dorado"],"sem_dado":false,"icf":10.625,"ajustado":false,"percentil":0.138,"peso":0.202,"pontos":4},{"resposta":"Taça","apelidos":["Cratera"],"sem_dado":false,"icf":10.561,"ajustado":false,"percentil":0.126,"peso":0.193,"pontos":4},{"resposta":"Ursa Maior","apelidos":[],"sem_dado":false,"icf":10.668,"ajustado":false,"percentil":0.149,"peso":0.21,"pontos":4},{"resposta":"Ave-do-Paraíso","apelidos":["Apus"],"sem_dado":false,"icf":10.801,"ajustado":false,"percentil":0.172,"peso":0.228,"pontos":5},{"resposta":"Virgem","apelidos":[],"sem_dado":false,"icf":10.684,"ajustado":false,"percentil":0.161,"peso":0.219,"pontos":5},{"resposta":"Cão Maior","apelidos":[],"sem_dado":false,"icf":8.855,"ajustado":true,"percentil":0.0,"peso":0.25,"pontos":6},{"resposta":"Lobo","apelidos":["Lupus"],"sem_dado":false,"icf":10.848,"ajustado":false,"percentil":0.184,"peso":0.237,"pontos":6},{"resposta":"Vela","apelidos":["Vela do Navio"],"sem_dado":false,"icf":10.961,"ajustado":false,"percentil":0.195,"peso":0.246,"pontos":6},{"resposta":"Dragão","apelidos":[],"sem_dado":false,"icf":11.023,"ajustado":false,"percentil":0.207,"peso":0.255,"pontos":7},{"resposta":"Peixe Voador","apelidos":["Volans"],"sem_dado":false,"icf":11.252,"ajustado":false,"percentil":0.218,"peso":0.267,"pontos":7},{"resposta":"Altar","apelidos":["Ara"],"sem_dado":false,"icf":11.274,"ajustado":false,"percentil":0.23,"peso":0.275,"pontos":8},{"resposta":"Ursa Menor","apelidos":[],"sem_dado":false,"icf":11.377,"ajustado":false,"percentil":0.241,"peso":0.284,"pontos":8},{"resposta":"Aquário","apelidos":[],"sem_dado":false,"icf":11.469,"ajustado":false,"percentil":0.264,"peso":0.302,"pontos":9},{"resposta":"Máquina Pneumática","apelidos":["Antlia"],"sem_dado":false,"icf":11.424,"ajustado":false,"percentil":0.253,"peso":0.293,"pontos":9},{"resposta":"Pintor","apelidos":["Pictor"],"sem_dado":false,"icf":11.495,"ajustado":false,"percentil":0.276,"peso":0.31,"pontos":10},{"resposta":"Triângulo","apelidos":[],"sem_dado":false,"icf":11.504,"ajustado":false,"percentil":0.287,"peso":0.318,"pontos":10},{"resposta":"Escudo","apelidos":["Scutum"],"sem_dado":false,"icf":11.659,"ajustado":false,"percentil":0.31,"peso":0.337,"pontos":11},{"resposta":"Índio","apelidos":["Indus"],"sem_dado":false,"icf":11.641,"ajustado":false,"percentil":0.299,"peso":0.328,"pontos":11},{"resposta":"Tucano","apelidos":[],"sem_dado":false,"icf":11.714,"ajustado":false,"percentil":0.322,"peso":0.345,"pontos":12},{"resposta":"Gêmeos","apelidos":[],"sem_dado":false,"icf":11.768,"ajustado":false,"percentil":0.333,"peso":0.354,"pontos":13},{"resposta":"Águia","apelidos":["Aquila"],"sem_dado":false,"icf":11.799,"ajustado":false,"percentil":0.345,"peso":0.363,"pontos":13},{"resposta":"Peixe Austral","apelidos":[],"sem_dado":false,"icf":11.897,"ajustado":false,"percentil":0.356,"peso":0.372,"pontos":14},{"resposta":"Touro","apelidos":[],"sem_dado":false,"icf":11.927,"ajustado":false,"percentil":0.368,"peso":0.38,"pontos":14},{"resposta":"Serpente","apelidos":[],"sem_dado":false,"icf":12.0,"ajustado":false,"percentil":0.379,"peso":0.39,"pontos":15},{"resposta":"Baleia","apelidos":["Cetus"],"sem_dado":false,"icf":12.02,"ajustado":false,"percentil":0.402,"peso":0.406,"pontos":16},{"resposta":"Raposa","apelidos":["Vulpecula"],"sem_dado":false,"icf":12.018,"ajustado":false,"percentil":0.391,"peso":0.398,"pontos":16},{"resposta":"Lira","apelidos":[],"sem_dado":false,"icf":12.11,"ajustado":false,"percentil":0.414,"peso":0.415,"pontos":17},{"resposta":"Flecha","apelidos":["Sagitta"],"sem_dado":false,"icf":12.127,"ajustado":false,"percentil":0.425,"peso":0.423,"pontos":18},{"resposta":"Coroa Austral","apelidos":[],"sem_dado":false,"icf":12.13,"ajustado":false,"percentil":0.437,"peso":0.432,"pontos":19},{"resposta":"Coroa Boreal","apelidos":[],"sem_dado":false,"icf":12.218,"ajustado":false,"percentil":0.448,"peso":0.441,"pontos":19},{"resposta":"Perseu","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":true,"percentil":1.0,"peso":0.45,"pontos":20},{"resposta":"Pomba","apelidos":["Columba"],"sem_dado":false,"icf":12.225,"ajustado":false,"percentil":0.46,"peso":0.449,"pontos":20},{"resposta":"Mosca","apelidos":["Musca"],"sem_dado":false,"icf":12.348,"ajustado":false,"percentil":0.471,"peso":0.459,"pontos":21},{"resposta":"Libra","apelidos":["Balança"],"sem_dado":false,"icf":12.363,"ajustado":false,"percentil":0.483,"peso":0.467,"pontos":22},{"resposta":"Escorpião","apelidos":[],"sem_dado":false,"icf":12.392,"ajustado":false,"percentil":0.494,"peso":0.475,"pontos":23},{"resposta":"Hidra Macho","apelidos":["Hydrus"],"sem_dado":false,"icf":12.567,"ajustado":false,"percentil":0.517,"peso":0.494,"pontos":24},{"resposta":"Telescópio","apelidos":[],"sem_dado":false,"icf":12.554,"ajustado":false,"percentil":0.506,"peso":0.486,"pontos":24},{"resposta":"Fênix","apelidos":[],"sem_dado":false,"icf":12.581,"ajustado":false,"percentil":0.529,"peso":0.502,"pontos":25},{"resposta":"Triângulo Austral","apelidos":[],"sem_dado":false,"icf":12.605,"ajustado":false,"percentil":0.54,"peso":0.511,"pontos":26},{"resposta":"Corvo","apelidos":[],"sem_dado":false,"icf":12.641,"ajustado":false,"percentil":0.552,"peso":0.519,"pontos":27},{"resposta":"Compasso","apelidos":["Circinus"],"sem_dado":false,"icf":12.661,"ajustado":false,"percentil":0.563,"peso":0.527,"pontos":28},{"resposta":"Popa","apelidos":["Puppis"],"sem_dado":false,"icf":12.722,"ajustado":false,"percentil":0.575,"peso":0.536,"pontos":29},{"resposta":"Lagarto","apelidos":["Lacerta"],"sem_dado":false,"icf":12.726,"ajustado":false,"percentil":0.586,"peso":0.544,"pontos":30},{"resposta":"Cisne","apelidos":[],"sem_dado":false,"icf":12.782,"ajustado":false,"percentil":0.598,"peso":0.553,"pontos":31},{"resposta":"Bússola","apelidos":["Pyxis"],"sem_dado":false,"icf":12.843,"ajustado":false,"percentil":0.609,"peso":0.562,"pontos":32},{"resposta":"Pavão","apelidos":["Pavo"],"sem_dado":false,"icf":12.871,"ajustado":false,"percentil":0.621,"peso":0.571,"pontos":33},{"resposta":"Escultor","apelidos":[],"sem_dado":false,"icf":12.885,"ajustado":false,"percentil":0.632,"peso":0.579,"pontos":34},{"resposta":"Hércules","apelidos":[],"sem_dado":false,"icf":12.954,"ajustado":false,"percentil":0.644,"peso":0.588,"pontos":35},{"resposta":"Capricórnio","apelidos":[],"sem_dado":false,"icf":12.959,"ajustado":false,"percentil":0.655,"peso":0.596,"pontos":36},{"resposta":"Microscópio","apelidos":[],"sem_dado":false,"icf":13.012,"ajustado":false,"percentil":0.667,"peso":0.605,"pontos":37},{"resposta":"Sagitário","apelidos":[],"sem_dado":false,"icf":13.018,"ajustado":false,"percentil":0.678,"peso":0.613,"pontos":38},{"resposta":"Áries","apelidos":["Carneiro"],"sem_dado":false,"icf":13.021,"ajustado":false,"percentil":0.69,"peso":0.621,"pontos":39},{"resposta":"Girafa","apelidos":["Camelopardalis"],"sem_dado":false,"icf":13.074,"ajustado":false,"percentil":0.701,"peso":0.63,"pontos":40},{"resposta":"Golfinho","apelidos":["Delphinus"],"sem_dado":false,"icf":13.223,"ajustado":false,"percentil":0.713,"peso":0.64,"pontos":41},{"resposta":"Centauro","apelidos":[],"sem_dado":false,"icf":13.287,"ajustado":false,"percentil":0.724,"peso":0.649,"pontos":42},{"resposta":"Cabeleira de Berenice","apelidos":[],"sem_dado":false,"icf":13.367,"ajustado":false,"percentil":0.736,"peso":0.658,"pontos":43},{"resposta":"Lebre","apelidos":["Lepus"],"sem_dado":false,"icf":13.369,"ajustado":false,"percentil":0.747,"peso":0.666,"pontos":44},{"resposta":"Camaleão","apelidos":[],"sem_dado":false,"icf":13.52,"ajustado":false,"percentil":0.759,"peso":0.676,"pontos":46},{"resposta":"Unicórnio","apelidos":["Monoceros"],"sem_dado":false,"icf":13.632,"ajustado":false,"percentil":0.77,"peso":0.686,"pontos":47},{"resposta":"Lince","apelidos":[],"sem_dado":false,"icf":13.678,"ajustado":false,"percentil":0.782,"peso":0.694,"pontos":48},{"resposta":"Fornalha","apelidos":["Fornax"],"sem_dado":false,"icf":13.689,"ajustado":false,"percentil":0.793,"peso":0.703,"pontos":49},{"resposta":"Sextante","apelidos":[],"sem_dado":false,"icf":14.049,"ajustado":false,"percentil":0.805,"peso":0.716,"pontos":51},{"resposta":"Esquadro","apelidos":["Régua","Norma"],"sem_dado":false,"icf":14.244,"ajustado":false,"percentil":0.816,"peso":0.726,"pontos":53},{"resposta":"Hidra","apelidos":[],"sem_dado":false,"icf":14.245,"ajustado":false,"percentil":0.828,"peso":0.734,"pontos":54},{"resposta":"Andrômeda","apelidos":[],"sem_dado":false,"icf":14.342,"ajustado":false,"percentil":0.839,"peso":0.744,"pontos":55},{"resposta":"Órion","apelidos":["Orion"],"sem_dado":false,"icf":14.42,"ajustado":false,"percentil":0.851,"peso":0.753,"pontos":57},{"resposta":"Quilha","apelidos":["Carina"],"sem_dado":false,"icf":14.669,"ajustado":false,"percentil":0.862,"peso":0.764,"pontos":58},{"resposta":"Retículo","apelidos":[],"sem_dado":false,"icf":14.701,"ajustado":false,"percentil":0.874,"peso":0.773,"pontos":60},{"resposta":"Pégaso","apelidos":[],"sem_dado":false,"icf":14.724,"ajustado":false,"percentil":0.885,"peso":0.781,"pontos":61},{"resposta":"Cocheiro","apelidos":["Auriga"],"sem_dado":false,"icf":14.918,"ajustado":false,"percentil":0.897,"peso":0.792,"pontos":63},{"resposta":"Grou","apelidos":["Grus"],"sem_dado":false,"icf":15.218,"ajustado":false,"percentil":0.908,"peso":0.804,"pontos":65},{"resposta":"Buril","apelidos":["Caelum"],"sem_dado":false,"icf":15.927,"ajustado":false,"percentil":0.92,"peso":0.822,"pontos":68},{"resposta":"Cassiopeia","apelidos":[],"sem_dado":false,"icf":16.18,"ajustado":false,"percentil":0.931,"peso":0.833,"pontos":69},{"resposta":"Mesa","apelidos":["Mensa"],"sem_dado":false,"icf":8.981,"ajustado":true,"percentil":0.011,"peso":0.85,"pontos":72},{"resposta":"Boieiro","apelidos":["Bootes"],"sem_dado":false,"icf":16.902,"ajustado":false,"percentil":0.943,"peso":0.852,"pontos":73},{"resposta":"Ofiúco","apelidos":["Serpentário"],"sem_dado":false,"icf":17.426,"ajustado":false,"percentil":0.954,"peso":0.867,"pontos":75},{"resposta":"Oitante","apelidos":["Octans"],"sem_dado":false,"icf":17.703,"ajustado":false,"percentil":0.966,"peso":0.879,"pontos":77},{"resposta":"Cefeu","apelidos":[],"sem_dado":false,"icf":17.863,"ajustado":false,"percentil":0.977,"peso":0.889,"pontos":79},{"resposta":"Erídano","apelidos":["Eridanus"],"sem_dado":false,"icf":18.387,"ajustado":false,"percentil":0.989,"peso":0.904,"pontos":82}],"supernova":"Cabeleira de Berenice"},"estados-do-brasil":{"id":"estados-do-brasil","titulo":"Estados do Brasil","pergunta":"Cite um estado brasileiro","respostas":[{"resposta":"Rio Grande do Sul","apelidos":[],"sem_dado":false,"icf":7.415,"ajustado":false,"percentil":0.077,"peso":0.115,"pontos":1},{"resposta":"Rio de Janeiro","apelidos":[],"sem_dado":false,"icf":7.355,"ajustado":false,"percentil":0.038,"peso":0.087,"pontos":1},{"resposta":"São Paulo","apelidos":[],"sem_dado":false,"icf":6.313,"ajustado":false,"percentil":0.0,"peso":0.045,"pontos":1},{"resposta":"Rio Grande do Norte","apelidos":[],"sem_dado":false,"icf":7.577,"ajustado":false,"percentil":0.115,"peso":0.144,"pontos":2},{"resposta":"Espírito Santo","apelidos":[],"sem_dado":false,"icf":8.716,"ajustado":false,"percentil":0.154,"peso":0.186,"pontos":3},{"resposta":"Minas Gerais","apelidos":[],"sem_dado":false,"icf":8.723,"ajustado":false,"percentil":0.192,"peso":0.213,"pontos":5},{"resposta":"Distrito Federal","apelidos":[],"sem_dado":false,"icf":8.779,"ajustado":false,"percentil":0.231,"peso":0.241,"pontos":6},{"resposta":"Santa Catarina","apelidos":[],"sem_dado":false,"icf":8.86,"ajustado":false,"percentil":0.269,"peso":0.269,"pontos":7},{"resposta":"Paraná","apelidos":[],"sem_dado":false,"icf":8.972,"ajustado":false,"percentil":0.308,"peso":0.298,"pontos":9},{"resposta":"Mato Grosso do Sul","apelidos":[],"sem_dado":false,"icf":9.158,"ajustado":false,"percentil":0.346,"peso":0.327,"pontos":11},{"resposta":"Bahia","apelidos":[],"sem_dado":false,"icf":9.22,"ajustado":false,"percentil":0.385,"peso":0.355,"pontos":13},{"resposta":"Mato Grosso","apelidos":[],"sem_dado":false,"icf":9.724,"ajustado":false,"percentil":0.423,"peso":0.389,"pontos":15},{"resposta":"Goiás","apelidos":[],"sem_dado":false,"icf":9.876,"ajustado":false,"percentil":0.462,"peso":0.418,"pontos":17},{"resposta":"Ceará","apelidos":[],"sem_dado":false,"icf":9.927,"ajustado":false,"percentil":0.5,"peso":0.445,"pontos":20},{"resposta":"Pernambuco","apelidos":[],"sem_dado":false,"icf":9.946,"ajustado":false,"percentil":0.538,"peso":0.473,"pontos":22},{"resposta":"Pará","apelidos":[],"sem_dado":false,"icf":10.31,"ajustado":false,"percentil":0.577,"peso":0.505,"pontos":26},{"resposta":"Paraíba","apelidos":[],"sem_dado":false,"icf":10.34,"ajustado":false,"percentil":0.615,"peso":0.532,"pontos":28},{"resposta":"Maranhão","apelidos":[],"sem_dado":false,"icf":10.422,"ajustado":false,"percentil":0.654,"peso":0.56,"pontos":31},{"resposta":"Amazonas","apelidos":[],"sem_dado":false,"icf":10.557,"ajustado":false,"percentil":0.692,"peso":0.589,"pontos":35},{"resposta":"Piauí","apelidos":[],"sem_dado":false,"icf":10.708,"ajustado":false,"percentil":0.731,"peso":0.618,"pontos":38},{"resposta":"Alagoas","apelidos":[],"sem_dado":false,"icf":10.861,"ajustado":false,"percentil":0.769,"peso":0.647,"pontos":42},{"resposta":"Tocantins","apelidos":[],"sem_dado":false,"icf":10.907,"ajustado":false,"percentil":0.808,"peso":0.674,"pontos":45},{"resposta":"Sergipe","apelidos":[],"sem_dado":false,"icf":11.006,"ajustado":false,"percentil":0.846,"peso":0.703,"pontos":49},{"resposta":"Acre","apelidos":[],"sem_dado":false,"icf":11.102,"ajustado":false,"percentil":0.885,"peso":0.731,"pontos":53},{"resposta":"Rondônia","apelidos":[],"sem_dado":false,"icf":11.267,"ajustado":false,"percentil":0.923,"peso":0.76,"pontos":58},{"resposta":"Amapá","apelidos":[],"sem_dado":false,"icf":11.651,"ajustado":false,"percentil":0.962,"peso":0.792,"pontos":63},{"resposta":"Roraima","apelidos":[],"sem_dado":false,"icf":11.811,"ajustado":false,"percentil":1.0,"peso":0.821,"pontos":67}],"supernova":"Roraima"},"luas-do-sistema-solar":{"id":"luas-do-sistema-solar","titulo":"Luas do Sistema Solar","pergunta":"Cite uma lua (satélite natural) do Sistema Solar","respostas":[{"resposta":"Lua","apelidos":[],"sem_dado":false,"icf":9.741,"ajustado":false,"percentil":0.037,"peso":0.119,"pontos":1},{"resposta":"Io","apelidos":[],"sem_dado":false,"icf":11.687,"ajustado":false,"percentil":0.111,"peso":0.197,"pontos":4},{"resposta":"Titã","apelidos":["Titan"],"sem_dado":false,"icf":13.737,"ajustado":false,"percentil":0.148,"peso":0.252,"pontos":6},{"resposta":"Hidra","apelidos":[],"sem_dado":false,"icf":14.245,"ajustado":false,"percentil":0.185,"peso":0.285,"pontos":8},{"resposta":"Calisto","apelidos":[],"sem_dado":false,"icf":14.557,"ajustado":false,"percentil":0.222,"peso":0.315,"pontos":10},{"resposta":"Tritão","apelidos":["Triton"],"sem_dado":false,"icf":15.129,"ajustado":false,"percentil":0.259,"peso":0.349,"pontos":12},{"resposta":"Tétis","apelidos":["Tethys"],"sem_dado":false,"icf":15.451,"ajustado":false,"percentil":0.296,"peso":0.379,"pontos":14},{"resposta":"Europa","apelidos":[],"sem_dado":false,"icf":9.196,"ajustado":true,"percentil":0.0,"peso":0.4,"pontos":16},{"resposta":"Reia","apelidos":["Rhea"],"sem_dado":false,"icf":15.727,"ajustado":false,"percentil":0.333,"peso":0.409,"pontos":17},{"resposta":"Ganimedes","apelidos":[],"sem_dado":false,"icf":15.799,"ajustado":false,"percentil":0.37,"peso":0.436,"pontos":19},{"resposta":"Febe","apelidos":["Phoebe"],"sem_dado":false,"icf":15.836,"ajustado":false,"percentil":0.407,"peso":0.462,"pontos":21},{"resposta":"Nereida","apelidos":[],"sem_dado":false,"icf":15.847,"ajustado":false,"percentil":0.444,"peso":0.488,"pontos":24},{"resposta":"Deimos","apelidos":[],"sem_dado":false,"icf":15.923,"ajustado":false,"percentil":0.481,"peso":0.515,"pontos":27},{"resposta":"Titânia","apelidos":[],"sem_dado":false,"icf":16.042,"ajustado":false,"percentil":0.519,"peso":0.543,"pontos":29},{"resposta":"Fobos","apelidos":["Phobos"],"sem_dado":false,"icf":16.13,"ajustado":false,"percentil":0.556,"peso":0.57,"pontos":32},{"resposta":"Mimas","apelidos":[],"sem_dado":false,"icf":16.239,"ajustado":false,"percentil":0.593,"peso":0.597,"pontos":36},{"resposta":"Encélado","apelidos":["Enceladus"],"sem_dado":false,"icf":16.288,"ajustado":false,"percentil":0.63,"peso":0.624,"pontos":39},{"resposta":"Proteu","apelidos":[],"sem_dado":false,"icf":16.488,"ajustado":false,"percentil":0.667,"peso":0.653,"pontos":43},{"resposta":"Amalteia","apelidos":[],"sem_dado":false,"icf":17.943,"ajustado":false,"percentil":0.704,"peso":0.699,"pontos":49},{"resposta":"Miranda","apelidos":[],"sem_dado":false,"icf":10.661,"ajustado":true,"percentil":0.074,"peso":0.7,"pontos":49},{"resposta":"Ariel","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.87,"peso":0.844,"pontos":71},{"resposta":"Caronte","apelidos":["Charon"],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.87,"peso":0.844,"pontos":71},{"resposta":"Dione","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.87,"peso":0.844,"pontos":71},{"resposta":"Hipérion","apelidos":["Hyperion"],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.87,"peso":0.844,"pontos":71},{"resposta":"Jápeto","apelidos":["Iapetus"],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.87,"peso":0.844,"pontos":71},{"resposta":"Nix","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.87,"peso":0.844,"pontos":71},{"resposta":"Oberon","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.87,"peso":0.844,"pontos":71},{"resposta":"Umbriel","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.87,"peso":0.844,"pontos":71}],"supernova":"Dione"},"paises":{"id":"paises","titulo":"Países","pergunta":"Cite um país","respostas":[{"resposta":"Brasil","apelidos":[],"sem_dado":false,"icf":6.91,"ajustado":false,"percentil":0.005,"peso":0.057,"pontos":1},{"resposta":"Cabo Verde","apelidos":[],"sem_dado":false,"icf":9.118,"ajustado":false,"percentil":0.041,"peso":0.113,"pontos":1},{"resposta":"Emirados Árabes Unidos","apelidos":[],"sem_dado":false,"icf":8.971,"ajustado":false,"percentil":0.032,"peso":0.104,"pontos":1},{"resposta":"Estados Unidos da América","apelidos":[],"sem_dado":false,"icf":8.918,"ajustado":false,"percentil":0.027,"peso":0.1,"pontos":1},{"resposta":"Nova Zelândia","apelidos":[],"sem_dado":false,"icf":7.472,"ajustado":false,"percentil":0.009,"peso":0.068,"pontos":1},{"resposta":"Ossétia do Sul","apelidos":[],"sem_dado":false,"icf":8.026,"ajustado":false,"percentil":0.014,"peso":0.079,"pontos":1},{"resposta":"Porto Rico","apelidos":[],"sem_dado":false,"icf":9.332,"ajustado":false,"percentil":0.045,"peso":0.119,"pontos":1},{"resposta":"Portugal","apelidos":[],"sem_dado":false,"icf":8.496,"ajustado":false,"percentil":0.023,"peso":0.091,"pontos":1},{"resposta":"São Cristóvão e Névis","apelidos":[],"sem_dado":false,"icf":5.798,"ajustado":false,"percentil":0.0,"peso":0.038,"pontos":1},{"resposta":"São Tomé e Príncipe","apelidos":[],"sem_dado":false,"icf":9.36,"ajustado":false,"percentil":0.05,"peso":0.122,"pontos":1},{"resposta":"São Vicente e Granadinas","apelidos":[],"sem_dado":false,"icf":8.176,"ajustado":false,"percentil":0.018,"peso":0.084,"pontos":1},{"resposta":"África do Sul","apelidos":[],"sem_dado":false,"icf":9.0,"ajustado":false,"percentil":0.036,"peso":0.108,"pontos":1},{"resposta":"Alemanha","apelidos":[],"sem_dado":false,"icf":9.701,"ajustado":false,"percentil":0.086,"peso":0.152,"pontos":2},{"resposta":"China","apelidos":[],"sem_dado":false,"icf":9.647,"ajustado":false,"percentil":0.077,"peso":0.145,"pontos":2},{"resposta":"Coreia do Sul","apelidos":[],"sem_dado":false,"icf":9.73,"ajustado":false,"percentil":0.09,"peso":0.156,"pontos":2},{"resposta":"El Salvador","apelidos":[],"sem_dado":false,"icf":9.515,"ajustado":false,"percentil":0.059,"peso":0.131,"pontos":2},{"resposta":"França","apelidos":[],"sem_dado":false,"icf":9.475,"ajustado":false,"percentil":0.054,"peso":0.127,"pontos":2},{"resposta":"Ilhas Marianas do Norte","apelidos":[],"sem_dado":false,"icf":9.638,"ajustado":false,"percentil":0.072,"peso":0.142,"pontos":2},{"resposta":"Países Baixos","apelidos":[],"sem_dado":false,"icf":9.663,"ajustado":false,"percentil":0.081,"peso":0.149,"pontos":2},{"resposta":"República Centro-Africana","apelidos":[],"sem_dado":false,"icf":9.594,"ajustado":false,"percentil":0.063,"peso":0.135,"pontos":2},{"resposta":"Santa Lúcia","apelidos":[],"sem_dado":false,"icf":9.605,"ajustado":false,"percentil":0.068,"peso":0.138,"pontos":2},{"resposta":"Argentina","apelidos":[],"sem_dado":false,"icf":10.03,"ajustado":false,"percentil":0.127,"peso":0.186,"pontos":3},{"resposta":"Coreia do Norte","apelidos":[],"sem_dado":false,"icf":9.973,"ajustado":false,"percentil":0.122,"peso":0.182,"pontos":3},{"resposta":"Costa Rica","apelidos":[],"sem_dado":false,"icf":9.742,"ajustado":false,"percentil":0.095,"peso":0.159,"pontos":3},{"resposta":"Espanha","apelidos":[],"sem_dado":false,"icf":9.75,"ajustado":false,"percentil":0.1,"peso":0.163,"pontos":3},{"resposta":"Irlanda do Norte","apelidos":[],"sem_dado":false,"icf":9.97,"ajustado":false,"percentil":0.118,"peso":0.178,"pontos":3},{"resposta":"Israel","apelidos":[],"sem_dado":false,"icf":9.909,"ajustado":false,"percentil":0.109,"peso":0.171,"pontos":3},{"resposta":"Itália","apelidos":[],"sem_dado":false,"icf":9.829,"ajustado":false,"percentil":0.104,"peso":0.167,"pontos":3},{"resposta":"Reino Unido","apelidos":[],"sem_dado":false,"icf":9.967,"ajustado":false,"percentil":0.113,"peso":0.175,"pontos":3},{"resposta":"Inglaterra","apelidos":[],"sem_dado":false,"icf":10.162,"ajustado":false,"percentil":0.136,"peso":0.194,"pontos":4},{"resposta":"Japão","apelidos":[],"sem_dado":false,"icf":10.039,"ajustado":false,"percentil":0.131,"peso":0.189,"pontos":4},{"resposta":"México","apelidos":[],"sem_dado":false,"icf":10.442,"ajustado":false,"percentil":0.14,"peso":0.201,"pontos":4},{"resposta":"Rússia","apelidos":[],"sem_dado":false,"icf":10.463,"ajustado":false,"percentil":0.145,"peso":0.204,"pontos":4},{"resposta":"Sudão do Sul","apelidos":[],"sem_dado":false,"icf":10.471,"ajustado":false,"percentil":0.149,"peso":0.207,"pontos":4},{"resposta":"Índia","apelidos":[],"sem_dado":false,"icf":10.508,"ajustado":false,"percentil":0.154,"peso":0.211,"pontos":4},{"resposta":"Angola","apelidos":[],"sem_dado":false,"icf":10.527,"ajustado":false,"percentil":0.158,"peso":0.215,"pontos":5},{"resposta":"Canadá","apelidos":[],"sem_dado":false,"icf":10.574,"ajustado":false,"percentil":0.163,"peso":0.218,"pontos":5},{"resposta":"Chile","apelidos":[],"sem_dado":false,"icf":10.711,"ajustado":false,"percentil":0.172,"peso":0.227,"pontos":5},{"resposta":"Costa do Marfim","apelidos":[],"sem_dado":false,"icf":10.689,"ajustado":false,"percentil":0.167,"peso":0.223,"pontos":5},{"resposta":"Egito","apelidos":[],"sem_dado":false,"icf":10.805,"ajustado":false,"percentil":0.176,"peso":0.231,"pontos":5},{"resposta":"Austrália","apelidos":[],"sem_dado":false,"icf":10.838,"ajustado":false,"percentil":0.186,"peso":0.238,"pontos":6},{"resposta":"Cuba","apelidos":[],"sem_dado":false,"icf":10.867,"ajustado":false,"percentil":0.19,"peso":0.241,"pontos":6},{"resposta":"Grécia","apelidos":[],"sem_dado":false,"icf":10.834,"ajustado":false,"percentil":0.181,"peso":0.235,"pontos":6},{"resposta":"Holanda","apelidos":[],"sem_dado":false,"icf":10.928,"ajustado":false,"percentil":0.204,"peso":0.252,"pontos":6},{"resposta":"República Democrática do Congo","apelidos":[],"sem_dado":false,"icf":10.915,"ajustado":false,"percentil":0.197,"peso":0.247,"pontos":6},{"resposta":"República do Congo","apelidos":[],"sem_dado":false,"icf":10.915,"ajustado":false,"percentil":0.197,"peso":0.247,"pontos":6},{"resposta":"Macedônia do Norte","apelidos":[],"sem_dado":false,"icf":11.095,"ajustado":false,"percentil":0.226,"peso":0.27,"pontos":7},{"resposta":"Peru","apelidos":[],"sem_dado":false,"icf":11.034,"ajustado":false,"percentil":0.217,"peso":0.263,"pontos":7},{"resposta":"República Turca de Chipre do Norte","apelidos":[],"sem_dado":false,"icf":10.978,"ajustado":false,"percentil":0.208,"peso":0.256,"pontos":7},{"resposta":"Suíça","apelidos":[],"sem_dado":false,"icf":10.996,"ajustado":false,"percentil":0.213,"peso":0.259,"pontos":7},{"resposta":"Venezuela","apelidos":[],"sem_dado":false,"icf":11.046,"ajustado":false,"percentil":0.222,"peso":0.266,"pontos":7},{"resposta":"Colômbia","apelidos":[],"sem_dado":false,"icf":11.194,"ajustado":false,"percentil":0.249,"peso":0.287,"pontos":8},{"resposta":"Moçambique","apelidos":[],"sem_dado":false,"icf":11.195,"ajustado":false,"percentil":0.253,"peso":0.29,"pontos":8},{"resposta":"Papua-Nova Guiné","apelidos":[],"sem_dado":false,"icf":11.15,"ajustado":false,"percentil":0.235,"peso":0.277,"pontos":8},{"resposta":"República Dominicana","apelidos":[],"sem_dado":false,"icf":11.142,"ajustado":false,"percentil":0.231,"peso":0.274,"pontos":8},{"resposta":"República Tcheca","apelidos":[],"sem_dado":false,"icf":11.166,"ajustado":false,"percentil":0.24,"peso":0.28,"pontos":8},{"resposta":"Uruguai","apelidos":[],"sem_dado":false,"icf":11.174,"ajustado":false,"percentil":0.244,"peso":0.284,"pontos":8},{"resposta":"Paraguai","apelidos":[],"sem_dado":false,"icf":11.239,"ajustado":false,"percentil":0.262,"peso":0.297,"pontos":9},{"resposta":"País de Gales","apelidos":[],"sem_dado":false,"icf":11.196,"ajustado":false,"percentil":0.258,"peso":0.293,"pontos":9},{"resposta":"Síria","apelidos":[],"sem_dado":false,"icf":11.344,"ajustado":false,"percentil":0.276,"peso":0.308,"pontos":9},{"resposta":"Timor-Leste","apelidos":[],"sem_dado":false,"icf":11.248,"ajustado":false,"percentil":0.267,"peso":0.301,"pontos":9},{"resposta":"Vaticano","apelidos":[],"sem_dado":false,"icf":11.267,"ajustado":false,"percentil":0.271,"peso":0.304,"pontos":9},{"resposta":"Irlanda","apelidos":[],"sem_dado":false,"icf":11.429,"ajustado":false,"percentil":0.285,"peso":0.316,"pontos":10},{"resposta":"Serra Leoa","apelidos":[],"sem_dado":false,"icf":11.436,"ajustado":false,"percentil":0.29,"peso":0.319,"pontos":10},{"resposta":"Suécia","apelidos":[],"sem_dado":false,"icf":11.438,"ajustado":false,"percentil":0.294,"peso":0.322,"pontos":10},{"resposta":"Turquia","apelidos":[],"sem_dado":false,"icf":11.348,"ajustado":false,"percentil":0.281,"peso":0.311,"pontos":10},{"resposta":"Bélgica","apelidos":[],"sem_dado":false,"icf":11.535,"ajustado":false,"percentil":0.312,"peso":0.336,"pontos":11},{"resposta":"Ilhas Virgens","apelidos":[],"sem_dado":false,"icf":11.526,"ajustado":false,"percentil":0.308,"peso":0.333,"pontos":11},{"resposta":"Iraque","apelidos":[],"sem_dado":false,"icf":11.478,"ajustado":false,"percentil":0.299,"peso":0.326,"pontos":11},{"resposta":"Irã","apelidos":[],"sem_dado":false,"icf":11.498,"ajustado":false,"percentil":0.303,"peso":0.329,"pontos":11},{"resposta":"Bolívia","apelidos":[],"sem_dado":false,"icf":11.63,"ajustado":false,"percentil":0.321,"peso":0.344,"pontos":12},{"resposta":"Guiné","apelidos":[],"sem_dado":false,"icf":11.651,"ajustado":false,"percentil":0.328,"peso":0.349,"pontos":12},{"resposta":"Guiné-Bissau","apelidos":[],"sem_dado":false,"icf":11.651,"ajustado":false,"percentil":0.328,"peso":0.349,"pontos":12},{"resposta":"Malta","apelidos":[],"sem_dado":false,"icf":11.568,"ajustado":false,"percentil":0.317,"peso":0.34,"pontos":12},{"resposta":"Equador","apelidos":[],"sem_dado":false,"icf":11.707,"ajustado":false,"percentil":0.339,"peso":0.358,"pontos":13},{"resposta":"Macau","apelidos":[],"sem_dado":false,"icf":11.786,"ajustado":false,"percentil":0.348,"peso":0.365,"pontos":13},{"resposta":"Salomão","apelidos":[],"sem_dado":false,"icf":11.727,"ajustado":false,"percentil":0.344,"peso":0.361,"pontos":13},{"resposta":"Áustria","apelidos":[],"sem_dado":false,"icf":11.681,"ajustado":false,"percentil":0.335,"peso":0.354,"pontos":13},{"resposta":"Dinamarca","apelidos":[],"sem_dado":false,"icf":11.874,"ajustado":false,"percentil":0.353,"peso":0.369,"pontos":14},{"resposta":"Palestina","apelidos":[],"sem_dado":false,"icf":11.881,"ajustado":false,"percentil":0.357,"peso":0.373,"pontos":14},{"resposta":"Tailândia","apelidos":[],"sem_dado":false,"icf":11.896,"ajustado":false,"percentil":0.367,"peso":0.379,"pontos":14},{"resposta":"Ucrânia","apelidos":[],"sem_dado":false,"icf":11.894,"ajustado":false,"percentil":0.362,"peso":0.376,"pontos":14},{"resposta":"Escócia","apelidos":[],"sem_dado":false,"icf":11.985,"ajustado":false,"percentil":0.385,"peso":0.393,"pontos":15},{"resposta":"Guiana Francesa","apelidos":[],"sem_dado":false,"icf":11.909,"ajustado":false,"percentil":0.371,"peso":0.383,"pontos":15},{"resposta":"Haiti","apelidos":[],"sem_dado":false,"icf":11.957,"ajustado":false,"percentil":0.38,"peso":0.39,"pontos":15},{"resposta":"Noruega","apelidos":[],"sem_dado":false,"icf":11.912,"ajustado":false,"percentil":0.376,"peso":0.386,"pontos":15},{"resposta":"Indonésia","apelidos":[],"sem_dado":false,"icf":12.029,"ajustado":false,"percentil":0.389,"peso":0.397,"pontos":16},{"resposta":"Marrocos","apelidos":[],"sem_dado":false,"icf":12.037,"ajustado":false,"percentil":0.394,"peso":0.4,"pontos":16},{"resposta":"Polônia","apelidos":[],"sem_dado":false,"icf":12.043,"ajustado":false,"percentil":0.398,"peso":0.403,"pontos":16},{"resposta":"Afeganistão","apelidos":[],"sem_dado":false,"icf":12.047,"ajustado":false,"percentil":0.403,"peso":0.407,"pontos":17},{"resposta":"Estados Federados da Micronésia","apelidos":[],"sem_dado":false,"icf":12.129,"ajustado":false,"percentil":0.416,"peso":0.417,"pontos":17},{"resposta":"Hungria","apelidos":[],"sem_dado":false,"icf":12.07,"ajustado":false,"percentil":0.412,"peso":0.413,"pontos":17},{"resposta":"Luxemburgo","apelidos":[],"sem_dado":false,"icf":12.054,"ajustado":false,"percentil":0.407,"peso":0.41,"pontos":17},{"resposta":"Montenegro","apelidos":[],"sem_dado":false,"icf":12.131,"ajustado":false,"percentil":0.421,"peso":0.42,"pontos":18},{"resposta":"Panamá","apelidos":[],"sem_dado":false,"icf":12.135,"ajustado":false,"percentil":0.425,"peso":0.424,"pontos":18},{"resposta":"Polinésia Francesa","apelidos":[],"sem_dado":false,"icf":12.209,"ajustado":false,"percentil":0.43,"peso":0.428,"pontos":18},{"resposta":"Camarões","apelidos":[],"sem_dado":false,"icf":12.286,"ajustado":false,"percentil":0.443,"peso":0.438,"pontos":19},{"resposta":"Finlândia","apelidos":[],"sem_dado":false,"icf":12.251,"ajustado":false,"percentil":0.439,"peso":0.435,"pontos":19},{"resposta":"Granada","apelidos":[],"sem_dado":false,"icf":12.219,"ajustado":false,"percentil":0.434,"peso":0.431,"pontos":19},{"resposta":"Croácia","apelidos":[],"sem_dado":false,"icf":12.3,"ajustado":false,"percentil":0.448,"peso":0.442,"pontos":20},{"resposta":"Líbia","apelidos":[],"sem_dado":false,"icf":12.383,"ajustado":false,"percentil":0.452,"peso":0.446,"pontos":20},{"resposta":"Paquistão","apelidos":[],"sem_dado":false,"icf":12.387,"ajustado":false,"percentil":0.457,"peso":0.449,"pontos":20},{"resposta":"Filipinas","apelidos":[],"sem_dado":false,"icf":12.47,"ajustado":false,"percentil":0.475,"peso":0.463,"pontos":21},{"resposta":"Líbano","apelidos":[],"sem_dado":false,"icf":12.409,"ajustado":false,"percentil":0.462,"peso":0.453,"pontos":21},{"resposta":"Nigéria","apelidos":[],"sem_dado":false,"icf":12.438,"ajustado":false,"percentil":0.471,"peso":0.459,"pontos":21},{"resposta":"Vietnã","apelidos":[],"sem_dado":false,"icf":12.412,"ajustado":false,"percentil":0.466,"peso":0.456,"pontos":21},{"resposta":"Congo","apelidos":[],"sem_dado":false,"icf":12.478,"ajustado":false,"percentil":0.48,"peso":0.466,"pontos":22},{"resposta":"Guiné Equatorial","apelidos":[],"sem_dado":false,"icf":12.496,"ajustado":false,"percentil":0.484,"peso":0.47,"pontos":22},{"resposta":"Honduras","apelidos":[],"sem_dado":false,"icf":12.525,"ajustado":false,"percentil":0.489,"peso":0.473,"pontos":22},{"resposta":"Malásia","apelidos":[],"sem_dado":false,"icf":12.579,"ajustado":false,"percentil":0.493,"peso":0.477,"pontos":23},{"resposta":"Taiwan","apelidos":[],"sem_dado":false,"icf":12.624,"ajustado":false,"percentil":0.498,"peso":0.481,"pontos":23},{"resposta":"Geórgia","apelidos":[],"sem_dado":false,"icf":12.687,"ajustado":false,"percentil":0.511,"peso":0.491,"pontos":24},{"resposta":"Islândia","apelidos":[],"sem_dado":false,"icf":12.678,"ajustado":false,"percentil":0.502,"peso":0.485,"pontos":24},{"resposta":"Sérvia","apelidos":[],"sem_dado":false,"icf":12.683,"ajustado":false,"percentil":0.507,"peso":0.488,"pontos":24},{"resposta":"Bermudas","apelidos":[],"sem_dado":false,"icf":12.703,"ajustado":false,"percentil":0.516,"peso":0.495,"pontos":25},{"resposta":"Guatemala","apelidos":[],"sem_dado":false,"icf":12.74,"ajustado":false,"percentil":0.525,"peso":0.502,"pontos":25},{"resposta":"Jamaica","apelidos":[],"sem_dado":false,"icf":12.709,"ajustado":false,"percentil":0.52,"peso":0.498,"pontos":25},{"resposta":"Bulgária","apelidos":[],"sem_dado":false,"icf":12.79,"ajustado":false,"percentil":0.538,"peso":0.512,"pontos":26},{"resposta":"Gana","apelidos":[],"sem_dado":false,"icf":12.763,"ajustado":false,"percentil":0.534,"peso":0.508,"pontos":26},{"resposta":"Marshall","apelidos":[],"sem_dado":false,"icf":12.762,"ajustado":false,"percentil":0.529,"peso":0.505,"pontos":26},{"resposta":"República Árabe Saaraui Democrática","apelidos":[],"sem_dado":false,"icf":12.89,"ajustado":false,"percentil":0.543,"peso":0.516,"pontos":27},{"resposta":"Singapura","apelidos":[],"sem_dado":false,"icf":12.929,"ajustado":false,"percentil":0.552,"peso":0.523,"pontos":27},{"resposta":"Sudão","apelidos":[],"sem_dado":false,"icf":12.917,"ajustado":false,"percentil":0.548,"peso":0.52,"pontos":27},{"resposta":"Chipre","apelidos":[],"sem_dado":false,"icf":12.956,"ajustado":false,"percentil":0.561,"peso":0.53,"pontos":28},{"resposta":"Tunísia","apelidos":[],"sem_dado":false,"icf":12.935,"ajustado":false,"percentil":0.557,"peso":0.527,"pontos":28},{"resposta":"Argélia","apelidos":[],"sem_dado":false,"icf":12.992,"ajustado":false,"percentil":0.57,"peso":0.537,"pontos":29},{"resposta":"Romênia","apelidos":[],"sem_dado":false,"icf":12.989,"ajustado":false,"percentil":0.566,"peso":0.534,"pontos":29},{"resposta":"San Marino","apelidos":[],"sem_dado":false,"icf":13.037,"ajustado":false,"percentil":0.575,"peso":0.541,"pontos":29},{"resposta":"Etiópia","apelidos":[],"sem_dado":false,"icf":13.068,"ajustado":false,"percentil":0.588,"peso":0.551,"pontos":30},{"resposta":"Guadalupe","apelidos":[],"sem_dado":false,"icf":13.038,"ajustado":false,"percentil":0.579,"peso":0.544,"pontos":30},{"resposta":"Jordânia","apelidos":[],"sem_dado":false,"icf":13.055,"ajustado":false,"percentil":0.584,"peso":0.547,"pontos":30},{"resposta":"Mônaco","apelidos":[],"sem_dado":false,"icf":13.102,"ajustado":false,"percentil":0.593,"peso":0.554,"pontos":31},{"resposta":"Nepal","apelidos":[],"sem_dado":false,"icf":13.199,"ajustado":false,"percentil":0.597,"peso":0.559,"pontos":31},{"resposta":"Quênia","apelidos":[],"sem_dado":false,"icf":13.22,"ajustado":false,"percentil":0.602,"peso":0.562,"pontos":32},{"resposta":"Senegal","apelidos":[],"sem_dado":false,"icf":13.246,"ajustado":false,"percentil":0.606,"peso":0.566,"pontos":32},{"resposta":"Somália","apelidos":[],"sem_dado":false,"icf":13.262,"ajustado":false,"percentil":0.611,"peso":0.569,"pontos":32},{"resposta":"Mali","apelidos":[],"sem_dado":false,"icf":13.284,"ajustado":false,"percentil":0.615,"peso":0.573,"pontos":33},{"resposta":"Nicarágua","apelidos":[],"sem_dado":false,"icf":13.289,"ajustado":false,"percentil":0.62,"peso":0.576,"pontos":33},{"resposta":"Eslováquia","apelidos":[],"sem_dado":false,"icf":13.3,"ajustado":false,"percentil":0.624,"peso":0.579,"pontos":34},{"resposta":"Lituânia","apelidos":[],"sem_dado":false,"icf":13.341,"ajustado":false,"percentil":0.633,"peso":0.586,"pontos":34},{"resposta":"Qatar","apelidos":[],"sem_dado":false,"icf":13.331,"ajustado":false,"percentil":0.629,"peso":0.583,"pontos":34},{"resposta":"Bahamas","apelidos":[],"sem_dado":false,"icf":13.389,"ajustado":false,"percentil":0.643,"peso":0.593,"pontos":35},{"resposta":"Madagascar","apelidos":[],"sem_dado":false,"icf":13.343,"ajustado":false,"percentil":0.638,"peso":0.589,"pontos":35},{"resposta":"Camboja","apelidos":[],"sem_dado":false,"icf":13.478,"ajustado":false,"percentil":0.656,"peso":0.604,"pontos":36},{"resposta":"Guiana","apelidos":[],"sem_dado":false,"icf":13.402,"ajustado":false,"percentil":0.652,"peso":0.6,"pontos":36},{"resposta":"Tanzânia","apelidos":[],"sem_dado":false,"icf":13.392,"ajustado":false,"percentil":0.647,"peso":0.596,"pontos":36},{"resposta":"Bangladesh","apelidos":[],"sem_dado":false,"icf":13.482,"ajustado":false,"percentil":0.665,"peso":0.61,"pontos":37},{"resposta":"Uganda","apelidos":[],"sem_dado":false,"icf":13.48,"ajustado":false,"percentil":0.661,"peso":0.607,"pontos":37},{"resposta":"Armênia","apelidos":[],"sem_dado":false,"icf":13.525,"ajustado":false,"percentil":0.679,"peso":0.62,"pontos":38},{"resposta":"Aruba","apelidos":[],"sem_dado":false,"icf":13.516,"ajustado":false,"percentil":0.674,"peso":0.617,"pontos":38},{"resposta":"Ilhas Caimão","apelidos":[],"sem_dado":false,"icf":13.485,"ajustado":false,"percentil":0.67,"peso":0.613,"pontos":38},{"resposta":"Albânia","apelidos":[],"sem_dado":false,"icf":13.565,"ajustado":false,"percentil":0.688,"peso":0.627,"pontos":39},{"resposta":"Andorra","apelidos":[],"sem_dado":false,"icf":13.548,"ajustado":false,"percentil":0.683,"peso":0.624,"pontos":39},{"resposta":"Arábia Saudita","apelidos":[],"sem_dado":false,"icf":13.617,"ajustado":false,"percentil":0.697,"peso":0.634,"pontos":40},{"resposta":"Barbados","apelidos":[],"sem_dado":false,"icf":13.616,"ajustado":false,"percentil":0.692,"peso":0.631,"pontos":40},{"resposta":"Cazaquistão","apelidos":[],"sem_dado":false,"icf":13.739,"ajustado":false,"percentil":0.706,"peso":0.642,"pontos":41},{"resposta":"Ruanda","apelidos":[],"sem_dado":false,"icf":13.736,"ajustado":false,"percentil":0.701,"peso":0.639,"pontos":41},{"resposta":"Eslovênia","apelidos":[],"sem_dado":false,"icf":13.747,"ajustado":false,"percentil":0.71,"peso":0.645,"pontos":42},{"resposta":"Namíbia","apelidos":[],"sem_dado":false,"icf":13.782,"ajustado":false,"percentil":0.715,"peso":0.649,"pontos":42},{"resposta":"Kosovo","apelidos":[],"sem_dado":false,"icf":13.785,"ajustado":false,"percentil":0.719,"peso":0.652,"pontos":43},{"resposta":"Kuwait","apelidos":[],"sem_dado":false,"icf":13.827,"ajustado":false,"percentil":0.724,"peso":0.656,"pontos":43},{"resposta":"Belize","apelidos":[],"sem_dado":false,"icf":13.873,"ajustado":false,"percentil":0.733,"peso":0.663,"pontos":44},{"resposta":"Iêmen","apelidos":[],"sem_dado":false,"icf":13.866,"ajustado":false,"percentil":0.729,"peso":0.66,"pontos":44},{"resposta":"Zâmbia","apelidos":[],"sem_dado":false,"icf":13.928,"ajustado":false,"percentil":0.738,"peso":0.667,"pontos":44},{"resposta":"Bahrein","apelidos":[],"sem_dado":false,"icf":13.929,"ajustado":false,"percentil":0.742,"peso":0.67,"pontos":45},{"resposta":"Maldivas","apelidos":[],"sem_dado":false,"icf":13.944,"ajustado":false,"percentil":0.747,"peso":0.674,"pontos":45},{"resposta":"Estônia","apelidos":[],"sem_dado":false,"icf":13.967,"ajustado":false,"percentil":0.756,"peso":0.68,"pontos":46},{"resposta":"Fiji","apelidos":[],"sem_dado":false,"icf":13.957,"ajustado":false,"percentil":0.751,"peso":0.677,"pontos":46},{"resposta":"Laos","apelidos":[],"sem_dado":false,"icf":13.977,"ajustado":false,"percentil":0.76,"peso":0.683,"pontos":47},{"resposta":"Mongólia","apelidos":[],"sem_dado":false,"icf":13.999,"ajustado":false,"percentil":0.765,"peso":0.687,"pontos":47},{"resposta":"Azerbaijão","apelidos":[],"sem_dado":false,"icf":14.046,"ajustado":false,"percentil":0.774,"peso":0.694,"pontos":48},{"resposta":"Suriname","apelidos":[],"sem_dado":false,"icf":14.038,"ajustado":false,"percentil":0.769,"peso":0.691,"pontos":48},{"resposta":"Curaçao","apelidos":[],"sem_dado":false,"icf":14.058,"ajustado":false,"percentil":0.778,"peso":0.697,"pontos":49},{"resposta":"Letônia","apelidos":[],"sem_dado":false,"icf":14.135,"ajustado":false,"percentil":0.783,"peso":0.701,"pontos":49},{"resposta":"Libéria","apelidos":[],"sem_dado":false,"icf":14.214,"ajustado":false,"percentil":0.792,"peso":0.709,"pontos":50},{"resposta":"Zimbábue","apelidos":[],"sem_dado":false,"icf":14.144,"ajustado":false,"percentil":0.787,"peso":0.705,"pontos":50},{"resposta":"Gabão","apelidos":[],"sem_dado":false,"icf":14.32,"ajustado":false,"percentil":0.801,"peso":0.717,"pontos":51},{"resposta":"Níger","apelidos":[],"sem_dado":false,"icf":14.308,"ajustado":false,"percentil":0.796,"peso":0.713,"pontos":51},{"resposta":"Chade","apelidos":[],"sem_dado":false,"icf":14.338,"ajustado":false,"percentil":0.81,"peso":0.723,"pontos":52},{"resposta":"Samoa","apelidos":[],"sem_dado":false,"icf":14.324,"ajustado":false,"percentil":0.805,"peso":0.72,"pontos":52},{"resposta":"Butão","apelidos":[],"sem_dado":false,"icf":14.368,"ajustado":false,"percentil":0.819,"peso":0.73,"pontos":53},{"resposta":"Togo","apelidos":[],"sem_dado":false,"icf":14.352,"ajustado":false,"percentil":0.814,"peso":0.727,"pontos":53},{"resposta":"Mauritânia","apelidos":[],"sem_dado":false,"icf":14.372,"ajustado":false,"percentil":0.824,"peso":0.733,"pontos":54},{"resposta":"Omã","apelidos":[],"sem_dado":false,"icf":14.379,"ajustado":false,"percentil":0.828,"peso":0.737,"pontos":54},{"resposta":"Bielorrússia","apelidos":[],"sem_dado":false,"icf":14.398,"ajustado":false,"percentil":0.837,"peso":0.743,"pontos":55},{"resposta":"Moldávia","apelidos":[],"sem_dado":false,"icf":14.382,"ajustado":false,"percentil":0.833,"peso":0.74,"pontos":55},{"resposta":"Palau","apelidos":[],"sem_dado":false,"icf":14.436,"ajustado":false,"percentil":0.846,"peso":0.75,"pontos":56},{"resposta":"Uzbequistão","apelidos":[],"sem_dado":false,"icf":14.414,"ajustado":false,"percentil":0.842,"peso":0.747,"pontos":56},{"resposta":"Malawi","apelidos":[],"sem_dado":false,"icf":14.449,"ajustado":false,"percentil":0.851,"peso":0.753,"pontos":57},{"resposta":"Mianmar","apelidos":[],"sem_dado":false,"icf":14.468,"ajustado":false,"percentil":0.855,"peso":0.757,"pontos":57},{"resposta":"Maurícia","apelidos":[],"sem_dado":false,"icf":14.51,"ajustado":false,"percentil":0.864,"peso":0.764,"pontos":58},{"resposta":"Seychelles","apelidos":[],"sem_dado":false,"icf":14.487,"ajustado":false,"percentil":0.86,"peso":0.76,"pontos":58},{"resposta":"Burundi","apelidos":[],"sem_dado":false,"icf":14.538,"ajustado":false,"percentil":0.873,"peso":0.77,"pontos":59},{"resposta":"Groenlândia","apelidos":[],"sem_dado":false,"icf":14.532,"ajustado":false,"percentil":0.869,"peso":0.767,"pontos":59},{"resposta":"Liechtenstein","apelidos":[],"sem_dado":false,"icf":14.548,"ajustado":false,"percentil":0.878,"peso":0.774,"pontos":60},{"resposta":"Botswana","apelidos":[],"sem_dado":false,"icf":14.671,"ajustado":false,"percentil":0.882,"peso":0.779,"pontos":61},{"resposta":"Brunei","apelidos":[],"sem_dado":false,"icf":14.727,"ajustado":false,"percentil":0.887,"peso":0.783,"pontos":61},{"resposta":"Antígua e Barbuda","apelidos":[],"sem_dado":false,"icf":14.766,"ajustado":false,"percentil":0.891,"peso":0.786,"pontos":62},{"resposta":"Tonga","apelidos":[],"sem_dado":false,"icf":14.811,"ajustado":false,"percentil":0.896,"peso":0.79,"pontos":62},{"resposta":"Gâmbia","apelidos":[],"sem_dado":false,"icf":14.818,"ajustado":false,"percentil":0.9,"peso":0.793,"pontos":63},{"resposta":"Dominica","apelidos":[],"sem_dado":false,"icf":14.88,"ajustado":false,"percentil":0.905,"peso":0.797,"pontos":64},{"resposta":"Suazilândia","apelidos":[],"sem_dado":false,"icf":14.984,"ajustado":false,"percentil":0.91,"peso":0.802,"pontos":64},{"resposta":"Eritreia","apelidos":[],"sem_dado":false,"icf":15.054,"ajustado":false,"percentil":0.919,"peso":0.809,"pontos":65},{"resposta":"Quirguistão","apelidos":[],"sem_dado":false,"icf":14.986,"ajustado":false,"percentil":0.914,"peso":0.805,"pontos":65},{"resposta":"Vanuatu","apelidos":[],"sem_dado":false,"icf":15.087,"ajustado":false,"percentil":0.923,"peso":0.813,"pontos":66},{"resposta":"Benim","apelidos":[],"sem_dado":false,"icf":15.305,"ajustado":false,"percentil":0.928,"peso":0.819,"pontos":67},{"resposta":"Turcomenistão","apelidos":[],"sem_dado":false,"icf":15.448,"ajustado":false,"percentil":0.932,"peso":0.824,"pontos":68},{"resposta":"Lesoto","apelidos":[],"sem_dado":false,"icf":15.495,"ajustado":false,"percentil":0.941,"peso":0.831,"pontos":69},{"resposta":"Tajiquistão","apelidos":[],"sem_dado":false,"icf":15.476,"ajustado":false,"percentil":0.937,"peso":0.828,"pontos":69},{"resposta":"Tuvalu","apelidos":[],"sem_dado":false,"icf":15.586,"ajustado":false,"percentil":0.946,"peso":0.836,"pontos":70},{"resposta":"Comores","apelidos":[],"sem_dado":false,"icf":15.687,"ajustado":false,"percentil":0.95,"peso":0.84,"pontos":71},{"resposta":"Micronésia","apelidos":[],"sem_dado":false,"icf":15.749,"ajustado":false,"percentil":0.955,"peso":0.844,"pontos":71},{"resposta":"Nauru","apelidos":[],"sem_dado":false,"icf":15.836,"ajustado":false,"percentil":0.959,"peso":0.849,"pontos":72},{"resposta":"Djibuti","apelidos":[],"sem_dado":false,"icf":15.969,"ajustado":false,"percentil":0.968,"peso":0.857,"pontos":73},{"resposta":"Kiribati","apelidos":[],"sem_dado":false,"icf":15.962,"ajustado":false,"percentil":0.964,"peso":0.853,"pontos":73},{"resposta":"Abecásia","apelidos":[],"sem_dado":false,"icf":16.973,"ajustado":false,"percentil":0.973,"peso":0.874,"pontos":76},{"resposta":"Eswatini","apelidos":[],"sem_dado":false,"icf":19.641,"ajustado":false,"percentil":0.977,"peso":0.914,"pontos":84},{"resposta":"Burkina Faso","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.991,"peso":0.928,"pontos":86},{"resposta":"Bósnia e Herzegovina","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.991,"peso":0.928,"pontos":86},{"resposta":"Hong Kong","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.991,"peso":0.928,"pontos":86},{"resposta":"Sri Lanka","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.991,"peso":0.928,"pontos":86},{"resposta":"Trinidad e Tobago","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.991,"peso":0.928,"pontos":86}],"supernova":"Bósnia e Herzegovina"},"planetas-e-planetas-anoes":{"id":"planetas-e-planetas-anoes","titulo":"Planetas e planetas anões","pergunta":"Cite um planeta ou planeta anão do Sistema Solar","respostas":[{"resposta":"Terra","apelidos":[],"sem_dado":false,"icf":8.262,"ajustado":false,"percentil":0.0,"peso":0.072,"pontos":1},{"resposta":"Marte","apelidos":[],"sem_dado":false,"icf":11.023,"ajustado":false,"percentil":0.062,"peso":0.154,"pontos":2},{"resposta":"Mercúrio","apelidos":[],"sem_dado":false,"icf":12.12,"ajustado":false,"percentil":0.125,"peso":0.213,"pontos":5},{"resposta":"Júpiter","apelidos":["Jupiter"],"sem_dado":false,"icf":12.314,"ajustado":false,"percentil":0.188,"peso":0.26,"pontos":7},{"resposta":"Vênus","apelidos":["Venus"],"sem_dado":false,"icf":12.375,"ajustado":false,"percentil":0.25,"peso":0.304,"pontos":9},{"resposta":"Saturno","apelidos":[],"sem_dado":false,"icf":12.417,"ajustado":false,"percentil":0.312,"peso":0.349,"pontos":12},{"resposta":"Plutão","apelidos":["Plutao"],"sem_dado":false,"icf":12.98,"ajustado":false,"percentil":0.375,"peso":0.4,"pontos":16},{"resposta":"Urano","apelidos":[],"sem_dado":false,"icf":13.214,"ajustado":false,"percentil":0.438,"peso":0.447,"pontos":20},{"resposta":"Netuno","apelidos":[],"sem_dado":false,"icf":13.264,"ajustado":false,"percentil":0.5,"peso":0.491,"pontos":24},{"resposta":"Ceres","apelidos":[],"sem_dado":false,"icf":13.576,"ajustado":false,"percentil":0.562,"peso":0.54,"pontos":29},{"resposta":"Gonggong","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.812,"peso":0.803,"pontos":64},{"resposta":"Haumea","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.812,"peso":0.803,"pontos":64},{"resposta":"Makemake","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.812,"peso":0.803,"pontos":64},{"resposta":"Orcus","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.812,"peso":0.803,"pontos":64},{"resposta":"Quaoar","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.812,"peso":0.803,"pontos":64},{"resposta":"Sedna","apelidos":[],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.812,"peso":0.803,"pontos":64},{"resposta":"Éris","apelidos":["Eris"],"sem_dado":true,"icf":20.0,"ajustado":false,"percentil":0.812,"peso":0.803,"pontos":64}],"supernova":"Éris"}}};
 </script>
   <script>
-// Cena em pixel art: foguete subindo por um campo de estrelas.
-// Tudo é desenhado numa tela pequena (96x54) e ampliado sem suavização,
-// então cada "pixel" do sprite vira um bloco nítido na tela.
+// Cena em tela cheia, em pixel art: o foguete parte da Terra e desce pelo espaço.
+//
+// A câmera segue a "profundidade" (anos-luz acumulados). Cada resposta faz o
+// foguete descer pelos pontos que ela vale, sempre no mesmo tempo
+// (DURACAO_DESCIDA): uma resposta rara percorre muito mais espaço nesse tempo,
+// então desce rápido; uma óbvia quase não sai do lugar.
+//
+// Tudo é desenhado numa tela pequena (cerca de 1/4 da janela) e ampliado sem
+// suavização, para cada pixel do desenho virar um bloco nítido.
 
-const LARGURA = 96;
-const ALTURA = 54;
+const PX_POR_AL = 1.5; // pixels da cena por ano-luz
+const DURACAO_DESCIDA = 2200; // ms, igual para toda resposta
+const FONTE = "8px 'Press Start 2P', monospace";
 
+// Marcos do caminho. "al" é a profundidade em anos-luz.
+const MARCOS = [
+  { al: 15, nome: "LUA", corpo: { r: 6, cores: ["#c9cede", "#8a90a8", "#6b7088"], crateras: true } },
+  { al: 40, nome: "MARTE", corpo: { r: 7, cores: ["#e0623a", "#b8452a", "#7d2a1a"] } },
+  { al: 80, nome: "CINTURÃO DE ASTEROIDES", cinturao: true },
+  { al: 120, nome: "JÚPITER", corpo: { r: 16, cores: ["#e8c9a0", "#c08a5a", "#8a5a3a"], faixas: true } },
+  { al: 180, nome: "SATURNO", corpo: { r: 12, cores: ["#f0dc9a", "#c9a85a", "#8f7440"], anel: "#e8d8a8" } },
+  { al: 250, nome: "URANO", corpo: { r: 10, cores: ["#a8f0f0", "#6ccfd8", "#3a8f9a"], anel: "#bfe" } },
+  { al: 330, nome: "NETUNO", corpo: { r: 10, cores: ["#5a8cff", "#3a5ad8", "#22338f"], faixas: true } },
+  { al: 420, nome: "PLUTÃO", corpo: { r: 4, cores: ["#e8d0b8", "#b89a80", "#7d6a58"] } },
+  { al: 550, nome: "CINTURÃO DE KUIPER", cinturao: true },
+  { al: 700, nome: "NUVEM DE OORT", cinturao: true },
+  { al: 900, nome: "ALFA CENTAURI", corpo: { r: 9, cores: ["#fff6c0", "#ffd23f", "#ff9a1f"], estrela: true } },
+  { al: 1200, nome: "NEBULOSA DE ÓRION", nebulosa: true },
+  { al: 1600, nome: "BURACO NEGRO", corpo: { r: 14, cores: ["#000000", "#000000", "#000000"], anel: "#ff9a1f" } },
+];
+
+// Cor do fundo por profundidade: céu claro perto da Terra, escurecendo até o preto.
+const PARADAS_FUNDO = [
+  [0, [176, 228, 255]],
+  [12, [130, 196, 250]],
+  [35, [60, 120, 220]],
+  [80, [26, 46, 130]],
+  [160, [13, 14, 66]],
+  [400, [8, 4, 34]],
+  [1200, [2, 1, 8]],
+];
+
+const FOGUETE = [
+  ".....R.....",
+  "....RRR....",
+  "....WWW....",
+  "...WWWWG...",
+  "...WWBWG...",
+  "...WBBBG...",
+  "...WWBWG...",
+  "...WWWWG...",
+  "...WWWWG...",
+  "..RWWWWGR..",
+  ".RRWWWWGRR.",
+  ".RR.GGG.RR.",
+].reverse(); // de ponta-cabeça: o foguete desce
+const CHAMA = [
+  ["....FFF....", ".....f....."],
+  ["....FfF....", "....fFf....", ".....f....."],
+  ["...FFfFF...", "...fFFFf...", "....fFf....", ".....f....."],
+];
+const SATELITE = ["CC.....CC", "CC..W..CC", "CCWWWWWCC", "CC..W..CC", "CC.....CC"];
 const CORES = {
-  W: "#f4f4ff", // casco
-  G: "#9aa3c7", // sombra do casco
-  R: "#ff3d6e", // aletas e bico
-  B: "#3ad7ff", // janela
-  F: "#ffd23f", // chama clara
-  f: "#ff7b00", // chama escura
-  P: "#b06bff", // planeta
-  p: "#7a3cff", // faixa do planeta
-  O: "#ffd23f", // anel
-  L: "#c9cede", // lua
-  l: "#8a90a8", // cratera
-  S: "#ffffff", // estrela
-  s: "#ffd23f", // brilho
-  M: "#ff3dd6", // supernova
-  C: "#3ad7ff", // satélite
+  W: "#f4f4ff", G: "#9aa3c7", R: "#ff3d6e", B: "#3ad7ff", F: "#ffd23f", f: "#ff7b00", C: "#3ad7ff",
 };
 
-// Sprites: cada string é uma linha, "." é transparente.
-const SPRITES = {
-  foguete: [
-    ".....R.....",
-    "....RRR....",
-    "....WWW....",
-    "...WWWWG...",
-    "...WWBWG...",
-    "...WBBBG...",
-    "...WWBWG...",
-    "...WWWWG...",
-    "...WWWWG...",
-    "..RWWWWGR..",
-    ".RRWWWWGRR.",
-    ".RR.GGG.RR.",
-  ],
-  chama: [
-    ["....FFF....", ".....f.....", "..........."],
-    ["....FfF....", "....fFf....", ".....f....."],
-  ],
-  satelite: [
-    "CC.....CC",
-    "CC..W..CC",
-    "CCWWWWWCC",
-    "CC..W..CC",
-    "CC.....CC",
-  ],
-  lua: [
-    "..LLLL..",
-    ".LLlLLL.",
-    "LLLLLlLL",
-    "LlLLLLLL",
-    "LLLLlLLL",
-    "LLlLLLLL",
-    ".LLLLlL.",
-    "..LLLL..",
-  ],
-  planeta: [
-    "....PPPPP....",
-    "..PPPPPPPPP..",
-    ".PPpppppPPPP.",
-    "OOOOOOOOOOOOO",
-    "PPPPPPPPPpppP",
-    ".PpppPPPPPPP.",
-    "..PPPPPPPPP..",
-    "....PPPPP....",
-  ],
-  supernova: [
-    "......s......",
-    "...s..M..s...",
-    "....MMMMM....",
-    "...MMSSSMM...",
-    "..MMSSSSSMM..",
-    "s.MSSSSSSSM.s",
-    "..MMSSSSSMM..",
-    "...MMSSSMM...",
-    "....MMMMM....",
-    "...s..M..s...",
-    "......s......",
-  ],
-};
+// Faixas de pontos: cor da caixinha e ícone do resultado.
+const FAIXAS = [
+  { min: 50, nome: "planeta", cor: "#b06bff" }, // profundo: roxo, denso, afunda rápido
+  { min: 20, nome: "lua", cor: "#ffd23f" },
+  { min: 5, nome: "satelite", cor: "#3ad7ff" },
+  { min: 0, nome: "satelite", cor: "#e8f0ff" }, // raso: claro e lento
+];
+
+function faixa(pontos, supernova) {
+  if (supernova) return "supernova";
+  return FAIXAS.find((f) => pontos >= f.min).nome;
+}
+
+function corDaFaixa(pontos, supernova) {
+  if (supernova) return "#ff3dd6";
+  return FAIXAS.find((f) => pontos >= f.min).cor;
+}
+
+// Número pseudoaleatório fixo para cada par (a, b): o cenário é sempre o mesmo.
+function sorte(a, b) {
+  let h = Math.imul(a | 0, 374761393) ^ Math.imul(b | 0, 668265263);
+  h = Math.imul(h ^ (h >>> 13), 1274126177);
+  return ((h ^ (h >>> 16)) >>> 0) / 4294967296;
+}
+
+function misturar(c1, c2, t) {
+  return c1.map((v, i) => Math.round(v + (c2[i] - v) * t));
+}
+
+function corDoFundo(al) {
+  if (al <= PARADAS_FUNDO[0][0]) return PARADAS_FUNDO[0][1];
+  for (let i = 1; i < PARADAS_FUNDO.length; i++) {
+    const [a0, c0] = PARADAS_FUNDO[i - 1];
+    const [a1, c1] = PARADAS_FUNDO[i];
+    if (al <= a1) return misturar(c0, c1, (al - a0) / (a1 - a0));
+  }
+  return PARADAS_FUNDO[PARADAS_FUNDO.length - 1][1];
+}
+
+// Quantas estrelas aparecem: nenhuma no céu da Terra, muitas no espaço
+// próximo, e cada vez menos lá no fundo (sensação de distância).
+function densidadeEstrelas(al) {
+  if (al < 8) return 0;
+  if (al < 40) return (al - 8) / 32;
+  if (al < 300) return 1;
+  return Math.max(0.2, 1 - (al - 300) / 1200);
+}
+
+const suave = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
 function desenharSprite(ctx, linhas, x, y) {
   for (let j = 0; j < linhas.length; j++) {
@@ -258,101 +292,328 @@ function desenharSprite(ctx, linhas, x, y) {
   }
 }
 
-// Fonte de 3x5 pixels só com dígitos e "+", para os números da cena.
-const DIGITOS = {
-  0: ["111", "101", "101", "101", "111"],
-  1: ["010", "110", "010", "010", "111"],
-  2: ["111", "001", "111", "100", "111"],
-  3: ["111", "001", "111", "001", "111"],
-  4: ["101", "101", "111", "001", "001"],
-  5: ["111", "100", "111", "001", "111"],
-  6: ["111", "100", "111", "101", "111"],
-  7: ["111", "001", "010", "010", "010"],
-  8: ["111", "101", "111", "101", "111"],
-  9: ["111", "101", "111", "001", "111"],
-  "+": ["000", "010", "111", "010", "000"],
-};
-
-function desenharTexto(ctx, texto, x, y, cor) {
-  ctx.fillStyle = cor;
-  [...texto].forEach((c, n) => {
-    const d = DIGITOS[c];
-    if (!d) return;
-    d.forEach((linha, j) =>
-      [...linha].forEach((v, i) => v === "1" && ctx.fillRect(x + n * 4 + i, y + j, 1, 1))
-    );
-  });
+function desenharCorpo(ctx, cx, cy, corpo, semente) {
+  const { r, cores } = corpo;
+  cx = Math.round(cx);
+  cy = Math.round(cy);
+  const anel = (frente) => {
+    if (!corpo.anel) return;
+    ctx.fillStyle = corpo.anel;
+    for (let a = 0; a < Math.PI * 2; a += 0.02) {
+      const x = Math.round(cx + Math.cos(a) * r * 1.9);
+      const y = Math.round(cy + Math.sin(a) * r * 0.45);
+      if ((y >= cy) === frente) ctx.fillRect(x, y, 1, 1);
+    }
+  };
+  anel(false);
+  if (corpo.estrela) {
+    ctx.fillStyle = "rgba(255, 210, 63, 0.18)";
+    ctx.fillRect(cx - r * 2, cy - 1, r * 4, 3);
+    ctx.fillRect(cx - 1, cy - r * 2, 3, r * 4);
+  }
+  for (let dy = -r; dy <= r; dy++) {
+    for (let dx = -r; dx <= r; dx++) {
+      if (dx * dx + dy * dy > r * r) continue;
+      let cor = cores[0];
+      if (corpo.faixas && (dy + r) % 4 === 1) cor = cores[1];
+      if (corpo.crateras && sorte(dx + 50 + semente, dy + 50) > 0.88) cor = cores[1];
+      if (dx + dy > r * 0.7) cor = cores[2]; // sombra
+      ctx.fillStyle = cor;
+      ctx.fillRect(cx + dx, cy + dy, 1, 1);
+    }
+  }
+  anel(true);
 }
 
-function criarCena(canvas) {
-  canvas.width = LARGURA;
-  canvas.height = ALTURA;
+function desenharAsteroide(ctx, x, y, tamanho, semente) {
+  for (let dy = -tamanho; dy <= tamanho; dy++) {
+    for (let dx = -tamanho; dx <= tamanho; dx++) {
+      if (dx * dx + dy * dy > tamanho * tamanho + sorte(semente + dx, dy) * 3) continue;
+      ctx.fillStyle = dx + dy > 0 ? "#5a4f48" : "#8a7a6a";
+      ctx.fillRect(Math.round(x) + dx, Math.round(y) + dy, 1, 1);
+    }
+  }
+}
+
+// A Terra é grande demais para desenhar pixel a pixel a cada quadro:
+// desenha uma vez numa tela separada e só copia.
+function desenharTerra(largura, altura) {
+  const tela = document.createElement("canvas");
+  tela.width = largura;
+  tela.height = altura;
+  const ctx = tela.getContext("2d");
+  const raio = Math.max(largura, altura) * 1.3;
+  const cx = largura / 2;
+  const cy = altura - 1 - raio;
+  for (let y = 0; y < altura; y++) {
+    const meia = Math.sqrt(Math.max(0, raio * raio - (y - cy) * (y - cy)));
+    for (let x = Math.floor(cx - meia); x <= cx + meia; x++) {
+      if (x < 0 || x >= largura) continue;
+      const borda = raio - Math.hypot(x - cx, y - cy);
+      let cor = "#2f6fe0";
+      // continentes: manchas grandes com borda irregular
+      const terra = sorte(Math.floor(x / 26), Math.floor(y / 14)) * 0.8 + sorte(Math.floor(x / 6), Math.floor(y / 4)) * 0.35;
+      if (terra > 0.72) cor = "#3fbf5f";
+      if (terra > 0.95) cor = "#2f9a4a";
+      if (sorte(Math.floor(x / 9) + 999, Math.floor(y / 3)) > 0.965) cor = "#f4f4ff"; // nuvens
+      if (borda < 3) cor = "#bfe9ff"; // atmosfera
+      ctx.fillStyle = cor;
+      ctx.fillRect(x, y, 1, 1);
+    }
+  }
+  return tela;
+}
+
+function criarCena(canvas, tela) {
   const ctx = canvas.getContext("2d");
-  ctx.imageSmoothingEnabled = false;
   const reduzirMovimento = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let L = 0; // largura da cena em pixels
+  let A = 0; // altura
+  let focoY = 0; // altura do foguete na tela
+  let terra = null;
 
-  const estrelas = Array.from({ length: 45 }, () => ({
-    x: Math.floor(Math.random() * LARGURA),
-    y: Math.random() * ALTURA,
-    camada: 1 + Math.floor(Math.random() * 3),
-  }));
-  let velocidade = 0.15;
-  let alvo = 0.15;
-  let visitante = null; // sprite que passa ao lado do foguete após uma resposta
+  const camera = { de: 0, para: 0, inicio: 0, atual: 0, velocidade: 0 };
+  const caixas = []; // palavras flutuando
+  let flash = 0;
   let quadro = 0;
+  let anterior = performance.now();
+  let aoQuadro = () => {};
 
-  function passo() {
-    quadro++;
-    velocidade += (alvo - velocidade) * 0.05;
-    alvo += (0.15 - alvo) * 0.01;
+  function ajustarTamanho() {
+    const escala = Math.max(2, Math.round(Math.min(innerWidth, innerHeight) / 220));
+    L = Math.ceil(innerWidth / escala);
+    A = Math.ceil(innerHeight / escala);
+    canvas.width = L;
+    canvas.height = A;
+    focoY = Math.round(A * 0.3);
+    terra = desenharTerra(L, focoY);
+    ctx.imageSmoothingEnabled = false;
+  }
+  ajustarTamanho();
+  addEventListener("resize", ajustarTamanho);
 
-    ctx.fillStyle = "#0b0630";
-    ctx.fillRect(0, 0, LARGURA, ALTURA);
+  // profundidade (anos-luz) -> linha da tela
+  const naTela = (al) => focoY + (al - camera.atual) * PX_POR_AL;
 
-    for (const e of estrelas) {
-      e.y += velocidade * e.camada;
-      if (e.y >= ALTURA) {
-        e.y -= ALTURA;
-        e.x = Math.floor(Math.random() * LARGURA);
+  function atualizarCamera(agora) {
+    const t = Math.min(1, (agora - camera.inicio) / DURACAO_DESCIDA);
+    const nova = camera.de + (camera.para - camera.de) * suave(t);
+    const dt = Math.max(1, agora - anterior) / 1000;
+    camera.velocidade = (nova - camera.atual) / dt; // anos-luz por segundo
+    camera.atual = nova;
+  }
+
+  function desenharFundo() {
+    for (let y = 0; y < A; y += 2) {
+      const al = camera.atual + (y - focoY) / PX_POR_AL;
+      const [r, g, b] = corDoFundo(Math.floor(al / 3) * 3); // faixas, estilo pixel
+      ctx.fillStyle = `rgb(${r},${g},${b})`;
+      ctx.fillRect(0, y, L, 2);
+    }
+  }
+
+  function desenharEstrelas() {
+    const camadas = [
+      { f: 0.2, cor: "#4a3f9e", n: 5 },
+      { f: 0.45, cor: "#8f86ff", n: 4 },
+      { f: 1, cor: "#ffffff", n: 3 },
+    ];
+    const BLOCO = 40;
+    camadas.forEach((c, ci) => {
+      const desvio = camera.atual * PX_POR_AL * c.f;
+      const primeiro = Math.floor((desvio - focoY) / BLOCO);
+      const ultimo = Math.floor((desvio - focoY + A) / BLOCO);
+      const rastro = reduzirMovimento ? 0 : Math.min(12, (camera.velocidade * PX_POR_AL * c.f) / 25);
+      for (let k = primeiro; k <= ultimo; k++) {
+        for (let i = 0; i < c.n; i++) {
+          const yMundo = k * BLOCO + sorte(k, i * 7 + ci) * BLOCO;
+          const al = yMundo / (PX_POR_AL * c.f);
+          if (sorte(k, i * 7 + ci + 3) > densidadeEstrelas(al)) continue;
+          const x = Math.floor(sorte(k, i * 7 + ci + 1) * L);
+          const y = Math.floor(yMundo - desvio + focoY);
+          const pisca = sorte(k + quadro >> 5, i) > 0.97 ? 0.3 : 1;
+          ctx.globalAlpha = pisca;
+          ctx.fillStyle = c.cor;
+          ctx.fillRect(x, y, 1, 1 + Math.round(rastro));
+        }
       }
-      ctx.fillStyle = e.camada === 3 ? "#ffffff" : e.camada === 2 ? "#8f86ff" : "#4a3f9e";
-      ctx.fillRect(e.x, Math.floor(e.y), 1, 1);
-      if (velocidade > 1 && e.camada === 3) ctx.fillRect(e.x, Math.floor(e.y) - 2, 1, 2);
+    });
+    ctx.globalAlpha = 1;
+  }
+
+  // Objetos soltos no caminho: satélites perto da Terra, asteroides, cometas.
+  function desenharObjetos() {
+    const BLOCO = 70;
+    const desvio = camera.atual * PX_POR_AL;
+    const primeiro = Math.max(1, Math.floor((desvio - focoY - 30) / BLOCO));
+    const ultimo = Math.floor((desvio - focoY + A + 30) / BLOCO);
+    for (let k = primeiro; k <= ultimo; k++) {
+      if (sorte(k, 501) > 0.55) continue;
+      const yMundo = k * BLOCO + sorte(k, 502) * BLOCO;
+      const al = yMundo / PX_POR_AL;
+      let x = sorte(k, 503) * L;
+      if (Math.abs(x - L / 2) < 20) x += x < L / 2 ? -30 : 30; // longe do foguete
+      const y = yMundo - desvio + focoY;
+      if (al < 30) desenharSprite(ctx, SATELITE, x, y);
+      else if (al < 900 && sorte(k, 504) > 0.25) desenharAsteroide(ctx, x, y, 1 + Math.floor(sorte(k, 505) * 3), k);
+      else {
+        // cometa: cabeça e cauda
+        ctx.fillStyle = "#bfe9ff";
+        ctx.fillRect(Math.round(x), Math.round(y), 2, 2);
+        ctx.fillStyle = "rgba(191, 233, 255, 0.4)";
+        for (let t = 1; t < 10; t++) ctx.fillRect(Math.round(x) + t, Math.round(y) - t, 1, 1);
+      }
     }
+  }
 
-    if (visitante) {
-      visitante.y += velocidade * 2;
-      desenharSprite(ctx, SPRITES[visitante.tipo], visitante.x, visitante.y);
-      desenharTexto(ctx, visitante.texto, visitante.x, visitante.y - 8, visitante.cor);
-      if (visitante.y > ALTURA + 10) visitante = null;
+  function desenharMarcos() {
+    ctx.font = FONTE;
+    ctx.textBaseline = "middle";
+    for (const m of MARCOS) {
+      const y = Math.round(naTela(m.al));
+      if (y < -60 || y > A + 60) continue;
+      ctx.fillStyle = "rgba(255, 255, 255, 0.35)";
+      for (let x = 0; x < L; x += 4) ctx.fillRect(x, y, 2, 1);
+      if (m.corpo) desenharCorpo(ctx, L * 0.8, y, m.corpo, m.al);
+      if (m.cinturao) {
+        for (let i = 0; i < 28; i++) {
+          desenharAsteroide(ctx, sorte(m.al, i) * L, y + (sorte(m.al, i + 50) - 0.5) * 24, Math.floor(sorte(m.al, i + 99) * 2), i);
+        }
+      }
+      if (m.nebulosa) {
+        for (let i = 0; i < 260; i++) {
+          const a = sorte(i, 7) * Math.PI * 2;
+          const d = Math.sqrt(sorte(i, 8)) * 40;
+          ctx.fillStyle = i % 3 ? "rgba(255, 61, 214, 0.35)" : "rgba(58, 215, 255, 0.35)";
+          ctx.fillRect(Math.round(L * 0.75 + Math.cos(a) * d * 1.4), Math.round(y + Math.sin(a) * d * 0.6), 2, 2);
+        }
+      }
+      const rotulo = `${m.al} AL · ${m.nome}`;
+      const largura = Math.ceil(ctx.measureText(rotulo).width) + 6;
+      ctx.fillStyle = "rgba(7, 3, 31, 0.7)";
+      ctx.fillRect(3, y - 6, largura, 11);
+      ctx.fillStyle = "#ffd23f";
+      ctx.fillText(rotulo, 6, y);
     }
+  }
 
-    const balanco = reduzirMovimento ? 0 : Math.round(Math.sin(quadro / 20));
-    const fx = 42;
-    const fy = 34 + balanco;
-    desenharSprite(ctx, SPRITES.foguete, fx, fy);
-    desenharSprite(ctx, SPRITES.chama[Math.floor(quadro / 6) % 2], fx, fy + 12);
+  function desenharTerraNaCena() {
+    const fundoTerra = Math.round(naTela(0)) - 10; // a superfície fica logo acima do foguete no início
+    if (fundoTerra < 0) return;
+    ctx.drawImage(terra, 0, fundoTerra - terra.height);
+    if (fundoTerra > terra.height) {
+      ctx.fillStyle = "#2f6fe0";
+      ctx.fillRect(0, 0, L, fundoTerra - terra.height);
+    }
+  }
 
+  function desenharFoguete() {
+    const descendo = camera.velocidade > 5;
+    const balanco = reduzirMovimento || descendo ? 0 : Math.round(Math.sin(quadro / 25));
+    const tremido = !reduzirMovimento && descendo ? Math.round((Math.random() - 0.5) * 2) : 0;
+    const x = Math.round(L / 2 - 5) + tremido;
+    const y = focoY - 6 + balanco;
+    const nivel = camera.velocidade > 60 ? 2 : descendo ? 1 : 0;
+    const chama = CHAMA[nivel];
+    // a chama fica em cima, porque o foguete está de cabeça para baixo
+    desenharSprite(ctx, [...chama].reverse().map((l) => (quadro >> 2) % 2 ? l : l.replaceAll("F", "f")), x, y - chama.length);
+    desenharSprite(ctx, FOGUETE, x, y);
+  }
+
+  function desenharCaixas(agora) {
+    ctx.font = FONTE;
+    ctx.textBaseline = "middle";
+    for (let i = caixas.length - 1; i >= 0; i--) {
+      const c = caixas[i];
+      const t = agora - c.inicio;
+      // afunda junto com o foguete; depois sobe devagar em direção à superfície
+      let al;
+      if (t < DURACAO_DESCIDA) al = c.de + (c.para - c.de) * suave(t / DURACAO_DESCIDA);
+      else al = c.para - ((t - DURACAO_DESCIDA) / 1000) * c.subida;
+      const y = Math.round(naTela(al));
+      if (y < -30) {
+        caixas.splice(i, 1);
+        continue;
+      }
+      const texto = `${c.texto} +${c.pontos}`;
+      const w = Math.ceil(ctx.measureText(texto).width) + 8;
+      let x = Math.round(c.lado < 0 ? L / 2 - 10 - w : L / 2 + 10);
+      x = Math.max(2, Math.min(L - w - 2, x)); // não sai da tela em celular
+      ctx.globalAlpha = Math.min(1, t / c.surgir);
+      ctx.fillStyle = "rgba(7, 3, 31, 0.85)";
+      ctx.fillRect(x, y - 7, w, 13);
+      ctx.fillStyle = c.cor;
+      ctx.fillRect(x, y - 7, w, 1);
+      ctx.fillRect(x, y + 5, w, 1);
+      ctx.fillRect(x, y - 7, 1, 13);
+      ctx.fillRect(x + w - 1, y - 7, 1, 13);
+      ctx.fillText(texto, x + 4, y);
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  function passo(agora) {
+    quadro++;
+    atualizarCamera(agora);
+    anterior = agora;
+    desenharFundo();
+    desenharEstrelas();
+    desenharTerraNaCena();
+    desenharObjetos();
+    desenharMarcos();
+    desenharFoguete();
+    desenharCaixas(agora);
+    if (flash > 0) {
+      ctx.fillStyle = `rgba(255, 255, 255, ${flash})`;
+      ctx.fillRect(0, 0, L, A);
+      flash = Math.max(0, flash - 0.03);
+    }
+    aoQuadro(camera.atual);
     requestAnimationFrame(passo);
   }
   requestAnimationFrame(passo);
 
+  function tremer(forca, duracao) {
+    if (reduzirMovimento || !tela.animate) return;
+    const passos = [];
+    for (let i = 0; i < 12; i++) {
+      const f = forca * (1 - i / 12);
+      passos.push({ transform: `translate(${(Math.random() - 0.5) * 2 * f}px, ${(Math.random() - 0.5) * 2 * f}px)` });
+    }
+    passos.push({ transform: "translate(0, 0)" });
+    tela.animate(passos, { duration: duracao, easing: "linear" });
+  }
+
   return {
-    // Mostra o sprite da faixa de pontos e acelera o foguete.
-    comemorar(pontos, supernova) {
-      const tipo = faixa(pontos, supernova);
-      const cor = supernova ? "#ff3dd6" : pontos >= 50 ? "#ffd23f" : "#7ef0c1";
-      visitante = { tipo, x: 70, y: -14, texto: "+" + pontos, cor };
-      alvo = reduzirMovimento ? 0.3 : Math.min(3, 0.4 + pontos / 40);
+    // Desce o foguete pelos pontos da resposta e solta a palavra numa caixinha.
+    descer(texto, pontos, supernova) {
+      const agora = performance.now();
+      const peso = Math.min(1, pontos / 100);
+      camera.de = camera.atual;
+      camera.para = camera.atual + pontos;
+      camera.inicio = agora;
+      caixas.push({
+        texto: texto.toUpperCase(),
+        pontos,
+        cor: corDaFaixa(pontos, supernova),
+        de: camera.de,
+        para: camera.para + pontos * 0.25 * peso, // as densas afundam um pouco além do foguete
+        inicio: agora,
+        surgir: 80 + 1400 * (1 - peso), // as óbvias aparecem devagar
+        subida: 6 - 4 * peso, // anos-luz por segundo subindo depois
+        lado: caixas.length % 2 ? -1 : 1,
+      });
+      tremer(2 + 14 * peso + (supernova ? 10 : 0), 250 + 900 * peso);
+      if (supernova) flash = 0.8;
+    },
+    // Coloca a câmera numa profundidade sem animação (ao retomar o dia).
+    irPara(al) {
+      camera.de = camera.para = camera.atual = al;
+    },
+    aoQuadro(fn) {
+      aoQuadro = fn;
     },
   };
-}
-
-function faixa(pontos, supernova) {
-  if (supernova) return "supernova";
-  if (pontos >= 50) return "planeta";
-  if (pontos >= 15) return "lua";
-  return "satelite";
 }
 </script>
   <script>
@@ -374,6 +635,55 @@ function normalizar(texto) {
     .replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
+}
+
+// Tira artigos do começo ("o Acre", "a Lua") e espaços, para comparar.
+function compactar(texto) {
+  return normalizar(texto).replace(/^(o|a|os|as|um|uma) /, "").replaceAll(" ", "");
+}
+
+// Distância de edição (com troca de letras vizinhas): quantas letras faltam,
+// sobram, estão erradas ou trocadas de lugar.
+function distancia(a, b) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      const custo = a[i - 1] === b[j - 1] ? 0 : 1;
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + custo);
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
+      }
+    }
+  }
+  return d[a.length][b.length];
+}
+
+// Autocorreção generosa: compara com todas as respostas e apelidos.
+// Palavras curtas precisam vir quase certas; longas aceitam mais erros.
+function tolerancia(tamanho) {
+  if (tamanho <= 3) return 0;
+  if (tamanho <= 5) return 1;
+  if (tamanho <= 9) return 2;
+  return 3;
+}
+
+function buscar(cat, texto) {
+  const alvo = compactar(texto);
+  if (!alvo) return null;
+  if (cat.mapa.has(alvo)) return { resposta: cat.mapa.get(alvo), corrigido: false };
+  const limite = tolerancia(alvo.length);
+  let melhor = null;
+  let menor = Infinity;
+  for (const [nome, resposta] of cat.mapa) {
+    if (Math.abs(nome.length - alvo.length) > limite) continue;
+    const d = distancia(alvo, nome);
+    if (d < menor) {
+      menor = d;
+      melhor = resposta;
+    }
+  }
+  return menor <= limite ? { resposta: melhor, corrigido: true } : null;
 }
 
 // Sorteio determinístico pela data: todo mundo recebe as mesmas perguntas no dia.
@@ -417,7 +727,8 @@ function lerProgresso() {
 }
 
 const $ = (id) => document.getElementById(id);
-const cena = criarCena($("cena"));
+const cena = criarCena($("cena"), $("tela"));
+cena.aoQuadro((al) => ($("distancia").textContent = `${Math.round(al)} AL`));
 
 const estado = {
   data: hojeLocal(),
@@ -436,18 +747,28 @@ function iniciar() {
   }
   const escolhidas = embaralhar(dados.indice, geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
   estado.categorias = escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
-  $("carregando").hidden = true;
 
   const salvo = lerProgresso();
   if (salvo) {
     estado.historico = salvo.historico;
     estado.total = salvo.total;
     estado.rodada = salvo.historico.length;
+    cena.irPara(estado.total);
   }
   if (estado.rodada >= estado.categorias.length) {
+    $("inicio").hidden = true;
+    $("hud").hidden = false;
     mostrarFim();
     return;
   }
+  if (estado.rodada > 0) $("comecar").textContent = "CONTINUAR";
+  $("comecar").focus();
+}
+
+// Começa na superfície da Terra; o primeiro clique solta o foguete.
+function comecar() {
+  $("inicio").hidden = true;
+  $("hud").hidden = false;
   $("painel").hidden = false;
   mostrarRodada();
 }
@@ -455,7 +776,7 @@ function iniciar() {
 function prepararCategoria(cat) {
   const mapa = new Map();
   for (const r of cat.respostas) {
-    for (const nome of [r.resposta, ...r.apelidos]) mapa.set(normalizar(nome), r);
+    for (const nome of [r.resposta, ...r.apelidos]) mapa.set(compactar(nome), r);
   }
   return { ...cat, mapa };
 }
@@ -463,7 +784,7 @@ function prepararCategoria(cat) {
 function mostrarRodada() {
   const cat = estado.categorias[estado.rodada];
   estado.tentativas = TENTATIVAS;
-  $("rodada").textContent = `pergunta ${estado.rodada + 1}/${estado.categorias.length}`;
+  $("rodada").textContent = `PERGUNTA ${estado.rodada + 1}/${estado.categorias.length}`;
   $("pergunta").textContent = cat.pergunta || cat.titulo;
   avisar("", "");
   $("revelacao").hidden = true;
@@ -476,8 +797,7 @@ function mostrarRodada() {
 
 function atualizarPainel() {
   $("combustivel").textContent =
-    "combustível " + "■".repeat(estado.tentativas) + "□".repeat(TENTATIVAS - estado.tentativas);
-  $("distancia").textContent = `${estado.total} anos-luz`;
+    "COMBUSTÍVEL " + "■".repeat(estado.tentativas) + "□".repeat(TENTATIVAS - estado.tentativas);
 }
 
 function palpitar(evento) {
@@ -485,9 +805,9 @@ function palpitar(evento) {
   const cat = estado.categorias[estado.rodada];
   const texto = $("palpite").value.trim();
   if (!texto) return;
-  const achada = cat.mapa.get(normalizar(texto));
+  const busca = buscar(cat, texto);
 
-  if (!achada) {
+  if (!busca) {
     estado.tentativas -= 1;
     atualizarPainel();
     $("palpite").value = "";
@@ -500,14 +820,16 @@ function palpitar(evento) {
     return;
   }
 
+  const achada = busca.resposta;
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
+  const correcao = busca.corrigido ? ` (você digitou "${texto}")` : "";
   if (supernova) {
-    avisar(`SUPERNOVA! ${achada.resposta} vale ${pontos} anos-luz.`, "supernova");
+    avisar(`SUPERNOVA! ${achada.resposta} vale ${pontos} anos-luz.${correcao}`, "supernova");
   } else {
-    avisar(`${achada.resposta}: +${pontos} anos-luz.`, "acerto");
+    avisar(`${achada.resposta}: +${pontos} anos-luz.${correcao}`, pontos >= 50 ? "profundo" : "acerto");
   }
-  cena.comemorar(pontos, supernova);
+  cena.descer(achada.resposta, pontos, supernova);
   encerrarRodada(achada.resposta, pontos, supernova);
 }
 
@@ -529,7 +851,7 @@ function encerrarRodada(resposta, pontos, supernova) {
     const li = document.createElement("li");
     li.textContent = r.resposta + " ";
     const extra = document.createElement("span");
-    extra.textContent = `${r.pontos} anos-luz${r.resposta === cat.supernova ? " · supernova" : ""}`;
+    extra.textContent = r.resposta === cat.supernova ? `${r.pontos} ★` : `${r.pontos}`;
     li.append(extra);
     $("top").append(li);
   }
@@ -577,6 +899,7 @@ function copiar() {
   }
 }
 
+$("comecar").addEventListener("click", comecar);
 $("formulario").addEventListener("submit", palpitar);
 $("proxima").addEventListener("click", proxima);
 $("copiar").addEventListener("click", copiar);

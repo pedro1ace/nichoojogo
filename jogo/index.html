@@ -2,37 +2,47 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Nicho</title>
-  <meta name="description" content="Jogo diário de palavras: quanto mais nichada a resposta, mais longe seu foguete vai.">
+  <meta name="description" content="Jogo diário de palavras: quanto mais nichada a resposta, mais fundo seu foguete desce no espaço.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>NICHO</h1>
-      <p class="lema">uma em um bilhão de estrelas</p>
-    </header>
-
+  <div id="tela">
     <canvas id="cena" aria-hidden="true"></canvas>
 
-    <section id="painel" class="caixa" hidden>
-      <div class="progresso">
-        <span id="rodada"></span>
-        <span id="distancia">0 anos-luz</span>
+    <div id="hud" hidden>
+      <div>
+        <span class="rotulo">PROFUNDIDADE</span>
+        <span id="distancia">0 AL</span>
       </div>
+      <div class="direita">
+        <span id="rodada"></span>
+        <span id="combustivel"></span>
+      </div>
+    </div>
+
+    <section id="inicio" class="sobreposto">
+      <h1>NICHO</h1>
+      <p>Responda cada pergunta com a palavra mais nichada que conseguir.<br>
+         Quanto mais rara, mais fundo o foguete desce no espaço.</p>
+      <button id="comecar" type="button">MERGULHAR</button>
+      <p id="carregando" class="suave"></p>
+    </section>
+
+    <section id="painel" class="caixa" hidden>
       <h2 id="pergunta"></h2>
       <form id="formulario" autocomplete="off">
-        <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta" required>
+        <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
+               autocapitalize="off" autocorrect="off" spellcheck="false" required>
         <button type="submit">LANÇAR</button>
       </form>
-      <p id="combustivel"></p>
       <p id="mensagem" role="status"></p>
       <div id="revelacao" hidden>
-        <p>As mais nichadas desta pergunta:</p>
+        <p class="suave">As mais nichadas (anos-luz, ★ = supernova):</p>
         <ol id="top"></ol>
         <button id="proxima" type="button">PRÓXIMA ▶</button>
       </div>
@@ -45,9 +55,7 @@
       <button id="copiar" type="button">COPIAR RESULTADO</button>
       <p class="suave">Novas perguntas amanhã.</p>
     </section>
-
-    <p id="carregando">contagem regressiva…</p>
-  </main>
+  </div>
   <script src="dados.js"></script>
   <script src="cena.js"></script>
   <script src="jogo.js"></script>

@@ -17,7 +17,12 @@ Como funciona hoje no protótipo:
 - Uma resposta por pergunta e 3 tentativas ("combustível") para acertar uma resposta válida.
 - Os pontos são **anos-luz**: respostas óbvias valem quase nada, nichadas levam o foguete longe.
 - Cada pergunta esconde uma **supernova**, a resposta secreta que vale o dobro (o "krillion" do original).
-- Faixas de pontos com sprite próprio: 🛰️ satélite (até 14), 🌙 lua (15 a 49), 🪐 planeta (50+), 🌟 supernova.
+- A tela inteira é o espaço: o foguete parte da Terra e desce. Cada resposta faz ele descer os anos-luz
+  que ela vale, sempre no mesmo tempo, então as raras descem rápido e as óbvias quase não saem do lugar.
+  No caminho aparecem marcos (Lua, Marte, Júpiter...), e o céu escurece conforme você se afasta.
+- A palavra aparece numa caixinha: roxa e afundando rápido se for rara, clara e lenta se for óbvia.
+- Erros de digitação são corrigidos (também contra os apelidos), e acentos e artigos são ignorados.
+- Faixas no resultado: 🛰️ até 19, 🌙 20 a 49, 🪐 50 ou mais, 🌟 supernova.
 - No fim, um resultado em emoji para colar no grupo. O progresso do dia fica salvo no navegador.
 
 ## Como jogar
