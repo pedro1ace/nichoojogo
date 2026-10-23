@@ -52,17 +52,22 @@
       <p id="rotulo-pergunta" class="rotulo rosa"></p>
       <h2 id="pergunta"></h2>
       <p class="dica">▼ quanto mais rara, mais fundo ▼</p>
-      <form id="formulario" autocomplete="off" hidden>
-        <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
-               autocapitalize="off" autocorrect="off" spellcheck="false">
-        <button type="submit">LANÇAR</button>
-      </form>
-      <button id="sugestao" type="button" hidden></button>
-      <p id="mensagem" role="status"></p>
+    </section>
+
+    <section id="painel-resposta" class="painel-resposta" hidden>
       <div id="relogio" hidden>
         <canvas id="radar" aria-hidden="true"></canvas>
         <span id="tempo">25</span>
+      </div>
+      <div class="coluna-resposta">
+        <form id="formulario" autocomplete="off" hidden>
+          <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
+                 autocapitalize="off" autocorrect="off" spellcheck="false">
+          <button type="submit">LANÇAR</button>
+        </form>
         <div class="trilho"><div id="barra-tempo"></div></div>
+        <button id="sugestao" type="button" hidden></button>
+        <p id="mensagem" role="status"></p>
       </div>
     </section>
 

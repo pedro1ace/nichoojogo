@@ -373,6 +373,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
   const camera = { de: 0, para: 0, inicio: 0, atual: 0, velocidade: 0 };
   let rodadaAl = 0; // onde começou a pergunta atual (para as linhas das faixas)
   let mostrarLinhas = false;
+  const acesas = {}; // linhas de faixa que a caixa já cruzou nesta rodada (id -> hora)
+  let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
+  let larguraCaixa = 200;
+  const rastro = [];
   const caixas = [];
     const mascote = { x: 0, y: 0, pulo: 0 };
   // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
@@ -879,8 +883,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3) * 2.5;
     const lado = reduzirMovimento ? 0 : Math.sin(tempo * 0.55) * 5;
     mascote.pulo *= Math.exp(-dt * 6);
-    foguete.x = Math.min(L - 26, L / 2 + Math.max(60, L * 0.28)) + lado;
-    foguete.y = naTelaExata(foguete.al) - 6 + balanco - mascote.pulo;
+    modoCanto += (alvoCanto - modoCanto) * (1 - Math.exp(-dt * 3));
+    // ao lado direito da caixa (que fica no centro da tela)
+    const xCaixa = Math.min(L - 26, (innerWidth / 2 + larguraCaixa / 2) / escala + 28);
+    const yCaixa = naTelaExata(foguete.al) + 4;
+    // no cantinho esquerdo, flutuando, enquanto você digita
+    const xCanto = Math.max(22, L * 0.08);
+    const yCanto = A * 0.55;
+    const m = suave(Math.min(1, Math.max(0, modoCanto)));
+    foguete.x = xCaixa + (xCanto - xCaixa) * m + lado;
+    foguete.y = yCaixa + (yCanto - yCaixa) * m + balanco - mascote.pulo;
     const descendo = camera.velocidade > 20;
     const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.08 + Math.min(0.3, camera.velocidade / 3000);
     // quadro: perninhas remando (rápido descendo, devagar parado), pisca de vez em quando
@@ -990,11 +1002,29 @@ function criarCena(telaPixel, telaTexto, raiz) {
         if (!f.min) continue;
         const y = naTelaTexto(rodadaAl + f.min * AL_POR_PONTO);
         if (y < -20 || y > H + 20) continue;
-        linhaTracejada(y, centro0, centro1, f.cor, 0.7);
-        escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+        const acesa = acesas[f.id];
+        if (acesa) {
+          // linha acesa: cheia, com brilho, e um pulso logo que a caixa passa
+          const t = (agora - acesa) / 1000;
+          const pulso = Math.exp(-t * 3);
+          tx.save();
+          tx.shadowColor = f.cor;
+          tx.shadowBlur = 8 + 18 * pulso;
+          tx.globalAlpha = 0.9;
+          tx.fillStyle = f.cor;
+          for (let x = centro0; x < centro1; x += 8) tx.fillRect(x, Math.round(y) - 0.5, 6, 2 + pulso * 2);
+          tx.restore();
+          tx.font = `${14 + Math.round(pulso * 4)}px 'Space Mono', monospace`;
+          escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+          tx.font = "14px 'Space Mono', monospace";
+        } else {
+          linhaTracejada(y, centro0, centro1, f.cor, 0.45);
+          escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+        }
       }
     }
 
+    desenharRastro();
     desenharCaixas(agora);
     desenharEstouros();
 
@@ -1099,6 +1129,58 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.globalAlpha = 1;
   }
 
+  // Rastro que sai de cima da caixa enquanto ela cai, conforme a raridade:
+  // poeira estelar nas óbvias/comuns, faíscas douradas nas incomuns,
+  // fumaça escura avermelhada nas raras e plasma rosa na supernova.
+  function soltarRastro(c, al, t) {
+    const vel = Math.abs(camera.velocidade);
+    const n = Math.min(4, vel / 300 + 0.3);
+    for (let i = 0; i < n; i++) {
+      if (Math.random() > n / Math.ceil(n)) continue;
+      const tipo = c.supernova ? "plasma" : c.peso >= 0.5 ? "fumaca" : c.peso >= 0.2 ? "faisca" : "poeira";
+      const fumaca = tipo === "fumaca" || tipo === "plasma";
+      rastro.push({
+        al: al - (18 + Math.random() * 10) / (PX_POR_AL * escala), // logo acima da caixa
+        x: innerWidth / 2 + (Math.random() - 0.5) * larguraCaixa * 0.8,
+        vx: (Math.random() - 0.5) * 20,
+        vida: 0,
+        dura: fumaca ? 1.4 + Math.random() : 0.6 + Math.random() * 0.6,
+        r: fumaca ? 6 + Math.random() * 8 : 1 + Math.random() * 1.5,
+        tipo,
+        cor: tipo === "plasma" ? (Math.random() < 0.5 ? "255, 79, 216" : "180, 60, 255")
+          : tipo === "fumaca" ? (Math.random() < 0.6 ? "92, 24, 38" : "60, 16, 44")
+          : tipo === "faisca" ? (Math.random() < 0.5 ? "255, 210, 63" : "255, 160, 60")
+          : (Math.random() < 0.5 ? "232, 240, 255" : "95, 225, 255"),
+      });
+    }
+  }
+  function desenharRastro() {
+    for (let i = rastro.length - 1; i >= 0; i--) {
+      const r = rastro[i];
+      r.vida += dt;
+      const t = r.vida / r.dura;
+      if (t >= 1) { rastro.splice(i, 1); continue; }
+      r.x += r.vx * dt;
+      const y = naTelaTexto(r.al);
+      if (r.tipo === "fumaca" || r.tipo === "plasma") {
+        const raio = r.r * (1 + t * 2.2);
+        const g = tx.createRadialGradient(r.x, y, 0, r.x, y, raio);
+        const a = (r.tipo === "plasma" ? 0.35 : 0.55) * (1 - t);
+        g.addColorStop(0, `rgba(${r.cor}, ${a})`);
+        g.addColorStop(1, `rgba(${r.cor}, 0)`);
+        tx.fillStyle = g;
+        tx.fillRect(r.x - raio, y - raio, raio * 2, raio * 2);
+      } else {
+        tx.globalAlpha = 1 - t;
+        tx.fillStyle = `rgb(${r.cor})`;
+        const tam = r.r * escala * 0.5;
+        tx.fillRect(r.x - tam / 2, y - tam / 2, tam, tam);
+        if (r.tipo === "faisca") tx.fillRect(r.x - 0.5, y - tam * 2, 1, tam * 2);
+        tx.globalAlpha = 1;
+      }
+    }
+  }
+
   function desenharCaixas(agora) {
     const W = innerWidth;
     for (let i = caixas.length - 1; i >= 0; i--) {
@@ -1106,6 +1188,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const t = agora - c.inicio;
       // cai junto com a câmera e fica onde parou; as antigas vão ficando para trás
       const al = c.de + (c.para - c.de) * suave(Math.min(1, t / DURACAO_DESCIDA));
+      if (!c.saida && mostrarLinhas) {
+        for (const f of FAIXAS) {
+          if (!f.min || acesas[f.id]) continue;
+          if (al >= rodadaAl + f.min * AL_POR_PONTO) {
+            acesas[f.id] = agora;
+            if (window.Som && Som.limiar) Som.limiar(FAIXAS.length - 1 - FAIXAS.indexOf(f));
+          }
+        }
+      }
+      if (!c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -1118,6 +1210,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const p = escala; // um pixel da cena: a borda segue a mesma grade do cenário
       tx.font = `${pequena ? 14 : 20}px 'Press Start 2P', monospace`;
       const w = Math.ceil((Math.ceil(tx.measureText(texto).width) + (pequena ? 36 : 56)) / p) * p;
+      if (!c.saida) larguraCaixa = w;
       const h = (pequena ? 12 : 14) * p;
       // centralizada na tela: é ali que o jogo acontece
       const x = Math.round(Math.max(8, W / 2 - w / 2) / p) * p;
@@ -1248,6 +1341,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Marca o começo de uma pergunta: as linhas das faixas partem daqui.
     novaRodada() {
       const agora = performance.now();
+      for (const k of Object.keys(acesas)) delete acesas[k];
+      alvoCanto = 1;
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       rodadaAl = camera.para;
       mostrarLinhas = true;
@@ -1258,6 +1353,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const peso = Math.min(1, pontos / 100);
       const faixa = faixaDe(pontos, supernova);
       const distancia = pontos * AL_POR_PONTO;
+      alvoCanto = 0;
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
@@ -1283,6 +1379,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Tela final: some com as caixinhas e as linhas das faixas.
     limpar() {
       caixas.length = 0;
+      alvoCanto = 0;
       mostrarLinhas = false;
     },
     // Coloca a câmera numa profundidade sem animação (ao retomar o dia).

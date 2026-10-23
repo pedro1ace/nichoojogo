@@ -85,7 +85,8 @@ body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-hei
 #quadrados span {
   width: 14px; height: 14px; background: #1c1850; box-shadow: inset 0 0 0 2px #2c2870;
 }
-#quadrados span.atual { background: var(--rosa); animation: pulsar 1s steps(2) infinite; }
+#quadrados span.atual { background: var(--rosa); box-shadow: 0 0 8px var(--rosa); animation: respirar 1.1s ease-in-out infinite; }
+@keyframes respirar { 50% { transform: scale(1.35); } }
 @keyframes pulsar { 50% { opacity: 0.55; } }
 #som {
   position: absolute; z-index: 4; right: max(10px, env(safe-area-inset-right)); top: max(70px, calc(env(safe-area-inset-top) + 62px));
@@ -139,20 +140,32 @@ button:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 3px; }
 
 /* ---------- pergunta ---------- */
 .cartao {
-  position: absolute; z-index: 2; left: 50%; top: max(96px, 20%); transform: translate(-50%, 0);
-  width: min(620px, calc(100% - 32px)); max-height: calc(80% - 110px); overflow-y: auto;
-  padding: 20px 24px 18px; clip-path: var(--recorte);
+  position: absolute; z-index: 2; left: 50%; top: max(84px, 10%); transform: translate(-50%, 0);
+  width: min(560px, calc(100% - 32px)); max-height: 34%; overflow-y: auto;
+  padding: 22px 28px 18px;
+  /* cantos em degraus de pixel */
+  clip-path: polygon(0 12px, 4px 12px, 4px 8px, 8px 8px, 8px 4px, 12px 4px, 12px 0, calc(100% - 12px) 0, calc(100% - 12px) 4px, calc(100% - 8px) 4px, calc(100% - 8px) 8px, calc(100% - 4px) 8px, calc(100% - 4px) 12px, 100% 12px, 100% calc(100% - 12px), calc(100% - 4px) calc(100% - 12px), calc(100% - 4px) calc(100% - 8px), calc(100% - 8px) calc(100% - 8px), calc(100% - 8px) calc(100% - 4px), calc(100% - 12px) calc(100% - 4px), calc(100% - 12px) 100%, 12px 100%, 12px calc(100% - 4px), 8px calc(100% - 4px), 8px calc(100% - 8px), 4px calc(100% - 8px), 4px calc(100% - 12px), 0 calc(100% - 12px));
   background:
-    linear-gradient(180deg, rgba(var(--luz), 0.10), transparent 35%),
-    rgba(var(--tinta), 0.8);
+    repeating-linear-gradient(0deg, rgba(var(--luz), 0.025) 0 1px, transparent 1px 3px),
+    rgba(var(--tinta), 0.72);
   -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
-  box-shadow:
-    inset 0 0 0 2px rgba(var(--luz), 0.45),
-    inset 0 0 0 4px rgba(var(--tinta), 0.5),
-    inset 0 0 36px rgba(var(--luz), 0.10);
   animation: entrar 0.35s ease-out;
 }
-@keyframes entrar { from { opacity: 0; transform: translate(-50%, 14px); } }
+@keyframes entrar { from { opacity: 0; transform: translate(-50%, -10px); } }
+#rotulo-pergunta { color: var(--rosa); text-shadow: 0 0 10px rgba(255, 79, 139, 0.6); }
+.cartao h2 { margin-top: 10px !important; }
+.cartao .dica { margin: 4px 0 0 !important; }
+
+/* painel de resposta, embaixo: relógio à esquerda, campo e barra fininha */
+.painel-resposta {
+  position: absolute; z-index: 2; left: 50%; bottom: max(28px, 6%); transform: translateX(-50%);
+  width: min(640px, calc(100% - 32px));
+  display: flex; align-items: flex-start; gap: 14px;
+  animation: subir 0.35s ease-out;
+}
+@keyframes subir { from { opacity: 0; transform: translate(-50%, 12px); } }
+.coluna-resposta { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.painel-resposta:has(#formulario[hidden]) .trilho { visibility: hidden; }
 #rotulo-pergunta { display: flex; align-items: center; gap: 8px; color: var(--ciano); }
 #rotulo-pergunta::before { content: ""; width: 8px; height: 8px; background: var(--rosa); box-shadow: 0 0 8px var(--rosa); }
 .cartao h2 { font-family: var(--corpo); font-weight: 700; font-size: clamp(20px, 3vw, 27px); text-shadow: 0 0 14px rgba(200, 215, 255, 0.45); line-height: 1.3; margin: 8px 0 6px; text-wrap: balance; }
@@ -177,13 +190,13 @@ form button {
 #mensagem { min-height: 1.3em; margin: 8px 0 0; font-size: 17px; }
 #mensagem.erro { color: var(--vermelho); }
 #mensagem.aviso { color: var(--amarelo); }
-#relogio { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
-#radar { width: 64px; height: 64px; flex: none; }
-#tempo { font-family: var(--corpo); font-weight: 700; font-size: 32px; text-shadow: 0 0 12px rgba(95, 225, 255, 0.6); color: var(--ciano); min-width: 2.2em; font-variant-numeric: tabular-nums; }
-.trilho { flex: 1; height: 10px; background: #050220; box-shadow: inset 0 0 0 1px #2c2870; }
-#barra-tempo { height: 100%; width: 100%; background: var(--ciano); }
+#relogio { position: relative; flex: none; width: 64px; height: 64px; margin-top: -6px; }
+#radar { width: 64px; height: 64px; display: block; }
+#tempo { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--corpo); font-weight: 700; font-size: 20px; text-shadow: 0 0 12px rgba(95, 225, 255, 0.6); color: var(--ciano); font-variant-numeric: tabular-nums; pointer-events: none; }
+.trilho { height: 3px; margin-top: 4px; background: rgba(var(--luz), 0.15); }
+#barra-tempo { height: 100%; width: 100%; background: var(--ciano); box-shadow: 0 0 8px var(--ciano); }
 #relogio.urgente #tempo { color: var(--vermelho); text-shadow: 0 0 10px rgba(255, 60, 80, 0.8); }
-#relogio.urgente #barra-tempo { background: var(--vermelho); }
+.painel-resposta:has(#relogio.urgente) #barra-tempo { background: var(--vermelho); box-shadow: 0 0 8px var(--vermelho); }
 #relogio.urgente #radar, #relogio.urgente #tempo { animation: tremer-relogio 0.25s linear infinite; }
 @keyframes tremer-relogio {
   0%, 100% { transform: translate(0, 0) rotate(0); }
@@ -275,9 +288,9 @@ pre {
   .valor { font-size: 20px; }
   #som { top: max(136px, calc(env(safe-area-inset-top) + 128px)); }
   .fim-conteudo { padding-top: max(140px, calc(env(safe-area-inset-top) + 132px)); }
-  .cartao { top: max(150px, 20%); max-height: calc(80% - 160px); padding: 14px 16px; }
+  .cartao { top: max(140px, 18%); max-height: 34%; padding: 16px 18px; }
+  .painel-resposta { gap: 10px; }
   .cartao-resultado { top: 50%; max-height: calc(50% - 8px); }
-  form { flex-direction: column; }
   .pilula { font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -343,17 +356,22 @@ pre {
       <p id="rotulo-pergunta" class="rotulo rosa"></p>
       <h2 id="pergunta"></h2>
       <p class="dica">▼ quanto mais rara, mais fundo ▼</p>
-      <form id="formulario" autocomplete="off" hidden>
-        <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
-               autocapitalize="off" autocorrect="off" spellcheck="false">
-        <button type="submit">LANÇAR</button>
-      </form>
-      <button id="sugestao" type="button" hidden></button>
-      <p id="mensagem" role="status"></p>
+    </section>
+
+    <section id="painel-resposta" class="painel-resposta" hidden>
       <div id="relogio" hidden>
         <canvas id="radar" aria-hidden="true"></canvas>
         <span id="tempo">25</span>
+      </div>
+      <div class="coluna-resposta">
+        <form id="formulario" autocomplete="off" hidden>
+          <input id="palpite" type="text" placeholder="sua resposta…" aria-label="Sua resposta"
+                 autocapitalize="off" autocorrect="off" spellcheck="false">
+          <button type="submit">LANÇAR</button>
+        </form>
         <div class="trilho"><div id="barra-tempo"></div></div>
+        <button id="sugestao" type="button" hidden></button>
+        <p id="mensagem" role="status"></p>
       </div>
     </section>
 
@@ -512,6 +530,11 @@ const Som = (() => {
     supernova() {
       for (let i = 0; i < 12; i++) tom(NOTAS[i % 6] * (i >= 6 ? 2 : 1), 0.12, { tipo: "square", volume: 0.06, atraso: 0.05 * i });
       ruido(1.2, { volume: 0.08, de: 6000, ate: 3000 });
+    },
+    // "plim" quando a caixa cruza uma linha de faixa: mais agudo nas mais raras
+    limiar(nivel) {
+      tom(NOTAS[Math.min(5, nivel + 1)], 0.16, { tipo: "triangle", volume: 0.07 });
+      tom(NOTAS[Math.min(5, nivel + 1)] * 2, 0.1, { tipo: "sine", volume: 0.03, atraso: 0.03 });
     },
     // brilho ao chegar numa resposta rara: arpejo subindo, mais longo quanto mais rara
     brilho(k) {
@@ -1035,6 +1058,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
   const camera = { de: 0, para: 0, inicio: 0, atual: 0, velocidade: 0 };
   let rodadaAl = 0; // onde começou a pergunta atual (para as linhas das faixas)
   let mostrarLinhas = false;
+  const acesas = {}; // linhas de faixa que a caixa já cruzou nesta rodada (id -> hora)
+  let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
+  let larguraCaixa = 200;
+  const rastro = [];
   const caixas = [];
     const mascote = { x: 0, y: 0, pulo: 0 };
   // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
@@ -1541,8 +1568,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3) * 2.5;
     const lado = reduzirMovimento ? 0 : Math.sin(tempo * 0.55) * 5;
     mascote.pulo *= Math.exp(-dt * 6);
-    foguete.x = Math.min(L - 26, L / 2 + Math.max(60, L * 0.28)) + lado;
-    foguete.y = naTelaExata(foguete.al) - 6 + balanco - mascote.pulo;
+    modoCanto += (alvoCanto - modoCanto) * (1 - Math.exp(-dt * 3));
+    // ao lado direito da caixa (que fica no centro da tela)
+    const xCaixa = Math.min(L - 26, (innerWidth / 2 + larguraCaixa / 2) / escala + 28);
+    const yCaixa = naTelaExata(foguete.al) + 4;
+    // no cantinho esquerdo, flutuando, enquanto você digita
+    const xCanto = Math.max(22, L * 0.08);
+    const yCanto = A * 0.55;
+    const m = suave(Math.min(1, Math.max(0, modoCanto)));
+    foguete.x = xCaixa + (xCanto - xCaixa) * m + lado;
+    foguete.y = yCaixa + (yCanto - yCaixa) * m + balanco - mascote.pulo;
     const descendo = camera.velocidade > 20;
     const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.08 + Math.min(0.3, camera.velocidade / 3000);
     // quadro: perninhas remando (rápido descendo, devagar parado), pisca de vez em quando
@@ -1652,11 +1687,29 @@ function criarCena(telaPixel, telaTexto, raiz) {
         if (!f.min) continue;
         const y = naTelaTexto(rodadaAl + f.min * AL_POR_PONTO);
         if (y < -20 || y > H + 20) continue;
-        linhaTracejada(y, centro0, centro1, f.cor, 0.7);
-        escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+        const acesa = acesas[f.id];
+        if (acesa) {
+          // linha acesa: cheia, com brilho, e um pulso logo que a caixa passa
+          const t = (agora - acesa) / 1000;
+          const pulso = Math.exp(-t * 3);
+          tx.save();
+          tx.shadowColor = f.cor;
+          tx.shadowBlur = 8 + 18 * pulso;
+          tx.globalAlpha = 0.9;
+          tx.fillStyle = f.cor;
+          for (let x = centro0; x < centro1; x += 8) tx.fillRect(x, Math.round(y) - 0.5, 6, 2 + pulso * 2);
+          tx.restore();
+          tx.font = `${14 + Math.round(pulso * 4)}px 'Space Mono', monospace`;
+          escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+          tx.font = "14px 'Space Mono', monospace";
+        } else {
+          linhaTracejada(y, centro0, centro1, f.cor, 0.45);
+          escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+        }
       }
     }
 
+    desenharRastro();
     desenharCaixas(agora);
     desenharEstouros();
 
@@ -1761,6 +1814,58 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.globalAlpha = 1;
   }
 
+  // Rastro que sai de cima da caixa enquanto ela cai, conforme a raridade:
+  // poeira estelar nas óbvias/comuns, faíscas douradas nas incomuns,
+  // fumaça escura avermelhada nas raras e plasma rosa na supernova.
+  function soltarRastro(c, al, t) {
+    const vel = Math.abs(camera.velocidade);
+    const n = Math.min(4, vel / 300 + 0.3);
+    for (let i = 0; i < n; i++) {
+      if (Math.random() > n / Math.ceil(n)) continue;
+      const tipo = c.supernova ? "plasma" : c.peso >= 0.5 ? "fumaca" : c.peso >= 0.2 ? "faisca" : "poeira";
+      const fumaca = tipo === "fumaca" || tipo === "plasma";
+      rastro.push({
+        al: al - (18 + Math.random() * 10) / (PX_POR_AL * escala), // logo acima da caixa
+        x: innerWidth / 2 + (Math.random() - 0.5) * larguraCaixa * 0.8,
+        vx: (Math.random() - 0.5) * 20,
+        vida: 0,
+        dura: fumaca ? 1.4 + Math.random() : 0.6 + Math.random() * 0.6,
+        r: fumaca ? 6 + Math.random() * 8 : 1 + Math.random() * 1.5,
+        tipo,
+        cor: tipo === "plasma" ? (Math.random() < 0.5 ? "255, 79, 216" : "180, 60, 255")
+          : tipo === "fumaca" ? (Math.random() < 0.6 ? "92, 24, 38" : "60, 16, 44")
+          : tipo === "faisca" ? (Math.random() < 0.5 ? "255, 210, 63" : "255, 160, 60")
+          : (Math.random() < 0.5 ? "232, 240, 255" : "95, 225, 255"),
+      });
+    }
+  }
+  function desenharRastro() {
+    for (let i = rastro.length - 1; i >= 0; i--) {
+      const r = rastro[i];
+      r.vida += dt;
+      const t = r.vida / r.dura;
+      if (t >= 1) { rastro.splice(i, 1); continue; }
+      r.x += r.vx * dt;
+      const y = naTelaTexto(r.al);
+      if (r.tipo === "fumaca" || r.tipo === "plasma") {
+        const raio = r.r * (1 + t * 2.2);
+        const g = tx.createRadialGradient(r.x, y, 0, r.x, y, raio);
+        const a = (r.tipo === "plasma" ? 0.35 : 0.55) * (1 - t);
+        g.addColorStop(0, `rgba(${r.cor}, ${a})`);
+        g.addColorStop(1, `rgba(${r.cor}, 0)`);
+        tx.fillStyle = g;
+        tx.fillRect(r.x - raio, y - raio, raio * 2, raio * 2);
+      } else {
+        tx.globalAlpha = 1 - t;
+        tx.fillStyle = `rgb(${r.cor})`;
+        const tam = r.r * escala * 0.5;
+        tx.fillRect(r.x - tam / 2, y - tam / 2, tam, tam);
+        if (r.tipo === "faisca") tx.fillRect(r.x - 0.5, y - tam * 2, 1, tam * 2);
+        tx.globalAlpha = 1;
+      }
+    }
+  }
+
   function desenharCaixas(agora) {
     const W = innerWidth;
     for (let i = caixas.length - 1; i >= 0; i--) {
@@ -1768,6 +1873,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const t = agora - c.inicio;
       // cai junto com a câmera e fica onde parou; as antigas vão ficando para trás
       const al = c.de + (c.para - c.de) * suave(Math.min(1, t / DURACAO_DESCIDA));
+      if (!c.saida && mostrarLinhas) {
+        for (const f of FAIXAS) {
+          if (!f.min || acesas[f.id]) continue;
+          if (al >= rodadaAl + f.min * AL_POR_PONTO) {
+            acesas[f.id] = agora;
+            if (window.Som && Som.limiar) Som.limiar(FAIXAS.length - 1 - FAIXAS.indexOf(f));
+          }
+        }
+      }
+      if (!c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -1780,6 +1895,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const p = escala; // um pixel da cena: a borda segue a mesma grade do cenário
       tx.font = `${pequena ? 14 : 20}px 'Press Start 2P', monospace`;
       const w = Math.ceil((Math.ceil(tx.measureText(texto).width) + (pequena ? 36 : 56)) / p) * p;
+      if (!c.saida) larguraCaixa = w;
       const h = (pequena ? 12 : 14) * p;
       // centralizada na tela: é ali que o jogo acontece
       const x = Math.round(Math.max(8, W / 2 - w / 2) / p) * p;
@@ -1910,6 +2026,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Marca o começo de uma pergunta: as linhas das faixas partem daqui.
     novaRodada() {
       const agora = performance.now();
+      for (const k of Object.keys(acesas)) delete acesas[k];
+      alvoCanto = 1;
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       rodadaAl = camera.para;
       mostrarLinhas = true;
@@ -1920,6 +2038,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const peso = Math.min(1, pontos / 100);
       const faixa = faixaDe(pontos, supernova);
       const distancia = pontos * AL_POR_PONTO;
+      alvoCanto = 0;
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
@@ -1945,6 +2064,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Tela final: some com as caixinhas e as linhas das faixas.
     limpar() {
       caixas.length = 0;
+      alvoCanto = 0;
       mostrarLinhas = false;
     },
     // Coloca a câmera numa profundidade sem animação (ao retomar o dia).
@@ -2156,6 +2276,11 @@ function iniciar() {
   }
 }
 
+function mostrarPergunta(ligada) {
+  $("cartao-pergunta").hidden = !ligada;
+  $("painel-resposta").hidden = !ligada;
+}
+
 function montarQuadrados() {
   const caixa = $("quadrados");
   caixa.innerHTML = "";
@@ -2190,7 +2315,7 @@ function iniciarRodada() {
   $("sugestao").hidden = true;
   avisar("", "");
   $("palpite").value = "";
-  $("cartao-pergunta").hidden = false;
+  mostrarPergunta(true);
 
   // contagem antes do relógio, para dar tempo de ler
   let n = 3;
@@ -2297,18 +2422,11 @@ function desenharRadar(fracao, urgente) {
     c.fillRect(m + Math.cos(ang) * dist * 24 - 1, m + Math.sin(ang) * dist * 24 - 1, 2, 2);
   }
   c.restore();
-  // planeta no centro, com sombra e anel
-  const planeta = c.createRadialGradient(m - 2, m - 2, 0.5, m, m, 5);
-  planeta.addColorStop(0, "#fff0a0");
-  planeta.addColorStop(1, urgente ? "#c0203a" : "#e08a00");
-  c.fillStyle = planeta;
+  // miolo escuro: o número do tempo fica em cima
+  c.fillStyle = "rgba(5, 3, 24, 0.85)";
   c.beginPath();
-  c.arc(m, m, 4.5, 0, Math.PI * 2);
+  c.arc(m, m, 13, 0, Math.PI * 2);
   c.fill();
-  c.strokeStyle = "rgba(255, 230, 160, 0.7)";
-  c.beginPath();
-  c.ellipse(m, m, 8, 2.2, -0.35, 0, Math.PI * 2);
-  c.stroke();
   // lua na ponta do feixe
   c.fillStyle = "#ffffff";
   c.beginPath();
@@ -2403,7 +2521,7 @@ function palpitar(evento) {
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
   const percentil = cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   cena.descer(achada.resposta, pontos, supernova);
   Som.descer(Math.min(1, pontos / 100));
   registrar(cat, achada.resposta, pontos, supernova, percentil);
@@ -2415,7 +2533,7 @@ function palpitar(evento) {
 function tempoEsgotado() {
   pararRelogio();
   const cat = estado.categorias[estado.rodada];
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   Som.erro();
   registrar(cat, null, 0, false, 0);
   mostrarResultado(cat, null, 0, false);
@@ -2494,7 +2612,7 @@ function proxima() {
 function mostrarFim(comSom) {
   if (comSom) Som.fim();
   cena.limpar();
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   $("fim").hidden = false;
   montarQuadrados();
   $("rotulo-rodada").textContent = "VIAGEM COMPLETA";

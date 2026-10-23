@@ -195,6 +195,11 @@ function iniciar() {
   }
 }
 
+function mostrarPergunta(ligada) {
+  $("cartao-pergunta").hidden = !ligada;
+  $("painel-resposta").hidden = !ligada;
+}
+
 function montarQuadrados() {
   const caixa = $("quadrados");
   caixa.innerHTML = "";
@@ -229,7 +234,7 @@ function iniciarRodada() {
   $("sugestao").hidden = true;
   avisar("", "");
   $("palpite").value = "";
-  $("cartao-pergunta").hidden = false;
+  mostrarPergunta(true);
 
   // contagem antes do relógio, para dar tempo de ler
   let n = 3;
@@ -336,18 +341,11 @@ function desenharRadar(fracao, urgente) {
     c.fillRect(m + Math.cos(ang) * dist * 24 - 1, m + Math.sin(ang) * dist * 24 - 1, 2, 2);
   }
   c.restore();
-  // planeta no centro, com sombra e anel
-  const planeta = c.createRadialGradient(m - 2, m - 2, 0.5, m, m, 5);
-  planeta.addColorStop(0, "#fff0a0");
-  planeta.addColorStop(1, urgente ? "#c0203a" : "#e08a00");
-  c.fillStyle = planeta;
+  // miolo escuro: o número do tempo fica em cima
+  c.fillStyle = "rgba(5, 3, 24, 0.85)";
   c.beginPath();
-  c.arc(m, m, 4.5, 0, Math.PI * 2);
+  c.arc(m, m, 13, 0, Math.PI * 2);
   c.fill();
-  c.strokeStyle = "rgba(255, 230, 160, 0.7)";
-  c.beginPath();
-  c.ellipse(m, m, 8, 2.2, -0.35, 0, Math.PI * 2);
-  c.stroke();
   // lua na ponta do feixe
   c.fillStyle = "#ffffff";
   c.beginPath();
@@ -442,7 +440,7 @@ function palpitar(evento) {
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
   const percentil = cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   cena.descer(achada.resposta, pontos, supernova);
   Som.descer(Math.min(1, pontos / 100));
   registrar(cat, achada.resposta, pontos, supernova, percentil);
@@ -454,7 +452,7 @@ function palpitar(evento) {
 function tempoEsgotado() {
   pararRelogio();
   const cat = estado.categorias[estado.rodada];
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   Som.erro();
   registrar(cat, null, 0, false, 0);
   mostrarResultado(cat, null, 0, false);
@@ -533,7 +531,7 @@ function proxima() {
 function mostrarFim(comSom) {
   if (comSom) Som.fim();
   cena.limpar();
-  $("cartao-pergunta").hidden = true;
+  mostrarPergunta(false);
   $("fim").hidden = false;
   montarQuadrados();
   $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
