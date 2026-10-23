@@ -505,6 +505,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   $("proxima").textContent = ultima ? "VOLTAR ▲" : "VIAJAR ▼";
   if (supernova) cena.dourado(true);
   card.hidden = false;
+  cena.resultado();
   if (supernova) Som.supernova();
   else if (resposta) Som.faixa(FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
   Som.profundidade(profundidade());
