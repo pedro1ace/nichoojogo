@@ -160,6 +160,8 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         for apelido in r["apelidos"]:
             if valor is not None:
                 break
+            if len(apelido) <= 3:
+                continue
             valor = icf_de(apelido, base)
         r["sem_dado"] = valor is None
         r["icf"] = round(ICF_SEM_DADO if valor is None else valor, 3)
