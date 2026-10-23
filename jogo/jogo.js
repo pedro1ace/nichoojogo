@@ -686,6 +686,7 @@ const CURIOSIDADE_SUPERNOVA = {
   "luas-do-sistema-solar": "Lua de Saturno que pode esconder um oceano debaixo do gelo.",
   paises: "Tem só uns 20 km de litoral, todos na cidadezinha de Neum.",
   "planetas-e-planetas-anoes": "Foi a descoberta dela, em 2005, que tirou Plutão da lista de planetas.",
+  "elementos-quimicos": "O elemento mais pesado já criado: só uns poucos átomos existiram, por menos de um milissegundo.",
 };
 
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
