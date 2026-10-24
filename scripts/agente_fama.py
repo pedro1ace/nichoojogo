@@ -19,7 +19,10 @@ Passos, para cada categoria:
        Precisa de ANTHROPIC_API_KEY e `pip install anthropic`. Sem chave, usa só o cache.
     2. tendência (Wikipédia pt): visitas mês a mês, dos dumps baixados por
        scripts/baixar_visitas.sh, para os artigos já achados por scripts/buscar_wikidata.py.
-       tendência = visitas dos 3 últimos meses / média de 3 meses no ano. Acima de 1 = em alta.
+       tendência = visitas dos 6 últimos meses / visitas dos 6 anteriores. Acima de 1 = em alta.
+       (6 contra 6, e não 3 contra o ano, para quem teve um pico recente, como a Artemis 2 em
+       abril, não aparecer "em baixa" só porque o pico já passou.) O efeito é proporcional ao
+       tamanho das visitas: artigo pouco lido varia muito por acaso.
        (Google Trends não tem API pública estável; as visitas fazem o mesmo papel.)
     3. combinação: cada sinal é posto entre 0 e 1 dentro da categoria (1 = mais famosa) e
        entra com o peso de PESOS. A tendência soma ou tira até TENDENCIA_MAX.
@@ -125,11 +128,22 @@ def meses_disponiveis() -> list[Path]:
     return sorted(VISITAS_LOCAIS.glob("pt-??????.tsv"), reverse=True)[:12]
 
 
+_SERIES: dict[str, list[int]] = {}
+
+
 def visitas_por_mes(titulos: set[str]) -> dict[str, list[int]]:
-    """título -> visitas em cada mês (mais novo primeiro). Vazio se não há dumps."""
+    """título -> visitas em cada mês (mais novo primeiro). Vazio se não há dumps.
+    Cada dump tem uns 100 MB; por isso main() pede os títulos de todas as categorias de uma vez."""
+    faltam = titulos - set(_SERIES)
     arquivos = meses_disponiveis()
     if not arquivos or not titulos:
         return {}
+    if faltam:
+        _SERIES.update(_ler_dumps(faltam, arquivos))
+    return {t: _SERIES[t] for t in titulos if t in _SERIES}
+
+
+def _ler_dumps(titulos: set[str], arquivos: list[Path]) -> dict[str, list[int]]:
     procurados = {t.replace(" ", "_"): t for t in titulos}
     serie = {t: [0] * len(arquivos) for t in titulos}
     for i, arquivo in enumerate(arquivos):
@@ -142,11 +156,14 @@ def visitas_por_mes(titulos: set[str]) -> dict[str, list[int]]:
 
 
 def tendencia(serie: list[int]) -> float | None:
-    """Últimos 3 meses contra a média de 3 meses no período. None com pouco dado."""
+    """Metade mais nova do período contra a mais velha. None com pouco dado ou artigo novo."""
     if len(serie) < 6 or sum(serie) < 120:  # menos de ~10 visitas por mês é ruído
         return None
-    media_3 = sum(serie) / len(serie) * 3
-    return round(sum(serie[:3]) / media_3, 2) if media_3 else None
+    meio = len(serie) // 2
+    novo, velho = sum(serie[:meio]), sum(serie[meio:])
+    if not velho or 0 in serie:  # artigo criado no meio do período: não dá para comparar
+        return None
+    return round(novo / velho, 2)
 
 
 # ---------- 3. combinação ----------
@@ -208,8 +225,11 @@ def combinar(cat: dict, llm: dict, base: pontuar.BaseICF) -> dict:
         titulo = (wikidata.get(nome) or {}).get("ptwiki")
         t = tendencia(series[titulo]) if titulo in series else None
         if t is not None:
-            # dobro da média = +TENDENCIA_MAX; metade = -TENDENCIA_MAX
-            fama += TENDENCIA_MAX * max(-1.0, min(1.0, math.log2(t)))
+            # dobro = +TENDENCIA_MAX; metade = -TENDENCIA_MAX. Vezes o tamanho das visitas (0 a 1 na
+            # categoria): artigo com 20 visitas por mês sobe e desce 5 vezes por acaso, e numa lista
+            # enorme, em que a cauda está toda empatada, isso bagunçaria a ordem.
+            tamanho = pcts.get("visitas", {}).get(nome, 0.0)
+            fama += TENDENCIA_MAX * tamanho * max(-1.0, min(1.0, math.log2(t)))
         item = itens.get(normalizar(nome)) or {}
         linhas[nome] = {
             "fama": round(min(max(fama, 0.0), 1.0), 4),
@@ -295,6 +315,12 @@ def main() -> None:
 
     antes = retrato()
     base = pontuar.BaseICF()
+    # lê os dumps de visitas uma vez só, com os artigos de todas as categorias
+    todos = set()
+    for cat_id in cats:
+        wikidata = ler_json(SINAIS / "wikidata" / f"{cat_id}.json")
+        todos |= {l.get("ptwiki") for l in wikidata.values()} - {None}
+    visitas_por_mes(todos)
     FAMA.mkdir(parents=True, exist_ok=True)
     for cat_id in cats:
         cat = ler_categoria(CATEGORIAS / f"{cat_id}.txt")

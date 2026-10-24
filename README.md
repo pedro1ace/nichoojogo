@@ -131,8 +131,8 @@ O agente mede isso e reordena cada categoria:
    pergunta o que ainda não está no arquivo. Sem `ANTHROPIC_API_KEY`, usa só o que já está lá.
    Nas listas enormes (astronautas, missões, exoplanetas, palavras em -io) só os nomes que alguém lembra
    foram estimados; o resto fica com um valor padrão (`"origem": "padrao"`) e é ordenado pelos outros sinais.
-2. **Wikipédia** (`dados/sinais/wikidata/<cat>.json`): visitas em 12 meses e **tendência** (últimos 3 meses
-   contra a média), dos dumps de `scripts/baixar_visitas.sh`. Quem está em alta sobe um pouco.
+2. **Wikipédia** (`dados/sinais/wikidata/<cat>.json`): visitas em 12 meses e **tendência** (últimos 6 meses
+   contra os 6 anteriores), dos dumps de `scripts/baixar_visitas.sh`. Quem está em alta sobe um pouco.
 3. **Mistura**: lembrança 55%, reconhecimento 20%, o peso manual antigo de `dados/ajustes/` 15%, visitas 7%
    e frequência em textos 3%. Em lista enorme, a lembrança pesa na proporção do que foi estimado.
    A tendência soma ou tira até 0,05. O resultado vai para `dados/sinais/fama/<cat>.json`.

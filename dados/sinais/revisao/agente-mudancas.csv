@@ -1,5 +1,4 @@
 categoria,resposta,faixa_antes,pontos_antes,faixa_agora,pontos_agora,saltos,lembranca_em_1000,conhecem_pct,visitas_pt_12m,tendencia
-missoes-espaciais,Mars Sample Return,rara,63,óbvia,15,-3,1.0,15.0,112,
 coisas-com-casca,Caramujo,rara,73,comum,20,-2,5.0,95.0,,
 coisas-com-casca,Pistache,rara,62,comum,33,-2,1.0,82.0,,
 coisas-com-casca,Pão,incomum,37,óbvia,15,-2,8.0,95.0,,
@@ -8,8 +7,10 @@ coisas-com-casca,Abobrinha,comum,34,rara,69,2,0.2,60.0,,
 coisas-com-casca,Berinjela,comum,30,rara,68,2,0.2,60.0,,
 coisas-com-casca,Pepino,comum,27,rara,62,2,0.3,62.0,,
 coisas-que-brilham-no-ceu,OVNI,rara,60,comum,28,-2,6.0,90.0,,
-constelacoes,Ofiúco,rara,60,comum,29,-2,1.0,30.0,6838,
-missoes-espaciais,STS-52,incomum,57,supernova,50,2,0.01,3.0,117,
+constelacoes,Ofiúco,rara,60,comum,29,-2,1.0,30.0,6838,0.98
+missoes-espaciais,Mars Sample Return,rara,63,comum,19,-2,1.0,15.0,112,
+missoes-espaciais,Soyuz MS-21,supernova,50,incomum,57,-2,0.01,3.0,116,
+missoes-espaciais,Soyuz 31,incomum,38,supernova,50,2,0.01,3.0,169,0.56
 palavras-astro-e-cosmo,Astrocitoma,rara,72,comum,26,-2,0.1,20.0,,
 palavras-astro-e-cosmo,Astrometria,rara,68,comum,24,-2,0.2,30.0,,
 palavras-astro-e-cosmo,Cosmogênese,rara,67,comum,28,-2,0.05,20.0,,
@@ -29,22 +30,54 @@ animais-do-brasil,Ariranha,comum,27,incomum,41,1,4.0,70.0,,
 animais-do-brasil,Boto-cor-de-rosa,óbvia,14,comum,18,1,30.0,95.0,,
 animais-do-brasil,Suçuarana,incomum,52,rara,62,1,2.0,50.0,,
 animais-do-brasil,Tatu-bola,comum,29,incomum,35,1,6.0,80.0,,
-astronautas,Anousheh Ansari,comum,19,óbvia,14,-1,0.2,4.0,607,
-astronautas,Arnaldo Tamayo Méndez,comum,18,óbvia,15,-1,0.1,3.0,703,
-astronautas,Barry Wilmore,comum,20,óbvia,10,-1,2.0,20.0,510,
-astronautas,Eileen Collins,comum,20,óbvia,13,-1,1.0,10.0,477,
-astronautas,Hazza Al Mansouri,incomum,38,comum,33,-1,0.1,3.0,158,
+astronautas,Alan Poindexter,incomum,40,comum,33,-1,0.01,3.0,148,1.74
+astronautas,Aleksandr Samokutyayev,comum,18,óbvia,15,-1,0.01,3.0,658,17.28
+astronautas,Arnaldo Tamayo Méndez,comum,18,óbvia,15,-1,0.1,3.0,703,1.54
+astronautas,Barry Wilmore,comum,20,óbvia,11,-1,2.0,20.0,510,1.11
+astronautas,Bryan O'Connor,incomum,36,comum,32,-1,0.01,3.0,166,1.55
+astronautas,Denis Matveev,incomum,36,comum,30,-1,0.01,3.0,171,3.38
+astronautas,Deniz Burnham,incomum,36,comum,32,-1,0.01,3.0,169,1.6
+astronautas,Eileen Collins,comum,20,óbvia,14,-1,1.0,10.0,477,0.75
+astronautas,Frank Culbertson Jr.,incomum,35,comum,29,-1,0.01,3.0,174,1.95
+astronautas,Frederick Gregory,incomum,38,comum,34,-1,0.01,3.0,155,1.5
+astronautas,Gordon Fullerton,incomum,35,comum,33,-1,0.01,3.0,174,1.35
+astronautas,Gregory Chamitoff,incomum,38,comum,31,-1,0.01,3.0,158,2.36
+astronautas,Guy Gardner,incomum,36,comum,33,-1,0.01,3.0,169,1.38
+astronautas,James McDivitt,comum,18,óbvia,15,-1,0.01,3.0,724,2.11
+astronautas,Josh Cassada,incomum,40,comum,34,-1,0.01,3.0,148,1.69
+astronautas,Loren Shriver,incomum,38,comum,33,-1,0.01,3.0,154,1.75
+astronautas,Maxim Surayev,incomum,39,comum,32,-1,0.01,3.0,154,3.97
 astronautas,Pyotr Klimuk,supernova,50,rara,60,-1,0.01,3.0,95,
-astronautas,Scott Carpenter,comum,18,óbvia,14,-1,0.2,4.0,655,
-astronautas,Thomas Pesquet,comum,19,óbvia,12,-1,1.0,10.0,574,
-astronautas,Abdul Ahad Mohmand,óbvia,15,comum,18,1,0.01,3.0,742,
-astronautas,Donn Eisele,óbvia,15,comum,18,1,0.01,3.0,753,
-astronautas,Guion Bluford,óbvia,15,comum,18,1,0.01,3.0,743,
-astronautas,Jeffrey A. Hoffman,comum,34,incomum,35,1,0.01,3.0,175,
-astronautas,Jeffrey Williams,óbvia,15,comum,18,1,0.01,3.0,741,
-astronautas,Pavel Vinogradov,óbvia,15,comum,18,1,0.01,3.0,734,
+astronautas,Scott Carpenter,comum,18,óbvia,14,-1,0.2,4.0,655,1.6
+astronautas,Stephanie Wilson,incomum,35,comum,33,-1,0.01,3.0,172,1.21
+astronautas,Thomas Pesquet,comum,19,óbvia,13,-1,1.0,10.0,574,1.01
+astronautas,Viktor Savinykh,incomum,37,comum,34,-1,0.01,3.0,162,1.35
+astronautas,Vladimir Dzhanibekov,incomum,35,comum,30,-1,0.01,3.0,174,1.68
+astronautas,Vladislav Volkov,comum,18,óbvia,15,-1,0.01,3.0,681,2.24
+astronautas,André Kuipers,comum,29,incomum,38,1,0.01,3.0,225,0.55
+astronautas,Charles Walker,comum,34,incomum,39,1,0.01,3.0,175,0.84
+astronautas,Duane Graveline,comum,30,incomum,36,1,0.01,3.0,214,0.66
+astronautas,Ellen Baker,comum,32,incomum,38,1,0.01,3.0,196,0.7
+astronautas,Ellen Ochoa,óbvia,13,comum,19,1,0.2,4.0,1048,0.44
+astronautas,Eytan Stibbe,comum,27,incomum,35,1,0.01,3.0,265,0.32
+astronautas,Gerhard Thiele,comum,29,incomum,40,1,0.01,3.0,219,0.33
+astronautas,Guion Bluford,óbvia,15,comum,18,1,0.01,3.0,743,1.38
+astronautas,Jan Davis,óbvia,14,comum,19,1,0.01,3.0,782,1.19
+astronautas,Jeffrey A. Hoffman,comum,34,incomum,39,1,0.01,3.0,175,0.84
+astronautas,Julie Payette,óbvia,14,comum,20,1,0.01,3.0,835,0.67
+astronautas,Kathryn Hire,comum,30,incomum,41,1,0.01,3.0,209,0.36
+astronautas,Kimiya Yui,comum,33,incomum,44,1,0.01,3.0,183,0.27
+astronautas,Lisa Nowak,óbvia,14,comum,18,1,0.01,3.0,868,1.25
+astronautas,Marcus Wandt,comum,31,incomum,42,1,0.01,3.0,206,0.47
+astronautas,Michael Strahan,óbvia,14,comum,20,1,0.1,5.0,911,0.49
+astronautas,Nicole Stott,óbvia,14,comum,18,1,0.01,3.0,802,1.37
+astronautas,Patrick Forrester,comum,31,incomum,37,1,0.01,3.0,208,0.69
+astronautas,Pavel Vinogradov,óbvia,15,comum,19,1,0.01,3.0,734,1.17
 astronautas,Richard Gordon,rara,68,supernova,50,1,0.1,3.0,80,
-astronautas,Sophie Adenot,óbvia,15,comum,18,1,0.01,3.0,734,
+astronautas,Sergei Avdeyev,comum,32,incomum,41,1,0.01,3.0,187,0.63
+astronautas,Sergei Volkov,comum,33,incomum,39,1,0.01,3.0,180,0.78
+astronautas,Sheikh Muszaphar Shukor,comum,32,incomum,44,1,0.01,3.0,187,0.34
+astronautas,Vladimir Solovyov,comum,32,incomum,35,1,0.01,3.0,190,0.88
 bagagem-do-astronauta,Bateria,incomum,35,comum,33,-1,2.0,80.0,,
 bagagem-do-astronauta,Fralda,incomum,42,comum,34,-1,2.0,70.0,,
 bagagem-do-astronauta,Microscópio,rara,65,incomum,54,-1,1.0,65.0,,
@@ -150,22 +183,21 @@ comidas-tipicas,Farofa,óbvia,14,comum,18,1,12.0,99.0,,
 comidas-tipicas,Mandioca frita,comum,32,incomum,40,1,1.0,90.0,,
 comidas-tipicas,Pirão,incomum,54,rara,64,1,0.5,80.0,,
 comidas-tipicas,Queijo coalho,comum,31,incomum,39,1,1.0,90.0,,
-constelacoes,Cães de Caça,rara,62,incomum,57,-1,0.05,10.0,2086,
-constelacoes,Peixe Voador,rara,66,incomum,56,-1,0.05,8.0,3641,
-constelacoes,Sagitário,comum,18,óbvia,13,-1,15.0,72.0,8427,
-constelacoes,Serpente,incomum,35,comum,34,-1,0.3,15.0,2244,
-constelacoes,Triângulo Austral,rara,73,incomum,46,-1,0.2,15.0,1698,
-constelacoes,Ursa Menor,comum,20,óbvia,10,-1,60.0,90.0,3650,
-constelacoes,Índio,rara,67,incomum,50,-1,0.1,10.0,3810,
-constelacoes,Boieiro,incomum,58,rara,62,1,0.05,8.0,3487,
-constelacoes,Libra,óbvia,14,comum,19,1,10.0,70.0,3010,
-constelacoes,Microscópio,incomum,53,rara,73,1,0.05,8.0,663,
-constelacoes,Peixes,óbvia,10,comum,18,1,10.0,70.0,1995,
-constelacoes,Popa,incomum,50,rara,65,1,0.05,8.0,1255,
-constelacoes,Relógio,incomum,42,rara,60,1,0.05,8.0,876,
-constelacoes,Telescópio,incomum,47,rara,66,1,0.1,10.0,651,
-constelacoes,Triângulo,comum,33,incomum,36,1,0.3,15.0,1032,
-constelacoes,Tucano,comum,34,incomum,41,1,0.1,10.0,949,
+constelacoes,Ave-do-Paraíso,rara,65,incomum,57,-1,0.05,10.0,1788,0.89
+constelacoes,Cães de Caça,rara,62,incomum,49,-1,0.05,10.0,2086,1.16
+constelacoes,Sagitário,comum,18,óbvia,13,-1,15.0,72.0,8427,0.48
+constelacoes,Serpente,incomum,35,comum,34,-1,0.3,15.0,2244,0.85
+constelacoes,Triângulo Austral,rara,73,incomum,45,-1,0.2,15.0,1698,0.89
+constelacoes,Ursa Menor,comum,20,óbvia,10,-1,60.0,90.0,3650,0.89
+constelacoes,Capricórnio,óbvia,15,comum,20,1,10.0,70.0,6401,0.33
+constelacoes,Compasso,incomum,49,rara,66,1,0.05,10.0,1429,0.52
+constelacoes,Lagarto,incomum,51,rara,64,1,0.1,10.0,1353,0.37
+constelacoes,Microscópio,incomum,53,rara,70,1,0.05,8.0,663,0.76
+constelacoes,Peixes,óbvia,10,comum,18,1,10.0,70.0,1995,0.68
+constelacoes,Popa,incomum,50,rara,62,1,0.05,8.0,1255,0.8
+constelacoes,Telescópio,incomum,47,rara,60,1,0.1,10.0,651,0.7
+constelacoes,Triângulo,comum,33,incomum,36,1,0.3,15.0,1032,0.99
+constelacoes,Tucano,comum,34,incomum,44,1,0.1,10.0,949,0.66
 corpos-do-sistema-solar,Apófis,incomum,36,comum,31,-1,0.2,20.0,,
 corpos-do-sistema-solar,Juno,incomum,35,comum,33,-1,0.1,15.0,,
 corpos-do-sistema-solar,Psique,rara,60,incomum,49,-1,0.05,10.0,,
@@ -188,33 +220,36 @@ dinossauros,Giganotossauro,incomum,37,comum,34,-1,1.0,45.0,,
 dinossauros,Quetzalcoatlus,rara,67,incomum,56,-1,0.1,20.0,,
 dinossauros,Apatossauro,comum,34,incomum,39,1,1.0,40.0,,
 dinossauros,Barionix,incomum,58,rara,60,1,0.1,15.0,,
-elementos-quimicos,Argônio,incomum,36,comum,25,-1,2.0,75.0,5310,
-elementos-quimicos,Astato,rara,69,incomum,57,-1,0.02,10.0,4380,
-elementos-quimicos,Berílio,incomum,42,comum,29,-1,1.0,60.0,6763,
-elementos-quimicos,Bromo,incomum,37,comum,32,-1,0.5,55.0,7513,
-elementos-quimicos,Bário,incomum,35,comum,33,-1,0.5,55.0,4769,
-elementos-quimicos,Cloro,comum,20,óbvia,13,-1,12.0,97.0,14742,
-elementos-quimicos,Criptônio,incomum,56,comum,29,-1,1.0,70.0,3052,
-elementos-quimicos,Einstênio,rara,72,incomum,57,-1,0.05,15.0,2596,
-elementos-quimicos,Flúor,comum,26,óbvia,14,-1,12.0,95.0,8975,
-elementos-quimicos,Hidrogênio,comum,19,óbvia,8,-1,110.0,100.0,22518,
-elementos-quimicos,Lítio,comum,24,óbvia,13,-1,12.0,92.0,27839,
-elementos-quimicos,Netúnio,rara,75,incomum,51,-1,0.1,25.0,1881,
-elementos-quimicos,Nitrogênio,comum,19,óbvia,11,-1,25.0,97.0,14264,
-elementos-quimicos,Cúrio,incomum,53,rara,60,1,0.05,15.0,1956,
-elementos-quimicos,Magnésio,óbvia,15,comum,18,1,8.0,92.0,16249,
-elementos-quimicos,Molibdênio,comum,34,incomum,42,1,0.1,30.0,6698,
-elementos-quimicos,Neônio,óbvia,13,comum,23,1,4.0,85.0,8250,
-elementos-quimicos,Plutônio,óbvia,15,comum,27,1,1.0,75.0,11286,
-elementos-quimicos,Polônio,comum,25,incomum,35,1,0.3,40.0,9496,
-elementos-quimicos,Radônio,comum,31,incomum,39,1,0.2,40.0,5331,
-elementos-quimicos,Rênio,incomum,55,rara,64,1,0.02,10.0,2794,
-elementos-quimicos,Ródio,comum,32,incomum,46,1,0.05,20.0,5887,
-elementos-quimicos,Samário,incomum,57,rara,63,1,0.02,12.0,2602,
-elementos-quimicos,Urânio,óbvia,13,comum,19,1,6.0,92.0,22351,
-elementos-quimicos,Vanádio,comum,33,incomum,40,1,0.2,35.0,5223,
-elementos-quimicos,Zinco,óbvia,14,comum,20,1,6.0,95.0,12662,
-elementos-quimicos,Érbio,incomum,58,rara,67,1,0.02,10.0,2193,
+elementos-quimicos,Argônio,incomum,36,comum,25,-1,2.0,75.0,5310,0.96
+elementos-quimicos,Astato,rara,69,incomum,56,-1,0.02,10.0,4380,1.33
+elementos-quimicos,Berílio,incomum,42,comum,29,-1,1.0,60.0,6763,1.13
+elementos-quimicos,Bromo,incomum,37,comum,32,-1,0.5,55.0,7513,1.33
+elementos-quimicos,Bário,incomum,35,comum,33,-1,0.5,55.0,4769,1.3
+elementos-quimicos,Cloro,comum,20,óbvia,13,-1,12.0,97.0,14742,0.84
+elementos-quimicos,Criptônio,incomum,56,comum,30,-1,1.0,70.0,3052,1.02
+elementos-quimicos,Einstênio,rara,72,incomum,58,-1,0.05,15.0,2596,1.06
+elementos-quimicos,Flúor,comum,26,óbvia,14,-1,12.0,95.0,8975,1.09
+elementos-quimicos,Hidrogênio,comum,19,óbvia,8,-1,110.0,100.0,22518,0.96
+elementos-quimicos,Lítio,comum,24,óbvia,13,-1,12.0,92.0,27839,1.12
+elementos-quimicos,Netúnio,rara,75,incomum,51,-1,0.1,25.0,1881,1.23
+elementos-quimicos,Nitrogênio,comum,19,óbvia,11,-1,25.0,97.0,14264,0.67
+elementos-quimicos,Túlio,rara,61,incomum,57,-1,0.02,8.0,2698,1.28
+elementos-quimicos,Xenônio,incomum,38,comum,34,-1,0.3,45.0,5654,1.44
+elementos-quimicos,Cádmio,comum,29,incomum,35,1,0.3,45.0,5780,0.82
+elementos-quimicos,Cúrio,incomum,53,rara,61,1,0.05,15.0,1956,1.15
+elementos-quimicos,Magnésio,óbvia,15,comum,18,1,8.0,92.0,16249,0.94
+elementos-quimicos,Molibdênio,comum,34,incomum,42,1,0.1,30.0,6698,1.21
+elementos-quimicos,Neônio,óbvia,13,comum,23,1,4.0,85.0,8250,1.03
+elementos-quimicos,Plutônio,óbvia,15,comum,27,1,1.0,75.0,11286,1.14
+elementos-quimicos,Polônio,comum,25,incomum,36,1,0.3,40.0,9496,0.81
+elementos-quimicos,Radônio,comum,31,incomum,39,1,0.2,40.0,5331,0.98
+elementos-quimicos,Rênio,incomum,55,rara,63,1,0.02,10.0,2794,1.15
+elementos-quimicos,Ródio,comum,32,incomum,47,1,0.05,20.0,5887,0.9
+elementos-quimicos,Samário,incomum,57,rara,60,1,0.02,12.0,2602,1.44
+elementos-quimicos,Urânio,óbvia,13,comum,19,1,6.0,92.0,22351,1.04
+elementos-quimicos,Vanádio,comum,33,incomum,40,1,0.2,35.0,5223,1.05
+elementos-quimicos,Zinco,óbvia,14,comum,20,1,6.0,95.0,12662,0.95
+elementos-quimicos,Érbio,incomum,58,rara,66,1,0.02,10.0,2193,1.18
 esportes-olimpicos,Arremesso de peso,rara,62,incomum,57,-1,0.5,70.0,,
 esportes-olimpicos,Beisebol,rara,72,incomum,49,-1,1.0,80.0,,
 esportes-olimpicos,Marcha atlética,rara,68,incomum,58,-1,0.5,70.0,,
@@ -223,44 +258,42 @@ esportes-olimpicos,Breaking,incomum,49,rara,68,1,0.5,60.0,,
 esportes-olimpicos,Caiaque,incomum,53,rara,62,1,0.3,70.0,,
 esportes-olimpicos,Luta olímpica,comum,31,incomum,38,1,1.0,80.0,,
 esportes-olimpicos,Snowboard,incomum,57,rara,65,1,0.5,65.0,,
-estrelas,Alnilam,incomum,43,comum,22,-1,4.0,25.0,2348,
-estrelas,Alnitak,incomum,45,comum,27,-1,3.0,22.0,2242,
-estrelas,Antares,comum,19,óbvia,15,-1,5.0,35.0,15316,
-estrelas,Bellatrix,incomum,40,comum,23,-1,3.0,30.0,3004,
-estrelas,Dubhe,rara,66,incomum,55,-1,0.3,8.0,270,
-estrelas,Estrela de Barnard,rara,70,incomum,51,-1,0.3,10.0,2694,
-estrelas,Eta Carinae,rara,90,incomum,56,-1,0.3,10.0,2916,
-estrelas,Mintaka,incomum,42,comum,26,-1,3.0,22.0,2964,
+estrelas,Alnilam,incomum,43,comum,23,-1,4.0,25.0,2348,0.63
+estrelas,Alnitak,incomum,45,comum,29,-1,3.0,22.0,2242,0.65
+estrelas,Antares,comum,19,óbvia,15,-1,5.0,35.0,15316,0.92
+estrelas,Bellatrix,incomum,40,comum,22,-1,3.0,30.0,3004,0.82
+estrelas,Dubhe,rara,66,incomum,56,-1,0.3,8.0,270,1.14
+estrelas,Estrela de Barnard,rara,70,incomum,51,-1,0.3,10.0,2694,1.11
+estrelas,Mintaka,incomum,42,comum,26,-1,3.0,22.0,2964,0.7
 estrelas,Alcor,incomum,53,rara,72,1,0.2,8.0,0,
-estrelas,Capela,óbvia,15,comum,29,1,1.0,15.0,5559,
-estrelas,Espiga,comum,34,incomum,40,1,0.5,12.0,2218,
-estrelas,Mimosa,comum,33,incomum,38,1,0.5,12.0,1057,
-estrelas,Prócion,comum,29,incomum,35,1,1.0,15.0,1871,
-estrelas,Régulo,comum,31,incomum,42,1,0.3,10.0,3462,
-estrelas,Shaula,incomum,55,rara,60,1,0.1,5.0,1864,
-estrelas,Thuban,incomum,56,rara,62,1,0.1,5.0,1487,
-exoplanetas,Alfa Centauri Bc,comum,24,óbvia,12,-1,3.0,6.0,170,
-exoplanetas,Epsilon Eridani b,comum,22,óbvia,14,-1,2.0,4.0,185,
-exoplanetas,Fomalhaut b,comum,21,óbvia,13,-1,2.0,5.0,230,
-exoplanetas,Gliese 581 b,comum,23,óbvia,14,-1,2.0,5.0,172,
+estrelas,Capela,óbvia,15,comum,27,1,1.0,15.0,5559,0.87
+estrelas,Espiga,comum,34,incomum,38,1,0.5,12.0,2218,1.71
+estrelas,Mimosa,comum,33,incomum,40,1,0.5,12.0,1057,1.16
+estrelas,Prócion,comum,29,incomum,35,1,1.0,15.0,1871,0.72
+estrelas,Régulo,comum,31,incomum,42,1,0.3,10.0,3462,1.21
+estrelas,Thuban,incomum,56,rara,60,1,0.1,5.0,1487,1.21
+exoplanetas,Alfa Centauri Bc,comum,24,óbvia,13,-1,3.0,6.0,170,0.89
+exoplanetas,Epsilon Eridani b,comum,22,óbvia,14,-1,2.0,4.0,185,1.4
+exoplanetas,Fomalhaut b,comum,21,óbvia,13,-1,2.0,5.0,230,0.87
+exoplanetas,Gliese 581 b,comum,23,óbvia,14,-1,2.0,5.0,172,1.05
 exoplanetas,Gliese 581 e,comum,29,óbvia,15,-1,2.0,5.0,119,
-exoplanetas,HR 8799 b,comum,20,óbvia,14,-1,1.0,3.0,257,
-exoplanetas,TRAPPIST-1 b,comum,18,óbvia,9,-1,12.0,15.0,279,
-exoplanetas,Tau Ceti c,comum,19,óbvia,14,-1,1.0,4.0,278,
-exoplanetas,Tau Ceti d,comum,21,óbvia,15,-1,1.0,4.0,228,
-exoplanetas,WASP-121b,comum,23,óbvia,14,-1,2.0,4.0,176,
-exoplanetas,Wolf 1061c,comum,18,óbvia,14,-1,1.0,3.0,286,
-exoplanetas,55 Cancri b,óbvia,15,comum,20,1,0.01,2.0,335,
-exoplanetas,HAT-P-7b,óbvia,15,comum,20,1,0.01,2.0,338,
-exoplanetas,HD 137010 b,óbvia,13,comum,18,1,0.01,2.0,528,
-exoplanetas,HD 34445 b,óbvia,14,comum,19,1,0.01,2.0,382,
-exoplanetas,HD 40307 g,óbvia,13,comum,19,1,0.01,2.0,446,
-exoplanetas,HD 80606 b,óbvia,15,comum,20,1,0.01,2.0,328,
-exoplanetas,Kepler-62e,óbvia,13,comum,18,1,0.01,2.0,524,
-exoplanetas,OGLE-2005-BLG-390Lb,óbvia,14,comum,19,1,0.01,2.0,378,
-exoplanetas,PSR B1257+12 c,óbvia,14,comum,19,1,0.01,2.0,411,
-exoplanetas,TOI 1338 b,óbvia,15,comum,20,1,0.01,2.0,314,
-exoplanetas,XO-3b,óbvia,14,comum,20,1,0.01,2.0,343,
+exoplanetas,HR 8799 b,comum,20,óbvia,15,-1,1.0,3.0,257,1.06
+exoplanetas,TRAPPIST-1 b,comum,18,óbvia,10,-1,12.0,15.0,279,0.85
+exoplanetas,Tau Ceti c,comum,19,óbvia,14,-1,1.0,4.0,278,1.96
+exoplanetas,Tau Ceti d,comum,21,óbvia,14,-1,1.0,4.0,228,1.85
+exoplanetas,WASP-121b,comum,23,óbvia,14,-1,2.0,4.0,176,1.41
+exoplanetas,Wolf 1061c,comum,18,óbvia,14,-1,1.0,3.0,286,1.1
+exoplanetas,55 Cancri b,óbvia,15,comum,20,1,0.01,2.0,335,1.2
+exoplanetas,HAT-P-7b,óbvia,15,comum,20,1,0.01,2.0,338,1.15
+exoplanetas,HD 137010 b,óbvia,13,comum,19,1,0.01,2.0,528,
+exoplanetas,HD 34445 b,óbvia,14,comum,18,1,0.01,2.0,382,2.11
+exoplanetas,HD 40307 g,óbvia,13,comum,19,1,0.01,2.0,446,0.96
+exoplanetas,HD 80606 b,óbvia,15,comum,19,1,0.01,2.0,328,1.62
+exoplanetas,Kepler-37b,óbvia,12,comum,18,1,0.01,2.0,573,1.05
+exoplanetas,OGLE-2005-BLG-390Lb,óbvia,14,comum,20,1,0.01,2.0,378,1.11
+exoplanetas,PSR B1257+12 c,óbvia,14,comum,20,1,0.01,2.0,411,0.86
+exoplanetas,TOI 1338 b,óbvia,15,comum,19,1,0.01,2.0,314,2.57
+exoplanetas,XO-3b,óbvia,14,comum,19,1,0.01,2.0,343,1.35
 festa-junina,Cachorro-quente,incomum,35,comum,28,-1,15.0,99.0,,
 festa-junina,Canjica,comum,18,óbvia,15,-1,60.0,99.0,,
 festa-junina,Mungunzá,rara,60,incomum,54,-1,3.0,70.0,,
@@ -301,83 +334,116 @@ marcas-de-carro,BMW,comum,21,óbvia,14,-1,40.0,100.0,,
 marcas-de-carro,Land Rover,incomum,35,comum,34,-1,2.0,92.0,,
 marcas-de-carro,Chery,comum,34,incomum,36,1,2.0,88.0,,
 marcas-de-carro,Renault,óbvia,14,comum,18,1,25.0,99.0,,
-missoes-espaciais,Axiom Mission 1,incomum,42,comum,23,-1,0.3,8.0,158,
-missoes-espaciais,Beresheet 2,rara,81,incomum,53,-1,0.2,5.0,80,
-missoes-espaciais,Blue Origin NS-16,comum,26,óbvia,13,-1,1.0,15.0,256,
-missoes-espaciais,Boeing Crew Flight Test,comum,23,óbvia,11,-1,3.0,25.0,322,
-missoes-espaciais,Crew Dragon Demo-2,comum,19,óbvia,10,-1,3.0,25.0,443,
-missoes-espaciais,Europa Jupiter System Mission,rara,68,incomum,40,-1,0.2,5.0,104,
-missoes-espaciais,ExoMars,comum,23,óbvia,11,-1,2.0,15.0,319,
-missoes-espaciais,Expedição 1,comum,24,óbvia,14,-1,0.5,10.0,297,
-missoes-espaciais,GRACE,incomum,39,comum,27,-1,0.2,5.0,166,
-missoes-espaciais,Hayabusa2,comum,19,óbvia,12,-1,1.0,10.0,464,
-missoes-espaciais,Luna 16,comum,21,óbvia,15,-1,0.3,8.0,364,
-missoes-espaciais,Mariner 3,rara,70,incomum,41,-1,0.2,5.0,102,
-missoes-espaciais,Mars Polar Lander,comum,20,óbvia,14,-1,0.3,8.0,413,
-missoes-espaciais,Missão lunar de turismo da SpaceX dearMoon,comum,19,óbvia,14,-1,0.5,10.0,443,
-missoes-espaciais,Pioneer Venus 2,rara,61,incomum,37,-1,0.2,5.0,115,
-missoes-espaciais,STS-31,comum,18,óbvia,13,-1,0.5,10.0,484,
-missoes-espaciais,Segundo Voo Experimental da SpaceX Starship,comum,33,óbvia,14,-1,1.0,15.0,194,
-missoes-espaciais,Shenzhou 5,comum,20,óbvia,13,-1,1.0,10.0,374,
-missoes-espaciais,Skylab II,comum,18,óbvia,13,-1,0.5,10.0,482,
-missoes-espaciais,Soyuz MS-21,supernova,50,rara,61,-1,0.01,3.0,116,
-missoes-espaciais,SpaceX Crew-9,comum,21,óbvia,14,-1,0.5,10.0,351,
-missoes-espaciais,Stardust,comum,20,óbvia,13,-1,1.0,10.0,411,
-missoes-espaciais,Terceiro Voo Experimental da SpaceX Starship,incomum,44,comum,21,-1,0.5,10.0,147,
-missoes-espaciais,Tianwen-2,incomum,38,comum,24,-1,0.3,5.0,171,
-missoes-espaciais,Viking 2,comum,21,óbvia,12,-1,1.0,15.0,358,
-missoes-espaciais,Voo experimental da Starship,comum,23,óbvia,10,-1,8.0,40.0,328,
-missoes-espaciais,AS-201,óbvia,14,comum,19,1,0.01,3.0,562,
-missoes-espaciais,AS-203,óbvia,14,comum,19,1,0.01,3.0,557,
-missoes-espaciais,Blue Origin NS-18,incomum,58,rara,60,1,0.01,3.0,116,
-missoes-espaciais,Décimo Primeiro Voo Experimental da SpaceX Starship,óbvia,14,comum,18,1,0.01,3.0,649,
-missoes-espaciais,Décimo Quarto Voo da SpaceX Starship,comum,34,incomum,35,1,0.01,3.0,190,
-missoes-espaciais,Décimo Terceiro Voo Experimental da SpaceX Starship,óbvia,15,comum,20,1,0.01,3.0,517,
-missoes-espaciais,Expedição 20,comum,33,incomum,35,1,0.01,3.0,191,
-missoes-espaciais,Expedição 31,incomum,58,rara,61,1,0.01,3.0,116,
-missoes-espaciais,Expedição 37,incomum,58,rara,61,1,0.01,3.0,116,
-missoes-espaciais,Expedição 61,óbvia,15,comum,20,1,0.01,3.0,494,
-missoes-espaciais,Gemini IX,óbvia,14,comum,19,1,0.01,3.0,550,
-missoes-espaciais,Gemini V,óbvia,14,comum,19,1,0.01,3.0,554,
-missoes-espaciais,Gemini VI-A,óbvia,15,comum,20,1,0.01,3.0,522,
-missoes-espaciais,Gemini X,óbvia,14,comum,20,1,0.01,3.0,547,
-missoes-espaciais,Mars Global Remote Sensing Orbiter and Small Rover,óbvia,13,comum,18,1,0.01,3.0,652,
-missoes-espaciais,Mercury-Redstone 4,óbvia,14,comum,19,1,0.01,3.0,605,
-missoes-espaciais,STS-114,óbvia,14,comum,19,1,0.01,3.0,599,
-missoes-espaciais,STS-133,óbvia,15,comum,20,1,0.01,3.0,537,
-missoes-espaciais,STS-134,óbvia,13,comum,18,1,0.01,3.0,719,
-missoes-espaciais,STS-41-D,óbvia,15,comum,20,1,0.01,3.0,514,
-missoes-espaciais,STS-56,incomum,58,rara,60,1,0.01,3.0,117,
-missoes-espaciais,STS-60,comum,34,incomum,35,1,0.01,3.0,191,
-missoes-espaciais,STS-9,óbvia,15,comum,20,1,0.01,3.0,505,
-missoes-espaciais,Shenzhou 6,comum,34,incomum,36,1,0.01,3.0,190,
-missoes-espaciais,Skylab IV,óbvia,14,comum,19,1,0.01,3.0,574,
-missoes-espaciais,Soyuz MS-09,comum,34,incomum,35,1,0.01,3.0,191,
-missoes-espaciais,Soyuz TMA-13M,óbvia,14,comum,18,1,0.01,3.0,631,
-paises,Barbados,rara,61,incomum,58,-1,0.1,55.0,57261,
-paises,Costa do Marfim,incomum,36,comum,33,-1,0.3,85.0,199011,
-paises,El Salvador,incomum,35,comum,34,-1,0.3,85.0,104919,
-paises,Estônia,rara,63,incomum,53,-1,0.1,65.0,51395,
-paises,Fiji,rara,62,incomum,55,-1,0.1,60.0,38652,
-paises,Guiana Francesa,incomum,36,comum,32,-1,0.5,88.0,92252,
-paises,Israel,comum,18,óbvia,15,-1,2.0,99.0,243932,
-paises,Letônia,rara,64,incomum,56,-1,0.05,60.0,56586,
-paises,Madagascar,incomum,42,comum,32,-1,0.5,90.0,67626,
-paises,Montenegro,rara,60,incomum,57,-1,0.05,55.0,81375,
-paises,Sérvia,incomum,37,comum,32,-1,0.5,85.0,64433,
-paises,Trinidad e Tobago,rara,65,incomum,55,-1,0.1,60.0,70111,
-paises,Equador,óbvia,15,comum,19,1,2.0,98.0,109169,
-paises,Guatemala,comum,32,incomum,35,1,0.3,88.0,51208,
-paises,Libéria,incomum,57,rara,60,1,0.05,55.0,61677,
-paises,Macau,incomum,47,rara,61,1,0.05,55.0,11361,
-paises,Malásia,comum,31,incomum,36,1,0.3,85.0,70464,
-paises,Mônaco,comum,33,incomum,36,1,0.3,85.0,131656,
-paises,Omã,incomum,57,rara,60,1,0.05,55.0,70659,
-paises,País de Gales,comum,30,incomum,38,1,0.2,80.0,70320,
-paises,Quênia,comum,33,incomum,37,1,0.3,85.0,44482,
-paises,San Marino,incomum,53,rara,62,1,0.05,50.0,59984,
-paises,Uzbequistão,incomum,58,rara,62,1,0.05,50.0,157008,
-paises,Zâmbia,incomum,56,rara,64,1,0.05,50.0,36802,
+missoes-espaciais,Axiom Mission 1,incomum,42,comum,29,-1,0.3,8.0,158,1.05
+missoes-espaciais,Beresheet 2,rara,81,incomum,55,-1,0.2,5.0,80,
+missoes-espaciais,Blue Origin NS-16,comum,26,óbvia,14,-1,1.0,15.0,256,1.08
+missoes-espaciais,Boeing Crew Flight Test,comum,23,óbvia,11,-1,3.0,25.0,322,1.56
+missoes-espaciais,Crew Dragon Demo-2,comum,19,óbvia,10,-1,3.0,25.0,443,1.61
+missoes-espaciais,Europa Jupiter System Mission,rara,68,incomum,50,-1,0.2,5.0,104,
+missoes-espaciais,ExoMars,comum,23,óbvia,12,-1,2.0,15.0,319,0.69
+missoes-espaciais,Expedição 67,incomum,35,comum,29,-1,0.01,3.0,185,1.98
+missoes-espaciais,Hayabusa2,comum,19,óbvia,13,-1,1.0,10.0,464,1.3
+missoes-espaciais,Luna 16,comum,21,óbvia,14,-1,0.3,8.0,364,2.6
+missoes-espaciais,Mariner 3,rara,70,incomum,51,-1,0.2,5.0,102,
+missoes-espaciais,Missão lunar de turismo da SpaceX dearMoon,comum,19,óbvia,14,-1,0.5,10.0,443,1.18
+missoes-espaciais,Pioneer Venus 2,rara,61,incomum,47,-1,0.2,5.0,115,
+missoes-espaciais,STS-113,incomum,37,comum,34,-1,0.01,3.0,178,1.7
+missoes-espaciais,STS-29,incomum,38,comum,30,-1,0.01,3.0,176,2.14
+missoes-espaciais,STS-31,comum,18,óbvia,14,-1,0.5,10.0,484,1.15
+missoes-espaciais,STS-38,incomum,36,comum,32,-1,0.01,3.0,184,1.71
+missoes-espaciais,STS-50,rara,60,incomum,58,-1,0.01,3.0,116,
+missoes-espaciais,STS-63,incomum,36,comum,31,-1,0.01,3.0,182,1.89
+missoes-espaciais,STS-70,rara,60,incomum,58,-1,0.01,3.0,116,
+missoes-espaciais,STS-80,incomum,37,comum,30,-1,0.01,3.0,177,2.54
+missoes-espaciais,Segundo Voo Experimental da SpaceX Starship,comum,33,óbvia,14,-1,1.0,15.0,194,1.26
+missoes-espaciais,Shenzhou 10,incomum,38,comum,32,-1,0.01,3.0,168,1.9
+missoes-espaciais,Shenzhou 5,comum,20,óbvia,12,-1,1.0,10.0,374,1.71
+missoes-espaciais,Skylab II,comum,18,óbvia,13,-1,0.5,10.0,482,1.92
+missoes-espaciais,Soyuz 12,incomum,39,comum,32,-1,0.01,3.0,167,1.93
+missoes-espaciais,Soyuz 17,rara,61,incomum,58,-1,0.01,3.0,115,
+missoes-espaciais,Soyuz MS-22,incomum,38,comum,31,-1,0.01,3.0,174,1.9
+missoes-espaciais,Soyuz T-15,incomum,40,comum,34,-1,0.01,3.0,165,1.84
+missoes-espaciais,Soyuz T-6,incomum,42,comum,34,-1,0.01,3.0,155,2.44
+missoes-espaciais,Soyuz TMA-15M,rara,61,incomum,58,-1,0.01,3.0,115,
+missoes-espaciais,Soyuz TMA-16,incomum,41,comum,33,-1,0.01,3.0,160,1.96
+missoes-espaciais,Soyuz TMA-16M,incomum,42,comum,34,-1,0.01,3.0,157,1.96
+missoes-espaciais,SpaceX Crew-3,incomum,39,comum,32,-1,0.01,3.0,167,1.98
+missoes-espaciais,SpaceX Crew-9,comum,21,óbvia,14,-1,0.5,10.0,351,1.45
+missoes-espaciais,Stardust,comum,20,óbvia,14,-1,1.0,10.0,411,0.83
+missoes-espaciais,Terceiro Voo Experimental da SpaceX Starship,incomum,44,comum,23,-1,0.5,10.0,147,1.19
+missoes-espaciais,Tianwen-2,incomum,38,comum,31,-1,0.3,5.0,171,
+missoes-espaciais,Viking 2,comum,21,óbvia,12,-1,1.0,15.0,358,1.69
+missoes-espaciais,Voo experimental da Starship,comum,23,óbvia,10,-1,8.0,40.0,328,1.36
+missoes-espaciais,Décimo Primeiro Voo Experimental da SpaceX Starship,óbvia,14,comum,26,1,0.01,3.0,649,0.68
+missoes-espaciais,Décimo Quarto Voo da SpaceX Starship,comum,34,incomum,46,1,0.01,3.0,190,
+missoes-espaciais,Décimo Terceiro Voo Experimental da SpaceX Starship,óbvia,15,comum,23,1,0.01,3.0,517,
+missoes-espaciais,Expedição 20,comum,33,incomum,36,1,0.01,3.0,191,1.45
+missoes-espaciais,Expedição 33,incomum,47,rara,68,1,0.01,3.0,140,0.71
+missoes-espaciais,Expedição 5,incomum,50,rara,84,1,0.01,3.0,131,0.44
+missoes-espaciais,Expedição 57,incomum,45,rara,63,1,0.01,3.0,145,0.73
+missoes-espaciais,Expedição 61,óbvia,15,comum,19,1,0.01,3.0,494,6.26
+missoes-espaciais,Gemini V,óbvia,14,comum,18,1,0.01,3.0,554,1.8
+missoes-espaciais,Gemini VI-A,óbvia,15,comum,21,1,0.01,3.0,522,1.29
+missoes-espaciais,Gemini X,óbvia,14,comum,18,1,0.01,3.0,547,1.88
+missoes-espaciais,Korabl-Sputnik 3,comum,29,incomum,41,1,0.01,3.0,233,0.96
+missoes-espaciais,Korabl-Sputnik-4,comum,28,incomum,39,1,0.01,3.0,239,1.03
+missoes-espaciais,Mars Global Remote Sensing Orbiter and Small Rover,óbvia,13,comum,20,1,0.01,3.0,652,1.14
+missoes-espaciais,Mercury-Redstone 4,óbvia,14,comum,18,1,0.01,3.0,605,1.8
+missoes-espaciais,Oitavo Voo Experimental da SpaceX Starship,comum,26,incomum,36,1,0.01,3.0,256,1.05
+missoes-espaciais,Operação Spaceward,óbvia,12,comum,27,1,0.01,3.0,916,0.45
+missoes-espaciais,Radiation Belt Storm Probes,incomum,56,rara,67,1,0.01,3.0,120,0.85
+missoes-espaciais,SRTM,óbvia,13,comum,23,1,0.01,3.0,851,0.7
+missoes-espaciais,STS-123,comum,33,incomum,44,1,0.01,3.0,194,1.06
+missoes-espaciais,STS-126,comum,32,incomum,42,1,0.01,3.0,211,1.05
+missoes-espaciais,STS-133,óbvia,15,comum,24,1,0.01,3.0,537,0.9
+missoes-espaciais,STS-34,comum,31,incomum,36,1,0.01,3.0,215,1.26
+missoes-espaciais,STS-41-D,óbvia,15,comum,22,1,0.01,3.0,514,1.19
+missoes-espaciais,STS-49,comum,31,incomum,36,1,0.01,3.0,216,1.23
+missoes-espaciais,STS-57,incomum,46,rara,80,1,0.01,3.0,142,0.54
+missoes-espaciais,STS-60,comum,34,incomum,36,1,0.01,3.0,191,1.45
+missoes-espaciais,STS-75,comum,30,incomum,48,1,0.01,3.0,226,0.79
+missoes-espaciais,STS-9,óbvia,15,comum,20,1,0.01,3.0,505,1.43
+missoes-espaciais,STS-96,comum,33,incomum,37,1,0.01,3.0,195,1.35
+missoes-espaciais,STS-99,comum,32,incomum,41,1,0.01,3.0,204,1.15
+missoes-espaciais,Shenzhou 6,comum,34,incomum,43,1,0.01,3.0,190,1.11
+missoes-espaciais,Skylab IV,óbvia,14,comum,18,1,0.01,3.0,574,1.76
+missoes-espaciais,Soyuz 3,comum,31,incomum,41,1,0.01,3.0,220,1.04
+missoes-espaciais,Soyuz 37,comum,31,incomum,51,1,0.01,3.0,212,0.74
+missoes-espaciais,Soyuz MS-09,comum,34,incomum,44,1,0.01,3.0,191,1.08
+missoes-espaciais,Soyuz MS-20,comum,30,incomum,38,1,0.01,3.0,221,1.15
+missoes-espaciais,Soyuz TM-31,incomum,50,rara,65,1,0.01,3.0,132,0.78
+missoes-espaciais,Soyuz TM-9,incomum,52,rara,70,1,0.01,3.0,127,0.76
+missoes-espaciais,Soyuz TMA-05M,incomum,54,rara,72,1,0.01,3.0,124,0.77
+missoes-espaciais,SpaceX CRS-1,incomum,53,rara,61,1,0.01,3.0,125,0.89
+missoes-espaciais,Vostok II,óbvia,12,comum,19,1,0.01,3.0,1103,0.82
+paises,Argélia,incomum,41,comum,32,-1,0.3,80.0,155487,2.41
+paises,Congo,incomum,39,comum,31,-1,0.3,80.0,248268,3.16
+paises,Costa do Marfim,incomum,36,comum,29,-1,0.3,85.0,199011,6.15
+paises,Curaçao,rara,63,incomum,50,-1,0.05,45.0,738444,7.21
+paises,El Salvador,incomum,35,comum,34,-1,0.3,85.0,104919,1.27
+paises,Estônia,rara,63,incomum,54,-1,0.1,65.0,51395,0.9
+paises,Fiji,rara,62,incomum,58,-1,0.1,60.0,38652,0.82
+paises,Guiana Francesa,incomum,36,comum,31,-1,0.5,88.0,92252,1.2
+paises,Guiné Equatorial,rara,76,incomum,55,-1,0.05,50.0,102174,2.09
+paises,Marrocos,comum,21,óbvia,15,-1,2.0,97.0,303875,3.54
+paises,Montenegro,rara,60,incomum,56,-1,0.05,55.0,81375,1.23
+paises,Nicarágua,incomum,42,comum,34,-1,0.3,85.0,65823,1.66
+paises,Noruega,comum,21,óbvia,15,-1,2.0,97.0,305927,3.69
+paises,Sérvia,incomum,37,comum,33,-1,0.5,85.0,64433,1.28
+paises,Bahrein,incomum,56,rara,64,1,0.1,60.0,52253,0.55
+paises,Cuba,óbvia,13,comum,18,1,3.0,99.0,153803,0.63
+paises,Guatemala,comum,32,incomum,36,1,0.3,88.0,51208,1.04
+paises,Malásia,comum,31,incomum,39,1,0.3,85.0,70464,0.8
+paises,Namíbia,incomum,55,rara,61,1,0.05,55.0,59351,0.88
+paises,Omã,incomum,57,rara,61,1,0.05,55.0,70659,0.92
+paises,País de Gales,comum,30,incomum,35,1,0.2,80.0,70320,1.51
+paises,Porto Rico,comum,31,incomum,38,1,0.5,90.0,161680,0.38
+paises,Quênia,comum,33,incomum,37,1,0.3,85.0,44482,1.07
+paises,Reino Unido,óbvia,15,comum,19,1,3.0,99.0,15121,0.92
+paises,San Marino,incomum,53,rara,60,1,0.05,50.0,59984,1.14
+paises,Singapura,comum,33,incomum,37,1,0.3,85.0,215083,0.87
+paises,Taiwan,comum,32,incomum,40,1,0.3,85.0,143563,0.7
+paises,Zâmbia,incomum,56,rara,63,1,0.05,50.0,36802,1.05
 paises-acima-do-equador,Azerbaijão,rara,60,incomum,53,-1,0.1,65.0,,
 paises-acima-do-equador,Bielorrússia,rara,62,incomum,53,-1,0.1,65.0,,
 paises-acima-do-equador,Bósnia e Herzegovina,rara,63,incomum,53,-1,0.1,65.0,,
