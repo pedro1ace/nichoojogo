@@ -186,7 +186,7 @@ const estado = {
 
 cena.aoQuadro((al) => {
   // a distância conta a partir do ponto de partida (o céu escuro), não da Terra
-  $("distancia").textContent = `${numero(Math.max(0, Math.round(al - AL_INICIAL)))} AL`;
+  $("distancia").textContent = `${numero(anosLuz(al))} AL`;
   // os pontos sobem contando, junto com a descida
   if (estado.totalMostrado < estado.total) {
     estado.totalMostrado = Math.min(estado.total, estado.totalMostrado + Math.max(0.4, (estado.total - estado.totalMostrado) * 0.06));
@@ -252,9 +252,16 @@ function iniciar() {
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
-const DESCIDA_INICIAL = 2600;
+const DESCIDA_INICIAL = 5000; // passa pelo Sistema Solar inteiro antes da primeira pergunta
 
 // Quanto você viajou hoje. A câmera fica em AL_INICIAL + isso (ver cena.js).
+// Em anos-luz de verdade (1 ponto = 100 AL).
+const anosLuzDoDia = () => Math.round(profundidade() * AL_POR_U);
+// O marco mais fundo que você já passou (para o relatório).
+function ultimoMarco() {
+  const al = anosLuzDoDia();
+  return MARCOS.filter((m) => m.real != null && m.real <= al).pop();
+}
 function profundidade() {
   return estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
 }
@@ -287,9 +294,9 @@ function comecar() {
   $("hud").hidden = false;
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
-    // modo teste: ?ir=11800 na URL começa a viagem já nessa distância (para ver o fundo de perto)
+    // modo teste: ?ir=20000 na URL começa a viagem já nesses anos-luz (para ver o fundo de perto)
     const ir = Number(new URLSearchParams(location.search).get("ir")) || 0;
-    cena.irAte(AL_INICIAL + Math.max(0, ir), DESCIDA_INICIAL);
+    cena.irAte(U(Math.max(0, ir)), DESCIDA_INICIAL);
     setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
     return;
   }
@@ -549,7 +556,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   $("nome-faixa").textContent = faixa.nome;
   $("palavra").textContent = resposta ? `“${resposta}”` : "";
   $("linha-pontos").innerHTML = resposta
-    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(viagem(pontos))} AL`
+    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(pontos * AL_POR_PONTO)} AL`
     : "+0 PONTOS";
   $("frase").textContent = faixa.frase;
 
@@ -577,7 +584,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   cena.resultado();
   if (supernova) Som.supernova();
   else if (resposta) Som.faixa(FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
-  Som.profundidade(profundidade());
+  Som.profundidade(anosLuzDoDia());
   montarQuadrados();
   if (ultima) $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
   $("proxima").focus();
@@ -611,7 +618,8 @@ function mostrarFim(comSom) {
   montarQuadrados();
   $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
   $("fim-pontos").textContent = numero(estado.total);
-  $("fim-profundidade").textContent = `↓ ${numero(profundidade())} AL de profundidade`;
+  const marco = ultimoMarco();
+  $("fim-profundidade").textContent = `↓ ${numero(anosLuzDoDia())} AL de profundidade` + (marco ? ` · além de ${marco.nome.toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase())}` : "");
   const media = estado.historico.reduce((s, h) => s + (h.percentil || 0), 0) / Math.max(1, estado.historico.length);
   $("fim-comparacao").textContent = `Suas respostas foram mais nichadas que ${Math.round(media * 100)}% das respostas possíveis.`;
   montarGrafico();
@@ -620,7 +628,7 @@ function mostrarFim(comSom) {
 
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(profundidade())} AL 🐻`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL 🐻`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }

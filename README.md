@@ -14,10 +14,13 @@ Design: 2D, sprites em pixel art, chamativo.
 Como funciona hoje no protótipo:
 
 - Até 7 perguntas por dia, as mesmas para todo mundo, com **25 segundos** cada (o relógio começa depois de uma contagem de 3).
-- A viagem começa na Terra, com o céu claro. Cada resposta faz o tardígrado viajar `pontos × 10` anos-luz,
-  sempre no mesmo tempo: as raras descem rápido e as óbvias quase não saem do lugar. Um tardígrado de capacete (o mascote) acompanha.
-- No caminho: marcos (Lua, Marte, Júpiter... buraco negro), curiosidades nas laterais, régua de profundidade
-  e linhas mostrando até onde cada faixa de raridade levaria nesta pergunta.
+- A viagem começa na Terra: a descida inicial passa pelo Sistema Solar e chega ao "0". Daí, cada ponto
+  vale **100 anos-luz** de verdade (260 pontos = 26.000 AL, o centro da galáxia). As raras caem pesadas e rápidas,
+  as óbvias planam devagar. Um tardígrado (o mascote) acompanha.
+- No caminho, marcos nas distâncias reais: Alfa Centauri, Sirius, Vega, Plêiades, Betelgeuse, Nebulosa de Órion,
+  Gaia BH1, Nebulosa do Anel, Nebulosa da Lagoa, Caranguejo, Pilares da Criação, Eta Carinae, Ômega Centauri,
+  Aglomerado de Hércules e, no fim, Sagitário A* (o fundo vira negativo). As nebulosas e aglomerados ficam no
+  fundo enquanto você responde. Também: curiosidades nas laterais, régua em anos-luz e linhas de cada faixa.
 - Faixas: ÓBVIA (8 a 15 pontos), COMUM (18 a 34), INCOMUM (35 a 58), RARA (60 a 90) e a **supernova** (100),
   a resposta secreta de cada pergunta, que vale o dobro.
 - A tela inteira treme mais quanto mais rara a resposta. A palavra aparece numa caixinha da cor da faixa e cai junto com a câmera; o foguete vai ao lado, acompanhando com um balanço suave.

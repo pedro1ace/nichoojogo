@@ -404,7 +404,7 @@ pre {
   .painel-resposta { gap: 10px; bottom: max(36px, 11%); }
   .cartao-resultado { top: 54%; max-height: calc(100% - 170px); padding: 8px 14px 12px; }
   #icone { width: 56px; height: 56px; }
-  .pilula { font-size: 15px; }
+  .pilula { font-size: 14px; white-space: normal; width: calc(100% - 32px); text-align: center; }
 }
 @media (prefers-reduced-motion: reduce) {
   #titulo span, #icone, #quadrados span.atual, #alerta.ligado,

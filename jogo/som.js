@@ -254,7 +254,7 @@ const Som = (() => {
     },
     profundidade(al) {
       if (!ambiente) return;
-      const f = Math.max(0.6, 1 - al / 20000);
+      const f = Math.max(0.6, 1 - al / 65000); // al em anos-luz de verdade
       ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime([41.2, 55, 61.7][i] * f, ac.currentTime, 0.5));
     },
   };
