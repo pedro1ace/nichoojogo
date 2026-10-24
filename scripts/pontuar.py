@@ -27,7 +27,8 @@ Como o peso é calculado (0 a 1, onde 1 = muito nichado):
     peso = PESO_PERCENTIL * percentil + (1 - PESO_PERCENTIL) * raridade_global
     4. régua da categoria: o peso acima (ou o manual) só decide a ORDEM das
        respostas. Depois a ordem é espalhada pela RÉGUA, para toda categoria ter
-       todas as faixas do jogo: uns 25% óbvias, 35% comuns, 25% incomuns e 15% raras.
+       todas as faixas do jogo: uns 36% óbvias, 30% comuns, 22% incomuns e 12% raras (sempre
+       mais respostas nas faixas mais comuns).
        O peso de antes fica salvo em "fama", para revisão.
     pontos ("anos-luz") = max(1, round(100 * peso ** CURVA))
     A curva faz as respostas óbvias valerem quase nada, como no Krillion.
@@ -64,7 +65,7 @@ SUPERNOVA_FOLGA = 10  # a supernova (já dobrada) vale ao menos a maior resposta
 FORA_DO_JOGO = RAIZ / "dados" / "fora_do_jogo.txt"
 # (percentil dentro da categoria, peso). Os pontos de corte das faixas do jogo
 # (jogo/cena.js) são 5, 20 e 50 pontos, ou seja, peso 0,224, 0,447 e 0,707.
-REGUA = [(0.0, 0.10), (0.25, 0.2236), (0.60, 0.4473), (0.85, 0.7072), (1.0, 0.95)]
+REGUA = [(0.0, 0.10), (0.36, 0.2236), (0.66, 0.4473), (0.88, 0.7072), (1.0, 0.95)]
 CURVA = 2.0
 # ICF usado quando a palavra não existe na base. Fica perto da mediana da base
 # (20,9): "provavelmente rara", mas sem chutar o máximo. Essas linhas saem com
@@ -235,8 +236,14 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         r["fama"] = round(min(max(peso, 0.0), 1.0), 3)
         r["supernova_manual"] = (ajuste.get("supernova") or "").strip() == "1"
 
-    for r, p in zip(respostas, percentis([r["fama"] for r in respostas])):
-        r["peso"] = round(na_regua(p), 3)
+    # Posição de cada resposta na ordem da fama. Empates são desfeitos pelo ICF ou pelas
+    # visitas (e depois pelo nome), para cada faixa receber exatamente a sua cota:
+    # empatar tudo no meio deixava faixas mais raras com mais respostas que as comuns.
+    ordenadas = sorted(respostas, key=lambda r: (r["fama"], r["percentil"], normalizar(r["resposta"])))
+    n = len(ordenadas)
+    for i, r in enumerate(ordenadas):
+        r["peso"] = round(na_regua(i / (n - 1) if n > 1 else 1.0), 3)
+    for r in respostas:
         r["pontos"] = max(1, round(100 * r["peso"] ** CURVA))
 
     marcadas = [r for r in respostas if r["supernova_manual"]]
