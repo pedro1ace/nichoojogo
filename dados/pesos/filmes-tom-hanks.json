@@ -13,8 +13,8 @@
    "ajustado": true,
    "percentil": 0.694,
    "fama": 0.01,
-   "peso": 0.1,
-   "pontos": 1
+   "pontos": 8,
+   "peso": 0.283
   },
   {
    "resposta": "Náufrago",
@@ -26,22 +26,8 @@
    "ajustado": true,
    "percentil": 0.857,
    "fama": 0.04,
-   "peso": 0.107,
-   "pontos": 1
-  },
-  {
-   "resposta": "O Resgate do Soldado Ryan",
-   "apelidos": [
-    "soldado ryan",
-    "saving private ryan"
-   ],
-   "sem_dado": false,
-   "icf": 10.941,
-   "ajustado": true,
-   "percentil": 0.735,
-   "fama": 0.08,
-   "peso": 0.121,
-   "pontos": 1
+   "pontos": 9,
+   "peso": 0.3
   },
   {
    "resposta": "Toy Story",
@@ -55,21 +41,22 @@
    "ajustado": true,
    "percentil": 0.939,
    "fama": 0.04,
-   "peso": 0.114,
-   "pontos": 1
+   "pontos": 10,
+   "peso": 0.316
   },
   {
-   "resposta": "Filadélfia",
+   "resposta": "O Resgate do Soldado Ryan",
    "apelidos": [
-    "philadelphia"
+    "soldado ryan",
+    "saving private ryan"
    ],
    "sem_dado": false,
-   "icf": 12.867,
+   "icf": 10.941,
    "ajustado": true,
-   "percentil": 0.816,
-   "fama": 0.22,
-   "peso": 0.156,
-   "pontos": 2
+   "percentil": 0.735,
+   "fama": 0.08,
+   "pontos": 11,
+   "peso": 0.332
   },
   {
    "resposta": "O Código Da Vinci",
@@ -81,34 +68,8 @@
    "ajustado": true,
    "percentil": 0.367,
    "fama": 0.1,
-   "peso": 0.128,
-   "pontos": 2
-  },
-  {
-   "resposta": "O Terminal",
-   "apelidos": [
-    "the terminal"
-   ],
-   "sem_dado": false,
-   "icf": 10.766,
-   "ajustado": true,
-   "percentil": 0.714,
-   "fama": 0.2,
-   "peso": 0.149,
-   "pontos": 2
-  },
-  {
-   "resposta": "Prenda-me Se For Capaz",
-   "apelidos": [
-    "catch me if you can"
-   ],
-   "sem_dado": false,
-   "icf": 8.187,
-   "ajustado": true,
-   "percentil": 0.327,
-   "fama": 0.14,
-   "peso": 0.142,
-   "pontos": 2
+   "pontos": 12,
+   "peso": 0.346
   },
   {
    "resposta": "À Espera de um Milagre",
@@ -120,43 +81,47 @@
    "ajustado": true,
    "percentil": 0.347,
    "fama": 0.12,
-   "peso": 0.135,
-   "pontos": 2
+   "pontos": 13,
+   "peso": 0.361
   },
   {
-   "resposta": "Anjos e Demônios",
+   "resposta": "Prenda-me Se For Capaz",
    "apelidos": [
-    "angels and demons"
+    "catch me if you can"
    ],
    "sem_dado": false,
-   "icf": 10.346,
+   "icf": 8.187,
    "ajustado": true,
-   "percentil": 0.633,
-   "fama": 0.26,
-   "peso": 0.177,
-   "pontos": 3
+   "percentil": 0.327,
+   "fama": 0.14,
+   "pontos": 14,
+   "peso": 0.374
   },
   {
-   "resposta": "Apollo 13",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "resposta": "O Terminal",
+   "apelidos": [
+    "the terminal"
+   ],
+   "sem_dado": false,
+   "icf": 10.766,
    "ajustado": true,
-   "percentil": 0.939,
-   "fama": 0.24,
-   "peso": 0.17,
-   "pontos": 3
+   "percentil": 0.714,
+   "fama": 0.2,
+   "pontos": 15,
+   "peso": 0.387
   },
   {
-   "resposta": "Elvis",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "resposta": "Filadélfia",
+   "apelidos": [
+    "philadelphia"
+   ],
+   "sem_dado": false,
+   "icf": 12.867,
    "ajustado": true,
-   "percentil": 0.939,
-   "fama": 0.28,
-   "peso": 0.184,
-   "pontos": 3
+   "percentil": 0.816,
+   "fama": 0.22,
+   "pontos": 18,
+   "peso": 0.424
   },
   {
    "resposta": "Quero Ser Grande",
@@ -168,8 +133,43 @@
    "ajustado": true,
    "percentil": 0.122,
    "fama": 0.24,
-   "peso": 0.163,
-   "pontos": 3
+   "pontos": 19,
+   "peso": 0.436
+  },
+  {
+   "resposta": "Apollo 13",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.939,
+   "fama": 0.24,
+   "pontos": 21,
+   "peso": 0.458
+  },
+  {
+   "resposta": "Anjos e Demônios",
+   "apelidos": [
+    "angels and demons"
+   ],
+   "sem_dado": false,
+   "icf": 10.346,
+   "ajustado": true,
+   "percentil": 0.633,
+   "fama": 0.26,
+   "pontos": 22,
+   "peso": 0.469
+  },
+  {
+   "resposta": "Elvis",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.939,
+   "fama": 0.28,
+   "pontos": 24,
+   "peso": 0.49
   },
   {
    "resposta": "Capitão Phillips",
@@ -181,21 +181,8 @@
    "ajustado": true,
    "percentil": 0.653,
    "fama": 0.3,
-   "peso": 0.191,
-   "pontos": 4
-  },
-  {
-   "resposta": "Mensagem para Você",
-   "apelidos": [
-    "you've got mail"
-   ],
-   "sem_dado": false,
-   "icf": 6.396,
-   "ajustado": true,
-   "percentil": 0.02,
-   "fama": 0.34,
-   "peso": 0.205,
-   "pontos": 4
+   "pontos": 25,
+   "peso": 0.5
   },
   {
    "resposta": "Sintonia de Amor",
@@ -207,8 +194,21 @@
    "ajustado": true,
    "percentil": 0.551,
    "fama": 0.32,
-   "peso": 0.198,
-   "pontos": 4
+   "pontos": 27,
+   "peso": 0.52
+  },
+  {
+   "resposta": "Mensagem para Você",
+   "apelidos": [
+    "you've got mail"
+   ],
+   "sem_dado": false,
+   "icf": 6.396,
+   "ajustado": true,
+   "percentil": 0.02,
+   "fama": 0.34,
+   "pontos": 28,
+   "peso": 0.529
   },
   {
    "resposta": "Sully: O Herói do Rio Hudson",
@@ -220,8 +220,8 @@
    "ajustado": true,
    "percentil": 0.429,
    "fama": 0.34,
-   "peso": 0.212,
-   "pontos": 4
+   "pontos": 30,
+   "peso": 0.548
   },
   {
    "resposta": "O Expresso Polar",
@@ -233,8 +233,8 @@
    "ajustado": true,
    "percentil": 0.755,
    "fama": 0.36,
-   "peso": 0.219,
-   "pontos": 5
+   "pontos": 31,
+   "peso": 0.557
   },
   {
    "resposta": "Ponte dos Espiões",
@@ -246,8 +246,8 @@
    "ajustado": true,
    "percentil": 0.571,
    "fama": 0.4,
-   "peso": 0.229,
-   "pontos": 5
+   "pontos": 33,
+   "peso": 0.574
   },
   {
    "resposta": "Inferno",
@@ -257,8 +257,8 @@
    "ajustado": true,
    "percentil": 0.673,
    "fama": 0.4,
-   "peso": 0.244,
-   "pontos": 6
+   "pontos": 34,
+   "peso": 0.583
   },
   {
    "resposta": "O Pior Vizinho do Mundo",
@@ -271,8 +271,8 @@
    "ajustado": true,
    "percentil": 0.49,
    "fama": 0.42,
-   "peso": 0.26,
-   "pontos": 7
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Estrada para Perdição",
@@ -284,8 +284,8 @@
    "ajustado": true,
    "percentil": 0.408,
    "fama": 0.44,
-   "peso": 0.275,
-   "pontos": 8
+   "pontos": 37,
+   "peso": 0.608
   },
   {
    "resposta": "Splash: Uma Sereia em Minha Vida",
@@ -297,8 +297,8 @@
    "ajustado": true,
    "percentil": 0.102,
    "fama": 0.5,
-   "peso": 0.29,
-   "pontos": 8
+   "pontos": 38,
+   "peso": 0.616
   },
   {
    "resposta": "The Post: A Guerra Secreta",
@@ -310,8 +310,8 @@
    "ajustado": true,
    "percentil": 0.531,
    "fama": 0.52,
-   "peso": 0.305,
-   "pontos": 9
+   "pontos": 40,
+   "peso": 0.632
   },
   {
    "resposta": "Turner & Hooch: Uma Dupla Quase Perfeita",
@@ -324,8 +324,8 @@
    "ajustado": true,
    "percentil": 0.265,
    "fama": 0.54,
-   "peso": 0.32,
-   "pontos": 10
+   "pontos": 42,
+   "peso": 0.648
   },
   {
    "resposta": "Uma Equipe Muito Especial",
@@ -337,8 +337,8 @@
    "ajustado": true,
    "percentil": 0.082,
    "fama": 0.56,
-   "peso": 0.336,
-   "pontos": 11
+   "pontos": 43,
+   "peso": 0.656
   },
   {
    "resposta": "Pinóquio",
@@ -350,8 +350,8 @@
    "ajustado": true,
    "percentil": 0.939,
    "fama": 0.58,
-   "peso": 0.351,
-   "pontos": 12
+   "pontos": 45,
+   "peso": 0.671
   },
   {
    "resposta": "Um Dia a Casa Cai",
@@ -363,8 +363,8 @@
    "ajustado": true,
    "percentil": 0.143,
    "fama": 0.6,
-   "peso": 0.366,
-   "pontos": 13
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Cloud Atlas: A Viagem",
@@ -377,8 +377,21 @@
    "ajustado": true,
    "percentil": 0.612,
    "fama": 0.6,
-   "peso": 0.381,
-   "pontos": 15
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Ele Sabe Que Você Está Sozinha",
+   "apelidos": [
+    "he knows you're alone"
+   ],
+   "sem_dado": false,
+   "icf": 6.15,
+   "ajustado": true,
+   "percentil": 0.0,
+   "fama": 0.92,
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Um Lindo Dia na Vizinhança",
@@ -390,8 +403,8 @@
    "ajustado": true,
    "percentil": 0.184,
    "fama": 0.62,
-   "peso": 0.396,
-   "pontos": 16
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Jogos do Poder",
@@ -403,8 +416,8 @@
    "ajustado": true,
    "percentil": 0.245,
    "fama": 0.62,
-   "peso": 0.412,
-   "pontos": 17
+   "pontos": 51,
+   "peso": 0.714
   },
   {
    "resposta": "Walt nos Bastidores de Mary Poppins",
@@ -416,8 +429,8 @@
    "ajustado": true,
    "percentil": 0.388,
    "fama": 0.62,
-   "peso": 0.427,
-   "pontos": 18
+   "pontos": 53,
+   "peso": 0.728
   },
   {
    "resposta": "Matadores de Velhinha",
@@ -429,8 +442,8 @@
    "ajustado": true,
    "percentil": 0.837,
    "fama": 0.62,
-   "peso": 0.442,
-   "pontos": 20
+   "pontos": 55,
+   "peso": 0.742
   },
   {
    "resposta": "Tão Forte e Tão Perto",
@@ -442,8 +455,8 @@
    "ajustado": true,
    "percentil": 0.306,
    "fama": 0.64,
-   "peso": 0.463,
-   "pontos": 21
+   "pontos": 56,
+   "peso": 0.748
   },
   {
    "resposta": "Greyhound: Na Mira do Inimigo",
@@ -455,8 +468,8 @@
    "ajustado": true,
    "percentil": 0.469,
    "fama": 0.64,
-   "peso": 0.487,
-   "pontos": 24
+   "pontos": 58,
+   "peso": 0.762
   },
   {
    "resposta": "Larry Crowne: O Amor Está de Volta",
@@ -468,8 +481,8 @@
    "ajustado": true,
    "percentil": 0.204,
    "fama": 0.66,
-   "peso": 0.511,
-   "pontos": 26
+   "pontos": 60,
+   "peso": 0.775
   },
   {
    "resposta": "Relatos do Mundo",
@@ -481,8 +494,8 @@
    "ajustado": true,
    "percentil": 0.449,
    "fama": 0.66,
-   "peso": 0.536,
-   "pontos": 29
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Finch",
@@ -492,8 +505,8 @@
    "ajustado": true,
    "percentil": 0.939,
    "fama": 0.66,
-   "peso": 0.56,
-   "pontos": 31
+   "pontos": 64,
+   "peso": 0.8
   },
   {
    "resposta": "O Círculo",
@@ -505,8 +518,8 @@
    "ajustado": true,
    "percentil": 0.939,
    "fama": 0.66,
-   "peso": 0.584,
-   "pontos": 34
+   "pontos": 66,
+   "peso": 0.812
   },
   {
    "resposta": "A Fogueira das Vaidades",
@@ -518,8 +531,8 @@
    "ajustado": true,
    "percentil": 0.796,
    "fama": 0.68,
-   "peso": 0.608,
-   "pontos": 37
+   "pontos": 69,
+   "peso": 0.831
   },
   {
    "resposta": "Meus Vizinhos São um Terror",
@@ -531,8 +544,8 @@
    "ajustado": true,
    "percentil": 0.163,
    "fama": 0.7,
-   "peso": 0.632,
-   "pontos": 40
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "The Wonders: O Sonho Não Acabou",
@@ -545,8 +558,8 @@
    "ajustado": true,
    "percentil": 0.224,
    "fama": 0.72,
-   "peso": 0.656,
-   "pontos": 43
+   "pontos": 73,
+   "peso": 0.854
   },
   {
    "resposta": "Joe Contra o Vulcão",
@@ -558,8 +571,8 @@
    "ajustado": true,
    "percentil": 0.592,
    "fama": 0.72,
-   "peso": 0.68,
-   "pontos": 46
+   "pontos": 75,
+   "peso": 0.866
   },
   {
    "resposta": "Dragnet: Desafiando o Perigo",
@@ -571,8 +584,8 @@
    "ajustado": true,
    "percentil": 0.776,
    "fama": 0.74,
-   "peso": 0.704,
-   "pontos": 50
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Asteroid City",
@@ -582,8 +595,8 @@
    "ajustado": true,
    "percentil": 0.939,
    "fama": 0.74,
-   "peso": 0.744,
-   "pontos": 55
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Um Holograma para o Rei",
@@ -595,8 +608,8 @@
    "ajustado": true,
    "percentil": 0.286,
    "fama": 0.76,
-   "peso": 0.785,
-   "pontos": 62
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "A Última Festa de Solteiro",
@@ -608,8 +621,8 @@
    "ajustado": true,
    "percentil": 0.51,
    "fama": 0.76,
-   "peso": 0.826,
-   "pontos": 68
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Aqui",
@@ -621,8 +634,8 @@
    "ajustado": true,
    "percentil": 0.041,
    "fama": 0.78,
-   "peso": 0.867,
-   "pontos": 75
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Nada em Comum",
@@ -634,21 +647,8 @@
    "ajustado": true,
    "percentil": 0.061,
    "fama": 0.8,
-   "peso": 0.909,
-   "pontos": 83
-  },
-  {
-   "resposta": "Ele Sabe Que Você Está Sozinha",
-   "apelidos": [
-    "he knows you're alone"
-   ],
-   "sem_dado": false,
-   "icf": 6.15,
-   "ajustado": true,
-   "percentil": 0.0,
-   "fama": 0.92,
-   "peso": 0.95,
-   "pontos": 90
+   "pontos": 88,
+   "peso": 0.938
   }
  ],
  "fonte_peso": "icf",

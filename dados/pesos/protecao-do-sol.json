@@ -4,28 +4,6 @@
  "pergunta": "Cite algo que a gente usa para se proteger do sol",
  "respostas": [
   {
-   "resposta": "Boné",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.978,
-   "ajustado": true,
-   "percentil": 0.589,
-   "fama": 0.03,
-   "peso": 0.112,
-   "pontos": 1
-  },
-  {
-   "resposta": "Chapéu",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.196,
-   "ajustado": true,
-   "percentil": 0.393,
-   "fama": 0.04,
-   "peso": 0.118,
-   "pontos": 1
-  },
-  {
    "resposta": "Protetor solar",
    "apelidos": [
     "filtro solar",
@@ -36,8 +14,8 @@
    "ajustado": true,
    "percentil": 0.268,
    "fama": 0.01,
-   "peso": 0.1,
-   "pontos": 1
+   "pontos": 8,
+   "peso": 0.283
   },
   {
    "resposta": "Óculos de sol",
@@ -51,19 +29,30 @@
    "ajustado": true,
    "percentil": 0.161,
    "fama": 0.02,
-   "peso": 0.106,
-   "pontos": 1
+   "pontos": 9,
+   "peso": 0.3
   },
   {
-   "resposta": "Guarda-chuva",
+   "resposta": "Boné",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 9.474,
+   "icf": 11.978,
    "ajustado": true,
-   "percentil": 0.143,
-   "fama": 0.1,
-   "peso": 0.137,
-   "pontos": 2
+   "percentil": 0.589,
+   "fama": 0.03,
+   "pontos": 10,
+   "peso": 0.316
+  },
+  {
+   "resposta": "Chapéu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.196,
+   "ajustado": true,
+   "percentil": 0.393,
+   "fama": 0.04,
+   "pontos": 11,
+   "peso": 0.332
   },
   {
    "resposta": "Guarda-sol",
@@ -73,8 +62,8 @@
    "ajustado": true,
    "percentil": 0.107,
    "fama": 0.06,
-   "peso": 0.125,
-   "pontos": 2
+   "pontos": 12,
+   "peso": 0.346
   },
   {
    "resposta": "Sombrinha",
@@ -84,32 +73,19 @@
    "ajustado": true,
    "percentil": 0.821,
    "fama": 0.08,
-   "peso": 0.131,
-   "pontos": 2
+   "pontos": 12,
+   "peso": 0.346
   },
   {
-   "resposta": "Teto",
-   "apelidos": [
-    "telhado"
-   ],
-   "sem_dado": false,
-   "icf": 10.44,
-   "ajustado": true,
-   "percentil": 0.25,
-   "fama": 0.18,
-   "peso": 0.155,
-   "pontos": 2
-  },
-  {
-   "resposta": "Toldo",
+   "resposta": "Guarda-chuva",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.699,
+   "icf": 9.474,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.16,
-   "peso": 0.149,
-   "pontos": 2
+   "percentil": 0.143,
+   "fama": 0.1,
+   "pontos": 13,
+   "peso": 0.361
   },
   {
    "resposta": "Árvore",
@@ -121,19 +97,43 @@
    "ajustado": true,
    "percentil": 0.232,
    "fama": 0.12,
-   "peso": 0.143,
-   "pontos": 2
+   "pontos": 14,
+   "peso": 0.374
   },
   {
-   "resposta": "Barraca",
+   "resposta": "Toldo",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.006,
+   "icf": 13.699,
    "ajustado": true,
-   "percentil": 0.643,
-   "fama": 0.28,
-   "peso": 0.186,
-   "pontos": 3
+   "percentil": 0.768,
+   "fama": 0.16,
+   "pontos": 15,
+   "peso": 0.387
+  },
+  {
+   "resposta": "Teto",
+   "apelidos": [
+    "telhado"
+   ],
+   "sem_dado": false,
+   "icf": 10.44,
+   "ajustado": true,
+   "percentil": 0.25,
+   "fama": 0.18,
+   "pontos": 18,
+   "peso": 0.424
+  },
+  {
+   "resposta": "Viseira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.504,
+   "ajustado": true,
+   "percentil": 0.75,
+   "fama": 0.2,
+   "pontos": 19,
+   "peso": 0.436
   },
   {
    "resposta": "Camiseta",
@@ -145,8 +145,8 @@
    "ajustado": true,
    "percentil": 0.304,
    "fama": 0.22,
-   "peso": 0.167,
-   "pontos": 3
+   "pontos": 20,
+   "peso": 0.447
   },
   {
    "resposta": "Cortina",
@@ -156,8 +156,8 @@
    "ajustado": true,
    "percentil": 0.464,
    "fama": 0.24,
-   "peso": 0.174,
-   "pontos": 3
+   "pontos": 22,
+   "peso": 0.469
   },
   {
    "resposta": "Para-sol",
@@ -169,41 +169,19 @@
    "ajustado": true,
    "percentil": 0.0,
    "fama": 0.26,
-   "peso": 0.18,
-   "pontos": 3
+   "pontos": 23,
+   "peso": 0.48
   },
   {
-   "resposta": "Viseira",
+   "resposta": "Barraca",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.504,
+   "icf": 12.006,
    "ajustado": true,
-   "percentil": 0.75,
-   "fama": 0.2,
-   "peso": 0.161,
-   "pontos": 3
-  },
-  {
-   "resposta": "Chapéu de palha",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.352,
-   "ajustado": true,
-   "percentil": 0.411,
-   "fama": 0.32,
-   "peso": 0.21,
-   "pontos": 4
-  },
-  {
-   "resposta": "Lona",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.005,
-   "ajustado": true,
-   "percentil": 0.625,
-   "fama": 0.3,
-   "peso": 0.198,
-   "pontos": 4
+   "percentil": 0.643,
+   "fama": 0.28,
+   "pontos": 24,
+   "peso": 0.49
   },
   {
    "resposta": "Manga comprida",
@@ -215,8 +193,19 @@
    "ajustado": true,
    "percentil": 0.5,
    "fama": 0.3,
-   "peso": 0.192,
-   "pontos": 4
+   "pontos": 25,
+   "peso": 0.5
+  },
+  {
+   "resposta": "Lona",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.005,
+   "ajustado": true,
+   "percentil": 0.625,
+   "fama": 0.3,
+   "pontos": 27,
+   "peso": 0.52
   },
   {
    "resposta": "Persiana",
@@ -226,8 +215,19 @@
    "ajustado": true,
    "percentil": 0.804,
    "fama": 0.3,
-   "peso": 0.204,
-   "pontos": 4
+   "pontos": 28,
+   "peso": 0.529
+  },
+  {
+   "resposta": "Chapéu de palha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.352,
+   "ajustado": true,
+   "percentil": 0.411,
+   "fama": 0.32,
+   "pontos": 29,
+   "peso": 0.539
   },
   {
    "resposta": "Película",
@@ -239,8 +239,8 @@
    "ajustado": true,
    "percentil": 0.446,
    "fama": 0.34,
-   "peso": 0.216,
-   "pontos": 5
+   "pontos": 30,
+   "peso": 0.548
   },
   {
    "resposta": "Tenda",
@@ -250,8 +250,8 @@
    "ajustado": true,
    "percentil": 0.554,
    "fama": 0.34,
-   "peso": 0.223,
-   "pontos": 5
+   "pontos": 32,
+   "peso": 0.566
   },
   {
    "resposta": "Camisa com proteção UV",
@@ -264,8 +264,8 @@
    "ajustado": true,
    "percentil": 0.054,
    "fama": 0.4,
-   "peso": 0.235,
-   "pontos": 6
+   "pontos": 33,
+   "peso": 0.574
   },
   {
    "resposta": "Lenço",
@@ -275,8 +275,8 @@
    "ajustado": true,
    "percentil": 0.661,
    "fama": 0.42,
-   "peso": 0.248,
-   "pontos": 6
+   "pontos": 34,
+   "peso": 0.583
   },
   {
    "resposta": "Protetor labial",
@@ -288,19 +288,8 @@
    "ajustado": true,
    "percentil": 0.607,
    "fama": 0.44,
-   "peso": 0.261,
-   "pontos": 7
-  },
-  {
-   "resposta": "Cobertura",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.879,
-   "ajustado": true,
-   "percentil": 0.214,
-   "fama": 0.46,
-   "peso": 0.288,
-   "pontos": 8
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Manguito",
@@ -310,8 +299,19 @@
    "ajustado": true,
    "percentil": 0.911,
    "fama": 0.44,
-   "peso": 0.275,
-   "pontos": 8
+   "pontos": 36,
+   "peso": 0.6
+  },
+  {
+   "resposta": "Cobertura",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.879,
+   "ajustado": true,
+   "percentil": 0.214,
+   "fama": 0.46,
+   "pontos": 38,
+   "peso": 0.616
   },
   {
    "resposta": "Capuz",
@@ -321,8 +321,8 @@
    "ajustado": true,
    "percentil": 0.714,
    "fama": 0.46,
-   "peso": 0.301,
-   "pontos": 9
+   "pontos": 39,
+   "peso": 0.624
   },
   {
    "resposta": "Ombrelone",
@@ -332,8 +332,8 @@
    "ajustado": true,
    "percentil": 0.982,
    "fama": 0.46,
-   "peso": 0.315,
-   "pontos": 10
+   "pontos": 41,
+   "peso": 0.64
   },
   {
    "resposta": "Varanda",
@@ -343,8 +343,8 @@
    "ajustado": true,
    "percentil": 0.286,
    "fama": 0.48,
-   "peso": 0.328,
-   "pontos": 11
+   "pontos": 42,
+   "peso": 0.648
   },
   {
    "resposta": "Bandana",
@@ -354,8 +354,8 @@
    "ajustado": true,
    "percentil": 0.839,
    "fama": 0.5,
-   "peso": 0.341,
-   "pontos": 12
+   "pontos": 44,
+   "peso": 0.663
   },
   {
    "resposta": "Pergolado",
@@ -365,8 +365,8 @@
    "ajustado": true,
    "percentil": 0.929,
    "fama": 0.5,
-   "peso": 0.355,
-   "pontos": 13
+   "pontos": 45,
+   "peso": 0.671
   },
   {
    "resposta": "Luvas",
@@ -376,8 +376,8 @@
    "ajustado": true,
    "percentil": 0.482,
    "fama": 0.52,
-   "peso": 0.368,
-   "pontos": 14
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Gazebo",
@@ -387,8 +387,8 @@
    "ajustado": true,
    "percentil": 0.857,
    "fama": 0.52,
-   "peso": 0.381,
-   "pontos": 15
+   "pontos": 48,
+   "peso": 0.693
   },
   {
    "resposta": "Para-sol de carro",
@@ -400,8 +400,19 @@
    "ajustado": true,
    "percentil": 0.018,
    "fama": 0.54,
-   "peso": 0.395,
-   "pontos": 16
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Lama",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.383,
+   "ajustado": true,
+   "percentil": 0.429,
+   "fama": 0.84,
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Marquise",
@@ -411,8 +422,8 @@
    "ajustado": true,
    "percentil": 0.786,
    "fama": 0.54,
-   "peso": 0.408,
-   "pontos": 17
+   "pontos": 51,
+   "peso": 0.714
   },
   {
    "resposta": "Janela",
@@ -422,8 +433,8 @@
    "ajustado": true,
    "percentil": 0.179,
    "fama": 0.56,
-   "peso": 0.421,
-   "pontos": 18
+   "pontos": 52,
+   "peso": 0.721
   },
   {
    "resposta": "Abrigo",
@@ -433,8 +444,8 @@
    "ajustado": true,
    "percentil": 0.357,
    "fama": 0.56,
-   "peso": 0.435,
-   "pontos": 19
+   "pontos": 54,
+   "peso": 0.735
   },
   {
    "resposta": "Sombreiro",
@@ -444,8 +455,8 @@
    "ajustado": true,
    "percentil": 1.0,
    "fama": 0.56,
-   "peso": 0.448,
-   "pontos": 20
+   "pontos": 55,
+   "peso": 0.742
   },
   {
    "resposta": "Parede",
@@ -455,8 +466,8 @@
    "ajustado": true,
    "percentil": 0.196,
    "fama": 0.58,
-   "peso": 0.469,
-   "pontos": 22
+   "pontos": 57,
+   "peso": 0.755
   },
   {
    "resposta": "Turbante",
@@ -466,8 +477,8 @@
    "ajustado": true,
    "percentil": 0.875,
    "fama": 0.58,
-   "peso": 0.49,
-   "pontos": 24
+   "pontos": 58,
+   "peso": 0.762
   },
   {
    "resposta": "Veneziana",
@@ -477,8 +488,8 @@
    "ajustado": true,
    "percentil": 0.893,
    "fama": 0.58,
-   "peso": 0.511,
-   "pontos": 26
+   "pontos": 60,
+   "peso": 0.775
   },
   {
    "resposta": "Leque",
@@ -488,8 +499,8 @@
    "ajustado": true,
    "percentil": 0.571,
    "fama": 0.6,
-   "peso": 0.533,
-   "pontos": 28
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Quiosque",
@@ -499,8 +510,8 @@
    "ajustado": true,
    "percentil": 0.696,
    "fama": 0.6,
-   "peso": 0.554,
-   "pontos": 31
+   "pontos": 64,
+   "peso": 0.8
   },
   {
    "resposta": "Para-brisa",
@@ -510,8 +521,8 @@
    "ajustado": true,
    "percentil": 0.071,
    "fama": 0.62,
-   "peso": 0.575,
-   "pontos": 33
+   "pontos": 66,
+   "peso": 0.812
   },
   {
    "resposta": "Muro",
@@ -521,8 +532,8 @@
    "ajustado": true,
    "percentil": 0.339,
    "fama": 0.62,
-   "peso": 0.596,
-   "pontos": 36
+   "pontos": 68,
+   "peso": 0.825
   },
   {
    "resposta": "Cabana",
@@ -532,8 +543,8 @@
    "ajustado": true,
    "percentil": 0.679,
    "fama": 0.62,
-   "peso": 0.617,
-   "pontos": 38
+   "pontos": 69,
+   "peso": 0.831
   },
   {
    "resposta": "Tela de sombreamento",
@@ -545,8 +556,8 @@
    "ajustado": true,
    "percentil": 0.518,
    "fama": 0.64,
-   "peso": 0.638,
-   "pontos": 41
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Ponto de ônibus",
@@ -556,8 +567,8 @@
    "ajustado": true,
    "percentil": 0.089,
    "fama": 0.66,
-   "peso": 0.659,
-   "pontos": 43
+   "pontos": 73,
+   "peso": 0.854
   },
   {
    "resposta": "Balaclava",
@@ -567,8 +578,8 @@
    "ajustado": true,
    "percentil": 0.964,
    "fama": 0.66,
-   "peso": 0.68,
-   "pontos": 46
+   "pontos": 75,
+   "peso": 0.866
   },
   {
    "resposta": "Caverna",
@@ -578,8 +589,8 @@
    "ajustado": true,
    "percentil": 0.536,
    "fama": 0.68,
-   "peso": 0.701,
-   "pontos": 49
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Maquiagem com FPS",
@@ -591,8 +602,8 @@
    "ajustado": true,
    "percentil": 0.036,
    "fama": 0.7,
-   "peso": 0.733,
-   "pontos": 54
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Nuvem",
@@ -602,8 +613,8 @@
    "ajustado": true,
    "percentil": 0.321,
    "fama": 0.7,
-   "peso": 0.769,
-   "pontos": 59
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Burca",
@@ -613,8 +624,8 @@
    "ajustado": true,
    "percentil": 0.946,
    "fama": 0.7,
-   "peso": 0.805,
-   "pontos": 65
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Quebra-sol",
@@ -626,8 +637,8 @@
    "ajustado": true,
    "percentil": 0.125,
    "fama": 0.72,
-   "peso": 0.842,
-   "pontos": 71
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Pasta de zinco",
@@ -639,8 +650,8 @@
    "ajustado": true,
    "percentil": 0.375,
    "fama": 0.74,
-   "peso": 0.878,
-   "pontos": 77
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Palhoça",
@@ -650,19 +661,8 @@
    "ajustado": true,
    "percentil": 0.732,
    "fama": 0.74,
-   "peso": 0.914,
-   "pontos": 84
-  },
-  {
-   "resposta": "Lama",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.383,
-   "ajustado": true,
-   "percentil": 0.429,
-   "fama": 0.84,
-   "peso": 0.95,
-   "pontos": 90
+   "pontos": 88,
+   "peso": 0.938
   }
  ],
  "fonte_peso": "icf",

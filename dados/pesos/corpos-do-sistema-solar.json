@@ -4,15 +4,15 @@
  "pergunta": "Cite um planeta, lua, planeta anão, asteroide ou cometa do Sistema Solar",
  "respostas": [
   {
-   "resposta": "Júpiter",
+   "resposta": "Terra",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.314,
+   "icf": 8.262,
    "ajustado": true,
-   "percentil": 0.113,
-   "fama": 0.04,
-   "peso": 0.115,
-   "pontos": 1
+   "percentil": 0.0,
+   "fama": 0.01,
+   "pontos": 8,
+   "peso": 0.283
   },
   {
    "resposta": "Lua",
@@ -22,8 +22,8 @@
    "ajustado": true,
    "percentil": 0.028,
    "fama": 0.02,
-   "peso": 0.11,
-   "pontos": 1
+   "pontos": 9,
+   "peso": 0.3
   },
   {
    "resposta": "Marte",
@@ -33,8 +33,19 @@
    "ajustado": true,
    "percentil": 0.07,
    "fama": 0.01,
-   "peso": 0.105,
-   "pontos": 1
+   "pontos": 9,
+   "peso": 0.3
+  },
+  {
+   "resposta": "Júpiter",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.314,
+   "ajustado": true,
+   "percentil": 0.113,
+   "fama": 0.04,
+   "pontos": 10,
+   "peso": 0.316
   },
   {
    "resposta": "Saturno",
@@ -44,19 +55,63 @@
    "ajustado": true,
    "percentil": 0.155,
    "fama": 0.05,
-   "peso": 0.119,
-   "pontos": 1
+   "pontos": 11,
+   "peso": 0.332
   },
   {
-   "resposta": "Terra",
+   "resposta": "Mercúrio",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 8.262,
+   "icf": 12.12,
    "ajustado": true,
-   "percentil": 0.0,
-   "fama": 0.01,
-   "peso": 0.1,
-   "pontos": 1
+   "percentil": 0.099,
+   "fama": 0.1,
+   "pontos": 12,
+   "peso": 0.346
+  },
+  {
+   "resposta": "Vênus",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.375,
+   "ajustado": true,
+   "percentil": 0.141,
+   "fama": 0.08,
+   "pontos": 12,
+   "peso": 0.346
+  },
+  {
+   "resposta": "Plutão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.98,
+   "ajustado": true,
+   "percentil": 0.183,
+   "fama": 0.12,
+   "pontos": 13,
+   "peso": 0.361
+  },
+  {
+   "resposta": "Netuno",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.264,
+   "ajustado": true,
+   "percentil": 0.218,
+   "fama": 0.16,
+   "pontos": 14,
+   "peso": 0.374
+  },
+  {
+   "resposta": "Urano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.214,
+   "ajustado": true,
+   "percentil": 0.197,
+   "fama": 0.18,
+   "pontos": 14,
+   "peso": 0.374
   },
   {
    "resposta": "Cometa Halley",
@@ -68,8 +123,8 @@
    "ajustado": true,
    "percentil": 0.127,
    "fama": 0.26,
-   "peso": 0.148,
-   "pontos": 2
+   "pontos": 15,
+   "peso": 0.387
   },
   {
    "resposta": "Europa",
@@ -79,41 +134,8 @@
    "ajustado": true,
    "percentil": 0.014,
    "fama": 0.36,
-   "peso": 0.153,
-   "pontos": 2
-  },
-  {
-   "resposta": "Mercúrio",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.12,
-   "ajustado": true,
-   "percentil": 0.099,
-   "fama": 0.1,
-   "peso": 0.129,
-   "pontos": 2
-  },
-  {
-   "resposta": "Netuno",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.264,
-   "ajustado": true,
-   "percentil": 0.218,
-   "fama": 0.16,
-   "peso": 0.139,
-   "pontos": 2
-  },
-  {
-   "resposta": "Plutão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.98,
-   "ajustado": true,
-   "percentil": 0.183,
-   "fama": 0.12,
-   "peso": 0.134,
-   "pontos": 2
+   "pontos": 18,
+   "peso": 0.424
   },
   {
    "resposta": "Titã",
@@ -125,43 +147,30 @@
    "ajustado": true,
    "percentil": 0.268,
    "fama": 0.38,
-   "peso": 0.158,
-   "pontos": 2
+   "pontos": 19,
+   "peso": 0.436
   },
   {
-   "resposta": "Urano",
+   "resposta": "Io",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.214,
+   "icf": 11.687,
    "ajustado": true,
-   "percentil": 0.197,
-   "fama": 0.18,
-   "peso": 0.144,
-   "pontos": 2
+   "percentil": 0.085,
+   "fama": 0.4,
+   "pontos": 20,
+   "peso": 0.447
   },
   {
-   "resposta": "Vênus",
+   "resposta": "Ganimedes",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.375,
+   "icf": 15.799,
    "ajustado": true,
-   "percentil": 0.141,
-   "fama": 0.08,
-   "peso": 0.124,
-   "pontos": 2
-  },
-  {
-   "resposta": "Caronte",
-   "apelidos": [
-    "charon"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.56,
-   "peso": 0.187,
-   "pontos": 3
+   "percentil": 0.38,
+   "fama": 0.44,
+   "pontos": 21,
+   "peso": 0.458
   },
   {
    "resposta": "Ceres",
@@ -171,19 +180,8 @@
    "ajustado": true,
    "percentil": 0.239,
    "fama": 0.52,
-   "peso": 0.173,
-   "pontos": 3
-  },
-  {
-   "resposta": "Deimos",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.923,
-   "ajustado": true,
-   "percentil": 0.423,
-   "fama": 0.56,
-   "peso": 0.182,
-   "pontos": 3
+   "pontos": 22,
+   "peso": 0.469
   },
   {
    "resposta": "Fobos",
@@ -195,30 +193,32 @@
    "ajustado": true,
    "percentil": 0.451,
    "fama": 0.52,
-   "peso": 0.177,
-   "pontos": 3
+   "pontos": 23,
+   "peso": 0.48
   },
   {
-   "resposta": "Ganimedes",
+   "resposta": "Deimos",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 15.799,
+   "icf": 15.923,
    "ajustado": true,
-   "percentil": 0.38,
-   "fama": 0.44,
-   "peso": 0.168,
-   "pontos": 3
+   "percentil": 0.423,
+   "fama": 0.56,
+   "pontos": 24,
+   "peso": 0.49
   },
   {
-   "resposta": "Io",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.687,
+   "resposta": "Caronte",
+   "apelidos": [
+    "charon"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.085,
-   "fama": 0.4,
-   "peso": 0.163,
-   "pontos": 3
+   "percentil": 0.768,
+   "fama": 0.56,
+   "pontos": 25,
+   "peso": 0.5
   },
   {
    "resposta": "Calisto",
@@ -228,21 +228,8 @@
    "ajustado": true,
    "percentil": 0.296,
    "fama": 0.58,
-   "peso": 0.192,
-   "pontos": 4
-  },
-  {
-   "resposta": "Encélado",
-   "apelidos": [
-    "enceladus"
-   ],
-   "sem_dado": false,
-   "icf": 16.288,
-   "ajustado": true,
-   "percentil": 0.479,
-   "fama": 0.6,
-   "peso": 0.202,
-   "pontos": 4
+   "pontos": 26,
+   "peso": 0.51
   },
   {
    "resposta": "Tritão",
@@ -254,19 +241,21 @@
    "ajustado": true,
    "percentil": 0.324,
    "fama": 0.6,
-   "peso": 0.197,
-   "pontos": 4
+   "pontos": 26,
+   "peso": 0.51
   },
   {
-   "resposta": "Vesta",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "resposta": "Encélado",
+   "apelidos": [
+    "enceladus"
+   ],
+   "sem_dado": false,
+   "icf": 16.288,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.66,
-   "peso": 0.211,
-   "pontos": 4
+   "percentil": 0.479,
+   "fama": 0.6,
+   "pontos": 27,
+   "peso": 0.52
   },
   {
    "resposta": "Éris",
@@ -276,19 +265,19 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.62,
-   "peso": 0.206,
-   "pontos": 4
+   "pontos": 28,
+   "peso": 0.529
   },
   {
-   "resposta": "Mimas",
+   "resposta": "Vesta",
    "apelidos": [],
-   "sem_dado": false,
-   "icf": 16.239,
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.465,
-   "fama": 0.7,
-   "peso": 0.228,
-   "pontos": 5
+   "percentil": 0.768,
+   "fama": 0.66,
+   "pontos": 29,
+   "peso": 0.539
   },
   {
    "resposta": "Miranda",
@@ -298,8 +287,8 @@
    "ajustado": true,
    "percentil": 0.042,
    "fama": 0.68,
-   "peso": 0.216,
-   "pontos": 5
+   "pontos": 30,
+   "peso": 0.548
   },
   {
    "resposta": "Titânia",
@@ -309,8 +298,19 @@
    "ajustado": true,
    "percentil": 0.437,
    "fama": 0.68,
-   "peso": 0.221,
-   "pontos": 5
+   "pontos": 31,
+   "peso": 0.557
+  },
+  {
+   "resposta": "Mimas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.239,
+   "ajustado": true,
+   "percentil": 0.465,
+   "fama": 0.7,
+   "pontos": 32,
+   "peso": 0.566
   },
   {
    "resposta": "Hale-Bopp",
@@ -320,8 +320,8 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.7,
-   "peso": 0.239,
-   "pontos": 6
+   "pontos": 33,
+   "peso": 0.574
   },
   {
    "resposta": "Oberon",
@@ -331,8 +331,19 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.7,
-   "peso": 0.249,
-   "pontos": 6
+   "pontos": 34,
+   "peso": 0.583
+  },
+  {
+   "resposta": "Juno",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.582,
+   "ajustado": true,
+   "percentil": 0.254,
+   "fama": 0.72,
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Apófis",
@@ -344,19 +355,8 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.72,
-   "peso": 0.27,
-   "pontos": 7
-  },
-  {
-   "resposta": "Juno",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.582,
-   "ajustado": true,
-   "percentil": 0.254,
-   "fama": 0.72,
-   "peso": 0.26,
-   "pontos": 7
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Ariel",
@@ -366,8 +366,8 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.72,
-   "peso": 0.281,
-   "pontos": 8
+   "pontos": 37,
+   "peso": 0.608
   },
   {
    "resposta": "Tétis",
@@ -379,8 +379,8 @@
    "ajustado": true,
    "percentil": 0.338,
    "fama": 0.74,
-   "peso": 0.291,
-   "pontos": 8
+   "pontos": 38,
+   "peso": 0.616
   },
   {
    "resposta": "Reia",
@@ -392,19 +392,8 @@
    "ajustado": true,
    "percentil": 0.352,
    "fama": 0.74,
-   "peso": 0.302,
-   "pontos": 9
-  },
-  {
-   "resposta": "Bennu",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.76,
-   "peso": 0.323,
-   "pontos": 10
+   "pontos": 40,
+   "peso": 0.632
   },
   {
    "resposta": "Eros",
@@ -414,8 +403,19 @@
    "ajustado": true,
    "percentil": 0.169,
    "fama": 0.76,
-   "peso": 0.312,
-   "pontos": 10
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Bennu",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.76,
+   "pontos": 42,
+   "peso": 0.648
   },
   {
    "resposta": "Dione",
@@ -425,8 +425,8 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.76,
-   "peso": 0.333,
-   "pontos": 11
+   "pontos": 43,
+   "peso": 0.656
   },
   {
    "resposta": "Jápeto",
@@ -438,19 +438,8 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.76,
-   "peso": 0.344,
-   "pontos": 12
-  },
-  {
-   "resposta": "Hidra",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.245,
-   "ajustado": true,
-   "percentil": 0.282,
-   "fama": 0.8,
-   "peso": 0.365,
-   "pontos": 13
+   "pontos": 44,
+   "peso": 0.663
   },
   {
    "resposta": "Shoemaker-Levy 9",
@@ -462,8 +451,19 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.76,
-   "peso": 0.354,
-   "pontos": 13
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Hidra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.245,
+   "ajustado": true,
+   "percentil": 0.282,
+   "fama": 0.8,
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Febe",
@@ -475,8 +475,8 @@
    "ajustado": true,
    "percentil": 0.394,
    "fama": 0.8,
-   "peso": 0.375,
-   "pontos": 14
+   "pontos": 48,
+   "peso": 0.693
   },
   {
    "resposta": "Hipérion",
@@ -488,339 +488,8 @@
    "ajustado": true,
    "percentil": 0.768,
    "fama": 0.8,
-   "peso": 0.386,
-   "pontos": 15
-  },
-  {
-   "resposta": "Neowise",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.8,
-   "peso": 0.396,
-   "pontos": 16
-  },
-  {
-   "resposta": "Nix",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.8,
-   "peso": 0.407,
-   "pontos": 17
-  },
-  {
-   "resposta": "Palas",
-   "apelidos": [
-    "pallas"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.8,
-   "peso": 0.417,
-   "pontos": 17
-  },
-  {
-   "resposta": "Haumea",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.82,
-   "peso": 0.428,
-   "pontos": 18
-  },
-  {
-   "resposta": "Makemake",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.82,
-   "peso": 0.438,
-   "pontos": 19
-  },
-  {
-   "resposta": "Sedna",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.82,
-   "peso": 0.45,
-   "pontos": 20
-  },
-  {
-   "resposta": "Umbriel",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.82,
-   "peso": 0.466,
-   "pontos": 22
-  },
-  {
-   "resposta": "Ida",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.779,
-   "ajustado": true,
-   "percentil": 0.056,
-   "fama": 0.84,
-   "peso": 0.483,
-   "pontos": 23
-  },
-  {
-   "resposta": "Psique",
-   "apelidos": [
-    "psyche"
-   ],
-   "sem_dado": false,
-   "icf": 13.264,
-   "ajustado": true,
-   "percentil": 0.218,
-   "fama": 0.84,
-   "peso": 0.5,
-   "pontos": 25
-  },
-  {
-   "resposta": "Proteu",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 16.488,
-   "ajustado": true,
-   "percentil": 0.493,
-   "fama": 0.84,
-   "peso": 0.516,
-   "pontos": 27
-  },
-  {
-   "resposta": "Amalteia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 17.943,
-   "ajustado": true,
-   "percentil": 0.507,
-   "fama": 0.84,
-   "peso": 0.533,
-   "pontos": 28
-  },
-  {
-   "resposta": "Ryugu",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.84,
-   "peso": 0.549,
-   "pontos": 30
-  },
-  {
-   "resposta": "Nereida",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.847,
-   "ajustado": true,
-   "percentil": 0.408,
-   "fama": 0.86,
-   "peso": 0.566,
-   "pontos": 32
-  },
-  {
-   "resposta": "Churyumov-Gerasimenko",
-   "apelidos": [
-    "67p"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.86,
-   "peso": 0.583,
-   "pontos": 34
-  },
-  {
-   "resposta": "Itokawa",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.86,
-   "peso": 0.599,
-   "pontos": 36
-  },
-  {
-   "resposta": "Pã",
-   "apelidos": [
-    "pan"
-   ],
-   "sem_dado": false,
-   "icf": 14.864,
-   "ajustado": true,
-   "percentil": 0.31,
-   "fama": 0.88,
-   "peso": 0.616,
-   "pontos": 38
-  },
-  {
-   "resposta": "Arrokoth",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.88,
-   "peso": 0.633,
-   "pontos": 40
-  },
-  {
-   "resposta": "Didymos",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.88,
-   "peso": 0.649,
-   "pontos": 42
-  },
-  {
-   "resposta": "Dimorphos",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.88,
-   "peso": 0.666,
-   "pontos": 44
-  },
-  {
-   "resposta": "Encke",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.88,
-   "peso": 0.683,
-   "pontos": 47
-  },
-  {
-   "resposta": "Gaspra",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.88,
-   "peso": 0.699,
-   "pontos": 49
-  },
-  {
-   "resposta": "Orcus",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.88,
-   "peso": 0.722,
-   "pontos": 52
-  },
-  {
-   "resposta": "Quaoar",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.88,
-   "peso": 0.751,
-   "pontos": 56
-  },
-  {
-   "resposta": "Kerberos",
-   "apelidos": [
-    "cérbero"
-   ],
-   "sem_dado": false,
-   "icf": 15.728,
-   "ajustado": true,
-   "percentil": 0.366,
-   "fama": 0.9,
-   "peso": 0.779,
-   "pontos": 61
-  },
-  {
-   "resposta": "Estige",
-   "apelidos": [
-    "styx"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.9,
-   "peso": 0.808,
-   "pontos": 65
-  },
-  {
-   "resposta": "Gonggong",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.9,
-   "peso": 0.836,
-   "pontos": 70
-  },
-  {
-   "resposta": "Metis",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.9,
-   "peso": 0.865,
-   "pontos": 75
-  },
-  {
-   "resposta": "Tempel 1",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.9,
-   "peso": 0.893,
-   "pontos": 80
-  },
-  {
-   "resposta": "Wild 2",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.9,
-   "peso": 0.922,
-   "pontos": 85
+   "pontos": 49,
+   "peso": 0.7
   },
   {
    "resposta": "Dáctilo",
@@ -832,8 +501,339 @@
    "ajustado": true,
    "percentil": 0.521,
    "fama": 0.92,
-   "peso": 0.95,
-   "pontos": 90
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Neowise",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.8,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Nix",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.8,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Palas",
+   "apelidos": [
+    "pallas"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.8,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Haumea",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.82,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Makemake",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.82,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Sedna",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.82,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Umbriel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.82,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Ida",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.779,
+   "ajustado": true,
+   "percentil": 0.056,
+   "fama": 0.84,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Psique",
+   "apelidos": [
+    "psyche"
+   ],
+   "sem_dado": false,
+   "icf": 13.264,
+   "ajustado": true,
+   "percentil": 0.218,
+   "fama": 0.84,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Proteu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.488,
+   "ajustado": true,
+   "percentil": 0.493,
+   "fama": 0.84,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Amalteia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.943,
+   "ajustado": true,
+   "percentil": 0.507,
+   "fama": 0.84,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Ryugu",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.84,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Nereida",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.847,
+   "ajustado": true,
+   "percentil": 0.408,
+   "fama": 0.86,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Churyumov-Gerasimenko",
+   "apelidos": [
+    "67p"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.86,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Itokawa",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.86,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Pã",
+   "apelidos": [
+    "pan"
+   ],
+   "sem_dado": false,
+   "icf": 14.864,
+   "ajustado": true,
+   "percentil": 0.31,
+   "fama": 0.88,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Arrokoth",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.88,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Didymos",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.88,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Dimorphos",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.88,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Encke",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.88,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Gaspra",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.88,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Orcus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.88,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Quaoar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.88,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Kerberos",
+   "apelidos": [
+    "cérbero"
+   ],
+   "sem_dado": false,
+   "icf": 15.728,
+   "ajustado": true,
+   "percentil": 0.366,
+   "fama": 0.9,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Estige",
+   "apelidos": [
+    "styx"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.9,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Gonggong",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.9,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Metis",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.9,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Tempel 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.9,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Wild 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.9,
+   "pontos": 89,
+   "peso": 0.943
   }
  ],
  "fonte_peso": "icf",

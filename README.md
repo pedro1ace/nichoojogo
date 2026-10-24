@@ -86,10 +86,19 @@ Para cada categoria, `pontuar.py` combina:
 - **raridade global (30%)**: o ICF normalizado na base inteira.
 
 Esse peso (ou o manual) só decide a **ordem** das respostas. Depois a **régua da categoria** espalha essa ordem
-pelas faixas do jogo, para toda categoria ter de tudo: uns 36% óbvias, 30% comuns, 22% incomuns e 12% raras (sempre mais respostas nas faixas mais comuns),
-mais a supernova. O peso de antes fica na coluna `fama` de `dados/pesos/revisao/<cat>.csv`.
+pelas faixas do jogo, para toda categoria ter de tudo. O peso de antes fica na coluna `fama` de
+`dados/pesos/revisao/<cat>.csv`.
 
-`pontos = 100 × peso²`, com mínimo de 1. A curva faz as respostas óbvias valerem quase nada.
+| Faixa | Parte da lista | Pontos |
+|---|---|---|
+| Óbvia | as 15% mais famosas | 8 a 15 |
+| Comum | as 25% seguintes | 18 a 34 |
+| Incomum | as 30% seguintes | 35 a 58 |
+| Rara | as 30% menos famosas | 60 a 90 |
+| Supernova | uma por categoria | 100 (50, dobrada no jogo) |
+
+As faixas baixas são estreitas de propósito: quem joga digita quase sempre as respostas mais famosas, então
+só as bem óbvias ficam cinzas. Os cortes de faixa no jogo (`FAIXAS` em `jogo/cena.js`) são 18, 35 e 60 pontos.
 
 Categorias pequenas e fechadas (menos de 30 respostas) não dão para espalhar e ficam fora do jogo, listadas em
 `dados/fora_do_jogo.txt`. Os arquivos continuam no repositório.

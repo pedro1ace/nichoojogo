@@ -16,10 +16,10 @@ const AL_POR_PONTO = 10;
 // óbvia quase não sai do lugar, comum desce um pouco, incomum bastante, rara muito.
 function viagem(pontos) {
   if (pontos <= 0) return 0;
-  if (pontos < 5) return 40 + 12 * pontos; // óbvia: 52 a 88 AL, um passinho que dá para ver
-  if (pontos < 20) return 160 + 12 * (pontos - 5); // comum: 160 a 340
-  if (pontos < 50) return 520 + 18 * (pontos - 20); // incomum: 520 a 1.060
-  return 1350 + 26 * (pontos - 50); // rara: 1.350 em diante
+  if (pontos < 18) return 40 + 4 * pontos; // óbvia (8 a 15 pts): 72 a 100 AL, um passinho que dá para ver
+  if (pontos < 35) return 160 + 11 * (pontos - 18); // comum (18 a 34): 160 a 336
+  if (pontos < 60) return 520 + 23 * (pontos - 35); // incomum (35 a 58): 520 a 1.049
+  return 1350 + 39 * (pontos - 60); // rara (60 a 90): 1.350 a 2.520; supernova (100): 2.910
 }
 // A viagem começa fora da atmosfera, já no céu escuro: ao iniciar, o tardígrado desce
 // da Terra até aqui. Distância e réguas contam a partir deste ponto (o "0").
@@ -48,9 +48,9 @@ function curvaQueda(t, peso) {
 
 // Faixas de raridade. "min" é em pontos da resposta.
 const FAIXAS = [
-  { id: "rara", min: 50, nome: "RARA", cor: "#c38bff", emoji: "☄️", frase: "Quase ninguém chega tão fundo." },
-  { id: "incomum", min: 20, nome: "INCOMUM", cor: "#ffd23f", emoji: "🪐", frase: "Poucos foram por esse caminho." },
-  { id: "comum", min: 5, nome: "COMUM", cor: "#5fe1ff", emoji: "🌙", frase: "Boa, mas ainda perto de casa." },
+  { id: "rara", min: 60, nome: "RARA", cor: "#c38bff", emoji: "☄️", frase: "Quase ninguém chega tão fundo." },
+  { id: "incomum", min: 35, nome: "INCOMUM", cor: "#ffd23f", emoji: "🪐", frase: "Poucos foram por esse caminho." },
+  { id: "comum", min: 18, nome: "COMUM", cor: "#5fe1ff", emoji: "🌙", frase: "Boa, mas ainda perto de casa." },
   { id: "obvia", min: 0, nome: "ÓBVIA", cor: "#e8f0ff", emoji: "🛰️", frase: "Todo mundo pensou nessa." },
 ];
 const SUPERNOVA = { id: "supernova", nome: "SUPERNOVA", cor: "#ff4fd8", emoji: "🌟", frase: "Você achou a resposta escondida desta pergunta!" };
@@ -1329,7 +1329,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let bordaCor = null, borda = 0;
   function chegada(c, cx, cy, w, h) {
     const k = c.peso; // 0 a 1.2
-    if (k < 0.2) return; // comum e óbvia: só o pulinho da caixa
+    if (k < 0.35) return; // comum e óbvia: só o pulinho da caixa
     const n = Math.round(20 + 120 * Math.min(1, k));
     for (let i = 0; i < n; i++) {
       const a = Math.random() * Math.PI * 2;
@@ -1407,7 +1407,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const n = Math.min(4, vel / 300 + 0.3);
     for (let i = 0; i < n; i++) {
       if (Math.random() > n / Math.ceil(n)) continue;
-      const tipo = c.supernova ? "plasma" : c.peso >= 0.5 ? "fumaca" : c.peso >= 0.2 ? "faisca" : "poeira";
+      const tipo = c.supernova ? "plasma" : c.peso >= 0.6 ? "fumaca" : c.peso >= 0.35 ? "faisca" : "poeira";
       const fumaca = tipo === "fumaca" || tipo === "plasma";
       rastro.push({
         al: al - (18 + Math.random() * 10) / (PX_POR_AL * escala), // logo acima da caixa

@@ -14,19 +14,8 @@
    "ajustado": true,
    "percentil": 0.061,
    "fama": 0.01,
-   "peso": 0.1,
-   "pontos": 1
-  },
-  {
-   "resposta": "Castro Alves",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.228,
-   "ajustado": true,
-   "percentil": 0.268,
-   "fama": 0.06,
-   "peso": 0.117,
-   "pontos": 1
+   "pontos": 8,
+   "peso": 0.283
   },
   {
    "resposta": "Cecília Meireles",
@@ -36,34 +25,8 @@
    "ajustado": true,
    "percentil": 0.561,
    "fama": 0.04,
-   "peso": 0.108,
-   "pontos": 1
-  },
-  {
-   "resposta": "Manuel Bandeira",
-   "apelidos": [
-    "bandeira"
-   ],
-   "sem_dado": false,
-   "icf": 10.245,
-   "ajustado": true,
-   "percentil": 0.28,
-   "fama": 0.05,
-   "peso": 0.113,
-   "pontos": 1
-  },
-  {
-   "resposta": "Mario Quintana",
-   "apelidos": [
-    "quintana"
-   ],
-   "sem_dado": false,
-   "icf": 11.509,
-   "ajustado": true,
-   "percentil": 0.549,
-   "fama": 0.08,
-   "peso": 0.121,
-   "pontos": 1
+   "pontos": 9,
+   "peso": 0.3
   },
   {
    "resposta": "Vinicius de Moraes",
@@ -75,30 +38,45 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.02,
-   "peso": 0.104,
-   "pontos": 1
+   "pontos": 9,
+   "peso": 0.3
   },
   {
-   "resposta": "Chico Buarque",
-   "apelidos": [],
+   "resposta": "Manuel Bandeira",
+   "apelidos": [
+    "bandeira"
+   ],
    "sem_dado": false,
-   "icf": 10.384,
+   "icf": 10.245,
    "ajustado": true,
-   "percentil": 0.354,
-   "fama": 0.22,
-   "peso": 0.154,
-   "pontos": 2
+   "percentil": 0.28,
+   "fama": 0.05,
+   "pontos": 10,
+   "peso": 0.316
   },
   {
-   "resposta": "Cora Coralina",
+   "resposta": "Castro Alves",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.432,
+   "icf": 10.228,
    "ajustado": true,
-   "percentil": 0.72,
-   "fama": 0.14,
-   "peso": 0.138,
-   "pontos": 2
+   "percentil": 0.268,
+   "fama": 0.06,
+   "pontos": 11,
+   "peso": 0.332
+  },
+  {
+   "resposta": "Mario Quintana",
+   "apelidos": [
+    "quintana"
+   ],
+   "sem_dado": false,
+   "icf": 11.509,
+   "ajustado": true,
+   "percentil": 0.549,
+   "fama": 0.08,
+   "pontos": 11,
+   "peso": 0.332
   },
   {
    "resposta": "Gonçalves Dias",
@@ -108,32 +86,8 @@
    "ajustado": true,
    "percentil": 0.024,
    "fama": 0.1,
-   "peso": 0.125,
-   "pontos": 2
-  },
-  {
-   "resposta": "João Cabral de Melo Neto",
-   "apelidos": [
-    "joão cabral"
-   ],
-   "sem_dado": false,
-   "icf": 9.645,
-   "ajustado": true,
-   "percentil": 0.11,
-   "fama": 0.2,
-   "peso": 0.146,
-   "pontos": 2
-  },
-  {
-   "resposta": "Machado de Assis",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.423,
-   "ajustado": true,
-   "percentil": 0.378,
-   "fama": 0.14,
-   "peso": 0.133,
-   "pontos": 2
+   "pontos": 12,
+   "peso": 0.346
   },
   {
    "resposta": "Olavo Bilac",
@@ -145,8 +99,54 @@
    "ajustado": true,
    "percentil": 0.75,
    "fama": 0.12,
-   "peso": 0.129,
-   "pontos": 2
+   "pontos": 12,
+   "peso": 0.346
+  },
+  {
+   "resposta": "Machado de Assis",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.423,
+   "ajustado": true,
+   "percentil": 0.378,
+   "fama": 0.14,
+   "pontos": 13,
+   "peso": 0.361
+  },
+  {
+   "resposta": "Cora Coralina",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.432,
+   "ajustado": true,
+   "percentil": 0.72,
+   "fama": 0.14,
+   "pontos": 14,
+   "peso": 0.374
+  },
+  {
+   "resposta": "Álvares de Azevedo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.915,
+   "fama": 0.18,
+   "pontos": 14,
+   "peso": 0.374
+  },
+  {
+   "resposta": "João Cabral de Melo Neto",
+   "apelidos": [
+    "joão cabral"
+   ],
+   "sem_dado": false,
+   "icf": 9.645,
+   "ajustado": true,
+   "percentil": 0.11,
+   "fama": 0.2,
+   "pontos": 15,
+   "peso": 0.387
   },
   {
    "resposta": "Paulo Leminski",
@@ -158,52 +158,19 @@
    "ajustado": true,
    "percentil": 0.0,
    "fama": 0.22,
-   "peso": 0.15,
-   "pontos": 2
+   "pontos": 18,
+   "peso": 0.424
   },
   {
-   "resposta": "Álvares de Azevedo",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.915,
-   "fama": 0.18,
-   "peso": 0.142,
-   "pontos": 2
-  },
-  {
-   "resposta": "Adélia Prado",
+   "resposta": "Chico Buarque",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.319,
+   "icf": 10.384,
    "ajustado": true,
-   "percentil": 0.646,
-   "fama": 0.3,
-   "peso": 0.175,
-   "pontos": 3
-  },
-  {
-   "resposta": "Augusto dos Anjos",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.31,
-   "ajustado": true,
-   "percentil": 0.317,
-   "fama": 0.3,
-   "peso": 0.171,
-   "pontos": 3
-  },
-  {
-   "resposta": "Cazuza",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.873,
-   "ajustado": true,
-   "percentil": 0.695,
-   "fama": 0.3,
-   "peso": 0.184,
-   "pontos": 3
+   "percentil": 0.354,
+   "fama": 0.22,
+   "pontos": 19,
+   "peso": 0.436
   },
   {
    "resposta": "Ferreira Gullar",
@@ -215,19 +182,8 @@
    "ajustado": true,
    "percentil": 0.085,
    "fama": 0.24,
-   "peso": 0.159,
-   "pontos": 3
-  },
-  {
-   "resposta": "Gregório de Matos",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.515,
-   "ajustado": true,
-   "percentil": 0.659,
-   "fama": 0.3,
-   "peso": 0.18,
-   "pontos": 3
+   "pontos": 20,
+   "peso": 0.447
   },
   {
    "resposta": "Mário de Andrade",
@@ -237,8 +193,8 @@
    "ajustado": true,
    "percentil": 0.341,
    "fama": 0.24,
-   "peso": 0.163,
-   "pontos": 3
+   "pontos": 20,
+   "peso": 0.447
   },
   {
    "resposta": "Oswald de Andrade",
@@ -250,41 +206,52 @@
    "ajustado": true,
    "percentil": 0.329,
    "fama": 0.26,
-   "peso": 0.167,
-   "pontos": 3
+   "pontos": 21,
+   "peso": 0.458
   },
   {
-   "resposta": "Ariano Suassuna",
+   "resposta": "Augusto dos Anjos",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.447,
+   "icf": 10.31,
    "ajustado": true,
-   "percentil": 0.732,
-   "fama": 0.34,
-   "peso": 0.196,
-   "pontos": 4
+   "percentil": 0.317,
+   "fama": 0.3,
+   "pontos": 22,
+   "peso": 0.469
   },
   {
-   "resposta": "Casimiro de Abreu",
+   "resposta": "Adélia Prado",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 10.958,
+   "icf": 12.319,
    "ajustado": true,
-   "percentil": 0.476,
-   "fama": 0.36,
-   "peso": 0.205,
-   "pontos": 4
+   "percentil": 0.646,
+   "fama": 0.3,
+   "pontos": 23,
+   "peso": 0.48
   },
   {
-   "resposta": "Hilda Hilst",
+   "resposta": "Cazuza",
    "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "sem_dado": false,
+   "icf": 12.873,
    "ajustado": true,
-   "percentil": 0.915,
-   "fama": 0.34,
-   "peso": 0.2,
-   "pontos": 4
+   "percentil": 0.695,
+   "fama": 0.3,
+   "pontos": 24,
+   "peso": 0.49
+  },
+  {
+   "resposta": "Gregório de Matos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.515,
+   "ajustado": true,
+   "percentil": 0.659,
+   "fama": 0.3,
+   "pontos": 24,
+   "peso": 0.49
   },
   {
    "resposta": "Manoel de Barros",
@@ -294,19 +261,8 @@
    "ajustado": true,
    "percentil": 0.402,
    "fama": 0.32,
-   "peso": 0.188,
-   "pontos": 4
-  },
-  {
-   "resposta": "Patativa do Assaré",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.209,
-   "ajustado": true,
-   "percentil": 0.78,
-   "fama": 0.36,
-   "peso": 0.209,
-   "pontos": 4
+   "pontos": 25,
+   "peso": 0.5
   },
   {
    "resposta": "Renato Russo",
@@ -316,41 +272,52 @@
    "ajustado": true,
    "percentil": 0.439,
    "fama": 0.32,
-   "peso": 0.192,
-   "pontos": 4
+   "pontos": 26,
+   "peso": 0.51
   },
   {
-   "resposta": "Arnaldo Antunes",
+   "resposta": "Ariano Suassuna",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.447,
+   "ajustado": true,
+   "percentil": 0.732,
+   "fama": 0.34,
+   "pontos": 27,
+   "peso": 0.52
+  },
+  {
+   "resposta": "Casimiro de Abreu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.958,
+   "ajustado": true,
+   "percentil": 0.476,
+   "fama": 0.36,
+   "pontos": 28,
+   "peso": 0.529
+  },
+  {
+   "resposta": "Hilda Hilst",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.915,
-   "fama": 0.44,
-   "peso": 0.221,
-   "pontos": 5
+   "fama": 0.34,
+   "pontos": 28,
+   "peso": 0.529
   },
   {
-   "resposta": "Bráulio Bessa",
+   "resposta": "Patativa do Assaré",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.807,
+   "icf": 14.209,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.38,
-   "peso": 0.217,
-   "pontos": 5
-  },
-  {
-   "resposta": "Conceição Evaristo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.857,
-   "ajustado": true,
-   "percentil": 0.451,
-   "fama": 0.46,
-   "peso": 0.228,
-   "pontos": 5
+   "percentil": 0.78,
+   "fama": 0.36,
+   "pontos": 29,
+   "peso": 0.539
   },
   {
    "resposta": "Cruz e Sousa",
@@ -362,19 +329,41 @@
    "ajustado": true,
    "percentil": 0.134,
    "fama": 0.38,
-   "peso": 0.213,
-   "pontos": 5
+   "pontos": 30,
+   "peso": 0.548
   },
   {
-   "resposta": "Murilo Mendes",
+   "resposta": "Bráulio Bessa",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 10.17,
+   "icf": 13.807,
    "ajustado": true,
-   "percentil": 0.232,
-   "fama": 0.5,
-   "peso": 0.246,
-   "pontos": 6
+   "percentil": 0.768,
+   "fama": 0.38,
+   "pontos": 31,
+   "peso": 0.557
+  },
+  {
+   "resposta": "Arnaldo Antunes",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.915,
+   "fama": 0.44,
+   "pontos": 32,
+   "peso": 0.566
+  },
+  {
+   "resposta": "Conceição Evaristo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.857,
+   "ajustado": true,
+   "percentil": 0.451,
+   "fama": 0.46,
+   "pontos": 32,
+   "peso": 0.566
   },
   {
    "resposta": "Tomás Antônio Gonzaga",
@@ -384,8 +373,19 @@
    "ajustado": true,
    "percentil": 0.512,
    "fama": 0.48,
-   "peso": 0.237,
-   "pontos": 6
+   "pontos": 33,
+   "peso": 0.574
+  },
+  {
+   "resposta": "Murilo Mendes",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.17,
+   "ajustado": true,
+   "percentil": 0.232,
+   "fama": 0.5,
+   "pontos": 34,
+   "peso": 0.583
   },
   {
    "resposta": "Alphonsus de Guimaraens",
@@ -395,8 +395,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.5,
-   "peso": 0.255,
-   "pontos": 7
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Jorge de Lima",
@@ -406,8 +406,8 @@
    "ajustado": true,
    "percentil": 0.049,
    "fama": 0.52,
-   "peso": 0.264,
-   "pontos": 7
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Ruth Rocha",
@@ -417,8 +417,8 @@
    "ajustado": true,
    "percentil": 0.171,
    "fama": 0.52,
-   "peso": 0.273,
-   "pontos": 7
+   "pontos": 37,
+   "peso": 0.608
   },
   {
    "resposta": "Raimundo Correia",
@@ -428,19 +428,8 @@
    "ajustado": true,
    "percentil": 0.524,
    "fama": 0.54,
-   "peso": 0.283,
-   "pontos": 8
-  },
-  {
-   "resposta": "Alberto de Oliveira",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.735,
-   "ajustado": true,
-   "percentil": 0.122,
-   "fama": 0.56,
-   "peso": 0.301,
-   "pontos": 9
+   "pontos": 38,
+   "peso": 0.616
   },
   {
    "resposta": "Thiago de Mello",
@@ -450,8 +439,19 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.54,
-   "peso": 0.292,
-   "pontos": 9
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Alberto de Oliveira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.735,
+   "ajustado": true,
+   "percentil": 0.122,
+   "fama": 0.56,
+   "pontos": 40,
+   "peso": 0.632
   },
   {
    "resposta": "Ana Cristina Cesar",
@@ -463,8 +463,8 @@
    "ajustado": true,
    "percentil": 0.183,
    "fama": 0.56,
-   "peso": 0.31,
-   "pontos": 10
+   "pontos": 41,
+   "peso": 0.64
   },
   {
    "resposta": "Cláudio Manuel da Costa",
@@ -474,19 +474,8 @@
    "ajustado": true,
    "percentil": 0.22,
    "fama": 0.56,
-   "peso": 0.319,
-   "pontos": 10
-  },
-  {
-   "resposta": "Augusto de Campos",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.274,
-   "ajustado": true,
-   "percentil": 0.293,
-   "fama": 0.58,
-   "peso": 0.337,
-   "pontos": 11
+   "pontos": 42,
+   "peso": 0.648
   },
   {
    "resposta": "Torquato Neto",
@@ -496,8 +485,19 @@
    "ajustado": true,
    "percentil": 0.195,
    "fama": 0.58,
-   "peso": 0.328,
-   "pontos": 11
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Augusto de Campos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.274,
+   "ajustado": true,
+   "percentil": 0.293,
+   "fama": 0.58,
+   "pontos": 44,
+   "peso": 0.663
   },
   {
    "resposta": "Haroldo de Campos",
@@ -507,8 +507,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.58,
-   "peso": 0.346,
-   "pontos": 12
+   "pontos": 45,
+   "peso": 0.671
   },
   {
    "resposta": "Menotti Del Picchia",
@@ -518,8 +518,8 @@
    "ajustado": true,
    "percentil": 0.073,
    "fama": 0.6,
-   "peso": 0.364,
-   "pontos": 13
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Raul Bopp",
@@ -529,8 +529,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.58,
-   "peso": 0.355,
-   "pontos": 13
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Guilherme de Almeida",
@@ -540,8 +540,8 @@
    "ajustado": true,
    "percentil": 0.244,
    "fama": 0.6,
-   "peso": 0.373,
-   "pontos": 14
+   "pontos": 47,
+   "peso": 0.686
   },
   {
    "resposta": "Marina Colasanti",
@@ -551,8 +551,8 @@
    "ajustado": true,
    "percentil": 0.366,
    "fama": 0.6,
-   "peso": 0.383,
-   "pontos": 15
+   "pontos": 48,
+   "peso": 0.693
   },
   {
    "resposta": "Waly Salomão",
@@ -562,8 +562,8 @@
    "ajustado": true,
    "percentil": 0.573,
    "fama": 0.6,
-   "peso": 0.392,
-   "pontos": 15
+   "pontos": 49,
+   "peso": 0.7
   },
   {
    "resposta": "Fagundes Varela",
@@ -573,8 +573,19 @@
    "ajustado": true,
    "percentil": 0.671,
    "fama": 0.6,
-   "peso": 0.401,
-   "pontos": 16
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Pedro Kilkerry",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.915,
+   "fama": 0.88,
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Paulo Mendes Campos",
@@ -584,8 +595,8 @@
    "ajustado": true,
    "percentil": 0.012,
    "fama": 0.62,
-   "peso": 0.41,
-   "pontos": 17
+   "pontos": 51,
+   "peso": 0.714
   },
   {
    "resposta": "Affonso Romano de Sant'Anna",
@@ -597,8 +608,8 @@
    "ajustado": true,
    "percentil": 0.5,
    "fama": 0.62,
-   "peso": 0.419,
-   "pontos": 18
+   "pontos": 52,
+   "peso": 0.721
   },
   {
    "resposta": "Bruna Lombardi",
@@ -608,8 +619,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.62,
-   "peso": 0.428,
-   "pontos": 18
+   "pontos": 53,
+   "peso": 0.728
   },
   {
    "resposta": "Vicente de Carvalho",
@@ -619,8 +630,8 @@
    "ajustado": true,
    "percentil": 0.207,
    "fama": 0.64,
-   "peso": 0.437,
-   "pontos": 19
+   "pontos": 54,
+   "peso": 0.735
   },
   {
    "resposta": "Basílio da Gama",
@@ -630,8 +641,8 @@
    "ajustado": true,
    "percentil": 0.305,
    "fama": 0.64,
-   "peso": 0.446,
-   "pontos": 20
+   "pontos": 55,
+   "peso": 0.742
   },
   {
    "resposta": "Cassiano Ricardo",
@@ -641,8 +652,8 @@
    "ajustado": true,
    "percentil": 0.537,
    "fama": 0.64,
-   "peso": 0.46,
-   "pontos": 21
+   "pontos": 56,
+   "peso": 0.748
   },
   {
    "resposta": "Elisa Lucinda",
@@ -652,8 +663,8 @@
    "ajustado": true,
    "percentil": 0.61,
    "fama": 0.64,
-   "peso": 0.474,
-   "pontos": 22
+   "pontos": 57,
+   "peso": 0.755
   },
   {
    "resposta": "Décio Pignatari",
@@ -663,8 +674,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.64,
-   "peso": 0.489,
-   "pontos": 24
+   "pontos": 58,
+   "peso": 0.762
   },
   {
    "resposta": "Antonio Cicero",
@@ -674,8 +685,8 @@
    "ajustado": true,
    "percentil": 0.463,
    "fama": 0.66,
-   "peso": 0.503,
-   "pontos": 25
+   "pontos": 60,
+   "peso": 0.775
   },
   {
    "resposta": "Lêdo Ivo",
@@ -685,8 +696,8 @@
    "ajustado": true,
    "percentil": 0.75,
    "fama": 0.66,
-   "peso": 0.518,
-   "pontos": 27
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Cacaso",
@@ -696,8 +707,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.68,
-   "peso": 0.532,
-   "pontos": 28
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Ryane Leão",
@@ -707,8 +718,8 @@
    "ajustado": true,
    "percentil": 0.39,
    "fama": 0.7,
-   "peso": 0.546,
-   "pontos": 30
+   "pontos": 64,
+   "peso": 0.8
   },
   {
    "resposta": "Augusto Frederico Schmidt",
@@ -718,8 +729,8 @@
    "ajustado": true,
    "percentil": 0.488,
    "fama": 0.7,
-   "peso": 0.561,
-   "pontos": 31
+   "pontos": 65,
+   "peso": 0.806
   },
   {
    "resposta": "Mário Faustino",
@@ -729,8 +740,8 @@
    "ajustado": true,
    "percentil": 0.585,
    "fama": 0.7,
-   "peso": 0.575,
-   "pontos": 33
+   "pontos": 66,
+   "peso": 0.812
   },
   {
    "resposta": "Chacal",
@@ -740,8 +751,8 @@
    "ajustado": true,
    "percentil": 0.793,
    "fama": 0.7,
-   "peso": 0.59,
-   "pontos": 35
+   "pontos": 68,
+   "peso": 0.825
   },
   {
    "resposta": "Sérgio Vaz",
@@ -751,8 +762,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.7,
-   "peso": 0.604,
-   "pontos": 36
+   "pontos": 69,
+   "peso": 0.831
   },
   {
    "resposta": "Henriqueta Lisboa",
@@ -762,8 +773,8 @@
    "ajustado": true,
    "percentil": 0.037,
    "fama": 0.72,
-   "peso": 0.618,
-   "pontos": 38
+   "pontos": 70,
+   "peso": 0.837
   },
   {
    "resposta": "Gilka Machado",
@@ -773,8 +784,8 @@
    "ajustado": true,
    "percentil": 0.256,
    "fama": 0.72,
-   "peso": 0.633,
-   "pontos": 40
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Santa Rita Durão",
@@ -784,8 +795,8 @@
    "ajustado": true,
    "percentil": 0.415,
    "fama": 0.72,
-   "peso": 0.647,
-   "pontos": 42
+   "pontos": 72,
+   "peso": 0.849
   },
   {
    "resposta": "Junqueira Freire",
@@ -795,8 +806,8 @@
    "ajustado": true,
    "percentil": 0.598,
    "fama": 0.72,
-   "peso": 0.662,
-   "pontos": 44
+   "pontos": 74,
+   "peso": 0.86
   },
   {
    "resposta": "Alice Ruiz",
@@ -806,8 +817,8 @@
    "ajustado": true,
    "percentil": 0.427,
    "fama": 0.74,
-   "peso": 0.676,
-   "pontos": 46
+   "pontos": 75,
+   "peso": 0.866
   },
   {
    "resposta": "Francisca Júlia",
@@ -817,8 +828,8 @@
    "ajustado": true,
    "percentil": 0.622,
    "fama": 0.74,
-   "peso": 0.69,
-   "pontos": 48
+   "pontos": 76,
+   "peso": 0.872
   },
   {
    "resposta": "Orides Fontela",
@@ -828,8 +839,8 @@
    "ajustado": true,
    "percentil": 0.817,
    "fama": 0.76,
-   "peso": 0.705,
-   "pontos": 50
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Auta de Souza",
@@ -839,8 +850,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.76,
-   "peso": 0.728,
-   "pontos": 53
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Sousândrade",
@@ -850,8 +861,8 @@
    "ajustado": true,
    "percentil": 0.915,
    "fama": 0.76,
-   "peso": 0.753,
-   "pontos": 57
+   "pontos": 80,
+   "peso": 0.894
   },
   {
    "resposta": "Paulo Henriques Britto",
@@ -861,8 +872,8 @@
    "ajustado": true,
    "percentil": 0.098,
    "fama": 0.8,
-   "peso": 0.777,
-   "pontos": 60
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Ana Martins Marques",
@@ -872,8 +883,8 @@
    "ajustado": true,
    "percentil": 0.146,
    "fama": 0.8,
-   "peso": 0.802,
-   "pontos": 64
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Armando Freitas Filho",
@@ -883,8 +894,8 @@
    "ajustado": true,
    "percentil": 0.159,
    "fama": 0.8,
-   "peso": 0.827,
-   "pontos": 68
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Angélica Freitas",
@@ -894,8 +905,8 @@
    "ajustado": true,
    "percentil": 0.634,
    "fama": 0.8,
-   "peso": 0.851,
-   "pontos": 72
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Glauco Mattoso",
@@ -905,8 +916,8 @@
    "ajustado": true,
    "percentil": 0.707,
    "fama": 0.8,
-   "peso": 0.876,
-   "pontos": 77
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Zila Mamede",
@@ -916,8 +927,8 @@
    "ajustado": true,
    "percentil": 0.805,
    "fama": 0.82,
-   "peso": 0.901,
-   "pontos": 81
+   "pontos": 88,
+   "peso": 0.938
   },
   {
    "resposta": "Dante Milano",
@@ -927,19 +938,8 @@
    "ajustado": true,
    "percentil": 0.683,
    "fama": 0.84,
-   "peso": 0.925,
-   "pontos": 86
-  },
-  {
-   "resposta": "Pedro Kilkerry",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.915,
-   "fama": 0.88,
-   "peso": 0.95,
-   "pontos": 90
+   "pontos": 89,
+   "peso": 0.943
   }
  ],
  "fonte_peso": "icf",
