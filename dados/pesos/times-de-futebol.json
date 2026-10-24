@@ -4,19 +4,6 @@
  "pergunta": "Cite um time de futebol brasileiro",
  "respostas": [
   {
-   "resposta": "Atlético Mineiro",
-   "apelidos": [
-    "galo",
-    "atlético-mg"
-   ],
-   "sem_dado": false,
-   "icf": 10.603,
-   "ajustado": true,
-   "percentil": 0.403,
-   "peso": 0.12,
-   "pontos": 1
-  },
-  {
    "resposta": "Corinthians",
    "apelidos": [
     "timão"
@@ -25,17 +12,8 @@
    "icf": 11.75,
    "ajustado": true,
    "percentil": 0.645,
-   "peso": 0.02,
-   "pontos": 1
-  },
-  {
-   "resposta": "Cruzeiro",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.253,
-   "ajustado": true,
-   "percentil": 0.323,
-   "peso": 0.12,
+   "fama": 0.02,
+   "peso": 0.108,
    "pontos": 1
   },
   {
@@ -47,40 +25,7 @@
    "icf": 10.037,
    "ajustado": true,
    "percentil": 0.306,
-   "peso": 0.01,
-   "pontos": 1
-  },
-  {
-   "resposta": "Fluminense",
-   "apelidos": [
-    "flu"
-   ],
-   "sem_dado": false,
-   "icf": 10.405,
-   "ajustado": true,
-   "percentil": 0.371,
-   "peso": 0.1,
-   "pontos": 1
-  },
-  {
-   "resposta": "Grêmio",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.595,
-   "ajustado": true,
-   "percentil": 0.387,
-   "peso": 0.09,
-   "pontos": 1
-  },
-  {
-   "resposta": "Internacional",
-   "apelidos": [
-    "inter"
-   ],
-   "sem_dado": false,
-   "icf": 8.622,
-   "ajustado": true,
-   "percentil": 0.065,
+   "fama": 0.01,
    "peso": 0.1,
    "pontos": 1
   },
@@ -93,8 +38,20 @@
    "icf": 10.293,
    "ajustado": true,
    "percentil": 0.339,
-   "peso": 0.03,
+   "fama": 0.03,
+   "peso": 0.116,
    "pontos": 1
+  },
+  {
+   "resposta": "Grêmio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.595,
+   "ajustado": true,
+   "percentil": 0.387,
+   "fama": 0.09,
+   "peso": 0.148,
+   "pontos": 2
   },
   {
    "resposta": "Santos",
@@ -103,8 +60,9 @@
    "icf": 8.596,
    "ajustado": true,
    "percentil": 0.048,
-   "peso": 0.07,
-   "pontos": 1
+   "fama": 0.07,
+   "peso": 0.14,
+   "pontos": 2
   },
   {
    "resposta": "São Paulo",
@@ -115,8 +73,9 @@
    "icf": 6.313,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.04,
-   "pontos": 1
+   "fama": 0.04,
+   "peso": 0.124,
+   "pontos": 2
   },
   {
    "resposta": "Vasco",
@@ -127,30 +86,60 @@
    "icf": 10.316,
    "ajustado": true,
    "percentil": 0.355,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Botafogo",
-   "apelidos": [
-    "fogão"
-   ],
-   "sem_dado": false,
-   "icf": 11.127,
-   "ajustado": true,
-   "percentil": 0.5,
-   "peso": 0.13,
+   "fama": 0.06,
+   "peso": 0.132,
    "pontos": 2
   },
   {
-   "resposta": "Bahia",
+   "resposta": "Atlético Mineiro",
+   "apelidos": [
+    "galo",
+    "atlético-mg"
+   ],
+   "sem_dado": false,
+   "icf": 10.603,
+   "ajustado": true,
+   "percentil": 0.403,
+   "fama": 0.12,
+   "peso": 0.176,
+   "pontos": 3
+  },
+  {
+   "resposta": "Cruzeiro",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 9.22,
+   "icf": 10.253,
    "ajustado": true,
-   "percentil": 0.145,
-   "peso": 0.22,
-   "pontos": 5
+   "percentil": 0.323,
+   "fama": 0.12,
+   "peso": 0.176,
+   "pontos": 3
+  },
+  {
+   "resposta": "Fluminense",
+   "apelidos": [
+    "flu"
+   ],
+   "sem_dado": false,
+   "icf": 10.405,
+   "ajustado": true,
+   "percentil": 0.371,
+   "fama": 0.1,
+   "peso": 0.16,
+   "pontos": 3
+  },
+  {
+   "resposta": "Internacional",
+   "apelidos": [
+    "inter"
+   ],
+   "sem_dado": false,
+   "icf": 8.622,
+   "ajustado": true,
+   "percentil": 0.065,
+   "fama": 0.1,
+   "peso": 0.16,
+   "pontos": 3
   },
   {
    "resposta": "Athletico Paranaense",
@@ -163,8 +152,44 @@
    "icf": 11.464,
    "ajustado": true,
    "percentil": 0.548,
-   "peso": 0.26,
-   "pontos": 7
+   "fama": 0.26,
+   "peso": 0.204,
+   "pontos": 4
+  },
+  {
+   "resposta": "Bahia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.22,
+   "ajustado": true,
+   "percentil": 0.145,
+   "fama": 0.22,
+   "peso": 0.196,
+   "pontos": 4
+  },
+  {
+   "resposta": "Botafogo",
+   "apelidos": [
+    "fogão"
+   ],
+   "sem_dado": false,
+   "icf": 11.127,
+   "ajustado": true,
+   "percentil": 0.5,
+   "fama": 0.13,
+   "peso": 0.188,
+   "pontos": 4
+  },
+  {
+   "resposta": "Ceará",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.927,
+   "ajustado": true,
+   "percentil": 0.258,
+   "fama": 0.32,
+   "peso": 0.234,
+   "pontos": 5
   },
   {
    "resposta": "Fortaleza",
@@ -173,8 +198,9 @@
    "icf": 9.908,
    "ajustado": true,
    "percentil": 0.242,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.216,
+   "pontos": 5
   },
   {
    "resposta": "Sport",
@@ -185,18 +211,9 @@
    "icf": 10.606,
    "ajustado": true,
    "percentil": 0.419,
-   "peso": 0.3,
-   "pontos": 9
-  },
-  {
-   "resposta": "Ceará",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.927,
-   "ajustado": true,
-   "percentil": 0.258,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.3,
+   "peso": 0.216,
+   "pontos": 5
   },
   {
    "resposta": "Vitória",
@@ -205,8 +222,9 @@
    "icf": 9.014,
    "ajustado": true,
    "percentil": 0.113,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.32,
+   "peso": 0.234,
+   "pontos": 5
   },
   {
    "resposta": "Coritiba",
@@ -217,8 +235,20 @@
    "icf": 11.903,
    "ajustado": true,
    "percentil": 0.677,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.255,
+   "pontos": 7
+  },
+  {
+   "resposta": "Goiás",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.876,
+   "ajustado": true,
+   "percentil": 0.21,
+   "fama": 0.4,
+   "peso": 0.27,
+   "pontos": 7
   },
   {
    "resposta": "Red Bull Bragantino",
@@ -229,18 +259,9 @@
    "icf": 11.715,
    "ajustado": true,
    "percentil": 0.629,
-   "peso": 0.38,
-   "pontos": 14
-  },
-  {
-   "resposta": "Goiás",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.876,
-   "ajustado": true,
-   "percentil": 0.21,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.38,
+   "peso": 0.255,
+   "pontos": 7
   },
   {
    "resposta": "Chapecoense",
@@ -251,8 +272,9 @@
    "icf": 12.222,
    "ajustado": true,
    "percentil": 0.742,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.28,
+   "pontos": 8
   },
   {
    "resposta": "América Mineiro",
@@ -263,8 +285,9 @@
    "icf": 10.027,
    "ajustado": true,
    "percentil": 0.29,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.296,
+   "pontos": 9
   },
   {
    "resposta": "Ponte Preta",
@@ -273,8 +296,9 @@
    "icf": 9.901,
    "ajustado": true,
    "percentil": 0.226,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.296,
+   "pontos": 9
   },
   {
    "resposta": "Guarani",
@@ -283,8 +307,9 @@
    "icf": 11.599,
    "ajustado": true,
    "percentil": 0.581,
-   "peso": 0.48,
-   "pontos": 23
+   "fama": 0.48,
+   "peso": 0.311,
+   "pontos": 10
   },
   {
    "resposta": "Santa Cruz",
@@ -293,8 +318,9 @@
    "icf": 8.822,
    "ajustado": true,
    "percentil": 0.081,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.322,
+   "pontos": 10
   },
   {
    "resposta": "Cuiabá",
@@ -303,8 +329,9 @@
    "icf": 11.245,
    "ajustado": true,
    "percentil": 0.532,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.352,
+   "pontos": 12
   },
   {
    "resposta": "Juventude",
@@ -313,8 +340,9 @@
    "icf": 10.001,
    "ajustado": true,
    "percentil": 0.274,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.352,
+   "pontos": 12
   },
   {
    "resposta": "Náutico",
@@ -323,8 +351,9 @@
    "icf": 11.706,
    "ajustado": true,
    "percentil": 0.613,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.352,
+   "pontos": 12
   },
   {
    "resposta": "Paysandu",
@@ -333,8 +362,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.952,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.352,
+   "pontos": 12
   },
   {
    "resposta": "Portuguesa",
@@ -343,8 +373,9 @@
    "icf": 9.387,
    "ajustado": true,
    "percentil": 0.177,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.352,
+   "pontos": 12
   },
   {
    "resposta": "Atlético Goianiense",
@@ -355,8 +386,9 @@
    "icf": 12.47,
    "ajustado": true,
    "percentil": 0.774,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.399,
+   "pontos": 16
   },
   {
    "resposta": "Avaí",
@@ -365,8 +397,9 @@
    "icf": 11.888,
    "ajustado": true,
    "percentil": 0.661,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.399,
+   "pontos": 16
   },
   {
    "resposta": "Criciúma",
@@ -375,8 +408,9 @@
    "icf": 11.91,
    "ajustado": true,
    "percentil": 0.694,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.399,
+   "pontos": 16
   },
   {
    "resposta": "Remo",
@@ -385,8 +419,9 @@
    "icf": 12.231,
    "ajustado": true,
    "percentil": 0.758,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.399,
+   "pontos": 16
   },
   {
    "resposta": "Figueirense",
@@ -395,8 +430,9 @@
    "icf": 12.021,
    "ajustado": true,
    "percentil": 0.726,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.425,
+   "pontos": 18
   },
   {
    "resposta": "Paraná Clube",
@@ -405,8 +441,9 @@
    "icf": 8.879,
    "ajustado": true,
    "percentil": 0.097,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.435,
+   "pontos": 19
   },
   {
    "resposta": "ABC",
@@ -415,8 +452,9 @@
    "icf": 10.877,
    "ajustado": true,
    "percentil": 0.452,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.461,
+   "pontos": 21
   },
   {
    "resposta": "CRB",
@@ -425,8 +463,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.952,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.461,
+   "pontos": 21
   },
   {
    "resposta": "CSA",
@@ -435,8 +474,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.952,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.461,
+   "pontos": 21
   },
   {
    "resposta": "Bangu",
@@ -445,8 +485,9 @@
    "icf": 12.574,
    "ajustado": true,
    "percentil": 0.79,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.511,
+   "pontos": 26
   },
   {
    "resposta": "Mirassol",
@@ -455,8 +496,9 @@
    "icf": 13.384,
    "ajustado": true,
    "percentil": 0.806,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.511,
+   "pontos": 26
   },
   {
    "resposta": "Vila Nova",
@@ -465,8 +507,9 @@
    "icf": 8.204,
    "ajustado": true,
    "percentil": 0.016,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.511,
+   "pontos": 26
   },
   {
    "resposta": "América de Natal",
@@ -475,8 +518,9 @@
    "icf": 9.024,
    "ajustado": true,
    "percentil": 0.129,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.578,
+   "pontos": 33
   },
   {
    "resposta": "Ituano",
@@ -485,8 +529,9 @@
    "icf": 13.765,
    "ajustado": true,
    "percentil": 0.839,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.578,
+   "pontos": 33
   },
   {
    "resposta": "Joinville",
@@ -495,8 +540,9 @@
    "icf": 11.061,
    "ajustado": true,
    "percentil": 0.484,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.578,
+   "pontos": 33
   },
   {
    "resposta": "Londrina",
@@ -505,8 +551,9 @@
    "icf": 11.026,
    "ajustado": true,
    "percentil": 0.468,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.578,
+   "pontos": 33
   },
   {
    "resposta": "Sampaio Corrêa",
@@ -515,8 +562,9 @@
    "icf": 11.144,
    "ajustado": true,
    "percentil": 0.516,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.578,
+   "pontos": 33
   },
   {
    "resposta": "Botafogo-SP",
@@ -525,8 +573,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.952,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.654,
+   "pontos": 43
   },
   {
    "resposta": "Ferroviária",
@@ -535,8 +584,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.952,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.654,
+   "pontos": 43
   },
   {
    "resposta": "Madureira",
@@ -545,8 +595,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.952,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.654,
+   "pontos": 43
   },
   {
    "resposta": "Volta Redonda",
@@ -555,8 +606,9 @@
    "icf": 9.668,
    "ajustado": true,
    "percentil": 0.194,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.654,
+   "pontos": 43
   },
   {
    "resposta": "Novorizontino",
@@ -565,8 +617,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.952,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.704,
+   "pontos": 50
   },
   {
    "resposta": "Operário",
@@ -575,8 +628,9 @@
    "icf": 11.934,
    "ajustado": true,
    "percentil": 0.71,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.704,
+   "pontos": 50
   },
   {
    "resposta": "América do Rio",
@@ -587,8 +641,9 @@
    "icf": 8.253,
    "ajustado": true,
    "percentil": 0.032,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.741,
+   "pontos": 55
   },
   {
    "resposta": "Brasil de Pelotas",
@@ -597,8 +652,9 @@
    "icf": 9.298,
    "ajustado": true,
    "percentil": 0.161,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.78,
+   "pontos": 61
   },
   {
    "resposta": "XV de Piracicaba",
@@ -607,8 +663,9 @@
    "icf": 11.533,
    "ajustado": true,
    "percentil": 0.565,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.78,
+   "pontos": 61
   },
   {
    "resposta": "Botafogo-PB",
@@ -617,8 +674,9 @@
    "icf": 10.648,
    "ajustado": true,
    "percentil": 0.435,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.859,
+   "pontos": 74
   },
   {
    "resposta": "Campinense",
@@ -627,8 +685,9 @@
    "icf": 13.691,
    "ajustado": true,
    "percentil": 0.823,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.859,
+   "pontos": 74
   },
   {
    "resposta": "Tombense",
@@ -637,8 +696,9 @@
    "icf": 15.238,
    "ajustado": true,
    "percentil": 0.887,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.859,
+   "pontos": 74
   },
   {
    "resposta": "Treze",
@@ -647,8 +707,9 @@
    "icf": 11.641,
    "ajustado": true,
    "percentil": 0.597,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.859,
+   "pontos": 74
   },
   {
    "resposta": "Íbis",
@@ -657,8 +718,9 @@
    "icf": 15.054,
    "ajustado": true,
    "percentil": 0.871,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.924,
+   "pontos": 85
   },
   {
    "resposta": "Juazeirense",
@@ -667,8 +729,9 @@
    "icf": 14.862,
    "ajustado": true,
    "percentil": 0.855,
-   "peso": 0.88,
-   "pontos": 77
+   "fama": 0.88,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Íbis"

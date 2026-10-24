@@ -4,26 +4,6 @@
  "pergunta": "Cite uma das 88 constelações oficiais",
  "respostas": [
   {
-   "resposta": "Aquário",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.469,
-   "ajustado": true,
-   "percentil": 0.264,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Capricórnio",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.959,
-   "ajustado": true,
-   "percentil": 0.655,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
    "resposta": "Cruzeiro do Sul",
    "apelidos": [
     "Cruzeiro"
@@ -32,29 +12,8 @@
    "icf": 9.139,
    "ajustado": true,
    "percentil": 0.023,
-   "peso": 0.03,
-   "pontos": 1
-  },
-  {
-   "resposta": "Câncer",
-   "apelidos": [
-    "Caranguejo"
-   ],
-   "sem_dado": false,
-   "icf": 9.876,
-   "ajustado": true,
-   "percentil": 0.069,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Cão Maior",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 8.855,
-   "ajustado": true,
-   "percentil": 0.0,
-   "peso": 0.12,
+   "fama": 0.03,
+   "peso": 0.106,
    "pontos": 1
   },
   {
@@ -64,111 +23,8 @@
    "icf": 12.392,
    "ajustado": true,
    "percentil": 0.494,
-   "peso": 0.03,
-   "pontos": 1
-  },
-  {
-   "resposta": "Gêmeos",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.768,
-   "ajustado": true,
-   "percentil": 0.333,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Leão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.437,
-   "ajustado": true,
-   "percentil": 0.115,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Libra",
-   "apelidos": [
-    "Balança"
-   ],
-   "sem_dado": false,
-   "icf": 12.363,
-   "ajustado": true,
-   "percentil": 0.483,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Peixes",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.383,
-   "ajustado": true,
-   "percentil": 0.092,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Sagitário",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.018,
-   "ajustado": true,
-   "percentil": 0.678,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Touro",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.927,
-   "ajustado": true,
-   "percentil": 0.368,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Ursa Maior",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.668,
-   "ajustado": true,
-   "percentil": 0.149,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Ursa Menor",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.377,
-   "ajustado": true,
-   "percentil": 0.241,
-   "peso": 0.12,
-   "pontos": 1
-  },
-  {
-   "resposta": "Virgem",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.684,
-   "ajustado": true,
-   "percentil": 0.161,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Áries",
-   "apelidos": [
-    "Carneiro"
-   ],
-   "sem_dado": false,
-   "icf": 13.021,
-   "ajustado": true,
-   "percentil": 0.69,
-   "peso": 0.06,
+   "fama": 0.03,
+   "peso": 0.106,
    "pontos": 1
   },
   {
@@ -180,8 +36,147 @@
    "icf": 14.42,
    "ajustado": true,
    "percentil": 0.851,
-   "peso": 0.03,
+   "fama": 0.03,
+   "peso": 0.106,
    "pontos": 1
+  },
+  {
+   "resposta": "Aquário",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.469,
+   "ajustado": true,
+   "percentil": 0.264,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Capricórnio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.959,
+   "ajustado": true,
+   "percentil": 0.655,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Câncer",
+   "apelidos": [
+    "Caranguejo"
+   ],
+   "sem_dado": false,
+   "icf": 9.876,
+   "ajustado": true,
+   "percentil": 0.069,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Gêmeos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.768,
+   "ajustado": true,
+   "percentil": 0.333,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Leão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.437,
+   "ajustado": true,
+   "percentil": 0.115,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Libra",
+   "apelidos": [
+    "Balança"
+   ],
+   "sem_dado": false,
+   "icf": 12.363,
+   "ajustado": true,
+   "percentil": 0.483,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Peixes",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.383,
+   "ajustado": true,
+   "percentil": 0.092,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Sagitário",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.018,
+   "ajustado": true,
+   "percentil": 0.678,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Touro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.927,
+   "ajustado": true,
+   "percentil": 0.368,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Ursa Maior",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.668,
+   "ajustado": true,
+   "percentil": 0.149,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Virgem",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.684,
+   "ajustado": true,
+   "percentil": 0.161,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Áries",
+   "apelidos": [
+    "Carneiro"
+   ],
+   "sem_dado": false,
+   "icf": 13.021,
+   "ajustado": true,
+   "percentil": 0.69,
+   "fama": 0.06,
+   "peso": 0.148,
+   "pontos": 2
   },
   {
    "resposta": "Andrômeda",
@@ -190,7 +185,8 @@
    "icf": 14.342,
    "ajustado": true,
    "percentil": 0.839,
-   "peso": 0.2,
+   "fama": 0.2,
+   "peso": 0.202,
    "pontos": 4
   },
   {
@@ -200,7 +196,19 @@
    "icf": 16.18,
    "ajustado": true,
    "percentil": 0.931,
-   "peso": 0.2,
+   "fama": 0.2,
+   "peso": 0.202,
+   "pontos": 4
+  },
+  {
+   "resposta": "Cão Maior",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.855,
+   "ajustado": true,
+   "percentil": 0.0,
+   "fama": 0.12,
+   "peso": 0.188,
    "pontos": 4
   },
   {
@@ -210,7 +218,19 @@
    "icf": 14.724,
    "ajustado": true,
    "percentil": 0.885,
-   "peso": 0.2,
+   "fama": 0.2,
+   "peso": 0.202,
+   "pontos": 4
+  },
+  {
+   "resposta": "Ursa Menor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.377,
+   "ajustado": true,
+   "percentil": 0.241,
+   "fama": 0.12,
+   "peso": 0.188,
    "pontos": 4
   },
   {
@@ -220,8 +240,9 @@
    "icf": 13.287,
    "ajustado": true,
    "percentil": 0.724,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.222,
+   "pontos": 5
   },
   {
    "resposta": "Dragão",
@@ -230,8 +251,9 @@
    "icf": 11.023,
    "ajustado": true,
    "percentil": 0.207,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.222,
+   "pontos": 5
   },
   {
    "resposta": "Fênix",
@@ -240,8 +262,9 @@
    "icf": 12.581,
    "ajustado": true,
    "percentil": 0.529,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.222,
+   "pontos": 5
   },
   {
    "resposta": "Hércules",
@@ -250,8 +273,9 @@
    "icf": 12.954,
    "ajustado": true,
    "percentil": 0.644,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.222,
+   "pontos": 5
   },
   {
    "resposta": "Baleia",
@@ -262,8 +286,9 @@
    "icf": 12.02,
    "ajustado": true,
    "percentil": 0.402,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Cisne",
@@ -272,8 +297,9 @@
    "icf": 12.782,
    "ajustado": true,
    "percentil": 0.598,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Hidra",
@@ -282,8 +308,9 @@
    "icf": 14.245,
    "ajustado": true,
    "percentil": 0.828,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Lira",
@@ -292,8 +319,9 @@
    "icf": 12.11,
    "ajustado": true,
    "percentil": 0.414,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Lobo",
@@ -304,8 +332,9 @@
    "icf": 10.848,
    "ajustado": true,
    "percentil": 0.184,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Perseu",
@@ -314,8 +343,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 1.0,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Unicórnio",
@@ -326,8 +356,9 @@
    "icf": 13.632,
    "ajustado": true,
    "percentil": 0.77,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Águia",
@@ -338,8 +369,9 @@
    "icf": 11.799,
    "ajustado": true,
    "percentil": 0.345,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Camaleão",
@@ -348,8 +380,9 @@
    "icf": 13.52,
    "ajustado": true,
    "percentil": 0.759,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Coroa Austral",
@@ -358,8 +391,9 @@
    "icf": 12.13,
    "ajustado": true,
    "percentil": 0.437,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Coroa Boreal",
@@ -368,8 +402,9 @@
    "icf": 12.218,
    "ajustado": true,
    "percentil": 0.448,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Cão Menor",
@@ -378,8 +413,9 @@
    "icf": 9.564,
    "ajustado": true,
    "percentil": 0.034,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Flecha",
@@ -390,8 +426,9 @@
    "icf": 12.127,
    "ajustado": true,
    "percentil": 0.425,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Golfinho",
@@ -402,8 +439,9 @@
    "icf": 13.223,
    "ajustado": true,
    "percentil": 0.713,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Pavão",
@@ -414,8 +452,9 @@
    "icf": 12.871,
    "ajustado": true,
    "percentil": 0.621,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Serpente",
@@ -424,8 +463,9 @@
    "icf": 12.0,
    "ajustado": true,
    "percentil": 0.379,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Triângulo",
@@ -434,8 +474,9 @@
    "icf": 11.504,
    "ajustado": true,
    "percentil": 0.287,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Tucano",
@@ -444,8 +485,9 @@
    "icf": 11.714,
    "ajustado": true,
    "percentil": 0.322,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Altar",
@@ -456,8 +498,9 @@
    "icf": 11.274,
    "ajustado": true,
    "percentil": 0.23,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Boieiro",
@@ -468,8 +511,9 @@
    "icf": 16.902,
    "ajustado": true,
    "percentil": 0.943,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Bússola",
@@ -480,8 +524,9 @@
    "icf": 12.843,
    "ajustado": true,
    "percentil": 0.609,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Cocheiro",
@@ -492,8 +537,9 @@
    "icf": 14.918,
    "ajustado": true,
    "percentil": 0.897,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Compasso",
@@ -504,8 +550,9 @@
    "icf": 12.661,
    "ajustado": true,
    "percentil": 0.563,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Corvo",
@@ -514,8 +561,9 @@
    "icf": 12.641,
    "ajustado": true,
    "percentil": 0.552,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Girafa",
@@ -526,8 +574,9 @@
    "icf": 13.074,
    "ajustado": true,
    "percentil": 0.701,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Lagarto",
@@ -538,8 +587,9 @@
    "icf": 12.726,
    "ajustado": true,
    "percentil": 0.586,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Lebre",
@@ -550,8 +600,9 @@
    "icf": 13.369,
    "ajustado": true,
    "percentil": 0.747,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Leão Menor",
@@ -560,8 +611,9 @@
    "icf": 9.653,
    "ajustado": true,
    "percentil": 0.057,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Lince",
@@ -570,8 +622,9 @@
    "icf": 13.678,
    "ajustado": true,
    "percentil": 0.782,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Microscópio",
@@ -580,8 +633,9 @@
    "icf": 13.012,
    "ajustado": true,
    "percentil": 0.667,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Ofiúco",
@@ -592,8 +646,9 @@
    "icf": 17.426,
    "ajustado": true,
    "percentil": 0.954,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Pomba",
@@ -604,8 +659,9 @@
    "icf": 12.225,
    "ajustado": true,
    "percentil": 0.46,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Popa",
@@ -616,8 +672,9 @@
    "icf": 12.722,
    "ajustado": true,
    "percentil": 0.575,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Quilha",
@@ -628,8 +685,9 @@
    "icf": 14.669,
    "ajustado": true,
    "percentil": 0.862,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Raposa",
@@ -640,8 +698,9 @@
    "icf": 12.018,
    "ajustado": true,
    "percentil": 0.391,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Relógio",
@@ -652,8 +711,9 @@
    "icf": 10.15,
    "ajustado": true,
    "percentil": 0.08,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Taça",
@@ -664,8 +724,9 @@
    "icf": 10.561,
    "ajustado": true,
    "percentil": 0.126,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Telescópio",
@@ -674,8 +735,9 @@
    "icf": 12.554,
    "ajustado": true,
    "percentil": 0.506,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Vela",
@@ -686,8 +748,9 @@
    "icf": 10.961,
    "ajustado": true,
    "percentil": 0.195,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Ave-do-Paraíso",
@@ -698,8 +761,9 @@
    "icf": 10.801,
    "ajustado": true,
    "percentil": 0.172,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Cabeleira de Berenice",
@@ -708,8 +772,9 @@
    "icf": 13.367,
    "ajustado": true,
    "percentil": 0.736,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Cavalo Menor",
@@ -720,8 +785,9 @@
    "icf": 9.632,
    "ajustado": true,
    "percentil": 0.046,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Cefeu",
@@ -730,8 +796,9 @@
    "icf": 17.863,
    "ajustado": true,
    "percentil": 0.977,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Cães de Caça",
@@ -740,8 +807,9 @@
    "icf": 10.436,
    "ajustado": true,
    "percentil": 0.103,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Dourado",
@@ -752,8 +820,9 @@
    "icf": 10.625,
    "ajustado": true,
    "percentil": 0.138,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Erídano",
@@ -764,8 +833,9 @@
    "icf": 18.387,
    "ajustado": true,
    "percentil": 0.989,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Escudo",
@@ -776,8 +846,9 @@
    "icf": 11.659,
    "ajustado": true,
    "percentil": 0.31,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Grou",
@@ -788,8 +859,9 @@
    "icf": 15.218,
    "ajustado": true,
    "percentil": 0.908,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Hidra Macho",
@@ -800,8 +872,9 @@
    "icf": 12.567,
    "ajustado": true,
    "percentil": 0.517,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Mosca",
@@ -812,8 +885,9 @@
    "icf": 12.348,
    "ajustado": true,
    "percentil": 0.471,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Peixe Austral",
@@ -822,8 +896,9 @@
    "icf": 11.897,
    "ajustado": true,
    "percentil": 0.356,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Peixe Voador",
@@ -834,8 +909,9 @@
    "icf": 11.252,
    "ajustado": true,
    "percentil": 0.218,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Triângulo Austral",
@@ -844,8 +920,9 @@
    "icf": 12.605,
    "ajustado": true,
    "percentil": 0.54,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Índio",
@@ -856,8 +933,9 @@
    "icf": 11.641,
    "ajustado": true,
    "percentil": 0.299,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.66,
+   "pontos": 44
   },
   {
    "resposta": "Buril",
@@ -868,8 +946,9 @@
    "icf": 15.927,
    "ajustado": true,
    "percentil": 0.92,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Escultor",
@@ -878,8 +957,9 @@
    "icf": 12.885,
    "ajustado": true,
    "percentil": 0.632,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Esquadro",
@@ -891,8 +971,9 @@
    "icf": 14.244,
    "ajustado": true,
    "percentil": 0.816,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Fornalha",
@@ -903,8 +984,9 @@
    "icf": 13.689,
    "ajustado": true,
    "percentil": 0.793,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Máquina Pneumática",
@@ -915,8 +997,9 @@
    "icf": 11.424,
    "ajustado": true,
    "percentil": 0.253,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Oitante",
@@ -927,8 +1010,9 @@
    "icf": 17.703,
    "ajustado": true,
    "percentil": 0.966,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Pintor",
@@ -939,8 +1023,9 @@
    "icf": 11.495,
    "ajustado": true,
    "percentil": 0.276,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Retículo",
@@ -949,8 +1034,9 @@
    "icf": 14.701,
    "ajustado": true,
    "percentil": 0.874,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Sextante",
@@ -959,8 +1045,9 @@
    "icf": 14.049,
    "ajustado": true,
    "percentil": 0.805,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Mesa",
@@ -971,8 +1058,9 @@
    "icf": 8.981,
    "ajustado": true,
    "percentil": 0.011,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Cabeleira de Berenice"

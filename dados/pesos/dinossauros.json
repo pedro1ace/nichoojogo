@@ -4,18 +4,6 @@
  "pergunta": "Cite um dinossauro (ou réptil pré-histórico famoso)",
  "respostas": [
   {
-   "resposta": "Pterodáctilo",
-   "apelidos": [
-    "pterossauro"
-   ],
-   "sem_dado": false,
-   "icf": 16.842,
-   "ajustado": true,
-   "percentil": 0.067,
-   "peso": 0.12,
-   "pontos": 1
-  },
-  {
    "resposta": "Tiranossauro rex",
    "apelidos": [
     "tiranossauro",
@@ -26,7 +14,8 @@
    "icf": 14.99,
    "ajustado": true,
    "percentil": 0.022,
-   "peso": 0.01,
+   "fama": 0.01,
+   "peso": 0.1,
    "pontos": 1
   },
   {
@@ -36,7 +25,8 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.06,
+   "fama": 0.06,
+   "peso": 0.122,
    "pontos": 1
   },
   {
@@ -48,20 +38,9 @@
    "icf": 14.172,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.04,
+   "fama": 0.04,
+   "peso": 0.111,
    "pontos": 1
-  },
-  {
-   "resposta": "Estegossauro",
-   "apelidos": [
-    "stegosaurus"
-   ],
-   "sem_dado": false,
-   "icf": 17.241,
-   "ajustado": true,
-   "percentil": 0.133,
-   "peso": 0.14,
-   "pontos": 2
   },
   {
    "resposta": "Braquiossauro",
@@ -72,8 +51,35 @@
    "icf": 17.054,
    "ajustado": true,
    "percentil": 0.089,
-   "peso": 0.18,
-   "pontos": 3
+   "fama": 0.18,
+   "peso": 0.155,
+   "pontos": 2
+  },
+  {
+   "resposta": "Estegossauro",
+   "apelidos": [
+    "stegosaurus"
+   ],
+   "sem_dado": false,
+   "icf": 17.241,
+   "ajustado": true,
+   "percentil": 0.133,
+   "fama": 0.14,
+   "peso": 0.144,
+   "pontos": 2
+  },
+  {
+   "resposta": "Pterodáctilo",
+   "apelidos": [
+    "pterossauro"
+   ],
+   "sem_dado": false,
+   "icf": 16.842,
+   "ajustado": true,
+   "percentil": 0.067,
+   "fama": 0.12,
+   "peso": 0.133,
+   "pontos": 2
   },
   {
    "resposta": "Brontossauro",
@@ -84,8 +90,9 @@
    "icf": 17.058,
    "ajustado": true,
    "percentil": 0.111,
-   "peso": 0.22,
-   "pontos": 5
+   "fama": 0.22,
+   "peso": 0.166,
+   "pontos": 3
   },
   {
    "resposta": "Diplodoco",
@@ -96,32 +103,9 @@
    "icf": 18.591,
    "ajustado": true,
    "percentil": 0.289,
-   "peso": 0.24,
-   "pontos": 6
-  },
-  {
-   "resposta": "Espinossauro",
-   "apelidos": [
-    "spinosaurus"
-   ],
-   "sem_dado": false,
-   "icf": 16.704,
-   "ajustado": true,
-   "percentil": 0.044,
-   "peso": 0.26,
-   "pontos": 7
-  },
-  {
-   "resposta": "Anquilossauro",
-   "apelidos": [
-    "ankylosaurus"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.689,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.24,
+   "peso": 0.177,
+   "pontos": 3
   },
   {
    "resposta": "Alossauro",
@@ -132,20 +116,35 @@
    "icf": 17.649,
    "ajustado": true,
    "percentil": 0.156,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.21,
+   "pontos": 4
   },
   {
-   "resposta": "Mosassauro",
+   "resposta": "Anquilossauro",
    "apelidos": [
-    "mosasaurus"
+    "ankylosaurus"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.689,
+   "fama": 0.32,
+   "peso": 0.199,
+   "pontos": 4
+  },
+  {
+   "resposta": "Espinossauro",
+   "apelidos": [
+    "spinosaurus"
    ],
    "sem_dado": false,
-   "icf": 18.511,
+   "icf": 16.704,
    "ajustado": true,
-   "percentil": 0.244,
-   "peso": 0.44,
-   "pontos": 19
+   "percentil": 0.044,
+   "fama": 0.26,
+   "peso": 0.188,
+   "pontos": 4
   },
   {
    "resposta": "Iguanodonte",
@@ -156,8 +155,22 @@
    "icf": 18.013,
    "ajustado": true,
    "percentil": 0.2,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.234,
+   "pontos": 5
+  },
+  {
+   "resposta": "Mosassauro",
+   "apelidos": [
+    "mosasaurus"
+   ],
+   "sem_dado": false,
+   "icf": 18.511,
+   "ajustado": true,
+   "percentil": 0.244,
+   "fama": 0.44,
+   "peso": 0.221,
+   "pontos": 5
   },
   {
    "resposta": "Carnotauro",
@@ -168,8 +181,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.48,
-   "pontos": 23
+   "fama": 0.48,
+   "peso": 0.256,
+   "pontos": 7
   },
   {
    "resposta": "Dilofossauro",
@@ -180,8 +194,9 @@
    "icf": 18.553,
    "ajustado": true,
    "percentil": 0.267,
-   "peso": 0.48,
-   "pontos": 23
+   "fama": 0.48,
+   "peso": 0.256,
+   "pontos": 7
   },
   {
    "resposta": "Parassaurolofo",
@@ -192,8 +207,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.284,
+   "pontos": 8
   },
   {
    "resposta": "Plessiossauro",
@@ -204,8 +220,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.284,
+   "pontos": 8
   },
   {
    "resposta": "Apatossauro",
@@ -216,8 +233,9 @@
    "icf": 17.854,
    "ajustado": true,
    "percentil": 0.178,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.319,
+   "pontos": 10
   },
   {
    "resposta": "Giganotossauro",
@@ -228,8 +246,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.319,
+   "pontos": 10
   },
   {
    "resposta": "Paquicefalossauro",
@@ -240,8 +259,9 @@
    "icf": 19.184,
    "ajustado": true,
    "percentil": 0.333,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.319,
+   "pontos": 10
   },
   {
    "resposta": "Argentinossauro",
@@ -252,8 +272,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.348,
+   "pontos": 12
   },
   {
    "resposta": "Galimimo",
@@ -264,8 +285,9 @@
    "icf": 21.158,
    "ajustado": true,
    "percentil": 1.0,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.362,
+   "pontos": 13
   },
   {
    "resposta": "Arqueoptérix",
@@ -276,8 +298,9 @@
    "icf": 19.325,
    "ajustado": true,
    "percentil": 0.356,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.376,
+   "pontos": 14
   },
   {
    "resposta": "Compsognato",
@@ -288,8 +311,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.405,
+   "pontos": 16
   },
   {
    "resposta": "Ictiossauro",
@@ -300,8 +324,9 @@
    "icf": 18.382,
    "ajustado": true,
    "percentil": 0.222,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.405,
+   "pontos": 16
   },
   {
    "resposta": "Oviraptor",
@@ -310,8 +335,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.405,
+   "pontos": 16
   },
   {
    "resposta": "Dimetrodonte",
@@ -322,8 +348,9 @@
    "icf": 19.605,
    "ajustado": true,
    "percentil": 0.378,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.44,
+   "pontos": 19
   },
   {
    "resposta": "Terizinossauro",
@@ -334,8 +361,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.44,
+   "pontos": 19
   },
   {
    "resposta": "Protoceratops",
@@ -344,8 +372,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.494,
+   "pontos": 24
   },
   {
    "resposta": "Troodonte",
@@ -356,8 +385,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.494,
+   "pontos": 24
   },
   {
    "resposta": "Utahraptor",
@@ -366,8 +396,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.494,
+   "pontos": 24
   },
   {
    "resposta": "Barionix",
@@ -378,8 +409,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.586,
+   "pontos": 34
   },
   {
    "resposta": "Deinonico",
@@ -390,8 +422,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.586,
+   "pontos": 34
   },
   {
    "resposta": "Maiassaura",
@@ -402,8 +435,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.586,
+   "pontos": 34
   },
   {
    "resposta": "Microraptor",
@@ -412,8 +446,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.586,
+   "pontos": 34
   },
   {
    "resposta": "Quetzalcoatlus",
@@ -422,8 +457,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.586,
+   "pontos": 34
   },
   {
    "resposta": "Carcharodontossauro",
@@ -434,8 +470,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.655,
+   "pontos": 43
   },
   {
    "resposta": "Suchomimus",
@@ -444,8 +481,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.678,
+   "pontos": 46
   },
   {
    "resposta": "Estauricossauro",
@@ -456,8 +494,9 @@
    "icf": 19.161,
    "ajustado": true,
    "percentil": 0.311,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.716,
+   "pontos": 51
   },
   {
    "resposta": "Irritator",
@@ -466,8 +505,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.716,
+   "pontos": 51
   },
   {
    "resposta": "Oxalaia",
@@ -476,8 +516,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.9,
-   "pontos": 81
+   "fama": 0.9,
+   "peso": 0.77,
+   "pontos": 59
   },
   {
    "resposta": "Maxakalisaurus",
@@ -486,8 +527,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.92,
-   "pontos": 85
+   "fama": 0.92,
+   "peso": 0.86,
+   "pontos": 74
   },
   {
    "resposta": "Santanaraptor",
@@ -496,8 +538,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.92,
-   "pontos": 85
+   "fama": 0.92,
+   "peso": 0.86,
+   "pontos": 74
   },
   {
    "resposta": "Saturnalia",
@@ -506,8 +549,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.92,
-   "pontos": 85
+   "fama": 0.92,
+   "peso": 0.86,
+   "pontos": 74
   },
   {
    "resposta": "Unaysaurus",
@@ -516,8 +560,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.92,
-   "pontos": 85
+   "fama": 0.92,
+   "peso": 0.86,
+   "pontos": 74
   },
   {
    "resposta": "Pycnonemosaurus",
@@ -526,8 +571,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.689,
-   "peso": 0.94,
-   "pontos": 88
+   "fama": 0.94,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Pycnonemosaurus"
