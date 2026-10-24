@@ -4,18 +4,6 @@
  "pergunta": "Cite o nome de uma estrela (de verdade, do céu)",
  "respostas": [
   {
-   "resposta": "Alfa Centauri",
-   "apelidos": [
-    "Rigil Kentaurus"
-   ],
-   "sem_dado": false,
-   "icf": 11.553,
-   "ajustado": true,
-   "percentil": 0.118,
-   "peso": 0.1,
-   "pontos": 1
-  },
-  {
    "resposta": "Estrela Polar",
    "apelidos": [
     "Polaris"
@@ -24,7 +12,8 @@
    "icf": 11.067,
    "ajustado": true,
    "percentil": 0.078,
-   "peso": 0.05,
+   "fama": 0.05,
+   "peso": 0.11,
    "pontos": 1
   },
   {
@@ -34,7 +23,8 @@
    "icf": 8.778,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.01,
+   "fama": 0.01,
+   "peso": 0.1,
    "pontos": 1
   },
   {
@@ -46,17 +36,21 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.08,
+   "fama": 0.08,
+   "peso": 0.119,
    "pontos": 1
   },
   {
-   "resposta": "Vega",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "resposta": "Alfa Centauri",
+   "apelidos": [
+    "Rigil Kentaurus"
+   ],
+   "sem_dado": false,
+   "icf": 11.553,
    "ajustado": true,
-   "percentil": 0.696,
-   "peso": 0.15,
+   "percentil": 0.118,
+   "fama": 0.1,
+   "peso": 0.129,
    "pontos": 2
   },
   {
@@ -68,8 +62,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.2,
-   "pontos": 4
+   "fama": 0.2,
+   "peso": 0.148,
+   "pontos": 2
   },
   {
    "resposta": "Próxima Centauri",
@@ -80,8 +75,20 @@
    "icf": 8.92,
    "ajustado": true,
    "percentil": 0.02,
-   "peso": 0.25,
-   "pontos": 6
+   "fama": 0.25,
+   "peso": 0.158,
+   "pontos": 2
+  },
+  {
+   "resposta": "Vega",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.696,
+   "fama": 0.15,
+   "peso": 0.139,
+   "pontos": 2
   },
   {
    "resposta": "Capela",
@@ -92,8 +99,9 @@
    "icf": 11.057,
    "ajustado": true,
    "percentil": 0.059,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.173,
+   "pontos": 3
   },
   {
    "resposta": "Rigel",
@@ -102,8 +110,9 @@
    "icf": 18.343,
    "ajustado": true,
    "percentil": 0.353,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.173,
+   "pontos": 3
   },
   {
    "resposta": "Aldebarã",
@@ -114,18 +123,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.35,
-   "pontos": 12
-  },
-  {
-   "resposta": "Antares",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.951,
-   "ajustado": true,
-   "percentil": 0.235,
-   "peso": 0.35,
-   "pontos": 12
+   "fama": 0.35,
+   "peso": 0.192,
+   "pontos": 4
   },
   {
    "resposta": "Altair",
@@ -134,8 +134,20 @@
    "icf": 13.443,
    "ajustado": true,
    "percentil": 0.176,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.211,
+   "pontos": 4
+  },
+  {
+   "resposta": "Antares",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.951,
+   "ajustado": true,
+   "percentil": 0.235,
+   "fama": 0.35,
+   "peso": 0.192,
+   "pontos": 4
   },
   {
    "resposta": "Arcturus",
@@ -146,8 +158,9 @@
    "icf": 17.43,
    "ajustado": true,
    "percentil": 0.314,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.211,
+   "pontos": 4
   },
   {
    "resposta": "Canopus",
@@ -158,8 +171,9 @@
    "icf": 18.323,
    "ajustado": true,
    "percentil": 0.333,
-   "peso": 0.45,
-   "pontos": 20
+   "fama": 0.45,
+   "peso": 0.233,
+   "pontos": 5
   },
   {
    "resposta": "Deneb",
@@ -168,8 +182,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.45,
-   "pontos": 20
+   "fama": 0.45,
+   "peso": 0.233,
+   "pontos": 5
   },
   {
    "resposta": "Castor",
@@ -178,8 +193,9 @@
    "icf": 13.433,
    "ajustado": true,
    "percentil": 0.157,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.264,
+   "pontos": 7
   },
   {
    "resposta": "Prócion",
@@ -190,8 +206,9 @@
    "icf": 19.184,
    "ajustado": true,
    "percentil": 0.373,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.264,
+   "pontos": 7
   },
   {
    "resposta": "Pólux",
@@ -202,8 +219,9 @@
    "icf": 16.425,
    "ajustado": true,
    "percentil": 0.294,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.264,
+   "pontos": 7
   },
   {
    "resposta": "Mimosa",
@@ -212,8 +230,9 @@
    "icf": 13.664,
    "ajustado": true,
    "percentil": 0.216,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.296,
+   "pontos": 9
   },
   {
    "resposta": "Régulo",
@@ -224,8 +243,9 @@
    "icf": 15.98,
    "ajustado": true,
    "percentil": 0.275,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.296,
+   "pontos": 9
   },
   {
    "resposta": "Algol",
@@ -234,8 +254,9 @@
    "icf": 15.755,
    "ajustado": true,
    "percentil": 0.255,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.327,
+   "pontos": 11
   },
   {
    "resposta": "Espiga",
@@ -246,8 +267,9 @@
    "icf": 13.568,
    "ajustado": true,
    "percentil": 0.196,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.327,
+   "pontos": 11
   },
   {
    "resposta": "Mira",
@@ -256,8 +278,9 @@
    "icf": 11.463,
    "ajustado": true,
    "percentil": 0.098,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.327,
+   "pontos": 11
   },
   {
    "resposta": "Achernar",
@@ -266,8 +289,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Acrux",
@@ -276,8 +300,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Albireo",
@@ -286,8 +311,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Alcor",
@@ -296,8 +322,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Alnilam",
@@ -306,8 +333,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Alnitak",
@@ -316,8 +344,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Bellatrix",
@@ -326,8 +355,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Fomalhaut",
@@ -336,8 +366,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Mintaka",
@@ -346,8 +377,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Mizar",
@@ -356,8 +388,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Adhara",
@@ -366,8 +399,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Denebola",
@@ -376,8 +410,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Dubhe",
@@ -386,8 +421,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Gacrux",
@@ -396,8 +432,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Hadar",
@@ -406,8 +443,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Merak",
@@ -416,8 +454,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Shaula",
@@ -426,8 +465,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Thuban",
@@ -436,8 +476,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Estrela de Barnard",
@@ -446,8 +487,9 @@
    "icf": 9.793,
    "ajustado": true,
    "percentil": 0.039,
-   "peso": 0.75,
-   "pontos": 56
+   "fama": 0.75,
+   "peso": 0.659,
+   "pontos": 43
   },
   {
    "resposta": "Alioth",
@@ -456,8 +498,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Alkaid",
@@ -466,8 +509,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Alphard",
@@ -476,8 +520,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Enif",
@@ -486,8 +531,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Markab",
@@ -496,8 +542,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Menkar",
@@ -506,8 +553,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Mirfak",
@@ -516,8 +564,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Rasalhague",
@@ -526,8 +575,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Sadr",
@@ -536,8 +586,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Eta Carinae",
@@ -546,8 +597,9 @@
    "icf": 12.776,
    "ajustado": true,
    "percentil": 0.137,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Albireo"

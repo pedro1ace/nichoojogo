@@ -10,21 +10,8 @@
    "icf": 11.498,
    "ajustado": true,
    "percentil": 0.672,
-   "peso": 0.03,
-   "pontos": 1
-  },
-  {
-   "resposta": "Comida",
-   "apelidos": [
-    "comida liofilizada",
-    "comida desidratada",
-    "comida espacial"
-   ],
-   "sem_dado": false,
-   "icf": 9.533,
-   "ajustado": true,
-   "percentil": 0.156,
-   "peso": 0.08,
+   "fama": 0.03,
+   "peso": 0.108,
    "pontos": 1
   },
   {
@@ -37,7 +24,8 @@
    "icf": 11.408,
    "ajustado": true,
    "percentil": 0.656,
-   "peso": 0.02,
+   "fama": 0.02,
+   "peso": 0.1,
    "pontos": 1
   },
   {
@@ -51,19 +39,8 @@
    "icf": 11.536,
    "ajustado": true,
    "percentil": 0.688,
-   "peso": 0.05,
-   "pontos": 1
-  },
-  {
-   "resposta": "Água",
-   "apelidos": [
-    "garrafa de água"
-   ],
-   "sem_dado": false,
-   "icf": 7.934,
-   "ajustado": true,
-   "percentil": 0.016,
-   "peso": 0.1,
+   "fama": 0.05,
+   "peso": 0.115,
    "pontos": 1
   },
   {
@@ -73,20 +50,9 @@
    "icf": 10.271,
    "ajustado": true,
    "percentil": 0.344,
-   "peso": 0.25,
-   "pontos": 6
-  },
-  {
-   "resposta": "Luvas",
-   "apelidos": [
-    "luva"
-   ],
-   "sem_dado": false,
-   "icf": 11.556,
-   "ajustado": true,
-   "percentil": 0.703,
-   "peso": 0.25,
-   "pontos": 6
+   "fama": 0.25,
+   "peso": 0.142,
+   "pontos": 2
   },
   {
    "resposta": "Botas",
@@ -97,8 +63,24 @@
    "icf": 11.323,
    "ajustado": true,
    "percentil": 0.625,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.158,
+   "pontos": 2
+  },
+  {
+   "resposta": "Comida",
+   "apelidos": [
+    "comida liofilizada",
+    "comida desidratada",
+    "comida espacial"
+   ],
+   "sem_dado": false,
+   "icf": 9.533,
+   "ajustado": true,
+   "percentil": 0.156,
+   "fama": 0.08,
+   "peso": 0.123,
+   "pontos": 2
   },
   {
    "resposta": "Câmera",
@@ -110,8 +92,35 @@
    "icf": 9.968,
    "ajustado": true,
    "percentil": 0.234,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.158,
+   "pontos": 2
+  },
+  {
+   "resposta": "Luvas",
+   "apelidos": [
+    "luva"
+   ],
+   "sem_dado": false,
+   "icf": 11.556,
+   "ajustado": true,
+   "percentil": 0.703,
+   "fama": 0.25,
+   "peso": 0.142,
+   "pontos": 2
+  },
+  {
+   "resposta": "Água",
+   "apelidos": [
+    "garrafa de água"
+   ],
+   "sem_dado": false,
+   "icf": 7.934,
+   "ajustado": true,
+   "percentil": 0.016,
+   "fama": 0.1,
+   "peso": 0.131,
+   "pontos": 2
   },
   {
    "resposta": "Computador",
@@ -123,8 +132,9 @@
    "icf": 9.22,
    "ajustado": true,
    "percentil": 0.109,
-   "peso": 0.35,
-   "pontos": 12
+   "fama": 0.35,
+   "peso": 0.177,
+   "pontos": 3
   },
   {
    "resposta": "Lanterna",
@@ -133,8 +143,9 @@
    "icf": 11.168,
    "ajustado": true,
    "percentil": 0.609,
-   "peso": 0.35,
-   "pontos": 12
+   "fama": 0.35,
+   "peso": 0.177,
+   "pontos": 3
   },
   {
    "resposta": "Rádio",
@@ -143,8 +154,9 @@
    "icf": 9.233,
    "ajustado": true,
    "percentil": 0.125,
-   "peso": 0.35,
-   "pontos": 12
+   "fama": 0.35,
+   "peso": 0.177,
+   "pontos": 3
   },
   {
    "resposta": "Kit de primeiros socorros",
@@ -155,8 +167,9 @@
    "icf": 9.137,
    "ajustado": true,
    "percentil": 0.094,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.204,
+   "pontos": 4
   },
   {
    "resposta": "Relógio",
@@ -165,8 +178,9 @@
    "icf": 10.15,
    "ajustado": true,
    "percentil": 0.328,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.204,
+   "pontos": 4
   },
   {
    "resposta": "Remédio",
@@ -178,8 +192,9 @@
    "icf": 10.868,
    "ajustado": true,
    "percentil": 0.5,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.204,
+   "pontos": 4
   },
   {
    "resposta": "Telescópio",
@@ -188,8 +203,9 @@
    "icf": 12.554,
    "ajustado": true,
    "percentil": 0.875,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.204,
+   "pontos": 4
   },
   {
    "resposta": "Caneta",
@@ -200,8 +216,9 @@
    "icf": 11.073,
    "ajustado": true,
    "percentil": 0.547,
-   "peso": 0.45,
-   "pontos": 20
+   "fama": 0.45,
+   "peso": 0.239,
+   "pontos": 6
   },
   {
    "resposta": "Escova de dente",
@@ -212,8 +229,9 @@
    "icf": 11.137,
    "ajustado": true,
    "percentil": 0.578,
-   "peso": 0.45,
-   "pontos": 20
+   "fama": 0.45,
+   "peso": 0.239,
+   "pontos": 6
   },
   {
    "resposta": "Ferramentas",
@@ -224,8 +242,9 @@
    "icf": 9.394,
    "ajustado": true,
    "percentil": 0.141,
-   "peso": 0.45,
-   "pontos": 20
+   "fama": 0.45,
+   "peso": 0.239,
+   "pontos": 6
   },
   {
    "resposta": "Saco de dormir",
@@ -234,8 +253,9 @@
    "icf": 10.053,
    "ajustado": true,
    "percentil": 0.281,
-   "peso": 0.45,
-   "pontos": 20
+   "fama": 0.45,
+   "peso": 0.239,
+   "pontos": 6
   },
   {
    "resposta": "Foto da família",
@@ -247,8 +267,9 @@
    "icf": 8.211,
    "ajustado": true,
    "percentil": 0.031,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.284,
+   "pontos": 8
   },
   {
    "resposta": "Livro",
@@ -257,8 +278,9 @@
    "icf": 7.812,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.284,
+   "pontos": 8
   },
   {
    "resposta": "Pasta de dente",
@@ -270,8 +292,9 @@
    "icf": 10.635,
    "ajustado": true,
    "percentil": 0.469,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.284,
+   "pontos": 8
   },
   {
    "resposta": "Tablet",
@@ -280,8 +303,9 @@
    "icf": 10.634,
    "ajustado": true,
    "percentil": 0.453,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.284,
+   "pontos": 8
   },
   {
    "resposta": "Toalha",
@@ -290,8 +314,9 @@
    "icf": 11.082,
    "ajustado": true,
    "percentil": 0.562,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.284,
+   "pontos": 8
   },
   {
    "resposta": "Bateria",
@@ -302,8 +327,9 @@
    "icf": 9.79,
    "ajustado": true,
    "percentil": 0.188,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Binóculos",
@@ -314,8 +340,9 @@
    "icf": 13.958,
    "ajustado": true,
    "percentil": 0.969,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Caderno",
@@ -324,8 +351,9 @@
    "icf": 10.75,
    "ajustado": true,
    "percentil": 0.484,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Café",
@@ -334,8 +362,9 @@
    "icf": 8.987,
    "ajustado": true,
    "percentil": 0.078,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Chocolate",
@@ -344,8 +373,9 @@
    "icf": 9.839,
    "ajustado": true,
    "percentil": 0.203,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Fones de ouvido",
@@ -356,8 +386,9 @@
    "icf": 10.084,
    "ajustado": true,
    "percentil": 0.297,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Fralda",
@@ -368,8 +399,9 @@
    "icf": 12.279,
    "ajustado": true,
    "percentil": 0.844,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Sabonete",
@@ -378,8 +410,9 @@
    "icf": 11.63,
    "ajustado": true,
    "percentil": 0.719,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Travesseiro",
@@ -388,8 +421,9 @@
    "icf": 12.106,
    "ajustado": true,
    "percentil": 0.812,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.353,
+   "pontos": 12
   },
   {
    "resposta": "Cabo de segurança",
@@ -398,8 +432,9 @@
    "icf": 8.707,
    "ajustado": true,
    "percentil": 0.062,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.423,
+   "pontos": 18
   },
   {
    "resposta": "Cueca",
@@ -411,8 +446,9 @@
    "icf": 12.006,
    "ajustado": true,
    "percentil": 0.766,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.423,
+   "pontos": 18
   },
   {
    "resposta": "Lápis",
@@ -421,8 +457,9 @@
    "icf": 10.93,
    "ajustado": true,
    "percentil": 0.516,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.423,
+   "pontos": 18
   },
   {
    "resposta": "Meias",
@@ -433,8 +470,9 @@
    "icf": 11.162,
    "ajustado": true,
    "percentil": 0.594,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.423,
+   "pontos": 18
   },
   {
    "resposta": "Plantas",
@@ -445,8 +483,9 @@
    "icf": 9.913,
    "ajustado": true,
    "percentil": 0.219,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.423,
+   "pontos": 18
   },
   {
    "resposta": "Bíblia",
@@ -455,8 +494,9 @@
    "icf": 9.707,
    "ajustado": true,
    "percentil": 0.172,
-   "peso": 0.65,
-   "pontos": 42
+   "fama": 0.65,
+   "peso": 0.481,
+   "pontos": 23
   },
   {
    "resposta": "Chave inglesa",
@@ -465,8 +505,9 @@
    "icf": 10.046,
    "ajustado": true,
    "percentil": 0.25,
-   "peso": 0.65,
-   "pontos": 42
+   "fama": 0.65,
+   "peso": 0.481,
+   "pontos": 23
   },
   {
    "resposta": "Fita adesiva",
@@ -478,8 +519,9 @@
    "icf": 10.597,
    "ajustado": true,
    "percentil": 0.438,
-   "peso": 0.65,
-   "pontos": 42
+   "fama": 0.65,
+   "peso": 0.481,
+   "pontos": 23
   },
   {
    "resposta": "Tesoura",
@@ -488,8 +530,9 @@
    "icf": 12.041,
    "ajustado": true,
    "percentil": 0.797,
-   "peso": 0.65,
-   "pontos": 42
+   "fama": 0.65,
+   "peso": 0.481,
+   "pontos": 23
   },
   {
    "resposta": "Barbeador",
@@ -501,8 +544,9 @@
    "icf": 14.013,
    "ajustado": true,
    "percentil": 0.984,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.579,
+   "pontos": 34
   },
   {
    "resposta": "Lenço umedecido",
@@ -513,8 +557,9 @@
    "icf": 12.948,
    "ajustado": true,
    "percentil": 0.906,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.579,
+   "pontos": 34
   },
   {
    "resposta": "Microscópio",
@@ -523,8 +568,9 @@
    "icf": 13.012,
    "ajustado": true,
    "percentil": 0.922,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.579,
+   "pontos": 34
   },
   {
    "resposta": "Protetor solar",
@@ -533,8 +579,9 @@
    "icf": 10.452,
    "ajustado": true,
    "percentil": 0.398,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.579,
+   "pontos": 34
   },
   {
    "resposta": "Sementes",
@@ -545,8 +592,9 @@
    "icf": 10.452,
    "ajustado": true,
    "percentil": 0.398,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.579,
+   "pontos": 34
   },
   {
    "resposta": "Termômetro",
@@ -555,8 +603,9 @@
    "icf": 12.693,
    "ajustado": true,
    "percentil": 0.891,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.579,
+   "pontos": 34
   },
   {
    "resposta": "Xampu sem enxágue",
@@ -568,8 +617,9 @@
    "icf": 11.031,
    "ajustado": true,
    "percentil": 0.531,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.579,
+   "pontos": 34
   },
   {
    "resposta": "Óculos escuros",
@@ -580,8 +630,9 @@
    "icf": 10.374,
    "ajustado": true,
    "percentil": 0.359,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.579,
+   "pontos": 34
   },
   {
    "resposta": "Cortador de unha",
@@ -592,8 +643,9 @@
    "icf": 11.827,
    "ajustado": true,
    "percentil": 0.734,
-   "peso": 0.75,
-   "pontos": 56
+   "fama": 0.75,
+   "peso": 0.676,
+   "pontos": 46
   },
   {
    "resposta": "Martelo",
@@ -602,8 +654,9 @@
    "icf": 12.122,
    "ajustado": true,
    "percentil": 0.828,
-   "peso": 0.75,
-   "pontos": 56
+   "fama": 0.75,
+   "peso": 0.676,
+   "pontos": 46
   },
   {
    "resposta": "Saco de lixo",
@@ -614,8 +667,9 @@
    "icf": 10.092,
    "ajustado": true,
    "percentil": 0.312,
-   "peso": 0.75,
-   "pontos": 56
+   "fama": 0.75,
+   "peso": 0.676,
+   "pontos": 46
   },
   {
    "resposta": "Violão",
@@ -624,8 +678,9 @@
    "icf": 10.39,
    "ajustado": true,
    "percentil": 0.375,
-   "peso": 0.75,
-   "pontos": 56
+   "fama": 0.75,
+   "peso": 0.676,
+   "pontos": 46
   },
   {
    "resposta": "Seringa",
@@ -634,8 +689,9 @@
    "icf": 13.165,
    "ajustado": true,
    "percentil": 0.938,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.735,
+   "pontos": 54
   },
   {
    "resposta": "Ursinho de pelúcia",
@@ -647,8 +703,9 @@
    "icf": 12.343,
    "ajustado": true,
    "percentil": 0.859,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.735,
+   "pontos": 54
   },
   {
    "resposta": "Cubo mágico",
@@ -657,8 +714,9 @@
    "icf": 11.327,
    "ajustado": true,
    "percentil": 0.641,
-   "peso": 0.85,
-   "pontos": 72
+   "fama": 0.85,
+   "peso": 0.836,
+   "pontos": 70
   },
   {
    "resposta": "Elástico",
@@ -669,8 +727,9 @@
    "icf": 12.008,
    "ajustado": true,
    "percentil": 0.781,
-   "peso": 0.85,
-   "pontos": 72
+   "fama": 0.85,
+   "peso": 0.836,
+   "pontos": 70
   },
   {
    "resposta": "Pena",
@@ -679,8 +738,9 @@
    "icf": 8.61,
    "ajustado": true,
    "percentil": 0.047,
-   "peso": 0.85,
-   "pontos": 72
+   "fama": 0.85,
+   "peso": 0.836,
+   "pontos": 70
   },
   {
    "resposta": "Pimenta",
@@ -691,8 +751,9 @@
    "icf": 10.483,
    "ajustado": true,
    "percentil": 0.422,
-   "peso": 0.85,
-   "pontos": 72
+   "fama": 0.85,
+   "peso": 0.836,
+   "pontos": 70
   },
   {
    "resposta": "Taco de golfe",
@@ -704,8 +765,9 @@
    "icf": 11.968,
    "ajustado": true,
    "percentil": 0.75,
-   "peso": 0.85,
-   "pontos": 72
+   "fama": 0.85,
+   "peso": 0.836,
+   "pontos": 70
   },
   {
    "resposta": "Velcro",
@@ -714,8 +776,9 @@
    "icf": 13.187,
    "ajustado": true,
    "percentil": 0.953,
-   "peso": 0.85,
-   "pontos": 72
+   "fama": 0.85,
+   "peso": 0.836,
+   "pontos": 70
   },
   {
    "resposta": "Sal líquido",
@@ -724,8 +787,9 @@
    "icf": 10.051,
    "ajustado": true,
    "percentil": 0.266,
-   "peso": 0.9,
-   "pontos": 81
+   "fama": 0.9,
+   "peso": 0.937,
+   "pontos": 88
   },
   {
    "resposta": "Tortilha",
@@ -736,8 +800,9 @@
    "icf": 15.27,
    "ajustado": true,
    "percentil": 1.0,
-   "peso": 0.9,
-   "pontos": 81
+   "fama": 0.9,
+   "peso": 0.937,
+   "pontos": 88
   }
  ],
  "supernova": "Taco de golfe"

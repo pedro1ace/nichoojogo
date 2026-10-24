@@ -13,19 +13,8 @@
    "icf": 12.881,
    "ajustado": true,
    "percentil": 0.382,
-   "peso": 0.04,
-   "pontos": 1
-  },
-  {
-   "resposta": "Bicho-preguiça",
-   "apelidos": [
-    "preguiça"
-   ],
-   "sem_dado": false,
-   "icf": 11.064,
-   "ajustado": true,
-   "percentil": 0.147,
-   "peso": 0.12,
+   "fama": 0.04,
+   "peso": 0.107,
    "pontos": 1
   },
   {
@@ -35,17 +24,8 @@
    "icf": 13.814,
    "ajustado": true,
    "percentil": 0.515,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Jacaré",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.314,
-   "ajustado": true,
-   "percentil": 0.294,
-   "peso": 0.1,
+   "fama": 0.06,
+   "peso": 0.118,
    "pontos": 1
   },
   {
@@ -57,7 +37,8 @@
    "icf": 11.225,
    "ajustado": true,
    "percentil": 0.162,
-   "peso": 0.06,
+   "fama": 0.06,
+   "peso": 0.118,
    "pontos": 1
   },
   {
@@ -70,29 +51,21 @@
    "icf": 12.129,
    "ajustado": true,
    "percentil": 0.279,
-   "peso": 0.01,
+   "fama": 0.01,
+   "peso": 0.1,
    "pontos": 1
   },
   {
-   "resposta": "Tucano",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.714,
-   "ajustado": true,
-   "percentil": 0.206,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
-   "resposta": "Tamanduá",
+   "resposta": "Bicho-preguiça",
    "apelidos": [
-    "tamanduá-bandeira"
+    "preguiça"
    ],
    "sem_dado": false,
-   "icf": 14.249,
+   "icf": 11.064,
    "ajustado": true,
-   "percentil": 0.588,
-   "peso": 0.14,
+   "percentil": 0.147,
+   "fama": 0.12,
+   "peso": 0.144,
    "pontos": 2
   },
   {
@@ -104,7 +77,54 @@
    "icf": 10.265,
    "ajustado": true,
    "percentil": 0.059,
-   "peso": 0.16,
+   "fama": 0.16,
+   "peso": 0.158,
+   "pontos": 2
+  },
+  {
+   "resposta": "Jacaré",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.314,
+   "ajustado": true,
+   "percentil": 0.294,
+   "fama": 0.1,
+   "peso": 0.136,
+   "pontos": 2
+  },
+  {
+   "resposta": "Tamanduá",
+   "apelidos": [
+    "tamanduá-bandeira"
+   ],
+   "sem_dado": false,
+   "icf": 14.249,
+   "ajustado": true,
+   "percentil": 0.588,
+   "fama": 0.14,
+   "peso": 0.151,
+   "pontos": 2
+  },
+  {
+   "resposta": "Tucano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.714,
+   "ajustado": true,
+   "percentil": 0.206,
+   "fama": 0.08,
+   "peso": 0.129,
+   "pontos": 2
+  },
+  {
+   "resposta": "Anta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.006,
+   "ajustado": true,
+   "percentil": 0.412,
+   "fama": 0.24,
+   "peso": 0.184,
    "pontos": 3
   },
   {
@@ -114,7 +134,8 @@
    "icf": 12.006,
    "ajustado": true,
    "percentil": 0.25,
-   "peso": 0.18,
+   "fama": 0.18,
+   "peso": 0.165,
    "pontos": 3
   },
   {
@@ -124,18 +145,9 @@
    "icf": 12.347,
    "ajustado": true,
    "percentil": 0.309,
-   "peso": 0.2,
-   "pontos": 4
-  },
-  {
-   "resposta": "Anta",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.006,
-   "ajustado": true,
-   "percentil": 0.412,
-   "peso": 0.24,
-   "pontos": 6
+   "fama": 0.2,
+   "peso": 0.173,
+   "pontos": 3
   },
   {
    "resposta": "Tatu",
@@ -144,8 +156,20 @@
    "icf": 13.105,
    "ajustado": true,
    "percentil": 0.441,
-   "peso": 0.24,
-   "pontos": 6
+   "fama": 0.24,
+   "peso": 0.184,
+   "pontos": 3
+  },
+  {
+   "resposta": "Jiboia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.223,
+   "ajustado": true,
+   "percentil": 0.765,
+   "fama": 0.3,
+   "peso": 0.202,
+   "pontos": 4
   },
   {
    "resposta": "Sucuri",
@@ -156,18 +180,9 @@
    "icf": 14.397,
    "ajustado": true,
    "percentil": 0.603,
-   "peso": 0.26,
-   "pontos": 7
-  },
-  {
-   "resposta": "Jiboia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.223,
-   "ajustado": true,
-   "percentil": 0.765,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.26,
+   "peso": 0.195,
+   "pontos": 4
   },
   {
    "resposta": "Tartaruga-marinha",
@@ -176,8 +191,9 @@
    "icf": 11.496,
    "ajustado": true,
    "percentil": 0.191,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.32,
+   "peso": 0.209,
+   "pontos": 4
   },
   {
    "resposta": "Piranha",
@@ -186,8 +202,9 @@
    "icf": 12.738,
    "ajustado": true,
    "percentil": 0.338,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.216,
+   "pontos": 5
   },
   {
    "resposta": "Sagui",
@@ -198,8 +215,9 @@
    "icf": 15.673,
    "ajustado": true,
    "percentil": 0.853,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.224,
+   "pontos": 5
   },
   {
    "resposta": "Beija-flor",
@@ -208,8 +226,9 @@
    "icf": 10.659,
    "ajustado": true,
    "percentil": 0.088,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.238,
+   "pontos": 6
   },
   {
    "resposta": "Peixe-boi",
@@ -218,8 +237,9 @@
    "icf": 10.641,
    "ajustado": true,
    "percentil": 0.074,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.238,
+   "pontos": 6
   },
   {
    "resposta": "Ariranha",
@@ -228,8 +248,9 @@
    "icf": 14.692,
    "ajustado": true,
    "percentil": 0.706,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.256,
+   "pontos": 7
   },
   {
    "resposta": "Quati",
@@ -238,8 +259,9 @@
    "icf": 15.481,
    "ajustado": true,
    "percentil": 0.809,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.256,
+   "pontos": 7
   },
   {
    "resposta": "Macaco-prego",
@@ -248,8 +270,9 @@
    "icf": 12.085,
    "ajustado": true,
    "percentil": 0.265,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.275,
+   "pontos": 8
   },
   {
    "resposta": "Tatu-bola",
@@ -258,8 +281,9 @@
    "icf": 11.23,
    "ajustado": true,
    "percentil": 0.176,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.275,
+   "pontos": 8
   },
   {
    "resposta": "Jabuti",
@@ -268,8 +292,9 @@
    "icf": 13.383,
    "ajustado": true,
    "percentil": 0.485,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.299,
+   "pontos": 9
   },
   {
    "resposta": "Sabiá",
@@ -278,8 +303,9 @@
    "icf": 13.243,
    "ajustado": true,
    "percentil": 0.471,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.299,
+   "pontos": 9
   },
   {
    "resposta": "Urubu",
@@ -288,8 +314,9 @@
    "icf": 13.116,
    "ajustado": true,
    "percentil": 0.456,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.299,
+   "pontos": 9
   },
   {
    "resposta": "Bem-te-vi",
@@ -298,8 +325,9 @@
    "icf": 7.586,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Cascavel",
@@ -308,8 +336,9 @@
    "icf": 11.955,
    "ajustado": true,
    "percentil": 0.235,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Gambá",
@@ -320,8 +349,9 @@
    "icf": 14.011,
    "ajustado": true,
    "percentil": 0.574,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "João-de-barro",
@@ -330,8 +360,9 @@
    "icf": 9.881,
    "ajustado": true,
    "percentil": 0.029,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.332,
+   "pontos": 11
   },
   {
    "resposta": "Bugio",
@@ -342,8 +373,9 @@
    "icf": 14.561,
    "ajustado": true,
    "percentil": 0.647,
-   "peso": 0.48,
-   "pontos": 23
+   "fama": 0.48,
+   "peso": 0.36,
+   "pontos": 13
   },
   {
    "resposta": "Pirarucu",
@@ -352,8 +384,9 @@
    "icf": 14.498,
    "ajustado": true,
    "percentil": 0.618,
-   "peso": 0.48,
-   "pontos": 23
+   "fama": 0.48,
+   "peso": 0.36,
+   "pontos": 13
   },
   {
    "resposta": "Ema",
@@ -362,8 +395,9 @@
    "icf": 13.046,
    "ajustado": true,
    "percentil": 0.426,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.379,
+   "pontos": 14
   },
   {
    "resposta": "Jararaca",
@@ -372,8 +406,9 @@
    "icf": 14.571,
    "ajustado": true,
    "percentil": 0.662,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.379,
+   "pontos": 14
   },
   {
    "resposta": "Cobra-coral",
@@ -384,8 +419,9 @@
    "icf": 10.954,
    "ajustado": true,
    "percentil": 0.118,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.393,
+   "pontos": 15
   },
   {
    "resposta": "Morcego",
@@ -394,8 +430,9 @@
    "icf": 12.746,
    "ajustado": true,
    "percentil": 0.353,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.402,
+   "pontos": 16
   },
   {
    "resposta": "Cutia",
@@ -404,8 +441,9 @@
    "icf": 15.639,
    "ajustado": true,
    "percentil": 0.838,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.421,
+   "pontos": 18
   },
   {
    "resposta": "Iguana",
@@ -414,8 +452,9 @@
    "icf": 14.511,
    "ajustado": true,
    "percentil": 0.632,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.421,
+   "pontos": 18
   },
   {
    "resposta": "Quero-quero",
@@ -424,8 +463,9 @@
    "icf": 8.077,
    "ajustado": true,
    "percentil": 0.015,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.421,
+   "pontos": 18
   },
   {
    "resposta": "Paca",
@@ -434,8 +474,9 @@
    "icf": 14.584,
    "ajustado": true,
    "percentil": 0.684,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.458,
+   "pontos": 21
   },
   {
    "resposta": "Perereca",
@@ -444,8 +485,9 @@
    "icf": 13.973,
    "ajustado": true,
    "percentil": 0.544,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.458,
+   "pontos": 21
   },
   {
    "resposta": "Seriema",
@@ -454,8 +496,9 @@
    "icf": 16.407,
    "ajustado": true,
    "percentil": 0.912,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.458,
+   "pontos": 21
   },
   {
    "resposta": "Suçuarana",
@@ -467,8 +510,9 @@
    "icf": 16.238,
    "ajustado": true,
    "percentil": 0.882,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.458,
+   "pontos": 21
   },
   {
    "resposta": "Gavião-real",
@@ -479,8 +523,9 @@
    "icf": 10.791,
    "ajustado": true,
    "percentil": 0.103,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.504,
+   "pontos": 25
   },
   {
    "resposta": "Jaguatirica",
@@ -489,8 +534,9 @@
    "icf": 15.395,
    "ajustado": true,
    "percentil": 0.794,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.504,
+   "pontos": 25
   },
   {
    "resposta": "Baleia-jubarte",
@@ -501,8 +547,9 @@
    "icf": 13.408,
    "ajustado": true,
    "percentil": 0.5,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.542,
+   "pontos": 29
   },
   {
    "resposta": "Sapo-cururu",
@@ -511,8 +558,9 @@
    "icf": 12.876,
    "ajustado": true,
    "percentil": 0.368,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.542,
+   "pontos": 29
   },
   {
    "resposta": "Tuiuiú",
@@ -521,8 +569,9 @@
    "icf": 16.192,
    "ajustado": true,
    "percentil": 0.868,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.542,
+   "pontos": 29
   },
   {
    "resposta": "Teiú",
@@ -533,8 +582,9 @@
    "icf": 16.699,
    "ajustado": true,
    "percentil": 0.926,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.573,
+   "pontos": 33
   },
   {
    "resposta": "Ouriço-cacheiro",
@@ -545,8 +595,9 @@
    "icf": 15.263,
    "ajustado": true,
    "percentil": 0.779,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.596,
+   "pontos": 36
   },
   {
    "resposta": "Tambaqui",
@@ -555,8 +606,9 @@
    "icf": 14.584,
    "ajustado": true,
    "percentil": 0.684,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.596,
+   "pontos": 36
   },
   {
    "resposta": "Cachorro-do-mato",
@@ -565,8 +617,9 @@
    "icf": 9.995,
    "ajustado": true,
    "percentil": 0.044,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.619,
+   "pontos": 38
   },
   {
    "resposta": "Caititu",
@@ -577,8 +630,9 @@
    "icf": 16.707,
    "ajustado": true,
    "percentil": 0.941,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.649,
+   "pontos": 42
   },
   {
    "resposta": "Cervo-do-pantanal",
@@ -587,8 +641,9 @@
    "icf": 13.004,
    "ajustado": true,
    "percentil": 0.397,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.649,
+   "pontos": 42
   },
   {
    "resposta": "Veado-campeiro",
@@ -597,8 +652,9 @@
    "icf": 13.993,
    "ajustado": true,
    "percentil": 0.559,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.649,
+   "pontos": 42
   },
   {
    "resposta": "Furão",
@@ -607,8 +663,9 @@
    "icf": 15.194,
    "ajustado": true,
    "percentil": 0.75,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.695,
+   "pontos": 48
   },
   {
    "resposta": "Queixada",
@@ -617,8 +674,9 @@
    "icf": 15.497,
    "ajustado": true,
    "percentil": 0.824,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.695,
+   "pontos": 48
   },
   {
    "resposta": "Surucucu",
@@ -627,8 +685,9 @@
    "icf": 16.318,
    "ajustado": true,
    "percentil": 0.897,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.695,
+   "pontos": 48
   },
   {
    "resposta": "Gato-maracajá",
@@ -637,8 +696,9 @@
    "icf": 12.654,
    "ajustado": true,
    "percentil": 0.324,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.748,
+   "pontos": 56
   },
   {
    "resposta": "Muriqui",
@@ -647,8 +707,9 @@
    "icf": 14.757,
    "ajustado": true,
    "percentil": 0.721,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.748,
+   "pontos": 56
   },
   {
    "resposta": "Jacu",
@@ -657,7 +718,8 @@
    "icf": 14.789,
    "ajustado": true,
    "percentil": 0.735,
-   "peso": 0.78,
+   "fama": 0.78,
+   "peso": 0.783,
    "pontos": 61
   },
   {
@@ -667,8 +729,9 @@
    "icf": 13.893,
    "ajustado": true,
    "percentil": 0.529,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.807,
+   "pontos": 65
   },
   {
    "resposta": "Ararajuba",
@@ -677,8 +740,9 @@
    "icf": 16.864,
    "ajustado": true,
    "percentil": 0.956,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.843,
+   "pontos": 71
   },
   {
    "resposta": "Boto-cinza",
@@ -687,8 +751,9 @@
    "icf": 11.787,
    "ajustado": true,
    "percentil": 0.221,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.843,
+   "pontos": 71
   },
   {
    "resposta": "Uacari",
@@ -697,8 +762,9 @@
    "icf": 17.072,
    "ajustado": true,
    "percentil": 0.985,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.879,
+   "pontos": 77
   },
   {
    "resposta": "Arara-azul-de-lear",
@@ -707,8 +773,9 @@
    "icf": 10.97,
    "ajustado": true,
    "percentil": 0.132,
-   "peso": 0.86,
-   "pontos": 74
+   "fama": 0.86,
+   "peso": 0.914,
+   "pontos": 84
   },
   {
    "resposta": "Irara",
@@ -717,8 +784,9 @@
    "icf": 17.042,
    "ajustado": true,
    "percentil": 0.971,
-   "peso": 0.86,
-   "pontos": 74
+   "fama": 0.86,
+   "peso": 0.914,
+   "pontos": 84
   },
   {
    "resposta": "Tamanduaí",
@@ -727,8 +795,9 @@
    "icf": 18.553,
    "ajustado": true,
    "percentil": 1.0,
-   "peso": 0.92,
-   "pontos": 85
+   "fama": 0.92,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Tamanduaí"

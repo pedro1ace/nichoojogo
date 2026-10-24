@@ -4,23 +4,14 @@
  "pergunta": "Cite uma fruta",
  "respostas": [
   {
-   "resposta": "Abacaxi",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.87,
-   "ajustado": true,
-   "percentil": 0.152,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
    "resposta": "Banana",
    "apelidos": [],
    "sem_dado": false,
    "icf": 10.943,
    "ajustado": true,
    "percentil": 0.089,
-   "peso": 0.01,
+   "fama": 0.01,
+   "peso": 0.103,
    "pontos": 1
   },
   {
@@ -30,8 +21,53 @@
    "icf": 10.278,
    "ajustado": true,
    "percentil": 0.025,
-   "peso": 0.02,
+   "fama": 0.02,
+   "peso": 0.113,
    "pontos": 1
+  },
+  {
+   "resposta": "Maçã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.175,
+   "ajustado": true,
+   "percentil": 0.101,
+   "fama": 0.01,
+   "peso": 0.103,
+   "pontos": 1
+  },
+  {
+   "resposta": "Morango",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.614,
+   "ajustado": true,
+   "percentil": 0.139,
+   "fama": 0.05,
+   "peso": 0.122,
+   "pontos": 1
+  },
+  {
+   "resposta": "Uva",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.398,
+   "ajustado": true,
+   "percentil": 0.114,
+   "fama": 0.05,
+   "peso": 0.122,
+   "pontos": 1
+  },
+  {
+   "resposta": "Abacaxi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.87,
+   "ajustado": true,
+   "percentil": 0.152,
+   "fama": 0.08,
+   "peso": 0.134,
+   "pontos": 2
   },
   {
    "resposta": "Mamão",
@@ -42,8 +78,9 @@
    "icf": 12.698,
    "ajustado": true,
    "percentil": 0.291,
-   "peso": 0.12,
-   "pontos": 1
+   "fama": 0.12,
+   "peso": 0.15,
+   "pontos": 2
   },
   {
    "resposta": "Manga",
@@ -52,18 +89,9 @@
    "icf": 10.787,
    "ajustado": true,
    "percentil": 0.076,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
-   "resposta": "Maçã",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.175,
-   "ajustado": true,
-   "percentil": 0.101,
-   "peso": 0.01,
-   "pontos": 1
+   "fama": 0.08,
+   "peso": 0.134,
+   "pontos": 2
   },
   {
    "resposta": "Melancia",
@@ -72,28 +100,9 @@
    "icf": 12.152,
    "ajustado": true,
    "percentil": 0.177,
-   "peso": 0.09,
-   "pontos": 1
-  },
-  {
-   "resposta": "Morango",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.614,
-   "ajustado": true,
-   "percentil": 0.139,
-   "peso": 0.05,
-   "pontos": 1
-  },
-  {
-   "resposta": "Uva",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.398,
-   "ajustado": true,
-   "percentil": 0.114,
-   "peso": 0.05,
-   "pontos": 1
+   "fama": 0.09,
+   "peso": 0.144,
+   "pontos": 2
   },
   {
    "resposta": "Pera",
@@ -102,7 +111,8 @@
    "icf": 12.559,
    "ajustado": true,
    "percentil": 0.241,
-   "peso": 0.14,
+   "fama": 0.14,
+   "peso": 0.156,
    "pontos": 2
   },
   {
@@ -112,17 +122,8 @@
    "icf": 12.571,
    "ajustado": true,
    "percentil": 0.253,
-   "peso": 0.18,
-   "pontos": 3
-  },
-  {
-   "resposta": "Limão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.602,
-   "ajustado": true,
-   "percentil": 0.051,
-   "peso": 0.16,
+   "fama": 0.18,
+   "peso": 0.169,
    "pontos": 3
   },
   {
@@ -132,8 +133,20 @@
    "icf": 13.109,
    "ajustado": true,
    "percentil": 0.367,
-   "peso": 0.2,
-   "pontos": 4
+   "fama": 0.2,
+   "peso": 0.175,
+   "pontos": 3
+  },
+  {
+   "resposta": "Limão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.602,
+   "ajustado": true,
+   "percentil": 0.051,
+   "fama": 0.16,
+   "peso": 0.163,
+   "pontos": 3
   },
   {
    "resposta": "Maracujá",
@@ -142,8 +155,9 @@
    "icf": 12.305,
    "ajustado": true,
    "percentil": 0.19,
-   "peso": 0.22,
-   "pontos": 5
+   "fama": 0.22,
+   "peso": 0.181,
+   "pontos": 3
   },
   {
    "resposta": "Coco",
@@ -152,8 +166,9 @@
    "icf": 10.743,
    "ajustado": true,
    "percentil": 0.063,
-   "peso": 0.24,
-   "pontos": 6
+   "fama": 0.24,
+   "peso": 0.191,
+   "pontos": 4
   },
   {
    "resposta": "Kiwi",
@@ -162,8 +177,9 @@
    "icf": 13.39,
    "ajustado": true,
    "percentil": 0.418,
-   "peso": 0.24,
-   "pontos": 6
+   "fama": 0.24,
+   "peso": 0.191,
+   "pontos": 4
   },
   {
    "resposta": "Melão",
@@ -172,8 +188,9 @@
    "icf": 12.685,
    "ajustado": true,
    "percentil": 0.278,
-   "peso": 0.25,
-   "pontos": 6
+   "fama": 0.25,
+   "peso": 0.2,
+   "pontos": 4
   },
   {
    "resposta": "Tangerina",
@@ -188,38 +205,9 @@
    "icf": 13.324,
    "ajustado": true,
    "percentil": 0.405,
-   "peso": 0.26,
-   "pontos": 7
-  },
-  {
-   "resposta": "Pêssego",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.715,
-   "ajustado": true,
-   "percentil": 0.304,
-   "peso": 0.28,
-   "pontos": 8
-  },
-  {
-   "resposta": "Caju",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.357,
-   "ajustado": true,
-   "percentil": 0.203,
-   "peso": 0.3,
-   "pontos": 9
-  },
-  {
-   "resposta": "Cereja",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.108,
-   "ajustado": true,
-   "percentil": 0.165,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.26,
+   "peso": 0.206,
+   "pontos": 4
   },
   {
    "resposta": "Acerola",
@@ -228,8 +216,42 @@
    "icf": 13.835,
    "ajustado": true,
    "percentil": 0.443,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.32,
+   "peso": 0.234,
+   "pontos": 5
+  },
+  {
+   "resposta": "Caju",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.357,
+   "ajustado": true,
+   "percentil": 0.203,
+   "fama": 0.3,
+   "peso": 0.222,
+   "pontos": 5
+  },
+  {
+   "resposta": "Cereja",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.108,
+   "ajustado": true,
+   "percentil": 0.165,
+   "fama": 0.3,
+   "peso": 0.222,
+   "pontos": 5
+  },
+  {
+   "resposta": "Pêssego",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.715,
+   "ajustado": true,
+   "percentil": 0.304,
+   "fama": 0.28,
+   "peso": 0.213,
+   "pontos": 5
   },
   {
    "resposta": "Ameixa",
@@ -238,8 +260,9 @@
    "icf": 12.875,
    "ajustado": true,
    "percentil": 0.329,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.25,
+   "pontos": 6
   },
   {
    "resposta": "Açaí",
@@ -248,8 +271,9 @@
    "icf": 12.58,
    "ajustado": true,
    "percentil": 0.266,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.25,
+   "pontos": 6
   },
   {
    "resposta": "Jabuticaba",
@@ -258,8 +282,9 @@
    "icf": 13.886,
    "ajustado": true,
    "percentil": 0.481,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.25,
+   "pontos": 6
   },
   {
    "resposta": "Framboesa",
@@ -268,8 +293,9 @@
    "icf": 13.189,
    "ajustado": true,
    "percentil": 0.38,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Amora",
@@ -278,8 +304,9 @@
    "icf": 12.51,
    "ajustado": true,
    "percentil": 0.215,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.274,
+   "pontos": 8
   },
   {
    "resposta": "Mirtilo",
@@ -290,28 +317,9 @@
    "icf": 14.342,
    "ajustado": true,
    "percentil": 0.57,
-   "peso": 0.42,
-   "pontos": 18
-  },
-  {
-   "resposta": "Figo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.953,
-   "ajustado": true,
-   "percentil": 0.354,
-   "peso": 0.44,
-   "pontos": 19
-  },
-  {
-   "resposta": "Jaca",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.309,
-   "ajustado": true,
-   "percentil": 0.392,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.42,
+   "peso": 0.282,
+   "pontos": 8
   },
   {
    "resposta": "Caqui",
@@ -320,8 +328,31 @@
    "icf": 13.858,
    "ajustado": true,
    "percentil": 0.456,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.307,
+   "pontos": 9
+  },
+  {
+   "resposta": "Figo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.953,
+   "ajustado": true,
+   "percentil": 0.354,
+   "fama": 0.44,
+   "peso": 0.294,
+   "pontos": 9
+  },
+  {
+   "resposta": "Jaca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.309,
+   "ajustado": true,
+   "percentil": 0.392,
+   "fama": 0.44,
+   "peso": 0.294,
+   "pontos": 9
   },
   {
    "resposta": "Graviola",
@@ -330,8 +361,9 @@
    "icf": 14.462,
    "ajustado": true,
    "percentil": 0.62,
-   "peso": 0.48,
-   "pontos": 23
+   "fama": 0.48,
+   "peso": 0.319,
+   "pontos": 10
   },
   {
    "resposta": "Pitanga",
@@ -340,8 +372,9 @@
    "icf": 12.922,
    "ajustado": true,
    "percentil": 0.342,
-   "peso": 0.48,
-   "pontos": 23
+   "fama": 0.48,
+   "peso": 0.319,
+   "pontos": 10
   },
   {
    "resposta": "Romã",
@@ -350,8 +383,9 @@
    "icf": 13.413,
    "ajustado": true,
    "percentil": 0.43,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.331,
+   "pontos": 11
   },
   {
    "resposta": "Carambola",
@@ -360,8 +394,9 @@
    "icf": 14.365,
    "ajustado": true,
    "percentil": 0.582,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.343,
+   "pontos": 12
   },
   {
    "resposta": "Pitaya",
@@ -372,8 +407,9 @@
    "icf": 15.663,
    "ajustado": true,
    "percentil": 0.772,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.343,
+   "pontos": 12
   },
   {
    "resposta": "Cupuaçu",
@@ -382,8 +418,9 @@
    "icf": 14.149,
    "ajustado": true,
    "percentil": 0.532,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.355,
+   "pontos": 13
   },
   {
    "resposta": "Lichia",
@@ -392,8 +429,9 @@
    "icf": 14.774,
    "ajustado": true,
    "percentil": 0.722,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.367,
+   "pontos": 13
   },
   {
    "resposta": "Pinha",
@@ -405,8 +443,9 @@
    "icf": 14.286,
    "ajustado": true,
    "percentil": 0.544,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.367,
+   "pontos": 13
   },
   {
    "resposta": "Tamarindo",
@@ -415,8 +454,9 @@
    "icf": 14.305,
    "ajustado": true,
    "percentil": 0.557,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.379,
+   "pontos": 14
   },
   {
    "resposta": "Cacau",
@@ -425,8 +465,9 @@
    "icf": 11.548,
    "ajustado": true,
    "percentil": 0.127,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.391,
+   "pontos": 15
   },
   {
    "resposta": "Lima",
@@ -435,8 +476,9 @@
    "icf": 9.472,
    "ajustado": true,
    "percentil": 0.006,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.391,
+   "pontos": 15
   },
   {
    "resposta": "Damasco",
@@ -445,8 +487,9 @@
    "icf": 12.523,
    "ajustado": true,
    "percentil": 0.228,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Siriguela",
@@ -458,8 +501,9 @@
    "icf": 16.674,
    "ajustado": true,
    "percentil": 0.873,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Cajá",
@@ -470,8 +514,9 @@
    "icf": 14.523,
    "ajustado": true,
    "percentil": 0.646,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.428,
+   "pontos": 18
   },
   {
    "resposta": "Toranja",
@@ -482,8 +527,9 @@
    "icf": 14.689,
    "ajustado": true,
    "percentil": 0.696,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.428,
+   "pontos": 18
   },
   {
    "resposta": "Tâmara",
@@ -492,8 +538,9 @@
    "icf": 14.672,
    "ajustado": true,
    "percentil": 0.684,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.428,
+   "pontos": 18
   },
   {
    "resposta": "Nectarina",
@@ -502,8 +549,9 @@
    "icf": 15.835,
    "ajustado": true,
    "percentil": 0.785,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.455,
+   "pontos": 21
   },
   {
    "resposta": "Pequi",
@@ -512,8 +560,9 @@
    "icf": 13.894,
    "ajustado": true,
    "percentil": 0.494,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.455,
+   "pontos": 21
   },
   {
    "resposta": "Umbu",
@@ -522,8 +571,9 @@
    "icf": 15.04,
    "ajustado": true,
    "percentil": 0.747,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.455,
+   "pontos": 21
   },
   {
    "resposta": "Lima-da-pérsia",
@@ -532,8 +582,9 @@
    "icf": 9.472,
    "ajustado": true,
    "percentil": 0.006,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.488,
+   "pontos": 24
   },
   {
    "resposta": "Marmelo",
@@ -542,8 +593,9 @@
    "icf": 14.599,
    "ajustado": true,
    "percentil": 0.671,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.488,
+   "pontos": 24
   },
   {
    "resposta": "Groselha",
@@ -552,8 +604,9 @@
    "icf": 14.146,
    "ajustado": true,
    "percentil": 0.519,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.514,
+   "pontos": 26
   },
   {
    "resposta": "Jambo",
@@ -562,8 +615,9 @@
    "icf": 14.413,
    "ajustado": true,
    "percentil": 0.608,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.514,
+   "pontos": 26
   },
   {
    "resposta": "Buriti",
@@ -572,8 +626,9 @@
    "icf": 12.822,
    "ajustado": true,
    "percentil": 0.316,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.547,
+   "pontos": 30
   },
   {
    "resposta": "Jenipapo",
@@ -582,8 +637,9 @@
    "icf": 14.539,
    "ajustado": true,
    "percentil": 0.658,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.547,
+   "pontos": 30
   },
   {
    "resposta": "Nêspera",
@@ -594,8 +650,9 @@
    "icf": 16.249,
    "ajustado": true,
    "percentil": 0.835,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.547,
+   "pontos": 30
   },
   {
    "resposta": "Fruta-pão",
@@ -604,8 +661,9 @@
    "icf": 10.357,
    "ajustado": true,
    "percentil": 0.038,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.593,
+   "pontos": 35
   },
   {
    "resposta": "Physalis",
@@ -616,8 +674,9 @@
    "icf": 20.598,
    "ajustado": true,
    "percentil": 1.0,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.593,
+   "pontos": 35
   },
   {
    "resposta": "Pupunha",
@@ -626,8 +685,9 @@
    "icf": 14.465,
    "ajustado": true,
    "percentil": 0.633,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.593,
+   "pontos": 35
   },
   {
    "resposta": "Sapoti",
@@ -636,8 +696,9 @@
    "icf": 16.082,
    "ajustado": true,
    "percentil": 0.81,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.593,
+   "pontos": 35
   },
   {
    "resposta": "Araçá",
@@ -646,8 +707,9 @@
    "icf": 14.387,
    "ajustado": true,
    "percentil": 0.595,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.633,
+   "pontos": 40
   },
   {
    "resposta": "Bacuri",
@@ -656,8 +718,9 @@
    "icf": 14.767,
    "ajustado": true,
    "percentil": 0.709,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.633,
+   "pontos": 40
   },
   {
    "resposta": "Atemoia",
@@ -666,8 +729,9 @@
    "icf": 17.611,
    "ajustado": true,
    "percentil": 0.949,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.666,
+   "pontos": 44
   },
   {
    "resposta": "Kinkan",
@@ -676,8 +740,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.987,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.666,
+   "pontos": 44
   },
   {
    "resposta": "Mangaba",
@@ -686,8 +751,9 @@
    "icf": 15.264,
    "ajustado": true,
    "percentil": 0.759,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.666,
+   "pontos": 44
   },
   {
    "resposta": "Mangostão",
@@ -696,8 +762,9 @@
    "icf": 15.983,
    "ajustado": true,
    "percentil": 0.797,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.714,
+   "pontos": 51
   },
   {
    "resposta": "Murici",
@@ -706,8 +773,9 @@
    "icf": 14.034,
    "ajustado": true,
    "percentil": 0.506,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.714,
+   "pontos": 51
   },
   {
    "resposta": "Rambutão",
@@ -718,8 +786,9 @@
    "icf": 19.078,
    "ajustado": true,
    "percentil": 0.975,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.714,
+   "pontos": 51
   },
   {
    "resposta": "Tucumã",
@@ -728,8 +797,9 @@
    "icf": 14.969,
    "ajustado": true,
    "percentil": 0.734,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.714,
+   "pontos": 51
   },
   {
    "resposta": "Abiu",
@@ -738,8 +808,9 @@
    "icf": 16.554,
    "ajustado": true,
    "percentil": 0.861,
-   "peso": 0.86,
-   "pontos": 74
+   "fama": 0.86,
+   "peso": 0.776,
+   "pontos": 60
   },
   {
    "resposta": "Cambuci",
@@ -748,8 +819,9 @@
    "icf": 13.867,
    "ajustado": true,
    "percentil": 0.468,
-   "peso": 0.86,
-   "pontos": 74
+   "fama": 0.86,
+   "peso": 0.776,
+   "pontos": 60
   },
   {
    "resposta": "Bacaba",
@@ -758,8 +830,9 @@
    "icf": 16.211,
    "ajustado": true,
    "percentil": 0.823,
-   "peso": 0.88,
-   "pontos": 77
+   "fama": 0.88,
+   "peso": 0.817,
+   "pontos": 67
   },
   {
    "resposta": "Uvaia",
@@ -768,8 +841,9 @@
    "icf": 16.429,
    "ajustado": true,
    "percentil": 0.848,
-   "peso": 0.88,
-   "pontos": 77
+   "fama": 0.88,
+   "peso": 0.817,
+   "pontos": 67
   },
   {
    "resposta": "Cagaita",
@@ -778,8 +852,9 @@
    "icf": 16.967,
    "ajustado": true,
    "percentil": 0.899,
-   "peso": 0.9,
-   "pontos": 81
+   "fama": 0.9,
+   "peso": 0.868,
+   "pontos": 75
   },
   {
    "resposta": "Durião",
@@ -790,8 +865,9 @@
    "icf": 18.576,
    "ajustado": true,
    "percentil": 0.962,
-   "peso": 0.9,
-   "pontos": 81
+   "fama": 0.9,
+   "peso": 0.868,
+   "pontos": 75
   },
   {
    "resposta": "Feijoa",
@@ -802,8 +878,9 @@
    "icf": 17.502,
    "ajustado": true,
    "percentil": 0.937,
-   "peso": 0.9,
-   "pontos": 81
+   "fama": 0.9,
+   "peso": 0.868,
+   "pontos": 75
   },
   {
    "resposta": "Cabeludinha",
@@ -812,8 +889,9 @@
    "icf": 16.942,
    "ajustado": true,
    "percentil": 0.886,
-   "peso": 0.92,
-   "pontos": 85
+   "fama": 0.92,
+   "peso": 0.919,
+   "pontos": 84
   },
   {
    "resposta": "Grumixama",
@@ -822,8 +900,9 @@
    "icf": 17.404,
    "ajustado": true,
    "percentil": 0.924,
-   "peso": 0.92,
-   "pontos": 85
+   "fama": 0.92,
+   "peso": 0.919,
+   "pontos": 84
   },
   {
    "resposta": "Maná-cubiu",
@@ -832,8 +911,9 @@
    "icf": 17.23,
    "ajustado": true,
    "percentil": 0.911,
-   "peso": 0.94,
-   "pontos": 88
+   "fama": 0.94,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Cabeludinha"
