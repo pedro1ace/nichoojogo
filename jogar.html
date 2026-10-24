@@ -1272,16 +1272,16 @@ function criarNaves() {
 // O começo da viagem (u de 0 a AL_INICIAL) é a saída do Sistema Solar, na descida inicial.
 
 const AL_POR_PONTO = 100; // anos-luz de verdade por ponto
-const U_POR_PONTO = 14; // unidades da cena por ponto: 7 px de queda por ponto
+const U_POR_PONTO = 32; // unidades da cena por ponto: 16 px de queda por ponto
 const AL_POR_U = AL_POR_PONTO / U_POR_PONTO;
 // Quanto cada resposta faz viajar, em unidades da cena (proporcional aos pontos:
-// óbvia 8 a 15 pts = 56 a 105 px; rara 60 a 90 = 420 a 630 px; supernova 100 = 700 px).
+// óbvia 8 a 15 pts = 128 a 240 px; rara 60 a 90 = 960 a 1.440 px; supernova 100 = 1.600 px).
 function viagem(pontos) {
   return pontos > 0 ? pontos * U_POR_PONTO : 0;
 }
-// A viagem "conta" depois de sair do Sistema Solar: ao iniciar, o tardígrado desce
-// da Terra, passa pelos planetas e chega aqui. Distância e réguas contam a partir daqui (o "0").
-const AL_INICIAL = 2000;
+// A viagem "conta" logo acima da atmosfera: ao iniciar, o tardígrado desce rapidinho
+// da Terra, passando pela Lua, até aqui. Distância e réguas contam a partir daqui (o "0").
+const AL_INICIAL = 420;
 // posição na cena (u) de algo a "al" anos-luz de verdade, e o contrário
 const U = (al) => AL_INICIAL + al / AL_POR_U;
 const anosLuz = (u) => Math.max(0, Math.round((u - AL_INICIAL) * AL_POR_U));
@@ -1292,16 +1292,19 @@ const DURACAO_DESCIDA = 2400; // ms, referência (a queda de cada resposta tem a
 
 // "Peso" da resposta: a óbvia é leve como uma pena, a rara é densa.
 function pesoQueda(pontos, supernova) {
-  return supernova ? 1 : Math.min(1, Math.max(0, pontos) / 100);
+  return supernova ? 2 : Math.min(1, Math.max(0, pontos) / 100);
 }
 // Quanto tempo a caixa leva para cair: a leve plana devagar, a pesada despenca.
 function duracaoQueda(pontos, supernova) {
+  if (supernova) return 3400; // carrega, segura e despenca
   return Math.round(3800 - 2000 * Math.sqrt(pesoQueda(pontos, supernova)));
 }
 // Curva da queda: leve = começa e termina macio (desliza); pesada = acelera até o fim
 // e para de uma vez (o "baque" e o tremor vêm na chegada).
 function curvaQueda(t, peso) {
   t = Math.min(1, Math.max(0, t)); // o quadro pode chegar um pouquinho antes do início
+  // supernova (peso 2): sobe um tiquinho carregando, e então mergulha acelerando até o fundo
+  if (peso > 1.5) return t < 0.22 ? -0.025 * Math.sin((Math.PI * t) / 0.22) : Math.pow((t - 0.22) / 0.78, 2.6);
   const leve = 0.5 - Math.cos(Math.PI * t) / 2;
   const pesada = Math.pow(t, 2.2);
   return leve + (pesada - leve) * Math.min(1, peso * 1.4);
@@ -1334,17 +1337,8 @@ function faixaDe(pontos, supernova) {
 // "x" (0 a 1) é onde o corpo fica na tela; "dy" afasta um pouco o desenho na vertical;
 // "direita" põe o rótulo do outro lado (para marcos próximos não se atropelarem).
 const MARCOS = [
-  { al: 150, nome: "LUA", corpo: "lua" },
-  { al: 330, nome: "MARTE", corpo: "marte" },
-  { al: 480, nome: "CINTURÃO DE ASTEROIDES", cinturao: true },
-  { al: 680, nome: "JÚPITER", corpo: "jupiter" },
-  { al: 930, nome: "SATURNO", corpo: "saturno" },
-  { al: 1160, nome: "URANO", corpo: "urano" },
-  { al: 1360, nome: "NETUNO", corpo: "netuno" },
-  { al: 1530, nome: "PLUTÃO", corpo: "plutao" },
-  { al: 1650, nome: "CINTURÃO DE KUIPER", cinturao: true },
-  { al: 1760, nome: "VOYAGER 1", voyager: true },
-  { al: 1890, nome: "NUVEM DE OORT", cinturao: true },
+  { al: 170, nome: "LUA", corpo: "lua" },
+  { al: 330, nome: "CINTURÃO DE ASTEROIDES", cinturao: true },
   // a vizinhança do Sol: perto demais para linha, ficam em volta do ponto de partida
   { real: 4.4, nome: "ALFA CENTAURI", corpo: "estrela", x: 0.84, dy: -26, junto: true },
   { real: 8.6, nome: "SIRIUS", corpo: "azul", x: 0.1, dy: 34, junto: true },
@@ -1365,10 +1359,7 @@ const MARCOS = [
 const CURIOSIDADES = [
   [40, "aqui o céu azul começa a virar preto"],
   [75, "a ISS dá 16 voltas na Terra por dia"],
-  [200, "a Lua se afasta da Terra 3,8 cm por ano"],
-  [760, "Júpiter tem mais de 90 luas"],
-  [1010, "Saturno flutuaria numa banheira gigante"],
-  [1800, "a Voyager 1 é o objeto humano mais distante da Terra"],
+  [230, "a Lua se afasta da Terra 3,8 cm por ano"],
   [U(200), "Toy Story: ao infinito e além!"],
   [U(950), "Betelgeuse pode virar supernova (amanhã ou daqui a 100 mil anos)"],
   [U(1900), "Gaia BH1 é o buraco negro mais perto da Terra que conhecemos"],
@@ -1433,7 +1424,7 @@ function corDoFundo(al) {
 }
 
 // 0 perto da Terra, 1 lá no fundo: controla vinheta, brilho e estrelas.
-const escuridao = (al) => Math.min(1, Math.max(0, al / 1200));
+const escuridao = (al) => Math.min(1, Math.max(0, al / 900));
 
 function novaTela(l, a) {
   const c = document.createElement("canvas");
@@ -1760,6 +1751,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
   const foguete = { al: 0, x: 0, y: 0 };
   let flash = 0;
+  let dobra = 0; // supernova: as estrelas viram riscos, como num salto para a velocidade da luz
   let quadro = 0;
   let tempo = 0; // segundos: todo movimento usa o tempo, não o número do quadro
   let dt = 1 / 60;
@@ -1944,7 +1936,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const desvio = camera.atual * PX_POR_AL * c.f;
       const primeiro = Math.floor((desvio - focoY) / BLOCO);
       const ultimo = Math.floor((desvio - focoY + A) / BLOCO);
-      const rastro = reduzirMovimento ? 0 : Math.min(16, (camera.velocidade * PX_POR_AL * c.f) / 30);
+      const rastro = reduzirMovimento ? 0 : Math.min(dobra > 0 ? 90 : 16, (camera.velocidade * PX_POR_AL * c.f) / (dobra > 0 ? 12 : 30));
       for (let k = primeiro; k <= ultimo; k++) {
         for (let i = 0; i < c.n; i++) {
           const yMundo = k * BLOCO + sorte(k, i * 7 + ci) * BLOCO;
@@ -2015,7 +2007,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // conforme você desce (o espaço fica mais apertado). Duas camadas com
   // paralaxe: a de trás anda mais devagar e é mais clara.
   function aperto(al) {
-    return Math.min(1, Math.max(0, (al - 250) / 4000));
+    return Math.min(1, Math.max(0, (al - 250) / (U(15000) - 250)));
   }
   // Cristais que brilham dentro da rocha da frente, lá no fundo.
   function desenharLaterais() {
@@ -2305,7 +2297,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
   }
   function desenharBuracoNegro() {
-    const surge = Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 600)) / 600));
+    const surge = Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 1400)) / 1400));
     if (surge <= 0) return;
     const img = naves.buraco;
     const W = innerWidth, H = innerHeight;
@@ -2347,17 +2339,17 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // bem mais devagar que a câmera (paralaxe), então fica na tela enquanto você responde
   // em vez de passar reto. Somam luz ao céu (não cobrem).
   const PAISAGENS = [
-    { al: U(1344), antes: 160, depois: 220, img: "orion", alfa: 0.95, x: 0.56, tam: 1 },
-    { al: U(4100), antes: 200, depois: 220, img: "orion", alfa: 0.8, x: 0.42, tam: 0.9, filtro: "hue-rotate(-38deg) saturate(1.3)", espelho: true },
-    { al: U(6500), antes: 90, depois: 110, img: "orion", alfa: 0.75, x: 0.24, tam: 0.38, filtro: "hue-rotate(150deg) saturate(1.6)", giro: 1.2 },
-    { al: U(7000), antes: 260, depois: 380, img: "pilares", alfa: 0.5, x: 0.5, tam: 1.2 },
-    { al: U(17000), antes: 380, depois: 380, aglomerado: { n: 420, raio: 90, cor: "255,240,215" }, x: 0.5 },
+    { al: U(1344), antes: 360, depois: 500, img: "orion", alfa: 0.95, x: 0.56, tam: 1 },
+    { al: U(4100), antes: 460, depois: 500, img: "orion", alfa: 0.8, x: 0.42, tam: 0.9, filtro: "hue-rotate(-38deg) saturate(1.3)", espelho: true },
+    { al: U(6500), antes: 200, depois: 160, img: "orion", alfa: 0.75, x: 0.24, tam: 0.38, filtro: "hue-rotate(150deg) saturate(1.6)", giro: 1.2 },
+    { al: U(7000), antes: 520, depois: 860, img: "pilares", alfa: 0.5, x: 0.5, tam: 1.2 },
+    { al: U(17000), antes: 860, depois: 860, aglomerado: { n: 420, raio: 90, cor: "255,240,215" }, x: 0.5 },
   ];
   function desenharPaisagem(p, al, W, H) {
     const d = al - p.al;
     const surge = d < 0 ? Math.min(1, Math.max(0, (d + p.antes) / (p.antes * 0.6))) : Math.min(1, Math.max(0, (p.depois - d) / (p.depois * 0.5)));
     if (surge <= 0) return;
-    const y = H * 0.5 - d * PX_POR_AL * escala * 0.22; // anda a 22% da velocidade da câmera
+    const y = H * 0.5 - d * PX_POR_AL * escala * 0.12; // anda a 12% da velocidade da câmera
     if (p.aglomerado) {
       tx.save();
       tx.globalAlpha = surge;
@@ -2406,7 +2398,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Espaço profundo: tudo fica na penumbra, menos a luz em volta da caixa que afunda.
   function desenharPenumbra() {
     // no estágio negativo a penumbra sai: ali a tela é clara e o buraco negro é o escuro
-    const k = negativo ? 0 : Math.min(1, Math.max(0, (camera.atual - U(9000)) / 900)) * 0.65;
+    const k = negativo ? 0 : Math.min(1, Math.max(0, (camera.atual - U(9000)) / (U(12000) - U(9000)))) * 0.65;
     if (k <= 0.01) return;
     const W = innerWidth, H = innerHeight;
     const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
@@ -2710,7 +2702,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const k = c.peso; // 0 a 1.2
     if (k < 0.35) return; // comum e óbvia: só o pulinho da caixa
     const n = Math.round(20 + 120 * Math.min(1, k));
-    for (let i = 0; i < n; i++) {
+    if (c.supernova) {
+      dobra = 0;
+      aneis.push({ x: cx, y: cy, vida: -0.25, dura: 1.3, cor: "#ff4fd8", max: Math.max(innerWidth, innerHeight) * 0.9 });
+      if (window.Som && Som.buraco) Som.buraco();
+    }
+    for (let i = 0; i < n * (c.supernova ? 2 : 1); i++) {
       const a = Math.random() * Math.PI * 2;
       const v = (120 + Math.random() * 380) * (0.6 + k * 0.6);
       estouros.push({
@@ -2727,7 +2724,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     bordaCor = c.cor;
     borda = Math.min(1, 0.4 + k * 0.6);
     flash = Math.max(flash, c.supernova ? 0.85 : k > 0.6 ? 0.35 : 0.12);
-    tremer(6 + 22 * Math.min(1, k) + (c.supernova ? 10 : 0), 250 + 500 * k);
+    tremer(6 + 22 * Math.min(1, k) + (c.supernova ? 14 : 0), 250 + 500 * k + (c.supernova ? 500 : 0));
     mascote.pulo = 10 + 14 * k;
     felizAte = performance.now() + 2200;
     if (window.Som && Som.brilho) Som.brilho(k);
@@ -3057,6 +3054,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.inicio = agora;
       camera.dura = duracaoQueda(pontos, supernova);
       camera.peso = pesoQueda(pontos, supernova);
+      if (supernova) dobra = 1;
       // a caixa anterior some (não ficam umas por cima das outras)
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       caixas.push({
@@ -3384,7 +3382,7 @@ function iniciar() {
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
-const DESCIDA_INICIAL = 5000; // passa pelo Sistema Solar inteiro antes da primeira pergunta
+const DESCIDA_INICIAL = 2600;
 
 // Quanto você viajou hoje. A câmera fica em AL_INICIAL + isso (ver cena.js).
 // Em anos-luz de verdade (1 ponto = 100 AL).
@@ -3659,7 +3657,7 @@ function palpitar(evento) {
   Som.descer(Math.min(1, pontos / 100));
   registrar(cat, achada.resposta, pontos, supernova, percentil);
   // nas raras, a festa da chegada aparece sozinha antes do resultado
-  const pausa = supernova || pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
+  const pausa = supernova ? 1400 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
   setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), duracaoQueda(pontos, supernova) + pausa);
 }
 

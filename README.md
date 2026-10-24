@@ -14,9 +14,9 @@ Design: 2D, sprites em pixel art, chamativo.
 Como funciona hoje no protótipo:
 
 - Até 7 perguntas por dia, as mesmas para todo mundo, com **25 segundos** cada (o relógio começa depois de uma contagem de 3).
-- A viagem começa na Terra: a descida inicial passa pelo Sistema Solar e chega ao "0". Daí, cada ponto
+- A viagem começa na Terra: uma descida curta, passando pela Lua, chega ao "0". Daí, cada ponto
   vale **100 anos-luz** de verdade (260 pontos = 26.000 AL, o centro da galáxia). As raras caem pesadas e rápidas,
-  as óbvias planam devagar. Um tardígrado (o mascote) acompanha.
+  as óbvias planam devagar, e a supernova carrega, segura e mergulha em velocidade de dobra. Um tardígrado (o mascote) acompanha.
 - No caminho, marcos nas distâncias reais: Alfa Centauri, Sirius, Vega, Plêiades, Betelgeuse, Nebulosa de Órion,
   Gaia BH1, Nebulosa do Anel, Nebulosa da Lagoa, Caranguejo, Pilares da Criação, Eta Carinae, Ômega Centauri,
   Aglomerado de Hércules e, no fim, Sagitário A* (o fundo vira negativo). As nebulosas e aglomerados ficam no
