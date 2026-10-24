@@ -24,6 +24,8 @@ function viagem(pontos) {
 // A viagem começa fora da atmosfera, já no céu escuro: ao iniciar, o tardígrado desce
 // da Terra até aqui. Distância e réguas contam a partir deste ponto (o "0").
 const AL_INICIAL = 300;
+// Último estágio (negativo + buraco negro): a esta distância da partida.
+const DISTANCIA_NEGATIVO = 12000;
 const PX_POR_AL = 0.5; // pixels da cena por ano-luz
 const DURACAO_DESCIDA = 2400; // ms, referência (a queda de cada resposta tem a sua duração)
 
@@ -81,7 +83,7 @@ const MARCOS = [
   { al: 8000, nome: "PILARES DA CRIAÇÃO (ao fundo)" },
   { al: 9000, nome: "ALFA CENTAURI", corpo: "estrela" },
   { al: 12000, nome: "NEBULOSA DE ÓRION", nebulosa: true },
-  { al: AL_INICIAL + 10000, nome: "HORIZONTE DE EVENTOS" },
+  { al: AL_INICIAL + DISTANCIA_NEGATIVO, nome: "HORIZONTE DE EVENTOS" },
 ];
 const CURIOSIDADES = [
   [40, "aqui o céu azul começa a virar preto"],
@@ -105,8 +107,8 @@ const CURIOSIDADES = [
   [10500, "Alfa Centauri é o sistema estelar mais perto do Sol"],
   [12800, "Guardiões da Galáxia: tá tocando Awesome Mix aqui"],
   [14000, "na Nebulosa de Órion nascem estrelas novas"],
-  [10900, "Interestelar: Gargântua, o buraco negro do filme"],
-  [11600, "nem a luz escapa de um buraco negro"],
+  [12900, "Interestelar: Gargântua, o buraco negro do filme"],
+  [13600, "nem a luz escapa de um buraco negro"],
 ];
 
 // Cor do fundo por profundidade: céu claro perto da Terra, escurecendo até o preto.
@@ -983,9 +985,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Zonas do fundo por profundidade.
   // A partir de ~5.000 AL os Pilares da Criação viram o pano de fundo da viagem:
   // grandes, no meio, misturados ao céu (somam luz, não cobrem), e sobem bem devagar.
-  // Último estágio: depois de 10.000 AL (contando da partida) tudo vira negativo
+  // Último estágio: depois de 12.000 AL (contando da partida) tudo vira negativo
   // e um buraco negro enorme ocupa o fundo.
-  const AL_NEGATIVO = AL_INICIAL + 10000;
+  const AL_NEGATIVO = AL_INICIAL + DISTANCIA_NEGATIVO;
   let negativo = false;
   function verificarNegativo() {
     const alem = camera.atual >= AL_NEGATIVO;

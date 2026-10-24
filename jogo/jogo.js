@@ -285,7 +285,9 @@ function comecar() {
   $("hud").hidden = false;
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
-    cena.irAte(AL_INICIAL, DESCIDA_INICIAL);
+    // modo teste: ?ir=11800 na URL começa a viagem já nessa distância (para ver o fundo de perto)
+    const ir = Number(new URLSearchParams(location.search).get("ir")) || 0;
+    cena.irAte(AL_INICIAL + Math.max(0, ir), DESCIDA_INICIAL);
     setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
     return;
   }
