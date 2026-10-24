@@ -12,17 +12,8 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.03,
-   "pontos": 1
-  },
-  {
-   "resposta": "Ferrari",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.592,
-   "peso": 0.12,
+   "fama": 0.03,
+   "peso": 0.116,
    "pontos": 1
   },
   {
@@ -32,57 +23,8 @@
    "icf": 10.549,
    "ajustado": true,
    "percentil": 0.017,
-   "peso": 0.01,
-   "pontos": 1
-  },
-  {
-   "resposta": "Ford",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.592,
-   "peso": 0.04,
-   "pontos": 1
-  },
-  {
-   "resposta": "Honda",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.592,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
-   "resposta": "Hyundai",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.592,
-   "peso": 0.09,
-   "pontos": 1
-  },
-  {
-   "resposta": "Renault",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.592,
+   "fama": 0.01,
    "peso": 0.1,
-   "pontos": 1
-  },
-  {
-   "resposta": "Toyota",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.592,
-   "peso": 0.05,
    "pontos": 1
   },
   {
@@ -94,8 +36,75 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.02,
+   "fama": 0.02,
+   "peso": 0.108,
    "pontos": 1
+  },
+  {
+   "resposta": "Ford",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.04,
+   "peso": 0.125,
+   "pontos": 2
+  },
+  {
+   "resposta": "Honda",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.08,
+   "peso": 0.141,
+   "pontos": 2
+  },
+  {
+   "resposta": "Hyundai",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.09,
+   "peso": 0.149,
+   "pontos": 2
+  },
+  {
+   "resposta": "Renault",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.1,
+   "peso": 0.158,
+   "pontos": 2
+  },
+  {
+   "resposta": "Toyota",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.05,
+   "peso": 0.133,
+   "pontos": 2
+  },
+  {
+   "resposta": "Ferrari",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.12,
+   "peso": 0.166,
+   "pontos": 3
   },
   {
    "resposta": "Jeep",
@@ -104,8 +113,20 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.14,
-   "pontos": 2
+   "fama": 0.14,
+   "peso": 0.174,
+   "pontos": 3
+  },
+  {
+   "resposta": "Audi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.2,
+   "peso": 0.207,
+   "pontos": 4
   },
   {
    "resposta": "BMW",
@@ -114,8 +135,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.16,
-   "pontos": 3
+   "fama": 0.16,
+   "peso": 0.191,
+   "pontos": 4
   },
   {
    "resposta": "Mercedes-Benz",
@@ -126,8 +148,9 @@
    "icf": 10.829,
    "ajustado": true,
    "percentil": 0.033,
-   "peso": 0.16,
-   "pontos": 3
+   "fama": 0.16,
+   "peso": 0.191,
+   "pontos": 4
   },
   {
    "resposta": "Nissan",
@@ -136,28 +159,9 @@
    "icf": 11.726,
    "ajustado": true,
    "percentil": 0.067,
-   "peso": 0.16,
-   "pontos": 3
-  },
-  {
-   "resposta": "Audi",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.592,
-   "peso": 0.2,
+   "fama": 0.16,
+   "peso": 0.191,
    "pontos": 4
-  },
-  {
-   "resposta": "Peugeot",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.592,
-   "peso": 0.22,
-   "pontos": 5
   },
   {
    "resposta": "Lamborghini",
@@ -166,8 +170,20 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.24,
-   "pontos": 6
+   "fama": 0.24,
+   "peso": 0.224,
+   "pontos": 5
+  },
+  {
+   "resposta": "Peugeot",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.22,
+   "peso": 0.215,
+   "pontos": 5
   },
   {
    "resposta": "Porsche",
@@ -176,8 +192,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.26,
-   "pontos": 7
+   "fama": 0.26,
+   "peso": 0.234,
+   "pontos": 5
   },
   {
    "resposta": "Citroën",
@@ -186,8 +203,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.245,
+   "pontos": 6
   },
   {
    "resposta": "Kia",
@@ -196,8 +214,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Mitsubishi",
@@ -206,8 +225,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Tesla",
@@ -216,8 +236,9 @@
    "icf": 13.151,
    "ajustado": true,
    "percentil": 0.133,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "BYD",
@@ -226,8 +247,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.288,
+   "pontos": 8
   },
   {
    "resposta": "Volvo",
@@ -236,8 +258,9 @@
    "icf": 11.885,
    "ajustado": true,
    "percentil": 0.083,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.298,
+   "pontos": 9
   },
   {
    "resposta": "Chery",
@@ -248,8 +271,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.314,
+   "pontos": 10
   },
   {
    "resposta": "Land Rover",
@@ -258,8 +282,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.314,
+   "pontos": 10
   },
   {
    "resposta": "Suzuki",
@@ -268,8 +293,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.33,
+   "pontos": 11
   },
   {
    "resposta": "Dodge",
@@ -278,8 +304,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.346,
+   "pontos": 12
   },
   {
    "resposta": "Jaguar",
@@ -288,8 +315,9 @@
    "icf": 12.739,
    "ajustado": true,
    "percentil": 0.117,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.346,
+   "pontos": 12
   },
   {
    "resposta": "Bugatti",
@@ -298,8 +326,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.373,
+   "pontos": 14
   },
   {
    "resposta": "Mazda",
@@ -308,8 +337,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.373,
+   "pontos": 14
   },
   {
    "resposta": "Subaru",
@@ -318,8 +348,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.373,
+   "pontos": 14
   },
   {
    "resposta": "Mini",
@@ -328,8 +359,9 @@
    "icf": 9.621,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.399,
+   "pontos": 16
   },
   {
    "resposta": "Rolls-Royce",
@@ -338,8 +370,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.399,
+   "pontos": 16
   },
   {
    "resposta": "Maserati",
@@ -348,8 +381,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.421,
+   "pontos": 18
   },
   {
    "resposta": "RAM",
@@ -358,8 +392,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.421,
+   "pontos": 18
   },
   {
    "resposta": "Alfa Romeo",
@@ -368,8 +403,9 @@
    "icf": 11.553,
    "ajustado": true,
    "percentil": 0.05,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "Aston Martin",
@@ -378,8 +414,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "Bentley",
@@ -388,8 +425,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "Cadillac",
@@ -398,8 +436,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "McLaren",
@@ -408,8 +447,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "Chrysler",
@@ -418,8 +458,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.534,
+   "pontos": 29
   },
   {
    "resposta": "GWM",
@@ -430,8 +471,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.534,
+   "pontos": 29
   },
   {
    "resposta": "Lexus",
@@ -440,8 +482,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.534,
+   "pontos": 29
   },
   {
    "resposta": "Smart",
@@ -450,8 +493,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.577,
+   "pontos": 33
   },
   {
    "resposta": "Troller",
@@ -460,8 +504,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.577,
+   "pontos": 33
   },
   {
    "resposta": "JAC",
@@ -470,8 +515,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.603,
+   "pontos": 36
   },
   {
    "resposta": "Lada",
@@ -480,8 +526,9 @@
    "icf": 14.268,
    "ajustado": true,
    "percentil": 0.167,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.629,
+   "pontos": 40
   },
   {
    "resposta": "Opel",
@@ -490,8 +537,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.629,
+   "pontos": 40
   },
   {
    "resposta": "Gurgel",
@@ -500,8 +548,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.664,
+   "pontos": 44
   },
   {
    "resposta": "Lotus",
@@ -510,8 +559,9 @@
    "icf": 13.21,
    "ajustado": true,
    "percentil": 0.15,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.664,
+   "pontos": 44
   },
   {
    "resposta": "Lincoln",
@@ -520,8 +570,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.699,
+   "pontos": 49
   },
   {
    "resposta": "Seat",
@@ -530,8 +581,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.699,
+   "pontos": 49
   },
   {
    "resposta": "Dacia",
@@ -540,8 +592,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.748,
+   "pontos": 56
   },
   {
    "resposta": "Skoda",
@@ -550,8 +603,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.748,
+   "pontos": 56
   },
   {
    "resposta": "Pagani",
@@ -560,8 +614,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.788,
+   "pontos": 62
   },
   {
    "resposta": "Infiniti",
@@ -570,8 +625,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.815,
+   "pontos": 66
   },
   {
    "resposta": "Acura",
@@ -580,8 +636,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.869,
+   "pontos": 76
   },
   {
    "resposta": "Koenigsegg",
@@ -590,8 +647,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.869,
+   "pontos": 76
   },
   {
    "resposta": "Puma",
@@ -600,8 +658,9 @@
    "icf": 12.213,
    "ajustado": true,
    "percentil": 0.1,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.869,
+   "pontos": 76
   },
   {
    "resposta": "DS",
@@ -610,8 +669,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.923,
+   "pontos": 85
   },
   {
    "resposta": "Romi-Isetta",
@@ -622,8 +682,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.592,
-   "peso": 0.88,
-   "pontos": 77
+   "fama": 0.88,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Romi-Isetta"

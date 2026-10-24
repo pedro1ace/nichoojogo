@@ -4,14 +4,48 @@
  "pergunta": "Cite um instrumento musical",
  "respostas": [
   {
+   "resposta": "Guitarra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.427,
+   "ajustado": true,
+   "percentil": 0.1,
+   "fama": 0.02,
+   "peso": 0.112,
+   "pontos": 1
+  },
+  {
+   "resposta": "Piano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.054,
+   "ajustado": true,
+   "percentil": 0.117,
+   "fama": 0.02,
+   "peso": 0.112,
+   "pontos": 1
+  },
+  {
+   "resposta": "Violão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.39,
+   "ajustado": true,
+   "percentil": 0.083,
+   "fama": 0.01,
+   "peso": 0.1,
+   "pontos": 1
+  },
+  {
    "resposta": "Bateria",
    "apelidos": [],
    "sem_dado": false,
    "icf": 9.79,
    "ajustado": true,
    "percentil": 0.017,
-   "peso": 0.04,
-   "pontos": 1
+   "fama": 0.04,
+   "peso": 0.125,
+   "pontos": 2
   },
   {
    "resposta": "Flauta",
@@ -22,38 +56,9 @@
    "icf": 12.232,
    "ajustado": true,
    "percentil": 0.183,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
-   "resposta": "Guitarra",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.427,
-   "ajustado": true,
-   "percentil": 0.1,
-   "peso": 0.02,
-   "pontos": 1
-  },
-  {
-   "resposta": "Pandeiro",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.037,
-   "ajustado": true,
-   "percentil": 0.317,
-   "peso": 0.12,
-   "pontos": 1
-  },
-  {
-   "resposta": "Piano",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.054,
-   "ajustado": true,
-   "percentil": 0.117,
-   "peso": 0.02,
-   "pontos": 1
+   "fama": 0.08,
+   "peso": 0.141,
+   "pontos": 2
   },
   {
    "resposta": "Saxofone",
@@ -64,8 +69,9 @@
    "icf": 13.279,
    "ajustado": true,
    "percentil": 0.35,
-   "peso": 0.1,
-   "pontos": 1
+   "fama": 0.1,
+   "peso": 0.154,
+   "pontos": 2
   },
   {
    "resposta": "Teclado",
@@ -74,8 +80,9 @@
    "icf": 10.342,
    "ajustado": true,
    "percentil": 0.067,
-   "peso": 0.1,
-   "pontos": 1
+   "fama": 0.1,
+   "peso": 0.154,
+   "pontos": 2
   },
   {
    "resposta": "Violino",
@@ -84,18 +91,9 @@
    "icf": 12.245,
    "ajustado": true,
    "percentil": 0.2,
-   "peso": 0.05,
-   "pontos": 1
-  },
-  {
-   "resposta": "Violão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.39,
-   "ajustado": true,
-   "percentil": 0.083,
-   "peso": 0.01,
-   "pontos": 1
+   "fama": 0.05,
+   "peso": 0.133,
+   "pontos": 2
   },
   {
    "resposta": "Baixo",
@@ -106,8 +104,9 @@
    "icf": 8.839,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.14,
-   "pontos": 2
+   "fama": 0.14,
+   "peso": 0.174,
+   "pontos": 3
   },
   {
    "resposta": "Cavaquinho",
@@ -116,30 +115,19 @@
    "icf": 13.137,
    "ajustado": true,
    "percentil": 0.333,
-   "peso": 0.16,
+   "fama": 0.16,
+   "peso": 0.182,
    "pontos": 3
   },
   {
-   "resposta": "Sanfona",
-   "apelidos": [
-    "acordeão",
-    "acordeom"
-   ],
-   "sem_dado": false,
-   "icf": 13.013,
-   "ajustado": true,
-   "percentil": 0.3,
-   "peso": 0.18,
-   "pontos": 3
-  },
-  {
-   "resposta": "Trompete",
+   "resposta": "Pandeiro",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.32,
+   "icf": 13.037,
    "ajustado": true,
-   "percentil": 0.367,
-   "peso": 0.18,
+   "percentil": 0.317,
+   "fama": 0.12,
+   "peso": 0.166,
    "pontos": 3
   },
   {
@@ -151,18 +139,34 @@
    "icf": 12.854,
    "ajustado": true,
    "percentil": 0.258,
-   "peso": 0.2,
+   "fama": 0.2,
+   "peso": 0.207,
    "pontos": 4
   },
   {
-   "resposta": "Tambor",
+   "resposta": "Sanfona",
+   "apelidos": [
+    "acordeão",
+    "acordeom"
+   ],
+   "sem_dado": false,
+   "icf": 13.013,
+   "ajustado": true,
+   "percentil": 0.3,
+   "fama": 0.18,
+   "peso": 0.195,
+   "pontos": 4
+  },
+  {
+   "resposta": "Trompete",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.402,
+   "icf": 13.32,
    "ajustado": true,
-   "percentil": 0.233,
-   "peso": 0.22,
-   "pontos": 5
+   "percentil": 0.367,
+   "fama": 0.18,
+   "peso": 0.195,
+   "pontos": 4
   },
   {
    "resposta": "Berimbau",
@@ -171,8 +175,20 @@
    "icf": 13.922,
    "ajustado": true,
    "percentil": 0.45,
-   "peso": 0.26,
-   "pontos": 7
+   "fama": 0.26,
+   "peso": 0.229,
+   "pontos": 5
+  },
+  {
+   "resposta": "Tambor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.402,
+   "ajustado": true,
+   "percentil": 0.233,
+   "fama": 0.22,
+   "peso": 0.215,
+   "pontos": 5
   },
   {
    "resposta": "Triângulo",
@@ -181,8 +197,9 @@
    "icf": 11.504,
    "ajustado": true,
    "percentil": 0.15,
-   "peso": 0.26,
-   "pontos": 7
+   "fama": 0.26,
+   "peso": 0.229,
+   "pontos": 5
   },
   {
    "resposta": "Harpa",
@@ -191,8 +208,9 @@
    "icf": 12.882,
    "ajustado": true,
    "percentil": 0.283,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.25,
+   "pontos": 6
   },
   {
    "resposta": "Violoncelo",
@@ -203,8 +221,9 @@
    "icf": 13.633,
    "ajustado": true,
    "percentil": 0.4,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.25,
+   "pontos": 6
   },
   {
    "resposta": "Ukulele",
@@ -213,8 +232,9 @@
    "icf": 14.723,
    "ajustado": true,
    "percentil": 0.567,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Clarinete",
@@ -223,8 +243,9 @@
    "icf": 13.749,
    "ajustado": true,
    "percentil": 0.417,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.32,
+   "peso": 0.282,
+   "pontos": 8
   },
   {
    "resposta": "Trombone",
@@ -233,8 +254,9 @@
    "icf": 13.498,
    "ajustado": true,
    "percentil": 0.383,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.32,
+   "peso": 0.282,
+   "pontos": 8
   },
   {
    "resposta": "Zabumba",
@@ -243,8 +265,9 @@
    "icf": 14.795,
    "ajustado": true,
    "percentil": 0.617,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.298,
+   "pontos": 9
   },
   {
    "resposta": "Viola caipira",
@@ -255,8 +278,9 @@
    "icf": 11.742,
    "ajustado": true,
    "percentil": 0.167,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.314,
+   "pontos": 10
   },
   {
    "resposta": "Órgão",
@@ -265,8 +289,9 @@
    "icf": 9.911,
    "ajustado": true,
    "percentil": 0.033,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.314,
+   "pontos": 10
   },
   {
    "resposta": "Atabaque",
@@ -275,8 +300,9 @@
    "icf": 15.122,
    "ajustado": true,
    "percentil": 0.7,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.341,
+   "pontos": 12
   },
   {
    "resposta": "Cuíca",
@@ -285,8 +311,9 @@
    "icf": 14.851,
    "ajustado": true,
    "percentil": 0.633,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.341,
+   "pontos": 12
   },
   {
    "resposta": "Xilofone",
@@ -295,8 +322,9 @@
    "icf": 15.639,
    "ajustado": true,
    "percentil": 0.8,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.341,
+   "pontos": 12
   },
   {
    "resposta": "Tuba",
@@ -305,8 +333,9 @@
    "icf": 14.12,
    "ajustado": true,
    "percentil": 0.483,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.362,
+   "pontos": 13
   },
   {
    "resposta": "Banjo",
@@ -315,8 +344,9 @@
    "icf": 14.042,
    "ajustado": true,
    "percentil": 0.467,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.378,
+   "pontos": 14
   },
   {
    "resposta": "Tamborim",
@@ -325,8 +355,9 @@
    "icf": 14.765,
    "ajustado": true,
    "percentil": 0.583,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.378,
+   "pontos": 14
   },
   {
    "resposta": "Chocalho",
@@ -335,8 +366,9 @@
    "icf": 14.242,
    "ajustado": true,
    "percentil": 0.55,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.405,
+   "pontos": 16
   },
   {
    "resposta": "Maracá",
@@ -345,8 +377,9 @@
    "icf": 15.54,
    "ajustado": true,
    "percentil": 0.767,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.405,
+   "pontos": 16
   },
   {
    "resposta": "Surdo",
@@ -355,8 +388,9 @@
    "icf": 12.392,
    "ajustado": true,
    "percentil": 0.217,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.405,
+   "pontos": 16
   },
   {
    "resposta": "Agogô",
@@ -365,8 +399,9 @@
    "icf": 15.965,
    "ajustado": true,
    "percentil": 0.85,
-   "peso": 0.48,
-   "pontos": 23
+   "fama": 0.48,
+   "peso": 0.426,
+   "pontos": 18
   },
   {
    "resposta": "Castanhola",
@@ -375,8 +410,9 @@
    "icf": 16.608,
    "ajustado": true,
    "percentil": 0.95,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.437,
+   "pontos": 19
   },
   {
    "resposta": "Bandolim",
@@ -385,8 +421,9 @@
    "icf": 13.799,
    "ajustado": true,
    "percentil": 0.433,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "Pratos",
@@ -395,8 +432,9 @@
    "icf": 10.338,
    "ajustado": true,
    "percentil": 0.05,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "Reco-reco",
@@ -405,8 +443,9 @@
    "icf": 14.155,
    "ajustado": true,
    "percentil": 0.5,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "Gongo",
@@ -415,8 +454,9 @@
    "icf": 14.965,
    "ajustado": true,
    "percentil": 0.683,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.499,
+   "pontos": 25
   },
   {
    "resposta": "Bongô",
@@ -425,8 +465,9 @@
    "icf": 16.112,
    "ajustado": true,
    "percentil": 0.9,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.525,
+   "pontos": 28
   },
   {
    "resposta": "Oboé",
@@ -435,8 +476,9 @@
    "icf": 14.777,
    "ajustado": true,
    "percentil": 0.6,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.525,
+   "pontos": 28
   },
   {
    "resposta": "Gaita de foles",
@@ -445,8 +487,9 @@
    "icf": 12.854,
    "ajustado": true,
    "percentil": 0.258,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.551,
+   "pontos": 30
   },
   {
    "resposta": "Fagote",
@@ -455,8 +498,9 @@
    "icf": 15.174,
    "ajustado": true,
    "percentil": 0.717,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.577,
+   "pontos": 33
   },
   {
    "resposta": "Marimba",
@@ -465,8 +509,9 @@
    "icf": 15.599,
    "ajustado": true,
    "percentil": 0.783,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.577,
+   "pontos": 33
   },
   {
    "resposta": "Trompa",
@@ -475,8 +520,9 @@
    "icf": 14.163,
    "ajustado": true,
    "percentil": 0.517,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.603,
+   "pontos": 36
   },
   {
    "resposta": "Cítara",
@@ -485,8 +531,9 @@
    "icf": 15.305,
    "ajustado": true,
    "percentil": 0.733,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.629,
+   "pontos": 40
   },
   {
    "resposta": "Flautim",
@@ -497,8 +544,9 @@
    "icf": 16.184,
    "ajustado": true,
    "percentil": 0.917,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.629,
+   "pontos": 40
   },
   {
    "resposta": "Ganzá",
@@ -507,8 +555,9 @@
    "icf": 15.909,
    "ajustado": true,
    "percentil": 0.833,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.655,
+   "pontos": 43
   },
   {
    "resposta": "Alaúde",
@@ -517,8 +566,9 @@
    "icf": 14.903,
    "ajustado": true,
    "percentil": 0.65,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.673,
+   "pontos": 45
   },
   {
    "resposta": "Kalimba",
@@ -527,7 +577,8 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.992,
-   "peso": 0.7,
+   "fama": 0.7,
+   "peso": 0.699,
    "pontos": 49
   },
   {
@@ -537,7 +588,8 @@
    "icf": 14.92,
    "ajustado": true,
    "percentil": 0.667,
-   "peso": 0.7,
+   "fama": 0.7,
+   "peso": 0.699,
    "pontos": 49
   },
   {
@@ -547,8 +599,9 @@
    "icf": 15.794,
    "ajustado": true,
    "percentil": 0.817,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.748,
+   "pontos": 56
   },
   {
    "resposta": "Vibrafone",
@@ -557,8 +610,9 @@
    "icf": 16.025,
    "ajustado": true,
    "percentil": 0.867,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.748,
+   "pontos": 56
   },
   {
    "resposta": "Caxixi",
@@ -567,8 +621,9 @@
    "icf": 16.585,
    "ajustado": true,
    "percentil": 0.933,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.802,
+   "pontos": 64
   },
   {
    "resposta": "Didgeridoo",
@@ -577,8 +632,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.992,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.802,
+   "pontos": 64
   },
   {
    "resposta": "Tabla",
@@ -587,8 +643,9 @@
    "icf": 15.46,
    "ajustado": true,
    "percentil": 0.75,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.842,
+   "pontos": 71
   },
   {
    "resposta": "Fole de oito baixos",
@@ -599,8 +656,9 @@
    "icf": 11.464,
    "ajustado": true,
    "percentil": 0.133,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.883,
+   "pontos": 78
   },
   {
    "resposta": "Serrote",
@@ -609,8 +667,9 @@
    "icf": 14.206,
    "ajustado": true,
    "percentil": 0.533,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.883,
+   "pontos": 78
   },
   {
    "resposta": "Theremin",
@@ -619,8 +678,9 @@
    "icf": 16.061,
    "ajustado": true,
    "percentil": 0.883,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.923,
+   "pontos": 85
   },
   {
    "resposta": "Celesta",
@@ -629,8 +689,9 @@
    "icf": 17.309,
    "ajustado": true,
    "percentil": 0.967,
-   "peso": 0.86,
-   "pontos": 74
+   "fama": 0.86,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Serrote"

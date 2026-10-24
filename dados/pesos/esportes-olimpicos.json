@@ -4,57 +4,14 @@
  "pergunta": "Cite um esporte disputado nas Olimpíadas",
  "respostas": [
   {
-   "resposta": "Atletismo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.82,
-   "ajustado": true,
-   "percentil": 0.444,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
-   "resposta": "Basquete",
-   "apelidos": [
-    "basquetebol"
-   ],
-   "sem_dado": false,
-   "icf": 11.202,
-   "ajustado": true,
-   "percentil": 0.254,
-   "peso": 0.05,
-   "pontos": 1
-  },
-  {
    "resposta": "Futebol",
    "apelidos": [],
    "sem_dado": false,
    "icf": 8.638,
    "ajustado": true,
    "percentil": 0.032,
-   "peso": 0.01,
-   "pontos": 1
-  },
-  {
-   "resposta": "Ginástica",
-   "apelidos": [
-    "ginástica artística"
-   ],
-   "sem_dado": false,
-   "icf": 11.238,
-   "ajustado": true,
-   "percentil": 0.27,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
-   "resposta": "Judô",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.432,
-   "ajustado": true,
-   "percentil": 0.571,
-   "peso": 0.12,
+   "fama": 0.01,
+   "peso": 0.1,
    "pontos": 1
   },
   {
@@ -64,7 +21,8 @@
    "icf": 11.298,
    "ajustado": true,
    "percentil": 0.302,
-   "peso": 0.04,
+   "fama": 0.04,
+   "peso": 0.116,
    "pontos": 1
   },
   {
@@ -76,8 +34,79 @@
    "icf": 11.457,
    "ajustado": true,
    "percentil": 0.365,
-   "peso": 0.03,
+   "fama": 0.03,
+   "peso": 0.108,
    "pontos": 1
+  },
+  {
+   "resposta": "Atletismo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.82,
+   "ajustado": true,
+   "percentil": 0.444,
+   "fama": 0.08,
+   "peso": 0.135,
+   "pontos": 2
+  },
+  {
+   "resposta": "Basquete",
+   "apelidos": [
+    "basquetebol"
+   ],
+   "sem_dado": false,
+   "icf": 11.202,
+   "ajustado": true,
+   "percentil": 0.254,
+   "fama": 0.05,
+   "peso": 0.124,
+   "pontos": 2
+  },
+  {
+   "resposta": "Ginástica",
+   "apelidos": [
+    "ginástica artística"
+   ],
+   "sem_dado": false,
+   "icf": 11.238,
+   "ajustado": true,
+   "percentil": 0.27,
+   "fama": 0.08,
+   "peso": 0.135,
+   "pontos": 2
+  },
+  {
+   "resposta": "Judô",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.432,
+   "ajustado": true,
+   "percentil": 0.571,
+   "fama": 0.12,
+   "peso": 0.147,
+   "pontos": 2
+  },
+  {
+   "resposta": "Boxe",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.047,
+   "ajustado": true,
+   "percentil": 0.476,
+   "fama": 0.2,
+   "peso": 0.182,
+   "pontos": 3
+  },
+  {
+   "resposta": "Handebol",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.647,
+   "ajustado": true,
+   "percentil": 0.603,
+   "fama": 0.2,
+   "peso": 0.182,
+   "pontos": 3
   },
   {
    "resposta": "Skate",
@@ -86,18 +115,9 @@
    "icf": 11.445,
    "ajustado": true,
    "percentil": 0.349,
-   "peso": 0.14,
-   "pontos": 2
-  },
-  {
-   "resposta": "Tênis",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.261,
-   "ajustado": true,
-   "percentil": 0.143,
-   "peso": 0.14,
-   "pontos": 2
+   "fama": 0.14,
+   "peso": 0.159,
+   "pontos": 3
   },
   {
    "resposta": "Surfe",
@@ -108,38 +128,20 @@
    "icf": 12.994,
    "ajustado": true,
    "percentil": 0.651,
-   "peso": 0.16,
+   "fama": 0.16,
+   "peso": 0.171,
    "pontos": 3
   },
   {
-   "resposta": "Boxe",
+   "resposta": "Tênis",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.047,
+   "icf": 10.261,
    "ajustado": true,
-   "percentil": 0.476,
-   "peso": 0.2,
-   "pontos": 4
-  },
-  {
-   "resposta": "Handebol",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.647,
-   "ajustado": true,
-   "percentil": 0.603,
-   "peso": 0.2,
-   "pontos": 4
-  },
-  {
-   "resposta": "Vôlei de praia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.108,
-   "ajustado": true,
-   "percentil": 0.127,
-   "peso": 0.22,
-   "pontos": 5
+   "percentil": 0.143,
+   "fama": 0.14,
+   "peso": 0.159,
+   "pontos": 3
   },
   {
    "resposta": "Ciclismo",
@@ -148,8 +150,9 @@
    "icf": 11.655,
    "ajustado": true,
    "percentil": 0.413,
-   "peso": 0.24,
-   "pontos": 6
+   "fama": 0.24,
+   "peso": 0.202,
+   "pontos": 4
   },
   {
    "resposta": "Tênis de mesa",
@@ -160,8 +163,20 @@
    "icf": 9.621,
    "ajustado": true,
    "percentil": 0.079,
-   "peso": 0.26,
-   "pontos": 7
+   "fama": 0.26,
+   "peso": 0.21,
+   "pontos": 4
+  },
+  {
+   "resposta": "Vôlei de praia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.108,
+   "ajustado": true,
+   "percentil": 0.127,
+   "fama": 0.22,
+   "peso": 0.194,
+   "pontos": 4
   },
   {
    "resposta": "Esgrima",
@@ -170,8 +185,9 @@
    "icf": 13.761,
    "ajustado": true,
    "percentil": 0.778,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.218,
+   "pontos": 5
   },
   {
    "resposta": "Taekwondo",
@@ -180,18 +196,9 @@
    "icf": 13.408,
    "ajustado": true,
    "percentil": 0.714,
-   "peso": 0.36,
-   "pontos": 13
-  },
-  {
-   "resposta": "Hipismo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.697,
-   "ajustado": true,
-   "percentil": 0.762,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.36,
+   "peso": 0.226,
+   "pontos": 5
   },
   {
    "resposta": "Golfe",
@@ -200,8 +207,20 @@
    "icf": 11.185,
    "ajustado": true,
    "percentil": 0.238,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.251,
+   "pontos": 6
+  },
+  {
+   "resposta": "Hipismo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.697,
+   "ajustado": true,
+   "percentil": 0.762,
+   "fama": 0.38,
+   "peso": 0.236,
+   "pontos": 6
   },
   {
    "resposta": "Remo",
@@ -210,8 +229,9 @@
    "icf": 12.231,
    "ajustado": true,
    "percentil": 0.524,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.251,
+   "pontos": 6
   },
   {
    "resposta": "Canoagem",
@@ -220,8 +240,9 @@
    "icf": 12.83,
    "ajustado": true,
    "percentil": 0.635,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.267,
+   "pontos": 7
   },
   {
    "resposta": "Levantamento de peso",
@@ -232,8 +253,9 @@
    "icf": 9.773,
    "ajustado": true,
    "percentil": 0.095,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.287,
+   "pontos": 8
   },
   {
    "resposta": "Luta olímpica",
@@ -244,8 +266,9 @@
    "icf": 9.121,
    "ajustado": true,
    "percentil": 0.063,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.287,
+   "pontos": 8
   },
   {
    "resposta": "Tiro com arco",
@@ -254,8 +277,9 @@
    "icf": 8.513,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.287,
+   "pontos": 8
   },
   {
    "resposta": "Badminton",
@@ -264,8 +288,9 @@
    "icf": 13.83,
    "ajustado": true,
    "percentil": 0.794,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.317,
+   "pontos": 10
   },
   {
    "resposta": "Ginástica rítmica",
@@ -274,8 +299,9 @@
    "icf": 12.235,
    "ajustado": true,
    "percentil": 0.54,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.317,
+   "pontos": 10
   },
   {
    "resposta": "Rugby",
@@ -284,8 +310,9 @@
    "icf": 12.427,
    "ajustado": true,
    "percentil": 0.556,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.317,
+   "pontos": 10
   },
   {
    "resposta": "Hóquei sobre grama",
@@ -296,8 +323,9 @@
    "icf": 10.083,
    "ajustado": true,
    "percentil": 0.111,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.358,
+   "pontos": 13
   },
   {
    "resposta": "Patinação artística",
@@ -306,8 +334,9 @@
    "icf": 12.084,
    "ajustado": true,
    "percentil": 0.492,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.358,
+   "pontos": 13
   },
   {
    "resposta": "Polo aquático",
@@ -316,8 +345,9 @@
    "icf": 11.514,
    "ajustado": true,
    "percentil": 0.381,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.358,
+   "pontos": 13
   },
   {
    "resposta": "Tiro esportivo",
@@ -326,8 +356,9 @@
    "icf": 10.682,
    "ajustado": true,
    "percentil": 0.175,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.358,
+   "pontos": 13
   },
   {
    "resposta": "Triatlo",
@@ -336,8 +367,9 @@
    "icf": 13.884,
    "ajustado": true,
    "percentil": 0.81,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.358,
+   "pontos": 13
   },
   {
    "resposta": "Escalada esportiva",
@@ -348,8 +380,9 @@
    "icf": 11.403,
    "ajustado": true,
    "percentil": 0.333,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.394,
+   "pontos": 16
   },
   {
    "resposta": "Saltos ornamentais",
@@ -358,8 +391,9 @@
    "icf": 12.761,
    "ajustado": true,
    "percentil": 0.619,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.394,
+   "pontos": 16
   },
   {
    "resposta": "Breaking",
@@ -370,8 +404,9 @@
    "icf": 16.065,
    "ajustado": true,
    "percentil": 0.873,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.424,
+   "pontos": 18
   },
   {
    "resposta": "Esqui",
@@ -380,8 +415,9 @@
    "icf": 11.696,
    "ajustado": true,
    "percentil": 0.429,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.424,
+   "pontos": 18
   },
   {
    "resposta": "Salto com vara",
@@ -390,8 +426,9 @@
    "icf": 8.568,
    "ajustado": true,
    "percentil": 0.016,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.424,
+   "pontos": 18
   },
   {
    "resposta": "Vela",
@@ -402,8 +439,9 @@
    "icf": 10.961,
    "ajustado": true,
    "percentil": 0.19,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.424,
+   "pontos": 18
   },
   {
    "resposta": "Caiaque",
@@ -412,8 +450,9 @@
    "icf": 13.118,
    "ajustado": true,
    "percentil": 0.683,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.467,
+   "pontos": 22
   },
   {
    "resposta": "Nado artístico",
@@ -424,8 +463,9 @@
    "icf": 12.139,
    "ajustado": true,
    "percentil": 0.508,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.467,
+   "pontos": 22
   },
   {
    "resposta": "Salto triplo",
@@ -434,8 +474,9 @@
    "icf": 11.299,
    "ajustado": true,
    "percentil": 0.317,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.467,
+   "pontos": 22
   },
   {
    "resposta": "BMX",
@@ -444,8 +485,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.968,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.533,
+   "pontos": 28
   },
   {
    "resposta": "Caratê",
@@ -456,8 +498,9 @@
    "icf": 14.576,
    "ajustado": true,
    "percentil": 0.825,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.533,
+   "pontos": 28
   },
   {
    "resposta": "Lançamento de dardo",
@@ -466,8 +509,9 @@
    "icf": 11.587,
    "ajustado": true,
    "percentil": 0.397,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.533,
+   "pontos": 28
   },
   {
    "resposta": "Mountain bike",
@@ -476,8 +520,9 @@
    "icf": 11.022,
    "ajustado": true,
    "percentil": 0.206,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.533,
+   "pontos": 28
   },
   {
    "resposta": "Snowboard",
@@ -486,8 +531,9 @@
    "icf": 13.443,
    "ajustado": true,
    "percentil": 0.73,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.533,
+   "pontos": 28
   },
   {
    "resposta": "Arremesso de peso",
@@ -496,7 +542,8 @@
    "icf": 11.028,
    "ajustado": true,
    "percentil": 0.222,
-   "peso": 0.6,
+   "fama": 0.6,
+   "peso": 0.599,
    "pontos": 36
   },
   {
@@ -506,7 +553,8 @@
    "icf": 16.236,
    "ajustado": true,
    "percentil": 0.889,
-   "peso": 0.6,
+   "fama": 0.6,
+   "peso": 0.599,
    "pontos": 36
   },
   {
@@ -516,7 +564,8 @@
    "icf": 13.283,
    "ajustado": true,
    "percentil": 0.698,
-   "peso": 0.6,
+   "fama": 0.6,
+   "peso": 0.599,
    "pontos": 36
   },
   {
@@ -526,8 +575,9 @@
    "icf": 11.265,
    "ajustado": true,
    "percentil": 0.286,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.64,
+   "pontos": 41
   },
   {
    "resposta": "Marcha atlética",
@@ -536,8 +586,9 @@
    "icf": 12.046,
    "ajustado": true,
    "percentil": 0.46,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.64,
+   "pontos": 41
   },
   {
    "resposta": "Beisebol",
@@ -546,8 +597,9 @@
    "icf": 13.029,
    "ajustado": true,
    "percentil": 0.667,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.673,
+   "pontos": 45
   },
   {
    "resposta": "Pentatlo moderno",
@@ -556,8 +608,9 @@
    "icf": 12.583,
    "ajustado": true,
    "percentil": 0.587,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.673,
+   "pontos": 45
   },
   {
    "resposta": "Lançamento de martelo",
@@ -566,8 +619,9 @@
    "icf": 10.612,
    "ajustado": true,
    "percentil": 0.159,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.698,
+   "pontos": 49
   },
   {
    "resposta": "Bobsled",
@@ -578,8 +632,9 @@
    "icf": 16.306,
    "ajustado": true,
    "percentil": 0.905,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.732,
+   "pontos": 54
   },
   {
    "resposta": "Curling",
@@ -588,8 +643,9 @@
    "icf": 15.17,
    "ajustado": true,
    "percentil": 0.857,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.732,
+   "pontos": 54
   },
   {
    "resposta": "Softbol",
@@ -598,8 +654,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.968,
-   "peso": 0.76,
-   "pontos": 58
+   "fama": 0.76,
+   "peso": 0.77,
+   "pontos": 59
   },
   {
    "resposta": "Biatlo",
@@ -608,8 +665,9 @@
    "icf": 16.504,
    "ajustado": true,
    "percentil": 0.921,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.809,
+   "pontos": 65
   },
   {
    "resposta": "Críquete",
@@ -618,8 +676,9 @@
    "icf": 14.721,
    "ajustado": true,
    "percentil": 0.841,
-   "peso": 0.8,
-   "pontos": 64
+   "fama": 0.8,
+   "peso": 0.809,
+   "pontos": 65
   },
   {
    "resposta": "Lacrosse",
@@ -628,8 +687,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.968,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.847,
+   "pontos": 72
   },
   {
    "resposta": "Squash",
@@ -638,8 +698,9 @@
    "icf": 13.576,
    "ajustado": true,
    "percentil": 0.746,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.873,
+   "pontos": 76
   },
   {
    "resposta": "Flag football",
@@ -648,8 +709,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.968,
-   "peso": 0.86,
-   "pontos": 74
+   "fama": 0.86,
+   "peso": 0.911,
+   "pontos": 83
   },
   {
    "resposta": "Skeleton",
@@ -658,8 +720,9 @@
    "icf": 20.0,
    "ajustado": true,
    "percentil": 0.968,
-   "peso": 0.86,
-   "pontos": 74
+   "fama": 0.86,
+   "peso": 0.911,
+   "pontos": 83
   },
   {
    "resposta": "Cabo de guerra",
@@ -668,8 +731,9 @@
    "icf": 9.068,
    "ajustado": true,
    "percentil": 0.048,
-   "peso": 0.9,
-   "pontos": 81
+   "fama": 0.9,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Cabo de guerra"

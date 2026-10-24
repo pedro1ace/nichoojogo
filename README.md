@@ -85,7 +85,14 @@ Para cada categoria, `pontuar.py` combina:
   resposta óbvia de planetas mesmo não sendo uma palavra tão comum.
 - **raridade global (30%)**: o ICF normalizado na base inteira.
 
+Esse peso (ou o manual) só decide a **ordem** das respostas. Depois a **régua da categoria** espalha essa ordem
+pelas faixas do jogo, para toda categoria ter de tudo: uns 25% óbvias, 35% comuns, 25% incomuns e 15% raras,
+mais a supernova. O peso de antes fica na coluna `fama` de `dados/pesos/revisao/<cat>.csv`.
+
 `pontos = 100 × peso²`, com mínimo de 1. A curva faz as respostas óbvias valerem quase nada.
+
+Categorias pequenas e fechadas (menos de 30 respostas) não dão para espalhar e ficam fora do jogo, listadas em
+`dados/fora_do_jogo.txt`. Os arquivos continuam no repositório.
 
 O ICF mede a palavra, não o significado, então erra quando a resposta é uma palavra comum com outro
 sentido ("Mesa" é uma constelação bem obscura, "Europa" é uma lua). Respostas que não estão na base saem
@@ -97,7 +104,7 @@ Mesa,85,
 Cabeleira de Berenice,,1
 ```
 
-`peso` vai de 0 a 100 e substitui o calculado; `supernova=1` escolhe a resposta secreta (senão, é a de mais pontos).
+`peso` vai de 0 a 100 e substitui o calculado na ordem da categoria; `supernova=1` escolhe a resposta secreta (senão, é a de mais pontos).
 
 ## Como adicionar uma categoria
 

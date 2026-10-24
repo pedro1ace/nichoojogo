@@ -4,12 +4,24 @@
  "pergunta": "Cite uma comida ou bebida de festa junina",
  "respostas": [
   {
-   "resposta": "Canjica",
+   "resposta": "Pamonha",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.002,
+   "icf": 14.09,
    "ajustado": true,
-   "percentil": 0.78,
+   "percentil": 0.805,
+   "fama": 0.04,
+   "peso": 0.112,
+   "pontos": 1
+  },
+  {
+   "resposta": "Pipoca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.637,
+   "ajustado": true,
+   "percentil": 0.463,
+   "fama": 0.01,
    "peso": 0.1,
    "pontos": 1
   },
@@ -23,18 +35,9 @@
    "icf": 11.14,
    "ajustado": true,
    "percentil": 0.366,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
-   "resposta": "Pamonha",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.09,
-   "ajustado": true,
-   "percentil": 0.805,
-   "peso": 0.04,
-   "pontos": 1
+   "fama": 0.08,
+   "peso": 0.148,
+   "pontos": 2
   },
   {
    "resposta": "Paçoca",
@@ -43,28 +46,9 @@
    "icf": 13.872,
    "ajustado": true,
    "percentil": 0.732,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Pipoca",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.637,
-   "ajustado": true,
-   "percentil": 0.463,
-   "peso": 0.01,
-   "pontos": 1
-  },
-  {
-   "resposta": "Pé de moleque",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.663,
-   "ajustado": true,
-   "percentil": 0.317,
-   "peso": 0.1,
-   "pontos": 1
+   "fama": 0.06,
+   "peso": 0.13,
+   "pontos": 2
   },
   {
    "resposta": "Quentão",
@@ -73,8 +57,9 @@
    "icf": 14.563,
    "ajustado": true,
    "percentil": 0.854,
-   "peso": 0.06,
-   "pontos": 1
+   "fama": 0.06,
+   "peso": 0.13,
+   "pontos": 2
   },
   {
    "resposta": "Bolo de milho",
@@ -83,17 +68,30 @@
    "icf": 10.153,
    "ajustado": true,
    "percentil": 0.22,
-   "peso": 0.14,
-   "pontos": 2
+   "fama": 0.14,
+   "peso": 0.184,
+   "pontos": 3
   },
   {
-   "resposta": "Cocada",
+   "resposta": "Canjica",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.994,
+   "icf": 14.002,
    "ajustado": true,
-   "percentil": 0.756,
-   "peso": 0.18,
+   "percentil": 0.78,
+   "fama": 0.1,
+   "peso": 0.166,
+   "pontos": 3
+  },
+  {
+   "resposta": "Pé de moleque",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.663,
+   "ajustado": true,
+   "percentil": 0.317,
+   "fama": 0.1,
+   "peso": 0.166,
    "pontos": 3
   },
   {
@@ -103,18 +101,9 @@
    "icf": 15.461,
    "ajustado": true,
    "percentil": 0.951,
-   "peso": 0.16,
-   "pontos": 3
-  },
-  {
-   "resposta": "Maçã do amor",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.443,
-   "ajustado": true,
-   "percentil": 0.024,
-   "peso": 0.18,
-   "pontos": 3
+   "fama": 0.16,
+   "peso": 0.202,
+   "pontos": 4
   },
   {
    "resposta": "Vinho quente",
@@ -123,8 +112,31 @@
    "icf": 9.641,
    "ajustado": true,
    "percentil": 0.073,
-   "peso": 0.16,
-   "pontos": 3
+   "fama": 0.16,
+   "peso": 0.202,
+   "pontos": 4
+  },
+  {
+   "resposta": "Cocada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.994,
+   "ajustado": true,
+   "percentil": 0.756,
+   "fama": 0.18,
+   "peso": 0.227,
+   "pontos": 5
+  },
+  {
+   "resposta": "Maçã do amor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.443,
+   "ajustado": true,
+   "percentil": 0.024,
+   "fama": 0.18,
+   "peso": 0.227,
+   "pontos": 5
   },
   {
    "resposta": "Pipoca doce",
@@ -133,8 +145,9 @@
    "icf": 10.592,
    "ajustado": true,
    "percentil": 0.268,
-   "peso": 0.2,
-   "pontos": 4
+   "fama": 0.2,
+   "peso": 0.251,
+   "pontos": 6
   },
   {
    "resposta": "Amendoim",
@@ -143,8 +156,9 @@
    "icf": 12.197,
    "ajustado": true,
    "percentil": 0.561,
-   "peso": 0.22,
-   "pontos": 5
+   "fama": 0.22,
+   "peso": 0.266,
+   "pontos": 7
   },
   {
    "resposta": "Pinhão",
@@ -153,8 +167,9 @@
    "icf": 12.763,
    "ajustado": true,
    "percentil": 0.634,
-   "peso": 0.24,
-   "pontos": 6
+   "fama": 0.24,
+   "peso": 0.282,
+   "pontos": 8
   },
   {
    "resposta": "Arroz doce",
@@ -163,8 +178,9 @@
    "icf": 9.883,
    "ajustado": true,
    "percentil": 0.122,
-   "peso": 0.26,
-   "pontos": 7
+   "fama": 0.26,
+   "peso": 0.298,
+   "pontos": 9
   },
   {
    "resposta": "Bolo de fubá",
@@ -173,8 +189,9 @@
    "icf": 11.401,
    "ajustado": true,
    "percentil": 0.415,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.313,
+   "pontos": 10
   },
   {
    "resposta": "Cachorro-quente",
@@ -183,8 +200,9 @@
    "icf": 9.932,
    "ajustado": true,
    "percentil": 0.146,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.337,
+   "pontos": 11
   },
   {
    "resposta": "Cuscuz",
@@ -193,8 +211,9 @@
    "icf": 13.679,
    "ajustado": true,
    "percentil": 0.707,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.337,
+   "pontos": 11
   },
   {
    "resposta": "Algodão-doce",
@@ -203,8 +222,9 @@
    "icf": 10.032,
    "ajustado": true,
    "percentil": 0.195,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.32,
+   "peso": 0.368,
+   "pontos": 14
   },
   {
    "resposta": "Quindim",
@@ -213,8 +233,9 @@
    "icf": 14.782,
    "ajustado": true,
    "percentil": 0.902,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.32,
+   "peso": 0.368,
+   "pontos": 14
   },
   {
    "resposta": "Churrasquinho",
@@ -225,8 +246,9 @@
    "icf": 14.193,
    "ajustado": true,
    "percentil": 0.829,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.391,
+   "pontos": 15
   },
   {
    "resposta": "Doce de abóbora",
@@ -235,8 +257,9 @@
    "icf": 10.773,
    "ajustado": true,
    "percentil": 0.341,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.415,
+   "pontos": 17
   },
   {
    "resposta": "Doce de leite",
@@ -245,8 +268,9 @@
    "icf": 9.332,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.415,
+   "pontos": 17
   },
   {
    "resposta": "Pastel",
@@ -255,8 +279,9 @@
    "icf": 11.996,
    "ajustado": true,
    "percentil": 0.512,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.438,
+   "pontos": 19
   },
   {
    "resposta": "Queijo coalho",
@@ -265,8 +290,9 @@
    "icf": 12.15,
    "ajustado": true,
    "percentil": 0.537,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.457,
+   "pontos": 21
   },
   {
    "resposta": "Batata-doce",
@@ -275,8 +301,9 @@
    "icf": 10.212,
    "ajustado": true,
    "percentil": 0.244,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.495,
+   "pontos": 25
   },
   {
    "resposta": "Bolo de aipim",
@@ -287,8 +314,9 @@
    "icf": 11.854,
    "ajustado": true,
    "percentil": 0.488,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.495,
+   "pontos": 25
   },
   {
    "resposta": "Mungunzá",
@@ -297,8 +325,9 @@
    "icf": 16.466,
    "ajustado": true,
    "percentil": 0.976,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.546,
+   "pontos": 30
   },
   {
    "resposta": "Tapioca",
@@ -307,8 +336,9 @@
    "icf": 12.897,
    "ajustado": true,
    "percentil": 0.659,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.546,
+   "pontos": 30
   },
   {
    "resposta": "Bom-bocado",
@@ -317,8 +347,9 @@
    "icf": 9.46,
    "ajustado": true,
    "percentil": 0.049,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.584,
+   "pontos": 34
   },
   {
    "resposta": "Pé de moça",
@@ -327,8 +358,9 @@
    "icf": 9.873,
    "ajustado": true,
    "percentil": 0.098,
-   "peso": 0.54,
-   "pontos": 29
+   "fama": 0.54,
+   "peso": 0.61,
+   "pontos": 37
   },
   {
    "resposta": "Cuscuz paulista",
@@ -337,8 +369,9 @@
    "icf": 11.581,
    "ajustado": true,
    "percentil": 0.439,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.635,
+   "pontos": 40
   },
   {
    "resposta": "Bolo de rolo",
@@ -347,8 +380,9 @@
    "icf": 10.638,
    "ajustado": true,
    "percentil": 0.293,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.673,
+   "pontos": 45
   },
   {
    "resposta": "Sagu",
@@ -357,8 +391,9 @@
    "icf": 14.729,
    "ajustado": true,
    "percentil": 0.878,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.673,
+   "pontos": 45
   },
   {
    "resposta": "Doce de batata-doce",
@@ -367,8 +402,9 @@
    "icf": 9.99,
    "ajustado": true,
    "percentil": 0.171,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.713,
+   "pontos": 51
   },
   {
    "resposta": "Bolo de pinhão",
@@ -377,8 +413,9 @@
    "icf": 11.289,
    "ajustado": true,
    "percentil": 0.39,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.753,
+   "pontos": 57
   },
   {
    "resposta": "Cartola",
@@ -387,8 +424,9 @@
    "icf": 12.532,
    "ajustado": true,
    "percentil": 0.585,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.792,
+   "pontos": 63
   },
   {
    "resposta": "Licor de jenipapo",
@@ -397,8 +435,9 @@
    "icf": 13.636,
    "ajustado": true,
    "percentil": 0.683,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.851,
+   "pontos": 72
   },
   {
    "resposta": "Mané pelado",
@@ -407,8 +446,9 @@
    "icf": 12.668,
    "ajustado": true,
    "percentil": 0.61,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.851,
+   "pontos": 72
   },
   {
    "resposta": "Capilé",
@@ -417,8 +457,9 @@
    "icf": 15.262,
    "ajustado": true,
    "percentil": 0.927,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.911,
+   "pontos": 83
   },
   {
    "resposta": "Manzape",
@@ -427,8 +468,9 @@
    "icf": 19.97,
    "ajustado": true,
    "percentil": 1.0,
-   "peso": 0.88,
-   "pontos": 77
+   "fama": 0.88,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Mané pelado"

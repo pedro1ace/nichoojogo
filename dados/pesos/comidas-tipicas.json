@@ -4,43 +4,14 @@
  "pergunta": "Cite uma comida típica do Brasil",
  "respostas": [
   {
-   "resposta": "Acarajé",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.88,
-   "ajustado": true,
-   "percentil": 0.712,
-   "peso": 0.1,
-   "pontos": 1
-  },
-  {
    "resposta": "Brigadeiro",
    "apelidos": [],
    "sem_dado": false,
    "icf": 11.481,
    "ajustado": true,
    "percentil": 0.254,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Churrasco",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.145,
-   "ajustado": true,
-   "percentil": 0.22,
-   "peso": 0.1,
-   "pontos": 1
-  },
-  {
-   "resposta": "Coxinha",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.077,
-   "ajustado": true,
-   "percentil": 0.542,
-   "peso": 0.08,
+   "fama": 0.06,
+   "peso": 0.117,
    "pontos": 1
   },
   {
@@ -50,7 +21,8 @@
    "icf": 12.297,
    "ajustado": true,
    "percentil": 0.407,
-   "peso": 0.01,
+   "fama": 0.01,
+   "peso": 0.1,
    "pontos": 1
   },
   {
@@ -60,8 +32,42 @@
    "icf": 10.036,
    "ajustado": true,
    "percentil": 0.085,
-   "peso": 0.04,
+   "fama": 0.04,
+   "peso": 0.108,
    "pontos": 1
+  },
+  {
+   "resposta": "Acarajé",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.88,
+   "ajustado": true,
+   "percentil": 0.712,
+   "fama": 0.1,
+   "peso": 0.138,
+   "pontos": 2
+  },
+  {
+   "resposta": "Churrasco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.145,
+   "ajustado": true,
+   "percentil": 0.22,
+   "fama": 0.1,
+   "peso": 0.138,
+   "pontos": 2
+  },
+  {
+   "resposta": "Coxinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.077,
+   "ajustado": true,
+   "percentil": 0.542,
+   "fama": 0.08,
+   "peso": 0.125,
+   "pontos": 2
   },
   {
    "resposta": "Moqueca",
@@ -70,7 +76,8 @@
    "icf": 13.833,
    "ajustado": true,
    "percentil": 0.661,
-   "peso": 0.14,
+   "fama": 0.14,
+   "peso": 0.15,
    "pontos": 2
   },
   {
@@ -82,7 +89,8 @@
    "icf": 8.572,
    "ajustado": true,
    "percentil": 0.017,
-   "peso": 0.18,
+   "fama": 0.18,
+   "peso": 0.167,
    "pontos": 3
   },
   {
@@ -92,7 +100,19 @@
    "icf": 12.51,
    "ajustado": true,
    "percentil": 0.441,
-   "peso": 0.16,
+   "fama": 0.16,
+   "peso": 0.159,
+   "pontos": 3
+  },
+  {
+   "resposta": "Pastel",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.996,
+   "ajustado": true,
+   "percentil": 0.288,
+   "fama": 0.22,
+   "peso": 0.184,
    "pontos": 3
   },
   {
@@ -102,28 +122,9 @@
    "icf": 12.897,
    "ajustado": true,
    "percentil": 0.508,
-   "peso": 0.2,
-   "pontos": 4
-  },
-  {
-   "resposta": "Pastel",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.996,
-   "ajustado": true,
-   "percentil": 0.288,
-   "peso": 0.22,
-   "pontos": 5
-  },
-  {
-   "resposta": "Vatapá",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.874,
-   "ajustado": true,
-   "percentil": 0.831,
-   "peso": 0.26,
-   "pontos": 7
+   "fama": 0.2,
+   "peso": 0.175,
+   "pontos": 3
   },
   {
    "resposta": "Açaí",
@@ -132,8 +133,9 @@
    "icf": 12.58,
    "ajustado": true,
    "percentil": 0.492,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.205,
+   "pontos": 4
   },
   {
    "resposta": "Baião de dois",
@@ -142,18 +144,20 @@
    "icf": 10.042,
    "ajustado": true,
    "percentil": 0.102,
-   "peso": 0.28,
-   "pontos": 8
+   "fama": 0.28,
+   "peso": 0.205,
+   "pontos": 4
   },
   {
-   "resposta": "Picanha",
+   "resposta": "Vatapá",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.981,
+   "icf": 14.874,
    "ajustado": true,
-   "percentil": 0.525,
-   "peso": 0.3,
-   "pontos": 9
+   "percentil": 0.831,
+   "fama": 0.26,
+   "peso": 0.192,
+   "pontos": 4
   },
   {
    "resposta": "Cuscuz",
@@ -162,8 +166,20 @@
    "icf": 13.679,
    "ajustado": true,
    "percentil": 0.61,
-   "peso": 0.32,
-   "pontos": 10
+   "fama": 0.32,
+   "peso": 0.226,
+   "pontos": 5
+  },
+  {
+   "resposta": "Picanha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.981,
+   "ajustado": true,
+   "percentil": 0.525,
+   "fama": 0.3,
+   "peso": 0.217,
+   "pontos": 5
   },
   {
    "resposta": "Carne de sol",
@@ -172,8 +188,9 @@
    "icf": 9.132,
    "ajustado": true,
    "percentil": 0.034,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.243,
+   "pontos": 6
   },
   {
    "resposta": "Pamonha",
@@ -182,8 +199,9 @@
    "icf": 14.09,
    "ajustado": true,
    "percentil": 0.78,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.243,
+   "pontos": 6
   },
   {
    "resposta": "Escondidinho",
@@ -192,8 +210,9 @@
    "icf": 13.803,
    "ajustado": true,
    "percentil": 0.644,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.264,
+   "pontos": 7
   },
   {
    "resposta": "Feijão tropeiro",
@@ -204,8 +223,9 @@
    "icf": 12.543,
    "ajustado": true,
    "percentil": 0.475,
-   "peso": 0.36,
-   "pontos": 13
+   "fama": 0.36,
+   "peso": 0.264,
+   "pontos": 7
   },
   {
    "resposta": "Mandioca frita",
@@ -216,8 +236,9 @@
    "icf": 12.186,
    "ajustado": true,
    "percentil": 0.356,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.286,
+   "pontos": 8
   },
   {
    "resposta": "Queijo coalho",
@@ -226,8 +247,9 @@
    "icf": 12.15,
    "ajustado": true,
    "percentil": 0.339,
-   "peso": 0.38,
-   "pontos": 14
+   "fama": 0.38,
+   "peso": 0.286,
+   "pontos": 8
   },
   {
    "resposta": "Canjica",
@@ -236,8 +258,9 @@
    "icf": 14.002,
    "ajustado": true,
    "percentil": 0.746,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.313,
+   "pontos": 10
   },
   {
    "resposta": "Galinhada",
@@ -246,8 +269,9 @@
    "icf": 14.812,
    "ajustado": true,
    "percentil": 0.814,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.313,
+   "pontos": 10
   },
   {
    "resposta": "Paçoca",
@@ -256,8 +280,9 @@
    "icf": 13.872,
    "ajustado": true,
    "percentil": 0.678,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.313,
+   "pontos": 10
   },
   {
    "resposta": "Bobó de camarão",
@@ -268,8 +293,9 @@
    "icf": 13.164,
    "ajustado": true,
    "percentil": 0.559,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.351,
+   "pontos": 12
   },
   {
    "resposta": "Cocada",
@@ -278,8 +304,9 @@
    "icf": 13.994,
    "ajustado": true,
    "percentil": 0.729,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.351,
+   "pontos": 12
   },
   {
    "resposta": "Quindim",
@@ -288,8 +315,9 @@
    "icf": 14.782,
    "ajustado": true,
    "percentil": 0.797,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.351,
+   "pontos": 12
   },
   {
    "resposta": "Rapadura",
@@ -298,8 +326,9 @@
    "icf": 13.597,
    "ajustado": true,
    "percentil": 0.593,
-   "peso": 0.42,
-   "pontos": 18
+   "fama": 0.42,
+   "peso": 0.351,
+   "pontos": 12
   },
   {
    "resposta": "Bolinho de bacalhau",
@@ -308,8 +337,9 @@
    "icf": 11.759,
    "ajustado": true,
    "percentil": 0.271,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.394,
+   "pontos": 16
   },
   {
    "resposta": "Misto-quente",
@@ -318,8 +348,9 @@
    "icf": 10.63,
    "ajustado": true,
    "percentil": 0.136,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.394,
+   "pontos": 16
   },
   {
    "resposta": "Pé de moleque",
@@ -328,8 +359,9 @@
    "icf": 10.663,
    "ajustado": true,
    "percentil": 0.169,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.394,
+   "pontos": 16
   },
   {
    "resposta": "Tacacá",
@@ -338,8 +370,9 @@
    "icf": 15.509,
    "ajustado": true,
    "percentil": 0.898,
-   "peso": 0.44,
-   "pontos": 19
+   "fama": 0.44,
+   "peso": 0.394,
+   "pontos": 16
   },
   {
    "resposta": "Arroz carreteiro",
@@ -350,8 +383,9 @@
    "icf": 12.119,
    "ajustado": true,
    "percentil": 0.322,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.438,
+   "pontos": 19
   },
   {
    "resposta": "Caldo de cana",
@@ -360,8 +394,9 @@
    "icf": 11.252,
    "ajustado": true,
    "percentil": 0.237,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.438,
+   "pontos": 19
   },
   {
    "resposta": "Chimarrão",
@@ -370,8 +405,9 @@
    "icf": 13.427,
    "ajustado": true,
    "percentil": 0.576,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.438,
+   "pontos": 19
   },
   {
    "resposta": "Romeu e julieta",
@@ -380,8 +416,9 @@
    "icf": 12.232,
    "ajustado": true,
    "percentil": 0.373,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.438,
+   "pontos": 19
   },
   {
    "resposta": "Bolo de rolo",
@@ -390,7 +427,8 @@
    "icf": 10.638,
    "ajustado": true,
    "percentil": 0.153,
-   "peso": 0.48,
+   "fama": 0.48,
+   "peso": 0.484,
    "pontos": 23
   },
   {
@@ -400,7 +438,8 @@
    "icf": 14.084,
    "ajustado": true,
    "percentil": 0.763,
-   "peso": 0.48,
+   "fama": 0.48,
+   "peso": 0.484,
    "pontos": 23
   },
   {
@@ -410,8 +449,9 @@
    "icf": 15.578,
    "ajustado": true,
    "percentil": 0.915,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.537,
+   "pontos": 29
   },
   {
    "resposta": "Caruru",
@@ -420,8 +460,9 @@
    "icf": 15.005,
    "ajustado": true,
    "percentil": 0.847,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.537,
+   "pontos": 29
   },
   {
    "resposta": "Tutu de feijão",
@@ -432,8 +473,9 @@
    "icf": 12.303,
    "ajustado": true,
    "percentil": 0.424,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.537,
+   "pontos": 29
   },
   {
    "resposta": "X-tudo",
@@ -442,8 +484,9 @@
    "icf": 6.821,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.537,
+   "pontos": 29
   },
   {
    "resposta": "Frango com quiabo",
@@ -452,8 +495,9 @@
    "icf": 9.614,
    "ajustado": true,
    "percentil": 0.051,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.599,
+   "pontos": 36
   },
   {
    "resposta": "Pato no tucupi",
@@ -462,8 +506,9 @@
    "icf": 10.393,
    "ajustado": true,
    "percentil": 0.119,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.599,
+   "pontos": 36
   },
   {
    "resposta": "Virado à paulista",
@@ -472,8 +517,9 @@
    "icf": 10.949,
    "ajustado": true,
    "percentil": 0.203,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.599,
+   "pontos": 36
   },
   {
    "resposta": "Sarapatel",
@@ -482,8 +528,9 @@
    "icf": 15.787,
    "ajustado": true,
    "percentil": 0.949,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.634,
+   "pontos": 40
   },
   {
    "resposta": "Maniçoba",
@@ -492,8 +539,9 @@
    "icf": 15.364,
    "ajustado": true,
    "percentil": 0.881,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.652,
+   "pontos": 43
   },
   {
    "resposta": "Beiju",
@@ -502,8 +550,9 @@
    "icf": 15.161,
    "ajustado": true,
    "percentil": 0.864,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.669,
+   "pontos": 45
   },
   {
    "resposta": "Arroz de pequi",
@@ -512,8 +561,9 @@
    "icf": 12.057,
    "ajustado": true,
    "percentil": 0.305,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.696,
+   "pontos": 48
   },
   {
    "resposta": "Sopa de mocotó",
@@ -524,8 +574,9 @@
    "icf": 12.258,
    "ajustado": true,
    "percentil": 0.39,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.696,
+   "pontos": 48
   },
   {
    "resposta": "Arrumadinho",
@@ -534,8 +585,9 @@
    "icf": 13.875,
    "ajustado": true,
    "percentil": 0.695,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.744,
+   "pontos": 55
   },
   {
    "resposta": "Barreado",
@@ -544,8 +596,9 @@
    "icf": 15.604,
    "ajustado": true,
    "percentil": 0.932,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.744,
+   "pontos": 55
   },
   {
    "resposta": "Mungunzá",
@@ -554,8 +607,9 @@
    "icf": 16.466,
    "ajustado": true,
    "percentil": 0.966,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.785,
+   "pontos": 62
   },
   {
    "resposta": "Paçoca de carne de sol",
@@ -564,8 +618,9 @@
    "icf": 10.712,
    "ajustado": true,
    "percentil": 0.186,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.813,
+   "pontos": 66
   },
   {
    "resposta": "Cartola",
@@ -574,8 +629,9 @@
    "icf": 12.532,
    "ajustado": true,
    "percentil": 0.458,
-   "peso": 0.74,
-   "pontos": 55
+   "fama": 0.74,
+   "peso": 0.84,
+   "pontos": 71
   },
   {
    "resposta": "Quibebe",
@@ -584,8 +640,9 @@
    "icf": 16.955,
    "ajustado": true,
    "percentil": 1.0,
-   "peso": 0.78,
-   "pontos": 61
+   "fama": 0.78,
+   "peso": 0.868,
+   "pontos": 75
   },
   {
    "resposta": "Cuxá",
@@ -596,8 +653,9 @@
    "icf": 16.758,
    "ajustado": true,
    "percentil": 0.983,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.895,
+   "pontos": 80
   },
   {
    "resposta": "Cabeça de galo",
@@ -606,8 +664,9 @@
    "icf": 9.935,
    "ajustado": true,
    "percentil": 0.068,
-   "peso": 0.88,
-   "pontos": 77
+   "fama": 0.88,
+   "peso": 0.923,
+   "pontos": 85
   },
   {
    "resposta": "Arroz de hauçá",
@@ -616,8 +675,9 @@
    "icf": 13.8,
    "ajustado": true,
    "percentil": 0.627,
-   "peso": 0.9,
-   "pontos": 81
+   "fama": 0.9,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Cabeça de galo"

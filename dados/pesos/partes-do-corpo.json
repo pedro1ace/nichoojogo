@@ -4,43 +4,14 @@
  "pergunta": "Cite uma parte do corpo humano",
  "respostas": [
   {
-   "resposta": "Barriga",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.48,
-   "ajustado": true,
-   "percentil": 0.179,
-   "peso": 0.12,
-   "pontos": 1
-  },
-  {
-   "resposta": "Boca",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.152,
-   "ajustado": true,
-   "percentil": 0.064,
-   "peso": 0.04,
-   "pontos": 1
-  },
-  {
    "resposta": "Braço",
    "apelidos": [],
    "sem_dado": false,
    "icf": 10.242,
    "ajustado": true,
    "percentil": 0.167,
-   "peso": 0.02,
-   "pontos": 1
-  },
-  {
-   "resposta": "Cabelo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.05,
-   "ajustado": true,
-   "percentil": 0.051,
-   "peso": 0.09,
+   "fama": 0.02,
+   "peso": 0.116,
    "pontos": 1
   },
   {
@@ -50,37 +21,8 @@
    "icf": 8.661,
    "ajustado": true,
    "percentil": 0.026,
-   "peso": 0.01,
-   "pontos": 1
-  },
-  {
-   "resposta": "Coração",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 8.355,
-   "ajustado": true,
-   "percentil": 0.0,
-   "peso": 0.08,
-   "pontos": 1
-  },
-  {
-   "resposta": "Dedo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.566,
-   "ajustado": true,
-   "percentil": 0.192,
-   "peso": 0.06,
-   "pontos": 1
-  },
-  {
-   "resposta": "Joelho",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.344,
-   "ajustado": true,
-   "percentil": 0.333,
-   "peso": 0.1,
+   "fama": 0.01,
+   "peso": 0.103,
    "pontos": 1
   },
   {
@@ -90,37 +32,8 @@
    "icf": 8.512,
    "ajustado": true,
    "percentil": 0.013,
-   "peso": 0.01,
-   "pontos": 1
-  },
-  {
-   "resposta": "Nariz",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.772,
-   "ajustado": true,
-   "percentil": 0.218,
-   "peso": 0.04,
-   "pontos": 1
-  },
-  {
-   "resposta": "Olho",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.651,
-   "ajustado": true,
-   "percentil": 0.103,
-   "peso": 0.03,
-   "pontos": 1
-  },
-  {
-   "resposta": "Orelha",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.49,
-   "ajustado": true,
-   "percentil": 0.372,
-   "peso": 0.06,
+   "fama": 0.01,
+   "peso": 0.103,
    "pontos": 1
   },
   {
@@ -130,18 +43,64 @@
    "icf": 10.881,
    "ajustado": true,
    "percentil": 0.244,
-   "peso": 0.02,
+   "fama": 0.02,
+   "peso": 0.116,
    "pontos": 1
   },
   {
-   "resposta": "Pescoço",
+   "resposta": "Boca",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 10.67,
+   "icf": 9.152,
    "ajustado": true,
-   "percentil": 0.205,
-   "peso": 0.12,
-   "pontos": 1
+   "percentil": 0.064,
+   "fama": 0.04,
+   "peso": 0.141,
+   "pontos": 2
+  },
+  {
+   "resposta": "Dedo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.566,
+   "ajustado": true,
+   "percentil": 0.192,
+   "fama": 0.06,
+   "peso": 0.154,
+   "pontos": 2
+  },
+  {
+   "resposta": "Nariz",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.772,
+   "ajustado": true,
+   "percentil": 0.218,
+   "fama": 0.04,
+   "peso": 0.141,
+   "pontos": 2
+  },
+  {
+   "resposta": "Olho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.651,
+   "ajustado": true,
+   "percentil": 0.103,
+   "fama": 0.03,
+   "peso": 0.129,
+   "pontos": 2
+  },
+  {
+   "resposta": "Orelha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.49,
+   "ajustado": true,
+   "percentil": 0.372,
+   "fama": 0.06,
+   "peso": 0.154,
+   "pontos": 2
   },
   {
    "resposta": "Pé",
@@ -150,18 +109,64 @@
    "icf": 9.177,
    "ajustado": true,
    "percentil": 0.077,
-   "peso": 0.03,
-   "pontos": 1
+   "fama": 0.03,
+   "peso": 0.129,
+   "pontos": 2
   },
   {
-   "resposta": "Ombro",
+   "resposta": "Barriga",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 11.107,
+   "icf": 10.48,
    "ajustado": true,
-   "percentil": 0.256,
-   "peso": 0.14,
-   "pontos": 2
+   "percentil": 0.179,
+   "fama": 0.12,
+   "peso": 0.186,
+   "pontos": 3
+  },
+  {
+   "resposta": "Cabelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.05,
+   "ajustado": true,
+   "percentil": 0.051,
+   "fama": 0.09,
+   "peso": 0.17,
+   "pontos": 3
+  },
+  {
+   "resposta": "Coração",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.355,
+   "ajustado": true,
+   "percentil": 0.0,
+   "fama": 0.08,
+   "peso": 0.163,
+   "pontos": 3
+  },
+  {
+   "resposta": "Joelho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.344,
+   "ajustado": true,
+   "percentil": 0.333,
+   "fama": 0.1,
+   "peso": 0.176,
+   "pontos": 3
+  },
+  {
+   "resposta": "Pescoço",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.67,
+   "ajustado": true,
+   "percentil": 0.205,
+   "fama": 0.12,
+   "peso": 0.186,
+   "pontos": 3
   },
   {
    "resposta": "Cotovelo",
@@ -170,8 +175,9 @@
    "icf": 12.48,
    "ajustado": true,
    "percentil": 0.551,
-   "peso": 0.16,
-   "pontos": 3
+   "fama": 0.16,
+   "peso": 0.205,
+   "pontos": 4
   },
   {
    "resposta": "Dente",
@@ -180,28 +186,20 @@
    "icf": 11.177,
    "ajustado": true,
    "percentil": 0.282,
-   "peso": 0.16,
-   "pontos": 3
+   "fama": 0.16,
+   "peso": 0.205,
+   "pontos": 4
   },
   {
-   "resposta": "Língua",
+   "resposta": "Ombro",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 9.242,
+   "icf": 11.107,
    "ajustado": true,
-   "percentil": 0.09,
-   "peso": 0.18,
-   "pontos": 3
-  },
-  {
-   "resposta": "Unha",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.214,
-   "ajustado": true,
-   "percentil": 0.295,
-   "peso": 0.18,
-   "pontos": 3
+   "percentil": 0.256,
+   "fama": 0.14,
+   "peso": 0.195,
+   "pontos": 4
   },
   {
    "resposta": "Costas",
@@ -210,8 +208,9 @@
    "icf": 10.091,
    "ajustado": true,
    "percentil": 0.128,
-   "peso": 0.2,
-   "pontos": 4
+   "fama": 0.2,
+   "peso": 0.232,
+   "pontos": 5
   },
   {
    "resposta": "Cérebro",
@@ -220,8 +219,31 @@
    "icf": 10.238,
    "ajustado": true,
    "percentil": 0.154,
-   "peso": 0.2,
-   "pontos": 4
+   "fama": 0.2,
+   "peso": 0.232,
+   "pontos": 5
+  },
+  {
+   "resposta": "Língua",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.242,
+   "ajustado": true,
+   "percentil": 0.09,
+   "fama": 0.18,
+   "peso": 0.217,
+   "pontos": 5
+  },
+  {
+   "resposta": "Unha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.214,
+   "ajustado": true,
+   "percentil": 0.295,
+   "fama": 0.18,
+   "peso": 0.217,
+   "pontos": 5
   },
   {
    "resposta": "Peito",
@@ -230,8 +252,9 @@
    "icf": 10.172,
    "ajustado": true,
    "percentil": 0.141,
-   "peso": 0.22,
-   "pontos": 5
+   "fama": 0.22,
+   "peso": 0.248,
+   "pontos": 6
   },
   {
    "resposta": "Pulmão",
@@ -240,8 +263,9 @@
    "icf": 12.083,
    "ajustado": true,
    "percentil": 0.462,
-   "peso": 0.22,
-   "pontos": 5
+   "fama": 0.22,
+   "peso": 0.248,
+   "pontos": 6
   },
   {
    "resposta": "Estômago",
@@ -250,8 +274,9 @@
    "icf": 11.174,
    "ajustado": true,
    "percentil": 0.269,
-   "peso": 0.24,
-   "pontos": 6
+   "fama": 0.24,
+   "peso": 0.26,
+   "pontos": 7
   },
   {
    "resposta": "Umbigo",
@@ -260,7 +285,8 @@
    "icf": 12.38,
    "ajustado": true,
    "percentil": 0.513,
-   "peso": 0.26,
+   "fama": 0.26,
+   "peso": 0.269,
    "pontos": 7
   },
   {
@@ -270,7 +296,8 @@
    "icf": 11.331,
    "ajustado": true,
    "percentil": 0.321,
-   "peso": 0.28,
+   "fama": 0.28,
+   "peso": 0.277,
    "pontos": 8
   },
   {
@@ -280,7 +307,8 @@
    "icf": 13.193,
    "ajustado": true,
    "percentil": 0.667,
-   "peso": 0.3,
+   "fama": 0.3,
+   "peso": 0.297,
    "pontos": 9
   },
   {
@@ -292,7 +320,8 @@
    "icf": 10.825,
    "ajustado": true,
    "percentil": 0.231,
-   "peso": 0.3,
+   "fama": 0.3,
+   "peso": 0.297,
    "pontos": 9
   },
   {
@@ -302,7 +331,8 @@
    "icf": 11.374,
    "ajustado": true,
    "percentil": 0.346,
-   "peso": 0.3,
+   "fama": 0.3,
+   "peso": 0.297,
    "pontos": 9
   },
   {
@@ -312,7 +342,8 @@
    "icf": 12.033,
    "ajustado": true,
    "percentil": 0.436,
-   "peso": 0.3,
+   "fama": 0.3,
+   "peso": 0.297,
    "pontos": 9
   },
   {
@@ -322,7 +353,8 @@
    "icf": 12.336,
    "ajustado": true,
    "percentil": 0.487,
-   "peso": 0.32,
+   "fama": 0.32,
+   "peso": 0.322,
    "pontos": 10
   },
   {
@@ -332,7 +364,8 @@
    "icf": 12.479,
    "ajustado": true,
    "percentil": 0.538,
-   "peso": 0.32,
+   "fama": 0.32,
+   "peso": 0.322,
    "pontos": 10
   },
   {
@@ -342,8 +375,9 @@
    "icf": 8.928,
    "ajustado": true,
    "percentil": 0.038,
-   "peso": 0.34,
-   "pontos": 12
+   "fama": 0.34,
+   "peso": 0.334,
+   "pontos": 11
   },
   {
    "resposta": "Calcanhar",
@@ -352,7 +386,8 @@
    "icf": 12.627,
    "ajustado": true,
    "percentil": 0.603,
-   "peso": 0.36,
+   "fama": 0.36,
+   "peso": 0.355,
    "pontos": 13
   },
   {
@@ -362,7 +397,8 @@
    "icf": 15.399,
    "ajustado": true,
    "percentil": 0.936,
-   "peso": 0.36,
+   "fama": 0.36,
+   "peso": 0.355,
    "pontos": 13
   },
   {
@@ -372,7 +408,8 @@
    "icf": 12.87,
    "ajustado": true,
    "percentil": 0.615,
-   "peso": 0.36,
+   "fama": 0.36,
+   "peso": 0.355,
    "pontos": 13
   },
   {
@@ -382,7 +419,8 @@
    "icf": 11.54,
    "ajustado": true,
    "percentil": 0.385,
-   "peso": 0.36,
+   "fama": 0.36,
+   "peso": 0.355,
    "pontos": 13
   },
   {
@@ -392,7 +430,8 @@
    "icf": 11.903,
    "ajustado": true,
    "percentil": 0.423,
-   "peso": 0.38,
+   "fama": 0.38,
+   "peso": 0.379,
    "pontos": 14
   },
   {
@@ -402,7 +441,8 @@
    "icf": 12.545,
    "ajustado": true,
    "percentil": 0.564,
-   "peso": 0.38,
+   "fama": 0.38,
+   "peso": 0.379,
    "pontos": 14
   },
   {
@@ -412,6 +452,7 @@
    "icf": 11.251,
    "ajustado": true,
    "percentil": 0.308,
+   "fama": 0.4,
    "peso": 0.4,
    "pontos": 16
   },
@@ -422,6 +463,7 @@
    "icf": 11.642,
    "ajustado": true,
    "percentil": 0.41,
+   "fama": 0.4,
    "peso": 0.4,
    "pontos": 16
   },
@@ -432,6 +474,7 @@
    "icf": 11.436,
    "ajustado": true,
    "percentil": 0.359,
+   "fama": 0.4,
    "peso": 0.4,
    "pontos": 16
   },
@@ -442,6 +485,7 @@
    "icf": 9.991,
    "ajustado": true,
    "percentil": 0.115,
+   "fama": 0.42,
    "peso": 0.42,
    "pontos": 18
   },
@@ -452,6 +496,7 @@
    "icf": 12.044,
    "ajustado": true,
    "percentil": 0.449,
+   "fama": 0.42,
    "peso": 0.42,
    "pontos": 18
   },
@@ -464,7 +509,8 @@
    "icf": 14.166,
    "ajustado": true,
    "percentil": 0.821,
-   "peso": 0.44,
+   "fama": 0.44,
+   "peso": 0.433,
    "pontos": 19
   },
   {
@@ -476,8 +522,9 @@
    "icf": 13.753,
    "ajustado": true,
    "percentil": 0.756,
-   "peso": 0.46,
-   "pontos": 21
+   "fama": 0.46,
+   "peso": 0.441,
+   "pontos": 19
   },
   {
    "resposta": "Bexiga",
@@ -486,8 +533,9 @@
    "icf": 12.328,
    "ajustado": true,
    "percentil": 0.474,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.463,
+   "pontos": 21
   },
   {
    "resposta": "Esqueleto",
@@ -496,8 +544,9 @@
    "icf": 12.472,
    "ajustado": true,
    "percentil": 0.526,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.463,
+   "pontos": 21
   },
   {
    "resposta": "Nuca",
@@ -506,8 +555,9 @@
    "icf": 12.367,
    "ajustado": true,
    "percentil": 0.5,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.463,
+   "pontos": 21
   },
   {
    "resposta": "Pâncreas",
@@ -516,8 +566,9 @@
    "icf": 12.911,
    "ajustado": true,
    "percentil": 0.628,
-   "peso": 0.52,
-   "pontos": 27
+   "fama": 0.52,
+   "peso": 0.49,
+   "pontos": 24
   },
   {
    "resposta": "Baço",
@@ -526,8 +577,9 @@
    "icf": 13.489,
    "ajustado": true,
    "percentil": 0.731,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.51,
+   "pontos": 26
   },
   {
    "resposta": "Fêmur",
@@ -536,8 +588,9 @@
    "icf": 13.789,
    "ajustado": true,
    "percentil": 0.769,
-   "peso": 0.56,
-   "pontos": 31
+   "fama": 0.56,
+   "peso": 0.51,
+   "pontos": 26
   },
   {
    "resposta": "Apêndice",
@@ -546,8 +599,9 @@
    "icf": 12.617,
    "ajustado": true,
    "percentil": 0.59,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.55,
+   "pontos": 30
   },
   {
    "resposta": "Clavícula",
@@ -556,8 +610,9 @@
    "icf": 14.447,
    "ajustado": true,
    "percentil": 0.859,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.55,
+   "pontos": 30
   },
   {
    "resposta": "Pupila",
@@ -566,8 +621,9 @@
    "icf": 13.879,
    "ajustado": true,
    "percentil": 0.782,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.55,
+   "pontos": 30
   },
   {
    "resposta": "Vesícula",
@@ -576,8 +632,9 @@
    "icf": 13.296,
    "ajustado": true,
    "percentil": 0.692,
-   "peso": 0.58,
-   "pontos": 34
+   "fama": 0.58,
+   "peso": 0.55,
+   "pontos": 30
   },
   {
    "resposta": "Esôfago",
@@ -586,8 +643,9 @@
    "icf": 13.333,
    "ajustado": true,
    "percentil": 0.705,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.59,
+   "pontos": 35
   },
   {
    "resposta": "Mandíbula",
@@ -596,8 +654,9 @@
    "icf": 13.079,
    "ajustado": true,
    "percentil": 0.641,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.59,
+   "pontos": 35
   },
   {
    "resposta": "Tireoide",
@@ -606,8 +665,9 @@
    "icf": 13.375,
    "ajustado": true,
    "percentil": 0.718,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.63,
+   "pontos": 40
   },
   {
    "resposta": "Traqueia",
@@ -616,8 +676,9 @@
    "icf": 14.89,
    "ajustado": true,
    "percentil": 0.91,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.63,
+   "pontos": 40
   },
   {
    "resposta": "Têmpora",
@@ -626,8 +687,9 @@
    "icf": 15.432,
    "ajustado": true,
    "percentil": 0.949,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.63,
+   "pontos": 40
   },
   {
    "resposta": "Íris",
@@ -636,8 +698,9 @@
    "icf": 11.632,
    "ajustado": true,
    "percentil": 0.397,
-   "peso": 0.62,
-   "pontos": 38
+   "fama": 0.62,
+   "peso": 0.63,
+   "pontos": 40
   },
   {
    "resposta": "Diafragma",
@@ -646,8 +709,9 @@
    "icf": 13.127,
    "ajustado": true,
    "percentil": 0.654,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.677,
+   "pontos": 46
   },
   {
    "resposta": "Rótula",
@@ -658,8 +722,9 @@
    "icf": 14.731,
    "ajustado": true,
    "percentil": 0.897,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.677,
+   "pontos": 46
   },
   {
    "resposta": "Tíbia",
@@ -668,8 +733,9 @@
    "icf": 14.169,
    "ajustado": true,
    "percentil": 0.833,
-   "peso": 0.64,
-   "pontos": 41
+   "fama": 0.64,
+   "peso": 0.677,
+   "pontos": 46
   },
   {
    "resposta": "Omoplata",
@@ -680,8 +746,9 @@
    "icf": 15.935,
    "ajustado": true,
    "percentil": 0.962,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.722,
+   "pontos": 52
   },
   {
    "resposta": "Retina",
@@ -690,8 +757,9 @@
    "icf": 12.562,
    "ajustado": true,
    "percentil": 0.577,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.722,
+   "pontos": 52
   },
   {
    "resposta": "Tímpano",
@@ -700,8 +768,9 @@
    "icf": 14.665,
    "ajustado": true,
    "percentil": 0.885,
-   "peso": 0.66,
-   "pontos": 44
+   "fama": 0.66,
+   "peso": 0.722,
+   "pontos": 52
   },
   {
    "resposta": "Córnea",
@@ -710,8 +779,9 @@
    "icf": 13.26,
    "ajustado": true,
    "percentil": 0.679,
-   "peso": 0.68,
-   "pontos": 46
+   "fama": 0.68,
+   "peso": 0.763,
+   "pontos": 58
   },
   {
    "resposta": "Esterno",
@@ -720,8 +790,9 @@
    "icf": 14.659,
    "ajustado": true,
    "percentil": 0.872,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.794,
+   "pontos": 63
   },
   {
    "resposta": "Falange",
@@ -730,8 +801,9 @@
    "icf": 13.526,
    "ajustado": true,
    "percentil": 0.744,
-   "peso": 0.7,
-   "pontos": 49
+   "fama": 0.7,
+   "peso": 0.794,
+   "pontos": 63
   },
   {
    "resposta": "Cóccix",
@@ -740,8 +812,9 @@
    "icf": 15.184,
    "ajustado": true,
    "percentil": 0.923,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.836,
+   "pontos": 70
   },
   {
    "resposta": "Úvula",
@@ -752,8 +825,9 @@
    "icf": 16.567,
    "ajustado": true,
    "percentil": 0.987,
-   "peso": 0.72,
-   "pontos": 52
+   "fama": 0.72,
+   "peso": 0.836,
+   "pontos": 70
   },
   {
    "resposta": "Epiglote",
@@ -762,8 +836,9 @@
    "icf": 16.346,
    "ajustado": true,
    "percentil": 0.974,
-   "peso": 0.82,
-   "pontos": 67
+   "fama": 0.82,
+   "peso": 0.867,
+   "pontos": 75
   },
   {
    "resposta": "Estribo",
@@ -772,8 +847,9 @@
    "icf": 13.996,
    "ajustado": true,
    "percentil": 0.795,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.898,
+   "pontos": 81
   },
   {
    "resposta": "Hipotálamo",
@@ -782,8 +858,9 @@
    "icf": 14.109,
    "ajustado": true,
    "percentil": 0.808,
-   "peso": 0.84,
-   "pontos": 71
+   "fama": 0.84,
+   "peso": 0.898,
+   "pontos": 81
   },
   {
    "resposta": "Bigorna",
@@ -792,8 +869,9 @@
    "icf": 14.416,
    "ajustado": true,
    "percentil": 0.846,
-   "peso": 0.86,
-   "pontos": 74
+   "fama": 0.86,
+   "peso": 0.929,
+   "pontos": 86
   },
   {
    "resposta": "Glabela",
@@ -802,8 +880,9 @@
    "icf": 17.201,
    "ajustado": true,
    "percentil": 1.0,
-   "peso": 0.92,
-   "pontos": 85
+   "fama": 0.92,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "supernova": "Glabela"
