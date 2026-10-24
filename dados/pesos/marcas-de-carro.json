@@ -9,24 +9,10 @@
    "sem_dado": false,
    "icf": 10.549,
    "ajustado": true,
-   "percentil": 0.039,
+   "percentil": 0.117,
    "fama": 0.01,
    "pontos": 8,
    "peso": 0.283
-  },
-  {
-   "resposta": "Volkswagen",
-   "apelidos": [
-    "vw",
-    "volks"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.02,
-   "pontos": 9,
-   "peso": 0.3
   },
   {
    "resposta": "Chevrolet",
@@ -38,21 +24,38 @@
    "sem_dado": false,
    "icf": 10.458,
    "ajustado": true,
-   "percentil": 0.034,
+   "percentil": 0.113,
    "fama": 0.03,
-   "pontos": 10,
-   "peso": 0.316
+   "pontos": 9,
+   "peso": 0.3
   },
   {
-   "resposta": "Ford",
-   "apelidos": [],
+   "resposta": "Volkswagen",
+   "apelidos": [
+    "vw",
+    "volks"
+   ],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
+   "fama": 0.02,
+   "pontos": 9,
+   "peso": 0.3
+  },
+  {
+   "resposta": "Ford",
+   "apelidos": [
+    "Ford Motor Company",
+    "Grupo Ford"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
    "fama": 0.04,
-   "pontos": 12,
-   "peso": 0.346
+   "pontos": 10,
+   "peso": 0.316
   },
   {
    "resposta": "Toyota",
@@ -60,10 +63,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.05,
-   "pontos": 13,
-   "peso": 0.361
+   "pontos": 10,
+   "peso": 0.316
   },
   {
    "resposta": "Honda",
@@ -71,32 +74,26 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.08,
-   "pontos": 14,
-   "peso": 0.374
+   "pontos": 11,
+   "peso": 0.332
   },
   {
    "resposta": "Hyundai",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "apelidos": [
+    "Hyundai Motor Company",
+    "Hyundai Motor",
+    "Hyŏndae",
+    "Hyeondae"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.047,
    "fama": 0.09,
-   "pontos": 15,
-   "peso": 0.387
-  },
-  {
-   "resposta": "Renault",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.1,
-   "pontos": 18,
-   "peso": 0.424
+   "pontos": 11,
+   "peso": 0.332
   },
   {
    "resposta": "Ferrari",
@@ -104,10 +101,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.12,
-   "pontos": 19,
-   "peso": 0.436
+   "pontos": 12,
+   "peso": 0.346
+  },
+  {
+   "resposta": "Renault",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.1,
+   "pontos": 12,
+   "peso": 0.346
   },
   {
    "resposta": "Jeep",
@@ -115,10 +123,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.14,
-   "pontos": 20,
-   "peso": 0.447
+   "pontos": 13,
+   "peso": 0.361
   },
   {
    "resposta": "Mercedes-Benz",
@@ -129,21 +137,10 @@
    "sem_dado": false,
    "icf": 10.829,
    "ajustado": true,
-   "percentil": 0.048,
+   "percentil": 0.131,
    "fama": 0.16,
-   "pontos": 21,
-   "peso": 0.458
-  },
-  {
-   "resposta": "Nissan",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.726,
-   "ajustado": true,
-   "percentil": 0.065,
-   "fama": 0.16,
-   "pontos": 22,
-   "peso": 0.469
+   "pontos": 13,
+   "peso": 0.361
   },
   {
    "resposta": "BMW",
@@ -151,10 +148,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.16,
-   "pontos": 23,
-   "peso": 0.48
+   "pontos": 14,
+   "peso": 0.374
+  },
+  {
+   "resposta": "Nissan",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.726,
+   "ajustado": true,
+   "percentil": 0.16,
+   "fama": 0.16,
+   "pontos": 14,
+   "peso": 0.374
   },
   {
    "resposta": "Audi",
@@ -162,21 +170,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.2,
-   "pontos": 24,
-   "peso": 0.49
-  },
-  {
-   "resposta": "Peugeot",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.22,
-   "pontos": 25,
-   "peso": 0.5
+   "pontos": 15,
+   "peso": 0.387
   },
   {
    "resposta": "Lamborghini",
@@ -184,21 +181,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.24,
-   "pontos": 26,
-   "peso": 0.51
+   "pontos": 18,
+   "peso": 0.424
   },
   {
-   "resposta": "Porsche",
+   "resposta": "Peugeot",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.26,
-   "pontos": 26,
-   "peso": 0.51
+   "percentil": 0.629,
+   "fama": 0.22,
+   "pontos": 18,
+   "peso": 0.424
   },
   {
    "resposta": "Citroën",
@@ -206,21 +203,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.28,
-   "pontos": 27,
-   "peso": 0.52
+   "pontos": 19,
+   "peso": 0.436
   },
   {
-   "resposta": "Tesla",
+   "resposta": "Porsche",
    "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.151,
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.096,
-   "fama": 0.3,
-   "pontos": 28,
-   "peso": 0.529
+   "percentil": 0.629,
+   "fama": 0.26,
+   "pontos": 19,
+   "peso": 0.436
   },
   {
    "resposta": "Kia",
@@ -228,21 +225,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.3,
-   "pontos": 29,
-   "peso": 0.539
+   "pontos": 20,
+   "peso": 0.447
   },
   {
-   "resposta": "Mitsubishi",
+   "resposta": "Tesla",
    "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "sem_dado": false,
+   "icf": 13.151,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.204,
    "fama": 0.3,
-   "pontos": 30,
-   "peso": 0.548
+   "pontos": 20,
+   "peso": 0.447
   },
   {
    "resposta": "BYD",
@@ -250,21 +247,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.34,
-   "pontos": 31,
-   "peso": 0.557
+   "pontos": 21,
+   "peso": 0.458
   },
   {
-   "resposta": "Volvo",
+   "resposta": "Mitsubishi",
    "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.885,
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.067,
-   "fama": 0.38,
-   "pontos": 32,
-   "peso": 0.566
+   "percentil": 0.629,
+   "fama": 0.3,
+   "pontos": 21,
+   "peso": 0.458
   },
   {
    "resposta": "Chery",
@@ -274,10 +271,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.4,
-   "pontos": 33,
-   "peso": 0.574
+   "pontos": 22,
+   "peso": 0.469
+  },
+  {
+   "resposta": "Volvo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.885,
+   "ajustado": true,
+   "percentil": 0.164,
+   "fama": 0.38,
+   "pontos": 22,
+   "peso": 0.469
   },
   {
    "resposta": "Land Rover",
@@ -285,21 +293,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.4,
-   "pontos": 34,
-   "peso": 0.583
-  },
-  {
-   "resposta": "Jaguar",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.739,
-   "ajustado": true,
-   "percentil": 0.087,
-   "fama": 0.5,
-   "pontos": 35,
-   "peso": 0.592
+   "pontos": 23,
+   "peso": 0.48
   },
   {
    "resposta": "Suzuki",
@@ -307,10 +304,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.44,
-   "pontos": 35,
-   "peso": 0.592
+   "pontos": 23,
+   "peso": 0.48
   },
   {
    "resposta": "Caoa",
@@ -318,10 +315,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.5,
-   "pontos": 36,
-   "peso": 0.6
+   "pontos": 24,
+   "peso": 0.49
+  },
+  {
+   "resposta": "Jaguar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.739,
+   "ajustado": true,
+   "percentil": 0.198,
+   "fama": 0.5,
+   "pontos": 24,
+   "peso": 0.49
   },
   {
    "resposta": "Dodge",
@@ -329,21 +337,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.5,
-   "pontos": 36,
-   "peso": 0.6
-  },
-  {
-   "resposta": "Geely",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.501,
-   "pontos": 37,
-   "peso": 0.608
+   "pontos": 25,
+   "peso": 0.5
   },
   {
    "resposta": "Haval",
@@ -351,10 +348,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.5,
-   "pontos": 37,
-   "peso": 0.608
+   "pontos": 25,
+   "peso": 0.5
+  },
+  {
+   "resposta": "Geely",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.501,
+   "pontos": 26,
+   "peso": 0.51
   },
   {
    "resposta": "Jaecoo",
@@ -362,10 +370,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.501,
-   "pontos": 38,
-   "peso": 0.616
+   "pontos": 26,
+   "peso": 0.51
   },
   {
    "resposta": "Leapmotor",
@@ -373,32 +381,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.501,
-   "pontos": 38,
-   "peso": 0.616
-  },
-  {
-   "resposta": "Omoda",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.501,
-   "pontos": 38,
-   "peso": 0.616
-  },
-  {
-   "resposta": "GAC",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.502,
-   "pontos": 39,
-   "peso": 0.624
+   "pontos": 26,
+   "peso": 0.51
   },
   {
    "resposta": "Neta",
@@ -406,21 +392,32 @@
    "sem_dado": false,
    "icf": 12.237,
    "ajustado": true,
-   "percentil": 0.079,
+   "percentil": 0.181,
    "fama": 0.502,
-   "pontos": 39,
-   "peso": 0.624
+   "pontos": 27,
+   "peso": 0.52
   },
   {
-   "resposta": "Lynk & Co",
+   "resposta": "Omoda",
    "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.728,
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.02,
-   "fama": 0.503,
-   "pontos": 40,
-   "peso": 0.632
+   "percentil": 0.629,
+   "fama": 0.501,
+   "pontos": 27,
+   "peso": 0.52
+  },
+  {
+   "resposta": "GAC",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.502,
+   "pontos": 28,
+   "peso": 0.529
   },
   {
    "resposta": "Zeekr",
@@ -428,10 +425,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.502,
-   "pontos": 40,
-   "peso": 0.632
+   "pontos": 28,
+   "peso": 0.529
   },
   {
    "resposta": "Changan",
@@ -439,10 +436,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.503,
-   "pontos": 41,
-   "peso": 0.64
+   "pontos": 29,
+   "peso": 0.539
+  },
+  {
+   "resposta": "Lynk & Co",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.728,
+   "ajustado": true,
+   "percentil": 0.077,
+   "fama": 0.503,
+   "pontos": 29,
+   "peso": 0.539
   },
   {
    "resposta": "Hongqi",
@@ -450,10 +458,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.503,
-   "pontos": 41,
-   "peso": 0.64
+   "pontos": 30,
+   "peso": 0.548
   },
   {
    "resposta": "Li Auto",
@@ -461,21 +469,23 @@
    "sem_dado": false,
    "icf": 9.331,
    "ajustado": true,
-   "percentil": 0.011,
+   "percentil": 0.029,
    "fama": 0.504,
-   "pontos": 42,
-   "peso": 0.648
+   "pontos": 30,
+   "peso": 0.548
   },
   {
    "resposta": "NIO",
-   "apelidos": [],
+   "apelidos": [
+    "Nio Inc."
+   ],
    "sem_dado": false,
    "icf": 13.795,
    "ajustado": true,
-   "percentil": 0.112,
+   "percentil": 0.221,
    "fama": 0.504,
-   "pontos": 42,
-   "peso": 0.648
+   "pontos": 31,
+   "peso": 0.557
   },
   {
    "resposta": "XPeng",
@@ -483,10 +493,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.504,
-   "pontos": 42,
-   "peso": 0.648
+   "pontos": 31,
+   "peso": 0.557
   },
   {
    "resposta": "Fisker",
@@ -494,10 +504,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.505,
-   "pontos": 43,
-   "peso": 0.656
+   "pontos": 32,
+   "peso": 0.566
   },
   {
    "resposta": "Lucid",
@@ -505,10 +515,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.505,
-   "pontos": 43,
-   "peso": 0.656
+   "pontos": 32,
+   "peso": 0.566
   },
   {
    "resposta": "Polestar",
@@ -516,10 +526,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.505,
-   "pontos": 44,
-   "peso": 0.663
+   "pontos": 33,
+   "peso": 0.574
   },
   {
    "resposta": "Rivian",
@@ -527,10 +537,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.505,
-   "pontos": 44,
-   "peso": 0.663
+   "pontos": 33,
+   "peso": 0.574
   },
   {
    "resposta": "Abarth",
@@ -538,21 +548,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.506,
-   "pontos": 45,
-   "peso": 0.671
-  },
-  {
-   "resposta": "Cupra",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.506,
-   "pontos": 45,
-   "peso": 0.671
+   "pontos": 34,
+   "peso": 0.583
   },
   {
    "resposta": "Genesis",
@@ -560,10 +559,21 @@
    "sem_dado": false,
    "icf": 11.911,
    "ajustado": true,
-   "percentil": 0.07,
+   "percentil": 0.167,
    "fama": 0.506,
-   "pontos": 45,
-   "peso": 0.671
+   "pontos": 34,
+   "peso": 0.583
+  },
+  {
+   "resposta": "Cupra",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.506,
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Daewoo",
@@ -571,10 +581,25 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.507,
-   "pontos": 46,
-   "peso": 0.678
+   "pontos": 35,
+   "peso": 0.592
+  },
+  {
+   "resposta": "Ssangyong",
+   "apelidos": [
+    "kgm",
+    "SsangYong Motor Company",
+    "KG Mobility"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.507,
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Lancia",
@@ -582,45 +607,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.507,
-   "pontos": 46,
-   "peso": 0.678
-  },
-  {
-   "resposta": "Saab",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.507,
-   "pontos": 47,
-   "peso": 0.686
-  },
-  {
-   "resposta": "Ssangyong",
-   "apelidos": [
-    "kgm"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.507,
-   "pontos": 47,
-   "peso": 0.686
-  },
-  {
-   "resposta": "Perodua",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.508,
-   "pontos": 48,
-   "peso": 0.693
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Proton",
@@ -628,10 +618,21 @@
    "sem_dado": false,
    "icf": 14.62,
    "ajustado": true,
-   "percentil": 0.129,
+   "percentil": 0.234,
    "fama": 0.508,
-   "pontos": 48,
-   "peso": 0.693
+   "pontos": 36,
+   "peso": 0.6
+  },
+  {
+   "resposta": "Saab",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.507,
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Tata",
@@ -639,10 +640,10 @@
    "sem_dado": false,
    "icf": 13.34,
    "ajustado": true,
-   "percentil": 0.107,
+   "percentil": 0.216,
    "fama": 0.508,
-   "pontos": 48,
-   "peso": 0.693
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Datsun",
@@ -650,21 +651,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.509,
-   "pontos": 49,
-   "peso": 0.7
-  },
-  {
-   "resposta": "Mahindra",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.509,
-   "pontos": 49,
-   "peso": 0.7
+   "pontos": 37,
+   "peso": 0.608
   },
   {
    "resposta": "Hino",
@@ -672,10 +662,23 @@
    "sem_dado": false,
    "icf": 11.075,
    "ajustado": true,
-   "percentil": 0.056,
+   "percentil": 0.146,
    "fama": 0.51,
-   "pontos": 50,
-   "peso": 0.707
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Mahindra",
+   "apelidos": [
+    "Mahindra & Mahindra"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.509,
+   "pontos": 37,
+   "peso": 0.608
   },
   {
    "resposta": "Maruti Suzuki",
@@ -685,10 +688,619 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.509,
-   "pontos": 50,
-   "peso": 0.707
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Perodua",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.508,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "DAF",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.511,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Daihatsu",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.51,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Isuzu",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.51,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Scania",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.51,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Agrale",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.512,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Iveco",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.511,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "MAN",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.511,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Marcopolo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.512,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Plymouth",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.512,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Buick",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.513,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "GMC",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.514,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Oldsmobile",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.513,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Pontiac",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.513,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "DeLorean",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.515,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Hummer",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.514,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Mercury",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.514,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Saturn",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.514,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Shelby",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.515,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "AMC",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.516,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Hudson",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.516,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Nash",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.516,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Studebaker",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.515,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Austin",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.518,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "MG",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.005,
+   "ajustado": true,
+   "percentil": 0.012,
+   "fama": 0.517,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Packard",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.516,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Rover",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.517,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Willys",
+   "apelidos": [
+    "Willys Overland"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.517,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Jensen",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.519,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Morris",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.518,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "TVR",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.519,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Triumph",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.518,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Ariel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.52,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Bugatti",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.52,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Caterham",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.52,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Mazda",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.52,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Vauxhall",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.519,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Morgan",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.52,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Noble",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.52,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Panhard",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.521,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Simca",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.521,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Subaru",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.52,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Alpine",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.909,
+   "ajustado": true,
+   "percentil": 0.223,
+   "fama": 0.522,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Bristol",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.187,
+   "ajustado": true,
+   "percentil": 0.998,
+   "fama": 0.521,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Bugatti Rimac",
+   "apelidos": [
+    "rimac"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.522,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Matra",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.522,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Autobianchi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.524,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "De Tomaso",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.523,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Hispano-Suiza",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.06,
+   "ajustado": true,
+   "percentil": 0.224,
+   "fama": 0.523,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Iso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.762,
+   "ajustado": true,
+   "percentil": 0.129,
+   "fama": 0.523,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Talbot",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.522,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Donkervoort",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.525,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Innocenti",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.524,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Moskvitch",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.525,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Spyker",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.524,
+   "pontos": 49,
+   "peso": 0.7
   },
   {
    "resposta": "Romi-Isetta",
@@ -699,619 +1311,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.88,
    "pontos": 50,
    "peso": 0.707
-  },
-  {
-   "resposta": "Daihatsu",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.51,
-   "pontos": 51,
-   "peso": 0.714
-  },
-  {
-   "resposta": "Isuzu",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.51,
-   "pontos": 51,
-   "peso": 0.714
-  },
-  {
-   "resposta": "Scania",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.51,
-   "pontos": 51,
-   "peso": 0.714
-  },
-  {
-   "resposta": "DAF",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.511,
-   "pontos": 52,
-   "peso": 0.721
-  },
-  {
-   "resposta": "Iveco",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.511,
-   "pontos": 52,
-   "peso": 0.721
-  },
-  {
-   "resposta": "Agrale",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.512,
-   "pontos": 53,
-   "peso": 0.728
-  },
-  {
-   "resposta": "MAN",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.511,
-   "pontos": 53,
-   "peso": 0.728
-  },
-  {
-   "resposta": "Marcopolo",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.512,
-   "pontos": 54,
-   "peso": 0.735
-  },
-  {
-   "resposta": "Plymouth",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.512,
-   "pontos": 54,
-   "peso": 0.735
-  },
-  {
-   "resposta": "Buick",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.513,
-   "pontos": 55,
-   "peso": 0.742
-  },
-  {
-   "resposta": "Oldsmobile",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.513,
-   "pontos": 55,
-   "peso": 0.742
-  },
-  {
-   "resposta": "Pontiac",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.513,
-   "pontos": 55,
-   "peso": 0.742
-  },
-  {
-   "resposta": "GMC",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.514,
-   "pontos": 56,
-   "peso": 0.748
-  },
-  {
-   "resposta": "Hummer",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.514,
-   "pontos": 56,
-   "peso": 0.748
-  },
-  {
-   "resposta": "Mercury",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.514,
-   "pontos": 57,
-   "peso": 0.755
-  },
-  {
-   "resposta": "Saturn",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.514,
-   "pontos": 57,
-   "peso": 0.755
-  },
-  {
-   "resposta": "DeLorean",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.515,
-   "pontos": 58,
-   "peso": 0.762
-  },
-  {
-   "resposta": "Shelby",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.515,
-   "pontos": 58,
-   "peso": 0.762
-  },
-  {
-   "resposta": "AMC",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.516,
-   "pontos": 60,
-   "peso": 0.775
-  },
-  {
-   "resposta": "Hudson",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.516,
-   "pontos": 60,
-   "peso": 0.775
-  },
-  {
-   "resposta": "Nash",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.516,
-   "pontos": 60,
-   "peso": 0.775
-  },
-  {
-   "resposta": "Packard",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.516,
-   "pontos": 60,
-   "peso": 0.775
-  },
-  {
-   "resposta": "Studebaker",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.515,
-   "pontos": 60,
-   "peso": 0.775
-  },
-  {
-   "resposta": "Austin",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.518,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Jensen",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.519,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "MG",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.005,
-   "ajustado": true,
-   "percentil": 0.006,
-   "fama": 0.517,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Morris",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.518,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Rover",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.517,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "TVR",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.519,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Triumph",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.518,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Vauxhall",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.519,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Willys",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.517,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Ariel",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.52,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Bristol",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 20.187,
-   "ajustado": true,
-   "percentil": 0.997,
-   "fama": 0.521,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Bugatti",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.52,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Caterham",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.52,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Mazda",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.52,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Morgan",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.52,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Noble",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.52,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Panhard",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.521,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Simca",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.521,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Subaru",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.52,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Alpine",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.909,
-   "ajustado": true,
-   "percentil": 0.115,
-   "fama": 0.522,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Autobianchi",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.524,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Bugatti Rimac",
-   "apelidos": [
-    "rimac"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.522,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "De Tomaso",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.523,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Hispano-Suiza",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.06,
-   "ajustado": true,
-   "percentil": 0.118,
-   "fama": 0.523,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Innocenti",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.524,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Iso",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.762,
-   "ajustado": true,
-   "percentil": 0.045,
-   "fama": 0.523,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Matra",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.522,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Talbot",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.522,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Donkervoort",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.525,
-   "pontos": 64,
-   "peso": 0.8
-  },
-  {
-   "resposta": "FSO",
-   "apelidos": [
-    "polonez"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.527,
-   "pontos": 64,
-   "peso": 0.8
-  },
-  {
-   "resposta": "Moskvitch",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.525,
-   "pontos": 64,
-   "peso": 0.8
-  },
-  {
-   "resposta": "Spyker",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.524,
-   "pontos": 64,
-   "peso": 0.8
   },
   {
    "resposta": "Trabant",
@@ -1319,10 +1322,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.525,
-   "pontos": 64,
-   "peso": 0.8
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "UAZ",
@@ -1330,10 +1333,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.526,
-   "pontos": 64,
-   "peso": 0.8
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Volga",
@@ -1343,10 +1346,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.526,
-   "pontos": 64,
-   "peso": 0.8
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Wartburg",
@@ -1354,10 +1357,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.525,
-   "pontos": 64,
-   "peso": 0.8
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "ZIL",
@@ -1365,21 +1368,24 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.526,
-   "pontos": 64,
-   "peso": 0.8
+   "pontos": 50,
+   "peso": 0.707
   },
   {
-   "resposta": "Alfa Romeo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.553,
+   "resposta": "FSO",
+   "apelidos": [
+    "polonez",
+    "Fabryka Samochodów Osobowych"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.062,
-   "fama": 0.6,
-   "pontos": 65,
-   "peso": 0.806
+   "percentil": 0.629,
+   "fama": 0.527,
+   "pontos": 51,
+   "peso": 0.714
   },
   {
    "resposta": "Hindustan",
@@ -1387,65 +1393,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.528,
-   "pontos": 65,
-   "peso": 0.806
-  },
-  {
-   "resposta": "Holden",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.528,
-   "pontos": 65,
-   "peso": 0.806
-  },
-  {
-   "resposta": "Maserati",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.56,
-   "pontos": 65,
-   "peso": 0.806
-  },
-  {
-   "resposta": "Mini",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.621,
-   "ajustado": true,
-   "percentil": 0.014,
-   "fama": 0.54,
-   "pontos": 65,
-   "peso": 0.806
-  },
-  {
-   "resposta": "RAM",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.56,
-   "pontos": 65,
-   "peso": 0.806
-  },
-  {
-   "resposta": "Rolls-Royce",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.54,
-   "pontos": 65,
-   "peso": 0.806
+   "pontos": 51,
+   "peso": 0.714
   },
   {
    "resposta": "Tatra",
@@ -1453,10 +1404,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.527,
-   "pontos": 65,
-   "peso": 0.806
+   "pontos": 51,
+   "peso": 0.714
   },
   {
    "resposta": "Zastava",
@@ -1466,10 +1417,984 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.527,
-   "pontos": 65,
-   "peso": 0.806
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Holden",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.528,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Maserati",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.56,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Mini",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.621,
+   "ajustado": true,
+   "percentil": 0.071,
+   "fama": 0.54,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "RAM",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.56,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Rolls-Royce",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.54,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Alta Car and Engineering Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.63,
+   "ajustado": true,
+   "percentil": 0.007,
+   "fama": 0.6,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "JAC Motors",
+   "apelidos": [
+    "JAC Motors Brasil",
+    "Anhui Jianghuai Automobile"
+   ],
+   "sem_dado": false,
+   "icf": 6.91,
+   "ajustado": true,
+   "percentil": 0.001,
+   "fama": 0.6,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "MAN SE",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 4.924,
+   "ajustado": true,
+   "percentil": 0.0,
+   "fama": 0.6,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "MG Cars",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.005,
+   "ajustado": true,
+   "percentil": 0.012,
+   "fama": 0.6,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Auto Union",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.248,
+   "ajustado": true,
+   "percentil": 0.021,
+   "fama": 0.6,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "BYD Auto",
+   "apelidos": [
+    "Build Your Dreams"
+   ],
+   "sem_dado": false,
+   "icf": 9.248,
+   "ajustado": true,
+   "percentil": 0.021,
+   "fama": 0.6,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "MG Motor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.191,
+   "ajustado": true,
+   "percentil": 0.014,
+   "fama": 0.6,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Shelby SuperCars",
+   "apelidos": [
+    "SSC North America"
+   ],
+   "sem_dado": false,
+   "icf": 9.274,
+   "ajustado": true,
+   "percentil": 0.025,
+   "fama": 0.6,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Škoda Auto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.248,
+   "ajustado": true,
+   "percentil": 0.021,
+   "fama": 0.6,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Ariel Motor Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Austin Motor Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Indústria Automobilística Helênica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.305,
+   "ajustado": true,
+   "percentil": 0.027,
+   "fama": 0.6,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Stellantis North America",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.274,
+   "ajustado": true,
+   "percentil": 0.025,
+   "fama": 0.6,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "British Motor Corporation",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Daimler Motor Company",
+   "apelidos": [
+    "Daimler Company"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "DeLorean Motor Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Dongfeng Motor Corporation",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Harley-Davidson",
+   "apelidos": [
+    "Harley-Davidson Motor Company"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Hudson Motor Car Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Hyundai Motor Group",
+   "apelidos": [
+    "Hyundai Kia Automotive Group",
+    "Hyundai Kia"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Morris Motor Company",
+   "apelidos": [
+    "Morris Motors"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Packard Motor Car Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Rolls-Royce Motor Cars",
+   "apelidos": [
+    "Rolls-Royce Motors"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Stanley Motor Carriage Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Triumph Motor Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "AM General",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.694,
+   "ajustado": true,
+   "percentil": 0.076,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Automobili Turismo e Sport",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.988,
+   "ajustado": true,
+   "percentil": 0.089,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Fiat Chrysler Automobiles",
+   "apelidos": [
+    "FCA"
+   ],
+   "sem_dado": false,
+   "icf": 10.549,
+   "ajustado": true,
+   "percentil": 0.117,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Hotchkiss et Cie",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.055,
+   "ajustado": true,
+   "percentil": 0.094,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Mondial Moto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.753,
+   "ajustado": true,
+   "percentil": 0.081,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Moto Guzzi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.753,
+   "ajustado": true,
+   "percentil": 0.081,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Talbot-Lago",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.371,
+   "ajustado": true,
+   "percentil": 0.109,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Volkswagen Caminhões e Ônibus",
+   "apelidos": [
+    "Volkswagen Nutzfahrzeuge",
+    "Volkswagen Veículos Comerciais",
+    "Volkswagen caminhões",
+    "Volkscaminhoes",
+    "Caminhões Volkswagen"
+   ],
+   "sem_dado": false,
+   "icf": 9.494,
+   "ajustado": true,
+   "percentil": 0.068,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Wolseley Motor Company",
+   "apelidos": [
+    "Wolseley Motors"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Yamaha Motor Company",
+   "apelidos": [
+    "Yamaha Motor",
+    "Yamaha Motor Corporation",
+    "Yamaha Motor Company Ltd."
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.6,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "AC Cars",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.662,
+   "ajustado": true,
+   "percentil": 0.126,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Alfa Romeo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.553,
+   "ajustado": true,
+   "percentil": 0.154,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Audi Sport GmbH",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.606,
+   "ajustado": true,
+   "percentil": 0.121,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Cadillac Formula 1 Team",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.977,
+   "ajustado": true,
+   "percentil": 0.173,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Detroit Diesel",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.907,
+   "ajustado": true,
+   "percentil": 0.139,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Ducati",
+   "apelidos": [
+    "Ducati Motor Holding"
+   ],
+   "sem_dado": false,
+   "icf": 11.194,
+   "ajustado": true,
+   "percentil": 0.149,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "English Racing Automobiles",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.94,
+   "ajustado": true,
+   "percentil": 0.171,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Farman Aviões",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.896,
+   "ajustado": true,
+   "percentil": 0.137,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Genesis Motor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.644,
+   "ajustado": true,
+   "percentil": 0.123,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Hino Motors",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.075,
+   "ajustado": true,
+   "percentil": 0.146,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Mercedes-AMG",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.829,
+   "ajustado": true,
+   "percentil": 0.131,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Mercedes-Benz Group",
+   "apelidos": [
+    "DaimlerChrysler",
+    "Daimler AG"
+   ],
+   "sem_dado": false,
+   "icf": 10.829,
+   "ajustado": true,
+   "percentil": 0.131,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Paccar",
+   "apelidos": [
+    "Pacific Car and Foundry",
+    "PACCAR Inc."
+   ],
+   "sem_dado": false,
+   "icf": 11.444,
+   "ajustado": true,
+   "percentil": 0.15,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Société Anonyme des Ateliers d'Aviation Louis Breguet",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.837,
+   "ajustado": true,
+   "percentil": 0.134,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Subaru Corporation",
+   "apelidos": [
+    "Fuji Heavy Industries",
+    "Fhi"
+   ],
+   "sem_dado": false,
+   "icf": 11.739,
+   "ajustado": true,
+   "percentil": 0.161,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Volvo Buses",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.885,
+   "ajustado": true,
+   "percentil": 0.164,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Volvo Cars",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.885,
+   "ajustado": true,
+   "percentil": 0.164,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Western Star Trucks",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.863,
+   "ajustado": true,
+   "percentil": 0.136,
+   "fama": 0.6,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Ascari",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.778,
+   "ajustado": true,
+   "percentil": 0.25,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Avia",
+   "apelidos": [
+    "Avia Motors"
+   ],
+   "sem_dado": false,
+   "icf": 14.5,
+   "ajustado": true,
+   "percentil": 0.231,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Cooper Car Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.256,
+   "ajustado": true,
+   "percentil": 0.184,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Daewoo Bus",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.279,
+   "ajustado": true,
+   "percentil": 0.186,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Derbi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.42,
+   "ajustado": true,
+   "percentil": 0.229,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Fabrique Nationale Herstal",
+   "apelidos": [
+    "FN Herstal",
+    "Fabrique Nationale de Herstal",
+    "Fabrique Nationale d'Armes de Guerre"
+   ],
+   "sem_dado": false,
+   "icf": 15.644,
+   "ajustado": true,
+   "percentil": 0.247,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Faraday Future",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.524,
+   "ajustado": true,
+   "percentil": 0.233,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Foton Motors",
+   "apelidos": [
+    "Foton Motor"
+   ],
+   "sem_dado": false,
+   "icf": 14.653,
+   "ajustado": true,
+   "percentil": 0.236,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Iveco Bus",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.279,
+   "ajustado": true,
+   "percentil": 0.186,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Jaguar Cars",
+   "apelidos": [
+    "SS Jaguar",
+    "SS Cars"
+   ],
+   "sem_dado": false,
+   "icf": 12.739,
+   "ajustado": true,
+   "percentil": 0.198,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Lotus Cars",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.21,
+   "ajustado": true,
+   "percentil": 0.206,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Magna Steyr",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.344,
+   "ajustado": true,
+   "percentil": 0.19,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Mitsubishi Fuso Truck and Bus Corporation",
+   "apelidos": [
+    "Mitsubishi Fuso",
+    "Fuso"
+   ],
+   "sem_dado": false,
+   "icf": 12.479,
+   "ajustado": true,
+   "percentil": 0.193,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "REO Motor Car Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.164,
+   "ajustado": true,
+   "percentil": 0.177,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Setra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.681,
+   "ajustado": true,
+   "percentil": 0.251,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Tata Daewoo Commercial Vehicle",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.34,
+   "ajustado": true,
+   "percentil": 0.216,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Tata Motors",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.34,
+   "ajustado": true,
+   "percentil": 0.216,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Tofaş",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.71,
+   "ajustado": true,
+   "percentil": 0.259,
+   "fama": 0.6,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "ARO4x4",
+   "apelidos": [
+    "ARO"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Abt Sportsline",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Adler",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Alvis Car and Engineering Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "American Motors Corporation",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Aprilia",
+   "apelidos": [
+    "Motas Aprilia"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Armstrong Whitworth",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
   },
   {
    "resposta": "Aston Martin",
@@ -1477,10 +2402,81 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.6,
-   "pontos": 66,
-   "peso": 0.812
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Automobiles Gonfaronnaises Sportives",
+   "apelidos": [
+    "AGS"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "AvtoVAZ",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "BMW M",
+   "apelidos": [
+    "Bmw motorsport",
+    "BMW M GmbH"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "BMW Motorrad",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Bedford",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Benelli",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
   },
   {
    "resposta": "Bentley",
@@ -1488,10 +2484,43 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.6,
-   "pontos": 66,
-   "peso": 0.812
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Berliet",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Bianchi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "British Leyland",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 63,
+   "peso": 0.794
   },
   {
    "resposta": "Cadillac",
@@ -1499,54 +2528,439 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.6,
-   "pontos": 66,
-   "peso": 0.812
+   "pontos": 64,
+   "peso": 0.8
   },
   {
-   "resposta": "Chrysler",
+   "resposta": "Cagiva",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.62,
-   "pontos": 66,
-   "peso": 0.812
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
   },
   {
-   "resposta": "GWM",
+   "resposta": "Carrozzeria Ghia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Caterham Cars",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Changan Automobile",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Cisitalia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "DS Automobiles",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Daimler Truck",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Daimler-Benz",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Daimler-Motoren-Gesellschaft",
    "apelidos": [
-    "great wall"
+    "Daimler Motors Corporation",
+    "DMG"
    ],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.62,
-   "pontos": 66,
-   "peso": 0.812
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
   },
   {
-   "resposta": "JAC",
+   "resposta": "Dallara Automobili",
+   "apelidos": [
+    "Dallara"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Dongfeng Peugeot-Citroën Automobile",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.66,
-   "pontos": 66,
-   "peso": 0.812
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
   },
   {
-   "resposta": "Lexus",
+   "resposta": "EMW",
+   "apelidos": [
+    "Eisenacher Motorenwerk"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "First Automobile Works",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.62,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Freightliner",
+   "apelidos": [
+    "Freightliner Trucks"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "GM Daewoo",
+   "apelidos": [
+    "GM Korea",
+    "Gmdat",
+    "Daewoo motors"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Garelli",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Gilera",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Gordini",
+   "apelidos": [
+    "Renault Gordini"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Hanomag",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Hindustan Motors",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Ikarus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Indian Motorcycle Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Industrieverband Fahrzeugbau",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "International",
+   "apelidos": [
+    "International Motors",
+    "International Trucks",
+    "Navistar International",
+    "Navistar"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Iran Khodro",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Isotta Fraschini",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Jawa",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "KTM",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Kamaz",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Karmann",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Kia Motors",
+   "apelidos": [
+    "Kia Corporation"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Kreidler",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Lucid Motors",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Malaguti",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "March Engineering",
+   "apelidos": [
+    "March"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Marussia Motors",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "MV Agusta",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
    "pontos": 66,
    "peso": 0.812
   },
@@ -1556,10 +2970,1195 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.6,
    "pontos": 66,
    "peso": 0.812
+  },
+  {
+   "resposta": "McLaren Automotive",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Miele",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Mitsubishi Motors",
+   "apelidos": [
+    "Mitsubishi Motors Corporation"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Mitsuoka",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Nanjing Automobile Group",
+   "apelidos": [
+    "Nanjing Automobile"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Nash Motors",
+   "apelidos": [
+    "Nash-Kelvinator Corporation"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Norton Motorcycles",
+   "apelidos": [
+    "Norton Motorcycle Company"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Osella Corse",
+   "apelidos": [
+    "Osella"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Pagani Automobili",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Piaggio",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Polaris Industries",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Ram Trucks",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Renault Korea Motors",
+   "apelidos": [
+    "Renault Samsung Motors",
+    "Samsung Motors"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Renault Trucks",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Rolls-Royce Limited",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Rover Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "AJS",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Alex von Falkenhausen Motorenbau",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Amphicar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Automobiles Impéria",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Benz & Cie.",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Bimota",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Bristol Cars Ltd.",
+   "apelidos": [
+    "Bristol Cars"
+   ],
+   "sem_dado": false,
+   "icf": 20.187,
+   "ajustado": true,
+   "percentil": 0.998,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Gas Gas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.94,
+   "ajustado": true,
+   "percentil": 0.087,
+   "fama": 0.605,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Kaiser Motors",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.247,
+   "ajustado": true,
+   "percentil": 0.212,
+   "fama": 0.605,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Ruf Automobile",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Saab Automobile",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Spyker Cars",
+   "apelidos": [
+    "Spyker Cars N.V."
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Stellantis",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Think Nordic",
+   "apelidos": [
+    "TH!NK City",
+    "Th!nk"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Triumph Motocicletas",
+   "apelidos": [
+    "Triumph Motorcycles"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Waymo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "WilliamsF1",
+   "apelidos": [
+    "Williams Grand Prix Engineering",
+    "Williams-Cosworth",
+    "Bmw williams f1",
+    "BMW Wiliams F1"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Zündapp",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.6,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Aermacchi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.612,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Asia Motors",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.014,
+   "ajustado": true,
+   "percentil": 0.141,
+   "fama": 0.612,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Brough Superior",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.64,
+   "ajustado": true,
+   "percentil": 0.009,
+   "fama": 0.612,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Fabrique d'armes Émile et Léon Nagant",
+   "apelidos": [
+    "L. Nagant & Cie, Liège"
+   ],
+   "sem_dado": false,
+   "icf": 12.849,
+   "ajustado": true,
+   "percentil": 0.201,
+   "fama": 0.612,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Fabryka Samochodów Małolitrażowych",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Ford Europe",
+   "apelidos": [
+    "Ford da Europa"
+   ],
+   "sem_dado": false,
+   "icf": 9.196,
+   "ajustado": true,
+   "percentil": 0.016,
+   "fama": 0.612,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Gillet",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Graham-Paige",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Ilmor",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Kalex",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Kojima",
+   "apelidos": [
+    "Kojima Engineering"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Lanchester Motor Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.612,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Morbidelli",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "OSCA",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Oakland",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Siemens-Schuckert",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.641,
+   "ajustado": true,
+   "percentil": 0.196,
+   "fama": 0.612,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Sinotruk",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.605,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Vector Aeromotive",
+   "apelidos": [
+    "Vector Motors",
+    "Vector Supercars",
+    "Vector Motors Corporation",
+    "Vector Aeromotive Corporation"
+   ],
+   "sem_dado": false,
+   "icf": 13.219,
+   "ajustado": true,
+   "percentil": 0.209,
+   "fama": 0.612,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Argus Motoren",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Beta Motor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.308,
+   "ajustado": true,
+   "percentil": 0.104,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Buell",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.612,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Chrysler",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Ford Germany",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.612,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "GWM",
+   "apelidos": [
+    "great wall",
+    "Great Wall Motors"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Getrag",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Husaberg",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Lexus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "MZKT",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.612,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Minarelli",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.612,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "NedCar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.612,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "OSSA",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.498,
+   "ajustado": true,
+   "percentil": 0.246,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Piëch Automotive AG",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.612,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Santana Motor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.627,
+   "ajustado": true,
+   "percentil": 0.073,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Sevel",
+   "apelidos": [
+    "Sevel Van",
+    "Società europea veicoli leggeri"
+   ],
+   "sem_dado": false,
+   "icf": 10.645,
+   "ajustado": true,
+   "percentil": 0.124,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Stellantis Europe",
+   "apelidos": [
+    "Stellantis Italy",
+    "Fiat Group Automobiles",
+    "Fiat Chrysler Automobiles Italy",
+    "FCA Italy",
+    "FGA"
+   ],
+   "sem_dado": false,
+   "icf": 10.549,
+   "ajustado": true,
+   "percentil": 0.117,
+   "fama": 0.62,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Tomos",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.612,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "AC Schnitzer",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.662,
+   "ajustado": true,
+   "percentil": 0.126,
+   "fama": 0.637,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Abbott Motor Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Albion Motors",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Anzani",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Associated Equipment Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "FTR Moto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.753,
+   "ajustado": true,
+   "percentil": 0.081,
+   "fama": 0.637,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Fantic Motor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Hennessey Performance Engineering",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.416,
+   "ajustado": true,
+   "percentil": 0.111,
+   "fama": 0.637,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Lyncar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Matchless",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Montesa Honda",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Rieju",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Rinspeed",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Scarab",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Vanden Plas",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Velocette",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Volkswagen Motorsport",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.62,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Wallyscar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Wilkinson Sword",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.628,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Blériot Aéronautique",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Carrocerias Fissore",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Changhe",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Connew",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Ford of Britain",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "JBW",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Kuzma",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Martinsyde",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Megola",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Microcar MC1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Motobi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Nuffield Organisation",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Overland Automobile",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "SWM Motorcycles",
+   "apelidos": [
+    "SWM"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Smart",
@@ -1567,10 +4166,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.64,
-   "pontos": 66,
-   "peso": 0.812
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Tec-Mec",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.637,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Troller",
@@ -1578,32 +4188,548 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.64,
-   "pontos": 66,
-   "peso": 0.812
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Dacia",
+   "resposta": "Winton Motor Carriage Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.647,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Aero",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.76,
-   "pontos": 67,
-   "peso": 0.819
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
   },
   {
-   "resposta": "Gurgel",
+   "resposta": "Arzani-Volpini",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.72,
-   "pontos": 67,
-   "peso": 0.819
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Bandini Automobili",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Carrosserias Baur",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "DB Automobiles",
+   "apelidos": [
+    "Deutsch-Bonnet"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "DNA Motors",
+   "apelidos": [
+    "Daelim Motor Company",
+    "Daelim Motor"
+   ],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Excelsior Motor Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.643,
+   "ajustado": true,
+   "percentil": 0.157,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Hawtai Motor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.377,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Henry Ford Company",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.573,
+   "ajustado": true,
+   "percentil": 0.156,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "JAC",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.66,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Peel Engineering Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Puma Automóveis",
+   "apelidos": [
+    "Puminha",
+    "Puma Veículos e Motores Ltda",
+    "Puma Automóvel"
+   ],
+   "sem_dado": false,
+   "icf": 12.213,
+   "ajustado": true,
+   "percentil": 0.179,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Royal Enfield",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Thames Ironworks and Shipbuilding Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Thomas Built Buses",
+   "apelidos": [
+    "Thomas buses"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Valmet Automotive",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.647,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Vivinus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Vyrus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.657,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Antoinette",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.681,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Ardie",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.681,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Astra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.098,
+   "ajustado": true,
+   "percentil": 0.176,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Ateliers de Construction Mécanique l’Aster",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Autoeuropa",
+   "apelidos": [
+    "Volkswagen Autoeuropa"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Automobili Stanguellini",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Auverland",
+   "apelidos": [
+    "Panhard Geral Defense"
+   ],
+   "sem_dado": false,
+   "icf": 7.964,
+   "ajustado": true,
+   "percentil": 0.004,
+   "fama": 0.681,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Cartercar Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.681,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Courage Compétition",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Fiat Industrial",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.11,
+   "ajustado": true,
+   "percentil": 0.099,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Ford Motor Company of Australia",
+   "apelidos": [
+    "Ford Australia"
+   ],
+   "sem_dado": false,
+   "icf": 10.108,
+   "ajustado": true,
+   "percentil": 0.097,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Ford Performance Vehicles",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.416,
+   "ajustado": true,
+   "percentil": 0.111,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Fábrica Dux",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.159,
+   "ajustado": true,
+   "percentil": 0.102,
+   "fama": 0.681,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Gardner-Serpollet",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.681,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Innoson Motors",
+   "apelidos": [
+    "Innoson Vehicle Manufacturing"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Léon Bollée Automobiles",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.681,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Magirus-Deutz",
+   "apelidos": [
+    "Companhia de Motores do Nordeste"
+   ],
+   "sem_dado": false,
+   "icf": 9.989,
+   "ajustado": true,
+   "percentil": 0.09,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Raleigh Bicycle Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.669,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "APIS",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.709,
+   "ajustado": true,
+   "percentil": 0.253,
+   "fama": 0.71,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Arab American Vehicles",
+   "apelidos": [
+    "AAV"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Baja",
+   "apelidos": [
+    "Fusca Baja"
+   ],
+   "sem_dado": false,
+   "icf": 11.464,
+   "ajustado": true,
+   "percentil": 0.153,
+   "fama": 0.71,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Bromme",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Carbuss - Indústria de Carrocerias Catarinense Ltda.",
+   "apelidos": [
+    "Carbuss"
+   ],
+   "sem_dado": false,
+   "icf": 10.355,
+   "ajustado": true,
+   "percentil": 0.106,
+   "fama": 0.71,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Chamonix Indústria e Comércio",
+   "apelidos": [
+    "Chamonix Tribute Cars",
+    "Chamonix Indústria e Comércio Ltda."
+   ],
+   "sem_dado": false,
+   "icf": 9.221,
+   "ajustado": true,
+   "percentil": 0.017,
+   "fama": 0.695,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Comil Carrocerias e Ônibus",
+   "apelidos": [
+    "Comil"
+   ],
+   "sem_dado": false,
+   "icf": 9.494,
+   "ajustado": true,
+   "percentil": 0.068,
+   "fama": 0.71,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Fábrica de Motocicletas Mars",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.159,
+   "ajustado": true,
+   "percentil": 0.102,
+   "fama": 0.71,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Gillet Herstal",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.695,
+   "pontos": 74,
+   "peso": 0.86
   },
   {
    "resposta": "Lada",
@@ -1611,32 +4737,54 @@
    "sem_dado": false,
    "icf": 14.268,
    "ajustado": true,
-   "percentil": 0.124,
+   "percentil": 0.227,
    "fama": 0.7,
-   "pontos": 67,
-   "peso": 0.819
+   "pontos": 74,
+   "peso": 0.86
   },
   {
-   "resposta": "Lincoln",
+   "resposta": "Lesovsky",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.74,
-   "pontos": 67,
-   "peso": 0.819
+   "percentil": 0.629,
+   "fama": 0.681,
+   "pontos": 74,
+   "peso": 0.86
   },
   {
-   "resposta": "Lotus",
+   "resposta": "Monark",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.681,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Motocicleta Millet",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.21,
+   "icf": 11.723,
    "ajustado": true,
-   "percentil": 0.098,
-   "fama": 0.72,
-   "pontos": 67,
-   "peso": 0.819
+   "percentil": 0.159,
+   "fama": 0.71,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Muntz Car Company",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.695,
+   "pontos": 74,
+   "peso": 0.86
   },
   {
    "resposta": "Opel",
@@ -1644,21 +4792,401 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.7,
-   "pontos": 67,
-   "peso": 0.819
+   "pontos": 74,
+   "peso": 0.86
   },
   {
-   "resposta": "Pagani",
+   "resposta": "Qvale",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.78,
-   "pontos": 67,
-   "peso": 0.819
+   "percentil": 0.629,
+   "fama": 0.681,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "União Metalo-Mecânica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.795,
+   "ajustado": true,
+   "percentil": 0.086,
+   "fama": 0.695,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Yamaha DragStar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.695,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "ATK motorcycles",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Adams",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Artline Engineering",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Buchet",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Christensen",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Denzel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Express Werke",
+   "apelidos": [
+    "Express"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Gurgel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.72,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Hecker",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "LaFayette Motors",
+   "apelidos": [
+    "LaFayette"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Lambert Automóveis",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.597,
+   "ajustado": true,
+   "percentil": 0.22,
+   "fama": 0.727,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Lotus",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.21,
+   "ajustado": true,
+   "percentil": 0.206,
+   "fama": 0.72,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Meskowski",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Nota Sports Cars",
+   "apelidos": [
+    "Nota Sports"
+   ],
+   "sem_dado": false,
+   "icf": 8.728,
+   "ajustado": true,
+   "percentil": 0.01,
+   "fama": 0.727,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Riley & Scott",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Spark Racing Technology",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.94,
+   "ajustado": true,
+   "percentil": 0.171,
+   "fama": 0.727,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Stevens",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Transmissão de torque pendular",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.332,
+   "ajustado": true,
+   "percentil": 0.189,
+   "fama": 0.727,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Wetteroth",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.71,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "B Engineering",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Brouhot",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Entreposto Máquinas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.919,
+   "ajustado": true,
+   "percentil": 0.169,
+   "fama": 0.747,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Graber",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Hannoversche Waggonfabrik",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Kynoch",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Lincoln",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.74,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Moore",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Olson",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Pankratz",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Park Ward",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Portaro",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Rae",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
   },
   {
    "resposta": "Seat",
@@ -1666,10 +5194,244 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.74,
-   "pontos": 67,
-   "peso": 0.819
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Snowberger",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Sutton",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Velie",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Waaijenberg",
+   "apelidos": [
+    "Waaijenberg Mobiliteit B.V",
+    "Waaijenberg Mobiliteit"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.727,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Abbey Auto Engineering Co. Ltd",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.488,
+   "ajustado": true,
+   "percentil": 0.066,
+   "fama": 0.771,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Aerocarene",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Alba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.595,
+   "ajustado": true,
+   "percentil": 0.194,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Autobicicletta Brevettata Rodolfi Alfeo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "British Salmson",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Charron, Girardot et Voigt",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.055,
+   "ajustado": true,
+   "percentil": 0.094,
+   "fama": 0.771,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Coadou-Fleury",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Cournil",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "D-Rad",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Dacia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.76,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Delamare-Deboutteville",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Elder",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Göricke",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Jeantaud",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Marchese",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Sensaud de Lavaud",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Sherman",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.747,
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Skoda",
@@ -1677,54 +5439,109 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.76,
-   "pontos": 67,
-   "peso": 0.819
+   "pontos": 77,
+   "peso": 0.877
   },
   {
-   "resposta": "Acura",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.82,
-   "pontos": 68,
-   "peso": 0.825
-  },
-  {
-   "resposta": "Adamo",
+   "resposta": "Ateliers Teixeira Automobiles",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.913,
+   "icf": 10.361,
+   "ajustado": true,
+   "percentil": 0.107,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Carbon Motors Corporation",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Colda",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Edelsbrunner Automobile München",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Effa Motors",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Ellemobil",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Ford Caminhões",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.8,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Gareau",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.8,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Hall",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.944,
    "ajustado": true,
    "percentil": 0.14,
-   "fama": 0.821,
-   "pontos": 68,
-   "peso": 0.825
-  },
-  {
-   "resposta": "Envemo",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.821,
-   "pontos": 68,
-   "peso": 0.825
-  },
-  {
-   "resposta": "Farus",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.821,
-   "pontos": 68,
-   "peso": 0.825
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Infiniti",
@@ -1732,43 +5549,65 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.8,
-   "pontos": 68,
-   "peso": 0.825
+   "pontos": 78,
+   "peso": 0.883
   },
   {
-   "resposta": "Koenigsegg",
+   "resposta": "Kearns Automóveis",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.82,
-   "pontos": 68,
-   "peso": 0.825
+   "percentil": 0.629,
+   "fama": 0.8,
+   "pontos": 78,
+   "peso": 0.883
   },
   {
-   "resposta": "Miura",
+   "resposta": "Langley",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 16.869,
+   "icf": 15.08,
    "ajustado": true,
-   "percentil": 0.149,
-   "fama": 0.82,
-   "pontos": 68,
-   "peso": 0.825
+   "percentil": 0.244,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
   },
   {
-   "resposta": "Puma",
+   "resposta": "Pagani",
    "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.213,
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.076,
-   "fama": 0.82,
-   "pontos": 68,
-   "peso": 0.825
+   "percentil": 0.629,
+   "fama": 0.78,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Phillips",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Saehan",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.8,
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Santa Matilde",
@@ -1776,10 +5615,54 @@
    "sem_dado": false,
    "icf": 8.337,
    "ajustado": true,
-   "percentil": 0.003,
+   "percentil": 0.006,
    "fama": 0.82,
-   "pontos": 68,
-   "peso": 0.825
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Société Parisienne",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.771,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Wendax",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.8,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Acura",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.82,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Adamo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.913,
+   "ajustado": true,
+   "percentil": 0.241,
+   "fama": 0.821,
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Amazonas",
@@ -1787,10 +5670,10 @@
    "sem_dado": false,
    "icf": 10.557,
    "ajustado": true,
-   "percentil": 0.042,
+   "percentil": 0.12,
    "fama": 0.822,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Bianco",
@@ -1798,10 +5681,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.823,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Brasinca",
@@ -1809,10 +5692,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.824,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Dardo",
@@ -1820,10 +5703,10 @@
    "sem_dado": false,
    "icf": 14.073,
    "ajustado": true,
-   "percentil": 0.121,
+   "percentil": 0.226,
    "fama": 0.823,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Engesa",
@@ -1831,10 +5714,46 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.822,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Envemo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.821,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "FNM",
+   "apelidos": [
+    "fenemê",
+    "Fábrica Nacional de Motores"
+   ],
+   "sem_dado": false,
+   "icf": 9.561,
+   "ajustado": true,
+   "percentil": 0.07,
+   "fama": 0.825,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Farus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.821,
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Fibravan",
@@ -1842,10 +5761,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.823,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Hofstetter",
@@ -1853,10 +5772,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.822,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Koenigsegg",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.82,
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Lafer",
@@ -1864,10 +5794,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.822,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Miura",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.869,
+   "ajustado": true,
+   "percentil": 0.254,
+   "fama": 0.82,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Puma",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.213,
+   "ajustado": true,
+   "percentil": 0.179,
+   "fama": 0.82,
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Uirapuru",
@@ -1875,10 +5827,43 @@
    "sem_dado": false,
    "icf": 14.442,
    "ajustado": true,
-   "percentil": 0.126,
+   "percentil": 0.23,
    "fama": 0.824,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Vemag",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.824,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "BAIC",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.83,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Brilliance",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.83,
+   "pontos": 80,
+   "peso": 0.894
   },
   {
    "resposta": "Chamonix",
@@ -1886,10 +5871,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.826,
-   "pontos": 70,
-   "peso": 0.837
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Chana",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.724,
+   "ajustado": true,
+   "percentil": 0.239,
+   "fama": 0.828,
+   "pontos": 80,
+   "peso": 0.894
   },
   {
    "resposta": "DKW-Vemag",
@@ -1899,113 +5895,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.825,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "Effa",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.827,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "FNM",
-   "apelidos": [
-    "fenemê"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.825,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "JPX",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.825,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "Lobini",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.826,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "Obvio",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.777,
-   "ajustado": true,
-   "percentil": 0.09,
-   "fama": 0.825,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "TAC Motors",
-   "apelidos": [
-    "tac"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.826,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "Vemag",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.824,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "BAIC",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.83,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "Chana",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.724,
-   "ajustado": true,
-   "percentil": 0.136,
-   "fama": 0.828,
-   "pontos": 71,
-   "peso": 0.843
+   "pontos": 80,
+   "peso": 0.894
   },
   {
    "resposta": "Dongfeng",
@@ -2013,10 +5906,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.829,
-   "pontos": 71,
-   "peso": 0.843
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Effa",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.827,
+   "pontos": 80,
+   "peso": 0.894
   },
   {
    "resposta": "Emis",
@@ -2024,98 +5928,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.827,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "Foton",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.653,
-   "ajustado": true,
-   "percentil": 0.132,
-   "fama": 0.829,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "Hafei",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.828,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "JMC",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.829,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "Jinbei",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.828,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "Lifan",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.827,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "Shineray",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.828,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "Baojun",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.831,
-   "pontos": 72,
-   "peso": 0.849
-  },
-  {
-   "resposta": "Brilliance",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.83,
-   "pontos": 72,
-   "peso": 0.849
+   "pontos": 80,
+   "peso": 0.894
   },
   {
    "resposta": "FAW",
@@ -2123,76 +5939,126 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.83,
-   "pontos": 72,
-   "peso": 0.849
+   "pontos": 80,
+   "peso": 0.894
   },
   {
-   "resposta": "Haima",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.831,
-   "pontos": 72,
-   "peso": 0.849
-  },
-  {
-   "resposta": "Maxus",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.832,
-   "pontos": 72,
-   "peso": 0.849
-  },
-  {
-   "resposta": "Ora",
+   "resposta": "Foton",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 9.764,
+   "icf": 14.653,
    "ajustado": true,
-   "percentil": 0.025,
-   "fama": 0.832,
-   "pontos": 72,
-   "peso": 0.849
+   "percentil": 0.236,
+   "fama": 0.829,
+   "pontos": 80,
+   "peso": 0.894
   },
   {
-   "resposta": "Roewe",
+   "resposta": "Hafei",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.832,
-   "pontos": 72,
-   "peso": 0.849
+   "percentil": 0.629,
+   "fama": 0.828,
+   "pontos": 80,
+   "peso": 0.894
   },
   {
-   "resposta": "Wuling",
+   "resposta": "JMC",
+   "apelidos": [
+    "Jiangling Motors",
+    "Jiangling"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.829,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "JPX",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.831,
-   "pontos": 72,
-   "peso": 0.849
+   "percentil": 0.629,
+   "fama": 0.825,
+   "pontos": 80,
+   "peso": 0.894
   },
   {
-   "resposta": "Zotye",
+   "resposta": "Jinbei",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.831,
-   "pontos": 72,
-   "peso": 0.849
+   "percentil": 0.629,
+   "fama": 0.828,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Lifan",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.827,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Lobini",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.826,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Obvio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.777,
+   "ajustado": true,
+   "percentil": 0.2,
+   "fama": 0.825,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Shineray",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.828,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "TAC Motors",
+   "apelidos": [
+    "tac",
+    "Tecnologia Automotiva Catarinense"
+   ],
+   "sem_dado": false,
+   "icf": 9.99,
+   "ajustado": true,
+   "percentil": 0.091,
+   "fama": 0.826,
+   "pontos": 80,
+   "peso": 0.894
   },
   {
    "resposta": "Aiways",
@@ -2200,10 +6066,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.833,
-   "pontos": 73,
-   "peso": 0.854
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Avatr",
@@ -2211,10 +6077,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.834,
-   "pontos": 73,
-   "peso": 0.854
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Baojun",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.831,
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Denza",
@@ -2222,10 +6099,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.834,
-   "pontos": 73,
-   "peso": 0.854
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Fangchengbao",
@@ -2233,87 +6110,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.835,
-   "pontos": 73,
-   "peso": 0.854
+   "pontos": 81,
+   "peso": 0.9
   },
   {
-   "resposta": "Rezvani",
+   "resposta": "Haima",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.835,
-   "pontos": 73,
-   "peso": 0.854
-  },
-  {
-   "resposta": "Seres",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.75,
-   "ajustado": true,
-   "percentil": 0.022,
-   "fama": 0.834,
-   "pontos": 73,
-   "peso": 0.854
-  },
-  {
-   "resposta": "Tank",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.833,
-   "pontos": 73,
-   "peso": 0.854
-  },
-  {
-   "resposta": "Voyah",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.833,
-   "pontos": 73,
-   "peso": 0.854
-  },
-  {
-   "resposta": "Wey",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.833,
-   "pontos": 73,
-   "peso": 0.854
-  },
-  {
-   "resposta": "Aptera",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.838,
-   "pontos": 74,
-   "peso": 0.86
-  },
-  {
-   "resposta": "Czinger",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.837,
-   "pontos": 74,
-   "peso": 0.86
+   "percentil": 0.629,
+   "fama": 0.831,
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Hennessey",
@@ -2321,65 +6132,109 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.836,
-   "pontos": 74,
-   "peso": 0.86
+   "pontos": 81,
+   "peso": 0.9
   },
   {
-   "resposta": "Mosler",
+   "resposta": "Maxus",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.837,
-   "pontos": 74,
-   "peso": 0.86
+   "percentil": 0.629,
+   "fama": 0.832,
+   "pontos": 81,
+   "peso": 0.9
   },
   {
-   "resposta": "Panoz",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.837,
-   "pontos": 74,
-   "peso": 0.86
-  },
-  {
-   "resposta": "SSC",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.836,
-   "pontos": 74,
-   "peso": 0.86
-  },
-  {
-   "resposta": "Saleen",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.836,
-   "pontos": 74,
-   "peso": 0.86
-  },
-  {
-   "resposta": "Vector",
+   "resposta": "Ora",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.219,
+   "icf": 9.764,
    "ajustado": true,
-   "percentil": 0.101,
-   "fama": 0.837,
-   "pontos": 74,
-   "peso": 0.86
+   "percentil": 0.084,
+   "fama": 0.832,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Rezvani",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.835,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Roewe",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.832,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Seres",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.75,
+   "ajustado": true,
+   "percentil": 0.079,
+   "fama": 0.834,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Tank",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.833,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Voyah",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.833,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Wey",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.833,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Wuling",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.831,
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Yangwang",
@@ -2387,10 +6242,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.835,
-   "pontos": 74,
-   "peso": 0.86
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Zotye",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.831,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Aptera",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.838,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Auburn",
@@ -2398,10 +6275,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.839,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Cord",
@@ -2409,10 +6286,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.838,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Czinger",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.837,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "DS",
@@ -2420,10 +6308,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.84,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Duesenberg",
@@ -2431,10 +6319,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.839,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Edismith",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.837,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Elio",
@@ -2442,10 +6341,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.838,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Frazer",
@@ -2453,10 +6352,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.84,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Kaiser",
@@ -2464,10 +6363,43 @@
    "sem_dado": false,
    "icf": 13.247,
    "ajustado": true,
-   "percentil": 0.104,
+   "percentil": 0.212,
    "fama": 0.84,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Megastar Veículos",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.837,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Mosler",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.837,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Panoz",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.837,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Pierce-Arrow",
@@ -2475,131 +6407,54 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.839,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 82,
+   "peso": 0.906
   },
   {
-   "resposta": "Stutz",
+   "resposta": "SSC",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.84,
-   "pontos": 75,
-   "peso": 0.866
+   "percentil": 0.629,
+   "fama": 0.836,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
-   "resposta": "Tucker",
+   "resposta": "Saleen",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.84,
-   "pontos": 75,
-   "peso": 0.866
+   "percentil": 0.629,
+   "fama": 0.836,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
-   "resposta": "Checker",
+   "resposta": "Suzuki X-Head",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.841,
-   "pontos": 76,
-   "peso": 0.872
+   "percentil": 0.629,
+   "fama": 0.837,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
-   "resposta": "Crosley",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.841,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Eagle",
+   "resposta": "Vector",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.864,
+   "icf": 13.219,
    "ajustado": true,
-   "percentil": 0.093,
-   "fama": 0.842,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Edsel",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.843,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Geo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.24,
-   "ajustado": true,
-   "percentil": 0.081,
-   "fama": 0.842,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Imperial",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.455,
-   "ajustado": true,
-   "percentil": 0.059,
-   "fama": 0.841,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Isdera",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.843,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Merkur",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.843,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Scion",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.842,
-   "pontos": 76,
-   "peso": 0.872
+   "percentil": 0.209,
+   "fama": 0.837,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Artega",
@@ -2607,10 +6462,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.844,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Borgward",
@@ -2618,21 +6473,65 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.845,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 83,
+   "peso": 0.911
   },
   {
-   "resposta": "Goggomobil",
+   "resposta": "Checker",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.846,
-   "pontos": 77,
-   "peso": 0.877
+   "percentil": 0.629,
+   "fama": 0.841,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Crosley",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.841,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Eagle",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.864,
+   "ajustado": true,
+   "percentil": 0.203,
+   "fama": 0.842,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Edsel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.843,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Geo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.24,
+   "ajustado": true,
+   "percentil": 0.183,
+   "fama": 0.842,
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Gumpert",
@@ -2642,10 +6541,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.844,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Horch",
@@ -2653,10 +6552,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.845,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Imperial",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.455,
+   "ajustado": true,
+   "percentil": 0.151,
+   "fama": 0.841,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Isdera",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.843,
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Maybach",
@@ -2664,10 +6585,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.845,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Melkus",
@@ -2675,21 +6596,54 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.844,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 83,
+   "peso": 0.911
   },
   {
-   "resposta": "Wanderer",
+   "resposta": "Merkur",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.845,
-   "pontos": 77,
-   "peso": 0.877
+   "percentil": 0.629,
+   "fama": 0.843,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Scion",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.842,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Stutz",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.84,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Tucker",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.84,
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Wiesmann",
@@ -2697,10 +6651,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.843,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Abt",
@@ -2708,98 +6662,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.848,
-   "pontos": 78,
-   "peso": 0.883
-  },
-  {
-   "resposta": "Bitter",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.962,
-   "ajustado": true,
-   "percentil": 0.143,
-   "fama": 0.848,
-   "pontos": 78,
-   "peso": 0.883
-  },
-  {
-   "resposta": "Brabus",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.848,
-   "pontos": 78,
-   "peso": 0.883
-  },
-  {
-   "resposta": "Glas",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.847,
-   "pontos": 78,
-   "peso": 0.883
-  },
-  {
-   "resposta": "Hansa",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.776,
-   "ajustado": true,
-   "percentil": 0.146,
-   "fama": 0.847,
-   "pontos": 78,
-   "peso": 0.883
-  },
-  {
-   "resposta": "Heinkel",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.847,
-   "pontos": 78,
-   "peso": 0.883
-  },
-  {
-   "resposta": "Lloyd",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.848,
-   "pontos": 78,
-   "peso": 0.883
-  },
-  {
-   "resposta": "Messerschmitt",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.846,
-   "pontos": 78,
-   "peso": 0.883
-  },
-  {
-   "resposta": "NSU",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.846,
-   "pontos": 78,
-   "peso": 0.883
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Alpina",
@@ -2807,10 +6673,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.849,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Bitter",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.962,
+   "ajustado": true,
+   "percentil": 0.243,
+   "fama": 0.848,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Brabus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.848,
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Carlsson",
@@ -2818,21 +6706,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.851,
-   "pontos": 79,
-   "peso": 0.889
-  },
-  {
-   "resposta": "Delage",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.852,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Gemballa",
@@ -2840,10 +6717,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.849,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Glas",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.847,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Goggomobil",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.846,
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Hamann",
@@ -2851,21 +6750,43 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.85,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 84,
+   "peso": 0.917
   },
   {
-   "resposta": "Koenig",
+   "resposta": "Hansa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.776,
+   "ajustado": true,
+   "percentil": 0.249,
+   "fama": 0.847,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Heinkel",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.851,
-   "pontos": 79,
-   "peso": 0.889
+   "percentil": 0.629,
+   "fama": 0.847,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Lloyd",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.848,
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Lorinser",
@@ -2873,10 +6794,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.85,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Mansory",
@@ -2884,10 +6805,34 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.85,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Messerschmitt",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.846,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "NSU",
+   "apelidos": [
+    "NSU Motorenwerke AG"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.846,
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Ruf",
@@ -2895,21 +6840,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.849,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 84,
+   "peso": 0.917
   },
   {
-   "resposta": "Venturi",
+   "resposta": "Wanderer",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.851,
-   "pontos": 79,
-   "peso": 0.889
+   "percentil": 0.629,
+   "fama": 0.845,
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Aixam",
@@ -2917,10 +6862,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.853,
-   "pontos": 80,
-   "peso": 0.894
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Bellier",
@@ -2928,87 +6873,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.854,
-   "pontos": 80,
-   "peso": 0.894
-  },
-  {
-   "resposta": "Chatenet",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.854,
-   "pontos": 80,
-   "peso": 0.894
-  },
-  {
-   "resposta": "Cizeta",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.854,
-   "pontos": 80,
-   "peso": 0.894
-  },
-  {
-   "resposta": "Delahaye",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.852,
-   "pontos": 80,
-   "peso": 0.894
-  },
-  {
-   "resposta": "Facel Vega",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.852,
-   "pontos": 80,
-   "peso": 0.894
-  },
-  {
-   "resposta": "Hotchkiss",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.852,
-   "pontos": 80,
-   "peso": 0.894
-  },
-  {
-   "resposta": "Ligier",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.853,
-   "pontos": 80,
-   "peso": 0.894
-  },
-  {
-   "resposta": "Microcar",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.853,
-   "pontos": 80,
-   "peso": 0.894
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Bertone",
@@ -3016,10 +6884,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.856,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Bizzarrini",
@@ -3027,32 +6895,109 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.855,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 85,
+   "peso": 0.922
   },
   {
-   "resposta": "Fornasari",
+   "resposta": "Chatenet",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.857,
-   "pontos": 81,
-   "peso": 0.9
+   "percentil": 0.629,
+   "fama": 0.854,
+   "pontos": 85,
+   "peso": 0.922
   },
   {
-   "resposta": "Italdesign",
+   "resposta": "Cizeta",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.857,
-   "pontos": 81,
-   "peso": 0.9
+   "percentil": 0.629,
+   "fama": 0.854,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Delage",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.852,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Delahaye",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.852,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Facel Vega",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.852,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Hotchkiss",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.852,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Koenig",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.851,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Ligier",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.853,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Microcar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.853,
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Moretti",
@@ -3060,10 +7005,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.855,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Pininfarina",
@@ -3071,10 +7016,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.856,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Siata",
@@ -3082,10 +7027,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.855,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Stanguellini",
@@ -3093,10 +7038,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.855,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Venturi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.851,
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Zagato",
@@ -3104,109 +7060,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.856,
-   "pontos": 81,
-   "peso": 0.9
-  },
-  {
-   "resposta": "Devel",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.859,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "GTA Spano",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.858,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "Inferno",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.47,
-   "ajustado": true,
-   "percentil": 0.037,
-   "fama": 0.86,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "Laraki",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.859,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "Mazzanti",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.857,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "Pegaso",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.724,
-   "ajustado": true,
-   "percentil": 0.136,
-   "fama": 0.858,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "Tramontana",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 17.059,
-   "ajustado": true,
-   "percentil": 0.152,
-   "fama": 0.858,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "Vencer",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.061,
-   "ajustado": true,
-   "percentil": 0.028,
-   "fama": 0.858,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "W Motors",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.859,
-   "pontos": 82,
-   "peso": 0.906
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Bolwell",
@@ -3214,10 +7071,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.861,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Devel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.859,
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Dina",
@@ -3225,10 +7093,10 @@
    "sem_dado": false,
    "icf": 13.463,
    "ajustado": true,
-   "percentil": 0.11,
+   "percentil": 0.219,
    "fama": 0.86,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Elfin",
@@ -3236,21 +7104,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.861,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 86,
+   "peso": 0.927
   },
   {
-   "resposta": "Hommell",
+   "resposta": "Fornasari",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.862,
-   "pontos": 83,
-   "peso": 0.911
+   "percentil": 0.629,
+   "fama": 0.857,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "GTA Spano",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.858,
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Hulme",
@@ -3258,10 +7137,45 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.861,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Inferno",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.47,
+   "ajustado": true,
+   "percentil": 0.114,
+   "fama": 0.86,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Italdesign",
+   "apelidos": [
+    "Italdesign Giugiaro"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.857,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Laraki",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.859,
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Mastretta",
@@ -3269,10 +7183,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.86,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Mazzanti",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.857,
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Mega",
@@ -3280,10 +7205,32 @@
    "sem_dado": false,
    "icf": 10.153,
    "ajustado": true,
-   "percentil": 0.031,
+   "percentil": 0.1,
    "fama": 0.862,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Pegaso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.724,
+   "ajustado": true,
+   "percentil": 0.239,
+   "fama": 0.858,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Tramontana",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.059,
+   "ajustado": true,
+   "percentil": 0.256,
+   "fama": 0.858,
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "VAM",
@@ -3291,21 +7238,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.86,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 86,
+   "peso": 0.927
   },
   {
-   "resposta": "Venucia",
+   "resposta": "Vencer",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.061,
+   "ajustado": true,
+   "percentil": 0.096,
+   "fama": 0.858,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "W Motors",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.862,
-   "pontos": 83,
-   "peso": 0.911
+   "percentil": 0.629,
+   "fama": 0.859,
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Aion",
@@ -3313,10 +7271,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.865,
-   "pontos": 84,
-   "peso": 0.917
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Arcfox",
@@ -3324,10 +7282,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.863,
-   "pontos": 84,
-   "peso": 0.917
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Exeed",
@@ -3335,98 +7293,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.864,
-   "pontos": 84,
-   "peso": 0.917
+   "pontos": 87,
+   "peso": 0.933
   },
   {
-   "resposta": "IM Motors",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.987,
-   "ajustado": true,
-   "percentil": 0.073,
-   "fama": 0.863,
-   "pontos": 84,
-   "peso": 0.917
-  },
-  {
-   "resposta": "Jetour",
+   "resposta": "Hommell",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.864,
-   "pontos": 84,
-   "peso": 0.917
-  },
-  {
-   "resposta": "Kaiyi",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.865,
-   "pontos": 84,
-   "peso": 0.917
-  },
-  {
-   "resposta": "Qoros",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.863,
-   "pontos": 84,
-   "peso": 0.917
-  },
-  {
-   "resposta": "Rising Auto",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.248,
-   "ajustado": true,
-   "percentil": 0.008,
-   "fama": 0.863,
-   "pontos": 84,
-   "peso": 0.917
-  },
-  {
-   "resposta": "Soueast",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.864,
-   "pontos": 84,
-   "peso": 0.917
-  },
-  {
-   "resposta": "Trumpchi",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.865,
-   "pontos": 84,
-   "peso": 0.917
-  },
-  {
-   "resposta": "Aurus",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.868,
-   "pontos": 85,
-   "peso": 0.922
+   "percentil": 0.629,
+   "fama": 0.862,
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Huawei Aito",
@@ -3436,10 +7317,10 @@
    "sem_dado": false,
    "icf": 17.538,
    "ajustado": true,
-   "percentil": 0.154,
+   "percentil": 0.257,
    "fama": 0.867,
-   "pontos": 85,
-   "peso": 0.922
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Hycan",
@@ -3447,21 +7328,65 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.866,
-   "pontos": 85,
-   "peso": 0.922
+   "pontos": 87,
+   "peso": 0.933
   },
   {
-   "resposta": "Marussia",
+   "resposta": "IM Motors",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.987,
+   "ajustado": true,
+   "percentil": 0.174,
+   "fama": 0.863,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Jetour",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.868,
-   "pontos": 85,
-   "peso": 0.922
+   "percentil": 0.629,
+   "fama": 0.864,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Kaiyi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.865,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Qoros",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.863,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Rising Auto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.248,
+   "ajustado": true,
+   "percentil": 0.021,
+   "fama": 0.863,
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Skywell",
@@ -3469,10 +7394,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.866,
-   "pontos": 85,
-   "peso": 0.922
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Soueast",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.864,
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Togg",
@@ -3480,10 +7416,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.867,
-   "pontos": 85,
-   "peso": 0.922
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Trumpchi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.865,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Venucia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.862,
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Vinfast",
@@ -3491,10 +7449,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.867,
-   "pontos": 85,
-   "peso": 0.922
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Weltmeister",
@@ -3502,120 +7460,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.866,
-   "pontos": 85,
-   "peso": 0.922
-  },
-  {
-   "resposta": "Xiaomi",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.867,
-   "pontos": 85,
-   "peso": 0.922
-  },
-  {
-   "resposta": "Dax",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.87,
-   "pontos": 86,
-   "peso": 0.927
-  },
-  {
-   "resposta": "Ginetta",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.869,
-   "pontos": 86,
-   "peso": 0.927
-  },
-  {
-   "resposta": "Grinnall",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.869,
-   "pontos": 86,
-   "peso": 0.927
-  },
-  {
-   "resposta": "Lister",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 19.617,
-   "ajustado": true,
-   "percentil": 0.157,
-   "fama": 0.871,
-   "pontos": 86,
-   "peso": 0.927
-  },
-  {
-   "resposta": "Marcos",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.676,
-   "ajustado": true,
-   "percentil": 0.017,
-   "fama": 0.87,
-   "pontos": 86,
-   "peso": 0.927
-  },
-  {
-   "resposta": "Radical",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.058,
-   "ajustado": true,
-   "percentil": 0.053,
-   "fama": 0.869,
-   "pontos": 86,
-   "peso": 0.927
-  },
-  {
-   "resposta": "Ronart",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.868,
-   "pontos": 86,
-   "peso": 0.927
-  },
-  {
-   "resposta": "Ultima",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.02,
-   "ajustado": true,
-   "percentil": 0.051,
-   "fama": 0.87,
-   "pontos": 86,
-   "peso": 0.927
-  },
-  {
-   "resposta": "Westfield",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.87,
-   "pontos": 86,
-   "peso": 0.927
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Allard",
@@ -3623,10 +7471,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.871,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 88,
+   "peso": 0.938
   },
   {
    "resposta": "Alvis",
@@ -3634,10 +7482,54 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.873,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Aurus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.868,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Dax",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.87,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Ginetta",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.869,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Grinnall",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.869,
+   "pontos": 88,
+   "peso": 0.938
   },
   {
    "resposta": "Healey",
@@ -3647,10 +7539,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.871,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 88,
+   "peso": 0.938
   },
   {
    "resposta": "Hillman",
@@ -3658,32 +7550,65 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.872,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 88,
+   "peso": 0.938
   },
   {
-   "resposta": "Humber",
+   "resposta": "Lister",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.617,
+   "ajustado": true,
+   "percentil": 0.26,
+   "fama": 0.871,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Marcos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.676,
+   "ajustado": true,
+   "percentil": 0.074,
+   "fama": 0.87,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Marussia",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.873,
-   "pontos": 87,
-   "peso": 0.933
+   "percentil": 0.629,
+   "fama": 0.868,
+   "pontos": 88,
+   "peso": 0.938
   },
   {
-   "resposta": "Riley",
+   "resposta": "Radical",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.058,
+   "ajustado": true,
+   "percentil": 0.144,
+   "fama": 0.869,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Ronart",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.873,
-   "pontos": 87,
-   "peso": 0.933
+   "percentil": 0.629,
+   "fama": 0.868,
+   "pontos": 88,
+   "peso": 0.938
   },
   {
    "resposta": "Singer",
@@ -3691,10 +7616,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.872,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 88,
+   "peso": 0.938
   },
   {
    "resposta": "Sunbeam",
@@ -3702,21 +7627,43 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.872,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 88,
+   "peso": 0.938
   },
   {
-   "resposta": "Wolseley",
+   "resposta": "Ultima",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.02,
+   "ajustado": true,
+   "percentil": 0.143,
+   "fama": 0.87,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Westfield",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.873,
-   "pontos": 87,
-   "peso": 0.933
+   "percentil": 0.629,
+   "fama": 0.87,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Xiaomi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.867,
+   "pontos": 88,
+   "peso": 0.938
   },
   {
    "resposta": "Arash",
@@ -3724,10 +7671,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.876,
-   "pontos": 88,
-   "peso": 0.938
+   "pontos": 89,
+   "peso": 0.943
   },
   {
    "resposta": "Armstrong Siddeley",
@@ -3735,100 +7682,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.874,
-   "pontos": 88,
-   "peso": 0.938
-  },
-  {
-   "resposta": "Bond",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.875,
-   "pontos": 88,
-   "peso": 0.938
-  },
-  {
-   "resposta": "Daimler",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.874,
-   "pontos": 88,
-   "peso": 0.938
-  },
-  {
-   "resposta": "Gordon-Murray",
-   "apelidos": [
-    "gma"
-   ],
-   "sem_dado": false,
-   "icf": 12.443,
-   "ajustado": true,
-   "percentil": 0.084,
-   "fama": 0.875,
-   "pontos": 88,
-   "peso": 0.938
-  },
-  {
-   "resposta": "Keating",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.876,
-   "pontos": 88,
-   "peso": 0.938
-  },
-  {
-   "resposta": "Lanchester",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.874,
-   "pontos": 88,
-   "peso": 0.938
-  },
-  {
-   "resposta": "Peel",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.875,
-   "pontos": 88,
-   "peso": 0.938
-  },
-  {
-   "resposta": "Reliant",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.875,
-   "pontos": 88,
-   "peso": 0.938
-  },
-  {
-   "resposta": "Trident",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.876,
-   "pontos": 88,
-   "peso": 0.938
+   "pontos": 89,
+   "peso": 0.943
   },
   {
    "resposta": "Berkeley",
@@ -3836,8 +7693,19 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.877,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Bond",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.875,
    "pontos": 89,
    "peso": 0.943
   },
@@ -3847,19 +7715,19 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.878,
    "pontos": 89,
    "peso": 0.943
   },
   {
-   "resposta": "Elva",
+   "resposta": "Daimler",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.879,
+   "percentil": 0.629,
+   "fama": 0.874,
    "pontos": 89,
    "peso": 0.943
   },
@@ -3869,7 +7737,7 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.878,
    "pontos": 89,
    "peso": 0.943
@@ -3880,19 +7748,54 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.877,
    "pontos": 89,
    "peso": 0.943
   },
   {
-   "resposta": "Gilbern",
+   "resposta": "Gordon-Murray",
+   "apelidos": [
+    "gma"
+   ],
+   "sem_dado": false,
+   "icf": 12.443,
+   "ajustado": true,
+   "percentil": 0.191,
+   "fama": 0.875,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Humber",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.878,
+   "percentil": 0.629,
+   "fama": 0.873,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Keating",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.876,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Lanchester",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.874,
    "pontos": 89,
    "peso": 0.943
   },
@@ -3902,30 +7805,63 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.877,
    "pontos": 89,
    "peso": 0.943
   },
   {
-   "resposta": "Rochdale",
+   "resposta": "Peel",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.878,
+   "percentil": 0.629,
+   "fama": 0.875,
    "pontos": 89,
    "peso": 0.943
   },
   {
-   "resposta": "Turner",
+   "resposta": "Reliant",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
-   "fama": 0.879,
+   "percentil": 0.629,
+   "fama": 0.875,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Riley",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.873,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Trident",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.876,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Wolseley",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.873,
    "pontos": 89,
    "peso": 0.943
   },
@@ -3935,8 +7871,41 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.88,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Elva",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.879,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Gilbern",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.878,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Matra Veículos",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.89,
    "pontos": 90,
    "peso": 0.949
   },
@@ -3946,7 +7915,7 @@
    "sem_dado": false,
    "icf": 7.472,
    "ajustado": true,
-   "percentil": 0.0,
+   "percentil": 0.003,
    "fama": 0.88,
    "pontos": 90,
    "peso": 0.949
@@ -3963,13 +7932,35 @@
    "peso": 0.949
   },
   {
+   "resposta": "Rochdale",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.878,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
    "resposta": "Strathcarron",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.577,
+   "percentil": 0.629,
    "fama": 0.88,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Turner",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.629,
+   "fama": 0.879,
    "pontos": 90,
    "peso": 0.949
   }

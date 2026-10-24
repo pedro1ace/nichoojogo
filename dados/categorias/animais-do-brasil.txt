@@ -1,7 +1,7 @@
 # titulo: Animais do Brasil
 # pergunta: Cite um animal da fauna brasileira
 # formato: uma resposta por linha; apelidos separados por " | "
-Onça-pintada | onça | jaguar | onça preta | canguçu
+Onça-pintada | onça | jaguar | onça preta | canguçu | Panthera onca
 Arara | arara-azul | arara-vermelha | arara-canindé | arara-azul-grande | arara-vermelha-grande
 Mico-leão-dourado | mico-leão
 Capivara
@@ -47,7 +47,7 @@ Veado-campeiro
 Cervo-do-pantanal
 Jaguatirica
 Gato-maracajá
-Suçuarana | onça-parda | puma | leão-baio
+Suçuarana | onça-parda | puma | leão-baio | Puma concolor
 Muriqui
 Uacari
 Sapo-cururu | cururu
@@ -56,7 +56,7 @@ Jararaca
 Cascavel
 Cobra-coral | coral | coral-verdadeira | coral-falsa
 Surucucu
-Ararajuba
+Ararajuba | Guaruba
 Arara-azul-de-lear
 Mutum
 Jacu
@@ -85,7 +85,7 @@ Polvo
 Lula
 Caranguejo | caranguejo-uçá
 Siri
-Guaiamum
+Guaiamum | Guaiamu
 Lagosta
 Camarão
 Ostra
@@ -122,7 +122,7 @@ Ararinha-azul
 Tiriba
 Curica
 Calopsita
-Canário-da-terra | canário
+Canário-da-terra | canário | Canário-da-terra-verdadeiro
 Pintassilgo
 Coleirinho | papa-capim
 Trinca-ferro
@@ -161,10 +161,10 @@ Inhambu | nambu
 Codorna
 Perdiz
 Jacutinga
-Mutum-de-alagoas
+Mutum-de-alagoas | Mutum-do-nordeste
 Macuco
 Curicaca
-Tachã
+Tachã | Tochã-cinzenta
 Pomba | pombo
 Juriti
 Rolinha | rola | fogo-apagou
@@ -184,7 +184,7 @@ Vira-bosta
 Bacurau | curiango | mãe-da-lua | urutau
 Andorinhão
 Beija-flor-tesoura
-Tucano-toco
+Tucano-toco | Tucanuçu
 Tucano-de-bico-verde
 Araçari
 Saracuruçu
@@ -233,7 +233,7 @@ Tamanduá-mirim | mambira
 Preguiça-de-dois-dedos
 Veado-catingueiro
 Veado-mateiro
-Veado-galheiro
+Veado-galheiro | Cariacu
 Cervo
 Anta-brasileira | tapir
 Cutiara
@@ -290,7 +290,7 @@ Sapo-flecha
 Sapinho-pingo-de-ouro
 Perereca-de-capacete
 Perereca-verde
-Sapo-pulga
+Sapo-pulga | Brachycephalus didactylus
 Untanha | sapo-de-chifre
 Tucunaré
 Dourado
@@ -430,7 +430,7 @@ Cuíca-d'água
 Cuíca-de-cauda-grossa
 Tatu-de-quinze-quilos
 Mico-estrela
-Sagui-da-serra
+Sagui-da-serra | Sagui-da-serra-claro
 Sagui-de-wied
 Guigó
 Macaco-de-cheiro-de-cabeça-preta
@@ -448,12 +448,12 @@ Golfinho-de-risso
 Baleia-sei
 Baleia-fin
 Elefante-marinho
-Lobo-marinho-subantártico
+Lobo-marinho-subantártico | Lobo-marinho-de-peito-branco
 Petrel
 Pardela
 Trinta-réis
-Talha-mar
-Gaivotão
+Talha-mar | Rynchops niger
+Gaivotão | Gaivota-meridional
 Batuíra
 Maçarico
 Narceja
@@ -471,14 +471,14 @@ Anacã
 Tuim
 Cuiú-cuiú
 Marianinha
-Sabiá-da-praia
+Sabiá-da-praia | Mimo-tropical
 Sabiá-ferreiro
 Sabiá-coleira
-Pássaro-preto-de-veste-amarela
+Pássaro-preto-de-veste-amarela | Veste-amarela
 Tiê-preto
-Tiê-galo
-Saíra-militar
-Saíra-amarela
+Tiê-galo | Lanio cristatus
+Saíra-militar | Tangara cyanocephala
+Saíra-amarela | Stilpnia cayana
 Saíra-lagarta
 Gaturamo-verdadeiro
 Bonito-do-campo
@@ -490,10 +490,10 @@ Pichororé
 Tovaca
 Pavó
 Anambé
-Cricrió
+Cricrió | Cricrió-seringueiro
 Araponga-da-amazônia
 Galo-da-serra
-Pássaro-boi
+Pássaro-boi | Maú
 Maria-cavaleira
 Bem-te-vi-rajado
 Neinei
@@ -503,8 +503,8 @@ Risadinha
 Ferreirinho
 Teque-teque
 Bico-chato
-Pula-pula
-Pia-cobra
+Pula-pula | Basileuterus culicivorus
+Pia-cobra | Geothlypis aequinoctialis
 Juruviara
 Pitiguari
 Gaturamo-rei
@@ -514,13 +514,13 @@ Baiano
 Chorão
 Bigodinho
 Tiziu
-Canário-do-amazonas
+Canário-do-amazonas | Sicalis columbiana
 Canário-do-brejo
 Polícia-inglesa
 Garibaldi-do-brejo
 Iraúna
 Japu
-Japim
+Japim | Cacicus cela
 Xexéu
 Encontro
 Inhapim
@@ -531,7 +531,7 @@ Corvo
 Pomba-galega
 Pomba-trocal
 Pariri
-Juriti-pupu
+Juriti-pupu | Leptotila verreauxi
 Fogo-apagou-do-nordeste
 Urubu-de-cabeça-amarela
 Urubu-de-cabeça-vermelha
@@ -542,7 +542,7 @@ Gavião-tesoura
 Gavião-carrapateiro | carrapateiro
 Acauã
 Gaviãozinho
-Quiriquiri
+Quiriquiri | Falcão-americano
 Falcão-de-coleira
 Águia-cinzenta
 Águia-pescadora
@@ -551,11 +551,11 @@ Coruja-preta
 Coruja-do-mato
 Coruja-orelhuda
 Murucututu
-Mãe-da-lua-gigante
+Mãe-da-lua-gigante | Urutau-grande
 Curiango-do-banhado
-Tesourão-grande
+Tesourão-grande | Rabiforcado-grande
 Beija-flor-de-fronte-violeta
-Beija-flor-rubi
+Beija-flor-rubi | Heliodoxa rubricauda
 Beija-flor-de-veste-preta
 Rabo-branco
 Topetinho
@@ -573,8 +573,8 @@ Picapauzinho
 Arirambinha
 Martim-pescador-grande
 Martim-pescador-verde
-Macuquinho
-Inambu-chororó
+Macuquinho | Eleoscytalopus indigoticus
+Inambu-chororó | Inhambu-chororó
 Inhambuguaçu
 Jaó
 Codorna-amarela
@@ -582,7 +582,7 @@ Mutum-cavalo
 Mutum-de-penacho
 Aracuã
 Jacupemba
-Jacuaçu
+Jacuaçu | Jacuguaçu
 Cujubi
 Urumutum
 Cigana | jacu-cigano
@@ -601,12 +601,12 @@ Carão
 Saracura-três-potes
 Sanã
 Galinha-d'água
-Frango-d'água-azul
+Frango-d'água-azul | Frango-de-água-azul
 Pato-mergulhão
 Pato-corredor
 Marreca-caneleira
 Marreca-cabocla
-Ananaí
+Ananaí | Marreca-ananaí
 Cisne-de-pescoço-preto
 Capororoca
 Tachã-do-sul
@@ -635,7 +635,7 @@ Coral-de-hemprich
 Lagarto-de-papo-amarelo
 Jacuraru
 Calango-verde
-Calanguinho
+Calanguinho | Anolis phyllorhinus
 Taraguira
 Lagartixa-de-parede
 Briba
@@ -648,7 +648,7 @@ Tartaruga-do-mato
 Irapuca
 Cabeçuda
 Jabuti-amarelo
-Rã-manteiga
+Rã-manteiga | Leptodactylus latrans
 Rã-cachorro
 Rã-de-vidro
 Sapo-de-barriga-vermelha
@@ -804,3 +804,2708 @@ Escorpião-preto
 Lacraia-gigante
 Lacrau
 Tatu-bolinha
+Félix I
+Testes com animais no Brasil
+Juliomys anoblepas
+Megadytes ducalis
+Paleopsilopterus
+Perereca-verde-de-fímbria
+Pristiguana
+Isostichopus badionotus
+Oreaster reticulatus
+Austroposeidon
+Buriolestes
+Cratoavis
+Gnathovorax
+Guaibasauridae
+Ibirania
+Irritator
+Kurupi itaata
+Macrocollum
+Mirischia
+Nhandumirim
+Oxalaia
+Pampadromaeus
+Saturnalia tupiniquim
+Spectrovenator
+Thanos simonattoi
+Tiamat valdecii
+Ubirajara jubatus
+Ypupiara
+Megalobulimus cardosoi
+Tomigerus turbinatus
+Apuim-de-costas-pretas
+Caboclinho-de-barriga-vermelha
+Caboclinho-de-chapéu-cinzento
+Cavalo-marinho-de-focinho-longo
+Cavalo-marinho-raiado
+Cigarra-verdadeira
+Estalador-do-sul
+Gavião-pato
+Góbio-néon
+Jaó-do-sul
+Lagosta-de-são-fidélis
+Macuru-de-barriga-castanha
+Mero-preto
+Papagaio-de-peito-roxo
+Patinho-de-asa-castanha
+Pixoxó
+Sabiá-cica
+Sabiá-pimenta
+Tartaruga-comum
+Tesourinha-da-mata
+Tubarão-galha-branca-oceânico
+Tubarão-martelo-liso
+Tubarão-martelo-recortado
+Acentronichthys leptos
+Alesa prema
+Anambé-de-asa-branca
+Anêmona-gigante
+Bico-chato-grande
+Cágado-do-paraíba
+Camarão-cavalo
+Camarão-filtrador-africano
+Caranguejo-arborícola
+Cascudo-leiteiro
+Catita-de-listras
+Chauá
+Choquinha-chumbo
+Choquinha-de-rabo-cintado
+Chora-chuva-de-cara-branca
+Crejoá
+Eurytides iphitas
+Fruxu-baiano
+Guigó-mascarado
+Heliconius nattereri
+Heraclides himeros himeros
+Hyalyris fiammetta
+Hyalyris leptalina
+Inhambu-anhangá
+Jacu-estalo-de-bico-verde
+Jararaca-verde
+Mutum-do-sudeste
+Peixe-serra-comum
+Peixe-serra-de-dentes-pequenos
+Prepona claudina
+Rã-da-pedra
+Rato-da-taquara
+Tiriba-de-orelha-branca
+Tiriba-grande
+Tithorea harmonia caissara
+Urubuzinho
+Vira-folha-de-peito-canela
+Caboclinho-de-papo-branco
+Caboclinho-de-papo-escuro
+Cação-noturno
+Cágado-preto
+Chironius flavolineatus
+Estilete
+Galinha-do-mato
+Gavião-pombo-grande
+Perereca-de-vidro
+Uru-capoeira
+Abrawayaomys ruschii
+Andorinha-de-coleira
+Apuim-de-cauda-amarela
+Arawacus aethesa
+Balança-rabo-canela
+Benedito-de-testa-amarela
+Bicudo-verdadeiro
+Brycon devillei
+Brycon insignis
+Bugio-marrom-do-norte
+Caburé-miudinho
+Cágado-cabeçudo
+Cágado-da-serra
+Chibante-assobiador
+Choeroniscus minor
+Coarazuphium pains
+Codorna-carapé
+Codorna-mineira
+Crenicichla mucuryna
+Cururuzinho-ocelado
+Dasyophthalma vertebralis
+Flautim-marrom
+Ipecuá
+Juriti-vermelha
+Mcclungia cymo fallens
+Megasoma gyas gyas
+Pararu-espelho
+Piau-beiçudo
+Pica-pau-de-coleira
+Rabo-de-espinho-de-barriga-preta
+Sabiá-castanho
+Saíra-apunhalada
+Surucuá-de-coleira
+Andorinhão-estofador
+Arapaçu-de-bico-de-cunha
+Arapaçu-de-garganta-amarela
+Atlantirivulus nudiventris
+Atobá-de-pé-vermelho
+Bacurauzinho-da-caatinga
+Beija-flor-rajado
+Brycon ferox
+Cação-azeiteiro
+Caenoptychia boulleti
+Camarão-canela
+Camarão-sossego
+Capitão-de-saíra-amarelo
+Chorona-cinza
+Coral-cérebro-da-bahia
+Cycloramphus fuliginosus
+Dasyprocta leporina
+Dendropsophus ruschii
+Dichotomius schiffleri
+Episcada vitrea
+Gavião-do-banhado
+Grama-brasileiro
+Grazina-de-trindade
+Idiogomphoides ictinia
+Jandaia-de-testa-vermelha
+Lagartinho-de-linhares
+Lagosta-palhaço
+Lagosta-sapata
+Lampronycteris brachyotis
+Leptagrion acutum
+Leptagrion capixabae
+Lichonycteris obscura
+Macrobrachium iheringi
+Macrobrachium olfersii
+Macrobrachium potiuna
+Maitaca-de-cabeça-azul
+Microcambeva barbata
+Micronycteris hirsuta
+Morcego-de-cauda-curta-sedoso
+Moschoneura pinthous methymna
+Muricea atlantica
+Palaemon pandaliformis
+Paragenidens grandoculis
+Pardela-de-asa-larga
+Pedra-de-iemanjá
+Petrocerus catiena
+Phantasmarana apuana
+Phasmahyla exilis
+Phrynomedusa marginata
+Platystigma pronoti
+Prochilodus vimboides
+Pula-pula-ribeirinho
+Rabiforcado-pequeno
+Rabo-branco-do-bico-grande
+Rachoviscus graciliceps
+Rãzinha-dos-rochedos
+Sabiá-da-mata
+Sapinho-da-mata
+Saúva-preta
+Tangará-falso
+Tangará-rajado
+Trichodactylus dentatus
+Trichodactylus petropolitanus
+Tubarão-branco
+Tubarão-de-pala
+Tubarão-peregrino
+Uruçu-preto
+Urutau-pardo
+Vira-folha-pardo
+Xenurolebias izecksohni
+Xenurolebias myersi
+Abapeba echinus
+Agaocephala margaridae
+Anapis discoidalis
+Angelim-da-mata
+Anodontites solenidea
+Anolis brasiliensis
+Apostolepis flavotorquata
+Araçari-de-pescoço-vermelho
+Arapaçu-barrado
+Arapaçu-galinha
+Arapaçu-rabudo
+Arraia-aramaçá
+Arraia-de-colares
+Aruá-do-mato
+Avicularia avicularia
+Bico-chato-da-copa
+Bolitoglossa paraensis
+Cascudo-zebra
+Coatá-da-testa-branca
+Crenicichla cyclostoma
+Drymusa canhemabae
+Drymusa colligata
+Drymusa spelunca
+Drymusa tobyi
+Heraclides chiansiades
+Heraclides garleppi lecerfi
+Hypoleria lavinia mulviana
+Maçaranduba-do-pará
+Mandi-chumbado
+Marisco-pantaneiro
+Marteleiro
+Megaphobema teceae
+Mutum-pinima
+Pacu-capivara
+Papagaio-campeiro
+Parides aglaope
+Parides hahneli
+Parides panthonus
+Pau-rosa
+Pilocarpus alatus
+Plekocheilus lacerta
+Potamobatrachus trispinosus
+Prepona amydon
+Prepona hewitsonius
+Prepona narcissus
+Pseudopaludicola canga
+Saboneteira
+Tarântula-esqueleto
+Teleocichla cinderella
+Tubarão-lagartixa-do-norte
+Tubarão-martelo-de-aba-curta
+Tubarão-martelo-panã
+Tubarão-quati
+Altitatiayus dulceae
+Altitatiayus koikei
+Altitatiayus trifurcatus
+Ananteris infuscata
+Bacurau-de-rabo-branco
+Bacurau-do-são-francisco
+Bagropsis reinhardti
+Brasilomma enigmatica
+Camelobaetidius spinosus
+Charinus eleonorae
+Charinus spelaeus
+Charinus taboa
+Dolichothele diamantinensis
+Perrhybris pamela flava
+Arapaçu-de-wagler
+Arapaçu-escamoso
+Cobra-cega-das-dunas
+Vitreorana eurygnatha
+Adelophryne maranguapensis
+Guerlinguetus brasiliensis
+Rhea americana americana
+Rhinella casconi
+Bodião-fogueira
+Cascudo-rabo-seco-do-paraná
+Petinha-amarelada
+Tico-tico-do-campo
+Abelha-formiga
+Acanthagrion amazonicum
+Acanthagrion truncatum
+Adhemarius gagarini
+Adhemarius gannascus
+Adhemarius palmeri
+Aethiopella delamarei
+Agelas dispar
+Agelas sceptrum
+Agrius cingulata
+Aleuron carinata
+Aleuron chloroptera
+Aleuron iphis
+Aleuron neglectum
+Amborê-barbudo
+Ameivula mumbuca
+Amphimoea walkeri
+Amphisbaena anomala
+Amphisbaena frontalis
+Amphisbaena kraoh
+Amphisbaena mitchelli
+Andorinha-de-sobre-branco
+Apistogramma piauiensis
+Apogon-brasileiro
+Apogon-de-duas-manchas
+Apristurus parvipinnis
+Argia hasemani
+Argia indicatrix
+Argia lilacina
+Argia reclusa
+Argia tinctipennis
+Argyrothemis argentea
+Astyanax novae
+Astyanax turmalinensis
+Barranqueiro-do-pará
+Bico-virado-da-caatinga
+Bilro-listrado
+Biomphalaria schrammi
+Boana cambui
+Brachyhypopomus pinnicaudatus
+Brachymesia herbida
+Breviraja spinosa
+Bryconops melanurus
+Callionima grisescens
+Callionima inuus
+Callionima nomius
+Callionima pan
+Callionima parce
+Camargoia pilicornis
+Camelobaetidius cayumba
+Camelobaetidius maranhensis
+Camelobaetidius tuberosus
+Castalia ambigua
+Celeus torquatus pieteroyensi
+Cephalopholis fulva
+Cephalopholis furcifer
+Cephalotrigona femorata
+Chironius multiventris
+Chironius scurrulus
+Cichlasoma orientale
+Cichlasoma sanctifranciscense
+Citharichthys spilopterus
+Cliona schmidtii
+Cobra-cega-do-campo
+Cobra-cipó-do-rio
+Cobra-de-folhiço
+Crenicichla brasiliensis
+Crenicichla labrina
+Curuquerê-da-couve
+Dactylocalyx pumiceus
+Dasythemis essequiba
+Dipsas catesbyi
+Dolichotrigona longitarsis
+Donzela-roxa
+Epipleoneura metallica
+Epipleoneura venezuelensis
+Epipleoneura williamsoni
+Etropus crossotus
+Frieseomelitta doederleini
+Frieseomelitta longipes
+Frieseomelitta portoi
+Fylgia amazonica
+Galeocharax gulo
+Garaçapé
+Geophagus parnaibae
+Geotrigona aequinoctialis
+Geotrigona mombuca
+Hemigrammus brevis
+Hemiodus parnaguae
+Jiboinha-da-serra
+Lagartinho-violeiro
+Lagartixinha-amazônica
+Limpa-folha-de-cauda-ruiva
+Linguado-de-areia-costeiro
+Linguado-onça
+Magnospina dentifera
+Mosquito-cupira
+Neomorphus geoffroyi geoffroyi
+Notarius quadriscutis
+Notarius rugispinis
+Peixe-ventosa-de-bigode
+Peroá-cação
+Robalo-de-escama-grande
+Torom-do-pará
+Vitreorana ritae
+Xarelete-amarelo
+Xarelete-carvoeiro
+Papilio xanthopleura
+Acianthera heringeri
+Acianthera papillosa
+Adiantum papillosum
+Aechmea amicorum
+Aechmea azurea
+Aechmea castanea
+Aechmea fosteriana
+Leptodactylus labyrinthicus
+Acratosaura spinosa
+Allophryne relicta
+Beija-flor-de-gravata-vermelha
+Bokermannohyla lucianae
+Chiasmocleis crucis
+Dendropsophus nekronastes
+Macuquinho-baiano
+Eleutherodactylus bilineatus
+Gabohyla pauloalvini
+Geophagus diamantinensis
+Gymnodactylus vanzolinii
+Hylomantis aspera
+Macuquinho-preto-baiano
+Mischocyttarus santacruzi
+Ophthalmolebias ilheusensis
+Phyllodytes amadoi
+Phyllodytes magnus
+Phyllodytes megatympanum
+Rãzinha-pulga-da-michelin
+Sapinho-pulga
+Tapaculo-da-chapada-diamantina
+Wiedomys cerradensis
+Rhacostoma atlanticum
+Rhinodrilus fafner
+Associação de Canto Coral
+Coral-sol
+Coral-baba-de-boi
+Coro Cênico Bossa Nossa
+Montastraea cavernosa
+Zoanthus sociatus
+Arthuria alcatraziensis
+Ascandra ascandroides
+Corvoheteromeyenia heterosclera
+Corvomeyenia thumi
+Ernstia quadriradiata
+Ernstia tetractina
+Adelophryne adiastola
+Adelophryne baturitensis
+Adelophryne glandulata
+Adelophryne gutturosa
+Adelophryne meridionalis
+Adelophryne mucronatus
+Adelophryne pachydactyla
+Adelphobates castaneoticus
+Adelphobates galactonotus
+Adelphobates quinquevittatus
+Adenomera ajurauna
+Adenomera andreae
+Adenomera araucaria
+Adenomera bokermanni
+Adenomera cotuba
+Adenomera diptyx
+Adenomera engelsi
+Adenomera gridipappi
+Adenomera heyeri
+Adenomera hylaedactyla
+Adenomera juikitam
+Adenomera martinezi
+Adenomera nana
+Adenomera saci
+Adenomera thomei
+Allobates bacurau
+Allobates brunneus
+Allobates caeruleodactylus
+Allobates conspicuus
+Allobates crombiei
+Allobates femoralis
+Allobates flaviventris
+Allobates fuscellus
+Allobates gasconi
+Allobates goianus
+Allobates grillisimilis
+Allobates hodli
+Allobates magnussoni
+Allobates marchesianus
+Allobates masniger
+Allobates nidicola
+Allobates olfersioides
+Allobates paleovarzensis
+Allobates subfolionidificans
+Allobates sumtuosus
+Allobates tapajos
+Allobates vanzolinius
+Allophryne ruthveni
+Amazophrynella bokermanni
+Amazophrynella manaos
+Amazophrynella minuta
+Amazophrynella vote
+Ameerega berohoka
+Ameerega braccata
+Ameerega flavopicta
+Ameerega hahneli
+Ameerega macero
+Ameerega munduruku
+Ameerega petersi
+Ameerega picta
+Ameerega pulchripecta
+Ameerega trivittata
+Anomaloglossus apiau
+Anomaloglossus baeobatrachus
+Anomaloglossus beebei
+Anomaloglossus roraima
+Anomaloglossus stepheni
+Anomaloglossus tamacuarensis
+Anomaloglossus tepequem
+Aparasphenodon arapapa
+Aparasphenodon bokermanni
+Aplastodiscus albofrenatus
+Aplastodiscus albosignatus
+Aplastodiscus arildae
+Aplastodiscus cavicola
+Aplastodiscus cochranae
+Aplastodiscus ehrhardti
+Aplastodiscus eugenioi
+Aplastodiscus flumineus
+Aplastodiscus ibirapitanga
+Aplastodiscus leucopygius
+Aplastodiscus musicus
+Aplastodiscus perviridis
+Aplastodiscus sibilatus
+Aplastodiscus weygoldti
+Arcovomer passarellii
+Atelopus flavescens
+Atelopus hoogmoedi
+Atelopus spumarius
+Atretochoana eiselti
+Barycholos ternetzi
+Boana albopunctata
+Boana bandeirantes
+Boana beckeri
+Boana benitezi
+Boana bischoffi
+Boana boans
+Boana botumirim
+Boana buriti
+Boana caingua
+Boana caipora
+Boana calcarata
+Boana cinerascens
+Boana cipoensis
+Boana crepitans
+Boana curupi
+Boana cymbalum
+Boana dentei
+Boana ericae
+Boana exastis
+Boana fasciata
+Boana geographica
+Boana goiana
+Boana guentheri
+Boana jaguariaivensis
+Boana joaquini
+Boana lanciformis
+Boana latistriata
+Boana leptolineata
+Boana leucocheila
+Boana lundii
+Boana marginata
+Boana microderma
+Boana multifasciata
+Boana nympha
+Boana ornatissima
+Boana paranaiba
+Boana pardalis
+Boana phaeopleura
+Boana poaju
+Boana polytaenia
+Boana pombali
+Boana prasina
+Boana pulchella
+Boana punctata
+Boana raniceps
+Boana secedens
+Boana semiguttata
+Boana semilineata
+Boana stellae
+Boana stenocephala
+Boana tepuiana
+Boana wavrini
+Bokermannohyla ahenea
+Bokermannohyla alvarengai
+Bokermannohyla astartea
+Bokermannohyla capra
+Bokermannohyla caramaschii
+Bokermannohyla carvalhoi
+Bokermannohyla circumdata
+Bokermannohyla claresignata
+Bokermannohyla clepsydra
+Bokermannohyla diamantina
+Bokermannohyla feioi
+Bokermannohyla flavopicta
+Bokermannohyla gouveai
+Bokermannohyla hylax
+Bokermannohyla ibitiguara
+Bokermannohyla ibitipoca
+Bokermannohyla itapoty
+Bokermannohyla izecksohni
+Bokermannohyla juiju
+Bokermannohyla langei
+Bokermannohyla luctuosa
+Bokermannohyla martinsi
+Bokermannohyla nanuzae
+Bokermannohyla napolii
+Bokermannohyla oxente
+Bokermannohyla pseudopseudis
+Bokermannohyla ravida
+Bokermannohyla sapiranga
+Bokermannohyla saxicola
+Bokermannohyla sazimai
+Bolitoglossa altamazonica
+Bolitoglossa caldwellae
+Bolitoglossa madeira
+Bolitoglossa tapajonica
+Brachycephalus albolineatus
+Brachycephalus alipioi
+Brachycephalus atelopoide
+Brachycephalus auroguttatus
+Brachycephalus boticario
+Brachycephalus brunneus
+Brachycephalus bufonoides
+Brachycephalus coloratus
+Brachycephalus crispus
+Brachycephalus darkside
+Brachycephalus ephippium
+Brachycephalus ferruginus
+Brachycephalus fuscolineatus
+Brachycephalus garbeanus
+Brachycephalus guarani
+Brachycephalus hermogenesi
+Brachycephalus izecksohni
+Brachycephalus leopardus
+Brachycephalus lulai
+Brachycephalus margaritatus
+Brachycephalus mariaeterezae
+Brachycephalus nodoterga
+Brachycephalus olivaceus
+Brachycephalus pernix
+Brachycephalus pitanga
+Brachycephalus pombali
+Brachycephalus quiririensis
+Brachycephalus sulfuratus
+Brachycephalus toby
+Brachycephalus tridactylus
+Brachycephalus verrucosus
+Brachycephalus vertebralis
+Brasilotyphlus braziliensis
+Brasilotyphlus guarantanus
+Caçote
+Caecilia gracilis
+Caecilia mertensi
+Caecilia tentaculata
+Calamita melanorabdotus
+Callimedusa atelopoides
+Callimedusa tomopterna
+Ceratophrys aurita
+Ceratophrys cornuta
+Ceratophrys cranwelli
+Ceratophrys joazeirensis
+Ceratophrys ornata
+Ceuthomantis cavernibardus
+Chiasmocleis alagoana
+Chiasmocleis albopunctata
+Chiasmocleis antenori
+Chiasmocleis atlantica
+Chiasmocleis avilapiresae
+Chiasmocleis bassleri
+Chiasmocleis capixaba
+Chiasmocleis centralis
+Chiasmocleis cordeiroi
+Chiasmocleis gnoma
+Chiasmocleis haddadi
+Chiasmocleis hudsoni
+Chiasmocleis lacrimae
+Chiasmocleis leucosticta
+Chiasmocleis mantiqueira
+Chiasmocleis mehelyi
+Chiasmocleis papachibe
+Chiasmocleis quilombola
+Chiasmocleis royi
+Chiasmocleis sapiranga
+Chiasmocleis schubarti
+Chiasmocleis shudikarensis
+Chiasmocleis tridactyla
+Chiasmocleis ventrimaculata
+Chthonerpeton arii
+Chthonerpeton braestrupi
+Chthonerpeton exile
+Chthonerpeton indistinctum
+Chthonerpeton noctinectes
+Chthonerpeton perissodus
+Chthonerpeton tremembe
+Chthonerpeton viviparum
+Corythomantis galeata
+Crossodactylodes bokermanni
+Crossodactylodes itambe
+Crossodactylodes izecksohni
+Crossodactylodes pintoi
+Crossodactylodes septentrionalis
+Crossodactylodes serranegra
+Crossodactylus aeneus
+Crossodactylus boulengeri
+Crossodactylus caramaschii
+Crossodactylus cyclospinus
+Crossodactylus dantei
+Crossodactylus dispar
+Crossodactylus franciscanus
+Crossodactylus gaudichaudii
+Crossodactylus grandis
+Crossodactylus lutzorum
+Crossodactylus schmidti
+Crossodactylus timbuhy
+Crossodactylus trachystomus
+Crossodactylus werneri
+Cruziohyla craspedopus
+Ctenophryne geayi
+Cycloramphus acangatan
+Cycloramphus asper
+Cycloramphus bandeirensis
+Cycloramphus bolitoglossus
+Cycloramphus boraceiensis
+Cycloramphus brasiliensis
+Cycloramphus carvalhoi
+Cycloramphus catarinensis
+Cycloramphus cedrensis
+Cycloramphus diringshofeni
+Cycloramphus dubius
+Cycloramphus duseni
+Cycloramphus eleutherodactylus
+Cycloramphus faustoi
+Cycloramphus granulosus
+Cycloramphus izecksohni
+Cycloramphus juimirim
+Cycloramphus lithomimeticus
+Cycloramphus lutzorum
+Cycloramphus migueli
+Cycloramphus mirandaribeiroi
+Cycloramphus ohausi
+Cycloramphus organensis
+Cycloramphus rhyakonastes
+Cycloramphus stejnegeri
+Cycloramphus valae
+Dasypops schirchi
+Dendrobates leucomelas
+Dendrobates tinctorius
+Dendrophryniscus berthalutzae
+Dendrophryniscus brevipollicatus
+Dendrophryniscus carvalhoi
+Dendrophryniscus krausae
+Dendrophryniscus leucomystax
+Dendrophryniscus oreites
+Dendrophryniscus organensis
+Dendrophryniscus proboscideus
+Dendrophryniscus skuki
+Dendrophryniscus stawiarskyi
+Dendropsophus acreanus
+Dendropsophus anataliasiasi
+Dendropsophus anceps
+Dendropsophus araguaya
+Dendropsophus berthalutzae
+Dendropsophus bifurcus
+Dendropsophus bipunctatus
+Dendropsophus bokermanni
+Dendropsophus branneri
+Dendropsophus brevifrons
+Dendropsophus cachimbo
+Dendropsophus cerradensis
+Dendropsophus cruzi
+Dendropsophus decipiens
+Dendropsophus dutrai
+Dendropsophus elegans
+Dendropsophus elianeae
+Dendropsophus gaucheri
+Dendropsophus giesleri
+Dendropsophus haddadi
+Dendropsophus haraldschultzi
+Dendropsophus jimi
+Dendropsophus koechlini
+Dendropsophus leali
+Dendropsophus leucophyllatus
+Dendropsophus limai
+Dendropsophus mapinguari
+Dendropsophus marmoratus
+Dendropsophus melanargyreus
+Dendropsophus meridianus
+Dendropsophus microcephalus
+Dendropsophus microps
+Dendropsophus minimus
+Dendropsophus minusculus
+Dendropsophus minutus
+Dendropsophus miyatai
+Dendropsophus nahdereri
+Dendropsophus nanus
+Dendropsophus novaisi
+Dendropsophus oliveirai
+Dendropsophus ozzyi
+Dendropsophus parviceps
+Dendropsophus pauiniensis
+Dendropsophus pseudomeridianus
+Dendropsophus rhea
+Dendropsophus rhodopeplus
+Dendropsophus riveroi
+Dendropsophus rossalleni
+Dendropsophus rubicundulus
+Dendropsophus sanborni
+Dendropsophus sarayacuensis
+Dendropsophus schubarti
+Dendropsophus seniculus
+Dendropsophus soaresi
+Dendropsophus studerae
+Dendropsophus timbeba
+Dendropsophus tintinnabulum
+Dendropsophus triangulum
+Dendropsophus tritaeniatus
+Dendropsophus walfordi
+Dendropsophus werneri
+Dendropsophus xapuriensis
+Dermatonotus muelleri
+Dryaderces inframaculata
+Dryaderces pearsoni
+Edalorhina perezi
+Elachistocleis bicolor
+Elachistocleis bumbameuboi
+Elachistocleis carvalhoi
+Elachistocleis cesarii
+Elachistocleis helianneae
+Elachistocleis magnus
+Elachistocleis matogrosso
+Elachistocleis ovalis
+Elachistocleis piauiensis
+Elachistocleis surumu
+Engystomops freibergi
+Engystomops petersi
+Euparkerella brasiliensis
+Euparkerella cochranae
+Euparkerella cryptica
+Euparkerella robusta
+Euparkerella tridactyla
+Fritziana fissilis
+Fritziana goeldii
+Fritziana izecksohni
+Fritziana ohausi
+Fritziana tonimi
+Fritziana ulei
+Frostius erythrophthalmus
+Frostius pernambucensis
+Gastrotheca albolineata
+Gastrotheca ernestoi
+Gastrotheca fissipes
+Gastrotheca fulvorufa
+Gastrotheca megacephala
+Gastrotheca microdiscus
+Gastrotheca prasina
+Gastrotheca pulchra
+Gastrotheca recava
+Haddadus aramunha
+Haddadus binotatus
+Haddadus plicifer
+Hamptophryne alios
+Hamptophryne boliviana
+Hemiphractus helioi
+Hemiphractus scutatus
+Holoaden bradei
+Holoaden pholeter
+Holoaden suarezi
+Hyalinobatrachium cappellei
+Hyalinobatrachium carlesvilai
+Hyalinobatrachium iaspidiense
+Hyalinobatrachium mondolfii
+Hyalinobatrachium muiraquitan
+Hyalinobatrachium munozorum
+Hydrolaetare dantasi
+Hydrolaetare schmidti
+Hyla imitator
+Hylodes amnicola
+Hylodes asper
+Hylodes babax
+Hylodes caete
+Hylodes cardosoi
+Hylodes charadranaetes
+Hylodes dactylocinus
+Hylodes fredi
+Hylodes glaber
+Hylodes heyeri
+Hylodes japi
+Hylodes lateristrigatus
+Hylodes magalhaesi
+Hylodes meridionalis
+Hylodes mertensi
+Hylodes nasus
+Hylodes ornatus
+Hylodes otavioi
+Hylodes perere
+Hylodes perplicatus
+Hylodes phyllodes
+Hylodes pipilans
+Hylodes regius
+Hylodes sazimai
+Hylodes uai
+Hylodes vanzolinii
+Hylomantis
+Hylomantis granulosa
+Hyloxalus chlorocraspedus
+Ischnocnema abdita
+Ischnocnema bolbodactyla
+Ischnocnema concolor
+Ischnocnema epipeda
+Ischnocnema erythromera
+Ischnocnema gehrti
+Ischnocnema gualteri
+Ischnocnema guentheri
+Ischnocnema henselii
+Ischnocnema hoehnei
+Ischnocnema holti
+Ischnocnema izecksohni
+Ischnocnema juipoca
+Ischnocnema karst
+Ischnocnema lactea
+Ischnocnema manezinho
+Ischnocnema melanopygia
+Ischnocnema nanahallux
+Ischnocnema nasuta
+Ischnocnema nigriventris
+Ischnocnema octavioi
+Ischnocnema oea
+Ischnocnema paranaensis
+Ischnocnema parva
+Ischnocnema penaxavantinho
+Ischnocnema pusilla
+Ischnocnema randorum
+Ischnocnema sambaqui
+Ischnocnema spanios
+Ischnocnema surda
+Ischnocnema venancioi
+Ischnocnema verrucosa
+Ischnocnema vizottoi
+Itapotihyla langsdorffii
+Julianus uruguayus
+Leptodactylus bolivianus
+Leptodactylus bufonius
+Leptodactylus caatingae
+Leptodactylus camaquara
+Leptodactylus chaquensis
+Leptodactylus cunicularius
+Leptodactylus cupreus
+Leptodactylus didymus
+Leptodactylus diedrus
+Leptodactylus discodactylus
+Leptodactylus elenae
+Leptodactylus flavopictus
+Leptodactylus furnarius
+Leptodactylus fuscus
+Leptodactylus gracilis
+Leptodactylus guianensis
+Leptodactylus hylodes
+Leptodactylus jolyi
+Leptodactylus knudseni
+Leptodactylus laticeps
+Leptodactylus latinasus
+Leptodactylus lauramiriamae
+Leptodactylus leptodactyloides
+Leptodactylus longirostris
+Leptodactylus macrosternum
+Leptodactylus marambaiae
+Leptodactylus myersi
+Leptodactylus mystaceus
+Leptodactylus mystacinus
+Leptodactylus natalensis
+Leptodactylus notoaktites
+Leptodactylus ochraceus
+Leptodactylus oreomantis
+Leptodactylus paraensis
+Leptodactylus petersii
+Leptodactylus plaumanni
+Leptodactylus podicipinus
+Leptodactylus pustulatus
+Leptodactylus rhodomystax
+Leptodactylus rhodonotus
+Leptodactylus riveroi
+Leptodactylus rugosus
+Leptodactylus sabanensis
+Leptodactylus sertanejo
+Leptodactylus spixi
+Leptodactylus stenodema
+Leptodactylus syphax
+Leptodactylus tapiti
+Leptodactylus troglodytes
+Leptodactylus validus
+Leptodactylus vastus
+Leptodactylus viridis
+Leptodactylus wagneri
+Limnomedusa macroglossa
+Lithobates palmipes
+Lithodytes lineatus
+Luetkenotyphlus brasiliensis
+Lysapsus bolivianus
+Lysapsus caraya
+Lysapsus laevis
+Lysapsus limellum
+Macrogenioglottus alipioi
+Megaelosia goeldii
+Melanophryniscus alipioi
+Melanophryniscus atroluteus
+Melanophryniscus biancae
+Melanophryniscus cambaraensis
+Melanophryniscus devincenzii
+Melanophryniscus dorsalis
+Melanophryniscus fulvoguttatus
+Melanophryniscus klappenbachi
+Melanophryniscus macrogranulosus
+Melanophryniscus milanoi
+Melanophryniscus montevidensis
+Melanophryniscus pachyrhynus
+Melanophryniscus peritus
+Melanophryniscus sanmartini
+Melanophryniscus setiba
+Melanophryniscus simplex
+Melanophryniscus spectabilis
+Melanophryniscus tumifrons
+Melanophryniscus vilavelhensis
+Melanophryniscus xanthostomus
+Microcaecilia butantan
+Microcaecilia marvaleewakeae
+Microcaecilia rochai
+Microcaecilia supernumeraria
+Microcaecilia trombetas
+Microcaecilia unicolor
+Mimosiphonops reinhardti
+Mimosiphonops vermiculatus
+Myersiella microps
+Neblinaphryne
+Neblinaphryne imeri
+Neblinaphrynidae
+Nectocaecilia petersii
+Noblella myrmecoides
+Nyctimantis rugiceps
+Odontophrynus americanus
+Odontophrynus carvalhoi
+Odontophrynus cultripes
+Odontophrynus juquinha
+Odontophrynus lavillai
+Odontophrynus maisuma
+Odontophrynus monachus
+Odontophrynus salvatori
+Ololygon agilis
+Ololygon albicans
+Ololygon angrensis
+Ololygon arduous
+Ololygon argyreornata
+Ololygon ariadne
+Ololygon aromothyella
+Ololygon atrata
+Ololygon belloni
+Ololygon berthae
+Ololygon brieni
+Ololygon canastrensis
+Ololygon cardosoi
+Ololygon carnevallii
+Ololygon catharinae
+Ololygon centralis
+Ololygon cosenzai
+Ololygon flavoguttata
+Ololygon heyeri
+Ololygon hiemalis
+Ololygon humilis
+Ololygon insperata
+Ololygon jureia
+Ololygon kautskyi
+Ololygon littoralis
+Ololygon littoreus
+Ololygon longilinea
+Ololygon luizotavioi
+Ololygon machadoi
+Ololygon melanodactyla
+Ololygon melloi
+Ololygon muriciensis
+Ololygon obtriangulata
+Ololygon perpusilla
+Ololygon pombali
+Ololygon ranki
+Ololygon rizibilis
+Ololygon skaios
+Ololygon skuki
+Ololygon strigilata
+Ololygon trapicheiroi
+Ololygon tripui
+Ololygon v-signata
+Oreobates crepitans
+Oreobates heterodactylus
+Oreobates quixensis
+Oreobates remotus
+Oreophrynella quelchii
+Oreophrynella weiassipuensis
+Oscaecilia hypereumeces
+Osteocephalus buckleyi
+Osteocephalus cabrerai
+Osteocephalus camufatus
+Osteocephalus leprieurii
+Osteocephalus oophagus
+Osteocephalus planiceps
+Osteocephalus subtilis
+Osteocephalus taurinus
+Osteocephalus vilarsi
+Otophryne pyburni
+Paratelmatobius cardosoi
+Paratelmatobius gaigeae
+Paratelmatobius lutzii
+Paratelmatobius poecilogaster
+Paratelmatobius yepiranga
+Perereca-araponga
+Perereca-de-alcatrazes
+Perereca-de-fogo
+Perereca-do-vulcão
+Perereca-pintada
+Perereca-sagarana
+Pererequinha-de-bromélia-teresensis
+Phantasmarana bocainensis
+Phantasmarana boticariana
+Phantasmarana jordanensis
+Phantasmarana lutzae
+Phantasmarana massarti
+Phasmahyla cochranae
+Phasmahyla cruzi
+Phasmahyla guttata
+Phasmahyla jandaia
+Phasmahyla timbo
+Phrynomedusa appendiculata
+Phrynomedusa bokermanni
+Phrynomedusa dryade
+Phrynomedusa vanzolinii
+Phyllodytes acuminatus
+Phyllodytes brevirostris
+Phyllodytes edelmoi
+Phyllodytes gyrinaethes
+Phyllodytes kautskyi
+Phyllodytes luteolus
+Phyllodytes maculosus
+Phyllodytes melanomystax
+Phyllodytes punctatus
+Phyllodytes tuberculosus
+Phyllodytes wuchereri
+Phyllomedusa bahiana
+Phyllomedusa bicolor
+Phyllomedusa boliviana
+Phyllomedusa burmeisteri
+Phyllomedusa camba
+Phyllomedusa distincta
+Phyllomedusa iheringii
+Phyllomedusa sauvagii
+Phyllomedusa tarsius
+Phyllomedusa tetraploidea
+Phyllomedusa vaillantii
+Physalaemus aguirrei
+Physalaemus albifrons
+Physalaemus albonotatus
+Physalaemus angrensis
+Physalaemus atim
+Physalaemus atlanticus
+Physalaemus barrioi
+Physalaemus biligonigerus
+Physalaemus bokermanni
+Physalaemus caete
+Physalaemus camacan
+Physalaemus centralis
+Physalaemus cicada
+Physalaemus crombiei
+Physalaemus ephippifer
+Physalaemus erikae
+Physalaemus erythros
+Physalaemus evangelistai
+Physalaemus feioi
+Physalaemus fuscomaculatus
+Physalaemus henselii
+Physalaemus insperatus
+Physalaemus irroratus
+Physalaemus jordanensis
+Physalaemus kroyeri
+Physalaemus lateristriga
+Physalaemus lisei
+Physalaemus maculiventris
+Physalaemus marmoratus
+Physalaemus maximus
+Physalaemus moreirae
+Physalaemus nanus
+Physalaemus obtectus
+Physalaemus orophilus
+Physalaemus petersi
+Physalaemus riograndensis
+Physalaemus rupestris
+Physalaemus signifer
+Physalaemus soaresi
+Physalaemus spiniger
+Phyzelaphryne miriamae
+Pipa arrabali
+Pipa carvalhoi
+Pipa snethlageae
+Pithecopus araguaius
+Pithecopus azureus
+Pithecopus hypochondrialis
+Pithecopus megacephalus
+Pithecopus oreades
+Pithecopus palliatus
+Pithecopus rohdei
+Pithecopus rusticus
+Pleurodema alium
+Pleurodema bibroni
+Pleurodema brachyops
+Pleurodema diplolister
+Potomotyphlus kaupii
+Pristimantis academicus
+Pristimantis acuminatus
+Pristimantis altamazonicus
+Pristimantis aureolineatus
+Pristimantis aureoventris
+Pristimantis buccinator
+Pristimantis campinarana
+Pristimantis carvalhoi
+Pristimantis chiastonotus
+Pristimantis conspicillatus
+Pristimantis delius
+Pristimantis diadematus
+Pristimantis dundeei
+Pristimantis eurydactylus
+Pristimantis fenestratus
+Pristimantis gutturalis
+Pristimantis inguinalis
+Pristimantis lacrimosus
+Pristimantis lanthanites
+Pristimantis luscombei
+Pristimantis malkini
+Pristimantis marmoratus
+Pristimantis martiae
+Pristimantis memorans
+Pristimantis ockendeni
+Pristimantis orcus
+Pristimantis paulodutrai
+Pristimantis peruvianus
+Pristimantis reichlei
+Pristimantis skydmainos
+Pristimantis toftae
+Pristimantis variabilis
+Pristimantis ventrigranulosus
+Pristimantis ventrimarmoratus
+Pristimantis vilarsi
+Pristimantis vinhai
+Pristimantis zeuctotylus
+Proceratophrys appendiculata
+Proceratophrys aridus
+Proceratophrys avelinoi
+Proceratophrys bagnoi
+Proceratophrys belzebul
+Proceratophrys bigibbosa
+Proceratophrys boiei
+Proceratophrys branti
+Proceratophrys brauni
+Proceratophrys caramaschii
+Proceratophrys carranca
+Proceratophrys concavitympanum
+Proceratophrys cristiceps
+Proceratophrys cururu
+Proceratophrys dibernardoi
+Proceratophrys gladius
+Proceratophrys goyana
+Proceratophrys huntingtoni
+Proceratophrys itamari
+Proceratophrys izecksohni
+Proceratophrys laticeps
+Proceratophrys mantiqueira
+Proceratophrys melanopogon
+Proceratophrys minuta
+Proceratophrys moehringi
+Proceratophrys moratoi
+Proceratophrys palustris
+Proceratophrys paviotii
+Proceratophrys phyllostomus
+Proceratophrys pombali
+Proceratophrys redacta
+Proceratophrys renalis
+Proceratophrys rondonae
+Proceratophrys rotundipalpebra
+Proceratophrys sanctaritae
+Proceratophrys schirchi
+Proceratophrys strussmannae
+Proceratophrys subguttata
+Proceratophrys tupinamba
+Proceratophrys tupinambis
+Proceratophrys vielliardi
+Pseudis bolbodactyla
+Pseudis cardosoi
+Pseudis fusca
+Pseudis minuta
+Pseudis paradoxa
+Pseudis platensis
+Pseudis tocantins
+Pseudopaludicola ameghini
+Pseudopaludicola atragula
+Pseudopaludicola boliviana
+Pseudopaludicola ceratophryes
+Pseudopaludicola coracoralinae
+Pseudopaludicola facureae
+Pseudopaludicola falcipes
+Pseudopaludicola giarettai
+Pseudopaludicola hyleaustralis
+Pseudopaludicola ibisoroca
+Pseudopaludicola jaredi
+Pseudopaludicola mineira
+Pseudopaludicola murundu
+Pseudopaludicola mystacalis
+Pseudopaludicola parnaiba
+Pseudopaludicola pocoto
+Pseudopaludicola saltica
+Pseudopaludicola ternetzi
+Physalaemus olfersii
+Rã-defumada-da-selva
+Rã-quatro-olhos
+Ranitomeya amazonica
+Ranitomeya cyanovittata
+Ranitomeya defleri
+Ranitomeya flavovittata
+Ranitomeya sirensis
+Ranitomeya toraro
+Ranitomeya uakarii
+Ranitomeya vanzolinii
+Ranitomeya variabilis
+Ranitomeya yavaricola
+Rãzinha-de-barriga-colorida-da-mantiqueira
+Rãzinha-verrugosa-da-serra-de-luederwaldt
+Rhaebo ecuadorensis
+Rhaebo guttatus
+Rhinatrema bivittatum
+Rhinatrema ron
+Rhinella abei
+Rhinella achavali
+Rhinella acutirostris
+Rhinella azarai
+Rhinella bergi
+Rhinella castaneotica
+Rhinella ceratophrys
+Rhinella crucifer
+Rhinella dapsilis
+Rhinella dorbignyi
+Rhinella fernandezae
+Rhinella gildae
+Rhinella granulosa
+Rhinella henseli
+Rhinella hoogmoedi
+Rhinella icterica
+Rhinella inopina
+Rhinella magnussoni
+Rhinella major
+Rhinella margaritifera
+Rhinella marina
+Rhinella martyi
+Rhinella merianae
+Rhinella mirandaribeiroi
+Rhinella nattereri
+Rhinella ornata
+Rhinella paraguayensis
+Rhinella proboscidea
+Rhinella pygmaea
+Rhinella roqueana
+Rhinella rubescens
+Rhinella scitula
+Rhinella sebbeni
+Rhinella veredas
+Rupirana cardosoi
+Sapo-aru
+Sapo-da-areia
+Sapo-flamenguinho
+Scarthyla goinorum
+Rhinella diptycha
+Scinax acuminatus
+Scinax alter
+Scinax auratus
+Scinax baumgardneri
+Scinax blairi
+Scinax boesemani
+Scinax caissara
+Scinax caldarum
+Scinax camposseabrai
+Scinax constrictus
+Scinax cretatus
+Scinax crospedospilus
+Scinax cruentomma
+Scinax curicica
+Scinax cuspidatus
+Scinax dolloi
+Scinax duartei
+Scinax eurydice
+Scinax exiguus
+Scinax funereus
+Scinax fuscomarginatus
+Scinax fuscovarius
+Scinax garbei
+Scinax granulatus
+Scinax haddadorum
+Scinax hayii
+Scinax imbegue
+Scinax juncae
+Scinax lindsayi
+Scinax madeirae
+Scinax maracaya
+Scinax montivagus
+Scinax nasicus
+Scinax nebulosus
+Scinax pachycrus
+Scinax pedromedinae
+Scinax perereca
+Scinax proboscideus
+Scinax rogerioi
+Scinax rossaferesae
+Scinax rostratus
+Scinax ruber
+Scinax rupestris
+Scinax ruprestris
+Scinax sateremawe
+Scinax satermawe
+Scinax similis
+Scinax squalirostris
+Scinax tigrinus
+Scinax tymbamirim
+Scinax villasboasi
+Scinax x-signatus
+Scynax pixinguinha
+Scythrophrys sawayae
+Siphonops annulatus
+Siphonops hardyi
+Siphonops insulanus
+Siphonops leucoderus
+Siphonops paulensis
+Siri-rugoso
+Sphaenorhynchus botocudo
+Sphaenorhynchus bromelicola
+Sphaenorhynchus cammaeus
+Sphaenorhynchus canga
+Sphaenorhynchus caramaschii
+Sphaenorhynchus carneus
+Sphaenorhynchus dorisae
+Sphaenorhynchus lacteus
+Sphaenorhynchus mirim
+Sphaenorhynchus orophilus
+Sphaenorhynchus palustris
+Sphaenorhynchus planicola
+Sphaenorhynchus prasinus
+Sphaenorhynchus surdus
+Stefania neblinae
+Stefania tamacuarina
+Stereocyclops incrassatus
+Stereocyclops palmipes
+Stereocyclops parkeri
+Strabomantis sulcatus
+Synapturanus mirandaribeiroi
+Synapturanus salseri
+Tepuihyla exophthalma
+Tepuihyla tuberculosa
+Teratohyla adenocheira
+Teratohyla midas
+Thoropa megatympanum
+Thoropa miliaris
+Thoropa saxatilis
+Thoropa taophora
+Trachycephalus atlas
+Trachycephalus coriaceus
+Trachycephalus cunauaru
+Trachycephalus dibernardoi
+Trachycephalus hadroceps
+Trachycephalus helioi
+Trachycephalus imitatrix
+Trachycephalus lepidus
+Trachycephalus mambaiensis
+Trachycephalus mesophaeus
+Trachycephalus nigromaculatus
+Trachycephalus resinifictrix
+Trachycephalus typhonius
+Trachycephalus venezolanus
+Typhlonectes compressicauda
+Vitreorana baliomma
+Vitreorana franciscana
+Vitreorana parvula
+Zachaenus carvalhoi
+Zachaenus parvulus
+Abre-asa
+Abre-asa-da-mata
+Abre-asa-do-acre
+Agachadeira-mirim
+Águia-solitária
+Agulha-de-garganta-branca
+Albatroz-de-bico-amarelo-do-atlântico
+Amazona diadema
+Anambé-branco-de-máscara-negra
+Anambé-dos-tepuis
+Andorinha-pequena-de-casa
+Andorinha-serradora
+Andorinhão-da-amazônia
+Andorinhão-de-chapman
+Andorinhão-de-coleira-falha
+Andorinhão-de-rabo-curto
+Andorinhão-de-sobre-branco
+Andorinhão-de-sobre-cinzento
+Andorinhão-do-buriti
+Andorinhão-do-temporal
+Andorinhão-peregrino
+Andorinhão-serrano
+Anhuma
+Apuim-de-asa-vermelha
+Apuim-de-costas-azuis
+Araçari-banana
+Araçari-de-bico-de-marfim
+Araçari-de-bico-marrom
+Araçari-de-bico-riscado
+Araçari-negro
+Aracuã-pintado
+Aracuã-pequeno
+Aracuã-de-barriga-branca
+Aracuã-do-pantanal
+Aracuã-escamoso
+Arapaçu-beija-flor
+Arapaçu-da-taoca
+Arapaçu-de-barriga-pintada
+Arapaçu-de-bico-comprido
+Arapaçu-de-bico-curvo
+Arapaçu-de-bico-torto
+Arapaçu-de-bico-vermelho
+Arapaçu-de-cerrado
+Arapaçu-de-garganta-branca
+Arapaçu-de-garganta-pintada
+Arapaçu-de-lafresnaye
+Arapaçu-de-listras-brancas
+Arapaçu-de-rondônia
+Arapaçu-grande
+Arapaçu-meio-barrado
+Arapaçu-platino
+Arapaçu-riscado
+Arapaçu-uniforme
+Arapaçu-verde
+Araponga-comum
+Araponga-do-horto
+Aratinga-de-testa-azul
+Ariramba-bronzeada
+Ariramba-castanha
+Ariramba-da-capoeira
+Ariramba-da-mata
+Ariramba-de-barba-branca
+Ariramba-de-bico-amarelo
+Ariramba-de-cauda-ruiva
+Ariramba-de-cauda-verde
+Ariramba-do-paraíso
+Ariramba-preta
+Ariramba-vermelha
+Ariramba-violácea
+Arredio-de-papo-manchado
+Arredio-do-rio
+Arredio-oliváceo
+Asa-de-sabre-da-guiana
+Asa-de-sabre-de-peito-camurça
+Asa-de-telha-escuro
+Assobiador-do-castanhal
+Atobá-australiano
+Atobá-do-cabo
+Aulacorhynchus whitelianus
+Azulona
+Bacurau-de-asa-fina
+Bacurau-das-antilhas
+Bacurau-de-cauda-branca
+Bacurau-dos-tepuis
+Bacurau-rabo-de-seda
+Balança-rabo-de-chapéu-preto
+Balança-rabo-escuro
+Bandeirinha
+Barbuda do Catolé
+Barbudinho
+Barbudinho-do-tepui
+Barbudo-de-coleira
+Barbudo-de-pescoço-ferrugem
+Barbudo-pardo
+Barranqueiro-escuro
+Bate-pára
+Bate-bico
+Batuíra-de-coleira-dupla
+Batuíra-de-papo-ferrugíneo
+Batuíra-de-peito-tijolo
+Beija-flor-brilho-de-fogo
+Beija-flor-de-banda-branca
+Beija-flor-de-bico-virado
+Beija-flor-de-cauda-dourada
+Colibri-de-lista-branca
+Beija-flor-verde
+Beija-flor-dourado
+Beija-flor-estrela
+Beija-flor-tesoura-verde
+Beija-flor-de-orelha-violeta
+Beija-flor-de-bico-preto
+Beija-flor-de-gravata-verde
+Beija-flor-de-papo-branco
+Beija-flor-de-peito-azul
+Beija-flor-roxo
+Besourinho-de-bico-vermelho
+Bichoita
+Bico-de-pimenta
+Bico-reto-azul
+Bico-de-veludo
+Bico-chato-amarelo
+Bico-chato-de-orelha-preta
+Bico-virado-miúdo
+Bicudo-encarnado
+Biguá-das-shetland
+Borboletinha-do-mato
+Borboletinha-guianense
+Borralhara-assobiadora
+Borralhara-do-norte
+Borralhara-ondulada
+Borralhara-preta
+Bubulcus ibis
+Gavião-de-cauda-curta
+Caboclinho-lindo
+Caburé-acanelado
+Cacaué
+Caçula
+Caga-sebinho-de-penacho
+Calidris bairdii
+Calidris subruficollis
+Callonetta leucophrys
+Campainha-azul
+Campylopterus hyperythrus
+Canário-do-campo
+Canela preta
+Caneleiro-de-cara-amarela
+Caneluda do Catolé
+Cantorchilus leucotis
+Capitão-de-bigode-carijó
+Capitão-de-bigode-limão
+Capitão-de-cinta
+Capitão-de-colar-amarelo
+Capitão-de-coroa
+Capitão-de-fronte-dourada
+Caraúna
+Caraxué-de-bico-amarelo
+Cardeal-de-goiás
+Carqueja-de-bico-amarelo
+Carqueja-de-bico-manchado
+Carqueja-de-escudo-vermelho
+Carretão
+Casaca-de-couro-amarelo
+Casiornis rufus
+Chifre-de-ouro
+Chlorophanes spiza
+Chlorostilbon mellisugus
+Choca-barrada
+Choca-bate-cabo
+Choca-canela
+Choca-cantadora
+Choca-da-bolívia
+Choca-de-asa-vermelha
+Choca-de-cauda-pintada
+Choca-de-chapéu-vermelho
+Choca-de-crista-preta
+Choca-de-natterer
+Choca-de-olho-vermelho
+Choca-de-roraima
+Choca-do-acre
+Choca-lisa
+Choca-listrada
+Choca-murina
+Choca-preta-e-cinza
+Choca-selada
+Chocão-carijó
+Choquinha-de-flancos-brancos
+Choquinha-de-peito-riscado
+Choquinha-do-bambu
+Choquinha-do-madeira
+Choquinha-do-purus
+Choquinha-do-rio-negro
+Choquinha-do-rio-roosevelt
+Choquinha-estriada
+Choquinha-estriada-da-amazônia
+Choquinha-lisa
+Chora-chuva-de-bico-amarelo
+Chororó-escuro
+Chororó-negro-do-acre
+Chorozinho-de-asa-vermelha-do-norte
+Chorozinho-esperado
+Chrysolampis mosquitus
+Chupa-dente-do-peru
+Cisqueiro
+Cnemotriccus fuscatus
+Cochicho
+Codorna-do-nordeste
+Coleiro-do-brejo
+Coleiro-do-norte
+Colibri-d'orelhas-grande
+Colibri-de-barriga-verde
+Colibri-de-peito-branco-atlântico
+Columba livia
+Conirostrum bicolor
+Conopophaga lineata
+Coperete
+Corredor-crestudo
+Coruja-diabo
+Coruja-do-nabal
+Corujinha-relógio
+Coscoroba coscoroba
+Cotinga-de-garganta-encarnada
+Cranioleuca pyrrhophia
+Inhambu-anhangaí
+Crypturellus erythropus
+Crypturellus soui
+Curica-verde
+Curutié
+Cyanerpes caeruleus
+Cyanerpes cyaneus
+Dacnis cayana
+Dançarino-de-garganta-branca
+Dançarino-oliváceo
+Deconychura pallida
+Dendrexetastes paraensis paraensis
+Diablotim
+Guaracava-de-barriga-amarela
+Esmeralda-de-cauda-azul
+Esmeralda-de-garganta-azul
+Estornela-das-pampas
+Estornela-de-peito-vermelho
+Estornela-de-sobrancelha
+Euscarthmus meloryphus
+Faigão-de-bico-fino
+Faigão-de-bico-largo
+Faigão-rola
+Ferreirinho-da-capoeira
+Ferreirinho-de-cara-branca
+Ferreirinho-de-cara-parda
+Ferreirinho-de-sobrancelha
+Ferreirinho-de-testa-parda
+Ferreirinho-estriado
+Ferreirinho-ferrugem
+Ferreirinho-pintado
+Ferreirinho-relógio
+Figuinha-de-rabo-castanho
+Flautim-da-amazônia
+Flautim-oliváceo
+Flautim-ruivo
+Flautim-verde
+Florisuga mellivora
+Formigueiro-chumbo
+Formigueiro-cinza
+Formigueiro-de-asa-pintada
+Formigueiro-de-barriga-branca
+Formigueiro-de-barriga-cinza
+Formigueiro-de-cabeça-preta
+Formigueiro-de-cara-ruiva
+Formigueiro-de-cauda-baia
+Formigueiro-de-cauda-curta
+Formigueiro-de-goeldi
+Formigueiro-de-pelzeln
+Formigueiro-de-rabo-preto
+Formigueiro-de-roraima
+Formigueiro-de-taoca
+Formigueiro-de-yapacana
+Formigueiro-do-caura
+Formigueiro-ferrugem
+Formigueiro-grande
+Formigueiro-liso
+Formigueiro-liso-do-rio-negro
+Formigueiro-liso-do-solimões
+Galinha-d'água-carijó
+Freira-das-desertas
+Freirinha-de-coroa-castanha
+Fura-barreira
+Fura-flor-escamado
+Gaivina-de-bico-preto
+Gaivina-de-dorso-preto
+Gaivota-cinzenta
+Gaivota-de-cabeça-cinza
+Gaivota-maria-velha
+Gallinula chloropus
+Ganso-patagónico
+Garça-branca-pequena
+Garça-da-mata
+Garça-tricolor
+Garrincha-chorona
+Garrinchão-coraia
+Gavião-bombachinha
+Gavião-caranguejeiro-negro
+Gavião-de-asa-larga
+Gavião-de-costas-vermelhas
+Gavião-do-igapó
+Gavião-pedrês
+Gavião-ripina
+Gavião-urubu
+Geositta poeciloptera
+Glaucis hirsutus
+Gralhão
+Graveteiro
+Grazina-de-barriga-branca
+Grazina-de-bico-curto
+Grazina-de-cabeça-branca
+Grazina-delicada
+Grimpeiro
+Guácharo
+Guaracava-cinzenta
+Guaracava-cinzenta-amazônica
+Guaracava-de-crista-alaranjada
+Guaracava-de-penacho-amarelo
+Guaracava-grande
+Gubernatrix cristata
+Heliodoxa xanthogonys
+Heliomaster longirostris
+Heliothryx auritus
+Hylopezus nattereri
+Hylophylax punctulatus
+Índio gigante
+Inhambu-serra
+Inhambu-galinha
+Inhambu-pixuna
+Inhambu-carijó
+Inhambu-chintã
+Inhambu-de-coroa-preta
+Inhambu-de-pé-cinza
+Inhambu-perdiz
+Inhambu-relógio
+Iratauá-pequeno
+Vaqueiro-gigante
+Jacamaraçu
+Jacamim-de-costas-brancas
+Jacamim-de-costas-cinzentas
+Jacamim-do-xingu
+Jacu-estalo-de-asa-vermelha
+Jacu-estalo-de-bico-vermelho
+Jacutinga-de-garganta-azul
+Jandaia-coquinho
+Japim-soldado
+Japu-de-rabo-verde
+Japu-pardo
+Japu-verde
+Japuaçu
+João-da-canarana
+João-de-bico-pálido
+João-de-pau
+João-do-pantanal
+João-do-tepui
+João-pintado
+João-porca
+João-da-palha
+João-de-barba-grisalha
+João-pinto
+João-teneném-becuá
+João-teneném-castanho
+Junqueiro-de-bico-reto
+Juruva-ruiva
+Juruviara-de-noronha
+Lavadeira-de-cara-branca
+Lenheiro-de-rabo-comprido
+Leptotila rufaxilla
+Limpa-folha-do-buriti
+Limpa-folha-picanço
+Limpa-folha-riscado
+Limpa-folha-de-sobre-ruivo
+Limpa-folha-do-nordeste
+Lipaugus conditus
+Lophornis verreauxii
+Maçarico-do-alasca
+Maçarico-esquimó
+Maçarico-pernilongo
+Macuquinho-da-várzea
+Macuru
+Macuru-de-pescoço-branco
+Mãe-de-taoca-de-cauda-barrada
+Mãe-de-taoca
+Mãe-de-taoca-avermelhada
+Mãe-de-taoca-cabeçuda
+Mãe-de-taoca-cristada
+Mãe-de-taoca-de-cara-branca
+Maracanã-de-cabeça-azul
+Maracanã-de-colar
+Maria-da-praia
+Maria-fiteira
+Maria-topetuda
+Maria-de-testa-preta
+Maria-leque
+Maria-mirim
+Maria-pequena
+Maria-picaça
+Maria-sebinha-do-acre
+Marianinha-de-cabeça-amarela
+Mariquita-de-perna-clara
+Marreca-colhereira
+Marreca-de-cabeça-preta
+Marreca-oveira
+Marreca-parda
+Matracão
+Mergulhão-de-orelha-branca
+Mergulhão-do-titicaca
+Mergulhão-grande
+Mergulhão-prateado
+Myiopagis cinerea
+Não-pode-parar
+Netta erythrophthalma
+Noivinha-coroada
+Noivinha-de-rabo-preto
+Numenius hudsonicus
+Urutau-de-asa-branca
+Onychorhynchus coronatus
+Oxyruncus cristatus
+Oxyura vittata
+Painho-de-barriga-preta
+Painho-de-barriga-branca
+Papa-capim-americano
+Papa-capim-preto-e-branco
+Papa-formiga-de-bando
+Papa-formiga-de-topete
+Papa-formiga-do-igarapé
+Papa-formiga-pardo
+Papa-lagarta-de-asa-vermelha
+Papa-taoca-de-belém
+Papa-taoca-do-pantanal
+Papa-taoca-do-sul
+Papa-taoca-do-tapajós
+Papagaio-de-bochecha-azul
+Papagaio-diadema
+Papo-branco
+Paraíso pedrês
+Pararu-azul
+Pardela-de-mento-branco
+Mariquita-do-sul
+Patinho-escuro
+Pedro-ceroulo
+Peloco
+Periquito-de-asa-azul
+Periquito-da-amazônia
+Periquito-de-asa-branca
+Periquito-de-bochecha-parda
+Periquito-de-cabeça-suja
+Periquito-de-encontro-amarelo
+Periquito-dos-tepuis
+Periquito-santo
+Periquito-santo-de-bico-escuro
+Periquito-santo-do-norte
+Periquito-testinha
+Peru preto caipira
+Petrel-azul
+Petrel-mergulhador-de-magalhães
+Phaethornis eurynome
+Phaethornis longuemareus
+Philydor erythrocercum
+Phytotoma rutila
+Pica-pau-anão-canela
+Pica-pau-bufador
+Pica-pau-chocolate
+Pica-pau-chorão
+Pica-pau-de-barriga-preta
+Pica-pau-de-cara-canela
+Pica-pau-de-colar-dourado
+Pica-pau-de-garganta-barrada
+Pica-pau-de-garganta-branca
+Pica-pau-de-garganta-pintada
+Pica-pau-de-peito-pontilhado
+Pica-pau-de-sobre-vermelho
+Pica-pau-de-testa-branca
+Pica-pau-dourado-escuro
+Pica-pau-lindo
+Pica-pau-louro
+Pica-pau-ocráceo
+Pica-pau-oliváceo
+Pica-pau-verde-carijó
+Picaparra
+Picapauzinho-barrado
+Picapauzinho-carijó
+Picapauzinho-chocolate
+Picapauzinho-creme
+Picapauzinho-da-caatinga
+Picapauzinho-da-várzea
+Picapauzinho-de-barras-finas
+Picapauzinho-de-coleira
+Picapauzinho-de-pescoço-branco
+Picapauzinho-de-pintas-amarelas
+Picapauzinho-do-amazonas
+Picapauzinho-do-orinoco
+Picapauzinho-dourado
+Picapauzinho-escamoso
+Picapauzinho-fusco
+Picapauzinho-vermelho
+Pinto-do-mato-de-fronte-ruiva
+Pipira-preta
+Pipira-vermelha
+Piranga flava
+Piuí-boreal
+Poiaeiro-de-sobrancelha
+Polytmus guainumbi
+Polytmus milleri
+Pomba-amargosa
+Pomba-botafogo
+Pomba-de-coleira
+Pomba-do-cabo
+Pomba-do-orvalho
+Procnias averano
+Psophia dextralis
+Psophia napensis
+Psophia ochroptera
+Pteroglossus viridis
+Quem-te-vestiu
+Rabo-branco-acanelado
+Rabo-branco-de-garganta-cinza
+Rabo-de-palha-de-bico-vermelho
+Rabo-branco-de-cauda-larga
+Rabo-branco-de-sobre-amarelo
+Rabo-branco-do-rupunúni
+Rabo-branco-do-tapajós
+Rabo-branco-pequeno
+Rabo-branco-rubro
+Rabo-de-palha-de-bico-laranja
+Rabo-de-palha-de-cauda-vermelha
+Rapazinho-carijó
+Rapazinho-de-colar
+Rapazinho-do-chaco
+Rapazinho-estriado-de-rondônia
+Rapazinho-estriado-do-oeste
+Rauenia bonariensis
+Rendadinho
+Rendadinho-do-xingu
+Riscadinha
+Saíra-de-chapéu-preto
+Saíra-andina-de-cabeça-azul
+Saíra-carijó
+Saíra-negaça
+Saíra-ouro
+Saíra-pintada
+Sanã-amarela
+Sanã-do-capim
+Sanã-parda
+Sanã-vermelha
+Sanã-carijó
+Sanã-castanha
+Sanhaço-cinzento
+Sanhaçu-escarlate
+Sanhaçu-verde
+Sanhaçu-vermelho
+Saracura-carijó
+Saracura-do-banhado
+Saracura-matraca
+Saripoca-de-bico-castanho
+Saripoca-de-coleira
+Sebinho-de-olho-de-ouro
+Sebinho-rajado-amarelo
+Selenidera maculirostris
+Seriema-de-perna-vermelha
+Sertaneja Balão
+Sicalis luteola
+Socó-jararaca
+Socó-boi-baio
+Socoí-amarelo
+Socoí-vermelho
+Socoí-zigue-zague
+Soldadinho
+Solta-asa-do-norte
+Solta-asa
+Sovi-do-norte
+Sporophila americana
+Sporophila palustris
+Stephanoxis lalandi
+Stilpnia preciosa
+Suiriri-da-chapada
+Surucuá-de-cauda-preta
+Surucuá-mascarado
+Quetzal-pavão
+Sururina-da-serra
+Synallaxis frontalis
+Synallaxis spixi
+Tachybaptus dominicus
+Talaphorus chlorocercus
+Tapaculo-pintado
+Taperá-de-garganta-branca
+Taperuçu-de-coleira-branca
+Taperuçu-de-mento-branco
+Taperuçu-de-peito-branco
+Taperuçu-dos-tepuis
+Taperuçu-escuro
+Taperuçu-preto
+Taperuçu-velho
+Taraba major
+Tauató-passarinho
+Tecelão-do-acre
+Tersina viridis
+Tesourinha-do-campo
+Thraupis abbas
+Thraupis episcopus
+Thraupis glaucocolpa
+Threnetes leucurus
+Tico-tico-rei-cinza
+Tiê-de-bando
+Tiê-de-topete
+Tijerila
+Tinguaçu-ferrugem
+Tio-tio
+Tiriba-de-cabeça-vermelha
+Tiriba-de-deville
+Tiriba-de-hellmayr
+Tiriba-do-madeira
+Tiriba-rupestre
+Tiririzinho-do-mato
+Topázio-de-fogo
+Topetinho-pavão
+Topetinho-verde
+Torom-carijó
+Torom-do-imeri
+Tororó
+Tovacuçu-malhado
+Tovacuçu-xodó
+Trepadorzinho
+Trinta-réis-de-coroa-branca
+Trinta-réis-miúdo
+Trinta-réis-de-bando
+Trinta-réis-preto
+Triste-pia
+Troglodytes musculus
+Trombeteiro
+Tucaninho-de-nariz-amarelo
+Tucano-de-bico-preto
+Tucano-de-papo-branco
+Tuju
+Turdus sanchezorum
+Turu-turu
+Uirapuru-azul
+Uirapuru-de-garganta-preta
+Uirapuru-selado
+Uru-corcovado
+Uru-de-topete
+Urubu-de-cabeça-preta
+Veniliornis passerinus
+Vira-folha-cearense
+Vira-folha-de-peito-vermelho
+Vissiá-cantor
+Ximango
+Xiphocolaptes falcirostris
+Zidedê
+Zidedê-de-asa-cinza
+Zidedê-de-encontro
+Bassaricyon alleni
+Bassaricyon beddardi
+Boto-de-burmeister
+Doninha-amazônica
+Golfinho-de-dentes-rugosos
+Inia araguaiaensis
+Jaritataca
+Panthera onca palustris
+Zorrilho
+Abacaiuia-tapaca
+Acanthocybium solandri
+Acarapindá
+Amblydoras nheco
+Anisotremus moricandi
+Aruanã-prateado
+Aspidoras fuscoguttatus
+Aspidoras lakoi
+Astyanax biotae
+Astyanax xiru
+Aulostomus strigosus
+Baiacu-cofre
+Baiacu-carioca
+Baiacu-listrado
+Batrochoglanis melanurus
+Biru
+Bivibranchia velox
+Blênio-verde
+Bodião-de-noronha
+Bodião-fantasma
+Bodião-sabão
+Boulengerella maculata
+Brycon brevicauda
+Brycon lundii
+Brycon nattereri
+Cação-bruxa
+Campellolebias brucei
+Cangulo-do-sargaço
+Cangulo-rei
+Castanheta-das-rochas
+Cathorops agassizii
+Cathorops arenatus
+Cathorops spixii
+Cavalo-marinho-patagônico
+Centropyge aurantonotus
+Chilomycterus antillarum
+Choranthias salmopunctatus
+Cirurgião-africano
+Cirurgião-baiano
+Corydoras aeneus
+Corydoras haraldschultzi
+Ctenogobius saepepallens
+Cynolebias boitonei
+Cynolebias constanciae
+Dermatolepis inermis
+Donzela de Van Bebber
+Donzela-azul-do-atlântico
+Donzela-bicolor-brasileira
+Donzela-cobalto
+Epinephelus marginatus
+Falsa-moreia-amarela
+Franciscodoras marmoratus
+Garoupa-palhaço
+Garoupa-senhor-de-engenho
+Góbio-de-água-doce
+Guavina-do-atlântico
+Gymnocorymbus ternetzi
+Gymnotus
+Holacanthus ciliaris
+Hoplosternum littorale
+Hydrolagus matallanasi
+Hypopygus
+Hyporthodus niveatus
+Hypostomus commersonii
+Hypostomus plecostomus
+Ituglanis boticario
+Lachnolaimus maximus
+Leporinus obtusidens
+Leptolebias marmoratus
+Leptolebias minimus
+Leptolebias splendens
+Liza dumerili
+Lutjanus cyanopterus
+Mandarim-caribenho
+Mandarim-de-agassiz
+Maria-luísa
+Megalopidae
+Moenkhausia lopesi
+Moreia-dragão-do-atlântico
+Myleus pacu
+Mylossoma duriventre
+Nomeus gronovii
+Olho-de-cão-majestoso
+Otocinclus affinis
+Pacamão
+Pacu-caranha
+Pampo-verdadeiro
+Peckoltia greedoi
+Pedreiro-do-espinhaço
+Stegastes fuscus
+Peixe enxada
+Peixe-frade
+Peixe-borboleta-de-recife
+Peixe-cachimbo-de-cauda-curta
+Peixe-canivete
+Peixe-doutor
+Peixe-dragão-de-noronha
+Peixe-ouropel-espinhoso
+Peixe-ouropel-pintado
+Peixe-papagaio-de-zelinda
+Peixe-porco-de-riscas-azuis
+Peixe-porco-pintado-americano
+Peixe-sapo-ocelado
+Peixe-semáforo-comum
+Piau-bosteiro
+Piracanjuba
+Piramboia
+Piranha-preta
+Plagioscion
+Polydactylus virginicus
+Potamotrygon leopoldi
+Potamotrygon schuemacheri
+Prognathodes obliquus
+Protocheirodon pi
+Psammobatis bergi
+Psammobatis extenta
+Pseudobatos horkelii
+Pygocentrus piraya
+Raia-de-agassiz
+Rajella sadowskii
+Rhinoptera brasiliensis
+Rineloricaria
+Rivulus
+Roncador-listado-americano
+Salminus brasiliensis
+Tabarana
+Sarampinho
+Scarus guacamaia
+Serrano-de-recife-profundo
+Serrano-do-atlântico
+Serrano-tabaco
+Serrasalmus maculatus
+Sorubim lima
+Sparisoma viride
+Stegastes sanctipauli
+Stenolicmus ix
+Sternopygus
+Strongylura
+Surubim-do-paraíba
+Syngnathoides biaculeatus
+Tanduju-caribenho
+Tarumania walkerae
+Tetra-serpae
+Torpedo puelcha
+Trichomycterus pirabitira
+Tubarão-albafar
+Tubarão-charuto-dentuço
+Tubarão-de-sete-guelras
+Zapteryx brevirostris
+Barriga preta
+Bergamácia brasileira
+Berganês
+Boi Tropical
+Cabugi
+Canindé
+Caracu
+Cariri
+Crioula gaúcha
+Crioulo lageano
+Curraleiro Pé-Duro
+Fila-brasileiro
+Gado franqueiro
+Gado indubrasil
+Gado junqueira
+Gado pantaneiro
+Girolando
+Gurgueia
+Jaguaribe
+Jumento nordestino
+Jumento paulista
+Jumento Pêga
+Marota
+Mocho Nacional
+Morada Nova
+Nambi
+Pantaneira
+Porco canastra
+Porco canastrão
+Porco caruncho
+Porco casco-de-burro
+Porco monteiro
+Porco Moura
+Porco nilo-canastra
+Porco pereira
+Porco piau
+Porco pirapetinga
+Porco sorocaba
+Purunã
+Rabo largo
+Repartida
+Santa Inês
+Serrana azul
+Simbrasil
+Soinga
+Somalis brasileira
+Tabapuã
+Aglaophenia latecarinata
+Gauromydas heros
+Amphisbaena ridleyi
+Anu-coroca
+Aplysina aerophoba
+Aratu-vermelho
+Atobá-pardo
+Bodião-canário
+Conus scopulorum
+Enguia-de-jardim
+Farfantepenaeus subtilis
+Golfinho-pintado-do-atlântico
+Golfinho-roaz
+Goyazana rotundicauda
+Gymnothorax moringa
+Gymnothorax ocellatus
+Maria-viuvinha
+Mussismilia hispida
+Mycteroperca tigris
+Octopus insularis
+Ocypode quadrata
+Pseudobatos lentiginosus
+Teiú-branco
+Trachylepis atlantica
+Tubarão-pigmeu
+Uçá
+Viuvinha-branca
+Viuvinha-de-óculos
+Atlantodesmus sierwaldae
+Heteromeyenia barlettai
+Thrichomys inermis
+Trinomys mirapitanga
+Aplastodiscus heterophonicus
+Aplastodiscus lutzorum
+Boana atlantica
+Boana freicanecae
+Brachycephalus curupira
+Brachycephalus ibitinga
+Brachycephalus rotenbergae
+Caecilia armata
+Cycloramphus semipalmatus
+Dendropsophus baileyi
+Elachistocleis corumbaensis
+Elachistocleis erythrogaster
+Elachistocleis muiraquitan
+Julianus pinimus
+Leptodactylus marmoratus
+Nyctimantis brunoi
+Ololygon faivovichi
+Ololygon paracatu
+Ololygon peixotoi
+Ololygon tupinamba
+Perereca-de-folhagem-com-perna-reticulada
+Phasmahyla spectabilis
+Physalaemus deimaticus
+Pithecopus centralis
+Pithecopus nordestinus
+Pristimantis latro
+Pristimantis ramagii
+Pristimantis zimmermanae
+Pseudopaludicola restinga
+Rhinella cerradensis
+Rhinella jimi
+Sapinho-admirável-de-barriga-vermelha
+Scinax cabralensis
+Scinax onca
+Scinax tropicalia
+Stereocyclops histrio
+Xenohyla eugenioi
+Xenohyla truncata
+Acrobata
+Anambé-de-rabo-branco
+Anambezinho
+Aracuã-de-sobrancelhas
+Arapaçu-marrom
+Arredio-pálido
+Asa-de-sabre-do-espinhaço
+Asa-de-telha-pálido
+Barbudo-rajado
+Besourinho
+Bico-chato-do-sucunduri
+Bicudinho-do-brejo
+Borboletinha-baiana
+Cabeça-de-prata
+Caboclinho-de-barriga-preta
+Caburé-de-pernambuco
+Camargoia nordestina
+Cambada-de-chaves
+Caneleiro-enxofre
+Capacetinho-cinza
+Capitão-de-peito-marrom
+Capitão-de-saíra
+Capoeira-cachorra
+Cara-dourada
+Cara-pintada
+Carpornis cucullata
+Casaca-de-couro-da-lama
+Casaca-de-couro
+Catirumbava
+Choca-d'água
+Choca-de-garganta-preta
+Choca-barrada-do-nordeste
+Choca-de-sooretama
+Choca-do-nordeste
+Choca-do-nordeste-de-cauda-barrada
+Choca-do-planalto
+Choquinha-cinzenta
+Choquinha-da-serra
+Choquinha-de-alagoas
+Choquinha-de-asa-ferrugem
+Choquinha-de-dorso-vermelho
+Choquinha-de-garganta-pintada
+Choquinha-de-ihering
+Choquinha-de-peito-pintado
+Choquinha-do-tapajós
+Choquinha-fluminense
+Choquinha-pequena
+Chororó-cinzento
+Chororó-de-goiás
+Chororó-didi
+Chorozinho-da-caatinga
+Chorozinho-de-boné
+Chorozinho-de-papo-preto
+Chorozinho-do-aripuanã
+Chupa-dente-de-capuz
+Cocoruta
+Compsothraupis loricata
+Cuitelão
+Curica-urubu
+Cuspidor-de-máscara-preta
+Cyanocorax hafferi
+Dançador-de-coroa-dourada
+Dituí
+Estalinho
+Formigueiro-do-litoral
+Formigueiro-assobiador
+Formigueiro-da-serra
+Formigueiro-de-cabeça-negra
+Formigueiro-de-hellmayr
+Formigueiro-do-nordeste
+Freirinha-de-cabeça-castanha
+Fruxu-serrano
+Garrinchão-de-bico-grande
+Gavião-pombo-pequeno
+Gavião-gato-do-nordeste
+Golinho
+Gravatazeiro
+Grimpeirinho
+Gritador-do-nordeste
+Hylocharis pyropygia
+Hylopezus ochroleucus
+Jacamim-das-costas-verdes
+Jacamim-de-costas-escuras
+Jacu-estalo-escamoso
+Jacucaca
+Jacupiranga
+Jandaia-verdadeira
+João-botina-da-mata
+João-botina-do-brejo
+João-de-cabeça-cinza
+João-escamoso
+João-baiano
+João-xique-xique
+Lenheiro-da-serra-do-cipó
+Mãe-de-taoca-arlequim
+Mãe-de-taoca-dourada
+Mãe-de-taoca-papuda
+Maitaca-de-barriga-azul
+Maria-catarinense
+Maria-da-campina
+Maria-do-nordeste
+Maria-preta-de-garganta-vermelha
+Maria-preta-do-nordeste
+Maria-da-restinga
+Maria-do-madeira
+Entufado
+Papa-moscas-estrela
+Papa-formiga-de-grota
+Papa-formiga-do-sincorá
+Papa-moscas-de-olheiras
+Papa-taoca-da-bahia
+Papa-taoca-de-pernambuco
+Papagaio-de-cabeça-laranja
+Papagaio-dos-garbes
+Patativa-tropeira
+Pedreirinho
+Periquito-da-caatinga
+Periquito-verde
+Pica-pau-da-taboca
+Pica-pau-de-testa-pintada
+Pica-pau-dourado-de-belém
+Pica-pau-dourado-grande
+Picapauzinho-pintado
+Pintadinho
+Pula-pula-de-sobrancelha
+Pyrrhura pfrimeri
+Rabo-mole-da-serra
+Rabo-amarelo
+Rapazinho-dos-velhos
+Rapazinho-estriado-do-leste
+Rolinha-do-planalto
+Saí-de-pernas-pretas
+Saíra-ferrugem
+Saíra-sapucaia
+Sanhaçu-de-encontro-azul
+Saudade
+Surucuá-de-murici
+Tachuri-campainha
+Tangarazinho
+Tapaculo-de-brasília
+Beija-flor-de-costas-violeta
+Tico-tico-do-mato
+Tico-tico-do-são-francisco
+Tiê-bicudo
+Tietê-de-coroa
+Tiriba-de-peito-cinza
+Tiriba-pérola
+Topetinho-vermelho
+Tovaca-cantadora
+Trepador-coleira
+Trepador-sobrancelha
+Tropeiro-da-serra
+Uirapuru-de-chapéu-branco
+Vite-vite-de-olho-cinza
+Zidedê-do-nordeste
+Cuíca-pequena
+Veado-mateiro-pequeno
+Acnodon normani
+Aequidens epae
+Aequidens gerciliae
+Aequidens rondoni
+Ancistrus tombador
+Archolaemus janeae
+Archolaemus luciae
+Argonectes robertsi
+Auchenipterus menezesi
+Bagre-cego-de-iporanga
+Bunocephalus hartti
+Bunocephalus minerim
+Caecorhamdella brasiliensis
+Cambeva damnata
+Canthigaster figueiredoi
+Characidium fasciatum
+Characidium iaquira
+Characidium mirim
+Characidium nupelia
+Characidium satoi
+Characidium xavante
+Cichla kelberi
+Cichla mirianae
+Cichla pinima
+Cichla piquiti
+Cichla vazzoleri
+Cichlasoma araguaiense
+Cichlasoma paranaense
+Crenicichla rosemariae
+Curimata acutirostris
+Curimata inornata
+Curimata macrops
+Cyphocharax albiventris
+Cyphocharax albula
+Cyphocharax boiadeiro
+Cyphocharax caboclo
+Cyphocharax ivo
+Cyphocharax jagunco
+Cyphocharax muyrakytan
+Cyphocharax naegelii
+Cyphocharax orion
+Cyphocharax sanctigabrielis
+Cyphocharax signatus
+Cyphocharax stilbolepis
+Cyphocharax tamuya
+Delturus brevis
+Eigenmannia bumba
+Eigenmannia cacuria
+Eigenmannia robsoni
+Eigenmannia vicentespelaea
+Geophagus argyrostictus
+Geophagus pyrocephalus
+Hemiodus sterni
+Hemiodus tocantinensis
+Hypancistrus phantasma
+Hypomasticus julii
+Hypomasticus pachycheilus
+Hypsolebias auratus
+Hypsolebias virgulatus
+Leptolebias opalescens
+Listrura boticario
+Mucurilebias leitaoi
+Piabanha-do-jequitinhonha
+Piabanha-do-pardo
+Piraputanga
+Poecilia vivipara
+Potamotrygon scobina
+Retroculus lapidifer
+Sartor tucuruiense
+Surubim-do-doce
+Tosanoides aphrodite
+Truta-brasileira
+Araneothrombium brasiliensis
+Cheiridium piracanjubae
+Rowlandius ufpi
+Vitalius paranaensis
+Caranguejo-amarelo
+Caranguejo-saltador-caribenho
+Estado de conservação dos crustáceos decápodes da fauna brasileira
+Goyazana castelnaui
+Grapsus grapsus
+Macrobrachium amazonicum
+Panulirus argus
+Petrochirus diogenes
+Thor amboinensis
+Anacroneuria galba
+Blaberus giganteus
+Dermatobia hominis
+Percevejo-gaúcho
+Callyspongia aculeata
+Amarilladesma mactroides
+Anomalocardia flexuosa
+Donax hanleyanus
+Dosinia concentrica
+Erodona mactroides
+Eucallista purpurata
+Iphigenia brasiliensis
+Lima lima
+Nodipecten nodosus
+Phacoides pectinatus
+Tagelus plebeius
+Tivela mactroides
+Tivela zonaria
+Argonauta nodosus
+Aliger gallus
+Architectonica nobilis
+Bulla striata
+Cassis tuberosa
+Chicoreus brevifrons
+Chicoreus spectrum
+Claremontiella nodulosa
+Conasprella mindana
+Conasprella puncticulata
+Conus regius
+Cypraecassis testiculus
+Drymaeus poecilus
+Epitonium krebsii
+Euglandina striata
+Fissurella rosea
+Lobatus raninus
+Lottia subrugosa
+Luria cinerea
+Macrostrombus costatus
+Malea pomum
+Morum oniscus
+Natica marochiensis
+Polinices hepaticus
+Propustularia surinamensis
+Pugilina tupiniquim
+Radiodiscus coppingers
+Radiodiscus iheringi
+Rectartemon depressus
+Semicassis granulata
+Sinum perspectivum
+Siratus beauii
+Siratus senegalensis
+Siratus tenuivaricosus
+Stigmaulax cayennensis
+Strombus pugilis
+Tonna galea
+Trochogyra leptotera
