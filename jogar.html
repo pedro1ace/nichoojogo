@@ -605,6 +605,70 @@ const Som = (() => {
     fonte.start(t);
   }
 
+  // Céu da tela inicial: vento lá no alto + bipes de satélite bem baixinhos.
+  let ceu = null;
+  function ligarCeu() {
+    if (!ac || ceu) return;
+    const saida = ac.createGain();
+    saida.gain.setValueAtTime(0.0001, ac.currentTime);
+    saida.gain.exponentialRampToValueAtTime(1, ac.currentTime + 2);
+    saida.connect(mestre);
+    // vento: ruído em loop, filtrado, com a "rajada" subindo e descendo devagar
+    const buf = ac.createBuffer(1, ac.sampleRate * 4, ac.sampleRate);
+    const d = buf.getChannelData(0);
+    let ult = 0;
+    for (let i = 0; i < d.length; i++) { ult = ult * 0.97 + (Math.random() * 2 - 1) * 0.03; d[i] = ult * 6; }
+    const vento = ac.createBufferSource();
+    vento.buffer = buf;
+    vento.loop = true;
+    const filtro = ac.createBiquadFilter();
+    filtro.type = "bandpass";
+    filtro.frequency.value = 420;
+    filtro.Q.value = 0.8;
+    const gv = ac.createGain();
+    gv.gain.value = 0.05;
+    const lfo = ac.createOscillator();
+    lfo.frequency.value = 0.11;
+    const lfoG = ac.createGain();
+    lfoG.gain.value = 260;
+    lfo.connect(lfoG).connect(filtro.frequency);
+    const lfo2 = ac.createOscillator();
+    lfo2.frequency.value = 0.07;
+    const lfo2G = ac.createGain();
+    lfo2G.gain.value = 0.03;
+    lfo2.connect(lfo2G).connect(gv.gain);
+    vento.connect(filtro).connect(gv).connect(saida);
+    vento.start(); lfo.start(); lfo2.start();
+    // bipes: o "bip... bip..." clássico de satélite e, às vezes, um chiado de dados
+    const bip = (f, dur, atraso, vol = 0.022) => {
+      const t = ac.currentTime + atraso;
+      const o = ac.createOscillator(), g = ac.createGain();
+      o.type = "sine"; o.frequency.value = f;
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(vol, t + 0.01);
+      g.gain.setValueAtTime(vol, t + dur - 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      o.connect(g).connect(saida);
+      o.start(t); o.stop(t + dur + 0.05);
+    };
+    let n = 0;
+    const relogio = setInterval(() => {
+      n++;
+      bip(1480, 0.14, 0);
+      if (n % 2 === 0) bip(1480, 0.14, 0.5);
+      if (n % 5 === 0) for (let k = 0; k < 9; k++) bip(1800 + Math.random() * 1200, 0.035, 0.9 + k * 0.045, 0.012);
+    }, 1600);
+    ceu = { saida, fontes: [vento, lfo, lfo2], relogio };
+  }
+  function desligarCeu() {
+    if (!ceu) return;
+    const c = ceu;
+    ceu = null;
+    clearInterval(c.relogio);
+    c.saida.gain.setTargetAtTime(0.0001, ac.currentTime, 0.4);
+    setTimeout(() => c.fontes.forEach((f) => f.stop()), 2500);
+  }
+
   const NOTAS = [523.25, 659.25, 783.99, 1046.5, 1318.5, 1568]; // dó maior subindo
 
   return {
@@ -617,6 +681,15 @@ const Som = (() => {
       } catch {}
       if (mestre) mestre.gain.setTargetAtTime(mudo ? 0 : 0.5, ac.currentTime, 0.05);
       return mudo;
+    },
+    ceu(ligado) {
+      if (ligado) ligarCeu();
+      else desligarCeu();
+    },
+    // clique do botão de iniciar: um "tuc" curto e claro
+    clique() {
+      tom(660, 0.06, { tipo: "square", volume: 0.07 });
+      tom(1320, 0.08, { tipo: "triangle", volume: 0.06, atraso: 0.04 });
     },
     tecla: () => tom(1800 + Math.random() * 400, 0.025, { volume: 0.03 }),
     erro: () => {
@@ -3151,6 +3224,8 @@ function montarQuadrados() {
 
 function comecar() {
   Som.ligar();
+  Som.ceu(false);
+  Som.clique();
   Som.inicio(); // toca sempre, também ao continuar a viagem
   $("inicio").hidden = true;
   $("hud").hidden = false;
@@ -3765,6 +3840,14 @@ function enviar() {
 // ---------- eventos ----------
 
 $("comecar").addEventListener("click", comecar);
+// O navegador só toca som depois do primeiro toque/tecla: aí liga o céu da tela inicial
+// (vento e bipes de satélite), que some quando a viagem começa.
+const ligarCeuDoInicio = () => {
+  if ($("inicio").hidden) return;
+  Som.ligar();
+  Som.ceu(true);
+};
+["pointerdown", "keydown"].forEach((ev) => document.addEventListener(ev, ligarCeuDoInicio, { once: true }));
 $("abrir-como").addEventListener("click", () => {
   const d = $("como-jogar");
   d.open = !d.open;

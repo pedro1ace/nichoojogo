@@ -280,6 +280,8 @@ function montarQuadrados() {
 
 function comecar() {
   Som.ligar();
+  Som.ceu(false);
+  Som.clique();
   Som.inicio(); // toca sempre, também ao continuar a viagem
   $("inicio").hidden = true;
   $("hud").hidden = false;
@@ -894,6 +896,14 @@ function enviar() {
 // ---------- eventos ----------
 
 $("comecar").addEventListener("click", comecar);
+// O navegador só toca som depois do primeiro toque/tecla: aí liga o céu da tela inicial
+// (vento e bipes de satélite), que some quando a viagem começa.
+const ligarCeuDoInicio = () => {
+  if ($("inicio").hidden) return;
+  Som.ligar();
+  Som.ceu(true);
+};
+["pointerdown", "keydown"].forEach((ev) => document.addEventListener(ev, ligarCeuDoInicio, { once: true }));
 $("abrir-como").addEventListener("click", () => {
   const d = $("como-jogar");
   d.open = !d.open;
