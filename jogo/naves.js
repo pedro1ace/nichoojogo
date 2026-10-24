@@ -121,5 +121,75 @@ function criarNaves() {
   const cometa = tela(9, 9);
   esferaMini(cometa.getContext("2d"), 4.5, 4.5, 4.1, ["#4a2a8a", "#8a5ae0", "#c38bff", "#f4e8ff"]);
 
-  return { satelite, iss, lua, planeta, cometa };
+  // Voyager (30 x 18): a antena grande em prato, o corpo dourado e as hastes finas
+  const voyager = tela(30, 18);
+  {
+    const g = voyager.getContext("2d");
+    // hastes: magnetômetro comprido para a esquerda, gerador (RTG) para baixo à direita
+    g.fillStyle = METAL[1]; g.fillRect(0, 10, 13, 1);
+    g.fillStyle = METAL[2]; g.fillRect(0, 10, 4, 1);
+    g.fillStyle = METAL[1]; g.fillRect(16, 12, 1, 5); g.fillRect(17, 16, 6, 1);
+    bloco(g, 22, 15, 4, 3, METAL);
+    // corpo
+    bloco(g, 12, 9, 7, 5, OURO);
+    // prato da antena (visto meio de lado): elipse clara com sombra embaixo
+    for (let y = 0; y < 10; y++) for (let x = 6; x < 26; x++) {
+      const nx = (x + 0.5 - 15.5) / 9.6, ny = (y + 0.5 - 4.8) / 4.6, d = nx * nx + ny * ny;
+      if (d > 1) continue;
+      const t = d > 0.72 ? (ny < 0 ? 3 : 1) : ny < -0.2 ? 2 : 1;
+      g.globalAlpha = d > 0.85 ? 0.8 : 1;
+      g.fillStyle = BRANCO[t];
+      g.fillRect(x, y, 1, 1);
+    }
+    g.globalAlpha = 1;
+    g.fillStyle = BRANCO[0]; g.fillRect(15, 4, 2, 2); // receptor no meio do prato
+  }
+
+  // Pilares da Criação (90 x 130): três colunas de poeira escura com bordas acesas,
+  // sobre o brilho verde-dourado da nebulosa da Águia. Fica no fundo do jogo.
+  const pilares = tela(90, 130);
+  {
+    const g = pilares.getContext("2d");
+    const ruido = (x, y) => { const v = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453; return v - Math.floor(v); };
+    // brilho da nebulosa: dourado em cima, verde-azulado embaixo, com dithering suave
+    for (let y = 0; y < 130; y++) for (let x = 0; x < 90; x++) {
+      const dx = (x - 45) / 46, dy = (y - 58) / 72, d = dx * dx + dy * dy;
+      if (d > 1) continue;
+      const a = (1 - d) * (0.5 + 0.2 * Math.sin(x * 0.21 + y * 0.13));
+      if (a < BAYER[(y & 3) * 4 + (x & 3)] * 0.9) continue;
+      const v = y / 130;
+      g.globalAlpha = Math.min(0.55, a * 0.7);
+      g.fillStyle = v < 0.35 ? "#e8c27a" : v < 0.6 ? "#8fc7a0" : "#3f8f96";
+      g.fillRect(x, y, 1, 1);
+    }
+    // colunas escuras: [x da base, largura na base, altura, inclinação]
+    const colunas = [[24, 24, 112, 0.12], [54, 17, 78, 0.05], [75, 13, 58, -0.05]];
+    for (const [bx, larg, alt, incl] of colunas) {
+      for (let k = 0; k < alt; k++) {
+        const y = 129 - k;
+        const f = k / alt;
+        const w = Math.max(3, larg * (1 - f * 0.6) + Math.sin(k * 0.33) * 1.6);
+        const cx = bx + k * incl + Math.sin(k * 0.11) * 1.8;
+        for (let x = Math.floor(cx - w / 2); x <= cx + w / 2; x++) {
+          const rx = (x - cx) / (w / 2);
+          // borda esquerda e o topo acesos pela luz das estrelas; o miolo é poeira escura
+          const borda = rx < -0.78 || f > 0.95;
+          const tom = borda ? "#e8a060" : rx < -0.4 ? "#6a3420" : rx < 0.3 ? "#42200f" : "#2c140a";
+          g.globalAlpha = k < 6 ? 0.5 + k * 0.08 : 1;
+          g.fillStyle = !borda && ruido(x, y) < 0.1 ? "#1e0c06" : tom;
+          g.fillRect(x, y, 1, 1);
+        }
+      }
+      g.globalAlpha = 0.9; g.fillStyle = "#ffe4b0";
+      g.fillRect(Math.round(bx + alt * incl + Math.sin(alt * 0.11) * 1.8) - 1, 129 - alt, 3, 1);
+    }
+    // estrelinhas na frente
+    g.globalAlpha = 1;
+    for (let i = 0; i < 26; i++) {
+      g.fillStyle = i % 4 ? "#ffffff" : "#ffd890";
+      g.fillRect(Math.floor(ruido(i, 3) * 90), Math.floor(ruido(i, 9) * 130), 1, 1);
+    }
+  }
+
+  return { satelite, iss, lua, planeta, cometa, voyager, pilares };
 }

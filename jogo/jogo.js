@@ -153,7 +153,8 @@ const estado = {
 };
 
 cena.aoQuadro((al) => {
-  $("distancia").textContent = `${numero(al)} AL`;
+  // a distância conta a partir do ponto de partida (o céu escuro), não da Terra
+  $("distancia").textContent = `${numero(Math.max(0, Math.round(al - AL_INICIAL)))} AL`;
   // os pontos sobem contando, junto com a descida
   if (estado.totalMostrado < estado.total) {
     estado.totalMostrado = Math.min(estado.total, estado.totalMostrado + Math.max(0.4, (estado.total - estado.totalMostrado) * 0.06));
@@ -198,7 +199,7 @@ function iniciar() {
     estado.historico = salvo.historico;
     estado.total = estado.totalMostrado = salvo.total;
     estado.rodada = salvo.historico.length;
-    cena.irPara(profundidade());
+    cena.irPara(AL_INICIAL + profundidade());
     if (salvo.historico.some((h) => h.supernova)) { cena.dourado(false); atualizarIconeAba(true); }
     $("pontos").textContent = numero(estado.total);
   }
@@ -216,13 +217,11 @@ function iniciar() {
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
-// A viagem começa já fora da atmosfera: ao iniciar, o tardígrado desce da Terra até aqui
-// (onde o céu já é escuro) antes da primeira pergunta.
-const AL_INICIAL = 300;
 const DESCIDA_INICIAL = 2600;
 
+// Quanto você viajou hoje. A câmera fica em AL_INICIAL + isso (ver cena.js).
 function profundidade() {
-  return AL_INICIAL + estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
+  return estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
 }
 
 function mostrarPergunta(ligada) {
