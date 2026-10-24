@@ -41,6 +41,8 @@ Continuam no repositório, mas não entram em dados/pesos/ nem no jogo.
 Ajustes manuais (dados/ajustes/<cat>.csv), cabeçalho: resposta,peso,supernova
     peso em 0-100 substitui o calculado (deixe vazio para manter);
     supernova=1 marca a resposta secreta da rodada (o "krillion" do Nicho).
+    O jogo dobra os pontos dela, e aqui ela é ajustada para, dobrada, valer
+    sempre mais que a maior resposta da categoria.
 """
 from __future__ import annotations
 
@@ -58,6 +60,7 @@ SAIDA = RAIZ / "dados" / "pesos"
 SINAIS_WIKIDATA = RAIZ / "dados" / "sinais" / "wikidata"
 
 PESO_PERCENTIL = 0.7
+SUPERNOVA_FOLGA = 10  # a supernova (já dobrada) vale ao menos a maior resposta + isto
 FORA_DO_JOGO = RAIZ / "dados" / "fora_do_jogo.txt"
 # (percentil dentro da categoria, peso). Os pontos de corte das faixas do jogo
 # (jogo/cena.js) são 5, 20 e 50 pontos, ou seja, peso 0,224, 0,447 e 0,707.
@@ -245,6 +248,13 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         candidatas = sorted(respostas, key=lambda r: -r["pontos"])
     supernova = (marcadas or candidatas or respostas)[0]
     cat["supernova"] = supernova["resposta"]
+    # O jogo dobra os pontos da supernova. Ela tem que valer mais que qualquer outra
+    # resposta da categoria: dobrada, fica pelo menos SUPERNOVA_FOLGA acima da maior.
+    maior = max((r["pontos"] for r in respostas if r is not supernova), default=0)
+    minimo = -(-(maior + SUPERNOVA_FOLGA) // 2)
+    if supernova["pontos"] < minimo:
+        supernova["pontos"] = minimo
+        supernova["peso"] = round((minimo / 100) ** (1 / CURVA), 3)
     respostas.sort(key=lambda r: (r["pontos"], r["resposta"]))
     for r in respostas:
         del r["supernova_manual"]
