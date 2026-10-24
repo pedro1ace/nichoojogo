@@ -979,7 +979,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const pele = mascote.dourado ? tardigrado.dourado : tardigrado;
     const img = piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
     // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
-    const pz = Math.max(2, Math.round(escala * 0.5));
+    const pz = Math.max(1.6, escala * 0.4);
     // "respira": estica e encolhe de leve
     const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
     // olha sempre para o meio da tela (para a caixa): vira devagar, como quem se ajeita
@@ -1280,7 +1280,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         r: fumaca ? 6 + Math.random() * 8 : 1 + Math.random() * 1.5,
         tipo,
         cor: tipo === "plasma" ? (Math.random() < 0.5 ? "255, 79, 216" : "180, 60, 255")
-          : tipo === "fumaca" ? (Math.random() < 0.6 ? "92, 24, 38" : "60, 16, 44")
+          : tipo === "fumaca" ? (Math.random() < 0.6 ? "150, 90, 240" : "100, 50, 190")
           : tipo === "faisca" ? (Math.random() < 0.5 ? "255, 210, 63" : "255, 160, 60")
           : (Math.random() < 0.5 ? "232, 240, 255" : "95, 225, 255"),
       });
@@ -1297,7 +1297,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       if (r.tipo === "fumaca" || r.tipo === "plasma") {
         const raio = r.r * (1 + t * 2.2);
         const g = tx.createRadialGradient(r.x, y, 0, r.x, y, raio);
-        const a = (r.tipo === "plasma" ? 0.35 : 0.55) * (1 - t);
+        const a = (r.tipo === "plasma" ? 0.35 : 0.42) * (1 - t);
         g.addColorStop(0, `rgba(${r.cor}, ${a})`);
         g.addColorStop(1, `rgba(${r.cor}, 0)`);
         tx.fillStyle = g;
@@ -1329,7 +1329,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
           }
         }
       }
-      if (c.supernova && !c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
+      // fumaça só nas raras e o plasma na supernova (as outras têm os companheiros em órbita)
+      if ((c.supernova || c.faixa === "rara") && !c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -1555,6 +1556,13 @@ function criarCena(telaPixel, telaTexto, raiz) {
       alvoCanto = 1;
       mostrandoResultado = true;
       mostrarLinhas = false;
+    },
+    // Desce (ou sobe) a câmera até uma profundidade, sem caixa de resposta.
+    irAte(al, dura) {
+      camera.de = camera.atual;
+      camera.para = al;
+      camera.inicio = performance.now();
+      camera.dura = dura;
     },
     // Fim da viagem: o cenário volta devagar até a Terra.
     subir(dura) {

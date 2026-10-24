@@ -219,7 +219,7 @@ form button {
   position: absolute; z-index: 2; left: 50%; top: 50%; transform: translate(-50%, -50%);
   width: min(620px, calc(100% - 32px)); max-height: calc(100% - 150px);
   display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 4px;
-  padding: 10px 22px 16px; text-align: center; overflow-y: auto; scrollbar-width: none;
+  padding: 10px 22px 16px; text-align: center; overflow: visible; /* sem recorte: o brilho do nome da faixa se espalha pelo cenário */
   /* sem caixa: só uma sombra macia atrás do texto, que some nas bordas */
   background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(var(--tinta), 0.82) 0%, rgba(var(--tinta), 0.6) 45%, rgba(var(--tinta), 0) 100%);
   animation: surgir 0.4s ease-out;
@@ -1801,7 +1801,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const pele = mascote.dourado ? tardigrado.dourado : tardigrado;
     const img = piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
     // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
-    const pz = Math.max(2, Math.round(escala * 0.5));
+    const pz = Math.max(1.6, escala * 0.4);
     // "respira": estica e encolhe de leve
     const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
     // olha sempre para o meio da tela (para a caixa): vira devagar, como quem se ajeita
@@ -2102,7 +2102,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         r: fumaca ? 6 + Math.random() * 8 : 1 + Math.random() * 1.5,
         tipo,
         cor: tipo === "plasma" ? (Math.random() < 0.5 ? "255, 79, 216" : "180, 60, 255")
-          : tipo === "fumaca" ? (Math.random() < 0.6 ? "92, 24, 38" : "60, 16, 44")
+          : tipo === "fumaca" ? (Math.random() < 0.6 ? "150, 90, 240" : "100, 50, 190")
           : tipo === "faisca" ? (Math.random() < 0.5 ? "255, 210, 63" : "255, 160, 60")
           : (Math.random() < 0.5 ? "232, 240, 255" : "95, 225, 255"),
       });
@@ -2119,7 +2119,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       if (r.tipo === "fumaca" || r.tipo === "plasma") {
         const raio = r.r * (1 + t * 2.2);
         const g = tx.createRadialGradient(r.x, y, 0, r.x, y, raio);
-        const a = (r.tipo === "plasma" ? 0.35 : 0.55) * (1 - t);
+        const a = (r.tipo === "plasma" ? 0.35 : 0.42) * (1 - t);
         g.addColorStop(0, `rgba(${r.cor}, ${a})`);
         g.addColorStop(1, `rgba(${r.cor}, 0)`);
         tx.fillStyle = g;
@@ -2151,7 +2151,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
           }
         }
       }
-      if (c.supernova && !c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
+      // fumaça só nas raras e o plasma na supernova (as outras têm os companheiros em órbita)
+      if ((c.supernova || c.faixa === "rara") && !c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -2377,6 +2378,13 @@ function criarCena(telaPixel, telaTexto, raiz) {
       alvoCanto = 1;
       mostrandoResultado = true;
       mostrarLinhas = false;
+    },
+    // Desce (ou sobe) a câmera até uma profundidade, sem caixa de resposta.
+    irAte(al, dura) {
+      camera.de = camera.atual;
+      camera.para = al;
+      camera.inicio = performance.now();
+      camera.dura = dura;
     },
     // Fim da viagem: o cenário volta devagar até a Terra.
     subir(dura) {
@@ -2630,8 +2638,13 @@ function iniciar() {
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
+// A viagem começa já fora da atmosfera: ao iniciar, o tardígrado desce da Terra até aqui
+// (onde o céu já é escuro) antes da primeira pergunta.
+const AL_INICIAL = 300;
+const DESCIDA_INICIAL = 2600;
+
 function profundidade() {
-  return estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
+  return AL_INICIAL + estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
 }
 
 function mostrarPergunta(ligada) {
@@ -2657,6 +2670,13 @@ function comecar() {
   Som.ligar();
   $("inicio").hidden = true;
   $("hud").hidden = false;
+  if (estado.rodada === 0) {
+    // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
+    cena.irAte(AL_INICIAL, DESCIDA_INICIAL);
+    Som.descer(0.3);
+    setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
+    return;
+  }
   iniciarRodada();
 }
 

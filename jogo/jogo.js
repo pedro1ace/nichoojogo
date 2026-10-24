@@ -216,8 +216,13 @@ function iniciar() {
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
+// A viagem começa já fora da atmosfera: ao iniciar, o tardígrado desce da Terra até aqui
+// (onde o céu já é escuro) antes da primeira pergunta.
+const AL_INICIAL = 300;
+const DESCIDA_INICIAL = 2600;
+
 function profundidade() {
-  return estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
+  return AL_INICIAL + estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
 }
 
 function mostrarPergunta(ligada) {
@@ -243,6 +248,13 @@ function comecar() {
   Som.ligar();
   $("inicio").hidden = true;
   $("hud").hidden = false;
+  if (estado.rodada === 0) {
+    // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
+    cena.irAte(AL_INICIAL, DESCIDA_INICIAL);
+    Som.descer(0.3);
+    setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
+    return;
+  }
   iniciarRodada();
 }
 
