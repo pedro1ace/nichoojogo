@@ -4,6 +4,28 @@
  "pergunta": "Cite uma raça de cachorro",
  "respostas": [
   {
+   "resposta": "Labrador",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.262,
+   "ajustado": true,
+   "percentil": 0.231,
+   "fama": 0.05,
+   "peso": 0.116,
+   "pontos": 1
+  },
+  {
+   "resposta": "Pastor alemão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.051,
+   "ajustado": true,
+   "percentil": 0.046,
+   "fama": 0.06,
+   "peso": 0.121,
+   "pontos": 1
+  },
+  {
    "resposta": "Pitbull",
    "apelidos": [],
    "sem_dado": true,
@@ -11,7 +33,7 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.04,
-   "peso": 0.115,
+   "peso": 0.111,
    "pontos": 1
   },
   {
@@ -22,7 +44,7 @@
    "ajustado": true,
    "percentil": 0.215,
    "fama": 0.02,
-   "peso": 0.104,
+   "peso": 0.105,
    "pontos": 1
   },
   {
@@ -36,65 +58,8 @@
    "ajustado": true,
    "percentil": 0.062,
    "fama": 0.02,
-   "peso": 0.104,
+   "peso": 0.1,
    "pontos": 1
-  },
-  {
-   "resposta": "Golden retriever",
-   "apelidos": [
-    "golden"
-   ],
-   "sem_dado": false,
-   "icf": 14.082,
-   "ajustado": true,
-   "percentil": 0.323,
-   "fama": 0.06,
-   "peso": 0.134,
-   "pontos": 2
-  },
-  {
-   "resposta": "Labrador",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.262,
-   "ajustado": true,
-   "percentil": 0.231,
-   "fama": 0.05,
-   "peso": 0.123,
-   "pontos": 2
-  },
-  {
-   "resposta": "Pastor alemão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.051,
-   "ajustado": true,
-   "percentil": 0.046,
-   "fama": 0.06,
-   "peso": 0.134,
-   "pontos": 2
-  },
-  {
-   "resposta": "Rottweiler",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.997,
-   "ajustado": true,
-   "percentil": 0.308,
-   "fama": 0.08,
-   "peso": 0.149,
-   "pontos": 2
-  },
-  {
-   "resposta": "Shih-tzu",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.877,
-   "fama": 0.08,
-   "peso": 0.149,
-   "pontos": 2
   },
   {
    "resposta": "Bulldog",
@@ -106,8 +71,8 @@
    "ajustado": true,
    "percentil": 0.492,
    "fama": 0.1,
-   "peso": 0.168,
-   "pontos": 3
+   "peso": 0.153,
+   "pontos": 2
   },
   {
    "resposta": "Chihuahua",
@@ -117,8 +82,21 @@
    "ajustado": true,
    "percentil": 0.354,
    "fama": 0.1,
-   "peso": 0.168,
-   "pontos": 3
+   "peso": 0.142,
+   "pontos": 2
+  },
+  {
+   "resposta": "Golden retriever",
+   "apelidos": [
+    "golden"
+   ],
+   "sem_dado": false,
+   "icf": 14.082,
+   "ajustado": true,
+   "percentil": 0.323,
+   "fama": 0.06,
+   "peso": 0.126,
+   "pontos": 2
   },
   {
    "resposta": "Pinscher",
@@ -128,8 +106,30 @@
    "ajustado": true,
    "percentil": 0.446,
    "fama": 0.1,
-   "peso": 0.168,
-   "pontos": 3
+   "peso": 0.148,
+   "pontos": 2
+  },
+  {
+   "resposta": "Rottweiler",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.997,
+   "ajustado": true,
+   "percentil": 0.308,
+   "fama": 0.08,
+   "peso": 0.132,
+   "pontos": 2
+  },
+  {
+   "resposta": "Shih-tzu",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.877,
+   "fama": 0.08,
+   "peso": 0.137,
+   "pontos": 2
   },
   {
    "resposta": "Yorkshire",
@@ -139,43 +139,8 @@
    "ajustado": true,
    "percentil": 0.185,
    "fama": 0.12,
-   "peso": 0.184,
-   "pontos": 3
-  },
-  {
-   "resposta": "Dálmata",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.073,
-   "ajustado": true,
-   "percentil": 0.585,
-   "fama": 0.14,
-   "peso": 0.199,
-   "pontos": 4
-  },
-  {
-   "resposta": "Husky siberiano",
-   "apelidos": [
-    "husky"
-   ],
-   "sem_dado": false,
-   "icf": 14.426,
-   "ajustado": true,
-   "percentil": 0.477,
-   "fama": 0.14,
-   "peso": 0.199,
-   "pontos": 4
-  },
-  {
-   "resposta": "Pug",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.814,
-   "ajustado": true,
-   "percentil": 0.292,
-   "fama": 0.14,
-   "peso": 0.199,
-   "pontos": 4
+   "peso": 0.158,
+   "pontos": 2
   },
   {
    "resposta": "Beagle",
@@ -185,8 +150,8 @@
    "ajustado": true,
    "percentil": 0.246,
    "fama": 0.18,
-   "peso": 0.218,
-   "pontos": 5
+   "peso": 0.179,
+   "pontos": 3
   },
   {
    "resposta": "Dachshund",
@@ -199,8 +164,76 @@
    "ajustado": true,
    "percentil": 0.554,
    "fama": 0.18,
-   "peso": 0.218,
-   "pontos": 5
+   "peso": 0.185,
+   "pontos": 3
+  },
+  {
+   "resposta": "Dálmata",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.073,
+   "ajustado": true,
+   "percentil": 0.585,
+   "fama": 0.14,
+   "peso": 0.174,
+   "pontos": 3
+  },
+  {
+   "resposta": "Husky siberiano",
+   "apelidos": [
+    "husky"
+   ],
+   "sem_dado": false,
+   "icf": 14.426,
+   "ajustado": true,
+   "percentil": 0.477,
+   "fama": 0.14,
+   "peso": 0.169,
+   "pontos": 3
+  },
+  {
+   "resposta": "Pug",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.814,
+   "ajustado": true,
+   "percentil": 0.292,
+   "fama": 0.14,
+   "peso": 0.163,
+   "pontos": 3
+  },
+  {
+   "resposta": "Border collie",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.203,
+   "ajustado": true,
+   "percentil": 0.408,
+   "fama": 0.22,
+   "peso": 0.195,
+   "pontos": 4
+  },
+  {
+   "resposta": "Boxer",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.895,
+   "ajustado": true,
+   "percentil": 0.754,
+   "fama": 0.24,
+   "peso": 0.206,
+   "pontos": 4
+  },
+  {
+   "resposta": "Doberman",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.372,
+   "ajustado": true,
+   "percentil": 0.6,
+   "fama": 0.26,
+   "peso": 0.211,
+   "pontos": 4
   },
   {
    "resposta": "Lulu da Pomerânia",
@@ -213,41 +246,8 @@
    "ajustado": true,
    "percentil": 0.123,
    "fama": 0.2,
-   "peso": 0.231,
-   "pontos": 5
-  },
-  {
-   "resposta": "Border collie",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.203,
-   "ajustado": true,
-   "percentil": 0.408,
-   "fama": 0.22,
-   "peso": 0.241,
-   "pontos": 6
-  },
-  {
-   "resposta": "Boxer",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 18.895,
-   "ajustado": true,
-   "percentil": 0.754,
-   "fama": 0.24,
-   "peso": 0.256,
-   "pontos": 7
-  },
-  {
-   "resposta": "Doberman",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.372,
-   "ajustado": true,
-   "percentil": 0.6,
-   "fama": 0.26,
-   "peso": 0.27,
-   "pontos": 7
+   "peso": 0.19,
+   "pontos": 4
   },
   {
    "resposta": "Maltês",
@@ -257,8 +257,8 @@
    "ajustado": true,
    "percentil": 0.369,
    "fama": 0.24,
-   "peso": 0.256,
-   "pontos": 7
+   "peso": 0.2,
+   "pontos": 4
   },
   {
    "resposta": "Buldogue francês",
@@ -268,8 +268,8 @@
    "ajustado": true,
    "percentil": 0.108,
    "fama": 0.28,
-   "peso": 0.28,
-   "pontos": 8
+   "peso": 0.216,
+   "pontos": 5
   },
   {
    "resposta": "Fila brasileiro",
@@ -281,8 +281,8 @@
    "ajustado": true,
    "percentil": 0.031,
    "fama": 0.3,
-   "peso": 0.295,
-   "pontos": 9
+   "peso": 0.23,
+   "pontos": 5
   },
   {
    "resposta": "São Bernardo",
@@ -292,19 +292,8 @@
    "ajustado": true,
    "percentil": 0.015,
    "fama": 0.3,
-   "peso": 0.295,
-   "pontos": 9
-  },
-  {
-   "resposta": "Chow chow",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.877,
-   "fama": 0.32,
-   "peso": 0.31,
-   "pontos": 10
+   "peso": 0.221,
+   "pontos": 5
   },
   {
    "resposta": "Akita",
@@ -314,8 +303,19 @@
    "ajustado": true,
    "percentil": 0.462,
    "fama": 0.36,
-   "peso": 0.329,
-   "pontos": 11
+   "peso": 0.253,
+   "pontos": 6
+  },
+  {
+   "resposta": "Chow chow",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.877,
+   "fama": 0.32,
+   "peso": 0.242,
+   "pontos": 6
   },
   {
    "resposta": "Cocker spaniel",
@@ -327,19 +327,8 @@
    "ajustado": true,
    "percentil": 0.508,
    "fama": 0.36,
-   "peso": 0.329,
-   "pontos": 11
-  },
-  {
-   "resposta": "Schnauzer",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.855,
-   "ajustado": true,
-   "percentil": 0.523,
-   "fama": 0.36,
-   "peso": 0.329,
-   "pontos": 11
+   "peso": 0.265,
+   "pontos": 7
   },
   {
    "resposta": "Dogue alemão",
@@ -349,8 +338,19 @@
    "ajustado": true,
    "percentil": 0.154,
    "fama": 0.42,
-   "peso": 0.354,
-   "pontos": 13
+   "peso": 0.288,
+   "pontos": 8
+  },
+  {
+   "resposta": "Schnauzer",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.855,
+   "ajustado": true,
+   "percentil": 0.523,
+   "fama": 0.36,
+   "peso": 0.276,
+   "pontos": 8
   },
   {
    "resposta": "Galgo",
@@ -360,8 +360,8 @@
    "ajustado": true,
    "percentil": 0.646,
    "fama": 0.42,
-   "peso": 0.354,
-   "pontos": 13
+   "peso": 0.299,
+   "pontos": 9
   },
   {
    "resposta": "Basset hound",
@@ -373,8 +373,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.44,
-   "peso": 0.378,
-   "pontos": 14
+   "peso": 0.322,
+   "pontos": 10
   },
   {
    "resposta": "Collie",
@@ -384,8 +384,8 @@
    "ajustado": true,
    "percentil": 0.408,
    "fama": 0.44,
-   "peso": 0.378,
-   "pontos": 14
+   "peso": 0.311,
+   "pontos": 10
   },
   {
    "resposta": "Shar-pei",
@@ -395,19 +395,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.44,
-   "peso": 0.378,
-   "pontos": 14
-  },
-  {
-   "resposta": "Corgi",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.877,
-   "fama": 0.48,
-   "peso": 0.403,
-   "pontos": 16
+   "peso": 0.334,
+   "pontos": 11
   },
   {
    "resposta": "Pastor belga",
@@ -417,19 +406,19 @@
    "ajustado": true,
    "percentil": 0.092,
    "fama": 0.48,
-   "peso": 0.403,
-   "pontos": 16
+   "peso": 0.345,
+   "pontos": 12
   },
   {
-   "resposta": "Lhasa apso",
+   "resposta": "Corgi",
    "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.745,
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.277,
-   "fama": 0.5,
-   "peso": 0.418,
-   "pontos": 17
+   "percentil": 0.877,
+   "fama": 0.48,
+   "peso": 0.357,
+   "pontos": 13
   },
   {
    "resposta": "Bull terrier",
@@ -439,8 +428,19 @@
    "ajustado": true,
    "percentil": 0.138,
    "fama": 0.52,
-   "peso": 0.447,
-   "pontos": 20
+   "peso": 0.38,
+   "pontos": 14
+  },
+  {
+   "resposta": "Lhasa apso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.745,
+   "ajustado": true,
+   "percentil": 0.277,
+   "fama": 0.5,
+   "peso": 0.368,
+   "pontos": 14
   },
   {
    "resposta": "Jack russell terrier",
@@ -452,8 +452,8 @@
    "ajustado": true,
    "percentil": 0.2,
    "fama": 0.52,
-   "peso": 0.447,
-   "pontos": 20
+   "peso": 0.391,
+   "pontos": 15
   },
   {
    "resposta": "Pequinês",
@@ -463,8 +463,8 @@
    "ajustado": true,
    "percentil": 0.631,
    "fama": 0.52,
-   "peso": 0.447,
-   "pontos": 20
+   "peso": 0.403,
+   "pontos": 16
   },
   {
    "resposta": "Samoieda",
@@ -474,8 +474,8 @@
    "ajustado": true,
    "percentil": 0.692,
    "fama": 0.52,
-   "peso": 0.447,
-   "pontos": 20
+   "peso": 0.414,
+   "pontos": 17
   },
   {
    "resposta": "Shiba inu",
@@ -487,8 +487,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.52,
-   "peso": 0.447,
-   "pontos": 20
+   "peso": 0.426,
+   "pontos": 18
   },
   {
    "resposta": "Bichon frisé",
@@ -498,8 +498,8 @@
    "ajustado": true,
    "percentil": 0.615,
    "fama": 0.54,
-   "peso": 0.495,
-   "pontos": 25
+   "peso": 0.437,
+   "pontos": 19
   },
   {
    "resposta": "Cane corso",
@@ -509,8 +509,8 @@
    "ajustado": true,
    "percentil": 0.338,
    "fama": 0.56,
-   "peso": 0.519,
-   "pontos": 27
+   "peso": 0.449,
+   "pontos": 20
   },
   {
    "resposta": "Malamute do Alasca",
@@ -522,19 +522,8 @@
    "ajustado": true,
    "percentil": 0.708,
    "fama": 0.56,
-   "peso": 0.519,
-   "pontos": 27
-  },
-  {
-   "resposta": "Dogo argentino",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 16.881,
-   "ajustado": true,
-   "percentil": 0.723,
-   "fama": 0.58,
-   "peso": 0.551,
-   "pontos": 30
+   "peso": 0.467,
+   "pontos": 22
   },
   {
    "resposta": "Fox paulistinha",
@@ -546,8 +535,19 @@
    "ajustado": true,
    "percentil": 0.169,
    "fama": 0.58,
-   "peso": 0.551,
-   "pontos": 30
+   "peso": 0.485,
+   "pontos": 24
+  },
+  {
+   "resposta": "Dogo argentino",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.881,
+   "ajustado": true,
+   "percentil": 0.723,
+   "fama": 0.58,
+   "peso": 0.504,
+   "pontos": 25
   },
   {
    "resposta": "Bernese",
@@ -559,8 +559,8 @@
    "ajustado": true,
    "percentil": 0.662,
    "fama": 0.62,
-   "peso": 0.583,
-   "pontos": 34
+   "peso": 0.522,
+   "pontos": 27
   },
   {
    "resposta": "Weimaraner",
@@ -570,8 +570,8 @@
    "ajustado": true,
    "percentil": 0.677,
    "fama": 0.62,
-   "peso": 0.583,
-   "pontos": 34
+   "peso": 0.54,
+   "pontos": 29
   },
   {
    "resposta": "Mastim napolitano",
@@ -581,30 +581,8 @@
    "ajustado": true,
    "percentil": 0.569,
    "fama": 0.64,
-   "peso": 0.607,
-   "pontos": 37
-  },
-  {
-   "resposta": "Cavalier king charles",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.798,
-   "ajustado": true,
-   "percentil": 0.077,
-   "fama": 0.66,
-   "peso": 0.639,
-   "pontos": 41
-  },
-  {
-   "resposta": "Pointer",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.718,
-   "ajustado": true,
-   "percentil": 0.262,
-   "fama": 0.66,
-   "peso": 0.639,
-   "pontos": 41
+   "peso": 0.558,
+   "pontos": 31
   },
   {
    "resposta": "Terra-nova",
@@ -614,8 +592,41 @@
    "ajustado": true,
    "percentil": 0.0,
    "fama": 0.66,
-   "peso": 0.639,
-   "pontos": 41
+   "peso": 0.576,
+   "pontos": 33
+  },
+  {
+   "resposta": "Cavalier king charles",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.798,
+   "ajustado": true,
+   "percentil": 0.077,
+   "fama": 0.66,
+   "peso": 0.595,
+   "pontos": 35
+  },
+  {
+   "resposta": "Pointer",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.718,
+   "ajustado": true,
+   "percentil": 0.262,
+   "fama": 0.66,
+   "peso": 0.613,
+   "pontos": 38
+  },
+  {
+   "resposta": "Setter irlandês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.145,
+   "ajustado": true,
+   "percentil": 0.385,
+   "fama": 0.7,
+   "peso": 0.631,
+   "pontos": 40
   },
   {
    "resposta": "Afghan hound",
@@ -627,19 +638,8 @@
    "ajustado": true,
    "percentil": 0.538,
    "fama": 0.7,
-   "peso": 0.687,
-   "pontos": 47
-  },
-  {
-   "resposta": "Setter irlandês",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.145,
-   "ajustado": true,
-   "percentil": 0.385,
-   "fama": 0.7,
-   "peso": 0.687,
-   "pontos": 47
+   "peso": 0.649,
+   "pontos": 42
   },
   {
    "resposta": "Whippet",
@@ -649,8 +649,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.7,
-   "peso": 0.687,
-   "pontos": 47
+   "peso": 0.667,
+   "pontos": 44
   },
   {
    "resposta": "Bloodhound",
@@ -660,8 +660,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.72,
-   "peso": 0.726,
-   "pontos": 53
+   "peso": 0.685,
+   "pontos": 47
   },
   {
    "resposta": "Shetland sheepdog",
@@ -673,8 +673,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.74,
-   "peso": 0.751,
-   "pontos": 56
+   "peso": 0.704,
+   "pontos": 50
   },
   {
    "resposta": "Borzoi",
@@ -684,8 +684,8 @@
    "ajustado": true,
    "percentil": 1.0,
    "fama": 0.76,
-   "peso": 0.776,
-   "pontos": 60
+   "peso": 0.732,
+   "pontos": 54
   },
   {
    "resposta": "Rhodesian ridgeback",
@@ -695,8 +695,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.78,
-   "peso": 0.801,
-   "pontos": 64
+   "peso": 0.763,
+   "pontos": 58
   },
   {
    "resposta": "Basenji",
@@ -706,8 +706,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.8,
-   "peso": 0.825,
-   "pontos": 68
+   "peso": 0.794,
+   "pontos": 63
   },
   {
    "resposta": "Leonberger",
@@ -717,8 +717,19 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.84,
-   "peso": 0.85,
-   "pontos": 72
+   "peso": 0.825,
+   "pontos": 68
+  },
+  {
+   "resposta": "Ovelheiro gaúcho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.226,
+   "ajustado": true,
+   "percentil": 0.431,
+   "fama": 0.86,
+   "peso": 0.857,
+   "pontos": 73
   },
   {
    "resposta": "Komondor",
@@ -732,17 +743,6 @@
    "pontos": 79
   },
   {
-   "resposta": "Ovelheiro gaúcho",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.226,
-   "ajustado": true,
-   "percentil": 0.431,
-   "fama": 0.86,
-   "peso": 0.888,
-   "pontos": 79
-  },
-  {
    "resposta": "Xoloitzcuintle",
    "apelidos": [],
    "sem_dado": true,
@@ -750,8 +750,8 @@
    "ajustado": true,
    "percentil": 0.877,
    "fama": 0.88,
-   "peso": 0.925,
-   "pontos": 86
+   "peso": 0.919,
+   "pontos": 84
   },
   {
    "resposta": "Veadeiro pampeano",

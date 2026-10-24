@@ -13,7 +13,7 @@
    "ajustado": true,
    "percentil": 0.114,
    "fama": 0.03,
-   "peso": 0.122,
+   "peso": 0.116,
    "pontos": 1
   },
   {
@@ -24,7 +24,7 @@
    "ajustado": true,
    "percentil": 0.091,
    "fama": 0.02,
-   "peso": 0.111,
+   "peso": 0.108,
    "pontos": 1
   },
   {
@@ -39,30 +39,6 @@
    "pontos": 1
   },
   {
-   "resposta": "Cometa",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.332,
-   "ajustado": true,
-   "percentil": 0.614,
-   "fama": 0.15,
-   "peso": 0.139,
-   "pontos": 2
-  },
-  {
-   "resposta": "Planeta",
-   "apelidos": [
-    "planetas"
-   ],
-   "sem_dado": false,
-   "icf": 9.552,
-   "ajustado": true,
-   "percentil": 0.045,
-   "fama": 0.15,
-   "peso": 0.139,
-   "pontos": 2
-  },
-  {
    "resposta": "Avião",
    "apelidos": [],
    "sem_dado": false,
@@ -70,8 +46,19 @@
    "ajustado": true,
    "percentil": 0.159,
    "fama": 0.25,
-   "peso": 0.179,
-   "pontos": 3
+   "peso": 0.155,
+   "pontos": 2
+  },
+  {
+   "resposta": "Cometa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.332,
+   "ajustado": true,
+   "percentil": 0.614,
+   "fama": 0.15,
+   "peso": 0.131,
+   "pontos": 2
   },
   {
    "resposta": "Fogos de artifício",
@@ -84,8 +71,8 @@
    "ajustado": true,
    "percentil": 0.545,
    "fama": 0.2,
-   "peso": 0.162,
-   "pontos": 3
+   "peso": 0.139,
+   "pontos": 2
   },
   {
    "resposta": "Meteoro",
@@ -98,7 +85,44 @@
    "ajustado": true,
    "percentil": 0.795,
    "fama": 0.2,
-   "peso": 0.162,
+   "peso": 0.147,
+   "pontos": 2
+  },
+  {
+   "resposta": "Planeta",
+   "apelidos": [
+    "planetas"
+   ],
+   "sem_dado": false,
+   "icf": 9.552,
+   "ajustado": true,
+   "percentil": 0.045,
+   "fama": 0.15,
+   "peso": 0.123,
+   "pontos": 2
+  },
+  {
+   "resposta": "Arco-íris",
+   "apelidos": [
+    "arco-iris"
+   ],
+   "sem_dado": false,
+   "icf": 11.103,
+   "ajustado": true,
+   "percentil": 0.341,
+   "fama": 0.35,
+   "peso": 0.186,
+   "pontos": 3
+  },
+  {
+   "resposta": "Marte",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.023,
+   "ajustado": true,
+   "percentil": 0.295,
+   "fama": 0.35,
+   "peso": 0.178,
    "pontos": 3
   },
   {
@@ -112,8 +136,8 @@
    "ajustado": true,
    "percentil": 0.205,
    "fama": 0.3,
-   "peso": 0.196,
-   "pontos": 4
+   "peso": 0.162,
+   "pontos": 3
   },
   {
    "resposta": "Satélite",
@@ -125,21 +149,8 @@
    "ajustado": true,
    "percentil": 0.273,
    "fama": 0.3,
-   "peso": 0.196,
-   "pontos": 4
-  },
-  {
-   "resposta": "Arco-íris",
-   "apelidos": [
-    "arco-iris"
-   ],
-   "sem_dado": false,
-   "icf": 11.103,
-   "ajustado": true,
-   "percentil": 0.341,
-   "fama": 0.35,
-   "peso": 0.231,
-   "pontos": 5
+   "peso": 0.17,
+   "pontos": 3
   },
   {
    "resposta": "Aurora",
@@ -152,58 +163,8 @@
    "ajustado": true,
    "percentil": 0.432,
    "fama": 0.35,
-   "peso": 0.231,
-   "pontos": 5
-  },
-  {
-   "resposta": "Galáxia",
-   "apelidos": [
-    "galáxias"
-   ],
-   "sem_dado": false,
-   "icf": 11.861,
-   "ajustado": true,
-   "percentil": 0.5,
-   "fama": 0.35,
-   "peso": 0.231,
-   "pontos": 5
-  },
-  {
-   "resposta": "Marte",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.023,
-   "ajustado": true,
-   "percentil": 0.295,
-   "fama": 0.35,
-   "peso": 0.231,
-   "pontos": 5
-  },
-  {
-   "resposta": "Balão",
-   "apelidos": [
-    "balão junino"
-   ],
-   "sem_dado": false,
-   "icf": 11.594,
-   "ajustado": true,
-   "percentil": 0.455,
-   "fama": 0.4,
-   "peso": 0.289,
-   "pontos": 8
-  },
-  {
-   "resposta": "Constelação",
-   "apelidos": [
-    "constelações"
-   ],
-   "sem_dado": false,
-   "icf": 12.446,
-   "ajustado": true,
-   "percentil": 0.682,
-   "fama": 0.4,
-   "peso": 0.289,
-   "pontos": 8
+   "peso": 0.194,
+   "pontos": 4
   },
   {
    "resposta": "Estação Espacial Internacional",
@@ -216,8 +177,34 @@
    "ajustado": true,
    "percentil": 0.068,
    "fama": 0.4,
-   "peso": 0.289,
-   "pontos": 8
+   "peso": 0.209,
+   "pontos": 4
+  },
+  {
+   "resposta": "Galáxia",
+   "apelidos": [
+    "galáxias"
+   ],
+   "sem_dado": false,
+   "icf": 11.861,
+   "ajustado": true,
+   "percentil": 0.5,
+   "fama": 0.35,
+   "peso": 0.201,
+   "pontos": 4
+  },
+  {
+   "resposta": "Balão",
+   "apelidos": [
+    "balão junino"
+   ],
+   "sem_dado": false,
+   "icf": 11.594,
+   "ajustado": true,
+   "percentil": 0.455,
+   "fama": 0.4,
+   "peso": 0.226,
+   "pontos": 5
   },
   {
    "resposta": "Via Láctea",
@@ -229,43 +216,34 @@
    "ajustado": true,
    "percentil": 0.25,
    "fama": 0.4,
-   "peso": 0.289,
-   "pontos": 8
+   "peso": 0.217,
+   "pontos": 5
   },
   {
-   "resposta": "Foguete",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.517,
-   "ajustado": true,
-   "percentil": 0.705,
-   "fama": 0.45,
-   "peso": 0.362,
-   "pontos": 13
-  },
-  {
-   "resposta": "Helicóptero",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.714,
-   "ajustado": true,
-   "percentil": 0.477,
-   "fama": 0.45,
-   "peso": 0.362,
-   "pontos": 13
-  },
-  {
-   "resposta": "Júpiter",
+   "resposta": "Constelação",
    "apelidos": [
-    "Jupiter"
+    "constelações"
    ],
    "sem_dado": false,
-   "icf": 12.314,
+   "icf": 12.446,
    "ajustado": true,
-   "percentil": 0.591,
+   "percentil": 0.682,
+   "fama": 0.4,
+   "peso": 0.243,
+   "pontos": 6
+  },
+  {
+   "resposta": "Três Marias",
+   "apelidos": [
+    "Cinturão de Órion"
+   ],
+   "sem_dado": false,
+   "icf": 10.291,
+   "ajustado": true,
+   "percentil": 0.182,
    "fama": 0.45,
-   "peso": 0.362,
-   "pontos": 13
+   "peso": 0.26,
+   "pontos": 7
   },
   {
    "resposta": "Lanterna chinesa",
@@ -278,21 +256,32 @@
    "ajustado": true,
    "percentil": 0.364,
    "fama": 0.45,
-   "peso": 0.362,
-   "pontos": 13
+   "peso": 0.277,
+   "pontos": 8
   },
   {
-   "resposta": "Três Marias",
+   "resposta": "Helicóptero",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.714,
+   "ajustado": true,
+   "percentil": 0.477,
+   "fama": 0.45,
+   "peso": 0.294,
+   "pontos": 9
+  },
+  {
+   "resposta": "Júpiter",
    "apelidos": [
-    "Cinturão de Órion"
+    "Jupiter"
    ],
    "sem_dado": false,
-   "icf": 10.291,
+   "icf": 12.314,
    "ajustado": true,
-   "percentil": 0.182,
+   "percentil": 0.591,
    "fama": 0.45,
-   "peso": 0.362,
-   "pontos": 13
+   "peso": 0.311,
+   "pontos": 10
   },
   {
    "resposta": "Vênus",
@@ -306,8 +295,19 @@
    "ajustado": true,
    "percentil": 0.636,
    "fama": 0.45,
-   "peso": 0.362,
-   "pontos": 13
+   "peso": 0.328,
+   "pontos": 11
+  },
+  {
+   "resposta": "Foguete",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.517,
+   "ajustado": true,
+   "percentil": 0.705,
+   "fama": 0.45,
+   "peso": 0.345,
+   "pontos": 12
   },
   {
    "resposta": "Drone",
@@ -319,8 +319,8 @@
    "ajustado": true,
    "percentil": 0.773,
    "fama": 0.48,
-   "peso": 0.412,
-   "pontos": 17
+   "peso": 0.362,
+   "pontos": 13
   },
   {
    "resposta": "Saturno",
@@ -330,8 +330,8 @@
    "ajustado": true,
    "percentil": 0.659,
    "fama": 0.5,
-   "peso": 0.427,
-   "pontos": 18
+   "peso": 0.379,
+   "pontos": 14
   },
   {
    "resposta": "Cruzeiro do Sul",
@@ -341,8 +341,8 @@
    "ajustado": true,
    "percentil": 0.023,
    "fama": 0.55,
-   "peso": 0.45,
-   "pontos": 20
+   "peso": 0.396,
+   "pontos": 16
   },
   {
    "resposta": "Estrela Polar",
@@ -354,8 +354,8 @@
    "ajustado": true,
    "percentil": 0.318,
    "fama": 0.55,
-   "peso": 0.45,
-   "pontos": 20
+   "peso": 0.413,
+   "pontos": 17
   },
   {
    "resposta": "Mercúrio",
@@ -365,8 +365,8 @@
    "ajustado": true,
    "percentil": 0.568,
    "fama": 0.6,
-   "peso": 0.497,
-   "pontos": 25
+   "peso": 0.43,
+   "pontos": 18
   },
   {
    "resposta": "Nebulosa",
@@ -376,8 +376,8 @@
    "ajustado": true,
    "percentil": 0.818,
    "fama": 0.6,
-   "peso": 0.497,
-   "pontos": 25
+   "peso": 0.447,
+   "pontos": 20
   },
   {
    "resposta": "Starlink",
@@ -389,8 +389,8 @@
    "ajustado": true,
    "percentil": 0.386,
    "fama": 0.62,
-   "peso": 0.532,
-   "pontos": 28
+   "peso": 0.473,
+   "pontos": 22
   },
   {
    "resposta": "OVNI",
@@ -403,8 +403,8 @@
    "ajustado": false,
    "percentil": 0.727,
    "fama": 0.643,
-   "peso": 0.556,
-   "pontos": 31
+   "peso": 0.5,
+   "pontos": 25
   },
   {
    "resposta": "Fogo-de-santelmo",
@@ -416,8 +416,8 @@
    "ajustado": false,
    "percentil": 0.75,
    "fama": 0.661,
-   "peso": 0.58,
-   "pontos": 34
+   "peso": 0.527,
+   "pontos": 28
   },
   {
    "resposta": "Halo solar",
@@ -429,8 +429,8 @@
    "ajustado": true,
    "percentil": 0.409,
    "fama": 0.7,
-   "peso": 0.639,
-   "pontos": 41
+   "peso": 0.58,
+   "pontos": 34
   },
   {
    "resposta": "Plêiades",
@@ -443,8 +443,8 @@
    "ajustado": true,
    "percentil": 0.909,
    "fama": 0.7,
-   "peso": 0.639,
-   "pontos": 41
+   "peso": 0.607,
+   "pontos": 37
   },
   {
    "resposta": "Sírius",
@@ -456,8 +456,8 @@
    "ajustado": true,
    "percentil": 0.989,
    "fama": 0.7,
-   "peso": 0.639,
-   "pontos": 41
+   "peso": 0.634,
+   "pontos": 40
   },
   {
    "resposta": "Supernova",
@@ -467,8 +467,19 @@
    "ajustado": false,
    "percentil": 0.841,
    "fama": 0.739,
-   "peso": 0.698,
-   "pontos": 49
+   "peso": 0.661,
+   "pontos": 44
+  },
+  {
+   "resposta": "Betelgeuse",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.989,
+   "fama": 0.75,
+   "peso": 0.688,
+   "pontos": 47
   },
   {
    "resposta": "Vaga-lume",
@@ -485,17 +496,6 @@
    "pontos": 50
   },
   {
-   "resposta": "Betelgeuse",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.989,
-   "fama": 0.75,
-   "peso": 0.729,
-   "pontos": 53
-  },
-  {
    "resposta": "Sinalizador",
    "apelidos": [],
    "sem_dado": false,
@@ -503,8 +503,8 @@
    "ajustado": false,
    "percentil": 0.864,
    "fama": 0.756,
-   "peso": 0.766,
-   "pontos": 59
+   "peso": 0.72,
+   "pontos": 52
   },
   {
    "resposta": "Holofote",
@@ -516,8 +516,8 @@
    "ajustado": false,
    "percentil": 0.886,
    "fama": 0.774,
-   "peso": 0.803,
-   "pontos": 64
+   "peso": 0.766,
+   "pontos": 59
   },
   {
    "resposta": "Bólido",
@@ -529,8 +529,8 @@
    "ajustado": false,
    "percentil": 0.932,
    "fama": 0.819,
-   "peso": 0.84,
-   "pontos": 71
+   "peso": 0.812,
+   "pontos": 66
   },
   {
    "resposta": "Nuvem noctilucente",
@@ -540,8 +540,8 @@
    "ajustado": false,
    "percentil": 0.955,
    "fama": 0.838,
-   "peso": 0.876,
-   "pontos": 77
+   "peso": 0.858,
+   "pontos": 74
   },
   {
    "resposta": "Luz zodiacal",
@@ -551,8 +551,8 @@
    "ajustado": true,
    "percentil": 0.523,
    "fama": 0.88,
-   "peso": 0.913,
-   "pontos": 83
+   "peso": 0.904,
+   "pontos": 82
   },
   {
    "resposta": "Sprite",
