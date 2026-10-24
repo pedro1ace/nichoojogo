@@ -15,11 +15,11 @@ Como funciona hoje no protótipo:
 
 - Até 7 perguntas por dia, as mesmas para todo mundo, com **25 segundos** cada (o relógio começa depois de uma contagem de 3).
 - A viagem começa na Terra: uma descida curta, passando pela Lua, chega ao "0". Daí, cada ponto
-  vale **100 anos-luz** de verdade (260 pontos = 26.000 AL, o centro da galáxia). As raras caem pesadas e rápidas,
+  vale **50 anos-luz** de verdade: só uma partida quase toda rara (uns 520 pontos) chega aos 26.000 AL do centro da galáxia. As raras caem pesadas e rápidas,
   as óbvias planam devagar, e a supernova carrega, segura e mergulha em velocidade de dobra. Um tardígrado (o mascote) acompanha.
 - No caminho, marcos nas distâncias reais: Alfa Centauri, Sirius, Vega, Plêiades, Betelgeuse, Nebulosa de Órion,
   Gaia BH1, Nebulosa do Anel, Nebulosa da Lagoa, Caranguejo, Pilares da Criação, Eta Carinae, Ômega Centauri,
-  Aglomerado de Hércules e, no fim, Sagitário A* (o fundo vira negativo). As nebulosas e aglomerados ficam no
+  Aglomerado de Hércules e, no fim, Sagitário A* (o fundo vira um horizonte de eventos laranja e preto). As nebulosas e aglomerados ficam no
   fundo enquanto você responde. Também: curiosidades nas laterais, régua em anos-luz e linhas de cada faixa.
 - Faixas: ÓBVIA (8 a 15 pontos), COMUM (18 a 34), INCOMUM (35 a 58), RARA (60 a 90) e a **supernova** (100),
   a resposta secreta de cada pergunta, que vale o dobro.

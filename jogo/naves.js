@@ -342,5 +342,23 @@ function criarNaves() {
     disco(true);
   }
 
+  // Bordas macias: as imagens de fundo somem aos poucos até a borda, sem retângulo aparecendo
+  // quando a cena clareia. "fx" e "fy" dizem quanto de cada lado vira degradê.
+  const desbotar = (t, fx, fy) => {
+    const g = t.getContext("2d");
+    g.save();
+    g.globalCompositeOperation = "destination-in";
+    const h = g.createLinearGradient(0, 0, t.width, 0);
+    h.addColorStop(0, "rgba(0,0,0,0)"); h.addColorStop(fx, "#000"); h.addColorStop(1 - fx, "#000"); h.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = h; g.fillRect(0, 0, t.width, t.height);
+    const v = g.createLinearGradient(0, 0, 0, t.height);
+    v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(fy, "#000"); v.addColorStop(1 - fy, "#000"); v.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = v; g.fillRect(0, 0, t.width, t.height);
+    g.restore();
+  };
+  desbotar(pilares, 0.22, 0.2);
+  desbotar(orion, 0.2, 0.2);
+  desbotar(buraco, 0.2, 0.08);
+
   return { satelite, iss, lua, planeta, cometa, voyager, pilares, orion, buraco };
 }

@@ -7,10 +7,10 @@
 //     brilho e vinheta), para o texto ficar nítido.
 //
 // Unidades: a cena anda em "u" (unidade interna, PX_POR_AL pixels cada). O jogador vê
-// anos-luz de verdade: 1 ponto = 100 AL, então 260 pontos = 26.000 AL, o centro da galáxia.
+// anos-luz de verdade: 1 ponto = 50 AL, então só 520 pontos (quase tudo raro) chegam aos 26.000 AL do centro da galáxia.
 // O começo da viagem (u de 0 a AL_INICIAL) é a saída do Sistema Solar, na descida inicial.
 
-const AL_POR_PONTO = 100; // anos-luz de verdade por ponto
+const AL_POR_PONTO = 50; // anos-luz de verdade por ponto
 const U_POR_PONTO = 32; // unidades da cena por ponto: 16 px de queda por ponto
 const AL_POR_U = AL_POR_PONTO / U_POR_PONTO;
 // Quanto cada resposta faz viajar, em unidades da cena (proporcional aos pontos:
@@ -24,7 +24,7 @@ const AL_INICIAL = 90;
 // posição na cena (u) de algo a "al" anos-luz de verdade, e o contrário
 const U = (al) => AL_INICIAL + al / AL_POR_U;
 const anosLuz = (u) => Math.max(0, Math.round((u - AL_INICIAL) * AL_POR_U));
-// Último estágio (negativo + Sagitário A*, o buraco negro do centro da galáxia)
+// Último estágio (horizonte de eventos laranja e preto + Sagitário A*, o buraco negro do centro da galáxia)
 const AL_SAGITARIO = 26000;
 const PX_POR_AL = 0.5; // pixels da cena por unidade (u)
 const DURACAO_DESCIDA = 2400; // ms, referência (a queda de cada resposta tem a sua duração)
@@ -1011,7 +1011,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Zonas do fundo por profundidade.
   // A partir de ~5.000 AL os Pilares da Criação viram o pano de fundo da viagem:
   // grandes, no meio, misturados ao céu (somam luz, não cobrem), e sobem bem devagar.
-  // Último estágio: depois de 12.000 AL (contando da partida) tudo vira negativo
+  // Último estágio: em Sagitário A* o fundo vira horizonte de eventos (laranja e preto)
   // e um buraco negro enorme ocupa o fundo.
   const AL_NEGATIVO = U(AL_SAGITARIO);
   let negativo = false;
@@ -1031,59 +1031,56 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
   }
   function desenharBuracoNegro() {
-    const surge = Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 1400)) / 1400));
+    const surge = Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 2400)) / 2400));
     if (surge <= 0) return;
     const img = naves.buraco;
     const W = innerWidth, H = innerHeight;
-    const largo = Math.max(W * 1.1, H * 1.6);
+    // cabe entre as paredes (as bordas da imagem já somem em degradê)
+    const largo = Math.min(W * 0.82, H * 1.5);
     const alto = largo * (img.height / img.width);
     tx.save();
     tx.globalAlpha = surge;
     tx.imageSmoothingEnabled = true;
-    // o cenário fica em negativo, mas o buraco negro continua preto com o disco laranja:
-    // ele é desenhado já invertido, e a inversão do fundo desfaz
-    if (negativo) tx.filter = "invert(1) hue-rotate(180deg)";
     tx.translate(W / 2, H * 0.5);
     tx.rotate(-0.12 + Math.sin(tempo * 0.05) * 0.02);
     tx.drawImage(img, -largo / 2, -alto / 2, largo, alto);
     tx.restore();
   }
 
-  // Estágio negativo: inverte só o cenário já desenhado (uma passada por tela, por quadro).
-  // O tardígrado, as caixas, as linhas e as cores das raridades vêm depois e ficam normais.
+  // Horizonte de eventos: chegando perto de Sagitário A*, o cenário vai virando
+  // laranja e preto (só o fundo; o tardígrado, as caixas, as linhas e as raridades
+  // vêm depois e mantêm as cores). Uma passada por tela, por quadro.
   const temFiltro = "filter" in ctx;
-  function inverterFundo() {
+  const FILTRO_HORIZONTE = "grayscale(1) sepia(1) saturate(4.5) hue-rotate(-26deg) contrast(1.2) brightness(0.9)";
+  function tingirHorizonte(k) {
+    if (!temFiltro) return;
     for (const c of [ctx, tx]) {
       c.save();
       c.setTransform(1, 0, 0, 1, 0, 0);
-      if (temFiltro) {
-        c.filter = "invert(1) hue-rotate(180deg)";
-        c.globalCompositeOperation = "copy";
-        c.drawImage(c.canvas, 0, 0);
-      } else {
-        c.globalCompositeOperation = "difference";
-        c.fillStyle = "#fff";
-        c.fillRect(0, 0, c.canvas.width, c.canvas.height);
-      }
+      c.filter = FILTRO_HORIZONTE;
+      c.globalAlpha = k;
+      c.globalCompositeOperation = k >= 0.999 ? "copy" : "source-atop";
+      c.drawImage(c.canvas, 0, 0);
       c.restore();
     }
   }
+  const forcaHorizonte = () => Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 900)) / 900));
 
   // Paisagens do fundo: cada uma aparece quando você chega perto do marco dela e anda
   // bem mais devagar que a câmera (paralaxe), então fica na tela enquanto você responde
   // em vez de passar reto. Somam luz ao céu (não cobrem).
   const PAISAGENS = [
-    { al: U(1344), antes: 360, depois: 500, img: "orion", alfa: 0.95, x: 0.56, tam: 1 },
-    { al: U(4100), antes: 460, depois: 500, img: "orion", alfa: 0.8, x: 0.42, tam: 0.9, filtro: "hue-rotate(-38deg) saturate(1.3)", espelho: true },
-    { al: U(6500), antes: 200, depois: 160, img: "orion", alfa: 0.75, x: 0.24, tam: 0.38, filtro: "hue-rotate(150deg) saturate(1.6)", giro: 1.2 },
-    { al: U(7000), antes: 520, depois: 860, img: "pilares", alfa: 0.5, x: 0.5, tam: 1.2 },
-    { al: U(17000), antes: 860, depois: 860, aglomerado: { n: 420, raio: 90, cor: "255,240,215" }, x: 0.5 },
+    { al: U(1344), antes: 720, depois: 1000, img: "orion", alfa: 0.95, x: 0.56, tam: 1 },
+    { al: U(4100), antes: 920, depois: 1000, img: "orion", alfa: 0.8, x: 0.42, tam: 0.9, filtro: "hue-rotate(-38deg) saturate(1.3)", espelho: true },
+    { al: U(6500), antes: 400, depois: 320, img: "orion", alfa: 0.75, x: 0.24, tam: 0.38, filtro: "hue-rotate(150deg) saturate(1.6)", giro: 1.2 },
+    { al: U(7000), antes: 1040, depois: 1720, img: "pilares", alfa: 0.5, x: 0.5, tam: 1.2 },
+    { al: U(17000), antes: 1720, depois: 1720, aglomerado: { n: 420, raio: 90, cor: "255,240,215" }, x: 0.5 },
   ];
   function desenharPaisagem(p, al, W, H) {
     const d = al - p.al;
     const surge = d < 0 ? Math.min(1, Math.max(0, (d + p.antes) / (p.antes * 0.6))) : Math.min(1, Math.max(0, (p.depois - d) / (p.depois * 0.5)));
     if (surge <= 0) return;
-    const y = H * 0.5 - d * PX_POR_AL * escala * 0.12; // anda a 12% da velocidade da câmera
+    const y = H * 0.5 - d * PX_POR_AL * escala * 0.07; // anda a 7% da velocidade da câmera
     if (p.aglomerado) {
       tx.save();
       tx.globalAlpha = surge;
@@ -1131,7 +1128,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   // Espaço profundo: tudo fica na penumbra, menos a luz em volta da caixa que afunda.
   function desenharPenumbra() {
-    // no estágio negativo a penumbra sai: ali a tela é clara e o buraco negro é o escuro
+    // no horizonte de eventos a penumbra sai: o laranja e preto já fazem o clima
     const k = negativo ? 0 : Math.min(1, Math.max(0, (camera.atual - U(9000)) / (U(12000) - U(9000)))) * 0.65;
     if (k <= 0.01) return;
     const W = innerWidth, H = innerHeight;
@@ -1411,7 +1408,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.fillStyle = brilho;
       tx.fillRect(fx - 160, fy - 160, 320, 320);
     }
-    // no estágio negativo a vinheta fica no meio (o fundo é claro e o buraco negro é o escuro)
+    // no horizonte de eventos a vinheta fica no meio, em volta do buraco negro
     const vx = negativo ? W / 2 : fx;
     const vinheta = tx.createRadialGradient(vx, H * 0.45, Math.min(W, H) * (negativo ? 0.45 : 0.3), vx, H * 0.45, Math.max(W, H) * 0.8);
     vinheta.addColorStop(0, "rgba(0, 0, 10, 0)");
@@ -1735,7 +1732,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     desenharObjetos();
     desenharMarcosPixel();
     desenharPenumbra();
-    if (negativo) inverterFundo();
+    const kh = forcaHorizonte();
+    if (kh > 0) tingirHorizonte(kh);
     const foguete = desenharFoguete();
     desenharTextos(agora);
     if (quadro % 6 === 0) {
