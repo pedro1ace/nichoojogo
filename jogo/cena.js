@@ -1014,13 +1014,33 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.save();
     tx.globalAlpha = surge;
     tx.imageSmoothingEnabled = true;
-    // o cenário inteiro fica em negativo, mas o buraco negro continua preto com o disco laranja:
-    // ele é desenhado já invertido, e a inversão da tela desfaz
+    // o cenário fica em negativo, mas o buraco negro continua preto com o disco laranja:
+    // ele é desenhado já invertido, e a inversão do fundo desfaz
     if (negativo) tx.filter = "invert(1) hue-rotate(180deg)";
     tx.translate(W / 2, H * 0.5);
     tx.rotate(-0.12 + Math.sin(tempo * 0.05) * 0.02);
     tx.drawImage(img, -largo / 2, -alto / 2, largo, alto);
     tx.restore();
+  }
+
+  // Estágio negativo: inverte só o cenário já desenhado (uma passada por tela, por quadro).
+  // O tardígrado, as caixas, as linhas e as cores das raridades vêm depois e ficam normais.
+  const temFiltro = "filter" in ctx;
+  function inverterFundo() {
+    for (const c of [ctx, tx]) {
+      c.save();
+      c.setTransform(1, 0, 0, 1, 0, 0);
+      if (temFiltro) {
+        c.filter = "invert(1) hue-rotate(180deg)";
+        c.globalCompositeOperation = "copy";
+        c.drawImage(c.canvas, 0, 0);
+      } else {
+        c.globalCompositeOperation = "difference";
+        c.fillStyle = "#fff";
+        c.fillRect(0, 0, c.canvas.width, c.canvas.height);
+      }
+      c.restore();
+    }
   }
 
   function desenharPanoDeFundo() {
@@ -1306,11 +1326,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.fillStyle = brilho;
       tx.fillRect(fx - 160, fy - 160, 320, 320);
     }
-    // no estágio negativo a vinheta fica no meio e é clara (a inversão da tela a deixa escura)
+    // no estágio negativo a vinheta fica no meio (o fundo é claro e o buraco negro é o escuro)
     const vx = negativo ? W / 2 : fx;
     const vinheta = tx.createRadialGradient(vx, H * 0.45, Math.min(W, H) * (negativo ? 0.45 : 0.3), vx, H * 0.45, Math.max(W, H) * 0.8);
-    vinheta.addColorStop(0, negativo ? "rgba(255, 255, 250, 0)" : "rgba(0, 0, 10, 0)");
-    vinheta.addColorStop(1, negativo ? "rgba(255, 255, 250, 0.35)" : `rgba(0, 0, 10, ${0.25 + 0.5 * escuro})`);
+    vinheta.addColorStop(0, "rgba(0, 0, 10, 0)");
+    vinheta.addColorStop(1, negativo ? "rgba(0, 0, 10, 0.3)" : `rgba(0, 0, 10, ${0.25 + 0.5 * escuro})`);
     tx.fillStyle = vinheta;
     tx.fillRect(0, 0, W, H);
 
@@ -1625,6 +1645,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     desenharObjetos();
     desenharMarcosPixel();
     desenharPenumbra();
+    if (negativo) inverterFundo();
     const foguete = desenharFoguete();
     desenharTextos(agora);
     if (quadro % 6 === 0) {
