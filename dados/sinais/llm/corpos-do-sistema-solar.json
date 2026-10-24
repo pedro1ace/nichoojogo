@@ -1,0 +1,728 @@
+{
+ "modelo": "claude (estimado na conversa do agente, sem API)",
+ "amostras": 1,
+ "pergunta": "Cite um planeta, lua, planeta anão, asteroide ou cometa do Sistema Solar",
+ "itens": [
+  {
+   "resposta": "Terra",
+   "respostas_em_1000": 180.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Marte",
+   "respostas_em_1000": 180.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Lua",
+   "respostas_em_1000": 60.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Júpiter",
+   "respostas_em_1000": 110.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Saturno",
+   "respostas_em_1000": 90.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vênus",
+   "respostas_em_1000": 60.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mercúrio",
+   "respostas_em_1000": 40.0,
+   "dispersao": 0,
+   "conhecem_pct": 99.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Plutão",
+   "respostas_em_1000": 50.0,
+   "dispersao": 0,
+   "conhecem_pct": 99.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Netuno",
+   "respostas_em_1000": 35.0,
+   "dispersao": 0,
+   "conhecem_pct": 99.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Urano",
+   "respostas_em_1000": 30.0,
+   "dispersao": 0,
+   "conhecem_pct": 99.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cometa Halley",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 92.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Europa",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 55.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Titã",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Io",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ganimedes",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ceres",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fobos",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Deimos",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Caronte",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Calisto",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Encélado",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tritão",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Éris",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vesta",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Miranda",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 12.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Titânia",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Oberon",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mimas",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ariel",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Reia",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tétis",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dione",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Jápeto",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hale-Bopp",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Shoemaker-Levy 9",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Apófis",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bennu",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Haumea",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Makemake",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Sedna",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 12.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hipérion",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Febe",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Nix",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 6.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hidra",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Umbriel",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Palas",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Juno",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Eros",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 12.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ida",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gaspra",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Itokawa",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ryugu",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 6.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Psique",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Amalteia",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Proteu",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Nereida",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Quaoar",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Orcus",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 4.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gonggong",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 2.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Arrokoth",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Churyumov-Gerasimenko",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Encke",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tempel 1",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Wild 2",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Didymos",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 6.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dimorphos",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Neowise",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pã",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dáctilo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Kerberos",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Estige",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Metis",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  }
+ ],
+ "faltando": []
+}
