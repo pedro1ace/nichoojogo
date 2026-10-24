@@ -33,6 +33,7 @@ Seguimos o mesmo método do Krillion:
         Pedir "de 0 a 100, quantos brasileiros conhecem isto?" e gravar em `dados/ajustes/`.
 - [ ] **Fila do modo aberto**: respostas que a lista não conhecia são julgadas em lote com `scripts/fila.py`
       e as aceitas entram na lista. Falta o lugar grátis para o jogo guardar o que foi digitado (Supabase ou Cloudflare).
+- [ ] **Faixa "esperta"** (o "Too Clever" do Krillion): resposta fora da caixa que ainda vale, com festa própria.
 - [ ] **Supernova pela graça, não só pela raridade**: algo que poucos acertam, mas que alguns acertam de verdade.
 - [ ] Meta: 50 perguntas revisadas antes do lançamento, depois umas 7 novas por semana.
 

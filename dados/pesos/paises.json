@@ -9,19 +9,8 @@
    "sem_dado": false,
    "icf": 6.91,
    "ajustado": true,
-   "percentil": 0.005,
+   "percentil": 0.004,
    "fama": 0.01,
-   "pontos": 8,
-   "peso": 0.283
-  },
-  {
-   "resposta": "Estados Unidos da América",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 8.918,
-   "ajustado": true,
-   "percentil": 0.027,
-   "fama": 0.02,
    "pontos": 8,
    "peso": 0.283
   },
@@ -31,21 +20,25 @@
    "sem_dado": false,
    "icf": 8.496,
    "ajustado": true,
-   "percentil": 0.023,
+   "percentil": 0.025,
    "fama": 0.02,
-   "pontos": 8,
-   "peso": 0.283
+   "pontos": 10,
+   "peso": 0.316
   },
   {
-   "resposta": "Alemanha",
-   "apelidos": [],
+   "resposta": "Estados Unidos da América",
+   "apelidos": [
+    "estados unidos",
+    "eua",
+    "usa"
+   ],
    "sem_dado": false,
-   "icf": 9.701,
+   "icf": 8.918,
    "ajustado": true,
-   "percentil": 0.086,
-   "fama": 0.03,
-   "pontos": 9,
-   "peso": 0.3
+   "percentil": 0.029,
+   "fama": 0.02,
+   "pontos": 12,
+   "peso": 0.346
   },
   {
    "resposta": "Argentina",
@@ -53,21 +46,10 @@
    "sem_dado": false,
    "icf": 10.03,
    "ajustado": true,
-   "percentil": 0.127,
+   "percentil": 0.124,
    "fama": 0.02,
-   "pontos": 9,
-   "peso": 0.3
-  },
-  {
-   "resposta": "China",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.647,
-   "ajustado": true,
-   "percentil": 0.077,
-   "fama": 0.03,
-   "pontos": 9,
-   "peso": 0.3
+   "pontos": 13,
+   "peso": 0.361
   },
   {
    "resposta": "França",
@@ -75,10 +57,45 @@
    "sem_dado": false,
    "icf": 9.475,
    "ajustado": true,
-   "percentil": 0.054,
+   "percentil": 0.058,
    "fama": 0.03,
-   "pontos": 9,
-   "peso": 0.3
+   "pontos": 15,
+   "peso": 0.387
+  },
+  {
+   "resposta": "China",
+   "apelidos": [
+    "república popular da china"
+   ],
+   "sem_dado": false,
+   "icf": 9.647,
+   "ajustado": true,
+   "percentil": 0.079,
+   "fama": 0.03,
+   "pontos": 18,
+   "peso": 0.424
+  },
+  {
+   "resposta": "Alemanha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.701,
+   "ajustado": true,
+   "percentil": 0.087,
+   "fama": 0.03,
+   "pontos": 19,
+   "peso": 0.436
+  },
+  {
+   "resposta": "Japão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.039,
+   "ajustado": true,
+   "percentil": 0.129,
+   "fama": 0.03,
+   "pontos": 21,
+   "peso": 0.458
   },
   {
    "resposta": "Espanha",
@@ -88,19 +105,8 @@
    "ajustado": true,
    "percentil": 0.1,
    "fama": 0.04,
-   "pontos": 10,
-   "peso": 0.316
-  },
-  {
-   "resposta": "Inglaterra",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.162,
-   "ajustado": true,
-   "percentil": 0.136,
-   "fama": 0.05,
-   "pontos": 10,
-   "peso": 0.316
+   "pontos": 22,
+   "peso": 0.469
   },
   {
    "resposta": "Itália",
@@ -110,19 +116,19 @@
    "ajustado": true,
    "percentil": 0.104,
    "fama": 0.04,
-   "pontos": 10,
-   "peso": 0.316
+   "pontos": 24,
+   "peso": 0.49
   },
   {
-   "resposta": "Japão",
+   "resposta": "Inglaterra",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 10.039,
+   "icf": 10.162,
    "ajustado": true,
-   "percentil": 0.131,
-   "fama": 0.03,
-   "pontos": 10,
-   "peso": 0.316
+   "percentil": 0.133,
+   "fama": 0.05,
+   "pontos": 25,
+   "peso": 0.5
   },
   {
    "resposta": "México",
@@ -130,10 +136,23 @@
    "sem_dado": false,
    "icf": 10.442,
    "ajustado": true,
-   "percentil": 0.14,
+   "percentil": 0.149,
    "fama": 0.05,
-   "pontos": 10,
-   "peso": 0.316
+   "pontos": 27,
+   "peso": 0.52
+  },
+  {
+   "resposta": "Rússia",
+   "apelidos": [
+    "federação russa"
+   ],
+   "sem_dado": false,
+   "icf": 10.463,
+   "ajustado": true,
+   "percentil": 0.154,
+   "fama": 0.07,
+   "pontos": 28,
+   "peso": 0.529
   },
   {
    "resposta": "Canadá",
@@ -141,10 +160,10 @@
    "sem_dado": false,
    "icf": 10.574,
    "ajustado": true,
-   "percentil": 0.163,
+   "percentil": 0.17,
    "fama": 0.07,
-   "pontos": 11,
-   "peso": 0.332
+   "pontos": 30,
+   "peso": 0.548
   },
   {
    "resposta": "Chile",
@@ -152,21 +171,10 @@
    "sem_dado": false,
    "icf": 10.711,
    "ajustado": true,
-   "percentil": 0.172,
+   "percentil": 0.178,
    "fama": 0.09,
-   "pontos": 11,
-   "peso": 0.332
-  },
-  {
-   "resposta": "Rússia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.463,
-   "ajustado": true,
-   "percentil": 0.145,
-   "fama": 0.07,
-   "pontos": 11,
-   "peso": 0.332
+   "pontos": 31,
+   "peso": 0.557
   },
   {
    "resposta": "Uruguai",
@@ -174,21 +182,10 @@
    "sem_dado": false,
    "icf": 11.174,
    "ajustado": true,
-   "percentil": 0.244,
+   "percentil": 0.253,
    "fama": 0.09,
-   "pontos": 11,
-   "peso": 0.332
-  },
-  {
-   "resposta": "Colômbia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.194,
-   "ajustado": true,
-   "percentil": 0.249,
-   "fama": 0.11,
-   "pontos": 12,
-   "peso": 0.346
+   "pontos": 33,
+   "peso": 0.574
   },
   {
    "resposta": "Paraguai",
@@ -196,10 +193,10 @@
    "sem_dado": false,
    "icf": 11.239,
    "ajustado": true,
-   "percentil": 0.262,
+   "percentil": 0.27,
    "fama": 0.09,
-   "pontos": 12,
-   "peso": 0.346
+   "pontos": 34,
+   "peso": 0.583
   },
   {
    "resposta": "Peru",
@@ -207,10 +204,21 @@
    "sem_dado": false,
    "icf": 11.034,
    "ajustado": true,
-   "percentil": 0.217,
+   "percentil": 0.228,
    "fama": 0.11,
-   "pontos": 12,
-   "peso": 0.346
+   "pontos": 35,
+   "peso": 0.592
+  },
+  {
+   "resposta": "Colômbia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.194,
+   "ajustado": true,
+   "percentil": 0.257,
+   "fama": 0.11,
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Venezuela",
@@ -218,10 +226,10 @@
    "sem_dado": false,
    "icf": 11.046,
    "ajustado": true,
-   "percentil": 0.222,
+   "percentil": 0.232,
    "fama": 0.11,
-   "pontos": 12,
-   "peso": 0.346
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Índia",
@@ -229,10 +237,10 @@
    "sem_dado": false,
    "icf": 10.508,
    "ajustado": true,
-   "percentil": 0.154,
+   "percentil": 0.162,
    "fama": 0.13,
-   "pontos": 12,
-   "peso": 0.346
+   "pontos": 37,
+   "peso": 0.608
   },
   {
    "resposta": "Austrália",
@@ -240,10 +248,10 @@
    "sem_dado": false,
    "icf": 10.838,
    "ajustado": true,
-   "percentil": 0.186,
+   "percentil": 0.195,
    "fama": 0.13,
-   "pontos": 13,
-   "peso": 0.361
+   "pontos": 38,
+   "peso": 0.616
   },
   {
    "resposta": "Bolívia",
@@ -251,10 +259,10 @@
    "sem_dado": false,
    "icf": 11.63,
    "ajustado": true,
-   "percentil": 0.321,
+   "percentil": 0.328,
    "fama": 0.13,
-   "pontos": 13,
-   "peso": 0.361
+   "pontos": 38,
+   "peso": 0.616
   },
   {
    "resposta": "Coreia do Sul",
@@ -262,10 +270,10 @@
    "sem_dado": false,
    "icf": 9.73,
    "ajustado": true,
-   "percentil": 0.09,
+   "percentil": 0.091,
    "fama": 0.15,
-   "pontos": 13,
-   "peso": 0.361
+   "pontos": 39,
+   "peso": 0.624
   },
   {
    "resposta": "Cuba",
@@ -273,10 +281,10 @@
    "sem_dado": false,
    "icf": 10.867,
    "ajustado": true,
-   "percentil": 0.19,
+   "percentil": 0.199,
    "fama": 0.15,
-   "pontos": 13,
-   "peso": 0.361
+   "pontos": 40,
+   "peso": 0.632
   },
   {
    "resposta": "Egito",
@@ -284,10 +292,23 @@
    "sem_dado": false,
    "icf": 10.805,
    "ajustado": true,
-   "percentil": 0.176,
+   "percentil": 0.183,
    "fama": 0.15,
-   "pontos": 13,
-   "peso": 0.361
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Holanda",
+   "apelidos": [
+    "netherlands"
+   ],
+   "sem_dado": false,
+   "icf": 10.928,
+   "ajustado": true,
+   "percentil": 0.212,
+   "fama": 0.15,
+   "pontos": 41,
+   "peso": 0.64
   },
   {
    "resposta": "Grécia",
@@ -295,32 +316,10 @@
    "sem_dado": false,
    "icf": 10.834,
    "ajustado": true,
-   "percentil": 0.181,
+   "percentil": 0.191,
    "fama": 0.18,
-   "pontos": 14,
-   "peso": 0.374
-  },
-  {
-   "resposta": "Holanda",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.928,
-   "ajustado": true,
-   "percentil": 0.204,
-   "fama": 0.15,
-   "pontos": 14,
-   "peso": 0.374
-  },
-  {
-   "resposta": "Suíça",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.996,
-   "ajustado": true,
-   "percentil": 0.213,
-   "fama": 0.18,
-   "pontos": 14,
-   "peso": 0.374
+   "pontos": 42,
+   "peso": 0.648
   },
   {
    "resposta": "África do Sul",
@@ -328,10 +327,21 @@
    "sem_dado": false,
    "icf": 9.0,
    "ajustado": true,
-   "percentil": 0.036,
+   "percentil": 0.037,
    "fama": 0.18,
-   "pontos": 14,
-   "peso": 0.374
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Suíça",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.996,
+   "ajustado": true,
+   "percentil": 0.224,
+   "fama": 0.18,
+   "pontos": 43,
+   "peso": 0.656
   },
   {
    "resposta": "Angola",
@@ -339,10 +349,24 @@
    "sem_dado": false,
    "icf": 10.527,
    "ajustado": true,
-   "percentil": 0.158,
+   "percentil": 0.166,
    "fama": 0.21,
-   "pontos": 15,
-   "peso": 0.387
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Reino Unido",
+   "apelidos": [
+    "grã-bretanha",
+    "uk"
+   ],
+   "sem_dado": false,
+   "icf": 9.967,
+   "ajustado": true,
+   "percentil": 0.112,
+   "fama": 0.21,
+   "pontos": 44,
+   "peso": 0.663
   },
   {
    "resposta": "Equador",
@@ -350,21 +374,10 @@
    "sem_dado": false,
    "icf": 11.707,
    "ajustado": true,
-   "percentil": 0.339,
+   "percentil": 0.344,
    "fama": 0.21,
-   "pontos": 15,
-   "peso": 0.387
-  },
-  {
-   "resposta": "Reino Unido",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.967,
-   "ajustado": true,
-   "percentil": 0.113,
-   "fama": 0.21,
-   "pontos": 15,
-   "peso": 0.387
+   "pontos": 45,
+   "peso": 0.671
   },
   {
    "resposta": "Israel",
@@ -372,10 +385,10 @@
    "sem_dado": false,
    "icf": 9.909,
    "ajustado": true,
-   "percentil": 0.109,
+   "percentil": 0.108,
    "fama": 0.23,
-   "pontos": 18,
-   "peso": 0.424
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Ucrânia",
@@ -383,10 +396,10 @@
    "sem_dado": false,
    "icf": 11.894,
    "ajustado": true,
-   "percentil": 0.362,
+   "percentil": 0.365,
    "fama": 0.21,
-   "pontos": 18,
-   "peso": 0.424
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Coreia do Norte",
@@ -394,21 +407,10 @@
    "sem_dado": false,
    "icf": 9.973,
    "ajustado": true,
-   "percentil": 0.122,
+   "percentil": 0.12,
    "fama": 0.23,
-   "pontos": 19,
-   "peso": 0.436
-  },
-  {
-   "resposta": "Irlanda",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.429,
-   "ajustado": true,
-   "percentil": 0.285,
-   "fama": 0.26,
-   "pontos": 19,
-   "peso": 0.436
+   "pontos": 47,
+   "peso": 0.686
   },
   {
    "resposta": "Moçambique",
@@ -416,43 +418,36 @@
    "sem_dado": false,
    "icf": 11.195,
    "ajustado": true,
-   "percentil": 0.253,
+   "percentil": 0.261,
    "fama": 0.26,
-   "pontos": 19,
-   "peso": 0.436
+   "pontos": 47,
+   "peso": 0.686
   },
   {
    "resposta": "Turquia",
-   "apelidos": [],
+   "apelidos": [
+    "türkiye"
+   ],
    "sem_dado": false,
    "icf": 11.348,
    "ajustado": true,
-   "percentil": 0.281,
+   "percentil": 0.29,
    "fama": 0.26,
-   "pontos": 19,
-   "peso": 0.436
+   "pontos": 48,
+   "peso": 0.693
   },
   {
-   "resposta": "Bélgica",
-   "apelidos": [],
+   "resposta": "Irlanda",
+   "apelidos": [
+    "eire"
+   ],
    "sem_dado": false,
-   "icf": 11.535,
+   "icf": 11.429,
    "ajustado": true,
-   "percentil": 0.312,
+   "percentil": 0.295,
    "fama": 0.26,
-   "pontos": 20,
-   "peso": 0.447
-  },
-  {
-   "resposta": "Nova Zelândia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 7.472,
-   "ajustado": true,
-   "percentil": 0.009,
-   "fama": 0.29,
-   "pontos": 20,
-   "peso": 0.447
+   "pontos": 49,
+   "peso": 0.7
   },
   {
    "resposta": "Suécia",
@@ -460,10 +455,34 @@
    "sem_dado": false,
    "icf": 11.438,
    "ajustado": true,
-   "percentil": 0.294,
+   "percentil": 0.303,
    "fama": 0.26,
-   "pontos": 20,
-   "peso": 0.447
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Bélgica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.535,
+   "ajustado": true,
+   "percentil": 0.32,
+   "fama": 0.26,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Bósnia e Herzegovina",
+   "apelidos": [
+    "bósnia"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.62,
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Iraque",
@@ -471,21 +490,35 @@
    "sem_dado": false,
    "icf": 11.478,
    "ajustado": true,
-   "percentil": 0.299,
+   "percentil": 0.307,
    "fama": 0.29,
-   "pontos": 21,
-   "peso": 0.458
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Nova Zelândia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 7.472,
+   "ajustado": true,
+   "percentil": 0.008,
+   "fama": 0.29,
+   "pontos": 51,
+   "peso": 0.714
   },
   {
    "resposta": "Irã",
-   "apelidos": [],
+   "apelidos": [
+    "irão",
+    "pérsia"
+   ],
    "sem_dado": false,
    "icf": 11.498,
    "ajustado": true,
-   "percentil": 0.303,
+   "percentil": 0.311,
    "fama": 0.29,
-   "pontos": 21,
-   "peso": 0.458
+   "pontos": 52,
+   "peso": 0.721
   },
   {
    "resposta": "Marrocos",
@@ -495,8 +528,8 @@
    "ajustado": true,
    "percentil": 0.394,
    "fama": 0.29,
-   "pontos": 21,
-   "peso": 0.458
+   "pontos": 53,
+   "peso": 0.728
   },
   {
    "resposta": "Noruega",
@@ -504,32 +537,10 @@
    "sem_dado": false,
    "icf": 11.912,
    "ajustado": true,
-   "percentil": 0.376,
+   "percentil": 0.378,
    "fama": 0.29,
-   "pontos": 21,
-   "peso": 0.458
-  },
-  {
-   "resposta": "Costa Rica",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.742,
-   "ajustado": true,
-   "percentil": 0.095,
-   "fama": 0.32,
-   "pontos": 22,
-   "peso": 0.469
-  },
-  {
-   "resposta": "Dinamarca",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.874,
-   "ajustado": true,
-   "percentil": 0.353,
-   "fama": 0.32,
-   "pontos": 22,
-   "peso": 0.469
+   "pontos": 53,
+   "peso": 0.728
   },
   {
    "resposta": "Polônia",
@@ -539,30 +550,30 @@
    "ajustado": true,
    "percentil": 0.398,
    "fama": 0.29,
-   "pontos": 22,
-   "peso": 0.469
+   "pontos": 54,
+   "peso": 0.735
   },
   {
-   "resposta": "Escócia",
+   "resposta": "Costa Rica",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 11.985,
+   "icf": 9.742,
    "ajustado": true,
-   "percentil": 0.385,
+   "percentil": 0.095,
    "fama": 0.32,
-   "pontos": 23,
-   "peso": 0.48
+   "pontos": 55,
+   "peso": 0.742
   },
   {
-   "resposta": "Haiti",
+   "resposta": "Dinamarca",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 11.957,
+   "icf": 11.874,
    "ajustado": true,
-   "percentil": 0.38,
+   "percentil": 0.357,
    "fama": 0.32,
-   "pontos": 23,
-   "peso": 0.48
+   "pontos": 55,
+   "peso": 0.742
   },
   {
    "resposta": "Tailândia",
@@ -570,43 +581,32 @@
    "sem_dado": false,
    "icf": 11.896,
    "ajustado": true,
-   "percentil": 0.367,
+   "percentil": 0.369,
    "fama": 0.32,
-   "pontos": 23,
-   "peso": 0.48
+   "pontos": 56,
+   "peso": 0.748
   },
   {
-   "resposta": "Arábia Saudita",
+   "resposta": "Escócia",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.617,
+   "icf": 11.985,
    "ajustado": true,
-   "percentil": 0.697,
+   "percentil": 0.386,
    "fama": 0.32,
-   "pontos": 24,
-   "peso": 0.49
+   "pontos": 57,
+   "peso": 0.755
   },
   {
-   "resposta": "Cabo Verde",
+   "resposta": "Haiti",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 9.118,
+   "icf": 11.957,
    "ajustado": true,
-   "percentil": 0.041,
-   "fama": 0.35,
-   "pontos": 24,
-   "peso": 0.49
-  },
-  {
-   "resposta": "Jamaica",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.709,
-   "ajustado": true,
-   "percentil": 0.52,
+   "percentil": 0.382,
    "fama": 0.32,
-   "pontos": 24,
-   "peso": 0.49
+   "pontos": 57,
+   "peso": 0.755
   },
   {
    "resposta": "Panamá",
@@ -614,32 +614,45 @@
    "sem_dado": false,
    "icf": 12.135,
    "ajustado": true,
-   "percentil": 0.425,
+   "percentil": 0.423,
    "fama": 0.32,
-   "pontos": 24,
-   "peso": 0.49
+   "pontos": 58,
+   "peso": 0.762
   },
   {
-   "resposta": "Afeganistão",
-   "apelidos": [],
+   "resposta": "Arábia Saudita",
+   "apelidos": [
+    "arábia"
+   ],
    "sem_dado": false,
-   "icf": 12.047,
+   "icf": 13.617,
    "ajustado": true,
-   "percentil": 0.403,
-   "fama": 0.35,
-   "pontos": 25,
-   "peso": 0.5
+   "percentil": 0.68,
+   "fama": 0.32,
+   "pontos": 60,
+   "peso": 0.775
   },
   {
-   "resposta": "Finlândia",
+   "resposta": "Cabo Verde",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.251,
+   "icf": 9.118,
    "ajustado": true,
-   "percentil": 0.439,
+   "percentil": 0.046,
    "fama": 0.35,
-   "pontos": 25,
-   "peso": 0.5
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Jamaica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.709,
+   "ajustado": true,
+   "percentil": 0.515,
+   "fama": 0.32,
+   "pontos": 60,
+   "peso": 0.775
   },
   {
    "resposta": "Áustria",
@@ -647,10 +660,21 @@
    "sem_dado": false,
    "icf": 11.681,
    "ajustado": true,
-   "percentil": 0.335,
+   "percentil": 0.34,
    "fama": 0.35,
-   "pontos": 25,
-   "peso": 0.5
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Afeganistão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.047,
+   "ajustado": true,
+   "percentil": 0.402,
+   "fama": 0.35,
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Croácia",
@@ -660,8 +684,19 @@
    "ajustado": true,
    "percentil": 0.448,
    "fama": 0.35,
-   "pontos": 26,
-   "peso": 0.51
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Finlândia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.251,
+   "ajustado": true,
+   "percentil": 0.44,
+   "fama": 0.35,
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Nigéria",
@@ -669,10 +704,10 @@
    "sem_dado": false,
    "icf": 12.438,
    "ajustado": true,
-   "percentil": 0.471,
+   "percentil": 0.469,
    "fama": 0.35,
-   "pontos": 26,
-   "peso": 0.51
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Síria",
@@ -680,21 +715,38 @@
    "sem_dado": false,
    "icf": 11.344,
    "ajustado": true,
-   "percentil": 0.276,
+   "percentil": 0.286,
    "fama": 0.38,
-   "pontos": 26,
-   "peso": 0.51
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Vietnã",
-   "apelidos": [],
+   "apelidos": [
+    "vietname"
+   ],
    "sem_dado": false,
    "icf": 12.412,
    "ajustado": true,
-   "percentil": 0.466,
+   "percentil": 0.465,
    "fama": 0.35,
-   "pontos": 26,
-   "peso": 0.51
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Emirados Árabes Unidos",
+   "apelidos": [
+    "emirados árabes",
+    "emirados",
+    "eau"
+   ],
+   "sem_dado": false,
+   "icf": 8.971,
+   "ajustado": true,
+   "percentil": 0.033,
+   "fama": 0.4,
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Filipinas",
@@ -702,10 +754,10 @@
    "sem_dado": false,
    "icf": 12.47,
    "ajustado": true,
-   "percentil": 0.475,
+   "percentil": 0.473,
    "fama": 0.38,
-   "pontos": 27,
-   "peso": 0.52
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Indonésia",
@@ -713,10 +765,10 @@
    "sem_dado": false,
    "icf": 12.029,
    "ajustado": true,
-   "percentil": 0.389,
+   "percentil": 0.39,
    "fama": 0.38,
-   "pontos": 27,
-   "peso": 0.52
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Paquistão",
@@ -724,32 +776,10 @@
    "sem_dado": false,
    "icf": 12.387,
    "ajustado": true,
-   "percentil": 0.457,
+   "percentil": 0.456,
    "fama": 0.38,
-   "pontos": 27,
-   "peso": 0.52
-  },
-  {
-   "resposta": "Emirados Árabes Unidos",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 8.971,
-   "ajustado": true,
-   "percentil": 0.032,
-   "fama": 0.4,
-   "pontos": 28,
-   "peso": 0.529
-  },
-  {
-   "resposta": "Palestina",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.881,
-   "ajustado": true,
-   "percentil": 0.357,
-   "fama": 0.4,
-   "pontos": 28,
-   "peso": 0.529
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Países Baixos",
@@ -757,21 +787,24 @@
    "sem_dado": false,
    "icf": 9.663,
    "ajustado": true,
-   "percentil": 0.081,
+   "percentil": 0.083,
    "fama": 0.4,
-   "pontos": 28,
-   "peso": 0.529
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Vaticano",
-   "apelidos": [],
+   "apelidos": [
+    "santa sé",
+    "cidade do vaticano"
+   ],
    "sem_dado": false,
    "icf": 11.267,
    "ajustado": true,
-   "percentil": 0.271,
+   "percentil": 0.278,
    "fama": 0.4,
-   "pontos": 28,
-   "peso": 0.529
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Islândia",
@@ -779,10 +812,10 @@
    "sem_dado": false,
    "icf": 12.678,
    "ajustado": true,
-   "percentil": 0.502,
+   "percentil": 0.498,
    "fama": 0.4,
-   "pontos": 29,
-   "peso": 0.539
+   "pontos": 63,
+   "peso": 0.794
   },
   {
    "resposta": "Líbano",
@@ -790,54 +823,64 @@
    "sem_dado": false,
    "icf": 12.409,
    "ajustado": true,
-   "percentil": 0.462,
+   "percentil": 0.461,
    "fama": 0.4,
-   "pontos": 29,
-   "peso": 0.539
+   "pontos": 63,
+   "peso": 0.794
   },
   {
-   "resposta": "Qatar",
-   "apelidos": [],
+   "resposta": "Palestina",
+   "apelidos": [
+    "estado da palestina"
+   ],
    "sem_dado": false,
-   "icf": 13.331,
+   "icf": 11.881,
    "ajustado": true,
-   "percentil": 0.629,
+   "percentil": 0.361,
    "fama": 0.4,
-   "pontos": 29,
-   "peso": 0.539
-  },
-  {
-   "resposta": "Hungria",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.07,
-   "ajustado": true,
-   "percentil": 0.412,
-   "fama": 0.43,
-   "pontos": 30,
-   "peso": 0.548
+   "pontos": 63,
+   "peso": 0.794
   },
   {
    "resposta": "País de Gales",
-   "apelidos": [],
+   "apelidos": [
+    "gales"
+   ],
    "sem_dado": false,
    "icf": 11.196,
    "ajustado": true,
-   "percentil": 0.258,
+   "percentil": 0.266,
    "fama": 0.43,
-   "pontos": 30,
-   "peso": 0.548
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Qatar",
+   "apelidos": [
+    "catar"
+   ],
+   "sem_dado": false,
+   "icf": 13.331,
+   "ajustado": true,
+   "percentil": 0.618,
+   "fama": 0.4,
+   "pontos": 63,
+   "peso": 0.794
   },
   {
    "resposta": "República Tcheca",
-   "apelidos": [],
+   "apelidos": [
+    "tchéquia",
+    "chéquia",
+    "república checa"
+   ],
    "sem_dado": false,
    "icf": 11.166,
    "ajustado": true,
-   "percentil": 0.24,
+   "percentil": 0.249,
    "fama": 0.43,
-   "pontos": 30,
-   "peso": 0.548
+   "pontos": 63,
+   "peso": 0.794
   },
   {
    "resposta": "Camarões",
@@ -845,54 +888,10 @@
    "sem_dado": false,
    "icf": 12.286,
    "ajustado": true,
-   "percentil": 0.443,
+   "percentil": 0.444,
    "fama": 0.43,
-   "pontos": 31,
-   "peso": 0.557
-  },
-  {
-   "resposta": "Malásia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.579,
-   "ajustado": true,
-   "percentil": 0.493,
-   "fama": 0.46,
-   "pontos": 31,
-   "peso": 0.557
-  },
-  {
-   "resposta": "Porto Rico",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.332,
-   "ajustado": true,
-   "percentil": 0.045,
-   "fama": 0.46,
-   "pontos": 31,
-   "peso": 0.557
-  },
-  {
-   "resposta": "República Dominicana",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.142,
-   "ajustado": true,
-   "percentil": 0.231,
-   "fama": 0.46,
-   "pontos": 31,
-   "peso": 0.557
-  },
-  {
-   "resposta": "Gana",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.763,
-   "ajustado": true,
-   "percentil": 0.534,
-   "fama": 0.46,
-   "pontos": 32,
-   "peso": 0.566
+   "pontos": 64,
+   "peso": 0.8
   },
   {
    "resposta": "Guatemala",
@@ -900,21 +899,81 @@
    "sem_dado": false,
    "icf": 12.74,
    "ajustado": true,
-   "percentil": 0.525,
+   "percentil": 0.519,
    "fama": 0.46,
-   "pontos": 32,
-   "peso": 0.566
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Hungria",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.07,
+   "ajustado": true,
+   "percentil": 0.411,
+   "fama": 0.43,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Malásia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.579,
+   "ajustado": true,
+   "percentil": 0.49,
+   "fama": 0.46,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Porto Rico",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.332,
+   "ajustado": true,
+   "percentil": 0.05,
+   "fama": 0.46,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "República Dominicana",
+   "apelidos": [
+    "dominicana"
+   ],
+   "sem_dado": false,
+   "icf": 11.142,
+   "ajustado": true,
+   "percentil": 0.241,
+   "fama": 0.46,
+   "pontos": 64,
+   "peso": 0.8
   },
   {
    "resposta": "Taiwan",
-   "apelidos": [],
+   "apelidos": [
+    "formosa",
+    "república da china"
+   ],
    "sem_dado": false,
    "icf": 12.624,
    "ajustado": true,
-   "percentil": 0.498,
+   "percentil": 0.494,
    "fama": 0.46,
-   "pontos": 32,
-   "peso": 0.566
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Gana",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.763,
+   "ajustado": true,
+   "percentil": 0.527,
+   "fama": 0.46,
+   "pontos": 65,
+   "peso": 0.806
   },
   {
    "resposta": "Mônaco",
@@ -922,10 +981,10 @@
    "sem_dado": false,
    "icf": 13.102,
    "ajustado": true,
-   "percentil": 0.593,
+   "percentil": 0.585,
    "fama": 0.46,
-   "pontos": 33,
-   "peso": 0.574
+   "pontos": 65,
+   "peso": 0.806
   },
   {
    "resposta": "Quênia",
@@ -933,10 +992,10 @@
    "sem_dado": false,
    "icf": 13.22,
    "ajustado": true,
-   "percentil": 0.602,
+   "percentil": 0.593,
    "fama": 0.46,
-   "pontos": 33,
-   "peso": 0.574
+   "pontos": 65,
+   "peso": 0.806
   },
   {
    "resposta": "Romênia",
@@ -944,32 +1003,10 @@
    "sem_dado": false,
    "icf": 12.989,
    "ajustado": true,
-   "percentil": 0.566,
+   "percentil": 0.56,
    "fama": 0.46,
-   "pontos": 33,
-   "peso": 0.574
-  },
-  {
-   "resposta": "Singapura",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.929,
-   "ajustado": true,
-   "percentil": 0.552,
-   "fama": 0.46,
-   "pontos": 33,
-   "peso": 0.574
-  },
-  {
-   "resposta": "Guiana",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.402,
-   "ajustado": true,
-   "percentil": 0.652,
-   "fama": 0.46,
-   "pontos": 34,
-   "peso": 0.583
+   "pontos": 65,
+   "peso": 0.806
   },
   {
    "resposta": "Senegal",
@@ -977,10 +1014,36 @@
    "sem_dado": false,
    "icf": 13.246,
    "ajustado": true,
-   "percentil": 0.606,
+   "percentil": 0.598,
    "fama": 0.46,
-   "pontos": 34,
-   "peso": 0.583
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Singapura",
+   "apelidos": [
+    "cingapura"
+   ],
+   "sem_dado": false,
+   "icf": 12.929,
+   "ajustado": true,
+   "percentil": 0.548,
+   "fama": 0.46,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Costa do Marfim",
+   "apelidos": [
+    "côte d'ivoire"
+   ],
+   "sem_dado": false,
+   "icf": 10.689,
+   "ajustado": true,
+   "percentil": 0.174,
+   "fama": 0.49,
+   "pontos": 66,
+   "peso": 0.812
   },
   {
    "resposta": "El Salvador",
@@ -988,32 +1051,21 @@
    "sem_dado": false,
    "icf": 9.515,
    "ajustado": true,
-   "percentil": 0.059,
+   "percentil": 0.062,
    "fama": 0.49,
-   "pontos": 35,
-   "peso": 0.592
+   "pontos": 66,
+   "peso": 0.812
   },
   {
-   "resposta": "Irlanda do Norte",
+   "resposta": "Guiana",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 9.97,
+   "icf": 13.402,
    "ajustado": true,
-   "percentil": 0.118,
-   "fama": 0.49,
-   "pontos": 35,
-   "peso": 0.592
-  },
-  {
-   "resposta": "Costa do Marfim",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.689,
-   "ajustado": true,
-   "percentil": 0.167,
-   "fama": 0.49,
-   "pontos": 36,
-   "peso": 0.6
+   "percentil": 0.639,
+   "fama": 0.46,
+   "pontos": 66,
+   "peso": 0.812
   },
   {
    "resposta": "Guiana Francesa",
@@ -1021,10 +1073,10 @@
    "sem_dado": false,
    "icf": 11.909,
    "ajustado": true,
-   "percentil": 0.371,
+   "percentil": 0.373,
    "fama": 0.49,
-   "pontos": 36,
-   "peso": 0.6
+   "pontos": 66,
+   "peso": 0.812
   },
   {
    "resposta": "Guiné-Bissau",
@@ -1032,10 +1084,21 @@
    "sem_dado": false,
    "icf": 11.651,
    "ajustado": true,
-   "percentil": 0.328,
+   "percentil": 0.334,
    "fama": 0.49,
-   "pontos": 36,
-   "peso": 0.6
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Irlanda do Norte",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.97,
+   "ajustado": true,
+   "percentil": 0.116,
+   "fama": 0.49,
+   "pontos": 66,
+   "peso": 0.812
   },
   {
    "resposta": "Honduras",
@@ -1043,10 +1106,10 @@
    "sem_dado": false,
    "icf": 12.525,
    "ajustado": true,
-   "percentil": 0.489,
+   "percentil": 0.485,
    "fama": 0.49,
-   "pontos": 37,
-   "peso": 0.608
+   "pontos": 67,
+   "peso": 0.819
   },
   {
    "resposta": "Luxemburgo",
@@ -1056,19 +1119,19 @@
    "ajustado": true,
    "percentil": 0.407,
    "fama": 0.49,
-   "pontos": 37,
-   "peso": 0.608
+   "pontos": 67,
+   "peso": 0.819
   },
   {
-   "resposta": "Sérvia",
+   "resposta": "Malta",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.683,
+   "icf": 11.568,
    "ajustado": true,
-   "percentil": 0.507,
-   "fama": 0.49,
-   "pontos": 37,
-   "peso": 0.608
+   "percentil": 0.324,
+   "fama": 0.52,
+   "pontos": 67,
+   "peso": 0.819
   },
   {
    "resposta": "São Tomé e Príncipe",
@@ -1076,21 +1139,56 @@
    "sem_dado": false,
    "icf": 9.36,
    "ajustado": true,
-   "percentil": 0.05,
+   "percentil": 0.054,
    "fama": 0.52,
-   "pontos": 38,
-   "peso": 0.616
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Sérvia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.683,
+   "ajustado": true,
+   "percentil": 0.502,
+   "fama": 0.49,
+   "pontos": 67,
+   "peso": 0.819
   },
   {
    "resposta": "Timor-Leste",
-   "apelidos": [],
+   "apelidos": [
+    "timor"
+   ],
    "sem_dado": false,
    "icf": 11.248,
    "ajustado": true,
-   "percentil": 0.267,
+   "percentil": 0.274,
    "fama": 0.52,
-   "pontos": 38,
-   "peso": 0.616
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Argélia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.992,
+   "ajustado": true,
+   "percentil": 0.564,
+   "fama": 0.52,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Bulgária",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.79,
+   "ajustado": true,
+   "percentil": 0.531,
+   "fama": 0.52,
+   "pontos": 68,
+   "peso": 0.825
   },
   {
    "resposta": "Congo",
@@ -1098,10 +1196,23 @@
    "sem_dado": false,
    "icf": 12.478,
    "ajustado": true,
-   "percentil": 0.48,
+   "percentil": 0.477,
    "fama": 0.52,
-   "pontos": 39,
-   "peso": 0.624
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Etiópia",
+   "apelidos": [
+    "abissínia"
+   ],
+   "sem_dado": false,
+   "icf": 13.068,
+   "ajustado": true,
+   "percentil": 0.581,
+   "fama": 0.52,
+   "pontos": 68,
+   "peso": 0.825
   },
   {
    "resposta": "Líbia",
@@ -1111,30 +1222,8 @@
    "ajustado": true,
    "percentil": 0.452,
    "fama": 0.52,
-   "pontos": 39,
-   "peso": 0.624
-  },
-  {
-   "resposta": "Malta",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.568,
-   "ajustado": true,
-   "percentil": 0.317,
-   "fama": 0.52,
-   "pontos": 39,
-   "peso": 0.624
-  },
-  {
-   "resposta": "Bulgária",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.79,
-   "ajustado": true,
-   "percentil": 0.538,
-   "fama": 0.52,
-   "pontos": 40,
-   "peso": 0.632
+   "pontos": 68,
+   "peso": 0.825
   },
   {
    "resposta": "Sudão",
@@ -1142,10 +1231,10 @@
    "sem_dado": false,
    "icf": 12.917,
    "ajustado": true,
-   "percentil": 0.548,
+   "percentil": 0.539,
    "fama": 0.52,
-   "pontos": 40,
-   "peso": 0.632
+   "pontos": 68,
+   "peso": 0.825
   },
   {
    "resposta": "Tunísia",
@@ -1153,76 +1242,10 @@
    "sem_dado": false,
    "icf": 12.935,
    "ajustado": true,
-   "percentil": 0.557,
+   "percentil": 0.552,
    "fama": 0.52,
-   "pontos": 40,
-   "peso": 0.632
-  },
-  {
-   "resposta": "Argélia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.992,
-   "ajustado": true,
-   "percentil": 0.57,
-   "fama": 0.52,
-   "pontos": 41,
-   "peso": 0.64
-  },
-  {
-   "resposta": "Etiópia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.068,
-   "ajustado": true,
-   "percentil": 0.588,
-   "fama": 0.52,
-   "pontos": 41,
-   "peso": 0.64
-  },
-  {
-   "resposta": "Nepal",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.199,
-   "ajustado": true,
-   "percentil": 0.597,
-   "fama": 0.52,
-   "pontos": 41,
-   "peso": 0.64
-  },
-  {
-   "resposta": "Madagascar",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.343,
-   "ajustado": true,
-   "percentil": 0.638,
-   "fama": 0.52,
-   "pontos": 42,
-   "peso": 0.648
-  },
-  {
-   "resposta": "Nicarágua",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.289,
-   "ajustado": true,
-   "percentil": 0.62,
-   "fama": 0.52,
-   "pontos": 42,
-   "peso": 0.648
-  },
-  {
-   "resposta": "Somália",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.262,
-   "ajustado": true,
-   "percentil": 0.611,
-   "fama": 0.52,
-   "pontos": 42,
-   "peso": 0.648
+   "pontos": 68,
+   "peso": 0.825
   },
   {
    "resposta": "Bahamas",
@@ -1230,10 +1253,21 @@
    "sem_dado": false,
    "icf": 13.389,
    "ajustado": true,
-   "percentil": 0.643,
+   "percentil": 0.631,
    "fama": 0.52,
-   "pontos": 43,
-   "peso": 0.656
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Madagascar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.343,
+   "ajustado": true,
+   "percentil": 0.627,
+   "fama": 0.52,
+   "pontos": 69,
+   "peso": 0.831
   },
   {
    "resposta": "Mongólia",
@@ -1241,54 +1275,56 @@
    "sem_dado": false,
    "icf": 13.999,
    "ajustado": true,
-   "percentil": 0.765,
+   "percentil": 0.747,
    "fama": 0.52,
-   "pontos": 43,
-   "peso": 0.656
+   "pontos": 69,
+   "peso": 0.831
   },
   {
-   "resposta": "Suriname",
+   "resposta": "Nepal",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.038,
+   "icf": 13.199,
    "ajustado": true,
-   "percentil": 0.769,
+   "percentil": 0.589,
    "fama": 0.52,
-   "pontos": 43,
-   "peso": 0.656
+   "pontos": 69,
+   "peso": 0.831
   },
   {
-   "resposta": "Groenlândia",
+   "resposta": "Nicarágua",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.532,
+   "icf": 13.289,
    "ajustado": true,
-   "percentil": 0.869,
+   "percentil": 0.61,
    "fama": 0.52,
-   "pontos": 44,
-   "peso": 0.663
+   "pontos": 69,
+   "peso": 0.831
   },
   {
-   "resposta": "Hong Kong",
+   "resposta": "Somália",
    "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "sem_dado": false,
+   "icf": 13.262,
    "ajustado": true,
-   "percentil": 0.991,
+   "percentil": 0.602,
    "fama": 0.52,
-   "pontos": 44,
-   "peso": 0.663
+   "pontos": 69,
+   "peso": 0.831
   },
   {
    "resposta": "Cazaquistão",
-   "apelidos": [],
+   "apelidos": [
+    "casaquistão"
+   ],
    "sem_dado": false,
    "icf": 13.739,
    "ajustado": true,
-   "percentil": 0.706,
+   "percentil": 0.689,
    "fama": 0.56,
-   "pontos": 45,
-   "peso": 0.671
+   "pontos": 70,
+   "peso": 0.837
   },
   {
    "resposta": "Chipre",
@@ -1296,10 +1332,32 @@
    "sem_dado": false,
    "icf": 12.956,
    "ajustado": true,
-   "percentil": 0.561,
+   "percentil": 0.556,
    "fama": 0.56,
-   "pontos": 45,
-   "peso": 0.671
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Groenlândia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.532,
+   "ajustado": true,
+   "percentil": 0.846,
+   "fama": 0.52,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Hong Kong",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.52,
+   "pontos": 70,
+   "peso": 0.837
   },
   {
    "resposta": "Jordânia",
@@ -1307,76 +1365,21 @@
    "sem_dado": false,
    "icf": 13.055,
    "ajustado": true,
-   "percentil": 0.584,
+   "percentil": 0.577,
    "fama": 0.56,
-   "pontos": 45,
-   "peso": 0.671
+   "pontos": 70,
+   "peso": 0.837
   },
   {
-   "resposta": "Iêmen",
+   "resposta": "Suriname",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.866,
+   "icf": 14.038,
    "ajustado": true,
-   "percentil": 0.729,
-   "fama": 0.56,
-   "pontos": 46,
-   "peso": 0.678
-  },
-  {
-   "resposta": "Kuwait",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.827,
-   "ajustado": true,
-   "percentil": 0.724,
-   "fama": 0.56,
-   "pontos": 46,
-   "peso": 0.678
-  },
-  {
-   "resposta": "Sri Lanka",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.991,
-   "fama": 0.56,
-   "pontos": 46,
-   "peso": 0.678
-  },
-  {
-   "resposta": "Geórgia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.687,
-   "ajustado": true,
-   "percentil": 0.511,
-   "fama": 0.59,
-   "pontos": 47,
-   "peso": 0.686
-  },
-  {
-   "resposta": "Macau",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.786,
-   "ajustado": true,
-   "percentil": 0.348,
-   "fama": 0.59,
-   "pontos": 47,
-   "peso": 0.686
-  },
-  {
-   "resposta": "República Democrática do Congo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.915,
-   "ajustado": true,
-   "percentil": 0.197,
-   "fama": 0.59,
-   "pontos": 47,
-   "peso": 0.686
+   "percentil": 0.751,
+   "fama": 0.52,
+   "pontos": 70,
+   "peso": 0.837
   },
   {
    "resposta": "Bermudas",
@@ -1384,65 +1387,85 @@
    "sem_dado": false,
    "icf": 12.703,
    "ajustado": true,
-   "percentil": 0.516,
+   "percentil": 0.51,
    "fama": 0.59,
-   "pontos": 48,
-   "peso": 0.693
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Eslováquia",
+   "resposta": "Geórgia",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.3,
+   "icf": 12.687,
    "ajustado": true,
-   "percentil": 0.624,
+   "percentil": 0.506,
    "fama": 0.59,
-   "pontos": 48,
-   "peso": 0.693
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Tanzânia",
+   "resposta": "Iêmen",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.392,
+   "icf": 13.866,
    "ajustado": true,
-   "percentil": 0.647,
-   "fama": 0.59,
-   "pontos": 48,
-   "peso": 0.693
+   "percentil": 0.714,
+   "fama": 0.56,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Bangladesh",
-   "apelidos": [],
+   "resposta": "Kuwait",
+   "apelidos": [
+    "kuweit",
+    "coveite"
+   ],
    "sem_dado": false,
-   "icf": 13.482,
+   "icf": 13.827,
    "ajustado": true,
-   "percentil": 0.665,
-   "fama": 0.59,
-   "pontos": 49,
-   "peso": 0.7
+   "percentil": 0.71,
+   "fama": 0.56,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Uganda",
+   "resposta": "Macau",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.48,
+   "icf": 11.786,
    "ajustado": true,
-   "percentil": 0.661,
+   "percentil": 0.353,
    "fama": 0.59,
-   "pontos": 49,
-   "peso": 0.7
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Albânia",
-   "apelidos": [],
+   "resposta": "República Democrática do Congo",
+   "apelidos": [
+    "rd congo",
+    "congo-kinshasa",
+    "zaire"
+   ],
    "sem_dado": false,
-   "icf": 13.565,
+   "icf": 10.915,
    "ajustado": true,
-   "percentil": 0.688,
+   "percentil": 0.205,
    "fama": 0.59,
-   "pontos": 50,
-   "peso": 0.707
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Sri Lanka",
+   "apelidos": [
+    "ceilão"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.56,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Andorra",
@@ -1450,10 +1473,10 @@
    "sem_dado": false,
    "icf": 13.548,
    "ajustado": true,
-   "percentil": 0.683,
+   "percentil": 0.668,
    "fama": 0.59,
-   "pontos": 50,
-   "peso": 0.707
+   "pontos": 72,
+   "peso": 0.849
   },
   {
    "resposta": "Armênia",
@@ -1461,21 +1484,67 @@
    "sem_dado": false,
    "icf": 13.525,
    "ajustado": true,
-   "percentil": 0.679,
+   "percentil": 0.664,
    "fama": 0.59,
-   "pontos": 50,
-   "peso": 0.707
+   "pontos": 72,
+   "peso": 0.849
   },
   {
-   "resposta": "Bósnia e Herzegovina",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "resposta": "Bangladesh",
+   "apelidos": [
+    "bangladexe"
+   ],
+   "sem_dado": false,
+   "icf": 13.482,
    "ajustado": true,
-   "percentil": 0.991,
-   "fama": 0.62,
-   "pontos": 50,
-   "peso": 0.707
+   "percentil": 0.651,
+   "fama": 0.59,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Eslováquia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.3,
+   "ajustado": true,
+   "percentil": 0.614,
+   "fama": 0.59,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Tanzânia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.392,
+   "ajustado": true,
+   "percentil": 0.635,
+   "fama": 0.59,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Uganda",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.48,
+   "ajustado": true,
+   "percentil": 0.647,
+   "fama": 0.59,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Albânia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.565,
+   "ajustado": true,
+   "percentil": 0.672,
+   "fama": 0.59,
+   "pontos": 73,
+   "peso": 0.854
   },
   {
    "resposta": "Maldivas",
@@ -1483,54 +1552,36 @@
    "sem_dado": false,
    "icf": 13.944,
    "ajustado": true,
-   "percentil": 0.747,
+   "percentil": 0.73,
    "fama": 0.59,
-   "pontos": 51,
-   "peso": 0.714
-  },
-  {
-   "resposta": "Ruanda",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.736,
-   "ajustado": true,
-   "percentil": 0.701,
-   "fama": 0.59,
-   "pontos": 51,
-   "peso": 0.714
-  },
-  {
-   "resposta": "Zimbábue",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.144,
-   "ajustado": true,
-   "percentil": 0.787,
-   "fama": 0.59,
-   "pontos": 51,
-   "peso": 0.714
+   "pontos": 73,
+   "peso": 0.854
   },
   {
    "resposta": "República do Congo",
-   "apelidos": [],
+   "apelidos": [
+    "congo-brazzaville"
+   ],
    "sem_dado": false,
    "icf": 10.915,
    "ajustado": true,
-   "percentil": 0.197,
+   "percentil": 0.205,
    "fama": 0.62,
-   "pontos": 52,
-   "peso": 0.721
+   "pontos": 73,
+   "peso": 0.854
   },
   {
-   "resposta": "Serra Leoa",
-   "apelidos": [],
+   "resposta": "Ruanda",
+   "apelidos": [
+    "rwanda"
+   ],
    "sem_dado": false,
-   "icf": 11.436,
+   "icf": 13.736,
    "ajustado": true,
-   "percentil": 0.29,
-   "fama": 0.62,
-   "pontos": 52,
-   "peso": 0.721
+   "percentil": 0.685,
+   "fama": 0.59,
+   "pontos": 73,
+   "peso": 0.854
   },
   {
    "resposta": "Sudão do Sul",
@@ -1538,10 +1589,36 @@
    "sem_dado": false,
    "icf": 10.471,
    "ajustado": true,
-   "percentil": 0.149,
+   "percentil": 0.158,
    "fama": 0.62,
-   "pontos": 52,
-   "peso": 0.721
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Zimbábue",
+   "apelidos": [
+    "zimbabwe"
+   ],
+   "sem_dado": false,
+   "icf": 14.144,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.59,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Camboja",
+   "apelidos": [
+    "camboja khmer"
+   ],
+   "sem_dado": false,
+   "icf": 13.478,
+   "ajustado": true,
+   "percentil": 0.643,
+   "fama": 0.62,
+   "pontos": 74,
+   "peso": 0.86
   },
   {
    "resposta": "Guiné",
@@ -1549,54 +1626,10 @@
    "sem_dado": false,
    "icf": 11.651,
    "ajustado": true,
-   "percentil": 0.328,
+   "percentil": 0.334,
    "fama": 0.62,
-   "pontos": 53,
-   "peso": 0.728
-  },
-  {
-   "resposta": "Mali",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.284,
-   "ajustado": true,
-   "percentil": 0.615,
-   "fama": 0.62,
-   "pontos": 53,
-   "peso": 0.728
-  },
-  {
-   "resposta": "San Marino",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.037,
-   "ajustado": true,
-   "percentil": 0.575,
-   "fama": 0.62,
-   "pontos": 53,
-   "peso": 0.728
-  },
-  {
-   "resposta": "Aruba",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.516,
-   "ajustado": true,
-   "percentil": 0.674,
-   "fama": 0.62,
-   "pontos": 54,
-   "peso": 0.735
-  },
-  {
-   "resposta": "Camboja",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.478,
-   "ajustado": true,
-   "percentil": 0.656,
-   "fama": 0.62,
-   "pontos": 54,
-   "peso": 0.735
+   "pontos": 74,
+   "peso": 0.86
   },
   {
    "resposta": "Lituânia",
@@ -1604,10 +1637,83 @@
    "sem_dado": false,
    "icf": 13.341,
    "ajustado": true,
-   "percentil": 0.633,
+   "percentil": 0.622,
    "fama": 0.62,
-   "pontos": 54,
-   "peso": 0.735
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Mali",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.284,
+   "ajustado": true,
+   "percentil": 0.606,
+   "fama": 0.62,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "San Marino",
+   "apelidos": [
+    "são marinho"
+   ],
+   "sem_dado": false,
+   "icf": 13.037,
+   "ajustado": true,
+   "percentil": 0.568,
+   "fama": 0.62,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Serra Leoa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.436,
+   "ajustado": true,
+   "percentil": 0.299,
+   "fama": 0.62,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Aruba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.516,
+   "ajustado": true,
+   "percentil": 0.66,
+   "fama": 0.62,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Azerbaijão",
+   "apelidos": [
+    "azerbaidjão"
+   ],
+   "sem_dado": false,
+   "icf": 14.046,
+   "ajustado": true,
+   "percentil": 0.755,
+   "fama": 0.62,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Bahrein",
+   "apelidos": [
+    "barein",
+    "bahrain"
+   ],
+   "sem_dado": false,
+   "icf": 13.929,
+   "ajustado": true,
+   "percentil": 0.726,
+   "fama": 0.62,
+   "pontos": 75,
+   "peso": 0.866
   },
   {
    "resposta": "Eslovênia",
@@ -1615,65 +1721,10 @@
    "sem_dado": false,
    "icf": 13.747,
    "ajustado": true,
-   "percentil": 0.71,
+   "percentil": 0.693,
    "fama": 0.62,
-   "pontos": 55,
-   "peso": 0.742
-  },
-  {
-   "resposta": "Namíbia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.782,
-   "ajustado": true,
-   "percentil": 0.715,
-   "fama": 0.62,
-   "pontos": 55,
-   "peso": 0.742
-  },
-  {
-   "resposta": "Azerbaijão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.046,
-   "ajustado": true,
-   "percentil": 0.774,
-   "fama": 0.62,
-   "pontos": 56,
-   "peso": 0.748
-  },
-  {
-   "resposta": "Bahrein",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.929,
-   "ajustado": true,
-   "percentil": 0.742,
-   "fama": 0.62,
-   "pontos": 56,
-   "peso": 0.748
-  },
-  {
-   "resposta": "Zâmbia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.928,
-   "ajustado": true,
-   "percentil": 0.738,
-   "fama": 0.62,
-   "pontos": 56,
-   "peso": 0.748
-  },
-  {
-   "resposta": "Bielorrússia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.398,
-   "ajustado": true,
-   "percentil": 0.837,
-   "fama": 0.62,
-   "pontos": 57,
-   "peso": 0.755
+   "pontos": 75,
+   "peso": 0.866
   },
   {
    "resposta": "Libéria",
@@ -1681,32 +1732,46 @@
    "sem_dado": false,
    "icf": 14.214,
    "ajustado": true,
-   "percentil": 0.792,
+   "percentil": 0.772,
    "fama": 0.62,
-   "pontos": 57,
-   "peso": 0.755
+   "pontos": 75,
+   "peso": 0.866
   },
   {
-   "resposta": "Omã",
+   "resposta": "Namíbia",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.379,
+   "icf": 13.782,
    "ajustado": true,
-   "percentil": 0.828,
+   "percentil": 0.701,
    "fama": 0.62,
-   "pontos": 57,
-   "peso": 0.755
+   "pontos": 75,
+   "peso": 0.866
   },
   {
-   "resposta": "Uzbequistão",
+   "resposta": "Zâmbia",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.414,
+   "icf": 13.928,
    "ajustado": true,
-   "percentil": 0.842,
+   "percentil": 0.722,
    "fama": 0.62,
-   "pontos": 58,
-   "peso": 0.762
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Bielorrússia",
+   "apelidos": [
+    "belarus",
+    "bielo-rússia"
+   ],
+   "sem_dado": false,
+   "icf": 14.398,
+   "ajustado": true,
+   "percentil": 0.817,
+   "fama": 0.62,
+   "pontos": 76,
+   "peso": 0.872
   },
   {
    "resposta": "Montenegro",
@@ -1714,21 +1779,47 @@
    "sem_dado": false,
    "icf": 12.131,
    "ajustado": true,
-   "percentil": 0.421,
+   "percentil": 0.419,
    "fama": 0.65,
-   "pontos": 60,
-   "peso": 0.775
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Omã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.379,
+   "ajustado": true,
+   "percentil": 0.809,
+   "fama": 0.62,
+   "pontos": 76,
+   "peso": 0.872
   },
   {
    "resposta": "República Centro-Africana",
-   "apelidos": [],
+   "apelidos": [
+    "centro-áfrica"
+   ],
    "sem_dado": false,
    "icf": 9.594,
    "ajustado": true,
-   "percentil": 0.063,
+   "percentil": 0.066,
    "fama": 0.65,
-   "pontos": 60,
-   "peso": 0.775
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Uzbequistão",
+   "apelidos": [
+    "usbequistão"
+   ],
+   "sem_dado": false,
+   "icf": 14.414,
+   "ajustado": true,
+   "percentil": 0.822,
+   "fama": 0.62,
+   "pontos": 76,
+   "peso": 0.872
   },
   {
    "resposta": "Barbados",
@@ -1736,21 +1827,10 @@
    "sem_dado": false,
    "icf": 13.616,
    "ajustado": true,
-   "percentil": 0.692,
+   "percentil": 0.676,
    "fama": 0.65,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Kosovo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.785,
-   "ajustado": true,
-   "percentil": 0.719,
-   "fama": 0.65,
-   "pontos": 61,
-   "peso": 0.781
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Belize",
@@ -1758,21 +1838,10 @@
    "sem_dado": false,
    "icf": 13.873,
    "ajustado": true,
-   "percentil": 0.733,
+   "percentil": 0.718,
    "fama": 0.65,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Fiji",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.957,
-   "ajustado": true,
-   "percentil": 0.751,
-   "fama": 0.65,
-   "pontos": 62,
-   "peso": 0.787
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Curaçao",
@@ -1780,10 +1849,10 @@
    "sem_dado": false,
    "icf": 14.058,
    "ajustado": true,
-   "percentil": 0.778,
+   "percentil": 0.759,
    "fama": 0.65,
-   "pontos": 63,
-   "peso": 0.794
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Estônia",
@@ -1791,65 +1860,34 @@
    "sem_dado": false,
    "icf": 13.967,
    "ajustado": true,
-   "percentil": 0.756,
+   "percentil": 0.739,
    "fama": 0.65,
-   "pontos": 63,
-   "peso": 0.794
+   "pontos": 77,
+   "peso": 0.877
   },
   {
-   "resposta": "Letônia",
+   "resposta": "Fiji",
+   "apelidos": [
+    "ilhas fiji"
+   ],
+   "sem_dado": false,
+   "icf": 13.957,
+   "ajustado": true,
+   "percentil": 0.734,
+   "fama": 0.65,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Kosovo",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.135,
+   "icf": 13.785,
    "ajustado": true,
-   "percentil": 0.783,
+   "percentil": 0.705,
    "fama": 0.65,
-   "pontos": 64,
-   "peso": 0.8
-  },
-  {
-   "resposta": "Liechtenstein",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.548,
-   "ajustado": true,
-   "percentil": 0.878,
-   "fama": 0.65,
-   "pontos": 64,
-   "peso": 0.8
-  },
-  {
-   "resposta": "Ilhas Caimão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.485,
-   "ajustado": true,
-   "percentil": 0.67,
-   "fama": 0.68,
-   "pontos": 65,
-   "peso": 0.806
-  },
-  {
-   "resposta": "Macedônia do Norte",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.095,
-   "ajustado": true,
-   "percentil": 0.226,
-   "fama": 0.68,
-   "pontos": 65,
-   "peso": 0.806
-  },
-  {
-   "resposta": "Trinidad e Tobago",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.991,
-   "fama": 0.65,
-   "pontos": 65,
-   "peso": 0.806
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Chade",
@@ -1857,10 +1895,56 @@
    "sem_dado": false,
    "icf": 14.338,
    "ajustado": true,
-   "percentil": 0.81,
+   "percentil": 0.793,
    "fama": 0.68,
-   "pontos": 66,
-   "peso": 0.812
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Ilhas Caimão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.485,
+   "ajustado": true,
+   "percentil": 0.656,
+   "fama": 0.68,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Letônia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.135,
+   "ajustado": true,
+   "percentil": 0.763,
+   "fama": 0.65,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Liechtenstein",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.548,
+   "ajustado": true,
+   "percentil": 0.855,
+   "fama": 0.65,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Macedônia do Norte",
+   "apelidos": [
+    "macedônia"
+   ],
+   "sem_dado": false,
+   "icf": 11.095,
+   "ajustado": true,
+   "percentil": 0.237,
+   "fama": 0.68,
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Níger",
@@ -1868,32 +1952,23 @@
    "sem_dado": false,
    "icf": 14.308,
    "ajustado": true,
-   "percentil": 0.796,
+   "percentil": 0.78,
    "fama": 0.68,
-   "pontos": 66,
-   "peso": 0.812
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Botswana",
-   "apelidos": [],
+   "apelidos": [
+    "botsuana"
+   ],
    "sem_dado": false,
    "icf": 14.671,
    "ajustado": true,
-   "percentil": 0.882,
+   "percentil": 0.859,
    "fama": 0.68,
-   "pontos": 67,
-   "peso": 0.819
-  },
-  {
-   "resposta": "Seychelles",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.487,
-   "ajustado": true,
-   "percentil": 0.86,
-   "fama": 0.68,
-   "pontos": 67,
-   "peso": 0.819
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Gabão",
@@ -1901,21 +1976,10 @@
    "sem_dado": false,
    "icf": 14.32,
    "ajustado": true,
-   "percentil": 0.801,
+   "percentil": 0.784,
    "fama": 0.7,
-   "pontos": 68,
-   "peso": 0.825
-  },
-  {
-   "resposta": "Mianmar",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.468,
-   "ajustado": true,
-   "percentil": 0.855,
-   "fama": 0.7,
-   "pontos": 68,
-   "peso": 0.825
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Ilhas Virgens",
@@ -1923,10 +1987,24 @@
    "sem_dado": false,
    "icf": 11.526,
    "ajustado": true,
-   "percentil": 0.308,
+   "percentil": 0.315,
    "fama": 0.71,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Mianmar",
+   "apelidos": [
+    "birmânia",
+    "myanmar"
+   ],
+   "sem_dado": false,
+   "icf": 14.468,
+   "ajustado": true,
+   "percentil": 0.834,
+   "fama": 0.7,
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Polinésia Francesa",
@@ -1934,65 +2012,34 @@
    "sem_dado": false,
    "icf": 12.209,
    "ajustado": true,
-   "percentil": 0.43,
+   "percentil": 0.432,
    "fama": 0.71,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 79,
+   "peso": 0.889
   },
   {
-   "resposta": "Butão",
+   "resposta": "Saara Ocidental",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.368,
+   "icf": 10.815,
    "ajustado": true,
-   "percentil": 0.819,
-   "fama": 0.71,
-   "pontos": 70,
-   "peso": 0.837
+   "percentil": 0.187,
+   "fama": 0.7,
+   "pontos": 79,
+   "peso": 0.889
   },
   {
-   "resposta": "Guadalupe",
-   "apelidos": [],
+   "resposta": "Seychelles",
+   "apelidos": [
+    "seicheles"
+   ],
    "sem_dado": false,
-   "icf": 13.038,
+   "icf": 14.487,
    "ajustado": true,
-   "percentil": 0.579,
-   "fama": 0.71,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "Samoa",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.324,
-   "ajustado": true,
-   "percentil": 0.805,
-   "fama": 0.71,
-   "pontos": 70,
-   "peso": 0.837
-  },
-  {
-   "resposta": "Burundi",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.538,
-   "ajustado": true,
-   "percentil": 0.873,
-   "fama": 0.71,
-   "pontos": 71,
-   "peso": 0.843
-  },
-  {
-   "resposta": "Malawi",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.449,
-   "ajustado": true,
-   "percentil": 0.851,
-   "fama": 0.71,
-   "pontos": 71,
-   "peso": 0.843
+   "percentil": 0.838,
+   "fama": 0.68,
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Brunei",
@@ -2000,21 +2047,83 @@
    "sem_dado": false,
    "icf": 14.727,
    "ajustado": true,
-   "percentil": 0.887,
+   "percentil": 0.863,
    "fama": 0.71,
-   "pontos": 72,
-   "peso": 0.849
+   "pontos": 80,
+   "peso": 0.894
   },
   {
-   "resposta": "Gâmbia",
+   "resposta": "Burundi",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.818,
+   "icf": 14.538,
    "ajustado": true,
-   "percentil": 0.9,
+   "percentil": 0.851,
    "fama": 0.71,
-   "pontos": 72,
-   "peso": 0.849
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Butão",
+   "apelidos": [
+    "butan"
+   ],
+   "sem_dado": false,
+   "icf": 14.368,
+   "ajustado": true,
+   "percentil": 0.801,
+   "fama": 0.71,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Guadalupe",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.038,
+   "ajustado": true,
+   "percentil": 0.573,
+   "fama": 0.71,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Malawi",
+   "apelidos": [
+    "malaui"
+   ],
+   "sem_dado": false,
+   "icf": 14.449,
+   "ajustado": true,
+   "percentil": 0.83,
+   "fama": 0.71,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Samoa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.324,
+   "ajustado": true,
+   "percentil": 0.788,
+   "fama": 0.71,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Djibuti",
+   "apelidos": [
+    "djibouti",
+    "jibuti"
+   ],
+   "sem_dado": false,
+   "icf": 15.969,
+   "ajustado": true,
+   "percentil": 0.938,
+   "fama": 0.71,
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Eritreia",
@@ -2022,32 +2131,21 @@
    "sem_dado": false,
    "icf": 15.054,
    "ajustado": true,
-   "percentil": 0.919,
+   "percentil": 0.892,
    "fama": 0.71,
-   "pontos": 73,
-   "peso": 0.854
+   "pontos": 81,
+   "peso": 0.9
   },
   {
-   "resposta": "Turcomenistão",
+   "resposta": "Gâmbia",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 15.448,
+   "icf": 14.818,
    "ajustado": true,
-   "percentil": 0.932,
+   "percentil": 0.876,
    "fama": 0.71,
-   "pontos": 73,
-   "peso": 0.854
-  },
-  {
-   "resposta": "Djibuti",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.969,
-   "ajustado": true,
-   "percentil": 0.968,
-   "fama": 0.71,
-   "pontos": 74,
-   "peso": 0.86
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Laos",
@@ -2055,32 +2153,10 @@
    "sem_dado": false,
    "icf": 13.977,
    "ajustado": true,
-   "percentil": 0.76,
+   "percentil": 0.743,
    "fama": 0.72,
-   "pontos": 74,
-   "peso": 0.86
-  },
-  {
-   "resposta": "Mauritânia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.372,
-   "ajustado": true,
-   "percentil": 0.824,
-   "fama": 0.72,
-   "pontos": 75,
-   "peso": 0.866
-  },
-  {
-   "resposta": "Moldávia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.382,
-   "ajustado": true,
-   "percentil": 0.833,
-   "fama": 0.72,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Togo",
@@ -2088,10 +2164,36 @@
    "sem_dado": false,
    "icf": 14.352,
    "ajustado": true,
-   "percentil": 0.814,
+   "percentil": 0.797,
    "fama": 0.72,
-   "pontos": 75,
-   "peso": 0.866
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Turcomenistão",
+   "apelidos": [
+    "turquemenistão"
+   ],
+   "sem_dado": false,
+   "icf": 15.448,
+   "ajustado": true,
+   "percentil": 0.905,
+   "fama": 0.71,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Burkina Faso",
+   "apelidos": [
+    "alto volta"
+   ],
+   "sem_dado": false,
+   "icf": 8.44,
+   "ajustado": true,
+   "percentil": 0.021,
+   "fama": 0.74,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Granada",
@@ -2099,10 +2201,10 @@
    "sem_dado": false,
    "icf": 12.219,
    "ajustado": true,
-   "percentil": 0.434,
+   "percentil": 0.436,
    "fama": 0.74,
-   "pontos": 76,
-   "peso": 0.872
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Guiné Equatorial",
@@ -2110,21 +2212,48 @@
    "sem_dado": false,
    "icf": 12.496,
    "ajustado": true,
-   "percentil": 0.484,
+   "percentil": 0.481,
    "fama": 0.74,
-   "pontos": 76,
-   "peso": 0.872
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Mauritânia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.372,
+   "ajustado": true,
+   "percentil": 0.805,
+   "fama": 0.72,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Maurícia",
-   "apelidos": [],
+   "apelidos": [
+    "maurício",
+    "ilhas maurício"
+   ],
    "sem_dado": false,
    "icf": 14.51,
    "ajustado": true,
-   "percentil": 0.864,
+   "percentil": 0.842,
    "fama": 0.74,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Moldávia",
+   "apelidos": [
+    "moldova"
+   ],
+   "sem_dado": false,
+   "icf": 14.382,
+   "ajustado": true,
+   "percentil": 0.813,
+   "fama": 0.72,
+   "pontos": 82,
+   "peso": 0.906
   },
   {
    "resposta": "Tonga",
@@ -2132,21 +2261,36 @@
    "sem_dado": false,
    "icf": 14.811,
    "ajustado": true,
-   "percentil": 0.896,
+   "percentil": 0.871,
    "fama": 0.74,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Antígua e Barbuda",
+   "apelidos": [
+    "antigua"
+   ],
+   "sem_dado": false,
+   "icf": 14.766,
+   "ajustado": true,
+   "percentil": 0.867,
+   "fama": 0.77,
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Benim",
-   "apelidos": [],
+   "apelidos": [
+    "benin"
+   ],
    "sem_dado": false,
    "icf": 15.305,
    "ajustado": true,
-   "percentil": 0.928,
+   "percentil": 0.9,
    "fama": 0.74,
-   "pontos": 78,
-   "peso": 0.883
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Dominica",
@@ -2154,54 +2298,23 @@
    "sem_dado": false,
    "icf": 14.88,
    "ajustado": true,
-   "percentil": 0.905,
+   "percentil": 0.88,
    "fama": 0.74,
-   "pontos": 78,
-   "peso": 0.883
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Lesoto",
-   "apelidos": [],
+   "apelidos": [
+    "lesotho"
+   ],
    "sem_dado": false,
    "icf": 15.495,
    "ajustado": true,
-   "percentil": 0.941,
+   "percentil": 0.913,
    "fama": 0.74,
-   "pontos": 79,
-   "peso": 0.889
-  },
-  {
-   "resposta": "Tajiquistão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.476,
-   "ajustado": true,
-   "percentil": 0.937,
-   "fama": 0.74,
-   "pontos": 79,
-   "peso": 0.889
-  },
-  {
-   "resposta": "Antígua e Barbuda",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.766,
-   "ajustado": true,
-   "percentil": 0.891,
-   "fama": 0.77,
-   "pontos": 80,
-   "peso": 0.894
-  },
-  {
-   "resposta": "Burkina Faso",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.991,
-   "fama": 0.74,
-   "pontos": 80,
-   "peso": 0.894
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Santa Lúcia",
@@ -2209,21 +2322,62 @@
    "sem_dado": false,
    "icf": 9.605,
    "ajustado": true,
-   "percentil": 0.068,
+   "percentil": 0.071,
    "fama": 0.77,
-   "pontos": 80,
-   "peso": 0.894
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Tajiquistão",
+   "apelidos": [
+    "tadjiquistão"
+   ],
+   "sem_dado": false,
+   "icf": 15.476,
+   "ajustado": true,
+   "percentil": 0.909,
+   "fama": 0.74,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Comores",
+   "apelidos": [
+    "ilhas comores"
+   ],
+   "sem_dado": false,
+   "icf": 15.687,
+   "ajustado": true,
+   "percentil": 0.921,
+   "fama": 0.77,
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Quirguistão",
-   "apelidos": [],
+   "apelidos": [
+    "quirguízia"
+   ],
    "sem_dado": false,
    "icf": 14.986,
    "ajustado": true,
-   "percentil": 0.914,
+   "percentil": 0.888,
    "fama": 0.77,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Salomão",
+   "apelidos": [
+    "ilhas salomão"
+   ],
+   "sem_dado": false,
+   "icf": 11.727,
+   "ajustado": true,
+   "percentil": 0.349,
+   "fama": 0.8,
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Suazilândia",
@@ -2231,43 +2385,25 @@
    "sem_dado": false,
    "icf": 14.984,
    "ajustado": true,
-   "percentil": 0.91,
+   "percentil": 0.884,
    "fama": 0.77,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 84,
+   "peso": 0.917
   },
   {
-   "resposta": "Comores",
-   "apelidos": [],
+   "resposta": "Trinidad e Tobago",
+   "apelidos": [
+    "trindade e tobago",
+    "trinidad",
+    "trindade"
+   ],
    "sem_dado": false,
-   "icf": 15.687,
+   "icf": 11.292,
    "ajustado": true,
-   "percentil": 0.95,
-   "fama": 0.77,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "Salomão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.727,
-   "ajustado": true,
-   "percentil": 0.344,
+   "percentil": 0.282,
    "fama": 0.8,
-   "pontos": 82,
-   "peso": 0.906
-  },
-  {
-   "resposta": "São Cristóvão e Névis",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 5.798,
-   "ajustado": true,
-   "percentil": 0.0,
-   "fama": 0.83,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Vanuatu",
@@ -2275,32 +2411,23 @@
    "sem_dado": false,
    "icf": 15.087,
    "ajustado": true,
-   "percentil": 0.923,
+   "percentil": 0.896,
    "fama": 0.8,
-   "pontos": 83,
-   "peso": 0.911
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Marshall",
-   "apelidos": [],
+   "apelidos": [
+    "ilhas marshall"
+   ],
    "sem_dado": false,
    "icf": 12.762,
    "ajustado": true,
-   "percentil": 0.529,
+   "percentil": 0.523,
    "fama": 0.83,
-   "pontos": 84,
-   "peso": 0.917
-  },
-  {
-   "resposta": "São Vicente e Granadinas",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 8.176,
-   "ajustado": true,
-   "percentil": 0.018,
-   "fama": 0.83,
-   "pontos": 84,
-   "peso": 0.917
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Micronésia",
@@ -2308,7 +2435,7 @@
    "sem_dado": false,
    "icf": 15.749,
    "ajustado": true,
-   "percentil": 0.955,
+   "percentil": 0.925,
    "fama": 0.83,
    "pontos": 85,
    "peso": 0.922
@@ -2319,7 +2446,29 @@
    "sem_dado": false,
    "icf": 14.436,
    "ajustado": true,
-   "percentil": 0.846,
+   "percentil": 0.826,
+   "fama": 0.83,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "São Cristóvão e Névis",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 5.798,
+   "ajustado": true,
+   "percentil": 0.0,
+   "fama": 0.83,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "São Vicente e Granadinas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.176,
+   "ajustado": true,
+   "percentil": 0.017,
    "fama": 0.83,
    "pontos": 85,
    "peso": 0.922
@@ -2330,18 +2479,57 @@
    "sem_dado": false,
    "icf": 15.586,
    "ajustado": true,
-   "percentil": 0.946,
+   "percentil": 0.917,
    "fama": 0.83,
    "pontos": 85,
    "peso": 0.922
   },
   {
-   "resposta": "Kiribati",
+   "resposta": "Estados Federados da Micronésia",
+   "apelidos": [
+    "micronésia federada"
+   ],
+   "sem_dado": false,
+   "icf": 12.129,
+   "ajustado": true,
+   "percentil": 0.415,
+   "fama": 0.86,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Eswatini",
+   "apelidos": [
+    "essuatíni"
+   ],
+   "sem_dado": false,
+   "icf": 19.641,
+   "ajustado": true,
+   "percentil": 0.946,
+   "fama": 0.86,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Ilhas Marianas do Norte",
    "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.638,
+   "ajustado": true,
+   "percentil": 0.075,
+   "fama": 0.86,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Kiribati",
+   "apelidos": [
+    "quiribati"
+   ],
    "sem_dado": false,
    "icf": 15.962,
    "ajustado": true,
-   "percentil": 0.964,
+   "percentil": 0.934,
    "fama": 0.83,
    "pontos": 86,
    "peso": 0.927
@@ -2352,7 +2540,7 @@
    "sem_dado": false,
    "icf": 15.836,
    "ajustado": true,
-   "percentil": 0.959,
+   "percentil": 0.929,
    "fama": 0.83,
    "pontos": 86,
    "peso": 0.927
@@ -2363,73 +2551,261 @@
    "sem_dado": false,
    "icf": 8.026,
    "ajustado": true,
-   "percentil": 0.014,
+   "percentil": 0.012,
    "fama": 0.86,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Papua-Nova Guiné",
-   "apelidos": [],
+   "apelidos": [
+    "papua"
+   ],
    "sem_dado": false,
    "icf": 11.15,
    "ajustado": true,
-   "percentil": 0.235,
+   "percentil": 0.245,
    "fama": 0.84,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Abecásia",
+   "apelidos": [
+    "abkhazia"
+   ],
+   "sem_dado": false,
+   "icf": 16.973,
+   "ajustado": true,
+   "percentil": 0.942,
+   "fama": 0.9,
    "pontos": 87,
    "peso": 0.933
   },
   {
-   "resposta": "Estados Federados da Micronésia",
+   "resposta": "Nagorno-Karabakh",
+   "apelidos": [
+    "artsaque"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.881,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Ordem de Malta",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.129,
+   "icf": 10.183,
    "ajustado": true,
-   "percentil": 0.416,
-   "fama": 0.86,
+   "percentil": 0.137,
+   "fama": 0.881,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Sealand",
+   "apelidos": [
+    "principado de sealand"
+   ],
+   "sem_dado": false,
+   "icf": 13.774,
+   "ajustado": true,
+   "percentil": 0.697,
+   "fama": 0.881,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Somalilândia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.88,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Transnístria",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.88,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Alemanha Oriental",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.416,
+   "ajustado": true,
+   "percentil": 0.145,
+   "fama": 0.921,
    "pontos": 88,
    "peso": 0.938
   },
   {
-   "resposta": "Ilhas Marianas do Norte",
+   "resposta": "Império Otomano",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 9.638,
+   "icf": 12.138,
    "ajustado": true,
-   "percentil": 0.072,
-   "fama": 0.86,
+   "percentil": 0.427,
+   "fama": 0.922,
    "pontos": 88,
    "peso": 0.938
   },
   {
-   "resposta": "Abecásia",
+   "resposta": "Iugoslávia",
    "apelidos": [],
-   "sem_dado": false,
-   "icf": 16.973,
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.973,
-   "fama": 0.9,
+   "percentil": 0.975,
+   "fama": 0.92,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Prússia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.921,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Tchecoslováquia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.921,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "União Soviética",
+   "apelidos": [
+    "urss"
+   ],
+   "sem_dado": false,
+   "icf": 9.05,
+   "ajustado": true,
+   "percentil": 0.041,
+   "fama": 0.92,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Daomé",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.924,
    "pontos": 89,
    "peso": 0.943
   },
   {
-   "resposta": "Eswatini",
+   "resposta": "Rodésia",
    "apelidos": [],
-   "sem_dado": false,
-   "icf": 19.641,
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.977,
-   "fama": 0.86,
+   "percentil": 0.975,
+   "fama": 0.922,
    "pontos": 89,
    "peso": 0.943
+  },
+  {
+   "resposta": "Sião",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.926,
+   "ajustado": true,
+   "percentil": 0.544,
+   "fama": 0.923,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Tanganica",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.924,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Vietnã do Sul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.219,
+   "ajustado": true,
+   "percentil": 0.141,
+   "fama": 0.925,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Zanzibar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.299,
+   "ajustado": true,
+   "percentil": 0.776,
+   "fama": 0.925,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Biafra",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.925,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Iêmen do Sul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.946,
+   "ajustado": true,
+   "percentil": 0.216,
+   "fama": 0.926,
+   "pontos": 90,
+   "peso": 0.949
   },
   {
    "resposta": "República Turca de Chipre do Norte",
-   "apelidos": [],
+   "apelidos": [
+    "chipre do norte"
+   ],
    "sem_dado": false,
    "icf": 10.978,
    "ajustado": true,
-   "percentil": 0.208,
+   "percentil": 0.22,
    "fama": 0.93,
    "pontos": 90,
    "peso": 0.949
@@ -2440,7 +2816,7 @@
    "sem_dado": false,
    "icf": 12.89,
    "ajustado": true,
-   "percentil": 0.543,
+   "percentil": 0.535,
    "fama": 0.93,
    "pontos": 90,
    "peso": 0.949

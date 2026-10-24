@@ -9,21 +9,10 @@
    "sem_dado": false,
    "icf": 8.262,
    "ajustado": true,
-   "percentil": 0.0,
+   "percentil": 0.003,
    "fama": 0.01,
    "pontos": 8,
    "peso": 0.283
-  },
-  {
-   "resposta": "Lua",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.741,
-   "ajustado": true,
-   "percentil": 0.028,
-   "fama": 0.02,
-   "pontos": 9,
-   "peso": 0.3
   },
   {
    "resposta": "Marte",
@@ -31,10 +20,21 @@
    "sem_dado": false,
    "icf": 11.023,
    "ajustado": true,
-   "percentil": 0.07,
+   "percentil": 0.025,
    "fama": 0.01,
    "pontos": 9,
    "peso": 0.3
+  },
+  {
+   "resposta": "Lua",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.741,
+   "ajustado": true,
+   "percentil": 0.01,
+   "fama": 0.02,
+   "pontos": 10,
+   "peso": 0.316
   },
   {
    "resposta": "Júpiter",
@@ -42,10 +42,10 @@
    "sem_dado": false,
    "icf": 12.314,
    "ajustado": true,
-   "percentil": 0.113,
+   "percentil": 0.053,
    "fama": 0.04,
-   "pontos": 10,
-   "peso": 0.316
+   "pontos": 11,
+   "peso": 0.332
   },
   {
    "resposta": "Saturno",
@@ -53,19 +53,8 @@
    "sem_dado": false,
    "icf": 12.417,
    "ajustado": true,
-   "percentil": 0.155,
+   "percentil": 0.066,
    "fama": 0.05,
-   "pontos": 11,
-   "peso": 0.332
-  },
-  {
-   "resposta": "Mercúrio",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.12,
-   "ajustado": true,
-   "percentil": 0.099,
-   "fama": 0.1,
    "pontos": 12,
    "peso": 0.346
   },
@@ -75,10 +64,21 @@
    "sem_dado": false,
    "icf": 12.375,
    "ajustado": true,
-   "percentil": 0.141,
+   "percentil": 0.064,
    "fama": 0.08,
-   "pontos": 12,
-   "peso": 0.346
+   "pontos": 13,
+   "peso": 0.361
+  },
+  {
+   "resposta": "Mercúrio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.12,
+   "ajustado": true,
+   "percentil": 0.043,
+   "fama": 0.1,
+   "pontos": 14,
+   "peso": 0.374
   },
   {
    "resposta": "Plutão",
@@ -86,10 +86,10 @@
    "sem_dado": false,
    "icf": 12.98,
    "ajustado": true,
-   "percentil": 0.183,
+   "percentil": 0.079,
    "fama": 0.12,
-   "pontos": 13,
-   "peso": 0.361
+   "pontos": 15,
+   "peso": 0.387
   },
   {
    "resposta": "Netuno",
@@ -97,10 +97,10 @@
    "sem_dado": false,
    "icf": 13.264,
    "ajustado": true,
-   "percentil": 0.218,
+   "percentil": 0.093,
    "fama": 0.16,
-   "pontos": 14,
-   "peso": 0.374
+   "pontos": 18,
+   "peso": 0.424
   },
   {
    "resposta": "Urano",
@@ -108,10 +108,10 @@
    "sem_dado": false,
    "icf": 13.214,
    "ajustado": true,
-   "percentil": 0.197,
+   "percentil": 0.088,
    "fama": 0.18,
-   "pontos": 14,
-   "peso": 0.374
+   "pontos": 19,
+   "peso": 0.436
   },
   {
    "resposta": "Cometa Halley",
@@ -121,21 +121,23 @@
    "sem_dado": false,
    "icf": 12.332,
    "ajustado": true,
-   "percentil": 0.127,
+   "percentil": 0.061,
    "fama": 0.26,
-   "pontos": 15,
-   "peso": 0.387
+   "pontos": 20,
+   "peso": 0.447
   },
   {
    "resposta": "Europa",
-   "apelidos": [],
+   "apelidos": [
+    "Júpiter II"
+   ],
    "sem_dado": false,
    "icf": 9.196,
    "ajustado": true,
-   "percentil": 0.014,
+   "percentil": 0.005,
    "fama": 0.36,
-   "pontos": 18,
-   "peso": 0.424
+   "pontos": 21,
+   "peso": 0.458
   },
   {
    "resposta": "Titã",
@@ -145,10 +147,10 @@
    "sem_dado": false,
    "icf": 13.737,
    "ajustado": true,
-   "percentil": 0.268,
+   "percentil": 0.112,
    "fama": 0.38,
-   "pontos": 19,
-   "peso": 0.436
+   "pontos": 21,
+   "peso": 0.458
   },
   {
    "resposta": "Io",
@@ -156,10 +158,10 @@
    "sem_dado": false,
    "icf": 11.687,
    "ajustado": true,
-   "percentil": 0.085,
+   "percentil": 0.036,
    "fama": 0.4,
-   "pontos": 20,
-   "peso": 0.447
+   "pontos": 22,
+   "peso": 0.469
   },
   {
    "resposta": "Ganimedes",
@@ -167,10 +169,10 @@
    "sem_dado": false,
    "icf": 15.799,
    "ajustado": true,
-   "percentil": 0.38,
+   "percentil": 0.176,
    "fama": 0.44,
-   "pontos": 21,
-   "peso": 0.458
+   "pontos": 23,
+   "peso": 0.48
   },
   {
    "resposta": "Ceres",
@@ -178,10 +180,10 @@
    "sem_dado": false,
    "icf": 13.576,
    "ajustado": true,
-   "percentil": 0.239,
+   "percentil": 0.104,
    "fama": 0.52,
-   "pontos": 22,
-   "peso": 0.469
+   "pontos": 24,
+   "peso": 0.49
   },
   {
    "resposta": "Fobos",
@@ -191,21 +193,10 @@
    "sem_dado": false,
    "icf": 16.13,
    "ajustado": true,
-   "percentil": 0.451,
+   "percentil": 0.193,
    "fama": 0.52,
-   "pontos": 23,
-   "peso": 0.48
-  },
-  {
-   "resposta": "Deimos",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.923,
-   "ajustado": true,
-   "percentil": 0.423,
-   "fama": 0.56,
-   "pontos": 24,
-   "peso": 0.49
+   "pontos": 25,
+   "peso": 0.5
   },
   {
    "resposta": "Caronte",
@@ -215,10 +206,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.56,
-   "pontos": 25,
-   "peso": 0.5
+   "pontos": 26,
+   "peso": 0.51
+  },
+  {
+   "resposta": "Deimos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.923,
+   "ajustado": true,
+   "percentil": 0.183,
+   "fama": 0.56,
+   "pontos": 26,
+   "peso": 0.51
   },
   {
    "resposta": "Calisto",
@@ -226,10 +228,10 @@
    "sem_dado": false,
    "icf": 14.557,
    "ajustado": true,
-   "percentil": 0.296,
+   "percentil": 0.132,
    "fama": 0.58,
-   "pontos": 26,
-   "peso": 0.51
+   "pontos": 27,
+   "peso": 0.52
   },
   {
    "resposta": "Tritão",
@@ -239,10 +241,10 @@
    "sem_dado": false,
    "icf": 15.129,
    "ajustado": true,
-   "percentil": 0.324,
+   "percentil": 0.15,
    "fama": 0.6,
-   "pontos": 26,
-   "peso": 0.51
+   "pontos": 28,
+   "peso": 0.529
   },
   {
    "resposta": "Encélado",
@@ -252,10 +254,10 @@
    "sem_dado": false,
    "icf": 16.288,
    "ajustado": true,
-   "percentil": 0.479,
+   "percentil": 0.198,
    "fama": 0.6,
-   "pontos": 27,
-   "peso": 0.52
+   "pontos": 29,
+   "peso": 0.539
   },
   {
    "resposta": "Éris",
@@ -263,21 +265,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.62,
-   "pontos": 28,
-   "peso": 0.529
-  },
-  {
-   "resposta": "Vesta",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.66,
-   "pontos": 29,
-   "peso": 0.539
+   "pontos": 30,
+   "peso": 0.548
   },
   {
    "resposta": "Miranda",
@@ -285,10 +276,21 @@
    "sem_dado": false,
    "icf": 10.661,
    "ajustado": true,
-   "percentil": 0.042,
+   "percentil": 0.013,
    "fama": 0.68,
-   "pontos": 30,
-   "peso": 0.548
+   "pontos": 31,
+   "peso": 0.557
+  },
+  {
+   "resposta": "Vesta",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.66,
+   "pontos": 31,
+   "peso": 0.557
   },
   {
    "resposta": "Titânia",
@@ -296,10 +298,10 @@
    "sem_dado": false,
    "icf": 16.042,
    "ajustado": true,
-   "percentil": 0.437,
+   "percentil": 0.188,
    "fama": 0.68,
-   "pontos": 31,
-   "peso": 0.557
+   "pontos": 32,
+   "peso": 0.566
   },
   {
    "resposta": "Mimas",
@@ -307,10 +309,10 @@
    "sem_dado": false,
    "icf": 16.239,
    "ajustado": true,
-   "percentil": 0.465,
+   "percentil": 0.196,
    "fama": 0.7,
-   "pontos": 32,
-   "peso": 0.566
+   "pontos": 33,
+   "peso": 0.574
   },
   {
    "resposta": "Hale-Bopp",
@@ -318,10 +320,23 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.7,
-   "pontos": 33,
-   "peso": 0.574
+   "pontos": 34,
+   "peso": 0.583
+  },
+  {
+   "resposta": "Higia",
+   "apelidos": [
+    "hygiea"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.701,
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Oberon",
@@ -329,167 +344,432 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.7,
-   "pontos": 34,
-   "peso": 0.583
-  },
-  {
-   "resposta": "Juno",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.582,
-   "ajustado": true,
-   "percentil": 0.254,
-   "fama": 0.72,
    "pontos": 35,
    "peso": 0.592
   },
   {
-   "resposta": "Apófis",
+   "resposta": "Cibele",
    "apelidos": [
-    "apophis"
+    "cybele"
    ],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.72,
+   "percentil": 0.615,
+   "fama": 0.702,
    "pontos": 36,
    "peso": 0.6
   },
   {
-   "resposta": "Ariel",
+   "resposta": "Davida",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.72,
+   "percentil": 0.615,
+   "fama": 0.702,
+   "pontos": 36,
+   "peso": 0.6
+  },
+  {
+   "resposta": "Euphrosyne",
+   "apelidos": [
+    "eufrósine"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.702,
    "pontos": 37,
    "peso": 0.608
   },
   {
-   "resposta": "Tétis",
+   "resposta": "Interamnia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.702,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Silvia",
    "apelidos": [
-    "tethys"
+    "sylvia"
    ],
    "sem_dado": false,
-   "icf": 15.451,
+   "icf": 12.689,
    "ajustado": true,
-   "percentil": 0.338,
-   "fama": 0.74,
+   "percentil": 0.076,
+   "fama": 0.703,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Hektor",
+   "apelidos": [
+    "heitor"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.703,
    "pontos": 38,
    "peso": 0.616
   },
   {
-   "resposta": "Reia",
+   "resposta": "Kleopatra",
    "apelidos": [
-    "rhea"
+    "cleópatra"
    ],
    "sem_dado": false,
-   "icf": 15.727,
+   "icf": 13.874,
    "ajustado": true,
-   "percentil": 0.352,
-   "fama": 0.74,
+   "percentil": 0.115,
+   "fama": 0.704,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Eunomia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.442,
+   "ajustado": true,
+   "percentil": 0.224,
+   "fama": 0.704,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Herculina",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.704,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Lutetia",
+   "apelidos": [
+    "lutécia"
+   ],
+   "sem_dado": false,
+   "icf": 16.022,
+   "ajustado": true,
+   "percentil": 0.186,
+   "fama": 0.705,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Annefrank",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.705,
    "pontos": 40,
    "peso": 0.632
   },
   {
-   "resposta": "Eros",
+   "resposta": "Mathilde",
+   "apelidos": [
+    "matilde"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.705,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Braille",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.442,
+   "icf": 13.212,
    "ajustado": true,
-   "percentil": 0.169,
-   "fama": 0.76,
+   "percentil": 0.084,
+   "fama": 0.706,
    "pontos": 41,
    "peso": 0.64
   },
   {
-   "resposta": "Bennu",
+   "resposta": "Geographos",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.76,
+   "percentil": 0.615,
+   "fama": 0.706,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Steins",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.705,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Icarus",
+   "apelidos": [
+    "ícaro"
+   ],
+   "sem_dado": false,
+   "icf": 13.706,
+   "ajustado": true,
+   "percentil": 0.109,
+   "fama": 0.707,
    "pontos": 42,
    "peso": 0.648
   },
   {
-   "resposta": "Dione",
+   "resposta": "Toutatis",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.76,
+   "percentil": 0.615,
+   "fama": 0.706,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Florence",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.707,
    "pontos": 43,
    "peso": 0.656
   },
   {
-   "resposta": "Jápeto",
-   "apelidos": [
-    "iapetus"
-   ],
+   "resposta": "Ganymed",
+   "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.76,
+   "percentil": 0.615,
+   "fama": 0.708,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Phaethon",
+   "apelidos": [
+    "faetonte"
+   ],
+   "sem_dado": false,
+   "icf": 17.209,
+   "ajustado": true,
+   "percentil": 0.209,
+   "fama": 0.707,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "2024 YR4",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.709,
    "pontos": 44,
    "peso": 0.663
   },
   {
-   "resposta": "Shoemaker-Levy 9",
-   "apelidos": [
-    "shoemaker-levy"
-   ],
+   "resposta": "Ixion",
+   "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.76,
+   "percentil": 0.615,
+   "fama": 0.71,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Logos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.535,
+   "ajustado": true,
+   "percentil": 0.071,
+   "fama": 0.711,
    "pontos": 45,
    "peso": 0.671
   },
   {
-   "resposta": "Hidra",
+   "resposta": "Varda",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.71,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Varuna",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.71,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Chaos",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.245,
+   "icf": 15.007,
    "ajustado": true,
-   "percentil": 0.282,
-   "fama": 0.8,
+   "percentil": 0.148,
+   "fama": 0.711,
    "pontos": 46,
    "peso": 0.678
   },
   {
-   "resposta": "Febe",
-   "apelidos": [
-    "phoebe"
-   ],
-   "sem_dado": false,
-   "icf": 15.836,
+   "resposta": "Huya",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.394,
-   "fama": 0.8,
-   "pontos": 48,
-   "peso": 0.693
+   "percentil": 0.615,
+   "fama": 0.711,
+   "pontos": 46,
+   "peso": 0.678
   },
   {
-   "resposta": "Hipérion",
+   "resposta": "Salacia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.606,
+   "ajustado": true,
+   "percentil": 0.229,
+   "fama": 0.711,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Ceto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.548,
+   "ajustado": true,
+   "percentil": 0.165,
+   "fama": 0.712,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Chiron",
    "apelidos": [
-    "hyperion"
+    "quíron"
    ],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.8,
+   "percentil": 0.615,
+   "fama": 0.712,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Bienor",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.713,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Chariklo",
+   "apelidos": [
+    "cariclo"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.713,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Typhon",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.712,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Nessus",
+   "apelidos": [
+    "nesso"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.713,
    "pontos": 49,
    "peso": 0.7
+  },
+  {
+   "resposta": "Pholus",
+   "apelidos": [
+    "folo"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.713,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Asbolus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.714,
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Dáctilo",
@@ -499,10 +779,380 @@
    "sem_dado": false,
    "icf": 18.529,
    "ajustado": true,
-   "percentil": 0.521,
+   "percentil": 0.226,
    "fama": 0.92,
    "pontos": 50,
    "peso": 0.707
+  },
+  {
+   "resposta": "Hidalgo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.714,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Tempel-Tuttle",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.714,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Borrelly",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.715,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Hartley 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.715,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Biela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.007,
+   "ajustado": true,
+   "percentil": 0.117,
+   "fama": 0.716,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Holmes",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.716,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Swift-Tuttle",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.715,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Ikeya-Seki",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.717,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Wirtanen",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.716,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Kohoutek",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.717,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Lovejoy",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.717,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "West",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.717,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Pons-Brooks",
+   "apelidos": [
+    "cometa diabo"
+   ],
+   "sem_dado": false,
+   "icf": 11.513,
+   "ajustado": true,
+   "percentil": 0.031,
+   "fama": 0.718,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Tsuchinshan-ATLAS",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.812,
+   "ajustado": true,
+   "percentil": 0.039,
+   "fama": 0.718,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "C/2020 F3",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.719,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Hyakutake",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.719,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "ISON",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.718,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Juno",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.582,
+   "ajustado": true,
+   "percentil": 0.107,
+   "fama": 0.72,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "McNaught",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.719,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Apófis",
+   "apelidos": [
+    "apophis"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.72,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Ariel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.72,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Bennu",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.76,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Dione",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.76,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Eros",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.442,
+   "ajustado": true,
+   "percentil": 0.069,
+   "fama": 0.76,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Jápeto",
+   "apelidos": [
+    "iapetus"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.76,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Reia",
+   "apelidos": [
+    "rhea"
+   ],
+   "sem_dado": false,
+   "icf": 15.727,
+   "ajustado": true,
+   "percentil": 0.17,
+   "fama": 0.74,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Tétis",
+   "apelidos": [
+    "tethys"
+   ],
+   "sem_dado": false,
+   "icf": 15.451,
+   "ajustado": true,
+   "percentil": 0.16,
+   "fama": 0.74,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Febe",
+   "apelidos": [
+    "phoebe"
+   ],
+   "sem_dado": false,
+   "icf": 15.836,
+   "ajustado": true,
+   "percentil": 0.178,
+   "fama": 0.8,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Haumea",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.82,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Hidra",
+   "apelidos": [
+    "Hydra",
+    "S/2005 p 1"
+   ],
+   "sem_dado": false,
+   "icf": 14.245,
+   "ajustado": true,
+   "percentil": 0.12,
+   "fama": 0.8,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Hipérion",
+   "apelidos": [
+    "hyperion",
+    "Hiperião"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.8,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Makemake",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.82,
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Neowise",
@@ -510,21 +1160,23 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.8,
-   "pontos": 50,
-   "peso": 0.707
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Nix",
-   "apelidos": [],
+   "apelidos": [
+    "S/2005 P 2"
+   ],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.8,
-   "pontos": 51,
-   "peso": 0.714
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Palas",
@@ -534,32 +1186,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.8,
-   "pontos": 52,
-   "peso": 0.721
-  },
-  {
-   "resposta": "Haumea",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.82,
-   "pontos": 53,
-   "peso": 0.728
-  },
-  {
-   "resposta": "Makemake",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.82,
-   "pontos": 55,
-   "peso": 0.742
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Sedna",
@@ -567,21 +1197,70 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.82,
-   "pontos": 56,
-   "peso": 0.748
+   "pontos": 61,
+   "peso": 0.781
   },
   {
-   "resposta": "Umbriel",
+   "resposta": "Shoemaker-Levy 9",
+   "apelidos": [
+    "shoemaker-levy"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.76,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Alexhelios",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.82,
-   "pontos": 57,
-   "peso": 0.755
+   "percentil": 0.615,
+   "fama": 0.852,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Amalteia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.943,
+   "ajustado": true,
+   "percentil": 0.221,
+   "fama": 0.84,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Disnomia",
+   "apelidos": [
+    "Dysnomia",
+    "S/2005 (2003 ub313) 1"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.85,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Equidna",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.601,
+   "ajustado": true,
+   "percentil": 0.204,
+   "fama": 0.852,
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Ida",
@@ -589,10 +1268,21 @@
    "sem_dado": false,
    "icf": 10.779,
    "ajustado": true,
-   "percentil": 0.056,
+   "percentil": 0.018,
    "fama": 0.84,
-   "pontos": 58,
-   "peso": 0.762
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Proteu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.488,
+   "ajustado": true,
+   "percentil": 0.201,
+   "fama": 0.84,
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Psique",
@@ -602,32 +1292,10 @@
    "sem_dado": false,
    "icf": 13.264,
    "ajustado": true,
-   "percentil": 0.218,
+   "percentil": 0.093,
    "fama": 0.84,
-   "pontos": 60,
-   "peso": 0.775
-  },
-  {
-   "resposta": "Proteu",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 16.488,
-   "ajustado": true,
-   "percentil": 0.493,
-   "fama": 0.84,
-   "pontos": 61,
-   "peso": 0.781
-  },
-  {
-   "resposta": "Amalteia",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 17.943,
-   "ajustado": true,
-   "percentil": 0.507,
-   "fama": 0.84,
-   "pontos": 63,
-   "peso": 0.794
+   "pontos": 62,
+   "peso": 0.787
   },
   {
    "resposta": "Ryugu",
@@ -635,21 +1303,269 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.84,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "S/2011 1",
+   "apelidos": [
+    "S/2011 P 1"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.851,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Umbriel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.82,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "2024 PT5",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.853,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cleoselene",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.852,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Hipocampo",
+   "apelidos": [
+    "S/2004 N 1"
+   ],
+   "sem_dado": false,
+   "icf": 14.57,
+   "ajustado": true,
+   "percentil": 0.135,
+   "fama": 0.855,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Hiʻiaka",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.855,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Nunam",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.853,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Petit-Prince",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.854,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Rômulo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.854,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "S/2001 (2001 QW322) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.852,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Selam",
+   "apelidos": [
+    "Selam (satélite)"
+   ],
+   "sem_dado": false,
+   "icf": 15.319,
+   "ajustado": true,
+   "percentil": 0.155,
+   "fama": 0.853,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Urano XXVIII",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.214,
+   "ajustado": true,
+   "percentil": 0.088,
+   "fama": 0.854,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Bianca",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.859,
    "pontos": 64,
    "peso": 0.8
   },
   {
-   "resposta": "Nereida",
+   "resposta": "Cordélia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.858,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Créssida",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.859,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Linus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.855,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Menoetius",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.858,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Namaka",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.858,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Ofélia",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 15.847,
+   "icf": 14.299,
    "ajustado": true,
-   "percentil": 0.408,
-   "fama": 0.86,
-   "pontos": 66,
-   "peso": 0.812
+   "percentil": 0.122,
+   "fama": 0.859,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Pichi üñëm",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.5,
+   "ajustado": true,
+   "percentil": 0.13,
+   "fama": 0.858,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "S/2011 J 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.855,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "S/2011 J 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.856,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Belinda",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.861,
+   "pontos": 65,
+   "peso": 0.806
   },
   {
    "resposta": "Churyumov-Gerasimenko",
@@ -659,10 +1575,32 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.86,
-   "pontos": 67,
-   "peso": 0.819
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Cupido",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.362,
+   "ajustado": true,
+   "percentil": 0.099,
+   "fama": 0.861,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Desdêmona",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.86,
+   "pontos": 65,
+   "peso": 0.806
   },
   {
    "resposta": "Itokawa",
@@ -670,21 +1608,635 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.86,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Julieta",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.86,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Nereida",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.847,
+   "ajustado": true,
+   "percentil": 0.181,
+   "fama": 0.86,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Perdita",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.322,
+   "ajustado": true,
+   "percentil": 0.211,
+   "fama": 0.861,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Pórcia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.86,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Rosalinda",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.86,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Égide",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.346,
+   "ajustado": true,
+   "percentil": 0.097,
+   "fama": 0.862,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Gorgoneion",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.863,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Ilmarë",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.863,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Mab",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.862,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Náiade",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.441,
+   "ajustado": true,
+   "percentil": 0.214,
+   "fama": 0.863,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Puck",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.862,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "S/2001 (47171) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.864,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "S/2002 (48639) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.864,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "S/2005 (82075) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.865,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "S/2007 (208996) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.865,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Thorondor",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.865,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Adrasteia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.866,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Carpo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.687,
+   "ajustado": true,
+   "percentil": 0.14,
+   "fama": 0.868,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Elara",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.868,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Euante",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.869,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Euporia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.868,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Himalia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.867,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Leda",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.484,
+   "ajustado": true,
+   "percentil": 0.102,
+   "fama": 0.867,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Lisiteia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.867,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Tebe",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.866,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Temisto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.116,
+   "ajustado": true,
+   "percentil": 0.997,
+   "fama": 0.867,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Aitne",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.872,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Harpalique",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.87,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Helique",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.869,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Hermipe",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.871,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Iocasta",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.87,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Mneme",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.871,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Ortósia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 21.606,
+   "ajustado": true,
+   "percentil": 1.0,
+   "fama": 0.87,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Praxidique",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.87,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Telxinoi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.869,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Tione",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.871,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Ananke",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.872,
    "pontos": 69,
    "peso": 0.831
   },
   {
-   "resposta": "Pã",
-   "apelidos": [
-    "pan"
-   ],
-   "sem_dado": false,
-   "icf": 14.864,
+   "resposta": "Aoede",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.31,
-   "fama": 0.88,
+   "percentil": 0.615,
+   "fama": 0.874,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Caldene",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.873,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Cale",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.021,
+   "ajustado": true,
+   "percentil": 0.081,
+   "fama": 0.873,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Calicore",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.874,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Carme",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.102,
+   "ajustado": true,
+   "percentil": 0.191,
+   "fama": 0.875,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Cavaleiro Negro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.706,
+   "ajustado": true,
+   "percentil": 0.015,
+   "fama": 0.873,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Erinome",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.874,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Herse",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.872,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Taigete",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.873,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Arque",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.35,
+   "ajustado": true,
+   "percentil": 0.158,
+   "fama": 0.877,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Autonoe",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.878,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Calique",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.778,
+   "ajustado": true,
+   "percentil": 0.232,
+   "fama": 0.875,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Caliroe",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.875,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Cilene",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.876,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Esponde",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.878,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Euquelade",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.876,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Euridome",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.875,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Hegemone",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.877,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Pasife",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.877,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Pasite",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.876,
    "pontos": 70,
    "peso": 0.837
   },
@@ -694,7 +2246,40 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
+   "fama": 0.88,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Atlas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.812,
+   "ajustado": true,
+   "percentil": 0.039,
+   "fama": 0.88,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Coré",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.669,
+   "ajustado": true,
+   "percentil": 0.168,
+   "fama": 0.879,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Dafne",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.426,
+   "ajustado": true,
+   "percentil": 0.125,
    "fama": 0.88,
    "pontos": 71,
    "peso": 0.843
@@ -705,21 +2290,102 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.88,
-   "pontos": 73,
-   "peso": 0.854
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Dimorphos",
+   "resposta": "Isonoe",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
+   "fama": 0.878,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Megaclite",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.879,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Prometeu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.466,
+   "ajustado": true,
+   "percentil": 0.028,
    "fama": 0.88,
-   "pontos": 74,
-   "peso": 0.86
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Pã",
+   "apelidos": [
+    "pan"
+   ],
+   "sem_dado": false,
+   "icf": 14.864,
+   "ajustado": true,
+   "percentil": 0.145,
+   "fama": 0.88,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Sinope",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.878,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Aegaeon",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.882,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Anthe",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.882,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Dimorphos",
+   "apelidos": [
+    "S/2003 (65803) 1"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.88,
+   "pontos": 72,
+   "peso": 0.849
   },
   {
    "resposta": "Encke",
@@ -727,10 +2393,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.88,
-   "pontos": 76,
-   "peso": 0.872
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Epimeteu",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.881,
+   "pontos": 72,
+   "peso": 0.849
   },
   {
    "resposta": "Gaspra",
@@ -738,10 +2415,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.88,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Jano",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.881,
+   "pontos": 72,
+   "peso": 0.849
   },
   {
    "resposta": "Orcus",
@@ -749,10 +2437,21 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.88,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Pandora",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.594,
+   "ajustado": true,
+   "percentil": 0.074,
+   "fama": 0.881,
+   "pontos": 72,
+   "peso": 0.849
   },
   {
    "resposta": "Quaoar",
@@ -760,10 +2459,597 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.88,
-   "pontos": 80,
-   "peso": 0.894
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Calipso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.154,
+   "ajustado": true,
+   "percentil": 0.153,
+   "fama": 0.883,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Helene",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.796,
+   "ajustado": true,
+   "percentil": 0.142,
+   "fama": 0.883,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Ijiraq",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.885,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Kiviuq",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.885,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Methone",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.882,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Paaliaq",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.885,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Palene",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.882,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Polideuces",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.884,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Remo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.231,
+   "ajustado": true,
+   "percentil": 0.046,
+   "fama": 0.884,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Telesto",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.883,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Albiorix",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.886,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Bebhionn",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.886,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Erriapo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.887,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Greip",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.887,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Hyrrokkin",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.888,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Siarnaq",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.888,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Skathi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.886,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Skoll",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.887,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Tarqeq",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.887,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Tarvos",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.888,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Aegir",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.89,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Bergelmir",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.89,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Bestla",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.891,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Farbauti",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.892,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Jarnsaxa",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.889,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Mundilfari",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.89,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Narvi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.891,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "S/2004 S 12",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.891,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "S/2004 S 13",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.889,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "S/2004 S 17",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.889,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "S/2006 S 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.89,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Fenrir",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.893,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Fornjot",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.894,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Hati",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.893,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Kari",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.894,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Loge",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.895,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "S/2004 S 7",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.892,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "S/2006 S 3",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.893,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Surtur",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.894,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Suttungr",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.892,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Thrymr",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.893,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Caliban",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.897,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Francisco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.201,
+   "ajustado": true,
+   "percentil": 0.008,
+   "fama": 0.897,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "S/2000 (90) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.898,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "S/2004 S 3",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.897,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "S/2004 S 4",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.897,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "S/2004 S 6",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.896,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "S/2007 S 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.896,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "S/2007 S 3",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.896,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "S/2009 S 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.895,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Ymir",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.895,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Estige",
+   "apelidos": [
+    "styx",
+    "S/2012 1",
+    "P5"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.9,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Gonggong",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.9,
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Kerberos",
@@ -773,45 +3059,178 @@
    "sem_dado": false,
    "icf": 15.728,
    "ajustado": true,
-   "percentil": 0.366,
+   "percentil": 0.173,
    "fama": 0.9,
-   "pontos": 81,
-   "peso": 0.9
-  },
-  {
-   "resposta": "Estige",
-   "apelidos": [
-    "styx"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.9,
-   "pontos": 83,
-   "peso": 0.911
-  },
-  {
-   "resposta": "Gonggong",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.768,
-   "fama": 0.9,
-   "pontos": 84,
-   "peso": 0.917
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Metis",
+   "apelidos": [
+    "Jupiter XVI",
+    "S / 1979 J3"
+   ],
+   "sem_dado": false,
+   "icf": 12.314,
+   "ajustado": true,
+   "percentil": 0.053,
+   "fama": 0.9,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "S/2001 (26308) 1",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
+   "fama": 0.898,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "S/2002 (2000 CF105) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.898,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "S/2002 (2001 QC298) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.899,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "S/2003 (130) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.899,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "S/2003 (134860) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.899,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "S/2003 (2003 QY90) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
    "fama": 0.9,
-   "pontos": 86,
-   "peso": 0.927
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "S/2003 (2003 UN284) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.9,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "S/2004 (139775) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.9,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "S/2004 (2000 CQ114) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.9,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "S/2005 (1999 OJ4) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.901,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "S/2005 (2005 EO304) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.901,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "S/2005 (80806) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.901,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "S/2006 (1999 RT214) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.902,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "S/2006 (2000 QL251) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.902,
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Tempel 1",
@@ -819,10 +3238,10 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.9,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Wild 2",
@@ -830,10 +3249,1203 @@
    "sem_dado": true,
    "icf": 20.0,
    "ajustado": true,
-   "percentil": 0.768,
+   "percentil": 0.615,
    "fama": 0.9,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "S/2006 (60458) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.902,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (119979) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.902,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (123509) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.903,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (148780) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.903,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (160256) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.903,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (182933) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.904,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (2001 FL185) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.904,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (2001 XR254) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.904,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (2003 QA91) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.905,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (2003 QR91) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.905,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (2003 WU188) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.905,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "S/2007 (275809) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.905,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2007 (60621) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.906,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2008  1",
+   "apelidos": [
+    "S/2008 (41) 1"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.908,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2008 (119067) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.906,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2008 (160091) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.907,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2008 (2001 QQ322) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.907,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2008 (2006 SF369) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.907,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2008 (303712) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.908,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2008 (364171) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.908,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Tinia (satélite)",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.488,
+   "ajustado": true,
+   "percentil": 0.127,
+   "fama": 0.906,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "S/2009 (1999 XY143) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.908,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2009 (2002 XH91) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.909,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2009 (2003 YU179) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.909,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2011 (2001 XP254) 1",
+   "apelidos": [
+    "S/2008 (469420) 1"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.909,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2011 (2004 KH19) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.91,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2011 (2005 EF298) 1",
+   "apelidos": [
+    "S/2009 (2005 EF298) 1"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.91,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2011 (2005 VZ122) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.91,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2011 (2006 BR284) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.911,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2011 (229762) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.911,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "S/2011 (82157) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.911,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Ferdinand",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.914,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Margaret",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.913,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Prospero",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.578,
+   "ajustado": true,
+   "percentil": 0.137,
+   "fama": 0.913,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "S/2000 J 11",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.914,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "S/2003 J 12",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.914,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "S/2012 (2003 FE128) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.912,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Satélite de 38628 Huya",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.856,
+   "ajustado": true,
+   "percentil": 0.022,
+   "fama": 0.912,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Stephano",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.912,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sycorax",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.913,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Trinculo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.912,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Despina",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.915,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Galateia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.704,
+   "ajustado": true,
+   "percentil": 0.216,
+   "fama": 0.915,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Halimede",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.916,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Laomedeia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.917,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Larissa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.685,
+   "ajustado": true,
+   "percentil": 0.033,
+   "fama": 0.916,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Neso",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.917,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Psámata",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.917,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Sao",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 5.798,
+   "ajustado": true,
+   "percentil": 0.0,
+   "fama": 0.916,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Setebos",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.914,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Talassa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.916,
+   "ajustado": true,
+   "percentil": 0.219,
+   "fama": 0.915,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "S/2003 (283) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.92,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2003 (379) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.92,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2004 (854) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.92,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2006 (624) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.919,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2007 (939) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.919,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2009 (317) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.919,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2013 (1052) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.918,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2014 (130) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.918,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2014 (130) 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.918,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2015 (357439) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.917,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "S/2000 (762) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.921,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2001 (107) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.921,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2003 J 10",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.922,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2003 J 18",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.922,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2003 J 19",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.923,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2003 J 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.923,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2003 J 3",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.921,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2003 J 4",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.923,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2003 J 9",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.922,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2005 (809) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.92,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "S/2003 J 15",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.924,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "S/2003 J 16",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.924,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "S/2003 J 23",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.924,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "S/2003 J 5",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.923,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "S/2007 (2001 RZ143) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.926,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "S/2009",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.927,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "S/2009 (1999 RY214) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.926,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "S/2015 (136472) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.925,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Sawiskera",
+   "apelidos": [
+    "(88611) Teharonhiawako I Sawiskera"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.925,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Zoe",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.461,
+   "ajustado": true,
+   "percentil": 0.163,
+   "fama": 0.925,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Actaea",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.932,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Ersa",
+   "apelidos": [
+    "S/2018 J 1"
+   ],
+   "sem_dado": false,
+   "icf": 17.141,
+   "ajustado": true,
+   "percentil": 0.206,
+   "fama": 0.934,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Júpiter LIV",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.314,
+   "ajustado": true,
+   "percentil": 0.053,
+   "fama": 0.928,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Júpiter LIX",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.314,
+   "ajustado": true,
+   "percentil": 0.053,
+   "fama": 0.928,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "S/2000 (1998 WW31) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.928,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "S/2004 (45) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.933,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "S/2005 (1862) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.932,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "S/2010 (225088) 1",
+   "apelidos": [
+    "S/2016 (225088) 1"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.927,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "S/2012",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.927,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "S/2016 J 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.934,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "S/2017 J 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.935,
    "pontos": 89,
    "peso": 0.943
+  },
+  {
+   "resposta": "S/2017 J 3",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.936,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "S/2017 J 4",
+   "apelidos": [
+    "Pandia"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.934,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "S/2017 J 5",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.935,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "S/2017 J 6",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.936,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "S/2017 J 7",
+   "apelidos": [
+    "Jupiter LXVIII"
+   ],
+   "sem_dado": false,
+   "icf": 12.314,
+   "ajustado": true,
+   "percentil": 0.053,
+   "fama": 0.936,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "S/2017 J 8",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.935,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "S/2017 J 9",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.935,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Vanth",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.937,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Weywot (satélite)",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.856,
+   "ajustado": true,
+   "percentil": 0.022,
+   "fama": 0.938,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "2020 CD3",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.939,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Fórcis",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.938,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Pabu",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.939,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "S/2002 (121) 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.939,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "S/2010 J 1",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.938,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "S/2010 J 2",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.94,
+   "pontos": 90,
+   "peso": 0.949
   }
  ],
  "fonte_peso": "icf",

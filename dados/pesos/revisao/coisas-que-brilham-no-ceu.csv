@@ -1,46 +1,242 @@
 resposta,apelidos,icf,sem_dado,percentil,fama,peso,pontos,ajustado
-Sol,,8.778,False,0.0,0.01,0.283,8,True
-Lua,,9.741,False,0.091,0.02,0.3,9,True
-Estrela,estrelas,9.793,False,0.114,0.03,0.316,10,True
-Planeta,planetas,9.552,False,0.045,0.15,0.346,12,True
-Cometa,,12.332,False,0.614,0.15,0.361,13,True
-Fogos de artifício,fogos | fogos de artificio,12.093,False,0.545,0.2,0.374,14,True
-Meteoro,estrela cadente | meteoros,13.216,False,0.795,0.2,0.387,15,True
-Avião,,10.186,False,0.159,0.25,0.424,18,True
-Raio,relâmpago | relampago,10.595,False,0.205,0.3,0.447,20,True
-Satélite,satélites,10.856,False,0.273,0.3,0.458,21,True
-Marte,,11.023,False,0.295,0.35,0.48,23,True
-Arco-íris,arco-iris,11.103,False,0.341,0.35,0.49,24,True
-Aurora,aurora boreal | aurora austral,11.593,False,0.432,0.35,0.51,26,True
-Galáxia,galáxias,11.861,False,0.5,0.35,0.529,28,True
-Estação Espacial Internacional,ISS | estação espacial,9.686,False,0.068,0.4,0.539,29,True
-Via Láctea,Via Lactea,10.838,False,0.25,0.4,0.557,31,True
-Balão,balão junino,11.594,False,0.455,0.4,0.566,32,True
-Constelação,constelações,12.446,False,0.682,0.4,0.583,34,True
-Três Marias,Cinturão de Órion,10.291,False,0.182,0.45,0.592,35,True
-Lanterna chinesa,lanterna de papel | balão de papel,11.188,False,0.364,0.45,0.608,37,True
-Helicóptero,,11.714,False,0.477,0.45,0.624,39,True
-Júpiter,Jupiter,12.314,False,0.591,0.45,0.64,41,True
-Vênus,Venus | estrela d'alva | estrela dalva,12.375,False,0.636,0.45,0.656,43,True
-Foguete,,12.517,False,0.705,0.45,0.671,45,True
-Drone,drones,13.171,False,0.773,0.48,0.678,46,True
-Saturno,,12.417,False,0.659,0.5,0.693,48,True
-Cruzeiro do Sul,,9.139,False,0.023,0.55,0.707,50,True
-Vaga-lume,vagalume | pirilampo,10.706,False,0.227,0.7,0.707,50,True
-Estrela Polar,Polaris,11.067,False,0.318,0.55,0.721,52,True
-Mercúrio,,12.12,False,0.568,0.6,0.735,54,True
-Nebulosa,,13.316,False,0.818,0.6,0.748,56,True
-Starlink,trem de satélites,11.217,False,0.386,0.62,0.762,58,True
-OVNI,disco voador | óvni,12.747,False,0.727,0.643,0.775,60,False
-Fogo-de-santelmo,fogo de santelmo,12.883,False,0.75,0.661,0.787,62,False
-Halo solar,halo,11.43,False,0.409,0.7,0.819,67,True
-Plêiades,Sete Estrelo | sete-estrelo,15.007,False,0.909,0.7,0.831,69,True
-Sírius,Sirius,20.0,True,0.989,0.7,0.849,72,True
-Supernova,,13.884,False,0.841,0.739,0.86,74,False
-Betelgeuse,,20.0,True,0.989,0.75,0.872,76,True
-Sinalizador,,13.985,False,0.864,0.756,0.883,78,False
-Holofote,canhão de luz,14.129,False,0.886,0.774,0.9,81,False
-Bólido,bola de fogo,15.074,False,0.932,0.819,0.911,83,False
-Nuvem noctilucente,,15.343,False,0.955,0.838,0.922,85,False
-Luz zodiacal,,11.893,False,0.523,0.88,0.938,88,True
-Sprite,raio vermelho,9.994,False,0.136,0.95,0.949,90,True
+Sol,,8.778,False,0.029,0.01,0.283,8,True
+Lua,,9.741,False,0.117,0.02,0.316,10,True
+Estrela,estrelas,9.793,False,0.135,0.03,0.346,12,True
+Planeta,planetas,9.552,False,0.1,0.15,0.361,13,True
+Cometa,,12.332,False,0.617,0.15,0.387,15,True
+Fogos de artifício,fogos | fogos de artificio,12.093,False,0.579,0.2,0.424,18,True
+Meteoro,estrela cadente | meteoros,13.216,False,0.733,0.2,0.436,19,True
+Avião,,10.186,False,0.183,0.25,0.458,21,True
+Raio,relâmpago | relampago,10.595,False,0.279,0.3,0.469,22,True
+Satélite,satélites,10.856,False,0.325,0.3,0.49,24,True
+Marte,,11.023,False,0.383,0.35,0.5,25,True
+Arco-íris,arco-iris,11.103,False,0.417,0.35,0.52,27,True
+Aurora,aurora boreal | aurora austral,11.593,False,0.496,0.35,0.529,28,True
+Galáxia,galáxias,11.861,False,0.537,0.35,0.548,30,True
+Estação Espacial Internacional,ISS | estação espacial,9.686,False,0.104,0.4,0.557,31,True
+Via Láctea,Via Lactea,10.838,False,0.317,0.4,0.574,33,True
+Balão,balão junino,11.594,False,0.5,0.4,0.583,34,True
+Constelação,constelações,12.446,False,0.65,0.4,0.592,35,True
+Lanterna chinesa,lanterna de papel | balão de papel,11.188,False,0.438,0.45,0.6,36,True
+Três Marias,Cinturão de Órion,10.291,False,0.208,0.45,0.6,36,True
+Helicóptero,,11.714,False,0.512,0.45,0.608,37,True
+Júpiter,Jupiter,12.314,False,0.6,0.45,0.616,38,True
+Vênus,Venus | estrela d'alva | estrela dalva,12.375,False,0.633,0.45,0.616,38,True
+Foguete,,12.517,False,0.656,0.45,0.624,39,True
+Drone,drones,13.171,False,0.725,0.48,0.632,40,True
+Sol da meia-noite,,8.694,False,0.025,0.5,0.632,40,True
+Lua cheia,,9.777,False,0.129,0.5,0.64,41,True
+Lua nova,lua crescente | lua minguante,8.607,False,0.017,0.501,0.648,42,True
+Saturno,,12.417,False,0.646,0.5,0.648,42,True
+Lua de sangue,eclipse lunar,9.508,False,0.096,0.501,0.656,43,True
+Eclipse solar,eclipse,10.968,False,0.375,0.501,0.663,44,True
+Superlua,,15.72,False,0.887,0.501,0.663,44,True
+Contas de Baily,,9.176,False,0.062,0.502,0.671,45,True
+Anel de diamante,,11.139,False,0.425,0.502,0.678,46,True
+Coroa solar,,10.282,False,0.204,0.502,0.678,46,True
+Arco lunar,arco-íris lunar,11.445,False,0.467,0.503,0.686,47,True
+Halo lunar,,12.582,False,0.667,0.503,0.686,47,True
+Luz cinérea,,13.265,False,0.75,0.503,0.693,48,True
+Arco circunzenital,,15.513,False,0.875,0.504,0.7,49,True
+Pilar solar,pilar de luz,10.907,False,0.354,0.504,0.7,49,True
+Parélio,cão do sol,18.775,False,0.917,0.504,0.707,50,True
+Vaga-lume,vagalume | pirilampo,10.706,False,0.296,0.7,0.707,50,True
+Céu vermelho,,9.302,False,0.075,0.505,0.714,51,True
+Raio verde,flash verde,9.766,False,0.121,0.505,0.714,51,True
+Alvorada,aurora da manhã,11.793,False,0.533,0.505,0.721,52,True
+Crepúsculo,pôr do sol | nascer do sol,11.944,False,0.554,0.505,0.728,53,True
+Glória,,10.132,False,0.171,0.506,0.728,53,True
+Nuvem nacarada,,10.857,False,0.335,0.506,0.735,54,True
+Coroa,,10.555,False,0.267,0.507,0.742,55,True
+Nuvens iridescentes,iridescência,17.351,False,0.904,0.506,0.742,55,True
+Chuva de meteoros,,11.574,False,0.492,0.507,0.748,56,True
+Leônidas,,20.0,True,0.963,0.507,0.755,57,True
+Perseidas,,16.497,False,0.9,0.507,0.755,57,True
+Eta Aquáridas,,12.776,False,0.679,0.508,0.762,58,True
+Dracônidas,,20.0,True,0.963,0.509,0.775,60,True
+Gemínidas,,20.0,True,0.963,0.508,0.775,60,True
+Líridas,,20.0,True,0.963,0.509,0.775,60,True
+Oriônidas,,20.0,True,0.963,0.508,0.775,60,True
+Cometa Hale-Bopp,hale-bopp,12.332,False,0.617,0.51,0.781,61,True
+Cometa Halley,halley,12.332,False,0.617,0.51,0.781,61,True
+Cometa NEOWISE,neowise,12.332,False,0.617,0.51,0.781,61,True
+Cometa Shoemaker-Levy,,12.332,False,0.617,0.51,0.781,61,True
+Cometa Tsuchinshan-ATLAS,,12.072,False,0.571,0.511,0.781,61,True
+Quadrântidas,,20.0,True,0.963,0.509,0.781,61,True
+Asteroide,,13.261,False,0.74,0.512,0.787,62,True
+Cometa Hyakutake,,12.332,False,0.617,0.511,0.787,62,True
+Cometa McNaught,,12.332,False,0.617,0.511,0.787,62,True
+Estação Espacial Tiangong,tiangong,10.217,False,0.192,0.513,0.787,62,True
+Lixo espacial,,10.397,False,0.229,0.512,0.787,62,True
+Meteorito,,13.927,False,0.808,0.512,0.787,62,True
+Estrela vespertina,,9.793,False,0.135,0.514,0.794,63,True
+Netuno,,13.264,False,0.746,0.514,0.794,63,True
+Plutão,,12.98,False,0.692,0.515,0.794,63,True
+Satélite Iridium,flash iridium,10.856,False,0.325,0.513,0.794,63,True
+Telescópio Hubble,hubble,12.554,False,0.662,0.513,0.794,63,True
+Urano,,13.214,False,0.729,0.514,0.794,63,True
+Caixa de Joias,,10.16,False,0.179,0.517,0.8,64,True
+Ceres,,13.576,False,0.779,0.515,0.8,64,True
+Galáxia de Andrômeda,andrômeda,13.101,False,0.717,0.515,0.8,64,True
+Nebulosa de Órion,,13.868,False,0.796,0.516,0.8,64,True
+Nebulosa do Caranguejo,,13.086,False,0.708,0.516,0.8,64,True
+Nuvens de Magalhães,grande nuvem de magalhães | pequena nuvem de magalhães,8.922,False,0.042,0.516,0.8,64,True
+Saco de Carvão,,10.873,False,0.342,0.516,0.8,64,True
+Aglomerado,,13.106,False,0.721,0.517,0.806,65,True
+Híades,,18.107,False,0.908,0.518,0.806,65,True
+Nova,,7.472,False,0.0,0.519,0.806,65,True
+Omega Centauri,,12.376,False,0.637,0.517,0.806,65,True
+Presépio,,12.897,False,0.688,0.518,0.806,65,True
+Quasar,,14.635,False,0.854,0.518,0.806,65,True
+Buraco negro,,10.422,False,0.242,0.519,0.812,66,True
+Estrela variável,,10.413,False,0.237,0.52,0.812,66,True
+Explosão de raios gama,,10.74,False,0.304,0.52,0.812,66,True
+Gigante vermelha,,10.383,False,0.221,0.52,0.812,66,True
+Kilonova,,20.0,True,0.963,0.52,0.812,66,True
+Pulsar,,13.089,False,0.713,0.519,0.812,66,True
+Alfa Centauri,,11.553,False,0.487,0.521,0.819,67,True
+Anã branca,,11.679,False,0.508,0.521,0.819,67,True
+Arcturus,,20.0,True,0.963,0.522,0.819,67,True
+Canopus,,20.0,True,0.963,0.522,0.819,67,True
+Estrela binária,,11.747,False,0.517,0.521,0.819,67,True
+Rigel,,18.343,False,0.912,0.522,0.819,67,True
+Aldebarã,,20.0,True,0.963,0.523,0.825,68,True
+Altair,,13.443,False,0.771,0.524,0.825,68,True
+Antares,,13.951,False,0.812,0.523,0.825,68,True
+Capela,,11.057,False,0.396,0.523,0.825,68,True
+Prócion,,19.184,False,0.921,0.524,0.825,68,True
+Vega,,20.0,True,0.963,0.522,0.825,68,True
+Achernar,,20.0,True,0.963,0.524,0.831,69,True
+Castor,,13.433,False,0.767,0.526,0.831,69,True
+Deneb,,20.0,True,0.963,0.525,0.831,69,True
+Espiga,,13.568,False,0.775,0.525,0.831,69,True
+Fomalhaut,,20.0,True,0.963,0.525,0.831,69,True
+Pólux,,16.425,False,0.896,0.526,0.831,69,True
+Régulo,,15.98,False,0.892,0.525,0.831,69,True
+Acrux,,20.0,True,0.963,0.526,0.837,70,True
+Escorpião,,12.392,False,0.642,0.527,0.837,70,True
+Grande Carro,,7.695,False,0.004,0.528,0.837,70,True
+Hadar,,20.0,True,0.963,0.527,0.837,70,True
+Mimosa,,13.664,False,0.792,0.527,0.837,70,True
+Ursa Maior,,10.668,False,0.292,0.528,0.837,70,True
+Cão Maior,,8.855,False,0.037,0.529,0.843,71,True
+Leão,,10.437,False,0.25,0.53,0.843,71,True
+Touro,,11.927,False,0.55,0.529,0.843,71,True
+Triângulo de Verão,,10.388,False,0.225,0.529,0.843,71,True
+Ursa Menor,,11.377,False,0.454,0.528,0.843,71,True
+Órion,,14.42,False,0.842,0.528,0.843,71,True
+Gegenschein,contraluz,15.567,False,0.879,0.531,0.849,72,True
+Gêmeos,,11.768,False,0.529,0.53,0.849,72,True
+Jato azul,,9.92,False,0.158,0.532,0.849,72,True
+Luminescência atmosférica,airglow,15.675,False,0.883,0.531,0.849,72,True
+Sagitário,,13.018,False,0.7,0.53,0.849,72,True
+Zodíaco,,12.663,False,0.671,0.531,0.849,72,True
+Elfo,elfos,13.644,False,0.787,0.532,0.854,73,True
+Incêndio florestal,queimada,10.939,False,0.362,0.534,0.854,73,True
+Raio difuso,,12.077,False,0.575,0.533,0.854,73,True
+Relâmpago globular,raio bola,13.974,False,0.817,0.533,0.854,73,True
+Steve,arco steve,10.575,False,0.271,0.532,0.854,73,True
+Trovoada,,13.873,False,0.8,0.533,0.854,73,True
+Vulcão em erupção,vulcão,9.771,False,0.125,0.534,0.854,73,True
+Cinza vulcânica,,10.484,False,0.254,0.535,0.86,74,True
+Lava,,10.623,False,0.283,0.535,0.86,74,True
+Luzes da cidade,,9.004,False,0.05,0.536,0.86,74,True
+Poluição luminosa,,11.081,False,0.412,0.535,0.86,74,True
+Relâmpago de calor,,11.08,False,0.408,0.534,0.86,74,True
+Tempestade,,11.218,False,0.446,0.534,0.86,74,True
+Farol,,10.829,False,0.312,0.537,0.866,75,True
+Holofotes de estádio,,11.456,False,0.473,0.536,0.866,75,True
+Laser,,10.893,False,0.35,0.537,0.866,75,True
+Reflexo da cidade,,9.303,False,0.079,0.536,0.866,75,True
+Show de drones,,11.047,False,0.388,0.537,0.866,75,True
+Show de laser,,9.912,False,0.154,0.537,0.866,75,True
+Balão de ar quente,,9.88,False,0.15,0.538,0.872,76,True
+Caça,avião de caça,10.646,False,0.287,0.539,0.872,76,True
+Dirigível,zepelim,14.621,False,0.85,0.538,0.872,76,True
+Jato,,10.781,False,0.308,0.539,0.872,76,True
+Paraquedista com sinalizador,,11.014,False,0.379,0.538,0.872,76,True
+Planador,,14.386,False,0.838,0.539,0.872,76,True
+Cápsula espacial,,11.629,False,0.504,0.54,0.877,77,True
+Foguete da SpaceX,falcon 9,12.517,False,0.656,0.54,0.877,77,True
+Míssil,,12.991,False,0.696,0.54,0.877,77,True
+Satélite de GPS,,10.856,False,0.325,0.541,0.877,77,True
+Satélite geoestacionário,,13.292,False,0.758,0.541,0.877,77,True
+Sonda espacial,,11.456,False,0.473,0.541,0.877,77,True
+Ônibus espacial,,10.207,False,0.188,0.54,0.877,77,True
+Balão de festa,,10.092,False,0.167,0.543,0.883,78,True
+Espelho espacial,,10.586,False,0.275,0.542,0.883,78,True
+Lua artificial,,10.412,False,0.233,0.542,0.883,78,True
+Pipa,,12.012,False,0.562,0.542,0.883,78,True
+Pipa com luz,pipa iluminada,8.339,False,0.013,0.543,0.883,78,True
+Vela,,10.961,False,0.371,0.543,0.883,78,True
+Bolha de sabão,,11.758,False,0.521,0.544,0.889,79,True
+Busca-pé,,8.828,False,0.033,0.545,0.889,79,True
+Estrelinha,,13.29,False,0.754,0.545,0.889,79,True
+Fogos de réveillon,,12.158,False,0.588,0.544,0.889,79,True
+Lanterna flutuante,,11.763,False,0.525,0.543,0.889,79,True
+Purpurina,glitter,14.151,False,0.833,0.544,0.889,79,True
+Chuvinha de fogos,,13.041,False,0.704,0.546,0.894,80,True
+Fogos de São João,,8.657,False,0.021,0.547,0.894,80,True
+Foguete de sinalização,,11.988,False,0.558,0.546,0.894,80,True
+Morteiro,,15.209,False,0.867,0.546,0.894,80,True
+Rojão,,14.47,False,0.846,0.545,0.894,80,True
+Sinalizador de emergência,,12.236,False,0.596,0.546,0.894,80,True
+Arco-íris branco,arco de névoa,10.31,False,0.212,0.549,0.9,81,True
+Chuva,,9.494,False,0.092,0.549,0.9,81,True
+Disco solar,,9.736,False,0.113,0.548,0.9,81,True
+Estrela de Belém,,10.158,False,0.175,0.547,0.9,81,True
+Estrela-guia,,9.414,False,0.083,0.547,0.9,81,True
+Nuvem,,10.857,False,0.335,0.548,0.9,81,True
+Nuvem lenticular,,13.261,False,0.74,0.548,0.9,81,True
+Arco-íris duplo,,10.892,False,0.346,0.549,0.906,82,True
+Cristais de gelo,,11.148,False,0.429,0.549,0.906,82,True
+Cruzeiro do Sul,,9.139,False,0.058,0.55,0.906,82,True
+Estrela Polar,Polaris,11.067,False,0.404,0.55,0.906,82,True
+Lâmpada de poste,,11.403,False,0.458,0.55,0.906,82,True
+Prédio iluminado,,10.941,False,0.367,0.55,0.906,82,True
+Aeroporto,,9.813,False,0.142,0.552,0.911,83,True
+Antena com luz,,8.049,False,0.008,0.551,0.911,83,True
+Poste,,11.476,False,0.479,0.55,0.911,83,True
+Sinal de luz,,8.954,False,0.046,0.552,0.911,83,True
+Torre de TV,,10.518,False,0.26,0.551,0.911,83,True
+Torre de rádio,,9.876,False,0.146,0.551,0.911,83,True
+Bat-sinal,,9.447,False,0.087,0.553,0.917,84,True
+Brasas,,13.613,False,0.783,0.553,0.917,84,True
+Cristo Redentor iluminado,,10.928,False,0.358,0.552,0.917,84,True
+Faíscas,,14.058,False,0.825,0.553,0.917,84,True
+Fogo,,9.225,False,0.067,0.554,0.917,84,True
+Torre Eiffel,,10.518,False,0.26,0.552,0.917,84,True
+Chamas,,11.492,False,0.483,0.554,0.922,85,True
+Espelho,,10.252,False,0.2,0.555,0.922,85,True
+Fogueira,,12.029,False,0.567,0.554,0.922,85,True
+Medalha,,11.059,False,0.4,0.555,0.922,85,True
+Moeda,,10.43,False,0.246,0.555,0.922,85,True
+Vidro,,9.724,False,0.108,0.555,0.922,85,True
+Bola de discoteca,globo espelhado,11.107,False,0.421,0.556,0.927,86,True
+LED,,20.0,True,0.963,0.556,0.927,86,True
+Lanterna,,11.168,False,0.433,0.557,0.927,86,True
+Lâmpada,,11.329,False,0.45,0.557,0.927,86,True
+Neon,,12.194,False,0.592,0.556,0.927,86,True
+Sol de inverno,,9.243,False,0.071,0.557,0.927,86,True
+Sol de verão,,9.025,False,0.054,0.558,0.927,86,True
+Constelação do Cruzeiro do Sul,,10.242,False,0.196,0.559,0.933,87,True
+Céu estrelado,,10.712,False,0.3,0.558,0.933,87,True
+Estrela Antares,,11.872,False,0.542,0.559,0.933,87,True
+Mercúrio,,12.12,False,0.583,0.6,0.933,87,True
+Sol nascente,,10.356,False,0.217,0.558,0.933,87,True
+Sol poente,,11.054,False,0.392,0.558,0.933,87,True
+Fogo-de-santelmo,fogo de santelmo,12.883,False,0.683,0.615,0.938,88,False
+Halo solar,halo,11.43,False,0.463,0.7,0.938,88,True
+Nebulosa,,13.316,False,0.762,0.6,0.938,88,True
+OVNI,disco voador | óvni,12.747,False,0.675,0.607,0.938,88,False
+Starlink,trem de satélites,11.217,False,0.442,0.62,0.938,88,True
+Betelgeuse,,20.0,True,0.963,0.75,0.943,89,True
+Holofote,canhão de luz,14.129,False,0.829,0.734,0.943,89,False
+Plêiades,Sete Estrelo | sete-estrelo,15.007,False,0.858,0.7,0.943,89,True
+Sinalizador,,13.985,False,0.821,0.726,0.943,89,False
+Supernova,,13.884,False,0.804,0.713,0.943,89,False
+Sírius,Sirius,20.0,True,0.963,0.7,0.943,89,True
+Bólido,bola de fogo,15.074,False,0.863,0.77,0.949,90,False
+Luz zodiacal,,11.893,False,0.546,0.88,0.949,90,True
+Nuvem noctilucente,,15.343,False,0.871,0.78,0.949,90,False
+Sprite,raio vermelho,9.994,False,0.163,0.95,0.949,90,True

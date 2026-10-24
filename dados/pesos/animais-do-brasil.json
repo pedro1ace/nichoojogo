@@ -4,43 +4,37 @@
  "pergunta": "Cite um animal da fauna brasileira",
  "respostas": [
   {
-   "resposta": "Onça-pintada",
-   "apelidos": [
-    "onça",
-    "jaguar"
-   ],
-   "sem_dado": false,
-   "icf": 12.129,
-   "ajustado": true,
-   "percentil": 0.279,
-   "fama": 0.01,
-   "pontos": 8,
-   "peso": 0.283
-  },
-  {
    "resposta": "Arara",
    "apelidos": [
     "arara-azul",
-    "arara-vermelha"
+    "arara-vermelha",
+    "arara-canindé",
+    "arara-azul-grande",
+    "arara-vermelha-grande"
    ],
    "sem_dado": false,
    "icf": 12.881,
    "ajustado": true,
-   "percentil": 0.382,
+   "percentil": 0.444,
    "fama": 0.04,
-   "pontos": 9,
-   "peso": 0.3
+   "pontos": 8,
+   "peso": 0.283
   },
   {
-   "resposta": "Capivara",
-   "apelidos": [],
+   "resposta": "Onça-pintada",
+   "apelidos": [
+    "onça",
+    "jaguar",
+    "onça preta",
+    "canguçu"
+   ],
    "sem_dado": false,
-   "icf": 13.814,
+   "icf": 12.129,
    "ajustado": true,
-   "percentil": 0.515,
-   "fama": 0.06,
-   "pontos": 10,
-   "peso": 0.316
+   "percentil": 0.332,
+   "fama": 0.01,
+   "pontos": 8,
+   "peso": 0.283
   },
   {
    "resposta": "Mico-leão-dourado",
@@ -50,8 +44,30 @@
    "sem_dado": false,
    "icf": 11.225,
    "ajustado": true,
-   "percentil": 0.162,
+   "percentil": 0.197,
    "fama": 0.06,
+   "pontos": 9,
+   "peso": 0.3
+  },
+  {
+   "resposta": "Capivara",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.814,
+   "ajustado": true,
+   "percentil": 0.561,
+   "fama": 0.06,
+   "pontos": 10,
+   "peso": 0.316
+  },
+  {
+   "resposta": "Jacaré",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.314,
+   "ajustado": true,
+   "percentil": 0.367,
+   "fama": 0.1,
    "pontos": 10,
    "peso": 0.316
   },
@@ -61,34 +77,51 @@
    "sem_dado": false,
    "icf": 11.714,
    "ajustado": true,
-   "percentil": 0.206,
+   "percentil": 0.271,
    "fama": 0.08,
-   "pontos": 11,
-   "peso": 0.332
-  },
-  {
-   "resposta": "Jacaré",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.314,
-   "ajustado": true,
-   "percentil": 0.294,
-   "fama": 0.1,
-   "pontos": 12,
-   "peso": 0.346
+   "pontos": 10,
+   "peso": 0.316
   },
   {
    "resposta": "Bicho-preguiça",
    "apelidos": [
-    "preguiça"
+    "preguiça",
+    "preguiça-de-três-dedos",
+    "preguiça-de-coleira",
+    "preguiça-real"
    ],
    "sem_dado": false,
    "icf": 11.064,
    "ajustado": true,
-   "percentil": 0.147,
+   "percentil": 0.177,
    "fama": 0.12,
-   "pontos": 13,
-   "peso": 0.361
+   "pontos": 11,
+   "peso": 0.332
+  },
+  {
+   "resposta": "Boto-cor-de-rosa",
+   "apelidos": [
+    "boto",
+    "boto-vermelho"
+   ],
+   "sem_dado": false,
+   "icf": 10.265,
+   "ajustado": true,
+   "percentil": 0.066,
+   "fama": 0.16,
+   "pontos": 12,
+   "peso": 0.346
+  },
+  {
+   "resposta": "Lobo-guará",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.006,
+   "ajustado": true,
+   "percentil": 0.31,
+   "fama": 0.18,
+   "pontos": 12,
+   "peso": 0.346
   },
   {
    "resposta": "Tamanduá",
@@ -98,34 +131,10 @@
    "sem_dado": false,
    "icf": 14.249,
    "ajustado": true,
-   "percentil": 0.588,
+   "percentil": 0.607,
    "fama": 0.14,
-   "pontos": 13,
-   "peso": 0.361
-  },
-  {
-   "resposta": "Boto-cor-de-rosa",
-   "apelidos": [
-    "boto"
-   ],
-   "sem_dado": false,
-   "icf": 10.265,
-   "ajustado": true,
-   "percentil": 0.059,
-   "fama": 0.16,
-   "pontos": 14,
-   "peso": 0.374
-  },
-  {
-   "resposta": "Lobo-guará",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.006,
-   "ajustado": true,
-   "percentil": 0.25,
-   "fama": 0.18,
-   "pontos": 15,
-   "peso": 0.387
+   "pontos": 12,
+   "peso": 0.346
   },
   {
    "resposta": "Papagaio",
@@ -133,10 +142,10 @@
    "sem_dado": false,
    "icf": 12.347,
    "ajustado": true,
-   "percentil": 0.309,
+   "percentil": 0.368,
    "fama": 0.2,
-   "pontos": 18,
-   "peso": 0.424
+   "pontos": 13,
+   "peso": 0.361
   },
   {
    "resposta": "Anta",
@@ -144,21 +153,10 @@
    "sem_dado": false,
    "icf": 13.006,
    "ajustado": true,
-   "percentil": 0.412,
+   "percentil": 0.46,
    "fama": 0.24,
-   "pontos": 19,
-   "peso": 0.436
-  },
-  {
-   "resposta": "Tatu",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.105,
-   "ajustado": true,
-   "percentil": 0.441,
-   "fama": 0.24,
-   "pontos": 20,
-   "peso": 0.447
+   "pontos": 14,
+   "peso": 0.374
   },
   {
    "resposta": "Sucuri",
@@ -168,10 +166,21 @@
    "sem_dado": false,
    "icf": 14.397,
    "ajustado": true,
-   "percentil": 0.603,
+   "percentil": 0.63,
    "fama": 0.26,
-   "pontos": 21,
-   "peso": 0.458
+   "pontos": 14,
+   "peso": 0.374
+  },
+  {
+   "resposta": "Tatu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.105,
+   "ajustado": true,
+   "percentil": 0.468,
+   "fama": 0.24,
+   "pontos": 14,
+   "peso": 0.374
   },
   {
    "resposta": "Jiboia",
@@ -179,21 +188,10 @@
    "sem_dado": false,
    "icf": 15.223,
    "ajustado": true,
-   "percentil": 0.765,
+   "percentil": 0.712,
    "fama": 0.3,
-   "pontos": 22,
-   "peso": 0.469
-  },
-  {
-   "resposta": "Tartaruga-marinha",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.496,
-   "ajustado": true,
-   "percentil": 0.191,
-   "fama": 0.32,
-   "pontos": 23,
-   "peso": 0.48
+   "pontos": 15,
+   "peso": 0.387
   },
   {
    "resposta": "Piranha",
@@ -201,34 +199,27 @@
    "sem_dado": false,
    "icf": 12.738,
    "ajustado": true,
-   "percentil": 0.338,
+   "percentil": 0.425,
    "fama": 0.34,
-   "pontos": 24,
-   "peso": 0.49
+   "pontos": 18,
+   "peso": 0.424
   },
   {
-   "resposta": "Sagui",
+   "resposta": "Tartaruga-marinha",
    "apelidos": [
-    "mico"
+    "tartaruga-verde",
+    "tartaruga-de-couro",
+    "tartaruga-cabeçuda",
+    "tartaruga-de-pente",
+    "tartaruga-oliva"
    ],
    "sem_dado": false,
-   "icf": 15.673,
+   "icf": 11.496,
    "ajustado": true,
-   "percentil": 0.853,
-   "fama": 0.36,
-   "pontos": 25,
-   "peso": 0.5
-  },
-  {
-   "resposta": "Beija-flor",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.659,
-   "ajustado": true,
-   "percentil": 0.088,
-   "fama": 0.38,
-   "pontos": 26,
-   "peso": 0.51
+   "percentil": 0.238,
+   "fama": 0.32,
+   "pontos": 18,
+   "peso": 0.424
   },
   {
    "resposta": "Peixe-boi",
@@ -236,10 +227,26 @@
    "sem_dado": false,
    "icf": 10.641,
    "ajustado": true,
-   "percentil": 0.074,
+   "percentil": 0.107,
    "fama": 0.38,
-   "pontos": 26,
-   "peso": 0.51
+   "pontos": 19,
+   "peso": 0.436
+  },
+  {
+   "resposta": "Sagui",
+   "apelidos": [
+    "mico",
+    "sagui-de-tufo-branco",
+    "sagui-de-tufo-preto",
+    "soim"
+   ],
+   "sem_dado": false,
+   "icf": 15.673,
+   "ajustado": true,
+   "percentil": 0.76,
+   "fama": 0.36,
+   "pontos": 19,
+   "peso": 0.436
   },
   {
    "resposta": "Ariranha",
@@ -247,10 +254,21 @@
    "sem_dado": false,
    "icf": 14.692,
    "ajustado": true,
-   "percentil": 0.706,
+   "percentil": 0.66,
    "fama": 0.4,
-   "pontos": 27,
-   "peso": 0.52
+   "pontos": 20,
+   "peso": 0.447
+  },
+  {
+   "resposta": "Beija-flor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.659,
+   "ajustado": true,
+   "percentil": 0.112,
+   "fama": 0.38,
+   "pontos": 20,
+   "peso": 0.447
   },
   {
    "resposta": "Quati",
@@ -258,21 +276,10 @@
    "sem_dado": false,
    "icf": 15.481,
    "ajustado": true,
-   "percentil": 0.809,
+   "percentil": 0.739,
    "fama": 0.4,
-   "pontos": 28,
-   "peso": 0.529
-  },
-  {
-   "resposta": "Tatu-bola",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.23,
-   "ajustado": true,
-   "percentil": 0.176,
-   "fama": 0.42,
-   "pontos": 29,
-   "peso": 0.539
+   "pontos": 20,
+   "peso": 0.447
   },
   {
    "resposta": "Macaco-prego",
@@ -280,21 +287,21 @@
    "sem_dado": false,
    "icf": 12.085,
    "ajustado": true,
-   "percentil": 0.265,
+   "percentil": 0.327,
    "fama": 0.42,
-   "pontos": 30,
-   "peso": 0.548
+   "pontos": 21,
+   "peso": 0.458
   },
   {
-   "resposta": "Urubu",
+   "resposta": "Tatu-bola",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.116,
+   "icf": 11.23,
    "ajustado": true,
-   "percentil": 0.456,
-   "fama": 0.44,
-   "pontos": 31,
-   "peso": 0.557
+   "percentil": 0.198,
+   "fama": 0.42,
+   "pontos": 21,
+   "peso": 0.458
   },
   {
    "resposta": "Sabiá",
@@ -302,10 +309,21 @@
    "sem_dado": false,
    "icf": 13.243,
    "ajustado": true,
-   "percentil": 0.471,
+   "percentil": 0.49,
    "fama": 0.44,
-   "pontos": 32,
-   "peso": 0.566
+   "pontos": 22,
+   "peso": 0.469
+  },
+  {
+   "resposta": "Urubu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.116,
+   "ajustado": true,
+   "percentil": 0.47,
+   "fama": 0.44,
+   "pontos": 22,
+   "peso": 0.469
   },
   {
    "resposta": "Jabuti",
@@ -313,10 +331,378 @@
    "sem_dado": false,
    "icf": 13.383,
    "ajustado": true,
-   "percentil": 0.485,
+   "percentil": 0.509,
    "fama": 0.44,
+   "pontos": 23,
+   "peso": 0.48
+  },
+  {
+   "resposta": "Leão-marinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.595,
+   "ajustado": true,
+   "percentil": 0.099,
+   "fama": 0.45,
+   "pontos": 23,
+   "peso": 0.48
+  },
+  {
+   "resposta": "Lobo-marinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.801,
+   "ajustado": true,
+   "percentil": 0.136,
+   "fama": 0.45,
+   "pontos": 23,
+   "peso": 0.48
+  },
+  {
+   "resposta": "Baleia-azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.54,
+   "ajustado": true,
+   "percentil": 0.086,
+   "fama": 0.451,
+   "pontos": 24,
+   "peso": 0.49
+  },
+  {
+   "resposta": "Baleia-franca",
+   "apelidos": [
+    "baleia-franca-austral"
+   ],
+   "sem_dado": false,
+   "icf": 11.54,
+   "ajustado": true,
+   "percentil": 0.244,
+   "fama": 0.451,
+   "pontos": 24,
+   "peso": 0.49
+  },
+  {
+   "resposta": "Golfinho",
+   "apelidos": [
+    "golfinho-nariz-de-garrafa",
+    "boto-flíper"
+   ],
+   "sem_dado": false,
+   "icf": 13.223,
+   "ajustado": true,
+   "percentil": 0.486,
+   "fama": 0.451,
+   "pontos": 25,
+   "peso": 0.5
+  },
+  {
+   "resposta": "Raia",
+   "apelidos": [
+    "arraia",
+    "raia-manta",
+    "jamanta"
+   ],
+   "sem_dado": false,
+   "icf": 12.678,
+   "ajustado": true,
+   "percentil": 0.418,
+   "fama": 0.452,
+   "pontos": 25,
+   "peso": 0.5
+  },
+  {
+   "resposta": "Tubarão",
+   "apelidos": [
+    "tubarão-martelo",
+    "tubarão-tigre",
+    "tubarão-baleia",
+    "tubarão-cabeça-chata"
+   ],
+   "sem_dado": false,
+   "icf": 11.795,
+   "ajustado": true,
+   "percentil": 0.286,
+   "fama": 0.452,
+   "pontos": 25,
+   "peso": 0.5
+  },
+  {
+   "resposta": "Cachalote",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.378,
+   "ajustado": true,
+   "percentil": 0.727,
+   "fama": 0.452,
+   "pontos": 26,
+   "peso": 0.51
+  },
+  {
+   "resposta": "Orca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.282,
+   "ajustado": true,
+   "percentil": 0.616,
+   "fama": 0.452,
+   "pontos": 26,
+   "peso": 0.51
+  },
+  {
+   "resposta": "Cavalo-marinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.574,
+   "ajustado": true,
+   "percentil": 0.095,
+   "fama": 0.453,
+   "pontos": 27,
+   "peso": 0.52
+  },
+  {
+   "resposta": "Estrela-do-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.187,
+   "ajustado": true,
+   "percentil": 0.007,
+   "fama": 0.453,
+   "pontos": 27,
+   "peso": 0.52
+  },
+  {
+   "resposta": "Polvo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.624,
+   "ajustado": true,
+   "percentil": 0.406,
+   "fama": 0.453,
+   "pontos": 27,
+   "peso": 0.52
+  },
+  {
+   "resposta": "Caranguejo",
+   "apelidos": [
+    "caranguejo-uçá"
+   ],
+   "sem_dado": false,
+   "icf": 12.856,
+   "ajustado": true,
+   "percentil": 0.441,
+   "fama": 0.454,
+   "pontos": 28,
+   "peso": 0.529
+  },
+  {
+   "resposta": "Lula",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.407,
+   "ajustado": true,
+   "percentil": 0.011,
+   "fama": 0.454,
+   "pontos": 28,
+   "peso": 0.529
+  },
+  {
+   "resposta": "Camarão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.505,
+   "ajustado": true,
+   "percentil": 0.241,
+   "fama": 0.455,
+   "pontos": 29,
+   "peso": 0.539
+  },
+  {
+   "resposta": "Lagosta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.162,
+   "ajustado": true,
+   "percentil": 0.474,
+   "fama": 0.455,
+   "pontos": 29,
+   "peso": 0.539
+  },
+  {
+   "resposta": "Siri",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.96,
+   "ajustado": true,
+   "percentil": 0.451,
+   "fama": 0.454,
+   "pontos": 29,
+   "peso": 0.539
+  },
+  {
+   "resposta": "Guaiamum",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.509,
+   "ajustado": true,
+   "percentil": 0.824,
+   "fama": 0.455,
+   "pontos": 30,
+   "peso": 0.548
+  },
+  {
+   "resposta": "Ostra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.557,
+   "ajustado": true,
+   "percentil": 0.526,
+   "fama": 0.455,
+   "pontos": 30,
+   "peso": 0.548
+  },
+  {
+   "resposta": "Peixe-boi-marinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.678,
+   "ajustado": true,
+   "percentil": 0.118,
+   "fama": 0.456,
+   "pontos": 31,
+   "peso": 0.557
+  },
+  {
+   "resposta": "Água-viva",
+   "apelidos": [
+    "caravela"
+   ],
+   "sem_dado": false,
+   "icf": 8.855,
+   "ajustado": true,
+   "percentil": 0.004,
+   "fama": 0.456,
+   "pontos": 31,
+   "peso": 0.557
+  },
+  {
+   "resposta": "Mexilhão",
+   "apelidos": [
+    "marisco"
+   ],
+   "sem_dado": false,
+   "icf": 14.537,
+   "ajustado": true,
+   "percentil": 0.646,
+   "fama": 0.456,
+   "pontos": 32,
+   "peso": 0.566
+  },
+  {
+   "resposta": "Peixe-boi-da-amazônia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.641,
+   "ajustado": true,
+   "percentil": 0.107,
+   "fama": 0.457,
+   "pontos": 32,
+   "peso": 0.566
+  },
+  {
+   "resposta": "Pinguim",
+   "apelidos": [
+    "pinguim-de-magalhães"
+   ],
+   "sem_dado": false,
+   "icf": 12.823,
+   "ajustado": true,
+   "percentil": 0.439,
+   "fama": 0.457,
+   "pontos": 32,
+   "peso": 0.566
+  },
+  {
+   "resposta": "Gaivota",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.143,
+   "ajustado": true,
+   "percentil": 0.473,
+   "fama": 0.457,
    "pontos": 33,
    "peso": 0.574
+  },
+  {
+   "resposta": "Garça",
+   "apelidos": [
+    "garça-branca",
+    "garça-moura"
+   ],
+   "sem_dado": false,
+   "icf": 13.323,
+   "ajustado": true,
+   "percentil": 0.501,
+   "fama": 0.458,
+   "pontos": 33,
+   "peso": 0.574
+  },
+  {
+   "resposta": "Albatroz",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.275,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.458,
+   "pontos": 34,
+   "peso": 0.583
+  },
+  {
+   "resposta": "Fragata",
+   "apelidos": [
+    "tesourão"
+   ],
+   "sem_dado": false,
+   "icf": 13.722,
+   "ajustado": true,
+   "percentil": 0.546,
+   "fama": 0.458,
+   "pontos": 34,
+   "peso": 0.583
+  },
+  {
+   "resposta": "Atobá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.748,
+   "ajustado": true,
+   "percentil": 0.833,
+   "fama": 0.458,
+   "pontos": 35,
+   "peso": 0.592
+  },
+  {
+   "resposta": "Flamingo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.956,
+   "ajustado": true,
+   "percentil": 0.576,
+   "fama": 0.459,
+   "pontos": 35,
+   "peso": 0.592
+  },
+  {
+   "resposta": "Socó",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.114,
+   "ajustado": true,
+   "percentil": 0.794,
+   "fama": 0.459,
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Bem-te-vi",
@@ -326,19 +712,8 @@
    "ajustado": true,
    "percentil": 0.0,
    "fama": 0.46,
-   "pontos": 34,
-   "peso": 0.583
-  },
-  {
-   "resposta": "João-de-barro",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.881,
-   "ajustado": true,
-   "percentil": 0.029,
-   "fama": 0.46,
-   "pontos": 35,
-   "peso": 0.592
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Cascavel",
@@ -346,23 +721,883 @@
    "sem_dado": false,
    "icf": 11.955,
    "ajustado": true,
-   "percentil": 0.235,
+   "percentil": 0.308,
    "fama": 0.46,
    "pontos": 36,
    "peso": 0.6
   },
   {
+   "resposta": "Colhereiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.229,
+   "ajustado": true,
+   "percentil": 0.869,
+   "fama": 0.459,
+   "pontos": 36,
+   "peso": 0.6
+  },
+  {
+   "resposta": "João-de-barro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.881,
+   "ajustado": true,
+   "percentil": 0.034,
+   "fama": 0.46,
+   "pontos": 36,
+   "peso": 0.6
+  },
+  {
+   "resposta": "Pica-pau",
+   "apelidos": [
+    "pica-pau-de-cabeça-amarela",
+    "pica-pau-do-campo"
+   ],
+   "sem_dado": false,
+   "icf": 10.611,
+   "ajustado": true,
+   "percentil": 0.101,
+   "fama": 0.46,
+   "pontos": 36,
+   "peso": 0.6
+  },
+  {
+   "resposta": "Biguá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.742,
+   "ajustado": true,
+   "percentil": 0.767,
+   "fama": 0.46,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Coruja",
+   "apelidos": [
+    "coruja-buraqueira",
+    "suindara",
+    "coruja-das-torres"
+   ],
+   "sem_dado": false,
+   "icf": 12.135,
+   "ajustado": true,
+   "percentil": 0.335,
+   "fama": 0.461,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
    "resposta": "Gambá",
    "apelidos": [
-    "saruê"
+    "saruê",
+    "mucura",
+    "timbu",
+    "sariguê"
    ],
    "sem_dado": false,
    "icf": 14.011,
    "ajustado": true,
-   "percentil": 0.574,
+   "percentil": 0.584,
    "fama": 0.46,
    "pontos": 37,
    "peso": 0.608
+  },
+  {
+   "resposta": "Guará",
+   "apelidos": [
+    "guará-vermelho"
+   ],
+   "sem_dado": false,
+   "icf": 13.164,
+   "ajustado": true,
+   "percentil": 0.475,
+   "fama": 0.46,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Martim-pescador",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.411,
+   "ajustado": true,
+   "percentil": 0.379,
+   "fama": 0.46,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Caburé",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.883,
+   "ajustado": true,
+   "percentil": 0.779,
+   "fama": 0.461,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Carcará",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.258,
+   "ajustado": true,
+   "percentil": 0.61,
+   "fama": 0.462,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Corujão",
+   "apelidos": [
+    "jacurutu"
+   ],
+   "sem_dado": false,
+   "icf": 14.481,
+   "ajustado": true,
+   "percentil": 0.64,
+   "fama": 0.462,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Gavião",
+   "apelidos": [
+    "gavião-carijó",
+    "gavião-pega-macaco"
+   ],
+   "sem_dado": false,
+   "icf": 12.912,
+   "ajustado": true,
+   "percentil": 0.448,
+   "fama": 0.462,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Mocho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.221,
+   "ajustado": true,
+   "percentil": 0.603,
+   "fama": 0.461,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Papagaio-verdadeiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.912,
+   "ajustado": true,
+   "percentil": 0.147,
+   "fama": 0.463,
+   "pontos": 38,
+   "peso": 0.616
+  },
+  {
+   "resposta": "Ararinha-azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.38,
+   "ajustado": true,
+   "percentil": 0.374,
+   "fama": 0.464,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Falcão-peregrino",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.24,
+   "ajustado": true,
+   "percentil": 0.354,
+   "fama": 0.463,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Jandaia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.261,
+   "ajustado": true,
+   "percentil": 0.611,
+   "fama": 0.464,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Periquito",
+   "apelidos": [
+    "periquitão",
+    "periquito-rei"
+   ],
+   "sem_dado": false,
+   "icf": 13.671,
+   "ajustado": true,
+   "percentil": 0.541,
+   "fama": 0.464,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Urubu-rei",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.208,
+   "ajustado": true,
+   "percentil": 0.195,
+   "fama": 0.463,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Calopsita",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.272,
+   "ajustado": true,
+   "percentil": 0.494,
+   "fama": 0.465,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Canário-da-terra",
+   "apelidos": [
+    "canário"
+   ],
+   "sem_dado": false,
+   "icf": 10.626,
+   "ajustado": true,
+   "percentil": 0.105,
+   "fama": 0.466,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Curica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.248,
+   "ajustado": true,
+   "percentil": 0.807,
+   "fama": 0.465,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Maritaca",
+   "apelidos": [
+    "maitaca"
+   ],
+   "sem_dado": false,
+   "icf": 15.752,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.464,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Tiriba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.039,
+   "ajustado": true,
+   "percentil": 0.854,
+   "fama": 0.465,
+   "pontos": 40,
+   "peso": 0.632
+  },
+  {
+   "resposta": "Bicudo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.551,
+   "ajustado": true,
+   "percentil": 0.525,
+   "fama": 0.467,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Coleirinho",
+   "apelidos": [
+    "papa-capim"
+   ],
+   "sem_dado": false,
+   "icf": 17.276,
+   "ajustado": true,
+   "percentil": 0.875,
+   "fama": 0.466,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Pintassilgo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.825,
+   "ajustado": true,
+   "percentil": 0.672,
+   "fama": 0.466,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Tico-tico",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.408,
+   "ajustado": true,
+   "percentil": 0.378,
+   "fama": 0.467,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Trinca-ferro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.097,
+   "ajustado": true,
+   "percentil": 0.181,
+   "fama": 0.466,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Andorinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.117,
+   "ajustado": true,
+   "percentil": 0.471,
+   "fama": 0.468,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Curió",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.568,
+   "ajustado": true,
+   "percentil": 0.527,
+   "fama": 0.467,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Pardal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.393,
+   "ajustado": true,
+   "percentil": 0.511,
+   "fama": 0.468,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Sanhaço",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.955,
+   "ajustado": true,
+   "percentil": 0.786,
+   "fama": 0.468,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Tiê-sangue",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.09,
+   "ajustado": true,
+   "percentil": 0.329,
+   "fama": 0.469,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Cardeal",
+   "apelidos": [
+    "galo-de-campina",
+    "cardeal-do-nordeste"
+   ],
+   "sem_dado": false,
+   "icf": 11.835,
+   "ajustado": true,
+   "percentil": 0.293,
+   "fama": 0.47,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Corrupião",
+   "apelidos": [
+    "sofreu"
+   ],
+   "sem_dado": false,
+   "icf": 16.789,
+   "ajustado": true,
+   "percentil": 0.838,
+   "fama": 0.469,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Pássaro-preto",
+   "apelidos": [
+    "graúna",
+    "chopim"
+   ],
+   "sem_dado": false,
+   "icf": 10.202,
+   "ajustado": true,
+   "percentil": 0.06,
+   "fama": 0.47,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Sabiá-laranjeira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.204,
+   "ajustado": true,
+   "percentil": 0.483,
+   "fama": 0.47,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Saíra",
+   "apelidos": [
+    "saíra-sete-cores"
+   ],
+   "sem_dado": false,
+   "icf": 14.056,
+   "ajustado": true,
+   "percentil": 0.589,
+   "fama": 0.469,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Azulão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.622,
+   "ajustado": true,
+   "percentil": 0.535,
+   "fama": 0.47,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Gralha-azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.615,
+   "ajustado": true,
+   "percentil": 0.253,
+   "fama": 0.472,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Pavãozinho-do-pará",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.773,
+   "ajustado": true,
+   "percentil": 0.433,
+   "fama": 0.472,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Sabiá-poca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.78,
+   "ajustado": true,
+   "percentil": 0.557,
+   "fama": 0.471,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Sabiá-una",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.86,
+   "ajustado": true,
+   "percentil": 0.296,
+   "fama": 0.471,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Uirapuru",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.442,
+   "ajustado": true,
+   "percentil": 0.633,
+   "fama": 0.471,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "Anu-branco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.697,
+   "ajustado": true,
+   "percentil": 0.267,
+   "fama": 0.473,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Anu-preto",
+   "apelidos": [
+    "anu"
+   ],
+   "sem_dado": false,
+   "icf": 11.798,
+   "ajustado": true,
+   "percentil": 0.287,
+   "fama": 0.473,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Araponga",
+   "apelidos": [
+    "ferreiro"
+   ],
+   "sem_dado": false,
+   "icf": 14.842,
+   "ajustado": true,
+   "percentil": 0.674,
+   "fama": 0.472,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Gralha-picaça",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.17,
+   "ajustado": true,
+   "percentil": 0.599,
+   "fama": 0.473,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Tangará",
+   "apelidos": [
+    "dançador"
+   ],
+   "sem_dado": false,
+   "icf": 13.489,
+   "ajustado": true,
+   "percentil": 0.521,
+   "fama": 0.472,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Alma-de-gato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.67,
+   "ajustado": true,
+   "percentil": 0.021,
+   "fama": 0.474,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Frango-d'água",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.567,
+   "ajustado": true,
+   "percentil": 0.092,
+   "fama": 0.474,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Ganso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.465,
+   "ajustado": true,
+   "percentil": 0.387,
+   "fama": 0.475,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Pato-do-mato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.531,
+   "ajustado": true,
+   "percentil": 0.085,
+   "fama": 0.475,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Saracura",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.629,
+   "ajustado": true,
+   "percentil": 0.754,
+   "fama": 0.474,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Codorna",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.998,
+   "ajustado": true,
+   "percentil": 0.582,
+   "fama": 0.476,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Inhambu",
+   "apelidos": [
+    "nambu"
+   ],
+   "sem_dado": false,
+   "icf": 16.471,
+   "ajustado": true,
+   "percentil": 0.822,
+   "fama": 0.476,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Irerê",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.899,
+   "ajustado": true,
+   "percentil": 0.847,
+   "fama": 0.476,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Jaçanã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.318,
+   "ajustado": true,
+   "percentil": 0.621,
+   "fama": 0.475,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Marreca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.642,
+   "ajustado": true,
+   "percentil": 0.758,
+   "fama": 0.475,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Curicaca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.013,
+   "ajustado": true,
+   "percentil": 0.852,
+   "fama": 0.478,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Jacutinga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.128,
+   "ajustado": true,
+   "percentil": 0.592,
+   "fama": 0.477,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Macuco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.316,
+   "ajustado": true,
+   "percentil": 0.62,
+   "fama": 0.478,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Mutum-de-alagoas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.377,
+   "ajustado": true,
+   "percentil": 0.373,
+   "fama": 0.477,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Perdiz",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.592,
+   "ajustado": true,
+   "percentil": 0.655,
+   "fama": 0.477,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "João-graveto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.653,
+   "ajustado": true,
+   "percentil": 0.263,
+   "fama": 0.48,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Juriti",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.526,
+   "ajustado": true,
+   "percentil": 0.743,
+   "fama": 0.479,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Pomba",
+   "apelidos": [
+    "pombo"
+   ],
+   "sem_dado": false,
+   "icf": 12.225,
+   "ajustado": true,
+   "percentil": 0.35,
+   "fama": 0.479,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Pomba-asa-branca",
+   "apelidos": [
+    "asa-branca"
+   ],
+   "sem_dado": false,
+   "icf": 10.933,
+   "ajustado": true,
+   "percentil": 0.151,
+   "fama": 0.479,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Rolinha",
+   "apelidos": [
+    "rola",
+    "fogo-apagou"
+   ],
+   "sem_dado": false,
+   "icf": 15.255,
+   "ajustado": true,
+   "percentil": 0.717,
+   "fama": 0.479,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Tachã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.985,
+   "ajustado": true,
+   "percentil": 0.956,
+   "fama": 0.478,
+   "pontos": 49,
+   "peso": 0.7
+  },
+  {
+   "resposta": "Avoante",
+   "apelidos": [
+    "arribaçã"
+   ],
+   "sem_dado": false,
+   "icf": 16.874,
+   "ajustado": true,
+   "percentil": 0.843,
+   "fama": 0.48,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Bugio",
+   "apelidos": [
+    "guariba",
+    "macaco-uivador",
+    "bugio-ruivo"
+   ],
+   "sem_dado": false,
+   "icf": 14.561,
+   "ajustado": true,
+   "percentil": 0.647,
+   "fama": 0.48,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Lavadeira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.509,
+   "ajustado": true,
+   "percentil": 0.643,
+   "fama": 0.481,
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Pirarucu",
@@ -370,34 +1605,655 @@
    "sem_dado": false,
    "icf": 14.498,
    "ajustado": true,
-   "percentil": 0.618,
+   "percentil": 0.642,
    "fama": 0.48,
-   "pontos": 39,
-   "peso": 0.624
+   "pontos": 50,
+   "peso": 0.707
   },
   {
-   "resposta": "Bugio",
+   "resposta": "Siriri",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.543,
+   "ajustado": true,
+   "percentil": 0.748,
+   "fama": 0.481,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Tamanduaí",
    "apelidos": [
-    "guariba"
+    "tamanduá-seda"
    ],
    "sem_dado": false,
-   "icf": 14.561,
+   "icf": 18.553,
    "ajustado": true,
-   "percentil": 0.647,
-   "fama": 0.48,
-   "pontos": 40,
-   "peso": 0.632
+   "percentil": 0.939,
+   "fama": 0.92,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Cambacica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.568,
+   "ajustado": true,
+   "percentil": 0.894,
+   "fama": 0.481,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Chupim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.978,
+   "ajustado": true,
+   "percentil": 0.788,
+   "fama": 0.482,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Garibaldi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.449,
+   "ajustado": true,
+   "percentil": 0.385,
+   "fama": 0.482,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Sebinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.647,
+   "ajustado": true,
+   "percentil": 0.827,
+   "fama": 0.482,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Suiriri",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.714,
+   "ajustado": true,
+   "percentil": 0.905,
+   "fama": 0.481,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Bacurau",
+   "apelidos": [
+    "curiango",
+    "mãe-da-lua",
+    "urutau"
+   ],
+   "sem_dado": false,
+   "icf": 15.32,
+   "ajustado": true,
+   "percentil": 0.723,
+   "fama": 0.484,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Beija-flor-tesoura",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.12,
+   "ajustado": true,
+   "percentil": 0.185,
+   "fama": 0.484,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Gaturamo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.12,
+   "ajustado": true,
+   "percentil": 0.863,
+   "fama": 0.483,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Tesourinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.002,
+   "ajustado": true,
+   "percentil": 0.69,
+   "fama": 0.483,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Vira-bosta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.247,
+   "ajustado": true,
+   "percentil": 0.2,
+   "fama": 0.483,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Andorinhão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.876,
+   "ajustado": true,
+   "percentil": 0.844,
+   "fama": 0.484,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Araçari",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.9,
+   "ajustado": true,
+   "percentil": 0.848,
+   "fama": 0.485,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Saracuruçu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 21.186,
+   "ajustado": true,
+   "percentil": 0.996,
+   "fama": 0.485,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Tucano-de-bico-verde",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.548,
+   "ajustado": true,
+   "percentil": 0.09,
+   "fama": 0.485,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Tucano-toco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.991,
+   "ajustado": true,
+   "percentil": 0.309,
+   "fama": 0.485,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Cabeça-seca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.471,
+   "ajustado": true,
+   "percentil": 0.014,
+   "fama": 0.487,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Cegonha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.382,
+   "ajustado": true,
+   "percentil": 0.507,
+   "fama": 0.486,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Garça-real",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.996,
+   "ajustado": true,
+   "percentil": 0.168,
+   "fama": 0.487,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Jaburu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.974,
+   "ajustado": true,
+   "percentil": 0.686,
+   "fama": 0.486,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Maguari",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.196,
+   "ajustado": true,
+   "percentil": 0.799,
+   "fama": 0.487,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Arapapá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.948,
+   "ajustado": true,
+   "percentil": 0.953,
+   "fama": 0.487,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Cuxiú",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.361,
+   "ajustado": true,
+   "percentil": 0.93,
+   "fama": 0.489,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Macaco-aranha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.262,
+   "ajustado": true,
+   "percentil": 0.203,
+   "fama": 0.488,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Macaco-barrigudo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.188,
+   "ajustado": true,
+   "percentil": 0.478,
+   "fama": 0.488,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Macaco-da-noite",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.779,
+   "ajustado": true,
+   "percentil": 0.027,
+   "fama": 0.489,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Macaco-de-cheiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.876,
+   "ajustado": true,
+   "percentil": 0.14,
+   "fama": 0.488,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Macaco-prego-de-crista",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.421,
+   "ajustado": true,
+   "percentil": 0.38,
+   "fama": 0.49,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Mico-leão-preto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.658,
+   "ajustado": true,
+   "percentil": 0.11,
+   "fama": 0.49,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Parauacu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.594,
+   "ajustado": true,
+   "percentil": 0.965,
+   "fama": 0.489,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Sauá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.705,
+   "ajustado": true,
+   "percentil": 0.904,
+   "fama": 0.49,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Zogue-zogue",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.978,
+   "fama": 0.49,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Mico-leão-de-cara-dourada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.697,
+   "ajustado": true,
+   "percentil": 0.122,
+   "fama": 0.491,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Mico-leão-de-cara-preta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.319,
+   "ajustado": true,
+   "percentil": 0.071,
+   "fama": 0.491,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Sagui-de-mãos-douradas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.269,
+   "ajustado": true,
+   "percentil": 0.36,
+   "fama": 0.491,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Sagui-imperador",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.406,
+   "ajustado": true,
+   "percentil": 0.514,
+   "fama": 0.492,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Sauim-de-coleira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.997,
+   "ajustado": true,
+   "percentil": 0.688,
+   "fama": 0.492,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Muriqui-do-norte",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.634,
+   "ajustado": true,
+   "percentil": 0.261,
+   "fama": 0.493,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Muriqui-do-sul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.391,
+   "ajustado": true,
+   "percentil": 0.226,
+   "fama": 0.493,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Sagui-pigmeu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.535,
+   "ajustado": true,
+   "percentil": 0.746,
+   "fama": 0.492,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Cachorro-vinagre",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.989,
+   "ajustado": true,
+   "percentil": 0.166,
+   "fama": 0.494,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Furão-pequeno",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.041,
+   "ajustado": true,
+   "percentil": 0.319,
+   "fama": 0.495,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Gato-do-mato",
+   "apelidos": [
+    "gato-do-mato-pequeno"
+   ],
+   "sem_dado": false,
+   "icf": 9.954,
+   "ajustado": true,
+   "percentil": 0.042,
+   "fama": 0.496,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Gato-mourisco",
+   "apelidos": [
+    "jaguarundi"
+   ],
+   "sem_dado": false,
+   "icf": 12.676,
+   "ajustado": true,
+   "percentil": 0.416,
+   "fama": 0.496,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Graxaim",
+   "apelidos": [
+    "sorro"
+   ],
+   "sem_dado": false,
+   "icf": 17.33,
+   "ajustado": true,
+   "percentil": 0.88,
+   "fama": 0.494,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Jupará",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.542,
+   "ajustado": true,
+   "percentil": 0.89,
+   "fama": 0.496,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Lontra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.167,
+   "ajustado": true,
+   "percentil": 0.597,
+   "fama": 0.495,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Macaco-caiarara",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.449,
+   "ajustado": true,
+   "percentil": 0.734,
+   "fama": 0.493,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Mão-pelada",
+   "apelidos": [
+    "guaxinim"
+   ],
+   "sem_dado": false,
+   "icf": 10.056,
+   "ajustado": true,
+   "percentil": 0.049,
+   "fama": 0.495,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Quati-de-cauda-anelada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.691,
+   "ajustado": true,
+   "percentil": 0.542,
+   "fama": 0.496,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Raposa-do-campo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.198,
+   "ajustado": true,
+   "percentil": 0.059,
+   "fama": 0.494,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Anta-brasileira",
+   "apelidos": [
+    "tapir"
+   ],
+   "sem_dado": false,
+   "icf": 10.685,
+   "ajustado": true,
+   "percentil": 0.12,
+   "fama": 0.501,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Cervo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.963,
+   "ajustado": true,
+   "percentil": 0.577,
+   "fama": 0.501,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Cutiara",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 21.104,
+   "ajustado": true,
+   "percentil": 0.995,
+   "fama": 0.502,
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Ema",
-   "apelidos": [],
+   "apelidos": [
+    "nhandu"
+   ],
    "sem_dado": false,
    "icf": 13.046,
    "ajustado": true,
-   "percentil": 0.426,
+   "percentil": 0.465,
    "fama": 0.5,
-   "pontos": 41,
-   "peso": 0.64
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Gato-palheiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.185,
+   "ajustado": true,
+   "percentil": 0.344,
+   "fama": 0.497,
+   "pontos": 61,
+   "peso": 0.781
   },
   {
    "resposta": "Jararaca",
@@ -405,23 +2261,1514 @@
    "sem_dado": false,
    "icf": 14.571,
    "ajustado": true,
-   "percentil": 0.662,
+   "percentil": 0.65,
    "fama": 0.5,
-   "pontos": 42,
-   "peso": 0.648
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Mocó",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.37,
+   "ajustado": true,
+   "percentil": 0.726,
+   "fama": 0.503,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Ouriço-preto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.443,
+   "ajustado": true,
+   "percentil": 0.234,
+   "fama": 0.504,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Preguiça-de-dois-dedos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.672,
+   "ajustado": true,
+   "percentil": 0.024,
+   "fama": 0.5,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Preá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.199,
+   "ajustado": true,
+   "percentil": 0.711,
+   "fama": 0.503,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Rato-do-mato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.543,
+   "ajustado": true,
+   "percentil": 0.089,
+   "fama": 0.504,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Ratão-do-banhado",
+   "apelidos": [
+    "nútria"
+   ],
+   "sem_dado": false,
+   "icf": 14.032,
+   "ajustado": true,
+   "percentil": 0.586,
+   "fama": 0.503,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Tamanduá-mirim",
+   "apelidos": [
+    "mambira"
+   ],
+   "sem_dado": false,
+   "icf": 12.908,
+   "ajustado": true,
+   "percentil": 0.446,
+   "fama": 0.499,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Tatu-bola-do-nordeste",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.827,
+   "ajustado": true,
+   "percentil": 0.137,
+   "fama": 0.499,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Tatu-canastra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.452,
+   "ajustado": true,
+   "percentil": 0.52,
+   "fama": 0.498,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Tatu-de-rabo-mole",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.903,
+   "ajustado": true,
+   "percentil": 0.302,
+   "fama": 0.499,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Tatu-galinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.072,
+   "ajustado": true,
+   "percentil": 0.324,
+   "fama": 0.498,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Tatu-peba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.242,
+   "ajustado": true,
+   "percentil": 0.606,
+   "fama": 0.498,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Veado-catingueiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.008,
+   "ajustado": true,
+   "percentil": 0.691,
+   "fama": 0.5,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Veado-galheiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.158,
+   "ajustado": true,
+   "percentil": 0.706,
+   "fama": 0.5,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Veado-mateiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.607,
+   "ajustado": true,
+   "percentil": 0.656,
+   "fama": 0.5,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Baleia-de-bryde",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.02,
+   "ajustado": true,
+   "percentil": 0.314,
+   "fama": 0.508,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Baleia-minke",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.02,
+   "ajustado": true,
+   "percentil": 0.314,
+   "fama": 0.509,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Catita",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.289,
+   "ajustado": true,
+   "percentil": 0.617,
+   "fama": 0.505,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Coelho-do-mato",
+   "apelidos": [
+    "tapiti"
+   ],
+   "sem_dado": false,
+   "icf": 9.931,
+   "ajustado": true,
+   "percentil": 0.04,
+   "fama": 0.505,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Cuíca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.851,
+   "ajustado": true,
+   "percentil": 0.676,
+   "fama": 0.505,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Cágado",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.344,
+   "ajustado": true,
+   "percentil": 0.724,
+   "fama": 0.511,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Esquilo",
+   "apelidos": [
+    "serelepe",
+    "caxinguelê"
+   ],
+   "sem_dado": false,
+   "icf": 13.419,
+   "ajustado": true,
+   "percentil": 0.516,
+   "fama": 0.505,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Falsa-orca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.639,
+   "ajustado": true,
+   "percentil": 0.408,
+   "fama": 0.509,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Golfinho-rotador",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.271,
+   "ajustado": true,
+   "percentil": 0.613,
+   "fama": 0.508,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Jacaretinga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.561,
+   "ajustado": true,
+   "percentil": 0.94,
+   "fama": 0.51,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Jacaré-açu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.641,
+   "ajustado": true,
+   "percentil": 0.41,
+   "fama": 0.509,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Jacaré-coroa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.434,
+   "ajustado": true,
+   "percentil": 0.231,
+   "fama": 0.51,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Jacaré-de-papo-amarelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.9,
+   "ajustado": true,
+   "percentil": 0.142,
+   "fama": 0.51,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Jacaré-do-pantanal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.18,
+   "ajustado": true,
+   "percentil": 0.343,
+   "fama": 0.509,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Morcego-frugívoro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.172,
+   "ajustado": true,
+   "percentil": 0.708,
+   "fama": 0.506,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Morcego-pescador",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.368,
+   "ajustado": true,
+   "percentil": 0.372,
+   "fama": 0.506,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Morcego-vampiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.249,
+   "ajustado": true,
+   "percentil": 0.355,
+   "fama": 0.506,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Rato-de-espinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.873,
+   "ajustado": true,
+   "percentil": 0.298,
+   "fama": 0.504,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Tartaruga-da-amazônia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.193,
+   "ajustado": true,
+   "percentil": 0.347,
+   "fama": 0.511,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Toninha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.598,
+   "ajustado": true,
+   "percentil": 0.751,
+   "fama": 0.508,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Tracajá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.797,
+   "ajustado": true,
+   "percentil": 0.84,
+   "fama": 0.511,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Boipeva",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.892,
+   "ajustado": true,
+   "percentil": 0.951,
+   "fama": 0.515,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Calango",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.412,
+   "ajustado": true,
+   "percentil": 0.631,
+   "fama": 0.513,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Camaleão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.52,
+   "ajustado": true,
+   "percentil": 0.524,
+   "fama": 0.513,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Caninana",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.44,
+   "ajustado": true,
+   "percentil": 0.82,
+   "fama": 0.515,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cascavel-de-quatro-ventas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.628,
+   "ajustado": true,
+   "percentil": 0.259,
+   "fama": 0.517,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cecília",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.623,
+   "ajustado": true,
+   "percentil": 0.255,
+   "fama": 0.517,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cobra-cega",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.389,
+   "ajustado": true,
+   "percentil": 0.224,
+   "fama": 0.514,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cobra-cipó",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.033,
+   "ajustado": true,
+   "percentil": 0.318,
+   "fama": 0.514,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cobra-d'água",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.791,
+   "ajustado": true,
+   "percentil": 0.132,
+   "fama": 0.515,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cobra-de-duas-cabeças",
+   "apelidos": [
+    "anfisbena"
+   ],
+   "sem_dado": false,
+   "icf": 9.828,
+   "ajustado": true,
+   "percentil": 0.031,
+   "fama": 0.514,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Iguana-verde",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.724,
+   "ajustado": true,
+   "percentil": 0.272,
+   "fama": 0.513,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Jabuti-piranga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.254,
+   "ajustado": true,
+   "percentil": 0.608,
+   "fama": 0.512,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Jabuti-tinga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.728,
+   "ajustado": true,
+   "percentil": 0.547,
+   "fama": 0.512,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Jararaca-ilhoa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.889,
+   "ajustado": true,
+   "percentil": 0.781,
+   "fama": 0.516,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Jararacuçu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.657,
+   "ajustado": true,
+   "percentil": 0.9,
+   "fama": 0.516,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Lagartixa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.061,
+   "ajustado": true,
+   "percentil": 0.59,
+   "fama": 0.512,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Muçurana",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.105,
+   "ajustado": true,
+   "percentil": 0.92,
+   "fama": 0.515,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Muçuã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.161,
+   "ajustado": true,
+   "percentil": 0.961,
+   "fama": 0.511,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Salamandra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.126,
+   "ajustado": true,
+   "percentil": 0.591,
+   "fama": 0.517,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Surucucu-pico-de-jaca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.619,
+   "ajustado": true,
+   "percentil": 0.534,
+   "fama": 0.517,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Urutu",
+   "apelidos": [
+    "urutu-cruzeiro"
+   ],
+   "sem_dado": false,
+   "icf": 16.008,
+   "ajustado": true,
+   "percentil": 0.789,
+   "fama": 0.516,
+   "pontos": 63,
+   "peso": 0.794
   },
   {
    "resposta": "Cobra-coral",
    "apelidos": [
-    "coral"
+    "coral",
+    "coral-verdadeira",
+    "coral-falsa"
    ],
    "sem_dado": false,
    "icf": 10.954,
    "ajustado": true,
-   "percentil": 0.118,
+   "percentil": 0.153,
    "fama": 0.52,
-   "pontos": 43,
-   "peso": 0.656
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Dourado",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.625,
+   "ajustado": true,
+   "percentil": 0.103,
+   "fama": 0.521,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Jaú",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.655,
+   "ajustado": true,
+   "percentil": 0.415,
+   "fama": 0.522,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Lambari",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.154,
+   "ajustado": true,
+   "percentil": 0.595,
+   "fama": 0.524,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Matrinxã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.472,
+   "ajustado": true,
+   "percentil": 0.823,
+   "fama": 0.523,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Pacu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.717,
+   "ajustado": true,
+   "percentil": 0.666,
+   "fama": 0.523,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Perereca-de-capacete",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.735,
+   "ajustado": true,
+   "percentil": 0.424,
+   "fama": 0.519,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Perereca-verde",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.455,
+   "ajustado": true,
+   "percentil": 0.236,
+   "fama": 0.519,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Piau",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.461,
+   "ajustado": true,
+   "percentil": 0.636,
+   "fama": 0.524,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Pintado",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.881,
+   "ajustado": true,
+   "percentil": 0.3,
+   "fama": 0.521,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Pirapitinga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.7,
+   "ajustado": true,
+   "percentil": 0.83,
+   "fama": 0.523,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Piraíba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.238,
+   "ajustado": true,
+   "percentil": 0.87,
+   "fama": 0.522,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Rã",
+   "apelidos": [
+    "rã-touro",
+    "rã-pimenta"
+   ],
+   "sem_dado": false,
+   "icf": 13.576,
+   "ajustado": true,
+   "percentil": 0.532,
+   "fama": 0.518,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Sapinho-pingo-de-ouro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.747,
+   "ajustado": true,
+   "percentil": 0.276,
+   "fama": 0.519,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Sapo-boi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.057,
+   "ajustado": true,
+   "percentil": 0.176,
+   "fama": 0.518,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Sapo-flecha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.524,
+   "ajustado": true,
+   "percentil": 0.243,
+   "fama": 0.518,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Sapo-pulga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.148,
+   "ajustado": true,
+   "percentil": 0.338,
+   "fama": 0.52,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Surubim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.266,
+   "ajustado": true,
+   "percentil": 0.612,
+   "fama": 0.522,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Traíra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.383,
+   "ajustado": true,
+   "percentil": 0.628,
+   "fama": 0.523,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Tucunaré",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.445,
+   "ajustado": true,
+   "percentil": 0.635,
+   "fama": 0.521,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Untanha",
+   "apelidos": [
+    "sapo-de-chifre"
+   ],
+   "sem_dado": false,
+   "icf": 20.209,
+   "ajustado": true,
+   "percentil": 0.988,
+   "fama": 0.52,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Acará-bandeira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.488,
+   "ajustado": true,
+   "percentil": 0.396,
+   "fama": 0.527,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Acará-disco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.085,
+   "ajustado": true,
+   "percentil": 0.327,
+   "fama": 0.527,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Arraia-de-fogo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.763,
+   "ajustado": true,
+   "percentil": 0.278,
+   "fama": 0.526,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Aruanã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.741,
+   "ajustado": true,
+   "percentil": 0.667,
+   "fama": 0.527,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Badejo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.245,
+   "ajustado": true,
+   "percentil": 0.714,
+   "fama": 0.53,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Bagre",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.345,
+   "ajustado": true,
+   "percentil": 0.623,
+   "fama": 0.528,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Candiru",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.035,
+   "ajustado": true,
+   "percentil": 0.853,
+   "fama": 0.526,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Cascudo",
+   "apelidos": [
+    "acari"
+   ],
+   "sem_dado": false,
+   "icf": 13.653,
+   "ajustado": true,
+   "percentil": 0.539,
+   "fama": 0.525,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Curimbatá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.276,
+   "ajustado": true,
+   "percentil": 0.875,
+   "fama": 0.524,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Garoupa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.037,
+   "ajustado": true,
+   "percentil": 0.692,
+   "fama": 0.529,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Mandi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.928,
+   "ajustado": true,
+   "percentil": 0.685,
+   "fama": 0.525,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Neon",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.194,
+   "ajustado": true,
+   "percentil": 0.348,
+   "fama": 0.528,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Peixe-cachorro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.179,
+   "ajustado": true,
+   "percentil": 0.057,
+   "fama": 0.526,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Pescada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.569,
+   "ajustado": true,
+   "percentil": 0.529,
+   "fama": 0.53,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Piaba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.462,
+   "ajustado": true,
+   "percentil": 0.736,
+   "fama": 0.528,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Poraquê",
+   "apelidos": [
+    "peixe-elétrico"
+   ],
+   "sem_dado": false,
+   "icf": 17.117,
+   "ajustado": true,
+   "percentil": 0.862,
+   "fama": 0.526,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Robalo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.868,
+   "ajustado": true,
+   "percentil": 0.567,
+   "fama": 0.529,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Tainha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.328,
+   "ajustado": true,
+   "percentil": 0.622,
+   "fama": 0.529,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Tilápia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.948,
+   "ajustado": true,
+   "percentil": 0.575,
+   "fama": 0.525,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Vermelho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.393,
+   "ajustado": true,
+   "percentil": 0.01,
+   "fama": 0.53,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Agulhão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.781,
+   "ajustado": true,
+   "percentil": 0.834,
+   "fama": 0.532,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Aratu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.568,
+   "ajustado": true,
+   "percentil": 0.648,
+   "fama": 0.536,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Atum",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.237,
+   "ajustado": true,
+   "percentil": 0.353,
+   "fama": 0.532,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Baiacu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.469,
+   "ajustado": true,
+   "percentil": 0.737,
+   "fama": 0.533,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Bodião",
+   "apelidos": [
+    "Budião"
+   ],
+   "sem_dado": false,
+   "icf": 17.359,
+   "ajustado": true,
+   "percentil": 0.883,
+   "fama": 0.535,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Cavala",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.242,
+   "ajustado": true,
+   "percentil": 0.489,
+   "fama": 0.531,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Cação",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.919,
+   "ajustado": true,
+   "percentil": 0.574,
+   "fama": 0.536,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Cioba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.249,
+   "ajustado": true,
+   "percentil": 0.873,
+   "fama": 0.53,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Corvina",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.242,
+   "ajustado": true,
+   "percentil": 0.713,
+   "fama": 0.531,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Linguado",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.441,
+   "ajustado": true,
+   "percentil": 0.632,
+   "fama": 0.535,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Marlim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.602,
+   "ajustado": true,
+   "percentil": 0.752,
+   "fama": 0.532,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Mero",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.561,
+   "ajustado": true,
+   "percentil": 0.248,
+   "fama": 0.533,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Moreia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.045,
+   "ajustado": true,
+   "percentil": 0.791,
+   "fama": 0.533,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Peixe-espada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.56,
+   "ajustado": true,
+   "percentil": 0.091,
+   "fama": 0.535,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Peixe-leão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.263,
+   "ajustado": true,
+   "percentil": 0.065,
+   "fama": 0.534,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Peixe-palhaço",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.86,
+   "ajustado": true,
+   "percentil": 0.138,
+   "fama": 0.534,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Peixe-papagaio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.218,
+   "ajustado": true,
+   "percentil": 0.196,
+   "fama": 0.534,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Peixe-voador",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.252,
+   "ajustado": true,
+   "percentil": 0.201,
+   "fama": 0.532,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Sardinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.475,
+   "ajustado": true,
+   "percentil": 0.388,
+   "fama": 0.531,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Siri-azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.01,
+   "ajustado": true,
+   "percentil": 0.171,
+   "fama": 0.536,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Tubarão-lixa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.219,
+   "ajustado": true,
+   "percentil": 0.349,
+   "fama": 0.535,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Anêmona",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.215,
+   "ajustado": true,
+   "percentil": 0.8,
+   "fama": 0.54,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Bolacha-do-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.618,
+   "ajustado": true,
+   "percentil": 0.102,
+   "fama": 0.539,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Búzio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.416,
+   "ajustado": true,
+   "percentil": 0.732,
+   "fama": 0.541,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Camarão-pistola",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.701,
+   "ajustado": true,
+   "percentil": 0.269,
+   "fama": 0.538,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Caramujo",
+   "apelidos": [
+    "caracol"
+   ],
+   "sem_dado": false,
+   "icf": 14.479,
+   "ajustado": true,
+   "percentil": 0.638,
+   "fama": 0.542,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Caramujo-africano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.996,
+   "ajustado": true,
+   "percentil": 0.455,
+   "fama": 0.542,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Caranguejo-ermitão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.017,
+   "ajustado": true,
+   "percentil": 0.585,
+   "fama": 0.538,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Chama-maré",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.591,
+   "ajustado": true,
+   "percentil": 0.097,
+   "fama": 0.537,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Coral-cérebro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.678,
+   "ajustado": true,
+   "percentil": 0.118,
+   "fama": 0.54,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Craca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.785,
+   "ajustado": true,
+   "percentil": 0.835,
+   "fama": 0.539,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Esponja-do-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.266,
+   "ajustado": true,
+   "percentil": 0.067,
+   "fama": 0.541,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Lagostim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.72,
+   "ajustado": true,
+   "percentil": 0.766,
+   "fama": 0.538,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Lesma",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.346,
+   "ajustado": true,
+   "percentil": 0.625,
+   "fama": 0.542,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Lesma-do-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.463,
+   "ajustado": true,
+   "percentil": 0.237,
+   "fama": 0.541,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Maria-farinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.309,
+   "ajustado": true,
+   "percentil": 0.009,
+   "fama": 0.537,
+   "pontos": 67,
+   "peso": 0.819
   },
   {
    "resposta": "Morcego",
@@ -429,32 +3776,606 @@
    "sem_dado": false,
    "icf": 12.746,
    "ajustado": true,
-   "percentil": 0.353,
+   "percentil": 0.426,
    "fama": 0.54,
-   "pontos": 45,
-   "peso": 0.671
+   "pontos": 67,
+   "peso": 0.819
   },
   {
-   "resposta": "Quero-quero",
+   "resposta": "Nudibrânquio",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 8.077,
+   "icf": 18.765,
+   "ajustado": true,
+   "percentil": 0.948,
+   "fama": 0.541,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Ouriço-do-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.271,
+   "ajustado": true,
+   "percentil": 0.208,
+   "fama": 0.539,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Pepino-do-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.571,
+   "ajustado": true,
+   "percentil": 0.094,
+   "fama": 0.54,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Pitu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.554,
+   "ajustado": true,
+   "percentil": 0.749,
+   "fama": 0.538,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Tatuí",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.038,
+   "ajustado": true,
+   "percentil": 0.463,
+   "fama": 0.537,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Abelha",
+   "apelidos": [
+    "abelha-europa"
+   ],
+   "sem_dado": false,
+   "icf": 12.265,
+   "ajustado": true,
+   "percentil": 0.358,
+   "fama": 0.545,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Besouro",
+   "apelidos": [
+    "besouro-rinoceronte"
+   ],
+   "sem_dado": false,
+   "icf": 13.402,
+   "ajustado": true,
+   "percentil": 0.512,
+   "fama": 0.548,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Bicho-da-seda",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.186,
+   "ajustado": true,
+   "percentil": 0.19,
+   "fama": 0.547,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Borboleta",
+   "apelidos": [
+    "borboleta-azul",
+    "morpho"
+   ],
+   "sem_dado": false,
+   "icf": 11.435,
+   "ajustado": true,
+   "percentil": 0.232,
+   "fama": 0.547,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Caba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.111,
+   "ajustado": true,
+   "percentil": 0.7,
+   "fama": 0.547,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Cupim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.73,
+   "ajustado": true,
+   "percentil": 0.549,
+   "fama": 0.544,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Esperança",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.505,
    "ajustado": true,
    "percentil": 0.015,
-   "fama": 0.56,
-   "pontos": 46,
-   "peso": 0.678
+   "fama": 0.549,
+   "pontos": 68,
+   "peso": 0.825
   },
   {
-   "resposta": "Iguana",
+   "resposta": "Formiga",
+   "apelidos": [
+    "saúva",
+    "formiga-cortadeira"
+   ],
+   "sem_dado": false,
+   "icf": 12.162,
+   "ajustado": true,
+   "percentil": 0.34,
+   "fama": 0.544,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Formiga-bala",
+   "apelidos": [
+    "tocandira"
+   ],
+   "sem_dado": false,
+   "icf": 11.737,
+   "ajustado": true,
+   "percentil": 0.274,
+   "fama": 0.544,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Jataí",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 14.511,
+   "icf": 13.57,
    "ajustado": true,
-   "percentil": 0.632,
-   "fama": 0.56,
-   "pontos": 47,
-   "peso": 0.686
+   "percentil": 0.531,
+   "fama": 0.545,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Lagarta",
+   "apelidos": [
+    "taturana",
+    "lagarta-de-fogo"
+   ],
+   "sem_dado": false,
+   "icf": 13.436,
+   "ajustado": true,
+   "percentil": 0.519,
+   "fama": 0.548,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Lava-pés",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.116,
+   "ajustado": true,
+   "percentil": 0.052,
+   "fama": 0.544,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Mamangava",
+   "apelidos": [
+    "Mamangaba"
+   ],
+   "sem_dado": false,
+   "icf": 17.57,
+   "ajustado": true,
+   "percentil": 0.896,
+   "fama": 0.546,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Mandarová",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.089,
+   "ajustado": true,
+   "percentil": 0.96,
+   "fama": 0.548,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Mandaçaia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.58,
+   "ajustado": true,
+   "percentil": 0.825,
+   "fama": 0.546,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Marimbondo",
+   "apelidos": [
+    "vespa"
+   ],
+   "sem_dado": false,
+   "icf": 15.114,
+   "ajustado": true,
+   "percentil": 0.701,
+   "fama": 0.546,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Mariposa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.743,
+   "ajustado": true,
+   "percentil": 0.551,
+   "fama": 0.547,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Minhoca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.281,
+   "ajustado": true,
+   "percentil": 0.495,
+   "fama": 0.543,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Minhocuçu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.437,
+   "ajustado": true,
+   "percentil": 0.888,
+   "fama": 0.543,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Sanguessuga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.859,
+   "ajustado": true,
+   "percentil": 0.678,
+   "fama": 0.543,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Uruçu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.311,
+   "ajustado": true,
+   "percentil": 0.812,
+   "fama": 0.545,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Aranha",
+   "apelidos": [
+    "aranha-armadeira"
+   ],
+   "sem_dado": false,
+   "icf": 10.957,
+   "ajustado": true,
+   "percentil": 0.156,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Aranha-marrom",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.91,
+   "ajustado": true,
+   "percentil": 0.145,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Barata",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.961,
+   "ajustado": true,
+   "percentil": 0.158,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Barbeiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.932,
+   "ajustado": true,
+   "percentil": 0.449,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Besouro-hércules",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.178,
+   "ajustado": true,
+   "percentil": 0.476,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Bicho-pau",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.413,
+   "ajustado": true,
+   "percentil": 0.076,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Escorpião",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.392,
+   "ajustado": true,
+   "percentil": 0.377,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Grilo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.969,
+   "ajustado": true,
+   "percentil": 0.453,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Joaninha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.82,
+   "ajustado": true,
+   "percentil": 0.436,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Louva-a-deus",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.471,
+   "ajustado": true,
+   "percentil": 0.081,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Mosca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.348,
+   "ajustado": true,
+   "percentil": 0.369,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Mosquito",
+   "apelidos": [
+    "pernilongo",
+    "muriçoca",
+    "carapanã"
+   ],
+   "sem_dado": false,
+   "icf": 11.748,
+   "ajustado": true,
+   "percentil": 0.277,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Mosquito-da-dengue",
+   "apelidos": [
+    "aedes aegypti"
+   ],
+   "sem_dado": false,
+   "icf": 11.544,
+   "ajustado": true,
+   "percentil": 0.247,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Piolho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.775,
+   "ajustado": true,
+   "percentil": 0.556,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Piolho-de-cobra",
+   "apelidos": [
+    "gongolo"
+   ],
+   "sem_dado": false,
+   "icf": 12.283,
+   "ajustado": true,
+   "percentil": 0.363,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Pulga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.375,
+   "ajustado": true,
+   "percentil": 0.505,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Rola-bosta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.373,
+   "ajustado": true,
+   "percentil": 0.223,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Serra-pau",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.671,
+   "ajustado": true,
+   "percentil": 0.022,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Tatuzinho-de-jardim",
+   "apelidos": [
+    "tatuzinho"
+   ],
+   "sem_dado": false,
+   "icf": 12.619,
+   "ajustado": true,
+   "percentil": 0.405,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Vaga-lume",
+   "apelidos": [
+    "pirilampo"
+   ],
+   "sem_dado": false,
+   "icf": 10.706,
+   "ajustado": true,
+   "percentil": 0.124,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Viúva-negra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.938,
+   "ajustado": true,
+   "percentil": 0.152,
+   "fama": 0.549,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Borrachudo",
+   "apelidos": [
+    "pium"
+   ],
+   "sem_dado": false,
+   "icf": 15.844,
+   "ajustado": true,
+   "percentil": 0.777,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Caranguejeira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.64,
+   "ajustado": true,
+   "percentil": 0.757,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Carrapato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.878,
+   "ajustado": true,
+   "percentil": 0.569,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Cigarra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.808,
+   "ajustado": true,
+   "percentil": 0.56,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
   },
   {
    "resposta": "Cutia",
@@ -462,32 +4383,108 @@
    "sem_dado": false,
    "icf": 15.639,
    "ajustado": true,
-   "percentil": 0.838,
+   "percentil": 0.756,
    "fama": 0.56,
-   "pontos": 48,
-   "peso": 0.693
+   "pontos": 70,
+   "peso": 0.837
   },
   {
-   "resposta": "Perereca",
+   "resposta": "Gafanhoto",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 13.973,
+   "icf": 14.129,
    "ajustado": true,
-   "percentil": 0.544,
-   "fama": 0.58,
-   "pontos": 50,
-   "peso": 0.707
+   "percentil": 0.594,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
   },
   {
-   "resposta": "Tamanduaí",
+   "resposta": "Gavião-real",
+   "apelidos": [
+    "harpia",
+    "uiraçu"
+   ],
+   "sem_dado": false,
+   "icf": 10.791,
+   "ajustado": true,
+   "percentil": 0.132,
+   "fama": 0.6,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Iguana",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 18.553,
+   "icf": 14.511,
    "ajustado": true,
-   "percentil": 1.0,
-   "fama": 0.92,
-   "pontos": 50,
-   "peso": 0.707
+   "percentil": 0.645,
+   "fama": 0.56,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Lacraia",
+   "apelidos": [
+    "centopeia"
+   ],
+   "sem_dado": false,
+   "icf": 15.098,
+   "ajustado": true,
+   "percentil": 0.698,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Libélula",
+   "apelidos": [
+    "lava-bunda",
+    "cavalinho-do-diabo"
+   ],
+   "sem_dado": false,
+   "icf": 14.496,
+   "ajustado": true,
+   "percentil": 0.641,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Maruim",
+   "apelidos": [
+    "mosquito-pólvora"
+   ],
+   "sem_dado": false,
+   "icf": 15.137,
+   "ajustado": true,
+   "percentil": 0.704,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Mutuca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.802,
+   "ajustado": true,
+   "percentil": 0.774,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Opilião",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.378,
+   "ajustado": true,
+   "percentil": 0.931,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
   },
   {
    "resposta": "Paca",
@@ -495,24 +4492,54 @@
    "sem_dado": false,
    "icf": 14.584,
    "ajustado": true,
-   "percentil": 0.684,
+   "percentil": 0.653,
    "fama": 0.58,
-   "pontos": 51,
-   "peso": 0.714
+   "pontos": 70,
+   "peso": 0.837
   },
   {
-   "resposta": "Suçuarana",
-   "apelidos": [
-    "onça-parda",
-    "puma"
-   ],
+   "resposta": "Percevejo",
+   "apelidos": [],
    "sem_dado": false,
-   "icf": 16.238,
+   "icf": 15.393,
    "ajustado": true,
-   "percentil": 0.882,
+   "percentil": 0.729,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Perereca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.973,
+   "ajustado": true,
+   "percentil": 0.579,
    "fama": 0.58,
-   "pontos": 52,
-   "peso": 0.721
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Peripato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.654,
+   "ajustado": true,
+   "percentil": 0.969,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Quero-quero",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.077,
+   "ajustado": true,
+   "percentil": 0.001,
+   "fama": 0.56,
+   "pontos": 70,
+   "peso": 0.837
   },
   {
    "resposta": "Seriema",
@@ -520,45 +4547,36 @@
    "sem_dado": false,
    "icf": 16.407,
    "ajustado": true,
-   "percentil": 0.912,
+   "percentil": 0.818,
    "fama": 0.58,
-   "pontos": 53,
-   "peso": 0.728
+   "pontos": 70,
+   "peso": 0.837
   },
   {
-   "resposta": "Gavião-real",
+   "resposta": "Suçuarana",
    "apelidos": [
-    "harpia"
+    "onça-parda",
+    "puma",
+    "leão-baio"
    ],
    "sem_dado": false,
-   "icf": 10.791,
+   "icf": 16.238,
    "ajustado": true,
-   "percentil": 0.103,
-   "fama": 0.6,
-   "pontos": 54,
-   "peso": 0.735
+   "percentil": 0.804,
+   "fama": 0.58,
+   "pontos": 70,
+   "peso": 0.837
   },
   {
-   "resposta": "Jaguatirica",
+   "resposta": "Ácaro",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 15.395,
+   "icf": 14.673,
    "ajustado": true,
-   "percentil": 0.794,
-   "fama": 0.6,
-   "pontos": 56,
-   "peso": 0.748
-  },
-  {
-   "resposta": "Sapo-cururu",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.876,
-   "ajustado": true,
-   "percentil": 0.368,
-   "fama": 0.62,
-   "pontos": 57,
-   "peso": 0.755
+   "percentil": 0.658,
+   "fama": 0.549,
+   "pontos": 70,
+   "peso": 0.837
   },
   {
    "resposta": "Baleia-jubarte",
@@ -568,58 +4586,10 @@
    "sem_dado": false,
    "icf": 13.408,
    "ajustado": true,
-   "percentil": 0.5,
+   "percentil": 0.515,
    "fama": 0.62,
-   "pontos": 58,
-   "peso": 0.762
-  },
-  {
-   "resposta": "Tuiuiú",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 16.192,
-   "ajustado": true,
-   "percentil": 0.868,
-   "fama": 0.62,
-   "pontos": 60,
-   "peso": 0.775
-  },
-  {
-   "resposta": "Teiú",
-   "apelidos": [
-    "lagarto-teiú"
-   ],
-   "sem_dado": false,
-   "icf": 16.699,
-   "ajustado": true,
-   "percentil": 0.926,
-   "fama": 0.64,
-   "pontos": 62,
-   "peso": 0.787
-  },
-  {
-   "resposta": "Tambaqui",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.584,
-   "ajustado": true,
-   "percentil": 0.684,
-   "fama": 0.66,
-   "pontos": 63,
-   "peso": 0.794
-  },
-  {
-   "resposta": "Ouriço-cacheiro",
-   "apelidos": [
-    "porco-espinho"
-   ],
-   "sem_dado": false,
-   "icf": 15.263,
-   "ajustado": true,
-   "percentil": 0.779,
-   "fama": 0.66,
-   "pontos": 64,
-   "peso": 0.8
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Cachorro-do-mato",
@@ -627,10 +4597,24 @@
    "sem_dado": false,
    "icf": 9.995,
    "ajustado": true,
-   "percentil": 0.044,
+   "percentil": 0.045,
    "fama": 0.7,
-   "pontos": 66,
-   "peso": 0.812
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Caititu",
+   "apelidos": [
+    "cateto",
+    "porco-do-mato"
+   ],
+   "sem_dado": false,
+   "icf": 16.707,
+   "ajustado": true,
+   "percentil": 0.832,
+   "fama": 0.72,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Cervo-do-pantanal",
@@ -638,34 +4622,10 @@
    "sem_dado": false,
    "icf": 13.004,
    "ajustado": true,
-   "percentil": 0.397,
+   "percentil": 0.459,
    "fama": 0.72,
-   "pontos": 68,
-   "peso": 0.825
-  },
-  {
-   "resposta": "Veado-campeiro",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.993,
-   "ajustado": true,
-   "percentil": 0.559,
-   "fama": 0.72,
-   "pontos": 69,
-   "peso": 0.831
-  },
-  {
-   "resposta": "Caititu",
-   "apelidos": [
-    "cateto"
-   ],
-   "sem_dado": false,
-   "icf": 16.707,
-   "ajustado": true,
-   "percentil": 0.941,
-   "fama": 0.72,
-   "pontos": 70,
-   "peso": 0.837
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Furão",
@@ -673,32 +4633,32 @@
    "sem_dado": false,
    "icf": 15.194,
    "ajustado": true,
-   "percentil": 0.75,
+   "percentil": 0.709,
    "fama": 0.74,
-   "pontos": 72,
-   "peso": 0.849
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Queixada",
+   "resposta": "Gato-do-mato-grande",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 15.497,
+   "icf": 8.965,
    "ajustado": true,
-   "percentil": 0.824,
-   "fama": 0.74,
-   "pontos": 74,
-   "peso": 0.86
+   "percentil": 0.005,
+   "fama": 0.8,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
-   "resposta": "Surucucu",
+   "resposta": "Gato-dos-pampas",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 16.318,
+   "icf": 12.022,
    "ajustado": true,
-   "percentil": 0.897,
-   "fama": 0.74,
-   "pontos": 75,
-   "peso": 0.866
+   "percentil": 0.317,
+   "fama": 0.801,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Gato-maracajá",
@@ -706,21 +4666,10 @@
    "sem_dado": false,
    "icf": 12.654,
    "ajustado": true,
-   "percentil": 0.324,
+   "percentil": 0.414,
    "fama": 0.76,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Muriqui",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.757,
-   "ajustado": true,
-   "percentil": 0.721,
-   "fama": 0.76,
-   "pontos": 78,
-   "peso": 0.883
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Jacu",
@@ -728,10 +4677,43 @@
    "sem_dado": false,
    "icf": 14.789,
    "ajustado": true,
-   "percentil": 0.735,
+   "percentil": 0.67,
    "fama": 0.78,
-   "pontos": 80,
-   "peso": 0.894
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Jaguatirica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.395,
+   "ajustado": true,
+   "percentil": 0.731,
+   "fama": 0.6,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Lobo-de-crina",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.729,
+   "ajustado": true,
+   "percentil": 0.421,
+   "fama": 0.801,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Muriqui",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.757,
+   "ajustado": true,
+   "percentil": 0.668,
+   "fama": 0.76,
+   "pontos": 71,
+   "peso": 0.843
   },
   {
    "resposta": "Mutum",
@@ -739,21 +4721,834 @@
    "sem_dado": false,
    "icf": 13.893,
    "ajustado": true,
-   "percentil": 0.529,
+   "percentil": 0.572,
    "fama": 0.8,
-   "pontos": 81,
-   "peso": 0.9
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Ouriço-cacheiro",
+   "apelidos": [
+    "porco-espinho",
+    "ouriço"
+   ],
+   "sem_dado": false,
+   "icf": 15.263,
+   "ajustado": true,
+   "percentil": 0.718,
+   "fama": 0.66,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Queixada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.497,
+   "ajustado": true,
+   "percentil": 0.741,
+   "fama": 0.74,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Sapo-cururu",
+   "apelidos": [
+    "cururu"
+   ],
+   "sem_dado": false,
+   "icf": 12.876,
+   "ajustado": true,
+   "percentil": 0.443,
+   "fama": 0.62,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Surucucu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.318,
+   "ajustado": true,
+   "percentil": 0.813,
+   "fama": 0.74,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Tambaqui",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.584,
+   "ajustado": true,
+   "percentil": 0.653,
+   "fama": 0.66,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Teiú",
+   "apelidos": [
+    "lagarto-teiú",
+    "tiú"
+   ],
+   "sem_dado": false,
+   "icf": 16.699,
+   "ajustado": true,
+   "percentil": 0.829,
+   "fama": 0.64,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Tuiuiú",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.192,
+   "ajustado": true,
+   "percentil": 0.798,
+   "fama": 0.62,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Veado-campeiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.993,
+   "ajustado": true,
+   "percentil": 0.581,
+   "fama": 0.72,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Barrigudo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.808,
+   "ajustado": true,
+   "percentil": 0.671,
+   "fama": 0.806,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Coatá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.788,
+   "ajustado": true,
+   "percentil": 0.949,
+   "fama": 0.805,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Cuíca-d'água",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.851,
+   "ajustado": true,
+   "percentil": 0.676,
+   "fama": 0.802,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Cuíca-de-cauda-grossa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.645,
+   "ajustado": true,
+   "percentil": 0.411,
+   "fama": 0.802,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Guigó",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.935,
+   "ajustado": true,
+   "percentil": 0.911,
+   "fama": 0.804,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Macaco-de-cheiro-de-cabeça-preta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.061,
+   "ajustado": true,
+   "percentil": 0.05,
+   "fama": 0.804,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Macaco-prego-do-peito-amarelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.123,
+   "ajustado": true,
+   "percentil": 0.186,
+   "fama": 0.806,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Macaco-prego-galego",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.295,
+   "ajustado": true,
+   "percentil": 0.364,
+   "fama": 0.806,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Mico-estrela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.204,
+   "ajustado": true,
+   "percentil": 0.193,
+   "fama": 0.803,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Morcego-beija-flor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.355,
+   "ajustado": true,
+   "percentil": 0.221,
+   "fama": 0.807,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Morcego-de-cauda-livre",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.078,
+   "ajustado": true,
+   "percentil": 0.178,
+   "fama": 0.807,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Ouriço-caixeiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.174,
+   "ajustado": true,
+   "percentil": 0.6,
+   "fama": 0.802,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Peixe-boi-antilhano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.993,
+   "ajustado": true,
+   "percentil": 0.454,
+   "fama": 0.807,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Rato-candango",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.008,
+   "ajustado": true,
+   "percentil": 0.461,
+   "fama": 0.801,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Rato-de-taquara",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.275,
+   "ajustado": true,
+   "percentil": 0.362,
+   "fama": 0.802,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Sagui-da-serra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.545,
+   "ajustado": true,
+   "percentil": 0.401,
+   "fama": 0.803,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Sagui-de-wied",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.673,
+   "ajustado": true,
+   "percentil": 0.76,
+   "fama": 0.804,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Tatu-de-quinze-quilos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.05,
+   "ajustado": true,
+   "percentil": 0.32,
+   "fama": 0.803,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Uacari-branco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.898,
+   "ajustado": true,
+   "percentil": 0.445,
+   "fama": 0.804,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Uacari-preto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.998,
+   "ajustado": true,
+   "percentil": 0.457,
+   "fama": 0.805,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Uacari-vermelho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.233,
+   "ajustado": true,
+   "percentil": 0.488,
+   "fama": 0.805,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Arara-azul-pequena",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.346,
+   "ajustado": true,
+   "percentil": 0.075,
+   "fama": 0.812,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Arara-vermelha-pequena",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.734,
+   "ajustado": true,
+   "percentil": 0.127,
+   "fama": 0.812,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Baleia-fin",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.02,
+   "ajustado": true,
+   "percentil": 0.314,
+   "fama": 0.808,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Baleia-sei",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.012,
+   "ajustado": true,
+   "percentil": 0.046,
+   "fama": 0.808,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Batuíra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.113,
+   "ajustado": true,
+   "percentil": 0.793,
+   "fama": 0.81,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Elefante-marinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.368,
+   "ajustado": true,
+   "percentil": 0.222,
+   "fama": 0.808,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Gaivotão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.193,
+   "ajustado": true,
+   "percentil": 0.923,
+   "fama": 0.81,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Golfinho-de-risso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.374,
+   "ajustado": true,
+   "percentil": 0.627,
+   "fama": 0.807,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Lobo-marinho-subantártico",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.82,
+   "ajustado": true,
+   "percentil": 0.562,
+   "fama": 0.809,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Maracanã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.699,
+   "ajustado": true,
+   "percentil": 0.268,
+   "fama": 0.813,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Maçarico",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.758,
+   "ajustado": true,
+   "percentil": 0.555,
+   "fama": 0.811,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Narceja",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.083,
+   "ajustado": true,
+   "percentil": 0.859,
+   "fama": 0.811,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Papagaio-chauá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.987,
+   "ajustado": true,
+   "percentil": 0.687,
+   "fama": 0.813,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Papagaio-de-cara-roxa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.996,
+   "ajustado": true,
+   "percentil": 0.168,
+   "fama": 0.813,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Papagaio-do-mangue",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.758,
+   "ajustado": true,
+   "percentil": 0.429,
+   "fama": 0.813,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Papagaio-galego",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.531,
+   "ajustado": true,
+   "percentil": 0.4,
+   "fama": 0.814,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Pardela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.528,
+   "ajustado": true,
+   "percentil": 0.889,
+   "fama": 0.809,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Pernilongo-de-costas-negras",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.488,
+   "ajustado": true,
+   "percentil": 0.396,
+   "fama": 0.811,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Petrel",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.187,
+   "ajustado": true,
+   "percentil": 0.868,
+   "fama": 0.809,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Talha-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.015,
+   "ajustado": true,
+   "percentil": 0.172,
+   "fama": 0.81,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Trinta-réis",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.78,
+   "ajustado": true,
+   "percentil": 0.282,
+   "fama": 0.81,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Anacã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.076,
+   "ajustado": true,
+   "percentil": 0.858,
+   "fama": 0.815,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Bonito-do-campo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.996,
+   "ajustado": true,
+   "percentil": 0.006,
+   "fama": 0.819,
+   "pontos": 74,
+   "peso": 0.86
   },
   {
    "resposta": "Boto-cinza",
-   "apelidos": [],
+   "apelidos": [
+    "tucuxi"
+   ],
    "sem_dado": false,
    "icf": 11.787,
    "ajustado": true,
-   "percentil": 0.221,
+   "percentil": 0.284,
    "fama": 0.82,
-   "pontos": 82,
-   "peso": 0.906
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Choca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.106,
+   "ajustado": true,
+   "percentil": 0.469,
+   "fama": 0.82,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Cuiú-cuiú",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.671,
+   "ajustado": true,
+   "percentil": 0.901,
+   "fama": 0.815,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Formigueiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.624,
+   "ajustado": true,
+   "percentil": 0.536,
+   "fama": 0.82,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Gaturamo-verdadeiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.299,
+   "ajustado": true,
+   "percentil": 0.498,
+   "fama": 0.819,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Marianinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.291,
+   "ajustado": true,
+   "percentil": 0.808,
+   "fama": 0.816,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Papagaio-charão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.16,
+   "ajustado": true,
+   "percentil": 0.596,
+   "fama": 0.814,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Papagaio-moleiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.64,
+   "ajustado": true,
+   "percentil": 0.537,
+   "fama": 0.814,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Pássaro-preto-de-veste-amarela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.709,
+   "ajustado": true,
+   "percentil": 0.126,
+   "fama": 0.817,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Sabiá-coleira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.044,
+   "ajustado": true,
+   "percentil": 0.464,
+   "fama": 0.817,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Sabiá-da-praia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.002,
+   "ajustado": true,
+   "percentil": 0.17,
+   "fama": 0.816,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Sabiá-ferreiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.246,
+   "ajustado": true,
+   "percentil": 0.491,
+   "fama": 0.816,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Saíra-amarela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.477,
+   "ajustado": true,
+   "percentil": 0.39,
+   "fama": 0.818,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Saíra-lagarta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.746,
+   "ajustado": true,
+   "percentil": 0.552,
+   "fama": 0.818,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Saíra-militar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.623,
+   "ajustado": true,
+   "percentil": 0.255,
+   "fama": 0.818,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Soldadinho-do-araripe",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.04,
+   "ajustado": true,
+   "percentil": 0.587,
+   "fama": 0.819,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Tiê-galo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.057,
+   "ajustado": true,
+   "percentil": 0.466,
+   "fama": 0.817,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Tiê-preto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.916,
+   "ajustado": true,
+   "percentil": 0.305,
+   "fama": 0.817,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Tuim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.174,
+   "ajustado": true,
+   "percentil": 0.797,
+   "fama": 0.815,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Anambé",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.435,
+   "ajustado": true,
+   "percentil": 0.887,
+   "fama": 0.821,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Arapaçu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.33,
+   "ajustado": true,
+   "percentil": 0.88,
+   "fama": 0.82,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Araponga-da-amazônia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.842,
+   "ajustado": true,
+   "percentil": 0.674,
+   "fama": 0.822,
+   "pontos": 75,
+   "peso": 0.866
   },
   {
    "resposta": "Ararajuba",
@@ -761,10 +5556,848 @@
    "sem_dado": false,
    "icf": 16.864,
    "ajustado": true,
-   "percentil": 0.956,
+   "percentil": 0.842,
    "fama": 0.82,
-   "pontos": 84,
-   "peso": 0.917
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Bem-te-vi-rajado",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.583,
+   "ajustado": true,
+   "percentil": 0.017,
+   "fama": 0.823,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Bico-chato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.963,
+   "ajustado": true,
+   "percentil": 0.16,
+   "fama": 0.825,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Cricrió",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.978,
+   "fama": 0.822,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Ferreirinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.551,
+   "ajustado": true,
+   "percentil": 0.892,
+   "fama": 0.825,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Galo-da-serra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.312,
+   "ajustado": true,
+   "percentil": 0.07,
+   "fama": 0.822,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Guaracava",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.193,
+   "ajustado": true,
+   "percentil": 0.923,
+   "fama": 0.824,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Maria-cavaleira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.85,
+   "ajustado": true,
+   "percentil": 0.294,
+   "fama": 0.823,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Neinei",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.635,
+   "ajustado": true,
+   "percentil": 0.966,
+   "fama": 0.823,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Pavó",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.563,
+   "ajustado": true,
+   "percentil": 0.941,
+   "fama": 0.821,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Peitica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.129,
+   "ajustado": true,
+   "percentil": 0.921,
+   "fama": 0.824,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Pia-cobra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.142,
+   "ajustado": true,
+   "percentil": 0.187,
+   "fama": 0.826,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Pichororé",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.078,
+   "ajustado": true,
+   "percentil": 0.984,
+   "fama": 0.82,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Pássaro-boi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.336,
+   "ajustado": true,
+   "percentil": 0.216,
+   "fama": 0.823,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Risadinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.234,
+   "ajustado": true,
+   "percentil": 0.605,
+   "fama": 0.824,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Teque-teque",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.151,
+   "ajustado": true,
+   "percentil": 0.865,
+   "fama": 0.825,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Tovaca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.005,
+   "ajustado": true,
+   "percentil": 0.958,
+   "fama": 0.821,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Baiano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.336,
+   "ajustado": true,
+   "percentil": 0.216,
+   "fama": 0.828,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Bigodinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.648,
+   "ajustado": true,
+   "percentil": 0.657,
+   "fama": 0.828,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Caboclinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.53,
+   "ajustado": true,
+   "percentil": 0.744,
+   "fama": 0.827,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Canário-do-amazonas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.773,
+   "ajustado": true,
+   "percentil": 0.281,
+   "fama": 0.829,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Canário-do-brejo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.756,
+   "ajustado": true,
+   "percentil": 0.428,
+   "fama": 0.829,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Chorão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.266,
+   "ajustado": true,
+   "percentil": 0.493,
+   "fama": 0.828,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Encontro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.732,
+   "ajustado": true,
+   "percentil": 0.002,
+   "fama": 0.831,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Garibaldi-do-brejo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.486,
+   "ajustado": true,
+   "percentil": 0.394,
+   "fama": 0.83,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Gaturamo-rei",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.211,
+   "ajustado": true,
+   "percentil": 0.485,
+   "fama": 0.827,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Gralha-do-campo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.273,
+   "ajustado": true,
+   "percentil": 0.209,
+   "fama": 0.832,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Iraúna",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.636,
+   "ajustado": true,
+   "percentil": 0.943,
+   "fama": 0.83,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Japim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.582,
+   "ajustado": true,
+   "percentil": 0.898,
+   "fama": 0.831,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Japu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.57,
+   "ajustado": true,
+   "percentil": 0.896,
+   "fama": 0.83,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Juruviara",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.718,
+   "ajustado": true,
+   "percentil": 0.945,
+   "fama": 0.826,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Patativa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.989,
+   "ajustado": true,
+   "percentil": 0.58,
+   "fama": 0.827,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Pitiguari",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.241,
+   "ajustado": true,
+   "percentil": 0.926,
+   "fama": 0.826,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Polícia-inglesa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.741,
+   "ajustado": true,
+   "percentil": 0.025,
+   "fama": 0.829,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Pula-pula",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.878,
+   "ajustado": true,
+   "percentil": 0.299,
+   "fama": 0.826,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Tecelão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.133,
+   "ajustado": true,
+   "percentil": 0.702,
+   "fama": 0.832,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Tiziu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.913,
+   "ajustado": true,
+   "percentil": 0.784,
+   "fama": 0.828,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Xexéu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.719,
+   "ajustado": true,
+   "percentil": 0.764,
+   "fama": 0.831,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Acauã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.904,
+   "ajustado": true,
+   "percentil": 0.682,
+   "fama": 0.837,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Corvo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.641,
+   "ajustado": true,
+   "percentil": 0.41,
+   "fama": 0.833,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Falcão-de-coleira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.256,
+   "ajustado": true,
+   "percentil": 0.357,
+   "fama": 0.838,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Fogo-apagou-do-nordeste",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.706,
+   "ajustado": true,
+   "percentil": 0.124,
+   "fama": 0.834,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Gavião-caramujeiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.787,
+   "ajustado": true,
+   "percentil": 0.772,
+   "fama": 0.836,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Gavião-carrapateiro",
+   "apelidos": [
+    "carrapateiro"
+   ],
+   "sem_dado": false,
+   "icf": 15.383,
+   "ajustado": true,
+   "percentil": 0.728,
+   "fama": 0.836,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Gavião-de-penacho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.216,
+   "ajustado": true,
+   "percentil": 0.602,
+   "fama": 0.835,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Gavião-pombo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.947,
+   "ajustado": true,
+   "percentil": 0.45,
+   "fama": 0.835,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Gavião-tesoura",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.477,
+   "ajustado": true,
+   "percentil": 0.39,
+   "fama": 0.836,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Gaviãozinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.204,
+   "ajustado": true,
+   "percentil": 0.925,
+   "fama": 0.837,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Gralha-cancã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.889,
+   "ajustado": true,
+   "percentil": 0.781,
+   "fama": 0.832,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Inhapim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.309,
+   "ajustado": true,
+   "percentil": 0.722,
+   "fama": 0.832,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Juriti-pupu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.403,
+   "ajustado": true,
+   "percentil": 0.817,
+   "fama": 0.834,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Pariri",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.978,
+   "ajustado": true,
+   "percentil": 0.916,
+   "fama": 0.834,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Pomba-galega",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.805,
+   "ajustado": true,
+   "percentil": 0.434,
+   "fama": 0.833,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Pomba-trocal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.535,
+   "ajustado": true,
+   "percentil": 0.746,
+   "fama": 0.833,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Quiriquiri",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.537,
+   "ajustado": true,
+   "percentil": 0.936,
+   "fama": 0.837,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Urubu-de-cabeça-amarela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.892,
+   "ajustado": true,
+   "percentil": 0.141,
+   "fama": 0.835,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Urubu-de-cabeça-vermelha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.667,
+   "ajustado": true,
+   "percentil": 0.113,
+   "fama": 0.835,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Águia-cinzenta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.799,
+   "ajustado": true,
+   "percentil": 0.289,
+   "fama": 0.838,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Águia-pescadora",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.799,
+   "ajustado": true,
+   "percentil": 0.289,
+   "fama": 0.838,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Ariramba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.328,
+   "ajustado": true,
+   "percentil": 0.878,
+   "fama": 0.843,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Barbudo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.737,
+   "ajustado": true,
+   "percentil": 0.55,
+   "fama": 0.843,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Beija-flor-de-fronte-violeta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.658,
+   "ajustado": true,
+   "percentil": 0.264,
+   "fama": 0.841,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Beija-flor-de-veste-preta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.671,
+   "ajustado": true,
+   "percentil": 0.115,
+   "fama": 0.841,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Beija-flor-rubi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.328,
+   "ajustado": true,
+   "percentil": 0.214,
+   "fama": 0.841,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Coruja-do-mato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.928,
+   "ajustado": true,
+   "percentil": 0.15,
+   "fama": 0.839,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Coruja-orelhuda",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.135,
+   "ajustado": true,
+   "percentil": 0.335,
+   "fama": 0.839,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Coruja-preta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.983,
+   "ajustado": true,
+   "percentil": 0.165,
+   "fama": 0.839,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Curiango-do-banhado",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.084,
+   "ajustado": true,
+   "percentil": 0.697,
+   "fama": 0.84,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Estrelinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.29,
+   "ajustado": true,
+   "percentil": 0.496,
+   "fama": 0.842,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Murucututu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.965,
+   "ajustado": true,
+   "percentil": 0.914,
+   "fama": 0.84,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Mãe-da-lua-gigante",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.524,
+   "ajustado": true,
+   "percentil": 0.016,
+   "fama": 0.84,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Pica-pau-anão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.291,
+   "ajustado": true,
+   "percentil": 0.212,
+   "fama": 0.844,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Pica-pau-rei",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.175,
+   "ajustado": true,
+   "percentil": 0.056,
+   "fama": 0.844,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Rabo-branco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.922,
+   "ajustado": true,
+   "percentil": 0.037,
+   "fama": 0.842,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Surucuá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.337,
+   "ajustado": true,
+   "percentil": 0.882,
+   "fama": 0.843,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Tesourão-grande",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.189,
+   "ajustado": true,
+   "percentil": 0.345,
+   "fama": 0.841,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Topetinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.982,
+   "ajustado": true,
+   "percentil": 0.85,
+   "fama": 0.842,
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Uacari",
@@ -772,10 +6405,496 @@
    "sem_dado": false,
    "icf": 17.072,
    "ajustado": true,
-   "percentil": 0.985,
+   "percentil": 0.857,
    "fama": 0.84,
-   "pontos": 86,
-   "peso": 0.927
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Udu-de-coroa-azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.387,
+   "ajustado": true,
+   "percentil": 0.375,
+   "fama": 0.843,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Uiraçu-falso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.355,
+   "ajustado": true,
+   "percentil": 0.626,
+   "fama": 0.838,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Aracuã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.717,
+   "ajustado": true,
+   "percentil": 0.906,
+   "fama": 0.849,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Arirambinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 21.969,
+   "ajustado": true,
+   "percentil": 0.999,
+   "fama": 0.846,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Capitão-de-bigode",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.427,
+   "ajustado": true,
+   "percentil": 0.229,
+   "fama": 0.844,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Cigana",
+   "apelidos": [
+    "jacu-cigano"
+   ],
+   "sem_dado": false,
+   "icf": 12.55,
+   "ajustado": true,
+   "percentil": 0.403,
+   "fama": 0.85,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Codorna-amarela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.448,
+   "ajustado": true,
+   "percentil": 0.384,
+   "fama": 0.848,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Cujubi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.647,
+   "ajustado": true,
+   "percentil": 0.968,
+   "fama": 0.85,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Inambu-chororó",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.245,
+   "ajustado": true,
+   "percentil": 0.872,
+   "fama": 0.847,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Inhambuguaçu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.962,
+   "ajustado": true,
+   "percentil": 0.973,
+   "fama": 0.847,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Jacuaçu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.982,
+   "ajustado": true,
+   "percentil": 0.955,
+   "fama": 0.849,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Jacupemba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.605,
+   "ajustado": true,
+   "percentil": 0.899,
+   "fama": 0.849,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Jaó",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.866,
+   "ajustado": true,
+   "percentil": 0.778,
+   "fama": 0.847,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Macuquinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.549,
+   "ajustado": true,
+   "percentil": 0.938,
+   "fama": 0.847,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Martim-pescador-grande",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.603,
+   "ajustado": true,
+   "percentil": 0.1,
+   "fama": 0.846,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Martim-pescador-verde",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.253,
+   "ajustado": true,
+   "percentil": 0.202,
+   "fama": 0.846,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Mutum-cavalo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.144,
+   "ajustado": true,
+   "percentil": 0.337,
+   "fama": 0.848,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Mutum-de-penacho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.706,
+   "ajustado": true,
+   "percentil": 0.663,
+   "fama": 0.848,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Pica-pau-amarelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.458,
+   "ajustado": true,
+   "percentil": 0.08,
+   "fama": 0.845,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Pica-pau-de-banda-branca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.882,
+   "ajustado": true,
+   "percentil": 0.035,
+   "fama": 0.845,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Picapauzinho",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.978,
+   "fama": 0.845,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Socó-boi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.653,
+   "ajustado": true,
+   "percentil": 0.539,
+   "fama": 0.85,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Urumutum",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.032,
+   "ajustado": true,
+   "percentil": 0.983,
+   "fama": 0.85,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Ananaí",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.352,
+   "ajustado": true,
+   "percentil": 0.963,
+   "fama": 0.856,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Carão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.693,
+   "ajustado": true,
+   "percentil": 0.661,
+   "fama": 0.854,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Cauauá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.935,
+   "ajustado": true,
+   "percentil": 0.994,
+   "fama": 0.852,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Cisne-de-pescoço-preto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.792,
+   "ajustado": true,
+   "percentil": 0.135,
+   "fama": 0.857,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Coró-coró",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.917,
+   "ajustado": true,
+   "percentil": 0.849,
+   "fama": 0.853,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Curicaca-real",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.841,
+   "ajustado": true,
+   "percentil": 0.44,
+   "fama": 0.853,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Frango-d'água-azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.813,
+   "ajustado": true,
+   "percentil": 0.03,
+   "fama": 0.855,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Galinha-d'água",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.039,
+   "ajustado": true,
+   "percentil": 0.175,
+   "fama": 0.855,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Garça-azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.191,
+   "ajustado": true,
+   "percentil": 0.191,
+   "fama": 0.851,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Maria-faceira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.44,
+   "ajustado": true,
+   "percentil": 0.233,
+   "fama": 0.852,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Marreca-cabocla",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.893,
+   "ajustado": true,
+   "percentil": 0.68,
+   "fama": 0.856,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Marreca-caneleira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.135,
+   "ajustado": true,
+   "percentil": 0.703,
+   "fama": 0.856,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Pato-corredor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.174,
+   "ajustado": true,
+   "percentil": 0.188,
+   "fama": 0.855,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Pato-mergulhão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.19,
+   "ajustado": true,
+   "percentil": 0.479,
+   "fama": 0.855,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Sanã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.959,
+   "ajustado": true,
+   "percentil": 0.913,
+   "fama": 0.854,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Saracura-três-potes",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.729,
+   "ajustado": true,
+   "percentil": 0.273,
+   "fama": 0.854,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Savacu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.495,
+   "ajustado": true,
+   "percentil": 0.934,
+   "fama": 0.851,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Socozinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.511,
+   "ajustado": true,
+   "percentil": 0.935,
+   "fama": 0.851,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Tabuiaiá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.522,
+   "ajustado": true,
+   "percentil": 0.991,
+   "fama": 0.852,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Tapicuru",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.976,
+   "ajustado": true,
+   "percentil": 0.954,
+   "fama": 0.853,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Tuiuiú-mirim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.88,
+   "ajustado": true,
+   "percentil": 0.57,
+   "fama": 0.853,
+   "pontos": 80,
+   "peso": 0.894
   },
   {
    "resposta": "Arara-azul-de-lear",
@@ -783,10 +6902,120 @@
    "sem_dado": false,
    "icf": 10.97,
    "ajustado": true,
-   "percentil": 0.132,
+   "percentil": 0.161,
    "fama": 0.86,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Biguatinga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.424,
+   "ajustado": true,
+   "percentil": 0.933,
+   "fama": 0.858,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Capororoca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.973,
+   "ajustado": true,
+   "percentil": 0.915,
+   "fama": 0.857,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Cobra-de-vidro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.258,
+   "ajustado": true,
+   "percentil": 0.064,
+   "fama": 0.861,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Cobra-espada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.911,
+   "ajustado": true,
+   "percentil": 0.146,
+   "fama": 0.86,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Cobra-papagaio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.569,
+   "ajustado": true,
+   "percentil": 0.249,
+   "fama": 0.86,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Cobra-preta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.311,
+   "ajustado": true,
+   "percentil": 0.069,
+   "fama": 0.862,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Cobra-verde",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.864,
+   "ajustado": true,
+   "percentil": 0.032,
+   "fama": 0.86,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Corre-campo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.419,
+   "ajustado": true,
+   "percentil": 0.012,
+   "fama": 0.861,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Cotiara",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.037,
+   "ajustado": true,
+   "percentil": 0.918,
+   "fama": 0.859,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Dormideira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.797,
+   "ajustado": true,
+   "percentil": 0.84,
+   "fama": 0.862,
+   "pontos": 81,
+   "peso": 0.9
   },
   {
    "resposta": "Irara",
@@ -794,10 +7023,2066 @@
    "sem_dado": false,
    "icf": 17.042,
    "ajustado": true,
-   "percentil": 0.971,
+   "percentil": 0.855,
    "fama": 0.86,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Jararaca-da-seca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.426,
+   "ajustado": true,
+   "percentil": 0.382,
+   "fama": 0.859,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Jararaca-de-alcatrazes",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.571,
+   "ajustado": true,
+   "percentil": 0.65,
+   "fama": 0.859,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Jararaca-do-norte",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.541,
+   "ajustado": true,
+   "percentil": 0.246,
+   "fama": 0.858,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Jararaca-pintada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.37,
+   "ajustado": true,
+   "percentil": 0.502,
+   "fama": 0.858,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Jararaquinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.521,
+   "ajustado": true,
+   "percentil": 0.964,
+   "fama": 0.862,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Mergulhão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.039,
+   "ajustado": true,
+   "percentil": 0.693,
+   "fama": 0.858,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Parelheira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.598,
+   "ajustado": true,
+   "percentil": 0.993,
+   "fama": 0.861,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Sucuri-amarela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.647,
+   "ajustado": true,
+   "percentil": 0.413,
+   "fama": 0.862,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Tachã-do-sul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.506,
+   "ajustado": true,
+   "percentil": 0.522,
+   "fama": 0.857,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Briba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.363,
+   "ajustado": true,
+   "percentil": 0.884,
+   "fama": 0.866,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Cabeçuda",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.267,
+   "ajustado": true,
+   "percentil": 0.719,
+   "fama": 0.868,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Calango-verde",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.674,
+   "ajustado": true,
+   "percentil": 0.266,
+   "fama": 0.865,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Calanguinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.666,
+   "ajustado": true,
+   "percentil": 0.944,
+   "fama": 0.865,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Cobra-de-pernas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.791,
+   "ajustado": true,
+   "percentil": 0.132,
+   "fama": 0.866,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Cobra-de-veado",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.071,
+   "ajustado": true,
+   "percentil": 0.323,
+   "fama": 0.863,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Coral-de-hemprich",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.117,
+   "ajustado": true,
+   "percentil": 0.183,
+   "fama": 0.864,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Cágado-de-barbicha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.623,
+   "ajustado": true,
+   "percentil": 0.753,
+   "fama": 0.867,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Cágado-pescoço-de-cobra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.268,
+   "ajustado": true,
+   "percentil": 0.359,
+   "fama": 0.868,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Iguana-do-mangue",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.84,
+   "ajustado": true,
+   "percentil": 0.566,
+   "fama": 0.867,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Irapuca",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.978,
+   "fama": 0.868,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Jabuti-amarelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.767,
+   "ajustado": true,
+   "percentil": 0.279,
+   "fama": 0.869,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Jacaré-anão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.482,
+   "ajustado": true,
+   "percentil": 0.393,
+   "fama": 0.867,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Jacuraru",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.347,
+   "ajustado": true,
+   "percentil": 0.989,
+   "fama": 0.865,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Jiboia-arco-íris",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.477,
+   "ajustado": true,
+   "percentil": 0.39,
+   "fama": 0.863,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Lagartixa-de-parede",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.831,
+   "ajustado": true,
+   "percentil": 0.292,
+   "fama": 0.866,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Lagarto-de-papo-amarelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.037,
+   "ajustado": true,
+   "percentil": 0.173,
+   "fama": 0.864,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Salamanta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.018,
+   "ajustado": true,
+   "percentil": 0.959,
+   "fama": 0.863,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Suaçuboia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 23.643,
+   "ajustado": true,
+   "percentil": 1.0,
+   "fama": 0.864,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Taraguira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 21.245,
+   "ajustado": true,
+   "percentil": 0.998,
+   "fama": 0.865,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Tartaruga-do-mato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.957,
+   "ajustado": true,
+   "percentil": 0.156,
+   "fama": 0.868,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Bicuda",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.081,
+   "ajustado": true,
+   "percentil": 0.695,
+   "fama": 0.875,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Cachorra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.73,
+   "ajustado": true,
+   "percentil": 0.423,
+   "fama": 0.875,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Cobra-cega-gigante",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.107,
+   "ajustado": true,
+   "percentil": 0.182,
+   "fama": 0.873,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Dourada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.342,
+   "ajustado": true,
+   "percentil": 0.218,
+   "fama": 0.873,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Filhote",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.42,
+   "ajustado": true,
+   "percentil": 0.228,
+   "fama": 0.874,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Jundiá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.253,
+   "ajustado": true,
+   "percentil": 0.716,
+   "fama": 0.874,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Perereca-de-bromélia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.711,
+   "ajustado": true,
+   "percentil": 0.665,
+   "fama": 0.871,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Perereca-de-folhagem",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.756,
+   "ajustado": true,
+   "percentil": 0.554,
+   "fama": 0.871,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Perereca-macaco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.77,
+   "ajustado": true,
+   "percentil": 0.431,
+   "fama": 0.871,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Piramutaba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.927,
+   "ajustado": true,
+   "percentil": 0.91,
+   "fama": 0.873,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Pirarara",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.827,
+   "ajustado": true,
+   "percentil": 0.776,
+   "fama": 0.874,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Rã-cachorro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.922,
+   "ajustado": true,
+   "percentil": 0.307,
+   "fama": 0.869,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Rã-de-vidro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.65,
+   "ajustado": true,
+   "percentil": 0.262,
+   "fama": 0.87,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Rã-manteiga",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.12,
+   "ajustado": true,
+   "percentil": 0.33,
+   "fama": 0.869,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Rãzinha",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.978,
+   "fama": 0.872,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sapo-cururuzinho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.921,
+   "ajustado": true,
+   "percentil": 0.148,
+   "fama": 0.872,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sapo-de-barriga-vermelha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.541,
+   "ajustado": true,
+   "percentil": 0.087,
+   "fama": 0.87,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sapo-ferreiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.084,
+   "ajustado": true,
+   "percentil": 0.325,
+   "fama": 0.87,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sapo-folha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.21,
+   "ajustado": true,
+   "percentil": 0.061,
+   "fama": 0.872,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sapo-intanha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.425,
+   "ajustado": true,
+   "percentil": 0.733,
+   "fama": 0.873,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sapo-martelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.521,
+   "ajustado": true,
+   "percentil": 0.242,
+   "fama": 0.87,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Acará-açu",
+   "apelidos": [
+    "oscar"
+   ],
+   "sem_dado": false,
+   "icf": 13.837,
+   "ajustado": true,
+   "percentil": 0.565,
+   "fama": 0.879,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Apaiari",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.043,
+   "ajustado": true,
+   "percentil": 0.919,
+   "fama": 0.88,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Apapá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.752,
+   "ajustado": true,
+   "percentil": 0.946,
+   "fama": 0.876,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Aracu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.881,
+   "ajustado": true,
+   "percentil": 0.909,
+   "fama": 0.877,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Arraia-motoro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.968,
+   "ajustado": true,
+   "percentil": 0.787,
+   "fama": 0.88,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Barbado",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.172,
+   "ajustado": true,
+   "percentil": 0.708,
+   "fama": 0.875,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Branquinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.528,
+   "ajustado": true,
+   "percentil": 0.398,
+   "fama": 0.877,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Curimatã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.281,
+   "ajustado": true,
+   "percentil": 0.877,
+   "fama": 0.877,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Jacundá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.799,
+   "ajustado": true,
+   "percentil": 0.773,
+   "fama": 0.88,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Jaraqui",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.681,
+   "ajustado": true,
+   "percentil": 0.828,
+   "fama": 0.877,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Lambari-do-rabo-amarelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.809,
+   "ajustado": true,
+   "percentil": 0.291,
+   "fama": 0.878,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Mapará",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.14,
+   "ajustado": true,
+   "percentil": 0.864,
+   "fama": 0.876,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Peixe-agulha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.789,
+   "ajustado": true,
+   "percentil": 0.13,
+   "fama": 0.881,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Peixe-borboleta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.762,
+   "ajustado": true,
+   "percentil": 0.128,
+   "fama": 0.879,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Peixe-folha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.795,
+   "ajustado": true,
+   "percentil": 0.029,
+   "fama": 0.881,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Peixe-lápis",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.509,
+   "ajustado": true,
+   "percentil": 0.084,
+   "fama": 0.879,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Peixe-pedra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.885,
+   "ajustado": true,
+   "percentil": 0.036,
+   "fama": 0.881,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Pescada-amarela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.233,
+   "ajustado": true,
+   "percentil": 0.352,
+   "fama": 0.88,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Piau-três-pintas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.063,
+   "ajustado": true,
+   "percentil": 0.322,
+   "fama": 0.878,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Sardinhão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.807,
+   "ajustado": true,
+   "percentil": 0.97,
+   "fama": 0.876,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Tetra-cardinal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.709,
+   "ajustado": true,
+   "percentil": 0.544,
+   "fama": 0.878,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Albacora",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.228,
+   "ajustado": true,
+   "percentil": 0.803,
+   "fama": 0.887,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Ariocó",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.106,
+   "ajustado": true,
+   "percentil": 0.986,
+   "fama": 0.884,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Bagre-bandeira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.308,
+   "ajustado": true,
+   "percentil": 0.365,
+   "fama": 0.886,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Bonito",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.615,
+   "ajustado": true,
+   "percentil": 0.02,
+   "fama": 0.887,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Cangulo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.566,
+   "ajustado": true,
+   "percentil": 0.893,
+   "fama": 0.886,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Caranha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.882,
+   "ajustado": true,
+   "percentil": 0.845,
+   "fama": 0.884,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Dentão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.408,
+   "ajustado": true,
+   "percentil": 0.819,
+   "fama": 0.884,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Dourado-do-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.603,
+   "ajustado": true,
+   "percentil": 0.019,
+   "fama": 0.888,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Olho-de-boi",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.422,
+   "ajustado": true,
+   "percentil": 0.077,
+   "fama": 0.885,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Olho-de-cão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.954,
+   "ajustado": true,
+   "percentil": 0.042,
+   "fama": 0.885,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Paru",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.239,
+   "ajustado": true,
+   "percentil": 0.805,
+   "fama": 0.883,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Peixe-galo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.648,
+   "ajustado": true,
+   "percentil": 0.108,
+   "fama": 0.882,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Peixe-morcego",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.417,
+   "ajustado": true,
+   "percentil": 0.227,
+   "fama": 0.882,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Peixe-porco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.673,
+   "ajustado": true,
+   "percentil": 0.116,
+   "fama": 0.887,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Peixe-sapo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.505,
+   "ajustado": true,
+   "percentil": 0.082,
+   "fama": 0.882,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Peroá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.688,
+   "ajustado": true,
+   "percentil": 0.903,
+   "fama": 0.886,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Saramunete",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.978,
+   "fama": 0.885,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Sargo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.12,
+   "ajustado": true,
+   "percentil": 0.796,
+   "fama": 0.883,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Xaréu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.377,
+   "ajustado": true,
+   "percentil": 0.815,
+   "fama": 0.882,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Xixarro",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.978,
+   "fama": 0.883,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Barracuda",
+   "apelidos": [
+    "bicuda-do-mar"
+   ],
+   "sem_dado": false,
+   "icf": 14.47,
+   "ajustado": true,
+   "percentil": 0.637,
+   "fama": 0.888,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Camarão-rosa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.32,
+   "ajustado": true,
+   "percentil": 0.072,
+   "fama": 0.893,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Camarão-sete-barbas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.343,
+   "ajustado": true,
+   "percentil": 0.219,
+   "fama": 0.893,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Camurim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.744,
+   "ajustado": true,
+   "percentil": 0.908,
+   "fama": 0.889,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Caranguejo-aranha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.906,
+   "ajustado": true,
+   "percentil": 0.304,
+   "fama": 0.893,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Carapeba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.176,
+   "ajustado": true,
+   "percentil": 0.867,
+   "fama": 0.889,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Carapicu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.341,
+   "ajustado": true,
+   "percentil": 0.929,
+   "fama": 0.889,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Lagosta-sapateira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.389,
+   "ajustado": true,
+   "percentil": 0.51,
+   "fama": 0.892,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Manjuba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.309,
+   "ajustado": true,
+   "percentil": 0.81,
+   "fama": 0.89,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Peixe-serra",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.753,
+   "ajustado": true,
+   "percentil": 0.026,
+   "fama": 0.892,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Prejereba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.841,
+   "ajustado": true,
+   "percentil": 0.95,
+   "fama": 0.888,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Raia-chita",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.198,
+   "ajustado": true,
+   "percentil": 0.481,
+   "fama": 0.892,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Raia-viola",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.02,
+   "ajustado": true,
+   "percentil": 0.314,
+   "fama": 0.892,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Robalo-flecha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.998,
+   "ajustado": true,
+   "percentil": 0.457,
+   "fama": 0.888,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Siri-candeia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.423,
+   "ajustado": true,
+   "percentil": 0.517,
+   "fama": 0.894,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Sururu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.082,
+   "ajustado": true,
+   "percentil": 0.696,
+   "fama": 0.894,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Tubarão-azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.427,
+   "ajustado": true,
+   "percentil": 0.079,
+   "fama": 0.89,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Tubarão-galha-preta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.558,
+   "ajustado": true,
+   "percentil": 0.404,
+   "fama": 0.891,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Tubarão-limão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.198,
+   "ajustado": true,
+   "percentil": 0.192,
+   "fama": 0.891,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Tubarão-mako",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.312,
+   "ajustado": true,
+   "percentil": 0.5,
+   "fama": 0.89,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Tubarão-touro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.861,
+   "ajustado": true,
+   "percentil": 0.297,
+   "fama": 0.891,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Aranha-de-jardim",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.929,
+   "ajustado": true,
+   "percentil": 0.039,
+   "fama": 0.899,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Aranha-lobo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.903,
+   "ajustado": true,
+   "percentil": 0.143,
+   "fama": 0.899,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Berbigão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.68,
+   "ajustado": true,
+   "percentil": 0.762,
+   "fama": 0.895,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Bicho-de-pé",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.038,
+   "ajustado": true,
+   "percentil": 0.047,
+   "fama": 0.899,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Borboleta-da-praia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.097,
+   "ajustado": true,
+   "percentil": 0.051,
+   "fama": 0.899,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Caranguejo-guaiá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.777,
+   "ajustado": true,
+   "percentil": 0.771,
+   "fama": 0.894,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Cavalo-do-cão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.327,
+   "ajustado": true,
+   "percentil": 0.074,
+   "fama": 0.899,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Coral-de-fogo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.171,
+   "ajustado": true,
+   "percentil": 0.055,
+   "fama": 0.897,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Ctenóforo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.087,
+   "ajustado": true,
+   "percentil": 0.985,
+   "fama": 0.898,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Escorpião-preto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.658,
+   "ajustado": true,
+   "percentil": 0.11,
+   "fama": 0.899,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Esponja-de-fogo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.589,
+   "ajustado": true,
+   "percentil": 0.096,
+   "fama": 0.897,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Formiga-de-fogo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.693,
+   "ajustado": true,
+   "percentil": 0.121,
+   "fama": 0.898,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Lambreta",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.907,
+   "ajustado": true,
+   "percentil": 0.683,
+   "fama": 0.895,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Lula-gigante",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.975,
+   "ajustado": true,
+   "percentil": 0.044,
+   "fama": 0.896,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Medusa-juba-de-leão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.699,
+   "ajustado": true,
+   "percentil": 0.42,
+   "fama": 0.897,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Náutilo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.27,
+   "ajustado": true,
+   "percentil": 0.928,
+   "fama": 0.896,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Polvo-de-recife",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.286,
+   "ajustado": true,
+   "percentil": 0.211,
+   "fama": 0.896,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Unha-de-velho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.247,
+   "ajustado": true,
+   "percentil": 0.062,
+   "fama": 0.895,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Vespa-do-mar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.977,
+   "ajustado": true,
+   "percentil": 0.162,
+   "fama": 0.898,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Vieira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.154,
+   "ajustado": true,
+   "percentil": 0.054,
+   "fama": 0.895,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Zoantídeo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 20.493,
+   "ajustado": true,
+   "percentil": 0.99,
+   "fama": 0.897,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Abelha-cachorro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.267,
+   "ajustado": true,
+   "percentil": 0.206,
+   "fama": 0.899,
    "pontos": 88,
    "peso": 0.938
+  },
+  {
+   "resposta": "Aranha-caranguejo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.906,
+   "ajustado": true,
+   "percentil": 0.304,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Aranha-de-teia-dourada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.501,
+   "ajustado": true,
+   "percentil": 0.239,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Aranha-saltadora",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.957,
+   "ajustado": true,
+   "percentil": 0.156,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Besouro-tigre",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.531,
+   "ajustado": true,
+   "percentil": 0.4,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Bicho-de-cesto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.603,
+   "ajustado": true,
+   "percentil": 0.252,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Bicho-geográfico",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.602,
+   "ajustado": true,
+   "percentil": 0.251,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Borboleta-coruja",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.785,
+   "ajustado": true,
+   "percentil": 0.283,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Borboleta-monarca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.129,
+   "ajustado": true,
+   "percentil": 0.332,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Borboleta-oitenta-e-oito",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.98,
+   "ajustado": true,
+   "percentil": 0.163,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Escorpião-amarelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.271,
+   "ajustado": true,
+   "percentil": 0.208,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Escorpião-marrom",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.627,
+   "ajustado": true,
+   "percentil": 0.257,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Formiga-argentina",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.096,
+   "ajustado": true,
+   "percentil": 0.18,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Formiga-carpinteira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.162,
+   "ajustado": true,
+   "percentil": 0.34,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Formiga-leão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.299,
+   "ajustado": true,
+   "percentil": 0.213,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Lagarta-do-cartucho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.678,
+   "ajustado": true,
+   "percentil": 0.418,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Mariposa-imperador",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.442,
+   "ajustado": true,
+   "percentil": 0.383,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Mosca-das-frutas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.266,
+   "ajustado": true,
+   "percentil": 0.204,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Mosquito-palha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.628,
+   "ajustado": true,
+   "percentil": 0.259,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Mosquito-prego",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.176,
+   "ajustado": true,
+   "percentil": 0.342,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Tatu-bolinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.361,
+   "ajustado": true,
+   "percentil": 0.37,
+   "fama": 0.899,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Abelha-borá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.823,
+   "ajustado": true,
+   "percentil": 0.564,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Abelha-mandaguari",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.378,
+   "ajustado": true,
+   "percentil": 0.506,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Abelha-tiúba",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.901,
+   "ajustado": true,
+   "percentil": 0.681,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Berne",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.299,
+   "ajustado": true,
+   "percentil": 0.721,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Besouro-bombardeiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.889,
+   "ajustado": true,
+   "percentil": 0.571,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Besouro-de-chifre",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.198,
+   "ajustado": true,
+   "percentil": 0.481,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Besouro-titã",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.569,
+   "ajustado": true,
+   "percentil": 0.529,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Bicudo-do-algodoeiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.21,
+   "ajustado": true,
+   "percentil": 0.601,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Cochonilha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.704,
+   "ajustado": true,
+   "percentil": 0.763,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Escaravelho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.696,
+   "ajustado": true,
+   "percentil": 0.662,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Formiga-cabeçuda",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.714,
+   "ajustado": true,
+   "percentil": 0.545,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Formiga-de-correição",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.311,
+   "ajustado": true,
+   "percentil": 0.499,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Gorgulho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.473,
+   "ajustado": true,
+   "percentil": 0.738,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Lacraia-gigante",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.82,
+   "ajustado": true,
+   "percentil": 0.436,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Lagarta-rosca",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.82,
+   "ajustado": true,
+   "percentil": 0.436,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Mariposa-bruxa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.767,
+   "ajustado": true,
+   "percentil": 0.43,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Mosca-varejeira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.315,
+   "ajustado": true,
+   "percentil": 0.618,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Tarântula",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.52,
+   "ajustado": true,
+   "percentil": 0.742,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Tesourinha-inseto",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.8,
+   "ajustado": true,
+   "percentil": 0.559,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Vaquinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.206,
+   "ajustado": true,
+   "percentil": 0.484,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Vespa-caçadora",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.374,
+   "ajustado": true,
+   "percentil": 0.504,
+   "fama": 0.899,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Bitu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.086,
+   "ajustado": true,
+   "percentil": 0.792,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Caruncho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.775,
+   "ajustado": true,
+   "percentil": 0.769,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Cigarrinha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.223,
+   "ajustado": true,
+   "percentil": 0.802,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Irapuá",
+   "apelidos": [
+    "arapuá"
+   ],
+   "sem_dado": false,
+   "icf": 17.427,
+   "ajustado": true,
+   "percentil": 0.885,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Iça",
+   "apelidos": [
+    "tanajura"
+   ],
+   "sem_dado": false,
+   "icf": 16.377,
+   "ajustado": true,
+   "percentil": 0.815,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Jequitiranaboia",
+   "apelidos": [
+    "cabeça-de-jacaré"
+   ],
+   "sem_dado": false,
+   "icf": 19.881,
+   "ajustado": true,
+   "percentil": 0.971,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Lacrau",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.101,
+   "ajustado": true,
+   "percentil": 0.86,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Mangangá",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.786,
+   "ajustado": true,
+   "percentil": 0.837,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Pulgão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.9,
+   "ajustado": true,
+   "percentil": 0.783,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Tripes",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.303,
+   "ajustado": true,
+   "percentil": 0.809,
+   "fama": 0.899,
+   "pontos": 90,
+   "peso": 0.949
   }
  ],
  "fonte_peso": "icf",
