@@ -43,6 +43,8 @@ import argparse
 import json
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from collections import defaultdict
@@ -91,20 +93,32 @@ def montar_sparql(wd: dict) -> str:
     for i, prop in enumerate(wd.get("propriedades_apelido", [])):
         linhas.append(f"OPTIONAL {{ ?item wdt:{prop} ?prop{i} }}")
         variaveis.append(f"?prop{i}")
+    # título do artigo na pt.wikipedia: nome de reserva quando o item não tem rótulo em português
+    linhas.append("OPTIONAL { ?artigoPt schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> ; schema:name ?tituloPt . }")
     linhas.append('OPTIONAL { ?item skos:altLabel ?apelido . FILTER(LANG(?apelido) in ("pt-br", "pt")) }')
     linhas.append('SERVICE wikibase:label { bd:serviceParam wikibase:language "pt-br,pt,en". }')
     ordem = " ?ordem" if wd.get("ordem") else ""
     ordenar = "ORDER BY xsd:integer(?ordem)" if wd.get("ordem") else "ORDER BY ?item"
     corpo = "\n  ".join(linhas)
-    return (f"SELECT DISTINCT ?item{ordem} ?itemLabel ?nomePtBr ?nomePt ?apelido {' '.join(variaveis)} WHERE {{\n"
+    return (f"SELECT DISTINCT ?item{ordem} ?itemLabel ?nomePtBr ?nomePt ?tituloPt ?apelido {' '.join(variaveis)} WHERE {{\n"
             f"  {corpo}\n}}\n{ordenar}\n")
 
 
 def consultar(sparql: str) -> list[dict]:
     url = "https://query.wikidata.org/sparql?query=" + urllib.parse.quote(sparql) + "&format=json"
     pedido = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(pedido, timeout=60) as resp:
-        return json.loads(resp.read().decode("utf-8"))["results"]["bindings"]
+    for tentativa in range(6):
+        try:
+            with urllib.request.urlopen(pedido, timeout=120) as resp:
+                return json.loads(resp.read().decode("utf-8"))["results"]["bindings"]
+        except urllib.error.HTTPError as e:
+            # 429: o serviço de consultas limita pedidos por minuto; espera e tenta de novo.
+            if e.code != 429 or tentativa == 5:
+                raise
+            espera = int(e.headers.get("Retry-After") or 0) or 65
+            print(f"  Wikidata pediu para esperar (429); tentando de novo em {espera}s", file=sys.stderr)
+            time.sleep(espera)
+    raise RuntimeError("inalcançável")
 
 
 # ---------- montagem ----------
@@ -128,7 +142,10 @@ def agrupar(linhas: list[dict], receita: dict) -> dict:
         item = itens[chave]
         item["qid"] = item["qid"] or qid
         pt_br, pt = valor(linha, "nomePtBr"), valor(linha, "nomePt")
-        nome = pt_br or pt or valor(linha, "itemLabel")
+        rotulo = valor(linha, "itemLabel")
+        if rotulo and re.fullmatch(r"Q\d+", rotulo):  # sem rótulo nenhum, o serviço devolve o Q...
+            rotulo = None
+        nome = pt_br or pt or valor(linha, "tituloPt") or rotulo
         if nome and not item["nome"]:
             item["nome"] = nome
         for i in range(n_props):
