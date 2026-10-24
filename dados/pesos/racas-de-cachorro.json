@@ -5,7 +5,11 @@
  "respostas": [
   {
    "resposta": "Poodle",
-   "apelidos": [],
+   "apelidos": [
+    "poodle toy",
+    "poodle micro toy",
+    "caniche"
+   ],
    "sem_dado": false,
    "icf": 13.252,
    "lembranca": 130.0,
@@ -19,37 +23,28 @@
   },
   {
    "resposta": "Pitbull",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
+   "apelidos": [
+    "american pit bull terrier",
+    "pit"
+   ],
+   "sem_dado": false,
+   "icf": 12.451,
    "lembranca": 110.0,
    "conhecem": 100.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.015,
-   "fama": 0.015,
+   "percentil": 0.003,
+   "fama": 0.003,
    "pontos": 9,
    "peso": 0.3
-  },
-  {
-   "resposta": "Labrador",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.262,
-   "lembranca": 80.0,
-   "conhecem": 100.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.046,
-   "fama": 0.046,
-   "pontos": 10,
-   "peso": 0.316
   },
   {
    "resposta": "Vira-lata",
    "apelidos": [
     "srd",
-    "caramelo"
+    "caramelo",
+    "sem raça definida",
+    "vira-lata caramelo"
    ],
    "sem_dado": false,
    "icf": 10.724,
@@ -57,43 +52,64 @@
    "conhecem": 100.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.031,
-   "fama": 0.031,
+   "percentil": 0.005,
+   "fama": 0.005,
    "pontos": 10,
    "peso": 0.316
   },
   {
+   "resposta": "Labrador",
+   "apelidos": [
+    "labrador retriever"
+   ],
+   "sem_dado": false,
+   "icf": 13.262,
+   "lembranca": 80.0,
+   "conhecem": 100.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.008,
+   "fama": 0.008,
+   "pontos": 11,
+   "peso": 0.332
+  },
+  {
    "resposta": "Pastor alemão",
-   "apelidos": [],
+   "apelidos": [
+    "german shepherd"
+   ],
    "sem_dado": false,
    "icf": 10.051,
    "lembranca": 70.0,
    "conhecem": 100.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.062,
-   "fama": 0.062,
-   "pontos": 11,
-   "peso": 0.332
+   "percentil": 0.01,
+   "fama": 0.01,
+   "pontos": 12,
+   "peso": 0.346
   },
   {
    "resposta": "Shih-tzu",
-   "apelidos": [],
+   "apelidos": [
+    "shitzu"
+   ],
    "sem_dado": true,
    "icf": 20.0,
    "lembranca": 60.0,
    "conhecem": 99.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.077,
-   "fama": 0.077,
-   "pontos": 12,
-   "peso": 0.346
+   "percentil": 0.013,
+   "fama": 0.013,
+   "pontos": 13,
+   "peso": 0.361
   },
   {
    "resposta": "Golden retriever",
    "apelidos": [
-    "golden"
+    "golden",
+    "retriever dourado"
    ],
    "sem_dado": false,
    "icf": 14.082,
@@ -101,29 +117,34 @@
    "conhecem": 99.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.092,
-   "fama": 0.092,
-   "pontos": 13,
-   "peso": 0.361
+   "percentil": 0.016,
+   "fama": 0.016,
+   "pontos": 14,
+   "peso": 0.374
   },
   {
    "resposta": "Pinscher",
-   "apelidos": [],
+   "apelidos": [
+    "pinscher miniatura",
+    "pinscher zwergpinscher"
+   ],
    "sem_dado": false,
    "icf": 14.27,
    "lembranca": 50.0,
    "conhecem": 99.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.108,
-   "fama": 0.108,
-   "pontos": 13,
-   "peso": 0.361
+   "percentil": 0.018,
+   "fama": 0.018,
+   "pontos": 15,
+   "peso": 0.387
   },
   {
    "resposta": "Bulldog",
    "apelidos": [
-    "buldogue"
+    "buldogue",
+    "bulldog inglês",
+    "buldogue inglês"
    ],
    "sem_dado": false,
    "icf": 14.696,
@@ -131,24 +152,26 @@
    "conhecem": 99.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.123,
-   "fama": 0.123,
-   "pontos": 14,
-   "peso": 0.374
+   "percentil": 0.021,
+   "fama": 0.021,
+   "pontos": 18,
+   "peso": 0.424
   },
   {
    "resposta": "Rottweiler",
-   "apelidos": [],
+   "apelidos": [
+    "rottweiller"
+   ],
    "sem_dado": false,
    "icf": 13.997,
    "lembranca": 40.0,
    "conhecem": 99.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.138,
-   "fama": 0.138,
-   "pontos": 15,
-   "peso": 0.387
+   "percentil": 0.023,
+   "fama": 0.023,
+   "pontos": 19,
+   "peso": 0.436
   },
   {
    "resposta": "Chihuahua",
@@ -159,43 +182,33 @@
    "conhecem": 99.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.154,
-   "fama": 0.154,
-   "pontos": 18,
-   "peso": 0.424
+   "percentil": 0.026,
+   "fama": 0.026,
+   "pontos": 20,
+   "peso": 0.447
   },
   {
    "resposta": "Yorkshire",
-   "apelidos": [],
+   "apelidos": [
+    "yorkshire terrier",
+    "york"
+   ],
    "sem_dado": false,
    "icf": 13.093,
    "lembranca": 25.0,
    "conhecem": 98.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.169,
-   "fama": 0.169,
-   "pontos": 19,
-   "peso": 0.436
-  },
-  {
-   "resposta": "Pug",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.814,
-   "lembranca": 25.0,
-   "conhecem": 98.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.185,
-   "fama": 0.185,
-   "pontos": 20,
-   "peso": 0.447
+   "percentil": 0.028,
+   "fama": 0.028,
+   "pontos": 21,
+   "peso": 0.458
   },
   {
    "resposta": "Husky siberiano",
    "apelidos": [
-    "husky"
+    "husky",
+    "siberian husky"
    ],
    "sem_dado": false,
    "icf": 14.426,
@@ -203,10 +216,27 @@
    "conhecem": 98.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.2,
-   "fama": 0.2,
-   "pontos": 21,
-   "peso": 0.458
+   "percentil": 0.034,
+   "fama": 0.034,
+   "pontos": 22,
+   "peso": 0.469
+  },
+  {
+   "resposta": "Pug",
+   "apelidos": [
+    "Pug carlino",
+    "carlino"
+   ],
+   "sem_dado": false,
+   "icf": 13.814,
+   "lembranca": 25.0,
+   "conhecem": 98.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.031,
+   "fama": 0.031,
+   "pontos": 22,
+   "peso": 0.469
   },
   {
    "resposta": "Dálmata",
@@ -217,10 +247,10 @@
    "conhecem": 99.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.215,
-   "fama": 0.215,
-   "pontos": 22,
-   "peso": 0.469
+   "percentil": 0.036,
+   "fama": 0.036,
+   "pontos": 23,
+   "peso": 0.48
   },
   {
    "resposta": "Beagle",
@@ -231,16 +261,18 @@
    "conhecem": 97.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.231,
-   "fama": 0.231,
-   "pontos": 23,
-   "peso": 0.48
+   "percentil": 0.039,
+   "fama": 0.039,
+   "pontos": 24,
+   "peso": 0.49
   },
   {
    "resposta": "Lulu da Pomerânia",
    "apelidos": [
     "spitz alemão",
-    "lulu"
+    "lulu",
+    "spitz anão",
+    "pomerânia"
    ],
    "sem_dado": false,
    "icf": 12.374,
@@ -248,16 +280,18 @@
    "conhecem": 95.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.246,
-   "fama": 0.246,
-   "pontos": 24,
-   "peso": 0.49
+   "percentil": 0.041,
+   "fama": 0.041,
+   "pontos": 25,
+   "peso": 0.5
   },
   {
    "resposta": "Dachshund",
    "apelidos": [
     "salsicha",
-    "linguicinha"
+    "linguicinha",
+    "teckel",
+    "cofap"
    ],
    "sem_dado": false,
    "icf": 14.999,
@@ -265,38 +299,26 @@
    "conhecem": 95.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.262,
-   "fama": 0.262,
-   "pontos": 25,
-   "peso": 0.5
+   "percentil": 0.044,
+   "fama": 0.044,
+   "pontos": 26,
+   "peso": 0.51
   },
   {
    "resposta": "Doberman",
-   "apelidos": [],
+   "apelidos": [
+    "dobermann"
+   ],
    "sem_dado": false,
    "icf": 15.372,
    "lembranca": 10.0,
    "conhecem": 95.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.277,
-   "fama": 0.277,
+   "percentil": 0.047,
+   "fama": 0.047,
    "pontos": 27,
    "peso": 0.52
-  },
-  {
-   "resposta": "Buldogue francês",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.319,
-   "lembranca": 8.0,
-   "conhecem": 95.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.292,
-   "fama": 0.292,
-   "pontos": 28,
-   "peso": 0.529
   },
   {
    "resposta": "Border collie",
@@ -307,24 +329,27 @@
    "conhecem": 92.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.308,
-   "fama": 0.308,
-   "pontos": 29,
-   "peso": 0.539
+   "percentil": 0.049,
+   "fama": 0.049,
+   "pontos": 28,
+   "peso": 0.529
   },
   {
-   "resposta": "Maltês",
-   "apelidos": [],
+   "resposta": "Buldogue francês",
+   "apelidos": [
+    "bulldog francês",
+    "frenchie"
+   ],
    "sem_dado": false,
-   "icf": 14.128,
+   "icf": 12.319,
    "lembranca": 8.0,
-   "conhecem": 92.0,
+   "conhecem": 95.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.323,
-   "fama": 0.323,
-   "pontos": 30,
-   "peso": 0.548
+   "percentil": 0.052,
+   "fama": 0.052,
+   "pontos": 29,
+   "peso": 0.539
   },
   {
    "resposta": "Boxer",
@@ -335,10 +360,26 @@
    "conhecem": 95.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.338,
-   "fama": 0.338,
-   "pontos": 31,
-   "peso": 0.557
+   "percentil": 0.057,
+   "fama": 0.057,
+   "pontos": 30,
+   "peso": 0.548
+  },
+  {
+   "resposta": "Maltês",
+   "apelidos": [
+    "bichon maltês"
+   ],
+   "sem_dado": false,
+   "icf": 14.128,
+   "lembranca": 8.0,
+   "conhecem": 92.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.054,
+   "fama": 0.054,
+   "pontos": 30,
+   "peso": 0.548
   },
   {
    "resposta": "São Bernardo",
@@ -349,10 +390,10 @@
    "conhecem": 95.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.354,
-   "fama": 0.354,
-   "pontos": 32,
-   "peso": 0.566
+   "percentil": 0.06,
+   "fama": 0.06,
+   "pontos": 31,
+   "peso": 0.557
   },
   {
    "resposta": "Chow chow",
@@ -363,15 +404,16 @@
    "conhecem": 93.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.369,
-   "fama": 0.369,
-   "pontos": 33,
-   "peso": 0.574
+   "percentil": 0.062,
+   "fama": 0.062,
+   "pontos": 32,
+   "peso": 0.566
   },
   {
    "resposta": "Cocker spaniel",
    "apelidos": [
-    "cocker"
+    "cocker",
+    "cocker spaniel inglês"
    ],
    "sem_dado": false,
    "icf": 14.727,
@@ -379,22 +421,41 @@
    "conhecem": 90.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.385,
-   "fama": 0.385,
-   "pontos": 34,
-   "peso": 0.583
+   "percentil": 0.065,
+   "fama": 0.065,
+   "pontos": 33,
+   "peso": 0.574
   },
   {
    "resposta": "Schnauzer",
-   "apelidos": [],
+   "apelidos": [
+    "schnauzer miniatura",
+    "schnauzer gigante"
+   ],
    "sem_dado": false,
    "icf": 14.855,
    "lembranca": 4.0,
    "conhecem": 90.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.4,
-   "fama": 0.4,
+   "percentil": 0.067,
+   "fama": 0.067,
+   "pontos": 34,
+   "peso": 0.583
+  },
+  {
+   "resposta": "Akita",
+   "apelidos": [
+    "akita inu"
+   ],
+   "sem_dado": false,
+   "icf": 14.344,
+   "lembranca": 3.0,
+   "conhecem": 88.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.073,
+   "fama": 0.073,
    "pontos": 35,
    "peso": 0.592
   },
@@ -409,38 +470,28 @@
    "conhecem": 88.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.415,
-   "fama": 0.415,
-   "pontos": 36,
-   "peso": 0.6
-  },
-  {
-   "resposta": "Akita",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.344,
-   "lembranca": 3.0,
-   "conhecem": 88.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.431,
-   "fama": 0.431,
-   "pontos": 37,
-   "peso": 0.608
+   "percentil": 0.07,
+   "fama": 0.07,
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Dogue alemão",
-   "apelidos": [],
+   "apelidos": [
+    "dog alemão",
+    "grande dinamarquês",
+    "great dane"
+   ],
    "sem_dado": false,
    "icf": 12.582,
    "lembranca": 3.0,
    "conhecem": 88.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.446,
-   "fama": 0.446,
-   "pontos": 39,
-   "peso": 0.624
+   "percentil": 0.075,
+   "fama": 0.075,
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Galgo",
@@ -451,24 +502,75 @@
    "conhecem": 85.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.462,
-   "fama": 0.462,
-   "pontos": 40,
-   "peso": 0.632
+   "percentil": 0.078,
+   "fama": 0.078,
+   "pontos": 36,
+   "peso": 0.6
   },
   {
    "resposta": "Corgi",
-   "apelidos": [],
+   "apelidos": [
+    "welsh corgi pembroke",
+    "corgi pembroke",
+    "pembroke"
+   ],
    "sem_dado": true,
    "icf": 20.0,
    "lembranca": 3.0,
    "conhecem": 85.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.477,
-   "fama": 0.477,
-   "pontos": 41,
-   "peso": 0.64
+   "percentil": 0.08,
+   "fama": 0.08,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Pastor australiano",
+   "apelidos": [
+    "australian shepherd",
+    "aussie"
+   ],
+   "sem_dado": false,
+   "icf": 11.156,
+   "lembranca": 2.0,
+   "conhecem": 80.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.083,
+   "fama": 0.083,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Spitz alemão anão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.351,
+   "lembranca": 2.0,
+   "conhecem": 75.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.085,
+   "fama": 0.085,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "American bully",
+   "apelidos": [
+    "bully"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": 2.0,
+   "conhecem": 80.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.088,
+   "fama": 0.088,
+   "pontos": 38,
+   "peso": 0.616
   },
   {
    "resposta": "Basset hound",
@@ -481,38 +583,10 @@
    "conhecem": 85.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.5,
-   "fama": 0.5,
-   "pontos": 42,
-   "peso": 0.648
-  },
-  {
-   "resposta": "Shar-pei",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "lembranca": 2.0,
-   "conhecem": 85.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.5,
-   "fama": 0.5,
-   "pontos": 43,
-   "peso": 0.656
-  },
-  {
-   "resposta": "Lhasa apso",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.745,
-   "lembranca": 2.0,
-   "conhecem": 80.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.523,
-   "fama": 0.523,
-   "pontos": 45,
-   "peso": 0.671
+   "percentil": 0.092,
+   "fama": 0.092,
+   "pontos": 38,
+   "peso": 0.616
   },
   {
    "resposta": "Collie",
@@ -523,38 +597,87 @@
    "conhecem": 80.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.538,
-   "fama": 0.538,
-   "pontos": 46,
-   "peso": 0.678
+   "percentil": 0.098,
+   "fama": 0.098,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Lhasa apso",
+   "apelidos": [
+    "lhasa"
+   ],
+   "sem_dado": false,
+   "icf": 13.745,
+   "lembranca": 2.0,
+   "conhecem": 80.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.096,
+   "fama": 0.096,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Shar-pei",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": 2.0,
+   "conhecem": 85.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.092,
+   "fama": 0.092,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Boston terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.821,
+   "lembranca": 1.0,
+   "conhecem": 75.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.101,
+   "fama": 0.101,
+   "pontos": 40,
+   "peso": 0.632
   },
   {
    "resposta": "Pastor belga",
-   "apelidos": [],
+   "apelidos": [
+    "pastor belga malinois",
+    "malinois"
+   ],
    "sem_dado": false,
    "icf": 11.1,
    "lembranca": 1.0,
    "conhecem": 75.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.554,
-   "fama": 0.554,
-   "pontos": 47,
-   "peso": 0.686
+   "percentil": 0.104,
+   "fama": 0.104,
+   "pontos": 40,
+   "peso": 0.632
   },
   {
    "resposta": "Bull terrier",
-   "apelidos": [],
+   "apelidos": [
+    "bull terrier inglês"
+   ],
    "sem_dado": false,
    "icf": 12.47,
    "lembranca": 1.0,
    "conhecem": 75.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.569,
-   "fama": 0.569,
-   "pontos": 48,
-   "peso": 0.693
+   "percentil": 0.106,
+   "fama": 0.106,
+   "pontos": 41,
+   "peso": 0.64
   },
   {
    "resposta": "Jack russell terrier",
@@ -567,38 +690,91 @@
    "conhecem": 75.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.585,
-   "fama": 0.585,
-   "pontos": 50,
-   "peso": 0.707
-  },
-  {
-   "resposta": "Veadeiro pampeano",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 18.039,
-   "lembranca": 0.02,
-   "conhecem": 10.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 1.0,
-   "fama": 1.0,
-   "pontos": 50,
-   "peso": 0.707
+   "percentil": 0.109,
+   "fama": 0.109,
+   "pontos": 41,
+   "peso": 0.64
   },
   {
    "resposta": "Pequinês",
-   "apelidos": [],
+   "apelidos": [
+    "pekingese"
+   ],
    "sem_dado": false,
    "icf": 15.49,
    "lembranca": 1.0,
    "conhecem": 75.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.6,
-   "fama": 0.6,
-   "pontos": 51,
-   "peso": 0.714
+   "percentil": 0.111,
+   "fama": 0.111,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Cane corso",
+   "apelidos": [
+    "corso"
+   ],
+   "sem_dado": false,
+   "icf": 14.11,
+   "lembranca": 1.0,
+   "conhecem": 70.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.117,
+   "fama": 0.117,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Samoieda",
+   "apelidos": [
+    "samoyed"
+   ],
+   "sem_dado": false,
+   "icf": 16.638,
+   "lembranca": 1.0,
+   "conhecem": 70.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.114,
+   "fama": 0.114,
+   "pontos": 42,
+   "peso": 0.648
+  },
+  {
+   "resposta": "Bulldog americano",
+   "apelidos": [
+    "buldogue americano"
+   ],
+   "sem_dado": false,
+   "icf": 9.43,
+   "lembranca": 0.5,
+   "conhecem": 70.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.122,
+   "fama": 0.122,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Fox terrier",
+   "apelidos": [
+    "fox terrier pelo duro",
+    "fox terrier pelo liso"
+   ],
+   "sem_dado": false,
+   "icf": 12.063,
+   "lembranca": 0.5,
+   "conhecem": 65.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.124,
+   "fama": 0.124,
+   "pontos": 43,
+   "peso": 0.656
   },
   {
    "resposta": "Shiba inu",
@@ -611,52 +787,107 @@
    "conhecem": 70.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.615,
-   "fama": 0.615,
-   "pontos": 52,
-   "peso": 0.721
+   "percentil": 0.119,
+   "fama": 0.119,
+   "pontos": 43,
+   "peso": 0.656
   },
   {
-   "resposta": "Samoieda",
-   "apelidos": [],
+   "resposta": "Staffordshire bull terrier",
+   "apelidos": [
+    "staffbull",
+    "staffordshire"
+   ],
    "sem_dado": false,
-   "icf": 16.638,
-   "lembranca": 1.0,
-   "conhecem": 70.0,
+   "icf": 12.47,
+   "lembranca": 0.3,
+   "conhecem": 60.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.631,
-   "fama": 0.631,
-   "pontos": 53,
-   "peso": 0.728
+   "percentil": 0.13,
+   "fama": 0.13,
+   "pontos": 44,
+   "peso": 0.663
   },
   {
-   "resposta": "Cane corso",
-   "apelidos": [],
+   "resposta": "West highland white terrier",
+   "apelidos": [
+    "westie",
+    "west highland"
+   ],
    "sem_dado": false,
-   "icf": 14.11,
-   "lembranca": 1.0,
-   "conhecem": 70.0,
+   "icf": 13.163,
+   "lembranca": 0.5,
+   "conhecem": 60.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.646,
-   "fama": 0.646,
-   "pontos": 54,
-   "peso": 0.735
+   "percentil": 0.127,
+   "fama": 0.127,
+   "pontos": 44,
+   "peso": 0.663
+  },
+  {
+   "resposta": "American staffordshire terrier",
+   "apelidos": [
+    "amstaff"
+   ],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": 0.3,
+   "conhecem": 60.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.135,
+   "fama": 0.135,
+   "pontos": 45,
+   "peso": 0.671
   },
   {
    "resposta": "Bichon frisé",
-   "apelidos": [],
+   "apelidos": [
+    "bichon"
+   ],
    "sem_dado": false,
    "icf": 15.374,
    "lembranca": 0.5,
    "conhecem": 65.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.662,
-   "fama": 0.662,
-   "pontos": 56,
-   "peso": 0.748
+   "percentil": 0.137,
+   "fama": 0.137,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Spitz japonês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.791,
+   "lembranca": 0.3,
+   "conhecem": 55.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.132,
+   "fama": 0.132,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Fox paulistinha",
+   "apelidos": [
+    "terrier brasileiro",
+    "foxinho"
+   ],
+   "sem_dado": false,
+   "icf": 12.668,
+   "lembranca": 0.5,
+   "conhecem": 60.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.14,
+   "fama": 0.14,
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Malamute do Alasca",
@@ -669,68 +900,134 @@
    "conhecem": 65.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.677,
-   "fama": 0.677,
-   "pontos": 57,
-   "peso": 0.755
+   "percentil": 0.142,
+   "fama": 0.142,
+   "pontos": 46,
+   "peso": 0.678
   },
   {
    "resposta": "Dogo argentino",
-   "apelidos": [],
+   "apelidos": [
+    "dogo"
+   ],
    "sem_dado": false,
    "icf": 16.881,
    "lembranca": 0.5,
    "conhecem": 65.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.692,
-   "fama": 0.692,
-   "pontos": 58,
-   "peso": 0.762
+   "percentil": 0.148,
+   "fama": 0.148,
+   "pontos": 47,
+   "peso": 0.686
   },
   {
-   "resposta": "Fox paulistinha",
+   "resposta": "Mastim inglês",
    "apelidos": [
-    "terrier brasileiro"
+    "mastiff",
+    "old english mastiff"
    ],
    "sem_dado": false,
-   "icf": 12.668,
-   "lembranca": 0.5,
-   "conhecem": 60.0,
+   "icf": 12.273,
+   "lembranca": 0.2,
+   "conhecem": 55.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.708,
-   "fama": 0.708,
-   "pontos": 60,
-   "peso": 0.775
+   "percentil": 0.145,
+   "fama": 0.145,
+   "pontos": 47,
+   "peso": 0.686
+  },
+  {
+   "resposta": "Golden doodle",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": 0.3,
+   "conhecem": 45.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.15,
+   "fama": 0.15,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Labradoodle",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": 0.3,
+   "conhecem": 45.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.153,
+   "fama": 0.153,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Pomsky",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": 0.2,
+   "conhecem": 40.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.155,
+   "fama": 0.155,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Dogue de Bordeaux",
+   "apelidos": [
+    "dogue de bordéus",
+    "mastim francês"
+   ],
+   "sem_dado": false,
+   "icf": 14.106,
+   "lembranca": 0.3,
+   "conhecem": 55.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.161,
+   "fama": 0.161,
+   "pontos": 49,
+   "peso": 0.7
   },
   {
    "resposta": "Weimaraner",
-   "apelidos": [],
+   "apelidos": [
+    "braco de weimar"
+   ],
    "sem_dado": false,
    "icf": 16.179,
    "lembranca": 0.3,
    "conhecem": 55.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.723,
-   "fama": 0.723,
-   "pontos": 62,
-   "peso": 0.787
+   "percentil": 0.158,
+   "fama": 0.158,
+   "pontos": 49,
+   "peso": 0.7
   },
   {
    "resposta": "Mastim napolitano",
-   "apelidos": [],
+   "apelidos": [
+    "mastino napolitano"
+   ],
    "sem_dado": false,
    "icf": 15.024,
    "lembranca": 0.3,
    "conhecem": 55.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.738,
-   "fama": 0.738,
-   "pontos": 63,
-   "peso": 0.794
+   "percentil": 0.163,
+   "fama": 0.163,
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Pointer",
@@ -741,15 +1038,48 @@
    "conhecem": 55.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.754,
-   "fama": 0.754,
-   "pontos": 65,
-   "peso": 0.806
+   "percentil": 0.166,
+   "fama": 0.166,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Terra-nova",
+   "apelidos": [
+    "newfoundland"
+   ],
+   "sem_dado": false,
+   "icf": 7.867,
+   "lembranca": 0.2,
+   "conhecem": 45.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.168,
+   "fama": 0.168,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Veadeiro pampeano",
+   "apelidos": [
+    "veadeiro"
+   ],
+   "sem_dado": false,
+   "icf": 18.039,
+   "lembranca": 0.02,
+   "conhecem": 10.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.813,
+   "fama": 0.813,
+   "pontos": 50,
+   "peso": 0.707
   },
   {
    "resposta": "Bernese",
    "apelidos": [
-    "boiadeiro bernês"
+    "boiadeiro bernês",
+    "bernese mountain dog"
    ],
    "sem_dado": false,
    "icf": 15.658,
@@ -757,52 +1087,158 @@
    "conhecem": 50.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.769,
-   "fama": 0.769,
-   "pontos": 66,
-   "peso": 0.812
+   "percentil": 0.171,
+   "fama": 0.171,
+   "pontos": 51,
+   "peso": 0.714
   },
   {
-   "resposta": "Terra-nova",
+   "resposta": "Pinscher alemão",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 7.867,
-   "lembranca": 0.2,
-   "conhecem": 45.0,
+   "icf": 12.161,
+   "lembranca": 0.3,
+   "conhecem": 60.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.785,
-   "fama": 0.785,
-   "pontos": 68,
-   "peso": 0.825
+   "percentil": 0.174,
+   "fama": 0.174,
+   "pontos": 51,
+   "peso": 0.714
+  },
+  {
+   "resposta": "Boiadeiro australiano",
+   "apelidos": [
+    "blue heeler",
+    "australian cattle dog",
+    "heeler"
+   ],
+   "sem_dado": false,
+   "icf": 12.904,
+   "lembranca": 0.3,
+   "conhecem": 55.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.179,
+   "fama": 0.179,
+   "pontos": 52,
+   "peso": 0.721
   },
   {
    "resposta": "Cavalier king charles",
-   "apelidos": [],
+   "apelidos": [
+    "cavalier king charles spaniel",
+    "cavalier"
+   ],
    "sem_dado": false,
    "icf": 10.798,
    "lembranca": 0.2,
    "conhecem": 45.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.8,
-   "fama": 0.8,
-   "pontos": 69,
-   "peso": 0.831
+   "percentil": 0.176,
+   "fama": 0.176,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Galgo inglês",
+   "apelidos": [
+    "greyhound"
+   ],
+   "sem_dado": false,
+   "icf": 12.145,
+   "lembranca": 0.1,
+   "conhecem": 50.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.181,
+   "fama": 0.181,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Mastim tibetano",
+   "apelidos": [
+    "tibetan mastiff"
+   ],
+   "sem_dado": false,
+   "icf": 14.791,
+   "lembranca": 0.3,
+   "conhecem": 55.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.184,
+   "fama": 0.184,
+   "pontos": 53,
+   "peso": 0.728
   },
   {
    "resposta": "Setter irlandês",
-   "apelidos": [],
+   "apelidos": [
+    "setter vermelho"
+   ],
    "sem_dado": false,
    "icf": 14.145,
    "lembranca": 0.2,
    "conhecem": 45.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.815,
-   "fama": 0.815,
-   "pontos": 71,
-   "peso": 0.843
+   "percentil": 0.187,
+   "fama": 0.187,
+   "pontos": 53,
+   "peso": 0.728
+  },
+  {
+   "resposta": "Bobtail",
+   "apelidos": [
+    "old english sheepdog",
+    "velho pastor inglês"
+   ],
+   "sem_dado": false,
+   "icf": 17.212,
+   "lembranca": 0.3,
+   "conhecem": 55.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.189,
+   "fama": 0.189,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Cão d'água português",
+   "apelidos": [
+    "cão de água português",
+    "cão de água"
+   ],
+   "sem_dado": false,
+   "icf": 9.515,
+   "lembranca": 0.1,
+   "conhecem": 35.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.192,
+   "fama": 0.192,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Cão de crista chinês",
+   "apelidos": [
+    "chinese crested",
+    "crista chinês"
+   ],
+   "sem_dado": false,
+   "icf": 11.432,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.194,
+   "fama": 0.194,
+   "pontos": 54,
+   "peso": 0.735
   },
   {
    "resposta": "Bloodhound",
@@ -813,15 +1249,32 @@
    "conhecem": 45.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.831,
-   "fama": 0.831,
-   "pontos": 73,
-   "peso": 0.854
+   "percentil": 0.198,
+   "fama": 0.198,
+   "pontos": 55,
+   "peso": 0.742
+  },
+  {
+   "resposta": "Cocker spaniel americano",
+   "apelidos": [
+    "cocker americano"
+   ],
+   "sem_dado": false,
+   "icf": 12.078,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.198,
+   "fama": 0.198,
+   "pontos": 55,
+   "peso": 0.742
   },
   {
    "resposta": "Afghan hound",
    "apelidos": [
-    "galgo afegão"
+    "galgo afegão",
+    "lebréu afegão"
    ],
    "sem_dado": false,
    "icf": 14.963,
@@ -829,10 +1282,186 @@
    "conhecem": 40.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.846,
-   "fama": 0.846,
-   "pontos": 74,
-   "peso": 0.86
+   "percentil": 0.202,
+   "fama": 0.202,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Border terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.207,
+   "fama": 0.207,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Papillon",
+   "apelidos": [
+    "spaniel continental anão"
+   ],
+   "sem_dado": false,
+   "icf": 15.044,
+   "lembranca": 0.2,
+   "conhecem": 45.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.205,
+   "fama": 0.205,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Boxer alemão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.473,
+   "lembranca": 0.1,
+   "conhecem": 45.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.212,
+   "fama": 0.212,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Scottish terrier",
+   "apelidos": [
+    "scottie",
+    "terrier escocês"
+   ],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.21,
+   "fama": 0.21,
+   "pontos": 57,
+   "peso": 0.755
+  },
+  {
+   "resposta": "Bulmastife",
+   "apelidos": [
+    "bullmastiff"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.215,
+   "fama": 0.215,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Maltipoo",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.218,
+   "fama": 0.218,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Cão da Serra da Estrela",
+   "apelidos": [
+    "serra da estrela"
+   ],
+   "sem_dado": false,
+   "icf": 9.823,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.228,
+   "fama": 0.228,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Cão de fila de São Miguel",
+   "apelidos": [
+    "Cão de São Miguel"
+   ],
+   "sem_dado": false,
+   "icf": 9.12,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.225,
+   "fama": 0.225,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Pastor de Anatólia",
+   "apelidos": [
+    "kangal",
+    "pastor da anatólia",
+    "Cão de pastor da Anatólia"
+   ],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.231,
+   "fama": 0.231,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Pastor-branco-suíço",
+   "apelidos": [
+    "pastor suíço",
+    "pastor branco",
+    "berger blanc suisse"
+   ],
+   "sem_dado": false,
+   "icf": 10.342,
+   "lembranca": 0.05,
+   "conhecem": 15.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.223,
+   "fama": 0.223,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Pastor-maremano-abruzês",
+   "apelidos": [
+    "pastor maremano",
+    "maremano"
+   ],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.233,
+   "fama": 0.233,
+   "pontos": 60,
+   "peso": 0.775
   },
   {
    "resposta": "Whippet",
@@ -843,54 +1472,10 @@
    "conhecem": 35.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.862,
-   "fama": 0.862,
-   "pontos": 76,
-   "peso": 0.872
-  },
-  {
-   "resposta": "Shetland sheepdog",
-   "apelidos": [
-    "sheltie"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "lembranca": 0.05,
-   "conhecem": 25.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.877,
-   "fama": 0.877,
-   "pontos": 77,
-   "peso": 0.877
-  },
-  {
-   "resposta": "Borzoi",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 20.136,
-   "lembranca": 0.1,
-   "conhecem": 25.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.892,
-   "fama": 0.892,
-   "pontos": 79,
-   "peso": 0.889
-  },
-  {
-   "resposta": "Rhodesian ridgeback",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "lembranca": 0.05,
-   "conhecem": 25.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.908,
-   "fama": 0.908,
-   "pontos": 81,
-   "peso": 0.9
+   "percentil": 0.22,
+   "fama": 0.22,
+   "pontos": 60,
+   "peso": 0.775
   },
   {
    "resposta": "Basenji",
@@ -901,27 +1486,159 @@
    "conhecem": 25.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.923,
-   "fama": 0.923,
-   "pontos": 82,
-   "peso": 0.906
+   "percentil": 0.259,
+   "fama": 0.259,
+   "pontos": 61,
+   "peso": 0.781
   },
   {
-   "resposta": "Ovelheiro gaúcho",
-   "apelidos": [],
+   "resposta": "Borzoi",
+   "apelidos": [
+    "galgo russo"
+   ],
    "sem_dado": false,
-   "icf": 14.226,
-   "lembranca": 0.05,
-   "conhecem": 20.0,
+   "icf": 20.136,
+   "lembranca": 0.1,
+   "conhecem": 25.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.938,
-   "fama": 0.938,
-   "pontos": 84,
-   "peso": 0.917
+   "percentil": 0.241,
+   "fama": 0.241,
+   "pontos": 61,
+   "peso": 0.781
   },
   {
-   "resposta": "Xoloitzcuintle",
+   "resposta": "Galgo italiano",
+   "apelidos": [
+    "lebréu italiano",
+    "piccolo levriero italiano",
+    "whippet italiano",
+    "Lebrel italiano"
+   ],
+   "sem_dado": false,
+   "icf": 12.942,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.251,
+   "fama": 0.251,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Havanês",
+   "apelidos": [
+    "bichon havanês"
+   ],
+   "sem_dado": false,
+   "icf": 18.363,
+   "lembranca": 0.1,
+   "conhecem": 30.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.236,
+   "fama": 0.236,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Perdigueiro português",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.351,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.245,
+   "fama": 0.245,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Podengo português",
+   "apelidos": [
+    "podengo"
+   ],
+   "sem_dado": false,
+   "icf": 12.526,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.249,
+   "fama": 0.249,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Rafeiro do Alentejo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.976,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.256,
+   "fama": 0.256,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Shetland sheepdog",
+   "apelidos": [
+    "sheltie",
+    "pastor de shetland"
+   ],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": 0.05,
+   "conhecem": 25.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.245,
+   "fama": 0.245,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Spaniel bretão",
+   "apelidos": [
+    "epagneul bretão",
+    "brittany"
+   ],
+   "sem_dado": false,
+   "icf": 14.763,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.254,
+   "fama": 0.254,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Springer spaniel inglês",
+   "apelidos": [
+    "springer spaniel",
+    "springer"
+   ],
+   "sem_dado": false,
+   "icf": 11.741,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.238,
+   "fama": 0.238,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Coton de Tuléar",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
@@ -929,10 +1646,1747 @@
    "conhecem": 20.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.954,
-   "fama": 0.954,
-   "pontos": 85,
-   "peso": 0.922
+   "percentil": 0.267,
+   "fama": 0.267,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Cão de água espanhol",
+   "apelidos": [
+    "perro de agua"
+   ],
+   "sem_dado": false,
+   "icf": 9.37,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.282,
+   "fama": 0.282,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Ovelheiro gaúcho",
+   "apelidos": [
+    "ovelheiro"
+   ],
+   "sem_dado": false,
+   "icf": 14.226,
+   "lembranca": 0.05,
+   "conhecem": 20.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.264,
+   "fama": 0.264,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Pastor da Ásia Central",
+   "apelidos": [
+    "alabai"
+   ],
+   "sem_dado": false,
+   "icf": 9.958,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.277,
+   "fama": 0.277,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Pastor-de-beauce",
+   "apelidos": [
+    "beauceron"
+   ],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.272,
+   "fama": 0.272,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Pastor-de-pirenéus",
+   "apelidos": [
+    "cão de montanha dos pireneus",
+    "montanha dos pirenéus",
+    "pirenéus"
+   ],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.275,
+   "fama": 0.275,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Pastor-do-cáucaso",
+   "apelidos": [
+    "pastor caucasiano",
+    "ovtcharka"
+   ],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.28,
+   "fama": 0.28,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Pastor-holandês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.951,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.285,
+   "fama": 0.285,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Rhodesian ridgeback",
+   "apelidos": [
+    "leão da rodésia"
+   ],
+   "sem_dado": false,
+   "icf": 10.437,
+   "lembranca": 0.05,
+   "conhecem": 25.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.262,
+   "fama": 0.262,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Vizsla",
+   "apelidos": [
+    "braco húngaro",
+    "perdigueiro húngaro"
+   ],
+   "sem_dado": false,
+   "icf": 13.586,
+   "lembranca": 0.05,
+   "conhecem": 20.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.269,
+   "fama": 0.269,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Braco alemão de pelo duro",
+   "apelidos": [
+    "drahthaar"
+   ],
+   "sem_dado": false,
+   "icf": 10.302,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.298,
+   "fama": 0.298,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Bullmastiff americano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.43,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.311,
+   "fama": 0.311,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Chin japonês",
+   "apelidos": [
+    "japanese chin"
+   ],
+   "sem_dado": false,
+   "icf": 10.791,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.293,
+   "fama": 0.293,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Chow chow azul",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.059,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.301,
+   "fama": 0.301,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Collie de pelo curto",
+   "apelidos": [
+    "smooth collie"
+   ],
+   "sem_dado": false,
+   "icf": 10.165,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.29,
+   "fama": 0.29,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cão de água irlandês",
+   "apelidos": [
+    "irish water spaniel"
+   ],
+   "sem_dado": false,
+   "icf": 10.333,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.306,
+   "fama": 0.306,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Cão-lobo de Saarloos",
+   "apelidos": [
+    "saarloos"
+   ],
+   "sem_dado": false,
+   "icf": 10.553,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.295,
+   "fama": 0.295,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Grande boiadeiro suíço",
+   "apelidos": [
+    "grande boiadeiro"
+   ],
+   "sem_dado": false,
+   "icf": 10.929,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.288,
+   "fama": 0.288,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Pastor-de-brie",
+   "apelidos": [
+    "briard"
+   ],
+   "sem_dado": false,
+   "icf": 11.943,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.308,
+   "fama": 0.308,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Spinone italiano",
+   "apelidos": [
+    "spinone"
+   ],
+   "sem_dado": false,
+   "icf": 10.349,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.303,
+   "fama": 0.303,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Bulldog inglês antigo",
+   "apelidos": [
+    "old english bulldog"
+   ],
+   "sem_dado": false,
+   "icf": 9.108,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.326,
+   "fama": 0.326,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Hokkaido ken",
+   "apelidos": [
+    "hokkaido"
+   ],
+   "sem_dado": false,
+   "icf": 12.27,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.326,
+   "fama": 0.326,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Jindo coreano",
+   "apelidos": [
+    "jindo"
+   ],
+   "sem_dado": false,
+   "icf": 12.231,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.326,
+   "fama": 0.326,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Kai ken",
+   "apelidos": [
+    "kai"
+   ],
+   "sem_dado": false,
+   "icf": 12.27,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.32,
+   "fama": 0.32,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Kishu ken",
+   "apelidos": [
+    "kishu"
+   ],
+   "sem_dado": false,
+   "icf": 12.27,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.32,
+   "fama": 0.32,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Pastor polonês das planícies",
+   "apelidos": [
+    "polski owczarek nizinny"
+   ],
+   "sem_dado": false,
+   "icf": 11.349,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.313,
+   "fama": 0.313,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Pointer inglês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.236,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.316,
+   "fama": 0.316,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Retriever da Nova Escócia",
+   "apelidos": [
+    "toller",
+    "nova scotia duck tolling retriever"
+   ],
+   "sem_dado": false,
+   "icf": 11.18,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.332,
+   "fama": 0.332,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Setter irlandês vermelho e branco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.602,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.337,
+   "fama": 0.337,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Vallhund sueco",
+   "apelidos": [
+    "vallhund"
+   ],
+   "sem_dado": false,
+   "icf": 12.172,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.334,
+   "fama": 0.334,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Braco alemão",
+   "apelidos": [
+    "braco alemão de pelo curto",
+    "pointer alemão",
+    "kurzhaar"
+   ],
+   "sem_dado": false,
+   "icf": 12.13,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.346,
+   "fama": 0.346,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Braco francês",
+   "apelidos": [
+    "Bracco francês"
+   ],
+   "sem_dado": false,
+   "icf": 12.075,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.346,
+   "fama": 0.346,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Braco italiano",
+   "apelidos": [
+    "Bracco italiano"
+   ],
+   "sem_dado": false,
+   "icf": 12.278,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.359,
+   "fama": 0.359,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Buhund norueguês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.961,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.365,
+   "fama": 0.365,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Chihuahua de pelo longo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.733,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.341,
+   "fama": 0.341,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Cão da Groenlândia",
+   "apelidos": [
+    "groenlandês"
+   ],
+   "sem_dado": false,
+   "icf": 12.395,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.341,
+   "fama": 0.341,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Pequeno cão russo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.98,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.354,
+   "fama": 0.354,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Rastreador brasileiro",
+   "apelidos": [
+    "urrador americano"
+   ],
+   "sem_dado": false,
+   "icf": 10.713,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.359,
+   "fama": 0.359,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Setter inglês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.119,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.354,
+   "fama": 0.354,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Tosa inu",
+   "apelidos": [
+    "tosa"
+   ],
+   "sem_dado": false,
+   "icf": 13.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.35,
+   "fama": 0.35,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Boiadeiro de Appenzell",
+   "apelidos": [
+    "appenzeller"
+   ],
+   "sem_dado": false,
+   "icf": 13.547,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.378,
+   "fama": 0.378,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Boiadeiro de Entlebuch",
+   "apelidos": [
+    "entlebucher"
+   ],
+   "sem_dado": false,
+   "icf": 13.547,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.372,
+   "fama": 0.372,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Cão da Carélia",
+   "apelidos": [
+    "cão de urso da carélia"
+   ],
+   "sem_dado": false,
+   "icf": 10.258,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.386,
+   "fama": 0.386,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Cão esquimó americano",
+   "apelidos": [
+    "american eskimo dog",
+    "esquimó americano"
+   ],
+   "sem_dado": false,
+   "icf": 11.606,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.389,
+   "fama": 0.389,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Cão-lobo checoslovaco",
+   "apelidos": [
+    "lobo checoslovaco"
+   ],
+   "sem_dado": false,
+   "icf": 12.824,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.365,
+   "fama": 0.365,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Elkhound norueguês",
+   "apelidos": [
+    "elkhound"
+   ],
+   "sem_dado": false,
+   "icf": 12.961,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.365,
+   "fama": 0.365,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Lapphund finlandês",
+   "apelidos": [
+    "lapphund"
+   ],
+   "sem_dado": false,
+   "icf": 13.095,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.383,
+   "fama": 0.383,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Lundehund norueguês",
+   "apelidos": [
+    "lundehund"
+   ],
+   "sem_dado": false,
+   "icf": 12.961,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.372,
+   "fama": 0.372,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Spitz finlandês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.095,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.378,
+   "fama": 0.378,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Terrier tibetano",
+   "apelidos": [
+    "tibetan terrier"
+   ],
+   "sem_dado": false,
+   "icf": 13.477,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.378,
+   "fama": 0.378,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Akita americano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.887,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.405,
+   "fama": 0.405,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Cão de Canaã",
+   "apelidos": [
+    "canaan dog"
+   ],
+   "sem_dado": false,
+   "icf": 11.504,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.391,
+   "fama": 0.391,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Dogue brasileiro",
+   "apelidos": [
+    "buldogue campeiro",
+    "bulldog campeiro"
+   ],
+   "sem_dado": false,
+   "icf": 11.734,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.412,
+   "fama": 0.412,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Foxhound inglês",
+   "apelidos": [
+    "foxhound"
+   ],
+   "sem_dado": false,
+   "icf": 12.722,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.412,
+   "fama": 0.412,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Laika da Sibéria Ocidental",
+   "apelidos": [
+    "laika"
+   ],
+   "sem_dado": false,
+   "icf": 10.815,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.412,
+   "fama": 0.412,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Laika russo-europeu",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.507,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.396,
+   "fama": 0.396,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Russo toy",
+   "apelidos": [
+    "toy russo"
+   ],
+   "sem_dado": false,
+   "icf": 10.796,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.394,
+   "fama": 0.394,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Sabujo de Santo Humberto",
+   "apelidos": [
+    "santo humberto"
+   ],
+   "sem_dado": false,
+   "icf": 12.397,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.405,
+   "fama": 0.405,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Terrier preto russo",
+   "apelidos": [
+    "black russian terrier"
+   ],
+   "sem_dado": false,
+   "icf": 10.961,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.4,
+   "fama": 0.4,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Treeing walker coonhound",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.471,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.4,
+   "fama": 0.4,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Faraó hound",
+   "apelidos": [
+    "cão do faraó",
+    "pharaoh hound"
+   ],
+   "sem_dado": false,
+   "icf": 12.404,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.418,
+   "fama": 0.418,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Flat-coated retriever",
+   "apelidos": [
+    "flat coated"
+   ],
+   "sem_dado": false,
+   "icf": 12.968,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.425,
+   "fama": 0.425,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Foxhound americano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.06,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.44,
+   "fama": 0.44,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Galgo brasileiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.946,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.434,
+   "fama": 0.434,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Laika da Sibéria Oriental",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.13,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.438,
+   "fama": 0.438,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Mastim brasileiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.074,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.434,
+   "fama": 0.434,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Pastor-da-mantiqueira",
+   "apelidos": [
+    "policialzinho"
+   ],
+   "sem_dado": false,
+   "icf": 11.71,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.418,
+   "fama": 0.418,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Pinscher austríaco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.658,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.429,
+   "fama": 0.429,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Presa canário",
+   "apelidos": [
+    "dogo canário"
+   ],
+   "sem_dado": false,
+   "icf": 11.974,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.429,
+   "fama": 0.429,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Spaniel tibetano",
+   "apelidos": [
+    "tibetan spaniel"
+   ],
+   "sem_dado": false,
+   "icf": 14.259,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.422,
+   "fama": 0.422,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Bulldog continental",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.411,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.443,
+   "fama": 0.443,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Collie barbudo",
+   "apelidos": [
+    "bearded collie",
+    "beardie"
+   ],
+   "sem_dado": false,
+   "icf": 13.97,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.451,
+   "fama": 0.451,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Cão de montanha de Berna",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.385,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.447,
+   "fama": 0.447,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Galgo espanhol",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.727,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.447,
+   "fama": 0.447,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Kelpie australiano",
+   "apelidos": [
+    "kelpie"
+   ],
+   "sem_dado": false,
+   "icf": 15.108,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.459,
+   "fama": 0.459,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Kerry blue terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.032,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.455,
+   "fama": 0.455,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Setter gordon",
+   "apelidos": [
+    "gordon setter"
+   ],
+   "sem_dado": false,
+   "icf": 13.963,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.466,
+   "fama": 0.466,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Terrier japonês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.977,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.462,
+   "fama": 0.462,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Toy fox terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.063,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.462,
+   "fama": 0.462,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Wolfhound irlandês",
+   "apelidos": [
+    "irish wolfhound",
+    "lebréu irlandês"
+   ],
+   "sem_dado": false,
+   "icf": 12.808,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.455,
+   "fama": 0.455,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Basset fulvo da Bretanha",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.953,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.474,
+   "fama": 0.474,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Chesapeake bay retriever",
+   "apelidos": [
+    "chesapeake"
+   ],
+   "sem_dado": false,
+   "icf": 14.082,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.483,
+   "fama": 0.483,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Curly-coated retriever",
+   "apelidos": [
+    "curly coated"
+   ],
+   "sem_dado": false,
+   "icf": 14.082,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.483,
+   "fama": 0.483,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Cão sem pelo americano",
+   "apelidos": [
+    "american hairless terrier"
+   ],
+   "sem_dado": false,
+   "icf": 8.13,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.487,
+   "fama": 0.487,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Lulu da pomerânia anão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.512,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.491,
+   "fama": 0.491,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Mastim espanhol",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.855,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.469,
+   "fama": 0.469,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Pastor islandês",
+   "apelidos": [
+    "cão de pastor islandês"
+   ],
+   "sem_dado": false,
+   "icf": 12.26,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.491,
+   "fama": 0.491,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Soft-coated wheaten terrier",
+   "apelidos": [
+    "wheaten terrier"
+   ],
+   "sem_dado": false,
+   "icf": 12.595,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.479,
+   "fama": 0.479,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Terrier australiano",
+   "apelidos": [
+    "australian terrier"
+   ],
+   "sem_dado": false,
+   "icf": 12.712,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.472,
+   "fama": 0.472,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Xoloitzcuintle",
+   "apelidos": [
+    "pelado mexicano",
+    "xolo"
+   ],
+   "sem_dado": false,
+   "icf": 12.458,
+   "lembranca": 0.05,
+   "conhecem": 20.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.477,
+   "fama": 0.477,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Basset artesiano normando",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.392,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.501,
+   "fama": 0.501,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Cairn terrier",
+   "apelidos": [
+    "cairn"
+   ],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.501,
+   "fama": 0.501,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Cão de água romagnolo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.096,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.501,
+   "fama": 0.501,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Dandie dinmont terrier",
+   "apelidos": [
+    "dandie dinmont"
+   ],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.509,
+   "fama": 0.509,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Lakeland terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.518,
+   "fama": 0.518,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Norfolk terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.501,
+   "fama": 0.501,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Norwich terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.509,
+   "fama": 0.509,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Sealyham terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.514,
+   "fama": 0.514,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Silky terrier",
+   "apelidos": [
+    "terrier sedoso australiano"
+   ],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.495,
+   "fama": 0.495,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Skye terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.514,
+   "fama": 0.514,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Bedlington terrier",
+   "apelidos": [
+    "bedlington"
+   ],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.54,
+   "fama": 0.54,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Boykin spaniel",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.727,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.54,
+   "fama": 0.54,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Cirneco do Etna",
+   "apelidos": [
+    "cirneco"
+   ],
+   "sem_dado": false,
+   "icf": 14.085,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.526,
+   "fama": 0.526,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Clumber spaniel",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.727,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.526,
+   "fama": 0.526,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Field spaniel",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.727,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.534,
+   "fama": 0.534,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Glen of Imaal terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.54,
+   "fama": 0.54,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Irish terrier",
+   "apelidos": [
+    "terrier irlandês"
+   ],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.526,
+   "fama": 0.526,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Sussex spaniel",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.727,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.526,
+   "fama": 0.526,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Welsh springer spaniel",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.727,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.54,
+   "fama": 0.54,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Welsh terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.526,
+   "fama": 0.526,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Airedale terrier",
+   "apelidos": [
+    "airedale"
+   ],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.548,
+   "fama": 0.548,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Biewer terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.569,
+   "fama": 0.569,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Galgo húngaro",
+   "apelidos": [
+    "magyar agar"
+   ],
+   "sem_dado": false,
+   "icf": 14.25,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.565,
+   "fama": 0.565,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Galgo polonês",
+   "apelidos": [
+    "chart polski"
+   ],
+   "sem_dado": false,
+   "icf": 14.092,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.553,
+   "fama": 0.553,
+   "pontos": 73,
+   "peso": 0.854
   },
   {
    "resposta": "Leonberger",
@@ -943,10 +3397,632 @@
    "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.969,
-   "fama": 0.969,
-   "pontos": 87,
-   "peso": 0.933
+   "percentil": 0.569,
+   "fama": 0.569,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Manchester terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.548,
+   "fama": 0.548,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Parson russell terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.558,
+   "fama": 0.558,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Patterdale terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.558,
+   "fama": 0.558,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Rat terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.553,
+   "fama": 0.553,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Terrier tcheco",
+   "apelidos": [
+    "cesky terrier"
+   ],
+   "sem_dado": false,
+   "icf": 13.166,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.562,
+   "fama": 0.562,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Beagle-harrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.796,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.578,
+   "fama": 0.578,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Chinook americano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.43,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.583,
+   "fama": 0.583,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Cão cantor da Nova Guiné",
+   "apelidos": [
+    "cão cantor"
+   ],
+   "sem_dado": false,
+   "icf": 9.908,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.596,
+   "fama": 0.596,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Cão de Saint-Hubert",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.258,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.587,
+   "fama": 0.587,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Cão sem pelo peruano",
+   "apelidos": [
+    "pelado peruano",
+    "perro sin pelo del perú"
+   ],
+   "sem_dado": false,
+   "icf": 9.034,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.573,
+   "fama": 0.573,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Husky do Alasca",
+   "apelidos": [
+    "alaskan husky"
+   ],
+   "sem_dado": false,
+   "icf": 14.283,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.575,
+   "fama": 0.575,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Pastor do Karst",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.587,
+   "fama": 0.587,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Pastor tatra",
+   "apelidos": [
+    "pastor polonês de podhale"
+   ],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.591,
+   "fama": 0.591,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Pastor-alemão de pelo longo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 8.794,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.58,
+   "fama": 0.58,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Pastor-de-sharplanina",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.05,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.593,
+   "fama": 0.593,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Bolonhês",
+   "apelidos": [
+    "bichon bolonhês"
+   ],
+   "sem_dado": false,
+   "icf": 17.148,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.602,
+   "fama": 0.602,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Cão de pastor de Bucovina",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.154,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.619,
+   "fama": 0.619,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Harrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.877,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.606,
+   "fama": 0.606,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Mastim dos Pireneus",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.792,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.622,
+   "fama": 0.622,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Pastor catalão",
+   "apelidos": [
+    "gos d'atura"
+   ],
+   "sem_dado": false,
+   "icf": 11.317,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.61,
+   "fama": 0.61,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Pastor dos Pirenéus de face rasa",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.74,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.598,
+   "fama": 0.598,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Pastor-alemão branco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.608,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.602,
+   "fama": 0.602,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Sabujo da Baviera",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.117,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.615,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Sabujo de Hannover",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.117,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.61,
+   "fama": 0.61,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Spitz italiano",
+   "apelidos": [
+    "volpino italiano",
+    "volpino"
+   ],
+   "sem_dado": false,
+   "icf": 10.349,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.615,
+   "fama": 0.615,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Cão de Castro Laboreiro",
+   "apelidos": [
+    "castro laboreiro"
+   ],
+   "sem_dado": false,
+   "icf": 12.026,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.646,
+   "fama": 0.646,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Cão de Formosa",
+   "apelidos": [
+    "taiwan dog"
+   ],
+   "sem_dado": false,
+   "icf": 11.177,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.64,
+   "fama": 0.64,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Cão de Montanha do Atlas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.845,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.646,
+   "fama": 0.646,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Cão de Pastor da Geórgia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.998,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.626,
+   "fama": 0.626,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Cão de serra de Aires",
+   "apelidos": [
+    "serra de aires"
+   ],
+   "sem_dado": false,
+   "icf": 9.837,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.63,
+   "fama": 0.63,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Epagneul francês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.942,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.635,
+   "fama": 0.635,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Pastor basco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.814,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.637,
+   "fama": 0.637,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Pastor croata",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.718,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.632,
+   "fama": 0.632,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Podengo ibicenco",
+   "apelidos": [
+    "podenco ibicenco",
+    "ibizan hound"
+   ],
+   "sem_dado": false,
+   "icf": 16.28,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.626,
+   "fama": 0.626,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Teckel de pelo duro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.884,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.642,
+   "fama": 0.642,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Anglo-francês de pequena vénerie",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.515,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.668,
+   "fama": 0.668,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Barbado da Terceira",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.412,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.668,
+   "fama": 0.668,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Ca de bou",
+   "apelidos": [
+    "mastim de maiorca",
+    "perro de presa mallorquin"
+   ],
+   "sem_dado": false,
+   "icf": 10.708,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.658,
+   "fama": 0.658,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Cão de Groenendael",
+   "apelidos": [
+    "groenendael"
+   ],
+   "sem_dado": false,
+   "icf": 10.258,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.663,
+   "fama": 0.663,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Cão de caça de Montenegro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.012,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.675,
+   "fama": 0.675,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Cão de gado transmontano",
+   "apelidos": [
+    "transmontano"
+   ],
+   "sem_dado": false,
+   "icf": 12.117,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.654,
+   "fama": 0.654,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Cão de urso russo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.894,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.654,
+   "fama": 0.654,
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Komondor",
@@ -957,10 +4033,1852 @@
    "conhecem": 12.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.985,
-   "fama": 0.985,
+   "percentil": 0.661,
+   "fama": 0.661,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Pastor romeno",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.727,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.65,
+   "fama": 0.65,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Pequeno cão holandês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.333,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.668,
+   "fama": 0.668,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Cão de pastor de Maiorca",
+   "apelidos": [
+    "ca de bestiar"
+   ],
+   "sem_dado": false,
+   "icf": 11.262,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.681,
+   "fama": 0.681,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Mastim dos Abruzos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.792,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.675,
+   "fama": 0.675,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Pastor bergamasco",
+   "apelidos": [
+    "bergamasco",
+    "Cão de pastor de Bergamo"
+   ],
+   "sem_dado": false,
+   "icf": 12.978,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.687,
+   "fama": 0.687,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Pastor bósnio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.622,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.693,
+   "fama": 0.693,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Pastor de Picardia",
+   "apelidos": [
+    "berger picard"
+   ],
+   "sem_dado": false,
+   "icf": 12.581,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.679,
+   "fama": 0.679,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Phalène",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.699,
+   "fama": 0.699,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Saluki",
+   "apelidos": [
+    "galgo persa"
+   ],
+   "sem_dado": false,
+   "icf": 17.596,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.684,
+   "fama": 0.684,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Segugio italiano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.349,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.693,
+   "fama": 0.693,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Shikoku",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.697,
+   "fama": 0.697,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Spaniel japonês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.759,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.689,
+   "fama": 0.689,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Affenpinscher",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.703,
+   "fama": 0.703,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Cimarrón uruguaio",
+   "apelidos": [
+    "cimarron"
+   ],
+   "sem_dado": false,
+   "icf": 12.704,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.707,
+   "fama": 0.707,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Eurasier",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.718,
+   "fama": 0.718,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Griffon de Bruxelas",
+   "apelidos": [
+    "griffon belga",
+    "petit brabançon"
+   ],
+   "sem_dado": false,
+   "icf": 12.151,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.703,
+   "fama": 0.703,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Hovawart",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.723,
+   "fama": 0.723,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Keeshond",
+   "apelidos": [
+    "spitz lobo"
+   ],
+   "sem_dado": false,
+   "icf": 10.848,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.711,
+   "fama": 0.711,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Landseer",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.725,
+   "fama": 0.725,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Lowchen",
+   "apelidos": [
+    "pequeno cão leão"
+   ],
+   "sem_dado": false,
+   "icf": 9.861,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.711,
+   "fama": 0.711,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Schipperke",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.715,
+   "fama": 0.715,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Wolfspitz",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.72,
+   "fama": 0.72,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Cão de Taiwan",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.441,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.738,
+   "fama": 0.738,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Epagneul azul da Picardia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.086,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.728,
+   "fama": 0.728,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Griffon korthals",
+   "apelidos": [
+    "grifo de aponte de pelo duro"
+   ],
+   "sem_dado": false,
+   "icf": 10.732,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.75,
+   "fama": 0.75,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Kuvasz",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.744,
+   "fama": 0.744,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Lagotto romagnolo",
+   "apelidos": [
+    "lagotto"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.75,
+   "fama": 0.75,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Mudi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.738,
+   "fama": 0.738,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Munsterlander",
+   "apelidos": [
+    "grande munsterlander",
+    "pequeno munsterlander"
+   ],
+   "sem_dado": false,
+   "icf": 6.987,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.746,
+   "fama": 0.746,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Perro de pastor garafiano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.413,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.738,
+   "fama": 0.738,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Puli",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.732,
+   "fama": 0.732,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Pumi",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.732,
+   "fama": 0.732,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Bluetick coonhound",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.773,
+   "fama": 0.773,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Coonhound",
+   "apelidos": [
+    "black and tan coonhound",
+    "coonhound preto e castanho"
+   ],
+   "sem_dado": false,
+   "icf": 11.314,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.768,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Cão de Sicília",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.696,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.754,
+   "fama": 0.754,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Grand basset griffon vendéen",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.763,
+   "fama": 0.763,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Petit basset griffon vendéen",
+   "apelidos": [
+    "pbgv"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.759,
+   "fama": 0.759,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Plott hound",
+   "apelidos": [
+    "plott"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.777,
+   "fama": 0.777,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Podenco canário",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.99,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.756,
+   "fama": 0.756,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Redbone coonhound",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.773,
+   "fama": 0.773,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Sabujo de montanha da Baviera",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.291,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.768,
+   "fama": 0.768,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Sabujo espanhol",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.018,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.763,
+   "fama": 0.763,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Azawakh",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.795,
+   "fama": 0.795,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Chinook",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.804,
+   "fama": 0.804,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Cão corso siciliano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.389,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.791,
+   "fama": 0.791,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Deerhound",
+   "apelidos": [
+    "lebréu escocês"
+   ],
+   "sem_dado": false,
+   "icf": 16.084,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.801,
+   "fama": 0.801,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Dogue de Tenerife",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.112,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.798,
+   "fama": 0.798,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Grand bleu de gascogne",
+   "apelidos": [
+    "grande azul da gasconha"
+   ],
+   "sem_dado": false,
+   "icf": 8.023,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.782,
+   "fama": 0.782,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Otterhound",
+   "apelidos": [
+    "cão de lontra"
+   ],
+   "sem_dado": false,
+   "icf": 12.213,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.78,
+   "fama": 0.78,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Porcelaine",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.786,
+   "fama": 0.786,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Sabujo grego",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.493,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.786,
+   "fama": 0.786,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Sloughi",
+   "apelidos": [
+    "galgo árabe"
+   ],
+   "sem_dado": false,
+   "icf": 13.393,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.791,
+   "fama": 0.791,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Alaskan klee kai",
+   "apelidos": [
+    "klee kai"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.81,
+   "fama": 0.81,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Boerboel",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.823,
+   "fama": 0.823,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Broholmer",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.826,
+   "fama": 0.826,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sabujo polonês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.382,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.823,
+   "fama": 0.823,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Sabujo suíço",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.185,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.819,
+   "fama": 0.819,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Silken windhound",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.804,
+   "fama": 0.804,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Spaniel holandês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.29,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.81,
+   "fama": 0.81,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Tchiorny terrier",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.163,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.829,
+   "fama": 0.829,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Thai ridgeback",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.816,
+   "fama": 0.816,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Braco de Ariège",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.208,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.848,
+   "fama": 0.848,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Braco de Auvergne",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.208,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.845,
+   "fama": 0.845,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Braco de Bourbonnais",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.208,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.848,
+   "fama": 0.848,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Braco de Saint-Germain",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.208,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.852,
+   "fama": 0.852,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Dingo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.631,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.856,
+   "fama": 0.856,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Podenco andaluz",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.396,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.834,
+   "fama": 0.834,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Sabujo austríaco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.582,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.832,
+   "fama": 0.832,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Sabujo finlandês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.606,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.842,
+   "fama": 0.842,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Sabujo norueguês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.539,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.838,
+   "fama": 0.838,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Sabujo sérvio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.766,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.838,
+   "fama": 0.838,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Alapaha",
+   "apelidos": [
+    "alapaha blue blood bulldog"
+   ],
+   "sem_dado": false,
+   "icf": 10.902,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.867,
+   "fama": 0.867,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Basset da Westfália",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.372,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.873,
+   "fama": 0.873,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Catahoula",
+   "apelidos": [
+    "cão leopardo de catahoula"
+   ],
+   "sem_dado": false,
+   "icf": 11.819,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.867,
+   "fama": 0.867,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Jagdterrier",
+   "apelidos": [
+    "terrier de caça alemão"
+   ],
+   "sem_dado": false,
+   "icf": 11.287,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.856,
+   "fama": 0.856,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Perdigueiro de Burgos",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.848,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.861,
+   "fama": 0.861,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Prazsky krysarik",
+   "apelidos": [
+    "rato de praga"
+   ],
+   "sem_dado": false,
+   "icf": 11.425,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.861,
+   "fama": 0.861,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Sabujo da Posavina",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.117,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.878,
+   "fama": 0.878,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Sabujo de Istria",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.117,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.876,
+   "fama": 0.876,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Sabujo eslovaco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.279,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.87,
+   "fama": 0.87,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Sabujo tirolês",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.465,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.881,
+   "fama": 0.881,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Dogo guatemalteco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.285,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.886,
+   "fama": 0.886,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Drentsche patrijshond",
+   "apelidos": [
+    "cão de perdiz de drenthe"
+   ],
+   "sem_dado": false,
+   "icf": 12.425,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.892,
+   "fama": 0.892,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Epagneul picardo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.726,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.883,
+   "fama": 0.883,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Kooikerhondje",
+   "apelidos": [
+    "kooiker"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.889,
+   "fama": 0.889,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Lancashire heeler",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.902,
+   "fama": 0.902,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Sarplaninac",
+   "apelidos": [
+    "pastor iugoslavo"
+   ],
+   "sem_dado": false,
+   "icf": 12.901,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.905,
+   "fama": 0.905,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Schapendoes",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.899,
+   "fama": 0.899,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Stabyhoun",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.892,
+   "fama": 0.892,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Tornjak",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.905,
+   "fama": 0.905,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Wetterhoun",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.896,
+   "fama": 0.896,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Aidi",
+   "apelidos": [
+    "cão do atlas"
+   ],
+   "sem_dado": false,
+   "icf": 11.035,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.912,
+   "fama": 0.912,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Bakharwal",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.933,
+   "fama": 0.933,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Bully kutta",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.915,
+   "fama": 0.915,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Chippiparai",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.917,
+   "fama": 0.917,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Kombai",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.925,
+   "fama": 0.925,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Mioritic",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.909,
+   "fama": 0.909,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Mudhol hound",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.921,
+   "fama": 0.921,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Rajapalayam",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.921,
+   "fama": 0.921,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Taigan",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.929,
+   "fama": 0.929,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Tazy",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.929,
+   "fama": 0.929,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Drever",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.952,
+   "fama": 0.952,
    "pontos": 88,
    "peso": 0.938
+  },
+  {
+   "resposta": "Dunker",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.952,
+   "fama": 0.952,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Hamiltonstövare",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.957,
+   "fama": 0.957,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Hound de Transilvânia",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.938,
+   "fama": 0.938,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Jämthund",
+   "apelidos": [
+    "cão de alce sueco"
+   ],
+   "sem_dado": false,
+   "icf": 12.329,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.948,
+   "fama": 0.948,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Kromfohrländer",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.942,
+   "fama": 0.942,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Schillerstövare",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.957,
+   "fama": 0.957,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Slovensky cuvac",
+   "apelidos": [
+    "cuvac"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.942,
+   "fama": 0.942,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Spitz de Norrbotten",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.946,
+   "fama": 0.946,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Telomian",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.935,
+   "fama": 0.935,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Ariegeois",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.975,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Billy",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.979,
+   "fama": 0.979,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Briquet griffon vendéen",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.983,
+   "fama": 0.983,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Epagneul de Pont-Audemer",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.972,
+   "fama": 0.972,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Grand gascon saintongeois",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.983,
+   "fama": 0.983,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Haldenstövare",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.966,
+   "fama": 0.966,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Hygenhund",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.962,
+   "fama": 0.962,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Ogar polski",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.969,
+   "fama": 0.969,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Poitevin",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.975,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Smalandsstövare",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.962,
+   "fama": 0.962,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Bleu de gascogne",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.987,
+   "fama": 0.987,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Kintamani",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.995,
+   "fama": 0.995,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Laekenois",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.992,
+   "fama": 0.992,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Mastino abruzzese",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 1.0,
+   "fama": 1.0,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Segugio maremmano",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.997,
+   "fama": 0.997,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
+   "resposta": "Tervueren",
+   "apelidos": [
+    "tervuren"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.99,
+   "fama": 0.99,
+   "pontos": 90,
+   "peso": 0.949
   }
  ],
  "fonte_peso": "agente",

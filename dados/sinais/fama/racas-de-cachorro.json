@@ -9,15 +9,15 @@
  ],
  "meses_de_visitas": [],
  "pesos": {
-  "lembranca": 0.55,
-  "conhecem": 0.2,
+  "lembranca": 0.65,
+  "conhecem": 0.1,
   "revisao": 0.15,
   "texto": 0.03
  },
- "cobertura_llm": 1.0,
+ "estimadas_pelo_llm": 93,
  "respostas": {
   "Vira-lata": {
-   "fama": 0.9481,
+   "fama": 0.9403,
    "lembranca_em_1000": 90.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
@@ -31,450 +31,2697 @@
    "tendencia": null
   },
   "Pitbull": {
-   "fama": 0.9754,
+   "fama": 0.9718,
    "lembranca_em_1000": 110.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Labrador": {
-   "fama": 0.9219,
+   "fama": 0.9115,
    "lembranca_em_1000": 80.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Golden retriever": {
-   "fama": 0.8592,
+   "fama": 0.8402,
    "lembranca_em_1000": 50.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Pastor alemão": {
-   "fama": 0.9125,
+   "fama": 0.8993,
    "lembranca_em_1000": 70.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Bulldog": {
-   "fama": 0.8365,
+   "fama": 0.812,
    "lembranca_em_1000": 40.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Rottweiler": {
-   "fama": 0.8293,
+   "fama": 0.8056,
    "lembranca_em_1000": 40.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Shih-tzu": {
-   "fama": 0.8902,
+   "fama": 0.8746,
    "lembranca_em_1000": 60.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Chihuahua": {
-   "fama": 0.8253,
+   "fama": 0.8016,
    "lembranca_em_1000": 40.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Pinscher": {
-   "fama": 0.8515,
+   "fama": 0.8326,
    "lembranca_em_1000": 50.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Dálmata": {
-   "fama": 0.7342,
+   "fama": 0.6961,
    "lembranca_em_1000": 20.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Yorkshire": {
-   "fama": 0.7666,
+   "fama": 0.7344,
    "lembranca_em_1000": 25.0,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Pug": {
-   "fama": 0.7611,
+   "fama": 0.7289,
    "lembranca_em_1000": 25.0,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Husky siberiano": {
-   "fama": 0.7595,
+   "fama": 0.7273,
    "lembranca_em_1000": 25.0,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Beagle": {
-   "fama": 0.6927,
+   "fama": 0.6514,
    "lembranca_em_1000": 15.0,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Lulu da Pomerânia": {
-   "fama": 0.6626,
+   "fama": 0.6194,
    "lembranca_em_1000": 12.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Dachshund": {
-   "fama": 0.6389,
+   "fama": 0.5921,
    "lembranca_em_1000": 10.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Border collie": {
-   "fama": 0.6022,
+   "fama": 0.5551,
    "lembranca_em_1000": 8.0,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Boxer": {
-   "fama": 0.5934,
+   "fama": 0.5424,
    "lembranca_em_1000": 8.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Doberman": {
-   "fama": 0.6236,
+   "fama": 0.5769,
    "lembranca_em_1000": 10.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Maltês": {
-   "fama": 0.5988,
+   "fama": 0.5517,
    "lembranca_em_1000": 8.0,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Fila brasileiro": {
-   "fama": 0.4919,
+   "fama": 0.4326,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Buldogue francês": {
-   "fama": 0.6036,
+   "fama": 0.5525,
    "lembranca_em_1000": 8.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "São Bernardo": {
-   "fama": 0.5803,
+   "fama": 0.5239,
    "lembranca_em_1000": 6.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Chow chow": {
-   "fama": 0.5585,
+   "fama": 0.5029,
    "lembranca_em_1000": 6.0,
    "conhecem_pct": 93.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Akita": {
-   "fama": 0.4684,
+   "fama": 0.4091,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Schnauzer": {
-   "fama": 0.499,
+   "fama": 0.4419,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cocker spaniel": {
-   "fama": 0.4994,
+   "fama": 0.4423,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Dogue alemão": {
-   "fama": 0.4623,
+   "fama": 0.403,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Galgo": {
-   "fama": 0.4474,
+   "fama": 0.3921,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Collie": {
-   "fama": 0.3509,
+   "fama": 0.2872,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Basset hound": {
-   "fama": 0.4099,
+   "fama": 0.3463,
    "lembranca_em_1000": 2.0,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Shar-pei": {
-   "fama": 0.4099,
+   "fama": 0.3463,
    "lembranca_em_1000": 2.0,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Pastor belga": {
-   "fama": 0.3399,
+   "fama": 0.2829,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Bichon frisé": {
-   "fama": 0.259,
+   "fama": 0.2089,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Corgi": {
-   "fama": 0.4387,
+   "fama": 0.3815,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Samoieda": {
-   "fama": 0.3063,
+   "fama": 0.2558,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Malamute do Alasca": {
-   "fama": 0.2516,
+   "fama": 0.2015,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Weimaraner": {
-   "fama": 0.2012,
+   "fama": 0.1612,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cane corso": {
-   "fama": 0.3057,
+   "fama": 0.2553,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Bull terrier": {
-   "fama": 0.3292,
+   "fama": 0.2721,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Jack russell terrier": {
-   "fama": 0.3274,
+   "fama": 0.2703,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Fox paulistinha": {
-   "fama": 0.247,
+   "fama": 0.2035,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Pequinês": {
-   "fama": 0.3212,
+   "fama": 0.2642,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Lhasa apso": {
-   "fama": 0.3907,
+   "fama": 0.3359,
    "lembranca_em_1000": 2.0,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Shiba inu": {
-   "fama": 0.307,
+   "fama": 0.2548,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Bernese": {
-   "fama": 0.1849,
+   "fama": 0.1503,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Mastim napolitano": {
-   "fama": 0.2007,
+   "fama": 0.1607,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Terra-nova": {
-   "fama": 0.1823,
+   "fama": 0.1537,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Whippet": {
-   "fama": 0.112,
+   "fama": 0.0941,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Borzoi": {
-   "fama": 0.0737,
+   "fama": 0.0696,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Afghan hound": {
-   "fama": 0.1353,
+   "fama": 0.1126,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Basenji": {
-   "fama": 0.0629,
+   "fama": 0.0577,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Dogo argentino": {
-   "fama": 0.2479,
+   "fama": 0.1978,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Pointer": {
-   "fama": 0.2005,
+   "fama": 0.1606,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Setter irlandês": {
-   "fama": 0.1586,
+   "fama": 0.1301,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Rhodesian ridgeback": {
-   "fama": 0.0666,
+   "fama": 0.0557,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Shetland sheepdog": {
-   "fama": 0.074,
+   "fama": 0.0687,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Bloodhound": {
-   "fama": 0.1439,
+   "fama": 0.1144,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cavalier king charles": {
-   "fama": 0.1746,
+   "fama": 0.146,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Leonberger": {
-   "fama": 0.0272,
+   "fama": 0.0349,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Komondor": {
-   "fama": 0.016,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Xoloitzcuintle": {
-   "fama": 0.0357,
+   "fama": 0.0373,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ovelheiro gaúcho": {
-   "fama": 0.0537,
+   "fama": 0.0552,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Veadeiro pampeano": {
-   "fama": 0.0055,
+   "fama": 0.0196,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spitz japonês": {
+   "fama": 0.2147,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Border terrier": {
+   "fama": 0.1117,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "West highland white terrier": {
+   "fama": 0.2343,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Scottish terrier": {
+   "fama": 0.1116,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cocker spaniel americano": {
+   "fama": 0.1144,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor australiano": {
+   "fama": 0.3602,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-branco-suíço": {
+   "fama": 0.0815,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bulldog americano": {
+   "fama": 0.2545,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "American bully": {
+   "fama": 0.3476,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Staffordshire bull terrier": {
+   "fama": 0.2151,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "American staffordshire terrier": {
+   "fama": 0.2133,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spitz alemão anão": {
+   "fama": 0.354,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boston terrier": {
+   "fama": 0.2841,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bulmastife": {
+   "fama": 0.0957,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mastim inglês": {
+   "fama": 0.1985,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fox terrier": {
+   "fama": 0.2418,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de crista chinês": {
+   "fama": 0.1154,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Golden doodle": {
+   "fama": 0.1844,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Labradoodle": {
+   "fama": 0.1843,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pomsky": {
+   "fama": 0.1669,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maltipoo": {
+   "fama": 0.0953,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spaniel bretão": {
+   "fama": 0.0629,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Springer spaniel inglês": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galgo italiano": {
+   "fama": 0.0675,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galgo inglês": {
+   "fama": 0.137,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dogue de Bordeaux": {
+   "fama": 0.1611,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor de Anatólia": {
+   "fama": 0.075,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão d'água português": {
+   "fama": 0.1276,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 35.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-maremano-abruzês": {
+   "fama": 0.0749,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rafeiro do Alentejo": {
+   "fama": 0.0619,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão da Serra da Estrela": {
+   "fama": 0.0754,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Perdigueiro português": {
+   "fama": 0.0687,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Podengo português": {
+   "fama": 0.0681,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de fila de São Miguel": {
+   "fama": 0.077,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-de-beauce": {
+   "fama": 0.052,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-de-brie": {
+   "fama": 0.047,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bobtail": {
+   "fama": 0.1298,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-holandês": {
+   "fama": 0.0495,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-de-pirenéus": {
+   "fama": 0.0518,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boiadeiro australiano": {
+   "fama": 0.141,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kelpie australiano": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boiadeiro de Entlebuch": {
+   "fama": 0.0424,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grande boiadeiro suíço": {
+   "fama": 0.0493,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boiadeiro de Appenzell": {
+   "fama": 0.0423,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-do-cáucaso": {
+   "fama": 0.0515,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor da Ásia Central": {
+   "fama": 0.0517,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mastim tibetano": {
+   "fama": 0.1357,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Terrier tibetano": {
+   "fama": 0.0423,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spaniel tibetano": {
+   "fama": 0.0402,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tosa inu": {
+   "fama": 0.0433,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kai ken": {
+   "fama": 0.0453,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kishu ken": {
+   "fama": 0.0453,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Shikoku": {
+   "fama": 0.0253,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hokkaido ken": {
+   "fama": 0.0452,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jindo coreano": {
+   "fama": 0.0452,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chin japonês": {
+   "fama": 0.0489,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papillon": {
+   "fama": 0.1122,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Phalène": {
+   "fama": 0.0251,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Affenpinscher": {
+   "fama": 0.025,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Griffon de Bruxelas": {
+   "fama": 0.025,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Coton de Tuléar": {
+   "fama": 0.0544,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolonhês": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Havanês": {
+   "fama": 0.0746,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lowchen": {
+   "fama": 0.0247,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Keeshond": {
+   "fama": 0.0247,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Schipperke": {
+   "fama": 0.0246,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spitz finlandês": {
+   "fama": 0.0423,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lapphund finlandês": {
+   "fama": 0.0422,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elkhound norueguês": {
+   "fama": 0.0425,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Buhund norueguês": {
+   "fama": 0.0425,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lundehund norueguês": {
+   "fama": 0.0424,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vallhund sueco": {
+   "fama": 0.0445,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão da Groenlândia": {
+   "fama": 0.0438,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Eurasier": {
+   "fama": 0.0242,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wolfspitz": {
+   "fama": 0.0241,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão-lobo checoslovaco": {
+   "fama": 0.0425,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão-lobo de Saarloos": {
+   "fama": 0.0484,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hovawart": {
+   "fama": 0.024,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Landseer": {
+   "fama": 0.0239,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boxer alemão": {
+   "fama": 0.1,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pinscher alemão": {
+   "fama": 0.1461,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pinscher austríaco": {
+   "fama": 0.04,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Collie de pelo curto": {
+   "fama": 0.049,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Collie barbudo": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor polonês das planícies": {
+   "fama": 0.0458,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Puli": {
+   "fama": 0.0234,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pumi": {
+   "fama": 0.0234,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mudi": {
+   "fama": 0.0233,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kuvasz": {
+   "fama": 0.0232,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vizsla": {
+   "fama": 0.0526,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braco alemão": {
+   "fama": 0.0434,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braco alemão de pelo duro": {
+   "fama": 0.0481,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braco italiano": {
+   "fama": 0.0429,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braco francês": {
+   "fama": 0.0434,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spinone italiano": {
+   "fama": 0.0479,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pointer inglês": {
+   "fama": 0.0455,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Setter inglês": {
+   "fama": 0.0431,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Setter gordon": {
+   "fama": 0.0382,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Setter irlandês vermelho e branco": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Munsterlander": {
+   "fama": 0.0226,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Griffon korthals": {
+   "fama": 0.0225,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lagotto romagnolo": {
+   "fama": 0.0225,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de água espanhol": {
+   "fama": 0.05,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de água irlandês": {
+   "fama": 0.0474,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clumber spaniel": {
+   "fama": 0.0358,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sussex spaniel": {
+   "fama": 0.0358,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Field spaniel": {
+   "fama": 0.0357,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Welsh springer spaniel": {
+   "fama": 0.0356,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boykin spaniel": {
+   "fama": 0.0356,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Retriever da Nova Escócia": {
+   "fama": 0.0449,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flat-coated retriever": {
+   "fama": 0.0401,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Curly-coated retriever": {
+   "fama": 0.0371,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chesapeake bay retriever": {
+   "fama": 0.0371,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Basset fulvo da Bretanha": {
+   "fama": 0.0374,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Basset artesiano normando": {
+   "fama": 0.0362,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Petit basset griffon vendéen": {
+   "fama": 0.0217,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grand basset griffon vendéen": {
+   "fama": 0.0216,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Foxhound inglês": {
+   "fama": 0.0404,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Foxhound americano": {
+   "fama": 0.0394,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Coonhound": {
+   "fama": 0.0215,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bluetick coonhound": {
+   "fama": 0.0214,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Redbone coonhound": {
+   "fama": 0.0214,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Treeing walker coonhound": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Plott hound": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Harrier": {
+   "fama": 0.0317,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Otterhound": {
+   "fama": 0.0211,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Beagle-harrier": {
+   "fama": 0.0344,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo de Santo Humberto": {
+   "fama": 0.0407,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grand bleu de gascogne": {
+   "fama": 0.021,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porcelaine": {
+   "fama": 0.0209,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo de Hannover": {
+   "fama": 0.0308,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo da Baviera": {
+   "fama": 0.0307,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Faraó hound": {
+   "fama": 0.0403,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cirneco do Etna": {
+   "fama": 0.0358,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Podengo ibicenco": {
+   "fama": 0.03,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saluki": {
+   "fama": 0.0264,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sloughi": {
+   "fama": 0.0204,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Azawakh": {
+   "fama": 0.0203,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galgo espanhol": {
+   "fama": 0.0391,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galgo húngaro": {
+   "fama": 0.035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galgo polonês": {
+   "fama": 0.0354,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Deerhound": {
+   "fama": 0.0201,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wolfhound irlandês": {
+   "fama": 0.0387,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Silken windhound": {
+   "fama": 0.0199,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chinook": {
+   "fama": 0.0199,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão esquimó americano": {
+   "fama": 0.0416,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alaskan klee kai": {
+   "fama": 0.0198,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Husky do Alasca": {
+   "fama": 0.0345,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Akita americano": {
+   "fama": 0.0407,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chow chow azul": {
+   "fama": 0.048,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Thai ridgeback": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Canaã": {
+   "fama": 0.0415,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mastim espanhol": {
+   "fama": 0.0379,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mastim dos Pireneus": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Presa canário": {
+   "fama": 0.04,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bullmastiff americano": {
+   "fama": 0.0467,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boerboel": {
+   "fama": 0.0191,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Broholmer": {
+   "fama": 0.019,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mastim brasileiro": {
+   "fama": 0.0396,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dogue brasileiro": {
+   "fama": 0.0404,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rastreador brasileiro": {
+   "fama": 0.0429,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-da-mantiqueira": {
+   "fama": 0.0403,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galgo brasileiro": {
+   "fama": 0.0396,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Terrier australiano": {
+   "fama": 0.0375,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Silky terrier": {
+   "fama": 0.0363,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cairn terrier": {
+   "fama": 0.0362,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Norfolk terrier": {
+   "fama": 0.0362,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Norwich terrier": {
+   "fama": 0.0361,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dandie dinmont terrier": {
+   "fama": 0.0361,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Skye terrier": {
+   "fama": 0.036,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sealyham terrier": {
+   "fama": 0.036,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lakeland terrier": {
+   "fama": 0.0359,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Welsh terrier": {
+   "fama": 0.0358,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Irish terrier": {
+   "fama": 0.0358,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kerry blue terrier": {
+   "fama": 0.0387,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Soft-coated wheaten terrier": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Glen of Imaal terrier": {
+   "fama": 0.0356,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bedlington terrier": {
+   "fama": 0.0356,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Airedale terrier": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Manchester terrier": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rat terrier": {
+   "fama": 0.0354,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Toy fox terrier": {
+   "fama": 0.0383,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Parson russell terrier": {
+   "fama": 0.0353,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Patterdale terrier": {
+   "fama": 0.0353,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Terrier japonês": {
+   "fama": 0.0383,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Terrier tcheco": {
+   "fama": 0.0351,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jagdterrier": {
+   "fama": 0.0173,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Russo toy": {
+   "fama": 0.0413,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Terrier preto russo": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Biewer terrier": {
+   "fama": 0.0349,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chihuahua de pelo longo": {
+   "fama": 0.0438,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pequeno cão russo": {
+   "fama": 0.0431,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lulu da pomerânia anão": {
+   "fama": 0.0364,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prazsky krysarik": {
+   "fama": 0.0169,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bulldog continental": {
+   "fama": 0.0392,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bulldog inglês antigo": {
+   "fama": 0.0452,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alapaha": {
+   "fama": 0.0167,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Catahoula": {
+   "fama": 0.0167,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de montanha de Berna": {
+   "fama": 0.0391,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mastim dos Abruzos": {
+   "fama": 0.0274,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão da Carélia": {
+   "fama": 0.0419,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Laika da Sibéria Ocidental": {
+   "fama": 0.0404,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Laika russo-europeu": {
+   "fama": 0.0412,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Laika da Sibéria Oriental": {
+   "fama": 0.0395,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor islandês": {
+   "fama": 0.0364,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor croata": {
+   "fama": 0.0298,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor catalão": {
+   "fama": 0.0308,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor basco": {
+   "fama": 0.0294,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor bergamasco": {
+   "fama": 0.0263,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor de Picardia": {
+   "fama": 0.0273,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor dos Pirenéus de face rasa": {
+   "fama": 0.0321,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Castro Laboreiro": {
+   "fama": 0.0286,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de gado transmontano": {
+   "fama": 0.0283,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barbado da Terceira": {
+   "fama": 0.0275,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de água romagnolo": {
+   "fama": 0.0362,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Saint-Hubert": {
+   "fama": 0.0331,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dogue de Tenerife": {
+   "fama": 0.0202,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kooikerhondje": {
+   "fama": 0.0072,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Drentsche patrijshond": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Stabyhoun": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wetterhoun": {
+   "fama": 0.007,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Schapendoes": {
+   "fama": 0.0069,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spaniel japonês": {
+   "fama": 0.0261,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lancashire heeler": {
+   "fama": 0.0068,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor do Karst": {
+   "fama": 0.0331,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tornjak": {
+   "fama": 0.0067,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sarplaninac": {
+   "fama": 0.0067,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor romeno": {
+   "fama": 0.0285,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor tatra": {
+   "fama": 0.0329,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mioritic": {
+   "fama": 0.0065,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor bósnio": {
+   "fama": 0.026,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aidi": {
+   "fama": 0.0064,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-de-sharplanina": {
+   "fama": 0.0326,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bully kutta": {
+   "fama": 0.0063,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Pastor da Geórgia": {
+   "fama": 0.03,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chippiparai": {
+   "fama": 0.0062,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rajapalayam": {
+   "fama": 0.0061,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mudhol hound": {
+   "fama": 0.0061,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kombai": {
+   "fama": 0.006,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taigan": {
+   "fama": 0.0059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tazy": {
+   "fama": 0.0059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Formosa": {
+   "fama": 0.0292,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bakharwal": {
+   "fama": 0.0058,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Telomian": {
+   "fama": 0.0057,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão cantor da Nova Guiné": {
+   "fama": 0.0324,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dingo": {
+   "fama": 0.0173,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão sem pelo peruano": {
+   "fama": 0.0346,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão sem pelo americano": {
+   "fama": 0.0369,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cimarrón uruguaio": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dogo guatemalteco": {
+   "fama": 0.0075,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chinook americano": {
+   "fama": 0.0333,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hound de Transilvânia": {
+   "fama": 0.0053,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Slovensky cuvac": {
+   "fama": 0.0052,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kromfohrländer": {
+   "fama": 0.0052,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spitz italiano": {
+   "fama": 0.0307,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spitz de Norrbotten": {
+   "fama": 0.0051,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jämthund": {
+   "fama": 0.005,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Drever": {
+   "fama": 0.0049,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dunker": {
+   "fama": 0.0049,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hamiltonstövare": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Schillerstövare": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Smalandsstövare": {
+   "fama": 0.0047,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hygenhund": {
+   "fama": 0.0047,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Haldenstövare": {
+   "fama": 0.0046,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Basset da Westfália": {
+   "fama": 0.0143,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Teckel de pelo duro": {
+   "fama": 0.0287,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-alemão de pelo longo": {
+   "fama": 0.0341,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastor-alemão branco": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Montanha do Atlas": {
+   "fama": 0.0286,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de pastor de Bucovina": {
+   "fama": 0.0304,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de urso russo": {
+   "fama": 0.0283,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo polonês": {
+   "fama": 0.0191,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ogar polski": {
+   "fama": 0.0041,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo sérvio": {
+   "fama": 0.018,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo eslovaco": {
+   "fama": 0.0166,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo tirolês": {
+   "fama": 0.0134,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo austríaco": {
+   "fama": 0.0183,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo de Istria": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo suíço": {
+   "fama": 0.0193,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo da Posavina": {
+   "fama": 0.0141,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo de montanha da Baviera": {
+   "fama": 0.0215,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo grego": {
+   "fama": 0.0209,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de caça de Montenegro": {
+   "fama": 0.0274,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo finlandês": {
+   "fama": 0.0179,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo norueguês": {
+   "fama": 0.018,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de pastor de Maiorca": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ca de bou": {
+   "fama": 0.028,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Podenco andaluz": {
+   "fama": 0.0182,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Podenco canário": {
+   "fama": 0.0219,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Perdigueiro de Burgos": {
+   "fama": 0.0169,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Perro de pastor garafiano": {
+   "fama": 0.0233,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabujo espanhol": {
+   "fama": 0.0216,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de serra de Aires": {
+   "fama": 0.0299,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Epagneul francês": {
+   "fama": 0.0295,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Epagneul picardo": {
+   "fama": 0.009,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Epagneul de Pont-Audemer": {
+   "fama": 0.0027,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Epagneul azul da Picardia": {
+   "fama": 0.0237,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ariegeois": {
+   "fama": 0.0025,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Poitevin": {
+   "fama": 0.0025,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Billy": {
+   "fama": 0.0024,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Briquet griffon vendéen": {
+   "fama": 0.0023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grand gascon saintongeois": {
+   "fama": 0.0023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Anglo-francês de pequena vénerie": {
+   "fama": 0.0275,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bleu de gascogne": {
+   "fama": 0.0022,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braco de Auvergne": {
+   "fama": 0.0176,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braco de Bourbonnais": {
+   "fama": 0.0175,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braco de Ariège": {
+   "fama": 0.0175,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braco de Saint-Germain": {
+   "fama": 0.0174,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spaniel holandês": {
+   "fama": 0.0198,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pequeno cão holandês": {
+   "fama": 0.0275,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Groenendael": {
+   "fama": 0.0277,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tervueren": {
+   "fama": 0.0017,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Laekenois": {
+   "fama": 0.0016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tchiorny terrier": {
+   "fama": 0.0188,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Taiwan": {
+   "fama": 0.0233,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kintamani": {
+   "fama": 0.0004,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Segugio italiano": {
+   "fama": 0.026,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Segugio maremmano": {
+   "fama": 0.0002,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão de Sicília": {
+   "fama": 0.0223,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mastino abruzzese": {
+   "fama": 0.0001,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cão corso siciliano": {
+   "fama": 0.0204,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   }

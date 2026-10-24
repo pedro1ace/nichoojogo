@@ -38,6 +38,7 @@ Seguimos o mesmo método do Krillion:
       Reordena todas as categorias do jogo. Revisão das mudanças em `dados/sinais/revisao/agente-mudancas.csv`.
       Google Trends ficou de fora: não tem API pública e barra pedidos de servidor; a tendência sai das visitas.
 - [ ] Quando houver jogadores, trocar a lembrança do LLM pela contagem real (o `sinais.py` já mistura os dois).
+- [ ] **Faixa "esperta"** (o "Too Clever" do Krillion): resposta fora da caixa que ainda vale, com festa própria.
 - [ ] **Supernova pela graça, não só pela raridade**: algo que poucos acertam, mas que alguns acertam de verdade.
 - [ ] Meta: 50 perguntas revisadas antes do lançamento, depois umas 7 novas por semana.
 

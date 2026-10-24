@@ -4,17 +4,15 @@
  "sinais": [
   "conhecem",
   "lembranca",
-  "revisao",
-  "texto"
+  "revisao"
  ],
  "meses_de_visitas": [],
  "pesos": {
-  "lembranca": 0.55,
-  "conhecem": 0.2,
-  "revisao": 0.15,
-  "texto": 0.03
+  "lembranca": 0.65,
+  "conhecem": 0.1,
+  "revisao": 0.15
  },
- "cobertura_llm": 1.0,
+ "estimadas_pelo_llm": 72,
  "respostas": {
   "Terra": {
    "fama": 1.0,
@@ -24,499 +22,2753 @@
    "tendencia": null
   },
   "Marte": {
-   "fama": 0.9913,
+   "fama": 1.0,
    "lembranca_em_1000": 180.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Lua": {
-   "fama": 0.8696,
+   "fama": 0.8471,
    "lembranca_em_1000": 60.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Júpiter": {
-   "fama": 0.9262,
+   "fama": 0.9267,
    "lembranca_em_1000": 110.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Saturno": {
-   "fama": 0.9015,
+   "fama": 0.8973,
    "lembranca_em_1000": 90.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Vênus": {
-   "fama": 0.8507,
+   "fama": 0.8363,
    "lembranca_em_1000": 60.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Mercúrio": {
-   "fama": 0.8005,
+   "fama": 0.7765,
    "lembranca_em_1000": 40.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Plutão": {
-   "fama": 0.8191,
+   "fama": 0.8032,
    "lembranca_em_1000": 50.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Netuno": {
-   "fama": 0.7714,
+   "fama": 0.7476,
    "lembranca_em_1000": 35.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Urano": {
-   "fama": 0.751,
+   "fama": 0.7233,
    "lembranca_em_1000": 30.0,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cometa Halley": {
-   "fama": 0.6488,
+   "fama": 0.6093,
    "lembranca_em_1000": 15.0,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Europa": {
-   "fama": 0.4018,
+   "fama": 0.3576,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Titã": {
-   "fama": 0.3402,
+   "fama": 0.3085,
    "lembranca_em_1000": 2.0,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Io": {
-   "fama": 0.2749,
+   "fama": 0.2375,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ganimedes": {
-   "fama": 0.2549,
+   "fama": 0.2303,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ceres": {
-   "fama": 0.2477,
+   "fama": 0.216,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Fobos": {
-   "fama": 0.185,
+   "fama": 0.1649,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Deimos": {
-   "fama": 0.1512,
+   "fama": 0.1323,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Caronte": {
-   "fama": 0.176,
+   "fama": 0.1577,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Calisto": {
-   "fama": 0.152,
+   "fama": 0.1287,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Encélado": {
-   "fama": 0.143,
+   "fama": 0.1251,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Tritão": {
-   "fama": 0.1466,
+   "fama": 0.1251,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Éris": {
-   "fama": 0.1368,
+   "fama": 0.1215,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Vesta": {
-   "fama": 0.0872,
+   "fama": 0.08,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Miranda": {
-   "fama": 0.0989,
+   "fama": 0.0731,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Titânia": {
-   "fama": 0.0723,
+   "fama": 0.0644,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Oberon": {
-   "fama": 0.063,
+   "fama": 0.0609,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Mimas": {
-   "fama": 0.0682,
+   "fama": 0.0609,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ariel": {
-   "fama": 0.0593,
+   "fama": 0.0573,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Reia": {
-   "fama": 0.0627,
+   "fama": 0.0537,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Tétis": {
-   "fama": 0.0636,
+   "fama": 0.0537,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Dione": {
-   "fama": 0.0475,
+   "fama": 0.0479,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Jápeto": {
-   "fama": 0.0475,
+   "fama": 0.0479,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Hale-Bopp": {
-   "fama": 0.1504,
+   "fama": 0.1326,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Shoemaker-Levy 9": {
-   "fama": 0.0904,
+   "fama": 0.0798,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Apófis": {
-   "fama": 0.0977,
+   "fama": 0.0869,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Bennu": {
-   "fama": 0.0688,
+   "fama": 0.0621,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Haumea": {
-   "fama": 0.0578,
+   "fama": 0.0514,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Makemake": {
-   "fama": 0.0578,
+   "fama": 0.0514,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Sedna": {
-   "fama": 0.051,
+   "fama": 0.048,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Hipérion": {
-   "fama": 0.0379,
+   "fama": 0.038,
    "lembranca_em_1000": 0.03,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Febe": {
-   "fama": 0.0451,
+   "fama": 0.038,
    "lembranca_em_1000": 0.03,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Nix": {
-   "fama": 0.0334,
+   "fama": 0.0358,
    "lembranca_em_1000": 0.03,
    "conhecem_pct": 6.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Hidra": {
-   "fama": 0.0501,
+   "fama": 0.038,
    "lembranca_em_1000": 0.03,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Umbriel": {
-   "fama": 0.0263,
+   "fama": 0.0298,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Palas": {
-   "fama": 0.0447,
+   "fama": 0.0429,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Juno": {
-   "fama": 0.0892,
+   "fama": 0.0693,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Eros": {
-   "fama": 0.0739,
+   "fama": 0.0523,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ida": {
-   "fama": 0.0539,
+   "fama": 0.0309,
    "lembranca_em_1000": 0.03,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Gaspra": {
-   "fama": 0.0096,
+   "fama": 0.0154,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Itokawa": {
-   "fama": 0.019,
+   "fama": 0.0226,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ryugu": {
-   "fama": 0.0249,
+   "fama": 0.0273,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 6.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Psique": {
-   "fama": 0.0527,
+   "fama": 0.0358,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Amalteia": {
-   "fama": 0.0237,
+   "fama": 0.0262,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Proteu": {
-   "fama": 0.0283,
+   "fama": 0.0262,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Nereida": {
-   "fama": 0.0268,
+   "fama": 0.0226,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Quaoar": {
-   "fama": 0.0153,
+   "fama": 0.019,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Orcus": {
-   "fama": 0.013,
+   "fama": 0.0179,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Gonggong": {
-   "fama": 0.0037,
+   "fama": 0.0107,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Arrokoth": {
-   "fama": 0.0153,
+   "fama": 0.019,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Churyumov-Gerasimenko": {
-   "fama": 0.0258,
+   "fama": 0.0259,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Encke": {
-   "fama": 0.0153,
+   "fama": 0.019,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Tempel 1": {
-   "fama": 0.0059,
+   "fama": 0.0118,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Wild 2": {
-   "fama": 0.0059,
+   "fama": 0.0118,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Didymos": {
-   "fama": 0.0176,
+   "fama": 0.0201,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 6.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Dimorphos": {
-   "fama": 0.0221,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Neowise": {
-   "fama": 0.0615,
+   "fama": 0.055,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Pã": {
-   "fama": 0.0208,
+   "fama": 0.0154,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Dáctilo": {
-   "fama": 0.0022,
+   "fama": 0.0082,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Kerberos": {
-   "fama": 0.0059,
+   "fama": 0.0118,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Estige": {
-   "fama": 0.0059,
+   "fama": 0.0118,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Metis": {
-   "fama": 0.0059,
+   "fama": 0.0118,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Disnomia": {
+   "fama": 0.0161,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 1": {
+   "fama": 0.0159,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cleoselene": {
+   "fama": 0.0158,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2001 (2001 QW322) 1": {
+   "fama": 0.0158,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alexhelios": {
+   "fama": 0.0157,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Equidna": {
+   "fama": 0.0157,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nunam": {
+   "fama": 0.0156,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "2024 PT5": {
+   "fama": 0.0155,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Selam": {
+   "fama": 0.0155,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Urano XXVIII": {
+   "fama": 0.0154,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Petit-Prince": {
+   "fama": 0.0154,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rômulo": {
+   "fama": 0.0153,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hipocampo": {
+   "fama": 0.0153,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Linus": {
+   "fama": 0.0152,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hiʻiaka": {
+   "fama": 0.0152,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 J 1": {
+   "fama": 0.0151,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 J 2": {
+   "fama": 0.0151,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pichi üñëm": {
+   "fama": 0.0147,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Menoetius": {
+   "fama": 0.0147,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Namaka": {
+   "fama": 0.0146,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cordélia": {
+   "fama": 0.0146,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ofélia": {
+   "fama": 0.0145,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bianca": {
+   "fama": 0.0145,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Créssida": {
+   "fama": 0.0144,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Desdêmona": {
+   "fama": 0.0144,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Julieta": {
+   "fama": 0.0143,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pórcia": {
+   "fama": 0.0143,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rosalinda": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cupido": {
+   "fama": 0.0141,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Belinda": {
+   "fama": 0.0141,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Perdita": {
+   "fama": 0.014,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Puck": {
+   "fama": 0.014,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mab": {
+   "fama": 0.0139,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Égide": {
+   "fama": 0.0139,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gorgoneion": {
+   "fama": 0.0138,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ilmarë": {
+   "fama": 0.0138,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Náiade": {
+   "fama": 0.0137,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2001 (47171) 1": {
+   "fama": 0.0136,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2002 (48639) 1": {
+   "fama": 0.0135,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2005 (82075) 1": {
+   "fama": 0.0134,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (208996) 1": {
+   "fama": 0.0134,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Thorondor": {
+   "fama": 0.0133,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Adrasteia": {
+   "fama": 0.0132,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tebe": {
+   "fama": 0.0132,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Temisto": {
+   "fama": 0.0131,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Leda": {
+   "fama": 0.0131,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Himalia": {
+   "fama": 0.013,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lisiteia": {
+   "fama": 0.013,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elara": {
+   "fama": 0.0129,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carpo": {
+   "fama": 0.0129,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Euporia": {
+   "fama": 0.0128,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Telxinoi": {
+   "fama": 0.0127,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Euante": {
+   "fama": 0.0127,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Helique": {
+   "fama": 0.0126,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ortósia": {
+   "fama": 0.0126,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Iocasta": {
+   "fama": 0.0125,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Praxidique": {
+   "fama": 0.0125,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Harpalique": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mneme": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hermipe": {
+   "fama": 0.0123,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tione": {
+   "fama": 0.0123,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ananke": {
+   "fama": 0.0122,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Herse": {
+   "fama": 0.0122,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aitne": {
+   "fama": 0.0121,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cale": {
+   "fama": 0.012,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cavaleiro Negro": {
+   "fama": 0.012,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taigete": {
+   "fama": 0.0119,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caldene": {
+   "fama": 0.0119,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Erinome": {
+   "fama": 0.0118,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aoede": {
+   "fama": 0.0118,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calicore": {
+   "fama": 0.0117,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calique": {
+   "fama": 0.0117,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carme": {
+   "fama": 0.0116,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caliroe": {
+   "fama": 0.0116,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Euridome": {
+   "fama": 0.0115,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasite": {
+   "fama": 0.0115,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cilene": {
+   "fama": 0.0114,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Euquelade": {
+   "fama": 0.0113,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasife": {
+   "fama": 0.0113,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hegemone": {
+   "fama": 0.0112,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arque": {
+   "fama": 0.0112,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Isonoe": {
+   "fama": 0.0111,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sinope": {
+   "fama": 0.0111,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esponde": {
+   "fama": 0.011,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Autonoe": {
+   "fama": 0.011,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Coré": {
+   "fama": 0.0109,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Megaclite": {
+   "fama": 0.0109,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dafne": {
+   "fama": 0.0108,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlas": {
+   "fama": 0.0107,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prometeu": {
+   "fama": 0.0106,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pandora": {
+   "fama": 0.0106,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Epimeteu": {
+   "fama": 0.0105,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jano": {
+   "fama": 0.0105,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aegaeon": {
+   "fama": 0.0104,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Methone": {
+   "fama": 0.0104,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Anthe": {
+   "fama": 0.0103,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Palene": {
+   "fama": 0.0103,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Telesto": {
+   "fama": 0.0102,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calipso": {
+   "fama": 0.0102,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Helene": {
+   "fama": 0.0101,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Polideuces": {
+   "fama": 0.0101,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Remo": {
+   "fama": 0.01,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kiviuq": {
+   "fama": 0.0099,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ijiraq": {
+   "fama": 0.0098,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paaliaq": {
+   "fama": 0.0097,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Skathi": {
+   "fama": 0.0097,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Albiorix": {
+   "fama": 0.0096,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bebhionn": {
+   "fama": 0.0096,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Skoll": {
+   "fama": 0.0095,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Erriapo": {
+   "fama": 0.0095,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tarqeq": {
+   "fama": 0.0094,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Greip": {
+   "fama": 0.0094,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Siarnaq": {
+   "fama": 0.0093,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hyrrokkin": {
+   "fama": 0.0093,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tarvos": {
+   "fama": 0.0092,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 S 13": {
+   "fama": 0.0091,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jarnsaxa": {
+   "fama": 0.0091,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 S 17": {
+   "fama": 0.009,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mundilfari": {
+   "fama": 0.009,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bergelmir": {
+   "fama": 0.0089,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2006 S 1": {
+   "fama": 0.0089,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aegir": {
+   "fama": 0.0088,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Narvi": {
+   "fama": 0.0088,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 S 12": {
+   "fama": 0.0087,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bestla": {
+   "fama": 0.0087,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Suttungr": {
+   "fama": 0.0086,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Farbauti": {
+   "fama": 0.0086,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 S 7": {
+   "fama": 0.0085,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hati": {
+   "fama": 0.0084,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Thrymr": {
+   "fama": 0.0084,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2006 S 3": {
+   "fama": 0.0083,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fenrir": {
+   "fama": 0.0083,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fornjot": {
+   "fama": 0.0082,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Surtur": {
+   "fama": 0.0082,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kari": {
+   "fama": 0.0081,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ymir": {
+   "fama": 0.0081,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Loge": {
+   "fama": 0.008,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2009 S 1": {
+   "fama": 0.008,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 S 2": {
+   "fama": 0.0079,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 S 3": {
+   "fama": 0.0079,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 S 6": {
+   "fama": 0.0078,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 S 4": {
+   "fama": 0.0077,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 S 3": {
+   "fama": 0.0077,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Francisco": {
+   "fama": 0.0076,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caliban": {
+   "fama": 0.0076,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2000 (90) 1": {
+   "fama": 0.0075,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2001 (26308) 1": {
+   "fama": 0.0075,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2002 (2000 CF105) 1": {
+   "fama": 0.0074,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2002 (2001 QC298) 1": {
+   "fama": 0.0074,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 (130) 1": {
+   "fama": 0.0073,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 (134860) 1": {
+   "fama": 0.0073,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 (2003 QY90) 1": {
+   "fama": 0.0072,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 (2003 UN284) 1": {
+   "fama": 0.0072,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 (139775) 1": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 (2000 CQ114) 1": {
+   "fama": 0.007,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2005 (1999 OJ4) 1": {
+   "fama": 0.007,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2005 (2005 EO304) 1": {
+   "fama": 0.0069,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2005 (80806) 1": {
+   "fama": 0.0069,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2006 (1999 RT214) 1": {
+   "fama": 0.0068,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2006 (2000 QL251) 1": {
+   "fama": 0.0068,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2006 (60458) 1": {
+   "fama": 0.0067,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (119979) 1": {
+   "fama": 0.0067,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (123509) 1": {
+   "fama": 0.0066,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (148780) 1": {
+   "fama": 0.0066,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (160256) 1": {
+   "fama": 0.0065,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (182933) 1": {
+   "fama": 0.0065,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (2001 FL185) 1": {
+   "fama": 0.0064,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (2001 XR254) 1": {
+   "fama": 0.0063,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (2003 QA91) 1": {
+   "fama": 0.0063,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (2003 QR91) 1": {
+   "fama": 0.0062,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (2003 WU188) 1": {
+   "fama": 0.0062,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (275809) 1": {
+   "fama": 0.0061,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tinia (satélite)": {
+   "fama": 0.0061,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (60621) 1": {
+   "fama": 0.006,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2008 (119067) 1": {
+   "fama": 0.006,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2008 (160091) 1": {
+   "fama": 0.0059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2008 (2001 QQ322) 1": {
+   "fama": 0.0059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2008 (2006 SF369) 1": {
+   "fama": 0.0058,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2008 (303712) 1": {
+   "fama": 0.0058,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2008 (364171) 1": {
+   "fama": 0.0057,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2008  1": {
+   "fama": 0.0056,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2009 (1999 XY143) 1": {
+   "fama": 0.0056,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2009 (2002 XH91) 1": {
+   "fama": 0.0055,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2009 (2003 YU179) 1": {
+   "fama": 0.0055,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 (2001 XP254) 1": {
+   "fama": 0.0054,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 (2004 KH19) 1": {
+   "fama": 0.0054,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 (2005 EF298) 1": {
+   "fama": 0.0053,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 (2005 VZ122) 1": {
+   "fama": 0.0053,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 (2006 BR284) 1": {
+   "fama": 0.0052,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 (229762) 1": {
+   "fama": 0.0052,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2011 (82157) 1": {
+   "fama": 0.0051,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2012 (2003 FE128) 1": {
+   "fama": 0.0051,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Satélite de 38628 Huya": {
+   "fama": 0.005,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Stephano": {
+   "fama": 0.0049,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Trinculo": {
+   "fama": 0.0049,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sycorax": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Margaret": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prospero": {
+   "fama": 0.0047,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Setebos": {
+   "fama": 0.0047,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ferdinand": {
+   "fama": 0.0046,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2000 J 11": {
+   "fama": 0.0046,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 12": {
+   "fama": 0.0045,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Talassa": {
+   "fama": 0.0045,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Despina": {
+   "fama": 0.0044,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galateia": {
+   "fama": 0.0044,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Larissa": {
+   "fama": 0.0043,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Halimede": {
+   "fama": 0.0042,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sao": {
+   "fama": 0.0042,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Laomedeia": {
+   "fama": 0.0041,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Psámata": {
+   "fama": 0.0041,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Neso": {
+   "fama": 0.004,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2015 (357439) 1": {
+   "fama": 0.004,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2014 (130) 2": {
+   "fama": 0.0039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2014 (130) 1": {
+   "fama": 0.0039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2013 (1052) 1": {
+   "fama": 0.0038,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2009 (317) 1": {
+   "fama": 0.0038,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (939) 1": {
+   "fama": 0.0037,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2006 (624) 1": {
+   "fama": 0.0037,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2005 (809) 1": {
+   "fama": 0.0036,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 (854) 1": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 (379) 1": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 (283) 1": {
+   "fama": 0.0034,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2001 (107) 1": {
+   "fama": 0.0034,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2000 (762) 1": {
+   "fama": 0.0033,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 3": {
+   "fama": 0.0033,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 18": {
+   "fama": 0.0032,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 10": {
+   "fama": 0.0032,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 9": {
+   "fama": 0.0031,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 5": {
+   "fama": 0.0031,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 2": {
+   "fama": 0.003,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 4": {
+   "fama": 0.003,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 19": {
+   "fama": 0.0029,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 16": {
+   "fama": 0.0029,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 15": {
+   "fama": 0.0028,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2003 J 23": {
+   "fama": 0.0027,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zoe": {
+   "fama": 0.0027,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sawiskera": {
+   "fama": 0.0026,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2015 (136472) 1": {
+   "fama": 0.0026,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2009 (1999 RY214) 1": {
+   "fama": 0.0025,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2007 (2001 RZ143) 1": {
+   "fama": 0.0024,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2009": {
+   "fama": 0.0024,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2012": {
+   "fama": 0.0023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2010 (225088) 1": {
+   "fama": 0.0022,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2000 (1998 WW31) 1": {
+   "fama": 0.0022,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Júpiter LIV": {
+   "fama": 0.0021,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Júpiter LIX": {
+   "fama": 0.002,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Actaea": {
+   "fama": 0.0013,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2005 (1862) 1": {
+   "fama": 0.0013,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2004 (45) 1": {
+   "fama": 0.0011,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2016 J 2": {
+   "fama": 0.0011,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ersa": {
+   "fama": 0.001,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2017 J 4": {
+   "fama": 0.001,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2017 J 9": {
+   "fama": 0.0009,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2017 J 2": {
+   "fama": 0.0009,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2017 J 8": {
+   "fama": 0.0008,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2017 J 5": {
+   "fama": 0.0008,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2017 J 6": {
+   "fama": 0.0007,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2017 J 3": {
+   "fama": 0.0006,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2017 J 7": {
+   "fama": 0.0006,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vanth": {
+   "fama": 0.0005,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2010 J 1": {
+   "fama": 0.0003,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fórcis": {
+   "fama": 0.0003,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Weywot (satélite)": {
+   "fama": 0.0002,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pabu": {
+   "fama": 0.0002,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "2020 CD3": {
+   "fama": 0.0001,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2002 (121) 1": {
+   "fama": 0.0001,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "S/2010 J 2": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Higia": {
+   "fama": 0.0428,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Interamnia": {
+   "fama": 0.0427,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Euphrosyne": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Davida": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cibele": {
+   "fama": 0.0425,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Silvia": {
+   "fama": 0.0424,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hektor": {
+   "fama": 0.0424,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Eunomia": {
+   "fama": 0.0423,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Herculina": {
+   "fama": 0.0423,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kleopatra": {
+   "fama": 0.0422,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mathilde": {
+   "fama": 0.0422,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lutetia": {
+   "fama": 0.0421,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Steins": {
+   "fama": 0.0421,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Annefrank": {
+   "fama": 0.042,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Braille": {
+   "fama": 0.0419,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Toutatis": {
+   "fama": 0.0419,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Geographos": {
+   "fama": 0.0418,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Icarus": {
+   "fama": 0.0418,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Phaethon": {
+   "fama": 0.0417,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Florence": {
+   "fama": 0.0417,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ganymed": {
+   "fama": 0.0416,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "2024 YR4": {
+   "fama": 0.0414,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Varuna": {
+   "fama": 0.0412,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ixion": {
+   "fama": 0.0412,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Varda": {
+   "fama": 0.0411,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Salacia": {
+   "fama": 0.0411,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chaos": {
+   "fama": 0.041,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Huya": {
+   "fama": 0.041,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Logos": {
+   "fama": 0.0409,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Typhon": {
+   "fama": 0.0409,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ceto": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chiron": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pholus": {
+   "fama": 0.0407,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nessus": {
+   "fama": 0.0407,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chariklo": {
+   "fama": 0.0406,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bienor": {
+   "fama": 0.0406,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Asbolus": {
+   "fama": 0.0405,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hidalgo": {
+   "fama": 0.0404,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tempel-Tuttle": {
+   "fama": 0.0404,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Swift-Tuttle": {
+   "fama": 0.0403,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hartley 2": {
+   "fama": 0.0403,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borrelly": {
+   "fama": 0.0402,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wirtanen": {
+   "fama": 0.0402,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Holmes": {
+   "fama": 0.0401,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Biela": {
+   "fama": 0.0401,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kohoutek": {
+   "fama": 0.04,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ikeya-Seki": {
+   "fama": 0.04,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "West": {
+   "fama": 0.0399,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lovejoy": {
+   "fama": 0.0399,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pons-Brooks": {
+   "fama": 0.0398,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tsuchinshan-ATLAS": {
+   "fama": 0.0397,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "ISON": {
+   "fama": 0.0397,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hyakutake": {
+   "fama": 0.0396,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "McNaught": {
+   "fama": 0.0396,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "C/2020 F3": {
+   "fama": 0.0395,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   }

@@ -18,7 +18,7 @@ Como funciona hoje no protótipo:
   sempre no mesmo tempo: as raras descem rápido e as óbvias quase não saem do lugar. Um tardígrado de capacete (o mascote) acompanha.
 - No caminho: marcos (Lua, Marte, Júpiter... buraco negro), curiosidades nas laterais, régua de profundidade
   e linhas mostrando até onde cada faixa de raridade levaria nesta pergunta.
-- Faixas: ÓBVIA (0 a 4), COMUM (5 a 19), INCOMUM (20 a 49), RARA (50+) e a **supernova**,
+- Faixas: ÓBVIA (8 a 15 pontos), COMUM (18 a 34), INCOMUM (35 a 58), RARA (60 a 90) e a **supernova** (100),
   a resposta secreta de cada pergunta, que vale o dobro.
 - A tela inteira treme mais quanto mais rara a resposta. A palavra aparece numa caixinha da cor da faixa e cai junto com a câmera; o foguete vai ao lado, acompanhando com um balanço suave.
 - Autocorreção: se a palavra está quase certa (inclusive contra os apelidos), o jogo sugere e preenche o campo,
@@ -96,14 +96,14 @@ pelas faixas do jogo, para toda categoria ter de tudo. O peso de antes fica na c
 
 | Faixa | Parte da lista | Pontos |
 |---|---|---|
-| Óbvia | as 15% mais famosas | 8 a 15 |
-| Comum | as 25% seguintes | 18 a 34 |
-| Incomum | as 30% seguintes | 35 a 58 |
-| Rara | as 30% menos famosas | 60 a 90 |
+| Óbvia | as 2% mais famosas (de 3 a 15 respostas) | 8 a 15 |
+| Comum | as 5% seguintes (de 5 a 40) | 18 a 34 |
+| Incomum | as 15% seguintes (de 10 a 150) | 35 a 58 |
+| Rara | todo o resto | 60 a 90 |
 | Supernova | uma por categoria | 100 (50, dobrada no jogo) |
 
-As faixas baixas são estreitas de propósito: quem joga digita quase sempre as respostas mais famosas, então
-só as bem óbvias ficam cinzas. Os cortes de faixa no jogo (`FAIXAS` em `jogo/cena.js`) são 18, 35 e 60 pontos.
+Como no Krillion, as faixas baixas são estreitas de propósito: quem joga digita quase sempre as respostas mais
+famosas, então só as bem óbvias ficam cinzas, e a cauda longa (que pode ter milhares de respostas) é rara. Os cortes de faixa no jogo (`FAIXAS` em `jogo/cena.js`) são 18, 35 e 60 pontos.
 
 Categorias pequenas e fechadas (menos de 30 respostas) não dão para espalhar e ficam fora do jogo, listadas em
 `dados/fora_do_jogo.txt`. Os arquivos continuam no repositório.
@@ -129,12 +129,12 @@ O agente mede isso e reordena cada categoria:
 1. **Lembrança** (`dados/sinais/llm/<cat>.json`): "se 1000 brasileiros respondessem, quantos dariam esta
    resposta?" e "quantos por cento reconheceriam?". Feito por um LLM, em lotes, e guardado: o agente só
    pergunta o que ainda não está no arquivo. Sem `ANTHROPIC_API_KEY`, usa só o que já está lá.
-   Nas listas enormes (astronautas, missões, exoplanetas, palavras em -io) só os nomes que alguém lembra
-   foram estimados; o resto fica com um valor padrão (`"origem": "padrao"`) e é ordenado pelos outros sinais.
+   Só as respostas que alguém lembra foram estimadas (umas 4 mil). As outras contam como "ninguém lembra",
+   nunca como média, e se ordenam entre si pelos outros sinais: assim uma resposta nichada nova cai em rara.
 2. **Wikipédia** (`dados/sinais/wikidata/<cat>.json`): visitas em 12 meses e **tendência** (últimos 6 meses
    contra os 6 anteriores), dos dumps de `scripts/baixar_visitas.sh`. Quem está em alta sobe um pouco.
-3. **Mistura**: lembrança 55%, reconhecimento 20%, o peso manual antigo de `dados/ajustes/` 15%, visitas 7%
-   e frequência em textos 3%. Em lista enorme, a lembrança pesa na proporção do que foi estimado.
+3. **Mistura**: lembrança 65%, reconhecimento 10%, o peso manual antigo de `dados/ajustes/` 15%, visitas 7%
+   e frequência em textos 3%.
    A tendência soma ou tira até 0,05. O resultado vai para `dados/sinais/fama/<cat>.json`.
 4. **Pontuação**: o `pontuar.py` usa essa fama para a ordem e aplica a mesma régua de cima.
    `dados/sinais/revisao/agente-mudancas.csv` lista tudo que mudou de faixa, com os sinais de cada resposta.

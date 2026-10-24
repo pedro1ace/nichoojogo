@@ -9,591 +9,2271 @@
  ],
  "meses_de_visitas": [],
  "pesos": {
-  "lembranca": 0.55,
-  "conhecem": 0.2,
+  "lembranca": 0.65,
+  "conhecem": 0.1,
   "revisao": 0.15,
   "texto": 0.03
  },
- "cobertura_llm": 1.0,
+ "estimadas_pelo_llm": 83,
  "respostas": {
   "Carlos Drummond de Andrade": {
-   "fama": 0.9842,
+   "fama": 0.9883,
    "lembranca_em_1000": 170.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Vinicius de Moraes": {
-   "fama": 0.9763,
+   "fama": 0.9772,
    "lembranca_em_1000": 150.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cecília Meireles": {
-   "fama": 0.8922,
+   "fama": 0.8883,
    "lembranca_em_1000": 90.0,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Manuel Bandeira": {
-   "fama": 0.8192,
+   "fama": 0.8069,
    "lembranca_em_1000": 50.0,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Castro Alves": {
-   "fama": 0.7922,
+   "fama": 0.7754,
    "lembranca_em_1000": 40.0,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Mario Quintana": {
-   "fama": 0.8026,
+   "fama": 0.7948,
    "lembranca_em_1000": 50.0,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Gonçalves Dias": {
-   "fama": 0.7826,
+   "fama": 0.7683,
    "lembranca_em_1000": 40.0,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Olavo Bilac": {
-   "fama": 0.7039,
+   "fama": 0.6871,
    "lembranca_em_1000": 25.0,
    "conhecem_pct": 82.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Machado de Assis": {
-   "fama": 0.8452,
+   "fama": 0.8251,
    "lembranca_em_1000": 60.0,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cora Coralina": {
-   "fama": 0.76,
+   "fama": 0.7489,
    "lembranca_em_1000": 40.0,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Álvares de Azevedo": {
-   "fama": 0.6709,
+   "fama": 0.6502,
    "lembranca_em_1000": 20.0,
    "conhecem_pct": 78.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "João Cabral de Melo Neto": {
-   "fama": 0.6303,
+   "fama": 0.6088,
    "lembranca_em_1000": 15.0,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Paulo Leminski": {
-   "fama": 0.6133,
+   "fama": 0.6015,
    "lembranca_em_1000": 15.0,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ferreira Gullar": {
-   "fama": 0.5688,
+   "fama": 0.5453,
    "lembranca_em_1000": 10.0,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Oswald de Andrade": {
-   "fama": 0.5737,
+   "fama": 0.5449,
    "lembranca_em_1000": 10.0,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Mário de Andrade": {
-   "fama": 0.6079,
+   "fama": 0.5768,
    "lembranca_em_1000": 12.0,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Adélia Prado": {
-   "fama": 0.4236,
+   "fama": 0.4032,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Hilda Hilst": {
-   "fama": 0.4039,
+   "fama": 0.3862,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Manoel de Barros": {
-   "fama": 0.505,
+   "fama": 0.4897,
    "lembranca_em_1000": 8.0,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Augusto dos Anjos": {
-   "fama": 0.4804,
+   "fama": 0.4597,
    "lembranca_em_1000": 6.0,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Gregório de Matos": {
-   "fama": 0.4666,
+   "fama": 0.4385,
    "lembranca_em_1000": 5.0,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Casimiro de Abreu": {
-   "fama": 0.4283,
+   "fama": 0.4012,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cruz e Sousa": {
-   "fama": 0.3913,
+   "fama": 0.3646,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Alphonsus de Guimaraens": {
-   "fama": 0.229,
+   "fama": 0.2098,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Raul Bopp": {
-   "fama": 0.156,
+   "fama": 0.1428,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Murilo Mendes": {
-   "fama": 0.1983,
+   "fama": 0.1807,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Jorge de Lima": {
-   "fama": 0.1969,
+   "fama": 0.1788,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ana Cristina Cesar": {
-   "fama": 0.1763,
+   "fama": 0.1644,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Patativa do Assaré": {
-   "fama": 0.4062,
+   "fama": 0.3872,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cazuza": {
-   "fama": 0.5511,
+   "fama": 0.4914,
    "lembranca_em_1000": 6.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Renato Russo": {
-   "fama": 0.5543,
+   "fama": 0.4931,
    "lembranca_em_1000": 6.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Arnaldo Antunes": {
-   "fama": 0.3341,
+   "fama": 0.2667,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Chico Buarque": {
-   "fama": 0.6077,
+   "fama": 0.5491,
    "lembranca_em_1000": 8.0,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ariano Suassuna": {
-   "fama": 0.4433,
+   "fama": 0.39,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Bráulio Bessa": {
-   "fama": 0.3781,
+   "fama": 0.3542,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Thiago de Mello": {
-   "fama": 0.1637,
+   "fama": 0.1504,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Haroldo de Campos": {
-   "fama": 0.1273,
+   "fama": 0.117,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Augusto de Campos": {
-   "fama": 0.144,
+   "fama": 0.1352,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Décio Pignatari": {
-   "fama": 0.0772,
+   "fama": 0.073,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Waly Salomão": {
-   "fama": 0.1049,
+   "fama": 0.0995,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Torquato Neto": {
-   "fama": 0.1355,
+   "fama": 0.1248,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cacaso": {
-   "fama": 0.0546,
+   "fama": 0.0542,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Chacal": {
-   "fama": 0.0609,
+   "fama": 0.0622,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Paulo Mendes Campos": {
-   "fama": 0.1119,
+   "fama": 0.1042,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Mário Faustino": {
-   "fama": 0.0546,
+   "fama": 0.0593,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Affonso Romano de Sant'Anna": {
-   "fama": 0.1034,
+   "fama": 0.0975,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Lêdo Ivo": {
-   "fama": 0.0877,
+   "fama": 0.0835,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Sousândrade": {
-   "fama": 0.0393,
+   "fama": 0.0389,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Tomás Antônio Gonzaga": {
-   "fama": 0.2661,
+   "fama": 0.2376,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cláudio Manuel da Costa": {
-   "fama": 0.1987,
+   "fama": 0.1752,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Basílio da Gama": {
-   "fama": 0.1441,
+   "fama": 0.1295,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Santa Rita Durão": {
-   "fama": 0.1078,
+   "fama": 0.0975,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Fagundes Varela": {
-   "fama": 0.1347,
+   "fama": 0.12,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Junqueira Freire": {
-   "fama": 0.0822,
+   "fama": 0.0769,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Raimundo Correia": {
-   "fama": 0.1506,
+   "fama": 0.1349,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Alberto de Oliveira": {
-   "fama": 0.1303,
+   "fama": 0.1176,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Vicente de Carvalho": {
-   "fama": 0.0862,
+   "fama": 0.0845,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Augusto Frederico Schmidt": {
-   "fama": 0.0575,
+   "fama": 0.0617,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Cassiano Ricardo": {
-   "fama": 0.0923,
+   "fama": 0.09,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Menotti Del Picchia": {
-   "fama": 0.1335,
+   "fama": 0.1225,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Guilherme de Almeida": {
-   "fama": 0.1101,
+   "fama": 0.1035,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Henriqueta Lisboa": {
-   "fama": 0.0703,
+   "fama": 0.0702,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Gilka Machado": {
-   "fama": 0.0565,
+   "fama": 0.06,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Francisca Júlia": {
-   "fama": 0.0467,
+   "fama": 0.0516,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Auta de Souza": {
-   "fama": 0.037,
+   "fama": 0.0362,
    "lembranca_em_1000": 0.03,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Orides Fontela": {
-   "fama": 0.0279,
+   "fama": 0.036,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ana Martins Marques": {
-   "fama": 0.0405,
+   "fama": 0.045,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Angélica Freitas": {
-   "fama": 0.0331,
+   "fama": 0.0391,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Alice Ruiz": {
-   "fama": 0.0614,
+   "fama": 0.0624,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Conceição Evaristo": {
-   "fama": 0.2148,
+   "fama": 0.1918,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ryane Leão": {
-   "fama": 0.1007,
+   "fama": 0.0961,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Elisa Lucinda": {
-   "fama": 0.1295,
+   "fama": 0.1143,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Zila Mamede": {
-   "fama": 0.017,
+   "fama": 0.0257,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Bruna Lombardi": {
-   "fama": 0.2366,
+   "fama": 0.166,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Marina Colasanti": {
-   "fama": 0.1206,
+   "fama": 0.1084,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Ruth Rocha": {
-   "fama": 0.2519,
+   "fama": 0.205,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Sérgio Vaz": {
-   "fama": 0.0657,
+   "fama": 0.0615,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Glauco Mattoso": {
-   "fama": 0.0318,
+   "fama": 0.0374,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Paulo Henriques Britto": {
-   "fama": 0.0436,
+   "fama": 0.0468,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Antonio Cicero": {
-   "fama": 0.0965,
+   "fama": 0.0905,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Armando Freitas Filho": {
-   "fama": 0.0426,
+   "fama": 0.046,
    "lembranca_em_1000": 0.02,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Dante Milano": {
-   "fama": 0.0202,
+   "fama": 0.0277,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
   "Pedro Kilkerry": {
-   "fama": 0.0,
+   "fama": 0.0048,
    "lembranca_em_1000": 0.01,
    "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gonçalves de Magalhães": {
+   "fama": 0.0737,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Laurindo Rabelo": {
+   "fama": 0.0667,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bernardo Guimarães": {
+   "fama": 0.0731,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sousa Caldas": {
+   "fama": 0.0724,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Silva Alvarenga": {
+   "fama": 0.0724,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alvarenga Peixoto": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Manuel Botelho de Oliveira": {
+   "fama": 0.0729,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bento Teixeira": {
+   "fama": 0.0732,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "José de Anchieta": {
+   "fama": 0.0735,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luís Delfino": {
+   "fama": 0.0687,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Emílio de Meneses": {
+   "fama": 0.0652,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bastos Tigre": {
+   "fama": 0.0699,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "B. Lopes": {
+   "fama": 0.0736,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Emiliano Perneta": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mário Pederneiras": {
+   "fama": 0.0676,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ronald de Carvalho": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ribeiro Couto": {
+   "fama": 0.0716,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tasso da Silveira": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ascenso Ferreira": {
+   "fama": 0.0678,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Joaquim Cardozo": {
+   "fama": 0.0723,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dantas Motta": {
+   "fama": 0.0523,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Emílio Moura": {
+   "fama": 0.0714,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Abgar Renault": {
+   "fama": 0.0521,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carlos Pena Filho": {
+   "fama": 0.0769,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Geir Campos": {
+   "fama": 0.052,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Domingos Carvalho da Silva": {
+   "fama": 0.074,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Péricles Eugênio da Silva Ramos": {
+   "fama": 0.0696,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bueno de Rivera": {
+   "fama": 0.0692,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "José Paulo Paes": {
+   "fama": 0.0791,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mauro Mota": {
+   "fama": 0.0695,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alphonsus de Guimaraens Filho": {
+   "fama": 0.0772,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lindolf Bell": {
+   "fama": 0.0516,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Moacyr Félix": {
+   "fama": 0.0674,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mário Chamie": {
+   "fama": 0.0715,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "José Lino Grünewald": {
+   "fama": 0.0713,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ronaldo Azeredo": {
+   "fama": 0.0642,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wladimir Dias-Pino": {
+   "fama": 0.0728,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Afonso Ávila": {
+   "fama": 0.068,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Francisco Alvim": {
+   "fama": 0.0743,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Roberto Piva": {
+   "fama": 0.0678,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Claudio Willer": {
+   "fama": 0.0692,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Leila Míccolis": {
+   "fama": 0.051,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lara de Lemos": {
+   "fama": 0.0688,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Olga Savary": {
+   "fama": 0.0652,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Yêda Schmaltz": {
+   "fama": 0.0508,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Neide Archanjo": {
+   "fama": 0.0507,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Myriam Fraga": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Renata Pallottini": {
+   "fama": 0.0505,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Stella Leonardos": {
+   "fama": 0.0505,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maria Lúcia Alvim": {
+   "fama": 0.0725,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Laís Corrêa de Araújo": {
+   "fama": 0.0663,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dora Ferreira da Silva": {
+   "fama": 0.071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Astrid Cabral": {
+   "fama": 0.0502,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Leonardo Fróes": {
+   "fama": 0.0502,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Age de Carvalho": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rubens Rodrigues Torres Filho": {
+   "fama": 0.0727,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carlito Azevedo": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Claudia Roquette-Pinto": {
+   "fama": 0.0689,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fabrício Corsaletti": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marcos Siscar": {
+   "fama": 0.0717,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ricardo Aleixo": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ricardo Domeneck": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alberto Pucheu": {
+   "fama": 0.0697,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Eucanaã Ferraz": {
+   "fama": 0.0663,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Antonio Risério": {
+   "fama": 0.0713,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Frederico Barbosa": {
+   "fama": 0.0681,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nelson Ascher": {
+   "fama": 0.0494,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régis Bonvicino": {
+   "fama": 0.0493,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Horácio Costa": {
+   "fama": 0.0728,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ademir Assunção": {
+   "fama": 0.0656,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bruna Beber": {
+   "fama": 0.0691,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marília Garcia": {
+   "fama": 0.0656,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alice Sant'Anna": {
+   "fama": 0.0683,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mariana Ianelli": {
+   "fama": 0.0684,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Adriana Lisboa": {
+   "fama": 0.0723,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prisca Agustoni": {
+   "fama": 0.0541,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Micheliny Verunschk": {
+   "fama": 0.0486,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lubi Prates": {
+   "fama": 0.0485,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tatiana Nascimento": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mel Duarte": {
+   "fama": 0.0688,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jarid Arraes": {
+   "fama": 0.0484,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luiza Romão": {
+   "fama": 0.0616,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bell Puã": {
+   "fama": 0.0467,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuti": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Oliveira Silveira": {
+   "fama": 0.069,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Solano Trindade": {
+   "fama": 0.0632,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carlos de Assumpção": {
+   "fama": 0.0663,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Abdias Nascimento": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lino Guedes": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Éle Semog": {
+   "fama": 0.0786,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Miriam Alves": {
+   "fama": 0.0478,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esmeralda Ribeiro": {
+   "fama": 0.066,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cristiane Sobral": {
+   "fama": 0.0638,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zé da Luz": {
+   "fama": 0.0704,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pinto do Monteiro": {
+   "fama": 0.0674,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zé Limeira": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cego Aderaldo": {
+   "fama": 0.0651,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Leandro Gomes de Barros": {
+   "fama": 0.0676,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "João Martins de Athayde": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Manoel Monteiro": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "J. Borges": {
+   "fama": 0.0471,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rodolfo Coelho Cavalcante": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jessier Quirino": {
+   "fama": 0.047,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Oliveira de Panelas": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ivanildo Vila Nova": {
+   "fama": 0.0728,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Louro do Pajeú": {
+   "fama": 0.0597,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dimas Batista": {
+   "fama": 0.0672,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Otacílio Batista": {
+   "fama": 0.0671,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rogaciano Leite": {
+   "fama": 0.0701,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zé Laurentino": {
+   "fama": 0.0623,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chico Pedrosa": {
+   "fama": 0.0667,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arievaldo Viana": {
+   "fama": 0.0653,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Klévisson Viana": {
+   "fama": 0.0652,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caetano Veloso": {
+   "fama": 0.0645,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gilberto Gil": {
+   "fama": 0.065,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Capinam": {
+   "fama": 0.0504,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aldir Blanc": {
+   "fama": 0.0459,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paulo César Pinheiro": {
+   "fama": 0.0689,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fernando Brant": {
+   "fama": 0.0458,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ronaldo Bastos": {
+   "fama": 0.0632,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartola": {
+   "fama": 0.0603,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Noel Rosa": {
+   "fama": 0.0665,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lupicínio Rodrigues": {
+   "fama": 0.0456,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Herivelto Martins": {
+   "fama": 0.067,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paulo Vanzolini": {
+   "fama": 0.075,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Belchior": {
+   "fama": 0.0585,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fausto Nilo": {
+   "fama": 0.0606,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zé Ramalho": {
+   "fama": 0.064,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alceu Valença": {
+   "fama": 0.0602,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tom Zé": {
+   "fama": 0.0666,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Itamar Assumpção": {
+   "fama": 0.0573,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arnaldo Baptista": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Walter Franco": {
+   "fama": 0.0638,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jards Macalé": {
+   "fama": 0.0449,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luiz Melodia": {
+   "fama": 0.0617,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Criolo": {
+   "fama": 0.0448,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Emicida": {
+   "fama": 0.0447,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mano Brown": {
+   "fama": 0.0634,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "GOG": {
+   "fama": 0.0446,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Djonga": {
+   "fama": 0.0446,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Baco Exu do Blues": {
+   "fama": 0.0589,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "BK": {
+   "fama": 0.0444,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabotage": {
+   "fama": 0.0444,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Black Alien": {
+   "fama": 0.0653,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gabriel o Pensador": {
+   "fama": 0.0627,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Raul Seixas": {
+   "fama": 0.0596,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sérgio Capparelli": {
+   "fama": 0.0441,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Roseana Murray": {
+   "fama": 0.044,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elias José": {
+   "fama": 0.0696,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bartolomeu Campos de Queirós": {
+   "fama": 0.0575,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ricardo Azevedo": {
+   "fama": 0.0663,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vitor Ramil": {
+   "fama": 0.0598,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pedro Gabriel": {
+   "fama": 0.0644,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "João Doederlein": {
+   "fama": 0.0692,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ruy Espinheira Filho": {
+   "fama": 0.0607,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Antonio Brasileiro": {
+   "fama": 0.0673,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Florisvaldo Mattos": {
+   "fama": 0.0435,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sosígenes Costa": {
+   "fama": 0.0671,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Godofredo Filho": {
+   "fama": 0.0692,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "José Inácio Vieira de Melo": {
+   "fama": 0.0644,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Francisco Carvalho": {
+   "fama": 0.066,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Artur Eduardo Benevides": {
+   "fama": 0.0579,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alcides Pinto": {
+   "fama": 0.0602,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juvenal Galeno": {
+   "fama": 0.055,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Padre Antônio Tomás": {
+   "fama": 0.063,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jáder de Carvalho": {
+   "fama": 0.0651,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "H. Dobal": {
+   "fama": 0.0429,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Da Costa e Silva": {
+   "fama": 0.0672,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Max Martins": {
+   "fama": 0.0642,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bruno de Menezes": {
+   "fama": 0.0644,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "João de Jesus Paes Loureiro": {
+   "fama": 0.0649,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ruy Barata": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luiz Bacellar": {
+   "fama": 0.0424,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elson Farias": {
+   "fama": 0.0592,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aníbal Beça": {
+   "fama": 0.0527,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jorge Tufic": {
+   "fama": 0.0649,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nauro Machado": {
+   "fama": 0.0551,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "José Chagas": {
+   "fama": 0.0635,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandeira Tribuzi": {
+   "fama": 0.0627,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Odylo Costa Filho": {
+   "fama": 0.0669,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maranhão Sobrinho": {
+   "fama": 0.0609,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sérgio de Castro Pinto": {
+   "fama": 0.0625,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marcos Accioly": {
+   "fama": 0.064,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jomar Muniz de Britto": {
+   "fama": 0.0418,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alberto da Cunha Melo": {
+   "fama": 0.062,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "César Leal": {
+   "fama": 0.0606,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lucila Nogueira": {
+   "fama": 0.0604,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Deborah Brennand": {
+   "fama": 0.0416,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ângelo Monteiro": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Miró da Muribeca": {
+   "fama": 0.0511,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cida Pedrosa": {
+   "fama": 0.0414,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arriete Vilela": {
+   "fama": 0.0566,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gilberto Mendonça Teles": {
+   "fama": 0.0576,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Leo Lynce": {
+   "fama": 0.0412,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "José Godoy Garcia": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Afonso Félix de Sousa": {
+   "fama": 0.0597,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Heleno Godoy": {
+   "fama": 0.0535,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Silva Freire": {
+   "fama": 0.0627,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lobivar Matos": {
+   "fama": 0.0409,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dom Aquino Corrêa": {
+   "fama": 0.0635,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pedro Casaldáliga": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Emmanuel Marinho": {
+   "fama": 0.0601,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Douglas Diegues": {
+   "fama": 0.0407,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paulo Bomfim": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Donizete Galvão": {
+   "fama": 0.0576,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paulo Franchetti": {
+   "fama": 0.0702,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fernando Paixão": {
+   "fama": 0.0625,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dirceu Villa": {
+   "fama": 0.0404,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tarso de Melo": {
+   "fama": 0.0579,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Eduardo Sterzi": {
+   "fama": 0.0403,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Antonio Carlos Secchin": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ivan Junqueira": {
+   "fama": 0.0547,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marco Lucchesi": {
+   "fama": 0.062,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alexei Bueno": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Geraldo Carneiro": {
+   "fama": 0.0587,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Afonso Henriques Neto": {
+   "fama": 0.0586,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bernardo Vilhena": {
+   "fama": 0.0569,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Isabel Câmara": {
+   "fama": 0.0618,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Viviane Mosé": {
+   "fama": 0.0398,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sérgio Blank": {
+   "fama": 0.0397,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Waldo Motta": {
+   "fama": 0.0397,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carlos Nejar": {
+   "fama": 0.0644,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Armindo Trevisan": {
+   "fama": 0.0396,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fabrício Carpinejar": {
+   "fama": 0.0554,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Martha Medeiros": {
+   "fama": 0.058,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ronald Augusto": {
+   "fama": 0.0601,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lila Ripoll": {
+   "fama": 0.0516,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Augusto Meyer": {
+   "fama": 0.0599,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Helena Kolody": {
+   "fama": 0.059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rodrigo Garcia Lopes": {
+   "fama": 0.0605,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Josely Vianna Baptista": {
+   "fama": 0.0555,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Péricles Prade": {
+   "fama": 0.0511,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lucão": {
+   "fama": 0.0428,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Igor Pires": {
+   "fama": 0.0539,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clarice Freire": {
+   "fama": 0.0531,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zack Magiezi": {
+   "fama": 0.0343,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mar Becker": {
+   "fama": 0.0595,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Natasha Félix": {
+   "fama": 0.0506,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Stephanie Borges": {
+   "fama": 0.0341,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Millôr Fernandes": {
+   "fama": 0.0341,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   }

@@ -1,24 +1,24 @@
 # titulo: Frutas
 # pergunta: Cite uma fruta
 # formato: uma resposta por linha; apelidos separados por " | "
-Banana
-Maçã
-Laranja
+Banana | banana-prata | banana-nanica | banana-maçã | banana-da-terra | banana-ouro
+Maçã | maçã gala | maçã fuji | maçã verde
+Laranja | laranja-pera | laranja-lima | laranja-bahia | laranja-da-terra
 Morango
-Uva
-Manga
-Abacaxi
+Uva | uva-itália | uva-rubi | uva-niágara | uva-passa
+Manga | manga-palmer | manga-rosa | manga-espada | manga-tommy
+Abacaxi | ananás
 Melancia
-Mamão | papaia
-Pera
-Limão
+Mamão | papaia | mamão formosa | mamão papaya
+Pera | pera-d'água | pera williams
+Limão | limão-taiti | limão-siciliano | limão-cravo | limão-galego
 Abacate
 Goiaba
 Maracujá
 Kiwi
-Coco
-Melão
-Tangerina | mexerica | bergamota | mimosa | poncã | ponkan
+Coco | coco-verde | coco-da-baía
+Melão | melão-cantalupo | melão-amarelo | melão-gália
+Tangerina | mexerica | bergamota | mimosa | poncã | ponkan | murcote | laranja-cravo
 Pêssego
 Caju
 Acerola
@@ -27,27 +27,27 @@ Ameixa
 Cereja
 Açaí
 Framboesa
-Amora
+Amora | amora-preta
 Mirtilo | blueberry
 Figo
 Caqui
 Graviola
 Pitanga
-Jaca
+Jaca | jackfruit
 Carambola
 Romã
 Cupuaçu
-Pitaya | fruta-do-dragão
-Lichia
+Pitaya | fruta-do-dragão | pitaia
+Lichia | litchi
 Tamarindo
-Pinha | fruta-do-conde | ata
+Pinha | fruta-do-conde | ata | anona
 Siriguela | seriguela | ciriguela
-Cajá | taperebá
-Umbu
+Cajá | taperebá | cajá-mirim
+Umbu | imbu
 Nectarina
 Damasco
 Lima
-Toranja | grapefruit
+Toranja | grapefruit | pomelo
 Tâmara
 Pequi
 Buriti
@@ -55,7 +55,7 @@ Bacuri
 Mangaba
 Cambuci
 Jenipapo
-Sapoti
+Sapoti | sapodilha
 Cabeludinha
 Uvaia
 Grumixama
@@ -64,20 +64,223 @@ Pupunha
 Bacaba
 Murici
 Marmelo
-Nêspera | ameixa-amarela
+Nêspera | ameixa-amarela | magnória
 Mangostão
 Rambutão | rambutan
 Fruta-pão
 Kinkan
-Physalis | fisális
+Physalis | fisális | camapu
 Groselha
 Lima-da-pérsia
-Jambo
+Jambo | jambo-vermelho | jambo-rosa
 Abiu
 Araçá
 Durião | durian
 Feijoa | goiaba-serrana
-Maná-cubiu
+Maná-cubiu | cubiu
 Cacau
 Tucumã
 Atemoia
+Cranberry | oxicoco
+Groselha-negra | cassis
+Uva-espim | barberry
+Ameixa-preta | ameixa seca
+Azeitona
+Tomate
+Pimentão
+Abóbora
+Pepino
+Berinjela
+Castanha-do-pará | castanha-do-brasil
+Castanha de caju
+Noz
+Avelã
+Amêndoa
+Pistache
+Macadâmia
+Pinhão
+Cereja-do-rio-grande
+Jabuticaba-sabará
+Laranja-kinkan | kumquat
+Umbu-cajá | cajá-umbu
+Cajarana
+Caju-do-cerrado | cajuí
+Araticum | marolo
+Biribá
+Jatobá
+Baru
+Jambolão | azeitona-preta | jamelão
+Sapota
+Abricó | abricó-do-pará
+Bacupari
+Patauá
+Juçara
+Ingá
+Longan | olho-de-dragão
+Gabiroba | guabiroba
+Guabiju
+Ubajaí
+Sete-capotes
+Cereja-do-cerrado
+Pitomba
+Mangaba-do-cerrado
+Puçá
+Mama-cadela
+Jaracatiá
+Bacuripari
+Cupuí
+Uxi
+Piquiá | Pequiá
+Camu-camu
+Araçá-boi
+Mapati | uva-da-amazônia
+Mari-mari
+Ingá-cipó
+Sorva
+Murumuru
+Inajá
+Babaçu
+Licuri | ouricuri | Uricuri
+Butiá
+Jerivá
+Macaúba | bocaiuva
+Guariroba
+Jaca-mole
+Jaca-dura
+Fruta-de-lobo | lobeira
+Fruta-do-sabiá
+Juá
+Mandacaru | fruta do mandacaru
+Xique-xique
+Palma | figo-da-índia | figo-de-pita
+Quiabento
+Facheiro
+Maracujá-doce
+Maracujá-do-mato
+Maracujá-roxo
+Granadilla
+Tumbo
+Banana-de-macaco
+Cherimoia | chirimoia
+Fruta-do-conde-africana
+Ameixa-japonesa
+Ameixa-da-baía
+Ameixa-do-pará
+Pera-asiática | nashi
+Pera-do-cerrado
+Mangaba-de-cachorro
+Uva-japonesa
+Uva-do-mato
+Uva-de-rei
+Cereja-do-mato
+Pitanga-preta
+Jabuticaba-branca
+Grumixama-branca
+Araçá-amarelo
+Araçá-pera
+Araçá-piranga
+Cambucá
+Cambuí
+Guapuritis
+Ubá
+Sapucaia
+Castanha-de-sapucaia
+Bacurizinho
+Oiti
+Oiticoró
+Goiaba-do-campo
+Goiabinha
+Feijoa-do-mato
+Tâmara-do-deserto
+Kiwano | pepino-africano
+Carambola-amarela
+Bilimbi | biri-biri
+Salak | fruta-cobra
+Langsat
+Duku
+Santol
+Marang
+Chempedak
+Pulasan
+Mamey | sapote-mamey
+Sapote-negro
+Sapote-branco
+Canistel | gema-de-ovo
+Lúcuma
+Pepino-doce | pepino-melão | pepino-dulce
+Naranjilla | lulo
+Tamarillo | tomate-de-árvore | tomate-francês
+Babaco
+Pitaia-amarela
+Pitaia-vermelha
+Graviola-do-norte
+Mirtilo-vermelho
+Mirtilo-gigante
+Framboesa-negra
+Framboesa-amarela
+Amora-branca
+Amora-silvestre
+Boysenberry
+Loganberry
+Marionberry
+Goji | goji berry
+Aronia
+Sabugueiro
+Haskap
+Sea buckthorn | espinheiro-marítimo
+Medronho
+Azarole
+Cornalina | corniso
+Néspera-europeia
+Sorveira
+Pera-espinhosa
+Bergamota-europeia | bergamota de cheiro
+Cidra
+Limão-caviar | finger lime
+Yuzu
+Sudachi
+Calamansi
+Limeta
+Laranja-azeda
+Laranja-sanguínea | laranja moro
+Clementina
+Tangerina-satsuma | satsuma
+Tangelo
+Pomelo chinês
+Ugli
+Kabosu
+Dekopon
+Mão-de-buda
+Kinkan-redondo
+Abacate-manteiga | abacate avocado | avocado
+Coco-de-catarro
+Coco-babão
+Coco-indaiá
+Pequi-anão
+Buritirana
+Açaí-solteiro
+Piaçava
+Tucum
+Carnaúba
+Juçara-palmito
+Mangaba-de-praia
+Caju-gigante
+Cajueiro-anão
+Jabuticaba-de-cabinho
+Cereja-de-barbados
+Pitangatuba
+Grumixameira
+Murta
+Guaraná
+Bacabinha
+Ingá-de-metro
+Ingá-feijão
+Fruta-de-tatu
+Fruta-de-pombo
+Fruta-de-morcego
+Uva-de-praia
+Guajiru | abajeru
+Pitanga-do-cerrado
+Mangava
+Cagaiteira
+Sapoti-do-mato

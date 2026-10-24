@@ -64,7 +64,7 @@ LOTE = 60  # respostas por pedido ao LLM (listas grandes estouram a resposta)
 # "revisao" é o peso escrito antes em dados/ajustes/<cat>.csv (uma revisão feita de uma vez só);
 # vira mais um palpite, não a palavra final. "visitas" (Wikipédia pt) e "texto" (ICF, frequência
 # em textos) medem o quanto se lê: entram pouco.
-PESOS = {"lembranca": 0.55, "conhecem": 0.20, "revisao": 0.15, "visitas": 0.07, "texto": 0.03}
+PESOS = {"lembranca": 0.65, "conhecem": 0.10, "revisao": 0.15, "visitas": 0.07, "texto": 0.03}
 TENDENCIA_MAX = 0.05  # quanto a tendência mexe na fama (0 a 1), para cima ou para baixo
 FAIXAS = [(60, "rara"), (35, "incomum"), (18, "comum"), (0, "óbvia")]  # jogo/cena.js
 
@@ -203,13 +203,15 @@ def combinar(cat: dict, llm: dict, base: pontuar.BaseICF) -> dict:
         visitas = (wikidata.get(nome) or {}).get("visitas_pt_12m")
         if isinstance(visitas, (int, float)):
             brutos["visitas"][nome] = math.log1p(visitas)
+    # Resposta sem estimativa de lembrança conta como "ninguém lembra" (0), e não como média:
+    # as listas cresceram com milhares de respostas nichadas, e elas não podem cair no meio.
+    # O LLM estima as conhecidas; o resto se ordena pelos outros sinais (peso manual, visitas, texto).
+    for sinal in ("lembranca", "conhecem"):
+        if brutos[sinal]:
+            for nome in respostas:
+                brutos[sinal].setdefault(nome, 0.0)
     pcts = {s: escala(v) for s, v in brutos.items() if len(v) >= len(respostas) / 2}
-    # Em listas enormes (680 astronautas) o LLM só estima os nomes que alguém conhece e o resto
-    # fica com um valor padrão. Aí a lembrança pesa na proporção do que foi estimado, e a
-    # cauda é ordenada pelos outros sinais (visitas, texto).
-    estimados = [i for i in llm.get("itens", []) if i.get("origem", "estimado") == "estimado"]
-    cobertura = len(estimados) / len(respostas) if respostas else 1.0
-    pesos = {s: PESOS[s] * (cobertura if s in ("lembranca", "conhecem") else 1.0) for s in PESOS}
+    pesos = PESOS
 
     titulos = {(wikidata.get(n) or {}).get("ptwiki") for n in respostas} - {None}
     series = visitas_por_mes(titulos)
@@ -244,7 +246,7 @@ def combinar(cat: dict, llm: dict, base: pontuar.BaseICF) -> dict:
         "sinais": sorted(pcts),
         "meses_de_visitas": [a.stem[3:] for a in meses_disponiveis()] if series else [],
         "pesos": {k: round(v, 3) for k, v in pesos.items() if k in pcts},
-        "cobertura_llm": round(cobertura, 3),
+        "estimadas_pelo_llm": len(itens),
         "respostas": linhas,
     }
 

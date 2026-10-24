@@ -4,8 +4,7 @@
  "sinais": [
   "conhecem",
   "lembranca",
-  "revisao",
-  "visitas"
+  "revisao"
  ],
  "meses_de_visitas": [
   "202609",
@@ -22,376 +21,3504 @@
   "202510"
  ],
  "pesos": {
-  "lembranca": 0.55,
-  "conhecem": 0.2,
-  "revisao": 0.15,
-  "visitas": 0.07
+  "lembranca": 0.65,
+  "conhecem": 0.1,
+  "revisao": 0.15
  },
- "cobertura_llm": 1.0,
+ "estimadas_pelo_llm": 52,
  "respostas": {
   "Sol": {
-   "fama": 0.9955,
+   "fama": 1.0,
    "lembranca_em_1000": 420.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 96946,
    "tendencia": 0.94
   },
   "Sírius": {
-   "fama": 0.7161,
+   "fama": 0.7234,
    "lembranca_em_1000": 60.0,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 28693,
    "tendencia": 0.78
   },
   "Canopus": {
-   "fama": 0.2215,
+   "fama": 0.2422,
    "lembranca_em_1000": 2.0,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 8848,
    "tendencia": 0.43
   },
   "Arcturus": {
-   "fama": 0.2355,
+   "fama": 0.197,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 5227,
    "tendencia": 1.37
   },
   "Vega": {
-   "fama": 0.3927,
+   "fama": 0.3675,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 6478,
    "tendencia": 1.1
   },
   "Capela": {
-   "fama": 0.231,
+   "fama": 0.2148,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 5559,
    "tendencia": 0.87
   },
   "Rigel": {
-   "fama": 0.3221,
+   "fama": 0.3143,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 4364,
    "tendencia": 0.79
   },
   "Prócion": {
-   "fama": 0.177,
+   "fama": 0.1793,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 1871,
    "tendencia": 0.72
   },
   "Betelgeuse": {
-   "fama": 0.6189,
+   "fama": 0.6435,
    "lembranca_em_1000": 40.0,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 20603,
    "tendencia": 0.63
   },
   "Achernar": {
-   "fama": 0.1255,
+   "fama": 0.1203,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 1687,
    "tendencia": 0.82
   },
   "Hadar": {
-   "fama": 0.097,
+   "fama": 0.075,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 1460,
    "tendencia": 1.2
   },
   "Altair": {
-   "fama": 0.3126,
+   "fama": 0.291,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 3494,
    "tendencia": 1.21
   },
   "Acrux": {
-   "fama": 0.1667,
+   "fama": 0.1547,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 3016,
    "tendencia": 1.02
   },
   "Aldebarã": {
-   "fama": 0.3452,
+   "fama": 0.3321,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 6915,
    "tendencia": 0.94
   },
   "Antares": {
-   "fama": 0.3765,
+   "fama": 0.3594,
    "lembranca_em_1000": 5.0,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 15316,
    "tendencia": 0.92
   },
   "Espiga": {
-   "fama": 0.1664,
+   "fama": 0.1239,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 2218,
    "tendencia": 1.71
   },
   "Pólux": {
-   "fama": 0.2066,
+   "fama": 0.1849,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 2773,
    "tendencia": 1.02
   },
   "Fomalhaut": {
-   "fama": 0.1222,
+   "fama": 0.101,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 1572,
    "tendencia": 1.13
   },
   "Deneb": {
-   "fama": 0.1946,
+   "fama": 0.1882,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 2063,
    "tendencia": 0.84
   },
   "Mimosa": {
-   "fama": 0.1521,
+   "fama": 0.1327,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 1057,
    "tendencia": 1.16
   },
   "Régulo": {
-   "fama": 0.145,
+   "fama": 0.1134,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 3462,
    "tendencia": 1.21
   },
   "Adhara": {
-   "fama": 0.0711,
+   "fama": 0.0613,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1226,
    "tendencia": 0.96
   },
   "Castor": {
-   "fama": 0.2051,
+   "fama": 0.1849,
    "lembranca_em_1000": 1.0,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 1141,
    "tendencia": 1.12
   },
   "Shaula": {
-   "fama": 0.0854,
+   "fama": 0.0613,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1864,
    "tendencia": 1.23
   },
   "Gacrux": {
-   "fama": 0.0762,
+   "fama": 0.0613,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1265,
    "tendencia": 1.07
   },
   "Bellatrix": {
-   "fama": 0.2595,
+   "fama": 0.2575,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 3004,
    "tendencia": 0.82
   },
   "Alnilam": {
-   "fama": 0.2559,
+   "fama": 0.2787,
    "lembranca_em_1000": 4.0,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 2348,
    "tendencia": 0.63
   },
   "Alnitak": {
-   "fama": 0.2298,
+   "fama": 0.2486,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 22.0,
    "visitas_pt_12m": 2242,
    "tendencia": 0.65
   },
   "Mintaka": {
-   "fama": 0.2345,
+   "fama": 0.2486,
    "lembranca_em_1000": 3.0,
    "conhecem_pct": 22.0,
    "visitas_pt_12m": 2964,
    "tendencia": 0.7
   },
   "Estrela Polar": {
-   "fama": 0.7759,
+   "fama": 0.7792,
    "lembranca_em_1000": 80.0,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 4001,
    "tendencia": 0.85
   },
   "Alfa Centauri": {
-   "fama": 0.7194,
+   "fama": 0.6984,
    "lembranca_em_1000": 50.0,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 17467,
    "tendencia": 1.2
   },
   "Próxima Centauri": {
-   "fama": 0.6382,
+   "fama": 0.6068,
    "lembranca_em_1000": 30.0,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 17543,
    "tendencia": 1.32
   },
   "Mira": {
-   "fama": 0.1017,
+   "fama": 0.1045,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 334,
    "tendencia": 0.78
   },
   "Algol": {
-   "fama": 0.1065,
+   "fama": 0.1239,
    "lembranca_em_1000": 0.5,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 239,
    "tendencia": 0.56
   },
   "Albireo": {
-   "fama": 0.0943,
+   "fama": 0.0755,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 419,
    "tendencia": 1.39
   },
   "Alcor": {
-   "fama": 0.0585,
+   "fama": 0.0892,
    "lembranca_em_1000": 0.2,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 0,
    "tendencia": null
   },
   "Mizar": {
-   "fama": 0.1038,
+   "fama": 0.101,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 312,
    "tendencia": 0.93
   },
   "Dubhe": {
-   "fama": 0.0902,
+   "fama": 0.0846,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 270,
    "tendencia": 1.14
   },
   "Merak": {
-   "fama": 0.0631,
+   "fama": 0.0613,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 241,
    "tendencia": 1.01
   },
   "Alioth": {
-   "fama": 0.0451,
+   "fama": 0.0471,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 250,
    "tendencia": 0.94
   },
   "Alkaid": {
-   "fama": 0.0459,
+   "fama": 0.0471,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 403,
    "tendencia": 0.89
   },
   "Denebola": {
-   "fama": 0.0641,
+   "fama": 0.0613,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 408,
    "tendencia": 0.95
   },
   "Rasalhague": {
-   "fama": 0.0394,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 298,
    "tendencia": 0.99
   },
   "Sadr": {
-   "fama": 0.0464,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 212,
    "tendencia": 1.3
   },
   "Enif": {
-   "fama": 0.0478,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 311,
    "tendencia": 1.24
   },
   "Markab": {
-   "fama": 0.0291,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 276,
    "tendencia": 0.75
   },
   "Alphard": {
-   "fama": 0.0432,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 486,
    "tendencia": 1.01
   },
   "Mirfak": {
-   "fama": 0.0296,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 251,
    "tendencia": 0.77
   },
   "Menkar": {
-   "fama": 0.0402,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.05,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 163,
    "tendencia": 1.14
   },
   "Thuban": {
-   "fama": 0.0829,
+   "fama": 0.0613,
    "lembranca_em_1000": 0.1,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1487,
    "tendencia": 1.21
   },
   "Eta Carinae": {
-   "fama": 0.0827,
+   "fama": 0.0691,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 2916,
    "tendencia": 0.95
   },
   "Estrela de Barnard": {
-   "fama": 0.0997,
+   "fama": 0.0779,
    "lembranca_em_1000": 0.3,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 2694,
    "tendencia": 1.11
+  },
+  "Alpheratz": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caph": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Algenib": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Groombridge 34": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Citadelle": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ankaa": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Felixvarela": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fulu": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Schedar": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Diphda": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cocibolca": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "96 G. Psc": {
+   "fama": 0.0053,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Achird": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Van Maanen's Star": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Castula": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cih": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nenque": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wurren": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mirach": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Emiw": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Revati": {
+   "fama": 0.0106,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Revati B": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Adhil": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bélénos": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ruchbah": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alpherg": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Titawin": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nembus": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "p Eridani": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Torcular": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Baten Kaitos": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mothallah": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mesarthim": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Segin": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sheratan": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alrescha": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Almach": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hamal": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "268 G. Cet": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Buna": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kaffaljidhma": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Koeia": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lilii Borea": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nushagak": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bharani": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Miram": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Angetenar": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Azha": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Acamar": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ayeyarwady": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Misam": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Botein": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dalim": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zibal": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "82 G. Eri": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Intan": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ran": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tupi": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rana": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atik": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Celaeno": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Electra": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taygeta": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maia": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Asterope": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Merope": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alcyone": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlas": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pleione": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zaurak": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Menkib": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Beid": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Keid": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prima Hyadum": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Secunda Hyadum": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Beemim": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ain": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chamukuy": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hoggar": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Theemin": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sceptrum": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tabit": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mouhoun": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hassaleh": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Almaaz": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saclateni": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Haedus": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cursa": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mago": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kapteyn's Star": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elnath": {
+   "fama": 0.0479,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nihal": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arneb": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Meissa": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hatysa": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bubup": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tianguan": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Phact": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saiph": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wazn": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Menkalinan": {
+   "fama": 0.0461,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mahasim": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elkurud": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Amadioha": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Propus": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Red Rectangle": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Furud": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mirzam": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tejat": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lucilinburhuc": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lusitânia": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ross 614": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alhena": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nosaxa": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mebsuta": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alzirr": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nervia": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Citalá": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nganurganity": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Muliphein": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mekbuda": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wezen": {
+   "fama": 0.0461,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wasat": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aludra": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gomeisa": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luyten's Star": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jishui": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ceibo": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tapecue": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Azmidi": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Naos": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tureis": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tegmine": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tarf": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Násti": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Piautos": {
+   "fama": 0.0018,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Avior": {
+   "fama": 0.0461,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alsciaukat": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Muscida": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Minchir": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gakyid": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Meleph": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Asellus Borealis": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Asellus Australis": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alsephina": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ashlesha": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Copernicus": {
+   "fama": 0.0018,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Stribor": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Acubens": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Talitha": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ross 687": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alkaphrah": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Suhail": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nahn": {
+   "fama": 0.0106,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Miaplacidus": {
+   "fama": 0.0479,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aspidiske": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Markeb": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Intercrus": {
+   "fama": 0.0089,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alterf": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Illyrian": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kalausi": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ukdah": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Subra": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Añañuca": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ras Elased Australis": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Natasha": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zhang": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rasalas": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Felis": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bibhā": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Adhafera": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tania Borealis": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Algieba": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tania Australis": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Macondo": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Praecipua": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aiolos": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chalawan": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alkes": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lalande 21185": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dingolay": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zosma": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chertan": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hunahpú": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alula Borealis": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Shama": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giausar": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Formosa": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sagarmatha": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Noquisi": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uklun": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flegetonte": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taiyangshou": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ross 128": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zavijava": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aniara": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Groombridge 1830": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Phecda": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tonatiuh": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alchiba": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Imai": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Megrez": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gienah": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zaniah": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ginan": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tupã": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "3C 273": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Algorab": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Funi": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chara": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kraz": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porrima": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "La Superba": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tianyi": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gar": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taiyi": {
+   "fama": 0.0106,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Minelauva": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cor Caroli B": {
+   "fama": 0.0053,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cor Caroli": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vindemiatrix": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Diadem": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Matza": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dofida": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Liesma": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Heze": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Muphrid": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Menkent": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kang": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Syrma": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Xuange": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Khambalia": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elgafar": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Seginus": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Toliman": {
+   "fama": 0.0514,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Izar": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mönch": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Merga": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kochab": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zubenelgenubi": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arcalís": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Baekdu": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nekkar": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brachium": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zubeneschamali": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nikawiy": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pherkad": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alkalurops": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alkalurops B": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Edasich": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nusakan": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alphecca": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zubenelhakrabi": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Karaka": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Unukalhai": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gudja": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Iklil": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fang": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dschubba": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Acrab": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Acrab B": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marsic": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marsic B": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kamuy": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jabbah": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sharjah": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Yed Prior": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Yed Posterior": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hunor": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alniyat": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Athebyne": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cujam": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Timir": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kornephoros": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wolf 1061": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ogma": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marfik": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rosalíadecastro": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paikauhale": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atria": {
+   "fama": 0.0461,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Larawag": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Xamidimura": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pipirima": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mahsati": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rapeto": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aldhibah": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabik": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rasalgethi": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sarin": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guniibuu": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Inquill": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rastaban": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maasym": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lesath": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Yildun": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sargas": {
+   "fama": 0.0461,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dziban": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dziban B": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cebalrai": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alruba": {
+   "fama": 0.0053,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cervantes": {
+   "fama": 0.0106,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fuyue": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grumium": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Eltanin": {
+   "fama": 0.0426,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barnard's Star": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pincoya": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alnasl": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Polis": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kaus Media": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alasia": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kaus Australis": {
+   "fama": 0.0461,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fafnir": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kaus Borealis": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Struve 2398 A": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Struve 2398 B": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Xihe": {
+   "fama": 0.0018,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ross 154": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sheliak": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ainalrami": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nunki": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kaveh": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alya": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alya B": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sulafat": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ascella": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Okab": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Meridiana": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Albaldah": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Altais": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aladfar": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gumala": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Belel": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arkab Prior": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sika": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arkab Posterior": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rukbat": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Anser": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Albireo B": {
+   "fama": 0.0106,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uruk": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alsafi": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Campbell's Hydrogen Star": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sham": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fawaris": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tarazed": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Libertas": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alshain": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Terebellum": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cygnus X-1": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chechia": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Algedi": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alshat": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dabih": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Peacock": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aldulfin": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rotanev": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sualocin": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aljanah": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Albali": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Musica": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Polaris Australis": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Solaris": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kitalpha": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lacaille 8760": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alderamin": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alfirk": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sadalsuud": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bunda": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sāmaya": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nashira": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Azelfafage": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bosona": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Deneb Algedi": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aldhanab": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Itonda": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kurhah": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sadalmelik": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alnair": {
+   "fama": 0.0479,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Biham": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ancha": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sadachbia": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lionrock": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kruger 60": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Situla": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Homam": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tiaki": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Matar": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Babcock's star": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sadalbari": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Skat": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Helvetios": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Scheat": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fumalsamakah": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lacaille 9352": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ebla": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Danfeng": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Salm": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alkarab": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Veritate": {
+   "fama": 0.0106,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Poerava": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Errai": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uúba": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Axólotl": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Castor B": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kaewkosin": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maru": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ross 686": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wolf 359": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alula Australis": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alula Australis B": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Graffias": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alrakis": {
+   "fama": 0.0053,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guniibuu B": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Onkaria": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "EZ Aqr": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ross 248": {
+   "fama": 0.0,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tau Ceti": {
+   "fama": 0.0585,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Epsilon Eridani": {
+   "fama": 0.0514,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "VY Canis Majoris": {
+   "fama": 0.055,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "UY Scuti": {
+   "fama": 0.0621,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gliese 581": {
+   "fama": 0.0408,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "TRAPPIST-1": {
+   "fama": 0.0514,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estrela de Tabby": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estrela de Kapteyn": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estrela de Van Maanen": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "R136a1": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Stephenson 2-18": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estrela de Przybylski": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Matusalém": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Icarus": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Earendel": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alfa Centauri A": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alfa Centauri B": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luyten": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gliese 1214": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kepler-452": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kepler-186": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "51 Pegasi": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rho Cassiopeiae": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mu Cephei": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pistol": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Delta Scuti": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "RR Lyrae": {
+   "fama": 0.023,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "T Tauri": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "SS Cygni": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sakurai": {
+   "fama": 0.0124,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wolf-Rayet 104": {
+   "fama": 0.016,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "P Cygni": {
+   "fama": 0.0195,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pulsar do Caranguejo": {
+   "fama": 0.0301,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
   }
  }
 }
