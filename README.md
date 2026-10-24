@@ -106,6 +106,16 @@ Cabeleira de Berenice,,1
 2. Rode `python3 scripts/pontuar.py minha-categoria`.
 3. Abra `dados/pesos/revisao/minha-categoria.csv`, corrija o que estiver estranho em `dados/ajustes/`, e rode de novo.
 
+## Fila do modo aberto (respostas que a lista não conhecia)
+
+Nas categorias abertas, resposta fora da lista não é erro: vai para uma fila, e a fila é julgada em lote, sem LLM na hora e sem custo.
+
+1. Ponha o que os jogadores digitaram em `dados/fila/minha-categoria.csv` (colunas `resposta,contagem`).
+2. `python3 scripts/fila.py pedido minha-categoria` tira o que a lista já casa, o lixo e o já recusado, e grava o pedido em `dados/fila/pedidos/minha-categoria.md`.
+3. Peça ao Claude, aqui no projeto, para julgar esse pedido. Ele devolve um JSON.
+4. `python3 scripts/fila.py aplicar minha-categoria vereditos.json` põe as aceitas na lista (resposta nova ou apelido, com peso em `dados/ajustes/`), as recusadas em `dados/recusadas/` e as duvidosas em `dados/fila/revisar/`.
+5. Rode `python3 scripts/pontuar.py`.
+
 ## Créditos
 
 Base de palavras: [fserb/pt-br](https://github.com/fserb/pt-br), de Fernando Serboncini, licença MIT.

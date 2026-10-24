@@ -4,13 +4,15 @@
  "pergunta": "Cite um planeta ou planeta anão do Sistema Solar",
  "respostas": [
   {
-   "resposta": "Terra",
-   "apelidos": [],
+   "resposta": "Júpiter",
+   "apelidos": [
+    "Jupiter"
+   ],
    "sem_dado": false,
-   "icf": 8.262,
-   "ajustado": false,
-   "percentil": 0.0,
-   "peso": 0.072,
+   "icf": 12.314,
+   "ajustado": true,
+   "percentil": 0.188,
+   "peso": 0.04,
    "pontos": 1
   },
   {
@@ -18,32 +20,30 @@
    "apelidos": [],
    "sem_dado": false,
    "icf": 11.023,
-   "ajustado": false,
+   "ajustado": true,
    "percentil": 0.062,
-   "peso": 0.154,
-   "pontos": 2
+   "peso": 0.01,
+   "pontos": 1
   },
   {
-   "resposta": "Mercúrio",
+   "resposta": "Saturno",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.12,
-   "ajustado": false,
-   "percentil": 0.125,
-   "peso": 0.213,
-   "pontos": 5
+   "icf": 12.417,
+   "ajustado": true,
+   "percentil": 0.312,
+   "peso": 0.05,
+   "pontos": 1
   },
   {
-   "resposta": "Júpiter",
-   "apelidos": [
-    "Jupiter"
-   ],
+   "resposta": "Terra",
+   "apelidos": [],
    "sem_dado": false,
-   "icf": 12.314,
-   "ajustado": false,
-   "percentil": 0.188,
-   "peso": 0.26,
-   "pontos": 7
+   "icf": 8.262,
+   "ajustado": true,
+   "percentil": 0.0,
+   "peso": 0.01,
+   "pontos": 1
   },
   {
    "resposta": "Vênus",
@@ -52,20 +52,20 @@
    ],
    "sem_dado": false,
    "icf": 12.375,
-   "ajustado": false,
+   "ajustado": true,
    "percentil": 0.25,
-   "peso": 0.304,
-   "pontos": 9
+   "peso": 0.09,
+   "pontos": 1
   },
   {
-   "resposta": "Saturno",
+   "resposta": "Mercúrio",
    "apelidos": [],
    "sem_dado": false,
-   "icf": 12.417,
-   "ajustado": false,
-   "percentil": 0.312,
-   "peso": 0.349,
-   "pontos": 12
+   "icf": 12.12,
+   "ajustado": true,
+   "percentil": 0.125,
+   "peso": 0.13,
+   "pontos": 2
   },
   {
    "resposta": "Plutão",
@@ -74,100 +74,40 @@
    ],
    "sem_dado": false,
    "icf": 12.98,
-   "ajustado": false,
+   "ajustado": true,
    "percentil": 0.375,
-   "peso": 0.4,
-   "pontos": 16
-  },
-  {
-   "resposta": "Urano",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.214,
-   "ajustado": false,
-   "percentil": 0.438,
-   "peso": 0.447,
-   "pontos": 20
+   "peso": 0.18,
+   "pontos": 3
   },
   {
    "resposta": "Netuno",
    "apelidos": [],
    "sem_dado": false,
    "icf": 13.264,
-   "ajustado": false,
+   "ajustado": true,
    "percentil": 0.5,
-   "peso": 0.491,
-   "pontos": 24
+   "peso": 0.22,
+   "pontos": 5
+  },
+  {
+   "resposta": "Urano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.214,
+   "ajustado": true,
+   "percentil": 0.438,
+   "peso": 0.24,
+   "pontos": 6
   },
   {
    "resposta": "Ceres",
    "apelidos": [],
    "sem_dado": false,
    "icf": 13.576,
-   "ajustado": false,
+   "ajustado": true,
    "percentil": 0.562,
-   "peso": 0.54,
-   "pontos": 29
-  },
-  {
-   "resposta": "Gonggong",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": false,
-   "percentil": 0.812,
-   "peso": 0.803,
-   "pontos": 64
-  },
-  {
-   "resposta": "Haumea",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": false,
-   "percentil": 0.812,
-   "peso": 0.803,
-   "pontos": 64
-  },
-  {
-   "resposta": "Makemake",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": false,
-   "percentil": 0.812,
-   "peso": 0.803,
-   "pontos": 64
-  },
-  {
-   "resposta": "Orcus",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": false,
-   "percentil": 0.812,
-   "peso": 0.803,
-   "pontos": 64
-  },
-  {
-   "resposta": "Quaoar",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": false,
-   "percentil": 0.812,
-   "peso": 0.803,
-   "pontos": 64
-  },
-  {
-   "resposta": "Sedna",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": false,
-   "percentil": 0.812,
-   "peso": 0.803,
-   "pontos": 64
+   "peso": 0.65,
+   "pontos": 42
   },
   {
    "resposta": "Éris",
@@ -176,10 +116,70 @@
    ],
    "sem_dado": true,
    "icf": 20.0,
-   "ajustado": false,
+   "ajustado": true,
    "percentil": 0.812,
-   "peso": 0.803,
-   "pontos": 64
+   "peso": 0.72,
+   "pontos": 52
+  },
+  {
+   "resposta": "Haumea",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.812,
+   "peso": 0.84,
+   "pontos": 71
+  },
+  {
+   "resposta": "Makemake",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.812,
+   "peso": 0.84,
+   "pontos": 71
+  },
+  {
+   "resposta": "Sedna",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.812,
+   "peso": 0.84,
+   "pontos": 71
+  },
+  {
+   "resposta": "Orcus",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.812,
+   "peso": 0.88,
+   "pontos": 77
+  },
+  {
+   "resposta": "Quaoar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.812,
+   "peso": 0.88,
+   "pontos": 77
+  },
+  {
+   "resposta": "Gonggong",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.812,
+   "peso": 0.92,
+   "pontos": 85
   }
  ],
  "supernova": "Éris"
