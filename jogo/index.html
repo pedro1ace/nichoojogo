@@ -39,13 +39,24 @@
       <h1 id="titulo" aria-label="Nicho"></h1>
       <p class="subtitulo">A INCURSÃO DIÁRIA</p>
       <p id="regras" class="regras"></p>
-      <p id="dia" class="regras"></p>
+      <div class="modo">
+        <span class="selo">BETA · TEMPORADA 1</span>
+        <canvas id="modo-mascote" width="28" height="16" aria-hidden="true"></canvas>
+        <span class="modo-nome">VIAGEM DO DIA</span>
+        <span id="modo-info" class="modo-info"></span>
+      </div>
       <button id="comecar" type="button" class="botao-grande">▼ INICIAR VIAGEM ▼</button>
-      <button type="button" class="botao-teste" data-zerar hidden>↺ zerar o dia (modo teste)</button>
-      <details class="como-jogar">
-        <summary>como jogar</summary>
+      <div class="rodape-inicio">
+        <span id="dia"></span>
+        <div class="botoes-inicio">
+          <button id="abrir-como" type="button" aria-expanded="false">COMO JOGAR ?</button>
+          <button type="button" data-zerar hidden>ZERAR O DIA ↺</button>
+        </div>
+      </div>
+      <details class="como-jogar" id="como-jogar">
+        <summary hidden>como jogar</summary>
         <p>Cada pergunta pede uma palavra de um tema. Você tem 25 segundos.
-           Respostas óbvias mal tiram o foguete do lugar; as nichadas levam você para o fundo do espaço.
+           Respostas óbvias levam o tardígrado só um pouquinho; as nichadas levam você para o fundo do espaço.
            Cada pergunta esconde uma <b>supernova</b>, a resposta secreta que vale o dobro.
            Errou a grafia? O jogo sugere a correção, e você confirma.</p>
       </details>

@@ -145,50 +145,103 @@ function criarNaves() {
     g.fillStyle = BRANCO[0]; g.fillRect(15, 4, 2, 2); // receptor no meio do prato
   }
 
-  // Pilares da Criação (90 x 130): três colunas de poeira escura com bordas acesas,
-  // sobre o brilho verde-dourado da nebulosa da Águia. Fica no fundo do jogo.
-  const pilares = tela(90, 130);
+  // Pilares da Criação: nebulosa difusa, no estilo da foto do Hubble. Colunas de poeira
+  // marrom-avermelhada com bordas acesas, gás azul-esverdeado em volta e estrelas.
+  // Sai suave (sem pixel duro) e meio transparente: a cena desenha bem grande, misturado ao fundo.
+  const pilares = tela(220, 280);
   {
+    const W = 220, H = 280;
     const g = pilares.getContext("2d");
-    const ruido = (x, y) => { const v = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453; return v - Math.floor(v); };
-    // brilho da nebulosa: dourado em cima, verde-azulado embaixo, com dithering suave
-    for (let y = 0; y < 130; y++) for (let x = 0; x < 90; x++) {
-      const dx = (x - 45) / 46, dy = (y - 58) / 72, d = dx * dx + dy * dy;
-      if (d > 1) continue;
-      const a = (1 - d) * (0.5 + 0.2 * Math.sin(x * 0.21 + y * 0.13));
-      if (a < BAYER[(y & 3) * 4 + (x & 3)] * 0.9) continue;
-      const v = y / 130;
-      g.globalAlpha = Math.min(0.55, a * 0.7);
-      g.fillStyle = v < 0.35 ? "#e8c27a" : v < 0.6 ? "#8fc7a0" : "#3f8f96";
-      g.fillRect(x, y, 1, 1);
+    const hash = (k, j) => { const v = Math.sin(k * 12.9898 + j * 78.233) * 43758.5453; return v - Math.floor(v); };
+    const mancha = (x, y, r, cor, a) => {
+      const gr = g.createRadialGradient(x, y, 0, x, y, r);
+      gr.addColorStop(0, `rgba(${cor}, ${a})`);
+      gr.addColorStop(1, `rgba(${cor}, 0)`);
+      g.fillStyle = gr;
+      g.fillRect(x - r, y - r, r * 2, r * 2);
+    };
+    // gás: manchas grandes e macias, verde-azulado no meio, dourado em cima e embaixo
+    for (let k = 0; k < 40; k++) {
+      const x = 20 + hash(k, 1) * (W - 40), y = 20 + hash(k, 2) * (H - 40);
+      const cor = y < H * 0.25 ? "205, 170, 110" : y > H * 0.8 ? "190, 150, 90" : hash(k, 3) < 0.5 ? "60, 140, 150" : "40, 100, 140";
+      mancha(x, y, 30 + hash(k, 4) * 50, cor, 0.1 + hash(k, 5) * 0.12);
     }
-    // colunas escuras: [x da base, largura na base, altura, inclinação]
-    const colunas = [[24, 24, 112, 0.12], [54, 17, 78, 0.05], [75, 13, 58, -0.05]];
-    for (const [bx, larg, alt, incl] of colunas) {
-      for (let k = 0; k < alt; k++) {
-        const y = 129 - k;
+    // contorno torto de cada coluna (de baixo para cima), como fumaça endurecida
+    const colunas = [[62, 54, 250, 0.17, 1], [130, 40, 196, 0.1, 2], [178, 30, 140, -0.05, 3]];
+    const caminho = (bx, larg, alt, incl, sem, dx = 0, dy = 0) => {
+      g.beginPath();
+      const pts = [];
+      for (let k = 0; k <= alt; k += 4) {
         const f = k / alt;
-        const w = Math.max(3, larg * (1 - f * 0.6) + Math.sin(k * 0.33) * 1.6);
-        const cx = bx + k * incl + Math.sin(k * 0.11) * 1.8;
-        for (let x = Math.floor(cx - w / 2); x <= cx + w / 2; x++) {
-          const rx = (x - cx) / (w / 2);
-          // borda esquerda e o topo acesos pela luz das estrelas; o miolo é poeira escura
-          const borda = rx < -0.78 || f > 0.95;
-          const tom = borda ? "#e8a060" : rx < -0.4 ? "#6a3420" : rx < 0.3 ? "#42200f" : "#2c140a";
-          g.globalAlpha = k < 6 ? 0.5 + k * 0.08 : 1;
-          g.fillStyle = !borda && ruido(x, y) < 0.1 ? "#1e0c06" : tom;
-          g.fillRect(x, y, 1, 1);
-        }
+        // a coluna da esquerda tem a "cabeça" mais larga no alto, como na foto
+        const cabeca = sem === 1 ? 1 + 0.4 * Math.max(0, 1 - Math.abs(f - 0.84) / 0.1) : 1;
+        const w = larg * 0.5 * (1 - f * 0.5) * cabeca * (f > 0.9 ? Math.sqrt(Math.max(0, (1 - f) / 0.1)) : 1);
+        const cx = bx + k * incl + Math.sin(k * 0.031 + sem) * 4 + Math.sin(k * 0.09 + sem * 2) * 2;
+        const irreg = (a) => 1 + Math.sin(k * 0.13 + a) * 0.1 + Math.sin(k * 0.37 + a * 2) * 0.07 + Math.sin(k * 0.83 + a * 3) * 0.05;
+        const wl = w * irreg(sem * 3), wr = w * irreg(sem * 5 + 1);
+        pts.push([cx - wl, H - k, cx + wr]);
       }
-      g.globalAlpha = 0.9; g.fillStyle = "#ffe4b0";
-      g.fillRect(Math.round(bx + alt * incl + Math.sin(alt * 0.11) * 1.8) - 1, 129 - alt, 3, 1);
+      g.moveTo(pts[0][0] + dx, pts[0][1] + dy);
+      for (const p of pts) g.lineTo(p[0] + dx, p[1] + dy);
+      for (let i = pts.length - 1; i >= 0; i--) g.lineTo(pts[i][2] + dx, pts[i][1] + dy);
+      g.closePath();
+    };
+    for (const [bx, larg, alt, incl, sem] of colunas) {
+      // brilho da borda (a luz das estrelas que bate de cima e da esquerda)
+      g.save();
+      g.shadowColor = "rgba(255, 220, 170, 0.8)";
+      g.shadowBlur = 12;
+      caminho(bx, larg, alt, incl, sem, -1.5, -2);
+      g.fillStyle = "rgba(240, 200, 150, 0.4)";
+      g.fill();
+      g.restore();
+      // corpo: poeira marrom-avermelhada, mais escura embaixo
+      caminho(bx, larg, alt, incl, sem);
+      const gr = g.createLinearGradient(0, H - alt, 0, H);
+      gr.addColorStop(0, "rgba(128, 80, 60, 0.85)");
+      gr.addColorStop(0.5, "rgba(92, 52, 40, 0.85)");
+      gr.addColorStop(1, "rgba(56, 30, 28, 0.8)");
+      g.fillStyle = gr;
+      g.fill();
+      // textura: manchas escuras e claras só dentro da coluna
+      g.save();
+      caminho(bx, larg, alt, incl, sem);
+      g.clip();
+      // luz vindo da esquerda: lado esquerdo mais claro, direito na sombra
+      const lado = g.createLinearGradient(bx - larg * 0.6, 0, bx + larg * 0.6 + alt * incl * 0.5, 0);
+      lado.addColorStop(0, "rgba(255, 205, 160, 0.2)");
+      lado.addColorStop(0.5, "rgba(0, 0, 0, 0)");
+      lado.addColorStop(1, "rgba(10, 4, 10, 0.5)");
+      g.fillStyle = lado;
+      g.fillRect(0, 0, W, H);
+      for (let k = 0; k < 26; k++) {
+        const yy = H - hash(k, sem) * alt, xx = bx + (H - yy) * incl + (hash(k, sem + 9) - 0.5) * larg;
+        mancha(xx, yy, 6 + hash(k, sem + 4) * 14, hash(k, sem + 7) < 0.6 ? "50, 24, 20" : "190, 130, 90", 0.35);
+      }
+      g.restore();
+      // ponta acesa
+      mancha(bx + alt * incl + Math.sin(alt * 0.045 + sem) * 6, H - alt + 6, 14, "255, 230, 190", 0.55);
     }
-    // estrelinhas na frente
-    g.globalAlpha = 1;
-    for (let i = 0; i < 26; i++) {
-      g.fillStyle = i % 4 ? "#ffffff" : "#ffd890";
-      g.fillRect(Math.floor(ruido(i, 3) * 90), Math.floor(ruido(i, 9) * 130), 1, 1);
+    // estrelas com brilho em cruz, como na foto
+    for (let k = 0; k < 22; k++) {
+      const x = hash(k, 21) * W, y = hash(k, 22) * H, r = 0.6 + hash(k, 23) * 1.4;
+      mancha(x, y, r * 4, "255, 236, 220", 0.9);
+      if (r > 1.5) { g.fillStyle = "rgba(255, 230, 220, 0.45)"; g.fillRect(x - r * 6, y - 0.4, r * 12, 0.8); g.fillRect(x - 0.4, y - r * 6, 0.8, r * 12); }
     }
+    // some nas bordas: nenhum recorte de "quadro"
+    g.globalCompositeOperation = "destination-in";
+    const fade = g.createRadialGradient(W / 2, H * 0.5, Math.min(W, H) * 0.28, W / 2, H * 0.5, Math.max(W, H) * 0.62);
+    fade.addColorStop(0, "rgba(0,0,0,1)");
+    fade.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = fade;
+    g.fillRect(0, 0, W, H);
+    // a base das colunas some aos poucos no gás, sem linha de corte
+    const base = g.createLinearGradient(0, H * 0.7, 0, H);
+    base.addColorStop(0, "rgba(0,0,0,1)");
+    base.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = base;
+    g.fillRect(0, 0, W, H);
+    g.globalCompositeOperation = "source-over";
   }
 
   return { satelite, iss, lua, planeta, cometa, voyager, pilares };

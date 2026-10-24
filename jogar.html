@@ -116,18 +116,45 @@ body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-hei
     4px 0 0 rgba(150, 80, 255, 0.9),
     0 6px 0 rgba(20, 10, 60, 0.6),
     0 0 28px rgba(255, 150, 80, 0.5);
-  animation: onda 3.2s ease-in-out infinite;
+  animation: onda 3.2s ease-in-out infinite, glitch 6s steps(1) infinite;
+}
+/* de vez em quando as camadas laranja e roxa "pulam" de lugar, como sinal com interferência */
+@keyframes glitch {
+  0%, 90%, 94%, 100% { text-shadow: -4px 0 0 rgba(255, 140, 40, 0.9), 4px 0 0 rgba(150, 80, 255, 0.9), 0 6px 0 rgba(20, 10, 60, 0.6), 0 0 28px rgba(255, 150, 80, 0.5); }
+  91% { text-shadow: -9px 1px 0 rgba(255, 140, 40, 0.95), 7px -1px 0 rgba(150, 80, 255, 0.95), 0 6px 0 rgba(20, 10, 60, 0.6), 0 0 28px rgba(255, 150, 80, 0.5); }
+  92.5% { text-shadow: 3px 0 0 rgba(255, 140, 40, 0.95), -6px 2px 0 rgba(150, 80, 255, 0.95), 0 6px 0 rgba(20, 10, 60, 0.6), 0 0 28px rgba(255, 150, 80, 0.5); }
 }
 @keyframes onda {
   0%, 100% { transform: translateY(0) rotate(0); }
   25% { transform: translateY(-7px) rotate(-2deg); }
   75% { transform: translateY(5px) rotate(2deg); }
 }
-.subtitulo { font-family: var(--corpo); font-weight: 700; font-size: clamp(13px, 2.4vw, 18px); letter-spacing: 0.5em; color: #7a3fe0; margin: 0 0 8px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); }
-.regras { font-family: var(--mono); font-size: 18px; letter-spacing: 0.06em; color: #0d1f5a; margin: 0; text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); }
-#dia { color: #0d1f5a; text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); }
-.como-jogar summary { color: #0d1f5a; text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); }
-.como-jogar { max-width: 34em; font-size: 16px; color: var(--suave); }
+.subtitulo { font-family: var(--corpo); font-weight: 700; font-size: clamp(13px, 2.4vw, 18px); letter-spacing: 0.6em; color: #ffb070; margin: 0 0 6px; text-shadow: 0 0 12px rgba(255, 140, 40, 0.6), 0 2px 0 rgba(20, 10, 60, 0.5); }
+.regras { font-family: var(--mono); font-size: 17px; letter-spacing: 0.06em; color: #dfe6ff; margin: 0 0 14px; text-shadow: 0 2px 0 rgba(0, 0, 30, 0.55), 0 0 10px rgba(0, 0, 30, 0.5); }
+/* cartão do modo de jogo, com o selo em cima */
+.modo {
+  position: relative; width: min(520px, 100%); box-sizing: border-box; display: flex; align-items: center; gap: 14px;
+  padding: 16px 18px 14px; background: rgba(var(--tinta), 0.85); box-shadow: inset 0 0 0 2px #b98cff, 0 0 16px rgba(150, 80, 255, 0.3);
+  font-family: var(--corpo); text-align: left;
+}
+.modo .selo {
+  position: absolute; top: -11px; left: 16px; padding: 3px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  background: #ff8c28; color: #1a0a00; box-shadow: 0 0 10px rgba(255, 140, 40, 0.6);
+}
+#modo-mascote { width: 56px; height: 32px; image-rendering: pixelated; filter: drop-shadow(0 0 6px rgba(255, 150, 70, 0.7)); }
+.modo-nome { flex: 1; font-weight: 700; font-size: 19px; letter-spacing: 0.24em; color: var(--texto); }
+.modo-info { font-size: 13px; color: var(--suave); white-space: nowrap; }
+.modo-info::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 6px; background: var(--ciano); box-shadow: 0 0 6px var(--ciano); vertical-align: middle; }
+.rodape-inicio { width: min(520px, 100%); display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+#dia { font-family: var(--mono); font-size: 13px; letter-spacing: 0.16em; color: #dfe6ff; text-shadow: 0 2px 0 rgba(0, 0, 30, 0.55); }
+.botoes-inicio { display: flex; gap: 8px; }
+.botoes-inicio button {
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; padding: 8px 12px; border: 0;
+  background: rgba(var(--tinta), 0.8); color: #dfe6ff; box-shadow: inset 0 0 0 1px rgba(200, 210, 255, 0.35);
+}
+.botoes-inicio button:hover { color: #fff; box-shadow: inset 0 0 0 1px #ffb070, 0 0 10px rgba(255, 140, 40, 0.35); }
+.como-jogar { position: absolute; z-index: 3; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(30em, calc(100% - 32px)); font-size: 16px; color: var(--suave); }
+.como-jogar p { box-shadow: inset 0 0 0 1px #b98cff, 0 0 24px rgba(0, 0, 20, 0.6); background: rgba(10, 8, 34, 0.96) !important; }
 .como-jogar summary { cursor: pointer; font-family: var(--mono); font-size: 18px; letter-spacing: 2px; }
 .como-jogar p { background: var(--painel); padding: 12px 14px; clip-path: var(--recorte); text-align: left; }
 
@@ -138,7 +165,9 @@ button { font: inherit; cursor: pointer; }
   background: var(--painel); color: var(--texto); border: 0;
   box-shadow: inset 0 0 0 3px var(--ciano), 0 0 18px rgba(95, 225, 255, 0.35);
 }
-.botao-grande:hover { background: #18124e; }
+.botao-grande { transition: box-shadow 0.2s, background 0.2s; }
+.botao-grande:hover { background: #18124e; box-shadow: inset 0 0 0 3px #ff8c28, 0 0 24px rgba(255, 140, 40, 0.55), 0 0 44px rgba(150, 80, 255, 0.3); }
+#inicio .botao-grande { width: min(520px, 100%); padding: 22px 28px; font-size: 21px; }
 button:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 3px; }
 
 /* ---------- pergunta ---------- */
@@ -324,6 +353,12 @@ pre {
 #inicio .botao-teste { background: var(--painel); }
 
 @media (max-width: 560px) {
+  .regras { font-size: 14px; }
+  .modo { gap: 10px; padding: 14px 12px 12px; }
+  .modo-nome { font-size: 15px; letter-spacing: 0.12em; }
+  .modo-info { font-size: 12px; }
+  #modo-mascote { width: 42px; height: 24px; }
+  #inicio .botao-grande { font-size: 17px; letter-spacing: 0.14em; padding: 18px 12px; }
   #hud { grid-template-columns: 1fr 1fr; padding-right: max(16px, env(safe-area-inset-right)); }
   .progresso { grid-column: 1 / -1; grid-row: 2; padding-top: 0; }
   .placa { min-width: 0; }
@@ -383,13 +418,24 @@ pre {
       <h1 id="titulo" aria-label="Nicho"></h1>
       <p class="subtitulo">A INCURSÃO DIÁRIA</p>
       <p id="regras" class="regras"></p>
-      <p id="dia" class="regras"></p>
+      <div class="modo">
+        <span class="selo">BETA · TEMPORADA 1</span>
+        <canvas id="modo-mascote" width="28" height="16" aria-hidden="true"></canvas>
+        <span class="modo-nome">VIAGEM DO DIA</span>
+        <span id="modo-info" class="modo-info"></span>
+      </div>
       <button id="comecar" type="button" class="botao-grande">▼ INICIAR VIAGEM ▼</button>
-      <button type="button" class="botao-teste" data-zerar hidden>↺ zerar o dia (modo teste)</button>
-      <details class="como-jogar">
-        <summary>como jogar</summary>
+      <div class="rodape-inicio">
+        <span id="dia"></span>
+        <div class="botoes-inicio">
+          <button id="abrir-como" type="button" aria-expanded="false">COMO JOGAR ?</button>
+          <button type="button" data-zerar hidden>ZERAR O DIA ↺</button>
+        </div>
+      </div>
+      <details class="como-jogar" id="como-jogar">
+        <summary hidden>como jogar</summary>
         <p>Cada pergunta pede uma palavra de um tema. Você tem 25 segundos.
-           Respostas óbvias mal tiram o foguete do lugar; as nichadas levam você para o fundo do espaço.
+           Respostas óbvias levam o tardígrado só um pouquinho; as nichadas levam você para o fundo do espaço.
            Cada pergunta esconde uma <b>supernova</b>, a resposta secreta que vale o dobro.
            Errou a grafia? O jogo sugere a correção, e você confirma.</p>
       </details>
@@ -567,6 +613,16 @@ const Som = (() => {
     sugestao: () => tom(880, 0.08, { tipo: "triangle", volume: 0.08, ate: 1175 }),
     tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
     contagem: (ultimo) => tom(ultimo ? 880 : 440, ultimo ? 0.25 : 0.12, { tipo: "triangle", volume: 0.1 }),
+    // início da viagem: um "fuuuum" que sobe e um brilho de três notas, ecoando no espaço
+    inicio() {
+      ruido(1.4, { volume: 0.06, de: 300, ate: 3200 });
+      tom(110, 1.2, { tipo: "sine", volume: 0.1, ate: 440 });
+      [523.25, 783.99, 1046.5].forEach((f, i) => {
+        tom(f, 0.9, { tipo: "triangle", volume: 0.07, atraso: 0.35 + i * 0.12 });
+        tom(f, 0.9, { tipo: "triangle", volume: 0.025, atraso: 0.65 + i * 0.12 }); // eco
+      });
+      tom(65.4, 2.2, { tipo: "sine", volume: 0.09, atraso: 0.9, ate: 55 }); // grave que segura a descida
+    },
     // descida: um "vuuum" mais longo e grave quanto mais rara a resposta
     descer(peso) {
       ruido(0.6 + peso * 1.8, { volume: 0.05 + peso * 0.12, de: 2400, ate: 120 + (1 - peso) * 400 });
@@ -840,50 +896,103 @@ function criarNaves() {
     g.fillStyle = BRANCO[0]; g.fillRect(15, 4, 2, 2); // receptor no meio do prato
   }
 
-  // Pilares da Criação (90 x 130): três colunas de poeira escura com bordas acesas,
-  // sobre o brilho verde-dourado da nebulosa da Águia. Fica no fundo do jogo.
-  const pilares = tela(90, 130);
+  // Pilares da Criação: nebulosa difusa, no estilo da foto do Hubble. Colunas de poeira
+  // marrom-avermelhada com bordas acesas, gás azul-esverdeado em volta e estrelas.
+  // Sai suave (sem pixel duro) e meio transparente: a cena desenha bem grande, misturado ao fundo.
+  const pilares = tela(220, 280);
   {
+    const W = 220, H = 280;
     const g = pilares.getContext("2d");
-    const ruido = (x, y) => { const v = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453; return v - Math.floor(v); };
-    // brilho da nebulosa: dourado em cima, verde-azulado embaixo, com dithering suave
-    for (let y = 0; y < 130; y++) for (let x = 0; x < 90; x++) {
-      const dx = (x - 45) / 46, dy = (y - 58) / 72, d = dx * dx + dy * dy;
-      if (d > 1) continue;
-      const a = (1 - d) * (0.5 + 0.2 * Math.sin(x * 0.21 + y * 0.13));
-      if (a < BAYER[(y & 3) * 4 + (x & 3)] * 0.9) continue;
-      const v = y / 130;
-      g.globalAlpha = Math.min(0.55, a * 0.7);
-      g.fillStyle = v < 0.35 ? "#e8c27a" : v < 0.6 ? "#8fc7a0" : "#3f8f96";
-      g.fillRect(x, y, 1, 1);
+    const hash = (k, j) => { const v = Math.sin(k * 12.9898 + j * 78.233) * 43758.5453; return v - Math.floor(v); };
+    const mancha = (x, y, r, cor, a) => {
+      const gr = g.createRadialGradient(x, y, 0, x, y, r);
+      gr.addColorStop(0, `rgba(${cor}, ${a})`);
+      gr.addColorStop(1, `rgba(${cor}, 0)`);
+      g.fillStyle = gr;
+      g.fillRect(x - r, y - r, r * 2, r * 2);
+    };
+    // gás: manchas grandes e macias, verde-azulado no meio, dourado em cima e embaixo
+    for (let k = 0; k < 40; k++) {
+      const x = 20 + hash(k, 1) * (W - 40), y = 20 + hash(k, 2) * (H - 40);
+      const cor = y < H * 0.25 ? "205, 170, 110" : y > H * 0.8 ? "190, 150, 90" : hash(k, 3) < 0.5 ? "60, 140, 150" : "40, 100, 140";
+      mancha(x, y, 30 + hash(k, 4) * 50, cor, 0.1 + hash(k, 5) * 0.12);
     }
-    // colunas escuras: [x da base, largura na base, altura, inclinação]
-    const colunas = [[24, 24, 112, 0.12], [54, 17, 78, 0.05], [75, 13, 58, -0.05]];
-    for (const [bx, larg, alt, incl] of colunas) {
-      for (let k = 0; k < alt; k++) {
-        const y = 129 - k;
+    // contorno torto de cada coluna (de baixo para cima), como fumaça endurecida
+    const colunas = [[62, 54, 250, 0.17, 1], [130, 40, 196, 0.1, 2], [178, 30, 140, -0.05, 3]];
+    const caminho = (bx, larg, alt, incl, sem, dx = 0, dy = 0) => {
+      g.beginPath();
+      const pts = [];
+      for (let k = 0; k <= alt; k += 4) {
         const f = k / alt;
-        const w = Math.max(3, larg * (1 - f * 0.6) + Math.sin(k * 0.33) * 1.6);
-        const cx = bx + k * incl + Math.sin(k * 0.11) * 1.8;
-        for (let x = Math.floor(cx - w / 2); x <= cx + w / 2; x++) {
-          const rx = (x - cx) / (w / 2);
-          // borda esquerda e o topo acesos pela luz das estrelas; o miolo é poeira escura
-          const borda = rx < -0.78 || f > 0.95;
-          const tom = borda ? "#e8a060" : rx < -0.4 ? "#6a3420" : rx < 0.3 ? "#42200f" : "#2c140a";
-          g.globalAlpha = k < 6 ? 0.5 + k * 0.08 : 1;
-          g.fillStyle = !borda && ruido(x, y) < 0.1 ? "#1e0c06" : tom;
-          g.fillRect(x, y, 1, 1);
-        }
+        // a coluna da esquerda tem a "cabeça" mais larga no alto, como na foto
+        const cabeca = sem === 1 ? 1 + 0.4 * Math.max(0, 1 - Math.abs(f - 0.84) / 0.1) : 1;
+        const w = larg * 0.5 * (1 - f * 0.5) * cabeca * (f > 0.9 ? Math.sqrt(Math.max(0, (1 - f) / 0.1)) : 1);
+        const cx = bx + k * incl + Math.sin(k * 0.031 + sem) * 4 + Math.sin(k * 0.09 + sem * 2) * 2;
+        const irreg = (a) => 1 + Math.sin(k * 0.13 + a) * 0.1 + Math.sin(k * 0.37 + a * 2) * 0.07 + Math.sin(k * 0.83 + a * 3) * 0.05;
+        const wl = w * irreg(sem * 3), wr = w * irreg(sem * 5 + 1);
+        pts.push([cx - wl, H - k, cx + wr]);
       }
-      g.globalAlpha = 0.9; g.fillStyle = "#ffe4b0";
-      g.fillRect(Math.round(bx + alt * incl + Math.sin(alt * 0.11) * 1.8) - 1, 129 - alt, 3, 1);
+      g.moveTo(pts[0][0] + dx, pts[0][1] + dy);
+      for (const p of pts) g.lineTo(p[0] + dx, p[1] + dy);
+      for (let i = pts.length - 1; i >= 0; i--) g.lineTo(pts[i][2] + dx, pts[i][1] + dy);
+      g.closePath();
+    };
+    for (const [bx, larg, alt, incl, sem] of colunas) {
+      // brilho da borda (a luz das estrelas que bate de cima e da esquerda)
+      g.save();
+      g.shadowColor = "rgba(255, 220, 170, 0.8)";
+      g.shadowBlur = 12;
+      caminho(bx, larg, alt, incl, sem, -1.5, -2);
+      g.fillStyle = "rgba(240, 200, 150, 0.4)";
+      g.fill();
+      g.restore();
+      // corpo: poeira marrom-avermelhada, mais escura embaixo
+      caminho(bx, larg, alt, incl, sem);
+      const gr = g.createLinearGradient(0, H - alt, 0, H);
+      gr.addColorStop(0, "rgba(128, 80, 60, 0.85)");
+      gr.addColorStop(0.5, "rgba(92, 52, 40, 0.85)");
+      gr.addColorStop(1, "rgba(56, 30, 28, 0.8)");
+      g.fillStyle = gr;
+      g.fill();
+      // textura: manchas escuras e claras só dentro da coluna
+      g.save();
+      caminho(bx, larg, alt, incl, sem);
+      g.clip();
+      // luz vindo da esquerda: lado esquerdo mais claro, direito na sombra
+      const lado = g.createLinearGradient(bx - larg * 0.6, 0, bx + larg * 0.6 + alt * incl * 0.5, 0);
+      lado.addColorStop(0, "rgba(255, 205, 160, 0.2)");
+      lado.addColorStop(0.5, "rgba(0, 0, 0, 0)");
+      lado.addColorStop(1, "rgba(10, 4, 10, 0.5)");
+      g.fillStyle = lado;
+      g.fillRect(0, 0, W, H);
+      for (let k = 0; k < 26; k++) {
+        const yy = H - hash(k, sem) * alt, xx = bx + (H - yy) * incl + (hash(k, sem + 9) - 0.5) * larg;
+        mancha(xx, yy, 6 + hash(k, sem + 4) * 14, hash(k, sem + 7) < 0.6 ? "50, 24, 20" : "190, 130, 90", 0.35);
+      }
+      g.restore();
+      // ponta acesa
+      mancha(bx + alt * incl + Math.sin(alt * 0.045 + sem) * 6, H - alt + 6, 14, "255, 230, 190", 0.55);
     }
-    // estrelinhas na frente
-    g.globalAlpha = 1;
-    for (let i = 0; i < 26; i++) {
-      g.fillStyle = i % 4 ? "#ffffff" : "#ffd890";
-      g.fillRect(Math.floor(ruido(i, 3) * 90), Math.floor(ruido(i, 9) * 130), 1, 1);
+    // estrelas com brilho em cruz, como na foto
+    for (let k = 0; k < 22; k++) {
+      const x = hash(k, 21) * W, y = hash(k, 22) * H, r = 0.6 + hash(k, 23) * 1.4;
+      mancha(x, y, r * 4, "255, 236, 220", 0.9);
+      if (r > 1.5) { g.fillStyle = "rgba(255, 230, 220, 0.45)"; g.fillRect(x - r * 6, y - 0.4, r * 12, 0.8); g.fillRect(x - 0.4, y - r * 6, 0.8, r * 12); }
     }
+    // some nas bordas: nenhum recorte de "quadro"
+    g.globalCompositeOperation = "destination-in";
+    const fade = g.createRadialGradient(W / 2, H * 0.5, Math.min(W, H) * 0.28, W / 2, H * 0.5, Math.max(W, H) * 0.62);
+    fade.addColorStop(0, "rgba(0,0,0,1)");
+    fade.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = fade;
+    g.fillRect(0, 0, W, H);
+    // a base das colunas some aos poucos no gás, sem linha de corte
+    const base = g.createLinearGradient(0, H * 0.7, 0, H);
+    base.addColorStop(0, "rgba(0,0,0,1)");
+    base.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = base;
+    g.fillRect(0, 0, W, H);
+    g.globalCompositeOperation = "source-over";
   }
 
   return { satelite, iss, lua, planeta, cometa, voyager, pilares };
@@ -917,7 +1026,24 @@ function viagem(pontos) {
 // da Terra até aqui. Distância e réguas contam a partir deste ponto (o "0").
 const AL_INICIAL = 300;
 const PX_POR_AL = 0.5; // pixels da cena por ano-luz
-const DURACAO_DESCIDA = 2400; // ms, igual para toda resposta
+const DURACAO_DESCIDA = 2400; // ms, referência (a queda de cada resposta tem a sua duração)
+
+// "Peso" da resposta: a óbvia é leve como uma pena, a rara é densa.
+function pesoQueda(pontos, supernova) {
+  return supernova ? 1 : Math.min(1, Math.max(0, pontos) / 100);
+}
+// Quanto tempo a caixa leva para cair: a leve plana devagar, a pesada despenca.
+function duracaoQueda(pontos, supernova) {
+  return Math.round(3800 - 2000 * Math.sqrt(pesoQueda(pontos, supernova)));
+}
+// Curva da queda: leve = começa e termina macio (desliza); pesada = acelera até o fim
+// e para de uma vez (o "baque" e o tremor vêm na chegada).
+function curvaQueda(t, peso) {
+  t = Math.min(1, Math.max(0, t)); // o quadro pode chegar um pouquinho antes do início
+  const leve = 0.5 - Math.cos(Math.PI * t) / 2;
+  const pesada = Math.pow(t, 2.2);
+  return leve + (pesada - leve) * Math.min(1, peso * 1.4);
+}
 
 // Faixas de raridade. "min" é em pontos da resposta.
 const FAIXAS = [
@@ -991,10 +1117,13 @@ const PARADAS_FUNDO = [
   [170, [44, 92, 186]],
   [250, [28, 56, 140]],
   [320, [22, 30, 74]],
-  [400, [8, 8, 24]],
-  [600, [6, 5, 17]],
-  [4000, [5, 3, 14]],
-  [12000, [2, 1, 6]],
+  [400, [14, 14, 40]],
+  // daqui para baixo escurece aos poucos: quanto mais fundo, mais preto
+  [1000, [11, 9, 32]],
+  [2500, [8, 6, 24]],
+  [5000, [5, 4, 15]],
+  [10000, [2, 2, 8]],
+  [18000, [0, 0, 3]],
 ];
 
 // ---------- utilidades ----------
@@ -1410,7 +1539,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   function atualizarCamera(agora) {
     const t = Math.min(1, (agora - camera.inicio) / (camera.dura || DURACAO_DESCIDA));
-    const nova = camera.de + (camera.para - camera.de) * suave(t);
+    const nova = camera.de + (camera.para - camera.de) * (camera.peso == null ? suave(t) : curvaQueda(t, camera.peso));
     const dt = Math.max(1, agora - anterior) / 1000;
     camera.velocidade = (nova - camera.atual) / dt;
     camera.atual = nova;
@@ -1826,7 +1955,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function desenharMarcosPixel() {
     for (const m of MARCOS) {
       const y = Math.round(naTela(m.al));
-      if (y < -200 || y > A + 200) continue;
+      if (y < (m.pilares ? -A : -200) || y > A + (m.pilares ? A : 200)) continue;
       if (m.cinturao) {
         for (let i = 0; i < 40; i++) {
           desenharAsteroide(sorte(m.al, i) * L, y + (sorte(m.al, i + 50) - 0.5) * 30, Math.floor(sorte(m.al, i + 99) * 3), i);
@@ -1838,8 +1967,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
         desenharNave(naves.voyager, L * 0.26 * escala, naTelaTexto(m.al) + 30, pz, -0.25 + Math.sin(tempo * 0.2) * 0.08, "rgba(210, 225, 255, 0.5)");
       }
       if (m.pilares) {
+        // bem grande, suave e meio transparente: parece parte do fundo, não um objeto
         const img = naves.pilares;
-        ctx.drawImage(img, Math.round(L * 0.66 - img.width / 2), y - Math.round(img.height * 0.55));
+        const alto = innerHeight * 0.95;
+        const largo = alto * (img.width / img.height);
+        const yc = naTelaTexto(m.al);
+        tx.save();
+        tx.imageSmoothingEnabled = true;
+        tx.globalAlpha = 0.72;
+        tx.drawImage(img, innerWidth * 0.62 - largo / 2, yc - alto * 0.6, largo, alto);
+        tx.restore();
       }
       if (m.nebulosa) {
         for (let i = 0; i < 500; i++) {
@@ -2239,7 +2376,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const c = caixas[i];
       const t = agora - c.inicio;
       // cai junto com a câmera e fica onde parou; as antigas vão ficando para trás
-      const al = c.de + (c.para - c.de) * suave(Math.min(1, t / DURACAO_DESCIDA));
+      const tq = Math.min(1, t / c.dura);
+      const al = c.de + (c.para - c.de) * curvaQueda(tq, c.pesoQueda);
       if (!c.saida && mostrarLinhas) {
         for (const f of FAIXAS) {
           if (!f.min || acesas[f.id]) continue;
@@ -2250,7 +2388,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         }
       }
       // fumaça só nas raras e o plasma na supernova (as outras têm os companheiros em órbita)
-      if ((c.supernova || c.faixa === "rara") && !c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
+      if ((c.supernova || c.faixa === "rara") && !c.saida && t < c.dura && !reduzirMovimento) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -2271,16 +2409,22 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.save();
       tx.globalAlpha = alfa;
       // flutua devagar, sem parar (posição fracionada: desliza liso)
-      const boiaX = reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7;
+      // enquanto cai, a leve "samba" de um lado para o outro, como folha deslizando;
+      // a pesada desce reta. O balanço vai sumindo perto do fim da queda.
+      const leveza = 1 - Math.min(1, c.pesoQueda * 1.6);
+      const ondaQueda = !c.saida && tq < 1 && !reduzirMovimento ? Math.sin(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza : 0;
+      const boiaX = (reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7) + ondaQueda * 46;
       const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 8;
       tx.translate(x + w / 2 + boiaX, y - sumindo * 14 + boiaY);
       // mola: ao aparecer cresce passando um pouco do tamanho e volta
       const mola = 1 - Math.exp(-t / 140) * Math.cos(t / 55);
       // ao chegar no fundo, dá um "pulo" maior quanto mais rara
-      const tc = t - DURACAO_DESCIDA;
+      const tc = t - c.dura;
       const pop = tc > 0 ? c.peso * 0.35 * Math.exp(-tc / 160) * Math.cos(tc / 45) : 0;
       const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3 + c.inicio) * 0.035 + Math.sin(tempo * 0.5) * 0.015;
-      tx.rotate(c.angulo * Math.exp(-t / 600) + balanco);
+      // inclina para o lado em que está deslizando
+      const inclinaQueda = !c.saida && tq < 1 && !reduzirMovimento ? Math.cos(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza * 0.16 : 0;
+      tx.rotate(c.angulo * Math.exp(-t / 600) + balanco + inclinaQueda);
       const esc = Math.max(0.05, mola + pop) * (1 - sumindo * 0.1);
       tx.scale(esc, esc);
       if (tc > 0 && !c.chegou) {
@@ -2448,13 +2592,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
-      camera.dura = DURACAO_DESCIDA;
+      camera.dura = duracaoQueda(pontos, supernova);
+      camera.peso = pesoQueda(pontos, supernova);
       // a caixa anterior some (não ficam umas por cima das outras)
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       caixas.push({
         texto: texto.toUpperCase(),
         cor: faixa.cor,
         faixa: supernova ? "supernova" : faixa.id,
+        dura: duracaoQueda(pontos, supernova),
+        pesoQueda: pesoQueda(pontos, supernova),
         de: camera.de,
         para: camera.para,
         inicio: agora,
@@ -2483,6 +2630,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.para = al;
       camera.inicio = performance.now();
       camera.dura = dura;
+      camera.peso = null;
     },
     // Fim da viagem: o cenário volta devagar até a Terra.
     subir(dura) {
@@ -2493,6 +2641,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.para = 0;
       camera.inicio = performance.now();
       camera.dura = dura;
+      camera.peso = null;
     },
     // Tardígrado dourado (supernova): com festa só na hora em que acontece.
     dourado(festa) {
@@ -2619,6 +2768,38 @@ function hojeLocal() {
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
 }
 
+// Quantos dias seguidos você completou a viagem (contando hoje, se já terminou).
+function sequencia() {
+  const p = (n) => String(n).padStart(2, "0");
+  const chave = (d) => `nicho:v7:${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+  const completo = (d) => {
+    try {
+      const v = JSON.parse(localStorage.getItem(chave(d)) || "null");
+      return !!v && v.historico && v.historico.length >= RODADAS_POR_DIA;
+    } catch {
+      return false;
+    }
+  };
+  const d = new Date();
+  if (!completo(d)) d.setDate(d.getDate() - 1);
+  let n = 0;
+  while (n < 3650 && completo(d)) {
+    n++;
+    d.setDate(d.getDate() - 1);
+  }
+  return n;
+}
+
+// O tardígrado no cartão do modo, no menu inicial (dourado se hoje teve supernova).
+function desenharMascoteDoMenu() {
+  const tela = $("modo-mascote");
+  if (!tela || typeof criarTardigrado !== "function") return;
+  const t = criarTardigrado();
+  const g = tela.getContext("2d");
+  g.imageSmoothingEnabled = false;
+  g.drawImage(t.andar[0], 0, 0);
+}
+
 function numeroDoDia(data) {
   return Math.round((new Date(data + "T12:00") - new Date(LANCAMENTO + "T12:00")) / 86400000) + 1;
 }
@@ -2710,7 +2891,10 @@ function iniciar() {
     titulo.append(s);
   });
   $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
-  $("dia").textContent = `DIA #${numeroDoDia(estado.data)}`;
+  const seq = sequencia();
+  $("dia").textContent = `DIA #${numeroDoDia(estado.data)}${seq ? ` · SEQUÊNCIA ${seq}` : ""}`;
+  $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
+  desenharMascoteDoMenu();
   $("fim-dia").textContent = `DIA #${numeroDoDia(estado.data)}`;
   $("som").classList.toggle("mudo", Som.estaMudo());
 
@@ -2770,7 +2954,7 @@ function comecar() {
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
     cena.irAte(AL_INICIAL, DESCIDA_INICIAL);
-    Som.descer(0.3);
+    Som.inicio();
     setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
     return;
   }
@@ -3002,7 +3186,7 @@ function palpitar(evento) {
   registrar(cat, achada.resposta, pontos, supernova, percentil);
   // nas raras, a festa da chegada aparece sozinha antes do resultado
   const pausa = supernova || pontos >= 50 ? 900 : pontos >= 20 ? 600 : 200;
-  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), DURACAO_DESCIDA + pausa);
+  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), duracaoQueda(pontos, supernova) + pausa);
 }
 
 function tempoEsgotado() {
@@ -3241,6 +3425,31 @@ const CURIOSIDADE_SUPERNOVA = {
   "coisas-com-casca": "A casquinha da ferida é o curativo do próprio corpo, feito de sangue seco.",
   "coisas-que-brilham-no-ceu": "A luz do vaga-lume é fria: quase toda a energia vira luz, quase nada vira calor.",
   "palavras-astro-e-cosmo": "Os navegadores portugueses mediam a altura das estrelas com ele para saber onde estavam no mar.",
+  "animais-do-brasil": "O menor tamanduá do mundo: cabe na palma da mão e vive no alto das árvores.",
+  astronautas: "Astronauta francês que voou numa Soyuz russa em 1992 e num ônibus espacial da NASA em 1999.",
+  "cidades-do-brasil": "A cidade mais ao sul do Brasil: um lado da avenida principal já é o Uruguai.",
+  "coisas-com-dentes": "O caracol tem milhares de dentinhos numa espécie de língua-lixa, a rádula.",
+  "comidas-tipicas": "Caldo nordestino com farinha e ovo, servido bem quente.",
+  "corpos-do-sistema-solar": "A primeira lua descoberta em volta de um asteroide (o Ida), vista pela sonda Galileo.",
+  "defesas-dos-animais": "O lagarto-de-chifres espirra sangue dos olhos para assustar quem quer comê-lo.",
+  dinossauros: "Um dos maiores predadores já achados no Brasil, desenterrado em Mato Grosso.",
+  "esportes-olimpicos": "Foi esporte olímpico de verdade, de 1900 a 1920.",
+  exoplanetas: "Um planeta gigante que gira em volta de uma estrela que está virando gigante vermelha.",
+  "festa-junina": "Bolo de mandioca ralada, típico do Centro-Oeste.",
+  "filmes-tom-hanks": "O primeiro filme do Tom Hanks, um terror de 1980 em que ele aparece pouquinho.",
+  frutas: "Frutinha amarela da Mata Atlântica, coberta de uma penugem fininha.",
+  "girias-brasileiras": "Gíria dos anos 70 para o pessoal hippie e natureba.",
+  "instrumentos-musicais": "Tocado com arco de violino, o serrote faz um som que parece de fantasma.",
+  "marcas-de-carro": "Considerado o primeiro carro fabricado no Brasil, em 1956, em Santa Bárbara d'Oeste.",
+  "missoes-espaciais": "Faz parte do Gaganyaan, o programa da Índia para levar astronautas ao espaço com foguete próprio.",
+  "paises-acima-do-equador": "Pegadinha: Roraima, o Amapá e pedaços do Amazonas e do Pará ficam acima do Equador.",
+  "palavras-em-io": "O bugio é o macaco do ronco: dá para ouvir o grito dele a quilômetros.",
+  "partes-do-corpo": "É o espacinho liso entre as sobrancelhas, logo acima do nariz.",
+  "plantas-de-casa": "Uma samambaia que cresce presa no tronco das árvores, sem terra nenhuma.",
+  "poetas-brasileiros": "Poeta simbolista baiano, redescoberto décadas depois de morrer pelos poetas concretos.",
+  "protecao-do-sol": "Elefantes e porcos rolam na lama para proteger a pele do sol.",
+  "racas-de-cachorro": "Raça brasileira dos pampas gaúchos, criada para caçar veados.",
+  "times-de-futebol": "O time pernambucano famoso por ser chamado de \"pior time do mundo\".",
   "elementos-quimicos": "O elemento mais pesado já criado: só uns poucos átomos existiram, por menos de um milissegundo.",
 };
 
@@ -3352,6 +3561,11 @@ function enviar() {
 // ---------- eventos ----------
 
 $("comecar").addEventListener("click", comecar);
+$("abrir-como").addEventListener("click", () => {
+  const d = $("como-jogar");
+  d.open = !d.open;
+  $("abrir-como").setAttribute("aria-expanded", String(d.open));
+});
 $("formulario").addEventListener("submit", palpitar);
 $("palpite").addEventListener("input", aoDigitar);
 $("palpite").addEventListener("keydown", (e) => {

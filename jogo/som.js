@@ -103,6 +103,16 @@ const Som = (() => {
     sugestao: () => tom(880, 0.08, { tipo: "triangle", volume: 0.08, ate: 1175 }),
     tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
     contagem: (ultimo) => tom(ultimo ? 880 : 440, ultimo ? 0.25 : 0.12, { tipo: "triangle", volume: 0.1 }),
+    // início da viagem: um "fuuuum" que sobe e um brilho de três notas, ecoando no espaço
+    inicio() {
+      ruido(1.4, { volume: 0.06, de: 300, ate: 3200 });
+      tom(110, 1.2, { tipo: "sine", volume: 0.1, ate: 440 });
+      [523.25, 783.99, 1046.5].forEach((f, i) => {
+        tom(f, 0.9, { tipo: "triangle", volume: 0.07, atraso: 0.35 + i * 0.12 });
+        tom(f, 0.9, { tipo: "triangle", volume: 0.025, atraso: 0.65 + i * 0.12 }); // eco
+      });
+      tom(65.4, 2.2, { tipo: "sine", volume: 0.09, atraso: 0.9, ate: 55 }); // grave que segura a descida
+    },
     // descida: um "vuuum" mais longo e grave quanto mais rara a resposta
     descer(peso) {
       ruido(0.6 + peso * 1.8, { volume: 0.05 + peso * 0.12, de: 2400, ate: 120 + (1 - peso) * 400 });

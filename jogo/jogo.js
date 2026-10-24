@@ -99,6 +99,38 @@ function hojeLocal() {
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
 }
 
+// Quantos dias seguidos você completou a viagem (contando hoje, se já terminou).
+function sequencia() {
+  const p = (n) => String(n).padStart(2, "0");
+  const chave = (d) => `nicho:v7:${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+  const completo = (d) => {
+    try {
+      const v = JSON.parse(localStorage.getItem(chave(d)) || "null");
+      return !!v && v.historico && v.historico.length >= RODADAS_POR_DIA;
+    } catch {
+      return false;
+    }
+  };
+  const d = new Date();
+  if (!completo(d)) d.setDate(d.getDate() - 1);
+  let n = 0;
+  while (n < 3650 && completo(d)) {
+    n++;
+    d.setDate(d.getDate() - 1);
+  }
+  return n;
+}
+
+// O tardígrado no cartão do modo, no menu inicial (dourado se hoje teve supernova).
+function desenharMascoteDoMenu() {
+  const tela = $("modo-mascote");
+  if (!tela || typeof criarTardigrado !== "function") return;
+  const t = criarTardigrado();
+  const g = tela.getContext("2d");
+  g.imageSmoothingEnabled = false;
+  g.drawImage(t.andar[0], 0, 0);
+}
+
 function numeroDoDia(data) {
   return Math.round((new Date(data + "T12:00") - new Date(LANCAMENTO + "T12:00")) / 86400000) + 1;
 }
@@ -190,7 +222,10 @@ function iniciar() {
     titulo.append(s);
   });
   $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
-  $("dia").textContent = `DIA #${numeroDoDia(estado.data)}`;
+  const seq = sequencia();
+  $("dia").textContent = `DIA #${numeroDoDia(estado.data)}${seq ? ` · SEQUÊNCIA ${seq}` : ""}`;
+  $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
+  desenharMascoteDoMenu();
   $("fim-dia").textContent = `DIA #${numeroDoDia(estado.data)}`;
   $("som").classList.toggle("mudo", Som.estaMudo());
 
@@ -250,7 +285,7 @@ function comecar() {
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
     cena.irAte(AL_INICIAL, DESCIDA_INICIAL);
-    Som.descer(0.3);
+    Som.inicio();
     setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
     return;
   }
@@ -482,7 +517,7 @@ function palpitar(evento) {
   registrar(cat, achada.resposta, pontos, supernova, percentil);
   // nas raras, a festa da chegada aparece sozinha antes do resultado
   const pausa = supernova || pontos >= 50 ? 900 : pontos >= 20 ? 600 : 200;
-  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), DURACAO_DESCIDA + pausa);
+  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), duracaoQueda(pontos, supernova) + pausa);
 }
 
 function tempoEsgotado() {
@@ -721,6 +756,31 @@ const CURIOSIDADE_SUPERNOVA = {
   "coisas-com-casca": "A casquinha da ferida é o curativo do próprio corpo, feito de sangue seco.",
   "coisas-que-brilham-no-ceu": "A luz do vaga-lume é fria: quase toda a energia vira luz, quase nada vira calor.",
   "palavras-astro-e-cosmo": "Os navegadores portugueses mediam a altura das estrelas com ele para saber onde estavam no mar.",
+  "animais-do-brasil": "O menor tamanduá do mundo: cabe na palma da mão e vive no alto das árvores.",
+  astronautas: "Astronauta francês que voou numa Soyuz russa em 1992 e num ônibus espacial da NASA em 1999.",
+  "cidades-do-brasil": "A cidade mais ao sul do Brasil: um lado da avenida principal já é o Uruguai.",
+  "coisas-com-dentes": "O caracol tem milhares de dentinhos numa espécie de língua-lixa, a rádula.",
+  "comidas-tipicas": "Caldo nordestino com farinha e ovo, servido bem quente.",
+  "corpos-do-sistema-solar": "A primeira lua descoberta em volta de um asteroide (o Ida), vista pela sonda Galileo.",
+  "defesas-dos-animais": "O lagarto-de-chifres espirra sangue dos olhos para assustar quem quer comê-lo.",
+  dinossauros: "Um dos maiores predadores já achados no Brasil, desenterrado em Mato Grosso.",
+  "esportes-olimpicos": "Foi esporte olímpico de verdade, de 1900 a 1920.",
+  exoplanetas: "Um planeta gigante que gira em volta de uma estrela que está virando gigante vermelha.",
+  "festa-junina": "Bolo de mandioca ralada, típico do Centro-Oeste.",
+  "filmes-tom-hanks": "O primeiro filme do Tom Hanks, um terror de 1980 em que ele aparece pouquinho.",
+  frutas: "Frutinha amarela da Mata Atlântica, coberta de uma penugem fininha.",
+  "girias-brasileiras": "Gíria dos anos 70 para o pessoal hippie e natureba.",
+  "instrumentos-musicais": "Tocado com arco de violino, o serrote faz um som que parece de fantasma.",
+  "marcas-de-carro": "Considerado o primeiro carro fabricado no Brasil, em 1956, em Santa Bárbara d'Oeste.",
+  "missoes-espaciais": "Faz parte do Gaganyaan, o programa da Índia para levar astronautas ao espaço com foguete próprio.",
+  "paises-acima-do-equador": "Pegadinha: Roraima, o Amapá e pedaços do Amazonas e do Pará ficam acima do Equador.",
+  "palavras-em-io": "O bugio é o macaco do ronco: dá para ouvir o grito dele a quilômetros.",
+  "partes-do-corpo": "É o espacinho liso entre as sobrancelhas, logo acima do nariz.",
+  "plantas-de-casa": "Uma samambaia que cresce presa no tronco das árvores, sem terra nenhuma.",
+  "poetas-brasileiros": "Poeta simbolista baiano, redescoberto décadas depois de morrer pelos poetas concretos.",
+  "protecao-do-sol": "Elefantes e porcos rolam na lama para proteger a pele do sol.",
+  "racas-de-cachorro": "Raça brasileira dos pampas gaúchos, criada para caçar veados.",
+  "times-de-futebol": "O time pernambucano famoso por ser chamado de \"pior time do mundo\".",
   "elementos-quimicos": "O elemento mais pesado já criado: só uns poucos átomos existiram, por menos de um milissegundo.",
 };
 
@@ -832,6 +892,11 @@ function enviar() {
 // ---------- eventos ----------
 
 $("comecar").addEventListener("click", comecar);
+$("abrir-como").addEventListener("click", () => {
+  const d = $("como-jogar");
+  d.open = !d.open;
+  $("abrir-como").setAttribute("aria-expanded", String(d.open));
+});
 $("formulario").addEventListener("submit", palpitar);
 $("palpite").addEventListener("input", aoDigitar);
 $("palpite").addEventListener("keydown", (e) => {

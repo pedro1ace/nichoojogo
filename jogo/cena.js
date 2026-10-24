@@ -25,7 +25,24 @@ function viagem(pontos) {
 // da Terra até aqui. Distância e réguas contam a partir deste ponto (o "0").
 const AL_INICIAL = 300;
 const PX_POR_AL = 0.5; // pixels da cena por ano-luz
-const DURACAO_DESCIDA = 2400; // ms, igual para toda resposta
+const DURACAO_DESCIDA = 2400; // ms, referência (a queda de cada resposta tem a sua duração)
+
+// "Peso" da resposta: a óbvia é leve como uma pena, a rara é densa.
+function pesoQueda(pontos, supernova) {
+  return supernova ? 1 : Math.min(1, Math.max(0, pontos) / 100);
+}
+// Quanto tempo a caixa leva para cair: a leve plana devagar, a pesada despenca.
+function duracaoQueda(pontos, supernova) {
+  return Math.round(3800 - 2000 * Math.sqrt(pesoQueda(pontos, supernova)));
+}
+// Curva da queda: leve = começa e termina macio (desliza); pesada = acelera até o fim
+// e para de uma vez (o "baque" e o tremor vêm na chegada).
+function curvaQueda(t, peso) {
+  t = Math.min(1, Math.max(0, t)); // o quadro pode chegar um pouquinho antes do início
+  const leve = 0.5 - Math.cos(Math.PI * t) / 2;
+  const pesada = Math.pow(t, 2.2);
+  return leve + (pesada - leve) * Math.min(1, peso * 1.4);
+}
 
 // Faixas de raridade. "min" é em pontos da resposta.
 const FAIXAS = [
@@ -99,10 +116,13 @@ const PARADAS_FUNDO = [
   [170, [44, 92, 186]],
   [250, [28, 56, 140]],
   [320, [22, 30, 74]],
-  [400, [8, 8, 24]],
-  [600, [6, 5, 17]],
-  [4000, [5, 3, 14]],
-  [12000, [2, 1, 6]],
+  [400, [14, 14, 40]],
+  // daqui para baixo escurece aos poucos: quanto mais fundo, mais preto
+  [1000, [11, 9, 32]],
+  [2500, [8, 6, 24]],
+  [5000, [5, 4, 15]],
+  [10000, [2, 2, 8]],
+  [18000, [0, 0, 3]],
 ];
 
 // ---------- utilidades ----------
@@ -518,7 +538,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   function atualizarCamera(agora) {
     const t = Math.min(1, (agora - camera.inicio) / (camera.dura || DURACAO_DESCIDA));
-    const nova = camera.de + (camera.para - camera.de) * suave(t);
+    const nova = camera.de + (camera.para - camera.de) * (camera.peso == null ? suave(t) : curvaQueda(t, camera.peso));
     const dt = Math.max(1, agora - anterior) / 1000;
     camera.velocidade = (nova - camera.atual) / dt;
     camera.atual = nova;
@@ -934,7 +954,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function desenharMarcosPixel() {
     for (const m of MARCOS) {
       const y = Math.round(naTela(m.al));
-      if (y < -200 || y > A + 200) continue;
+      if (y < (m.pilares ? -A : -200) || y > A + (m.pilares ? A : 200)) continue;
       if (m.cinturao) {
         for (let i = 0; i < 40; i++) {
           desenharAsteroide(sorte(m.al, i) * L, y + (sorte(m.al, i + 50) - 0.5) * 30, Math.floor(sorte(m.al, i + 99) * 3), i);
@@ -946,8 +966,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
         desenharNave(naves.voyager, L * 0.26 * escala, naTelaTexto(m.al) + 30, pz, -0.25 + Math.sin(tempo * 0.2) * 0.08, "rgba(210, 225, 255, 0.5)");
       }
       if (m.pilares) {
+        // bem grande, suave e meio transparente: parece parte do fundo, não um objeto
         const img = naves.pilares;
-        ctx.drawImage(img, Math.round(L * 0.66 - img.width / 2), y - Math.round(img.height * 0.55));
+        const alto = innerHeight * 0.95;
+        const largo = alto * (img.width / img.height);
+        const yc = naTelaTexto(m.al);
+        tx.save();
+        tx.imageSmoothingEnabled = true;
+        tx.globalAlpha = 0.72;
+        tx.drawImage(img, innerWidth * 0.62 - largo / 2, yc - alto * 0.6, largo, alto);
+        tx.restore();
       }
       if (m.nebulosa) {
         for (let i = 0; i < 500; i++) {
@@ -1347,7 +1375,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const c = caixas[i];
       const t = agora - c.inicio;
       // cai junto com a câmera e fica onde parou; as antigas vão ficando para trás
-      const al = c.de + (c.para - c.de) * suave(Math.min(1, t / DURACAO_DESCIDA));
+      const tq = Math.min(1, t / c.dura);
+      const al = c.de + (c.para - c.de) * curvaQueda(tq, c.pesoQueda);
       if (!c.saida && mostrarLinhas) {
         for (const f of FAIXAS) {
           if (!f.min || acesas[f.id]) continue;
@@ -1358,7 +1387,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         }
       }
       // fumaça só nas raras e o plasma na supernova (as outras têm os companheiros em órbita)
-      if ((c.supernova || c.faixa === "rara") && !c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
+      if ((c.supernova || c.faixa === "rara") && !c.saida && t < c.dura && !reduzirMovimento) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -1379,16 +1408,22 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.save();
       tx.globalAlpha = alfa;
       // flutua devagar, sem parar (posição fracionada: desliza liso)
-      const boiaX = reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7;
+      // enquanto cai, a leve "samba" de um lado para o outro, como folha deslizando;
+      // a pesada desce reta. O balanço vai sumindo perto do fim da queda.
+      const leveza = 1 - Math.min(1, c.pesoQueda * 1.6);
+      const ondaQueda = !c.saida && tq < 1 && !reduzirMovimento ? Math.sin(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza : 0;
+      const boiaX = (reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7) + ondaQueda * 46;
       const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 8;
       tx.translate(x + w / 2 + boiaX, y - sumindo * 14 + boiaY);
       // mola: ao aparecer cresce passando um pouco do tamanho e volta
       const mola = 1 - Math.exp(-t / 140) * Math.cos(t / 55);
       // ao chegar no fundo, dá um "pulo" maior quanto mais rara
-      const tc = t - DURACAO_DESCIDA;
+      const tc = t - c.dura;
       const pop = tc > 0 ? c.peso * 0.35 * Math.exp(-tc / 160) * Math.cos(tc / 45) : 0;
       const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3 + c.inicio) * 0.035 + Math.sin(tempo * 0.5) * 0.015;
-      tx.rotate(c.angulo * Math.exp(-t / 600) + balanco);
+      // inclina para o lado em que está deslizando
+      const inclinaQueda = !c.saida && tq < 1 && !reduzirMovimento ? Math.cos(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza * 0.16 : 0;
+      tx.rotate(c.angulo * Math.exp(-t / 600) + balanco + inclinaQueda);
       const esc = Math.max(0.05, mola + pop) * (1 - sumindo * 0.1);
       tx.scale(esc, esc);
       if (tc > 0 && !c.chegou) {
@@ -1556,13 +1591,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
       camera.inicio = agora;
-      camera.dura = DURACAO_DESCIDA;
+      camera.dura = duracaoQueda(pontos, supernova);
+      camera.peso = pesoQueda(pontos, supernova);
       // a caixa anterior some (não ficam umas por cima das outras)
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       caixas.push({
         texto: texto.toUpperCase(),
         cor: faixa.cor,
         faixa: supernova ? "supernova" : faixa.id,
+        dura: duracaoQueda(pontos, supernova),
+        pesoQueda: pesoQueda(pontos, supernova),
         de: camera.de,
         para: camera.para,
         inicio: agora,
@@ -1591,6 +1629,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.para = al;
       camera.inicio = performance.now();
       camera.dura = dura;
+      camera.peso = null;
     },
     // Fim da viagem: o cenário volta devagar até a Terra.
     subir(dura) {
@@ -1601,6 +1640,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.para = 0;
       camera.inicio = performance.now();
       camera.dura = dura;
+      camera.peso = null;
     },
     // Tardígrado dourado (supernova): com festa só na hora em que acontece.
     dourado(festa) {
