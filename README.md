@@ -85,7 +85,14 @@ Para cada categoria, `pontuar.py` combina:
   resposta óbvia de planetas mesmo não sendo uma palavra tão comum.
 - **raridade global (30%)**: o ICF normalizado na base inteira.
 
+Esse peso (ou o manual) só decide a **ordem** das respostas. Depois a **régua da categoria** espalha essa ordem
+pelas faixas do jogo, para toda categoria ter de tudo: uns 25% óbvias, 35% comuns, 25% incomuns e 15% raras,
+mais a supernova. O peso de antes fica na coluna `fama` de `dados/pesos/revisao/<cat>.csv`.
+
 `pontos = 100 × peso²`, com mínimo de 1. A curva faz as respostas óbvias valerem quase nada.
+
+Categorias pequenas e fechadas (menos de 30 respostas) não dão para espalhar e ficam fora do jogo, listadas em
+`dados/fora_do_jogo.txt`. Os arquivos continuam no repositório.
 
 O ICF mede a palavra, não o significado, então erra quando a resposta é uma palavra comum com outro
 sentido ("Mesa" é uma constelação bem obscura, "Europa" é uma lua). Respostas que não estão na base saem
@@ -97,7 +104,7 @@ Mesa,85,
 Cabeleira de Berenice,,1
 ```
 
-`peso` vai de 0 a 100 e substitui o calculado; `supernova=1` escolhe a resposta secreta (senão, é a de mais pontos).
+`peso` vai de 0 a 100 e substitui o calculado na ordem da categoria; `supernova=1` escolhe a resposta secreta (senão, é a de mais pontos).
 
 ## Como adicionar uma categoria
 
@@ -105,6 +112,16 @@ Cabeleira de Berenice,,1
    Coloque apelidos e grafias alternativas na mesma linha (`Fobos | Phobos`): o jogo aceita qualquer um deles.
 2. Rode `python3 scripts/pontuar.py minha-categoria`.
 3. Abra `dados/pesos/revisao/minha-categoria.csv`, corrija o que estiver estranho em `dados/ajustes/`, e rode de novo.
+
+## Fila do modo aberto (respostas que a lista não conhecia)
+
+Nas categorias abertas, resposta fora da lista não é erro: vai para uma fila, e a fila é julgada em lote, sem LLM na hora e sem custo.
+
+1. Ponha o que os jogadores digitaram em `dados/fila/minha-categoria.csv` (colunas `resposta,contagem`).
+2. `python3 scripts/fila.py pedido minha-categoria` tira o que a lista já casa, o lixo e o já recusado, e grava o pedido em `dados/fila/pedidos/minha-categoria.md`.
+3. Peça ao Claude, aqui no projeto, para julgar esse pedido. Ele devolve um JSON.
+4. `python3 scripts/fila.py aplicar minha-categoria vereditos.json` põe as aceitas na lista (resposta nova ou apelido, com peso em `dados/ajustes/`), as recusadas em `dados/recusadas/` e as duvidosas em `dados/fila/revisar/`.
+5. Rode `python3 scripts/pontuar.py`.
 
 ## Créditos
 

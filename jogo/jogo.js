@@ -8,6 +8,9 @@
 const RODADAS_POR_DIA = 7;
 const SEGUNDOS = 25;
 const LANCAMENTO = "2026-10-23"; // dia #1
+// Modo teste: abrir com ?aleatorio no fim do endereço (jogar.html?aleatorio) sorteia
+// outras categorias a cada vez e não guarda o progresso do dia.
+const ALEATORIO = new URLSearchParams(location.search).has("aleatorio");
 
 // ---------- texto e autocorreção ----------
 
@@ -103,11 +106,13 @@ function numeroDoDia(data) {
 // Progresso do dia fica no navegador, para não perder ao recarregar.
 // Se o armazenamento estiver bloqueado, o jogo funciona igual, só não lembra.
 function salvarProgresso() {
+  if (ALEATORIO) return;
   try {
     localStorage.setItem(`nicho:v7:${estado.data}`, JSON.stringify({ historico: estado.historico, total: estado.total }));
   } catch {}
 }
 function lerProgresso() {
+  if (ALEATORIO) return null;
   try {
     return JSON.parse(localStorage.getItem(`nicho:v7:${estado.data}`) || "null");
   } catch {
@@ -120,6 +125,20 @@ function lerProgresso() {
 const $ = (id) => document.getElementById(id);
 const cena = criarCena($("cena"), $("camada"), $("tela"));
 const numero = (n) => Math.round(n).toLocaleString("pt-BR");
+
+const ICONE_NORMAL = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB1ElEQVR42mNgGGpgb4GZIBDbAHEkEGdAcSRUTJBWljJDLVkMxPd5uJT+Y8MgOagakFpmalkOMuwgLkvxOOYgSC+lQT2FVIuxOGQKyVED1KAAxJsotRzJEZtAZpLic6pZjuYIQWIcMIXaliNHB8EERyvLkRwRiS+rHaSDAw5izaL4fD8vz/P/6s4sMO2pqwlmI/Nh8iA22aEAKkBgCmCGgnB7oMH/Dwe6/t+dFQXG+Pgw9TC9uBwEsgtbygeXcCADQBhmAVAcziaVj+wJZMdAS0xBZAfYwCSzLJTBhsAMmuyrQhEfxoZ5DMkRNljjH+QAZEOQ2cTy0cVEOJj/C3AIoIQESjoA1WjoDoDhNCMJgnxkMXQ+OgaZD3VABlYHeKlJYxiIz0JiHIkuJ8PNjuEAeBToiArBLQFhKykeDD42MXx8GAZ5DmSHv7YyRhTAEyHMlbCQIBeD9KNjkOdwJUJwNoRZju4YkEYYJlUMT8MFtWJ6c3bVx2mtNSgKkeMcFKzkiBFVEOErimEGwQwG4WdnN/xfM6sLLo5sGTGOwFUU46yMYBYGOLgyBXHhILFYWqQxZD1EqyMBrw6HhQNkkHRJBvwRumgaJYPio7JoOmaDYrOKS0BAGTOdtvDi52IAAAAAElFTkSuQmCC";
+const ICONE_OURO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB1UlEQVR42mNgGGrgzhYjQSC2AeJIIM6A4kiomCCtLGWGWrIYiO/zcCn9x4ZBclA1ILXM1LIcZNhBXJbiccxBkF5Kg3oKqRZjccgUkqMGqEEBiDdRajmSIzaBzCTF51SzHM0RgsQ4YAq1LUeODoIJjlaWIzkiEl9WO0gHBxzEmkXx+X7z3JD/29Z2gekIDw0wG5kPkwexyQ4FUAECUwAzFISXtuv9//9lx//fd7LAGB8fph6mF5eDQHZhS/ngEg5kAAjDLHix1wTOJpWP7Alkx0BLTEFkB9jAJHsyZcGGwAw6PEmGIj6MDfMYkiNssMY/yAHIhiCzieWji4lwMP8X4BBACQmUdACq0dAdAMP9KQIE+chi6Hx0DDIf6oAMrA5I9xTFMBCfhcQ4El1OhpsdwwHwKHDS5oNbAsJRVmwYfGxi+PgwDPIc2JN+8hhRAE+EMFfCQoJcDNKPjkGew5UIwdkQZjm6Y0AaYZhUMTwNF9SK6f2VVR+ntdagKESOc1CwkiNGVEGEryiGGQQzGISfnd3wf82sLrg4smXEOAJXUYyzMoJZGODogiFXHBMKFoepQRZD1kuwMhrw6nhQNEgGRZNswBulg6JZPig6JoOmazYoOqe0BACefvToToydtwAAAABJRU5ErkJggg==";
+
+function atualizarIconeAba(dourado = false) {
+  let link = document.querySelector("link[rel*='icon']");
+  if (!link) {
+    link = document.createElement("link");
+    link.rel = "icon";
+    document.head.appendChild(link);
+  }
+  link.type = "image/png";
+  link.href = dourado ? ICONE_OURO : ICONE_NORMAL;
+}
 
 const estado = {
   data: hojeLocal(),
@@ -157,7 +176,7 @@ function iniciar() {
     $("comecar").hidden = true;
     return;
   }
-  const escolhidas = embaralhar(dados.indice, geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
+  const escolhidas = embaralhar(dados.indice, ALEATORIO ? Math.random : geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
   estado.categorias = escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
 
   // título com as letras soltas, para a onda
@@ -180,7 +199,7 @@ function iniciar() {
     estado.total = estado.totalMostrado = salvo.total;
     estado.rodada = salvo.historico.length;
     cena.irPara(profundidade());
-    if (salvo.historico.some((h) => h.supernova)) cena.dourado(false);
+    if (salvo.historico.some((h) => h.supernova)) { cena.dourado(false); atualizarIconeAba(true); }
     $("pontos").textContent = numero(estado.total);
   }
   montarQuadrados();
@@ -197,8 +216,13 @@ function iniciar() {
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
+// A viagem começa já fora da atmosfera: ao iniciar, o tardígrado desce da Terra até aqui
+// (onde o céu já é escuro) antes da primeira pergunta.
+const AL_INICIAL = 300;
+const DESCIDA_INICIAL = 2600;
+
 function profundidade() {
-  return estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
+  return AL_INICIAL + estado.historico.reduce((soma, h) => soma + viagem(h.pontos), 0);
 }
 
 function mostrarPergunta(ligada) {
@@ -224,6 +248,13 @@ function comecar() {
   Som.ligar();
   $("inicio").hidden = true;
   $("hud").hidden = false;
+  if (estado.rodada === 0) {
+    // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
+    cena.irAte(AL_INICIAL, DESCIDA_INICIAL);
+    Som.descer(0.3);
+    setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
+    return;
+  }
   iniciarRodada();
 }
 
@@ -503,7 +534,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   }
   const ultima = estado.rodada + 1 >= estado.categorias.length;
   $("proxima").textContent = ultima ? "VOLTAR ▲" : "VIAJAR ▼";
-  if (supernova) cena.dourado(true);
+  if (supernova) { cena.dourado(true); atualizarIconeAba(true); }
   card.hidden = false;
   cena.resultado();
   if (supernova) Som.supernova();
@@ -686,6 +717,11 @@ const CURIOSIDADE_SUPERNOVA = {
   "luas-do-sistema-solar": "Lua de Saturno que pode esconder um oceano debaixo do gelo.",
   paises: "Tem só uns 20 km de litoral, todos na cidadezinha de Neum.",
   "planetas-e-planetas-anoes": "Foi a descoberta dela, em 2005, que tirou Plutão da lista de planetas.",
+  "agencias-espaciais": "Criada em 1994, lança foguetes de Alcântara, no Maranhão, bem pertinho da linha do Equador.",
+  "bagagem-do-astronauta": "Em 1971, o astronauta Alan Shepard levou um taco escondido e deu tacadas de golfe na Lua.",
+  "coisas-com-casca": "A casquinha da ferida é o curativo do próprio corpo, feito de sangue seco.",
+  "coisas-que-brilham-no-ceu": "A luz do vaga-lume é fria: quase toda a energia vira luz, quase nada vira calor.",
+  "palavras-astro-e-cosmo": "Os navegadores portugueses mediam a altura das estrelas com ele para saber onde estavam no mar.",
   "elementos-quimicos": "O elemento mais pesado já criado: só uns poucos átomos existiram, por menos de um milissegundo.",
 };
 

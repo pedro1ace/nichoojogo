@@ -4,19 +4,6 @@
  "pergunta": "Cite o nome de uma estrela (de verdade, do céu)",
  "respostas": [
   {
-   "resposta": "Alfa Centauri",
-   "apelidos": [
-    "Rigil Kentaurus"
-   ],
-   "sem_dado": false,
-   "icf": 11.553,
-   "visitas": 17467,
-   "ajustado": true,
-   "percentil": 0.078,
-   "peso": 0.1,
-   "pontos": 1
-  },
-  {
    "resposta": "Estrela Polar",
    "apelidos": [
     "Polaris"
@@ -26,7 +13,8 @@
    "visitas": 4001,
    "ajustado": true,
    "percentil": 0.235,
-   "peso": 0.05,
+   "fama": 0.05,
+   "peso": 0.11,
    "pontos": 1
   },
   {
@@ -37,7 +25,8 @@
    "visitas": 96946,
    "ajustado": true,
    "percentil": 0.0,
-   "peso": 0.01,
+   "fama": 0.01,
+   "peso": 0.1,
    "pontos": 1
   },
   {
@@ -50,18 +39,22 @@
    "visitas": 28693,
    "ajustado": true,
    "percentil": 0.02,
-   "peso": 0.08,
+   "fama": 0.08,
+   "peso": 0.119,
    "pontos": 1
   },
   {
-   "resposta": "Vega",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 6478,
+   "resposta": "Alfa Centauri",
+   "apelidos": [
+    "Rigil Kentaurus"
+   ],
+   "sem_dado": false,
+   "icf": 11.553,
+   "visitas": 17467,
    "ajustado": true,
-   "percentil": 0.157,
-   "peso": 0.15,
+   "percentil": 0.078,
+   "fama": 0.1,
+   "peso": 0.129,
    "pontos": 2
   },
   {
@@ -74,8 +67,9 @@
    "visitas": 20603,
    "ajustado": true,
    "percentil": 0.039,
-   "peso": 0.2,
-   "pontos": 4
+   "fama": 0.2,
+   "peso": 0.148,
+   "pontos": 2
   },
   {
    "resposta": "Próxima Centauri",
@@ -87,19 +81,21 @@
    "visitas": 17543,
    "ajustado": true,
    "percentil": 0.059,
-   "peso": 0.25,
-   "pontos": 6
+   "fama": 0.25,
+   "peso": 0.158,
+   "pontos": 2
   },
   {
-   "resposta": "Acrux",
+   "resposta": "Vega",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
-   "visitas": 3016,
-   "ajustado": false,
-   "percentil": 0.294,
-   "peso": 0.294,
-   "pontos": 9
+   "visitas": 6478,
+   "ajustado": true,
+   "percentil": 0.157,
+   "fama": 0.15,
+   "peso": 0.139,
+   "pontos": 2
   },
   {
    "resposta": "Capela",
@@ -111,8 +107,9 @@
    "visitas": 5559,
    "ajustado": true,
    "percentil": 0.176,
-   "peso": 0.3,
-   "pontos": 9
+   "fama": 0.3,
+   "peso": 0.173,
+   "pontos": 3
   },
   {
    "resposta": "Rigel",
@@ -122,30 +119,9 @@
    "visitas": 4364,
    "ajustado": true,
    "percentil": 0.216,
-   "peso": 0.3,
-   "pontos": 9
-  },
-  {
-   "resposta": "Bellatrix",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 3004,
-   "ajustado": false,
-   "percentil": 0.314,
-   "peso": 0.314,
-   "pontos": 10
-  },
-  {
-   "resposta": "Mintaka",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 2964,
-   "ajustado": false,
-   "percentil": 0.333,
-   "peso": 0.333,
-   "pontos": 11
+   "fama": 0.3,
+   "peso": 0.173,
+   "pontos": 3
   },
   {
    "resposta": "Aldebarã",
@@ -157,19 +133,9 @@
    "visitas": 6915,
    "ajustado": true,
    "percentil": 0.137,
-   "peso": 0.35,
-   "pontos": 12
-  },
-  {
-   "resposta": "Antares",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.951,
-   "visitas": 15316,
-   "ajustado": true,
-   "percentil": 0.098,
-   "peso": 0.35,
-   "pontos": 12
+   "fama": 0.35,
+   "peso": 0.192,
+   "pontos": 4
   },
   {
    "resposta": "Altair",
@@ -179,8 +145,21 @@
    "visitas": 3494,
    "ajustado": true,
    "percentil": 0.255,
-   "peso": 0.4,
-   "pontos": 16
+   "fama": 0.4,
+   "peso": 0.211,
+   "pontos": 4
+  },
+  {
+   "resposta": "Antares",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.951,
+   "visitas": 15316,
+   "ajustado": true,
+   "percentil": 0.098,
+   "fama": 0.35,
+   "peso": 0.192,
+   "pontos": 4
   },
   {
    "resposta": "Arcturus",
@@ -192,30 +171,9 @@
    "visitas": 5227,
    "ajustado": true,
    "percentil": 0.196,
-   "peso": 0.4,
-   "pontos": 16
-  },
-  {
-   "resposta": "Alnilam",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 2348,
-   "ajustado": false,
-   "percentil": 0.412,
-   "peso": 0.412,
-   "pontos": 17
-  },
-  {
-   "resposta": "Alnitak",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 2242,
-   "ajustado": false,
-   "percentil": 0.431,
-   "peso": 0.431,
-   "pontos": 19
+   "fama": 0.4,
+   "peso": 0.211,
+   "pontos": 4
   },
   {
    "resposta": "Canopus",
@@ -227,8 +185,9 @@
    "visitas": 8848,
    "ajustado": true,
    "percentil": 0.118,
-   "peso": 0.45,
-   "pontos": 20
+   "fama": 0.45,
+   "peso": 0.233,
+   "pontos": 5
   },
   {
    "resposta": "Deneb",
@@ -238,8 +197,9 @@
    "visitas": 2063,
    "ajustado": true,
    "percentil": 0.471,
-   "peso": 0.45,
-   "pontos": 20
+   "fama": 0.45,
+   "peso": 0.233,
+   "pontos": 5
   },
   {
    "resposta": "Castor",
@@ -249,8 +209,9 @@
    "visitas": 1141,
    "ajustado": true,
    "percentil": 0.647,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.264,
+   "pontos": 7
   },
   {
    "resposta": "Prócion",
@@ -262,8 +223,9 @@
    "visitas": 1871,
    "ajustado": true,
    "percentil": 0.49,
-   "peso": 0.5,
-   "pontos": 25
+   "fama": 0.5,
+   "peso": 0.264,
+   "pontos": 7
   },
   {
    "resposta": "Pólux",
@@ -275,41 +237,9 @@
    "visitas": 2773,
    "ajustado": true,
    "percentil": 0.373,
-   "peso": 0.5,
-   "pontos": 25
-  },
-  {
-   "resposta": "Shaula",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 1864,
-   "ajustado": false,
-   "percentil": 0.51,
-   "peso": 0.51,
-   "pontos": 26
-  },
-  {
-   "resposta": "Achernar",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 1687,
-   "ajustado": false,
-   "percentil": 0.529,
-   "peso": 0.529,
-   "pontos": 28
-  },
-  {
-   "resposta": "Fomalhaut",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 1572,
-   "ajustado": false,
-   "percentil": 0.549,
-   "peso": 0.549,
-   "pontos": 30
+   "fama": 0.5,
+   "peso": 0.264,
+   "pontos": 7
   },
   {
    "resposta": "Mimosa",
@@ -319,8 +249,9 @@
    "visitas": 1057,
    "ajustado": true,
    "percentil": 0.667,
-   "peso": 0.55,
-   "pontos": 30
+   "fama": 0.55,
+   "peso": 0.296,
+   "pontos": 9
   },
   {
    "resposta": "Régulo",
@@ -332,30 +263,9 @@
    "visitas": 3462,
    "ajustado": true,
    "percentil": 0.275,
-   "peso": 0.55,
-   "pontos": 30
-  },
-  {
-   "resposta": "Thuban",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 1487,
-   "ajustado": false,
-   "percentil": 0.569,
-   "peso": 0.569,
-   "pontos": 32
-  },
-  {
-   "resposta": "Hadar",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 1460,
-   "ajustado": false,
-   "percentil": 0.588,
-   "peso": 0.588,
-   "pontos": 35
+   "fama": 0.55,
+   "peso": 0.296,
+   "pontos": 9
   },
   {
    "resposta": "Algol",
@@ -365,8 +275,9 @@
    "visitas": 239,
    "ajustado": true,
    "percentil": 0.941,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.327,
+   "pontos": 11
   },
   {
    "resposta": "Espiga",
@@ -378,8 +289,9 @@
    "visitas": 2218,
    "ajustado": true,
    "percentil": 0.451,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.327,
+   "pontos": 11
   },
   {
    "resposta": "Mira",
@@ -389,41 +301,33 @@
    "visitas": 334,
    "ajustado": true,
    "percentil": 0.765,
-   "peso": 0.6,
-   "pontos": 36
+   "fama": 0.6,
+   "peso": 0.327,
+   "pontos": 11
   },
   {
-   "resposta": "Gacrux",
+   "resposta": "Achernar",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
-   "visitas": 1265,
-   "ajustado": false,
-   "percentil": 0.608,
-   "peso": 0.608,
-   "pontos": 37
+   "visitas": 1687,
+   "ajustado": true,
+   "percentil": 0.529,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
-   "resposta": "Adhara",
+   "resposta": "Acrux",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
-   "visitas": 1226,
-   "ajustado": false,
-   "percentil": 0.627,
-   "peso": 0.627,
-   "pontos": 39
-  },
-  {
-   "resposta": "Alphard",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 486,
-   "ajustado": false,
-   "percentil": 0.686,
-   "peso": 0.686,
-   "pontos": 47
+   "visitas": 3016,
+   "ajustado": true,
+   "percentil": 0.294,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
   },
   {
    "resposta": "Albireo",
@@ -431,10 +335,107 @@
    "sem_dado": true,
    "icf": 20.0,
    "visitas": 419,
-   "ajustado": false,
+   "ajustado": true,
    "percentil": 0.706,
-   "peso": 0.706,
-   "pontos": 50
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Alcor",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 1.0,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Alnilam",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 2348,
+   "ajustado": true,
+   "percentil": 0.412,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Alnitak",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 2242,
+   "ajustado": true,
+   "percentil": 0.431,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Bellatrix",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 3004,
+   "ajustado": true,
+   "percentil": 0.314,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Fomalhaut",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 1572,
+   "ajustado": true,
+   "percentil": 0.549,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Mintaka",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 2964,
+   "ajustado": true,
+   "percentil": 0.333,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Mizar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 312,
+   "ajustado": true,
+   "percentil": 0.784,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Adhara",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 1226,
+   "ajustado": true,
+   "percentil": 0.627,
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Denebola",
@@ -442,21 +443,83 @@
    "sem_dado": true,
    "icf": 20.0,
    "visitas": 408,
-   "ajustado": false,
+   "ajustado": true,
    "percentil": 0.725,
-   "peso": 0.725,
-   "pontos": 53
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
-   "resposta": "Alkaid",
+   "resposta": "Dubhe",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
-   "visitas": 403,
-   "ajustado": false,
-   "percentil": 0.745,
-   "peso": 0.745,
-   "pontos": 56
+   "visitas": 270,
+   "ajustado": true,
+   "percentil": 0.863,
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
+  },
+  {
+   "resposta": "Gacrux",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 1265,
+   "ajustado": true,
+   "percentil": 0.608,
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
+  },
+  {
+   "resposta": "Hadar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 1460,
+   "ajustado": true,
+   "percentil": 0.588,
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
+  },
+  {
+   "resposta": "Merak",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 241,
+   "ajustado": true,
+   "percentil": 0.922,
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
+  },
+  {
+   "resposta": "Shaula",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 1864,
+   "ajustado": true,
+   "percentil": 0.51,
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
+  },
+  {
+   "resposta": "Thuban",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 1487,
+   "ajustado": true,
+   "percentil": 0.569,
+   "fama": 0.7,
+   "peso": 0.568,
+   "pontos": 32
   },
   {
    "resposta": "Estrela de Barnard",
@@ -466,19 +529,117 @@
    "visitas": 2694,
    "ajustado": true,
    "percentil": 0.392,
-   "peso": 0.75,
-   "pontos": 56
+   "fama": 0.75,
+   "peso": 0.659,
+   "pontos": 43
   },
   {
-   "resposta": "Mizar",
+   "resposta": "Alioth",
    "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
-   "visitas": 312,
-   "ajustado": false,
-   "percentil": 0.784,
-   "peso": 0.784,
-   "pontos": 61
+   "visitas": 250,
+   "ajustado": true,
+   "percentil": 0.902,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
+  },
+  {
+   "resposta": "Alkaid",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 403,
+   "ajustado": true,
+   "percentil": 0.745,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
+  },
+  {
+   "resposta": "Alphard",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 486,
+   "ajustado": true,
+   "percentil": 0.686,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
+  },
+  {
+   "resposta": "Enif",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 311,
+   "ajustado": true,
+   "percentil": 0.804,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
+  },
+  {
+   "resposta": "Markab",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 276,
+   "ajustado": true,
+   "percentil": 0.843,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
+  },
+  {
+   "resposta": "Menkar",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 163,
+   "ajustado": true,
+   "percentil": 0.98,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
+  },
+  {
+   "resposta": "Mirfak",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 251,
+   "ajustado": true,
+   "percentil": 0.882,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
+  },
+  {
+   "resposta": "Rasalhague",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 298,
+   "ajustado": true,
+   "percentil": 0.824,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
+  },
+  {
+   "resposta": "Sadr",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "visitas": 212,
+   "ajustado": true,
+   "percentil": 0.961,
+   "fama": 0.78,
+   "peso": 0.791,
+   "pontos": 63
   },
   {
    "resposta": "Eta Carinae",
@@ -488,118 +649,9 @@
    "visitas": 2916,
    "ajustado": true,
    "percentil": 0.353,
-   "peso": 0.8,
-   "pontos": 64
-  },
-  {
-   "resposta": "Enif",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 311,
-   "ajustado": false,
-   "percentil": 0.804,
-   "peso": 0.804,
-   "pontos": 65
-  },
-  {
-   "resposta": "Rasalhague",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 298,
-   "ajustado": false,
-   "percentil": 0.824,
-   "peso": 0.824,
-   "pontos": 68
-  },
-  {
-   "resposta": "Markab",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 276,
-   "ajustado": false,
-   "percentil": 0.843,
-   "peso": 0.843,
-   "pontos": 71
-  },
-  {
-   "resposta": "Dubhe",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 270,
-   "ajustado": false,
-   "percentil": 0.863,
-   "peso": 0.863,
-   "pontos": 74
-  },
-  {
-   "resposta": "Mirfak",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 251,
-   "ajustado": false,
-   "percentil": 0.882,
-   "peso": 0.882,
-   "pontos": 78
-  },
-  {
-   "resposta": "Alioth",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 250,
-   "ajustado": false,
-   "percentil": 0.902,
-   "peso": 0.902,
-   "pontos": 81
-  },
-  {
-   "resposta": "Merak",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 241,
-   "ajustado": false,
-   "percentil": 0.922,
-   "peso": 0.922,
-   "pontos": 85
-  },
-  {
-   "resposta": "Sadr",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 212,
-   "ajustado": false,
-   "percentil": 0.961,
-   "peso": 0.961,
-   "pontos": 92
-  },
-  {
-   "resposta": "Menkar",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 163,
-   "ajustado": false,
-   "percentil": 0.98,
-   "peso": 0.98,
-   "pontos": 96
-  },
-  {
-   "resposta": "Alcor",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "visitas": 0,
-   "ajustado": false,
-   "percentil": 1.0,
-   "peso": 1.0,
-   "pontos": 100
+   "fama": 0.8,
+   "peso": 0.95,
+   "pontos": 90
   }
  ],
  "fonte_peso": "visitas",

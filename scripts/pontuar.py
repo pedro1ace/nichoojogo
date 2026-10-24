@@ -25,11 +25,18 @@ Como o peso é calculado (0 a 1, onde 1 = muito nichado):
        é óbvio para planetas mesmo não sendo uma palavra tão comum no geral.
     3. raridade_global: o ICF normalizado entre o mínimo e o máximo da base.
     peso = PESO_PERCENTIL * percentil + (1 - PESO_PERCENTIL) * raridade_global
+    4. régua da categoria: o peso acima (ou o manual) só decide a ORDEM das
+       respostas. Depois a ordem é espalhada pela RÉGUA, para toda categoria ter
+       todas as faixas do jogo: uns 25% óbvias, 35% comuns, 25% incomuns e 15% raras.
+       O peso de antes fica salvo em "fama", para revisão.
     pontos ("anos-luz") = max(1, round(100 * peso ** CURVA))
     A curva faz as respostas óbvias valerem quase nada, como no Krillion.
     Exceção: se mais da metade das respostas não está na base (nomes próprios) e a
-    categoria tem visitas da Wikipédia (dados/sinais/wikidata/<cat>.json), o peso é
-    o percentil das visitas: a mais visitada vale quase nada, a menos visitada vale 1.
+    categoria tem visitas da Wikipédia (dados/sinais/wikidata/<cat>.json), a ordem
+    vem das visitas: a mais visitada é a mais óbvia, a menos visitada a mais rara.
+
+Categorias fora do jogo: ids em dados/fora_do_jogo.txt (um por linha, # comenta).
+Continuam no repositório, mas não entram em dados/pesos/ nem no jogo.
 
 Ajustes manuais (dados/ajustes/<cat>.csv), cabeçalho: resposta,peso,supernova
     peso em 0-100 substitui o calculado (deixe vazio para manter);
@@ -51,6 +58,10 @@ SAIDA = RAIZ / "dados" / "pesos"
 SINAIS_WIKIDATA = RAIZ / "dados" / "sinais" / "wikidata"
 
 PESO_PERCENTIL = 0.7
+FORA_DO_JOGO = RAIZ / "dados" / "fora_do_jogo.txt"
+# (percentil dentro da categoria, peso). Os pontos de corte das faixas do jogo
+# (jogo/cena.js) são 5, 20 e 50 pontos, ou seja, peso 0,224, 0,447 e 0,707.
+REGUA = [(0.0, 0.10), (0.25, 0.2236), (0.60, 0.4473), (0.85, 0.7072), (1.0, 0.95)]
 CURVA = 2.0
 # ICF usado quando a palavra não existe na base. Fica perto da mediana da base
 # (20,9): "provavelmente rara", mas sem chutar o máximo. Essas linhas saem com
@@ -163,6 +174,21 @@ def percentis(valores: list[float]) -> list[float]:
     return resultado
 
 
+def na_regua(p: float) -> float:
+    """Interpolação linear do percentil na RÉGUA."""
+    for (p0, v0), (p1, v1) in zip(REGUA, REGUA[1:]):
+        if p <= p1:
+            return v0 + (v1 - v0) * (p - p0) / (p1 - p0)
+    return REGUA[-1][1]
+
+
+def fora_do_jogo() -> set[str]:
+    if not FORA_DO_JOGO.exists():
+        return set()
+    linhas = FORA_DO_JOGO.read_text(encoding="utf-8").splitlines()
+    return {l.split("#")[0].strip() for l in linhas if l.split("#")[0].strip()}
+
+
 def pontuar(caminho: Path, base: BaseICF) -> dict:
     cat = ler_categoria(caminho)
     ajustes = ler_ajustes(cat["id"])
@@ -203,9 +229,12 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         if r["ajustado"]:
             peso = float(ajuste["peso"]) / 100
         r["percentil"] = round(p, 3)
-        r["peso"] = round(min(max(peso, 0.0), 1.0), 3)
-        r["pontos"] = max(1, round(100 * r["peso"] ** CURVA))
+        r["fama"] = round(min(max(peso, 0.0), 1.0), 3)
         r["supernova_manual"] = (ajuste.get("supernova") or "").strip() == "1"
+
+    for r, p in zip(respostas, percentis([r["fama"] for r in respostas])):
+        r["peso"] = round(na_regua(p), 3)
+        r["pontos"] = max(1, round(100 * r["peso"] ** CURVA))
 
     marcadas = [r for r in respostas if r["supernova_manual"]]
     if cat["fonte_peso"] == "visitas":
@@ -227,7 +256,7 @@ def salvar(cat: dict) -> None:
     (SAIDA / f"{cat['id']}.json").write_text(
         json.dumps(cat, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
     )
-    campos = ["resposta", "apelidos", "icf", "sem_dado", "percentil", "peso", "pontos", "ajustado"]
+    campos = ["resposta", "apelidos", "icf", "sem_dado", "percentil", "fama", "peso", "pontos", "ajustado"]
     if cat["fonte_peso"] == "visitas":
         campos.insert(4, "visitas")
     with (SAIDA / "revisao" / f"{cat['id']}.csv").open("w", encoding="utf-8", newline="") as f:
@@ -240,7 +269,11 @@ def salvar(cat: dict) -> None:
 def main() -> None:
     base = BaseICF()
     escolhidas = sys.argv[1:]
-    arquivos = sorted(CATEGORIAS.glob("*.txt"))
+    fora = fora_do_jogo()
+    arquivos = [a for a in sorted(CATEGORIAS.glob("*.txt")) if a.stem not in fora]
+    for velho in fora:  # tira o que já tinha saído para o jogo
+        for caminho in (SAIDA / f"{velho}.json", SAIDA / "revisao" / f"{velho}.csv"):
+            caminho.unlink(missing_ok=True)
     if escolhidas:
         arquivos = [a for a in arquivos if a.stem in escolhidas]
     for arquivo in arquivos:
