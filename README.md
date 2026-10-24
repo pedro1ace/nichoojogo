@@ -86,7 +86,7 @@ Para cada categoria, `pontuar.py` combina:
 - **raridade global (30%)**: o ICF normalizado na base inteira.
 
 Esse peso (ou o manual) só decide a **ordem** das respostas. Depois a **régua da categoria** espalha essa ordem
-pelas faixas do jogo, para toda categoria ter de tudo: uns 25% óbvias, 35% comuns, 25% incomuns e 15% raras,
+pelas faixas do jogo, para toda categoria ter de tudo: uns 36% óbvias, 30% comuns, 22% incomuns e 12% raras (sempre mais respostas nas faixas mais comuns),
 mais a supernova. O peso de antes fica na coluna `fama` de `dados/pesos/revisao/<cat>.csv`.
 
 `pontos = 100 × peso²`, com mínimo de 1. A curva faz as respostas óbvias valerem quase nada.

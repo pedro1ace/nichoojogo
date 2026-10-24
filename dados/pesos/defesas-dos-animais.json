@@ -13,7 +13,7 @@
    "ajustado": true,
    "percentil": 0.689,
    "fama": 0.04,
-   "peso": 0.12,
+   "peso": 0.114,
    "pontos": 1
   },
   {
@@ -26,7 +26,20 @@
    "ajustado": true,
    "percentil": 0.176,
    "fama": 0.03,
-   "peso": 0.113,
+   "peso": 0.109,
+   "pontos": 1
+  },
+  {
+   "resposta": "Espinhos",
+   "apelidos": [
+    "espinho"
+   ],
+   "sem_dado": false,
+   "icf": 12.382,
+   "ajustado": true,
+   "percentil": 0.595,
+   "fama": 0.05,
+   "peso": 0.119,
    "pontos": 1
   },
   {
@@ -40,7 +53,7 @@
    "ajustado": true,
    "percentil": 0.514,
    "fama": 0.02,
-   "peso": 0.107,
+   "peso": 0.105,
    "pontos": 1
   },
   {
@@ -64,7 +77,7 @@
    "ajustado": true,
    "percentil": 0.73,
    "fama": 0.06,
-   "peso": 0.137,
+   "peso": 0.128,
    "pontos": 2
   },
   {
@@ -78,44 +91,7 @@
    "ajustado": true,
    "percentil": 0.622,
    "fama": 0.06,
-   "peso": 0.137,
-   "pontos": 2
-  },
-  {
-   "resposta": "Espinhos",
-   "apelidos": [
-    "espinho"
-   ],
-   "sem_dado": false,
-   "icf": 12.382,
-   "ajustado": true,
-   "percentil": 0.595,
-   "fama": 0.05,
-   "peso": 0.127,
-   "pontos": 2
-  },
-  {
-   "resposta": "Ferrão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.421,
-   "ajustado": true,
-   "percentil": 0.716,
-   "fama": 0.08,
-   "peso": 0.15,
-   "pontos": 2
-  },
-  {
-   "resposta": "Presas",
-   "apelidos": [
-    "presa"
-   ],
-   "sem_dado": false,
-   "icf": 10.959,
-   "ajustado": true,
-   "percentil": 0.27,
-   "fama": 0.08,
-   "peso": 0.15,
+   "peso": 0.123,
    "pontos": 2
   },
   {
@@ -129,19 +105,8 @@
    "ajustado": true,
    "percentil": 0.162,
    "fama": 0.14,
-   "peso": 0.184,
-   "pontos": 3
-  },
-  {
-   "resposta": "Coice",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.579,
-   "ajustado": true,
-   "percentil": 0.865,
-   "fama": 0.14,
-   "peso": 0.184,
-   "pontos": 3
+   "peso": 0.156,
+   "pontos": 2
   },
   {
    "resposta": "Concha",
@@ -151,8 +116,19 @@
    "ajustado": true,
    "percentil": 0.581,
    "fama": 0.12,
-   "peso": 0.173,
-   "pontos": 3
+   "peso": 0.151,
+   "pontos": 2
+  },
+  {
+   "resposta": "Ferrão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.421,
+   "ajustado": true,
+   "percentil": 0.716,
+   "fama": 0.08,
+   "peso": 0.137,
+   "pontos": 2
   },
   {
    "resposta": "Fuga",
@@ -165,8 +141,8 @@
    "ajustado": true,
    "percentil": 0.243,
    "fama": 0.1,
-   "peso": 0.163,
-   "pontos": 3
+   "peso": 0.142,
+   "pontos": 2
   },
   {
    "resposta": "Mordida",
@@ -176,8 +152,21 @@
    "ajustado": true,
    "percentil": 0.608,
    "fama": 0.1,
-   "peso": 0.163,
-   "pontos": 3
+   "peso": 0.146,
+   "pontos": 2
+  },
+  {
+   "resposta": "Presas",
+   "apelidos": [
+    "presa"
+   ],
+   "sem_dado": false,
+   "icf": 10.959,
+   "ajustado": true,
+   "percentil": 0.27,
+   "fama": 0.08,
+   "peso": 0.132,
+   "pontos": 2
   },
   {
    "resposta": "Bando",
@@ -190,8 +179,30 @@
    "ajustado": true,
    "percentil": 0.392,
    "fama": 0.2,
-   "peso": 0.207,
-   "pontos": 4
+   "peso": 0.174,
+   "pontos": 3
+  },
+  {
+   "resposta": "Bico",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.994,
+   "ajustado": true,
+   "percentil": 0.297,
+   "fama": 0.22,
+   "peso": 0.184,
+   "pontos": 3
+  },
+  {
+   "resposta": "Coice",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.579,
+   "ajustado": true,
+   "percentil": 0.865,
+   "fama": 0.14,
+   "peso": 0.16,
+   "pontos": 3
   },
   {
    "resposta": "Eletricidade",
@@ -204,44 +215,8 @@
    "ajustado": true,
    "percentil": 0.446,
    "fama": 0.18,
-   "peso": 0.2,
-   "pontos": 4
-  },
-  {
-   "resposta": "Tinta",
-   "apelidos": [
-    "tinta de polvo",
-    "jato de tinta"
-   ],
-   "sem_dado": false,
-   "icf": 10.421,
-   "ajustado": true,
-   "percentil": 0.203,
-   "fama": 0.16,
-   "peso": 0.194,
-   "pontos": 4
-  },
-  {
-   "resposta": "Bico",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 10.994,
-   "ajustado": true,
-   "percentil": 0.297,
-   "fama": 0.22,
-   "peso": 0.22,
-   "pontos": 5
-  },
-  {
-   "resposta": "Chocalho",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.242,
-   "ajustado": true,
-   "percentil": 0.797,
-   "fama": 0.22,
-   "peso": 0.22,
-   "pontos": 5
+   "peso": 0.17,
+   "pontos": 3
   },
   {
    "resposta": "Fingir de morto",
@@ -254,58 +229,33 @@
    "ajustado": true,
    "percentil": 0.284,
    "fama": 0.22,
-   "peso": 0.22,
-   "pontos": 5
+   "peso": 0.179,
+   "pontos": 3
   },
   {
-   "resposta": "Escamas",
+   "resposta": "Tinta",
+   "apelidos": [
+    "tinta de polvo",
+    "jato de tinta"
+   ],
+   "sem_dado": false,
+   "icf": 10.421,
+   "ajustado": true,
+   "percentil": 0.203,
+   "fama": 0.16,
+   "peso": 0.165,
+   "pontos": 3
+  },
+  {
+   "resposta": "Chocalho",
    "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "ajustado": true,
-   "percentil": 0.986,
-   "fama": 0.24,
-   "peso": 0.241,
-   "pontos": 6
-  },
-  {
-   "resposta": "Pinça",
-   "apelidos": [
-    "pinças"
-   ],
    "sem_dado": false,
-   "icf": 12.972,
+   "icf": 14.242,
    "ajustado": true,
-   "percentil": 0.676,
-   "fama": 0.28,
-   "peso": 0.254,
-   "pontos": 6
-  },
-  {
-   "resposta": "Rabo",
-   "apelidos": [
-    "cauda"
-   ],
-   "sem_dado": false,
-   "icf": 11.121,
-   "ajustado": true,
-   "percentil": 0.365,
-   "fama": 0.24,
-   "peso": 0.241,
-   "pontos": 6
-  },
-  {
-   "resposta": "Asas",
-   "apelidos": [
-    "voar"
-   ],
-   "sem_dado": false,
-   "icf": 10.944,
-   "ajustado": true,
-   "percentil": 0.257,
-   "fama": 0.3,
-   "peso": 0.284,
-   "pontos": 8
+   "percentil": 0.797,
+   "fama": 0.22,
+   "peso": 0.188,
+   "pontos": 4
   },
   {
    "resposta": "Cores de alerta",
@@ -318,8 +268,69 @@
    "ajustado": true,
    "percentil": 0.122,
    "fama": 0.3,
-   "peso": 0.284,
-   "pontos": 8
+   "peso": 0.211,
+   "pontos": 4
+  },
+  {
+   "resposta": "Escamas",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "ajustado": true,
+   "percentil": 0.986,
+   "fama": 0.24,
+   "peso": 0.197,
+   "pontos": 4
+  },
+  {
+   "resposta": "Pinça",
+   "apelidos": [
+    "pinças"
+   ],
+   "sem_dado": false,
+   "icf": 12.972,
+   "ajustado": true,
+   "percentil": 0.676,
+   "fama": 0.28,
+   "peso": 0.202,
+   "pontos": 4
+  },
+  {
+   "resposta": "Rabo",
+   "apelidos": [
+    "cauda"
+   ],
+   "sem_dado": false,
+   "icf": 11.121,
+   "ajustado": true,
+   "percentil": 0.365,
+   "fama": 0.24,
+   "peso": 0.193,
+   "pontos": 4
+  },
+  {
+   "resposta": "Trocar de cor",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.334,
+   "ajustado": true,
+   "percentil": 0.108,
+   "fama": 0.3,
+   "peso": 0.207,
+   "pontos": 4
+  },
+  {
+   "resposta": "Asas",
+   "apelidos": [
+    "voar"
+   ],
+   "sem_dado": false,
+   "icf": 10.944,
+   "ajustado": true,
+   "percentil": 0.257,
+   "fama": 0.3,
+   "peso": 0.221,
+   "pontos": 5
   },
   {
    "resposta": "Couro grosso",
@@ -331,8 +342,8 @@
    "ajustado": true,
    "percentil": 0.135,
    "fama": 0.3,
-   "peso": 0.284,
-   "pontos": 8
+   "peso": 0.216,
+   "pontos": 5
   },
   {
    "resposta": "Inflar",
@@ -345,30 +356,8 @@
    "ajustado": true,
    "percentil": 0.824,
    "fama": 0.3,
-   "peso": 0.284,
-   "pontos": 8
-  },
-  {
-   "resposta": "Mimetismo",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 15.055,
-   "ajustado": true,
-   "percentil": 0.919,
-   "fama": 0.3,
-   "peso": 0.284,
-   "pontos": 8
-  },
-  {
-   "resposta": "Trocar de cor",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 9.334,
-   "ajustado": true,
-   "percentil": 0.108,
-   "fama": 0.3,
-   "peso": 0.284,
-   "pontos": 8
+   "peso": 0.227,
+   "pontos": 5
   },
   {
    "resposta": "Enrolar como bola",
@@ -381,8 +370,19 @@
    "ajustado": true,
    "percentil": 0.095,
    "fama": 0.32,
-   "peso": 0.323,
-   "pontos": 10
+   "peso": 0.247,
+   "pontos": 6
+  },
+  {
+   "resposta": "Mimetismo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.055,
+   "ajustado": true,
+   "percentil": 0.919,
+   "fama": 0.3,
+   "peso": 0.237,
+   "pontos": 6
   },
   {
    "resposta": "Rugido",
@@ -392,8 +392,8 @@
    "ajustado": true,
    "percentil": 0.811,
    "fama": 0.32,
-   "peso": 0.323,
-   "pontos": 10
+   "peso": 0.268,
+   "pontos": 7
   },
   {
    "resposta": "Toca",
@@ -405,8 +405,8 @@
    "ajustado": true,
    "percentil": 0.189,
    "fama": 0.32,
-   "peso": 0.323,
-   "pontos": 10
+   "peso": 0.257,
+   "pontos": 7
   },
   {
    "resposta": "Patada",
@@ -416,8 +416,8 @@
    "ajustado": true,
    "percentil": 0.905,
    "fama": 0.34,
-   "peso": 0.345,
-   "pontos": 12
+   "peso": 0.288,
+   "pontos": 8
   },
   {
    "resposta": "Soltar o rabo",
@@ -430,8 +430,8 @@
    "ajustado": true,
    "percentil": 0.419,
    "fama": 0.34,
-   "peso": 0.345,
-   "pontos": 12
+   "peso": 0.278,
+   "pontos": 8
   },
   {
    "resposta": "Armadura",
@@ -441,8 +441,8 @@
    "ajustado": true,
    "percentil": 0.527,
    "fama": 0.36,
-   "peso": 0.362,
-   "pontos": 13
+   "peso": 0.308,
+   "pontos": 9
   },
   {
    "resposta": "Pele tóxica",
@@ -454,8 +454,8 @@
    "ajustado": true,
    "percentil": 0.081,
    "fama": 0.36,
-   "peso": 0.362,
-   "pontos": 13
+   "peso": 0.298,
+   "pontos": 9
   },
   {
    "resposta": "Cuspe",
@@ -467,30 +467,8 @@
    "ajustado": true,
    "percentil": 0.878,
    "fama": 0.38,
-   "peso": 0.375,
-   "pontos": 14
-  },
-  {
-   "resposta": "Cabeçada",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 13.64,
-   "ajustado": true,
-   "percentil": 0.757,
-   "fama": 0.4,
-   "peso": 0.405,
-   "pontos": 16
-  },
-  {
-   "resposta": "Disfarce",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 12.968,
-   "ajustado": true,
-   "percentil": 0.662,
-   "fama": 0.4,
-   "peso": 0.405,
-   "pontos": 16
+   "peso": 0.318,
+   "pontos": 10
   },
   {
    "resposta": "Grito",
@@ -500,8 +478,54 @@
    "ajustado": true,
    "percentil": 0.338,
    "fama": 0.4,
-   "peso": 0.405,
-   "pontos": 16
+   "peso": 0.338,
+   "pontos": 11
+  },
+  {
+   "resposta": "Pelos urticantes",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 7.824,
+   "ajustado": true,
+   "percentil": 0.0,
+   "fama": 0.4,
+   "peso": 0.328,
+   "pontos": 11
+  },
+  {
+   "resposta": "Pular",
+   "apelidos": [
+    "salto"
+   ],
+   "sem_dado": false,
+   "icf": 11.301,
+   "ajustado": true,
+   "percentil": 0.432,
+   "fama": 0.4,
+   "peso": 0.348,
+   "pontos": 12
+  },
+  {
+   "resposta": "Disfarce",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.968,
+   "ajustado": true,
+   "percentil": 0.662,
+   "fama": 0.4,
+   "peso": 0.358,
+   "pontos": 13
+  },
+  {
+   "resposta": "Cabeçada",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.64,
+   "ajustado": true,
+   "percentil": 0.757,
+   "fama": 0.4,
+   "peso": 0.378,
+   "pontos": 14
   },
   {
    "resposta": "Muco",
@@ -514,43 +538,8 @@
    "ajustado": true,
    "percentil": 0.703,
    "fama": 0.4,
-   "peso": 0.405,
-   "pontos": 16
-  },
-  {
-   "resposta": "Pelos urticantes",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 7.824,
-   "ajustado": true,
-   "percentil": 0.0,
-   "fama": 0.4,
-   "peso": 0.405,
-   "pontos": 16
-  },
-  {
-   "resposta": "Pular",
-   "apelidos": [
-    "salto"
-   ],
-   "sem_dado": false,
-   "icf": 11.301,
-   "ajustado": true,
-   "percentil": 0.432,
-   "fama": 0.4,
-   "peso": 0.405,
-   "pontos": 16
-  },
-  {
-   "resposta": "Esguicho",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.556,
-   "ajustado": true,
-   "percentil": 0.851,
-   "fama": 0.44,
-   "peso": 0.444,
-   "pontos": 20
+   "peso": 0.368,
+   "pontos": 14
   },
   {
    "resposta": "Mergulho",
@@ -562,8 +551,19 @@
    "ajustado": true,
    "percentil": 0.378,
    "fama": 0.44,
-   "peso": 0.444,
-   "pontos": 20
+   "peso": 0.388,
+   "pontos": 15
+  },
+  {
+   "resposta": "Esguicho",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.556,
+   "ajustado": true,
+   "percentil": 0.851,
+   "fama": 0.44,
+   "peso": 0.399,
+   "pontos": 16
   },
   {
    "resposta": "Tentáculos",
@@ -573,8 +573,8 @@
    "ajustado": true,
    "percentil": 0.986,
    "fama": 0.44,
-   "peso": 0.444,
-   "pontos": 20
+   "peso": 0.409,
+   "pontos": 17
   },
   {
    "resposta": "Enterrar",
@@ -586,8 +586,8 @@
    "ajustado": true,
    "percentil": 0.635,
    "fama": 0.46,
-   "peso": 0.484,
-   "pontos": 23
+   "peso": 0.429,
+   "pontos": 18
   },
   {
    "resposta": "Teia",
@@ -597,8 +597,8 @@
    "ajustado": true,
    "percentil": 0.554,
    "fama": 0.46,
-   "peso": 0.484,
-   "pontos": 23
+   "peso": 0.419,
+   "pontos": 18
   },
   {
    "resposta": "Vômito",
@@ -610,8 +610,8 @@
    "ajustado": true,
    "percentil": 0.649,
    "fama": 0.46,
-   "peso": 0.484,
-   "pontos": 23
+   "peso": 0.439,
+   "pontos": 19
   },
   {
    "resposta": "Gás",
@@ -623,21 +623,8 @@
    "ajustado": true,
    "percentil": 0.149,
    "fama": 0.48,
-   "peso": 0.526,
-   "pontos": 28
-  },
-  {
-   "resposta": "Penas eriçadas",
-   "apelidos": [
-    "arrepiar"
-   ],
-   "sem_dado": false,
-   "icf": 11.087,
-   "ajustado": true,
-   "percentil": 0.351,
-   "fama": 0.48,
-   "peso": 0.526,
-   "pontos": 28
+   "peso": 0.45,
+   "pontos": 20
   },
   {
    "resposta": "Ácido",
@@ -649,21 +636,21 @@
    "ajustado": true,
    "percentil": 0.23,
    "fama": 0.48,
-   "peso": 0.526,
-   "pontos": 28
+   "peso": 0.466,
+   "pontos": 22
   },
   {
-   "resposta": "Esqueleto externo",
+   "resposta": "Penas eriçadas",
    "apelidos": [
-    "exoesqueleto"
+    "arrepiar"
    ],
    "sem_dado": false,
-   "icf": 11.447,
+   "icf": 11.087,
    "ajustado": true,
-   "percentil": 0.459,
-   "fama": 0.5,
-   "peso": 0.568,
-   "pontos": 32
+   "percentil": 0.351,
+   "fama": 0.48,
+   "peso": 0.482,
+   "pontos": 23
   },
   {
    "resposta": "Manchas que parecem olhos",
@@ -676,8 +663,21 @@
    "ajustado": true,
    "percentil": 0.041,
    "fama": 0.5,
-   "peso": 0.568,
-   "pontos": 32
+   "peso": 0.498,
+   "pontos": 25
+  },
+  {
+   "resposta": "Esqueleto externo",
+   "apelidos": [
+    "exoesqueleto"
+   ],
+   "sem_dado": false,
+   "icf": 11.447,
+   "ajustado": true,
+   "percentil": 0.459,
+   "fama": 0.5,
+   "peso": 0.514,
+   "pontos": 26
   },
   {
    "resposta": "Ninho",
@@ -687,7 +687,31 @@
    "ajustado": true,
    "percentil": 0.486,
    "fama": 0.5,
-   "peso": 0.568,
+   "peso": 0.53,
+   "pontos": 28
+  },
+  {
+   "resposta": "Glândula de cheiro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.473,
+   "ajustado": true,
+   "percentil": 0.473,
+   "fama": 0.52,
+   "peso": 0.546,
+   "pontos": 30
+  },
+  {
+   "resposta": "Placas ósseas",
+   "apelidos": [
+    "placas"
+   ],
+   "sem_dado": false,
+   "icf": 12.1,
+   "ajustado": true,
+   "percentil": 0.541,
+   "fama": 0.52,
+   "peso": 0.562,
    "pontos": 32
   },
   {
@@ -700,45 +724,8 @@
    "ajustado": true,
    "percentil": 0.932,
    "fama": 0.52,
-   "peso": 0.61,
-   "pontos": 37
-  },
-  {
-   "resposta": "Glândula de cheiro",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.473,
-   "ajustado": true,
-   "percentil": 0.473,
-   "fama": 0.52,
-   "peso": 0.61,
-   "pontos": 37
-  },
-  {
-   "resposta": "Placas ósseas",
-   "apelidos": [
-    "placas"
-   ],
-   "sem_dado": false,
-   "icf": 12.1,
-   "ajustado": true,
-   "percentil": 0.541,
-   "fama": 0.52,
-   "peso": 0.61,
-   "pontos": 37
-  },
-  {
-   "resposta": "Barbatana",
-   "apelidos": [
-    "nadadeira com espinho"
-   ],
-   "sem_dado": false,
-   "icf": 14.79,
-   "ajustado": true,
-   "percentil": 0.892,
-   "fama": 0.56,
-   "peso": 0.652,
-   "pontos": 43
+   "peso": 0.578,
+   "pontos": 33
   },
   {
    "resposta": "Bater com a cauda",
@@ -750,8 +737,21 @@
    "ajustado": true,
    "percentil": 0.068,
    "fama": 0.56,
-   "peso": 0.652,
-   "pontos": 43
+   "peso": 0.594,
+   "pontos": 35
+  },
+  {
+   "resposta": "Barbatana",
+   "apelidos": [
+    "nadadeira com espinho"
+   ],
+   "sem_dado": false,
+   "icf": 14.79,
+   "ajustado": true,
+   "percentil": 0.892,
+   "fama": 0.56,
+   "peso": 0.609,
+   "pontos": 37
   },
   {
    "resposta": "Ventosas",
@@ -761,8 +761,8 @@
    "ajustado": true,
    "percentil": 0.986,
    "fama": 0.56,
-   "peso": 0.652,
-   "pontos": 43
+   "peso": 0.625,
+   "pontos": 39
   },
   {
    "resposta": "Alarme",
@@ -775,19 +775,8 @@
    "ajustado": true,
    "percentil": 0.311,
    "fama": 0.58,
-   "peso": 0.695,
-   "pontos": 48
-  },
-  {
-   "resposta": "Esporão",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 14.282,
-   "ajustado": true,
-   "percentil": 0.838,
-   "fama": 0.58,
-   "peso": 0.695,
-   "pontos": 48
+   "peso": 0.641,
+   "pontos": 41
   },
   {
    "resposta": "Hibernação",
@@ -797,8 +786,19 @@
    "ajustado": true,
    "percentil": 0.784,
    "fama": 0.58,
-   "peso": 0.695,
-   "pontos": 48
+   "peso": 0.657,
+   "pontos": 43
+  },
+  {
+   "resposta": "Esporão",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.282,
+   "ajustado": true,
+   "percentil": 0.838,
+   "fama": 0.58,
+   "peso": 0.673,
+   "pontos": 45
   },
   {
    "resposta": "Dormir em árvore",
@@ -808,8 +808,8 @@
    "ajustado": true,
    "percentil": 0.027,
    "fama": 0.6,
-   "peso": 0.742,
-   "pontos": 55
+   "peso": 0.689,
+   "pontos": 47
   },
   {
    "resposta": "Ruído",
@@ -821,8 +821,8 @@
    "ajustado": true,
    "percentil": 0.405,
    "fama": 0.6,
-   "peso": 0.742,
-   "pontos": 55
+   "peso": 0.705,
+   "pontos": 50
   },
   {
    "resposta": "Simbiose",
@@ -834,8 +834,8 @@
    "ajustado": true,
    "percentil": 0.743,
    "fama": 0.66,
-   "peso": 0.775,
-   "pontos": 60
+   "peso": 0.731,
+   "pontos": 53
   },
   {
    "resposta": "Formigas",
@@ -847,8 +847,8 @@
    "ajustado": true,
    "percentil": 0.568,
    "fama": 0.68,
-   "peso": 0.797,
-   "pontos": 64
+   "peso": 0.759,
+   "pontos": 58
   },
   {
    "resposta": "Carapaça de besouro",
@@ -860,8 +860,8 @@
    "ajustado": true,
    "percentil": 0.77,
    "fama": 0.7,
-   "peso": 0.83,
-   "pontos": 69
+   "peso": 0.786,
+   "pontos": 62
   },
   {
    "resposta": "Plastrão",
@@ -871,8 +871,8 @@
    "ajustado": true,
    "percentil": 0.946,
    "fama": 0.7,
-   "peso": 0.83,
-   "pontos": 69
+   "peso": 0.813,
+   "pontos": 66
   },
   {
    "resposta": "Explosão",
@@ -884,8 +884,8 @@
    "ajustado": true,
    "percentil": 0.324,
    "fama": 0.72,
-   "peso": 0.863,
-   "pontos": 74
+   "peso": 0.841,
+   "pontos": 71
   },
   {
    "resposta": "Nematocisto",
@@ -897,8 +897,8 @@
    "ajustado": true,
    "percentil": 0.959,
    "fama": 0.8,
-   "peso": 0.884,
-   "pontos": 78
+   "peso": 0.868,
+   "pontos": 75
   },
   {
    "resposta": "Intestino para fora",
@@ -911,8 +911,8 @@
    "ajustado": true,
    "percentil": 0.014,
    "fama": 0.82,
-   "peso": 0.906,
-   "pontos": 82
+   "peso": 0.895,
+   "pontos": 80
   },
   {
    "resposta": "Quebrar a própria costela",
@@ -925,8 +925,8 @@
    "ajustado": true,
    "percentil": 0.216,
    "fama": 0.86,
-   "peso": 0.928,
-   "pontos": 86
+   "peso": 0.923,
+   "pontos": 85
   },
   {
    "resposta": "Sangue pelos olhos",

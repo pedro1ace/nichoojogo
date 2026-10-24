@@ -13,7 +13,20 @@
    "ajustado": false,
    "percentil": 0.034,
    "fama": 0.127,
-   "peso": 0.117,
+   "peso": 0.112,
+   "pontos": 1
+  },
+  {
+   "resposta": "Carbono",
+   "apelidos": [
+    "C"
+   ],
+   "sem_dado": false,
+   "icf": 10.79,
+   "ajustado": false,
+   "percentil": 0.051,
+   "fama": 0.143,
+   "peso": 0.118,
    "pontos": 1
   },
   {
@@ -26,7 +39,7 @@
    "ajustado": false,
    "percentil": 0.043,
    "fama": 0.137,
-   "peso": 0.121,
+   "peso": 0.115,
    "pontos": 1
   },
   {
@@ -39,7 +52,7 @@
    "ajustado": false,
    "percentil": 0.017,
    "fama": 0.105,
-   "peso": 0.108,
+   "peso": 0.106,
    "pontos": 1
   },
   {
@@ -52,7 +65,7 @@
    "ajustado": true,
    "percentil": 0.128,
    "fama": 0.1,
-   "peso": 0.104,
+   "peso": 0.103,
    "pontos": 1
   },
   {
@@ -78,21 +91,21 @@
    "ajustado": false,
    "percentil": 0.026,
    "fama": 0.112,
-   "peso": 0.113,
+   "peso": 0.109,
    "pontos": 1
   },
   {
-   "resposta": "Carbono",
+   "resposta": "Sódio",
    "apelidos": [
-    "C"
+    "Na"
    ],
    "sem_dado": false,
-   "icf": 10.79,
+   "icf": 11.385,
    "ajustado": false,
-   "percentil": 0.051,
-   "fama": 0.143,
-   "peso": 0.125,
-   "pontos": 2
+   "percentil": 0.06,
+   "fama": 0.157,
+   "peso": 0.121,
+   "pontos": 1
   },
   {
    "resposta": "Chumbo",
@@ -104,7 +117,7 @@
    "ajustado": false,
    "percentil": 0.103,
    "fama": 0.194,
-   "peso": 0.155,
+   "peso": 0.138,
    "pontos": 2
   },
   {
@@ -117,7 +130,34 @@
    "ajustado": false,
    "percentil": 0.077,
    "fama": 0.17,
-   "peso": 0.138,
+   "peso": 0.126,
+   "pontos": 2
+  },
+  {
+   "resposta": "Fósforo",
+   "apelidos": [
+    "P"
+   ],
+   "sem_dado": false,
+   "icf": 12.193,
+   "ajustado": false,
+   "percentil": 0.145,
+   "fama": 0.228,
+   "peso": 0.153,
+   "pontos": 2
+  },
+  {
+   "resposta": "Hidrogênio",
+   "apelidos": [
+    "H",
+    "hidrogénio"
+   ],
+   "sem_dado": false,
+   "icf": 12.285,
+   "ajustado": false,
+   "percentil": 0.154,
+   "fama": 0.236,
+   "peso": 0.156,
    "pontos": 2
   },
   {
@@ -130,7 +170,20 @@
    "ajustado": false,
    "percentil": 0.085,
    "fama": 0.179,
-   "peso": 0.142,
+   "peso": 0.129,
+   "pontos": 2
+  },
+  {
+   "resposta": "Magnésio",
+   "apelidos": [
+    "Mg"
+   ],
+   "sem_dado": false,
+   "icf": 12.132,
+   "ajustado": false,
+   "percentil": 0.137,
+   "fama": 0.222,
+   "peso": 0.15,
    "pontos": 2
   },
   {
@@ -146,7 +199,7 @@
    "ajustado": true,
    "percentil": 0.573,
    "fama": 0.18,
-   "peso": 0.149,
+   "peso": 0.135,
    "pontos": 2
   },
   {
@@ -160,20 +213,34 @@
    "ajustado": false,
    "percentil": 0.068,
    "fama": 0.164,
-   "peso": 0.134,
+   "peso": 0.123,
    "pontos": 2
   },
   {
-   "resposta": "Sódio",
+   "resposta": "Plutônio",
    "apelidos": [
-    "Na"
+    "Pu",
+    "plutónio"
    ],
    "sem_dado": false,
-   "icf": 11.385,
+   "icf": 14.374,
+   "ajustado": true,
+   "percentil": 0.333,
+   "fama": 0.22,
+   "peso": 0.147,
+   "pontos": 2
+  },
+  {
+   "resposta": "Potássio",
+   "apelidos": [
+    "K"
+   ],
+   "sem_dado": false,
+   "icf": 12.096,
    "ajustado": false,
-   "percentil": 0.06,
-   "fama": 0.157,
-   "peso": 0.13,
+   "percentil": 0.115,
+   "fama": 0.206,
+   "peso": 0.141,
    "pontos": 2
   },
   {
@@ -186,47 +253,74 @@
    "ajustado": true,
    "percentil": 0.248,
    "fama": 0.18,
-   "peso": 0.149,
+   "peso": 0.132,
    "pontos": 2
   },
   {
-   "resposta": "Fósforo",
+   "resposta": "Zinco",
    "apelidos": [
-    "P"
+    "Zn"
    ],
    "sem_dado": false,
-   "icf": 12.193,
+   "icf": 12.096,
    "ajustado": false,
-   "percentil": 0.145,
-   "fama": 0.228,
-   "peso": 0.176,
+   "percentil": 0.115,
+   "fama": 0.206,
+   "peso": 0.144,
+   "pontos": 2
+  },
+  {
+   "resposta": "Cloro",
+   "apelidos": [
+    "Cl"
+   ],
+   "sem_dado": false,
+   "icf": 12.476,
+   "ajustado": false,
+   "percentil": 0.171,
+   "fama": 0.25,
+   "peso": 0.162,
    "pontos": 3
   },
   {
-   "resposta": "Hidrogênio",
+   "resposta": "Cromo",
    "apelidos": [
-    "H",
-    "hidrogénio"
+    "Cr",
+    "crómio",
+    "crômio"
    ],
    "sem_dado": false,
-   "icf": 12.285,
+   "icf": 12.681,
    "ajustado": false,
-   "percentil": 0.154,
-   "fama": 0.236,
-   "peso": 0.18,
+   "percentil": 0.197,
+   "fama": 0.271,
+   "peso": 0.17,
    "pontos": 3
   },
   {
-   "resposta": "Magnésio",
+   "resposta": "Enxofre",
    "apelidos": [
-    "Mg"
+    "S"
    ],
    "sem_dado": false,
-   "icf": 12.132,
+   "icf": 12.56,
    "ajustado": false,
-   "percentil": 0.137,
-   "fama": 0.222,
-   "peso": 0.172,
+   "percentil": 0.179,
+   "fama": 0.257,
+   "peso": 0.165,
+   "pontos": 3
+  },
+  {
+   "resposta": "Lítio",
+   "apelidos": [
+    "Li"
+   ],
+   "sem_dado": false,
+   "icf": 13.002,
+   "ajustado": false,
+   "percentil": 0.239,
+   "fama": 0.305,
+   "peso": 0.185,
    "pontos": 3
   },
   {
@@ -241,154 +335,8 @@
    "ajustado": false,
    "percentil": 0.162,
    "fama": 0.244,
-   "peso": 0.185,
+   "peso": 0.159,
    "pontos": 3
-  },
-  {
-   "resposta": "Plutônio",
-   "apelidos": [
-    "Pu",
-    "plutónio"
-   ],
-   "sem_dado": false,
-   "icf": 14.374,
-   "ajustado": true,
-   "percentil": 0.333,
-   "fama": 0.22,
-   "peso": 0.168,
-   "pontos": 3
-  },
-  {
-   "resposta": "Potássio",
-   "apelidos": [
-    "K"
-   ],
-   "sem_dado": false,
-   "icf": 12.096,
-   "ajustado": false,
-   "percentil": 0.115,
-   "fama": 0.206,
-   "peso": 0.161,
-   "pontos": 3
-  },
-  {
-   "resposta": "Zinco",
-   "apelidos": [
-    "Zn"
-   ],
-   "sem_dado": false,
-   "icf": 12.096,
-   "ajustado": false,
-   "percentil": 0.115,
-   "fama": 0.206,
-   "peso": 0.161,
-   "pontos": 3
-  },
-  {
-   "resposta": "Cloro",
-   "apelidos": [
-    "Cl"
-   ],
-   "sem_dado": false,
-   "icf": 12.476,
-   "ajustado": false,
-   "percentil": 0.171,
-   "fama": 0.25,
-   "peso": 0.189,
-   "pontos": 4
-  },
-  {
-   "resposta": "Cromo",
-   "apelidos": [
-    "Cr",
-    "crómio",
-    "crômio"
-   ],
-   "sem_dado": false,
-   "icf": 12.681,
-   "ajustado": false,
-   "percentil": 0.197,
-   "fama": 0.271,
-   "peso": 0.201,
-   "pontos": 4
-  },
-  {
-   "resposta": "Enxofre",
-   "apelidos": [
-    "S"
-   ],
-   "sem_dado": false,
-   "icf": 12.56,
-   "ajustado": false,
-   "percentil": 0.179,
-   "fama": 0.257,
-   "peso": 0.193,
-   "pontos": 4
-  },
-  {
-   "resposta": "Níquel",
-   "apelidos": [
-    "Ni"
-   ],
-   "sem_dado": false,
-   "icf": 12.856,
-   "ajustado": false,
-   "percentil": 0.222,
-   "fama": 0.291,
-   "peso": 0.21,
-   "pontos": 4
-  },
-  {
-   "resposta": "Platina",
-   "apelidos": [
-    "Pt"
-   ],
-   "sem_dado": false,
-   "icf": 12.568,
-   "ajustado": false,
-   "percentil": 0.188,
-   "fama": 0.264,
-   "peso": 0.197,
-   "pontos": 4
-  },
-  {
-   "resposta": "Silício",
-   "apelidos": [
-    "Si"
-   ],
-   "sem_dado": false,
-   "icf": 12.714,
-   "ajustado": false,
-   "percentil": 0.205,
-   "fama": 0.277,
-   "peso": 0.206,
-   "pontos": 4
-  },
-  {
-   "resposta": "Iodo",
-   "apelidos": [
-    "I"
-   ],
-   "sem_dado": false,
-   "icf": 13.086,
-   "ajustado": false,
-   "percentil": 0.256,
-   "fama": 0.319,
-   "peso": 0.228,
-   "pontos": 5
-  },
-  {
-   "resposta": "Lítio",
-   "apelidos": [
-    "Li"
-   ],
-   "sem_dado": false,
-   "icf": 13.002,
-   "ajustado": false,
-   "percentil": 0.239,
-   "fama": 0.305,
-   "peso": 0.223,
-   "pontos": 5
   },
   {
    "resposta": "Nióbio",
@@ -401,22 +349,47 @@
    "ajustado": true,
    "percentil": 0.342,
    "fama": 0.3,
-   "peso": 0.218,
-   "pontos": 5
+   "peso": 0.182,
+   "pontos": 3
   },
   {
-   "resposta": "Polônio",
+   "resposta": "Níquel",
    "apelidos": [
-    "Po",
-    "polónio"
+    "Ni"
    ],
    "sem_dado": false,
-   "icf": 15.489,
-   "ajustado": true,
-   "percentil": 0.453,
-   "fama": 0.32,
-   "peso": 0.233,
-   "pontos": 5
+   "icf": 12.856,
+   "ajustado": false,
+   "percentil": 0.222,
+   "fama": 0.291,
+   "peso": 0.176,
+   "pontos": 3
+  },
+  {
+   "resposta": "Platina",
+   "apelidos": [
+    "Pt"
+   ],
+   "sem_dado": false,
+   "icf": 12.568,
+   "ajustado": false,
+   "percentil": 0.188,
+   "fama": 0.264,
+   "peso": 0.167,
+   "pontos": 3
+  },
+  {
+   "resposta": "Silício",
+   "apelidos": [
+    "Si"
+   ],
+   "sem_dado": false,
+   "icf": 12.714,
+   "ajustado": false,
+   "percentil": 0.205,
+   "fama": 0.277,
+   "peso": 0.173,
+   "pontos": 3
   },
   {
    "resposta": "Titânio",
@@ -428,8 +401,34 @@
    "ajustado": false,
    "percentil": 0.231,
    "fama": 0.299,
-   "peso": 0.214,
-   "pontos": 5
+   "peso": 0.179,
+   "pontos": 3
+  },
+  {
+   "resposta": "Cobalto",
+   "apelidos": [
+    "Co"
+   ],
+   "sem_dado": false,
+   "icf": 13.793,
+   "ajustado": false,
+   "percentil": 0.299,
+   "fama": 0.358,
+   "peso": 0.206,
+   "pontos": 4
+  },
+  {
+   "resposta": "Cádmio",
+   "apelidos": [
+    "Cd"
+   ],
+   "sem_dado": false,
+   "icf": 14.268,
+   "ajustado": false,
+   "percentil": 0.316,
+   "fama": 0.377,
+   "peso": 0.212,
+   "pontos": 4
   },
   {
    "resposta": "Estanho",
@@ -441,8 +440,8 @@
    "ajustado": false,
    "percentil": 0.282,
    "fama": 0.341,
-   "peso": 0.25,
-   "pontos": 6
+   "peso": 0.2,
+   "pontos": 4
   },
   {
    "resposta": "Flúor",
@@ -454,8 +453,21 @@
    "ajustado": false,
    "percentil": 0.265,
    "fama": 0.327,
-   "peso": 0.239,
-   "pontos": 6
+   "peso": 0.194,
+   "pontos": 4
+  },
+  {
+   "resposta": "Iodo",
+   "apelidos": [
+    "I"
+   ],
+   "sem_dado": false,
+   "icf": 13.086,
+   "ajustado": false,
+   "percentil": 0.256,
+   "fama": 0.319,
+   "peso": 0.188,
+   "pontos": 4
   },
   {
    "resposta": "Manganês",
@@ -468,34 +480,22 @@
    "ajustado": false,
    "percentil": 0.274,
    "fama": 0.335,
-   "peso": 0.244,
-   "pontos": 6
+   "peso": 0.197,
+   "pontos": 4
   },
   {
-   "resposta": "Cobalto",
+   "resposta": "Polônio",
    "apelidos": [
-    "Co"
+    "Po",
+    "polónio"
    ],
    "sem_dado": false,
-   "icf": 13.793,
-   "ajustado": false,
-   "percentil": 0.299,
-   "fama": 0.358,
-   "peso": 0.26,
-   "pontos": 7
-  },
-  {
-   "resposta": "Cádmio",
-   "apelidos": [
-    "Cd"
-   ],
-   "sem_dado": false,
-   "icf": 14.268,
-   "ajustado": false,
-   "percentil": 0.316,
-   "fama": 0.377,
-   "peso": 0.271,
-   "pontos": 7
+   "icf": 15.489,
+   "ajustado": true,
+   "percentil": 0.453,
+   "fama": 0.32,
+   "peso": 0.191,
+   "pontos": 4
   },
   {
    "resposta": "Selênio",
@@ -508,8 +508,8 @@
    "ajustado": false,
    "percentil": 0.291,
    "fama": 0.351,
-   "peso": 0.255,
-   "pontos": 7
+   "peso": 0.203,
+   "pontos": 4
   },
   {
    "resposta": "Tungstênio",
@@ -524,50 +524,8 @@
    "ajustado": false,
    "percentil": 0.308,
    "fama": 0.367,
-   "peso": 0.266,
-   "pontos": 7
-  },
-  {
-   "resposta": "Boro",
-   "apelidos": [
-    "B"
-   ],
-   "sem_dado": false,
-   "icf": 14.341,
-   "ajustado": false,
-   "percentil": 0.325,
-   "fama": 0.384,
-   "peso": 0.282,
-   "pontos": 8
-  },
-  {
-   "resposta": "Radônio",
-   "apelidos": [
-    "Rn",
-    "radão",
-    "rádon",
-    "radónio"
-   ],
-   "sem_dado": false,
-   "icf": 16.293,
-   "ajustado": true,
-   "percentil": 0.547,
-   "fama": 0.4,
-   "peso": 0.288,
-   "pontos": 8
-  },
-  {
-   "resposta": "Rádio",
-   "apelidos": [
-    "Ra"
-   ],
-   "sem_dado": false,
-   "icf": 9.233,
-   "ajustado": true,
-   "percentil": 0.009,
-   "fama": 0.38,
-   "peso": 0.277,
-   "pontos": 8
+   "peso": 0.209,
+   "pontos": 4
   },
   {
    "resposta": "Arsênio",
@@ -582,8 +540,50 @@
    "ajustado": false,
    "percentil": 0.35,
    "fama": 0.406,
-   "peso": 0.293,
-   "pontos": 9
+   "peso": 0.223,
+   "pontos": 5
+  },
+  {
+   "resposta": "Boro",
+   "apelidos": [
+    "B"
+   ],
+   "sem_dado": false,
+   "icf": 14.341,
+   "ajustado": false,
+   "percentil": 0.325,
+   "fama": 0.384,
+   "peso": 0.217,
+   "pontos": 5
+  },
+  {
+   "resposta": "Radônio",
+   "apelidos": [
+    "Rn",
+    "radão",
+    "rádon",
+    "radónio"
+   ],
+   "sem_dado": false,
+   "icf": 16.293,
+   "ajustado": true,
+   "percentil": 0.547,
+   "fama": 0.4,
+   "peso": 0.22,
+   "pontos": 5
+  },
+  {
+   "resposta": "Rádio",
+   "apelidos": [
+    "Ra"
+   ],
+   "sem_dado": false,
+   "icf": 9.233,
+   "ajustado": true,
+   "percentil": 0.009,
+   "fama": 0.38,
+   "peso": 0.214,
+   "pontos": 5
   },
   {
    "resposta": "Ródio",
@@ -595,34 +595,8 @@
    "ajustado": false,
    "percentil": 0.359,
    "fama": 0.412,
-   "peso": 0.299,
-   "pontos": 9
-  },
-  {
-   "resposta": "Vanádio",
-   "apelidos": [
-    "V"
-   ],
-   "sem_dado": false,
-   "icf": 14.735,
-   "ajustado": false,
-   "percentil": 0.368,
-   "fama": 0.419,
-   "peso": 0.304,
-   "pontos": 9
-  },
-  {
-   "resposta": "Bário",
-   "apelidos": [
-    "Ba"
-   ],
-   "sem_dado": false,
-   "icf": 14.923,
-   "ajustado": false,
-   "percentil": 0.393,
-   "fama": 0.44,
-   "peso": 0.321,
-   "pontos": 10
+   "peso": 0.229,
+   "pontos": 5
   },
   {
    "resposta": "Césio",
@@ -634,8 +608,8 @@
    "ajustado": false,
    "percentil": 0.376,
    "fama": 0.426,
-   "peso": 0.31,
-   "pontos": 10
+   "peso": 0.242,
+   "pontos": 6
   },
   {
    "resposta": "Molibdênio",
@@ -648,8 +622,21 @@
    "ajustado": false,
    "percentil": 0.385,
    "fama": 0.432,
-   "peso": 0.315,
-   "pontos": 10
+   "peso": 0.248,
+   "pontos": 6
+  },
+  {
+   "resposta": "Vanádio",
+   "apelidos": [
+    "V"
+   ],
+   "sem_dado": false,
+   "icf": 14.735,
+   "ajustado": false,
+   "percentil": 0.368,
+   "fama": 0.419,
+   "peso": 0.236,
+   "pontos": 6
   },
   {
    "resposta": "Argônio",
@@ -665,21 +652,21 @@
    "ajustado": false,
    "percentil": 0.41,
    "fama": 0.454,
-   "peso": 0.331,
-   "pontos": 11
+   "peso": 0.267,
+   "pontos": 7
   },
   {
-   "resposta": "Bromo",
+   "resposta": "Bário",
    "apelidos": [
-    "Br"
+    "Ba"
    ],
    "sem_dado": false,
-   "icf": 15.321,
+   "icf": 14.923,
    "ajustado": false,
-   "percentil": 0.427,
-   "fama": 0.469,
-   "peso": 0.337,
-   "pontos": 11
+   "percentil": 0.393,
+   "fama": 0.44,
+   "peso": 0.255,
+   "pontos": 7
   },
   {
    "resposta": "Neodímio",
@@ -691,21 +678,21 @@
    "ajustado": false,
    "percentil": 0.402,
    "fama": 0.447,
-   "peso": 0.326,
-   "pontos": 11
+   "peso": 0.261,
+   "pontos": 7
   },
   {
-   "resposta": "Estrôncio",
+   "resposta": "Bromo",
    "apelidos": [
-    "Sr"
+    "Br"
    ],
    "sem_dado": false,
-   "icf": 15.559,
+   "icf": 15.321,
    "ajustado": false,
-   "percentil": 0.462,
-   "fama": 0.496,
-   "peso": 0.353,
-   "pontos": 12
+   "percentil": 0.427,
+   "fama": 0.469,
+   "peso": 0.274,
+   "pontos": 8
   },
   {
    "resposta": "Paládio",
@@ -717,8 +704,8 @@
    "ajustado": false,
    "percentil": 0.444,
    "fama": 0.482,
-   "peso": 0.348,
-   "pontos": 12
+   "peso": 0.287,
+   "pontos": 8
   },
   {
    "resposta": "Xenônio",
@@ -731,8 +718,8 @@
    "ajustado": false,
    "percentil": 0.436,
    "fama": 0.476,
-   "peso": 0.342,
-   "pontos": 12
+   "peso": 0.28,
+   "pontos": 8
   },
   {
    "resposta": "Antimônio",
@@ -745,8 +732,21 @@
    "ajustado": false,
    "percentil": 0.479,
    "fama": 0.509,
-   "peso": 0.364,
-   "pontos": 13
+   "peso": 0.306,
+   "pontos": 9
+  },
+  {
+   "resposta": "Estrôncio",
+   "apelidos": [
+    "Sr"
+   ],
+   "sem_dado": false,
+   "icf": 15.559,
+   "ajustado": false,
+   "percentil": 0.462,
+   "fama": 0.496,
+   "peso": 0.293,
+   "pontos": 9
   },
   {
    "resposta": "Germânio",
@@ -758,8 +758,8 @@
    "ajustado": false,
    "percentil": 0.47,
    "fama": 0.503,
-   "peso": 0.359,
-   "pontos": 13
+   "peso": 0.299,
+   "pontos": 9
   },
   {
    "resposta": "Tântalo",
@@ -772,8 +772,8 @@
    "ajustado": false,
    "percentil": 0.487,
    "fama": 0.515,
-   "peso": 0.37,
-   "pontos": 14
+   "peso": 0.312,
+   "pontos": 10
   },
   {
    "resposta": "Índio",
@@ -785,8 +785,8 @@
    "ajustado": true,
    "percentil": 0.094,
    "fama": 0.52,
-   "peso": 0.375,
-   "pontos": 14
+   "peso": 0.318,
+   "pontos": 10
   },
   {
    "resposta": "Berílio",
@@ -798,8 +798,8 @@
    "ajustado": false,
    "percentil": 0.496,
    "fama": 0.522,
-   "peso": 0.381,
-   "pontos": 15
+   "peso": 0.325,
+   "pontos": 11
   },
   {
    "resposta": "Bismuto",
@@ -811,8 +811,8 @@
    "ajustado": false,
    "percentil": 0.504,
    "fama": 0.528,
-   "peso": 0.386,
-   "pontos": 15
+   "peso": 0.331,
+   "pontos": 11
   },
   {
    "resposta": "Zircônio",
@@ -825,8 +825,8 @@
    "ajustado": false,
    "percentil": 0.513,
    "fama": 0.534,
-   "peso": 0.392,
-   "pontos": 15
+   "peso": 0.338,
+   "pontos": 11
   },
   {
    "resposta": "Gálio",
@@ -838,8 +838,8 @@
    "ajustado": false,
    "percentil": 0.521,
    "fama": 0.541,
-   "peso": 0.397,
-   "pontos": 16
+   "peso": 0.344,
+   "pontos": 12
   },
   {
    "resposta": "Tório",
@@ -851,8 +851,8 @@
    "ajustado": true,
    "percentil": 0.419,
    "fama": 0.55,
-   "peso": 0.403,
-   "pontos": 16
+   "peso": 0.35,
+   "pontos": 12
   },
   {
    "resposta": "Cério",
@@ -864,8 +864,8 @@
    "ajustado": false,
    "percentil": 0.538,
    "fama": 0.56,
-   "peso": 0.413,
-   "pontos": 17
+   "peso": 0.363,
+   "pontos": 13
   },
   {
    "resposta": "Irídio",
@@ -877,21 +877,8 @@
    "ajustado": false,
    "percentil": 0.53,
    "fama": 0.552,
-   "peso": 0.408,
-   "pontos": 17
-  },
-  {
-   "resposta": "Gadolínio",
-   "apelidos": [
-    "Gd"
-   ],
-   "sem_dado": false,
-   "icf": 16.649,
-   "ajustado": false,
-   "percentil": 0.59,
-   "fama": 0.601,
-   "peso": 0.43,
-   "pontos": 18
+   "peso": 0.357,
+   "pontos": 13
   },
   {
    "resposta": "Tálio",
@@ -903,8 +890,8 @@
    "ajustado": false,
    "percentil": 0.564,
    "fama": 0.58,
-   "peso": 0.419,
-   "pontos": 18
+   "peso": 0.369,
+   "pontos": 14
   },
   {
    "resposta": "Ósmio",
@@ -916,8 +903,21 @@
    "ajustado": false,
    "percentil": 0.581,
    "fama": 0.592,
-   "peso": 0.424,
-   "pontos": 18
+   "peso": 0.376,
+   "pontos": 14
+  },
+  {
+   "resposta": "Gadolínio",
+   "apelidos": [
+    "Gd"
+   ],
+   "sem_dado": false,
+   "icf": 16.649,
+   "ajustado": false,
+   "percentil": 0.59,
+   "fama": 0.601,
+   "peso": 0.382,
+   "pontos": 15
   },
   {
    "resposta": "Rutênio",
@@ -930,47 +930,8 @@
    "ajustado": false,
    "percentil": 0.598,
    "fama": 0.607,
-   "peso": 0.435,
-   "pontos": 19
-  },
-  {
-   "resposta": "Telúrio",
-   "apelidos": [
-    "Te"
-   ],
-   "sem_dado": false,
-   "icf": 16.682,
-   "ajustado": false,
-   "percentil": 0.607,
-   "fama": 0.613,
-   "peso": 0.441,
-   "pontos": 19
-  },
-  {
-   "resposta": "Amerício",
-   "apelidos": [
-    "Am"
-   ],
-   "sem_dado": false,
-   "icf": 17.548,
-   "ajustado": true,
-   "percentil": 0.701,
-   "fama": 0.62,
-   "peso": 0.454,
-   "pontos": 21
-  },
-  {
-   "resposta": "Califórnio",
-   "apelidos": [
-    "Cf"
-   ],
-   "sem_dado": false,
-   "icf": 18.009,
-   "ajustado": true,
-   "percentil": 0.769,
-   "fama": 0.62,
-   "peso": 0.454,
-   "pontos": 21
+   "peso": 0.389,
+   "pontos": 15
   },
   {
    "resposta": "Tecnécio",
@@ -982,8 +943,47 @@
    "ajustado": true,
    "percentil": 0.556,
    "fama": 0.62,
-   "peso": 0.454,
-   "pontos": 21
+   "peso": 0.401,
+   "pontos": 16
+  },
+  {
+   "resposta": "Telúrio",
+   "apelidos": [
+    "Te"
+   ],
+   "sem_dado": false,
+   "icf": 16.682,
+   "ajustado": false,
+   "percentil": 0.607,
+   "fama": 0.613,
+   "peso": 0.395,
+   "pontos": 16
+  },
+  {
+   "resposta": "Amerício",
+   "apelidos": [
+    "Am"
+   ],
+   "sem_dado": false,
+   "icf": 17.548,
+   "ajustado": true,
+   "percentil": 0.701,
+   "fama": 0.62,
+   "peso": 0.408,
+   "pontos": 17
+  },
+  {
+   "resposta": "Califórnio",
+   "apelidos": [
+    "Cf"
+   ],
+   "sem_dado": false,
+   "icf": 18.009,
+   "ajustado": true,
+   "percentil": 0.769,
+   "fama": 0.62,
+   "peso": 0.414,
+   "pontos": 17
   },
   {
    "resposta": "Lantânio",
@@ -995,8 +995,8 @@
    "ajustado": false,
    "percentil": 0.615,
    "fama": 0.621,
-   "peso": 0.472,
-   "pontos": 22
+   "peso": 0.42,
+   "pontos": 18
   },
   {
    "resposta": "Rubídio",
@@ -1008,8 +1008,8 @@
    "ajustado": false,
    "percentil": 0.624,
    "fama": 0.628,
-   "peso": 0.481,
-   "pontos": 23
+   "peso": 0.427,
+   "pontos": 18
   },
   {
    "resposta": "Cúrio",
@@ -1021,8 +1021,8 @@
    "ajustado": false,
    "percentil": 0.632,
    "fama": 0.635,
-   "peso": 0.49,
-   "pontos": 24
+   "peso": 0.433,
+   "pontos": 19
   },
   {
    "resposta": "Ítrio",
@@ -1034,8 +1034,8 @@
    "ajustado": false,
    "percentil": 0.641,
    "fama": 0.641,
-   "peso": 0.499,
-   "pontos": 25
+   "peso": 0.44,
+   "pontos": 19
   },
   {
    "resposta": "Rênio",
@@ -1049,8 +1049,8 @@
    "ajustado": false,
    "percentil": 0.65,
    "fama": 0.647,
-   "peso": 0.508,
-   "pontos": 26
+   "peso": 0.446,
+   "pontos": 20
   },
   {
    "resposta": "Frâncio",
@@ -1062,8 +1062,8 @@
    "ajustado": true,
    "percentil": 0.675,
    "fama": 0.65,
-   "peso": 0.517,
-   "pontos": 27
+   "peso": 0.455,
+   "pontos": 21
   },
   {
    "resposta": "Criptônio",
@@ -1076,21 +1076,8 @@
    "ajustado": false,
    "percentil": 0.658,
    "fama": 0.655,
-   "peso": 0.525,
-   "pontos": 28
-  },
-  {
-   "resposta": "Escândio",
-   "apelidos": [
-    "Sc"
-   ],
-   "sem_dado": false,
-   "icf": 17.479,
-   "ajustado": false,
-   "percentil": 0.684,
-   "fama": 0.678,
-   "peso": 0.543,
-   "pontos": 29
+   "peso": 0.465,
+   "pontos": 22
   },
   {
    "resposta": "Samário",
@@ -1102,8 +1089,21 @@
    "ajustado": false,
    "percentil": 0.667,
    "fama": 0.662,
-   "peso": 0.534,
-   "pontos": 29
+   "peso": 0.475,
+   "pontos": 23
+  },
+  {
+   "resposta": "Escândio",
+   "apelidos": [
+    "Sc"
+   ],
+   "sem_dado": false,
+   "icf": 17.479,
+   "ajustado": false,
+   "percentil": 0.684,
+   "fama": 0.678,
+   "peso": 0.485,
+   "pontos": 24
   },
   {
    "resposta": "Érbio",
@@ -1115,8 +1115,8 @@
    "ajustado": false,
    "percentil": 0.692,
    "fama": 0.685,
-   "peso": 0.552,
-   "pontos": 30
+   "peso": 0.496,
+   "pontos": 25
   },
   {
    "resposta": "Európio",
@@ -1128,8 +1128,8 @@
    "ajustado": false,
    "percentil": 0.709,
    "fama": 0.698,
-   "peso": 0.561,
-   "pontos": 31
+   "peso": 0.506,
+   "pontos": 26
   },
   {
    "resposta": "Túlio",
@@ -1141,8 +1141,8 @@
    "ajustado": true,
    "percentil": 0.214,
    "fama": 0.7,
-   "peso": 0.57,
-   "pontos": 32
+   "peso": 0.516,
+   "pontos": 27
   },
   {
    "resposta": "Háfnio",
@@ -1154,8 +1154,8 @@
    "ajustado": false,
    "percentil": 0.726,
    "fama": 0.711,
-   "peso": 0.579,
-   "pontos": 34
+   "peso": 0.526,
+   "pontos": 28
   },
   {
    "resposta": "Actínio",
@@ -1167,8 +1167,8 @@
    "ajustado": false,
    "percentil": 0.735,
    "fama": 0.717,
-   "peso": 0.588,
-   "pontos": 35
+   "peso": 0.536,
+   "pontos": 29
   },
   {
    "resposta": "Itérbio",
@@ -1180,8 +1180,8 @@
    "ajustado": false,
    "percentil": 0.744,
    "fama": 0.725,
-   "peso": 0.597,
-   "pontos": 36
+   "peso": 0.546,
+   "pontos": 30
   },
   {
    "resposta": "Mendelévio",
@@ -1193,8 +1193,8 @@
    "ajustado": false,
    "percentil": 0.752,
    "fama": 0.731,
-   "peso": 0.605,
-   "pontos": 37
+   "peso": 0.556,
+   "pontos": 31
   },
   {
    "resposta": "Lutécio",
@@ -1206,8 +1206,8 @@
    "ajustado": false,
    "percentil": 0.761,
    "fama": 0.737,
-   "peso": 0.614,
-   "pontos": 38
+   "peso": 0.566,
+   "pontos": 32
   },
   {
    "resposta": "Praseodímio",
@@ -1219,8 +1219,8 @@
    "ajustado": false,
    "percentil": 0.778,
    "fama": 0.752,
-   "peso": 0.623,
-   "pontos": 39
+   "peso": 0.576,
+   "pontos": 33
   },
   {
    "resposta": "Térbio",
@@ -1232,8 +1232,8 @@
    "ajustado": false,
    "percentil": 0.786,
    "fama": 0.759,
-   "peso": 0.632,
-   "pontos": 40
+   "peso": 0.586,
+   "pontos": 34
   },
   {
    "resposta": "Promécio",
@@ -1245,8 +1245,8 @@
    "ajustado": false,
    "percentil": 0.795,
    "fama": 0.765,
-   "peso": 0.641,
-   "pontos": 41
+   "peso": 0.597,
+   "pontos": 36
   },
   {
    "resposta": "Astato",
@@ -1260,8 +1260,8 @@
    "ajustado": false,
    "percentil": 0.803,
    "fama": 0.772,
-   "peso": 0.65,
-   "pontos": 42
+   "peso": 0.607,
+   "pontos": 37
   },
   {
    "resposta": "Disprósio",
@@ -1273,8 +1273,8 @@
    "ajustado": false,
    "percentil": 0.812,
    "fama": 0.779,
-   "peso": 0.659,
-   "pontos": 43
+   "peso": 0.617,
+   "pontos": 38
   },
   {
    "resposta": "Hôlmio",
@@ -1287,8 +1287,8 @@
    "ajustado": false,
    "percentil": 0.821,
    "fama": 0.786,
-   "peso": 0.668,
-   "pontos": 45
+   "peso": 0.627,
+   "pontos": 39
   },
   {
    "resposta": "Protactínio",
@@ -1300,8 +1300,8 @@
    "ajustado": false,
    "percentil": 0.829,
    "fama": 0.792,
-   "peso": 0.677,
-   "pontos": 46
+   "peso": 0.637,
+   "pontos": 41
   },
   {
    "resposta": "Einstênio",
@@ -1314,8 +1314,8 @@
    "ajustado": false,
    "percentil": 0.838,
    "fama": 0.798,
-   "peso": 0.685,
-   "pontos": 47
+   "peso": 0.647,
+   "pontos": 42
   },
   {
    "resposta": "Laurêncio",
@@ -1328,8 +1328,8 @@
    "ajustado": true,
    "percentil": 0.718,
    "fama": 0.8,
-   "peso": 0.694,
-   "pontos": 48
+   "peso": 0.657,
+   "pontos": 43
   },
   {
    "resposta": "Berquélio",
@@ -1342,8 +1342,8 @@
    "ajustado": false,
    "percentil": 0.846,
    "fama": 0.808,
-   "peso": 0.703,
-   "pontos": 49
+   "peso": 0.667,
+   "pontos": 44
   },
   {
    "resposta": "Netúnio",
@@ -1356,8 +1356,8 @@
    "ajustado": false,
    "percentil": 0.855,
    "fama": 0.814,
-   "peso": 0.715,
-   "pontos": 51
+   "peso": 0.677,
+   "pontos": 46
   },
   {
    "resposta": "Férmio",
@@ -1369,8 +1369,8 @@
    "ajustado": false,
    "percentil": 0.863,
    "fama": 0.822,
-   "peso": 0.729,
-   "pontos": 53
+   "peso": 0.687,
+   "pontos": 47
   },
   {
    "resposta": "Nobélio",
@@ -1382,8 +1382,8 @@
    "ajustado": false,
    "percentil": 0.872,
    "fama": 0.829,
-   "peso": 0.742,
-   "pontos": 55
+   "peso": 0.698,
+   "pontos": 49
   },
   {
    "resposta": "Seabórgio",
@@ -1395,8 +1395,8 @@
    "ajustado": false,
    "percentil": 0.88,
    "fama": 0.836,
-   "peso": 0.756,
-   "pontos": 57
+   "peso": 0.708,
+   "pontos": 50
   },
   {
    "resposta": "Hássio",
@@ -1408,8 +1408,8 @@
    "ajustado": false,
    "percentil": 0.889,
    "fama": 0.847,
-   "peso": 0.77,
-   "pontos": 59
+   "peso": 0.725,
+   "pontos": 53
   },
   {
    "resposta": "Bóhrio",
@@ -1421,8 +1421,8 @@
    "ajustado": false,
    "percentil": 0.897,
    "fama": 0.853,
-   "peso": 0.784,
-   "pontos": 61
+   "peso": 0.742,
+   "pontos": 55
   },
   {
    "resposta": "Rutherfórdio",
@@ -1434,8 +1434,8 @@
    "ajustado": false,
    "percentil": 0.906,
    "fama": 0.86,
-   "peso": 0.798,
-   "pontos": 64
+   "peso": 0.76,
+   "pontos": 58
   },
   {
    "resposta": "Dúbnio",
@@ -1447,8 +1447,8 @@
    "ajustado": false,
    "percentil": 0.915,
    "fama": 0.866,
-   "peso": 0.812,
-   "pontos": 66
+   "peso": 0.777,
+   "pontos": 60
   },
   {
    "resposta": "Meitnério",
@@ -1460,8 +1460,8 @@
    "ajustado": false,
    "percentil": 0.923,
    "fama": 0.872,
-   "peso": 0.825,
-   "pontos": 68
+   "peso": 0.794,
+   "pontos": 63
   },
   {
    "resposta": "Roentgênio",
@@ -1474,8 +1474,8 @@
    "ajustado": false,
    "percentil": 0.932,
    "fama": 0.882,
-   "peso": 0.839,
-   "pontos": 70
+   "peso": 0.812,
+   "pontos": 66
   },
   {
    "resposta": "Copernício",
@@ -1488,8 +1488,8 @@
    "ajustado": false,
    "percentil": 0.957,
    "fama": 0.905,
-   "peso": 0.881,
-   "pontos": 78
+   "peso": 0.829,
+   "pontos": 69
   },
   {
    "resposta": "Darmstácio",
@@ -1501,8 +1501,8 @@
    "ajustado": false,
    "percentil": 0.957,
    "fama": 0.905,
-   "peso": 0.881,
-   "pontos": 78
+   "peso": 0.846,
+   "pontos": 72
   },
   {
    "resposta": "Fleróvio",
@@ -1514,8 +1514,8 @@
    "ajustado": false,
    "percentil": 0.957,
    "fama": 0.905,
-   "peso": 0.881,
-   "pontos": 78
+   "peso": 0.864,
+   "pontos": 75
   },
   {
    "resposta": "Livermório",
@@ -1544,8 +1544,8 @@
    "ajustado": false,
    "percentil": 0.957,
    "fama": 0.905,
-   "peso": 0.881,
-   "pontos": 78
+   "peso": 0.898,
+   "pontos": 81
   },
   {
    "resposta": "Moscóvio",
@@ -1557,8 +1557,8 @@
    "ajustado": false,
    "percentil": 0.983,
    "fama": 0.923,
-   "peso": 0.922,
-   "pontos": 85
+   "peso": 0.915,
+   "pontos": 84
   },
   {
    "resposta": "Tenessínio",
@@ -1572,8 +1572,8 @@
    "ajustado": false,
    "percentil": 0.991,
    "fama": 0.939,
-   "peso": 0.936,
-   "pontos": 88
+   "peso": 0.933,
+   "pontos": 87
   },
   {
    "resposta": "Oganessônio",
