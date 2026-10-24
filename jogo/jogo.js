@@ -126,6 +126,20 @@ const $ = (id) => document.getElementById(id);
 const cena = criarCena($("cena"), $("camada"), $("tela"));
 const numero = (n) => Math.round(n).toLocaleString("pt-BR");
 
+const ICONE_NORMAL = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB1ElEQVR42mNgGGpgb4GZIBDbAHEkEGdAcSRUTJBWljJDLVkMxPd5uJT+Y8MgOagakFpmalkOMuwgLkvxOOYgSC+lQT2FVIuxOGQKyVED1KAAxJsotRzJEZtAZpLic6pZjuYIQWIcMIXaliNHB8EERyvLkRwRiS+rHaSDAw5izaL4fD8vz/P/6s4sMO2pqwlmI/Nh8iA22aEAKkBgCmCGgnB7oMH/Dwe6/t+dFQXG+Pgw9TC9uBwEsgtbygeXcCADQBhmAVAcziaVj+wJZMdAS0xBZAfYwCSzLJTBhsAMmuyrQhEfxoZ5DMkRNljjH+QAZEOQ2cTy0cVEOJj/C3AIoIQESjoA1WjoDoDhNCMJgnxkMXQ+OgaZD3VABlYHeKlJYxiIz0JiHIkuJ8PNjuEAeBToiArBLQFhKykeDD42MXx8GAZ5DmSHv7YyRhTAEyHMlbCQIBeD9KNjkOdwJUJwNoRZju4YkEYYJlUMT8MFtWJ6c3bVx2mtNSgKkeMcFKzkiBFVEOErimEGwQwG4WdnN/xfM6sLLo5sGTGOwFUU46yMYBYGOLgyBXHhILFYWqQxZD1EqyMBrw6HhQNkkHRJBvwRumgaJYPio7JoOmaDYrOKS0BAGTOdtvDi52IAAAAAElFTkSuQmCC";
+const ICONE_OURO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB1UlEQVR42mNgGGrgzhYjQSC2AeJIIM6A4kiomCCtLGWGWrIYiO/zcCn9x4ZBclA1ILXM1LIcZNhBXJbiccxBkF5Kg3oKqRZjccgUkqMGqEEBiDdRajmSIzaBzCTF51SzHM0RgsQ4YAq1LUeODoIJjlaWIzkiEl9WO0gHBxzEmkXx+X7z3JD/29Z2gekIDw0wG5kPkwexyQ4FUAECUwAzFISXtuv9//9lx//fd7LAGB8fph6mF5eDQHZhS/ngEg5kAAjDLHix1wTOJpWP7Alkx0BLTEFkB9jAJHsyZcGGwAw6PEmGIj6MDfMYkiNssMY/yAHIhiCzieWji4lwMP8X4BBACQmUdACq0dAdAMP9KQIE+chi6Hx0DDIf6oAMrA5I9xTFMBCfhcQ4El1OhpsdwwHwKHDS5oNbAsJRVmwYfGxi+PgwDPIc2JN+8hhRAE+EMFfCQoJcDNKPjkGew5UIwdkQZjm6Y0AaYZhUMTwNF9SK6f2VVR+ntdagKESOc1CwkiNGVEGEryiGGQQzGISfnd3wf82sLrg4smXEOAJXUYyzMoJZGODogiFXHBMKFoepQRZD1kuwMhrw6nhQNEgGRZNswBulg6JZPig6JoOmazYoOqe0BACefvToToydtwAAAABJRU5ErkJggg==";
+
+function atualizarIconeAba(dourado = false) {
+  let link = document.querySelector("link[rel*='icon']");
+  if (!link) {
+    link = document.createElement("link");
+    link.rel = "icon";
+    document.head.appendChild(link);
+  }
+  link.type = "image/png";
+  link.href = dourado ? ICONE_OURO : ICONE_NORMAL;
+}
+
 const estado = {
   data: hojeLocal(),
   categorias: [],
@@ -185,7 +199,7 @@ function iniciar() {
     estado.total = estado.totalMostrado = salvo.total;
     estado.rodada = salvo.historico.length;
     cena.irPara(profundidade());
-    if (salvo.historico.some((h) => h.supernova)) cena.dourado(false);
+    if (salvo.historico.some((h) => h.supernova)) { cena.dourado(false); atualizarIconeAba(true); }
     $("pontos").textContent = numero(estado.total);
   }
   montarQuadrados();
@@ -508,7 +522,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   }
   const ultima = estado.rodada + 1 >= estado.categorias.length;
   $("proxima").textContent = ultima ? "VOLTAR ▲" : "VIAJAR ▼";
-  if (supernova) cena.dourado(true);
+  if (supernova) { cena.dourado(true); atualizarIconeAba(true); }
   card.hidden = false;
   cena.resultado();
   if (supernova) Som.supernova();
