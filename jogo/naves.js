@@ -244,5 +244,51 @@ function criarNaves() {
     g.globalCompositeOperation = "source-over";
   }
 
-  return { satelite, iss, lua, planeta, cometa, voyager, pilares };
+  // Nebulosa de Órion: nuvem macia rosa e avermelhada, com um "buraco" azul-esverdeado
+  // iluminado no meio e as quatro estrelinhas do Trapézio. Sem pixel duro, some nas bordas.
+  const orion = tela(240, 180);
+  {
+    const W = 240, H = 180;
+    const g = orion.getContext("2d");
+    const hash = (k, j) => { const v = Math.sin(k * 12.9898 + j * 78.233) * 43758.5453; return v - Math.floor(v); };
+    const mancha = (x, y, r, cor, a) => {
+      const gr = g.createRadialGradient(x, y, 0, x, y, r);
+      gr.addColorStop(0, `rgba(${cor}, ${a})`);
+      gr.addColorStop(1, `rgba(${cor}, 0)`);
+      g.fillStyle = gr;
+      g.fillRect(x - r, y - r, r * 2, r * 2);
+    };
+    // asas de gás em arco, como a forma de "pássaro" da foto
+    for (let k = 0; k < 70; k++) {
+      const t = hash(k, 1) * Math.PI * 1.6 - Math.PI * 0.3;
+      const raio = 45 + hash(k, 2) * 50;
+      const x = W / 2 + Math.cos(t) * raio * 1.2, y = H / 2 + Math.sin(t) * raio * 0.75;
+      const cor = hash(k, 3) < 0.55 ? "220, 80, 130" : hash(k, 3) < 0.85 ? "180, 60, 90" : "240, 150, 120";
+      mancha(x, y, 16 + hash(k, 4) * 34, cor, 0.16 + hash(k, 5) * 0.16);
+    }
+    // miolo claro azul-esverdeado
+    mancha(W / 2, H / 2, 60, "110, 200, 210", 0.4);
+    mancha(W / 2 - 6, H / 2 - 4, 30, "200, 240, 230", 0.3);
+    // filamentos escuros de poeira por cima
+    g.globalCompositeOperation = "destination-out";
+    for (let k = 0; k < 14; k++) {
+      mancha(W / 2 + (hash(k, 7) - 0.5) * 180, H / 2 + (hash(k, 8) - 0.3) * 120, 10 + hash(k, 9) * 18, "0,0,0", 0.35);
+    }
+    g.globalCompositeOperation = "source-over";
+    // Trapézio: quatro estrelas no meio
+    for (const [dx, dy] of [[-4, -3], [4, -2], [-2, 4], [5, 5]]) {
+      mancha(W / 2 + dx, H / 2 + dy, 2.5, "255, 255, 255", 1);
+    }
+    for (let k = 0; k < 14; k++) mancha(hash(k, 11) * W, hash(k, 12) * H, 2 + hash(k, 13) * 2, "255, 240, 230", 0.8);
+    // some nas bordas
+    g.globalCompositeOperation = "destination-in";
+    const fade = g.createRadialGradient(W / 2, H / 2, 30, W / 2, H / 2, 120);
+    fade.addColorStop(0, "rgba(0,0,0,1)");
+    fade.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = fade;
+    g.fillRect(0, 0, W, H);
+    g.globalCompositeOperation = "source-over";
+  }
+
+  return { satelite, iss, lua, planeta, cometa, voyager, pilares, orion };
 }

@@ -966,12 +966,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
         desenharNave(naves.voyager, L * 0.26 * escala, naTelaTexto(m.al) + 30, pz, -0.25 + Math.sin(tempo * 0.2) * 0.08, "rgba(210, 225, 255, 0.5)");
       }
       if (m.nebulosa) {
-        for (let i = 0; i < 500; i++) {
-          const a = sorte(i, 7) * Math.PI * 2;
-          const d = Math.sqrt(sorte(i, 8)) * 60;
-          ctx.fillStyle = i % 3 ? "rgba(255, 79, 216, 0.28)" : "rgba(95, 225, 255, 0.28)";
-          ctx.fillRect(Math.round(L * 0.7 + Math.cos(a) * d * 1.5), Math.round(y + Math.sin(a) * d * 0.6), 2, 2);
-        }
+        // nebulosa macia, misturada ao fundo (soma luz, não cobre)
+        const img = naves.orion;
+        const largo = Math.min(innerWidth * 0.9, innerHeight * 1.3);
+        const alto = largo * (img.height / img.width);
+        tx.save();
+        tx.globalCompositeOperation = "lighter";
+        tx.globalAlpha = 1;
+        tx.imageSmoothingEnabled = true;
+        tx.drawImage(img, innerWidth * 0.55 - largo / 2, naTelaTexto(m.al) - alto / 2, largo, alto);
+        tx.restore();
       }
     }
   }
@@ -981,7 +985,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // grandes, no meio, misturados ao céu (somam luz, não cobrem), e sobem bem devagar.
   function desenharPanoDeFundo() {
     const al = camera.atual;
-    const surge = Math.min(1, Math.max(0, (al - 4500) / 2500));
+    // aparece de 4.500 a 7.000 AL e vai embora entre 9.500 e 11.000 (dá lugar à Nebulosa de Órion)
+    const surge = Math.min(1, Math.max(0, (al - 4500) / 2500)) * Math.min(1, Math.max(0, (11000 - al) / 1500));
     if (surge <= 0) return;
     const img = naves.pilares;
     const H = innerHeight, W = innerWidth;
