@@ -8,7 +8,9 @@
    "apelidos": [
     "tiranossauro",
     "t-rex",
-    "tiranosauro"
+    "tiranosauro",
+    "Tyrannosaurus",
+    "Tyrannossauro"
    ],
    "sem_dado": false,
    "icf": 14.99,
@@ -36,22 +38,6 @@
    "peso": 0.3
   },
   {
-   "resposta": "Velociraptor",
-   "apelidos": [
-    "raptor"
-   ],
-   "sem_dado": false,
-   "icf": 14.172,
-   "lembranca": 120.0,
-   "conhecem": 98.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.001,
-   "fama": 0.001,
-   "pontos": 9,
-   "peso": 0.3
-  },
-  {
    "resposta": "Brontossauro",
    "apelidos": [
     "brontosaurus"
@@ -64,6 +50,22 @@
    "ajustado": true,
    "percentil": 0.002,
    "fama": 0.002,
+   "pontos": 10,
+   "peso": 0.316
+  },
+  {
+   "resposta": "Velociraptor",
+   "apelidos": [
+    "raptor"
+   ],
+   "sem_dado": false,
+   "icf": 14.172,
+   "lembranca": 120.0,
+   "conhecem": 98.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.001,
+   "fama": 0.001,
    "pontos": 10,
    "peso": 0.316
   },
@@ -84,23 +86,6 @@
    "peso": 0.332
   },
   {
-   "resposta": "Braquiossauro",
-   "apelidos": [
-    "brachiosaurus",
-    "Brachiossauro"
-   ],
-   "sem_dado": false,
-   "icf": 17.054,
-   "lembranca": 20.0,
-   "conhecem": 88.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.004,
-   "fama": 0.004,
-   "pontos": 12,
-   "peso": 0.346
-  },
-  {
    "resposta": "Estegossauro",
    "apelidos": [
     "stegosaurus",
@@ -116,6 +101,23 @@
    "fama": 0.003,
    "pontos": 12,
    "peso": 0.346
+  },
+  {
+   "resposta": "Braquiossauro",
+   "apelidos": [
+    "brachiosaurus",
+    "Brachiossauro"
+   ],
+   "sem_dado": false,
+   "icf": 17.054,
+   "lembranca": 20.0,
+   "conhecem": 88.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.004,
+   "fama": 0.004,
+   "pontos": 13,
+   "peso": 0.361
   },
   {
    "resposta": "Diplodoco",
@@ -134,6 +136,23 @@
    "peso": 0.361
   },
   {
+   "resposta": "Anquilossauro",
+   "apelidos": [
+    "ankylosaurus",
+    "Ankylossauro"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": 6.0,
+   "conhecem": 75.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.005,
+   "fama": 0.005,
+   "pontos": 14,
+   "peso": 0.374
+  },
+  {
    "resposta": "Espinossauro",
    "apelidos": [
     "spinosaurus",
@@ -147,39 +166,6 @@
    "ajustado": true,
    "percentil": 0.005,
    "fama": 0.005,
-   "pontos": 14,
-   "peso": 0.374
-  },
-  {
-   "resposta": "Tyrannosaurus",
-   "apelidos": [
-    "Tyrannossauro"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "lembranca": 30.0,
-   "conhecem": 99.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.005,
-   "fama": 0.005,
-   "pontos": 14,
-   "peso": 0.374
-  },
-  {
-   "resposta": "Anquilossauro",
-   "apelidos": [
-    "ankylosaurus",
-    "Ankylossauro"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "lembranca": 6.0,
-   "conhecem": 75.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.006,
-   "fama": 0.006,
    "pontos": 15,
    "peso": 0.387
   },
@@ -195,8 +181,8 @@
    "conhecem": 65.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.007,
-   "fama": 0.007,
+   "percentil": 0.006,
+   "fama": 0.006,
    "pontos": 18,
    "peso": 0.424
   },
@@ -217,6 +203,38 @@
    "peso": 0.447
   },
   {
+   "resposta": "Mosassauro",
+   "apelidos": [
+    "mosasaurus"
+   ],
+   "sem_dado": false,
+   "icf": 18.511,
+   "lembranca": 2.0,
+   "conhecem": 55.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.007,
+   "fama": 0.007,
+   "pontos": 21,
+   "peso": 0.458
+  },
+  {
+   "resposta": "Carnotauro",
+   "apelidos": [
+    "carnotaurus"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": 1.0,
+   "conhecem": 45.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.008,
+   "fama": 0.008,
+   "pontos": 23,
+   "peso": 0.48
+  },
+  {
    "resposta": "Dilofossauro",
    "apelidos": [
     "dilophosaurus",
@@ -230,38 +248,6 @@
    "ajustado": true,
    "percentil": 0.008,
    "fama": 0.008,
-   "pontos": 21,
-   "peso": 0.458
-  },
-  {
-   "resposta": "Mosassauro",
-   "apelidos": [
-    "mosasaurus"
-   ],
-   "sem_dado": false,
-   "icf": 18.511,
-   "lembranca": 2.0,
-   "conhecem": 55.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.008,
-   "fama": 0.008,
-   "pontos": 23,
-   "peso": 0.48
-  },
-  {
-   "resposta": "Carnotauro",
-   "apelidos": [
-    "carnotaurus"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "lembranca": 1.0,
-   "conhecem": 45.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.009,
-   "fama": 0.009,
    "pontos": 24,
    "peso": 0.49
   },
@@ -276,8 +262,8 @@
    "conhecem": 45.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.01,
-   "fama": 0.01,
+   "percentil": 0.009,
+   "fama": 0.009,
    "pontos": 26,
    "peso": 0.51
   },
@@ -292,10 +278,26 @@
    "conhecem": 45.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.01,
-   "fama": 0.01,
+   "percentil": 0.009,
+   "fama": 0.009,
    "pontos": 28,
    "peso": 0.529
+  },
+  {
+   "resposta": "Apatossauro",
+   "apelidos": [
+    "apatosaurus"
+   ],
+   "sem_dado": false,
+   "icf": 17.854,
+   "lembranca": 1.0,
+   "conhecem": 40.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.011,
+   "fama": 0.011,
+   "pontos": 29,
+   "peso": 0.539
   },
   {
    "resposta": "Giganotossauro",
@@ -310,8 +312,8 @@
    "ajustado": true,
    "percentil": 0.011,
    "fama": 0.011,
-   "pontos": 29,
-   "peso": 0.539
+   "pontos": 31,
+   "peso": 0.557
   },
   {
    "resposta": "Paquicefalossauro",
@@ -327,22 +329,6 @@
    "ajustado": true,
    "percentil": 0.011,
    "fama": 0.011,
-   "pontos": 31,
-   "peso": 0.557
-  },
-  {
-   "resposta": "Apatossauro",
-   "apelidos": [
-    "apatosaurus"
-   ],
-   "sem_dado": false,
-   "icf": 17.854,
-   "lembranca": 1.0,
-   "conhecem": 40.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.012,
-   "fama": 0.012,
    "pontos": 32,
    "peso": 0.566
   },
@@ -357,26 +343,10 @@
    "conhecem": 45.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.013,
-   "fama": 0.013,
+   "percentil": 0.012,
+   "fama": 0.012,
    "pontos": 34,
    "peso": 0.583
-  },
-  {
-   "resposta": "Arqueoptérix",
-   "apelidos": [
-    "archaeopteryx"
-   ],
-   "sem_dado": false,
-   "icf": 19.325,
-   "lembranca": 0.5,
-   "conhecem": 35.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.014,
-   "fama": 0.014,
-   "pontos": 35,
-   "peso": 0.592
   },
   {
    "resposta": "Ceratosaurus",
@@ -389,10 +359,10 @@
    "conhecem": 40.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.014,
-   "fama": 0.014,
-   "pontos": 36,
-   "peso": 0.6
+   "percentil": 0.013,
+   "fama": 0.013,
+   "pontos": 35,
+   "peso": 0.592
   },
   {
    "resposta": "Titanosaurus",
@@ -403,6 +373,22 @@
    "icf": 20.0,
    "lembranca": 0.3,
    "conhecem": 40.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.013,
+   "fama": 0.013,
+   "pontos": 36,
+   "peso": 0.6
+  },
+  {
+   "resposta": "Arqueoptérix",
+   "apelidos": [
+    "archaeopteryx"
+   ],
+   "sem_dado": false,
+   "icf": 19.325,
+   "lembranca": 0.5,
+   "conhecem": 35.0,
    "visitas": 0,
    "ajustado": true,
    "percentil": 0.014,
@@ -419,8 +405,8 @@
    "conhecem": 35.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.015,
-   "fama": 0.015,
+   "percentil": 0.014,
+   "fama": 0.014,
    "pontos": 38,
    "peso": 0.616
   },
@@ -435,10 +421,26 @@
    "conhecem": 35.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.016,
-   "fama": 0.016,
+   "percentil": 0.015,
+   "fama": 0.015,
    "pontos": 39,
    "peso": 0.624
+  },
+  {
+   "resposta": "Hadrosaurus",
+   "apelidos": [
+    "Hadrossauro"
+   ],
+   "sem_dado": false,
+   "icf": 18.277,
+   "lembranca": 0.1,
+   "conhecem": 35.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.016,
+   "fama": 0.016,
+   "pontos": 40,
+   "peso": 0.632
   },
   {
    "resposta": "Smilodon",
@@ -453,22 +455,6 @@
    "ajustado": true,
    "percentil": 0.016,
    "fama": 0.016,
-   "pontos": 40,
-   "peso": 0.632
-  },
-  {
-   "resposta": "Hadrosaurus",
-   "apelidos": [
-    "Hadrossauro"
-   ],
-   "sem_dado": false,
-   "icf": 18.277,
-   "lembranca": 0.1,
-   "conhecem": 35.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.017,
-   "fama": 0.017,
    "pontos": 41,
    "peso": 0.64
   },
@@ -500,8 +486,8 @@
    "conhecem": 30.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.018,
-   "fama": 0.018,
+   "percentil": 0.017,
+   "fama": 0.017,
    "pontos": 43,
    "peso": 0.656
   },
@@ -517,26 +503,10 @@
    "conhecem": 25.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.019,
-   "fama": 0.019,
+   "percentil": 0.018,
+   "fama": 0.018,
    "pontos": 44,
    "peso": 0.663
-  },
-  {
-   "resposta": "Carcharodontossauro",
-   "apelidos": [
-    "carcharodontosaurus"
-   ],
-   "sem_dado": true,
-   "icf": 20.0,
-   "lembranca": 0.1,
-   "conhecem": 15.0,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.02,
-   "fama": 0.02,
-   "pontos": 45,
-   "peso": 0.671
   },
   {
    "resposta": "Dimetrodonte",
@@ -549,10 +519,10 @@
    "conhecem": 25.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.02,
-   "fama": 0.02,
-   "pontos": 46,
-   "peso": 0.678
+   "percentil": 0.019,
+   "fama": 0.019,
+   "pontos": 45,
+   "peso": 0.671
   },
   {
    "resposta": "Terizinossauro",
@@ -564,6 +534,22 @@
    "icf": 20.0,
    "lembranca": 0.3,
    "conhecem": 25.0,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.019,
+   "fama": 0.019,
+   "pontos": 46,
+   "peso": 0.678
+  },
+  {
+   "resposta": "Carcharodontossauro",
+   "apelidos": [
+    "carcharodontosaurus"
+   ],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": 0.1,
+   "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
    "percentil": 0.02,
@@ -582,8 +568,8 @@
    "conhecem": 25.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.021,
-   "fama": 0.021,
+   "percentil": 0.02,
+   "fama": 0.02,
    "pontos": 49,
    "peso": 0.7
   },
@@ -598,8 +584,8 @@
    "conhecem": 25.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.022,
-   "fama": 0.022,
+   "percentil": 0.021,
+   "fama": 0.021,
    "pontos": 50,
    "peso": 0.707
   },
@@ -614,8 +600,8 @@
    "conhecem": 3.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 1.0,
-   "fama": 1.0,
+   "percentil": 0.999,
+   "fama": 0.999,
    "pontos": 50,
    "peso": 0.707
   },
@@ -650,10 +636,8 @@
    "peso": 0.721
   },
   {
-   "resposta": "Troodonte",
-   "apelidos": [
-    "troodon"
-   ],
+   "resposta": "Quetzalcoatlus",
+   "apelidos": [],
    "sem_dado": true,
    "icf": 20.0,
    "lembranca": 0.1,
@@ -666,16 +650,18 @@
    "peso": 0.728
   },
   {
-   "resposta": "Quetzalcoatlus",
-   "apelidos": [],
+   "resposta": "Troodonte",
+   "apelidos": [
+    "troodon"
+   ],
    "sem_dado": true,
    "icf": 20.0,
    "lembranca": 0.1,
    "conhecem": 20.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.024,
-   "fama": 0.024,
+   "percentil": 0.023,
+   "fama": 0.023,
    "pontos": 54,
    "peso": 0.735
   },
@@ -688,8 +674,8 @@
    "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.025,
-   "fama": 0.025,
+   "percentil": 0.024,
+   "fama": 0.024,
    "pontos": 55,
    "peso": 0.742
   },
@@ -704,8 +690,8 @@
    "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.026,
-   "fama": 0.026,
+   "percentil": 0.025,
+   "fama": 0.025,
    "pontos": 56,
    "peso": 0.748
   },
@@ -720,8 +706,8 @@
    "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.026,
-   "fama": 0.026,
+   "percentil": 0.025,
+   "fama": 0.025,
    "pontos": 57,
    "peso": 0.755
   },
@@ -770,8 +756,8 @@
    "conhecem": 20.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.029,
-   "fama": 0.029,
+   "percentil": 0.028,
+   "fama": 0.028,
    "pontos": 60,
    "peso": 0.775
   },
@@ -816,8 +802,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.044,
-   "fama": 0.044,
+   "percentil": 0.043,
+   "fama": 0.043,
    "pontos": 60,
    "peso": 0.775
   },
@@ -833,8 +819,8 @@
    "conhecem": 20.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.029,
-   "fama": 0.029,
+   "percentil": 0.028,
+   "fama": 0.028,
    "pontos": 60,
    "peso": 0.775
   },
@@ -861,8 +847,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.044,
-   "fama": 0.044,
+   "percentil": 0.043,
+   "fama": 0.043,
    "pontos": 60,
    "peso": 0.775
   },
@@ -877,8 +863,8 @@
    "conhecem": 20.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.027,
-   "fama": 0.027,
+   "percentil": 0.026,
+   "fama": 0.026,
    "pontos": 60,
    "peso": 0.775
   },
@@ -891,8 +877,8 @@
    "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.034,
-   "fama": 0.034,
+   "percentil": 0.033,
+   "fama": 0.033,
    "pontos": 60,
    "peso": 0.775
   },
@@ -937,8 +923,8 @@
    "conhecem": 20.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.029,
-   "fama": 0.029,
+   "percentil": 0.028,
+   "fama": 0.028,
    "pontos": 60,
    "peso": 0.775
   },
@@ -986,8 +972,8 @@
    "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.034,
-   "fama": 0.034,
+   "percentil": 0.033,
+   "fama": 0.033,
    "pontos": 60,
    "peso": 0.775
   },
@@ -1033,8 +1019,8 @@
    "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.035,
-   "fama": 0.035,
+   "percentil": 0.034,
+   "fama": 0.034,
    "pontos": 60,
    "peso": 0.775
   },
@@ -1066,8 +1052,8 @@
    "conhecem": 15.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.034,
-   "fama": 0.034,
+   "percentil": 0.033,
+   "fama": 0.033,
    "pontos": 60,
    "peso": 0.775
   },
@@ -1128,8 +1114,8 @@
    "conhecem": 20.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.029,
-   "fama": 0.029,
+   "percentil": 0.028,
+   "fama": 0.028,
    "pontos": 60,
    "peso": 0.775
   },
@@ -1234,8 +1220,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.073,
-   "fama": 0.073,
+   "percentil": 0.072,
+   "fama": 0.072,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1264,8 +1250,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.069,
-   "fama": 0.069,
+   "percentil": 0.068,
+   "fama": 0.068,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1281,8 +1267,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.054,
-   "fama": 0.054,
+   "percentil": 0.053,
+   "fama": 0.053,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1295,8 +1281,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.056,
-   "fama": 0.056,
+   "percentil": 0.055,
+   "fama": 0.055,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1309,8 +1295,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.049,
-   "fama": 0.049,
+   "percentil": 0.048,
+   "fama": 0.048,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1323,8 +1309,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.054,
-   "fama": 0.054,
+   "percentil": 0.053,
+   "fama": 0.053,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1337,8 +1323,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.054,
-   "fama": 0.054,
+   "percentil": 0.053,
+   "fama": 0.053,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1351,8 +1337,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.059,
-   "fama": 0.059,
+   "percentil": 0.058,
+   "fama": 0.058,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1367,8 +1353,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.046,
-   "fama": 0.046,
+   "percentil": 0.045,
+   "fama": 0.045,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1397,8 +1383,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.044,
-   "fama": 0.044,
+   "percentil": 0.043,
+   "fama": 0.043,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1441,8 +1427,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.044,
-   "fama": 0.044,
+   "percentil": 0.043,
+   "fama": 0.043,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1455,8 +1441,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.072,
-   "fama": 0.072,
+   "percentil": 0.071,
+   "fama": 0.071,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1469,8 +1455,8 @@
    "conhecem": 8.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.068,
-   "fama": 0.068,
+   "percentil": 0.067,
+   "fama": 0.067,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1483,8 +1469,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.061,
-   "fama": 0.061,
+   "percentil": 0.06,
+   "fama": 0.06,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1497,8 +1483,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.067,
-   "fama": 0.067,
+   "percentil": 0.066,
+   "fama": 0.066,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1511,8 +1497,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.048,
-   "fama": 0.048,
+   "percentil": 0.047,
+   "fama": 0.047,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1525,8 +1511,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.059,
-   "fama": 0.059,
+   "percentil": 0.058,
+   "fama": 0.058,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1645,8 +1631,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.067,
-   "fama": 0.067,
+   "percentil": 0.066,
+   "fama": 0.066,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1659,8 +1645,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.054,
-   "fama": 0.054,
+   "percentil": 0.053,
+   "fama": 0.053,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1675,8 +1661,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.052,
-   "fama": 0.052,
+   "percentil": 0.051,
+   "fama": 0.051,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1691,8 +1677,8 @@
    "conhecem": 20.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.066,
-   "fama": 0.066,
+   "percentil": 0.065,
+   "fama": 0.065,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1708,8 +1694,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.052,
-   "fama": 0.052,
+   "percentil": 0.051,
+   "fama": 0.051,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1722,8 +1708,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.059,
-   "fama": 0.059,
+   "percentil": 0.058,
+   "fama": 0.058,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1766,8 +1752,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.044,
-   "fama": 0.044,
+   "percentil": 0.043,
+   "fama": 0.043,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1796,8 +1782,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.049,
-   "fama": 0.049,
+   "percentil": 0.048,
+   "fama": 0.048,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1810,8 +1796,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.056,
-   "fama": 0.056,
+   "percentil": 0.055,
+   "fama": 0.055,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1838,8 +1824,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.061,
-   "fama": 0.061,
+   "percentil": 0.06,
+   "fama": 0.06,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1852,8 +1838,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.056,
-   "fama": 0.056,
+   "percentil": 0.055,
+   "fama": 0.055,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1884,8 +1870,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.065,
-   "fama": 0.065,
+   "percentil": 0.064,
+   "fama": 0.064,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1898,8 +1884,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.049,
-   "fama": 0.049,
+   "percentil": 0.048,
+   "fama": 0.048,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1914,8 +1900,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.044,
-   "fama": 0.044,
+   "percentil": 0.043,
+   "fama": 0.043,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1928,8 +1914,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.047,
-   "fama": 0.047,
+   "percentil": 0.046,
+   "fama": 0.046,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1942,8 +1928,8 @@
    "conhecem": 10.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.069,
-   "fama": 0.069,
+   "percentil": 0.068,
+   "fama": 0.068,
    "pontos": 61,
    "peso": 0.781
   },
@@ -1956,8 +1942,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.052,
-   "fama": 0.052,
+   "percentil": 0.051,
+   "fama": 0.051,
    "pontos": 61,
    "peso": 0.781
   },
@@ -6818,8 +6804,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 68,
-   "peso": 0.825
+   "pontos": 67,
+   "peso": 0.819
   },
   {
    "resposta": "Conchoraptor",
@@ -7632,8 +7618,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 69,
-   "peso": 0.831
+   "pontos": 68,
+   "peso": 0.825
   },
   {
    "resposta": "Diceratus",
@@ -8442,8 +8428,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 70,
-   "peso": 0.837
+   "pontos": 69,
+   "peso": 0.831
   },
   {
    "resposta": "Elachistosuchus",
@@ -13306,8 +13292,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 76,
-   "peso": 0.872
+   "pontos": 75,
+   "peso": 0.866
   },
   {
    "resposta": "Lavocatisaurus",
@@ -14124,8 +14110,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 77,
-   "peso": 0.877
+   "pontos": 76,
+   "peso": 0.872
   },
   {
    "resposta": "Luanchuanraptor",
@@ -14934,8 +14920,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 78,
-   "peso": 0.883
+   "pontos": 77,
+   "peso": 0.877
   },
   {
    "resposta": "Megapnosaurus",
@@ -15752,8 +15738,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 79,
-   "peso": 0.889
+   "pontos": 78,
+   "peso": 0.883
   },
   {
    "resposta": "Nanyangosaurus",
@@ -16572,8 +16558,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 80,
-   "peso": 0.894
+   "pontos": 79,
+   "peso": 0.889
   },
   {
    "resposta": "Orcomimus",
@@ -19790,8 +19776,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 84,
-   "peso": 0.917
+   "pontos": 83,
+   "peso": 0.911
   },
   {
    "resposta": "Sarmientosaurus",
@@ -20600,8 +20586,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 85,
-   "peso": 0.922
+   "pontos": 84,
+   "peso": 0.917
   },
   {
    "resposta": "Sigilmassasaurus",
@@ -21400,8 +21386,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 86,
-   "peso": 0.927
+   "pontos": 85,
+   "peso": 0.922
   },
   {
    "resposta": "Sulaimanisaurus",
@@ -22206,8 +22192,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 87,
-   "peso": 0.933
+   "pontos": 86,
+   "peso": 0.927
   },
   {
    "resposta": "Thanos",
@@ -23016,8 +23002,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 88,
-   "peso": 0.938
+   "pontos": 87,
+   "peso": 0.933
   },
   {
    "resposta": "Unenlagia",
@@ -23818,8 +23804,8 @@
    "ajustado": true,
    "percentil": 0.533,
    "fama": 0.533,
-   "pontos": 89,
-   "peso": 0.943
+   "pontos": 88,
+   "peso": 0.938
   },
   {
    "resposta": "Xiaotingia",
@@ -24610,6 +24596,20 @@
    "peso": 0.943
   },
   {
+   "resposta": "Zhongornis",
+   "apelidos": [],
+   "sem_dado": true,
+   "icf": 20.0,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.533,
+   "fama": 0.533,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
    "resposta": "Araripesaurus",
    "apelidos": [],
    "sem_dado": true,
@@ -24618,8 +24618,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.998,
-   "fama": 0.998,
+   "percentil": 0.997,
+   "fama": 0.997,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24632,8 +24632,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.998,
-   "fama": 0.998,
+   "percentil": 0.997,
+   "fama": 0.997,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24646,8 +24646,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.998,
-   "fama": 0.998,
+   "percentil": 0.997,
+   "fama": 0.997,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24666,6 +24666,23 @@
    "peso": 0.949
   },
   {
+   "resposta": "Pteranodonte",
+   "apelidos": [
+    "pteranodon",
+    "pteranodonte"
+   ],
+   "sem_dado": false,
+   "icf": 18.474,
+   "lembranca": null,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": true,
+   "percentil": 1.0,
+   "fama": 1.0,
+   "pontos": 90,
+   "peso": 0.949
+  },
+  {
    "resposta": "Santanaraptor",
    "apelidos": [],
    "sem_dado": true,
@@ -24674,8 +24691,8 @@
    "conhecem": 5.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.995,
-   "fama": 0.995,
+   "percentil": 0.994,
+   "fama": 0.994,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24688,8 +24705,8 @@
    "conhecem": 5.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.995,
-   "fama": 0.995,
+   "percentil": 0.994,
+   "fama": 0.994,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24702,8 +24719,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.998,
-   "fama": 0.998,
+   "percentil": 0.997,
+   "fama": 0.997,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24716,8 +24733,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.998,
-   "fama": 0.998,
+   "percentil": 0.997,
+   "fama": 0.997,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24730,8 +24747,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.998,
-   "fama": 0.998,
+   "percentil": 0.997,
+   "fama": 0.997,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24744,8 +24761,8 @@
    "conhecem": null,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.998,
-   "fama": 0.998,
+   "percentil": 0.997,
+   "fama": 0.997,
    "pontos": 90,
    "peso": 0.949
   },
@@ -24760,22 +24777,8 @@
    "conhecem": 5.0,
    "visitas": 0,
    "ajustado": true,
-   "percentil": 0.995,
-   "fama": 0.995,
-   "pontos": 90,
-   "peso": 0.949
-  },
-  {
-   "resposta": "Zhongornis",
-   "apelidos": [],
-   "sem_dado": true,
-   "icf": 20.0,
-   "lembranca": null,
-   "conhecem": null,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.533,
-   "fama": 0.533,
+   "percentil": 0.994,
+   "fama": 0.994,
    "pontos": 90,
    "peso": 0.949
   },
