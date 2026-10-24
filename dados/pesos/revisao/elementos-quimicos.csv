@@ -1,5 +1,6 @@
 resposta,apelidos,icf,sem_dado,percentil,peso,pontos,ajustado
 Ferro,Fe,9.756,False,0.017,0.105,1,False
+Mercúrio,Hg,12.12,False,0.128,0.1,1,True
 Ouro,Au,9.171,False,0.0,0.085,1,False
 Prata,Ag,9.859,False,0.026,0.112,1,False
 Alumínio,Al,10.492,False,0.034,0.127,2,False
@@ -8,13 +9,15 @@ Cobre,Cu,10.738,False,0.043,0.137,2,False
 Sódio,Na,11.385,False,0.06,0.157,2,False
 Cálcio,Ca,11.447,False,0.077,0.17,3,False
 Hélio,He,11.622,False,0.085,0.179,3,False
+Neônio,Ne | neon | neão | néon,16.435,False,0.573,0.18,3,True
 Oxigênio,O | oxigénio,11.408,False,0.068,0.164,3,False
+Urânio,U,13.055,False,0.248,0.18,3,True
 Chumbo,Pb,11.836,False,0.103,0.194,4,False
 Potássio,K,12.096,False,0.115,0.206,4,False
 Zinco,Zn,12.096,False,0.115,0.206,4,False
 Fósforo,P,12.193,False,0.145,0.228,5,False
 Magnésio,Mg,12.132,False,0.137,0.222,5,False
-Mercúrio,Hg,12.12,False,0.128,0.215,5,False
+Plutônio,Pu | plutónio,14.374,False,0.333,0.22,5,True
 Cloro,Cl,12.476,False,0.171,0.25,6,False
 Hidrogênio,H | hidrogénio,12.285,False,0.154,0.236,6,False
 Nitrogênio,N | azoto | nitrogénio,12.47,False,0.162,0.244,6,False
@@ -24,9 +27,10 @@ Platina,Pt,12.568,False,0.188,0.264,7,False
 Níquel,Ni,12.856,False,0.222,0.291,8,False
 Silício,Si,12.714,False,0.205,0.277,8,False
 Lítio,Li,13.002,False,0.239,0.305,9,False
+Nióbio,Cb | Nb,14.492,False,0.342,0.3,9,True
 Titânio,Ti,12.998,False,0.231,0.299,9,False
 Iodo,I,13.086,False,0.256,0.319,10,False
-Urânio,U,13.055,False,0.248,0.312,10,False
+Polônio,Po | polónio,15.489,False,0.453,0.32,10,True
 Flúor,F,13.234,False,0.265,0.327,11,False
 Manganês,Mn | manganésio,13.383,False,0.274,0.335,11,False
 Estanho,Sn,13.438,False,0.282,0.341,12,False
@@ -36,9 +40,8 @@ Tungstênio,W | volfrâmio | wolfrâmio | tungsténio,13.975,False,0.308,0.367,1
 Cádmio,Cd,14.268,False,0.316,0.377,14,False
 Rádio,Ra,9.233,False,0.009,0.38,14,True
 Boro,B,14.341,False,0.325,0.384,15,False
-Plutônio,Pu | plutónio,14.374,False,0.333,0.39,15,False
 Arsênio,As | arsénio | arsénico | arsênico,14.674,False,0.35,0.406,16,False
-Nióbio,Cb | Nb,14.492,False,0.342,0.398,16,False
+Radônio,Rn | radão | rádon | radónio,16.293,False,0.547,0.4,16,True
 Ródio,Rh,14.679,False,0.359,0.412,17,False
 Césio,Cs,14.793,False,0.376,0.426,18,False
 Vanádio,V,14.735,False,0.368,0.419,18,False
@@ -46,11 +49,9 @@ Bário,Ba,14.923,False,0.393,0.44,19,False
 Molibdênio,Mo | molibdénio,14.811,False,0.385,0.432,19,False
 Neodímio,Nd,15.035,False,0.402,0.447,20,False
 Argônio,Ar | argão | árgon | árgão | argónio,15.109,False,0.41,0.454,21,False
-Tório,Th,15.226,False,0.419,0.462,21,False
 Bromo,Br,15.321,False,0.427,0.469,22,False
 Paládio,Pd,15.393,False,0.444,0.482,23,False
 Xenônio,Xe | xenón,15.389,False,0.436,0.476,23,False
-Polônio,Po | polónio,15.489,False,0.453,0.489,24,False
 Estrôncio,Sr,15.559,False,0.462,0.496,25,False
 Germânio,Ge,15.593,False,0.47,0.503,25,False
 Antimônio,Sb | antimónio,15.605,False,0.479,0.509,26,False
@@ -61,35 +62,33 @@ Bismuto,Bi,15.685,False,0.504,0.528,28,False
 Gálio,Ga,15.765,False,0.521,0.541,29,False
 Zircônio,Zr | zircónio,15.703,False,0.513,0.534,29,False
 Irídio,Ir,16.139,False,0.53,0.552,30,False
+Tório,Th,15.226,False,0.419,0.55,30,True
 Cério,Ce,16.265,False,0.538,0.56,31,False
-Radônio,Rn | radão | rádon | radónio,16.293,False,0.547,0.566,32,False
-Tecnécio,Tc,16.308,False,0.556,0.572,33,False
-Neônio,Ne | neon | neão | néon,16.435,False,0.573,0.586,34,False
 Tálio,Tl,16.409,False,0.564,0.58,34,False
 Ósmio,Os,16.437,False,0.581,0.592,35,False
 Gadolínio,Gd,16.649,False,0.59,0.601,36,False
 Rutênio,Ru | ruténio,16.65,False,0.598,0.607,37,False
+Amerício,Am,17.548,False,0.701,0.62,38,True
+Califórnio,Cf,18.009,False,0.769,0.62,38,True
+Tecnécio,Tc,16.308,False,0.556,0.62,38,True
 Telúrio,Te,16.682,False,0.607,0.613,38,False
 Lantânio,La,16.803,False,0.615,0.621,39,False
 Rubídio,Rb,16.854,False,0.624,0.628,39,False
 Cúrio,Cm,16.908,False,0.632,0.635,40,False
 Ítrio,Y,16.946,False,0.641,0.641,41,False
+Frâncio,Fr,17.452,False,0.675,0.65,42,True
 Rênio,Re | renio | rénio,16.969,False,0.65,0.647,42,False
 Criptônio,Kr | crípton,17.099,False,0.658,0.655,43,False
 Samário,Sm,17.15,False,0.667,0.662,44,False
-Frâncio,Fr,17.452,False,0.675,0.672,45,False
 Escândio,Sc,17.479,False,0.684,0.678,46,False
 Érbio,Er,17.514,False,0.692,0.685,47,False
-Amerício,Am,17.548,False,0.701,0.691,48,False
 Európio,Eu,17.606,False,0.709,0.698,49,False
 Túlio,Tm,12.793,False,0.214,0.7,49,True
-Laurêncio,Lr | lawrêncio,17.611,False,0.718,0.704,50,False
 Actínio,Ac,17.679,False,0.735,0.717,51,False
 Háfnio,Hf,17.652,False,0.726,0.711,51,False
 Itérbio,Yb,17.792,False,0.744,0.725,53,False
 Mendelévio,Md,17.83,False,0.752,0.731,53,False
 Lutécio,Lu,17.858,False,0.761,0.737,54,False
-Califórnio,Cf,18.009,False,0.769,0.745,56,False
 Praseodímio,Pr,18.079,False,0.778,0.752,57,False
 Térbio,Tb,18.126,False,0.786,0.759,58,False
 Promécio,Pm,18.152,False,0.795,0.765,59,False
@@ -98,6 +97,7 @@ Disprósio,Dy,18.28,False,0.812,0.779,61,False
 Hôlmio,Ho | hólmio,18.326,False,0.821,0.786,62,False
 Protactínio,Pa,18.334,False,0.829,0.792,63,False
 Einstênio,Es | einsténio,18.343,False,0.838,0.798,64,False
+Laurêncio,Lr | lawrêncio,17.611,False,0.718,0.8,64,True
 Berquélio,Bk | berkélio,18.65,False,0.846,0.808,65,False
 Netúnio,Np | neptúnio,18.652,False,0.855,0.814,66,False
 Férmio,Fm,18.765,False,0.863,0.822,68,False

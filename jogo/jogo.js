@@ -8,6 +8,9 @@
 const RODADAS_POR_DIA = 7;
 const SEGUNDOS = 25;
 const LANCAMENTO = "2026-10-23"; // dia #1
+// Modo teste: abrir com ?aleatorio no fim do endereço (jogar.html?aleatorio) sorteia
+// outras categorias a cada vez e não guarda o progresso do dia.
+const ALEATORIO = new URLSearchParams(location.search).has("aleatorio");
 
 // ---------- texto e autocorreção ----------
 
@@ -103,11 +106,13 @@ function numeroDoDia(data) {
 // Progresso do dia fica no navegador, para não perder ao recarregar.
 // Se o armazenamento estiver bloqueado, o jogo funciona igual, só não lembra.
 function salvarProgresso() {
+  if (ALEATORIO) return;
   try {
     localStorage.setItem(`nicho:v7:${estado.data}`, JSON.stringify({ historico: estado.historico, total: estado.total }));
   } catch {}
 }
 function lerProgresso() {
+  if (ALEATORIO) return null;
   try {
     return JSON.parse(localStorage.getItem(`nicho:v7:${estado.data}`) || "null");
   } catch {
@@ -157,7 +162,7 @@ function iniciar() {
     $("comecar").hidden = true;
     return;
   }
-  const escolhidas = embaralhar(dados.indice, geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
+  const escolhidas = embaralhar(dados.indice, ALEATORIO ? Math.random : geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
   estado.categorias = escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
 
   // título com as letras soltas, para a onda

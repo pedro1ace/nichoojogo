@@ -16,6 +16,18 @@
    "pontos": 1
   },
   {
+   "resposta": "Mercúrio",
+   "apelidos": [
+    "Hg"
+   ],
+   "sem_dado": false,
+   "icf": 12.12,
+   "ajustado": true,
+   "percentil": 0.128,
+   "peso": 0.1,
+   "pontos": 1
+  },
+  {
    "resposta": "Ouro",
    "apelidos": [
     "Au"
@@ -112,6 +124,21 @@
    "pontos": 3
   },
   {
+   "resposta": "Neônio",
+   "apelidos": [
+    "Ne",
+    "neon",
+    "neão",
+    "néon"
+   ],
+   "sem_dado": false,
+   "icf": 16.435,
+   "ajustado": true,
+   "percentil": 0.573,
+   "peso": 0.18,
+   "pontos": 3
+  },
+  {
    "resposta": "Oxigênio",
    "apelidos": [
     "O",
@@ -122,6 +149,18 @@
    "ajustado": false,
    "percentil": 0.068,
    "peso": 0.164,
+   "pontos": 3
+  },
+  {
+   "resposta": "Urânio",
+   "apelidos": [
+    "U"
+   ],
+   "sem_dado": false,
+   "icf": 13.055,
+   "ajustado": true,
+   "percentil": 0.248,
+   "peso": 0.18,
    "pontos": 3
   },
   {
@@ -185,15 +224,16 @@
    "pontos": 5
   },
   {
-   "resposta": "Mercúrio",
+   "resposta": "Plutônio",
    "apelidos": [
-    "Hg"
+    "Pu",
+    "plutónio"
    ],
    "sem_dado": false,
-   "icf": 12.12,
-   "ajustado": false,
-   "percentil": 0.128,
-   "peso": 0.215,
+   "icf": 14.374,
+   "ajustado": true,
+   "percentil": 0.333,
+   "peso": 0.22,
    "pontos": 5
   },
   {
@@ -310,6 +350,19 @@
    "pontos": 9
   },
   {
+   "resposta": "Nióbio",
+   "apelidos": [
+    "Cb",
+    "Nb"
+   ],
+   "sem_dado": false,
+   "icf": 14.492,
+   "ajustado": true,
+   "percentil": 0.342,
+   "peso": 0.3,
+   "pontos": 9
+  },
+  {
    "resposta": "Titânio",
    "apelidos": [
     "Ti"
@@ -334,15 +387,16 @@
    "pontos": 10
   },
   {
-   "resposta": "Urânio",
+   "resposta": "Polônio",
    "apelidos": [
-    "U"
+    "Po",
+    "polónio"
    ],
    "sem_dado": false,
-   "icf": 13.055,
-   "ajustado": false,
-   "percentil": 0.248,
-   "peso": 0.312,
+   "icf": 15.489,
+   "ajustado": true,
+   "percentil": 0.453,
+   "peso": 0.32,
    "pontos": 10
   },
   {
@@ -459,19 +513,6 @@
    "pontos": 15
   },
   {
-   "resposta": "Plutônio",
-   "apelidos": [
-    "Pu",
-    "plutónio"
-   ],
-   "sem_dado": false,
-   "icf": 14.374,
-   "ajustado": false,
-   "percentil": 0.333,
-   "peso": 0.39,
-   "pontos": 15
-  },
-  {
    "resposta": "Arsênio",
    "apelidos": [
     "As",
@@ -487,16 +528,18 @@
    "pontos": 16
   },
   {
-   "resposta": "Nióbio",
+   "resposta": "Radônio",
    "apelidos": [
-    "Cb",
-    "Nb"
+    "Rn",
+    "radão",
+    "rádon",
+    "radónio"
    ],
    "sem_dado": false,
-   "icf": 14.492,
-   "ajustado": false,
-   "percentil": 0.342,
-   "peso": 0.398,
+   "icf": 16.293,
+   "ajustado": true,
+   "percentil": 0.547,
+   "peso": 0.4,
    "pontos": 16
   },
   {
@@ -589,18 +632,6 @@
    "pontos": 21
   },
   {
-   "resposta": "Tório",
-   "apelidos": [
-    "Th"
-   ],
-   "sem_dado": false,
-   "icf": 15.226,
-   "ajustado": false,
-   "percentil": 0.419,
-   "peso": 0.462,
-   "pontos": 21
-  },
-  {
    "resposta": "Bromo",
    "apelidos": [
     "Br"
@@ -636,19 +667,6 @@
    "percentil": 0.436,
    "peso": 0.476,
    "pontos": 23
-  },
-  {
-   "resposta": "Polônio",
-   "apelidos": [
-    "Po",
-    "polónio"
-   ],
-   "sem_dado": false,
-   "icf": 15.489,
-   "ajustado": false,
-   "percentil": 0.453,
-   "peso": 0.489,
-   "pontos": 24
   },
   {
    "resposta": "Estrôncio",
@@ -774,6 +792,18 @@
    "pontos": 30
   },
   {
+   "resposta": "Tório",
+   "apelidos": [
+    "Th"
+   ],
+   "sem_dado": false,
+   "icf": 15.226,
+   "ajustado": true,
+   "percentil": 0.419,
+   "peso": 0.55,
+   "pontos": 30
+  },
+  {
    "resposta": "Cério",
    "apelidos": [
     "Ce"
@@ -784,48 +814,6 @@
    "percentil": 0.538,
    "peso": 0.56,
    "pontos": 31
-  },
-  {
-   "resposta": "Radônio",
-   "apelidos": [
-    "Rn",
-    "radão",
-    "rádon",
-    "radónio"
-   ],
-   "sem_dado": false,
-   "icf": 16.293,
-   "ajustado": false,
-   "percentil": 0.547,
-   "peso": 0.566,
-   "pontos": 32
-  },
-  {
-   "resposta": "Tecnécio",
-   "apelidos": [
-    "Tc"
-   ],
-   "sem_dado": false,
-   "icf": 16.308,
-   "ajustado": false,
-   "percentil": 0.556,
-   "peso": 0.572,
-   "pontos": 33
-  },
-  {
-   "resposta": "Neônio",
-   "apelidos": [
-    "Ne",
-    "neon",
-    "neão",
-    "néon"
-   ],
-   "sem_dado": false,
-   "icf": 16.435,
-   "ajustado": false,
-   "percentil": 0.573,
-   "peso": 0.586,
-   "pontos": 34
   },
   {
    "resposta": "Tálio",
@@ -875,6 +863,42 @@
    "percentil": 0.598,
    "peso": 0.607,
    "pontos": 37
+  },
+  {
+   "resposta": "Amerício",
+   "apelidos": [
+    "Am"
+   ],
+   "sem_dado": false,
+   "icf": 17.548,
+   "ajustado": true,
+   "percentil": 0.701,
+   "peso": 0.62,
+   "pontos": 38
+  },
+  {
+   "resposta": "Califórnio",
+   "apelidos": [
+    "Cf"
+   ],
+   "sem_dado": false,
+   "icf": 18.009,
+   "ajustado": true,
+   "percentil": 0.769,
+   "peso": 0.62,
+   "pontos": 38
+  },
+  {
+   "resposta": "Tecnécio",
+   "apelidos": [
+    "Tc"
+   ],
+   "sem_dado": false,
+   "icf": 16.308,
+   "ajustado": true,
+   "percentil": 0.556,
+   "peso": 0.62,
+   "pontos": 38
   },
   {
    "resposta": "Telúrio",
@@ -937,6 +961,18 @@
    "pontos": 41
   },
   {
+   "resposta": "Frâncio",
+   "apelidos": [
+    "Fr"
+   ],
+   "sem_dado": false,
+   "icf": 17.452,
+   "ajustado": true,
+   "percentil": 0.675,
+   "peso": 0.65,
+   "pontos": 42
+  },
+  {
    "resposta": "Rênio",
    "apelidos": [
     "Re",
@@ -976,18 +1012,6 @@
    "pontos": 44
   },
   {
-   "resposta": "Frâncio",
-   "apelidos": [
-    "Fr"
-   ],
-   "sem_dado": false,
-   "icf": 17.452,
-   "ajustado": false,
-   "percentil": 0.675,
-   "peso": 0.672,
-   "pontos": 45
-  },
-  {
    "resposta": "Escândio",
    "apelidos": [
     "Sc"
@@ -1012,18 +1036,6 @@
    "pontos": 47
   },
   {
-   "resposta": "Amerício",
-   "apelidos": [
-    "Am"
-   ],
-   "sem_dado": false,
-   "icf": 17.548,
-   "ajustado": false,
-   "percentil": 0.701,
-   "peso": 0.691,
-   "pontos": 48
-  },
-  {
    "resposta": "Európio",
    "apelidos": [
     "Eu"
@@ -1046,19 +1058,6 @@
    "percentil": 0.214,
    "peso": 0.7,
    "pontos": 49
-  },
-  {
-   "resposta": "Laurêncio",
-   "apelidos": [
-    "Lr",
-    "lawrêncio"
-   ],
-   "sem_dado": false,
-   "icf": 17.611,
-   "ajustado": false,
-   "percentil": 0.718,
-   "peso": 0.704,
-   "pontos": 50
   },
   {
    "resposta": "Actínio",
@@ -1119,18 +1118,6 @@
    "percentil": 0.761,
    "peso": 0.737,
    "pontos": 54
-  },
-  {
-   "resposta": "Califórnio",
-   "apelidos": [
-    "Cf"
-   ],
-   "sem_dado": false,
-   "icf": 18.009,
-   "ajustado": false,
-   "percentil": 0.769,
-   "peso": 0.745,
-   "pontos": 56
   },
   {
    "resposta": "Praseodímio",
@@ -1230,6 +1217,19 @@
    "ajustado": false,
    "percentil": 0.838,
    "peso": 0.798,
+   "pontos": 64
+  },
+  {
+   "resposta": "Laurêncio",
+   "apelidos": [
+    "Lr",
+    "lawrêncio"
+   ],
+   "sem_dado": false,
+   "icf": 17.611,
+   "ajustado": true,
+   "percentil": 0.718,
+   "peso": 0.8,
    "pontos": 64
   },
   {
