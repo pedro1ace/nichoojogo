@@ -1,0 +1,545 @@
+{
+ "categoria": "defesas-dos-animais",
+ "gerado_em": "2026-10-24",
+ "sinais": [
+  "conhecem",
+  "lembranca",
+  "revisao",
+  "texto"
+ ],
+ "meses_de_visitas": [],
+ "pesos": {
+  "lembranca": 0.55,
+  "conhecem": 0.2,
+  "revisao": 0.15,
+  "texto": 0.03
+ },
+ "cobertura_llm": 1.0,
+ "respostas": {
+  "Veneno": {
+   "fama": 0.989,
+   "lembranca_em_1000": 150.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Garras": {
+   "fama": 0.9605,
+   "lembranca_em_1000": 110.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dentes": {
+   "fama": 0.9294,
+   "lembranca_em_1000": 90.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chifre": {
+   "fama": 0.89,
+   "lembranca_em_1000": 70.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Espinhos": {
+   "fama": 0.8793,
+   "lembranca_em_1000": 60.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Casco": {
+   "fama": 0.82,
+   "lembranca_em_1000": 40.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Camuflagem": {
+   "fama": 0.8978,
+   "lembranca_em_1000": 80.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Presas": {
+   "fama": 0.7386,
+   "lembranca_em_1000": 20.0,
+   "conhecem_pct": 97.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ferrão": {
+   "fama": 0.8141,
+   "lembranca_em_1000": 40.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fuga": {
+   "fama": 0.6974,
+   "lembranca_em_1000": 15.0,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mordida": {
+   "fama": 0.6992,
+   "lembranca_em_1000": 15.0,
+   "conhecem_pct": 98.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Concha": {
+   "fama": 0.6943,
+   "lembranca_em_1000": 15.0,
+   "conhecem_pct": 97.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Coice": {
+   "fama": 0.6395,
+   "lembranca_em_1000": 10.0,
+   "conhecem_pct": 97.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cheiro": {
+   "fama": 0.6242,
+   "lembranca_em_1000": 8.0,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tinta": {
+   "fama": 0.6364,
+   "lembranca_em_1000": 10.0,
+   "conhecem_pct": 92.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chocalho": {
+   "fama": 0.5162,
+   "lembranca_em_1000": 4.0,
+   "conhecem_pct": 90.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Eletricidade": {
+   "fama": 0.494,
+   "lembranca_em_1000": 3.0,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bando": {
+   "fama": 0.4568,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fingir de morto": {
+   "fama": 0.607,
+   "lembranca_em_1000": 8.0,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Escamas": {
+   "fama": 0.4838,
+   "lembranca_em_1000": 3.0,
+   "conhecem_pct": 88.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rabo": {
+   "fama": 0.5615,
+   "lembranca_em_1000": 6.0,
+   "conhecem_pct": 90.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bico": {
+   "fama": 0.5474,
+   "lembranca_em_1000": 5.0,
+   "conhecem_pct": 90.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cores de alerta": {
+   "fama": 0.3722,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Couro grosso": {
+   "fama": 0.3827,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mimetismo": {
+   "fama": 0.4375,
+   "lembranca_em_1000": 3.0,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rugido": {
+   "fama": 0.4326,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 88.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Inflar": {
+   "fama": 0.4292,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pelos urticantes": {
+   "fama": 0.2895,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Soltar o rabo": {
+   "fama": 0.4307,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Toca": {
+   "fama": 0.3777,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Enrolar como bola": {
+   "fama": 0.3813,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Muco": {
+   "fama": 0.2564,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuspe": {
+   "fama": 0.342,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esguicho": {
+   "fama": 0.2336,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grito": {
+   "fama": 0.3489,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Patada": {
+   "fama": 0.3601,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Asas": {
+   "fama": 0.3563,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pinça": {
+   "fama": 0.4368,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Placas ósseas": {
+   "fama": 0.2049,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Plastrão": {
+   "fama": 0.0553,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Armadura": {
+   "fama": 0.3419,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Disfarce": {
+   "fama": 0.355,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Manchas que parecem olhos": {
+   "fama": 0.2522,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sangue pelos olhos": {
+   "fama": 0.0744,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Glândula de cheiro": {
+   "fama": 0.2184,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gás": {
+   "fama": 0.2801,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vômito": {
+   "fama": 0.2135,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ácido": {
+   "fama": 0.266,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ruído": {
+   "fama": 0.2042,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Trocar de cor": {
+   "fama": 0.4556,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 90.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bioluminescência": {
+   "fama": 0.1472,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 35.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ventosas": {
+   "fama": 0.1611,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tentáculos": {
+   "fama": 0.2582,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nematocisto": {
+   "fama": 0.0148,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barbatana": {
+   "fama": 0.1442,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 35.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esporão": {
+   "fama": 0.1756,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Penas eriçadas": {
+   "fama": 0.205,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bater com a cauda": {
+   "fama": 0.2801,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pele tóxica": {
+   "fama": 0.3053,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dormir em árvore": {
+   "fama": 0.1628,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alarme": {
+   "fama": 0.1632,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Teia": {
+   "fama": 0.2654,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ninho": {
+   "fama": 0.1766,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carapaça de besouro": {
+   "fama": 0.1779,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pular": {
+   "fama": 0.2389,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mergulho": {
+   "fama": 0.2005,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Enterrar": {
+   "fama": 0.1918,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hibernação": {
+   "fama": 0.1253,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cabeçada": {
+   "fama": 0.2957,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Simbiose": {
+   "fama": 0.1003,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Formigas": {
+   "fama": 0.0888,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esqueleto externo": {
+   "fama": 0.1597,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 35.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Explosão": {
+   "fama": 0.0698,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Intestino para fora": {
+   "fama": 0.0473,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Quebrar a própria costela": {
+   "fama": 0.0274,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  }
+ }
+}

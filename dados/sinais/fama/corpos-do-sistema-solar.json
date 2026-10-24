@@ -1,0 +1,524 @@
+{
+ "categoria": "corpos-do-sistema-solar",
+ "gerado_em": "2026-10-24",
+ "sinais": [
+  "conhecem",
+  "lembranca",
+  "revisao",
+  "texto"
+ ],
+ "meses_de_visitas": [],
+ "pesos": {
+  "lembranca": 0.55,
+  "conhecem": 0.2,
+  "revisao": 0.15,
+  "texto": 0.03
+ },
+ "cobertura_llm": 1.0,
+ "respostas": {
+  "Terra": {
+   "fama": 1.0,
+   "lembranca_em_1000": 180.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marte": {
+   "fama": 0.9913,
+   "lembranca_em_1000": 180.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lua": {
+   "fama": 0.8696,
+   "lembranca_em_1000": 60.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Júpiter": {
+   "fama": 0.9262,
+   "lembranca_em_1000": 110.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saturno": {
+   "fama": 0.9015,
+   "lembranca_em_1000": 90.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vênus": {
+   "fama": 0.8507,
+   "lembranca_em_1000": 60.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mercúrio": {
+   "fama": 0.8005,
+   "lembranca_em_1000": 40.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Plutão": {
+   "fama": 0.8191,
+   "lembranca_em_1000": 50.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Netuno": {
+   "fama": 0.7714,
+   "lembranca_em_1000": 35.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Urano": {
+   "fama": 0.751,
+   "lembranca_em_1000": 30.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cometa Halley": {
+   "fama": 0.6488,
+   "lembranca_em_1000": 15.0,
+   "conhecem_pct": 92.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Europa": {
+   "fama": 0.4018,
+   "lembranca_em_1000": 3.0,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Titã": {
+   "fama": 0.3402,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Io": {
+   "fama": 0.2749,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ganimedes": {
+   "fama": 0.2549,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ceres": {
+   "fama": 0.2477,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fobos": {
+   "fama": 0.185,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Deimos": {
+   "fama": 0.1512,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caronte": {
+   "fama": 0.176,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calisto": {
+   "fama": 0.152,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Encélado": {
+   "fama": 0.143,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tritão": {
+   "fama": 0.1466,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Éris": {
+   "fama": 0.1368,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vesta": {
+   "fama": 0.0872,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Miranda": {
+   "fama": 0.0989,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 12.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Titânia": {
+   "fama": 0.0723,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Oberon": {
+   "fama": 0.063,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mimas": {
+   "fama": 0.0682,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ariel": {
+   "fama": 0.0593,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Reia": {
+   "fama": 0.0627,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tétis": {
+   "fama": 0.0636,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dione": {
+   "fama": 0.0475,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jápeto": {
+   "fama": 0.0475,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hale-Bopp": {
+   "fama": 0.1504,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Shoemaker-Levy 9": {
+   "fama": 0.0904,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apófis": {
+   "fama": 0.0977,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bennu": {
+   "fama": 0.0688,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Haumea": {
+   "fama": 0.0578,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Makemake": {
+   "fama": 0.0578,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sedna": {
+   "fama": 0.051,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 12.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hipérion": {
+   "fama": 0.0379,
+   "lembranca_em_1000": 0.03,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Febe": {
+   "fama": 0.0451,
+   "lembranca_em_1000": 0.03,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nix": {
+   "fama": 0.0334,
+   "lembranca_em_1000": 0.03,
+   "conhecem_pct": 6.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hidra": {
+   "fama": 0.0501,
+   "lembranca_em_1000": 0.03,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Umbriel": {
+   "fama": 0.0263,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Palas": {
+   "fama": 0.0447,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juno": {
+   "fama": 0.0892,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Eros": {
+   "fama": 0.0739,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 12.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ida": {
+   "fama": 0.0539,
+   "lembranca_em_1000": 0.03,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gaspra": {
+   "fama": 0.0096,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Itokawa": {
+   "fama": 0.019,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ryugu": {
+   "fama": 0.0249,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 6.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Psique": {
+   "fama": 0.0527,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Amalteia": {
+   "fama": 0.0237,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Proteu": {
+   "fama": 0.0283,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nereida": {
+   "fama": 0.0268,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Quaoar": {
+   "fama": 0.0153,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Orcus": {
+   "fama": 0.013,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 4.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gonggong": {
+   "fama": 0.0037,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 2.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arrokoth": {
+   "fama": 0.0153,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Churyumov-Gerasimenko": {
+   "fama": 0.0258,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Encke": {
+   "fama": 0.0153,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tempel 1": {
+   "fama": 0.0059,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Wild 2": {
+   "fama": 0.0059,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Didymos": {
+   "fama": 0.0176,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 6.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dimorphos": {
+   "fama": 0.0221,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 8.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Neowise": {
+   "fama": 0.0615,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pã": {
+   "fama": 0.0208,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dáctilo": {
+   "fama": 0.0022,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kerberos": {
+   "fama": 0.0059,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estige": {
+   "fama": 0.0059,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Metis": {
+   "fama": 0.0059,
+   "lembranca_em_1000": 0.01,
+   "conhecem_pct": 3.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  }
+ }
+}

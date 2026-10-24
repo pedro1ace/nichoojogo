@@ -33,6 +33,11 @@ Seguimos o mesmo método do Krillion:
         Pedir "de 0 a 100, quantos brasileiros conhecem isto?" e gravar em `dados/ajustes/`.
 - [ ] **Fila do modo aberto**: respostas que a lista não conhecia são julgadas em lote com `scripts/fila.py`
       e as aceitas entram na lista. Falta o lugar grátis para o jogo guardar o que foi digitado (Supabase ou Cloudflare).
+- [x] **Agente de fama** (`scripts/agente_fama.py`): lembrança espontânea estimada por LLM ("de 1000
+      brasileiros, quantos dariam esta resposta"), reconhecimento, visitas e tendência na Wikipédia pt.
+      Reordena todas as categorias do jogo. Revisão das mudanças em `dados/sinais/revisao/agente-mudancas.csv`.
+      Google Trends ficou de fora: não tem API pública e barra pedidos de servidor; a tendência sai das visitas.
+- [ ] Quando houver jogadores, trocar a lembrança do LLM pela contagem real (o `sinais.py` já mistura os dois).
 - [ ] **Supernova pela graça, não só pela raridade**: algo que poucos acertam, mas que alguns acertam de verdade.
 - [ ] Meta: 50 perguntas revisadas antes do lançamento, depois umas 7 novas por semana.
 
