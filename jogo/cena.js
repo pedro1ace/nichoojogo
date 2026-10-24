@@ -1329,7 +1329,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
           }
         }
       }
-      if (!c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
+      if (c.supernova && !c.saida && t < DURACAO_DESCIDA && !reduzirMovimento) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -1367,6 +1367,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         chegada(c, x + w / 2 + boiaX, y + boiaY, w, h);
       }
       const x0 = -w / 2, y0 = -h / 2;
+      desenharCompanhia(c, w, h, false, alfa);
       // vidro tingido pela cor do fundo naquela profundidade
       const f = corDoFundo(camera.atual).map((v) => Math.round(v * 0.35));
       const caixa = (dx, dy, cw, ch) => tx.fillRect(x0 + dx, y0 + dy, cw, ch);
@@ -1405,8 +1406,55 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.fillStyle = "#ffffff";
       tx.globalAlpha = alfa * 0.35;
       tx.fillText(texto, 0, p * 0.5);
+      tx.shadowBlur = 0;
+      desenharCompanhia(c, w, h, true, alfa);
       tx.restore();
     }
+  }
+
+  // Companheiros que orbitam a caixa, um tipo por faixa (o mesmo do ícone):
+  // satélites na óbvia, luas na comum, um planeta de anel na incomum e um cometa na rara.
+  // Passam atrás da caixa (menores e apagados) e na frente (maiores).
+  const COMPANHIA = {
+    obvia: { img: () => naves.satelite, n: 3, vel: 0.9, tam: 0.42 },
+    comum: { img: () => naves.lua, n: 2, vel: 0.75, tam: 0.85 },
+    incomum: { img: () => naves.planeta, n: 1, vel: 0.6, tam: 0.9 },
+    rara: { img: () => naves.cometa, n: 1, vel: 1.1, tam: 0.9, cauda: true },
+  };
+  function desenharCompanhia(c, w, h, frente, alfa) {
+    const cfg = COMPANHIA[c.faixa];
+    if (!cfg || reduzirMovimento) return;
+    const img = cfg.img();
+    const pz = Math.max(1, Math.round(escala * cfg.tam));
+    const rx = w / 2 + 16 + pz * 4, ry = h / 2 + 12 + pz * 2;
+    for (let k = 0; k < cfg.n; k++) {
+      const a = tempo * cfg.vel + (k / cfg.n) * Math.PI * 2 + c.inicio * 0.001;
+      const prof = Math.sin(a); // > 0: passando na frente
+      if ((prof > 0) !== frente) continue;
+      const ox = Math.cos(a) * rx, oy = prof * ry;
+      const s = 0.8 + 0.2 * prof;
+      const luz = alfa * (frente ? 1 : 0.45 + 0.3 * (1 + prof));
+      if (cfg.cauda) {
+        // cauda: rastro que fica para trás na órbita, afinando e sumindo
+        for (let j = 1; j <= 18; j++) {
+          const b = a - j * 0.05 * Math.sign(cfg.vel);
+          const tam = Math.max(1, Math.round(pz * (3.6 - j * 0.18)));
+          tx.globalAlpha = luz * (1 - j / 19) * 0.85;
+          tx.fillStyle = j % 3 === 0 ? "#f4e8ff" : "#c38bff";
+          tx.fillRect(Math.cos(b) * rx - tam / 2, Math.sin(b) * ry - tam / 2, tam, tam);
+        }
+      }
+      tx.save();
+      tx.globalAlpha = luz;
+      tx.imageSmoothingEnabled = false;
+      tx.translate(ox, oy);
+      tx.scale(s, s);
+      tx.shadowColor = c.cor;
+      tx.shadowBlur = 8;
+      tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
+      tx.restore();
+    }
+    tx.globalAlpha = alfa;
   }
 
   function passo(agora) {
@@ -1485,6 +1533,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       caixas.push({
         texto: texto.toUpperCase(),
         cor: faixa.cor,
+        faixa: supernova ? "supernova" : faixa.id,
         de: camera.de,
         para: camera.para,
         inicio: agora,

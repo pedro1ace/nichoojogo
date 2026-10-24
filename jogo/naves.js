@@ -72,5 +72,54 @@ function criarNaves() {
     bloco(g, 21, 15, 2, 5, BRANCO);
     bloco(g, 29, 15, 2, 5, BRANCO);
   }
-  return { satelite, iss };
+  // esfera com luz de cima à esquerda, poucos tons e dithering, sem contorno
+  const BAYER = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map((v) => (v + 0.5) / 16);
+  function esferaMini(g, cx, cy, r, tons, extra) {
+    for (let y = Math.floor(cy - r); y <= cy + r; y++) for (let x = Math.floor(cx - r); x <= cx + r; x++) {
+      const nx = (x + 0.5 - cx) / r, ny = (y + 0.5 - cy) / r, d = nx * nx + ny * ny;
+      if (d > 1) continue;
+      const nz = Math.sqrt(1 - d);
+      let t = Math.max(0, -nx * 0.5 - ny * 0.6 + nz * 0.62) * (tons.length - 0.6);
+      if (extra) t += extra(x, y, nx, ny);
+      let k = Math.floor(t);
+      if (t - k > BAYER[(y & 3) * 4 + (x & 3)]) k++;
+      g.globalAlpha = d > 0.82 ? 0.75 : 1; // borda macia
+      g.fillStyle = tons[Math.max(0, Math.min(tons.length - 1, k))];
+      g.fillRect(x, y, 1, 1);
+    }
+    g.globalAlpha = 1;
+  }
+
+  // lua pequena com crateras (faixa comum)
+  const lua = tela(11, 11);
+  {
+    const g = lua.getContext("2d");
+    const crateras = [[3.5, 4, 1.4], [6.8, 6.6, 1.2], [4.8, 7.8, 0.9]];
+    esferaMini(g, 5.5, 5.5, 5.2, ["#2a5470", "#4a8cb0", "#8ac8e4", "#d4f2ff"], (x, y) =>
+      crateras.some(([a, b, r]) => (x + 0.5 - a) ** 2 + (y + 0.5 - b) ** 2 < r * r) ? -1 : 0);
+  }
+
+  // planetinha com anel (faixa incomum): o anel passa atrás e na frente
+  const planeta = tela(19, 11);
+  {
+    const g = planeta.getContext("2d");
+    const anel = (frente) => {
+      for (let i = 0; i < 80; i++) {
+        const a = (i / 80) * Math.PI * 2;
+        const x = 9.5 + Math.cos(a) * 8.6, y = 5.5 + Math.sin(a) * 2.2;
+        if ((Math.sin(a) > 0) !== frente) continue;
+        g.fillStyle = Math.sin(a) > 0 ? "#fff0a8" : "#b8902a";
+        g.fillRect(Math.floor(x), Math.floor(y), 1, 1);
+      }
+    };
+    anel(false);
+    esferaMini(g, 9.5, 5.5, 4.6, ["#7a5410", "#b8861e", "#ffd23f", "#fff0a0"], (x, y) => (y % 3 === 0 ? -0.6 : 0));
+    anel(true);
+  }
+
+  // cabeça do cometa (faixa rara); a cauda a cena desenha ao longo da órbita
+  const cometa = tela(9, 9);
+  esferaMini(cometa.getContext("2d"), 4.5, 4.5, 4.1, ["#4a2a8a", "#8a5ae0", "#c38bff", "#f4e8ff"]);
+
+  return { satelite, iss, lua, planeta, cometa };
 }
