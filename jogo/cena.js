@@ -78,10 +78,10 @@ const MARCOS = [
   { al: 5500, nome: "CINTURÃO DE KUIPER", cinturao: true },
   { al: 6200, nome: "VOYAGER 1", voyager: true },
   { al: 7000, nome: "NUVEM DE OORT", cinturao: true },
+  { al: 8000, nome: "PILARES DA CRIAÇÃO (ao fundo)" },
   { al: 9000, nome: "ALFA CENTAURI", corpo: "estrela" },
   { al: 12000, nome: "NEBULOSA DE ÓRION", nebulosa: true },
   { al: 16000, nome: "BURACO NEGRO", corpo: "buraco" },
-  { al: 21000, nome: "PILARES DA CRIAÇÃO", pilares: true },
 ];
 const CURIOSIDADES = [
   [40, "aqui o céu azul começa a virar preto"],
@@ -656,7 +656,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     if (al < 60) return 0;
     if (al < 400) return (al - 60) / 340;
     if (al < 3000) return 1;
-    return Math.max(0.15, 1 - (al - 3000) / 12000);
+    return Math.max(0.08, 1 - (al - 3000) / 6000); // espaço profundo: poucas estrelas
   }
 
   function desenharEstrelas() {
@@ -965,18 +965,6 @@ function criarCena(telaPixel, telaTexto, raiz) {
         const pz = Math.max(2, Math.round(escala * 0.5));
         desenharNave(naves.voyager, L * 0.26 * escala, naTelaTexto(m.al) + 30, pz, -0.25 + Math.sin(tempo * 0.2) * 0.08, "rgba(210, 225, 255, 0.5)");
       }
-      if (m.pilares) {
-        // bem grande, suave e meio transparente: parece parte do fundo, não um objeto
-        const img = naves.pilares;
-        const alto = innerHeight * 0.95;
-        const largo = alto * (img.width / img.height);
-        const yc = naTelaTexto(m.al);
-        tx.save();
-        tx.imageSmoothingEnabled = true;
-        tx.globalAlpha = 0.72;
-        tx.drawImage(img, innerWidth * 0.62 - largo / 2, yc - alto * 0.6, largo, alto);
-        tx.restore();
-      }
       if (m.nebulosa) {
         for (let i = 0; i < 500; i++) {
           const a = sorte(i, 7) * Math.PI * 2;
@@ -986,6 +974,50 @@ function criarCena(telaPixel, telaTexto, raiz) {
         }
       }
     }
+  }
+
+  // Zonas do fundo por profundidade.
+  // A partir de ~5.000 AL os Pilares da Criação viram o pano de fundo da viagem:
+  // grandes, no meio, misturados ao céu (somam luz, não cobrem), e sobem bem devagar.
+  function desenharPanoDeFundo() {
+    const al = camera.atual;
+    const surge = Math.min(1, Math.max(0, (al - 4500) / 2500));
+    if (surge <= 0) return;
+    const img = naves.pilares;
+    const H = innerHeight, W = innerWidth;
+    const alto = H * 1.2;
+    const largo = alto * (img.width / img.height);
+    const sobe = Math.min(1, Math.max(0, (al - 5000) / 15000)) * H * 0.3;
+    tx.save();
+    tx.globalCompositeOperation = "lighter";
+    tx.globalAlpha = 0.45 * surge;
+    tx.imageSmoothingEnabled = true;
+    tx.drawImage(img, W / 2 - largo / 2, H * 0.62 - alto / 2 - sobe, largo, alto);
+    tx.restore();
+  }
+
+  // Espaço profundo: tudo fica na penumbra, menos a luz em volta da caixa que afunda.
+  function desenharPenumbra() {
+    const k = Math.min(1, Math.max(0, (camera.atual - 3500) / 5500)) * 0.8;
+    if (k <= 0.01) return;
+    const W = innerWidth, H = innerHeight;
+    const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
+    const r = Math.max(150, larguraCaixa * 0.8);
+    const g = tx.createRadialGradient(cx, cy, r * 0.35, cx, cy, r * 2.4);
+    g.addColorStop(0, "rgba(0, 0, 4, 0)");
+    g.addColorStop(0.5, `rgba(0, 0, 4, ${k * 0.55})`);
+    g.addColorStop(1, `rgba(0, 0, 4, ${k})`);
+    tx.fillStyle = g;
+    tx.fillRect(0, 0, W, H);
+    // um tiquinho de luz fria em volta da caixa, como uma lanterna
+    const luz = tx.createRadialGradient(cx, cy, 0, cx, cy, r * 1.3);
+    luz.addColorStop(0, `rgba(150, 160, 255, ${0.07 * k})`);
+    luz.addColorStop(1, "rgba(150, 160, 255, 0)");
+    tx.save();
+    tx.globalCompositeOperation = "lighter";
+    tx.fillStyle = luz;
+    tx.fillRect(cx - r * 1.3, cy - r * 1.3, r * 2.6, r * 2.6);
+    tx.restore();
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
@@ -1531,6 +1563,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     desenharRaios();
     tx.setTransform(dpr, 0, 0, dpr, 0, 0);
     tx.clearRect(0, 0, innerWidth, innerHeight);
+    desenharPanoDeFundo();
     desenharEstrelas();
     desenharCadentes();
     desenharLaterais();
@@ -1541,6 +1574,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     desenharTerraNaCena();
     desenharObjetos();
     desenharMarcosPixel();
+    desenharPenumbra();
     const foguete = desenharFoguete();
     desenharTextos(agora);
     if (quadro % 6 === 0) {
