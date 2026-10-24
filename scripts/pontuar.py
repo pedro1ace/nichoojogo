@@ -71,6 +71,10 @@ FORA_DO_JOGO = RAIZ / "dados" / "fora_do_jogo.txt"
 # (parte da lista, mínimo, máximo de respostas, pontos no começo e no fim da faixa),
 # da mais famosa para a menos famosa. A rara fica com todo o resto.
 # Os cortes das faixas no jogo (FAIXAS em jogo/cena.js) são 18, 35 e 60 pontos.
+# Com o agente de fama, a cota é só o máximo: para entrar numa faixa a resposta precisa de um
+# mínimo de lembrança (quantos em 1000 brasileiros a dariam, dados/sinais/llm). Sem isso, numa lista
+# enorme com poucas respostas lembradas, as cotas puxavam para incomum nomes que ninguém diria.
+LEMBRANCA_MINIMA = [5.0, 1.0, 0.1]  # óbvia, comum, incomum. Abaixo de 0,1 em 1000 é rara.
 REGUA = [
     (0.02, 3, 15, 8, 15),     # óbvia
     (0.05, 5, 40, 18, 34),    # comum
@@ -208,11 +212,23 @@ def cotas(n: int) -> list[int]:
     return saida + [resto]
 
 
-def na_regua(i: int, n: int) -> int:
+def cotas_com_teto(n: int, tetos: list[int]) -> list[int]:
+    """cotas(n), mas com no máximo tetos[k] respostas nas faixas 0..k juntas (k = óbvia, comum,
+    incomum). O que não cabe desce de faixa; no fim, o resto é rara."""
+    saida = cotas(n)
+    acumulado = 0
+    for k, teto in enumerate(tetos):
+        saida[k] = max(0, min(saida[k], teto - acumulado))
+        acumulado += saida[k]
+    saida[-1] = n - sum(saida[:-1])
+    return saida
+
+
+def na_regua(i: int, n: int, faixas: list[int] | None = None) -> int:
     """Pontos da i-ésima resposta (0 = a mais famosa) de n, pela RÉGUA.
     Cada faixa recebe a sua cota exata, e dentro dela os pontos sobem por igual."""
     inicio = 0
-    for cota, (_, _, _, de, ate) in zip(cotas(n), REGUA):
+    for cota, (_, _, _, de, ate) in zip(faixas or cotas(n), REGUA):
         if i < inicio + cota:
             k = (i - inicio) / (cota - 1) if cota > 1 else 0.5
             return round(de + (ate - de) * k)
@@ -254,7 +270,14 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         cat["fonte_peso"] = "agente"
         # sem medida do agente (resposta nova na lista) conta como a menos famosa: rara.
         # Rode o agente_fama.py de novo para ela ganhar medida.
-        ordem = percentis([-(fama_agente.get(r["resposta"]) or {}).get("fama", 0.0) for r in respostas])
+        # Quem passa de um mínimo de LEMBRANCA_MINIMA vem sempre antes de quem não passa.
+        def degrau(r: dict) -> int:
+            m = fama_agente.get(r["resposta"]) or {}
+            lembra = (m.get("lembranca_em_1000") or 0) if m.get("estimada", True) else 0
+            return sum(lembra >= x for x in LEMBRANCA_MINIMA)
+
+        ordem = percentis([-((fama_agente.get(r["resposta"]) or {}).get("fama", 0.0) + degrau(r))
+                           for r in respostas])
     elif cat["fonte_peso"] == "visitas":
         # menos visitas = mais nichado; sem artigo conta como zero visita
         ordem = percentis([-visitas.get(r["resposta"], 0) for r in respostas])
@@ -286,10 +309,16 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
     # Posição de cada resposta na ordem da fama. Empates são desfeitos pelo ICF ou pelas
     # visitas (e depois pelo nome), para cada faixa receber exatamente a sua cota:
     # empatar tudo no meio deixava faixas mais raras com mais respostas que as comuns.
-    ordenadas = sorted(respostas, key=lambda r: (r["fama"], r["percentil"], normalizar(r["resposta"])))
+    agente = cat["fonte_peso"] == "agente"
+    ordenadas = sorted(respostas, key=lambda r: (-degrau(r) if agente else 0, r["fama"], r["percentil"],
+                                                 normalizar(r["resposta"])))
     n = len(ordenadas)
+    faixas = cotas(n)
+    if agente:
+        degraus = [degrau(r) for r in respostas]
+        faixas = cotas_com_teto(n, [sum(d >= 3 - k for d in degraus) for k in range(3)])
     for i, r in enumerate(ordenadas):
-        r["pontos"] = na_regua(i, n)
+        r["pontos"] = na_regua(i, n, faixas)
         r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
 
     marcadas = [r for r in respostas if r["supernova_manual"]]

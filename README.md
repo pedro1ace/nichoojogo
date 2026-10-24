@@ -139,7 +139,10 @@ O agente mede isso e reordena cada categoria:
 3. **Mistura**: lembrança 65%, reconhecimento 10%, o peso manual antigo de `dados/ajustes/` 15%, visitas 7%
    e frequência em textos 3%.
    A tendência soma ou tira até 0,05. O resultado vai para `dados/sinais/fama/<cat>.json`.
-4. **Pontuação**: o `pontuar.py` usa essa fama para a ordem e aplica a mesma régua de cima.
+4. **Pontuação**: o `pontuar.py` usa essa fama para a ordem e aplica a mesma régua de cima, mas a cota de
+   cada faixa vira um teto: para ser óbvia a resposta precisa que pelo menos 5 em 1000 a digam, comum 1 em 1000 e
+   incomum 0,1 em 1000 (`LEMBRANCA_MINIMA`). Assim, numa lista de 4 mil asteroides em que só uns 40 vêm à cabeça
+   de alguém, o resto é todo raro, em vez de nomes que ninguém diria ocuparem as vagas de incomum.
    `dados/sinais/revisao/agente-mudancas.csv` lista tudo que mudou de faixa, com os sinais de cada resposta.
 
 ```bash

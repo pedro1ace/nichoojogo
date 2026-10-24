@@ -236,6 +236,9 @@ def combinar(cat: dict, llm: dict, base: pontuar.BaseICF) -> dict:
         linhas[nome] = {
             "fama": round(min(max(fama, 0.0), 1.0), 4),
             "lembranca_em_1000": item.get("respostas_em_1000"),
+            # estimada de verdade (não o valor padrão de listas de nomes próprios): só estas
+            # podem sair de rara, ver pontuar.py
+            "estimada": item.get("origem") == "estimado",
             "conhecem_pct": item.get("conhecem_pct"),
             "visitas_pt_12m": (wikidata.get(nome) or {}).get("visitas_pt_12m"),
             "tendencia": t,

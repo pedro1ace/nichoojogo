@@ -16,7 +16,7 @@ Peixes,,10.383,False,10.0,70.0,1995,0.149,0.149,0.671,45,True
 Áries,Carneiro,13.021,False,12.0,70.0,347,0.161,0.161,0.678,46,True
 Capricórnio,,12.959,False,10.0,70.0,6401,0.172,0.172,0.693,48,True
 Andrômeda,,14.342,False,5.0,60.0,9116,0.184,0.184,0.707,50,True
-Cabeleira de Berenice,,13.367,False,0.1,10.0,2502,0.632,0.632,0.707,50,True
+Cabeleira de Berenice,,13.367,False,0.1,10.0,2502,0.552,0.552,0.707,50,True
 Cassiopeia,,16.18,False,4.0,45.0,4928,0.195,0.195,0.721,52,True
 Hércules,,12.954,False,3.0,45.0,1753,0.207,0.207,0.735,54,True
 Cão Maior,,8.855,False,1.5,35.0,5073,0.218,0.218,0.748,56,True
@@ -26,9 +26,9 @@ Dragão,,11.023,False,1.0,30.0,4674,0.253,0.253,0.775,60,True
 Cisne,,12.782,False,1.0,25.0,4050,0.276,0.276,0.781,61,True
 Perseu,,20.0,True,1.5,40.0,5755,0.264,0.264,0.781,61,True
 Hidra,,14.245,False,1.0,30.0,3228,0.287,0.287,0.787,62,True
-Águia,Aquila,11.799,False,0.5,25.0,2999,0.299,0.299,0.787,62,True
+Ofiúco,Serpentário,17.426,False,1.0,30.0,6838,0.299,0.299,0.787,62,True
 Lira,,12.11,False,0.5,20.0,4254,0.322,0.322,0.794,63,True
-Ofiúco,Serpentário,17.426,False,1.0,30.0,6838,0.31,0.31,0.794,63,True
+Águia,Aquila,11.799,False,0.5,25.0,2999,0.31,0.31,0.794,63,True
 Cão Menor,,9.564,False,0.5,25.0,1952,0.345,0.345,0.8,64,True
 Fênix,,12.581,False,0.5,25.0,1605,0.333,0.333,0.8,64,True
 Baleia,Cetus,12.02,False,0.3,15.0,2755,0.356,0.356,0.806,65,True
@@ -47,32 +47,32 @@ Raposa,Vulpecula,12.018,False,0.1,10.0,1889,0.483,0.483,0.837,70,True
 Tucano,,11.714,False,0.1,10.0,949,0.506,0.506,0.837,70,True
 Leão Menor,,9.653,False,0.1,15.0,844,0.517,0.517,0.843,71,True
 Vela,Vela do Navio,10.961,False,0.1,12.0,1193,0.529,0.529,0.843,71,True
-Cocheiro,Auriga,14.918,False,0.05,10.0,2588,0.552,0.552,0.849,72,True
 Triângulo Austral,,12.605,False,0.2,15.0,1698,0.54,0.54,0.849,72,True
-Altar,Ara,11.274,False,0.05,10.0,1802,0.563,0.563,0.854,73,True
-Boieiro,Bootes,16.902,False,0.05,8.0,3487,0.58,0.58,0.854,73,True
-Cães de Caça,,10.436,False,0.05,10.0,2086,0.598,0.598,0.86,74,True
-Quilha,Carina,14.669,False,0.05,10.0,3562,0.58,0.58,0.86,74,True
-Lince,,13.678,False,0.05,10.0,1586,0.621,0.621,0.866,75,True
-Taça,Cratera,10.561,False,0.05,8.0,1164,0.609,0.609,0.866,75,True
-Pomba,Columba,12.225,False,0.1,10.0,1000,0.644,0.644,0.872,76,True
-Relógio,Horologium,10.15,False,0.05,8.0,876,0.655,0.655,0.872,76,True
-Bússola,Pyxis,12.843,False,0.05,8.0,1546,0.667,0.667,0.877,77,True
-Girafa,Camelopardalis,13.074,False,0.1,10.0,4088,0.678,0.678,0.877,77,True
-Lebre,Lepus,13.369,False,0.1,10.0,1908,0.701,0.701,0.883,78,True
-Popa,Puppis,12.722,False,0.05,8.0,1255,0.69,0.69,0.883,78,True
-Ave-do-Paraíso,Apus,10.801,False,0.05,10.0,1788,0.724,0.724,0.889,79,True
-Telescópio,,12.554,False,0.1,10.0,651,0.713,0.713,0.889,79,True
-Compasso,Circinus,12.661,False,0.05,10.0,1429,0.759,0.759,0.894,80,True
-Lagarto,Lacerta,12.726,False,0.1,10.0,1353,0.736,0.736,0.894,80,True
-Peixe Austral,,11.897,False,0.1,12.0,855,0.747,0.747,0.894,80,True
-Cefeu,,17.863,False,0.2,15.0,1521,0.77,0.77,0.9,81,True
-Escudo,Scutum,11.659,False,0.05,8.0,1697,0.782,0.782,0.9,81,True
-Cavalo Menor,Equuleus,9.632,False,0.05,8.0,793,0.805,0.805,0.906,82,True
-Microscópio,,13.012,False,0.05,8.0,663,0.793,0.793,0.906,82,True
-Erídano,Eridanus,18.387,False,0.1,10.0,2386,0.828,0.828,0.911,83,True
-Índio,Indus,11.641,False,0.1,10.0,3810,0.816,0.816,0.911,83,True
-Dourado,Dorado,10.625,False,0.1,8.0,1516,0.839,0.839,0.917,84,True
+Girafa,Camelopardalis,13.074,False,0.1,10.0,4088,0.575,0.575,0.854,73,True
+Pomba,Columba,12.225,False,0.1,10.0,1000,0.563,0.563,0.854,73,True
+Lebre,Lepus,13.369,False,0.1,10.0,1908,0.586,0.586,0.86,74,True
+Telescópio,,12.554,False,0.1,10.0,651,0.598,0.598,0.86,74,True
+Cefeu,,17.863,False,0.2,15.0,1521,0.632,0.632,0.866,75,True
+Lagarto,Lacerta,12.726,False,0.1,10.0,1353,0.609,0.609,0.866,75,True
+Peixe Austral,,11.897,False,0.1,12.0,855,0.621,0.621,0.866,75,True
+Erídano,Eridanus,18.387,False,0.1,10.0,2386,0.655,0.655,0.872,76,True
+Índio,Indus,11.641,False,0.1,10.0,3810,0.644,0.644,0.872,76,True
+Cocheiro,Auriga,14.918,False,0.05,10.0,2588,0.678,0.678,0.877,77,True
+Dourado,Dorado,10.625,False,0.1,8.0,1516,0.667,0.667,0.877,77,True
+Altar,Ara,11.274,False,0.05,10.0,1802,0.69,0.69,0.883,78,True
+Boieiro,Bootes,16.902,False,0.05,8.0,3487,0.707,0.707,0.883,78,True
+Cães de Caça,,10.436,False,0.05,10.0,2086,0.724,0.724,0.889,79,True
+Quilha,Carina,14.669,False,0.05,10.0,3562,0.707,0.707,0.889,79,True
+Lince,,13.678,False,0.05,10.0,1586,0.747,0.747,0.894,80,True
+Relógio,Horologium,10.15,False,0.05,8.0,876,0.759,0.759,0.894,80,True
+Taça,Cratera,10.561,False,0.05,8.0,1164,0.736,0.736,0.894,80,True
+Bússola,Pyxis,12.843,False,0.05,8.0,1546,0.77,0.77,0.9,81,True
+Popa,Puppis,12.722,False,0.05,8.0,1255,0.782,0.782,0.9,81,True
+Ave-do-Paraíso,Apus,10.801,False,0.05,10.0,1788,0.793,0.793,0.906,82,True
+Compasso,Circinus,12.661,False,0.05,10.0,1429,0.805,0.805,0.906,82,True
+Escudo,Scutum,11.659,False,0.05,8.0,1697,0.816,0.816,0.911,83,True
+Microscópio,,13.012,False,0.05,8.0,663,0.828,0.828,0.911,83,True
+Cavalo Menor,Equuleus,9.632,False,0.05,8.0,793,0.839,0.839,0.917,84,True
 Hidra Macho,Hydrus,12.567,False,0.05,10.0,900,0.851,0.851,0.917,84,True
 Grou,Grus,15.218,False,0.05,8.0,1102,0.874,0.874,0.922,85,True
 Mosca,Musca,12.348,False,0.05,8.0,4103,0.885,0.885,0.922,85,True
