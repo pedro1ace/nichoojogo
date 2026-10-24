@@ -45,6 +45,16 @@ apelidos curtos e apelidos que são palavra comum). `--conferir` mostra se o `.t
   - **Receita**: `dados/fontes/elementos-quimicos.json` (antes era `scripts/importar_elementos.py`).
   - **Data**: 2026-10-23.
   - **Validação**: Exatamente 118 elementos únicos, nomes preferenciais em pt-BR, com símbolos químicos IUPAC e variantes ortográficas em português registradas como apelidos.
+- **Astronautas** (680), **Missões espaciais** (555), **Exoplanetas** (386) e **Luas do Sistema Solar** (300):
+  - **Receitas**: `dados/fontes/<id>.json`. Todas exigem artigo na pt.wikipedia, para ficar só o que tem nome conhecido em português.
+  - **Data**: 2026-10-24.
+  - **Luas** troca a lista manual de 28: todas as 28 continuam, e os nomes em inglês que ela aceitava (Phobos, Titan...) estão nas `correcoes` da receita.
+
+Visitas e sitelinks: `scripts/baixar_visitas.sh` baixa 12 meses de visitas da pt.wikipedia (dumps públicos, uns 45 min,
+fora do git) e `scripts/buscar_wikidata.py` grava sitelinks e visitas por resposta em `dados/sinais/wikidata/<cat>.json`.
+Categoria importada usa o Q... da própria consulta; as outras procuram pelo nome e podem errar (o script lista as dúvidas).
+Quando mais da metade das respostas não está na base de palavras (nomes próprios), o `pontuar.py` ordena a categoria
+pelas visitas em vez do ICF.
 
 ## Etapa 3: Jogo em pixel art (protótipo pronto)
 

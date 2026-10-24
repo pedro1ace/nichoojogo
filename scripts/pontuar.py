@@ -27,6 +27,9 @@ Como o peso é calculado (0 a 1, onde 1 = muito nichado):
     peso = PESO_PERCENTIL * percentil + (1 - PESO_PERCENTIL) * raridade_global
     pontos ("anos-luz") = max(1, round(100 * peso ** CURVA))
     A curva faz as respostas óbvias valerem quase nada, como no Krillion.
+    Exceção: se mais da metade das respostas não está na base (nomes próprios) e a
+    categoria tem visitas da Wikipédia (dados/sinais/wikidata/<cat>.json), o peso é
+    o percentil das visitas: a mais visitada vale quase nada, a menos visitada vale 1.
 
 Ajustes manuais (dados/ajustes/<cat>.csv), cabeçalho: resposta,peso,supernova
     peso em 0-100 substitui o calculado (deixe vazio para manter);
@@ -45,6 +48,7 @@ ICF_ARQUIVO = RAIZ / "dados" / "brutos" / "pt-br" / "icf"
 CATEGORIAS = RAIZ / "dados" / "categorias"
 AJUSTES = RAIZ / "dados" / "ajustes"
 SAIDA = RAIZ / "dados" / "pesos"
+SINAIS_WIKIDATA = RAIZ / "dados" / "sinais" / "wikidata"
 
 PESO_PERCENTIL = 0.7
 CURVA = 2.0
@@ -131,6 +135,15 @@ def ler_ajustes(cat_id: str) -> dict[str, dict]:
         return {normalizar(l["resposta"]): l for l in csv.DictReader(f)}
 
 
+def ler_visitas(cat_id: str) -> dict[str, int]:
+    """Visitas na pt.wikipedia em 12 meses, por resposta (dados/sinais/wikidata/<cat>.json)."""
+    caminho = SINAIS_WIKIDATA / f"{cat_id}.json"
+    if not caminho.exists():
+        return {}
+    dados = json.loads(caminho.read_text(encoding="utf-8"))
+    return {nome: l.get("visitas_pt_12m") or 0 for nome, l in dados.items()}
+
+
 def percentis(valores: list[float]) -> list[float]:
     """Percentil com empates na média: 0 = menor ICF, 1 = maior."""
     n = len(valores)
@@ -166,9 +179,25 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         r["sem_dado"] = valor is None
         r["icf"] = round(ICF_SEM_DADO if valor is None else valor, 3)
 
-    for r, p in zip(respostas, percentis([r["icf"] for r in respostas])):
-        global_ = (r["icf"] - base.minimo) / (base.maximo - base.minimo)
-        peso = PESO_PERCENTIL * p + (1 - PESO_PERCENTIL) * global_
+    # Nomes próprios (astronautas, exoplanetas...) quase nunca estão na base de palavras, e aí o
+    # ICF não diz nada. Se mais da metade está sem dado e há visitas da Wikipédia
+    # (scripts/buscar_wikidata.py), a categoria inteira é ordenada pelas visitas.
+    visitas = ler_visitas(cat["id"])
+    sem = sum(r["sem_dado"] for r in respostas)
+    cat["fonte_peso"] = "visitas" if visitas and sem > len(respostas) / 2 else "icf"
+    if cat["fonte_peso"] == "visitas":
+        # menos visitas = mais nichado; sem artigo conta como zero visita
+        ordem = percentis([-visitas.get(r["resposta"], 0) for r in respostas])
+    else:
+        ordem = percentis([r["icf"] for r in respostas])
+
+    for r, p in zip(respostas, ordem):
+        if cat["fonte_peso"] == "visitas":
+            r["visitas"] = visitas.get(r["resposta"], 0)
+            peso = p
+        else:
+            global_ = (r["icf"] - base.minimo) / (base.maximo - base.minimo)
+            peso = PESO_PERCENTIL * p + (1 - PESO_PERCENTIL) * global_
         ajuste = ajustes.get(normalizar(r["resposta"]), {})
         r["ajustado"] = bool((ajuste.get("peso") or "").strip())
         if r["ajustado"]:
@@ -179,7 +208,13 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         r["supernova_manual"] = (ajuste.get("supernova") or "").strip() == "1"
 
     marcadas = [r for r in respostas if r["supernova_manual"]]
-    supernova = (marcadas or sorted(respostas, key=lambda r: -r["pontos"]))[0]
+    if cat["fonte_peso"] == "visitas":
+        # pela visita, a de mais pontos é quase sempre uma que ninguém conhece (zero visita).
+        # A supernova deve ser rara mas possível: a mais visitada entre as que valem 50 ou mais.
+        candidatas = sorted((r for r in respostas if r["pontos"] >= 50), key=lambda r: -r["visitas"])
+    else:
+        candidatas = sorted(respostas, key=lambda r: -r["pontos"])
+    supernova = (marcadas or candidatas or respostas)[0]
     cat["supernova"] = supernova["resposta"]
     respostas.sort(key=lambda r: (r["pontos"], r["resposta"]))
     for r in respostas:
@@ -193,6 +228,8 @@ def salvar(cat: dict) -> None:
         json.dumps(cat, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
     )
     campos = ["resposta", "apelidos", "icf", "sem_dado", "percentil", "peso", "pontos", "ajustado"]
+    if cat["fonte_peso"] == "visitas":
+        campos.insert(4, "visitas")
     with (SAIDA / "revisao" / f"{cat['id']}.csv").open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=campos)
         w.writeheader()
@@ -210,7 +247,8 @@ def main() -> None:
         cat = pontuar(arquivo, base)
         salvar(cat)
         sem = sum(r["sem_dado"] for r in cat["respostas"])
-        print(f"{cat['id']}: {len(cat['respostas'])} respostas, {sem} sem dado, supernova = {cat['supernova']}")
+        print(f"{cat['id']}: {len(cat['respostas'])} respostas, {sem} sem dado, peso por {cat['fonte_peso']},"
+              f" supernova = {cat['supernova']}")
 
     indice = []
     for j in sorted(SAIDA.glob("*.json")):
