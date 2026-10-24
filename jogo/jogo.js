@@ -1,7 +1,7 @@
 // Nicho: regras do jogo diário.
 // Cada pergunta pede uma palavra de um tema; o jogador tem 25 segundos.
 // Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
-// Acertar a "supernova" (a resposta secreta da pergunta) dobra os pontos.
+// Acertar a "singularidade" (a resposta secreta da pergunta; no código, "supernova") dobra os pontos.
 // Vem de outros arquivos: window.NICHO_DADOS (dados.js), Som (som.js),
 // criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
 
@@ -729,7 +729,7 @@ function montarRespostas() {
     extra.textContent = !h.resposta
       ? ""
       : h.supernova
-        ? "Supernova! A resposta escondida desta pergunta."
+        ? "Singularidade! A resposta escondida desta pergunta."
         : `${faixa.nome[0]}${faixa.nome.slice(1).toLowerCase()} · mais rara que ${Math.round((h.percentil || 0) * 100)}% das respostas`;
     const seta = document.createElement("span");
     seta.className = "seta";
@@ -855,7 +855,7 @@ function montarBanco(cat, sua) {
       if (it.sn) {
         const nota = document.createElement("span");
         nota.className = "nota";
-        nota.textContent = `★ Supernova. ${CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
+        nota.textContent = `★ Singularidade. ${CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
         li.append(nota);
       }
       lista.append(li);

@@ -486,7 +486,7 @@ pre {
         <summary hidden>como jogar</summary>
         <p>Cada pergunta pede uma palavra de um tema. Você tem 25 segundos.
            Respostas óbvias levam o tardígrado só um pouquinho; as nichadas levam você para o fundo do espaço.
-           Cada pergunta esconde uma <b>supernova</b>, a resposta secreta que vale o dobro.
+           Cada pergunta esconde uma <b>singularidade</b>, a resposta secreta que vale o dobro.
            Errou a grafia? O jogo sugere a correção, e você confirma.</p>
       </details>
     </section>
@@ -1021,12 +1021,12 @@ function criarNaves() {
         const a = (i / 80) * Math.PI * 2;
         const x = 9.5 + Math.cos(a) * 8.6, y = 5.5 + Math.sin(a) * 2.2;
         if ((Math.sin(a) > 0) !== frente) continue;
-        g.fillStyle = Math.sin(a) > 0 ? "#fff0a8" : "#b8902a";
+        g.fillStyle = Math.sin(a) > 0 ? "#d8ecff" : "#3a6ab8";
         g.fillRect(Math.floor(x), Math.floor(y), 1, 1);
       }
     };
     anel(false);
-    esferaMini(g, 9.5, 5.5, 4.6, ["#7a5410", "#b8861e", "#ffd23f", "#fff0a0"], (x, y) => (y % 3 === 0 ? -0.6 : 0));
+    esferaMini(g, 9.5, 5.5, 4.6, ["#0f2f6a", "#2a62c8", "#5fa8ff", "#c8e4ff"], (x, y) => (y % 3 === 0 ? -0.6 : 0));
     anel(true);
   }
 
@@ -1330,12 +1330,12 @@ function curvaQueda(t, peso) {
 
 // Faixas de raridade. "min" é em pontos da resposta.
 const FAIXAS = [
-  { id: "rara", min: 60, nome: "RARA", cor: "#c38bff", emoji: "☄️", frase: "Quase ninguém chega tão fundo." },
-  { id: "incomum", min: 35, nome: "INCOMUM", cor: "#ffd23f", emoji: "🪐", frase: "Poucos foram por esse caminho." },
-  { id: "comum", min: 18, nome: "COMUM", cor: "#5fe1ff", emoji: "🌙", frase: "Boa, mas ainda perto de casa." },
+  { id: "rara", min: 60, nome: "ESPAÇO PROFUNDO", cor: "#c38bff", emoji: "☄️", frase: "Quase ninguém chega tão fundo." },
+  { id: "incomum", min: 35, nome: "RARO", cor: "#5fa8ff", emoji: "🪐", frase: "Poucos foram por esse caminho." },
+  { id: "comum", min: 18, nome: "LETRADO", cor: "#6cf09a", emoji: "🌙", frase: "Boa, mas ainda perto de casa." },
   { id: "obvia", min: 0, nome: "ÓBVIA", cor: "#e8f0ff", emoji: "🛰️", frase: "Todo mundo pensou nessa." },
 ];
-const SUPERNOVA = { id: "supernova", nome: "SUPERNOVA", cor: "#ff4fd8", emoji: "🌟", frase: "Você achou a resposta escondida desta pergunta!" };
+const SUPERNOVA = { id: "supernova", nome: "SINGULARIDADE", cor: "#ff4fd8", emoji: "🌟", frase: "Você achou a resposta escondida desta pergunta!" };
 
 // mistura duas cores "#rrggbb" (k = 0 dá a primeira, 1 dá a segunda)
 function misturarCor(a, b, k) {
@@ -1596,7 +1596,7 @@ function criarIcones() {
   };
   // cada faixa num tom só (escuro, médio, a cor, e um brilho claro): simples, sem confusão de cores.
   // A supernova fica colorida de propósito.
-  const MONO = { obvia: "#e8f0ff", comum: "#5fe1ff", incomum: "#ffd23f", rara: "#c38bff", nada: "#ff6b81" };
+  const MONO = { obvia: "#e8f0ff", comum: "#6cf09a", incomum: "#5fa8ff", rara: "#c38bff", nada: "#ff6b81" };
   function pintarDeUmaCor(ctx, hex) {
     const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
     const mistura = (k, alvo) => c.map((v) => Math.round(v + (alvo - v) * k));
@@ -3142,7 +3142,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 // Nicho: regras do jogo diário.
 // Cada pergunta pede uma palavra de um tema; o jogador tem 25 segundos.
 // Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
-// Acertar a "supernova" (a resposta secreta da pergunta) dobra os pontos.
+// Acertar a "singularidade" (a resposta secreta da pergunta; no código, "supernova") dobra os pontos.
 // Vem de outros arquivos: window.NICHO_DADOS (dados.js), Som (som.js),
 // criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
 
@@ -3870,7 +3870,7 @@ function montarRespostas() {
     extra.textContent = !h.resposta
       ? ""
       : h.supernova
-        ? "Supernova! A resposta escondida desta pergunta."
+        ? "Singularidade! A resposta escondida desta pergunta."
         : `${faixa.nome[0]}${faixa.nome.slice(1).toLowerCase()} · mais rara que ${Math.round((h.percentil || 0) * 100)}% das respostas`;
     const seta = document.createElement("span");
     seta.className = "seta";
@@ -3996,7 +3996,7 @@ function montarBanco(cat, sua) {
       if (it.sn) {
         const nota = document.createElement("span");
         nota.className = "nota";
-        nota.textContent = `★ Supernova. ${CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
+        nota.textContent = `★ Singularidade. ${CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
         li.append(nota);
       }
       lista.append(li);

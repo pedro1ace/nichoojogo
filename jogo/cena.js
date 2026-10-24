@@ -51,12 +51,12 @@ function curvaQueda(t, peso) {
 
 // Faixas de raridade. "min" é em pontos da resposta.
 const FAIXAS = [
-  { id: "rara", min: 60, nome: "RARA", cor: "#c38bff", emoji: "☄️", frase: "Quase ninguém chega tão fundo." },
-  { id: "incomum", min: 35, nome: "INCOMUM", cor: "#ffd23f", emoji: "🪐", frase: "Poucos foram por esse caminho." },
-  { id: "comum", min: 18, nome: "COMUM", cor: "#5fe1ff", emoji: "🌙", frase: "Boa, mas ainda perto de casa." },
+  { id: "rara", min: 60, nome: "ESPAÇO PROFUNDO", cor: "#c38bff", emoji: "☄️", frase: "Quase ninguém chega tão fundo." },
+  { id: "incomum", min: 35, nome: "RARO", cor: "#5fa8ff", emoji: "🪐", frase: "Poucos foram por esse caminho." },
+  { id: "comum", min: 18, nome: "LETRADO", cor: "#6cf09a", emoji: "🌙", frase: "Boa, mas ainda perto de casa." },
   { id: "obvia", min: 0, nome: "ÓBVIA", cor: "#e8f0ff", emoji: "🛰️", frase: "Todo mundo pensou nessa." },
 ];
-const SUPERNOVA = { id: "supernova", nome: "SUPERNOVA", cor: "#ff4fd8", emoji: "🌟", frase: "Você achou a resposta escondida desta pergunta!" };
+const SUPERNOVA = { id: "supernova", nome: "SINGULARIDADE", cor: "#ff4fd8", emoji: "🌟", frase: "Você achou a resposta escondida desta pergunta!" };
 
 // mistura duas cores "#rrggbb" (k = 0 dá a primeira, 1 dá a segunda)
 function misturarCor(a, b, k) {
@@ -317,7 +317,7 @@ function criarIcones() {
   };
   // cada faixa num tom só (escuro, médio, a cor, e um brilho claro): simples, sem confusão de cores.
   // A supernova fica colorida de propósito.
-  const MONO = { obvia: "#e8f0ff", comum: "#5fe1ff", incomum: "#ffd23f", rara: "#c38bff", nada: "#ff6b81" };
+  const MONO = { obvia: "#e8f0ff", comum: "#6cf09a", incomum: "#5fa8ff", rara: "#c38bff", nada: "#ff6b81" };
   function pintarDeUmaCor(ctx, hex) {
     const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
     const mistura = (k, alvo) => c.map((v) => Math.round(v + (alvo - v) * k));

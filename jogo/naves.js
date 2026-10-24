@@ -108,12 +108,12 @@ function criarNaves() {
         const a = (i / 80) * Math.PI * 2;
         const x = 9.5 + Math.cos(a) * 8.6, y = 5.5 + Math.sin(a) * 2.2;
         if ((Math.sin(a) > 0) !== frente) continue;
-        g.fillStyle = Math.sin(a) > 0 ? "#fff0a8" : "#b8902a";
+        g.fillStyle = Math.sin(a) > 0 ? "#d8ecff" : "#3a6ab8";
         g.fillRect(Math.floor(x), Math.floor(y), 1, 1);
       }
     };
     anel(false);
-    esferaMini(g, 9.5, 5.5, 4.6, ["#7a5410", "#b8861e", "#ffd23f", "#fff0a0"], (x, y) => (y % 3 === 0 ? -0.6 : 0));
+    esferaMini(g, 9.5, 5.5, 4.6, ["#0f2f6a", "#2a62c8", "#5fa8ff", "#c8e4ff"], (x, y) => (y % 3 === 0 ? -0.6 : 0));
     anel(true);
   }
 

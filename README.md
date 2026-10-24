@@ -21,7 +21,7 @@ Como funciona hoje no protótipo:
   Gaia BH1, Nebulosa do Anel, Nebulosa da Lagoa, Caranguejo, Pilares da Criação, Eta Carinae, Ômega Centauri,
   Aglomerado de Hércules e, no fim, Sagitário A* (o fundo vira um horizonte de eventos laranja e preto). As nebulosas e aglomerados ficam no
   fundo enquanto você responde. Também: curiosidades nas laterais, régua em anos-luz e linhas de cada faixa.
-- Faixas: ÓBVIA (8 a 15 pontos), COMUM (18 a 34), INCOMUM (35 a 58), RARA (60 a 90) e a **supernova** (100),
+- Faixas (e cores): ÓBVIA, branca (8 a 15 pontos), LETRADO, verde (18 a 34), RARO, azul (35 a 58), ESPAÇO PROFUNDO, roxa (60 a 90) e a **singularidade**, rosa (100),
   a resposta secreta de cada pergunta, que vale o dobro.
 - A tela inteira treme mais quanto mais rara a resposta. A palavra aparece numa caixinha da cor da faixa e cai junto com a câmera; o foguete vai ao lado, acompanhando com um balanço suave.
 - Autocorreção: se a palavra está quase certa (inclusive contra os apelidos), o jogo sugere e preenche o campo,
