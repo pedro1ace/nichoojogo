@@ -859,17 +859,42 @@ function montarBanco(cat, sua) {
   return banco;
 }
 
+// "PRÓXIMA INCURSÃO EM 04:12:09" com um reloginho girando e os dígitos rolando
+// como num odômetro; à meia-noite vira "PRONTA · recarregar".
+let relogioAmanha = null;
 function contarAteAmanha() {
+  const el = $("amanha");
+  el.innerHTML = '<span class="rotulo-amanha">PRÓXIMA INCURSÃO EM</span><span class="relogio-amanha" aria-hidden="true"><i></i></span><span class="digitos"></span>';
+  const digitos = el.querySelector(".digitos");
+  let anterior = "";
   const atualizar = () => {
     const agora = new Date();
     const amanha = new Date(agora);
     amanha.setHours(24, 0, 0, 0);
     const s = Math.floor((amanha - agora) / 1000);
+    if (s <= 0 || agora.toDateString() !== diaDoJogo) {
+      clearInterval(relogioAmanha);
+      el.innerHTML = '<span class="rotulo-amanha">PRÓXIMA INCURSÃO EM</span> <b class="pronta">PRONTA</b> <a href="#" class="recarregar">recarregar</a>';
+      el.querySelector(".recarregar").addEventListener("click", (e) => { e.preventDefault(); location.reload(); });
+      return;
+    }
     const p = (n) => String(n).padStart(2, "0");
-    $("amanha").textContent = `Novas perguntas em ${p(Math.floor(s / 3600))}:${p(Math.floor(s / 60) % 60)}:${p(s % 60)}`;
+    const texto = `${p(Math.floor(s / 3600))}:${p(Math.floor(s / 60) % 60)}:${p(s % 60)}`;
+    if (texto.length !== anterior.length) digitos.innerHTML = [...texto].map((c) => `<span>${c}</span>`).join("");
+    [...texto].forEach((c, i) => {
+      if (c === anterior[i]) return;
+      const d = digitos.children[i];
+      d.textContent = c;
+      d.classList.remove("rolar");
+      void d.offsetWidth; // reinicia a animação
+      d.classList.add("rolar");
+    });
+    anterior = texto;
   };
+  const diaDoJogo = new Date().toDateString();
+  clearInterval(relogioAmanha);
   atualizar();
-  setInterval(atualizar, 1000);
+  relogioAmanha = setInterval(atualizar, 1000);
 }
 
 function copiar() {
