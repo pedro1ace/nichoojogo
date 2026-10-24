@@ -126,3 +126,7 @@ Nas categorias abertas, resposta fora da lista não é erro: vai para uma fila, 
 ## Créditos
 
 Base de palavras: [fserb/pt-br](https://github.com/fserb/pt-br), de Fernando Serboncini, licença MIT.
+
+## Licença
+
+© 2026 pedro1ace. Todos os direitos reservados. Veja [LICENSE](LICENSE), que também lista o conteúdo de terceiros (Wikidata CC0, fserb/pt-br MIT, fontes OFL).
