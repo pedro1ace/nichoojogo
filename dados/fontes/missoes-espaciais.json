@@ -1,0 +1,19 @@
+{
+ "titulo": "Missões espaciais",
+ "pergunta": "Cite uma missão espacial",
+ "wikidata": {
+  "classe": "Q2133344",
+  "subclasses": true,
+  "filtros_sparql": [
+   "?ptwiki schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> ."
+  ]
+ },
+ "contagem": {
+  "min": 100,
+  "max": 2000
+ },
+ "_notas": {
+  "geral": "rascunho: contagem e filtros ainda não conferidos contra o Wikidata (rede bloqueada quando foi escrito)",
+  "filtro": "missão espacial (e subclasses) com artigo na pt.wikipedia"
+ }
+}
