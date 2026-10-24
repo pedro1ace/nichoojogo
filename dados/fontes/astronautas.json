@@ -1,0 +1,19 @@
+{
+ "titulo": "Astronautas",
+ "pergunta": "Cite um astronauta (ou cosmonauta) que já foi ao espaço",
+ "wikidata": {
+  "classe": "Q5",
+  "filtros_sparql": [
+   "?item wdt:P106 wd:Q11631 .",
+   "?ptwiki schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> ."
+  ]
+ },
+ "contagem": {
+  "min": 100,
+  "max": 1000
+ },
+ "_notas": {
+  "geral": "rascunho: contagem e filtros ainda não conferidos contra o Wikidata (rede bloqueada quando foi escrito)",
+  "filtro": "profissão (P106) astronauta e artigo na pt.wikipedia"
+ }
+}

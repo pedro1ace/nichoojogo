@@ -1,0 +1,19 @@
+{
+ "titulo": "Exoplanetas",
+ "pergunta": "Cite um exoplaneta (planeta fora do Sistema Solar)",
+ "wikidata": {
+  "classe": "Q44559",
+  "subclasses": true,
+  "filtros_sparql": [
+   "?ptwiki schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> ."
+  ]
+ },
+ "contagem": {
+  "min": 30,
+  "max": 1500
+ },
+ "_notas": {
+  "geral": "rascunho: contagem e filtros ainda não conferidos contra o Wikidata (rede bloqueada quando foi escrito)",
+  "filtro": "exoplaneta com artigo na pt.wikipedia"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "titulo": "Luas do Sistema Solar",
+ "pergunta": "Cite uma lua (satélite natural) do Sistema Solar",
+ "wikidata": {
+  "classe": "Q2537",
+  "subclasses": true,
+  "filtros_sparql": [
+   "?item wdt:P397 ?astro . ?astro wdt:P397 wd:Q525 .",
+   "?ptwiki schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> ."
+  ]
+ },
+ "contagem": {
+  "min": 25,
+  "max": 400
+ },
+ "_notas": {
+  "geral": "rascunho: contagem e filtros ainda não conferidos contra o Wikidata (rede bloqueada quando foi escrito)",
+  "filtro": "satélite natural que orbita um corpo que orbita o Sol, com artigo na pt.wikipedia; substitui a lista manual"
+ }
+}
