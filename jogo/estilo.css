@@ -160,11 +160,12 @@ button { font: inherit; cursor: pointer; }
 .botao-grande {
   font-family: var(--corpo); font-weight: 700; font-size: 20px; letter-spacing: 0.25em;
   min-width: min(520px, 100%); padding: 16px 28px; margin-top: 8px;
-  background: var(--painel); color: var(--texto); border: 0;
-  box-shadow: inset 0 0 0 3px var(--ciano), 0 0 18px rgba(95, 225, 255, 0.35);
+  background: repeating-linear-gradient(0deg, rgba(var(--luz), 0.045) 0 1px, transparent 1px 3px), var(--painel); color: var(--texto); border: 0;
+  text-shadow: 0 0 10px rgba(95, 225, 255, 0.55);
+  box-shadow: inset 0 0 0 3px var(--ciano), inset 0 -5px 0 rgba(95, 225, 255, 0.25), 0 0 20px rgba(95, 225, 255, 0.45), 0 0 46px rgba(95, 225, 255, 0.18);
 }
 .botao-grande { transition: box-shadow 0.2s, background 0.2s; }
-.botao-grande:hover { background: #18124e; box-shadow: inset 0 0 0 3px #ff8c28, 0 0 24px rgba(255, 140, 40, 0.55), 0 0 44px rgba(150, 80, 255, 0.3); }
+.botao-grande:hover { background: repeating-linear-gradient(0deg, rgba(var(--luz), 0.05) 0 1px, transparent 1px 3px), #18124e; text-shadow: 0 0 10px rgba(255, 140, 40, 0.7); box-shadow: inset 0 0 0 3px #ff8c28, 0 0 24px rgba(255, 140, 40, 0.55), 0 0 44px rgba(150, 80, 255, 0.3); }
 #inicio .botao-grande { width: min(520px, 100%); padding: 22px 28px; font-size: 21px; }
 #inicio #comecar {
   animation: deriva 14s ease-in-out infinite;
@@ -356,8 +357,20 @@ pre {
 }
 .botoes { display: flex; gap: 10px; flex-wrap: wrap; }
 .botoes button { flex: 1; min-width: 160px; padding: 14px; border: 0; font-weight: 700; letter-spacing: 3px; }
-.botao-rosa { background: var(--rosa); color: #1a0010; box-shadow: inset -3px -3px 0 #b02a5a; }
-.botao-escuro { background: var(--painel); color: var(--texto); box-shadow: inset 0 0 0 2px var(--painel-borda); }
+/* botões neon: cor cheia com linhas finas por dentro, borda escura embaixo e brilho em volta */
+.botao-rosa {
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.07) 0 1px, transparent 1px 3px), var(--rosa);
+  color: #1a0010; box-shadow: inset 0 0 0 2px #ff9cbd, inset 0 -4px 0 #b02a5a, 0 0 16px rgba(255, 79, 139, 0.55), 0 0 34px rgba(255, 79, 139, 0.25);
+  transition: box-shadow 0.2s, filter 0.2s, transform 0.1s;
+}
+.botao-rosa:hover { filter: brightness(1.1); box-shadow: inset 0 0 0 2px #ffc2d6, inset 0 -4px 0 #b02a5a, 0 0 22px rgba(255, 79, 139, 0.8), 0 0 50px rgba(255, 79, 139, 0.4); }
+.botao-escuro {
+  background: repeating-linear-gradient(0deg, rgba(var(--luz), 0.04) 0 1px, transparent 1px 3px), var(--painel);
+  color: var(--texto); box-shadow: inset 0 0 0 2px rgba(95, 225, 255, 0.55), 0 0 12px rgba(95, 225, 255, 0.25);
+  transition: box-shadow 0.2s;
+}
+.botao-escuro:hover { box-shadow: inset 0 0 0 2px var(--ciano), 0 0 18px rgba(95, 225, 255, 0.55); }
+.botao-rosa:active, .botao-escuro:active { transform: translateY(2px); }
 #amanha { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; font-family: var(--mono); font-size: 15px; letter-spacing: 0.22em; color: var(--suave); margin: 14px 0 6px; }
 #amanha .digitos { display: inline-flex; color: var(--ciano); font-weight: 700; font-size: 18px; letter-spacing: 0.08em; text-shadow: 0 0 10px rgba(95, 225, 255, 0.6); font-variant-numeric: tabular-nums; }
 #amanha .digitos span { display: inline-block; min-width: 0.62em; text-align: center; overflow: hidden; }
