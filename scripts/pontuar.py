@@ -34,6 +34,11 @@ Como o peso é calculado (0 a 1, onde 1 = muito nichado):
     Exceção: se mais da metade das respostas não está na base (nomes próprios) e a
     categoria tem visitas da Wikipédia (dados/sinais/wikidata/<cat>.json), a ordem
     vem das visitas: a mais visitada é a mais óbvia, a menos visitada a mais rara.
+    Acima das duas: se existe dados/sinais/fama/<cat>.json (scripts/agente_fama.py), a
+    ordem vem da fama medida pelo agente (lembrança estimada por LLM, quem reconhece,
+    visitas e tendência na Wikipédia, e o peso manual como mais um sinal). Aí a supernova
+    é, entre as raras, a que mais gente reconheceria: rara de lembrar, mas fácil de aceitar
+    como certa. A coluna supernova dos ajustes continua mandando.
 
 Categorias fora do jogo: ids em dados/fora_do_jogo.txt (um por linha, # comenta).
 Continuam no repositório, mas não entram em dados/pesos/ nem no jogo.
@@ -58,6 +63,7 @@ CATEGORIAS = RAIZ / "dados" / "categorias"
 AJUSTES = RAIZ / "dados" / "ajustes"
 SAIDA = RAIZ / "dados" / "pesos"
 SINAIS_WIKIDATA = RAIZ / "dados" / "sinais" / "wikidata"
+SINAIS_FAMA = RAIZ / "dados" / "sinais" / "fama"  # scripts/agente_fama.py
 
 PESO_PERCENTIL = 0.7
 FORA_DO_JOGO = RAIZ / "dados" / "fora_do_jogo.txt"
@@ -165,6 +171,14 @@ def ler_visitas(cat_id: str) -> dict[str, int]:
     return {nome: l.get("visitas_pt_12m") or 0 for nome, l in dados.items()}
 
 
+def ler_fama(cat_id: str) -> dict[str, dict]:
+    """Fama medida pelo agente (dados/sinais/fama/<cat>.json): 1 = todo mundo pensa nela."""
+    caminho = SINAIS_FAMA / f"{cat_id}.json"
+    if not caminho.exists():
+        return {}
+    return json.loads(caminho.read_text(encoding="utf-8")).get("respostas", {})
+
+
 def percentis(valores: list[float]) -> list[float]:
     """Percentil com empates na média: 0 = menor ICF, 1 = maior."""
     n = len(valores)
@@ -235,14 +249,26 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
     visitas = ler_visitas(cat["id"])
     sem = sum(r["sem_dado"] for r in respostas)
     cat["fonte_peso"] = "visitas" if visitas and sem > len(respostas) / 2 else "icf"
-    if cat["fonte_peso"] == "visitas":
+    fama_agente = ler_fama(cat["id"])
+    if fama_agente:
+        cat["fonte_peso"] = "agente"
+        # sem medida do agente (resposta nova na lista) conta como a menos famosa: rara.
+        # Rode o agente_fama.py de novo para ela ganhar medida.
+        ordem = percentis([-(fama_agente.get(r["resposta"]) or {}).get("fama", 0.0) for r in respostas])
+    elif cat["fonte_peso"] == "visitas":
         # menos visitas = mais nichado; sem artigo conta como zero visita
         ordem = percentis([-visitas.get(r["resposta"], 0) for r in respostas])
     else:
         ordem = percentis([r["icf"] for r in respostas])
 
     for r, p in zip(respostas, ordem):
-        if cat["fonte_peso"] == "visitas":
+        if cat["fonte_peso"] == "agente":
+            medida = fama_agente.get(r["resposta"]) or {}
+            r["lembranca"] = medida.get("lembranca_em_1000")
+            r["conhecem"] = medida.get("conhecem_pct")
+            r["visitas"] = medida.get("visitas_pt_12m") or 0
+            peso = p
+        elif cat["fonte_peso"] == "visitas":
             r["visitas"] = visitas.get(r["resposta"], 0)
             peso = p
         else:
@@ -250,7 +276,8 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
             peso = PESO_PERCENTIL * p + (1 - PESO_PERCENTIL) * global_
         ajuste = ajustes.get(normalizar(r["resposta"]), {})
         r["ajustado"] = bool((ajuste.get("peso") or "").strip())
-        if r["ajustado"]:
+        # com o agente, o peso manual já entrou como um dos sinais da fama (scripts/agente_fama.py)
+        if r["ajustado"] and cat["fonte_peso"] != "agente":
             peso = float(ajuste["peso"]) / 100
         r["percentil"] = round(p, 3)
         r["fama"] = round(min(max(peso, 0.0), 1.0), 3)
@@ -266,7 +293,11 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
 
     marcadas = [r for r in respostas if r["supernova_manual"]]
-    if cat["fonte_peso"] == "visitas":
+    if cat["fonte_peso"] == "agente":
+        # rara de lembrar, mas que muita gente reconhece ao ver: a graça da supernova
+        candidatas = sorted((r for r in respostas if r["pontos"] >= REGUA[-1][3]),
+                            key=lambda r: (-(r["conhecem"] or 0), -(r["lembranca"] or 0), -r["visitas"], r["resposta"]))
+    elif cat["fonte_peso"] == "visitas":
         # pela visita, a de mais pontos é quase sempre uma que ninguém conhece (zero visita).
         # A supernova deve ser rara mas possível: a mais visitada entre as que valem 50 ou mais.
         candidatas = sorted((r for r in respostas if r["pontos"] >= REGUA[-1][3]), key=lambda r: -r["visitas"])
@@ -291,6 +322,8 @@ def salvar(cat: dict) -> None:
     campos = ["resposta", "apelidos", "icf", "sem_dado", "percentil", "fama", "peso", "pontos", "ajustado"]
     if cat["fonte_peso"] == "visitas":
         campos.insert(4, "visitas")
+    if cat["fonte_peso"] == "agente":
+        campos[4:4] = ["lembranca", "conhecem", "visitas"]
     with (SAIDA / "revisao" / f"{cat['id']}.csv").open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=campos)
         w.writeheader()
