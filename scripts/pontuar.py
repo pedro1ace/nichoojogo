@@ -27,11 +27,10 @@ Como o peso é calculado (0 a 1, onde 1 = muito nichado):
     peso = PESO_PERCENTIL * percentil + (1 - PESO_PERCENTIL) * raridade_global
     4. régua da categoria: o peso acima (ou o manual) só decide a ORDEM das
        respostas. Depois a ordem é espalhada pela RÉGUA, para toda categoria ter
-       todas as faixas do jogo: uns 36% óbvias, 30% comuns, 22% incomuns e 12% raras (sempre
-       mais respostas nas faixas mais comuns).
-       O peso de antes fica salvo em "fama", para revisão.
-    pontos ("anos-luz") = max(1, round(100 * peso ** CURVA))
-    A curva faz as respostas óbvias valerem quase nada, como no Krillion.
+       todas as faixas do jogo, como no Krillion: 2% óbvias (8 a 15 pontos, de 3 a 15
+       respostas), 5% comuns (18 a 34, de 5 a 40), 15% incomuns (35 a 58, de 10 a 150)
+       e todo o resto raro (60 a 90). A supernova vale sempre 100 (50, dobrada no jogo).
+       O peso de antes fica salvo em "fama", para revisão. "peso" = raiz(pontos/100).
     Exceção: se mais da metade das respostas não está na base (nomes próprios) e a
     categoria tem visitas da Wikipédia (dados/sinais/wikidata/<cat>.json), a ordem
     vem das visitas: a mais visitada é a mais óbvia, a menos visitada a mais rara.
@@ -61,11 +60,18 @@ SAIDA = RAIZ / "dados" / "pesos"
 SINAIS_WIKIDATA = RAIZ / "dados" / "sinais" / "wikidata"
 
 PESO_PERCENTIL = 0.7
-SUPERNOVA_FOLGA = 10  # a supernova (já dobrada) vale ao menos a maior resposta + isto
 FORA_DO_JOGO = RAIZ / "dados" / "fora_do_jogo.txt"
-# (percentil dentro da categoria, peso). Os pontos de corte das faixas do jogo
-# (jogo/cena.js) são 5, 20 e 50 pontos, ou seja, peso 0,224, 0,447 e 0,707.
-REGUA = [(0.0, 0.10), (0.36, 0.2236), (0.66, 0.4473), (0.88, 0.7072), (1.0, 0.95)]
+# Régua, como no Krillion: pouquíssimas óbvias, poucas comuns e a cauda longa rara.
+# (parte da lista, mínimo, máximo de respostas, pontos no começo e no fim da faixa),
+# da mais famosa para a menos famosa. A rara fica com todo o resto.
+# Os cortes das faixas no jogo (FAIXAS em jogo/cena.js) são 18, 35 e 60 pontos.
+REGUA = [
+    (0.02, 3, 15, 8, 15),     # óbvia
+    (0.05, 5, 40, 18, 34),    # comum
+    (0.15, 10, 150, 35, 58),  # incomum
+    (1.00, 0, 10**9, 60, 90),  # rara: o resto
+]
+SUPERNOVA_PONTOS = 50  # dobrada no jogo: 100, acima da maior rara (90)
 CURVA = 2.0
 # ICF usado quando a palavra não existe na base. Fica perto da mediana da base
 # (20,9): "provavelmente rara", mas sem chutar o máximo. Essas linhas saem com
@@ -178,12 +184,26 @@ def percentis(valores: list[float]) -> list[float]:
     return resultado
 
 
-def na_regua(p: float) -> float:
-    """Interpolação linear do percentil na RÉGUA."""
-    for (p0, v0), (p1, v1) in zip(REGUA, REGUA[1:]):
-        if p <= p1:
-            return v0 + (v1 - v0) * (p - p0) / (p1 - p0)
-    return REGUA[-1][1]
+def cotas(n: int) -> list[int]:
+    """Quantas respostas cada faixa da RÉGUA recebe numa lista de n."""
+    resto, saida = n, []
+    for parte, minimo, maximo, _, _ in REGUA[:-1]:
+        c = min(resto, max(minimo, min(maximo, round(parte * n))))
+        saida.append(c)
+        resto -= c
+    return saida + [resto]
+
+
+def na_regua(i: int, n: int) -> int:
+    """Pontos da i-ésima resposta (0 = a mais famosa) de n, pela RÉGUA.
+    Cada faixa recebe a sua cota exata, e dentro dela os pontos sobem por igual."""
+    inicio = 0
+    for cota, (_, _, _, de, ate) in zip(cotas(n), REGUA):
+        if i < inicio + cota:
+            k = (i - inicio) / (cota - 1) if cota > 1 else 0.5
+            return round(de + (ate - de) * k)
+        inicio += cota
+    return REGUA[-1][4]
 
 
 def fora_do_jogo() -> set[str]:
@@ -242,26 +262,21 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
     ordenadas = sorted(respostas, key=lambda r: (r["fama"], r["percentil"], normalizar(r["resposta"])))
     n = len(ordenadas)
     for i, r in enumerate(ordenadas):
-        r["peso"] = round(na_regua(i / (n - 1) if n > 1 else 1.0), 3)
-    for r in respostas:
-        r["pontos"] = max(1, round(100 * r["peso"] ** CURVA))
+        r["pontos"] = na_regua(i, n)
+        r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
 
     marcadas = [r for r in respostas if r["supernova_manual"]]
     if cat["fonte_peso"] == "visitas":
         # pela visita, a de mais pontos é quase sempre uma que ninguém conhece (zero visita).
         # A supernova deve ser rara mas possível: a mais visitada entre as que valem 50 ou mais.
-        candidatas = sorted((r for r in respostas if r["pontos"] >= 50), key=lambda r: -r["visitas"])
+        candidatas = sorted((r for r in respostas if r["pontos"] >= REGUA[-1][3]), key=lambda r: -r["visitas"])
     else:
         candidatas = sorted(respostas, key=lambda r: -r["pontos"])
     supernova = (marcadas or candidatas or respostas)[0]
     cat["supernova"] = supernova["resposta"]
-    # O jogo dobra os pontos da supernova. Ela tem que valer mais que qualquer outra
-    # resposta da categoria: dobrada, fica pelo menos SUPERNOVA_FOLGA acima da maior.
-    maior = max((r["pontos"] for r in respostas if r is not supernova), default=0)
-    minimo = -(-(maior + SUPERNOVA_FOLGA) // 2)
-    if supernova["pontos"] < minimo:
-        supernova["pontos"] = minimo
-        supernova["peso"] = round((minimo / 100) ** (1 / CURVA), 3)
+    # O jogo dobra os pontos da supernova: 50 vira 100, acima de qualquer outra resposta.
+    supernova["pontos"] = SUPERNOVA_PONTOS
+    supernova["peso"] = round((SUPERNOVA_PONTOS / 100) ** (1 / CURVA), 3)
     respostas.sort(key=lambda r: (r["pontos"], r["resposta"]))
     for r in respostas:
         del r["supernova_manual"]

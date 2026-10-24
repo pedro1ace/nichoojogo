@@ -18,7 +18,7 @@ Como funciona hoje no protótipo:
   sempre no mesmo tempo: as raras descem rápido e as óbvias quase não saem do lugar. Um tardígrado de capacete (o mascote) acompanha.
 - No caminho: marcos (Lua, Marte, Júpiter... buraco negro), curiosidades nas laterais, régua de profundidade
   e linhas mostrando até onde cada faixa de raridade levaria nesta pergunta.
-- Faixas: ÓBVIA (0 a 4), COMUM (5 a 19), INCOMUM (20 a 49), RARA (50+) e a **supernova**,
+- Faixas: ÓBVIA (8 a 15 pontos), COMUM (18 a 34), INCOMUM (35 a 58), RARA (60 a 90) e a **supernova** (100),
   a resposta secreta de cada pergunta, que vale o dobro.
 - A tela inteira treme mais quanto mais rara a resposta. A palavra aparece numa caixinha da cor da faixa e cai junto com a câmera; o foguete vai ao lado, acompanhando com um balanço suave.
 - Autocorreção: se a palavra está quase certa (inclusive contra os apelidos), o jogo sugere e preenche o campo,
@@ -86,10 +86,19 @@ Para cada categoria, `pontuar.py` combina:
 - **raridade global (30%)**: o ICF normalizado na base inteira.
 
 Esse peso (ou o manual) só decide a **ordem** das respostas. Depois a **régua da categoria** espalha essa ordem
-pelas faixas do jogo, para toda categoria ter de tudo: uns 36% óbvias, 30% comuns, 22% incomuns e 12% raras (sempre mais respostas nas faixas mais comuns),
-mais a supernova. O peso de antes fica na coluna `fama` de `dados/pesos/revisao/<cat>.csv`.
+pelas faixas do jogo, para toda categoria ter de tudo. O peso de antes fica na coluna `fama` de
+`dados/pesos/revisao/<cat>.csv`.
 
-`pontos = 100 × peso²`, com mínimo de 1. A curva faz as respostas óbvias valerem quase nada.
+| Faixa | Parte da lista | Pontos |
+|---|---|---|
+| Óbvia | as 2% mais famosas (de 3 a 15 respostas) | 8 a 15 |
+| Comum | as 5% seguintes (de 5 a 40) | 18 a 34 |
+| Incomum | as 15% seguintes (de 10 a 150) | 35 a 58 |
+| Rara | todo o resto | 60 a 90 |
+| Supernova | uma por categoria | 100 (50, dobrada no jogo) |
+
+Como no Krillion, as faixas baixas são estreitas de propósito: quem joga digita quase sempre as respostas mais
+famosas, então só as bem óbvias ficam cinzas, e a cauda longa (que pode ter milhares de respostas) é rara. Os cortes de faixa no jogo (`FAIXAS` em `jogo/cena.js`) são 18, 35 e 60 pontos.
 
 Categorias pequenas e fechadas (menos de 30 respostas) não dão para espalhar e ficam fora do jogo, listadas em
 `dados/fora_do_jogo.txt`. Os arquivos continuam no repositório.

@@ -1,62 +1,424 @@
 resposta,apelidos,icf,sem_dado,percentil,fama,peso,pontos,ajustado
-Bateria,,9.79,False,0.017,0.04,0.117,1,True
-Guitarra,,10.427,False,0.1,0.02,0.106,1,True
-Piano,,11.054,False,0.117,0.02,0.111,1,True
-Violão,,10.39,False,0.083,0.01,0.1,1,True
-Baixo,contrabaixo,8.839,False,0.0,0.14,0.151,2,True
-Cavaquinho,,13.137,False,0.333,0.16,0.157,2,True
-Flauta,flauta doce,12.232,False,0.183,0.08,0.129,2,True
-Pandeiro,,13.037,False,0.317,0.12,0.146,2,True
-Saxofone,sax,13.279,False,0.35,0.1,0.14,2,True
-Teclado,,10.342,False,0.067,0.1,0.134,2,True
-Violino,,12.245,False,0.2,0.05,0.123,2,True
-Gaita,harmônica,12.854,False,0.258,0.2,0.174,3,True
-Sanfona,acordeão | acordeom,13.013,False,0.3,0.18,0.163,3,True
-Tambor,,12.402,False,0.233,0.22,0.18,3,True
-Triângulo,,11.504,False,0.15,0.26,0.186,3,True
-Trompete,,13.32,False,0.367,0.18,0.169,3,True
-Berimbau,,13.922,False,0.45,0.26,0.192,4,True
-Harpa,,12.882,False,0.283,0.28,0.197,4,True
-Ukulele,,14.723,False,0.567,0.3,0.209,4,True
-Violoncelo,cello,13.633,False,0.4,0.28,0.203,4,True
-Clarinete,,13.749,False,0.417,0.32,0.22,5,True
-Trombone,,13.498,False,0.383,0.32,0.214,5,True
-Zabumba,,14.795,False,0.617,0.36,0.229,5,True
-Viola caipira,viola,11.742,False,0.167,0.38,0.253,6,True
-Órgão,,9.911,False,0.033,0.38,0.241,6,True
-Cuíca,,14.851,False,0.633,0.4,0.266,7,True
-Atabaque,,15.122,False,0.7,0.4,0.278,8,True
-Xilofone,,15.639,False,0.8,0.4,0.291,8,True
-Tuba,,14.12,False,0.483,0.42,0.303,9,True
-Banjo,,14.042,False,0.467,0.44,0.316,10,True
-Tamborim,,14.765,False,0.583,0.44,0.328,11,True
-Chocalho,,14.242,False,0.55,0.46,0.353,12,True
-Surdo,,12.392,False,0.217,0.46,0.34,12,True
-Maracá,,15.54,False,0.767,0.46,0.365,13,True
-Agogô,,15.965,False,0.85,0.48,0.378,14,True
-Castanhola,,16.608,False,0.95,0.5,0.39,15,True
-Pratos,,10.338,False,0.05,0.52,0.403,16,True
-Bandolim,,13.799,False,0.433,0.52,0.415,17,True
-Reco-reco,,14.155,False,0.5,0.52,0.427,18,True
-Gongo,,14.965,False,0.683,0.54,0.44,19,True
-Oboé,,14.777,False,0.6,0.56,0.455,21,True
-Bongô,,16.112,False,0.9,0.56,0.475,23,True
-Gaita de foles,,12.854,False,0.258,0.58,0.495,25,True
-Fagote,,15.174,False,0.717,0.6,0.514,26,True
-Marimba,,15.599,False,0.783,0.6,0.534,29,True
-Trompa,,14.163,False,0.517,0.62,0.554,31,True
-Cítara,,15.305,False,0.733,0.64,0.573,33,True
-Flautim,piccolo,16.184,False,0.917,0.64,0.593,35,True
-Ganzá,,15.909,False,0.833,0.66,0.613,38,True
-Alaúde,,14.903,False,0.65,0.68,0.632,40,True
-Rabeca,,14.92,False,0.667,0.7,0.652,43,True
-Kalimba,,20.0,True,0.992,0.7,0.672,45,True
-Sitar,,15.794,False,0.817,0.72,0.691,48,True
-Vibrafone,,16.025,False,0.867,0.72,0.714,51,True
-Caxixi,,16.585,False,0.933,0.74,0.748,56,True
-Didgeridoo,,20.0,True,0.992,0.74,0.781,61,True
-Tabla,,15.46,False,0.75,0.8,0.815,66,True
-Fole de oito baixos,oito baixos,11.464,False,0.133,0.82,0.849,72,True
-Serrote,,14.206,False,0.533,0.82,0.883,78,True
-Theremin,,16.061,False,0.883,0.84,0.916,84,True
-Celesta,,17.309,False,0.967,0.86,0.95,90,True
+Violão,violao de nylon | violão de aço | violão de 7 cordas | violão sete cordas,10.39,False,0.064,0.01,0.283,8,True
+Guitarra,guitarra elétrica,10.427,False,0.068,0.02,0.3,9,True
+Piano,,11.054,False,0.118,0.02,0.316,10,True
+Bateria,bateria acústica | bateria eletrônica,9.79,False,0.036,0.04,0.332,11,True
+Violino,,12.245,False,0.252,0.05,0.346,12,True
+Flauta,flauta doce | flauta transversal | flauta transversa,12.232,False,0.248,0.08,0.361,13,True
+Teclado,sintetizador | synth,10.342,False,0.059,0.1,0.374,14,True
+Saxofone,sax,13.279,False,0.344,0.1,0.387,15,True
+Pandeiro,,13.037,False,0.315,0.12,0.424,18,True
+Baixo,contrabaixo | baixo elétrico | contrabaixo acústico | rabecão,8.839,False,0.018,0.14,0.436,19,True
+Cavaquinho,,13.137,False,0.327,0.16,0.447,20,True
+Sanfona,acordeão | acordeom | gaita ponto | gaita de botão,13.013,False,0.31,0.18,0.447,20,True
+Trompete,,13.32,False,0.351,0.18,0.458,21,True
+Gaita,harmônica | gaita de boca,12.854,False,0.294,0.2,0.469,22,True
+Tambor,,12.402,False,0.268,0.22,0.48,23,True
+Berimbau,,13.922,False,0.405,0.26,0.49,24,True
+Triângulo,ferrinho,11.504,False,0.165,0.26,0.49,24,True
+Harpa,,12.882,False,0.301,0.28,0.5,25,True
+Violoncelo,cello,13.633,False,0.374,0.28,0.51,26,True
+Ukulele,,14.723,False,0.464,0.3,0.52,27,True
+Clarinete,,13.749,False,0.384,0.32,0.529,28,True
+Trombone,,13.498,False,0.36,0.32,0.529,28,True
+Zabumba,bumbo,14.795,False,0.481,0.36,0.539,29,True
+Órgão,,9.911,False,0.044,0.38,0.548,30,True
+Viola caipira,viola | viola de dez cordas | viola sertaneja,11.742,False,0.185,0.38,0.557,31,True
+Atabaque,,15.122,False,0.505,0.4,0.566,32,True
+Cuíca,puíta,14.851,False,0.486,0.4,0.566,32,True
+Xilofone,,15.639,False,0.54,0.4,0.574,33,True
+Tuba,,14.12,False,0.423,0.42,0.583,34,True
+Banjo,,14.042,False,0.412,0.44,0.592,35,True
+Tamborim,,14.765,False,0.472,0.44,0.592,35,True
+Caixa,caixa clara | tarol,8.736,False,0.009,0.451,0.6,36,True
+Corneta,,13.232,False,0.339,0.45,0.6,36,True
+Viola de arco,viola clássica,10.968,False,0.111,0.45,0.6,36,True
+Bumbo leguero,Bombo legüero,14.115,False,0.419,0.451,0.608,37,True
+Pandeirola,meia lua,9.527,False,0.021,0.452,0.608,37,True
+Apito,,12.502,False,0.275,0.452,0.616,38,True
+Sino,sinos,12.086,False,0.227,0.452,0.616,38,True
+Washboard,,20.0,True,0.836,0.452,0.616,38,True
+Carrilhão,,15.171,False,0.512,0.453,0.624,39,True
+Clavinete,clavinet,20.0,True,0.836,0.453,0.624,39,True
+Cravo,,12.163,False,0.242,0.453,0.624,39,True
+Piano elétrico,,10.764,False,0.081,0.454,0.632,40,True
+Órgão hammond,hammond,9.911,False,0.044,0.454,0.632,40,True
+Bombardino,eufônio | euphonium,16.047,False,0.559,0.455,0.64,41,True
+Piano de cauda,,11.477,False,0.161,0.454,0.64,41,True
+Trompa de caça,,12.405,False,0.27,0.455,0.64,41,True
+Flugelhorn,fliscorne,18.785,False,0.659,0.455,0.648,42,True
+Saxofone alto,sax alto,10.951,False,0.109,0.456,0.648,42,True
+Sousafone,,18.203,False,0.637,0.455,0.648,42,True
+Saxofone soprano,sax soprano,13.218,False,0.336,0.456,0.656,43,True
+Saxofone tenor,sax tenor,13.3,False,0.346,0.456,0.656,43,True
+Chocalho,,14.242,False,0.434,0.46,0.663,44,True
+Saxofone barítono,sax barítono,13.905,False,0.4,0.457,0.663,44,True
+Surdo,,12.392,False,0.264,0.46,0.663,44,True
+Agogô,,15.965,False,0.552,0.48,0.671,45,True
+Castanhola,Castanholas,16.608,False,0.59,0.5,0.671,45,True
+Maracá,maracas,15.54,False,0.531,0.46,0.671,45,True
+Bandolim,,13.799,False,0.386,0.52,0.678,46,True
+Pratos,prato | chimbal | hi-hat | crash | ride,10.338,False,0.056,0.52,0.678,46,True
+Reco-reco,,14.155,False,0.427,0.52,0.678,46,True
+Gongo,gongue,14.965,False,0.5,0.54,0.686,47,True
+Órgão de tubos,,9.911,False,0.044,0.55,0.686,47,True
+Palmas,,11.166,False,0.13,0.55,0.693,48,True
+Steel drum,steelpan | tambor de aço,11.137,False,0.128,0.55,0.693,48,True
+Toca-discos,pick-up | turntable,10.382,False,0.062,0.55,0.693,48,True
+Congas,conga | tumbadora,14.575,False,0.455,0.55,0.7,49,True
+Flauta de pan,flauta de pã | siku | zampoña,11.694,False,0.18,0.55,0.7,49,True
+Tímpano,tímpanos | timbale de orquestra,14.665,False,0.46,0.55,0.7,49,True
+Berrante,,14.68,False,0.462,0.55,0.707,50,True
+Ocarina,,14.8,False,0.483,0.55,0.707,50,True
+Serrote,,14.206,False,0.431,0.82,0.707,50,True
+Alfaia,,15.695,False,0.543,0.55,0.714,51,True
+Realejo,,15.082,False,0.502,0.55,0.714,51,True
+Repique,repinique,14.909,False,0.493,0.55,0.714,51,True
+Charango,,17.114,False,0.602,0.55,0.721,52,True
+Escaleta,melódica,15.809,False,0.547,0.55,0.721,52,True
+Glockenspiel,lira de marcha | metalofone,17.213,False,0.607,0.55,0.721,52,True
+Balalaica,balalaika,17.276,False,0.609,0.55,0.728,53,True
+Beatbox,,20.0,True,0.836,0.55,0.728,53,True
+Bouzouki,buzuki,20.0,True,0.836,0.55,0.735,54,True
+Cajón,,20.0,True,0.836,0.55,0.735,54,True
+Djembê,,20.0,True,0.836,0.55,0.735,54,True
+Kazoo,,20.0,True,0.836,0.55,0.742,55,True
+Oboé,,14.777,False,0.477,0.56,0.742,55,True
+Timbales,,20.0,True,0.836,0.55,0.742,55,True
+Bongô,,16.112,False,0.571,0.56,0.748,56,True
+Gaita de foles,gaita galega,12.854,False,0.294,0.58,0.748,56,True
+Fagote,,15.174,False,0.514,0.6,0.755,57,True
+Marimba,,15.599,False,0.537,0.6,0.755,57,True
+Trompa,,14.163,False,0.429,0.62,0.755,57,True
+Cítara,,15.305,False,0.519,0.64,0.762,58,True
+Flautim,piccolo | pífano,16.184,False,0.573,0.64,0.762,58,True
+Alaúde,,14.903,False,0.491,0.68,0.775,60,True
+Ganzá,,15.909,False,0.55,0.66,0.775,60,True
+Kalimba,mbira | piano de dedo,10.81,False,0.09,0.7,0.775,60,True
+Rabeca,,14.92,False,0.495,0.7,0.775,60,True
+Sitar,,15.794,False,0.545,0.72,0.775,60,True
+Vibrafone,,16.025,False,0.557,0.72,0.775,60,True
+Banjo de quatro cordas,,11.246,False,0.142,0.801,0.781,61,True
+Caxixi,,16.585,False,0.588,0.74,0.781,61,True
+Clarone,clarinete baixo | clarineta baixo,16.061,False,0.563,0.8,0.781,61,True
+Contrafagote,,18.435,False,0.645,0.801,0.781,61,True
+Corne inglês,,12.741,False,0.284,0.8,0.781,61,True
+Didgeridoo,didjeridu,20.0,True,0.836,0.74,0.781,61,True
+Gaita cromática,,13.591,False,0.372,0.802,0.781,61,True
+Rebolo,,14.522,False,0.445,0.802,0.781,61,True
+Tabla,,15.46,False,0.527,0.8,0.781,61,True
+Tantã,tan-tan,16.231,False,0.576,0.802,0.781,61,True
+Ukulele baixo,,11.781,False,0.19,0.801,0.781,61,True
+Afoxé,,14.868,False,0.488,0.804,0.787,62,True
+Agbê,xequerê | shekere,17.551,False,0.621,0.803,0.787,62,True
+Apito de samba,,11.294,False,0.147,0.804,0.787,62,True
+Caixa de guerra,,8.786,False,0.014,0.803,0.787,62,True
+Chocalho de platinela,,16.733,False,0.597,0.805,0.787,62,True
+Dumbek,darbuka | derbak,20.0,True,0.836,0.805,0.787,62,True
+Ganzá de lata,,13.443,False,0.355,0.804,0.787,62,True
+Matraca,,14.776,False,0.474,0.804,0.787,62,True
+Pandeiro de couro,,11.525,False,0.171,0.803,0.787,62,True
+Tambor falante,talking drum,12.009,False,0.216,0.805,0.787,62,True
+Timbal,,16.409,False,0.583,0.802,0.787,62,True
+Bodhrán,,20.0,True,0.836,0.806,0.794,63,True
+Cajón peruano,,13.046,False,0.318,0.806,0.794,63,True
+Cavaco,cavaquinho de choro,11.235,False,0.14,0.809,0.794,63,True
+Gaita irlandesa,uilleann pipes,12.854,False,0.294,0.807,0.794,63,True
+Rabeca nordestina,,13.811,False,0.389,0.807,0.794,63,True
+Taiko,,15.46,False,0.527,0.806,0.794,63,True
+Viola de buriti,,12.092,False,0.23,0.808,0.794,63,True
+Viola de cocho,viola de coxo,13.075,False,0.322,0.807,0.794,63,True
+Viola machete,machete,12.875,False,0.299,0.808,0.794,63,True
+Violão tenor,,11.855,False,0.197,0.808,0.794,63,True
+Washtub bass,,20.0,True,0.836,0.807,0.794,63,True
+Bandola,,17.542,False,0.616,0.809,0.8,64,True
+Banjo cavaquinho,banjolim,13.589,False,0.37,0.809,0.8,64,True
+Contrabaixo de pau,,11.504,False,0.165,0.811,0.8,64,True
+Cuatro,cuatro venezuelano,12.957,False,0.306,0.811,0.8,64,True
+Dobro,violão ressonador | resonator,11.255,False,0.145,0.811,0.8,64,True
+Guitarra baiana,,11.103,False,0.126,0.81,0.8,64,True
+Guitarra havaiana,steel guitar | lap steel,10.427,False,0.068,0.81,0.8,64,True
+Guitarra portuguesa,,9.907,False,0.038,0.81,0.8,64,True
+Pedal steel,,11.744,False,0.187,0.81,0.8,64,True
+Requinto,,18.641,False,0.652,0.812,0.8,64,True
+Tres cubano,tres,10.155,False,0.052,0.812,0.8,64,True
+Bandurria,,20.209,False,0.998,0.813,0.806,65,True
+Domra,,20.0,True,0.836,0.813,0.806,65,True
+Guitarrón,,20.0,True,0.836,0.813,0.806,65,True
+Gusli,,20.0,True,0.836,0.813,0.806,65,True
+Kora,,20.0,True,0.836,0.814,0.806,65,True
+Koto,,15.279,False,0.517,0.815,0.806,65,True
+Ngoni,,20.0,True,0.836,0.815,0.806,65,True
+Oud,alaúde árabe,13.077,False,0.325,0.814,0.806,65,True
+Saz,bağlama,19.764,False,0.675,0.814,0.806,65,True
+Valiha,,20.0,True,0.836,0.815,0.806,65,True
+Vihuela,,20.0,True,0.836,0.812,0.806,65,True
+Biwa,,20.0,True,0.836,0.816,0.812,66,True
+Dizi,,20.0,True,0.836,0.818,0.812,66,True
+Erhu,,20.0,True,0.836,0.817,0.812,66,True
+Gayageum,,20.0,True,0.836,0.819,0.812,66,True
+Guzheng,,20.0,True,0.836,0.817,0.812,66,True
+Pipa,,12.012,False,0.218,0.817,0.812,66,True
+Shakuhachi,,20.0,True,0.836,0.816,0.812,66,True
+Shamisen,,20.0,True,0.836,0.816,0.812,66,True
+Sheng,,20.0,True,0.836,0.818,0.812,66,True
+Suona,,20.0,True,0.836,0.818,0.812,66,True
+Yangqin,,20.0,True,0.836,0.817,0.812,66,True
+Bansuri,,20.0,True,0.836,0.821,0.819,67,True
+Dhol,,20.0,True,0.836,0.821,0.819,67,True
+Fole de oito baixos,oito baixos,11.464,False,0.156,0.82,0.819,67,True
+Haegeum,,20.0,True,0.836,0.819,0.819,67,True
+Mridangam,,20.0,True,0.836,0.821,0.819,67,True
+Santur,santoor,20.0,True,0.836,0.82,0.819,67,True
+Sarangi,,20.0,True,0.836,0.819,0.819,67,True
+Sarod,,20.0,True,0.836,0.82,0.819,67,True
+Tanpura,tambura,18.533,False,0.649,0.82,0.819,67,True
+Veena,,20.0,True,0.836,0.82,0.819,67,True
+Angklung,,20.0,True,0.836,0.823,0.825,68,True
+Dholak,,20.0,True,0.836,0.822,0.825,68,True
+Duduk,,20.0,True,0.836,0.823,0.825,68,True
+Dutar,,20.0,True,0.836,0.825,0.825,68,True
+Gamelão,gamelan,17.683,False,0.623,0.822,0.825,68,True
+Harmônio,harmonium,17.038,False,0.6,0.822,0.825,68,True
+Kaval,,20.0,True,0.836,0.824,0.825,68,True
+Kulintang,,20.0,True,0.836,0.823,0.825,68,True
+Ney,,20.0,True,0.836,0.824,0.825,68,True
+Qanun,kanun,20.0,True,0.836,0.824,0.825,68,True
+Zurna,,19.375,False,0.666,0.823,0.825,68,True
+Hardanger fiddle,violino de hardanger,12.245,False,0.252,0.827,0.831,69,True
+Kamancheh,,20.0,True,0.836,0.826,0.831,69,True
+Kantele,,20.0,True,0.836,0.827,0.831,69,True
+Kemenche,,20.0,True,0.836,0.825,0.831,69,True
+Morin khuur,,20.0,True,0.836,0.826,0.831,69,True
+Nyckelharpa,,20.0,True,0.836,0.827,0.831,69,True
+Rubab,,20.0,True,0.836,0.825,0.831,69,True
+Saltério,,15.386,False,0.521,0.828,0.831,69,True
+Setar,,20.0,True,0.836,0.826,0.831,69,True
+Tar,,20.0,True,0.836,0.826,0.831,69,True
+Zither,cítara de mesa,12.143,False,0.239,0.828,0.831,69,True
+Bandoneón,,16.642,False,0.592,0.831,0.837,70,True
+Concertina,,14.533,False,0.45,0.831,0.837,70,True
+Címbalo,cimbalom,16.355,False,0.581,0.829,0.837,70,True
+Cítola,,19.807,False,0.678,0.829,0.837,70,True
+Dulcimer,dulcimer dos apalaches,16.29,False,0.578,0.828,0.837,70,True
+Hammered dulcimer,,20.0,True,0.836,0.828,0.837,70,True
+Harpa celta,,12.287,False,0.258,0.83,0.837,70,True
+Harpa de boca,berimbau de boca | trompa de Paris,11.017,False,0.114,0.83,0.837,70,True
+Harpa paraguaia,,13.305,False,0.348,0.83,0.837,70,True
+Lira,,12.11,False,0.237,0.829,0.837,70,True
+Viela de roda,sanfona de roda | hurdy-gurdy,12.224,False,0.244,0.831,0.837,70,True
+Acordeão de botão,,12.048,False,0.223,0.832,0.843,71,True
+Copos musicais,,10.874,False,0.097,0.832,0.843,71,True
+Drum machine,caixa de ritmos,8.736,False,0.009,0.835,0.843,71,True
+Gaita de oito baixos,,11.033,False,0.116,0.832,0.843,71,True
+Harmônica de vidro,harmônica de copos,11.384,False,0.154,0.832,0.843,71,True
+Keytar,,20.0,True,0.836,0.834,0.843,71,True
+Mellotron,,20.0,True,0.836,0.833,0.843,71,True
+Moog,,20.0,True,0.836,0.833,0.843,71,True
+Ondas Martenot,ondes martenot,14.271,False,0.438,0.833,0.843,71,True
+Talk box,,10.338,False,0.056,0.834,0.843,71,True
+Vocoder,,20.0,True,0.836,0.834,0.843,71,True
+Campanas tubulares,sinos tubulares,20.0,True,0.836,0.836,0.849,72,True
+Chimes,mark tree | carrilhão de vento,12.392,False,0.264,0.837,0.849,72,True
+Cowbell,campana | sino de vaca,13.874,False,0.398,0.837,0.849,72,True
+Crotales,,20.0,True,0.836,0.837,0.849,72,True
+Hang,handpan | hang drum,20.0,True,0.836,0.836,0.849,72,True
+Otamatone,,20.0,True,0.836,0.835,0.849,72,True
+Sampler,,14.738,False,0.467,0.835,0.849,72,True
+Stylophone,,20.0,True,0.836,0.835,0.849,72,True
+Tambor de língua,steel tongue drum,10.822,False,0.095,0.836,0.849,72,True
+Temple block,,12.802,False,0.287,0.838,0.849,72,True
+Wood block,bloco de madeira,9.629,False,0.024,0.838,0.849,72,True
+Clave,claves,13.741,False,0.379,0.838,0.854,73,True
+Cuíca de boca,,12.002,False,0.211,0.84,0.854,73,True
+Flexatone,,23.132,False,1.0,0.839,0.854,73,True
+Guiro,,20.0,True,0.836,0.838,0.854,73,True
+Mineiro,chocalho de metal,10.779,False,0.083,0.841,0.854,73,True
+Pau de chuva,rainstick,9.71,False,0.028,0.84,0.854,73,True
+"Rum, rumpi e lê",rum | rumpi | lê,13.821,False,0.391,0.841,0.854,73,True
+Spring drum,thunder drum,20.0,True,0.836,0.84,0.854,73,True
+Theremin,teremim,16.061,False,0.563,0.84,0.854,73,True
+Vibraslap,,20.0,True,0.836,0.839,0.854,73,True
+Waterphone,,20.0,True,0.836,0.839,0.854,73,True
+Caixa do divino,,9.711,False,0.031,0.843,0.86,74,True
+Caxixi de palha,,14.047,False,0.415,0.841,0.86,74,True
+Gaita de taquara,,13.02,False,0.313,0.844,0.86,74,True
+Ilu,,16.064,False,0.566,0.841,0.86,74,True
+Marimbau,,18.745,False,0.656,0.844,0.86,74,True
+Mineiro ganzá,,13.344,False,0.353,0.842,0.86,74,True
+Pífano de taboca,,15.988,False,0.555,0.843,0.86,74,True
+Tambor de crioula,,13.157,False,0.332,0.842,0.86,74,True
+Tambor de mina,,11.902,False,0.199,0.843,0.86,74,True
+Urucungo,,17.91,False,0.63,0.844,0.86,74,True
+Viola dinâmica,,10.894,False,0.104,0.843,0.86,74,True
+Atabaque rum,,14.027,False,0.41,0.846,0.866,75,True
+Berimbau gunga,gunga,14.63,False,0.457,0.847,0.866,75,True
+Berimbau médio,,11.471,False,0.159,0.847,0.866,75,True
+Berimbau viola,,12.642,False,0.28,0.847,0.866,75,True
+Bumba,,13.916,False,0.403,0.845,0.866,75,True
+Canzá,,20.023,False,0.995,0.846,0.866,75,True
+Cuíca de lata,,12.914,False,0.303,0.847,0.866,75,True
+Ganzá de cesto,,14.108,False,0.417,0.846,0.866,75,True
+Matraca de São João,,9.636,False,0.026,0.848,0.866,75,True
+Tambor de onça,,12.246,False,0.256,0.848,0.866,75,True
+Tamborim de couro,,12.389,False,0.261,0.845,0.866,75,True
+Bombo,,14.964,False,0.498,0.848,0.872,76,True
+Cajón flamenco,,13.68,False,0.377,0.85,0.872,76,True
+Charamela,,18.145,False,0.633,0.851,0.872,76,True
+Cornamusa,,19.018,False,0.661,0.85,0.872,76,True
+Corneto,,16.672,False,0.595,0.851,0.872,76,True
+Gaita de fole escocesa,,13.586,False,0.367,0.85,0.872,76,True
+Pandereta,,19.526,False,0.673,0.849,0.872,76,True
+Sacabuxa,,19.031,False,0.664,0.851,0.872,76,True
+Tamboril,,14.476,False,0.441,0.849,0.872,76,True
+Txalaparta,,20.0,True,0.836,0.849,0.872,76,True
+Zambomba,,20.0,True,0.836,0.85,0.872,76,True
+Caja vidalera,,14.523,False,0.448,0.855,0.877,77,True
+Cromorne,,20.0,True,0.836,0.852,0.877,77,True
+Flauta de bisel,,13.864,False,0.396,0.853,0.877,77,True
+Flauta de tamborileiro,,15.131,False,0.507,0.853,0.877,77,True
+Ofiocleide,,20.0,True,0.836,0.852,0.877,77,True
+Pife,,16.1,False,0.569,0.854,0.877,77,True
+Quena,,16.525,False,0.585,0.854,0.877,77,True
+Quenacho,,20.0,True,0.836,0.854,0.877,77,True
+Rauschpfeife,,20.0,True,0.836,0.853,0.877,77,True
+Serpentão,serpent,19.443,False,0.668,0.852,0.877,77,True
+Tin whistle,apito irlandês,12.655,False,0.282,0.853,0.877,77,True
+Antara,,20.0,True,0.836,0.855,0.883,78,True
+Arpa llanera,,20.0,True,0.836,0.856,0.883,78,True
+Balafon,,20.0,True,0.836,0.858,0.883,78,True
+Cajón de tapeo,,20.0,True,0.836,0.856,0.883,78,True
+Cuatro porto-riquenho,,11.797,False,0.192,0.857,0.883,78,True
+Jarana,,18.527,False,0.647,0.857,0.883,78,True
+Kalimba de caixa,,8.736,False,0.009,0.858,0.883,78,True
+Marimba de chonta,,15.599,False,0.537,0.856,0.883,78,True
+Marimbol,,20.0,True,0.836,0.857,0.883,78,True
+Tarka,,20.0,True,0.836,0.855,0.883,78,True
+Udu,,17.545,False,0.618,0.858,0.883,78,True
+Ashiko,,20.0,True,0.836,0.86,0.889,79,True
+Bendir,,20.0,True,0.836,0.861,0.889,79,True
+Bougarabou,,20.0,True,0.836,0.86,0.889,79,True
+Celesta,,17.309,False,0.611,0.86,0.889,79,True
+Dundun,,20.0,True,0.836,0.86,0.889,79,True
+Gankogui,,20.0,True,0.836,0.859,0.889,79,True
+Kpanlogo,,20.0,True,0.836,0.859,0.889,79,True
+Mbira dzavadzimba,,20.0,True,0.836,0.858,0.889,79,True
+Riq,,20.0,True,0.836,0.861,0.889,79,True
+Sabar,,20.0,True,0.836,0.861,0.889,79,True
+Tamborim de mão,,11.639,False,0.175,0.862,0.889,79,True
+Daf,,20.0,True,0.836,0.862,0.894,80,True
+Dotara,,18.169,False,0.635,0.865,0.894,80,True
+Frame drum,tambor de moldura,11.971,False,0.206,0.862,0.894,80,True
+Ghatam,,20.0,True,0.836,0.863,0.894,80,True
+Kanjira,,20.0,True,0.836,0.863,0.894,80,True
+Morsing,berimbau de boca indiano,11.728,False,0.182,0.865,0.894,80,True
+Nadaswaram,,20.0,True,0.836,0.864,0.894,80,True
+Pakhawaj,,20.0,True,0.836,0.863,0.894,80,True
+Shehnai,,20.0,True,0.836,0.864,0.894,80,True
+Tabla indiana,,13.575,False,0.365,0.862,0.894,80,True
+Tavil,,20.0,True,0.836,0.864,0.894,80,True
+Bianzhong,,20.0,True,0.836,0.867,0.9,81,True
+Ektara,,20.0,True,0.836,0.865,0.9,81,True
+Gopichand,,20.0,True,0.836,0.865,0.9,81,True
+Guqin,,20.0,True,0.836,0.867,0.9,81,True
+Hichiriki,,20.0,True,0.836,0.868,0.9,81,True
+Hulusi,,20.0,True,0.836,0.866,0.9,81,True
+Kagura suzu,,20.0,True,0.836,0.868,0.9,81,True
+Muyu,,20.0,True,0.836,0.868,0.9,81,True
+Ruan,,20.0,True,0.836,0.866,0.9,81,True
+Sanxian,,20.0,True,0.836,0.866,0.9,81,True
+Xiao,,20.0,True,0.836,0.867,0.9,81,True
+Buk,,20.0,True,0.836,0.87,0.906,82,True
+Gong chinês,tam-tam,10.946,False,0.107,0.87,0.906,82,True
+Gongo tailandês,khong wong,14.265,False,0.436,0.871,0.906,82,True
+Janggu,,20.0,True,0.836,0.869,0.906,82,True
+Khim,,20.0,True,0.836,0.871,0.906,82,True
+Kkwaenggwari,,20.0,True,0.836,0.87,0.906,82,True
+Piri,,14.007,False,0.408,0.87,0.906,82,True
+Ranat,,20.0,True,0.836,0.871,0.906,82,True
+Ryuteki,,20.0,True,0.836,0.868,0.906,82,True
+Sho,,20.0,True,0.836,0.869,0.906,82,True
+Taegeum,,20.0,True,0.836,0.869,0.906,82,True
+Bonang,,20.0,True,0.836,0.874,0.911,83,True
+Didjeridu de bambu,,12.101,False,0.232,0.875,0.911,83,True
+Kecapi,,20.0,True,0.836,0.873,0.911,83,True
+Kendang,,20.0,True,0.836,0.873,0.911,83,True
+Khene,khaen,20.0,True,0.836,0.872,0.911,83,True
+Rebab,,20.0,True,0.836,0.873,0.911,83,True
+Saron,,20.0,True,0.836,0.874,0.911,83,True
+Sasando,,20.0,True,0.836,0.874,0.911,83,True
+Suling,,20.0,True,0.836,0.873,0.911,83,True
+Đàn bầu,,11.54,False,0.173,0.872,0.911,83,True
+Đàn tranh,,20.0,True,0.836,0.872,0.911,83,True
+Bullroarer,zunidor,18.417,False,0.642,0.876,0.917,84,True
+Gender,,20.0,True,0.836,0.875,0.917,84,True
+Harmônio indiano,,14.574,False,0.453,0.877,0.917,84,True
+Kenong,,20.0,True,0.836,0.875,0.917,84,True
+Lithophone,litofone,20.0,True,0.836,0.876,0.917,84,True
+Piano de brinquedo,,11.064,False,0.123,0.878,0.917,84,True
+Piano preparado,,10.79,False,0.088,0.878,0.917,84,True
+Tambor de sapo,,11.661,False,0.178,0.876,0.917,84,True
+Vibrafone de pedra,,12.853,False,0.289,0.877,0.917,84,True
+Órgão a vapor,calíope,10.468,False,0.071,0.877,0.917,84,True
+Órgão de foles,,9.911,False,0.044,0.877,0.917,84,True
+Acordeão piano,,12.634,False,0.277,0.88,0.922,85,True
+Arpa de laser,harpa laser,10.893,False,0.102,0.881,0.922,85,True
+Celesta de teclado,,13.825,False,0.393,0.88,0.922,85,True
+Clavicórdio,,17.495,False,0.614,0.879,0.922,85,True
+Espineta,,17.812,False,0.626,0.88,0.922,85,True
+Fortepiano,,18.666,False,0.654,0.879,0.922,85,True
+Harpsichord,,20.0,True,0.836,0.88,0.922,85,True
+Pianola,,17.128,False,0.604,0.878,0.922,85,True
+Sintetizador modular,,13.258,False,0.341,0.881,0.922,85,True
+Teclado arranjador,,12.007,False,0.213,0.881,0.922,85,True
+Virginal,,14.486,False,0.443,0.879,0.922,85,True
+Baixo de seis cordas,,9.73,False,0.033,0.882,0.927,86,True
+Baixo fretless,,8.839,False,0.018,0.882,0.927,86,True
+Contrabaixo elétrico vertical,,11.512,False,0.168,0.884,0.927,86,True
+Guitarra barítono,,12.478,False,0.273,0.882,0.927,86,True
+Guitarra de doze cordas,violão 12 cordas,10.818,False,0.092,0.882,0.927,86,True
+Rabeca de bacia,,13.052,False,0.32,0.885,0.927,86,True
+Viola d'amore,,11.362,False,0.152,0.884,0.927,86,True
+Viola da gamba,,12.983,False,0.308,0.884,0.927,86,True
+Violino elétrico,,11.359,False,0.149,0.883,0.927,86,True
+Violoncelo elétrico,,12.053,False,0.225,0.883,0.927,86,True
+Violão de cordas de aço,,10.503,False,0.073,0.883,0.927,86,True
+Alto horn,,8.623,False,0.005,0.888,0.933,87,True
+Arpeggione,,20.0,True,0.836,0.885,0.933,87,True
+Baryton,,20.0,True,0.836,0.885,0.933,87,True
+Clarim,,14.744,False,0.469,0.886,0.933,87,True
+Cornetim,,17.86,False,0.628,0.886,0.933,87,True
+Trombone baixo,,11.169,False,0.133,0.887,0.933,87,True
+Trombone de pistão,,13.155,False,0.329,0.887,0.933,87,True
+Trombone de vara,,12.102,False,0.235,0.887,0.933,87,True
+Trompete de vara,,12.013,False,0.22,0.886,0.933,87,True
+Trompete piccolo,,13.554,False,0.363,0.885,0.933,87,True
+Tuba wagneriana,,15.592,False,0.533,0.888,0.933,87,True
+Clarinete alto,,11.186,False,0.135,0.891,0.938,88,True
+Clarinete em lá,,8.588,False,0.002,0.891,0.938,88,True
+Clarinete requinta,requinta,15.406,False,0.524,0.89,0.938,88,True
+Corne di bassetto,corne de basseto,13.452,False,0.358,0.891,0.938,88,True
+Helicon,,18.406,False,0.64,0.888,0.938,88,True
+Mellofone,,20.0,True,0.836,0.888,0.938,88,True
+Saxhorn,,19.484,False,0.671,0.889,0.938,88,True
+Saxofone baixo,,11.059,False,0.121,0.89,0.938,88,True
+Saxofone contrabaixo,,13.181,False,0.334,0.89,0.938,88,True
+Saxofone sopranino,,15.144,False,0.509,0.889,0.938,88,True
+Tuba de pistos,,14.12,False,0.423,0.889,0.938,88,True
+Apito de pássaro,,11.99,False,0.209,0.894,0.943,89,True
+Flauta baixo,,10.535,False,0.076,0.892,0.943,89,True
+Flauta contralto,,13.743,False,0.382,0.893,0.943,89,True
+Flauta de osso,,11.834,False,0.194,0.894,0.943,89,True
+Flauta irlandesa,,12.232,False,0.248,0.893,0.943,89,True
+Flauta nativa americana,,10.89,False,0.1,0.893,0.943,89,True
+Gaita de lata,,11.915,False,0.201,0.894,0.943,89,True
+Heckelfone,,20.0,True,0.836,0.892,0.943,89,True
+Oboé d'amore,,14.777,False,0.477,0.892,0.943,89,True
+Pente com papel,,8.556,False,0.0,0.895,0.943,89,True
+Sarrusofone,,20.0,True,0.836,0.892,0.943,89,True
+Colher,colheres,10.154,False,0.05,0.895,0.949,90,True
+Garrafa,garrafas,10.783,False,0.085,0.896,0.949,90,True
+Panela,,10.57,False,0.078,0.896,0.949,90,True
+Serrote musical,,11.961,False,0.204,0.895,0.949,90,True
+Tamancos,,20.0,True,0.836,0.896,0.949,90,True
+Tábua de lavar,,11.198,False,0.137,0.895,0.949,90,True
