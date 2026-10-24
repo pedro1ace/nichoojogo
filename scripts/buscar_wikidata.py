@@ -9,7 +9,8 @@ Para cada resposta da categoria:
     1. acha o item do Wikidata (Q...), procurando pelo nome e pelos apelidos e
        ficando com o primeiro resultado cuja descrição tem uma das palavras da
        categoria (ex.: "lua", "satélite", "moon"). Isso separa "Europa" a lua
-       de "Europa" o continente.
+       de "Europa" o continente. Categoria gerada pelo importar.py pula essa
+       busca: o Q... vem da consulta guardada em dados/brutos/fontes/<cat>.json.
     2. lê do item: número de sitelinks (em quantas Wikipédias ele existe),
        título na Wikipédia em português, rótulos e apelidos em pt, pt-br e en.
     3. soma as visitas de pessoas (não robôs) na pt.wikipedia nos últimos 12 meses.
@@ -22,6 +23,7 @@ No fim, o script lista apelidos do Wikidata que ainda não estão na categoria.
 APIs usadas (públicas, sem chave; mande um User-Agent com contato, regra da Wikimedia):
     https://www.wikidata.org/w/api.php          wbsearchentities, wbgetentities
     https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/...
+        (só se não houver os dumps: rode antes scripts/baixar_visitas.sh, bem mais rápido)
 Para milhares de itens, troque as chamadas pelos dumps (ver docs/BANCO-DE-PALAVRAS.md).
 """
 from __future__ import annotations
@@ -39,8 +41,9 @@ from pontuar import CATEGORIAS, ler_categoria, normalizar  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 DESTINO = RAIZ / "dados" / "sinais" / "wikidata"
+BRUTOS_FONTES = RAIZ / "dados" / "brutos" / "fontes"  # consultas guardadas pelo importar.py
 AGENTE = "NichoJogo/0.1 (https://github.com/pedro1ace/nichoojogo)"
-PAUSA = 0.2  # segundos entre chamadas, para não abusar da API
+PAUSA = 0.5  # segundos entre chamadas, para não abusar da API
 
 # Palavras que a descrição do item precisa ter (pt ou en) para valer.
 # Categoria nova sem entrada aqui: aceita o primeiro resultado e marca "incerto".
@@ -51,11 +54,12 @@ PALAVRAS_DA_CATEGORIA = {
     "estrelas": ["estrela", "star", "binária", "binary", "supergigante", "supergiant", "anã", "dwarf"],
     "paises": ["país", "pais", "country", "estado", "state", "república", "republic", "reino", "kingdom"],
     "estados-do-brasil": ["estado", "unidade federativa", "federative unit", "state of brazil"],
+    "agencias-espaciais": ["agência", "agencia", "agency", "espacial", "space", "aeroespacial", "aerospace"],
     "capitais-do-brasil": ["capital", "município", "municipio", "municipality", "cidade", "city"],
 }
 
 
-def pegar_json(url: str, tentativas: int = 4) -> dict:
+def pegar_json(url: str, tentativas: int = 10) -> dict:
     pedido = urllib.request.Request(url, headers={"User-Agent": AGENTE})
     for i in range(tentativas):
         try:
@@ -66,6 +70,9 @@ def pegar_json(url: str, tentativas: int = 4) -> dict:
                 return {}
             if i == tentativas - 1:
                 raise
+            if erro.code == 429:  # limite de pedidos: espera o que o servidor pedir
+                time.sleep(int(erro.headers.get("Retry-After") or 0) + 2 ** i)
+                continue
         except urllib.error.URLError:
             if i == tentativas - 1:
                 raise
@@ -99,25 +106,33 @@ def achar_qid(nomes: list[str], palavras: list[str] | None) -> tuple[str | None,
     return (primeiro, "incerto") if primeiro else (None, "nao_achado")
 
 
-def detalhes(qid: str) -> dict:
-    dados = api_wikidata(
-        action="wbgetentities", ids=qid, props="sitelinks|labels|aliases|descriptions", languages="pt|pt-br|en"
-    )
-    ent = dados.get("entities", {}).get(qid, {})
-    apelidos = set()
-    for idioma in ("pt", "pt-br", "en"):
-        if idioma in ent.get("labels", {}):
-            apelidos.add(ent["labels"][idioma]["value"])
-        for a in ent.get("aliases", {}).get(idioma, []):
-            apelidos.add(a["value"])
-    desc = ent.get("descriptions", {})
-    return {
-        "rotulo": ent.get("labels", {}).get("pt", {}).get("value"),
-        "descricao": (desc.get("pt") or desc.get("en") or {}).get("value"),
-        "sitelinks": len(ent.get("sitelinks", {})),
-        "ptwiki": ent.get("sitelinks", {}).get("ptwiki", {}).get("title"),
-        "apelidos_wikidata": sorted(apelidos),
-    }
+def detalhes(qids: list[str]) -> dict[str, dict]:
+    """Lê os itens de 50 em 50 (o máximo do wbgetentities), em vez de um pedido por item."""
+    saida = {}
+    for k in range(0, len(qids), 50):
+        dados = api_wikidata(
+            action="wbgetentities", ids="|".join(qids[k:k + 50]),
+            props="sitelinks|labels|aliases|descriptions", languages="pt|pt-br|en",
+        )
+        for qid, ent in dados.get("entities", {}).items():
+            apelidos = set()
+            for idioma in ("pt", "pt-br", "en"):
+                if idioma in ent.get("labels", {}):
+                    apelidos.add(ent["labels"][idioma]["value"])
+                for a in ent.get("aliases", {}).get(idioma, []):
+                    apelidos.add(a["value"])
+            desc = ent.get("descriptions", {})
+            saida[qid] = {
+                "rotulo": ent.get("labels", {}).get("pt", {}).get("value"),
+                "descricao": (desc.get("pt") or desc.get("en") or {}).get("value"),
+                "sitelinks": len(ent.get("sitelinks", {})),
+                "ptwiki": ent.get("sitelinks", {}).get("ptwiki", {}).get("title"),
+                "apelidos_wikidata": sorted(apelidos),
+            }
+    return saida
+
+
+MES_FINAL = f"{dt.date.today().replace(day=1) - dt.timedelta(days=1):%Y-%m}"  # último mês completo
 
 
 def visitas_12_meses(titulo: str) -> int | None:
@@ -133,23 +148,85 @@ def visitas_12_meses(titulo: str) -> int | None:
     return sum(i["views"] for i in itens) if itens else None
 
 
+def qids_da_receita(cat_id: str) -> dict[str, str]:
+    """Categoria gerada pelo importar.py já sabe o Q... de cada resposta: lê da última consulta
+    guardada em dados/brutos/fontes/<cat>.json (nome, rótulos e apelidos -> qid)."""
+    bruto = BRUTOS_FONTES / f"{cat_id}.json"
+    if not bruto.exists():
+        return {}
+    mapa: dict[str, str] = {}
+    for linha in json.loads(bruto.read_text(encoding="utf-8")):
+        qid = linha["item"]["value"].rsplit("/", 1)[-1]
+        for campo in ("nomePtBr", "nomePt", "tituloPt", "itemLabel", "apelido"):
+            if campo in linha:
+                mapa.setdefault(normalizar(linha[campo]["value"]), qid)
+    return mapa
+
+
+VISITAS_LOCAIS = RAIZ / "dados" / "brutos" / "visitas"  # scripts/baixar_visitas.sh
+
+
+def meses_do_periodo() -> list[str]:
+    fim = dt.date.today().replace(day=1) - dt.timedelta(days=1)
+    meses, d = [], fim
+    for _ in range(12):
+        meses.append(f"{d:%Y%m}")
+        d = d.replace(day=1) - dt.timedelta(days=1)
+    return meses
+
+
+def visitas_locais(titulos: set[str]) -> dict[str, int] | None:
+    """Soma as visitas dos 12 meses a partir dos dumps baixados. None se falta algum mês."""
+    arquivos = [VISITAS_LOCAIS / f"pt-{m}.tsv" for m in meses_do_periodo()]
+    if not all(a.exists() for a in arquivos):
+        return None
+    procurados = {t.replace(" ", "_") for t in titulos}
+    soma = dict.fromkeys(procurados, 0)
+    for arquivo in arquivos:
+        with arquivo.open(encoding="utf-8", errors="replace") as f:
+            for linha in f:
+                titulo, _, n = linha.rstrip("\n").partition("\t")
+                if titulo in soma:
+                    soma[titulo] += int(n)
+    return {t.replace("_", " "): v for t, v in soma.items()}
+
+
 def buscar_categoria(cat_id: str) -> None:
     cat = ler_categoria(CATEGORIAS / f"{cat_id}.txt")
     destino = DESTINO / f"{cat_id}.json"
     antigo = json.loads(destino.read_text(encoding="utf-8")) if destino.exists() else {}
     palavras = PALAVRAS_DA_CATEGORIA.get(cat_id)
-    saida = {}
+    da_receita = qids_da_receita(cat_id)
+    escolha = {}
     for r in cat["respostas"]:
         nome = r["resposta"]
         anterior = antigo.get(nome, {})
         if anterior.get("conferido") and anterior.get("qid"):
             qid, metodo = anterior["qid"], "conferido"
+        elif qid_receita := next((da_receita[normalizar(n)] for n in [nome, *r["apelidos"]]
+                                  if normalizar(n) in da_receita), None):
+            qid, metodo = qid_receita, "receita"
         else:
             qid, metodo = achar_qid([nome, *r["apelidos"]], palavras)
+        escolha[nome] = (qid, metodo)
+
+    info = detalhes(sorted({q for q, _ in escolha.values() if q}))
+    locais = visitas_locais({i["ptwiki"] for i in info.values() if i["ptwiki"]})
+    if locais is None:
+        print("  (sem os dumps de visitas em dados/brutos/visitas: usando a API, que é lenta)")
+    saida = {}
+    for nome, (qid, metodo) in escolha.items():
+        anterior = antigo.get(nome, {})
         linha = {"qid": qid, "metodo": metodo, "conferido": bool(anterior.get("conferido"))}
-        if qid:
-            linha.update(detalhes(qid))
-            linha["visitas_pt_12m"] = visitas_12_meses(linha["ptwiki"]) if linha["ptwiki"] else 0
+        if qid and qid in info:
+            linha.update(info[qid])
+            if locais is not None:
+                linha["visitas_pt_12m"] = locais.get(linha["ptwiki"], 0) if linha["ptwiki"] else 0
+            elif anterior.get("qid") == qid and anterior.get("visitas_mes_final") == MES_FINAL:
+                linha["visitas_pt_12m"] = anterior.get("visitas_pt_12m")  # já buscado para o mesmo período
+            else:
+                linha["visitas_pt_12m"] = visitas_12_meses(linha["ptwiki"]) if linha["ptwiki"] else 0
+            linha["visitas_mes_final"] = MES_FINAL
         saida[nome] = linha
         print(f"  {nome:28} {qid or '-':12} {metodo:10} sitelinks={linha.get('sitelinks', '-')}"
               f" visitas={linha.get('visitas_pt_12m', '-')}")

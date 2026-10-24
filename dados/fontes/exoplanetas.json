@@ -5,7 +5,8 @@
   "classe": "Q44559",
   "subclasses": true,
   "filtros_sparql": [
-   "?ptwiki schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> ."
+   "?ptwiki schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> .",
+   "FILTER NOT EXISTS { ?item wdt:P31 wd:Q13406463 . }"
   ]
  },
  "contagem": {
@@ -13,7 +14,6 @@
   "max": 1500
  },
  "_notas": {
-  "geral": "rascunho: contagem e filtros ainda não conferidos contra o Wikidata (rede bloqueada quando foi escrito)",
-  "filtro": "exoplaneta com artigo na pt.wikipedia"
+  "filtro": "exoplaneta (e subclasses) com artigo na pt.wikipedia, sem artigos de lista; conferido contra o Wikidata em 2026-10"
  }
 }
