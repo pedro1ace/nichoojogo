@@ -81,7 +81,7 @@ const MARCOS = [
   { al: 8000, nome: "PILARES DA CRIAÇÃO (ao fundo)" },
   { al: 9000, nome: "ALFA CENTAURI", corpo: "estrela" },
   { al: 12000, nome: "NEBULOSA DE ÓRION", nebulosa: true },
-  { al: 16000, nome: "BURACO NEGRO", corpo: "buraco" },
+  { al: AL_INICIAL + 10000, nome: "HORIZONTE DE EVENTOS" },
 ];
 const CURIOSIDADES = [
   [40, "aqui o céu azul começa a virar preto"],
@@ -105,8 +105,8 @@ const CURIOSIDADES = [
   [10500, "Alfa Centauri é o sistema estelar mais perto do Sol"],
   [12800, "Guardiões da Galáxia: tá tocando Awesome Mix aqui"],
   [14000, "na Nebulosa de Órion nascem estrelas novas"],
-  [16600, "Interestelar: Gargântua, o buraco negro do filme"],
-  [17200, "nem a luz escapa de um buraco negro"],
+  [10900, "Interestelar: Gargântua, o buraco negro do filme"],
+  [11600, "nem a luz escapa de um buraco negro"],
 ];
 
 // Cor do fundo por profundidade: céu claro perto da Terra, escurecendo até o preto.
@@ -983,11 +983,50 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Zonas do fundo por profundidade.
   // A partir de ~5.000 AL os Pilares da Criação viram o pano de fundo da viagem:
   // grandes, no meio, misturados ao céu (somam luz, não cobrem), e sobem bem devagar.
+  // Último estágio: depois de 10.000 AL (contando da partida) tudo vira negativo
+  // e um buraco negro enorme ocupa o fundo.
+  const AL_NEGATIVO = AL_INICIAL + 10000;
+  let negativo = false;
+  function verificarNegativo() {
+    const alem = camera.atual >= AL_NEGATIVO;
+    if (alem === negativo) return;
+    negativo = alem;
+    document.body.classList.toggle("negativo", alem);
+    if (alem && camera.velocidade > 0) {
+      // atravessou agora: a tela distorce, treme e faz "wooon"
+      document.body.classList.remove("distorcer");
+      void document.body.offsetWidth;
+      document.body.classList.add("distorcer");
+      setTimeout(() => document.body.classList.remove("distorcer"), 900);
+      tremer(16, 900);
+      if (window.Som && Som.buraco) Som.buraco();
+    }
+  }
+  function desenharBuracoNegro() {
+    const surge = Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 1200)) / 1200));
+    if (surge <= 0) return;
+    const img = naves.buraco;
+    const W = innerWidth, H = innerHeight;
+    const largo = Math.max(W * 1.1, H * 1.6);
+    const alto = largo * (img.height / img.width);
+    tx.save();
+    tx.globalAlpha = surge;
+    tx.imageSmoothingEnabled = true;
+    // o cenário inteiro fica em negativo, mas o buraco negro continua preto com o disco laranja:
+    // ele é desenhado já invertido, e a inversão da tela desfaz
+    if (negativo) tx.filter = "invert(1) hue-rotate(180deg)";
+    tx.translate(W / 2, H * 0.5);
+    tx.rotate(-0.12 + Math.sin(tempo * 0.05) * 0.02);
+    tx.drawImage(img, -largo / 2, -alto / 2, largo, alto);
+    tx.restore();
+  }
+
   function desenharPanoDeFundo() {
     const al = camera.atual;
+    verificarNegativo();
     // aparece de 4.500 a 7.000 AL e vai embora entre 9.500 e 11.000 (dá lugar à Nebulosa de Órion)
     const surge = Math.min(1, Math.max(0, (al - 4500) / 2500)) * Math.min(1, Math.max(0, (11000 - al) / 1500));
-    if (surge <= 0) return;
+    if (surge <= 0) { desenharBuracoNegro(); return; }
     const img = naves.pilares;
     const H = innerHeight, W = innerWidth;
     const alto = H * 1.2;
@@ -999,11 +1038,13 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.imageSmoothingEnabled = true;
     tx.drawImage(img, W / 2 - largo / 2, H * 0.62 - alto / 2 - sobe, largo, alto);
     tx.restore();
+    desenharBuracoNegro();
   }
 
   // Espaço profundo: tudo fica na penumbra, menos a luz em volta da caixa que afunda.
   function desenharPenumbra() {
-    const k = Math.min(1, Math.max(0, (camera.atual - 3500) / 5500)) * 0.8;
+    // no estágio negativo a penumbra sai: ali a tela é clara e o buraco negro é o escuro
+    const k = negativo ? 0 : Math.min(1, Math.max(0, (camera.atual - 3500) / 5500)) * 0.8;
     if (k <= 0.01) return;
     const W = innerWidth, H = innerHeight;
     const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
@@ -1256,16 +1297,18 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // brilho em volta do foguete e vinheta, mais fortes no escuro
     const fx = foguete.x * escala;
     const fy = foguete.y * escala;
-    if (escuro > 0.05) {
+    if (escuro > 0.05 && !negativo) {
       const brilho = tx.createRadialGradient(fx, fy, 0, fx, fy, 160);
       brilho.addColorStop(0, `rgba(95, 225, 255, ${0.13 * escuro})`);
       brilho.addColorStop(1, "rgba(95, 225, 255, 0)");
       tx.fillStyle = brilho;
       tx.fillRect(fx - 160, fy - 160, 320, 320);
     }
-    const vinheta = tx.createRadialGradient(fx, H * 0.45, Math.min(W, H) * 0.3, fx, H * 0.45, Math.max(W, H) * 0.8);
-    vinheta.addColorStop(0, "rgba(0, 0, 10, 0)");
-    vinheta.addColorStop(1, `rgba(0, 0, 10, ${0.25 + 0.5 * escuro})`);
+    // no estágio negativo a vinheta fica no meio e é clara (a inversão da tela a deixa escura)
+    const vx = negativo ? W / 2 : fx;
+    const vinheta = tx.createRadialGradient(vx, H * 0.45, Math.min(W, H) * (negativo ? 0.45 : 0.3), vx, H * 0.45, Math.max(W, H) * 0.8);
+    vinheta.addColorStop(0, negativo ? "rgba(255, 255, 250, 0)" : "rgba(0, 0, 10, 0)");
+    vinheta.addColorStop(1, negativo ? "rgba(255, 255, 250, 0.35)" : `rgba(0, 0, 10, ${0.25 + 0.5 * escuro})`);
     tx.fillStyle = vinheta;
     tx.fillRect(0, 0, W, H);
 

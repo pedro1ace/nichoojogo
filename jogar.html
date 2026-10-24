@@ -43,6 +43,17 @@ body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-hei
 #tela { position: fixed; inset: 0; overflow: hidden; }
 #cena, #camada { position: absolute; inset: 0; width: 100%; height: 100%; }
 #cena { image-rendering: pixelated; image-rendering: crisp-edges; }
+/* último estágio (10.000 AL): o cenário vira negativo */
+#cena, #camada { transition: filter 0.5s; }
+body.negativo #cena, body.negativo #camada { filter: invert(1) hue-rotate(180deg); }
+body.distorcer #cena, body.distorcer #camada { animation: distorcer 0.9s ease-out; }
+@keyframes distorcer {
+  0% { transform: none; }
+  15% { transform: scale(1.06, 0.94) skewX(6deg); filter: blur(3px) saturate(3); }
+  35% { transform: scale(0.95, 1.07) skewX(-5deg); filter: blur(2px) invert(0.6); }
+  60% { transform: scale(1.02, 0.99) skewX(2deg); filter: blur(1px) invert(1) hue-rotate(180deg); }
+  100% { transform: none; }
+}
 /* Filtro de mídia antiga (CRT): linhas horizontais, uma faixa clara passando
    devagar, leve cintilação e bordas mais escuras. Fica por cima de tudo. */
 #tela::after {
@@ -522,13 +533,15 @@ const Som = (() => {
   } catch {}
 
   function ligar() {
-    if (ac) return;
+    // o navegador cria o áudio "pausado": no clique a gente destrava
+    if (ac) { if (ac.state === "suspended") ac.resume(); return; }
     const Contexto = window.AudioContext || window.webkitAudioContext;
     if (!Contexto) return;
     ac = new Contexto();
     mestre = ac.createGain();
     mestre.gain.value = mudo ? 0 : 0.5;
     mestre.connect(ac.destination);
+    if (ac.state === "suspended") ac.resume();
     criarAmbiente();
   }
 
@@ -613,12 +626,19 @@ const Som = (() => {
     sugestao: () => tom(880, 0.08, { tipo: "triangle", volume: 0.08, ate: 1175 }),
     tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
     contagem: (ultimo) => tom(ultimo ? 880 : 440, ultimo ? 0.25 : 0.12, { tipo: "triangle", volume: 0.1 }),
+    // buraco negro: um "wooon" grave que desce oscilando, com um zap de laser
+    buraco() {
+      tom(180, 1.8, { tipo: "sawtooth", volume: 0.09, ate: 35 });
+      tom(90, 2.2, { tipo: "sine", volume: 0.16, ate: 28 });
+      tom(1400, 0.5, { tipo: "square", volume: 0.05, ate: 90 });
+      ruido(1.6, { volume: 0.08, de: 3000, ate: 80 });
+    },
     // início da viagem: um "fuuuum" que sobe e um brilho de três notas, ecoando no espaço
     inicio() {
       ruido(1.4, { volume: 0.06, de: 300, ate: 3200 });
-      tom(110, 1.2, { tipo: "sine", volume: 0.1, ate: 440 });
+      tom(110, 1.2, { tipo: "sine", volume: 0.16, ate: 440 });
       [523.25, 783.99, 1046.5].forEach((f, i) => {
-        tom(f, 0.9, { tipo: "triangle", volume: 0.07, atraso: 0.35 + i * 0.12 });
+        tom(f, 0.9, { tipo: "triangle", volume: 0.12, atraso: 0.35 + i * 0.12 });
         tom(f, 0.9, { tipo: "triangle", volume: 0.025, atraso: 0.65 + i * 0.12 }); // eco
       });
       tom(65.4, 2.2, { tipo: "sine", volume: 0.09, atraso: 0.9, ate: 55 }); // grave que segura a descida
@@ -1041,7 +1061,59 @@ function criarNaves() {
     g.globalCompositeOperation = "source-over";
   }
 
-  return { satelite, iss, lua, planeta, cometa, voyager, pilares, orion };
+  // Buraco negro (estilo Gargântua): disco de acreção achatado e brilhante, anel de luz
+  // em volta da sombra e o miolo preto. Suave, para virar pano de fundo.
+  const buraco = tela(320, 200);
+  {
+    const W = 320, H = 200, cx = W / 2, cy = H / 2, R = 34;
+    const g = buraco.getContext("2d");
+    const halo = g.createRadialGradient(cx, cy, R, cx, cy, 150);
+    halo.addColorStop(0, "rgba(255, 130, 40, 0.55)");
+    halo.addColorStop(1, "rgba(255, 120, 40, 0)");
+    g.fillStyle = halo;
+    g.fillRect(0, 0, W, H);
+    // disco achatado (atrás e na frente)
+    const disco = (frente) => {
+      g.save();
+      g.translate(cx, cy);
+      g.scale(1, 0.22);
+      for (let r = R * 1.3; r < R * 4.2; r += 1.2) {
+        const k = 1 - (r - R * 1.3) / (R * 2.9);
+        g.strokeStyle = `rgba(255, ${Math.round(110 + 110 * k)}, ${Math.round(20 + 120 * k)}, ${0.15 + 0.6 * k})`;
+        g.lineWidth = 1.4;
+        g.beginPath();
+        g.arc(0, 0, r, frente ? 0 : Math.PI, frente ? Math.PI : Math.PI * 2);
+        g.stroke();
+      }
+      g.restore();
+    };
+    disco(false);
+    // a luz do disco que passa por cima e por baixo da sombra (o "arco" do filme)
+    g.save();
+    g.translate(cx, cy);
+    g.scale(1, 0.95);
+    for (let r = R * 1.05; r < R * 1.6; r += 1) {
+      const k = 1 - (r - R * 1.05) / (R * 0.55);
+      g.strokeStyle = `rgba(255, ${Math.round(150 + 80 * k)}, ${Math.round(50 + 120 * k)}, ${0.2 + 0.65 * k})`;
+      g.lineWidth = 1.2;
+      g.beginPath();
+      g.arc(0, 0, r, 0, Math.PI * 2);
+      g.stroke();
+    }
+    g.restore();
+    // sombra
+    const sombra = g.createRadialGradient(cx, cy, R * 0.8, cx, cy, R * 1.05);
+    sombra.addColorStop(0, "rgba(0, 0, 0, 1)");
+    sombra.addColorStop(0.7, "rgba(0, 0, 0, 1)");
+    sombra.addColorStop(1, "rgba(0, 0, 0, 0)");
+    g.fillStyle = sombra;
+    g.beginPath();
+    g.arc(cx, cy, R * 1.05, 0, Math.PI * 2);
+    g.fill();
+    disco(true);
+  }
+
+  return { satelite, iss, lua, planeta, cometa, voyager, pilares, orion, buraco };
 }
 </script>
   <script>
@@ -1128,7 +1200,7 @@ const MARCOS = [
   { al: 8000, nome: "PILARES DA CRIAÇÃO (ao fundo)" },
   { al: 9000, nome: "ALFA CENTAURI", corpo: "estrela" },
   { al: 12000, nome: "NEBULOSA DE ÓRION", nebulosa: true },
-  { al: 16000, nome: "BURACO NEGRO", corpo: "buraco" },
+  { al: AL_INICIAL + 10000, nome: "HORIZONTE DE EVENTOS" },
 ];
 const CURIOSIDADES = [
   [40, "aqui o céu azul começa a virar preto"],
@@ -1152,8 +1224,8 @@ const CURIOSIDADES = [
   [10500, "Alfa Centauri é o sistema estelar mais perto do Sol"],
   [12800, "Guardiões da Galáxia: tá tocando Awesome Mix aqui"],
   [14000, "na Nebulosa de Órion nascem estrelas novas"],
-  [16600, "Interestelar: Gargântua, o buraco negro do filme"],
-  [17200, "nem a luz escapa de um buraco negro"],
+  [10900, "Interestelar: Gargântua, o buraco negro do filme"],
+  [11600, "nem a luz escapa de um buraco negro"],
 ];
 
 // Cor do fundo por profundidade: céu claro perto da Terra, escurecendo até o preto.
@@ -2030,11 +2102,50 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Zonas do fundo por profundidade.
   // A partir de ~5.000 AL os Pilares da Criação viram o pano de fundo da viagem:
   // grandes, no meio, misturados ao céu (somam luz, não cobrem), e sobem bem devagar.
+  // Último estágio: depois de 10.000 AL (contando da partida) tudo vira negativo
+  // e um buraco negro enorme ocupa o fundo.
+  const AL_NEGATIVO = AL_INICIAL + 10000;
+  let negativo = false;
+  function verificarNegativo() {
+    const alem = camera.atual >= AL_NEGATIVO;
+    if (alem === negativo) return;
+    negativo = alem;
+    document.body.classList.toggle("negativo", alem);
+    if (alem && camera.velocidade > 0) {
+      // atravessou agora: a tela distorce, treme e faz "wooon"
+      document.body.classList.remove("distorcer");
+      void document.body.offsetWidth;
+      document.body.classList.add("distorcer");
+      setTimeout(() => document.body.classList.remove("distorcer"), 900);
+      tremer(16, 900);
+      if (window.Som && Som.buraco) Som.buraco();
+    }
+  }
+  function desenharBuracoNegro() {
+    const surge = Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 1200)) / 1200));
+    if (surge <= 0) return;
+    const img = naves.buraco;
+    const W = innerWidth, H = innerHeight;
+    const largo = Math.max(W * 1.1, H * 1.6);
+    const alto = largo * (img.height / img.width);
+    tx.save();
+    tx.globalAlpha = surge;
+    tx.imageSmoothingEnabled = true;
+    // o cenário inteiro fica em negativo, mas o buraco negro continua preto com o disco laranja:
+    // ele é desenhado já invertido, e a inversão da tela desfaz
+    if (negativo) tx.filter = "invert(1) hue-rotate(180deg)";
+    tx.translate(W / 2, H * 0.5);
+    tx.rotate(-0.12 + Math.sin(tempo * 0.05) * 0.02);
+    tx.drawImage(img, -largo / 2, -alto / 2, largo, alto);
+    tx.restore();
+  }
+
   function desenharPanoDeFundo() {
     const al = camera.atual;
+    verificarNegativo();
     // aparece de 4.500 a 7.000 AL e vai embora entre 9.500 e 11.000 (dá lugar à Nebulosa de Órion)
     const surge = Math.min(1, Math.max(0, (al - 4500) / 2500)) * Math.min(1, Math.max(0, (11000 - al) / 1500));
-    if (surge <= 0) return;
+    if (surge <= 0) { desenharBuracoNegro(); return; }
     const img = naves.pilares;
     const H = innerHeight, W = innerWidth;
     const alto = H * 1.2;
@@ -2046,11 +2157,13 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.imageSmoothingEnabled = true;
     tx.drawImage(img, W / 2 - largo / 2, H * 0.62 - alto / 2 - sobe, largo, alto);
     tx.restore();
+    desenharBuracoNegro();
   }
 
   // Espaço profundo: tudo fica na penumbra, menos a luz em volta da caixa que afunda.
   function desenharPenumbra() {
-    const k = Math.min(1, Math.max(0, (camera.atual - 3500) / 5500)) * 0.8;
+    // no estágio negativo a penumbra sai: ali a tela é clara e o buraco negro é o escuro
+    const k = negativo ? 0 : Math.min(1, Math.max(0, (camera.atual - 3500) / 5500)) * 0.8;
     if (k <= 0.01) return;
     const W = innerWidth, H = innerHeight;
     const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
@@ -2303,16 +2416,18 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // brilho em volta do foguete e vinheta, mais fortes no escuro
     const fx = foguete.x * escala;
     const fy = foguete.y * escala;
-    if (escuro > 0.05) {
+    if (escuro > 0.05 && !negativo) {
       const brilho = tx.createRadialGradient(fx, fy, 0, fx, fy, 160);
       brilho.addColorStop(0, `rgba(95, 225, 255, ${0.13 * escuro})`);
       brilho.addColorStop(1, "rgba(95, 225, 255, 0)");
       tx.fillStyle = brilho;
       tx.fillRect(fx - 160, fy - 160, 320, 320);
     }
-    const vinheta = tx.createRadialGradient(fx, H * 0.45, Math.min(W, H) * 0.3, fx, H * 0.45, Math.max(W, H) * 0.8);
-    vinheta.addColorStop(0, "rgba(0, 0, 10, 0)");
-    vinheta.addColorStop(1, `rgba(0, 0, 10, ${0.25 + 0.5 * escuro})`);
+    // no estágio negativo a vinheta fica no meio e é clara (a inversão da tela a deixa escura)
+    const vx = negativo ? W / 2 : fx;
+    const vinheta = tx.createRadialGradient(vx, H * 0.45, Math.min(W, H) * (negativo ? 0.45 : 0.3), vx, H * 0.45, Math.max(W, H) * 0.8);
+    vinheta.addColorStop(0, negativo ? "rgba(255, 255, 250, 0)" : "rgba(0, 0, 10, 0)");
+    vinheta.addColorStop(1, negativo ? "rgba(255, 255, 250, 0.35)" : `rgba(0, 0, 10, ${0.25 + 0.5 * escuro})`);
     tx.fillStyle = vinheta;
     tx.fillRect(0, 0, W, H);
 
@@ -3034,12 +3149,12 @@ function montarQuadrados() {
 
 function comecar() {
   Som.ligar();
+  Som.inicio(); // toca sempre, também ao continuar a viagem
   $("inicio").hidden = true;
   $("hud").hidden = false;
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
     cena.irAte(AL_INICIAL, DESCIDA_INICIAL);
-    Som.inicio();
     setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
     return;
   }

@@ -290,5 +290,57 @@ function criarNaves() {
     g.globalCompositeOperation = "source-over";
   }
 
-  return { satelite, iss, lua, planeta, cometa, voyager, pilares, orion };
+  // Buraco negro (estilo Gargântua): disco de acreção achatado e brilhante, anel de luz
+  // em volta da sombra e o miolo preto. Suave, para virar pano de fundo.
+  const buraco = tela(320, 200);
+  {
+    const W = 320, H = 200, cx = W / 2, cy = H / 2, R = 34;
+    const g = buraco.getContext("2d");
+    const halo = g.createRadialGradient(cx, cy, R, cx, cy, 150);
+    halo.addColorStop(0, "rgba(255, 130, 40, 0.55)");
+    halo.addColorStop(1, "rgba(255, 120, 40, 0)");
+    g.fillStyle = halo;
+    g.fillRect(0, 0, W, H);
+    // disco achatado (atrás e na frente)
+    const disco = (frente) => {
+      g.save();
+      g.translate(cx, cy);
+      g.scale(1, 0.22);
+      for (let r = R * 1.3; r < R * 4.2; r += 1.2) {
+        const k = 1 - (r - R * 1.3) / (R * 2.9);
+        g.strokeStyle = `rgba(255, ${Math.round(110 + 110 * k)}, ${Math.round(20 + 120 * k)}, ${0.15 + 0.6 * k})`;
+        g.lineWidth = 1.4;
+        g.beginPath();
+        g.arc(0, 0, r, frente ? 0 : Math.PI, frente ? Math.PI : Math.PI * 2);
+        g.stroke();
+      }
+      g.restore();
+    };
+    disco(false);
+    // a luz do disco que passa por cima e por baixo da sombra (o "arco" do filme)
+    g.save();
+    g.translate(cx, cy);
+    g.scale(1, 0.95);
+    for (let r = R * 1.05; r < R * 1.6; r += 1) {
+      const k = 1 - (r - R * 1.05) / (R * 0.55);
+      g.strokeStyle = `rgba(255, ${Math.round(150 + 80 * k)}, ${Math.round(50 + 120 * k)}, ${0.2 + 0.65 * k})`;
+      g.lineWidth = 1.2;
+      g.beginPath();
+      g.arc(0, 0, r, 0, Math.PI * 2);
+      g.stroke();
+    }
+    g.restore();
+    // sombra
+    const sombra = g.createRadialGradient(cx, cy, R * 0.8, cx, cy, R * 1.05);
+    sombra.addColorStop(0, "rgba(0, 0, 0, 1)");
+    sombra.addColorStop(0.7, "rgba(0, 0, 0, 1)");
+    sombra.addColorStop(1, "rgba(0, 0, 0, 0)");
+    g.fillStyle = sombra;
+    g.beginPath();
+    g.arc(cx, cy, R * 1.05, 0, Math.PI * 2);
+    g.fill();
+    disco(true);
+  }
+
+  return { satelite, iss, lua, planeta, cometa, voyager, pilares, orion, buraco };
 }

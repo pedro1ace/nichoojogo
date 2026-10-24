@@ -280,12 +280,12 @@ function montarQuadrados() {
 
 function comecar() {
   Som.ligar();
+  Som.inicio(); // toca sempre, também ao continuar a viagem
   $("inicio").hidden = true;
   $("hud").hidden = false;
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
     cena.irAte(AL_INICIAL, DESCIDA_INICIAL);
-    Som.inicio();
     setTimeout(iniciarRodada, DESCIDA_INICIAL - 200);
     return;
   }

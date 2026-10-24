@@ -12,13 +12,15 @@ const Som = (() => {
   } catch {}
 
   function ligar() {
-    if (ac) return;
+    // o navegador cria o áudio "pausado": no clique a gente destrava
+    if (ac) { if (ac.state === "suspended") ac.resume(); return; }
     const Contexto = window.AudioContext || window.webkitAudioContext;
     if (!Contexto) return;
     ac = new Contexto();
     mestre = ac.createGain();
     mestre.gain.value = mudo ? 0 : 0.5;
     mestre.connect(ac.destination);
+    if (ac.state === "suspended") ac.resume();
     criarAmbiente();
   }
 
@@ -103,12 +105,19 @@ const Som = (() => {
     sugestao: () => tom(880, 0.08, { tipo: "triangle", volume: 0.08, ate: 1175 }),
     tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
     contagem: (ultimo) => tom(ultimo ? 880 : 440, ultimo ? 0.25 : 0.12, { tipo: "triangle", volume: 0.1 }),
+    // buraco negro: um "wooon" grave que desce oscilando, com um zap de laser
+    buraco() {
+      tom(180, 1.8, { tipo: "sawtooth", volume: 0.09, ate: 35 });
+      tom(90, 2.2, { tipo: "sine", volume: 0.16, ate: 28 });
+      tom(1400, 0.5, { tipo: "square", volume: 0.05, ate: 90 });
+      ruido(1.6, { volume: 0.08, de: 3000, ate: 80 });
+    },
     // início da viagem: um "fuuuum" que sobe e um brilho de três notas, ecoando no espaço
     inicio() {
       ruido(1.4, { volume: 0.06, de: 300, ate: 3200 });
-      tom(110, 1.2, { tipo: "sine", volume: 0.1, ate: 440 });
+      tom(110, 1.2, { tipo: "sine", volume: 0.16, ate: 440 });
       [523.25, 783.99, 1046.5].forEach((f, i) => {
-        tom(f, 0.9, { tipo: "triangle", volume: 0.07, atraso: 0.35 + i * 0.12 });
+        tom(f, 0.9, { tipo: "triangle", volume: 0.12, atraso: 0.35 + i * 0.12 });
         tom(f, 0.9, { tipo: "triangle", volume: 0.025, atraso: 0.65 + i * 0.12 }); // eco
       });
       tom(65.4, 2.2, { tipo: "sine", volume: 0.09, atraso: 0.9, ate: 55 }); // grave que segura a descida
