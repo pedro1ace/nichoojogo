@@ -170,6 +170,36 @@ const Som = (() => {
       tom(660, 0.06, { tipo: "square", volume: 0.07 });
       tom(1320, 0.08, { tipo: "triangle", volume: 0.06, atraso: 0.04 });
     },
+    // passar o mouse no botão de jogar: um "tuuuuu" grave e espacial, bem baixinho
+    pairar() {
+      if (!ac) return;
+      const t = ac.currentTime;
+      const o = ac.createOscillator(), o2 = ac.createOscillator();
+      const vib = ac.createOscillator(), vg = ac.createGain();
+      const g = ac.createGain(), f = ac.createBiquadFilter();
+      o.type = "sine"; o2.type = "triangle";
+      o.frequency.setValueAtTime(92, t); o.frequency.exponentialRampToValueAtTime(70, t + 0.9);
+      o2.frequency.setValueAtTime(184.6, t); o2.frequency.exponentialRampToValueAtTime(140.8, t + 0.9);
+      vib.frequency.value = 5.5; vg.gain.value = 2.5;
+      vib.connect(vg); vg.connect(o.frequency); vg.connect(o2.frequency);
+      f.type = "lowpass"; f.frequency.setValueAtTime(900, t); f.frequency.exponentialRampToValueAtTime(260, t + 0.9);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.11, t + 0.12);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 1.0);
+      o.connect(f); o2.connect(f); f.connect(g).connect(mestre);
+      [o, o2, vib].forEach((x) => { x.start(t); x.stop(t + 1.05); });
+    },
+    // clique no botão de jogar: "KATCHIN!" — estalo metálico, arpejo rápido e um brilho que fica ecoando
+    katchin() {
+      if (!ac) return;
+      ruido(0.07, { volume: 0.22, de: 5200, ate: 1800 }); // "ka"
+      tom(196, 0.09, { tipo: "square", volume: 0.1, ate: 98 }); // pancada grave
+      [1046.5, 1318.5, 1568, 2093].forEach((f, i) => tom(f, 0.12, { tipo: "square", volume: 0.06, atraso: 0.05 + i * 0.035 })); // "tchi"
+      // "iiin": dois sinos levemente desafinados que brilham e somem devagar
+      [[2637, 0], [2649, 0], [3951, 0.02], [5274, 0.04]].forEach(([f, a], i) =>
+        tom(f, 1.4 - i * 0.2, { tipo: "sine", volume: i < 2 ? 0.07 : 0.035, atraso: 0.19 + a }));
+      ruido(0.5, { volume: 0.05, de: 9000, ate: 6000 }); // faísca
+    },
     tecla: () => tom(1800 + Math.random() * 400, 0.025, { volume: 0.03 }),
     erro: () => {
       tom(160, 0.18, { tipo: "sawtooth", volume: 0.08 });

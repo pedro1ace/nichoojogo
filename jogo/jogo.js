@@ -281,7 +281,7 @@ function montarQuadrados() {
 function comecar() {
   Som.ligar();
   Som.ceu(false);
-  Som.clique();
+  Som.katchin();
   Som.inicio(); // toca sempre, também ao continuar a viagem
   $("inicio").hidden = true;
   $("hud").hidden = false;
@@ -896,6 +896,21 @@ function enviar() {
 // ---------- eventos ----------
 
 $("comecar").addEventListener("click", comecar);
+// Botão de jogar: inclina para o lado do mouse (efeito 3D) e faz um "tuuu" grave ao pairar.
+(() => {
+  const b = $("comecar");
+  b.addEventListener("pointerenter", (e) => { if (e.pointerType === "mouse") Som.pairar(); });
+  b.addEventListener("pointermove", (e) => {
+    const r = b.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    b.style.setProperty("--rx", (-y * 14).toFixed(2) + "deg");
+    b.style.setProperty("--ry", (x * 10).toFixed(2) + "deg");
+  });
+  b.addEventListener("pointerleave", () => { b.style.removeProperty("--rx"); b.style.removeProperty("--ry"); });
+  b.addEventListener("pointerdown", () => b.classList.add("apertado"));
+  ["pointerup", "pointerleave"].forEach((ev) => b.addEventListener(ev, () => b.classList.remove("apertado")));
+})();
 // O navegador só toca som depois do primeiro toque/tecla: aí liga o céu da tela inicial
 // (vento e bipes de satélite), que some quando a viagem começa.
 const ligarCeuDoInicio = () => {
