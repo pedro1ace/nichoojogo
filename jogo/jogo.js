@@ -252,7 +252,7 @@ function iniciar() {
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
-const DESCIDA_INICIAL = 2600;
+const DESCIDA_INICIAL = 1400;
 
 // Quanto você viajou hoje. A câmera fica em AL_INICIAL + isso (ver cena.js).
 // Em anos-luz de verdade (1 ponto = 100 AL).
@@ -527,7 +527,7 @@ function palpitar(evento) {
   Som.descer(Math.min(1, pontos / 100));
   registrar(cat, achada.resposta, pontos, supernova, percentil);
   // nas raras, a festa da chegada aparece sozinha antes do resultado
-  const pausa = supernova ? 1400 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
+  const pausa = supernova ? 1000 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
   setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), duracaoQueda(pontos, supernova) + pausa);
 }
 

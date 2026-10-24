@@ -1279,9 +1279,9 @@ const AL_POR_U = AL_POR_PONTO / U_POR_PONTO;
 function viagem(pontos) {
   return pontos > 0 ? pontos * U_POR_PONTO : 0;
 }
-// A viagem "conta" logo acima da atmosfera: ao iniciar, o tardígrado desce rapidinho
-// da Terra, passando pela Lua, até aqui. Distância e réguas contam a partir daqui (o "0").
-const AL_INICIAL = 420;
+// A viagem começa logo abaixo da Terra: ao iniciar, o tardígrado só se ajeita um pouquinho
+// (quem faz descer são as respostas). Distância e réguas contam a partir daqui (o "0").
+const AL_INICIAL = 90;
 // posição na cena (u) de algo a "al" anos-luz de verdade, e o contrário
 const U = (al) => AL_INICIAL + al / AL_POR_U;
 const anosLuz = (u) => Math.max(0, Math.round((u - AL_INICIAL) * AL_POR_U));
@@ -1296,15 +1296,15 @@ function pesoQueda(pontos, supernova) {
 }
 // Quanto tempo a caixa leva para cair: a leve plana devagar, a pesada despenca.
 function duracaoQueda(pontos, supernova) {
-  if (supernova) return 3400; // carrega, segura e despenca
+  if (supernova) return 2600; // dá um pulinho e despenca acelerando
   return Math.round(3800 - 2000 * Math.sqrt(pesoQueda(pontos, supernova)));
 }
 // Curva da queda: leve = começa e termina macio (desliza); pesada = acelera até o fim
 // e para de uma vez (o "baque" e o tremor vêm na chegada).
 function curvaQueda(t, peso) {
   t = Math.min(1, Math.max(0, t)); // o quadro pode chegar um pouquinho antes do início
-  // supernova (peso 2): sobe um tiquinho carregando, e então mergulha acelerando até o fundo
-  if (peso > 1.5) return t < 0.22 ? -0.025 * Math.sin((Math.PI * t) / 0.22) : Math.pow((t - 0.22) / 0.78, 2.6);
+  // supernova (peso 2): um pulinho rápido para cima e já mergulha acelerando até o fundo
+  if (peso > 1.5) return t < 0.08 ? -0.012 * Math.sin((Math.PI * t) / 0.08) : Math.pow((t - 0.08) / 0.92, 2.2);
   const leve = 0.5 - Math.cos(Math.PI * t) / 2;
   const pesada = Math.pow(t, 2.2);
   return leve + (pesada - leve) * Math.min(1, peso * 1.4);
@@ -1339,10 +1339,6 @@ function faixaDe(pontos, supernova) {
 const MARCOS = [
   { al: 170, nome: "LUA", corpo: "lua" },
   { al: 330, nome: "CINTURÃO DE ASTEROIDES", cinturao: true },
-  // a vizinhança do Sol: perto demais para linha, ficam em volta do ponto de partida
-  { real: 4.4, nome: "ALFA CENTAURI", corpo: "estrela", x: 0.84, dy: -26, junto: true },
-  { real: 8.6, nome: "SIRIUS", corpo: "azul", x: 0.1, dy: 34, junto: true },
-  { real: 25, nome: "VEGA", corpo: "azul", x: 0.9, dy: 78, junto: true },
   { real: 444, nome: "PLÊIADES", aglomerado: { n: 9, raio: 24, cor: "190,215,255" }, x: 0.32 },
   { real: 548, nome: "BETELGEUSE", corpo: "gigante", x: 0.86, direita: true },
   { real: 1344, nome: "NEBULOSA DE ÓRION" },
@@ -1375,14 +1371,13 @@ const CURIOSIDADES = [
 
 // Cor do fundo por profundidade: céu claro perto da Terra, escurecendo até o preto.
 const PARADAS_FUNDO = [
-  [0, [92, 160, 232]],
-  [90, [66, 128, 214]],
-  [170, [44, 92, 186]],
-  [250, [28, 56, 140]],
-  [320, [22, 30, 74]],
-  [400, [14, 14, 40]],
+  // azul só colado na Terra; logo abaixo já é noite, para o texto ficar legível desde o começo
+  [0, [80, 145, 225]],
+  [35, [50, 100, 196]],
+  [AL_INICIAL, [24, 40, 108]],
+  [150, [15, 17, 48]],
+  [230, [11, 9, 32]],
   // daqui para baixo escurece aos poucos: quanto mais fundo, mais preto
-  [AL_INICIAL, [11, 9, 32]],
   [U(7000), [7, 5, 21]],
   [U(17000), [3, 3, 11]],
   [U(AL_SAGITARIO), [0, 0, 3]],
@@ -1541,7 +1536,7 @@ function criarCorpos(fator = 1) {
     gigante: ["#5a0a04", "#a8200c", "#e8501e", "#ff8a4a", "#ffc8a0"],
     azul: ["#2a4ac0", "#5a8aff", "#9ac0ff", "#d8e8ff", "#ffffff"],
   };
-  const raio = { lua: 8, marte: 9, jupiter: 22, saturno: 15, urano: 12, netuno: 12, plutao: 5, estrela: 4, gigante: 7, azul: 3, buraco: 3 };
+  const raio = { lua: 8, marte: 9, jupiter: 22, saturno: 15, urano: 12, netuno: 12, plutao: 5, estrela: 4, gigante: 4, azul: 3, buraco: 3 };
   const corpos = {};
   for (const nome of Object.keys(raio)) {
     const r = Math.round(raio[nome] * fator);
@@ -3382,7 +3377,7 @@ function iniciar() {
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
-const DESCIDA_INICIAL = 2600;
+const DESCIDA_INICIAL = 1400;
 
 // Quanto você viajou hoje. A câmera fica em AL_INICIAL + isso (ver cena.js).
 // Em anos-luz de verdade (1 ponto = 100 AL).
@@ -3657,7 +3652,7 @@ function palpitar(evento) {
   Som.descer(Math.min(1, pontos / 100));
   registrar(cat, achada.resposta, pontos, supernova, percentil);
   // nas raras, a festa da chegada aparece sozinha antes do resultado
-  const pausa = supernova ? 1400 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
+  const pausa = supernova ? 1000 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
   setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), duracaoQueda(pontos, supernova) + pausa);
 }
 
