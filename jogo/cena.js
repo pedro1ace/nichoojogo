@@ -16,11 +16,14 @@ const AL_POR_PONTO = 10;
 // óbvia quase não sai do lugar, comum desce um pouco, incomum bastante, rara muito.
 function viagem(pontos) {
   if (pontos <= 0) return 0;
-  if (pontos < 5) return 4 * pontos;
-  if (pontos < 20) return 60 + 8 * (pontos - 5);
-  if (pontos < 50) return 300 + 14 * (pontos - 20);
-  return 900 + 22 * (pontos - 50);
+  if (pontos < 5) return 40 + 12 * pontos; // óbvia: 52 a 88 AL, um passinho que dá para ver
+  if (pontos < 20) return 160 + 12 * (pontos - 5); // comum: 160 a 340
+  if (pontos < 50) return 520 + 18 * (pontos - 20); // incomum: 520 a 1.060
+  return 1350 + 26 * (pontos - 50); // rara: 1.350 em diante
 }
+// A viagem começa fora da atmosfera, já no céu escuro: ao iniciar, o tardígrado desce
+// da Terra até aqui. Distância e réguas contam a partir deste ponto (o "0").
+const AL_INICIAL = 300;
 const PX_POR_AL = 0.5; // pixels da cena por ano-luz
 const DURACAO_DESCIDA = 2400; // ms, igual para toda resposta
 
@@ -56,10 +59,12 @@ const MARCOS = [
   { al: 3300, nome: "NETUNO", corpo: "netuno" },
   { al: 4200, nome: "PLUTÃO", corpo: "plutao" },
   { al: 5500, nome: "CINTURÃO DE KUIPER", cinturao: true },
+  { al: 6200, nome: "VOYAGER 1", voyager: true },
   { al: 7000, nome: "NUVEM DE OORT", cinturao: true },
   { al: 9000, nome: "ALFA CENTAURI", corpo: "estrela" },
   { al: 12000, nome: "NEBULOSA DE ÓRION", nebulosa: true },
   { al: 16000, nome: "BURACO NEGRO", corpo: "buraco" },
+  { al: 21000, nome: "PILARES DA CRIAÇÃO", pilares: true },
 ];
 const CURIOSIDADES = [
   [40, "aqui o céu azul começa a virar preto"],
@@ -935,6 +940,15 @@ function criarCena(telaPixel, telaTexto, raiz) {
           desenharAsteroide(sorte(m.al, i) * L, y + (sorte(m.al, i + 50) - 0.5) * 30, Math.floor(sorte(m.al, i + 99) * 3), i);
         }
       }
+      if (m.voyager) {
+        // a sonda mais distante já lançada, girando devagar, com a antena virada para a Terra
+        const pz = Math.max(2, Math.round(escala * 0.5));
+        desenharNave(naves.voyager, L * 0.26 * escala, naTelaTexto(m.al) + 30, pz, -0.25 + Math.sin(tempo * 0.2) * 0.08, "rgba(210, 225, 255, 0.5)");
+      }
+      if (m.pilares) {
+        const img = naves.pilares;
+        ctx.drawImage(img, Math.round(L * 0.66 - img.width / 2), y - Math.round(img.height * 0.55));
+      }
       if (m.nebulosa) {
         for (let i = 0; i < 500; i++) {
           const a = sorte(i, 7) * Math.PI * 2;
@@ -1053,11 +1067,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const alBase = camera.atual + (A - focoY) / PX_POR_AL;
     tx.fillStyle = corSuave;
     tx.fillRect(W - 10, 0, 1, H);
-    for (let al = Math.max(0, Math.ceil(alTopo / 100) * 100); al < alBase; al += 100) {
+    for (let al = Math.max(AL_INICIAL, Math.ceil(alTopo / 100) * 100); al < alBase; al += 100) {
       const y = naTelaTexto(al);
-      const grande = al % 500 === 0;
+      const d = al - AL_INICIAL;
+      const grande = d % 500 === 0;
       tx.fillRect(W - (grande ? 22 : 15), Math.round(y), grande ? 12 : 5, 1);
-      if (grande) escrever(`${al.toLocaleString("pt-BR")} AL`, W - 26, y, corSuave);
+      if (grande) escrever(`${d.toLocaleString("pt-BR")} AL`, W - 26, y, corSuave);
     }
 
     // marcos e curiosidades (escondidos na tela de início, para não brigar com o título)
@@ -1067,6 +1082,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const yFoco = naTelaTexto(camera.atual);
     const aceso = (y) => Math.max(0, 1 - Math.abs(y - yFoco) / 110);
     for (const m of noInicio ? [] : MARCOS) {
+      if (m.al <= AL_INICIAL) continue; // acima do ponto de partida: só o cenário, sem linha
       const y = naTelaTexto(m.al);
       if (y < -20 || y > H + 20) continue;
       const k = aceso(y);
@@ -1075,7 +1091,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.globalAlpha = 0.38 + 0.62 * k;
       if (cobertas.some(([a, b]) => y - 12 > a && y - 12 < b)) tx.globalAlpha = 0;
       if (k > 0.05 && !claro) { tx.shadowColor = "#ffd23f"; tx.shadowBlur = 12 * k; }
-      escrever(`${m.al.toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12, claro ? "#7a4a00" : "#ffd23f");
+      escrever(`${(m.al - AL_INICIAL).toLocaleString("pt-BR")} AL · ${m.nome}`, centro0, y - 12, claro ? "#7a4a00" : "#ffd23f");
       tx.shadowBlur = 0;
       tx.globalAlpha = 1;
     }
@@ -1129,9 +1145,21 @@ function criarCena(telaPixel, telaTexto, raiz) {
     if (mostrarLinhas) {
       tx.textAlign = "right";
       tx.font = "14px 'Space Mono', monospace";
+      let abaixo = 0;
       for (const f of FAIXAS) {
         if (!f.min) continue;
         const y = naTelaTexto(rodadaAl + viagem(f.min));
+        // faixa que fica abaixo da tela: uma setinha presa embaixo diz até onde ela levaria
+        if (y > H - 40 && !acesas[f.id]) {
+          const yb = H - 22 - abaixo * 20;
+          abaixo++;
+          tx.globalAlpha = 0.9;
+          tx.font = "bold 14px 'Space Mono', monospace";
+          escrever(`▼ ${f.nome} · ${viagem(f.min).toLocaleString("pt-BR")} AL abaixo`, centro1, yb, f.cor, "rgba(0, 0, 16, 0.85)");
+          tx.font = "14px 'Space Mono', monospace";
+          tx.globalAlpha = 1;
+          continue;
+        }
         if (y < -20 || y > H + 20) continue;
         const acesa = acesas[f.id];
         if (acesa) {
