@@ -1,0 +1,2855 @@
+{
+ "categoria": "times-de-futebol",
+ "gerado_em": "2026-10-24",
+ "sinais": [
+  "conhecem",
+  "lembranca",
+  "revisao",
+  "texto"
+ ],
+ "meses_de_visitas": [],
+ "pesos": {
+  "lembranca": 0.65,
+  "conhecem": 0.1,
+  "revisao": 0.15,
+  "texto": 0.03
+ },
+ "estimadas_pelo_llm": 63,
+ "respostas": {
+  "Flamengo": {
+   "fama": 0.988,
+   "lembranca_em_1000": 280.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Corinthians": {
+   "fama": 0.9552,
+   "lembranca_em_1000": 200.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Palmeiras": {
+   "fama": 0.8684,
+   "lembranca_em_1000": 110.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Paulo": {
+   "fama": 0.8532,
+   "lembranca_em_1000": 90.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vasco": {
+   "fama": 0.7664,
+   "lembranca_em_1000": 50.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Santos": {
+   "fama": 0.7424,
+   "lembranca_em_1000": 40.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grêmio": {
+   "fama": 0.733,
+   "lembranca_em_1000": 40.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Internacional": {
+   "fama": 0.7206,
+   "lembranca_em_1000": 35.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fluminense": {
+   "fama": 0.697,
+   "lembranca_em_1000": 30.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cruzeiro": {
+   "fama": 0.6937,
+   "lembranca_em_1000": 30.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlético Mineiro": {
+   "fama": 0.6927,
+   "lembranca_em_1000": 30.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Botafogo": {
+   "fama": 0.6721,
+   "lembranca_em_1000": 25.0,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bahia": {
+   "fama": 0.5693,
+   "lembranca_em_1000": 12.0,
+   "conhecem_pct": 99.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vitória": {
+   "fama": 0.4308,
+   "lembranca_em_1000": 4.0,
+   "conhecem_pct": 97.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sport": {
+   "fama": 0.4717,
+   "lembranca_em_1000": 6.0,
+   "conhecem_pct": 97.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fortaleza": {
+   "fama": 0.4546,
+   "lembranca_em_1000": 5.0,
+   "conhecem_pct": 97.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ceará": {
+   "fama": 0.4508,
+   "lembranca_em_1000": 5.0,
+   "conhecem_pct": 97.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Athletico Paranaense": {
+   "fama": 0.4576,
+   "lembranca_em_1000": 5.0,
+   "conhecem_pct": 97.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Coritiba": {
+   "fama": 0.3421,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Goiás": {
+   "fama": 0.348,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Red Bull Bragantino": {
+   "fama": 0.3444,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 93.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "América Mineiro": {
+   "fama": 0.283,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 92.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ponte Preta": {
+   "fama": 0.2833,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 92.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guarani": {
+   "fama": 0.2748,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 92.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Náutico": {
+   "fama": 0.2613,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 90.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Santa Cruz": {
+   "fama": 0.2753,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 92.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paysandu": {
+   "fama": 0.2539,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 90.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Remo": {
+   "fama": 0.2561,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 90.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chapecoense": {
+   "fama": 0.3377,
+   "lembranca_em_1000": 2.0,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juventude": {
+   "fama": 0.2639,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 88.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Avaí": {
+   "fama": 0.2549,
+   "lembranca_em_1000": 1.0,
+   "conhecem_pct": 88.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Figueirense": {
+   "fama": 0.2151,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 88.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Criciúma": {
+   "fama": 0.2192,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 88.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlético Goianiense": {
+   "fama": 0.2143,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuiabá": {
+   "fama": 0.2215,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paraná Clube": {
+   "fama": 0.1866,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Portuguesa": {
+   "fama": 0.2268,
+   "lembranca_em_1000": 0.5,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "CRB": {
+   "fama": 0.1591,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "CSA": {
+   "fama": 0.1591,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "ABC": {
+   "fama": 0.1718,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "América de Natal": {
+   "fama": 0.1507,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sampaio Corrêa": {
+   "fama": 0.1447,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vila Nova": {
+   "fama": 0.1567,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Botafogo-SP": {
+   "fama": 0.1113,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ituano": {
+   "fama": 0.1157,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mirassol": {
+   "fama": 0.142,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Novorizontino": {
+   "fama": 0.1019,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Londrina": {
+   "fama": 0.1288,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Operário": {
+   "fama": 0.1081,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brasil de Pelotas": {
+   "fama": 0.097,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Joinville": {
+   "fama": 0.1233,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tombense": {
+   "fama": 0.0711,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Volta Redonda": {
+   "fama": 0.1236,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bangu": {
+   "fama": 0.1443,
+   "lembranca_em_1000": 0.2,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "América do Rio": {
+   "fama": 0.1202,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Madureira": {
+   "fama": 0.1057,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Treze": {
+   "fama": 0.0813,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Campinense": {
+   "fama": 0.0755,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Botafogo-PB": {
+   "fama": 0.0895,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ferroviária": {
+   "fama": 0.1001,
+   "lembranca_em_1000": 0.1,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "XV de Piracicaba": {
+   "fama": 0.0907,
+   "lembranca_em_1000": 0.05,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juazeirense": {
+   "fama": 0.0467,
+   "lembranca_em_1000": 0.02,
+   "conhecem_pct": 35.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Íbis": {
+   "fama": 0.1266,
+   "lembranca_em_1000": 0.3,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Moto Club": {
+   "fama": 0.0822,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maranhão Atlético Clube": {
+   "fama": 0.0818,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "River Atlético Clube": {
+   "fama": 0.0825,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Altos": {
+   "fama": 0.0805,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Parnahyba": {
+   "fama": 0.063,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flamengo-PI": {
+   "fama": 0.0798,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Piauí Esporte Clube": {
+   "fama": 0.0822,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ferroviário": {
+   "fama": 0.0752,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Floresta": {
+   "fama": 0.0805,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Icasa": {
+   "fama": 0.0627,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guarany de Sobral": {
+   "fama": 0.0756,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Horizonte": {
+   "fama": 0.0823,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Iguatu": {
+   "fama": 0.0709,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caucaia": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Potiguar de Mossoró": {
+   "fama": 0.075,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Globo": {
+   "fama": 0.0827,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Santa Cruz de Natal": {
+   "fama": 0.084,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alecrim": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sousa": {
+   "fama": 0.0795,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nacional de Patos": {
+   "fama": 0.0809,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Auto Esporte": {
+   "fama": 0.0822,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Serra Branca": {
+   "fama": 0.0819,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Retrô": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Central": {
+   "fama": 0.0836,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Salgueiro": {
+   "fama": 0.0738,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Afogados": {
+   "fama": 0.0618,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Petrolina": {
+   "fama": 0.0733,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vitória das Tabocas": {
+   "fama": 0.0739,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porto": {
+   "fama": 0.0843,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "ASA": {
+   "fama": 0.0769,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Murici": {
+   "fama": 0.0684,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "CSE": {
+   "fama": 0.0614,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Coruripe": {
+   "fama": 0.0673,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jaciobá": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sergipe": {
+   "fama": 0.0768,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Confiança": {
+   "fama": 0.0807,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Itabaiana": {
+   "fama": 0.0706,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lagarto": {
+   "fama": 0.0718,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Freipaulistano": {
+   "fama": 0.061,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jacuipense": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bahia de Feira": {
+   "fama": 0.084,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlético de Alagoinhas": {
+   "fama": 0.0739,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fluminense de Feira": {
+   "fama": 0.0822,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barcelona de Ilhéus": {
+   "fama": 0.0753,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Colo-Colo de Ilhéus": {
+   "fama": 0.0755,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vitória da Conquista": {
+   "fama": 0.0803,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galícia": {
+   "fama": 0.0606,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ypiranga de Salvador": {
+   "fama": 0.0803,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Botafogo-BA": {
+   "fama": 0.0786,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Leônico": {
+   "fama": 0.059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jequié": {
+   "fama": 0.0695,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juazeiro": {
+   "fama": 0.0736,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Itabuna": {
+   "fama": 0.0719,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Doce Mel": {
+   "fama": 0.0788,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Real Noroeste": {
+   "fama": 0.0784,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Branco-ES": {
+   "fama": 0.0829,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Desportiva Ferroviária": {
+   "fama": 0.074,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vitória-ES": {
+   "fama": 0.0806,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Serra": {
+   "fama": 0.08,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estrela do Norte": {
+   "fama": 0.0807,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Linhares": {
+   "fama": 0.0715,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Mateus": {
+   "fama": 0.0835,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nova Venécia": {
+   "fama": 0.0852,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Real ES": {
+   "fama": 0.0808,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Branco de Andradas": {
+   "fama": 0.0786,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Villa Nova": {
+   "fama": 0.0851,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caldense": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uberlândia": {
+   "fama": 0.0732,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uberaba": {
+   "fama": 0.0719,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Democrata de Governador Valadares": {
+   "fama": 0.0753,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Democrata de Sete Lagoas": {
+   "fama": 0.0758,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ipatinga": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boa Esporte": {
+   "fama": 0.0815,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Athletic Club": {
+   "fama": 0.059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "URT": {
+   "fama": 0.059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guarani de Divinópolis": {
+   "fama": 0.0712,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Patrocinense": {
+   "fama": 0.0598,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pouso Alegre": {
+   "fama": 0.0758,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tupi": {
+   "fama": 0.0715,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tupynambás": {
+   "fama": 0.0587,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Itabirito": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Betim": {
+   "fama": 0.0701,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mamoré": {
+   "fama": 0.0585,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Valeriodoce": {
+   "fama": 0.0584,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Social": {
+   "fama": 0.0827,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Funorte": {
+   "fama": 0.0583,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Varginha": {
+   "fama": 0.0692,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Formiga": {
+   "fama": 0.0706,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Araxá": {
+   "fama": 0.0687,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "North": {
+   "fama": 0.0581,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Coimbra": {
+   "fama": 0.0747,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ipiranga": {
+   "fama": 0.0712,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juventus": {
+   "fama": 0.0579,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nacional": {
+   "fama": 0.0824,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Bento": {
+   "fama": 0.0817,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Caetano": {
+   "fama": 0.0813,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Santo André": {
+   "fama": 0.0786,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Água Santa": {
+   "fama": 0.0814,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Inter de Limeira": {
+   "fama": 0.0723,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Oeste": {
+   "fama": 0.0767,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paulista": {
+   "fama": 0.0774,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Noroeste": {
+   "fama": 0.0719,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marília": {
+   "fama": 0.0711,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Linense": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Velo Clube": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Claro": {
+   "fama": 0.0819,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "União São João": {
+   "fama": 0.0821,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Comercial": {
+   "fama": 0.078,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Francana": {
+   "fama": 0.057,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "América de Rio Preto": {
+   "fama": 0.0798,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Preto": {
+   "fama": 0.0809,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taubaté": {
+   "fama": 0.0694,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São José": {
+   "fama": 0.0836,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grêmio Prudente": {
+   "fama": 0.0723,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Presidente Prudente": {
+   "fama": 0.076,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Penapolense": {
+   "fama": 0.062,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Catanduvense": {
+   "fama": 0.0599,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sertãozinho": {
+   "fama": 0.0655,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barretos": {
+   "fama": 0.0675,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mogi Mirim": {
+   "fama": 0.0705,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guaratinguetá": {
+   "fama": 0.0667,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Primavera": {
+   "fama": 0.0737,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Red Bull Brasil": {
+   "fama": 0.0755,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Monte Azul": {
+   "fama": 0.0765,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atibaia": {
+   "fama": 0.0683,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Capivariano": {
+   "fama": 0.0592,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Votuporanguense": {
+   "fama": 0.0572,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "XV de Jaú": {
+   "fama": 0.067,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lemense": {
+   "fama": 0.0558,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Batatais": {
+   "fama": 0.0632,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Desportivo Brasil": {
+   "fama": 0.0764,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Audax": {
+   "fama": 0.0557,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grêmio Osasco": {
+   "fama": 0.0712,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Osasco": {
+   "fama": 0.0698,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Portuguesa Santista": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jabaquara": {
+   "fama": 0.0555,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Corinthians de Presidente Prudente": {
+   "fama": 0.0747,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "EC São Bernardo": {
+   "fama": 0.0792,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Bernardo FC": {
+   "fama": 0.0791,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taboão da Serra": {
+   "fama": 0.0755,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Real Brasília": {
+   "fama": 0.0767,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gama": {
+   "fama": 0.0729,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brasiliense": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ceilândia": {
+   "fama": 0.055,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brasília": {
+   "fama": 0.0757,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sobradinho": {
+   "fama": 0.0652,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Capital": {
+   "fama": 0.0765,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luziânia": {
+   "fama": 0.0628,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Formosa": {
+   "fama": 0.0674,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taguatinga": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Anápolis": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Anapolina": {
+   "fama": 0.0545,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aparecidense": {
+   "fama": 0.0574,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Goiânia": {
+   "fama": 0.0712,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Crac": {
+   "fama": 0.0544,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Itumbiara": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Iporá": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jataiense": {
+   "fama": 0.0537,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grêmio Anápolis": {
+   "fama": 0.0687,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Goiatuba": {
+   "fama": 0.0592,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Morrinhos": {
+   "fama": 0.0615,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Verde": {
+   "fama": 0.078,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Operário Várzea-Grandense": {
+   "fama": 0.0656,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dom Bosco": {
+   "fama": 0.0738,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luverdense": {
+   "fama": 0.0537,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sinop": {
+   "fama": 0.0632,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "União Rondonópolis": {
+   "fama": 0.0692,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nova Mutum": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Primavera-MT": {
+   "fama": 0.0711,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Operário-MS": {
+   "fama": 0.0666,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Comercial-MS": {
+   "fama": 0.0744,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Corumbaense": {
+   "fama": 0.0563,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aquidauanense": {
+   "fama": 0.0535,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Costa Rica-MS": {
+   "fama": 0.0726,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Novoperário": {
+   "fama": 0.0532,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dourados": {
+   "fama": 0.0677,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ivinhema": {
+   "fama": 0.0584,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Serc": {
+   "fama": 0.053,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cascavel": {
+   "fama": 0.066,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "FC Cascavel": {
+   "fama": 0.066,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Toledo": {
+   "fama": 0.067,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maringá": {
+   "fama": 0.0673,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grêmio Maringá": {
+   "fama": 0.0685,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Branco-PR": {
+   "fama": 0.0758,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paranavaí": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cianorte": {
+   "fama": 0.0611,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arapongas": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Foz do Iguaçu": {
+   "fama": 0.0684,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Azuriz": {
+   "fama": 0.0524,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prudentópolis": {
+   "fama": 0.0577,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "PSTC": {
+   "fama": 0.0522,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Iraty": {
+   "fama": 0.0522,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Batel": {
+   "fama": 0.061,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apucarana": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Umuarama": {
+   "fama": 0.0619,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nacional de Rolândia": {
+   "fama": 0.0683,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marcílio Dias": {
+   "fama": 0.0781,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brusque": {
+   "fama": 0.0633,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Metropolitano": {
+   "fama": 0.0638,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Camboriú": {
+   "fama": 0.0651,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hercílio Luz": {
+   "fama": 0.0747,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Concórdia": {
+   "fama": 0.0619,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barra": {
+   "fama": 0.0715,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Próspera": {
+   "fama": 0.0587,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nação": {
+   "fama": 0.0694,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Inter de Lages": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caxias": {
+   "fama": 0.0679,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esportivo": {
+   "fama": 0.0673,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ypiranga de Erechim": {
+   "fama": 0.061,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São José-RS": {
+   "fama": 0.0782,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Novo Hamburgo": {
+   "fama": 0.0718,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aimoré": {
+   "fama": 0.0552,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Avenida": {
+   "fama": 0.0713,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Santa Cruz-RS": {
+   "fama": 0.073,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Luiz": {
+   "fama": 0.0815,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pelotas": {
+   "fama": 0.0647,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Farroupilha": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guarani de Venâncio Aires": {
+   "fama": 0.063,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Glória": {
+   "fama": 0.069,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Veranópolis": {
+   "fama": 0.0571,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cruzeiro-RS": {
+   "fama": 0.0685,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Passo Fundo": {
+   "fama": 0.0725,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lajeadense": {
+   "fama": 0.0548,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juventus de Santa Rosa": {
+   "fama": 0.0727,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Inter de Santa Maria": {
+   "fama": 0.0716,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Riograndense": {
+   "fama": 0.0502,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grêmio Esportivo Bagé": {
+   "fama": 0.0645,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guarany de Bagé": {
+   "fama": 0.0601,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Paulo-RS": {
+   "fama": 0.0792,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Grande": {
+   "fama": 0.0769,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "14 de Julho": {
+   "fama": 0.0737,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gaúcho de Passo Fundo": {
+   "fama": 0.0699,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brasil de Farroupilha": {
+   "fama": 0.0693,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nacional-AM": {
+   "fama": 0.0731,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Negro": {
+   "fama": 0.0724,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fast Clube": {
+   "fama": 0.0681,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Manaus FC": {
+   "fama": 0.0669,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Amazonas FC": {
+   "fama": 0.0667,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Princesa do Solimões": {
+   "fama": 0.0669,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Penarol": {
+   "fama": 0.0494,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Raimundo-AM": {
+   "fama": 0.0718,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tuna Luso": {
+   "fama": 0.0604,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Castanhal": {
+   "fama": 0.0573,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Independente": {
+   "fama": 0.0685,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bragantino-PA": {
+   "fama": 0.0633,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Francisco-PA": {
+   "fama": 0.0722,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cametá": {
+   "fama": 0.0545,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tapajós": {
+   "fama": 0.059,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Trem": {
+   "fama": 0.0665,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ypiranga-AP": {
+   "fama": 0.0488,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Santos-AP": {
+   "fama": 0.0715,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Oratório": {
+   "fama": 0.0576,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Macapá": {
+   "fama": 0.0606,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rio Branco-AC": {
+   "fama": 0.0705,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlético Acreano": {
+   "fama": 0.0606,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Independência": {
+   "fama": 0.066,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Humaitá-AC": {
+   "fama": 0.0616,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galvez": {
+   "fama": 0.0483,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vilhena": {
+   "fama": 0.0591,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ji-Paraná": {
+   "fama": 0.0649,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Genus": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porto Velho": {
+   "fama": 0.0701,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Real Ariquemes": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guaporé": {
+   "fama": 0.0567,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Raimundo-RR": {
+   "fama": 0.0676,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Baré": {
+   "fama": 0.0508,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlético Roraima": {
+   "fama": 0.0635,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "River-RR": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Náutico-RR": {
+   "fama": 0.0615,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Palmas": {
+   "fama": 0.0632,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tocantinópolis": {
+   "fama": 0.0531,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gurupi": {
+   "fama": 0.0567,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Interporto": {
+   "fama": 0.0478,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Araguaína": {
+   "fama": 0.0573,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Capital-TO": {
+   "fama": 0.0695,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sampaio Corrêa-RJ": {
+   "fama": 0.0629,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nova Iguaçu": {
+   "fama": 0.0732,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boavista": {
+   "fama": 0.0472,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Portuguesa-RJ": {
+   "fama": 0.0677,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Audax Rio": {
+   "fama": 0.0737,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Resende": {
+   "fama": 0.0608,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Friburguense": {
+   "fama": 0.0534,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Americano": {
+   "fama": 0.0674,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Goytacaz": {
+   "fama": 0.0468,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cabofriense": {
+   "fama": 0.0468,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Macaé": {
+   "fama": 0.0595,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Duque de Caxias": {
+   "fama": 0.0628,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tigres do Brasil": {
+   "fama": 0.0742,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Olaria": {
+   "fama": 0.0565,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bonsucesso": {
+   "fama": 0.0567,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São Cristóvão": {
+   "fama": 0.0772,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Campo Grande-RJ": {
+   "fama": 0.0718,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Serrano": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Angra dos Reis": {
+   "fama": 0.0629,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Artsul": {
+   "fama": 0.0462,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maricá": {
+   "fama": 0.0568,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Petrópolis": {
+   "fama": 0.0605,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barra Mansa": {
+   "fama": 0.0661,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mesquita": {
+   "fama": 0.0609,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Profute": {
+   "fama": 0.0459,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Itaboraí": {
+   "fama": 0.0555,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Belford Roxo": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grêmio Barueri": {
+   "fama": 0.0225,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maguary": {
+   "fama": 0.0057,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uniclinic": {
+   "fama": 0.0056,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caucaia EC": {
+   "fama": 0.017,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tiradentes-CE": {
+   "fama": 0.0228,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Quixadá": {
+   "fama": 0.0157,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pacajus": {
+   "fama": 0.0116,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maracanã-CE": {
+   "fama": 0.0228,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlético Cearense": {
+   "fama": 0.0224,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barbalha": {
+   "fama": 0.0142,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Crato": {
+   "fama": 0.0187,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juazeiro do Norte": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "América-PE": {
+   "fama": 0.0265,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vera Cruz-PE": {
+   "fama": 0.0251,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ypiranga-PE": {
+   "fama": 0.0255,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flamengo de Arcoverde": {
+   "fama": 0.0204,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Belo Jardim": {
+   "fama": 0.028,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Decisão": {
+   "fama": 0.0284,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ferroviário do Recife": {
+   "fama": 0.022,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlético Pernambucano": {
+   "fama": 0.0215,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sete de Setembro": {
+   "fama": 0.0282,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "CEO": {
+   "fama": 0.0045,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Penedense": {
+   "fama": 0.0079,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zumbi": {
+   "fama": 0.0196,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Capelense": {
+   "fama": 0.0051,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Comercial-PI": {
+   "fama": 0.0243,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "4 de Julho": {
+   "fama": 0.0295,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Picos": {
+   "fama": 0.0186,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Oeirense": {
+   "fama": 0.004,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cori-Sabbá": {
+   "fama": 0.0107,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fluminense-PI": {
+   "fama": 0.0223,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Imperatriz": {
+   "fama": 0.0186,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cordino": {
+   "fama": 0.0039,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pinheiro": {
+   "fama": 0.0226,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Viana": {
+   "fama": 0.0215,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tuntum": {
+   "fama": 0.009,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Juventude Samas": {
+   "fama": 0.0239,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "São José de Ribamar": {
+   "fama": 0.0265,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Iape": {
+   "fama": 0.0036,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bacabal": {
+   "fama": 0.0133,
+   "lembranca_em_1000": null,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  }
+ }
+}

@@ -46,6 +46,7 @@ Precisa de Python 3 (sem dependências).
 python3 scripts/importar_listas.py # cria categorias a partir das listas prontas da base
 python3 scripts/importar.py        # gera as categorias que têm receita em dados/fontes/ (Wikidata)
 python3 scripts/pontuar.py         # calcula os pesos e atualiza jogo/dados.js e jogar.html
+python3 scripts/agente_fama.py     # mede a fama (lembrança + Wikipédia) e roda o pontuar.py de novo
 ```
 
 ## Estrutura
@@ -64,6 +65,7 @@ scripts/
   importar_listas.py       transforma listas da base em categorias
   importar.py              gera categorias do Wikidata a partir de dados/fontes/<id>.json, com validações
   pontuar.py               calcula os pesos de nicho
+  agente_fama.py           agente de fama: lembrança por LLM, visitas e tendência na Wikipédia
   montar_jogo.py           gera jogo/dados.js e jogar.html
   sinais.py                protótipo: junta sinais de fama e propõe um peso novo (não mexe no jogo)
   buscar_wikidata.py       protótipo: sitelinks, visitas na Wikipédia e apelidos do Wikidata
@@ -80,6 +82,9 @@ docs/BANCO-DE-PALAVRAS.md  fontes de palavras, raridade, LLM e apelidos (pesquis
 ```
 
 ## Como o "quão nichada" é calculado
+
+**Hoje todas as categorias do jogo usam o agente de fama** (`scripts/agente_fama.py`, seção abaixo). O ICF
+descrito aqui é o caminho antigo, que vale quando uma categoria ainda não tem `dados/sinais/fama/<cat>.json`.
 
 A base usa **ICF** (frequência inversa no corpus): quanto maior, mais rara a palavra no português em geral.
 Para cada categoria, `pontuar.py` combina:
@@ -117,6 +122,37 @@ Cabeleira de Berenice,,1
 ```
 
 `peso` vai de 0 a 100 e substitui o calculado na ordem da categoria; `supernova=1` escolhe a resposta secreta (senão, é a de mais pontos).
+
+## Agente de fama
+
+O ICF e as visitas medem o quanto se **lê** sobre uma coisa. O jogo precisa do quanto ela vem à **cabeça**
+de quem responde: Malta aparece muito em notícias, mas quase ninguém diz "Malta" quando pedem um país.
+O agente mede isso e reordena cada categoria:
+
+1. **Lembrança** (`dados/sinais/llm/<cat>.json`): "se 1000 brasileiros respondessem, quantos dariam esta
+   resposta?" e "quantos por cento reconheceriam?". Feito por um LLM, em lotes, e guardado: o agente só
+   pergunta o que ainda não está no arquivo. Sem `ANTHROPIC_API_KEY`, usa só o que já está lá.
+   Só as respostas que alguém lembra foram estimadas (umas 4 mil). As outras contam como "ninguém lembra",
+   nunca como média, e se ordenam entre si pelos outros sinais: assim uma resposta nichada nova cai em rara.
+2. **Wikipédia** (`dados/sinais/wikidata/<cat>.json`): visitas em 12 meses e **tendência** (últimos 6 meses
+   contra os 6 anteriores), dos dumps de `scripts/baixar_visitas.sh`. Quem está em alta sobe um pouco.
+3. **Mistura**: lembrança 65%, reconhecimento 10%, o peso manual antigo de `dados/ajustes/` 15%, visitas 7%
+   e frequência em textos 3%.
+   A tendência soma ou tira até 0,05. O resultado vai para `dados/sinais/fama/<cat>.json`.
+4. **Pontuação**: o `pontuar.py` usa essa fama para a ordem e aplica a mesma régua de cima.
+   `dados/sinais/revisao/agente-mudancas.csv` lista tudo que mudou de faixa, com os sinais de cada resposta.
+
+```bash
+export ANTHROPIC_API_KEY=...        # opcional: só para estimar respostas novas
+pip install anthropic                # idem
+./scripts/baixar_visitas.sh          # opcional: 12 meses de visitas (uns 6 GB por mês de download, fora do git)
+python3 scripts/buscar_wikidata.py --so-visitas   # atualiza as visitas com os dumps
+python3 scripts/agente_fama.py       # ou --so-relatorio para só recombinar o que já existe
+```
+
+Com o agente, a coluna `peso` de `dados/ajustes/` vira um dos sinais em vez de mandar sozinha (quase toda
+categoria tinha peso escrito para todas as respostas). A coluna `supernova` continua mandando. Para corrigir
+uma resposta, mude a lembrança dela no `dados/sinais/llm/<cat>.json` e rode `agente_fama.py --so-relatorio`.
 
 ## Como adicionar uma categoria
 

@@ -4,6 +4,8 @@
 Uso (precisa de internet, sem dependências):
     python3 scripts/buscar_wikidata.py luas-do-sistema-solar
     python3 scripts/buscar_wikidata.py                 # todas
+    python3 scripts/buscar_wikidata.py --sem-visitas frutas   # só acha os itens (rápido, sem visitas)
+    python3 scripts/buscar_wikidata.py --so-visitas frutas    # reaproveita os itens já achados
 
 Para cada resposta da categoria:
     1. acha o item do Wikidata (Q...), procurando pelo nome e pelos apelidos e
@@ -56,6 +58,25 @@ PALAVRAS_DA_CATEGORIA = {
     "estados-do-brasil": ["estado", "unidade federativa", "federative unit", "state of brazil"],
     "agencias-espaciais": ["agência", "agencia", "agency", "espacial", "space", "aeroespacial", "aerospace"],
     "capitais-do-brasil": ["capital", "município", "municipio", "municipality", "cidade", "city"],
+    "cidades-do-brasil": ["município", "municipio", "municipality", "cidade", "city", "distrito", "vila", "village"],
+    "paises-acima-do-equador": ["país", "pais", "country", "estado", "state", "república", "republic", "reino",
+                                "kingdom", "território", "territory", "ilha", "island"],
+    "corpos-do-sistema-solar": ["planeta", "planet", "lua", "satélite", "moon", "satellite", "asteroide",
+                                "asteroid", "cometa", "comet", "anão", "dwarf", "transnetuniano", "trans-Neptunian"],
+    "dinossauros": ["dinossauro", "dinosaur", "gênero", "genus", "réptil", "reptile", "pterossauro", "pterosaur"],
+    "poetas-brasileiros": ["poeta", "poet", "escritor", "writer", "escritora", "cantor", "singer", "compositor"],
+    "filmes-tom-hanks": ["filme", "film", "movie"],
+    "marcas-de-carro": ["automóve", "automobile", "car ", "carro", "fabricante", "manufacturer", "marca", "brand"],
+    "times-de-futebol": ["clube", "club", "futebol", "football", "soccer"],
+    "racas-de-cachorro": ["raça", "raca", "breed", "cão", "dog"],
+    "animais-do-brasil": ["espécie", "especie", "species", "gênero", "genus", "animal", "ave", "bird", "mamífero",
+                          "mammal", "peixe", "fish", "réptil", "reptile", "serpente", "snake", "família", "family"],
+    "frutas": ["fruta", "fruit", "fruto", "espécie", "species", "planta", "plant", "árvore", "tree", "gênero", "genus"],
+    "esportes-olimpicos": ["esporte", "desporto", "sport", "modalidade", "discipline"],
+    "instrumentos-musicais": ["instrumento", "instrument"],
+    "plantas-de-casa": ["espécie", "species", "planta", "plant", "gênero", "genus", "erva", "herb"],
+    "comidas-tipicas": ["prato", "dish", "comida", "food", "doce", "dessert", "culinária", "cuisine", "bebida", "drink"],
+    "festa-junina": ["prato", "dish", "comida", "food", "doce", "dessert", "bebida", "drink", "culinária", "cuisine"],
 }
 
 
@@ -191,7 +212,7 @@ def visitas_locais(titulos: set[str]) -> dict[str, int] | None:
     return {t.replace("_", " "): v for t, v in soma.items()}
 
 
-def buscar_categoria(cat_id: str) -> None:
+def buscar_categoria(cat_id: str, sem_visitas: bool = False, so_visitas: bool = False) -> None:
     cat = ler_categoria(CATEGORIAS / f"{cat_id}.txt")
     destino = DESTINO / f"{cat_id}.json"
     antigo = json.loads(destino.read_text(encoding="utf-8")) if destino.exists() else {}
@@ -203,6 +224,8 @@ def buscar_categoria(cat_id: str) -> None:
         anterior = antigo.get(nome, {})
         if anterior.get("conferido") and anterior.get("qid"):
             qid, metodo = anterior["qid"], "conferido"
+        elif so_visitas and anterior.get("qid"):
+            qid, metodo = anterior["qid"], anterior.get("metodo", "incerto")
         elif qid_receita := next((da_receita[normalizar(n)] for n in [nome, *r["apelidos"]]
                                   if normalizar(n) in da_receita), None):
             qid, metodo = qid_receita, "receita"
@@ -211,7 +234,7 @@ def buscar_categoria(cat_id: str) -> None:
         escolha[nome] = (qid, metodo)
 
     info = detalhes(sorted({q for q, _ in escolha.values() if q}))
-    locais = visitas_locais({i["ptwiki"] for i in info.values() if i["ptwiki"]})
+    locais = {} if sem_visitas else visitas_locais({i["ptwiki"] for i in info.values() if i["ptwiki"]})
     if locais is None:
         print("  (sem os dumps de visitas em dados/brutos/visitas: usando a API, que é lenta)")
     saida = {}
@@ -220,7 +243,9 @@ def buscar_categoria(cat_id: str) -> None:
         linha = {"qid": qid, "metodo": metodo, "conferido": bool(anterior.get("conferido"))}
         if qid and qid in info:
             linha.update(info[qid])
-            if locais is not None:
+            if sem_visitas:
+                linha["visitas_pt_12m"] = anterior.get("visitas_pt_12m") if anterior.get("qid") == qid else None
+            elif locais is not None:
                 linha["visitas_pt_12m"] = locais.get(linha["ptwiki"], 0) if linha["ptwiki"] else 0
             elif anterior.get("qid") == qid and anterior.get("visitas_mes_final") == MES_FINAL:
                 linha["visitas_pt_12m"] = anterior.get("visitas_pt_12m")  # já buscado para o mesmo período
@@ -246,10 +271,13 @@ def buscar_categoria(cat_id: str) -> None:
 
 
 def main() -> None:
-    escolhidas = sys.argv[1:] or [a.stem for a in sorted(CATEGORIAS.glob("*.txt"))]
+    sem_visitas = "--sem-visitas" in sys.argv
+    so_visitas = "--so-visitas" in sys.argv
+    escolhidas = [a for a in sys.argv[1:] if not a.startswith("--")]
+    escolhidas = escolhidas or [a.stem for a in sorted(CATEGORIAS.glob("*.txt"))]
     for cat_id in escolhidas:
         print(f"\n== {cat_id}")
-        buscar_categoria(cat_id)
+        buscar_categoria(cat_id, sem_visitas, so_visitas)
 
 
 if __name__ == "__main__":

@@ -66,7 +66,7 @@ FONTES = {
     "marcas-de-carro": [("sparql", "?item wdt:P31/wdt:P279* wd:Q786820 ."), ("categoria", "Fabricantes de automóveis", 2)],
     "esportes-olimpicos": [("sparql", "?item wdt:P31 wd:Q212434 ."), ("categoria", "Desportos olímpicos", 2)],
     "poetas-brasileiros": [("sparql", "?item wdt:P106 wd:Q49757 ; wdt:P27 wd:Q155 ."), ("categoria", "Poetas do Brasil", 2)],
-    "filmes-tom-hanks": [("sparql", "?item wdt:P161 wd:Q2685 ; wdt:P31/wdt:P279* wd:Q11424 .")],
+    "filmes-tom-hanks": [("sparql", "?item wdt:P161 wd:Q2263 ; wdt:P31/wdt:P279* wd:Q11424 .")],
     "plantas-de-casa": [("categoria", "Plantas ornamentais", 2)],
     "girias-brasileiras": [("categoria", "Gírias", 2)],
     "estrelas": [("sparql", "?item wdt:P31/wdt:P279* wd:Q523 .")],
@@ -133,14 +133,23 @@ def visitas(titulos: list[str]) -> dict[str, dict]:
     saida = {}
     for k in range(0, len(titulos), 50):
         lote = titulos[k:k + 50]
-        r = api(action="query", prop="pageviews|pageprops", ppprop="disambiguation", pvipdays="60",
-                redirects="1", titles="|".join(lote))
-        q = r.get("query", {})
-        destino = {}
-        for grupo in ("normalized", "redirects"):
-            for x in q.get(grupo, []):
-                destino[x["from"]] = x["to"]
-        paginas = {p["title"]: p for p in q.get("pages", [])}
+        destino, paginas, cont = {}, {}, {}
+        while True:  # a API devolve as visitas aos poucos: seguir o "continue" até o fim
+            r = api(action="query", prop="pageviews|pageprops", ppprop="disambiguation", pvipdays="60",
+                    redirects="1", titles="|".join(lote), **cont)
+            q = r.get("query", {})
+            for grupo in ("normalized", "redirects"):
+                for x in q.get(grupo, []):
+                    destino[x["from"]] = x["to"]
+            for p in q.get("pages", []):
+                atual = paginas.setdefault(p["title"], p)
+                if p.get("pageviews"):
+                    atual.setdefault("pageviews", {}).update(p["pageviews"])
+                if p.get("pageprops"):
+                    atual["pageprops"] = p["pageprops"]
+            if "continue" not in r:
+                break
+            cont = {k: v for k, v in r["continue"].items()}
         for t in lote:
             alvo = t
             while alvo in destino and destino[alvo] != alvo:
