@@ -1,0 +1,953 @@
+{
+ "id": "ossos-do-corpo",
+ "titulo": "Ossos do corpo",
+ "pergunta": "Cite um osso do corpo humano",
+ "respostas": [
+  {
+   "resposta": "Fêmur",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.789,
+   "ajustado": true,
+   "percentil": 0.346,
+   "fama": 0.01,
+   "pontos": 8,
+   "peso": 0.283
+  },
+  {
+   "resposta": "Crânio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.318,
+   "ajustado": true,
+   "percentil": 0.136,
+   "fama": 0.022,
+   "pontos": 12,
+   "peso": 0.346
+  },
+  {
+   "resposta": "Costela",
+   "apelidos": [
+    "costelas"
+   ],
+   "sem_dado": false,
+   "icf": 12.651,
+   "ajustado": true,
+   "percentil": 0.198,
+   "fama": 0.034,
+   "pontos": 15,
+   "peso": 0.387
+  },
+  {
+   "resposta": "Coluna",
+   "apelidos": [
+    "coluna vertebral",
+    "espinha"
+   ],
+   "sem_dado": false,
+   "icf": 9.991,
+   "ajustado": true,
+   "percentil": 0.012,
+   "fama": 0.046,
+   "pontos": 18,
+   "peso": 0.424
+  },
+  {
+   "resposta": "Vértebra",
+   "apelidos": [
+    "vértebras"
+   ],
+   "sem_dado": false,
+   "icf": 14.501,
+   "ajustado": true,
+   "percentil": 0.463,
+   "fama": 0.058,
+   "pontos": 22,
+   "peso": 0.469
+  },
+  {
+   "resposta": "Tíbia",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.169,
+   "ajustado": true,
+   "percentil": 0.407,
+   "fama": 0.07,
+   "pontos": 26,
+   "peso": 0.51
+  },
+  {
+   "resposta": "Fíbula",
+   "apelidos": [
+    "perônio"
+   ],
+   "sem_dado": false,
+   "icf": 15.534,
+   "ajustado": true,
+   "percentil": 0.667,
+   "fama": 0.083,
+   "pontos": 30,
+   "peso": 0.548
+  },
+  {
+   "resposta": "Úmero",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.733,
+   "ajustado": true,
+   "percentil": 0.531,
+   "fama": 0.095,
+   "pontos": 34,
+   "peso": 0.583
+  },
+  {
+   "resposta": "Rádio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 9.233,
+   "ajustado": true,
+   "percentil": 0.0,
+   "fama": 0.107,
+   "pontos": 35,
+   "peso": 0.592
+  },
+  {
+   "resposta": "Ulna",
+   "apelidos": [
+    "cúbito"
+   ],
+   "sem_dado": false,
+   "icf": 15.96,
+   "ajustado": true,
+   "percentil": 0.691,
+   "fama": 0.119,
+   "pontos": 37,
+   "peso": 0.608
+  },
+  {
+   "resposta": "Clavícula",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.447,
+   "ajustado": true,
+   "percentil": 0.432,
+   "fama": 0.131,
+   "pontos": 39,
+   "peso": 0.624
+  },
+  {
+   "resposta": "Escápula",
+   "apelidos": [
+    "omoplata"
+   ],
+   "sem_dado": false,
+   "icf": 15.192,
+   "ajustado": true,
+   "percentil": 0.642,
+   "fama": 0.143,
+   "pontos": 41,
+   "peso": 0.64
+  },
+  {
+   "resposta": "Patela",
+   "apelidos": [
+    "rótula"
+   ],
+   "sem_dado": false,
+   "icf": 14.82,
+   "ajustado": true,
+   "percentil": 0.543,
+   "fama": 0.155,
+   "pontos": 43,
+   "peso": 0.656
+  },
+  {
+   "resposta": "Mandíbula",
+   "apelidos": [
+    "maxilar inferior",
+    "queixo"
+   ],
+   "sem_dado": false,
+   "icf": 13.079,
+   "ajustado": true,
+   "percentil": 0.247,
+   "fama": 0.167,
+   "pontos": 45,
+   "peso": 0.671
+  },
+  {
+   "resposta": "Maxila",
+   "apelidos": [
+    "maxilar",
+    "maxilar superior"
+   ],
+   "sem_dado": false,
+   "icf": 14.644,
+   "ajustado": true,
+   "percentil": 0.494,
+   "fama": 0.179,
+   "pontos": 48,
+   "peso": 0.693
+  },
+  {
+   "resposta": "Esterno",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.659,
+   "ajustado": true,
+   "percentil": 0.506,
+   "fama": 0.191,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Hioide",
+   "apelidos": [
+    "osso hioide"
+   ],
+   "sem_dado": false,
+   "icf": 17.922,
+   "ajustado": true,
+   "percentil": 0.889,
+   "fama": 0.99,
+   "pontos": 50,
+   "peso": 0.707
+  },
+  {
+   "resposta": "Bacia",
+   "apelidos": [
+    "pelve"
+   ],
+   "sem_dado": false,
+   "icf": 11.184,
+   "ajustado": true,
+   "percentil": 0.049,
+   "fama": 0.204,
+   "pontos": 52,
+   "peso": 0.721
+  },
+  {
+   "resposta": "Ílio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.698,
+   "ajustado": true,
+   "percentil": 0.741,
+   "fama": 0.216,
+   "pontos": 54,
+   "peso": 0.735
+  },
+  {
+   "resposta": "Ísquio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.937,
+   "ajustado": true,
+   "percentil": 0.778,
+   "fama": 0.228,
+   "pontos": 56,
+   "peso": 0.748
+  },
+  {
+   "resposta": "Púbis",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.85,
+   "ajustado": true,
+   "percentil": 0.556,
+   "fama": 0.24,
+   "pontos": 58,
+   "peso": 0.762
+  },
+  {
+   "resposta": "Cóccix",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.184,
+   "ajustado": true,
+   "percentil": 0.63,
+   "fama": 0.264,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Sacro",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.487,
+   "ajustado": true,
+   "percentil": 0.284,
+   "fama": 0.252,
+   "pontos": 60,
+   "peso": 0.775
+  },
+  {
+   "resposta": "Falange",
+   "apelidos": [
+    "falanges"
+   ],
+   "sem_dado": false,
+   "icf": 13.526,
+   "ajustado": true,
+   "percentil": 0.296,
+   "fama": 0.276,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Metacarpo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.541,
+   "ajustado": true,
+   "percentil": 0.728,
+   "fama": 0.288,
+   "pontos": 61,
+   "peso": 0.781
+  },
+  {
+   "resposta": "Carpo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.687,
+   "ajustado": true,
+   "percentil": 0.519,
+   "fama": 0.312,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Metatarso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.732,
+   "ajustado": true,
+   "percentil": 0.679,
+   "fama": 0.3,
+   "pontos": 62,
+   "peso": 0.787
+  },
+  {
+   "resposta": "Calcâneo",
+   "apelidos": [
+    "osso do calcanhar"
+   ],
+   "sem_dado": false,
+   "icf": 15.002,
+   "ajustado": true,
+   "percentil": 0.568,
+   "fama": 0.337,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Tarso",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.427,
+   "ajustado": true,
+   "percentil": 0.148,
+   "fama": 0.325,
+   "pontos": 63,
+   "peso": 0.794
+  },
+  {
+   "resposta": "Estribo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.996,
+   "ajustado": true,
+   "percentil": 0.395,
+   "fama": 0.361,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Tálus",
+   "apelidos": [
+    "astrágalo"
+   ],
+   "sem_dado": false,
+   "icf": 16.806,
+   "ajustado": true,
+   "percentil": 0.753,
+   "fama": 0.349,
+   "pontos": 64,
+   "peso": 0.8
+  },
+  {
+   "resposta": "Bigorna",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.416,
+   "ajustado": true,
+   "percentil": 0.42,
+   "fama": 0.385,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Martelo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.122,
+   "ajustado": true,
+   "percentil": 0.123,
+   "fama": 0.373,
+   "pontos": 65,
+   "peso": 0.806
+  },
+  {
+   "resposta": "Frontal",
+   "apelidos": [
+    "osso frontal"
+   ],
+   "sem_dado": false,
+   "icf": 11.173,
+   "ajustado": true,
+   "percentil": 0.037,
+   "fama": 0.397,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Parietal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.075,
+   "ajustado": true,
+   "percentil": 0.605,
+   "fama": 0.409,
+   "pontos": 66,
+   "peso": 0.812
+  },
+  {
+   "resposta": "Occipital",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.041,
+   "ajustado": true,
+   "percentil": 0.593,
+   "fama": 0.421,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Temporal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.48,
+   "ajustado": true,
+   "percentil": 0.086,
+   "fama": 0.433,
+   "pontos": 67,
+   "peso": 0.819
+  },
+  {
+   "resposta": "Esfenoide",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.373,
+   "ajustado": true,
+   "percentil": 0.951,
+   "fama": 0.446,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Etmoide",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.064,
+   "ajustado": true,
+   "percentil": 0.988,
+   "fama": 0.458,
+   "pontos": 68,
+   "peso": 0.825
+  },
+  {
+   "resposta": "Nasal",
+   "apelidos": [
+    "osso nasal"
+   ],
+   "sem_dado": false,
+   "icf": 12.644,
+   "ajustado": true,
+   "percentil": 0.185,
+   "fama": 0.482,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Zigomático",
+   "apelidos": [
+    "osso da bochecha",
+    "malar"
+   ],
+   "sem_dado": false,
+   "icf": 16.262,
+   "ajustado": true,
+   "percentil": 0.704,
+   "fama": 0.47,
+   "pontos": 69,
+   "peso": 0.831
+  },
+  {
+   "resposta": "Lacrimal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.036,
+   "ajustado": true,
+   "percentil": 0.58,
+   "fama": 0.494,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Vômer",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.155,
+   "ajustado": true,
+   "percentil": 0.926,
+   "fama": 0.506,
+   "pontos": 70,
+   "peso": 0.837
+  },
+  {
+   "resposta": "Concha nasal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.459,
+   "ajustado": true,
+   "percentil": 0.16,
+   "fama": 0.53,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Palatino",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.084,
+   "ajustado": true,
+   "percentil": 0.617,
+   "fama": 0.518,
+   "pontos": 71,
+   "peso": 0.843
+  },
+  {
+   "resposta": "Atlas",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.812,
+   "ajustado": true,
+   "percentil": 0.111,
+   "fama": 0.542,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Áxis",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.582,
+   "ajustado": true,
+   "percentil": 0.84,
+   "fama": 0.554,
+   "pontos": 72,
+   "peso": 0.849
+  },
+  {
+   "resposta": "Vértebra cervical",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.647,
+   "ajustado": true,
+   "percentil": 0.321,
+   "fama": 0.567,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Vértebra torácica",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.501,
+   "ajustado": true,
+   "percentil": 0.463,
+   "fama": 0.579,
+   "pontos": 73,
+   "peso": 0.854
+  },
+  {
+   "resposta": "Escafoide",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.029,
+   "ajustado": true,
+   "percentil": 0.901,
+   "fama": 0.603,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Vértebra lombar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.538,
+   "ajustado": true,
+   "percentil": 0.309,
+   "fama": 0.591,
+   "pontos": 74,
+   "peso": 0.86
+  },
+  {
+   "resposta": "Piramidal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.453,
+   "ajustado": true,
+   "percentil": 0.444,
+   "fama": 0.627,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Semilunar",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.186,
+   "ajustado": true,
+   "percentil": 0.815,
+   "fama": 0.615,
+   "pontos": 75,
+   "peso": 0.866
+  },
+  {
+   "resposta": "Pisiforme",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.144,
+   "ajustado": true,
+   "percentil": 0.914,
+   "fama": 0.639,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Trapézio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.816,
+   "ajustado": true,
+   "percentil": 0.37,
+   "fama": 0.651,
+   "pontos": 76,
+   "peso": 0.872
+  },
+  {
+   "resposta": "Capitato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.547,
+   "ajustado": true,
+   "percentil": 0.963,
+   "fama": 0.675,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Trapezoide",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.664,
+   "ajustado": true,
+   "percentil": 0.975,
+   "fama": 0.663,
+   "pontos": 77,
+   "peso": 0.877
+  },
+  {
+   "resposta": "Cuboide",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 18.28,
+   "ajustado": true,
+   "percentil": 0.938,
+   "fama": 0.7,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Hamato",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.652,
+   "ajustado": true,
+   "percentil": 0.852,
+   "fama": 0.688,
+   "pontos": 78,
+   "peso": 0.883
+  },
+  {
+   "resposta": "Cuneiforme",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 15.329,
+   "ajustado": true,
+   "percentil": 0.654,
+   "fama": 0.724,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Navicular",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.148,
+   "ajustado": true,
+   "percentil": 0.79,
+   "fama": 0.712,
+   "pontos": 79,
+   "peso": 0.889
+  },
+  {
+   "resposta": "Cuneiforme intermédio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.394,
+   "ajustado": true,
+   "percentil": 0.259,
+   "fama": 0.748,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Cuneiforme medial",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 14.504,
+   "ajustado": true,
+   "percentil": 0.481,
+   "fama": 0.736,
+   "pontos": 80,
+   "peso": 0.894
+  },
+  {
+   "resposta": "Cuneiforme lateral",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.797,
+   "ajustado": true,
+   "percentil": 0.21,
+   "fama": 0.76,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Sesamoide",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 19.339,
+   "ajustado": true,
+   "percentil": 1.0,
+   "fama": 0.772,
+   "pontos": 81,
+   "peso": 0.9
+  },
+  {
+   "resposta": "Acrômio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.389,
+   "ajustado": true,
+   "percentil": 0.716,
+   "fama": 0.796,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Osso ilíaco",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.875,
+   "ajustado": true,
+   "percentil": 0.383,
+   "fama": 0.784,
+   "pontos": 82,
+   "peso": 0.906
+  },
+  {
+   "resposta": "Maléolo",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 16.808,
+   "ajustado": true,
+   "percentil": 0.765,
+   "fama": 0.821,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Olécrano",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.571,
+   "ajustado": true,
+   "percentil": 0.827,
+   "fama": 0.808,
+   "pontos": 83,
+   "peso": 0.911
+  },
+  {
+   "resposta": "Osso wormiano",
+   "apelidos": [
+    "ossos suturais"
+   ],
+   "sem_dado": false,
+   "icf": 11.436,
+   "ajustado": true,
+   "percentil": 0.074,
+   "fama": 0.845,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Trocânter",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.169,
+   "ajustado": true,
+   "percentil": 0.802,
+   "fama": 0.833,
+   "pontos": 84,
+   "peso": 0.917
+  },
+  {
+   "resposta": "Manúbrio",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.758,
+   "ajustado": true,
+   "percentil": 0.864,
+   "fama": 0.869,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Processo xifoide",
+   "apelidos": [
+    "xifoide"
+   ],
+   "sem_dado": false,
+   "icf": 13.056,
+   "ajustado": true,
+   "percentil": 0.235,
+   "fama": 0.857,
+   "pontos": 85,
+   "peso": 0.922
+  },
+  {
+   "resposta": "Costela flutuante",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 12.505,
+   "ajustado": true,
+   "percentil": 0.173,
+   "fama": 0.881,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Primeira costela",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 10.191,
+   "ajustado": true,
+   "percentil": 0.025,
+   "fama": 0.893,
+   "pontos": 86,
+   "peso": 0.927
+  },
+  {
+   "resposta": "Falange distal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.75,
+   "ajustado": true,
+   "percentil": 0.333,
+   "fama": 0.905,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Falange proximal",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.799,
+   "ajustado": true,
+   "percentil": 0.358,
+   "fama": 0.917,
+   "pontos": 87,
+   "peso": 0.933
+  },
+  {
+   "resposta": "Falange média",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.244,
+   "ajustado": true,
+   "percentil": 0.062,
+   "fama": 0.929,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Osso do quadril",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 11.74,
+   "ajustado": true,
+   "percentil": 0.099,
+   "fama": 0.942,
+   "pontos": 88,
+   "peso": 0.938
+  },
+  {
+   "resposta": "Arco zigomático",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.419,
+   "ajustado": true,
+   "percentil": 0.272,
+   "fama": 0.966,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Calota craniana",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 13.005,
+   "ajustado": true,
+   "percentil": 0.222,
+   "fama": 0.954,
+   "pontos": 89,
+   "peso": 0.943
+  },
+  {
+   "resposta": "Mastoide",
+   "apelidos": [],
+   "sem_dado": false,
+   "icf": 17.909,
+   "ajustado": true,
+   "percentil": 0.877,
+   "fama": 0.978,
+   "pontos": 90,
+   "peso": 0.949
+  }
+ ],
+ "fonte_peso": "icf",
+ "supernova": "Hioide"
+}

@@ -76,8 +76,10 @@ pelas visitas em vez do ICF.
 - [x] Palavra numa caixinha que afunda junto e depois sobe para a superfície; roxa e rápida se for rara, clara e lenta se for óbvia.
 - [x] Autocorreção generosa contra respostas e apelidos, ignorando acentos, artigos e espaços. Sugere e preenche, sem enviar.
 - [x] Cronômetro de 25 s, cartão de resultado por resposta, mascote, sons 8-bit, diário de bordo no fim.
-- [ ] **Calendário de perguntas** (`dados/calendario.json`: data → perguntas), para garantir perguntas inéditas
-      e controlar a dificuldade, em vez do sorteio atual (que repete perguntas).
+- [x] Sorteio em baralho (`categoriasDoDia` em `jogo/jogo.js`): cada dia tira as 7 seguintes de um baralho com todas
+      as categorias, então nenhuma se repete até todas saírem. Na `ESTREIA` o baralho recomeça com as categorias
+      novas na frente; ao criar categorias, troque a data e a lista ali.
+- [ ] **Calendário de perguntas** (`dados/calendario.json`: data → perguntas), para controlar a dificuldade dia a dia.
 - [ ] Revisar a autocorreção com perguntas grandes: bloquear casamentos estranhos (o problema "sea donkey" do FAQ do Krillion).
 - [ ] Mais sprites e animação: explosão da supernova, foguete trocando de fase conforme a distância, mascote reagindo à faixa.
 - [ ] Comparação com os outros jogadores do dia (precisa de um servidor guardando os resultados).

@@ -93,6 +93,50 @@ function embaralhar(lista, sortear) {
   return copia;
 }
 
+// Gerador com boa mistura (mulberry32): sementes vizinhas dão sequências bem diferentes.
+function gerador(semente) {
+  let a = semente >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// As categorias do dia saem de um baralho com todas elas: cada dia tira as 7 seguintes
+// e, quando o baralho acaba, ele é embaralhado de novo. Assim nenhuma categoria se
+// repete antes de todas terem saído. (O sorteio antigo, um por dia, repetia muito:
+// datas seguidas davam quase o mesmo embaralhamento.)
+// Na ESTREIA o baralho recomeça com as categorias novas na frente, para os primeiros
+// dias depois dela trazerem só novidades. Ao criar categorias novas, troque a data e a lista.
+const ESTREIA = {
+  data: "2026-10-25",
+  novas: ["aves", "bebidas", "brincadeiras", "capitais-do-mundo", "coisas-amarelas", "coisas-da-praia", "coisas-que-voam", "coisas-redondas", "cores", "criaturas-do-folclore", "desenhos-animados", "deuses-e-deusas", "doces-e-sobremesas", "idiomas", "ilhas", "insetos", "jogadores-da-selecao", "jogos-de-videogame", "legumes-e-verduras", "material-escolar", "musicos-brasileiros", "novelas-brasileiras", "objetos-da-cozinha", "ossos-do-corpo", "pedras-preciosas", "peixes", "pokemon", "profissoes", "queijos", "rios", "ritmos-musicais", "super-herois-e-viloes", "temperos-e-especiarias", "turma-da-monica"],
+};
+
+function categoriasDoDia(indice, data) {
+  const ids = indice.map((c) => c.id).sort();
+  const porId = new Map(indice.map((c) => [c.id, c]));
+  const depois = data >= ESTREIA.data;
+  const dias = depois ? numeroDoDia(data) - numeroDoDia(ESTREIA.data) : numeroDoDia(data) - 1;
+  const semente = depois ? 104729 : 7;
+  const baralho = (ciclo) => {
+    const mistura = gerador(ciclo * 7919 + semente);
+    if (!depois || ciclo > 0) return embaralhar(ids, mistura);
+    const novas = ids.filter((id) => ESTREIA.novas.includes(id));
+    return [...embaralhar(novas, mistura), ...embaralhar(ids.filter((id) => !novas.includes(id)), mistura)];
+  };
+  const inicio = Math.max(0, dias) * RODADAS_POR_DIA;
+  const dia = [];
+  for (let k = inicio; dia.length < Math.min(RODADAS_POR_DIA, ids.length); k++) {
+    const id = baralho(Math.floor(k / ids.length))[k % ids.length];
+    if (!dia.includes(id)) dia.push(id); // na virada do baralho, pula a que já saiu hoje
+  }
+  return dia.map((id) => porId.get(id));
+}
+
 function hojeLocal() {
   const d = new Date();
   const p = (n) => String(n).padStart(2, "0");
@@ -209,7 +253,9 @@ function iniciar() {
     $("comecar").hidden = true;
     return;
   }
-  const escolhidas = embaralhar(dados.indice, ALEATORIO ? Math.random : geradorDoDia(estado.data)).slice(0, RODADAS_POR_DIA);
+  const escolhidas = ALEATORIO
+    ? embaralhar(dados.indice, Math.random).slice(0, RODADAS_POR_DIA)
+    : categoriasDoDia(dados.indice, estado.data);
   estado.categorias = escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
 
   // título com as letras soltas, para a onda
@@ -794,6 +840,36 @@ const CURIOSIDADE_SUPERNOVA = {
   "racas-de-cachorro": "Raça brasileira dos pampas gaúchos, criada para caçar veados.",
   "times-de-futebol": "O time pernambucano famoso por ser chamado de \"pior time do mundo\".",
   "elementos-quimicos": "O elemento mais pesado já criado: só uns poucos átomos existiram, por menos de um milissegundo.",
+  "aves": "Papagaio gordo da Nova Zelândia que não voa, é noturno e faz um \"bum\" grave para chamar a fêmea.",
+  "bebidas": "Bebida fermentada de milho ou de casca de abacaxi, das festas do Nordeste.",
+  "brincadeiras": "Brinquedo de uma bola furada presa por um cordão a um bastão: o desafio é encaixar a bola no bastão.",
+  "capitais-do-mundo": "A capital de Palau, uma das menores capitais do mundo, com poucas centenas de moradores.",
+  "coisas-amarelas": "Elemento químico em pó amarelo vivo que, quando queima, solta cheiro de ovo podre.",
+  "coisas-da-praia": "Bichinho que se enterra na areia molhada quando a onda volta, deixando só um furinho.",
+  "coisas-que-voam": "As sementes dessa plantinha voam com paraquedas e podem viajar quilômetros pelo vento.",
+  "coisas-redondas": "Pãozinho redondo, branco e fininho que é distribuído na missa.",
+  "cores": "O primeiro pigmento sintético moderno, descoberto por acaso em Berlim por volta de 1706.",
+  "criaturas-do-folclore": "Monstro do sertão nordestino que mora no fim do mundo: tem um olho só no meio da testa e pés redondos.",
+  "deuses-e-deusas": "Deusa inuíte do fundo do mar: as focas e as baleias nasceram dos dedos dela.",
+  "doces-e-sobremesas": "Doce português de amêndoa e gema que, apesar do nome, não leva toucinho nenhum.",
+  "idiomas": "A \"língua geral\" da Amazônia, criada a partir do tupi e ainda falada no Rio Negro.",
+  "ilhas": "A \"Ilha das Cobras\" do litoral paulista, tão cheia de jararacas que a visita é proibida.",
+  "insetos": "Inseto com uma \"cauda\" curvada que parece ferrão de escorpião, mas é totalmente inofensiva.",
+  "jogadores-da-selecao": "O primeiro grande craque do futebol brasileiro: fez o gol do título sul-americano de 1919.",
+  "jogos-de-videogame": "Jogo japonês em que você rola uma bola que vai grudando tudo pelo caminho, até ficar do tamanho de uma estrela.",
+  "legumes-e-verduras": "Folha de um cacto rica em proteína, chamada em Minas de \"carne de pobre\".",
+  "material-escolar": "Papel grosso que chupava o excesso de tinta das canetas-tinteiro, antes das esferográficas.",
+  "musicos-brasileiros": "O \"Nego Dito\" da Vanguarda Paulista, que fazia uma música que não cabia em gênero nenhum.",
+  "objetos-da-cozinha": "Fatiador de lâmina afiadíssima que corta legumes em fatias finíssimas como papel.",
+  "ossos-do-corpo": "O único osso do corpo que não se encaixa em nenhum outro: fica solto no pescoço, segurando a língua.",
+  "pedras-preciosas": "Pedra que muda de cor: é verde na luz do dia e fica vermelha na luz de lâmpada.",
+  "peixes": "Eleito o animal mais feio do mundo, mas só fica assim fora d'água: lá no fundo do mar tem cara de peixe normal.",
+  "profissoes": "Quem cuidava do farol, deixando a luz acesa a noite toda para guiar os navios.",
+  "queijos": "Queijo feito com leite de búfala na Ilha de Marajó, no Pará.",
+  "rios": "Rio africano que nunca chega ao mar: some num delta no meio do deserto do Kalahari.",
+  "ritmos-musicais": "Dança e ritmo de Mato Grosso, tocado com viola de cocho, ganzá e mocho.",
+  "super-herois-e-viloes": "Heroína da Marvel que, nos quadrinhos, já venceu o Thanos e o Doutor Destino com a ajuda de esquilos.",
+  "temperos-e-especiarias": "A \"baunilha da Amazônia\": semente perfumada que dá cheiro de baunilha a doces e sorvetes.",
 };
 
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
