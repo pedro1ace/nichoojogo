@@ -9,13 +9,15 @@ rodando de dentro do repositório, ele lê dados/categorias.
 
 O que ele faz, categoria por categoria:
   1. Confere cada resposta da lista: se tem artigo na Wikipédia em português e
-     quantas visitas o artigo teve nos últimos 60 dias (a fama).
+     quantas visitas o artigo teve nos últimos 60 dias (a fama: quanto menos visitas,
+     mais nichada). Nome ambíguo ("Mercúrio") é tentado de novo com uma dica da
+     categoria ("Mercúrio (planeta)").
   2. Procura respostas que faltam (Wikidata e categorias da Wikipédia) e mede
      a fama delas também.
 
-Grava tudo em nicho_wikipedia.json, na mesma pasta. Se cair a internet ou você
+Grava tudo em nicho_wikipedia2.json, na mesma pasta. Se cair a internet ou você
 fechar a janela, rode de novo: ele continua de onde parou.
-No fim, mande o nicho_wikipedia.json para o Claude no chat do projeto.
+No fim, mande o nicho_wikipedia2.json para o Claude no chat do projeto.
 
 Regras da Wikimedia respeitadas: User-Agent com contato, um pedido por vez,
 pausa entre pedidos e espera quando o servidor pede (erro 429 ou maxlag).
@@ -33,7 +35,7 @@ from pathlib import Path
 AGENTE = "NichoJogo/1.0 (https://github.com/pedro1ace/nichoojogo; jogo de palavras sem fins lucrativos)"
 PAUSA_API = 1.0      # segundos entre pedidos à Wikipédia
 PAUSA_SPARQL = 5.0   # segundos entre consultas ao Wikidata
-SAIDA = Path(__file__).resolve().parent / "nicho_wikipedia.json"
+SAIDA = Path(__file__).resolve().parent / "nicho_wikipedia2.json"
 # De onde vêm as listas atuais: embutidas no próprio arquivo (a versão mandada no chat),
 # a pasta dados/categorias do repositório (se o script rodar de dentro dele) ou o site.
 LOCAL = Path(__file__).resolve().parent.parent / "dados" / "categorias"
@@ -77,6 +79,68 @@ FONTES = {
     "coisas-com-dentes": [], "protecao-do-sol": [], "coisas-com-casca": [], "bagagem-do-astronauta": [],
     "coisas-que-brilham-no-ceu": [], "defesas-dos-animais": [], "elementos-quimicos": [], "constelacoes": [],
     "palavras-astro-e-cosmo": [],
+    # categorias de 25/10
+    "pokemon": [("sparql", "?item wdt:P31 wd:Q3966183 ."), ("categoria", "Pokémon", 2)],
+    "novelas-brasileiras": [("sparql", "?item wdt:P31 wd:Q23739 ; wdt:P495 wd:Q155 ."),
+                            ("categoria", "Telenovelas do Brasil", 2)],
+    "turma-da-monica": [("categoria", "Personagens da Turma da Mônica", 2)],
+    "desenhos-animados": [("sparql", "?item wdt:P31 wd:Q581714 ."), ("sparql", "?item wdt:P31 wd:Q63952888 ."),
+                          ("categoria", "Desenhos animados", 2)],
+    "super-herois-e-viloes": [("categoria", "Super-heróis da Marvel Comics", 1), ("categoria", "Super-heróis da DC Comics", 1),
+                              ("categoria", "Vilões da Marvel Comics", 1), ("categoria", "Vilões da DC Comics", 1),
+                              ("sparql", "?item wdt:P31 wd:Q188784 .")],
+    "jogos-de-videogame": [("sparql", "?item wdt:P31 wd:Q7889 .")],
+    "musicos-brasileiros": [("sparql", "?item wdt:P106 wd:Q177220 ; wdt:P27 wd:Q155 ."),
+                            ("sparql", "?item wdt:P31 wd:Q215380 ; wdt:P495 wd:Q155 ."),
+                            ("sparql", "?item wdt:P106 wd:Q639669 ; wdt:P27 wd:Q155 .")],
+    "jogadores-da-selecao": [("sparql", "?item wdt:P54 wd:Q83459 .")],
+    "criaturas-do-folclore": [("sparql", "?item wdt:P31/wdt:P279* wd:Q2239243 ."), ("categoria", "Folclore do Brasil", 2),
+                              ("categoria", "Criaturas lendárias", 2)],
+    "deuses-e-deusas": [("sparql", "?item wdt:P31/wdt:P279* wd:Q178885 .")],
+    "coisas-amarelas": [], "coisas-redondas": [], "coisas-que-voam": [], "coisas-da-praia": [],
+    "objetos-da-cozinha": [("categoria", "Utensílios de cozinha", 2), ("categoria", "Eletrodomésticos", 2)],
+    "material-escolar": [("categoria", "Material escolar", 2), ("categoria", "Material de escritório", 2)],
+    "doces-e-sobremesas": [("categoria", "Doces do Brasil", 2), ("categoria", "Sobremesas", 2), ("categoria", "Doces", 2),
+                           ("categoria", "Bolos", 2)],
+    "bebidas": [("categoria", "Bebidas alcoólicas", 2), ("categoria", "Coquetéis", 1), ("categoria", "Refrigerantes", 1),
+                ("categoria", "Bebidas não alcoólicas", 2), ("categoria", "Chás", 1)],
+    "queijos": [("sparql", "?item (wdt:P31|wdt:P279)/wdt:P279* wd:Q10943 ."), ("categoria", "Queijos", 2)],
+    "temperos-e-especiarias": [("categoria", "Especiarias", 2), ("categoria", "Ervas aromáticas", 2),
+                               ("categoria", "Condimentos", 2)],
+    "legumes-e-verduras": [("categoria", "Hortaliças", 2), ("categoria", "Legumes", 2), ("categoria", "Verduras", 2)],
+    "capitais-do-mundo": [("sparql", "VALUES ?t { wd:Q1637706 wd:Q5119 } ?item wdt:P31 ?t . "
+                                     "FILTER NOT EXISTS { ?item wdt:P17 wd:Q155 }")],
+    "rios": [("sparql", "?item wdt:P31 wd:Q4022 .")],
+    "ilhas": [("sparql", "?item wdt:P31 wd:Q23442 .")],
+    "ossos-do-corpo": [("sparql", "?item (wdt:P31|wdt:P279)/wdt:P279* wd:Q265868 ."), ("categoria", "Ossos", 2)],
+    "insetos": [("categoria", "Insetos do Brasil", 2), ("categoria", "Insetos", 1)],
+    "peixes": [("categoria", "Peixes do Brasil", 2), ("categoria", "Peixes", 1)],
+    "aves": [("categoria", "Aves do Brasil", 2)],
+    "pedras-preciosas": [("sparql", "?item wdt:P31 wd:Q12089225 ."), ("sparql", "?item wdt:P31/wdt:P279* wd:Q83437 ."),
+                         ("categoria", "Rochas", 2)],
+    "idiomas": [("sparql", "?item wdt:P31 wd:Q34770 ."), ("sparql", "?item wdt:P31 wd:Q1288568 .")],
+    "cores": [("categoria", "Cores", 2)],
+    "ritmos-musicais": [("sparql", "?item wdt:P31 wd:Q188451 ."), ("categoria", "Gêneros musicais do Brasil", 2)],
+    "brincadeiras": [("categoria", "Brincadeiras", 2), ("categoria", "Jogos de tabuleiro", 1),
+                     ("categoria", "Jogos de cartas", 1), ("categoria", "Jogos infantis", 2)],
+    "profissoes": [("sparql", "?item wdt:P31 wd:Q28640 ."), ("sparql", "?item wdt:P31 wd:Q12737077 .")],
+}
+
+# Respostas com nome ambíguo ("Mercúrio", "Coral", "Fênix"): se o título cair numa página
+# de desambiguação ou não existir, tenta de novo com estes complementos.
+DICAS = {
+    "pokemon": ["(Pokémon)"], "cores": ["(cor)"], "deuses-e-deusas": ["(mitologia)", "(deus)", "(deusa)", "(orixá)"],
+    "criaturas-do-folclore": ["(folclore)", "(mitologia)", "(lenda)"], "turma-da-monica": ["(Turma da Mônica)"],
+    "super-herois-e-viloes": ["(Marvel Comics)", "(DC Comics)", "(personagem)"],
+    "jogos-de-videogame": ["(jogo eletrônico)", "(série)"], "desenhos-animados": ["(desenho animado)", "(série animada)", "(filme)"],
+    "novelas-brasileiras": ["(telenovela)"], "musicos-brasileiros": ["(cantor)", "(cantora)", "(banda)", "(músico)"],
+    "jogadores-da-selecao": ["(futebolista)"], "rios": ["(rio)"], "ilhas": ["(ilha)"], "aves": ["(ave)"],
+    "peixes": ["(peixe)"], "insetos": ["(inseto)"], "ritmos-musicais": ["(gênero musical)", "(música)", "(dança)"],
+    "idiomas": ["(língua)"], "pedras-preciosas": ["(mineral)", "(gema)"], "queijos": ["(queijo)"],
+    "doces-e-sobremesas": ["(doce)", "(sobremesa)"], "bebidas": ["(bebida)"], "frutas": ["(fruta)"],
+    "times-de-futebol": ["(futebol)"], "dinossauros": ["(dinossauro)"], "racas-de-cachorro": ["(cão)"],
+    "corpos-do-sistema-solar": ["(planeta)", "(satélite)", "(asteroide)", "(cometa)"], "estrelas": ["(estrela)"],
+    "constelacoes": ["(constelação)"], "elementos-quimicos": ["(elemento químico)"],
 }
 
 
@@ -229,6 +293,16 @@ def processar(cat: str, fontes: list) -> dict:
         for it in faltou:
             if extra[it[1]]["titulo"]:
                 medidas[it[0]] = {**extra[it[1]], "pelo_apelido": it[1]}
+    # nome ambíguo ou sem artigo: tenta "Nome (dica)"
+    for dica in DICAS.get(cat, []):
+        duvida = [n for n in nomes if not medidas[n]["titulo"] or medidas[n]["desambiguacao"]]
+        if not duvida:
+            break
+        extra = visitas([f"{n} {dica}" for n in duvida])
+        for n in duvida:
+            m = extra[f"{n} {dica}"]
+            if m["titulo"] and not m["desambiguacao"]:
+                medidas[n] = {**m, "pela_dica": dica}
     # 2. procura as que faltam
     candidatas: dict[str, dict] = {}
     for fonte in fontes:
