@@ -301,7 +301,7 @@ function iniciar() {
 const DESCIDA_INICIAL = 1400;
 
 // Quanto você viajou hoje. A câmera fica em AL_INICIAL + isso (ver cena.js).
-// Em anos-luz de verdade (1 ponto = 100 AL).
+// Em anos-luz de verdade (1 ponto = 62 AL, ver cena.js).
 const anosLuzDoDia = () => Math.round(profundidade() * AL_POR_U);
 // O marco mais fundo que você já passou (para o relatório).
 function ultimoMarco() {
