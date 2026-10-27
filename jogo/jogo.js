@@ -602,7 +602,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   $("nome-faixa").textContent = faixa.nome;
   $("palavra").textContent = resposta ? `“${resposta}”` : "";
   $("linha-pontos").innerHTML = resposta
-    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(pontos * AL_POR_PONTO)} AL`
+    ? `<b>+${pontos} PONTOS</b> · viajou ${numero(Math.round(viagem(pontos) * AL_POR_U))} AL`
     : "+0 PONTOS";
   $("frase").textContent = faixa.frase;
 
@@ -788,9 +788,11 @@ function montarRespostas() {
     const alternar = (e) => {
       if (e.target.closest(".banco")) return;
       const abrir = !li.classList.contains("aberta");
+      // só uma aberta por vez: abrir outra fecha a anterior
+      if (abrir) lista.querySelectorAll(":scope > li.aberta").forEach(fecharBanco);
       li.classList.toggle("aberta", abrir);
       li.setAttribute("aria-expanded", String(abrir));
-      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta));
+      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta, () => { fecharBanco(li); li.focus(); }));
     };
     li.addEventListener("click", alternar);
     li.addEventListener("keydown", (e) => {
@@ -799,6 +801,19 @@ function montarRespostas() {
     lista.append(li);
   });
 }
+function fecharBanco(li) {
+  li.classList.remove("aberta");
+  li.setAttribute("aria-expanded", "false");
+}
+// Clicar fora da lista ou apertar Esc fecha a aba de respostas aberta.
+document.addEventListener("click", (e) => {
+  if (!e.target.closest("#respostas-dia")) document.querySelectorAll("#respostas-dia > li.aberta").forEach(fecharBanco);
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  const aberta = document.querySelector("#respostas-dia > li.aberta");
+  if (aberta) { fecharBanco(aberta); aberta.focus(); }
+});
 
 // Uma curiosidade para cada resposta escondida (supernova).
 const CURIOSIDADE_SUPERNOVA = {
@@ -873,9 +888,15 @@ const CURIOSIDADE_SUPERNOVA = {
 };
 
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
-function montarBanco(cat, sua) {
+function montarBanco(cat, sua, fechar) {
   const banco = document.createElement("div");
   banco.className = "banco";
+  const botaoFechar = document.createElement("button");
+  botaoFechar.type = "button";
+  botaoFechar.className = "fechar-banco";
+  botaoFechar.textContent = "✕ fechar";
+  botaoFechar.setAttribute("aria-label", "Fechar a lista de respostas");
+  botaoFechar.addEventListener("click", () => fechar());
   const itens = cat.respostas
     .map((r) => {
       const sn = r.resposta === cat.supernova;
@@ -939,7 +960,7 @@ function montarBanco(cat, sua) {
     rodape.textContent = `${vis.length} de ${itens.length} respostas`;
   }
   desenhar();
-  banco.append(chips, campo, lista, rodape);
+  banco.append(botaoFechar, chips, campo, lista, rodape);
   return banco;
 }
 
