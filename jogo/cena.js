@@ -11,6 +11,12 @@
 // ver pontosDeQueda), então só uns 520 pontos (quase tudo raro) chegam aos 26.000 AL do centro da galáxia.
 // O começo da viagem (u de 0 a AL_INICIAL) é a saída do Sistema Solar, na descida inicial.
 
+// A tela (canvas) só usa uma fonte já carregada: pede as duas da caixinha da resposta logo no início,
+// senão as primeiras letras acentuadas (Ô, Ã, Ç...) sairiam na fonte reserva.
+if (document.fonts && document.fonts.load) {
+  for (const f of ["20px 'Nicho Pixel'", "20px 'Press Start 2P'"]) document.fonts.load(f, "AÔÇ").catch(() => {});
+}
+
 const AL_POR_PONTO = 50; // anos-luz de verdade por ponto
 const U_POR_PONTO = 32; // unidades da cena por ponto: 16 px de queda por ponto
 const AL_POR_U = AL_POR_PONTO / U_POR_PONTO;
@@ -1611,7 +1617,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const texto = c.texto;
       const pequena = W < 560;
       const p = escala; // um pixel da cena: a borda segue a mesma grade do cenário
-      tx.font = `${pequena ? 14 : 20}px 'Press Start 2P', monospace`;
+      tx.font = `${pequena ? 14 : 20}px 'Nicho Pixel', 'Press Start 2P', monospace`;
       const w = Math.ceil((Math.ceil(tx.measureText(texto).width) + (pequena ? 36 : 56)) / p) * p;
       if (!c.saida) larguraCaixa = w;
       const h = (pequena ? 12 : 14) * p;

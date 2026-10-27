@@ -37,6 +37,8 @@ def main() -> None:
     nomes = re.findall(r'<script src="([^"]+)"></script>', html)
     scripts = {n: dados_js if n == "dados.js" else (JOGO / n).read_text(encoding="utf-8") for n in nomes}
     html = html.replace('<link rel="stylesheet" href="estilo.css">', "<style>\n" + css + "</style>")
+    acentos = (JOGO / "fonte-acentos.css").read_text(encoding="utf-8")
+    html = html.replace('<link rel="stylesheet" href="fonte-acentos.css">', "<style>\n" + acentos + "</style>")
     for nome, codigo in scripts.items():
         marca = f'<script src="{nome}"></script>'
         assert marca in html, f"faltou {marca} em jogo/index.html"
