@@ -84,22 +84,21 @@ function faixaDe(pontos, supernova) {
   return FAIXAS.find((f) => pontos >= f.min);
 }
 
-// Pontos típicos de cada faixa (a régua de scripts/pontuar.py), para quando a pergunta não tem respostas dela.
-const PONTOS_TIPICOS = { obvia: 12, comum: 26, incomum: 46, rara: 75, supernova: 100 };
-// Onde cada raridade faria você parar nesta pergunta: a mediana dos pontos das respostas
-// daquela faixa (a singularidade vale o dobro). Da mais rasa para a mais funda.
+// Pontos de cada faixa na régua de scripts/pontuar.py, para quando a pergunta não tem respostas dela.
+const PONTOS_DA_REGUA = { obvia: [8, 15], comum: [18, 34], incomum: [35, 58], rara: [60, 90], supernova: [100, 100] };
+// Onde começa cada raridade nesta pergunta: a linha fica na queda da resposta de MENOS pontos
+// daquela faixa. Assim toda resposta passa a linha da sua raridade e para antes da linha da
+// próxima. O rótulo diz quantos pontos a faixa dá (a singularidade vale o dobro).
 function alvosDaPergunta(cat) {
   const respostas = (cat && cat.respostas) || [];
   const secreta = cat && respostas.find((r) => r.resposta === cat.supernova);
   const alvos = [...FAIXAS].reverse().map((f) => {
-    const pts = respostas
-      .filter((r) => r !== secreta && faixaDe(r.pontos, false) === f)
-      .map((r) => r.pontos)
-      .sort((a, b) => a - b);
-    const pontos = pts.length ? pts[Math.floor((pts.length - 1) / 2)] : PONTOS_TIPICOS[f.id];
-    return { faixa: f, pontos };
+    const pts = respostas.filter((r) => r !== secreta && faixaDe(r.pontos, false) === f).map((r) => r.pontos);
+    const [de, ate] = pts.length ? [Math.min(...pts), Math.max(...pts)] : PONTOS_DA_REGUA[f.id];
+    return { faixa: f, pontos: de, rotulo: `${f.nome} · ${de === ate ? `+${de}` : `${de} a ${ate}`} pts` };
   });
-  alvos.push({ faixa: SUPERNOVA, pontos: secreta ? secreta.pontos * 2 : PONTOS_TIPICOS.supernova });
+  const sn = secreta ? secreta.pontos * 2 : PONTOS_DA_REGUA.supernova[0];
+  alvos.push({ faixa: SUPERNOVA, pontos: sn, rotulo: `${SUPERNOVA.nome} · +${sn} pts` });
   return alvos.map((a) => ({ ...a, distancia: viagem(a.pontos) }));
 }
 
@@ -1185,6 +1184,36 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.restore();
   }
 
+  // Apagão das quedas raras: por um instante tudo escurece em volta e só um círculo de luz
+  // acompanha a caixa que afunda; depois de chegar, o cenário volta a clarear.
+  let apagao = null; // { inicio, dura, forca }
+  function desenharApagao(agora) {
+    if (!apagao) return;
+    const t = agora - apagao.inicio;
+    const sobe = Math.min(1, t / 350);
+    const desce = 1 - Math.min(1, Math.max(0, t - apagao.dura - 250) / 900);
+    const k = apagao.forca * suave(sobe) * suave(desce);
+    if (desce <= 0) { apagao = null; return; }
+    if (k <= 0.01) return;
+    const W = innerWidth, H = innerHeight;
+    const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
+    const r = Math.max(110, larguraCaixa * 0.72);
+    const g = tx.createRadialGradient(cx, cy, r * 0.8, cx, cy, r * 1.6);
+    g.addColorStop(0, "rgba(0, 0, 6, 0)");
+    g.addColorStop(1, `rgba(0, 0, 6, ${k})`);
+    tx.fillStyle = g;
+    tx.fillRect(0, 0, W, H);
+    // a borda do círculo de luz, bem fraquinha
+    tx.save();
+    tx.globalAlpha = 0.18 * k;
+    tx.strokeStyle = apagao.cor;
+    tx.lineWidth = 2;
+    tx.beginPath();
+    tx.arc(cx, cy, r * 0.95, 0, Math.PI * 2);
+    tx.stroke();
+    tx.restore();
+  }
+
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
   const tardigrado = criarTardigrado();
   const naves = criarNaves();
@@ -1257,6 +1286,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // ---------- camada de texto (alta resolução) ----------
+
+  // o rótulo de cada raridade fica logo abaixo da sua linha, dentro da faixa que ela começa
+  const ROTULO_DY = 14;
 
   function linhaTracejada(y, x0, x1, cor, alfa) {
     tx.globalAlpha = alfa;
@@ -1359,7 +1391,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       if (cobertas.some(([a, b]) => yc > a && yc < b)) return;
       const y = naTelaTexto(al);
       if (y < -30 || y > H + 30) return;
-      if (linhasY.some((ly) => Math.abs(ly - 10 - y) < 22)) return;
+      if (linhasY.some((ly) => Math.abs(ly + ROTULO_DY - y) < 22)) return;
       // texto comprido quebra em duas linhas para caber na tela
       let linhas = [texto];
       if (tx.measureText(texto).width > W * 0.55) {
@@ -1398,7 +1430,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       // As que ficam abaixo da tela (ou com o rótulo escondido atrás de um painel, como o campo
       // da resposta) viram uma lista presa embaixo, da mais rasa para a mais funda.
       const estreita = W < 560;
-      const escondida = (y) => y > H - 40 || cobertas.some(([c0, c1]) => y - 10 > c0 && y - 10 < c1);
+      const escondida = (y) => y > H - 40 || cobertas.some(([c0, c1]) => y + ROTULO_DY > c0 && y + ROTULO_DY < c1);
       const yDe = (a) => naTelaTexto(rodadaAl + a.distancia);
       let naLista = alvos.filter((a) => !acesas[a.faixa.id] && escondida(yDe(a)));
       // a lista fica no pé da tela; se um painel está ali, vai logo abaixo dele (ou acima, se não couber)
@@ -1412,7 +1444,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         }
       };
       // rótulo que cairia em cima da lista também entra nela (repete até nenhum encostar)
-      const emCimaDaLista = (y) => naLista.length && y - 10 > base - altura - 22 && y - 10 < base + 20;
+      const emCimaDaLista = (y) => naLista.length && y + ROTULO_DY > base - altura - 22 && y + ROTULO_DY < base + 20;
       for (let mudou = true; mudou; ) {
         montarLista();
         const juntar = alvos.filter((a) => !acesas[a.faixa.id] && !naLista.includes(a) && emCimaDaLista(yDe(a)));
@@ -1421,14 +1453,13 @@ function criarCena(telaPixel, telaTexto, raiz) {
       }
       // textos da lista, e onde ela começa à esquerda: linhas que passam por ela param antes
       const xLista = estreita ? W - 16 : W - 34;
-      const textoDaLista = (a) => `▼ ${a.faixa.nome} · +${a.pontos} pts` +
+      const textoDaLista = (a) => `▼ ${a.rotulo}` +
         (estreita ? "" : ` · ${Math.round(a.distancia * AL_POR_U).toLocaleString("pt-BR")} AL abaixo`);
       tx.font = "bold 14px 'Space Mono', monospace";
       const inicioLista = xLista - Math.max(0, ...naLista.map((a) => tx.measureText(textoDaLista(a)).width)) - 10;
       const fimDaLinha = (y) => (naLista.length && y > base - altura - 14 && y < base + 12 ? Math.min(centro1, inicioLista) : centro1);
-      for (const { faixa: f, pontos, distancia } of alvos) {
+      for (const { faixa: f, rotulo, distancia } of alvos) {
         const y = naTelaTexto(rodadaAl + distancia);
-        const rotulo = `${f.nome} · +${pontos} pts`;
         const i = naLista.findIndex((a) => a.faixa === f);
         if (i >= 0) {
           // a linha continua visível; só o rótulo vai para a lista
@@ -1457,10 +1488,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
           linhaTracejada(y, centro0, fimDaLinha(y), f.cor, 0.75);
           tx.font = "bold 15px 'Space Mono', monospace";
         }
-        if (!emCimaDaLista(y)) escrever(rotulo, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
+        if (!emCimaDaLista(y)) escrever(rotulo, centro1, y + ROTULO_DY, f.cor, "rgba(0, 0, 16, 0.85)");
       }
     }
 
+    desenharApagao(agora);
     desenharRastro();
     desenharCaixas(agora);
     desenharEstouros();
@@ -1873,6 +1905,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.dura = duracaoQueda(pontos, supernova);
       camera.peso = pesoQueda(pontos, supernova);
       if (supernova) dobra = 1;
+      // raro, espaço profundo e singularidade: o cenário apaga um instante em volta da caixa
+      if (supernova || pontos >= 35) {
+        apagao = { inicio: agora, dura: camera.dura, forca: supernova ? 0.94 : pontos >= 60 ? 0.88 : 0.78, cor: faixa.cor };
+      }
       // a caixa anterior some (não ficam umas por cima das outras)
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       caixas.push({
