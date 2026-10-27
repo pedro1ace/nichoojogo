@@ -1198,20 +1198,15 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const W = innerWidth, H = innerHeight;
     const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
     const r = Math.max(110, larguraCaixa * 0.72);
-    const g = tx.createRadialGradient(cx, cy, r * 0.8, cx, cy, r * 1.6);
+    // luz difusa em volta da caixa, sem borda: clareia no meio e vai escurecendo aos poucos
+    const g = tx.createRadialGradient(cx, cy, r * 0.25, cx, cy, r * 2.6);
     g.addColorStop(0, "rgba(0, 0, 6, 0)");
+    g.addColorStop(0.25, `rgba(0, 0, 6, ${k * 0.12})`);
+    g.addColorStop(0.5, `rgba(0, 0, 6, ${k * 0.45})`);
+    g.addColorStop(0.75, `rgba(0, 0, 6, ${k * 0.8})`);
     g.addColorStop(1, `rgba(0, 0, 6, ${k})`);
     tx.fillStyle = g;
     tx.fillRect(0, 0, W, H);
-    // a borda do círculo de luz, bem fraquinha
-    tx.save();
-    tx.globalAlpha = 0.18 * k;
-    tx.strokeStyle = apagao.cor;
-    tx.lineWidth = 2;
-    tx.beginPath();
-    tx.arc(cx, cy, r * 0.95, 0, Math.PI * 2);
-    tx.stroke();
-    tx.restore();
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
@@ -1544,49 +1539,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
         tx.font = "bold 14px 'Space Mono', monospace";
         escrever("◂ VOCÊ ESTÁ AQUI", centro1, yAqui - 10, "#ffffff", "rgba(0, 0, 16, 0.85)");
       }
-      // As que ficam abaixo da tela (ou com o rótulo escondido atrás de um painel, como o campo
-      // da resposta) viram uma lista presa embaixo, da mais rasa para a mais funda.
-      const estreita = W < 560;
-      const escondida = (y) => y > H - 40 || cobertas.some(([c0, c1]) => y + ROTULO_DY > c0 && y + ROTULO_DY < c1);
-      const yDe = (a) => naTelaTexto(rodadaAl + a.distancia);
-      let naLista = alvos.filter((a) => !acesas[a.faixa.id] && escondida(yDe(a)));
-      // a lista fica no pé da tela; se um painel está ali, vai logo abaixo dele (ou acima, se não couber)
-      let base, altura;
-      const montarLista = () => {
-        base = H - 22;
-        altura = (naLista.length - 1) * 20;
-        for (const [c0, c1] of cobertas) {
-          if (base + 10 < c0 || base - altura - 12 > c1) continue;
-          base = c1 + 14 + altura <= H - 10 ? c1 + 14 + altura : c0 - 12;
-        }
-      };
-      // rótulo que cairia em cima da lista também entra nela (repete até nenhum encostar)
-      const emCimaDaLista = (y) => naLista.length && y + ROTULO_DY > base - altura - 22 && y + ROTULO_DY < base + 20;
-      for (let mudou = true; mudou; ) {
-        montarLista();
-        const juntar = alvos.filter((a) => !acesas[a.faixa.id] && !naLista.includes(a) && emCimaDaLista(yDe(a)));
-        mudou = juntar.length > 0;
-        if (mudou) naLista = alvos.filter((a) => naLista.includes(a) || juntar.includes(a));
-      }
-      // textos da lista, e onde ela começa à esquerda: linhas que passam por ela param antes
-      const xLista = estreita ? W - 16 : W - 34;
-      const textoDaLista = (a) => `▼ ${a.rotulo}` +
-        (estreita ? "" : ` · ${Math.round(a.distancia * AL_POR_U).toLocaleString("pt-BR")} AL abaixo`);
-      tx.font = "bold 14px 'Space Mono', monospace";
-      const inicioLista = xLista - Math.max(0, ...naLista.map((a) => tx.measureText(textoDaLista(a)).width)) - 10;
-      const fimDaLinha = (y) => (naLista.length && y > base - altura - 14 && y < base + 12 ? Math.min(centro1, inicioLista) : centro1);
+      // rótulo atrás de um painel (pergunta, campo da resposta) não aparece; a linha continua
+      const coberto = (y) => cobertas.some(([c0, c1]) => y + ROTULO_DY > c0 && y + ROTULO_DY < c1);
       for (const { faixa: f, rotulo, distancia } of alvos) {
         const y = naTelaTexto(rodadaAl + distancia);
-        const i = naLista.findIndex((a) => a.faixa === f);
-        if (i >= 0) {
-          // a linha continua visível; só o rótulo vai para a lista
-          if (y < H + 20) linhaTracejada(y, centro0, fimDaLinha(y), f.cor, 0.75);
-          tx.globalAlpha = 0.9;
-          tx.font = "bold 14px 'Space Mono', monospace";
-          escrever(textoDaLista(naLista[i]), xLista, base - (naLista.length - 1 - i) * 20, f.cor, "rgba(0, 0, 16, 0.85)");
-          tx.globalAlpha = 1;
-          continue;
-        }
         if (y < -20 || y > H + 20) continue;
         const acesa = acesas[f.id];
         if (acesa) {
@@ -1598,14 +1554,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
           tx.shadowBlur = 8 + 18 * pulso;
           tx.globalAlpha = 0.9;
           tx.fillStyle = f.cor;
-          for (let x = centro0; x < fimDaLinha(y); x += 8) tx.fillRect(x, Math.round(y) - 0.5, 6, 2 + pulso * 2);
+          for (let x = centro0; x < centro1; x += 8) tx.fillRect(x, Math.round(y) - 0.5, 6, 2 + pulso * 2);
           tx.restore();
           tx.font = `${14 + Math.round(pulso * 4)}px 'Space Mono', monospace`;
         } else {
-          linhaTracejada(y, centro0, fimDaLinha(y), f.cor, 0.75);
+          linhaTracejada(y, centro0, centro1, f.cor, 0.75);
           tx.font = "bold 15px 'Space Mono', monospace";
         }
-        if (!emCimaDaLista(y)) escrever(rotulo, centro1, y + ROTULO_DY, f.cor, "rgba(0, 0, 16, 0.85)");
+        if (!coberto(y)) escrever(rotulo, centro1, y + ROTULO_DY, f.cor, "rgba(0, 0, 16, 0.85)");
       }
     }
 
