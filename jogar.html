@@ -2483,20 +2483,15 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const W = innerWidth, H = innerHeight;
     const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
     const r = Math.max(110, larguraCaixa * 0.72);
-    const g = tx.createRadialGradient(cx, cy, r * 0.8, cx, cy, r * 1.6);
+    // luz difusa em volta da caixa, sem borda: clareia no meio e vai escurecendo aos poucos
+    const g = tx.createRadialGradient(cx, cy, r * 0.25, cx, cy, r * 2.6);
     g.addColorStop(0, "rgba(0, 0, 6, 0)");
+    g.addColorStop(0.25, `rgba(0, 0, 6, ${k * 0.12})`);
+    g.addColorStop(0.5, `rgba(0, 0, 6, ${k * 0.45})`);
+    g.addColorStop(0.75, `rgba(0, 0, 6, ${k * 0.8})`);
     g.addColorStop(1, `rgba(0, 0, 6, ${k})`);
     tx.fillStyle = g;
     tx.fillRect(0, 0, W, H);
-    // a borda do círculo de luz, bem fraquinha
-    tx.save();
-    tx.globalAlpha = 0.18 * k;
-    tx.strokeStyle = apagao.cor;
-    tx.lineWidth = 2;
-    tx.beginPath();
-    tx.arc(cx, cy, r * 0.95, 0, Math.PI * 2);
-    tx.stroke();
-    tx.restore();
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
