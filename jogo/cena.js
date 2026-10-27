@@ -1567,14 +1567,20 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // Balanço lateral durante a queda (tq de 0 a 1; 1 = 46 px para a direita).
-  // Óbvia: vai devagarinho para a esquerda, depois para a direita, e para no meio.
-  // Letrado: direita, esquerda, direita… cada vez menor, como pêndulo, até parar.
+  // Óbvia: vai devagarinho para a esquerda, depois para a direita, e chega reta no meio.
+  // Letrado: direita, esquerda, direita, esquerda, num ritmo calmo e constante,
+  // cada vez menor, até parar. Os dois começam e terminam parados (sem tranco).
   // As outras faixas usam o balanço padrão (ou descem retas).
   const suave = (x) => 0.5 - Math.cos(Math.PI * x) / 2;
   const BALANCO = {
-    obvia: (tq) => -Math.sin(2 * Math.PI * suave(tq)) * 0.85,
-    comum: (tq) => Math.sin(2 * Math.PI * 2.5 * (1 - (1 - tq) * (1 - tq))) * Math.exp(-2 * tq) * 0.8,
+    obvia: (tq) => -Math.sin(2 * Math.PI * suave(tq)) * 0.6,
+    comum: (tq) => Math.sin(4 * Math.PI * suave(tq)) * (1 - 0.6 * tq) * 0.6,
   };
+  // inclinação acompanhando o balanço, que some no começo e no fim da queda (chega reta)
+  function inclinacaoBalanco(jeito, tq) {
+    const derivada = (jeito(Math.min(1, tq + 0.01)) - jeito(Math.max(0, tq - 0.01))) / 0.02;
+    return Math.max(-0.12, Math.min(0.12, derivada * 0.012)) * Math.sin(Math.PI * tq);
+  }
 
   function desenharCaixas(agora) {
     const W = innerWidth;
@@ -1632,7 +1638,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3 + c.inicio) * 0.035 + Math.sin(tempo * 0.5) * 0.015;
       // inclina para o lado em que está deslizando
       const inclinaQueda = !caindo ? 0
-        : jeito ? Math.max(-0.2, Math.min(0.2, (jeito(Math.min(1, tq + 0.01)) - jeito(Math.max(0, tq - 0.01))) / 0.02 * 0.025))
+        : jeito ? inclinacaoBalanco(jeito, tq)
         : Math.cos(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza * 0.16;
       tx.rotate(c.angulo * Math.exp(-t / 600) + balanco + inclinaQueda);
       const esc = Math.max(0.05, mola + pop) * (1 - sumindo * 0.1);
