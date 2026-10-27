@@ -353,7 +353,7 @@ function comecar() {
 
 function iniciarRodada() {
   const cat = estado.categorias[estado.rodada];
-  cena.novaRodada();
+  cena.novaRodada(cat);
   montarQuadrados();
   $("rotulo-pergunta").textContent = `INCURSÃO ${estado.rodada + 1} DE ${estado.categorias.length}`;
   $("pergunta").textContent = cat.pergunta || cat.titulo;
