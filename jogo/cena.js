@@ -7,16 +7,24 @@
 //     brilho e vinheta), para o texto ficar nítido.
 //
 // Unidades: a cena anda em "u" (unidade interna, PX_POR_AL pixels cada). O jogador vê
-// anos-luz de verdade: 1 ponto = 50 AL, então só 520 pontos (quase tudo raro) chegam aos 26.000 AL do centro da galáxia.
+// anos-luz de verdade: a partir de 35 pontos, 1 ponto = 50 AL (abaixo disso a queda é encurtada,
+// ver pontosDeQueda), então só uns 520 pontos (quase tudo raro) chegam aos 26.000 AL do centro da galáxia.
 // O começo da viagem (u de 0 a AL_INICIAL) é a saída do Sistema Solar, na descida inicial.
 
 const AL_POR_PONTO = 50; // anos-luz de verdade por ponto
 const U_POR_PONTO = 32; // unidades da cena por ponto: 16 px de queda por ponto
 const AL_POR_U = AL_POR_PONTO / U_POR_PONTO;
-// Quanto cada resposta faz viajar, em unidades da cena (proporcional aos pontos:
-// óbvia 8 a 15 pts = 128 a 240 px; rara 60 a 90 = 960 a 1.440 px; supernova 100 = 1.600 px).
+// Quanto cada resposta faz viajar, em unidades da cena. A partir de RARO (35 pts) é
+// proporcional aos pontos (rara 60 a 90 = 960 a 1.440 px; supernova 100 = 1.600 px).
+// Abaixo disso a queda é encurtada, para óbvia e letrado não parecerem cair demais:
+// óbvia 10 pts desce ~5 pts de distância, letrado 18 ~13, 30 ~28, e em 35 emenda na reta.
+const PONTOS_RETA = 35;
+function pontosDeQueda(pontos) {
+  if (pontos <= 0) return 0;
+  return pontos >= PONTOS_RETA ? pontos : PONTOS_RETA * Math.pow(pontos / PONTOS_RETA, 1.5);
+}
 function viagem(pontos) {
-  return pontos > 0 ? pontos * U_POR_PONTO : 0;
+  return pontosDeQueda(pontos) * U_POR_PONTO;
 }
 // A viagem começa logo abaixo da Terra: ao iniciar, o tardígrado só se ajeita um pouquinho
 // (quem faz descer são as respostas). Distância e réguas contam a partir daqui (o "0").
@@ -1365,7 +1373,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
           abaixo++;
           tx.globalAlpha = 0.9;
           tx.font = "bold 14px 'Space Mono', monospace";
-          escrever(`▼ ${f.nome} · ${(f.min * AL_POR_PONTO).toLocaleString("pt-BR")} AL abaixo`, W < 560 ? centro1 : W - 34, yb, f.cor, "rgba(0, 0, 16, 0.85)");
+          escrever(`▼ ${f.nome} · ${Math.round(viagem(f.min) * AL_POR_U).toLocaleString("pt-BR")} AL abaixo`, W < 560 ? centro1 : W - 34, yb, f.cor, "rgba(0, 0, 16, 0.85)");
           tx.font = "14px 'Space Mono', monospace";
           tx.globalAlpha = 1;
           continue;
@@ -1558,6 +1566,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
     }
   }
 
+  // Balanço lateral durante a queda (tq de 0 a 1; 1 = 46 px para a direita).
+  // Óbvia: vai devagarinho para a esquerda, depois para a direita, e para no meio.
+  // Letrado: direita, esquerda, direita… cada vez menor, como pêndulo, até parar.
+  // As outras faixas usam o balanço padrão (ou descem retas).
+  const suave = (x) => 0.5 - Math.cos(Math.PI * x) / 2;
+  const BALANCO = {
+    obvia: (tq) => -Math.sin(2 * Math.PI * suave(tq)) * 0.85,
+    comum: (tq) => Math.sin(2 * Math.PI * 2.5 * (1 - (1 - tq) * (1 - tq))) * Math.exp(-2 * tq) * 0.8,
+  };
+
   function desenharCaixas(agora) {
     const W = innerWidth;
     for (let i = caixas.length - 1; i >= 0; i--) {
@@ -1600,7 +1618,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
       // enquanto cai, a leve "samba" de um lado para o outro, como folha deslizando;
       // a pesada desce reta. O balanço vai sumindo perto do fim da queda.
       const leveza = 1 - Math.min(1, c.pesoQueda * 1.6);
-      const ondaQueda = !c.saida && tq < 1 && !reduzirMovimento ? Math.sin(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza : 0;
+      const caindo = !c.saida && tq < 1 && !reduzirMovimento;
+      const jeito = BALANCO[c.faixa];
+      const ondaQueda = !caindo ? 0 : jeito ? jeito(tq) : Math.sin(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza;
       const boiaX = (reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7) + ondaQueda * 46;
       const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 8;
       tx.translate(x + w / 2 + boiaX, y - sumindo * 14 + boiaY);
@@ -1611,7 +1631,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const pop = tc > 0 ? c.peso * 0.35 * Math.exp(-tc / 160) * Math.cos(tc / 45) : 0;
       const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3 + c.inicio) * 0.035 + Math.sin(tempo * 0.5) * 0.015;
       // inclina para o lado em que está deslizando
-      const inclinaQueda = !c.saida && tq < 1 && !reduzirMovimento ? Math.cos(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza * 0.16 : 0;
+      const inclinaQueda = !caindo ? 0
+        : jeito ? Math.max(-0.2, Math.min(0.2, (jeito(Math.min(1, tq + 0.01)) - jeito(Math.max(0, tq - 0.01))) / 0.02 * 0.025))
+        : Math.cos(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza * 0.16;
       tx.rotate(c.angulo * Math.exp(-t / 600) + balanco + inclinaQueda);
       const esc = Math.max(0.05, mola + pop) * (1 - sumindo * 0.1);
       tx.scale(esc, esc);
