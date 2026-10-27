@@ -333,10 +333,8 @@ form button {
 #respostas-dia .seta { grid-column: 4; grid-row: 1; justify-self: end; color: var(--suave); font-size: 13px; transition: transform 0.2s; }
 #respostas-dia li.aberta .seta { transform: rotate(180deg); }
 #respostas-dia li.vazia .seta { color: var(--suave); }
-.banco { grid-column: 1 / -1; margin-top: 10px; cursor: default; }
+.banco { grid-column: 1 / -1; margin-top: 10px; cursor: pointer; }
 #respostas-dia > li:not(.aberta) > .banco { display: none; }
-.banco .fechar-banco { display: block; margin: 0 0 8px auto; font: inherit; font-size: 13px; padding: 6px 10px; background: rgba(8, 6, 30, 0.7); color: var(--suave); border: 1px solid rgba(154, 163, 199, 0.3); cursor: pointer; }
-.banco .fechar-banco:hover, .banco .fechar-banco:focus-visible { color: var(--texto); border-color: var(--ciano); outline: none; }
 .banco .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
 .banco .chips button { font: inherit; font-size: 13px; padding: 6px 10px; background: rgba(8, 6, 30, 0.7); color: var(--c); border: 1px solid rgba(154, 163, 199, 0.3); cursor: pointer; }
 .banco .chips button b { color: var(--suave); font-weight: 400; margin-left: 4px; }
@@ -4003,13 +4001,15 @@ function montarRespostas() {
     li.setAttribute("aria-expanded", "false");
     li.title = "Ver todas as respostas desta pergunta";
     const alternar = (e) => {
-      if (e.target.closest(".banco")) return;
+      // dentro da lista aberta, os filtros e a busca continuam funcionando;
+      // clicar em qualquer outro canto dela fecha
+      if (e.target.closest(".banco button, .banco input")) return;
       const abrir = !li.classList.contains("aberta");
       // só uma aberta por vez: abrir outra fecha a anterior
       if (abrir) lista.querySelectorAll(":scope > li.aberta").forEach(fecharBanco);
       li.classList.toggle("aberta", abrir);
       li.setAttribute("aria-expanded", String(abrir));
-      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta, () => { fecharBanco(li); li.focus(); }));
+      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta));
     };
     li.addEventListener("click", alternar);
     li.addEventListener("keydown", (e) => {
@@ -4105,15 +4105,9 @@ const CURIOSIDADE_SUPERNOVA = {
 };
 
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
-function montarBanco(cat, sua, fechar) {
+function montarBanco(cat, sua) {
   const banco = document.createElement("div");
   banco.className = "banco";
-  const botaoFechar = document.createElement("button");
-  botaoFechar.type = "button";
-  botaoFechar.className = "fechar-banco";
-  botaoFechar.textContent = "✕ fechar";
-  botaoFechar.setAttribute("aria-label", "Fechar a lista de respostas");
-  botaoFechar.addEventListener("click", () => fechar());
   const itens = cat.respostas
     .map((r) => {
       const sn = r.resposta === cat.supernova;
@@ -4177,7 +4171,7 @@ function montarBanco(cat, sua, fechar) {
     rodape.textContent = `${vis.length} de ${itens.length} respostas`;
   }
   desenhar();
-  banco.append(botaoFechar, chips, campo, lista, rodape);
+  banco.append(chips, campo, lista, rodape);
   return banco;
 }
 

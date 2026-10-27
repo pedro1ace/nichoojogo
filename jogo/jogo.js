@@ -786,13 +786,15 @@ function montarRespostas() {
     li.setAttribute("aria-expanded", "false");
     li.title = "Ver todas as respostas desta pergunta";
     const alternar = (e) => {
-      if (e.target.closest(".banco")) return;
+      // dentro da lista aberta, os filtros e a busca continuam funcionando;
+      // clicar em qualquer outro canto dela fecha
+      if (e.target.closest(".banco button, .banco input")) return;
       const abrir = !li.classList.contains("aberta");
       // só uma aberta por vez: abrir outra fecha a anterior
       if (abrir) lista.querySelectorAll(":scope > li.aberta").forEach(fecharBanco);
       li.classList.toggle("aberta", abrir);
       li.setAttribute("aria-expanded", String(abrir));
-      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta, () => { fecharBanco(li); li.focus(); }));
+      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta));
     };
     li.addEventListener("click", alternar);
     li.addEventListener("keydown", (e) => {
@@ -888,15 +890,9 @@ const CURIOSIDADE_SUPERNOVA = {
 };
 
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
-function montarBanco(cat, sua, fechar) {
+function montarBanco(cat, sua) {
   const banco = document.createElement("div");
   banco.className = "banco";
-  const botaoFechar = document.createElement("button");
-  botaoFechar.type = "button";
-  botaoFechar.className = "fechar-banco";
-  botaoFechar.textContent = "✕ fechar";
-  botaoFechar.setAttribute("aria-label", "Fechar a lista de respostas");
-  botaoFechar.addEventListener("click", () => fechar());
   const itens = cat.respostas
     .map((r) => {
       const sn = r.resposta === cat.supernova;
@@ -960,7 +956,7 @@ function montarBanco(cat, sua, fechar) {
     rodape.textContent = `${vis.length} de ${itens.length} respostas`;
   }
   desenhar();
-  banco.append(botaoFechar, chips, campo, lista, rodape);
+  banco.append(chips, campo, lista, rodape);
   return banco;
 }
 
