@@ -1371,6 +1371,25 @@ function faixaDe(pontos, supernova) {
   return FAIXAS.find((f) => pontos >= f.min);
 }
 
+// Pontos típicos de cada faixa (a régua de scripts/pontuar.py), para quando a pergunta não tem respostas dela.
+const PONTOS_TIPICOS = { obvia: 12, comum: 26, incomum: 46, rara: 75, supernova: 100 };
+// Onde cada raridade faria você parar nesta pergunta: a mediana dos pontos das respostas
+// daquela faixa (a singularidade vale o dobro). Da mais rasa para a mais funda.
+function alvosDaPergunta(cat) {
+  const respostas = (cat && cat.respostas) || [];
+  const secreta = cat && respostas.find((r) => r.resposta === cat.supernova);
+  const alvos = [...FAIXAS].reverse().map((f) => {
+    const pts = respostas
+      .filter((r) => r !== secreta && faixaDe(r.pontos, false) === f)
+      .map((r) => r.pontos)
+      .sort((a, b) => a - b);
+    const pontos = pts.length ? pts[Math.floor((pts.length - 1) / 2)] : PONTOS_TIPICOS[f.id];
+    return { faixa: f, pontos };
+  });
+  alvos.push({ faixa: SUPERNOVA, pontos: secreta ? secreta.pontos * 2 : PONTOS_TIPICOS.supernova });
+  return alvos.map((a) => ({ ...a, distancia: viagem(a.pontos) }));
+}
+
 // Marcos do caminho e curiosidades escritas nas laterais.
 // "al" é a posição na cena (u). Os de antes de AL_INICIAL são o Sistema Solar, na descida
 // inicial (só cenário, sem linha). Os outros estão nas distâncias reais ("real", em AL).
@@ -1771,6 +1790,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   const camera = { de: 0, para: 0, inicio: 0, atual: 0, velocidade: 0 };
   let rodadaAl = 0; // onde começou a pergunta atual (para as linhas das faixas)
+  let alvos = alvosDaPergunta(null); // onde cada raridade faria parar nesta pergunta
   let mostrarLinhas = false;
   const acesas = {}; // linhas de faixa que a caixa já cruzou nesta rodada (id -> hora)
   let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
@@ -2607,7 +2627,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.globalAlpha = 1;
     }
     // onde estão as linhas das faixas agora (para a curiosidade não ficar por cima)
-    const linhasY = mostrarLinhas ? FAIXAS.filter((f) => f.min).map((f) => naTelaTexto(rodadaAl + viagem(f.min))) : [];
+    const linhasY = mostrarLinhas ? [rodadaAl, ...alvos.map((a) => rodadaAl + a.distancia)].map(naTelaTexto) : [];
     tx.font = `${W < 560 ? 13 : 15}px 'Space Mono', monospace`;
     // faixas da tela cobertas por painéis (pergunta, resposta, resultado):
     // ali as curiosidades não aparecem, para não misturar com o texto do painel
@@ -2652,22 +2672,39 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.globalAlpha = 1;
 
 
-    // linhas das faixas: até onde cada faixa de raridade levaria nesta pergunta
+    // linhas das faixas: "você está aqui" e, abaixo, onde cada raridade faria você parar
+    // nesta pergunta (as mesmas distâncias da queda de verdade), com os pontos que ela dá
     if (mostrarLinhas) {
       tx.textAlign = "right";
-      tx.font = "14px 'Space Mono', monospace";
-      let abaixo = 0;
-      for (const f of FAIXAS) {
-        if (!f.min) continue;
-        const y = naTelaTexto(rodadaAl + viagem(f.min));
-        // faixa que fica abaixo da tela: uma setinha presa embaixo diz até onde ela levaria
-        if (y > H - 40 && !acesas[f.id]) {
-          const yb = (W < 560 ? H - 100 : H - 22) - abaixo * 20;
-          abaixo++;
+      const yAqui = naTelaTexto(rodadaAl);
+      if (yAqui > -20 && yAqui < H + 20) {
+        linhaTracejada(yAqui, centro0, centro1, "#ffffff", 0.55);
+        tx.font = "bold 14px 'Space Mono', monospace";
+        escrever("◂ VOCÊ ESTÁ AQUI", centro1, yAqui - 10, "#ffffff", "rgba(0, 0, 16, 0.85)");
+      }
+      // As que ficam abaixo da tela (ou com o rótulo escondido atrás de um painel, como o campo
+      // da resposta) viram uma lista presa embaixo, da mais rasa para a mais funda.
+      const estreita = W < 560;
+      const escondida = (y) => y > H - 40 || cobertas.some(([c0, c1]) => y - 10 > c0 && y - 10 < c1);
+      const naLista = alvos.filter((a) => !acesas[a.faixa.id] && escondida(naTelaTexto(rodadaAl + a.distancia)));
+      // a lista fica no pé da tela; se um painel está ali, vai logo abaixo dele (ou acima, se não couber)
+      let base = H - 22;
+      const altura = (naLista.length - 1) * 20;
+      for (const [c0, c1] of cobertas) {
+        if (base + 10 < c0 || base - altura - 12 > c1) continue;
+        base = c1 + 14 + altura <= H - 10 ? c1 + 14 + altura : c0 - 12;
+      }
+      for (const { faixa: f, pontos, distancia } of alvos) {
+        const y = naTelaTexto(rodadaAl + distancia);
+        const rotulo = `${f.nome} · +${pontos} pts`;
+        const i = naLista.findIndex((a) => a.faixa === f);
+        if (i >= 0) {
+          // a linha continua visível; só o rótulo vai para a lista
+          if (y < H + 20) linhaTracejada(y, centro0, centro1, f.cor, 0.75);
+          const longe = estreita ? "" : ` · ${Math.round(distancia * AL_POR_U).toLocaleString("pt-BR")} AL abaixo`;
           tx.globalAlpha = 0.9;
           tx.font = "bold 14px 'Space Mono', monospace";
-          escrever(`▼ ${f.nome} · ${Math.round(viagem(f.min) * AL_POR_U).toLocaleString("pt-BR")} AL abaixo`, W < 560 ? centro1 : W - 34, yb, f.cor, "rgba(0, 0, 16, 0.85)");
-          tx.font = "14px 'Space Mono', monospace";
+          escrever(`▼ ${rotulo}${longe}`, estreita ? W - 16 : W - 34, base - (naLista.length - 1 - i) * 20, f.cor, "rgba(0, 0, 16, 0.85)");
           tx.globalAlpha = 1;
           continue;
         }
@@ -2685,13 +2722,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
           for (let x = centro0; x < centro1; x += 8) tx.fillRect(x, Math.round(y) - 0.5, 6, 2 + pulso * 2);
           tx.restore();
           tx.font = `${14 + Math.round(pulso * 4)}px 'Space Mono', monospace`;
-          escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
-          tx.font = "14px 'Space Mono', monospace";
         } else {
           linhaTracejada(y, centro0, centro1, f.cor, 0.75);
           tx.font = "bold 15px 'Space Mono', monospace";
-          escrever(`▾ ${f.nome} · ${f.min}+`, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
         }
+        escrever(rotulo, centro1, y - 10, f.cor, "rgba(0, 0, 16, 0.85)");
       }
     }
 
@@ -2884,13 +2919,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const tq = Math.min(1, t / c.dura);
       const al = c.de + (c.para - c.de) * curvaQueda(tq, c.pesoQueda);
       if (!c.saida && mostrarLinhas) {
-        for (const f of FAIXAS) {
-          if (!f.min || acesas[f.id]) continue;
-          if (al >= rodadaAl + viagem(f.min)) {
-            acesas[f.id] = agora;
-            if (window.Som && Som.limiar) Som.limiar(FAIXAS.length - 1 - FAIXAS.indexOf(f));
-          }
-        }
+        alvos.forEach(({ faixa: f, distancia }, i) => {
+          if (acesas[f.id] || al < rodadaAl + distancia - 0.5) return;
+          acesas[f.id] = agora;
+          if (window.Som && Som.limiar) Som.limiar(i);
+        });
       }
       // fumaça só nas raras e o plasma na supernova (as outras têm os companheiros em órbita)
       if ((c.supernova || c.faixa === "rara") && !c.saida && t < c.dura && !reduzirMovimento) soltarRastro(c, al, t);
@@ -3084,7 +3117,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   return {
     icones,
     // Marca o começo de uma pergunta: as linhas das faixas partem daqui.
-    novaRodada() {
+    novaRodada(cat) {
       const agora = performance.now();
       for (const k of Object.keys(acesas)) delete acesas[k];
       alvoCanto = 1;
@@ -3092,6 +3125,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       mostrandoResultado = false;
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       rodadaAl = camera.para;
+      alvos = alvosDaPergunta(cat);
       mostrarLinhas = true;
     },
     // Desce o foguete pelos pontos da resposta e solta a palavra numa caixinha.
@@ -3536,7 +3570,7 @@ function comecar() {
 
 function iniciarRodada() {
   const cat = estado.categorias[estado.rodada];
-  cena.novaRodada();
+  cena.novaRodada(cat);
   montarQuadrados();
   $("rotulo-pergunta").textContent = `INCURSÃO ${estado.rodada + 1} DE ${estado.categorias.length}`;
   $("pergunta").textContent = cat.pergunta || cat.titulo;
