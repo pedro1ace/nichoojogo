@@ -314,10 +314,8 @@ form button {
 #respostas-dia .seta { grid-column: 4; grid-row: 1; justify-self: end; color: var(--suave); font-size: 13px; transition: transform 0.2s; }
 #respostas-dia li.aberta .seta { transform: rotate(180deg); }
 #respostas-dia li.vazia .seta { color: var(--suave); }
-.banco { grid-column: 1 / -1; margin-top: 10px; cursor: default; }
+.banco { grid-column: 1 / -1; margin-top: 10px; cursor: pointer; }
 #respostas-dia > li:not(.aberta) > .banco { display: none; }
-.banco .fechar-banco { display: block; margin: 0 0 8px auto; font: inherit; font-size: 13px; padding: 6px 10px; background: rgba(8, 6, 30, 0.7); color: var(--suave); border: 1px solid rgba(154, 163, 199, 0.3); cursor: pointer; }
-.banco .fechar-banco:hover, .banco .fechar-banco:focus-visible { color: var(--texto); border-color: var(--ciano); outline: none; }
 .banco .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
 .banco .chips button { font: inherit; font-size: 13px; padding: 6px 10px; background: rgba(8, 6, 30, 0.7); color: var(--c); border: 1px solid rgba(154, 163, 199, 0.3); cursor: pointer; }
 .banco .chips button b { color: var(--suave); font-weight: 400; margin-left: 4px; }
