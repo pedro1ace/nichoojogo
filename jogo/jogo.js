@@ -293,7 +293,6 @@ function iniciar() {
   }
   if (estado.rodada > 0) {
     $("comecar").textContent = "▼ CONTINUAR VIAGEM ▼";
-    document.querySelector("#inicio [data-zerar]").hidden = false;
   }
 }
 
@@ -762,6 +761,35 @@ function percentilNaCurva(c, pontos) {
   return c.total ? abaixo / c.total : 0;
 }
 
+// Passar o mouse (ou o dedo) na curva mostra a pontuação daquele ponto
+// e quantos por cento dos viajantes ficaram abaixo dela.
+let curvaAtual = null;
+function mirarCurva(e) {
+  const caixa = $("curva");
+  const mira = $("curva-mira");
+  if (!curvaAtual) return;
+  const r = $("curva-svg").getBoundingClientRect();
+  const f = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+  const { c, fimX, suave, topo, alturaUtil } = curvaAtual;
+  const v = Math.round(f * fimX);
+  const i = Math.min(suave.length - 1, Math.floor(v / c.largura));
+  const pct = Math.round(percentilNaCurva(c, v) * 100);
+  mira.hidden = false;
+  mira.style.left = `${f * 100}%`;
+  mira.style.setProperty("--y", `${(1 - (suave[i] / topo) * alturaUtil) * r.height}px`);
+  const rotulo = mira.querySelector("span");
+  rotulo.textContent = `${numero(v)} pts · acima de ${pct}%`;
+  rotulo.style.transform = `translateX(${f < 0.2 ? 0 : f > 0.8 ? -100 : -50}%)`;
+  caixa.classList.add("mirando");
+}
+function soltarCurva() {
+  $("curva-mira").hidden = true;
+  $("curva").classList.remove("mirando");
+}
+$("curva").addEventListener("pointermove", mirarCurva);
+$("curva").addEventListener("pointerdown", mirarCurva);
+$("curva").addEventListener("pointerleave", soltarCurva);
+
 function desenharCurva(c, pontos) {
   const secao = $("secao-curva");
   const svg = $("curva-svg");
@@ -799,6 +827,7 @@ function desenharCurva(c, pontos) {
   const linha = pts.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join("");
   const area = `${linha}L${L},${A}L0,${A}Z`;
   const xVoce = Math.min(L, px(pontos));
+  curvaAtual = { c, fimX, suave, topo, alturaUtil: (A - margem) / A };
 
   const ns = "http://www.w3.org/2000/svg";
   const el = (tag, attrs) => {
@@ -838,12 +867,11 @@ function desenharCurva(c, pontos) {
   $("curva").querySelectorAll(".voce").forEach((v) => v !== voce && v.remove());
 
   const pct = Math.round(percentilNaCurva(c, pontos) * 100);
-  const quantos = `${numero(c.total)} viajantes de hoje`;
   $("curva-texto").textContent = ALEATORIO
-    ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos ${quantos}.`
+    ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos viajantes de hoje.`
     : pct >= 99
-      ? `Você foi mais fundo que 99% dos ${quantos}. Poucos chegaram tão longe!`
-      : `Você foi mais fundo que ${pct}% dos ${quantos}.`;
+      ? "Você foi mais fundo que 99% dos viajantes de hoje. Poucos chegaram tão longe!"
+      : `Você foi mais fundo que ${pct}% dos viajantes de hoje.`;
 }
 
 // Tabela das faixas, da mais rara para a mais óbvia; as que você alcançou hoje ficam acesas.
@@ -1196,14 +1224,5 @@ $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());
 });
-// Modo teste: apaga o progresso de hoje e recomeça, sem esperar o dia seguinte.
-// (Tirar antes do lançamento, ou deixar só para quem desenvolve.)
-function zerarDia() {
-  try {
-    localStorage.removeItem(`nicho:v7:${estado.data}`);
-  } catch {}
-  location.reload();
-}
-document.querySelectorAll("[data-zerar]").forEach((b) => b.addEventListener("click", zerarDia));
 
 iniciar();
