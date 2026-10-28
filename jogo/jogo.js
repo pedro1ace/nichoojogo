@@ -7,7 +7,7 @@
 
 const RODADAS_POR_DIA = 7;
 const SEGUNDOS = 25;
-const LANCAMENTO = "2026-10-23"; // dia #1
+const LANCAMENTO = "2026-10-28"; // dia #1
 // Modo teste: abrir com ?aleatorio no fim do endereço (jogar.html?aleatorio) sorteia
 // outras categorias a cada vez e não guarda o progresso do dia.
 const ALEATORIO = new URLSearchParams(location.search).has("aleatorio");
@@ -110,31 +110,37 @@ function gerador(semente) {
 
 // As categorias do dia saem de um baralho com todas elas: cada dia tira as 7 seguintes
 // e, quando o baralho acaba, ele é embaralhado de novo. Assim nenhuma categoria se
-// repete antes de todas terem saído. (O sorteio antigo, um por dia, repetia muito:
-// datas seguidas davam quase o mesmo embaralhamento.)
-// Na ESTREIA o baralho recomeça com as categorias novas na frente, para os primeiros
-// dias depois dela trazerem só novidades. Ao criar categorias novas, troque a data e a lista.
-const ESTREIA = {
-  data: "2026-10-25",
-  novas: ["aves", "bebidas", "brincadeiras", "capitais-do-mundo", "coisas-amarelas", "coisas-da-praia", "coisas-que-voam", "coisas-redondas", "cores", "criaturas-do-folclore", "desenhos-animados", "deuses-e-deusas", "doces-e-sobremesas", "idiomas", "ilhas", "insetos", "jogadores-da-selecao", "jogos-de-videogame", "legumes-e-verduras", "material-escolar", "musicos-brasileiros", "novelas-brasileiras", "objetos-da-cozinha", "ossos-do-corpo", "pedras-preciosas", "peixes", "pokemon", "profissoes", "queijos", "rios", "ritmos-musicais", "super-herois-e-viloes", "temperos-e-especiarias", "turma-da-monica"],
-};
+// repete antes de todas terem saído. No baralho novo, as que saíram na segunda metade
+// do anterior vão para o fim, para nada voltar poucos dias depois.
+// O dia #1 (LANCAMENTO) tem as 7 categorias fixas abaixo; o primeiro baralho, que começa
+// no dia #2, tem só as outras.
+const CATEGORIAS_DO_LANCAMENTO = ["aves", "rios", "doces-e-sobremesas", "insetos", "coisas-da-praia", "temperos-e-especiarias", "ilhas"];
 
 function categoriasDoDia(indice, data) {
   const ids = indice.map((c) => c.id).sort();
   const porId = new Map(indice.map((c) => [c.id, c]));
-  const depois = data >= ESTREIA.data;
-  const dias = depois ? numeroDoDia(data) - numeroDoDia(ESTREIA.data) : numeroDoDia(data) - 1;
-  const semente = depois ? 104729 : 7;
+  const dia1 = CATEGORIAS_DO_LANCAMENTO.filter((id) => porId.has(id));
+  if (numeroDoDia(data) <= 1 && dia1.length === RODADAS_POR_DIA) return dia1.map((id) => porId.get(id));
+  const baralhos = [embaralhar(ids.filter((id) => !dia1.includes(id)), gerador(2026))];
   const baralho = (ciclo) => {
-    const mistura = gerador(ciclo * 7919 + semente);
-    if (!depois || ciclo > 0) return embaralhar(ids, mistura);
-    const novas = ids.filter((id) => ESTREIA.novas.includes(id));
-    return [...embaralhar(novas, mistura), ...embaralhar(ids.filter((id) => !novas.includes(id)), mistura)];
+    while (baralhos.length <= ciclo) {
+      const anterior = baralhos[baralhos.length - 1];
+      const recentes = anterior.slice(-Math.floor(anterior.length / 2));
+      const novo = embaralhar(ids, gerador(baralhos.length * 7919 + 2026));
+      baralhos.push([...novo.filter((id) => !recentes.includes(id)), ...novo.filter((id) => recentes.includes(id))]);
+    }
+    return baralhos[ciclo];
   };
-  const inicio = Math.max(0, dias) * RODADAS_POR_DIA;
+  // posição k no baralho infinito: o primeiro baralho é mais curto (sem as do dia #1)
+  const carta = (k) => {
+    let ciclo = 0;
+    while (k >= baralho(ciclo).length) k -= baralho(ciclo++).length;
+    return baralho(ciclo)[k];
+  };
+  const inicio = Math.max(0, numeroDoDia(data) - 2) * RODADAS_POR_DIA;
   const dia = [];
   for (let k = inicio; dia.length < Math.min(RODADAS_POR_DIA, ids.length); k++) {
-    const id = baralho(Math.floor(k / ids.length))[k % ids.length];
+    const id = carta(k);
     if (!dia.includes(id)) dia.push(id); // na virada do baralho, pula a que já saiu hoje
   }
   return dia.map((id) => porId.get(id));
