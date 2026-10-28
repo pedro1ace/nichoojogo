@@ -206,4 +206,4 @@ A lista completa, que o jogador vê, está em [`creditos.html`](creditos.html). 
 
 ## Licença
 
-© 2026 pedro1ace. Todos os direitos reservados. Veja [LICENSE](LICENSE), que também lista o conteúdo de terceiros (Wikidata CC0, fserb/pt-br MIT, fontes OFL).
+© 2026 pedro1ace e cincoano. Todos os direitos reservados. Veja [LICENSE](LICENSE), que também lista o conteúdo de terceiros (Wikidata CC0, fserb/pt-br MIT, fontes OFL).
