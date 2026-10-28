@@ -471,12 +471,6 @@ pre {
 #amanha .pronta { color: var(--ciano); font-size: 18px; text-shadow: 0 0 10px rgba(95, 225, 255, 0.7); }
 #amanha .recarregar { color: var(--rosa); font-size: 16px; letter-spacing: 0.1em; }
 
-.botao-teste {
-  align-self: center; padding: 8px 14px; border: 0; font-family: var(--mono); font-size: 17px; letter-spacing: 2px;
-  background: transparent; color: var(--suave); box-shadow: inset 0 0 0 1px rgba(154, 163, 199, 0.4);
-}
-.botao-teste:hover { color: var(--texto); }
-#inicio .botao-teste { background: var(--painel); }
 
 @media (max-width: 560px) {
   .regras { font-size: 14px; }
@@ -555,7 +549,6 @@ pre {
         <span id="dia"></span>
         <div class="botoes-inicio">
           <button id="abrir-como" type="button" aria-expanded="false">COMO JOGAR ?</button>
-          <button type="button" data-zerar hidden>ZERAR O DIA ↺</button>
         </div>
       </div>
       <p class="copyright">© 2026 pedro1ace e cincoano · Nicho · todos os direitos reservados<br><a href="privacidade.html">privacidade</a> · <a href="termos.html">termos</a> · <a href="creditos.html">créditos</a></p>
@@ -634,7 +627,6 @@ pre {
           <button id="enviar" type="button" class="botao-escuro" hidden>COMPARTILHAR</button>
         </div>
         <p id="amanha" class="suave"></p>
-        <button type="button" class="botao-teste" data-zerar>↺ JOGAR DE NOVO (MODO TESTE)</button>
         <p class="links-fim"><a class="link-privacidade" href="privacidade.html">privacidade</a> · <a class="link-privacidade" href="termos.html">termos</a> · <a class="link-privacidade" href="creditos.html">créditos</a></p>
       </div>
     </section>
@@ -3722,7 +3714,6 @@ function iniciar() {
   }
   if (estado.rodada > 0) {
     $("comecar").textContent = "▼ CONTINUAR VIAGEM ▼";
-    document.querySelector("#inicio [data-zerar]").hidden = false;
   }
 }
 
@@ -4267,12 +4258,11 @@ function desenharCurva(c, pontos) {
   $("curva").querySelectorAll(".voce").forEach((v) => v !== voce && v.remove());
 
   const pct = Math.round(percentilNaCurva(c, pontos) * 100);
-  const quantos = `${numero(c.total)} viajantes de hoje`;
   $("curva-texto").textContent = ALEATORIO
-    ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos ${quantos}.`
+    ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos viajantes de hoje.`
     : pct >= 99
-      ? `Você foi mais fundo que 99% dos ${quantos}. Poucos chegaram tão longe!`
-      : `Você foi mais fundo que ${pct}% dos ${quantos}.`;
+      ? "Você foi mais fundo que 99% dos viajantes de hoje. Poucos chegaram tão longe!"
+      : `Você foi mais fundo que ${pct}% dos viajantes de hoje.`;
 }
 
 // Tabela das faixas, da mais rara para a mais óbvia; as que você alcançou hoje ficam acesas.
@@ -4625,15 +4615,6 @@ $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());
 });
-// Modo teste: apaga o progresso de hoje e recomeça, sem esperar o dia seguinte.
-// (Tirar antes do lançamento, ou deixar só para quem desenvolve.)
-function zerarDia() {
-  try {
-    localStorage.removeItem(`nicho:v7:${estado.data}`);
-  } catch {}
-  location.reload();
-}
-document.querySelectorAll("[data-zerar]").forEach((b) => b.addEventListener("click", zerarDia));
 
 iniciar();
 </script>

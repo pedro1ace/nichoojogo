@@ -293,7 +293,6 @@ function iniciar() {
   }
   if (estado.rodada > 0) {
     $("comecar").textContent = "▼ CONTINUAR VIAGEM ▼";
-    document.querySelector("#inicio [data-zerar]").hidden = false;
   }
 }
 
@@ -838,12 +837,11 @@ function desenharCurva(c, pontos) {
   $("curva").querySelectorAll(".voce").forEach((v) => v !== voce && v.remove());
 
   const pct = Math.round(percentilNaCurva(c, pontos) * 100);
-  const quantos = `${numero(c.total)} viajantes de hoje`;
   $("curva-texto").textContent = ALEATORIO
-    ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos ${quantos}.`
+    ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos viajantes de hoje.`
     : pct >= 99
-      ? `Você foi mais fundo que 99% dos ${quantos}. Poucos chegaram tão longe!`
-      : `Você foi mais fundo que ${pct}% dos ${quantos}.`;
+      ? "Você foi mais fundo que 99% dos viajantes de hoje. Poucos chegaram tão longe!"
+      : `Você foi mais fundo que ${pct}% dos viajantes de hoje.`;
 }
 
 // Tabela das faixas, da mais rara para a mais óbvia; as que você alcançou hoje ficam acesas.
@@ -1196,14 +1194,5 @@ $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());
 });
-// Modo teste: apaga o progresso de hoje e recomeça, sem esperar o dia seguinte.
-// (Tirar antes do lançamento, ou deixar só para quem desenvolve.)
-function zerarDia() {
-  try {
-    localStorage.removeItem(`nicho:v7:${estado.data}`);
-  } catch {}
-  location.reload();
-}
-document.querySelectorAll("[data-zerar]").forEach((b) => b.addEventListener("click", zerarDia));
 
 iniciar();

@@ -396,12 +396,6 @@ pre {
 #amanha .pronta { color: var(--ciano); font-size: 18px; text-shadow: 0 0 10px rgba(95, 225, 255, 0.7); }
 #amanha .recarregar { color: var(--rosa); font-size: 16px; letter-spacing: 0.1em; }
 
-.botao-teste {
-  align-self: center; padding: 8px 14px; border: 0; font-family: var(--mono); font-size: 17px; letter-spacing: 2px;
-  background: transparent; color: var(--suave); box-shadow: inset 0 0 0 1px rgba(154, 163, 199, 0.4);
-}
-.botao-teste:hover { color: var(--texto); }
-#inicio .botao-teste { background: var(--painel); }
 
 @media (max-width: 560px) {
   .regras { font-size: 14px; }
