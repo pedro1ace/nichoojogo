@@ -25,13 +25,17 @@ const Som = (() => {
   }
 
   // Zumbido grave e calmo de fundo, que fica mais grave conforme desce.
+  // Só toca durante a viagem (some na tela inicial e no fim). Nota e oitava,
+  // sem notas vizinhas: duas notas graves próximas "batem" e viram um tutututu chato.
+  const BASE_AMBIENTE = [55, 110];
+  const VOLUME_AMBIENTE = 0.014;
   function criarAmbiente() {
     const filtro = ac.createBiquadFilter();
     filtro.type = "lowpass";
     filtro.frequency.value = 180;
     const ganho = ac.createGain();
-    ganho.gain.value = 0.016;
-    const osc = [41.2, 55, 61.7].map((f) => {
+    ganho.gain.value = 0;
+    const osc = BASE_AMBIENTE.map((f) => {
       const o = ac.createOscillator();
       o.type = "sine";
       o.frequency.value = f;
@@ -46,7 +50,7 @@ const Som = (() => {
     lfo.connect(lfoGanho).connect(filtro.frequency);
     lfo.start();
     filtro.connect(ganho).connect(mestre);
-    ambiente = { osc, filtro };
+    ambiente = { osc, filtro, ganho };
   }
 
   function tom(freq, duracao, { tipo = "square", volume = 0.12, atraso = 0, ate = null } = {}) {
@@ -148,10 +152,18 @@ const Som = (() => {
     setTimeout(() => c.fontes.forEach((f) => f.stop()), 2500);
   }
 
+  // liga ou desliga o zumbido de fundo devagar (constante de tempo em segundos)
+  function fundo(ligado, suave = 0.6) {
+    if (!ambiente) return;
+    ambiente.ganho.gain.cancelScheduledValues(ac.currentTime);
+    ambiente.ganho.gain.setTargetAtTime(ligado ? VOLUME_AMBIENTE : 0, ac.currentTime, suave);
+  }
+
   const NOTAS = [523.25, 659.25, 783.99, 1046.5, 1318.5, 1568]; // dó maior subindo
 
   return {
     ligar,
+    fundo,
     estaMudo: () => mudo,
     alternar() {
       mudo = !mudo;
@@ -217,6 +229,7 @@ const Som = (() => {
     },
     // início da viagem: um "fuuuum" que sobe e um brilho de três notas, ecoando no espaço
     inicio() {
+      fundo(true, 1);
       ruido(1.4, { volume: 0.06, de: 300, ate: 3200 });
       tom(110, 1.2, { tipo: "sine", volume: 0.16, ate: 440 });
       [523.25, 783.99, 1046.5].forEach((f, i) => {
@@ -243,11 +256,96 @@ const Som = (() => {
       tom(NOTAS[Math.min(5, nivel + 1)], 0.16, { tipo: "triangle", volume: 0.07 });
       tom(NOTAS[Math.min(5, nivel + 1)] * 2, 0.1, { tipo: "sine", volume: 0.03, atraso: 0.03 });
     },
-    // brilho ao chegar numa resposta rara: arpejo subindo, mais longo quanto mais rara
-    brilho(k) {
-      const n = Math.round(4 + 8 * Math.min(1, k));
-      for (let i = 0; i < n; i++) tom(NOTAS[i % 6] * (i >= 6 ? 2 : 1), 0.1, { tipo: "triangle", volume: 0.05 + 0.03 * k, atraso: 0.04 * i });
-      if (k > 0.6) ruido(0.5, { volume: 0.04, de: 5000, ate: 9000 });
+    // a caixa pousa: um "toc" de vidro e um sino que cresce com a raridade
+    // (0 óbvia, 1 letrado, 2 raro, 3 espaço profundo, 4 singularidade)
+    pouso(nivel) {
+      if (!ac) return;
+      const n = Math.max(0, Math.min(4, nivel));
+      // baque macio: mais grave e mais cheio nas raras
+      tom(150 - n * 18, 0.16 + n * 0.08, { tipo: "sine", volume: 0.1 + n * 0.025, ate: 55 - n * 6 });
+      ruido(0.05 + n * 0.02, { volume: 0.04 + n * 0.012, de: 1800, ate: 400 });
+      // sino: notas da escala subindo, cada faixa ganha uma a mais e soa mais longe
+      const escala = [783.99, 1046.5, 1318.5, 1568, 2093, 2637];
+      const notas = escala.slice(0, n + 1 + (n >= 3 ? 1 : 0));
+      const passo = n >= 3 ? 0.07 : 0.085;
+      const longa = 0.35 + n * 0.25;
+      notas.forEach((f, i) => {
+        const a = 0.04 + i * passo;
+        const vol = 0.045 + n * 0.006;
+        tom(f, longa, { tipo: "sine", volume: vol, atraso: a });
+        tom(f * 2.01, longa * 0.5, { tipo: "sine", volume: vol * 0.3, atraso: a }); // brilho de vidro
+        if (n >= 1) tom(f, longa, { tipo: "triangle", volume: vol * 0.25, atraso: a + 0.22 }); // eco
+      });
+      // nas mais raras, o acorde fica soando (levemente desafinado, como um coro) e cai poeira de estrela
+      if (n >= 2) {
+        const fim = 0.04 + notas.length * passo;
+        const acorde = n >= 4 ? [523.25, 659.25, 783.99, 1046.5] : n >= 3 ? [523.25, 783.99, 1046.5] : [659.25, 1046.5];
+        acorde.forEach((f) => {
+          tom(f * 0.997, 1 + n * 0.3, { tipo: "sine", volume: 0.02 + n * 0.004, atraso: fim });
+          tom(f * 1.003, 1 + n * 0.3, { tipo: "sine", volume: 0.02 + n * 0.004, atraso: fim });
+        });
+        ruido(0.4 + n * 0.2, { volume: 0.015 + n * 0.008, de: 5000, ate: 9500 });
+      }
+      if (n >= 3) tom(55, 1.2 + n * 0.2, { tipo: "sine", volume: 0.08 + (n - 3) * 0.04, ate: 41 }); // grave do fundo
+      if (n >= 4) for (let i = 0; i < 8; i++) tom(2637 + Math.random() * 2500, 0.06, { tipo: "sine", volume: 0.02, atraso: 0.5 + i * 0.09 + Math.random() * 0.04 });
+    },
+    // volta para a Terra no fim: o motorzinho do tardígrado acelerando para cima,
+    // um "fuuuu" de vento que cresce e passa, e estrelinhas zunindo ao lado
+    subir(dura) {
+      if (!ac) return;
+      const t = ac.currentTime;
+      const d = dura / 1000;
+      const saida = ac.createGain();
+      saida.gain.setValueAtTime(0.0001, t);
+      saida.gain.exponentialRampToValueAtTime(1, t + 0.4);
+      saida.gain.setValueAtTime(1, t + d * 0.65);
+      saida.gain.exponentialRampToValueAtTime(0.0001, t + d);
+      saida.connect(mestre);
+      // motor: dois osciladores levemente desafinados, subindo de tom, com um "tremido"
+      const filtro = ac.createBiquadFilter();
+      filtro.type = "lowpass";
+      filtro.frequency.setValueAtTime(260, t);
+      filtro.frequency.exponentialRampToValueAtTime(1300, t + d);
+      const gm = ac.createGain();
+      gm.gain.value = 0.05;
+      const tremido = ac.createOscillator(), tg = ac.createGain();
+      tremido.frequency.setValueAtTime(7, t);
+      tremido.frequency.linearRampToValueAtTime(14, t + d);
+      tg.gain.value = 0.018;
+      tremido.connect(tg).connect(gm.gain);
+      const motores = [[65, "sawtooth"], [65.6, "triangle"], [130, "sine"]].map(([f, tipo]) => {
+        const o = ac.createOscillator();
+        o.type = tipo;
+        o.frequency.setValueAtTime(f, t);
+        o.frequency.exponentialRampToValueAtTime(f * 3.2, t + d);
+        o.connect(filtro);
+        return o;
+      });
+      filtro.connect(gm).connect(saida);
+      // vento: ruído que abre de grave para agudo
+      const buf = ac.createBuffer(1, Math.ceil(ac.sampleRate * d), ac.sampleRate);
+      const dados = buf.getChannelData(0);
+      for (let i = 0; i < dados.length; i++) dados[i] = Math.random() * 2 - 1;
+      const vento = ac.createBufferSource();
+      vento.buffer = buf;
+      const fv = ac.createBiquadFilter();
+      fv.type = "bandpass";
+      fv.Q.value = 1.2;
+      fv.frequency.setValueAtTime(220, t);
+      fv.frequency.exponentialRampToValueAtTime(2600, t + d);
+      const gv = ac.createGain();
+      gv.gain.setValueAtTime(0.0001, t);
+      gv.gain.exponentialRampToValueAtTime(0.06, t + d * 0.55);
+      gv.gain.exponentialRampToValueAtTime(0.01, t + d);
+      vento.connect(fv).connect(gv).connect(saida);
+      [...motores, tremido, vento].forEach((x) => { x.start(t); x.stop(t + d + 0.05); });
+      // estrelinhas passando: "fiu" curtinhos, cada vez mais rápidos
+      for (let a = 0.5, i = 0; a < d - 0.5; a += Math.max(0.16, 0.45 - i * 0.03), i++) {
+        const f = 1500 + Math.random() * 1500;
+        tom(f, 0.12, { tipo: "sine", volume: 0.012 + Math.random() * 0.01, atraso: a, ate: f * 0.7 });
+      }
+      if (ambiente) ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime(BASE_AMBIENTE[i], t, d / 3));
+      fundo(false, d / 4);
     },
     fim() {
       [392, 523.25, 659.25, 783.99].forEach((f, i) => tom(f, 0.35, { tipo: "triangle", volume: 0.1, atraso: 0.15 * i }));
@@ -255,7 +353,9 @@ const Som = (() => {
     profundidade(al) {
       if (!ambiente) return;
       const f = Math.max(0.6, 1 - al / 65000); // al em anos-luz de verdade
-      ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime([41.2, 55, 61.7][i] * f, ac.currentTime, 0.5));
+      ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime(BASE_AMBIENTE[i] * f, ac.currentTime, 0.5));
     },
   };
 })();
+// "const" no topo do arquivo não vira window.Som; a cena procura window.Som antes de tocar
+window.Som = Som;

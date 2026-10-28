@@ -1608,6 +1608,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let bordaCor = null, borda = 0;
   function chegada(c, cx, cy, w, h) {
     const k = c.peso; // 0 a 1.2
+    if (window.Som && Som.pouso) Som.pouso(["obvia", "comum", "incomum", "rara", "supernova"].indexOf(c.faixa));
     if (k < 0.35) return; // comum e óbvia: só o pulinho da caixa
     const n = Math.round(20 + 120 * Math.min(1, k));
     if (c.supernova) {
@@ -1637,7 +1638,6 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tremer(6 + 22 * Math.min(1, k) + (c.supernova ? 14 : 0), 250 + 500 * k + (c.supernova ? 500 : 0));
     mascote.pulo = 10 + 14 * k;
     felizAte = performance.now() + 2200;
-    if (window.Som && Som.brilho) Som.brilho(k);
   }
   function desenharEstouros() {
     const W = innerWidth, H = innerHeight;

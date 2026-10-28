@@ -662,6 +662,7 @@ function proxima() {
   // fim da viagem: o cenário sobe devagar de volta até a Terra, e aí vem o relatório
   $("proxima").disabled = true;
   cena.subir(SUBIDA);
+  Som.subir(SUBIDA);
   setTimeout(() => {
     $("proxima").disabled = false;
     mostrarFim(true);
@@ -678,6 +679,7 @@ function mostrarFim(comSom) {
     apoio.textContent = "APOIAR";
     apoio.removeAttribute("aria-disabled");
   }
+  Som.fundo(false);
   if (comSom) Som.fim();
   else cena.irPara(0);
   cena.limpar();
