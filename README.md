@@ -71,6 +71,8 @@ scripts/
   buscar_wikidata.py       protótipo: sitelinks, visitas na Wikipédia e apelidos do Wikidata
   llm_nicho.py             protótipo: estimativa do Claude de "quantos em 1000 dariam esta resposta"
   casar.py                 protótipo: autocorreção em camadas, com --avaliar
+functions/api/pontuacao.js curva dos viajantes (Cloudflare Pages Function + D1)
+banco/schema.sql           tabela do D1 da curva
 jogar.html                 o jogo num arquivo só (gerado, não edite à mão)
 jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
   dados.js                 perguntas e pesos (gerado pelo pontuar.py)
@@ -173,6 +175,29 @@ Nas categorias abertas, resposta fora da lista não é erro: vai para uma fila, 
 3. Peça ao Claude, aqui no projeto, para julgar esse pedido. Ele devolve um JSON.
 4. `python3 scripts/fila.py aplicar minha-categoria vereditos.json` põe as aceitas na lista (resposta nova ou apelido, com peso em `dados/ajustes/`), as recusadas em `dados/recusadas/` e as duvidosas em `dados/fila/revisar/`.
 5. Rode `python3 scripts/pontuar.py`.
+
+## Curva dos viajantes (site no ar)
+
+No fim da viagem, o jogo mostra uma curva com a pontuação de todo mundo que jogou o mesmo dia e marca onde
+você ficou ("você foi mais fundo que 73% dos 1.204 viajantes de hoje"). Funciona só no site publicado
+no Cloudflare Pages; no `jogar.html` aberto do computador a seção não aparece.
+
+- `functions/api/pontuacao.js` recebe `{dia, pontos}` no fim de cada viagem e devolve a curva do dia.
+- Guarda só um histograma: por dia, quantas viagens terminaram em cada faixa de 10 pontos. Nada de IP,
+  nome, cookie ou respostas. Cada navegador manda uma vez por dia (marca `nicho:enviado:<dia>` no
+  `localStorage`); o modo teste (`?aleatorio`) só lê a curva.
+- Com menos de 5 viagens no dia, aparece uma frase no lugar da curva.
+
+Configuração no Cloudflare (uma vez só):
+
+1. **Workers & Pages → D1 SQL Database → Create**, com o nome `nicho`.
+2. No banco criado, aba **Console**, cole e rode o conteúdo de [`banco/schema.sql`](banco/schema.sql).
+3. No projeto do Pages: **Settings → Bindings → Add → D1 database**, nome da variável `DB`, banco `nicho`
+   (em Production e, se quiser testar, em Preview).
+4. Faça um novo deploy (ou reenvie o último) para a função pegar o banco.
+
+Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local`, depois crie a tabela com
+`banco/schema.sql` no banco local.
 
 ## Créditos
 
