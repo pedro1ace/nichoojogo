@@ -1244,8 +1244,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const piscando = !feliz && tempo % 3.7 < 0.13;
     const pele = mascote.dourado ? tardigrado.dourado : tardigrado;
     const img = piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
-    // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
-    const pz = Math.max(1.6, escala * 0.4);
+    // pequeno: o desenho tem mais pixels, então cada um vira ~1,5 px na tela
+    const pz = Math.max(1.1, escala * 0.26);
     // "respira": estica e encolhe de leve
     const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
     // olha sempre para o meio da tela (para a caixa): vira devagar, como quem se ajeita

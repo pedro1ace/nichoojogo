@@ -136,7 +136,7 @@ body.distorcer #cena, body.distorcer #camada { animation: distorcer 0.9s ease-ou
   position: absolute; top: -11px; left: 16px; padding: 3px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
   background: #ff8c28; color: #1a0a00; box-shadow: 0 0 10px rgba(255, 140, 40, 0.6);
 }
-#modo-mascote { width: 56px; height: 32px; image-rendering: pixelated; filter: drop-shadow(0 0 6px rgba(255, 150, 70, 0.7)); }
+#modo-mascote { width: 54px; height: 33px; image-rendering: pixelated; filter: drop-shadow(0 0 6px rgba(255, 150, 70, 0.7)); }
 .modo-nome { flex: 1; font-weight: 700; font-size: 19px; letter-spacing: 0.24em; color: var(--texto); }
 .modo-info { font-size: 13px; color: var(--suave); white-space: nowrap; }
 .modo-info::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 6px; background: var(--ciano); box-shadow: 0 0 6px var(--ciano); vertical-align: middle; }
@@ -411,7 +411,7 @@ pre {
   .modo { gap: 10px; padding: 14px 12px 12px; }
   .modo-nome { font-size: 15px; letter-spacing: 0.12em; }
   .modo-info { font-size: 12px; }
-  #modo-mascote { width: 42px; height: 24px; }
+  #modo-mascote { width: 45px; height: 27.5px; }
   #inicio .botao-grande { font-size: 17px; letter-spacing: 0.14em; padding: 18px 12px; }
   #hud { grid-template-columns: 1fr 1fr; padding-right: max(16px, env(safe-area-inset-right)); }
   .progresso { grid-column: 1 / -1; grid-row: 2; padding-top: 0; }
