@@ -343,3 +343,5 @@ const Som = (() => {
     },
   };
 })();
+// "const" no topo do arquivo não vira window.Som; a cena procura window.Som antes de tocar
+window.Som = Som;
