@@ -369,6 +369,18 @@ form button {
 #grafico .coluna:last-child .dica-coluna { left: auto; right: 0; transform: translate(0, 4px); }
 #grafico .coluna:last-child:hover .dica-coluna { transform: translate(0, 0); }
 .diario { padding-bottom: 34px; }
+/* curva dos viajantes: onde sua pontuação ficou entre a de todo mundo hoje */
+#curva { position: relative; margin-top: 30px; padding-bottom: 22px; animation: aparecer-fim 0.8s ease-out; }
+#curva-svg { display: block; width: 100%; height: 150px; border-bottom: 1px solid rgba(154, 163, 199, 0.35); }
+#curva-eixo span { position: absolute; bottom: 0; transform: translateX(-50%); font-family: var(--mono); font-size: 13px; color: var(--suave); }
+#curva-eixo span:first-child { transform: none; }
+#curva-eixo span:last-child { transform: translateX(-100%); }
+#curva .voce {
+  position: absolute; top: -26px; white-space: nowrap; padding: 2px 8px;
+  font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: 0.12em;
+  background: var(--rosa); color: #1a0010; box-shadow: 0 0 12px rgba(255, 79, 139, 0.6);
+}
+#curva-texto { margin: 8px 0 0; font-size: 16px; color: var(--texto); text-align: center; }
 pre {
   font-family: var(--mono); font-size: 22px; white-space: pre-wrap; text-align: left;
   background: #050220; padding: 12px; margin: 6px 0 0; box-shadow: inset 0 0 0 2px #2c2870;
@@ -537,6 +549,14 @@ pre {
         <p id="fim-pontos"></p>
         <p id="fim-profundidade" class="ciano"></p>
         <p id="fim-comparacao"></p>
+        <div id="secao-curva" class="secao" hidden>
+          <p class="rotulo">ENTRE OS VIAJANTES</p>
+          <div id="curva">
+            <svg id="curva-svg" viewBox="0 0 600 160" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <div id="curva-eixo"></div>
+          </div>
+          <p id="curva-texto"></p>
+        </div>
         <div class="diario secao">
           <p class="rotulo">DIÁRIO DE BORDO <span class="suave">· mais fundo = mais raro</span></p>
           <div id="grafico"></div>
@@ -4018,6 +4038,7 @@ function mostrarFim(comSom) {
   const media = estado.historico.reduce((s, h) => s + (h.percentil || 0), 0) / Math.max(1, estado.historico.length);
   $("fim-comparacao").textContent = `Suas respostas foram mais nichadas que ${Math.round(media * 100)}% das respostas possíveis.`;
   montarGrafico();
+  mostrarCurva();
   montarFaixas();
   montarRespostas();
 
@@ -4063,6 +4084,135 @@ function montarGrafico() {
     col.append(fio, img, num, dica);
     g.append(col);
   });
+}
+
+// ---------- curva dos viajantes ----------
+// No fim, a pontuação do dia vai (anônima: só o dia e os pontos) para /api/pontuacao,
+// que devolve quantos viajantes terminaram em cada faixa de 10 pontos. A curva mostra
+// onde você ficou. Cada navegador manda uma vez por dia. Aberto do computador (file://)
+// ou sem internet, a seção simplesmente não aparece.
+const API_PONTUACAO = "/api/pontuacao";
+
+function mostrarCurva() {
+  $("secao-curva").hidden = true;
+  if (location.protocol === "file:") return;
+  const chave = `nicho:enviado:${estado.data}`;
+  let jaEnviou = false;
+  try {
+    jaEnviou = !!localStorage.getItem(chave);
+  } catch {}
+  const mandar = !ALEATORIO && !jaEnviou;
+  const pedido = mandar
+    ? fetch(API_PONTUACAO, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ dia: estado.data, pontos: Math.round(estado.total) }),
+      })
+    : fetch(`${API_PONTUACAO}?dia=${estado.data}`);
+  pedido
+    .then((r) => (r.ok ? r.json() : null))
+    .then((c) => {
+      if (!c || !Array.isArray(c.contagem)) return;
+      if (mandar) {
+        try {
+          localStorage.setItem(chave, "1");
+        } catch {}
+      }
+      desenharCurva(c, Math.round(estado.total));
+    })
+    .catch(() => {});
+}
+
+// Fração dos viajantes que ficaram abaixo de você (empates contam metade).
+function percentilNaCurva(c, pontos) {
+  const k = Math.min(c.contagem.length - 1, Math.floor(pontos / c.largura));
+  let abaixo = c.contagem[k] / 2;
+  for (let i = 0; i < k; i++) abaixo += c.contagem[i];
+  return c.total ? abaixo / c.total : 0;
+}
+
+function desenharCurva(c, pontos) {
+  const secao = $("secao-curva");
+  const svg = $("curva-svg");
+  const eixo = $("curva-eixo");
+  svg.innerHTML = "";
+  eixo.innerHTML = "";
+  secao.hidden = false;
+  if (c.total < 5) {
+    $("curva").hidden = true;
+    $("curva-texto").textContent = "Você está entre os primeiros viajantes de hoje. Volte mais tarde para ver onde ficou na curva.";
+    return;
+  }
+  $("curva").hidden = false;
+
+  // eixo x: de 0 até um pouco além da última viagem (ou da sua), em centenas
+  const ultima = c.contagem.reduce((m, n, i) => (n ? i : m), 0);
+  const fimX = Math.min(c.contagem.length * c.largura, Math.max(200, Math.ceil(Math.max((ultima + 1) * c.largura, pontos + 20) / 100) * 100));
+  const nBarras = Math.ceil(fimX / c.largura);
+
+  // suaviza o histograma (núcleo gaussiano) para virar uma curva
+  const sigma = 1.6;
+  const suave = [];
+  for (let i = 0; i < nBarras; i++) {
+    let s = 0;
+    for (let j = 0; j < c.contagem.length; j++) s += c.contagem[j] * Math.exp(-((i - j) ** 2) / (2 * sigma * sigma));
+    suave.push(s);
+  }
+  const topo = Math.max(...suave) || 1;
+  const L = 600, A = 160, margem = 8;
+  const px = (v) => (v / fimX) * L;
+  const py = (s) => A - (s / topo) * (A - margem);
+  const pts = suave.map((s, i) => [px((i + 0.5) * c.largura), py(s)]);
+  pts.unshift([0, py(suave[0])]);
+  pts.push([L, py(suave[suave.length - 1])]);
+  const linha = pts.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join("");
+  const area = `${linha}L${L},${A}L0,${A}Z`;
+  const xVoce = Math.min(L, px(pontos));
+
+  const ns = "http://www.w3.org/2000/svg";
+  const el = (tag, attrs) => {
+    const e = document.createElementNS(ns, tag);
+    for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+    svg.append(e);
+    return e;
+  };
+  svg.innerHTML = `<defs>
+      <linearGradient id="curva-fundo" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#5fe1ff" stop-opacity="0.32"/><stop offset="1" stop-color="#5fe1ff" stop-opacity="0.03"/>
+      </linearGradient>
+      <linearGradient id="curva-sua" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ff4f8b" stop-opacity="0.6"/><stop offset="1" stop-color="#ff4f8b" stop-opacity="0.08"/>
+      </linearGradient>
+      <clipPath id="curva-ate-voce"><rect x="0" y="0" width="${xVoce.toFixed(1)}" height="${A}"/></clipPath>
+    </defs>`;
+  el("path", { d: area, fill: "url(#curva-fundo)" });
+  el("path", { d: area, fill: "url(#curva-sua)", "clip-path": "url(#curva-ate-voce)" });
+  el("path", { d: linha, fill: "none", stroke: "#5fe1ff", "stroke-width": 2, "vector-effect": "non-scaling-stroke" });
+  el("line", { x1: xVoce, x2: xVoce, y1: 0, y2: A, stroke: "#ff4f8b", "stroke-width": 2, "stroke-dasharray": "4 3", "vector-effect": "non-scaling-stroke" });
+
+  // rótulos em HTML (o SVG estica com a largura, o texto não)
+  for (let v = 0; v <= fimX; v += 100) {
+    const t = document.createElement("span");
+    t.textContent = v;
+    t.style.left = `${(v / fimX) * 100}%`;
+    eixo.append(t);
+  }
+  const voce = document.createElement("span");
+  voce.className = "voce";
+  voce.textContent = `VOCÊ · ${numero(pontos)}`;
+  const f = xVoce / L;
+  voce.style.left = `${f * 100}%`;
+  voce.style.transform = `translateX(${f < 0.15 ? 0 : f > 0.85 ? -100 : -50}%)`;
+  $("curva").append(voce);
+  $("curva").querySelectorAll(".voce").forEach((v) => v !== voce && v.remove());
+
+  const pct = Math.round(percentilNaCurva(c, pontos) * 100);
+  const quantos = `${numero(c.total)} viajantes de hoje`;
+  $("curva-texto").textContent = ALEATORIO
+    ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos ${quantos}.`
+    : pct >= 99
+      ? `Você foi mais fundo que 99% dos ${quantos}. Poucos chegaram tão longe!`
+      : `Você foi mais fundo que ${pct}% dos ${quantos}.`;
 }
 
 // Tabela das faixas, da mais rara para a mais óbvia; as que você alcançou hoje ficam acesas.
