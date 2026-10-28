@@ -199,6 +199,14 @@ Configuração no Cloudflare (uma vez só):
 Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local`, depois crie a tabela com
 `banco/schema.sql` no banco local.
 
+## Domínio
+
+O endereço oficial é **https://nichojogo.com** (comprado no Cloudflare). No projeto do Pages, em
+**Custom domains**, ficam `nichojogo.com` e `www.nichojogo.com`. O arquivo
+[`functions/_middleware.js`](functions/_middleware.js) manda `www.nichojogo.com` e o endereço velho
+`nichoojogo.pages.dev` para `nichojogo.com`, e o [`_routes.json`](_routes.json) faz ele rodar só nas páginas
+e na API. O e-mail `contato@nichojogo.com` é encaminhado pelo Email Routing do Cloudflare.
+
 ## Créditos
 
 Base de palavras: [fserb/pt-br](https://github.com/fserb/pt-br), de Fernando Serboncini, licença MIT.
