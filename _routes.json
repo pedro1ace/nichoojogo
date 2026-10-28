@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "include": ["/", "/index*", "/jogar*", "/privacidade*", "/termos*", "/creditos*", "/api/*"],
-  "exclude": []
+  "include": ["/*"],
+  "exclude": ["/jogo/*", "/licencas/*", "/favicon.ico", "/favicon.png", "/favicon.svg"]
 }
