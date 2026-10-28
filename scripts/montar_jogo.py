@@ -43,6 +43,8 @@ def main() -> None:
         marca = f'<script src="{nome}"></script>'
         assert marca in html, f"faltou {marca} em jogo/index.html"
         html = html.replace(marca, "<script>\n" + codigo.replace("</script", "<\\/script") + "</script>")
+    # jogar.html fica na raiz, ao lado de privacidade.html
+    html = html.replace('href="../privacidade.html"', 'href="privacidade.html"')
     (RAIZ / "jogar.html").write_text(html, encoding="utf-8")
     print("jogo/dados.js e jogar.html atualizados")
 
