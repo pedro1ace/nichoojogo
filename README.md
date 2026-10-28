@@ -201,11 +201,11 @@ Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local`, depoi
 
 ## Domínio
 
-O endereço oficial é **https://nichojogo.com** (comprado no Cloudflare). No projeto do Pages, em
-**Custom domains**, ficam `nichojogo.com` e `www.nichojogo.com`. O arquivo
-[`functions/_middleware.js`](functions/_middleware.js) manda `www.nichojogo.com` e o endereço velho
-`nichoojogo.pages.dev` para `nichojogo.com`, e o [`_routes.json`](_routes.json) faz ele rodar só nas páginas
-e na API. O e-mail `contato@nichojogo.com` é encaminhado pelo Email Routing do Cloudflare.
+O endereço oficial é **https://nichoojogo.io** (comprado no Cloudflare). No projeto do Pages, em
+**Custom domains**, ficam `nichoojogo.io` e `www.nichoojogo.io`. O arquivo
+[`functions/_middleware.js`](functions/_middleware.js) manda `www.nichoojogo.io` e o endereço velho
+`nichoojogo.pages.dev` para `nichoojogo.io`, e o [`_routes.json`](_routes.json) faz ele rodar só nas páginas
+e na API. O contato aparece como `contato@nichoojogo.io`, mas o link abre um e-mail para `nichoojogo@gmail.com`. Instagram: [@nichoojogo](https://www.instagram.com/nichoojogo/).
 
 ## Créditos
 
