@@ -509,6 +509,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let mostrarLinhas = false;
   const acesas = {}; // linhas de faixa que a caixa já cruzou nesta rodada (id -> hora)
   let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
+  // 1 = mascote ao lado do cartão da pergunta (na contagem antes do relógio)
+  let modoPergunta = 0, alvoPergunta = 0;
+  let cartaoPergunta = null;
   let larguraCaixa = 200;
   let cobertas = [];
   let alfaCurio = 1;
@@ -1233,8 +1236,26 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // no celular, com o resultado no meio, ele sobe para não ficar por cima do texto
     const yCanto = mostrandoResultado && innerWidth < 560 ? A * 0.2 : A * 0.55;
     const m = suave(Math.min(1, Math.max(0, modoCanto)));
-    foguete.x = xCaixa + (xCanto - xCaixa) * m + lado;
-    foguete.y = yCaixa + (yCanto - yCaixa) * m + balanco - mascote.pulo;
+    let x = xCaixa + (xCanto - xCaixa) * m;
+    let y = yCaixa + (yCanto - yCaixa) * m;
+    // na contagem (3, 2, 1) ele espera do ladinho do cartão da pergunta;
+    // quando o relógio começa, desliza de volta para o cantinho
+    modoPergunta += (alvoPergunta - modoPergunta) * (1 - Math.exp(-dt * 3));
+    if (modoPergunta > 0.001) {
+      cartaoPergunta = cartaoPergunta || document.getElementById("cartao-pergunta");
+      const r = cartaoPergunta && cartaoPergunta.getBoundingClientRect();
+      if (r && r.width) {
+        // cabe do lado direito do cartão? senão (celular), fica logo embaixo, na ponta direita
+        const doLado = r.right + 72 < innerWidth;
+        const xp = (doLado ? r.right + 34 : r.right - 30) / escala;
+        const yp = (doLado ? r.top + r.height / 2 : r.bottom + 34) / escala;
+        const k = suave(Math.min(1, modoPergunta));
+        x += (xp - x) * k;
+        y += (yp - y) * k;
+      }
+    }
+    foguete.x = x + lado;
+    foguete.y = y + balanco - mascote.pulo;
     const descendo = camera.velocidade > 20;
     const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.08 + Math.min(0.3, camera.velocidade / 3000);
     // quadro: perninhas remando (rápido descendo, devagar parado), pisca de vez em quando
@@ -1964,12 +1985,17 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const agora = performance.now();
       for (const k of Object.keys(acesas)) delete acesas[k];
       alvoCanto = 1;
+      alvoPergunta = 1; // espera do lado da pergunta até o relógio começar
       digitando = true;
       mostrandoResultado = false;
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       rodadaAl = camera.para;
       alvos = alvosDaPergunta(cat);
       mostrarLinhas = true;
+    },
+    // O relógio começou: o tardígrado sai do lado da pergunta e vai para o cantinho.
+    relogio() {
+      alvoPergunta = 0;
     },
     // Desce o foguete pelos pontos da resposta e solta a palavra numa caixinha.
     descer(texto, pontos, supernova) {
@@ -1978,6 +2004,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const faixa = faixaDe(pontos, supernova);
       const distancia = viagem(pontos);
       alvoCanto = 0;
+      alvoPergunta = 0;
       digitando = false;
       camera.de = camera.atual;
       camera.para = camera.atual + distancia;
@@ -2031,6 +2058,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     subir(dura) {
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = performance.now();
       alvoCanto = 0;
+      alvoPergunta = 0;
       mostrarLinhas = false;
       camera.de = camera.atual;
       camera.para = 0;
@@ -2048,6 +2076,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       fimDeJogo = true;
       caixas.length = 0;
       alvoCanto = 0;
+      alvoPergunta = 0;
       mostrarLinhas = false;
     },
     // Coloca a câmera numa profundidade sem animação (ao retomar o dia).
