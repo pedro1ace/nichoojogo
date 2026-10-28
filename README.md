@@ -180,4 +180,4 @@ Base de palavras: [fserb/pt-br](https://github.com/fserb/pt-br), de Fernando Ser
 
 ## Licença
 
-© 2026 pedro1ace. Todos os direitos reservados. Veja [LICENSE](LICENSE), que também lista o conteúdo de terceiros (Wikidata CC0, fserb/pt-br MIT, fontes OFL).
+© 2026 pedro1ace e cincoano. Todos os direitos reservados. Veja [LICENSE](LICENSE), que também lista o conteúdo de terceiros (Wikidata CC0, fserb/pt-br MIT, fontes OFL).
