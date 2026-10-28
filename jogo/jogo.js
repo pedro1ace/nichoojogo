@@ -184,6 +184,16 @@ function desenharMascoteDoMenu() {
   g.drawImage(t.andar[0], 0, 0);
 }
 
+// "DIA #3 · SEQUÊNCIA 2" no menu e no fim. A sequência são os dias seguidos com a viagem
+// completa, guardados neste navegador; ela zera quando você pula um dia.
+function mostrarDiaESequencia() {
+  const seq = ALEATORIO ? 0 : sequencia();
+  const texto = `DIA #${numeroDoDia(estado.data)} · SEQUÊNCIA ${seq}`;
+  $("dia").textContent = texto;
+  $("fim-dia").textContent = texto;
+  return seq;
+}
+
 function numeroDoDia(data) {
   return Math.round((new Date(data + "T12:00") - new Date(LANCAMENTO + "T12:00")) / 86400000) + 1;
 }
@@ -277,11 +287,9 @@ function iniciar() {
     titulo.append(s);
   });
   $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
-  const seq = sequencia();
-  $("dia").textContent = `DIA #${numeroDoDia(estado.data)}${seq ? ` · SEQUÊNCIA ${seq}` : ""}`;
+  mostrarDiaESequencia();
   $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
   desenharMascoteDoMenu();
-  $("fim-dia").textContent = `DIA #${numeroDoDia(estado.data)}`;
   $("som").classList.toggle("mudo", Som.estaMudo());
 
   const salvo = lerProgresso();
@@ -687,9 +695,10 @@ function mostrarFim(comSom) {
   montarFaixas();
   montarRespostas();
 
+  const seq = mostrarDiaESequencia();
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL 🐻`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL 🐻`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }
