@@ -1227,6 +1227,29 @@ const ligarCeuDoInicio = () => {
   Som.ceu(true);
 };
 ["pointerdown", "keydown"].forEach((ev) => document.addEventListener(ev, ligarCeuDoInicio, { once: true }));
+// Privacidade, termos e créditos abrem numa janela por cima do jogo, sem sair da página
+// nem perder a viagem. As páginas continuam existindo sozinhas para quem chega por link direto.
+// Ctrl/Cmd+clique ou botão do meio ainda abrem numa aba nova, como um link normal.
+const janela = $("janela-info");
+const quadro = $("janela-quadro");
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("a[href]");
+  if (!a || !/(privacidade|termos|creditos)\.html$/.test(a.getAttribute("href"))) return;
+  if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || typeof janela.showModal !== "function") return;
+  e.preventDefault();
+  if (quadro.dataset.pagina !== a.href) {
+    quadro.dataset.pagina = a.href;
+    quadro.src = a.href;
+  }
+  janela.showModal();
+  quadro.focus();
+});
+// clicar no fundo escuro (fora do quadro) fecha
+janela.addEventListener("click", (e) => { if (e.target === janela) janela.close(); });
+// Esc dentro do quadro: a própria página avisa (veja o fim de privacidade.html)
+window.addEventListener("message", (e) => {
+  if (e.source === quadro.contentWindow && e.data === "nicho:fechar") janela.close();
+});
 $("abrir-como").addEventListener("click", () => {
   const d = $("como-jogar");
   d.open = !d.open;

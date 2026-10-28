@@ -49,6 +49,9 @@
     .voltar { display: inline-block; font-size: 14px; letter-spacing: 2px; text-decoration: none; padding: 8px 14px; box-shadow: inset 0 0 0 1px var(--borda); background: var(--painel); }
     .caixa { background: var(--painel); border: 1px solid var(--borda); padding: 12px 16px; margin: 16px 0; }
     .pendente { color: var(--rosa); }
+    html.embutida body { background: transparent; }
+    html.embutida main { padding-top: 8px; }
+    html.embutida .voltar { display: none; }
   </style>
 </head>
 <body>
@@ -80,5 +83,12 @@
 
     <p style="margin-top: 40px"><a class="voltar" href="./">◀ VOLTAR AO JOGO</a></p>
   </main>
+  <script>
+    // Aberta dentro do jogo (na janela por cima): esconde o "voltar" e deixa Esc fechar a janela.
+    if (window.self !== window.top) {
+      document.documentElement.classList.add("embutida");
+      addEventListener("keydown", (e) => { if (e.key === "Escape") parent.postMessage("nicho:fechar", "*"); });
+    }
+  </script>
 </body>
 </html>

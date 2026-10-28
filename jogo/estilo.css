@@ -477,3 +477,21 @@ pre {
 @media (prefers-reduced-motion: reduce) {
   .caixa-apoio .pixel-logo, .caixa-insta:hover .caixa-seta { animation: none; }
 }
+
+/* Janela de privacidade, termos e créditos: abre por cima do jogo e fecha clicando fora */
+#janela-info {
+  width: min(760px, calc(100% - 32px)); height: min(80vh, 760px); max-height: calc(100% - 64px);
+  padding: 0; border: 0; overflow: visible; background: transparent; color: var(--texto);
+}
+#janela-info[open] { display: flex; flex-direction: column; animation: janela-abrir 0.18s ease-out both; }
+#janela-info::backdrop { background: rgba(4, 2, 18, 0.84); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
+#janela-quadro {
+  flex: 1; width: 100%; border: 0; display: block; clip-path: var(--recorte);
+  background: rgba(10, 8, 34, 0.97); box-shadow: inset 0 0 0 1px #b98cff;
+}
+.janela-dica {
+  margin: 10px 0 0; text-align: center; font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em;
+  color: rgba(223, 230, 255, 0.6); pointer-events: none;
+}
+@keyframes janela-abrir { from { opacity: 0; transform: translateY(8px); } }
+@media (prefers-reduced-motion: reduce) { #janela-info[open] { animation: none; } }
