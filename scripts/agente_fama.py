@@ -43,6 +43,7 @@ import datetime as dt
 import json
 import math
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -64,7 +65,10 @@ LOTE = 60  # respostas por pedido ao LLM (listas grandes estouram a resposta)
 # "revisao" é o peso escrito antes em dados/ajustes/<cat>.csv (uma revisão feita de uma vez só);
 # vira mais um palpite, não a palavra final. "visitas" (Wikipédia pt) e "texto" (ICF, frequência
 # em textos) medem o quanto se lê: entram pouco.
-PESOS = {"lembranca": 0.65, "conhecem": 0.10, "revisao": 0.15, "visitas": 0.07, "texto": 0.03}
+# Visitas subiram de 0,07 para 0,14 (e a revisão caiu de 0,15 para 0,08): depois da Wikipédia do
+# Pedrinho quase toda resposta tem visitas medidas, e o peso manual das listas novas é só a ordem
+# em que foram escritas.
+PESOS = {"lembranca": 0.65, "conhecem": 0.10, "revisao": 0.08, "visitas": 0.14, "texto": 0.03}
 TENDENCIA_MAX = 0.05  # quanto a tendência mexe na fama (0 a 1), para cima ou para baixo
 FAIXAS = [(60, "rara"), (35, "incomum"), (18, "comum"), (0, "óbvia")]  # jogo/cena.js
 
@@ -179,10 +183,28 @@ def escala(valores: dict[str, float]) -> dict[str, float]:
     return {k: (v - menor) / (maior - menor) for k, v in valores.items()}
 
 
+def visitas_wikipedia(cat_id: str) -> dict[str, int]:
+    """Visitas em 12 meses pelo dados/sinais/wikipedia/<cat>.json (scripts/completar_wikipedia.py,
+    rodado no PC do Pedrinho). Ele mede 60 dias; vezes 6 dá a mesma escala do Wikidata.
+    Também traz as respostas que entraram pela Wikipédia (as candidatas viram respostas)."""
+    dados = ler_json(SINAIS / "wikipedia" / f"{cat_id}.json")
+    saida = {}
+    for nome, m in (dados.get("respostas") or {}).items():
+        if isinstance(m, dict) and m.get("visitas_60d") and not m.get("desambiguacao"):
+            saida[normalizar(nome)] = int(m["visitas_60d"]) * 6
+    for c in dados.get("candidatas") or []:
+        if c.get("visitas_60d") and not c.get("desambiguacao"):
+            for n in [c.get("rotulo"), c["titulo"], re.sub(r"\s*\(.*?\)\s*", " ", c["titulo"]).strip()]:
+                if n:
+                    saida.setdefault(normalizar(n), int(c["visitas_60d"]) * 6)
+    return saida
+
+
 def combinar(cat: dict, llm: dict, base: pontuar.BaseICF) -> dict:
     respostas = [r["resposta"] for r in cat["respostas"]]
     itens = {normalizar(i["resposta"]): i for i in llm.get("itens", [])}
     wikidata = ler_json(SINAIS / "wikidata" / f"{cat['id']}.json")
+    wikipedia = visitas_wikipedia(cat["id"])
 
     brutos: dict[str, dict[str, float]] = {s: {} for s in PESOS}
     ajustes = pontuar.ler_ajustes(cat["id"])
@@ -201,6 +223,8 @@ def combinar(cat: dict, llm: dict, base: pontuar.BaseICF) -> dict:
         if icf is not None:
             brutos["texto"][nome] = -icf  # ICF alto = palavra rara
         visitas = (wikidata.get(nome) or {}).get("visitas_pt_12m")
+        if not isinstance(visitas, (int, float)):
+            visitas = wikipedia.get(normalizar(nome))
         if isinstance(visitas, (int, float)):
             brutos["visitas"][nome] = math.log1p(visitas)
     # Resposta sem estimativa de lembrança conta como "ninguém lembra" (0), e não como média:
@@ -210,7 +234,9 @@ def combinar(cat: dict, llm: dict, base: pontuar.BaseICF) -> dict:
         if brutos[sinal]:
             for nome in respostas:
                 brutos[sinal].setdefault(nome, 0.0)
-    pcts = {s: escala(v) for s, v in brutos.items() if len(v) >= len(respostas) / 2}
+    # Visitas entram mesmo cobrindo só 1/4 da lista: quem não tem artigo usa os outros sinais.
+    pcts = {s: escala(v) for s, v in brutos.items()
+            if len(v) >= len(respostas) / (4 if s == "visitas" else 2)}
     pesos = PESOS
 
     titulos = {(wikidata.get(n) or {}).get("ptwiki") for n in respostas} - {None}
@@ -240,7 +266,7 @@ def combinar(cat: dict, llm: dict, base: pontuar.BaseICF) -> dict:
             # podem sair de rara, ver pontuar.py
             "estimada": item.get("origem") == "estimado",
             "conhecem_pct": item.get("conhecem_pct"),
-            "visitas_pt_12m": (wikidata.get(nome) or {}).get("visitas_pt_12m"),
+            "visitas_pt_12m": (wikidata.get(nome) or {}).get("visitas_pt_12m") or wikipedia.get(normalizar(nome)),
             "tendencia": t,
         }
     return {

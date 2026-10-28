@@ -1,0 +1,6100 @@
+{
+ "categoria": "material-escolar",
+ "gerado_em": "2026-10-28",
+ "sinais": [
+  "conhecem",
+  "lembranca",
+  "revisao",
+  "texto"
+ ],
+ "meses_de_visitas": [],
+ "pesos": {
+  "lembranca": 0.65,
+  "conhecem": 0.1,
+  "revisao": 0.08,
+  "texto": 0.03
+ },
+ "estimadas_pelo_llm": 60,
+ "respostas": {
+  "Lápis": {
+   "fama": 0.9894,
+   "lembranca_em_1000": 200.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 5772,
+   "tendencia": null
+  },
+  "Caneta": {
+   "fama": 0.9476,
+   "lembranca_em_1000": 150.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 5562,
+   "tendencia": null
+  },
+  "Borracha": {
+   "fama": 0.9163,
+   "lembranca_em_1000": 120.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 7236,
+   "tendencia": null
+  },
+  "Caderno": {
+   "fama": 0.9159,
+   "lembranca_em_1000": 120.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 2472,
+   "tendencia": null
+  },
+  "Apontador": {
+   "fama": 0.7854,
+   "lembranca_em_1000": 50.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua": {
+   "fama": 0.7862,
+   "lembranca_em_1000": 50.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 3792,
+   "tendencia": null
+  },
+  "Mochila": {
+   "fama": 0.7591,
+   "lembranca_em_1000": 40.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 2628,
+   "tendencia": null
+  },
+  "Estojo": {
+   "fama": 0.7158,
+   "lembranca_em_1000": 30.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura": {
+   "fama": 0.6595,
+   "lembranca_em_1000": 20.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 4758,
+   "tendencia": null
+  },
+  "Cola": {
+   "fama": 0.6943,
+   "lembranca_em_1000": 25.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1710,
+   "tendencia": null
+  },
+  "Lápis de cor": {
+   "fama": 0.6961,
+   "lembranca_em_1000": 25.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1128,
+   "tendencia": null
+  },
+  "Giz de cera": {
+   "fama": 0.5657,
+   "lembranca_em_1000": 10.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1530,
+   "tendencia": null
+  },
+  "Canetinha": {
+   "fama": 0.5344,
+   "lembranca_em_1000": 8.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1116,
+   "tendencia": null
+  },
+  "Marca-texto": {
+   "fama": 0.5114,
+   "lembranca_em_1000": 6.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Corretivo": {
+   "fama": 0.4764,
+   "lembranca_em_1000": 5.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 306,
+   "tendencia": null
+  },
+  "Caderno de desenho": {
+   "fama": 0.2794,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro": {
+   "fama": 0.6297,
+   "lembranca_em_1000": 15.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 23772,
+   "tendencia": null
+  },
+  "Agenda": {
+   "fama": 0.4569,
+   "lembranca_em_1000": 4.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1242,
+   "tendencia": null
+  },
+  "Fichário": {
+   "fama": 0.4082,
+   "lembranca_em_1000": 3.0,
+   "estimada": true,
+   "conhecem_pct": 98.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha de papel": {
+   "fama": 0.1128,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel sulfite": {
+   "fama": 0.3721,
+   "lembranca_em_1000": 2.0,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": 1626,
+   "tendencia": null
+  },
+  "Cartolina": {
+   "fama": 0.4096,
+   "lembranca_em_1000": 3.0,
+   "estimada": true,
+   "conhecem_pct": 98.0,
+   "visitas_pt_12m": 918,
+   "tendencia": null
+  },
+  "Papel crepom": {
+   "fama": 0.2512,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": 546,
+   "tendencia": null
+  },
+  "Papel de seda": {
+   "fama": 0.1075,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel cartão": {
+   "fama": 0.2469,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": 918,
+   "tendencia": null
+  },
+  "EVA": {
+   "fama": 0.2604,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Massinha": {
+   "fama": 0.3091,
+   "lembranca_em_1000": 1.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1320,
+   "tendencia": null
+  },
+  "Tinta guache": {
+   "fama": 0.339,
+   "lembranca_em_1000": 1.5,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": 1920,
+   "tendencia": null
+  },
+  "Pincel": {
+   "fama": 0.3149,
+   "lembranca_em_1000": 1.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1590,
+   "tendencia": null
+  },
+  "Aquarela": {
+   "fama": 0.096,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4038,
+   "tendencia": null
+  },
+  "Compasso": {
+   "fama": 0.5245,
+   "lembranca_em_1000": 8.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Transferidor": {
+   "fama": 0.4552,
+   "lembranca_em_1000": 5.0,
+   "estimada": true,
+   "conhecem_pct": 98.0,
+   "visitas_pt_12m": 2694,
+   "tendencia": null
+  },
+  "Esquadro": {
+   "fama": 0.4287,
+   "lembranca_em_1000": 4.0,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": 1920,
+   "tendencia": null
+  },
+  "Calculadora": {
+   "fama": 0.4884,
+   "lembranca_em_1000": 6.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 26154,
+   "tendencia": null
+  },
+  "Lancheira": {
+   "fama": 0.4362,
+   "lembranca_em_1000": 4.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 498,
+   "tendencia": null
+  },
+  "Garrafinha": {
+   "fama": 0.2642,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uniforme": {
+   "fama": 0.271,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1164,
+   "tendencia": null
+  },
+  "Tênis": {
+   "fama": 0.0988,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 10392,
+   "tendencia": null
+  },
+  "Etiqueta": {
+   "fama": 0.0941,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2886,
+   "tendencia": null
+  },
+  "Encapador": {
+   "fama": 0.0739,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Contact": {
+   "fama": 0.0733,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 8364,
+   "tendencia": null
+  },
+  "Durex": {
+   "fama": 0.3305,
+   "lembranca_em_1000": 1.5,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1692,
+   "tendencia": null
+  },
+  "Fita crepe": {
+   "fama": 0.0914,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grampeador": {
+   "fama": 0.355,
+   "lembranca_em_1000": 2.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 504,
+   "tendencia": null
+  },
+  "Grampo": {
+   "fama": 0.0863,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 552,
+   "tendencia": null
+  },
+  "Clipe": {
+   "fama": 0.3074,
+   "lembranca_em_1000": 1.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1350,
+   "tendencia": null
+  },
+  "Percevejo": {
+   "fama": 0.0774,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alfinete": {
+   "fama": 0.0827,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1026,
+   "tendencia": null
+  },
+  "Pasta": {
+   "fama": 0.407,
+   "lembranca_em_1000": 3.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta catálogo": {
+   "fama": 0.0915,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Envelope": {
+   "fama": 0.0863,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1080,
+   "tendencia": null
+  },
+  "Dicionário": {
+   "fama": 0.304,
+   "lembranca_em_1000": 1.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 7584,
+   "tendencia": null
+  },
+  "Atlas": {
+   "fama": 0.2275,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 90.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Globo": {
+   "fama": 0.2293,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mapa": {
+   "fama": 0.0926,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 9402,
+   "tendencia": null
+  },
+  "Quadro-negro": {
+   "fama": 0.233,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 1482,
+   "tendencia": null
+  },
+  "Giz": {
+   "fama": 0.2552,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 2424,
+   "tendencia": null
+  },
+  "Apagador": {
+   "fama": 0.2255,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 276,
+   "tendencia": null
+  },
+  "Pincel atômico": {
+   "fama": 0.0803,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 210,
+   "tendencia": null
+  },
+  "Quadro branco": {
+   "fama": 0.0905,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 702,
+   "tendencia": null
+  },
+  "Carteira": {
+   "fama": 0.0863,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1170,
+   "tendencia": null
+  },
+  "Lápis 6B": {
+   "fama": 0.0833,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lapiseira": {
+   "fama": 0.4172,
+   "lembranca_em_1000": 4.0,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 2010,
+   "tendencia": null
+  },
+  "Grafite": {
+   "fama": 0.2879,
+   "lembranca_em_1000": 1.0,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": 9912,
+   "tendencia": null
+  },
+  "Caneta esferográfica": {
+   "fama": 0.2512,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 5424,
+   "tendencia": null
+  },
+  "Caneta-tinteiro": {
+   "fama": 0.0764,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2832,
+   "tendencia": null
+  },
+  "Caneta gel": {
+   "fama": 0.0803,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta permanente": {
+   "fama": 0.0813,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta fineliner": {
+   "fama": 0.0789,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bloco de notas": {
+   "fama": 0.2562,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 100.0,
+   "visitas_pt_12m": 145044,
+   "tendencia": null
+  },
+  "Post-it": {
+   "fama": 0.2549,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 98.0,
+   "visitas_pt_12m": 3768,
+   "tendencia": null
+  },
+  "Bloquinho": {
+   "fama": 0.0554,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno universitário": {
+   "fama": 0.0779,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de caligrafia": {
+   "fama": 0.0732,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno brochura": {
+   "fama": 0.0738,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno quadriculado": {
+   "fama": 0.195,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de música": {
+   "fama": 0.0796,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro didático": {
+   "fama": 0.0783,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2250,
+   "tendencia": null
+  },
+  "Apostila": {
+   "fama": 0.0728,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1008,
+   "tendencia": null
+  },
+  "Gibi": {
+   "fama": 0.0669,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2388,
+   "tendencia": null
+  },
+  "Revista": {
+   "fama": 0.0793,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5568,
+   "tendencia": null
+  },
+  "Prancheta": {
+   "fama": 0.2104,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": 1050,
+   "tendencia": null
+  },
+  "Pen drive": {
+   "fama": 0.0712,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6684,
+   "tendencia": null
+  },
+  "Tablet": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5334,
+   "tendencia": null
+  },
+  "Notebook": {
+   "fama": 0.0715,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6384,
+   "tendencia": null
+  },
+  "Computador": {
+   "fama": 0.0754,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 66288,
+   "tendencia": null
+  },
+  "Fone de ouvido": {
+   "fama": 0.0719,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4458,
+   "tendencia": null
+  },
+  "Régua de 30 cm": {
+   "fama": 0.069,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua T": {
+   "fama": 0.0633,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 576,
+   "tendencia": null
+  },
+  "Escalímetro": {
+   "fama": 0.045,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 612,
+   "tendencia": null
+  },
+  "Normógrafo": {
+   "fama": 0.0515,
+   "lembranca_em_1000": 0.02,
+   "estimada": true,
+   "conhecem_pct": 5.0,
+   "visitas_pt_12m": 636,
+   "tendencia": null
+  },
+  "Tira-linhas": {
+   "fama": 0.0884,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": 456,
+   "tendencia": null
+  },
+  "Tinteiro": {
+   "fama": 0.0572,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 336,
+   "tendencia": null
+  },
+  "Pena": {
+   "fama": 0.0728,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3738,
+   "tendencia": null
+  },
+  "Lousa de ardósia": {
+   "fama": 0.0562,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ábaco": {
+   "fama": 0.1714,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": 17094,
+   "tendencia": null
+  },
+  "Tabuada": {
+   "fama": 0.1919,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": 3000,
+   "tendencia": null
+  },
+  "Cartilha": {
+   "fama": 0.0602,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 828,
+   "tendencia": null
+  },
+  "Caderneta": {
+   "fama": 0.056,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Crachá": {
+   "fama": 0.0545,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1038,
+   "tendencia": null
+  },
+  "Carteirinha": {
+   "fama": 0.0563,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Agenda escolar": {
+   "fama": 0.0649,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calendário": {
+   "fama": 0.0632,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 13548,
+   "tendencia": null
+  },
+  "Cola bastão": {
+   "fama": 0.2257,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola branca": {
+   "fama": 0.0617,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola colorida": {
+   "fama": 0.183,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola glitter": {
+   "fama": 0.0566,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Glitter": {
+   "fama": 0.19,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 95.0,
+   "visitas_pt_12m": 2346,
+   "tendencia": null
+  },
+  "Lantejoula": {
+   "fama": 0.0421,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1512,
+   "tendencia": null
+  },
+  "Paetê": {
+   "fama": 0.0456,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1512,
+   "tendencia": null
+  },
+  "Botão": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3234,
+   "tendencia": null
+  },
+  "Barbante": {
+   "fama": 0.0495,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1392,
+   "tendencia": null
+  },
+  "Lã": {
+   "fama": 0.0522,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4350,
+   "tendencia": null
+  },
+  "Fita": {
+   "fama": 0.0548,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel camurça": {
+   "fama": 0.0539,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel laminado": {
+   "fama": 0.0539,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel color set": {
+   "fama": 0.0555,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel kraft": {
+   "fama": 0.0514,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1554,
+   "tendencia": null
+  },
+  "Papel vegetal": {
+   "fama": 0.0545,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1038,
+   "tendencia": null
+  },
+  "Papel milimetrado": {
+   "fama": 0.1284,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 60.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel almaço": {
+   "fama": 0.0452,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2412,
+   "tendencia": null
+  },
+  "Folha pautada": {
+   "fama": 0.0539,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1896,
+   "tendencia": null
+  },
+  "Bloco de desenho": {
+   "fama": 0.0521,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canson": {
+   "fama": 0.0248,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carvão": {
+   "fama": 0.046,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 10554,
+   "tendencia": null
+  },
+  "Pastel seco": {
+   "fama": 0.0462,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastel oleoso": {
+   "fama": 0.0409,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nanquim": {
+   "fama": 0.0372,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 9528,
+   "tendencia": null
+  },
+  "Bico de pena": {
+   "fama": 0.049,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2280,
+   "tendencia": null
+  },
+  "Estilete": {
+   "fama": 0.036,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura sem ponta": {
+   "fama": 0.049,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Furador": {
+   "fama": 0.0332,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 414,
+   "tendencia": null
+  },
+  "Perfurador": {
+   "fama": 0.0317,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 414,
+   "tendencia": null
+  },
+  "Extrator de grampo": {
+   "fama": 0.0346,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porta-lápis": {
+   "fama": 0.0456,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porta-canetas": {
+   "fama": 0.0485,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Organizador": {
+   "fama": 0.0381,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mochila de rodinha": {
+   "fama": 0.036,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolsa": {
+   "fama": 0.0446,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Necessaire": {
+   "fama": 0.0294,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Garrafa térmica": {
+   "fama": 0.0397,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1620,
+   "tendencia": null
+  },
+  "Pote de lanche": {
+   "fama": 0.0364,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Merendeira": {
+   "fama": 0.0257,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 498,
+   "tendencia": null
+  },
+  "Guardanapo": {
+   "fama": 0.0316,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2226,
+   "tendencia": null
+  },
+  "Avental": {
+   "fama": 0.0307,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 996,
+   "tendencia": null
+  },
+  "Jaleco": {
+   "fama": 0.0258,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1254,
+   "tendencia": null
+  },
+  "Óculos de proteção": {
+   "fama": 0.039,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 372,
+   "tendencia": null
+  },
+  "Microscópio": {
+   "fama": 0.0282,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 26394,
+   "tendencia": null
+  },
+  "Lupa": {
+   "fama": 0.0274,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 9852,
+   "tendencia": null
+  },
+  "Tubo de ensaio": {
+   "fama": 0.0342,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1314,
+   "tendencia": null
+  },
+  "Béquer": {
+   "fama": 0.0183,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2034,
+   "tendencia": null
+  },
+  "Termômetro": {
+   "fama": 0.027,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 7266,
+   "tendencia": null
+  },
+  "Ímã": {
+   "fama": 0.0244,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 7590,
+   "tendencia": null
+  },
+  "Bússola": {
+   "fama": 0.0254,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 28836,
+   "tendencia": null
+  },
+  "Mapa-múndi": {
+   "fama": 0.0267,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 42246,
+   "tendencia": null
+  },
+  "Planisfério": {
+   "fama": 0.0143,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 42246,
+   "tendencia": null
+  },
+  "Esqueleto": {
+   "fama": 0.0249,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5874,
+   "tendencia": null
+  },
+  "Maquete": {
+   "fama": 0.0226,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3660,
+   "tendencia": null
+  },
+  "Cartaz": {
+   "fama": 0.0285,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3408,
+   "tendencia": null
+  },
+  "Lancheira térmica": {
+   "fama": 0.025,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Squeeze": {
+   "fama": 0.0183,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Toalhinha": {
+   "fama": 0.0192,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Escova de dente": {
+   "fama": 0.0258,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2706,
+   "tendencia": null
+  },
+  "Pasta de dente": {
+   "fama": 0.0269,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3084,
+   "tendencia": null
+  },
+  "Álcool em gel": {
+   "fama": 0.033,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 18792,
+   "tendencia": null
+  },
+  "Mata-borrão": {
+   "fama": 0.0566,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": 1374,
+   "tendencia": null
+  },
+  "Lápis preto": {
+   "fama": 0.0645,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis grafite": {
+   "fama": 0.0595,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis 2B": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis HB": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de carpinteiro": {
+   "fama": 0.0581,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis jumbo": {
+   "fama": 0.0577,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis triangular": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis bicolor": {
+   "fama": 0.0572,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis vermelho e azul": {
+   "fama": 0.0649,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis com borracha": {
+   "fama": 0.0682,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Faber-Castell": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Faber-Castell": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lapiseira 0.5": {
+   "fama": 0.05,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lapiseira 0.7": {
+   "fama": 0.05,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grafite de lapiseira": {
+   "fama": 0.0539,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ponta de lapiseira": {
+   "fama": 0.0574,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta azul": {
+   "fama": 0.064,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta preta": {
+   "fama": 0.0628,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta vermelha": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta verde": {
+   "fama": 0.0642,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Bic": {
+   "fama": 0.0608,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bic Cristal": {
+   "fama": 0.0614,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta de quatro cores": {
+   "fama": 0.0659,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta multicor": {
+   "fama": 0.0542,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta apagável": {
+   "fama": 0.0513,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Frixion": {
+   "fama": 0.0608,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pena de escrever": {
+   "fama": 0.0677,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta nanquim": {
+   "fama": 0.0567,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta brush": {
+   "fama": 0.0608,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brush pen": {
+   "fama": 0.0598,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta pincel": {
+   "fama": 0.0601,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta para CD": {
+   "fama": 0.0698,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta de quadro branco": {
+   "fama": 0.0651,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marcador de quadro": {
+   "fama": 0.0629,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta marca-texto": {
+   "fama": 0.0663,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Stabilo": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marca-texto pastel": {
+   "fama": 0.0653,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canetinha hidrográfica": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hidrocor": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canetinha Faber": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de cera Acrilex": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz pastel": {
+   "fama": 0.0571,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz pastel oleoso": {
+   "fama": 0.0559,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de lousa": {
+   "fama": 0.0554,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz colorido": {
+   "fama": 0.0589,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz branco": {
+   "fama": 0.0623,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de calçada": {
+   "fama": 0.058,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor aquarelável": {
+   "fama": 0.065,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis aquarelável": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor 24 cores": {
+   "fama": 0.0659,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor 36 cores": {
+   "fama": 0.0659,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor 48 cores": {
+   "fama": 0.0659,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor 72 cores": {
+   "fama": 0.0659,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caixa de lápis de cor": {
+   "fama": 0.0661,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis metálico": {
+   "fama": 0.0591,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis neon": {
+   "fama": 0.0593,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor pastel": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha branca": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha Mercur": {
+   "fama": 0.0616,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha de bolinha": {
+   "fama": 0.0604,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha de cheirinho": {
+   "fama": 0.0594,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha colorida": {
+   "fama": 0.0607,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha de lápis e caneta": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha plástica": {
+   "fama": 0.0611,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha limpa-tipos": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha elétrica": {
+   "fama": 0.0632,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Borracha caneta": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apontador com depósito": {
+   "fama": 0.0663,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apontador simples": {
+   "fama": 0.0623,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apontador duplo": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apontador elétrico": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apontador de mesa": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apontador de manivela": {
+   "fama": 0.0534,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua de 15 cm": {
+   "fama": 0.0615,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua de 20 cm": {
+   "fama": 0.0615,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua flexível": {
+   "fama": 0.0581,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua de alumínio": {
+   "fama": 0.0595,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua de acrílico": {
+   "fama": 0.058,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua paralela": {
+   "fama": 0.0572,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esquadro de 45 graus": {
+   "fama": 0.0564,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esquadro de 60 graus": {
+   "fama": 0.0564,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jogo de esquadros": {
+   "fama": 0.0712,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gabarito": {
+   "fama": 0.059,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua de letras": {
+   "fama": 0.0614,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua de círculos": {
+   "fama": 0.0563,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Curva francesa": {
+   "fama": 0.0619,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Compasso escolar": {
+   "fama": 0.0607,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Compasso de precisão": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Transferidor de 180 graus": {
+   "fama": 0.0546,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Transferidor de 360 graus": {
+   "fama": 0.0546,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de 10 matérias": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de uma matéria": {
+   "fama": 0.0697,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno espiral": {
+   "fama": 0.0596,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de capa dura": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno pequeno": {
+   "fama": 0.0648,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de linguagem": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de matemática": {
+   "fama": 0.0631,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno pautado": {
+   "fama": 0.058,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de pauta musical": {
+   "fama": 0.0629,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de recado": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de recados": {
+   "fama": 0.061,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno inteligente": {
+   "fama": 0.0627,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fichário de argolas": {
+   "fama": 0.0524,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Refil de fichário": {
+   "fama": 0.0531,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha de fichário": {
+   "fama": 0.0583,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Divisória de fichário": {
+   "fama": 0.0522,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha quadriculada": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha milimetrada": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha de almaço": {
+   "fama": 0.055,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bloco de rascunho": {
+   "fama": 0.0599,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bloco de anotações": {
+   "fama": 0.064,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bloco de papel": {
+   "fama": 0.0665,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bloco canson": {
+   "fama": 0.064,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel Canson": {
+   "fama": 0.069,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sulfite A4": {
+   "fama": 0.0514,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Resma de papel": {
+   "fama": 0.0576,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel A3": {
+   "fama": 0.069,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel manteiga": {
+   "fama": 0.0656,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartolina branca": {
+   "fama": 0.0598,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartolina colorida": {
+   "fama": 0.0568,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel seda": {
+   "fama": 0.0643,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel celofane": {
+   "fama": 0.0603,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Color set": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel dobradura": {
+   "fama": 0.0597,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel de origami": {
+   "fama": 0.0624,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel pardo": {
+   "fama": 0.0628,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel paraná": {
+   "fama": 0.0683,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel cartonado": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel colorido": {
+   "fama": 0.0652,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel lustroso": {
+   "fama": 0.0583,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel espelho": {
+   "fama": 0.0662,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel micro-ondulado": {
+   "fama": 0.0623,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papelão": {
+   "fama": 0.0582,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha de EVA": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "EVA com glitter": {
+   "fama": 0.067,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Isopor": {
+   "fama": 0.0562,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Placa de isopor": {
+   "fama": 0.0606,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolinha de isopor": {
+   "fama": 0.0577,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Massinha Play-Doh": {
+   "fama": 0.0574,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Play-Doh": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Argila": {
+   "fama": 0.0573,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Biscuit": {
+   "fama": 0.0573,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tinta acrílica": {
+   "fama": 0.0629,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tinta plástica": {
+   "fama": 0.0618,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tinta para tecido": {
+   "fama": 0.0699,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tinta para rosto": {
+   "fama": 0.0702,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tinta a dedo": {
+   "fama": 0.0627,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tinta aquarela": {
+   "fama": 0.0595,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aquarela em pastilha": {
+   "fama": 0.0646,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estojo de aquarela": {
+   "fama": 0.0571,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pincel chato": {
+   "fama": 0.0604,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pincel redondo": {
+   "fama": 0.0593,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pincel número 10": {
+   "fama": 0.065,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit de pincéis": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paleta de pintura": {
+   "fama": 0.0613,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Godê": {
+   "fama": 0.0488,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pote d'água": {
+   "fama": 0.0589,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Avental de pintura": {
+   "fama": 0.0599,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Camiseta velha para pintura": {
+   "fama": 0.0683,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola Tenaz": {
+   "fama": 0.0565,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola Pritt": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola instantânea": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Super Bonder": {
+   "fama": 0.0691,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola quente": {
+   "fama": 0.0641,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pistola de cola quente": {
+   "fama": 0.0621,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bastão de cola quente": {
+   "fama": 0.0614,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola de isopor": {
+   "fama": 0.0594,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola de EVA": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cola spray": {
+   "fama": 0.0608,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita dupla-face": {
+   "fama": 0.0643,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita adesiva transparente": {
+   "fama": 0.0619,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita colorida": {
+   "fama": 0.061,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita washi": {
+   "fama": 0.0623,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita corretiva": {
+   "fama": 0.0623,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Corretivo líquido": {
+   "fama": 0.0599,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Corretivo em fita": {
+   "fama": 0.0671,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura escolar": {
+   "fama": 0.0616,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura de picotar": {
+   "fama": 0.0518,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura de canhoto": {
+   "fama": 0.0559,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura Mundial": {
+   "fama": 0.0629,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lâmina de estilete": {
+   "fama": 0.0554,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Base de corte": {
+   "fama": 0.0679,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grampeador pequeno": {
+   "fama": 0.0589,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grampos": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clipes coloridos": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clips": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prendedor de papel": {
+   "fama": 0.0605,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Binder clip": {
+   "fama": 0.0582,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tachinha": {
+   "fama": 0.0447,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Furador de papel": {
+   "fama": 0.0599,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saca-grampo": {
+   "fama": 0.0554,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elástico": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elástico de dinheiro": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta sanfonada": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta com elástico": {
+   "fama": 0.0678,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta polionda": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta de plástico": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta L": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta suspensa": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta arquivo": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta de papelão": {
+   "fama": 0.0611,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Envelope pardo": {
+   "fama": 0.0574,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Envelope de plástico": {
+   "fama": 0.0608,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Plástico de folha": {
+   "fama": 0.0646,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saco plástico": {
+   "fama": 0.0634,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Capa plástica": {
+   "fama": 0.0635,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Encapar caderno": {
+   "fama": 0.0549,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel contact": {
+   "fama": 0.069,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Etiqueta escolar": {
+   "fama": 0.0624,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Etiqueta com nome": {
+   "fama": 0.0709,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Etiqueta adesiva": {
+   "fama": 0.0593,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Adesivo": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Adesivos de estrelinha": {
+   "fama": 0.0538,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Adesivo de parabéns": {
+   "fama": 0.0646,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carimbo de parabéns": {
+   "fama": 0.0624,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carimbo": {
+   "fama": 0.0569,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Almofada de carimbo": {
+   "fama": 0.0579,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Planner": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Diário escolar": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boletim": {
+   "fama": 0.0617,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Camiseta do uniforme": {
+   "fama": 0.0616,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Agasalho do uniforme": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tênis escolar": {
+   "fama": 0.0645,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mochila escolar": {
+   "fama": 0.0633,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mochila de costas": {
+   "fama": 0.0624,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta escolar": {
+   "fama": 0.0647,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Garrafinha de água": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Squeeze escolar": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit higiene": {
+   "fama": 0.0646,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Escova de dente da escola": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estojo de zíper": {
+   "fama": 0.0574,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estojo duplo": {
+   "fama": 0.0604,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estojo triplo": {
+   "fama": 0.0577,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estojo de lata": {
+   "fama": 0.0596,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estojo de pano": {
+   "fama": 0.06,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de português": {
+   "fama": 0.0697,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de matemática": {
+   "fama": 0.0677,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de inglês": {
+   "fama": 0.0697,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro paradidático": {
+   "fama": 0.0583,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gramática": {
+   "fama": 0.0587,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Minidicionário": {
+   "fama": 0.0451,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dicionário de inglês": {
+   "fama": 0.0648,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Atlas geográfico": {
+   "fama": 0.0577,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calculadora científica": {
+   "fama": 0.0572,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calculadora simples": {
+   "fama": 0.0634,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calculadora HP": {
+   "fama": 0.0572,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calculadora Casio": {
+   "fama": 0.0572,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Material dourado": {
+   "fama": 0.0652,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Blocos lógicos": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Escala Cuisenaire": {
+   "fama": 0.064,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sólidos geométricos": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tangram": {
+   "fama": 0.0483,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Quebra-cabeça": {
+   "fama": 0.0661,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alfabeto móvel": {
+   "fama": 0.0602,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Letras móveis": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caminho Suave": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de caligrafia": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flauta doce": {
+   "fama": 0.0614,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flauta": {
+   "fama": 0.0571,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Instrumento musical": {
+   "fama": 0.0649,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tablet escolar": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Notebook escolar": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jaleco de laboratório": {
+   "fama": 0.0574,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bússola escolar": {
+   "fama": 0.0604,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit de química": {
+   "fama": 0.0653,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit de ciências": {
+   "fama": 0.067,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Painel": {
+   "fama": 0.0645,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel para cartaz": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apagador de lousa": {
+   "fama": 0.051,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de quadro": {
+   "fama": 0.0614,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lousa mágica": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lousinha": {
+   "fama": 0.0417,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Quadro de cortiça": {
+   "fama": 0.0606,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mural": {
+   "fama": 0.0582,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tachinhas coloridas": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Post-it colorido": {
+   "fama": 0.0646,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bloco adesivo": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marcador de página": {
+   "fama": 0.0647,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marca-página": {
+   "fama": 0.0692,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clip marca-página": {
+   "fama": 0.0655,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua de leitura": {
+   "fama": 0.0618,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Suporte de livro": {
+   "fama": 0.069,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Encadernação": {
+   "fama": 0.0543,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Espiral de encadernação": {
+   "fama": 0.0558,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Capa de encadernação": {
+   "fama": 0.0603,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grampeador de mesa": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fichas pautadas": {
+   "fama": 0.0591,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fichas de estudo": {
+   "fama": 0.064,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flashcards": {
+   "fama": 0.0384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartões de memorização": {
+   "fama": 0.0543,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha de prova": {
+   "fama": 0.067,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gabarito de prova": {
+   "fama": 0.0636,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha de redação": {
+   "fama": 0.0652,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel de carta": {
+   "fama": 0.0675,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bilhete": {
+   "fama": 0.0601,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carteira escolar": {
+   "fama": 0.0646,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cadeira": {
+   "fama": 0.0639,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mesa": {
+   "fama": 0.0675,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Armário": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Escaninho": {
+   "fama": 0.0466,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cadeado do armário": {
+   "fama": 0.0581,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Crachá escolar": {
+   "fama": 0.0596,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carteirinha de estudante": {
+   "fama": 0.06,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Passe escolar": {
+   "fama": 0.0648,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Compactor": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Compactor": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Pilot": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pilot": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Pentel": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pentel": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Stabilo": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Uni-ball": {
+   "fama": 0.0683,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uni-ball": {
+   "fama": 0.0662,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Cis": {
+   "fama": 0.0661,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cis": {
+   "fama": 0.0619,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Tris": {
+   "fama": 0.0645,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tris": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta Maped": {
+   "fama": 0.0703,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maped": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Acrilex": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tilibra": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jandaia": {
+   "fama": 0.0602,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Foroni": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Credeal": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno Tilibra": {
+   "fama": 0.0713,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno Jandaia": {
+   "fama": 0.0657,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno Credeal": {
+   "fama": 0.0713,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno da Barbie": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno do Homem-Aranha": {
+   "fama": 0.0741,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno do Flamengo": {
+   "fama": 0.0725,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de personagem": {
+   "fama": 0.0734,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de time": {
+   "fama": 0.0743,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de capa de desenho": {
+   "fama": 0.0739,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno com adesivos": {
+   "fama": 0.0812,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno com cadeado": {
+   "fama": 0.0756,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Diário com cadeado": {
+   "fama": 0.077,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno Moleskine": {
+   "fama": 0.0713,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Moleskine": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bullet journal": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno pontilhado": {
+   "fama": 0.0647,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno sem pauta": {
+   "fama": 0.0759,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de anotações": {
+   "fama": 0.0713,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderneta de bolso": {
+   "fama": 0.0679,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de vocabulário": {
+   "fama": 0.0698,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Bic": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Evolution": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Ecolápis": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ecolápis": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Staedtler": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Staedtler": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Koh-i-noor": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Cretacolor": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Derwent": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Prismacolor": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prismacolor": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Caran d'Ache": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis Polychromos": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor Faber-Castell": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor Acrilex": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor Bic": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor Tris": {
+   "fama": 0.0693,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor Maped": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cor Giotto": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de cera Faber-Castell": {
+   "fama": 0.0673,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de cera grosso": {
+   "fama": 0.0698,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de cera fino": {
+   "fama": 0.0684,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de cera jumbo": {
+   "fama": 0.0661,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de cera triangular": {
+   "fama": 0.0661,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Giz de cera de batom": {
+   "fama": 0.0685,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis de cera": {
+   "fama": 0.0698,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis dermatográfico": {
+   "fama": 0.0596,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lápis carvão": {
+   "fama": 0.07,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carvão vegetal": {
+   "fama": 0.0696,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carvão para desenho": {
+   "fama": 0.0784,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sanguínea": {
+   "fama": 0.0671,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grafite em pó": {
+   "fama": 0.0775,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esfuminho": {
+   "fama": 0.0523,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esfumador": {
+   "fama": 0.0516,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spray fixador": {
+   "fama": 0.0657,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prancheta de desenho": {
+   "fama": 0.0679,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prancheta A4": {
+   "fama": 0.0611,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prancheta portátil": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mesa digitalizadora": {
+   "fama": 0.0673,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cavalete": {
+   "fama": 0.0625,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tela de pintura": {
+   "fama": 0.075,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tela de algodão": {
+   "fama": 0.0741,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel aquarela": {
+   "fama": 0.0721,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel A2": {
+   "fama": 0.0785,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel Kraft colorido": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel reciclado": {
+   "fama": 0.0721,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel colorido A4": {
+   "fama": 0.0747,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel de dobradura colorido": {
+   "fama": 0.0697,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel glitter": {
+   "fama": 0.0729,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel metalizado": {
+   "fama": 0.0714,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel fosforescente": {
+   "fama": 0.0674,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel neon": {
+   "fama": 0.0726,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel ofício": {
+   "fama": 0.0747,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel timbrado": {
+   "fama": 0.0693,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel de presente": {
+   "fama": 0.0785,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Papel jornal": {
+   "fama": 0.0779,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jornal velho": {
+   "fama": 0.0766,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Revista para recortar": {
+   "fama": 0.0772,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Revista velha": {
+   "fama": 0.0758,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Retalho de tecido": {
+   "fama": 0.0701,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Feltro": {
+   "fama": 0.0681,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lã para artesanato": {
+   "fama": 0.0774,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Barbante colorido": {
+   "fama": 0.0681,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Linha de bordar": {
+   "fama": 0.0714,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Agulha sem ponta": {
+   "fama": 0.0761,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Botões para artesanato": {
+   "fama": 0.0781,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Miçanga": {
+   "fama": 0.0582,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Purpurina": {
+   "fama": 0.0605,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gliter": {
+   "fama": 0.0502,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Olhinhos móveis": {
+   "fama": 0.0746,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Olho móvel": {
+   "fama": 0.0736,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pompom colorido": {
+   "fama": 0.0656,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Limpa-cachimbo": {
+   "fama": 0.0676,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arame de chenille": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Palito de picolé colorido": {
+   "fama": 0.0672,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Palito de sorvete": {
+   "fama": 0.0684,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Palito de churrasco para maquete": {
+   "fama": 0.0731,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canudo colorido": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tampinha de garrafa": {
+   "fama": 0.0662,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rolo de papel higiênico": {
+   "fama": 0.0711,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caixa de ovo": {
+   "fama": 0.0747,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caixa de sapato": {
+   "fama": 0.0742,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Garrafa pet para reciclagem": {
+   "fama": 0.0777,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sucata": {
+   "fama": 0.0665,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesourinha": {
+   "fama": 0.0578,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura de ponta redonda": {
+   "fama": 0.0706,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura de cortar papel": {
+   "fama": 0.0726,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tesoura com mola": {
+   "fama": 0.0752,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cortador de círculo": {
+   "fama": 0.0684,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Furador de papel decorativo": {
+   "fama": 0.0686,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Furador de EVA": {
+   "fama": 0.0657,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Furador de estrelinha": {
+   "fama": 0.0617,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Perfurador de dois furos": {
+   "fama": 0.0695,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Perfurador de um furo": {
+   "fama": 0.0724,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grampeador alicate": {
+   "fama": 0.0624,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grampo 26/6": {
+   "fama": 0.0643,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grampo trilho": {
+   "fama": 0.0651,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Trilho de plástico": {
+   "fama": 0.0695,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Colchete": {
+   "fama": 0.0559,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Colchete de pasta": {
+   "fama": 0.0647,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prendedor de pasta": {
+   "fama": 0.0675,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clips gigante": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prendedor de madeira": {
+   "fama": 0.0689,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pregador colorido": {
+   "fama": 0.0687,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ímã de quadro": {
+   "fama": 0.0695,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita métrica": {
+   "fama": 0.0683,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Trena": {
+   "fama": 0.0609,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Régua de geometria": {
+   "fama": 0.0667,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit de geometria": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit escolar": {
+   "fama": 0.0758,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit de volta às aulas": {
+   "fama": 0.0779,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lista de material": {
+   "fama": 0.0781,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lista de material escolar": {
+   "fama": 0.0771,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de colorir escolar": {
+   "fama": 0.075,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de atividades": {
+   "fama": 0.0797,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caderno de atividades": {
+   "fama": 0.075,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Folha de atividade": {
+   "fama": 0.0763,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fotocópia": {
+   "fama": 0.0627,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Xerox": {
+   "fama": 0.0661,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Impressão": {
+   "fama": 0.0744,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartucho de tinta": {
+   "fama": 0.07,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Toner": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Impressora escolar": {
+   "fama": 0.0728,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mochila Kipling": {
+   "fama": 0.0704,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kipling": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mochila Jansport": {
+   "fama": 0.0704,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jansport": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mochila de personagem": {
+   "fama": 0.073,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mochila de lancheira": {
+   "fama": 0.0667,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mochila saco": {
+   "fama": 0.0716,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolsa de ombro": {
+   "fama": 0.0728,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta de couro": {
+   "fama": 0.0735,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta 007": {
+   "fama": 0.0734,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta executiva": {
+   "fama": 0.0721,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porta-documentos": {
+   "fama": 0.0778,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tubo porta-projetos": {
+   "fama": 0.0739,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canudo de papel": {
+   "fama": 0.0706,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porta-desenho": {
+   "fama": 0.0762,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Porta-trecos": {
+   "fama": 0.0778,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Organizador de mesa": {
+   "fama": 0.0725,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Organizador de lápis": {
+   "fama": 0.0694,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Copo de lápis": {
+   "fama": 0.0715,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lata de lápis": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Suporte de fita": {
+   "fama": 0.0741,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Suporte de durex": {
+   "fama": 0.0681,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dispenser de clipes": {
+   "fama": 0.06,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandeja de documentos": {
+   "fama": 0.0681,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calendário de mesa": {
+   "fama": 0.0752,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Relógio de parede da sala": {
+   "fama": 0.0756,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mapa do Brasil": {
+   "fama": 0.0799,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mapa político": {
+   "fama": 0.0758,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mapa físico": {
+   "fama": 0.0752,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mapa mudo": {
+   "fama": 0.0723,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mapa de estados": {
+   "fama": 0.0773,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandeira do Brasil de papel": {
+   "fama": 0.0783,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hino nacional": {
+   "fama": 0.0754,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de hino": {
+   "fama": 0.0755,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartaz do alfabeto": {
+   "fama": 0.0688,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alfabeto ilustrado": {
+   "fama": 0.0666,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Silabário": {
+   "fama": 0.0527,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tabela periódica": {
+   "fama": 0.0751,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tabela de multiplicação": {
+   "fama": 0.071,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tabuada de bolso": {
+   "fama": 0.0671,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartela de tabuada": {
+   "fama": 0.0641,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita numérica": {
+   "fama": 0.0718,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Reta numérica": {
+   "fama": 0.0706,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Relógio de papel": {
+   "fama": 0.0759,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Material de contagem": {
+   "fama": 0.0744,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Palitos de contagem": {
+   "fama": 0.0678,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tampinhas de contagem": {
+   "fama": 0.0711,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dados": {
+   "fama": 0.0801,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dominó": {
+   "fama": 0.0637,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jogo da memória": {
+   "fama": 0.0784,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bingo de letras": {
+   "fama": 0.0712,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Quebra-cabeça educativo": {
+   "fama": 0.0734,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ábaco de pinos": {
+   "fama": 0.0588,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Material Montessori": {
+   "fama": 0.0776,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Material de alfabetização": {
+   "fama": 0.0731,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de leitura": {
+   "fama": 0.0787,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livrinho de história": {
+   "fama": 0.0724,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gibi da Turma da Mônica": {
+   "fama": 0.0699,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Revistinha": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de literatura": {
+   "fama": 0.0778,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de inglês com CD": {
+   "fama": 0.0814,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "CD do livro": {
+   "fama": 0.0784,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "DVD educativo": {
+   "fama": 0.069,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flauta Yamaha": {
+   "fama": 0.0666,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Escaleta": {
+   "fama": 0.0552,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Xilofone": {
+   "fama": 0.0558,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Metalofone": {
+   "fama": 0.05,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Triângulo": {
+   "fama": 0.0689,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chocalho escolar": {
+   "fama": 0.0676,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandinha": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uniforme de educação física": {
+   "fama": 0.0757,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bermuda de educação física": {
+   "fama": 0.0746,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tênis branco": {
+   "fama": 0.0753,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Meia branca": {
+   "fama": 0.0756,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bola de educação física": {
+   "fama": 0.0775,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Corda de pular": {
+   "fama": 0.0699,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bambolê escolar": {
+   "fama": 0.0665,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cone": {
+   "fama": 0.0665,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Colchonete": {
+   "fama": 0.0601,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apito": {
+   "fama": 0.0658,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cronômetro de educação física": {
+   "fama": 0.073,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Toalha de banho": {
+   "fama": 0.073,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabonete líquido": {
+   "fama": 0.0706,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Escova de dente infantil": {
+   "fama": 0.0722,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta de dente infantil": {
+   "fama": 0.0732,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Copo de escovação": {
+   "fama": 0.0678,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lenço umedecido": {
+   "fama": 0.0643,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fralda reserva": {
+   "fama": 0.0708,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Muda de roupa": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pente": {
+   "fama": 0.0654,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Escova de cabelo": {
+   "fama": 0.0735,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elástico de cabelo": {
+   "fama": 0.072,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta transparente": {
+   "fama": 0.0722,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pasta de projeto": {
+   "fama": 0.077,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Projeto de feira de ciências": {
+   "fama": 0.0811,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vulcão de bicarbonato": {
+   "fama": 0.0664,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bicarbonato": {
+   "fama": 0.0664,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vinagre para experiência": {
+   "fama": 0.0794,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Feijão no algodão": {
+   "fama": 0.0776,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Algodão": {
+   "fama": 0.0721,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Copo plástico para experiência": {
+   "fama": 0.0788,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Termômetro escolar": {
+   "fama": 0.0701,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pilha": {
+   "fama": 0.0681,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lâmpada de experiência": {
+   "fama": 0.074,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fio elétrico": {
+   "fama": 0.0734,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bateria": {
+   "fama": 0.0744,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Motorzinho": {
+   "fama": 0.0575,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit robótica": {
+   "fama": 0.071,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Robótica": {
+   "fama": 0.0656,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lego Education": {
+   "fama": 0.0676,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arduino": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Placa Arduino": {
+   "fama": 0.0745,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Raspberry Pi": {
+   "fama": 0.0705,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calculadora gráfica": {
+   "fama": 0.0688,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tablet Samsung": {
+   "fama": 0.0717,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chromebook": {
+   "fama": 0.0482,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Notebook Positivo": {
+   "fama": 0.0725,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mouse": {
+   "fama": 0.0715,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Teclado": {
+   "fama": 0.0726,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pendrive escolar": {
+   "fama": 0.0751,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartão de memória": {
+   "fama": 0.0764,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Celular": {
+   "fama": 0.0768,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carregador": {
+   "fama": 0.0695,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fone de ouvido com fio": {
+   "fama": 0.078,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Headset escolar": {
+   "fama": 0.0751,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Relógio": {
+   "fama": 0.0732,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 20592,
+   "tendencia": null
+  },
+  "Lenço de papel": {
+   "fama": 0.0729,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 282,
+   "tendencia": null
+  }
+ }
+}

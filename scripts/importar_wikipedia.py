@@ -63,7 +63,77 @@ ACEITAR = {
     "corpos-do-sistema-solar": ({"wikidata"}, lambda t: not CATALOGO.search(t)),
     "animais-do-brasil": ({"categoria"}, lambda t: not NAO_ANIMAL.search(t)),
     "dinossauros": ({"wikidata", "categoria"}, lambda t: " " not in t.strip() and DINO.search(t)),
+    # 2ª leva (nicho_wikipedia2.json, 34 categorias novas)
+    "aves": ({"categoria"}, lambda t: nome_popular(t)),
+    "insetos": ({"categoria:Insetos do Brasil"}, lambda t: nome_popular(t)),
+    "peixes": ({"categoria"}, lambda t: nome_popular(t)),
+    "rios": ({"wikidata"}, lambda t: RIO.search(t) is not None),
+    "ilhas": ({"wikidata"}, lambda t: not GRUPO.search(t)),
+    "idiomas": ({"wikidata"}, lambda t: not GRUPO.search(t)),
+    "deuses-e-deusas": ({"wikidata"}, None),
+    "criaturas-do-folclore": ({"wikidata"}, None),
+    "desenhos-animados": ({"wikidata", "categoria"}, lambda t: not NAO_DESENHO.search(t)),
+    "novelas-brasileiras": ({"categoria"}, lambda t: not GRUPO.search(t)),
+    "musicos-brasileiros": ({"wikidata"}, None),
+    "jogadores-da-selecao": ({"wikidata"}, None),
+    "profissoes": ({"wikidata"}, lambda t: not NAO_PROFISSAO.search(t)),
+    "queijos": ({"wikidata", "categoria"}, lambda t: not NAO_QUEIJO.search(t)),
+    "pedras-preciosas": ({"wikidata"}, None),
+    "ritmos-musicais": ({"wikidata"}, lambda t: not t.startswith("Música d")),
+    "super-herois-e-viloes": ({"categoria"}, lambda t: not NAO_HEROI.search(t)),
+    "doces-e-sobremesas": ({"categoria"}, lambda t: not NAO_DOCE.search(t)),
+    "temperos-e-especiarias": ({"categoria"}, lambda t: t in TEMPEROS),
 }
+# Estas só ganham apelidos (candidata que é o mesmo artigo de uma resposta que já existe).
+# As listas fechadas não crescem; nas outras, as candidatas vinham com muito lixo
+# (empresas, filmes, álbuns, pessoas).
+SO_APELIDOS = {
+    "bebidas", "brincadeiras", "capitais-do-mundo", "comidas-tipicas", "cores", "esportes-olimpicos",
+    "filmes-tom-hanks", "frutas", "girias-brasileiras", "instrumentos-musicais", "legumes-e-verduras",
+    "material-escolar", "objetos-da-cozinha", "ossos-do-corpo", "paises", "partes-do-corpo",
+    "plantas-de-casa", "pokemon", "turma-da-monica"}
+# nome científico (Columba livia, Melipona quadrifasciata anthidioides): ninguém digita
+LATIM = re.compile(r"^[A-Z][a-z]+( [a-z]+){1,2}$|^[A-Z][a-z]+(idae|inae|ini|ina)$")
+GENERO = re.compile(r"^[A-Z][a-z]*(us|um|is|ops|odon|ichthys|chromis|ella|oides|yx|ax)$|y|ph|rh|th|'")
+
+
+def nome_popular(t: str) -> bool:
+    """Nome que um brasileiro usaria (Sanhaço-cinzento), e não o científico (Thraupis sayaca)."""
+    base = sem_parenteses(t)
+    return not (LATIM.search(base) or GENERO.search(base) or GRUPO.search(base) or NAO_BICHO.search(base))
+
+
+NAO_BICHO = re.compile(r"^(o|a|os|as|the|le|la) |(iformes|ídeos|ídeo|ídeas|ínios|placa dentígera)$", re.I)
+GRUPO = re.compile(r"^(lista|listas|história|historia|rota|ilhas oceânicas)\b|\b(do brasil|sem ferrão)$", re.I)
+RIO = re.compile(r"^(rio|ribeirão|arroio|igarapé|riacho|córrego) |\(rio\)", re.I)
+NAO_DESENHO = re.compile(r"\((boneco|brinquedo|personagem|dublador|empresa)\)|temporada|\bjogo\b", re.I)
+NAO_PROFISSAO = re.compile(r"^(antirracista|combatentes|guerrilha|trol |oprichniks|juiz-chefe dos)", re.I)
+NAO_QUEIJO = re.compile(r"^(queijo semiduro|queijo vegano|queijaria|queijos da|fazenda|marie harel|cesta com)", re.I)
+NAO_HEROI = re.compile(r"^(vilões|anel energético|corporação|esquadrão|lordes|dez anéis|i\.m\.a)", re.I)
+NAO_DOCE = re.compile(
+    r"^(doces|doce \(alimento\)|sobremesa$|chocolatier|chocólatra|conchagem|confeitagem|confeitaria|pastelaria|"
+    r"doçaria|hotel|museu|monumento|cadbury world|josef zotter|thomas adams|agnes marshall|proibição|máquina|"
+    r"goma natural|goma de mascar de nicotina|a guerra dos|android|cupcake &|cupcakes taste|dc cupcakes|"
+    r"leonard's bakery|daylight donuts|dunkin|waffle house|the oxford|oficina do|brisa do lis|ictiocola|iogurte|"
+    r"labneh|matsoni|yoplait|requeixo|melaço|melado|mel de engenho|licor|xarope|cobertura|creme \(culinária\)|"
+    r"massa frita|os turcos|kit kats no japão|pastel \(culinária\)|cream cracker|oyster cracker|"
+    r"chocolate orgânico|gotas de chocolate|bubbaloo|trident|skittles|swedish fish|baby ruth|bilby|kokis)", re.I)
+TEMPEROS = {
+    "Adobo", "Ajvar", "Cinco-perfumes-chineses", "Furikake", "Gomásio", "Hawayij", "Sambal", "Shichimi",
+    "Katsuobushi", "Mirin", "Ponzu", "Mostarda de Dijon", "Óleo de pimenta", "Sal do Himalaia", "Sal Kosher",
+    "Sal iodado", "Sal light", "Sal de cozinha", "Pistou", "Skhug", "Old Bay Seasoning", "Doenjang", "Ssamjang",
+    "Tkemali", "Molho Worcestershire", "Molho tarê", "Molho de hoisin", "Molho Tabasco", "Aioli", "Toum",
+    "Levedura nutricional", "Abrótano", "Hortelã-pimenta", "Hortelã-verde", "Loureiro", "Lúcia-lima",
+    "Manjericão-de-folha-larga", "Manjerico", "Milefólio", "Segurelha-das-montanhas", "Shissô", "Anato",
+    "Baga de zimbro", "Cardamomo-verdadeiro", "Karashi", "Limão negro", "Macis", "Masala", "Pimenta e limão",
+    "Pimenta-jalapenho", "Semente de papoula", "Yuzukoshō", "Bhut Jolokia", "Carolina Reaper", "Ñora",
+    "Pimenta X", "Pimiento del piquillo", "Poblano", "Trinidad Moruga Scorpion", "Pimenta-da-áfrica",
+    "Pimenta-da-guiné", "Pimenta-preta", "Pimenta-de-são-tomé", "Pimento Lampião", "Pimenta-de-bengala"}
+# prefixo que o jogador pula ("Rio Lima" -> "Lima")
+PREFIXOS = {
+    "rios": re.compile(r"^(rio|ribeirão|arroio|igarapé|riacho|córrego) (d[aeo]s? )?", re.I),
+    "ilhas": re.compile(r"^(ilha|ilhéu|ilhota) (d[aeo]s? )?", re.I),
+    "idiomas": re.compile(r"^(língua|dialeto|idioma) ", re.I)}
 # encurtar nome oficial de clube para um apelido que o jogador digitaria
 PALAVRAS_CLUBE = re.compile(r"\b(associação|associacao|atlética|atletica|esporte|esportiva|esportivo|"
                             r"clube|club|futebol|football|foot ball|sport|sociedade|recreativa|recreativo|"
@@ -78,12 +148,17 @@ def sem_parenteses(t: str) -> str:
 def nome_e_apelidos(cid: str, c: dict) -> tuple[str, list[str]]:
     titulo = c["titulo"]
     base = sem_parenteses(c.get("rotulo") or titulo)
+    base = base[:1].upper() + base[1:]  # rótulo do Wikidata vem em minúscula ("criador de conteúdo")
     apelidos = [sem_parenteses(titulo)] + [a for a in c.get("apelidos", []) if len(a) <= 40]
     if cid == "corpos-do-sistema-solar":
         m = re.match(r"^\(?(\d+)\)?\s+(.+)$", base)
         if m:  # "120347 Salácia" -> Salácia; "(55636) 2002 TX300" -> 2002 TX300
             apelidos.append(base)
             base = m.group(2)
+    if cid in PREFIXOS:
+        curto = PREFIXOS[cid].sub("", base).strip()
+        if curto and curto != base and len(curto) >= 3:
+            apelidos.append(curto)
     if cid == "times-de-futebol":
         curto = " ".join(PALAVRAS_CLUBE.sub(" ", base).split())
         if curto and curto.lower() != base.lower() and len(curto) >= 3:
@@ -125,21 +200,29 @@ def importar(cid: str, dados: dict) -> tuple[int, int]:
             por_artigo.setdefault(m["titulo"], chave[compactar(nome)])
     aj_path = AJUSTES / f"{cid}.csv"
     aj = list(csv.reader(aj_path.open(encoding="utf-8"))) if aj_path.exists() else [["resposta", "peso", "supernova"]]
-    fontes, filtro = ACEITAR[cid]
+    fontes, filtro = ACEITAR.get(cid, (set(), None))
     novas = apel = 0
     for c in dados["candidatas"]:
-        if c.get("desambiguacao") or c["fonte"].split(":")[0] not in fontes:
+        if c.get("desambiguacao"):
+            continue
+        aceita = c["fonte"].split(":")[0] in fontes or c["fonte"] in fontes
+        if not aceita and (cid not in SO_APELIDOS or c["titulo"] not in por_artigo):
             continue
         if ":" in c["titulo"] or c["titulo"].lower().startswith("lista"):
             continue
-        if filtro and not (filtro(c["titulo"]) and filtro(c.get("rotulo") or c["titulo"])):
+        if aceita and filtro and not (filtro(c["titulo"]) and filtro(c.get("rotulo") or c["titulo"])):
             continue
         if cid == "racas-de-cachorro" and c["fonte"].startswith("categoria") and c["titulo"] not in RACAS_DA_CATEGORIA:
+            continue
+        # a categoria geral de peixes é quase toda de gêneros em latim (Acaronia, Mogurnda)
+        if cid == "peixes" and aceita and c["fonte"] == "categoria:Peixes" and "-" not in c["titulo"]:
             continue
         base, apelidos = nome_e_apelidos(cid, c)
         alvo = por_artigo.get(c["titulo"])
         if alvo is None:
             alvo = chave.get(compactar(base))
+        if alvo is None and not aceita:
+            continue
         if alvo is not None:  # mesma coisa que já existe: só apelidos
             for a in [base] + apelidos:
                 k = compactar(a)
@@ -165,9 +248,13 @@ def main() -> None:
     SINAIS.mkdir(parents=True, exist_ok=True)
     for cid, d in sorted(dados.items()):
         (SINAIS / f"{cid}.json").write_text(json.dumps(
-            {"fonte": "scripts/completar_wikipedia.py", "respostas": d["respostas"]},
+            {"fonte": "scripts/completar_wikipedia.py", "respostas": d["respostas"],
+             # visitas das candidatas que viraram resposta (o agente de fama usa)
+             "candidatas": [{k: c[k] for k in ("titulo", "rotulo", "visitas_60d") if c.get(k)}
+                            for c in d["candidatas"] if c.get("visitas_60d") and not c.get("desambiguacao")
+                            and (cid in ACEITAR)]},
             ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
-        if cid in ACEITAR:
+        if cid in ACEITAR or cid in SO_APELIDOS:
             novas, apel = importar(cid, d)
             print(f"{cid}: +{novas} respostas, +{apel} apelidos")
 

@@ -1,273 +1,2210 @@
-resposta,apelidos,icf,sem_dado,percentil,fama,peso,pontos,ajustado
-Fernando de Noronha,noronha,20.0,True,0.83,0.01,0.283,8,True
-Ilha do Marajó,marajó,11.506,False,0.41,0.014,0.316,10,True
-Florianópolis,ilha de santa catarina | floripa,10.594,False,0.328,0.017,0.346,12,True
-Ilhabela,,12.904,False,0.517,0.021,0.361,13,True
-Ilha Grande,,8.235,False,0.026,0.025,0.387,15,True
-Havaí,hawaii,20.0,True,0.83,0.028,0.424,18,True
-Madagascar,,13.343,False,0.535,0.032,0.436,19,True
-Groenlândia,,14.532,False,0.616,0.035,0.447,20,True
-Cuba,,10.867,False,0.369,0.039,0.469,22,True
-Japão,,10.039,False,0.292,0.043,0.48,23,True
-Inglaterra,grã-bretanha,10.162,False,0.299,0.046,0.49,24,True
-Islândia,,12.678,False,0.502,0.05,0.5,25,True
-Irlanda,,11.429,False,0.399,0.053,0.52,27,True
-Sicília,,13.133,False,0.531,0.057,0.529,28,True
-Sardenha,,20.0,True,0.83,0.061,0.539,29,True
-Córsega,,20.0,True,0.83,0.064,0.548,30,True
-Creta,,13.397,False,0.542,0.068,0.566,32,True
-Chipre,,12.956,False,0.524,0.072,0.574,33,True
-Malta,,11.568,False,0.421,0.075,0.583,34,True
-Ibiza,,20.0,True,0.83,0.079,0.592,35,True
-Maiorca,,13.477,False,0.55,0.082,0.6,36,True
-Tenerife,,20.0,True,0.83,0.086,0.6,36,True
-Açores,,15.151,False,0.638,0.093,0.608,37,True
-Ilha da Madeira,madeira,9.334,False,0.085,0.09,0.608,37,True
-Cabo Verde,,9.118,False,0.063,0.097,0.616,38,True
-São Tomé,,8.789,False,0.048,0.1,0.616,38,True
-Ilha de Páscoa,rapa nui,9.93,False,0.28,0.104,0.624,39,True
-Bali,,12.556,False,0.491,0.111,0.632,40,True
-Galápagos,,20.0,True,0.83,0.108,0.632,40,True
-Java,,10.813,False,0.362,0.115,0.64,41,True
-Sumatra,,14.546,False,0.62,0.118,0.64,41,True
-Bornéu,,15.527,False,0.642,0.122,0.648,42,True
-Nova Guiné,,9.561,False,0.255,0.126,0.648,42,True
-Tasmânia,,14.396,False,0.598,0.129,0.656,43,True
-Fiji,,13.957,False,0.576,0.137,0.663,44,True
-Nova Zelândia,,7.472,False,0.004,0.133,0.663,44,True
-Bora Bora,,11.812,False,0.443,0.144,0.671,45,True
-Taiti,,20.0,True,0.83,0.14,0.671,45,True
-Maldivas,,13.944,False,0.572,0.147,0.678,46,True
-Seychelles,,14.487,False,0.609,0.151,0.678,46,True
-Maurício,,20.0,True,0.83,0.155,0.686,47,True
-Sri Lanka,,20.0,True,0.83,0.162,0.693,48,True
-Zanzibar,,14.299,False,0.587,0.158,0.693,48,True
-Hong Kong,,20.0,True,0.83,0.169,0.7,49,True
-Taiwan,,12.624,False,0.494,0.166,0.7,49,True
-Ilha da Queimada Grande,,9.598,False,0.262,0.99,0.707,50,True
-Singapura,,12.929,False,0.52,0.173,0.707,50,True
-Filipinas,,12.47,False,0.483,0.176,0.714,51,True
-Luzon,,20.0,True,0.83,0.18,0.714,51,True
-Mindanao,,20.0,True,0.83,0.184,0.721,52,True
-Okinawa,,20.0,True,0.83,0.187,0.721,52,True
-Hokkaido,,20.0,True,0.83,0.191,0.728,53,True
-Honshu,,20.0,True,0.83,0.194,0.728,53,True
-Kyushu,,20.0,True,0.83,0.198,0.735,54,True
-Sacalina,,20.0,True,0.83,0.205,0.742,55,True
-Shikoku,,20.0,True,0.83,0.202,0.742,55,True
-Jamaica,,12.709,False,0.506,0.209,0.748,56,True
-Porto Rico,,9.332,False,0.081,0.212,0.748,56,True
-Haiti,,11.957,False,0.446,0.22,0.755,57,True
-Hispaniola,,20.0,True,0.83,0.216,0.755,57,True
-Barbados,,13.616,False,0.561,0.223,0.762,58,True
-Aruba,,13.516,False,0.554,0.227,0.775,60,True
-Bahamas,,13.389,False,0.539,0.234,0.775,60,True
-Curaçao,,14.058,False,0.579,0.231,0.775,60,True
-Trinidad,,20.0,True,0.83,0.238,0.775,60,True
-Granada,,12.219,False,0.461,0.245,0.781,61,True
-Guadalupe,,13.038,False,0.528,0.256,0.781,61,True
-Long Island,,20.0,True,0.83,0.263,0.781,61,True
-Manhattan,,12.436,False,0.476,0.26,0.781,61,True
-Martinica,,14.713,False,0.627,0.252,0.781,61,True
-Santa Lúcia,,9.605,False,0.266,0.249,0.781,61,True
-Tobago,,20.0,True,0.83,0.241,0.781,61,True
-Alcatraz,,14.611,False,0.624,0.27,0.787,62,True
-Guernsey,,20.0,True,0.83,0.285,0.787,62,True
-Ilha da Liberdade,,9.259,False,0.07,0.267,0.787,62,True
-Ilha de Man,,9.483,False,0.175,0.278,0.787,62,True
-Ilha de Wight,,9.483,False,0.175,0.274,0.787,62,True
-Jersey,,12.418,False,0.472,0.281,0.787,62,True
-Shetland,,20.0,True,0.83,0.289,0.787,62,True
-Gotland,,20.0,True,0.83,0.314,0.794,63,True
-Hébridas,,20.0,True,0.83,0.296,0.794,63,True
-Lofoten,,20.0,True,0.83,0.31,0.794,63,True
-Skye,,20.0,True,0.83,0.299,0.794,63,True
-Spitsbergen,,20.0,True,0.83,0.306,0.794,63,True
-Svalbard,,20.0,True,0.83,0.303,0.794,63,True
-Órcadas,,20.0,True,0.83,0.292,0.794,63,True
-Bornholm,,20.0,True,0.83,0.317,0.8,64,True
-Corfu,,20.0,True,0.83,0.332,0.8,64,True
-Lesbos,,20.0,True,0.83,0.335,0.8,64,True
-Mykonos,,20.0,True,0.83,0.328,0.8,64,True
-Rodes,,14.433,False,0.601,0.321,0.8,64,True
-Santorini,,20.0,True,0.83,0.325,0.8,64,True
-Ítaca,,20.0,True,0.83,0.339,0.8,64,True
-Capri,,20.0,True,0.83,0.343,0.806,65,True
-Elba,,20.0,True,0.83,0.346,0.806,65,True
-Fuerteventura,,20.0,True,0.83,0.364,0.806,65,True
-Gran Canária,,14.874,False,0.635,0.357,0.806,65,True
-Ilhas Canárias,canárias,10.766,False,0.345,0.354,0.806,65,True
-Lampedusa,,20.0,True,0.83,0.35,0.806,65,True
-Lanzarote,,20.0,True,0.83,0.361,0.806,65,True
-Formentera,,20.0,True,0.83,0.375,0.812,66,True
-Ilha Comprida,,10.937,False,0.376,0.39,0.812,66,True
-Ilha de Moçambique,,10.339,False,0.303,0.379,0.812,66,True
-Ilha do Bananal,bananal,11.704,False,0.428,0.383,0.812,66,True
-Ilha do Mel,,9.885,False,0.273,0.386,0.812,66,True
-Ilhas Baleares,baleares,12.631,False,0.498,0.368,0.812,66,True
-Menorca,,20.0,True,0.83,0.372,0.812,66,True
-Ilha Anchieta,,10.821,False,0.365,0.397,0.819,67,True
-Ilha de Boipeba,boipeba,12.077,False,0.458,0.404,0.819,67,True
-Ilha de Itamaracá,itamaracá,9.483,False,0.175,0.401,0.819,67,True
-Ilha de Itaparica,itaparica,11.508,False,0.413,0.411,0.819,67,True
-Ilha do Cardoso,,9.979,False,0.284,0.393,0.819,67,True
-Ilha dos Frades,,9.483,False,0.175,0.415,0.819,67,True
-Morro de São Paulo,tinharé,7.755,False,0.015,0.408,0.819,67,True
-Ilha Fiscal,,9.509,False,0.251,0.437,0.825,68,True
-Ilha de Maré,,10.553,False,0.317,0.419,0.825,68,True
-Ilha de Paquetá,paquetá,11.597,False,0.424,0.44,0.825,68,True
-Ilha de Superagui,superagui,9.483,False,0.175,0.422,0.825,68,True
-Ilha de São Luís,são luís,8.376,False,0.03,0.426,0.825,68,True
-Ilha de Vitória,,9.248,False,0.066,0.43,0.825,68,True
-Ilha do Governador,,9.565,False,0.258,0.433,0.825,68,True
-Abrolhos,,14.309,False,0.59,0.462,0.831,69,True
-Arquipélago de São Pedro e São Paulo,são pedro e são paulo,7.676,False,0.011,0.458,0.831,69,True
-Atol das Rocas,,14.512,False,0.613,0.455,0.831,69,True
-Ilha da Trindade,trindade,10.387,False,0.31,0.448,0.831,69,True
-Ilha das Cobras,,10.97,False,0.38,0.444,0.831,69,True
-Ilha do Campeche,campeche,11.71,False,0.432,0.466,0.831,69,True
-Martim Vaz,,12.833,False,0.513,0.451,0.831,69,True
-Ilha de Algodoal,algodoal,12.551,False,0.487,0.487,0.837,70,True
-Ilha de Mosqueiro,mosqueiro,12.005,False,0.454,0.484,0.837,70,True
-Ilha de São Francisco do Sul,,8.127,False,0.022,0.473,0.837,70,True
-Ilha do Arvoredo,arvoredo,11.741,False,0.435,0.469,0.837,70,True
-Ilha do Caju,,10.92,False,0.373,0.491,0.837,70,True
-Ilha do Combu,combu,9.483,False,0.175,0.48,0.837,70,True
-Ilha dos Lobos,,10.541,False,0.314,0.476,0.837,70,True
-Ilha Porchat,,9.483,False,0.175,0.505,0.843,71,True
-Ilha das Peças,,9.11,False,0.059,0.509,0.843,71,True
-Ilha de Santo Amaro,,9.899,False,0.277,0.498,0.843,71,True
-Ilha de São Vicente,,8.612,False,0.037,0.502,0.843,71,True
-Ilha de Tupinambarana,,13.528,False,0.557,0.516,0.843,71,True
-Ilha do Bom Abrigo,,9.265,False,0.074,0.513,0.843,71,True
-Ilha do Fundão,,11.197,False,0.384,0.495,0.843,71,True
-Chiloé,,20.0,True,0.83,0.531,0.849,72,True
-Geórgia do Sul,,10.356,False,0.306,0.523,0.849,72,True
-Ilha de Bioko,bioko,9.483,False,0.175,0.542,0.849,72,True
-Ilhas Malvinas,falklands | malvinas,10.766,False,0.345,0.52,0.849,72,True
-Juan Fernández,ilha de robinson crusoé,9.483,False,0.175,0.534,0.849,72,True
-Margarita,,13.82,False,0.565,0.538,0.849,72,True
-Terra do Fogo,,8.744,False,0.041,0.527,0.849,72,True
-Ascensão,,11.218,False,0.391,0.552,0.854,73,True
-Ilha Bouvet,,9.483,False,0.175,0.56,0.854,73,True
-Ilha de Gorée,gorée,9.483,False,0.175,0.545,0.854,73,True
-Kerguelen,,20.0,True,0.83,0.563,0.854,73,True
-Reunião,,9.294,False,0.077,0.567,0.854,73,True
-Santa Helena,,9.469,False,0.1,0.549,0.854,73,True
-Tristão da Cunha,,11.988,False,0.45,0.556,0.854,73,True
-Bahrein,,13.929,False,0.568,0.581,0.86,74,True
-Comores,,15.687,False,0.649,0.574,0.86,74,True
-Kish,,20.0,True,0.83,0.589,0.86,74,True
-Mayotte,,20.0,True,0.83,0.571,0.86,74,True
-Ormuz,,20.0,True,0.83,0.585,0.86,74,True
-Qeshm,,20.0,True,0.83,0.592,0.86,74,True
-Socotra,,20.0,True,0.83,0.578,0.86,74,True
-Andamão,,20.0,True,0.83,0.596,0.866,75,True
-Flores,,9.468,False,0.096,0.61,0.866,75,True
-Komodo,,20.0,True,0.83,0.614,0.866,75,True
-Lakshadweep,,20.0,True,0.83,0.603,0.866,75,True
-Lombok,,20.0,True,0.83,0.618,0.866,75,True
-Nicobar,,20.0,True,0.83,0.599,0.866,75,True
-Sumba,,20.0,True,0.83,0.607,0.866,75,True
-Timor,,12.237,False,0.465,0.621,0.866,75,True
-Bohol,,20.0,True,0.83,0.647,0.872,76,True
-Boracay,,20.0,True,0.83,0.643,0.872,76,True
-Cebu,,20.0,True,0.83,0.639,0.872,76,True
-Halmahera,,20.0,True,0.83,0.632,0.872,76,True
-Molucas,,20.0,True,0.83,0.628,0.872,76,True
-Palawan,,20.0,True,0.83,0.636,0.872,76,True
-Sulawesi,celebes,20.0,True,0.83,0.625,0.872,76,True
-Guam,,20.0,True,0.83,0.65,0.877,77,True
-Kiribati,,15.962,False,0.657,0.668,0.877,77,True
-Nauru,,15.836,False,0.653,0.672,0.877,77,True
-Palau,,14.436,False,0.605,0.657,0.877,77,True
-Pohnpei,,20.0,True,0.83,0.664,0.877,77,True
-Saipan,,20.0,True,0.83,0.654,0.877,77,True
-Yap,,20.0,True,0.83,0.661,0.877,77,True
-Ilhas Cook,,10.766,False,0.345,0.69,0.883,78,True
-Moorea,,20.0,True,0.83,0.697,0.883,78,True
-Niue,,20.0,True,0.83,0.686,0.883,78,True
-Rarotonga,,20.0,True,0.83,0.693,0.883,78,True
-Samoa,,14.324,False,0.594,0.679,0.883,78,True
-Tonga,,14.811,False,0.631,0.683,0.883,78,True
-Tuvalu,,15.586,False,0.646,0.675,0.883,78,True
-Ilha Fraser,k'gari,9.483,False,0.175,0.719,0.889,79,True
-Ilha Lord Howe,,9.483,False,0.175,0.715,0.889,79,True
-Ilha Norfolk,,9.483,False,0.175,0.712,0.889,79,True
-Ilha do Norte,,8.997,False,0.055,0.722,0.889,79,True
-Marquesas,,20.0,True,0.83,0.701,0.889,79,True
-Pitcairn,,20.0,True,0.83,0.708,0.889,79,True
-Tuamotu,,20.0,True,0.83,0.704,0.889,79,True
-Ilha Stewart,,9.483,False,0.175,0.73,0.894,80,True
-Ilha de Baffin,,9.483,False,0.175,0.744,0.894,80,True
-Ilha de Ellesmere,,9.483,False,0.175,0.748,0.894,80,True
-Ilha de Vancouver,,9.483,False,0.175,0.733,0.894,80,True
-Ilha do Príncipe Eduardo,,9.992,False,0.288,0.74,0.894,80,True
-Ilha do Sul,,8.754,False,0.044,0.726,0.894,80,True
-Terra Nova,,7.867,False,0.018,0.737,0.894,80,True
-Ilha Bermuda,bermudas,10.792,False,0.358,0.773,0.9,81,True
-Ilha Victoria,,11.501,False,0.406,0.751,0.9,81,True
-Ilha Wrangel,,9.483,False,0.175,0.755,0.9,81,True
-Ilha de Kodiak,,9.483,False,0.175,0.766,0.9,81,True
-Ilhas Aleutas,,10.766,False,0.345,0.769,0.9,81,True
-Nova Zembla,,7.472,False,0.004,0.759,0.9,81,True
-Terra de Francisco José,,8.601,False,0.033,0.762,0.9,81,True
-Antígua,,20.0,True,0.83,0.787,0.906,82,True
-Cozumel,,20.0,True,0.83,0.798,0.906,82,True
-Ilhas Cayman,,10.766,False,0.345,0.777,0.906,82,True
-Ilhas Virgens,,11.526,False,0.417,0.78,0.906,82,True
-Isla Mujeres,,12.751,False,0.509,0.795,0.906,82,True
-São Martinho,,8.803,False,0.052,0.791,0.906,82,True
-Turks e Caicos,,20.0,True,0.83,0.784,0.906,82,True
-Ilha Robben,,9.483,False,0.175,0.813,0.911,83,True
-Ilha de Delos,,9.483,False,0.175,0.824,0.911,83,True
-Ilha de Elefantina,,13.457,False,0.546,0.816,0.911,83,True
-Ilha de Ometepe,,9.483,False,0.175,0.809,0.911,83,True
-Ilha de Philae,,9.483,False,0.175,0.82,0.911,83,True
-Ilha do Coco,,10.113,False,0.295,0.806,0.911,83,True
-Roatán,,20.0,True,0.83,0.802,0.911,83,True
-Burano,,20.0,True,0.83,0.835,0.917,84,True
-Ilha de Murano,,11.759,False,0.439,0.831,0.917,84,True
-Ilha de Patmos,,9.483,False,0.175,0.827,0.917,84,True
-Ilha de Ré,,10.6,False,0.332,0.849,0.917,84,True
-Lido,,10.589,False,0.325,0.838,0.917,84,True
-Mont-Saint-Michel,,20.0,True,0.83,0.845,0.917,84,True
-Île de la Cité,,11.482,False,0.402,0.842,0.917,84,True
-Belle-Île,,14.206,False,0.583,0.853,0.922,85,True
-Heligoland,,20.0,True,0.83,0.856,0.922,85,True
-Ilha do Urso,,10.555,False,0.321,0.874,0.922,85,True
-Ilhas Faroé,faroé,10.766,False,0.345,0.867,0.922,85,True
-Jan Mayen,,20.0,True,0.83,0.871,0.922,85,True
-Rügen,,20.0,True,0.83,0.863,0.922,85,True
-Sylt,,20.0,True,0.83,0.86,0.922,85,True
-Ilha Deception,,9.483,False,0.175,0.878,0.927,86,True
-Ilha Rei George,,9.392,False,0.089,0.882,0.927,86,True
-Ilha de Clipperton,,9.483,False,0.175,0.892,0.927,86,True
-Ilha de Navassa,,9.483,False,0.175,0.9,0.927,86,True
-Ilha de Pedro I,,9.483,False,0.175,0.889,0.927,86,True
-Ilha de Ross,,9.483,False,0.175,0.885,0.927,86,True
-Ilha de Tromelin,,9.483,False,0.175,0.896,0.927,86,True
-Ilha Baker,,9.483,False,0.175,0.918,0.933,87,True
-Ilha Howland,,9.483,False,0.175,0.914,0.933,87,True
-Ilha Johnston,,9.483,False,0.175,0.91,0.933,87,True
-Ilha Wake,,9.483,False,0.175,0.903,0.933,87,True
-Ilha de Pentecostes,,11.208,False,0.387,0.921,0.933,87,True
-Midway,,20.0,True,0.83,0.907,0.933,87,True
-Tanna,,20.0,True,0.83,0.925,0.933,87,True
-Bougainville,,20.0,True,0.83,0.939,0.938,88,True
-Guadalcanal,,20.0,True,0.83,0.936,0.938,88,True
-Ilha Christmas,,9.483,False,0.175,0.95,0.938,88,True
-Ilhas Salomão,,11.246,False,0.395,0.932,0.938,88,True
-Nova Bretanha,,9.66,False,0.269,0.943,0.938,88,True
-Nova Caledônia,,7.472,False,0.004,0.928,0.938,88,True
-Nova Irlanda,,9.451,False,0.092,0.947,0.938,88,True
-Ilha de Hainan,hainan,9.483,False,0.175,0.958,0.943,89,True
-Ilha de Ishigaki,,9.483,False,0.175,0.975,0.943,89,True
-Ilha de Jeju,jeju,12.443,False,0.48,0.961,0.943,89,True
-Ilha de Sado,,9.483,False,0.175,0.965,0.943,89,True
-Ilhas Cocos,,12.341,False,0.469,0.954,0.943,89,True
-Miyajima,,20.0,True,0.83,0.968,0.943,89,True
-Yakushima,,20.0,True,0.83,0.972,0.943,89,True
-Ilha Ellis,,9.483,False,0.175,0.986,0.949,90,True
-Iturup,,20.0,True,0.83,0.983,0.949,90,True
-Kunashir,,20.0,True,0.83,0.979,0.949,90,True
+resposta,apelidos,icf,sem_dado,lembranca,conhecem,visitas,percentil,fama,peso,pontos,ajustado
+Fernando de Noronha,noronha,20.0,True,120.0,98.0,80832,0.0,0.0,0.283,8,True
+Madagascar,,13.343,False,50.0,98.0,46278,0.0,0.0,0.283,8,True
+Havaí,hawaii,20.0,True,45.0,98.0,51270,0.001,0.001,0.3,9,True
+Florianópolis,ilha de santa catarina | floripa | santa catarina,10.594,False,35.0,98.0,127644,0.002,0.002,0.316,10,True
+Groenlândia,,14.532,False,35.0,95.0,68316,0.002,0.002,0.316,10,True
+Ilhabela,,12.904,False,50.0,90.0,55866,0.001,0.001,0.316,10,True
+Cuba,,10.867,False,30.0,98.0,113562,0.003,0.003,0.332,11,True
+Ilha Grande,,8.235,False,30.0,90.0,0,0.004,0.004,0.346,12,True
+Ilha do Marajó,marajó | Ilha de Marajó | Ilha Grande de Joannes | Ilha Grande de Joanes | Marijó | Grande de Joannes | Grande de Joanes,11.506,False,30.0,90.0,41058,0.003,0.003,0.346,12,True
+Japão,,10.039,False,20.0,100.0,207996,0.004,0.004,0.346,12,True
+Bali,,12.556,False,15.0,90.0,23772,0.005,0.005,0.361,13,True
+Galápagos,,20.0,True,10.0,85.0,34272,0.006,0.006,0.374,14,True
+Ilha de Páscoa,rapa nui | Páscoa,9.93,False,12.0,85.0,32334,0.005,0.005,0.374,14,True
+Islândia,,12.678,False,12.0,95.0,94266,0.005,0.005,0.374,14,True
+Maldivas,,13.944,False,8.0,90.0,45396,0.006,0.006,0.387,15,True
+Ilha do Mel,Mel,9.885,False,12.0,80.0,0,0.007,0.007,0.424,18,True
+Sicília,,13.133,False,6.0,85.0,33528,0.007,0.007,0.424,18,True
+Inglaterra,grã-bretanha,10.162,False,4.0,100.0,119562,0.008,0.008,0.436,19,True
+Santorini,,20.0,True,6.0,80.0,14268,0.008,0.008,0.436,19,True
+Irlanda,,11.429,False,4.0,95.0,76194,0.009,0.009,0.447,20,True
+Jamaica,,12.709,False,4.0,90.0,51660,0.009,0.009,0.447,20,True
+Nova Zelândia,,7.472,False,3.0,95.0,84120,0.01,0.01,0.447,20,True
+Taiti,,20.0,True,4.0,80.0,18480,0.01,0.01,0.458,21,True
+Taiwan,,12.624,False,3.0,90.0,86898,0.01,0.01,0.458,21,True
+Ilha da Madeira,madeira,9.334,False,3.0,80.0,48696,0.011,0.011,0.469,22,True
+Porto Rico,,9.332,False,3.0,90.0,62934,0.011,0.011,0.469,22,True
+Bora Bora,,11.812,False,4.0,75.0,12876,0.012,0.012,0.48,23,True
+Creta,,13.397,False,3.0,75.0,29754,0.013,0.013,0.48,23,True
+Sardenha,,20.0,True,3.0,75.0,37806,0.012,0.012,0.48,23,True
+Chipre,,12.956,False,2.0,80.0,92838,0.014,0.014,0.49,24,True
+Singapura,,12.929,False,2.0,90.0,238200,0.013,0.013,0.49,24,True
+Fiji,,13.957,False,3.0,75.0,31320,0.014,0.014,0.5,25,True
+Haiti,,11.957,False,2.0,90.0,61620,0.015,0.015,0.5,25,True
+Malta,,11.568,False,2.0,80.0,97422,0.014,0.014,0.5,25,True
+Açores,,15.151,False,2.0,75.0,57258,0.016,0.016,0.51,26,True
+Ilha de São Luís,são luís | Upaon-Açu | Ilha Upaon-Açu | Ilha de Upaon- Açu,8.376,False,3.0,90.0,8136,0.015,0.015,0.51,26,True
+Ilha de Itaparica,itaparica,11.508,False,3.0,70.0,15420,0.017,0.017,0.52,27,True
+Manhattan,,12.436,False,2.0,90.0,30720,0.017,0.017,0.52,27,True
+Sri Lanka,,20.0,True,2.0,85.0,56364,0.016,0.016,0.52,27,True
+Filipinas,,12.47,False,1.5,90.0,73776,0.018,0.018,0.529,28,True
+Ilha do Bananal,bananal,11.704,False,3.0,70.0,12588,0.018,0.018,0.529,28,True
+Córsega,,20.0,True,2.0,70.0,30438,0.019,0.019,0.539,29,True
+Ibiza,,20.0,True,2.0,75.0,13500,0.019,0.019,0.539,29,True
+Ilhas Canárias,canárias,10.766,False,2.0,75.0,32322,0.019,0.019,0.539,29,True
+Bornéu,,15.527,False,2.0,70.0,17424,0.02,0.02,0.548,30,True
+Cabo Verde,,9.118,False,1.0,80.0,130200,0.02,0.02,0.548,30,True
+Hong Kong,,20.0,True,1.0,90.0,83118,0.021,0.021,0.557,31,True
+Morro de São Paulo,tinharé,7.755,False,2.0,70.0,15840,0.021,0.021,0.557,31,True
+Ilha de Itamaracá,itamaracá,9.483,False,2.0,60.0,18438,0.022,0.022,0.566,32,True
+Java,,10.813,False,1.5,70.0,9954,0.022,0.022,0.566,32,True
+Sumatra,,14.546,False,1.5,65.0,9642,0.023,0.023,0.566,32,True
+Capri,,20.0,True,2.0,65.0,3990,0.024,0.024,0.574,33,True
+Tasmânia,,14.396,False,1.5,65.0,25854,0.023,0.023,0.574,33,True
+Ilha do Governador,Governador,9.565,False,1.5,65.0,25188,0.024,0.024,0.583,34,True
+Nova Guiné,,9.561,False,1.0,70.0,13932,0.024,0.024,0.583,34,True
+Ilhas Malvinas,falklands | malvinas,10.766,False,1.0,75.0,88188,0.025,0.025,0.592,35,True
+Maiorca,,13.477,False,1.0,65.0,22050,0.025,0.025,0.6,36,True
+Tenerife,,20.0,True,1.0,65.0,15360,0.026,0.026,0.608,37,True
+Zanzibar,,14.299,False,1.0,55.0,47652,0.026,0.026,0.608,37,True
+Ilha de Paquetá,paquetá,11.597,False,1.0,55.0,21258,0.027,0.027,0.616,38,True
+Ilha de Vitória,Vitória,9.248,False,1.0,90.0,3618,0.027,0.027,0.624,39,True
+Ilha Comprida,Comprida,10.937,False,1.0,50.0,18714,0.028,0.028,0.632,40,True
+Abrolhos,,14.309,False,1.0,60.0,7128,0.029,0.029,0.64,41,True
+Alcatraz,,14.611,False,1.0,80.0,534,0.029,0.029,0.648,42,True
+Mykonos,Míconos,20.0,True,1.0,65.0,4746,0.029,0.029,0.656,43,True
+Ilha das Cobras,Cobras,10.97,False,1.0,55.0,0,0.03,0.03,0.663,44,True
+Atol das Rocas,Rocas,14.512,False,0.8,55.0,13452,0.031,0.031,0.671,45,True
+Ilha de Boipeba,boipeba,12.077,False,1.0,45.0,7254,0.03,0.03,0.671,45,True
+São Tomé,,8.789,False,0.5,60.0,23076,0.031,0.031,0.678,46,True
+Hokkaido,,20.0,True,0.4,45.0,7464,0.032,0.032,0.686,47,True
+Honshu,,20.0,True,0.3,35.0,6282,0.033,0.033,0.693,48,True
+Okinawa,,20.0,True,0.5,55.0,18552,0.032,0.032,0.693,48,True
+Ilha de Man,Man,9.483,False,0.2,35.0,32124,0.033,0.033,0.7,49,True
+Ilha da Queimada Grande,Queimada Grande,9.598,False,1.5,55.0,31944,0.028,0.028,0.707,50,True
+Ilha do Cardoso,Cardoso,9.979,False,0.3,35.0,6096,0.034,0.034,0.707,50,True
+Ilha do Sal,Sal | Lhana,9.616,False,0.3,40.0,10248,0.034,0.034,0.714,51,True
+Ilha Anchieta,Anchieta,10.821,False,0.3,35.0,2466,0.035,0.035,0.721,52,True
+Svalbard,,20.0,True,0.2,30.0,24342,0.034,0.034,0.721,52,True
+Nauru,,15.836,False,0.2,30.0,39354,0.035,0.035,0.728,53,True
+Sacalina,,20.0,True,0.1,20.0,7470,0.036,0.036,0.735,54,True
+Tuvalu,,15.586,False,0.2,30.0,36366,0.036,0.036,0.742,55,True
+Ilha da Trindade,trindade,10.387,False,0.5,45.0,0,0.037,0.037,0.748,56,True
+Ilha de Baffin,Baffin,9.483,False,0.3,35.0,2664,0.037,0.037,0.748,56,True
+Ilha do Frade,Frade,11.272,False,0.2,30.0,1614,0.038,0.038,0.755,57,True
+Ilha do Sul,Ilha Sul | Te Waipounamu | Sul,8.754,False,0.1,30.0,1404,0.038,0.038,0.762,58,True
+Arquipélago de São Pedro e São Paulo,são pedro e são paulo,7.676,False,,,22008,0.043,0.043,0.775,60,True
+Aruba,,13.516,False,,,34752,0.041,0.041,0.775,60,True
+Bahamas,,13.389,False,,,45318,0.039,0.039,0.775,60,True
+Bahrein,,13.929,False,,,31302,0.051,0.051,0.775,60,True
+Barbados,,13.616,False,,,35880,0.04,0.04,0.775,60,True
+Curaçao,,14.058,False,,,86598,0.038,0.038,0.775,60,True
+Guadalupe,,13.038,False,,,21396,0.042,0.042,0.775,60,True
+Guernsey,,20.0,True,,,14334,0.048,0.048,0.775,60,True
+Hispaniola,Ilha de São Domingos | La Hispaniola | Isla Española | Ilha Hispaniola | Ilha Española | Ilha Espanhola | Ilha de Santo Domingo | Ilha de Hispaniola | Espanhola | São Domingos | Santo Domingo,8.558,False,,,5916,0.054,0.054,0.775,60,True
+Ilha Fiscal,Fiscal,9.509,False,,,11058,0.047,0.047,0.775,60,True
+Ilha Sentinela do Norte,Sentinela do Norte,10.385,False,,,26718,0.048,0.048,0.775,60,True
+Ilha Terceira,Terceira | Terceirense,9.567,False,,,18924,0.051,0.051,0.775,60,True
+Ilha da Liberdade,Liberdade,9.259,False,,,2412,0.05,0.05,0.775,60,True
+Ilha de Moçambique,Moçambique,10.339,False,,,9606,0.046,0.046,0.775,60,True
+Ilha de Santa Fé,Ilha de Barrington | Santa Fé | Barrington,8.942,False,,,34272,0.046,0.046,0.775,60,True
+Ilha de São Miguel,Micaelense | São Miguel,8.352,False,,,31506,0.046,0.046,0.775,60,True
+Ilha de Wight,Wight,9.483,False,,,5934,0.044,0.044,0.775,60,True
+Ilha do Fogo,Fogo,9.354,False,,,15462,0.053,0.053,0.775,60,True
+Ilha do Pico,Pico,10.357,False,,,15630,0.054,0.054,0.775,60,True
+Ilha do Porto Santo,Ilha de Porto Santo,8.877,False,,,19674,0.049,0.049,0.775,60,True
+Ilha dos Frades,Frades,9.483,False,,,6084,0.051,0.051,0.775,60,True
+Ilhas Baleares,baleares,12.631,False,,,19464,0.044,0.044,0.775,60,True
+Jersey,,12.418,False,,,14190,0.043,0.043,0.775,60,True
+Long Island,,20.0,True,,,9168,0.052,0.052,0.775,60,True
+Martim Vaz,,12.833,False,,,25878,0.045,0.045,0.775,60,True
+Martinica,,14.713,False,,,26310,0.042,0.042,0.775,60,True
+Maurício,,20.0,True,,,51276,0.04,0.04,0.775,60,True
+Porto Santo,Município do Porto Santo | ilha Dourada | Dourada,8.574,False,,,19674,0.049,0.049,0.775,60,True
+Rodes,,14.433,False,,,5724,0.053,0.053,0.775,60,True
+Santa Helena,,9.469,False,,,37206,0.044,0.044,0.775,60,True
+Santa Lúcia,,9.605,False,,,20892,0.041,0.041,0.775,60,True
+Santa Maria,Ilha de Santa Maria,8.331,False,,,22326,0.047,0.047,0.775,60,True
+Seychelles,,14.487,False,,,49440,0.039,0.039,0.775,60,True
+Shetland,,20.0,True,,,10032,0.053,0.053,0.775,60,True
+Terra do Fogo,,8.744,False,,,14088,0.048,0.048,0.775,60,True
+Ítaca,,20.0,True,,,16044,0.05,0.05,0.775,60,True
+Anak Krakatoa,,20.0,True,,,25164,0.07,0.07,0.781,61,True
+Ano Bom,,7.176,False,,,2988,0.077,0.077,0.781,61,True
+Ascensão,Ilha de Ascensão | Ilha Ascensão,11.218,False,,,12954,0.055,0.055,0.781,61,True
+Comores,,15.687,False,,,22728,0.058,0.058,0.781,61,True
+Corfu,,20.0,True,,,9084,0.058,0.058,0.781,61,True
+Elba,Ilha de Elba,9.483,False,,,5940,0.068,0.068,0.781,61,True
+Formentera,,20.0,True,,,4290,0.081,0.081,0.781,61,True
+Geórgia do Sul,,10.356,False,,,6528,0.061,0.061,0.781,61,True
+Gotland,,20.0,True,,,3642,0.075,0.075,0.781,61,True
+Gozo,Ilha do Gozo,11.666,False,,,4248,0.087,0.087,0.781,61,True
+Hébridas,,20.0,True,,,2676,0.08,0.08,0.781,61,True
+Ilha Bermuda,bermudas | Bermuda,10.792,False,,,23418,0.067,0.067,0.781,61,True
+Ilha Bouvet,Bouvet,9.483,False,,,10764,0.055,0.055,0.781,61,True
+Ilha Formosa,Ilha Taiwan | Ilha de Taiwan | Formosa,10.789,False,,,7530,0.069,0.069,0.781,61,True
+Ilha Graciosa,,11.144,False,,,7044,0.071,0.071,0.781,61,True
+Ilha Porchat,Porchat,9.483,False,,,5130,0.061,0.061,0.781,61,True
+Ilha da Boa Vista,Boavista,8.504,False,,,6930,0.065,0.065,0.781,61,True
+Ilha da Feitoria,Feitoria,12.079,False,,,18882,0.081,0.081,0.781,61,True
+Ilha das Flores,Ilha das flores (santa catarina) | Ilha das flores (ilha de santa catarina),9.476,False,,,12450,0.057,0.057,0.781,61,True
+Ilha de Alcatraz,,12.047,False,,,12444,0.062,0.062,0.781,61,True
+Ilha de Bioko,bioko,9.483,False,,,7140,0.059,0.059,0.781,61,True
+Ilha de Gonçalo Álvares,Ilhas Gough e Inacessível | Ilha gough | Ilha de Gough | Gonçalo Álvares | Gough e Inacessível | gough,10.303,False,,,3798,0.085,0.085,0.781,61,True
+Ilha de Maré,,10.553,False,,,2322,0.069,0.069,0.781,61,True
+Ilha de Mosqueiro,mosqueiro,12.005,False,,,5088,0.066,0.066,0.781,61,True
+Ilha de San Andrés,Ilha de Santo André | San Andrés | Santo André,9.483,False,,,3432,0.085,0.085,0.781,61,True
+Ilha de Santiago,Ilha de São Tiago | São Tiago | Santiago | Ilha de San Salvador | Ilha de James | James,10.088,False,,,10200,0.06,0.06,0.781,61,True
+Ilha de Santo Aleixo,Santo Aleixo,9.081,False,,,7440,0.083,0.083,0.781,61,True
+Ilha de Santo Amaro,Santo Amaro,9.899,False,,,3132,0.071,0.071,0.781,61,True
+Ilha de Santo Antão,Santo Antão | S. Antão,10.431,False,,,10746,0.06,0.06,0.781,61,True
+Ilha de São Francisco do Sul,São Francisco do Sul,8.127,False,,,1572,0.079,0.079,0.781,61,True
+Ilha de São Jorge,Ilha de S. Jorge | São Jorge | S. Jorge,8.26,False,,,6180,0.065,0.065,0.781,61,True
+Ilha de São Martinho,São Martin | São Martim,9.03,False,,,7596,0.064,0.064,0.781,61,True
+Ilha de São Nicolau,S. Nicolau | São Nicolau,9.119,False,,,3966,0.077,0.077,0.781,61,True
+Ilha de São Tomé,,9.02,False,,,3912,0.077,0.077,0.781,61,True
+Ilha de Tsushima,Tsushima,9.483,False,,,3690,0.082,0.082,0.781,61,True
+Ilha de Villegagnon,Serigipe | Ilha de Villegaignon | Ilha de serigipe | Villegagnon | Villegaignon,9.483,False,,,3768,0.086,0.086,0.781,61,True
+Ilha do Barba Negra,Barba Negra,10.346,False,,,18882,0.074,0.074,0.781,61,True
+Ilha do Corvo,Corvo | Vila do corvo | Ilha do Marco | Marco,11.062,False,,,13716,0.058,0.058,0.781,61,True
+Ilha do Diabo,Diabo,10.089,False,,,5778,0.072,0.072,0.781,61,True
+Ilha do Faial,Faial,11.569,False,,,10776,0.064,0.064,0.781,61,True
+Ilha do Fundão,Fundão,11.197,False,,,5868,0.062,0.062,0.781,61,True
+Ilha do Maio,Maio,8.823,False,,,3186,0.084,0.084,0.781,61,True
+Ilha do Pessegueiro,Pessegueiro,12.078,False,,,5916,0.083,0.083,0.781,61,True
+Ilha do Príncipe,Príncipe,9.992,False,,,5526,0.074,0.074,0.781,61,True
+Ilhas Cayman,Cayman,10.766,False,,,14508,0.079,0.079,0.781,61,True
+Ilhas Cook,,10.766,False,,,17166,0.063,0.063,0.781,61,True
+Ilhas Desertas,Desertas,12.264,False,,,6012,0.08,0.08,0.781,61,True
+Ilhas Faroé,faroé,10.766,False,,,56640,0.06,0.06,0.781,61,True
+Kiribati,,15.962,False,,,17946,0.076,0.076,0.781,61,True
+Kyushu,Quiuxu,20.0,True,,,3246,0.062,0.062,0.781,61,True
+Lampedusa,,20.0,True,,,3228,0.085,0.085,0.781,61,True
+Lanzarote,,20.0,True,,,3720,0.082,0.082,0.781,61,True
+Lesbos,,20.0,True,,,8586,0.059,0.059,0.781,61,True
+Lofoten,,20.0,True,,,4290,0.07,0.07,0.781,61,True
+Luzon,Lução | Luçon,15.048,False,,,1386,0.079,0.079,0.781,61,True
+Menorca,Minorca,15.825,False,,,5550,0.073,0.073,0.781,61,True
+Mindanao,Mindanau,20.0,True,,,1854,0.072,0.072,0.781,61,True
+Monserrate,Montserrat,15.115,False,,,9918,0.077,0.077,0.781,61,True
+Nova Caledônia,,7.472,False,,,26514,0.075,0.075,0.781,61,True
+Palau,,14.436,False,,,36396,0.056,0.056,0.781,61,True
+Samoa,,14.324,False,,,22554,0.067,0.067,0.781,61,True
+Santo Eustáquio,St. Eustatius | Saint Eustatius | Sint Eustatius | Statia,8.678,False,,,4578,0.074,0.074,0.781,61,True
+Shikoku,,20.0,True,,,2568,0.067,0.067,0.781,61,True
+Skye,Ilha de Skye | Isle of skye,9.483,False,,,2448,0.084,0.084,0.781,61,True
+Spitsbergen,,20.0,True,0.05,15.0,1848,0.056,0.056,0.781,61,True
+Terra Nova,,7.867,False,,,14826,0.064,0.064,0.781,61,True
+Terra de Francisco José,,8.601,False,,,11328,0.075,0.075,0.781,61,True
+Tobago,,20.0,True,,,1866,0.082,0.082,0.781,61,True
+Tonga,,14.811,False,,,19368,0.071,0.071,0.781,61,True
+Tristão da Cunha,,11.988,False,,,7152,0.068,0.068,0.781,61,True
+Órcadas,,20.0,True,,,4680,0.066,0.066,0.781,61,True
+Aitutaki,,20.0,True,,,11358,0.094,0.094,0.787,62,True
+Bornholm,,20.0,True,,,1548,0.106,0.106,0.787,62,True
+Diego Garcia,,20.0,True,,,6060,0.117,0.117,0.787,62,True
+Fuerteventura,,20.0,True,,,2886,0.091,0.091,0.787,62,True
+Guam,,20.0,True,,,17484,0.089,0.089,0.787,62,True
+Ilha Brasileira,Brasileira,8.924,False,,,3066,0.095,0.095,0.787,62,True
+Ilha Brava,Ilha da Brava | Brava,10.698,False,,,2724,0.098,0.098,0.787,62,True
+Ilha Ernst Thälmann,Cayo Ernesto Thaelmann | Cayo Blanco del Sur | Ernst Thälmann,9.483,False,,,1548,0.114,0.114,0.787,62,True
+Ilha Grande da Terra do Fogo,Isla Grande de Tierra del Fuego | Ilha de Xàtiva | Grande da Terra do Fogo | Xàtiva,8.489,False,,,1380,0.113,0.113,0.787,62,True
+Ilha Grande de Chiloé,Ilha de Chiloé | Grande de Chiloé,8.235,False,,,1494,0.111,0.111,0.787,62,True
+Ilha Hans,Hans,9.483,False,,,2376,0.097,0.097,0.787,62,True
+Ilha Hashima,Hashima,9.483,False,,,3072,0.088,0.088,0.787,62,True
+Ilha Inacessível,Inacessível,11.447,False,,,2448,0.108,0.108,0.787,62,True
+Ilha Jarvis,US-86 | UM-86 | Ilha de Jarvis | Jarvis,9.483,False,,,2004,0.103,0.103,0.787,62,True
+Ilha Montão de Trigo,Montão de Trigo,11.099,False,,,4638,0.115,0.115,0.787,62,True
+Ilha Norfolk,Norfolk,9.483,False,,,5184,0.093,0.093,0.787,62,True
+Ilha Robinson Crusoe,Robinson Crusoe,9.483,False,,,2160,0.101,0.101,0.787,62,True
+Ilha Sable,Sable Island | Sable,12.394,False,,,4134,0.092,0.092,0.787,62,True
+Ilha Sabrina,Sabrina,10.653,False,,,3162,0.115,0.115,0.787,62,True
+Ilha Saona,Saona,9.483,False,,,1344,0.118,0.118,0.787,62,True
+Ilha Severny,Severny,9.483,False,,,1464,0.116,0.116,0.787,62,True
+Ilha Tromelin,Tromelin,9.483,False,,,2106,0.102,0.102,0.787,62,True
+Ilha da Armona,Ilha de Armona | Armona,9.483,False,,,5352,0.089,0.089,0.787,62,True
+Ilha da Culatra,Culatra,11.709,False,,,6300,0.088,0.088,0.787,62,True
+Ilha da Juventude,Isla de Pinos | Isla de la Juventud | Ilha de Pinos | Juventude | Pinos,9.742,False,,,1482,0.116,0.116,0.787,62,True
+Ilha da Toxa,Toxa,9.483,False,,,3024,0.094,0.094,0.787,62,True
+Ilha das Bonecas,Isla de las Muñecas | Bonecas,10.511,False,,,3648,0.087,0.087,0.787,62,True
+Ilha das Peças,Peças,9.11,False,,,1014,0.107,0.107,0.787,62,True
+Ilha de Alcatrazes,Alcatrazes,9.483,False,,,4338,0.103,0.103,0.787,62,True
+Ilha de Algodoal,algodoal | Ilha de Maiandeua | Maiandeua,12.551,False,,,1038,0.118,0.118,0.787,62,True
+Ilha de Floreana,Ilha Floreana | Floreana,9.483,False,,,2478,0.095,0.095,0.787,62,True
+Ilha de Gorée,gorée | Goreia | Ilha de Palma ou de Bezeguiche | Bezeguiche | Goeree | Goré | Palma ou de Bezeguiche,9.483,False,,,1854,0.094,0.094,0.787,62,True
+Ilha de Mahé,Mahé,9.483,False,,,1572,0.113,0.113,0.787,62,True
+Ilha de Margarita,Ilha Margarita,11.652,False,,,2646,0.106,0.106,0.787,62,True
+Ilha de Patmos,Patmos,9.483,False,,,9384,0.098,0.098,0.787,62,True
+Ilha de Santa Catalina,Santa Catalina,8.91,False,,,2040,0.099,0.099,0.787,62,True
+Ilha de Santa Luzia,Santa Luzia,9.849,False,,,2004,0.106,0.106,0.787,62,True
+Ilha de Superagui,superagui,9.483,False,,,978,0.09,0.09,0.787,62,True
+Ilha de São Cristóvão,São Cristóvão | Saint Kitts,7.64,False,,,1380,0.11,0.11,0.787,62,True
+Ilha de São Lourenço,Ilha St. Lawrence | São Lourenço | St. Lawrence,7.64,False,,,1260,0.112,0.112,0.787,62,True
+Ilha de Tinharé,,9.483,False,,,3240,0.101,0.101,0.787,62,True
+Ilha do Campeche,campeche,11.71,False,,,1752,0.09,0.09,0.787,62,True
+Ilha do Príncipe Eduardo,Príncipe Eduardo,9.992,False,,,6696,0.092,0.092,0.787,62,True
+Ilha dos Lobos,Lobos,10.541,False,,,1332,0.096,0.096,0.787,62,True
+Ilha dos Tigres,Ilha da Baía dos Tigres | Tigres | Baía dos Tigres,9.483,False,,,1836,0.109,0.109,0.787,62,True
+Ilhas Salomão,Salomão,11.246,False,,,23250,0.096,0.096,0.787,62,True
+Ilhote de Vélez de la Gomera,Peñón de Vélez de la Gomera | Penedo de Vélez de la Gomera | Ilhéu de Vélez de la Gomera | Badès | Vélez de la Gomera,12.625,False,,,2190,0.117,0.117,0.787,62,True
+Ilhéu das Rolas,Pico de Príncipe | Ilha das Rolas | Rolas,14.35,False,,,3534,0.111,0.111,0.787,62,True
+Ilhéu de Vila Franca,Reduto do Ilhéu de Vila Franca | Vila Franca,11.522,False,,,3252,0.109,0.109,0.787,62,True
+Ilhéus das Formigas,Formigas,12.216,False,,,3318,0.099,0.099,0.787,62,True
+Isla del Sol,,10.355,False,,,1746,0.114,0.114,0.787,62,True
+La Digue,,7.862,False,,,1614,0.102,0.102,0.787,62,True
+Martha's Vineyard,,20.0,True,,,6582,0.116,0.116,0.787,62,True
+Mayotte,,20.0,True,,,7296,0.105,0.105,0.787,62,True
+Mont-Saint-Michel,,20.0,True,,,46566,0.097,0.097,0.787,62,True
+Neves,Ilha Nevis | Ilha Neves | Nevis,10.562,False,,,2136,0.109,0.109,0.787,62,True
+Niue,,20.0,True,,,13614,0.11,0.11,0.787,62,True
+Nova Providência,New Providence,9.665,False,,,1686,0.112,0.112,0.787,62,True
+Nova Zembla,,7.472,False,,,4266,0.101,0.101,0.787,62,True
+Pitcairn,,20.0,True,,,16878,0.104,0.104,0.787,62,True
+Reunião,,9.294,False,,,2202,0.091,0.091,0.787,62,True
+Saba,Ilha de Saba,14.547,False,,,5946,0.09,0.09,0.787,62,True
+Samos,Ilha de samos,14.477,False,,,3486,0.111,0.111,0.787,62,True
+Santa Cruz del Islote,,9.06,False,,,2064,0.1,0.1,0.787,62,True
+Socotra,Socotorá | Suqutrah | Soqotra | Socutra,20.0,True,,,7608,0.105,0.105,0.787,62,True
+São Martinho,,8.803,False,,,7152,0.095,0.095,0.787,62,True
+São Paulo,Ilha de São Paulo | Ilhas São Paulo | Ilha Saint-Paul | Île Saint-Paul | Selmunett | Saint-Paul,6.313,False,,,1266,0.104,0.104,0.787,62,True
+São Tomás,Saint Thomas | San Thomas,8.836,False,,,1686,0.108,0.108,0.787,62,True
+Timor,,12.237,False,,,3642,0.101,0.101,0.787,62,True
+Trinidad,,20.0,True,,,1596,0.087,0.087,0.787,62,True
+Andamão,,20.0,True,,,3480,0.147,0.147,0.794,63,True
+Arquipélago de San Blas,San Blas,12.28,False,,,1758,0.126,0.126,0.794,63,True
+Arquipélago do Marajó,,12.905,False,,,3858,0.144,0.144,0.794,63,True
+Baleal,Praia do baleal,15.638,False,,,4410,0.143,0.143,0.794,63,True
+Berlenga Grande,,6.987,False,,,1308,0.12,0.12,0.794,63,True
+Catedral de Mármore,Cavernas de Mármore | Capilla de Mármol | Capela de Mármore,11.562,False,,,1842,0.137,0.137,0.794,63,True
+Cós,Ilha de Cós | Kos,13.347,False,,,2130,0.124,0.124,0.794,63,True
+Deserta Grande,,9.89,False,,,954,0.142,0.142,0.794,63,True
+Diomedes Menor,,8.869,False,,,1206,0.119,0.119,0.794,63,True
+Djerba,Jerba,20.0,True,,,4332,0.139,0.139,0.794,63,True
+Espírito Santo,Ilha Espírito Santo | Ilha do Espírito Santo | Espiritu Santo | Austrália do Espírito Santo,8.716,False,,,816,0.141,0.141,0.794,63,True
+Gran Canária,Grã Canária | Grande canária,14.874,False,,,630,0.121,0.121,0.794,63,True
+Grande Bermuda,,9.545,False,,,1590,0.137,0.137,0.794,63,True
+Hidra,Ilha de Hidra,14.245,False,,,2010,0.133,0.133,0.794,63,True
+Ilha Attu,Attu,9.483,False,,,1146,0.128,0.128,0.794,63,True
+Ilha Caprera,Caprera,9.483,False,,,1116,0.13,0.13,0.794,63,True
+Ilha Christmas,Christmas,9.483,False,,,8394,0.135,0.135,0.794,63,True
+Ilha Decepção,Decepção,10.617,False,,,1122,0.138,0.138,0.794,63,True
+Ilha Elefante,Elefante,10.733,False,,,1398,0.127,0.127,0.794,63,True
+Ilha Henderson,Henderson,9.483,False,,,1224,0.124,0.124,0.794,63,True
+Ilha Holbox,Holbox,9.483,False,,,1002,0.135,0.135,0.794,63,True
+Ilha Isabela,Ilha de Isabella | Ilha de Isabela | Isabela | Isabella,10.848,False,,,1398,0.127,0.127,0.794,63,True
+Ilha Macquarie,Macquarie,9.483,False,,,1230,0.124,0.124,0.794,63,True
+Ilha Martín García,Ilha de Martín García | Martín García,9.483,False,,,1116,0.13,0.13,0.794,63,True
+Ilha Moyenne,Moyenne,9.483,False,,,870,0.142,0.142,0.794,63,True
+Ilha Olkhon,Olkhon,9.483,False,,,960,0.138,0.138,0.794,63,True
+Ilha Wrangel,Ilha de Wrangel | Wrangell | Vrangelya | Ostrov Nakhodka | Wrangel,9.483,False,,,2166,0.143,0.143,0.794,63,True
+Ilha da Barreta,Ilha Deserta | Barreta | Deserta,12.849,False,,,2124,0.146,0.146,0.794,63,True
+Ilha da Conceição,Conceição,10.17,False,,,1866,0.148,0.148,0.794,63,True
+Ilha das Couves,Couves,9.483,False,,,3666,0.121,0.121,0.794,63,True
+Ilha de Alborão,Ilha de Alborán | Alborão | Alborán,9.483,False,,,1248,0.123,0.123,0.794,63,True
+Ilha de Angediva,Angediva,9.483,False,,,882,0.149,0.149,0.794,63,True
+Ilha de Anhatomirim,Anhatomirim,9.483,False,,,2148,0.136,0.136,0.794,63,True
+Ilha de Brownsea,Brownsea,9.483,False,,,876,0.142,0.142,0.794,63,True
+Ilha de Cotijuba,Cotijuba,9.483,False,,,4026,0.139,0.139,0.794,63,True
+Ilha de Delos,Delos,9.483,False,,,3984,0.133,0.133,0.794,63,True
+Ilha de Devon,Ilha Devon | Devon,9.483,False,,,1002,0.135,0.135,0.794,63,True
+Ilha de Ellesmere,Ilha Ellesmere | Ellesmere,9.483,False,,,1878,0.149,0.149,0.794,63,True
+Ilha de Guadalupe,,11.26,False,,,1074,0.145,0.145,0.794,63,True
+Ilha de Hong Kong,,9.483,False,,,1308,0.12,0.12,0.794,63,True
+Ilha de João da Nova,Juan de Nova | João da Nova,8.43,False,,,822,0.138,0.138,0.794,63,True
+Ilha de Ons,Ons,9.483,False,,,1086,0.131,0.131,0.794,63,True
+Ilha de Pantelária,Ilha de pantelleria | Pantelária | pantelleria,9.483,False,,,1218,0.129,0.129,0.794,63,True
+Ilha de Roanoke,Roanoke,9.483,False,,,1320,0.119,0.119,0.794,63,True
+Ilha de Santa Cruz,Ilha de Indefatigable | Santa Cruz | Indefatigable,9.042,False,,,888,0.139,0.139,0.794,63,True
+Ilha de Tavira,Tavira,9.483,False,,,2334,0.12,0.12,0.794,63,True
+Ilha de Vancouver,Ilha Vancouver | Vancouver,9.483,False,,,1884,0.144,0.144,0.794,63,True
+Ilha do Bom Jesus dos Passos,Ilha de Bom Jesus dos Passos | Ilha de Bom Jesus | Bom Jesus dos Passos | Bom Jesus,8.643,False,,,3084,0.124,0.124,0.794,63,True
+Ilha do Brocoió,Ilha de Brocoió | Brocoió,13.742,False,,,3330,0.15,0.15,0.794,63,True
+Ilha dos Estados,Isla de los estados | Estados,8.996,False,,,684,0.15,0.15,0.794,63,True
+Ilhas Aleutas,Aleutas,10.766,False,,,4158,0.123,0.123,0.794,63,True
+Ilhas Virgens,Virgens,11.526,False,,,4398,0.131,0.131,0.794,63,True
+Inhaca,Ilha da Inhaca,16.172,False,,,1992,0.149,0.149,0.794,63,True
+Isola Bella,,13.375,False,,,1950,0.129,0.129,0.794,63,True
+Kauai,,20.0,True,,,5358,0.126,0.126,0.794,63,True
+Kerguelen,,20.0,True,,,3810,0.133,0.133,0.794,63,True
+Ko Tao,,11.102,False,,,1080,0.143,0.143,0.794,63,True
+Maui,,20.0,True,,,3564,0.148,0.148,0.794,63,True
+Maurícia,,14.51,False,,,2334,0.128,0.128,0.794,63,True
+Milos,,20.0,True,,,4248,0.14,0.14,0.794,63,True
+Nantucket,,20.0,True,,,4536,0.135,0.135,0.794,63,True
+Oahu,O'ahu,20.0,True,,,3606,0.146,0.146,0.794,63,True
+Poveglia,,20.0,True,,,5352,0.126,0.126,0.794,63,True
+Rodrigues,Ilhas Rodrigues | Ilha Rodrigues,10.766,False,,,3594,0.147,0.147,0.794,63,True
+Sala y Gómez,Ilha Sala y Gómez | Ilha Sala e Gómez | Sala e Gómez,8.505,False,,,810,0.14,0.14,0.794,63,True
+San Salvador,São Salvador,9.515,False,,,1122,0.129,0.129,0.794,63,True
+Selvagem Grande,,9.09,False,,,1230,0.122,0.122,0.794,63,True
+Siro,Syros,14.514,False,,,2214,0.132,0.132,0.794,63,True
+Stromboli,,20.0,True,,,5712,0.122,0.122,0.794,63,True
+Tortuga,Ilha Tortuga,9.483,False,,,4782,0.132,0.132,0.794,63,True
+Turks e Caicos,,20.0,True,,,11736,0.144,0.144,0.794,63,True
+Arguim,Castelo de Arguim | Forte de Arguim | Arguin,10.067,False,,,2304,0.177,0.177,0.8,64,True
+Ataúro,Município de Ataúro | Ilha de Ataúro | Ilha Ataúro,17.227,False,,,1428,0.183,0.183,0.8,64,True
+Barbuda,,14.766,False,,,1188,0.168,0.168,0.8,64,True
+Bassas da Índia,,10.508,False,,,798,0.154,0.154,0.8,64,True
+Cefalónia,Kefallinias | Kefallinía,20.0,True,,,2346,0.174,0.174,0.8,64,True
+Egina,Ilha de Egina | Aegina,9.483,False,,,2214,0.183,0.183,0.8,64,True
+Fogo Island,,9.225,False,,,510,0.173,0.173,0.8,64,True
+Gaztelugatxe,,20.0,True,,,2454,0.173,0.173,0.8,64,True
+Graciosa,La Graciosa,12.805,False,,,900,0.168,0.168,0.8,64,True
+Guanahani,,20.0,True,,,2520,0.172,0.172,0.8,64,True
+Guriri,Ilha de Guriri | Praia de Guriri,15.454,False,,,5736,0.166,0.166,0.8,64,True
+Ilha Adak,Adak,9.483,False,,,660,0.158,0.158,0.8,64,True
+Ilha Awaji,Ilha de Awaji | Awaji,9.483,False,,,480,0.182,0.182,0.8,64,True
+Ilha Campbell,Campbell,9.483,False,,,660,0.158,0.158,0.8,64,True
+Ilha Cape Breton,Ilha do Cabo Bretão | Ilha do Cabo Breton | Cape Breton | Cabo Bretão | Cabo Breton,11.065,False,,,624,0.177,0.177,0.8,64,True
+Ilha Chatham,Chatham,9.483,False,,,642,0.16,0.16,0.8,64,True
+Ilha Europa,Europa,9.339,False,,,714,0.151,0.151,0.8,64,True
+Ilha Grande dos Marinheiros,Grande dos Marinheiros,8.235,False,,,1806,0.16,0.16,0.8,64,True
+Ilha Howland,Howland,9.483,False,,,3270,0.181,0.181,0.8,64,True
+Ilha Iki,Iki,9.483,False,,,696,0.153,0.153,0.8,64,True
+Ilha Lord Howe,Ilha de Lord Howe | Arquipélago de Lord Howe | Lord Howe,9.483,False,,,1386,0.155,0.155,0.8,64,True
+Ilha Navarino,Navarino,9.483,False,,,600,0.163,0.163,0.8,64,True
+Ilha Robben,Robben,9.483,False,,,2448,0.156,0.156,0.8,64,True
+Ilha Santa Bárbara,Ilha de Santa Bárbara | Ilha Santa Bárbara (Bahia) | Santa Bárbara,9.725,False,,,840,0.177,0.177,0.8,64,True
+Ilha Socorro,Socorro,10.053,False,,,678,0.161,0.161,0.8,64,True
+Ilha Wake,Wake,9.483,False,,,3546,0.168,0.168,0.8,64,True
+Ilha Zavodovski,Zavodovski,9.483,False,,,486,0.179,0.179,0.8,64,True
+Ilha da Restinga,Restinga,11.468,False,,,1422,0.159,0.159,0.8,64,True
+Ilha das Andorinhas,Andorinhas,9.483,False,,,2832,0.179,0.179,0.8,64,True
+Ilha das Enxadas,Enxadas,9.483,False,,,1422,0.175,0.175,0.8,64,True
+Ilha de Antônio Vaz,Antônio Vaz,9.598,False,,,1908,0.17,0.17,0.8,64,True
+Ilha de Bering,Bering,9.483,False,,,516,0.174,0.174,0.8,64,True
+Ilha de Bolama,Bolama,9.483,False,,,660,0.165,0.165,0.8,64,True
+Ilha de Darwin,Ilha Darwin | Ilha de Culpepper | Darwin | Culpepper,9.483,False,,,726,0.151,0.151,0.8,64,True
+Ilha de Itacuruçá,Itacuruçá,9.483,False,,,1416,0.166,0.166,0.8,64,True
+Ilha de Montreal,Montreal,9.483,False,,,570,0.167,0.167,0.8,64,True
+Ilha de Mull,Mull,9.483,False,,,588,0.165,0.165,0.8,64,True
+Ilha de Ratmanov,Diomedes Maior | Ratmanov,9.483,False,,,618,0.162,0.162,0.8,64,True
+Ilha de Santa Rita,Santa Rita,9.444,False,,,2832,0.156,0.156,0.8,64,True
+Ilha de São Simão,Ilha de San Simón | São Simão | San Simón,8.983,False,,,726,0.171,0.171,0.8,64,True
+Ilha de Um Coqueiro Só,Ilha do Coqueiro Só | Um Coqueiro Só | Coqueiro Só,8.515,False,,,2832,0.17,0.17,0.8,64,True
+Ilha do Arvoredo,arvoredo | Ilhas do Arvoredo,11.741,False,,,366,0.165,0.165,0.8,64,True
+Ilha do Caju,Caju,10.92,False,,,384,0.162,0.162,0.8,64,True
+Ilha do Guajirú,Guajirú,12.937,False,,,3792,0.155,0.155,0.8,64,True
+Ilha do Irineu,Irineu,9.483,False,,,2832,0.179,0.179,0.8,64,True
+Ilha do Norte,Ilha Norte | Norte,8.997,False,,,1182,0.163,0.163,0.8,64,True
+Ilha do Presídio,Ilha das Pedras Brancas | Ilha da Pólvora | Presídio | Pólvora | Pedras Brancas,10.726,False,,,2448,0.181,0.181,0.8,64,True
+Ilhas Cocos,Cocos,12.341,False,,,7098,0.171,0.171,0.8,64,True
+Ilhéus das Cabras,Ilhéu das Cabras - Ilha Terceira | Cabras - Ilha Terceira,12.16,False,,,1800,0.16,0.16,0.8,64,True
+Just Room Enough Island,,20.0,True,,,3186,0.153,0.153,0.8,64,True
+Malvina Ocidental,Grande Malvina | Gran Malvina | Falkland Ocidental,10.815,False,,,588,0.179,0.179,0.8,64,True
+Malvina Oriental,Isla Soledad | Ilha Soledad | Falkland Oriental | Soledad,11.13,False,,,618,0.178,0.178,0.8,64,True
+Montecristo,,20.0,True,,,3054,0.158,0.158,0.8,64,True
+Naxos,,20.0,True,,,3336,0.151,0.151,0.8,64,True
+Nikumaroro,,20.0,True,,,3330,0.151,0.151,0.8,64,True
+Oak Island,Ilha Oak | Oak,9.483,False,,,2418,0.173,0.173,0.8,64,True
+Paros,,20.0,True,,,3072,0.156,0.156,0.8,64,True
+Pemba,,14.542,False,,,1182,0.166,0.166,0.8,64,True
+Perim,,20.0,True,,,3162,0.154,0.154,0.8,64,True
+Phuket,,20.0,True,,,2514,0.175,0.175,0.8,64,True
+Praia da Fábrica,,9.459,False,,,2358,0.17,0.17,0.8,64,True
+Redonda,,11.08,False,,,612,0.179,0.179,0.8,64,True
+Reino de Elleore,,9.466,False,,,600,0.163,0.163,0.8,64,True
+Roosevelt Island,,20.0,True,,,2238,0.181,0.181,0.8,64,True
+Sark,,20.0,True,,,2748,0.164,0.164,0.8,64,True
+Selvagem Pequena,,10.146,False,,,654,0.175,0.175,0.8,64,True
+Skorpios,,20.0,True,,,3066,0.156,0.156,0.8,64,True
+Sulawesi,celebes,20.0,True,,,3054,0.167,0.167,0.8,64,True
+Taipa,Vila da Taipa | Ilha de Taipa | Ilha da Taipa,13.981,False,,,1332,0.153,0.153,0.8,64,True
+Zelândia,Sjælland,20.0,True,,,2496,0.172,0.172,0.8,64,True
+Île d'Yeu,,14.206,False,,,1224,0.161,0.161,0.8,64,True
+Amesterdão,Ilhas de Amsterdã | Ilhas Amsterdão | Ilhas Amsterdã | Ilha de Amsterdão | Ilha de Amsterdam | Ilha Amsterdam | Île Amsterdam | Amsterdã | Amsterdão | Amsterdam,10.766,False,,,1800,0.204,0.204,0.806,65,True
+Arquipélago de Bocas del Toro,Bocas del Toro,11.538,False,,,552,0.199,0.199,0.806,65,True
+Cebu,,20.0,True,,,2064,0.215,0.215,0.806,65,True
+Chiloé,,20.0,True,,,1122,0.209,0.209,0.806,65,True
+Coroa do Avião,,10.37,False,,,1800,0.207,0.207,0.806,65,True
+Elobey Grande,,6.987,False,,,294,0.194,0.194,0.806,65,True
+Eubeia,Negroponte | Euboia | Eubea | Ilha de Euboea | Evvoia | Eubéios | Evia | Euboea,9.483,False,,,2040,0.19,0.19,0.806,65,True
+Fårö,,11.439,False,,,522,0.201,0.201,0.806,65,True
+Grande Bahama,,6.987,False,,,312,0.188,0.188,0.806,65,True
+Grande Caimão,Grand Cayman,11.595,False,,,576,0.193,0.193,0.806,65,True
+Icária,Ikaria,20.582,False,,,1854,0.206,0.206,0.806,65,True
+Ilha Anticosti,Ilha de Anticosti | Anticosti,9.483,False,,,444,0.188,0.188,0.806,65,True
+Ilha Araraí,Araraí,9.483,False,,,2052,0.213,0.213,0.806,65,True
+Ilha Auckland,Auckland,9.483,False,,,414,0.195,0.195,0.806,65,True
+Ilha Bora Bora,,11.036,False,,,2832,0.203,0.203,0.806,65,True
+Ilha Cat,Cat island | Cat,9.483,False,,,474,0.183,0.183,0.806,65,True
+Ilha Dawson,Dawson,9.483,False,,,360,0.211,0.211,0.806,65,True
+Ilha Ganghwa,Ganghwa,9.483,False,,,396,0.2,0.2,0.806,65,True
+Ilha Grande do Gurupá,Grande do Gurupá,10.773,False,,,510,0.196,0.196,0.806,65,True
+Ilha Manitoulin,Manitoulin,9.483,False,,,432,0.192,0.192,0.806,65,True
+Ilha Manoel,Manoel,9.483,False,,,438,0.19,0.19,0.806,65,True
+Ilha Maria Francisca,Maria Francisca,10.018,False,,,1386,0.187,0.187,0.806,65,True
+Ilha Rei George,Ilha do Rei George | Rei George,9.392,False,,,1914,0.213,0.213,0.806,65,True
+Ilha Sainte-Marie,Sainte-Marie,11.445,False,,,492,0.208,0.208,0.806,65,True
+Ilha Thule,Ilha Morrell | Thule | Morrell,9.483,False,,,474,0.183,0.183,0.806,65,True
+Ilha Ukerewe,Ukerewe,9.483,False,,,378,0.207,0.207,0.806,65,True
+Ilha Victoria,Victoria,11.501,False,,,1224,0.209,0.209,0.806,65,True
+Ilha Zuqar,Zuqar,9.483,False,,,474,0.183,0.183,0.806,65,True
+Ilha da Rita,Rita,9.997,False,,,942,0.211,0.211,0.806,65,True
+Ilha das Aves,Ilha de Aves | Aves,9.483,False,,,450,0.187,0.187,0.806,65,True
+Ilha de Clipperton,Clipperton,9.483,False,,,2760,0.185,0.185,0.806,65,True
+Ilha de Comandatuba,Comandatuba,12.492,False,,,1464,0.203,0.203,0.806,65,True
+Ilha de Curupu,Curupu,13.74,False,,,2718,0.213,0.213,0.806,65,True
+Ilha de Jeju,jeju,12.443,False,,,5892,0.192,0.192,0.806,65,True
+Ilha de Linosa,Linosa,9.483,False,,,414,0.195,0.195,0.806,65,True
+Ilha de Mafia,Ilha Mafia | Mafia,10.894,False,,,474,0.203,0.203,0.806,65,True
+Ilha de Murano,Murano,11.759,False,,,2046,0.21,0.21,0.806,65,True
+Ilha de Mármara,Mármara,9.483,False,,,456,0.186,0.186,0.806,65,True
+Ilha de Noirmoutier,Île de Noirmoutier | Noirmoutier,9.483,False,,,348,0.215,0.215,0.806,65,True
+Ilha de Oléron,Oléron,9.483,False,,,462,0.186,0.186,0.806,65,True
+Ilha de Pombeba,Ilha da Pombeba | Pombeba,9.483,False,,,1200,0.193,0.193,0.806,65,True
+Ilha de Ré,,10.6,False,,,2286,0.192,0.192,0.806,65,True
+Ilha de Santa Marta,Santa Marta,9.632,False,,,2832,0.183,0.183,0.806,65,True
+Ilha de Vassiliev,Vassiliev,9.483,False,,,390,0.202,0.202,0.806,65,True
+Ilha de la Gonâve,la Gonâve,8.672,False,,,396,0.188,0.188,0.806,65,True
+Ilha do Almirante,Almirante,10.761,False,,,2832,0.198,0.198,0.806,65,True
+Ilha do Caranguejo,Ilha dos Caranguejos | Caranguejo | Caranguejos,11.169,False,,,1692,0.201,0.201,0.806,65,True
+Ilha do Coco,Coco,10.113,False,,,1488,0.203,0.203,0.806,65,True
+Ilha do Medo,Ilha do medo (Maranhão) | Medo | Ilha do Medo (Itaparica) | Ilha do Medo (Bahia),9.172,False,,,1266,0.185,0.185,0.806,65,True
+Ilha do Rei Guilherme,Rei Guilherme,9.713,False,,,384,0.208,0.208,0.806,65,True
+Ilha do Sol,Sol,9.13,False,,,2226,0.199,0.199,0.806,65,True
+Ilha dos Lençóis,Lençóis,10.621,False,,,1464,0.189,0.189,0.806,65,True
+Ilhas das Cabras,Ilha das Cabras,10.766,False,,,2832,0.198,0.198,0.806,65,True
+Kiritimati,Quiritimati,20.0,True,,,1776,0.207,0.207,0.806,65,True
+Komodo,,20.0,True,,,1950,0.206,0.206,0.806,65,True
+Lakshadweep,,20.0,True,,,1944,0.196,0.196,0.806,65,True
+Lanai,Lānaʻi,20.0,True,,,1818,0.203,0.203,0.806,65,True
+Lemnos,Limnos,20.0,True,,,1788,0.206,0.206,0.806,65,True
+Marquesas,,20.0,True,,,3048,0.212,0.212,0.806,65,True
+Niihau,,20.0,True,,,1932,0.195,0.195,0.806,65,True
+Nossa Senhora das Rochas,Gospa od Škrpjela,9.532,False,,,396,0.201,0.201,0.806,65,True
+Pirâmide de Ball,,11.922,False,,,498,0.212,0.212,0.806,65,True
+Quios,Ilha de Quíos | Quio | Chios,9.483,False,,,2100,0.187,0.187,0.806,65,True
+Saipan,Saipã,20.0,True,,,2634,0.197,0.197,0.806,65,True
+Salamina,,20.0,True,,,1800,0.204,0.204,0.806,65,True
+Samotrácia,Samothraki | Ilha de Samotrácia,9.483,False,,,1890,0.197,0.197,0.806,65,True
+Taprobana,,20.0,True,,,2286,0.191,0.191,0.806,65,True
+Tupinambarana,Ilha Tupinambarana,17.574,False,,,1134,0.211,0.211,0.806,65,True
+Utøya,Utoya | Utoeya,20.0,True,,,1848,0.2,0.2,0.806,65,True
+Vágar,Vågø | Vaagø | Vaago,12.345,False,,,552,0.209,0.209,0.806,65,True
+Île de la Cité,,11.482,False,,,2544,0.19,0.19,0.806,65,True
+Alderney,,20.0,True,,,1320,0.242,0.242,0.812,66,True
+Anglesey,,20.0,True,,,1554,0.219,0.219,0.812,66,True
+Aoshima,,20.0,True,,,1536,0.221,0.221,0.812,66,True
+Banco Princesa Alice,Banco Princesse Alice,9.956,False,,,690,0.247,0.247,0.812,66,True
+Bazaruto,,20.0,True,,,1608,0.231,0.231,0.812,66,True
+Citera,Tsirigo | Kythira | Kythera | Kithira | Cythera | Cérigo,20.0,True,,,1482,0.227,0.227,0.812,66,True
+Comino,,20.0,True,,,1500,0.225,0.225,0.812,66,True
+Elobey Pequeno,Elobey Chico,8.887,False,,,276,0.231,0.231,0.812,66,True
+Fire Island,,20.0,True,,,1356,0.238,0.238,0.812,66,True
+Grande Terre,,6.987,False,,,216,0.229,0.229,0.812,66,True
+Great Saint James,,20.0,True,,,1254,0.246,0.246,0.812,66,True
+Ibo,Ilha do Ibo,15.645,False,,,732,0.231,0.231,0.812,66,True
+Ilha Alexandre I,Ilha de Alexandre | Ilha Alexandre | Alexandre I | Alexandre,9.729,False,,,348,0.218,0.218,0.812,66,True
+Ilha Baker,Baker,9.483,False,,,2082,0.231,0.231,0.812,66,True
+Ilha Banks,Ilha de Banks | Banks,9.483,False,,,324,0.222,0.222,0.812,66,True
+Ilha Jeannette,Jeannette,9.483,False,,,282,0.24,0.24,0.812,66,True
+Ilha Johnston,Johnston,9.483,False,,,2154,0.222,0.222,0.812,66,True
+Ilha King,King,10.091,False,,,336,0.229,0.229,0.812,66,True
+Ilha Kotelny,Kotelny,9.483,False,,,288,0.238,0.238,0.812,66,True
+Ilha René-Levasseur,René-Levasseur,9.483,False,,,282,0.24,0.24,0.812,66,True
+Ilha Russky,Russky,9.483,False,,,348,0.215,0.215,0.812,66,True
+Ilha Stewart,Stewart,9.483,False,,,720,0.221,0.221,0.812,66,True
+Ilha Urubuqueçaba,Ilha de Urubuqueçaba | Urubuqueçaba,9.483,False,,,1050,0.228,0.228,0.812,66,True
+Ilha Vaigach,Ilha Vaigatch | Vaygach | Ilha Vaygach | Vaigach | Vaigatch,9.483,False,,,324,0.222,0.222,0.812,66,True
+Ilha da Boa Viagem,Ilha de Boa Viagem | Boa Viagem,8.598,False,,,552,0.238,0.238,0.812,66,True
+Ilha da Casa da Pólvora,Ilha do Paiva | Casa da Pólvora | Paiva,9.89,False,,,1806,0.236,0.236,0.812,66,True
+Ilha da Jipoia,Ilha da Gipóia | Jipoia | Gipóia,9.483,False,,,1314,0.228,0.228,0.812,66,True
+Ilha da Pintada,Pintada,10.825,False,,,930,0.243,0.243,0.812,66,True
+Ilha da Revolução de Outubro,Oktyabrskoy Revolyutsii | Revolução de Outubro,9.28,False,,,270,0.242,0.242,0.812,66,True
+Ilha das Palmas,Palmas,10.324,False,,,750,0.243,0.243,0.812,66,True
+Ilha de Arran,Arran,9.483,False,,,336,0.218,0.218,0.812,66,True
+Ilha de Cavallo,Cavallo,9.483,False,,,366,0.234,0.234,0.812,66,True
+Ilha de Corisco,Corisco,12.176,False,,,486,0.219,0.219,0.812,66,True
+Ilha de Guajará-mirim,Guajará-mirim,11.63,False,,,612,0.226,0.226,0.812,66,True
+Ilha de Hainan,hainan,9.483,False,,,2820,0.225,0.225,0.812,66,True
+Ilha de Hornos,Hornos,9.483,False,,,294,0.233,0.233,0.812,66,True
+Ilha de Kodiak,Ilha Kodiak | Kodiak,9.483,False,,,792,0.238,0.238,0.812,66,True
+Ilha de Maracá,Maracá,12.511,False,,,1416,0.222,0.222,0.812,66,True
+Ilha de Mona,Mona,11.345,False,,,402,0.229,0.229,0.812,66,True
+Ilha de Pedro I,Pedro I,9.483,False,,,1584,0.243,0.243,0.812,66,True
+Ilha de Salina,Ilha Salina | Salina,11.647,False,,,396,0.236,0.236,0.812,66,True
+Ilha de São Mateus,São Mateus,8.569,False,,,300,0.216,0.216,0.812,66,True
+Ilha do Bugio,Bugio,12.022,False,,,438,0.23,0.23,0.812,66,True
+Ilha d’Água,d’Água,9.483,False,,,792,0.224,0.224,0.812,66,True
+Ilhas Flutuantes dos Uros,Flutuantes dos Uros,13.377,False,,,654,0.232,0.232,0.812,66,True
+Ilhéu Chão,Chão,12.116,False,,,444,0.244,0.244,0.812,66,True
+Ilhéu da Cal,Ilhéu de Baixo | Cal | Ilhéu do Homiziado | Baixo | Homiziado,13.274,False,,,708,0.236,0.236,0.812,66,True
+Ilhéu do Monchique,Ilhéu de Monchique | Monchique,14.571,False,,,750,0.23,0.23,0.812,66,True
+Itsukushima,,20.0,True,,,1494,0.226,0.226,0.812,66,True
+Jaco,,14.714,False,,,726,0.216,0.216,0.812,66,True
+Khao Phing Kan,,20.0,True,,,1590,0.216,0.216,0.812,66,True
+Madura,,11.987,False,,,456,0.225,0.225,0.812,66,True
+Mustique,,20.0,True,,,1548,0.22,0.22,0.812,66,True
+Negros,Ilha Negros | Ilha de Negros,10.517,False,,,324,0.242,0.242,0.812,66,True
+Nicobar,,20.0,True,,,1350,0.238,0.238,0.812,66,True
+Okinotorishima,Parece Vela | Okinotori | Douglass Reef | Douglas Reef,9.652,False,,,1500,0.225,0.225,0.812,66,True
+Ortígia,,20.0,True,,,1560,0.219,0.219,0.812,66,True
+Península de Faddeyevsky,Ilha Faddeyevsky | Ilha Faddeievski | Ilha de Faddeyevsky | Faddeyevsky | Faddeievski,11.966,False,,,480,0.218,0.218,0.812,66,True
+Saint Croix,St. Croix,20.0,True,,,1350,0.24,0.24,0.812,66,True
+Sanchoão,Sanchuão,20.0,True,,,1368,0.236,0.236,0.812,66,True
+Surtsey,Vulcão Surtsey,12.287,False,,,1578,0.218,0.218,0.812,66,True
+Tanegashima,Tanegaxima,20.0,True,,,1326,0.24,0.24,0.812,66,True
+Terra de Alexandra,,8.262,False,,,246,0.234,0.234,0.812,66,True
+Tortola,,20.0,True,,,1266,0.245,0.245,0.812,66,True
+Vir,,9.549,False,,,270,0.245,0.245,0.812,66,True
+Virgen Gorda,,11.657,False,,,402,0.233,0.233,0.812,66,True
+Vis,Lissa,12.682,False,,,426,0.244,0.244,0.812,66,True
+Yap,,20.0,True,,,2214,0.222,0.222,0.812,66,True
+Yonaguni,,20.0,True,,,1374,0.234,0.234,0.812,66,True
+Zaquintos,Zacinto,20.0,True,,,1368,0.236,0.236,0.812,66,True
+'Ata,'Ata (Tonga),10.984,False,,,348,0.253,0.253,0.819,67,True
+Andamão do Norte,Ilha Andamão do Norte,8.511,False,,,210,0.257,0.257,0.819,67,True
+Anticítera,Antikythera,20.0,True,,,1026,0.27,0.27,0.819,67,True
+Antígua,,20.0,True,,,3042,0.276,0.276,0.819,67,True
+Bishop Rock,,9.359,False,,,234,0.258,0.258,0.819,67,True
+Coloane,,20.0,True,,,1068,0.264,0.264,0.819,67,True
+Cozumel,,20.0,True,,,3186,0.279,0.279,0.819,67,True
+Dia,Ilha de Dia,6.51,False,,,150,0.262,0.262,0.819,67,True
+Foula,,20.0,True,,,1050,0.268,0.268,0.819,67,True
+Gavdos,Gavdhos,20.0,True,,,1044,0.268,0.268,0.819,67,True
+Gueto de Veneza,,13.363,False,,,450,0.249,0.249,0.819,67,True
+Ilha Amélia,Amélia,10.813,False,,,330,0.256,0.256,0.819,67,True
+Ilha Bamu,Ilha Mbamu | Bamu | Mbamu,9.483,False,,,222,0.267,0.267,0.819,67,True
+Ilha Ellis,Ellis,9.483,False,,,2592,0.255,0.255,0.819,67,True
+Ilha Grande de Santa Isabel,Grande de Santa Isabel,8.87,False,,,654,0.273,0.273,0.819,67,True
+Ilha Jekyll,Jekyll,9.483,False,,,324,0.249,0.249,0.819,67,True
+Ilha Kangaroo,Ilha dos Cangurus | Kangaroo Island | Ilha Canguru | Kangaroo | Cangurus | Canguru,9.483,False,,,210,0.273,0.273,0.819,67,True
+Ilha Killiniq,Killiniq,9.483,False,,,210,0.273,0.273,0.819,67,True
+Ilha La Tortuga,La Tortuga,8.672,False,,,234,0.247,0.247,0.819,67,True
+Ilha Likoma,Ilha Licoma | Likoma | Licoma,9.483,False,,,240,0.257,0.257,0.819,67,True
+Ilha Malden,Malden,9.483,False,,,204,0.276,0.276,0.819,67,True
+Ilha Rudolfo,Ilha de Rudolfo | Ilha de Rudolf | Rudolfo | Rudolf,9.483,False,,,210,0.273,0.273,0.819,67,True
+Ilha Southampton,Southampton,9.483,False,,,246,0.255,0.255,0.819,67,True
+Ilha Sveti Nikola,Sveti Nikola,9.483,False,,,216,0.269,0.269,0.819,67,True
+Ilha Vierge,Vierge,9.483,False,,,390,0.26,0.26,0.819,67,True
+Ilha Waiheke,Waiheke,9.483,False,,,252,0.252,0.252,0.819,67,True
+Ilha Yuzhny,Ilha Iujny | Ilha Iuzni | Yuzhny | Iujny | Iuzni,9.483,False,,,210,0.273,0.273,0.819,67,True
+Ilha Zhenbao,Zhenbao,9.483,False,,,252,0.252,0.252,0.819,67,True
+Ilha das Orquídeas,Orquídeas,11.015,False,,,312,0.253,0.253,0.819,67,True
+Ilha de Baltra,Ilha Baltra | Baltra,9.483,False,,,264,0.247,0.247,0.819,67,True
+Ilha de Basse-Terre,Basse-Terre,13.338,False,,,396,0.263,0.263,0.819,67,True
+Ilha de Bute,Isle of Bute | Bute,12.567,False,,,354,0.263,0.263,0.819,67,True
+Ilha de Cabanas,Cabanas,9.483,False,,,870,0.276,0.276,0.819,67,True
+Ilha de Elefanta,Gharapuri | Pory | Elephanta | Elefanta,12.677,False,,,402,0.25,0.25,0.819,67,True
+Ilha de Elefantina,Elefantina,13.457,False,,,1428,0.269,0.269,0.819,67,True
+Ilha de Gaiola,Gaiola,10.721,False,,,354,0.266,0.266,0.819,67,True
+Ilha de Isabel II,Isabel II,9.616,False,,,264,0.262,0.262,0.819,67,True
+Ilha de Navassa,Navassa,9.483,False,,,1392,0.266,0.266,0.819,67,True
+Ilha de Pinta,Ilha Pinta | Ilha de Abingdon | Pinta | Abingdon,10.801,False,,,246,0.276,0.276,0.819,67,True
+Ilha de Reichenau,Reichenau,9.483,False,,,210,0.273,0.273,0.819,67,True
+Ilha de Santa Carolina,Santa Carolina,9.476,False,,,432,0.267,0.267,0.819,67,True
+Ilha de Sálvora,Sálvora,9.483,False,,,282,0.264,0.264,0.819,67,True
+Ilha de São João,Zabargad | São João,7.872,False,,,192,0.264,0.264,0.819,67,True
+Ilha de Taketomi,Taketomi,9.483,False,,,252,0.252,0.252,0.819,67,True
+Ilha de Wolf,Ilha de Wenman | Wolf | Wenman,9.483,False,,,240,0.257,0.257,0.819,67,True
+Ilha de Xefina,Ilha Xefina | Xefina,9.483,False,,,606,0.255,0.255,0.819,67,True
+Ilha do Congresso,Congresso,9.445,False,,,282,0.247,0.247,0.819,67,True
+Ilha do Prumirim,Prumirim,9.483,False,,,744,0.268,0.268,0.819,67,True
+Ilha dos Araújos,Araújos,12.478,False,,,1566,0.257,0.257,0.819,67,True
+Ilha dos Portugueses,Ilha dos Elefantes | Portugueses | Elefantes,9.483,False,,,582,0.26,0.26,0.819,67,True
+Ilhéu Branco,Branco,11.647,False,,,294,0.27,0.27,0.819,67,True
+Ilhéu de Fora,Pitão Pequeno | Fora,11.342,False,,,486,0.255,0.255,0.819,67,True
+Isola Madre,,12.71,False,,,348,0.276,0.276,0.819,67,True
+Jura,,12.65,False,,,396,0.252,0.252,0.819,67,True
+Keeling do Norte,,8.511,False,,,222,0.25,0.25,0.819,67,True
+Ko Phi Phi Le,,10.068,False,,,228,0.273,0.273,0.819,67,True
+Levkas,Lêucade | Leucádia | Lefkas,20.0,True,,,1074,0.264,0.264,0.819,67,True
+Lombok,,20.0,True,,,1260,0.258,0.258,0.819,67,True
+Makatea,,20.0,True,,,990,0.274,0.274,0.819,67,True
+Moorea,,20.0,True,,,2238,0.248,0.248,0.819,67,True
+Mykines,,20.0,True,,,1122,0.26,0.26,0.819,67,True
+Nusa Penida,,20.0,True,,,1218,0.249,0.249,0.819,67,True
+Ormuz,,20.0,True,,,1014,0.261,0.261,0.819,67,True
+Palawan,,20.0,True,,,1206,0.276,0.276,0.819,67,True
+Papa Westray,,10.025,False,,,222,0.275,0.275,0.819,67,True
+Paxos,,20.0,True,,,966,0.278,0.278,0.819,67,True
+Poros,,17.544,False,,,744,0.26,0.26,0.819,67,True
+Rarotonga,,20.0,True,,,2082,0.253,0.253,0.819,67,True
+Ternate,,20.0,True,,,1050,0.268,0.268,0.819,67,True
+Área de Proteção Ambiental da Ilha do Combu,,9.006,False,,,906,0.263,0.263,0.819,67,True
+Île du Levant,,12.598,False,,,330,0.271,0.271,0.819,67,True
+Abd al Kuri,Abdalcuria,9.426,False,,,180,0.296,0.296,0.825,68,True
+Alicudi,,20.0,True,,,840,0.302,0.302,0.825,68,True
+Amorgos,,20.0,True,,,846,0.3,0.3,0.825,68,True
+Arco de Darwin,,10.575,False,,,198,0.31,0.31,0.825,68,True
+Banaba,Ilha do oceano | Ilha de Banaba | Ilha Banaba | Banaba Island | Tabiang | oceano,10.198,False,,,816,0.308,0.308,0.825,68,True
+Barra,,9.565,False,,,174,0.306,0.306,0.825,68,True
+Bougainville,,20.0,True,,,6972,0.293,0.293,0.825,68,True
+Cayo Coco,Ilha de Coco,10.743,False,,,210,0.302,0.302,0.825,68,True
+Chichi-jima,,15.251,False,,,396,0.304,0.304,0.825,68,True
+Elliðaey,,20.0,True,,,888,0.292,0.292,0.825,68,True
+Fiónia,Funen | Condado de Fiónia | Condado da fiónia | Fyn,11.963,False,,,834,0.304,0.304,0.825,68,True
+Forte Drum,,8.685,False,,,186,0.292,0.292,0.825,68,True
+Governors Island,,20.0,True,,,912,0.287,0.287,0.825,68,True
+Grande Nicobar,,6.987,False,,,126,0.297,0.297,0.825,68,True
+Hengqin,,20.0,True,,,918,0.285,0.285,0.825,68,True
+Home Island,Ilha Home | Home,9.237,False,,,180,0.29,0.29,0.825,68,True
+Ilha Adelaide,Adelaide,11.12,False,,,216,0.308,0.308,0.825,68,True
+Ilha Ayon,Ayon,9.483,False,,,186,0.29,0.29,0.825,68,True
+Ilha Chichagof,Ilha de Chichagof | Chichagof,9.483,False,,,198,0.28,0.28,0.825,68,True
+Ilha Flinders,Ilha de Flinders | Flinders,9.483,False,,,192,0.285,0.285,0.825,68,True
+Ilha Fraser,k'gari | Fraser,9.483,False,,,396,0.285,0.285,0.825,68,True
+Ilha Guaíba,Guaíba,11.18,False,,,618,0.308,0.308,0.825,68,True
+Ilha Joinville,Joinville,10.272,False,,,192,0.306,0.306,0.825,68,True
+Ilha Komsomolets,Komsomolets,9.483,False,,,198,0.28,0.28,0.825,68,True
+Ilha Manus,Manus,9.483,False,,,174,0.304,0.304,0.825,68,True
+Ilha Maria,Maria,8.904,False,,,168,0.295,0.295,0.825,68,True
+Ilha Montagu,Montagu,9.483,False,,,174,0.304,0.304,0.825,68,True
+Ilha Orcas,Orcas,14.03,False,,,402,0.282,0.282,0.825,68,True
+Ilha Padre,Ilha do Padre | Padre,9.705,False,,,204,0.28,0.28,0.825,68,True
+Ilha Pianosa,Planasia | Pianosa,9.483,False,,,192,0.285,0.285,0.825,68,True
+Ilha Santa Maria,Cayo Santa Maria,8.715,False,,,234,0.293,0.293,0.825,68,True
+Ilha Swains,Swains,9.483,False,,,186,0.29,0.29,0.825,68,True
+Ilha Tiburón,Tiburón,9.483,False,,,174,0.304,0.304,0.825,68,True
+Ilha Unalaska,Unalaska,9.483,False,,,186,0.29,0.29,0.825,68,True
+Ilha Unimak,Unimak,9.483,False,,,180,0.297,0.297,0.825,68,True
+Ilha Wolin,Wolin,9.483,False,,,180,0.297,0.297,0.825,68,True
+Ilha da Assunção,Assunção,10.609,False,,,708,0.299,0.299,0.825,68,True
+Ilha da Torotama,Torotama,9.483,False,,,570,0.279,0.279,0.825,68,True
+Ilha de Gorgona,Gorgona,12.961,False,,,300,0.295,0.295,0.825,68,True
+Ilha de Kotlin,Kotlin,9.483,False,,,198,0.28,0.28,0.825,68,True
+Ilha de Lampione,Lampione,9.483,False,,,186,0.29,0.29,0.825,68,True
+Ilha de Maria Guarda,Ilha Maria Guarda | Maria Guarda,9.087,False,,,780,0.283,0.283,0.825,68,True
+Ilha de Mount Desert,Mount Desert,9.483,False,,,210,0.3,0.3,0.825,68,True
+Ilha de Pedra Branca,Pedra Branca,9.56,False,,,186,0.293,0.293,0.825,68,True
+Ilha de Ross,Ross,9.483,False,,,966,0.31,0.31,0.825,68,True
+Ilha de Santa Isabel,Santa Isabel,9.497,False,,,180,0.297,0.297,0.825,68,True
+Ilha de Yerba Buena,Yerba Buena,9.483,False,,,198,0.28,0.28,0.825,68,True
+Ilha do Faraó,Faraó,10.943,False,,,228,0.292,0.292,0.825,68,True
+Ilha do Paranoá,Paranoá,9.483,False,,,636,0.288,0.288,0.825,68,True
+Ilha do Urso,Urso,10.555,False,,,1116,0.297,0.297,0.825,68,True
+Ilhéu da Praia,Praia,11.665,False,,,462,0.287,0.287,0.825,68,True
+Ilhéu de Sal Rei,Sal Rei,11.207,False,,,270,0.3,0.3,0.825,68,True
+Ilhéu dos Pássaros,Pássaros,14.571,False,,,534,0.283,0.283,0.825,68,True
+Ios,,20.0,True,,,900,0.288,0.288,0.825,68,True
+Isla de Lobos,,12.176,False,,,366,0.302,0.302,0.825,68,True
+Kaffeklubben,Ilha kaffeklubben,9.483,False,,,822,0.306,0.306,0.825,68,True
+Kastelorizo,Castelorizo | Megisti | Ilha de Kastellorizon | Kastellorizon,9.483,False,,,870,0.296,0.296,0.825,68,True
+Korčula,,20.0,True,,,882,0.293,0.293,0.825,68,True
+Margarita,,13.82,False,,,246,0.283,0.283,0.825,68,True
+Montaña Clara,,9.777,False,,,186,0.299,0.299,0.825,68,True
+Morro do Mar Casado,Mar Casado,10.029,False,,,588,0.285,0.285,0.825,68,True
+Nova Sibéria,Novaya Sibir,7.472,False,,,132,0.302,0.302,0.825,68,True
+Porquerolles,,20.0,True,,,816,0.308,0.308,0.825,68,True
+Praslin,,20.0,True,,,924,0.283,0.283,0.825,68,True
+Qeshm,,20.0,True,,,798,0.304,0.304,0.825,68,True
+Rapa Iti,,14.147,False,,,330,0.31,0.31,0.825,68,True
+Roque del Este,,9.332,False,,,168,0.306,0.306,0.825,68,True
+Saaremaa,,20.0,True,,,900,0.288,0.288,0.825,68,True
+Skellig Michael,,20.0,True,,,936,0.282,0.282,0.825,68,True
+Skopelos,Escópelos | Pepareto,20.0,True,,,816,0.308,0.308,0.825,68,True
+Weno,,20.0,True,,,864,0.297,0.297,0.825,68,True
+Alónissos,,20.0,True,,,672,0.342,0.342,0.831,69,True
+Bass Rock,,9.359,False,,,150,0.329,0.329,0.831,69,True
+Bubaque,,20.0,True,,,792,0.314,0.314,0.831,69,True
+Castaway Cay,,20.0,True,,,762,0.328,0.328,0.831,69,True
+Cayo Largo do Sul,Cayo Largo del Sur,9.371,False,,,156,0.32,0.32,0.831,69,True
+Cres,Kersch | Cherso,14.985,False,,,348,0.32,0.32,0.831,69,True
+Grand Turk,Grande Turca | Ilha Grand Turk | Cockburn town,10.041,False,,,720,0.332,0.332,0.831,69,True
+Ilha Agatti,Agatti,9.483,False,,,144,0.337,0.337,0.831,69,True
+Ilha Alofi,Alofi,9.483,False,,,168,0.312,0.312,0.831,69,True
+Ilha Bathurst,Ilha de Bathurst | Bathurst,9.483,False,,,138,0.345,0.345,0.831,69,True
+Ilha Buldir,Buldir,9.483,False,,,156,0.337,0.337,0.831,69,True
+Ilha Coats,Coats,9.483,False,,,144,0.337,0.337,0.831,69,True
+Ilha Disko,Disko Island | Disko,9.483,False,,,150,0.331,0.331,0.831,69,True
+Ilha Enlli,Ilha Bardsey | Ynys Enlli | Enlli | Bardsey,9.483,False,,,156,0.324,0.324,0.831,69,True
+Ilha Graham Bell,Ilha de Graham Bell | Graham Bell,9.483,False,,,168,0.312,0.312,0.831,69,True
+Ilha James Ross,James Ross,9.483,False,,,144,0.337,0.337,0.831,69,True
+Ilha Livingston,Livingston,9.483,False,,,156,0.324,0.324,0.831,69,True
+Ilha Magnetic,Magnetic,9.483,False,,,156,0.324,0.324,0.831,69,True
+Ilha McKean,McKean,9.483,False,,,144,0.337,0.337,0.831,69,True
+Ilha Mocha,Mocha,12.359,False,,,228,0.33,0.33,0.831,69,True
+Ilha Phillip,Phillip,9.483,False,,,156,0.324,0.324,0.831,69,True
+Ilha Rebun,Rebun,9.483,False,,,150,0.331,0.331,0.831,69,True
+Ilha Roosevelt,Roosevelt,9.483,False,,,144,0.337,0.337,0.831,69,True
+Ilha Sirri,Sirri,9.483,False,,,162,0.316,0.316,0.831,69,True
+Ilha Snow Hill,Snow Hill,9.483,False,,,168,0.312,0.312,0.831,69,True
+Ilha Spargi,Spargi,9.483,False,,,150,0.342,0.342,0.831,69,True
+Ilha Thurston,Thurston,9.483,False,,,162,0.316,0.316,0.831,69,True
+Ilha Willis,Willis,9.483,False,,,156,0.324,0.324,0.831,69,True
+Ilha da Bexiga,Bexiga,10.905,False,,,876,0.312,0.312,0.831,69,True
+Ilha da Moela,Moela,12.38,False,,,660,0.328,0.328,0.831,69,True
+Ilha das Onças,Onças,9.483,False,,,660,0.326,0.326,0.831,69,True
+Ilha de Barrow,Barrow,9.483,False,,,162,0.321,0.321,0.831,69,True
+Ilha de Bartolomé,Ilha Bartolomé | Bartolomé,9.483,False,,,156,0.324,0.324,0.831,69,True
+Ilha de Fair,Ilha Fair | Fair,10.885,False,,,192,0.321,0.321,0.831,69,True
+Ilha de Orleães,Orleães,9.483,False,,,174,0.316,0.316,0.831,69,True
+Ilha de Philae,Filas | Filae | Philae,9.483,False,,,576,0.331,0.331,0.831,69,True
+Ilha de Rangitoto,Rangitoto,9.483,False,,,144,0.337,0.337,0.831,69,True
+Ilha de Santo Estêvão,Ilha de Santo Stefano | Isola di Santo Stefano | Juá | Santo Estêvão | Santo Stefano,10.534,False,,,186,0.318,0.318,0.831,69,True
+Ilha de São Gabriel,Isla San Gabriel | São Gabriel,8.499,False,,,276,0.334,0.334,0.831,69,True
+Ilha de Tambo,Tambo,12.506,False,,,336,0.328,0.328,0.831,69,True
+Ilha de Young,Ilha Young | Young,9.483,False,,,144,0.341,0.341,0.831,69,True
+Ilha do Bom Jesus da Coluna,Bom Jesus da Coluna,8.744,False,,,816,0.326,0.326,0.831,69,True
+Ilha do Pavão,Pavão,11.177,False,,,522,0.337,0.337,0.831,69,True
+Ilha do Viana,Viana,10.187,False,,,492,0.321,0.321,0.831,69,True
+Ilhas Snares,Snares,10.766,False,,,168,0.341,0.341,0.831,69,True
+Ilhéu Bombom,Bombom,13.716,False,,,300,0.314,0.314,0.831,69,True
+Ilhéu das Cabras,Cabras,14.571,False,,,366,0.332,0.332,0.831,69,True
+Jan Mayen,,20.0,True,,,3924,0.321,0.321,0.831,69,True
+Ko Samui,,20.0,True,,,798,0.313,0.313,0.831,69,True
+Kosrae,,20.0,True,,,690,0.339,0.339,0.831,69,True
+Marie Galante,,14.006,False,,,282,0.333,0.333,0.831,69,True
+Minamitorishima,Ilha Marcus | Marcus,9.483,False,,,798,0.313,0.313,0.831,69,True
+Miquelon,Miquelão,20.0,True,,,720,0.332,0.332,0.831,69,True
+Miyako-jima,,20.0,True,,,792,0.314,0.314,0.831,69,True
+Molokai,,20.0,True,,,774,0.318,0.318,0.831,69,True
+Norman's Cay,,20.0,True,,,1008,0.334,0.334,0.831,69,True
+Nuku Hiva,,20.0,True,,,774,0.318,0.318,0.831,69,True
+Pequena Andamão,,9.098,False,,,150,0.32,0.32,0.831,69,True
+Pohnpei,,20.0,True,,,1158,0.315,0.315,0.831,69,True
+Providenciales,,20.0,True,,,780,0.316,0.316,0.831,69,True
+Roti,,16.155,False,,,372,0.339,0.339,0.831,69,True
+San Giorgio Maggiore,Ilha de San Giorgio Maggiore,9.483,False,,,696,0.337,0.337,0.831,69,True
+Sazan,Ilha Sazan,9.483,False,,,732,0.329,0.329,0.831,69,True
+Sifnos,,20.0,True,,,738,0.328,0.328,0.831,69,True
+Spinalonga,Espinalonga | Kalidon,20.0,True,,,744,0.326,0.326,0.831,69,True
+Sumba,,20.0,True,,,714,0.34,0.34,0.831,69,True
+Tasos,Taso | Thásos | Tassos,20.0,True,,,678,0.341,0.341,0.831,69,True
+Tavolara,,20.0,True,,,738,0.328,0.328,0.831,69,True
+Tuamotu,,20.0,True,,,1410,0.326,0.326,0.831,69,True
+Ulleungdo,,20.0,True,,,774,0.318,0.318,0.831,69,True
+Šolta,,11.341,False,,,186,0.339,0.339,0.831,69,True
+Burano,,20.0,True,,,2460,0.367,0.367,0.837,70,True
+Cárpatos,Karpathos | Cárpato,20.0,True,,,624,0.355,0.355,0.837,70,True
+Djurgården,,20.0,True,,,654,0.348,0.348,0.837,70,True
+Erinia,,20.0,True,,,804,0.351,0.351,0.837,70,True
+Fidonisi,Ilha das Serpentes | Ilha da Serpente | Serpentes | Serpente,11.27,False,,,588,0.369,0.369,0.837,70,True
+Ganryūjima,Ganryuujima | Funajima,20.0,True,,,876,0.357,0.357,0.837,70,True
+Giudecca,,20.0,True,,,618,0.357,0.357,0.837,70,True
+Grande Ilha Blasket,,8.235,False,,,96,0.375,0.375,0.837,70,True
+Heligoland,,20.0,True,,,3114,0.348,0.348,0.837,70,True
+Ilha Akimiski,Akimiski,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Asuncion,Asuncion,9.483,False,,,120,0.371,0.371,0.837,70,True
+Ilha Bolchevique,Bolshevik | Bolchevique,11.884,False,,,186,0.351,0.351,0.837,70,True
+Ilha Bruny,Bruny,9.483,False,,,138,0.345,0.345,0.837,70,True
+Ilha Chizumulu,Chizumulu,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Choiseul,Choiseul,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Clarence,Clarence,9.483,False,,,132,0.351,0.351,0.837,70,True
+Ilha Clarión,Clarión,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Colón,Colón,11.942,False,,,186,0.357,0.357,0.837,70,True
+Ilha Cook,"Ilha Cook, Ilhas Sandwich do Sul | Cook | Cook, Ilhas Sandwich do Sul",9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Cornwallis,Cornwallis,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Coroação,Coroação,11.454,False,,,156,0.373,0.373,0.837,70,True
+Ilha Dassen,Dassen,9.483,False,,,138,0.345,0.345,0.837,70,True
+Ilha Dirk Hartog,Dirk Hartog,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Great Barrier,Great Barrier,9.483,False,,,138,0.345,0.345,0.837,70,True
+Ilha Guafo,Guafo,9.483,False,,,144,0.369,0.369,0.837,70,True
+Ilha Guishan,Guishan,9.483,False,,,138,0.345,0.345,0.837,70,True
+Ilha Hooker,Hooker,9.483,False,,,138,0.345,0.345,0.837,70,True
+Ilha Kvit,Kvitøya | Kvit,9.483,False,,,132,0.351,0.351,0.837,70,True
+Ilha Laurie,Laurie,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Mackenzie King,Mackenzie King,10.091,False,,,126,0.374,0.374,0.837,70,True
+Ilha Masirah,Ilha de Maceira | Masirah | Maceira,9.483,False,,,132,0.351,0.351,0.837,70,True
+Ilha Pagan,Ilha Pagã | Pagan | Pagã,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Rawaki,Rawaki,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha Rossel,Rossel,9.483,False,,,120,0.371,0.371,0.837,70,True
+Ilha Saunders,Saunders,9.483,False,,,120,0.371,0.371,0.837,70,True
+Ilha Savo,Savo,9.483,False,,,138,0.345,0.345,0.837,70,True
+Ilha Shumshu,Shumushu | Shumshu,9.483,False,,,138,0.345,0.345,0.837,70,True
+Ilha Stuart,Stuart,9.483,False,,,552,0.354,0.354,0.837,70,True
+Ilha Sturge,Sturge,9.483,False,,,132,0.351,0.351,0.837,70,True
+Ilha Taro,Taro,12.038,False,,,168,0.374,0.374,0.837,70,True
+Ilha Thursday,Thursday,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha de Axel Heiberg,Ilha Axel Heiberg | Axel Heiberg,9.483,False,,,126,0.361,0.361,0.837,70,True
+Ilha de Cortegada,Cortegada,9.483,False,,,162,0.367,0.367,0.837,70,True
+Ilha de Jurong,Jurong,9.483,False,,,156,0.345,0.345,0.837,70,True
+Ilha de Silhouette,Ilha Silhouette | Silhouette,9.483,False,,,120,0.371,0.371,0.837,70,True
+Ilha do Retiro,Retiro,10.479,False,,,468,0.371,0.371,0.837,70,True
+Ilhéu Raso,Raso | Razo,13.829,False,,,234,0.364,0.364,0.837,70,True
+Iona,,20.0,True,,,558,0.375,0.375,0.837,70,True
+Isla Mujeres,Ilha das Mulheres | Islas Mujeres | Mulheres,12.751,False,,,678,0.354,0.354,0.837,70,True
+Itu Aba,Taiping,11.875,False,,,186,0.351,0.351,0.837,70,True
+Krk,Veglia,20.0,True,,,666,0.347,0.347,0.837,70,True
+Mactan,Ilha Mactan,9.483,False,,,588,0.369,0.369,0.837,70,True
+Mangareva,,20.0,True,,,600,0.366,0.366,0.837,70,True
+Parque Ecológico Promotor Franscisco Lins do Rego,Parque Ecológico da Pampulha | Memorial da Imigração Japonesa,11.286,False,,,696,0.361,0.361,0.837,70,True
+Phú Quốc,,20.0,True,,,612,0.361,0.361,0.837,70,True
+Rocha Fungus,Rocha do Fungo,9.948,False,,,138,0.354,0.354,0.837,70,True
+Run,,11.967,False,,,192,0.349,0.349,0.837,70,True
+Saint John,,20.0,True,,,642,0.351,0.351,0.837,70,True
+Sentosa,Praia Sentosa Siloso,8.76,False,,,582,0.371,0.371,0.837,70,True
+Siargao,,20.0,True,,,606,0.365,0.365,0.837,70,True
+Simeulue,,20.0,True,,,588,0.369,0.369,0.837,70,True
+Skiathos,Escíato,20.0,True,,,618,0.357,0.357,0.837,70,True
+Streymoy,,20.0,True,,,606,0.365,0.365,0.837,70,True
+Sérifos,Sérifo,20.0,True,,,606,0.365,0.365,0.837,70,True
+Tidore,,20.0,True,,,588,0.369,0.369,0.837,70,True
+Tinhosa Grande,,11.995,False,,,210,0.366,0.366,0.837,70,True
+Tinian,Tiniã,18.121,False,,,582,0.371,0.371,0.837,70,True
+Tinos,,20.0,True,,,660,0.347,0.347,0.837,70,True
+Unst,,20.0,True,,,624,0.355,0.355,0.837,70,True
+Viti Levu,,20.0,True,,,642,0.351,0.351,0.837,70,True
+Öland,Olândia,20.0,True,,,648,0.349,0.349,0.837,70,True
+Almourol,,20.0,True,,,1056,0.405,0.405,0.843,71,True
+Ambae,Ilha Aoba | Aoba,9.483,False,,,492,0.402,0.402,0.843,71,True
+Amboina,Amboíno | Ilha Ambon | Ambon,9.483,False,,,492,0.402,0.402,0.843,71,True
+Barro Colorado,,11.591,False,,,144,0.391,0.391,0.843,71,True
+Culebra,,20.0,True,,,510,0.394,0.394,0.843,71,True
+Esquiro,Skyros | Skíros | Ciros,20.0,True,,,546,0.382,0.382,0.843,71,True
+Gran Roque,,11.597,False,,,228,0.384,0.384,0.843,71,True
+Granada,,12.219,False,,,0,0.39,0.39,0.843,71,True
+Herm,,20.0,True,,,552,0.378,0.378,0.843,71,True
+Hvar,,20.0,True,,,510,0.394,0.394,0.843,71,True
+Ilha Anvers,Anvers,9.483,False,,,108,0.388,0.388,0.843,71,True
+Ilha Baranof,Ilha de Baranof | Baranof,9.483,False,,,108,0.388,0.388,0.843,71,True
+Ilha Bellingshausen,Bellingshausen,9.483,False,,,108,0.388,0.388,0.843,71,True
+Ilha Belyi,Belyi,9.483,False,,,102,0.399,0.399,0.843,71,True
+Ilha Bennett,Bennett,9.483,False,,,102,0.399,0.399,0.843,71,True
+Ilha Bhola,Bhola,9.483,False,,,102,0.399,0.399,0.843,71,True
+Ilha Dikson,Dikson,9.483,False,,,108,0.388,0.388,0.843,71,True
+Ilha Enderbury,Enderbury,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha Feia,Feia,9.483,False,,,420,0.406,0.406,0.843,71,True
+Ilha Giannutri,Giannutri,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha Graham,Graham,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha Greenwich,ilha Sartorius ou ilha Berezina | Ilha de Greenwich | Greenwich | Sartorius ou ilha Berezina,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha Hoste,Hoste,12.515,False,,,168,0.386,0.386,0.843,71,True
+Ilha Medny,Medny,9.483,False,,,102,0.399,0.399,0.843,71,True
+Ilha Paulet,Paulet,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha Pelee,Pelee,9.483,False,,,150,0.406,0.406,0.843,71,True
+Ilha Petermann,Petermann,9.483,False,,,114,0.383,0.383,0.843,71,True
+Ilha Portsea,Portsea,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha Prince Patrick,Ilha Príncipe Patrick | Ilha Príncipe Patrício | Ilha do Príncipe Patrício | Prince Patrick | Príncipe Patrick | Príncipe Patrício,9.483,False,,,102,0.399,0.399,0.843,71,True
+Ilha Puná,Puná,12.217,False,,,162,0.385,0.385,0.843,71,True
+Ilha Ratones Grande,Ilhas dos ratones | Ilha Ratones Maior | Ratones Grande | ratones | Ratones Maior,8.235,False,,,246,0.397,0.397,0.843,71,True
+Ilha Redonda,,10.281,False,,,126,0.382,0.382,0.843,71,True
+Ilha Richards,Richards,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha Talpatti do Sul,Talpatti do Sul,8.754,False,,,108,0.391,0.391,0.843,71,True
+Ilha Taymyr,Ilha de Taymyr | Taymyr,9.483,False,,,108,0.388,0.388,0.843,71,True
+Ilha Verde,Verde,9.209,False,,,96,0.404,0.404,0.843,71,True
+Ilha Wiencke,Wiencke,9.483,False,,,120,0.402,0.402,0.843,71,True
+Ilha de Antelope,Antelope,9.483,False,,,162,0.391,0.391,0.843,71,True
+Ilha de Araçatuba,Ilha da Fortaleza | Araçatuba | Fortaleza,11.067,False,,,396,0.383,0.383,0.843,71,True
+Ilha de Buckle,Buckle,9.483,False,,,102,0.399,0.399,0.843,71,True
+Ilha de Capraia,Capraia,9.483,False,,,180,0.402,0.402,0.843,71,True
+Ilha de Jaina,Jaina,12.859,False,,,180,0.397,0.397,0.843,71,True
+Ilha de Madre de Deus,Ilha dos Cururupebas | Ilha de Madre de Deus do Boqueirão | Ilha de Madre de Deus (Bahia) | Cururupebas | Madre de Deus | Madre de Deus do Boqueirão,9.599,False,,,456,0.393,0.393,0.843,71,True
+Ilha de Penang,Ilha de Penão | Ilha Penang | Penang | Penão,9.483,False,,,108,0.388,0.388,0.843,71,True
+Ilha de Saadiyat,Saadiyat,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha de San Clemente,San Clemente,10.925,False,,,138,0.382,0.382,0.843,71,True
+Ilha de Sveti Đorđe,Sveti Đorđe,9.483,False,,,114,0.378,0.378,0.843,71,True
+Ilha do Cajual,Cajual,13.587,False,,,666,0.385,0.385,0.843,71,True
+Ilha do Coral,Coral,10.3,False,,,510,0.391,0.391,0.843,71,True
+Ilha do Príncipe Carlos,Ilha Prince Charles | Príncipe Carlos | Prince Charles,9.564,False,,,102,0.402,0.402,0.843,71,True
+Ilha dos Clubes,Clubes,9.483,False,,,360,0.391,0.391,0.843,71,True
+Ilha Ángel de la Guarda,Ángel de la Guarda,9.63,False,,,114,0.382,0.382,0.843,71,True
+Isla de Flores,,11.11,False,,,234,0.395,0.395,0.843,71,True
+Kasos,,20.0,True,,,516,0.393,0.393,0.843,71,True
+Ko Pha Ngan,,20.0,True,,,504,0.397,0.397,0.843,71,True
+Lantau,,20.0,True,,,540,0.383,0.383,0.843,71,True
+Marken,,20.0,True,,,522,0.39,0.39,0.843,71,True
+Midway,,20.0,True,,,3618,0.375,0.375,0.843,71,True
+Nusa Kambangan,Kambangan,20.0,True,,,534,0.385,0.385,0.843,71,True
+Out Stack,,9.596,False,,,102,0.404,0.404,0.843,71,True
+Panarea,,20.0,True,,,510,0.394,0.394,0.843,71,True
+Pequena Caimão,Little Cayman,12.651,False,,,156,0.405,0.405,0.843,71,True
+Roque del Oeste,,10.301,False,,,114,0.4,0.4,0.843,71,True
+Salsete,Salsette | Caranja,20.0,True,,,516,0.393,0.393,0.843,71,True
+Simi,,20.0,True,,,558,0.375,0.375,0.843,71,True
+Stóra Dímun,,20.0,True,,,504,0.397,0.397,0.843,71,True
+Södermalm,,20.0,True,,,492,0.402,0.402,0.843,71,True
+Tavarua,,20.0,True,,,738,0.405,0.405,0.843,71,True
+Usedom,,20.0,True,,,486,0.405,0.405,0.843,71,True
+Wieringen,,20.0,True,,,534,0.385,0.385,0.843,71,True
+Abu Musa,Abu Muça,12.158,False,,,132,0.428,0.428,0.849,72,True
+Agalega,Ilhas Agalega,10.766,False,,,474,0.409,0.409,0.849,72,True
+Al-Hallaniyah,Halania,9.426,False,,,132,0.417,0.417,0.849,72,True
+Anafi,,20.0,True,,,438,0.433,0.433,0.849,72,True
+Anatahan,,20.0,True,,,444,0.423,0.423,0.849,72,True
+Boracay,,20.0,True,,,582,0.422,0.422,0.849,72,True
+Brecqhou,,20.0,True,,,438,0.433,0.433,0.849,72,True
+Caimão Brac,,16.203,False,,,222,0.439,0.439,0.849,72,True
+Cayo Ambergris,Ambergris Caye,20.0,True,,,480,0.407,0.407,0.849,72,True
+Ceos,Keos,20.0,True,,,444,0.423,0.423,0.849,72,True
+Ceram,Hoalmoal Veranula | Seram | Loki,20.0,True,,,450,0.422,0.422,0.849,72,True
+Coiba,,17.345,False,,,294,0.413,0.413,0.849,72,True
+Fastnet Rock,,9.359,False,,,108,0.436,0.436,0.849,72,True
+Goli Otok,Goli,20.0,True,,,444,0.423,0.423,0.849,72,True
+Ile aux Marins,Ilha dos Marinheiros | Marinheiros,13.425,False,,,156,0.437,0.437,0.849,72,True
+Ilha Amatignak,Amatignak,9.483,False,,,96,0.417,0.417,0.849,72,True
+Ilha Amund Ringnes,Ilha de Amund Ringnes | Amund Ringnes,9.483,False,,,96,0.411,0.411,0.849,72,True
+Ilha Annenkov,Annenkov,9.483,False,,,96,0.411,0.411,0.849,72,True
+Ilha Atka,Atka,9.483,False,,,96,0.411,0.411,0.849,72,True
+Ilha Bellona,Bellona,9.483,False,,,96,0.411,0.411,0.849,72,True
+Ilha Borden,Borden,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Coulman,Coulman,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Dall,Dall,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Emerald,Emerald,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Hayling,Hayling,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Kadavu,Kadavu,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Karaginsky,Ilha Karaginski | Karaginsky | Karaginski,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Lady Elliot,Lady Elliot,10.332,False,,,108,0.418,0.418,0.849,72,True
+Ilha Lavan,Lavan,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Lisboa,Lisboa,9.265,False,,,162,0.417,0.417,0.849,72,True
+Ilha Little Barrier,Little Barrier,9.483,False,,,96,0.411,0.411,0.849,72,True
+Ilha Mosquito,Mosquito,10.615,False,,,132,0.433,0.433,0.849,72,True
+Ilha Omelek,Omelek,9.483,False,,,108,0.437,0.437,0.849,72,True
+Ilha Rabi,Rabi,11.824,False,,,132,0.422,0.422,0.849,72,True
+Ilha Scrub,Scrub,9.483,False,,,108,0.413,0.413,0.849,72,True
+Ilha Siple,Siple,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha São João,Ilha São João (Volta Redonda),7.872,False,,,432,0.42,0.42,0.849,72,True
+Ilha Tierra Bomba,Tierra Bomba,9.886,False,,,156,0.411,0.411,0.849,72,True
+Ilha Ushakov,Ushakov,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha Wellington,Wellington,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha de Bissau,Bissau,9.483,False,,,306,0.428,0.428,0.849,72,True
+Ilha de Española,Ilha de Hood | Española | Hood,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha de Jesus,Jesus,8.877,False,,,78,0.438,0.438,0.849,72,True
+Ilha de Rábida,Ilha Rábida | Rábida,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha de Seymour Norte,Ilha Seymour | Seymour Norte | Seymour,8.997,False,,,84,0.428,0.428,0.849,72,True
+Ilha de Sheppey,Sheppey,9.483,False,,,90,0.428,0.428,0.849,72,True
+Ilha de Uno,Uno,10.293,False,,,126,0.416,0.416,0.849,72,True
+Ilha de Valentia,Valentia,11.656,False,,,120,0.435,0.435,0.849,72,True
+Ilha do Boqueirão,Boqueirão,11.311,False,,,426,0.411,0.411,0.849,72,True
+Ilha do Xavier,Xavier,10.211,False,,,366,0.409,0.409,0.849,72,True
+Ilhéu Grande,Grande,10.779,False,,,162,0.415,0.415,0.849,72,True
+Ilhéu de Cima,Cima,11.715,False,,,180,0.42,0.42,0.849,72,True
+Ilhéu de Ferro,Ilhéu do Ferro | Ferro,12.163,False,,,264,0.422,0.422,0.849,72,True
+Ilhéu do Topo,Reserva Natural Parcial do Ilhéu do Topo | Topo,12.326,False,,,354,0.413,0.413,0.849,72,True
+Isla Grosa,,14.058,False,,,222,0.422,0.422,0.849,72,True
+Islay,,20.0,True,,,420,0.438,0.438,0.849,72,True
+Iž,,14.82,False,,,198,0.42,0.42,0.849,72,True
+Kizhi,Patrimônio de Kizhi | Kizhi Pogost,10.247,False,,,438,0.433,0.433,0.849,72,True
+Leyte,Lete (ilha) | Leitê (ilha) | ilha de Leitê | Ilha Leyte | Ilha de Leyte | Lete | Leitê,9.483,False,,,462,0.416,0.416,0.849,72,True
+Lubang,,20.0,True,,,456,0.418,0.418,0.849,72,True
+Lundy,,20.0,True,,,420,0.438,0.438,0.849,72,True
+Okunoshima,,20.0,True,,,480,0.407,0.407,0.849,72,True
+Poilão,,17.716,False,,,504,0.415,0.415,0.849,72,True
+Roca Partida,,11.316,False,,,114,0.436,0.436,0.849,72,True
+Savai'i,,20.0,True,,,456,0.418,0.418,0.849,72,True
+Shikotan,,20.0,True,,,438,0.433,0.433,0.849,72,True
+Solor,Lowayong | Lohajong,20.0,True,,,474,0.409,0.409,0.849,72,True
+Tilos,,20.0,True,,,432,0.435,0.435,0.849,72,True
+Torcello,,20.0,True,,,456,0.418,0.418,0.849,72,True
+Vieques,,20.0,True,,,468,0.413,0.413,0.849,72,True
+West Island,Ilha Ocidental | Ilha Oeste | Ocidental | Oeste,10.149,False,,,438,0.433,0.433,0.849,72,True
+Alor,,15.859,False,,,198,0.454,0.454,0.854,73,True
+Amami Ōshima,,20.0,True,,,414,0.443,0.443,0.854,73,True
+Arwad,Arruade,20.0,True,,,384,0.466,0.466,0.854,73,True
+Cabrera,Ilha de Cabrera,9.483,False,,,384,0.466,0.466,0.854,73,True
+Eleuthera,Elethera,20.0,True,,,384,0.466,0.466,0.854,73,True
+Fale,,10.01,False,,,198,0.443,0.443,0.854,73,True
+Hiiumaa,,20.0,True,,,378,0.47,0.47,0.854,73,True
+Ilha Admiralty,Admiralty,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Amak,Amak,9.483,False,,,84,0.461,0.461,0.854,73,True
+Ilha Aniwa,Aniwa,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Annette,Annette,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Atlasov,Atlasov,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Austvågøy,Austvågøy,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Baccalieu,Baccalieu,9.483,False,,,162,0.449,0.449,0.854,73,True
+Ilha Birnie,Birnie,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Bollons,Bollons,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Bolshoy Shantar,Bolshoy Shantar,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Bridgeman,Ilha Bridgeman (Ilhas Shetland do Sul) | Bridgeman,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Bubiyan,Bubiyan,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Corocoro,Corocoro,9.483,False,,,114,0.452,0.452,0.854,73,True
+Ilha Ellef Ringnes,Ellef Ringnes,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Goodenough,Goodenough,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Hayes,Ilha Heiss | Hayes | Heiss,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Herschel,Herschel,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Jemo,Jemo,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Manra,Manra,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Nunivak,Nunivak,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Salisbury,Salisbury,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Salm,Salm,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Selayar,Ilha Selaiar | Selayar | Selaiar,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Sherbro,Sherbro,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Somerset,Somerset,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Timóteo Domingues,Timóteo Domingues,10.819,False,,,180,0.448,0.448,0.854,73,True
+Ilha Umboi,Umboi,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Umnak,Umnak,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Wager,Wager,9.483,False,,,126,0.468,0.468,0.854,73,True
+Ilha Warbah,Warbah,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha Weizhou,Weizhou,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha Yunaska,Yunaska,9.483,False,,,84,0.461,0.461,0.854,73,True
+Ilha d'Urville,d'Urville,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha da Paz,Paz,9.189,False,,,192,0.451,0.451,0.854,73,True
+Ilha de Barents,Barents,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha de Dinagat,Dinagat,9.483,False,,,78,0.461,0.461,0.854,73,True
+Ilha de Pianosa,,9.483,False,,,144,0.452,0.452,0.854,73,True
+Ilha de Pinzón,Ilha Pinzón | Ilha de Duncan | Pinzón | Duncan,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha de Tuzla,Tuzla,9.483,False,,,84,0.443,0.443,0.854,73,True
+Ilha do Paty,Paty,9.483,False,,,450,0.47,0.47,0.854,73,True
+Ilha do Príncipe de Gales,Ilha Príncipe de Gales | Príncipe de Gales,11.501,False,,,102,0.47,0.47,0.854,73,True
+Ilha do Rijo,Rijo,11.916,False,,,312,0.466,0.466,0.854,73,True
+Ilhote de Alhucemas,Ilhote de Alucemas | Ilhéu de Alhucemas | Alhucemas,17.387,False,,,252,0.451,0.451,0.854,73,True
+Ilhéu Maria Vaz,Ilhéu da Gadelha (Santa Cruz das Flores) | Ilhéu da Gadelha | Maria Vaz | Gadelha,11.448,False,,,300,0.454,0.454,0.854,73,True
+Ilhéu da Fonte da Areia,Ilhéu da Fonte d'Areia | Fonte da Areia | Fonte d'Areia,11.119,False,,,210,0.47,0.47,0.854,73,True
+Jolo,,20.0,True,,,402,0.45,0.45,0.854,73,True
+Kamaran,Ilha do Camarão | Camarão,10.494,False,,,396,0.452,0.452,0.854,73,True
+Leros,,20.0,True,,,378,0.47,0.47,0.854,73,True
+Nias,,20.0,True,,,378,0.47,0.47,0.854,73,True
+Nova Bretanha,,9.66,False,,,636,0.47,0.47,0.854,73,True
+Nova Geórgia,,10.079,False,,,84,0.468,0.468,0.854,73,True
+Nova Hanôver,,7.472,False,,,60,0.452,0.452,0.854,73,True
+Orango,,20.0,True,,,546,0.461,0.461,0.854,73,True
+Raiatea,,20.0,True,,,402,0.45,0.45,0.854,73,True
+Roatán,,20.0,True,,,1362,0.452,0.452,0.854,73,True
+Shōdoshima,,20.0,True,,,402,0.45,0.45,0.854,73,True
+Sir Bani Yas,,13.632,False,,,144,0.454,0.454,0.854,73,True
+Sumbawa,Sumbava | Ilhas Sumbawa | Ilha de Sumbawa,10.766,False,,,384,0.466,0.466,0.854,73,True
+Terra de Milne,,8.262,False,,,66,0.456,0.456,0.854,73,True
+Terra de Wilczek,,8.262,False,,,66,0.456,0.456,0.854,73,True
+Três Ilhas,,9.297,False,,,234,0.443,0.443,0.854,73,True
+Upolu,,20.0,True,,,408,0.448,0.448,0.854,73,True
+Ínsua,Ilhéu da Ínsua | Ilha da Ínsua,16.301,False,,,546,0.447,0.447,0.854,73,True
+Île-d'Aix,,14.206,False,,,156,0.454,0.454,0.854,73,True
+Blå Jungfrun,,11.598,False,,,102,0.474,0.474,0.86,74,True
+Brač,Bratz | Brazza,20.0,True,,,360,0.48,0.48,0.86,74,True
+Calímnos,,20.0,True,,,354,0.488,0.488,0.86,74,True
+Carriacou,,20.0,True,,,360,0.48,0.48,0.86,74,True
+Cominotto,,20.0,True,,,366,0.476,0.476,0.86,74,True
+Discovery Island,,20.0,True,,,546,0.498,0.498,0.86,74,True
+Folegandros,,20.0,True,,,360,0.48,0.48,0.86,74,True
+Fotö,,8.34,False,,,60,0.494,0.494,0.86,74,True
+Galinhas,Ilha de Galinhas,11.774,False,,,186,0.495,0.495,0.86,74,True
+Ilha Akutan,Akutan,9.483,False,,,66,0.502,0.502,0.86,74,True
+Ilha Bagabag,Bagabag,9.483,False,,,78,0.493,0.493,0.86,74,True
+Ilha Baixa,Baixa,9.441,False,,,72,0.482,0.482,0.86,74,True
+Ilha Bird,Bird,11.086,False,,,90,0.488,0.488,0.86,74,True
+Ilha Candelária,Candelária,11.463,False,,,96,0.482,0.482,0.86,74,True
+Ilha Desecheo,Desecheo,9.483,False,,,72,0.484,0.484,0.86,74,True
+Ilha Drygalski,Drygalski,9.483,False,,,66,0.502,0.502,0.86,74,True
+Ilha Eva-Liv,Eva-Liv,10.141,False,,,78,0.489,0.489,0.86,74,True
+Ilha Francisco Manoel,Ilha Chico Manoel | Francisco Manoel | Chico Manoel,9.342,False,,,246,0.478,0.478,0.86,74,True
+Ilha Franklin,Franklin,9.483,False,,,84,0.475,0.475,0.86,74,True
+Ilha Gareloi,Gareloi,9.483,False,,,72,0.484,0.484,0.86,74,True
+Ilha Holy,Holy,9.483,False,,,66,0.502,0.502,0.86,74,True
+Ilha Jackson,Jackson,9.483,False,,,66,0.502,0.502,0.86,74,True
+Ilha Magdalena,Magdalena,9.483,False,,,78,0.473,0.473,0.86,74,True
+Ilha Maly Taymyr,Maly Taymyr,9.483,False,,,66,0.502,0.502,0.86,74,True
+Ilha Mansel,Ilhas Mansel | Mansel,9.483,False,,,66,0.502,0.502,0.86,74,True
+Ilha Mfangano,Mfangano,9.483,False,,,90,0.473,0.473,0.86,74,True
+Ilha Monito,Monito,9.483,False,,,66,0.502,0.502,0.86,74,True
+Ilha Moresby,Moresby,9.483,False,,,72,0.484,0.484,0.86,74,True
+Ilha Nelson,Nelson,9.483,False,,,72,0.484,0.484,0.86,74,True
+Ilha Northbrook,Northbrook,9.483,False,,,66,0.502,0.502,0.86,74,True
+Ilha Nosy Mangabe,Nosy Mangabe,9.483,False,,,72,0.484,0.484,0.86,74,True
+Ilha Secretary,Secretary,9.483,False,,,84,0.475,0.475,0.86,74,True
+Ilha Tanaga,Tanaga,9.483,False,,,72,0.484,0.484,0.86,74,True
+Ilha da Laje,Ilha da Lage | Laje | Lage,10.902,False,,,384,0.478,0.478,0.86,74,True
+Ilha da Neve,Snow island | Neve,9.954,False,,,78,0.48,0.48,0.86,74,True
+Ilha das Focas,Ilha Seal | Focas | Seal,11.771,False,,,138,0.491,0.491,0.86,74,True
+Ilha das Vacas,Vacas,9.483,False,,,294,0.494,0.494,0.86,74,True
+Ilha de Cajaíba,Cajaíba,12.894,False,,,504,0.482,0.482,0.86,74,True
+Ilha de Cuxe,Cuxe,9.483,False,,,72,0.49,0.49,0.86,74,True
+Ilha de Galang,Galang,9.483,False,,,78,0.493,0.493,0.86,74,True
+Ilha de Jurubaíba,Jurubaíba,9.483,False,,,288,0.498,0.498,0.86,74,True
+Ilha de Manda,Ras Gitau | Manda,9.892,False,,,72,0.495,0.495,0.86,74,True
+Ilha de Nottingham,Nottingham,9.483,False,,,72,0.484,0.484,0.86,74,True
+Ilha de Saltes,Saltés,13.759,False,,,222,0.478,0.478,0.86,74,True
+Ilha de San Domino,San Domino,11.49,False,,,162,0.476,0.476,0.86,74,True
+Ilha de San Nicola,San Nicola,11.474,False,,,168,0.489,0.489,0.86,74,True
+Ilha de Santana,Santana,9.68,False,,,408,0.498,0.498,0.86,74,True
+Kavaratti,Cavarati,20.0,True,,,342,0.493,0.493,0.86,74,True
+Kimolos,Címolo,20.0,True,,,342,0.493,0.493,0.86,74,True
+Lifou,,20.0,True,,,336,0.496,0.496,0.86,74,True
+Lítla Dímun,,20.0,True,,,366,0.476,0.476,0.86,74,True
+Mainland,Shetland Mainland,20.0,True,,,372,0.474,0.474,0.86,74,True
+Malpelo,Ilha Malpelo | Ilha de Malpelo,9.483,False,,,354,0.488,0.488,0.86,74,True
+Minamidaitojima,Minami Daitō,20.0,True,,,330,0.5,0.5,0.86,74,True
+Mindoro,,20.0,True,,,348,0.49,0.49,0.86,74,True
+Mota,,11.314,False,,,90,0.498,0.498,0.86,74,True
+Mota Lava,,10.968,False,,,90,0.48,0.48,0.86,74,True
+Num,,7.911,False,,,72,0.496,0.496,0.86,74,True
+Nusa Lembongan,,20.0,True,,,354,0.488,0.488,0.86,74,True
+Oeno,,20.0,True,,,354,0.488,0.488,0.86,74,True
+Ogurja Ada,,12.792,False,,,108,0.498,0.498,0.86,74,True
+Okinoshima,,20.0,True,,,378,0.47,0.47,0.86,74,True
+Rinca,,20.0,True,,,348,0.49,0.49,0.86,74,True
+Samosir,,20.0,True,,,378,0.47,0.47,0.86,74,True
+Templo de Kalabsha,Nova Calabexa,10.496,False,,,78,0.496,0.496,0.86,74,True
+Tinhosa Pequena,,13.05,False,,,150,0.488,0.488,0.86,74,True
+Tongatapu,,20.0,True,,,360,0.48,0.48,0.86,74,True
+Virginia Key,Praia Virginia Key,12.497,False,,,198,0.484,0.484,0.86,74,True
+Yas Island,Ilha de Yas | Yas,9.483,False,,,372,0.474,0.474,0.86,74,True
+Île Royale,Ilha Real | Real,14.206,False,,,168,0.496,0.496,0.86,74,True
+Île des Soeurs,Ilha das Freiras | Freiras,12.521,False,,,138,0.474,0.474,0.86,74,True
+Amager,,20.0,True,,,300,0.528,0.528,0.866,75,True
+Antiparos,,20.0,True,,,312,0.515,0.515,0.866,75,True
+Asinara,,20.0,True,,,318,0.511,0.511,0.866,75,True
+Bequia,,20.0,True,,,294,0.533,0.533,0.866,75,True
+Buton,Butung,20.0,True,,,300,0.528,0.528,0.866,75,True
+Caicos do Norte,,8.511,False,,,60,0.519,0.519,0.866,75,True
+Caye Caulker,,20.0,True,,,306,0.519,0.519,0.866,75,True
+Grímsey,,20.0,True,,,324,0.508,0.508,0.866,75,True
+Hiva’Oa,,20.0,True,,,318,0.511,0.511,0.866,75,True
+Huahine,,20.0,True,,,300,0.528,0.528,0.866,75,True
+Ilha Adugak,Adugak,9.483,False,,,72,0.524,0.524,0.866,75,True
+Ilha Air Force,Air Force,10.749,False,,,72,0.528,0.528,0.866,75,True
+Ilha Amaknak,Amaknak,9.483,False,,,66,0.51,0.51,0.866,75,True
+Ilha Arakamchechen,Arakamchechen,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha Balambangan,Balambangan,9.483,False,,,78,0.506,0.506,0.866,75,True
+Ilha Branca,Branca,9.499,False,,,90,0.513,0.513,0.866,75,True
+Ilha Brock,Brock,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha Carney,Carney,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha Crozier,Crozier,9.483,False,,,90,0.533,0.533,0.866,75,True
+Ilha Daru,Daru,9.483,False,,,60,0.535,0.535,0.866,75,True
+Ilha Fergusson,Fergusson,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha Funk,Funk,10.336,False,,,108,0.515,0.515,0.866,75,True
+Ilha Keppel,Keppel,9.483,False,,,72,0.524,0.524,0.866,75,True
+Ilha Kura,Kura (ilha) | Kura,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha Marechal Deodoro,Marechal Deodoro,10.634,False,,,300,0.531,0.531,0.866,75,True
+Ilha Normanby,Normanby,9.483,False,,,66,0.519,0.519,0.866,75,True
+Ilha Parama,Parama,9.483,False,,,126,0.51,0.51,0.866,75,True
+Ilha Rainer,Rainer,9.483,False,,,66,0.51,0.51,0.866,75,True
+Ilha Rathlin,Rathlin,9.483,False,,,66,0.502,0.502,0.866,75,True
+Ilha Riesco,Riesco,9.483,False,,,66,0.502,0.502,0.866,75,True
+Ilha Russell,Russell,9.483,False,,,66,0.519,0.519,0.866,75,True
+Ilha Santa Inês,Santa Inês,9.778,False,,,66,0.513,0.513,0.866,75,True
+Ilha Sideia,Sideia,9.483,False,,,132,0.524,0.524,0.866,75,True
+Ilha Spaatz,Spaatz,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha Tarakan,Tarakan,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha Tiriri,Tiriri,12.79,False,,,624,0.502,0.502,0.866,75,True
+Ilha Vize,Vize,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha Ziegler,Ziegler,9.483,False,,,66,0.502,0.502,0.866,75,True
+Ilha da Cotinga,Cotinga,13.54,False,,,330,0.509,0.509,0.866,75,True
+Ilha de Bugala,Bugala,9.483,False,,,66,0.535,0.535,0.866,75,True
+Ilha de Bylot,Ilha Bylot | Bylot,9.483,False,,,60,0.528,0.528,0.866,75,True
+Ilha de Gorodomlya,Gorodomlya,9.483,False,,,78,0.516,0.516,0.866,75,True
+Ilha de Los Negros,Los Negros,9.527,False,,,72,0.513,0.513,0.866,75,True
+Ilha do Livramento,Livramento,10.997,False,,,216,0.522,0.522,0.866,75,True
+Ilhéu Caroço,Ilhéu Boné de Jóquei | Caroço | Boné de Jóquei,13.84,False,,,132,0.506,0.506,0.866,75,True
+Ilhéu do Farol,Farol,12.7,False,,,204,0.506,0.506,0.866,75,True
+Inagua,,21.409,False,,,348,0.513,0.513,0.866,75,True
+Iriomote,,20.0,True,,,294,0.533,0.533,0.866,75,True
+Jethou,,20.0,True,,,294,0.533,0.533,0.866,75,True
+Juan Fernández,ilha de robinson crusoé,9.483,False,,,204,0.519,0.519,0.866,75,True
+Kiska,Ilha Kiska,9.483,False,,,300,0.528,0.528,0.866,75,True
+Koltur,,20.0,True,,,312,0.515,0.515,0.866,75,True
+Mangaia,,20.0,True,,,300,0.528,0.528,0.866,75,True
+Maré,,11.623,False,,,84,0.517,0.517,0.866,75,True
+Møn,,20.0,True,,,306,0.519,0.519,0.866,75,True
+Nova Irlanda,,9.451,False,,,546,0.506,0.506,0.866,75,True
+Pag,Pago | Baag,10.155,False,,,306,0.519,0.519,0.866,75,True
+Palheiro do Mar,,11.382,False,,,174,0.522,0.522,0.866,75,True
+Pedras Tinhosas,,10.16,False,,,132,0.522,0.522,0.866,75,True
+Rab,Arbe,20.0,True,,,306,0.519,0.519,0.866,75,True
+Rennell Oriental,East rennell,11.13,False,,,78,0.517,0.517,0.866,75,True
+Rurutu,,20.0,True,,,294,0.533,0.533,0.866,75,True
+Senja,Ilha de Senja,9.483,False,,,324,0.508,0.508,0.866,75,True
+Spetses,,20.0,True,,,318,0.511,0.511,0.866,75,True
+Toga,,14.081,False,,,144,0.506,0.506,0.866,75,True
+Tulagi,,20.0,True,,,294,0.533,0.533,0.866,75,True
+Vanua Lava,,10.623,False,,,72,0.519,0.519,0.866,75,True
+Ven,,20.0,True,,,306,0.519,0.519,0.866,75,True
+Vendsyssel-Thy,,20.0,True,,,312,0.515,0.515,0.866,75,True
+Wallis,,20.0,True,,,324,0.508,0.508,0.866,75,True
+Andros,,20.0,True,,,282,0.541,0.541,0.872,76,True
+Arquipélago de Ons,Ilhas Ons,12.28,False,,,168,0.539,0.539,0.872,76,True
+Astipaleia,,20.0,True,,,276,0.543,0.543,0.872,76,True
+Barém,,16.808,False,,,150,0.557,0.557,0.872,76,True
+Bawean,,20.0,True,,,264,0.555,0.555,0.872,76,True
+Belitung,Bilitom,20.0,True,,,246,0.567,0.567,0.872,76,True
+Bozcaada,Tênedos,20.0,True,,,282,0.541,0.541,0.872,76,True
+Buru,,20.0,True,,,264,0.555,0.555,0.872,76,True
+Canhabaque,Roxa,12.246,False,,,312,0.557,0.557,0.872,76,True
+Canouan,,20.0,True,,,282,0.541,0.541,0.872,76,True
+Chek Lap Kok,,20.0,True,,,246,0.567,0.567,0.872,76,True
+Eysturoy,,20.0,True,,,264,0.555,0.555,0.872,76,True
+Farallón de Pájaros,,20.0,True,,,258,0.559,0.559,0.872,76,True
+Haha-jima,,20.0,True,,,258,0.559,0.559,0.872,76,True
+Halmahera,Halmaera,20.0,True,,,324,0.553,0.553,0.872,76,True
+Heimaey,,20.0,True,,,270,0.549,0.549,0.872,76,True
+Ilha Aiktak,Aiktak,9.483,False,,,60,0.562,0.562,0.872,76,True
+Ilha Akun,Akun,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha Alabat,Alabat,9.483,False,,,60,0.562,0.562,0.872,76,True
+Ilha Beaufort,Beaufort,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha Bruce,Bruce,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha Charles,Charles,10.19,False,,,78,0.565,0.565,0.872,76,True
+Ilha Desolação,Desolação,11.551,False,,,78,0.549,0.549,0.872,76,True
+Ilha Edge,Edgeøya | Edge,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha Feklistova,Feklistova,9.483,False,,,66,0.535,0.535,0.872,76,True
+Ilha French,Ilha Francesa (Victoria) | French | Francesa,9.483,False,,,60,0.543,0.543,0.872,76,True
+Ilha Gravina,Gravina,9.483,False,,,60,0.535,0.535,0.872,76,True
+Ilha Jacquemart,Jacquemart,9.483,False,,,72,0.549,0.549,0.872,76,True
+Ilha Kent,Kent,9.483,False,,,126,0.538,0.538,0.872,76,True
+Ilha Lou,Lou,9.483,False,,,90,0.562,0.562,0.872,76,True
+Ilha Matthew,Matthew,9.483,False,,,108,0.566,0.566,0.872,76,True
+Ilha Morris,Morris,9.483,False,,,96,0.537,0.537,0.872,76,True
+Ilha Otter,Otter,9.483,False,,,60,0.562,0.562,0.872,76,True
+Ilha Quiriquina,Quiriquina,9.483,False,,,78,0.544,0.544,0.872,76,True
+Ilha Resolution,Resolution,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha Sledge,Sledge,9.483,False,,,78,0.56,0.56,0.872,76,True
+Ilha Stefansson,Stefansson,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha Sverdrup,Sverdrup,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha Unalga,Unalga,9.483,False,,,66,0.557,0.557,0.872,76,True
+Ilha Vega,Vega,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha Wiener Neustadt,Wiener Neustadt,9.483,False,,,54,0.549,0.549,0.872,76,True
+Ilha da Figueira,Figueira,10.531,False,,,222,0.542,0.542,0.872,76,True
+Ilha de Conejera,Conejera,9.483,False,,,72,0.549,0.549,0.872,76,True
+Ilha de Nansen,Nansen,9.483,False,,,54,0.562,0.562,0.872,76,True
+Ilha de Sado,Sado,9.483,False,,,522,0.542,0.542,0.872,76,True
+Ilha de Tidra,Tidra | Ilha Tidra,9.483,False,,,66,0.535,0.535,0.872,76,True
+Ilha do Mangabal,Mangabal,13.739,False,,,540,0.565,0.565,0.872,76,True
+Ilha do Rei,Rei,9.392,False,,,60,0.541,0.541,0.872,76,True
+Ilhéu Rabo de Junco,Rabo de Junco,13.117,False,,,138,0.565,0.565,0.872,76,True
+Ilhéu da Baleia,Baleia,13.295,False,,,252,0.56,0.56,0.872,76,True
+Ilhéu de Santa Maria,,10.411,False,,,108,0.539,0.539,0.872,76,True
+Ilhéu do Gorgulho,Ilhéu do Lido | Gorgulho,15.022,False,,,300,0.544,0.544,0.872,76,True
+Imbros,Imroz | Gökçeada,20.0,True,,,276,0.543,0.543,0.872,76,True
+Ishigaki,,20.0,True,,,270,0.549,0.549,0.872,76,True
+Kalsoy,,20.0,True,,,264,0.555,0.555,0.872,76,True
+Levanzo,Ilha Levanzo,9.483,False,,,258,0.559,0.559,0.872,76,True
+Lewis and Harris,Lewis e Harris,20.0,True,,,252,0.564,0.564,0.872,76,True
+Lo,,7.988,False,,,54,0.553,0.553,0.872,76,True
+Malakula,Malékoula | Malekula,20.0,True,,,288,0.538,0.538,0.872,76,True
+Marado,,15.834,False,,,144,0.538,0.538,0.872,76,True
+Maupiti,,20.0,True,,,258,0.559,0.559,0.872,76,True
+Niulakita,,20.0,True,,,270,0.549,0.549,0.872,76,True
+Pavuvu,,20.0,True,,,378,0.566,0.566,0.872,76,True
+Rimatara,,20.0,True,,,258,0.559,0.559,0.872,76,True
+Shamian,,20.0,True,,,324,0.545,0.545,0.872,76,True
+Sombrero,,15.51,False,,,138,0.537,0.537,0.872,76,True
+Stac an Armin,,11.117,False,,,72,0.555,0.555,0.872,76,True
+Suðuroy,,20.0,True,,,252,0.564,0.564,0.872,76,True
+Vanua Levu,,20.0,True,,,258,0.559,0.559,0.872,76,True
+Zemlya Georga,,20.0,True,,,264,0.555,0.555,0.872,76,True
+Ærø,Aerö,20.0,True,,,270,0.549,0.549,0.872,76,True
+Agistri,,20.0,True,,,210,0.597,0.597,0.877,77,True
+Atol Ontong Java,Ontong Java,12.707,False,,,66,0.597,0.597,0.877,77,True
+Atol de Astove,Astove,14.602,False,,,102,0.575,0.575,0.877,77,True
+Belle-Île,Belle-Isle | Belle-Île-en-Mer,14.206,False,,,420,0.582,0.582,0.877,77,True
+Buka,Buca | Ilha Buka,21.245,False,,,234,0.578,0.578,0.877,77,True
+Burhou,,20.0,True,,,210,0.597,0.597,0.877,77,True
+Corregidor,Ilha de Corregidor,9.483,False,,,216,0.589,0.589,0.877,77,True
+Gaua,,20.0,True,,,228,0.582,0.582,0.877,77,True
+Hao,Atol de Hao,12.65,False,,,66,0.594,0.594,0.877,77,True
+Harbour Island,,20.0,True,,,240,0.573,0.573,0.877,77,True
+Hisingen,,20.0,True,,,234,0.578,0.578,0.877,77,True
+Homonhon,Ilha de Homonhon,9.483,False,,,210,0.597,0.597,0.877,77,True
+Ilha Belkovsky,Belkovsky,9.483,False,,,48,0.57,0.57,0.877,77,True
+Ilha Bolshoy Begichev,Bolshoy Begichev,9.483,False,,,42,0.592,0.592,0.877,77,True
+Ilha Bristol,Bristol,14.835,False,,,90,0.594,0.594,0.877,77,True
+Ilha Dundee,Dundee,9.483,False,,,48,0.57,0.57,0.877,77,True
+Ilha Fauro,Fauro,9.483,False,,,72,0.587,0.587,0.877,77,True
+Ilha Fitzroy,Fitzroy,9.483,False,,,60,0.592,0.592,0.877,77,True
+Ilha Grande do Rio Verde,Grande do Rio Verde,8.16,False,,,234,0.573,0.573,0.877,77,True
+Ilha Helena,Helena,10.042,False,,,54,0.592,0.592,0.877,77,True
+Ilha Horn,Horn,9.483,False,,,66,0.578,0.578,0.877,77,True
+Ilha Khvostof,Khvostof,9.483,False,,,60,0.573,0.573,0.877,77,True
+Ilha Little Cornwallis,Little Cornwallis,9.483,False,,,48,0.576,0.576,0.877,77,True
+Ilha Mabel,Mabel,9.483,False,,,66,0.578,0.578,0.877,77,True
+Ilha Majnoon,Majnoon,9.483,False,,,90,0.581,0.581,0.877,77,True
+Ilha Meighen,Meighen,9.483,False,,,48,0.57,0.57,0.877,77,True
+Ilha Montague,Montague,9.483,False,,,48,0.57,0.57,0.877,77,True
+Ilha North Kent,North Kent,9.483,False,,,48,0.57,0.57,0.877,77,True
+Ilha Pate,Pate,12.342,False,,,72,0.573,0.573,0.877,77,True
+Ilha Ponui,Ponui,9.483,False,,,60,0.592,0.592,0.877,77,True
+Ilha Powell,Powell,9.483,False,,,48,0.57,0.57,0.877,77,True
+Ilha Revillagigedo,Revillagigedo,9.483,False,,,42,0.592,0.592,0.877,77,True
+Ilha Robert,Robert,9.483,False,,,42,0.592,0.592,0.877,77,True
+Ilha Shortland,Shortland,9.483,False,,,60,0.584,0.584,0.877,77,True
+Ilha Smith,Smith,9.483,False,,,48,0.57,0.57,0.877,77,True
+Ilha Uyedineniya,Uyedineniya,9.483,False,,,42,0.592,0.592,0.877,77,True
+Ilha Visokoi,Visokoi,9.483,False,,,48,0.57,0.57,0.877,77,True
+Ilha das Laranjeiras,Ilhas das Laranjeiras | Laranjeiras,10.789,False,,,180,0.587,0.587,0.877,77,True
+Ilha das Pérolas de Mikimoto,Pérolas de Mikimoto,10.592,False,,,96,0.594,0.594,0.877,77,True
+Ilha de Ometepe,Ometepe | Ilha ometepe,9.483,False,,,162,0.584,0.584,0.877,77,True
+Ilha de Onza,Onza,9.483,False,,,72,0.587,0.587,0.877,77,True
+Ilha de Traill,Ilha Traill | Traill,9.483,False,,,42,0.592,0.592,0.877,77,True
+Ilha dos Franceses,Franceses,9.483,False,,,252,0.59,0.59,0.877,77,True
+Ilhas do Rei Carlos,Terra do Rei Carlos | Rei Carlos,9.591,False,,,42,0.597,0.597,0.877,77,True
+Ilhota Guillermo,Cayo Guillermo | Guillermo,14.31,False,,,102,0.584,0.584,0.877,77,True
+Isle Royale,,20.0,True,,,234,0.578,0.578,0.877,77,True
+Kahoolawe,Kahoʻolawe,20.0,True,,,222,0.585,0.585,0.877,77,True
+Kihnu,,20.0,True,,,234,0.578,0.578,0.877,77,True
+Ko Phi Phi Don,,20.0,True,,,222,0.585,0.585,0.877,77,True
+Kolguyev,Kolguev | Ilha Kolguyev,9.483,False,,,246,0.567,0.567,0.877,77,True
+Kura Rock,,9.359,False,,,54,0.599,0.599,0.877,77,True
+Lolland,,20.0,True,,,228,0.582,0.582,0.877,77,True
+Maiao,,18.161,False,,,162,0.576,0.576,0.877,77,True
+Mannar,Ilha de Manar | Manar,13.003,False,,,210,0.597,0.597,0.877,77,True
+Mazagão,Mazgaon | Mazagon | Mazagaon | Mazagão (Bombaim),15.075,False,,,132,0.597,0.597,0.877,77,True
+Mouchão de Alhandra,,15.449,False,,,462,0.58,0.58,0.877,77,True
+Nisiros,,20.0,True,,,240,0.573,0.573,0.877,77,True
+Niutao,,20.0,True,,,216,0.589,0.589,0.877,77,True
+Nordaustlandet,,20.0,True,,,216,0.589,0.589,0.877,77,True
+Randall's Island,,20.0,True,,,240,0.578,0.578,0.877,77,True
+San Lazzaro degli Armeni,,20.0,True,,,228,0.582,0.582,0.877,77,True
+San Pietro,,20.0,True,,,240,0.573,0.573,0.877,77,True
+Saria,,17.167,False,,,132,0.587,0.587,0.877,77,True
+Tahuata,,20.0,True,,,210,0.597,0.597,0.877,77,True
+Tashirojima,,20.0,True,,,228,0.582,0.582,0.877,77,True
+Terschelling,Skylge,20.0,True,,,210,0.597,0.597,0.877,77,True
+Tromsøya,,20.0,True,,,222,0.585,0.585,0.877,77,True
+Tutuila,,20.0,True,,,240,0.573,0.573,0.877,77,True
+Viðoy,,20.0,True,,,240,0.573,0.573,0.877,77,True
+Weh,,20.0,True,,,234,0.578,0.578,0.877,77,True
+Éfaté,,20.0,True,,,222,0.585,0.585,0.877,77,True
+Achill,,20.0,True,,,204,0.604,0.604,0.883,78,True
+Alegranza,,20.0,True,,,204,0.604,0.604,0.883,78,True
+Anuta,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Ap Lei Chau,,11.376,False,,,48,0.628,0.628,0.883,78,True
+Bahia Honda Key,,9.22,False,,,66,0.62,0.62,0.883,78,True
+Bangka,Banca | Ilha Bangka,10.505,False,,,198,0.614,0.614,0.883,78,True
+Betio,,20.0,True,,,186,0.628,0.628,0.883,78,True
+Bintão,,20.0,True,,,186,0.628,0.628,0.883,78,True
+Boca Grande Key,,8.07,False,,,78,0.619,0.619,0.883,78,True
+Caio Longo,,9.8,False,,,60,0.623,0.623,0.883,78,True
+Catanduanes,,20.0,True,,,186,0.628,0.628,0.883,78,True
+Chappaquiddick,Ilha de Chappaquiddick | Ilha Chappaquiddick,9.483,False,,,258,0.621,0.621,0.883,78,True
+Chrissi,Khrysí | Chrysi,20.0,True,,,186,0.628,0.628,0.883,78,True
+Cubagua,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Dog,Ilha Dog,9.483,False,,,246,0.619,0.619,0.883,78,True
+Erromango,,20.0,True,,,186,0.628,0.628,0.883,78,True
+Farallón de Medinilla,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Fasta Åland,,17.047,False,,,114,0.62,0.62,0.883,78,True
+Fatu Hiva,,20.0,True,,,186,0.628,0.628,0.883,78,True
+Filfla,Filfoletta,20.0,True,,,198,0.614,0.614,0.883,78,True
+Hopen,,20.0,True,,,204,0.604,0.604,0.883,78,True
+Ilha Bransfield,Bransfield,9.483,False,,,42,0.609,0.609,0.883,78,True
+Ilha Carnac,Carnac,9.483,False,,,48,0.632,0.632,0.883,78,True
+Ilha Hofmann,Hofmann,9.483,False,,,48,0.602,0.602,0.883,78,True
+Ilha Igloolik,Igloolik,9.483,False,,,60,0.609,0.609,0.883,78,True
+Ilha Juncal,Isla Juncal | Juncal,12.544,False,,,102,0.628,0.628,0.883,78,True
+Ilha La Ronciere,La Ronciere,8.672,False,,,36,0.601,0.601,0.883,78,True
+Ilha Robertson,Robertson,9.483,False,,,54,0.602,0.602,0.883,78,True
+Ilha Three Hummock,Three Hummock,9.483,False,,,66,0.625,0.625,0.883,78,True
+Ilha Trindade,,10.387,False,,,66,0.601,0.601,0.883,78,True
+Ilha da Convivência,Convivência,10.268,False,,,156,0.601,0.601,0.883,78,True
+Ilha da Sociedade de Geografia,Sociedade de Geografia,9.47,False,,,36,0.63,0.63,0.883,78,True
+Ilha das Claras,Claras,9.483,False,,,132,0.619,0.619,0.883,78,True
+Ilha de Castilho,Castilho,10.979,False,,,210,0.609,0.609,0.883,78,True
+Ilha de Ewe,Ewe,12.764,False,,,90,0.607,0.607,0.883,78,True
+Ilha de Giresun,Ilha de Guiressum | Ilha das Amazonas | Giresun Adası) | Aretias | Areos Nesos | Amazon Adası | Ares | Puga | Giresun | Guiressum | Amazonas,9.483,False,,,42,0.609,0.609,0.883,78,True
+Ilha de Iony,Iony,9.483,False,,,36,0.632,0.632,0.883,78,True
+Ilha de Lintin,Nei Lingding | Lintin,9.483,False,,,60,0.609,0.609,0.883,78,True
+Ilha de São Pedro,São Pedro,7.64,False,,,36,0.623,0.623,0.883,78,True
+Ilha do Chico Pedro,Chico Pedro,9.933,False,,,102,0.619,0.619,0.883,78,True
+Ilha do Duque de Iorque,Duque de Iorque,10.333,False,,,72,0.619,0.619,0.883,78,True
+Ilha do Socó,Socó,12.798,False,,,210,0.621,0.621,0.883,78,True
+Ilhéu das Cenouras,Cenouras,14.571,False,,,192,0.624,0.624,0.883,78,True
+Key West,Cayo Hueso,20.0,True,,,288,0.624,0.624,0.883,78,True
+Lastovo,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Laysan,,20.0,True,,,204,0.604,0.604,0.883,78,True
+Malaita,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Malo,,14.257,False,,,78,0.621,0.621,0.883,78,True
+Mayaguana,,20.0,True,,,204,0.604,0.604,0.883,78,True
+Mere Lava,,12.959,False,,,66,0.604,0.604,0.883,78,True
+Morotai,,20.0,True,,,186,0.628,0.628,0.883,78,True
+Nanumaga,,20.0,True,,,192,0.623,0.623,0.883,78,True
+Paradise Island,,20.0,True,,,204,0.604,0.604,0.883,78,True
+Paramushiru,Paramushir | Horomushiru,20.0,True,,,204,0.604,0.604,0.883,78,True
+Riddarholmen,,20.0,True,,,204,0.604,0.604,0.883,78,True
+Samar,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Schiermonnikoog,,20.0,True,,,204,0.604,0.604,0.883,78,True
+Sipadan,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Sotobanari,,20.0,True,,,216,0.607,0.607,0.883,78,True
+Stadsholmen,,20.0,True,,,192,0.623,0.623,0.883,78,True
+Strombolicchio,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Svínoy,,20.0,True,,,186,0.628,0.628,0.883,78,True
+Tana Cherqos,,15.366,False,,,162,0.614,0.614,0.883,78,True
+Tikopia,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Tubuai,,20.0,True,,,186,0.628,0.628,0.883,78,True
+Ulva,,17.927,False,,,132,0.609,0.609,0.883,78,True
+Urup,Uruppu,20.0,True,,,198,0.614,0.614,0.883,78,True
+Visingsö,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Vlieland,,20.0,True,,,198,0.614,0.614,0.883,78,True
+Zhongshan Dao,Xiangshan | Hian-chan,9.832,False,,,66,0.599,0.599,0.883,78,True
+Île à Vache,,14.206,False,,,78,0.607,0.607,0.883,78,True
+Adams,,20.0,True,,,156,0.665,0.665,0.889,79,True
+Agios Efstratios,,20.0,True,,,156,0.665,0.665,0.889,79,True
+Anegada,,20.0,True,,,162,0.655,0.655,0.889,79,True
+Arorae,,20.0,True,,,156,0.665,0.665,0.889,79,True
+Aua,,20.0,True,,,210,0.653,0.653,0.889,79,True
+Borðoy,,20.0,True,,,180,0.636,0.636,0.889,79,True
+Castelo Kisimul,,10.067,False,,,36,0.646,0.646,0.889,79,True
+Changuu,Kibandiko | Ilha da Prisão | Prisão,9.611,False,,,246,0.641,0.641,0.889,79,True
+Gili Motang,,20.0,True,,,222,0.639,0.639,0.889,79,True
+Gulangyu,,20.0,True,,,174,0.641,0.641,0.889,79,True
+Helgeandsholmen,,20.0,True,,,180,0.636,0.636,0.889,79,True
+Helgö,,20.0,True,,,174,0.657,0.657,0.889,79,True
+Idjwi,,20.0,True,,,162,0.655,0.655,0.889,79,True
+Ilha Argo,Argo,11.845,False,,,84,0.646,0.646,0.889,79,True
+Ilha Aride,Aride,9.483,False,,,42,0.644,0.644,0.889,79,True
+Ilha Assacorkin,Assacorkin,9.483,False,,,120,0.638,0.638,0.889,79,True
+Ilha Badger,Badger,9.483,False,,,54,0.653,0.653,0.889,79,True
+Ilha Bear,Ilha Tenente Gonzalez | Bear | Tenente Gonzalez,11.142,False,,,54,0.643,0.643,0.889,79,True
+Ilha Bob,Bob,9.483,False,,,60,0.644,0.644,0.889,79,True
+Ilha Bobowasi,Bobowasi,9.483,False,,,60,0.661,0.661,0.889,79,True
+Ilha Caledônia,Caledônia,9.483,False,,,72,0.65,0.65,0.889,79,True
+Ilha Cornwall,Cornwall,9.483,False,,,30,0.665,0.665,0.889,79,True
+Ilha Folly,Folly,9.483,False,,,60,0.644,0.644,0.889,79,True
+Ilha Grass,Grass,9.483,False,,,42,0.657,0.657,0.889,79,True
+Ilha Hawkesbury,Hawkesbury,9.483,False,,,48,0.643,0.643,0.889,79,True
+Ilha Interview,Interview,11.771,False,,,60,0.632,0.632,0.889,79,True
+Ilha King Christian,King Christian,10.091,False,,,36,0.646,0.646,0.889,79,True
+Ilha Mornington,Mornington,9.483,False,,,36,0.632,0.632,0.889,79,True
+Ilha Partridge,Partridge,9.483,False,,,66,0.644,0.644,0.889,79,True
+Ilha Possessão,Possessão,11.438,False,,,96,0.65,0.65,0.889,79,True
+Ilha Ratones Pequeno,Ilha Ratones Menor | Ratones Pequeno | Ratones Menor,9.185,False,,,102,0.659,0.659,0.889,79,True
+Ilha Spruce,Spruce,9.483,False,,,42,0.657,0.657,0.889,79,True
+Ilha Vindicação,Vindicação,13.207,False,,,60,0.641,0.641,0.889,79,True
+Ilha Viscaíno,Viscaíno,9.483,False,,,84,0.641,0.641,0.889,79,True
+Ilha Wakenaam,Wakenaam,9.483,False,,,60,0.661,0.661,0.889,79,True
+Ilha Wuvulu,Wuvulu,9.483,False,,,42,0.657,0.657,0.889,79,True
+Ilha Yttygran,Yttygran,9.483,False,,,36,0.632,0.632,0.889,79,True
+Ilha das Fontes,Fontes,9.483,False,,,150,0.639,0.639,0.889,79,True
+Ilha de Carache,Carache,9.483,False,,,54,0.636,0.636,0.889,79,True
+Ilha de Fanagoria,Fanagoria,9.483,False,,,54,0.653,0.653,0.889,79,True
+Ilha de Itatiaia,Itatiaia,11.159,False,,,234,0.659,0.659,0.889,79,True
+Ilha de São Vicente,São Vicente,8.612,False,,,0,0.659,0.659,0.889,79,True
+Ilha do Batuta,Batuta,11.621,False,,,192,0.653,0.653,0.889,79,True
+Ilha do Cabo Sable,Cabo Sable,11.363,False,,,72,0.646,0.646,0.889,79,True
+Ilha do Combu,combu,9.483,False,,,0,0.657,0.657,0.889,79,True
+Ilha do Ferreira,Ferreira,9.514,False,,,90,0.659,0.659,0.889,79,True
+Ilha do Pernambuco,Pernambuco,9.714,False,,,90,0.638,0.638,0.889,79,True
+Ilha do Tesouro,Tesouro,10.181,False,,,66,0.646,0.646,0.889,79,True
+Ilha dos Jangadeiros,Jangadeiros,9.483,False,,,156,0.632,0.632,0.889,79,True
+Ilhota Sucre,Sucre,14.347,False,,,156,0.636,0.636,0.889,79,True
+Ilhéu Quixibá,Quixibá,14.571,False,,,186,0.632,0.632,0.889,79,True
+Ilhéu de São Jorge,,9.956,False,,,108,0.636,0.636,0.889,79,True
+Ilhéus dos Rosais,Rosais,12.16,False,,,162,0.654,0.654,0.889,79,True
+Lošinj,,20.0,True,,,168,0.65,0.65,0.889,79,True
+Middle Island,,20.0,True,,,216,0.634,0.634,0.889,79,True
+Mljet,Meleda,20.0,True,,,168,0.65,0.65,0.889,79,True
+Muhu,,20.0,True,,,180,0.636,0.636,0.889,79,True
+Neuwerk,,20.0,True,,,174,0.641,0.641,0.889,79,True
+Nólsoy,,20.0,True,,,168,0.65,0.65,0.889,79,True
+Oodaaq,,20.0,True,,,168,0.65,0.65,0.889,79,True
+Prvić,,20.0,True,,,168,0.65,0.65,0.889,79,True
+Pserimos,,20.0,True,,,180,0.636,0.636,0.889,79,True
+Rennell,Ilha Rennell,9.483,False,,,174,0.641,0.641,0.889,79,True
+Saltholm,,20.0,True,,,168,0.65,0.65,0.889,79,True
+Skúvoy,,20.0,True,,,168,0.65,0.65,0.889,79,True
+Sundiva,,20.0,True,,,162,0.66,0.66,0.889,79,True
+Waigeo,,20.0,True,,,180,0.636,0.636,0.889,79,True
+Wetar,,20.0,True,,,168,0.65,0.65,0.889,79,True
+Whalsay,,20.0,True,,,162,0.655,0.655,0.889,79,True
+Útila,,20.0,True,,,162,0.655,0.655,0.889,79,True
+A Arousa,,20.0,True,,,216,0.69,0.69,0.894,80,True
+Adonara,,20.0,True,,,144,0.686,0.686,0.894,80,True
+Ailsa Craig,,20.0,True,,,138,0.694,0.694,0.894,80,True
+Arquipélago das Guaitecas,Arquipélago Guaitecas | Guaitecas,12.28,False,,,48,0.694,0.694,0.894,80,True
+Bohol,,20.0,True,,,198,0.679,0.679,0.894,80,True
+Cítnos,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Darsah,,20.0,True,,,138,0.694,0.694,0.894,80,True
+Dokos,,20.0,True,,,144,0.686,0.686,0.894,80,True
+Falster,,20.0,True,,,144,0.686,0.686,0.894,80,True
+Gotska Sandön,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Hrísey,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Ilha Acarabu,Acarabu,9.483,False,,,84,0.675,0.675,0.894,80,True
+Ilha Albatroz,Albatroz,11.879,False,,,66,0.683,0.683,0.894,80,True
+Ilha Barlow,Barlow,9.483,False,,,54,0.669,0.669,0.894,80,True
+Ilha Buckingham,Buckingham,9.483,False,,,42,0.67,0.67,0.894,80,True
+Ilha Daydream,Daydream,9.483,False,,,54,0.669,0.669,0.894,80,True
+Ilha Ghizo,Ghizo,9.483,False,,,36,0.665,0.665,0.894,80,True
+Ilha Gibbs,Gibbs,9.483,False,,,30,0.665,0.665,0.894,80,True
+Ilha Greely,Greely,9.483,False,,,30,0.665,0.665,0.894,80,True
+Ilha Gribbell,Gribbell,9.483,False,,,48,0.675,0.675,0.894,80,True
+Ilha Inexpressível,Inexpressível,13.783,False,,,54,0.679,0.679,0.894,80,True
+Ilha Kapiti,Kapiti,9.483,False,,,30,0.665,0.665,0.894,80,True
+Ilha Koshava,Koshava,9.483,False,,,54,0.669,0.669,0.894,80,True
+Ilha Kugong,Kugong,9.483,False,,,42,0.67,0.67,0.894,80,True
+Ilha Kunghit,Kunghit,9.483,False,,,48,0.675,0.675,0.894,80,True
+Ilha Leguan,Leguan,9.483,False,,,48,0.675,0.675,0.894,80,True
+Ilha Lockyer,Lockyer,9.483,False,,,36,0.692,0.692,0.894,80,True
+Ilha Palomino,Palomino,12.395,False,,,96,0.681,0.681,0.894,80,True
+Ilha Peucang,Peucang,9.483,False,,,48,0.675,0.675,0.894,80,True
+Ilha Princess Royal,Princess Royal,9.483,False,,,30,0.665,0.665,0.894,80,True
+Ilha Rogozen,Rogozen,9.483,False,,,48,0.694,0.694,0.894,80,True
+Ilha Rowett,Rowett,9.483,False,,,30,0.665,0.665,0.894,80,True
+Ilha São Lourenço,,7.64,False,,,96,0.679,0.679,0.894,80,True
+Ilha Vásquez,Ilha Vázquez | Vásquez | Vázquez,9.483,False,,,54,0.69,0.69,0.894,80,True
+Ilha White,White,9.483,False,,,42,0.67,0.67,0.894,80,True
+Ilha Yarok,Yarok,9.483,False,,,36,0.665,0.665,0.894,80,True
+Ilha Ymer,Ymer,9.483,False,,,30,0.665,0.665,0.894,80,True
+Ilha Yule,Yule,9.483,False,,,48,0.694,0.694,0.894,80,True
+Ilha da Chapada,Chapada,10.809,False,,,210,0.675,0.675,0.894,80,True
+Ilha de Bjarnason,Bjarnason,9.483,False,,,78,0.692,0.692,0.894,80,True
+Ilhota Córdoba,Córdoba,13.683,False,,,126,0.689,0.689,0.894,80,True
+Ilhéu Laje Branca,Laje Branca,12.136,False,,,78,0.692,0.692,0.894,80,True
+Ilhéu Pequeno,Pequeno,11.729,False,,,132,0.686,0.686,0.894,80,True
+Ilhéu do Baluarte,Baluarte,14.324,False,,,132,0.669,0.669,0.894,80,True
+Ilhéu dos Mosteiros,Mosteiros,14.571,False,,,132,0.679,0.679,0.894,80,True
+Ko Lanta Yai,,20.0,True,,,180,0.686,0.686,0.894,80,True
+Lisianski,,20.0,True,,,156,0.665,0.665,0.894,80,True
+Makronisi,Makrónisos,20.0,True,,,144,0.686,0.686,0.894,80,True
+Marettimo,Ilha Marettimo,9.483,False,,,138,0.694,0.694,0.894,80,True
+Melanésia Insular,,13.972,False,,,150,0.69,0.69,0.894,80,True
+Nihoa,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Orona,,20.0,True,,,144,0.686,0.686,0.894,80,True
+Parque de Prince's Island,,9.202,False,,,48,0.686,0.686,0.894,80,True
+Pecixe,,20.0,True,,,180,0.686,0.686,0.894,80,True
+Ra,,11.338,False,,,48,0.69,0.69,0.894,80,True
+Rinia,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Rum Cay,Santa Maria de la Concepción | Mamana,12.931,False,,,48,0.675,0.675,0.894,80,True
+Rügen,,20.0,True,,,738,0.681,0.681,0.894,80,True
+Samsø,Samso,20.0,True,,,144,0.686,0.686,0.894,80,True
+Sandoy,,20.0,True,,,156,0.665,0.665,0.894,80,True
+Sipura,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Sotra,,20.0,True,,,138,0.694,0.694,0.894,80,True
+South Uist,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Taveuni,,20.0,True,,,144,0.686,0.686,0.894,80,True
+Te Afuafou,,7.585,False,,,48,0.681,0.681,0.894,80,True
+Ugljan,,20.0,True,,,144,0.686,0.686,0.894,80,True
+Utö,,20.0,True,,,162,0.686,0.686,0.894,80,True
+Uuemaarahu,,20.0,True,,,360,0.682,0.682,0.894,80,True
+Zembra,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Área de Proteção Ambiental de Algodoal-Maiandeua,APA Algodoal-Maiandeua,10.54,False,,,114,0.682,0.682,0.894,80,True
+Čiovo,,20.0,True,,,150,0.675,0.675,0.894,80,True
+Agrihan,,20.0,True,,,114,0.725,0.725,0.9,81,True
+Anguilla,Anguila | Ilha de Anguilla,16.927,False,,,204,0.723,0.723,0.9,81,True
+Anuanuraro,,20.0,True,,,120,0.716,0.716,0.9,81,True
+Baengnyeong,Ilha Baengnyeong,9.483,False,,,120,0.716,0.716,0.9,81,True
+Beru,,20.0,True,,,114,0.725,0.725,0.9,81,True
+Blup Blup,,20.0,True,,,138,0.705,0.705,0.9,81,True
+Burias,,20.0,True,,,120,0.716,0.716,0.9,81,True
+Caja de Muertos,,14.523,False,,,60,0.698,0.698,0.9,81,True
+Dugi otok,,20.0,True,,,120,0.716,0.716,0.9,81,True
+Epi,Epi (Vanuatu) | Epi (ilha),15.087,False,,,114,0.725,0.725,0.9,81,True
+Groote Eylandt,,20.0,True,,,126,0.709,0.709,0.9,81,True
+IJsselmonde,,20.0,True,,,126,0.72,0.72,0.9,81,True
+Ilha Arka,Arka,9.483,False,,,84,0.707,0.707,0.9,81,True
+Ilha Brasil,Condomínio Náutico | Brasil,8.196,False,,,120,0.711,0.711,0.9,81,True
+Ilha Calauit,Calauit,9.483,False,,,36,0.703,0.703,0.9,81,True
+Ilha Carlos-Alexandre,Ilha Karl-Alexander | Carlos-Alexandre | Karl-Alexander,9.388,False,,,24,0.707,0.707,0.9,81,True
+Ilha Deer,Deer,9.483,False,,,42,0.7,0.7,0.9,81,True
+Ilha Ferradura,Ferradura,11.594,False,,,42,0.697,0.697,0.9,81,True
+Ilha Fridtjof,Fridtjof,9.483,False,,,42,0.712,0.712,0.9,81,True
+Ilha Gau,Gau,12.682,False,,,36,0.719,0.719,0.9,81,True
+Ilha Howard,Howard,9.483,False,,,54,0.705,0.705,0.9,81,True
+Ilha Kovach,Kovach,9.483,False,,,54,0.727,0.727,0.9,81,True
+Ilha Mandijituba,Ilha Mandigituba | Mandijituba | Mandigituba,9.483,False,,,108,0.704,0.704,0.9,81,True
+Ilha Maïre,Île Maïre | Maïre,12.838,False,,,66,0.719,0.719,0.9,81,True
+Ilha Mills,Mills,9.483,False,,,84,0.707,0.707,0.9,81,True
+Ilha Payer,Payer,9.483,False,,,24,0.709,0.709,0.9,81,True
+Ilha Rasa,Rasa,11.022,False,,,108,0.703,0.703,0.9,81,True
+Ilha Trefoil,Trefoil,9.483,False,,,54,0.705,0.705,0.9,81,True
+Ilha Upernivik,Upernivik,9.483,False,,,30,0.712,0.712,0.9,81,True
+Ilha da Galheta,Galheta,12.664,False,,,126,0.713,0.713,0.9,81,True
+Ilha das Garças,Ilha das garças (espírito santo) | Garças,11.376,False,,,180,0.719,0.719,0.9,81,True
+Ilha das Pombas,Pombas,11.544,False,,,204,0.7,0.7,0.9,81,True
+Ilha de Paratinga,Paratinga,12.698,False,,,102,0.721,0.721,0.9,81,True
+Ilha de Pentecostes,Pentecostes,11.208,False,,,246,0.696,0.696,0.9,81,True
+Ilha do Bom Abrigo,Bom Abrigo,9.265,False,,,0,0.698,0.698,0.9,81,True
+Ilha do Duque de York,Duque de York,10.333,False,,,36,0.721,0.721,0.9,81,True
+Ilha do Eixo,Eixo,10.045,False,,,162,0.703,0.703,0.9,81,True
+Ilha dos Bandeirantes,Bandeirantes,10.529,False,,,90,0.72,0.72,0.9,81,True
+Ilhéu Alto,Alto,11.597,False,,,114,0.707,0.707,0.9,81,True
+Ilhéu Gabado,Gabado,15.952,False,,,132,0.712,0.712,0.9,81,True
+Ilhéu da Cevada,Cevada,13.87,False,,,132,0.707,0.707,0.9,81,True
+Ilhéu da Forja,Forja,14.196,False,,,132,0.713,0.713,0.9,81,True
+Isla Calero,,12.751,False,,,60,0.707,0.707,0.9,81,True
+Kaula,,20.0,True,,,132,0.7,0.7,0.9,81,True
+Kayoa,,20.0,True,,,150,0.716,0.716,0.9,81,True
+Klein Bonaire,Pequena Bonaire,9.098,False,,,120,0.716,0.716,0.9,81,True
+Koločep,Calamotta,20.0,True,,,132,0.7,0.7,0.9,81,True
+Kvaløya,,20.0,True,,,120,0.716,0.716,0.9,81,True
+Lopud,,20.0,True,,,114,0.725,0.725,0.9,81,True
+Maiana,,20.0,True,,,120,0.716,0.716,0.9,81,True
+Misool,,20.0,True,,,132,0.7,0.7,0.9,81,True
+Niuatoputapu,,20.0,True,,,114,0.725,0.725,0.9,81,True
+Nonouti,,20.0,True,,,120,0.716,0.716,0.9,81,True
+Olib,,20.0,True,,,114,0.725,0.725,0.9,81,True
+Pamana,Ilha Pamana,20.809,False,,,120,0.727,0.727,0.9,81,True
+Panay,Panai,20.0,True,,,126,0.709,0.709,0.9,81,True
+Pantar,,20.0,True,,,132,0.7,0.7,0.9,81,True
+Pašman,,20.0,True,,,126,0.709,0.709,0.9,81,True
+Pináculo de La Perouse,,11.534,False,,,66,0.721,0.721,0.9,81,True
+Port-Cros,,20.0,True,,,132,0.7,0.7,0.9,81,True
+Prickly Pear,,15.056,False,,,114,0.697,0.697,0.9,81,True
+Pulau Ujong,Ilha de Singapura,11.206,False,,,126,0.709,0.709,0.9,81,True
+Ruhnu,,20.0,True,,,114,0.725,0.725,0.9,81,True
+Salawati,,20.0,True,,,132,0.7,0.7,0.9,81,True
+Slotsholmen,,20.0,True,,,126,0.709,0.709,0.9,81,True
+Strongili,,20.0,True,,,138,0.694,0.694,0.9,81,True
+Te Afualiku,,7.585,False,,,30,0.723,0.723,0.9,81,True
+Teraina,Terraina,20.0,True,,,120,0.716,0.716,0.9,81,True
+Tiga,,15.979,False,,,66,0.727,0.727,0.9,81,True
+Tobi,,20.0,True,,,132,0.7,0.7,0.9,81,True
+Unije,Niä | Unie,20.0,True,,,120,0.716,0.716,0.9,81,True
+Agattu,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Alamagan,,20.0,True,,,96,0.761,0.761,0.906,82,True
+Ambrym,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Anholt,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Asperö,,13.655,False,,,36,0.742,0.742,0.906,82,True
+Baratang,Ilha Baratang,9.483,False,,,102,0.747,0.747,0.906,82,True
+Benbecula,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Biševo,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Björkö,,20.0,True,,,108,0.74,0.74,0.906,82,True
+Butaritari,Ilha de Makin | Atol de Makin,9.483,False,,,108,0.736,0.736,0.906,82,True
+Con Co,,9.728,False,,,24,0.757,0.757,0.906,82,True
+Crooked Island,Ilha Crooked | Crooked,9.483,False,,,96,0.761,0.761,0.906,82,True
+Daniel Island,,9.76,False,,,48,0.731,0.731,0.906,82,True
+Eriskay,,20.0,True,,,96,0.761,0.761,0.906,82,True
+Esfactéria,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Failaka,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Fanø,,20.0,True,,,96,0.761,0.761,0.906,82,True
+Fradinhos,,20.0,True,,,246,0.753,0.753,0.906,82,True
+Fugloy,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Funafala,,20.0,True,,,132,0.755,0.755,0.906,82,True
+Hateruma,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Hestur,,20.0,True,,,96,0.761,0.761,0.906,82,True
+Ilha Alvarenga,Alvarenga,11.176,False,,,84,0.753,0.753,0.906,82,True
+Ilha Black,Black,9.792,False,,,30,0.755,0.755,0.906,82,True
+Ilha Clavering,Clavering,9.483,False,,,18,0.761,0.761,0.906,82,True
+Ilha Doumer,Doumer,9.483,False,,,24,0.728,0.728,0.906,82,True
+Ilha Drysdale,Drysdale,9.483,False,,,54,0.756,0.756,0.906,82,True
+Ilha Emeline,Emeline,9.483,False,,,42,0.728,0.728,0.906,82,True
+Ilha Kathleen,Kathleen,9.483,False,,,60,0.732,0.732,0.906,82,True
+Ilha Kilifarevo,Kilifarevo,9.483,False,,,36,0.74,0.74,0.906,82,True
+Ilha Ono,Ono,11.619,False,,,36,0.757,0.757,0.906,82,True
+Ilha Prion,Prion,13.273,False,,,60,0.731,0.731,0.906,82,True
+Ilha Queimadas,Ilha Queimada | Queimadas | Queimada,10.865,False,,,90,0.728,0.728,0.906,82,True
+Ilha Saso,Saso,9.483,False,,,30,0.73,0.73,0.906,82,True
+Ilha Sierra,Sierra,9.483,False,,,36,0.74,0.74,0.906,82,True
+Ilha Taperebateua,Taperebateua,9.483,False,,,114,0.753,0.753,0.906,82,True
+Ilha Tava,Tava,9.827,False,,,30,0.74,0.74,0.906,82,True
+Ilha Tong,Tong,9.483,False,,,48,0.752,0.752,0.906,82,True
+Ilha de Foradada,Foradada,9.483,False,,,36,0.74,0.74,0.906,82,True
+Ilha de León,León,9.483,False,,,42,0.728,0.728,0.906,82,True
+Ilha do Macuco,Macuco,11.9,False,,,120,0.747,0.747,0.906,82,True
+Ilha dos Herdeiros,Herdeiros,10.782,False,,,102,0.747,0.747,0.906,82,True
+Ilhota Guajaba,Cayo Guajaba | Guajaba,14.31,False,,,54,0.756,0.756,0.906,82,True
+Kongsøya,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Kunashir,,20.0,True,,,1026,0.752,0.752,0.906,82,True
+Kunoy,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Lembata,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Makira,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Mangole,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Mangrove Cay,,16.578,False,,,54,0.752,0.752,0.906,82,True
+Molène,,20.0,True,,,114,0.73,0.73,0.906,82,True
+Muna,,22.033,False,,,120,0.742,0.742,0.906,82,True
+Necker,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Nusa Ceningan,Ilha de Ceningan | Ceningan,9.483,False,,,102,0.747,0.747,0.906,82,True
+Ortac,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Orust,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Peristera,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Psara,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Ragged Island,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Rømø,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Saarloq,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Samhah,Samá,13.222,False,,,108,0.736,0.736,0.906,82,True
+Sarigan,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Seil,,20.0,True,,,108,0.736,0.736,0.906,82,True
+Sylt,,20.0,True,,,540,0.73,0.73,0.906,82,True
+Södertörn,Södertörn-Nacka,20.0,True,,,102,0.755,0.755,0.906,82,True
+Sørøya,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Taboga,,20.0,True,,,126,0.739,0.739,0.906,82,True
+Tåsinge,,20.0,True,,,102,0.747,0.747,0.906,82,True
+Yell,,20.0,True,,,102,0.747,0.747,0.906,82,True
+ʻEua,'Eua | Eua (Tonga),17.663,False,,,102,0.747,0.747,0.906,82,True
+Adelsö,,20.0,True,,,96,0.77,0.77,0.911,83,True
+Aguijan,Aguijã,20.0,True,,,90,0.776,0.776,0.911,83,True
+Ashurada,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Babeldaob,Ilha Babeldaob,9.483,False,,,84,0.788,0.788,0.911,83,True
+Batanta,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Burgazada,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Fonuafo'ou,,20.0,True,,,102,0.784,0.784,0.911,83,True
+Gardner Pinnacles,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Goeree-Overflakkee,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Guguan,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Gyali,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Herrenchiemsee,Herreninsel,20.0,True,,,90,0.776,0.776,0.911,83,True
+Hinnøya,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Ilha Astor,Astor,9.483,False,,,30,0.78,0.78,0.911,83,True
+Ilha Balcha,Balcha,9.483,False,,,36,0.767,0.767,0.911,83,True
+Ilha Hendrik,Hendrik,9.483,False,,,18,0.784,0.784,0.911,83,True
+Ilha Hoseason,Hoseason,9.483,False,,,24,0.779,0.779,0.911,83,True
+Ilha Hovgaard,Hovgaard,9.483,False,,,24,0.779,0.779,0.911,83,True
+Ilha Mancera,Mancera,9.483,False,,,30,0.78,0.78,0.911,83,True
+Ilha Maria Catoré,Maria Catoré,8.904,False,,,96,0.773,0.773,0.911,83,True
+Ilha Ouellette,Ouellette,9.483,False,,,36,0.767,0.767,0.911,83,True
+Ilha Pasarel,Pasarel,9.483,False,,,30,0.767,0.767,0.911,83,True
+Ilha Smyley,Smyley,9.483,False,,,18,0.77,0.77,0.911,83,True
+Ilha Tatul,Tatul,9.483,False,,,36,0.767,0.767,0.911,83,True
+Ilha Valchedram,Valchedram,9.483,False,,,30,0.78,0.78,0.911,83,True
+Ilha da Murta,Murta,11.722,False,,,102,0.779,0.779,0.911,83,True
+Ilha da Vaca,Vaca,10.406,False,,,114,0.782,0.782,0.911,83,True
+Ilha de Borradaile,Borradaile,9.483,False,,,24,0.768,0.768,0.911,83,True
+Ilha de Marchena,Ilha Marchena | Ilha de Bindloe | Marchena | Bindloe,9.483,False,,,18,0.761,0.761,0.911,83,True
+Ilha do Taquari,Taquari,11.467,False,,,84,0.761,0.761,0.911,83,True
+Ilha dos Negros,,10.0,False,,,84,0.769,0.769,0.911,83,True
+Ilhéu Comprido,Comprido,13.388,False,,,96,0.792,0.792,0.911,83,True
+Isla del Rey,,11.144,False,,,30,0.771,0.771,0.911,83,True
+Jata,,21.65,False,,,168,0.771,0.771,0.911,83,True
+Jukdo,,20.0,True,,,90,0.782,0.782,0.911,83,True
+Kaashidhoo,,20.0,True,,,108,0.783,0.783,0.911,83,True
+Kao,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Kınalıada,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Langeland,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Levitha,Lebinto,20.0,True,,,84,0.788,0.788,0.911,83,True
+Lihir,Niolam | Ilhas Lihir,10.766,False,,,84,0.788,0.788,0.911,83,True
+Mali Kyun,,13.284,False,,,60,0.772,0.772,0.911,83,True
+Manam,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Marakei,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Mataiva,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Matemo,,20.0,True,,,156,0.768,0.768,0.911,83,True
+Mehetia,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Muarraque,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Murter,Mortero | Morter,20.0,True,,,84,0.788,0.788,0.911,83,True
+North Uist,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Obira,Utara | Obi,20.0,True,,,84,0.788,0.788,0.911,83,True
+Paama,,20.0,True,,,90,0.782,0.782,0.911,83,True
+Papa Elise,,10.025,False,,,42,0.771,0.771,0.911,83,True
+Piperi,,20.032,False,,,84,0.77,0.77,0.911,83,True
+Pontikonisi,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Pulau Tiga,,15.979,False,,,66,0.768,0.768,0.911,83,True
+Raivavae,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Romang,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Sanana,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Savu,Sawu,20.0,True,,,90,0.776,0.776,0.911,83,True
+Schouwen-Duiveland,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Sebatik,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Silba,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Stora Karlsö,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Uunartoq Qeqertaq,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Vaindloo,Ilha de vaindloo,9.483,False,,,84,0.788,0.788,0.911,83,True
+Vatersay,,20.0,True,,,84,0.788,0.788,0.911,83,True
+Vella Lavella,,20.0,True,,,96,0.761,0.761,0.911,83,True
+Yos Sudarso,Ilha de Yos Sudarso,9.483,False,,,96,0.761,0.761,0.911,83,True
+Île de Bagaud,,14.206,False,,,72,0.783,0.783,0.911,83,True
+Žirje,,20.0,True,,,90,0.776,0.776,0.911,83,True
+Aegna,,20.0,True,,,78,0.804,0.804,0.917,84,True
+Alimia,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Amatuku,,20.0,True,,,90,0.81,0.81,0.917,84,True
+Ascrib do Sul,,8.026,False,,,42,0.8,0.8,0.917,84,True
+Bacan,Bachão,20.0,True,,,72,0.819,0.819,0.917,84,True
+Bangkok/Rattanakosin,Ilha de Rattanakosin | Rattanakosin,9.483,False,,,72,0.819,0.819,0.917,84,True
+Cabo Rojo,,11.645,False,,,60,0.799,0.799,0.917,84,True
+Cayo Samaná,,20.0,True,,,108,0.797,0.797,0.917,84,True
+Christiansø,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Cébaco,,20.0,True,,,162,0.794,0.794,0.917,84,True
+Daebudo,,20.0,True,,,108,0.809,0.809,0.917,84,True
+Eldey,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Emae,,20.0,True,,,78,0.804,0.804,0.917,84,True
+Frösön,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Gavdopoula,Gavdopula,20.0,True,,,72,0.819,0.819,0.917,84,True
+Geirfuglasker,,20.0,True,,,126,0.794,0.794,0.917,84,True
+Grosse Île,,14.206,False,,,54,0.814,0.814,0.917,84,True
+Hallands Väderö,,20.0,True,,,138,0.807,0.807,0.917,84,True
+Ilha Astrolabe,Astrolabe,9.483,False,,,18,0.815,0.815,0.917,84,True
+Ilha Auriat,Auriat,9.483,False,,,30,0.797,0.797,0.917,84,True
+Ilha Broughton,Broughton,9.483,False,,,30,0.797,0.797,0.917,84,True
+Ilha Crown Prince Frederik,Crown Prince Frederik,9.483,False,,,24,0.823,0.823,0.917,84,True
+Ilha Gerlache,Gerlache,9.483,False,,,24,0.823,0.823,0.917,84,True
+Ilha Guaraqueçaba,Guaraqueçaba,12.37,False,,,102,0.795,0.795,0.917,84,True
+Ilha Itaguaçu,Itaguaçu,12.129,False,,,78,0.796,0.796,0.917,84,True
+Ilha Korsis,Korsis,9.483,False,,,48,0.813,0.813,0.917,84,True
+Ilha Linguanea,Linguanea,9.483,False,,,36,0.808,0.808,0.917,84,True
+Ilha Melville,Melville,9.483,False,,,30,0.797,0.797,0.917,84,True
+Ilha Modo,Modo,8.937,False,,,36,0.819,0.819,0.917,84,True
+Ilha Ndrova,Ndrova,9.483,False,,,48,0.813,0.813,0.917,84,True
+Ilha Pio,Pio,10.66,False,,,54,0.793,0.793,0.917,84,True
+Ilha Sido,Sido,8.859,False,,,30,0.8,0.8,0.917,84,True
+Ilha Sutwik,Sutwik,9.483,False,,,42,0.807,0.807,0.917,84,True
+Ilha Uummannaq,Ilha de Uummannaq | Uummannaq,9.483,False,,,42,0.807,0.807,0.917,84,True
+Ilha Viraponga,Viraponga,9.483,False,,,66,0.799,0.799,0.917,84,True
+Ilha da Barra,,9.524,False,,,54,0.795,0.795,0.917,84,True
+Ilha da Batalha,Batalha,9.765,False,,,54,0.8,0.8,0.917,84,True
+Ilha das Tartarugas,Ilha do Farol | Tartarugas,9.483,False,,,84,0.813,0.813,0.917,84,True
+Ilha das Vinhas,Vinhas,11.148,False,,,78,0.812,0.812,0.917,84,True
+Ilha do Veado,Veado,11.417,False,,,72,0.793,0.793,0.917,84,True
+Ilha dos Araújos de Fora,Araújos de Fora,11.023,False,,,78,0.809,0.809,0.917,84,True
+Ilhas Benkove,Benkove,10.766,False,,,36,0.815,0.815,0.917,84,True
+Iturup,,20.0,True,,,774,0.812,0.812,0.917,84,True
+Kabaena,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Kataja,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Kinaros,,20.0,True,,,78,0.81,0.81,0.917,84,True
+Kisar,,20.0,True,,,78,0.804,0.804,0.917,84,True
+Lehua,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Ljusterö,,20.0,True,,,84,0.795,0.795,0.917,84,True
+Læsø,Laeso,20.0,True,,,78,0.804,0.804,0.917,84,True
+Mingulay,,20.0,True,,,78,0.81,0.81,0.917,84,True
+Moore's Island,,20.0,True,,,78,0.804,0.804,0.917,84,True
+Nikunau,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Nootamaa,Ilha de Nootamaa,9.483,False,,,72,0.819,0.819,0.917,84,True
+Rendova,,20.0,True,,,78,0.804,0.804,0.917,84,True
+Rochedo Hetty,,13.519,False,,,54,0.797,0.797,0.917,84,True
+Rochedo Telish,,13.519,False,,,48,0.801,0.801,0.917,84,True
+Rochedo Vietor,,13.519,False,,,54,0.797,0.797,0.917,84,True
+Sriharikota,,20.0,True,,,78,0.804,0.804,0.917,84,True
+Sula,"Sula, Sogn og Fjordane",14.268,False,,,48,0.807,0.807,0.917,84,True
+Takapoto,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Temoe,,20.0,True,,,90,0.792,0.792,0.917,84,True
+Tetepare,,20.0,True,,,84,0.824,0.824,0.917,84,True
+Torsö,,14.518,False,,,30,0.808,0.808,0.917,84,True
+Vinga,,14.173,False,,,42,0.801,0.801,0.917,84,True
+Värmdö,,20.0,True,,,78,0.804,0.804,0.917,84,True
+Woodlark,,20.0,True,,,72,0.819,0.819,0.917,84,True
+Yamdena,,20.0,True,,,78,0.804,0.804,0.917,84,True
+Yapen,Jóbi,20.0,True,,,72,0.819,0.819,0.917,84,True
+Æbelø,,20.0,True,,,90,0.81,0.81,0.917,84,True
+Abagaitu,,20.0,True,,,84,0.853,0.853,0.922,85,True
+Ahnd,Atol de Ant | Ant,14.602,False,,,66,0.839,0.839,0.922,85,True
+Als,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Ambitle,,20.0,True,,,66,0.843,0.843,0.922,85,True
+Aranuka,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Armathia,,20.0,True,,,60,0.855,0.855,0.922,85,True
+Austra,,20.0,True,,,84,0.853,0.853,0.922,85,True
+Bitra,,20.0,True,,,78,0.853,0.853,0.922,85,True
+Bressay,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Calf of Man,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Car Nicobar,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Cayo Francisquí,,20.0,True,,,204,0.851,0.851,0.922,85,True
+Chacachacare,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Cretaccio,,20.0,True,,,138,0.825,0.825,0.922,85,True
+Daecheongdo,,20.0,True,,,84,0.829,0.829,0.922,85,True
+Dyaul,,20.0,True,,,96,0.842,0.842,0.922,85,True
+Eiao,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Elbow Cay,,20.0,True,,,96,0.827,0.827,0.922,85,True
+Fale Fatu,,10.01,False,,,24,0.833,0.833,0.922,85,True
+Fejø,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Flores,,9.468,False,,,0,0.838,0.838,0.922,85,True
+Foa,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Fotuha'a,,20.0,True,,,84,0.856,0.856,0.922,85,True
+Futuna,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Gräsö,Gräsö gård,20.0,True,,,60,0.847,0.847,0.922,85,True
+Gröde,,21.13,False,,,60,0.852,0.852,0.922,85,True
+Haʻano,,20.0,True,,,90,0.828,0.828,0.922,85,True
+Hogland,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Ilha Brampton,Brampton,9.483,False,,,18,0.841,0.841,0.922,85,True
+Ilha Craney,Ilha Craney (Virgínia) | Craney,9.483,False,,,30,0.839,0.839,0.922,85,True
+Ilha Cub,Cub,9.483,False,,,30,0.854,0.854,0.922,85,True
+Ilha Itacaruaré Grande,Itacaruaré Grande,8.235,False,,,36,0.829,0.829,0.922,85,True
+Ilha Nipisat,Nipisat,9.483,False,,,12,0.833,0.833,0.922,85,True
+Ilha Rongé,Rongé,9.483,False,,,18,0.841,0.841,0.922,85,True
+Ilha Trundy,Trundy,9.483,False,,,24,0.838,0.838,0.922,85,True
+Ilha Winter,Winter,9.483,False,,,30,0.839,0.839,0.922,85,True
+Ilha de Maritaca,Ilha de Maritataca | Maritaca | Maritataca,12.618,False,,,120,0.827,0.827,0.922,85,True
+Ilha de Tupinambarana,,13.528,False,,,0,0.838,0.838,0.922,85,True
+Ilha do Itanduba,Ilha de Itanduba | Itanduba,9.483,False,,,36,0.854,0.854,0.922,85,True
+Ilha do Maracujá,Maracujá,10.894,False,,,60,0.847,0.847,0.922,85,True
+Ilha dos Araújos de Dentro,Araújos de Dentro,10.966,False,,,60,0.852,0.852,0.922,85,True
+Ilhéu Alagado,Ilhéu Alagado (Santa Cruz das Flores) | Alagado,14.692,False,,,108,0.842,0.842,0.922,85,True
+Ilhéu Catarino,Catarino,14.409,False,,,114,0.826,0.826,0.922,85,True
+Ingarö,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Inishtrahull,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Karakelong,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Key Vaca,,11.329,False,,,42,0.826,0.826,0.922,85,True
+Kwakéa,,20.0,True,,,114,0.841,0.841,0.922,85,True
+Laut,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Lilla Karlsö,,20.0,True,,,78,0.825,0.825,0.922,85,True
+Matureivavao,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Noemfoor,Numfor,20.0,True,,,66,0.833,0.833,0.922,85,True
+Nomans Land,,20.0,True,,,108,0.837,0.837,0.922,85,True
+Pikelot,,20.0,True,,,84,0.829,0.829,0.922,85,True
+Pulau Brani,,20.0,True,,,78,0.837,0.837,0.922,85,True
+Punta Cires,,20.0,True,,,102,0.854,0.854,0.922,85,True
+Rochedo Lumus,,13.519,False,,,36,0.851,0.851,0.922,85,True
+Ronay,,20.0,True,,,90,0.828,0.828,0.922,85,True
+Shikine-jima,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Siberut,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Sibuyan,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Tamana,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Tanahbesar,,20.0,True,,,66,0.839,0.839,0.922,85,True
+Telendos,,20.0,True,,,60,0.847,0.847,0.922,85,True
+Tinakula,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Umm Nassam,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Vangunu,,20.0,True,,,66,0.833,0.833,0.922,85,True
+Vasafua,,20.0,True,,,78,0.843,0.843,0.922,85,True
+Väddö och Björkö,,20.0,True,,,84,0.824,0.824,0.922,85,True
+Ward's Island,,20.0,True,,,78,0.825,0.825,0.922,85,True
+Yakushima,,20.0,True,,,684,0.825,0.825,0.922,85,True
+Aneytium,Anatom,20.0,True,,,48,0.876,0.876,0.927,86,True
+Avşa,,20.0,True,,,48,0.876,0.876,0.927,86,True
+Baleshare,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Baliceaux,,20.0,True,,,54,0.887,0.887,0.927,86,True
+Bolga,,20.0,True,,,90,0.857,0.857,0.927,86,True
+Bolshoy Lyakhovsky,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Boundary Islet,,20.0,True,,,84,0.887,0.887,0.927,86,True
+Bowen Island,,20.0,True,,,78,0.886,0.886,0.927,86,True
+Brännö,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Cayo Rocoso,,20.0,True,,,120,0.874,0.874,0.927,86,True
+Chergui,,20.0,True,,,60,0.866,0.866,0.927,86,True
+Chilov,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Crevichon,,20.0,True,,,66,0.868,0.868,0.927,86,True
+Drangey,,20.0,True,,,48,0.876,0.876,0.927,86,True
+East Island,,20.0,True,,,108,0.872,0.872,0.927,86,True
+Fatutaka,,20.0,True,,,48,0.885,0.885,0.927,86,True
+"Flatey, Skjálfandi",,20.0,True,,,48,0.885,0.885,0.927,86,True
+Frøya i Sør-Trøndela,Frøya i Trøndelag,20.0,True,,,96,0.873,0.873,0.927,86,True
+Gharbi,,20.0,True,,,60,0.869,0.869,0.927,86,True
+Hauido,,20.0,True,,,96,0.873,0.873,0.927,86,True
+Heuksando,,20.0,True,,,60,0.866,0.866,0.927,86,True
+Ilha Calicoan,Calicoan,9.483,False,,,18,0.857,0.857,0.927,86,True
+Ilha Dent,Dent,9.483,False,,,18,0.884,0.884,0.927,86,True
+Ilha Os Irmãos,Os Irmãos,9.566,False,,,24,0.885,0.885,0.927,86,True
+Ilha Withem,Withem,9.483,False,,,18,0.871,0.871,0.927,86,True
+Ilha de Tebing Tinggi,Tebing Tinggi,9.483,False,,,12,0.867,0.867,0.927,86,True
+Ilha do Baiacu,Baiacu,12.476,False,,,66,0.867,0.867,0.927,86,True
+Ilha do Quiriri,Quiriri,13.101,False,,,66,0.874,0.874,0.927,86,True
+Ilha do Veiga,Veiga,10.779,False,,,42,0.862,0.862,0.927,86,True
+Ilha dos Araújos do Meio,Araújos do Meio,10.831,False,,,48,0.873,0.873,0.927,86,True
+Ilhota Cala Iris,Cala Iris,12.614,False,,,30,0.879,0.879,0.927,86,True
+Ilhéu das Gaivotas,Ilhéu da Gaivota | Gaivotas | Gaivota,14.571,False,,,126,0.862,0.862,0.927,86,True
+Kai Besar,,20.0,True,,,54,0.876,0.876,0.927,86,True
+Kioa,,20.0,True,,,54,0.883,0.883,0.927,86,True
+Kirkibost,,20.0,True,,,72,0.886,0.886,0.927,86,True
+Ko Chang,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Koh Kong,,20.0,True,,,60,0.866,0.866,0.927,86,True
+Kållandsö,,20.0,True,,,48,0.876,0.876,0.927,86,True
+Lampacau,Long-pa-kao | Lanpetan | Lanpacan | Langpetsao | Lan-pai-kao | Lampetao | Lampecou | Lampchào | Lampassau | Lampaço | Lampachan | Lampação | Lampacam | Lamapzan | Lamapacào | Lam Puk,10.338,False,,,114,0.882,0.882,0.927,86,True
+Latham,,20.0,True,,,66,0.881,0.881,0.927,86,True
+Lidingö,,20.0,True,,,78,0.886,0.886,0.927,86,True
+Maewo,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Megijima,,20.0,True,,,66,0.881,0.881,0.927,86,True
+Minnajima,Minna,20.0,True,,,78,0.857,0.857,0.927,86,True
+Moala,,20.0,True,,,48,0.879,0.879,0.927,86,True
+Motufetau,,20.0,True,,,90,0.857,0.857,0.927,86,True
+Mouchão do Malagueiro Grande,,14.507,False,,,84,0.87,0.87,0.927,86,True
+Munkholmen,,20.0,True,,,48,0.876,0.876,0.927,86,True
+Nahaleg,Nora,12.371,False,,,48,0.876,0.876,0.927,86,True
+Nomuka,,20.0,True,,,48,0.887,0.887,0.927,86,True
+Ornö,,17.271,False,,,42,0.858,0.858,0.927,86,True
+Pulau Perak,,20.0,True,,,54,0.883,0.883,0.927,86,True
+Rambutyo,Ilha Rambutyo,9.483,False,,,66,0.881,0.881,0.927,86,True
+Rossøya,,20.0,True,,,54,0.87,0.87,0.927,86,True
+Rubane,,20.0,True,,,120,0.857,0.857,0.927,86,True
+Sakar,,20.0,True,,,66,0.868,0.868,0.927,86,True
+"Scalpay, Outer Hebrides",,20.0,True,,,54,0.862,0.862,0.927,86,True
+Selaru,,20.0,True,,,54,0.883,0.883,0.927,86,True
+Shapinsay,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Sikinos,Sícino,22.033,False,,,54,0.862,0.862,0.927,86,True
+Silmido,,20.0,True,,,60,0.869,0.869,0.927,86,True
+Skeppsholmen,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Tahaa,,20.0,True,,,54,0.87,0.87,0.927,86,True
+Tenarunga,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Tintamarre,,20.0,True,,,60,0.878,0.878,0.927,86,True
+Tjörn,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Totoya,,20.0,True,,,84,0.869,0.869,0.927,86,True
+Tustna,,20.0,True,,,48,0.879,0.879,0.927,86,True
+Vahanga,,20.0,True,,,54,0.862,0.862,0.927,86,True
+Wallops Island,Ilha Wallops | Wallops,9.483,False,,,66,0.872,0.872,0.927,86,True
+Wiay,"Wiay, Uist",20.0,True,,,66,0.881,0.881,0.927,86,True
+Afognak,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Anmyeondo,,20.0,True,,,48,0.908,0.908,0.933,87,True
+Anuanurunga,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Auskerry,,20.0,True,,,36,0.905,0.905,0.933,87,True
+Avalau,,20.0,True,,,60,0.898,0.898,0.933,87,True
+Biketawa,,20.0,True,,,54,0.916,0.916,0.933,87,True
+Bolmsö,,20.0,True,,,42,0.914,0.914,0.933,87,True
+Calvay,,20.0,True,,,54,0.909,0.909,0.933,87,True
+Canna,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Cousine,,20.0,True,,,48,0.901,0.901,0.933,87,True
+Dauan,,20.0,True,,,66,0.914,0.914,0.933,87,True
+Etajima,,20.0,True,,,48,0.912,0.912,0.933,87,True
+Flodaigh,,20.0,True,,,48,0.918,0.918,0.933,87,True
+Forcada,,16.604,False,,,108,0.911,0.911,0.933,87,True
+Grand Cay,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Greifswalder Oie,,20.0,True,,,42,0.899,0.899,0.933,87,True
+Hertsön,,20.0,True,,,54,0.902,0.902,0.933,87,True
+Hobulaid,,20.0,True,,,48,0.901,0.901,0.933,87,True
+Ilha Chafariz,Chafariz,11.569,False,,,30,0.911,0.911,0.933,87,True
+Ilha Fridolinho,Ilha de Fridolinho | Ilha Fridolin | Fridolinho | Fridolin,9.483,False,,,18,0.912,0.912,0.933,87,True
+Ilha Pleneau,Pleneau,9.483,False,,,12,0.896,0.896,0.933,87,True
+Ilha Shannon,Shannon,9.483,False,,,6,0.908,0.908,0.933,87,True
+Ilha Svetulka,Svetulka,9.483,False,,,12,0.92,0.92,0.933,87,True
+Ilha São Bento do Surrão,São Bento do Surrão,10.69,False,,,30,0.918,0.918,0.933,87,True
+Ilha da Sepultura,Sepultura,11.0,False,,,54,0.899,0.899,0.933,87,True
+Inishark,,20.0,True,,,36,0.917,0.917,0.933,87,True
+Innarahu,,20.0,True,,,66,0.897,0.897,0.933,87,True
+Jøa,,20.0,True,,,48,0.912,0.912,0.933,87,True
+Kapuiviit,Ilha Jens Munk | Jens Munk,9.483,False,,,36,0.905,0.905,0.933,87,True
+Kitadaitojima,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Koiluoto,,20.0,True,,,36,0.905,0.905,0.933,87,True
+Komoran,,20.0,True,,,36,0.914,0.914,0.933,87,True
+Kongo Loto Lafanga,,14.448,False,,,24,0.909,0.909,0.933,87,True
+Kuria,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Lade,,20.0,True,,,78,0.897,0.897,0.933,87,True
+Magerøya,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Meloria,,20.0,True,,,36,0.917,0.917,0.933,87,True
+Moskenesøya,,20.0,True,,,36,0.905,0.905,0.933,87,True
+Nacula,,20.0,True,,,60,0.892,0.892,0.933,87,True
+Natuna Besar,,20.0,True,,,36,0.905,0.905,0.933,87,True
+Noogimaa,,20.0,True,,,48,0.918,0.918,0.933,87,True
+Pabbay,,20.0,True,,,42,0.91,0.91,0.933,87,True
+Pakin,,20.0,True,,,36,0.914,0.914,0.933,87,True
+Peleng,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Pirotan,,20.0,True,,,54,0.902,0.902,0.933,87,True
+Prins Karls Forland,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Prote,Proti,20.0,True,,,48,0.908,0.908,0.933,87,True
+Psyttaleia,Psitaleia,20.0,True,,,42,0.892,0.892,0.933,87,True
+Ranongga,,20.0,True,,,42,0.899,0.899,0.933,87,True
+Rochedo Liberty,,13.519,False,,,24,0.903,0.903,0.933,87,True
+Rochedo Sooty,,13.519,False,,,24,0.903,0.903,0.933,87,True
+Rochedos Éden,,12.937,False,,,18,0.904,0.904,0.933,87,True
+Rupat,,20.0,True,,,36,0.914,0.914,0.933,87,True
+Selaön,,20.0,True,,,36,0.917,0.917,0.933,87,True
+Semau,,20.0,True,,,42,0.918,0.918,0.933,87,True
+Siquijor,,20.0,True,,,90,0.905,0.905,0.933,87,True
+Sitrah,Sitra,20.0,True,,,42,0.892,0.892,0.933,87,True
+Soisalo,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Suluan,,20.0,True,,,78,0.909,0.909,0.933,87,True
+Svartsö,,20.0,True,,,60,0.905,0.905,0.933,87,True
+Taliabu,,20.0,True,,,54,0.896,0.896,0.933,87,True
+Tenararo,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Tepuka Vili Vili,,16.898,False,,,30,0.919,0.919,0.933,87,True
+Tiengemeten,,20.0,True,,,42,0.899,0.899,0.933,87,True
+Trangan,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Udone-shima,,20.0,True,,,54,0.902,0.902,0.933,87,True
+Uea,,20.0,True,,,60,0.898,0.898,0.933,87,True
+Uréparapara,,20.0,True,,,42,0.892,0.892,0.933,87,True
+Vallay,,20.0,True,,,60,0.892,0.892,0.933,87,True
+Vonavona,,20.0,True,,,60,0.914,0.914,0.933,87,True
+Wowoni,,20.0,True,,,36,0.91,0.91,0.933,87,True
+A Ilha,,20.0,True,,,90,0.936,0.936,0.938,88,True
+Alnön,,20.0,True,,,30,0.94,0.94,0.938,88,True
+Barren Island,,20.0,True,,,48,0.935,0.935,0.938,88,True
+Bikeman,,20.0,True,,,36,0.949,0.949,0.938,88,True
+Brattøya,,20.0,True,,,42,0.951,0.951,0.938,88,True
+Buariki,,20.0,True,,,48,0.927,0.927,0.938,88,True
+Caquorobert,,20.0,True,,,54,0.933,0.933,0.938,88,True
+Danskøya,,20.0,True,,,24,0.942,0.942,0.938,88,True
+Ekerön,,20.0,True,,,42,0.946,0.946,0.938,88,True
+Faaite,,20.0,True,,,30,0.924,0.924,0.938,88,True
+Faiava Lasi,,20.0,True,,,42,0.946,0.946,0.938,88,True
+Falaoigo,,20.0,True,,,42,0.933,0.933,0.938,88,True
+Fuafatu,,20.0,True,,,36,0.944,0.944,0.938,88,True
+Fualefeke,,20.0,True,,,36,0.949,0.949,0.938,88,True
+Fualopa,,20.0,True,,,54,0.924,0.924,0.938,88,True
+Färingsö,,20.0,True,,,36,0.93,0.93,0.938,88,True
+Gageodo,,20.0,True,,,36,0.93,0.93,0.938,88,True
+Handnesøya,,20.0,True,,,36,0.944,0.944,0.938,88,True
+Hawadax,,20.0,True,,,30,0.931,0.931,0.938,88,True
+Ilha Condor,Condor,11.216,False,,,24,0.926,0.926,0.938,88,True
+Ilha Gombrani,Gombrani,9.483,False,,,24,0.921,0.921,0.938,88,True
+Ilha Guriri,,12.468,False,,,24,0.941,0.941,0.938,88,True
+Ilha de Adiljevaz,Adiljevaz,9.483,False,,,24,0.921,0.921,0.938,88,True
+Ilha do Rabelo,Rabelo,11.236,False,,,18,0.948,0.948,0.938,88,True
+Jeløya,,20.0,True,,,36,0.934,0.934,0.938,88,True
+Kachchatheevu,,20.0,True,,,42,0.933,0.933,0.938,88,True
+Kadan Kyun,,20.0,True,,,36,0.94,0.94,0.938,88,True
+Kirkkokari,,20.0,True,,,42,0.938,0.938,0.938,88,True
+Kirkøy,,20.0,True,,,30,0.943,0.943,0.938,88,True
+Kohinggo,,20.0,True,,,48,0.927,0.927,0.938,88,True
+Ligitan,,20.0,True,,,30,0.936,0.936,0.938,88,True
+Luigerahu,,20.0,True,,,54,0.942,0.942,0.938,88,True
+Lundey,,20.0,True,,,36,0.921,0.921,0.938,88,True
+Masbate,,20.0,True,,,30,0.924,0.924,0.938,88,True
+Matanukulaelae,,20.0,True,,,54,0.933,0.933,0.938,88,True
+Mateika,,20.0,True,,,42,0.946,0.946,0.938,88,True
+Meang,,20.0,True,,,42,0.938,0.938,0.938,88,True
+Merig,,20.0,True,,,30,0.931,0.931,0.938,88,True
+Monhegan,,20.0,True,,,24,0.948,0.948,0.938,88,True
+Motugie,,20.0,True,,,42,0.938,0.938,0.938,88,True
+Motulalo,,20.0,True,,,42,0.946,0.946,0.938,88,True
+Muckle Flugga,,20.0,True,,,30,0.924,0.924,0.938,88,True
+Muko-jima,,20.0,True,,,48,0.927,0.927,0.938,88,True
+Munaderahu,,20.0,True,,,72,0.928,0.928,0.938,88,True
+Namotu,,20.0,True,,,66,0.947,0.947,0.938,88,True
+Neduntivu,,20.0,True,,,36,0.93,0.93,0.938,88,True
+Oosäär,,20.0,True,,,54,0.924,0.924,0.938,88,True
+Polillo,,20.0,True,,,30,0.924,0.924,0.938,88,True
+Pongalei,,20.0,True,,,36,0.944,0.944,0.938,88,True
+Ravahere,,20.0,True,,,24,0.942,0.942,0.938,88,True
+Recifes Indispensáveis,,20.0,True,,,42,0.938,0.938,0.938,88,True
+Rochedo Belchin,,13.519,False,,,18,0.92,0.92,0.938,88,True
+Rochedo Grace,,13.519,False,,,18,0.931,0.931,0.938,88,True
+Rochedo Henfield,,13.519,False,,,12,0.951,0.951,0.938,88,True
+Rochedos Bowler,,20.0,True,,,42,0.951,0.951,0.938,88,True
+Rochedos Lientur,,20.0,True,,,54,0.933,0.933,0.938,88,True
+Sakalua,,20.0,True,,,42,0.938,0.938,0.938,88,True
+Savave,,20.0,True,,,30,0.94,0.94,0.938,88,True
+Schnäggeninseli,,20.0,True,,,54,0.95,0.95,0.938,88,True
+Scotland Island,,20.0,True,,,42,0.938,0.938,0.938,88,True
+Siyyan Himar,,20.0,True,,,60,0.921,0.921,0.938,88,True
+Skarø,,20.0,True,,,42,0.926,0.926,0.938,88,True
+Takaeang,,20.0,True,,,36,0.949,0.949,0.938,88,True
+Talalolae,,20.0,True,,,42,0.938,0.938,0.938,88,True
+Teafuaniua,,20.0,True,,,42,0.946,0.946,0.938,88,True
+Telele,,20.0,True,,,48,0.935,0.935,0.938,88,True
+Tofia,,20.0,True,,,72,0.928,0.928,0.938,88,True
+Tongoa,,20.0,True,,,30,0.943,0.943,0.938,88,True
+Veøya,,20.0,True,,,54,0.924,0.924,0.938,88,True
+Vulf,,20.0,True,,,36,0.93,0.93,0.938,88,True
+Abatao,,20.0,True,,,36,0.978,0.978,0.943,89,True
+Anmado,,20.0,True,,,36,0.964,0.964,0.943,89,True
+Aranaí,,20.0,True,,,66,0.985,0.985,0.943,89,True
+Bremangerlandet,,20.0,True,,,18,0.971,0.971,0.943,89,True
+Cayo Sabinal,,20.0,True,,,24,0.959,0.959,0.943,89,True
+Conception,,20.0,True,,,36,0.964,0.964,0.943,89,True
+Cooks,,20.0,True,,,54,0.962,0.962,0.943,89,True
+Dugumenu,,20.0,True,,,72,0.954,0.954,0.943,89,True
+Fatato,,20.0,True,,,30,0.964,0.964,0.943,89,True
+Fenua Tapu,,20.0,True,,,30,0.953,0.953,0.943,89,True
+Fuagea,,20.0,True,,,36,0.956,0.956,0.943,89,True
+Funamanu,,20.0,True,,,30,0.973,0.973,0.943,89,True
+Funaota,,20.0,True,,,18,0.981,0.981,0.943,89,True
+Gjerøy,,20.0,True,,,36,0.956,0.956,0.943,89,True
+Hammarön,,20.0,True,,,42,0.968,0.968,0.943,89,True
+Harstena,,20.0,True,,,30,0.979,0.979,0.943,89,True
+Ilha Auaí,Auaí,15.364,False,,,36,0.979,0.979,0.943,89,True
+Ilhas do Capim,Capim,11.472,False,,,30,0.955,0.955,0.943,89,True
+Jazirat Ziadi,,20.0,True,,,60,0.954,0.954,0.943,89,True
+Jones Island,,20.0,True,,,42,0.976,0.976,0.943,89,True
+Kakarajima,,20.0,True,,,30,0.979,0.979,0.943,89,True
+Kamome,,20.0,True,,,24,0.959,0.959,0.943,89,True
+Kanditheemu,,20.0,True,,,30,0.97,0.97,0.943,89,True
+Kayts,Tanadiva | Cais,11.937,False,,,42,0.976,0.976,0.943,89,True
+Knarrholmen,,20.0,True,,,36,0.964,0.964,0.943,89,True
+Köpstadsö,,20.0,True,,,30,0.973,0.973,0.943,89,True
+Lefogaki,,20.0,True,,,36,0.971,0.971,0.943,89,True
+Lhohi,Lhohi (Dhaalu Atoll),20.0,True,,,60,0.954,0.954,0.943,89,True
+Lido,,10.589,False,,,0,0.983,0.983,0.943,89,True
+Luasamotu,,20.0,True,,,42,0.968,0.968,0.943,89,True
+Matuku,,20.0,True,,,24,0.98,0.98,0.943,89,True
+Motupuakaka,,20.0,True,,,24,0.974,0.974,0.943,89,True
+Mulitefala,,20.0,True,,,30,0.964,0.964,0.943,89,True
+Niualuka,,20.0,True,,,30,0.982,0.982,0.943,89,True
+Niuatui,,20.0,True,,,36,0.964,0.964,0.943,89,True
+Notoua,,20.0,True,,,42,0.968,0.968,0.943,89,True
+Nukusavalevale,,20.0,True,,,36,0.978,0.978,0.943,89,True
+Nåttarö,,20.0,True,,,36,0.978,0.978,0.943,89,True
+Ovaka,,20.0,True,,,30,0.97,0.97,0.943,89,True
+Pakantou,,20.0,True,,,24,0.974,0.974,0.943,89,True
+Pukasavilivili,,20.0,True,,,48,0.971,0.971,0.943,89,True
+Rochedo Caraquet,,13.519,False,,,12,0.957,0.957,0.943,89,True
+Rochedos Koynare,,20.0,True,,,42,0.968,0.968,0.943,89,True
+Rochedos Opaka,,20.0,True,,,36,0.978,0.978,0.943,89,True
+Rochedos Sally,,20.0,True,,,30,0.973,0.973,0.943,89,True
+Saaranpaskantamasaari,,20.0,True,,,24,0.966,0.966,0.943,89,True
+Sangeang,,20.0,True,,,30,0.957,0.957,0.943,89,True
+Seonyudo,,20.0,True,,,42,0.96,0.96,0.943,89,True
+Sinjido,,20.0,True,,,24,0.98,0.98,0.943,89,True
+Skerryvore,,20.0,True,,,24,0.966,0.966,0.943,89,True
+Sääminginsalo,,20.0,True,,,30,0.953,0.953,0.943,89,True
+Tanna,,20.0,True,,,138,0.962,0.962,0.943,89,True
+Teafatule,,20.0,True,,,42,0.96,0.96,0.943,89,True
+Teafuanonu,,20.0,True,,,42,0.96,0.96,0.943,89,True
+Teafuone,,20.0,True,,,24,0.982,0.982,0.943,89,True
+Teatua a Taepoa,,20.0,True,,,42,0.96,0.96,0.943,89,True
+Tefala,,20.0,True,,,18,0.983,0.983,0.943,89,True
+Temotu,,20.0,True,,,36,0.981,0.981,0.943,89,True
+Temotufoliki,,20.0,True,,,36,0.956,0.956,0.943,89,True
+Temotuloto,,20.0,True,,,24,0.974,0.974,0.943,89,True
+Tengasu,,20.0,True,,,30,0.973,0.973,0.943,89,True
+Tepuka,,20.0,True,,,30,0.953,0.953,0.943,89,True
+Tokinivae,,20.0,True,,,24,0.974,0.974,0.943,89,True
+Tutanga,,20.0,True,,,30,0.964,0.964,0.943,89,True
+Tuần Châu,,14.902,False,,,12,0.967,0.967,0.943,89,True
+Téviec,,20.0,True,,,24,0.959,0.959,0.943,89,True
+Unimai,,20.0,True,,,30,0.964,0.964,0.943,89,True
+Uulutilaid,,20.0,True,,,42,0.951,0.951,0.943,89,True
+Väike Siimurahu,,20.0,True,,,48,0.959,0.959,0.943,89,True
+Öckerö,,20.0,True,,,42,0.976,0.976,0.943,89,True
+Örskär,,20.0,True,,,30,0.97,0.97,0.943,89,True
+Ammerön,,20.0,True,,,18,0.988,0.988,0.949,90,True
+Bjørnø,,20.0,True,,,12,0.992,0.992,0.949,90,True
+Camiguin,Camiguim,20.0,True,,,0,0.998,0.998,0.949,90,True
+Crab Island,,20.0,True,,,24,0.985,0.985,0.949,90,True
+Funaafou,,20.0,True,,,30,0.987,0.987,0.949,90,True
+Gracia,,20.0,True,,,48,0.994,0.994,0.949,90,True
+Grötö,,20.0,True,,,30,0.997,0.997,0.949,90,True
+Guadalcanal,,20.0,True,,,0,1.0,1.0,0.949,90,True
+Hwado,,20.0,True,,,24,0.998,0.998,0.949,90,True
+Hyppeln,,20.0,True,,,18,0.993,0.993,0.949,90,True
+Ilha Deception,Deception,9.483,False,,,0,0.989,0.989,0.949,90,True
+Ilha de Ishigaki,,9.483,False,,,0,0.999,0.999,0.949,90,True
+Ilha de Tromelin,,9.483,False,,,0,0.993,0.993,0.949,90,True
+Imjado,,20.0,True,,,18,0.997,0.997,0.949,90,True
+Kish,,20.0,True,,,0,0.986,0.986,0.949,90,True
+Lafanga,,20.0,True,,,18,0.992,0.992,0.949,90,True
+Lapuri,,20.0,True,,,24,0.996,0.996,0.949,90,True
+Luamotu,,20.0,True,,,24,0.985,0.985,0.949,90,True
+Makin,,20.0,True,,,48,0.994,0.994,0.949,90,True
+Marovo,,20.0,True,,,18,0.995,0.995,0.949,90,True
+Miyajima,,20.0,True,,,0,1.0,1.0,0.949,90,True
+Molucas,,20.0,True,,,0,0.994,0.994,0.949,90,True
+Motuloa,,20.0,True,,,24,0.985,0.985,0.949,90,True
+Motumua,,20.0,True,,,18,0.992,0.992,0.949,90,True
+Motutanifa,,20.0,True,,,24,0.99,0.99,0.949,90,True
+Nämdö,,20.0,True,,,24,0.985,0.985,0.949,90,True
+Oua,,20.0,True,,,18,0.992,0.992,0.949,90,True
+Piliaieve,,20.0,True,,,12,0.995,0.995,0.949,90,True
+Rochedos Graovo,,20.0,True,,,24,0.99,0.99,0.949,90,True
+Rochedos Ibar,,20.0,True,,,12,0.997,0.997,0.949,90,True
+Rochedos Skrino,,20.0,True,,,12,0.999,0.999,0.949,90,True
+Rocher Siyyan,,20.0,True,,,30,0.987,0.987,0.949,90,True
+Souda,Suda,20.0,True,,,0,0.989,0.989,0.949,90,True
+Thayawthadangyi,,20.0,True,,,24,0.985,0.985,0.949,90,True
+Tosterön,,20.0,True,,,24,0.99,0.99,0.949,90,True
+Åmnøya,,20.0,True,,,18,0.988,0.988,0.949,90,True

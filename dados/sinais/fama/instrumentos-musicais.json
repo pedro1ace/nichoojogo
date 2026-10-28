@@ -1,47 +1,49 @@
 {
  "categoria": "instrumentos-musicais",
- "gerado_em": "2026-10-24",
+ "gerado_em": "2026-10-28",
  "sinais": [
   "conhecem",
   "lembranca",
   "revisao",
-  "texto"
+  "texto",
+  "visitas"
  ],
  "meses_de_visitas": [],
  "pesos": {
   "lembranca": 0.65,
   "conhecem": 0.1,
-  "revisao": 0.15,
+  "revisao": 0.08,
+  "visitas": 0.14,
   "texto": 0.03
  },
  "estimadas_pelo_llm": 91,
  "respostas": {
   "Violão": {
-   "fama": 0.9959,
+   "fama": 0.9606,
    "lembranca_em_1000": 250.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11406,
    "tendencia": null
   },
   "Guitarra": {
-   "fama": 0.9298,
+   "fama": 0.9083,
    "lembranca_em_1000": 150.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 17802,
    "tendencia": null
   },
   "Piano": {
-   "fama": 0.9004,
+   "fama": 0.8804,
    "lembranca_em_1000": 120.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 17268,
    "tendencia": null
   },
   "Bateria": {
-   "fama": 0.8886,
+   "fama": 0.8823,
    "lembranca_em_1000": 110.0,
    "estimada": true,
    "conhecem_pct": 100.0,
@@ -49,31 +51,31 @@
    "tendencia": null
   },
   "Violino": {
-   "fama": 0.8056,
+   "fama": 0.7748,
    "lembranca_em_1000": 60.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6126,
    "tendencia": null
   },
   "Flauta": {
-   "fama": 0.7499,
+   "fama": 0.7303,
    "lembranca_em_1000": 40.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 7920,
    "tendencia": null
   },
   "Saxofone": {
-   "fama": 0.7265,
+   "fama": 0.7136,
    "lembranca_em_1000": 35.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9528,
    "tendencia": null
   },
   "Teclado": {
-   "fama": 0.6648,
+   "fama": 0.6458,
    "lembranca_em_1000": 20.0,
    "estimada": true,
    "conhecem_pct": 99.0,
@@ -81,39 +83,39 @@
    "tendencia": null
   },
   "Pandeiro": {
-   "fama": 0.6822,
+   "fama": 0.6694,
    "lembranca_em_1000": 25.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 7494,
    "tendencia": null
   },
   "Baixo": {
-   "fama": 0.6254,
+   "fama": 0.6233,
    "lembranca_em_1000": 15.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9792,
    "tendencia": null
   },
   "Trompete": {
-   "fama": 0.6082,
+   "fama": 0.6086,
    "lembranca_em_1000": 15.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8916,
    "tendencia": null
   },
   "Cavaquinho": {
-   "fama": 0.6466,
+   "fama": 0.6444,
    "lembranca_em_1000": 20.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9696,
    "tendencia": null
   },
   "Gaita": {
-   "fama": 0.5793,
+   "fama": 0.5625,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 98.0,
@@ -121,135 +123,135 @@
    "tendencia": null
   },
   "Sanfona": {
-   "fama": 0.6088,
+   "fama": 0.6111,
    "lembranca_em_1000": 15.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9804,
    "tendencia": null
   },
   "Tambor": {
-   "fama": 0.5766,
+   "fama": 0.5744,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5844,
    "tendencia": null
   },
   "Violoncelo": {
-   "fama": 0.4782,
+   "fama": 0.4924,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 7500,
    "tendencia": null
   },
   "Harpa": {
-   "fama": 0.5149,
+   "fama": 0.5302,
    "lembranca_em_1000": 8.0,
    "estimada": true,
    "conhecem_pct": 95.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9072,
    "tendencia": null
   },
   "Clarinete": {
-   "fama": 0.4281,
+   "fama": 0.4517,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8628,
    "tendencia": null
   },
   "Trombone": {
-   "fama": 0.4287,
+   "fama": 0.444,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5628,
    "tendencia": null
   },
   "Ukulele": {
-   "fama": 0.4505,
+   "fama": 0.4825,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 90.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15762,
    "tendencia": null
   },
   "Berimbau": {
-   "fama": 0.5427,
+   "fama": 0.5645,
    "lembranca_em_1000": 10.0,
    "estimada": true,
    "conhecem_pct": 96.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15354,
    "tendencia": null
   },
   "Triângulo": {
-   "fama": 0.5248,
+   "fama": 0.5407,
    "lembranca_em_1000": 8.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10536,
    "tendencia": null
   },
   "Zabumba": {
-   "fama": 0.4416,
+   "fama": 0.4573,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5112,
    "tendencia": null
   },
   "Cuíca": {
-   "fama": 0.3786,
+   "fama": 0.4115,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 88.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8430,
    "tendencia": null
   },
   "Atabaque": {
-   "fama": 0.378,
+   "fama": 0.4019,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 88.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5262,
    "tendencia": null
   },
   "Tamborim": {
-   "fama": 0.3351,
+   "fama": 0.3521,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 88.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2658,
    "tendencia": null
   },
   "Surdo": {
-   "fama": 0.3335,
+   "fama": 0.3481,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2142,
    "tendencia": null
   },
   "Agogô": {
-   "fama": 0.2653,
+   "fama": 0.3042,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5472,
    "tendencia": null
   },
   "Xilofone": {
-   "fama": 0.379,
+   "fama": 0.4033,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 90.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5382,
    "tendencia": null
   },
   "Órgão": {
-   "fama": 0.3975,
+   "fama": 0.3824,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 92.0,
@@ -257,95 +259,95 @@
    "tendencia": null
   },
   "Tuba": {
-   "fama": 0.3402,
+   "fama": 0.3718,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 88.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6318,
    "tendencia": null
   },
   "Oboé": {
-   "fama": 0.2426,
+   "fama": 0.3057,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12852,
    "tendencia": null
   },
   "Fagote": {
-   "fama": 0.1873,
+   "fama": 0.2515,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9426,
    "tendencia": null
   },
   "Viola caipira": {
-   "fama": 0.3495,
+   "fama": 0.3837,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8814,
    "tendencia": null
   },
   "Bandolim": {
-   "fama": 0.2628,
+   "fama": 0.3133,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8442,
    "tendencia": null
   },
   "Banjo": {
-   "fama": 0.279,
+   "fama": 0.3206,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 82.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 7836,
    "tendencia": null
   },
   "Castanhola": {
-   "fama": 0.2603,
+   "fama": 0.2926,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3528,
    "tendencia": null
   },
   "Chocalho": {
-   "fama": 0.2781,
+   "fama": 0.3072,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3738,
    "tendencia": null
   },
   "Maracá": {
-   "fama": 0.2699,
+   "fama": 0.3139,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 7926,
    "tendencia": null
   },
   "Reco-reco": {
-   "fama": 0.2674,
+   "fama": 0.3061,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4638,
    "tendencia": null
   },
   "Gongo": {
-   "fama": 0.1914,
+   "fama": 0.2279,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2886,
    "tendencia": null
   },
   "Pratos": {
-   "fama": 0.2287,
+   "fama": 0.2128,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 75.0,
@@ -353,143 +355,143 @@
    "tendencia": null
   },
   "Trompa": {
-   "fama": 0.1678,
+   "fama": 0.2262,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5976,
    "tendencia": null
   },
   "Flautim": {
-   "fama": 0.1442,
+   "fama": 0.1851,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2022,
    "tendencia": null
   },
   "Bongô": {
-   "fama": 0.2033,
+   "fama": 0.2423,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3156,
    "tendencia": null
   },
   "Marimba": {
-   "fama": 0.1737,
+   "fama": 0.2177,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 65.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3132,
    "tendencia": null
   },
   "Cítara": {
-   "fama": 0.1563,
+   "fama": 0.219,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6594,
    "tendencia": null
   },
   "Alaúde": {
-   "fama": 0.1344,
+   "fama": 0.2105,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10398,
    "tendencia": null
   },
   "Didgeridoo": {
-   "fama": 0.0696,
+   "fama": 0.1376,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3762,
    "tendencia": null
   },
   "Gaita de foles": {
-   "fama": 0.2122,
+   "fama": 0.274,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9852,
    "tendencia": null
   },
   "Kalimba": {
-   "fama": 0.1052,
+   "fama": 0.1274,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 498,
    "tendencia": null
   },
   "Theremin": {
-   "fama": 0.0482,
+   "fama": 0.1353,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6978,
    "tendencia": null
   },
   "Sitar": {
-   "fama": 0.098,
+   "fama": 0.1656,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4956,
    "tendencia": null
   },
   "Tabla": {
-   "fama": 0.0676,
+   "fama": 0.1138,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1044,
    "tendencia": null
   },
   "Rabeca": {
-   "fama": 0.1307,
+   "fama": 0.1965,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5520,
    "tendencia": null
   },
   "Ganzá": {
-   "fama": 0.1412,
+   "fama": 0.1985,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4332,
    "tendencia": null
   },
   "Caxixi": {
-   "fama": 0.1034,
+   "fama": 0.1596,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2574,
    "tendencia": null
   },
   "Vibrafone": {
-   "fama": 0.0916,
+   "fama": 0.1454,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2346,
    "tendencia": null
   },
   "Celesta": {
-   "fama": 0.0381,
+   "fama": 0.1046,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2106,
    "tendencia": null
   },
   "Fole de oito baixos": {
-   "fama": 0.0781,
+   "fama": 0.0775,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
@@ -497,95 +499,95 @@
    "tendencia": null
   },
   "Serrote": {
-   "fama": 0.0613,
+   "fama": 0.1066,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 894,
    "tendencia": null
   },
   "Viola de arco": {
-   "fama": 0.1081,
+   "fama": 0.166,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9408,
    "tendencia": null
   },
   "Corneta": {
-   "fama": 0.341,
+   "fama": 0.3574,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2532,
    "tendencia": null
   },
   "Caixa": {
-   "fama": 0.292,
+   "fama": 0.3017,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1488,
    "tendencia": null
   },
   "Bumbo leguero": {
-   "fama": 0.101,
+   "fama": 0.1257,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1614,
    "tendencia": null
   },
   "Pandeirola": {
-   "fama": 0.0836,
+   "fama": 0.1034,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1134,
    "tendencia": null
   },
   "Washboard": {
-   "fama": 0.0836,
+   "fama": 0.0916,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 624,
    "tendencia": null
   },
   "Apito": {
-   "fama": 0.2834,
+   "fama": 0.2956,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1626,
    "tendencia": null
   },
   "Sino": {
-   "fama": 0.3431,
+   "fama": 0.3696,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4278,
    "tendencia": null
   },
   "Carrilhão": {
-   "fama": 0.0983,
+   "fama": 0.135,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2964,
    "tendencia": null
   },
   "Clavinete": {
-   "fama": 0.0834,
+   "fama": 0.1012,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1020,
    "tendencia": null
   },
   "Cravo": {
-   "fama": 0.2026,
+   "fama": 0.1784,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 60.0,
@@ -593,7 +595,7 @@
    "tendencia": null
   },
   "Piano de cauda": {
-   "fama": 0.2908,
+   "fama": 0.2738,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 90.0,
@@ -601,1054 +603,110 @@
    "tendencia": null
   },
   "Piano elétrico": {
-   "fama": 0.2452,
+   "fama": 0.249,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 906,
    "tendencia": null
   },
   "Órgão hammond": {
-   "fama": 0.1097,
+   "fama": 0.1446,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2808,
    "tendencia": null
   },
   "Flugelhorn": {
-   "fama": 0.0831,
+   "fama": 0.1188,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2508,
    "tendencia": null
   },
   "Bombardino": {
-   "fama": 0.096,
+   "fama": 0.1454,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5664,
    "tendencia": null
   },
   "Sousafone": {
-   "fama": 0.0912,
+   "fama": 0.1327,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3678,
    "tendencia": null
   },
   "Trompa de caça": {
-   "fama": 0.104,
+   "fama": 0.1117,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 660,
    "tendencia": null
   },
   "Saxofone alto": {
-   "fama": 0.2001,
+   "fama": 0.223,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 65.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2076,
    "tendencia": null
   },
   "Saxofone tenor": {
-   "fama": 0.1019,
+   "fama": 0.1245,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1422,
    "tendencia": null
   },
   "Saxofone soprano": {
-   "fama": 0.102,
+   "fama": 0.1233,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1326,
    "tendencia": null
   },
   "Saxofone barítono": {
-   "fama": 0.1004,
+   "fama": 0.121,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1272,
    "tendencia": null
   },
   "Clarone": {
-   "fama": 0.0332,
+   "fama": 0.09,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1596,
    "tendencia": null
   },
   "Corne inglês": {
-   "fama": 0.0405,
+   "fama": 0.1046,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2400,
    "tendencia": null
   },
   "Contrafagote": {
-   "fama": 0.0278,
+   "fama": 0.0779,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1098,
    "tendencia": null
   },
   "Banjo de quatro cordas": {
-   "fama": 0.0437,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ukulele baixo": {
-   "fama": 0.0424,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gaita cromática": {
-   "fama": 0.0384,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Escaleta": {
-   "fama": 0.2058,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
-   "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Steel drum": {
-   "fama": 0.0651,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Timbales": {
-   "fama": 0.0651,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tímpano": {
-   "fama": 0.2083,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
-   "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Congas": {
-   "fama": 0.1959,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
-   "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cajón": {
-   "fama": 0.2391,
-   "lembranca_em_1000": 1.0,
-   "estimada": true,
-   "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Repique": {
-   "fama": 0.2078,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
-   "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Rebolo": {
-   "fama": 0.0363,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tantã": {
-   "fama": 0.0324,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Timbal": {
-   "fama": 0.032,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Caixa de guerra": {
-   "fama": 0.0488,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pandeiro de couro": {
-   "fama": 0.0427,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Agbê": {
-   "fama": 0.0175,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Afoxé": {
-   "fama": 0.112,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
-   "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Matraca": {
-   "fama": 0.1121,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
-   "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Apito de samba": {
-   "fama": 0.043,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ganzá de lata": {
-   "fama": 0.0381,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Chocalho de platinela": {
-   "fama": 0.0308,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tambor falante": {
-   "fama": 0.0412,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Djembê": {
-   "fama": 0.1959,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
-   "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dumbek": {
-   "fama": 0.0171,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bodhrán": {
-   "fama": 0.017,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Taiko": {
-   "fama": 0.0831,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cajón peruano": {
-   "fama": 0.0387,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Washtub bass": {
-   "fama": 0.0169,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gaita irlandesa": {
-   "fama": 0.039,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flauta de pan": {
-   "fama": 0.2203,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
-   "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ocarina": {
-   "fama": 0.1738,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
-   "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kazoo": {
-   "fama": 0.139,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
-   "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Berrante": {
-   "fama": 0.2554,
-   "lembranca_em_1000": 1.0,
-   "estimada": true,
-   "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Viola de cocho": {
-   "fama": 0.0517,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
-   "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Rabeca nordestina": {
-   "fama": 0.0919,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Viola machete": {
-   "fama": 0.0388,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Viola de buriti": {
-   "fama": 0.0405,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Violão tenor": {
-   "fama": 0.041,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cavaco": {
-   "fama": 0.2213,
-   "lembranca_em_1000": 1.0,
-   "estimada": true,
-   "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Banjo cavaquinho": {
-   "fama": 0.037,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bandola": {
-   "fama": 0.0282,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guitarra portuguesa": {
-   "fama": 0.045,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guitarra baiana": {
-   "fama": 0.1192,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
-   "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guitarra havaiana": {
-   "fama": 0.0438,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pedal steel": {
-   "fama": 0.0408,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dobro": {
-   "fama": 0.0418,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Contrabaixo de pau": {
-   "fama": 0.0412,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Charango": {
-   "fama": 0.0763,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cuatro": {
-   "fama": 0.016,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tres cubano": {
-   "fama": 0.0441,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Requinto": {
-   "fama": 0.0253,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Vihuela": {
-   "fama": 0.0158,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guitarrón": {
-   "fama": 0.0157,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bandurria": {
-   "fama": 0.0216,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Balalaica": {
-   "fama": 0.1683,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
-   "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Domra": {
-   "fama": 0.0156,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gusli": {
-   "fama": 0.0156,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bouzouki": {
-   "fama": 0.0651,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Saz": {
-   "fama": 0.0155,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Oud": {
-   "fama": 0.0155,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kora": {
-   "fama": 0.0154,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ngoni": {
-   "fama": 0.0153,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Valiha": {
-   "fama": 0.0153,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Koto": {
-   "fama": 0.0321,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Shamisen": {
-   "fama": 0.0152,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Biwa": {
-   "fama": 0.0151,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Shakuhachi": {
-   "fama": 0.0151,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Erhu": {
-   "fama": 0.015,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pipa": {
-   "fama": 0.0391,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guzheng": {
-   "fama": 0.0149,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Yangqin": {
-   "fama": 0.0148,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dizi": {
-   "fama": 0.0148,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sheng": {
-   "fama": 0.0147,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Suona": {
-   "fama": 0.0147,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gayageum": {
-   "fama": 0.0146,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Haegeum": {
-   "fama": 0.0146,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sarangi": {
-   "fama": 0.0145,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sarod": {
-   "fama": 0.0144,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Santur": {
-   "fama": 0.0144,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tanpura": {
-   "fama": 0.0143,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Veena": {
-   "fama": 0.0143,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bansuri": {
-   "fama": 0.0142,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mridangam": {
-   "fama": 0.0142,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dhol": {
-   "fama": 0.0141,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dholak": {
-   "fama": 0.014,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Harmônio": {
-   "fama": 0.027,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gamelão": {
-   "fama": 0.0255,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Angklung": {
-   "fama": 0.0139,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kulintang": {
-   "fama": 0.0138,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Duduk": {
-   "fama": 0.0138,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Zurna": {
-   "fama": 0.0216,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kaval": {
-   "fama": 0.0137,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ney": {
-   "fama": 0.0136,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Qanun": {
-   "fama": 0.0135,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kemenche": {
-   "fama": 0.0135,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Rubab": {
-   "fama": 0.0134,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dutar": {
-   "fama": 0.0134,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tar": {
-   "fama": 0.0133,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Setar": {
-   "fama": 0.0133,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kamancheh": {
-   "fama": 0.0132,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Morin khuur": {
-   "fama": 0.0131,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hardanger fiddle": {
-   "fama": 0.0131,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Nyckelharpa": {
-   "fama": 0.013,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kantele": {
-   "fama": 0.013,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Zither": {
-   "fama": 0.0129,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Saltério": {
-   "fama": 0.0296,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dulcimer": {
-   "fama": 0.0128,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hammered dulcimer": {
-   "fama": 0.0127,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Címbalo": {
-   "fama": 0.0273,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Lira": {
-   "fama": 0.0366,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cítola": {
-   "fama": 0.0195,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Harpa celta": {
-   "fama": 0.0361,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Harpa paraguaia": {
-   "fama": 0.0338,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Harpa de boca": {
-   "fama": 0.0388,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Viela de roda": {
-   "fama": 0.0361,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bandoneón": {
-   "fama": 0.0263,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Concertina": {
-   "fama": 0.0309,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Acordeão de botão": {
-   "fama": 0.0363,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gaita de oito baixos": {
    "fama": 0.0385,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -1656,1199 +714,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Harmônica de vidro": {
-   "fama": 0.0377,
+  "Ukulele baixo": {
+   "fama": 0.0371,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Copos musicais": {
-   "fama": 0.0388,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ondas Martenot": {
-   "fama": 0.0312,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mellotron": {
-   "fama": 0.0119,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Moog": {
-   "fama": 0.0118,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Vocoder": {
-   "fama": 0.0118,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Keytar": {
-   "fama": 0.0117,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Talk box": {
-   "fama": 0.0396,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sampler": {
-   "fama": 0.0298,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Drum machine": {
-   "fama": 0.0116,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Toca-discos": {
-   "fama": 0.0912,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Stylophone": {
-   "fama": 0.0115,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Otamatone": {
-   "fama": 0.0115,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hang": {
-   "fama": 0.0114,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tambor de língua": {
-   "fama": 0.0382,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Glockenspiel": {
-   "fama": 0.0761,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Campanas tubulares": {
-   "fama": 0.0113,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Crotales": {
-   "fama": 0.0112,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Chimes": {
-   "fama": 0.0112,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cowbell": {
-   "fama": 0.0111,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Wood block": {
-   "fama": 0.0111,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Temple block": {
-   "fama": 0.0335,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Clave": {
-   "fama": 0.0314,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guiro": {
-   "fama": 0.0109,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Vibraslap": {
-   "fama": 0.0108,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flexatone": {
-   "fama": 0.0104,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Waterphone": {
-   "fama": 0.0107,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Spring drum": {
-   "fama": 0.0107,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cuíca de boca": {
-   "fama": 0.0349,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pau de chuva": {
-   "fama": 0.0399,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Caxixi de palha": {
-   "fama": 0.0303,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mineiro": {
-   "fama": 0.0374,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ilu": {
-   "fama": 0.0257,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Rum, rumpi e lê": {
-   "fama": 0.0306,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Alfaia": {
-   "fama": 0.1718,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
-   "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mineiro ganzá": {
-   "fama": 0.0315,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tambor de crioula": {
-   "fama": 0.0319,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tambor de mina": {
-   "fama": 0.0346,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Caixa do divino": {
-   "fama": 0.0394,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Viola dinâmica": {
-   "fama": 0.0367,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pífano de taboca": {
-   "fama": 0.0254,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gaita de taquara": {
-   "fama": 0.0319,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Marimbau": {
-   "fama": 0.0192,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Urucungo": {
-   "fama": 0.021,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bumba": {
-   "fama": 0.0298,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tamborim de couro": {
-   "fama": 0.0331,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ganzá de cesto": {
-   "fama": 0.0292,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Canzá": {
-   "fama": 0.0161,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Atabaque rum": {
-   "fama": 0.0293,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Berimbau gunga": {
-   "fama": 0.0279,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Berimbau médio": {
-   "fama": 0.0348,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Berimbau viola": {
-   "fama": 0.0322,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cuíca de lata": {
-   "fama": 0.0315,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tambor de onça": {
-   "fama": 0.0329,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Matraca de São João": {
-   "fama": 0.0387,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bombo": {
-   "fama": 0.0268,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tamboril": {
-   "fama": 0.0278,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Txalaparta": {
-   "fama": 0.0089,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pandereta": {
-   "fama": 0.0166,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Zambomba": {
-   "fama": 0.0088,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cajón flamenco": {
-   "fama": 0.0294,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gaita de fole escocesa": {
-   "fama": 0.0295,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cornamusa": {
-   "fama": 0.0175,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Charamela": {
-   "fama": 0.0193,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sacabuxa": {
-   "fama": 0.0173,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Corneto": {
-   "fama": 0.0225,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Serpentão": {
-   "fama": 0.0163,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ofiocleide": {
-   "fama": 0.0083,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cromorne": {
-   "fama": 0.0083,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Rauschpfeife": {
-   "fama": 0.0082,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flauta de bisel": {
-   "fama": 0.0284,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flauta de tamborileiro": {
-   "fama": 0.0256,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tin whistle": {
-   "fama": 0.0081,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pife": {
-   "fama": 0.0233,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Quena": {
-   "fama": 0.0223,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Quenacho": {
-   "fama": 0.0079,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Antara": {
-   "fama": 0.0078,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tarka": {
-   "fama": 0.0078,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Caja vidalera": {
-   "fama": 0.0265,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cajón de tapeo": {
-   "fama": 0.0076,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Marimba de chonta": {
-   "fama": 0.024,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Arpa llanera": {
-   "fama": 0.0075,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cuatro porto-riquenho": {
-   "fama": 0.0323,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jarana": {
-   "fama": 0.0173,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Marimbol": {
-   "fama": 0.0073,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kalimba de caixa": {
-   "fama": 0.0389,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Balafon": {
-   "fama": 0.0072,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Udu": {
-   "fama": 0.0193,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mbira dzavadzimba": {
-   "fama": 0.0071,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gankogui": {
-   "fama": 0.007,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kpanlogo": {
-   "fama": 0.0069,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ashiko": {
-   "fama": 0.0069,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bougarabou": {
-   "fama": 0.0068,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dundun": {
-   "fama": 0.0068,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sabar": {
-   "fama": 0.0067,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bendir": {
-   "fama": 0.0067,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Riq": {
-   "fama": 0.0066,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tamborim de mão": {
-   "fama": 0.0318,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Daf": {
-   "fama": 0.0065,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Frame drum": {
-   "fama": 0.0064,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tabla indiana": {
-   "fama": 0.0273,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pakhawaj": {
-   "fama": 0.0063,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ghatam": {
-   "fama": 0.0063,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kanjira": {
-   "fama": 0.0062,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tavil": {
-   "fama": 0.0061,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Nadaswaram": {
-   "fama": 0.0061,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Shehnai": {
-   "fama": 0.006,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ektara": {
-   "fama": 0.006,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dotara": {
-   "fama": 0.0167,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gopichand": {
-   "fama": 0.0059,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Morsing": {
-   "fama": 0.0058,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sanxian": {
-   "fama": 0.0058,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ruan": {
-   "fama": 0.0057,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hulusi": {
-   "fama": 0.0056,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Xiao": {
-   "fama": 0.0056,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guqin": {
-   "fama": 0.0055,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bianzhong": {
-   "fama": 0.0055,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Muyu": {
-   "fama": 0.0054,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kagura suzu": {
-   "fama": 0.0054,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hichiriki": {
-   "fama": 0.0053,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ryuteki": {
-   "fama": 0.0052,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sho": {
-   "fama": 0.0052,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Taegeum": {
-   "fama": 0.0051,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Janggu": {
-   "fama": 0.0051,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Buk": {
-   "fama": 0.005,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Piri": {
-   "fama": 0.025,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kkwaenggwari": {
-   "fama": 0.0049,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gong chinês": {
-   "fama": 0.0317,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gongo tailandês": {
-   "fama": 0.0243,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ranat": {
-   "fama": 0.0047,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Khim": {
-   "fama": 0.0047,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Khene": {
-   "fama": 0.0046,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Đàn bầu": {
-   "fama": 0.0301,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Đàn tranh": {
-   "fama": 0.0045,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kecapi": {
-   "fama": 0.0045,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Suling": {
-   "fama": 0.0044,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Rebab": {
-   "fama": 0.0043,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kendang": {
-   "fama": 0.0043,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sasando": {
-   "fama": 0.0042,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bonang": {
-   "fama": 0.0042,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Saron": {
-   "fama": 0.0041,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gender": {
-   "fama": 0.0041,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kenong": {
-   "fama": 0.004,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Didjeridu de bambu": {
-   "fama": 0.0282,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bullroarer": {
-   "fama": 0.0039,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tambor de sapo": {
-   "fama": 0.0291,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Lithophone": {
-   "fama": 0.0038,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Vibrafone de pedra": {
-   "fama": 0.0264,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Órgão de tubos": {
-   "fama": 0.2007,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
-   "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Órgão de foles": {
+  "Gaita cromática": {
    "fama": 0.0328,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2856,495 +730,143 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Harmônio indiano": {
-   "fama": 0.0224,
+  "Escaleta": {
+   "fama": 0.2526,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": 5004,
+   "tendencia": null
+  },
+  "Steel drum": {
+   "fama": 0.1072,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2184,
+   "tendencia": null
+  },
+  "Timbales": {
+   "fama": 0.0915,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 984,
+   "tendencia": null
+  },
+  "Tímpano": {
+   "fama": 0.1935,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Congas": {
+   "fama": 0.1795,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cajón": {
+   "fama": 0.2812,
+   "lembranca_em_1000": 1.0,
+   "estimada": true,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": 4134,
+   "tendencia": null
+  },
+  "Repique": {
+   "fama": 0.2383,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": 2148,
+   "tendencia": null
+  },
+  "Rebolo": {
+   "fama": 0.0757,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 648,
+   "tendencia": null
+  },
+  "Tantã": {
+   "fama": 0.1045,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3516,
+   "tendencia": null
+  },
+  "Timbal": {
+   "fama": 0.0859,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1356,
+   "tendencia": null
+  },
+  "Caixa de guerra": {
+   "fama": 0.0442,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Órgão a vapor": {
-   "fama": 0.0315,
+  "Pandeiro de couro": {
+   "fama": 0.0376,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Realejo": {
-   "fama": 0.0808,
+  "Agbê": {
+   "fama": 0.0583,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 606,
+   "tendencia": null
+  },
+  "Afoxé": {
+   "fama": 0.1126,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Matraca": {
+   "fama": 0.1725,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": 2532,
+   "tendencia": null
+  },
+  "Apito de samba": {
+   "fama": 0.038,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Pianola": {
-   "fama": 0.0167,
+  "Ganzá de lata": {
+   "fama": 0.0328,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Piano de brinquedo": {
-   "fama": 0.03,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Piano preparado": {
-   "fama": 0.0306,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fortepiano": {
-   "fama": 0.0131,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Clavicórdio": {
-   "fama": 0.0156,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Virginal": {
-   "fama": 0.0222,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Espineta": {
-   "fama": 0.0148,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Harpsichord": {
-   "fama": 0.0031,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Celesta de teclado": {
-   "fama": 0.0235,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Acordeão piano": {
-   "fama": 0.0261,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Teclado arranjador": {
-   "fama": 0.0275,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sintetizador modular": {
-   "fama": 0.0246,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Arpa de laser": {
-   "fama": 0.0298,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guitarra de doze cordas": {
-   "fama": 0.0299,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guitarra barítono": {
-   "fama": 0.0262,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Baixo fretless": {
-   "fama": 0.0342,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Baixo de seis cordas": {
-   "fama": 0.0322,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Violão de cordas de aço": {
-   "fama": 0.0304,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Violino elétrico": {
-   "fama": 0.0285,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Violoncelo elétrico": {
-   "fama": 0.0269,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Contrabaixo elétrico vertical": {
-   "fama": 0.028,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Viola da gamba": {
-   "fama": 0.0247,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Viola d'amore": {
-   "fama": 0.0282,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Baryton": {
-   "fama": 0.0022,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Rabeca de bacia": {
-   "fama": 0.0244,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Arpeggione": {
-   "fama": 0.0021,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Trompete piccolo": {
-   "fama": 0.0232,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Trompete de vara": {
-   "fama": 0.0265,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cornetim": {
-   "fama": 0.0135,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Clarim": {
-   "fama": 0.0204,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Trombone de vara": {
-   "fama": 0.0262,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Trombone de pistão": {
-   "fama": 0.0238,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Trombone baixo": {
-   "fama": 0.0281,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tuba wagneriana": {
-   "fama": 0.0183,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Helicon": {
-   "fama": 0.012,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mellofone": {
-   "fama": 0.0015,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Alto horn": {
-   "fama": 0.0335,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Saxhorn": {
-   "fama": 0.0094,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tuba de pistos": {
-   "fama": 0.0213,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Saxofone sopranino": {
-   "fama": 0.0189,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Saxofone baixo": {
-   "fama": 0.0279,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Saxofone contrabaixo": {
-   "fama": 0.0232,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Clarinete requinta": {
-   "fama": 0.0182,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Clarinete em lá": {
-   "fama": 0.0332,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Clarinete alto": {
-   "fama": 0.0274,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Corne di bassetto": {
-   "fama": 0.0224,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Oboé d'amore": {
-   "fama": 0.0194,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Heckelfone": {
-   "fama": 0.0008,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sarrusofone": {
-   "fama": 0.0008,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flauta baixo": {
-   "fama": 0.0286,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flauta contralto": {
-   "fama": 0.0214,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flauta irlandesa": {
-   "fama": 0.0247,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flauta nativa americana": {
-   "fama": 0.0276,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Flauta de osso": {
-   "fama": 0.0255,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Apito de pássaro": {
-   "fama": 0.0251,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gaita de lata": {
-   "fama": 0.0252,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pente com papel": {
-   "fama": 0.0326,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Colher": {
-   "fama": 0.029,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Serrote musical": {
+  "Chocalho de platinela": {
    "fama": 0.0249,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -3352,15 +874,2255 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Tábua de lavar": {
-   "fama": 0.0266,
+  "Tambor falante": {
+   "fama": 0.0769,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 534,
+   "tendencia": null
+  },
+  "Djembê": {
+   "fama": 0.227,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": 2022,
+   "tendencia": null
+  },
+  "Dumbek": {
+   "fama": 0.0666,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 930,
+   "tendencia": null
+  },
+  "Bodhrán": {
+   "fama": 0.0626,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 762,
+   "tendencia": null
+  },
+  "Taiko": {
+   "fama": 0.1519,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 35.0,
+   "visitas_pt_12m": 3498,
+   "tendencia": null
+  },
+  "Cajón peruano": {
+   "fama": 0.0336,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Garrafa": {
+  "Washtub bass": {
+   "fama": 0.0098,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gaita irlandesa": {
+   "fama": 0.0787,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 648,
+   "tendencia": null
+  },
+  "Flauta de pan": {
+   "fama": 0.2638,
+   "lembranca_em_1000": 0.5,
+   "estimada": true,
+   "conhecem_pct": 75.0,
+   "visitas_pt_12m": 4452,
+   "tendencia": null
+  },
+  "Ocarina": {
+   "fama": 0.2434,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": 14622,
+   "tendencia": null
+  },
+  "Kazoo": {
+   "fama": 0.1783,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": 2490,
+   "tendencia": null
+  },
+  "Berrante": {
+   "fama": 0.2876,
+   "lembranca_em_1000": 1.0,
+   "estimada": true,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": 2796,
+   "tendencia": null
+  },
+  "Viola de cocho": {
+   "fama": 0.1172,
+   "lembranca_em_1000": 0.02,
+   "estimada": true,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": 2616,
+   "tendencia": null
+  },
+  "Rabeca nordestina": {
+   "fama": 0.0912,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Viola machete": {
+   "fama": 0.0667,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 348,
+   "tendencia": null
+  },
+  "Viola de buriti": {
+   "fama": 0.0785,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 594,
+   "tendencia": null
+  },
+  "Violão tenor": {
+   "fama": 0.0902,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1068,
+   "tendencia": null
+  },
+  "Cavaco": {
+   "fama": 0.2313,
+   "lembranca_em_1000": 1.0,
+   "estimada": true,
+   "conhecem_pct": 85.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Banjo cavaquinho": {
+   "fama": 0.032,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandola": {
+   "fama": 0.0653,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 540,
+   "tendencia": null
+  },
+  "Guitarra portuguesa": {
+   "fama": 0.1477,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 17640,
+   "tendencia": null
+  },
+  "Guitarra baiana": {
+   "fama": 0.1904,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": 4470,
+   "tendencia": null
+  },
+  "Guitarra havaiana": {
+   "fama": 0.0869,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 780,
+   "tendencia": null
+  },
+  "Pedal steel": {
+   "fama": 0.0871,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 906,
+   "tendencia": null
+  },
+  "Dobro": {
+   "fama": 0.0865,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 834,
+   "tendencia": null
+  },
+  "Contrabaixo de pau": {
+   "fama": 0.0368,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Charango": {
+   "fama": 0.1219,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2922,
+   "tendencia": null
+  },
+  "Cuatro": {
+   "fama": 0.0421,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 276,
+   "tendencia": null
+  },
+  "Tres cubano": {
+   "fama": 0.0827,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 612,
+   "tendencia": null
+  },
+  "Requinto": {
+   "fama": 0.0196,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vihuela": {
+   "fama": 0.0668,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 972,
+   "tendencia": null
+  },
+  "Guitarrón": {
+   "fama": 0.0091,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandurria": {
+   "fama": 0.0597,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 546,
+   "tendencia": null
+  },
+  "Balalaica": {
+   "fama": 0.2139,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": 4098,
+   "tendencia": null
+  },
+  "Domra": {
+   "fama": 0.009,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gusli": {
+   "fama": 0.009,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bouzouki": {
+   "fama": 0.1078,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2256,
+   "tendencia": null
+  },
+  "Saz": {
+   "fama": 0.0933,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3744,
+   "tendencia": null
+  },
+  "Oud": {
+   "fama": 0.0653,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 906,
+   "tendencia": null
+  },
+  "Kora": {
+   "fama": 0.0089,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ngoni": {
+   "fama": 0.0446,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 318,
+   "tendencia": null
+  },
+  "Valiha": {
+   "fama": 0.0264,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 126,
+   "tendencia": null
+  },
+  "Koto": {
+   "fama": 0.1003,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2706,
+   "tendencia": null
+  },
+  "Shamisen": {
+   "fama": 0.0807,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1992,
+   "tendencia": null
+  },
+  "Biwa": {
+   "fama": 0.0722,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1302,
+   "tendencia": null
+  },
+  "Shakuhachi": {
+   "fama": 0.0722,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1302,
+   "tendencia": null
+  },
+  "Erhu": {
+   "fama": 0.0836,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2328,
+   "tendencia": null
+  },
+  "Pipa": {
+   "fama": 0.035,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guzheng": {
+   "fama": 0.062,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 780,
+   "tendencia": null
+  },
+  "Yangqin": {
+   "fama": 0.0086,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dizi": {
+   "fama": 0.0318,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 168,
+   "tendencia": null
+  },
+  "Sheng": {
+   "fama": 0.0691,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1122,
+   "tendencia": null
+  },
+  "Suona": {
+   "fama": 0.0085,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gayageum": {
+   "fama": 0.0582,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 648,
+   "tendencia": null
+  },
+  "Haegeum": {
+   "fama": 0.0376,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 228,
+   "tendencia": null
+  },
+  "Sarangi": {
+   "fama": 0.0323,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 174,
+   "tendencia": null
+  },
+  "Sarod": {
+   "fama": 0.0459,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 348,
+   "tendencia": null
+  },
+  "Santur": {
+   "fama": 0.0465,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 360,
+   "tendencia": null
+  },
+  "Tanpura": {
+   "fama": 0.0524,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 486,
+   "tendencia": null
+  },
+  "Veena": {
+   "fama": 0.0083,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bansuri": {
+   "fama": 0.0412,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 276,
+   "tendencia": null
+  },
+  "Mridangam": {
+   "fama": 0.0276,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 138,
+   "tendencia": null
+  },
+  "Dhol": {
+   "fama": 0.0082,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dholak": {
+   "fama": 0.0081,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Harmônio": {
+   "fama": 0.088,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1776,
+   "tendencia": null
+  },
+  "Gamelão": {
+   "fama": 0.0861,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1722,
+   "tendencia": null
+  },
+  "Angklung": {
+   "fama": 0.0247,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 120,
+   "tendencia": null
+  },
+  "Kulintang": {
+   "fama": 0.008,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Duduk": {
+   "fama": 0.0686,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1122,
+   "tendencia": null
+  },
+  "Zurna": {
+   "fama": 0.0502,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 318,
+   "tendencia": null
+  },
+  "Kaval": {
+   "fama": 0.0495,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 426,
+   "tendencia": null
+  },
+  "Ney": {
+   "fama": 0.0079,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Qanun": {
+   "fama": 0.0575,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 642,
+   "tendencia": null
+  },
+  "Kemenche": {
+   "fama": 0.0386,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 246,
+   "tendencia": null
+  },
+  "Rubab": {
+   "fama": 0.0561,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 600,
+   "tendencia": null
+  },
+  "Dutar": {
+   "fama": 0.0077,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tar": {
+   "fama": 0.0424,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 300,
+   "tendencia": null
+  },
+  "Setar": {
+   "fama": 0.0077,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kamancheh": {
+   "fama": 0.0481,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 402,
+   "tendencia": null
+  },
+  "Morin khuur": {
+   "fama": 0.066,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 996,
+   "tendencia": null
+  },
+  "Hardanger fiddle": {
+   "fama": 0.0398,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 264,
+   "tendencia": null
+  },
+  "Nyckelharpa": {
+   "fama": 0.0674,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1074,
+   "tendencia": null
+  },
+  "Kantele": {
+   "fama": 0.058,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 666,
+   "tendencia": null
+  },
+  "Zither": {
+   "fama": 0.0075,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saltério": {
+   "fama": 0.0916,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1848,
+   "tendencia": null
+  },
+  "Dulcimer": {
+   "fama": 0.0809,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2136,
+   "tendencia": null
+  },
+  "Hammered dulcimer": {
+   "fama": 0.0074,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Címbalo": {
+   "fama": 0.0947,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2418,
+   "tendencia": null
+  },
+  "Lira": {
+   "fama": 0.0334,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cítola": {
+   "fama": 0.0695,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 942,
+   "tendencia": null
+  },
+  "Harpa celta": {
+   "fama": 0.0792,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 696,
+   "tendencia": null
+  },
+  "Harpa paraguaia": {
+   "fama": 0.0891,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1308,
+   "tendencia": null
+  },
+  "Harpa de boca": {
+   "fama": 0.1066,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2556,
+   "tendencia": null
+  },
+  "Viela de roda": {
+   "fama": 0.1298,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 9804,
+   "tendencia": null
+  },
+  "Bandoneón": {
+   "fama": 0.1072,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4830,
+   "tendencia": null
+  },
+  "Concertina": {
+   "fama": 0.1127,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5148,
+   "tendencia": null
+  },
+  "Acordeão de botão": {
+   "fama": 0.0333,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gaita de oito baixos": {
+   "fama": 0.0357,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Harmônica de vidro": {
+   "fama": 0.0902,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1140,
+   "tendencia": null
+  },
+  "Copos musicais": {
+   "fama": 0.036,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ondas Martenot": {
+   "fama": 0.0743,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 678,
+   "tendencia": null
+  },
+  "Mellotron": {
+   "fama": 0.0883,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3192,
+   "tendencia": null
+  },
+  "Moog": {
+   "fama": 0.0069,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vocoder": {
+   "fama": 0.0694,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1224,
+   "tendencia": null
+  },
+  "Keytar": {
+   "fama": 0.0838,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2550,
+   "tendencia": null
+  },
+  "Talk box": {
+   "fama": 0.0983,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1566,
+   "tendencia": null
+  },
+  "Sampler": {
+   "fama": 0.1018,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3030,
+   "tendencia": null
+  },
+  "Drum machine": {
+   "fama": 0.0748,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1620,
+   "tendencia": null
+  },
+  "Toca-discos": {
+   "fama": 0.135,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2802,
+   "tendencia": null
+  },
+  "Stylophone": {
+   "fama": 0.055,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 594,
+   "tendencia": null
+  },
+  "Otamatone": {
+   "fama": 0.0631,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 900,
+   "tendencia": null
+  },
+  "Hang": {
+   "fama": 0.0797,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2082,
+   "tendencia": null
+  },
+  "Tambor de língua": {
+   "fama": 0.0358,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Glockenspiel": {
+   "fama": 0.1255,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3552,
+   "tendencia": null
+  },
+  "Campanas tubulares": {
+   "fama": 0.0604,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 786,
+   "tendencia": null
+  },
+  "Crotales": {
+   "fama": 0.0065,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chimes": {
+   "fama": 0.0065,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cowbell": {
+   "fama": 0.0671,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1110,
+   "tendencia": null
+  },
+  "Wood block": {
+   "fama": 0.0064,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Temple block": {
+   "fama": 0.0309,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clave": {
+   "fama": 0.1279,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 10800,
+   "tendencia": null
+  },
+  "Guiro": {
+   "fama": 0.0063,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vibraslap": {
+   "fama": 0.0063,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flexatone": {
+   "fama": 0.006,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Waterphone": {
+   "fama": 0.0062,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Spring drum": {
+   "fama": 0.0062,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuíca de boca": {
+   "fama": 0.0326,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pau de chuva": {
+   "fama": 0.038,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caxixi de palha": {
+   "fama": 0.0276,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mineiro": {
+   "fama": 0.0354,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ilu": {
+   "fama": 0.0697,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 672,
+   "tendencia": null
+  },
+  "Rum, rumpi e lê": {
+   "fama": 0.1341,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 15306,
+   "tendencia": null
+  },
+  "Alfaia": {
+   "fama": 0.2047,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": 2130,
+   "tendencia": null
+  },
+  "Mineiro ganzá": {
+   "fama": 0.0291,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tambor de crioula": {
+   "fama": 0.1169,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5820,
+   "tendencia": null
+  },
+  "Tambor de mina": {
+   "fama": 0.1205,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6168,
+   "tendencia": null
+  },
+  "Caixa do divino": {
+   "fama": 0.0377,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Viola dinâmica": {
+   "fama": 0.0349,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pífano de taboca": {
+   "fama": 0.0226,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gaita de taquara": {
+   "fama": 0.0297,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marimbau": {
+   "fama": 0.1238,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 15354,
+   "tendencia": null
+  },
+  "Urucungo": {
+   "fama": 0.0464,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 246,
+   "tendencia": null
+  },
+  "Bumba": {
+   "fama": 0.0378,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 102,
+   "tendencia": null
+  },
+  "Tamborim de couro": {
+   "fama": 0.0311,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ganzá de cesto": {
+   "fama": 0.0269,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canzá": {
+   "fama": 0.0968,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4332,
+   "tendencia": null
+  },
+  "Atabaque rum": {
+   "fama": 0.027,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Berimbau gunga": {
+   "fama": 0.0593,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 342,
+   "tendencia": null
+  },
+  "Berimbau médio": {
+   "fama": 0.0331,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Berimbau viola": {
+   "fama": 0.0303,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuíca de lata": {
+   "fama": 0.0296,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tambor de onça": {
+   "fama": 0.0312,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Matraca de São João": {
+   "fama": 0.0374,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bombo": {
+   "fama": 0.0988,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2826,
+   "tendencia": null
+  },
+  "Tamboril": {
+   "fama": 0.125,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 10572,
+   "tendencia": null
+  },
+  "Txalaparta": {
+   "fama": 0.0241,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 132,
+   "tendencia": null
+  },
+  "Pandereta": {
+   "fama": 0.0136,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Zambomba": {
+   "fama": 0.0051,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cajón flamenco": {
+   "fama": 0.0275,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gaita de fole escocesa": {
+   "fama": 0.0277,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cornamusa": {
+   "fama": 0.1142,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 9852,
+   "tendencia": null
+  },
+  "Charamela": {
+   "fama": 0.0822,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1692,
+   "tendencia": null
+  },
+  "Sacabuxa": {
+   "fama": 0.0707,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1020,
+   "tendencia": null
+  },
+  "Corneto": {
+   "fama": 0.0665,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 636,
+   "tendencia": null
+  },
+  "Serpentão": {
+   "fama": 0.0623,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 690,
+   "tendencia": null
+  },
+  "Ofiocleide": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cromorne": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rauschpfeife": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flauta de bisel": {
+   "fama": 0.1175,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6810,
+   "tendencia": null
+  },
+  "Flauta de tamborileiro": {
+   "fama": 0.0237,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tin whistle": {
+   "fama": 0.0625,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 948,
+   "tendencia": null
+  },
+  "Pife": {
+   "fama": 0.0213,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Quena": {
+   "fama": 0.0762,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1056,
+   "tendencia": null
+  },
+  "Quenacho": {
+   "fama": 0.0148,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 84,
+   "tendencia": null
+  },
+  "Antara": {
+   "fama": 0.0045,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tarka": {
+   "fama": 0.0045,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caja vidalera": {
+   "fama": 0.0249,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cajón de tapeo": {
+   "fama": 0.0044,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marimba de chonta": {
+   "fama": 0.0222,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arpa llanera": {
+   "fama": 0.0043,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuatro porto-riquenho": {
+   "fama": 0.0313,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jarana": {
+   "fama": 0.013,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 48,
+   "tendencia": null
+  },
+  "Marimbol": {
+   "fama": 0.0042,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kalimba de caixa": {
+   "fama": 0.0385,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Balafon": {
+   "fama": 0.0605,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 876,
+   "tendencia": null
+  },
+  "Udu": {
+   "fama": 0.0633,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 612,
+   "tendencia": null
+  },
+  "Mbira dzavadzimba": {
+   "fama": 0.0041,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gankogui": {
+   "fama": 0.004,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kpanlogo": {
+   "fama": 0.004,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ashiko": {
+   "fama": 0.047,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 444,
+   "tendencia": null
+  },
+  "Bougarabou": {
+   "fama": 0.0039,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dundun": {
+   "fama": 0.0392,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 300,
+   "tendencia": null
+  },
+  "Sabar": {
+   "fama": 0.0338,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 228,
+   "tendencia": null
+  },
+  "Bendir": {
+   "fama": 0.0168,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 96,
+   "tendencia": null
+  },
+  "Riq": {
+   "fama": 0.0038,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tamborim de mão": {
+   "fama": 0.0312,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Daf": {
+   "fama": 0.0943,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4944,
+   "tendencia": null
+  },
+  "Frame drum": {
+   "fama": 0.0037,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tabla indiana": {
+   "fama": 0.0264,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pakhawaj": {
+   "fama": 0.0037,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ghatam": {
+   "fama": 0.0036,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kanjira": {
+   "fama": 0.0036,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tavil": {
+   "fama": 0.0036,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Nadaswaram": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Shehnai": {
+   "fama": 0.0443,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 396,
+   "tendencia": null
+  },
+  "Ektara": {
+   "fama": 0.0035,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dotara": {
+   "fama": 0.0152,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gopichand": {
+   "fama": 0.0034,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Morsing": {
+   "fama": 0.1008,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 7002,
+   "tendencia": null
+  },
+  "Sanxian": {
+   "fama": 0.0033,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ruan": {
+   "fama": 0.0207,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 120,
+   "tendencia": null
+  },
+  "Hulusi": {
+   "fama": 0.0033,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Xiao": {
+   "fama": 0.0401,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 324,
+   "tendencia": null
+  },
+  "Guqin": {
+   "fama": 0.0612,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 948,
+   "tendencia": null
+  },
+  "Bianzhong": {
+   "fama": 0.0032,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Muyu": {
+   "fama": 0.0031,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kagura suzu": {
+   "fama": 0.0031,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hichiriki": {
+   "fama": 0.032,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 216,
+   "tendencia": null
+  },
+  "Ryuteki": {
+   "fama": 0.003,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sho": {
+   "fama": 0.003,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taegeum": {
+   "fama": 0.003,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Janggu": {
+   "fama": 0.0344,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 246,
+   "tendencia": null
+  },
+  "Buk": {
+   "fama": 0.0134,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 84,
+   "tendencia": null
+  },
+  "Piri": {
+   "fama": 0.0246,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kkwaenggwari": {
+   "fama": 0.0028,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gong chinês": {
+   "fama": 0.0319,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gongo tailandês": {
+   "fama": 0.0239,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ranat": {
+   "fama": 0.0027,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Khim": {
+   "fama": 0.0027,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Khene": {
+   "fama": 0.0027,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Đàn bầu": {
+   "fama": 0.0303,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Đàn tranh": {
+   "fama": 0.0026,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kecapi": {
+   "fama": 0.0026,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Suling": {
+   "fama": 0.0025,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rebab": {
+   "fama": 0.0516,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 600,
+   "tendencia": null
+  },
+  "Kendang": {
+   "fama": 0.0025,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sasando": {
+   "fama": 0.013,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 84,
+   "tendencia": null
+  },
+  "Bonang": {
+   "fama": 0.0024,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saron": {
+   "fama": 0.0024,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gender": {
+   "fama": 0.0242,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 150,
+   "tendencia": null
+  },
+  "Kenong": {
+   "fama": 0.0023,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Didjeridu de bambu": {
+   "fama": 0.0286,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bullroarer": {
+   "fama": 0.0023,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tambor de sapo": {
+   "fama": 0.0296,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lithophone": {
+   "fama": 0.0022,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vibrafone de pedra": {
+   "fama": 0.0267,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Órgão de tubos": {
+   "fama": 0.2647,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 70.0,
+   "visitas_pt_12m": 12012,
+   "tendencia": null
+  },
+  "Órgão de foles": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Harmônio indiano": {
+   "fama": 0.0225,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Órgão a vapor": {
+   "fama": 0.133,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 11946,
+   "tendencia": null
+  },
+  "Realejo": {
+   "fama": 0.1205,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2178,
+   "tendencia": null
+  },
+  "Pianola": {
+   "fama": 0.0785,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1422,
+   "tendencia": null
+  },
+  "Piano de brinquedo": {
+   "fama": 0.0308,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Piano preparado": {
+   "fama": 0.0625,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 312,
+   "tendencia": null
+  },
+  "Fortepiano": {
+   "fama": 0.0832,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2148,
+   "tendencia": null
+  },
+  "Clavicórdio": {
+   "fama": 0.097,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3906,
+   "tendencia": null
+  },
+  "Virginal": {
+   "fama": 0.083,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1362,
+   "tendencia": null
+  },
+  "Espineta": {
+   "fama": 0.0806,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1716,
+   "tendencia": null
+  },
+  "Harpsichord": {
+   "fama": 0.1072,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 10356,
+   "tendencia": null
+  },
+  "Celesta de teclado": {
+   "fama": 0.024,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Acordeão piano": {
+   "fama": 0.0268,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Teclado arranjador": {
+   "fama": 0.0283,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sintetizador modular": {
+   "fama": 0.0544,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 270,
+   "tendencia": null
+  },
+  "Arpa de laser": {
+   "fama": 0.0309,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guitarra de doze cordas": {
+   "fama": 0.0729,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 546,
+   "tendencia": null
+  },
+  "Guitarra barítono": {
+   "fama": 0.0665,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 468,
+   "tendencia": null
+  },
+  "Baixo fretless": {
+   "fama": 0.0781,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 582,
+   "tendencia": null
+  },
+  "Baixo de seis cordas": {
+   "fama": 0.0335,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Violão de cordas de aço": {
+   "fama": 0.0316,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Violino elétrico": {
+   "fama": 0.0296,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Violoncelo elétrico": {
+   "fama": 0.0279,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Contrabaixo elétrico vertical": {
+   "fama": 0.0291,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Viola da gamba": {
+   "fama": 0.0965,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2394,
+   "tendencia": null
+  },
+  "Viola d'amore": {
+   "fama": 0.0642,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 372,
+   "tendencia": null
+  },
+  "Baryton": {
+   "fama": 0.0013,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rabeca de bacia": {
+   "fama": 0.0253,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arpeggione": {
+   "fama": 0.0268,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 180,
+   "tendencia": null
+  },
+  "Trompete piccolo": {
+   "fama": 0.1203,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 8916,
+   "tendencia": null
+  },
+  "Trompete de vara": {
+   "fama": 0.0277,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cornetim": {
+   "fama": 0.0137,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clarim": {
+   "fama": 0.0924,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2364,
+   "tendencia": null
+  },
+  "Trombone de vara": {
    "fama": 0.0274,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -3368,12 +3130,252 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Panela": {
-   "fama": 0.0279,
+  "Trombone de pistão": {
+   "fama": 0.0249,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Trombone baixo": {
+   "fama": 0.0598,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 294,
+   "tendencia": null
+  },
+  "Tuba wagneriana": {
+   "fama": 0.019,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Helicon": {
+   "fama": 0.05,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 384,
+   "tendencia": null
+  },
+  "Mellofone": {
+   "fama": 0.0009,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alto horn": {
+   "fama": 0.0355,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saxhorn": {
+   "fama": 0.074,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1524,
+   "tendencia": null
+  },
+  "Tuba de pistos": {
+   "fama": 0.0223,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saxofone sopranino": {
+   "fama": 0.0734,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 930,
+   "tendencia": null
+  },
+  "Saxofone baixo": {
+   "fama": 0.1264,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 9528,
+   "tendencia": null
+  },
+  "Saxofone contrabaixo": {
+   "fama": 0.0245,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clarinete requinta": {
+   "fama": 0.0699,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 798,
+   "tendencia": null
+  },
+  "Clarinete em lá": {
+   "fama": 0.0354,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clarinete alto": {
+   "fama": 0.0688,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 480,
+   "tendencia": null
+  },
+  "Corne di bassetto": {
+   "fama": 0.0237,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Oboé d'amore": {
+   "fama": 0.0746,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 960,
+   "tendencia": null
+  },
+  "Heckelfone": {
+   "fama": 0.0363,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 300,
+   "tendencia": null
+  },
+  "Sarrusofone": {
+   "fama": 0.0478,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 540,
+   "tendencia": null
+  },
+  "Flauta baixo": {
+   "fama": 0.0723,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 540,
+   "tendencia": null
+  },
+  "Flauta contralto": {
+   "fama": 0.0532,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 282,
+   "tendencia": null
+  },
+  "Flauta irlandesa": {
+   "fama": 0.0264,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flauta nativa americana": {
+   "fama": 0.0296,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flauta de osso": {
+   "fama": 0.0273,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Apito de pássaro": {
+   "fama": 0.0269,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gaita de lata": {
+   "fama": 0.0271,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pente com papel": {
+   "fama": 0.0351,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Colher": {
+   "fama": 0.1013,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2388,
+   "tendencia": null
+  },
+  "Serrote musical": {
+   "fama": 0.0269,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tábua de lavar": {
+   "fama": 0.0287,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Garrafa": {
+   "fama": 0.1025,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2730,
+   "tendencia": null
+  },
+  "Panela": {
+   "fama": 0.1027,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2700,
    "tendencia": null
   },
   "Tamancos": {
@@ -3385,19 +3387,19 @@
    "tendencia": null
   },
   "Palmas": {
-   "fama": 0.1872,
+   "fama": 0.2867,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 73404,
    "tendencia": null
   },
   "Beatbox": {
-   "fama": 0.1959,
+   "fama": 0.2256,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1884,
    "tendencia": null
   }
  }

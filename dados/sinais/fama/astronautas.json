@@ -1,34 +1,21 @@
 {
  "categoria": "astronautas",
- "gerado_em": "2026-10-24",
+ "gerado_em": "2026-10-28",
  "sinais": [
   "conhecem",
   "lembranca",
   "visitas"
  ],
- "meses_de_visitas": [
-  "202609",
-  "202608",
-  "202607",
-  "202606",
-  "202605",
-  "202604",
-  "202603",
-  "202602",
-  "202601",
-  "202512",
-  "202511",
-  "202510"
- ],
+ "meses_de_visitas": [],
  "pesos": {
   "lembranca": 0.65,
   "conhecem": 0.1,
-  "visitas": 0.07
+  "visitas": 0.14
  },
  "estimadas_pelo_llm": 680,
  "respostas": {
   "Byron Lichtenberg": {
-   "fama": 0.0132,
+   "fama": 0.0231,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -36,15 +23,15 @@
    "tendencia": null
   },
   "Eytan Stibbe": {
-   "fama": 0.013,
+   "fama": 0.0534,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 265,
-   "tendencia": 0.32
+   "tendencia": null
   },
   "Nail Sattarov": {
-   "fama": 0.0062,
+   "fama": 0.0102,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -52,7 +39,7 @@
    "tendencia": null
   },
   "Oleg Grigoriyevich Kononenko": {
-   "fama": 0.0115,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -60,23 +47,23 @@
    "tendencia": null
   },
   "Michael Collins": {
-   "fama": 0.4412,
+   "fama": 0.4319,
    "lembranca_em_1000": 8.0,
    "estimada": true,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 11983,
-   "tendencia": 2.02
+   "tendencia": null
   },
   "Vladimir Komarov": {
-   "fama": 0.0824,
+   "fama": 0.1086,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 5217,
-   "tendencia": 1.59
+   "tendencia": null
   },
   "John Shoffner": {
-   "fama": 0.0192,
+   "fama": 0.0343,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -84,15 +71,15 @@
    "tendencia": null
   },
   "Hayley Arceneaux": {
-   "fama": 0.0767,
+   "fama": 0.083,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 391,
-   "tendencia": 2.01
+   "tendencia": null
   },
   "Chistopher Sembroski": {
-   "fama": 0.0192,
+   "fama": 0.0343,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -100,15 +87,15 @@
    "tendencia": null
   },
   "Charles Walker": {
-   "fama": 0.0219,
+   "fama": 0.0457,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 175,
-   "tendencia": 0.84
+   "tendencia": null
   },
   "Charles Gemar": {
-   "fama": 0.0136,
+   "fama": 0.0238,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -116,7 +103,7 @@
    "tendencia": null
   },
   "Nora Al Matrooshi": {
-   "fama": 0.0202,
+   "fama": 0.0359,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -124,7 +111,7 @@
    "tendencia": null
   },
   "Mohammad Al Mulla": {
-   "fama": 0.0149,
+   "fama": 0.0263,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -132,7 +119,7 @@
    "tendencia": null
   },
   "Charles Precourt": {
-   "fama": 0.0197,
+   "fama": 0.035,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -140,15 +127,15 @@
    "tendencia": null
   },
   "Yozo Hirano": {
-   "fama": 0.0334,
+   "fama": 0.0395,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 125,
-   "tendencia": 1.91
+   "tendencia": null
   },
   "Tang Hongbo": {
-   "fama": 0.0205,
+   "fama": 0.0366,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -156,31 +143,31 @@
    "tendencia": null
   },
   "Sirisha Bandla": {
-   "fama": 0.0108,
+   "fama": 0.0433,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 154,
-   "tendencia": 0.25
+   "tendencia": null
   },
   "John Young": {
-   "fama": 0.1446,
+   "fama": 0.1561,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 3540,
-   "tendencia": 1.9
+   "tendencia": null
   },
   "Chris Hadfield": {
-   "fama": 0.2306,
+   "fama": 0.2315,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 1315,
-   "tendencia": 1.88
+   "tendencia": null
   },
   "Walter Villadei": {
-   "fama": 0.0122,
+   "fama": 0.0212,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -188,7 +175,7 @@
    "tendencia": null
   },
   "Glen de Vries": {
-   "fama": 0.0182,
+   "fama": 0.0324,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -196,15 +183,15 @@
    "tendencia": null
   },
   "Harrison Schmitt": {
-   "fama": 0.1315,
+   "fama": 0.1438,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 5723,
-   "tendencia": 2.34
+   "tendencia": null
   },
   "Alexandr Grebienkin": {
-   "fama": 0.0156,
+   "fama": 0.0275,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -212,7 +199,7 @@
    "tendencia": null
   },
   "Konstantin Borisov": {
-   "fama": 0.02,
+   "fama": 0.0356,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -220,23 +207,23 @@
    "tendencia": null
   },
   "Anil Menon": {
-   "fama": 0.0478,
+   "fama": 0.0552,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 293,
-   "tendencia": 2.76
+   "tendencia": null
   },
   "Nichole Ayers": {
-   "fama": 0.0507,
+   "fama": 0.0586,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 352,
-   "tendencia": 2.09
+   "tendencia": null
   },
   "Marcos Berríos": {
-   "fama": 0.0182,
+   "fama": 0.0324,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -244,23 +231,23 @@
    "tendencia": null
   },
   "Andre Douglas": {
-   "fama": 0.068,
+   "fama": 0.0787,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1044,
-   "tendencia": 19.47
+   "tendencia": null
   },
   "Deniz Burnham": {
-   "fama": 0.0346,
+   "fama": 0.045,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 169,
-   "tendencia": 1.6
+   "tendencia": null
   },
   "Jessica Wittner": {
-   "fama": 0.0203,
+   "fama": 0.0361,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -268,47 +255,47 @@
    "tendencia": null
   },
   "Jack Hathaway": {
-   "fama": 0.0423,
+   "fama": 0.0489,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 208,
-   "tendencia": 3.08
+   "tendencia": null
   },
   "Christopher Williams": {
-   "fama": 0.0384,
+   "fama": 0.0685,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 601,
-   "tendencia": 1.02
+   "tendencia": null
   },
   "Walter Schirra": {
-   "fama": 0.0888,
+   "fama": 0.1103,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 1710,
-   "tendencia": 1.5
+   "tendencia": null
   },
   "Virgil Grissom": {
-   "fama": 0.1893,
+   "fama": 0.1959,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 3449,
-   "tendencia": 1.96
+   "tendencia": null
   },
   "Anna Menon": {
-   "fama": 0.0494,
+   "fama": 0.058,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 341,
-   "tendencia": 1.94
+   "tendencia": null
   },
   "Scott Poteet": {
-   "fama": 0.0195,
+   "fama": 0.0346,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -316,31 +303,31 @@
    "tendencia": null
   },
   "Sarah Gillis": {
-   "fama": 0.0481,
+   "fama": 0.0579,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 192,
-   "tendencia": 1.63
+   "tendencia": null
   },
   "James Lovell": {
-   "fama": 0.3512,
+   "fama": 0.3494,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 13327,
-   "tendencia": 2.82
+   "tendencia": null
   },
   "Hamish Harding": {
-   "fama": 0.0485,
+   "fama": 0.0882,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1742,
-   "tendencia": 1.0
+   "tendencia": null
   },
   "Cai Xuzhe": {
-   "fama": 0.0167,
+   "fama": 0.0296,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -348,23 +335,23 @@
    "tendencia": null
   },
   "Michael J. Adams": {
-   "fama": 0.0197,
+   "fama": 0.043,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 151,
-   "tendencia": 0.8
+   "tendencia": null
   },
   "Charles Duke": {
-   "fama": 0.1149,
+   "fama": 0.1416,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 5094,
-   "tendencia": 1.48
+   "tendencia": null
   },
   "Zhang Lu": {
-   "fama": 0.011,
+   "fama": 0.0191,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -372,15 +359,15 @@
    "tendencia": null
   },
   "Marcus Wandt": {
-   "fama": 0.012,
+   "fama": 0.0487,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 206,
-   "tendencia": 0.47
+   "tendencia": null
   },
   "Daniel Barry": {
-   "fama": 0.0165,
+   "fama": 0.0291,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -388,7 +375,7 @@
    "tendencia": null
   },
   "Rayyanah Barnawi": {
-   "fama": 0.0169,
+   "fama": 0.0299,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -396,15 +383,15 @@
    "tendencia": null
   },
   "Claude Nicollier": {
-   "fama": 0.0297,
+   "fama": 0.0425,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 147,
-   "tendencia": 1.37
+   "tendencia": null
   },
   "David Hilmers": {
-   "fama": 0.0187,
+   "fama": 0.0332,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -412,7 +399,7 @@
    "tendencia": null
   },
   "David Leestma": {
-   "fama": 0.0195,
+   "fama": 0.0346,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -420,15 +407,15 @@
    "tendencia": null
   },
   "Charles Edward Jones": {
-   "fama": 0.0319,
+   "fama": 0.0396,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 126,
-   "tendencia": 1.74
+   "tendencia": null
   },
   "Alper Gezeravcı": {
-   "fama": 0.0191,
+   "fama": 0.0341,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -436,7 +423,7 @@
    "tendencia": null
   },
   "Pavel Popovich": {
-   "fama": 0.0184,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -444,7 +431,7 @@
    "tendencia": null
   },
   "Gui Haichao": {
-   "fama": 0.0139,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -452,7 +439,7 @@
    "tendencia": null
   },
   "Zhu Yangzhu": {
-   "fama": 0.0171,
+   "fama": 0.0304,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -460,7 +447,7 @@
    "tendencia": null
   },
   "Nadezhda Kuzhelnaya": {
-   "fama": 0.0086,
+   "fama": 0.0146,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -468,15 +455,15 @@
    "tendencia": null
   },
   "Douglas Hurley": {
-   "fama": 0.076,
+   "fama": 0.0904,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 322,
-   "tendencia": 1.37
+   "tendencia": null
   },
   "Tang Shengjie": {
-   "fama": 0.0136,
+   "fama": 0.0238,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -484,7 +471,7 @@
    "tendencia": null
   },
   "Jiang Xinlin": {
-   "fama": 0.0141,
+   "fama": 0.0248,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -492,15 +479,15 @@
    "tendencia": null
   },
   "Donald Thomas": {
-   "fama": 0.0578,
+   "fama": 0.0669,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 551,
-   "tendencia": 5.8
+   "tendencia": null
   },
   "Donald McMonagle": {
-   "fama": 0.0137,
+   "fama": 0.0241,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -508,7 +495,7 @@
    "tendencia": null
   },
   "Prasanth Nair": {
-   "fama": 0.0122,
+   "fama": 0.0212,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -516,7 +503,7 @@
    "tendencia": null
   },
   "Shubhanshu Shukla": {
-   "fama": 0.0281,
+   "fama": 0.0401,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
@@ -524,7 +511,7 @@
    "tendencia": null
   },
   "Ajit Krishnan": {
-   "fama": 0.01,
+   "fama": 0.0173,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -532,7 +519,7 @@
    "tendencia": null
   },
   "Angad Pratap": {
-   "fama": 0.0089,
+   "fama": 0.0152,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -540,7 +527,7 @@
    "tendencia": null
   },
   "Li Cong": {
-   "fama": 0.0154,
+   "fama": 0.0272,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -548,7 +535,7 @@
    "tendencia": null
   },
   "Li Guangsu": {
-   "fama": 0.0167,
+   "fama": 0.0296,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -556,7 +543,7 @@
    "tendencia": null
   },
   "Philippe Perrin": {
-   "fama": 0.0193,
+   "fama": 0.0344,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -564,7 +551,7 @@
    "tendencia": null
   },
   "John Bull": {
-   "fama": 0.0198,
+   "fama": 0.0352,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -572,15 +559,15 @@
    "tendencia": null
   },
   "Bertalan Farkas": {
-   "fama": 0.0239,
+   "fama": 0.0428,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 150,
-   "tendencia": 1.0
+   "tendencia": null
   },
   "Kevin Kregel": {
-   "fama": 0.0214,
+   "fama": 0.0383,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -588,7 +575,7 @@
    "tendencia": null
   },
   "Kenneth Reightler Jr.": {
-   "fama": 0.0117,
+   "fama": 0.0204,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -596,7 +583,7 @@
    "tendencia": null
   },
   "Peter Wisoff": {
-   "fama": 0.0154,
+   "fama": 0.0272,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -604,7 +591,7 @@
    "tendencia": null
   },
   "Ronald Sega": {
-   "fama": 0.016,
+   "fama": 0.0283,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -612,7 +599,7 @@
    "tendencia": null
   },
   "Lawrence J. DeLucas": {
-   "fama": 0.0113,
+   "fama": 0.0195,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -620,23 +607,23 @@
    "tendencia": null
   },
   "Thomas Jones": {
-   "fama": 0.0262,
+   "fama": 0.0443,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 162,
-   "tendencia": 1.08
+   "tendencia": null
   },
   "Robert Cabana": {
-   "fama": 0.0136,
+   "fama": 0.056,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 305,
-   "tendencia": 0.47
+   "tendencia": null
   },
   "Jay Buckey": {
-   "fama": 0.0128,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -644,15 +631,15 @@
    "tendencia": null
   },
   "Manley Carter": {
-   "fama": 0.029,
+   "fama": 0.0396,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 126,
-   "tendencia": 1.47
+   "tendencia": null
   },
   "John Casper": {
-   "fama": 0.0139,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -660,7 +647,7 @@
    "tendencia": null
   },
   "Roy Bridges Jr.": {
-   "fama": 0.0186,
+   "fama": 0.033,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -668,7 +655,7 @@
    "tendencia": null
   },
   "Michel Tognini": {
-   "fama": 0.0159,
+   "fama": 0.0281,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -676,7 +663,7 @@
    "tendencia": null
   },
   "Jeffrey Ashby": {
-   "fama": 0.0163,
+   "fama": 0.0289,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -684,63 +671,63 @@
    "tendencia": null
   },
   "Josh Cassada": {
-   "fama": 0.0337,
+   "fama": 0.0426,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 148,
-   "tendencia": 1.69
+   "tendencia": null
   },
   "Nick Hague": {
-   "fama": 0.0731,
+   "fama": 0.0788,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 312,
-   "tendencia": 3.0
+   "tendencia": null
   },
   "Victor J. Glover": {
-   "fama": 0.2828,
+   "fama": 0.2879,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 19876,
-   "tendencia": 9.97
+   "tendencia": null
   },
   "Christina Hammock-Koch": {
-   "fama": 0.2328,
+   "fama": 0.2445,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 39033,
-   "tendencia": 14.04
+   "tendencia": null
   },
   "Anne McClain": {
-   "fama": 0.0688,
+   "fama": 0.0825,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 727,
-   "tendencia": 1.72
+   "tendencia": null
   },
   "Nicole Mann": {
-   "fama": 0.0659,
+   "fama": 0.0736,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 448,
-   "tendencia": 3.19
+   "tendencia": null
   },
   "Andrew R. Morgan": {
-   "fama": 0.0442,
+   "fama": 0.0511,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 234,
-   "tendencia": 2.3
+   "tendencia": null
   },
   "Nikolai Tikhonov (cosmonauta)": {
-   "fama": 0.0095,
+   "fama": 0.0163,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -748,7 +735,7 @@
    "tendencia": null
   },
   "Greg Linteris": {
-   "fama": 0.0134,
+   "fama": 0.0234,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -756,15 +743,15 @@
    "tendencia": null
   },
   "Mark Brown": {
-   "fama": 0.0278,
+   "fama": 0.0481,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 199,
-   "tendencia": 1.05
+   "tendencia": null
   },
   "Richard Searfoss": {
-   "fama": 0.0143,
+   "fama": 0.0251,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -772,15 +759,15 @@
    "tendencia": null
   },
   "Michael Clifford": {
-   "fama": 0.0106,
+   "fama": 0.0424,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 146,
-   "tendencia": 0.43
+   "tendencia": null
   },
   "Michael McCulley": {
-   "fama": 0.013,
+   "fama": 0.0227,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -788,7 +775,7 @@
    "tendencia": null
   },
   "Stephen Oswald": {
-   "fama": 0.0188,
+   "fama": 0.0335,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -796,7 +783,7 @@
    "tendencia": null
   },
   "Thomas Hennen": {
-   "fama": 0.0124,
+   "fama": 0.0216,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -804,7 +791,7 @@
    "tendencia": null
   },
   "William Pailes": {
-   "fama": 0.0136,
+   "fama": 0.0238,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -812,7 +799,7 @@
    "tendencia": null
   },
   "Jerry Linenger": {
-   "fama": 0.0206,
+   "fama": 0.0368,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -820,15 +807,15 @@
    "tendencia": null
   },
   "Guy Gardner": {
-   "fama": 0.0316,
+   "fama": 0.045,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 169,
-   "tendencia": 1.38
+   "tendencia": null
   },
   "Kevin Chilton": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -836,7 +823,7 @@
    "tendencia": null
   },
   "Miguel Sebastián Gascón": {
-   "fama": 0.0119,
+   "fama": 0.0208,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -844,7 +831,7 @@
    "tendencia": null
   },
   "Kent Rominger": {
-   "fama": 0.0202,
+   "fama": 0.0359,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -852,7 +839,7 @@
    "tendencia": null
   },
   "Samuel Durrance": {
-   "fama": 0.0153,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -860,7 +847,7 @@
    "tendencia": null
   },
   "Ronald Parise": {
-   "fama": 0.0119,
+   "fama": 0.0208,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -868,7 +855,7 @@
    "tendencia": null
   },
   "John-David Bartoe": {
-   "fama": 0.0126,
+   "fama": 0.022,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -876,15 +863,15 @@
    "tendencia": null
   },
   "Luca Parmitano": {
-   "fama": 0.0996,
+   "fama": 0.1066,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 772,
-   "tendencia": 6.5
+   "tendencia": null
   },
   "Terence Henricks": {
-   "fama": 0.0139,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -892,7 +879,7 @@
    "tendencia": null
   },
   "William Readdy": {
-   "fama": 0.0146,
+   "fama": 0.0257,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -900,23 +887,23 @@
    "tendencia": null
   },
   "Norman Thagard": {
-   "fama": 0.031,
+   "fama": 0.0545,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 282,
-   "tendencia": 1.03
+   "tendencia": null
   },
   "Yang Liwei": {
-   "fama": 0.0942,
+   "fama": 0.1071,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 792,
-   "tendencia": 1.68
+   "tendencia": null
   },
   "Gary Payton (astronauta)": {
-   "fama": 0.0176,
+   "fama": 0.0313,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -924,7 +911,7 @@
    "tendencia": null
   },
   "David Low": {
-   "fama": 0.0203,
+   "fama": 0.0363,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -932,31 +919,31 @@
    "tendencia": null
   },
   "Gherman Titov": {
-   "fama": 0.1676,
+   "fama": 0.1773,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 1440,
-   "tendencia": 1.71
+   "tendencia": null
   },
   "Svetlana Savitskaya": {
-   "fama": 0.0369,
+   "fama": 0.0607,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 394,
-   "tendencia": 1.13
+   "tendencia": null
   },
   "Aleksei Leonov": {
-   "fama": 0.2447,
+   "fama": 0.2453,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 2757,
-   "tendencia": 5.47
+   "tendencia": null
   },
   "Gregory Harbaugh": {
-   "fama": 0.0128,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -964,7 +951,7 @@
    "tendencia": null
   },
   "Pavel Belyayev": {
-   "fama": 0.0302,
+   "fama": 0.0544,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -972,87 +959,87 @@
    "tendencia": null
   },
   "Eugene Cernan": {
-   "fama": 0.195,
+   "fama": 0.2045,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 5484,
-   "tendencia": 1.9
+   "tendencia": null
   },
   "Valery Bykovsky": {
-   "fama": 0.0277,
+   "fama": 0.0507,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 230,
-   "tendencia": 0.98
+   "tendencia": null
   },
   "Neil Armstrong": {
-   "fama": 1.0,
+   "fama": 0.9999,
    "lembranca_em_1000": 380.0,
    "estimada": true,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 76452,
-   "tendencia": 1.82
+   "tendencia": null
   },
   "Wally Funk": {
-   "fama": 0.1042,
+   "fama": 0.112,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1032,
-   "tendencia": 11.43
+   "tendencia": null
   },
   "William Shatner": {
-   "fama": 0.3297,
+   "fama": 0.3606,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 20992,
-   "tendencia": 1.19
+   "tendencia": null
   },
   "Thomas Reiter": {
-   "fama": 0.0218,
+   "fama": 0.0426,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 148,
-   "tendencia": 0.9
+   "tendencia": null
   },
   "Jeremy Hansen": {
-   "fama": 0.1694,
+   "fama": 0.1816,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 12284,
-   "tendencia": 8.28
+   "tendencia": null
   },
   "Paolo Nespoli": {
-   "fama": 0.0541,
+   "fama": 0.0774,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 289,
-   "tendencia": 0.97
+   "tendencia": null
   },
   "Alan Shepard": {
-   "fama": 0.2913,
+   "fama": 0.3057,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 7683,
-   "tendencia": 1.51
+   "tendencia": null
   },
   "Anousheh Ansari": {
-   "fama": 0.0641,
+   "fama": 0.0911,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 607,
-   "tendencia": 1.06
+   "tendencia": null
   },
   "Carl Meade": {
-   "fama": 0.0117,
+   "fama": 0.0204,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1060,31 +1047,31 @@
    "tendencia": null
   },
   "Karol Bobko": {
-   "fama": 0.0311,
+   "fama": 0.0463,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 181,
-   "tendencia": 1.29
+   "tendencia": null
   },
   "John Glenn": {
-   "fama": 0.4019,
+   "fama": 0.4284,
    "lembranca_em_1000": 8.0,
    "estimada": true,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 9933,
-   "tendencia": 1.03
+   "tendencia": null
   },
   "Anna Kikina": {
-   "fama": 0.0455,
+   "fama": 0.0526,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 254,
-   "tendencia": 2.43
+   "tendencia": null
   },
   "William Fisher": {
-   "fama": 0.0216,
+   "fama": 0.0386,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1092,7 +1079,7 @@
    "tendencia": null
   },
   "Blaine Hammond": {
-   "fama": 0.0143,
+   "fama": 0.0251,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1100,15 +1087,15 @@
    "tendencia": null
   },
   "Frank Borman": {
-   "fama": 0.1218,
+   "fama": 0.1325,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 3114,
-   "tendencia": 2.24
+   "tendencia": null
   },
   "Mario Runco Jr.": {
-   "fama": 0.0224,
+   "fama": 0.0401,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1116,7 +1103,7 @@
    "tendencia": null
   },
   "Martin Fettman": {
-   "fama": 0.0115,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1124,23 +1111,23 @@
    "tendencia": null
   },
   "William Anders": {
-   "fama": 0.1147,
+   "fama": 0.1242,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1993,
-   "tendencia": 2.13
+   "tendencia": null
   },
   "Michael Baker": {
-   "fama": 0.0217,
+   "fama": 0.0412,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 137,
-   "tendencia": 0.93
+   "tendencia": null
   },
   "Zhai Zhigang": {
-   "fama": 0.0212,
+   "fama": 0.0378,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1148,7 +1135,7 @@
    "tendencia": null
   },
   "Drew Gaffney": {
-   "fama": 0.013,
+   "fama": 0.0227,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1156,7 +1143,7 @@
    "tendencia": null
   },
   "Sergei Zalyotin": {
-   "fama": 0.0013,
+   "fama": 0.0012,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1164,7 +1151,7 @@
    "tendencia": null
   },
   "Sidney Gutierrez": {
-   "fama": 0.0212,
+   "fama": 0.0378,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1172,7 +1159,7 @@
    "tendencia": null
   },
   "Robert Springer": {
-   "fama": 0.0139,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1180,7 +1167,7 @@
    "tendencia": null
   },
   "Richard Richards": {
-   "fama": 0.0151,
+   "fama": 0.0266,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1188,7 +1175,7 @@
    "tendencia": null
   },
   "Albert Sacco Jr.": {
-   "fama": 0.0154,
+   "fama": 0.0272,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1196,47 +1183,47 @@
    "tendencia": null
   },
   "Dennis Tito": {
-   "fama": 0.1246,
+   "fama": 0.1302,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 874,
-   "tendencia": 2.16
+   "tendencia": null
   },
   "Yi So-yeon": {
-   "fama": 0.0365,
+   "fama": 0.057,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 266,
-   "tendencia": 1.13
+   "tendencia": null
   },
   "Denis Matveev": {
-   "fama": 0.0392,
+   "fama": 0.0453,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 171,
-   "tendencia": 3.38
+   "tendencia": null
   },
   "Sergey Prokopyev (cosmonauta)": {
-   "fama": 0.0331,
+   "fama": 0.0424,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 146,
-   "tendencia": 1.65
+   "tendencia": null
   },
   "Charles Conrad": {
-   "fama": 0.1189,
+   "fama": 0.1291,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 2600,
-   "tendencia": 2.08
+   "tendencia": null
   },
   "Hans Schlegel": {
-   "fama": 0.0191,
+   "fama": 0.0341,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1244,7 +1231,7 @@
    "tendencia": null
   },
   "Klaus-Dietrich Flade": {
-   "fama": 0.0191,
+   "fama": 0.0341,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1252,7 +1239,7 @@
    "tendencia": null
   },
   "Ernst Messerschmid": {
-   "fama": 0.0154,
+   "fama": 0.0272,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1260,23 +1247,23 @@
    "tendencia": null
   },
   "Gerhard Thiele": {
-   "fama": 0.0122,
+   "fama": 0.0498,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 219,
-   "tendencia": 0.33
+   "tendencia": null
   },
   "Ulf Merbold": {
-   "fama": 0.03,
+   "fama": 0.0443,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 134,
-   "tendencia": 1.2
+   "tendencia": null
   },
   "Reinhard Furrer": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1284,7 +1271,7 @@
    "tendencia": null
   },
   "Reinhold Ewald": {
-   "fama": 0.0173,
+   "fama": 0.0306,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1292,7 +1279,7 @@
    "tendencia": null
   },
   "Ulrich Walter": {
-   "fama": 0.0167,
+   "fama": 0.0296,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1300,23 +1287,23 @@
    "tendencia": null
   },
   "Edward White": {
-   "fama": 0.1334,
+   "fama": 0.1514,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 2749,
-   "tendencia": 1.61
+   "tendencia": null
   },
   "Tracy Caldwell": {
-   "fama": 0.0351,
+   "fama": 0.0534,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 265,
-   "tendencia": 1.26
+   "tendencia": null
   },
   "Mary Cleave": {
-   "fama": 0.0182,
+   "fama": 0.0324,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1324,7 +1311,7 @@
    "tendencia": null
   },
   "Ivan Vagner": {
-   "fama": 0.0209,
+   "fama": 0.0373,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1332,15 +1319,15 @@
    "tendencia": null
   },
   "Ilan Ramon": {
-   "fama": 0.1043,
+   "fama": 0.115,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 2199,
-   "tendencia": 2.05
+   "tendencia": null
   },
   "Alexander Viktorenko": {
-   "fama": 0.0066,
+   "fama": 0.0109,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1348,175 +1335,175 @@
    "tendencia": null
   },
   "Buzz Aldrin": {
-   "fama": 0.8097,
+   "fama": 0.7866,
    "lembranca_em_1000": 90.0,
    "estimada": true,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 27676,
-   "tendencia": 1.63
+   "tendencia": null
   },
   "Mark Shuttleworth": {
-   "fama": 0.071,
+   "fama": 0.1149,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 2048,
-   "tendencia": 0.89
+   "tendencia": null
   },
   "Eileen Collins": {
-   "fama": 0.1277,
+   "fama": 0.1568,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 477,
-   "tendencia": 0.75
+   "tendencia": null
   },
   "Christa McAuliffe": {
-   "fama": 0.2492,
+   "fama": 0.265,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 7978,
-   "tendencia": 1.58
+   "tendencia": null
   },
   "Laurel Clark": {
-   "fama": 0.0899,
+   "fama": 0.1014,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 2009,
-   "tendencia": 2.2
+   "tendencia": null
   },
   "Naoko Yamazaki": {
-   "fama": 0.0227,
+   "fama": 0.0444,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 163,
-   "tendencia": 0.9
+   "tendencia": null
   },
   "Shannon Lucid": {
-   "fama": 0.0277,
+   "fama": 0.0531,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 261,
-   "tendencia": 0.93
+   "tendencia": null
   },
   "Chiaki Mukai": {
-   "fama": 0.0249,
+   "fama": 0.0495,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 215,
-   "tendencia": 0.89
+   "tendencia": null
   },
   "Barbara Morgan": {
-   "fama": 0.0667,
+   "fama": 0.0878,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1700,
-   "tendencia": 1.59
+   "tendencia": null
   },
   "Liu Yang": {
-   "fama": 0.0426,
+   "fama": 0.0595,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 209,
-   "tendencia": 1.2
+   "tendencia": null
   },
   "Peggy Whitson": {
-   "fama": 0.1781,
+   "fama": 0.1824,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 1904,
-   "tendencia": 2.15
+   "tendencia": null
   },
   "Nicole Stott": {
-   "fama": 0.0512,
+   "fama": 0.0738,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 802,
-   "tendencia": 1.37
+   "tendencia": null
   },
   "Claudie Haigneré": {
-   "fama": 0.0209,
+   "fama": 0.0548,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 287,
-   "tendencia": 0.68
+   "tendencia": null
   },
   "Anna Fisher": {
-   "fama": 0.0388,
+   "fama": 0.0686,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 604,
-   "tendencia": 1.03
+   "tendencia": null
   },
   "Helen Sharman": {
-   "fama": 0.0546,
+   "fama": 0.0678,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 328,
-   "tendencia": 1.56
+   "tendencia": null
   },
   "Kalpana Chawla": {
-   "fama": 0.1895,
+   "fama": 0.1963,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 4017,
-   "tendencia": 1.98
+   "tendencia": null
   },
   "Pamela Melroy": {
-   "fama": 0.0303,
+   "fama": 0.0551,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 291,
-   "tendencia": 0.99
+   "tendencia": null
   },
   "Megan McArthur": {
-   "fama": 0.0421,
+   "fama": 0.0521,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 248,
-   "tendencia": 1.76
+   "tendencia": null
   },
   "Shannon Walker": {
-   "fama": 0.0409,
+   "fama": 0.0486,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 205,
-   "tendencia": 1.89
+   "tendencia": null
   },
   "Julie Payette": {
-   "fama": 0.0277,
+   "fama": 0.0746,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 835,
-   "tendencia": 0.67
+   "tendencia": null
   },
   "Karen Nyberg": {
-   "fama": 0.0211,
+   "fama": 0.0435,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 155,
-   "tendencia": 0.85
+   "tendencia": null
   },
   "James Kelly": {
-   "fama": 0.0214,
+   "fama": 0.0383,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1524,7 +1511,7 @@
    "tendencia": null
   },
   "Paul Richards": {
-   "fama": 0.0212,
+   "fama": 0.0378,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1532,7 +1519,7 @@
    "tendencia": null
   },
   "Larry Connor": {
-   "fama": 0.021,
+   "fama": 0.0375,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1540,7 +1527,7 @@
    "tendencia": null
   },
   "Magomed Tolboyev": {
-   "fama": 0.0189,
+   "fama": 0.0337,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1548,15 +1535,15 @@
    "tendencia": null
   },
   "Charles Bolden Jr.": {
-   "fama": 0.0407,
+   "fama": 0.0577,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 336,
-   "tendencia": 1.4
+   "tendencia": null
   },
   "Vitali Sevastyanov": {
-   "fama": 0.0203,
+   "fama": 0.0361,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1564,39 +1551,39 @@
    "tendencia": null
   },
   "Patrick Baudry": {
-   "fama": 0.0202,
+   "fama": 0.0406,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 133,
-   "tendencia": 0.87
+   "tendencia": null
   },
   "Rhea Seddon": {
-   "fama": 0.0387,
+   "fama": 0.053,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 260,
-   "tendencia": 1.48
+   "tendencia": null
   },
   "Robert R. Gilruth": {
-   "fama": 0.0252,
+   "fama": 0.0426,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 148,
-   "tendencia": 1.08
+   "tendencia": null
   },
   "Vladimír Remek": {
-   "fama": 0.0247,
+   "fama": 0.043,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 151,
-   "tendencia": 1.04
+   "tendencia": null
   },
   "Yelena Kondakova": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1604,23 +1591,23 @@
    "tendencia": null
   },
   "Roberta Bondar": {
-   "fama": 0.0172,
+   "fama": 0.0605,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 391,
-   "tendencia": 0.55
+   "tendencia": null
   },
   "Michael Smith": {
-   "fama": 0.0729,
+   "fama": 0.0933,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 2287,
-   "tendencia": 1.67
+   "tendencia": null
   },
   "Kenneth Ham": {
-   "fama": 0.0199,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1628,7 +1615,7 @@
    "tendencia": null
   },
   "Joseph Tanner": {
-   "fama": 0.0163,
+   "fama": 0.0289,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1636,7 +1623,7 @@
    "tendencia": null
   },
   "Evgeny Tarelkin": {
-   "fama": 0.0086,
+   "fama": 0.0146,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1644,7 +1631,7 @@
    "tendencia": null
   },
   "Robert Michael White": {
-   "fama": 0.0207,
+   "fama": 0.037,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1652,7 +1639,7 @@
    "tendencia": null
   },
   "Tamara Jernigan": {
-   "fama": 0.0198,
+   "fama": 0.0352,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1660,7 +1647,7 @@
    "tendencia": null
   },
   "Andrei Babkin": {
-   "fama": 0.0144,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1668,15 +1655,15 @@
    "tendencia": null
   },
   "Ellen Baker": {
-   "fama": 0.019,
+   "fama": 0.0478,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 196,
-   "tendencia": 0.7
+   "tendencia": null
   },
   "Janet Kavandi": {
-   "fama": 0.0213,
+   "fama": 0.0381,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1684,7 +1671,7 @@
    "tendencia": null
   },
   "Aleksandr Misurkin": {
-   "fama": 0.0089,
+   "fama": 0.0152,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1692,7 +1679,7 @@
    "tendencia": null
   },
   "Nikolai Rukavishnikov": {
-   "fama": 0.0199,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1700,15 +1687,15 @@
    "tendencia": null
   },
   "Sergei Kud-Sverchkov": {
-   "fama": 0.0385,
+   "fama": 0.046,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 178,
-   "tendencia": 1.87
+   "tendencia": null
   },
   "Mary Weber": {
-   "fama": 0.0216,
+   "fama": 0.0386,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1716,7 +1703,7 @@
    "tendencia": null
   },
   "Philip K. Chapman": {
-   "fama": 0.0175,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1724,7 +1711,7 @@
    "tendencia": null
   },
   "Chen Dong": {
-   "fama": 0.0203,
+   "fama": 0.0363,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1732,23 +1719,23 @@
    "tendencia": null
   },
   "Patricia Robertson": {
-   "fama": 0.0239,
+   "fama": 0.0432,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 153,
-   "tendencia": 0.99
+   "tendencia": null
   },
   "David Scott": {
-   "fama": 0.1238,
+   "fama": 0.135,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 3573,
-   "tendencia": 1.99
+   "tendencia": null
   },
   "Igor Volk": {
-   "fama": 0.0209,
+   "fama": 0.0373,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1756,7 +1743,7 @@
    "tendencia": null
   },
   "Boris Morukov": {
-   "fama": 0.0206,
+   "fama": 0.0368,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1764,7 +1751,7 @@
    "tendencia": null
   },
   "Pierre Thuot": {
-   "fama": 0.0156,
+   "fama": 0.0275,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1772,15 +1759,15 @@
    "tendencia": null
   },
   "Sergei Volkov": {
-   "fama": 0.0206,
+   "fama": 0.0462,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 180,
-   "tendencia": 0.78
+   "tendencia": null
   },
   "Ye Guangfu": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1788,7 +1775,7 @@
    "tendencia": null
   },
   "Matthias Maurer": {
-   "fama": 0.0203,
+   "fama": 0.0361,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1796,15 +1783,15 @@
    "tendencia": null
   },
   "Toyohiro Akiyama": {
-   "fama": 0.0533,
+   "fama": 0.0616,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 415,
-   "tendencia": 4.85
+   "tendencia": null
   },
   "Mariam Fardous": {
-   "fama": 0.0119,
+   "fama": 0.0208,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1812,15 +1799,15 @@
    "tendencia": null
   },
   "Kathryn Thornton": {
-   "fama": 0.0274,
+   "fama": 0.0399,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 128,
-   "tendencia": 1.33
+   "tendencia": null
   },
   "Nancy Currie": {
-   "fama": 0.0205,
+   "fama": 0.0366,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1828,39 +1815,39 @@
    "tendencia": null
   },
   "Jan Davis": {
-   "fama": 0.0462,
+   "fama": 0.0734,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 782,
-   "tendencia": 1.19
+   "tendencia": null
   },
   "Edgar Mitchell": {
-   "fama": 0.0915,
+   "fama": 0.1252,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 2106,
-   "tendencia": 1.12
+   "tendencia": null
   },
   "Bonnie Dunbar": {
-   "fama": 0.0246,
+   "fama": 0.0437,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 157,
-   "tendencia": 1.01
+   "tendencia": null
   },
   "Patrick Forrester": {
-   "fama": 0.0191,
+   "fama": 0.0489,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 208,
-   "tendencia": 0.69
+   "tendencia": null
   },
   "Charles Hobaugh": {
-   "fama": 0.0211,
+   "fama": 0.0376,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1868,111 +1855,111 @@
    "tendencia": null
   },
   "James Irwin": {
-   "fama": 0.1002,
+   "fama": 0.1105,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 1725,
-   "tendencia": 1.99
+   "tendencia": null
   },
   "Jonny Kim": {
-   "fama": 0.0934,
+   "fama": 0.1239,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 6773,
-   "tendencia": 1.47
+   "tendencia": null
   },
   "Jasmin Moghbeli": {
-   "fama": 0.0381,
+   "fama": 0.0493,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 175,
-   "tendencia": 1.54
+   "tendencia": null
   },
   "Loral O'Hara": {
-   "fama": 0.0379,
+   "fama": 0.0473,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 191,
-   "tendencia": 1.73
+   "tendencia": null
   },
   "Zena Cardman": {
-   "fama": 0.015,
+   "fama": 0.0622,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 427,
-   "tendencia": 0.36
+   "tendencia": null
   },
   "Raja Chari": {
-   "fama": 0.0349,
+   "fama": 0.0498,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 219,
-   "tendencia": 1.38
+   "tendencia": null
   },
   "Matthew Dominick": {
-   "fama": 0.0404,
+   "fama": 0.0497,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 217,
-   "tendencia": 1.78
+   "tendencia": null
   },
   "Warren Hoburg": {
-   "fama": 0.0267,
+   "fama": 0.0389,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 121,
-   "tendencia": 1.33
+   "tendencia": null
   },
   "Kayla Barron": {
-   "fama": 0.0345,
+   "fama": 0.0491,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 210,
-   "tendencia": 1.39
+   "tendencia": null
   },
   "Jessica Watkins": {
-   "fama": 0.042,
+   "fama": 0.0535,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 267,
-   "tendencia": 1.67
+   "tendencia": null
   },
   "Michael Hopkins": {
-   "fama": 0.0451,
+   "fama": 0.0543,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 279,
-   "tendencia": 1.85
+   "tendencia": null
   },
   "Francisco Rubio": {
-   "fama": 0.0657,
+   "fama": 0.076,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 901,
-   "tendencia": 2.58
+   "tendencia": null
   },
   "Sian Proctor": {
-   "fama": 0.044,
+   "fama": 0.0626,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 247,
-   "tendencia": 1.17
+   "tendencia": null
   },
   "Robert Hines": {
-   "fama": 0.0213,
+   "fama": 0.0381,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -1980,15 +1967,15 @@
    "tendencia": null
   },
   "Alan Bean": {
-   "fama": 0.1334,
+   "fama": 0.1413,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 1596,
-   "tendencia": 1.96
+   "tendencia": null
   },
   "Gregory R. Wiseman": {
-   "fama": 0.129,
+   "fama": 0.1794,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 10.0,
@@ -1996,7 +1983,7 @@
    "tendencia": null
   },
   "Andrian Nikolayev": {
-   "fama": 0.0182,
+   "fama": 0.0324,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2004,31 +1991,31 @@
    "tendencia": null
   },
   "Gordon Cooper": {
-   "fama": 0.1086,
+   "fama": 0.129,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 2586,
-   "tendencia": 1.58
+   "tendencia": null
   },
   "Vladimir Shatalov": {
-   "fama": 0.0307,
+   "fama": 0.0511,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 234,
-   "tendencia": 1.11
+   "tendencia": null
   },
   "Ronald Evans": {
-   "fama": 0.0885,
+   "fama": 0.0998,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1842,
-   "tendencia": 2.09
+   "tendencia": null
   },
   "Sergei Krikalev": {
-   "fama": 0.0787,
+   "fama": 0.1103,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
@@ -2036,23 +2023,23 @@
    "tendencia": null
   },
   "Sheikh Muszaphar Shukor": {
-   "fama": 0.0116,
+   "fama": 0.0469,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 187,
-   "tendencia": 0.34
+   "tendencia": null
   },
   "Vladimir Kovalyonok": {
-   "fama": 0.0273,
+   "fama": 0.0417,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 141,
-   "tendencia": 1.24
+   "tendencia": null
   },
   "Jack D. Fischer": {
-   "fama": 0.0178,
+   "fama": 0.0315,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2060,151 +2047,151 @@
    "tendencia": null
   },
   "Ronald McNair": {
-   "fama": 0.0763,
+   "fama": 0.0953,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 2553,
-   "tendencia": 1.74
+   "tendencia": null
   },
   "Robert Crippen": {
-   "fama": 0.0683,
+   "fama": 0.0763,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 520,
-   "tendencia": 2.01
+   "tendencia": null
   },
   "Thomas Stafford": {
-   "fama": 0.064,
+   "fama": 0.0832,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1331,
-   "tendencia": 1.62
+   "tendencia": null
   },
   "Christer Fuglesang": {
-   "fama": 0.0202,
+   "fama": 0.0571,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 324,
-   "tendencia": 0.64
+   "tendencia": null
   },
   "Jeanette J. Epps": {
-   "fama": 0.033,
+   "fama": 0.0485,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 204,
-   "tendencia": 1.32
+   "tendencia": null
   },
   "Marcos Pontes": {
-   "fama": 0.9266,
+   "fama": 0.8963,
    "lembranca_em_1000": 180.0,
    "estimada": true,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 77039,
-   "tendencia": 1.72
+   "tendencia": null
   },
   "Valeri Polyakov": {
-   "fama": 0.0944,
+   "fama": 0.1181,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1432,
-   "tendencia": 1.35
+   "tendencia": null
   },
   "Thomas Mattingly": {
-   "fama": 0.0866,
+   "fama": 0.1003,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 3344,
-   "tendencia": 3.47
+   "tendencia": null
   },
   "Michael Anderson": {
-   "fama": 0.0757,
+   "fama": 0.0876,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1687,
-   "tendencia": 2.21
+   "tendencia": null
   },
   "Joseph Acaba": {
-   "fama": 0.0324,
+   "fama": 0.0425,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 147,
-   "tendencia": 1.58
+   "tendencia": null
   },
   "Fred Haise": {
-   "fama": 0.1331,
+   "fama": 0.1456,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 6315,
-   "tendencia": 2.91
+   "tendencia": null
   },
   "Richard Garriott": {
-   "fama": 0.0571,
+   "fama": 0.0869,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 920,
-   "tendencia": 1.11
+   "tendencia": null
   },
   "Kathleen Rubins": {
-   "fama": 0.0282,
+   "fama": 0.0464,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 182,
-   "tendencia": 1.12
+   "tendencia": null
   },
   "Kjell Lindgren": {
-   "fama": 0.0343,
+   "fama": 0.0395,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 125,
-   "tendencia": 2.05
+   "tendencia": null
   },
   "Francis Scobee": {
-   "fama": 0.0748,
+   "fama": 0.0963,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 2693,
-   "tendencia": 1.65
+   "tendencia": null
   },
   "Konstantin Feoktistov": {
-   "fama": 0.0286,
+   "fama": 0.0495,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 215,
-   "tendencia": 1.05
+   "tendencia": null
   },
   "Duane Carey": {
-   "fama": 0.0205,
+   "fama": 0.0442,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 161,
-   "tendencia": 0.81
+   "tendencia": null
   },
   "Michael Massimino": {
-   "fama": 0.0603,
+   "fama": 0.094,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1348,
-   "tendencia": 1.08
+   "tendencia": null
   },
   "Stephen Frick": {
-   "fama": 0.0176,
+   "fama": 0.0313,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2212,7 +2199,7 @@
    "tendencia": null
   },
   "William Gregory": {
-   "fama": 0.0192,
+   "fama": 0.0343,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2220,23 +2207,23 @@
    "tendencia": null
   },
   "Rakesh Sharma": {
-   "fama": 0.0475,
+   "fama": 0.0663,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 303,
-   "tendencia": 1.23
+   "tendencia": null
   },
   "Jenni Sidey": {
-   "fama": 0.0468,
+   "fama": 0.054,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 275,
-   "tendencia": 6.05
+   "tendencia": null
   },
   "Curtis Michel": {
-   "fama": 0.0141,
+   "fama": 0.0248,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2244,7 +2231,7 @@
    "tendencia": null
   },
   "Mark Vande Hei": {
-   "fama": 0.0211,
+   "fama": 0.0376,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2252,7 +2239,7 @@
    "tendencia": null
   },
   "Sergei Ryazansky": {
-   "fama": 0.0159,
+   "fama": 0.0281,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2260,39 +2247,39 @@
    "tendencia": null
   },
   "Willie McCool": {
-   "fama": 0.076,
+   "fama": 0.088,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1718,
-   "tendencia": 2.11
+   "tendencia": null
   },
   "Scott Carpenter": {
-   "fama": 0.0779,
+   "fama": 0.0925,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 655,
-   "tendencia": 1.6
+   "tendencia": null
   },
   "Donald Slayton": {
-   "fama": 0.0689,
+   "fama": 0.0928,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1262,
-   "tendencia": 1.39
+   "tendencia": null
   },
   "Mae Jemison": {
-   "fama": 0.1395,
+   "fama": 0.213,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 9900,
-   "tendencia": 0.61
+   "tendencia": null
   },
   "Oleg Kotov": {
-   "fama": 0.0186,
+   "fama": 0.033,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2300,7 +2287,7 @@
    "tendencia": null
   },
   "Yuri Malenchenko": {
-   "fama": 0.0163,
+   "fama": 0.0289,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2308,7 +2295,7 @@
    "tendencia": null
   },
   "Fei Junlong": {
-   "fama": 0.0197,
+   "fama": 0.035,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2316,55 +2303,55 @@
    "tendencia": null
   },
   "Alexander Kaleri": {
-   "fama": 0.0287,
+   "fama": 0.0387,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 120,
-   "tendencia": 1.5
+   "tendencia": null
   },
   "Vladislav Volkov": {
-   "fama": 0.0612,
+   "fama": 0.0708,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 681,
-   "tendencia": 2.24
+   "tendencia": null
   },
   "Roger Chaffee": {
-   "fama": 0.1067,
+   "fama": 0.1178,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 2564,
-   "tendencia": 2.23
+   "tendencia": null
   },
   "Rick Husband": {
-   "fama": 0.0907,
+   "fama": 0.1023,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 2114,
-   "tendencia": 2.34
+   "tendencia": null
   },
   "Scott Tingle": {
-   "fama": 0.0354,
+   "fama": 0.0408,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 134,
-   "tendencia": 3.79
+   "tendencia": null
   },
   "Serena M. Auñón-Chancellor": {
-   "fama": 0.0302,
+   "fama": 0.0497,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 218,
-   "tendencia": 1.12
+   "tendencia": null
   },
   "Fyodor Yurchikhin": {
-   "fama": 0.0201,
+   "fama": 0.0358,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2372,7 +2359,7 @@
    "tendencia": null
   },
   "Viktor Gorbatko": {
-   "fama": 0.0181,
+   "fama": 0.0322,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2380,15 +2367,15 @@
    "tendencia": null
   },
   "John Swigert": {
-   "fama": 0.1345,
+   "fama": 0.1473,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 6907,
-   "tendencia": 3.13
+   "tendencia": null
   },
   "Yelena Serova": {
-   "fama": 0.0211,
+   "fama": 0.0376,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2396,15 +2383,15 @@
    "tendencia": null
   },
   "Ellison Onizuka": {
-   "fama": 0.0739,
+   "fama": 0.093,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 2249,
-   "tendencia": 1.72
+   "tendencia": null
   },
   "Stephen Thorne": {
-   "fama": 0.0128,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2412,111 +2399,111 @@
    "tendencia": null
   },
   "Duane Graveline": {
-   "fama": 0.0183,
+   "fama": 0.0494,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 214,
-   "tendencia": 0.66
+   "tendencia": null
   },
   "David Brown": {
-   "fama": 0.0732,
+   "fama": 0.0879,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1712,
-   "tendencia": 1.87
+   "tendencia": null
   },
   "Léopold Eyharts": {
-   "fama": 0.0313,
+   "fama": 0.0413,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 138,
-   "tendencia": 1.56
+   "tendencia": null
   },
   "Boris Yegorov": {
-   "fama": 0.0327,
+   "fama": 0.0462,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 180,
-   "tendencia": 1.4
+   "tendencia": null
   },
   "Pham Tuan": {
-   "fama": 0.0351,
+   "fama": 0.0514,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 238,
-   "tendencia": 1.33
+   "tendencia": null
   },
   "Valentina Ponomaryova": {
-   "fama": 0.0327,
+   "fama": 0.0551,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 291,
-   "tendencia": 1.09
+   "tendencia": null
   },
   "Georgi Dobrovolski": {
-   "fama": 0.0648,
+   "fama": 0.075,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 855,
-   "tendencia": 2.21
+   "tendencia": null
   },
   "Yvonne Cagle": {
-   "fama": 0.0157,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 127,
-   "tendencia": 0.69
+   "tendencia": null
   },
   "Soichi Noguchi": {
-   "fama": 0.0498,
+   "fama": 0.0611,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 332,
-   "tendencia": 1.72
+   "tendencia": null
   },
   "Mark Kelly": {
-   "fama": 0.0842,
+   "fama": 0.1603,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 4437,
-   "tendencia": 0.4
+   "tendencia": null
   },
   "Bill Nelson": {
-   "fama": 0.0766,
+   "fama": 0.101,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 968,
-   "tendencia": 1.27
+   "tendencia": null
   },
   "Viktor Patsayev": {
-   "fama": 0.0577,
+   "fama": 0.0667,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 545,
-   "tendencia": 2.41
+   "tendencia": null
   },
   "Garrett Reisman": {
-   "fama": 0.0223,
+   "fama": 0.0455,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 173,
-   "tendencia": 0.86
+   "tendencia": null
   },
   "Valeri Rozhdestvensky": {
-   "fama": 0.0159,
+   "fama": 0.0281,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2524,7 +2511,7 @@
    "tendencia": null
   },
   "Leonid Kizim": {
-   "fama": 0.0211,
+   "fama": 0.0376,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2532,31 +2519,31 @@
    "tendencia": null
   },
   "Franklin Chang-Díaz": {
-   "fama": 0.0687,
+   "fama": 0.0802,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 337,
-   "tendencia": 1.61
+   "tendencia": null
   },
   "Mirosław Hermaszewski": {
-   "fama": 0.0257,
+   "fama": 0.0395,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 125,
-   "tendencia": 1.23
+   "tendencia": null
   },
   "William Shepherd": {
-   "fama": 0.0351,
+   "fama": 0.0566,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 316,
-   "tendencia": 1.16
+   "tendencia": null
   },
   "Mikhail Tyurin": {
-   "fama": 0.0174,
+   "fama": 0.0308,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2564,15 +2551,15 @@
    "tendencia": null
   },
   "Scott Kelly": {
-   "fama": 0.213,
+   "fama": 0.2329,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 1416,
-   "tendencia": 1.15
+   "tendencia": null
   },
   "John Grunsfeld": {
-   "fama": 0.0203,
+   "fama": 0.0361,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2580,23 +2567,23 @@
    "tendencia": null
   },
   "Alan Poindexter": {
-   "fama": 0.0343,
+   "fama": 0.0426,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 148,
-   "tendencia": 1.74
+   "tendencia": null
   },
   "Michael Fincke": {
-   "fama": 0.0164,
+   "fama": 0.0683,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 595,
-   "tendencia": 0.5
+   "tendencia": null
   },
   "Donald Holmquest": {
-   "fama": 0.008,
+   "fama": 0.0135,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2604,7 +2591,7 @@
    "tendencia": null
   },
   "Aleksandr Serebrov": {
-   "fama": 0.0184,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2612,63 +2599,63 @@
    "tendencia": null
   },
   "Arnaldo Tamayo Méndez": {
-   "fama": 0.0647,
+   "fama": 0.0819,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 703,
-   "tendencia": 1.54
+   "tendencia": null
   },
   "Gennady Padalka": {
-   "fama": 0.03,
+   "fama": 0.056,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 305,
-   "tendencia": 0.96
+   "tendencia": null
   },
   "Donald Pettit": {
-   "fama": 0.0442,
+   "fama": 0.0634,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 455,
-   "tendencia": 1.38
+   "tendencia": null
   },
   "Russell Schweickart": {
-   "fama": 0.0586,
+   "fama": 0.0681,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 588,
-   "tendencia": 1.98
+   "tendencia": null
   },
   "Jack Lousma": {
-   "fama": 0.0445,
+   "fama": 0.0608,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 396,
-   "tendencia": 1.49
+   "tendencia": null
   },
   "Georgi Beregovoi": {
-   "fama": 0.0317,
+   "fama": 0.0542,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 277,
-   "tendencia": 1.07
+   "tendencia": null
   },
   "James McDivitt": {
-   "fama": 0.0622,
+   "fama": 0.072,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 724,
-   "tendencia": 2.11
+   "tendencia": null
   },
   "Vasili Lazarev": {
-   "fama": 0.021,
+   "fama": 0.0375,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2676,47 +2663,47 @@
    "tendencia": null
   },
   "Walter Cunningham": {
-   "fama": 0.0558,
+   "fama": 0.0742,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 816,
-   "tendencia": 1.56
+   "tendencia": null
   },
   "Joseph Henry Engle": {
-   "fama": 0.035,
+   "fama": 0.0554,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 296,
-   "tendencia": 1.19
+   "tendencia": null
   },
   "Stuart Roosa": {
-   "fama": 0.0743,
+   "fama": 0.089,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1031,
-   "tendencia": 1.74
+   "tendencia": null
   },
   "Miguel López-Alegría": {
-   "fama": 0.0317,
+   "fama": 0.0465,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 183,
-   "tendencia": 1.32
+   "tendencia": null
   },
   "Koichi Wakata": {
-   "fama": 0.0269,
+   "fama": 0.0547,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 235,
-   "tendencia": 0.79
+   "tendencia": null
   },
   "Daniel Tani": {
-   "fama": 0.0209,
+   "fama": 0.0373,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2724,23 +2711,23 @@
    "tendencia": null
   },
   "Akihiko Hoshide": {
-   "fama": 0.0342,
+   "fama": 0.0508,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 190,
-   "tendencia": 1.21
+   "tendencia": null
   },
   "Oleg Kononenko": {
-   "fama": 0.0592,
+   "fama": 0.0744,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 824,
-   "tendencia": 1.72
+   "tendencia": null
   },
   "William Lenoir": {
-   "fama": 0.0205,
+   "fama": 0.0366,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2748,23 +2735,23 @@
    "tendencia": null
   },
   "Yuri Usachev": {
-   "fama": 0.0157,
+   "fama": 0.0406,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 133,
-   "tendencia": 0.68
+   "tendencia": null
   },
   "Steven Smith": {
-   "fama": 0.0171,
+   "fama": 0.0444,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 163,
-   "tendencia": 0.68
+   "tendencia": null
   },
   "Kenneth Cameron": {
-   "fama": 0.0199,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2772,55 +2759,55 @@
    "tendencia": null
   },
   "Samantha Cristoforetti": {
-   "fama": 0.1492,
+   "fama": 0.1677,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 859,
-   "tendencia": 1.24
+   "tendencia": null
   },
   "Sultan bin Salman bin Abdulaziz al-Saud": {
-   "fama": 0.0438,
+   "fama": 0.1032,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 3901,
-   "tendencia": 0.76
+   "tendencia": null
   },
   "Aleksei Yeliseyev": {
-   "fama": 0.0274,
+   "fama": 0.0402,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 130,
-   "tendencia": 1.32
+   "tendencia": null
   },
   "Gregory Jarvis": {
-   "fama": 0.0682,
+   "fama": 0.09,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1921,
-   "tendencia": 1.58
+   "tendencia": null
   },
   "Leonid Kadenyuk": {
-   "fama": 0.0138,
+   "fama": 0.0568,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 319,
-   "tendencia": 0.42
+   "tendencia": null
   },
   "Daniel Burbank": {
-   "fama": 0.0424,
+   "fama": 0.049,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 209,
-   "tendencia": 2.48
+   "tendencia": null
   },
   "Vitali Zholobov": {
-   "fama": 0.0126,
+   "fama": 0.022,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2828,55 +2815,55 @@
    "tendencia": null
   },
   "Jeffrey Williams": {
-   "fama": 0.0549,
+   "fama": 0.0724,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 741,
-   "tendencia": 1.58
+   "tendencia": null
   },
   "Scott Altman": {
-   "fama": 0.0313,
+   "fama": 0.056,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 305,
-   "tendencia": 1.01
+   "tendencia": null
   },
   "Jerry Ross": {
-   "fama": 0.0427,
+   "fama": 0.0554,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 244,
-   "tendencia": 1.54
+   "tendencia": null
   },
   "Curtis Brown": {
-   "fama": 0.0288,
+   "fama": 0.0436,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 156,
-   "tendencia": 1.26
+   "tendencia": null
   },
   "Edward Gibson": {
-   "fama": 0.0303,
+   "fama": 0.0462,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 180,
-   "tendencia": 1.25
+   "tendencia": null
   },
   "Robert Henry Lawrence": {
-   "fama": 0.0167,
+   "fama": 0.0537,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 270,
-   "tendencia": 0.58
+   "tendencia": null
   },
   "Robert Stewart": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2884,39 +2871,39 @@
    "tendencia": null
   },
   "Susan Helms": {
-   "fama": 0.0253,
+   "fama": 0.043,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 151,
-   "tendencia": 1.07
+   "tendencia": null
   },
   "Joan Higginbotham": {
-   "fama": 0.0161,
+   "fama": 0.0395,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 125,
-   "tendencia": 0.71
+   "tendencia": null
   },
   "Kathryn Hire": {
-   "fama": 0.012,
+   "fama": 0.049,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 209,
-   "tendencia": 0.36
+   "tendencia": null
   },
   "Marsha Ivins": {
-   "fama": 0.0268,
+   "fama": 0.0424,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 146,
-   "tendencia": 1.18
+   "tendencia": null
   },
   "Leonid Ivanov": {
-   "fama": 0.0132,
+   "fama": 0.0231,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2924,71 +2911,71 @@
    "tendencia": null
   },
   "Dale Gardner": {
-   "fama": 0.0661,
+   "fama": 0.0797,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1100,
-   "tendencia": 1.85
+   "tendencia": null
   },
   "Muhammed Faris": {
-   "fama": 0.0297,
+   "fama": 0.0433,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 154,
-   "tendencia": 1.33
+   "tendencia": null
   },
   "Viktor Savinykh": {
-   "fama": 0.0306,
+   "fama": 0.0443,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 162,
-   "tendencia": 1.35
+   "tendencia": null
   },
   "Valeri Kubasov": {
-   "fama": 0.0413,
+   "fama": 0.0588,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 356,
-   "tendencia": 1.39
+   "tendencia": null
   },
   "Leonid Popov": {
-   "fama": 0.0285,
+   "fama": 0.0413,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 138,
-   "tendencia": 1.34
+   "tendencia": null
   },
   "Linda Godwin": {
-   "fama": 0.0192,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 124,
-   "tendencia": 0.85
+   "tendencia": null
   },
   "Bruce McCandless": {
-   "fama": 0.1019,
+   "fama": 0.1133,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 2005,
-   "tendencia": 1.96
+   "tendencia": null
   },
   "Jean-Loup Chrétien": {
-   "fama": 0.0304,
+   "fama": 0.0476,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 194,
-   "tendencia": 1.2
+   "tendencia": null
   },
   "Michael Fossum": {
-   "fama": 0.0197,
+   "fama": 0.035,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -2996,7 +2983,7 @@
    "tendencia": null
   },
   "Georgi Shonin": {
-   "fama": 0.0192,
+   "fama": 0.0343,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3004,7 +2991,7 @@
    "tendencia": null
   },
   "Pyotr Klimuk": {
-   "fama": 0.0193,
+   "fama": 0.0344,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3012,23 +2999,23 @@
    "tendencia": null
   },
   "Georgi Grechko": {
-   "fama": 0.0247,
+   "fama": 0.039,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 122,
-   "tendencia": 1.18
+   "tendencia": null
   },
   "Gregory Olsen": {
-   "fama": 0.0385,
+   "fama": 0.0536,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 268,
-   "tendencia": 1.44
+   "tendencia": null
   },
   "Vyacheslav Zudov": {
-   "fama": 0.0178,
+   "fama": 0.0315,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3036,15 +3023,15 @@
    "tendencia": null
   },
   "Michael Barratt": {
-   "fama": 0.0345,
+   "fama": 0.0399,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 128,
-   "tendencia": 1.98
+   "tendencia": null
   },
   "Dominic Antonelli": {
-   "fama": 0.0208,
+   "fama": 0.0371,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3052,15 +3039,15 @@
    "tendencia": null
   },
   "Timothy Kopra": {
-   "fama": 0.0219,
+   "fama": 0.0402,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 130,
-   "tendencia": 0.97
+   "tendencia": null
   },
   "Joshua Kutryk": {
-   "fama": 0.0222,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3068,55 +3055,55 @@
    "tendencia": null
   },
   "Ronald Garan Jr.": {
-   "fama": 0.0174,
+   "fama": 0.0676,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 573,
-   "tendencia": 0.52
+   "tendencia": null
   },
   "Richard Truly": {
-   "fama": 0.0437,
+   "fama": 0.0604,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 387,
-   "tendencia": 1.46
+   "tendencia": null
   },
   "Valentina Tereshkova": {
-   "fama": 0.4411,
+   "fama": 0.4969,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 25098,
-   "tendencia": 0.68
+   "tendencia": null
   },
   "Joseph Allen": {
-   "fama": 0.0374,
+   "fama": 0.0458,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 176,
-   "tendencia": 1.79
+   "tendencia": null
   },
   "Aleksandr Aleksandrov": {
-   "fama": 0.0544,
+   "fama": 0.0629,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 444,
-   "tendencia": 4.41
+   "tendencia": null
   },
   "Aleksandr Volkov": {
-   "fama": 0.0374,
+   "fama": 0.0534,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 266,
-   "tendencia": 1.38
+   "tendencia": null
   },
   "Millie Hughes-Fulford": {
-   "fama": 0.0181,
+   "fama": 0.0322,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3124,7 +3111,7 @@
    "tendencia": null
   },
   "Aleksandr Ivanchenkov": {
-   "fama": 0.0137,
+   "fama": 0.0241,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3132,63 +3119,63 @@
    "tendencia": null
   },
   "Dumitru Prunariu": {
-   "fama": 0.0337,
+   "fama": 0.0409,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 135,
-   "tendencia": 1.81
+   "tendencia": null
   },
   "Yuri Romanenko": {
-   "fama": 0.0334,
+   "fama": 0.0488,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 207,
-   "tendencia": 1.33
+   "tendencia": null
   },
   "Joseph Kerwin": {
-   "fama": 0.0341,
+   "fama": 0.0498,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 219,
-   "tendencia": 1.33
+   "tendencia": null
   },
   "Christopher Ferguson": {
-   "fama": 0.0441,
+   "fama": 0.0555,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 298,
-   "tendencia": 1.71
+   "tendencia": null
   },
   "Clayton Anderson": {
-   "fama": 0.0281,
+   "fama": 0.0443,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 162,
-   "tendencia": 1.19
+   "tendencia": null
   },
   "Rex Walheim": {
-   "fama": 0.0341,
+   "fama": 0.046,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 178,
-   "tendencia": 1.51
+   "tendencia": null
   },
   "Anatoly Solovyev": {
-   "fama": 0.0297,
+   "fama": 0.0468,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 186,
-   "tendencia": 1.19
+   "tendencia": null
   },
   "George Zamka": {
-   "fama": 0.0179,
+   "fama": 0.0317,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3196,7 +3183,7 @@
    "tendencia": null
   },
   "Ivan Bella": {
-   "fama": 0.0162,
+   "fama": 0.0286,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3204,7 +3191,7 @@
    "tendencia": null
   },
   "Lee Archambault": {
-   "fama": 0.0181,
+   "fama": 0.0322,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3212,23 +3199,23 @@
    "tendencia": null
   },
   "David Saint-Jacques": {
-   "fama": 0.0516,
+   "fama": 0.0597,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 373,
-   "tendencia": 4.11
+   "tendencia": null
   },
   "Steven Lindsey": {
-   "fama": 0.0283,
+   "fama": 0.0445,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 164,
-   "tendencia": 1.19
+   "tendencia": null
   },
   "Yuri Gidzenko": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3236,31 +3223,31 @@
    "tendencia": null
   },
   "Roberto Vittori": {
-   "fama": 0.032,
+   "fama": 0.047,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 188,
-   "tendencia": 1.32
+   "tendencia": null
   },
   "Boris Volynov": {
-   "fama": 0.0255,
+   "fama": 0.0487,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 206,
-   "tendencia": 0.93
+   "tendencia": null
   },
   "Pedro Duque": {
-   "fama": 0.0709,
+   "fama": 0.0844,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 423,
-   "tendencia": 1.55
+   "tendencia": null
   },
   "John Phillips": {
-   "fama": 0.0165,
+   "fama": 0.0291,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3268,7 +3255,7 @@
    "tendencia": null
   },
   "Valery Tokarev": {
-   "fama": 0.0202,
+   "fama": 0.0359,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3276,7 +3263,7 @@
    "tendencia": null
   },
   "Vladimir Lyakhov": {
-   "fama": 0.0182,
+   "fama": 0.0324,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3284,15 +3271,15 @@
    "tendencia": null
   },
   "Donn Eisele": {
-   "fama": 0.0628,
+   "fama": 0.0727,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 753,
-   "tendencia": 2.16
+   "tendencia": null
   },
   "Charles Camarda": {
-   "fama": 0.0198,
+   "fama": 0.0352,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3300,15 +3287,15 @@
    "tendencia": null
   },
   "John Herrington": {
-   "fama": 0.0337,
+   "fama": 0.0514,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 238,
-   "tendencia": 1.25
+   "tendencia": null
   },
   "Lev Demin": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3316,7 +3303,7 @@
    "tendencia": null
   },
   "Yuri Artyukhin": {
-   "fama": 0.0195,
+   "fama": 0.0346,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3324,7 +3311,7 @@
    "tendencia": null
   },
   "Lee Morin": {
-   "fama": 0.0149,
+   "fama": 0.0263,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3332,7 +3319,7 @@
    "tendencia": null
   },
   "Paul Lockhart": {
-   "fama": 0.0188,
+   "fama": 0.0335,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3340,39 +3327,39 @@
    "tendencia": null
   },
   "Sergei Avdeyev": {
-   "fama": 0.0164,
+   "fama": 0.0469,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 187,
-   "tendencia": 0.63
+   "tendencia": null
   },
   "André Kuipers": {
-   "fama": 0.0145,
+   "fama": 0.0503,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 225,
-   "tendencia": 0.55
+   "tendencia": null
   },
   "Yevgeny Khrunov": {
-   "fama": 0.0372,
+   "fama": 0.0508,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 231,
-   "tendencia": 1.48
+   "tendencia": null
   },
   "Georgi Ivanov": {
-   "fama": 0.0262,
+   "fama": 0.0433,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 154,
-   "tendencia": 1.11
+   "tendencia": null
   },
   "Roman Romanenko": {
-   "fama": 0.0184,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3380,23 +3367,23 @@
    "tendencia": null
   },
   "Henry Hartsfield Jr.": {
-   "fama": 0.0319,
+   "fama": 0.0498,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 219,
-   "tendencia": 1.21
+   "tendencia": null
   },
   "William Pogue": {
-   "fama": 0.0478,
+   "fama": 0.0586,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 352,
-   "tendencia": 1.79
+   "tendencia": null
   },
   "Timothy Creamer": {
-   "fama": 0.0175,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3404,31 +3391,31 @@
    "tendencia": null
   },
   "David Wolf": {
-   "fama": 0.0469,
+   "fama": 0.0575,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 332,
-   "tendencia": 1.79
+   "tendencia": null
   },
   "Robert Thirsk": {
-   "fama": 0.0259,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 127,
-   "tendencia": 1.23
+   "tendencia": null
   },
   "Maxim Surayev": {
-   "fama": 0.0376,
+   "fama": 0.0433,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 154,
-   "tendencia": 3.97
+   "tendencia": null
   },
   "Eric Boe": {
-   "fama": 0.0174,
+   "fama": 0.0308,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3436,15 +3423,15 @@
    "tendencia": null
   },
   "Jing Haipeng": {
-   "fama": 0.0208,
+   "fama": 0.0406,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 133,
-   "tendencia": 0.9
+   "tendencia": null
   },
   "Douglas Wheelock": {
-   "fama": 0.0207,
+   "fama": 0.037,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3452,15 +3439,15 @@
    "tendencia": null
   },
   "Gregory Chamitoff": {
-   "fama": 0.038,
+   "fama": 0.0438,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 158,
-   "tendencia": 2.36
+   "tendencia": null
   },
   "Takao Doi": {
-   "fama": 0.0196,
+   "fama": 0.0348,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3468,15 +3455,15 @@
    "tendencia": null
   },
   "Story Musgrave": {
-   "fama": 0.058,
+   "fama": 0.0661,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 299,
-   "tendencia": 1.88
+   "tendencia": null
   },
   "Richard Arnold": {
-   "fama": 0.0179,
+   "fama": 0.0317,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3484,31 +3471,31 @@
    "tendencia": null
   },
   "Stephen Bowen": {
-   "fama": 0.0184,
+   "fama": 0.0395,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 125,
-   "tendencia": 0.81
+   "tendencia": null
   },
   "Vance Brand": {
-   "fama": 0.0561,
+   "fama": 0.0648,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 493,
-   "tendencia": 2.06
+   "tendencia": null
   },
   "Kathryn Sullivan": {
-   "fama": 0.0286,
+   "fama": 0.0648,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 493,
-   "tendencia": 0.78
+   "tendencia": null
   },
   "Yuri Glazkov": {
-   "fama": 0.0144,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3516,7 +3503,7 @@
    "tendencia": null
   },
   "Anatoli Berezovoy": {
-   "fama": 0.0184,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3524,31 +3511,31 @@
    "tendencia": null
   },
   "Aleksei Gubarev": {
-   "fama": 0.025,
+   "fama": 0.0408,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 134,
-   "tendencia": 1.13
+   "tendencia": null
   },
   "Vladimir Titov": {
-   "fama": 0.0333,
+   "fama": 0.049,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 209,
-   "tendencia": 1.32
+   "tendencia": null
   },
   "Pavel Vinogradov": {
-   "fama": 0.045,
+   "fama": 0.0722,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 734,
-   "tendencia": 1.17
+   "tendencia": null
   },
   "Aleksandr Pavlovich Aleksandrov": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3556,15 +3543,15 @@
    "tendencia": null
   },
   "Vladimir Dzhanibekov": {
-   "fama": 0.036,
+   "fama": 0.0456,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 174,
-   "tendencia": 1.68
+   "tendencia": null
   },
   "Oleg Makarov": {
-   "fama": 0.0203,
+   "fama": 0.0363,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3572,15 +3559,15 @@
    "tendencia": null
   },
   "Musa Manarov": {
-   "fama": 0.0302,
+   "fama": 0.0431,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 152,
-   "tendencia": 1.38
+   "tendencia": null
   },
   "Vladimir Aksyonov": {
-   "fama": 0.0192,
+   "fama": 0.0343,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3588,7 +3575,7 @@
    "tendencia": null
   },
   "Toktar Aubakirov": {
-   "fama": 0.0191,
+   "fama": 0.0341,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3596,7 +3583,7 @@
    "tendencia": null
   },
   "Liu Wang": {
-   "fama": 0.0157,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3604,7 +3591,7 @@
    "tendencia": null
   },
   "Gennady Strekalov": {
-   "fama": 0.0201,
+   "fama": 0.0358,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3612,7 +3599,7 @@
    "tendencia": null
   },
   "Dafydd Williams": {
-   "fama": 0.0199,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3620,7 +3607,7 @@
    "tendencia": null
   },
   "Viktor Afanasyev": {
-   "fama": 0.0062,
+   "fama": 0.0102,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3628,7 +3615,7 @@
    "tendencia": null
   },
   "John Olivas": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3636,23 +3623,23 @@
    "tendencia": null
   },
   "Aleksei Ovchinin": {
-   "fama": 0.0487,
+   "fama": 0.0563,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 311,
-   "tendencia": 3.86
+   "tendencia": null
   },
   "Gennadi Sarafanov": {
-   "fama": 0.0184,
+   "fama": 0.0427,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 149,
-   "tendencia": 0.75
+   "tendencia": null
   },
   "Valeri Ryumin": {
-   "fama": 0.0176,
+   "fama": 0.0313,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3660,7 +3647,7 @@
    "tendencia": null
   },
   "Nie Haisheng": {
-   "fama": 0.0203,
+   "fama": 0.0363,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3668,23 +3655,23 @@
    "tendencia": null
   },
   "Mark Polansky": {
-   "fama": 0.0247,
+   "fama": 0.0446,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 165,
-   "tendencia": 0.99
+   "tendencia": null
   },
   "Jessica Meir": {
-   "fama": 0.1216,
+   "fama": 0.1322,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 3065,
-   "tendencia": 6.64
+   "tendencia": null
   },
   "Aidyn Aimbetov": {
-   "fama": 0.0153,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3692,7 +3679,7 @@
    "tendencia": null
   },
   "Anatoli Ivanishin": {
-   "fama": 0.0174,
+   "fama": 0.0308,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3700,15 +3687,15 @@
    "tendencia": null
   },
   "Anatoli Artsebarsky": {
-   "fama": 0.0312,
+   "fama": 0.0422,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 145,
-   "tendencia": 1.5
+   "tendencia": null
   },
   "Anatoli Levchenko": {
-   "fama": 0.0153,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3716,7 +3703,7 @@
    "tendencia": null
   },
   "Anatoli Filipchenko": {
-   "fama": 0.0204,
+   "fama": 0.0365,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3724,7 +3711,7 @@
    "tendencia": null
   },
   "Susan Still-Kilrain": {
-   "fama": 0.0222,
+   "fama": 0.0396,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3732,23 +3719,23 @@
    "tendencia": null
   },
   "Wendy Lawrence": {
-   "fama": 0.0259,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 127,
-   "tendencia": 1.23
+   "tendencia": null
   },
   "Sandra Magnus": {
-   "fama": 0.0356,
+   "fama": 0.0527,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 256,
-   "tendencia": 1.31
+   "tendencia": null
   },
   "Ronald Grabe": {
-   "fama": 0.0162,
+   "fama": 0.0286,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3756,39 +3743,39 @@
    "tendencia": null
   },
   "Lisa Nowak": {
-   "fama": 0.0491,
+   "fama": 0.0753,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 868,
-   "tendencia": 1.25
+   "tendencia": null
   },
   "Ellen Ochoa": {
-   "fama": 0.0431,
+   "fama": 0.1012,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 1048,
-   "tendencia": 0.44
+   "tendencia": null
   },
   "Judith Resnik": {
-   "fama": 0.0972,
+   "fama": 0.1218,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 3175,
-   "tendencia": 1.5
+   "tendencia": null
   },
   "Sally Ride": {
-   "fama": 0.2993,
+   "fama": 0.326,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 3768,
-   "tendencia": 1.01
+   "tendencia": null
   },
   "Paul Scully-Power": {
-   "fama": 0.0141,
+   "fama": 0.0248,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3796,7 +3783,7 @@
    "tendencia": null
   },
   "Brewster Shaw": {
-   "fama": 0.0196,
+   "fama": 0.0348,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3804,15 +3791,15 @@
    "tendencia": null
   },
   "Robert Gibson": {
-   "fama": 0.0298,
+   "fama": 0.0501,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 222,
-   "tendencia": 1.09
+   "tendencia": null
   },
   "Tatyana Kuznetsova": {
-   "fama": 0.0198,
+   "fama": 0.0352,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3820,15 +3807,15 @@
    "tendencia": null
   },
   "Andreas Mogensen": {
-   "fama": 0.0264,
+   "fama": 0.0453,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 171,
-   "tendencia": 1.06
+   "tendencia": null
   },
   "John Lounge": {
-   "fama": 0.0173,
+   "fama": 0.0306,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3836,7 +3823,7 @@
    "tendencia": null
   },
   "Andrei Borisenko": {
-   "fama": 0.0167,
+   "fama": 0.0296,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3844,7 +3831,7 @@
    "tendencia": null
   },
   "Richard Gordon": {
-   "fama": 0.029,
+   "fama": 0.0418,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
@@ -3852,7 +3839,7 @@
    "tendencia": null
   },
   "Nikolay Chub": {
-   "fama": 0.0143,
+   "fama": 0.0251,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3860,7 +3847,7 @@
    "tendencia": null
   },
   "Dmitriy Petelin": {
-   "fama": 0.0167,
+   "fama": 0.0296,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3868,23 +3855,23 @@
    "tendencia": null
   },
   "Piers Sellers": {
-   "fama": 0.0493,
+   "fama": 0.057,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 322,
-   "tendencia": 2.16
+   "tendencia": null
   },
   "Andrew Feustel": {
-   "fama": 0.0167,
+   "fama": 0.0412,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 137,
-   "tendencia": 0.71
+   "tendencia": null
   },
   "Andrew Allen": {
-   "fama": 0.0176,
+   "fama": 0.0313,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3892,31 +3879,31 @@
    "tendencia": null
   },
   "Owen Garriott": {
-   "fama": 0.0277,
+   "fama": 0.0535,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 267,
-   "tendencia": 0.92
+   "tendencia": null
   },
   "Andrew Thomas": {
-   "fama": 0.0196,
+   "fama": 0.0399,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 128,
-   "tendencia": 0.86
+   "tendencia": null
   },
   "Thomas Pesquet": {
-   "fama": 0.1381,
+   "fama": 0.1602,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 574,
-   "tendencia": 1.01
+   "tendencia": null
   },
   "Kenneth Cockrell": {
-   "fama": 0.018,
+   "fama": 0.032,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3924,23 +3911,23 @@
    "tendencia": null
   },
   "Heidemarie Stefanyshyn-Piper": {
-   "fama": 0.0261,
+   "fama": 0.0473,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 191,
-   "tendencia": 0.99
+   "tendencia": null
   },
   "Timothy Peake": {
-   "fama": 0.0773,
+   "fama": 0.0896,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 308,
-   "tendencia": 1.48
+   "tendencia": null
   },
   "George Nelson": {
-   "fama": 0.0216,
+   "fama": 0.0386,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3948,7 +3935,7 @@
    "tendencia": null
   },
   "Robert Overmyer": {
-   "fama": 0.0209,
+   "fama": 0.0373,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3956,23 +3943,23 @@
    "tendencia": null
   },
   "Jake Garn": {
-   "fama": 0.0279,
+   "fama": 0.0487,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 206,
-   "tendencia": 1.04
+   "tendencia": null
   },
   "Gordon Fullerton": {
-   "fama": 0.0315,
+   "fama": 0.0456,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 174,
-   "tendencia": 1.35
+   "tendencia": null
   },
   "Gregory Johnson": {
-   "fama": 0.018,
+   "fama": 0.032,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3980,7 +3967,7 @@
    "tendencia": null
   },
   "Robert Kimbrough": {
-   "fama": 0.0176,
+   "fama": 0.0313,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -3988,31 +3975,31 @@
    "tendencia": null
   },
   "Mikhail Kornienko": {
-   "fama": 0.0239,
+   "fama": 0.05,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 221,
-   "tendencia": 0.84
+   "tendencia": null
   },
   "Thomas Marshburn": {
-   "fama": 0.0289,
+   "fama": 0.042,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 143,
-   "tendencia": 1.34
+   "tendencia": null
   },
   "Christopher Cassidy": {
-   "fama": 0.0327,
+   "fama": 0.0544,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 281,
-   "tendencia": 1.11
+   "tendencia": null
   },
   "Richard Linnehan": {
-   "fama": 0.0146,
+   "fama": 0.0257,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4020,7 +4007,7 @@
    "tendencia": null
   },
   "Yuri Baturin": {
-   "fama": 0.0159,
+   "fama": 0.0281,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4028,23 +4015,23 @@
    "tendencia": null
   },
   "Mamoru Mohri": {
-   "fama": 0.046,
+   "fama": 0.0522,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 205,
-   "tendencia": 2.25
+   "tendencia": null
   },
   "Robert Behnken": {
-   "fama": 0.0784,
+   "fama": 0.0868,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 265,
-   "tendencia": 1.68
+   "tendencia": null
   },
   "Dirk Frimout": {
-   "fama": 0.0207,
+   "fama": 0.037,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4052,7 +4039,7 @@
    "tendencia": null
   },
   "Frank De Winne": {
-   "fama": 0.0191,
+   "fama": 0.0341,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4060,7 +4047,7 @@
    "tendencia": null
   },
   "Deng Qingming": {
-   "fama": 0.0154,
+   "fama": 0.0272,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4068,39 +4055,39 @@
    "tendencia": null
   },
   "James Voss": {
-   "fama": 0.0182,
+   "fama": 0.0396,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 126,
-   "tendencia": 0.8
+   "tendencia": null
   },
   "Guion Bluford": {
-   "fama": 0.0505,
+   "fama": 0.0724,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 743,
-   "tendencia": 1.38
+   "tendencia": null
   },
   "Janice Voss": {
-   "fama": 0.0198,
+   "fama": 0.0417,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 141,
-   "tendencia": 0.83
+   "tendencia": null
   },
   "Steven MacLean": {
-   "fama": 0.0149,
+   "fama": 0.0616,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 414,
-   "tendencia": 0.45
+   "tendencia": null
   },
   "Robert Parker": {
-   "fama": 0.0119,
+   "fama": 0.0208,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4108,7 +4095,7 @@
    "tendencia": null
   },
   "Valentin Lebedev": {
-   "fama": 0.0189,
+   "fama": 0.0337,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4116,15 +4103,15 @@
    "tendencia": null
   },
   "Vladimir Solovyov": {
-   "fama": 0.0236,
+   "fama": 0.0472,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 190,
-   "tendencia": 0.88
+   "tendencia": null
   },
   "Konstantin Kozeyev": {
-   "fama": 0.0124,
+   "fama": 0.0216,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4132,7 +4119,7 @@
    "tendencia": null
   },
   "Iúri Malichev": {
-   "fama": 0.0157,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4140,7 +4127,7 @@
    "tendencia": null
   },
   "Vladimir Dezhurov": {
-   "fama": 0.0212,
+   "fama": 0.0378,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4148,39 +4135,39 @@
    "tendencia": null
   },
   "Paul Weitz": {
-   "fama": 0.0413,
+   "fama": 0.06,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 379,
-   "tendencia": 1.35
+   "tendencia": null
   },
   "Richard Mastracchio": {
-   "fama": 0.0294,
+   "fama": 0.0401,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 129,
-   "tendencia": 1.48
+   "tendencia": null
   },
   "Steven Swanson": {
-   "fama": 0.0243,
+   "fama": 0.0389,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 121,
-   "tendencia": 1.16
+   "tendencia": null
   },
   "Valentin Bondarenko": {
-   "fama": 0.0377,
+   "fama": 0.0553,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 294,
-   "tendencia": 1.33
+   "tendencia": null
   },
   "Thomas Akers": {
-   "fama": 0.0173,
+   "fama": 0.0306,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4188,7 +4175,7 @@
    "tendencia": null
   },
   "Yuri Lonchakov": {
-   "fama": 0.0213,
+   "fama": 0.038,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4196,15 +4183,15 @@
    "tendencia": null
   },
   "Alfred Worden": {
-   "fama": 0.0666,
+   "fama": 0.0872,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 937,
-   "tendencia": 1.45
+   "tendencia": null
   },
   "Bruce Melnick": {
-   "fama": 0.0144,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4212,47 +4199,47 @@
    "tendencia": null
   },
   "Michael Foale": {
-   "fama": 0.0223,
+   "fama": 0.0488,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 207,
-   "tendencia": 0.8
+   "tendencia": null
   },
   "Sunita Williams": {
-   "fama": 0.3565,
+   "fama": 0.3725,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 2585,
-   "tendencia": 1.08
+   "tendencia": null
   },
   "Stephanie Wilson": {
-   "fama": 0.0291,
+   "fama": 0.0454,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 172,
-   "tendencia": 1.21
+   "tendencia": null
   },
   "Barry Wilmore": {
-   "fama": 0.207,
+   "fama": 0.22,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 510,
-   "tendencia": 1.11
+   "tendencia": null
   },
   "Terry Virts": {
-   "fama": 0.0317,
+   "fama": 0.0497,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 218,
-   "tendencia": 1.2
+   "tendencia": null
   },
   "Alexandr Skvortsov": {
-   "fama": 0.0174,
+   "fama": 0.0308,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4260,7 +4247,7 @@
    "tendencia": null
   },
   "Donald Peterson": {
-   "fama": 0.0165,
+   "fama": 0.0291,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4268,15 +4255,15 @@
    "tendencia": null
   },
   "Frederick Gregory": {
-   "fama": 0.0321,
+   "fama": 0.0435,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 155,
-   "tendencia": 1.5
+   "tendencia": null
   },
   "Liu Boming": {
-   "fama": 0.016,
+   "fama": 0.0283,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4284,7 +4271,7 @@
    "tendencia": null
   },
   "Stephen Robinson": {
-   "fama": 0.0223,
+   "fama": 0.0399,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4292,7 +4279,7 @@
    "tendencia": null
   },
   "Talgat Musabayev": {
-   "fama": 0.0214,
+   "fama": 0.0383,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4300,15 +4287,15 @@
    "tendencia": null
   },
   "Michael Foreman": {
-   "fama": 0.0168,
+   "fama": 0.0402,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 130,
-   "tendencia": 0.73
+   "tendencia": null
   },
   "Eugene Trinh": {
-   "fama": 0.0143,
+   "fama": 0.0251,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4316,39 +4303,39 @@
    "tendencia": null
   },
   "Sultan Al Neyadi": {
-   "fama": 0.0359,
+   "fama": 0.0523,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 142,
-   "tendencia": 1.06
+   "tendencia": null
   },
   "Hazza Al Mansouri": {
-   "fama": 0.0223,
+   "fama": 0.0543,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 158,
-   "tendencia": 0.49
+   "tendencia": null
   },
   "Sigmund Jähn": {
-   "fama": 0.0466,
+   "fama": 0.0657,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 425,
-   "tendencia": 1.35
+   "tendencia": null
   },
   "Michael Strahan": {
-   "fama": 0.0322,
+   "fama": 0.0891,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 911,
-   "tendencia": 0.49
+   "tendencia": null
   },
   "Charles Veach": {
-   "fama": 0.0153,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4356,7 +4343,7 @@
    "tendencia": null
   },
   "Winston Scott": {
-   "fama": 0.0213,
+   "fama": 0.0381,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4364,7 +4351,7 @@
    "tendencia": null
   },
   "Anthony England": {
-   "fama": 0.0149,
+   "fama": 0.0263,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4372,7 +4359,7 @@
    "tendencia": null
   },
   "Anton Shkaplerov": {
-   "fama": 0.0199,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4380,7 +4367,7 @@
    "tendencia": null
   },
   "Norishige Kanai": {
-   "fama": 0.0184,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4388,39 +4375,39 @@
    "tendencia": null
   },
   "Kimiya Yui": {
-   "fama": 0.0115,
+   "fama": 0.0465,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 183,
-   "tendencia": 0.27
+   "tendencia": null
   },
   "Takuya Onishi": {
-   "fama": 0.0293,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 127,
-   "tendencia": 1.49
+   "tendencia": null
   },
   "Victor Vescovo": {
-   "fama": 0.0596,
+   "fama": 0.0837,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1366,
-   "tendencia": 1.43
+   "tendencia": null
   },
   "Richard Hieb": {
-   "fama": 0.0111,
+   "fama": 0.0446,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 165,
-   "tendencia": 0.19
+   "tendencia": null
   },
   "John Blaha": {
-   "fama": 0.0201,
+   "fama": 0.0358,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4428,7 +4415,7 @@
    "tendencia": null
   },
   "James Halsell Jr.": {
-   "fama": 0.0169,
+   "fama": 0.0299,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4436,15 +4423,15 @@
    "tendencia": null
   },
   "Jared Isaacman": {
-   "fama": 0.1552,
+   "fama": 0.1658,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 5968,
-   "tendencia": 2.88
+   "tendencia": null
   },
   "Christina Birch": {
-   "fama": 0.0251,
+   "fama": 0.0415,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 2.0,
@@ -4452,7 +4439,7 @@
    "tendencia": null
   },
   "Aleksandr Lazutkin": {
-   "fama": 0.0151,
+   "fama": 0.0266,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4460,31 +4447,31 @@
    "tendencia": null
   },
   "Elliot See": {
-   "fama": 0.0484,
+   "fama": 0.0662,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 530,
-   "tendencia": 1.49
+   "tendencia": null
   },
   "Leland Melvin": {
-   "fama": 0.0411,
+   "fama": 0.0596,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 372,
-   "tendencia": 1.35
+   "tendencia": null
   },
   "Theodore Freeman": {
-   "fama": 0.0259,
+   "fama": 0.0412,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 137,
-   "tendencia": 1.17
+   "tendencia": null
   },
   "James van Hoften": {
-   "fama": 0.0159,
+   "fama": 0.0281,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4492,7 +4479,7 @@
    "tendencia": null
   },
   "Robert Satcher": {
-   "fama": 0.0186,
+   "fama": 0.033,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4500,7 +4487,7 @@
    "tendencia": null
   },
   "Nikolai Budarin": {
-   "fama": 0.0154,
+   "fama": 0.0272,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4508,7 +4495,7 @@
    "tendencia": null
   },
   "Benjamin Drew": {
-   "fama": 0.018,
+   "fama": 0.032,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4516,7 +4503,7 @@
    "tendencia": null
   },
   "Robert Cenker": {
-   "fama": 0.0153,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4524,7 +4511,7 @@
    "tendencia": null
   },
   "Carl Walz": {
-   "fama": 0.016,
+   "fama": 0.0283,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4532,15 +4519,15 @@
    "tendencia": null
   },
   "Gerald Carr": {
-   "fama": 0.0436,
+   "fama": 0.0538,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 271,
-   "tendencia": 1.77
+   "tendencia": null
   },
   "James Adamson": {
-   "fama": 0.0153,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4548,23 +4535,23 @@
    "tendencia": null
   },
   "Richard Covey": {
-   "fama": 0.031,
+   "fama": 0.0491,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 211,
-   "tendencia": 1.18
+   "tendencia": null
   },
   "Steven Hawley": {
-   "fama": 0.0384,
+   "fama": 0.0664,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 536,
-   "tendencia": 1.06
+   "tendencia": null
   },
   "James Buchli": {
-   "fama": 0.0198,
+   "fama": 0.0352,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4572,15 +4559,15 @@
    "tendencia": null
   },
   "Marc Garneau": {
-   "fama": 0.0331,
+   "fama": 0.0505,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 227,
-   "tendencia": 1.25
+   "tendencia": null
   },
   "Scott Horowitz": {
-   "fama": 0.0213,
+   "fama": 0.038,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4588,15 +4575,15 @@
    "tendencia": null
   },
   "Michael Bloomfield": {
-   "fama": 0.0341,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 124,
-   "tendencia": 2.02
+   "tendencia": null
   },
   "Michael Gernhardt": {
-   "fama": 0.0149,
+   "fama": 0.0263,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4604,47 +4591,47 @@
    "tendencia": null
   },
   "Charles Bassett": {
-   "fama": 0.0409,
+   "fama": 0.0592,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 363,
-   "tendencia": 1.36
+   "tendencia": null
   },
   "Rodolfo Neri Vela": {
-   "fama": 0.0339,
+   "fama": 0.0633,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 257,
-   "tendencia": 0.75
+   "tendencia": null
   },
   "Wang Yaping": {
-   "fama": 0.0412,
+   "fama": 0.0567,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 180,
-   "tendencia": 1.22
+   "tendencia": null
   },
   "Frank Culbertson Jr.": {
-   "fama": 0.039,
+   "fama": 0.0456,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 174,
-   "tendencia": 1.95
+   "tendencia": null
   },
   "Scott Parazynski": {
-   "fama": 0.0239,
+   "fama": 0.0513,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 237,
-   "tendencia": 0.82
+   "tendencia": null
   },
   "Kevin Ford": {
-   "fama": 0.0203,
+   "fama": 0.0361,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4652,23 +4639,23 @@
    "tendencia": null
   },
   "Stanley Love": {
-   "fama": 0.0257,
+   "fama": 0.0402,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 130,
-   "tendencia": 1.2
+   "tendencia": null
   },
   "Nicholas Patrick": {
-   "fama": 0.0275,
+   "fama": 0.0395,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 125,
-   "tendencia": 1.36
+   "tendencia": null
   },
   "Satoshi Furukawa": {
-   "fama": 0.02,
+   "fama": 0.0356,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4676,7 +4663,7 @@
    "tendencia": null
   },
   "Dominic Gorie": {
-   "fama": 0.0153,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4684,7 +4671,7 @@
    "tendencia": null
   },
   "Michael Good": {
-   "fama": 0.0165,
+   "fama": 0.0291,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4692,15 +4679,15 @@
    "tendencia": null
   },
   "Frederick Sturckow": {
-   "fama": 0.0244,
+   "fama": 0.0412,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 137,
-   "tendencia": 1.08
+   "tendencia": null
   },
   "Don Lind": {
-   "fama": 0.0207,
+   "fama": 0.037,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4708,7 +4695,7 @@
    "tendencia": null
   },
   "Taylor Wang": {
-   "fama": 0.0186,
+   "fama": 0.033,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4716,15 +4703,15 @@
    "tendencia": null
   },
   "Joseph Walker": {
-   "fama": 0.0449,
+   "fama": 0.0673,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 562,
-   "tendencia": 1.29
+   "tendencia": null
   },
   "Aleksandr Laveykin": {
-   "fama": 0.0141,
+   "fama": 0.0248,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4732,7 +4719,7 @@
    "tendencia": null
   },
   "Oleg Atkov": {
-   "fama": 0.0136,
+   "fama": 0.0238,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4740,7 +4727,7 @@
    "tendencia": null
   },
   "Yuri Onufriyenko": {
-   "fama": 0.0201,
+   "fama": 0.0358,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4748,15 +4735,15 @@
    "tendencia": null
   },
   "Oleg Artemyev": {
-   "fama": 0.0279,
+   "fama": 0.0447,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 166,
-   "tendencia": 1.16
+   "tendencia": null
   },
   "Vladimir Vasyutin": {
-   "fama": 0.0187,
+   "fama": 0.0332,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4764,31 +4751,31 @@
    "tendencia": null
   },
   "Valery Korzun": {
-   "fama": 0.0265,
+   "fama": 0.0465,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 183,
-   "tendencia": 1.03
+   "tendencia": null
   },
   "Clifton Williams": {
-   "fama": 0.0377,
+   "fama": 0.052,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 246,
-   "tendencia": 1.46
+   "tendencia": null
   },
   "William McArthur Jr.": {
-   "fama": 0.0179,
+   "fama": 0.0513,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 237,
-   "tendencia": 0.63
+   "tendencia": null
   },
   "Edward Lu": {
-   "fama": 0.0203,
+   "fama": 0.0361,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4796,15 +4783,15 @@
    "tendencia": null
   },
   "Leroy Chiao": {
-   "fama": 0.0225,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 124,
-   "tendencia": 1.03
+   "tendencia": null
   },
   "Aleksander Poleshchuk": {
-   "fama": 0.0117,
+   "fama": 0.0204,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4812,31 +4799,31 @@
    "tendencia": null
   },
   "Alexander Gerst": {
-   "fama": 0.0498,
+   "fama": 0.0575,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 332,
-   "tendencia": 2.53
+   "tendencia": null
   },
   "José Hernández": {
-   "fama": 0.0871,
+   "fama": 0.1111,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 5973,
-   "tendencia": 1.68
+   "tendencia": null
   },
   "Loren Shriver": {
-   "fama": 0.035,
+   "fama": 0.0433,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 154,
-   "tendencia": 1.75
+   "tendencia": null
   },
   "Donald Williams": {
-   "fama": 0.0185,
+   "fama": 0.0328,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4844,15 +4831,15 @@
    "tendencia": null
   },
   "Jon McBride": {
-   "fama": 0.0303,
+   "fama": 0.0421,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 144,
-   "tendencia": 1.44
+   "tendencia": null
   },
   "James Bagian": {
-   "fama": 0.0146,
+   "fama": 0.0257,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4860,7 +4847,7 @@
    "tendencia": null
   },
   "John Creighton": {
-   "fama": 0.0192,
+   "fama": 0.0343,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4868,7 +4855,7 @@
    "tendencia": null
   },
   "Lodewijk van den Berg": {
-   "fama": 0.0169,
+   "fama": 0.0299,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4876,15 +4863,15 @@
    "tendencia": null
   },
   "Jeffrey A. Hoffman": {
-   "fama": 0.0219,
+   "fama": 0.0457,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 175,
-   "tendencia": 0.84
+   "tendencia": null
   },
   "David Griggs": {
-   "fama": 0.0202,
+   "fama": 0.0359,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4892,7 +4879,7 @@
    "tendencia": null
   },
   "William Thornton": {
-   "fama": 0.019,
+   "fama": 0.0339,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4900,23 +4887,23 @@
    "tendencia": null
   },
   "Frederick Hauck": {
-   "fama": 0.017,
+   "fama": 0.0711,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 690,
-   "tendencia": 0.14
+   "tendencia": null
   },
   "John M. Fabian": {
-   "fama": 0.0549,
+   "fama": 0.0634,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 457,
-   "tendencia": 7.96
+   "tendencia": null
   },
   "Terry Hart": {
-   "fama": 0.0181,
+   "fama": 0.0322,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4924,7 +4911,7 @@
    "tendencia": null
   },
   "Richard Mullane": {
-   "fama": 0.0199,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4932,7 +4919,7 @@
    "tendencia": null
   },
   "Edward Givens": {
-   "fama": 0.0205,
+   "fama": 0.0366,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4940,23 +4927,23 @@
    "tendencia": null
   },
   "Michael Coats": {
-   "fama": 0.0189,
+   "fama": 0.0392,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 123,
-   "tendencia": 0.84
+   "tendencia": null
   },
   "David Walker": {
-   "fama": 0.0271,
+   "fama": 0.0418,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 142,
-   "tendencia": 1.22
+   "tendencia": null
   },
   "Steven Nagel": {
-   "fama": 0.0189,
+   "fama": 0.0337,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4964,7 +4951,7 @@
    "tendencia": null
   },
   "Jean-Pierre Haigneré": {
-   "fama": 0.0175,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4972,7 +4959,7 @@
    "tendencia": null
   },
   "Gregory Carl Johnson": {
-   "fama": 0.0185,
+   "fama": 0.0328,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4980,15 +4967,15 @@
    "tendencia": null
   },
   "Randolph Bresnik": {
-   "fama": 0.0473,
+   "fama": 0.0547,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 285,
-   "tendencia": 4.82
+   "tendencia": null
   },
   "Dmitri Kondratyev": {
-   "fama": 0.0175,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -4996,7 +4983,7 @@
    "tendencia": null
   },
   "Karl Henize": {
-   "fama": 0.0134,
+   "fama": 0.0234,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5004,15 +4991,15 @@
    "tendencia": null
   },
   "Daniel Brandenstein": {
-   "fama": 0.0235,
+   "fama": 0.0421,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 144,
-   "tendencia": 1.0
+   "tendencia": null
   },
   "Charles Brady Jr.": {
-   "fama": 0.0173,
+   "fama": 0.0306,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5020,7 +5007,7 @@
    "tendencia": null
   },
   "Jean-François Clervoy": {
-   "fama": 0.0163,
+   "fama": 0.0289,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5028,7 +5015,7 @@
    "tendencia": null
   },
   "James Wetherbee": {
-   "fama": 0.0203,
+   "fama": 0.0363,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5036,7 +5023,7 @@
    "tendencia": null
   },
   "Bjarni Tryggvason": {
-   "fama": 0.0203,
+   "fama": 0.0361,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5044,7 +5031,7 @@
    "tendencia": null
   },
   "Brent Jett": {
-   "fama": 0.0151,
+   "fama": 0.0266,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5052,7 +5039,7 @@
    "tendencia": null
   },
   "Aleksandr Balandin": {
-   "fama": 0.0157,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5060,15 +5047,15 @@
    "tendencia": null
   },
   "William Oefelein": {
-   "fama": 0.0369,
+   "fama": 0.0538,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 271,
-   "tendencia": 1.34
+   "tendencia": null
   },
   "Umberto Guidoni": {
-   "fama": 0.017,
+   "fama": 0.0301,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5076,7 +5063,7 @@
    "tendencia": null
   },
   "Sergei Treschev": {
-   "fama": 0.0115,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5084,7 +5071,7 @@
    "tendencia": null
   },
   "Vasili Tsibliyev": {
-   "fama": 0.0156,
+   "fama": 0.0275,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5092,7 +5079,7 @@
    "tendencia": null
   },
   "Yuri Shargin": {
-   "fama": 0.0141,
+   "fama": 0.0248,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5100,23 +5087,23 @@
    "tendencia": null
   },
   "Salizhan Sharipov": {
-   "fama": 0.0341,
+   "fama": 0.0494,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 214,
-   "tendencia": 1.35
+   "tendencia": null
   },
   "Iuri Gagarin": {
-   "fama": 0.9024,
+   "fama": 0.8807,
    "lembranca_em_1000": 170.0,
    "estimada": true,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 48386,
-   "tendencia": 1.49
+   "tendencia": null
   },
   "Loren Acton": {
-   "fama": 0.0148,
+   "fama": 0.026,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5124,7 +5111,7 @@
    "tendencia": null
   },
   "James Reilly": {
-   "fama": 0.018,
+   "fama": 0.032,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5132,15 +5119,15 @@
    "tendencia": null
   },
   "Dorothy Metcalf-Lindenburger": {
-   "fama": 0.0303,
+   "fama": 0.0412,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 137,
-   "tendencia": 1.49
+   "tendencia": null
   },
   "James Dutton": {
-   "fama": 0.0174,
+   "fama": 0.0308,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5148,7 +5135,7 @@
    "tendencia": null
   },
   "Sergei Ryzhikov": {
-   "fama": 0.021,
+   "fama": 0.0375,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5156,23 +5143,23 @@
    "tendencia": null
   },
   "Mark Lee": {
-   "fama": 0.019,
+   "fama": 0.042,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 143,
-   "tendencia": 0.79
+   "tendencia": null
   },
   "Catherine Coleman": {
-   "fama": 0.0415,
+   "fama": 0.0589,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 357,
-   "tendencia": 1.4
+   "tendencia": null
   },
   "Roger Crouch": {
-   "fama": 0.0162,
+   "fama": 0.0286,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5180,15 +5167,15 @@
    "tendencia": null
   },
   "Abdul Ahad Mohmand": {
-   "fama": 0.0626,
+   "fama": 0.0724,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 742,
-   "tendencia": 4.23
+   "tendencia": null
   },
   "Franz Viehböck": {
-   "fama": 0.02,
+   "fama": 0.0356,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5196,7 +5183,7 @@
    "tendencia": null
   },
   "James Newman": {
-   "fama": 0.021,
+   "fama": 0.0375,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5204,15 +5191,15 @@
    "tendencia": null
   },
   "Yusaku Maezawa": {
-   "fama": 0.0626,
+   "fama": 0.0755,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 879,
-   "tendencia": 1.85
+   "tendencia": null
   },
   "Zhang Xiaoguang": {
-   "fama": 0.0154,
+   "fama": 0.0272,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5220,23 +5207,23 @@
    "tendencia": null
   },
   "Jugderdemidiyn Gurragcha": {
-   "fama": 0.0223,
+   "fama": 0.0399,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 128,
-   "tendencia": 1.0
+   "tendencia": null
   },
   "Irina Soloviyova": {
-   "fama": 0.0217,
+   "fama": 0.0453,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 171,
-   "tendencia": 0.84
+   "tendencia": null
   },
   "Bernard Harris": {
-   "fama": 0.0175,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5244,7 +5231,7 @@
    "tendencia": null
   },
   "Pyotr Dubrov": {
-   "fama": 0.019,
+   "fama": 0.0339,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5252,7 +5239,7 @@
    "tendencia": null
   },
   "Sergei Korsakov (cosmonauta)": {
-   "fama": 0.0126,
+   "fama": 0.022,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5260,23 +5247,23 @@
    "tendencia": null
   },
   "Andrey Fediaev": {
-   "fama": 0.0288,
+   "fama": 0.0401,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 129,
-   "tendencia": 1.43
+   "tendencia": null
   },
   "Sophie Adenot": {
-   "fama": 0.0624,
+   "fama": 0.0722,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 734,
-   "tendencia": 2.12
+   "tendencia": null
   },
   "Brian Duffy": {
-   "fama": 0.0213,
+   "fama": 0.0381,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5284,7 +5271,7 @@
    "tendencia": null
   },
   "Zenon Jankowski": {
-   "fama": 0.01,
+   "fama": 0.0173,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5292,15 +5279,15 @@
    "tendencia": null
   },
   "Mike Melvill": {
-   "fama": 0.0181,
+   "fama": 0.0602,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 384,
-   "tendencia": 0.57
+   "tendencia": null
   },
   "Kenneth Bowersox": {
-   "fama": 0.0211,
+   "fama": 0.0376,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5308,23 +5295,23 @@
    "tendencia": null
   },
   "Oleg Skripochka": {
-   "fama": 0.0279,
+   "fama": 0.041,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 136,
-   "tendencia": 1.31
+   "tendencia": null
   },
   "Aleksandr Samokutyayev": {
-   "fama": 0.0607,
+   "fama": 0.0702,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 658,
-   "tendencia": 17.28
+   "tendencia": null
   },
   "Jean-Jacques Favier": {
-   "fama": 0.0173,
+   "fama": 0.0306,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5332,7 +5319,7 @@
    "tendencia": null
   },
   "Joe Edwards": {
-   "fama": 0.0128,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5340,7 +5327,7 @@
    "tendencia": null
   },
   "Carlos Noriega": {
-   "fama": 0.0206,
+   "fama": 0.0368,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5348,7 +5335,7 @@
    "tendencia": null
   },
   "Terrence Wilcutt": {
-   "fama": 0.0165,
+   "fama": 0.0291,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5356,31 +5343,31 @@
    "tendencia": null
   },
   "Wubbo Ockels": {
-   "fama": 0.0276,
+   "fama": 0.0448,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 167,
-   "tendencia": 1.14
+   "tendencia": null
   },
   "Daniel Bursch": {
-   "fama": 0.038,
+   "fama": 0.0481,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 199,
-   "tendencia": 1.69
+   "tendencia": null
   },
   "Robert Curbeam": {
-   "fama": 0.0175,
+   "fama": 0.044,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 160,
-   "tendencia": 0.7
+   "tendencia": null
   },
   "Gennadi Manakov": {
-   "fama": 0.0175,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5388,7 +5375,7 @@
    "tendencia": null
   },
   "Maurizio Cheli": {
-   "fama": 0.0149,
+   "fama": 0.0263,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5396,15 +5383,15 @@
    "tendencia": null
   },
   "Jay Apt": {
-   "fama": 0.0242,
+   "fama": 0.057,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 323,
-   "tendencia": 0.75
+   "tendencia": null
   },
   "Franco Malerba": {
-   "fama": 0.0174,
+   "fama": 0.0308,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5412,7 +5399,7 @@
    "tendencia": null
   },
   "Aleksey Boroday": {
-   "fama": 0.013,
+   "fama": 0.0227,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5420,7 +5407,7 @@
    "tendencia": null
   },
   "Oleg Novitskiy": {
-   "fama": 0.0134,
+   "fama": 0.0234,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5428,7 +5415,7 @@
    "tendencia": null
   },
   "James Pawelczyk": {
-   "fama": 0.0117,
+   "fama": 0.0204,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5436,7 +5423,7 @@
    "tendencia": null
   },
   "Sergei Revin": {
-   "fama": 0.0139,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5444,7 +5431,7 @@
    "tendencia": null
   },
   "Fred Leslie": {
-   "fama": 0.013,
+   "fama": 0.0227,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5452,7 +5439,7 @@
    "tendencia": null
   },
   "Sherwood Spring": {
-   "fama": 0.0165,
+   "fama": 0.0291,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
@@ -5460,12 +5447,12 @@
    "tendencia": null
   },
   "Bryan O'Connor": {
-   "fama": 0.0337,
+   "fama": 0.0447,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 166,
-   "tendencia": 1.55
+   "tendencia": null
   }
  }
 }

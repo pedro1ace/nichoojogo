@@ -1,511 +1,513 @@
 {
  "categoria": "frutas",
- "gerado_em": "2026-10-24",
+ "gerado_em": "2026-10-28",
  "sinais": [
   "conhecem",
   "lembranca",
   "revisao",
-  "texto"
+  "texto",
+  "visitas"
  ],
  "meses_de_visitas": [],
  "pesos": {
   "lembranca": 0.65,
   "conhecem": 0.1,
-  "revisao": 0.15,
+  "revisao": 0.08,
+  "visitas": 0.14,
   "texto": 0.03
  },
  "estimadas_pelo_llm": 103,
  "respostas": {
   "Banana": {
-   "fama": 0.988,
+   "fama": 0.9819,
    "lembranca_em_1000": 190.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 47202,
    "tendencia": null
   },
   "Maçã": {
-   "fama": 0.9942,
+   "fama": 0.9836,
    "lembranca_em_1000": 200.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 37974,
    "tendencia": null
   },
   "Laranja": {
-   "fama": 0.8902,
+   "fama": 0.8841,
    "lembranca_em_1000": 90.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 31422,
    "tendencia": null
   },
   "Morango": {
-   "fama": 0.8664,
+   "fama": 0.8629,
    "lembranca_em_1000": 80.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 29280,
    "tendencia": null
   },
   "Uva": {
-   "fama": 0.8295,
+   "fama": 0.8128,
    "lembranca_em_1000": 60.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12480,
    "tendencia": null
   },
   "Manga": {
-   "fama": 0.8022,
+   "fama": 0.7981,
    "lembranca_em_1000": 50.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 19740,
    "tendencia": null
   },
   "Abacaxi": {
-   "fama": 0.7708,
+   "fama": 0.7782,
    "lembranca_em_1000": 40.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 32526,
    "tendencia": null
   },
   "Melancia": {
-   "fama": 0.7836,
+   "fama": 0.7809,
    "lembranca_em_1000": 45.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 19062,
    "tendencia": null
   },
   "Mamão": {
-   "fama": 0.6737,
+   "fama": 0.6849,
    "lembranca_em_1000": 20.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 23568,
    "tendencia": null
   },
   "Pera": {
-   "fama": 0.6347,
+   "fama": 0.6421,
    "lembranca_em_1000": 15.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15246,
    "tendencia": null
   },
   "Limão": {
-   "fama": 0.636,
+   "fama": 0.6489,
    "lembranca_em_1000": 15.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 18960,
    "tendencia": null
   },
   "Abacate": {
-   "fama": 0.6004,
+   "fama": 0.6183,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20118,
    "tendencia": null
   },
   "Goiaba": {
-   "fama": 0.5736,
+   "fama": 0.5917,
    "lembranca_em_1000": 10.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 16950,
    "tendencia": null
   },
   "Maracujá": {
-   "fama": 0.5941,
+   "fama": 0.6168,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 21642,
    "tendencia": null
   },
   "Kiwi": {
-   "fama": 0.5649,
+   "fama": 0.5899,
    "lembranca_em_1000": 10.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20148,
    "tendencia": null
   },
   "Coco": {
-   "fama": 0.5118,
+   "fama": 0.5362,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 16014,
    "tendencia": null
   },
   "Melão": {
-   "fama": 0.5053,
+   "fama": 0.5199,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8844,
    "tendencia": null
   },
   "Tangerina": {
-   "fama": 0.502,
+   "fama": 0.5387,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 27516,
    "tendencia": null
   },
   "Pêssego": {
-   "fama": 0.4557,
+   "fama": 0.4803,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11124,
    "tendencia": null
   },
   "Caju": {
-   "fama": 0.4771,
+   "fama": 0.5201,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 29838,
    "tendencia": null
   },
   "Acerola": {
-   "fama": 0.4904,
+   "fama": 0.5311,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 25644,
    "tendencia": null
   },
   "Jabuticaba": {
-   "fama": 0.5188,
+   "fama": 0.5774,
    "lembranca_em_1000": 8.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 68658,
    "tendencia": null
   },
   "Ameixa": {
-   "fama": 0.4144,
+   "fama": 0.4497,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13308,
    "tendencia": null
   },
   "Cereja": {
-   "fama": 0.4777,
+   "fama": 0.5028,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11430,
    "tendencia": null
   },
   "Açaí": {
-   "fama": 0.4889,
+   "fama": 0.5484,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 64674,
    "tendencia": null
   },
   "Framboesa": {
-   "fama": 0.3656,
+   "fama": 0.4064,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 95.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12654,
    "tendencia": null
   },
   "Amora": {
-   "fama": 0.4017,
+   "fama": 0.4546,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 95.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 25650,
    "tendencia": null
   },
   "Mirtilo": {
-   "fama": 0.2916,
+   "fama": 0.3335,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8616,
    "tendencia": null
   },
   "Figo": {
-   "fama": 0.2991,
+   "fama": 0.3505,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13656,
    "tendencia": null
   },
   "Caqui": {
-   "fama": 0.2913,
+   "fama": 0.3473,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 90.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15678,
    "tendencia": null
   },
   "Graviola": {
-   "fama": 0.2842,
+   "fama": 0.3499,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 88.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 23772,
    "tendencia": null
   },
   "Pitanga": {
-   "fama": 0.3435,
+   "fama": 0.4204,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 90.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 54006,
    "tendencia": null
   },
   "Jaca": {
-   "fama": 0.3549,
+   "fama": 0.3995,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 95.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11724,
    "tendencia": null
   },
   "Carambola": {
-   "fama": 0.2796,
+   "fama": 0.3371,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 90.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12726,
    "tendencia": null
   },
   "Romã": {
-   "fama": 0.2876,
+   "fama": 0.3609,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 33324,
    "tendencia": null
   },
   "Cupuaçu": {
-   "fama": 0.2713,
+   "fama": 0.3519,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 39456,
    "tendencia": null
   },
   "Pitaya": {
-   "fama": 0.3278,
+   "fama": 0.4042,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 88.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 42396,
    "tendencia": null
   },
   "Lichia": {
-   "fama": 0.2663,
+   "fama": 0.3303,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 14652,
    "tendencia": null
   },
   "Tamarindo": {
-   "fama": 0.2207,
+   "fama": 0.3038,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 31782,
    "tendencia": null
   },
   "Pinha": {
-   "fama": 0.2296,
+   "fama": 0.2916,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11460,
    "tendencia": null
   },
   "Siriguela": {
-   "fama": 0.1903,
+   "fama": 0.2754,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 23262,
    "tendencia": null
   },
   "Cajá": {
-   "fama": 0.199,
+   "fama": 0.2746,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15342,
    "tendencia": null
   },
   "Umbu": {
-   "fama": 0.17,
+   "fama": 0.2393,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 65.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9036,
    "tendencia": null
   },
   "Nectarina": {
-   "fama": 0.1629,
+   "fama": 0.2235,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5508,
    "tendencia": null
   },
   "Damasco": {
-   "fama": 0.1992,
+   "fama": 0.2798,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 21672,
    "tendencia": null
   },
   "Lima": {
-   "fama": 0.1996,
+   "fama": 0.2824,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 26562,
    "tendencia": null
   },
   "Toranja": {
-   "fama": 0.147,
+   "fama": 0.2428,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 37476,
    "tendencia": null
   },
   "Tâmara": {
-   "fama": 0.1746,
+   "fama": 0.2709,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 42504,
    "tendencia": null
   },
   "Pequi": {
-   "fama": 0.1836,
+   "fama": 0.2652,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 18468,
    "tendencia": null
   },
   "Buriti": {
-   "fama": 0.1288,
+   "fama": 0.2223,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20508,
    "tendencia": null
   },
   "Bacuri": {
-   "fama": 0.086,
+   "fama": 0.1652,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6366,
    "tendencia": null
   },
   "Mangaba": {
-   "fama": 0.0811,
+   "fama": 0.1842,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20658,
    "tendencia": null
   },
   "Cambuci": {
-   "fama": 0.0579,
+   "fama": 0.1578,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13716,
    "tendencia": null
   },
   "Jenipapo": {
-   "fama": 0.1246,
+   "fama": 0.2118,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 14412,
    "tendencia": null
   },
   "Sapoti": {
-   "fama": 0.112,
+   "fama": 0.2084,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20790,
    "tendencia": null
   },
   "Cabeludinha": {
-   "fama": 0.0314,
+   "fama": 0.098,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 12.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1620,
    "tendencia": null
   },
   "Uvaia": {
-   "fama": 0.0428,
+   "fama": 0.1663,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 42330,
    "tendencia": null
   },
   "Grumixama": {
-   "fama": 0.0335,
+   "fama": 0.1523,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 27006,
    "tendencia": null
   },
   "Cagaita": {
-   "fama": 0.0348,
+   "fama": 0.1511,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 12.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 25800,
    "tendencia": null
   },
   "Pupunha": {
-   "fama": 0.1045,
+   "fama": 0.1958,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15426,
    "tendencia": null
   },
   "Bacaba": {
-   "fama": 0.0433,
+   "fama": 0.1468,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 14484,
    "tendencia": null
   },
   "Murici": {
-   "fama": 0.0676,
+   "fama": 0.0643,
    "lembranca_em_1000": 0.03,
    "estimada": true,
    "conhecem_pct": 25.0,
@@ -513,95 +515,95 @@
    "tendencia": null
   },
   "Marmelo": {
-   "fama": 0.1314,
+   "fama": 0.2291,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 30492,
    "tendencia": null
   },
   "Nêspera": {
-   "fama": 0.1151,
+   "fama": 0.2156,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 28434,
    "tendencia": null
   },
   "Mangostão": {
-   "fama": 0.0708,
+   "fama": 0.1804,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 26334,
    "tendencia": null
   },
   "Rambutão": {
-   "fama": 0.0632,
+   "fama": 0.1622,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 14418,
    "tendencia": null
   },
   "Fruta-pão": {
-   "fama": 0.1313,
+   "fama": 0.2314,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 27300,
    "tendencia": null
   },
   "Kinkan": {
-   "fama": 0.0533,
+   "fama": 0.1386,
    "lembranca_em_1000": 0.03,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6270,
    "tendencia": null
   },
   "Physalis": {
-   "fama": 0.0897,
+   "fama": 0.2086,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 53070,
    "tendencia": null
   },
   "Groselha": {
-   "fama": 0.1344,
+   "fama": 0.2257,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20226,
    "tendencia": null
   },
   "Lima-da-pérsia": {
-   "fama": 0.1493,
+   "fama": 0.2208,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8004,
    "tendencia": null
   },
   "Jambo": {
-   "fama": 0.123,
+   "fama": 0.2187,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 24564,
    "tendencia": null
   },
   "Abiu": {
-   "fama": 0.058,
+   "fama": 0.1605,
    "lembranca_em_1000": 0.03,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15756,
    "tendencia": null
   },
   "Araçá": {
-   "fama": 0.0869,
+   "fama": 0.0818,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 35.0,
@@ -609,1030 +611,222 @@
    "tendencia": null
   },
   "Durião": {
-   "fama": 0.0408,
+   "fama": 0.1672,
    "lembranca_em_1000": 0.03,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 45312,
    "tendencia": null
   },
   "Feijoa": {
-   "fama": 0.0367,
+   "fama": 0.1527,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 25554,
    "tendencia": null
   },
   "Maná-cubiu": {
-   "fama": 0.0216,
+   "fama": 0.0842,
    "lembranca_em_1000": 0.01,
    "estimada": true,
    "conhecem_pct": 8.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1158,
    "tendencia": null
   },
   "Cacau": {
-   "fama": 0.2105,
+   "fama": 0.2932,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 27612,
    "tendencia": null
   },
   "Tucumã": {
-   "fama": 0.0786,
+   "fama": 0.1757,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13818,
    "tendencia": null
   },
   "Atemoia": {
-   "fama": 0.0927,
+   "fama": 0.206,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 33306,
    "tendencia": null
   },
   "Cranberry": {
-   "fama": 0.1955,
+   "fama": 0.2589,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 65.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15186,
    "tendencia": null
   },
   "Groselha-negra": {
-   "fama": 0.1088,
+   "fama": 0.1709,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11310,
    "tendencia": null
   },
   "Uva-espim": {
-   "fama": 0.1019,
+   "fama": 0.1389,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2856,
    "tendencia": null
   },
   "Ameixa-preta": {
-   "fama": 0.1106,
+   "fama": 0.1524,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3828,
    "tendencia": null
   },
   "Azeitona": {
-   "fama": 0.1958,
+   "fama": 0.2614,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9612,
    "tendencia": null
   },
   "Tomate": {
-   "fama": 0.2438,
+   "fama": 0.3302,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 65.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 34968,
    "tendencia": null
   },
   "Pimentão": {
-   "fama": 0.1173,
+   "fama": 0.1857,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8292,
    "tendencia": null
   },
   "Abóbora": {
-   "fama": 0.1468,
+   "fama": 0.2287,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 19056,
    "tendencia": null
   },
   "Pepino": {
-   "fama": 0.1285,
+   "fama": 0.2105,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 17838,
    "tendencia": null
   },
   "Berinjela": {
-   "fama": 0.1165,
+   "fama": 0.1974,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 16044,
    "tendencia": null
   },
   "Castanha-do-pará": {
-   "fama": 0.1859,
+   "fama": 0.2542,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 17364,
    "tendencia": null
   },
   "Castanha de caju": {
-   "fama": 0.1002,
+   "fama": 0.1846,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 29838,
    "tendencia": null
   },
   "Noz": {
-   "fama": 0.1769,
+   "fama": 0.2426,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 14556,
    "tendencia": null
   },
   "Avelã": {
-   "fama": 0.0968,
+   "fama": 0.1652,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12432,
    "tendencia": null
   },
   "Amêndoa": {
-   "fama": 0.1594,
+   "fama": 0.2261,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 14316,
    "tendencia": null
   },
   "Pistache": {
-   "fama": 0.0957,
+   "fama": 0.1807,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 30144,
    "tendencia": null
   },
   "Macadâmia": {
-   "fama": 0.0947,
+   "fama": 0.1456,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4794,
    "tendencia": null
   },
   "Pinhão": {
-   "fama": 0.0985,
+   "fama": 0.1709,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15480,
    "tendencia": null
   },
   "Cereja-do-rio-grande": {
-   "fama": 0.053,
+   "fama": 0.1588,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 21564,
    "tendencia": null
   },
   "Jabuticaba-sabará": {
-   "fama": 0.0411,
+   "fama": 0.1104,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2910,
    "tendencia": null
   },
   "Laranja-kinkan": {
-   "fama": 0.0493,
+   "fama": 0.1323,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6270,
    "tendencia": null
   },
   "Umbu-cajá": {
-   "fama": 0.0379,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cajarana": {
-   "fama": 0.0331,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Caju-do-cerrado": {
-   "fama": 0.0444,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Araticum": {
-   "fama": 0.0347,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Biribá": {
-   "fama": 0.0307,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jatobá": {
-   "fama": 0.1019,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Baru": {
-   "fama": 0.0754,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jambolão": {
-   "fama": 0.0883,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sapota": {
-   "fama": 0.0295,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Abricó": {
-   "fama": 0.0352,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bacupari": {
-   "fama": 0.0316,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Patauá": {
-   "fama": 0.031,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Juçara": {
-   "fama": 0.0758,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ingá": {
-   "fama": 0.1218,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
-   "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Longan": {
-   "fama": 0.0195,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gabiroba": {
-   "fama": 0.0323,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guabiju": {
-   "fama": 0.0311,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ubajaí": {
-   "fama": 0.0186,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sete-capotes": {
-   "fama": 0.0403,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cereja-do-cerrado": {
-   "fama": 0.0424,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pitomba": {
-   "fama": 0.0881,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mangaba-do-cerrado": {
-   "fama": 0.0385,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Puçá": {
-   "fama": 0.0299,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mama-cadela": {
-   "fama": 0.0428,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jaracatiá": {
-   "fama": 0.0296,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bacuripari": {
-   "fama": 0.0224,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cupuí": {
-   "fama": 0.0181,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Uxi": {
-   "fama": 0.0316,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Piquiá": {
-   "fama": 0.0312,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Camu-camu": {
-   "fama": 0.0698,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Araçá-boi": {
-   "fama": 0.0398,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mapati": {
-   "fama": 0.0272,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mari-mari": {
-   "fama": 0.0425,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ingá-cipó": {
-   "fama": 0.0376,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sorva": {
-   "fama": 0.0286,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Murumuru": {
-   "fama": 0.0315,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Inajá": {
-   "fama": 0.0331,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Babaçu": {
-   "fama": 0.0965,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Licuri": {
-   "fama": 0.0314,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Butiá": {
-   "fama": 0.0958,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jerivá": {
-   "fama": 0.0304,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Macaúba": {
-   "fama": 0.0326,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guariroba": {
-   "fama": 0.0325,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jaca-mole": {
-   "fama": 0.0399,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jaca-dura": {
-   "fama": 0.0414,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fruta-de-lobo": {
-   "fama": 0.0435,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fruta-do-sabiá": {
-   "fama": 0.0405,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Juá": {
-   "fama": 0.033,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mandacaru": {
-   "fama": 0.0738,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Xique-xique": {
-   "fama": 0.0167,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Palma": {
-   "fama": 0.0421,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Quiabento": {
-   "fama": 0.0215,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Facheiro": {
-   "fama": 0.0266,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Maracujá-doce": {
-   "fama": 0.043,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Maracujá-do-mato": {
-   "fama": 0.0427,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Maracujá-roxo": {
-   "fama": 0.0409,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Granadilla": {
-   "fama": 0.0452,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tumbo": {
-   "fama": 0.0237,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Banana-de-macaco": {
-   "fama": 0.0419,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cherimoia": {
-   "fama": 0.0506,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fruta-do-conde-africana": {
-   "fama": 0.0419,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ameixa-japonesa": {
-   "fama": 0.0789,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ameixa-da-baía": {
-   "fama": 0.0393,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ameixa-do-pará": {
-   "fama": 0.0408,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pera-asiática": {
-   "fama": 0.0386,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pera-do-cerrado": {
-   "fama": 0.0392,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mangaba-de-cachorro": {
-   "fama": 0.0377,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Uva-japonesa": {
-   "fama": 0.0416,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Uva-do-mato": {
-   "fama": 0.043,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Uva-de-rei": {
-   "fama": 0.0434,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cereja-do-mato": {
-   "fama": 0.042,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pitanga-preta": {
-   "fama": 0.0408,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jabuticaba-branca": {
-   "fama": 0.04,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Grumixama-branca": {
-   "fama": 0.0356,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Araçá-amarelo": {
-   "fama": 0.0385,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Araçá-pera": {
-   "fama": 0.0355,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Araçá-piranga": {
-   "fama": 0.0323,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cambucá": {
-   "fama": 0.0289,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cambuí": {
-   "fama": 0.0342,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Guapuritis": {
-   "fama": 0.0149,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ubá": {
-   "fama": 0.0343,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sapucaia": {
-   "fama": 0.036,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Castanha-de-sapucaia": {
-   "fama": 0.0373,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bacurizinho": {
-   "fama": 0.0147,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Oiti": {
-   "fama": 0.0279,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Oiticoró": {
-   "fama": 0.0141,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Goiaba-do-campo": {
-   "fama": 0.0415,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Goiabinha": {
-   "fama": 0.0282,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Feijoa-do-mato": {
-   "fama": 0.0344,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tâmara-do-deserto": {
-   "fama": 0.0365,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kiwano": {
-   "fama": 0.0143,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Carambola-amarela": {
-   "fama": 0.0367,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bilimbi": {
-   "fama": 0.0221,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Salak": {
-   "fama": 0.0141,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Langsat": {
-   "fama": 0.0141,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Duku": {
-   "fama": 0.014,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Santol": {
-   "fama": 0.014,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Marang": {
-   "fama": 0.0139,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Chempedak": {
-   "fama": 0.0139,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pulasan": {
-   "fama": 0.0138,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mamey": {
-   "fama": 0.0138,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sapote-negro": {
    "fama": 0.0308,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -1640,199 +834,71 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Sapote-branco": {
-   "fama": 0.0323,
+  "Cajarana": {
+   "fama": 0.0256,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Canistel": {
-   "fama": 0.0199,
+  "Caju-do-cerrado": {
+   "fama": 0.1218,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4494,
+   "tendencia": null
+  },
+  "Araticum": {
+   "fama": 0.0274,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Lúcuma": {
-   "fama": 0.0219,
+  "Biribá": {
+   "fama": 0.0231,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Pepino-doce": {
-   "fama": 0.0398,
+  "Jatobá": {
+   "fama": 0.2174,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": 42906,
+   "tendencia": null
+  },
+  "Baru": {
+   "fama": 0.1678,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": 11178,
+   "tendencia": null
+  },
+  "Jambolão": {
+   "fama": 0.1934,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": 23316,
+   "tendencia": null
+  },
+  "Sapota": {
+   "fama": 0.1367,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20790,
    "tendencia": null
   },
-  "Naranjilla": {
-   "fama": 0.0134,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tamarillo": {
-   "fama": 0.0134,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Babaco": {
-   "fama": 0.0163,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pitaia-amarela": {
-   "fama": 0.0331,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pitaia-vermelha": {
-   "fama": 0.0339,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Graviola-do-norte": {
-   "fama": 0.0384,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mirtilo-vermelho": {
-   "fama": 0.0374,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mirtilo-gigante": {
-   "fama": 0.036,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Framboesa-negra": {
-   "fama": 0.0379,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Framboesa-amarela": {
-   "fama": 0.0368,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Amora-branca": {
-   "fama": 0.0393,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Amora-silvestre": {
-   "fama": 0.0363,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Boysenberry": {
-   "fama": 0.0128,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Loganberry": {
-   "fama": 0.0127,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Marionberry": {
-   "fama": 0.0127,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Goji": {
-   "fama": 0.0126,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Aronia": {
-   "fama": 0.0162,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sabugueiro": {
-   "fama": 0.0297,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Haskap": {
-   "fama": 0.0125,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sea buckthorn": {
-   "fama": 0.0124,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Medronho": {
+  "Abricó": {
    "fama": 0.0282,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -1840,279 +906,71 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Azarole": {
-   "fama": 0.0123,
+  "Bacupari": {
+   "fama": 0.1078,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3954,
+   "tendencia": null
+  },
+  "Patauá": {
+   "fama": 0.0963,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2190,
+   "tendencia": null
+  },
+  "Juçara": {
+   "fama": 0.1694,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": 11820,
+   "tendencia": null
+  },
+  "Ingá": {
+   "fama": 0.2158,
+   "lembranca_em_1000": 0.2,
+   "estimada": true,
+   "conhecem_pct": 55.0,
+   "visitas_pt_12m": 14286,
+   "tendencia": null
+  },
+  "Longan": {
+   "fama": 0.1036,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4956,
+   "tendencia": null
+  },
+  "Gabiroba": {
+   "fama": 0.1287,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 11328,
+   "tendencia": null
+  },
+  "Guabiju": {
+   "fama": 0.1132,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5226,
+   "tendencia": null
+  },
+  "Ubajaí": {
+   "fama": 0.0108,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Cornalina": {
-   "fama": 0.0249,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Néspera-europeia": {
-   "fama": 0.0332,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sorveira": {
-   "fama": 0.0223,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pera-espinhosa": {
-   "fama": 0.0348,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bergamota-europeia": {
-   "fama": 0.0355,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cidra": {
-   "fama": 0.0293,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Limão-caviar": {
-   "fama": 0.0362,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Yuzu": {
-   "fama": 0.0119,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Sudachi": {
-   "fama": 0.0118,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Calamansi": {
-   "fama": 0.0118,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Limeta": {
-   "fama": 0.0117,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Laranja-azeda": {
-   "fama": 0.0352,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Laranja-sanguínea": {
-   "fama": 0.0376,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Clementina": {
-   "fama": 0.03,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tangerina-satsuma": {
-   "fama": 0.0323,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tangelo": {
-   "fama": 0.0205,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pomelo chinês": {
-   "fama": 0.0315,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ugli": {
-   "fama": 0.0113,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kabosu": {
-   "fama": 0.0113,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dekopon": {
-   "fama": 0.0112,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mão-de-buda": {
-   "fama": 0.0392,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kinkan-redondo": {
-   "fama": 0.0361,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Abacate-manteiga": {
-   "fama": 0.0361,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Coco-de-catarro": {
-   "fama": 0.034,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Coco-babão": {
-   "fama": 0.0332,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Coco-indaiá": {
-   "fama": 0.0338,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pequi-anão": {
-   "fama": 0.0318,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Buritirana": {
-   "fama": 0.0244,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Açaí-solteiro": {
-   "fama": 0.0353,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Piaçava": {
-   "fama": 0.0261,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tucum": {
-   "fama": 0.0257,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Carnaúba": {
-   "fama": 0.03,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Juçara-palmito": {
-   "fama": 0.0302,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mangaba-de-praia": {
+  "Sete-capotes": {
    "fama": 0.0345,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2120,119 +978,279 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Caju-gigante": {
-   "fama": 0.0358,
+  "Cereja-do-cerrado": {
+   "fama": 0.0369,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Cajueiro-anão": {
-   "fama": 0.0317,
+  "Pitomba": {
+   "fama": 0.1768,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": 9168,
+   "tendencia": null
+  },
+  "Mangaba-do-cerrado": {
+   "fama": 0.0326,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Jabuticaba-de-cabinho": {
-   "fama": 0.0298,
+  "Puçá": {
+   "fama": 0.0233,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Cereja-de-barbados": {
-   "fama": 0.0322,
+  "Mama-cadela": {
+   "fama": 0.1284,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6528,
+   "tendencia": null
+  },
+  "Jaracatiá": {
+   "fama": 0.1196,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 7884,
+   "tendencia": null
+  },
+  "Bacuripari": {
+   "fama": 0.0153,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Pitangatuba": {
-   "fama": 0.0168,
+  "Cupuí": {
+   "fama": 0.0717,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 972,
+   "tendencia": null
+  },
+  "Uxi": {
+   "fama": 0.0894,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1404,
+   "tendencia": null
+  },
+  "Piquiá": {
+   "fama": 0.1371,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 18468,
+   "tendencia": null
+  },
+  "Camu-camu": {
+   "fama": 0.1619,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 35.0,
+   "visitas_pt_12m": 8778,
+   "tendencia": null
+  },
+  "Araçá-boi": {
+   "fama": 0.1333,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 9792,
+   "tendencia": null
+  },
+  "Mapati": {
+   "fama": 0.0622,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 402,
+   "tendencia": null
+  },
+  "Mari-mari": {
+   "fama": 0.0892,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 798,
+   "tendencia": null
+  },
+  "Ingá-cipó": {
+   "fama": 0.1097,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3066,
+   "tendencia": null
+  },
+  "Sorva": {
+   "fama": 0.0976,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2514,
+   "tendencia": null
+  },
+  "Murumuru": {
+   "fama": 0.103,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2892,
+   "tendencia": null
+  },
+  "Inajá": {
+   "fama": 0.0964,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1872,
+   "tendencia": null
+  },
+  "Babaçu": {
+   "fama": 0.1973,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": 17856,
+   "tendencia": null
+  },
+  "Licuri": {
+   "fama": 0.1084,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3882,
+   "tendencia": null
+  },
+  "Butiá": {
+   "fama": 0.1889,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 45.0,
+   "visitas_pt_12m": 11742,
+   "tendencia": null
+  },
+  "Jerivá": {
+   "fama": 0.1298,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 12834,
+   "tendencia": null
+  },
+  "Macaúba": {
+   "fama": 0.0268,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Grumixameira": {
-   "fama": 0.0164,
+  "Guariroba": {
+   "fama": 0.1194,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6594,
+   "tendencia": null
+  },
+  "Jaca-mole": {
+   "fama": 0.0349,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Murta": {
-   "fama": 0.0294,
+  "Jaca-dura": {
+   "fama": 0.0365,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Guaraná": {
-   "fama": 0.0323,
+  "Fruta-de-lobo": {
+   "fama": 0.1384,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 10494,
+   "tendencia": null
+  },
+  "Fruta-do-sabiá": {
+   "fama": 0.1032,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1830,
+   "tendencia": null
+  },
+  "Juá": {
+   "fama": 0.1223,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 7476,
+   "tendencia": null
+  },
+  "Mandacaru": {
+   "fama": 0.1751,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": 16506,
+   "tendencia": null
+  },
+  "Xique-xique": {
+   "fama": 0.0853,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2058,
+   "tendencia": null
+  },
+  "Palma": {
+   "fama": 0.0374,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Bacabinha": {
-   "fama": 0.0166,
+  "Quiabento": {
+   "fama": 0.0152,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Ingá-de-metro": {
-   "fama": 0.0334,
+  "Facheiro": {
+   "fama": 0.0908,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1878,
    "tendencia": null
   },
-  "Ingá-feijão": {
-   "fama": 0.0328,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fruta-de-tatu": {
-   "fama": 0.0338,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fruta-de-pombo": {
-   "fama": 0.0339,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fruta-de-morcego": {
-   "fama": 0.0342,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Uva-de-praia": {
+  "Maracujá-doce": {
    "fama": 0.0384,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2240,16 +1258,1000 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Guajiru": {
-   "fama": 0.023,
+  "Maracujá-do-mato": {
+   "fama": 0.0382,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
+  "Maracujá-roxo": {
+   "fama": 0.0362,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Granadilla": {
+   "fama": 0.1274,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": 4614,
+   "tendencia": null
+  },
+  "Tumbo": {
+   "fama": 0.0177,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Banana-de-macaco": {
+   "fama": 0.1277,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6288,
+   "tendencia": null
+  },
+  "Cherimoia": {
+   "fama": 0.1532,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": 13572,
+   "tendencia": null
+  },
+  "Fruta-do-conde-africana": {
+   "fama": 0.0375,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ameixa-japonesa": {
+   "fama": 0.1902,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": 28434,
+   "tendencia": null
+  },
+  "Ameixa-da-baía": {
+   "fama": 0.0903,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 954,
+   "tendencia": null
+  },
+  "Ameixa-do-pará": {
+   "fama": 0.0917,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 954,
+   "tendencia": null
+  },
+  "Pera-asiática": {
+   "fama": 0.0561,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 156,
+   "tendencia": null
+  },
+  "Pera-do-cerrado": {
+   "fama": 0.0347,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mangaba-de-cachorro": {
+   "fama": 0.0331,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uva-japonesa": {
+   "fama": 0.0373,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uva-do-mato": {
+   "fama": 0.0778,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 402,
+   "tendencia": null
+  },
+  "Uva-de-rei": {
+   "fama": 0.0394,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cereja-do-mato": {
+   "fama": 0.0379,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pitanga-preta": {
+   "fama": 0.0366,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jabuticaba-branca": {
+   "fama": 0.0357,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grumixama-branca": {
+   "fama": 0.0311,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Araçá-amarelo": {
+   "fama": 0.0342,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Araçá-pera": {
+   "fama": 0.0819,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 720,
+   "tendencia": null
+  },
+  "Araçá-piranga": {
+   "fama": 0.0896,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1278,
+   "tendencia": null
+  },
+  "Cambucá": {
+   "fama": 0.1199,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 7722,
+   "tendencia": null
+  },
+  "Cambuí": {
+   "fama": 0.0959,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1626,
+   "tendencia": null
+  },
+  "Guapuritis": {
+   "fama": 0.0086,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ubá": {
+   "fama": 0.1461,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 24096,
+   "tendencia": null
+  },
+  "Sapucaia": {
+   "fama": 0.0317,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Castanha-de-sapucaia": {
+   "fama": 0.1235,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6120,
+   "tendencia": null
+  },
+  "Bacurizinho": {
+   "fama": 0.0085,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Oiti": {
+   "fama": 0.1392,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 22590,
+   "tendencia": null
+  },
+  "Oiticoró": {
+   "fama": 0.0081,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Goiaba-do-campo": {
+   "fama": 0.0378,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Goiabinha": {
+   "fama": 0.0234,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Feijoa-do-mato": {
+   "fama": 0.0302,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tâmara-do-deserto": {
+   "fama": 0.0325,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kiwano": {
+   "fama": 0.0977,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4176,
+   "tendencia": null
+  },
+  "Carambola-amarela": {
+   "fama": 0.0327,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bilimbi": {
+   "fama": 0.1286,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 16986,
+   "tendencia": null
+  },
+  "Salak": {
+   "fama": 0.0851,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2172,
+   "tendencia": null
+  },
+  "Langsat": {
+   "fama": 0.0081,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Duku": {
+   "fama": 0.0229,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 84,
+   "tendencia": null
+  },
+  "Santol": {
+   "fama": 0.0459,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 282,
+   "tendencia": null
+  },
+  "Marang": {
+   "fama": 0.0069,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 36,
+   "tendencia": null
+  },
+  "Chempedak": {
+   "fama": 0.008,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pulasan": {
+   "fama": 0.0353,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 162,
+   "tendencia": null
+  },
+  "Mamey": {
+   "fama": 0.0068,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 36,
+   "tendencia": null
+  },
+  "Sapote-negro": {
+   "fama": 0.0266,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sapote-branco": {
+   "fama": 0.0282,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canistel": {
+   "fama": 0.0963,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3282,
+   "tendencia": null
+  },
+  "Lúcuma": {
+   "fama": 0.1064,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5106,
+   "tendencia": null
+  },
+  "Pepino-doce": {
+   "fama": 0.0364,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Naranjilla": {
+   "fama": 0.0263,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 102,
+   "tendencia": null
+  },
+  "Tamarillo": {
+   "fama": 0.1147,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 10344,
+   "tendencia": null
+  },
+  "Babaco": {
+   "fama": 0.0556,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 438,
+   "tendencia": null
+  },
+  "Pitaia-amarela": {
+   "fama": 0.1039,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2538,
+   "tendencia": null
+  },
+  "Pitaia-vermelha": {
+   "fama": 0.0302,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Graviola-do-norte": {
+   "fama": 0.0351,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mirtilo-vermelho": {
+   "fama": 0.0341,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mirtilo-gigante": {
+   "fama": 0.0325,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Framboesa-negra": {
+   "fama": 0.0346,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Framboesa-amarela": {
+   "fama": 0.0916,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1080,
+   "tendencia": null
+  },
+  "Amora-branca": {
+   "fama": 0.0362,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Amora-silvestre": {
+   "fama": 0.1254,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6792,
+   "tendencia": null
+  },
+  "Boysenberry": {
+   "fama": 0.0705,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1050,
+   "tendencia": null
+  },
+  "Loganberry": {
+   "fama": 0.0441,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 264,
+   "tendencia": null
+  },
+  "Marionberry": {
+   "fama": 0.0073,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Goji": {
+   "fama": 0.1008,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5112,
+   "tendencia": null
+  },
+  "Aronia": {
+   "fama": 0.0859,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2214,
+   "tendencia": null
+  },
+  "Sabugueiro": {
+   "fama": 0.026,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Haskap": {
+   "fama": 0.0072,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sea buckthorn": {
+   "fama": 0.0897,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2892,
+   "tendencia": null
+  },
+  "Medronho": {
+   "fama": 0.1265,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 10716,
+   "tendencia": null
+  },
+  "Azarole": {
+   "fama": 0.0071,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cornalina": {
+   "fama": 0.0997,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2982,
+   "tendencia": null
+  },
+  "Néspera-europeia": {
+   "fama": 0.03,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sorveira": {
+   "fama": 0.0941,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2514,
+   "tendencia": null
+  },
+  "Pera-espinhosa": {
+   "fama": 0.0317,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bergamota-europeia": {
+   "fama": 0.0325,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cidra": {
+   "fama": 0.1285,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 11244,
+   "tendencia": null
+  },
+  "Limão-caviar": {
+   "fama": 0.1449,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 19158,
+   "tendencia": null
+  },
+  "Yuzu": {
+   "fama": 0.1055,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 6666,
+   "tendencia": null
+  },
+  "Sudachi": {
+   "fama": 0.0651,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 810,
+   "tendencia": null
+  },
+  "Calamansi": {
+   "fama": 0.0852,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2316,
+   "tendencia": null
+  },
+  "Limeta": {
+   "fama": 0.0068,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Laranja-azeda": {
+   "fama": 0.1136,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3708,
+   "tendencia": null
+  },
+  "Laranja-sanguínea": {
+   "fama": 0.1383,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 12384,
+   "tendencia": null
+  },
+  "Clementina": {
+   "fama": 0.1065,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 3282,
+   "tendencia": null
+  },
+  "Tangerina-satsuma": {
+   "fama": 0.0293,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tangelo": {
+   "fama": 0.0785,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1170,
+   "tendencia": null
+  },
+  "Pomelo chinês": {
+   "fama": 0.0285,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ugli": {
+   "fama": 0.052,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 414,
+   "tendencia": null
+  },
+  "Kabosu": {
+   "fama": 0.0473,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 324,
+   "tendencia": null
+  },
+  "Dekopon": {
+   "fama": 0.0065,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mão-de-buda": {
+   "fama": 0.037,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kinkan-redondo": {
+   "fama": 0.0337,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Abacate-manteiga": {
+   "fama": 0.0336,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Coco-de-catarro": {
+   "fama": 0.1338,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 11538,
+   "tendencia": null
+  },
+  "Coco-babão": {
+   "fama": 0.1019,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2148,
+   "tendencia": null
+  },
+  "Coco-indaiá": {
+   "fama": 0.0312,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pequi-anão": {
+   "fama": 0.0291,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Buritirana": {
+   "fama": 0.0883,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1608,
+   "tendencia": null
+  },
+  "Açaí-solteiro": {
+   "fama": 0.0329,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Piaçava": {
+   "fama": 0.1109,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4962,
+   "tendencia": null
+  },
+  "Tucum": {
+   "fama": 0.1093,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4614,
+   "tendencia": null
+  },
+  "Carnaúba": {
+   "fama": 0.1325,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 12984,
+   "tendencia": null
+  },
+  "Juçara-palmito": {
+   "fama": 0.0275,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mangaba-de-praia": {
+   "fama": 0.0322,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caju-gigante": {
+   "fama": 0.0835,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 696,
+   "tendencia": null
+  },
+  "Cajueiro-anão": {
+   "fama": 0.0292,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jabuticaba-de-cabinho": {
+   "fama": 0.0272,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cereja-de-barbados": {
+   "fama": 0.0298,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pitangatuba": {
+   "fama": 0.083,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1740,
+   "tendencia": null
+  },
+  "Grumixameira": {
+   "fama": 0.1336,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 27006,
+   "tendencia": null
+  },
+  "Murta": {
+   "fama": 0.0268,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guaraná": {
+   "fama": 0.1469,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 24762,
+   "tendencia": null
+  },
+  "Bacabinha": {
+   "fama": 0.052,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 330,
+   "tendencia": null
+  },
+  "Ingá-de-metro": {
+   "fama": 0.0313,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ingá-feijão": {
+   "fama": 0.0307,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fruta-de-tatu": {
+   "fama": 0.0318,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fruta-de-pombo": {
+   "fama": 0.032,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fruta-de-morcego": {
+   "fama": 0.0322,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Uva-de-praia": {
+   "fama": 0.0368,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Guajiru": {
+   "fama": 0.0989,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2958,
+   "tendencia": null
+  },
   "Pitanga-do-cerrado": {
-   "fama": 0.0328,
+   "fama": 0.0308,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -2257,23 +2259,23 @@
    "tendencia": null
   },
   "Mangava": {
-   "fama": 0.0095,
+   "fama": 0.1379,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 38430,
    "tendencia": null
   },
   "Cagaiteira": {
-   "fama": 0.0186,
+   "fama": 0.1351,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 25800,
    "tendencia": null
   },
   "Sapoti-do-mato": {
-   "fama": 0.0313,
+   "fama": 0.0292,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,

@@ -1,23 +1,25 @@
 {
  "categoria": "filmes-tom-hanks",
- "gerado_em": "2026-10-24",
+ "gerado_em": "2026-10-28",
  "sinais": [
   "conhecem",
   "lembranca",
   "revisao",
-  "texto"
+  "texto",
+  "visitas"
  ],
  "meses_de_visitas": [],
  "pesos": {
   "lembranca": 0.65,
   "conhecem": 0.1,
-  "revisao": 0.15,
+  "revisao": 0.08,
+  "visitas": 0.14,
   "texto": 0.03
  },
  "estimadas_pelo_llm": 50,
  "respostas": {
   "Forrest Gump: O Contador de Histórias": {
-   "fama": 0.9829,
+   "fama": 0.9816,
    "lembranca_em_1000": 380.0,
    "estimada": true,
    "conhecem_pct": 95.0,
@@ -25,87 +27,87 @@
    "tendencia": null
   },
   "Náufrago": {
-   "fama": 0.8625,
+   "fama": 0.7564,
    "lembranca_em_1000": 170.0,
    "estimada": true,
    "conhecem_pct": 90.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 900,
    "tendencia": null
   },
   "Toy Story": {
-   "fama": 0.8702,
+   "fama": 0.8516,
    "lembranca_em_1000": 140.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 44694,
    "tendencia": null
   },
   "O Resgate do Soldado Ryan": {
-   "fama": 0.6896,
+   "fama": 0.6698,
    "lembranca_em_1000": 40.0,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20670,
    "tendencia": null
   },
   "O Código Da Vinci": {
-   "fama": 0.6894,
+   "fama": 0.6668,
    "lembranca_em_1000": 40.0,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 17016,
    "tendencia": null
   },
   "À Espera de um Milagre": {
-   "fama": 0.6873,
+   "fama": 0.6838,
    "lembranca_em_1000": 40.0,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 36810,
    "tendencia": null
   },
   "Prenda-me Se For Capaz": {
-   "fama": 0.5998,
+   "fama": 0.5807,
    "lembranca_em_1000": 20.0,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13194,
    "tendencia": null
   },
   "O Terminal": {
-   "fama": 0.6334,
+   "fama": 0.605,
    "lembranca_em_1000": 30.0,
    "estimada": true,
    "conhecem_pct": 72.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8244,
    "tendencia": null
   },
   "Filadélfia": {
-   "fama": 0.4506,
+   "fama": 0.4651,
    "lembranca_em_1000": 8.0,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 27978,
    "tendencia": null
   },
   "Quero Ser Grande": {
-   "fama": 0.4348,
+   "fama": 0.401,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2952,
    "tendencia": null
   },
   "Apollo 13": {
-   "fama": 0.4559,
+   "fama": 0.447,
    "lembranca_em_1000": 8.0,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9588,
    "tendencia": null
   },
   "Anjos e Demônios": {
-   "fama": 0.4057,
+   "fama": 0.3797,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 55.0,
@@ -113,71 +115,71 @@
    "tendencia": null
   },
   "Elvis": {
-   "fama": 0.2975,
+   "fama": 0.3696,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 163212,
    "tendencia": null
   },
   "Capitão Phillips": {
-   "fama": 0.3656,
+   "fama": 0.3578,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6138,
    "tendencia": null
   },
   "Sintonia de Amor": {
-   "fama": 0.3332,
+   "fama": 0.3182,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3786,
    "tendencia": null
   },
   "Mensagem para Você": {
-   "fama": 0.3424,
+   "fama": 0.3339,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4842,
    "tendencia": null
   },
   "Sully: O Herói do Rio Hudson": {
-   "fama": 0.3381,
+   "fama": 0.3444,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9132,
    "tendencia": null
   },
   "O Expresso Polar": {
-   "fama": 0.3618,
+   "fama": 0.3477,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3750,
    "tendencia": null
   },
   "Inferno": {
-   "fama": 0.2286,
+   "fama": 0.2608,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 16722,
    "tendencia": null
   },
   "Ponte dos Espiões": {
-   "fama": 0.2305,
+   "fama": 0.2308,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4116,
    "tendencia": null
   },
   "O Pior Vizinho do Mundo": {
-   "fama": 0.2836,
+   "fama": 0.262,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 40.0,
@@ -185,15 +187,15 @@
    "tendencia": null
   },
   "Estrada para Perdição": {
-   "fama": 0.222,
+   "fama": 0.2319,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5352,
    "tendencia": null
   },
   "Splash: Uma Sereia em Minha Vida": {
-   "fama": 0.2188,
+   "fama": 0.199,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 30.0,
@@ -201,7 +203,7 @@
    "tendencia": null
   },
   "The Post: A Guerra Secreta": {
-   "fama": 0.1655,
+   "fama": 0.1432,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 25.0,
@@ -209,7 +211,7 @@
    "tendencia": null
   },
   "Turner & Hooch: Uma Dupla Quase Perfeita": {
-   "fama": 0.2018,
+   "fama": 0.1843,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 25.0,
@@ -217,23 +219,23 @@
    "tendencia": null
   },
   "Uma Equipe Muito Especial": {
-   "fama": 0.1464,
+   "fama": 0.1551,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2676,
    "tendencia": null
   },
   "Pinóquio": {
-   "fama": 0.1408,
+   "fama": 0.1973,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 18726,
    "tendencia": null
   },
   "Cloud Atlas: A Viagem": {
-   "fama": 0.1433,
+   "fama": 0.1263,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 20.0,
@@ -241,47 +243,47 @@
    "tendencia": null
   },
   "Um Dia a Casa Cai": {
-   "fama": 0.161,
+   "fama": 0.1613,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1686,
    "tendencia": null
   },
   "Matadores de Velhinha": {
-   "fama": 0.1067,
+   "fama": 0.1118,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1650,
    "tendencia": null
   },
   "Jogos do Poder": {
-   "fama": 0.1132,
+   "fama": 0.1569,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 12.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9204,
    "tendencia": null
   },
   "Walt nos Bastidores de Mary Poppins": {
-   "fama": 0.1232,
+   "fama": 0.125,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1500,
    "tendencia": null
   },
   "Um Lindo Dia na Vizinhança": {
-   "fama": 0.1157,
+   "fama": 0.1334,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 12.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2952,
    "tendencia": null
   },
   "Greyhound: Na Mira do Inimigo": {
-   "fama": 0.1185,
+   "fama": 0.103,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 15.0,
@@ -289,39 +291,39 @@
    "tendencia": null
   },
   "Tão Forte e Tão Perto": {
-   "fama": 0.1218,
+   "fama": 0.1336,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2172,
    "tendencia": null
   },
   "Finch": {
-   "fama": 0.097,
+   "fama": 0.1041,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1506,
    "tendencia": null
   },
   "Relatos do Mundo": {
-   "fama": 0.0897,
+   "fama": 0.0861,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 930,
    "tendencia": null
   },
   "O Círculo": {
-   "fama": 0.0838,
+   "fama": 0.1104,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 12.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3336,
    "tendencia": null
   },
   "Larry Crowne: O Amor Está de Volta": {
-   "fama": 0.0957,
+   "fama": 0.0802,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 10.0,
@@ -329,63 +331,63 @@
    "tendencia": null
   },
   "A Fogueira das Vaidades": {
-   "fama": 0.0665,
+   "fama": 0.0762,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 8.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1458,
    "tendencia": null
   },
   "Meus Vizinhos São um Terror": {
-   "fama": 0.0892,
+   "fama": 0.0927,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1110,
    "tendencia": null
   },
   "Joe Contra o Vulcão": {
-   "fama": 0.0729,
+   "fama": 0.0656,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 8.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 612,
    "tendencia": null
   },
   "The Wonders: O Sonho Não Acabou": {
-   "fama": 0.0726,
+   "fama": 0.1123,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 5.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4836,
    "tendencia": null
   },
   "Dragnet: Desafiando o Perigo": {
-   "fama": 0.0537,
+   "fama": 0.0522,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 5.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 696,
    "tendencia": null
   },
   "Asteroid City": {
-   "fama": 0.0562,
+   "fama": 0.0834,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2388,
    "tendencia": null
   },
   "A Última Festa de Solteiro": {
-   "fama": 0.0628,
+   "fama": 0.0738,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 8.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1164,
    "tendencia": null
   },
   "Um Holograma para o Rei": {
-   "fama": 0.0641,
+   "fama": 0.055,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 5.0,
@@ -393,23 +395,23 @@
    "tendencia": null
   },
   "Aqui": {
-   "fama": 0.0769,
+   "fama": 0.0791,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 768,
    "tendencia": null
   },
   "Nada em Comum": {
-   "fama": 0.0575,
+   "fama": 0.0593,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 4.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 666,
    "tendencia": null
   },
   "Ele Sabe Que Você Está Sozinha": {
-   "fama": 0.0368,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": true,
    "conhecem_pct": 3.0,
@@ -417,15 +419,15 @@
    "tendencia": null
   },
   "Os Voluntários": {
-   "fama": 0.022,
+   "fama": 0.0837,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 7680,
    "tendencia": null
   },
   "O Homem do Sapato Vermelho": {
-   "fama": 0.0407,
+   "fama": 0.0333,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -433,7 +435,7 @@
    "tendencia": null
   },
   "Every Time We Say Goodbye": {
-   "fama": 0.0428,
+   "fama": 0.0356,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -441,23 +443,23 @@
    "tendencia": null
   },
   "Punchline": {
-   "fama": 0.022,
+   "fama": 0.0275,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 696,
    "tendencia": null
   },
   "Radio Flyer": {
-   "fama": 0.035,
+   "fama": 0.0562,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1458,
    "tendencia": null
   },
   "O Grande Buck Howard": {
-   "fama": 0.0502,
+   "fama": 0.0436,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -465,15 +467,15 @@
    "tendencia": null
   },
   "Os Simpsons: O Filme": {
-   "fama": 0.0462,
+   "fama": 0.0818,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2844,
    "tendencia": null
   },
   "O Esquema Fenício": {
-   "fama": 0.0268,
+   "fama": 0.0183,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -481,15 +483,15 @@
    "tendencia": null
   },
   "Mazes and Monsters": {
-   "fama": 0.022,
+   "fama": 0.0125,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 366,
    "tendencia": null
   },
   "Ithaca": {
-   "fama": 0.022,
+   "fama": 0.0127,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -497,7 +499,7 @@
    "tendencia": null
   },
   "Magnificent Desolation": {
-   "fama": 0.022,
+   "fama": 0.0127,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -505,7 +507,7 @@
    "tendencia": null
   },
   "Beyond All Boundaries": {
-   "fama": 0.022,
+   "fama": 0.0127,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -513,15 +515,15 @@
    "tendencia": null
   },
   "Toy Story de Terror": {
-   "fama": 0.0361,
+   "fama": 0.0339,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 522,
    "tendencia": null
   },
   "Toy Story: Esquecidos pelo Tempo": {
-   "fama": 0.0442,
+   "fama": 0.0371,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -529,31 +531,31 @@
    "tendencia": null
   },
   "Partysaurus Rex": {
-   "fama": 0.022,
+   "fama": 0.0109,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 342,
    "tendencia": null
   },
   "Férias no Havaí": {
-   "fama": 0.0501,
+   "fama": 0.0464,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 510,
    "tendencia": null
   },
   "Small Fry": {
-   "fama": 0.022,
+   "fama": 0.0117,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 354,
    "tendencia": null
   },
   "Killing Lincoln": {
-   "fama": 0.022,
+   "fama": 0.0127,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,

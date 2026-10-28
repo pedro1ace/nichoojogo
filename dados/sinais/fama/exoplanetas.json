@@ -1,34 +1,21 @@
 {
  "categoria": "exoplanetas",
- "gerado_em": "2026-10-24",
+ "gerado_em": "2026-10-28",
  "sinais": [
   "conhecem",
   "lembranca",
   "visitas"
  ],
- "meses_de_visitas": [
-  "202609",
-  "202608",
-  "202607",
-  "202606",
-  "202605",
-  "202604",
-  "202603",
-  "202602",
-  "202601",
-  "202512",
-  "202511",
-  "202510"
- ],
+ "meses_de_visitas": [],
  "pesos": {
   "lembranca": 0.65,
   "conhecem": 0.1,
-  "visitas": 0.07
+  "visitas": 0.14
  },
  "estimadas_pelo_llm": 386,
  "respostas": {
   "Kepler-34b": {
-   "fama": 0.0171,
+   "fama": 0.0315,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -36,7 +23,7 @@
    "tendencia": null
   },
   "Kepler-6b": {
-   "fama": 0.0232,
+   "fama": 0.0427,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -44,7 +31,7 @@
    "tendencia": null
   },
   "COROT-6b": {
-   "fama": 0.0112,
+   "fama": 0.0206,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -52,7 +39,7 @@
    "tendencia": null
   },
   "HD 217107 b": {
-   "fama": 0.0102,
+   "fama": 0.0188,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -60,15 +47,15 @@
    "tendencia": null
   },
   "14 Andromedae b": {
-   "fama": 0.0121,
+   "fama": 0.0482,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 127,
-   "tendencia": 0.53
+   "tendencia": null
   },
   "HD 169830 c": {
-   "fama": 0.0038,
+   "fama": 0.0069,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -76,7 +63,7 @@
    "tendencia": null
   },
   "HD 40307 b": {
-   "fama": 0.0146,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -84,7 +71,7 @@
    "tendencia": null
   },
   "Tau1 gruis b": {
-   "fama": 0.0088,
+   "fama": 0.0161,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -92,7 +79,7 @@
    "tendencia": null
   },
   "HD 37605 b": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -100,7 +87,7 @@
    "tendencia": null
   },
   "HD 210702 b": {
-   "fama": 0.0095,
+   "fama": 0.0175,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -108,7 +95,7 @@
    "tendencia": null
   },
   "HD 40307 c": {
-   "fama": 0.0135,
+   "fama": 0.0249,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -116,7 +103,7 @@
    "tendencia": null
   },
   "HD 23079 b": {
-   "fama": 0.0216,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -124,7 +111,7 @@
    "tendencia": null
   },
   "HD 130322 b": {
-   "fama": 0.0138,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -132,7 +119,7 @@
    "tendencia": null
   },
   "HD 192699 b": {
-   "fama": 0.0088,
+   "fama": 0.0161,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -140,7 +127,7 @@
    "tendencia": null
   },
   "HAT-P-13c": {
-   "fama": 0.0091,
+   "fama": 0.0168,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -148,7 +135,7 @@
    "tendencia": null
   },
   "HD 147018 b": {
-   "fama": 0.0095,
+   "fama": 0.0175,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -156,7 +143,7 @@
    "tendencia": null
   },
   "23 Librae c": {
-   "fama": 0.0181,
+   "fama": 0.0333,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -164,7 +151,7 @@
    "tendencia": null
   },
   "Gliese 667 Cb": {
-   "fama": 0.0249,
+   "fama": 0.0459,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -172,15 +159,15 @@
    "tendencia": null
   },
   "Gliese 876 b": {
-   "fama": 0.0833,
+   "fama": 0.1207,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 248,
-   "tendencia": 0.66
+   "tendencia": null
   },
   "WASP-18b": {
-   "fama": 0.0224,
+   "fama": 0.0412,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -188,7 +175,7 @@
    "tendencia": null
   },
   "Gliese 86 b": {
-   "fama": 0.0192,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -196,7 +183,7 @@
    "tendencia": null
   },
   "91 Aquarii b": {
-   "fama": 0.0164,
+   "fama": 0.0303,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -204,15 +191,15 @@
    "tendencia": null
   },
   "Upsilon Andromedae b": {
-   "fama": 0.0917,
+   "fama": 0.1079,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 149,
-   "tendencia": 1.13
+   "tendencia": null
   },
   "Mu Arae d": {
-   "fama": 0.0175,
+   "fama": 0.0322,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -220,7 +207,7 @@
    "tendencia": null
   },
   "HD 104985 b": {
-   "fama": 0.0146,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -228,7 +215,7 @@
    "tendencia": null
   },
   "HD 59686 b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -236,7 +223,7 @@
    "tendencia": null
   },
   "XO-4b": {
-   "fama": 0.0194,
+   "fama": 0.0357,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -244,7 +231,7 @@
    "tendencia": null
   },
   "HD 70642 b": {
-   "fama": 0.0177,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -252,7 +239,7 @@
    "tendencia": null
   },
   "Pi Mensae b": {
-   "fama": 0.0199,
+   "fama": 0.0366,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -260,7 +247,7 @@
    "tendencia": null
   },
   "HD 221287 b": {
-   "fama": 0.0151,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -268,7 +255,7 @@
    "tendencia": null
   },
   "41 Lyncis b": {
-   "fama": 0.0247,
+   "fama": 0.0455,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -276,7 +263,7 @@
    "tendencia": null
   },
   "HD 40307 d": {
-   "fama": 0.013,
+   "fama": 0.0239,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -284,7 +271,7 @@
    "tendencia": null
   },
   "HD 114729 b": {
-   "fama": 0.0095,
+   "fama": 0.0175,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -292,7 +279,7 @@
    "tendencia": null
   },
   "HD 96167 b": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -300,7 +287,7 @@
    "tendencia": null
   },
   "Kappa Coronae Borealis b": {
-   "fama": 0.0099,
+   "fama": 0.0182,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -308,7 +295,7 @@
    "tendencia": null
   },
   "HD 149026 b": {
-   "fama": 0.0181,
+   "fama": 0.0333,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -316,7 +303,7 @@
    "tendencia": null
   },
   "Rho Indi b": {
-   "fama": 0.008,
+   "fama": 0.0147,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -324,7 +311,7 @@
    "tendencia": null
   },
   "HD 168746 b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -332,7 +319,7 @@
    "tendencia": null
   },
   "HD 50554 b": {
-   "fama": 0.0105,
+   "fama": 0.0194,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -340,7 +327,7 @@
    "tendencia": null
   },
   "Gliese 3634 b": {
-   "fama": 0.0105,
+   "fama": 0.0194,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -348,7 +335,7 @@
    "tendencia": null
   },
   "COROT-9b": {
-   "fama": 0.0138,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -356,7 +343,7 @@
    "tendencia": null
   },
   "109 Piscium b": {
-   "fama": 0.0224,
+   "fama": 0.0412,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -364,15 +351,15 @@
    "tendencia": null
   },
   "HD 69830 d": {
-   "fama": 0.0112,
+   "fama": 0.0497,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 135,
-   "tendencia": 0.34
+   "tendencia": null
   },
   "HD 9446 b": {
-   "fama": 0.0115,
+   "fama": 0.0212,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -380,7 +367,7 @@
    "tendencia": null
   },
   "HD 1461 b": {
-   "fama": 0.0105,
+   "fama": 0.0194,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -388,7 +375,7 @@
    "tendencia": null
   },
   "47 Ursae Majoris d": {
-   "fama": 0.0153,
+   "fama": 0.0282,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -396,7 +383,7 @@
    "tendencia": null
   },
   "Sissi": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -404,23 +391,23 @@
    "tendencia": null
   },
   "KOI-5715.01": {
-   "fama": 0.078,
+   "fama": 0.0906,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 686,
-   "tendencia": 2.18
+   "tendencia": null
   },
   "TOI-715 b": {
-   "fama": 0.0335,
+   "fama": 0.0549,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 166,
-   "tendencia": 1.16
+   "tendencia": null
   },
   "TOI-2180 b": {
-   "fama": 0.0115,
+   "fama": 0.0212,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -428,39 +415,39 @@
    "tendencia": null
   },
   "Kepler-62f": {
-   "fama": 0.2389,
+   "fama": 0.2514,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 767,
-   "tendencia": 1.48
+   "tendencia": null
   },
   "TOI-1452 b": {
-   "fama": 0.0684,
+   "fama": 0.1429,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 5445,
-   "tendencia": 0.87
+   "tendencia": null
   },
   "HD 80606 b": {
-   "fama": 0.055,
+   "fama": 0.072,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 328,
-   "tendencia": 1.62
+   "tendencia": null
   },
   "Kepler-62e": {
-   "fama": 0.0641,
+   "fama": 0.0838,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 524,
-   "tendencia": 1.62
+   "tendencia": null
   },
   "WASP-15b": {
-   "fama": 0.0102,
+   "fama": 0.0188,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -468,7 +455,7 @@
    "tendencia": null
   },
   "HAT-P-9b": {
-   "fama": 0.0053,
+   "fama": 0.0098,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -476,7 +463,7 @@
    "tendencia": null
   },
   "54 Piscium b": {
-   "fama": 0.023,
+   "fama": 0.0425,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -484,7 +471,7 @@
    "tendencia": null
   },
   "HAT-P-8 b": {
-   "fama": 0.0173,
+   "fama": 0.0318,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -492,7 +479,7 @@
    "tendencia": null
   },
   "Rho Coronae Borealis b": {
-   "fama": 0.0148,
+   "fama": 0.0273,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -500,7 +487,7 @@
    "tendencia": null
   },
   "OGLE-2005-BLG-169Lb": {
-   "fama": 0.0166,
+   "fama": 0.0307,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -508,7 +495,7 @@
    "tendencia": null
   },
   "HD 219828 b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -516,7 +503,7 @@
    "tendencia": null
   },
   "HD 111232 b": {
-   "fama": 0.0121,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -524,7 +511,7 @@
    "tendencia": null
   },
   "HD 41004 Ab": {
-   "fama": 0.0162,
+   "fama": 0.0299,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -532,7 +519,7 @@
    "tendencia": null
   },
   "HD 23127 b": {
-   "fama": 0.0048,
+   "fama": 0.0089,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -540,7 +527,7 @@
    "tendencia": null
   },
   "HD 224693 b": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -548,7 +535,7 @@
    "tendencia": null
   },
   "HD 188015 b": {
-   "fama": 0.0076,
+   "fama": 0.0139,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -556,31 +543,31 @@
    "tendencia": null
   },
   "Gliese 876 c": {
-   "fama": 0.0308,
+   "fama": 0.0622,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 222,
-   "tendencia": 0.9
+   "tendencia": null
   },
   "HD 20782 b": {
-   "fama": 0.027,
+   "fama": 0.0478,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 125,
-   "tendencia": 1.05
+   "tendencia": null
   },
   "WASP-17b": {
-   "fama": 0.0284,
+   "fama": 0.0593,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 198,
-   "tendencia": 0.87
+   "tendencia": null
   },
   "Kepler-4b": {
-   "fama": 0.021,
+   "fama": 0.0387,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -588,15 +575,15 @@
    "tendencia": null
   },
   "Tau Boötis b": {
-   "fama": 0.0238,
+   "fama": 0.0482,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 127,
-   "tendencia": 0.9
+   "tendencia": null
   },
   "V391 Pegasi b": {
-   "fama": 0.0151,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -604,7 +591,7 @@
    "tendencia": null
   },
   "Gliese 179 b": {
-   "fama": 0.0138,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -612,7 +599,7 @@
    "tendencia": null
   },
   "HD 114783 b": {
-   "fama": 0.0099,
+   "fama": 0.0182,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -620,7 +607,7 @@
    "tendencia": null
   },
   "LHS 475 b": {
-   "fama": 0.0232,
+   "fama": 0.0427,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -628,7 +615,7 @@
    "tendencia": null
   },
   "Kepler-62c": {
-   "fama": 0.0181,
+   "fama": 0.0333,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -636,7 +623,7 @@
    "tendencia": null
   },
   "Kepler-62d": {
-   "fama": 0.0197,
+   "fama": 0.0363,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -644,7 +631,7 @@
    "tendencia": null
   },
   "Upsilon Andromedae e": {
-   "fama": 0.0162,
+   "fama": 0.0299,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -652,15 +639,15 @@
    "tendencia": null
   },
   "Mu Arae b": {
-   "fama": 0.0219,
+   "fama": 0.0492,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 132,
-   "tendencia": 0.81
+   "tendencia": null
   },
   "Kepler-62b": {
-   "fama": 0.0241,
+   "fama": 0.0444,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -668,15 +655,15 @@
    "tendencia": null
   },
   "16 Cygni Bb": {
-   "fama": 0.0272,
+   "fama": 0.0595,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 199,
-   "tendencia": 0.83
+   "tendencia": null
   },
   "COROT-5b": {
-   "fama": 0.013,
+   "fama": 0.0239,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -684,7 +671,7 @@
    "tendencia": null
   },
   "Eta² Hydri b": {
-   "fama": 0.0095,
+   "fama": 0.0175,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -692,7 +679,7 @@
    "tendencia": null
   },
   "HD 37124 d": {
-   "fama": 0.0063,
+   "fama": 0.0115,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -700,7 +687,7 @@
    "tendencia": null
   },
   "Xi Aquilae b": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -708,7 +695,7 @@
    "tendencia": null
   },
   "Kepler-8b": {
-   "fama": 0.0204,
+   "fama": 0.0376,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -716,15 +703,15 @@
    "tendencia": null
   },
   "Pólux b": {
-   "fama": 0.0315,
+   "fama": 0.0506,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 140,
-   "tendencia": 1.19
+   "tendencia": null
   },
   "HAT-P-11b": {
-   "fama": 0.0249,
+   "fama": 0.0459,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -732,7 +719,7 @@
    "tendencia": null
   },
   "Gliese 317 b": {
-   "fama": 0.016,
+   "fama": 0.0295,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -740,7 +727,7 @@
    "tendencia": null
   },
   "HD 213240 b": {
-   "fama": 0.0084,
+   "fama": 0.0154,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -748,7 +735,7 @@
    "tendencia": null
   },
   "HD 81040 b": {
-   "fama": 0.0063,
+   "fama": 0.0115,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -756,7 +743,7 @@
    "tendencia": null
   },
   "HD 178911 Bb": {
-   "fama": 0.0146,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -764,7 +751,7 @@
    "tendencia": null
   },
   "HD 17156 b": {
-   "fama": 0.0181,
+   "fama": 0.0333,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -772,7 +759,7 @@
    "tendencia": null
   },
   "HD 45350 b": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -780,7 +767,7 @@
    "tendencia": null
   },
   "WASP-4b": {
-   "fama": 0.0155,
+   "fama": 0.0286,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -788,7 +775,7 @@
    "tendencia": null
   },
   "TrES-3b": {
-   "fama": 0.0121,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -796,7 +783,7 @@
    "tendencia": null
   },
   "WASP-5b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -804,7 +791,7 @@
    "tendencia": null
   },
   "COROT-2b": {
-   "fama": 0.0169,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -812,7 +799,7 @@
    "tendencia": null
   },
   "82 G. Eridani d": {
-   "fama": 0.0236,
+   "fama": 0.0434,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -820,7 +807,7 @@
    "tendencia": null
   },
   "COROT-4b": {
-   "fama": 0.0143,
+   "fama": 0.0264,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -828,7 +815,7 @@
    "tendencia": null
   },
   "Gliese 777 c": {
-   "fama": 0.0239,
+   "fama": 0.0441,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -836,7 +823,7 @@
    "tendencia": null
   },
   "WASP-11b/HAT-P-10b": {
-   "fama": 0.0133,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -844,15 +831,15 @@
    "tendencia": null
   },
   "HAT-P-7b": {
-   "fama": 0.0442,
+   "fama": 0.0728,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 338,
-   "tendencia": 1.15
+   "tendencia": null
   },
   "HD 4308 b": {
-   "fama": 0.0151,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -860,15 +847,15 @@
    "tendencia": null
   },
   "HR 8799 b": {
-   "fama": 0.1444,
+   "fama": 0.1644,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 257,
-   "tendencia": 1.06
+   "tendencia": null
   },
   "HD 93083 b": {
-   "fama": 0.0181,
+   "fama": 0.0333,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -876,15 +863,15 @@
    "tendencia": null
   },
   "HR 8799 c": {
-   "fama": 0.0789,
+   "fama": 0.1125,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 163,
-   "tendencia": 0.58
+   "tendencia": null
   },
   "Kepler-5b": {
-   "fama": 0.0169,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -892,7 +879,7 @@
    "tendencia": null
   },
   "61 Virginis c": {
-   "fama": 0.0207,
+   "fama": 0.0381,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -900,15 +887,15 @@
    "tendencia": null
   },
   "Gliese 667 Cf": {
-   "fama": 0.0333,
+   "fama": 0.0538,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 159,
-   "tendencia": 1.18
+   "tendencia": null
   },
   "Gliese 667 Ce": {
-   "fama": 0.0221,
+   "fama": 0.0407,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -916,7 +903,7 @@
    "tendencia": null
   },
   "Gliese 667 Cd": {
-   "fama": 0.0239,
+   "fama": 0.0441,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -924,7 +911,7 @@
    "tendencia": null
   },
   "Gliese 674 b": {
-   "fama": 0.0199,
+   "fama": 0.0366,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -932,7 +919,7 @@
    "tendencia": null
   },
   "83 Leonis Bb": {
-   "fama": 0.0177,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -940,7 +927,7 @@
    "tendencia": null
   },
   "HD 69830 c": {
-   "fama": 0.0151,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -948,7 +935,7 @@
    "tendencia": null
   },
   "Upsilon Andromedae c": {
-   "fama": 0.0183,
+   "fama": 0.0337,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -956,7 +943,7 @@
    "tendencia": null
   },
   "Negoiu": {
-   "fama": 0.0246,
+   "fama": 0.0453,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -964,7 +951,7 @@
    "tendencia": null
   },
   "HD 137010 b": {
-   "fama": 0.0456,
+   "fama": 0.084,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -972,7 +959,7 @@
    "tendencia": null
   },
   "Ross 318 b": {
-   "fama": 0.0355,
+   "fama": 0.0655,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -980,7 +967,7 @@
    "tendencia": null
   },
   "GJ 3470 b": {
-   "fama": 0.0194,
+   "fama": 0.0357,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -988,15 +975,15 @@
    "tendencia": null
   },
   "PSR 1257+12 b": {
-   "fama": 0.1573,
+   "fama": 0.1838,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 554,
-   "tendencia": 1.11
+   "tendencia": null
   },
   "Gliese 667 Cg": {
-   "fama": 0.0164,
+   "fama": 0.0303,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1004,23 +991,23 @@
    "tendencia": null
   },
   "GJ 504b": {
-   "fama": 0.0697,
+   "fama": 0.1014,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 1052,
-   "tendencia": 1.37
+   "tendencia": null
   },
   "Tau Ceti e": {
-   "fama": 0.4015,
+   "fama": 0.3917,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 1217,
-   "tendencia": 2.37
+   "tendencia": null
   },
   "HD 106252 b": {
-   "fama": 0.0071,
+   "fama": 0.0132,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1028,15 +1015,15 @@
    "tendencia": null
   },
   "Kepler-78b": {
-   "fama": 0.0257,
+   "fama": 0.0543,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 162,
-   "tendencia": 0.86
+   "tendencia": null
   },
   "Kepler-70c": {
-   "fama": 0.0115,
+   "fama": 0.0212,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1044,7 +1031,7 @@
    "tendencia": null
   },
   "Gliese 667 Ch": {
-   "fama": 0.0141,
+   "fama": 0.0259,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1052,7 +1039,7 @@
    "tendencia": null
   },
   "Kepler-61b": {
-   "fama": 0.0232,
+   "fama": 0.0427,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1060,47 +1047,47 @@
    "tendencia": null
   },
   "Kepler-69b": {
-   "fama": 0.0225,
+   "fama": 0.0486,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 129,
-   "tendencia": 0.84
+   "tendencia": null
   },
   "Kepler-90h": {
-   "fama": 0.0312,
+   "fama": 0.0508,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 141,
-   "tendencia": 1.17
+   "tendencia": null
   },
   "Tau Ceti f": {
-   "fama": 0.2897,
+   "fama": 0.2853,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 539,
-   "tendencia": 1.95
+   "tendencia": null
   },
   "PSR J1719-1438 b": {
-   "fama": 0.0261,
+   "fama": 0.0676,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 275,
-   "tendencia": 0.71
+   "tendencia": null
   },
   "Kepler-186f": {
-   "fama": 0.6845,
+   "fama": 0.6588,
    "lembranca_em_1000": 30.0,
    "estimada": true,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 3935,
-   "tendencia": 1.99
+   "tendencia": null
   },
   "Kepler-186b": {
-   "fama": 0.0188,
+   "fama": 0.0347,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1108,7 +1095,7 @@
    "tendencia": null
   },
   "Kepler-186c": {
-   "fama": 0.013,
+   "fama": 0.0239,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1116,7 +1103,7 @@
    "tendencia": null
   },
   "Kepler-186d": {
-   "fama": 0.0138,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1124,7 +1111,7 @@
    "tendencia": null
   },
   "Kepler-186e": {
-   "fama": 0.0155,
+   "fama": 0.0286,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1132,15 +1119,15 @@
    "tendencia": null
   },
   "Kepler-138d": {
-   "fama": 0.0375,
+   "fama": 0.0575,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 184,
-   "tendencia": 1.27
+   "tendencia": null
   },
   "WASP-103b": {
-   "fama": 0.0298,
+   "fama": 0.0549,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1148,7 +1135,7 @@
    "tendencia": null
   },
   "HD 20781 c": {
-   "fama": 0.0105,
+   "fama": 0.0194,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1156,31 +1143,31 @@
    "tendencia": null
   },
   "Gliese 581 c": {
-   "fama": 0.477,
+   "fama": 0.4853,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 1088,
-   "tendencia": 1.13
+   "tendencia": null
   },
   "Kepler-438b": {
-   "fama": 0.1629,
+   "fama": 0.1805,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 486,
-   "tendencia": 1.36
+   "tendencia": null
   },
   "Kapteyn b": {
-   "fama": 0.0415,
+   "fama": 0.0679,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 278,
-   "tendencia": 1.16
+   "tendencia": null
   },
   "Kapteyn c": {
-   "fama": 0.0192,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1188,15 +1175,15 @@
    "tendencia": null
   },
   "Gliese 832 c": {
-   "fama": 0.0324,
+   "fama": 0.0608,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 210,
-   "tendencia": 0.98
+   "tendencia": null
   },
   "HD 4208 b": {
-   "fama": 0.0088,
+   "fama": 0.0161,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1204,7 +1191,7 @@
    "tendencia": null
   },
   "Gliese 15 Ab": {
-   "fama": 0.0175,
+   "fama": 0.0322,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1212,15 +1199,15 @@
    "tendencia": null
   },
   "Kepler-20f": {
-   "fama": 0.0284,
+   "fama": 0.0499,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 136,
-   "tendencia": 1.06
+   "tendencia": null
   },
   "Kepler-298d": {
-   "fama": 0.0216,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1228,15 +1215,15 @@
    "tendencia": null
   },
   "KOI-3010.01": {
-   "fama": 0.0269,
+   "fama": 0.0636,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 235,
-   "tendencia": 0.77
+   "tendencia": null
   },
   "Kepler-52b": {
-   "fama": 0.0194,
+   "fama": 0.0357,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1244,7 +1231,7 @@
    "tendencia": null
   },
   "Gliese 687 b": {
-   "fama": 0.0173,
+   "fama": 0.0318,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1252,7 +1239,7 @@
    "tendencia": null
   },
   "Kepler-296f": {
-   "fama": 0.0226,
+   "fama": 0.0417,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1260,15 +1247,15 @@
    "tendencia": null
   },
   "Kepler-442b": {
-   "fama": 0.2556,
+   "fama": 0.2703,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 1624,
-   "tendencia": 1.57
+   "tendencia": null
   },
   "Kepler-296d": {
-   "fama": 0.0032,
+   "fama": 0.0059,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1276,7 +1263,7 @@
    "tendencia": null
   },
   "Kepler-296c": {
-   "fama": 0.0038,
+   "fama": 0.0069,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1284,7 +1271,7 @@
    "tendencia": null
   },
   "Kepler-296b": {
-   "fama": 0.0076,
+   "fama": 0.0139,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1292,15 +1279,15 @@
    "tendencia": null
   },
   "Kepler-440b": {
-   "fama": 0.0342,
+   "fama": 0.0482,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 127,
-   "tendencia": 1.44
+   "tendencia": null
   },
   "Kepler-444f": {
-   "fama": 0.0032,
+   "fama": 0.0059,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1308,15 +1295,15 @@
    "tendencia": null
   },
   "Kepler-296e": {
-   "fama": 0.0337,
+   "fama": 0.0559,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 173,
-   "tendencia": 1.14
+   "tendencia": null
   },
   "14 Herculis b": {
-   "fama": 0.0173,
+   "fama": 0.0318,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1324,7 +1311,7 @@
    "tendencia": null
   },
   "14 Herculis c": {
-   "fama": 0.0243,
+   "fama": 0.0448,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1332,15 +1319,15 @@
    "tendencia": null
   },
   "WASP-12b": {
-   "fama": 0.2725,
+   "fama": 0.3069,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1267,
-   "tendencia": 0.94
+   "tendencia": null
   },
   "Kepler-57b": {
-   "fama": 0.0138,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1348,7 +1335,7 @@
    "tendencia": null
   },
   "Kepler-57c": {
-   "fama": 0.0084,
+   "fama": 0.0154,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1356,7 +1343,7 @@
    "tendencia": null
   },
   "Kepler-138b": {
-   "fama": 0.021,
+   "fama": 0.0387,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1364,7 +1351,7 @@
    "tendencia": null
   },
   "Kepler-138c": {
-   "fama": 0.0202,
+   "fama": 0.0372,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1372,7 +1359,7 @@
    "tendencia": null
   },
   "Kepler-444b": {
-   "fama": 0.013,
+   "fama": 0.0239,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1380,7 +1367,7 @@
    "tendencia": null
   },
   "Kepler-444c": {
-   "fama": 0.0084,
+   "fama": 0.0154,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1388,7 +1375,7 @@
    "tendencia": null
   },
   "Kepler-444d": {
-   "fama": 0.0124,
+   "fama": 0.0229,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1396,7 +1383,7 @@
    "tendencia": null
   },
   "Kepler-444e": {
-   "fama": 0.008,
+   "fama": 0.0147,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1404,15 +1391,15 @@
    "tendencia": null
   },
   "KOI-4878.01": {
-   "fama": 0.0861,
+   "fama": 0.1,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 994,
-   "tendencia": 3.27
+   "tendencia": null
   },
   "Kepler-443b": {
-   "fama": 0.0219,
+   "fama": 0.0404,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1420,7 +1407,7 @@
    "tendencia": null
   },
   "HIP 11915 b": {
-   "fama": 0.0135,
+   "fama": 0.0249,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1428,15 +1415,15 @@
    "tendencia": null
   },
   "Kepler-452b": {
-   "fama": 0.8028,
+   "fama": 0.7815,
    "lembranca_em_1000": 60.0,
    "estimada": true,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 4603,
-   "tendencia": 1.6
+   "tendencia": null
   },
   "HD 219134 b": {
-   "fama": 0.0212,
+   "fama": 0.039,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1444,7 +1431,7 @@
    "tendencia": null
   },
   "51 Eridani b": {
-   "fama": 0.0237,
+   "fama": 0.0437,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1452,7 +1439,7 @@
    "tendencia": null
   },
   "Kepler-453b": {
-   "fama": 0.0177,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1460,7 +1447,7 @@
    "tendencia": null
   },
   "Kepler-52c": {
-   "fama": 0.0102,
+   "fama": 0.0188,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1468,7 +1455,7 @@
    "tendencia": null
   },
   "Kepler-52d": {
-   "fama": 0.0032,
+   "fama": 0.0059,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1476,7 +1463,7 @@
    "tendencia": null
   },
   "Chi Virginis c": {
-   "fama": 0.0091,
+   "fama": 0.0168,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1484,7 +1471,7 @@
    "tendencia": null
   },
   "Kepler-283c": {
-   "fama": 0.0226,
+   "fama": 0.0417,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1492,7 +1479,7 @@
    "tendencia": null
   },
   "Kepler-447b": {
-   "fama": 0.0099,
+   "fama": 0.0182,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1500,23 +1487,23 @@
    "tendencia": null
   },
   "Alfa Centauri Bc": {
-   "fama": 0.2476,
+   "fama": 0.2586,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 6.0,
    "visitas_pt_12m": 170,
-   "tendencia": 0.89
+   "tendencia": null
   },
   "Gliese 1132 b": {
-   "fama": 0.0213,
+   "fama": 0.0525,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 151,
-   "tendencia": 0.74
+   "tendencia": null
   },
   "Kepler-395c": {
-   "fama": 0.0076,
+   "fama": 0.0139,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1524,23 +1511,23 @@
    "tendencia": null
   },
   "Kepler-174d": {
-   "fama": 0.0321,
+   "fama": 0.0529,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 153,
-   "tendencia": 1.15
+   "tendencia": null
   },
   "Wolf 1061c": {
-   "fama": 0.1471,
+   "fama": 0.1671,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 286,
-   "tendencia": 1.1
+   "tendencia": null
   },
   "HD 219134 c": {
-   "fama": 0.013,
+   "fama": 0.0239,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1548,7 +1535,7 @@
    "tendencia": null
   },
   "HD 219134 d": {
-   "fama": 0.0048,
+   "fama": 0.0089,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1556,7 +1543,7 @@
    "tendencia": null
   },
   "HD 219134 e": {
-   "fama": 0.0105,
+   "fama": 0.0194,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1564,7 +1551,7 @@
    "tendencia": null
   },
   "HD 219134 f": {
-   "fama": 0.0071,
+   "fama": 0.0132,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1572,7 +1559,7 @@
    "tendencia": null
   },
   "HD 219134 h": {
-   "fama": 0.0146,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1580,7 +1567,7 @@
    "tendencia": null
   },
   "HD 219134 g": {
-   "fama": 0.0084,
+   "fama": 0.0154,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1588,7 +1575,7 @@
    "tendencia": null
   },
   "Wolf 1061d": {
-   "fama": 0.0133,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1596,7 +1583,7 @@
    "tendencia": null
   },
   "Wolf 1061b": {
-   "fama": 0.0121,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1604,7 +1591,7 @@
    "tendencia": null
   },
   "BD+20594D": {
-   "fama": 0.0166,
+   "fama": 0.0307,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1612,15 +1599,15 @@
    "tendencia": null
   },
   "K2-18b": {
-   "fama": 0.6789,
+   "fama": 0.7075,
    "lembranca_em_1000": 35.0,
    "estimada": true,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 7392,
-   "tendencia": 0.9
+   "tendencia": null
   },
   "K2-3b": {
-   "fama": 0.0115,
+   "fama": 0.0212,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1628,7 +1615,7 @@
    "tendencia": null
   },
   "K2-3c": {
-   "fama": 0.0088,
+   "fama": 0.0161,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1636,7 +1623,7 @@
    "tendencia": null
   },
   "K2-3d": {
-   "fama": 0.0188,
+   "fama": 0.0347,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1644,15 +1631,15 @@
    "tendencia": null
   },
   "Tau Ceti b": {
-   "fama": 0.1783,
+   "fama": 0.1808,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 449,
-   "tendencia": 2.68
+   "tendencia": null
   },
   "HAT-P-33b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1660,23 +1647,23 @@
    "tendencia": null
   },
   "HD 40307 g": {
-   "fama": 0.0418,
+   "fama": 0.0798,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 446,
-   "tendencia": 0.96
+   "tendencia": null
   },
   "47 Ursae Majoris b": {
-   "fama": 0.1349,
+   "fama": 0.1477,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 132,
-   "tendencia": 1.06
+   "tendencia": null
   },
   "KELT-4Ab": {
-   "fama": 0.008,
+   "fama": 0.0147,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1684,7 +1671,7 @@
    "tendencia": null
   },
   "4 Ursae Majoris b": {
-   "fama": 0.013,
+   "fama": 0.0239,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1692,7 +1679,7 @@
    "tendencia": null
   },
   "Kepler-131b": {
-   "fama": 0.0076,
+   "fama": 0.0139,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1700,7 +1687,7 @@
    "tendencia": null
   },
   "Kepler-131c": {
-   "fama": 0.0084,
+   "fama": 0.0154,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1708,23 +1695,23 @@
    "tendencia": null
   },
   "TRAPPIST-1 b": {
-   "fama": 0.4552,
+   "fama": 0.458,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 279,
-   "tendencia": 0.85
+   "tendencia": null
   },
   "Kepler-1638b": {
-   "fama": 0.0572,
+   "fama": 0.0665,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 263,
-   "tendencia": 3.24
+   "tendencia": null
   },
   "Kepler-1229b": {
-   "fama": 0.0232,
+   "fama": 0.0427,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1732,31 +1719,31 @@
    "tendencia": null
   },
   "TRAPPIST-1d": {
-   "fama": 0.3697,
+   "fama": 0.393,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 885,
-   "tendencia": 0.91
+   "tendencia": null
   },
   "Kepler-20e": {
-   "fama": 0.0291,
+   "fama": 0.0571,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 181,
-   "tendencia": 0.93
+   "tendencia": null
   },
   "51 Pegasi b": {
-   "fama": 0.5487,
+   "fama": 0.5579,
    "lembranca_em_1000": 20.0,
    "estimada": true,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 1006,
-   "tendencia": 0.95
+   "tendencia": null
   },
   "PH1": {
-   "fama": 0.0249,
+   "fama": 0.0459,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1764,7 +1751,7 @@
    "tendencia": null
   },
   "V830 Tauri b": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1772,7 +1759,7 @@
    "tendencia": null
   },
   "HD 25171 b": {
-   "fama": 0.0053,
+   "fama": 0.0098,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1780,23 +1767,23 @@
    "tendencia": null
   },
   "Tau Ceti c": {
-   "fama": 0.1672,
+   "fama": 0.1687,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 278,
-   "tendencia": 1.96
+   "tendencia": null
   },
   "Tau Ceti d": {
-   "fama": 0.1613,
+   "fama": 0.1637,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 228,
-   "tendencia": 1.85
+   "tendencia": null
   },
   "GJ 163 d": {
-   "fama": 0.0102,
+   "fama": 0.0188,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1804,7 +1791,7 @@
    "tendencia": null
   },
   "KOI-2474.01": {
-   "fama": 0.0121,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1812,7 +1799,7 @@
    "tendencia": null
   },
   "KOI-2469.01": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1820,7 +1807,7 @@
    "tendencia": null
   },
   "KOI-2992.01": {
-   "fama": 0.0138,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1828,15 +1815,15 @@
    "tendencia": null
   },
   "HD 34445 b": {
-   "fama": 0.0653,
+   "fama": 0.0759,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 382,
-   "tendencia": 2.11
+   "tendencia": null
   },
   "KELT-11b": {
-   "fama": 0.0146,
+   "fama": 0.0269,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1844,7 +1831,7 @@
    "tendencia": null
   },
   "OGLE-2007-BLG-368Lb": {
-   "fama": 0.0155,
+   "fama": 0.0286,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1852,7 +1839,7 @@
    "tendencia": null
   },
   "HD 12661 b": {
-   "fama": 0.0169,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1860,7 +1847,7 @@
    "tendencia": null
   },
   "HD 2039 b": {
-   "fama": 0.0088,
+   "fama": 0.0161,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1868,7 +1855,7 @@
    "tendencia": null
   },
   "70 Virginis b": {
-   "fama": 0.0205,
+   "fama": 0.0378,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1876,15 +1863,15 @@
    "tendencia": null
   },
   "HR 8799 e": {
-   "fama": 0.0948,
+   "fama": 0.1088,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 141,
-   "tendencia": 1.2
+   "tendencia": null
   },
   "Kepler-9c": {
-   "fama": 0.0143,
+   "fama": 0.0264,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1897,10 +1884,10 @@
    "estimada": true,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 9614,
-   "tendencia": 1.13
+   "tendencia": null
   },
   "79 Ceti B": {
-   "fama": 0.0183,
+   "fama": 0.0337,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1908,7 +1895,7 @@
    "tendencia": null
   },
   "HIP 41378 f": {
-   "fama": 0.0216,
+   "fama": 0.0398,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1916,15 +1903,15 @@
    "tendencia": null
   },
   "HD 209458 b": {
-   "fama": 0.3618,
+   "fama": 0.3809,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 796,
-   "tendencia": 0.99
+   "tendencia": null
   },
   "Gliese 581 e": {
-   "fama": 0.1992,
+   "fama": 0.2068,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 5.0,
@@ -1932,7 +1919,7 @@
    "tendencia": null
   },
   "94 Ceti b": {
-   "fama": 0.0127,
+   "fama": 0.0234,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1940,7 +1927,7 @@
    "tendencia": null
   },
   "HD 24496 Ab": {
-   "fama": 0.0058,
+   "fama": 0.0107,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1948,7 +1935,7 @@
    "tendencia": null
   },
   "GJ 163 b": {
-   "fama": 0.0141,
+   "fama": 0.0259,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -1956,28 +1943,28 @@
    "tendencia": null
   },
   "TRAPPIST-1e": {
-   "fama": 0.605,
+   "fama": 0.6207,
    "lembranca_em_1000": 25.0,
    "estimada": true,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 2317,
-   "tendencia": 0.95
+   "tendencia": null
   },
   "TRAPPIST-1f": {
-   "fama": 0.4026,
+   "fama": 0.4157,
    "lembranca_em_1000": 8.0,
    "estimada": true,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 536,
-   "tendencia": 0.93
+   "tendencia": null
   },
   "TRAPPIST-1g": {
-   "fama": 0.3277,
+   "fama": 0.3607,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 701,
-   "tendencia": 0.71
+   "tendencia": null
   },
   "Kepler-315c": {
    "fama": 0.0,
@@ -1988,15 +1975,15 @@
    "tendencia": null
   },
   "Kepler-69c": {
-   "fama": 0.1533,
+   "fama": 0.1759,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 406,
-   "tendencia": 1.13
+   "tendencia": null
   },
   "Kepler-19c": {
-   "fama": 0.0195,
+   "fama": 0.036,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2004,7 +1991,7 @@
    "tendencia": null
   },
   "Kepler-9d": {
-   "fama": 0.016,
+   "fama": 0.0295,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2012,7 +1999,7 @@
    "tendencia": null
   },
   "Kepler-19b": {
-   "fama": 0.02,
+   "fama": 0.0369,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2020,15 +2007,15 @@
    "tendencia": null
   },
   "LHS 1140": {
-   "fama": 0.3018,
+   "fama": 0.3064,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1244,
-   "tendencia": 1.73
+   "tendencia": null
   },
   "Kepler-11d": {
-   "fama": 0.013,
+   "fama": 0.0239,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2036,7 +2023,7 @@
    "tendencia": null
   },
   "Epsilon Reticuli b": {
-   "fama": 0.0204,
+   "fama": 0.0376,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2044,15 +2031,15 @@
    "tendencia": null
   },
   "Kepler-11f": {
-   "fama": 0.03,
+   "fama": 0.053,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 154,
-   "tendencia": 1.05
+   "tendencia": null
   },
   "Kepler-11g": {
-   "fama": 0.0171,
+   "fama": 0.0315,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2060,15 +2047,15 @@
    "tendencia": null
   },
   "Kepler-10c": {
-   "fama": 0.0299,
+   "fama": 0.0661,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 259,
-   "tendencia": 0.82
+   "tendencia": null
   },
   "HD 38529 b": {
-   "fama": 0.0121,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2076,7 +2063,7 @@
    "tendencia": null
   },
   "K2-25b": {
-   "fama": 0.0112,
+   "fama": 0.0206,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2084,7 +2071,7 @@
    "tendencia": null
   },
   "Kepler-12b": {
-   "fama": 0.0153,
+   "fama": 0.0282,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2092,7 +2079,7 @@
    "tendencia": null
   },
   "Kepler-20b": {
-   "fama": 0.0138,
+   "fama": 0.0254,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2100,7 +2087,7 @@
    "tendencia": null
   },
   "Kepler-42b": {
-   "fama": 0.0181,
+   "fama": 0.0333,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2108,7 +2095,7 @@
    "tendencia": null
   },
   "Kepler-42d": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2116,7 +2103,7 @@
    "tendencia": null
   },
   "Kepler-42c": {
-   "fama": 0.0099,
+   "fama": 0.0182,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2124,7 +2111,7 @@
    "tendencia": null
   },
   "HD 108874 b": {
-   "fama": 0.0115,
+   "fama": 0.0212,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2132,7 +2119,7 @@
    "tendencia": null
   },
   "HD 215497 b": {
-   "fama": 0.0088,
+   "fama": 0.0161,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2140,7 +2127,7 @@
    "tendencia": null
   },
   "HD 202206 c": {
-   "fama": 0.0124,
+   "fama": 0.0229,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2148,15 +2135,15 @@
    "tendencia": null
   },
   "WASP-121b": {
-   "fama": 0.2109,
+   "fama": 0.2143,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 176,
-   "tendencia": 1.41
+   "tendencia": null
   },
   "Kepler-35b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2164,7 +2151,7 @@
    "tendencia": null
   },
   "HD 27894 b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2172,7 +2159,7 @@
    "tendencia": null
   },
   "HD 147018 c": {
-   "fama": 0.0141,
+   "fama": 0.0259,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2180,7 +2167,7 @@
    "tendencia": null
   },
   "HD 40307 e": {
-   "fama": 0.0124,
+   "fama": 0.0229,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2188,7 +2175,7 @@
    "tendencia": null
   },
   "HD 40307 f": {
-   "fama": 0.0207,
+   "fama": 0.0381,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2196,7 +2183,7 @@
    "tendencia": null
   },
   "HD 215497 c": {
-   "fama": 0.0127,
+   "fama": 0.0234,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2204,7 +2191,7 @@
    "tendencia": null
   },
   "CoRoT - 16b": {
-   "fama": 0.0099,
+   "fama": 0.0182,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2212,7 +2199,7 @@
    "tendencia": null
   },
   "HD 129445 b": {
-   "fama": 0.0058,
+   "fama": 0.0107,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2220,15 +2207,15 @@
    "tendencia": null
   },
   "TrES-2b": {
-   "fama": 0.0653,
+   "fama": 0.1076,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 1342,
-   "tendencia": 1.15
+   "tendencia": null
   },
   "HD 125612 d": {
-   "fama": 0.0084,
+   "fama": 0.0154,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2236,15 +2223,15 @@
    "tendencia": null
   },
   "HD 85512 b": {
-   "fama": 0.022,
+   "fama": 0.0614,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 215,
-   "tendencia": 0.67
+   "tendencia": null
   },
   "Gamma Cephei Ab": {
-   "fama": 0.0229,
+   "fama": 0.0422,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2252,15 +2239,15 @@
    "tendencia": null
   },
   "Ross 128b": {
-   "fama": 0.2184,
+   "fama": 0.2321,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 357,
-   "tendencia": 1.22
+   "tendencia": null
   },
   "HD 195019 b": {
-   "fama": 0.008,
+   "fama": 0.0147,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2268,31 +2255,31 @@
    "tendencia": null
   },
   "Kepler-10b": {
-   "fama": 0.2012,
+   "fama": 0.2327,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 365,
-   "tendencia": 0.73
+   "tendencia": null
   },
   "Gliese 581 d": {
-   "fama": 0.3386,
+   "fama": 0.3557,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 293,
-   "tendencia": 0.73
+   "tendencia": null
   },
   "Kepler-22b": {
-   "fama": 0.8374,
+   "fama": 0.8499,
    "lembranca_em_1000": 90.0,
    "estimada": true,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 4683,
-   "tendencia": 0.86
+   "tendencia": null
   },
   "HD 88133 b": {
-   "fama": 0.0095,
+   "fama": 0.0175,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2300,7 +2287,7 @@
    "tendencia": null
   },
   "Kepler-9b": {
-   "fama": 0.0185,
+   "fama": 0.034,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2308,55 +2295,55 @@
    "tendencia": null
   },
   "55 Cancri f": {
-   "fama": 0.0224,
+   "fama": 0.0554,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 169,
-   "tendencia": 0.74
+   "tendencia": null
   },
   "55 Cancri b": {
-   "fama": 0.0455,
+   "fama": 0.0726,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 335,
-   "tendencia": 1.2
+   "tendencia": null
   },
   "55 Cancri c": {
-   "fama": 0.0214,
+   "fama": 0.0538,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 159,
-   "tendencia": 0.73
+   "tendencia": null
   },
   "55 Cancri d": {
-   "fama": 0.0306,
+   "fama": 0.0619,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 219,
-   "tendencia": 0.9
+   "tendencia": null
   },
   "55 Cancri e": {
-   "fama": 0.474,
+   "fama": 0.4953,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 1617,
-   "tendencia": 0.95
+   "tendencia": null
   },
   "Kepler-37b": {
-   "fama": 0.0487,
+   "fama": 0.0861,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 573,
-   "tendencia": 1.05
+   "tendencia": null
   },
   "HD 152079 b": {
-   "fama": 0.0076,
+   "fama": 0.0139,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2364,7 +2351,7 @@
    "tendencia": null
   },
   "HD 154672 b": {
-   "fama": 0.0095,
+   "fama": 0.0175,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2372,7 +2359,7 @@
    "tendencia": null
   },
   "HD 156411 b": {
-   "fama": 0.0088,
+   "fama": 0.0161,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2380,7 +2367,7 @@
    "tendencia": null
   },
   "KELT-2Ab": {
-   "fama": 0.013,
+   "fama": 0.0239,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2388,7 +2375,7 @@
    "tendencia": null
   },
   "HD 7924 b": {
-   "fama": 0.0141,
+   "fama": 0.0259,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2396,15 +2383,15 @@
    "tendencia": null
   },
   "GJ 1214 b": {
-   "fama": 0.1671,
+   "fama": 0.2104,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1590,
-   "tendencia": 0.99
+   "tendencia": null
   },
   "HAT-P-24b": {
-   "fama": 0.0141,
+   "fama": 0.0259,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2412,7 +2399,7 @@
    "tendencia": null
   },
   "Gliese 832 b": {
-   "fama": 0.0173,
+   "fama": 0.0318,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2420,7 +2407,7 @@
    "tendencia": null
   },
   "HD 290327 b": {
-   "fama": 0.0102,
+   "fama": 0.0188,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2428,7 +2415,7 @@
    "tendencia": null
   },
   "HD 181433 d": {
-   "fama": 0.0071,
+   "fama": 0.0132,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2436,7 +2423,7 @@
    "tendencia": null
   },
   "HD 8535 b": {
-   "fama": 0.0118,
+   "fama": 0.0218,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2444,7 +2431,7 @@
    "tendencia": null
   },
   "HD 164604 b": {
-   "fama": 0.0121,
+   "fama": 0.0223,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2452,23 +2439,23 @@
    "tendencia": null
   },
   "Kepler-37c": {
-   "fama": 0.0218,
+   "fama": 0.0488,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 130,
-   "tendencia": 0.81
+   "tendencia": null
   },
   "Kepler-37d": {
-   "fama": 0.0206,
+   "fama": 0.0545,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 163,
-   "tendencia": 0.7
+   "tendencia": null
   },
   "HD 121504 b": {
-   "fama": 0.0102,
+   "fama": 0.0188,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2476,7 +2463,7 @@
    "tendencia": null
   },
   "Kepler-11c": {
-   "fama": 0.0169,
+   "fama": 0.0311,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2484,7 +2471,7 @@
    "tendencia": null
   },
   "Kepler-11b": {
-   "fama": 0.0226,
+   "fama": 0.0417,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2492,7 +2479,7 @@
    "tendencia": null
   },
   "Mu Arae e": {
-   "fama": 0.0192,
+   "fama": 0.0354,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2500,7 +2487,7 @@
    "tendencia": null
   },
   "HD 69830 b": {
-   "fama": 0.0199,
+   "fama": 0.0366,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2508,15 +2495,15 @@
    "tendencia": null
   },
   "Upsilon Andromedae d": {
-   "fama": 0.0272,
+   "fama": 0.0519,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 147,
-   "tendencia": 0.96
+   "tendencia": null
   },
   "K2-236b": {
-   "fama": 0.0095,
+   "fama": 0.0175,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2524,7 +2511,7 @@
    "tendencia": null
   },
   "COROT-1b": {
-   "fama": 0.0181,
+   "fama": 0.0333,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2532,7 +2519,7 @@
    "tendencia": null
   },
   "Gliese 876 e": {
-   "fama": 0.0228,
+   "fama": 0.042,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2540,23 +2527,23 @@
    "tendencia": null
   },
   "Kepler-7b": {
-   "fama": 0.1471,
+   "fama": 0.1542,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 171,
-   "tendencia": 1.48
+   "tendencia": null
   },
   "HD 28185 b": {
-   "fama": 0.0151,
+   "fama": 0.0515,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 145,
-   "tendencia": 0.58
+   "tendencia": null
   },
   "HAT-P-2b": {
-   "fama": 0.019,
+   "fama": 0.035,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2564,15 +2551,15 @@
    "tendencia": null
   },
   "XO-3b": {
-   "fama": 0.0498,
+   "fama": 0.0732,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 343,
-   "tendencia": 1.35
+   "tendencia": null
   },
   "HD 108147 b": {
-   "fama": 0.0124,
+   "fama": 0.0229,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2580,7 +2567,7 @@
    "tendencia": null
   },
   "Iota Draconis b": {
-   "fama": 0.02,
+   "fama": 0.0369,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2588,31 +2575,31 @@
    "tendencia": null
   },
   "COROT-Exo-7b": {
-   "fama": 0.0311,
+   "fama": 0.0672,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 271,
-   "tendencia": 0.84
+   "tendencia": null
   },
   "Kepler-70b": {
-   "fama": 0.0234,
+   "fama": 0.0678,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 277,
-   "tendencia": 0.65
+   "tendencia": null
   },
   "Gliese 667 Cc": {
-   "fama": 0.2729,
+   "fama": 0.2758,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 2021,
-   "tendencia": 2.13
+   "tendencia": null
   },
   "HD 89307 b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2620,7 +2607,7 @@
    "tendencia": null
   },
   "WASP-14b": {
-   "fama": 0.0063,
+   "fama": 0.0115,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2628,7 +2615,7 @@
    "tendencia": null
   },
   "HD 9446 c": {
-   "fama": 0.0095,
+   "fama": 0.0175,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2636,7 +2623,7 @@
    "tendencia": null
   },
   "HD 216770 b": {
-   "fama": 0.0099,
+   "fama": 0.0182,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2644,15 +2631,15 @@
    "tendencia": null
   },
   "Kepler-16b": {
-   "fama": 0.3013,
+   "fama": 0.3207,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 6.0,
    "visitas_pt_12m": 575,
-   "tendencia": 1.0
+   "tendencia": null
   },
   "HR 5183 b": {
-   "fama": 0.0177,
+   "fama": 0.0326,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2660,7 +2647,7 @@
    "tendencia": null
   },
   "WASP-1b": {
-   "fama": 0.0181,
+   "fama": 0.0333,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2668,7 +2655,7 @@
    "tendencia": null
   },
   "Iota Horologii b": {
-   "fama": 0.0115,
+   "fama": 0.0212,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2676,31 +2663,31 @@
    "tendencia": null
   },
   "HD 189733 b": {
-   "fama": 0.3262,
+   "fama": 0.3482,
    "lembranca_em_1000": 4.0,
    "estimada": true,
    "conhecem_pct": 6.0,
    "visitas_pt_12m": 1711,
-   "tendencia": 1.21
+   "tendencia": null
   },
   "Teegarden b": {
-   "fama": 0.2904,
+   "fama": 0.3119,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1544,
-   "tendencia": 1.27
+   "tendencia": null
   },
   "Fomalhaut b": {
-   "fama": 0.2042,
+   "fama": 0.2234,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 230,
-   "tendencia": 0.87
+   "tendencia": null
   },
   "61 Virginis b": {
-   "fama": 0.0213,
+   "fama": 0.0393,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2708,7 +2695,7 @@
    "tendencia": null
   },
   "PSR 1257+12 e": {
-   "fama": 0.0247,
+   "fama": 0.0455,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2716,31 +2703,31 @@
    "tendencia": null
   },
   "PSR B1257+12 c": {
-   "fama": 0.0368,
+   "fama": 0.0777,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 411,
-   "tendencia": 0.86
+   "tendencia": null
   },
   "2M1207b": {
-   "fama": 0.1368,
+   "fama": 0.1578,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 198,
-   "tendencia": 0.92
+   "tendencia": null
   },
   "Gliese 163 c": {
-   "fama": 0.0312,
+   "fama": 0.0557,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 171,
-   "tendencia": 1.04
+   "tendencia": null
   },
   "PSR B1257+12 d": {
-   "fama": 0.0247,
+   "fama": 0.0455,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2748,7 +2735,7 @@
    "tendencia": null
   },
   "Gliese 176 b": {
-   "fama": 0.0171,
+   "fama": 0.0315,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2756,15 +2743,15 @@
    "tendencia": null
   },
   "HR 8799 d": {
-   "fama": 0.1118,
+   "fama": 0.1438,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 567,
-   "tendencia": 1.06
+   "tendencia": null
   },
   "HD 20781B": {
-   "fama": 0.0102,
+   "fama": 0.0188,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2772,7 +2759,7 @@
    "tendencia": null
   },
   "BD-10°3166 b": {
-   "fama": 0.0105,
+   "fama": 0.0194,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2780,7 +2767,7 @@
    "tendencia": null
   },
   "61 Virginis d": {
-   "fama": 0.0205,
+   "fama": 0.0378,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2788,7 +2775,7 @@
    "tendencia": null
   },
   "HD 89744 b": {
-   "fama": 0.0109,
+   "fama": 0.02,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2796,15 +2783,15 @@
    "tendencia": null
   },
   "TOI 700 d": {
-   "fama": 0.2756,
+   "fama": 0.3028,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 1079,
-   "tendencia": 1.05
+   "tendencia": null
   },
   "HD 52265 b": {
-   "fama": 0.0143,
+   "fama": 0.0264,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2812,15 +2799,15 @@
    "tendencia": null
   },
   "TOI 1338 b": {
-   "fama": 0.061,
+   "fama": 0.0709,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 314,
-   "tendencia": 2.57
+   "tendencia": null
   },
   "HD 6434 b": {
-   "fama": 0.0135,
+   "fama": 0.0249,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2828,23 +2815,23 @@
    "tendencia": null
   },
   "Gliese 581 b": {
-   "fama": 0.2055,
+   "fama": 0.2161,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 172,
-   "tendencia": 1.05
+   "tendencia": null
   },
   "OGLE-2005-BLG-390Lb": {
-   "fama": 0.0447,
+   "fama": 0.0756,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 378,
-   "tendencia": 1.11
+   "tendencia": null
   },
   "HD 169830 b": {
-   "fama": 0.0088,
+   "fama": 0.0161,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2852,15 +2839,15 @@
    "tendencia": null
   },
   "TrES-4": {
-   "fama": 0.1452,
+   "fama": 0.1866,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 621,
-   "tendencia": 0.79
+   "tendencia": null
   },
   "HD 222582 b": {
-   "fama": 0.0143,
+   "fama": 0.0264,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2868,7 +2855,7 @@
    "tendencia": null
   },
   "HD 10647 b": {
-   "fama": 0.0219,
+   "fama": 0.0404,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2876,7 +2863,7 @@
    "tendencia": null
   },
   "HD 154857 b": {
-   "fama": 0.0071,
+   "fama": 0.0132,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2884,15 +2871,15 @@
    "tendencia": null
   },
   "Gliese 436 b": {
-   "fama": 0.0507,
+   "fama": 0.0911,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 698,
-   "tendencia": 1.03
+   "tendencia": null
   },
   "HD 99109 b": {
-   "fama": 0.0063,
+   "fama": 0.0115,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2900,7 +2887,7 @@
    "tendencia": null
   },
   "HD 190228 b": {
-   "fama": 0.0032,
+   "fama": 0.0059,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2908,7 +2895,7 @@
    "tendencia": null
   },
   "2MASS J1155-7919 b": {
-   "fama": 0.0151,
+   "fama": 0.0278,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2916,7 +2903,7 @@
    "tendencia": null
   },
   "BD+14°4559 b": {
-   "fama": 0.0133,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2924,7 +2911,7 @@
    "tendencia": null
   },
   "Chi Virginis b": {
-   "fama": 0.0238,
+   "fama": 0.0439,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2932,63 +2919,63 @@
    "tendencia": null
   },
   "Beta Pictoris b": {
-   "fama": 0.1902,
+   "fama": 0.1953,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 875,
-   "tendencia": 5.84
+   "tendencia": null
   },
   "HIP 65426 b": {
-   "fama": 0.0257,
+   "fama": 0.0607,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 209,
-   "tendencia": 0.77
+   "tendencia": null
   },
   "MOA-2007-BLG-192Lb": {
-   "fama": 0.0425,
+   "fama": 0.0493,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 133,
-   "tendencia": 2.33
+   "tendencia": null
   },
   "Epsilon Eridani b": {
-   "fama": 0.2116,
+   "fama": 0.2156,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 185,
-   "tendencia": 1.4
+   "tendencia": null
   },
   "PSR B1620-26 b": {
-   "fama": 0.0546,
+   "fama": 0.0918,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 718,
-   "tendencia": 1.12
+   "tendencia": null
   },
   "Gliese 876 d": {
-   "fama": 0.0311,
+   "fama": 0.0635,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 234,
-   "tendencia": 0.89
+   "tendencia": null
   },
   "WASP-76b": {
-   "fama": 0.1655,
+   "fama": 0.1811,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 498,
-   "tendencia": 1.44
+   "tendencia": null
   },
   "Kepler-47 b": {
-   "fama": 0.0212,
+   "fama": 0.039,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -2996,31 +2983,31 @@
    "tendencia": null
   },
   "KELT-9b": {
-   "fama": 0.1577,
+   "fama": 0.1782,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 444,
-   "tendencia": 1.23
+   "tendencia": null
   },
   "Kepler-1649c": {
-   "fama": 0.17,
+   "fama": 0.1993,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": 1026,
-   "tendencia": 1.2
+   "tendencia": null
   },
   "HAT-P-1b": {
-   "fama": 0.0222,
+   "fama": 0.0606,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 208,
-   "tendencia": 0.68
+   "tendencia": null
   },
   "COROT-8b": {
-   "fama": 0.0143,
+   "fama": 0.0264,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3028,7 +3015,7 @@
    "tendencia": null
   },
   "TYC 9486-927-1b": {
-   "fama": 0.023,
+   "fama": 0.0425,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3036,15 +3023,15 @@
    "tendencia": null
   },
   "Mu Arae c": {
-   "fama": 0.0255,
+   "fama": 0.0565,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 177,
-   "tendencia": 0.82
+   "tendencia": null
   },
   "WASP-21b": {
-   "fama": 0.0133,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3052,7 +3039,7 @@
    "tendencia": null
   },
   "23 Librae b": {
-   "fama": 0.0241,
+   "fama": 0.0444,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3060,7 +3047,7 @@
    "tendencia": null
   },
   "Kepler-11e": {
-   "fama": 0.0209,
+   "fama": 0.0384,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3068,7 +3055,7 @@
    "tendencia": null
   },
   "HAT-P-3b": {
-   "fama": 0.0071,
+   "fama": 0.0132,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3076,7 +3063,7 @@
    "tendencia": null
   },
   "HD 76700 b": {
-   "fama": 0.0099,
+   "fama": 0.0182,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3084,7 +3071,7 @@
    "tendencia": null
   },
   "HD 156668 b": {
-   "fama": 0.0133,
+   "fama": 0.0244,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3092,15 +3079,15 @@
    "tendencia": null
   },
   "LTT 9779 b": {
-   "fama": 0.0153,
+   "fama": 0.0681,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
    "visitas_pt_12m": 281,
-   "tendencia": 0.45
+   "tendencia": null
   },
   "Kepler-88d": {
-   "fama": 0.0091,
+   "fama": 0.0168,
    "lembranca_em_1000": 0.01,
    "estimada": false,
    "conhecem_pct": 2.0,
@@ -3108,12 +3095,12 @@
    "tendencia": null
   },
   "Proxima Centauri d": {
-   "fama": 0.3582,
+   "fama": 0.3694,
    "lembranca_em_1000": 6.0,
    "estimada": true,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 419,
-   "tendencia": 0.99
+   "tendencia": null
   }
  }
 }

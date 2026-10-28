@@ -1,165 +1,167 @@
 {
  "categoria": "marcas-de-carro",
- "gerado_em": "2026-10-24",
+ "gerado_em": "2026-10-28",
  "sinais": [
   "conhecem",
   "lembranca",
-  "revisao"
+  "revisao",
+  "visitas"
  ],
  "meses_de_visitas": [],
  "pesos": {
   "lembranca": 0.65,
   "conhecem": 0.1,
-  "revisao": 0.15
+  "revisao": 0.08,
+  "visitas": 0.14
  },
  "estimadas_pelo_llm": 157,
  "respostas": {
   "Fiat": {
-   "fama": 0.9777,
+   "fama": 0.9419,
    "lembranca_em_1000": 120.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 21474,
    "tendencia": null
   },
   "Volkswagen": {
-   "fama": 0.9981,
+   "fama": 0.9725,
    "lembranca_em_1000": 140.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 42780,
    "tendencia": null
   },
   "Chevrolet": {
-   "fama": 0.9613,
+   "fama": 0.9322,
    "lembranca_em_1000": 110.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 27534,
    "tendencia": null
   },
   "Ford": {
-   "fama": 0.9593,
+   "fama": 0.9321,
    "lembranca_em_1000": 110.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 29058,
    "tendencia": null
   },
   "Toyota": {
-   "fama": 0.9114,
+   "fama": 0.881,
    "lembranca_em_1000": 80.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 18048,
    "tendencia": null
   },
   "Honda": {
-   "fama": 0.8382,
+   "fama": 0.8161,
    "lembranca_em_1000": 50.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 18726,
    "tendencia": null
   },
   "Hyundai": {
-   "fama": 0.7625,
+   "fama": 0.7418,
    "lembranca_em_1000": 30.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13728,
    "tendencia": null
   },
   "Renault": {
-   "fama": 0.7349,
+   "fama": 0.7237,
    "lembranca_em_1000": 25.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 20928,
    "tendencia": null
   },
   "Ferrari": {
-   "fama": 0.8567,
+   "fama": 0.8421,
    "lembranca_em_1000": 60.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 26634,
    "tendencia": null
   },
   "Jeep": {
-   "fama": 0.6017,
+   "fama": 0.6042,
    "lembranca_em_1000": 10.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 21918,
    "tendencia": null
   },
   "Nissan": {
-   "fama": 0.5979,
+   "fama": 0.5935,
    "lembranca_em_1000": 10.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12618,
    "tendencia": null
   },
   "BMW": {
-   "fama": 0.791,
+   "fama": 0.7907,
    "lembranca_em_1000": 40.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 39396,
    "tendencia": null
   },
   "Mercedes-Benz": {
-   "fama": 0.7245,
+   "fama": 0.725,
    "lembranca_em_1000": 25.0,
    "estimada": true,
    "conhecem_pct": 100.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 30528,
    "tendencia": null
   },
   "Audi": {
-   "fama": 0.6449,
+   "fama": 0.6443,
    "lembranca_em_1000": 15.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 16122,
    "tendencia": null
   },
   "Peugeot": {
-   "fama": 0.5853,
+   "fama": 0.5894,
    "lembranca_em_1000": 10.0,
    "estimada": true,
    "conhecem_pct": 98.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 14874,
    "tendencia": null
   },
   "Citroën": {
-   "fama": 0.4831,
+   "fama": 0.4958,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 96.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11712,
    "tendencia": null
   },
   "Porsche": {
-   "fama": 0.6031,
+   "fama": 0.6262,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 43404,
    "tendencia": null
   },
   "Lamborghini": {
-   "fama": 0.6769,
+   "fama": 0.6887,
    "lembranca_em_1000": 20.0,
    "estimada": true,
    "conhecem_pct": 99.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 32970,
    "tendencia": null
   },
   "Kia": {
-   "fama": 0.4793,
+   "fama": 0.4635,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 96.0,
@@ -167,15 +169,15 @@
    "tendencia": null
   },
   "Mitsubishi": {
-   "fama": 0.4804,
+   "fama": 0.4929,
    "lembranca_em_1000": 5.0,
    "estimada": true,
    "conhecem_pct": 97.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10308,
    "tendencia": null
   },
   "BYD": {
-   "fama": 0.5834,
+   "fama": 0.5802,
    "lembranca_em_1000": 12.0,
    "estimada": true,
    "conhecem_pct": 95.0,
@@ -183,7 +185,7 @@
    "tendencia": null
   },
   "Tesla": {
-   "fama": 0.5689,
+   "fama": 0.5606,
    "lembranca_em_1000": 10.0,
    "estimada": true,
    "conhecem_pct": 97.0,
@@ -191,87 +193,87 @@
    "tendencia": null
   },
   "Volvo": {
-   "fama": 0.4037,
+   "fama": 0.4397,
    "lembranca_em_1000": 3.0,
    "estimada": true,
    "conhecem_pct": 95.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 21138,
    "tendencia": null
   },
   "Land Rover": {
-   "fama": 0.3545,
+   "fama": 0.3869,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12036,
    "tendencia": null
   },
   "Chery": {
-   "fama": 0.3501,
+   "fama": 0.3846,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 88.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13518,
    "tendencia": null
   },
   "Suzuki": {
-   "fama": 0.3469,
+   "fama": 0.3772,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 92.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8274,
    "tendencia": null
   },
   "Subaru": {
-   "fama": 0.2646,
+   "fama": 0.3106,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10110,
    "tendencia": null
   },
   "Mazda": {
-   "fama": 0.2646,
+   "fama": 0.3108,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10224,
    "tendencia": null
   },
   "Jaguar": {
-   "fama": 0.2718,
+   "fama": 0.3567,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 88.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 135492,
    "tendencia": null
   },
   "Mini": {
-   "fama": 0.2608,
+   "fama": 0.292,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3504,
    "tendencia": null
   },
   "Maserati": {
-   "fama": 0.2514,
+   "fama": 0.3037,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11466,
    "tendencia": null
   },
   "Bugatti": {
-   "fama": 0.3238,
+   "fama": 0.3779,
    "lembranca_em_1000": 2.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 22038,
    "tendencia": null
   },
   "Rolls-Royce": {
-   "fama": 0.2608,
+   "fama": 0.2498,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
@@ -279,63 +281,63 @@
    "tendencia": null
   },
   "Bentley": {
-   "fama": 0.1962,
+   "fama": 0.2526,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9384,
    "tendencia": null
   },
   "Aston Martin": {
-   "fama": 0.1962,
+   "fama": 0.2555,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11292,
    "tendencia": null
   },
   "McLaren": {
-   "fama": 0.1962,
+   "fama": 0.2712,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 30486,
    "tendencia": null
   },
   "Alfa Romeo": {
-   "fama": 0.1697,
+   "fama": 0.2328,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12672,
    "tendencia": null
   },
   "Dodge": {
-   "fama": 0.2684,
+   "fama": 0.3111,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9234,
    "tendencia": null
   },
   "RAM": {
-   "fama": 0.2038,
+   "fama": 0.2515,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6882,
    "tendencia": null
   },
   "Lexus": {
-   "fama": 0.1604,
+   "fama": 0.2199,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 65.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8742,
    "tendencia": null
   },
   "Smart": {
-   "fama": 0.1565,
+   "fama": 0.1464,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 65.0,
@@ -343,15 +345,15 @@
    "tendencia": null
   },
   "GWM": {
-   "fama": 0.1757,
+   "fama": 0.2484,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 21588,
    "tendencia": null
   },
   "JAC": {
-   "fama": 0.1471,
+   "fama": 0.1382,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 60.0,
@@ -359,47 +361,47 @@
    "tendencia": null
   },
   "Troller": {
-   "fama": 0.1565,
+   "fama": 0.2285,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 65.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 16980,
    "tendencia": null
   },
   "Gurgel": {
-   "fama": 0.1301,
+   "fama": 0.2205,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 31626,
    "tendencia": null
   },
   "Lada": {
-   "fama": 0.1222,
+   "fama": 0.1913,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8814,
    "tendencia": null
   },
   "Dacia": {
-   "fama": 0.0579,
+   "fama": 0.1422,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 12516,
    "tendencia": null
   },
   "Seat": {
-   "fama": 0.0908,
+   "fama": 0.1687,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10872,
    "tendencia": null
   },
   "Skoda": {
-   "fama": 0.0635,
+   "fama": 0.0572,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
@@ -407,15 +409,15 @@
    "tendencia": null
   },
   "Opel": {
-   "fama": 0.0929,
+   "fama": 0.1712,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13818,
    "tendencia": null
   },
   "Cadillac": {
-   "fama": 0.1962,
+   "fama": 0.1856,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 75.0,
@@ -423,7 +425,7 @@
    "tendencia": null
   },
   "Lincoln": {
-   "fama": 0.0908,
+   "fama": 0.0848,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 45.0,
@@ -431,7 +433,7 @@
    "tendencia": null
   },
   "Chrysler": {
-   "fama": 0.1604,
+   "fama": 0.1487,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 65.0,
@@ -439,23 +441,23 @@
    "tendencia": null
   },
   "Pagani": {
-   "fama": 0.0665,
+   "fama": 0.1032,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 582,
    "tendencia": null
   },
   "Koenigsegg": {
-   "fama": 0.0588,
+   "fama": 0.149,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13404,
    "tendencia": null
   },
   "Lotus": {
-   "fama": 0.0891,
+   "fama": 0.081,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 40.0,
@@ -463,7 +465,7 @@
    "tendencia": null
   },
   "DS": {
-   "fama": 0.0426,
+   "fama": 0.0423,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
@@ -471,47 +473,47 @@
    "tendencia": null
   },
   "Infiniti": {
-   "fama": 0.0503,
+   "fama": 0.1199,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3906,
    "tendencia": null
   },
   "Acura": {
-   "fama": 0.0409,
+   "fama": 0.1167,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4956,
    "tendencia": null
   },
   "Puma": {
-   "fama": 0.0699,
+   "fama": 0.1841,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 64074,
    "tendencia": null
   },
   "Romi-Isetta": {
-   "fama": 0.0294,
+   "fama": 0.1158,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6708,
    "tendencia": null
   },
   "Caoa": {
-   "fama": 0.2629,
+   "fama": 0.3144,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15768,
    "tendencia": null
   },
   "Haval": {
-   "fama": 0.2042,
+   "fama": 0.1846,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 65.0,
@@ -519,7 +521,7 @@
    "tendencia": null
   },
   "Omoda": {
-   "fama": 0.1438,
+   "fama": 0.1191,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 40.0,
@@ -527,7 +529,7 @@
    "tendencia": null
   },
   "Jaecoo": {
-   "fama": 0.1199,
+   "fama": 0.0932,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
@@ -535,23 +537,23 @@
    "tendencia": null
   },
   "Geely": {
-   "fama": 0.1664,
+   "fama": 0.2431,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 49302,
    "tendencia": null
   },
   "Leapmotor": {
-   "fama": 0.1198,
+   "fama": 0.1835,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 17610,
    "tendencia": null
   },
   "Zeekr": {
-   "fama": 0.1074,
+   "fama": 0.0798,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
@@ -559,31 +561,31 @@
    "tendencia": null
   },
   "GAC": {
-   "fama": 0.1018,
+   "fama": 0.1329,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2058,
    "tendencia": null
   },
   "Neta": {
-   "fama": 0.0864,
+   "fama": 0.1219,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2538,
    "tendencia": null
   },
   "Changan": {
-   "fama": 0.1196,
+   "fama": 0.1645,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5334,
    "tendencia": null
   },
   "Hongqi": {
-   "fama": 0.0863,
+   "fama": 0.057,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
@@ -591,31 +593,31 @@
    "tendencia": null
   },
   "Lynk & Co": {
-   "fama": 0.0722,
+   "fama": 0.0916,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 852,
    "tendencia": null
   },
   "NIO": {
-   "fama": 0.1194,
+   "fama": 0.1347,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 816,
    "tendencia": null
   },
   "XPeng": {
-   "fama": 0.107,
+   "fama": 0.1503,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4530,
    "tendencia": null
   },
   "Li Auto": {
-   "fama": 0.072,
+   "fama": 0.0417,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -623,31 +625,31 @@
    "tendencia": null
   },
   "Polestar": {
-   "fama": 0.1248,
+   "fama": 0.1789,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9660,
    "tendencia": null
   },
   "Rivian": {
-   "fama": 0.1192,
+   "fama": 0.1561,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3168,
    "tendencia": null
   },
   "Lucid": {
-   "fama": 0.0859,
+   "fama": 0.1136,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1524,
    "tendencia": null
   },
   "Fisker": {
-   "fama": 0.0858,
+   "fama": 0.0567,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
@@ -655,39 +657,39 @@
    "tendencia": null
   },
   "Genesis": {
-   "fama": 0.119,
+   "fama": 0.1936,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 34074,
    "tendencia": null
   },
   "Cupra": {
-   "fama": 0.1066,
+   "fama": 0.164,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10872,
    "tendencia": null
   },
   "Abarth": {
-   "fama": 0.13,
+   "fama": 0.1837,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9558,
    "tendencia": null
   },
   "Lancia": {
-   "fama": 0.1244,
+   "fama": 0.1714,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 35.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6084,
    "tendencia": null
   },
   "Saab": {
-   "fama": 0.1537,
+   "fama": 0.1304,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 50.0,
@@ -695,31 +697,31 @@
    "tendencia": null
   },
   "Daewoo": {
-   "fama": 0.1709,
+   "fama": 0.2065,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3654,
    "tendencia": null
   },
   "Ssangyong": {
-   "fama": 0.148,
+   "fama": 0.1863,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3900,
    "tendencia": null
   },
   "Proton": {
-   "fama": 0.0853,
+   "fama": 0.1404,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8430,
    "tendencia": null
   },
   "Perodua": {
-   "fama": 0.0713,
+   "fama": 0.0412,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -727,7 +729,7 @@
    "tendencia": null
   },
   "Tata": {
-   "fama": 0.124,
+   "fama": 0.0984,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 35.0,
@@ -735,79 +737,79 @@
    "tendencia": null
   },
   "Mahindra": {
-   "fama": 0.1478,
+   "fama": 0.1832,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3228,
    "tendencia": null
   },
   "Maruti Suzuki": {
-   "fama": 0.0851,
+   "fama": 0.14,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8274,
    "tendencia": null
   },
   "Datsun": {
-   "fama": 0.1059,
+   "fama": 0.1416,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2700,
    "tendencia": null
   },
   "Daihatsu": {
-   "fama": 0.1532,
+   "fama": 0.1931,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4362,
    "tendencia": null
   },
   "Isuzu": {
-   "fama": 0.1703,
+   "fama": 0.2163,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6894,
    "tendencia": null
   },
   "Hino": {
-   "fama": 0.0904,
+   "fama": 0.1328,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3822,
    "tendencia": null
   },
   "Scania": {
-   "fama": 0.2664,
+   "fama": 0.3185,
    "lembranca_em_1000": 1.0,
    "estimada": true,
    "conhecem_pct": 85.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15714,
    "tendencia": null
   },
   "Iveco": {
-   "fama": 0.1813,
+   "fama": 0.2368,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 65.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13206,
    "tendencia": null
   },
   "DAF": {
-   "fama": 0.1112,
+   "fama": 0.1562,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4944,
    "tendencia": null
   },
   "MAN": {
-   "fama": 0.0706,
+   "fama": 0.0409,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -815,31 +817,31 @@
    "tendencia": null
   },
   "Agrale": {
-   "fama": 0.1345,
+   "fama": 0.1893,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 45.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10170,
    "tendencia": null
   },
   "Marcopolo": {
-   "fama": 0.1638,
+   "fama": 0.2242,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 16500,
    "tendencia": null
   },
   "Plymouth": {
-   "fama": 0.1054,
+   "fama": 0.1457,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3546,
    "tendencia": null
   },
   "Pontiac": {
-   "fama": 0.1698,
+   "fama": 0.1485,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 55.0,
@@ -847,39 +849,39 @@
    "tendencia": null
   },
   "Oldsmobile": {
-   "fama": 0.0969,
+   "fama": 0.1366,
    "lembranca_em_1000": 0.03,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3276,
    "tendencia": null
   },
   "Buick": {
-   "fama": 0.1525,
+   "fama": 0.199,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6486,
    "tendencia": null
   },
   "GMC": {
-   "fama": 0.1286,
+   "fama": 0.1824,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9216,
    "tendencia": null
   },
   "Hummer": {
-   "fama": 0.2127,
+   "fama": 0.2538,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 75.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6060,
    "tendencia": null
   },
   "Mercury": {
-   "fama": 0.0967,
+   "fama": 0.0693,
    "lembranca_em_1000": 0.03,
    "estimada": true,
    "conhecem_pct": 20.0,
@@ -887,7 +889,7 @@
    "tendencia": null
   },
   "Saturn": {
-   "fama": 0.0701,
+   "fama": 0.0405,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -895,7 +897,7 @@
    "tendencia": null
   },
   "DeLorean": {
-   "fama": 0.2014,
+   "fama": 0.183,
    "lembranca_em_1000": 0.5,
    "estimada": true,
    "conhecem_pct": 65.0,
@@ -903,31 +905,31 @@
    "tendencia": null
   },
   "Shelby": {
-   "fama": 0.1694,
+   "fama": 0.2037,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 55.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3222,
    "tendencia": null
   },
   "Studebaker": {
-   "fama": 0.0895,
+   "fama": 0.1201,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1758,
    "tendencia": null
   },
   "Packard": {
-   "fama": 0.0894,
+   "fama": 0.0683,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Hudson": {
-   "fama": 0.0893,
+   "fama": 0.0616,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 15.0,
@@ -935,7 +937,7 @@
    "tendencia": null
   },
   "Nash": {
-   "fama": 0.0697,
+   "fama": 0.0403,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -943,7 +945,7 @@
    "tendencia": null
   },
   "AMC": {
-   "fama": 0.0837,
+   "fama": 0.0555,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
@@ -951,15 +953,15 @@
    "tendencia": null
   },
   "Willys": {
-   "fama": 0.1746,
+   "fama": 0.2171,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 60.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5466,
    "tendencia": null
   },
   "Rover": {
-   "fama": 0.11,
+   "fama": 0.0841,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
@@ -967,15 +969,15 @@
    "tendencia": null
   },
   "MG": {
-   "fama": 0.1279,
+   "fama": 0.2329,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 228396,
    "tendencia": null
   },
   "Triumph": {
-   "fama": 0.1099,
+   "fama": 0.084,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
@@ -983,15 +985,15 @@
    "tendencia": null
   },
   "Austin": {
-   "fama": 0.1098,
+   "fama": 0.1764,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 18498,
    "tendencia": null
   },
   "Morris": {
-   "fama": 0.0693,
+   "fama": 0.0401,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -999,15 +1001,15 @@
    "tendencia": null
   },
   "Vauxhall": {
-   "fama": 0.0833,
+   "fama": 0.1317,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5172,
    "tendencia": null
   },
   "Jensen": {
-   "fama": 0.0692,
+   "fama": 0.04,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -1015,23 +1017,23 @@
    "tendencia": null
   },
   "TVR": {
-   "fama": 0.0692,
+   "fama": 0.0967,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1296,
    "tendencia": null
   },
   "Caterham": {
-   "fama": 0.0691,
+   "fama": 0.0679,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 210,
    "tendencia": null
   },
   "Morgan": {
-   "fama": 0.083,
+   "fama": 0.0551,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
@@ -1039,7 +1041,7 @@
    "tendencia": null
   },
   "Ariel": {
-   "fama": 0.069,
+   "fama": 0.0399,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -1047,7 +1049,7 @@
    "tendencia": null
   },
   "Noble": {
-   "fama": 0.0689,
+   "fama": 0.0399,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -1055,39 +1057,39 @@
    "tendencia": null
   },
   "Bristol": {
-   "fama": 0.0829,
+   "fama": 0.1411,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9522,
    "tendencia": null
   },
   "Simca": {
-   "fama": 0.1161,
+   "fama": 0.1579,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3930,
    "tendencia": null
   },
   "Panhard": {
-   "fama": 0.0688,
+   "fama": 0.0964,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1290,
    "tendencia": null
   },
   "Talbot": {
-   "fama": 0.0827,
+   "fama": 0.1131,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1626,
    "tendencia": null
   },
   "Matra": {
-   "fama": 0.0686,
+   "fama": 0.0397,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -1095,7 +1097,7 @@
    "tendencia": null
   },
   "Alpine": {
-   "fama": 0.1214,
+   "fama": 0.0969,
    "lembranca_em_1000": 0.1,
    "estimada": true,
    "conhecem_pct": 35.0,
@@ -1103,7 +1105,7 @@
    "tendencia": null
   },
   "Bugatti Rimac": {
-   "fama": 0.0825,
+   "fama": 0.0548,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
@@ -1111,111 +1113,111 @@
    "tendencia": null
   },
   "Hispano-Suiza": {
-   "fama": 0.0685,
+   "fama": 0.1054,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2298,
    "tendencia": null
   },
   "De Tomaso": {
-   "fama": 0.0824,
+   "fama": 0.1153,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1890,
    "tendencia": null
   },
   "Iso": {
-   "fama": 0.0683,
+   "fama": 0.0828,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 552,
    "tendencia": null
   },
   "Autobianchi": {
-   "fama": 0.0683,
+   "fama": 0.0982,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1464,
    "tendencia": null
   },
   "Innocenti": {
-   "fama": 0.0682,
+   "fama": 0.0866,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 702,
    "tendencia": null
   },
   "Spyker": {
-   "fama": 0.0682,
+   "fama": 0.07,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 246,
    "tendencia": null
   },
   "Donkervoort": {
-   "fama": 0.0681,
+   "fama": 0.057,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 108,
    "tendencia": null
   },
   "Trabant": {
-   "fama": 0.0974,
+   "fama": 0.1381,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3288,
    "tendencia": null
   },
   "Wartburg": {
-   "fama": 0.068,
+   "fama": 0.1031,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2016,
    "tendencia": null
   },
   "Moskvitch": {
-   "fama": 0.0679,
+   "fama": 0.0836,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 588,
    "tendencia": null
   },
   "Volga": {
-   "fama": 0.0972,
+   "fama": 0.1627,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 15636,
    "tendencia": null
   },
   "ZIL": {
-   "fama": 0.0678,
+   "fama": 0.0879,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 774,
    "tendencia": null
   },
   "UAZ": {
-   "fama": 0.0678,
+   "fama": 0.0888,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 822,
    "tendencia": null
   },
   "Tatra": {
-   "fama": 0.0677,
+   "fama": 0.0392,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -1223,726 +1225,46 @@
    "tendencia": null
   },
   "Zastava": {
-   "fama": 0.0677,
+   "fama": 0.0812,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 510,
    "tendencia": null
   },
   "FSO": {
-   "fama": 0.0676,
+   "fama": 0.0631,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 162,
    "tendencia": null
   },
   "Hindustan": {
-   "fama": 0.0675,
+   "fama": 0.0576,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 114,
    "tendencia": null
   },
   "Holden": {
-   "fama": 0.0815,
+   "fama": 0.1163,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2076,
    "tendencia": null
   },
   "Santa Matilde": {
-   "fama": 0.0255,
+   "fama": 0.0859,
    "lembranca_em_1000": 0.02,
    "estimada": true,
    "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1740,
    "tendencia": null
   },
   "Miura": {
-   "fama": 0.0115,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Envemo": {
-   "fama": 0.0114,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Adamo": {
-   "fama": 0.0114,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Farus": {
-   "fama": 0.0113,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Lafer": {
-   "fama": 0.0113,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hofstetter": {
-   "fama": 0.0112,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Engesa": {
-   "fama": 0.0405,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Amazonas": {
-   "fama": 0.0111,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Bianco": {
-   "fama": 0.011,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dardo": {
-   "fama": 0.011,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fibravan": {
-   "fama": 0.0109,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Uirapuru": {
-   "fama": 0.0109,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Brasinca": {
-   "fama": 0.0248,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
-   "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Vemag": {
-   "fama": 0.0317,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
-   "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "DKW-Vemag": {
-   "fama": 0.0579,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 30.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "FNM": {
-   "fama": 0.0316,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
-   "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "JPX": {
-   "fama": 0.0399,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Obvio": {
-   "fama": 0.0105,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "TAC Motors": {
-   "fama": 0.0105,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Lobini": {
-   "fama": 0.0104,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Chamonix": {
-   "fama": 0.0103,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Emis": {
-   "fama": 0.0103,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Effa": {
-   "fama": 0.0396,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Lifan": {
-   "fama": 0.0451,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hafei": {
-   "fama": 0.0241,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
-   "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Jinbei": {
-   "fama": 0.031,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
-   "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Chana": {
-   "fama": 0.031,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
-   "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Shineray": {
-   "fama": 0.0683,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
-   "conhecem_pct": 40.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Foton": {
-   "fama": 0.0448,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 25.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "JMC": {
-   "fama": 0.0098,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Dongfeng": {
-   "fama": 0.0307,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
-   "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "FAW": {
-   "fama": 0.0097,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "BAIC": {
-   "fama": 0.0097,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Brilliance": {
-   "fama": 0.0096,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Zotye": {
-   "fama": 0.0095,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Haima": {
-   "fama": 0.0095,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Wuling": {
-   "fama": 0.0094,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Baojun": {
-   "fama": 0.0094,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Roewe": {
-   "fama": 0.0093,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Maxus": {
-   "fama": 0.0092,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Ora": {
-   "fama": 0.0092,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tank": {
-   "fama": 0.0091,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Wey": {
-   "fama": 0.0091,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Voyah": {
-   "fama": 0.009,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Aiways": {
-   "fama": 0.009,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Seres": {
-   "fama": 0.0089,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Avatr": {
-   "fama": 0.0088,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Denza": {
-   "fama": 0.0298,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
-   "conhecem_pct": 15.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Yangwang": {
-   "fama": 0.0087,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fangchengbao": {
-   "fama": 0.0087,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Rezvani": {
-   "fama": 0.0086,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Saleen": {
-   "fama": 0.0086,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "SSC": {
-   "fama": 0.0085,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hennessey": {
-   "fama": 0.0224,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
-   "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Vector": {
-   "fama": 0.0084,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Mosler": {
-   "fama": 0.0083,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Panoz": {
-   "fama": 0.0083,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Czinger": {
-   "fama": 0.0082,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Aptera": {
-   "fama": 0.0082,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Elio": {
-   "fama": 0.0081,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cord": {
-   "fama": 0.008,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Duesenberg": {
-   "fama": 0.008,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Auburn": {
-   "fama": 0.0079,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pierce-Arrow": {
-   "fama": 0.0079,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Stutz": {
-   "fama": 0.0078,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Tucker": {
-   "fama": 0.0078,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Kaiser": {
-   "fama": 0.0217,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
-   "conhecem_pct": 10.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Frazer": {
-   "fama": 0.0076,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Checker": {
-   "fama": 0.0076,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Crosley": {
-   "fama": 0.0075,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Imperial": {
-   "fama": 0.0075,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Eagle": {
-   "fama": 0.0074,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Geo": {
-   "fama": 0.0074,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Scion": {
-   "fama": 0.0073,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Merkur": {
-   "fama": 0.0072,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Edsel": {
-   "fama": 0.0072,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Isdera": {
-   "fama": 0.0071,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Wiesmann": {
-   "fama": 0.0071,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Artega": {
-   "fama": 0.007,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gumpert": {
-   "fama": 0.007,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Melkus": {
-   "fama": 0.0069,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Borgward": {
-   "fama": 0.0068,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Horch": {
-   "fama": 0.0068,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Maybach": {
-   "fama": 0.1006,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
-   "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Wanderer": {
-   "fama": 0.0067,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "NSU": {
    "fama": 0.0066,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -1950,63 +1272,135 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Goggomobil": {
-   "fama": 0.0065,
+  "Envemo": {
+   "fama": 0.0703,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1488,
    "tendencia": null
   },
-  "Messerschmitt": {
-   "fama": 0.0316,
-   "lembranca_em_1000": 0.02,
+  "Adamo": {
+   "fama": 0.0732,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1788,
+   "tendencia": null
+  },
+  "Farus": {
+   "fama": 0.0655,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1098,
+   "tendencia": null
+  },
+  "Lafer": {
+   "fama": 0.066,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1140,
+   "tendencia": null
+  },
+  "Hofstetter": {
+   "fama": 0.0771,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2304,
+   "tendencia": null
+  },
+  "Engesa": {
+   "fama": 0.1326,
+   "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 20.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13788,
    "tendencia": null
   },
-  "Heinkel": {
-   "fama": 0.0064,
+  "Amazonas": {
+   "fama": 0.1351,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 89910,
    "tendencia": null
   },
-  "Glas": {
-   "fama": 0.0064,
+  "Bianco": {
+   "fama": 0.0288,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 108,
    "tendencia": null
   },
-  "Hansa": {
-   "fama": 0.0063,
+  "Dardo": {
+   "fama": 0.0704,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1518,
    "tendencia": null
   },
-  "Lloyd": {
-   "fama": 0.0063,
+  "Fibravan": {
+   "fama": 0.0468,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 342,
    "tendencia": null
   },
-  "Bitter": {
-   "fama": 0.0062,
+  "Uirapuru": {
+   "fama": 0.0744,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1962,
    "tendencia": null
   },
-  "Abt": {
+  "Brasinca": {
+   "fama": 0.0965,
+   "lembranca_em_1000": 0.02,
+   "estimada": true,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": 3492,
+   "tendencia": null
+  },
+  "Vemag": {
+   "fama": 0.1082,
+   "lembranca_em_1000": 0.03,
+   "estimada": true,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": 4872,
+   "tendencia": null
+  },
+  "DKW-Vemag": {
+   "fama": 0.1326,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 30.0,
+   "visitas_pt_12m": 4872,
+   "tendencia": null
+  },
+  "FNM": {
+   "fama": 0.1225,
+   "lembranca_em_1000": 0.03,
+   "estimada": true,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": 12018,
+   "tendencia": null
+  },
+  "JPX": {
+   "fama": 0.109,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": 3156,
+   "tendencia": null
+  },
+  "Obvio": {
    "fama": 0.0061,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2014,71 +1408,111 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Brabus": {
-   "fama": 0.041,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
-   "conhecem_pct": 25.0,
+  "TAC Motors": {
+   "fama": 0.0656,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1140,
+   "tendencia": null
+  },
+  "Lobini": {
+   "fama": 0.0712,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1626,
+   "tendencia": null
+  },
+  "Chamonix": {
+   "fama": 0.0902,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5418,
+   "tendencia": null
+  },
+  "Emis": {
+   "fama": 0.0059,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Alpina": {
-   "fama": 0.027,
+  "Effa": {
+   "fama": 0.1034,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": 2232,
+   "tendencia": null
+  },
+  "Lifan": {
+   "fama": 0.1207,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": 4824,
+   "tendencia": null
+  },
+  "Hafei": {
+   "fama": 0.0713,
+   "lembranca_em_1000": 0.02,
+   "estimada": true,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": 726,
+   "tendencia": null
+  },
+  "Jinbei": {
+   "fama": 0.0286,
    "lembranca_em_1000": 0.03,
    "estimada": true,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Ruf": {
-   "fama": 0.006,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
+  "Chana": {
+   "fama": 0.0285,
+   "lembranca_em_1000": 0.03,
+   "estimada": true,
+   "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Gemballa": {
-   "fama": 0.0059,
+  "Shineray": {
+   "fama": 0.1503,
+   "lembranca_em_1000": 0.1,
+   "estimada": true,
+   "conhecem_pct": 40.0,
+   "visitas_pt_12m": 7980,
+   "tendencia": null
+  },
+  "Foton": {
+   "fama": 0.1288,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": 8124,
+   "tendencia": null
+  },
+  "JMC": {
+   "fama": 0.0625,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 954,
    "tendencia": null
   },
-  "Mansory": {
-   "fama": 0.0059,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
+  "Dongfeng": {
+   "fama": 0.1105,
+   "lembranca_em_1000": 0.03,
+   "estimada": true,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": 5784,
    "tendencia": null
   },
-  "Lorinser": {
-   "fama": 0.0058,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hamann": {
-   "fama": 0.0057,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Carlsson": {
-   "fama": 0.0057,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Koenig": {
+  "FAW": {
    "fama": 0.0056,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2086,7 +1520,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Venturi": {
+  "BAIC": {
    "fama": 0.0056,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2094,7 +1528,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Delage": {
+  "Brilliance": {
    "fama": 0.0055,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2102,7 +1536,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Delahaye": {
+  "Zotye": {
    "fama": 0.0055,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2110,15 +1544,39 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Facel Vega": {
-   "fama": 0.0054,
+  "Haima": {
+   "fama": 0.0304,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 126,
    "tendencia": null
   },
-  "Hotchkiss": {
+  "Wuling": {
+   "fama": 0.0533,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 540,
+   "tendencia": null
+  },
+  "Baojun": {
+   "fama": 0.052,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 498,
+   "tendencia": null
+  },
+  "Roewe": {
+   "fama": 0.0706,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1620,
+   "tendencia": null
+  },
+  "Maxus": {
    "fama": 0.0053,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2126,15 +1584,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Ligier": {
-   "fama": 0.0053,
+  "Ora": {
+   "fama": 0.0426,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 276,
    "tendencia": null
   },
-  "Aixam": {
+  "Tank": {
+   "fama": 0.0473,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 372,
+   "tendencia": null
+  },
+  "Wey": {
    "fama": 0.0052,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2142,7 +1608,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Microcar": {
+  "Voyah": {
    "fama": 0.0052,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2150,7 +1616,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Chatenet": {
+  "Aiways": {
+   "fama": 0.0052,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Seres": {
+   "fama": 0.041,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 252,
+   "tendencia": null
+  },
+  "Avatr": {
    "fama": 0.0051,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2158,15 +1640,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Bellier": {
-   "fama": 0.0051,
+  "Denza": {
+   "fama": 0.1105,
+   "lembranca_em_1000": 0.03,
+   "estimada": true,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": 5976,
+   "tendencia": null
+  },
+  "Yangwang": {
+   "fama": 0.0643,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1104,
    "tendencia": null
   },
-  "Cizeta": {
+  "Fangchengbao": {
    "fama": 0.005,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2174,7 +1664,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Bizzarrini": {
+  "Rezvani": {
+   "fama": 0.005,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saleen": {
+   "fama": 0.005,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "SSC": {
    "fama": 0.0049,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2182,39 +1688,47 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Siata": {
-   "fama": 0.0049,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Moretti": {
-   "fama": 0.0048,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Stanguellini": {
-   "fama": 0.0048,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Pininfarina": {
-   "fama": 0.0396,
-   "lembranca_em_1000": 0.05,
+  "Hennessey": {
+   "fama": 0.0201,
+   "lembranca_em_1000": 0.02,
    "estimada": true,
-   "conhecem_pct": 25.0,
+   "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Bertone": {
+  "Vector": {
+   "fama": 0.0049,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mosler": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Panoz": {
+   "fama": 0.0522,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 522,
+   "tendencia": null
+  },
+  "Czinger": {
+   "fama": 0.0048,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aptera": {
    "fama": 0.0047,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2222,7 +1736,31 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Zagato": {
+  "Elio": {
+   "fama": 0.0879,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 5004,
+   "tendencia": null
+  },
+  "Cord": {
+   "fama": 0.0047,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Duesenberg": {
+   "fama": 0.0591,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 816,
+   "tendencia": null
+  },
+  "Auburn": {
    "fama": 0.0046,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2230,7 +1768,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Italdesign": {
+  "Pierce-Arrow": {
+   "fama": 0.0046,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Stutz": {
    "fama": 0.0045,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2238,7 +1784,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Fornasari": {
+  "Tucker": {
    "fama": 0.0045,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2246,7 +1792,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Mazzanti": {
+  "Kaiser": {
+   "fama": 0.0951,
+   "lembranca_em_1000": 0.02,
+   "estimada": true,
+   "conhecem_pct": 10.0,
+   "visitas_pt_12m": 3522,
+   "tendencia": null
+  },
+  "Frazer": {
    "fama": 0.0044,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2254,7 +1808,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Vencer": {
+  "Checker": {
    "fama": 0.0044,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2262,7 +1816,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Pegaso": {
+  "Crosley": {
+   "fama": 0.0044,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Imperial": {
+   "fama": 0.0593,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 840,
+   "tendencia": null
+  },
+  "Eagle": {
    "fama": 0.0043,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2270,15 +1840,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Tramontana": {
-   "fama": 0.0043,
+  "Geo": {
+   "fama": 0.035,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 180,
    "tendencia": null
   },
-  "GTA Spano": {
+  "Scion": {
    "fama": 0.0042,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2286,7 +1856,31 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Laraki": {
+  "Merkur": {
+   "fama": 0.0042,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Edsel": {
+   "fama": 0.062,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1002,
+   "tendencia": null
+  },
+  "Isdera": {
+   "fama": 0.0432,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 306,
+   "tendencia": null
+  },
+  "Wiesmann": {
    "fama": 0.0041,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2294,7 +1888,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "W Motors": {
+  "Artega": {
    "fama": 0.0041,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2302,7 +1896,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Devel": {
+  "Gumpert": {
    "fama": 0.004,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2310,7 +1904,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Inferno": {
+  "Melkus": {
    "fama": 0.004,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2318,7 +1912,31 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Mastretta": {
+  "Borgward": {
+   "fama": 0.004,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Horch": {
+   "fama": 0.0672,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1410,
+   "tendencia": null
+  },
+  "Maybach": {
+   "fama": 0.1899,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 50.0,
+   "visitas_pt_12m": 13440,
+   "tendencia": null
+  },
+  "Wanderer": {
    "fama": 0.0039,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2326,23 +1944,39 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Dina": {
-   "fama": 0.0038,
+  "NSU": {
+   "fama": 0.0717,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1884,
    "tendencia": null
   },
-  "VAM": {
-   "fama": 0.0038,
+  "Goggomobil": {
+   "fama": 0.054,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 618,
    "tendencia": null
   },
-  "Elfin": {
+  "Messerschmitt": {
+   "fama": 0.1034,
+   "lembranca_em_1000": 0.02,
+   "estimada": true,
+   "conhecem_pct": 20.0,
+   "visitas_pt_12m": 3222,
+   "tendencia": null
+  },
+  "Heinkel": {
+   "fama": 0.0643,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1188,
+   "tendencia": null
+  },
+  "Glas": {
    "fama": 0.0037,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2350,7 +1984,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Bolwell": {
+  "Hansa": {
    "fama": 0.0037,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2358,7 +1992,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Hulme": {
+  "Lloyd": {
    "fama": 0.0036,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2366,7 +2000,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Hommell": {
+  "Bitter": {
    "fama": 0.0036,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2374,7 +2008,31 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Mega": {
+  "Abt": {
+   "fama": 0.0036,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brabus": {
+   "fama": 0.1076,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": 2400,
+   "tendencia": null
+  },
+  "Alpina": {
+   "fama": 0.1233,
+   "lembranca_em_1000": 0.03,
+   "estimada": true,
+   "conhecem_pct": 15.0,
+   "visitas_pt_12m": 14658,
+   "tendencia": null
+  },
+  "Ruf": {
    "fama": 0.0035,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2382,7 +2040,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Venucia": {
+  "Gemballa": {
+   "fama": 0.0497,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 480,
+   "tendencia": null
+  },
+  "Mansory": {
    "fama": 0.0034,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2390,7 +2056,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Qoros": {
+  "Lorinser": {
    "fama": 0.0034,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2398,7 +2064,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Arcfox": {
+  "Hamann": {
    "fama": 0.0033,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2406,7 +2072,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Rising Auto": {
+  "Carlsson": {
    "fama": 0.0033,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2414,23 +2080,39 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "IM Motors": {
-   "fama": 0.0032,
+  "Koenig": {
+   "fama": 0.0033,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Jetour": {
-   "fama": 0.0032,
+  "Venturi": {
+   "fama": 0.009,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 36,
    "tendencia": null
   },
-  "Exeed": {
+  "Delage": {
+   "fama": 0.0571,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 774,
+   "tendencia": null
+  },
+  "Delahaye": {
+   "fama": 0.0508,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 522,
+   "tendencia": null
+  },
+  "Facel Vega": {
    "fama": 0.0031,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2438,7 +2120,31 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Soueast": {
+  "Hotchkiss": {
+   "fama": 0.0031,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ligier": {
+   "fama": 0.0722,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2034,
+   "tendencia": null
+  },
+  "Aixam": {
+   "fama": 0.044,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 342,
+   "tendencia": null
+  },
+  "Microcar": {
    "fama": 0.003,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2446,15 +2152,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Kaiyi": {
-   "fama": 0.003,
+  "Chatenet": {
+   "fama": 0.0219,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
    "tendencia": null
   },
-  "Trumpchi": {
+  "Bellier": {
    "fama": 0.0029,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2462,7 +2168,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Aion": {
+  "Cizeta": {
    "fama": 0.0029,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2470,7 +2176,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Hycan": {
+  "Bizzarrini": {
+   "fama": 0.0149,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 54,
+   "tendencia": null
+  },
+  "Siata": {
    "fama": 0.0028,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2478,7 +2192,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Skywell": {
+  "Moretti": {
    "fama": 0.0028,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2486,23 +2200,47 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Weltmeister": {
-   "fama": 0.0027,
+  "Stanguellini": {
+   "fama": 0.0248,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 102,
    "tendencia": null
   },
-  "Xiaomi": {
-   "fama": 0.1298,
-   "lembranca_em_1000": 0.3,
+  "Pininfarina": {
+   "fama": 0.1239,
+   "lembranca_em_1000": 0.05,
    "estimada": true,
-   "conhecem_pct": 80.0,
-   "visitas_pt_12m": null,
+   "conhecem_pct": 25.0,
+   "visitas_pt_12m": 6990,
    "tendencia": null
   },
-  "Huawei Aito": {
+  "Bertone": {
+   "fama": 0.0621,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1092,
+   "tendencia": null
+  },
+  "Zagato": {
+   "fama": 0.042,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 306,
+   "tendencia": null
+  },
+  "Italdesign": {
+   "fama": 0.0575,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 822,
+   "tendencia": null
+  },
+  "Fornasari": {
    "fama": 0.0026,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2510,7 +2248,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Vinfast": {
+  "Mazzanti": {
+   "fama": 0.0026,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vencer": {
    "fama": 0.0025,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2518,15 +2264,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Togg": {
-   "fama": 0.0025,
+  "Pegaso": {
+   "fama": 0.0481,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 456,
    "tendencia": null
   },
-  "Aurus": {
+  "Tramontana": {
+   "fama": 0.0527,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 612,
+   "tendencia": null
+  },
+  "GTA Spano": {
    "fama": 0.0024,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2534,7 +2288,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Marussia": {
+  "Laraki": {
    "fama": 0.0024,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2542,7 +2296,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Ronart": {
+  "W Motors": {
+   "fama": 0.0551,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 714,
+   "tendencia": null
+  },
+  "Devel": {
    "fama": 0.0023,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2550,7 +2312,31 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Grinnall": {
+  "Inferno": {
+   "fama": 0.1052,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 17028,
+   "tendencia": null
+  },
+  "Mastretta": {
+   "fama": 0.0366,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 222,
+   "tendencia": null
+  },
+  "Dina": {
+   "fama": 0.0608,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1032,
+   "tendencia": null
+  },
+  "VAM": {
    "fama": 0.0022,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2558,7 +2344,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Ginetta": {
+  "Elfin": {
    "fama": 0.0022,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2566,7 +2352,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Radical": {
+  "Bolwell": {
    "fama": 0.0021,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2574,7 +2360,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Ultima": {
+  "Hulme": {
    "fama": 0.0021,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2582,7 +2368,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Westfield": {
+  "Hommell": {
+   "fama": 0.0174,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 66,
+   "tendencia": null
+  },
+  "Mega": {
+   "fama": 0.0669,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1530,
+   "tendencia": null
+  },
+  "Venucia": {
    "fama": 0.002,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2590,7 +2392,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Dax": {
+  "Qoros": {
    "fama": 0.002,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2598,7 +2400,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Marcos": {
+  "Arcfox": {
    "fama": 0.0019,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2606,7 +2408,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Lister": {
+  "Rising Auto": {
+   "fama": 0.0019,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "IM Motors": {
+   "fama": 0.0019,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jetour": {
    "fama": 0.0018,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2614,7 +2432,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Allard": {
+  "Exeed": {
    "fama": 0.0018,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2622,7 +2440,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Healey": {
+  "Soueast": {
+   "fama": 0.0018,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kaiyi": {
    "fama": 0.0017,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2630,7 +2456,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Sunbeam": {
+  "Trumpchi": {
    "fama": 0.0017,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2638,7 +2464,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Hillman": {
+  "Aion": {
+   "fama": 0.0017,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hycan": {
    "fama": 0.0016,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2646,7 +2480,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Singer": {
+  "Skywell": {
    "fama": 0.0016,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2654,7 +2488,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Humber": {
+  "Weltmeister": {
+   "fama": 0.0016,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Xiaomi": {
+   "fama": 0.2211,
+   "lembranca_em_1000": 0.3,
+   "estimada": true,
+   "conhecem_pct": 80.0,
+   "visitas_pt_12m": 15546,
+   "tendencia": null
+  },
+  "Huawei Aito": {
    "fama": 0.0015,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2662,7 +2512,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Riley": {
+  "Vinfast": {
+   "fama": 0.0015,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Togg": {
+   "fama": 0.0623,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1182,
+   "tendencia": null
+  },
+  "Aurus": {
    "fama": 0.0014,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2670,15 +2536,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Wolseley": {
-   "fama": 0.0014,
+  "Marussia": {
+   "fama": 0.0505,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 564,
    "tendencia": null
   },
-  "Alvis": {
+  "Ronart": {
    "fama": 0.0013,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2686,7 +2552,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Daimler": {
+  "Grinnall": {
    "fama": 0.0013,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2694,7 +2560,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Lanchester": {
+  "Ginetta": {
+   "fama": 0.0013,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Radical": {
    "fama": 0.0012,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2702,7 +2576,31 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Armstrong Siddeley": {
+  "Ultima": {
+   "fama": 0.0748,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 2646,
+   "tendencia": null
+  },
+  "Westfield": {
+   "fama": 0.0012,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dax": {
+   "fama": 0.0552,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 768,
+   "tendencia": null
+  },
+  "Marcos": {
    "fama": 0.0011,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2710,7 +2608,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Reliant": {
+  "Lister": {
    "fama": 0.0011,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2718,7 +2616,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Bond": {
+  "Allard": {
    "fama": 0.001,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2726,7 +2624,7 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Peel": {
+  "Healey": {
    "fama": 0.001,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2734,7 +2632,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Gordon-Murray": {
+  "Sunbeam": {
+   "fama": 0.001,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Hillman": {
+   "fama": 0.0503,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 570,
+   "tendencia": null
+  },
+  "Singer": {
    "fama": 0.0009,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2742,15 +2656,15 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Arash": {
-   "fama": 0.0009,
+  "Humber": {
+   "fama": 0.0479,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 492,
    "tendencia": null
   },
-  "Keating": {
+  "Riley": {
    "fama": 0.0008,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2758,55 +2672,95 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
+  "Wolseley": {
+   "fama": 0.0377,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 258,
+   "tendencia": null
+  },
+  "Alvis": {
+   "fama": 0.0377,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 258,
+   "tendencia": null
+  },
+  "Daimler": {
+   "fama": 0.0007,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lanchester": {
+   "fama": 0.0504,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 582,
+   "tendencia": null
+  },
+  "Armstrong Siddeley": {
+   "fama": 0.0007,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Reliant": {
+   "fama": 0.0352,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 222,
+   "tendencia": null
+  },
+  "Bond": {
+   "fama": 0.0006,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Peel": {
+   "fama": 0.0006,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gordon-Murray": {
+   "fama": 0.0005,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arash": {
+   "fama": 0.0005,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Keating": {
+   "fama": 0.0005,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
   "Trident": {
-   "fama": 0.0007,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Lea-Francis": {
-   "fama": 0.0007,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Frisky": {
-   "fama": 0.0006,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Berkeley": {
-   "fama": 0.0006,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fairthorpe": {
-   "fama": 0.0005,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Gilbern": {
-   "fama": 0.0005,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Clan": {
    "fama": 0.0004,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2814,7 +2768,23 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Rochdale": {
+  "Lea-Francis": {
+   "fama": 0.0004,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Frisky": {
+   "fama": 0.0004,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Berkeley": {
    "fama": 0.0003,
    "lembranca_em_1000": null,
    "estimada": false,
@@ -2822,8 +2792,40 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Turner": {
+  "Fairthorpe": {
    "fama": 0.0003,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gilbern": {
+   "fama": 0.0003,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Clan": {
+   "fama": 0.0564,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 870,
+   "tendencia": null
+  },
+  "Rochdale": {
+   "fama": 0.0543,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 762,
+   "tendencia": null
+  },
+  "Turner": {
+   "fama": 0.0002,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -2831,19 +2833,19 @@
    "tendencia": null
   },
   "Elva": {
-   "fama": 0.0002,
+   "fama": 0.0171,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 72,
    "tendencia": null
   },
   "Piper": {
-   "fama": 0.0002,
+   "fama": 0.0605,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1134,
    "tendencia": null
   },
   "Davrian": {
@@ -2855,11 +2857,11 @@
    "tendencia": null
   },
   "Nova": {
-   "fama": 0.0001,
+   "fama": 0.071,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2220,
    "tendencia": null
   },
   "Strathcarron": {
@@ -2871,247 +2873,247 @@
    "tendencia": null
   },
   "AvtoVAZ": {
-   "fama": 0.0537,
+   "fama": 0.094,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1776,
    "tendencia": null
   },
   "Waymo": {
-   "fama": 0.0537,
+   "fama": 0.1057,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3720,
    "tendencia": null
   },
   "BYD Auto": {
-   "fama": 0.0537,
+   "fama": 0.1453,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 45204,
    "tendencia": null
   },
   "Valmet Automotive": {
-   "fama": 0.0447,
+   "fama": 0.0506,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 150,
    "tendencia": null
   },
   "Alex von Falkenhausen Motorenbau": {
-   "fama": 0.0528,
+   "fama": 0.0564,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 168,
    "tendencia": null
   },
   "Automobili Turismo e Sport": {
-   "fama": 0.0537,
+   "fama": 0.062,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 234,
    "tendencia": null
   },
   "BMW M": {
-   "fama": 0.0537,
+   "fama": 0.0908,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1446,
    "tendencia": null
   },
   "Société Anonyme des Ateliers d'Aviation Louis Breguet": {
-   "fama": 0.0537,
+   "fama": 0.0636,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 258,
    "tendencia": null
   },
   "Stellantis North America": {
-   "fama": 0.0537,
+   "fama": 0.1068,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3978,
    "tendencia": null
   },
   "Audi Sport GmbH": {
-   "fama": 0.0537,
+   "fama": 0.0632,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 252,
    "tendencia": null
   },
   "Rinspeed": {
-   "fama": 0.0498,
+   "fama": 0.0461,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 96,
    "tendencia": null
   },
   "AJS": {
-   "fama": 0.0528,
+   "fama": 0.071,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 426,
    "tendencia": null
   },
   "Tec-Mec": {
-   "fama": 0.0465,
+   "fama": 0.0454,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 102,
    "tendencia": null
   },
   "British Motor Corporation": {
-   "fama": 0.0537,
+   "fama": 0.0741,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 504,
    "tendencia": null
   },
   "Artline Engineering": {
-   "fama": 0.0293,
+   "fama": 0.0145,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 24,
    "tendencia": null
   },
   "Fabrique d'armes Émile et Léon Nagant": {
-   "fama": 0.0514,
+   "fama": 0.0487,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 108,
    "tendencia": null
   },
   "Farman Aviões": {
-   "fama": 0.0537,
+   "fama": 0.0636,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 258,
    "tendencia": null
   },
   "Daimler-Benz": {
-   "fama": 0.0537,
+   "fama": 0.0943,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1800,
    "tendencia": null
   },
   "Argus Motoren": {
-   "fama": 0.0498,
+   "fama": 0.0309,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 36,
    "tendencia": null
   },
   "Ruf Automobile": {
-   "fama": 0.0537,
+   "fama": 0.0907,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1440,
    "tendencia": null
   },
   "Ford Europe": {
-   "fama": 0.0514,
+   "fama": 0.0699,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 414,
    "tendencia": null
   },
   "Ford Germany": {
-   "fama": 0.0514,
+   "fama": 0.0592,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 210,
    "tendencia": null
   },
   "Overland Automobile": {
-   "fama": 0.0447,
+   "fama": 0.0426,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 90,
    "tendencia": null
   },
   "Arab American Vehicles": {
-   "fama": 0.0326,
+   "fama": 0.0286,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 54,
    "tendencia": null
   },
   "Vivinus": {
-   "fama": 0.0427,
+   "fama": 0.0352,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 60,
    "tendencia": null
   },
   "Gillet": {
-   "fama": 0.0528,
+   "fama": 0.0631,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 258,
    "tendencia": null
   },
   "Armstrong Whitworth": {
-   "fama": 0.0537,
+   "fama": 0.0741,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 504,
    "tendencia": null
   },
   "Chamonix Indústria e Comércio": {
-   "fama": 0.0355,
+   "fama": 0.0835,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1608,
    "tendencia": null
   },
   "Abbott Motor Company": {
-   "fama": 0.0482,
+   "fama": 0.0453,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 96,
    "tendencia": null
   },
   "AC Cars": {
-   "fama": 0.0537,
+   "fama": 0.073,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 468,
    "tendencia": null
   },
   "Aero": {
-   "fama": 0.0427,
+   "fama": 0.0247,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -3119,39 +3121,39 @@
    "tendencia": null
   },
   "Alvis Car and Engineering Company": {
-   "fama": 0.0537,
+   "fama": 0.0562,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 162,
    "tendencia": null
   },
   "Mercedes-AMG": {
-   "fama": 0.0537,
+   "fama": 0.1171,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 7614,
    "tendencia": null
   },
   "Amphicar": {
-   "fama": 0.0528,
+   "fama": 0.0673,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 336,
    "tendencia": null
   },
   "ARO4x4": {
-   "fama": 0.0537,
+   "fama": 0.047,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 90,
    "tendencia": null
   },
   "Avia": {
-   "fama": 0.0537,
+   "fama": 0.031,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -3159,407 +3161,407 @@
    "tendencia": null
   },
   "Auto Union": {
-   "fama": 0.0537,
+   "fama": 0.099,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2430,
    "tendencia": null
   },
   "Velie": {
-   "fama": 0.0293,
+   "fama": 0.0301,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "União Metalo-Mecânica": {
-   "fama": 0.0355,
+   "fama": 0.1208,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 17016,
    "tendencia": null
   },
   "Ram Trucks": {
-   "fama": 0.0537,
+   "fama": 0.1229,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 11016,
    "tendencia": null
   },
   "NedCar": {
-   "fama": 0.0514,
+   "fama": 0.0573,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 186,
    "tendencia": null
   },
   "Automobiles Gonfaronnaises Sportives": {
-   "fama": 0.0537,
+   "fama": 0.0781,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 648,
    "tendencia": null
   },
   "Osella Corse": {
-   "fama": 0.0537,
+   "fama": 0.0795,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 708,
    "tendencia": null
   },
   "English Racing Automobiles": {
-   "fama": 0.0537,
+   "fama": 0.0594,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 198,
    "tendencia": null
   },
   "Kojima": {
-   "fama": 0.0528,
+   "fama": 0.0642,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 276,
    "tendencia": null
   },
   "Cooper Car Company": {
-   "fama": 0.0537,
+   "fama": 0.0919,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1554,
    "tendencia": null
   },
   "March Engineering": {
-   "fama": 0.0537,
+   "fama": 0.0966,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2088,
    "tendencia": null
   },
   "Gordini": {
-   "fama": 0.0537,
+   "fama": 0.102,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2946,
    "tendencia": null
   },
   "AM General": {
-   "fama": 0.0537,
+   "fama": 0.0817,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 816,
    "tendencia": null
   },
   "Abbey Auto Engineering Co. Ltd": {
-   "fama": 0.0209,
+   "fama": 0.0166,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 36,
    "tendencia": null
   },
   "D-Rad": {
-   "fama": 0.0255,
+   "fama": 0.0267,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 60,
    "tendencia": null
   },
   "Siemens-Schuckert": {
-   "fama": 0.0514,
+   "fama": 0.0573,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 186,
    "tendencia": null
   },
   "Fábrica de Motocicletas Mars": {
-   "fama": 0.0326,
+   "fama": 0.0195,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 30,
    "tendencia": null
   },
   "Asia Motors": {
-   "fama": 0.0514,
+   "fama": 0.1007,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2916,
    "tendencia": null
   },
   "Saehan": {
-   "fama": 0.0154,
+   "fama": 0.0281,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 90,
    "tendencia": null
   },
   "Albion Motors": {
-   "fama": 0.0482,
+   "fama": 0.0503,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 132,
    "tendencia": null
   },
   "Renault Korea Motors": {
-   "fama": 0.0537,
+   "fama": 0.0855,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1038,
    "tendencia": null
   },
   "Muntz Car Company": {
-   "fama": 0.0355,
+   "fama": 0.0332,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Stanley Motor Carriage Company": {
-   "fama": 0.0537,
+   "fama": 0.0659,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 300,
    "tendencia": null
   },
   "Brough Superior": {
-   "fama": 0.0514,
+   "fama": 0.0746,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 558,
    "tendencia": null
   },
   "Qvale": {
-   "fama": 0.0382,
+   "fama": 0.0383,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
    "tendencia": null
   },
   "Carrosserias Baur": {
-   "fama": 0.0427,
+   "fama": 0.0416,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 90,
    "tendencia": null
   },
   "Automobiles Impéria": {
-   "fama": 0.0528,
+   "fama": 0.0455,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
    "tendencia": null
   },
   "Léon Bollée Automobiles": {
-   "fama": 0.0382,
+   "fama": 0.0314,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 54,
    "tendencia": null
   },
   "Fabryka Samochodów Małolitrażowych": {
-   "fama": 0.0528,
+   "fama": 0.0466,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 90,
    "tendencia": null
   },
   "Hanomag": {
-   "fama": 0.0537,
+   "fama": 0.08,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 732,
    "tendencia": null
   },
   "Changan Automobile": {
-   "fama": 0.0537,
+   "fama": 0.1258,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 13230,
    "tendencia": null
   },
   "Škoda Auto": {
-   "fama": 0.0537,
+   "fama": 0.1302,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 17478,
    "tendencia": null
   },
   "Industrieverband Fahrzeugbau": {
-   "fama": 0.0537,
+   "fama": 0.0612,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 222,
    "tendencia": null
   },
   "Abt Sportsline": {
-   "fama": 0.0537,
+   "fama": 0.0719,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 438,
    "tendencia": null
   },
   "AC Schnitzer": {
-   "fama": 0.0465,
+   "fama": 0.0563,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 204,
    "tendencia": null
   },
   "American Motors Corporation": {
-   "fama": 0.0537,
+   "fama": 0.0985,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2358,
    "tendencia": null
   },
   "Ascari": {
-   "fama": 0.0537,
+   "fama": 0.0663,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 306,
    "tendencia": null
   },
   "Magna Steyr": {
-   "fama": 0.0537,
+   "fama": 0.0706,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 402,
    "tendencia": null
   },
   "Karmann": {
-   "fama": 0.0537,
+   "fama": 0.078,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 642,
    "tendencia": null
   },
   "LaFayette Motors": {
-   "fama": 0.0326,
+   "fama": 0.0343,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 78,
    "tendencia": null
   },
   "Ateliers de Construction Mécanique l’Aster": {
-   "fama": 0.0405,
+   "fama": 0.0357,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Ateliers Teixeira Automobiles": {
-   "fama": 0.0209,
+   "fama": 0.0318,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 96,
    "tendencia": null
   },
   "Ikarus": {
-   "fama": 0.0537,
+   "fama": 0.0562,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 162,
    "tendencia": null
   },
   "Autoeuropa": {
-   "fama": 0.0405,
+   "fama": 0.0983,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3498,
    "tendencia": null
   },
   "Ellemobil": {
-   "fama": 0.0209,
+   "fama": 0.0308,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 90,
    "tendencia": null
   },
   "Waaijenberg": {
-   "fama": 0.0293,
+   "fama": 0.0286,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 60,
    "tendencia": null
   },
   "Iran Khodro": {
-   "fama": 0.0537,
+   "fama": 0.0887,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1266,
    "tendencia": null
   },
   "Think Nordic": {
-   "fama": 0.0537,
+   "fama": 0.047,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 90,
    "tendencia": null
   },
   "Packard Motor Car Company": {
-   "fama": 0.0537,
+   "fama": 0.0898,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1362,
    "tendencia": null
   },
   "Saab Automobile": {
-   "fama": 0.0537,
+   "fama": 0.1112,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5256,
    "tendencia": null
   },
   "Adler": {
-   "fama": 0.0537,
+   "fama": 0.031,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -3567,23 +3569,23 @@
    "tendencia": null
   },
   "Talbot-Lago": {
-   "fama": 0.0537,
+   "fama": 0.0752,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 540,
    "tendencia": null
   },
   "Auverland": {
-   "fama": 0.0382,
+   "fama": 0.0611,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 360,
    "tendencia": null
   },
   "Baja": {
-   "fama": 0.0326,
+   "fama": 0.0189,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -3591,79 +3593,79 @@
    "tendencia": null
   },
   "Bandini Automobili": {
-   "fama": 0.0427,
+   "fama": 0.0273,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 36,
    "tendencia": null
   },
   "Gardner-Serpollet": {
-   "fama": 0.0382,
+   "fama": 0.0622,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 384,
    "tendencia": null
   },
   "Ford of Britain": {
-   "fama": 0.0465,
+   "fama": 0.0521,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 156,
    "tendencia": null
   },
   "Nuffield Organisation": {
-   "fama": 0.0465,
+   "fama": 0.0412,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 78,
    "tendencia": null
   },
   "Göricke": {
-   "fama": 0.0255,
+   "fama": 0.0631,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 606,
    "tendencia": null
   },
   "Blériot Aéronautique": {
-   "fama": 0.0465,
+   "fama": 0.0589,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 240,
    "tendencia": null
   },
   "Hawtai Motor": {
-   "fama": 0.0427,
+   "fama": 0.0525,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 180,
    "tendencia": null
   },
   "British Salmson": {
-   "fama": 0.0255,
+   "fama": 0.0232,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 48,
    "tendencia": null
   },
   "Bromme": {
-   "fama": 0.0326,
+   "fama": 0.0433,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 138,
    "tendencia": null
   },
   "OSCA": {
-   "fama": 0.0528,
+   "fama": 0.0305,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -3671,23 +3673,23 @@
    "tendencia": null
   },
   "Ford Motor Company of Australia": {
-   "fama": 0.0405,
+   "fama": 0.0491,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 156,
    "tendencia": null
   },
   "Ford Performance Vehicles": {
-   "fama": 0.0405,
+   "fama": 0.0643,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 408,
    "tendencia": null
   },
   "Alba": {
-   "fama": 0.0255,
+   "fama": 0.0147,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -3695,103 +3697,103 @@
    "tendencia": null
   },
   "Shelby SuperCars": {
-   "fama": 0.0537,
+   "fama": 0.0568,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 168,
    "tendencia": null
   },
   "British Leyland": {
-   "fama": 0.0537,
+   "fama": 0.0804,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 750,
    "tendencia": null
   },
   "Excelsior Motor Company": {
-   "fama": 0.0427,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Entreposto Máquinas": {
-   "fama": 0.0255,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Microcar MC1": {
-   "fama": 0.0465,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Arzani-Volpini": {
-   "fama": 0.0427,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Hennessey Performance Engineering": {
-   "fama": 0.0465,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fiat Chrysler Automobiles": {
-   "fama": 0.0537,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Anzani": {
-   "fama": 0.0465,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Megastar Veículos": {
-   "fama": 0.0082,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Delamare-Deboutteville": {
-   "fama": 0.0255,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Fiat Industrial": {
    "fama": 0.0405,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
+   "tendencia": null
+  },
+  "Entreposto Máquinas": {
+   "fama": 0.0619,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 564,
+   "tendencia": null
+  },
+  "Microcar MC1": {
+   "fama": 0.0445,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 96,
+   "tendencia": null
+  },
+  "Arzani-Volpini": {
+   "fama": 0.0508,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 162,
+   "tendencia": null
+  },
+  "Hennessey Performance Engineering": {
+   "fama": 0.0798,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 900,
+   "tendencia": null
+  },
+  "Fiat Chrysler Automobiles": {
+   "fama": 0.1098,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 4818,
+   "tendencia": null
+  },
+  "Anzani": {
+   "fama": 0.0472,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 114,
+   "tendencia": null
+  },
+  "Megastar Veículos": {
+   "fama": 0.0431,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 294,
+   "tendencia": null
+  },
+  "Delamare-Deboutteville": {
+   "fama": 0.0267,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 60,
+   "tendencia": null
+  },
+  "Fiat Industrial": {
+   "fama": 0.0636,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 390,
    "tendencia": null
   },
   "Rae": {
-   "fama": 0.0293,
+   "fama": 0.0169,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -3799,231 +3801,231 @@
    "tendencia": null
   },
   "EMW": {
-   "fama": 0.0537,
+   "fama": 0.0579,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 180,
    "tendencia": null
   },
   "Brouhot": {
-   "fama": 0.0293,
+   "fama": 0.0179,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 30,
    "tendencia": null
   },
   "Charron, Girardot et Voigt": {
-   "fama": 0.0209,
+   "fama": 0.0297,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
    "tendencia": null
   },
   "Carbon Motors Corporation": {
-   "fama": 0.0209,
+   "fama": 0.0228,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 54,
    "tendencia": null
   },
   "Carrocerias Fissore": {
-   "fama": 0.0465,
+   "fama": 0.0611,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 276,
    "tendencia": null
   },
   "Cartercar Company": {
-   "fama": 0.0382,
+   "fama": 0.0383,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
    "tendencia": null
   },
   "Changhe": {
-   "fama": 0.0465,
+   "fama": 0.0653,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 360,
    "tendencia": null
   },
   "Jeantaud": {
-   "fama": 0.0255,
+   "fama": 0.0359,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 108,
    "tendencia": null
   },
   "Cisitalia": {
-   "fama": 0.0537,
+   "fama": 0.0594,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 198,
    "tendencia": null
   },
   "Coadou-Fleury": {
-   "fama": 0.0255,
+   "fama": 0.0282,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Colda": {
-   "fama": 0.0209,
+   "fama": 0.026,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "First Automobile Works": {
-   "fama": 0.0537,
+   "fama": 0.0965,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2070,
    "tendencia": null
   },
   "Transmissão de torque pendular": {
-   "fama": 0.0293,
+   "fama": 0.036,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 96,
    "tendencia": null
   },
   "Winton Motor Carriage Company": {
-   "fama": 0.0447,
+   "fama": 0.0377,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Henry Ford Company": {
-   "fama": 0.0427,
+   "fama": 0.0748,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 744,
    "tendencia": null
   },
   "Gillet Herstal": {
-   "fama": 0.0355,
+   "fama": 0.0262,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 42,
    "tendencia": null
   },
   "Graham-Paige": {
-   "fama": 0.0528,
+   "fama": 0.0652,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 294,
    "tendencia": null
   },
   "Mitsuoka": {
-   "fama": 0.0537,
+   "fama": 0.0775,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 624,
    "tendencia": null
   },
   "Kearns Automóveis": {
-   "fama": 0.0154,
+   "fama": 0.0201,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 54,
    "tendencia": null
   },
   "Hannoversche Waggonfabrik": {
-   "fama": 0.0293,
+   "fama": 0.0286,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 60,
    "tendencia": null
   },
   "Nanjing Automobile Group": {
-   "fama": 0.0537,
+   "fama": 0.0736,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 486,
    "tendencia": null
   },
   "REO Motor Car Company": {
-   "fama": 0.0537,
+   "fama": 0.0723,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 450,
    "tendencia": null
   },
   "Volvo Buses": {
-   "fama": 0.0537,
+   "fama": 0.0747,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 522,
    "tendencia": null
   },
   "Thomas Built Buses": {
-   "fama": 0.0427,
+   "fama": 0.0689,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 510,
    "tendencia": null
   },
   "Wendax": {
-   "fama": 0.0154,
+   "fama": 0.0217,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 60,
    "tendencia": null
   },
   "Sensaud de Lavaud": {
-   "fama": 0.0255,
+   "fama": 0.0282,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Sherman": {
-   "fama": 0.0255,
+   "fama": 0.0986,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5736,
    "tendencia": null
   },
   "Sevel": {
-   "fama": 0.0498,
+   "fama": 0.0531,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 150,
    "tendencia": null
   },
   "Denzel": {
-   "fama": 0.0326,
+   "fama": 0.0189,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4031,143 +4033,143 @@
    "tendencia": null
   },
   "Elder": {
-   "fama": 0.0255,
+   "fama": 0.0879,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2904,
    "tendencia": null
   },
   "Comil Carrocerias e Ônibus": {
-   "fama": 0.0326,
+   "fama": 0.0947,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3576,
    "tendencia": null
   },
   "DS Automobiles": {
-   "fama": 0.0537,
+   "fama": 0.1141,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6324,
    "tendencia": null
   },
   "Innoson Motors": {
-   "fama": 0.0405,
+   "fama": 0.0618,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 348,
    "tendencia": null
   },
   "Faraday Future": {
-   "fama": 0.0537,
+   "fama": 0.0608,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 216,
    "tendencia": null
   },
   "Carbuss - Indústria de Carrocerias Catarinense Ltda.": {
-   "fama": 0.0326,
+   "fama": 0.0843,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1854,
    "tendencia": null
   },
   "Spark Racing Technology": {
-   "fama": 0.0293,
+   "fama": 0.0526,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 276,
    "tendencia": null
   },
   "International": {
-   "fama": 0.0537,
+   "fama": 0.0888,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1272,
    "tendencia": null
   },
   "Iveco Bus": {
-   "fama": 0.0537,
+   "fama": 0.0639,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 264,
    "tendencia": null
   },
   "Kamaz": {
-   "fama": 0.0537,
+   "fama": 0.0896,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1344,
    "tendencia": null
   },
   "MAN SE": {
-   "fama": 0.0537,
+   "fama": 0.1225,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 10698,
    "tendencia": null
   },
   "Zündapp": {
-   "fama": 0.0537,
+   "fama": 0.0957,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1974,
    "tendencia": null
   },
   "Associated Equipment Company": {
-   "fama": 0.0482,
+   "fama": 0.0552,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 180,
    "tendencia": null
   },
   "Daewoo Bus": {
-   "fama": 0.0537,
+   "fama": 0.0544,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 144,
    "tendencia": null
   },
   "Tata Daewoo Commercial Vehicle": {
-   "fama": 0.0537,
+   "fama": 0.0603,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 210,
    "tendencia": null
   },
   "Bedford": {
-   "fama": 0.0537,
+   "fama": 0.0836,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 918,
    "tendencia": null
   },
   "Volkswagen Caminhões e Ônibus": {
-   "fama": 0.1164,
+   "fama": 0.1595,
    "lembranca_em_1000": 0.05,
    "estimada": true,
    "conhecem_pct": 50.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2826,
    "tendencia": null
   },
   "Astra": {
-   "fama": 0.0405,
+   "fama": 0.0234,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4175,343 +4177,343 @@
    "tendencia": null
   },
   "Renault Trucks": {
-   "fama": 0.0537,
+   "fama": 0.0847,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 984,
    "tendencia": null
   },
   "Setra": {
-   "fama": 0.0537,
+   "fama": 0.0874,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1170,
    "tendencia": null
   },
   "Graber": {
-   "fama": 0.0293,
+   "fama": 0.0231,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 42,
    "tendencia": null
   },
   "Carrozzeria Ghia": {
-   "fama": 0.0537,
+   "fama": 0.0775,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 624,
    "tendencia": null
   },
   "B Engineering": {
-   "fama": 0.0293,
+   "fama": 0.0207,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 36,
    "tendencia": null
   },
   "Tofaş": {
-   "fama": 0.0537,
+   "fama": 0.0732,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 474,
    "tendencia": null
   },
   "Cournil": {
-   "fama": 0.0255,
+   "fama": 0.054,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 342,
    "tendencia": null
   },
   "Nota Sports Cars": {
-   "fama": 0.0293,
+   "fama": 0.0327,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 78,
    "tendencia": null
   },
   "Daimler Truck": {
-   "fama": 0.0537,
+   "fama": 0.0945,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1824,
    "tendencia": null
   },
   "Dallara Automobili": {
-   "fama": 0.0537,
+   "fama": 0.1026,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3042,
    "tendencia": null
   },
   "Portaro": {
-   "fama": 0.0293,
+   "fama": 0.0943,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3864,
    "tendencia": null
   },
   "Mitsubishi Fuso Truck and Bus Corporation": {
-   "fama": 0.0537,
+   "fama": 0.0837,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 924,
    "tendencia": null
   },
   "Detroit Diesel": {
-   "fama": 0.0537,
+   "fama": 0.0803,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 744,
    "tendencia": null
   },
   "DB Automobiles": {
-   "fama": 0.0427,
+   "fama": 0.0435,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 102,
    "tendencia": null
   },
   "Dongfeng Peugeot-Citroën Automobile": {
-   "fama": 0.0537,
+   "fama": 0.0791,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 690,
    "tendencia": null
   },
   "Société Parisienne": {
-   "fama": 0.0209,
+   "fama": 0.0273,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 72,
    "tendencia": null
   },
   "Peel Engineering Company": {
-   "fama": 0.0447,
+   "fama": 0.0478,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 126,
    "tendencia": null
   },
   "Indústria Automobilística Helênica": {
-   "fama": 0.0537,
+   "fama": 0.048,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 96,
    "tendencia": null
   },
   "Vanden Plas": {
-   "fama": 0.0482,
+   "fama": 0.0547,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 174,
    "tendencia": null
   },
   "Isotta Fraschini": {
-   "fama": 0.0537,
+   "fama": 0.0879,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1206,
    "tendencia": null
   },
   "Wallyscar": {
-   "fama": 0.0482,
+   "fama": 0.0443,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 90,
    "tendencia": null
   },
   "Park Ward": {
-   "fama": 0.0293,
+   "fama": 0.0339,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
    "tendencia": null
   },
   "Marchese": {
-   "fama": 0.0255,
+   "fama": 0.0212,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 42,
    "tendencia": null
   },
   "Aerocarene": {
-   "fama": 0.0255,
+   "fama": 0.0267,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 60,
    "tendencia": null
   },
   "Edismith": {
-   "fama": 0.0082,
+   "fama": 0.0147,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 48,
    "tendencia": null
   },
   "Gareau": {
-   "fama": 0.0154,
+   "fama": 0.0076,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 24,
    "tendencia": null
   },
   "Piëch Automotive AG": {
-   "fama": 0.0514,
+   "fama": 0.0487,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 108,
    "tendencia": null
   },
   "APIS": {
-   "fama": 0.0326,
+   "fama": 0.0268,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 48,
    "tendencia": null
   },
   "Stellantis": {
-   "fama": 0.0537,
+   "fama": 0.1524,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 70956,
    "tendencia": null
   },
   "Yamaha Motor Company": {
-   "fama": 0.0537,
+   "fama": 0.1205,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9444,
    "tendencia": null
   },
   "Motocicleta Millet": {
-   "fama": 0.0326,
+   "fama": 0.0223,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 36,
    "tendencia": null
   },
   "Ilmor": {
-   "fama": 0.0528,
+   "fama": 0.0681,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 354,
    "tendencia": null
   },
   "Harley-Davidson": {
-   "fama": 0.192,
+   "fama": 0.2456,
    "lembranca_em_1000": 0.3,
    "estimada": true,
    "conhecem_pct": 90.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 7704,
    "tendencia": null
   },
   "Benz & Cie.": {
-   "fama": 0.0528,
+   "fama": 0.0884,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1278,
    "tendencia": null
   },
   "KTM": {
-   "fama": 0.0537,
+   "fama": 0.1134,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 6042,
    "tendencia": null
   },
   "BMW Motorrad": {
-   "fama": 0.0537,
+   "fama": 0.0922,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1578,
    "tendencia": null
   },
   "Santana Motor": {
-   "fama": 0.0498,
+   "fama": 0.065,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 318,
    "tendencia": null
   },
   "Ducati": {
-   "fama": 0.1581,
+   "fama": 0.2092,
    "lembranca_em_1000": 0.2,
    "estimada": true,
    "conhecem_pct": 70.0,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5652,
    "tendencia": null
   },
   "Express Werke": {
-   "fama": 0.0326,
+   "fama": 0.0317,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Yamaha DragStar": {
-   "fama": 0.0355,
+   "fama": 0.0888,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2250,
    "tendencia": null
   },
   "Ardie": {
-   "fama": 0.0382,
+   "fama": 0.0383,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
    "tendencia": null
   },
   "Getrag": {
-   "fama": 0.0498,
+   "fama": 0.0669,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 360,
    "tendencia": null
   },
   "Aprilia": {
-   "fama": 0.0537,
+   "fama": 0.031,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4519,103 +4521,103 @@
    "tendencia": null
   },
   "Wilkinson Sword": {
-   "fama": 0.0482,
+   "fama": 0.0761,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 678,
    "tendencia": null
   },
   "Miele": {
-   "fama": 0.0537,
+   "fama": 0.1314,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 18870,
    "tendencia": null
   },
   "Husaberg": {
-   "fama": 0.0498,
+   "fama": 0.072,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 498,
    "tendencia": null
   },
   "Fábrica Dux": {
-   "fama": 0.0382,
+   "fama": 0.0413,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 102,
    "tendencia": null
   },
   "Gilera": {
-   "fama": 0.0537,
+   "fama": 0.0834,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 906,
    "tendencia": null
   },
   "Fabrique Nationale Herstal": {
-   "fama": 0.0537,
+   "fama": 0.1083,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 4362,
    "tendencia": null
   },
   "Rieju": {
-   "fama": 0.0498,
+   "fama": 0.0565,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 186,
    "tendencia": null
   },
   "Jawa": {
-   "fama": 0.0537,
+   "fama": 0.0957,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1968,
    "tendencia": null
   },
   "Benelli": {
-   "fama": 0.0537,
+   "fama": 0.0897,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1350,
    "tendencia": null
   },
   "Beta Motor": {
-   "fama": 0.0498,
+   "fama": 0.058,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 204,
    "tendencia": null
   },
   "Kreidler": {
-   "fama": 0.0537,
+   "fama": 0.0739,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 498,
    "tendencia": null
   },
   "Piaggio": {
-   "fama": 0.0537,
+   "fama": 0.0998,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2562,
    "tendencia": null
   },
   "Bianchi": {
-   "fama": 0.0537,
+   "fama": 0.031,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4623,79 +4625,79 @@
    "tendencia": null
   },
   "FTR Moto": {
-   "fama": 0.0465,
+   "fama": 0.0424,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 84,
    "tendencia": null
   },
   "Edelsbrunner Automobile München": {
-   "fama": 0.0209,
+   "fama": 0.026,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Thames Ironworks and Shipbuilding Company": {
-   "fama": 0.0427,
+   "fama": 0.054,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 198,
    "tendencia": null
   },
   "Hudson Motor Car Company": {
-   "fama": 0.0537,
+   "fama": 0.0873,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1158,
    "tendencia": null
   },
   "Freightliner": {
-   "fama": 0.0537,
+   "fama": 0.0721,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 444,
    "tendencia": null
   },
   "Ford Caminhões": {
-   "fama": 0.0154,
+   "fama": 0.078,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2130,
    "tendencia": null
   },
   "Paccar": {
-   "fama": 0.0537,
+   "fama": 0.102,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 2940,
    "tendencia": null
   },
   "Gas Gas": {
-   "fama": 0.0528,
+   "fama": 0.0778,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 654,
    "tendencia": null
   },
   "Lambert Automóveis": {
-   "fama": 0.0293,
+   "fama": 0.0301,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Oakland": {
-   "fama": 0.0528,
+   "fama": 0.0305,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4703,103 +4705,103 @@
    "tendencia": null
   },
   "Polaris Industries": {
-   "fama": 0.0537,
+   "fama": 0.0782,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 654,
    "tendencia": null
   },
   "Antoinette": {
-   "fama": 0.0382,
+   "fama": 0.0559,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 258,
    "tendencia": null
   },
   "DNA Motors": {
-   "fama": 0.0427,
+   "fama": 0.057,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 240,
    "tendencia": null
   },
   "Berliet": {
-   "fama": 0.0537,
+   "fama": 0.0816,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 810,
    "tendencia": null
   },
   "WilliamsF1": {
-   "fama": 0.0537,
+   "fama": 0.1321,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 19680,
    "tendencia": null
   },
   "Stevens": {
-   "fama": 0.0326,
+   "fama": 0.0783,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1266,
    "tendencia": null
   },
   "Magirus-Deutz": {
-   "fama": 0.0405,
+   "fama": 0.0876,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1782,
    "tendencia": null
   },
   "Pankratz": {
-   "fama": 0.0293,
+   "fama": 0.0327,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 78,
    "tendencia": null
   },
   "Connew": {
-   "fama": 0.0447,
+   "fama": 0.0471,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 120,
    "tendencia": null
   },
   "Meskowski": {
-   "fama": 0.0326,
+   "fama": 0.0331,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 72,
    "tendencia": null
   },
   "MZKT": {
-   "fama": 0.0514,
+   "fama": 0.0496,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 114,
    "tendencia": null
   },
   "Bimota": {
-   "fama": 0.0528,
+   "fama": 0.0878,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1230,
    "tendencia": null
   },
   "Hecker": {
-   "fama": 0.0326,
+   "fama": 0.0189,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4807,15 +4809,15 @@
    "tendencia": null
   },
   "Garelli": {
-   "fama": 0.0537,
+   "fama": 0.0799,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 726,
    "tendencia": null
   },
   "Moore": {
-   "fama": 0.0293,
+   "fama": 0.0169,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4823,23 +4825,23 @@
    "tendencia": null
   },
   "Wetteroth": {
-   "fama": 0.0326,
+   "fama": 0.0286,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 54,
    "tendencia": null
   },
   "Malaguti": {
-   "fama": 0.0537,
+   "fama": 0.0594,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 198,
    "tendencia": null
   },
   "OSSA": {
-   "fama": 0.0498,
+   "fama": 0.0288,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4847,31 +4849,31 @@
    "tendencia": null
   },
   "Megola": {
-   "fama": 0.0447,
+   "fama": 0.0534,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 180,
    "tendencia": null
   },
   "Buell": {
-   "fama": 0.0514,
+   "fama": 0.0809,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 834,
    "tendencia": null
   },
   "Cagiva": {
-   "fama": 0.0537,
+   "fama": 0.0928,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1638,
    "tendencia": null
   },
   "Christensen": {
-   "fama": 0.0326,
+   "fama": 0.0189,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -4879,151 +4881,151 @@
    "tendencia": null
   },
   "Indian Motorcycle Company": {
-   "fama": 0.0537,
+   "fama": 0.0896,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1338,
    "tendencia": null
   },
   "MV Agusta": {
-   "fama": 0.0537,
+   "fama": 0.105,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 3540,
    "tendencia": null
   },
   "Triumph Motocicletas": {
-   "fama": 0.0537,
+   "fama": 0.111,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5190,
    "tendencia": null
   },
   "Moto Guzzi": {
-   "fama": 0.0537,
+   "fama": 0.0868,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1122,
    "tendencia": null
   },
   "Norton Motorcycles": {
-   "fama": 0.0537,
+   "fama": 0.0756,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 552,
    "tendencia": null
   },
   "Velocette": {
-   "fama": 0.0482,
+   "fama": 0.0463,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 102,
    "tendencia": null
   },
   "Derbi": {
-   "fama": 0.0537,
+   "fama": 0.0795,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 708,
    "tendencia": null
   },
   "SWM Motorcycles": {
-   "fama": 0.0465,
+   "fama": 0.0604,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 264,
    "tendencia": null
   },
   "Tomos": {
-   "fama": 0.0514,
+   "fama": 0.0511,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 126,
    "tendencia": null
   },
   "Motobi": {
-   "fama": 0.0447,
+   "fama": 0.0391,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 72,
    "tendencia": null
   },
   "Matchless": {
-   "fama": 0.0482,
+   "fama": 0.0576,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 210,
    "tendencia": null
   },
   "Morbidelli": {
-   "fama": 0.0528,
+   "fama": 0.0753,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 558,
    "tendencia": null
   },
   "Buchet": {
-   "fama": 0.0326,
+   "fama": 0.0268,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 48,
    "tendencia": null
   },
   "Hotchkiss et Cie": {
-   "fama": 0.0537,
+   "fama": 0.0603,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 210,
    "tendencia": null
   },
   "Vyrus": {
-   "fama": 0.0427,
+   "fama": 0.0453,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 114,
    "tendencia": null
   },
   "Scarab": {
-   "fama": 0.0482,
+   "fama": 0.0535,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 162,
    "tendencia": null
   },
   "Monark": {
-   "fama": 0.0382,
+   "fama": 0.1039,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 5382,
    "tendencia": null
   },
   "Alta Car and Engineering Company": {
-   "fama": 0.0537,
+   "fama": 0.065,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 282,
    "tendencia": null
   },
   "Minarelli": {
-   "fama": 0.0514,
+   "fama": 0.0297,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -5031,31 +5033,31 @@
    "tendencia": null
   },
   "Montesa Honda": {
-   "fama": 0.0498,
+   "fama": 0.0565,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 186,
    "tendencia": null
   },
   "Raleigh Bicycle Company": {
-   "fama": 0.0405,
+   "fama": 0.0503,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 168,
    "tendencia": null
   },
   "Autobicicletta Brevettata Rodolfi Alfeo": {
-   "fama": 0.0255,
+   "fama": 0.0232,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 48,
    "tendencia": null
   },
   "Phillips": {
-   "fama": 0.0209,
+   "fama": 0.0121,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -5063,119 +5065,119 @@
    "tendencia": null
   },
   "Kynoch": {
-   "fama": 0.0293,
+   "fama": 0.041,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 132,
    "tendencia": null
   },
   "Martinsyde": {
-   "fama": 0.0447,
+   "fama": 0.0255,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 30,
    "tendencia": null
   },
   "Mondial Moto": {
-   "fama": 0.0537,
+   "fama": 0.0713,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 420,
    "tendencia": null
   },
   "Royal Enfield": {
-   "fama": 0.0427,
+   "fama": 0.1159,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 9942,
    "tendencia": null
   },
   "Fantic Motor": {
-   "fama": 0.0482,
+   "fama": 0.0567,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 198,
    "tendencia": null
   },
   "Suzuki X-Head": {
-   "fama": 0.0082,
+   "fama": 0.0959,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8274,
    "tendencia": null
   },
   "ATK motorcycles": {
-   "fama": 0.0293,
+   "fama": 0.0286,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 60,
    "tendencia": null
   },
   "Sinotruk": {
-   "fama": 0.0528,
+   "fama": 0.0899,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1410,
    "tendencia": null
   },
   "Aermacchi": {
+   "fama": 0.0821,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 900,
+   "tendencia": null
+  },
+  "Olson": {
+   "fama": 0.0315,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 72,
+   "tendencia": null
+  },
+  "Lyncar": {
+   "fama": 0.0488,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 114,
+   "tendencia": null
+  },
+  "Western Star Trucks": {
+   "fama": 0.0791,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 690,
+   "tendencia": null
+  },
+  "Volkswagen Motorsport": {
+   "fama": 0.058,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 204,
+   "tendencia": null
+  },
+  "Courage Compétition": {
    "fama": 0.0514,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Olson": {
-   "fama": 0.0293,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Lyncar": {
-   "fama": 0.0498,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Western Star Trucks": {
-   "fama": 0.0537,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Volkswagen Motorsport": {
-   "fama": 0.0498,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Courage Compétition": {
-   "fama": 0.0405,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 180,
    "tendencia": null
   },
   "Sutton": {
-   "fama": 0.0293,
+   "fama": 0.0169,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -5183,7 +5185,7 @@
    "tendencia": null
   },
   "Adams": {
-   "fama": 0.0293,
+   "fama": 0.0169,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -5191,15 +5193,15 @@
    "tendencia": null
   },
   "Snowberger": {
-   "fama": 0.0293,
+   "fama": 0.0315,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 72,
    "tendencia": null
   },
   "Kuzma": {
-   "fama": 0.0447,
+   "fama": 0.0258,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -5207,39 +5209,39 @@
    "tendencia": null
   },
   "Lesovsky": {
-   "fama": 0.0382,
+   "fama": 0.0345,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 66,
    "tendencia": null
   },
   "Riley & Scott": {
-   "fama": 0.0326,
+   "fama": 0.0376,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 96,
    "tendencia": null
   },
   "JBW": {
-   "fama": 0.0447,
+   "fama": 0.0436,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 96,
    "tendencia": null
   },
   "Hall": {
-   "fama": 0.0209,
+   "fama": 0.0783,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 1824,
    "tendencia": null
   },
   "Langley": {
-   "fama": 0.0209,
+   "fama": 0.0121,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
@@ -5247,19 +5249,27 @@
    "tendencia": null
   },
   "Kalex": {
-   "fama": 0.0528,
+   "fama": 0.0735,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 498,
    "tendencia": null
   },
   "Cadillac Formula 1 Team": {
-   "fama": 0.0537,
+   "fama": 0.1192,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
-   "visitas_pt_12m": null,
+   "visitas_pt_12m": 8736,
+   "tendencia": null
+  },
+  "Stellantis Europe": {
+   "fama": 0.0872,
+   "lembranca_em_1000": null,
+   "estimada": false,
+   "conhecem_pct": null,
+   "visitas_pt_12m": 1296,
    "tendencia": null
   }
  }
