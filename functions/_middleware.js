@@ -1,13 +1,13 @@
-// Manda quem entra por um endereço velho para o endereço oficial, nichoojogo.io.
+// Manda quem entra por um endereço velho para o endereço oficial, nichoojogo.com.
 //
-//   nichoojogo.pages.dev/qualquer-coisa  ->  https://nichoojogo.io/qualquer-coisa
-//   www.nichoojogo.io/qualquer-coisa     ->  https://nichoojogo.io/qualquer-coisa
+//   nichoojogo.pages.dev/qualquer-coisa  ->  https://nichoojogo.com/qualquer-coisa
+//   www.nichoojogo.com/qualquer-coisa     ->  https://nichoojogo.com/qualquer-coisa
 //
 // As prévias do Pages (algo.nichoojogo.pages.dev) continuam abrindo normalmente.
 // Só roda nas páginas e na API (veja _routes.json), não em cada imagem ou fonte.
 
-const OFICIAL = "nichoojogo.io";
-const VELHOS = new Set(["nichoojogo.pages.dev", "www.nichoojogo.io"]);
+const OFICIAL = "nichoojogo.com";
+const VELHOS = new Set(["nichoojogo.pages.dev", "www.nichoojogo.com"]);
 
 export async function onRequest({ request, next }) {
   const url = new URL(request.url);
