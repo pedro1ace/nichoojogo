@@ -353,6 +353,18 @@ form button {
 #grafico .coluna:last-child .dica-coluna { left: auto; right: 0; transform: translate(0, 4px); }
 #grafico .coluna:last-child:hover .dica-coluna { transform: translate(0, 0); }
 .diario { padding-bottom: 34px; }
+/* curva dos viajantes: onde sua pontuação ficou entre a de todo mundo hoje */
+#curva { position: relative; margin-top: 30px; padding-bottom: 22px; animation: aparecer-fim 0.8s ease-out; }
+#curva-svg { display: block; width: 100%; height: 150px; border-bottom: 1px solid rgba(154, 163, 199, 0.35); }
+#curva-eixo span { position: absolute; bottom: 0; transform: translateX(-50%); font-family: var(--mono); font-size: 13px; color: var(--suave); }
+#curva-eixo span:first-child { transform: none; }
+#curva-eixo span:last-child { transform: translateX(-100%); }
+#curva .voce {
+  position: absolute; top: -26px; white-space: nowrap; padding: 2px 8px;
+  font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: 0.12em;
+  background: var(--rosa); color: #1a0010; box-shadow: 0 0 12px rgba(255, 79, 139, 0.6);
+}
+#curva-texto { margin: 8px 0 0; font-size: 16px; color: var(--texto); text-align: center; }
 pre {
   font-family: var(--mono); font-size: 22px; white-space: pre-wrap; text-align: left;
   background: #050220; padding: 12px; margin: 6px 0 0; box-shadow: inset 0 0 0 2px #2c2870;
