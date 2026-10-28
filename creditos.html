@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Créditos · Nicho</title>
+  <meta name="description" content="Créditos do Nicho: fontes, dados e licenças de terceiros.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="jogo/fontes.css">
+  <style>
+    :root {
+      color-scheme: dark;
+      --fundo: #07031f;
+      --painel: rgba(12, 8, 40, 0.9);
+      --borda: rgba(120, 140, 220, 0.35);
+      --texto: #eef0ff;
+      --suave: #b3bbdf;
+      --ciano: #5fe1ff;
+      --rosa: #ff4f8b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--fundo); color: var(--texto);
+      font-family: "Space Mono", ui-monospace, monospace; font-size: 16px; line-height: 1.6;
+      background-image: radial-gradient(1px 1px at 20% 30%, #fff8 50%, transparent 51%),
+                        radial-gradient(1px 1px at 70% 80%, #fff6 50%, transparent 51%),
+                        radial-gradient(1px 1px at 85% 15%, #fff7 50%, transparent 51%),
+                        radial-gradient(1px 1px at 40% 65%, #fff5 50%, transparent 51%);
+      background-size: 240px 240px; background-attachment: fixed;
+    }
+    main { width: min(760px, 100%); margin: 0 auto; padding: 32px 16px 56px; }
+    h1 { font-family: "Press Start 2P", monospace; font-size: clamp(18px, 5vw, 26px); line-height: 1.4; margin: 24px 0 8px; color: var(--ciano); }
+    h2 { font-family: "Press Start 2P", monospace; font-size: 13px; line-height: 1.6; letter-spacing: 1px; margin: 32px 0 8px; color: var(--rosa); }
+    p, li { color: var(--texto); }
+    ul { padding-left: 22px; }
+    li { margin: 4px 0; }
+    a { color: var(--ciano); }
+    a:hover { color: var(--texto); }
+    code { font-size: 14px; color: var(--suave); }
+    .atualizado { color: var(--suave); font-size: 14px; margin: 0 0 24px; }
+    .voltar { display: inline-block; font-size: 14px; letter-spacing: 2px; text-decoration: none; padding: 8px 14px; box-shadow: inset 0 0 0 1px var(--borda); background: var(--painel); }
+    .caixa { background: var(--painel); border: 1px solid var(--borda); padding: 12px 16px; margin: 16px 0; }
+    .pendente { color: var(--rosa); }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="voltar" href="./">◀ VOLTAR AO JOGO</a>
+
+    <h1>Créditos</h1>
+    <p class="atualizado">Última atualização: 28 de outubro de 2026</p>
+
+    <p>O Nicho foi feito com a ajuda de dados e fontes livres. Obrigado a quem os criou e mantém.</p>
+
+    <h2>Fontes (tipografia)</h2>
+    <ul>
+      <li><b>Press Start 2P</b>, de CodeMan38 (Cody Boisclair), sob a
+        <a href="https://openfontlicense.org" target="_blank" rel="noopener">SIL Open Font License 1.1</a>.
+        <a href="licencas/OFL-PressStart2P.txt">Texto da licença</a>.</li>
+      <li><b>Nicho Pixel</b>: versão modificada da Press Start 2P, com as maiúsculas acentuadas em tamanho cheio.
+        Também sob a SIL Open Font License 1.1.</li>
+      <li><b>Space Mono</b>, de Colophon Foundry para o Google, sob a SIL Open Font License 1.1.
+        <a href="licencas/OFL-SpaceMono.txt">Texto da licença</a>.</li>
+    </ul>
+
+    <h2>Dados</h2>
+    <ul>
+      <li><b><a href="https://www.wikidata.org" target="_blank" rel="noopener">Wikidata</a></b>: listas de respostas e apelidos,
+        sob <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.pt_BR" target="_blank" rel="noopener">CC0 1.0</a>.</li>
+      <li><b>Wikipédia em português</b>: número de visitas aos artigos (dumps públicos da Wikimedia), usado para medir a fama de cada resposta,
+        sob CC0 1.0.</li>
+      <li><b><a href="https://github.com/astronexus/HYG-Database" target="_blank" rel="noopener">HYG Database</a></b>, de David Nash:
+        nomes próprios de estrelas aprovados pela União Astronômica Internacional, sob
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
+        Só os nomes e o brilho foram usados.</li>
+      <li><b><a href="https://github.com/fserb/pt-br" target="_blank" rel="noopener">fserb/pt-br</a></b>, de Fernando Serboncini:
+        base de palavras do português, sob a licença MIT. Copyright 2021 Fernando Serboncini.
+        O texto completo da licença está no arquivo LICENSE do projeto.</li>
+      <li><b>IBGE</b>, Censo 2022: população dos municípios, usada para ordenar as cidades pela fama.</li>
+    </ul>
+
+    <h2>Inspiração</h2>
+    <p>A ideia do jogo foi inspirada no <a href="https://krillion.io" target="_blank" rel="noopener">Krillion</a>.
+    O Nicho não tem relação com o Krillion nem com seus criadores.</p>
+
+    <h2>Contato</h2>
+    <p>Achou um crédito faltando ou errado? <a href="mailto:contato@exemplo.com" class="pendente">contato@exemplo.com</a></p>
+
+    <p style="margin-top: 40px"><a class="voltar" href="./">◀ VOLTAR AO JOGO</a></p>
+  </main>
+</body>
+</html>

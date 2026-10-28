@@ -33,7 +33,7 @@ Como funciona hoje no protótipo:
 ## Como jogar
 
 Baixe o arquivo [`jogar.html`](jogar.html) e abra com dois cliques. Ele tem o jogo inteiro e funciona sem
-instalar nada (só precisa de internet para as fontes pixeladas; sem internet aparece uma fonte comum).
+instalar nada, nem internet (as fontes pixeladas vão dentro do arquivo).
 
 Com o projeto todo baixado, abrir `index.html` ou `jogo/index.html` com dois cliques também funciona.
 
@@ -202,6 +202,7 @@ Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local`, depoi
 ## Créditos
 
 Base de palavras: [fserb/pt-br](https://github.com/fserb/pt-br), de Fernando Serboncini, licença MIT.
+A lista completa, que o jogador vê, está em [`creditos.html`](creditos.html). Termos de uso em [`termos.html`](termos.html).
 
 ## Licença
 
