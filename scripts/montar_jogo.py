@@ -39,12 +39,15 @@ def main() -> None:
     html = html.replace('<link rel="stylesheet" href="estilo.css">', "<style>\n" + css + "</style>")
     acentos = (JOGO / "fonte-acentos.css").read_text(encoding="utf-8")
     html = html.replace('<link rel="stylesheet" href="fonte-acentos.css">', "<style>\n" + acentos + "</style>")
+    fontes = (JOGO / "fontes.css").read_text(encoding="utf-8")
+    html = html.replace('<link rel="stylesheet" href="fontes.css">', "<style>\n" + fontes + "</style>")
     for nome, codigo in scripts.items():
         marca = f'<script src="{nome}"></script>'
         assert marca in html, f"faltou {marca} em jogo/index.html"
         html = html.replace(marca, "<script>\n" + codigo.replace("</script", "<\\/script") + "</script>")
-    # jogar.html fica na raiz, ao lado de privacidade.html
-    html = html.replace('href="../privacidade.html"', 'href="privacidade.html"')
+    # jogar.html fica na raiz, ao lado de privacidade.html, termos.html e creditos.html
+    for pagina in ("privacidade", "termos", "creditos"):
+        html = html.replace(f'href="../{pagina}.html"', f'href="{pagina}.html"')
     (RAIZ / "jogar.html").write_text(html, encoding="utf-8")
     print("jogo/dados.js e jogar.html atualizados")
 

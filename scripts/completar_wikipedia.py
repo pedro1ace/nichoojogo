@@ -32,7 +32,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-AGENTE = "NichoJogo/1.0 (https://github.com/pedro1ace/nichoojogo; jogo de palavras sem fins lucrativos)"
+AGENTE = "NichoJogo/1.0 (https://github.com/pedro1ace/nichoojogo; jogo de palavras gratuito)"
 PAUSA_API = 1.0      # segundos entre pedidos à Wikipédia
 PAUSA_SPARQL = 5.0   # segundos entre consultas ao Wikidata
 SAIDA = Path(__file__).resolve().parent / "nicho_wikipedia2.json"
