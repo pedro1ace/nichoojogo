@@ -25,13 +25,17 @@ const Som = (() => {
   }
 
   // Zumbido grave e calmo de fundo, que fica mais grave conforme desce.
+  // Só toca durante a viagem (some na tela inicial e no fim). Nota e oitava,
+  // sem notas vizinhas: duas notas graves próximas "batem" e viram um tutututu chato.
+  const BASE_AMBIENTE = [55, 110];
+  const VOLUME_AMBIENTE = 0.014;
   function criarAmbiente() {
     const filtro = ac.createBiquadFilter();
     filtro.type = "lowpass";
     filtro.frequency.value = 180;
     const ganho = ac.createGain();
-    ganho.gain.value = 0.016;
-    const osc = [41.2, 55, 61.7].map((f) => {
+    ganho.gain.value = 0;
+    const osc = BASE_AMBIENTE.map((f) => {
       const o = ac.createOscillator();
       o.type = "sine";
       o.frequency.value = f;
@@ -46,7 +50,7 @@ const Som = (() => {
     lfo.connect(lfoGanho).connect(filtro.frequency);
     lfo.start();
     filtro.connect(ganho).connect(mestre);
-    ambiente = { osc, filtro };
+    ambiente = { osc, filtro, ganho };
   }
 
   function tom(freq, duracao, { tipo = "square", volume = 0.12, atraso = 0, ate = null } = {}) {
@@ -148,10 +152,18 @@ const Som = (() => {
     setTimeout(() => c.fontes.forEach((f) => f.stop()), 2500);
   }
 
+  // liga ou desliga o zumbido de fundo devagar (constante de tempo em segundos)
+  function fundo(ligado, suave = 0.6) {
+    if (!ambiente) return;
+    ambiente.ganho.gain.cancelScheduledValues(ac.currentTime);
+    ambiente.ganho.gain.setTargetAtTime(ligado ? VOLUME_AMBIENTE : 0, ac.currentTime, suave);
+  }
+
   const NOTAS = [523.25, 659.25, 783.99, 1046.5, 1318.5, 1568]; // dó maior subindo
 
   return {
     ligar,
+    fundo,
     estaMudo: () => mudo,
     alternar() {
       mudo = !mudo;
@@ -217,6 +229,7 @@ const Som = (() => {
     },
     // início da viagem: um "fuuuum" que sobe e um brilho de três notas, ecoando no espaço
     inicio() {
+      fundo(true, 1);
       ruido(1.4, { volume: 0.06, de: 300, ate: 3200 });
       tom(110, 1.2, { tipo: "sine", volume: 0.16, ate: 440 });
       [523.25, 783.99, 1046.5].forEach((f, i) => {
@@ -331,7 +344,8 @@ const Som = (() => {
         const f = 1500 + Math.random() * 1500;
         tom(f, 0.12, { tipo: "sine", volume: 0.012 + Math.random() * 0.01, atraso: a, ate: f * 0.7 });
       }
-      if (ambiente) ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime([41.2, 55, 61.7][i], t, d / 3));
+      if (ambiente) ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime(BASE_AMBIENTE[i], t, d / 3));
+      fundo(false, d / 4);
     },
     fim() {
       [392, 523.25, 659.25, 783.99].forEach((f, i) => tom(f, 0.35, { tipo: "triangle", volume: 0.1, atraso: 0.15 * i }));
@@ -339,7 +353,7 @@ const Som = (() => {
     profundidade(al) {
       if (!ambiente) return;
       const f = Math.max(0.6, 1 - al / 65000); // al em anos-luz de verdade
-      ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime([41.2, 55, 61.7][i] * f, ac.currentTime, 0.5));
+      ambiente.osc.forEach((o, i) => o.frequency.setTargetAtTime(BASE_AMBIENTE[i] * f, ac.currentTime, 0.5));
     },
   };
 })();

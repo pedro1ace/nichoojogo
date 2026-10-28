@@ -679,6 +679,7 @@ function mostrarFim(comSom) {
     apoio.textContent = "APOIAR";
     apoio.removeAttribute("aria-disabled");
   }
+  Som.fundo(false);
   if (comSom) Som.fim();
   else cena.irPara(0);
   cena.limpar();
