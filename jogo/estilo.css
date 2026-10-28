@@ -444,3 +444,36 @@ pre {
 }
 @keyframes pulsar-brilho { 50% { text-shadow: 0 0 34px var(--cor-faixa, #fff), 0 0 8px #fff; } }
 @media (prefers-reduced-motion: reduce) { #nome-faixa.pop { animation: none; } }
+
+/* ---------- caixas do fim: Instagram e apoio ---------- */
+.caixas-fim { display: grid; gap: 12px; margin-top: 18px; text-align: left; }
+.caixa-fim {
+  display: flex; align-items: center; gap: 14px; padding: 14px 16px;
+  background: repeating-linear-gradient(0deg, rgba(var(--luz), 0.04) 0 1px, transparent 1px 3px), var(--painel);
+  clip-path: var(--recorte); color: var(--texto); text-decoration: none;
+  box-shadow: inset 0 0 0 2px var(--painel-borda);
+  transition: box-shadow 0.2s, transform 0.1s;
+}
+.caixa-fim .pixel-logo { flex: none; width: 52px; height: 52px; image-rendering: pixelated; }
+.caixa-texto { flex: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.caixa-titulo { font-family: var(--titulo); font-size: 12px; letter-spacing: 1px; color: var(--suave); }
+.caixa-arroba { font-family: var(--titulo); font-size: clamp(15px, 4.4vw, 20px); color: var(--texto); text-shadow: 2px 2px 0 #962fbf; overflow-wrap: anywhere; }
+.caixa-sub { font-family: var(--mono); font-size: 14px; color: var(--suave); }
+.caixa-seta { flex: none; font-size: 18px; color: #fa7e1e; }
+.caixa-insta { box-shadow: inset 0 0 0 2px rgba(214, 41, 118, 0.6), 0 0 14px rgba(214, 41, 118, 0.2); }
+.caixa-insta:hover { box-shadow: inset 0 0 0 2px #d62976, 0 0 22px rgba(214, 41, 118, 0.5); }
+.caixa-insta:hover .caixa-seta { animation: empurrar 0.6s steps(2) infinite; }
+.caixa-insta:active { transform: translateY(2px); }
+@keyframes empurrar { 50% { transform: translateX(3px); } }
+.caixa-apoio { box-shadow: inset 0 0 0 2px rgba(255, 79, 139, 0.45); }
+.caixa-apoio .pixel-logo { animation: bater 1.4s steps(1) infinite; }
+@keyframes bater { 0%, 70% { transform: scale(1); } 80% { transform: scale(1.12); } 90% { transform: scale(1); } }
+#apoio-link { flex: none; padding: 10px 14px; font-weight: 700; letter-spacing: 2px; font-size: 13px; color: var(--texto); text-decoration: none; }
+#apoio-link[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
+@media (max-width: 420px) {
+  .caixa-apoio { flex-wrap: wrap; }
+  .caixa-apoio #apoio-link { width: 100%; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .caixa-apoio .pixel-logo, .caixa-insta:hover .caixa-seta { animation: none; }
+}
