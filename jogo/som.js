@@ -219,6 +219,15 @@ const Som = (() => {
     },
     sugestao: () => tom(880, 0.08, { tipo: "triangle", volume: 0.08, ate: 1175 }),
     tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
+    // pergunta nova chegou: "pi-pi-plim!" de radar, três notas rápidas subindo e um brilho no fim
+    pergunta() {
+      if (!ac) return;
+      tom(783.99, 0.07, { tipo: "square", volume: 0.07 });
+      tom(1046.5, 0.07, { tipo: "square", volume: 0.07, atraso: 0.075 });
+      tom(1568, 0.32, { tipo: "square", volume: 0.065, atraso: 0.15 });
+      tom(3136, 0.5, { tipo: "sine", volume: 0.035, atraso: 0.15 }); // brilho
+      tom(1568, 0.3, { tipo: "triangle", volume: 0.02, atraso: 0.33 }); // eco
+    },
     contagem: (ultimo) => tom(ultimo ? 880 : 440, ultimo ? 0.25 : 0.12, { tipo: "triangle", volume: 0.1 }),
     // buraco negro: um "wooon" grave que desce oscilando, com um zap de laser
     buraco() {

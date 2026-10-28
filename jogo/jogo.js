@@ -379,6 +379,7 @@ function iniciarRodada() {
   avisar("", "");
   $("palpite").value = "";
   mostrarPergunta(true);
+  Som.pergunta(); // avisa que chegou pergunta nova
 
   // contagem antes do relógio, para dar tempo de ler
   let n = 3;
@@ -390,7 +391,7 @@ function iniciarRodada() {
     }
     $("aviso").innerHTML = `preparando a incursão · o relógio começa em <b>${n}</b>`;
     $("aviso").hidden = false;
-    Som.contagem(false);
+    if (n < 3) Som.contagem(false); // no "3" quem toca é o som da pergunta nova
     n--;
     setTimeout(contar, 1000);
   };
@@ -399,6 +400,7 @@ function iniciarRodada() {
 
 function abrirRelogio() {
   Som.contagem(true);
+  cena.relogio();
   estado.ativa = true;
   estado.fimDoTempo = performance.now() + SEGUNDOS * 1000;
   $("formulario").hidden = false;
