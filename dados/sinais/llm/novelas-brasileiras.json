@@ -1,0 +1,788 @@
+{
+ "modelo": "claude (estimado na conversa do agente, sem API)",
+ "amostras": 1,
+ "pergunta": "Cite uma novela brasileira",
+ "itens": [
+  {
+   "resposta": "Avenida Brasil",
+   "respostas_em_1000": 80.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "O Clone",
+   "respostas_em_1000": 60.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pantanal",
+   "respostas_em_1000": 50.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mulheres de Areia",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "A Usurpadora",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Roque Santeiro",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vale Tudo",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tieta",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Senhora do Destino",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Laços de Família",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mulheres Apaixonadas",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Terra Nostra",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Celebridade",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Da Cor do Pecado",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Caminho das Índias",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Amor à Vida",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fina Estampa",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "A Favorita",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Paraíso Tropical",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Belíssima",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Páginas da Vida",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Alma Gêmea",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chocolate com Pimenta",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cheias de Charme",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Malhação",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chiquititas",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Carrossel",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cúmplices de um Resgate",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Rebelde",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Escrava Isaura",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "O Rei do Gado",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Renascer",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Terra e Paixão",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Travessia",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Império",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "A Força do Querer",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "O Outro Lado do Paraíso",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Salve Jorge",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gabriela",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dancin' Days",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Selva de Pedra",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Irmãos Coragem",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "O Bem-Amado",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Saramandaia",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Que Rei Sou Eu?",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Explode Coração",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "A Próxima Vítima",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Por Amor",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "História de Amor",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "O Cravo e a Rosa",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Kubanacan",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Uga Uga",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bang Bang",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Beleza Pura",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ti-ti-ti",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Passione",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cordel Encantado",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Meu Pedacinho de Chão",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Verdades Secretas",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Amor de Mãe",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Éramos Seis",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mar do Sertão",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vai na Fé",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Beto Rockfeller",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 35.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Redenção",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "O Direito de Nascer",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 35.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "A Viagem",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Os Mutantes",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Prova de Amor",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vidas Opostas",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bicho do Mato",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cristal",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 35.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corações Feridos",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dona Beija",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Xica da Silva",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cabocla",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Sinhá Moça",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Escrito nas Estrelas",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  }
+ ],
+ "faltando": []
+}

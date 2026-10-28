@@ -1,0 +1,978 @@
+{
+ "modelo": "claude (estimado na conversa do agente, sem API)",
+ "amostras": 1,
+ "pergunta": "Cite um Pokémon",
+ "itens": [
+  {
+   "resposta": "Pikachu",
+   "respostas_em_1000": 250.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Charizard",
+   "respostas_em_1000": 50.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bulbasaur",
+   "respostas_em_1000": 40.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Charmander",
+   "respostas_em_1000": 40.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Squirtle",
+   "respostas_em_1000": 40.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mewtwo",
+   "respostas_em_1000": 30.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mew",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Eevee",
+   "respostas_em_1000": 25.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Jigglypuff",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Psyduck",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Snorlax",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gengar",
+   "respostas_em_1000": 12.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Meowth",
+   "respostas_em_1000": 12.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Lucario",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ditto",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Magikarp",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gyarados",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Onix",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Raichu",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pichu",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Togepi",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vulpix",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ninetales",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Lapras",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dragonite",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Blastoise",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Venusaur",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ivysaur",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Wartortle",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Charmeleon",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Arcanine",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Growlithe",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Machamp",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Alakazam",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Abra",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Geodude",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Golem",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Zubat",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pidgey",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pidgeot",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Rattata",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Caterpie",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Butterfree",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Metapod",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Weedle",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Beedrill",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ekans",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Arbok",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Staryu",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Starmie",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chikorita",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cyndaquil",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Totodile",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Treecko",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Torchic",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mudkip",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Piplup",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Turtwig",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chimchar",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Greninja",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Lugia",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ho-Oh",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Rayquaza",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Groudon",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Kyogre",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Arceus",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Darkrai",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Celebi",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Jirachi",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Umbreon",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Espeon",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vaporeon",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Jolteon",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Flareon",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Sylveon",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Leafeon",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Glaceon",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gardevoir",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Blaziken",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Sceptile",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Swampert",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tyranitar",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Scyther",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Lickitung",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Farfetch'd",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mr. Mime",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hitmonlee",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Wobbuffet",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Sudowoodo",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 55.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Unown",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Shuckle",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Spinda",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Stunfisk",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bidoof",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 45.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Garbodor",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Klefki",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dhelmise",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 8.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  }
+ ],
+ "faltando": []
+}

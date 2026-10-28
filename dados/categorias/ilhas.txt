@@ -2,8 +2,8 @@
 # pergunta: Cite uma ilha (de qualquer lugar do mundo)
 # formato: uma resposta por linha; apelidos separados por " | "
 Fernando de Noronha | noronha
-Ilha do Marajó | marajó
-Florianópolis | ilha de santa catarina | floripa
+Ilha do Marajó | marajó | Ilha de Marajó | Ilha Grande de Joannes | Ilha Grande de Joanes | Marijó | Grande de Joannes | Grande de Joanes
+Florianópolis | ilha de santa catarina | floripa | santa catarina
 Ilhabela
 Ilha Grande
 Havaí | hawaii
@@ -27,7 +27,7 @@ Ilha da Madeira | madeira
 Açores
 Cabo Verde
 São Tomé
-Ilha de Páscoa | rapa nui
+Ilha de Páscoa | rapa nui | Páscoa
 Galápagos
 Bali
 Java
@@ -48,17 +48,17 @@ Taiwan
 Hong Kong
 Singapura
 Filipinas
-Luzon
-Mindanao
+Luzon | Lução | Luçon
+Mindanao | Mindanau
 Okinawa
 Hokkaido
 Honshu
-Kyushu
+Kyushu | Quiuxu
 Shikoku
 Sacalina
 Jamaica
 Porto Rico
-Hispaniola
+Hispaniola | Ilha de São Domingos | La Hispaniola | Isla Española | Ilha Hispaniola | Ilha Española | Ilha Espanhola | Ilha de Santo Domingo | Ilha de Hispaniola | Espanhola | São Domingos | Santo Domingo
 Haiti
 Barbados
 Aruba
@@ -72,16 +72,16 @@ Martinica
 Guadalupe
 Manhattan
 Long Island
-Ilha da Liberdade
+Ilha da Liberdade | Liberdade
 Alcatraz
-Ilha de Wight
-Ilha de Man
+Ilha de Wight | Wight
+Ilha de Man | Man
 Jersey
 Guernsey
 Shetland
 Órcadas
 Hébridas
-Skye
+Skye | Ilha de Skye | Isle of skye
 Svalbard
 Spitsbergen
 Lofoten
@@ -89,58 +89,58 @@ Gotland
 Bornholm
 Rodes
 Santorini
-Mykonos
+Mykonos | Míconos
 Corfu
 Lesbos
 Ítaca
 Capri
-Elba
+Elba | Ilha de Elba
 Lampedusa
 Ilhas Canárias | canárias
-Gran Canária
+Gran Canária | Grã Canária | Grande canária
 Lanzarote
 Fuerteventura
 Ilhas Baleares | baleares
-Menorca
+Menorca | Minorca
 Formentera
-Ilha de Moçambique
+Ilha de Moçambique | Moçambique
 Ilha do Bananal | bananal
-Ilha do Mel
-Ilha Comprida
-Ilha do Cardoso
-Ilha Anchieta
+Ilha do Mel | Mel
+Ilha Comprida | Comprida
+Ilha do Cardoso | Cardoso
+Ilha Anchieta | Anchieta
 Ilha de Itamaracá | itamaracá
 Ilha de Boipeba | boipeba
 Morro de São Paulo | tinharé
 Ilha de Itaparica | itaparica
-Ilha dos Frades
+Ilha dos Frades | Frades
 Ilha de Maré
 Ilha de Superagui | superagui
-Ilha de São Luís | são luís
-Ilha de Vitória
-Ilha do Governador
-Ilha Fiscal
+Ilha de São Luís | são luís | Upaon-Açu | Ilha Upaon-Açu | Ilha de Upaon- Açu
+Ilha de Vitória | Vitória
+Ilha do Governador | Governador
+Ilha Fiscal | Fiscal
 Ilha de Paquetá | paquetá
-Ilha das Cobras
+Ilha das Cobras | Cobras
 Ilha da Trindade | trindade
 Martim Vaz
-Atol das Rocas
+Atol das Rocas | Rocas
 Arquipélago de São Pedro e São Paulo | são pedro e são paulo
 Abrolhos
 Ilha do Campeche | campeche
-Ilha do Arvoredo | arvoredo
-Ilha de São Francisco do Sul
-Ilha dos Lobos
+Ilha do Arvoredo | arvoredo | Ilhas do Arvoredo
+Ilha de São Francisco do Sul | São Francisco do Sul
+Ilha dos Lobos | Lobos
 Ilha do Combu | combu
 Ilha de Mosqueiro | mosqueiro
-Ilha de Algodoal | algodoal
-Ilha do Caju
-Ilha do Fundão
-Ilha de Santo Amaro
-Ilha de São Vicente
-Ilha Porchat
-Ilha das Peças
-Ilha do Bom Abrigo
+Ilha de Algodoal | algodoal | Ilha de Maiandeua | Maiandeua
+Ilha do Caju | Caju
+Ilha do Fundão | Fundão
+Ilha de Santo Amaro | Santo Amaro
+Ilha de São Vicente | São Vicente
+Ilha Porchat | Porchat
+Ilha das Peças | Peças
+Ilha do Bom Abrigo | Bom Abrigo
 Ilha de Tupinambarana
 Ilhas Malvinas | falklands | malvinas
 Geórgia do Sul
@@ -149,16 +149,16 @@ Chiloé
 Juan Fernández | ilha de robinson crusoé
 Margarita
 Ilha de Bioko | bioko
-Ilha de Gorée | gorée
+Ilha de Gorée | gorée | Goreia | Ilha de Palma ou de Bezeguiche | Bezeguiche | Goeree | Goré | Palma ou de Bezeguiche
 Santa Helena
-Ascensão
+Ascensão | Ilha de Ascensão | Ilha Ascensão
 Tristão da Cunha
-Ilha Bouvet
+Ilha Bouvet | Bouvet
 Kerguelen
 Reunião
 Mayotte
 Comores
-Socotra
+Socotra | Socotorá | Suqutrah | Soqotra | Socutra
 Bahrein
 Ormuz
 Kish
@@ -173,13 +173,13 @@ Lombok
 Timor
 Sulawesi | celebes
 Molucas
-Halmahera
+Halmahera | Halmaera
 Palawan
 Cebu
 Boracay
 Bohol
 Guam
-Saipan
+Saipan | Saipã
 Palau
 Yap
 Pohnpei
@@ -195,81 +195,2018 @@ Moorea
 Marquesas
 Tuamotu
 Pitcairn
-Ilha Norfolk
-Ilha Lord Howe
-Ilha Fraser | k'gari
-Ilha do Norte
-Ilha do Sul
-Ilha Stewart
-Ilha de Vancouver
+Ilha Norfolk | Norfolk
+Ilha Lord Howe | Ilha de Lord Howe | Arquipélago de Lord Howe | Lord Howe
+Ilha Fraser | k'gari | Fraser
+Ilha do Norte | Ilha Norte | Norte
+Ilha do Sul | Ilha Sul | Te Waipounamu | Sul
+Ilha Stewart | Stewart
+Ilha de Vancouver | Ilha Vancouver | Vancouver
 Terra Nova
-Ilha do Príncipe Eduardo
-Ilha de Baffin
-Ilha de Ellesmere
-Ilha Victoria
-Ilha Wrangel
+Ilha do Príncipe Eduardo | Príncipe Eduardo
+Ilha de Baffin | Baffin
+Ilha de Ellesmere | Ilha Ellesmere | Ellesmere
+Ilha Victoria | Victoria
+Ilha Wrangel | Ilha de Wrangel | Wrangell | Vrangelya | Ostrov Nakhodka | Wrangel
 Nova Zembla
 Terra de Francisco José
-Ilha de Kodiak
-Ilhas Aleutas
-Ilha Bermuda | bermudas
-Ilhas Cayman
-Ilhas Virgens
+Ilha de Kodiak | Ilha Kodiak | Kodiak
+Ilhas Aleutas | Aleutas
+Ilha Bermuda | bermudas | Bermuda
+Ilhas Cayman | Cayman
+Ilhas Virgens | Virgens
 Turks e Caicos
 Antígua
 São Martinho
-Isla Mujeres
+Isla Mujeres | Ilha das Mulheres | Islas Mujeres | Mulheres
 Cozumel
 Roatán
-Ilha do Coco
-Ilha de Ometepe
-Ilha Robben
-Ilha de Elefantina
-Ilha de Philae
-Ilha de Delos
-Ilha de Patmos
-Ilha de Murano
+Ilha do Coco | Coco
+Ilha de Ometepe | Ometepe | Ilha ometepe
+Ilha Robben | Robben
+Ilha de Elefantina | Elefantina
+Ilha de Philae | Filas | Filae | Philae
+Ilha de Delos | Delos
+Ilha de Patmos | Patmos
+Ilha de Murano | Murano
 Burano
 Lido
 Île de la Cité
 Mont-Saint-Michel
 Ilha de Ré
-Belle-Île
+Belle-Île | Belle-Isle | Belle-Île-en-Mer
 Heligoland
 Sylt
 Rügen
 Ilhas Faroé | faroé
 Jan Mayen
-Ilha do Urso
-Ilha Deception
-Ilha Rei George
-Ilha de Ross
-Ilha de Pedro I
-Ilha de Clipperton
+Ilha do Urso | Urso
+Ilha Deception | Deception
+Ilha Rei George | Ilha do Rei George | Rei George
+Ilha de Ross | Ross
+Ilha de Pedro I | Pedro I
+Ilha de Clipperton | Clipperton
 Ilha de Tromelin
-Ilha de Navassa
-Ilha Wake
+Ilha de Navassa | Navassa
+Ilha Wake | Wake
 Midway
-Ilha Johnston
-Ilha Howland
-Ilha Baker
-Ilha de Pentecostes
+Ilha Johnston | Johnston
+Ilha Howland | Howland
+Ilha Baker | Baker
+Ilha de Pentecostes | Pentecostes
 Tanna
 Nova Caledônia
-Ilhas Salomão
+Ilhas Salomão | Salomão
 Guadalcanal
 Bougainville
 Nova Bretanha
 Nova Irlanda
-Ilha Christmas
-Ilhas Cocos
+Ilha Christmas | Christmas
+Ilhas Cocos | Cocos
 Ilha de Hainan | hainan
 Ilha de Jeju | jeju
-Ilha de Sado
+Ilha de Sado | Sado
 Miyajima
 Yakushima
 Ilha de Ishigaki
 Kunashir
 Iturup
-Ilha Ellis
-Ilha da Queimada Grande
+Ilha Ellis | Ellis
+Ilha da Queimada Grande | Queimada Grande
+Brač | Bratz | Brazza
+Neuwerk
+Laysan
+Kvaløya
+Chacachacare
+Castelo Kisimul
+Caja de Muertos
+Utøya | Utoya | Utoeya
+Ilha de Santiago | Ilha de São Tiago | São Tiago | Santiago | Ilha de San Salvador | Ilha de James | James
+Ilha da Boa Vista | Boavista
+Ilha de Mull | Mull
+Jura
+Bass Rock
+Pirâmide de Ball
+Ilha de Basse-Terre | Basse-Terre
+Fidonisi | Ilha das Serpentes | Ilha da Serpente | Serpentes | Serpente
+Ilha de Reichenau | Reichenau
+Samos | Ilha de samos
+Quios | Ilha de Quíos | Quio | Chios
+Isle Royale
+Als
+Ilha Robert | Robert
+Andros
+Prins Karls Forland
+Ilha Little Cornwallis | Little Cornwallis
+Surtsey | Vulcão Surtsey
+Cefalónia | Kefallinias | Kefallinía
+Ilha Europa | Europa
+Molokai
+Kiritimati | Quiritimati
+Ilha de Bering | Bering
+Amesterdão | Ilhas de Amsterdã | Ilhas Amsterdão | Ilhas Amsterdã | Ilha de Amsterdão | Ilha de Amsterdam | Ilha Amsterdam | Île Amsterdam | Amsterdã | Amsterdão | Amsterdam
+Ilha de Baltra | Ilha Baltra | Baltra
+Eysturoy
+Kauai
+Paros
+Herm
+Borðoy
+Salamina
+Recifes Indispensáveis
+Islay
+Iona
+Usedom
+Ilha Enderbury | Enderbury
+Ilha Moresby | Moresby
+Ilha Albatroz | Albatroz
+Ilha Bird | Bird
+Ilha Annenkov | Annenkov
+Tasos | Taso | Thásos | Tassos
+Terschelling | Skylge
+Cárpatos | Karpathos | Cárpato
+São Paulo | Ilha de São Paulo | Ilhas São Paulo | Ilha Saint-Paul | Île Saint-Paul | Selmunett | Saint-Paul
+Ilha de São Cristóvão | São Cristóvão | Saint Kitts
+Kizhi | Patrimônio de Kizhi | Kizhi Pogost
+Lítla Dímun
+Skellig Michael
+Citera | Tsirigo | Kythira | Kythera | Kithira | Cythera | Cérigo
+Nordaustlandet
+Ilha de Axel Heiberg | Ilha Axel Heiberg | Axel Heiberg
+Vágar | Vågø | Vaagø | Vaago
+Ilha Vaigach | Ilha Vaigatch | Vaygach | Ilha Vaygach | Vaigach | Vaigatch
+Ilha Southampton | Southampton
+Neves | Ilha Nevis | Ilha Neves | Nevis
+Vlieland
+Ilha Isabela | Ilha de Isabella | Ilha de Isabela | Isabela | Isabella
+Ilha de Mona | Mona
+Ilha do Sal | Sal | Lhana
+Ilha de Santo Antão | Santo Antão | S. Antão
+Rapa Iti
+Ilha da Juventude | Isla de Pinos | Isla de la Juventud | Ilha de Pinos | Juventude | Pinos
+Salsete | Salsette | Caranja
+Sala y Gómez | Ilha Sala y Gómez | Ilha Sala e Gómez | Sala e Gómez
+Makatea
+Hinnøya
+Ilha Zavodovski | Zavodovski
+Abu Musa | Abu Muça
+Anglesey
+Ilha de Lampione | Lampione
+Etajima
+Gozo | Ilha do Gozo
+Eubeia | Negroponte | Euboia | Eubea | Ilha de Euboea | Evvoia | Eubéios | Evia | Euboea
+Ilha Coulman | Coulman
+Isola Bella
+Caicos do Norte
+Ilha de Elefanta | Gharapuri | Pory | Elephanta | Elefanta
+Hallands Väderö
+Ilha Yunaska | Yunaska
+Ilha Adak | Adak
+Alderney
+Ilha Inexpressível | Inexpressível
+Ilha Folly | Folly
+Ilha Chizumulu | Chizumulu
+Diego Garcia
+Zembra
+Levkas | Lêucade | Leucádia | Lefkas
+Egina | Ilha de Egina | Aegina
+Comino
+Ilhote de Vélez de la Gomera | Peñón de Vélez de la Gomera | Penedo de Vélez de la Gomera | Ilhéu de Vélez de la Gomera | Badès | Vélez de la Gomera
+Ilhote de Alhucemas | Ilhote de Alucemas | Ilhéu de Alhucemas | Alhucemas
+Lemnos | Limnos
+Streymoy
+Canna
+Agalega | Ilhas Agalega
+Ilha Alexandre I | Ilha de Alexandre | Ilha Alexandre | Alexandre I | Alexandre
+Ilha Banks | Ilha de Banks | Banks
+Montecristo
+Samotrácia | Samothraki | Ilha de Samotrácia
+Vis | Lissa
+Milos
+Kastelorizo | Castelorizo | Megisti | Ilha de Kastellorizon | Kastellorizon
+Ilha Somerset | Somerset
+Negros | Ilha Negros | Ilha de Negros
+Ilha Yuzhny | Ilha Iujny | Ilha Iuzni | Yuzhny | Iujny | Iuzni
+Ilha Prince Patrick | Ilha Príncipe Patrick | Ilha Príncipe Patrício | Ilha do Príncipe Patrício | Prince Patrick | Príncipe Patrick | Príncipe Patrício
+Mykines
+Grímsey
+Anticítera | Antikythera
+Gavdos | Gavdhos
+Folegandros
+Ceos | Keos
+Île-d'Aix
+Ilha Ellef Ringnes | Ellef Ringnes
+Ilha Terceira | Terceira | Terceirense
+Kolguyev | Kolguev | Ilha Kolguyev
+Samsø | Samso
+Ilha das Flores | Ilha das flores (santa catarina) | Ilha das flores (ilha de santa catarina)
+Astipaleia
+Anholt
+Svínoy
+Skúvoy
+Lastovo
+Antiparos
+Ios
+Sérifos | Sérifo
+Ilha de Mahé | Mahé
+Ilha Secretary | Secretary
+Calf of Man
+Ilha do Rei | Rei
+San Giorgio Maggiore | Ilha de San Giorgio Maggiore
+Ilha La Tortuga | La Tortuga
+Ilha de San Andrés | Ilha de Santo André | San Andrés | Santo André
+Stromboli
+Oahu | O'ahu
+Ilha de Alcatraz
+Ilha Melville | Melville
+Ilha Tarakan | Tarakan
+Ilha do Rei Guilherme | Rei Guilherme
+Zaquintos | Zacinto
+Ceram | Hoalmoal Veranula | Seram | Loki
+Armathia
+Sumbawa | Sumbava | Ilhas Sumbawa | Ilha de Sumbawa
+Ilha de Devon | Ilha Devon | Devon
+Cós | Ilha de Cós | Kos
+Lanai | Lānaʻi
+Bangka | Banca | Ilha Bangka
+Ilha Cape Breton | Ilha do Cabo Bretão | Ilha do Cabo Breton | Cape Breton | Cabo Bretão | Cabo Breton
+Naxos
+Maui
+Djerba | Jerba
+Ilha do Príncipe de Gales | Ilha Príncipe de Gales | Príncipe de Gales
+Schiermonnikoog
+Ilha Pianosa | Planasia | Pianosa
+Madura
+Viti Levu
+Hidra | Ilha de Hidra
+Sandoy
+Hestur
+Koltur
+Tortuga | Ilha Tortuga
+Esquiro | Skyros | Skíros | Ciros
+Amorgos
+Pemba
+Rodrigues | Ilhas Rodrigues | Ilha Rodrigues
+Ilha de São Miguel | Micaelense | São Miguel
+Icária | Ikaria
+Pag | Pago | Baag
+Suðuroy
+Fugloy
+Ilha Kangaroo | Ilha dos Cangurus | Kangaroo Island | Ilha Canguru | Kangaroo | Cangurus | Canguru
+Amager
+Ilha do Príncipe | Príncipe
+Ilha do Pico | Pico
+Heimaey
+Siro | Syros
+Tinos
+Mljet | Meleda
+Leyte | Lete (ilha) | Leitê (ilha) | ilha de Leitê | Ilha Leyte | Ilha de Leyte | Lete | Leitê
+Mindoro
+Bozcaada | Tênedos
+Ilha de Arran | Arran
+Viðoy
+Skopelos | Escópelos | Pepareto
+Sifnos
+Kunoy
+Stóra Dímun
+Kalsoy
+Hvar
+Krk | Veglia
+Maré
+Ilha Moyenne | Moyenne
+Ilha de Silhouette | Ilha Silhouette | Silhouette
+Ulleungdo
+Ilhas Snares | Snares
+Ilha Birnie | Birnie
+Ilha Macquarie | Macquarie
+Filfla | Filfoletta
+Babeldaob | Ilha Babeldaob
+Vella Lavella
+Virgen Gorda
+Kuria
+Dokos
+Ilhas do Rei Carlos | Terra do Rei Carlos | Rei Carlos
+Ilha Alofi | Alofi
+Crooked Island | Ilha Crooked | Crooked
+Ilha Tiburón | Tiburón
+Eleuthera | Elethera
+Pequena Caimão | Little Cayman
+Ilha Navarino | Navarino
+Ilha Crown Prince Frederik | Crown Prince Frederik
+Ilha Crozier | Crozier
+Ilha Hoseason | Hoseason
+Cubagua
+Ilha de Orleães | Orleães
+Hiiumaa
+Phú Quốc
+Ilha Paulet | Paulet
+Ilha Wolin | Wolin
+Téviec
+Anafi
+Santa Maria | Ilha de Santa Maria
+Ilha Severny | Severny
+Ilha Bathurst | Ilha de Bathurst | Bathurst
+Ilha da Revolução de Outubro | Oktyabrskoy Revolyutsii | Revolução de Outubro
+Amboina | Amboíno | Ilha Ambon | Ambon
+Samar
+Grande Nicobar
+Ilha do Diabo | Diabo
+Bassas da Índia
+Yonaguni
+Barra
+Aitutaki
+Kahoolawe | Kahoʻolawe
+Rurutu
+Ilha Zuqar | Zuqar
+Ilha de São Tomé
+Ilha Tromelin | Tromelin
+Ilha de João da Nova | Juan de Nova | João da Nova
+Barbuda
+Öland | Olândia
+Niihau
+Nólsoy
+Ilha Komsomolets | Komsomolets
+Ilha Medny | Medny
+Ilha Drygalski | Drygalski
+Sakar
+Grande Terre
+Greifswalder Oie
+Bequia
+Ilha Hovgaard | Hovgaard
+Ilha de Cuxe | Cuxe
+Ilha de Santa Cruz | Ilha de Indefatigable | Santa Cruz | Indefatigable
+Ilha de Santa Isabel | Santa Isabel
+Ilha de Mafia | Ilha Mafia | Mafia
+Ishigaki
+Makira
+Ilha Jemo | Jemo
+Ilha Guishan | Guishan
+Paxos
+Ilha Wiencke | Wiencke
+Ilha Martín García | Ilha de Martín García | Martín García
+Ilha de Barrow | Barrow
+Sundiva
+Poros
+Dugi otok
+Terra de Wilczek
+Ashurada
+Ano Bom
+Sombrero
+Asinara
+Ilha Bobowasi | Bobowasi
+Malvina Ocidental | Grande Malvina | Gran Malvina | Falkland Ocidental
+Sazan | Ilha Sazan
+Ilha Caledônia | Caledônia
+Falster
+Kirkkokari
+Vieques
+Grande Caimão | Grand Cayman
+Sebatik
+Mainland | Shetland Mainland
+Cítnos
+Södermalm
+Taboga
+Coiba
+Ilha de São Jorge | Ilha de S. Jorge | São Jorge | S. Jorge
+Ilha de Alborão | Ilha de Alborán | Alborão | Alborán
+Schouwen-Duiveland
+Rab | Arbe
+Cres | Kersch | Cherso
+Korčula
+Silba
+Monserrate | Montserrat
+Catanduanes
+Ilha Gau | Gau
+Ilha Manra | Manra
+West Island | Ilha Ocidental | Ilha Oeste | Ocidental | Oeste
+Martha's Vineyard
+Nantucket
+Ilha de Tsushima | Tsushima
+Giudecca
+Torcello
+Cabrera | Ilha de Cabrera
+Rennell | Ilha Rennell
+Ilha Palomino | Palomino
+Ilha Daydream | Daydream
+Key West | Cayo Hueso
+Ilha Daru | Daru
+Ilha Bamu | Ilha Mbamu | Bamu | Mbamu
+Punta Cires
+Strombolicchio
+Ilha Dent | Dent
+Tromsøya
+Governors Island
+Ilha de Pedra Branca | Pedra Branca
+Idjwi
+Nova Hanôver
+Ilha Umnak | Umnak
+Éfaté
+Natuna Besar
+Ilha de la Gonâve | la Gonâve
+Tutuila
+Ko Samui
+Buru
+Kavaratti | Cavarati
+Æbelø
+Banaba | Ilha do oceano | Ilha de Banaba | Ilha Banaba | Banaba Island | Tabiang | oceano
+Upolu
+Emae
+Afognak
+Ilha de Jaina | Jaina
+Ilha Warbah | Warbah
+Ilha Hashima | Hashima
+Epi | Epi (Vanuatu) | Epi (ilha)
+Ilha de Jesus | Jesus
+Ilha Maïre | Île Maïre | Maïre
+Ile aux Marins | Ilha dos Marinheiros | Marinheiros
+Ilha de Cavallo | Cavallo
+Ilha de Noirmoutier | Île de Noirmoutier | Noirmoutier
+Ilha de Montreal | Montreal
+Île des Soeurs | Ilha das Freiras | Freiras
+Île du Levant
+Ilha de Oléron | Oléron
+Sikinos | Sícino
+Ilhéu das Cabras | Cabras
+Ilha de Corisco | Corisco
+Ilha Weizhou | Weizhou
+Atol de Astove | Astove
+Malpelo | Ilha Malpelo | Ilha de Malpelo
+Ilha de Brownsea | Brownsea
+Ilha Asuncion | Asuncion
+Ataúro | Município de Ataúro | Ilha de Ataúro | Ilha Ataúro
+Vir
+Unst
+Benbecula
+Ilha Atka | Atka
+Ilha Olkhon | Olkhon
+Ilha Atlasov | Atlasov
+Ilha Attu | Attu
+Aua
+Ilha Auckland | Auckland
+Sipura
+Ilha Rabi | Rabi
+Ilha de Fair | Ilha Fair | Fair
+Ilha Magnetic | Magnetic
+Ilha Shannon | Shannon
+Ilha Interview | Interview
+Nisiros
+Ilha de Yerba Buena | Yerba Buena
+Prvić
+Lembata
+Temoe
+Ilha Rowett | Rowett
+Bintão
+Culebra
+Sarigan
+Guanahani
+Niuatoputapu
+Poveglia
+Ilha Karaginsky | Ilha Karaginski | Karaginsky | Karaginski
+Ilha de Valentia | Valentia
+Ilha de Bute | Isle of Bute | Bute
+Ilha de Marchena | Ilha Marchena | Ilha de Bindloe | Marchena | Bindloe
+Ilha de Penang | Ilha de Penão | Ilha Penang | Penang | Penão
+Ilha Kugong | Kugong
+Ilha de Young | Ilha Young | Young
+Ilha Sturge | Sturge
+Ilha Balambangan | Balambangan
+Ilha de Wolf | Ilha de Wenman | Wolf | Wenman
+Ilha Dall | Dall
+Perim
+Rinca
+Danskøya
+Ilha Stefansson | Stefansson
+Ilha Ayon | Ayon
+Scalpay, Outer Hebrides
+Gavdopoula | Gavdopula
+Vulf
+Dauan
+Morotai
+Ilha de Gorgona | Gorgona
+Ilha Giannutri | Giannutri
+Ilha de Hong Kong
+Gröde
+Fanø
+Nuku Hiva
+Vendsyssel-Thy
+Rømø
+Ilha Formosa | Ilha Taiwan | Ilha de Taiwan | Formosa
+Fasta Åland
+Saba | Ilha de Saba
+Zelândia | Sjælland
+Ilha de São Martinho | São Martin | São Martim
+Ilha Bruny | Bruny
+Santo Eustáquio | St. Eustatius | Saint Eustatius | Sint Eustatius | Statia
+Fiónia | Funen | Condado de Fiónia | Condado da fiónia | Fyn
+Ærø | Aerö
+Porto Santo | Município do Porto Santo | ilha Dourada | Dourada
+Langeland
+Ilha de Vassiliev | Vassiliev
+Ilhas Desertas | Desertas
+Ilha Jarvis | US-86 | UM-86 | Ilha de Jarvis | Jarvis
+Kachchatheevu
+Templo de Kalabsha | Nova Calabexa
+Temotufoliki
+Koh Kong
+Kai Besar
+Cayo Samaná
+Latham
+Ilha Khvostof | Khvostof
+Kihnu
+Kinaros
+Ilha King Christian | King Christian
+Kisar
+Île à Vache
+Marken
+Abd al Kuri | Abdalcuria
+Ap Lei Chau
+Eldey
+Lundy
+Tinian | Tiniã
+Vanua Levu
+Saria
+Alnön
+Tefala
+Auskerry
+Ilha Gombrani | Gombrani
+Ilha Bubiyan | Bubiyan
+Ilha Fergusson | Fergusson
+Ilha Austvågøy | Austvågøy
+Ilha Sirri | Sirri
+Ilha Phillip | Phillip
+Ilha Beaufort | Beaufort
+Baleshare
+Ilha das Aves | Ilha de Aves | Aves
+Avşa
+Ilha King | King
+Carriacou
+Ilha Bagabag | Bagabag
+Bahia Honda Key
+Baliceaux
+Ilha Baranof | Ilha de Baranof | Baranof
+Barro Colorado
+Ilha de Pinzón | Ilha Pinzón | Ilha de Duncan | Pinzón | Duncan
+Khao Phing Kan
+Ilha de Saadiyat | Saadiyat
+Home Island | Ilha Home | Home
+Randall's Island
+Ward's Island
+Vangunu
+Ilha Desecheo | Desecheo
+Minamidaitojima | Minami Daitō
+Ilha de San Domino | San Domino
+Diomedes Menor
+Ilha Dikson | Dikson
+Alimia
+Ilha Dirk Hartog | Dirk Hartog
+Ilha Disko | Disko Island | Disko
+Ilha Portsea | Portsea
+Munkholmen
+Caio Longo
+Ortígia
+Ilha Hooker | Hooker
+Ruhnu
+Ilha Vega | Vega
+Ilha de Pantelária | Ilha de pantelleria | Pantelária | pantelleria
+Mota
+Ilha Doumer | Doumer
+Drangey
+Ilha Sentinela do Norte | Sentinela do Norte
+Ilha René-Levasseur | René-Levasseur
+Ilha do Duque de Iorque | Duque de Iorque
+Ilha Dundee | Dundee
+Dyaul
+Ilha d'Urville | d'Urville
+Yas Island | Ilha de Yas | Yas
+Ilha de Tuzla | Tuzla
+Ilha de Tinharé
+Ilha do Pessegueiro | Pessegueiro
+Ilhéu da Cal | Ilhéu de Baixo | Cal | Ilhéu do Homiziado | Baixo | Homiziado
+Ilhéu Caroço | Ilhéu Boné de Jóquei | Caroço | Boné de Jóquei
+Ilhéu do Monchique | Ilhéu de Monchique | Monchique
+Port-Cros
+Vahanga
+Pulau Tiga
+Ilha Wuvulu | Wuvulu
+Arquipélago de San Blas | San Blas
+Isla Calero
+Ilha de Guajará-mirim | Guajará-mirim
+Ilha Grande da Terra do Fogo | Isla Grande de Tierra del Fuego | Ilha de Xàtiva | Grande da Terra do Fogo | Xàtiva
+Ilha de Ewe | Ewe
+Ilha Jacquemart | Jacquemart
+Ilha Keppel | Keppel
+Tahaa
+Ilha das Focas | Ilha Seal | Focas | Seal
+Kaashidhoo
+Ilha Sveti Nikola | Sveti Nikola
+Ilha Princess Royal | Princess Royal
+Ilha Robinson Crusoe | Robinson Crusoe
+Yos Sudarso | Ilha de Yos Sudarso
+Panay | Panai
+Ternate
+Ilha de Margarita | Ilha Margarita
+Belitung | Bilitom
+Savai'i
+Espírito Santo | Ilha Espírito Santo | Ilha do Espírito Santo | Espiritu Santo | Austrália do Espírito Santo
+Ilha Coats | Coats
+Megijima
+Uunartoq Qeqertaq
+Vatersay
+Selvagem Pequena
+Čiovo
+Adams
+Ilha Adelaide | Adelaide
+Adelsö
+Ilha Admiralty | Admiralty
+Lewis and Harris | Lewis e Harris
+Adonara
+Nanumaga
+Spetses
+Ilha Bhola | Bhola
+Batanta
+Bawean
+Bazaruto
+Ilha Belkovsky | Belkovsky
+Ilha Bellingshausen | Bellingshausen
+Ilha Bellona | Bellona
+Ilha Bennett | Bennett
+Paramushiru | Paramushir | Horomushiru
+Ilha de Kotlin | Kotlin
+Ligitan
+Eiao
+Esfactéria
+Woodlark
+Ilha Uyedineniya | Uyedineniya
+Raivavae
+Ilha Grande do Gurupá | Grande do Gurupá
+Ilha de Mount Desert | Mount Desert
+Ilha Ángel de la Guarda | Ángel de la Guarda
+Ilha Three Hummock | Three Hummock
+Ilha Monito | Monito
+Kamaran | Ilha do Camarão | Camarão
+Ilha Ushakov | Ushakov
+Ilha Sainte-Marie | Sainte-Marie
+Ilha Mansel | Ilhas Mansel | Mansel
+Waigeo
+Yapen | Jóbi
+Koločep | Calamotta
+Parque de Prince's Island
+Skorpios
+Ilha de São Gabriel | Isla San Gabriel | São Gabriel
+Misool
+Psara
+Elliðaey
+Elobey Pequeno | Elobey Chico
+Elobey Grande
+Marie Galante
+Muckle Flugga
+Ilha Emerald | Emerald
+Ilha Sable | Sable Island | Sable
+Keeling do Norte
+Ilha Alabat | Alabat
+Ilha Saona | Saona
+Mehetia
+Maiao
+Malo
+Ilha Saunders | Saunders
+Tinhosa Grande
+Levitha | Lebinto
+Ornö
+Veøya
+Ilha Salisbury | Salisbury
+Ilha Tanaga | Tanaga
+Tiengemeten
+Skarø
+Ilha Maria | Maria
+Ortac
+Ilha Brasileira | Brasileira
+Stora Karlsö
+Tiga
+Ilha de Barents | Barents
+Ilha Ukerewe | Ukerewe
+Fastnet Rock
+Cousine
+Ilha Unimak | Unimak
+Yell
+Arwad | Arruade
+Siberut
+Kaffeklubben | Ilha kaffeklubben
+Tortola
+Cominotto
+Ilha Ponui | Ponui
+Magerøya
+Betio
+Djurgården
+Baleal | Praia do baleal
+Maupiti
+Ilha do Príncipe Carlos | Ilha Prince Charles | Príncipe Carlos | Prince Charles
+Ilha Shumshu | Shumushu | Shumshu
+Prote | Proti
+Muarraque
+Shikine-jima
+Ilha Greenwich | ilha Sartorius ou ilha Berezina | Ilha de Greenwich | Greenwich | Sartorius ou ilha Berezina
+Mere Lava
+Inagua
+Maewo
+Mangaia
+Ilha Socorro | Socorro
+Ilha Lockyer | Lockyer
+Tupinambarana | Ilha Tupinambarana
+Ilha Great Barrier | Great Barrier
+Sitrah | Sitra
+Fire Island
+Ilha Hoste | Hoste
+Phuket
+Ko Phi Phi Don
+Muhu
+Ilha Lady Elliot | Lady Elliot
+Komoran
+Nusa Kambangan | Kambangan
+Ilha de São Pedro | São Pedro
+Uréparapara
+Mota Lava
+Nahaleg | Nora
+Jøa
+Lehua
+San Lazzaro degli Armeni
+Sula | Sula, Sogn og Fjordane
+Gjerøy
+Ilha Masirah | Ilha de Maceira | Masirah | Maceira
+Laut
+Vaindloo | Ilha de vaindloo
+Ilha Possessão | Possessão
+Ilha Powell | Powell
+Wallops Island | Ilha Wallops | Wallops
+Ilha Puná | Puná
+Sotobanari
+Ilha Selayar | Ilha Selaiar | Selayar | Selaiar
+Middle Island
+Ilha Henderson | Henderson
+Aegna
+Ilha de San Clemente | San Clemente
+Ilha Corocoro | Corocoro
+Okunoshima
+Ilha Vize | Vize
+Gotska Sandön
+Žirje
+Ilha Rainer | Rainer
+Ilha de São João | Zabargad | São João
+Agattu
+Šolta
+Agios Efstratios
+Agrihan
+Aguijan | Aguijã
+Tåsinge
+Ilha Aiktak | Aiktak
+Ailsa Craig
+Ilha Air Force | Air Force
+Ilha de Bartolomé | Ilha Bartolomé | Bartolomé
+Ilha Rudolfo | Ilha de Rudolfo | Ilha de Rudolf | Rudolfo | Rudolf
+South Uist
+Saltholm
+Nihoa
+Ilha de Santa Catalina | Santa Catalina
+Ilha Caprera | Caprera
+Ilha Deer | Deer
+Fejø
+Ilha Montagu | Montagu
+Samosir
+Ilha Eva-Liv | Eva-Liv
+Pirotan
+Farallón de Pájaros
+Failaka
+Kataja
+Sanchoão | Sanchuão
+Fatutaka
+Lihir | Niolam | Ilhas Lihir
+Sipadan
+Ilha Unalga | Unalga
+Muko-jima
+Ilha Revillagigedo | Revillagigedo
+Lade
+Samhah | Samá
+Ilha White | White
+Matureivavao
+Rambutyo | Ilha Rambutyo
+Deserta Grande
+Bangkok/Rattanakosin | Ilha de Rattanakosin | Rattanakosin
+Ilha de Dinagat | Dinagat
+Fotö
+Umm Nassam
+Shōdoshima
+Ilha Sideia | Sideia
+Ilha de Santa Fé | Ilha de Barrington | Santa Fé | Barrington
+Ilha Akimiski | Akimiski
+'Ata | 'Ata (Tonga)
+ʻEua | 'Eua | Eua (Tonga)
+Ilha Akun | Akun
+Ilha Akutan | Akutan
+Ilha Grass | Grass
+Ilha de León | León
+Mannar | Ilha de Manar | Manar
+Ilha do Fogo | Fogo
+Leros
+Ilha Mancera | Mancera
+Muna
+Ilha Dawson | Dawson
+Simi
+Yamdena
+Iriomote
+Ilha Shortland | Shortland
+Ilha Amak | Amak
+Ilha Amaknak | Amaknak
+Ilha Amatignak | Amatignak
+Ambae | Ilha Aoba | Aoba
+Cayo Ambergris | Ambergris Caye
+Redonda
+Ambitle
+Kosrae
+Ambrym
+Lošinj
+Ilha Amélia | Amélia
+São Tomás | Saint Thomas | San Thomas
+San Salvador | São Salvador
+Hopen
+Raiatea
+Urup | Uruppu
+Skeppsholmen
+Saint John
+Graciosa | La Graciosa
+Ilha Kvit | Kvitøya | Kvit
+Hisingen
+Rennell Oriental | East rennell
+Necker
+Ilha de Guadalupe
+Ilha Livingston | Livingston
+Moskenesøya
+Solor | Lowayong | Lohajong
+Out Stack
+Ilha de Manda | Ras Gitau | Manda
+Ilha de Rangitoto | Rangitoto
+Mataiva
+Ilha Unalaska | Unalaska
+Flatey, Skjálfandi
+Ilha Chatham | Chatham
+Shapinsay
+Fogo Island
+Fonuafo'ou
+Ilhéus das Formigas | Formigas
+Ilha Killiniq | Killiniq
+Ilha Taro | Taro
+Blå Jungfrun
+Ilha Franklin | Franklin
+Kaula
+Kållandsö
+Ilha French | Ilha Francesa (Victoria) | French | Francesa
+Ilha Fridolinho | Ilha de Fridolinho | Ilha Fridolin | Fridolinho | Fridolin
+Ilha Northbrook | Northbrook
+Terra de Alexandra
+Ilha Graham Bell | Ilha de Graham Bell | Graham Bell
+Savu | Sawu
+Paama
+Lundey
+Tenararo
+Takapoto
+Anuanuraro
+Ilha Spruce | Spruce
+Ilha Little Barrier | Little Barrier
+Sriharikota
+Lilla Karlsö
+Lo
+Abagaitu
+Ilha Holy | Holy
+Ilha Lou | Lou
+Tongoa
+Santa Cruz del Islote
+Coroa do Avião
+Ilha Umboi | Umboi
+Sibuyan
+Rum Cay | Santa Maria de la Concepción | Mamana
+Haha-jima
+Ilha North Kent | North Kent
+Ilha de Taketomi | Taketomi
+Niutao
+Pecixe
+Ilha Meighen | Meighen
+Heuksando
+Hawadax
+Alamagan
+Ilha Amund Ringnes | Ilha de Amund Ringnes | Amund Ringnes
+Ilhéu Grande | Grande
+Daecheongdo
+Ilhéu Laje Branca | Laje Branca
+Ilhéu de Cima | Cima
+Ilhéu Rabo de Junco | Rabo de Junco
+Baengnyeong | Ilha Baengnyeong
+Sinjido
+Anatahan
+Hauido
+Wallis
+Ilhéu dos Pássaros | Pássaros
+Ilhéu de Sal Rei | Sal Rei
+Ulva
+Anmyeondo
+Nova Providência | New Providence
+Erromango
+Jolo
+Buka | Buca | Ilha Buka
+Nova Sibéria | Novaya Sibir
+Tulagi
+Bishop Rock
+Grande Bahama
+Skerryvore
+Butaritari | Ilha de Makin | Atol de Makin
+Ilha Choiseul | Choiseul
+Dia | Ilha de Dia
+Sentosa | Praia Sentosa Siloso
+Península de Faddeyevsky | Ilha Faddeyevsky | Ilha Faddeievski | Ilha de Faddeyevsky | Faddeyevsky | Faddeievski
+Itsukushima
+Biševo
+Bjørnø
+Ilha Black | Black
+Blup Blup
+Ilha Joinville | Joinville
+Ilha Bollons | Bollons
+Bolmsö
+Ilha Bolshoy Begichev | Bolshoy Begichev
+Ilha Spaatz | Spaatz
+Ilha Kapiti | Kapiti
+Nootamaa | Ilha de Nootamaa
+Gräsö | Gräsö gård
+Grand Turk | Grande Turca | Ilha Grand Turk | Cockburn town
+Rinia
+Ilha Thule | Ilha Morrell | Thule | Morrell
+Ilha de Galang | Galang
+Vonavona
+Gardner Pinnacles
+Ilha Gareloi | Gareloi
+Gaztelugatxe
+Ilha de Sheppey | Sheppey
+Kapuiviit | Ilha Jens Munk | Jens Munk
+Vanua Lava
+Semau
+Ilha Riesco | Riesco
+Nusa Penida
+Kao
+Tjörn
+Toga
+Ilha Partridge | Partridge
+Ilha Baixa | Baixa
+Selaru
+Manam
+Hyppeln
+Christiansø
+Miquelon | Miquelão
+Cretaccio
+Anak Krakatoa
+Hertsön
+Ilha de Capraia | Capraia
+Ilha de Pianosa
+Scotland Island
+Grande Ilha Blasket
+Ilhéu das Rolas | Pico de Príncipe | Ilha das Rolas | Rolas
+Ilha Holbox | Holbox
+Nossa Senhora das Rochas | Gospa od Škrpjela
+Roca Partida
+Rimatara
+Mayaguana
+Ilha Hayling | Hayling
+Grande Bermuda
+Roque del Oeste
+Klein Bonaire | Pequena Bonaire
+Ilha Morris | Morris
+Ilha Herschel | Herschel
+Telendos
+Île d'Yeu
+Nusa Lembongan
+Rupat
+Ilha Orcas | Orcas
+Pakin
+Kanditheemu
+Ilha Spargi | Spargi
+Ilha de Seymour Norte | Ilha Seymour | Seymour Norte | Seymour
+Ilha de São Nicolau | S. Nicolau | São Nicolau
+Ilha dos Estados | Isla de los estados | Estados
+Ilha Brava | Ilha da Brava | Brava
+Ilha de Santa Luzia | Santa Luzia
+Ilha do Maio | Maio
+Ilha de Darwin | Ilha Darwin | Ilha de Culpepper | Darwin | Culpepper
+Jukdo
+Ilha Ganghwa | Ganghwa
+Ilha Iki | Iki
+Ilha Russky | Russky
+Silmido
+Gageodo
+Marado
+Ilha de Linosa | Linosa
+Marettimo | Ilha Marettimo
+Levanzo | Ilha Levanzo
+Ilha de Iony | Iony
+Guguan
+Ilhéu Raso | Raso | Razo
+Ilhéu Branco | Branco
+Ilha Roosevelt | Roosevelt
+Lantau
+Ilha Awaji | Ilha de Awaji | Awaji
+Ilha Grande de Chiloé | Ilha de Chiloé | Grande de Chiloé
+Nias
+Ilha de Salina | Ilha Salina | Salina
+Ilha de Gonçalo Álvares | Ilhas Gough e Inacessível | Ilha gough | Ilha de Gough | Gonçalo Álvares | Gough e Inacessível | gough
+Daebudo
+Ven
+Ilha Russell | Russell
+Tubuai
+Skiathos | Escíato
+Caimão Brac
+Tanahbesar
+Ilha da Sociedade de Geografia | Sociedade de Geografia
+Ilha Otter | Otter
+Anegada
+Huahine
+Ko Tao
+Calímnos
+Aneytium | Anatom
+Visingsö
+Tikopia
+Ilha Borden | Borden
+Ilha Brampton | Brampton
+Tilos
+Ilha Bransfield | Bransfield
+Jethou
+Brattøya
+Riddarholmen
+Brecqhou
+Okinotorishima | Parece Vela | Okinotori | Douglass Reef | Douglas Reef
+Ilha Graham | Graham
+Ilha de Santo Estêvão | Ilha de Santo Stefano | Isola di Santo Stefano | Juá | Santo Estêvão | Santo Stefano
+Ilha Waiheke | Waiheke
+Ganryūjima | Ganryuujima | Funajima
+Maiana
+Marakei
+Roosevelt Island
+Teraina | Terraina
+San Pietro
+Ilha Bridgeman | Ilha Bridgeman (Ilhas Shetland do Sul) | Bridgeman
+Ilha Inacessível | Inacessível
+Helgeandsholmen
+Strongili
+Montaña Clara
+Oak Island | Ilha Oak | Oak
+Ilha Gibbs | Gibbs
+Handnesøya
+Ilha de Giresun | Ilha de Guiressum | Ilha das Amazonas | Giresun Adası) | Aretias | Areos Nesos | Amazon Adası | Ares | Puga | Giresun | Guiressum | Amazonas
+Ilha Carlos-Alexandre | Ilha Karl-Alexander | Carlos-Alexandre | Karl-Alexander
+Mangole
+Ilha Normanby | Normanby
+Ragged Island
+Mingulay
+Shamian
+Ilha Nunivak | Nunivak
+Ilha Malden | Malden
+Kasos
+Atol Ontong Java | Ontong Java
+Rocha Fungus | Rocha do Fungo
+Ilha da Restinga | Restinga
+Agistri
+Zemlya Georga
+Goli Otok | Goli
+Ilha Brock | Brock
+Ilha Pate | Pate
+Futuna
+Bikeman
+Spinalonga | Espinalonga | Kalidon
+Ilha Bristol | Bristol
+Kimolos | Címolo
+Slotsholmen
+Ilha Tong | Tong
+Corregidor | Ilha de Corregidor
+Ilha Sabrina | Sabrina
+Murter | Mortero | Morter
+Papa Westray
+Foula
+Ilha do Faraó | Faraó
+Goeree-Overflakkee
+Isola Madre
+Inishark
+Ilha Jackson | Jackson
+Galinhas | Ilha de Galinhas
+Orango
+Ranongga
+Tintamarre
+Útila
+Ilha Jekyll | Jekyll
+Ilha Upernivik | Upernivik
+Peleng
+Ilha da Neve | Snow island | Neve
+Pequena Andamão
+Ilha Yarok | Yarok
+Ilha Sverdrup | Sverdrup
+Merig
+Ilha de Lintin | Nei Lingding | Lintin
+Ilha de Traill | Ilha Traill | Traill
+Ra
+Hao | Atol de Hao
+Ilha Ziegler | Ziegler
+Ilha Payer | Payer
+Ilha Mornington | Mornington
+Sangeang
+Harstena
+Ilha Hayes | Ilha Heiss | Hayes | Heiss
+Ilha de Sveti Đorđe | Sveti Đorđe
+Ilha Enlli | Ilha Bardsey | Ynys Enlli | Enlli | Bardsey
+Norman's Cay
+Andamão do Norte | Ilha Andamão do Norte
+Ilha Talpatti do Sul | Talpatti do Sul
+Ilha Sherbro | Sherbro
+Ilha Nosy Mangabe | Nosy Mangabe
+Ilha Omelek | Omelek
+Ilha Rossel | Rossel
+Taprobana
+Ilha Adugak | Adugak
+Ilha Sledge | Sledge
+Ilha do Bugio | Bugio
+Gili Motang
+Siargao
+Sir Bani Yas
+Ilha de Uno | Uno
+Lhohi | Lhohi (Dhaalu Atoll)
+Ilha Ymer | Ymer
+Ilha de Tidra | Tidra | Ilha Tidra
+Torsö
+Inhaca | Ilha da Inhaca
+Totoya
+Saarloq
+Ilha Belyi | Belyi
+Ilha Aniwa | Aniwa
+Whalsay
+Ilha Thursday | Thursday
+Bressay
+Ilha Annette | Annette
+Ahnd | Atol de Ant | Ant
+Senja | Ilha de Senja
+Inishtrahull
+Hiva’Oa
+Masbate
+Ilha Flinders | Ilha de Flinders | Flinders
+Oeno
+Ko Chang
+Ilha de Bugala | Bugala
+Darsah
+Udone-shima
+Tamana
+Tinhosa Pequena
+Burhou
+Ilha Manoel | Manoel
+Ilha de Mármara | Mármara
+Saaremaa
+Rendova
+Kamome
+Ilha do Corvo | Corvo | Vila do corvo | Ilha do Marco | Marco
+Meloria
+Helgö
+Providenciales
+Homonhon | Ilha de Homonhon
+Ilha Horn | Horn
+Tobi
+Oodaaq
+Asperö
+Nomans Land
+Kirkøy
+Psyttaleia | Psitaleia
+Södertörn | Södertörn-Nacka
+Ilha Petermann | Petermann
+Ilha Scrub | Scrub
+Ilha Resolution | Resolution
+Ilha Padre | Ilha do Padre | Padre
+Ilha Parama | Parama
+Ilha Baccalieu | Baccalieu
+Rossøya
+Sääminginsalo
+Baratang | Ilha Baratang
+Ilha Calicoan | Calicoan
+Brännö
+Harbour Island
+Tahuata
+Ilha Anticosti | Ilha de Anticosti | Anticosti
+Ilha Branca | Branca
+Kınalıada
+Pašman
+Ilha de Hornos | Hornos
+Alegranza
+Neduntivu
+Ilha de Isabel II | Isabel II
+Ilha Aride | Aride
+La Digue
+Ilha de Ratmanov | Diomedes Maior | Ratmanov
+Ilha Sierra | Sierra
+Ilha Nelson | Nelson
+Jaco
+Ilha Santa Inês | Santa Inês
+Terra de Milne
+Ilhéu Bombom | Bombom
+Soisalo
+Roque del Este
+Ilha Smith | Smith
+Gyali
+Ilhéu Chão | Chão
+Bolshoy Lyakhovsky
+Orust
+Pantar
+Porquerolles
+Salawati
+Ilha do Congresso | Congresso
+Tinakula
+Ilha Elefante | Elefante
+Faaite
+Buariki
+Bubaque
+Ilha Buckingham | Buckingham
+Ilha de Buckle | Buckle
+Castaway Cay
+Foa
+Ilha Buldir | Buldir
+Noemfoor | Numfor
+Ilha Mocha | Mocha
+Sotra
+Farallón de Medinilla
+Ilha de Roanoke | Roanoke
+Ilha Laurie | Laurie
+Pináculo de La Perouse
+Stac an Armin
+Ilha Visokoi | Visokoi
+Nomuka
+Tustna
+Ilha da Toxa | Toxa
+Biketawa
+Chergui
+Ilha Agatti | Agatti
+Kioa
+Ilhas Flutuantes dos Uros | Flutuantes dos Uros
+Funafala
+Molène
+Selvagem Grande
+Praslin
+Gaua
+Ilha Thurston | Thurston
+Matemo
+Ilha Graciosa
+Unije | Niä | Unie
+Isla del Sol
+Forte Drum
+Ilha Manus | Manus
+Eriskay
+Frösön
+Fårö
+Weno
+Burgazada
+Burias
+Buton | Butung
+Ilha Snow Hill | Snow Hill
+Ilha James Ross | James Ross
+Coloane
+Gulangyu
+Camiguin | Camiguim
+Ilha Candelária | Candelária
+Canhabaque | Roxa
+Car Nicobar
+Ilha de Carache | Carache
+Shikotan
+Ilha Carney | Carney
+Nova Geórgia
+Ilha Decepção | Decepção
+Minamitorishima | Ilha Marcus | Marcus
+Tepuka
+Ilha de Floreana | Ilha Floreana | Floreana
+Ilha Wellington | Wellington
+Weh
+Ilha Greely | Greely
+Ilha Wiener Neustadt | Wiener Neustadt
+IJsselmonde
+Ilha de São Mateus | São Mateus
+Ibo | Ilha do Ibo
+Anguilla | Anguila | Ilha de Anguilla
+Värmdö
+Ilha de Jurong | Jurong
+Saaranpaskantamasaari
+Ilha Hofmann | Hofmann
+Zhongshan Dao | Xiangshan | Hian-chan
+Grand Cay
+Ilha Helena | Helena
+Três Ilhas
+Berlenga Grande
+Discovery Island
+Boca Grande Key
+Bolga
+Cabo Rojo
+Calvay
+Ilha do Cabo Sable | Cabo Sable
+Ilha Santa Maria | Cayo Santa Maria
+Ilha Montague | Montague
+Pulau Brani
+Ilha de Rábida | Ilha Rábida | Rábida
+Lolland
+Seil
+Mustique
+Anuanurunga
+Ko Phi Phi Le
+Anuta
+Ilha Anvers | Anvers
+Beru
+Wetar
+Ilha Goodenough | Goodenough
+Mangareva
+Ilha Kadavu | Kadavu
+Hogland
+Ilha Jeannette | Jeannette
+Ilha Cat | Cat island | Cat
+Orona
+Nikumaroro
+Ilha McKean | McKean
+Caye Caulker
+Ilhota Guillermo | Cayo Guillermo | Guillermo
+Cayo Coco | Ilha de Coco
+Cayo Largo do Sul | Cayo Largo del Sur
+Cayo Sabinal
+Pulau Ujong | Ilha de Singapura
+Ilha Savo | Savo
+Nonouti
+Nikunau
+Ilha Rawaki | Rawaki
+Tashirojima
+Changuu | Kibandiko | Ilha da Prisão | Prisão
+Ilha de Española | Ilha de Hood | Española | Hood
+Chappaquiddick | Ilha de Chappaquiddick | Ilha Chappaquiddick
+Ilha de Pinta | Ilha Pinta | Ilha de Abingdon | Pinta | Abingdon
+Ilha Charles | Charles
+Ilha Richards | Richards
+Souda | Suda
+Ilha Ono | Ono
+Ilha Lavan | Lavan
+Ilha Mosquito | Mosquito
+Ilha Feklistova | Feklistova
+Koiluoto
+Ilha Desolação | Desolação
+Trangan
+Isla del Rey
+Ilhota Guajaba | Cayo Guajaba | Guajaba
+Crevichon
+Virginia Key | Praia Virginia Key
+Key Vaca
+Ilha Calauit | Calauit
+Ilha Mfangano | Mfangano
+Fuafatu
+Ilhéu de Fora | Pitão Pequeno | Fora
+Ronay
+Wiay | Wiay, Uist
+Ilha de Fanagoria | Fanagoria
+Piperi
+Ilhéu das Cenouras | Cenouras
+Ilhéu da Fonte da Areia | Ilhéu da Fonte d'Areia | Fonte da Areia | Fonte d'Areia
+Ilhéu de Ferro | Ilhéu do Ferro | Ferro
+Ko Lanta Yai
+Ilha Alvarenga | Alvarenga
+Ilhota Cala Iris | Cala Iris
+Ilha Campbell | Campbell
+Ilha Funk | Funk
+Ilha Itaguaçu | Itaguaçu
+Ilha Pleneau | Pleneau
+Ilha Santa Bárbara | Ilha de Santa Bárbara | Ilha Santa Bárbara (Bahia) | Santa Bárbara
+Ilha de Tambo | Tambo
+Ilha Tierra Bomba | Tierra Bomba
+Ilha Bear | Ilha Tenente Gonzalez | Bear | Tenente Gonzalez
+Malakula | Malékoula | Malekula
+Makronisi | Makrónisos
+Tongatapu
+Ilha Rebun | Rebun
+Ilha Arakamchechen | Arakamchechen
+Aranuka
+Ilha Badger | Badger
+Achill
+Hrísey
+Fatu Hiva
+Niulakita
+Ilha Cornwall | Cornwall
+Olib
+Ilha de São Lourenço | Ilha St. Lawrence | São Lourenço | St. Lawrence
+Malaita
+Malvina Oriental | Isla Soledad | Ilha Soledad | Falkland Oriental | Soledad
+Saint Croix | St. Croix
+Pserimos
+Ilha de Bylot | Ilha Bylot | Bylot
+Imbros | Imroz | Gökçeada
+Ravahere
+Lisianski
+North Uist
+Moala
+Møn
+Ilha Vindicação | Vindicação
+Wieringen
+Ko Pha Ngan
+Ilha Chichagof | Ilha de Chichagof | Chichagof
+Chichi-jima
+Chek Lap Kok
+Run
+Taipa | Vila da Taipa | Ilha de Taipa | Ilha da Taipa
+Ilha Clavering | Clavering
+Ingarö
+Ogurja Ada
+Ilha de Los Negros | Los Negros
+Ilha Winter | Winter
+Ilha de Foradada | Foradada
+Ilha Trindade
+Kirkibost
+Gran Roque
+Ilha Guafo | Guafo
+Ilha Peucang | Peucang
+Vallay
+Ilha Willis | Willis
+Takaeang
+Paradise Island
+Ilha de Anhatomirim | Anhatomirim
+Ilha das Laranjeiras | Ilhas das Laranjeiras | Laranjeiras
+Île de Bagaud
+Ilha Ratones Grande | Ilhas dos ratones | Ilha Ratones Maior | Ratones Grande | ratones | Ratones Maior
+Ilha Ratones Pequeno | Ilha Ratones Menor | Ratones Pequeno | Ratones Menor
+Abatao
+Canouan
+Ilha de Conejera | Conejera
+Alónissos
+Ilha Kotelny | Kotelny
+Gueto de Veneza
+Alicudi
+Ilha Bolchevique | Bolshevik | Bolchevique
+Romang
+Arguim | Castelo de Arguim | Forte de Arguim | Arguin
+Ilha de Nottingham | Nottingham
+Panarea
+Ilha Manitoulin | Manitoulin
+Ilha do Faial | Faial
+Ilha Cornwallis | Cornwallis
+Groote Eylandt
+Ilha Taymyr | Ilha de Taymyr | Taymyr
+Ilha Coroação | Coroação
+Ilha Hans | Hans
+Tenarunga
+Ilha Ernst Thälmann | Cayo Ernesto Thaelmann | Cayo Blanco del Sur | Ernst Thälmann
+Pavuvu
+Ilha Redonda
+Chrissi | Khrysí | Chrysi
+Ilha de San Nicola | San Nicola
+Ilha Clarence | Clarence
+Ilha Clarión | Clarión
+Kiska | Ilha Kiska
+Ilha Maly Taymyr | Maly Taymyr
+Ilha Yttygran | Yttygran
+Pikelot
+Ilha de Santa Carolina | Santa Carolina
+Ilha Bolshoy Shantar | Bolshoy Shantar
+Kitadaitojima
+Isla de Lobos
+Ilha Colón | Colón
+Haʻano
+Lopud
+Ilha Smyley | Smyley
+Isla Grosa
+Ilha Gravina | Gravina
+Dog | Ilha Dog
+Arquipélago de Bocas del Toro | Bocas del Toro
+Île Royale | Ilha Real | Real
+Nacula
+Polillo
+Mangrove Cay
+Moore's Island
+Grosse Île
+Kayoa
+Väddö och Björkö
+Bremangerlandet
+Selaön
+Jeløya
+Ilha de Cortegada | Cortegada
+Nusa Ceningan | Ilha de Ceningan | Ceningan
+Ilha do Xavier | Xavier
+Al-Hallaniyah | Halania
+Ilha Hawkesbury | Hawkesbury
+Ilha de Angediva | Angediva
+Fualopa
+Funaafou
+Funamanu
+Funaota
+Læsø | Laeso
+Mactan | Ilha Mactan
+Roti
+Karakelong
+Ilha Fauro | Fauro
+Kohinggo
+Ilha de Borradaile | Borradaile
+Hobulaid
+Herrenchiemsee | Herreninsel
+Ilha Edge | Edgeøya | Edge
+Tanegashima | Tanegaxima
+Amami Ōshima
+Hateruma
+Arorae
+Minnajima | Minna
+Miyako-jima
+Itu Aba | Taiping
+Ilha das Orquídeas | Orquídeas
+Ilha Verde | Verde
+Tavolara
+Ilha Pagan | Ilha Pagã | Pagan | Pagã
+Ilha Swains | Swains
+Ilha Cook | Ilha Cook, Ilhas Sandwich do Sul | Cook | Cook, Ilhas Sandwich do Sul
+Alor
+Ilha Siple | Siple
+Ilha de Alcatrazes | Alcatrazes
+Ugljan
+Iž
+Ilha Juncal | Isla Juncal | Juncal
+Ilha Mackenzie King | Mackenzie King
+Ilha de Tebing Tinggi | Tebing Tinggi
+Ilha da Culatra | Culatra
+Ilha Rathlin | Rathlin
+Tetepare
+Ilha Ghizo | Ghizo
+Ilha Zhenbao | Zhenbao
+Kongsøya
+Taveuni
+Ilhéu de Vila Franca | Reduto do Ilhéu de Vila Franca | Vila Franca
+Maurícia
+Ilha Bruce | Bruce
+Ilha La Ronciere | La Ronciere
+Ilha de Nansen | Nansen
+Ilha Salm | Salm
+Ilha Dassen | Dassen
+Färingsö
+Ilha de Comandatuba | Comandatuba
+Peristera
+Wowoni
+Makin
+Stadsholmen
+Ilha Kunghit | Kunghit
+Sørøya
+Erinia
+Monhegan
+Ilha Carnac | Carnac
+Savave
+Fualefeke
+Te Afualiku
+Mateika
+Telele
+Fuagea
+Unimai
+Ilha Kilifarevo | Kilifarevo
+Ilha Rongé | Rongé
+Ilha Pasarel | Pasarel
+Palheiro do Mar
+Ilha Robertson | Robertson
+Frøya i Sør-Trøndela | Frøya i Trøndelag
+Austra
+Ilha de Sálvora | Sálvora
+Ilha de São Simão | Ilha de San Simón | São Simão | San Simón
+Ilha de Ons | Ons
+Ilha Howard | Howard
+Ilha Magdalena | Magdalena
+Matuku
+Ovaka
+Fotuha'a
+Luigerahu
+Ilha Argo | Argo
+Ilha Arka | Arka
+Ilha da Armona | Ilha de Armona | Armona
+Ilha Astor | Astor
+Ilha do Paranoá | Paranoá
+Ilha Fridtjof | Fridtjof
+Flodaigh
+Barém
+Gharbi
+Ilha de Villegagnon | Serigipe | Ilha de Villegaignon | Ilha de serigipe | Villegagnon | Villegaignon
+Tavarua
+Pulau Perak
+Obira | Utara | Obi
+Fenua Tapu
+Ilhota Córdoba | Córdoba
+Anmado
+Arco de Darwin
+Arquipélago das Guaitecas | Arquipélago Guaitecas | Guaitecas
+Köpstadsö
+Ilha Nipisat | Nipisat
+Ilha Ferradura | Ferradura
+Ilha do Duque de York | Duque de York
+Ínsua | Ilhéu da Ínsua | Ilha da Ínsua
+Piliaieve
+Matanukulaelae
+Faiava Lasi
+Meang
+Motupuakaka
+Ilha de Onza | Onza
+Lafanga
+Motulalo
+Fale
+Sark
+Ljusterö
+Ilha de Gaiola | Gaiola
+Ilha Mabel | Mabel
+Simeulue
+Isla de Flores
+Lidingö
+Ilha Auriat | Auriat
+Avalau
+Ilha Balcha | Balcha
+Ilha Barlow | Barlow
+Barren Island
+Ilha da Barreta | Ilha Deserta | Barreta | Deserta
+Rochedo Belchin
+Bitra
+Geirfuglasker
+Ilha Gerlache | Gerlache
+Rochedo Grace
+Rochedos Graovo
+Great Saint James
+Ilha Kent | Kent
+Reino de Elleore
+Kongo Loto Lafanga
+Ilha Gribbell | Gribbell
+Amatuku
+Ilha Hendrik | Hendrik
+Num
+Ilha de Saltes | Saltés
+Ilha de Gorodomlya | Gorodomlya
+Ilhas Benkove | Benkove
+Ilhéus das Cabras | Ilhéu das Cabras - Ilha Terceira | Cabras - Ilha Terceira
+Ilha Craney | Ilha Craney (Virgínia) | Craney
+Ilhéu Maria Vaz | Ilhéu da Gadelha (Santa Cruz das Flores) | Ilhéu da Gadelha | Maria Vaz | Gadelha
+Banco Princesa Alice | Banco Princesse Alice
+Ilhéu da Praia | Praia
+Ilhéus dos Rosais | Rosais
+Ilhéu do Topo | Reserva Natural Parcial do Ilhéu do Topo | Topo
+Ilha de Bjarnason | Bjarnason
+Ilha Bob | Bob
+Boundary Islet
+Bowen Island
+Rochedos Bowler
+Ilha Broughton | Broughton
+Praia da Fábrica
+Rochedo Caraquet
+Hengqin
+Mazagão | Mazgaon | Mazagon | Mazagaon | Mazagão (Bombaim)
+Ilha dos Clubes | Clubes
+Conception
+Crab Island
+Catedral de Mármore | Cavernas de Mármore | Capilla de Mármol | Capela de Mármore
+Cayo Rocoso
+Ilha Koshava | Koshava
+Rochedos Koynare
+Oosäär
+Kwakéa
+Lampacau | Long-pa-kao | Lanpetan | Lanpacan | Langpetsao | Lan-pai-kao | Lampetao | Lampecou | Lampchào | Lampassau | Lampaço | Lampachan | Lampação | Lampacam | Lamapzan | Lamapacào | Lam Puk
+Lefogaki
+Ilha Leguan | Leguan
+Rochedo Liberty
+Rochedos Lientur
+Ilha Lisboa | Lisboa
+Luamotu
+Luasamotu
+Rochedo Lumus
+Ilha Majnoon | Majnoon
+Ilha de Maracá | Maracá
+Ilha Pio | Pio
+Pongalei
+Pontikonisi
+Prickly Pear
+Pukasavilivili
+Fradinhos
+Chilov
+Åmnøya
+Almourol
+Ammerön
+Cébaco
+Con Co
+Daniel Island
+Knarrholmen
+Vasafua
+Pamana | Ilha Pamana
+Ilha Drysdale | Drysdale
+Falaoigo
+Fale Fatu
+Ilha Wager | Wager
+Ilhota Sucre | Sucre
+Ilhéu Catarino | Catarino
+Ilha Igloolik | Igloolik
+Ilha da Conceição | Conceição
+Innarahu
+Melanésia Insular
+Jata
+Ilha Kathleen | Kathleen
+Kayts | Tanadiva | Cais
+Marovo
+Ilha de Tavira | Tavira
+Ilha das Pérolas de Mikimoto | Pérolas de Mikimoto
+Ilha Modo | Modo
+Motufetau
+Motugie
+Motuloa
+Motutanifa
+Munaderahu
+Ilha Prion | Prion
+Rochedos Ibar
+Rochedo Telish
+Ilha Tatul | Tatul
+Rochedo Henfield
+Ilha Rogozen | Rogozen
+Ilha Quiriquina | Quiriquina
+Ilha do Retiro | Retiro
+Sakalua
+Rochedos Sally
+Ilha Saso | Saso
+Schnäggeninseli
+Siyyan Himar
+Rochedos Skrino
+Rochedo Sooty
+Ascrib do Sul
+Rochedos Éden
+Ilha Emeline | Emeline
+Fatato
+Ilha Fitzroy | Fitzroy
+Kadan Kyun
+Svartsö
+Niuatui
+Nukusavalevale
+Okinoshima
+Papa Elise
+Pedras Tinhosas
+Teafuanonu
+Teafuone
+Teatua a Taepoa
+Temotuloto
+Tengasu
+Tepuka Vili Vili
+Thayawthadangyi
+Tofia
+Uuemaarahu
+Uulutilaid
+Ilha Valchedram | Valchedram
+Rochedo Vietor
+Ilha Wakenaam | Wakenaam
+Ilha Withem | Withem
+Örskär
+Arquipélago do Marajó
+Ilha de Antelope | Antelope
+Cayo Francisquí
+Ilha Feia | Feia
+Ilha Stuart | Stuart
+Ilha de Araçatuba | Ilha da Fortaleza | Araçatuba | Fortaleza
+Ilha de Castilho | Castilho
+Ilha da Laje | Ilha da Lage | Laje | Lage
+Ilha das Claras | Claras
+Ilha do Rijo | Rijo
+Ilha da Paz | Paz
+Ilha das Palmas | Palmas
+Ilha dos Portugueses | Ilha dos Elefantes | Portugueses | Elefantes
+Mali Kyun
+Ilha Likoma | Ilha Licoma | Likoma | Licoma
+Jazirat Ziadi
+Kabaena
+Tidore
+Seonyudo
+Ilha Ndrova | Ndrova
+Dugumenu
+Ilha do Chico Pedro | Chico Pedro
+Ilha do Eixo | Eixo
+Ilha do Ferreira | Ferreira
+Ilha do Frade | Frade
+Ilha do Guajirú | Guajirú
+Ilha do Irineu | Irineu
+Ilha do Maracujá | Maracujá
+Ilha do Macuco | Macuco
+Ilha do Medo | Ilha do medo (Maranhão) | Medo | Ilha do Medo (Itaparica) | Ilha do Medo (Bahia)
+Ilha do Pavão | Pavão
+Ilha do Pernambuco | Pernambuco
+Ilha do Presídio | Ilha das Pedras Brancas | Ilha da Pólvora | Presídio | Pólvora | Pedras Brancas
+Ilha do Quiriri | Quiriri
+Ilha do Rabelo | Rabelo
+Ilha do Socó | Socó
+Ilha do Sol | Sol
+Ilha do Taquari | Taquari
+Ilha do Veiga | Veiga
+Ilha dos Araújos de Dentro | Araújos de Dentro
+Ilha dos Araújos do Meio | Araújos do Meio
+Ilha dos Araújos de Fora | Araújos de Fora
+Ilha dos Bandeirantes | Bandeirantes
+Ilha dos Franceses | Franceses
+Ilha dos Herdeiros | Herdeiros
+Ilha dos Lençóis | Lençóis
+Ilha d’Água | d’Água
+Ilhas das Cabras | Ilha das Cabras
+Ilhéu Alagado | Ilhéu Alagado (Santa Cruz das Flores) | Alagado
+Ilhéu Alto | Alto
+Forcada
+Gracia
+Guriri | Ilha de Guriri | Praia de Guriri
+Ilha Bora Bora
+Ilha Grande de Santa Isabel | Grande de Santa Isabel
+Ilha Grande dos Marinheiros | Grande dos Marinheiros
+Ilha Guaraqueçaba | Guaraqueçaba
+Ilha Mandijituba | Ilha Mandigituba | Mandijituba | Mandigituba
+Ilha Maria Francisca | Maria Francisca
+Ilha Montão de Trigo | Montão de Trigo
+Ilha Queimadas | Ilha Queimada | Queimadas | Queimada
+Ilha São João | Ilha São João (Volta Redonda)
+Ilha Tiriri | Tiriri
+Ilha Taperebateua | Taperebateua
+Ilha Urubuqueçaba | Ilha de Urubuqueçaba | Urubuqueçaba
+Ilha Viscaíno | Viscaíno
+Ilha da Assunção | Assunção
+Ilha da Barra
+Ilha da Boa Viagem | Ilha de Boa Viagem | Boa Viagem
+Ilha da Bexiga | Bexiga
+Ilha da Cotinga | Cotinga
+Ilha da Feitoria | Feitoria
+Ilha da Figueira | Figueira
+Ilha da Jipoia | Ilha da Gipóia | Jipoia | Gipóia
+Ilha da Pintada | Pintada
+Ilha da Murta | Murta
+Ilha da Rita | Rita
+Ilha da Torotama | Torotama
+Ilha da Vaca | Vaca
+Ilha das Andorinhas | Andorinhas
+Ilha das Enxadas | Enxadas
+Ilha das Garças | Ilha das garças (espírito santo) | Garças
+Ilha das Pombas | Pombas
+Ilha das Onças | Onças
+Ilha das Tartarugas | Ilha do Farol | Tartarugas
+Ilha das Vinhas | Vinhas
+Ilha de Cabanas | Cabanas
+Ilha de Antônio Vaz | Antônio Vaz
+Ilha de Cajaíba | Cajaíba
+Ilha de Cotijuba | Cotijuba
+Ilha de Curupu | Curupu
+Ilha de Itacuruçá | Itacuruçá
+Ilha de Itatiaia | Itatiaia
+Ilha de Madre de Deus | Ilha dos Cururupebas | Ilha de Madre de Deus do Boqueirão | Ilha de Madre de Deus (Bahia) | Cururupebas | Madre de Deus | Madre de Deus do Boqueirão
+Ilha de Pombeba | Ilha da Pombeba | Pombeba
+Ilha de Santa Marta | Santa Marta
+Ilha de Santa Rita | Santa Rita
+Ilha de Maritaca | Ilha de Maritataca | Maritaca | Maritataca
+Ilha de Santo Aleixo | Santo Aleixo
+Ilha de Um Coqueiro Só | Ilha do Coqueiro Só | Um Coqueiro Só | Coqueiro Só
+Ilha do Almirante | Almirante
+Ilha de Xefina | Ilha Xefina | Xefina
+Ilha do Baiacu | Baiacu
+Ilha do Batuta | Batuta
+Ilha do Bom Jesus da Coluna | Bom Jesus da Coluna
+Ilha do Boqueirão | Boqueirão
+Ilha do Bom Jesus dos Passos | Ilha de Bom Jesus dos Passos | Ilha de Bom Jesus | Bom Jesus dos Passos | Bom Jesus
+Ilha do Brocoió | Ilha de Brocoió | Brocoió
+Ilha do Cajual | Cajual
+Ilha do Caranguejo | Ilha dos Caranguejos | Caranguejo | Caranguejos
+Ilha do Coral | Coral
+Rochedos Opaka
+Oua
+Ilha Ouellette | Ouellette
+Ilha Sutwik | Sutwik
+Talalolae
+Tana Cherqos
+Te Afuafou
+Teafatule
+Teafuaniua
+Tokinivae
+Ilha do Tesouro | Tesouro
+Ilha Trefoil | Trefoil
+Ilha Trundy | Trundy
+Tutanga
+Tuần Châu
+Ilha Yule | Yule
+Ilha dos Negros
+Ilhéu Comprido | Comprido
+Ilhéu Gabado | Gabado
+Ilhéu Pequeno | Pequeno
+Ilhéu Quixibá | Quixibá
+Ilhéu da Baleia | Baleia
+Ilhéu da Forja | Forja
+Ilhéu da Cevada | Cevada
+Ilhéu das Gaivotas | Ilhéu da Gaivota | Gaivotas | Gaivota
+Ilhéu de São Jorge
+Ilhéu do Baluarte | Baluarte
+Ilhéu do Gorgulho | Ilhéu do Lido | Gorgulho
+Ilhéu do Farol | Farol
+Ilhéu dos Mosteiros | Mosteiros
+Morro do Mar Casado | Mar Casado
+Motumua
+Mouchão de Alhandra
+Mulitefala
+Niualuka
+Pakantou
+Parque Ecológico Promotor Franscisco Lins do Rego | Parque Ecológico da Pampulha | Memorial da Imigração Japonesa
+Rochedo Hetty
+Öckerö
+Kakarajima
+Aoshima
+Ilha Sido | Sido
+Ilha Timóteo Domingues | Timóteo Domingues
+Poilão
+Noogimaa
+Rocher Siyyan
+Ilha das Bonecas | Isla de las Muñecas | Bonecas
+Ekerön
+Nåttarö
+Uea
+Tosterön
+Elbow Cay
+Ilha Uummannaq | Ilha de Uummannaq | Uummannaq
+Ilha Matthew | Matthew
+Ilha Vásquez | Ilha Vázquez | Vásquez | Vázquez
+Ilha de Bolama | Bolama
+Ilha Tava | Tava
+Namotu
+Pabbay
+Bacan | Bachão
+Kura Rock
+Lubang
+Ilha do Porto Santo | Ilha de Porto Santo
+Ilha Kovach | Kovach
+Ilha Svetulka | Svetulka
+Ilha Vierge | Vierge
+Imjado
+Área de Proteção Ambiental da Ilha do Combu
+Ilha Auaí | Auaí
+Ilha Acarabu | Acarabu
+A Arousa
+Ilha Os Irmãos | Os Irmãos
+Ilha Linguanea | Linguanea
+Temotu
+Ilha das Couves | Couves
+Hammarön
+Lifou
+Hwado
+Ilha Astrolabe | Astrolabe
+Ilha Kura | Kura (ilha) | Kura
+Ilha da Galheta | Galheta
+Ilha da Sepultura | Sepultura
+Ilha de Santana | Santana
+Ilhas do Capim | Capim
+Ilha de Adiljevaz | Adiljevaz
+Ilha Chafariz | Chafariz
+Jones Island
+Ilha do Prumirim | Prumirim
+Ilha Rasa | Rasa
+Ilha de Paratinga | Paratinga
+Ilha da Moela | Moela
+Ilha de Maria Guarda | Ilha Maria Guarda | Maria Guarda
+Ilha Guriri
+Ilha do Itanduba | Ilha de Itanduba | Itanduba
+Ilha das Vacas | Vacas
+Ilha do Viana | Viana
+Ilha Viraponga | Viraponga
+Ilha do Livramento | Livramento
+Ilha Guaíba | Guaíba
+Ilha Itacaruaré Grande | Itacaruaré Grande
+Ilha da Convivência | Convivência
+Ilha das Fontes | Fontes
+Ilha Francisco Manoel | Ilha Chico Manoel | Francisco Manoel | Chico Manoel
+Ilha do Barba Negra | Barba Negra
+Ilha Marechal Deodoro | Marechal Deodoro
+Ilha do Veado | Veado
+Ilha São Lourenço
+Ilha São Bento do Surrão | São Bento do Surrão
+Ilha Pelee | Pelee
+Ilha da Batalha | Batalha
+Cooks
+Ilhéu de Santa Maria
+Väike Siimurahu
+Arquipélago de Ons | Ilhas Ons
+Lapuri
+Caquorobert
+Rubane
+Ilha de Bissau | Bissau
+Ilha Cub | Cub
+Ilha Araraí | Araraí
+Aranaí
+Siquijor
+Notoua
+Taliabu
+Mouchão do Malagueiro Grande
+Ilha do Mangabal | Mangabal
+Ilha dos Araújos | Araújos
+Ilha da Chapada | Chapada
+Área de Proteção Ambiental de Algodoal-Maiandeua | APA Algodoal-Maiandeua
+Ilha Maria Catoré | Maria Catoré
+Ilha Grande do Rio Verde | Grande do Rio Verde
+Ilha Brasil | Condomínio Náutico | Brasil
+Suluan
+Ilha Assacorkin | Assacorkin
+Ilha dos Tigres | Ilha da Baía dos Tigres | Tigres | Baía dos Tigres
+Just Room Enough Island
+Sanana
+Nämdö
+Ilha Mills | Mills
+Ilha dos Jangadeiros | Jangadeiros
+Ilha Korsis | Korsis
+Vinga
+Björkö
+Utö
+East Island
+Ilha Condor | Condor
+Ilha da Casa da Pólvora | Ilha do Paiva | Casa da Pólvora | Paiva
+A Ilha
+Ilha do Paty | Paty
+Grötö
+Ilha de Jurubaíba | Jurubaíba

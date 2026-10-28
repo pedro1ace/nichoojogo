@@ -18,11 +18,19 @@ PESOS = RAIZ / "dados" / "pesos"
 JOGO = RAIZ / "jogo"
 
 
+# O jogo só lê o nome, os apelidos e os pontos de cada resposta. Os sinais da conta
+# (icf, visitas, fama...) ficam em dados/pesos/ e deixariam o dados.js com o dobro do tamanho.
+CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos")
+
+
+def enxugar(cat: dict) -> dict:
+    return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA} for r in cat["respostas"]]}
+
+
 def gerar_dados_js() -> str:
     indice = json.loads((PESOS / "indice.json").read_text(encoding="utf-8"))
-    categorias = {
-        c["id"]: json.loads((PESOS / f"{c['id']}.json").read_text(encoding="utf-8")) for c in indice
-    }
+    categorias = {c["id"]: enxugar(json.loads((PESOS / f"{c['id']}.json").read_text(encoding="utf-8")))
+                  for c in indice}
     dados = json.dumps({"indice": indice, "categorias": categorias}, ensure_ascii=False, separators=(",", ":"))
     return "// Gerado por scripts/montar_jogo.py. Não edite à mão.\nwindow.NICHO_DADOS = " + dados + ";\n"
 

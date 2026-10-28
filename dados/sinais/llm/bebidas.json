@@ -1,0 +1,788 @@
+{
+ "modelo": "claude (estimado na conversa do agente, sem API)",
+ "amostras": 1,
+ "pergunta": "Cite uma bebida (com ou sem álcool)",
+ "itens": [
+  {
+   "resposta": "Água",
+   "respostas_em_1000": 150.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Coca-Cola",
+   "respostas_em_1000": 80.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Refrigerante",
+   "respostas_em_1000": 60.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cerveja",
+   "respostas_em_1000": 90.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Suco",
+   "respostas_em_1000": 60.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Café",
+   "respostas_em_1000": 70.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Leite",
+   "respostas_em_1000": 40.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vinho",
+   "respostas_em_1000": 45.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cachaça",
+   "respostas_em_1000": 30.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Caipirinha",
+   "respostas_em_1000": 25.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chá",
+   "respostas_em_1000": 30.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Guaraná",
+   "respostas_em_1000": 25.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vodka",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Whisky",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Suco de laranja",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Água de coco",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chocolate quente",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Achocolatado",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Café com leite",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Energético",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Champanhe",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tequila",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Rum",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gin",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Saquê",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Licor",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Conhaque",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chimarrão",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tereré",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mate",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Garapa",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Limonada",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vitamina",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Milk-shake",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Kombucha",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cappuccino",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Expresso",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Martini",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mojito",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Sangria",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Margarita",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Absinto",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hidromel",
+   "respostas_em_1000": 0.8,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Quentão",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vinho quente",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cidra",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Sidra",
+   "respostas_em_1000": 0.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chope",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Batida",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Caju amigo",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Iogurte",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Isotônico",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fanta",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Sprite",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pepsi",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Soda limonada",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Água tônica",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Água com gás",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Kefir",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 55.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cuba libre",
+   "respostas_em_1000": 0.8,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Piña colada",
+   "respostas_em_1000": 0.8,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Negroni",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Aperol",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 55.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bloody Mary",
+   "respostas_em_1000": 0.4,
+   "dispersao": 0,
+   "conhecem_pct": 55.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Chá mate",
+   "respostas_em_1000": 1.5,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ice tea",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tubaína",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mate couro",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Jurupinga",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 35.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Leite de soja",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Leite condensado",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Grog",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Arak",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pisco",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mezcal",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 35.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Soju",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 35.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cauim",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Aluá",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  }
+ ],
+ "faltando": []
+}

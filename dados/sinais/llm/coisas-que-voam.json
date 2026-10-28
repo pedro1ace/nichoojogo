@@ -1,0 +1,858 @@
+{
+ "modelo": "claude (estimado na conversa do agente, sem API)",
+ "amostras": 1,
+ "pergunta": "Cite algo que voa (bicho, máquina ou coisa)",
+ "itens": [
+  {
+   "resposta": "Avião",
+   "respostas_em_1000": 220.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pássaro",
+   "respostas_em_1000": 130.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Helicóptero",
+   "respostas_em_1000": 80.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Borboleta",
+   "respostas_em_1000": 40.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pipa",
+   "respostas_em_1000": 30.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Balão",
+   "respostas_em_1000": 30.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Foguete",
+   "respostas_em_1000": 25.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Drone",
+   "respostas_em_1000": 25.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mosca",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Abelha",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Morcego",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mosquito",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Águia",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Super-Homem",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Avião de papel",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Disco voador",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Paraquedas",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Asa-delta",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Parapente",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dirigível",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Balão de ar quente",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Jato",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Avião de caça",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Planador",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bruxa",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bruxa na vassoura",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dragão",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fada",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Anjo",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Peter Pan",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Papai Noel",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pombo",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Libélula",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Joaninha",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Besouro",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vagalume",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Satélite",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Nave espacial",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ônibus espacial",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bumerangue",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Frisbee",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bola",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Peteca",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Folha",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Poeira",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pólen",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Dente-de-leão",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bolha de sabão",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fumaça",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tempo",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Peixe-voador",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Esquilo-voador",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Lêmure-voador",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Beija-flor",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Coruja",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gaivota",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Urubu",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Arara",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pterodáctilo",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pteranodonte",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 45.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Zangão",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vespa",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cigarra",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gafanhoto",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Formiga alada",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mariposa",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hidroavião",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ultraleve",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Teco-teco",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 65.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Jetpack",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Carro voador",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tapete voador",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pégaso",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hipogrifo",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fênix",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Grifo",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 55.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cupido",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Míssil",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Flecha",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bala",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Concorde",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Boeing",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Airbus",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Goku",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Homem de Ferro",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  }
+ ],
+ "faltando": []
+}
