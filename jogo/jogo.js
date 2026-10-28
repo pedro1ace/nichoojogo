@@ -11,6 +11,9 @@ const LANCAMENTO = "2026-10-23"; // dia #1
 // Modo teste: abrir com ?aleatorio no fim do endereço (jogar.html?aleatorio) sorteia
 // outras categorias a cada vez e não guarda o progresso do dia.
 const ALEATORIO = new URLSearchParams(location.search).has("aleatorio");
+// Link do botão "Apoie o criador" no fim do jogo. Enquanto estiver vazio, o botão
+// aparece como "EM BREVE" e não clica. Para ativar, cole o link entre as aspas.
+const LINK_APOIO = "";
 
 // ---------- texto e autocorreção ----------
 
@@ -655,6 +658,12 @@ const SUBIDA = 4200;
 // ---------- fim ----------
 
 function mostrarFim(comSom) {
+  if (LINK_APOIO) {
+    const apoio = $("apoio-link");
+    apoio.href = LINK_APOIO;
+    apoio.textContent = "APOIAR";
+    apoio.removeAttribute("aria-disabled");
+  }
   if (comSom) Som.fim();
   else cena.irPara(0);
   cena.limpar();
