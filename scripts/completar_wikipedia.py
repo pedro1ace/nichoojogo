@@ -70,6 +70,10 @@ SPARQL_LIVRE = """SELECT ?item (SAMPLE(?art) AS ?artigo) (SAMPLE(?rp) AS ?pt) (S
 } GROUP BY ?item LIMIT 8000"""
 
 
+# só itens com artigo em pelo menos N Wikipédias (para não vir uma montanha de desconhecidos)
+MUITO_CONHECIDO = " ?item wikibase:sitelinks ?sl FILTER(?sl >= %d) ."
+
+
 def classe(*nomes: str, como: str = "wdt:P31/wdt:P279*|wdt:P279+") -> str:
     """Filtro SPARQL "é um(a) <classe>", achando a classe pelo nome em inglês no Wikidata."""
     valores = " ".join(f'"{n}"@en' for n in nomes)
@@ -146,8 +150,9 @@ FONTES = {
     "profissoes": [("sparql", "?item wdt:P31 wd:Q28640 ."), ("sparql", "?item wdt:P31 wd:Q12737077 .")],
 }
 
-# 3ª rodada: categorias de hoje e dos próximos dias que ainda têm poucas respostas.
-# Somam-se às fontes de cima; "python completar_wikipedia.py" sem nada roda só estas.
+# 3ª rodada: categorias de hoje e dos próximos dias que ainda têm poucas respostas, mais
+# categorias novas. "python completar_wikipedia.py" sem nada roda só estas e só com as
+# fontes daqui (nada do que já rodou antes: a lista atual não é medida de novo).
 RODADA = {
     "instrumentos-musicais": [("sparql", classe("musical instrument")),
                               ("livre", classe("musical instrument"))],
@@ -180,6 +185,33 @@ RODADA = {
     "super-herois-e-viloes": [("livre", classe("superhero", "supervillain", "Marvel Comics character",
                                                "DC Comics character", "comics character", como="wdt:P31"))],
     "material-escolar": [("sparql", classe("writing implement", "stationery", "office supplies", "drawing tool"))],
+    # categorias novas (ainda sem lista: tudo que vier é candidata)
+    "mamiferos": [("sparql", "?item wdt:P171+ wd:Q7377 ; wdt:P105 wd:Q7432 .")],
+    "doencas": [("sparql", classe("disease", "infectious disease", "rare disease", como="wdt:P31|wdt:P279"))],
+    "remedios": [("sparql", classe("medication", "pharmaceutical drug", como="wdt:P31|wdt:P279") + MUITO_CONHECIDO % 8)],
+    "cidades-do-mundo": [("sparql", classe("city", "big city", "million city", como="wdt:P31") + MUITO_CONHECIDO % 25)],
+    "montanhas-e-vulcoes": [("sparql", classe("mountain", "volcano", "stratovolcano", "shield volcano", como="wdt:P31"))],
+    "lagos-e-mares": [("sparql", classe("lake", "sea", "marginal sea", "lagoon", "reservoir", como="wdt:P31"))],
+    "filmes": [("sparql", "?item wdt:P31 wd:Q11424 ." + MUITO_CONHECIDO % 30)],
+    "series-de-tv": [("sparql", "?item wdt:P31 wd:Q5398426 ." + MUITO_CONHECIDO % 15)],
+    "atores-e-atrizes": [("sparql", "?item wdt:P106 wd:Q33999 ." + MUITO_CONHECIDO % 35)],
+    "bandas-e-cantores-gringos": [("sparql", "?item wdt:P31 wd:Q215380 ." + MUITO_CONHECIDO % 25),
+                                   ("sparql", "?item wdt:P106 wd:Q177220 ." + MUITO_CONHECIDO % 45)],
+    "jogadores-de-futebol": [("sparql", "?item wdt:P106 wd:Q937857 ." + MUITO_CONHECIDO % 40)],
+    "pintores": [("sparql", "?item wdt:P106 wd:Q1028181 ." + MUITO_CONHECIDO % 20)],
+    "escritores": [("sparql", "?item wdt:P106 wd:Q36180 ." + MUITO_CONHECIDO % 40)],
+    "nomes-de-menina": [("sparql", "?item wdt:P31 wd:Q11879590 ."), ("categoria", "Prenomes femininos", 1)],
+    "nomes-de-menino": [("sparql", "?item wdt:P31 wd:Q12308941 ."), ("categoria", "Prenomes masculinos", 1)],
+    "sobrenomes": [("sparql", "?item wdt:P31 wd:Q101352 ."), ("categoria", "Sobrenomes", 1)],
+    "modelos-de-carro": [("sparql", classe("automobile model", "car model", como="wdt:P31"))],
+    "pratos-do-mundo": [("sparql", classe("dish", "food", como="wdt:P31")), ("categoria", "Pratos", 2)],
+    "arvores": [("categoria", "Árvores", 2), ("categoria", "Árvores do Brasil", 2)],
+    "flores": [("categoria", "Flores", 2)],
+    "ferramentas": [("sparql", classe("tool", "hand tool", "power tool", como="wdt:P31|wdt:P279")),
+                    ("categoria", "Ferramentas", 2)],
+    "roupas-e-acessorios": [("sparql", classe("clothing", "type of clothing", "headgear", "footwear",
+                                              "fashion accessory", como="wdt:P31|wdt:P279")),
+                            ("categoria", "Vestuário", 2)],
 }
 for _cat, _fontes in RODADA.items():
     FONTES[_cat] = FONTES.get(_cat, []) + _fontes
@@ -346,10 +378,18 @@ def chave(texto: str) -> str:
     return "".join(c for c in t if c.isalnum())
 
 
-def processar(cat: str, fontes: list) -> dict:
+def processar(cat: str, fontes: list, conferir: bool = True) -> dict:
     itens = baixar_lista(cat)
     print(f"   {len(itens)} respostas na lista atual")
     conhecidas = {chave(n) for it in itens for n in it}
+    medidas = {}
+    if conferir:
+        medidas = conferir_lista(cat, itens)
+    candidatas = buscar(fontes, conhecidas)
+    return {"respostas": medidas, "candidatas": candidatas, "completo": True}
+
+
+def conferir_lista(cat: str, itens: list[list[str]]) -> dict:
     # 1. confere a lista atual (pelo nome principal; se não achar, pelo primeiro apelido)
     nomes = [it[0] for it in itens]
     medidas = visitas(nomes)
@@ -369,7 +409,10 @@ def processar(cat: str, fontes: list) -> dict:
             m = extra[f"{n} {dica}"]
             if m["titulo"] and not m["desambiguacao"]:
                 medidas[n] = {**m, "pela_dica": dica}
-    # 2. procura as que faltam
+    return medidas
+
+
+def buscar(fontes: list, conhecidas: set[str]) -> list[dict]:
     candidatas: dict[str, dict] = {}
     for fonte in fontes:
         if fonte[0] in ("sparql", "livre"):
@@ -392,7 +435,7 @@ def processar(cat: str, fontes: list) -> dict:
             if c["titulo"] in vv:  # item sem artigo: a fama vem do número de Wikipédias (sitelinks)
                 c["visitas_60d"] = vv[c["titulo"]]["visitas_60d"]
                 c["desambiguacao"] = vv[c["titulo"]]["desambiguacao"]
-    return {"respostas": medidas, "candidatas": novas, "completo": True}
+    return novas
 
 
 def main() -> None:
@@ -405,7 +448,10 @@ def main() -> None:
             print(f"[{i}/{len(todas)}] {cat}: já feita, pulando")
             continue
         print(f"[{i}/{len(todas)}] {cat}")
-        resultado["categorias"][cat] = processar(cat, FONTES[cat])
+        if so:
+            resultado["categorias"][cat] = processar(cat, FONTES[cat])
+        else:  # rodada: só as fontes novas, sem medir de novo o que já foi medido
+            resultado["categorias"][cat] = processar(cat, RODADA[cat], conferir=False)
         resultado["gerado_em"] = time.strftime("%Y-%m-%d %H:%M")
         SAIDA.write_text(json.dumps(resultado, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"   ok, salvo ({(time.time() - inicio) / 60:.0f} min até agora)")
