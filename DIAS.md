@@ -127,3 +127,6 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 - Motivos para gritar
 - Motivos para rir
+- Porta da geladeira
+- Formas de matar um inseto
+- Animais da cidade
