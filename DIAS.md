@@ -118,3 +118,4 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 - Defesas dos animais
 - Filmes com o Tom Hanks
 - Plantas de casa
+- Coisas com camadas
