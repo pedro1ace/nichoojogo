@@ -212,6 +212,24 @@ RODADA = {
     "roupas-e-acessorios": [("sparql", classe("clothing", "type of clothing", "headgear", "footwear",
                                               "fashion accessory", como="wdt:P31|wdt:P279")),
                             ("categoria", "Vestuário", 2)],
+    # ideias do Pedrinho (29/10)
+    "filmes-de-animacao": [("sparql", classe("animated feature film", "animated film", "computer-animated film",
+                                             "anime film", "stop-motion animated film", como="wdt:P31")),
+                           ("sparql", "?item wdt:P31/wdt:P279* wd:Q11424 ; wdt:P136 ?g . ?g rdfs:label \"animated film\"@en .")],
+    "bandas-dos-anos-80": [("sparql", "?item wdt:P31/wdt:P279* wd:Q215380 ; wdt:P571 ?ini . "
+                                      "FILTER(YEAR(?ini) >= 1975 && YEAR(?ini) <= 1989)" + MUITO_CONHECIDO % 5)],
+    "filmes-com-mais-de-3h": [("livre", "?item wdt:P31/wdt:P279* wd:Q11424 ; wdt:P2047 ?min . FILTER(?min > 180)"
+                                        + MUITO_CONHECIDO % 3)],
+    "filmes-ganhadores-do-oscar": [("sparql", "?item wdt:P31/wdt:P279* wd:Q11424 ; wdt:P166 ?premio . "
+                                              "?premio wdt:P31|wdt:P279 wd:Q19020 .")],
+    "atores-ganhadores-do-oscar": [("sparql", "?item wdt:P106 ?prof ; wdt:P166 ?premio . "
+                                              "VALUES ?prof { wd:Q33999 wd:Q10800557 wd:Q10798782 } "
+                                              "?premio wdt:P31|wdt:P279 wd:Q19020 .")],
+    "termos-de-geometria": [("categoria", "Geometria", 2), ("categoria", "Figuras geométricas", 2),
+                            ("categoria", "Polígonos", 1), ("categoria", "Poliedros", 1)],
+    "termos-juridicos": [("categoria", "Terminologia jurídica", 1), ("categoria", "Direito", 1),
+                         ("categoria", "Expressões latinas usadas no Direito", 1), ("categoria", "Crimes", 1)],
+    "presidentes-do-brasil": [("sparql", "?cargo rdfs:label \"President of Brazil\"@en . ?item wdt:P39 ?cargo .")],
 }
 for _cat, _fontes in RODADA.items():
     FONTES[_cat] = FONTES.get(_cat, []) + _fontes
