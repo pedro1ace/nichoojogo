@@ -1,0 +1,6258 @@
+{
+ "modelo": "claude (estimado na conversa do agente, sem API)",
+ "amostras": 1,
+ "pergunta": "Cite um tipo de corrida",
+ "itens": [
+  {
+   "resposta": "Fórmula 1",
+   "respostas_em_1000": 160.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona",
+   "respostas_em_1000": 90.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de revezamento",
+   "respostas_em_1000": 45.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de saco",
+   "respostas_em_1000": 50.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rua",
+   "respostas_em_1000": 35.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalo",
+   "respostas_em_1000": 40.0,
+   "dispersao": 0,
+   "conhecem_pct": 100.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Stock Car",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida com obstáculos",
+   "respostas_em_1000": 25.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "100 metros rasos",
+   "respostas_em_1000": 30.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula Indy",
+   "respostas_em_1000": 12.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Kart",
+   "respostas_em_1000": 25.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de caminhão",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de moto",
+   "respostas_em_1000": 25.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Motocross",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Rally",
+   "respostas_em_1000": 12.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "NASCAR",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula 2",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula 3",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula E",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bicicleta",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Triatlo",
+   "respostas_em_1000": 12.0,
+   "dispersao": 0,
+   "conhecem_pct": 92.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de São Silvestre",
+   "respostas_em_1000": 20.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Meia maratona",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ultramaratona",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do ovo na colher",
+   "respostas_em_1000": 15.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de mão",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de três pernas",
+   "respostas_em_1000": 8.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de barco",
+   "respostas_em_1000": 10.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cachorro",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de camelo",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de avestruz",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lesma",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tartaruga",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de sapo",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de porco",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pato",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de galinha",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de barata",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pombo",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de touro",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de jegue",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalo de pau",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida maluca",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida espacial",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida armamentista",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do ouro",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida contra o tempo",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida eleitoral",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de táxi",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida maluca de supermercado",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rolimã",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de controle remoto",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de autorama",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de drone",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pipa",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de balão",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de avião",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lancha",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de jet ski",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de canoa",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de caiaque",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de stand up paddle",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de vela",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de natação",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona aquática",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de trenó",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de trenó puxado por cães",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de esqui",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de snowboard",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Patinação de velocidade",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de patins",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de skate",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Downhill",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "BMX",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ciclismo de pista",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bike na rua",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de montanha",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de aventura",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de orientação",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Cross country",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida na areia",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida na esteira",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rua noturna",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Color Run",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de fantasia",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Papai Noel",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cadeira de rodas",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida com guia",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lâmina",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de 200 metros",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de 400 metros",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de 800 metros",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "1500 metros",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "5000 metros",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "10000 metros",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de 21 km",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "110 metros com barreiras",
+   "respostas_em_1000": 5.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "400 metros com barreiras",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Revezamento 4x400",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Marcha atlética",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de velocidade",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de fundo",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de meio-fundo",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de resistência",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de 24 horas",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mil Milhas",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Endurance",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula Ford",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula Renault",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula Vee",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula Mundial",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP2",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GT",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Porsche Cup",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Turismo",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Drift",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Arrancada",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Racha",
+   "respostas_em_1000": 6.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Velozes e Furiosos",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Fusca",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carro antigo",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carro elétrico",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de ônibus",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de trator",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cortador de grama",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de bate-bate",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de banheira",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cama",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de caixão",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bóia",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rolar queijo",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 35.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carregar esposa",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de salto alto",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de garçom",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalo de madeira",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalinho",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pega-pega",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bandeirinha",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida da batata",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bambolê",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cadeira",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de quatro",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bebê",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de costas",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lado",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de olhos vendados",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de mãos dadas",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cabo de guerra",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gincana",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Caça ao tesouro",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "The Amazing Race",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de ratos",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do ouro olímpico",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tocha",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bastão",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de espermatozoide",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de formiga",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de minhoca",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rato",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de hamster",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bola de gude",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bolinhas",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pato de borracha",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de barquinho de papel",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de aviãozinho de papel",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de piões",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Hot Wheels",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de videogame",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mario Kart",
+   "respostas_em_1000": 4.0,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Need for Speed",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Gran Turismo",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Crash Team Racing",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Speedrun",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Sonic",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Carros (filme)",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 92.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pódio",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de fuga",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida atrás do ônibus",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida para o banheiro",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida para pegar o metrô",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de liquidação",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida às compras",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida bancária",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pedido",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de entregador",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida tecnológica",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida pela vacina",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida das raças",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalo de raça",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hipismo",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Trote",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vaquejada",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalo de rodeio",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de charrete",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de biga",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ben-Hur",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carruagem",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de elefante",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de iaque",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de búfalo",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cabra",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de ovelha",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de coelho",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "A Lebre e a Tartaruga",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bicho-preguiça",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalo-marinho",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de peixe",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de esquilo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de besouro",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cupim",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de gafanhoto",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de dragão",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de piroga",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de jangada",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rabeta",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de submarino",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de foguete",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida para a Lua",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida para Marte",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de satélite",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de nave",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de vassoura",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bigorna",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tijolo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida com peso",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida militar",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bombeiro",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de policiais",
+   "respostas_em_1000": 2.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Perseguição de carro",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de fuga da prisão",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida no shopping",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de escada",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de elevador",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida na neve",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida no gelo",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida na lama",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Spartan Race",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Tough Mudder",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ironman",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Duatlo",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Aquathlon",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Biatlo",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pentatlo moderno",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Decatlo",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Heptatlo",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de orientação noturna",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Rogaining",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 2.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Skyrunning",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de deserto",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Badwater",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Comrades",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Boston",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Nova York",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Berlim",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Londres",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona do Rio",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de São Paulo",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Volta da Pampulha",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de série",
+   "respostas_em_1000": 3.0,
+   "dispersao": 0,
+   "conhecem_pct": 98.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de filme",
+   "respostas_em_1000": 1.0,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de estudo",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hackathon",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de baratinhas de brinquedo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalos de corda",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bicicleta ergométrica",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Uber Moto",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de mototáxi",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de riquixá",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de patinete",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de monociclo",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de perna de pau",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pula-pula",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de barril",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pneu",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tora",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Jogos dos Povos Indígenas",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de jangadeiro",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de São Benedito",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Reis",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida da Fogueira",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do Fogo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cachorro-quente",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de comer",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de chope",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bêbado",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pelado",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de zumbi",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cueca",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de salto",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rodas",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de velotrol",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de motoca",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de triciclo",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carro de lomba",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de mercado",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de quadriciclo",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de UTV",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de jipe",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 75.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Rally dos Sertões",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de motocicleta de areia",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Supercross",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Trial",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Speedway",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Isle of Man TT",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de motocicleta elétrica",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Superbike",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Moto2",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Moto3",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carreta",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Monster Truck",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Demolition derby",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carro sem motor",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Red Bull Box Cart",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida solar",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula SAE",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de robô",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de inteligência artificial",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cães de trenó",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de mula",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lhama",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de canguru",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de guepardo",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cavalo selvagem",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de gado",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de toureiro",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de São Fermín",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP do Brasil",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Mônaco",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de São Paulo",
+   "respostas_em_1000": 0.5,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Grã-Bretanha",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Silverstone",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Itália",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Monza",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Bélgica",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Spa",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP do Japão",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Suzuka",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Austrália",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP do Canadá",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP dos Estados Unidos",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Austin",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Las Vegas",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Miami",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP do México",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Abu Dhabi",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP do Bahrein",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Arábia Saudita",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP do Catar",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Singapura",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da China",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Hungria",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Holanda",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Áustria",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Espanha",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP do Azerbaijão",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP dos Emirados",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Portugal",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da França",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Alemanha",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Rússia",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Turquia",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Malásia",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Coreia",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Índia",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Argentina",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Imola",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Detroit",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Long Beach",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de San Marino",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Europa",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP da Toscana",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "GP de Eifel",
+   "respostas_em_1000": 0.03,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Daytona 500",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "24 Horas de Daytona",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Paris-Dakar",
+   "respostas_em_1000": 0.3,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Giro d'Italia",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vuelta",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Paris-Roubaix",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Volta de Portugal",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Volta Ciclística de São Paulo",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Grand National",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Kentucky Derby",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Royal Ascot",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Prix de l'Arc de Triomphe",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Melbourne Cup",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Grande Prêmio São Paulo (turfe)",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Monza",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Mônaco",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Rali de Monte Carlo",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "WRC",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 25.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Pikes Peak",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Baja 1000",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Porsche Cup Brasil",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "TCR",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "IMSA",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Super Fórmula",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Super GT",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula Regional",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "F1 Academy",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "W Series",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Extreme E",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula Inter",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula 4",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula Júnior",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Fórmula 5000",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Kart indoor",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Granja Viana",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Volta Internacional da Pampulha",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida Internacional de São Silvestre",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Chicago",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Tóquio",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Paris",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Porto Alegre",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Curitiba",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Maratona de Atenas",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida da Fogueira de São João",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Bay to Breakers",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ultra-Trail du Mont-Blanc",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Western States",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 3.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Barkley Marathons",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ironman de Kona",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Ironman Florianópolis",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 15.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Uphill",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Hill climb",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de subida de rampa",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de velocidade no gelo",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de motoneve",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de hidroavião",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de ultraleve",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de planador",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de parapente",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de asa-delta",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de wingsuit",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de balão de ar quente",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de zepelim",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de iate",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Vendée Globe",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 5.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Volta ao mundo",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de canoa havaiana",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rafting",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bote",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de surfe",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bodyboard",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de kitesurf",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de windsurf",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de prancha a vela",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de wakeboard",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de esqui aquático",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de esqui cross-country",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Luge",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Skeleton",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de patins no gelo",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de patins inline",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de bebê",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de mães",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pais e filhos",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de crianças",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de escola",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Educação Física",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de vai e vem",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Cooper",
+   "respostas_em_1000": 0.2,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de 12 minutos",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de prova física",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de vestibular",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida por vaga",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de emprego",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do bilhão",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida dos ratos",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida pelo título",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida pelo Oscar",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de audiência",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lançamento",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de inovação",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida dos chips",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida nuclear",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida colonial",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do petróleo",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida da borracha",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do diamante",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida pelo ouro",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida para o abrigo",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida contra o relógio",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de contrarrelógio",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida eliminatória",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de classificação",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida sprint",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de largada lançada",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de safety car",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pit stop",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de exibição",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida beneficente",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do Outubro Rosa",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida virtual",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de sim racing",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Fórmula 1 no videogame",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Forza",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Top Gear",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Rock n' Roll Racing",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Super Mario",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 85.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Crash",
+   "respostas_em_1000": 0.005,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Burnout",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de GTA",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Subway Surfers",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 80.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Temple Run",
+   "respostas_em_1000": 0.05,
+   "dispersao": 0,
+   "conhecem_pct": 70.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida infinita",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Fall Guys",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Pokémon",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 40.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Chocobo",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 10.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Speed Racer",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida Maluca do Dick Vigarista",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 60.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Ayrton Senna",
+   "respostas_em_1000": 0.1,
+   "dispersao": 0,
+   "conhecem_pct": 95.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida do Rubinho",
+   "respostas_em_1000": 0.02,
+   "dispersao": 0,
+   "conhecem_pct": 90.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Gugu",
+   "respostas_em_1000": 0.002,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Faustão",
+   "respostas_em_1000": 0.001,
+   "dispersao": 0,
+   "conhecem_pct": 20.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida da Tartaruga Ninja",
+   "respostas_em_1000": 0.001,
+   "dispersao": 0,
+   "conhecem_pct": 30.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de girafa",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de zebra",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de leão",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tigre",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de gato",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de vaca",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de boi",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cabrito",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de peru",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pinguim",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de urso",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lobo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de raposa",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de coala",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de panda",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de macaco",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de gorila",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rinoceronte",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de hipopótamo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de crocodilo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de jacaré",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de cobra",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lagarto",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de camaleão",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de caranguejo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de siri",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de polvo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de baleia",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de golfinho",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tubarão",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de sardinha",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de salmão",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de truta",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de ema",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de galo",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de pavão",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de papagaio",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de arara",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tucano",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de beija-flor",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de abelha",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de borboleta",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de mosca",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de mosquito",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de joaninha",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de centopeia",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de aranha",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de escorpião",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de preá",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de capivara",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tatu",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tamanduá",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de onça",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de veado",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de alce",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de rena",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bisão",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de antílope",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de gazela",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de javali",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de ornitorrinco",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de esquilo voador",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de furão",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de marmota",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de castor",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lontra",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de foca",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de morsa",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de porco-espinho",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de ouriço",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de gamba",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Ferrari",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de Lamborghini",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de limusine",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de ambulância",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de caminhão de bombeiro",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de viatura",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carro de polícia",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tanque",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de trem-bala",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de metrô",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bonde",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de navio",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de transatlântico",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de balsa",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de helicóptero",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de caça",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de jato",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de dirigível",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de foguete de garrafa PET",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de feira",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de pipoca",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de sorvete",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carroça",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bicicleta de carga",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de tandem",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bicicleta tandem",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de bicicleta elétrica",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de scooter",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de lambreta",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de moto de trilha",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de moto aquática",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de hovercraft",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de aerobarco",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de minicarro",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de mini buggy",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de carrinho de golfe",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de empilhadeira",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de retroescavadeira",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  },
+  {
+   "resposta": "Corrida de colheitadeira",
+   "respostas_em_1000": 0.01,
+   "dispersao": 0,
+   "conhecem_pct": 50.0,
+   "apelidos": [],
+   "confusoes": [],
+   "observacao": "",
+   "origem": "estimado"
+  }
+ ],
+ "faltando": []
+}

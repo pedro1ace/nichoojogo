@@ -111,11 +111,14 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 6 | Coisas redondas | Cite algo que é redondo | 1201 |
 | 7 | Coisas com casca | Cite algo que tem casca | 1039 |
 
-## Na fila (ainda não formam um dia)
+## Dia 10 · sex 06/11/2026
 
-- Marcas de carro
-- Música brasileira
-- Defesas dos animais
-- Filmes com o Tom Hanks
-- Plantas de casa
-- Coisas com camadas
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Marcas de carro | Cite uma marca de carro | 657 |
+| 2 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3759 |
+| 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 800 |
+| 4 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
+| 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 258 |
+| 6 | Coisas com camadas | Cite algo que tem camadas | 923 |
+| 7 | Tipos de corrida | Cite um tipo de corrida | 625 |
