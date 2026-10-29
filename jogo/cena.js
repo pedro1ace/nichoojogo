@@ -611,7 +611,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const padrao = [0, 1, 2, 3].map((i) => (frac > BAYER[b + i] ? c1 : c0));
       for (let x = 0; x < L; x++) pixels[linha + x] = padrao[x & 3];
     }
-    if (!semEfeitos) desenharParedesPixel(empacotar);
+    desenharParedesPixel(empacotar);
     ctx.putImageData(imagem, 0, 0);
   }
 
@@ -702,7 +702,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   function desenharEstrelas() {
-    const camadas = [
+    // sem efeitos: só umas poucas estrelinhas paradas, sem cintilar
+    const camadas = semEfeitos ? [{ f: 0.35, cor: "#9a92ff", n: 2 }] : [
       { f: 0.15, cor: "#5a4fb8", n: 3 },
       { f: 0.35, cor: "#9a92ff", n: 3 },
       { f: 0.7, cor: "#ffffff", n: 2 },
@@ -724,9 +725,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
           const ritmo = 0.6 + sorte(k, i * 7 + ci + 5) * 1.6;
           const fase = sorte(k, i * 7 + ci + 6) * 6.283;
           const pisca = 0.5 + 0.5 * Math.sin(tempo * ritmo + fase);
-          alta.globalAlpha = 0.35 + 0.65 * pisca;
+          alta.globalAlpha = semEfeitos ? 0.7 : 0.35 + 0.65 * pisca;
           alta.fillStyle = c.cor;
           alta.fillRect(x, y, 1, 1 + rastro);
+          if (semEfeitos) continue;
           if (ci >= 1 && sorte(k, i + 77) > (ci === 2 ? 0.8 : 0.93)) {
             // estrela maior: uma cruz de luz que cresce quando ela brilha
             const braco = 1 + pisca * 2.2;
@@ -1685,7 +1687,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function chegada(c, cx, cy, w, h) {
     const k = c.peso; // 0 a 1.2
     if (window.Som && Som.pouso) Som.pouso(["obvia", "comum", "incomum", "rara", "supernova"].indexOf(c.faixa));
-    if (k < 0.35 || semEfeitos) return; // comum e óbvia (ou sem efeitos): só o pulinho da caixa
+    // comum e óbvia: só o pulinho da caixa. A festa da resposta fica mesmo sem efeitos
+    // (sem tremor e sem clarão, que já não aparecem nesse modo).
+    if (k < 0.35) return;
     const n = Math.round(20 + 120 * Math.min(1, k));
     if (c.supernova) {
       dobra = 0;
@@ -1829,6 +1833,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     return Math.max(-0.12, Math.min(0.12, derivada * 0.012)) * Math.sin(Math.PI * tq);
   }
 
+  // A resposta caindo (balanço, fumaça, companheiros e brilhos) fica igual no modo
+  // sem efeitos: só some com o movimento reduzido do sistema.
   function desenharCaixas(agora) {
     const W = innerWidth;
     for (let i = caixas.length - 1; i >= 0; i--) {
@@ -1845,7 +1851,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         });
       }
       // fumaça só nas raras e o plasma na supernova (as outras têm os companheiros em órbita)
-      if ((c.supernova || c.faixa === "rara") && !c.saida && t < c.dura && !reduzirMovimento) soltarRastro(c, al, t);
+      if ((c.supernova || c.faixa === "rara") && !c.saida && t < c.dura && !movimentoDoSistema) soltarRastro(c, al, t);
       const entrada = Math.max(0, 1 - t / 260); // ao aparecer, cai um pouquinho de cima
       const y = naTelaTexto(al) + 18 - entrada * entrada * 40;
       const sumindo = c.saida ? Math.min(1, (agora - c.saida) / 250) : 0;
@@ -1869,18 +1875,18 @@ function criarCena(telaPixel, telaTexto, raiz) {
       // enquanto cai, a leve "samba" de um lado para o outro, como folha deslizando;
       // a pesada desce reta. O balanço vai sumindo perto do fim da queda.
       const leveza = 1 - Math.min(1, c.pesoQueda * 1.6);
-      const caindo = !c.saida && tq < 1 && !reduzirMovimento;
+      const caindo = !c.saida && tq < 1 && !movimentoDoSistema;
       const jeito = BALANCO[c.faixa];
       const ondaQueda = !caindo ? 0 : jeito ? jeito(tq) : Math.sin(t / 1000 * 2.6) * Math.sin(Math.PI * tq) * leveza;
-      const boiaX = (reduzirMovimento ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7) + ondaQueda * 46;
-      const boiaY = reduzirMovimento ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 8;
+      const boiaX = (movimentoDoSistema ? 0 : Math.sin(tempo * 0.7 + c.inicio) * 7) + ondaQueda * 46;
+      const boiaY = movimentoDoSistema ? 0 : Math.sin(tempo * 1.1 + c.inicio * 0.5) * 8;
       tx.translate(x + w / 2 + boiaX, y - sumindo * 14 + boiaY);
       // mola: ao aparecer cresce passando um pouco do tamanho e volta
       const mola = 1 - Math.exp(-t / 140) * Math.cos(t / 55);
       // ao chegar no fundo, dá um "pulo" maior quanto mais rara
       const tc = t - c.dura;
       const pop = tc > 0 ? c.peso * 0.35 * Math.exp(-tc / 160) * Math.cos(tc / 45) : 0;
-      const balanco = reduzirMovimento ? 0 : Math.sin(tempo * 1.3 + c.inicio) * 0.035 + Math.sin(tempo * 0.5) * 0.015;
+      const balanco = movimentoDoSistema ? 0 : Math.sin(tempo * 1.3 + c.inicio) * 0.035 + Math.sin(tempo * 0.5) * 0.015;
       // inclina para o lado em que está deslizando
       const inclinaQueda = !caindo ? 0
         : jeito ? inclinacaoBalanco(jeito, tq)
@@ -1903,7 +1909,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       caixa(0, 2 * p, w, h - 4 * p);
       // brilho em volta, na cor da faixa
       tx.shadowColor = c.cor;
-      tx.shadowBlur = semEfeitos ? 0 : c.brilho + 6;
+      tx.shadowBlur = c.brilho + 6;
       tx.fillStyle = c.cor;
       tx.globalAlpha = alfa * 0.9;
       // borda em degraus de pixel (cantos recortados)
@@ -1925,15 +1931,13 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.textAlign = "center";
       tx.textBaseline = "middle";
       tx.shadowColor = c.cor;
-      tx.shadowBlur = semEfeitos ? 0 : 18;
+      tx.shadowBlur = 18;
       tx.fillStyle = c.cor;
       tx.fillText(texto, 0, p * 0.5);
-      if (!semEfeitos) {
-        tx.shadowBlur = 4;
-        tx.fillStyle = "#ffffff";
-        tx.globalAlpha = alfa * 0.35;
-        tx.fillText(texto, 0, p * 0.5);
-      }
+      tx.shadowBlur = 4;
+      tx.fillStyle = "#ffffff";
+      tx.globalAlpha = alfa * 0.35;
+      tx.fillText(texto, 0, p * 0.5);
       tx.shadowBlur = 0;
       desenharCompanhia(c, w, h, true, alfa);
       tx.restore();
@@ -1951,7 +1955,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   };
   function desenharCompanhia(c, w, h, frente, alfa) {
     const cfg = COMPANHIA[c.faixa];
-    if (!cfg || reduzirMovimento) return;
+    if (!cfg || movimentoDoSistema) return;
     const img = cfg.img();
     const pz = Math.max(1, Math.round(escala * cfg.tam));
     const rx = w / 2 + 16 + pz * 4, ry = h / 2 + 12 + pz * 2;
@@ -1995,8 +1999,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.setTransform(dpr, 0, 0, dpr, 0, 0);
     tx.clearRect(0, 0, innerWidth, innerHeight);
     if (semEfeitos) {
-      // modo simples: só o degradê do fundo, a Terra no começo, o mascote e as caixas
+      // modo simples: degradê do fundo, paredes, poucas estrelas, a Terra no começo,
+      // o mascote e as caixas
       verificarNegativo();
+      desenharEstrelas();
       desenharTerraNaCena();
     } else {
       desenharRaios();
@@ -2135,10 +2141,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Tardígrado dourado (supernova): com festa só na hora em que acontece.
     dourado(festa) {
       mascote.dourado = true;
-      if (festa && !semEfeitos) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
+      if (festa && !movimentoDoSistema) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
     },
     // Opção "sem efeitos": sem tremor, clarão, apagão, explosões e balanço, e um cenário
-    // bem simples e leve (sem estrelas, planetas, paredes, curiosidades nem vinheta).
+    // bem simples e leve (poucas estrelas; sem planetas, curiosidades nem vinheta).
     semEfeitos(ligado) {
       semEfeitos = ligado;
       reduzirMovimento = movimentoDoSistema || ligado;
