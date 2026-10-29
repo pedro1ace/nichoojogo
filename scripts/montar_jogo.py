@@ -27,11 +27,59 @@ def enxugar(cat: dict) -> dict:
     return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA} for r in cat["respostas"]]}
 
 
+ORDEM = RAIZ / "dados" / "ordem.txt"
+
+
+def ordem_dos_dias(indice: list[dict]) -> list[str]:
+    """A fila de categorias do jogo (dados/ordem.txt). Categoria que ainda não está na fila
+    entra no fim, e o arquivo é regravado: os dias que já passaram nunca mudam."""
+    linhas = ORDEM.read_text(encoding="utf-8").splitlines() if ORDEM.exists() else []
+    ordem = [l.strip() for l in linhas if l.strip() and not l.startswith("#")]
+    novas = sorted(c["id"] for c in indice if c["id"] not in ordem)
+    if novas:
+        ORDEM.write_text("\n".join(linhas + novas) + "\n", encoding="utf-8")
+        print(f"dados/ordem.txt: {len(novas)} categorias novas no fim da fila")
+    existentes = {c["id"] for c in indice}
+    fila = [i for i in ordem + novas if i in existentes]
+    # aviso de quando a fila acaba (depois disso as categorias começariam a se repetir)
+    import datetime as dt
+    ultimo = dt.date(2026, 10, 28) + dt.timedelta(days=len(fila) // 7 - 1)
+    print(f"dados/ordem.txt: {len(fila)} categorias, dá até o dia #{len(fila) // 7} ({ultimo:%d/%m/%Y})")
+    escrever_dias(indice, fila)
+    return fila
+
+
+def escrever_dias(indice: list[dict], fila: list[str]) -> None:
+    """DIAS.md: os nichos de cada dia (dia, data, as 7 perguntas e quantas respostas cada uma tem),
+    para consultar sem abrir o jogo. Gerado a partir da fila; não edite à mão."""
+    import datetime as dt
+    por_id = {c["id"]: c for c in indice}
+    inicio = dt.date(2026, 10, 28)
+    semana = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
+    linhas = ["# Nichos de cada dia", "",
+              "Gerado por `scripts/montar_jogo.py` a partir de `dados/ordem.txt`. Não edite à mão.",
+              "Nenhuma categoria se repete; categoria nova entra no fim da fila.", ""]
+    for d in range(len(fila) // 7):
+        data = inicio + dt.timedelta(days=d)
+        linhas += [f"## Dia {d + 1} · {semana[data.weekday()]} {data:%d/%m/%Y}", "",
+                   "| # | Categoria | Pergunta | Respostas |", "|---|---|---|---|"]
+        for k, cid in enumerate(fila[7 * d:7 * d + 7], 1):
+            c = por_id[cid]
+            arq = RAIZ / "dados" / "categorias" / f"{cid}.txt"
+            n = sum(1 for l in arq.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#"))
+            linhas.append(f"| {k} | {c['titulo']} | {c['pergunta']} | {n} |")
+        linhas.append("")
+    sobra = fila[len(fila) // 7 * 7:]
+    if sobra:
+        linhas += ["## Na fila (ainda não formam um dia)", ""] + [f"- {por_id[c]['titulo']}" for c in sobra] + [""]
+    (RAIZ / "DIAS.md").write_text("\n".join(linhas), encoding="utf-8")
+
+
 def gerar_dados_js() -> str:
     indice = json.loads((PESOS / "indice.json").read_text(encoding="utf-8"))
     categorias = {c["id"]: enxugar(json.loads((PESOS / f"{c['id']}.json").read_text(encoding="utf-8")))
                   for c in indice}
-    dados = json.dumps({"indice": indice, "categorias": categorias}, ensure_ascii=False, separators=(",", ":"))
+    dados = json.dumps({"indice": indice, "ordem": ordem_dos_dias(indice), "categorias": categorias}, ensure_ascii=False, separators=(",", ":"))
     return "// Gerado por scripts/montar_jogo.py. Não edite à mão.\nwindow.NICHO_DADOS = " + dados + ";\n"
 
 

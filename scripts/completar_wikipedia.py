@@ -7,6 +7,9 @@ rodando de dentro do repositório, ele lê dados/categorias.
 
     python completar_wikipedia.py            (no Windows também serve: py completar_wikipedia.py)
 
+Sem nada depois do nome, ele roda só a RODADA atual (as categorias que ainda têm poucas
+respostas). Para rodar outras, escreva os nomes delas depois: python completar_wikipedia.py aves rios
+
 O que ele faz, categoria por categoria:
   1. Confere cada resposta da lista: se tem artigo na Wikipédia em português e
      quantas visitas o artigo teve nos últimos 60 dias (a fama: quanto menos visitas,
@@ -15,9 +18,9 @@ O que ele faz, categoria por categoria:
   2. Procura respostas que faltam (Wikidata e categorias da Wikipédia) e mede
      a fama delas também.
 
-Grava tudo em nicho_wikipedia2.json, na mesma pasta. Se cair a internet ou você
+Grava tudo em nicho_wikipedia3.json, na mesma pasta. Se cair a internet ou você
 fechar a janela, rode de novo: ele continua de onde parou.
-No fim, mande o nicho_wikipedia2.json para o Claude no chat do projeto.
+No fim, mande o nicho_wikipedia3.json para o Claude no chat do projeto.
 
 Regras da Wikimedia respeitadas: User-Agent com contato, um pedido por vez,
 pausa entre pedidos e espera quando o servidor pede (erro 429 ou maxlag).
@@ -35,13 +38,13 @@ from pathlib import Path
 AGENTE = "NichoJogo/1.0 (https://github.com/pedro1ace/nichoojogo; jogo de palavras gratuito)"
 PAUSA_API = 1.0      # segundos entre pedidos à Wikipédia
 PAUSA_SPARQL = 5.0   # segundos entre consultas ao Wikidata
-SAIDA = Path(__file__).resolve().parent / "nicho_wikipedia2.json"
+SAIDA = Path(__file__).resolve().parent / "nicho_wikipedia3.json"
 # De onde vêm as listas atuais: embutidas no próprio arquivo (a versão mandada no chat),
 # a pasta dados/categorias do repositório (se o script rodar de dentro dele) ou o site.
 LOCAL = Path(__file__).resolve().parent.parent / "dados" / "categorias"
 SITES = ["https://claude-project-thread-0a1rvy.nichoojogo.pages.dev", "https://nichoojogo.pages.dev"]
 LISTAS_EMBUTIDAS: dict[str, str] = {}
-MAX_CANDIDATAS = 4000
+MAX_CANDIDATAS = 8000
 
 # Onde procurar respostas que faltam. "sparql": itens do Wikidata com artigo na
 # Wikipédia em português. "categoria": artigos de uma categoria da Wikipédia
@@ -54,6 +57,27 @@ SPARQL_BASE = """SELECT ?item ?artigo (SAMPLE(?r) AS ?rotulo) (SAMPLE(?l) AS ?li
   OPTIONAL { ?item skos:altLabel ?a FILTER(LANG(?a) IN ("pt", "pt-br")) }
   OPTIONAL { ?item wikibase:sitelinks ?l }
 } GROUP BY ?item ?artigo LIMIT 6000"""
+# "livre": a mesma consulta, mas aceita item sem artigo na Wikipédia em português
+# (Kepler-22b, Stinking Bishop): o nome vem do rótulo em português ou, se não houver, em inglês.
+SPARQL_LIVRE = """SELECT ?item (SAMPLE(?art) AS ?artigo) (SAMPLE(?rp) AS ?pt) (SAMPLE(?re) AS ?en)
+(SAMPLE(?l) AS ?links) (GROUP_CONCAT(DISTINCT ?a; separator="|") AS ?apelidos) WHERE {
+  %s
+  OPTIONAL { ?art schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> . }
+  OPTIONAL { ?item rdfs:label ?rp FILTER(LANG(?rp) = "pt") }
+  OPTIONAL { ?item rdfs:label ?re FILTER(LANG(?re) = "en") }
+  OPTIONAL { ?item skos:altLabel ?a FILTER(LANG(?a) IN ("pt", "pt-br")) }
+  OPTIONAL { ?item wikibase:sitelinks ?l }
+} GROUP BY ?item LIMIT 8000"""
+
+
+# só itens com artigo em pelo menos N Wikipédias (para não vir uma montanha de desconhecidos)
+MUITO_CONHECIDO = " ?item wikibase:sitelinks ?sl FILTER(?sl >= %d) ."
+
+
+def classe(*nomes: str, como: str = "wdt:P31/wdt:P279*|wdt:P279+") -> str:
+    """Filtro SPARQL "é um(a) <classe>", achando a classe pelo nome em inglês no Wikidata."""
+    valores = " ".join(f'"{n}"@en' for n in nomes)
+    return f"VALUES ?nome {{ {valores} }} ?c rdfs:label ?nome . ?item {como} ?c ."
 
 FONTES = {
     "racas-de-cachorro": [("sparql", "?item wdt:P31 wd:Q39367 ."), ("categoria", "Raças de cães", 2)],
@@ -125,6 +149,72 @@ FONTES = {
                      ("categoria", "Jogos de cartas", 1), ("categoria", "Jogos infantis", 2)],
     "profissoes": [("sparql", "?item wdt:P31 wd:Q28640 ."), ("sparql", "?item wdt:P31 wd:Q12737077 .")],
 }
+
+# 3ª rodada: categorias de hoje e dos próximos dias que ainda têm poucas respostas, mais
+# categorias novas. "python completar_wikipedia.py" sem nada roda só estas e só com as
+# fontes daqui (nada do que já rodou antes: a lista atual não é medida de novo).
+RODADA = {
+    "instrumentos-musicais": [("sparql", classe("musical instrument")),
+                              ("livre", classe("musical instrument"))],
+    "plantas-de-casa": [("sparql", classe("houseplant", "ornamental plant", como="wdt:P366")),
+                        ("sparql", classe("houseplant", "succulent plant", "cactus", "orchid", "fern")),
+                        ("categoria", "Plantas de interior", 1), ("categoria", "Suculentas", 2)],
+    "exoplanetas": [("livre", classe("exoplanet", "hot Jupiter", "super-Earth", "mini-Neptune",
+                                     "hot Neptune", "rogue planet", como="wdt:P31"))],
+    "legumes-e-verduras": [("sparql", classe("vegetable", "leaf vegetable", "root vegetable", "legume")),
+                           ("livre", classe("vegetable", "leaf vegetable", "root vegetable"))],
+    "pedras-preciosas": [("livre", classe("gemstone", "gemstone variety"))],
+    "queijos": [("livre", classe("cheese"))],
+    "missoes-espaciais": [("sparql", classe("space probe", "space mission", "crewed spaceflight",
+                                            "space telescope", "lunar lander", "Mars rover")),
+                          ("livre", classe("space probe", "space telescope", "crewed spaceflight"))],
+    "frutas": [("sparql", classe("fruit", "edible fruit", "berry", "citrus fruit")),
+               ("livre", classe("fruit", "edible fruit")),
+               ("categoria", "Frutas do Brasil", 1), ("categoria", "Frutos comestíveis", 1)],
+    "novelas-brasileiras": [("livre", classe("telenovela", como="wdt:P31") + " ?item wdt:P495 wd:Q155 ."),
+                            ("categoria", "Telenovelas da Rede Globo", 1), ("categoria", "Telenovelas do SBT", 1),
+                            ("categoria", "Telenovelas da RecordTV", 1), ("categoria", "Telenovelas da Rede Manchete", 1),
+                            ("categoria", "Telenovelas da Rede Bandeirantes", 1),
+                            ("categoria", "Telenovelas da Rede Tupi", 1), ("categoria", "Telenovelas da TV Excelsior", 1)],
+    "racas-de-cachorro": [("livre", classe("dog breed", como="wdt:P31"))],
+    "bebidas": [("livre", classe("cocktail", "beer style", "liqueur", "soft drink", "spirit", "tea",
+                                 "coffee drink", "wine style", "alcoholic beverage", "non-alcoholic beverage",
+                                 como="wdt:P31|wdt:P279"))],
+    "cores": [("livre", classe("color", "shade of color", como="wdt:P31") + ' ?item rdfs:label ?pp FILTER(LANG(?pp) = "pt")')],
+    "marcas-de-carro": [("livre", classe("automobile manufacturer", "car brand", como="wdt:P31|wdt:P452"))],
+    "super-herois-e-viloes": [("livre", classe("superhero", "supervillain", "Marvel Comics character",
+                                               "DC Comics character", "comics character", como="wdt:P31"))],
+    "material-escolar": [("sparql", classe("writing implement", "stationery", "office supplies", "drawing tool"))],
+    # categorias novas (ainda sem lista: tudo que vier é candidata)
+    "mamiferos": [("sparql", "?item wdt:P171+ wd:Q7377 ; wdt:P105 wd:Q7432 .")],
+    "doencas": [("sparql", classe("disease", "infectious disease", "rare disease", como="wdt:P31|wdt:P279"))],
+    "remedios": [("sparql", classe("medication", "pharmaceutical drug", como="wdt:P31|wdt:P279") + MUITO_CONHECIDO % 8)],
+    "cidades-do-mundo": [("sparql", classe("city", "big city", "million city", como="wdt:P31") + MUITO_CONHECIDO % 25)],
+    "montanhas-e-vulcoes": [("sparql", classe("mountain", "volcano", "stratovolcano", "shield volcano", como="wdt:P31"))],
+    "lagos-e-mares": [("sparql", classe("lake", "sea", "marginal sea", "lagoon", "reservoir", como="wdt:P31"))],
+    "filmes": [("sparql", "?item wdt:P31 wd:Q11424 ." + MUITO_CONHECIDO % 30)],
+    "series-de-tv": [("sparql", "?item wdt:P31 wd:Q5398426 ." + MUITO_CONHECIDO % 15)],
+    "atores-e-atrizes": [("sparql", "?item wdt:P106 wd:Q33999 ." + MUITO_CONHECIDO % 35)],
+    "bandas-e-cantores-gringos": [("sparql", "?item wdt:P31 wd:Q215380 ." + MUITO_CONHECIDO % 25),
+                                   ("sparql", "?item wdt:P106 wd:Q177220 ." + MUITO_CONHECIDO % 45)],
+    "jogadores-de-futebol": [("sparql", "?item wdt:P106 wd:Q937857 ." + MUITO_CONHECIDO % 40)],
+    "pintores": [("sparql", "?item wdt:P106 wd:Q1028181 ." + MUITO_CONHECIDO % 20)],
+    "escritores": [("sparql", "?item wdt:P106 wd:Q36180 ." + MUITO_CONHECIDO % 40)],
+    "nomes-de-menina": [("sparql", "?item wdt:P31 wd:Q11879590 ."), ("categoria", "Prenomes femininos", 1)],
+    "nomes-de-menino": [("sparql", "?item wdt:P31 wd:Q12308941 ."), ("categoria", "Prenomes masculinos", 1)],
+    "sobrenomes": [("sparql", "?item wdt:P31 wd:Q101352 ."), ("categoria", "Sobrenomes", 1)],
+    "modelos-de-carro": [("sparql", classe("automobile model", "car model", como="wdt:P31"))],
+    "pratos-do-mundo": [("sparql", classe("dish", "food", como="wdt:P31")), ("categoria", "Pratos", 2)],
+    "arvores": [("categoria", "Árvores", 2), ("categoria", "Árvores do Brasil", 2)],
+    "flores": [("categoria", "Flores", 2)],
+    "ferramentas": [("sparql", classe("tool", "hand tool", "power tool", como="wdt:P31|wdt:P279")),
+                    ("categoria", "Ferramentas", 2)],
+    "roupas-e-acessorios": [("sparql", classe("clothing", "type of clothing", "headgear", "footwear",
+                                              "fashion accessory", como="wdt:P31|wdt:P279")),
+                            ("categoria", "Vestuário", 2)],
+}
+for _cat, _fontes in RODADA.items():
+    FONTES[_cat] = FONTES.get(_cat, []) + _fontes
 
 # Respostas com nome ambíguo ("Mercúrio", "Coral", "Fênix"): se o título cair numa página
 # de desambiguação ou não existir, tenta de novo com estes complementos.
@@ -256,17 +346,25 @@ def da_categoria(nome: str, profundidade: int) -> list[str]:
     return paginas
 
 
-def do_wikidata(filtro: str) -> list[dict]:
+def do_wikidata(filtro: str, livre: bool = False) -> list[dict]:
     time.sleep(PAUSA_SPARQL)
-    url = "https://query.wikidata.org/sparql?" + urllib.parse.urlencode({"query": SPARQL_BASE % filtro, "format": "json"})
+    consulta = (SPARQL_LIVRE if livre else SPARQL_BASE) % filtro
+    url = "https://query.wikidata.org/sparql?" + urllib.parse.urlencode({"query": consulta, "format": "json"})
     r = pedir(url, sparql=True)
     saida = []
     for b in r.get("results", {}).get("bindings", []):
-        titulo = urllib.parse.unquote(b["artigo"]["value"].rsplit("/wiki/", 1)[-1]).replace("_", " ")
+        rotulo = (b.get("rotulo") or b.get("pt") or b.get("en") or {}).get("value")
+        if b.get("artigo"):
+            titulo = urllib.parse.unquote(b["artigo"]["value"].rsplit("/wiki/", 1)[-1]).replace("_", " ")
+        elif rotulo and not rotulo[:1] == "Q":
+            titulo = rotulo
+        else:
+            continue
         saida.append({
             "titulo": titulo,
+            "sem_artigo": not b.get("artigo"),
             "qid": b["item"]["value"].rsplit("/", 1)[-1],
-            "rotulo": b.get("rotulo", {}).get("value"),
+            "rotulo": rotulo,
             "apelidos": [a for a in b.get("apelidos", {}).get("value", "").split("|") if a],
             "sitelinks": int(b.get("links", {}).get("value", 0) or 0),
         })
@@ -280,10 +378,18 @@ def chave(texto: str) -> str:
     return "".join(c for c in t if c.isalnum())
 
 
-def processar(cat: str, fontes: list) -> dict:
+def processar(cat: str, fontes: list, conferir: bool = True) -> dict:
     itens = baixar_lista(cat)
     print(f"   {len(itens)} respostas na lista atual")
     conhecidas = {chave(n) for it in itens for n in it}
+    medidas = {}
+    if conferir:
+        medidas = conferir_lista(cat, itens)
+    candidatas = buscar(fontes, conhecidas)
+    return {"respostas": medidas, "candidatas": candidatas, "completo": True}
+
+
+def conferir_lista(cat: str, itens: list[list[str]]) -> dict:
     # 1. confere a lista atual (pelo nome principal; se não achar, pelo primeiro apelido)
     nomes = [it[0] for it in itens]
     medidas = visitas(nomes)
@@ -303,12 +409,17 @@ def processar(cat: str, fontes: list) -> dict:
             m = extra[f"{n} {dica}"]
             if m["titulo"] and not m["desambiguacao"]:
                 medidas[n] = {**m, "pela_dica": dica}
-    # 2. procura as que faltam
+    return medidas
+
+
+def buscar(fontes: list, conhecidas: set[str]) -> list[dict]:
     candidatas: dict[str, dict] = {}
     for fonte in fontes:
-        if fonte[0] == "sparql":
+        if fonte[0] in ("sparql", "livre"):
             print("   consultando o Wikidata...")
-            for c in do_wikidata(fonte[1]):
+            for c in do_wikidata(fonte[1], livre=fonte[0] == "livre"):
+                if c["titulo"] in candidatas and not c["sem_artigo"]:
+                    continue
                 candidatas.setdefault(c["titulo"], {**c, "fonte": "wikidata"})
         else:
             print(f"   lendo a categoria '{fonte[1]}' da Wikipédia...")
@@ -319,24 +430,28 @@ def processar(cat: str, fontes: list) -> dict:
     novas = novas[:MAX_CANDIDATAS]
     if novas:
         print(f"   {len(novas)} possíveis respostas novas; medindo a fama delas...")
-        vv = visitas([c["titulo"] for c in novas])
+        vv = visitas([c["titulo"] for c in novas if not c.get("sem_artigo")])
         for c in novas:
-            c["visitas_60d"] = vv[c["titulo"]]["visitas_60d"]
-            c["desambiguacao"] = vv[c["titulo"]]["desambiguacao"]
-    return {"respostas": medidas, "candidatas": novas, "completo": True}
+            if c["titulo"] in vv:  # item sem artigo: a fama vem do número de Wikipédias (sitelinks)
+                c["visitas_60d"] = vv[c["titulo"]]["visitas_60d"]
+                c["desambiguacao"] = vv[c["titulo"]]["desambiguacao"]
+    return novas
 
 
 def main() -> None:
     resultado = json.loads(SAIDA.read_text(encoding="utf-8")) if SAIDA.exists() else {"versao": 1, "categorias": {}}
     so = sys.argv[1:]
-    todas = [c for c in FONTES if not so or c in so]
+    todas = [c for c in FONTES if c in so] if so else list(RODADA)
     inicio = time.time()
     for i, cat in enumerate(todas, 1):
         if resultado["categorias"].get(cat, {}).get("completo"):
             print(f"[{i}/{len(todas)}] {cat}: já feita, pulando")
             continue
         print(f"[{i}/{len(todas)}] {cat}")
-        resultado["categorias"][cat] = processar(cat, FONTES[cat])
+        if so:
+            resultado["categorias"][cat] = processar(cat, FONTES[cat])
+        else:  # rodada: só as fontes novas, sem medir de novo o que já foi medido
+            resultado["categorias"][cat] = processar(cat, RODADA[cat], conferir=False)
         resultado["gerado_em"] = time.strftime("%Y-%m-%d %H:%M")
         SAIDA.write_text(json.dumps(resultado, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"   ok, salvo ({(time.time() - inicio) / 60:.0f} min até agora)")
