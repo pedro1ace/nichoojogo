@@ -53,6 +53,21 @@ RACAS_DA_CATEGORIA = {
     "Utonagan", "Blue Paul Terrier", "Bullenbeisser", "Cão de água St. John", "Tesem", "Kuchi (cão)",
     "Podengo-crioulo", "Mastim Americano", "Shih-poo", "Cane da presa", "Askal"}
 
+# jogo para todas as idades: título de filme ou série com sexo, drogas ou bebedeira fica de fora
+ADULTO = re.compile(r"\b(sex|sexo|sexy|porn|pornô|erótic|erotic|nua|nu |nude|naked|strip|bordel|prostitut|"
+                    r"cocaína|cocaine|maconha|heroína|heroin|drogas?|drugs?|trainspotting|bêbad|drunk|hangover|"
+                    r"se beber|cinquenta tons|fifty shades|emmanuelle|nymphomaniac|ninfomaníaca|lolita|playboy|"
+                    r"orgia|orgy|"
+                    r"fuck|shit|bitch|bastard|porra|caralho|puta)\b", re.I)
+NAO_CIDADE = re.compile(r"^(grande zimbabwe)$|\b(distrito|condado|província|provincia|região|regiao|municipalidade|prefeitura de)\b", re.I)
+
+
+def cidades_brasileiras() -> set[str]:
+    """Cidade que já está em Cidades do Brasil não entra em Cidades do mundo."""
+    linhas = (CATEGORIAS / "cidades-do-brasil.txt").read_text(encoding="utf-8").splitlines()
+    return {compactar(n) for l in linhas if l.strip() and not l.startswith("#") for n in l.split("|")}
+
+
 # fonte aceita: "wikidata", "categoria" ou os dois; filtro opcional pelo título.
 ACEITAR = {
     "racas-de-cachorro": ({"wikidata", "categoria"}, None),  # categoria filtrada em RACAS_DA_CATEGORIA
@@ -83,7 +98,16 @@ ACEITAR = {
     "super-herois-e-viloes": ({"categoria"}, lambda t: not NAO_HEROI.search(t)),
     "doces-e-sobremesas": ({"categoria"}, lambda t: not NAO_DOCE.search(t)),
     "temperos-e-especiarias": ({"categoria"}, lambda t: t in TEMPEROS),
+    # 3ª rodada: categorias novas
+    "cidades-do-mundo": ({"wikidata"}, lambda t: not NAO_CIDADE.search(t) and compactar(sem_parenteses(t)) not in BRASIL),
+    "montanhas-e-vulcoes": ({"wikidata"}, lambda t: not GRUPO.search(t)),
+    "lagos-e-mares": ({"wikidata"}, lambda t: not GRUPO.search(t)),
+    "filmes": ({"wikidata"}, lambda t: not ADULTO.search(t)),
+    "series-de-tv": ({"wikidata"}, lambda t: not ADULTO.search(t)),
+    "jogadores-de-futebol": ({"wikidata"}, None),
+    "modelos-de-carro": ({"wikidata"}, lambda t: not ADULTO.search(t)),
 }
+BRASIL = cidades_brasileiras()
 # Estas só ganham apelidos (candidata que é o mesmo artigo de uma resposta que já existe).
 # As listas fechadas não crescem; nas outras, as candidatas vinham com muito lixo
 # (empresas, filmes, álbuns, pessoas).
@@ -133,7 +157,12 @@ TEMPEROS = {
 PREFIXOS = {
     "rios": re.compile(r"^(rio|ribeirão|arroio|igarapé|riacho|córrego) (d[aeo]s? )?", re.I),
     "ilhas": re.compile(r"^(ilha|ilhéu|ilhota) (d[aeo]s? )?", re.I),
-    "idiomas": re.compile(r"^(língua|dialeto|idioma) ", re.I)}
+    "idiomas": re.compile(r"^(língua|dialeto|idioma) ", re.I),
+    "montanhas-e-vulcoes": re.compile(r"^(monte|montanha|montanhas|pico|serra|cerro|vulcão|morro|nevado|"
+                                      r"mount|mont|mount|piz|jbel|jebel) (d[aeo]s? |de la |del )?", re.I),
+    "lagos-e-mares": re.compile(r"^(lago|lagoa|laguna|mar|represa|reservatório|açude|loch|lake) (d[aeo]s? |de la |del )?", re.I),
+    # "Chevrolet Vectra" -> Vectra (o modelo sem a marca)
+    "modelos-de-carro": re.compile(r"^(alfa romeo|aston martin|land rover|mercedes-benz|rolls-royce|[\w-]+) ", re.I)}
 # encurtar nome oficial de clube para um apelido que o jogador digitaria
 PALAVRAS_CLUBE = re.compile(r"\b(associação|associacao|atlética|atletica|esporte|esportiva|esportivo|"
                             r"clube|club|futebol|football|foot ball|sport|sociedade|recreativa|recreativo|"
