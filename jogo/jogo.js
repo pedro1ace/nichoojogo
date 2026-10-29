@@ -14,6 +14,7 @@ const ALEATORIO = new URLSearchParams(location.search).has("aleatorio");
 // Link do botão "Apoie o criador" no fim do jogo. Enquanto estiver vazio, o botão
 // aparece como "EM BREVE" e não clica. Para ativar, cole o link entre as aspas.
 const LINK_APOIO = "";
+const LINK_JOGO = "https://nichoojogo.com/jogar";
 
 // ---------- texto e autocorreção ----------
 
@@ -702,7 +703,7 @@ function mostrarFim(comSom) {
   const seq = mostrarDiaESequencia();
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL 🐻`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL 🐻\n${LINK_JOGO}`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }
