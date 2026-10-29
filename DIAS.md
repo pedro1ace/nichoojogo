@@ -122,3 +122,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 258 |
 | 6 | Coisas com camadas | Cite algo que tem camadas | 923 |
 | 7 | Tipos de corrida | Cite um tipo de corrida | 625 |
+
+## Na fila (ainda não formam um dia)
+
+- Motivos para gritar
