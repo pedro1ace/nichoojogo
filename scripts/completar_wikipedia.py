@@ -230,6 +230,20 @@ RODADA = {
     "termos-juridicos": [("categoria", "Terminologia jurídica", 1), ("categoria", "Direito", 1),
                          ("categoria", "Expressões latinas usadas no Direito", 1), ("categoria", "Crimes", 1)],
     "presidentes-do-brasil": [("sparql", "?cargo rdfs:label \"President of Brazil\"@en . ?item wdt:P39 ?cargo .")],
+    # tipos de corrida (modalidades) e as corridas famosas que se repetem todo ano
+    "tipos-de-corrida": [("livre", classe("race", "racing", "motorsport", "auto racing", "horse racing",
+                                          "cycle sport", "running", "boat racing", como="wdt:P279+")),
+                         ("livre", classe("marathon", "ultramarathon", "road running race", "auto race",
+                                          "Grand Prix", "horse race", "cycling race", "sled dog race",
+                                          "yacht race", "rally raid", como="wdt:P31") + MUITO_CONHECIDO % 8),
+                         ("livre", classe("recurring sporting event", como="wdt:P31")
+                                   + " ?item wdt:P641 ?esp . ?esp wdt:P279* ?corrida . ?corrida rdfs:label ?cn . "
+                                     "VALUES ?cn { \"auto racing\"@en \"cycle sport\"@en \"horse racing\"@en "
+                                     "\"running\"@en \"motorcycle racing\"@en }"
+                                   + MUITO_CONHECIDO % 10),
+                         ("categoria", "Desportos a motor", 1), ("categoria", "Corrida", 1),
+                         ("categoria", "Modalidades de ciclismo", 1), ("categoria", "Provas de atletismo", 1),
+                         ("categoria", "Maratonas", 1)],
 }
 for _cat, _fontes in RODADA.items():
     FONTES[_cat] = FONTES.get(_cat, []) + _fontes

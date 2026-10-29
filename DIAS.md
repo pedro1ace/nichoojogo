@@ -121,7 +121,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
 | 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 258 |
 | 6 | Coisas com camadas | Cite algo que tem camadas | 923 |
-| 7 | Tipos de corrida | Cite um tipo de corrida | 625 |
+| 7 | Tipos de corrida | Cite um tipo de corrida | 1106 |
 
 ## Na fila (ainda não formam um dia)
 
