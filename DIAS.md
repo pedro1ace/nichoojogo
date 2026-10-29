@@ -34,7 +34,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Coisas amarelas | Cite algo que é amarelo | 956 |
 | 2 | Legumes e verduras | Cite um legume ou uma verdura | 531 |
 | 3 | Brincadeiras e jogos | Cite uma brincadeira ou um jogo (de rua, de mesa ou de cartas) | 1075 |
-| 4 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 258 |
+| 4 | Gigantes do Spotify | Cite um dos 3 mil artistas mais ouvidos de todos os tempos no Spotify | 2989 |
 | 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 903 |
 | 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 654 |
 | 7 | Exoplanetas | Cite um exoplaneta (planeta fora do Sistema Solar) | 386 |
@@ -117,3 +117,4 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 - Música brasileira
 - Defesas dos animais
 - Filmes com o Tom Hanks
+- Plantas de casa
