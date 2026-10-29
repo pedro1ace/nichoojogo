@@ -44,11 +44,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Palavras astro e cosmo | Cite uma palavra que comece com "astro" ou "cosmo" | 111 |
-| 2 | Coisas da cozinha | Cite um objeto ou eletrodoméstico que tem numa cozinha | 986 |
+| 2 | Coisas da cozinha | Cite um objeto ou eletrodoméstico que tem numa cozinha | 1003 |
 | 3 | Cidades do Brasil | Cite uma cidade brasileira | 5289 |
 | 4 | Coisas que voam | Cite algo que voa (bicho, máquina ou coisa) | 1127 |
-| 5 | Queijos | Cite um tipo de queijo | 432 |
-| 6 | Missões espaciais | Cite uma missão espacial | 555 |
+| 5 | Queijos | Cite um tipo de queijo | 1011 |
+| 6 | Missões espaciais | Cite uma missão espacial | 1020 |
 | 7 | Ossos do corpo | Cite um osso do corpo humano | 82 |
 
 ## Dia 5 · dom 01/11/2026
