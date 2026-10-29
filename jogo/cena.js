@@ -1219,7 +1219,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
-  // Skins: o tardígrado é o padrão; o alienígena no óvni sai com 10 dias seguidos.
+  // Skins: o tardígrado é o padrão; o Neil (alienígena no óvni) sai com 10 dias seguidos.
   const skins = { tardigrado: criarTardigrado() };
   if (typeof criarAlienigena === "function") skins.alien = criarAlienigena();
   let tardigrado = skins.tardigrado;

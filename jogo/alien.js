@@ -1,4 +1,4 @@
-// Skin "alienígena no óvni" (28x16), no mesmo jeito do tardígrado: desenhada pixel a
+// Skin do Neil, o alienígena no óvni (28x16), no mesmo jeito do tardígrado: desenhada pixel a
 // pixel por código, luz de cima, sombreado com dithering e sem contorno.
 // Um disco voador largo, com uma escotilha aberta em cima, e o alienígena verde com a
 // cabeça para fora (olhões pretos puxados e duas anteninhas). As luzes da borda do
