@@ -496,7 +496,10 @@ function desenharTerra(largura, altura) {
 function criarCena(telaPixel, telaTexto, raiz) {
   const ctx = telaPixel.getContext("2d");
   const tx = telaTexto.getContext("2d");
-  const reduzirMovimento = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // movimento reduzido: pelo sistema ou pela opção "sem efeitos" do jogo
+  const movimentoDoSistema = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let reduzirMovimento = movimentoDoSistema;
+  let semEfeitos = false;
   let corpos = criarCorpos();
   const icones = criarIcones();
 
@@ -1646,7 +1649,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function chegada(c, cx, cy, w, h) {
     const k = c.peso; // 0 a 1.2
     if (window.Som && Som.pouso) Som.pouso(["obvia", "comum", "incomum", "rara", "supernova"].indexOf(c.faixa));
-    if (k < 0.35) return; // comum e óbvia: só o pulinho da caixa
+    if (k < 0.35 || semEfeitos) return; // comum e óbvia (ou sem efeitos): só o pulinho da caixa
     const n = Math.round(20 + 120 * Math.min(1, k));
     if (c.supernova) {
       dobra = 0;
@@ -2032,7 +2035,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.peso = pesoQueda(pontos, supernova);
       if (supernova) dobra = 1;
       // raro, espaço profundo e singularidade: o cenário apaga um instante em volta da caixa
-      if (supernova || pontos >= 35) {
+      if ((supernova || pontos >= 35) && !semEfeitos) {
         apagao = { inicio: agora, dura: camera.dura, forca: supernova ? 0.94 : pontos >= 60 ? 0.88 : 0.78, cor: faixa.cor };
       }
       // a caixa anterior some (não ficam umas por cima das outras)
@@ -2088,7 +2091,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Tardígrado dourado (supernova): com festa só na hora em que acontece.
     dourado(festa) {
       mascote.dourado = true;
-      if (festa) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
+      if (festa && !semEfeitos) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
+    },
+    // Opção "sem efeitos": sem tremor, clarão, apagão, explosões e balanço.
+    semEfeitos(ligado) {
+      semEfeitos = ligado;
+      reduzirMovimento = movimentoDoSistema || ligado;
     },
     // Troca a skin do mascote ("tardigrado" ou "alien").
     skin(nome) {

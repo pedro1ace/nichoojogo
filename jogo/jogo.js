@@ -179,9 +179,9 @@ function desenharMascoteDoMenu() {
   desenharSkin($("modo-mascote"), SKINS.find((k) => k.id === skinEscolhida()));
 }
 
-// Os botões de skin embaixo do cartão do modo. A trancada mostra quanto falta.
+// A grade da janela de skins. A trancada aparece apagada, com os dias que pede.
 function montarSkins() {
-  const caixa = $("skins");
+  const caixa = $("grade-skins");
   if (!caixa) return;
   const seq = ALEATORIO ? 0 : sequencia();
   const atual = skinEscolhida();
@@ -190,7 +190,7 @@ function montarSkins() {
     const livre = skinLiberada(skin, seq);
     const b = document.createElement("button");
     b.type = "button";
-    b.className = "skin" + (livre ? "" : " trancada") + (skin.id === atual ? " escolhida" : "");
+    b.className = "cartao-skin" + (livre ? "" : " trancada") + (skin.id === atual ? " escolhida" : "");
     b.setAttribute("role", "radio");
     b.setAttribute("aria-checked", String(skin.id === atual));
     const tela = document.createElement("canvas");
@@ -200,23 +200,63 @@ function montarSkins() {
     const nome = document.createElement("span");
     nome.className = "skin-nome";
     nome.textContent = skin.nome;
-    b.append(tela, nome);
+    const dias = document.createElement("span");
+    dias.className = "skin-dias";
+    dias.textContent = !skin.dias ? "PADRÃO" : livre ? `${skin.dias} DIAS SEGUIDOS ✓` : `🔒 ${skin.dias} DIAS SEGUIDOS`;
+    b.append(tela, nome, dias);
     if (!livre) {
       const falta = document.createElement("span");
       falta.className = "skin-falta";
-      falta.textContent = `🔒 ${Math.min(seq, skin.dias)}/${skin.dias} dias seguidos`;
+      falta.textContent = `você está com ${Math.min(seq, skin.dias)}`;
       b.append(falta);
-      b.disabled = true;
+    }
+    if (!livre) {
+      b.setAttribute("aria-disabled", "true");
       b.setAttribute("aria-label", `${skin.nome}: libera com ${skin.dias} dias seguidos (você está com ${seq})`);
     }
     b.addEventListener("click", () => {
+      if (!livre) return;
       gravarChave("nicho:skin", skin.id);
       cena.skin(skin.id);
       montarSkins();
       desenharMascoteDoMenu();
+      caixa.querySelector(".escolhida")?.focus();
     });
     caixa.append(b);
   }
+}
+
+// ---------- opções ----------
+// "Sem autocorreção": o jogo não sugere nem corrige a grafia (só vale a palavra exata).
+// "Sem efeitos": sem tremor, clarões, explosões e animações, para quem acha o jogo
+// estimulante demais. As duas ficam guardadas neste navegador.
+const opcoes = { semCorrecao: false, semEfeitos: false };
+try { Object.assign(opcoes, JSON.parse(lerChave("nicho:opcoes") || "{}")); } catch {}
+function aplicarOpcoes() {
+  document.documentElement.classList.toggle("sem-efeitos", !!opcoes.semEfeitos);
+  cena.semEfeitos(!!opcoes.semEfeitos);
+  if (opcoes.semCorrecao) $("sugestao").hidden = true;
+  document.querySelectorAll(".opcao").forEach((b) => b.setAttribute("aria-checked", String(!!opcoes[b.dataset.opcao])));
+}
+document.querySelectorAll(".opcao").forEach((b) => b.addEventListener("click", () => {
+  opcoes[b.dataset.opcao] = !opcoes[b.dataset.opcao];
+  gravarChave("nicho:opcoes", JSON.stringify(opcoes));
+  aplicarOpcoes();
+}));
+
+// As janelas do menu da lateral: abrem por cima, fecham no X, no Esc ou clicando fora.
+function abrirJanela(id) {
+  const j = $(id);
+  if (typeof j.showModal !== "function") return;
+  if (id === "janela-skins") montarSkins();
+  j.showModal();
+  (j.querySelector(".escolhida, .opcao") || j.querySelector(".fechar")).focus();
+}
+for (const j of document.querySelectorAll(".janela-menu")) {
+  j.querySelector(".fechar").addEventListener("click", () => j.close());
+  j.addEventListener("click", (e) => { if (e.target === j) j.close(); });
+  // devolve o foco ao campo de resposta se a viagem estiver rolando
+  j.addEventListener("close", () => { if (estado.ativa) $("palpite").focus(); });
 }
 
 // No fim do dia que completa a sequência certa, avisa que a skin nova saiu
@@ -344,6 +384,7 @@ function iniciar() {
   mostrarDiaESequencia();
   $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
   cena.skin(skinEscolhida());
+  aplicarOpcoes();
   desenharMascoteDoMenu();
   montarSkins();
   $("som").classList.toggle("mudo", Som.estaMudo());
@@ -589,7 +630,7 @@ function aoDigitar() {
   esperaSugestao = setTimeout(() => {
     const texto = $("palpite").value.trim();
     const busca = texto.length >= 3 ? buscar(estado.categorias[estado.rodada], texto) : null;
-    if (busca && !busca.exato) mostrarSugestao(busca.nome);
+    if (busca && !busca.exato && !opcoes.semCorrecao) mostrarSugestao(busca.nome);
     else $("sugestao").hidden = true;
   }, 250);
 }
@@ -618,7 +659,9 @@ function palpitar(evento) {
   const cat = estado.categorias[estado.rodada];
   const texto = $("palpite").value.trim();
   if (!texto) return;
-  const busca = buscar(cat, texto);
+  let busca = buscar(cat, texto);
+  // sem autocorreção: escrita quase certa conta como não achada
+  if (busca && !busca.exato && opcoes.semCorrecao) busca = null;
 
   if (!busca) {
     avisar(`“${texto}” não está no mapa estelar. Tente outra.`, "erro");
@@ -1328,6 +1371,8 @@ $("sugestao").addEventListener("click", usarSugestao);
 $("proxima").addEventListener("click", proxima);
 $("copiar").addEventListener("click", copiar);
 $("enviar").addEventListener("click", enviar);
+$("abrir-skins").addEventListener("click", () => abrirJanela("janela-skins"));
+$("abrir-opcoes").addEventListener("click", () => abrirJanela("janela-opcoes"));
 $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());
