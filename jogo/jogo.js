@@ -96,52 +96,19 @@ function embaralhar(lista, sortear) {
   return copia;
 }
 
-// Gerador com boa mistura (mulberry32): sementes vizinhas dão sequências bem diferentes.
-function gerador(semente) {
-  let a = semente >>> 0;
-  return () => {
-    a = (a + 0x6d2b79f5) >>> 0;
-    let t = a;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-// As categorias do dia saem de um baralho com todas elas: cada dia tira as 7 seguintes
-// e, quando o baralho acaba, ele é embaralhado de novo. Assim nenhuma categoria se
-// repete antes de todas terem saído. No baralho novo, as que saíram na segunda metade
-// do anterior vão para o fim, para nada voltar poucos dias depois.
-// O dia #1 (LANCAMENTO) tem as 7 categorias fixas abaixo; o primeiro baralho, que começa
-// no dia #2, tem só as outras.
-const CATEGORIAS_DO_LANCAMENTO = ["aves", "rios", "doces-e-sobremesas", "insetos", "coisas-da-praia", "temperos-e-especiarias", "ilhas"];
-
-function categoriasDoDia(indice, data) {
-  const ids = indice.map((c) => c.id).sort();
+// As categorias de cada dia saem de uma fila fixa (dados/ordem.txt, que vem em
+// NICHO_DADOS.ordem): o dia #1 usa as 7 primeiras, o dia #2 as 7 seguintes, e assim por
+// diante. Nenhuma categoria se repete; categoria nova entra no fim da fila. Se a fila
+// acabar, a fila recomeça do início, para o jogo nunca ficar sem pergunta.
+function categoriasDoDia(indice, data, ordem) {
   const porId = new Map(indice.map((c) => [c.id, c]));
-  const dia1 = CATEGORIAS_DO_LANCAMENTO.filter((id) => porId.has(id));
-  if (numeroDoDia(data) <= 1 && dia1.length === RODADAS_POR_DIA) return dia1.map((id) => porId.get(id));
-  const baralhos = [embaralhar(ids.filter((id) => !dia1.includes(id)), gerador(2026))];
-  const baralho = (ciclo) => {
-    while (baralhos.length <= ciclo) {
-      const anterior = baralhos[baralhos.length - 1];
-      const recentes = anterior.slice(-Math.floor(anterior.length / 2));
-      const novo = embaralhar(ids, gerador(baralhos.length * 7919 + 2026));
-      baralhos.push([...novo.filter((id) => !recentes.includes(id)), ...novo.filter((id) => recentes.includes(id))]);
-    }
-    return baralhos[ciclo];
-  };
-  // posição k no baralho infinito: o primeiro baralho é mais curto (sem as do dia #1)
-  const carta = (k) => {
-    let ciclo = 0;
-    while (k >= baralho(ciclo).length) k -= baralho(ciclo++).length;
-    return baralho(ciclo)[k];
-  };
-  const inicio = Math.max(0, numeroDoDia(data) - 2) * RODADAS_POR_DIA;
+  const fila = (ordem || []).filter((id) => porId.has(id));
+  if (!fila.length) return indice.slice(0, RODADAS_POR_DIA);
+  const inicio = Math.max(0, numeroDoDia(data) - 1) * RODADAS_POR_DIA;
   const dia = [];
-  for (let k = inicio; dia.length < Math.min(RODADAS_POR_DIA, ids.length); k++) {
-    const id = carta(k);
-    if (!dia.includes(id)) dia.push(id); // na virada do baralho, pula a que já saiu hoje
+  for (let k = inicio; dia.length < Math.min(RODADAS_POR_DIA, fila.length); k++) {
+    const id = fila[k % fila.length];
+    if (!dia.includes(id)) dia.push(id);
   }
   return dia.map((id) => porId.get(id));
 }
@@ -274,7 +241,7 @@ function iniciar() {
   }
   const escolhidas = ALEATORIO
     ? embaralhar(dados.indice, Math.random).slice(0, RODADAS_POR_DIA)
-    : categoriasDoDia(dados.indice, estado.data);
+    : categoriasDoDia(dados.indice, estado.data, dados.ordem);
   estado.categorias = escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
 
   // título com as letras soltas, para a onda

@@ -27,11 +27,32 @@ def enxugar(cat: dict) -> dict:
     return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA} for r in cat["respostas"]]}
 
 
+ORDEM = RAIZ / "dados" / "ordem.txt"
+
+
+def ordem_dos_dias(indice: list[dict]) -> list[str]:
+    """A fila de categorias do jogo (dados/ordem.txt). Categoria que ainda não está na fila
+    entra no fim, e o arquivo é regravado: os dias que já passaram nunca mudam."""
+    linhas = ORDEM.read_text(encoding="utf-8").splitlines() if ORDEM.exists() else []
+    ordem = [l.strip() for l in linhas if l.strip() and not l.startswith("#")]
+    novas = sorted(c["id"] for c in indice if c["id"] not in ordem)
+    if novas:
+        ORDEM.write_text("\n".join(linhas + novas) + "\n", encoding="utf-8")
+        print(f"dados/ordem.txt: {len(novas)} categorias novas no fim da fila")
+    existentes = {c["id"] for c in indice}
+    fila = [i for i in ordem + novas if i in existentes]
+    # aviso de quando a fila acaba (depois disso as categorias começariam a se repetir)
+    import datetime as dt
+    ultimo = dt.date(2026, 10, 28) + dt.timedelta(days=len(fila) // 7 - 1)
+    print(f"dados/ordem.txt: {len(fila)} categorias, dá até o dia #{len(fila) // 7} ({ultimo:%d/%m/%Y})")
+    return fila
+
+
 def gerar_dados_js() -> str:
     indice = json.loads((PESOS / "indice.json").read_text(encoding="utf-8"))
     categorias = {c["id"]: enxugar(json.loads((PESOS / f"{c['id']}.json").read_text(encoding="utf-8")))
                   for c in indice}
-    dados = json.dumps({"indice": indice, "categorias": categorias}, ensure_ascii=False, separators=(",", ":"))
+    dados = json.dumps({"indice": indice, "ordem": ordem_dos_dias(indice), "categorias": categorias}, ensure_ascii=False, separators=(",", ":"))
     return "// Gerado por scripts/montar_jogo.py. Não edite à mão.\nwindow.NICHO_DADOS = " + dados + ";\n"
 
 
