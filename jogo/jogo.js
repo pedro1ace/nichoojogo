@@ -402,6 +402,7 @@ function iniciar() {
   if (estado.rodada >= estado.categorias.length) {
     $("inicio").hidden = true;
     $("hud").hidden = false;
+    $("abrir-skins").hidden = true;
     mostrarFim(false);
     return;
   }
@@ -451,6 +452,9 @@ function comecar() {
   Som.inicio(); // toca sempre, também ao continuar a viagem
   $("inicio").hidden = true;
   $("hud").hidden = false;
+  // a skin só troca na tela inicial: com a viagem começada, o botão some
+  $("abrir-skins").hidden = true;
+  if ($("janela-skins").open) $("janela-skins").close();
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
     // modo teste: ?ir=20000 na URL começa a viagem já nesses anos-luz (para ver o fundo de perto)
@@ -1361,7 +1365,15 @@ $("abrir-como").addEventListener("click", () => {
 });
 $("formulario").addEventListener("submit", palpitar);
 $("palpite").addEventListener("input", aoDigitar);
+// Enter e o botão LANÇAR chamam palpitar() direto, sem depender do envio do formulário:
+// em visualizadores que abrem o jogo numa moldura sem formulários (prévia de arquivo do
+// celular, por exemplo), o envio é bloqueado e a resposta não saía.
+$("formulario").querySelector("button[type=submit]").addEventListener("click", palpitar);
 $("palpite").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.isComposing) {
+    palpitar(e);
+    return;
+  }
   if (e.key === "Tab" && !$("sugestao").hidden) {
     e.preventDefault();
     usarSugestao();
