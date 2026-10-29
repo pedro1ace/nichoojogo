@@ -34,7 +34,8 @@ ORDEM = RAIZ / "dados" / "ordem.txt"
 MINIMO_RESPOSTAS = 1000
 FECHADAS = {
     "capitais-do-mundo", "constelacoes", "elementos-quimicos", "esportes-olimpicos",
-    "astronautas", "filmes-tom-hanks", "jogadores-da-selecao", "ossos-do-corpo", "paises", "paises-acima-do-equador",
+    "astronautas", "filmes-tom-hanks", "jogadores-da-selecao", "marcas-de-carro", "novelas-brasileiras",
+    "ossos-do-corpo", "paises", "paises-acima-do-equador", "racas-de-cachorro",
     "palavras-astro-e-cosmo", "turma-da-monica",
 }
 
