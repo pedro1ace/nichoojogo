@@ -1240,7 +1240,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     let y = yCaixa + (yCanto - yCaixa) * m;
     // na contagem (3, 2, 1) ele espera do ladinho do cartão da pergunta;
     // quando o relógio começa, desliza de volta para o cantinho
-    modoPergunta += (alvoPergunta - modoPergunta) * (1 - Math.exp(-dt * 3));
+    modoPergunta += (alvoPergunta - modoPergunta) * (1 - Math.exp(-dt * 2.4));
     cartaoPergunta = cartaoPergunta || document.getElementById("cartao-pergunta");
     const r = cartaoPergunta && cartaoPergunta.getBoundingClientRect();
     const temCartao = r && r.width > 0;
@@ -1990,8 +1990,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
     novaRodada(cat) {
       const agora = performance.now();
       for (const k of Object.keys(acesas)) delete acesas[k];
-      alvoCanto = 1;
-      alvoPergunta = 1; // espera do lado da pergunta até o relógio começar
+      // espera do lado da pergunta até o relógio começar. O cantinho fica para depois
+      // (em relogio()): mudar os dois ao mesmo tempo fazia ele ir para a esquerda e
+      // voltar para a direita na primeira pergunta, quando ainda estava no meio
+      alvoPergunta = 1;
       digitando = true;
       mostrandoResultado = false;
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
@@ -2002,6 +2004,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // O relógio começou: o tardígrado sai do lado da pergunta e vai para o cantinho.
     relogio() {
       alvoPergunta = 0;
+      alvoCanto = 1;
     },
     // Desce o foguete pelos pontos da resposta e solta a palavra numa caixinha.
     descer(texto, pontos, supernova) {
