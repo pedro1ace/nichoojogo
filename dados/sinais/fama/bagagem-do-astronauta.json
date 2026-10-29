@@ -1,6 +1,6 @@
 {
  "categoria": "bagagem-do-astronauta",
- "gerado_em": "2026-10-28",
+ "gerado_em": "2026-10-29",
  "sinais": [
   "conhecem",
   "lembranca",
@@ -16,7 +16,7 @@
   "visitas": 0.14,
   "texto": 0.03
  },
- "estimadas_pelo_llm": 111,
+ "estimadas_pelo_llm": 232,
  "respostas": {
   "Capacete": {
    "fama": 0.8649,
@@ -768,22 +768,6 @@
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": 22992,
-   "tendencia": null
-  },
-  "Cerveja": {
-   "fama": 0.1535,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": 38214,
-   "tendencia": null
-  },
-  "Vinho": {
-   "fama": 0.1369,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": 13554,
    "tendencia": null
   },
   "Água reciclada": {
@@ -5882,70 +5866,6 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Cachaça": {
-   "fama": 0.051,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Vodca": {
-   "fama": 0.0452,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Conhaque": {
-   "fama": 0.0466,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Uísque": {
-   "fama": 0.0476,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Uísque escocês envelhecido": {
-   "fama": 0.0476,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Vinho tinto": {
-   "fama": 0.0541,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Champanhe": {
-   "fama": 0.0489,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
-  "Cerveja espacial": {
-   "fama": 0.0547,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
   "Refrigerante espacial": {
    "fama": 0.0524,
    "lembranca_em_1000": null,
@@ -7138,14 +7058,6 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Revólver": {
-   "fama": 0.0492,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
-   "tendencia": null
-  },
   "Pistola de sobrevivência": {
    "fama": 0.0524,
    "lembranca_em_1000": null,
@@ -7431,6 +7343,950 @@
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pó lunar": {
+   "fama": 0.1239,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fragmento de meteorito de Marte": {
+   "fama": 0.1202,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pedaço do Wright Flyer": {
+   "fama": 0.1251,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Relógio Omega Speedmaster": {
+   "fama": 0.1237,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta espacial Fisher": {
+   "fama": 0.1245,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Disco com mensagens de líderes mundiais": {
+   "fama": 0.1303,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ramo de oliveira de ouro": {
+   "fama": 0.1284,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Broche de ramo de oliveira": {
+   "fama": 0.1244,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandeira da ONU": {
+   "fama": 0.1265,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandeira do estado natal": {
+   "fama": 0.1305,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandeira do time": {
+   "fama": 0.1285,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Camisa de time de futebol": {
+   "fama": 0.1297,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Camisa da Seleção": {
+   "fama": 0.1286,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bola da Copa": {
+   "fama": 0.1294,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bandeira de escola": {
+   "fama": 0.1295,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Foto do filho": {
+   "fama": 0.1321,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Desenho de criança": {
+   "fama": 0.1296,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carta da filha": {
+   "fama": 0.1292,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartão de Dia dos Pais": {
+   "fama": 0.1326,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro O Pequeno Príncipe": {
+   "fama": 0.1299,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de Harry Potter": {
+   "fama": 0.1335,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de Júlio Verne": {
+   "fama": 0.1289,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alcorão de bolso": {
+   "fama": 0.1222,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calendário islâmico": {
+   "fama": 0.1243,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tapete de oração": {
+   "fama": 0.1262,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kit de comunhão": {
+   "fama": 0.1271,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Menorá de Hanukkah": {
+   "fama": 0.1095,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dreidel": {
+   "fama": 0.1064,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Estátua do Fallen Astronaut": {
+   "fama": 0.1227,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boneco do Woody": {
+   "fama": 0.1228,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Yoda de brinquedo": {
+   "fama": 0.1243,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sabre de luz de Luke Skywalker": {
+   "fama": 0.125,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Boneco do Stormtrooper": {
+   "fama": 0.1228,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Dino de pelúcia": {
+   "fama": 0.1214,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pelúcia de cachorro": {
+   "fama": 0.1238,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pelúcia de gato": {
+   "fama": 0.124,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bonequinho do Olaf": {
+   "fama": 0.1159,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bonequinho do Snoopy": {
+   "fama": 0.1159,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mascote da missão": {
+   "fama": 0.1247,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ursinho indicador de gravidade zero": {
+   "fama": 0.1241,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Peixinhos": {
+   "fama": 0.1177,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Peixe-zebra": {
+   "fama": 0.1234,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tardígrados": {
+   "fama": 0.1057,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lula-bobtail": {
+   "fama": 0.1179,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Camundongos": {
+   "fama": 0.1064,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ratos de laboratório": {
+   "fama": 0.125,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rãs": {
+   "fama": 0.1079,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bichos-da-seda": {
+   "fama": 0.123,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Vermes nematoides": {
+   "fama": 0.1125,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mofo": {
+   "fama": 0.1192,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Musgo": {
+   "fama": 0.1178,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Trigo anão": {
+   "fama": 0.1225,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ervilha": {
+   "fama": 0.1189,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flor de zínia": {
+   "fama": 0.117,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Girassol espacial": {
+   "fama": 0.1226,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sementes de feijão": {
+   "fama": 0.1253,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Experimento do feijão": {
+   "fama": 0.1235,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sementes de café": {
+   "fama": 0.1281,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Grãos de café": {
+   "fama": 0.1301,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Máquina de espresso": {
+   "fama": 0.1229,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Copo de café espacial": {
+   "fama": 0.127,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Copo de gravidade zero": {
+   "fama": 0.126,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canudo com válvula": {
+   "fama": 0.1276,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Garrafa de água reutilizável": {
+   "fama": 0.1243,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Filtro de água": {
+   "fama": 0.1295,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pano de limpeza": {
+   "fama": 0.1268,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lenço desinfetante": {
+   "fama": 0.1188,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Aspirador de pó": {
+   "fama": 0.1237,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Saco de aspirador": {
+   "fama": 0.1234,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita Kapton": {
+   "fama": 0.1256,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Velcro adesivo": {
+   "fama": 0.1214,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ganchos": {
+   "fama": 0.1064,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Elásticos de cabelo": {
+   "fama": 0.13,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prendedor de cabelo": {
+   "fama": 0.1232,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Óculos de leitura": {
+   "fama": 0.1281,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lupa": {
+   "fama": 0.1186,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Espelho de pulso": {
+   "fama": 0.1248,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lista de checagem de pulso": {
+   "fama": 0.124,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Livro de bordo": {
+   "fama": 0.1291,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Diário de bordo": {
+   "fama": 0.1268,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Prancheta de joelho": {
+   "fama": 0.1198,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caneta de feltro": {
+   "fama": 0.1233,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marcador permanente": {
+   "fama": 0.1253,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Etiquetas": {
+   "fama": 0.1244,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Câmera 3D": {
+   "fama": 0.1274,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Câmera IMAX": {
+   "fama": 0.1274,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Filme IMAX": {
+   "fama": 0.1329,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartão de memória": {
+   "fama": 0.1296,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Notebook IBM": {
+   "fama": 0.1255,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Kindle de astronauta": {
+   "fama": 0.1193,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rádio portátil": {
+   "fama": 0.1269,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rádio de sobrevivência": {
+   "fama": 0.1272,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Transmissor de emergência": {
+   "fama": 0.1233,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rastreador GPS": {
+   "fama": 0.1186,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Relógio digital": {
+   "fama": 0.1286,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Despertador": {
+   "fama": 0.1203,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Calendário": {
+   "fama": 0.1271,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tabuleiro de xadrez magnético": {
+   "fama": 0.123,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Damas magnéticas": {
+   "fama": 0.1204,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jogo de dardos com velcro": {
+   "fama": 0.128,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bola de pingue-pongue": {
+   "fama": 0.1196,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Raquete de pingue-pongue": {
+   "fama": 0.1161,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pião de brinquedo": {
+   "fama": 0.1205,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ioiô de astronauta": {
+   "fama": 0.1166,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bumerangue de papel": {
+   "fama": 0.1233,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Avião de papel": {
+   "fama": 0.1291,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bola de futebol americano": {
+   "fama": 0.1297,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Luva de beisebol": {
+   "fama": 0.1205,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bola de tênis": {
+   "fama": 0.1278,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Peteca de badminton": {
+   "fama": 0.1164,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Frisbee de espuma": {
+   "fama": 0.1177,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Violão Larrivée": {
+   "fama": 0.1262,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Teclado eletrônico": {
+   "fama": 0.1273,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Flauta transversal": {
+   "fama": 0.1212,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Gaita de foles": {
+   "fama": 0.1192,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "CD": {
+   "fama": 0.1295,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Fita cassete": {
+   "fama": 0.1224,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Walkman": {
+   "fama": 0.1155,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
    "visitas_pt_12m": null,
    "tendencia": null
   }

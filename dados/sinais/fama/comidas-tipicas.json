@@ -1,6 +1,6 @@
 {
  "categoria": "comidas-tipicas",
- "gerado_em": "2026-10-28",
+ "gerado_em": "2026-10-29",
  "sinais": [
   "conhecem",
   "lembranca",
@@ -14,7 +14,7 @@
   "revisao": 0.08,
   "texto": 0.03
  },
- "estimadas_pelo_llm": 119,
+ "estimadas_pelo_llm": 234,
  "respostas": {
   "Feijoada": {
    "fama": 0.9872,
@@ -1848,36 +1848,12 @@
    "visitas_pt_12m": null,
    "tendencia": null
   },
-  "Caipirinha": {
-   "fama": 0.0274,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": 14052,
-   "tendencia": null
-  },
-  "Cachaça": {
-   "fama": 0.0302,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": 20184,
-   "tendencia": null
-  },
   "Quentão": {
    "fama": 0.0239,
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
    "visitas_pt_12m": 1590,
-   "tendencia": null
-  },
-  "Batida de coco": {
-   "fama": 0.0318,
-   "lembranca_em_1000": null,
-   "estimada": false,
-   "conhecem_pct": null,
-   "visitas_pt_12m": null,
    "tendencia": null
   },
   "Garapa": {
@@ -7445,6 +7421,918 @@
    "lembranca_em_1000": null,
    "estimada": false,
    "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Ora-pro-nóbis com frango": {
+   "fama": 0.1282,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Costelinha com mandioca": {
+   "fama": 0.1327,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Costelinha com canjiquinha": {
+   "fama": 0.13,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Feijão-tropeiro com torresmo": {
+   "fama": 0.1262,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Biscoito de goma": {
+   "fama": 0.1227,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Peta": {
+   "fama": 0.1186,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Brevidade": {
+   "fama": 0.1199,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Doce de leite de Viçosa": {
+   "fama": 0.1279,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Goiabada com queijo": {
+   "fama": 0.1299,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Queijo minas padrão": {
+   "fama": 0.1298,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastel de angu": {
+   "fama": 0.1211,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bambá de couve": {
+   "fama": 0.1169,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caldo de mandioca": {
+   "fama": 0.1247,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caldo de abóbora": {
+   "fama": 0.1246,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Caldo de quiabo": {
+   "fama": 0.1225,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sopa de fubá": {
+   "fama": 0.1249,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galinha ao molho": {
+   "fama": 0.1309,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arroz com suã": {
+   "fama": 0.1272,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Suã de porco": {
+   "fama": 0.119,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lombo com tutu": {
+   "fama": 0.1279,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Leitoa assada": {
+   "fama": 0.1194,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cabrito ensopado": {
+   "fama": 0.1195,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Carne de lata": {
+   "fama": 0.128,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Lata de porco": {
+   "fama": 0.1259,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Couve com angu": {
+   "fama": 0.1278,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Jiló refogado": {
+   "fama": 0.1197,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Taioba refogada": {
+   "fama": 0.1155,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mandioca com costela": {
+   "fama": 0.1292,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuscuz de milho com ovo": {
+   "fama": 0.1289,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tapioca de carne de sol": {
+   "fama": 0.1277,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tapioca de frango com catupiry": {
+   "fama": 0.1301,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Crepioca": {
+   "fama": 0.1138,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mungunzá de milho branco": {
+   "fama": 0.1241,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Canjica nordestina": {
+   "fama": 0.1207,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pamonha nordestina": {
+   "fama": 0.1206,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Milho assado": {
+   "fama": 0.1256,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Milho cozido": {
+   "fama": 0.1259,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Curau de milho": {
+   "fama": 0.1216,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de milho verde": {
+   "fama": 0.1291,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de fubá cremoso": {
+   "fama": 0.1247,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de puba": {
+   "fama": 0.1214,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de carimã": {
+   "fama": 0.121,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de goma": {
+   "fama": 0.1253,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo pé de moleque": {
+   "fama": 0.1277,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de bacia": {
+   "fama": 0.1274,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Tareco": {
+   "fama": 0.1142,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pé de moleque de massa de mandioca": {
+   "fama": 0.1272,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Doce de jaca": {
+   "fama": 0.1252,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Doce de buriti": {
+   "fama": 0.1258,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Doce de umbu": {
+   "fama": 0.1232,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Doce de mangaba": {
+   "fama": 0.1229,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Doce de jenipapo": {
+   "fama": 0.1238,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cocada de licuri": {
+   "fama": 0.1168,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bala de licuri": {
+   "fama": 0.1199,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Doce de banana em rodela": {
+   "fama": 0.129,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bananada": {
+   "fama": 0.1156,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mariola": {
+   "fama": 0.115,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pé de moleque de rapadura": {
+   "fama": 0.1247,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Alfenim": {
+   "fama": 0.1121,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Puxa-puxa": {
+   "fama": 0.1252,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Chouriço doce": {
+   "fama": 0.1249,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo Luís Felipe": {
+   "fama": 0.1288,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de noiva pernambucano": {
+   "fama": 0.1269,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cartola de queijo coalho": {
+   "fama": 0.1232,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de fubá com goiabada": {
+   "fama": 0.1281,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pudim de leite condensado": {
+   "fama": 0.1261,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pudim de pão": {
+   "fama": 0.1264,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pudim de tapioca": {
+   "fama": 0.1227,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Manjar de coco": {
+   "fama": 0.1231,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mousse de chocolate": {
+   "fama": 0.126,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Torta de limão": {
+   "fama": 0.1263,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Torta holandesa": {
+   "fama": 0.124,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pavê de bolacha": {
+   "fama": 0.1212,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de brigadeiro": {
+   "fama": 0.127,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo prestígio": {
+   "fama": 0.1269,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo formigueiro": {
+   "fama": 0.1245,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de laranja": {
+   "fama": 0.1285,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de coco gelado": {
+   "fama": 0.1267,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolo de banana": {
+   "fama": 0.1277,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuca de goiabada": {
+   "fama": 0.1218,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pé de moleque de amendoim": {
+   "fama": 0.1258,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Paçoca de rolha": {
+   "fama": 0.1202,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Amendoim torrado": {
+   "fama": 0.1221,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pipoca doce": {
+   "fama": 0.1272,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Churros": {
+   "fama": 0.1048,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cachorro-quente prensado": {
+   "fama": 0.1252,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Esfirra de carne": {
+   "fama": 0.1222,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Bolinho de feijoada": {
+   "fama": 0.1233,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mandiopã": {
+   "fama": 0.1048,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Torresmo de panela": {
+   "fama": 0.1228,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mortadela": {
+   "fama": 0.1195,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Média com pão na chapa": {
+   "fama": 0.1336,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Misto frio": {
+   "fama": 0.1272,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Beirute de rosbife": {
+   "fama": 0.1186,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Rosbife": {
+   "fama": 0.1174,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Picadinho carioca": {
+   "fama": 0.1239,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Frango com farofa": {
+   "fama": 0.1304,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Frango assado com farofa": {
+   "fama": 0.1288,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Maionese": {
+   "fama": 0.1233,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Feijão com arroz e ovo": {
+   "fama": 0.1307,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Arroz, feijão, bife e batata frita": {
+   "fama": 0.1253,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Marmita": {
+   "fama": 0.1203,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Quentinha": {
+   "fama": 0.1213,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Comida de vó": {
+   "fama": 0.1265,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Galinha ensopada": {
+   "fama": 0.1261,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sopa de macarrão": {
+   "fama": 0.1263,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pizza doce": {
+   "fama": 0.1282,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Beirute paulista": {
+   "fama": 0.1248,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Sanduíche de pernil do Mercadão": {
+   "fama": 0.1217,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Pastel de bacalhau do Mercadão": {
+   "fama": 0.1246,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Cuscuz paulista de camarão": {
+   "fama": 0.1249,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Virado de banana-da-terra": {
+   "fama": 0.1273,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Mandioca com linguiça": {
+   "fama": 0.1294,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
+   "visitas_pt_12m": null,
+   "tendencia": null
+  },
+  "Churrasco de domingo": {
+   "fama": 0.1286,
+   "lembranca_em_1000": 0.05,
+   "estimada": true,
+   "conhecem_pct": 65.0,
    "visitas_pt_12m": null,
    "tendencia": null
   }

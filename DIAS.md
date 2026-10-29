@@ -104,10 +104,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Bebidas | Cite uma bebida (com ou sem álcool) | 829 |
-| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 927 |
-| 3 | Cores | Cite uma cor (ou um tom de cor) | 675 |
+| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1034 |
+| 3 | Cores | Cite uma cor (ou um tom de cor) | 1057 |
 | 4 | Países | Cite um país | 242 |
-| 5 | Material escolar | Cite um item de material escolar | 760 |
+| 5 | Material escolar | Cite um item de material escolar | 1037 |
 | 6 | Coisas redondas | Cite algo que é redondo | 1201 |
 | 7 | Coisas com casca | Cite algo que tem casca | 1039 |
 
@@ -117,7 +117,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Marcas de carro | Cite uma marca de carro | 657 |
 | 2 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3759 |
-| 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 800 |
+| 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1070 |
 | 4 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
 | 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 258 |
 | 6 | Coisas com camadas | Cite algo que tem camadas | 1391 |
