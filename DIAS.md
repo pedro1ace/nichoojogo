@@ -47,7 +47,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Coisas da cozinha | Cite um objeto ou eletrodoméstico que tem numa cozinha | 1003 |
 | 3 | Cidades do Brasil | Cite uma cidade brasileira | 5289 |
 | 4 | Coisas que voam | Cite algo que voa (bicho, máquina ou coisa) | 1127 |
-| 5 | Queijos | Cite um tipo de queijo | 1011 |
+| 5 | Queijos | Cite um tipo de queijo | 1788 |
 | 6 | Missões espaciais | Cite uma missão espacial | 1020 |
 | 7 | Ossos do corpo | Cite um osso do corpo humano | 82 |
 
@@ -70,10 +70,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Estrelas | Cite o nome de uma estrela (de verdade, do céu) | 2362 |
 | 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2445 |
 | 3 | Profissões | Cite uma profissão | 1141 |
-| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1040 |
+| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1043 |
 | 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1066 |
 | 6 | Coisas com dentes | Cite algo que tem dentes | 1068 |
-| 7 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1108 |
+| 7 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1144 |
 
 ## Dia 7 · ter 03/11/2026
 
@@ -94,7 +94,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Novelas brasileiras | Cite uma novela brasileira | 677 |
 | 2 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1098 |
 | 3 | Constelações | Cite uma das 88 constelações oficiais | 88 |
-| 4 | Raças de cachorro | Cite uma raça de cachorro | 612 |
+| 4 | Raças de cachorro | Cite uma raça de cachorro | 1062 |
 | 5 | Capitais do mundo | Cite a capital de um país | 204 |
 | 6 | Times de futebol do Brasil | Cite um time de futebol brasileiro | 1216 |
 | 7 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2429 |
@@ -103,8 +103,8 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Bebidas | Cite uma bebida (com ou sem álcool) | 829 |
-| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1034 |
+| 1 | Bebidas com gás | Cite uma bebida com gás | 1302 |
+| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1044 |
 | 3 | Cores | Cite uma cor (ou um tom de cor) | 1057 |
 | 4 | Países | Cite um país | 242 |
 | 5 | Material escolar | Cite um item de material escolar | 1037 |
@@ -115,18 +115,30 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Marcas de carro | Cite uma marca de carro | 657 |
+| 1 | Marcas de carro | Cite uma marca de carro | 3791 |
 | 2 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3759 |
 | 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1070 |
 | 4 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
 | 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1033 |
-| 6 | Coisas com camadas | Cite algo que tem camadas | 1391 |
+| 6 | Coisas com camadas | Cite algo que tem camadas | 1389 |
 | 7 | Tipos de corrida | Cite um tipo de corrida | 1106 |
+
+## Dia 11 · sáb 07/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Motivos para gritar | Cite um motivo para gritar | 1155 |
+| 2 | Motivos para rir | Cite um motivo para rir | 1491 |
+| 3 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1444 |
+| 4 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1262 |
+| 5 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1201 |
+| 6 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4697 |
+| 7 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2087 |
 
 ## Na fila (ainda não formam um dia)
 
-- Motivos para gritar
-- Motivos para rir
-- Porta da geladeira
-- Formas de matar um inseto
-- Animais da cidade
+- Lagos e mares
+- Filmes
+- Séries de TV
+- Jogadores de futebol
+- Modelos de carro
