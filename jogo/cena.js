@@ -601,7 +601,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const c1 = empacotar(corDoFundo(base + FAIXA));
       const frac = (al - base) / FAIXA;
       const linha = y * L;
-      if (al < 380) {
+      if (al < 380 || semEfeitos) {
         // perto da Terra: degradê liso, cada linha com a cor exata
         const c = empacotar(corDoFundo(al));
         pixels.fill(c, linha, linha + L);
@@ -611,7 +611,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const padrao = [0, 1, 2, 3].map((i) => (frac > BAYER[b + i] ? c1 : c0));
       for (let x = 0; x < L; x++) pixels[linha + x] = padrao[x & 3];
     }
-    desenharParedesPixel(empacotar);
+    if (!semEfeitos) desenharParedesPixel(empacotar);
     ctx.putImageData(imagem, 0, 0);
   }
 
@@ -773,6 +773,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       ctx.fillStyle = "#163a8a";
       ctx.fillRect(0, 0, L, fundo - terra.height);
     }
+    if (semEfeitos) return;
     // satélite na borda da Terra (o "barquinho" do início), no mesmo estilo dos outros
     const pz = Math.max(2, Math.round(escala * 0.5));
     const ey = (naTelaExata(0) - 40) * escala + Math.sin(tempo * 0.8) * 2;
@@ -927,7 +928,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.translate(x, y);
     tx.rotate(giro);
     tx.shadowColor = brilho;
-    tx.shadowBlur = pz * 4;
+    tx.shadowBlur = semEfeitos ? 0 : pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
   }
@@ -1386,18 +1387,20 @@ function criarCena(telaPixel, telaTexto, raiz) {
       halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
       halo.addColorStop(1, "rgba(255, 110, 40, 0)");
     }
-    tx.save();
-    tx.globalCompositeOperation = "lighter";
-    tx.fillStyle = halo;
-    tx.fillRect(sx - rb, sy - rb, rb * 2, rb * 2);
-    tx.restore();
+    if (!semEfeitos) {
+      tx.save();
+      tx.globalCompositeOperation = "lighter";
+      tx.fillStyle = halo;
+      tx.fillRect(sx - rb, sy - rb, rb * 2, rb * 2);
+      tx.restore();
+    }
     tx.save();
     tx.imageSmoothingEnabled = false;
     tx.translate(sx, sy);
     tx.rotate(inclina * Math.sign(mascote.virar || 1));
     tx.scale(mascote.virar / resp, resp);
     tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : "rgba(255, 140, 60, 0.75)";
-    tx.shadowBlur = pz * 4;
+    tx.shadowBlur = semEfeitos ? 0 : pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
     const k = mascote.singular;
@@ -1525,7 +1528,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // perto da linha de foco (onde a caixa passa) eles acendem; longe, ficam bem discretos
     const yFoco = naTelaTexto(camera.atual);
     const aceso = (y) => Math.max(0, 1 - Math.abs(y - yFoco) / 110);
-    for (const m of noInicio ? [] : MARCOS) {
+    for (const m of noInicio || semEfeitos ? [] : MARCOS) {
       if (m.real == null) continue; // Sistema Solar (descida inicial): só o cenário, sem linha
       const distancia = `${m.real.toLocaleString("pt-BR")} AL`;
       if (m.junto) {
@@ -1573,7 +1576,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     alfaCurio += ((digitando || fimDeJogo ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
     tx.globalAlpha = alfaCurio;
     CURIOSIDADES.forEach(([al, texto], i) => {
-      if (noInicio || alfaCurio < 0.02) return;
+      if (noInicio || semEfeitos || alfaCurio < 0.02) return;
       const yc = naTelaTexto(al);
       if (cobertas.some(([a, b]) => yc > a && yc < b)) return;
       const y = naTelaTexto(al);
@@ -1626,7 +1629,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
           const pulso = Math.exp(-t * 3);
           tx.save();
           tx.shadowColor = f.cor;
-          tx.shadowBlur = 8 + 18 * pulso;
+          tx.shadowBlur = semEfeitos ? 0 : 8 + 18 * pulso;
           tx.globalAlpha = 0.9;
           tx.fillStyle = f.cor;
           for (let x = centro0; x < centro1; x += 8) tx.fillRect(x, Math.round(y) - 0.5, 6, 2 + pulso * 2);
@@ -1640,7 +1643,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       }
     }
 
-    desenharApagao(agora);
+    if (!semEfeitos) desenharApagao(agora);
     desenharRastro();
     desenharCaixas(agora);
     desenharEstouros();
@@ -1648,6 +1651,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     if (pintarMascote) { pintarMascote(); pintarMascote = null; }
 
     // brilho em volta do foguete e vinheta, mais fortes no escuro
+    if (semEfeitos) { flash = 0; return; }
     const fx = foguete.x * escala;
     const fy = foguete.y * escala;
     if (escuro > 0.05 && !negativo) {
@@ -1899,7 +1903,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       caixa(0, 2 * p, w, h - 4 * p);
       // brilho em volta, na cor da faixa
       tx.shadowColor = c.cor;
-      tx.shadowBlur = c.brilho + 6;
+      tx.shadowBlur = semEfeitos ? 0 : c.brilho + 6;
       tx.fillStyle = c.cor;
       tx.globalAlpha = alfa * 0.9;
       // borda em degraus de pixel (cantos recortados)
@@ -1921,13 +1925,15 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.textAlign = "center";
       tx.textBaseline = "middle";
       tx.shadowColor = c.cor;
-      tx.shadowBlur = 18;
+      tx.shadowBlur = semEfeitos ? 0 : 18;
       tx.fillStyle = c.cor;
       tx.fillText(texto, 0, p * 0.5);
-      tx.shadowBlur = 4;
-      tx.fillStyle = "#ffffff";
-      tx.globalAlpha = alfa * 0.35;
-      tx.fillText(texto, 0, p * 0.5);
+      if (!semEfeitos) {
+        tx.shadowBlur = 4;
+        tx.fillStyle = "#ffffff";
+        tx.globalAlpha = alfa * 0.35;
+        tx.fillText(texto, 0, p * 0.5);
+      }
       tx.shadowBlur = 0;
       desenharCompanhia(c, w, h, true, alfa);
       tx.restore();
@@ -1986,23 +1992,29 @@ function criarCena(telaPixel, telaTexto, raiz) {
     atualizarCamera(agora);
     anterior = agora;
     desenharFundo();
-    desenharRaios();
     tx.setTransform(dpr, 0, 0, dpr, 0, 0);
     tx.clearRect(0, 0, innerWidth, innerHeight);
-    desenharPanoDeFundo();
-    desenharEstrelas();
-    desenharCadentes();
-    desenharLaterais();
-    desenharHalos();
-    desenharCorpos();
-    desenharNuvens();
-    desenharISS();
-    desenharTerraNaCena();
-    desenharObjetos();
-    desenharMarcosPixel();
-    desenharPenumbra();
-    const kh = forcaHorizonte();
-    if (kh > 0) tingirHorizonte(kh);
+    if (semEfeitos) {
+      // modo simples: só o degradê do fundo, a Terra no começo, o mascote e as caixas
+      verificarNegativo();
+      desenharTerraNaCena();
+    } else {
+      desenharRaios();
+      desenharPanoDeFundo();
+      desenharEstrelas();
+      desenharCadentes();
+      desenharLaterais();
+      desenharHalos();
+      desenharCorpos();
+      desenharNuvens();
+      desenharISS();
+      desenharTerraNaCena();
+      desenharObjetos();
+      desenharMarcosPixel();
+      desenharPenumbra();
+      const kh = forcaHorizonte();
+      if (kh > 0) tingirHorizonte(kh);
+    }
     const foguete = desenharFoguete();
     desenharTextos(agora);
     if (quadro % 6 === 0) {
@@ -2125,7 +2137,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
       mascote.dourado = true;
       if (festa && !semEfeitos) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
     },
-    // Opção "sem efeitos": sem tremor, clarão, apagão, explosões e balanço.
+    // Opção "sem efeitos": sem tremor, clarão, apagão, explosões e balanço, e um cenário
+    // bem simples e leve (sem estrelas, planetas, paredes, curiosidades nem vinheta).
     semEfeitos(ligado) {
       semEfeitos = ligado;
       reduzirMovimento = movimentoDoSistema || ligado;
