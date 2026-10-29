@@ -126,3 +126,4 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 ## Na fila (ainda não formam um dia)
 
 - Motivos para gritar
+- Motivos para rir
