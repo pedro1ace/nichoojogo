@@ -47,7 +47,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Coisas da cozinha | Cite um objeto ou eletrodoméstico que tem numa cozinha | 1003 |
 | 3 | Cidades do Brasil | Cite uma cidade brasileira | 5289 |
 | 4 | Coisas que voam | Cite algo que voa (bicho, máquina ou coisa) | 1127 |
-| 5 | Queijos | Cite um tipo de queijo | 1011 |
+| 5 | Queijos | Cite um tipo de queijo | 1788 |
 | 6 | Missões espaciais | Cite uma missão espacial | 1020 |
 | 7 | Ossos do corpo | Cite um osso do corpo humano | 82 |
 
@@ -94,7 +94,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Novelas brasileiras | Cite uma novela brasileira | 677 |
 | 2 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1098 |
 | 3 | Constelações | Cite uma das 88 constelações oficiais | 88 |
-| 4 | Raças de cachorro | Cite uma raça de cachorro | 612 |
+| 4 | Raças de cachorro | Cite uma raça de cachorro | 1062 |
 | 5 | Capitais do mundo | Cite a capital de um país | 204 |
 | 6 | Times de futebol do Brasil | Cite um time de futebol brasileiro | 1216 |
 | 7 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2429 |
@@ -115,7 +115,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Marcas de carro | Cite uma marca de carro | 657 |
+| 1 | Marcas de carro | Cite uma marca de carro | 3791 |
 | 2 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3759 |
 | 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1070 |
 | 4 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
