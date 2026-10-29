@@ -29,6 +29,35 @@ def enxugar(cat: dict) -> dict:
 
 ORDEM = RAIZ / "dados" / "ordem.txt"
 
+# Regra do banco: toda categoria aberta precisa de pelo menos 1000 respostas.
+# As fechadas (o mundo só tem aquele tanto) são exceção e ficam com o tamanho real.
+MINIMO_RESPOSTAS = 1000
+FECHADAS = {
+    "capitais-do-mundo", "constelacoes", "elementos-quimicos", "esportes-olimpicos",
+    "astronautas", "filmes-tom-hanks", "jogadores-da-selecao", "marcas-de-carro", "novelas-brasileiras",
+    "ossos-do-corpo", "paises", "paises-acima-do-equador", "racas-de-cachorro",
+    "palavras-astro-e-cosmo", "turma-da-monica",
+}
+
+
+def contar_respostas(cid: str) -> int:
+    arq = RAIZ / "dados" / "categorias" / f"{cid}.txt"
+    return sum(1 for l in arq.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#"))
+
+
+def avisar_pequenas(fila: list[str]) -> None:
+    """Avisa das categorias abertas da fila que ainda não chegaram a MINIMO_RESPOSTAS."""
+    import datetime as dt
+    hoje = (dt.date.today() - dt.date(2026, 10, 28)).days  # índice do dia de hoje na fila
+    pequenas = [(i // 7 + 1, cid, n) for i, cid in enumerate(fila)
+                if cid not in FECHADAS and (n := contar_respostas(cid)) < MINIMO_RESPOSTAS]
+    futuras = [p for p in pequenas if p[0] > hoje + 1]  # o dia de hoje já está no ar
+    if futuras:
+        print(f"AVISO: {len(futuras)} categorias abertas ainda não foram ao ar e têm menos de "
+              f"{MINIMO_RESPOSTAS} respostas:")
+        for dia, cid, n in futuras:
+            print(f"  dia #{dia}: {cid} ({n})")
+
 
 def ordem_dos_dias(indice: list[dict]) -> list[str]:
     """A fila de categorias do jogo (dados/ordem.txt). Categoria que ainda não está na fila
@@ -48,6 +77,7 @@ def ordem_dos_dias(indice: list[dict]) -> list[str]:
     ultimo = dt.date(2026, 10, 28) + dt.timedelta(days=len(fila) // 7 - 1)
     print(f"dados/ordem.txt: {len(fila)} categorias, dá até o dia #{len(fila) // 7} ({ultimo:%d/%m/%Y})")
     escrever_dias(indice, fila)
+    avisar_pequenas(fila)
     return fila
 
 
@@ -67,8 +97,7 @@ def escrever_dias(indice: list[dict], fila: list[str]) -> None:
                    "| # | Categoria | Pergunta | Respostas |", "|---|---|---|---|"]
         for k, cid in enumerate(fila[7 * d:7 * d + 7], 1):
             c = por_id[cid]
-            arq = RAIZ / "dados" / "categorias" / f"{cid}.txt"
-            n = sum(1 for l in arq.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#"))
+            n = contar_respostas(cid)
             linhas.append(f"| {k} | {c['titulo']} | {c['pergunta']} | {n} |")
         linhas.append("")
     sobra = fila[len(fila) // 7 * 7:]

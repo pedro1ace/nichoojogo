@@ -31,12 +31,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas amarelas | Cite algo que é amarelo | 956 |
-| 2 | Legumes e verduras | Cite um legume ou uma verdura | 531 |
+| 1 | Coisas amarelas | Cite algo que é amarelo | 1351 |
+| 2 | Legumes e verduras | Cite um legume ou uma verdura | 1093 |
 | 3 | Brincadeiras e jogos | Cite uma brincadeira ou um jogo (de rua, de mesa ou de cartas) | 1075 |
 | 4 | Gigantes do Spotify | Cite um dos 3 mil artistas mais ouvidos de todos os tempos no Spotify | 2989 |
-| 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 903 |
-| 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 654 |
+| 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 927 |
+| 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 1055 |
 | 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 8395 |
 
 ## Dia 4 · sáb 31/10/2026
@@ -44,11 +44,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Palavras astro e cosmo | Cite uma palavra que comece com "astro" ou "cosmo" | 111 |
-| 2 | Coisas da cozinha | Cite um objeto ou eletrodoméstico que tem numa cozinha | 986 |
+| 2 | Coisas da cozinha | Cite um objeto ou eletrodoméstico que tem numa cozinha | 1003 |
 | 3 | Cidades do Brasil | Cite uma cidade brasileira | 5289 |
 | 4 | Coisas que voam | Cite algo que voa (bicho, máquina ou coisa) | 1127 |
-| 5 | Queijos | Cite um tipo de queijo | 432 |
-| 6 | Missões espaciais | Cite uma missão espacial | 555 |
+| 5 | Queijos | Cite um tipo de queijo | 1011 |
+| 6 | Missões espaciais | Cite uma missão espacial | 1020 |
 | 7 | Ossos do corpo | Cite um osso do corpo humano | 82 |
 
 ## Dia 5 · dom 01/11/2026
@@ -60,8 +60,8 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Turma da Mônica | Cite um personagem dos quadrinhos do Mauricio de Sousa | 62 |
 | 4 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 680 |
 | 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1689 |
-| 6 | Frutas | Cite uma fruta | 283 |
-| 7 | Peixes | Cite um peixe | 933 |
+| 6 | Frutas | Cite uma fruta | 1074 |
+| 7 | Peixes | Cite um peixe | 1012 |
 
 ## Dia 6 · seg 02/11/2026
 
@@ -70,10 +70,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Estrelas | Cite o nome de uma estrela (de verdade, do céu) | 2362 |
 | 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2445 |
 | 3 | Profissões | Cite uma profissão | 1141 |
-| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 929 |
-| 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 977 |
-| 6 | Coisas com dentes | Cite algo que tem dentes | 994 |
-| 7 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 585 |
+| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1040 |
+| 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1066 |
+| 6 | Coisas com dentes | Cite algo que tem dentes | 1068 |
+| 7 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1108 |
 
 ## Dia 7 · ter 03/11/2026
 
@@ -104,17 +104,29 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Bebidas | Cite uma bebida (com ou sem álcool) | 829 |
-| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 927 |
-| 3 | Cores | Cite uma cor (ou um tom de cor) | 675 |
+| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1034 |
+| 3 | Cores | Cite uma cor (ou um tom de cor) | 1057 |
 | 4 | Países | Cite um país | 242 |
-| 5 | Material escolar | Cite um item de material escolar | 760 |
+| 5 | Material escolar | Cite um item de material escolar | 1037 |
 | 6 | Coisas redondas | Cite algo que é redondo | 1201 |
 | 7 | Coisas com casca | Cite algo que tem casca | 1039 |
 
+## Dia 10 · sex 06/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Marcas de carro | Cite uma marca de carro | 657 |
+| 2 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3759 |
+| 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1070 |
+| 4 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
+| 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1033 |
+| 6 | Coisas com camadas | Cite algo que tem camadas | 1391 |
+| 7 | Tipos de corrida | Cite um tipo de corrida | 1106 |
+
 ## Na fila (ainda não formam um dia)
 
-- Marcas de carro
-- Música brasileira
-- Defesas dos animais
-- Filmes com o Tom Hanks
-- Plantas de casa
+- Motivos para gritar
+- Motivos para rir
+- Porta da geladeira
+- Formas de matar um inseto
+- Animais da cidade
