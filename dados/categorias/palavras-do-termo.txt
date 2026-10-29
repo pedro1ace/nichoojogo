@@ -1,14 +1,14 @@
 # titulo: Palavras do Termo
 # pergunta: Cite uma palavra de 5 letras que poderia aparecer no Termo
 # formato: uma resposta por linha; apelidos separados por " | "
-# fonte: dicionário de frequência do pyspellchecker (pt), palavras de 5 letras
+# fonte: lista de palavras válidas do Wordle em português (github.com/Hugo0/wordle, wordle.global/pt)
 minha
 muito
 fazer
 estou
-estás | estas
+estás
 tenho
-estão | estao
+estão
 sobre
 quero
 vamos
@@ -41,9 +41,9 @@ menos
 noite
 parte
 sabes
-então | entao
+então
 todas
-vocês | voces
+vocês
 saber
 tenha
 podem
@@ -67,7 +67,7 @@ quase
 seria
 vezes
 gente
-atrás | atras
+atrás
 somos
 gosto
 causa
@@ -106,7 +106,7 @@ fazes
 pelos
 olhar
 sinto
-irmão | irmao
+irmão
 olhos
 foste
 comer
@@ -114,7 +114,7 @@ esses
 corpo
 parar
 claro
-razão | razao
+razão
 haver
 porta
 feliz
@@ -135,14 +135,14 @@ fazem
 rapaz
 longe
 matou
-sítio | sitio
-única | unica
+sítio
+única
 pelas
 pagar
 sorte
 ontem
 falta
-faças | facas
+faças
 ajuda
 capaz
 festa
@@ -159,7 +159,7 @@ teres
 devem
 tipos
 deixa
-fácil | facil
+fácil
 viste
 jogar
 certo
@@ -171,7 +171,7 @@ abrir
 faria
 meses
 morto
-força | forca
+força
 sinal
 facto
 fazia
@@ -185,7 +185,6 @@ lutar
 chefe
 lista
 tiver
-nessa
 linha
 disto
 filme
@@ -195,8 +194,8 @@ nesse
 ambos
 tanta
 terra
-manhã | manha
-miúda | miuda
+manhã
+miúda
 levou
 cerca
 chega
@@ -204,10 +203,10 @@ forte
 baixo
 campo
 lidar
-miúdo | miudo
+miúdo
 cheio
 fomos
-serão | serao
+serão
 caixa
 vindo
 prova
@@ -219,7 +218,7 @@ final
 tocar
 falou
 chama
-avião | aviao
+avião
 trato
 seres
 certa
@@ -241,7 +240,7 @@ longo
 terem
 roupa
 diria
-nível | nivel
+nível
 achei
 mente
 bater
@@ -291,8 +290,8 @@ tenta
 pobre
 ouviu
 serei
-senão | senao
-preço | preco
+senão
+preço
 terei
 saiba
 novas
@@ -306,41 +305,40 @@ andam
 linda
 risco
 fotos
-façam | facam
-série | serie
-nisso
+façam
+série
 valor
-único | unico
+único
 viram
 breve
 hotel
 dizia
 vimos
-saída | saida
+saída
 pista
 obter
 posto
 mudou
-terás | teras
-sério | serio
+terás
+sério
 acaso
 fonte
-líder | lider
+líder
 apoio
 delas
 clube
 busca
 falas
 volte
-braço | braco
+braço
 feita
 farto
 troca
 serve
 matei
-vídeo | video
+vídeo
 gozar
-visão | visao
+visão
 torna
 navio
 farei
@@ -348,12 +346,11 @@ usado
 droga
 casas
 puder
-nisto
 perda
-serás | seras
+serás
 magia
 ligou
-terão | terao
+terão
 marca
 fizer
 casos
@@ -379,18 +376,18 @@ vinte
 presa
 pense
 rosto
-rádio | radio
+rádio
 virar
 lavar
 perna
 vemos
 fales
-peças | pecas
+peças
 total
 vejam
 jogos
 corre
-herói | heroi
+herói
 luzes
 super
 peixe
@@ -408,7 +405,7 @@ tendo
 corte
 pedra
 ganha
-vírus | virus
+vírus
 vivem
 mexer
 norte
@@ -416,7 +413,7 @@ venho
 achou
 vento
 golpe
-dança | danca
+dança
 falam
 preto
 calor
@@ -441,15 +438,15 @@ tomou
 casal
 fugiu
 olhes
-saúde | saude
+saúde
 danos
 tente
 padre
 chamo
 ossos
 salvo
-saído | saido
-cópia | copia
+saído
+cópia
 noiva
 ponta
 criou
@@ -478,19 +475,19 @@ virem
 ganho
 adeus
 disco
-noção | nocao
+noção
 pagou
 costa
 bordo
 chuva
-verão | verao
-caçar | cacar
+verão
+caçar
 traga
 roubo
 puxar
 praia
 porco
-lição | licao
+lição
 bateu
 segue
 ajude
@@ -515,17 +512,17 @@ vendo
 aviso
 morar
 justo
-botão | botao
-graça | graca
+botão
+graça
 parou
 tirei
-dúzia | duzia
+dúzia
 canto
 levas
 prato
 treta
 perde
-opção | opcao
+opção
 posse
 andei
 crise
@@ -534,8 +531,8 @@ beira
 bolas
 damos
 iriam
-época | epoca
-íamos | iamos
+época
+íamos
 fecha
 goste
 louca
@@ -560,15 +557,15 @@ limpa
 ondas
 sabor
 odeia
-bebés | bebes
-nação | nacao
+bebés
+nação
 saias
 acabo
 termo
 vidro
 extra
-génio | genio
-túnel | tunel
+génio
+túnel
 olhou
 sinta
 gordo
@@ -611,12 +608,12 @@ valer
 palco
 dando
 doces
-farão | farao
+farão
 trago
-irmãs | irmas
+irmãs
 ferro
 pagam
-salão | salao
+salão
 gerir
 cento
 frase
@@ -644,7 +641,7 @@ nasci
 visse
 vende
 prima
-pénis | penis
+pénis
 mudei
 viveu
 cinto
@@ -654,7 +651,7 @@ vinda
 humor
 votos
 redor
-sócio | socio
+sócio
 conte
 guiar
 pares
@@ -703,7 +700,7 @@ chego
 ombro
 senso
 vozes
-virão | virao
+virão
 tumor
 cuida
 armar
@@ -713,7 +710,7 @@ meias
 acabe
 valem
 perca
-caído | caido
+caído
 unhas
 falsa
 gesto
@@ -722,7 +719,7 @@ tarte
 tirem
 durmo
 arder
-média | media
+média
 cobre
 donos
 geral
@@ -754,12 +751,12 @@ coroa
 amado
 parto
 darei
-dólar | dolar
+dólar
 virou
 perco
 envia
 calmo
-invés | inves
+invés
 fluxo
 verem
 deres
@@ -780,30 +777,30 @@ burro
 vejas
 civil
 cuido
-lança | lanca
+lança
 minas
 tenda
 expor
 malta
-farás | faras
+farás
 clara
 luvas
-viúva | viuva
+viúva
 parei
-aéreo | aereo
+aéreo
 rodas
 renda
-união | uniao
+união
 criei
 comes
 cagar
 votar
 rapto
 murro
-suite
+suíte
 fardo
 olham
-juízo | juizo
+juízo
 jurar
 velas
 folga
@@ -813,10 +810,10 @@ radar
 custo
 altas
 mijar
-laços | lacos
+laços
 sacar
 fecho
-verás | veras
+verás
 modos
 julgo
 rouba
@@ -827,7 +824,7 @@ grato
 parti
 pneus
 judeu
-sairá | saira
+sairá
 falem
 darem
 clima
@@ -837,9 +834,9 @@ canta
 golfe
 desce
 rocha
-águas | aguas
+águas
 autor
-lesão | lesao
+lesão
 pesca
 motel
 salas
@@ -851,7 +848,7 @@ dupla
 calar
 pilha
 dieta
-poção | pocao
+poção
 corra
 devas
 tubos
@@ -864,7 +861,7 @@ safar
 plena
 pisar
 balde
-aérea | aerea
+aérea
 pedes
 zonas
 durou
@@ -887,7 +884,7 @@ pedem
 amada
 belos
 reais
-ténis | tenis
+ténis
 ataca
 pagas
 grito
@@ -906,23 +903,23 @@ param
 morra
 briga
 salta
-fúria | furia
-fusão | fusao
+fúria
+fusão
 suave
 ouvia
-refém | refem
+refém
 rosas
 relva
 casei
-áreas | areas
+áreas
 tires
 gajas
-ouçam | oucam
-águia | aguia
+ouçam
+águia
 sigam
 fruto
-ações | acoes
-trará | trara
+ações
+trará
 viaja
 feche
 mesas
@@ -934,7 +931,7 @@ gorda
 penas
 bolos
 laser
-sábio | sabio
+sábio
 vital
 comia
 pousa
@@ -945,7 +942,7 @@ largo
 vivas
 ligas
 putos
-pátio | patio
+pátio
 finge
 pague
 vendi
@@ -955,7 +952,7 @@ junta
 ceder
 punho
 gerar
-máfia | mafia
+máfia
 paras
 derem
 texto
@@ -984,8 +981,8 @@ matem
 sujar
 ervas
 cesto
-robôs | robos
-lápis | lapis
+robôs
+lápis
 medir
 tigre
 pleno
@@ -993,7 +990,7 @@ loira
 entes
 sirva
 temer
-praça | praca
+praça
 seios
 pomos
 preta
@@ -1006,7 +1003,7 @@ nasce
 nazis
 leito
 atrai
-lenço | lenco
+lenço
 elite
 mexas
 justa
@@ -1015,18 +1012,18 @@ servo
 damas
 borda
 urina
-fêmea | femea
+fêmea
 pazes
 deita
 atire
 aluna
 gotas
 verme
-caças | cacas
+caças
 lento
-ruído | ruido
+ruído
 girar
-anéis | aneis
+anéis
 drama
 abras
 fibra
@@ -1046,7 +1043,7 @@ missa
 vence
 brisa
 sirvo
-guião | guiao
+guião
 deusa
 testa
 torta
@@ -1058,10 +1055,10 @@ papai
 podre
 vazia
 supor
-balão | balao
+balão
 puxou
 jurou
-vício | vicio
+vício
 jogas
 virei
 gasto
@@ -1069,7 +1066,7 @@ menti
 grita
 russa
 cujos
-mamãe | mamae
+mamãe
 ajudo
 jesus
 grata
@@ -1078,12 +1075,12 @@ mexeu
 lixem
 abres
 cuide
-bófia | bofia
+bófia
 metem
-terço | terco
+terço
 doses
 poeta
-bónus | bonus
+bónus
 mania
 morri
 posta
@@ -1092,12 +1089,11 @@ forno
 batem
 puser
 ligam
-porém | porem
+porém
 custe
 greve
 pagos
 vapor
-numas
 chora
 corri
 rodar
@@ -1123,10 +1119,10 @@ digna
 mosca
 serra
 boato
-ácido | acido
+ácido
 fogos
 lenta
-vilão | vilao
+vilão
 notei
 culpo
 senha
@@ -1134,28 +1130,28 @@ taxas
 senta
 criam
 citar
-ópera | opera
+ópera
 medos
-médio | medio
+médio
 genes
 ganhe
 veias
 casca
 comas
-leões | leoes
+leões
 sinos
 cujas
 tomes
 bacon
 mudes
-oxalá | oxala
+oxalá
 veado
 corro
 apoia
 fenda
 jurei
 datas
-berço | berco
+berço
 choro
 moram
 tocam
@@ -1168,11 +1164,10 @@ reles
 asilo
 peste
 enche
-agido
-darão | darao
+darão
 campa
-óbvio | obvio
-porão | porao
+óbvio
+porão
 metam
 canos
 casco
@@ -1199,11 +1194,11 @@ surto
 exijo
 solto
 vasta
-dirão | dirao
+dirão
 milha
 arena
 peles
-ouças | oucas
+ouças
 letal
 andes
 tolos
@@ -1213,7 +1208,7 @@ quilo
 ramos
 dicas
 blusa
-alemã | alema
+alemã
 chata
 bocas
 rampa
@@ -1221,11 +1216,11 @@ depor
 magoa
 netos
 rotas
-ótimo | otimo
+ótimo
 apelo
-anões | anoes
-moção | mocao
-maçãs | macas
+anões
+moção
+maçãs
 monge
 email
 aroma
@@ -1247,9 +1242,9 @@ pondo
 farol
 beija
 muros
-sótão | sotao
+sótão
 fedor
-álbum | album
+álbum
 itens
 vasto
 furar
@@ -1265,7 +1260,7 @@ chulo
 treze
 reage
 reter
-cairá | caira
+cairá
 duelo
 cerco
 pente
@@ -1274,24 +1269,24 @@ fixes
 temia
 grego
 manga
-fiéis | fieis
+fiéis
 santa
 durma
-mercê | merce
+mercê
 covil
 sorri
-juíza | juiza
+juíza
 aches
 loura
 sujas
-sabão | sabao
+sabão
 ogiva
 lenha
 temas
 poste
 duram
 rival
-limão | limao
+limão
 imune
 junte
 sugar
@@ -1301,14 +1296,14 @@ sonha
 motim
 cegos
 avise
-nódoa | nodoa
+nódoa
 viola
 comam
 poupa
 tropa
 globo
 temem
-detém | detem
+detém
 batas
 rolar
 porte
@@ -1317,13 +1312,13 @@ vagas
 vasos
 bosta
 pouse
-grãos | graos
+grãos
 notou
 punir
 banca
-obtém | obtem
-terça | terca
-tábua | tabua
+obtém
+terça
+tábua
 porca
 bebas
 armou
@@ -1332,15 +1327,15 @@ ladra
 trigo
 fixar
 nelas
-reúne | reune
+reúne
 ocupa
-barão | barao
+barão
 lorde
 bifes
 bruto
 docas
 mudas
-danço | danco
+danço
 capuz
 duras
 ruiva
@@ -1360,11 +1355,11 @@ dobra
 duque
 enfim
 sesta
-recém | recem
+recém
 pilas
 feriu
 mudem
-desça | desca
+desça
 jogue
 metia
 lente
@@ -1375,10 +1370,10 @@ cinza
 subam
 quota
 finja
-poços | pocos
-móvel | movel
+poços
+móvel
 etapa
-sutiã | sutia
+sutiã
 feias
 patos
 sopro
@@ -1387,19 +1382,19 @@ meros
 filas
 dador
 pilar
-vagão | vagao
+vagão
 lendo
 pisou
 feroz
 fezes
 stock
-trenó | treno
-sémen | semen
+trenó
+sémen
 grade
 chuto
 sopra
-peçam | pecam
-lábio | labio
+peçam
+lábio
 lemos
 cubos
 jarro
@@ -1416,32 +1411,31 @@ raras
 graxa
 deite
 finjo
-fogão | fogao
+fogão
 achem
 clone
 fingi
 setor
 monta
-traço | traco
+traço
 tutor
-rufia
 licor
 capas
 emite
 burra
-gémea | gemea
+gémea
 repor
 polir
 lidei
 tetas
 frias
 apito
-tesão | tesao
+tesão
 tosse
 naval
-ruína | ruina
+ruína
 morde
-índio | indio
+índio
 flash
 roube
 magro
@@ -1453,20 +1447,20 @@ farsa
 picar
 picos
 denso
-usará | usara
+usará
 cromo
-gémeo | gemeo
+gémeo
 bicha
 tonta
 viajo
 fosso
-cafés | cafes
+cafés
 mexam
 fases
 cobro
-desço | desco
+desço
 algas
-táxis | taxis
+táxis
 chupa
 papas
 coser
@@ -1479,7 +1473,7 @@ berma
 cruza
 coxas
 frito
-coçar | cocar
+coçar
 puxei
 rusga
 valho
@@ -1493,41 +1487,40 @@ garra
 ancas
 ireis
 pombo
-ração | racao
+ração
 saldo
 vesti
 rapar
 skate
-raças | racas
+raças
 palha
 selos
 pavor
 lidou
 drive
 veloz
-caçam | cacam
+caçam
 cante
 chips
 borla
 frios
 saque
-supõe | supoe
+supõe
 acusa
-sócia | socia
+sócia
 leres
 pinto
 ardeu
-calça | calca
+calça
 lutem
-ultra
 males
 dance
 jeans
-prevê | preve
+prevê
 vivam
 vigor
 sarar
-átrio | atrio
+átrio
 lagos
 sofra
 cause
@@ -1537,12 +1530,12 @@ vadio
 gesso
 torto
 sento
-vácuo | vacuo
+vácuo
 abria
 chove
 lidas
 bicos
-múmia | mumia
+múmia
 sapos
 bebam
 mamar
@@ -1556,12 +1549,12 @@ fungo
 sogro
 odiei
 gerou
-êxito | exito
-névoa | nevoa
+êxito
+névoa
 tinto
-aliás | alias
+aliás
 panda
-áudio | audio
+áudio
 deito
 caias
 cases
@@ -1584,7 +1577,6 @@ coral
 lixei
 barro
 optou
-sally
 genro
 mitos
 adaga
@@ -1593,7 +1585,7 @@ afeta
 errar
 julho
 junho
-útero | utero
+útero
 caiam
 poupe
 jarra
@@ -1605,8 +1597,7 @@ molde
 ruivo
 zelar
 faces
-motas
-taças | tacas
+taças
 adega
 dardo
 fumei
@@ -1617,11 +1608,11 @@ latim
 feios
 donas
 votei
-hábil | habil
+hábil
 cubro
-rédea | redea
-pólen | polen
-pónei | ponei
+rédea
+pólen
+pónei
 unido
 gaita
 joias
@@ -1630,7 +1621,7 @@ tocha
 atuar
 lixes
 norma
-sódio | sodio
+sódio
 trama
 calha
 lavei
@@ -1644,11 +1635,11 @@ sigas
 fossa
 orgia
 tenso
-moças | mocas
+moças
 stand
 banir
 remar
-óssea | ossea
+óssea
 ratas
 cesta
 dumas
@@ -1657,23 +1648,23 @@ giros
 grite
 abril
 odeie
-reúna | reuna
+reúna
 magra
 brava
 cedeu
 cospe
-oiçam | oicam
+oiçam
 regar
 encha
 ditar
 pingo
 aveia
 atear
-ícone | icone
+ícone
 honor
 macia
-dirás | diras
-betão | betao
+dirás
+betão
 broca
 fugia
 ditas
@@ -1690,45 +1681,45 @@ caldo
 pisei
 paira
 papar
+álibi
 ousas
-álibi | alibi
 bagas
 trava
 curou
 mexes
 piora
-ciúme | ciume
+ciúme
 sonar
 surra
 bruta
 viral
-loiça | loica
-loção | locao
+loiça
+loção
 posar
 frita
-traça | traca
-durão | durao
+traça
+durão
 teias
 venci
-índia | india
+índia
 cabia
 grega
 secas
 antro
-darás | daras
+darás
 ganga
 minto
 arcos
 cozer
-peões | peoes
+peões
 rasca
-ténue | tenue
+ténue
 minta
 pinga
 casam
-hélio | helio
+hélio
 leiam
-maços | macos
+maços
 moveu
 puxas
 unida
@@ -1742,14 +1733,14 @@ previ
 cubra
 lavou
 tipas
-tédio | tedio
+tédio
 janta
 recua
-talão | talao
+talão
 temes
 fumas
 evite
-caída | caida
+caída
 edema
 rolha
 fumou
@@ -1764,7 +1755,6 @@ gabar
 nudez
 safas
 furto
-óscar | oscar
 geria
 enfio
 rifle
@@ -1772,7 +1762,7 @@ coiso
 errou
 vilas
 turco
-ética | etica
+ética
 exato
 meigo
 risca
@@ -1787,11 +1777,11 @@ aorta
 rindo
 morou
 prega
-fórum | forum
+fórum
 minar
 bacia
 canoa
-expôs | expos
+expôs
 horda
 trapo
 malha
@@ -1799,8 +1789,8 @@ somar
 apoie
 cagou
 bruxo
-impõe | impoe
-mútuo | mutuo
+impõe
+mútuo
 suado
 anexo
 cuspo
@@ -1808,13 +1798,13 @@ enfie
 vigie
 aguda
 falte
-tórax | torax
+tórax
 cisne
 fobia
 guiou
 farra
 nevar
-ótima | otima
+ótima
 cansa
 gaste
 abate
@@ -1829,7 +1819,7 @@ botes
 renas
 pomba
 cacau
-chalé | chale
+chalé
 rales
 vinde
 corno
@@ -1837,7 +1827,7 @@ pinos
 fator
 livra
 votem
-fémur | femur
+fémur
 porei
 vedes
 filma
@@ -1846,13 +1836,13 @@ focas
 finas
 pirar
 zeros
-débil | debil
-vença | venca
+débil
+vença
 aluga
 densa
 raiar
 soava
-sósia | sosia
+sósia
 domar
 rugas
 cerne
@@ -1860,15 +1850,14 @@ lerem
 ampla
 cifra
 menta
-volts
 banha
 tique
-óxido | oxido
+óxido
 eleva
 couve
 pesam
 talho
-órgão | orgao
+órgão
 ativo
 shows
 lapso
@@ -1878,8 +1867,8 @@ puxem
 canja
 mulas
 rende
-cólon | colon
-furos
+cólon
+furôs
 racha
 capta
 errei
@@ -1912,7 +1901,6 @@ fazei
 negam
 afiar
 fujam
-voado
 rezam
 rezas
 pulha
@@ -1921,7 +1909,7 @@ gelar
 lavas
 fumam
 apago
-nasça | nasca
+nasça
 fiada
 reuni
 lasca
@@ -1938,13 +1926,13 @@ bingo
 vigio
 mural
 nadam
-varão | varao
-ecrãs | ecras
+varão
+ecrãs
 treme
 pasto
 anota
-lanço | lanco
-suíço | suico
+lanço
+suíço
 mijei
 risos
 voava
@@ -1957,39 +1945,38 @@ varas
 mexia
 clero
 pouso
-árabe | arabe
-vénia | venia
+árabe
+vénia
 astro
 prece
-fútil | futil
+fútil
 remos
 rezem
 ralar
 coice
-galão | galao
+galão
 gozem
 tenra
-rimos
 chute
 gorro
 boiar
-cupão | cupao
+cupão
 golos
 juras
-pagão | pagao
+pagão
 aptos
 henry
 aturo
 nadou
 vazar
-oásis | oasis
+oásis
 enjoo
 caiem
 truta
 tango
 vespa
 calos
-mútua | mutua
+mútua
 adore
 puxam
 soldo
@@ -2003,7 +1990,7 @@ pedal
 seiva
 atada
 fumes
-papão | papao
+papão
 afeto
 forro
 gozou
@@ -2013,7 +2000,7 @@ floco
 force
 prole
 leque
-oiças | oicas
+oiças
 tanas
 gemer
 calem
@@ -2023,14 +2010,14 @@ sueco
 perus
 selou
 benta
-retém | retem
-expõe | expoe
+retém
+expõe
 giram
 adido
 belga
 cegar
 meiga
-calão | calao
+calão
 cunha
 caril
 evito
@@ -2041,16 +2028,16 @@ rapta
 rezou
 sumiu
 medem
-pinça | pinca
+pinça
 aceso
 exibe
 pavio
 limbo
 vodca
-melão | melao
+melão
 palmo
 lotes
-moços | mocos
+moços
 emana
 enchi
 lavam
@@ -2061,7 +2048,7 @@ verba
 cries
 feras
 valsa
-opõem | opoem
+opõem
 sujes
 copas
 lebre
@@ -2082,12 +2069,11 @@ zebra
 dizei
 rumar
 cocos
-ditos
 juram
 baniu
 morei
 musgo
-aquém | aquem
+aquém
 misto
 mossa
 recai
@@ -2095,21 +2081,20 @@ riram
 vocal
 caves
 linho
-puxão | puxao
-ânsia | ansia
+puxão
 ogres
 prado
 topar
-sarah
+ânsia
 subas
 odiou
 pulou
 recuo
-úteis | uteis
+úteis
 citou
 verbo
 neves
-caçou | cacou
+caçou
 gemas
 gerem
 aceno
@@ -2119,17 +2104,16 @@ usual
 malte
 morda
 rubis
-tíbia | tibia
+tíbia
 rasgo
 lucra
 monto
-alves
 fixas
 haste
 prime
 puras
 folgo
-nevão | nevao
+nevão
 casta
 tiara
 horta
@@ -2142,7 +2126,7 @@ gnomo
 rasga
 chibo
 ergam
-saúda | sauda
+saúda
 pulga
 busto
 choca
@@ -2153,58 +2137,53 @@ anais
 talco
 viaje
 visor
-ânimo | animo
-ídolo | idolo
+ânimo
+ídolo
 cetim
 grilo
-pódio | podio
-simon
+pódio
 criem
-figas
 madre
 tolas
 abade
 olhai
 turbo
 cueca
-latão | latao
+latão
 pises
-látex | latex
+látex
 mimar
-revés | reves
+revés
 trepa
-dócil | docil
-gates
+dócil
 ranho
 abusa
 babar
-alter
 lixas
 ousou
 tecer
-viúvo | viuvo
+viúvo
 pulos
 nabos
 provo
 valas
-arpão | arpao
+arpão
 doado
 ocupe
-tracy
 deveu
 ficai
-lítio | litio
-pavão | pavao
+lítio
+pavão
 trave
 xeque
 molha
-roçar | rocar
+roçar
 secou
 amais
 cacos
 mirar
 chuta
-poças | pocas
+poças
 telas
 trevo
 touca
@@ -2214,12 +2193,10 @@ varia
 exija
 lazer
 bodas
-jules
-impôs | impos
+impôs
 piore
 staff
 turba
-liras
 lesma
 tampo
 cobri
@@ -2228,13 +2205,12 @@ bodes
 curam
 herda
 seduz
-amará | amara
+amará
 cidra
 encho
-mimos
 poros
-óbvia | obvia
-filão | filao
+óbvia
+filão
 gozas
 rudes
 cagam
@@ -2244,7 +2220,7 @@ ardem
 jejum
 magoo
 aliar
-alças | alcas
+alças
 safam
 cavou
 dunas
@@ -2265,17 +2241,15 @@ janto
 maria
 ritos
 armem
-sofás | sofas
+sofás
 sueca
 vagar
 negas
 plana
 torso
 falho
-furão | furao
+furão
 hiena
-neuro
-rirem
 acede
 ileso
 jazem
@@ -2285,10 +2259,10 @@ calda
 dorso
 dreno
 falhe
-gíria | giria
+gíria
 retro
 tapem
-advém | advem
+advém
 movia
 luxos
 silos
@@ -2298,12 +2272,10 @@ messe
 ousar
 guiam
 magma
-órfão | orfao
-helen
+órfão
 nylon
 traem
 figos
-septo
 anima
 lulas
 mijam
@@ -2320,7 +2292,6 @@ ousam
 viril
 hinos
 ostra
-saint
 armei
 chupe
 rimar
@@ -2343,13 +2314,13 @@ coche
 notam
 traia
 barca
-júris | juris
+júris
 papal
 fetos
 modem
 movam
 rompe
-rácio | racio
+rácio
 audaz
 jante
 azoto
@@ -2363,28 +2334,28 @@ covas
 fauna
 pizas
 pluma
-bonés | bones
+bonés
 cacei
 parir
 focos
 geres
 morsa
 sexos
-sírio | sirio
+sírio
 chita
-átomo | atomo
+átomo
 isola
 amora
-suíça | suica
+suíça
 morna
 recue
-onças | oncas
+onças
 pique
 safei
 sugam
 afoga
 alugo
-harém | harem
+harém
 supus
 alces
 ardia
@@ -2398,23 +2369,21 @@ fetal
 fixei
 ataco
 ditam
-induz
 picou
 viole
 adiei
-dispa
 nadas
 peras
 temam
 reaja
-âmbar | ambar
+âmbar
 colhe
 guiei
-venço | venco
+venço
 creia
-lírio | lirio
+lírio
 pompa
-tripé | tripe
+tripé
 verte
 busco
 credo
@@ -2424,21 +2393,21 @@ golfo
 prezo
 lavem
 pecar
-trace
+traçe
 dique
 mijas
-pança | panca
+pança
 armam
 polpa
 tapas
-óbito | obito
+óbito
 trens
 baila
 canas
 expus
 reajo
 banjo
-bílis | bilis
+bílis
 falir
 vibra
 assaz
@@ -2452,7 +2421,6 @@ chova
 coube
 hindu
 ralas
-robin
 acuso
 ozono
 gravo
@@ -2461,62 +2429,58 @@ sugou
 faliu
 girou
 praxe
-scott
 pinte
 terna
 corar
 mista
 viela
 cravo
-depôs | depos
+depôs
 laves
-lábia | labia
+lábia
 molar
 abata
 pisem
-êxodo | exodo
+êxodo
 adiou
 azedo
-quiçá | quica
+quiçá
 tremo
-éreis | ereis
+éreis
 hasta
 rombo
-torço | torco
-unirá | unira
+torço
+unirá
 china
 clica
 feder
-evans
 rijos
 trupe
 cumes
-côdea | codea
+côdea
 ramal
 situa
 arado
 calam
 crepe
 sujei
-tufão | tufao
+tufão
 cague
 mordo
 mouro
 usina
 funil
-poses
 abalo
-calço | calco
+calço
 sarou
-voará | voara
+voará
 sacam
 lamba
 honre
 danem
 reviu
-punks
 vazou
-árduo | arduo
+árduo
 abono
 bucha
 samba
@@ -2525,13 +2489,12 @@ fisga
 rotor
 honro
 senil
-bruce
 causo
-maçar | macar
+maçar
 raspa
 forme
 pariu
-régua | regua
+régua
 lince
 pardo
 chupo
@@ -2559,7 +2522,6 @@ rente
 dogma
 mocho
 pesas
-alice
 calou
 fulos
 seque
@@ -2568,11 +2530,10 @@ datam
 fugaz
 gongo
 pisam
-átila | atila
+átila
 corja
 curvo
 foras
-lucas
 ardil
 incha
 voraz
@@ -2580,26 +2541,24 @@ furor
 valar
 cagas
 favas
-jenny
 lambo
 logro
 mudos
 podar
 rodam
 senda
-símio | simio
+símio
 vagos
 anule
 apego
 catar
 fluem
 lides
-reúno | reuno
+reúno
 flora
 inato
 lidos
 pirou
-posou
 rezes
 boche
 cavam
@@ -2610,25 +2569,21 @@ vagem
 vedar
 lemes
 slide
-úmero | umero
+úmero
 bufos
 burla
-cuspa
 exigi
 sujam
-susan
 topou
 vinga
 miolo
 notem
-fénix | fenix
+fénix
 gozei
 ienes
 lerei
-premi
-saúdo | saudo
+saúdo
 sonhe
-suada
 turva
 chiar
 ecoar
@@ -2643,7 +2598,6 @@ trais
 viera
 cegou
 chico
-jacob
 pinha
 riste
 cacho
@@ -2655,21 +2609,19 @@ geriu
 ousei
 anoto
 fofos
-pária | paria
+pária
 purga
 rogar
 bufar
 caspa
-lúpus | lupus
+lúpus
 turca
-âmago | amago
-soará | soara
+âmago
+soará
 vetor
-bidão | bidao
+bidão
 caibo
-clive
 sarro
-clark
 jipes
 obeso
 somam
@@ -2682,15 +2634,13 @@ berro
 finta
 germe
 iscas
-julie
 lidem
 pende
-watts
 acato
 cedas
 fisco
 ganas
-móbil | mobil
+móbil
 nutre
 pesco
 clamo
@@ -2698,8 +2648,7 @@ foles
 guiem
 ateus
 bobos
-faxes
-acolá | acola
+acolá
 alhos
 cavei
 censo
@@ -2709,7 +2658,7 @@ lepra
 rufar
 cedem
 molda
-ómega | omega
+ómega
 bossa
 jazia
 marta
@@ -2722,14 +2671,13 @@ tapam
 cavas
 coseu
 curei
+fecal
 sismo
 exala
-forço | forco
+forço
 reger
-tidos
 zinco
 arfar
-fusos
 mijes
 sovas
 tenaz
@@ -2740,16 +2688,13 @@ uivos
 veios
 colhi
 movas
-piela
-cuspi
 paiol
+paula
 trufa
 cuspe
-iliba
 parai
-plexo
 refiz
-supôs | supos
+supôs
 chaga
 etnia
 galar
@@ -2761,7 +2706,7 @@ ninfa
 traio
 tripa
 amido
-lilás | lilas
+lilás
 mogno
 nacos
 pesou
@@ -2771,14 +2716,16 @@ abafa
 afete
 apara
 botou
+crude
 filmo
-rires
-roído | roido
+roído
 adere
+gazes
 pudor
 vulgo
 bamba
-cotão | cotao
+cotão
+mambo
 colam
 datar
 eleve
@@ -2788,23 +2735,21 @@ crina
 pumas
 sebes
 sopre
-titãs | titas
-gamão | gamao
+titãs
+gamão
 limas
 penar
+prior
 sedas
-óleos | oleos
+óleos
 optam
-tesos
 trote
-moído | moido
+moído
 tanso
-incas
 poiso
 chavo
-gramo
 gruas
-porás | poras
+porás
 abano
 acene
 arcas
@@ -2814,7 +2759,7 @@ sagaz
 secam
 abato
 aceda
-agirá | agira
+agirá
 apita
 canse
 ditou
@@ -2822,7 +2767,7 @@ solda
 agiam
 azeda
 evoca
-galês | gales
+galês
 pauta
 rolam
 abona
@@ -2832,12 +2777,12 @@ ilude
 lonas
 regem
 sigla
-suíno | suino
-grous
+suíno
 nadem
 netas
 poisa
 rasas
+tapes
 casem
 emiti
 rezai
@@ -2853,10 +2798,12 @@ leoas
 toldo
 espie
 fusca
-hímen | himen
+hímen
 melro
+range
 selas
 sulco
+anime
 atuou
 cruzo
 elege
@@ -2866,27 +2813,28 @@ jorra
 naipe
 pecou
 lambi
+óvulo
 pisco
 rolas
-óvulo | ovulo
-afegã | afega
-dispo
+afegã
 durem
 gurus
 lamas
 manso
 medes
 roxos
+telex
 furam
-japão | japao
+japão
 sidra
 capte
-fação | facao
+fação
 fanar
 feudo
 zumbi
-anciã | ancia
+anciã
 ardas
+atlas
 colei
 ilesa
 ateia
@@ -2898,18 +2846,17 @@ plebe
 rasos
 visar
 citei
-demão | demao
+demão
 galgo
-garça | garca
+garça
 hidra
 opero
 ouros
-zonzo
 capto
 cesse
 checa
-míope | miope
-saxão | saxao
+míope
+saxão
 cessa
 ecoam
 inibe
@@ -2918,11 +2865,11 @@ omiti
 opere
 topos
 vulto
-ódios | odios
+ódios
 aloja
 bagos
 bemol
-césio | cesio
+césio
 funde
 herde
 inata
@@ -2941,20 +2888,19 @@ culta
 soado
 abeto
 borra
-coças | cocas
+coças
 imito
 selim
 teima
-éguas | eguas
+éguas
 alada
-apraz
 cabaz
 croma
 erram
 fedes
 hiato
 nutro
-avelã | avela
+avelã
 jurem
 mugir
 pedis
@@ -2965,29 +2911,29 @@ autos
 checo
 cheta
 colas
-foque
 supra
 bruma
-doada
 puniu
 reine
 rodei
-épico | epico
+épico
 advir
 atina
-bário | bario
+bário
+focal
 jurai
-ávido | avido
+silva
 bonde
-cisão | cisao
+cisão
 enjoa
 ferem
 ronco
-suflê | sufle
+suflê
+ávido
 calvo
 celta
 cetro
-césar | cesar
+césar
 polui
 teses
 turfa
@@ -3001,45 +2947,43 @@ espio
 fixem
 golas
 sarna
-ícaro | icaro
+ícaro
 apolo
-doerá | doera
+doerá
 fofas
 jarda
-laçar | lacar
+laçar
 polos
 ripas
 topam
-tricô | trico
+tricô
 troar
 visam
 bebei
+chino
 drena
 fedia
 junco
-légua | legua
+légua
 palas
 ralem
 refaz
 safem
 saram
-tossi
 trema
-viena
 apele
-carpe
+carpê
 chula
 irdes
 manco
 raias
 tombo
 educa
-tacão | tacao
-turné | turne
+tacão
+turné
 aliou
 atuam
-avive
-repõe | repoe
+quite
 rompa
 teceu
 toros
@@ -3048,51 +2992,51 @@ afina
 cedam
 leria
 reluz
-roçou | rocou
+roçou
 xaile
 alego
 bolbo
-bosão | bosao
+bosão
+cites
 lisas
 ronca
 rumou
+babes
 ecoou
 ferva
 gelou
 leigo
 lomba
-nevou
 remem
+robes
 rosna
 ruela
 sonos
 tenro
 ameno
-corça | corca
+corça
 fauno
 lixos
 tetos
-baías | baias
+baías
 lacre
 migra
-pitão | pitao
-ébrio | ebrio
-dedão | dedao
-focam
+pitão
+ébrio
+dedão
 gabou
 piche
 polia
 ralha
 seixo
-árdua | ardua
+árdua
 asnos
 cosia
 cozeu
 fluiu
 frite
 grifo
-marte
-monhé | monhe
+monhé
 orlas
 piras
 revia
@@ -3101,11 +3045,10 @@ suava
 tacha
 vogal
 calce
-focou
 folia
 lajes
 tapei
-torça | torca
+torça
 bicar
 girem
 mijem
@@ -3119,112 +3062,107 @@ cruas
 curem
 pulam
 pulsa
-vicia
 zango
 afogo
-aguça | aguca
-cotos
-gigas
+aguça
 pajem
-rodos
+safes
 sedes
 selei
-soros
 afora
 atuns
-boião | boiao
+boião
 cerra
 citam
 ergui
 lisos
 narra
+urine
 vetou
 acata
 afins
 assou
 bardo
 rendo
-ágeis | ageis
+ágeis
 aptas
 atino
 bacio
 canis
-doíam | doiam
-fluía | fluia
-multi
-posei
+fluía
 rimam
-unção | uncao
-vólei | volei
+unção
+votes
+vólei
 amena
-avida
 cosas
-dento
 exiba
 fedem
 iluda
 opina
 optas
 penca
-peúga | peuga
+peúga
 vaias
+ávida
 agite
 bilha
-depõe | depoe
+depõe
 despi
 ferra
 maces
-psico
 rodem
 tomba
 xelim
-édipo | edipo
 emito
 godos
-húmus | humus
+hindi
+húmus
 imite
+pixel
 talha
 vulva
-ácida | acida
 bucho
 bulir
 fenol
+labor
 nodos
-opões | opoes
-rifas
+opões
 socou
 testo
 tinas
+ácida
 adies
 ateei
-cárie | carie
 cisco
 citas
 clava
 coima
 covis
+cárie
 frete
 jazer
 louva
 polca
 priva
-égide | egide
+égide
 auras
 dedal
-gamou
 parra
 perua
 rasar
-suína | suina
+suína
 xerez
 adiem
-atiça | atica
+atiça
 basco
 calhe
+greta
 guizo
-moída | moida
+moída
 pesei
 seara
+tinge
 varra
 aderi
 agito
@@ -3234,17 +3172,16 @@ bombo
 bufou
 cardo
 coces
-içado | icado
 manca
 sovar
-ténia | tenia
+ténia
 acuda
 bucal
+divas
 morem
 nesga
 ocaso
 socas
-tabus
 talas
 tosca
 apuro
@@ -3252,10 +3189,9 @@ deduz
 feres
 mamou
 moita
-piões | pioes
+piões
 razia
 silvo
-tidas
 tolda
 esvai
 favos
@@ -3267,13 +3203,15 @@ rapte
 arara
 casto
 crava
+curve
 heras
 hurra
+judas
 vinco
-ébano | ebano
+ébano
 botei
 copie
-cível | civel
+cível
 derme
 edita
 elmos
@@ -3289,24 +3227,20 @@ vivaz
 xisto
 zomba
 adias
-baços | bacos
-flúor | fluor
-intra
+baços
+flúor
 legar
 parco
 rogou
-romãs | romas
-safos
+romãs
 acedo
 cedia
 cegam
 cubas
-cucos
-dúbio | dubio
+dúbio
 estai
-oporá | opora
-paulo
-púbis | pubis
+oporá
+púbis
 rolem
 comei
 fiado
@@ -3324,75 +3258,51 @@ babam
 brigo
 capar
 faina
-fuças | fucas
+fuças
 jorro
 lutai
 ousem
 topas
-xviii
-álamo | alamo
-árida | arida
-arcou
+álamo
+árida
 fervo
 glifo
 melga
 mirra
 surfe
-síria | siria
+síria
 troce
 vades
-ético | etico
+ético
 abafe
 abafo
 abale
 abduz
-aboba
-abobe
-abobo
-aboim
 abole
 aboli
-abone
-abreu
 abris
-abula
-abulo
-acama
-acame
 acamo
 acate
 achai
-acide
-acnes
 acode
 acudi
 acudo
-acume
-acura
-acure
-acuro
-adais
-adego
-adeja
-adeje
 adejo
 adiai
 adiam
-adida
 adira
 adiro
 adita
 adite
 adito
+adobe
 adoce
 adota
 adote
 adoto
-adoça | adoca
-adoço | adoco
+adoça
+adoço
 adros
-aduba
-adube
 adufe
 adula
 adule
@@ -3406,61 +3316,33 @@ afago
 afama
 afame
 afamo
-afana
-afane
 afano
-afará | afara
-afazê | afaze
-afaça | afaca
-afaço | afaco
-afere
-aferi
+afará
+afaça
+afaço
 afiai
 afiam
 afias
 afiei
 afiem
 afies
-afifa
-afife
-afifo
 afila
 afile
 afilo
 afine
 afino
 afiou
-afira
-afiro
 afixa
 afixe
 afixo
 aflua
-aflui
+afluí
 afluo
-afofa
-afofe
-afofo
-afola
-afole
-afolo
-afono
-aforo
 aftas
-afuma
-afume
-afumo
-agida
-agror
-aguai
-aguam
 aguar
+aguaí
 aguce
-aguei
-aguem
-agues
-aguou
-aguço | aguco
+aguço
 aipos
 aires
 ajais
@@ -3470,18 +3352,14 @@ alais
 alapa
 alape
 alapo
-alara
+alará
 alava
 albas
 alcei
 alcem
-aldeã | aldea
+aldeã
 aleis
 algoz
-algés | alges
-alhea
-alhee
-alheo
 aliai
 aliam
 aliei
@@ -3497,35 +3375,22 @@ aloca
 aloco
 aloje
 alojo
-alteá | altea
-aluai
-aluam
 aluar
-aluas
 aluda
 alude
 aludi
 aludo
-aluei
-aluem
-alues
 aluir
-aluis
 aluiu
 alune
-aluou
-aluía | aluia
+aluás
 alvas
-alvim
 alvor
-alçai | alcai
-alçam | alcam
-alçar | alcar
-alçou | alcou
-amapá | amapa
-amare
+alçai
+alçam
+alçar
+alçou
 amaro
-amato
 ameai
 amear
 ameba
@@ -3538,98 +3403,58 @@ amiba
 amima
 amime
 amimo
-amoja
-amoje
 amojo
 amola
 amole
 amolo
-amova
-amove
-amovi
-amovo
 amuai
 amuam
 amuas
 amuei
 amuem
 amues
-amuos
 amuou
 amura
 amure
 amuro
-améns | amens
 anafa
 anafe
 anafo
 anata
-anate
-anato
 andai
 andor
-andré | andre
-anela
-anele
 anelo
 anexa
 anexe
 angra
-anhos
-anila
-anile
-anilo
-anisa
-aniso
-anião | aniao
-anoja
-anoje
-anojo
-anosa
-anoso
-ansas
+anita
+anião
+ânodo
 antas
-antão | antao
+antão
 anuam
 anuas
 anuem
 anuir
-anuis
+anuís
 anuiu
-anuía | anuia
+anuía
 apare
 aparo
 apeai
 apear
 apeei
 apega
-apeia
-apeie
-apeio
 apeou
-apipa
-apipe
-apipo
 apite
-aporá | apora
-aproa
-aproe
-aproo
-apupa
-apupe
+aporá
 apupo
 apura
 apure
-apõem | apoem
-apões | apoes
-arada
-arade
+apõem
+apões
 arais
-arama
-aramo
 arava
-araão | araao
-arcai
 arcam
 arcaz
 ardei
@@ -3640,85 +3465,48 @@ areis
 areja
 areje
 arejo
-arfai
-arfam
-arfas
-arfei
-arfem
-arfes
-arfou
 argel
 argua
 argui
 arguo
-arles
 armai
-arome
-aromo
-arpai
-arpam
 arpar
-arpas
-arpei
-arpem
-arpes
-arpeá | arpea
 arpoa
 arpoe
 arpoo
-arpou
 arque
-arreá | arrea
-arria
-arrie
-arrio
 arrua
 arrue
 arruo
-artur
-aruba
 asada
-asado
 asais
-asara
+asará
 asava
-ascii
 ascos
 aseis
 asila
 asile
 asnal
 asnas
-asneá | asnea
 assai
 assam
 assas
 assei
 assem
-asseá | assea
-assis
-assoa
-assoe
-assoo
+asses
 atais
 atara
 atava
 ateai
-ateam
-ateas
-ateem
-atees
 ateie
 ateio
 ateis
 atice
 atine
-atiço | atico
+atiço
 atola
 atole
 atolo
-atona
-atono
 atroa
 atroe
 atroo
@@ -3728,11 +3516,7 @@ atuei
 atuem
 atues
 ature
-atóis | atois
-augia
-augir
-augiu
-aunai
+atóis
 autua
 autue
 autuo
@@ -3747,10 +3531,9 @@ aviem
 avier
 avies
 aviou
-avirá | avira
-aviva
-avivo
-avéns | avens
+avirá
+avéns
+axial
 azara
 azare
 azaro
@@ -3760,39 +3543,21 @@ azote
 azula
 azule
 azulo
-açude | acude
-aúnam | aunam
-aúnas | aunas
-aúnem | aunem
-aúnes | aunes
+açude
 babai
 babas
 babei
 babel
 babem
 babou
-babão | babao
-bafai
-bafam
+babão
 bafar
-bafas
-bafei
-bafem
-bafes
 bafio
 bafos
-bafou
-bagai
-bagam
-bagar
-bagou
-bague
 bailo
-baião | baiao
+baião
 balda
 baldo
-baleá | balea
-balia
 balir
 baliu
 bambo
@@ -3805,108 +3570,66 @@ bania
 banis
 banto
 banza
-banze
 banzo
+banzé
 baque
-barbe
 barbo
 barre
+basal
 basca
-baseá | basea
 basto
 batei
 batel
-baças | bacas
+baças
 beato
 beire
 beiro
-beiça | beica
-beiço | beico
-belém | belem
-benim
+beiço
 bento
 benza
 benze
 benzi
 benzo
-berna
 berre
-berta
-berto
-bescl
-bessa
 bicai
 bical
 bicam
 bicas
-biche
 bicou
-bidés | bides
+bidés
 biela
-bigle
 bilro
 bique
-birmã | birma
-birre
-birro
+birmã
 bisai
 bisam
 bisar
 bisas
 bisca
-bisco
 bisei
 bisem
 bises
 bisou
-bisão | bisao
-bizet
-boata
+bisão
 bobas
-bobeá | bobea
 bofes
-bogas
 boiai
-boiam
 boias
 boiei
 boiem
 boies
 boiou
-bojai
-bojam
 bojar
-bojas
-bojei
-bojem
-bojes
-bojou
-bolai
-bolam
-bolei
-bolem
-boles
-bolhe
-bolho
-bolou
-bolse
-boole
-borba
 borde
 boroa
 borre
 borro
-boste
-bosto
 botai
 botam
 botem
 botim
-bouce
-bouro
-bouça | bouca
-bouço | bouco
-boîte | boite
+bouça
+boîte
 brada
 brade
 brado
@@ -3915,19 +3638,11 @@ brama
 brame
 brami
 bramo
-braun
-braça | braca
-breai
-brear
+braça
 breca
 breco
-breei
-breia
-breie
-breio
 brejo
-breou
-bretã | breta
+bretã
 briol
 brios
 brita
@@ -3936,86 +3651,63 @@ brito
 broas
 broco
 broma
-brome
 bromo
 brote
 broto
 bruna
-brune
-bruxe
+bruno
 bufai
 bufam
 bufas
 bufei
 bufem
 bufes
-bufão | bufao
+bufão
 bugia
-bugie
 bugio
-bulai
-bulam
 bular
 bulas
 bulbo
-bulei
-bulem
 bules
 bulhe
 bulho
-bulia
-bulis
 buliu
-bulou
-bumba
 burel
 burgo
 buril
 burle
 burlo
-buxos
-byron
-bária | baria
-bócio | bocio
-búzio | buzio
+bytes
+bócio
+bóiam
+búzio
+cabal
 cabei
-cabul
 cacem
 caces
-caché | cache
+caché
 cagai
-caiai
 caiar
-caiei
-caies
-caiou
+cairo
 cajus
 calai
-calde
 calei
 calfe
 calho
-calme
 calva
-calve
-canaã | canaa
 capai
 capam
 capei
 capem
-capeá | capea
+capes
 capou
-capão | capao
+capão
 carda
 carde
-caria
-cario
-carmo
-carpi
 carpo
-carão | carao
+carte
+carão
 casai
-casão | casao
 catai
 catam
 catas
@@ -4026,17 +3718,13 @@ catos
 catou
 cauto
 cavai
-cavos
-caçai | cacai
-caçoa | cacoa
-caçoe | cacoe
-caçoo | cacoo
-cação | cacao
-ceada
-ceado
+caçai
+caçoa
+caçoe
+caçoo
+cação
 ceais
 ceara
-ceata
 ceava
 cecal
 cedei
@@ -4049,40 +3737,31 @@ ceiem
 ceies
 ceife
 ceifo
-ceita
 celha
 celso
 cepas
 cepos
 ceras
-cerna
-cerni
-cerno
 cerre
 cerro
 cerzi
 cesso
-cetra
-ceuta
-chade
-chago
 chape
 chapo
 chiai
 chiam
 chias
+chiça
 chiei
 chiem
 chies
 chila
-chinó | chino
+chile
 chiou
-chiça | chica
 chovi
 chovo
-chulé | chule
-chuço | chuco
-chões | choes
+chulé
+chuço
 ciano
 cifre
 cifro
@@ -4097,14 +3776,8 @@ cingi
 cinja
 cinjo
 cinte
-cinze
-cinzo
 ciosa
 cioso
-circe
-cirza
-cirze
-cirzo
 cisai
 cisam
 cisar
@@ -4119,16 +3792,11 @@ cisou
 citai
 citem
 citro
-ciuma
-ciumo
 clame
 clave
 clico
-cliva
-clivo
 clona
 clono
-coada
 coado
 coage
 coagi
@@ -4140,24 +3808,15 @@ coava
 coaxa
 coaxe
 coaxo
-cobol
-cocai
-cocam
 cocei
 cocem
 cocha
 cocho
-cocou
 coeis
-coere
-coeri
-coesa
 coeso
 cofia
 cofie
 cofio
-cohen
-coibi
 coifa
 coira
 coita
@@ -4172,7 +3831,6 @@ colme
 colmo
 colos
 comba
-congo
 copio
 copra
 copta
@@ -4187,13 +3845,11 @@ coroo
 corou
 corsa
 corso
-corão | corao
-corço | corco
+corço
 cosam
 cosei
 cosem
 coses
-cosme
 cotai
 cotam
 cotar
@@ -4203,37 +3859,26 @@ cotes
 cotou
 coura
 cousa
-couta
-coute
 couto
-coval
-covão | covao
-coxal
-coxeá | coxea
 coxia
 coxos
-coxão | coxao
 cozam
 cozas
 cozei
 cozem
 cozes
 cozia
-coíba | coiba
-coíbe | coibe
-coíbo | coibo
+coçai
+coçam
+coçou
 crase
-crato
+crave
 crede
 crema
 cremo
 crera
-creta
 criai
 crida
-crido
-criva
-crive
 crivo
 crome
 cubai
@@ -4241,59 +3886,51 @@ cubam
 cubar
 cubei
 cubem
+cubes
 cubou
 cunhe
 curai
 curda
 curdo
-curie
+cures
 curro
 cursa
-cádis | cadis
-cátia | catia
-cânon | canon
-célia | celia
-cílio | cilio
-círio | cirio
-códex | codex
-cúria | curia
-daire
-dalgo
-dalém | dalem
+curse
+cânon
+cílio
+círio
+códex
+cúria
+dalém
 danai
 danam
 danar
 danas
 danei
+danes
 danou
-dario
 datai
-datal
 datei
 datem
+dates
 datou
-dação | dacao
-decai
-decil
+dação
+decaí
 delem
 delis
-denta
 depus
 deras
 devei
-devim
 devir
-deões | deoes
+deões
 diaba
 digne
-dilam
-dilas
 dilua
 dilui
 diluo
-dinis
+dinar
+díodo
 diogo
-dirac
 disca
 dista
 diste
@@ -4301,18 +3938,10 @@ ditai
 ditei
 ditem
 dites
-divãs | divas
 doais
-doara
+doará
 doava
-dobai
-dobam
 dobar
-dobas
-dobei
-dobem
-dobes
-dobou
 doeis
 doira
 doire
@@ -4322,6 +3951,7 @@ domam
 domas
 domei
 domem
+domes
 domou
 dosai
 dosam
@@ -4329,7 +3959,6 @@ dosar
 dosas
 dosei
 dosem
-doseá | dosea
 dosou
 dotai
 dotam
@@ -4343,7 +3972,6 @@ doure
 douro
 douta
 douto
-doías | doias
 draga
 drago
 drene
@@ -4351,16 +3979,13 @@ drusa
 druso
 duais
 ducal
-dulce
 durai
 durei
 dures
-dácia | dacia
-dália | dalia
-dérbi | derbi
-díodo | diodo
-dúbia | dubia
-eanes
+dácia
+dália
+dérbi
+dúbia
 ecoai
 ecoas
 ecoei
@@ -4369,11 +3994,6 @@ ecoes
 edite
 edito
 educo
-eflua
-eflui
-efluo
-efuso
-egito
 eiras
 ejeta
 ejete
@@ -4382,29 +4002,19 @@ elegi
 eleja
 elejo
 elevo
-elida
-elide
-elidi
-elido
-elisa
 eluda
+elude
 eludi
 eludo
-elvas
 emane
 emano
-empoa
-empoe
-empoo
 emula
 emule
 emulo
-enfeá | enfea
 enjoe
 enoja
 enoje
 enojo
-enteá | entea
 entoa
 entoe
 entoo
@@ -4412,15 +4022,11 @@ ereta
 ereto
 ergas
 erice
-erich
 erige
 erigi
 erija
 erijo
-eriça | erica
-eriço | erico
 ermos
-ernst
 errai
 erras
 errem
@@ -4431,108 +4037,61 @@ escoo
 esmos
 estio
 etano
-euler
 evada
+evade
 evadi
 evado
 evoco
 exale
 exalo
-exara
-exare
-exaro
 exibi
 exibo
 exila
+exile
 exilo
 exima
 exime
 eximi
 eximo
-expia
-expie
-expio
-exula
-exule
-exulo
 exuma
 exume
 exumo
 facho
-fadai
-fadam
 fadar
-fadei
-fadem
 fados
-fadou
 faial
 faias
-faixe
-faixo
-falia
-falis
 falos
 falua
 famas
-fanai
-fanam
-fanas
-fanei
-fanem
-fanes
-fanfa
-fanfe
-fanfo
-fanou
 farad
-farde
 faros
-farpe
-farpo
 farte
-fasea
-fasee
-faseo
 fasto
 fatie
 fatio
-faval
 febra
 fedam
 fedas
 fedei
 fedeu
-feijó | feijo
-feire
-feiro
 fende
 fendi
 fendo
 fenos
 feria
-ferie
-ferio
 feris
 fermi
 ferre
 fervi
-fevra
 fiais
 fiara
 fiava
-fiche
-ficho
-filai
-filam
 filar
-filei
-filem
 filia
 filie
 filio
 filos
-filou
 finai
 finam
 finar
@@ -4543,9 +4102,8 @@ finde
 findo
 finei
 finem
+fines
 finou
-finte
-finto
 firam
 firas
 firmo
@@ -4557,25 +4115,13 @@ fitem
 fites
 fitou
 fixai
-flava
 flete
-fleti
-flita
-flito
-flore
-flori
-floro
 fluam
 fluas
-fluis
-focai
+fluís
 folar
-folhe
 folho
-folie
-folio
 fomes
-fonia
 foral
 forje
 forjo
@@ -4585,22 +4131,12 @@ forra
 forre
 fosca
 fosco
-fotão | fotao
+fotão
 fouce
 fraga
 freis
-freme
-fremi
-frena
-frene
 freno
 fresa
-frese
-freso
-freta
-freto
-frima
-frimo
 frisa
 frise
 friso
@@ -4608,14 +4144,13 @@ fruam
 fruas
 fruem
 fruir
-fruis
+fruís
 fruiu
-fruía | fruia
+fruía
 fugis
-fujão | fujao
+fujão
 fulas
 fumai
-fumão | fumao
 fundi
 funga
 funis
@@ -4626,67 +4161,36 @@ fures
 furna
 furta
 furte
-fusas
 fusco
-fábio | fabio
-fátuo | fatuo
-félix | felix
-fêmeo | femeo
-fífia | fifia
+fátuo
+fêmeo
+fólio
 gabai
 gabam
 gabas
 gabei
 gabem
 gabes
-gabão | gabao
+gabão
 gados
 gagas
 gagos
-gajão | gajao
-galai
-galam
+gajão
 galas
-galei
-galem
-galeá | galea
 galga
 galha
-galou
-gamai
-gamam
 gamas
 gamba
-gamei
-gamem
 gamos
-ganam
-ganem
-ganes
-gania
 ganir
-ganis
 ganiu
+ganês
 garbo
 gares
 garfa
-garfe
-garre
-garri
-garro
-gaseá | gasea
-gauss
-gazeá | gazea
 gazua
 geado
-geais
-geara
-geava
-geeis
-geiam
-geias
-geiem
-geies
+geará
 gelai
 gelam
 gelas
@@ -4694,52 +4198,32 @@ gelei
 gelem
 geles
 gelos
-gemai
 gemam
 gemar
 gemei
 gemem
 gemes
 gemia
-gemou
 gerai
 geras
 gerei
 geris
-gessa
-gesse
 gesta
-gilda
 ginga
-gingo
 ginja
 girai
 girei
 gires
-girão | girao
-gizai
-gizam
-gizar
-gizas
-gizei
-gizem
+girão
 gizes
-gizou
 gleba
 glosa
 glote
 gnoma
 gnose
-godas
-goele
-goelo
 goesa
-goiás | goias
-goleá | golea
-golfa
-gomes
-gomez
 gomos
+gonzo
 gorai
 goram
 gorar
@@ -4747,124 +4231,78 @@ goras
 gorei
 gorem
 gores
-gorki
 gorou
-gorra
-goteá | gotea
 gozai
 gozos
 grada
-grafa
-grafe
 grafo
-grame
-grane
-grano
 grela
-grele
 grelo
-grete
-greto
-gretá | greta
-grieg
 gripa
 gripo
-grisa
-grise
 griso
 grosa
 gruda
 grude
 grudo
 guapo
-guara
-guare
-guari
-guaro
+guará
 guiai
-guida
-guina
-guine
-guino
+guiné
 guisa
-guiso
 gulas
 gumes
-gália | galia
-gálio | galio
-gávea | gavea
-haiti
+gália
+gálio
+gávea
 hajas
-halle
 hansa
-harpe
-harpo
 havei
-hegel
-helga
 hemos
 herdo
-hirta
+hertz
 hirto
-hoare
 horto
 hoste
 hulha
 hunas
-hífen | hifen
+hífen
 iambo
-ibera
 ibero
 iceis
 iglus
 ilhai
-ilhal
 ilham
 ilhar
 ilhei
 ilhem
 ilhes
 ilhou
-ilhéu | ilheu
-ilibe
-ilibo
+ilhéu
 iludi
 iludo
 imago
 imame
 imane
 imbua
-imbui
+imbuí
 imbuo
 imola
 imole
 imolo
-imuta
-imute
-imuto
+ímpar
 inala
 inale
 inalo
 inche
 incho
-incra
-incre
-incri
-incro
-inesc
-ingre
 iniba
 inibi
 inibo
 inova
 inove
 inovo
-insta
-inste
-insto
-intua
-intui
-intuo
+input
 iodai
 iodam
 iodar
@@ -4873,33 +4311,21 @@ iodei
 iodem
 iodes
 iodou
-ippar
 irais
 irara
 irava
-irisa
-irise
-iriso
 iroso
-iscai
-iscam
 iscar
-iscou
-islão | islao
+islão
 isolo
-isque
 istmo
 itera
 itere
 itero
-ivone
-içada | icada
-içais | icais
-içara | icara
-içava | icava
-iónio | ionio
-jades
-janus
+içada
+içais
+içará
+içava
 jazam
 jazas
 jazei
@@ -4908,67 +4334,52 @@ jazeu
 jejua
 jejue
 jejuo
-jeová | jeova
-joana
 jogai
-jogão | jogao
 jorre
-josué | josue
 joule
 jubas
 judie
 judio
 jugos
-junca
-jónio | jonio
-júlia | julia
-júlio | julio
-kafka
-kazan
-kiwis
-lacas
+jónio
+júlia
+júlio
+koala
+laças
 lacei
 lacem
-laceá | lacea
+laces
 lacra
 lacro
-lacta
-lacte
-lacto
-ladeá | ladea
 ladre
 ladro
 lagar
 laica
 laico
 laivo
-lajeá | lajea
-lanar
 lanha
-lanhe
 lanho
 lapas
-lapão | lapao
-laréu | lareu
+lapão
+laréu
 lasco
 lassa
-lasse
+lasso
 latam
 latem
 lates
 latia
 latis
 latiu
-lauta
 lauto
 lavai
 lavor
 lavra
 lavre
 lavro
-laçai | lacai
-laçam | lacam
-laçou | lacou
+laçai
+laçam
+laçou
 ledes
 ledor
 legai
@@ -4976,15 +4387,13 @@ legam
 legas
 legou
 legue
-leida
 leiga
 leira
 leiva
 lemas
-lenhe
 lenho
 leras
-lerão | lerao
+lerão
 lesai
 lesam
 lesar
@@ -4997,35 +4406,31 @@ lesmo
 lesou
 lesta
 lesto
-letão | letao
-letãs | letas
+letão
+letãs
 lidai
 ligai
 limai
 limam
 limei
 limem
+limes
 limou
 linfa
-linux
 liste
 listo
 lixai
-liège | liege
-lobal
 lobas
-lobão | lobao
 locai
 locam
 locar
 locas
 locou
 lodos
+logos
 logra
 logre
-loire
 loisa
-lopes
 loque
 lorpa
 lotai
@@ -5034,11 +4439,7 @@ lotar
 lotas
 lotei
 lotem
-loteá | lotea
-lotos
 lotou
-loulé | loule
-loure
 louve
 lucre
 lufai
@@ -5049,45 +4450,32 @@ lufei
 lufem
 lufes
 lufou
-luigi
 lumes
 lupas
-luras
 lusas
 lusco
 lusos
 lutos
-luxai
-luxam
-luxar
-luxas
-luxei
-luxem
-luxes
-luxou
 luzam
 luzas
 luzem
 luzia
 luzis
 luziu
-luísa | luisa
-lázio | lazio
-líbia | libia
-líbio | libio
-lídia | lidia
-líeis | lieis
-lília | lilia
-lúcia | lucia
-lúcio | lucio
-lúmen | lumen
+líbia
+líbio
+lídia
+líeis
+lúcia
+lúcio
+lúmen
 macau
 macei
 macem
 macha
+macro
 mafra
 magas
-magda
 magno
 malar
 malhe
@@ -5099,13 +4487,12 @@ mamam
 mamei
 mamem
 mames
-mamão | mamao
+mamão
 manai
 manam
 manar
 manas
 manei
-manel
 manem
 manes
 manja
@@ -5113,16 +4500,10 @@ manje
 manjo
 manou
 mansa
-maomé | maome
-mapeá | mapea
-mareá | marea
 marga
-marim
-mariz
 marra
 marre
-marro
-marão | marao
+marão
 masca
 masco
 maser
@@ -5130,19 +4511,16 @@ matai
 matiz
 matos
 mauro
-maçai | macai
-maçam | macam
-maçou | macou
-mação | macao
+maçai
+maçam
+maçou
+mação
 meada
 meado
-meato
-medas
+meças
 medis
 medra
-medre
 medro
-meije
 melai
 melam
 melar
@@ -5153,49 +4531,38 @@ meles
 meloa
 melou
 melra
-mendo
-meneá | menea
 menir
-mesão | mesao
+mesão
 metei
 mexei
-meçam | mecam
-meças | mecas
-miada
+meçam
 miado
 miais
-miara
+miará
 miava
-micra
 mieis
-migai
-migam
 migar
 migas
-migou
 migre
 migro
-migue
+migué
 mijai
 mijos
-mijão | mijao
-mille
-milão | milao
+mijão
 mimai
 mimam
 mimas
 mimei
 mimem
+mimes
 mimou
 minai
 minam
 minei
 minem
+mines
 minga
-mingo
-minho
 minou
-minsk
 mirai
 miram
 mirei
@@ -5207,46 +4574,25 @@ mirro
 misse
 misso
 mitra
-mitre
-mitro
 moais
 modal
-moeis
 moela
-moera
-mofai
-mofam
+moerá
 mofar
-mofas
-mofei
-mofem
-mofes
-mofou
 moina
-moine
-moino
+moira
 moiro
 moldo
-monas
 monco
 monda
-mondo
-moniz
 monja
-monza
 morai
-morin
-morão | morao
-mosse
-mosso
+mores
 mosto
-motes
 mouca
 mouco
 moura
 movei
-moíam | moiam
-moías | moias
 mudai
 mudez
 mugem
@@ -5261,14 +4607,10 @@ munam
 munas
 munem
 munes
-munge
-mungi
 munia
 munir
 munis
 muniu
-munja
-munjo
 murai
 muram
 murar
@@ -5277,64 +4619,33 @@ murei
 murem
 mures
 murou
-murça | murca
-musal
+murça
 musas
-mutue
-mário | mario
-médão | medao
 nabal
 nadai
 nafta
 naifa
-nanai
 nanam
 nanar
 nanas
-nanci
-nanei
-nanem
 nanes
 nanou
 narre
 narro
-narva
-nasço | nasco
+nasço
 natos
-necas
 negai
-neiva
-nenés | nenes
-nepal
-nevei
-nexos
-nicai
-nicam
 nicar
-nicas
-nicou
 nimbo
-ninai
-ninam
 ninar
 ninas
-ninei
-ninem
-ninha
-ninhe
-ninou
-nique
-nitra
-nitre
+nobel
 nodal
-noema
-noese
-noive
-nomeá | nomea
 nonas
 noras
 notai
-notre
+notes
+novel
 nubla
 nuble
 nublo
@@ -5344,27 +4655,11 @@ nulos
 nunes
 nutra
 nutri
-nádia | nadia
-névis | nevis
-níger | niger
-níveo | niveo
-núveo | nuveo
-oboés | oboes
-obrai
-obram
+níveo
+núveo
+oboés
 obrar
-obrei
-obrem
-obres
-obrou
-obsta
-obste
-obsto
-odete
 odiai
-odora
-odore
-odoro
 odres
 ofega
 ofego
@@ -5376,28 +4671,18 @@ oleia
 oleie
 oleio
 oleou
-olhal
-olhão | olhao
+olhão
 oliva
 olmos
 omite
 omito
-ondeá | ondea
 onera
 onere
 onero
 opaca
 opaco
-opiai
-opiam
-opiar
-opias
-opiei
-opiem
-opies
 opine
 opino
-opiou
 optai
 optem
 optes
@@ -5409,7 +4694,6 @@ orcei
 orcem
 orces
 oreis
-orfeu
 orlai
 orlam
 orlar
@@ -5417,7 +4701,6 @@ orlei
 orlem
 orles
 orlou
-ormuz
 ornai
 ornam
 ornar
@@ -5426,55 +4709,27 @@ ornei
 ornem
 ornes
 ornou
-orçai | orcai
-orçam | orcam
-orçar | orcar
-orçou | orcou
-osaca
-osaka
+orçai
+orçam
+orçar
+orçou
 osgas
-otelo
-ougai
-ougam
 ougar
-ougas
-ougou
-ougue
-ourai
-ouram
 ourar
 ouras
-ourei
-ourem
-oures
-ourou
 ousai
 ouvis
-ovada
-ovado
 ovais
-ovala
-ovale
-ovalo
-ovara
-ovava
-oveis
+ovará
 ovino
 oxida
-ozona
-oídio | oidio
+oxide
 pagai
-paigc
 paios
 paire
 pairo
 paiva
-palau
-palia
-palie
-palio
-palme
-palop
+pálio
 palpa
 palpe
 palpo
@@ -5488,41 +4743,31 @@ panar
 panas
 panei
 panem
+panes
 panou
 papam
 papei
 papem
 papes
 parda
-pareá | parea
 parla
 parle
 parlo
-parma
 pasma
 pasme
 pasmo
+paste
 patim
-patão | patao
-pauli
+pause
 pauso
 paute
 pauto
 pavoa
-paços | pacos
-peano
+paços
 pecai
 pecha
-pedip
 pegai
-pejai
-pejam
 pejar
-pejas
-pejei
-pejem
-pejes
-pejou
 pelai
 pelam
 pelar
@@ -5542,18 +4787,13 @@ penha
 penou
 peque
 peral
-peres
-perez
-perra
 perro
 pesai
 pesem
 peses
 petiz
-piado
 piais
 piara
-piauí | piaui
 piava
 picai
 pieis
@@ -5561,133 +4801,82 @@ pilai
 pilam
 pilei
 pilem
+piles
 pilhe
 pilho
 pilou
-pilão | pilao
+pilão
 pimba
-pimpa
-pimpe
-pimpo
 pioro
 pirai
 piram
 pirei
 pirem
-pireu
-pirro
 pisai
-pisga
-pisgo
-pitéu | piteu
-pivôs | pivos
+pitéu
+pivôs
+plane
 plica
-plico
 podai
 podal
 podam
 podas
 podei
 podou
-podão | podao
-pojai
-pojam
+podão
 pojar
-pojas
-pojei
-pojem
-pojes
-pojou
-polco
-polis
 poliu
 polua
 poluo
 pomes
-popós | popos
-posai
-posam
 posas
-posem
 potra
-povoa
+póvoa
 povoe
 povoo
 prelo
-prema
-preme
-premo
-prese
 prive
 privo
-prião | priao
+prião
 proas
 probo
-profs
-proso
 provi
 prumo
 prura
 prure
 pruri
 pruro
-pskov
 pugna
-pugne
-pugno
-pujai
-pujam
 pujar
-pujas
-pujei
-pujem
-pujes
-pujou
 pulai
 pulas
 pulem
 pules
-pumba
+pulse
 punam
 punas
 punem
 punes
-punge
-pungi
 punia
 punis
-punja
-punjo
 purgo
 puxai
-puxos
-pádua | padua
-pífia | pifia
-pífio | pifio
+pífia
+pífio
+pólis
 quede
 quedo
 quico
 quimo
 quina
-quine
-quino
 quita
 quito
 quivi
-rabeá | rabea
-rabão | rabao
+rabão
 rache
 racho
 radia
-radie
-rafai
-rafam
 rafar
-rafas
-rafei
-rafem
-rafes
-rafou
 raiai
 raiam
 raiei
@@ -5696,78 +4885,36 @@ raies
 raiou
 ralai
 ralei
-raleá | ralea
 ralhe
 ralho
 ralis
-ralos
 ralou
-ramas
-ramón | ramon
+rança
+ranço
 rangi
-rangê | range
 ranja
 ranjo
-rança | ranca
-ranço | ranco
 rapai
 rapei
 rapem
-rareá | rarea
-rasai
-rasam
+rapes
 rasco
-rasei
-rasem
-rases
-rasou
 raspe
 raspo
-ratai
-ratam
 ratar
-ratei
-ratem
-rateá | ratea
-ratou
-ratão | ratao
-ravel
-razie
-razio
-razoa
-razoe
-razoo
-reata
-reate
-reato
-reava
-reave
-reavi
-reavo
-receá | recea
-refia
-refie
-refio
+ratão
 regai
 regam
 regas
 regei
 reges
 regeu
-regia
+régia
 regos
 regou
-regre
-regro
 regue
-reiam
-reias
 rejam
 rejas
-relam
-relas
-relei
-relem
 releu
 relia
 relve
@@ -5781,42 +4928,20 @@ remia
 remir
 remis
 remiu
-remoa
-remoo
 remou
-remoí | remoi
 rendi
 renha
 renhe
 renhi
 renho
-repas
-repta
-repte
 repto
-repus
-repôs | repos
 resma
 retal
 retas
 retos
-reuma
-revim
-revir
-revoo
-revém | revem
-rezão | rezao
-riais
-ridas
-ridos
-rifai
-rifam
+rezão
 rifar
-rifei
-rifem
-rifes
-rifou
-rijão | rijao
+rijão
 rilha
 rilhe
 rilho
@@ -5825,7 +4950,6 @@ rimei
 rimem
 rimes
 rimou
-rioja
 ripai
 ripam
 ripar
@@ -5833,44 +4957,31 @@ ripei
 ripem
 ripes
 ripou
-riras
-rirei
-rirão | rirao
-risse
-ritma
-ritme
-rixai
-rixam
-rixar
-rixei
-rixem
-rixes
-rixou
 roais
+roçai
+roçam
+roças
 rocei
 rocem
 roces
 rodai
 rodes
-rodeá | rodea
 roeis
 roera
 rogam
 rogas
-rojão | rojao
+rogue
+rojão
 rolai
 rolei
-rolhe
+roles
 rolho
-rolão | rolao
+rolão
 romeu
 rompo
-romão | romao
-ronde
-rondo
+romão
 roque
 rosal
-rosco
 rosne
 rosno
 rotai
@@ -5882,32 +4993,22 @@ rotes
 rotos
 rotou
 rouca
-roxeá | roxea
-roçai | rocai
-roçam | rocam
-roças | rocas
-roíam | roiam
-roías | roias
-roída | roida
-ruais
+roíam
 rublo
 rubra
-rudez
 rufai
 rufam
 rufas
 rufei
 rufem
 rufes
-rufie
-rufio
 rufou
 rugem
 ruges
 rugia
 rugis
 rugiu
-ruirá | ruira
+ruirá
 rujam
 rujas
 rumai
@@ -5917,28 +5018,17 @@ rumei
 rumem
 rumes
 rupia
-rusgo
-ruças | rucas
-ruços | rucos
-ruíam | ruiam
-ruías | ruias
-ruída | ruida
-rádon | radon
-ráfia | rafia
-régie | regie
-régio | regio
-ríeis | rieis
-ródão | rodao
-rósea | rosea
-róseo | roseo
-rúben | ruben
-rúbeo | rubeo
-saara
+ruças
+ruços
+rádon
+régio
+rósea
+róseo
 sabei
 sacai
 sacha
-sache
 sacho
+sachê
 sacie
 sacio
 sacra
@@ -5950,24 +5040,18 @@ sagra
 sagre
 sagro
 salda
-salde
 salga
 salgo
-sambe
 sambo
-samoa
 sanai
 sanam
 sanar
 sanas
-sanca
 sanei
 sanem
 sanes
-saneá | sanea
 sanha
 sanou
-sapal
 sarai
 saras
 sarau
@@ -5975,15 +5059,7 @@ sarei
 sarem
 sares
 sarja
-sarje
-sarjo
-sarne
-sarni
-sarno
-sarre
-sarça | sarca
-satis
-scala
+sarça
 sebos
 secai
 sedai
@@ -6001,42 +5077,21 @@ segas
 segou
 selam
 seles
-semeá | semea
 senas
 senis
-serpa
 serpe
 serre
 serro
-sertã | serta
-serze
-serzi
-seteá | setea
-sidas
-sidos
-sigui
+sertã
+sigma
 silve
-silvá | silva
-simão | simao
-sinai
-sinas
-sines
-sinhá | sinha
+simão
+sinhá
 sique
 sirga
-sirza
-sirzo
-sisai
-sisam
 sisar
-sisas
-sisei
-sisem
-sises
-sisou
 sitia
 sitie
-sitos
 situe
 situo
 soada
@@ -6046,10 +5101,6 @@ socai
 socam
 soeis
 solde
-solva
-solvi
-solvo
-solvê | solve
 somai
 somei
 somem
@@ -6061,14 +5112,11 @@ sonsa
 sonso
 soque
 sorna
-sorne
-sorno
-sorti
+sóror
 sorva
 sorve
 sorvi
 sorvo
-soure
 sousa
 souto
 sovai
@@ -6078,11 +5126,9 @@ sovem
 soves
 sovou
 suais
-suara
+suará
 subis
-sudão | sudao
 sueis
-sueva
 suevo
 sugai
 sugas
@@ -6104,65 +5150,40 @@ surre
 surro
 surta
 surte
-surti
 susta
 suste
-szabo
-sátão | satao
-sável | savel
-sídon | sidon
-sílex | silex
-sónia | sonia
-sóror | soror
-tache
-tadeu
+sutra
+sável
+sêmea
+sílex
 taipa
-taira
-taizé | taize
-talai
-talam
 talar
-talei
-talem
 talhe
-talin
 talos
-talou
 tampe
-tamão | tamao
+tamão
 tange
 tangi
 tanja
 tanjo
 tapai
-tapeá | tapea
-tarai
-taram
 tarar
 taras
 tardo
-tarei
-tarem
-tares
 tarja
-tarje
-tarjo
-tarou
 tarso
 tasco
-tateá | tatea
 tatua
 tatue
 tatuo
 tatus
-tauro
 taxai
 taxam
 taxar
 taxei
 taxem
+taxes
 taxou
-tebas
 tecei
 tecem
 teces
@@ -6175,88 +5196,42 @@ teixo
 teles
 telhe
 telho
-telmo
-telão | telao
+telão
 temei
 tendi
-terce
-tesas
-teseu
-teçam | tecam
-teças | tecas
-thorp
-tiago
-tibre
-tifos
-timor
-tinam
-tinem
-tines
-tinga
+teçam
+teças
 tingi
-tinia
 tinir
-tinis
-tiniu
 tinja
 tinjo
-tirol
 tirso
-tisna
 tisne
-tisno
-tição | ticao
+tição
 toada
-toado
-toais
-toara
-toava
+toará
 tocai
-toeis
-togai
-togam
 togar
-togas
-togou
-togue
 toiro
-tojos
-tolha
-tolhe
-tolhi
 tolho
 tombe
-tomos
-tonai
-tonam
+tonal
 tonar
-tonas
-tonei
 tonel
-tonem
 tonga
-tonou
 topai
 topes
-torai
-toram
 torar
 toras
 torda
-torei
-torem
-tores
 torga
-torou
 torpe
 torra
 torro
 torva
-torve
 torvo
 toste
 tosto
-touco
 toura
 traja
 trajo
@@ -6266,55 +5241,30 @@ tremi
 trepe
 trepo
 treva
+trina
 trine
 trino
-triná | trina
-trios
-troai
-troam
-troas
-troei
-troem
-troes
-trofa
-troia
-troou
 trota
 troto
 trova
+trove
 trovo
-trufe
-trufo
 tubas
-tudor
-tufai
-tufam
 tufar
-tufas
-tufei
-tufem
-tufes
-tufou
-tugia
 tugir
-tugiu
 tunas
-tuplo
+tunes
 turbe
-turim
 turra
 turve
 turvo
 tussa
-tusso
-tálio | talio
-tátil | tatil
-tâmil | tamil
-tânia | tania
-tétum | tetum
-tília | tilia
-tónia | tonia
-tório | torio
+tálio
+tátil
+tâmil
+tétum
+tília
+tório
 uivai
 uivam
 uivas
@@ -6338,7 +5288,6 @@ unhes
 unhou
 uniam
 unias
-unita
 unjam
 unjas
 untai
@@ -6348,7 +5297,6 @@ untei
 untem
 untes
 untou
-urais
 urbes
 urdam
 urdas
@@ -6360,31 +5308,24 @@ urdis
 urdiu
 ureia
 urgem
+urges
 urgia
 urgir
 urgis
 urgiu
 urjam
 urjas
-urrai
-urram
 urrar
-urras
-urrei
-urrem
-urres
-urros
-urrou
 ursas
 urubu
 urzal
 urzes
 useis
 usura
-uvaça | uvaca
 vadie
 vagai
 vagam
+vague
 vaiai
 vaiam
 vaiar
@@ -6392,10 +5333,7 @@ vaiei
 vaiem
 vaies
 vaiou
-valai
-valam
 valei
-valou
 valse
 valso
 valva
@@ -6407,21 +5345,20 @@ varei
 varem
 vares
 varie
-vario
+vário
 variz
 varou
 varri
 varro
-vasas
 vasco
 vazai
 vazam
 vazas
+vazão
 vazei
 vazem
 vazes
 vazie
-vazão | vazao
 veada
 vedai
 vedam
@@ -6437,91 +5374,63 @@ velem
 veles
 velou
 venta
-verdi
-vereá | verea
 vergo
 versa
+verse
 verta
 verti
 vesga
-vesta
 vetai
 vetam
 vetas
 vetei
 vetem
 vetes
-vetos
 vexai
 vexam
 vexar
 vexas
 vexei
 vexem
+vexes
 vexou
-viana
 vibre
 vibro
-vichy
-vicie
-vides
 vidra
 vidre
 vilar
 vinca
 vingo
-vingt
 vinis
 virai
-virgo
 visai
+visas
 visei
 visem
 vises
-viseu
-visos
 visou
-vitae
 vivei
 vizir
-viúve | viuve
-voada
 voais
 voeis
-voeja
-voeje
-voejo
-vogai
-vogam
 vogar
-vogas
-vogou
-volga
 volva
 volve
 volvi
 volvo
 votai
 votas
-vouga
-vânia | vania
-vénus | venus
-víeis | vieis
-vítor | vitor
+vénus
+víeis
 weber
-wilde
 xales
-xexés | xexes
-xhtml
 xiita
 xinga
 xingo
-xénon | xenon
-zaire
+xénon
 zarpa
 zarpe
 zarpo
-zebre
 zebro
 zelai
 zelam
@@ -6531,11 +5440,8 @@ zelem
 zeles
 zelos
 zelou
-zinca
-zoada
-zoado
 zoais
-zoara
+zoará
 zoava
 zoeis
 zombe
@@ -6551,43 +5457,2943 @@ zurra
 zurre
 zurro
 zurza
-zurze
-zurzi
-zurzo
-zélia | zelia
-zínia | zinia
-ábaco | abaco
-ácaro | acaro
-ágata | agata
-ápice | apice
-árgon | argon
-árias | arias
-árido | arido
-átalo | atalo
-áurea | aurea
-áureo | aureo
-ávila | avila
-ázimo | azimo
-ânodo | anodo
-ébulo | ebulo
-éfeso | efeso
-épica | epica
-étimo | etimo
-évora | evora
-ígnea | ignea
-ímpar | impar
-ímpia | impia
-ímpio | impio
-índex | index
-ínvio | invio
-óbice | obice
-ócios | ocios
-óculo | oculo
-órfãs | orfas
-ósseo | osseo
-ótica | otica
-ótico | otico
-úrano | urano
-úrica | urica
-úrico | urico
+ágata
+áurea
+éfeso
+évora
+úrano
+ábaco
+ácaro
+áfono
+ápice
+árgon
+árias
+árido
+átona
+átono
+áureo
+ázimo
+ébulo
+épica
+étimo
+ígnea
+ímpia
+ímpio
+índex
+óbice
+ócios
+óculo
+órfãs
+ósseo
+ótica
+ótico
+úrico
+ababá
+abaci
+abacà
+abada
+abaju
+abajá
+abará
+abaré
+abaxo
+abaza
+abdal
+abecê
+abete
+abezó
+abibe
+abius
+abjad
+ablua
+ablui
+abluo
+aboca
+aboco
+abofé
+aboio
+aboiz
+abort
+abota
+abuna
+acair
+acaju
+acapu
+acará
+acejo
+acera
+acere
+acero
+aceto
+achey
+acila
+acoar
+acoro
+acral
+acres
+actas
+actel
+actol
+actor
+actos
+actua
+actue
+actuo
+acuar
+acuta
+acção
+adaba
+adage
+adamo
+adelo
+adhan
+admin
+adobo
+adufa
+aduze
+adves
+aerai
+aeram
+aerar
+aeras
+aerei
+aerem
+aeres
+aerou
+afade
+afaze
+afear
+aflar
+afoxé
+afudê
+afulo
+afurá
+agadá
+agadê
+agama
+agami
+agave
+agoar
+agogô
+agraz
+agres
+aguti
+ahans
+aiala
+ainos
+ainus
+aioli
+aipim
+airai
+airam
+airar
+airas
+airei
+airem
+airou
+airão
+aiões
+ajajá
+ajeru
+ajuga
+ajuru
+akita
+alage
+alalá
+alano
+albor
+albói
+aldol
+alear
+aleia
+aleli
+alelo
+aleno
+aleta
+alfar
+alfas
+alfim
+algal
+algar
+algia
+algor
+algua
+algur
+alhar
+alhur
+alhão
+alien
+alila
+aliyá
+alosa
+alões
+altai
+altor
+altão
+aluco
+alufá
+alume
+alvar
+alães
+alãos
+amalá
+amame
+ambão
+amelê
+amial
+amida
+amina
+amino
+amish
+amita
+amito
+amomo
+anaco
+anada
+anano
+ancap
+ancha
+ancho
+andoa
+anejo
+aneto
+angla
+anglo
+angus
+anhar
+anina
+anixo
+annal
+annos
+anoia
+anona
+ansim
+antar
+antr.
+antre
+anuro
+anãos
+aníon
+ao ar
+ao pé
+apeam
+apeas
+apeem
+apees
+apena
+apene
+apeno
+apiol
+ápodo
+apojo
+apoya
+aqueu
+arabá
+araçá
+aranã
+arati
+archa
+arcol
+ardeb
+areai
+arear
+areca
+areei
+areie
+areio
+arela
+areno
+areou
+arepa
+arerê
+areté
+areus
+argan
+argot
+árgão
+arhat
+arigô
+arila
+arilo
+arimo
+arjão
+armur
+arnal
+arnaz
+arnês
+arola
+arolo
+arosi
+arpéu
+arrás
+arrau
+array
+arreu
+artel
+aruak
+arujo
+arume
+arxar
+arção
+arões
+asnar
+aspar
+assuã
+at.te
+atamã
+aterá
+ateve
+atoar
+atoni
+atril
+atris
+atuir
+atxim
+aténs
+au au
+auaçú
+aueti
+aueté
+augai
+augam
+augar
+augas
+auges
+augou
+augue
+aulos
+aunar
+aurir
+aução
+avais
+avano
+avati
+avena
+aweti
+axião
+aynda
+ayran
+azado
+azeri
+aziar
+azias
+azoar
+azure
+açaís
+açoda
+açodo
+açula
+açule
+açulo
+açães
+aônia
+aónio
+babau
+bacar
+badio
+baeco
+baeta
+bagel
+bagre
+bágua
+bahia
+baiar
+baita
+baite
+balai
+balam
+balar
+balbo
+balei
+balem
+balés
+balga
+balho
+balor
+balou
+balun
+balça
+bâmbi
+bambê
+bandê
+bango
+banhu
+bantu
+banya
+baobá
+barda
+barga
+baril
+basaa
+bassê
+batch
+batik
+bauru
+bazai
+bazam
+bazas
+bazei
+bazem
+bazes
+bazou
+baúna
+bebum
+becas
+becha
+beche
+bedel
+beige
+beiju
+beita
+belfa
+beliz
+bella
+bello
+belão
+bemba
+benga
+beque
+berce
+berne
+berça
+betar
+betas
+beudo
+bhili
+biana
+biari
+bicis
+bicla
+bifar
+bigue
+bigus
+biguá
+bijou
+bilao
+bilar
+bilau
+bimbo
+binar
+binga
+bioco
+bioma
+biota
+birao
+birôs
+bisel
+bispa
+bitar
+biúta
+blast
+blasé
+blata
+blefa
+blefe
+blefo
+blend
+blica
+blini
+blitz
+bloga
+blogo
+bluco
+blues
+bluff
+blush
+boava
+bobar
+bobes
+bobot
+bobão
+bocha
+bocho
+bocoi
+bocão
+bodão
+bofás
+boiil
+boira
+boita
+boiça
+bolim
+bolão
+bongo
+bonzo
+boras
+borne
+borno
+boros
+boráx
+botox
+bouba
+bowls
+boxer
+boxes
+braba
+brabo
+brana
+bravu
+brega
+breja
+brema
+brial
+brica
+brick
+brida
+briza
+broar
+broda
+brodo
+broxa
+bruar
+bruco
+bródi
+bubão
+bucil
+bucle
+budas
+bugar
+bugre
+bugue
+buiti
+bujas
+bujão
+bumbo
+bunda
+bunho
+buque
+burca
+burka
+burqa
+bursa
+busão
+butil
+butim
+butis
+butiá
+butre
+buxão
+buços
+bwiti
+báfer
+bágoa
+bâton
+bégua
+bétel
+bíduo
+bívio
+bóbis
+bória
+bório
+bóson
+bóton
+bôtos
+búteo
+bútio
+bútua
+caaba
+caama
+cabaú
+cabeu
+cabis
+caboz
+cabre
+cabro
+cabum
+cacha
+cacre
+cacto
+cadêa
+cafre
+cafta
+cafua
+cagão
+cahir
+caicó
+cajón
+calau
+callo
+calom
+camal
+camba
+cambe
+cambo
+campi
+cancã
+canda
+cande
+cando
+canga
+cango
+canha
+canho
+canle
+canna
+canzá
+capoa
+capot
+caput
+capôs
+carai
+carma
+carme
+carso
+çarça
+casbá
+cassa
+casse
+casso
+cast.
+caste
+catre
+catua
+cauim
+caupi
+cauri
+cauta
+cazas
+caçuá
+cecos
+ceiba
+ceive
+celga
+cemba
+cenho
+cerce
+cerda
+cerdo
+cerol
+cerva
+cerza
+cerze
+cerzo
+cevai
+cevam
+cevar
+cevas
+cevei
+cevem
+ceves
+cevou
+chabu
+chada
+chana
+chara
+chats
+chaço
+cheda
+chede
+chefa
+chevá
+cheya
+cheyo
+chiba
+chibé
+chili
+chima
+chios
+chipe
+chito
+chião
+choer
+chola
+cholo
+chope
+chopo
+choto
+chuça
+chufa
+chufe
+chuvê
+chãos
+chêis
+ciada
+cias.
+cibar
+cicio
+cidro
+cigas
+cilha
+cimão
+cioba
+cipós
+cirro
+cisca
+cista
+ciste
+cisto
+clado
+claim
+clean
+click
+clina
+clipe
+clips
+clora
+clore
+close
+clown
+coala
+coana
+coati
+cobói
+cocão
+codec
+codão
+coeva
+coevo
+cofos
+coina
+coiné
+coise
+collo
+color
+colza
+comal
+combe
+combo
+comde
+comua
+comus
+conas
+conca
+conha
+conho
+conja
+copar
+copla
+copão
+corga
+corgo
+corne
+corr.
+corva
+cosca
+cosmo
+cosso
+costo
+cotra
+couce
+coupé
+cover
+covia
+covid
+covos
+coxim
+coysa
+craca
+crack
+crash
+crawl
+crega
+crego
+creto
+crica
+criós
+croac
+croça
+croco
+croia
+croio
+cruis
+cruiz
+crupe
+crush
+cuais
+cuatá
+cucar
+cucas
+cucho
+cudar
+cuias
+cuitê
+cumim
+cunco
+cupim
+cupom
+cuque
+curau
+curió
+curra
+curry
+curão
+cusca
+cusco
+cutia
+cuxiú
+cuyda
+cuyde
+cuydo
+cuzão
+cuíca
+cyclo
+cysto
+cálix
+cápea
+cávea
+cávia
+cândi
+cérea
+céreo
+cério
+círia
+códeo
+códon
+cório
+côvão
+cúlis
+cúmel
+cúmio
+cúter
+cútis
+dacha
+dafne
+daime
+dalit
+damba
+damna
+damne
+damno
+damão
+daora
+darde
+darma
+dasse
+davão
+de pé
+decer
+deias
+delam
+delay
+delei
+delia
+delir
+deliu
+dendê
+dengo
+deosa
+deprê
+deque
+deraõ
+derby
+derma
+desar
+detox
+deyxa
+deyxe
+deyxo
+deãos
+diafa
+dicar
+dicta
+dicte
+dicto
+dieco
+diese
+dildo
+dinda
+diner
+dingo
+dinka
+ditto
+divar
+divos
+diãte
+docar
+docém
+dodói
+dodós
+dogue
+dogão
+doiam
+doias
+dolor
+dolos
+domos
+dondo
+dongo
+donut
+dopar
+dorga
+dorna
+dorze
+dosso
+douda
+doudo
+doula
+draft
+dread
+drink
+dromi
+drone
+drope
+drops
+drumi
+drupa
+duala
+dubla
+duble
+dublo
+ducha
+ducho
+ducto
+duela
+duele
+dumba
+dural
+durex
+durio
+durme
+durmi
+dutos
+dzeta
+dácio
+dâmar
+dândi
+début
+díade
+dímer
+dísel
+díxis
+dólmã
+dório
+dútil
+e daí
+e tal
+ébola
+echos
+ecler
+ecrão
+edade
+edeia
+efebo
+egeia
+egeus
+egipã
+eitos
+eivai
+eivam
+eivar
+eivas
+eivei
+eivem
+eives
+eivou
+eledá
+elemi
+elepê
+elfos
+êlles
+em pé
+em pó
+embuá
+emfim
+emoji
+empar
+endez
+endro
+endês
+enema
+engos
+enhes
+enter
+enus.
+enxós
+epóxi
+erado
+erica
+ermas
+ermão
+eroda
+erode
+erodi
+erodo
+error
+ervar
+erzya
+escol
+esfia
+esgar
+esmar
+espir
+espru
+estam
+estoa
+estol
+estro
+esvaa
+esvae
+esvao
+etana
+eteno
+éther
+ethos
+etila
+evati
+evola
+evole
+evolo
+ex.mo
+exido
+exina
+exões
+eólia
+eólio
+f*der
+facha
+facul
+faiar
+faito
+fajãs
+falaz
+falca
+falda
+falla
+falow
+fanal
+fanga
+fanha
+fanho
+fantã
+fapar
+farma
+farme
+farro
+farum
+fasor
+fatwa
+fatão
+fauce
+faule
+faúla
+febeu
+felpa
+felpo
+fenai
+fenam
+fenar
+fenas
+fenei
+fenem
+fenes
+fenou
+fento
+feofó
+feraz
+ferry
+feste
+festo
+feyra
+fiapo
+figle
+filet
+fimia
+fiofó
+fiota
+fiote
+fisio
+fiúza
+flaca
+flaco
+flama
+flape
+flate
+flato
+flavo
+fleme
+flipa
+flipe
+flipo
+flirt
+flood
+flume
+flush
+fodam
+fodas
+fodaz
+fodei
+fodem
+foder
+fodes
+fodeu
+fodia
+fodão
+fofar
+fofão
+fogal
+foila
+foina
+foito
+fones
+fonão
+forão
+foria
+fosga
+fouto
+fozes
+foção
+frame
+frapê
+freai
+frear
+freei
+freia
+freie
+freou
+frevo
+frila
+friul
+froco
+front
+fucei
+fucem
+fuces
+fuder
+fudeu
+fufas
+fugar
+fular
+fulva
+fulvo
+fumal
+funar
+funje
+funks
+funça
+furca
+furco
+fusta
+fuste
+futon
+futre
+futum
+fuzil
+fuzis
+fuzos
+fuzuê
+fuçai
+fuçam
+fuçar
+fuçou
+fácio
+fácir
+fácis
+fáciu
+fálus
+fátua
+féleo
+fíler
+fófis
+fónix
+fóton
+fônon
+fúfio
+fúler
+fúsil
+gacha
+gacho
+gafes
+gaffe
+gague
+gaiar
+gaias
+gaios
+gaite
+gaiva
+gaizo
+gallo
+gambé
+gamer
+ganau
+ganda
+ganja
+gansa
+ganzá
+gança
+garis
+garoa
+garua
+gatal
+gatil
+gatis
+gatão
+gauge
+gazal
+gazel
+gebar
+geena
+geito
+gelha
+genal
+genet
+genra
+genti
+geode
+geodo
+gerbo
+geste
+getas
+ghoul
+gibão
+giclê
+gicló
+gilas
+ginco
+glacê
+glena
+glide
+glose
+gloso
+gloss
+gluão
+glúon
+goana
+goano
+gocho
+gofre
+gogós
+goiva
+goivo
+golar
+golem
+golão
+gombô
+gomil
+gomis
+gonga
+goraz
+gorga
+gorja
+gorós
+gosma
+gotta
+gouli
+grais
+grapa
+graxo
+greda
+grejó
+grená
+greva
+gride
+grife
+grila
+grima
+grime
+griot
+grisú
+grolo
+grota
+grumo
+guajá
+guano
+guapê
+guaxo
+gudão
+gueis
+gueja
+gueos
+gugla
+gugle
+guglo
+guiga
+guito
+guiço
+gulag
+gules
+gunas
+gunda
+gunga
+guria
+guris
+gurmê
+gusla
+guspe
+gábia
+gâmia
+gírio
+góbio
+gódia
+gônis
+hades
+hadiz
+hadji
+haiku
+hakka
+halal
+halfe
+halos
+hanja
+haram
+haras
+harto
+hashi
+hater
+hauia
+hauçá
+hedra
+helmo
+henna
+herma
+herva
+heréu
+heróe
+hexil
+hexis
+hidro
+hijab
+hilar
+hilos
+hirax
+hitar
+hmong
+hobby
+hodja
+homes
+homum
+homão
+horar
+horsa
+horte
+hosco
+house
+humos
+husar
+husma
+hymno
+hálux
+hápax
+hélix
+hétmã
+híper
+hômis
+ibook
+iagês
+iaque
+iboga
+ibope
+icaco
+ideai
+idear
+ideei
+ideie
+ideio
+ideou
+igara
+ilheo
+ilhós
+ilida
+ilide
+ilidi
+ilido
+imana
+imano
+imigo
+imoto
+inamu
+inane
+incel
+indez
+indie
+indol
+inere
+ineri
+infla
+infle
+inflo
+infra
+inico
+inira
+iniro
+intro
+inçar
+iodos
+iogui
+ioiós
+ionte
+ippon
+iquim
+irerê
+irite
+itajé
+iuane
+iurta
+iurte
+ixora
+iétis
+iônis
+jacas
+jacre
+jacta
+jacte
+jacto
+jacus
+jagoz
+jagra
+jagre
+jaina
+jalne
+jalão
+jamba
+jambo
+jambu
+janal
+janga
+japas
+jaqué
+jarai
+jaspe
+javre
+jebas
+jecas
+jegre
+jegue
+jeira
+jelco
+jeque
+jerra
+jerro
+jetom
+jeton
+jiade
+jigue
+jihad
+jilós
+jimbo
+jines
+jipão
+jiqui
+jirau
+joiça
+joker
+jolda
+jolho
+jongo
+jorna
+jorne
+josta
+jotas
+joven
+joãos
+joões
+juche
+jugar
+jumbo
+junge
+jungi
+jungo
+junja
+junjo
+jusão
+já já
+jânio
+jũtas
+jũtos
+kanji
+karbi
+karma
+kasha
+katal
+kayak
+kbças
+kebab
+kefir
+kenaf
+kendo
+khasi
+khmer
+kibar
+knyaz
+koban
+koiné
+kombi
+konel
+krill
+kudzu
+kulak
+kumis
+kumyk
+kurdo
+kurta
+kyrie
+kyste
+kysto
+kírie
+kúmel
+labro
+labéu
+lacho
+lacão
+lahar
+laiar
+laias
+lajem
+lamen
+lampo
+lande
+lapar
+lapoa
+laquê
+lardo
+lassi
+lasta
+laste
+lasto
+later
+latos
+lauda
+laudo
+lauro
+laído
+laúde
+lecas
+legoa
+legos
+legra
+legão
+leino
+leita
+lenir
+lepto
+lerda
+lerdo
+lerpe
+lesca
+lesim
+level
+lexia
+leyga
+leygo
+lhama
+lhano
+liame
+liana
+libar
+liber
+libré
+licra
+light
+ligre
+lilau
+linde
+linga
+lisco
+lisol
+litão
+livel
+lixão
+liões
+lobby
+locro
+lócus
+loess
+logai
+logam
+logar
+logas
+login
+logue
+lonca
+lonja
+lorfo
+lorga
+losna
+luaus
+lucta
+lucte
+lucto
+ludra
+ludre
+ludro
+luges
+lugre
+luita
+luite
+luito
+luque
+lutiê
+lyceo
+lyceu
+lycra
+lynce
+lábil
+lájea
+lápia
+lárix
+lâmia
+lédas
+lédos
+lícia
+lício
+lídio
+límax
+lóbis
+lódão
+lógia
+lójia
+lólio
+lótus
+lúmia
+lútea
+lúteo
+lẽbro
+m*rda
+macis
+macla
+macua
+mafuá
+mailu
+maino
+mainá
+maios
+malsã
+malto
+malus
+mamba
+mambu
+mamey
+mamoa
+mandi
+manhê
+manir
+mansi
+maori
+maple
+mappa
+maqui
+marai
+maram
+marar
+maras
+marei
+marem
+marma
+marou
+masto
+match
+matey
+matsá
+matta
+matzá
+maula
+maura
+mause
+mayor
+maçom
+maçon
+meais
+meará
+meava
+meeis
+meiam
+meiem
+meies
+mekeo
+melgo
+memes
+menea
+menee
+meneo
+mengo
+menhã
+menso
+mento
+merar
+merca
+mermo
+mesta
+mesto
+metil
+metiê
+mexim
+mexir
+meyas
+meyos
+mezes
+meãos
+miaus
+micai
+micam
+micar
+micas
+micha
+miche
+micho
+micos
+micou
+migos
+miite
+mikir
+milhe
+mimia
+mimir
+mimis
+mimiu
+mioca
+miojo
+miola
+mioma
+miose
+mioto
+mique
+mirgã
+mirim
+mirto
+mitar
+mixai
+mixam
+mixar
+mixas
+mixei
+mixem
+míxer
+mixes
+mixou
+moada
+moado
+mocar
+mocha
+moche
+modus
+moega
+moger
+mogol
+mogor
+mogão
+moiçó
+moito
+mongo
+monha
+monho
+monso
+morca
+morga
+morgo
+morim
+mormo
+morso
+mosco
+mosha
+moshe
+mosho
+motar
+moto4
+mouse
+mouta
+moxão
+mozão
+muafo
+muana
+muche
+mudra
+mufla
+mufti
+muiés
+mujik
+mulos
+mulso
+mulés
+mundé
+munto
+mupis
+muque
+murra
+murta
+murçó
+musmé
+musse
+mutar
+mutum
+muxão
+muyta
+muyto
+muçum
+muçuã
+muões
+myrra
+mytho
+mátri
+mãdar
+méson
+mídia
+mítia
+mítim
+môfos
+múnus
+múons
+nabas
+nacha
+nacho
+nadir
+nados
+nagar
+naice
+naira
+naite
+najas
+nalga
+nalsa
+nambu
+nandu
+nanja
+narom
+nassa
+natro
+natta
+natto
+nauta
+nazca
+necho
+necra
+negos
+nègre
+negus
+negão
+nehan
+nente
+neném
+nenês
+nerds
+nesgo
+neuma
+nhaca
+nhama
+nhoca
+nicha
+nielo
+night
+nilgó
+ninja
+niple
+niqab
+nisco
+níver
+no ar
+nodar
+nogai
+noias
+noiro
+nojar
+nojos
+nones
+nonos
+norsa
+nouca
+noute
+noves
+noyte
+nucas
+nudes
+nuelo
+nutar
+nutos
+nuvre
+nução
+nácar
+nágua
+não é
+nédia
+nédio
+nênia
+néons
+nério
+nígua
+nímio
+nônio
+nóxio
+núbea
+núbeo
+núbil
+núbio
+o que
+óbolo
+ocapi
+ocelo
+octal
+octil
+octis
+odeom
+odeão
+odéon
+ofurô
+ogano
+ogham
+ogros
+oidio
+oitos
+oitão
+ojiji
+okapi
+okara
+okrug
+okupa
+olaia
+olivo
+oloco
+oloko
+omani
+omaso
+onsen
+onzes
+opimo
+oppôr
+oqueá
+orago
+orata
+orate
+oraça
+orbes
+orear
+oribi
+orina
+orixá
+ornis
+oromo
+osmar
+osram
+ostro
+otaku
+otite
+ouija
+outão
+ouvio
+ouvyr
+ovina
+ovula
+ovule
+p****
+pacas
+pacer
+pacta
+pacte
+pacús
+paeja
+pagem
+pager
+paias
+paica
+paina
+paixa
+palor
+palão
+pampa
+pampo
+pando
+pandu
+pango
+panno
+panta
+paper
+papos
+papus
+parba
+páreo
+parga
+pargo
+parro
+parsa
+party
+patau
+patch
+pateo
+patiá
+patoá
+patuá
+patês
+pauis
+pavia
+pavês
+paíba
+paúra
+pébol
+pegão
+peias
+peida
+peide
+peido
+peina
+peite
+peixa
+pejos
+pemba
+penny
+pequi
+perau
+peraí
+perla
+perol
+peros
+petar
+petas
+peyxe
+pezão
+peúva
+phase
+piaba
+pialo
+piaçá
+picha
+picho
+picle
+picto
+picum
+picão
+pidir
+piema
+piese
+pifai
+pifam
+pifar
+pifas
+pifei
+pifem
+pifes
+pifou
+pifão
+pilaf
+pilos
+pinai
+pinam
+pinar
+pinas
+pince
+pinei
+pinel
+pinem
+pines
+pinou
+pinéu
+piola
+pipis
+piqui
+piruá
+pirão
+pisto
+pitas
+pitiú
+pitom
+pitos
+pivot
+pixar
+plaga
+platô
+plmds
+pluda
+pocar
+pocha
+podoa
+poial
+point
+poios
+poita
+poker
+polas
+polho
+polme
+poncã
+ponhe
+popôs
+porno
+porq̃
+porre
+porro
+potas
+poula
+poule
+poulo
+pound
+pouta
+povão
+praya
+prebe
+preda
+prede
+predo
+preia
+preju
+preão
+print
+proba
+proer
+profe
+proiz
+promo
+prono
+proto
+prov.
+proxy
+pruam
+pruas
+pruem
+pruir
+pruis
+pruiu
+pruma
+pruía
+príon
+próis
+psoas
+ptose
+puara
+puava
+pucha
+puela
+puera
+pufes
+pulgo
+punga
+purés
+putas
+puído
+pádel
+páfio
+págs.
+párea
+pário
+pícea
+pílio
+pílum
+píons
+píton
+púgil
+quaes
+quaje
+qualé
+quano
+quanu
+quark
+quasi
+quati
+quays
+quaze
+quazi
+qubit
+queca
+queim
+quela
+quepe
+qüera
+queto
+quibe
+quipo
+quipá
+quiuí
+quixó
+quãdo
+quãto
+quépi
+rabaz
+rabil
+racum
+radão
+ragga
+raial
+raide
+raion
+rajaa
+rajah
+rajar
+rally
+ramar
+ramen
+ranga
+rango
+rapel
+raque
+rasaõ
+ratel
+ratto
+reaes
+reays
+reaça
+rebar
+rebôo
+recas
+recho
+recta
+recto
+redil
+redox
+refil
+refle
+refri
+regal
+reide
+reima
+reixa
+rejão
+relar
+relha
+relho
+relão
+remix
+renca
+rengo
+repos
+resaõ
+reses
+reset
+revel
+rexio
+reyno
+reúso
+riade
+riana
+ribas
+rifte
+rifão
+rijar
+rilex
+rinha
+rinse
+rinso
+ritão
+riçar
+riúta
+roble
+roboa
+robot
+rocaz
+rocim
+rocio
+rogos
+rojar
+rolda
+romar
+romba
+ronga
+ronha
+ronin
+roots
+rosar
+rotim
+round
+ruada
+rubim
+rugar
+rugby
+rumba
+rumia
+rumie
+rumio
+runas
+rundi
+ruona
+rutar
+ruçar
+ruões
+rébus
+récor
+rénio
+rímel
+róber
+ródio
+rösti
+rúbia
+rúgbi
+rúmen
+saami
+sable
+sabra
+sacal
+sacei
+sacem
+saces
+sacuê
+sadrá
+sadão
+saeta
+sagui
+sahir
+saibo
+saiga
+saite
+salar
+salaz
+salpa
+salso
+sanga
+sanja
+sapan
+sapão
+sardo
+sarga
+sarin
+sartã
+sarão
+satay
+sauim
+sauiá
+saves
+saviá
+saxãs
+sazão
+saíro
+saúco
+saúva
+schwa
+scifi
+scout
+se pá
+sedan
+segre
+seibe
+seira
+sejar
+sejão
+selha
+semba
+sengo
+senos
+senra
+sepse
+serac
+sesgo
+sesma
+sesso
+setar
+setes
+setra
+sevar
+sexar
+seyta
+seyxo
+sezão
+seção
+shape
+share
+sheik
+shift
+shojo
+short
+shots
+shoyo
+shoyu
+siclo
+sifão
+silfo
+silha
+silte
+simum
+sindi
+sinhô
+sinão
+sioux
+sipae
+sipai
+sirgo
+sirim
+siris
+sirte
+sisos
+sisão
+sitar
+skiff
+slack
+slang
+slick
+smash
+snack
+snobe
+soajo
+sobeu
+sobpé
+socho
+soclo
+softa
+soito
+solai
+solam
+solaz
+solei
+solem
+soles
+solho
+solou
+solão
+sopor
+sopés
+sorgo
+sorça
+sosso
+souza
+soveu
+spams
+spins
+sport
+sprue
+stack
+stafe
+start
+stick
+stoll
+stout
+strip
+style
+suabe
+suajo
+suázi
+succo
+sucho
+sucre
+sudro
+sueto
+sunga
+suque
+surfa
+surfo
+surça
+sussa
+susão
 sutil
+sutis
+suáti
+swazi
+sweep
+swell
+swing
+sâmia
+sâmio
+sândi
+sânie
+sémis
+sénio
+sépia
+símia
+símil
+sólio
+súcia
+taboa
+tabão
+tacai
+tacam
+tacar
+tacou
+tacto
+taful
+taibu
+taier
+taiga
+taiko
+taina
+taíno
+talim
+tambẽ
+tamém
+tamos
+tanda
+tanha
+tanho
+tanoa
+tansa
+taoca
+tapir
+tapua
+taque
+taria
+tarol
+tarot
+tarro
+tartã
+tasto
+tatuí
+taura
+tauão
+tavam
+tavão
+taxia
+taxie
+taxio
+taéis
+taíne
+tchau
+tchão
+tecos
+tecto
+teiga
+teipe
+teito
+telai
+telam
+telar
+telei
+telem
+telou
+temba
+temão
+tença
+tenné
+teque
+tergo
+terma
+terso
+tesar
+tesla
+tesse
+tetro
+tetéu
+teuto
+tevês
+teyas
+tezes
+teúdo
+thema
+these
+theta
+tibar
+tibum
+ticar
+ticas
+ticos
+tiete
+tilar
+tilte
+timba
+timbo
+timer
+times
+timão
+tinos
+tinte
+tipai
+tipam
+tipar
+tipei
+tipem
+tipes
+tiple
+tipou
+tipói
+tisso
+tissu
+titia
+titio
+tióis
+tmese
+toari
+tobas
+tocho
+todes
+toira
+toiça
+tojal
+token
+tolar
+toler
+tóner
+tonfa
+tongo
+tonho
+toral
+torgo
+tosai
+tosam
+tosar
+tosas
+tosei
+tosem
+toses
+tosou
+tosão
+totós
+toupa
+touta
+toxia
+trado
+trans
+trash
+treco
+tredo
+treis
+trelo
+trena
+trene
+trete
+trial
+tribu
+trick
+triga
+trilo
+tripo
+triça
+troba
+trole
+troll
+tropo
+truco
+truxe
+truão
+tróis
+tsadê
+tsuga
+tuaca
+tudos
+tugas
+tugra
+tugue
+tunai
+tunam
+tunar
+tunda
+tunei
+tunem
+tunga
+tunou
+tupis
+tupla
+turdo
+turfe
+turus
+tusco
+tusto
+tutar
+tutia
+tutum
+tuíde
+tuíte
+tweed
+tweet
+twist
+typho
+tálus
+táuon
+táxon
+tâmia
+tênar
+tíbio
+tíner
+tíria
+tírio
+tória
+tóron
+tótil
+túlia
+túlio
+uaicá
+uambé
+uaurá
+uauçu
+ubaia
+ubres
+ucase
+ufana
+ufane
+ufano
+uigur
+ukase
+ulano
+ulear
+ulemá
+ulnas
+ulula
+ulule
+ululo
+umami
+umbro
+ummah
+uncta
+uncte
+uncto
+uolof
+urdus
+urucu
+urupá
+urupê
+urutu
+usine
+usmar
+ussar
+ussos
+uvaia
+uviar
+uyezd
+uygur
+uzina
+uíste
+vacar
+vacum
+vacão
+vagir
+vaibe
+valet
+valew
+valos
+valão
+vampe
+vante
+varga
+varge
+varja
+varoa
+vasal
+vaste
+vasão
+vatel
+vedor
+vedro
+vegan
+veiro
+vejão
+vella
+venal
+vepsa
+vepso
+veraz
+vergê
+veros
+verul
+verça
+vetão
+viado
+vidar
+vigar
+viger
+vigil
+vigir
+villa
+virol
+visgo
+visom
+vison
+vivai
+vivar
+vivou
+viçar
+vobla
+voile
+volpe
+vougo
+vovôs
+voxel
+vurmo
+vácua
+vátio
+vómer
+wafer
+waiká
+wauja
+wenge
+wicca
+wolof
+wushu
+xabre
+xacho
+xacra
+xador
+xampu
+xanas
+xarda
+xardo
+xarel
+xaria
+xarás
+xarém
+xaréu
+xaual
+xauim
+xaxar
+xaxim
+xebre
+xenão
+xepas
+xerox
+xerpa
+xerém
+xevás
+xhosa
+xiang
+xibio
+xibiu
+ximbé
+xintó
+xixas
+xocar
+xofar
+xofre
+xogum
+xonar
+xorca
+xordo
+xorte
+xotar
+xotes
+xouva
+xuatê
+xucra
+xucro
+xunga
+xurro
+xúxus
+xénio
+xópim
+yacht
+yield
+yogui
+yrmaõ
+yupik
+yurte
+zagal
+zagas
+zagre
+zaine
+zaino
+zamba
+zambi
+zambo
+zanza
+zanze
+zanzo
+zapar
+zavar
+zazao
+zebus
+zelha
+zerai
+zeram
+zerar
+zeras
+zerei
+zerem
+zeres
+zerou
+zetas
+zeugo
+zicai
+zicam
+zicar
+zicas
+zicha
+zicho
+zicou
+zimbo
+zinga
+zinia
+zinir
+zipai
+zipam
+zipar
+zipas
+zipei
+zipem
+zipes
+zipou
+zique
+zirro
+zlóti
+zloty
+zoiai
+zoiam
+zoiar
+zoias
+zoico
+zoiei
+zoiem
+zoies
+zoilo
+zoiou
+zoira
+zoião
+zonai
+zonam
+zonar
+zoncá
+zonei
+zonem
+zones
+zonou
+zoupo
+zoura
+zuate
+zucar
+zucas
+zuera
+zuero
+zulus
+zunam
+zunas
+zunem
+zunes
+zunge
+zunia
+zunir
+zunis
+zuniu
+zupar
+zuruó
+zíper
+ádria
+ádrio
+ágato
+áries
+ítaca
+ítaco
+ítala
+ítalo
+órion
+úlpia
+úlpio
+ácino
+ádipe
+ádipo
+ágape
+ágino
+ágono
+álcea
+álefe
+álemo
+álula
+álveo
+ápias
+ápica
+ápico
+ápios
+ápoda
+ápode
+ársis
+árula
+áscua
+áster
+ástur
+átimo
+áxion
+ázima
+âmnio
+ângio
+ânios
+é que
+ébria
+écran
+éfode
+émese
+éneas
+éneos
+éones
+érbia
+érbio
+éster
+étude
+éxons
+êider
+êmero
+êmico
+êngua
+ídola
+ígneo
+íleos
+ílios
+íngua
+ínsua
+ítria
+ítrio
+óbulo
+ógeas
+ómnia
+ópios
+ósmio
+óvnis
+úbere
+úmida
+úmido
+úraco
+úveas
+úvula
