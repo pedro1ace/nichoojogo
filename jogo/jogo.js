@@ -146,7 +146,7 @@ function sequencia() {
 // O mascote padrão é o tardígrado. O Neil (o alienígena no óvni) é liberado quando a sequência
 // chega a DIAS_SKIN_ALIEN; depois disso fica liberado para sempre neste navegador,
 // mesmo que a sequência zere. A escolha também fica guardada aqui.
-const DIAS_SKIN_ALIEN = 5;
+const DIAS_SKIN_ALIEN = 10;
 const SKINS = [
   { id: "tardigrado", nome: "TARDÍGRADO", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
   { id: "alien", nome: "NEIL", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },

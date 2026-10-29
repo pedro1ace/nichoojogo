@@ -2,7 +2,7 @@
 // pixel por código, luz de cima, sombreado com dithering e sem contorno.
 // Um disco voador largo, com uma escotilha aberta em cima, e o alienígena verde com a
 // cabeça para fora (olhões pretos puxados e duas anteninhas). As luzes da borda do
-// disco acendem uma de cada vez. Liberada com 5 dias seguidos (ver jogo.js).
+// disco acendem uma de cada vez. Liberada com 10 dias seguidos (ver jogo.js).
 // Devolve o mesmo formato de criarTardigrado(): { andar[4], feliz, piscar, dourado }.
 function criarAlienigena() {
   const LW = 28, LH = 16, CX = 13.5;
