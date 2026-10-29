@@ -1224,6 +1224,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
   if (typeof criarAlienigena === "function") skins.alien = criarAlienigena();
   let tardigrado = skins.tardigrado;
   let skinAtual = "tardigrado";
+  // troca animada de skin (teletransporte): de qual skin veio e quando começou
+  let troca = null;
   const naves = criarNaves();
   let felizAte = 0;
   function desenharFoguete() {
@@ -1276,8 +1278,21 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const feliz = agoraS < felizAte;
     const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
     const piscando = !feliz && tempo % 3.7 < 0.13;
-    const pele = mascote.dourado ? tardigrado.dourado : tardigrado;
-    const img = piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
+    const quadroDe = (s) => {
+      const pele = mascote.dourado ? s.dourado : s;
+      return piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
+    };
+    let img = quadroDe(tardigrado);
+    // trocando de skin: mistura o antigo se desfazendo com o novo se materializando
+    let feixe = 0;
+    if (troca) {
+      const t = (agoraS - troca.inicio) / Transicao.DURACAO;
+      if (t >= 1) troca = null;
+      else {
+        img = Transicao.quadroTransicao(quadroDe(troca.de), img, Math.max(0, t));
+        feixe = Math.sin(Math.PI * Math.max(0, t));
+      }
+    }
     // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
     const pz = Math.max(1.6, escala * 0.4);
     // "respira": estica e encolhe de leve
@@ -1292,7 +1307,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const alvoSing = sing ? 0.35 + 0.65 * Math.min(1, (agoraS - sing.inicio) / sing.dura) ** 2 : 0;
     mascote.singular += (alvoSing - mascote.singular) * (1 - Math.exp(-dt * (alvoSing ? 6 : 2.2)));
     if (mascote.singular < 0.01) mascote.singular = 0;
-    pintarMascote = () => pintarTardigrado(img, pz, resp, inclina, sx, sy);
+    pintarMascote = () => { if (feixe) pintarFeixe(img, pz, sx, sy, feixe); pintarTardigrado(img, pz, resp, inclina, sx, sy); };
     if (!mascote.singular) { pintarMascote(); pintarMascote = null; }
     return { x: foguete.x, y: foguete.y };
   }
@@ -1318,14 +1333,31 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Brilhinhos que saem do tardígrado na singularidade (em px da tela).
   const brilhosMascote = [];
   const CORES_SING = ["#ff4fd8", "#ff4fd8", "#ffffff", "#c38bff", "#ffd6f6"];
-  function soltarBrilhoMascote(sx, sy, raio, forte) {
+  // feixe de luz do teletransporte: uma coluna ciano que acende e apaga, com faíscas subindo
+  function pintarFeixe(img, pz, sx, sy, k) {
+    const larg = img.width * pz * 0.75, alto = Math.max(innerHeight * 0.5, img.height * pz * 6);
+    const g = tx.createLinearGradient(sx - larg, 0, sx + larg, 0);
+    g.addColorStop(0, "rgba(95, 225, 255, 0)");
+    g.addColorStop(0.35, `rgba(95, 225, 255, ${0.18 * k})`);
+    g.addColorStop(0.5, `rgba(220, 250, 255, ${0.42 * k})`);
+    g.addColorStop(0.65, `rgba(95, 225, 255, ${0.18 * k})`);
+    g.addColorStop(1, "rgba(95, 225, 255, 0)");
+    tx.save();
+    tx.globalCompositeOperation = "lighter";
+    tx.fillStyle = g;
+    tx.fillRect(sx - larg, sy - alto, larg * 2, alto + img.height * pz * 0.7);
+    tx.restore();
+    if (!reduzirMovimento && Math.random() < k * 0.9) soltarBrilhoMascote(sx, sy, img.width * pz * 0.5, false, ["#5fe1ff", "#ffffff", "#c9f6ff"]);
+  }
+
+  function soltarBrilhoMascote(sx, sy, raio, forte, cores = CORES_SING) {
     const a = Math.random() * Math.PI * 2;
     const v = forte ? 140 + Math.random() * 260 : 18 + Math.random() * 55;
     brilhosMascote.push({
       x: sx + Math.cos(a) * raio * Math.random(), y: sy + Math.sin(a) * raio * 0.6 * Math.random(),
       vx: Math.cos(a) * v, vy: Math.sin(a) * v * 0.8 - (forte ? 40 : 25),
       vida: 0, dura: forte ? 0.7 + Math.random() * 0.8 : 0.6 + Math.random() * 0.7,
-      cor: CORES_SING[Math.floor(Math.random() * CORES_SING.length)],
+      cor: cores[Math.floor(Math.random() * cores.length)],
       tam: Math.random() < 0.3 ? 3 : 2,
       estrela: Math.random() < 0.45,
       fase: Math.random() * 6,
@@ -2099,8 +2131,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
       reduzirMovimento = movimentoDoSistema || ligado;
     },
     // Troca a skin do mascote ("tardigrado" ou "alien").
-    skin(nome) {
+    // Com animar, troca com o teletransporte (o antigo some e o novo se materializa).
+    skin(nome, animar) {
       if (!skins[nome]) return;
+      if (animar && nome !== skinAtual && !semEfeitos && typeof Transicao === "object") {
+        troca = { de: tardigrado, inicio: performance.now() };
+      }
       skinAtual = nome;
       tardigrado = skins[nome];
     },

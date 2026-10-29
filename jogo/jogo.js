@@ -216,11 +216,18 @@ function montarSkins() {
     }
     b.addEventListener("click", () => {
       if (!livre) return;
+      const antes = SKINS.find((k) => k.id === skinEscolhida());
       gravarChave("nicho:skin", skin.id);
-      cena.skin(skin.id);
       montarSkins();
-      desenharMascoteDoMenu();
-      caixa.querySelector(".escolhida")?.focus();
+      if (antes.id === skin.id) return;
+      // fecha a janela e faz o teletransporte à vista: no mascote da cena e no cartão do modo
+      $("janela-skins").close();
+      cena.skin(skin.id, true);
+      const de = antes.criar(), para = skin.criar();
+      if (opcoes.semEfeitos || typeof Transicao !== "object" || !de || !para) desenharMascoteDoMenu();
+      else Transicao.animarCanvas($("modo-mascote"), de.andar[0], para.andar[0]);
+      Som.ligar();
+      Som.materializar();
     });
     caixa.append(b);
   }

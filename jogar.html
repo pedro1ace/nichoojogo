@@ -641,6 +641,14 @@ pre {
 .opcao[aria-checked="true"] .chave { box-shadow: inset 0 0 0 2px var(--ciano); }
 .opcao[aria-checked="true"] .chave i { left: 24px; background: var(--ciano); box-shadow: 0 0 8px var(--ciano); }
 
+/* troca de skin: o desenho do cartão do modo dá um clarão ciano enquanto se materializa */
+#modo-mascote.materializando { animation: materializar 0.9s ease-out; }
+@keyframes materializar {
+  0% { filter: drop-shadow(0 0 6px rgba(255, 150, 70, 0.7)); }
+  45% { filter: drop-shadow(0 0 10px rgba(95, 225, 255, 1)) brightness(1.6); }
+  100% { filter: drop-shadow(0 0 6px rgba(255, 150, 70, 0.7)); }
+}
+
 /* "sem efeitos": nada pisca, pula ou desliza na interface */
 .sem-efeitos *, .sem-efeitos *::before, .sem-efeitos *::after { animation: none !important; transition: none !important; }
 </style>
@@ -1045,6 +1053,13 @@ const Som = (() => {
       tom(120, 0.22, { tipo: "sawtooth", volume: 0.06, atraso: 0.08 });
     },
     sugestao: () => tom(880, 0.08, { tipo: "triangle", volume: 0.08, ate: 1175 }),
+    // troca de skin: um "vuuu" descendo (o antigo se desfaz) e um brilho subindo (o novo aparece)
+    materializar() {
+      if (!ac) return;
+      tom(1200, 0.35, { tipo: "triangle", volume: 0.05, ate: 300 });
+      [523.25, 659.25, 783.99, 1046.5, 1318.5].forEach((f, i) => tom(f, 0.09, { tipo: "square", volume: 0.045, atraso: 0.42 + i * 0.06 }));
+      tom(2093, 0.25, { tipo: "triangle", volume: 0.035, atraso: 0.75 });
+    },
     tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
     // pergunta nova chegou: "pi-pi-plim!" de radar, três notas rápidas subindo e um brilho no fim
     pergunta() {
@@ -1396,6 +1411,98 @@ function criarAlienigena() {
   const normal = jogo(METAL);
   return { ...normal, dourado: jogo(OURO), largura: LW, altura: LH };
 }
+</script>
+  <script>
+// Troca de skin com "teletransporte": o boneco antigo se desfaz em pixels de baixo
+// para cima e o novo se materializa de cima para baixo, com a borda acesa em ciano,
+// como num feixe de luz. Serve para o mascote da cena e para os desenhos do menu.
+//
+// quadroTransicao(antiga, nova, t) devolve um canvas com a mistura dos dois sprites
+// no instante t (0 = só o antigo, 1 = só o novo). Os dois podem ter tamanhos diferentes:
+// ficam centralizados num canvas do tamanho do maior.
+const Transicao = (() => {
+  const DURACAO = 900; // ms
+  const BRILHO = ["#ffffff", "#c9f6ff", "#5fe1ff"];
+  // ruído fixo por pixel, para o desfazer ter "grão" e não ser uma linha reta
+  const ruido = (x, y) => {
+    const s = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453;
+    return s - Math.floor(s);
+  };
+  const tela = document.createElement("canvas");
+  const g = tela.getContext("2d");
+
+  function pixels(img, w, h) {
+    const c = document.createElement("canvas");
+    c.width = w; c.height = h;
+    const cg = c.getContext("2d");
+    cg.drawImage(img, Math.floor((w - img.width) / 2), Math.floor((h - img.height) / 2));
+    return cg.getImageData(0, 0, w, h).data;
+  }
+  const cache = new WeakMap();
+  function dados(img, w, h) {
+    let porTam = cache.get(img);
+    if (!porTam) { porTam = new Map(); cache.set(img, porTam); }
+    const k = w + "x" + h;
+    if (!porTam.has(k)) porTam.set(k, pixels(img, w, h));
+    return porTam.get(k);
+  }
+
+  function quadroTransicao(antiga, nova, t) {
+    const w = Math.max(antiga.width, nova.width), h = Math.max(antiga.height, nova.height);
+    if (tela.width !== w || tela.height !== h) { tela.width = w; tela.height = h; }
+    const a = dados(antiga, w, h), b = dados(nova, w, h);
+    const saida = g.createImageData(w, h);
+    const o = saida.data;
+    // primeira metade: o antigo some (de baixo para cima); segunda: o novo aparece (de cima para baixo)
+    const sai = Math.min(1, t * 2), entra = Math.max(0, t * 2 - 1);
+    const faixa = 0.16;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const i = (y * w + x) * 4;
+      const n = ruido(x, y) * 0.55;
+      const kSai = (1 - y / h) * 0.45 + n; // de baixo para cima
+      const kEntra = (y / h) * 0.45 + n;   // de cima para baixo
+      let cor = null, alfa = 0;
+      if (entra > 0 && b[i + 3] > 0) {
+        const lim = entra * (1 + faixa);
+        if (kEntra < lim - faixa) { cor = [b[i], b[i + 1], b[i + 2]]; alfa = b[i + 3]; }
+        else if (kEntra < lim) { cor = hex(BRILHO[Math.floor(ruido(y, x) * 3)]); alfa = 255; }
+      } else if (sai < 1 && a[i + 3] > 0) {
+        const lim = sai * (1 + faixa);
+        if (kSai >= lim) { cor = [a[i], a[i + 1], a[i + 2]]; alfa = a[i + 3]; }
+        else if (kSai >= lim - faixa) { cor = hex(BRILHO[Math.floor(ruido(y, x) * 3)]); alfa = 230; }
+      }
+      if (!cor) continue;
+      o[i] = cor[0]; o[i + 1] = cor[1]; o[i + 2] = cor[2]; o[i + 3] = alfa;
+    }
+    g.putImageData(saida, 0, 0);
+    return tela;
+  }
+  const hexCache = {};
+  function hex(c) {
+    return hexCache[c] || (hexCache[c] = [1, 3, 5].map((k) => parseInt(c.slice(k, k + 2), 16)));
+  }
+
+  // Anima a troca num canvas pequeno do menu (o desenho fica parado, só troca).
+  function animarCanvas(destino, antiga, nova, aoFim) {
+    const dg = destino.getContext("2d");
+    dg.imageSmoothingEnabled = false;
+    const inicio = performance.now();
+    destino.classList.remove("materializando");
+    void destino.offsetWidth;
+    destino.classList.add("materializando");
+    const passo = (agora) => {
+      const t = Math.min(1, (agora - inicio) / DURACAO);
+      dg.clearRect(0, 0, destino.width, destino.height);
+      const q = quadroTransicao(antiga, nova, t);
+      dg.drawImage(q, Math.floor((destino.width - q.width) / 2), Math.floor((destino.height - q.height) / 2));
+      if (t < 1) requestAnimationFrame(passo);
+      else if (aoFim) aoFim();
+    };
+    requestAnimationFrame(passo);
+  }
+
+  return { DURACAO, quadroTransicao, animarCanvas };
+})();
 </script>
   <script>
 // Satélite e Estação Espacial (ISS), desenhados pixel a pixel no mesmo estilo
@@ -2990,6 +3097,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
   if (typeof criarAlienigena === "function") skins.alien = criarAlienigena();
   let tardigrado = skins.tardigrado;
   let skinAtual = "tardigrado";
+  // troca animada de skin (teletransporte): de qual skin veio e quando começou
+  let troca = null;
   const naves = criarNaves();
   let felizAte = 0;
   function desenharFoguete() {
@@ -3042,8 +3151,21 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const feliz = agoraS < felizAte;
     const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
     const piscando = !feliz && tempo % 3.7 < 0.13;
-    const pele = mascote.dourado ? tardigrado.dourado : tardigrado;
-    const img = piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
+    const quadroDe = (s) => {
+      const pele = mascote.dourado ? s.dourado : s;
+      return piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
+    };
+    let img = quadroDe(tardigrado);
+    // trocando de skin: mistura o antigo se desfazendo com o novo se materializando
+    let feixe = 0;
+    if (troca) {
+      const t = (agoraS - troca.inicio) / Transicao.DURACAO;
+      if (t >= 1) troca = null;
+      else {
+        img = Transicao.quadroTransicao(quadroDe(troca.de), img, Math.max(0, t));
+        feixe = Math.sin(Math.PI * Math.max(0, t));
+      }
+    }
     // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
     const pz = Math.max(1.6, escala * 0.4);
     // "respira": estica e encolhe de leve
@@ -3058,7 +3180,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const alvoSing = sing ? 0.35 + 0.65 * Math.min(1, (agoraS - sing.inicio) / sing.dura) ** 2 : 0;
     mascote.singular += (alvoSing - mascote.singular) * (1 - Math.exp(-dt * (alvoSing ? 6 : 2.2)));
     if (mascote.singular < 0.01) mascote.singular = 0;
-    pintarMascote = () => pintarTardigrado(img, pz, resp, inclina, sx, sy);
+    pintarMascote = () => { if (feixe) pintarFeixe(img, pz, sx, sy, feixe); pintarTardigrado(img, pz, resp, inclina, sx, sy); };
     if (!mascote.singular) { pintarMascote(); pintarMascote = null; }
     return { x: foguete.x, y: foguete.y };
   }
@@ -3084,14 +3206,31 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Brilhinhos que saem do tardígrado na singularidade (em px da tela).
   const brilhosMascote = [];
   const CORES_SING = ["#ff4fd8", "#ff4fd8", "#ffffff", "#c38bff", "#ffd6f6"];
-  function soltarBrilhoMascote(sx, sy, raio, forte) {
+  // feixe de luz do teletransporte: uma coluna ciano que acende e apaga, com faíscas subindo
+  function pintarFeixe(img, pz, sx, sy, k) {
+    const larg = img.width * pz * 0.75, alto = Math.max(innerHeight * 0.5, img.height * pz * 6);
+    const g = tx.createLinearGradient(sx - larg, 0, sx + larg, 0);
+    g.addColorStop(0, "rgba(95, 225, 255, 0)");
+    g.addColorStop(0.35, `rgba(95, 225, 255, ${0.18 * k})`);
+    g.addColorStop(0.5, `rgba(220, 250, 255, ${0.42 * k})`);
+    g.addColorStop(0.65, `rgba(95, 225, 255, ${0.18 * k})`);
+    g.addColorStop(1, "rgba(95, 225, 255, 0)");
+    tx.save();
+    tx.globalCompositeOperation = "lighter";
+    tx.fillStyle = g;
+    tx.fillRect(sx - larg, sy - alto, larg * 2, alto + img.height * pz * 0.7);
+    tx.restore();
+    if (!reduzirMovimento && Math.random() < k * 0.9) soltarBrilhoMascote(sx, sy, img.width * pz * 0.5, false, ["#5fe1ff", "#ffffff", "#c9f6ff"]);
+  }
+
+  function soltarBrilhoMascote(sx, sy, raio, forte, cores = CORES_SING) {
     const a = Math.random() * Math.PI * 2;
     const v = forte ? 140 + Math.random() * 260 : 18 + Math.random() * 55;
     brilhosMascote.push({
       x: sx + Math.cos(a) * raio * Math.random(), y: sy + Math.sin(a) * raio * 0.6 * Math.random(),
       vx: Math.cos(a) * v, vy: Math.sin(a) * v * 0.8 - (forte ? 40 : 25),
       vida: 0, dura: forte ? 0.7 + Math.random() * 0.8 : 0.6 + Math.random() * 0.7,
-      cor: CORES_SING[Math.floor(Math.random() * CORES_SING.length)],
+      cor: cores[Math.floor(Math.random() * cores.length)],
       tam: Math.random() < 0.3 ? 3 : 2,
       estrela: Math.random() < 0.45,
       fase: Math.random() * 6,
@@ -3865,8 +4004,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
       reduzirMovimento = movimentoDoSistema || ligado;
     },
     // Troca a skin do mascote ("tardigrado" ou "alien").
-    skin(nome) {
+    // Com animar, troca com o teletransporte (o antigo some e o novo se materializa).
+    skin(nome, animar) {
       if (!skins[nome]) return;
+      if (animar && nome !== skinAtual && !semEfeitos && typeof Transicao === "object") {
+        troca = { de: tardigrado, inicio: performance.now() };
+      }
       skinAtual = nome;
       tardigrado = skins[nome];
     },
@@ -4108,11 +4251,18 @@ function montarSkins() {
     }
     b.addEventListener("click", () => {
       if (!livre) return;
+      const antes = SKINS.find((k) => k.id === skinEscolhida());
       gravarChave("nicho:skin", skin.id);
-      cena.skin(skin.id);
       montarSkins();
-      desenharMascoteDoMenu();
-      caixa.querySelector(".escolhida")?.focus();
+      if (antes.id === skin.id) return;
+      // fecha a janela e faz o teletransporte à vista: no mascote da cena e no cartão do modo
+      $("janela-skins").close();
+      cena.skin(skin.id, true);
+      const de = antes.criar(), para = skin.criar();
+      if (opcoes.semEfeitos || typeof Transicao !== "object" || !de || !para) desenharMascoteDoMenu();
+      else Transicao.animarCanvas($("modo-mascote"), de.andar[0], para.andar[0]);
+      Som.ligar();
+      Som.materializar();
     });
     caixa.append(b);
   }

@@ -218,6 +218,13 @@ const Som = (() => {
       tom(120, 0.22, { tipo: "sawtooth", volume: 0.06, atraso: 0.08 });
     },
     sugestao: () => tom(880, 0.08, { tipo: "triangle", volume: 0.08, ate: 1175 }),
+    // troca de skin: um "vuuu" descendo (o antigo se desfaz) e um brilho subindo (o novo aparece)
+    materializar() {
+      if (!ac) return;
+      tom(1200, 0.35, { tipo: "triangle", volume: 0.05, ate: 300 });
+      [523.25, 659.25, 783.99, 1046.5, 1318.5].forEach((f, i) => tom(f, 0.09, { tipo: "square", volume: 0.045, atraso: 0.42 + i * 0.06 }));
+      tom(2093, 0.25, { tipo: "triangle", volume: 0.035, atraso: 0.75 });
+    },
     tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
     // pergunta nova chegou: "pi-pi-plim!" de radar, três notas rápidas subindo e um brilho no fim
     pergunta() {
