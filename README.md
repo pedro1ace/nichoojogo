@@ -165,6 +165,7 @@ uma resposta, mude a lembrança dela no `dados/sinais/llm/<cat>.json` e rode `ag
   usa as 7 primeiras, o dia #2 as 7 seguintes, e assim por diante. Nunca reordene nem apague as
   linhas de dias que já passaram. Categoria nova entra sozinha no fim da fila quando o
   `montar_jogo.py` roda, e ele avisa até que dia a fila dá. São 7 categorias novas por dia (49 por semana).
+  A lista legível de cada dia (data, perguntas e quantas respostas cada uma tem) fica em [`DIAS.md`](DIAS.md).
 - **Em média, 1000 respostas ou mais por categoria.** Categorias fechadas (elementos, constelações,
   países, ossos, capitais, Tom Hanks, Turma da Mônica, esportes olímpicos, astro e cosmo) são
   exceção e ficam com o tamanho real. As abertas precisam compensar e passar de 1000.

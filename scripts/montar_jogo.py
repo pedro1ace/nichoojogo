@@ -45,7 +45,34 @@ def ordem_dos_dias(indice: list[dict]) -> list[str]:
     import datetime as dt
     ultimo = dt.date(2026, 10, 28) + dt.timedelta(days=len(fila) // 7 - 1)
     print(f"dados/ordem.txt: {len(fila)} categorias, dá até o dia #{len(fila) // 7} ({ultimo:%d/%m/%Y})")
+    escrever_dias(indice, fila)
     return fila
+
+
+def escrever_dias(indice: list[dict], fila: list[str]) -> None:
+    """DIAS.md: os nichos de cada dia (dia, data, as 7 perguntas e quantas respostas cada uma tem),
+    para consultar sem abrir o jogo. Gerado a partir da fila; não edite à mão."""
+    import datetime as dt
+    por_id = {c["id"]: c for c in indice}
+    inicio = dt.date(2026, 10, 28)
+    semana = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
+    linhas = ["# Nichos de cada dia", "",
+              "Gerado por `scripts/montar_jogo.py` a partir de `dados/ordem.txt`. Não edite à mão.",
+              "Nenhuma categoria se repete; categoria nova entra no fim da fila.", ""]
+    for d in range(len(fila) // 7):
+        data = inicio + dt.timedelta(days=d)
+        linhas += [f"## Dia {d + 1} · {semana[data.weekday()]} {data:%d/%m/%Y}", "",
+                   "| # | Categoria | Pergunta | Respostas |", "|---|---|---|---|"]
+        for k, cid in enumerate(fila[7 * d:7 * d + 7], 1):
+            c = por_id[cid]
+            arq = RAIZ / "dados" / "categorias" / f"{cid}.txt"
+            n = sum(1 for l in arq.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#"))
+            linhas.append(f"| {k} | {c['titulo']} | {c['pergunta']} | {n} |")
+        linhas.append("")
+    sobra = fila[len(fila) // 7 * 7:]
+    if sobra:
+        linhas += ["## Na fila (ainda não formam um dia)", ""] + [f"- {por_id[c]['titulo']}" for c in sobra] + [""]
+    (RAIZ / "DIAS.md").write_text("\n".join(linhas), encoding="utf-8")
 
 
 def gerar_dados_js() -> str:
