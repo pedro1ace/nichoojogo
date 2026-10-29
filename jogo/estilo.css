@@ -553,5 +553,13 @@ pre {
 .opcao[aria-checked="true"] .chave { box-shadow: inset 0 0 0 2px var(--ciano); }
 .opcao[aria-checked="true"] .chave i { left: 24px; background: var(--ciano); box-shadow: 0 0 8px var(--ciano); }
 
+/* troca de skin: o desenho do cartão do modo dá um clarão ciano enquanto se materializa */
+#modo-mascote.materializando { animation: materializar 0.9s ease-out; }
+@keyframes materializar {
+  0% { filter: drop-shadow(0 0 6px rgba(255, 150, 70, 0.7)); }
+  45% { filter: drop-shadow(0 0 10px rgba(95, 225, 255, 1)) brightness(1.6); }
+  100% { filter: drop-shadow(0 0 6px rgba(255, 150, 70, 0.7)); }
+}
+
 /* "sem efeitos": nada pisca, pula ou desliza na interface */
 .sem-efeitos *, .sem-efeitos *::before, .sem-efeitos *::after { animation: none !important; transition: none !important; }
