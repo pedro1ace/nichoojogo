@@ -70,10 +70,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Estrelas | Cite o nome de uma estrela (de verdade, do céu) | 2362 |
 | 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2445 |
 | 3 | Profissões | Cite uma profissão | 1141 |
-| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 929 |
-| 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 977 |
-| 6 | Coisas com dentes | Cite algo que tem dentes | 994 |
-| 7 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 585 |
+| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1040 |
+| 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1066 |
+| 6 | Coisas com dentes | Cite algo que tem dentes | 1068 |
+| 7 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1108 |
 
 ## Dia 7 · ter 03/11/2026
 
