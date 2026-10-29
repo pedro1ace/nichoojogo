@@ -171,7 +171,7 @@ uma resposta, mude a lembrança dela no `dados/sinais/llm/<cat>.json` e rode `ag
   astro e cosmo) são exceção e ficam com o tamanho real; a lista está em `FECHADAS`, no
   `scripts/montar_jogo.py`, que avisa de toda categoria aberta da fila abaixo de 1000.
 - **O jogo é para todas as idades.** Nada de resposta sobre sexo, drogas, bebedeira, cigarro ou
-  palavrão, nem em categoria engraçada.
+  palavrão, nem em categoria engraçada. Bebida alcoólica pode (cerveja, cachaça, quentão); bebedeira não.
 - A pontuação premia o quão nichada ou complexa é a resposta, e a singularidade vale mais que tudo.
 
 ## Como adicionar uma categoria

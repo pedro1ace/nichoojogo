@@ -70,10 +70,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Estrelas | Cite o nome de uma estrela (de verdade, do céu) | 2362 |
 | 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2445 |
 | 3 | Profissões | Cite uma profissão | 1141 |
-| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1040 |
+| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1043 |
 | 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1066 |
 | 6 | Coisas com dentes | Cite algo que tem dentes | 1068 |
-| 7 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1108 |
+| 7 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1144 |
 
 ## Dia 7 · ter 03/11/2026
 
@@ -103,8 +103,8 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Bebidas com gás | Cite uma bebida com gás (sem álcool) | 1027 |
-| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1034 |
+| 1 | Bebidas com gás | Cite uma bebida com gás | 1302 |
+| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1044 |
 | 3 | Cores | Cite uma cor (ou um tom de cor) | 1057 |
 | 4 | Países | Cite um país | 242 |
 | 5 | Material escolar | Cite um item de material escolar | 1037 |
@@ -130,7 +130,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Motivos para gritar | Cite um motivo para gritar | 1155 |
 | 2 | Motivos para rir | Cite um motivo para rir | 1491 |
 | 3 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1444 |
-| 4 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1261 |
+| 4 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1262 |
 | 5 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1201 |
 | 6 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4697 |
 | 7 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2087 |
