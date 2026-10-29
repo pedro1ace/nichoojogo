@@ -34,8 +34,10 @@ def ordem_dos_dias(indice: list[dict]) -> list[str]:
     """A fila de categorias do jogo (dados/ordem.txt). Categoria que ainda não está na fila
     entra no fim, e o arquivo é regravado: os dias que já passaram nunca mudam."""
     linhas = ORDEM.read_text(encoding="utf-8").splitlines() if ORDEM.exists() else []
-    ordem = [l.strip() for l in linhas if l.strip() and not l.startswith("#")]
-    novas = sorted(c["id"] for c in indice if c["id"] not in ordem)
+    # "- id" = categoria tirada do jogo: nunca entra na fila
+    tiradas = {l[1:].strip() for l in linhas if l.startswith("-")}
+    ordem = [l.strip() for l in linhas if l.strip() and not l.startswith(("#", "-"))]
+    novas = sorted(c["id"] for c in indice if c["id"] not in ordem and c["id"] not in tiradas)
     if novas:
         ORDEM.write_text("\n".join(linhas + novas) + "\n", encoding="utf-8")
         print(f"dados/ordem.txt: {len(novas)} categorias novas no fim da fila")

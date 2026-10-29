@@ -37,7 +37,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Gigantes do Spotify | Cite um dos 3 mil artistas mais ouvidos de todos os tempos no Spotify | 2989 |
 | 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 903 |
 | 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 654 |
-| 7 | Exoplanetas | Cite um exoplaneta (planeta fora do Sistema Solar) | 386 |
+| 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 6589 |
 
 ## Dia 4 · sáb 31/10/2026
 
@@ -118,4 +118,3 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 - Defesas dos animais
 - Filmes com o Tom Hanks
 - Plantas de casa
-- Palavras do Termo

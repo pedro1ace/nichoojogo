@@ -1,5 +1,7 @@
 # Ordem das categorias no jogo: o dia #1 (28/10/2026) usa as 7 primeiras, o dia #2 as 7 seguintes, e assim por diante.
 # Nunca reordene nem apague as linhas de dias que já passaram. Categoria nova vai para o fim (o montar_jogo.py põe sozinho).
+# Linha "- id" tira a categoria do jogo de vez (ela nunca entra na fila).
+- exoplanetas
 aves
 rios
 doces-e-sobremesas
@@ -20,7 +22,7 @@ brincadeiras
 gigantes-do-spotify
 jogadores-da-selecao
 pedras-preciosas
-exoplanetas
+palavras-do-termo
 palavras-astro-e-cosmo
 objetos-da-cozinha
 cidades-do-brasil
@@ -68,4 +70,3 @@ musicos-brasileiros
 defesas-dos-animais
 filmes-tom-hanks
 plantas-de-casa
-palavras-do-termo
