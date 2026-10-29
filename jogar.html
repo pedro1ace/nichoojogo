@@ -222,6 +222,26 @@ body.distorcer #cena, body.distorcer #camada { animation: distorcer 0.9s ease-ou
 .modo-nome { flex: 1; font-weight: 700; font-size: 19px; letter-spacing: 0.24em; color: var(--texto); }
 .modo-info { font-size: 13px; color: var(--suave); white-space: nowrap; }
 .modo-info::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 6px; background: var(--ciano); box-shadow: 0 0 6px var(--ciano); vertical-align: middle; }
+/* skins do mascote, logo embaixo do cartão do modo */
+.skins { width: min(520px, 100%); display: flex; gap: 8px; margin-top: 10px; }
+.skin {
+  flex: 1; display: flex; align-items: center; gap: 10px; padding: 8px 10px; cursor: pointer; text-align: left;
+  font-family: var(--corpo); color: var(--texto); background: rgba(var(--tinta), 0.7); border: 0;
+  box-shadow: inset 0 0 0 2px rgba(185, 140, 255, 0.35);
+}
+.skin canvas { width: 42px; height: 24px; image-rendering: pixelated; flex: none; }
+.skin-nome { font-weight: 700; font-size: 13px; letter-spacing: 0.16em; }
+.skin-falta { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--suave); white-space: nowrap; }
+.skin.escolhida { box-shadow: inset 0 0 0 2px #7dffb0, 0 0 12px rgba(110, 255, 170, 0.35); }
+.skin:not(.trancada):hover { box-shadow: inset 0 0 0 2px #b98cff, 0 0 12px rgba(150, 80, 255, 0.35); }
+.skin.escolhida:hover { box-shadow: inset 0 0 0 2px #7dffb0, 0 0 12px rgba(110, 255, 170, 0.45); }
+.skin.trancada { cursor: default; }
+.skin.trancada canvas { filter: grayscale(1) brightness(0.45); }
+.skin.trancada .skin-nome { color: var(--suave); }
+.fim-skin {
+  display: inline-block; margin: 12px auto 0; padding: 8px 14px; font-family: var(--corpo); font-weight: 700; font-size: 14px;
+  letter-spacing: 0.1em; color: #062010; background: #7dffb0; box-shadow: 0 0 16px rgba(110, 255, 170, 0.6);
+}
 .rodape-inicio { width: min(520px, 100%); display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
 #dia { font-family: var(--mono); font-size: 13px; letter-spacing: 0.16em; color: #dfe6ff; text-shadow: 0 2px 0 rgba(0, 0, 30, 0.55); }
 .botoes-inicio { display: flex; gap: 8px; }
@@ -494,6 +514,10 @@ pre {
   .modo-nome { font-size: 15px; letter-spacing: 0.12em; }
   .modo-info { font-size: 12px; }
   #modo-mascote { width: 42px; height: 24px; }
+  .skin { gap: 6px; padding: 6px 8px; flex-wrap: wrap; }
+  .skin canvas { width: 35px; height: 20px; }
+  .skin-nome { font-size: 12px; letter-spacing: 0.1em; }
+  .skin-falta { margin-left: 0; width: 100%; font-size: 10px; }
   #inicio .botao-grande { font-size: 17px; letter-spacing: 0.14em; padding: 18px 12px; }
   #hud { grid-template-columns: 1fr 1fr; padding-right: max(16px, env(safe-area-inset-right)); }
   .progresso { grid-column: 1 / -1; grid-row: 2; padding-top: 0; }
@@ -611,6 +635,7 @@ pre {
         <span class="modo-nome">VIAGEM DO DIA</span>
         <span id="modo-info" class="modo-info"></span>
       </div>
+      <div id="skins" class="skins" role="radiogroup" aria-label="Visual do mascote"></div>
       <button id="comecar" type="button" class="botao-grande">▼ INICIAR VIAGEM ▼</button>
       <div class="rodape-inicio">
         <span id="dia"></span>
@@ -668,6 +693,7 @@ pre {
         <p id="fim-pontos"></p>
         <p id="fim-profundidade" class="ciano"></p>
         <p id="fim-comparacao"></p>
+        <p id="fim-skin" class="fim-skin" role="status" hidden></p>
         <div id="secao-curva" class="secao" hidden>
           <p class="rotulo">ENTRE OS VIAJANTES</p>
           <div id="curva">
@@ -1187,6 +1213,117 @@ function criarTardigrado() {
   const dourado = jogo(OURO);
   TONS = MARROM;
   return { ...normal, dourado, largura: LW, altura: LH };
+}
+</script>
+  <script>
+// Skin "alienígena no óvni" (28x16), no mesmo jeito do tardígrado: desenhada pixel a
+// pixel por código, luz de cima, sombreado com dithering e sem contorno.
+// Um disco voador largo, com uma escotilha aberta em cima, e o alienígena verde com a
+// cabeça para fora (olhões pretos puxados e duas anteninhas). As luzes da borda do
+// disco acendem uma de cada vez. Liberada com 10 dias seguidos (ver jogo.js).
+// Devolve o mesmo formato de criarTardigrado(): { andar[4], feliz, piscar, dourado }.
+function criarAlienigena() {
+  const LW = 28, LH = 16, CX = 13.5;
+  const PELE = ["#0e2a16", "#1c4f27", "#2c7d38", "#46ad4b", "#7cd86c", "#c4f7a6"];
+  const METAL = ["#16182c", "#2d3150", "#4d5379", "#7c84ad", "#b4bbdc", "#eceeff"];
+  // dourado: depois de achar uma supernova, o disco vira ouro (o ET continua verde)
+  const OURO = ["#5a3a06", "#8f6410", "#c3921c", "#e8bd34", "#fbdc6a", "#fff4b8"];
+  const LUZES = ["#ff4fd8", "#5fe1ff", "#ffd23f"];
+  const BAYER4 = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map((v) => (v + 0.5) / 16);
+  const se = (x, y, e, p = 2) => 1 - Math.abs((x - e.cx) / e.rx) ** p - Math.abs((y - e.cy) / e.ry) ** p;
+
+  // disco: aba larga e fina, com uma barriga mais estreita embaixo
+  const ABA = { cx: CX, cy: 11.2, rx: 13.9, ry: 2.3 };
+  const BARRIGA = { cx: CX, cy: 12.6, rx: 7.2, ry: 2.9 };
+  // tampa: a cúpula baixa em cima da aba, onde fica a escotilha
+  const TAMPA = { cx: CX, cy: 10.2, rx: 8.6, ry: 2.4 };
+  const ESCOTILHA = { cx: CX, cy: 8.9, rx: 4.6, ry: 1.05 };
+  // cabeça em gota de ponta-cabeça: larga em cima, queixo fino lá embaixo
+  const CABECA = { cx: CX, cy: 4.9, rx: 5.0, ry: 3.9 };
+  const naCabeca = (x, y) => {
+    const afina = Math.max(0, y - 4.2) * 0.42;
+    return se(x, y, { ...CABECA, rx: CABECA.rx - afina }, 2.2);
+  };
+  const noDisco = (x, y) => Math.max(se(x, y, ABA, 2.4), se(x, y, BARRIGA, 2), se(x, y, TAMPA, 2));
+
+  function quadro(fase, olhoFechado, TONS_DISCO) {
+    const c = document.createElement("canvas");
+    c.width = LW; c.height = LH;
+    const g = c.getContext("2d");
+    const px = (x, y, cor, a = 1) => { g.globalAlpha = a; g.fillStyle = cor; g.fillRect(x, y, 1, 1); g.globalAlpha = 1; };
+    const tom = (tons, t, x, y) => {
+      let k = Math.floor(t);
+      if (t - k > 0.25 + BAYER4[(y & 3) * 4 + (x & 3)] * 0.5) k++;
+      return tons[Math.max(0, Math.min(5, k))];
+    };
+
+    // anteninhas (atrás da cabeça), com a bolinha da ponta piscando
+    const pontaAcesa = fase % 2 === 0;
+    for (const [x0, x1] of [[11, 10], [16, 17]]) {
+      px(x0, 1, PELE[2]); px(x1, 0, pontaAcesa ? "#d8ffb8" : PELE[4]);
+    }
+
+    // cabeça (só a parte acima da escotilha aparece)
+    for (let y = 0; y < 9; y++) for (let x = 0; x < LW; x++) {
+      const cx = x + 0.5, cy = y + 0.5, v = naCabeca(cx, cy);
+      if (v < 0) continue;
+      // luz de cima e um pouco da esquerda: testa clara, bochechas e queixo escuros
+      const t = 5.0 - (cy - 1.2) / 7 * 4.2 - (cx - CX) * 0.12 + Math.min(0, (v - 0.3) * 2.2);
+      const borda = naCabeca(cx - 1, cy) < 0 || naCabeca(cx + 1, cy) < 0 || naCabeca(cx, cy - 1) < 0;
+      px(x, y, tom(PELE, t, x, y), borda ? 0.75 : 1);
+    }
+    // olhões pretos puxados para fora, com um brilhinho
+    if (olhoFechado) {
+      [10, 11, 12, 15, 16, 17].forEach((x) => px(x, 6, "#06140a", 0.9));
+    } else {
+      const olhos = [[10, 5], [11, 5], [11, 6], [12, 6], [10, 6, 0.6], [17, 5], [16, 5], [16, 6], [15, 6], [17, 6, 0.6]];
+      for (const [x, y, a] of olhos) px(x, y, "#05070d", a || 1);
+      px(11, 5, "#cfe9ff", 0.85); px(16, 5, "#cfe9ff", 0.55);
+    }
+    // boquinha
+    px(13, 7, PELE[1], 0.85); px(14, 7, PELE[1], 0.85);
+
+    // disco
+    for (let y = 6; y < LH; y++) for (let x = 0; x < LW; x++) {
+      const cx = x + 0.5, cy = y + 0.5, v = noDisco(cx, cy);
+      if (v < 0) continue;
+      const aba = se(cx, cy, ABA, 2.4) >= 0;
+      // aba: clara em cima, uma faixa escura no meio (a junta), escura embaixo
+      const tampa = se(cx, cy, TAMPA, 2) >= 0 && cy < 10.6;
+      let t = tampa ? 4.6 - (cy - 8) * 0.55 - Math.abs(cx - CX) * 0.12
+        : aba && cy < 12 ? 4.9 - (cy - 10) * 0.9 - Math.abs(cx - CX) * 0.05 : 2.4 - (cy - 12) * 0.7;
+      if (Math.abs(cy - 11.5) < 0.5 && aba) t = 1.6;
+      const borda = noDisco(cx - 1, cy) < 0 || noDisco(cx + 1, cy) < 0 || noDisco(cx, cy + 1) < 0;
+      px(x, y, tom(TONS_DISCO, t, x, y), borda ? 0.75 : 1);
+    }
+    // escotilha aberta: o escuro de dentro, com o pescoço e o queixo saindo dela
+    for (let y = 7; y < 10; y++) for (let x = 0; x < LW; x++) {
+      const cx = x + 0.5, cy = y + 0.5, v = se(cx, cy, ESCOTILHA, 2);
+      if (v < 0) continue;
+      const pescoco = Math.abs(cx - CX) < 1.6 && cy < 9.4;
+      if (pescoco) px(x, y, PELE[cx < CX ? 2 : 1]);
+      else px(x, y, v > 0.35 ? "#070814" : TONS_DISCO[1], v > 0.35 ? 1 : 0.9);
+    }
+    // aro da escotilha, claro na frente
+    for (let x = 9; x <= 18; x++) px(x, 9, TONS_DISCO[5], x === 9 || x === 18 ? 0.45 : 0.8);
+    // luzes na junta: acendem em roda
+    [2, 6, 10, 17, 21, 25].forEach((x, i) => {
+      const acesa = (i + fase) % 3 === 0;
+      const cor = LUZES[i % 3];
+      px(x, 11, acesa ? cor : TONS_DISCO[2], acesa ? 1 : 0.9);
+      if (acesa) { px(x, 12, cor, 0.35); px(x - 1, 11, cor, 0.3); px(x + 1, 11, cor, 0.3); }
+    });
+    // luzinha de baixo
+    px(13, 15, fase % 2 ? "#a8f5ff" : "#5fe1ff", 0.8); px(14, 15, fase % 2 ? "#5fe1ff" : "#a8f5ff", 0.8);
+    return c;
+  }
+
+  const jogo = (tons) => {
+    const andar = [0, 1, 2, 3].map((i) => quadro(i, false, tons));
+    return { andar, feliz: andar, piscar: quadro(0, true, tons) };
+  };
+  const normal = jogo(METAL);
+  return { ...normal, dourado: jogo(OURO), largura: LW, altura: LH };
 }
 </script>
   <script>
@@ -2774,7 +2911,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
-  const tardigrado = criarTardigrado();
+  // Skins: o tardígrado é o padrão; o alienígena no óvni sai com 10 dias seguidos.
+  const skins = { tardigrado: criarTardigrado() };
+  if (typeof criarAlienigena === "function") skins.alien = criarAlienigena();
+  let tardigrado = skins.tardigrado;
+  let skinAtual = "tardigrado";
   const naves = criarNaves();
   let felizAte = 0;
   function desenharFoguete() {
@@ -2890,10 +3031,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const festa = mascote.festaOuro ? Math.max(0, 1 - (performance.now() - mascote.festaOuro) / 2200) : 0;
     const rb = img.width * pz * (0.85 + festa * 1.6);
     const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
+    const alien = skinAtual === "alien";
     if (mascote.dourado) {
       halo.addColorStop(0, `rgba(255, 220, 110, ${0.34 + festa * 0.5})`);
       halo.addColorStop(0.45, `rgba(255, 190, 70, ${0.14 + festa * 0.25})`);
       halo.addColorStop(1, "rgba(255, 170, 40, 0)");
+    } else if (alien) {
+      // o disco solta um brilho verde-azulado, de luz de óvni
+      halo.addColorStop(0, "rgba(120, 255, 170, 0.26)");
+      halo.addColorStop(0.45, "rgba(80, 220, 200, 0.10)");
+      halo.addColorStop(1, "rgba(60, 200, 220, 0)");
     } else {
       halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
       halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
@@ -2909,7 +3056,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.translate(sx, sy);
     tx.rotate(inclina * Math.sign(mascote.virar || 1));
     tx.scale(mascote.virar / resp, resp);
-    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : "rgba(255, 140, 60, 0.75)";
+    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : "rgba(255, 140, 60, 0.75)";
     tx.shadowBlur = pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
@@ -3638,6 +3785,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
       mascote.dourado = true;
       if (festa) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
     },
+    // Troca a skin do mascote ("tardigrado" ou "alien").
+    skin(nome) {
+      if (!skins[nome]) return;
+      skinAtual = nome;
+      tardigrado = skins[nome];
+    },
     // Tela final: some com as caixinhas e as linhas das faixas.
     limpar() {
       fimDeJogo = true;
@@ -3802,14 +3955,100 @@ function sequencia() {
   return n;
 }
 
-// O tardígrado no cartão do modo, no menu inicial (dourado se hoje teve supernova).
-function desenharMascoteDoMenu() {
-  const tela = $("modo-mascote");
-  if (!tela || typeof criarTardigrado !== "function") return;
-  const t = criarTardigrado();
+// ---------- skins ----------
+// O mascote padrão é o tardígrado. O alienígena no óvni é liberado quando a sequência
+// chega a DIAS_SKIN_ALIEN; depois disso fica liberado para sempre neste navegador,
+// mesmo que a sequência zere. A escolha também fica guardada aqui.
+const DIAS_SKIN_ALIEN = 10;
+const SKINS = [
+  { id: "tardigrado", nome: "TARDÍGRADO", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
+  { id: "alien", nome: "ÓVNI", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
+];
+const lerChave = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+const gravarChave = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+
+function skinLiberada(skin, seq) {
+  if (!skin.dias) return true;
+  if (lerChave(`nicho:skin-liberada:${skin.id}`) === "1") return true;
+  if (seq >= skin.dias) { gravarChave(`nicho:skin-liberada:${skin.id}`, "1"); return true; }
+  return false;
+}
+function skinEscolhida() {
+  const id = lerChave("nicho:skin");
+  const skin = SKINS.find((k) => k.id === id);
+  return skin && skinLiberada(skin, 0) ? skin.id : "tardigrado";
+}
+function desenharSkin(tela, skin) {
+  const s = skin.criar();
+  if (!tela || !s) return;
   const g = tela.getContext("2d");
   g.imageSmoothingEnabled = false;
-  g.drawImage(t.andar[0], 0, 0);
+  g.clearRect(0, 0, tela.width, tela.height);
+  g.drawImage(s.andar[0], 0, 0);
+}
+
+// O mascote escolhido no cartão do modo, no menu inicial.
+function desenharMascoteDoMenu() {
+  desenharSkin($("modo-mascote"), SKINS.find((k) => k.id === skinEscolhida()));
+}
+
+// Os botões de skin embaixo do cartão do modo. A trancada mostra quanto falta.
+function montarSkins() {
+  const caixa = $("skins");
+  if (!caixa) return;
+  const seq = ALEATORIO ? 0 : sequencia();
+  const atual = skinEscolhida();
+  caixa.innerHTML = "";
+  for (const skin of SKINS) {
+    const livre = skinLiberada(skin, seq);
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "skin" + (livre ? "" : " trancada") + (skin.id === atual ? " escolhida" : "");
+    b.setAttribute("role", "radio");
+    b.setAttribute("aria-checked", String(skin.id === atual));
+    const tela = document.createElement("canvas");
+    tela.width = 28; tela.height = 16;
+    tela.setAttribute("aria-hidden", "true");
+    desenharSkin(tela, skin);
+    const nome = document.createElement("span");
+    nome.className = "skin-nome";
+    nome.textContent = skin.nome;
+    b.append(tela, nome);
+    if (!livre) {
+      const falta = document.createElement("span");
+      falta.className = "skin-falta";
+      falta.textContent = `🔒 ${Math.min(seq, skin.dias)}/${skin.dias} dias seguidos`;
+      b.append(falta);
+      b.disabled = true;
+      b.setAttribute("aria-label", `${skin.nome}: libera com ${skin.dias} dias seguidos (você está com ${seq})`);
+    }
+    b.addEventListener("click", () => {
+      gravarChave("nicho:skin", skin.id);
+      cena.skin(skin.id);
+      montarSkins();
+      desenharMascoteDoMenu();
+    });
+    caixa.append(b);
+  }
+}
+
+// No fim do dia que completa a sequência certa, avisa que a skin nova saiu
+// (e já troca para ela, para a pessoa ver na próxima viagem).
+function avisarSkinNova(seq) {
+  const aviso = $("fim-skin");
+  if (!aviso) return;
+  aviso.hidden = true;
+  for (const skin of SKINS) {
+    if (!skin.dias || seq < skin.dias) continue;
+    if (lerChave(`nicho:skin-liberada:${skin.id}`) === "1") continue;
+    skinLiberada(skin, seq);
+    gravarChave("nicho:skin", skin.id);
+    cena.skin(skin.id);
+    aviso.textContent = `🛸 NOVA SKIN LIBERADA: ALIENÍGENA NO ÓVNI · ${skin.dias} dias seguidos!`;
+    aviso.hidden = false;
+    montarSkins();
+    desenharMascoteDoMenu();
+  }
 }
 
 // "DIA #3 · SEQUÊNCIA 2" no menu e no fim. A sequência são os dias seguidos com a viagem
@@ -3917,7 +4156,9 @@ function iniciar() {
   $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
   mostrarDiaESequencia();
   $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
+  cena.skin(skinEscolhida());
   desenharMascoteDoMenu();
+  montarSkins();
   $("som").classList.toggle("mudo", Som.estaMudo());
 
   const salvo = lerProgresso();
@@ -4328,9 +4569,10 @@ function mostrarFim(comSom) {
   montarRespostas();
 
   const seq = mostrarDiaESequencia();
+  if (!ALEATORIO) avisarSkinNova(seq);
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL 🐻\n${LINK_JOGO}`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }

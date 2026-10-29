@@ -142,14 +142,100 @@ function sequencia() {
   return n;
 }
 
-// O tardígrado no cartão do modo, no menu inicial (dourado se hoje teve supernova).
-function desenharMascoteDoMenu() {
-  const tela = $("modo-mascote");
-  if (!tela || typeof criarTardigrado !== "function") return;
-  const t = criarTardigrado();
+// ---------- skins ----------
+// O mascote padrão é o tardígrado. O alienígena no óvni é liberado quando a sequência
+// chega a DIAS_SKIN_ALIEN; depois disso fica liberado para sempre neste navegador,
+// mesmo que a sequência zere. A escolha também fica guardada aqui.
+const DIAS_SKIN_ALIEN = 10;
+const SKINS = [
+  { id: "tardigrado", nome: "TARDÍGRADO", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
+  { id: "alien", nome: "ÓVNI", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
+];
+const lerChave = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+const gravarChave = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+
+function skinLiberada(skin, seq) {
+  if (!skin.dias) return true;
+  if (lerChave(`nicho:skin-liberada:${skin.id}`) === "1") return true;
+  if (seq >= skin.dias) { gravarChave(`nicho:skin-liberada:${skin.id}`, "1"); return true; }
+  return false;
+}
+function skinEscolhida() {
+  const id = lerChave("nicho:skin");
+  const skin = SKINS.find((k) => k.id === id);
+  return skin && skinLiberada(skin, 0) ? skin.id : "tardigrado";
+}
+function desenharSkin(tela, skin) {
+  const s = skin.criar();
+  if (!tela || !s) return;
   const g = tela.getContext("2d");
   g.imageSmoothingEnabled = false;
-  g.drawImage(t.andar[0], 0, 0);
+  g.clearRect(0, 0, tela.width, tela.height);
+  g.drawImage(s.andar[0], 0, 0);
+}
+
+// O mascote escolhido no cartão do modo, no menu inicial.
+function desenharMascoteDoMenu() {
+  desenharSkin($("modo-mascote"), SKINS.find((k) => k.id === skinEscolhida()));
+}
+
+// Os botões de skin embaixo do cartão do modo. A trancada mostra quanto falta.
+function montarSkins() {
+  const caixa = $("skins");
+  if (!caixa) return;
+  const seq = ALEATORIO ? 0 : sequencia();
+  const atual = skinEscolhida();
+  caixa.innerHTML = "";
+  for (const skin of SKINS) {
+    const livre = skinLiberada(skin, seq);
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "skin" + (livre ? "" : " trancada") + (skin.id === atual ? " escolhida" : "");
+    b.setAttribute("role", "radio");
+    b.setAttribute("aria-checked", String(skin.id === atual));
+    const tela = document.createElement("canvas");
+    tela.width = 28; tela.height = 16;
+    tela.setAttribute("aria-hidden", "true");
+    desenharSkin(tela, skin);
+    const nome = document.createElement("span");
+    nome.className = "skin-nome";
+    nome.textContent = skin.nome;
+    b.append(tela, nome);
+    if (!livre) {
+      const falta = document.createElement("span");
+      falta.className = "skin-falta";
+      falta.textContent = `🔒 ${Math.min(seq, skin.dias)}/${skin.dias} dias seguidos`;
+      b.append(falta);
+      b.disabled = true;
+      b.setAttribute("aria-label", `${skin.nome}: libera com ${skin.dias} dias seguidos (você está com ${seq})`);
+    }
+    b.addEventListener("click", () => {
+      gravarChave("nicho:skin", skin.id);
+      cena.skin(skin.id);
+      montarSkins();
+      desenharMascoteDoMenu();
+    });
+    caixa.append(b);
+  }
+}
+
+// No fim do dia que completa a sequência certa, avisa que a skin nova saiu
+// (e já troca para ela, para a pessoa ver na próxima viagem).
+function avisarSkinNova(seq) {
+  const aviso = $("fim-skin");
+  if (!aviso) return;
+  aviso.hidden = true;
+  for (const skin of SKINS) {
+    if (!skin.dias || seq < skin.dias) continue;
+    if (lerChave(`nicho:skin-liberada:${skin.id}`) === "1") continue;
+    skinLiberada(skin, seq);
+    gravarChave("nicho:skin", skin.id);
+    cena.skin(skin.id);
+    aviso.textContent = `🛸 NOVA SKIN LIBERADA: ALIENÍGENA NO ÓVNI · ${skin.dias} dias seguidos!`;
+    aviso.hidden = false;
+    montarSkins();
+    desenharMascoteDoMenu();
+  }
 }
 
 // "DIA #3 · SEQUÊNCIA 2" no menu e no fim. A sequência são os dias seguidos com a viagem
@@ -257,7 +343,9 @@ function iniciar() {
   $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
   mostrarDiaESequencia();
   $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
+  cena.skin(skinEscolhida());
   desenharMascoteDoMenu();
+  montarSkins();
   $("som").classList.toggle("mudo", Som.estaMudo());
 
   const salvo = lerProgresso();
@@ -668,9 +756,10 @@ function mostrarFim(comSom) {
   montarRespostas();
 
   const seq = mostrarDiaESequencia();
+  if (!ALEATORIO) avisarSkinNova(seq);
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL 🐻\n${LINK_JOGO}`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }

@@ -140,6 +140,26 @@ body.distorcer #cena, body.distorcer #camada { animation: distorcer 0.9s ease-ou
 .modo-nome { flex: 1; font-weight: 700; font-size: 19px; letter-spacing: 0.24em; color: var(--texto); }
 .modo-info { font-size: 13px; color: var(--suave); white-space: nowrap; }
 .modo-info::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 6px; background: var(--ciano); box-shadow: 0 0 6px var(--ciano); vertical-align: middle; }
+/* skins do mascote, logo embaixo do cartão do modo */
+.skins { width: min(520px, 100%); display: flex; gap: 8px; margin-top: 10px; }
+.skin {
+  flex: 1; display: flex; align-items: center; gap: 10px; padding: 8px 10px; cursor: pointer; text-align: left;
+  font-family: var(--corpo); color: var(--texto); background: rgba(var(--tinta), 0.7); border: 0;
+  box-shadow: inset 0 0 0 2px rgba(185, 140, 255, 0.35);
+}
+.skin canvas { width: 42px; height: 24px; image-rendering: pixelated; flex: none; }
+.skin-nome { font-weight: 700; font-size: 13px; letter-spacing: 0.16em; }
+.skin-falta { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--suave); white-space: nowrap; }
+.skin.escolhida { box-shadow: inset 0 0 0 2px #7dffb0, 0 0 12px rgba(110, 255, 170, 0.35); }
+.skin:not(.trancada):hover { box-shadow: inset 0 0 0 2px #b98cff, 0 0 12px rgba(150, 80, 255, 0.35); }
+.skin.escolhida:hover { box-shadow: inset 0 0 0 2px #7dffb0, 0 0 12px rgba(110, 255, 170, 0.45); }
+.skin.trancada { cursor: default; }
+.skin.trancada canvas { filter: grayscale(1) brightness(0.45); }
+.skin.trancada .skin-nome { color: var(--suave); }
+.fim-skin {
+  display: inline-block; margin: 12px auto 0; padding: 8px 14px; font-family: var(--corpo); font-weight: 700; font-size: 14px;
+  letter-spacing: 0.1em; color: #062010; background: #7dffb0; box-shadow: 0 0 16px rgba(110, 255, 170, 0.6);
+}
 .rodape-inicio { width: min(520px, 100%); display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
 #dia { font-family: var(--mono); font-size: 13px; letter-spacing: 0.16em; color: #dfe6ff; text-shadow: 0 2px 0 rgba(0, 0, 30, 0.55); }
 .botoes-inicio { display: flex; gap: 8px; }
@@ -412,6 +432,10 @@ pre {
   .modo-nome { font-size: 15px; letter-spacing: 0.12em; }
   .modo-info { font-size: 12px; }
   #modo-mascote { width: 42px; height: 24px; }
+  .skin { gap: 6px; padding: 6px 8px; flex-wrap: wrap; }
+  .skin canvas { width: 35px; height: 20px; }
+  .skin-nome { font-size: 12px; letter-spacing: 0.1em; }
+  .skin-falta { margin-left: 0; width: 100%; font-size: 10px; }
   #inicio .botao-grande { font-size: 17px; letter-spacing: 0.14em; padding: 18px 12px; }
   #hud { grid-template-columns: 1fr 1fr; padding-right: max(16px, env(safe-area-inset-right)); }
   .progresso { grid-column: 1 / -1; grid-row: 2; padding-top: 0; }

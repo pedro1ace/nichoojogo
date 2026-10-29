@@ -1216,7 +1216,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
-  const tardigrado = criarTardigrado();
+  // Skins: o tardígrado é o padrão; o alienígena no óvni sai com 10 dias seguidos.
+  const skins = { tardigrado: criarTardigrado() };
+  if (typeof criarAlienigena === "function") skins.alien = criarAlienigena();
+  let tardigrado = skins.tardigrado;
+  let skinAtual = "tardigrado";
   const naves = criarNaves();
   let felizAte = 0;
   function desenharFoguete() {
@@ -1332,10 +1336,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const festa = mascote.festaOuro ? Math.max(0, 1 - (performance.now() - mascote.festaOuro) / 2200) : 0;
     const rb = img.width * pz * (0.85 + festa * 1.6);
     const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
+    const alien = skinAtual === "alien";
     if (mascote.dourado) {
       halo.addColorStop(0, `rgba(255, 220, 110, ${0.34 + festa * 0.5})`);
       halo.addColorStop(0.45, `rgba(255, 190, 70, ${0.14 + festa * 0.25})`);
       halo.addColorStop(1, "rgba(255, 170, 40, 0)");
+    } else if (alien) {
+      // o disco solta um brilho verde-azulado, de luz de óvni
+      halo.addColorStop(0, "rgba(120, 255, 170, 0.26)");
+      halo.addColorStop(0.45, "rgba(80, 220, 200, 0.10)");
+      halo.addColorStop(1, "rgba(60, 200, 220, 0)");
     } else {
       halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
       halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
@@ -1351,7 +1361,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.translate(sx, sy);
     tx.rotate(inclina * Math.sign(mascote.virar || 1));
     tx.scale(mascote.virar / resp, resp);
-    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : "rgba(255, 140, 60, 0.75)";
+    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : "rgba(255, 140, 60, 0.75)";
     tx.shadowBlur = pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
@@ -2079,6 +2089,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
     dourado(festa) {
       mascote.dourado = true;
       if (festa) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
+    },
+    // Troca a skin do mascote ("tardigrado" ou "alien").
+    skin(nome) {
+      if (!skins[nome]) return;
+      skinAtual = nome;
+      tardigrado = skins[nome];
     },
     // Tela final: some com as caixinhas e as linhas das faixas.
     limpar() {
