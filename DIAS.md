@@ -123,10 +123,22 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 6 | Coisas com camadas | Cite algo que tem camadas | 1391 |
 | 7 | Tipos de corrida | Cite um tipo de corrida | 1106 |
 
+## Dia 11 · sáb 07/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Motivos para gritar | Cite um motivo para gritar | 1155 |
+| 2 | Motivos para rir | Cite um motivo para rir | 1491 |
+| 3 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1444 |
+| 4 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1261 |
+| 5 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1201 |
+| 6 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4697 |
+| 7 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2087 |
+
 ## Na fila (ainda não formam um dia)
 
-- Motivos para gritar
-- Motivos para rir
-- Porta da geladeira
-- Formas de matar um inseto
-- Animais da cidade
+- Lagos e mares
+- Filmes
+- Séries de TV
+- Jogadores de futebol
+- Modelos de carro
