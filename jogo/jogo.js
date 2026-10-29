@@ -149,7 +149,7 @@ function sequencia() {
 const DIAS_SKIN_ALIEN = 10;
 const SKINS = [
   { id: "tardigrado", nome: "TARDÍGRADO", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
-  { id: "alien", nome: "ÓVNI", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
+  { id: "alien", nome: "NEIL", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
 ];
 const lerChave = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
 const gravarChave = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
@@ -271,7 +271,7 @@ function avisarSkinNova(seq) {
     skinLiberada(skin, seq);
     gravarChave("nicho:skin", skin.id);
     cena.skin(skin.id);
-    aviso.textContent = `🛸 NOVA SKIN LIBERADA: ALIENÍGENA NO ÓVNI · ${skin.dias} dias seguidos!`;
+    aviso.textContent = `🛸 NOVA SKIN LIBERADA: NEIL, O ALIENÍGENA DO ÓVNI · ${skin.dias} dias seguidos!`;
     aviso.hidden = false;
     montarSkins();
     desenharMascoteDoMenu();
