@@ -142,14 +142,140 @@ function sequencia() {
   return n;
 }
 
-// O tardígrado no cartão do modo, no menu inicial (dourado se hoje teve supernova).
-function desenharMascoteDoMenu() {
-  const tela = $("modo-mascote");
-  if (!tela || typeof criarTardigrado !== "function") return;
-  const t = criarTardigrado();
+// ---------- skins ----------
+// O mascote padrão é o tardígrado. O alienígena no óvni é liberado quando a sequência
+// chega a DIAS_SKIN_ALIEN; depois disso fica liberado para sempre neste navegador,
+// mesmo que a sequência zere. A escolha também fica guardada aqui.
+const DIAS_SKIN_ALIEN = 10;
+const SKINS = [
+  { id: "tardigrado", nome: "TARDÍGRADO", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
+  { id: "alien", nome: "ÓVNI", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
+];
+const lerChave = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+const gravarChave = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+
+function skinLiberada(skin, seq) {
+  if (!skin.dias) return true;
+  if (lerChave(`nicho:skin-liberada:${skin.id}`) === "1") return true;
+  if (seq >= skin.dias) { gravarChave(`nicho:skin-liberada:${skin.id}`, "1"); return true; }
+  return false;
+}
+function skinEscolhida() {
+  const id = lerChave("nicho:skin");
+  const skin = SKINS.find((k) => k.id === id);
+  return skin && skinLiberada(skin, 0) ? skin.id : "tardigrado";
+}
+function desenharSkin(tela, skin) {
+  const s = skin.criar();
+  if (!tela || !s) return;
   const g = tela.getContext("2d");
   g.imageSmoothingEnabled = false;
-  g.drawImage(t.andar[0], 0, 0);
+  g.clearRect(0, 0, tela.width, tela.height);
+  g.drawImage(s.andar[0], 0, 0);
+}
+
+// O mascote escolhido no cartão do modo, no menu inicial.
+function desenharMascoteDoMenu() {
+  desenharSkin($("modo-mascote"), SKINS.find((k) => k.id === skinEscolhida()));
+}
+
+// A grade da janela de skins. A trancada aparece apagada, com os dias que pede.
+function montarSkins() {
+  const caixa = $("grade-skins");
+  if (!caixa) return;
+  const seq = ALEATORIO ? 0 : sequencia();
+  const atual = skinEscolhida();
+  caixa.innerHTML = "";
+  for (const skin of SKINS) {
+    const livre = skinLiberada(skin, seq);
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "cartao-skin" + (livre ? "" : " trancada") + (skin.id === atual ? " escolhida" : "");
+    b.setAttribute("role", "radio");
+    b.setAttribute("aria-checked", String(skin.id === atual));
+    const tela = document.createElement("canvas");
+    tela.width = 28; tela.height = 16;
+    tela.setAttribute("aria-hidden", "true");
+    desenharSkin(tela, skin);
+    const nome = document.createElement("span");
+    nome.className = "skin-nome";
+    nome.textContent = skin.nome;
+    const dias = document.createElement("span");
+    dias.className = "skin-dias";
+    dias.textContent = !skin.dias ? "PADRÃO" : livre ? `${skin.dias} DIAS SEGUIDOS ✓` : `🔒 ${skin.dias} DIAS SEGUIDOS`;
+    b.append(tela, nome, dias);
+    if (!livre) {
+      const falta = document.createElement("span");
+      falta.className = "skin-falta";
+      falta.textContent = `você está com ${Math.min(seq, skin.dias)}`;
+      b.append(falta);
+    }
+    if (!livre) {
+      b.setAttribute("aria-disabled", "true");
+      b.setAttribute("aria-label", `${skin.nome}: libera com ${skin.dias} dias seguidos (você está com ${seq})`);
+    }
+    b.addEventListener("click", () => {
+      if (!livre) return;
+      gravarChave("nicho:skin", skin.id);
+      cena.skin(skin.id);
+      montarSkins();
+      desenharMascoteDoMenu();
+      caixa.querySelector(".escolhida")?.focus();
+    });
+    caixa.append(b);
+  }
+}
+
+// ---------- opções ----------
+// "Sem autocorreção": o jogo não sugere nem corrige a grafia (só vale a palavra exata).
+// "Sem efeitos": sem tremor, clarões, explosões e animações, para quem acha o jogo
+// estimulante demais. As duas ficam guardadas neste navegador.
+const opcoes = { semCorrecao: false, semEfeitos: false };
+try { Object.assign(opcoes, JSON.parse(lerChave("nicho:opcoes") || "{}")); } catch {}
+function aplicarOpcoes() {
+  document.documentElement.classList.toggle("sem-efeitos", !!opcoes.semEfeitos);
+  cena.semEfeitos(!!opcoes.semEfeitos);
+  if (opcoes.semCorrecao) $("sugestao").hidden = true;
+  document.querySelectorAll(".opcao").forEach((b) => b.setAttribute("aria-checked", String(!!opcoes[b.dataset.opcao])));
+}
+document.querySelectorAll(".opcao").forEach((b) => b.addEventListener("click", () => {
+  opcoes[b.dataset.opcao] = !opcoes[b.dataset.opcao];
+  gravarChave("nicho:opcoes", JSON.stringify(opcoes));
+  aplicarOpcoes();
+}));
+
+// As janelas do menu da lateral: abrem por cima, fecham no X, no Esc ou clicando fora.
+function abrirJanela(id) {
+  const j = $(id);
+  if (typeof j.showModal !== "function") return;
+  if (id === "janela-skins") montarSkins();
+  j.showModal();
+  (j.querySelector(".escolhida, .opcao") || j.querySelector(".fechar")).focus();
+}
+for (const j of document.querySelectorAll(".janela-menu")) {
+  j.querySelector(".fechar").addEventListener("click", () => j.close());
+  j.addEventListener("click", (e) => { if (e.target === j) j.close(); });
+  // devolve o foco ao campo de resposta se a viagem estiver rolando
+  j.addEventListener("close", () => { if (estado.ativa) $("palpite").focus(); });
+}
+
+// No fim do dia que completa a sequência certa, avisa que a skin nova saiu
+// (e já troca para ela, para a pessoa ver na próxima viagem).
+function avisarSkinNova(seq) {
+  const aviso = $("fim-skin");
+  if (!aviso) return;
+  aviso.hidden = true;
+  for (const skin of SKINS) {
+    if (!skin.dias || seq < skin.dias) continue;
+    if (lerChave(`nicho:skin-liberada:${skin.id}`) === "1") continue;
+    skinLiberada(skin, seq);
+    gravarChave("nicho:skin", skin.id);
+    cena.skin(skin.id);
+    aviso.textContent = `🛸 NOVA SKIN LIBERADA: ALIENÍGENA NO ÓVNI · ${skin.dias} dias seguidos!`;
+    aviso.hidden = false;
+    montarSkins();
+    desenharMascoteDoMenu();
+  }
 }
 
 // "DIA #3 · SEQUÊNCIA 2" no menu e no fim. A sequência são os dias seguidos com a viagem
@@ -257,7 +383,10 @@ function iniciar() {
   $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
   mostrarDiaESequencia();
   $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
+  cena.skin(skinEscolhida());
+  aplicarOpcoes();
   desenharMascoteDoMenu();
+  montarSkins();
   $("som").classList.toggle("mudo", Som.estaMudo());
 
   const salvo = lerProgresso();
@@ -273,6 +402,7 @@ function iniciar() {
   if (estado.rodada >= estado.categorias.length) {
     $("inicio").hidden = true;
     $("hud").hidden = false;
+    $("abrir-skins").hidden = true;
     mostrarFim(false);
     return;
   }
@@ -322,6 +452,9 @@ function comecar() {
   Som.inicio(); // toca sempre, também ao continuar a viagem
   $("inicio").hidden = true;
   $("hud").hidden = false;
+  // a skin só troca na tela inicial: com a viagem começada, o botão some
+  $("abrir-skins").hidden = true;
+  if ($("janela-skins").open) $("janela-skins").close();
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
     // modo teste: ?ir=20000 na URL começa a viagem já nesses anos-luz (para ver o fundo de perto)
@@ -501,7 +634,7 @@ function aoDigitar() {
   esperaSugestao = setTimeout(() => {
     const texto = $("palpite").value.trim();
     const busca = texto.length >= 3 ? buscar(estado.categorias[estado.rodada], texto) : null;
-    if (busca && !busca.exato) mostrarSugestao(busca.nome);
+    if (busca && !busca.exato && !opcoes.semCorrecao) mostrarSugestao(busca.nome);
     else $("sugestao").hidden = true;
   }, 250);
 }
@@ -530,7 +663,9 @@ function palpitar(evento) {
   const cat = estado.categorias[estado.rodada];
   const texto = $("palpite").value.trim();
   if (!texto) return;
-  const busca = buscar(cat, texto);
+  let busca = buscar(cat, texto);
+  // sem autocorreção: escrita quase certa conta como não achada
+  if (busca && !busca.exato && opcoes.semCorrecao) busca = null;
 
   if (!busca) {
     avisar(`“${texto}” não está no mapa estelar. Tente outra.`, "erro");
@@ -668,9 +803,10 @@ function mostrarFim(comSom) {
   montarRespostas();
 
   const seq = mostrarDiaESequencia();
+  if (!ALEATORIO) avisarSkinNova(seq);
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL 🐻\n${LINK_JOGO}`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }
@@ -1229,7 +1365,15 @@ $("abrir-como").addEventListener("click", () => {
 });
 $("formulario").addEventListener("submit", palpitar);
 $("palpite").addEventListener("input", aoDigitar);
+// Enter e o botão LANÇAR chamam palpitar() direto, sem depender do envio do formulário:
+// em visualizadores que abrem o jogo numa moldura sem formulários (prévia de arquivo do
+// celular, por exemplo), o envio é bloqueado e a resposta não saía.
+$("formulario").querySelector("button[type=submit]").addEventListener("click", palpitar);
 $("palpite").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.isComposing) {
+    palpitar(e);
+    return;
+  }
   if (e.key === "Tab" && !$("sugestao").hidden) {
     e.preventDefault();
     usarSugestao();
@@ -1239,6 +1383,8 @@ $("sugestao").addEventListener("click", usarSugestao);
 $("proxima").addEventListener("click", proxima);
 $("copiar").addEventListener("click", copiar);
 $("enviar").addEventListener("click", enviar);
+$("abrir-skins").addEventListener("click", () => abrirJanela("janela-skins"));
+$("abrir-opcoes").addEventListener("click", () => abrirJanela("janela-opcoes"));
 $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());

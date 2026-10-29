@@ -39,7 +39,12 @@
         <span id="pontos" class="valor rosa">0</span>
       </div>
     </div>
-    <button id="som" type="button" aria-label="Ligar ou desligar o som">♪</button>
+    <!-- menu da lateral: som, opções e skins -->
+    <div id="lateral">
+      <button id="som" type="button" aria-label="Ligar ou desligar o som">♪</button>
+      <button id="abrir-opcoes" type="button" aria-label="Opções" aria-haspopup="dialog"><svg viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM7 1h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM8 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM8 4h1v1h-1zM0 5h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM8 5h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM1 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM7 7h1v1h-1zM3 8h1v1h-1zM4 8h1v1h-1zM5 8h1v1h-1z"/></svg></button>
+      <button id="abrir-skins" type="button" aria-label="Skins" aria-haspopup="dialog"><svg viewBox="0 0 11 8" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM7 0h1v1h-1zM8 0h1v1h-1zM9 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM7 1h1v1h-1zM8 1h1v1h-1zM9 1h1v1h-1zM10 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM9 2h1v1h-1zM10 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM9 3h1v1h-1zM10 3h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1z"/></svg></button>
+    </div>
 
     <section id="inicio">
       <h1 id="titulo" aria-label="Nicho"></h1>
@@ -108,6 +113,7 @@
         <p id="fim-pontos"></p>
         <p id="fim-profundidade" class="ciano"></p>
         <p id="fim-comparacao"></p>
+        <p id="fim-skin" class="fim-skin" role="status" hidden></p>
         <div id="secao-curva" class="secao" hidden>
           <p class="rotulo">ENTRE OS VIAJANTES</p>
           <div id="curva">
@@ -163,9 +169,35 @@
     <iframe id="janela-quadro" title="Informações"></iframe>
     <p class="janela-dica" aria-hidden="true">toque fora para fechar</p>
   </dialog>
+  <!-- skins: grade com o mascote de cada uma; as trancadas mostram quantos dias seguidos pedem -->
+  <dialog id="janela-skins" class="janela-menu" aria-labelledby="titulo-skins">
+    <div class="janela-topo">
+      <p id="titulo-skins" class="rotulo">SKINS</p>
+      <button type="button" class="fechar" aria-label="Fechar">X</button>
+    </div>
+    <div id="grade-skins" class="grade-skins" role="radiogroup" aria-labelledby="titulo-skins"></div>
+  </dialog>
+  <!-- opções: para quem acha o jogo estimulante demais -->
+  <dialog id="janela-opcoes" class="janela-menu" aria-labelledby="titulo-opcoes">
+    <div class="janela-topo">
+      <p id="titulo-opcoes" class="rotulo">OPÇÕES</p>
+      <button type="button" class="fechar" aria-label="Fechar">X</button>
+    </div>
+    <div class="opcoes">
+      <button type="button" class="opcao" role="switch" aria-checked="false" data-opcao="semCorrecao">
+        <span class="opcao-texto"><b>SEM AUTOCORREÇÃO</b><span>O jogo não sugere nem corrige a grafia. Só vale a palavra escrita certinha.</span></span>
+        <span class="chave" aria-hidden="true"><i></i></span>
+      </button>
+      <button type="button" class="opcao" role="switch" aria-checked="false" data-opcao="semEfeitos">
+        <span class="opcao-texto"><b>SEM EFEITOS</b><span>Sem tremor, clarões, explosões de estrelas e animações. O jogo fica mais calmo.</span></span>
+        <span class="chave" aria-hidden="true"><i></i></span>
+      </button>
+    </div>
+  </dialog>
   <script src="dados.js"></script>
   <script src="som.js"></script>
   <script src="mascote.js"></script>
+  <script src="alien.js"></script>
   <script src="naves.js"></script>
   <script src="cena.js"></script>
   <script src="jogo.js"></script>

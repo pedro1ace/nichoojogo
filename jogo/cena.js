@@ -496,7 +496,10 @@ function desenharTerra(largura, altura) {
 function criarCena(telaPixel, telaTexto, raiz) {
   const ctx = telaPixel.getContext("2d");
   const tx = telaTexto.getContext("2d");
-  const reduzirMovimento = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // movimento reduzido: pelo sistema ou pela opção "sem efeitos" do jogo
+  const movimentoDoSistema = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let reduzirMovimento = movimentoDoSistema;
+  let semEfeitos = false;
   let corpos = criarCorpos();
   const icones = criarIcones();
 
@@ -1216,7 +1219,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
-  const tardigrado = criarTardigrado();
+  // Skins: o tardígrado é o padrão; o alienígena no óvni sai com 10 dias seguidos.
+  const skins = { tardigrado: criarTardigrado() };
+  if (typeof criarAlienigena === "function") skins.alien = criarAlienigena();
+  let tardigrado = skins.tardigrado;
+  let skinAtual = "tardigrado";
   const naves = criarNaves();
   let felizAte = 0;
   function desenharFoguete() {
@@ -1332,10 +1339,16 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const festa = mascote.festaOuro ? Math.max(0, 1 - (performance.now() - mascote.festaOuro) / 2200) : 0;
     const rb = img.width * pz * (0.85 + festa * 1.6);
     const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
+    const alien = skinAtual === "alien";
     if (mascote.dourado) {
       halo.addColorStop(0, `rgba(255, 220, 110, ${0.34 + festa * 0.5})`);
       halo.addColorStop(0.45, `rgba(255, 190, 70, ${0.14 + festa * 0.25})`);
       halo.addColorStop(1, "rgba(255, 170, 40, 0)");
+    } else if (alien) {
+      // o disco solta um brilho verde-azulado, de luz de óvni
+      halo.addColorStop(0, "rgba(120, 255, 170, 0.26)");
+      halo.addColorStop(0.45, "rgba(80, 220, 200, 0.10)");
+      halo.addColorStop(1, "rgba(60, 200, 220, 0)");
     } else {
       halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
       halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
@@ -1351,7 +1364,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.translate(sx, sy);
     tx.rotate(inclina * Math.sign(mascote.virar || 1));
     tx.scale(mascote.virar / resp, resp);
-    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : "rgba(255, 140, 60, 0.75)";
+    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : "rgba(255, 140, 60, 0.75)";
     tx.shadowBlur = pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
@@ -1636,7 +1649,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   function chegada(c, cx, cy, w, h) {
     const k = c.peso; // 0 a 1.2
     if (window.Som && Som.pouso) Som.pouso(["obvia", "comum", "incomum", "rara", "supernova"].indexOf(c.faixa));
-    if (k < 0.35) return; // comum e óbvia: só o pulinho da caixa
+    if (k < 0.35 || semEfeitos) return; // comum e óbvia (ou sem efeitos): só o pulinho da caixa
     const n = Math.round(20 + 120 * Math.min(1, k));
     if (c.supernova) {
       dobra = 0;
@@ -2022,7 +2035,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       camera.peso = pesoQueda(pontos, supernova);
       if (supernova) dobra = 1;
       // raro, espaço profundo e singularidade: o cenário apaga um instante em volta da caixa
-      if (supernova || pontos >= 35) {
+      if ((supernova || pontos >= 35) && !semEfeitos) {
         apagao = { inicio: agora, dura: camera.dura, forca: supernova ? 0.94 : pontos >= 60 ? 0.88 : 0.78, cor: faixa.cor };
       }
       // a caixa anterior some (não ficam umas por cima das outras)
@@ -2078,7 +2091,18 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // Tardígrado dourado (supernova): com festa só na hora em que acontece.
     dourado(festa) {
       mascote.dourado = true;
-      if (festa) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
+      if (festa && !semEfeitos) { mascote.festaOuro = performance.now(); mascote.pulo = 18; }
+    },
+    // Opção "sem efeitos": sem tremor, clarão, apagão, explosões e balanço.
+    semEfeitos(ligado) {
+      semEfeitos = ligado;
+      reduzirMovimento = movimentoDoSistema || ligado;
+    },
+    // Troca a skin do mascote ("tardigrado" ou "alien").
+    skin(nome) {
+      if (!skins[nome]) return;
+      skinAtual = nome;
+      tardigrado = skins[nome];
     },
     // Tela final: some com as caixinhas e as linhas das faixas.
     limpar() {
