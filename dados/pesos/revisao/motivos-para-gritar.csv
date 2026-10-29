@@ -1,524 +1,1156 @@
 resposta,apelidos,icf,sem_dado,lembranca,conhecem,visitas,percentil,fama,peso,pontos,ajustado
 Gol,gol do Brasil | gol do time,9.525,False,160.0,100.0,0,0.0,0.0,0.283,8,True
-Susto,levar um susto | tomar susto,11.586,False,120.0,100.0,0,0.002,0.002,0.3,9,True
-Barata,ver uma barata | barata voando,10.961,False,90.0,100.0,0,0.004,0.004,0.316,10,True
-Dor,sentir dor,9.079,False,50.0,100.0,0,0.006,0.006,0.316,10,True
-Raiva,ódio | estar com raiva,10.609,False,45.0,100.0,0,0.008,0.008,0.332,11,True
-Medo,,8.862,False,40.0,100.0,0,0.01,0.01,0.346,12,True
-Montanha-russa,,10.877,False,35.0,100.0,0,0.013,0.013,0.361,13,True
-Topada,topada no dedinho | bater o dedinho | dedinho na quina,15.776,False,40.0,100.0,0,0.011,0.011,0.361,13,True
-Filme de terror,terror,9.295,False,30.0,100.0,0,0.015,0.015,0.374,14,True
-Show,show de música | show da banda favorita,8.93,False,25.0,100.0,0,0.017,0.017,0.387,15,True
-Socorro,pedir socorro | pedir ajuda,10.624,False,25.0,100.0,0,0.019,0.019,0.424,18,True
-Ganhar na loteria,Mega-Sena | ganhar na Mega,8.802,False,20.0,100.0,0,0.021,0.021,0.436,19,True
-Rato,ver um rato,11.364,False,20.0,100.0,0,0.023,0.023,0.436,19,True
-Título,ser campeão | título do time,8.822,False,15.0,100.0,0,0.025,0.025,0.447,20,True
-Alegria,felicidade,9.267,False,15.0,100.0,0,0.029,0.029,0.458,21,True
-Vitória,ganhar | vencer,9.014,False,15.0,100.0,0,0.027,0.027,0.458,21,True
-Briga,discussão,10.72,False,15.0,100.0,0,0.033,0.033,0.469,22,True
-Surpresa,festa surpresa,9.928,False,15.0,100.0,0,0.031,0.031,0.469,22,True
-Aranha,,10.957,False,15.0,100.0,0,0.034,0.034,0.48,23,True
-Assalto,ladrão,11.055,False,15.0,100.0,0,0.036,0.036,0.49,24,True
-Parto,dar à luz | trabalho de parto,10.575,False,15.0,98.0,0,0.038,0.038,0.49,24,True
-Cobra,,10.791,False,10.0,100.0,0,0.04,0.04,0.5,25,True
-Fantasma,assombração,11.323,False,10.0,98.0,0,0.044,0.044,0.51,26,True
-Pesadelo,,11.728,False,10.0,100.0,0,0.042,0.042,0.51,26,True
-Chamar alguém longe,chamar alguém | chamar a mãe,9.126,False,8.0,100.0,0,0.046,0.046,0.52,27,True
-Torcida,torcer pelo time | estádio,10.298,False,8.0,100.0,0,0.05,0.05,0.529,28,True
-Água gelada,banho gelado | chuveiro gelado,9.883,False,8.0,100.0,0,0.048,0.048,0.529,28,True
-Truco,gritar truco,13.974,False,8.0,98.0,0,0.052,0.052,0.539,29,True
-Parque de diversões,brinquedo radical,9.202,False,6.0,100.0,0,0.054,0.054,0.548,30,True
-Trânsito,motorista barbeiro | fechada no trânsito,9.745,False,6.0,100.0,0,0.056,0.056,0.548,30,True
-Choque,levar choque | choque elétrico,10.675,False,6.0,100.0,0,0.057,0.057,0.557,31,True
-Uno,gritar Uno,11.104,False,6.0,98.0,0,0.059,0.059,0.557,31,True
-Queimadura,se queimar | queimar a mão,13.385,False,6.0,100.0,0,0.061,0.061,0.566,32,True
-Jogo de futebol,futebol,8.217,False,5.0,100.0,0,0.065,0.065,0.574,33,True
-Passar no vestibular,passar na prova | aprovação,8.03,False,5.0,100.0,0,0.063,0.063,0.574,33,True
-Casa do terror,trem fantasma | casa mal-assombrada,8.85,False,5.0,98.0,0,0.067,0.067,0.583,34,True
-Jogo de videogame,perder no videogame | rage quit,10.011,False,5.0,100.0,0,0.071,0.071,0.592,35,True
-Mãe chamando,grito de mãe,9.83,False,5.0,100.0,0,0.069,0.069,0.592,35,True
-Estresse,stress,10.905,False,5.0,100.0,0,0.077,0.077,0.6,36,True
-Juiz,xingar o juiz | ladrão (juiz),9.596,False,5.0,98.0,0,0.073,0.073,0.6,36,True
-Protesto,manifestação | passeata,10.785,False,5.0,100.0,0,0.075,0.075,0.6,36,True
-Pênalti,pênalti perdido | pegar pênalti,12.096,False,5.0,100.0,0,0.079,0.079,0.6,36,True
-Bingo,gritar bingo,12.307,False,5.0,100.0,0,0.082,0.082,0.608,37,True
-Feira,feirante | vendedor ambulante,7.468,False,4.0,100.0,0,0.084,0.084,0.608,37,True
-Acidente,batida de carro | acidente de carro,9.638,False,4.0,100.0,0,0.09,0.09,0.616,38,True
-Gritar com o filho,filho bagunçando | criança aprontando,8.038,False,4.0,98.0,0,0.088,0.088,0.616,38,True
-Notícia boa,boa notícia,8.632,False,4.0,100.0,0,0.086,0.086,0.616,38,True
-Alerta,aviso | cuidado!,10.048,False,4.0,100.0,0,0.094,0.094,0.624,39,True
-Cantar,cantar alto | soltar a voz,10.409,False,4.0,100.0,0,0.096,0.096,0.624,39,True
-Fã,ídolo | encontrar famoso,9.957,False,4.0,98.0,0,0.098,0.098,0.624,39,True
-Pedido de casamento,pedido de noivado,9.012,False,4.0,98.0,0,0.092,0.092,0.624,39,True
-Computador travando,computador travou | perder o arquivo,11.226,False,4.0,100.0,0,0.103,0.103,0.632,40,True
-Desespero,,10.967,False,4.0,100.0,0,0.102,0.102,0.632,40,True
-Incêndio,fogo,10.791,False,4.0,100.0,0,0.1,0.1,0.632,40,True
-Desabafo,desestressar | aliviar o estresse,11.987,False,4.0,100.0,0,0.109,0.109,0.64,41,True
-Injeção,vacina | agulha,11.402,False,4.0,100.0,0,0.105,0.105,0.64,41,True
-Traição,corno | descobrir traição,11.553,False,4.0,100.0,0,0.107,0.107,0.64,41,True
-Abelha,marimbondo | vespa,12.265,False,4.0,100.0,0,0.115,0.115,0.648,42,True
-Chá revelação,é menino | é menina,10.255,False,4.0,95.0,0,0.111,0.111,0.648,42,True
-Depilação,cera quente | depilar,12.118,False,4.0,98.0,0,0.117,0.117,0.648,42,True
-Lag,internet caindo | internet lenta,9.65,False,4.0,100.0,0,0.113,0.113,0.648,42,True
-Bungee jump,,20.0,True,4.0,95.0,0,0.123,0.123,0.656,43,True
-Palhaço,palhaço assustador,11.63,False,4.0,95.0,0,0.121,0.121,0.656,43,True
-Pegadinha,pegadinha do Silvio Santos | trote,12.935,False,4.0,100.0,0,0.119,0.119,0.656,43,True
-Ano Novo,virada do ano | contagem regressiva,6.956,False,3.0,100.0,0,0.125,0.125,0.663,44,True
-Gol do Brasil na Copa,Copa do Mundo,7.652,False,3.0,100.0,0,0.126,0.126,0.663,44,True
-Vender na praia,vendedor de praia | olha o picolé,7.731,False,3.0,98.0,0,0.128,0.128,0.663,44,True
-Carnaval,bloco de carnaval,9.65,False,3.0,100.0,0,0.136,0.136,0.671,45,True
-Criança birrenta,birra | pirraça,8.667,False,3.0,100.0,0,0.132,0.132,0.671,45,True
-Festa,balada,8.591,False,3.0,100.0,0,0.13,0.13,0.671,45,True
-Notícia ruim,má notícia | tragédia,9.559,False,3.0,100.0,0,0.134,0.134,0.671,45,True
-Celular caindo,celular quebrado | tela quebrada,10.082,False,3.0,100.0,0,0.138,0.138,0.678,46,True
-Perigo,atenção,10.265,False,3.0,100.0,0,0.142,0.142,0.678,46,True
-Wi-Fi caiu,queda de energia | acabou a luz,10.131,False,3.0,100.0,0,0.14,0.14,0.678,46,True
-Big Brother,BBB | eliminação do BBB | paredão,10.335,False,3.0,100.0,0,0.144,0.144,0.686,47,True
-Lego no pé,pisar no Lego | pisar em Lego,8.646,False,3.0,95.0,0,0.146,0.146,0.686,47,True
-Pega ladrão,,10.835,False,3.0,100.0,0,0.148,0.148,0.686,47,True
-Dentista,broca do dentista,11.11,False,3.0,100.0,0,0.154,0.154,0.693,48,True
-Martelada no dedo,martelo no dedo,10.161,False,3.0,98.0,0,0.149,0.149,0.693,48,True
-Pânico,crise de pânico,11.11,False,3.0,100.0,0,0.154,0.154,0.693,48,True
-Sapo,,10.921,False,3.0,100.0,0,0.151,0.151,0.693,48,True
-Frustração,,11.807,False,3.0,100.0,0,0.161,0.161,0.7,49,True
-Grito de guerra,grito de torcida,9.96,False,3.0,95.0,0,0.159,0.159,0.7,49,True
-Tempestade,trovão | raio,11.218,False,3.0,100.0,0,0.157,0.157,0.7,49,True
-Despertador,acordar cedo,12.482,False,3.0,100.0,0,0.167,0.167,0.707,50,True
-Grito de Ipiranga,Independência ou Morte | Dom Pedro I,11.47,False,5.0,98.0,0,0.08,0.08,0.707,50,True
-Ver o crush,ver o ídolo | encontrar o ídolo,10.368,False,3.0,95.0,0,0.163,0.163,0.707,50,True
-Vizinho barulhento,vizinho | festa do vizinho,12.139,False,3.0,100.0,0,0.165,0.165,0.707,50,True
-Fofoca,descobrir fofoca | babado,12.883,False,3.0,100.0,0,0.172,0.172,0.714,51,True
-Karaokê,,12.742,False,3.0,100.0,0,0.17,0.17,0.714,51,True
-Sapato pisado,pisão no pé | pisar no pé,12.527,False,3.0,100.0,0,0.169,0.169,0.714,51,True
-Tropeçar,cair | tombo,13.514,False,3.0,100.0,0,0.174,0.174,0.714,51,True
-Bebedeira,bêbado | ficar bêbado,13.658,False,3.0,100.0,0,0.176,0.176,0.721,52,True
-Cócegas,,13.735,False,3.0,100.0,0,0.178,0.178,0.721,52,True
-Lagartixa,,14.061,False,3.0,100.0,0,0.18,0.18,0.721,52,True
-Karatê,kiai | grito de luta,12.781,False,3.0,85.0,0,0.186,0.186,0.728,53,True
-Paraquedismo,pular de paraquedas,14.63,False,3.0,98.0,0,0.184,0.184,0.728,53,True
-Tarzan,grito do Tarzan,11.085,False,3.0,95.0,0,0.182,0.182,0.728,53,True
-Chamar o filho para jantar,o jantar está pronto | vem comer,8.048,False,2.0,100.0,0,0.193,0.193,0.735,54,True
-Mão na porta,dedo na porta | prender o dedo na porta,7.43,False,2.0,100.0,0,0.188,0.188,0.735,54,True
-Pedir para parar,para! | chega!,7.809,False,2.0,100.0,0,0.192,0.192,0.735,54,True
-Segunda-feira,,7.793,False,2.0,100.0,0,0.19,0.19,0.735,54,True
-Conta alta,conta de luz | boleto,8.238,False,2.0,100.0,0,0.195,0.195,0.742,55,True
-Política,eleição | político,8.281,False,2.0,100.0,0,0.197,0.197,0.742,55,True
-Preço alto,gasolina cara | inflação,8.316,False,2.0,100.0,0,0.199,0.199,0.742,55,True
-Final de campeonato,final,8.566,False,2.0,100.0,0,0.201,0.201,0.748,56,True
-Guerra,batalha,8.836,False,2.0,100.0,0,0.205,0.205,0.748,56,True
-Ordem,dar ordem | comando,8.799,False,2.0,100.0,0,0.203,0.203,0.748,56,True
-Bater (no jogo),gritar bati | dominó,7.626,False,2.0,95.0,0,0.212,0.212,0.755,57,True
-Férias,,9.188,False,2.0,100.0,0,0.207,0.207,0.755,57,True
-Perder o ônibus,ônibus passando direto,9.314,False,2.0,100.0,0,0.209,0.209,0.755,57,True
-Quarto escuro,escuro | apagar a luz,9.369,False,2.0,100.0,0,0.212,0.212,0.755,57,True
-Piscina,pular na piscina,9.453,False,2.0,100.0,0,0.216,0.216,0.762,58,True
-Sexo,prazer,8.754,False,2.0,98.0,0,0.216,0.216,0.762,58,True
-Aniversário,parabéns | parabéns pra você,9.489,False,2.0,100.0,0,0.219,0.219,0.775,60,True
-Barulho alto,som alto | música alta,9.663,False,2.0,100.0,0,0.226,0.226,0.775,60,True
-Criança brincando,brincadeira,9.911,False,2.0,100.0,0,0.23,0.23,0.775,60,True
-Irmão,briga de irmãos | irmão chato,9.477,False,2.0,100.0,0,0.219,0.219,0.775,60,True
-Nascimento,bebê nascendo,9.514,False,2.0,100.0,0,0.222,0.222,0.775,60,True
-Pedir silêncio,silêncio!,9.716,False,2.0,100.0,0,0.228,0.228,0.775,60,True
-Óleo quente,óleo espirrando,9.629,False,2.0,100.0,0,0.224,0.224,0.775,60,True
-Banheiro ocupado,vontade de ir ao banheiro | sem papel higiênico,10.435,False,2.0,100.0,0,0.239,0.239,0.781,61,True
-Barulho estranho,barulho no meio da noite,10.325,False,2.0,100.0,0,0.236,0.236,0.781,61,True
-Bebê chorando,bebê,10.443,False,2.0,100.0,0,0.241,0.241,0.781,61,True
-Dar bronca,bronca | sermão,10.336,False,2.0,100.0,0,0.238,0.238,0.781,61,True
-Eco,gritar na montanha | gritar no túnel,10.985,False,2.0,100.0,0,0.251,0.251,0.781,61,True
-Injustiça,,11.596,False,2.0,100.0,0,0.257,0.257,0.781,61,True
-Levantamento de peso,academia | malhar,9.773,False,2.0,98.0,0,0.244,0.244,0.781,61,True
-Mãe brava,mãe | chinelada,10.101,False,2.0,100.0,0,0.232,0.232,0.781,61,True
-Narrador de futebol,narração,10.276,False,2.0,100.0,0,0.234,0.234,0.781,61,True
-Pimenta,comida apimentada | pimenta forte,10.483,False,2.0,100.0,0,0.244,0.244,0.781,61,True
-Rock,heavy metal | gritar no show de metal,9.359,False,2.0,95.0,0,0.255,0.255,0.781,61,True
-Susto de brincadeira,sustinho | bu!,11.014,False,2.0,100.0,0,0.253,0.253,0.781,61,True
-Teste de gravidez,positivo,9.882,False,2.0,98.0,0,0.247,0.247,0.781,61,True
-Término de namoro,levar um fora | pé na bunda,10.96,False,2.0,100.0,0,0.249,0.249,0.781,61,True
-Afogamento,se afogando,13.509,False,2.0,100.0,0,0.278,0.278,0.787,62,True
-Cachorro latindo,cachorro,12.418,False,2.0,100.0,0,0.268,0.268,0.787,62,True
-Ciúme,,12.147,False,2.0,100.0,0,0.261,0.261,0.787,62,True
-Câimbra,,15.614,False,2.0,100.0,0,0.28,0.28,0.787,62,True
-Cólica,,13.328,False,2.0,100.0,0,0.276,0.276,0.787,62,True
-Escorpião,,12.392,False,2.0,100.0,0,0.266,0.266,0.787,62,True
-Galvão Bueno,é tetra | é tetra é tetra,11.51,False,2.0,98.0,0,0.262,0.262,0.787,62,True
-Jump scare,susto de jogo,9.691,False,2.0,80.0,0,0.284,0.284,0.787,62,True
-Morcego,,12.746,False,2.0,100.0,0,0.274,0.274,0.787,62,True
-Pique-esconde,"gritar 1, 2, 3 | bate-cara",11.786,False,2.0,98.0,0,0.272,0.272,0.787,62,True
-Reencontro,volta pra casa | aeroporto,12.343,False,2.0,100.0,0,0.264,0.264,0.787,62,True
-Sargento,militar | treinamento militar,11.753,False,2.0,98.0,0,0.27,0.27,0.787,62,True
-Tirolesa,,13.955,False,2.0,95.0,0,0.282,0.282,0.787,62,True
-Tubarão,,11.795,False,2.0,100.0,0,0.259,0.259,0.787,62,True
-Falar ao telefone com ligação ruim,ligação ruim | alô?,7.779,False,1.0,100.0,0,0.293,0.293,0.794,63,True
-Fim da prova,fim das aulas | último dia de aula,8.314,False,1.0,100.0,0,0.303,0.303,0.794,63,True
-Fim de um ciclo,formatura,7.442,False,1.0,100.0,0,0.291,0.291,0.794,63,True
-Ganhar um prêmio,prêmio,7.794,False,1.0,100.0,0,0.296,0.296,0.794,63,True
-Gol aos 45 do segundo tempo,gol no último minuto,7.747,False,1.0,98.0,0,0.308,0.308,0.794,63,True
-Gritar com a TV,xingar a TV,7.94,False,1.0,100.0,0,0.299,0.299,0.794,63,True
-Guerra de água,pistola de água | balão de água,8.385,False,1.0,100.0,0,0.307,0.307,0.794,63,True
-Jogo do Corinthians,Flamengo | Palmeiras,7.796,False,1.0,100.0,0,0.296,0.296,0.794,63,True
-O Grito,O Grito (Munch) | quadro O Grito,11.085,False,2.0,80.0,0,0.284,0.284,0.794,63,True
-Promoção no trabalho,,7.043,False,1.0,100.0,0,0.288,0.288,0.794,63,True
-Sexta-feira,,8.091,False,1.0,100.0,0,0.301,0.301,0.794,63,True
-Série,final de série | spoiler,8.365,False,1.0,100.0,0,0.305,0.305,0.794,63,True
-Ver um famoso na rua,celebridade,7.031,False,1.0,100.0,0,0.288,0.288,0.794,63,True
-Brigar com o namorado,DR,8.844,False,1.0,100.0,0,0.322,0.322,0.8,64,True
-Café quente,sopa quente | língua queimada,9.291,False,1.0,100.0,0,0.336,0.336,0.8,64,True
-Casamento,buquê | jogar o buquê,8.983,False,1.0,100.0,0,0.326,0.326,0.8,64,True
-Festa junina,quadrilha | olha a cobra,8.591,False,1.0,100.0,0,0.31,0.31,0.8,64,True
-Ganhar no bingo,,8.746,False,1.0,100.0,0,0.316,0.316,0.8,64,True
-Gritar o nome de alguém,nome,9.101,False,1.0,100.0,0,0.33,0.33,0.8,64,True
-Perder o celular,,9.086,False,1.0,100.0,0,0.33,0.33,0.8,64,True
-Polícia,chamar a polícia,8.741,False,1.0,100.0,0,0.316,0.316,0.8,64,True
-Prazo,entrega de trabalho | deadline,8.835,False,1.0,100.0,0,0.32,0.32,0.8,64,True
-Professor,professor bravo,8.722,False,1.0,100.0,0,0.312,0.312,0.8,64,True
-Promoção,liquidação | Black Friday,9.158,False,1.0,100.0,0,0.333,0.333,0.8,64,True
-Reality show,,8.93,False,1.0,100.0,0,0.324,0.324,0.8,64,True
-Vitória pessoal,conquista,8.737,False,1.0,100.0,0,0.316,0.316,0.8,64,True
-Água fria do mar,água do mar gelada,9.009,False,1.0,100.0,0,0.328,0.328,0.8,64,True
-Acordar alguém,acorda!,9.559,False,1.0,100.0,0,0.346,0.346,0.806,65,True
-Ataque,atacar,9.703,False,1.0,100.0,0,0.352,0.352,0.806,65,True
-Bater a cabeça,cabeçada,9.451,False,1.0,100.0,0,0.343,0.343,0.806,65,True
-Chamar o ônibus,parar o ônibus,9.684,False,1.0,100.0,0,0.351,0.351,0.806,65,True
-Chefe,patrão | reunião,9.632,False,1.0,100.0,0,0.349,0.349,0.806,65,True
-Gol perdido,perder gol feito,9.852,False,1.0,100.0,0,0.361,0.361,0.806,65,True
-Gritar no travesseiro,travesseiro,9.427,False,1.0,100.0,0,0.341,0.341,0.806,65,True
-Obra do vizinho,furadeira,9.804,False,1.0,100.0,0,0.358,0.358,0.806,65,True
-Onda grande,caldo | tomar um caldo,8.651,False,1.0,98.0,0,0.339,0.339,0.806,65,True
-Paixão,amor,9.751,False,1.0,100.0,0,0.355,0.355,0.806,65,True
-Salário,dia do pagamento,9.728,False,1.0,100.0,0,0.355,0.355,0.806,65,True
-Sangue,ver sangue,9.274,False,1.0,100.0,0,0.336,0.336,0.806,65,True
-Água-viva,queimadura de água-viva,8.855,False,1.0,98.0,0,0.346,0.346,0.806,65,True
-Areia quente,pé queimando | chão quente,9.897,False,1.0,100.0,0,0.364,0.364,0.812,66,True
-Cabelo cortado errado,corte de cabelo errado,10.2,False,1.0,100.0,0,0.374,0.374,0.812,66,True
-Chegar atrasado,atrasado,10.135,False,1.0,100.0,0,0.372,0.372,0.812,66,True
-Dor de dente,,10.128,False,1.0,100.0,0,0.37,0.37,0.812,66,True
-Golpe,ser enganado | golpe do Pix,10.395,False,1.0,100.0,0,0.383,0.383,0.812,66,True
-Greve,,10.314,False,1.0,100.0,0,0.378,0.378,0.812,66,True
-Novela,final de novela,10.044,False,1.0,100.0,0,0.367,0.367,0.812,66,True
-Panela de pressão,panela apitando,10.03,False,1.0,100.0,0,0.367,0.367,0.812,66,True
-Pega-pega,tá com você,10.291,False,1.0,100.0,0,0.375,0.375,0.812,66,True
-Perder o voo,atraso | voo atrasado,9.853,False,1.0,100.0,0,0.361,0.361,0.812,66,True
-Pizza chegando,comida chegando | entregador,10.308,False,1.0,100.0,0,0.378,0.378,0.812,66,True
-Queimar a comida,comida queimada,10.454,False,1.0,100.0,0,0.387,0.387,0.812,66,True
-Torcer o pé,entorse,10.324,False,1.0,100.0,0,0.381,0.381,0.812,66,True
-Tristeza,choro,10.408,False,1.0,100.0,0,0.385,0.385,0.812,66,True
-Ansiedade,,10.502,False,1.0,100.0,0,0.39,0.39,0.819,67,True
-Anunciar,anúncio | locutor,10.702,False,1.0,100.0,0,0.395,0.395,0.819,67,True
-Chamar o garçom,garçom,11.088,False,1.0,100.0,0,0.404,0.404,0.819,67,True
-Cortar o dedo,corte | cortar com faca,10.558,False,1.0,100.0,0,0.393,0.393,0.819,67,True
-Elevador parado,ficar preso no elevador,11.006,False,1.0,100.0,0,0.402,0.402,0.819,67,True
-Esconde-esconde,achou,11.326,False,1.0,100.0,0,0.412,0.412,0.819,67,True
-Espírito,possessão | exorcismo,8.754,False,1.0,95.0,0,0.39,0.39,0.819,67,True
-Funk,baile funk,11.189,False,1.0,100.0,0,0.41,0.41,0.819,67,True
-Luta de UFC,UFC | MMA,9.121,False,1.0,95.0,0,0.397,0.397,0.819,67,True
-Monstro,monstro debaixo da cama,11.149,False,1.0,100.0,0,0.407,0.407,0.819,67,True
-Porta trancada,ficar trancado | chave perdida,10.986,False,1.0,100.0,0,0.4,0.4,0.819,67,True
-Quina da mesa,bater na quina,10.922,False,1.0,100.0,0,0.398,0.398,0.819,67,True
-Tirar o curativo,arrancar o band-aid,11.148,False,1.0,100.0,0,0.407,0.407,0.819,67,True
-Corrida de Fórmula 1,Senna | Ayrton Senna,10.04,False,1.0,95.0,0,0.437,0.437,0.825,68,True
-Demissão,ser demitido,11.372,False,1.0,100.0,0,0.416,0.416,0.825,68,True
-Elogio,ganhar presente | presente,11.817,False,1.0,100.0,0,0.439,0.439,0.825,68,True
-Exagero,drama | dramático,11.748,False,1.0,100.0,0,0.434,0.434,0.825,68,True
-Halloween,Dia das Bruxas,11.701,False,1.0,100.0,0,0.431,0.431,0.825,68,True
-Leite derramando,leite fervendo,11.476,False,1.0,100.0,0,0.426,0.426,0.825,68,True
-Luto,perder alguém,11.599,False,1.0,100.0,0,0.429,0.429,0.825,68,True
-Mosquito,pernilongo,11.748,False,1.0,100.0,0,0.434,0.434,0.825,68,True
-Olimpíadas,medalha de ouro,11.41,False,1.0,100.0,0,0.42,0.42,0.825,68,True
-Puxão de cabelo,puxar o cabelo,11.457,False,1.0,100.0,0,0.426,0.426,0.825,68,True
-Roda-gigante (medo de altura),medo de altura,9.664,False,1.0,95.0,0,0.42,0.42,0.825,68,True
-Sala bagunçada,bagunça,11.44,False,1.0,100.0,0,0.423,0.423,0.825,68,True
-Tatuagem,,11.363,False,1.0,100.0,0,0.414,0.414,0.825,68,True
-Táxi,chamar táxi,11.405,False,1.0,100.0,0,0.42,0.42,0.825,68,True
-Animador de festa,animador de torcida | cheerleader,10.747,False,1.0,95.0,0,0.455,0.455,0.831,69,True
-Avó surda,falar com a avó | idoso surdo,11.976,False,1.0,98.0,0,0.459,0.459,0.831,69,True
-Barata voadora,barata que voa,12.227,False,1.0,100.0,0,0.448,0.448,0.831,69,True
-Fogos de artifício,rojão | bomba,12.093,False,1.0,100.0,0,0.445,0.445,0.831,69,True
-Impedimento,VAR,12.015,False,1.0,98.0,0,0.462,0.462,0.831,69,True
-Jacaré,,12.314,False,1.0,100.0,0,0.452,0.452,0.831,69,True
-Leilão,lance de leilão,11.097,False,1.0,95.0,0,0.465,0.465,0.831,69,True
-Mordida,morder a língua,12.676,False,1.0,100.0,0,0.459,0.459,0.831,69,True
-Nojo,,12.087,False,1.0,100.0,0,0.445,0.445,0.831,69,True
-Recreio,intervalo,11.845,False,1.0,100.0,0,0.441,0.441,0.831,69,True
-Reprovação,tirar zero | bomba na escola,12.839,False,1.0,100.0,0,0.465,0.465,0.831,69,True
-Sertanejo,modão | gritar no modão,11.592,False,1.0,98.0,0,0.45,0.45,0.831,69,True
-Terremoto,,11.883,False,1.0,100.0,0,0.443,0.443,0.831,69,True
-Zumbi,apocalipse zumbi,11.795,False,1.0,98.0,0,0.455,0.455,0.831,69,True
-7 a 1,sete a um,6.975,False,1.0,100.0,0,0.477,0.477,0.837,70,True
-Beliscão,,15.444,False,1.0,100.0,0,0.49,0.49,0.837,70,True
-Enchente,alagamento,12.858,False,1.0,100.0,0,0.467,0.467,0.837,70,True
-Escorregador,tobogã | toboágua,14.11,False,1.0,100.0,0,0.483,0.483,0.837,70,True
-Escorregar,chão molhado,13.559,False,1.0,100.0,0,0.473,0.473,0.837,70,True
-Freada,quase bater,14.591,False,1.0,100.0,0,0.487,0.487,0.837,70,True
-Grito do Goku,Kamehameha | Dragon Ball,11.085,False,1.0,90.0,0,0.485,0.485,0.837,70,True
-K-pop,show de K-pop | BTS,10.123,False,1.0,90.0,0,0.475,0.475,0.837,70,True
-Orgasmo,,12.013,False,1.0,95.0,0,0.481,0.481,0.837,70,True
-Plot twist,reviravolta,13.52,False,1.0,95.0,0,0.489,0.489,0.837,70,True
-Sobrancelha,tirar sobrancelha | pinça,12.479,False,1.0,98.0,0,0.471,0.471,0.837,70,True
-Turbulência,avião,12.973,False,1.0,100.0,0,0.469,0.469,0.837,70,True
-Vulto,sombra,13.019,False,1.0,98.0,0,0.479,0.479,0.837,70,True
-Avisar que chegou,cheguei,8.025,False,0.5,100.0,0,0.5,0.5,0.843,71,True
-Barata na comida,bicho na comida,8.517,False,0.5,100.0,0,0.508,0.508,0.843,71,True
-Erro no trabalho,erro,7.092,False,0.5,100.0,0,0.496,0.496,0.843,71,True
-Esquecer algo,esquecimento,9.042,False,0.5,100.0,0,0.515,0.515,0.843,71,True
-Gol contra,,8.599,False,0.5,100.0,0,0.51,0.51,0.843,71,True
-Lacraia,centopeia,15.098,False,1.0,98.0,0,0.492,0.492,0.843,71,True
-Marco Polo,,10.307,False,1.0,70.0,0,0.494,0.494,0.843,71,True
-Natal,presente de Natal,8.775,False,0.5,100.0,0,0.512,0.512,0.843,71,True
-Nota boa,tirar 10,8.209,False,0.5,100.0,0,0.502,0.502,0.843,71,True
-Pai,pai bravo,8.323,False,0.5,100.0,0,0.504,0.504,0.843,71,True
-Resultado do Enem,Enem,8.436,False,0.5,100.0,0,0.506,0.506,0.843,71,True
-Saída do hospital,alta do hospital | cura,9.348,False,0.5,100.0,0,0.518,0.518,0.843,71,True
-Ver o preço,preço absurdo,7.594,False,0.5,100.0,0,0.498,0.498,0.843,71,True
-Água quente,chuveiro pelando,8.765,False,0.5,100.0,0,0.512,0.512,0.843,71,True
-Amigo secreto,amigo oculto,9.907,False,0.5,100.0,0,0.54,0.54,0.849,72,True
-Beijo,primeiro beijo,9.606,False,0.5,100.0,0,0.531,0.531,0.849,72,True
-Corrida,chegada na corrida,9.74,False,0.5,100.0,0,0.536,0.536,0.849,72,True
-Esquecer a senha,,9.893,False,0.5,100.0,0,0.54,0.54,0.849,72,True
-Esquecer o feijão no fogo,,8.759,False,0.5,98.0,0,0.525,0.525,0.849,72,True
-Ganhar a aposta,aposta | bet,9.898,False,0.5,100.0,0,0.54,0.54,0.849,72,True
-Gato no telhado,briga de gato,8.852,False,0.5,98.0,0,0.529,0.529,0.849,72,True
-Perder a carteira,perder documento,9.646,False,0.5,100.0,0,0.533,0.533,0.849,72,True
-Pisar em algo nojento,pisar em cocô | cocô de cachorro,9.38,False,0.5,100.0,0,0.521,0.521,0.849,72,True
-Porta batendo,,9.914,False,0.5,100.0,0,0.544,0.544,0.849,72,True
-Queda,queda livre,9.672,False,0.5,100.0,0,0.534,0.534,0.849,72,True
-Roupa rasgada,calça rasgada,9.413,False,0.5,100.0,0,0.523,0.523,0.849,72,True
-Sinal ruim,sem sinal,9.496,False,0.5,100.0,0,0.527,0.527,0.849,72,True
-Ver a fatura,fatura do cartão,9.364,False,0.5,100.0,0,0.518,0.518,0.849,72,True
-Balanço,,10.514,False,0.5,100.0,0,0.563,0.563,0.854,73,True
-Carro quebrado,pneu furado,10.031,False,0.5,100.0,0,0.548,0.548,0.854,73,True
-Clássico,Fla-Flu | Gre-Nal,10.049,False,0.5,98.0,0,0.567,0.567,0.854,73,True
-Dança das cadeiras,,10.117,False,0.5,98.0,0,0.569,0.569,0.854,73,True
-Debate,debate político,9.794,False,0.5,98.0,0,0.559,0.559,0.854,73,True
-Expulsar alguém,sai daqui,10.488,False,0.5,100.0,0,0.559,0.559,0.854,73,True
-Gritar na janela,janelaço | panelaço,8.662,False,0.5,95.0,0,0.553,0.553,0.854,73,True
-Mandar abaixar o som,abaixa isso,10.699,False,0.5,100.0,0,0.565,0.565,0.854,73,True
-Montanha,topo da montanha,10.465,False,0.5,100.0,0,0.556,0.556,0.854,73,True
-Multa,levar multa,10.482,False,0.5,100.0,0,0.559,0.559,0.854,73,True
-Saudade,,9.995,False,0.5,100.0,0,0.546,0.546,0.854,73,True
-Tirar o dente,,10.188,False,0.5,100.0,0,0.55,0.55,0.854,73,True
-Tiro,tiroteio,10.419,False,0.5,100.0,0,0.553,0.553,0.854,73,True
-Batata quente,,10.236,False,0.5,98.0,0,0.572,0.572,0.86,74,True
-Bruxa,,11.79,False,0.5,100.0,0,0.596,0.596,0.86,74,True
-Escada,cair da escada,11.045,False,0.5,100.0,0,0.577,0.577,0.86,74,True
-Filhote,ganhar um cachorro,11.42,False,0.5,100.0,0,0.581,0.581,0.86,74,True
-Gelo nas costas,gelo no pescoço,9.178,False,0.5,95.0,0,0.572,0.572,0.86,74,True
-Grito de vendedor,olha a pamonha,10.731,False,0.5,98.0,0,0.581,0.581,0.86,74,True
-Guerra de travesseiro,,10.471,False,0.5,98.0,0,0.579,0.579,0.86,74,True
-Massagem forte,quiropraxia,9.804,False,0.5,95.0,0,0.589,0.589,0.86,74,True
-Osso quebrado,fratura | quebrar o braço,11.547,False,0.5,100.0,0,0.589,0.589,0.86,74,True
-Picada,picada de inseto,11.717,False,0.5,100.0,0,0.594,0.594,0.86,74,True
-Pix errado,transferência errada,9.771,False,0.5,95.0,0,0.586,0.586,0.86,74,True
-Torcida organizada,,10.298,False,0.5,98.0,0,0.575,0.575,0.86,74,True
-Unha quebrada,,11.599,False,0.5,100.0,0,0.592,0.592,0.86,74,True
-Vôlei,ponto no vôlei,11.457,False,0.5,100.0,0,0.584,0.584,0.86,74,True
-Axé,Ivete Sangalo | tira o pé do chão,12.15,False,0.5,98.0,0,0.613,0.613,0.866,75,True
-Bilhete premiado,raspadinha,11.523,False,0.5,98.0,0,0.605,0.605,0.866,75,True
-Boxe,nocaute,12.047,False,0.5,98.0,0,0.611,0.611,0.866,75,True
-Formiga,formiga no pé,12.162,False,0.5,100.0,0,0.603,0.603,0.866,75,True
-Furacão,tornado,11.91,False,0.5,100.0,0,0.6,0.6,0.866,75,True
-Grito de carnaval,abadá | trio elétrico,10.367,False,0.5,95.0,0,0.602,0.602,0.866,75,True
-Machucado,ferida,12.715,False,0.5,100.0,0,0.609,0.609,0.866,75,True
-Minhoca,,13.281,False,0.5,100.0,0,0.619,0.619,0.866,75,True
-Pula-pula,cama elástica,11.878,False,0.5,100.0,0,0.598,0.598,0.866,75,True
-Queimada,ser queimado,12.324,False,0.5,98.0,0,0.617,0.617,0.866,75,True
-Show do Justin Bieber,show dos Beatles | beatlemania,8.93,False,0.5,90.0,0,0.607,0.607,0.866,75,True
-Sirene,ambulância,13.423,False,0.5,100.0,0,0.621,0.621,0.866,75,True
-Unha encravada,arrancar a unha,11.214,False,0.5,95.0,0,0.615,0.615,0.866,75,True
-Ambulante,camelô | rapa,12.869,False,0.5,98.0,0,0.623,0.623,0.872,76,True
-Avisar que está saindo,tchau | já vou,8.043,False,0.3,100.0,0,0.646,0.646,0.872,76,True
-Banho de balde de gelo,desafio do balde de gelo | ice bucket challenge,10.65,False,0.5,85.0,0,0.648,0.648,0.872,76,True
-Buraco na rua,,7.995,False,0.3,100.0,0,0.642,0.642,0.872,76,True
-Cabelo no prato,cabelo na comida,8.034,False,0.3,100.0,0,0.644,0.644,0.872,76,True
-Carro novo,,7.596,False,0.3,100.0,0,0.638,0.638,0.872,76,True
-Casa nova,chaves da casa,7.294,False,0.3,100.0,0,0.634,0.634,0.872,76,True
-Fim do mundo,apocalipse,7.487,False,0.3,100.0,0,0.636,0.636,0.872,76,True
-"Gritar ""eu"" na chamada",chamada,7.918,False,0.3,100.0,0,0.64,0.64,0.872,76,True
-It,Pennywise | palhaço It,10.231,False,0.5,90.0,0,0.626,0.626,0.872,76,True
-Megafone,microfone,14.294,False,0.5,100.0,0,0.63,0.63,0.872,76,True
-Meme,grito de meme,12.359,False,0.5,95.0,0,0.628,0.628,0.872,76,True
-Penta,Copa de 2002,13.627,False,0.5,98.0,0,0.632,0.632,0.872,76,True
-Tetra,Copa de 94,13.005,False,0.5,98.0,0,0.625,0.625,0.872,76,True
-Apresentação,falar em público,8.871,False,0.3,100.0,0,0.661,0.661,0.877,77,True
-Avante,carga | ao ataque,12.628,False,0.5,90.0,0,0.656,0.656,0.877,77,True
-Bater o carro,ralar o carro,9.322,False,0.3,100.0,0,0.669,0.669,0.877,77,True
-Chucky,boneco assassino,11.492,False,0.5,95.0,0,0.652,0.652,0.877,77,True
-Cobra no quintal,,8.868,False,0.3,98.0,0,0.67,0.67,0.877,77,True
-Elevador do terror,Big Tower | queda livre (brinquedo),10.805,False,0.5,85.0,0,0.652,0.652,0.877,77,True
-Filme de ação,,8.216,False,0.3,100.0,0,0.648,0.648,0.877,77,True
-Ganhar um carro,ganhar no Domingão,7.398,False,0.3,95.0,0,0.665,0.665,0.877,77,True
-Hexa,é hexa,13.445,False,0.5,90.0,0,0.667,0.667,0.877,77,True
-Mancha na roupa,caiu molho na roupa,8.687,False,0.3,100.0,0,0.659,0.659,0.877,77,True
-Rato na cozinha,,8.456,False,0.3,100.0,0,0.656,0.656,0.877,77,True
-Ver o saldo,saldo negativo,9.084,False,0.3,100.0,0,0.663,0.663,0.877,77,True
-Água da piscina gelada,,9.74,False,0.3,100.0,0,0.673,0.673,0.877,77,True
-Bicicleta sem freio,,9.296,False,0.3,98.0,0,0.691,0.691,0.883,78,True
-Bomba de São João,traque,8.141,False,0.3,95.0,0,0.679,0.679,0.883,78,True
-Cabo de guerra,,9.068,False,0.3,98.0,0,0.673,0.673,0.883,78,True
-Café acabando,sem café,10.304,False,0.3,100.0,0,0.699,0.699,0.883,78,True
-Carteira de motorista,passar na autoescola,10.212,False,0.3,100.0,0,0.697,0.697,0.883,78,True
-Chamar o cachorro,,10.071,False,0.3,100.0,0,0.693,0.693,0.883,78,True
-Diagnóstico,exame,10.11,False,0.3,100.0,0,0.695,0.695,0.883,78,True
-Ganhar no jogo do bicho,jogo do bicho,8.156,False,0.3,95.0,0,0.679,0.679,0.883,78,True
-Gasolina acabou,ficar sem gasolina,9.905,False,0.3,100.0,0,0.683,0.683,0.883,78,True
-Gritar no carro,carro fechado,8.192,False,0.3,95.0,0,0.686,0.686,0.883,78,True
-Imposto,imposto de renda,9.989,False,0.3,100.0,0,0.691,0.691,0.883,78,True
-Pagamento caindo,Pix recebido,9.97,False,0.3,100.0,0,0.688,0.688,0.883,78,True
-Perder a aposta,,9.919,False,0.3,100.0,0,0.683,0.683,0.883,78,True
-Torcer para o filho,jogo do filho,8.049,False,0.3,95.0,0,0.676,0.676,0.883,78,True
-Caco de vidro,pisar em vidro,11.364,False,0.3,100.0,0,0.718,0.718,0.889,79,True
-Chuveiro dando choque,,10.312,False,0.3,98.0,0,0.708,0.708,0.889,79,True
-Desastre,catástrofe,11.467,False,0.3,100.0,0,0.722,0.722,0.889,79,True
-Educar o cachorro,não!,10.875,False,0.3,100.0,0,0.703,0.703,0.889,79,True
-Fogão,gás vazando,11.127,False,0.3,100.0,0,0.713,0.713,0.889,79,True
-Galo cantando,,11.08,False,0.3,100.0,0,0.711,0.711,0.889,79,True
-Geladeira vazia,acabou a comida,11.026,False,0.3,100.0,0,0.708,0.708,0.889,79,True
-Guerra de bola de neve,bola de neve,9.539,False,0.3,95.0,0,0.716,0.716,0.889,79,True
-Leão,rugido,10.437,False,0.3,100.0,0,0.701,0.701,0.889,79,True
-Luz apagando,blecaute,10.905,False,0.3,100.0,0,0.705,0.705,0.889,79,True
-Macaco,macaco gritando,11.568,False,0.3,100.0,0,0.726,0.726,0.889,79,True
-Mordida de cachorro,,11.472,False,0.3,100.0,0,0.722,0.722,0.889,79,True
-Sorvete,queda do sorvete | sorvete caindo,11.205,False,0.3,100.0,0,0.715,0.715,0.889,79,True
-Vender peixe,gritar na feira,9.733,False,0.3,95.0,0,0.722,0.722,0.889,79,True
-Boi bravo,touro | vaca brava,11.404,False,0.3,98.0,0,0.739,0.739,0.894,80,True
-Esparta,Isto é Esparta | 300,8.204,False,0.5,85.0,0,0.735,0.735,0.894,80,True
-Espinho,ouriço,12.382,False,0.3,100.0,0,0.747,0.747,0.894,80,True
-Fisioterapia,,11.35,False,0.3,98.0,0,0.738,0.738,0.894,80,True
-Furar a orelha,brinco,12.119,False,0.3,100.0,0,0.741,0.741,0.894,80,True
-Ghostface,Pânico (filme) | Scream,9.558,False,0.5,85.0,0,0.735,0.735,0.894,80,True
-Gás,olha o gás | caminhão do gás,9.94,False,0.3,95.0,0,0.732,0.732,0.894,80,True
-Ladeira,descer a ladeira,12.443,False,0.3,100.0,0,0.75,0.75,0.894,80,True
-Navio afundando,naufrágio,12.211,False,0.3,100.0,0,0.743,0.743,0.894,80,True
-Pregão,bolsa de valores,11.182,False,0.5,75.0,0,0.745,0.745,0.894,80,True
-Teia de aranha,passar na teia,11.58,False,0.3,100.0,0,0.728,0.728,0.894,80,True
-Túnel,,11.617,False,0.3,100.0,0,0.73,0.73,0.894,80,True
-Velório,enterro,12.447,False,0.3,100.0,0,0.75,0.75,0.894,80,True
-Alienígena,ET | disco voador,12.471,False,0.3,100.0,0,0.753,0.753,0.9,81,True
-Arara,papagaio,12.881,False,0.3,100.0,0,0.762,0.762,0.9,81,True
-Cabra gritando,bode,11.888,False,0.3,95.0,0,0.77,0.77,0.9,81,True
-Cocô de passarinho,cagada de pombo,12.503,False,0.3,100.0,0,0.755,0.755,0.9,81,True
-Esqueceram de Mim,Kevin,10.173,False,0.3,90.0,0,0.772,0.772,0.9,81,True
-Lobisomem,,12.998,False,0.3,100.0,0,0.765,0.765,0.9,81,True
-Mariposa,traça,13.743,False,0.3,100.0,0,0.774,0.774,0.9,81,True
-Motoqueiro,buzina,12.843,False,0.3,100.0,0,0.761,0.761,0.9,81,True
-Piercing,,12.693,False,0.3,98.0,0,0.768,0.768,0.9,81,True
-Polícia chegando,sujou,9.313,False,0.3,90.0,0,0.759,0.759,0.9,81,True
-Pombo,pombo voando na cara,12.983,False,0.3,100.0,0,0.765,0.765,0.9,81,True
-Prego,pisar em prego,12.603,False,0.3,100.0,0,0.757,0.757,0.9,81,True
-Star Wars,Eu sou seu pai,10.312,False,0.3,90.0,0,0.776,0.776,0.9,81,True
-Surdez,falar com surdo,13.156,False,0.3,98.0,0,0.778,0.778,0.9,81,True
-Anime,grito de anime,10.861,False,0.3,85.0,0,0.799,0.799,0.906,82,True
-Barco viking,barco pirata (brinquedo),11.846,False,0.3,90.0,0,0.791,0.791,0.906,82,True
-Caverna,,11.725,False,0.2,100.0,0,0.805,0.805,0.906,82,True
-Discoteca,balada barulhenta,12.859,False,0.3,95.0,0,0.784,0.784,0.906,82,True
-Engasgo,,15.257,False,0.3,100.0,0,0.787,0.787,0.906,82,True
-Gabarito,,11.638,False,0.2,100.0,0,0.803,0.803,0.906,82,True
-Game of Thrones,Casamento Vermelho,9.98,False,0.3,85.0,0,0.785,0.785,0.906,82,True
-Grito de rock,Freddie Mercury,10.222,False,0.3,85.0,0,0.793,0.793,0.906,82,True
-Hulk,esmaga,13.958,False,0.3,95.0,0,0.801,0.801,0.906,82,True
-Neymar,Ronaldo,20.0,True,0.3,100.0,0,0.782,0.782,0.906,82,True
-Pamonha,pamonhas de Piracicaba,14.09,False,0.3,95.0,0,0.795,0.795,0.906,82,True
-Porco,porco gritando,11.258,False,0.2,100.0,0,0.797,0.797,0.906,82,True
-Tênis (jogo),grunhido do tenista,9.028,False,0.3,85.0,0,0.78,0.78,0.906,82,True
-Ópera,soprano,11.827,False,0.3,90.0,0,0.789,0.789,0.906,82,True
-Cachorro uivando,lobo uivando,12.834,False,0.2,100.0,0,0.81,0.81,0.911,83,True
-Coisa nojenta,,7.736,False,0.1,100.0,0,0.824,0.824,0.911,83,True
-Freddy Krueger,,20.0,True,0.3,90.0,0,0.817,0.817,0.911,83,True
-Jason,Sexta-feira 13,8.091,False,0.3,90.0,0,0.817,0.817,0.911,83,True
-Morcego em casa,,8.06,False,0.1,95.0,0,0.83,0.83,0.911,83,True
-Paintball,levar tiro de paintball,9.642,False,0.3,90.0,0,0.817,0.817,0.911,83,True
-Rato no restaurante,Ratatouille,8.558,False,0.1,98.0,0,0.828,0.828,0.911,83,True
-Saideira,,14.805,False,0.3,95.0,0,0.807,0.807,0.911,83,True
-Saudade de casa,,8.556,False,0.1,100.0,0,0.826,0.826,0.911,83,True
-Silvio Santos,ma oe,8.596,False,0.2,90.0,0,0.808,0.808,0.911,83,True
-Vingadores,Ultimato,13.519,False,0.3,90.0,0,0.817,0.817,0.911,83,True
-Vômito,,12.935,False,0.2,100.0,0,0.812,0.812,0.911,83,True
-Água no ouvido,,7.619,False,0.1,100.0,0,0.822,0.822,0.911,83,True
-Abelha no carro,inseto no carro,8.502,False,0.1,95.0,0,0.837,0.837,0.917,84,True
-Barco,enjoo,10.418,False,0.1,100.0,0,0.844,0.844,0.917,84,True
-Bicho na cama,,8.394,False,0.1,95.0,0,0.835,0.835,0.917,84,True
-Cavalo,coice,10.395,False,0.1,100.0,0,0.844,0.844,0.917,84,True
-Cena de beijo,,9.605,False,0.1,98.0,0,0.839,0.839,0.917,84,True
-Chocolate,doce,9.839,False,0.1,100.0,0,0.831,0.831,0.917,84,True
-Gritar no chuveiro,,9.112,False,0.1,95.0,0,0.854,0.854,0.917,84,True
-Mosca na sopa,,9.17,False,0.1,98.0,0,0.833,0.833,0.917,84,True
-Mosca no ouvido,bicho no ouvido,9.09,False,0.1,95.0,0,0.852,0.852,0.917,84,True
-Papai Noel,,10.787,False,0.1,100.0,0,0.851,0.851,0.917,84,True
-Páscoa,ovo de Páscoa,10.378,False,0.1,100.0,0,0.841,0.841,0.917,84,True
-Samara,O Chamado,16.359,False,0.3,85.0,0,0.856,0.856,0.917,84,True
-Titanic,Jack,20.0,True,0.2,95.0,0,0.847,0.847,0.917,84,True
-Último rep,treino pesado,10.862,False,0.3,70.0,0,0.849,0.849,0.917,84,True
-Avião decolando,,12.584,False,0.1,100.0,0,0.875,0.875,0.922,85,True
-Bob Esponja,Lula Molusco,11.953,False,0.1,98.0,0,0.877,0.877,0.922,85,True
-Dedo no ventilador,,9.026,False,0.1,90.0,0,0.874,0.874,0.922,85,True
-Exame de toque,ginecologista,9.744,False,0.1,95.0,0,0.866,0.866,0.922,85,True
-Five Nights at Freddy's,FNAF,8.611,False,0.3,60.0,0,0.87,0.87,0.922,85,True
-Gol de placa,,9.644,False,0.1,95.0,0,0.864,0.864,0.922,85,True
-Hadouken,Street Fighter,20.0,True,0.3,75.0,0,0.881,0.881,0.922,85,True
-Invocação do Mal,,10.668,False,0.2,80.0,0,0.868,0.868,0.922,85,True
-Pedestre,atravessar a rua,12.669,False,0.1,100.0,0,0.879,0.879,0.922,85,True
-Pelé,,11.987,False,0.1,100.0,0,0.872,0.872,0.922,85,True
-Pica-Pau,risada do Pica-Pau,10.611,False,0.1,98.0,0,0.86,0.86,0.922,85,True
-Pular corda,,11.194,False,0.1,100.0,0,0.858,0.858,0.922,85,True
-Visto aprovado,passaporte,9.606,False,0.1,95.0,0,0.862,0.862,0.922,85,True
-Besouro,,13.402,False,0.1,100.0,0,0.885,0.885,0.927,86,True
-Cabra-cega,,12.013,False,0.1,95.0,0,0.889,0.889,0.927,86,True
-Coral,ensaio,11.117,False,0.1,90.0,0,0.908,0.908,0.927,86,True
-Desmaio,,13.86,False,0.1,100.0,0,0.894,0.894,0.927,86,True
-Faustão,ô loco meu,9.392,False,0.2,85.0,0,0.899,0.899,0.927,86,True
-Gafanhoto,,14.129,False,0.1,100.0,0,0.903,0.903,0.927,86,True
-Gorila,,13.491,False,0.1,100.0,0,0.887,0.887,0.927,86,True
-Gutural,vocal gutural,14.99,False,0.5,50.0,0,0.897,0.897,0.927,86,True
-Maquiagem borrada,,12.087,False,0.1,95.0,0,0.891,0.891,0.927,86,True
-Mofo,comida estragada,12.854,False,0.1,100.0,0,0.883,0.883,0.927,86,True
-O Exorcista,,20.0,True,0.2,85.0,0,0.899,0.899,0.927,86,True
-Ovo,carro do ovo,10.652,False,0.1,90.0,0,0.903,0.903,0.927,86,True
-Peteca,,13.857,False,0.1,100.0,0,0.894,0.894,0.927,86,True
-Scooby-Doo,Salsicha,12.855,False,0.1,95.0,0,0.906,0.906,0.927,86,True
-A Freira,,20.0,True,0.2,75.0,0,0.925,0.925,0.933,87,True
-Caranguejeira,,15.64,False,0.1,95.0,0,0.923,0.923,0.933,87,True
-Coração Valente,liberdade!,9.949,False,0.2,60.0,0,0.929,0.929,0.933,87,True
-Gambá,,14.011,False,0.1,98.0,0,0.91,0.91,0.933,87,True
-Ganso,ganso bravo,12.465,False,0.1,90.0,0,0.916,0.916,0.933,87,True
-Grito de guerra indígena,,10.361,False,0.1,80.0,0,0.921,0.921,0.933,87,True
-Grito primal,terapia do grito,12.721,False,0.5,40.0,0,0.912,0.912,0.933,87,True
-Homer Simpson,D'oh,20.0,True,0.1,90.0,0,0.931,0.931,0.933,87,True
-Pokémon,Pikachu,20.0,True,0.1,98.0,0,0.914,0.914,0.933,87,True
-Psicose,cena do chuveiro,13.288,False,0.2,70.0,0,0.927,0.927,0.933,87,True
-Rei Leão,grito do Simba,9.869,False,0.1,80.0,0,0.918,0.918,0.933,87,True
-Super Saiyajin,,8.451,False,0.1,75.0,0,0.92,0.92,0.933,87,True
-Óvni,,16.058,False,0.1,90.0,0,0.933,0.933,0.933,87,True
-Abraço apertado,,10.56,False,0.05,100.0,0,0.946,0.946,0.938,88,True
-Batizado,,11.627,False,0.05,98.0,0,0.957,0.957,0.938,88,True
-Coruja,,12.135,False,0.05,100.0,0,0.952,0.952,0.938,88,True
-Dia das Crianças,,7.334,False,0.05,100.0,0,0.943,0.943,0.938,88,True
-Galinha,galinha bicando,11.039,False,0.05,100.0,0,0.949,0.949,0.938,88,True
-Grito da Xuxa,Xuxa,11.085,False,0.1,50.0,0,0.939,0.939,0.938,88,True
-Grito de cabra (meme),,11.828,False,0.1,50.0,0,0.941,0.941,0.938,88,True
-Kamikaze (brinquedo),,12.778,False,0.1,60.0,0,0.935,0.935,0.938,88,True
-King Kong,,10.7,False,0.05,95.0,0,0.96,0.96,0.938,88,True
-Louva-a-deus,,10.471,False,0.05,95.0,0,0.954,0.954,0.938,88,True
-Pipoca,pipoqueiro,11.637,False,0.05,98.0,0,0.957,0.957,0.938,88,True
-Ronaldinho Gaúcho,,11.029,False,0.05,100.0,0,0.949,0.949,0.938,88,True
-Tom e Jerry,,9.578,False,0.05,98.0,0,0.944,0.944,0.938,88,True
-Viking,berserker,13.274,False,0.1,60.0,0,0.937,0.937,0.938,88,True
-Carrapato,,13.878,False,0.05,100.0,0,0.971,0.971,0.943,89,True
-Convulsão,,13.684,False,0.05,98.0,0,0.973,0.973,0.943,89,True
-Gaivota,,13.143,False,0.05,95.0,0,0.979,0.979,0.943,89,True
-Godzilla,,20.0,True,0.05,90.0,0,0.987,0.987,0.943,89,True
-Grilo,grilo cantando,12.969,False,0.05,100.0,0,0.963,0.963,0.943,89,True
-Grito de alegria no aeroporto,,8.751,False,0.01,90.0,0,0.985,0.985,0.943,89,True
-Kart,,12.287,False,0.05,98.0,0,0.963,0.963,0.943,89,True
-Lança-perfume,,10.286,False,0.05,80.0,0,0.983,0.983,0.943,89,True
-Pavão,grito do pavão,12.871,False,0.05,95.0,0,0.977,0.977,0.943,89,True
-Piolho,,13.775,False,0.05,100.0,0,0.969,0.969,0.943,89,True
-Pulga,,13.375,False,0.05,100.0,0,0.967,0.967,0.943,89,True
-Rodízio,comida liberada,12.498,False,0.05,98.0,0,0.966,0.966,0.943,89,True
-Viúva-negra,,10.938,False,0.05,90.0,0,0.975,0.975,0.943,89,True
-Xícara maluca,,11.471,False,0.05,85.0,0,0.981,0.981,0.943,89,True
-Ash,Eu escolho você,8.237,False,0.05,85.0,0,0.989,0.989,0.949,90,True
-Bugio,guariba,14.561,False,0.05,60.0,0,0.996,0.996,0.949,90,True
-Chewbacca,,20.0,True,0.02,80.0,0,0.992,0.992,0.949,90,True
-Gralha,,14.17,False,0.02,70.0,0,0.994,0.994,0.949,90,True
-Raposa (grito),,11.551,False,0.02,70.0,0,0.99,0.99,0.949,90,True
-Rei do Camarote,grito do Gugu,10.858,False,0.05,40.0,0,0.998,0.998,0.949,90,True
+Susto,levar um susto | tomar susto,11.586,False,120.0,100.0,0,0.001,0.001,0.283,8,True
+Barata,ver uma barata | barata voando,10.961,False,90.0,100.0,0,0.002,0.002,0.3,9,True
+Dor,sentir dor,9.079,False,50.0,100.0,0,0.003,0.003,0.316,10,True
+Medo,,8.862,False,40.0,100.0,0,0.004,0.004,0.316,10,True
+Raiva,ódio | estar com raiva,10.609,False,45.0,100.0,0,0.003,0.003,0.316,10,True
+Topada,topada no dedinho | bater o dedinho | dedinho na quina,15.776,False,40.0,100.0,0,0.005,0.005,0.332,11,True
+Filme de terror,terror,9.295,False,30.0,100.0,0,0.007,0.007,0.346,12,True
+Montanha-russa,,10.877,False,35.0,100.0,0,0.006,0.006,0.346,12,True
+Show,show de música | show da banda favorita,8.93,False,25.0,100.0,0,0.008,0.008,0.346,12,True
+Socorro,pedir socorro | pedir ajuda,10.624,False,25.0,100.0,0,0.009,0.009,0.361,13,True
+Ganhar na loteria,Mega-Sena | ganhar na Mega,8.802,False,20.0,100.0,0,0.01,0.01,0.374,14,True
+Rato,ver um rato,11.364,False,20.0,100.0,0,0.01,0.01,0.374,14,True
+Título,ser campeão | título do time,8.822,False,15.0,100.0,0,0.011,0.011,0.374,14,True
+Vitória,ganhar | vencer,9.014,False,15.0,100.0,0,0.012,0.012,0.387,15,True
+Alegria,felicidade,9.267,False,15.0,100.0,0,0.013,0.013,0.424,18,True
+Surpresa,festa surpresa,9.928,False,15.0,100.0,0,0.014,0.014,0.424,18,True
+Aranha,,10.957,False,15.0,100.0,0,0.016,0.016,0.436,19,True
+Briga,discussão,10.72,False,15.0,100.0,0,0.015,0.015,0.436,19,True
+Assalto,ladrão,11.055,False,15.0,100.0,0,0.016,0.016,0.447,20,True
+Cobra,,10.791,False,10.0,100.0,0,0.018,0.018,0.447,20,True
+Parto,dar à luz | trabalho de parto,10.575,False,15.0,98.0,0,0.017,0.017,0.447,20,True
+Fantasma,assombração,11.323,False,10.0,98.0,0,0.02,0.02,0.458,21,True
+Pesadelo,,11.728,False,10.0,100.0,0,0.019,0.019,0.458,21,True
+Chamar alguém longe,chamar alguém | chamar a mãe,9.126,False,8.0,100.0,0,0.021,0.021,0.469,22,True
+Água gelada,banho gelado | chuveiro gelado,9.883,False,8.0,100.0,0,0.022,0.022,0.469,22,True
+Parque de diversões,brinquedo radical,9.202,False,6.0,100.0,0,0.024,0.024,0.48,23,True
+Torcida,torcer pelo time | estádio,10.298,False,8.0,100.0,0,0.023,0.023,0.48,23,True
+Truco,gritar truco,13.974,False,8.0,98.0,0,0.023,0.023,0.48,23,True
+Choque,levar choque | choque elétrico,10.675,False,6.0,100.0,0,0.026,0.026,0.49,24,True
+Trânsito,motorista barbeiro | fechada no trânsito,9.745,False,6.0,100.0,0,0.025,0.025,0.49,24,True
+Jogo de futebol,futebol,8.217,False,5.0,100.0,0,0.029,0.029,0.5,25,True
+Queimadura,se queimar | queimar a mão,13.385,False,6.0,100.0,0,0.028,0.028,0.5,25,True
+Uno,gritar Uno,11.104,False,6.0,98.0,0,0.027,0.027,0.5,25,True
+Casa do terror,trem fantasma | casa mal-assombrada,8.85,False,5.0,98.0,0,0.03,0.03,0.51,26,True
+Passar no vestibular,passar na prova | aprovação,8.03,False,5.0,100.0,0,0.029,0.029,0.51,26,True
+Jogo de videogame,perder no videogame | rage quit,10.011,False,5.0,100.0,0,0.032,0.032,0.52,27,True
+Juiz,xingar o juiz | ladrão (juiz),9.596,False,5.0,98.0,0,0.033,0.033,0.52,27,True
+Mãe chamando,grito de mãe,9.83,False,5.0,100.0,0,0.031,0.031,0.52,27,True
+Estresse,stress,10.905,False,5.0,100.0,0,0.035,0.035,0.529,28,True
+Protesto,manifestação | passeata,10.785,False,5.0,100.0,0,0.034,0.034,0.529,28,True
+Bingo,gritar bingo,12.307,False,5.0,100.0,0,0.037,0.037,0.539,29,True
+Pênalti,pênalti perdido | pegar pênalti,12.096,False,5.0,100.0,0,0.036,0.036,0.539,29,True
+Feira,feirante | vendedor ambulante,7.468,False,4.0,100.0,0,0.038,0.038,0.548,30,True
+Notícia boa,boa notícia,8.632,False,4.0,100.0,0,0.039,0.039,0.548,30,True
+Acidente,batida de carro | acidente de carro,9.638,False,4.0,100.0,0,0.041,0.041,0.557,31,True
+Gritar com o filho,filho bagunçando | criança aprontando,8.038,False,4.0,98.0,0,0.04,0.04,0.557,31,True
+Alerta,aviso | cuidado!,10.048,False,4.0,100.0,0,0.042,0.042,0.566,32,True
+Cantar,cantar alto | soltar a voz,10.409,False,4.0,100.0,0,0.043,0.043,0.566,32,True
+Pedido de casamento,pedido de noivado,9.012,False,4.0,98.0,0,0.042,0.042,0.566,32,True
+Fã,ídolo | encontrar famoso,9.957,False,4.0,98.0,0,0.044,0.044,0.574,33,True
+Incêndio,fogo,10.791,False,4.0,100.0,0,0.045,0.045,0.574,33,True
+Computador travando,computador travou | perder o arquivo,11.226,False,4.0,100.0,0,0.047,0.047,0.583,34,True
+Desespero,,10.967,False,4.0,100.0,0,0.046,0.046,0.583,34,True
+Desabafo,desestressar | aliviar o estresse,11.987,False,4.0,100.0,0,0.049,0.049,0.592,35,True
+Injeção,vacina | agulha,11.402,False,4.0,100.0,0,0.048,0.048,0.592,35,True
+Lag,internet caindo | internet lenta,9.65,False,4.0,100.0,0,0.05,0.05,0.592,35,True
+Traição,corno | descobrir traição,11.553,False,4.0,100.0,0,0.049,0.049,0.592,35,True
+Abelha,marimbondo | vespa,12.265,False,4.0,100.0,0,0.052,0.052,0.6,36,True
+Bungee jump,,20.0,True,4.0,95.0,0,0.055,0.055,0.6,36,True
+Chá revelação,é menino | é menina,10.255,False,4.0,95.0,0,0.051,0.051,0.6,36,True
+Depilação,cera quente | depilar,12.118,False,4.0,98.0,0,0.053,0.053,0.6,36,True
+Palhaço,palhaço assustador,11.63,False,4.0,95.0,0,0.055,0.055,0.6,36,True
+Pegadinha,pegadinha do Silvio Santos | trote,12.935,False,4.0,100.0,0,0.054,0.054,0.6,36,True
+Ano Novo,virada do ano | contagem regressiva,6.956,False,3.0,100.0,0,0.056,0.056,0.608,37,True
+Carnaval,bloco de carnaval,9.65,False,3.0,100.0,0,0.062,0.062,0.608,37,True
+Criança birrenta,birra | pirraça,8.667,False,3.0,100.0,0,0.06,0.06,0.608,37,True
+Festa,balada,8.591,False,3.0,100.0,0,0.059,0.059,0.608,37,True
+Gol do Brasil na Copa,Copa do Mundo,7.652,False,3.0,100.0,0,0.057,0.057,0.608,37,True
+Notícia ruim,má notícia | tragédia,9.559,False,3.0,100.0,0,0.061,0.061,0.608,37,True
+Vender na praia,vendedor de praia | olha o picolé,7.731,False,3.0,98.0,0,0.058,0.058,0.608,37,True
+Big Brother,BBB | eliminação do BBB | paredão,10.335,False,3.0,100.0,0,0.065,0.065,0.616,38,True
+Celular caindo,celular quebrado | tela quebrada,10.082,False,3.0,100.0,0,0.062,0.062,0.616,38,True
+Lego no pé,pisar no Lego | pisar em Lego,8.646,False,3.0,95.0,0,0.066,0.066,0.616,38,True
+Pega ladrão,,10.835,False,3.0,100.0,0,0.067,0.067,0.616,38,True
+Perigo,atenção,10.265,False,3.0,100.0,0,0.064,0.064,0.616,38,True
+Wi-Fi caiu,queda de energia | acabou a luz,10.131,False,3.0,100.0,0,0.063,0.063,0.616,38,True
+Dentista,broca do dentista,11.11,False,3.0,100.0,0,0.07,0.07,0.624,39,True
+Frustração,,11.807,False,3.0,100.0,0,0.072,0.072,0.624,39,True
+Grito de guerra,grito de torcida,9.96,False,3.0,95.0,0,0.073,0.073,0.624,39,True
+Martelada no dedo,martelo no dedo,10.161,False,3.0,98.0,0,0.068,0.068,0.624,39,True
+Pânico,crise de pânico,11.11,False,3.0,100.0,0,0.07,0.07,0.624,39,True
+Sapo,,10.921,False,3.0,100.0,0,0.068,0.068,0.624,39,True
+Tempestade,trovão | raio,11.218,False,3.0,100.0,0,0.071,0.071,0.624,39,True
+Despertador,acordar cedo,12.482,False,3.0,100.0,0,0.075,0.075,0.632,40,True
+Fofoca,descobrir fofoca | babado,12.883,False,3.0,100.0,0,0.078,0.078,0.632,40,True
+Karaokê,,12.742,False,3.0,100.0,0,0.077,0.077,0.632,40,True
+Sapato pisado,pisão no pé | pisar no pé,12.527,False,3.0,100.0,0,0.076,0.076,0.632,40,True
+Ver o crush,ver o ídolo | encontrar o ídolo,10.368,False,3.0,95.0,0,0.075,0.075,0.632,40,True
+Vizinho barulhento,vizinho | festa do vizinho,12.139,False,3.0,100.0,0,0.074,0.074,0.632,40,True
+Cócegas,,13.735,False,3.0,100.0,0,0.08,0.08,0.64,41,True
+Karatê,kiai | grito de luta,12.781,False,3.0,85.0,0,0.083,0.083,0.64,41,True
+Lagartixa,,14.061,False,3.0,100.0,0,0.081,0.081,0.64,41,True
+Mão na porta,dedo na porta | prender o dedo na porta,7.43,False,2.0,100.0,0,0.084,0.084,0.64,41,True
+Paraquedismo,pular de paraquedas,14.63,False,3.0,98.0,0,0.082,0.082,0.64,41,True
+Tarzan,grito do Tarzan,11.085,False,3.0,95.0,0,0.081,0.081,0.64,41,True
+Tropeçar,cair | tombo,13.514,False,3.0,100.0,0,0.079,0.079,0.64,41,True
+Chamar o filho para jantar,o jantar está pronto | vem comer,8.048,False,2.0,100.0,0,0.087,0.087,0.648,42,True
+Conta alta,conta de luz | boleto,8.238,False,2.0,100.0,0,0.088,0.088,0.648,42,True
+Pedir para parar,para! | chega!,7.809,False,2.0,100.0,0,0.085,0.085,0.648,42,True
+Política,eleição | político,8.281,False,2.0,100.0,0,0.088,0.088,0.648,42,True
+Preço alto,gasolina cara | inflação,8.316,False,2.0,100.0,0,0.089,0.089,0.648,42,True
+Segunda-feira,,7.793,False,2.0,100.0,0,0.085,0.085,0.648,42,True
+Final de campeonato,final,8.566,False,2.0,100.0,0,0.09,0.09,0.656,43,True
+Férias,,9.188,False,2.0,100.0,0,0.093,0.093,0.656,43,True
+Guerra,batalha,8.836,False,2.0,100.0,0,0.092,0.092,0.656,43,True
+Ordem,dar ordem | comando,8.799,False,2.0,100.0,0,0.091,0.091,0.656,43,True
+Perder o ônibus,ônibus passando direto,9.314,False,2.0,100.0,0,0.094,0.094,0.656,43,True
+Piscina,pular na piscina,9.453,False,2.0,100.0,0,0.095,0.095,0.656,43,True
+Quarto escuro,escuro | apagar a luz,9.369,False,2.0,100.0,0,0.094,0.094,0.656,43,True
+Aniversário,parabéns | parabéns pra você,9.489,False,2.0,100.0,0,0.097,0.097,0.663,44,True
+Barulho alto,som alto | música alta,9.663,False,2.0,100.0,0,0.101,0.101,0.663,44,True
+Bater (no jogo),gritar bati | dominó,7.626,False,2.0,95.0,0,0.099,0.099,0.663,44,True
+Irmão,briga de irmãos | irmão chato,9.477,False,2.0,100.0,0,0.097,0.097,0.663,44,True
+Nascimento,bebê nascendo,9.514,False,2.0,100.0,0,0.098,0.098,0.663,44,True
+Óleo quente,óleo espirrando,9.629,False,2.0,100.0,0,0.1,0.1,0.663,44,True
+Banheiro ocupado,vontade de ir ao banheiro | sem papel higiênico,10.435,False,2.0,100.0,0,0.107,0.107,0.671,45,True
+Barulho estranho,barulho no meio da noite,10.325,False,2.0,100.0,0,0.105,0.105,0.671,45,True
+Criança brincando,brincadeira,9.911,False,2.0,100.0,0,0.102,0.102,0.671,45,True
+Dar bronca,bronca | sermão,10.336,False,2.0,100.0,0,0.106,0.106,0.671,45,True
+Mãe brava,mãe | chinelada,10.101,False,2.0,100.0,0,0.103,0.103,0.671,45,True
+Narrador de futebol,narração,10.276,False,2.0,100.0,0,0.104,0.104,0.671,45,True
+Pedir silêncio,silêncio!,9.716,False,2.0,100.0,0,0.101,0.101,0.671,45,True
+Bebê chorando,bebê,10.443,False,2.0,100.0,0,0.107,0.107,0.678,46,True
+Eco,gritar na montanha | gritar no túnel,10.985,False,2.0,100.0,0,0.11,0.11,0.678,46,True
+Levantamento de peso,academia | malhar,9.773,False,2.0,98.0,0,0.109,0.109,0.678,46,True
+Pimenta,comida apimentada | pimenta forte,10.483,False,2.0,100.0,0,0.108,0.108,0.678,46,True
+Susto de brincadeira,sustinho | bu!,11.014,False,2.0,100.0,0,0.112,0.112,0.678,46,True
+Término de namoro,levar um fora | pé na bunda,10.96,False,2.0,100.0,0,0.11,0.11,0.678,46,True
+Ciúme,,12.147,False,2.0,100.0,0,0.115,0.115,0.686,47,True
+Galvão Bueno,é tetra | é tetra é tetra,11.51,False,2.0,98.0,0,0.116,0.116,0.686,47,True
+Injustiça,,11.596,False,2.0,100.0,0,0.114,0.114,0.686,47,True
+Reencontro,volta pra casa | aeroporto,12.343,False,2.0,100.0,0,0.117,0.117,0.686,47,True
+Rock,heavy metal | gritar no show de metal,9.359,False,2.0,95.0,0,0.113,0.113,0.686,47,True
+Tubarão,,11.795,False,2.0,100.0,0,0.114,0.114,0.686,47,True
+Afogamento,se afogando,13.509,False,2.0,100.0,0,0.123,0.123,0.693,48,True
+Cachorro latindo,cachorro,12.418,False,2.0,100.0,0,0.119,0.119,0.693,48,True
+Cólica,,13.328,False,2.0,100.0,0,0.122,0.122,0.693,48,True
+Escorpião,,12.392,False,2.0,100.0,0,0.118,0.118,0.693,48,True
+Morcego,,12.746,False,2.0,100.0,0,0.121,0.121,0.693,48,True
+Pique-esconde,"gritar 1, 2, 3 | bate-cara",11.786,False,2.0,98.0,0,0.12,0.12,0.693,48,True
+Sargento,militar | treinamento militar,11.753,False,2.0,98.0,0,0.12,0.12,0.693,48,True
+Câimbra,,15.614,False,2.0,100.0,0,0.124,0.124,0.7,49,True
+Jump scare,susto de jogo,9.691,False,2.0,80.0,0,0.126,0.126,0.7,49,True
+O Grito,O Grito (Munch) | quadro O Grito,11.085,False,2.0,80.0,0,0.126,0.126,0.7,49,True
+Promoção no trabalho,,7.043,False,1.0,100.0,0,0.128,0.128,0.7,49,True
+Tirolesa,,13.955,False,2.0,95.0,0,0.125,0.125,0.7,49,True
+Ver um famoso na rua,celebridade,7.031,False,1.0,100.0,0,0.127,0.127,0.7,49,True
+Falar ao telefone com ligação ruim,ligação ruim | alô?,7.779,False,1.0,100.0,0,0.131,0.131,0.707,50,True
+Fim da prova,fim das aulas | último dia de aula,8.314,False,1.0,100.0,0,0.134,0.134,0.707,50,True
+Fim de um ciclo,formatura,7.442,False,1.0,100.0,0,0.129,0.129,0.707,50,True
+Ganhar um prêmio,prêmio,7.794,False,1.0,100.0,0,0.131,0.131,0.707,50,True
+Gritar com a TV,xingar a TV,7.94,False,1.0,100.0,0,0.133,0.133,0.707,50,True
+Grito de Ipiranga,Independência ou Morte | Dom Pedro I,11.47,False,5.0,98.0,0,0.036,0.036,0.707,50,True
+Jogo do Corinthians,Flamengo | Palmeiras,7.796,False,1.0,100.0,0,0.131,0.131,0.707,50,True
+Sexta-feira,,8.091,False,1.0,100.0,0,0.133,0.133,0.707,50,True
+Festa junina,quadrilha | olha a cobra,8.591,False,1.0,100.0,0,0.138,0.138,0.714,51,True
+Ganhar no bingo,,8.746,False,1.0,100.0,0,0.14,0.14,0.714,51,True
+Gol aos 45 do segundo tempo,gol no último minuto,7.747,False,1.0,98.0,0,0.137,0.137,0.714,51,True
+Guerra de água,pistola de água | balão de água,8.385,False,1.0,100.0,0,0.136,0.136,0.714,51,True
+Polícia,chamar a polícia,8.741,False,1.0,100.0,0,0.14,0.14,0.714,51,True
+Série,final de série | spoiler,8.365,False,1.0,100.0,0,0.135,0.135,0.714,51,True
+Brigar com o namorado,DR,8.844,False,1.0,100.0,0,0.143,0.143,0.721,52,True
+Casamento,buquê | jogar o buquê,8.983,False,1.0,100.0,0,0.145,0.145,0.721,52,True
+Prazo,entrega de trabalho | deadline,8.835,False,1.0,100.0,0,0.142,0.142,0.721,52,True
+Professor,professor bravo,8.722,False,1.0,100.0,0,0.14,0.14,0.721,52,True
+Reality show,,8.93,False,1.0,100.0,0,0.144,0.144,0.721,52,True
+Vitória pessoal,conquista,8.737,False,1.0,100.0,0,0.14,0.14,0.721,52,True
+Água fria do mar,água do mar gelada,9.009,False,1.0,100.0,0,0.146,0.146,0.721,52,True
+Café quente,sopa quente | língua queimada,9.291,False,1.0,100.0,0,0.15,0.15,0.728,53,True
+Gritar no travesseiro,travesseiro,9.427,False,1.0,100.0,0,0.151,0.151,0.728,53,True
+Gritar o nome de alguém,nome,9.101,False,1.0,100.0,0,0.147,0.147,0.728,53,True
+Perder o celular,,9.086,False,1.0,100.0,0,0.147,0.147,0.728,53,True
+Promoção,liquidação | Black Friday,9.158,False,1.0,100.0,0,0.148,0.148,0.728,53,True
+Sangue,ver sangue,9.274,False,1.0,100.0,0,0.149,0.149,0.728,53,True
+Acordar alguém,acorda!,9.559,False,1.0,100.0,0,0.153,0.153,0.735,54,True
+Ataque,atacar,9.703,False,1.0,100.0,0,0.157,0.157,0.735,54,True
+Bater a cabeça,cabeçada,9.451,False,1.0,100.0,0,0.153,0.153,0.735,54,True
+Chamar o ônibus,parar o ônibus,9.684,False,1.0,100.0,0,0.156,0.156,0.735,54,True
+Chefe,patrão | reunião,9.632,False,1.0,100.0,0,0.155,0.155,0.735,54,True
+Onda grande,caldo | tomar um caldo,8.651,False,1.0,98.0,0,0.151,0.151,0.735,54,True
+Água-viva,queimadura de água-viva,8.855,False,1.0,98.0,0,0.155,0.155,0.735,54,True
+Areia quente,pé queimando | chão quente,9.897,False,1.0,100.0,0,0.162,0.162,0.742,55,True
+Gol perdido,perder gol feito,9.852,False,1.0,100.0,0,0.161,0.161,0.742,55,True
+Obra do vizinho,furadeira,9.804,False,1.0,100.0,0,0.159,0.159,0.742,55,True
+Paixão,amor,9.751,False,1.0,100.0,0,0.158,0.158,0.742,55,True
+Perder o voo,atraso | voo atrasado,9.853,False,1.0,100.0,0,0.161,0.161,0.742,55,True
+Salário,dia do pagamento,9.728,False,1.0,100.0,0,0.158,0.158,0.742,55,True
+Cabelo cortado errado,corte de cabelo errado,10.2,False,1.0,100.0,0,0.166,0.166,0.748,56,True
+Chegar atrasado,atrasado,10.135,False,1.0,100.0,0,0.165,0.165,0.748,56,True
+Dor de dente,,10.128,False,1.0,100.0,0,0.165,0.165,0.748,56,True
+Greve,,10.314,False,1.0,100.0,0,0.168,0.168,0.748,56,True
+Novela,final de novela,10.044,False,1.0,100.0,0,0.163,0.163,0.748,56,True
+Panela de pressão,panela apitando,10.03,False,1.0,100.0,0,0.163,0.163,0.748,56,True
+Pega-pega,tá com você,10.291,False,1.0,100.0,0,0.168,0.168,0.748,56,True
+Ansiedade,,10.502,False,1.0,100.0,0,0.173,0.173,0.755,57,True
+Golpe,ser enganado | golpe do Pix,10.395,False,1.0,100.0,0,0.171,0.171,0.755,57,True
+Pizza chegando,comida chegando | entregador,10.308,False,1.0,100.0,0,0.168,0.168,0.755,57,True
+Queimar a comida,comida queimada,10.454,False,1.0,100.0,0,0.172,0.172,0.755,57,True
+Torcer o pé,entorse,10.324,False,1.0,100.0,0,0.17,0.17,0.755,57,True
+Tristeza,choro,10.408,False,1.0,100.0,0,0.171,0.171,0.755,57,True
+Anunciar,anúncio | locutor,10.702,False,1.0,100.0,0,0.176,0.176,0.762,58,True
+Cortar o dedo,corte | cortar com faca,10.558,False,1.0,100.0,0,0.174,0.174,0.762,58,True
+Espírito,possessão | exorcismo,8.754,False,1.0,95.0,0,0.175,0.175,0.762,58,True
+Quina da mesa,bater na quina,10.922,False,1.0,100.0,0,0.177,0.177,0.762,58,True
+Chamar o garçom,garçom,11.088,False,1.0,100.0,0,0.18,0.18,0.775,60,True
+Demissão,ser demitido,11.372,False,1.0,100.0,0,0.185,0.185,0.775,60,True
+Elevador parado,ficar preso no elevador,11.006,False,1.0,100.0,0,0.179,0.179,0.775,60,True
+Esconde-esconde,achou,11.326,False,1.0,100.0,0,0.184,0.184,0.775,60,True
+Funk,baile funk,11.189,False,1.0,100.0,0,0.183,0.183,0.775,60,True
+Leite derramando,leite fervendo,11.476,False,1.0,100.0,0,0.19,0.19,0.775,60,True
+Luta de UFC,UFC | MMA,9.121,False,1.0,95.0,0,0.179,0.179,0.775,60,True
+Monstro,monstro debaixo da cama,11.149,False,1.0,100.0,0,0.182,0.182,0.775,60,True
+Olimpíadas,medalha de ouro,11.41,False,1.0,100.0,0,0.187,0.187,0.775,60,True
+Porta trancada,ficar trancado | chave perdida,10.986,False,1.0,100.0,0,0.178,0.178,0.775,60,True
+Puxão de cabelo,puxar o cabelo,11.457,False,1.0,100.0,0,0.189,0.189,0.775,60,True
+Roda-gigante (medo de altura),medo de altura,9.664,False,1.0,95.0,0,0.191,0.191,0.775,60,True
+Sala bagunçada,bagunça,11.44,False,1.0,100.0,0,0.188,0.188,0.775,60,True
+Tatuagem,,11.363,False,1.0,100.0,0,0.185,0.185,0.775,60,True
+Tirar o curativo,arrancar o band-aid,11.148,False,1.0,100.0,0,0.181,0.181,0.775,60,True
+Táxi,chamar táxi,11.405,False,1.0,100.0,0,0.187,0.187,0.775,60,True
+7 a 1,sete a um,6.975,False,1.0,100.0,0,0.213,0.213,0.781,61,True
+Animador de festa,animador de torcida | cheerleader,10.747,False,1.0,95.0,0,0.204,0.204,0.781,61,True
+Avó surda,falar com a avó | idoso surdo,11.976,False,1.0,98.0,0,0.205,0.205,0.781,61,True
+Barata voadora,barata que voa,12.227,False,1.0,100.0,0,0.2,0.2,0.781,61,True
+Beliscão,,15.444,False,1.0,100.0,0,0.218,0.218,0.781,61,True
+Corrida de Fórmula 1,Senna | Ayrton Senna,10.04,False,1.0,95.0,0,0.198,0.198,0.781,61,True
+Elogio,ganhar presente | presente,11.817,False,1.0,100.0,0,0.195,0.195,0.781,61,True
+Enchente,alagamento,12.858,False,1.0,100.0,0,0.208,0.208,0.781,61,True
+Escorregador,tobogã | toboágua,14.11,False,1.0,100.0,0,0.215,0.215,0.781,61,True
+Escorregar,chão molhado,13.559,False,1.0,100.0,0,0.211,0.211,0.781,61,True
+Exagero,drama | dramático,11.748,False,1.0,100.0,0,0.194,0.194,0.781,61,True
+Fogos de artifício,rojão | bomba,12.093,False,1.0,100.0,0,0.199,0.199,0.781,61,True
+Freada,quase bater,14.591,False,1.0,100.0,0,0.216,0.216,0.781,61,True
+Grito do Goku,Kamehameha | Dragon Ball,11.085,False,1.0,90.0,0,0.217,0.217,0.781,61,True
+Halloween,Dia das Bruxas,11.701,False,1.0,100.0,0,0.192,0.192,0.781,61,True
+Impedimento,VAR,12.015,False,1.0,98.0,0,0.206,0.206,0.781,61,True
+Jacaré,,12.314,False,1.0,100.0,0,0.201,0.201,0.781,61,True
+K-pop,show de K-pop | BTS,10.123,False,1.0,90.0,0,0.214,0.214,0.781,61,True
+Leilão,lance de leilão,11.097,False,1.0,95.0,0,0.21,0.21,0.781,61,True
+Luto,perder alguém,11.599,False,1.0,100.0,0,0.192,0.192,0.781,61,True
+Mordida,morder a língua,12.676,False,1.0,100.0,0,0.204,0.204,0.781,61,True
+Mosquito,pernilongo,11.748,False,1.0,100.0,0,0.194,0.194,0.781,61,True
+Nojo,,12.087,False,1.0,100.0,0,0.199,0.199,0.781,61,True
+Plot twist,reviravolta,13.52,False,1.0,95.0,0,0.218,0.218,0.781,61,True
+Recreio,intervalo,11.845,False,1.0,100.0,0,0.196,0.196,0.781,61,True
+Reprovação,tirar zero | bomba na escola,12.839,False,1.0,100.0,0,0.208,0.208,0.781,61,True
+Sertanejo,modão | gritar no modão,11.592,False,1.0,98.0,0,0.202,0.202,0.781,61,True
+Sobrancelha,tirar sobrancelha | pinça,12.479,False,1.0,98.0,0,0.211,0.211,0.781,61,True
+Terremoto,,11.883,False,1.0,100.0,0,0.197,0.197,0.781,61,True
+Turbulência,avião,12.973,False,1.0,100.0,0,0.209,0.209,0.781,61,True
+Vulto,sombra,13.019,False,1.0,98.0,0,0.213,0.213,0.781,61,True
+Zumbi,apocalipse zumbi,11.795,False,1.0,98.0,0,0.203,0.203,0.781,61,True
+Amigo secreto,amigo oculto,9.907,False,0.5,100.0,0,0.242,0.242,0.787,62,True
+Avisar que chegou,cheguei,8.025,False,0.5,100.0,0,0.223,0.223,0.787,62,True
+Barata na comida,bicho na comida,8.517,False,0.5,100.0,0,0.226,0.226,0.787,62,True
+Beijo,primeiro beijo,9.606,False,0.5,100.0,0,0.236,0.236,0.787,62,True
+Carro quebrado,pneu furado,10.031,False,0.5,100.0,0,0.244,0.244,0.787,62,True
+Corrida,chegada na corrida,9.74,False,0.5,100.0,0,0.239,0.239,0.787,62,True
+Erro no trabalho,erro,7.092,False,0.5,100.0,0,0.221,0.221,0.787,62,True
+Esquecer a senha,,9.893,False,0.5,100.0,0,0.24,0.24,0.787,62,True
+Esquecer algo,esquecimento,9.042,False,0.5,100.0,0,0.23,0.23,0.787,62,True
+Esquecer o feijão no fogo,,8.759,False,0.5,98.0,0,0.235,0.235,0.787,62,True
+Expulsar alguém,sai daqui,10.488,False,0.5,100.0,0,0.247,0.247,0.787,62,True
+Ganhar a aposta,aposta | bet,9.898,False,0.5,100.0,0,0.24,0.24,0.787,62,True
+Gato no telhado,briga de gato,8.852,False,0.5,98.0,0,0.236,0.236,0.787,62,True
+Gol contra,,8.599,False,0.5,100.0,0,0.227,0.227,0.787,62,True
+Lacraia,centopeia,15.098,False,1.0,98.0,0,0.219,0.219,0.787,62,True
+Marco Polo,,10.307,False,1.0,70.0,0,0.22,0.22,0.787,62,True
+Natal,presente de Natal,8.775,False,0.5,100.0,0,0.228,0.228,0.787,62,True
+Nota boa,tirar 10,8.209,False,0.5,100.0,0,0.224,0.224,0.787,62,True
+Pai,pai bravo,8.323,False,0.5,100.0,0,0.224,0.224,0.787,62,True
+Perder a carteira,perder documento,9.646,False,0.5,100.0,0,0.237,0.237,0.787,62,True
+Pisar em algo nojento,pisar em cocô | cocô de cachorro,9.38,False,0.5,100.0,0,0.232,0.232,0.787,62,True
+Porta batendo,,9.914,False,0.5,100.0,0,0.242,0.242,0.787,62,True
+Queda,queda livre,9.672,False,0.5,100.0,0,0.238,0.238,0.787,62,True
+Resultado do Enem,Enem,8.436,False,0.5,100.0,0,0.225,0.225,0.787,62,True
+Roupa rasgada,calça rasgada,9.413,False,0.5,100.0,0,0.233,0.233,0.787,62,True
+Saudade,,9.995,False,0.5,100.0,0,0.244,0.244,0.787,62,True
+Saída do hospital,alta do hospital | cura,9.348,False,0.5,100.0,0,0.231,0.231,0.787,62,True
+Sinal ruim,sem sinal,9.496,False,0.5,100.0,0,0.234,0.234,0.787,62,True
+Tirar o dente,,10.188,False,0.5,100.0,0,0.245,0.245,0.787,62,True
+Ver a fatura,fatura do cartão,9.364,False,0.5,100.0,0,0.231,0.231,0.787,62,True
+Ver o preço,preço absurdo,7.594,False,0.5,100.0,0,0.222,0.222,0.787,62,True
+Água quente,chuveiro pelando,8.765,False,0.5,100.0,0,0.228,0.228,0.787,62,True
+Axé,Ivete Sangalo | tira o pé do chão,12.15,False,0.5,98.0,0,0.273,0.273,0.794,63,True
+Balanço,,10.514,False,0.5,100.0,0,0.249,0.249,0.794,63,True
+Batata quente,,10.236,False,0.5,98.0,0,0.254,0.254,0.794,63,True
+Bilhete premiado,raspadinha,11.523,False,0.5,98.0,0,0.269,0.269,0.794,63,True
+Boxe,nocaute,12.047,False,0.5,98.0,0,0.272,0.272,0.794,63,True
+Bruxa,,11.79,False,0.5,100.0,0,0.265,0.265,0.794,63,True
+Clássico,Fla-Flu | Gre-Nal,10.049,False,0.5,98.0,0,0.252,0.252,0.794,63,True
+Dança das cadeiras,,10.117,False,0.5,98.0,0,0.253,0.253,0.794,63,True
+Debate,debate político,9.794,False,0.5,98.0,0,0.25,0.25,0.794,63,True
+Escada,cair da escada,11.045,False,0.5,100.0,0,0.255,0.255,0.794,63,True
+Filhote,ganhar um cachorro,11.42,False,0.5,100.0,0,0.258,0.258,0.794,63,True
+Formiga,formiga no pé,12.162,False,0.5,100.0,0,0.268,0.268,0.794,63,True
+Furacão,tornado,11.91,False,0.5,100.0,0,0.267,0.267,0.794,63,True
+Gelo nas costas,gelo no pescoço,9.178,False,0.5,95.0,0,0.256,0.256,0.794,63,True
+Gritar na janela,janelaço | panelaço,8.662,False,0.5,95.0,0,0.25,0.25,0.794,63,True
+Grito de carnaval,abadá | trio elétrico,10.367,False,0.5,95.0,0,0.269,0.269,0.794,63,True
+Grito de vendedor,olha a pamonha,10.731,False,0.5,98.0,0,0.26,0.26,0.794,63,True
+Guerra de travesseiro,,10.471,False,0.5,98.0,0,0.257,0.257,0.794,63,True
+Machucado,ferida,12.715,False,0.5,100.0,0,0.27,0.27,0.794,63,True
+Mandar abaixar o som,abaixa isso,10.699,False,0.5,100.0,0,0.251,0.251,0.794,63,True
+Massagem forte,quiropraxia,9.804,False,0.5,95.0,0,0.264,0.264,0.794,63,True
+Montanha,topo da montanha,10.465,False,0.5,100.0,0,0.247,0.247,0.794,63,True
+Multa,levar multa,10.482,False,0.5,100.0,0,0.247,0.247,0.794,63,True
+Osso quebrado,fratura | quebrar o braço,11.547,False,0.5,100.0,0,0.261,0.261,0.794,63,True
+Picada,picada de inseto,11.717,False,0.5,100.0,0,0.264,0.264,0.794,63,True
+Pix errado,transferência errada,9.771,False,0.5,95.0,0,0.263,0.263,0.794,63,True
+Pula-pula,cama elástica,11.878,False,0.5,100.0,0,0.266,0.266,0.794,63,True
+Show do Justin Bieber,show dos Beatles | beatlemania,8.93,False,0.5,90.0,0,0.271,0.271,0.794,63,True
+Torcida organizada,,10.298,False,0.5,98.0,0,0.256,0.256,0.794,63,True
+Unha quebrada,,11.599,False,0.5,100.0,0,0.262,0.262,0.794,63,True
+Vôlei,ponto no vôlei,11.457,False,0.5,100.0,0,0.259,0.259,0.794,63,True
+Ambulante,camelô | rapa,12.869,False,0.5,98.0,0,0.277,0.277,0.8,64,True
+Apresentação,falar em público,8.871,False,0.3,100.0,0,0.295,0.295,0.8,64,True
+Avante,carga | ao ataque,12.628,False,0.5,90.0,0,0.289,0.289,0.8,64,True
+Avisar que está saindo,tchau | já vou,8.043,False,0.3,100.0,0,0.289,0.289,0.8,64,True
+Banho de balde de gelo,desafio do balde de gelo | ice bucket challenge,10.65,False,0.5,85.0,0,0.287,0.287,0.8,64,True
+Bater o carro,ralar o carro,9.322,False,0.3,100.0,0,0.298,0.298,0.8,64,True
+Buraco na rua,,7.995,False,0.3,100.0,0,0.287,0.287,0.8,64,True
+Cabelo no prato,cabelo na comida,8.034,False,0.3,100.0,0,0.289,0.289,0.8,64,True
+Cabo de guerra,,9.068,False,0.3,98.0,0,0.301,0.301,0.8,64,True
+Carro novo,,7.596,False,0.3,100.0,0,0.284,0.284,0.8,64,True
+Casa nova,chaves da casa,7.294,False,0.3,100.0,0,0.282,0.282,0.8,64,True
+Chucky,boneco assassino,11.492,False,0.5,95.0,0,0.286,0.286,0.8,64,True
+Cobra no quintal,,8.868,False,0.3,98.0,0,0.299,0.299,0.8,64,True
+Elevador do terror,Big Tower | queda livre (brinquedo),10.805,False,0.5,85.0,0,0.291,0.291,0.8,64,True
+Filme de ação,,8.216,False,0.3,100.0,0,0.292,0.292,0.8,64,True
+Fim do mundo,apocalipse,7.487,False,0.3,100.0,0,0.283,0.283,0.8,64,True
+Ganhar um carro,ganhar no Domingão,7.398,False,0.3,95.0,0,0.298,0.298,0.8,64,True
+"Gritar ""eu"" na chamada",chamada,7.918,False,0.3,100.0,0,0.286,0.286,0.8,64,True
+Hexa,é hexa,13.445,False,0.5,90.0,0,0.295,0.295,0.8,64,True
+It,Pennywise | palhaço It,10.231,False,0.5,90.0,0,0.279,0.279,0.8,64,True
+Mancha na roupa,caiu molho na roupa,8.687,False,0.3,100.0,0,0.294,0.294,0.8,64,True
+Megafone,microfone,14.294,False,0.5,100.0,0,0.281,0.281,0.8,64,True
+Meme,grito de meme,12.359,False,0.5,95.0,0,0.28,0.28,0.8,64,True
+Minhoca,,13.281,False,0.5,100.0,0,0.276,0.276,0.8,64,True
+Penta,Copa de 2002,13.627,False,0.5,98.0,0,0.282,0.282,0.8,64,True
+Queimada,ser queimado,12.324,False,0.5,98.0,0,0.274,0.274,0.8,64,True
+Rato na cozinha,,8.456,False,0.3,100.0,0,0.293,0.293,0.8,64,True
+Sirene,ambulância,13.423,False,0.5,100.0,0,0.276,0.276,0.8,64,True
+Tetra,Copa de 94,13.005,False,0.5,98.0,0,0.278,0.278,0.8,64,True
+Unha encravada,arrancar a unha,11.214,False,0.5,95.0,0,0.275,0.275,0.8,64,True
+Ver o saldo,saldo negativo,9.084,False,0.3,100.0,0,0.296,0.296,0.8,64,True
+Água da piscina gelada,,9.74,False,0.3,100.0,0,0.3,0.3,0.8,64,True
+Bicicleta sem freio,,9.296,False,0.3,98.0,0,0.306,0.306,0.806,65,True
+Bomba de São João,traque,8.141,False,0.3,95.0,0,0.306,0.306,0.806,65,True
+Caco de vidro,pisar em vidro,11.364,False,0.3,100.0,0,0.319,0.319,0.806,65,True
+Café acabando,sem café,10.304,False,0.3,100.0,0,0.311,0.311,0.806,65,True
+Carteira de motorista,passar na autoescola,10.212,False,0.3,100.0,0,0.31,0.31,0.806,65,True
+Chamar o cachorro,,10.071,False,0.3,100.0,0,0.308,0.308,0.806,65,True
+Chuveiro dando choque,,10.312,False,0.3,98.0,0,0.316,0.316,0.806,65,True
+Desastre,catástrofe,11.467,False,0.3,100.0,0,0.321,0.321,0.806,65,True
+Diagnóstico,exame,10.11,False,0.3,100.0,0,0.309,0.309,0.806,65,True
+Educar o cachorro,não!,10.875,False,0.3,100.0,0,0.313,0.313,0.806,65,True
+Esparta,Isto é Esparta | 300,8.204,False,0.5,85.0,0,0.327,0.327,0.806,65,True
+Fogão,gás vazando,11.127,False,0.3,100.0,0,0.317,0.317,0.806,65,True
+Galo cantando,,11.08,False,0.3,100.0,0,0.316,0.316,0.806,65,True
+Gasolina acabou,ficar sem gasolina,9.905,False,0.3,100.0,0,0.302,0.302,0.806,65,True
+Geladeira vazia,acabou a comida,11.026,False,0.3,100.0,0,0.315,0.315,0.806,65,True
+Ghostface,Pânico (filme) | Scream,9.558,False,0.5,85.0,0,0.327,0.327,0.806,65,True
+Gritar no carro,carro fechado,8.192,False,0.3,95.0,0,0.309,0.309,0.806,65,True
+Guerra de bola de neve,bola de neve,9.539,False,0.3,95.0,0,0.32,0.32,0.806,65,True
+Gás,olha o gás | caminhão do gás,9.94,False,0.3,95.0,0,0.326,0.326,0.806,65,True
+Imposto,imposto de renda,9.989,False,0.3,100.0,0,0.305,0.305,0.806,65,True
+Leão,rugido,10.437,False,0.3,100.0,0,0.312,0.312,0.806,65,True
+Luz apagando,blecaute,10.905,False,0.3,100.0,0,0.314,0.314,0.806,65,True
+Macaco,macaco gritando,11.568,False,0.3,100.0,0,0.322,0.322,0.806,65,True
+Mordida de cachorro,,11.472,False,0.3,100.0,0,0.321,0.321,0.806,65,True
+Pagamento caindo,Pix recebido,9.97,False,0.3,100.0,0,0.304,0.304,0.806,65,True
+Perder a aposta,,9.919,False,0.3,100.0,0,0.302,0.302,0.806,65,True
+Sorvete,queda do sorvete | sorvete caindo,11.205,False,0.3,100.0,0,0.318,0.318,0.806,65,True
+Teia de aranha,passar na teia,11.58,False,0.3,100.0,0,0.323,0.323,0.806,65,True
+Torcer para o filho,jogo do filho,8.049,False,0.3,95.0,0,0.304,0.304,0.806,65,True
+Túnel,,11.617,False,0.3,100.0,0,0.324,0.324,0.806,65,True
+Vender peixe,gritar na feira,9.733,False,0.3,95.0,0,0.325,0.325,0.806,65,True
+Alienígena,ET | disco voador,12.471,False,0.3,100.0,0,0.335,0.335,0.812,66,True
+Arara,papagaio,12.881,False,0.3,100.0,0,0.339,0.339,0.812,66,True
+Barco viking,barco pirata (brinquedo),11.846,False,0.3,90.0,0,0.352,0.352,0.812,66,True
+Boi bravo,touro | vaca brava,11.404,False,0.3,98.0,0,0.33,0.33,0.812,66,True
+Cabra gritando,bode,11.888,False,0.3,95.0,0,0.344,0.344,0.812,66,True
+Cocô de passarinho,cagada de pombo,12.503,False,0.3,100.0,0,0.336,0.336,0.812,66,True
+Discoteca,balada barulhenta,12.859,False,0.3,95.0,0,0.349,0.349,0.812,66,True
+Engasgo,,15.257,False,0.3,100.0,0,0.35,0.35,0.812,66,True
+Espinho,ouriço,12.382,False,0.3,100.0,0,0.333,0.333,0.812,66,True
+Esqueceram de Mim,Kevin,10.173,False,0.3,90.0,0,0.346,0.346,0.812,66,True
+Fisioterapia,,11.35,False,0.3,98.0,0,0.329,0.329,0.812,66,True
+Furar a orelha,brinco,12.119,False,0.3,100.0,0,0.329,0.329,0.812,66,True
+Game of Thrones,Casamento Vermelho,9.98,False,0.3,85.0,0,0.353,0.353,0.812,66,True
+Grito de rock,Freddie Mercury,10.222,False,0.3,85.0,0,0.354,0.354,0.812,66,True
+Ladeira,descer a ladeira,12.443,False,0.3,100.0,0,0.334,0.334,0.812,66,True
+Lobisomem,,12.998,False,0.3,100.0,0,0.341,0.341,0.812,66,True
+Mariposa,traça,13.743,False,0.3,100.0,0,0.343,0.343,0.812,66,True
+Motoqueiro,buzina,12.843,False,0.3,100.0,0,0.338,0.338,0.812,66,True
+Navio afundando,naufrágio,12.211,False,0.3,100.0,0,0.331,0.331,0.812,66,True
+Neymar,Ronaldo,20.0,True,0.3,100.0,0,0.347,0.347,0.812,66,True
+Pamonha,pamonhas de Piracicaba,14.09,False,0.3,95.0,0,0.354,0.354,0.812,66,True
+Piercing,,12.693,False,0.3,98.0,0,0.342,0.342,0.812,66,True
+Polícia chegando,sujou,9.313,False,0.3,90.0,0,0.341,0.341,0.812,66,True
+Pombo,pombo voando na cara,12.983,False,0.3,100.0,0,0.34,0.34,0.812,66,True
+Porco,porco gritando,11.258,False,0.2,100.0,0,0.355,0.355,0.812,66,True
+Prego,pisar em prego,12.603,False,0.3,100.0,0,0.337,0.337,0.812,66,True
+Pregão,bolsa de valores,11.182,False,0.5,75.0,0,0.332,0.332,0.812,66,True
+Star Wars,Eu sou seu pai,10.312,False,0.3,90.0,0,0.347,0.347,0.812,66,True
+Surdez,falar com surdo,13.156,False,0.3,98.0,0,0.345,0.345,0.812,66,True
+Tênis (jogo),grunhido do tenista,9.028,False,0.3,85.0,0,0.349,0.349,0.812,66,True
+Velório,enterro,12.447,False,0.3,100.0,0,0.334,0.334,0.812,66,True
+Ópera,soprano,11.827,False,0.3,90.0,0,0.351,0.351,0.812,66,True
+Abelha no carro,inseto no carro,8.502,False,0.1,95.0,0,0.377,0.377,0.819,67,True
+Anime,grito de anime,10.861,False,0.3,85.0,0,0.356,0.356,0.819,67,True
+Barco,enjoo,10.418,False,0.1,100.0,0,0.377,0.377,0.819,67,True
+Bicho na cama,,8.394,False,0.1,95.0,0,0.373,0.373,0.819,67,True
+Cachorro uivando,lobo uivando,12.834,False,0.2,100.0,0,0.36,0.36,0.819,67,True
+Cavalo,coice,10.395,False,0.1,100.0,0,0.376,0.376,0.819,67,True
+Caverna,,11.725,False,0.2,100.0,0,0.359,0.359,0.819,67,True
+Cena de beijo,,9.605,False,0.1,98.0,0,0.374,0.374,0.819,67,True
+Chocolate,doce,9.839,False,0.1,100.0,0,0.369,0.369,0.819,67,True
+Coisa nojenta,,7.736,False,0.1,100.0,0,0.367,0.367,0.819,67,True
+Freddy Krueger,,20.0,True,0.3,90.0,0,0.364,0.364,0.819,67,True
+Gabarito,,11.638,False,0.2,100.0,0,0.358,0.358,0.819,67,True
+Gritar no chuveiro,,9.112,False,0.1,95.0,0,0.381,0.381,0.819,67,True
+Hulk,esmaga,13.958,False,0.3,95.0,0,0.357,0.357,0.819,67,True
+Jason,Sexta-feira 13,8.091,False,0.3,90.0,0,0.364,0.364,0.819,67,True
+Morcego em casa,,8.06,False,0.1,95.0,0,0.371,0.371,0.819,67,True
+Mosca na sopa,,9.17,False,0.1,98.0,0,0.37,0.37,0.819,67,True
+Mosca no ouvido,bicho no ouvido,9.09,False,0.1,95.0,0,0.38,0.38,0.819,67,True
+Paintball,levar tiro de paintball,9.642,False,0.3,90.0,0,0.364,0.364,0.819,67,True
+Papai Noel,,10.787,False,0.1,100.0,0,0.38,0.38,0.819,67,True
+Pica-Pau,risada do Pica-Pau,10.611,False,0.1,98.0,0,0.383,0.383,0.819,67,True
+Pular corda,,11.194,False,0.1,100.0,0,0.382,0.382,0.819,67,True
+Páscoa,ovo de Páscoa,10.378,False,0.1,100.0,0,0.376,0.376,0.819,67,True
+Rato no restaurante,Ratatouille,8.558,False,0.1,98.0,0,0.368,0.368,0.819,67,True
+Samara,O Chamado,16.359,False,0.3,85.0,0,0.374,0.374,0.819,67,True
+Saudade de casa,,8.556,False,0.1,100.0,0,0.367,0.367,0.819,67,True
+Silvio Santos,ma oe,8.596,False,0.2,90.0,0,0.36,0.36,0.819,67,True
+Titanic,Jack,20.0,True,0.2,95.0,0,0.372,0.372,0.819,67,True
+Vingadores,Ultimato,13.519,False,0.3,90.0,0,0.364,0.364,0.819,67,True
+Vômito,,12.935,False,0.2,100.0,0,0.361,0.361,0.819,67,True
+Água no ouvido,,7.619,False,0.1,100.0,0,0.366,0.366,0.819,67,True
+Último rep,treino pesado,10.862,False,0.3,70.0,0,0.379,0.379,0.819,67,True
+Avião decolando,,12.584,False,0.1,100.0,0,0.388,0.388,0.825,68,True
+Besouro,,13.402,False,0.1,100.0,0,0.393,0.393,0.825,68,True
+Bob Esponja,Lula Molusco,11.953,False,0.1,98.0,0,0.39,0.39,0.825,68,True
+Cabra-cega,,12.013,False,0.1,95.0,0,0.397,0.397,0.825,68,True
+Caranguejeira,,15.64,False,0.1,95.0,0,0.409,0.409,0.825,68,True
+Coral,ensaio,11.117,False,0.1,90.0,0,0.405,0.405,0.825,68,True
+Dedo no ventilador,,9.026,False,0.1,90.0,0,0.392,0.392,0.825,68,True
+Desmaio,,13.86,False,0.1,100.0,0,0.396,0.396,0.825,68,True
+Faustão,ô loco meu,9.392,False,0.2,85.0,0,0.401,0.401,0.825,68,True
+Five Nights at Freddy's,FNAF,8.611,False,0.3,60.0,0,0.387,0.387,0.825,68,True
+Gafanhoto,,14.129,False,0.1,100.0,0,0.399,0.399,0.825,68,True
+Gambá,,14.011,False,0.1,98.0,0,0.403,0.403,0.825,68,True
+Ganso,ganso bravo,12.465,False,0.1,90.0,0,0.407,0.407,0.825,68,True
+Gol de placa,,9.644,False,0.1,95.0,0,0.385,0.385,0.825,68,True
+Gorila,,13.491,False,0.1,100.0,0,0.394,0.394,0.825,68,True
+Grito de guerra indígena,,10.361,False,0.1,80.0,0,0.41,0.41,0.825,68,True
+Grito primal,terapia do grito,12.721,False,0.5,40.0,0,0.406,0.406,0.825,68,True
+Gutural,vocal gutural,14.99,False,0.5,50.0,0,0.397,0.397,0.825,68,True
+Hadouken,Street Fighter,20.0,True,0.3,75.0,0,0.391,0.391,0.825,68,True
+Invocação do Mal,,10.668,False,0.2,80.0,0,0.386,0.386,0.825,68,True
+Maquiagem borrada,,12.087,False,0.1,95.0,0,0.399,0.399,0.825,68,True
+Mofo,comida estragada,12.854,False,0.1,100.0,0,0.392,0.392,0.825,68,True
+O Exorcista,,20.0,True,0.2,85.0,0,0.401,0.401,0.825,68,True
+Ovo,carro do ovo,10.652,False,0.1,90.0,0,0.402,0.402,0.825,68,True
+Pedestre,atravessar a rua,12.669,False,0.1,100.0,0,0.389,0.389,0.825,68,True
+Pelé,,11.987,False,0.1,100.0,0,0.386,0.386,0.825,68,True
+Peteca,,13.857,False,0.1,100.0,0,0.396,0.396,0.825,68,True
+Pokémon,Pikachu,20.0,True,0.1,98.0,0,0.406,0.406,0.825,68,True
+Rei Leão,grito do Simba,9.869,False,0.1,80.0,0,0.408,0.408,0.825,68,True
+Scooby-Doo,Salsicha,12.855,False,0.1,95.0,0,0.403,0.403,0.825,68,True
+Visto aprovado,passaporte,9.606,False,0.1,95.0,0,0.384,0.384,0.825,68,True
+A Freira,,20.0,True,0.2,75.0,0,0.412,0.412,0.831,69,True
+Abraço apertado,,10.56,False,0.05,100.0,0,0.421,0.421,0.831,69,True
+Batizado,,11.627,False,0.05,98.0,0,0.426,0.426,0.831,69,True
+Carrapato,,13.878,False,0.05,100.0,0,0.432,0.432,0.831,69,True
+Convulsão,,13.684,False,0.05,98.0,0,0.433,0.433,0.831,69,True
+Coração Valente,liberdade!,9.949,False,0.2,60.0,0,0.413,0.413,0.831,69,True
+Coruja,,12.135,False,0.05,100.0,0,0.424,0.424,0.831,69,True
+Dia das Crianças,,7.334,False,0.05,100.0,0,0.419,0.419,0.831,69,True
+Gaivota,,13.143,False,0.05,95.0,0,0.436,0.436,0.831,69,True
+Galinha,galinha bicando,11.039,False,0.05,100.0,0,0.422,0.422,0.831,69,True
+Godzilla,,20.0,True,0.05,90.0,0,0.438,0.438,0.831,69,True
+Grilo,grilo cantando,12.969,False,0.05,100.0,0,0.428,0.428,0.831,69,True
+Grito da Xuxa,Xuxa,11.085,False,0.1,50.0,0,0.418,0.418,0.831,69,True
+Grito de cabra (meme),,11.828,False,0.1,50.0,0,0.419,0.419,0.831,69,True
+Homer Simpson,D'oh,20.0,True,0.1,90.0,0,0.414,0.414,0.831,69,True
+Kamikaze (brinquedo),,12.778,False,0.1,60.0,0,0.416,0.416,0.831,69,True
+Kart,,12.287,False,0.05,98.0,0,0.429,0.429,0.831,69,True
+King Kong,,10.7,False,0.05,95.0,0,0.427,0.427,0.831,69,True
+Louva-a-deus,,10.471,False,0.05,95.0,0,0.425,0.425,0.831,69,True
+Pavão,grito do pavão,12.871,False,0.05,95.0,0,0.435,0.435,0.831,69,True
+Piolho,,13.775,False,0.05,100.0,0,0.432,0.432,0.831,69,True
+Pipoca,pipoqueiro,11.637,False,0.05,98.0,0,0.426,0.426,0.831,69,True
+Psicose,cena do chuveiro,13.288,False,0.2,70.0,0,0.412,0.412,0.831,69,True
+Pulga,,13.375,False,0.05,100.0,0,0.431,0.431,0.831,69,True
+Rodízio,comida liberada,12.498,False,0.05,98.0,0,0.43,0.43,0.831,69,True
+Ronaldinho Gaúcho,,11.029,False,0.05,100.0,0,0.422,0.422,0.831,69,True
+Super Saiyajin,,8.451,False,0.1,75.0,0,0.41,0.41,0.831,69,True
+Tom e Jerry,,9.578,False,0.05,98.0,0,0.42,0.42,0.831,69,True
+Viking,berserker,13.274,False,0.1,60.0,0,0.417,0.417,0.831,69,True
+Viúva-negra,,10.938,False,0.05,90.0,0,0.435,0.435,0.831,69,True
+Xícara maluca,,11.471,False,0.05,85.0,0,0.437,0.437,0.831,69,True
+Óvni,,16.058,False,0.1,90.0,0,0.415,0.415,0.831,69,True
+"""Pode isso, Arnaldo?""",pode isso Arnaldo,6.524,False,0.05,65.0,0,0.441,0.441,0.837,70,True
+"""Que fase""",,6.391,False,0.05,65.0,0,0.439,0.439,0.837,70,True
+"""Sai que é sua, Taffarel""",sai que é sua Taffarel,6.45,False,0.05,65.0,0,0.44,0.44,0.837,70,True
+Alguém atrás de você,,7.707,False,0.05,65.0,0,0.454,0.454,0.837,70,True
+Apresentação na escola,,7.368,False,0.05,65.0,0,0.446,0.446,0.837,70,True
+Ash,Eu escolho você,8.237,False,0.05,85.0,0,0.458,0.458,0.837,70,True
+Bar lotado em dia de jogo,,8.015,False,0.05,65.0,0,0.466,0.466,0.837,70,True
+Bola na janela,,8.002,False,0.05,65.0,0,0.464,0.464,0.837,70,True
+Boss final,,7.841,False,0.05,65.0,0,0.461,0.461,0.837,70,True
+Cantar no carro,,7.884,False,0.05,65.0,0,0.463,0.463,0.837,70,True
+Casa abandonada,,7.117,False,0.05,65.0,0,0.444,0.444,0.837,70,True
+Celular na água,,7.343,False,0.05,65.0,0,0.445,0.445,0.837,70,True
+Feliz Ano Novo,,7.469,False,0.05,65.0,0,0.449,0.449,0.837,70,True
+Festa de São João,,7.575,False,0.05,65.0,0,0.451,0.451,0.837,70,True
+Filho voltando para casa,,7.6,False,0.05,65.0,0,0.451,0.451,0.837,70,True
+Final da Champions,,7.841,False,0.05,65.0,0,0.461,0.461,0.837,70,True
+Final do CBLOL,CBLOL,7.841,False,0.05,65.0,0,0.461,0.461,0.837,70,True
+Final dos 100 metros,,7.841,False,0.05,65.0,0,0.461,0.461,0.837,70,True
+Ganhar dinheiro na rua,,7.638,False,0.05,65.0,0,0.452,0.452,0.837,70,True
+Ganhar uma viagem,,7.54,False,0.05,65.0,0,0.45,0.45,0.837,70,True
+Gol no futebol de rua,,7.765,False,0.05,65.0,0,0.456,0.456,0.837,70,True
+"Gritar ""para""",,7.888,False,0.05,65.0,0,0.464,0.464,0.837,70,True
+"Gritar ""tá com você""",,7.741,False,0.05,65.0,0,0.456,0.456,0.837,70,True
+Grito de alegria no aeroporto,,8.751,False,0.01,90.0,0,0.438,0.438,0.837,70,True
+Medo de falar em público,,7.335,False,0.05,65.0,0,0.445,0.445,0.837,70,True
+Nós (filme),,7.813,False,0.05,65.0,0,0.458,0.458,0.837,70,True
+Obra no domingo,,7.41,False,0.05,65.0,0,0.448,0.448,0.837,70,True
+Pet voltando para casa,,7.389,False,0.05,65.0,0,0.448,0.448,0.837,70,True
+Primeiro dia de férias,,7.748,False,0.05,65.0,0,0.456,0.456,0.837,70,True
+Sim no pedido de casamento,,7.661,False,0.05,65.0,0,0.453,0.453,0.837,70,True
+Vitória no Fortnite,Victory Royale,6.927,False,0.05,65.0,0,0.442,0.442,0.837,70,True
+Vitória no Free Fire,Booyah,6.927,False,0.05,65.0,0,0.442,0.442,0.837,70,True
+"""Bem, amigos da Rede Globo""","bem, amigos",8.104,False,0.05,65.0,0,0.472,0.472,0.843,71,True
+Achar dinheiro no bolso,,8.385,False,0.05,65.0,0,0.494,0.494,0.843,71,True
+Banho frio no inverno,,8.358,False,0.05,65.0,0,0.49,0.49,0.843,71,True
+Base jump,,8.315,False,0.05,65.0,0,0.487,0.487,0.843,71,True
+Cachorro pulando em você,,8.247,False,0.05,65.0,0,0.483,0.483,0.843,71,True
+Cara a cara (jogo),,8.196,False,0.05,65.0,0,0.481,0.481,0.843,71,True
+Chegar ao topo,,8.114,False,0.05,65.0,0,0.472,0.472,0.843,71,True
+Conta de luz alta,,8.312,False,0.05,65.0,0,0.487,0.487,0.843,71,True
+Contagem regressiva de Ano Novo,,8.242,False,0.05,65.0,0,0.483,0.483,0.843,71,True
+Filho passando na faculdade,,8.045,False,0.05,65.0,0,0.468,0.468,0.843,71,True
+Final da Copa do Mundo,,8.024,False,0.05,65.0,0,0.466,0.466,0.843,71,True
+Ganhar no Uno,,8.345,False,0.05,65.0,0,0.49,0.49,0.843,71,True
+Gelo na roupa,,8.336,False,0.05,65.0,0,0.49,0.49,0.843,71,True
+"Gritar ""lá vou eu""",,8.169,False,0.05,65.0,0,0.477,0.477,0.843,71,True
+"Gritar ""não!""",,8.09,False,0.05,65.0,0,0.47,0.47,0.843,71,True
+Gritar no Discord,,8.087,False,0.05,65.0,0,0.47,0.47,0.843,71,True
+Grito no mar,,8.168,False,0.05,65.0,0,0.477,0.477,0.843,71,True
+Grito no vale,,8.131,False,0.05,65.0,0,0.474,0.474,0.843,71,True
+Jogos escolares,,8.036,False,0.05,65.0,0,0.468,0.468,0.843,71,True
+Morrer no último chefe,,8.277,False,0.05,65.0,0,0.484,0.484,0.843,71,True
+Música do Freddie Mercury,,8.161,False,0.05,65.0,0,0.477,0.477,0.843,71,True
+Música favorita no show,,8.342,False,0.05,65.0,0,0.49,0.49,0.843,71,True
+Primeira palavra,,8.17,False,0.05,65.0,0,0.477,0.477,0.843,71,True
+Primeiro encontro,,8.139,False,0.05,65.0,0,0.474,0.474,0.843,71,True
+Pular da pedra no rio,,8.263,False,0.05,65.0,0,0.483,0.483,0.843,71,True
+Rock in Rio,,8.324,False,0.05,65.0,0,0.487,0.487,0.843,71,True
+Sexta-feira 13 (filme),,8.063,False,0.05,65.0,0,0.47,0.47,0.843,71,True
+Sexta-feira à tarde,,8.206,False,0.05,65.0,0,0.481,0.481,0.843,71,True
+Sistema fora do ar,,8.109,False,0.05,65.0,0,0.472,0.472,0.843,71,True
+Soldado voltando para casa,,8.319,False,0.05,65.0,0,0.487,0.487,0.843,71,True
+Um Lugar Silencioso,,8.157,False,0.05,65.0,0,0.477,0.477,0.843,71,True
+Acesso do time,,8.583,False,0.05,65.0,0,0.507,0.507,0.849,72,True
+Banda subindo no palco,,8.798,False,0.05,65.0,0,0.519,0.519,0.849,72,True
+Cantar alto no fone,,8.516,False,0.05,65.0,0,0.504,0.504,0.849,72,True
+Carnaval do Rio,,8.441,False,0.05,65.0,0,0.498,0.498,0.849,72,True
+Carro de som,,8.716,False,0.05,65.0,0,0.513,0.513,0.849,72,True
+Carro sem freio,,8.668,False,0.05,65.0,0,0.51,0.51,0.849,72,True
+Celular sem bateria,,8.427,False,0.05,65.0,0,0.498,0.498,0.849,72,True
+Declaração de amor,,8.772,False,0.05,65.0,0,0.516,0.516,0.849,72,True
+Festa de casamento,,8.787,False,0.05,65.0,0,0.519,0.519,0.849,72,True
+Fogos de Ano Novo,,8.583,False,0.05,65.0,0,0.507,0.507,0.849,72,True
+Fogueira de São João,,8.721,False,0.05,65.0,0,0.513,0.513,0.849,72,True
+"Gritar ""eu vou ganhar""",,8.517,False,0.05,65.0,0,0.504,0.504,0.849,72,True
+"Gritar ""homem ao mar""",homem ao mar,8.362,False,0.05,65.0,0,0.494,0.494,0.849,72,True
+"Gritar ""já vou""",,8.477,False,0.05,65.0,0,0.5,0.5,0.849,72,True
+"Grito de ""ão ão ão""",,8.526,False,0.05,65.0,0,0.504,0.504,0.849,72,True
+Grito de alegria na praia,,8.542,False,0.05,65.0,0,0.506,0.506,0.849,72,True
+Hole in one,,8.381,False,0.05,65.0,0,0.494,0.494,0.849,72,True
+Hora da saída,,8.738,False,0.05,65.0,0,0.513,0.513,0.849,72,True
+Imagem e Ação,,8.39,False,0.05,65.0,0,0.496,0.496,0.849,72,True
+Jogo da memória,,8.516,False,0.05,65.0,0,0.504,0.504,0.849,72,True
+Jogo da seleção,,8.5,False,0.05,65.0,0,0.5,0.5,0.849,72,True
+Jogo da velha,,8.802,False,0.05,65.0,0,0.519,0.519,0.849,72,True
+Mergulho no rio gelado,,8.755,False,0.05,65.0,0,0.516,0.516,0.849,72,True
+Nota aguda,,8.728,False,0.05,65.0,0,0.513,0.513,0.849,72,True
+Ovo na colher,,8.621,False,0.05,65.0,0,0.509,0.509,0.849,72,True
+Pipa no alto,,8.491,False,0.05,65.0,0,0.5,0.5,0.849,72,True
+Preço da carne,,8.748,False,0.05,65.0,0,0.516,0.516,0.849,72,True
+Preço do café,,8.498,False,0.05,65.0,0,0.5,0.5,0.849,72,True
+Reflexo no espelho,,8.759,False,0.05,65.0,0,0.516,0.516,0.849,72,True
+Réveillon em Copacabana,,8.399,False,0.05,65.0,0,0.496,0.496,0.849,72,True
+Torcida no estádio,,8.372,False,0.05,65.0,0,0.494,0.494,0.849,72,True
+Trabalho perdido,,8.655,False,0.05,65.0,0,0.51,0.51,0.849,72,True
+Abrir presente,,8.904,False,0.05,65.0,0,0.535,0.535,0.854,73,True
+Bicicleta nova,,8.879,False,0.05,65.0,0,0.531,0.531,0.854,73,True
+Boneca que mexe,,8.862,False,0.05,65.0,0,0.528,0.528,0.854,73,True
+Busca-pé,,8.828,False,0.05,65.0,0,0.523,0.523,0.854,73,True
+Cantar no chuveiro,,8.804,False,0.05,65.0,0,0.523,0.523,0.854,73,True
+Controle sem pilha,,8.901,False,0.05,65.0,0,0.535,0.535,0.854,73,True
+Festival de música,,8.838,False,0.05,65.0,0,0.528,0.528,0.854,73,True
+Fim do ano letivo,,8.88,False,0.05,65.0,0,0.531,0.531,0.854,73,True
+Gol de falta,,8.944,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+"Gritar ""volta aqui""",,8.81,False,0.05,65.0,0,0.523,0.523,0.854,73,True
+Gritar no microfone do jogo,,8.82,False,0.05,65.0,0,0.523,0.523,0.854,73,True
+"Grito de ""Independência ou morte""",,8.948,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+"Grito de ""Isso é Esparta""",isso é Esparta,8.803,False,0.05,65.0,0,0.523,0.523,0.854,73,True
+Grito na montanha,eco na montanha,8.868,False,0.05,65.0,0,0.531,0.531,0.854,73,True
+Grito no deserto,,8.91,False,0.05,65.0,0,0.535,0.535,0.854,73,True
+Mundial de LoL,,8.803,False,0.05,65.0,0,0.523,0.523,0.854,73,True
+Nota dez,,8.839,False,0.05,65.0,0,0.528,0.528,0.854,73,True
+Roda-gigante parada no alto,,8.899,False,0.05,65.0,0,0.535,0.535,0.854,73,True
+Show da Anitta,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show da Beyoncé,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show da Ivete Sangalo,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show da Taylor Swift,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show de Natal,,8.853,False,0.05,65.0,0,0.528,0.528,0.854,73,True
+Show do BTS,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show do Coldplay,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show do Iron Maiden,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show do Metallica,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show do Michael Jackson,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show do One Direction,,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Show do RBD,RBD,8.93,False,0.05,65.0,0,0.544,0.544,0.854,73,True
+Tema da vitória,,8.852,False,0.05,65.0,0,0.528,0.528,0.854,73,True
+Vendedor de mate na praia,"mate, limão",8.918,False,0.05,65.0,0,0.535,0.535,0.854,73,True
+"""Faz barulho""",,9.114,False,0.05,65.0,0,0.568,0.568,0.86,74,True
+"""Haja coração""",haja coração,9.147,False,0.05,65.0,0,0.571,0.571,0.86,74,True
+Bloco de rua,,9.066,False,0.05,65.0,0,0.56,0.56,0.86,74,True
+Bloqueio no vôlei,,9.129,False,0.05,65.0,0,0.571,0.571,0.86,74,True
+Bola na trave,,8.964,False,0.05,65.0,0,0.552,0.552,0.86,74,True
+Bola no telhado do vizinho,,9.183,False,0.05,65.0,0,0.576,0.576,0.86,74,True
+Cabo de guerra na gincana,,9.019,False,0.05,65.0,0,0.556,0.556,0.86,74,True
+Celular caindo no vaso,,9.043,False,0.05,65.0,0,0.56,0.56,0.86,74,True
+Dia de folga,,9.024,False,0.05,65.0,0,0.556,0.556,0.86,74,True
+Entrevista de emprego,,9.127,False,0.05,65.0,0,0.568,0.568,0.86,74,True
+Floresta à noite,,9.092,False,0.05,65.0,0,0.564,0.564,0.86,74,True
+"Gritar ""Pikachu, eu escolho você""",,9.012,False,0.05,65.0,0,0.556,0.556,0.86,74,True
+"Gritar ""alguém viu minha chave?""",,9.019,False,0.05,65.0,0,0.556,0.556,0.86,74,True
+"Gritar ""eu consegui""",,8.998,False,0.05,65.0,0,0.553,0.553,0.86,74,True
+"Gritar ""eu passei""",,9.064,False,0.05,65.0,0,0.56,0.56,0.86,74,True
+"Grito de ""vai, Corinthians""",,9.017,False,0.05,65.0,0,0.556,0.556,0.86,74,True
+Grito no estádio vazio,,9.095,False,0.05,65.0,0,0.564,0.564,0.86,74,True
+Grito no microfone,,9.078,False,0.05,65.0,0,0.564,0.564,0.86,74,True
+Homem do saco,,9.098,False,0.05,65.0,0,0.564,0.564,0.86,74,True
+Oito segundos no touro,,9.081,False,0.05,65.0,0,0.564,0.564,0.86,74,True
+Pular no mar gelado,,9.123,False,0.05,65.0,0,0.568,0.568,0.86,74,True
+Reencontro no aeroporto,,8.998,False,0.05,65.0,0,0.553,0.553,0.86,74,True
+Show de rock,,9.144,False,0.05,65.0,0,0.571,0.571,0.86,74,True
+Show do Roberto Carlos,,9.066,False,0.05,65.0,0,0.56,0.56,0.86,74,True
+Show dos Jonas Brothers,,8.93,False,0.05,65.0,0,0.544,0.544,0.86,74,True
+Show dos Rolling Stones,,8.93,False,0.05,65.0,0,0.544,0.544,0.86,74,True
+Susto no escuro,,8.926,False,0.05,65.0,0,0.544,0.544,0.86,74,True
+Tela azul,,9.153,False,0.05,65.0,0,0.571,0.571,0.86,74,True
+Ultrapassagem na F1,,9.154,False,0.05,65.0,0,0.571,0.571,0.86,74,True
+Vento forte,,9.148,False,0.05,65.0,0,0.571,0.571,0.86,74,True
+Água fria na nuca,,8.967,False,0.05,65.0,0,0.552,0.552,0.86,74,True
+"""Acabou!""",,9.34,False,0.05,65.0,0,0.592,0.592,0.866,75,True
+Ba-Vi,,9.373,False,0.05,65.0,0,0.596,0.596,0.866,75,True
+Bate-cabeça,,9.367,False,0.05,65.0,0,0.596,0.596,0.866,75,True
+Campeonato de e-sports,e-sports,9.291,False,0.05,65.0,0,0.587,0.587,0.866,75,True
+Carro do gás,,9.171,False,0.05,65.0,0,0.576,0.576,0.866,75,True
+Cartão vermelho,,9.24,False,0.05,65.0,0,0.582,0.582,0.866,75,True
+Clássico dos Milhões,,9.227,False,0.05,65.0,0,0.582,0.582,0.866,75,True
+Copa América,,9.196,False,0.05,65.0,0,0.579,0.579,0.866,75,True
+Corpo-seco,,9.284,False,0.05,65.0,0,0.587,0.587,0.866,75,True
+Erro 404,,9.306,False,0.05,65.0,0,0.589,0.589,0.866,75,True
+Futebol de botão,,9.26,False,0.05,65.0,0,0.585,0.585,0.866,75,True
+Ganhar a partida,,9.257,False,0.05,65.0,0,0.585,0.585,0.866,75,True
+Gol do título,,9.173,False,0.05,65.0,0,0.576,0.576,0.866,75,True
+"Gritar ""terra à vista""",terra à vista,9.312,False,0.05,65.0,0,0.589,0.589,0.866,75,True
+Grito de guerra da escola,,9.366,False,0.05,65.0,0,0.596,0.596,0.866,75,True
+Grito de torcedor no bar,,9.178,False,0.05,65.0,0,0.576,0.576,0.866,75,True
+Guerra de balão de água,,9.455,False,0.05,65.0,0,0.602,0.602,0.866,75,True
+Hino nacional,,9.472,False,0.05,65.0,0,0.602,0.602,0.866,75,True
+Levantamento terra,,9.417,False,0.05,65.0,0,0.599,0.599,0.866,75,True
+Mula sem Cabeça,,9.391,False,0.05,65.0,0,0.596,0.596,0.866,75,True
+Olha a chuva,é mentira,9.413,False,0.05,65.0,0,0.599,0.599,0.866,75,True
+Perfil,,9.196,False,0.05,65.0,0,0.579,0.579,0.866,75,True
+Preço do ovo,,9.331,False,0.05,65.0,0,0.589,0.589,0.866,75,True
+Primeiro choro do bebê,,9.369,False,0.05,65.0,0,0.596,0.596,0.866,75,True
+Primeiro dente,,9.361,False,0.05,65.0,0,0.592,0.592,0.866,75,True
+Realidade virtual,,9.205,False,0.05,65.0,0,0.579,0.579,0.866,75,True
+Show do Gusttavo Lima,,9.201,False,0.05,65.0,0,0.579,0.579,0.866,75,True
+Show do Milhão (ganhar),,9.452,False,0.05,65.0,0,0.601,0.601,0.866,75,True
+Site caindo,,9.379,False,0.05,65.0,0,0.596,0.596,0.866,75,True
+Teste de som,,9.247,False,0.05,65.0,0,0.585,0.585,0.866,75,True
+Vizinho de furadeira no domingo,,9.364,False,0.05,65.0,0,0.592,0.592,0.866,75,True
+Vulto na janela,,9.223,False,0.05,65.0,0,0.582,0.582,0.866,75,True
+Aumento do aluguel,,9.486,False,0.05,65.0,0,0.604,0.604,0.872,76,True
+Balanço alto,,9.569,False,0.05,65.0,0,0.61,0.61,0.872,76,True
+Bolo de aniversário,,9.652,False,0.05,65.0,0,0.622,0.622,0.872,76,True
+Carnaval de Salvador,,9.582,False,0.05,65.0,0,0.614,0.614,0.872,76,True
+Cemitério à noite,,9.613,False,0.05,65.0,0,0.618,0.618,0.872,76,True
+Cesta de três,bola de três,9.542,False,0.05,65.0,0,0.607,0.607,0.872,76,True
+Escorregar no gelo,,9.646,False,0.05,65.0,0,0.622,0.622,0.872,76,True
+Fila do banco,,9.716,False,0.05,65.0,0,0.628,0.628,0.872,76,True
+Fim do expediente,,9.696,False,0.05,65.0,0,0.628,0.628,0.872,76,True
+Ganhar o amigo secreto,,9.635,False,0.05,65.0,0,0.622,0.622,0.872,76,True
+Ganhar sorteio de Instagram,,9.604,False,0.05,65.0,0,0.618,0.618,0.872,76,True
+Gato subindo na cortina,,9.607,False,0.05,65.0,0,0.618,0.618,0.872,76,True
+"Gritar ""1, 2, 3, salve todos""",um dois três salve todos,9.631,False,0.05,65.0,0,0.618,0.618,0.872,76,True
+"Gritar ""olha o carro""",,9.69,False,0.05,65.0,0,0.625,0.625,0.872,76,True
+"Gritar ""sim!""",,9.558,False,0.05,65.0,0,0.61,0.61,0.872,76,True
+"Gritar ""socorro, um rato!""",,9.506,False,0.05,65.0,0,0.604,0.604,0.872,76,True
+"Gritar ""vem jantar""",,9.706,False,0.05,65.0,0,0.628,0.628,0.872,76,True
+"Grito de ""fica""",,9.533,False,0.05,65.0,0,0.607,0.607,0.872,76,True
+Grito de guerra de time,,9.599,False,0.05,65.0,0,0.614,0.614,0.872,76,True
+Grito de guerra militar,,9.703,False,0.05,65.0,0,0.628,0.628,0.872,76,True
+Guerra de pistola de água,,9.556,False,0.05,65.0,0,0.61,0.61,0.872,76,True
+Medo de avião,,9.524,False,0.05,65.0,0,0.607,0.607,0.872,76,True
+Medo de escuro,,9.607,False,0.05,65.0,0,0.618,0.618,0.872,76,True
+O Grito (filme),,9.546,False,0.05,65.0,0,0.61,0.61,0.872,76,True
+Onda gigante no surfe,,9.673,False,0.05,65.0,0,0.625,0.625,0.872,76,True
+Primeiros passos,,9.586,False,0.05,65.0,0,0.614,0.614,0.872,76,True
+Prova oral,,9.62,False,0.05,65.0,0,0.618,0.618,0.872,76,True
+Show de pop,,9.527,False,0.05,65.0,0,0.607,0.607,0.872,76,True
+Susto atrás da porta,,9.675,False,0.05,65.0,0,0.625,0.625,0.872,76,True
+Torre de queda livre,elevador da queda,9.593,False,0.05,65.0,0,0.614,0.614,0.872,76,True
+Videogame novo,,9.508,False,0.05,65.0,0,0.604,0.604,0.872,76,True
+A Hora do Pesadelo,,9.91,False,0.05,65.0,0,0.656,0.656,0.877,77,True
+Aumento da gasolina,,9.777,False,0.05,65.0,0,0.634,0.634,0.877,77,True
+Bateria,,9.79,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+Bateria descarregada,,9.79,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+Computador desligando sem salvar,,9.793,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+Conseguir o ingresso,,9.913,False,0.05,65.0,0,0.656,0.656,0.877,77,True
+Death metal,,9.874,False,0.05,65.0,0,0.653,0.653,0.877,77,True
+Defesa do goleiro,,9.853,False,0.05,65.0,0,0.649,0.649,0.877,77,True
+Detetive (jogo),,9.894,False,0.05,65.0,0,0.653,0.653,0.877,77,True
+Escola campeã,,9.848,False,0.05,65.0,0,0.649,0.649,0.877,77,True
+Fila do show,,9.791,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+Filme de suspense,,9.752,False,0.05,65.0,0,0.634,0.634,0.877,77,True
+Filme de tubarão,Tubarão (filme),9.901,False,0.05,65.0,0,0.656,0.656,0.877,77,True
+Formatura de escola,,9.802,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+"Gritar ""Marco""",Polo!,9.778,False,0.05,65.0,0,0.634,0.634,0.877,77,True
+"Gritar ""Pelos poderes de Grayskull""",He-Man,9.797,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+"Gritar ""acabou o papel""",acabou o papel higiênico,9.723,False,0.05,65.0,0,0.631,0.631,0.877,77,True
+"Gritar ""ai""",,9.843,False,0.05,65.0,0,0.649,0.649,0.877,77,True
+"Gritar ""mãe!""",,9.811,False,0.05,65.0,0,0.646,0.646,0.877,77,True
+"Gritar ""o almoço tá pronto""",almoço tá pronto,9.896,False,0.05,65.0,0,0.653,0.653,0.877,77,True
+"Gritar ""pai!""",,9.829,False,0.05,65.0,0,0.646,0.646,0.877,77,True
+"Gritar ""vem cá""",,9.741,False,0.05,65.0,0,0.631,0.631,0.877,77,True
+"Grito de ""Vamos, Palmeiras""",,9.841,False,0.05,65.0,0,0.649,0.649,0.877,77,True
+Grito de guerra da faculdade,,9.757,False,0.05,65.0,0,0.634,0.634,0.877,77,True
+Halloween (filme),,9.854,False,0.05,65.0,0,0.649,0.649,0.877,77,True
+Medo de barata,,9.912,False,0.05,65.0,0,0.656,0.656,0.877,77,True
+Música do Tim Maia,,9.802,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+Peão no touro,,9.757,False,0.05,65.0,0,0.634,0.634,0.877,77,True
+Ponto do vôlei,,9.829,False,0.05,65.0,0,0.646,0.646,0.877,77,True
+Recorde mundial,,9.718,False,0.05,65.0,0,0.628,0.628,0.877,77,True
+Trem do parque,,9.798,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+Vizinho de festa,,9.799,False,0.05,65.0,0,0.64,0.64,0.877,77,True
+Ação subindo,,10.034,False,0.05,65.0,0,0.67,0.67,0.883,78,True
+Banco Imobiliário,,9.954,False,0.05,65.0,0,0.658,0.658,0.883,78,True
+Bate-bate,,10.074,False,0.05,65.0,0,0.675,0.675,0.883,78,True
+Black metal,,9.988,False,0.05,65.0,0,0.665,0.665,0.883,78,True
+Cachorro perdido encontrado,,10.135,False,0.05,65.0,0,0.683,0.683,0.883,78,True
+Carrinho de bate-bate,,10.102,False,0.05,65.0,0,0.677,0.677,0.883,78,True
+Celular tocando de madrugada,,10.106,False,0.05,65.0,0,0.68,0.68,0.883,78,True
+Choque-Rei,,9.988,False,0.05,65.0,0,0.665,0.665,0.883,78,True
+Completar o álbum,,10.051,False,0.05,65.0,0,0.675,0.675,0.883,78,True
+Corrida de saco,,10.025,False,0.05,65.0,0,0.67,0.67,0.883,78,True
+Desfile das escolas de samba,,10.028,False,0.05,65.0,0,0.67,0.67,0.883,78,True
+Escorregar no sabão,,10.001,False,0.05,65.0,0,0.665,0.665,0.883,78,True
+"Gritar ""Hasta la vista""",,10.011,False,0.05,65.0,0,0.665,0.665,0.883,78,True
+"Gritar ""sai da chuva""",,10.114,False,0.05,65.0,0,0.68,0.68,0.883,78,True
+"Gritar ""tô chegando""",,9.999,False,0.05,65.0,0,0.665,0.665,0.883,78,True
+Grito de guerra dos vikings,,9.96,False,0.05,65.0,0,0.661,0.661,0.883,78,True
+Grito no cânion,,10.137,False,0.05,65.0,0,0.683,0.683,0.883,78,True
+Ligação desconhecida,,9.939,False,0.05,65.0,0,0.658,0.658,0.883,78,True
+Loira do Banheiro,,10.021,False,0.05,65.0,0,0.67,0.67,0.883,78,True
+Lua de mel,,10.015,False,0.05,65.0,0,0.665,0.665,0.883,78,True
+Medo de agulha,,10.176,False,0.05,65.0,0,0.685,0.685,0.883,78,True
+Medo de dentista,,9.986,False,0.05,65.0,0,0.661,0.661,0.883,78,True
+Noiva chegando,,10.128,False,0.05,65.0,0,0.68,0.68,0.883,78,True
+Olimpíada da escola,,10.044,False,0.05,65.0,0,0.67,0.67,0.883,78,True
+Pagamento do décimo terceiro,décimo terceiro,9.977,False,0.05,65.0,0,0.661,0.661,0.883,78,True
+Pedido de namoro,,9.967,False,0.05,65.0,0,0.661,0.661,0.883,78,True
+Robô do atendimento,,10.138,False,0.05,65.0,0,0.683,0.683,0.883,78,True
+Show de funk,,10.06,False,0.05,65.0,0,0.675,0.675,0.883,78,True
+Solo de guitarra,,10.044,False,0.05,65.0,0,0.67,0.67,0.883,78,True
+Sorteio,,10.118,False,0.05,65.0,0,0.68,0.68,0.883,78,True
+Topo do Everest,,10.082,False,0.05,65.0,0,0.677,0.677,0.883,78,True
+Universal Studios,,10.049,False,0.05,65.0,0,0.675,0.675,0.883,78,True
+"""Alô, som""",,10.485,False,0.05,65.0,0,0.712,0.712,0.889,79,True
+"""Barulho, galera!""",,10.371,False,0.05,65.0,0,0.698,0.698,0.889,79,True
+Carta rara,,10.385,False,0.05,65.0,0,0.701,0.701,0.889,79,True
+Chuveiro frio,,10.329,False,0.05,65.0,0,0.694,0.694,0.889,79,True
+Disputa de pênaltis,,10.201,False,0.05,65.0,0,0.686,0.686,0.889,79,True
+Estrada escura,,10.384,False,0.05,65.0,0,0.701,0.701,0.889,79,True
+Gol anulado pelo VAR,,10.207,False,0.05,65.0,0,0.686,0.686,0.889,79,True
+Gol de virada,,10.274,False,0.05,65.0,0,0.69,0.69,0.889,79,True
+Gol do rival,,10.435,False,0.05,65.0,0,0.709,0.709,0.889,79,True
+Gol olímpico,,10.487,False,0.05,65.0,0,0.712,0.712,0.889,79,True
+"Gritar ""cadê o controle?""",,10.429,False,0.05,65.0,0,0.705,0.705,0.889,79,True
+"Gritar ""cuidado""",,10.318,False,0.05,65.0,0,0.694,0.694,0.889,79,True
+"Gritar ""fecha a porta""",,10.347,False,0.05,65.0,0,0.698,0.698,0.889,79,True
+"Gritar ""fogo!""",,10.28,False,0.05,65.0,0,0.69,0.69,0.889,79,True
+"Gritar ""seis""",,10.22,False,0.05,65.0,0,0.686,0.686,0.889,79,True
+Grito de luta de espada,,10.412,False,0.05,65.0,0,0.705,0.705,0.889,79,True
+Lucro,,10.36,False,0.05,65.0,0,0.698,0.698,0.889,79,True
+Medo de palhaço,,10.246,False,0.05,65.0,0,0.688,0.688,0.889,79,True
+Mini golfe,,10.403,False,0.05,65.0,0,0.705,0.705,0.889,79,True
+Montanha-russa infantil,,10.317,False,0.05,65.0,0,0.694,0.694,0.889,79,True
+Ola da torcida,,10.451,False,0.05,65.0,0,0.709,0.709,0.889,79,True
+Primavera Sound,,10.376,False,0.05,65.0,0,0.701,0.701,0.889,79,True
+Pular sete ondas,,10.308,False,0.05,65.0,0,0.692,0.692,0.889,79,True
+Punk rock,,10.416,False,0.05,65.0,0,0.705,0.705,0.889,79,True
+Reação de streamer,,10.331,False,0.05,65.0,0,0.694,0.694,0.889,79,True
+Rebaixamento do time,,10.42,False,0.05,65.0,0,0.705,0.705,0.889,79,True
+Rádio ligando sozinho,,10.382,False,0.05,65.0,0,0.701,0.701,0.889,79,True
+Salto de bungee jump,,10.452,False,0.05,65.0,0,0.709,0.709,0.889,79,True
+Senha errada,,10.336,False,0.05,65.0,0,0.694,0.694,0.889,79,True
+Show de sertanejo,,10.261,False,0.05,65.0,0,0.69,0.69,0.889,79,True
+Zumbi de The Last of Us,The Last of Us,10.421,False,0.05,65.0,0,0.705,0.705,0.889,79,True
+Apuração do Carnaval,,10.504,False,0.05,65.0,0,0.716,0.716,0.894,80,True
+Atendimento de telemarketing,,10.632,False,0.05,65.0,0,0.725,0.725,0.894,80,True
+Cachorrinho de presente,,10.525,False,0.05,65.0,0,0.72,0.72,0.894,80,True
+Cachorro comendo o sapato,,10.614,False,0.05,65.0,0,0.725,0.725,0.894,80,True
+Chegada da maratona,,10.533,False,0.05,65.0,0,0.72,0.72,0.894,80,True
+Feriado,,10.675,False,0.05,65.0,0,0.731,0.731,0.894,80,True
+Fila do SUS,,10.651,False,0.05,65.0,0,0.727,0.727,0.894,80,True
+Galo da Madrugada,,10.762,False,0.05,65.0,0,0.737,0.737,0.894,80,True
+Galo de madrugada,,10.762,False,0.05,65.0,0,0.737,0.737,0.894,80,True
+Galo e Cruzeiro,clássico mineiro,10.73,False,0.05,65.0,0,0.735,0.735,0.894,80,True
+"Gritar ""apaga a luz""",,10.667,False,0.05,65.0,0,0.727,0.727,0.894,80,True
+"Gritar ""segura""",,10.708,False,0.05,65.0,0,0.733,0.733,0.894,80,True
+"Gritar ""à carga""",,10.504,False,0.05,65.0,0,0.716,0.716,0.894,80,True
+"Grito de ""campeão""",,10.491,False,0.05,65.0,0,0.716,0.716,0.894,80,True
+Grito de academia,,10.479,False,0.05,65.0,0,0.712,0.712,0.894,80,True
+Grito de esforço,,10.47,False,0.05,65.0,0,0.712,0.712,0.894,80,True
+Grito do Tim Maia,"""mais grave, mais agudo""",10.776,False,0.05,65.0,0,0.737,0.737,0.894,80,True
+Medo de trovão,,10.769,False,0.05,65.0,0,0.737,0.737,0.894,80,True
+Mega da Virada,,10.588,False,0.05,65.0,0,0.723,0.723,0.894,80,True
+Parque aquático,,10.707,False,0.05,65.0,0,0.733,0.733,0.894,80,True
+Prejuízo,,10.65,False,0.05,65.0,0,0.727,0.727,0.894,80,True
+Promoção relâmpago,,10.758,False,0.05,65.0,0,0.737,0.737,0.894,80,True
+Ronaldo Fenômeno,,10.499,False,0.05,65.0,0,0.716,0.716,0.894,80,True
+Show da Marília Mendonça,,10.697,False,0.05,65.0,0,0.733,0.733,0.894,80,True
+Show de axé,,10.54,False,0.05,65.0,0,0.72,0.72,0.894,80,True
+Show de pagode,,10.509,False,0.05,65.0,0,0.716,0.716,0.894,80,True
+Sinal do recreio,,10.646,False,0.05,65.0,0,0.727,0.727,0.894,80,True
+Susto do irmão,,10.531,False,0.05,65.0,0,0.72,0.72,0.894,80,True
+Vendedor de biscoito Globo,,10.581,False,0.05,65.0,0,0.723,0.723,0.894,80,True
+Vidro quebrado,,10.691,False,0.05,65.0,0,0.731,0.731,0.894,80,True
+Ópera Rock,,10.593,False,0.05,65.0,0,0.723,0.723,0.894,80,True
+Último quilômetro,,10.67,False,0.05,65.0,0,0.731,0.731,0.894,80,True
+Abrir pacote de figurinha,,11.015,False,0.05,65.0,0,0.756,0.756,0.9,81,True
+Aposentadoria,,10.827,False,0.05,65.0,0,0.744,0.744,0.9,81,True
+Atividade Paranormal,,11.078,False,0.05,65.0,0,0.763,0.763,0.9,81,True
+Barco pirata,,11.037,False,0.05,65.0,0,0.76,0.76,0.9,81,True
+Barco viking do parque,,10.965,False,0.05,65.0,0,0.753,0.753,0.9,81,True
+Batalha naval,,10.831,False,0.05,65.0,0,0.744,0.744,0.9,81,True
+Boleto vencido,,10.977,False,0.05,65.0,0,0.753,0.753,0.9,81,True
+Carro boiando,,11.105,False,0.05,65.0,0,0.77,0.77,0.9,81,True
+Carro deslizando,,11.021,False,0.05,65.0,0,0.756,0.756,0.9,81,True
+Corrida de kart,,11.014,False,0.05,65.0,0,0.756,0.756,0.9,81,True
+Crash da bolsa,,11.084,False,0.05,65.0,0,0.77,0.77,0.9,81,True
+Evolution (brinquedo),,11.075,False,0.05,65.0,0,0.763,0.763,0.9,81,True
+Explosão de creeper,,11.075,False,0.05,65.0,0,0.763,0.763,0.9,81,True
+Finalização no jiu-jítsu,,10.959,False,0.05,65.0,0,0.75,0.75,0.9,81,True
+Gato fugindo,,11.106,False,0.05,65.0,0,0.77,0.77,0.9,81,True
+Gira-gira,,11.003,False,0.05,65.0,0,0.756,0.756,0.9,81,True
+Gol de pênalti,,10.81,False,0.05,65.0,0,0.741,0.741,0.9,81,True
+"Gritar ""corre""",,10.898,False,0.05,65.0,0,0.747,0.747,0.9,81,True
+"Gritar ""desce daí""",,10.89,False,0.05,65.0,0,0.747,0.747,0.9,81,True
+"Gritar ""pega""",,10.813,False,0.05,65.0,0,0.741,0.741,0.9,81,True
+"Grito de ""mito""",,11.035,False,0.05,65.0,0,0.76,0.76,0.9,81,True
+Grito de guerra de gincana,,10.935,False,0.05,65.0,0,0.75,0.75,0.9,81,True
+Lenda urbana,,10.992,False,0.05,65.0,0,0.753,0.753,0.9,81,True
+Marta,,11.077,False,0.05,65.0,0,0.763,0.763,0.9,81,True
+Montanha-russa invertida,,10.877,False,0.05,65.0,0,0.747,0.747,0.9,81,True
+Narração de gol,,10.828,False,0.05,65.0,0,0.744,0.744,0.9,81,True
+Racha de futebol,,10.894,False,0.05,65.0,0,0.747,0.747,0.9,81,True
+Roda punk,,10.786,False,0.05,65.0,0,0.741,0.741,0.9,81,True
+Subida de montanha,,10.956,False,0.05,65.0,0,0.75,0.75,0.9,81,True
+Top Spin,,11.044,False,0.05,65.0,0,0.76,0.76,0.9,81,True
+Xepa da feira,,11.009,False,0.05,65.0,0,0.756,0.756,0.9,81,True
+Xícara giratória,,10.827,False,0.05,65.0,0,0.744,0.744,0.9,81,True
+Apagar as velas,,11.164,False,0.05,65.0,0,0.777,0.777,0.906,82,True
+Arquivo corrompido,,11.206,False,0.05,65.0,0,0.782,0.782,0.906,82,True
+Cachorro fugindo,,11.148,False,0.05,65.0,0,0.777,0.777,0.906,82,True
+Carro da pamonha,,11.247,False,0.05,65.0,0,0.785,0.785,0.906,82,True
+Dama,,11.336,False,0.05,65.0,0,0.797,0.797,0.906,82,True
+Derby paulista,,11.24,False,0.05,65.0,0,0.785,0.785,0.906,82,True
+Festa do Peão de Barretos,Barretos,11.25,False,0.05,65.0,0,0.785,0.785,0.906,82,True
+Gabriel Medina,,11.265,False,0.05,65.0,0,0.788,0.788,0.906,82,True
+Gato derrubando o copo,,11.312,False,0.05,65.0,0,0.79,0.79,0.906,82,True
+"Gritar ""Avengers, assemble""","Vingadores, avante",11.335,False,0.05,65.0,0,0.797,0.797,0.906,82,True
+"Gritar ""aaah""",,11.335,False,0.05,65.0,0,0.797,0.797,0.906,82,True
+Grito de capoeira,,11.307,False,0.05,65.0,0,0.79,0.79,0.906,82,True
+Grito de karateca,,11.085,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Grito de ninja,,11.26,False,0.05,65.0,0,0.788,0.788,0.906,82,True
+Grito do Chris Cornell,,11.085,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Grito do James Brown,,11.085,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Grito do Michael Jackson,hee-hee,11.085,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Grito do William Wallace,,11.085,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Grito dos Excluídos,,11.085,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Ingresso esgotado,,11.305,False,0.05,65.0,0,0.79,0.79,0.906,82,True
+Jenga caindo,Jenga,11.125,False,0.05,65.0,0,0.776,0.776,0.906,82,True
+Juiz roubando,,11.109,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Ligação de telemarketing,,11.195,False,0.05,65.0,0,0.78,0.78,0.906,82,True
+Máscara de Halloween,,11.208,False,0.05,65.0,0,0.782,0.782,0.906,82,True
+Máscara de palhaço,,11.172,False,0.05,65.0,0,0.78,0.78,0.906,82,True
+Pau de sebo,,11.265,False,0.05,65.0,0,0.788,0.788,0.906,82,True
+Pular da cachoeira,,11.181,False,0.05,65.0,0,0.78,0.78,0.906,82,True
+Rayssa Leal,,11.236,False,0.05,65.0,0,0.785,0.785,0.906,82,True
+Restituição do imposto,,11.11,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Susto de máscara,,11.15,False,0.05,65.0,0,0.777,0.777,0.906,82,True
+Xadrez,,11.098,False,0.05,65.0,0,0.77,0.77,0.906,82,True
+Among Us impostor,,11.641,False,0.05,65.0,0,0.822,0.822,0.911,83,True
+Asa-delta,,11.373,False,0.05,65.0,0,0.805,0.805,0.911,83,True
+Balão,,11.594,False,0.05,65.0,0,0.82,0.82,0.911,83,True
+Beto Carrero World,,11.367,False,0.05,65.0,0,0.805,0.805,0.911,83,True
+Cachoeira gelada,,11.446,False,0.05,65.0,0,0.813,0.813,0.911,83,True
+Cachorro rasgando o sofá,,11.415,False,0.05,65.0,0,0.812,0.812,0.911,83,True
+Campainha de madrugada,,11.523,False,0.05,65.0,0,0.816,0.816,0.911,83,True
+Cantar música sertaneja de sofrência,,11.566,False,0.05,65.0,0,0.818,0.818,0.911,83,True
+Carro atolado,,11.369,False,0.05,65.0,0,0.805,0.805,0.911,83,True
+ET de Varginha,,11.355,False,0.05,65.0,0,0.805,0.805,0.911,83,True
+Feriado prolongado,,11.393,False,0.05,65.0,0,0.808,0.808,0.911,83,True
+Figurinha rara do álbum,,11.556,False,0.05,65.0,0,0.818,0.818,0.911,83,True
+Ganhar a rifa,,11.377,False,0.05,65.0,0,0.808,0.808,0.911,83,True
+"Gritar ""Cowabunga""",Tartarugas Ninja,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Gritar ""Expecto Patronum""",,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Gritar ""Geronimo""",,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Gritar ""Kamehameha""",,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Gritar ""Shazam""",Shazam,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Gritar ""abaixa o volume""",,11.382,False,0.05,65.0,0,0.808,0.808,0.911,83,True
+"Gritar ""manhê""",manhê,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Gritar ""nãaaao""",,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Gritar ""uhu""",,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Gritar ""yes""",,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+Halloween Horror Nights,,11.502,False,0.05,65.0,0,0.816,0.816,0.911,83,True
+Palhaço assassino,,11.52,False,0.05,65.0,0,0.816,0.816,0.911,83,True
+Pelada,,11.599,False,0.05,65.0,0,0.82,0.82,0.911,83,True
+Porão escuro,,11.388,False,0.05,65.0,0,0.808,0.808,0.911,83,True
+Pula-pula gigante,,11.433,False,0.05,65.0,0,0.812,0.812,0.911,83,True
+Quadrilha junina,,11.391,False,0.05,65.0,0,0.808,0.808,0.911,83,True
+Rebeca Andrade,,11.462,False,0.05,65.0,0,0.813,0.813,0.911,83,True
+VR de terror,,11.523,False,0.05,65.0,0,0.816,0.816,0.911,83,True
+Ítalo Ferreira,,11.335,False,0.05,65.0,0,0.797,0.797,0.911,83,True
+"Alien, o Oitavo Passageiro",,11.808,False,0.05,65.0,0,0.837,0.837,0.917,84,True
+Bitcoin caindo,,11.656,False,0.05,65.0,0,0.824,0.824,0.917,84,True
+Bitcoin subindo,,11.915,False,0.05,65.0,0,0.844,0.844,0.917,84,True
+Boneca de Round 6,,11.642,False,0.05,65.0,0,0.822,0.822,0.917,84,True
+Cachorro do vizinho latindo,,11.947,False,0.05,65.0,0,0.847,0.847,0.917,84,True
+Carregador sumiu,,11.677,False,0.05,65.0,0,0.826,0.826,0.917,84,True
+Casimiro gritando,,11.737,False,0.05,65.0,0,0.831,0.831,0.917,84,True
+Corra!,,11.696,False,0.05,65.0,0,0.826,0.826,0.917,84,True
+Escalada,,11.792,False,0.05,65.0,0,0.837,0.837,0.917,84,True
+Escape room,,11.641,False,0.05,65.0,0,0.822,0.822,0.917,84,True
+Esqui,,11.696,False,0.05,65.0,0,0.826,0.826,0.917,84,True
+"Gritar ""avante""",,11.981,False,0.05,65.0,0,0.849,0.849,0.917,84,True
+"Gritar ""eita""",,11.885,False,0.05,65.0,0,0.842,0.842,0.917,84,True
+"Gritar ""pique""",,11.79,False,0.05,65.0,0,0.834,0.834,0.917,84,True
+"Gritar ""ui""",,11.754,False,0.05,65.0,0,0.831,0.831,0.917,84,True
+"Grito de ""uh""",,11.836,False,0.05,65.0,0,0.839,0.839,0.917,84,True
+Grito de arremessador de peso,,11.83,False,0.05,65.0,0,0.839,0.839,0.917,84,True
+Grito de samurai,,11.778,False,0.05,65.0,0,0.834,0.834,0.917,84,True
+HD queimado,,11.97,False,0.05,65.0,0,0.849,0.849,0.917,84,True
+Kamikaze do parque aquático,,11.965,False,0.05,65.0,0,0.847,0.847,0.917,84,True
+Kart batendo,,11.698,False,0.05,65.0,0,0.826,0.826,0.917,84,True
+Largada,,11.905,False,0.05,65.0,0,0.842,0.842,0.917,84,True
+Prorrogação,,11.942,False,0.05,65.0,0,0.847,0.847,0.917,84,True
+Pula pirata,,11.767,False,0.05,65.0,0,0.834,0.834,0.917,84,True
+Rá-tim-bum,,11.711,False,0.05,65.0,0,0.829,0.829,0.917,84,True
+Simulador,,11.913,False,0.05,65.0,0,0.844,0.844,0.917,84,True
+Stop,adedonha,11.731,False,0.05,65.0,0,0.829,0.829,0.917,84,True
+Streamer gritando,,11.737,False,0.05,65.0,0,0.831,0.831,0.917,84,True
+TV ligando sozinha,,11.894,False,0.05,65.0,0,0.842,0.842,0.917,84,True
+Vendedor de picolé,,11.756,False,0.05,65.0,0,0.831,0.831,0.917,84,True
+Vizinho brigando,,11.793,False,0.05,65.0,0,0.837,0.837,0.917,84,True
+Vizinho de karaokê,,11.875,False,0.05,65.0,0,0.841,0.841,0.917,84,True
+Arara gritando,,12.309,False,0.05,65.0,0,0.873,0.873,0.922,85,True
+Ayrton Senna vencendo,,12.029,False,0.05,65.0,0,0.854,0.854,0.922,85,True
+Bicho-papão,,12.164,False,0.05,65.0,0,0.865,0.865,0.922,85,True
+Chupa-cabra,,12.044,False,0.05,65.0,0,0.854,0.854,0.922,85,True
+Cigarra cantando,,12.38,False,0.05,65.0,0,0.877,0.877,0.922,85,True
+Counter-Strike,,12.111,False,0.05,65.0,0,0.861,0.861,0.922,85,True
+Cuca,,12.346,False,0.05,65.0,0,0.875,0.875,0.922,85,True
+Expulsão,,12.021,False,0.05,65.0,0,0.851,0.851,0.922,85,True
+Figurinha brilhante,,12.13,False,0.05,65.0,0,0.864,0.864,0.922,85,True
+"Gritar ""Yabba-dabba-doo""",Fred Flintstone,12.095,False,0.05,65.0,0,0.861,0.861,0.922,85,True
+"Gritar ""abaixa""",,12.319,False,0.05,65.0,0,0.873,0.873,0.922,85,True
+Grito de tenista,,12.052,False,0.05,65.0,0,0.854,0.854,0.922,85,True
+Grito do Axl Rose,,12.249,False,0.05,65.0,0,0.869,0.869,0.922,85,True
+Grito lírico,,12.068,False,0.05,65.0,0,0.858,0.858,0.922,85,True
+Hardcore,,12.204,False,0.05,65.0,0,0.867,0.867,0.922,85,True
+Labirinto de espelhos,,12.08,False,0.05,65.0,0,0.858,0.858,0.922,85,True
+Montanha-russa de looping,,12.125,False,0.05,65.0,0,0.864,0.864,0.922,85,True
+Papagaio gritando,,12.042,False,0.05,65.0,0,0.854,0.854,0.922,85,True
+Pipa cortada,,11.983,False,0.05,65.0,0,0.849,0.849,0.922,85,True
+Pular do trampolim,,12.292,False,0.05,65.0,0,0.871,0.871,0.922,85,True
+Pódio,,12.107,False,0.05,65.0,0,0.861,0.861,0.922,85,True
+Round 6,,12.281,False,0.05,65.0,0,0.871,0.871,0.922,85,True
+Salto de paraquedas,,12.03,False,0.05,65.0,0,0.854,0.854,0.922,85,True
+Salto ornamental,,12.046,False,0.05,65.0,0,0.854,0.854,0.922,85,True
+Saque ace,,12.176,False,0.05,65.0,0,0.865,0.865,0.922,85,True
+Skate (manobra acertada),manobra de skate,12.05,False,0.05,65.0,0,0.854,0.854,0.922,85,True
+Strike,,12.111,False,0.05,65.0,0,0.861,0.861,0.922,85,True
+Tobogã gigante,,12.349,False,0.05,65.0,0,0.875,0.875,0.922,85,True
+Vulcão,,12.287,False,0.05,65.0,0,0.871,0.871,0.922,85,True
+Xeque-mate,,12.187,False,0.05,65.0,0,0.867,0.867,0.922,85,True
+"É pique, é pique","é hora, é hora",12.245,False,0.05,65.0,0,0.869,0.869,0.922,85,True
+Apagão,,12.792,False,0.05,65.0,0,0.892,0.892,0.927,86,True
+Avalanche,,12.964,False,0.05,65.0,0,0.898,0.898,0.927,86,True
+Bilhar,,12.748,False,0.05,65.0,0,0.89,0.89,0.927,86,True
+Boi-bumbá,,12.554,False,0.05,65.0,0,0.884,0.884,0.927,86,True
+Boliche,,13.156,False,0.05,65.0,0,0.902,0.902,0.927,86,True
+Cair patinando,,12.432,False,0.05,65.0,0,0.88,0.88,0.927,86,True
+Canoagem,,12.83,False,0.05,65.0,0,0.893,0.893,0.927,86,True
+Carrossel,,12.571,False,0.05,65.0,0,0.885,0.885,0.927,86,True
+Clássico Fla-Flu,,12.488,False,0.05,65.0,0,0.882,0.882,0.927,86,True
+Coringa,,12.602,False,0.05,65.0,0,0.886,0.886,0.927,86,True
+Deslizamento,,13.184,False,0.05,65.0,0,0.903,0.903,0.927,86,True
+Enterrada,,13.111,False,0.05,65.0,0,0.901,0.901,0.927,86,True
+Fone embaraçado,,12.483,False,0.05,65.0,0,0.882,0.882,0.927,86,True
+Forca,,12.627,False,0.05,65.0,0,0.887,0.887,0.927,86,True
+Gincana,,12.884,False,0.05,65.0,0,0.894,0.894,0.927,86,True
+"Gritar ""eba""",,12.433,False,0.05,65.0,0,0.88,0.88,0.927,86,True
+"Grito de ""Mengo""",,12.912,False,0.05,65.0,0,0.896,0.896,0.927,86,True
+Grito de arremessador de martelo,,12.879,False,0.05,65.0,0,0.894,0.894,0.927,86,True
+Grito de lutador de sumô,,12.672,False,0.05,65.0,0,0.888,0.888,0.927,86,True
+Grito maori,haka da Nova Zelândia,12.752,False,0.05,65.0,0,0.89,0.89,0.927,86,True
+Patinação,,13.294,False,0.05,65.0,0,0.904,0.904,0.927,86,True
+Predador,,12.973,False,0.05,65.0,0,0.898,0.898,0.927,86,True
+Pênalti defendido,,12.359,False,0.05,65.0,0,0.877,0.877,0.927,86,True
+Relâmpago,,12.359,False,0.05,65.0,0,0.877,0.877,0.927,86,True
+Rodeio,,12.385,False,0.05,65.0,0,0.879,0.879,0.927,86,True
+Saci,,13.095,False,0.05,65.0,0,0.901,0.901,0.927,86,True
+Sapucaí,,12.889,False,0.05,65.0,0,0.896,0.896,0.927,86,True
+Sinuca,,12.647,False,0.05,65.0,0,0.887,0.887,0.927,86,True
+Sótão,,13.087,False,0.05,65.0,0,0.899,0.899,0.927,86,True
+Telão,,12.917,False,0.05,65.0,0,0.897,0.897,0.927,86,True
+Tsunami,,12.516,False,0.05,65.0,0,0.883,0.883,0.927,86,True
+Videogame travando,,12.729,False,0.05,65.0,0,0.889,0.889,0.927,86,True
+Agachamento,,13.937,False,0.05,65.0,0,0.919,0.919,0.933,87,True
+Arvorismo,,14.62,False,0.05,65.0,0,0.93,0.93,0.933,87,True
+Bombinha,,14.573,False,0.05,65.0,0,0.929,0.929,0.933,87,True
+Chewbacca,,20.0,True,0.02,80.0,0,0.925,0.925,0.933,87,True
+Ciclone,,13.476,False,0.05,65.0,0,0.913,0.913,0.933,87,True
+Crossfit,,14.025,False,0.05,65.0,0,0.922,0.922,0.933,87,True
+Curupira,,14.382,False,0.05,65.0,0,0.928,0.928,0.933,87,True
+Dardos,,13.419,False,0.05,65.0,0,0.909,0.909,0.933,87,True
+Gangorra,,14.258,False,0.05,65.0,0,0.926,0.926,0.933,87,True
+Granizo,,13.472,False,0.05,65.0,0,0.913,0.913,0.933,87,True
+Grito de halterofilista,,13.66,False,0.05,65.0,0,0.917,0.917,0.933,87,True
+Hereditário,,13.954,False,0.05,65.0,0,0.92,0.92,0.933,87,True
+Hopi Hari,,14.061,False,0.05,65.0,0,0.923,0.923,0.933,87,True
+Leiloeiro,,14.111,False,0.05,65.0,0,0.924,0.924,0.933,87,True
+Ludo,,14.764,False,0.05,65.0,0,0.931,0.931,0.933,87,True
+Majestoso,,13.432,False,0.05,65.0,0,0.911,0.911,0.933,87,True
+Momo,,13.39,False,0.05,65.0,0,0.909,0.909,0.933,87,True
+Mímica,,14.138,False,0.05,65.0,0,0.925,0.925,0.933,87,True
+Parintins,,13.571,False,0.05,65.0,0,0.914,0.914,0.933,87,True
+Pebolim,,14.358,False,0.05,65.0,0,0.927,0.927,0.933,87,True
+Pregoeiro,,13.345,False,0.05,65.0,0,0.906,0.906,0.933,87,True
+Rafting,,13.384,False,0.05,65.0,0,0.908,0.908,0.933,87,True
+Rapel,,13.376,False,0.05,65.0,0,0.908,0.908,0.933,87,True
+Raposa (grito),,11.551,False,0.02,70.0,0,0.919,0.919,0.933,87,True
+Snowboard,,13.443,False,0.05,65.0,0,0.911,0.911,0.933,87,True
+Supino,,14.02,False,0.05,65.0,0,0.922,0.922,0.933,87,True
+Tenor,,13.32,False,0.05,65.0,0,0.905,0.905,0.933,87,True
+Totó,,13.762,False,0.05,65.0,0,0.918,0.918,0.933,87,True
+Trenó,,13.628,False,0.05,65.0,0,0.916,0.916,0.933,87,True
+Vaquejada,,13.61,False,0.05,65.0,0,0.915,0.915,0.933,87,True
+Ventania,,13.34,False,0.05,65.0,0,0.906,0.906,0.933,87,True
+"""Gooool""",gooool,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Air guitar,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Amnesia,,15.284,False,0.05,65.0,0,0.934,0.934,0.938,88,True
+Anarriê,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Annabelle,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Bandeirada,,14.958,False,0.05,65.0,0,0.932,0.932,0.938,88,True
+Bandeirão,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Beach Park,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Bendy,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Boitatá,,15.254,False,0.05,65.0,0,0.933,0.933,0.938,88,True
+Brasileirão,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Buzzer beater,cesta no último segundo,8.114,False,0.05,65.0,0,0.962,0.962,0.938,88,True
+Clutch,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Demogorgon,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Discovery,brinquedo Discovery,11.075,False,0.05,65.0,0,0.962,0.962,0.938,88,True
+Disney,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Fan fest,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+"Freddie Mercury ""Ê-ô""",,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Gaules,,15.052,False,0.05,65.0,0,0.932,0.932,0.938,88,True
+Granny,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Grindcore,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Haka,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Headbanging,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Headshot,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Huggy Wuggy,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Ippon,,15.34,False,0.05,65.0,0,0.935,0.935,0.938,88,True
+Jurassic Park,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Juros,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Libertadores,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+Sofrência,,15.419,False,0.05,65.0,0,0.936,0.936,0.938,88,True
+É campeão,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+É penta,,20.0,True,0.05,65.0,0,0.962,0.962,0.938,88,True
+"""Ronaldinho!""",,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Lollapalooza,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Mariah Carey,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Michael Myers,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Minecraft creeper,creeper,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Mosh,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+O Iluminado,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Outlast,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Pentakill,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Ping-pong,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Playcenter,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Pokémon shiny,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Poppy Playtime,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+React,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Resident Evil,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Romário,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Screamo,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Silent Hill,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Siren Head,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Slender Man,Slender,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Soundcheck,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Splash,brinquedo de água,9.504,False,0.05,65.0,0,0.962,0.962,0.943,89,True
+Stranger Things,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+T-rex,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+The Walking Dead,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Twister,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Unboxing,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Usain Bolt,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Vecna,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Velociraptor,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+Vini Jr.,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+War,,20.0,True,0.05,65.0,0,0.962,0.962,0.943,89,True
+"""Aparou""",aparar a pipa,16.583,False,0.05,65.0,0,0.992,0.992,0.949,90,True
+"""Uh, vai morrer""",,9.806,False,0.01,30.0,0,0.995,0.995,0.949,90,True
+Bugio,guariba,14.561,False,0.05,60.0,0,0.991,0.991,0.949,90,True
+Cerol,,14.791,False,0.01,30.0,0,0.997,0.997,0.949,90,True
+Estalinho,,16.715,False,0.05,65.0,0,0.994,0.994,0.949,90,True
+Fila da balada,,10.974,False,0.01,30.0,0,0.996,0.996,0.949,90,True
+Gralha,,14.17,False,0.02,70.0,0,0.99,0.99,0.949,90,True
+"Gritar ""Yippee-ki-yay""",,11.613,False,0.01,30.0,0,0.997,0.997,0.949,90,True
+Grito do Tarzan da Jane,,11.085,False,0.01,20.0,0,0.998,0.998,0.949,90,True
+Impostômetro,,15.372,False,0.01,30.0,0,0.999,0.999,0.949,90,True
+Interclasse,,16.636,False,0.05,65.0,0,0.993,0.993,0.949,90,True
+Maritaca,,15.752,False,0.05,65.0,0,0.989,0.989,0.949,90,True
+Paraglider,parapente,15.734,False,0.05,65.0,0,0.989,0.989,0.949,90,True
+Whistle register,,20.0,True,0.05,65.0,0,0.962,0.962,0.949,90,True
 Wilhelm scream,grito Wilhelm,11.085,False,0.02,10.0,0,1.0,1.0,0.949,90,True
+Wingsuit,,20.0,True,0.05,65.0,0,0.962,0.962,0.949,90,True

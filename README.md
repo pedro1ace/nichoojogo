@@ -166,9 +166,12 @@ uma resposta, mude a lembrança dela no `dados/sinais/llm/<cat>.json` e rode `ag
   linhas de dias que já passaram. Categoria nova entra sozinha no fim da fila quando o
   `montar_jogo.py` roda, e ele avisa até que dia a fila dá. São 7 categorias novas por dia (49 por semana).
   A lista legível de cada dia (data, perguntas e quantas respostas cada uma tem) fica em [`DIAS.md`](DIAS.md).
-- **Em média, 1000 respostas ou mais por categoria.** Categorias fechadas (elementos, constelações,
-  países, ossos, capitais, Tom Hanks, Turma da Mônica, esportes olímpicos, astro e cosmo) são
-  exceção e ficam com o tamanho real. As abertas precisam compensar e passar de 1000.
+- **Toda categoria aberta tem pelo menos 1000 respostas antes de ir ao ar.** Categorias fechadas
+  (elementos, constelações, países, ossos, capitais, Tom Hanks, Turma da Mônica, esportes olímpicos,
+  astro e cosmo) são exceção e ficam com o tamanho real; a lista está em `FECHADAS`, no
+  `scripts/montar_jogo.py`, que avisa de toda categoria aberta da fila abaixo de 1000.
+- **O jogo é para todas as idades.** Nada de resposta sobre sexo, drogas, bebedeira, cigarro ou
+  palavrão, nem em categoria engraçada.
 - A pontuação premia o quão nichada ou complexa é a resposta, e a singularidade vale mais que tudo.
 
 ## Como adicionar uma categoria
