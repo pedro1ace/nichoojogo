@@ -511,8 +511,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let modoCanto = 0, alvoCanto = 0; // 1 = mascote no cantinho (digitando), 0 = ao lado da caixa
   // 1 = mascote ao lado do cartão da pergunta (na contagem antes do relógio)
   let modoPergunta = 0, alvoPergunta = 0;
-  let cartaoPergunta = null, painelResposta = null;
-  let empurrao = 0; // quanto ele desce para não ficar atrás do cartão ou do painel
+  let cartaoPergunta = null;
   let larguraCaixa = 200;
   let cobertas = [];
   let alfaCurio = 1;
@@ -1255,36 +1254,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const doLado = r.right + 2 * mw + 24 < innerWidth;
       const xp = (doLado ? r.right + mw + 6 : r.right - mw) / escala;
       const yp = (doLado ? r.top + r.height / 2 : r.bottom + mh + 6) / escala;
-      // o caminho contorna o cartão por baixo, sem passar por trás dele:
-      // saindo, ele primeiro desce pela lateral e só depois vai para o lado;
-      // chegando, vai primeiro para o lado e só depois sobe
-      const w = Math.min(1, modoPergunta);
-      const kx = suave(Math.min(1, w / 0.55));
-      const ky = suave(Math.max(0, (w - 0.45) / 0.55));
-      x += (xp - x) * kx;
-      y += (yp - y) * ky;
-      perto = kx;
+      const k = suave(Math.min(1, modoPergunta));
+      x += (xp - x) * k;
+      y += (yp - y) * k;
+      perto = k;
     }
     // perto do cartão, o balanço de lado diminui para não encostar nele
     foguete.x = x + lado * (1 - perto);
     foguete.y = y + balanco - mascote.pulo;
-    // garantia: nunca fica escondido atrás do cartão da pergunta nem do painel de resposta
-    // (relógio e campo). Se cairia em cima de um deles, desliza para logo abaixo dele.
-    painelResposta = painelResposta || document.getElementById("painel-resposta");
-    const qx = foguete.x * escala;
-    let qy = foguete.y * escala;
-    // o painel só conta quando o campo de resposta está à mostra (na contagem ele fica vazio)
-    const painelVisivel = painelResposta && !painelResposta.hidden && !document.getElementById("formulario").hidden;
-    for (const el of [cartaoPergunta, painelVisivel ? painelResposta : null]) {
-      const b = el && el.getBoundingClientRect();
-      if (b && b.width && qx + mw > b.left && qx - mw < b.right && qy + mh > b.top && qy - mh < b.bottom) qy = b.bottom + mh;
-    }
-    const alvoEmpurrao = qy / escala - foguete.y;
-    // para sair de trás, na hora (o cartão e o painel entram com animação, então não dá tranco);
-    // para voltar ao lugar, devagar
-    if (alvoEmpurrao >= empurrao) empurrao = alvoEmpurrao;
-    else empurrao += (alvoEmpurrao - empurrao) * (1 - Math.exp(-dt * 4));
-    foguete.y += empurrao;
     const descendo = camera.velocidade > 20;
     const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.08 + Math.min(0.3, camera.velocidade / 3000);
     // quadro: perninhas remando (rápido descendo, devagar parado), pisca de vez em quando
