@@ -103,7 +103,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Bebidas | Cite uma bebida (com ou sem álcool) | 829 |
+| 1 | Bebidas com gás | Cite uma bebida com gás (sem álcool) | 1027 |
 | 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1034 |
 | 3 | Cores | Cite uma cor (ou um tom de cor) | 1057 |
 | 4 | Países | Cite um país | 242 |
@@ -120,7 +120,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1070 |
 | 4 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
 | 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1033 |
-| 6 | Coisas com camadas | Cite algo que tem camadas | 1391 |
+| 6 | Coisas com camadas | Cite algo que tem camadas | 1389 |
 | 7 | Tipos de corrida | Cite um tipo de corrida | 1106 |
 
 ## Dia 11 · sáb 07/11/2026
