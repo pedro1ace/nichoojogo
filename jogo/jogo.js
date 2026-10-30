@@ -705,7 +705,7 @@ function palpitar(evento) {
   registrar(cat, achada.resposta, pontos, supernova, percentil, espertalhao);
   // nas raras, a festa da chegada aparece sozinha antes do resultado; no espertalhão, o
   // tardigradozinho atravessa a caixa e cai antes do resultado
-  const pausa = supernova ? 1000 : espertalhao ? 2400 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
+  const pausa = supernova ? 1000 : espertalhao ? 2800 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
   setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova, espertalhao), duracaoQueda(pontos, supernova) + pausa);
 }
 

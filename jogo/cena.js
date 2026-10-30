@@ -1968,7 +1968,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.fillText(texto, 0, p * 0.5);
       tx.shadowBlur = 0;
       desenharCompanhia(c, w, h, true, alfa);
-      if (c.espertalhao && tc > 0) desenharBaratinha(tc, w, h, alfa);
+      if (c.espertalhao && tc > 0) desenharBaratinha(c, tc, w, h, alfa, x + w / 2 + boiaX, y + boiaY);
       tx.restore();
     }
   }
@@ -1982,26 +1982,61 @@ function criarCena(telaPixel, telaTexto, raiz) {
     incomum: { img: () => naves.planeta, n: 1, vel: 0.6, tam: 0.9 },
     rara: { img: () => naves.cometa, n: 1, vel: 1.1, tam: 0.9, cauda: true },
   };
-  // Espertalhão: um tardigradozinho anda por cima da caixa e, no fim, cai lá de cima.
-  const BARATINHA = { espera: 250, anda: 1300, cai: 750 };
-  function desenharBaratinha(tc, w, h, alfa) {
+  // Espertalhão: um tardigradozinho bem pequeno anda por cima da caixa (tic tic tic), para na
+  // ponta, leva um susto ("!") e despenca girando, com um apito de queda e uma poeirinha laranja.
+  const BARATINHA = { espera: 250, anda: 1300, susto: 380, cai: 750 };
+  function desenharBaratinha(c, tc, w, h, alfa, cx, cy) {
     const t = tc - BARATINHA.espera;
-    if (t < 0 || t > BARATINHA.anda + BARATINHA.cai) return;
-    const pz = Math.max(1, Math.round(escala * 0.55));
+    const fimSusto = BARATINHA.anda + BARATINHA.susto;
+    if (t < 0 || t > fimSusto + BARATINHA.cai) return;
+    if (!c.somAndar) { c.somAndar = true; if (window.Som && Som.passinhos) Som.passinhos(BARATINHA.anda / 1000); }
+    const pz = Math.max(1, Math.round(escala * 0.34));
     const sw = skins.tardigrado.largura * pz, sh = skins.tardigrado.altura * pz;
-    const quadro = skins.tardigrado.andar[Math.floor(t / 110) % 4];
+    const andando = t < BARATINHA.anda;
+    const quadro = skins.tardigrado.andar[andando ? Math.floor(t / 90) % 4 : 0];
     const k = Math.min(1, t / BARATINHA.anda);
-    let x = -w / 2 - sw * 0.2 + k * (w + sw * 0.1);
+    let x = -w / 2 - sw * 0.2 + k * (w - sw * 0.3);
     let y = -h / 2 - sh + pz * 3; // as patinhas pisam na borda de cima
     let giro = 0, a = alfa;
     if (movimentoDoSistema) x = -sw / 2;
-    if (t > BARATINHA.anda) {
-      // passou da ponta: tropeça e despenca girando
-      const q = (t - BARATINHA.anda) / 1000;
-      x += q * 60;
+    if (!andando && t <= fimSusto) {
+      // parou na beirada: treme e aparece um "!" em cima
+      x += Math.sin(t / 18) * pz * 0.8;
+      tx.save();
+      tx.globalAlpha = alfa;
+      tx.fillStyle = "#ff9f43";
+      tx.font = `${Math.max(14, pz * 12)}px 'Nicho Pixel', 'Press Start 2P', monospace`;
+      tx.textAlign = "center";
+      tx.textBaseline = "bottom";
+      const pulo = Math.min(1, (t - BARATINHA.anda) / 90);
+      tx.fillText("!", x + sw * 0.75, y - pz * 2 - pulo * pz * 3);
+      tx.restore();
+    }
+    if (t > fimSusto) {
+      if (!c.somCair) {
+        c.somCair = true;
+        if (window.Som && Som.tombo) Som.tombo();
+        // poeirinha laranja saindo da beirada
+        if (!movimentoDoSistema) {
+          for (let i = 0; i < 14; i++) {
+            const ang = -Math.PI / 2 + (Math.random() - 0.5) * 2.2;
+            const v = 60 + Math.random() * 140;
+            estouros.push({
+              x: cx + w / 2, y: cy - h / 2,
+              vx: Math.cos(ang) * v, vy: Math.sin(ang) * v,
+              vida: 0, dura: 0.4 + Math.random() * 0.5,
+              cor: Math.random() < 0.3 ? "#ffffff" : "#ff9f43",
+              tam: 2, estrela: Math.random() < 0.3,
+            });
+          }
+        }
+      }
+      // tropeça e despenca girando
+      const q = (t - fimSusto) / 1000;
+      x += q * 70;
       y += 1600 * q * q;
-      giro = q * 7;
-      a = alfa * Math.max(0, 1 - (t - BARATINHA.anda) / BARATINHA.cai);
+      giro = q * 8;
+      a = alfa * Math.max(0, 1 - (t - fimSusto) / BARATINHA.cai);
     }
     tx.save();
     tx.globalAlpha = a;

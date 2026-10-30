@@ -263,6 +263,18 @@ const Som = (() => {
     faixa(nivel) {
       for (let i = 0; i <= nivel + 1; i++) tom(NOTAS[i], 0.18, { tipo: "square", volume: 0.07, atraso: 0.09 * i });
     },
+    // espertalhão: o tardigradozinho andando na caixa (tic tic tic bem agudo)
+    passinhos(segundos) {
+      const n = Math.round(segundos / 0.09);
+      for (let i = 0; i < n; i++) tom(i % 2 ? 2350 : 2100, 0.025, { tipo: "square", volume: 0.018, atraso: 0.25 + i * 0.09 });
+    },
+    // ...e o tombo: "ops!", apito de queda descendo e um "ploc" lá embaixo
+    tombo() {
+      tom(1400, 0.08, { tipo: "square", volume: 0.05, ate: 1900 });
+      tom(1900, 0.6, { tipo: "triangle", volume: 0.06, atraso: 0.1, ate: 260 });
+      tom(180, 0.12, { tipo: "sine", volume: 0.09, atraso: 0.72, ate: 70 });
+      ruido(0.06, { volume: 0.03, de: 1200, ate: 300 });
+    },
     supernova() {
       for (let i = 0; i < 12; i++) tom(NOTAS[i % 6] * (i >= 6 ? 2 : 1), 0.12, { tipo: "square", volume: 0.06, atraso: 0.05 * i });
       ruido(1.2, { volume: 0.08, de: 6000, ate: 3000 });
