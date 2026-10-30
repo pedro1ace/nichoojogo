@@ -65,6 +65,7 @@ AJUSTES = RAIZ / "dados" / "ajustes"
 SAIDA = RAIZ / "dados" / "pesos"
 SINAIS_WIKIDATA = RAIZ / "dados" / "sinais" / "wikidata"
 SINAIS_FAMA = RAIZ / "dados" / "sinais" / "fama"  # scripts/agente_fama.py
+SINAIS_FREQUENCIA = RAIZ / "dados" / "sinais" / "frequencia"  # scripts/complexidade.py
 
 PESO_PERCENTIL = 0.7
 FORA_DO_JOGO = RAIZ / "dados" / "fora_do_jogo.txt"
@@ -182,6 +183,20 @@ def ler_fama(cat_id: str) -> dict[str, dict]:
     if not caminho.exists():
         return {}
     return json.loads(caminho.read_text(encoding="utf-8")).get("respostas", {})
+
+
+def ler_frequencia(cat_id: str) -> dict[str, float]:
+    """Frequência da palavra no português (zipf, scripts/complexidade.py), para listas de palavras comuns."""
+    caminho = SINAIS_FREQUENCIA / f"{cat_id}.json"
+    if not caminho.exists():
+        return {}
+    return json.loads(caminho.read_text(encoding="utf-8"))
+
+
+def lembranca_pela_frequencia(zipf: float) -> float:
+    """Palavra do dia a dia é óbvia mesmo que a simulação não a tenha citado: zipf 6 ("minha") vale
+    como 30 em 1000 (óbvia), 5,5 como 10 (comum), 5 como 3 (incomum). Abaixo de 4,5, rara."""
+    return 10 ** (zipf - 4.5)
 
 
 def metodo_da_fama(cat_id: str) -> str:
@@ -373,9 +388,17 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         # régua fixa: óbvia, comum e incomum pela contagem; a cauda (rara) se espalha de 60 a 90
         # na ordem da fama, como antes
         raras = []
+        frequencia = ler_frequencia(cat["id"])
+        if frequencia:
+            # lista de palavras comuns: a cauda rara vai da mais frequente (60) à mais difícil (90)
+            ordenadas.sort(key=lambda r: (-frequencia.get(r["resposta"], 0.0), r["fama"],
+                                          normalizar(r["resposta"])))
         for r in ordenadas:
             medida = fama_agente.get(r["resposta"]) or {}
             r["lembranca"] = medida.get("lembranca_em_1000", 0.0)
+            if frequencia:
+                r["zipf"] = frequencia.get(r["resposta"], 0.0)
+                r["lembranca"] = round(max(r["lembranca"], lembranca_pela_frequencia(r["zipf"])), 2)
             r["acima"] = medida.get("acima", 0.0)
             p = pontos_fixos(r["lembranca"])
             if p is None:
