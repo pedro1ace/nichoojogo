@@ -444,7 +444,7 @@ function montarQuadrados() {
   estado.categorias.forEach((_, i) => {
     const q = document.createElement("span");
     const h = estado.historico[i];
-    if (h) q.style.background = h.resposta ? faixaDe(h.pontos, h.supernova).cor : "#3a3470";
+    if (h) q.style.background = h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao).cor : "#3a3470";
     if (i === estado.rodada && !h) q.className = "atual";
     caixa.append(q);
   });
@@ -696,15 +696,17 @@ function palpitar(evento) {
   const achada = busca.resposta;
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
+  const espertalhao = !supernova && !!achada.espertalhao;
   const percentil = percentilDe(cat, achada);
   enviarResposta(cat, { resposta: achada.resposta });
   mostrarPergunta(false);
-  cena.descer(achada.resposta, pontos, supernova);
+  cena.descer(achada.resposta, pontos, supernova, espertalhao);
   Som.descer(Math.min(1, pontos / 100));
-  registrar(cat, achada.resposta, pontos, supernova, percentil);
-  // nas raras, a festa da chegada aparece sozinha antes do resultado
-  const pausa = supernova ? 1000 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
-  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova), duracaoQueda(pontos, supernova) + pausa);
+  registrar(cat, achada.resposta, pontos, supernova, percentil, espertalhao);
+  // nas raras, a festa da chegada aparece sozinha antes do resultado; no espertalhão, o
+  // tardigradozinho atravessa a caixa e cai antes do resultado
+  const pausa = supernova ? 1000 : espertalhao ? 2400 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
+  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova, espertalhao), duracaoQueda(pontos, supernova) + pausa);
 }
 
 function tempoEsgotado() {
@@ -716,15 +718,15 @@ function tempoEsgotado() {
   mostrarResultado(cat, null, 0, false);
 }
 
-function registrar(cat, resposta, pontos, supernova, percentil) {
+function registrar(cat, resposta, pontos, supernova, percentil, espertalhao = false) {
   estado.total += pontos;
-  estado.historico.push({ categoria: cat.titulo, resposta, pontos, supernova, percentil });
+  estado.historico.push({ categoria: cat.titulo, resposta, pontos, supernova, percentil, ...(espertalhao ? { espertalhao } : {}) });
   salvarProgresso();
 }
 
-function mostrarResultado(cat, resposta, pontos, supernova) {
+function mostrarResultado(cat, resposta, pontos, supernova, espertalhao) {
   const faixa = resposta
-    ? faixaDe(pontos, supernova)
+    ? faixaDe(pontos, supernova, espertalhao)
     : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: "O relógio zerou. Esta fica sem pontos." };
   const card = $("resultado");
   card.style.setProperty("--cor-faixa", faixa.cor);
@@ -759,7 +761,7 @@ function mostrarResultado(cat, resposta, pontos, supernova) {
   card.hidden = false;
   cena.resultado();
   if (supernova) Som.supernova();
-  else if (resposta) Som.faixa(FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
+  else if (resposta) Som.faixa(faixa === ESPERTALHAO ? 0 : FAIXAS.length - 1 - FAIXAS.indexOf(faixa));
   Som.profundidade(anosLuzDoDia());
   montarQuadrados();
   if (ultima) $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
@@ -813,7 +815,7 @@ function mostrarFim(comSom) {
 
   const seq = mostrarDiaESequencia();
   if (!ALEATORIO) avisarSkinNova(seq);
-  const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova).emoji : "⚫"));
+  const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao).emoji : "⚫"));
   $("compartilhar").textContent =
     `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
   $("enviar").hidden = !navigator.share;
@@ -833,7 +835,7 @@ function montarGrafico() {
     g.append(e);
   });
   estado.historico.forEach((h, i) => {
-    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#ff6b81" };
+    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao) : { id: "nada", cor: "#ff6b81" };
     const col = document.createElement("div");
     col.className = "coluna";
     col.style.color = faixa.cor;
@@ -1051,7 +1053,7 @@ function desenharCurva(c, pontos) {
 function montarFaixas() {
   const lista = $("tabela-faixas");
   lista.innerHTML = "";
-  const alcancadas = new Set(estado.historico.filter((h) => h.resposta).map((h) => faixaDe(h.pontos, h.supernova).id));
+  const alcancadas = new Set(estado.historico.filter((h) => h.resposta).map((h) => faixaDe(h.pontos, h.supernova, h.espertalhao).id));
   const linhas = [
     { ...SUPERNOVA, faixa: "★ 1 por pergunta", texto: "A resposta escondida. Só existe uma." },
     ...FAIXAS.map((f, i) => ({
@@ -1059,6 +1061,7 @@ function montarFaixas() {
       faixa: i === 0 ? `${f.min}+ pts` : `${f.min}–${FAIXAS[i - 1].min - 1} pts`,
       texto: f.frase,
     })),
+    { ...ESPERTALHAO, faixa: "15 pts · às vezes", texto: ESPERTALHAO.frase },
   ];
   for (const l of linhas) {
     const li = document.createElement("li");
@@ -1082,7 +1085,7 @@ function montarRespostas() {
   const lista = $("respostas-dia");
   lista.innerHTML = "";
   estado.historico.forEach((h, i) => {
-    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova) : { id: "nada", cor: "#6b6a99", nome: "" };
+    const faixa = h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao) : { id: "nada", cor: "#6b6a99", nome: "" };
     const li = document.createElement("li");
     li.style.setProperty("--c", faixa.cor);
     if (!h.resposta) li.className = "vazia";
@@ -1228,10 +1231,10 @@ function montarBanco(cat, sua) {
     .map((r) => {
       const sn = r.resposta === cat.supernova;
       const pontos = sn ? r.pontos * 2 : r.pontos;
-      return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn), sn };
+      return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn };
     })
     .sort((a, b) => b.sn - a.sn || b.pontos - a.pontos || a.nome.localeCompare(b.nome, "pt"));
-  const filtros = [{ id: "todas", nome: "Todas", cor: "#eef0ff" }, SUPERNOVA, ...FAIXAS];
+  const filtros = [{ id: "todas", nome: "Todas", cor: "#eef0ff" }, SUPERNOVA, ...FAIXAS, ESPERTALHAO];
   let ativo = "todas";
   const chips = document.createElement("div");
   chips.className = "chips";

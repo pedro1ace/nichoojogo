@@ -200,6 +200,7 @@ REGUA_FIXA = [
     (4.0, 1.0, 35, 58),     # incomum: de 1 a 4
 ]
 RARA = (60, 90)
+PONTOS_ESPERTALHAO = 15  # espertalhão (scripts/fama.py, "@"): o clichê esperto, como "O tempo" em Coisas que voam
 PONTOS_CRIATIVA = 70  # resposta criativa (scripts/fama.py, "~"): Homer em Coisas amarelas, Panela em Instrumentos  # menos de 1 em 1000: os pontos sobem pela ordem da cauda
 
 
@@ -370,6 +371,10 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
             # resposta criativa (associação lateral, "~" na simulação): a sacada vale no mínimo isto
             if (fama_agente.get(r["resposta"]) or {}).get("criativa"):
                 r["pontos"] = max(r["pontos"], PONTOS_CRIATIVA)
+            # espertalhão ("@"): parece sacada, mas todo mundo pensa nela. Faixa própria, pontos fixos.
+            if (fama_agente.get(r["resposta"]) or {}).get("espertalhao"):
+                r["pontos"] = PONTOS_ESPERTALHAO
+                r["espertalhao"] = True
             r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
 
     marcadas = [r for r in respostas if r["supernova_manual"]]
@@ -383,6 +388,7 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         candidatas = sorted((r for r in respostas if r["pontos"] >= REGUA[-1][3]), key=lambda r: -r["visitas"])
     else:
         candidatas = sorted(respostas, key=lambda r: -r["pontos"])
+    candidatas = [r for r in candidatas if not r.get("espertalhao")]
     supernova = (marcadas or candidatas or respostas)[0]
     cat["supernova"] = supernova["resposta"]
     # O jogo dobra os pontos da supernova: 50 vira 100, acima de qualquer outra resposta.

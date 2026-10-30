@@ -22,7 +22,7 @@ JOGO = RAIZ / "jogo"
 # (icf, visitas, fama...) ficam em dados/pesos/ e deixariam o dados.js com o dobro do tamanho.
 # "acima" (só nas categorias com simulação de jogadores, scripts/fama.py): a parte dos jogadores
 # que daria uma resposta mais óbvia que esta. É o "melhor que X% dos jogadores" do diário de bordo.
-CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos", "acima")
+CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos", "acima", "espertalhao")
 
 
 def enxugar(cat: dict) -> dict:
