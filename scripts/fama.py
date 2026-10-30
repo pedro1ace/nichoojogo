@@ -30,6 +30,7 @@ Formato de dados/sinais/lembranca/<cat>.txt (uma resposta por linha, "nome conta
     Batata inglesa = Batata 3      ("o que o jogador digita = a resposta da lista", quando o casamento sozinho não acha)
     ! Banana 4                     (gente diz, mas não vale: conta na soma, não entra na lista)
     ~ Homer Simpson 6              (criativa: associação lateral, não um membro literal; vira rara)
+    @ Tempo 2                      (espertalhão: o clichê esperto que muita gente dá; vale 15, faixa própria)
 
 Uso:
     python3 scripts/fama.py                    # todas as categorias com simulação
@@ -88,14 +89,15 @@ def ler_simulacao(cat_id: str) -> dict | None:
             continue
         invalida = linha.startswith("!")
         criativa = linha.startswith("~")
-        linha = linha.lstrip("!~").strip()
+        espertalhao = linha.startswith("@")
+        linha = linha.lstrip("!~@").strip()
         m = re.match(r"^(.*?)\s+([\d.,]+)$", linha)
         if not m:
             sys.exit(f"{arq.name}: linha sem contagem: {linha!r}")
         nome, n = m.group(1).strip(), float(m.group(2).replace(",", "."))
         dito, _, alvo = nome.partition("=")
         itens.append({"dito": dito.strip(), "alvo": alvo.strip() or None, "n": n, "invalida": invalida,
-                      "criativa": criativa})
+                      "criativa": criativa, "espertalhao": espertalhao})
     return {"meta": meta, "itens": itens}
 
 
@@ -179,6 +181,7 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
     idx = indice(cat)
     contagem: dict[str, float] = {}
     criativas: set[str] = set()
+    espertalhoes: set[str] = set()
     faltando = []
     for it in sim["itens"]:
         if it["invalida"]:
@@ -193,6 +196,8 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
         contagem[alvo] = contagem.get(alvo, 0.0) + it["n"]
         if it["criativa"]:
             criativas.add(alvo)
+        if it["espertalhao"]:
+            espertalhoes.add(alvo)
     soma_simulada = sum(it["n"] for it in sim["itens"])
     # Em 1000 pessoas sempre sobra uma cauda de respostas que só uma pessoa dá. Se a simulação
     # passou disso, a cabeça encolhe na mesma proporção.
@@ -247,6 +252,7 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
             "lembranca_em_1000": round(lembra[nome], 4),
             "na_simulacao": na_cabeca,
             "criativa": nome in criativas,
+            "espertalhao": nome in espertalhoes,
             "estimada": na_cabeca,
             "acima": acima[nome],
             "conhecem_pct": a.get("conhecem_pct"),
@@ -333,6 +339,78 @@ def completar(cat_id: str, faltando: list[dict]) -> int:
     return len(faltando)
 
 
+# ---------- duplicatas ----------
+
+# Nomes próprios em que o plural é outro lugar (Dourado e Dourados são duas cidades).
+SEM_SINGULAR = {"cidades-do-brasil", "cidades-do-mundo", "capitais-do-mundo", "paises", "paises-acima-do-equador"}
+
+
+def chaves(nome: str, cat_id: str) -> set[str]:
+    """Formas que tornam duas linhas da lista a mesma resposta ("Queijo de coalho" e "Coalho")."""
+    base = re.sub(r"\(.*?\)", "", nome)
+    if cat_id in SEM_SINGULAR:
+        t = normalizar(base)
+        formas = {t, t.replace(" ", "")}
+    else:
+        formas = set(variantes(base))
+        t = normalizar(base)
+        for pre in PREFIXOS:
+            if t.startswith(pre) and len(t) - len(pre) >= 4:
+                formas |= set(variantes(t[len(pre):]))
+                break
+        formas |= {re.sub(r"\b(de|do|da|dos|das|a)\b", " ", f) for f in list(formas)}
+        formas = {re.sub(r"\s+", "", f) for f in formas} | formas
+    return {f for f in formas if len(f) >= 3}
+
+
+def duplicatas(cat: dict) -> list[list[str]]:
+    """Linhas diferentes da lista que são a mesma resposta. Cada uma ganharia pontos próprios:
+    "Coalho" 12 e "Queijo de coalho" 72."""
+    dono: dict[str, str] = {}
+    pai: dict[str, str] = {r["resposta"]: r["resposta"] for r in cat["respostas"]}
+
+    def raiz(n: str) -> str:
+        while pai[n] != n:
+            n = pai[n]
+        return n
+
+    for r in cat["respostas"]:
+        for nome in [r["resposta"], *r["apelidos"]]:
+            for k in chaves(nome, cat["id"]):
+                if k in dono and raiz(dono[k]) != raiz(r["resposta"]):
+                    pai[raiz(r["resposta"])] = raiz(dono[k])
+                dono.setdefault(k, r["resposta"])
+    grupos: dict[str, list[str]] = {}
+    for r in cat["respostas"]:
+        grupos.setdefault(raiz(r["resposta"]), []).append(r["resposta"])
+    return [g for g in grupos.values() if len(g) > 1]
+
+
+def juntar(cat_id: str, grupos: list[list[str]], fama: dict) -> int:
+    """Cada grupo vira uma linha só: fica a mais lembrada, as outras viram apelidos dela."""
+    arq = CATEGORIAS / f"{cat_id}.txt"
+    linhas = arq.read_text(encoding="utf-8").rstrip("\n").split("\n")
+    principal = lambda l: l.split("|")[0].strip()
+    lembra = lambda n: fama["respostas"].get(n, {}).get("lembranca_em_1000", 0.0)
+    for grupo in grupos:
+        fica = max(grupo, key=lambda n: (lembra(n), -len(n)))
+        extras = []
+        for i, l in enumerate(linhas):
+            if not l.startswith("#") and principal(l) in grupo and principal(l) != fica:
+                extras += [p.strip() for p in l.split("|") if p.strip()]
+                linhas[i] = None
+        linhas = [l for l in linhas if l is not None]
+        for i, l in enumerate(linhas):
+            if not l.startswith("#") and principal(l) == fica:
+                ja = {normalizar(p) for p in l.split("|")}
+                novos = [e for e in dict.fromkeys(extras) if normalizar(e) not in ja]
+                linhas[i] = " | ".join([l.rstrip(), *novos]) if novos else l
+                break
+        print(f"  {cat_id}: {' + '.join(grupo)} -> {fica}")
+    arq.write_text("\n".join(linhas) + "\n", encoding="utf-8")
+    return len(grupos)
+
+
 # ---------- trava ----------
 
 
@@ -345,9 +423,12 @@ def fila_de_hoje_em_diante() -> list[str]:
     return fila[max(0, hoje) * 7:]
 
 
-def conferir(cats: list[str], base: pontuar.BaseICF) -> list[str]:
+def conferir(cats: list[str], base: pontuar.BaseICF, perto: range = range(7, 14)) -> list[str]:
+    """Problemas que travam. Respostas repetidas só travam nas categorias de amanhã (`perto`, na fila
+    que começa hoje): as de hoje já estão no ar e não mudam; nas mais longe viram aviso, porque juntar pede uma olhada (América Mineiro e América de Natal são
+    times diferentes que a lista ligou por apelido)."""
     problemas = []
-    for cat_id in cats:
+    for n, cat_id in enumerate(cats):
         cat = ler_categoria(CATEGORIAS / f"{cat_id}.txt")
         sim = ler_simulacao(cat_id)
         if sim is None:
@@ -359,6 +440,15 @@ def conferir(cats: list[str], base: pontuar.BaseICF) -> list[str]:
         if faltando:
             nomes = ", ".join(f["resposta"] for f in faltando[:8])
             problemas.append(f"{cat_id}: {len(faltando)} respostas da simulação faltam na lista ({nomes})")
+        dup = duplicatas(cat)
+        if dup:
+            nomes = "; ".join(" = ".join(g) for g in dup[:5])
+            texto = (f"{cat_id}: {len(dup)} respostas repetidas na lista, cada uma com seus pontos ({nomes}); "
+                     f"confira e rode scripts/fama.py {cat_id} --completar")
+            if n in perto:
+                problemas.append(texto)
+            else:
+                print("AVISO:", texto)
         fama = agente_fama.ler_json(FAMA / f"{cat_id}.json")
         if fama.get("metodo") != METODO or set(fama.get("respostas", {})) != {r["resposta"] for r in cat["respostas"]}:
             problemas.append(f"{cat_id}: a fama está velha (a lista mudou); rode scripts/fama.py {cat_id}")
@@ -377,7 +467,7 @@ def main() -> None:
 
     if args.conferir:
         cats = args.categorias or fila_de_hoje_em_diante()
-        problemas = conferir(cats, base)
+        problemas = conferir(cats, base, range(len(cats))) if args.categorias else conferir(cats, base)
         for linha in problemas:
             print("FALTA:", linha)
         print(f"{len(cats)} categorias conferidas, {len(problemas)} problemas")
@@ -404,6 +494,13 @@ def main() -> None:
             print(f"{cat_id}: {completar(cat_id, faltando)} respostas novas na lista")
             cat = ler_categoria(CATEGORIAS / f"{cat_id}.txt")
             fama, faltando = calcular(cat, sim, base)
+        dup = duplicatas(cat)
+        if dup and args.completar:
+            print(f"{cat_id}: {juntar(cat_id, dup, fama)} respostas repetidas juntadas")
+            cat = ler_categoria(CATEGORIAS / f"{cat_id}.txt")
+            fama, faltando = calcular(cat, sim, base)
+        elif dup:
+            print(f"{cat_id}: {len(dup)} respostas repetidas na lista (use --completar para juntar)")
         (FAMA / f"{cat_id}.json").write_text(json.dumps(fama, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         todas_faltando += faltando
         todas_suspeitas += suspeitas(cat, fama)

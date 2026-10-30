@@ -200,6 +200,7 @@ REGUA_FIXA = [
     (4.0, 1.0, 35, 58),     # incomum: de 1 a 4
 ]
 RARA = (60, 90)
+PONTOS_ESPERTALHAO = 15  # espertalhão (scripts/fama.py, "@"): o clichê esperto, como "O tempo" em Coisas que voam
 PONTOS_CRIATIVA = 70  # resposta criativa (scripts/fama.py, "~"): Homer em Coisas amarelas, Panela em Instrumentos  # menos de 1 em 1000: os pontos sobem pela ordem da cauda
 
 
@@ -263,6 +264,24 @@ def na_regua(i: int, n: int, faixas: list[int] | None = None) -> int:
             return round(de + (ate - de) * k)
         inicio += cota
     return REGUA[-1][4]
+
+
+FRASES = RAIZ / "dados" / "frases.txt"
+
+
+def frases_de(cat_id: str) -> dict[str, str]:
+    """Frase própria de uma resposta, no lugar da frase da faixa (dados/frases.txt:
+    "categoria | resposta | frase")."""
+    if not FRASES.exists():
+        return {}
+    saida = {}
+    for linha in FRASES.read_text(encoding="utf-8").splitlines():
+        if not linha.strip() or linha.startswith("#"):
+            continue
+        partes = [p.strip() for p in linha.split("|", 2)]
+        if len(partes) == 3 and partes[0] == cat_id:
+            saida[partes[1]] = partes[2]
+    return saida
 
 
 def fora_do_jogo() -> set[str]:
@@ -370,6 +389,10 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
             # resposta criativa (associação lateral, "~" na simulação): a sacada vale no mínimo isto
             if (fama_agente.get(r["resposta"]) or {}).get("criativa"):
                 r["pontos"] = max(r["pontos"], PONTOS_CRIATIVA)
+            # espertalhão ("@"): parece sacada, mas todo mundo pensa nela. Faixa própria, pontos fixos.
+            if (fama_agente.get(r["resposta"]) or {}).get("espertalhao"):
+                r["pontos"] = PONTOS_ESPERTALHAO
+                r["espertalhao"] = True
             r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
 
     marcadas = [r for r in respostas if r["supernova_manual"]]
@@ -383,14 +406,20 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         candidatas = sorted((r for r in respostas if r["pontos"] >= REGUA[-1][3]), key=lambda r: -r["visitas"])
     else:
         candidatas = sorted(respostas, key=lambda r: -r["pontos"])
+    candidatas = [r for r in candidatas if not r.get("espertalhao")]
     supernova = (marcadas or candidatas or respostas)[0]
     cat["supernova"] = supernova["resposta"]
     # O jogo dobra os pontos da supernova: 50 vira 100, acima de qualquer outra resposta.
     supernova["pontos"] = SUPERNOVA_PONTOS
     supernova["peso"] = round((SUPERNOVA_PONTOS / 100) ** (1 / CURVA), 3)
     respostas.sort(key=lambda r: (r["pontos"], r["resposta"]))
+    frases = frases_de(cat["id"])
     for r in respostas:
         del r["supernova_manual"]
+        if r["resposta"] in frases:
+            r["frase"] = frases.pop(r["resposta"])
+    for nome in frases:
+        print(f"AVISO: {cat['id']}: dados/frases.txt tem frase para {nome!r}, que não está na lista")
     return cat
 
 

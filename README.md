@@ -143,9 +143,11 @@ O jeito novo (`scripts/fama.py`), para toda categoria, antes de ela ir ao ar:
 
 1. **Simulação** (`dados/sinais/lembranca/<cat>.txt`): 1000 jogadores variados respondem à pergunta como no jogo,
    **sem ver a lista**. A contagem (soma 1000) é a fama. Linha `Nome 12` = 12 em 1000; `Dito = Nome na lista 3`
-   quando o jogador escreveria diferente; `! Nome 4` = gente diz, mas não vale; `~ Nome 6` = **criativa**.
+   quando o jogador escreveria diferente; `! Nome 4` = gente diz, mas não vale; `~ Nome 6` = **criativa**; `@ Nome 2` = **espertalhão**.
 2. **Criativa** (`~`): associação lateral, não um exemplo literal da pergunta (Homer Simpson em Coisas amarelas,
    Panela em Instrumentos). A IA só marca se é criativa, não chuta quantos diriam. Vale no mínimo 70 (`PONTOS_CRIATIVA`).
+   **Espertalhão** (`@`, marcado à mão): o clichê esperto que muita gente dá ("O tempo" em Coisas que voam).
+   Faixa própria, laranja, 15 pontos fixos (`PONTOS_ESPERTALHAO`). Nunca é a singularidade.
 3. **Completude**: o que a simulação diz e a lista não aceita é resposta ou apelido faltando
    (`dados/sinais/revisao/faltando.csv`). `--completar` põe na lista (apelido vai na linha da resposta).
    `suspeitas.csv` lista o que a estimativa antiga achava comum e a simulação esqueceu.
@@ -157,6 +159,11 @@ O jeito novo (`scripts/fama.py`), para toda categoria, antes de ela ir ao ar:
    uma resposta mais óbvia. Antes era a parte da lista com menos pontos, e Panela aparecia como "6%".
 7. **Trava**: `python3 scripts/fama.py --conferir` falha se alguma categoria de hoje em diante não tem simulação,
    se a pergunta mudou ou se falta resposta na lista. O `montar_jogo.py` avisa das que faltam.
+8. **Respostas repetidas**: duas linhas da lista que são a mesma resposta ("Coalho" e "Queijo de coalho",
+   "Abridor de lata" e "Abridor de latas") ganhavam pontos separados, e quem digitava a forma longa levava 72 por
+   uma resposta óbvia. O `--conferir` trava nas categorias de amanhã e avisa nas outras; `--completar` junta cada
+   grupo na linha mais lembrada, com as outras formas como apelidos. Confira o grupo antes: às vezes um apelido
+   errado liga duas respostas diferentes.
 
 ```bash
 python3 scripts/fama.py --simular minha-categoria   # gera a simulação com o Claude (ANTHROPIC_API_KEY)

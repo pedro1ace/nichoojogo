@@ -73,6 +73,9 @@ const FAIXAS = [
   { id: "comum", min: 18, nome: "LETRADO", cor: "#6cf09a", emoji: "🌙", frase: "Boa, mas ainda perto de casa." },
   { id: "obvia", min: 0, nome: "ÓBVIA", cor: "#e8f0ff", emoji: "🛰️", frase: "Todo mundo pensou nessa." },
 ];
+// Espertalhão: parece sacada, mas todo mundo pensa nela ("O tempo" em Coisas que voam).
+// Marcada à mão (scripts/fama.py, "@"), então só aparece em algumas perguntas. Vale 15 pontos fixos.
+const ESPERTALHAO = { id: "espertalhao", nome: "ESPERTALHÃO", cor: "#ff9f43", emoji: "🪳", frase: "Parecia esperta, mas todo mundo teve a mesma ideia." };
 const SUPERNOVA = { id: "supernova", nome: "SINGULARIDADE", cor: "#ff4fd8", emoji: "🌟", frase: "Você achou a resposta escondida desta pergunta!" };
 
 // mistura duas cores "#rrggbb" (k = 0 dá a primeira, 1 dá a segunda)
@@ -82,8 +85,9 @@ function misturarCor(a, b, k) {
   return `rgb(${ca.map((v, i) => Math.round(v + (cb[i] - v) * k)).join(",")})`;
 }
 
-function faixaDe(pontos, supernova) {
+function faixaDe(pontos, supernova, espertalhao) {
   if (supernova) return SUPERNOVA;
+  if (espertalhao) return ESPERTALHAO;
   return FAIXAS.find((f) => pontos >= f.min);
 }
 
@@ -96,7 +100,7 @@ function alvosDaPergunta(cat) {
   const respostas = (cat && cat.respostas) || [];
   const secreta = cat && respostas.find((r) => r.resposta === cat.supernova);
   const alvos = [...FAIXAS].reverse().map((f) => {
-    const pts = respostas.filter((r) => r !== secreta && faixaDe(r.pontos, false) === f).map((r) => r.pontos);
+    const pts = respostas.filter((r) => r !== secreta && !r.espertalhao && faixaDe(r.pontos, false) === f).map((r) => r.pontos);
     const [de, ate] = pts.length ? [Math.min(...pts), Math.max(...pts)] : PONTOS_DA_REGUA[f.id];
     return { faixa: f, pontos: de, rotulo: `${f.nome} · ${de === ate ? `+${de}` : `${de} a ${ate}`} pts` };
   });
@@ -352,7 +356,7 @@ function criarIcones() {
   };
   // cada faixa num tom só (escuro, médio, a cor, e um brilho claro): simples, sem confusão de cores.
   // A supernova fica colorida de propósito.
-  const MONO = { obvia: "#e8f0ff", comum: "#6cf09a", incomum: "#5fa8ff", rara: "#c38bff", nada: "#ff6b81" };
+  const MONO = { espertalhao: "#ff9f43", obvia: "#e8f0ff", comum: "#6cf09a", incomum: "#5fa8ff", rara: "#c38bff", nada: "#ff6b81" };
   function pintarDeUmaCor(ctx, hex) {
     const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
     const mistura = (k, alvo) => c.map((v) => Math.round(v + (alvo - v) * k));
@@ -399,6 +403,30 @@ function criarIcones() {
     }
     ctx.globalAlpha = 1;
     esfera(ctx, 7, 16, 5, ["#606070", "#a0a0b0", "#e0e0ea", "#ffffff"]);
+  });
+  fazer("espertalhao", (ctx) => {
+    // tardigradozinho de perfil, como uma baratinha: corpo em gomos, cabeça à direita, 4 patinhas
+    for (let y = 6; y < 20; y++) {
+      for (let x = 1; x < 24; x++) {
+        const corpo = ((x - 10.5) / 8.5) ** 2 + ((y - 12) / 4.6) ** 2;
+        const cabeca = ((x - 19.5) / 3.6) ** 2 + ((y - 12.8) / 3.4) ** 2;
+        if (corpo > 1 && cabeca > 1) continue;
+        const topo = y < 10 ? 1 : 0;
+        const dobra = corpo <= 1 && [6, 10, 14].includes(x) && y < 14;
+        ctx.fillStyle = dobra ? "#663218" : topo ? "#f0c08a" : y > 14 ? "#934d24" : "#dd9a5a";
+        ctx.fillRect(x, y, 1, 1);
+      }
+    }
+    for (const lx of [4, 8, 12, 16]) {
+      ctx.fillStyle = "#663218";
+      ctx.fillRect(lx, 16, 2, 3);
+      ctx.fillStyle = "#f0c08a";
+      ctx.fillRect(lx + 1, 19, 1, 1);
+    }
+    ctx.fillStyle = "#140803";
+    ctx.fillRect(20, 11, 1, 1); // olho
+    ctx.fillStyle = "#3a1a0c";
+    ctx.fillRect(23, 13, 1, 1); // boquinha
   });
   fazer("supernova", (ctx) => {
     for (let a = 0; a < 16; a++) {
@@ -1940,6 +1968,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       tx.fillText(texto, 0, p * 0.5);
       tx.shadowBlur = 0;
       desenharCompanhia(c, w, h, true, alfa);
+      if (c.espertalhao && tc > 0) desenharBaratinha(tc, w, h, alfa);
       tx.restore();
     }
   }
@@ -1953,6 +1982,35 @@ function criarCena(telaPixel, telaTexto, raiz) {
     incomum: { img: () => naves.planeta, n: 1, vel: 0.6, tam: 0.9 },
     rara: { img: () => naves.cometa, n: 1, vel: 1.1, tam: 0.9, cauda: true },
   };
+  // Espertalhão: um tardigradozinho anda por cima da caixa e, no fim, cai lá de cima.
+  const BARATINHA = { espera: 250, anda: 1300, cai: 750 };
+  function desenharBaratinha(tc, w, h, alfa) {
+    const t = tc - BARATINHA.espera;
+    if (t < 0 || t > BARATINHA.anda + BARATINHA.cai) return;
+    const pz = Math.max(1, Math.round(escala * 0.55));
+    const sw = skins.tardigrado.largura * pz, sh = skins.tardigrado.altura * pz;
+    const quadro = skins.tardigrado.andar[Math.floor(t / 110) % 4];
+    const k = Math.min(1, t / BARATINHA.anda);
+    let x = -w / 2 - sw * 0.2 + k * (w + sw * 0.1);
+    let y = -h / 2 - sh + pz * 3; // as patinhas pisam na borda de cima
+    let giro = 0, a = alfa;
+    if (movimentoDoSistema) x = -sw / 2;
+    if (t > BARATINHA.anda) {
+      // passou da ponta: tropeça e despenca girando
+      const q = (t - BARATINHA.anda) / 1000;
+      x += q * 60;
+      y += 1600 * q * q;
+      giro = q * 7;
+      a = alfa * Math.max(0, 1 - (t - BARATINHA.anda) / BARATINHA.cai);
+    }
+    tx.save();
+    tx.globalAlpha = a;
+    tx.imageSmoothingEnabled = false;
+    tx.translate(x + sw / 2, y + sh / 2);
+    tx.rotate(giro);
+    tx.drawImage(quadro, -sw / 2, -sh / 2, sw, sh);
+    tx.restore();
+  }
   function desenharCompanhia(c, w, h, frente, alfa) {
     const cfg = COMPANHIA[c.faixa];
     if (!cfg || movimentoDoSistema) return;
@@ -2070,10 +2128,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
       alvoCanto = 1;
     },
     // Desce o foguete pelos pontos da resposta e solta a palavra numa caixinha.
-    descer(texto, pontos, supernova) {
+    descer(texto, pontos, supernova, espertalhao) {
       const agora = performance.now();
       const peso = Math.min(1, pontos / 100);
-      const faixa = faixaDe(pontos, supernova);
+      const faixa = faixaDe(pontos, supernova, espertalhao);
       const distancia = viagem(pontos);
       alvoCanto = 0;
       alvoPergunta = 0;
@@ -2103,6 +2161,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
         brilho: 6 + 18 * peso,
         peso: supernova ? 1.2 : peso,
         supernova,
+        espertalhao: !supernova && !!espertalhao,
         angulo: (Math.random() - 0.5) * 0.4, // entra torta e endireita
       });
       mascote.pulo = 6 + 10 * peso;

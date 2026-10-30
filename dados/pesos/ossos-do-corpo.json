@@ -437,21 +437,6 @@
    "acima": 0.9562
   },
   {
-   "resposta": "Atlas",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.812,
-   "lembranca": 2.0,
-   "conhecem": null,
-   "visitas": 0,
-   "ajustado": true,
-   "percentil": 0.352,
-   "fama": 0.352,
-   "pontos": 46,
-   "peso": 0.678,
-   "acima": 0.9679
-  },
-  {
    "resposta": "Carpo",
    "apelidos": [],
    "sem_dado": false,
@@ -497,21 +482,19 @@
    "acima": 0.9679
   },
   {
-   "resposta": "Hioide",
-   "apelidos": [
-    "osso hioide"
-   ],
+   "resposta": "Atlas",
+   "apelidos": [],
    "sem_dado": false,
-   "icf": 17.922,
-   "lembranca": 1.0,
+   "icf": 11.812,
+   "lembranca": 2.0,
    "conhecem": null,
-   "visitas": 7530,
+   "visitas": 0,
    "ajustado": true,
-   "percentil": 0.444,
-   "fama": 0.444,
+   "percentil": 0.352,
+   "fama": 0.352,
    "pontos": 50,
    "peso": 0.707,
-   "acima": 0.9791
+   "acima": 0.9679
   },
   {
    "resposta": "Escafoide",
@@ -540,6 +523,23 @@
    "lembranca": 1.0,
    "conhecem": null,
    "visitas": 0,
+   "ajustado": true,
+   "percentil": 0.444,
+   "fama": 0.444,
+   "pontos": 58,
+   "peso": 0.762,
+   "acima": 0.9791
+  },
+  {
+   "resposta": "Hioide",
+   "apelidos": [
+    "osso hioide"
+   ],
+   "sem_dado": false,
+   "icf": 17.922,
+   "lembranca": 1.0,
+   "conhecem": null,
+   "visitas": 7530,
    "ajustado": true,
    "percentil": 0.444,
    "fama": 0.444,
@@ -1301,5 +1301,5 @@
  ],
  "fonte_peso": "agente",
  "metodo": "simulacao",
- "supernova": "Hioide"
+ "supernova": "Atlas"
 }
