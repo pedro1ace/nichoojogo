@@ -37,7 +37,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Gigantes do Spotify | Cite um dos 3 mil artistas mais ouvidos de todos os tempos no Spotify | 2989 |
 | 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 926 |
 | 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 1056 |
-| 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 8395 |
+| 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 7751 |
 
 ## Dia 4 · sáb 31/10/2026
 

@@ -69,6 +69,8 @@ scripts/
   fama.py                  fama nova: simulação de 1000 jogadores, completude, régua fixa e a trava
   agente_fama.py           agente de fama antigo: lembrança por LLM, visitas e tendência na Wikipédia
   montar_jogo.py           gera jogo/dados.js e jogar.html
+  complexidade.py          listas de palavras comuns (Termo): pontos pela frequência da palavra e --limpar tira as que não existem
+  recusadas.py             palavras que os jogadores digitaram e a lista recusou
   sinais.py                protótipo: junta sinais de fama e propõe um peso novo (não mexe no jogo)
   buscar_wikidata.py       protótipo: sitelinks, visitas na Wikipédia e apelidos do Wikidata
   llm_nicho.py             protótipo: estimativa do Claude de "quantos em 1000 dariam esta resposta"
