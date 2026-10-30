@@ -104,12 +104,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Bebidas com gás | Cite uma bebida com gás | 1302 |
-| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1044 |
+| 2 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1054 |
 | 3 | Cores | Cite uma cor (ou um tom de cor) | 1057 |
 | 4 | Países | Cite um país | 242 |
-| 5 | Material escolar | Cite um item de material escolar | 1037 |
-| 6 | Coisas redondas | Cite algo que é redondo | 1201 |
-| 7 | Coisas com casca | Cite algo que tem casca | 1039 |
+| 5 | Material escolar | Cite um item de material escolar | 1040 |
+| 6 | Coisas redondas | Cite algo que é redondo | 1203 |
+| 7 | Coisas com casca | Cite algo que tem casca | 1040 |
 
 ## Dia 10 · sex 06/11/2026
 
