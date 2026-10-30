@@ -199,7 +199,8 @@ REGUA_FIXA = [
     (15.0, 4.0, 18, 34),    # comum: de 4 a 15
     (4.0, 1.0, 35, 58),     # incomum: de 1 a 4
 ]
-RARA = (60, 90)  # menos de 1 em 1000: os pontos sobem pela ordem da cauda
+RARA = (60, 90)
+PONTOS_CRIATIVA = 70  # resposta criativa (scripts/fama.py, "~"): Homer em Coisas amarelas, Panela em Instrumentos  # menos de 1 em 1000: os pontos sobem pela ordem da cauda
 
 
 def pontos_fixos(lembra: float) -> int | None:
@@ -366,6 +367,9 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
             k = i / (len(raras) - 1) if len(raras) > 1 else 0.5
             r["pontos"] = round(RARA[0] + (RARA[1] - RARA[0]) * k)
         for r in ordenadas:
+            # resposta criativa (associação lateral, "~" na simulação): a sacada vale no mínimo isto
+            if (fama_agente.get(r["resposta"]) or {}).get("criativa"):
+                r["pontos"] = max(r["pontos"], PONTOS_CRIATIVA)
             r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
 
     marcadas = [r for r in respostas if r["supernova_manual"]]

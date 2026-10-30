@@ -1,8 +1,7 @@
 // Contagem das respostas do dia (Cloudflare Pages Function, em /api/respostas).
 //
-// É daqui que sai a fama de verdade: quantos jogadores de hoje deram cada resposta.
-// O jogo mistura essa contagem com o chute de partida da simulação (scripts/fama.py)
-// e, com umas 100 pessoas, a contagem real já manda nos pontos.
+// Não mexe nos pontos (ainda há poucos jogadores e ficaria volátil). Serve para
+// conferir, somando várias semanas, onde a simulação de jogadores (scripts/fama.py) erra.
 //
 // Guarda só o dia, a categoria e a resposta. Nada de IP, nome ou cookie.
 // As respostas que a lista recusou também são contadas (em "recusadas"), para entrarem

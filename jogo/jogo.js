@@ -477,7 +477,6 @@ function comecar() {
 
 function iniciarRodada() {
   const cat = estado.categorias[estado.rodada];
-  buscarContagem();
   cena.novaRodada(cat);
   montarQuadrados();
   $("rotulo-pergunta").textContent = `INCURSÃO ${estado.rodada + 1} DE ${estado.categorias.length}`;
@@ -696,9 +695,8 @@ function palpitar(evento) {
   pararRelogio();
   const achada = busca.resposta;
   const supernova = achada.resposta === cat.supernova;
-  const aoVivo = famaAoVivo(cat, achada);
-  const pontos = supernova ? achada.pontos * 2 : aoVivo.pontos;
-  const percentil = aoVivo.acima;
+  const pontos = supernova ? achada.pontos * 2 : achada.pontos;
+  const percentil = percentilDe(cat, achada);
   enviarResposta(cat, { resposta: achada.resposta });
   mostrarPergunta(false);
   cena.descer(achada.resposta, pontos, supernova);
@@ -859,31 +857,13 @@ function montarGrafico() {
   });
 }
 
-// ---------- fama ao vivo ----------
-// Os pontos vêm do que os jogadores de hoje responderam (/api/respostas, functions/api/respostas.js).
-// Antes de haver gente, vale o chute de partida da simulação de 1000 jogadores (scripts/fama.py),
-// que entra na conta como se fosse FORCA_DO_CHUTE jogadores. Com umas 100 pessoas, a contagem
-// real já pesa tanto quanto o chute, e daí para a frente manda. Aberto do computador (file://),
-// sem internet, ou numa categoria sem simulação, ficam os pontos fixos de dados.js.
+// ---------- respostas do dia ----------
+// Os pontos são fixos (dados.js, da simulação de 1000 jogadores do scripts/fama.py): ainda não há
+// jogadores suficientes para a contagem real mandar sem ficar volátil. Mas as respostas vão
+// anônimas para /api/respostas (functions/api/respostas.js), por dois motivos:
+//   - as recusadas viram candidatas na fila (scripts/fila.py): a lista se completa sozinha;
+//   - somadas ao longo das semanas, mostram onde a simulação erra (scripts/fama.py --calibrar no futuro).
 const API_RESPOSTAS = "/api/respostas";
-const FORCA_DO_CHUTE = 100;
-// A mesma régua do scripts/pontuar.py (REGUA_FIXA): quantos em 1000 dão a resposta -> pontos.
-const REGUA_FIXA = [
-  [150, 15, 8, 15], // óbvia: 15 ou mais em 1000
-  [15, 4, 18, 34], // comum
-  [4, 1, 35, 58], // incomum
-];
-let contagemDoDia = null; // { [categoria]: { total, contagem: { [resposta]: n } } }
-
-function buscarContagem() {
-  if (location.protocol === "file:") return;
-  fetch(`${API_RESPOSTAS}?dia=${estado.data}`)
-    .then((r) => (r.ok ? r.json() : null))
-    .then((c) => {
-      if (c && c.categorias) contagemDoDia = c.categorias;
-    })
-    .catch(() => {});
-}
 
 // Cada navegador conta uma resposta aceita por categoria por dia; recusadas contam a cada tentativa.
 function enviarResposta(cat, corpo) {
@@ -901,45 +881,12 @@ function enviarResposta(cat, corpo) {
   }).catch(() => {});
 }
 
-function pontosDaRegua(emMil) {
-  for (const [de, ate, pDe, pAte] of REGUA_FIXA) {
-    if (emMil >= ate) {
-      const k = (Math.log(Math.min(emMil, de)) - Math.log(de)) / (Math.log(ate) - Math.log(de));
-      return Math.round(pDe + (pAte - pDe) * Math.max(0, Math.min(1, k)));
-    }
-  }
-  return null; // menos de 1 em 1000: rara
-}
-
-// { pontos, acima }: acima = a parte dos jogadores que deu (ou daria) uma resposta mais óbvia.
-function famaAoVivo(cat, achada) {
-  const fixo = {
-    pontos: achada.pontos,
-    acima: typeof achada.acima === "number"
-      ? achada.acima
-      : cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length,
-  };
-  const dia = contagemDoDia && contagemDoDia[cat.id];
-  if (!dia || !dia.total || typeof achada.l !== "number") return fixo;
-  const fatia = (r) =>
-    (((dia.contagem[r.resposta] || 0) + FORCA_DO_CHUTE * ((r.l || 0) / 1000)) / (dia.total + FORCA_DO_CHUTE)) * 1000;
-  const minha = fatia(achada);
-  let mais = 0;
-  let igual = 0;
-  let soma = 0;
-  for (const r of cat.respostas) {
-    const f = fatia(r);
-    soma += f;
-    if (r === achada) continue;
-    if (f > minha) mais += f;
-    else if (f === minha) igual += f;
-  }
-  const regua = pontosDaRegua(minha);
-  return {
-    // rara (menos de 1 em 1000): fica com a ordem da cauda de dados.js, no mínimo 60
-    pontos: regua === null ? Math.max(60, achada.pontos) : regua,
-    acima: soma ? (mais + igual / 2) / soma : fixo.acima,
-  };
+// "acima" vem da simulação: a parte dos jogadores que daria uma resposta mais óbvia que esta.
+// Sem simulação, a conta antiga: a parte da lista que vale menos pontos.
+function percentilDe(cat, achada) {
+  return typeof achada.acima === "number"
+    ? achada.acima
+    : cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
 }
 
 // ---------- curva dos viajantes ----------

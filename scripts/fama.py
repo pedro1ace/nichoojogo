@@ -29,6 +29,7 @@ Formato de dados/sinais/lembranca/<cat>.txt (uma resposta por linha, "nome conta
     Alface 140
     Batata inglesa = Batata 3      ("o que o jogador digita = a resposta da lista", quando o casamento sozinho não acha)
     ! Banana 4                     (gente diz, mas não vale: conta na soma, não entra na lista)
+    ~ Homer Simpson 6              (criativa: associação lateral, não um membro literal; vira rara)
 
 Uso:
     python3 scripts/fama.py                    # todas as categorias com simulação
@@ -64,6 +65,7 @@ INICIO = dt.date(2026, 10, 28)  # dia #1
 METODO = "simulacao"
 # Na cauda, ninguém passa disto (em 1000): quem não apareceu em 1000 jogadores simulados é raro.
 TETO_CAUDA = 0.9
+TETO_CRIATIVA = 0.5  # em 1000: resposta criativa nunca passa disto, então é sempre rara
 MIN_CAUDA = 40  # em 1000: no mínimo isto fica para a cauda (respostas que só uma pessoa daria)
 MODELO = "claude-opus-5-5"
 
@@ -85,13 +87,15 @@ def ler_simulacao(cat_id: str) -> dict | None:
             meta[chave.strip()] = valor.strip()
             continue
         invalida = linha.startswith("!")
-        linha = linha.lstrip("!").strip()
+        criativa = linha.startswith("~")
+        linha = linha.lstrip("!~").strip()
         m = re.match(r"^(.*?)\s+([\d.,]+)$", linha)
         if not m:
             sys.exit(f"{arq.name}: linha sem contagem: {linha!r}")
         nome, n = m.group(1).strip(), float(m.group(2).replace(",", "."))
         dito, _, alvo = nome.partition("=")
-        itens.append({"dito": dito.strip(), "alvo": alvo.strip() or None, "n": n, "invalida": invalida})
+        itens.append({"dito": dito.strip(), "alvo": alvo.strip() or None, "n": n, "invalida": invalida,
+                      "criativa": criativa})
     return {"meta": meta, "itens": itens}
 
 
@@ -158,6 +162,7 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
     """Devolve (o arquivo de fama, as respostas que a simulação deu e a lista não tem)."""
     idx = indice(cat)
     contagem: dict[str, float] = {}
+    criativas: set[str] = set()
     faltando = []
     for it in sim["itens"]:
         if it["invalida"]:
@@ -170,6 +175,8 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
             # o jogador digitaria "dito", e o jogo não aceitaria: falta o apelido
             faltando.append({"categoria": cat["id"], "resposta": it["dito"], "em_1000": it["n"], "apelido_de": alvo})
         contagem[alvo] = contagem.get(alvo, 0.0) + it["n"]
+        if it["criativa"]:
+            criativas.add(alvo)
     soma_simulada = sum(it["n"] for it in sim["itens"])
     # Em 1000 pessoas sempre sobra uma cauda de respostas que só uma pessoa dá. Se a simulação
     # passou disso, a cabeça encolhe na mesma proporção.
@@ -178,6 +185,11 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
         contagem = {k: v * fator for k, v in contagem.items()}
         soma_simulada = 1000.0 - MIN_CAUDA
     massa_cauda = max(0.0, 1000.0 - soma_simulada)
+    # Resposta criativa (associação lateral, "~" na simulação: Homer em Coisas amarelas, Panela em
+    # Instrumentos): mesmo que algumas pessoas pensem nela, é a sacada que o jogo quer premiar.
+    # Fica sempre rara, logo depois das raras literais que alguém da simulação citou.
+    for nome in criativas:
+        contagem[nome] = min(contagem[nome], TETO_CRIATIVA)
 
     # A cauda: ordem pelos sinais antigos (estimativa velha do LLM, visitas, texto), que o
     # agente_fama.py já sabe juntar. Só servem para desempatar quem a simulação não citou.
@@ -218,6 +230,7 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
             "fama": round(fama, 4),
             "lembranca_em_1000": round(lembra[nome], 4),
             "na_simulacao": na_cabeca,
+            "criativa": nome in criativas,
             "estimada": na_cabeca,
             "acima": acima[nome],
             "conhecem_pct": a.get("conhecem_pct"),
@@ -264,6 +277,8 @@ Liste toda resposta que pelo menos 0,3 de 1000 daria, da mais dita para a menos 
 linha, no formato "Resposta contagem" (ex.: "Alface 140"). A soma deve dar 1000 menos a cauda \
 (respostas que só uma pessoa em mil daria, que você não lista). Conte apelidos e grafias da mesma \
 coisa juntos. Respostas que muita gente dá mas estão erradas para a pergunta vão com "! " na frente. \
+Respostas criativas, que respondem por uma associação lateral e não por ser um exemplo literal \
+(Homer Simpson para "algo amarelo", panela para "instrumento musical"), vão com "~ " na frente. \
 Pense em coisas atuais também (elencos, lançamentos, gente famosa de {ano}). Só as linhas, sem comentário."""
 
 
