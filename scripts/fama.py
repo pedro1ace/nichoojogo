@@ -128,6 +128,9 @@ def singular(palavra: str) -> str:
 PREFIXOS = ("queijo de ", "queijo ", "cao de ", "cao ", "programa ", "missao ", "raca ", "jogo de ", "jogo ")
 
 
+ULTIMA = "\x00ultima:"  # chave do índice pela última palavra
+
+
 def indice(cat: dict) -> dict[str, str]:
     idx: dict[str, str] = {}
     for r in cat["respostas"]:
@@ -142,6 +145,12 @@ def indice(cat: dict) -> dict[str, str]:
                     for v in variantes(t[len(pre):]):
                         idx.setdefault(v, r["resposta"])
                     break
+    # pela última palavra do nome principal (ver casar)
+    for r in cat["respostas"]:
+        partes = normalizar(r["resposta"]).split()
+        if len(partes) > 1:
+            chave = ULTIMA + partes[-1]
+            idx[chave] = (idx[chave] + "\n" + r["resposta"]) if chave in idx else r["resposta"]
     # o nome principal vence o apelido de outra resposta
     for r in cat["respostas"]:
         idx[normalizar(r["resposta"])] = r["resposta"]
@@ -152,6 +161,13 @@ def casar(nome: str, idx: dict[str, str]) -> str | None:
     for v in variantes(nome):
         if v in idx:
             return idx[v]
+    # uma palavra só ("Messi", "Uno"): casa com a única resposta da lista que termina nela
+    # ("Lionel Messi", "Fiat Uno"). O --completar põe a palavra como apelido, para o jogo aceitar.
+    t = normalizar(nome)
+    if " " not in t and len(t) >= 3:
+        achados = idx.get(ULTIMA + t)
+        if achados and len(set(achados.split("\n"))) == 1:
+            return achados.split("\n")[0]
     return None
 
 
@@ -171,7 +187,7 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
         if alvo is None:
             faltando.append({"categoria": cat["id"], "resposta": it["alvo"] or it["dito"], "em_1000": it["n"]})
             continue
-        if it["alvo"] and casar(it["dito"], idx) is None:
+        if not any(v in idx for v in variantes(it["dito"])):
             # o jogador digitaria "dito", e o jogo não aceitaria: falta o apelido
             faltando.append({"categoria": cat["id"], "resposta": it["dito"], "em_1000": it["n"], "apelido_de": alvo})
         contagem[alvo] = contagem.get(alvo, 0.0) + it["n"]
@@ -302,15 +318,17 @@ def completar(cat_id: str, faltando: list[dict]) -> int:
     """Respostas novas vão para o fim da lista; apelidos novos, para a linha da resposta."""
     arq = CATEGORIAS / f"{cat_id}.txt"
     linhas = arq.read_text(encoding="utf-8").rstrip("\n").split("\n")
-    apelidos = [f for f in faltando if f.get("apelido_de")]
-    for f in apelidos:
+    # Primeiro as respostas novas (sem repetir), depois os apelidos: um apelido pode ser de uma resposta nova.
+    novas = list(dict.fromkeys(f["resposta"] for f in faltando if not f.get("apelido_de")))
+    if novas:
+        linhas += ["# entraram pela simulação de jogadores (scripts/fama.py --completar)", *novas]
+    for f in faltando:
+        if not f.get("apelido_de"):
+            continue
         for i, linha in enumerate(linhas):
             if not linha.startswith("#") and linha.split("|")[0].strip() == f["apelido_de"]:
                 linhas[i] = linha.rstrip() + " | " + f["resposta"]
                 break
-    novas = [f["resposta"] for f in faltando if not f.get("apelido_de")]
-    if novas:
-        linhas += ["# entraram pela simulação de jogadores (scripts/fama.py --completar)", *novas]
     arq.write_text("\n".join(linhas) + "\n", encoding="utf-8")
     return len(faltando)
 
