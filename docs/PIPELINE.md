@@ -37,7 +37,13 @@ Seguimos o mesmo método do Krillion:
       brasileiros, quantos dariam esta resposta"), reconhecimento, visitas e tendência na Wikipédia pt.
       Reordena todas as categorias do jogo. Revisão das mudanças em `dados/sinais/revisao/agente-mudancas.csv`.
       Google Trends ficou de fora: não tem API pública e barra pedidos de servidor; a tendência sai das visitas.
-- [ ] Quando houver jogadores, trocar a lembrança do LLM pela contagem real (o `sinais.py` já mistura os dois).
+- [x] **Fama por simulação de jogadores** (`scripts/fama.py`): 1000 jogadores simulados respondem sem ver a lista;
+      a contagem é a fama, o que falta na lista aparece sozinho, criativas (`~`) valem no mínimo 70, régua fixa por
+      "quantos em 1000" e trava (`--conferir`) antes de a categoria ir ao ar. Substitui o agente nas categorias da fila.
+- [x] Respostas do dia registradas anônimas (`/api/respostas`), aceitas e recusadas. Não mudam pontos.
+- [ ] Puxar as recusadas do dia para `dados/fila/` e julgar em lote.
+- [ ] Com algumas semanas de respostas, medir onde a simulação erra (por tipo de categoria) e corrigir o pedido.
+- [ ] Simulação nas categorias dos dias 8 a 11 e da fila (o `montar_jogo.py` lista as que faltam).
 - [ ] **Faixa "esperta"** (o "Too Clever" do Krillion): resposta fora da caixa que ainda vale, com festa própria.
 - [ ] **Supernova pela graça, não só pela raridade**: algo que poucos acertam, mas que alguns acertam de verdade.
 - [ ] Meta: 50 perguntas revisadas antes do lançamento, depois umas 7 novas por semana.

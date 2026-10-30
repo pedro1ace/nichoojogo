@@ -46,7 +46,8 @@ Precisa de Python 3 (sem dependências).
 python3 scripts/importar_listas.py # cria categorias a partir das listas prontas da base
 python3 scripts/importar.py        # gera as categorias que têm receita em dados/fontes/ (Wikidata)
 python3 scripts/pontuar.py         # calcula os pesos e atualiza jogo/dados.js e jogar.html
-python3 scripts/agente_fama.py     # mede a fama (lembrança + Wikipédia) e roda o pontuar.py de novo
+python3 scripts/fama.py            # fama nova: simulação de jogadores, completude e pontos (roda o pontuar.py)
+python3 scripts/fama.py --conferir # trava: toda categoria da fila tem simulação e lista completa?
 ```
 
 ## Estrutura
@@ -65,13 +66,15 @@ scripts/
   importar_listas.py       transforma listas da base em categorias
   importar.py              gera categorias do Wikidata a partir de dados/fontes/<id>.json, com validações
   pontuar.py               calcula os pesos de nicho
-  agente_fama.py           agente de fama: lembrança por LLM, visitas e tendência na Wikipédia
+  fama.py                  fama nova: simulação de 1000 jogadores, completude, régua fixa e a trava
+  agente_fama.py           agente de fama antigo: lembrança por LLM, visitas e tendência na Wikipédia
   montar_jogo.py           gera jogo/dados.js e jogar.html
   sinais.py                protótipo: junta sinais de fama e propõe um peso novo (não mexe no jogo)
   buscar_wikidata.py       protótipo: sitelinks, visitas na Wikipédia e apelidos do Wikidata
   llm_nicho.py             protótipo: estimativa do Claude de "quantos em 1000 dariam esta resposta"
   casar.py                 protótipo: autocorreção em camadas, com --avaliar
 functions/api/pontuacao.js curva dos viajantes (Cloudflare Pages Function + D1)
+functions/api/respostas.js contagem anônima das respostas do dia (aceitas e recusadas)
 banco/schema.sql           tabela do D1 da curva
 jogar.html                 o jogo num arquivo só (gerado, não edite à mão)
 jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
@@ -85,8 +88,9 @@ docs/BANCO-DE-PALAVRAS.md  fontes de palavras, raridade, LLM e apelidos (pesquis
 
 ## Como o "quão nichada" é calculado
 
-**Hoje todas as categorias do jogo usam o agente de fama** (`scripts/agente_fama.py`, seção abaixo). O ICF
-descrito aqui é o caminho antigo, que vale quando uma categoria ainda não tem `dados/sinais/fama/<cat>.json`.
+**Hoje as categorias que ainda vão ao ar usam a fama por simulação de jogadores** (`scripts/fama.py`, seção
+"Fama: simulação de jogadores" abaixo). O agente de fama e o ICF descritos depois são os caminhos antigos, que
+valem só para quem ainda não tem `dados/sinais/lembranca/<cat>.txt`.
 
 A base usa **ICF** (frequência inversa no corpus): quanto maior, mais rara a palavra no português em geral.
 Para cada categoria, `pontuar.py` combina:
@@ -125,7 +129,51 @@ Cabeleira de Berenice,,1
 
 `peso` vai de 0 a 100 e substitui o calculado na ordem da categoria; `supernova=1` escolhe a resposta secreta (senão, é a de mais pontos).
 
-## Agente de fama
+## Fama: simulação de jogadores
+
+O jeito antigo (agente de fama, abaixo) tinha dois defeitos que voltavam todo dia, porque nenhuma categoria se
+repete e um erro no ar não tem conserto:
+
+1. As listas crescem (importações da Wikipédia), a estimativa não era refeita, e toda resposta sem estimativa
+   contava como "ninguém lembra": virava rara. Coentro em Legumes valia 90.
+2. Visitas na Wikipédia e frequência em textos medem a fama **geral**, não o quanto alguém diria aquilo para
+   **aquela** pergunta.
+
+O jeito novo (`scripts/fama.py`), para toda categoria, antes de ela ir ao ar:
+
+1. **Simulação** (`dados/sinais/lembranca/<cat>.txt`): 1000 jogadores variados respondem à pergunta como no jogo,
+   **sem ver a lista**. A contagem (soma 1000) é a fama. Linha `Nome 12` = 12 em 1000; `Dito = Nome na lista 3`
+   quando o jogador escreveria diferente; `! Nome 4` = gente diz, mas não vale; `~ Nome 6` = **criativa**.
+2. **Criativa** (`~`): associação lateral, não um exemplo literal da pergunta (Homer Simpson em Coisas amarelas,
+   Panela em Instrumentos). A IA só marca se é criativa, não chuta quantos diriam. Vale no mínimo 70 (`PONTOS_CRIATIVA`).
+3. **Completude**: o que a simulação diz e a lista não aceita é resposta ou apelido faltando
+   (`dados/sinais/revisao/faltando.csv`). `--completar` põe na lista (apelido vai na linha da resposta).
+   `suspeitas.csv` lista o que a estimativa antiga achava comum e a simulação esqueceu.
+4. **Fora da simulação, é rara.** Visitas, frequência em textos e a estimativa antiga só ordenam a cauda.
+5. **Régua fixa** (`REGUA_FIXA` no `pontuar.py`): óbvia com 15 ou mais em 1000 (8 a 15 pontos), comum de 4 a 15
+   (18 a 34), incomum de 1 a 4 (35 a 58), rara abaixo de 1 (60 a 90, pela ordem da cauda). O mesmo número quer
+   dizer a mesma coisa em toda categoria.
+6. **O % do diário de bordo** ("mais nichada que X% dos jogadores") é `acima`: a parte dos 1000 simulados que daria
+   uma resposta mais óbvia. Antes era a parte da lista com menos pontos, e Panela aparecia como "6%".
+7. **Trava**: `python3 scripts/fama.py --conferir` falha se alguma categoria de hoje em diante não tem simulação,
+   se a pergunta mudou ou se falta resposta na lista. O `montar_jogo.py` avisa das que faltam.
+
+```bash
+python3 scripts/fama.py --simular minha-categoria   # gera a simulação com o Claude (ANTHROPIC_API_KEY)
+python3 scripts/fama.py minha-categoria --completar # casa com a lista, completa o que falta e pontua
+python3 scripts/fama.py --conferir                  # antes de subir: tudo da fila passou?
+```
+
+Sem chave de API, a simulação pode ser escrita pelo Claude aqui no projeto: peça "simule 1000 jogadores para
+a categoria X" e ele grava o arquivo no formato acima.
+
+**Respostas reais**: o jogo manda cada resposta (aceita ou recusada) para `/api/respostas`
+(`functions/api/respostas.js`, tabelas em `banco/schema.sql`), só com o dia, a categoria e a palavra. Não mexe nos
+pontos (ainda há poucos jogadores, ficaria volátil, e a categoria nunca volta). Serve para as recusadas virarem
+candidatas na fila e para, somando semanas, medir onde a simulação erra. Para ligar, rode de novo o
+`banco/schema.sql` no Console do D1.
+
+## Agente de fama (antigo)
 
 O ICF e as visitas medem o quanto se **lê** sobre uma coisa. O jogo precisa do quanto ela vem à **cabeça**
 de quem responde: Malta aparece muito em notícias, mas quase ninguém diz "Malta" quando pedem um país.
@@ -178,7 +226,8 @@ uma resposta, mude a lembrança dela no `dados/sinais/llm/<cat>.json` e rode `ag
 
 1. Crie `dados/categorias/minha-categoria.txt` com o cabeçalho `# titulo:` e `# pergunta:` e uma resposta por linha.
    Coloque apelidos e grafias alternativas na mesma linha (`Fobos | Phobos`): o jogo aceita qualquer um deles.
-2. Rode `python3 scripts/pontuar.py minha-categoria`.
+2. Faça a simulação de 1000 jogadores (`dados/sinais/lembranca/minha-categoria.txt`, seção "Fama: simulação de
+   jogadores") e rode `python3 scripts/fama.py minha-categoria --completar`.
 3. Abra `dados/pesos/revisao/minha-categoria.csv`, corrija o que estiver estranho em `dados/ajustes/`, e rode de novo.
 
 ## Fila do modo aberto (respostas que a lista não conhecia)
