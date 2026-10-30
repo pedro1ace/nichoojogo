@@ -1,1078 +1,1474 @@
 {
  "categoria": "esportes-olimpicos",
- "gerado_em": "2026-10-28",
- "sinais": [
-  "conhecem",
-  "lembranca",
-  "revisao",
-  "texto",
-  "visitas"
- ],
- "meses_de_visitas": [],
- "pesos": {
-  "lembranca": 0.65,
-  "conhecem": 0.1,
-  "revisao": 0.08,
-  "visitas": 0.14,
-  "texto": 0.03
- },
- "estimadas_pelo_llm": 89,
+ "metodo": "simulacao",
+ "gerado_em": "2026-10-30",
+ "pergunta": "Cite um esporte disputado nas Olimpíadas",
+ "simulados": 1000,
+ "na_simulacao": 57,
+ "massa_da_cauda": 88.5,
  "respostas": {
   "Futebol": {
-   "fama": 0.9976,
+   "fama": 1.0,
    "lembranca_em_1000": 220.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 99294,
-   "tendencia": null
+   "fama_antiga": 0.9976
   },
   "Vôlei": {
-   "fama": 0.9236,
-   "lembranca_em_1000": 150.0,
+   "fama": 0.9442,
+   "lembranca_em_1000": 120.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.2354,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 43674,
-   "tendencia": null
+   "fama_antiga": 0.9236
   },
   "Natação": {
-   "fama": 0.8566,
-   "lembranca_em_1000": 110.0,
+   "fama": 0.907,
+   "lembranca_em_1000": 80.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.3638,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 10902,
-   "tendencia": null
+   "fama_antiga": 0.8566
   },
   "Basquete": {
-   "fama": 0.8303,
-   "lembranca_em_1000": 70.0,
+   "fama": 0.8808,
+   "lembranca_em_1000": 60.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5135,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 40800,
-   "tendencia": null
+   "fama_antiga": 0.8303
   },
   "Atletismo": {
-   "fama": 0.7931,
+   "fama": 0.8808,
    "lembranca_em_1000": 60.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5135,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 20886,
-   "tendencia": null
+   "fama_antiga": 0.7931
   },
   "Ginástica": {
-   "fama": 0.7866,
+   "fama": 0.8808,
    "lembranca_em_1000": 60.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5135,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 14094,
-   "tendencia": null
+   "fama_antiga": 0.7866
   },
   "Judô": {
-   "fama": 0.7412,
-   "lembranca_em_1000": 40.0,
+   "fama": 0.8181,
+   "lembranca_em_1000": 30.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.658,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 23394,
-   "tendencia": null
+   "fama_antiga": 0.7412
   },
   "Tênis": {
-   "fama": 0.6483,
+   "fama": 0.782,
    "lembranca_em_1000": 20.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7168,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 10392,
-   "tendencia": null
+   "fama_antiga": 0.6483
   },
   "Skate": {
-   "fama": 0.6697,
-   "lembranca_em_1000": 25.0,
+   "fama": 0.8181,
+   "lembranca_em_1000": 30.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.658,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": 10566,
-   "tendencia": null
+   "fama_antiga": 0.6697
   },
   "Surfe": {
-   "fama": 0.6322,
+   "fama": 0.782,
    "lembranca_em_1000": 20.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7168,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 8706,
-   "tendencia": null
+   "fama_antiga": 0.6322
   },
   "Handebol": {
-   "fama": 0.6157,
+   "fama": 0.7568,
    "lembranca_em_1000": 15.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7569,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": 20058,
-   "tendencia": null
+   "fama_antiga": 0.6157
   },
   "Boxe": {
-   "fama": 0.6219,
+   "fama": 0.7568,
    "lembranca_em_1000": 15.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7569,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 23364,
-   "tendencia": null
+   "fama_antiga": 0.6219
   },
   "Vôlei de praia": {
-   "fama": 0.5473,
+   "fama": 0.7221,
    "lembranca_em_1000": 10.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7917,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": 5034,
-   "tendencia": null
+   "fama_antiga": 0.5473
   },
   "Ciclismo": {
-   "fama": 0.5346,
+   "fama": 0.7221,
    "lembranca_em_1000": 10.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7917,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 3960,
-   "tendencia": null
+   "fama_antiga": 0.5346
   },
   "Tênis de mesa": {
-   "fama": 0.5047,
-   "lembranca_em_1000": 6.0,
+   "fama": 0.7221,
+   "lembranca_em_1000": 10.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7917,
    "conhecem_pct": 96.0,
    "visitas_pt_12m": 10608,
-   "tendencia": null
+   "fama_antiga": 0.5047
   },
   "Esgrima": {
-   "fama": 0.4583,
-   "lembranca_em_1000": 5.0,
+   "fama": 0.7035,
+   "lembranca_em_1000": 8.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.827,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 8904,
-   "tendencia": null
+   "fama_antiga": 0.4583
   },
   "Hipismo": {
-   "fama": 0.4313,
-   "lembranca_em_1000": 4.0,
+   "fama": 0.7035,
+   "lembranca_em_1000": 8.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.827,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 9060,
-   "tendencia": null
+   "fama_antiga": 0.4313
   },
   "Remo": {
-   "fama": 0.4338,
-   "lembranca_em_1000": 4.0,
+   "fama": 0.6802,
+   "lembranca_em_1000": 6.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8495,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 8142,
-   "tendencia": null
+   "fama_antiga": 0.4338
   },
   "Canoagem": {
-   "fama": 0.3741,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.6802,
+   "lembranca_em_1000": 6.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8495,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 2496,
-   "tendencia": null
+   "fama_antiga": 0.3741
   },
   "Taekwondo": {
-   "fama": 0.4282,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.6802,
+   "lembranca_em_1000": 6.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8495,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 24360,
-   "tendencia": null
+   "fama_antiga": 0.4282
   },
   "Luta olímpica": {
-   "fama": 0.2685,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6284,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9249,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.2685
   },
   "Levantamento de peso": {
-   "fama": 0.4328,
-   "lembranca_em_1000": 4.0,
+   "fama": 0.7133,
+   "lembranca_em_1000": 9.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8131,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 6408,
-   "tendencia": null
+   "fama_antiga": 0.4328
   },
   "Tiro com arco": {
-   "fama": 0.38,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.6802,
+   "lembranca_em_1000": 6.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8495,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 1734,
-   "tendencia": null
+   "fama_antiga": 0.38
   },
   "Tiro esportivo": {
-   "fama": 0.282,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 2484,
-   "tendencia": null
+   "fama_antiga": 0.282
   },
   "Badminton": {
-   "fama": 0.3049,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6284,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9249,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 9726,
-   "tendencia": null
+   "fama_antiga": 0.3049
   },
   "Golfe": {
-   "fama": 0.3726,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 8556,
-   "tendencia": null
+   "fama_antiga": 0.3726
   },
   "Rugby": {
-   "fama": 0.3786,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 17496,
-   "tendencia": null
+   "fama_antiga": 0.3786
   },
   "Hóquei sobre grama": {
-   "fama": 0.2912,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 4422,
-   "tendencia": null
+   "fama_antiga": 0.2912
   },
   "Polo aquático": {
-   "fama": 0.3665,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 11814,
-   "tendencia": null
+   "fama_antiga": 0.3665
   },
   "Saltos ornamentais": {
-   "fama": 0.3286,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 2604,
-   "tendencia": null
+   "fama_antiga": 0.3286
   },
   "Nado artístico": {
-   "fama": 0.2532,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.666,
+   "lembranca_em_1000": 5.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8655,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 1296,
-   "tendencia": null
+   "fama_antiga": 0.2532
   },
   "Triatlo": {
-   "fama": 0.37,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6284,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9249,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 19704,
-   "tendencia": null
+   "fama_antiga": 0.37
   },
   "Pentatlo moderno": {
-   "fama": 0.2286,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.6018,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9458,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 6288,
-   "tendencia": null
+   "fama_antiga": 0.2286
   },
   "Vela": {
-   "fama": 0.3138,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 17226,
-   "tendencia": null
+   "fama_antiga": 0.3138
   },
   "Escalada esportiva": {
-   "fama": 0.2387,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.6284,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9249,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 4032,
-   "tendencia": null
+   "fama_antiga": 0.2387
   },
   "Ginástica rítmica": {
-   "fama": 0.4083,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 11172,
-   "tendencia": null
+   "fama_antiga": 0.4083
   },
   "Trampolim": {
-   "fama": 0.1884,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5642,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9581,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 702,
-   "tendencia": null
+   "fama_antiga": 0.1884
   },
   "Breaking": {
-   "fama": 0.2362,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.6284,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9249,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 8634,
-   "tendencia": null
+   "fama_antiga": 0.2362
   },
   "Maratona aquática": {
-   "fama": 0.2071,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.1036,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 1368,
-   "tendencia": null
+   "fama_antiga": 0.2071
   },
   "Mountain bike": {
-   "fama": 0.2285,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5642,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9581,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 2412,
-   "tendencia": null
+   "fama_antiga": 0.2285
   },
   "BMX": {
-   "fama": 0.2255,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.6018,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9458,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 3924,
-   "tendencia": null
+   "fama_antiga": 0.2255
   },
   "Marcha atlética": {
-   "fama": 0.2303,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.1152,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 3606,
-   "tendencia": null
+   "fama_antiga": 0.2303
   },
   "Decatlo": {
-   "fama": 0.2018,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1009,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 7302,
-   "tendencia": null
+   "fama_antiga": 0.2018
   },
   "Arremesso de peso": {
-   "fama": 0.2484,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5642,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9581,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 6672,
-   "tendencia": null
+   "fama_antiga": 0.2484
   },
   "Salto com vara": {
-   "fama": 0.3211,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6284,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9249,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 10656,
-   "tendencia": null
+   "fama_antiga": 0.3211
   },
   "Lançamento de dardo": {
-   "fama": 0.2494,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5642,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9581,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 5520,
-   "tendencia": null
+   "fama_antiga": 0.2494
   },
   "Lançamento de martelo": {
-   "fama": 0.1923,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.0961,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 3276,
-   "tendencia": null
+   "fama_antiga": 0.1923
   },
   "Salto triplo": {
-   "fama": 0.2516,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.1258,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 5388,
-   "tendencia": null
+   "fama_antiga": 0.2516
   },
   "Caiaque": {
-   "fama": 0.2051,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1026,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 2256,
-   "tendencia": null
+   "fama_antiga": 0.2051
   },
   "Beisebol": {
-   "fama": 0.3034,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6018,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9458,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 17292,
-   "tendencia": null
+   "fama_antiga": 0.3034
   },
   "Softbol": {
-   "fama": 0.1667,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5642,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9581,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 5196,
-   "tendencia": null
+   "fama_antiga": 0.1667
   },
   "Caratê": {
-   "fama": 0.3075,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6491,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 20382,
-   "tendencia": null
+   "fama_antiga": 0.3075
   },
   "Lacrosse": {
-   "fama": 0.1334,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0667,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 10128,
-   "tendencia": null
+   "fama_antiga": 0.1334
   },
   "Críquete": {
-   "fama": 0.1762,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0881,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 21282,
-   "tendencia": null
+   "fama_antiga": 0.1762
   },
   "Squash": {
-   "fama": 0.142,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.071,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 4284,
-   "tendencia": null
+   "fama_antiga": 0.142
   },
   "Flag football": {
-   "fama": 0.1212,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0606,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 6864,
-   "tendencia": null
+   "fama_antiga": 0.1212
   },
   "Curling": {
-   "fama": 0.1911,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5642,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9581,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 6846,
-   "tendencia": null
+   "fama_antiga": 0.1911
   },
   "Biatlo": {
-   "fama": 0.0984,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5376,
+   "lembranca_em_1000": 0.5,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9629,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 1494,
-   "tendencia": null
+   "fama_antiga": 0.0984
   },
   "Bobsled": {
-   "fama": 0.1212,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5642,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9581,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 1992,
-   "tendencia": null
+   "fama_antiga": 0.1212
   },
   "Patinação artística": {
-   "fama": 0.2514,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6018,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9458,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.2514
   },
   "Esqui": {
-   "fama": 0.2308,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.6018,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9458,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 2508,
-   "tendencia": null
+   "fama_antiga": 0.2308
   },
   "Snowboard": {
-   "fama": 0.2175,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.6018,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9458,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 2598,
-   "tendencia": null
+   "fama_antiga": 0.2175
   },
   "Skeleton": {
-   "fama": 0.0835,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0418,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 2322,
-   "tendencia": null
+   "fama_antiga": 0.0835
   },
   "Cabo de guerra": {
-   "fama": 0.1253,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0626,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 3324,
-   "tendencia": null
+   "fama_antiga": 0.1253
   },
   "Hóquei no gelo": {
-   "fama": 0.3354,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6018,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9458,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 12924,
-   "tendencia": null
+   "fama_antiga": 0.3354
   },
   "Patinação de velocidade": {
-   "fama": 0.1908,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.0954,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 570,
-   "tendencia": null
+   "fama_antiga": 0.1908
   },
   "Patinação de velocidade em pista curta": {
-   "fama": 0.0907,
-   "lembranca_em_1000": null,
+   "fama": 0.0454,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 366,
-   "tendencia": null
+   "fama_antiga": 0.0907
   },
   "Esqui alpino": {
-   "fama": 0.1952,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.0976,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 870,
-   "tendencia": null
+   "fama_antiga": 0.1952
   },
   "Esqui cross-country": {
-   "fama": 0.103,
-   "lembranca_em_1000": null,
+   "fama": 0.0515,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 888,
-   "tendencia": null
+   "fama_antiga": 0.103
   },
   "Salto de esqui": {
-   "fama": 0.2024,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1012,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 954,
-   "tendencia": null
+   "fama_antiga": 0.2024
   },
   "Combinado nórdico": {
-   "fama": 0.0862,
-   "lembranca_em_1000": null,
+   "fama": 0.0431,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 480,
-   "tendencia": null
+   "fama_antiga": 0.0862
   },
   "Esqui estilo livre": {
-   "fama": 0.1021,
-   "lembranca_em_1000": null,
+   "fama": 0.051,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 654,
-   "tendencia": null
+   "fama_antiga": 0.1021
   },
   "Luge": {
-   "fama": 0.1132,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0566,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 690,
-   "tendencia": null
+   "fama_antiga": 0.1132
   },
   "Esqui de montanha": {
-   "fama": 0.0646,
-   "lembranca_em_1000": null,
+   "fama": 0.0323,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 138,
-   "tendencia": null
+   "fama_antiga": 0.0646
   },
   "Rugby sevens": {
-   "fama": 0.105,
-   "lembranca_em_1000": null,
+   "fama": 0.0525,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 1128,
-   "tendencia": null
+   "fama_antiga": 0.105
   },
   "Basquete 3x3": {
-   "fama": 0.2377,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.1188,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 1428,
-   "tendencia": null
+   "fama_antiga": 0.2377
   },
   "Ciclismo de estrada": {
-   "fama": 0.2197,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1099,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 1266,
-   "tendencia": null
+   "fama_antiga": 0.2197
   },
   "Ciclismo de pista": {
-   "fama": 0.1156,
-   "lembranca_em_1000": null,
+   "fama": 0.0578,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 1494,
-   "tendencia": null
+   "fama_antiga": 0.1156
   },
   "Ciclismo BMX freestyle": {
-   "fama": 0.0729,
-   "lembranca_em_1000": null,
+   "fama": 0.0365,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0729
   },
   "Canoagem slalom": {
-   "fama": 0.1177,
-   "lembranca_em_1000": null,
+   "fama": 0.0588,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 2496,
-   "tendencia": null
+   "fama_antiga": 0.1177
   },
   "Canoagem velocidade": {
-   "fama": 0.0829,
-   "lembranca_em_1000": null,
+   "fama": 0.0415,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 330,
-   "tendencia": null
+   "fama_antiga": 0.0829
   },
   "Remo olímpico": {
-   "fama": 0.0721,
-   "lembranca_em_1000": null,
+   "fama": 0.036,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0721
   },
   "Hipismo saltos": {
-   "fama": 0.1723,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.0862,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.1723
   },
   "Adestramento": {
-   "fama": 0.0681,
-   "lembranca_em_1000": null,
+   "fama": 0.034,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0681
   },
   "Concurso completo de equitação": {
-   "fama": 0.0917,
-   "lembranca_em_1000": null,
+   "fama": 0.0459,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 432,
-   "tendencia": null
+   "fama_antiga": 0.0917
   },
   "Salto em altura": {
-   "fama": 0.3872,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6284,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9249,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 9018,
-   "tendencia": null
+   "fama_antiga": 0.3872
   },
   "Salto em distância": {
-   "fama": 0.3823,
-   "lembranca_em_1000": 2.0,
-   "estimada": true,
+   "fama": 0.1911,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 7068,
-   "tendencia": null
+   "fama_antiga": 0.3823
   },
   "Arremesso de disco": {
-   "fama": 0.2616,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.1308,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 3558,
-   "tendencia": null
+   "fama_antiga": 0.2616
   },
   "Heptatlo": {
-   "fama": 0.1741,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0871,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 3732,
-   "tendencia": null
+   "fama_antiga": 0.1741
   },
   "Corrida com barreiras": {
-   "fama": 0.2712,
+   "fama": 0.5642,
    "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9581,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 576,
-   "tendencia": null
+   "fama_antiga": 0.2712
   },
   "Revezamento": {
-   "fama": 0.2173,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.1086,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.2173
   },
   "100 metros rasos": {
-   "fama": 0.3804,
-   "lembranca_em_1000": 2.0,
-   "estimada": true,
+   "fama": 0.1902,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 15546,
-   "tendencia": null
+   "fama_antiga": 0.3804
   },
   "Corrida de obstáculos": {
-   "fama": 0.2002,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1001,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 576,
-   "tendencia": null
+   "fama_antiga": 0.2002
   },
   "Meia maratona": {
-   "fama": 0.1385,
-   "lembranca_em_1000": null,
+   "fama": 0.0693,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 4062,
-   "tendencia": null
+   "fama_antiga": 0.1385
   },
   "Maratona": {
-   "fama": 0.4605,
+   "fama": 0.6491,
    "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8901,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 22350,
-   "tendencia": null
+   "fama_antiga": 0.4605
   },
   "Nado livre": {
-   "fama": 0.2561,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.128,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 2622,
-   "tendencia": null
+   "fama_antiga": 0.2561
   },
   "Nado costas": {
-   "fama": 0.1068,
-   "lembranca_em_1000": null,
+   "fama": 0.0534,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 1122,
-   "tendencia": null
+   "fama_antiga": 0.1068
   },
   "Nado peito": {
-   "fama": 0.1157,
-   "lembranca_em_1000": null,
+   "fama": 0.0578,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 1716,
-   "tendencia": null
+   "fama_antiga": 0.1157
   },
   "Nado borboleta": {
-   "fama": 0.2269,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1134,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 2334,
-   "tendencia": null
+   "fama_antiga": 0.2269
   },
   "Medley": {
-   "fama": 0.0665,
-   "lembranca_em_1000": null,
+   "fama": 0.0333,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0665
   },
   "Polo": {
-   "fama": 0.1262,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.0631,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.1262
   },
   "Pelota basca": {
-   "fama": 0.0902,
-   "lembranca_em_1000": null,
+   "fama": 0.0451,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 3636,
-   "tendencia": null
+   "fama_antiga": 0.0902
   },
   "Jeu de paume": {
-   "fama": 0.0545,
-   "lembranca_em_1000": null,
+   "fama": 0.0272,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 1002,
-   "tendencia": null
+   "fama_antiga": 0.0545
   },
   "Croquet": {
-   "fama": 0.0927,
-   "lembranca_em_1000": null,
+   "fama": 0.0464,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 5430,
-   "tendencia": null
+   "fama_antiga": 0.0927
   },
   "Motonáutica": {
-   "fama": 0.0476,
-   "lembranca_em_1000": null,
+   "fama": 0.0238,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 666,
-   "tendencia": null
+   "fama_antiga": 0.0476
   },
   "Kitesurfe": {
-   "fama": 0.1732,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.0866,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 6504,
-   "tendencia": null
+   "fama_antiga": 0.1732
   },
   "Windsurfe": {
-   "fama": 0.1541,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.077,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 1944,
-   "tendencia": null
+   "fama_antiga": 0.1541
   },
   "Esgrima florete": {
-   "fama": 0.0901,
-   "lembranca_em_1000": null,
+   "fama": 0.045,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 3894,
-   "tendencia": null
+   "fama_antiga": 0.0901
   },
   "Espada": {
-   "fama": 0.1182,
-   "lembranca_em_1000": null,
+   "fama": 0.0591,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 8472,
-   "tendencia": null
+   "fama_antiga": 0.1182
   },
   "Sabre": {
-   "fama": 0.107,
-   "lembranca_em_1000": null,
+   "fama": 0.0535,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 6876,
-   "tendencia": null
+   "fama_antiga": 0.107
   },
   "Corfebol": {
-   "fama": 0.0917,
-   "lembranca_em_1000": null,
+   "fama": 0.0459,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 5646,
-   "tendencia": null
+   "fama_antiga": 0.0917
   },
   "Skate street": {
-   "fama": 0.034,
-   "lembranca_em_1000": null,
+   "fama": 0.017,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.034
   },
   "Skate park": {
-   "fama": 0.034,
-   "lembranca_em_1000": null,
+   "fama": 0.017,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.034
   },
   "Natação em águas abertas": {
-   "fama": 0.0433,
-   "lembranca_em_1000": null,
+   "fama": 0.0216,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0433
   },
   "Tiro ao prato": {
-   "fama": 0.099,
-   "lembranca_em_1000": null,
+   "fama": 0.0495,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 2484,
-   "tendencia": null
+   "fama_antiga": 0.099
   },
   "Tiro com pistola": {
-   "fama": 0.0429,
-   "lembranca_em_1000": null,
+   "fama": 0.0215,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0429
   },
   "Tiro com carabina": {
-   "fama": 0.0407,
-   "lembranca_em_1000": null,
+   "fama": 0.0204,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0407
   },
   "Pentatlo": {
-   "fama": 0.1529,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.0765,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 2694,
-   "tendencia": null
+   "fama_antiga": 0.1529
   },
   "Duatlo": {
-   "fama": 0.0695,
-   "lembranca_em_1000": null,
+   "fama": 0.0348,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 1710,
-   "tendencia": null
+   "fama_antiga": 0.0695
   },
   "Aquatlo": {
-   "fama": 0.0119,
-   "lembranca_em_1000": null,
+   "fama": 0.006,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0119
   },
   "Biatlo de verão": {
-   "fama": 0.0285,
-   "lembranca_em_1000": null,
+   "fama": 0.0143,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0285
   },
   "Alpinismo": {
-   "fama": 0.0874,
-   "lembranca_em_1000": null,
+   "fama": 0.0437,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 3300,
-   "tendencia": null
+   "fama_antiga": 0.0874
   },
   "Arte olímpica": {
-   "fama": 0.0441,
-   "lembranca_em_1000": null,
+   "fama": 0.0221,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0441
   },
   "Críquete T20": {
-   "fama": 0.0217,
-   "lembranca_em_1000": null,
+   "fama": 0.0109,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0217
   },
   "Ginástica de trampolim": {
-   "fama": 0.0747,
-   "lembranca_em_1000": null,
+   "fama": 0.0374,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 1344,
-   "tendencia": null
+   "fama_antiga": 0.0747
   },
   "Patinação artística no gelo": {
-   "fama": 0.2093,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1047,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 4488,
-   "tendencia": null
+   "fama_antiga": 0.2093
   },
   "Dança no gelo": {
-   "fama": 0.0699,
-   "lembranca_em_1000": null,
+   "fama": 0.035,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 606,
-   "tendencia": null
+   "fama_antiga": 0.0699
   },
   "Hóquei sobre patins": {
-   "fama": 0.1175,
-   "lembranca_em_1000": null,
+   "fama": 0.0587,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 6666,
-   "tendencia": null
+   "fama_antiga": 0.1175
   },
   "Esqui aquático": {
-   "fama": 0.1329,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0664,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 1110,
-   "tendencia": null
+   "fama_antiga": 0.1329
   },
   "Escalada boulder": {
-   "fama": 0.0793,
-   "lembranca_em_1000": null,
+   "fama": 0.0396,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 1572,
-   "tendencia": null
+   "fama_antiga": 0.0793
   },
   "Escalada velocidade": {
-   "fama": 0.0366,
-   "lembranca_em_1000": null,
+   "fama": 0.0183,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0366
   },
   "Escalada guiada": {
-   "fama": 0.1085,
-   "lembranca_em_1000": null,
+   "fama": 0.0542,
+   "lembranca_em_1000": 0.45,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9815,
    "conhecem_pct": null,
    "visitas_pt_12m": 6588,
-   "tendencia": null
+   "fama_antiga": 0.1085
+  },
+  "Patinação": {
+   "fama": 0.6284,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
+   "estimada": true,
+   "acima": 0.9249,
+   "conhecem_pct": null,
+   "visitas_pt_12m": null,
+   "fama_antiga": 0.0167
   }
  }
 }
