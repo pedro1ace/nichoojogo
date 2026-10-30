@@ -568,7 +568,8 @@ pre {
 .caixa-apoio { box-shadow: inset 0 0 0 2px rgba(255, 79, 139, 0.45); }
 .caixa-apoio .pixel-logo { animation: bater 1.4s steps(1) infinite; }
 @keyframes bater { 0%, 70% { transform: scale(1); } 80% { transform: scale(1.12); } 90% { transform: scale(1); } }
-#apoio-link { flex: none; padding: 10px 14px; font-weight: 700; letter-spacing: 2px; font-size: 13px; color: var(--texto); text-decoration: none; }
+#apoio-link { flex: none; padding: 10px 16px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; letter-spacing: 2px; font-size: 13px; text-decoration: none; }
+#apoio-link.botao-escuro { color: var(--texto); }
 #apoio-link[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
 @media (max-width: 420px) {
   .caixa-apoio { flex-wrap: wrap; }
@@ -623,9 +624,13 @@ pre {
 .cartao-skin:not(.trancada):hover, .cartao-skin:focus-visible { box-shadow: inset 0 0 0 2px #b98cff; }
 .grade-skins .cartao-skin.escolhida { box-shadow: inset 0 0 0 2px var(--ciano), 0 0 14px rgba(95, 225, 255, 0.35); }
 .cartao-skin.escolhida .skin-nome { color: var(--ciano); }
+.cartao-skin:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .cartao-skin.trancada { cursor: default; }
 .cartao-skin.trancada canvas { filter: grayscale(1) brightness(0.55); }
 .cartao-skin.trancada .skin-nome { color: var(--suave); }
+.cartao-skin .skin-dias.apoio { color: #ff8ab5; }
+.cartao-skin.apoio-trancada { cursor: pointer; }
+.cartao-skin.apoio-trancada:hover, .cartao-skin.apoio-trancada:focus-visible { box-shadow: inset 0 0 0 2px var(--rosa), 0 0 14px rgba(255, 79, 139, 0.3); }
 .opcoes { display: flex; flex-direction: column; gap: 8px; }
 .opcao {
   display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 0; cursor: pointer; text-align: left;
@@ -648,6 +653,94 @@ pre {
   45% { filter: drop-shadow(0 0 10px rgba(95, 225, 255, 1)) brightness(1.6); }
   100% { filter: drop-shadow(0 0 6px rgba(255, 150, 70, 0.7)); }
 }
+
+/* ---------- janela de apoio via Pix ---------- */
+.apoio-corpo {
+  padding: 16px; overflow-y: auto; clip-path: var(--recorte);
+  background: rgba(12, 10, 40, 0.98); box-shadow: inset 0 0 0 2px rgba(255, 79, 139, 0.5);
+}
+.apoio-etapa { display: flex; flex-direction: column; gap: 12px; }
+.apoio-vitrine {
+  display: flex; align-items: center; gap: 14px; padding: 10px 12px;
+  background: rgba(20, 14, 54, 0.85); box-shadow: inset 0 0 0 1px rgba(255, 79, 139, 0.35);
+}
+#apoio-mascote { flex: none; width: 84px; height: 48px; image-rendering: pixelated; filter: drop-shadow(0 0 8px rgba(255, 120, 190, 0.75)); }
+.apoio-vitrine-texto { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.apoio-selo { font-family: var(--titulo); font-size: 10px; line-height: 1.4; letter-spacing: 0.08em; color: var(--rosa); }
+.apoio-vitrine-texto p { margin: 0; font-family: var(--mono); font-size: 12px; line-height: 1.45; color: var(--suave); }
+.apoio-ja-liberada {
+  display: flex; flex-direction: column; gap: 6px; padding: 10px 12px;
+  background: rgba(255, 79, 139, 0.1); box-shadow: inset 0 0 0 1px rgba(255, 79, 139, 0.45);
+  font-family: var(--mono); font-size: 12px; color: #ffc2d6;
+}
+.apoio-valores { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.apoio-pilula {
+  padding: 10px 4px; border: 0; cursor: pointer; font-family: var(--mono); font-size: 13px; font-weight: 700;
+  color: var(--texto); background: rgba(20, 16, 58, 0.95); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.35);
+}
+.apoio-pilula:hover, .apoio-pilula:focus-visible { box-shadow: inset 0 0 0 2px #b98cff; }
+.apoio-pilula.escolhida { color: #ffc2d6; background: rgba(58, 16, 48, 0.85); box-shadow: inset 0 0 0 2px var(--rosa), 0 0 12px rgba(255, 79, 139, 0.35); }
+.apoio-outro {
+  display: flex; align-items: center; gap: 8px; padding: 8px 12px;
+  background: rgba(6, 4, 24, 0.92); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.4);
+  font-family: var(--mono); font-weight: 700; color: var(--suave);
+}
+.apoio-outro:focus-within { box-shadow: inset 0 0 0 2px var(--ciano); }
+.apoio-outro input {
+  flex: 1; min-width: 0; border: 0; outline: 0; background: transparent;
+  font-family: var(--mono); font-size: 16px; font-weight: 700; color: var(--texto);
+}
+.apoio-acao {
+  width: 100%; padding: 13px 14px; border: 0; cursor: pointer;
+  font-family: var(--corpo); font-size: 14px; font-weight: 700; letter-spacing: 0.16em;
+}
+.apoio-acao:disabled { opacity: 0.6; cursor: wait; }
+.apoio-erro { margin: 0; font-family: var(--mono); font-size: 12px; line-height: 1.4; color: var(--vermelho); text-align: center; }
+.apoio-resgate { border-top: 1px dashed rgba(154, 163, 199, 0.25); padding-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+.apoio-link-texto {
+  padding: 0; border: 0; background: none; cursor: pointer; text-align: center;
+  font-family: var(--mono); font-size: 12px; color: var(--ciano); text-decoration: underline;
+}
+.apoio-link-texto:hover { color: var(--texto); }
+.apoio-form-codigo { display: flex; gap: 8px; }
+.apoio-form-codigo input {
+  flex: 1; min-width: 0; padding: 9px 10px; border: 0; outline: 0;
+  background: rgba(6, 4, 24, 0.92); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.4);
+  font-family: var(--mono); font-size: 16px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto);
+}
+.apoio-form-codigo input:focus { box-shadow: inset 0 0 0 2px var(--ciano); }
+.apoio-form-codigo button { flex: none; padding: 9px 12px; border: 0; cursor: pointer; font-family: var(--corpo); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; }
+.apoio-pix-topo { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.apoio-pix-valor { font-family: var(--titulo); font-size: 12px; color: var(--texto); }
+.apoio-qr-caixa {
+  width: 196px; height: 196px; margin: 2px auto; padding: 10px; background: #ffffff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 24px rgba(255, 79, 139, 0.25);
+}
+#apoio-qr { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
+.apoio-copia-cola {
+  width: 100%; padding: 8px 10px; border: 0; outline: 0;
+  background: rgba(6, 4, 24, 0.92); box-shadow: inset 0 0 0 1px rgba(120, 140, 220, 0.35);
+  font-family: var(--mono); font-size: 11px; color: var(--suave);
+}
+.apoio-status {
+  margin: 0; display: flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--mono); font-size: 12px; color: var(--suave); text-align: center;
+}
+.apoio-status i { flex: none; width: 8px; height: 8px; background: var(--ciano); box-shadow: 0 0 8px var(--ciano); animation: piscar-pix 1s steps(2) infinite; }
+@keyframes piscar-pix { 50% { opacity: 0.25; } }
+.apoio-festa { align-items: center; text-align: center; }
+#apoio-mascote-pago { width: 112px; height: 64px; image-rendering: pixelated; filter: drop-shadow(0 0 12px rgba(255, 120, 190, 0.85)); }
+.apoio-festa-titulo { margin: 2px 0 0; font-family: var(--titulo); font-size: 13px; line-height: 1.5; color: var(--rosa); }
+.apoio-festa-sub { margin: 0; font-family: var(--mono); font-size: 13px; color: var(--texto); }
+.apoio-caixa-codigo {
+  width: 100%; padding: 12px; display: flex; flex-direction: column; gap: 8px;
+  background: rgba(6, 4, 24, 0.92); box-shadow: inset 0 0 0 2px rgba(95, 225, 255, 0.4);
+}
+.apoio-caixa-codigo p { margin: 0; font-family: var(--mono); font-size: 11px; line-height: 1.4; color: var(--suave); }
+.apoio-codigo-linha { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.apoio-codigo-linha code { font-family: var(--mono); font-size: 14px; font-weight: 700; letter-spacing: 0.1em; color: var(--ciano); user-select: all; }
+.apoio-codigo-linha button { flex: none; padding: 6px 10px; border: 0; cursor: pointer; font-family: var(--corpo); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
 
 /* "sem efeitos": nada pisca, pula ou desliza na interface */
 .sem-efeitos *, .sem-efeitos *::before, .sem-efeitos *::after { animation: none !important; transition: none !important; }
@@ -789,9 +882,9 @@ pre {
             <svg class="pixel-logo" viewBox="0 0 10 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="#5a0f2e" d="M2 1h1v1h-1zM3 1h1v1h-1zM7 1h1v1h-1zM8 1h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM9 2h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM8 3h1v1h-1zM9 3h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM8 4h1v1h-1zM9 4h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM8 5h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM5 8h1v1h-1z"/><path fill="#ff4f8b" d="M1 0h1v1h-1zM2 0h1v1h-1zM6 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM8 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM8 3h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM4 7h1v1h-1z"/><path fill="#ffc2d6" d="M1 1h1v1h-1zM1 2h1v1h-1z"/></svg>
             <span class="caixa-texto">
               <span class="caixa-titulo">APOIE O CRIADOR</span>
-              <span class="caixa-sub">Curtiu a incursão? Ajude a manter o Nicho no ar.</span>
+              <span id="apoio-sub" class="caixa-sub">Curtiu a incursão? Ajude a manter o Nicho no ar e libere a skin Laika.</span>
             </span>
-            <a id="apoio-link" class="botao-escuro" href="#" target="_blank" rel="noopener" aria-disabled="true">EM BREVE</a>
+            <button id="apoio-link" type="button" class="botao-rosa" aria-haspopup="dialog">APOIAR</button>
           </div>
         </div>
         <p class="links-fim"><a class="link-privacidade" href="privacidade.html">privacidade</a> · <a class="link-privacidade" href="termos.html">termos</a> · <a class="link-privacidade" href="creditos.html">créditos</a></p>
@@ -826,6 +919,76 @@ pre {
         <span class="opcao-texto"><b>SEM EFEITOS</b><span>Sem tremor, clarões e enfeites. O cenário fica simples e leve, sem planetas e curiosidades.</span></span>
         <span class="chave" aria-hidden="true"><i></i></span>
       </button>
+    </div>
+  </dialog>
+  <!-- apoio ao criador: Pix pelo Mercado Pago, libera a skin Laika quando confirmado -->
+  <dialog id="janela-apoio" class="janela-menu" aria-labelledby="titulo-apoio">
+    <div class="janela-topo">
+      <p id="titulo-apoio" class="rotulo">APOIE O CRIADOR</p>
+      <button type="button" class="fechar" aria-label="Fechar">X</button>
+    </div>
+    <div class="apoio-corpo">
+      <div id="apoio-etapa-valor" class="apoio-etapa">
+        <div class="apoio-vitrine">
+          <canvas id="apoio-mascote" width="28" height="16" aria-hidden="true"></canvas>
+          <div class="apoio-vitrine-texto">
+            <span class="apoio-selo">SKIN EXCLUSIVA · LAIKA</span>
+            <p>Qualquer Pix ajuda a manter o Nicho no ar e libera a cachorrinha cosmonauta na hora.</p>
+          </div>
+        </div>
+        <div id="apoio-ja-liberada" class="apoio-ja-liberada" hidden>
+          <span>♥ Laika já liberada neste aparelho</span>
+          <div id="apoio-salvo-bloco" class="apoio-codigo-linha" hidden>
+            <code id="apoio-codigo-salvo"></code>
+            <button id="apoio-copiar-salvo" type="button" class="botao-escuro">COPIAR</button>
+          </div>
+        </div>
+        <div class="apoio-valores" role="radiogroup" aria-label="Valor do apoio">
+          <button type="button" class="apoio-pilula" role="radio" aria-checked="false" data-valor="5">R$ 5</button>
+          <button type="button" class="apoio-pilula escolhida" role="radio" aria-checked="true" data-valor="10">R$ 10</button>
+          <button type="button" class="apoio-pilula" role="radio" aria-checked="false" data-valor="20">R$ 20</button>
+          <button type="button" class="apoio-pilula" role="radio" aria-checked="false" data-valor="outro">OUTRO</button>
+        </div>
+        <label id="apoio-outro-linha" class="apoio-outro" hidden>
+          <span>R$</span>
+          <input id="apoio-valor" type="number" min="2" max="1000" step="1" inputmode="decimal" placeholder="mínimo 2">
+        </label>
+        <button id="apoio-gerar" type="button" class="botao-rosa apoio-acao">GERAR PIX · R$ 10</button>
+        <p id="apoio-erro" class="apoio-erro" role="alert" hidden></p>
+        <div class="apoio-resgate">
+          <button id="apoio-abrir-codigo" type="button" class="apoio-link-texto" aria-expanded="false">Já apoiou em outro aparelho? Usar código</button>
+          <form id="apoio-form-codigo" class="apoio-form-codigo" autocomplete="off" hidden>
+            <input id="apoio-input-codigo" type="text" maxlength="20" placeholder="NICHO-XXXX-XXXX" aria-label="Código de apoiador" autocapitalize="characters" spellcheck="false">
+            <button id="apoio-validar-codigo" type="submit" class="botao-escuro">LIBERAR</button>
+          </form>
+        </div>
+      </div>
+      <div id="apoio-etapa-pix" class="apoio-etapa" hidden>
+        <div class="apoio-pix-topo">
+          <span id="apoio-pix-valor" class="apoio-pix-valor">PIX · R$ 10,00</span>
+          <button id="apoio-voltar" type="button" class="apoio-link-texto">← trocar valor</button>
+        </div>
+        <div id="apoio-qr-caixa" class="apoio-qr-caixa">
+          <img id="apoio-qr" alt="QR Code Pix para pagamento">
+        </div>
+        <button id="apoio-copiar-pix" type="button" class="botao-rosa apoio-acao">COPIAR PIX COPIA E COLA</button>
+        <input id="apoio-copia-cola" class="apoio-copia-cola" type="text" readonly aria-label="Código Pix copia e cola">
+        <p id="apoio-aguardando" class="apoio-status" role="status"><i></i><span>Aguardando confirmação do Pix…</span></p>
+      </div>
+      <div id="apoio-etapa-pago" class="apoio-etapa apoio-festa" hidden>
+        <canvas id="apoio-mascote-pago" width="28" height="16" aria-hidden="true"></canvas>
+        <p class="apoio-festa-titulo">OBRIGADO PELO APOIO! ♥</p>
+        <p class="apoio-festa-sub">A skin <b>LAIKA</b> foi liberada e equipada.</p>
+        <div id="apoio-caixa-codigo" class="apoio-caixa-codigo">
+          <span class="rotulo">SEU CÓDIGO DE APOIADOR</span>
+          <div class="apoio-codigo-linha">
+            <code id="apoio-codigo-novo"></code>
+            <button id="apoio-copiar-novo" type="button" class="botao-escuro">COPIAR</button>
+          </div>
+          <p>Guarde este código para liberar a Laika em outro celular ou computador.</p>
+        </div>
+        <button id="apoio-fechar-pago" type="button" class="botao-rosa apoio-acao">CONTINUAR</button>
+      </div>
     </div>
   </dialog>
   <script>
@@ -1422,6 +1585,183 @@ function criarAlienigena() {
   };
   const normal = jogo(METAL);
   return { ...normal, dourado: jogo(OURO), largura: LW, altura: LH };
+}
+</script>
+  <script>
+// Skin da Laika, a cachorrinha cosmonauta (28x16), liberada ao apoiar o jogo.
+// Desenhada pixel a pixel por código, no mesmo estilo do tardígrado e do Neil:
+// luz vinda de cima, sombreado com dithering Bayer 4x4 e borda macia sem contorno preto.
+// Traje branco com faixa rosa, mochila a jato soltando plasma e capacete-bolha de vidro
+// com a cabecinha caramelo lá dentro. Olha para a direita; a cena espelha quando vira.
+// Devolve o mesmo formato de criarTardigrado(): { andar[4], feliz, piscar, dourado }.
+function criarApoiador() {
+  const LW = 28, LH = 16;
+  const TRAJE = ["#232648", "#3f4573", "#6d75a6", "#a5add6", "#dde2f7", "#ffffff"];
+  const OURO = ["#5a3a06", "#8f6410", "#c3921c", "#e8bd34", "#fbdc6a", "#fff4b8"];
+  const PELO = ["#36190c", "#5e2e16", "#8f4c25", "#c2733c", "#e69f63", "#fadbb8"];
+  const FAIXA = ["#6b1136", "#ad2158", "#ff4f8b", "#ffa6c6"];
+  const METAL = ["#171a30", "#2f3457", "#535b87", "#858eb8", "#bcc3e3", "#eef0ff"];
+  const BAYER4 = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map((v) => (v + 0.5) / 16);
+
+  const se = (x, y, e, p = 2.2) => 1 - Math.abs((x - e.cx) / e.rx) ** p - Math.abs((y - e.cy) / e.ry) ** p;
+  const CORPO = { cx: 11.2, cy: 8.7, rx: 5.1, ry: 3.8 };
+  const MOCHILA = { cx: 6.8, cy: 7.4, rx: 2.2, ry: 3.3 };
+  const BOLHA = { cx: 20.5, cy: 7.5, rx: 6.1, ry: 6.1 };
+  const CRANIO = { cx: 19.4, cy: 7.2, rx: 3.5, ry: 3.7 };
+  const FOCINHO = { cx: 22.8, cy: 8.5, rx: 2.5, ry: 1.95 };
+
+  function quadro(fase, estadoOlho, TONS_TRAJE) {
+    const c = document.createElement("canvas");
+    c.width = LW; c.height = LH;
+    const g = c.getContext("2d");
+    const px = (x, y, cor, a = 1) => {
+      if (x < 0 || x >= LW || y < 0 || y >= LH) return;
+      g.globalAlpha = a;
+      g.fillStyle = cor;
+      g.fillRect(x, y, 1, 1);
+      g.globalAlpha = 1;
+    };
+    const tom = (tons, t, x, y) => {
+      let k = Math.floor(t);
+      if (t - k > 0.25 + BAYER4[(y & 3) * 4 + (x & 3)] * 0.5) k++;
+      return tons[Math.max(0, Math.min(tons.length - 1, k))];
+    };
+
+    const ang = (fase / 4) * Math.PI * 2;
+
+    // 1. Jato de plasma da mochila (4 quadros vivos em branco, ouro e rosa)
+    const comprJato = [3, 4, 3, 4][fase];
+    px(4, 7, "#ffffff", 0.95);
+    px(4, 8, "#ffd23f", 0.95);
+    px(4, 6, "#ff9cbd", 0.65);
+    px(4, 9, "#ff4f8b", 0.65);
+    for (let i = 1; i <= comprJato; i++) {
+      const x = 4 - i;
+      const a = 1 - i / (comprJato + 0.9);
+      px(x, 7, i === 1 ? "#ffd23f" : "#ff4f8b", a * 0.95);
+      px(x, 8, i === 1 ? "#ff7aa8" : "#c38bff", a * 0.85);
+      if (i <= 2) {
+        px(x, 6, "#ff4f8b", a * 0.45);
+        px(x, 9, "#962fbf", a * 0.4);
+      }
+    }
+    const [fx, fy] = [[0, 7], [0, 8], [1, 6], [0, 7]][fase];
+    px(fx, fy, fase % 2 ? "#5fe1ff" : "#ffc2d6", 0.7);
+
+    // 2. Patinhas (par de trás mais escuro, par da frente mais claro, espaçados)
+    const pata = (bx, defasagem, escura) => {
+      const s = Math.sin(ang + defasagem);
+      const dx = s > 0.45 ? 1 : 0;
+      const dy = Math.cos(ang + defasagem) > 0.35 ? -1 : 0;
+      const c1 = escura ? TONS_TRAJE[1] : TONS_TRAJE[3];
+      const c2 = escura ? TONS_TRAJE[0] : TONS_TRAJE[2];
+      const bota = escura ? FAIXA[1] : FAIXA[2];
+      px(bx, 12 + dy, c1); px(bx + 1, 12 + dy, c2);
+      px(bx + dx, 13 + dy, c1); px(bx + 1 + dx, 13 + dy, c2);
+      px(bx + 1 + dx, 14 + dy, bota, escura ? 0.6 : 0.95);
+    };
+    pata(9, Math.PI, true);
+    pata(13, Math.PI + 1.5, true);
+
+    // 3. Mochila a jato nas costas
+    for (let y = 4; y <= 11; y++) for (let x = 5; x <= 9; x++) {
+      const cx = x + 0.5, cy = y + 0.5, v = se(cx, cy, MOCHILA, 2.4);
+      if (v < 0) continue;
+      const t = 4.7 - (cy - 4.4) * 0.65 - (7.8 - cx) * 0.22;
+      const borda = se(cx - 1, cy, MOCHILA, 2.4) < 0 || se(cx, cy - 1, MOCHILA, 2.4) < 0 || se(cx, cy + 1, MOCHILA, 2.4) < 0;
+      px(x, y, tom(METAL, t, x, y), borda ? 0.8 : 1);
+    }
+    px(5, 7, METAL[1]); px(5, 8, METAL[1]);
+    px(7, 5, fase % 2 === 0 ? "#5fe1ff" : "#ff4f8b", 0.95);
+
+    // 4. Corpo com traje espacial acolchoado + faixa rosa de missão
+    for (let y = 4; y <= 13; y++) for (let x = 6; x <= 16; x++) {
+      const cx = x + 0.5, cy = y + 0.5, v = se(cx, cy, CORPO, 2.4);
+      if (v < 0) continue;
+      const t = 5.4 - (cy - 5.0) * 0.68 + Math.min(0, (v - 0.28) * 2.2);
+      const borda = se(cx - 1, cy, CORPO, 2.4) < 0 || se(cx, cy - 1, CORPO, 2.4) < 0 || (se(cx, cy + 1, MOCHILA, 2.4) < 0 && se(cx, cy + 1, CORPO, 2.4) < 0);
+      const naFaixa = cx >= 11.0 && cx <= 12.6 && cy >= 5.5 && cy <= 12.0;
+      const pal = naFaixa ? FAIXA : TONS_TRAJE;
+      const tf = naFaixa ? (t / 5.4) * 3.5 : t;
+      px(x, y, tom(pal, tf, x, y), borda ? 0.78 : 1);
+    }
+
+    // 5. Rabinho no traje (abanando de leve) e patinhas da frente
+    const ry = fase % 2 === 0 ? 10 : 9;
+    px(5, ry, TONS_TRAJE[2], 0.9); px(4, ry + 1, TONS_TRAJE[1], 0.75);
+    pata(7, 0, false);
+    pata(12, 1.5, false);
+
+    // 6. Aro metálico da gola do capacete
+    for (let y = 3; y <= 12; y++) {
+      const x = y < 5 || y > 10 ? 15 : 14;
+      const t = 5.0 - ((y - 3) / 9) * 4.2;
+      px(x, y, tom(METAL, t, x, y), y === 3 || y === 12 ? 0.75 : 0.95);
+    }
+
+    // 7. Cabecinha da Laika dentro da bolha (caramelo com focinho claro e orelha caída)
+    const naCabeca = (cx, cy) => Math.max(se(cx, cy, CRANIO, 2.2), se(cx, cy, FOCINHO, 2.1));
+    for (let y = 3; y <= 12; y++) for (let x = 15; x <= 25; x++) {
+      const cx = x + 0.5, cy = y + 0.5;
+      if (se(cx, cy, BOLHA, 2.0) < 0.08) continue;
+      const v = naCabeca(cx, cy);
+      if (v < 0) continue;
+      const creme = (cx > 21.4 && cy > 7.3) || (cx > 19.9 && cy > 9.2);
+      let t = 5.1 - (cy - 3.5) * 0.65 - (20.0 - cx) * 0.08;
+      if (creme) t = Math.min(5.6, t + 1.35);
+      px(x, y, tom(PELO, t, x, y), v < 0.14 ? 0.85 : 1);
+    }
+    const dyOrelha = fase === 1 ? -1 : 0;
+    const orelha = [[17, 4], [18, 4], [16, 5], [17, 5], [18, 5], [16, 6], [17, 6], [18, 6], [17, 7], [17, 8]];
+    for (const [ox, oy] of orelha) {
+      const yy = oy + (oy >= 7 ? dyOrelha : 0);
+      px(ox, yy, oy <= 5 ? PELO[1] : PELO[0], ox === 16 ? 0.85 : 0.95);
+    }
+    if (estadoOlho === "fechado") {
+      px(20, 6, PELO[0]); px(21, 6, PELO[0]);
+    } else if (estadoOlho === "feliz") {
+      px(20, 6, "#140803"); px(21, 5, "#140803"); px(22, 6, "#140803", 0.8);
+    } else {
+      px(21, 6, "#120703"); px(21, 7, "#120703", 0.72);
+      px(20, 6, "#120703", 0.45);
+      px(21, 5, "#ffffff", 0.7);
+    }
+    px(24, 7, "#1a0a05"); px(25, 8, "#1a0a05", 0.85);
+    px(23, 10, PELO[1], 0.65);
+    if (estadoOlho === "feliz") px(23, 10, "#ff4f8b", 0.9);
+
+    // 8. Bolha de vidro transparente do capacete por cima da cabeça
+    for (let y = 0; y < LH; y++) for (let x = 14; x < LW; x++) {
+      const cx = x + 0.5, cy = y + 0.5;
+      const v = se(cx, cy, BOLHA, 2.0);
+      if (v < -0.14) continue;
+      const vDir = se(cx + 1, cy, BOLHA, 2.0);
+      const vEsq = se(cx - 1, cy, BOLHA, 2.0);
+      const vCima = se(cx, cy - 1, BOLHA, 2.0);
+      const vBaixo = se(cx, cy + 1, BOLHA, 2.0);
+      const naBorda = v >= 0 && (vDir < 0 || vCima < 0 || vBaixo < 0 || (cx > 16.5 && vEsq < 0));
+      if (v < 0) {
+        if (vDir >= 0 || vBaixo >= 0 || vCima >= 0) px(x, y, "#7ee8ff", 0.16);
+      } else if (naBorda) {
+        const topo = cy < 7.5;
+        px(x, y, topo ? "#b8f4ff" : "#4b6ea8", topo ? 0.52 : 0.36);
+      } else if (naCabeca(cx, cy) < 0) {
+        px(x, y, "#6ad8ff", 0.09);
+      }
+    }
+    for (const [rx, ry, a] of [[18, 2, 0.75], [19, 2, 0.92], [20, 2, 0.85], [17, 3, 0.7], [18, 3, 0.45], [22, 3, 0.35]]) {
+      px(rx, ry, "#ffffff", a);
+    }
+
+    return c;
+  }
+
+  const montar = (tons) => {
+    const andar = [0, 1, 2, 3].map((i) => quadro(i, "normal", tons));
+    const feliz = [0, 1, 2, 3].map((i) => quadro(i, "feliz", tons));
+    return { andar, feliz, piscar: quadro(0, "fechado", tons) };
+  };
+  return { ...montar(TRAJE), dourado: montar(OURO), largura: LW, altura: LH };
 }
 </script>
   <script>
@@ -3135,9 +3475,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
-  // Skins: o tardígrado é o padrão; o Neil (alienígena no óvni) sai com 10 dias seguidos.
+  // Skins: o tardígrado é o padrão; o Neil sai com 10 dias seguidos; a Laika sai ao apoiar.
   const skins = { tardigrado: criarTardigrado() };
   if (typeof criarAlienigena === "function") skins.alien = criarAlienigena();
+  if (typeof criarApoiador === "function") skins.apoiador = criarApoiador();
   let tardigrado = skins.tardigrado;
   let skinAtual = "tardigrado";
   // troca animada de skin (teletransporte): de qual skin veio e quando começou
@@ -3288,6 +3629,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const rb = img.width * pz * (0.85 + festa * 1.6);
     const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
     const alien = skinAtual === "alien";
+    const apoiador = skinAtual === "apoiador";
     if (mascote.dourado) {
       halo.addColorStop(0, `rgba(255, 220, 110, ${0.34 + festa * 0.5})`);
       halo.addColorStop(0.45, `rgba(255, 190, 70, ${0.14 + festa * 0.25})`);
@@ -3297,6 +3639,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
       halo.addColorStop(0, "rgba(120, 255, 170, 0.26)");
       halo.addColorStop(0.45, "rgba(80, 220, 200, 0.10)");
       halo.addColorStop(1, "rgba(60, 200, 220, 0)");
+    } else if (apoiador) {
+      // a mochila a jato e o vidro soltam um brilho rosa e estelar
+      halo.addColorStop(0, "rgba(255, 120, 190, 0.28)");
+      halo.addColorStop(0.45, "rgba(140, 200, 255, 0.12)");
+      halo.addColorStop(1, "rgba(120, 160, 255, 0)");
     } else {
       halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
       halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
@@ -3314,7 +3661,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.translate(sx, sy);
     tx.rotate(inclina * Math.sign(mascote.virar || 1));
     tx.scale(mascote.virar / resp, resp);
-    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : "rgba(255, 140, 60, 0.75)";
+    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : apoiador ? "rgba(255, 120, 190, 0.75)" : "rgba(255, 140, 60, 0.75)";
     tx.shadowBlur = semEfeitos ? 0 : pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
@@ -4308,13 +4655,15 @@ function sequencia() {
 // mesmo que a sequência zere. A escolha também fica guardada aqui.
 const DIAS_SKIN_ALIEN = 10;
 const SKINS = [
-  { id: "tardigrado", nome: "TARDÍGRADO", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
-  { id: "alien", nome: "NEIL", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
+  { id: "tardigrado", nome: "TARDÍGRADO", emoji: "🐻", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
+  { id: "alien", nome: "NEIL", emoji: "🛸", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
+  { id: "apoiador", nome: "LAIKA", emoji: "🐶", criar: () => (typeof criarApoiador === "function" ? criarApoiador() : null), apoio: true },
 ];
 const lerChave = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
 const gravarChave = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
 
 function skinLiberada(skin, seq) {
+  if (skin.apoio) return lerChave(`nicho:skin-liberada:${skin.id}`) === "1";
   if (!skin.dias) return true;
   if (lerChave(`nicho:skin-liberada:${skin.id}`) === "1") return true;
   if (seq >= skin.dias) { gravarChave(`nicho:skin-liberada:${skin.id}`, "1"); return true; }
@@ -4350,7 +4699,11 @@ function montarSkins() {
     const livre = skinLiberada(skin, seq);
     const b = document.createElement("button");
     b.type = "button";
-    b.className = "cartao-skin" + (livre ? "" : " trancada") + (skin.id === atual ? " escolhida" : "");
+    b.className =
+      "cartao-skin" +
+      (livre ? "" : " trancada") +
+      (!livre && skin.apoio ? " apoio-trancada" : "") +
+      (skin.id === atual ? " escolhida" : "");
     b.setAttribute("role", "radio");
     b.setAttribute("aria-checked", String(skin.id === atual));
     const tela = document.createElement("canvas");
@@ -4361,21 +4714,28 @@ function montarSkins() {
     nome.className = "skin-nome";
     nome.textContent = skin.nome;
     const dias = document.createElement("span");
-    dias.className = "skin-dias";
-    dias.textContent = !skin.dias ? "PADRÃO" : livre ? `${skin.dias} DIAS SEGUIDOS ✓` : `🔒 ${skin.dias} DIAS SEGUIDOS`;
+    dias.className = "skin-dias" + (skin.apoio ? " apoio" : "");
+    dias.textContent = skin.apoio
+      ? (livre ? "APOIADOR ♥" : "🔒 APOIADOR")
+      : (!skin.dias ? "PADRÃO" : livre ? `${skin.dias} DIAS SEGUIDOS ✓` : `🔒 ${skin.dias} DIAS SEGUIDOS`);
     b.append(tela, nome, dias);
     if (!livre) {
       const falta = document.createElement("span");
       falta.className = "skin-falta";
-      falta.textContent = `você está com ${Math.min(seq, skin.dias)}`;
+      falta.textContent = skin.apoio ? "toque para apoiar" : `você está com ${Math.min(seq, skin.dias)}`;
       b.append(falta);
     }
-    if (!livre) {
+    if (!livre && !skin.apoio) {
       b.setAttribute("aria-disabled", "true");
       b.setAttribute("aria-label", `${skin.nome}: libera com ${skin.dias} dias seguidos (você está com ${seq})`);
+    } else if (!livre && skin.apoio) {
+      b.setAttribute("aria-label", `${skin.nome}: skin exclusiva de apoiador, toque para apoiar via Pix`);
     }
     b.addEventListener("click", () => {
-      if (!livre) return;
+      if (!livre) {
+        if (skin.apoio) { $("janela-skins").close(); abrirApoio(); }
+        return;
+      }
       const antes = SKINS.find((k) => k.id === skinEscolhida());
       gravarChave("nicho:skin", skin.id);
       montarSkins();
@@ -4554,6 +4914,8 @@ function iniciar() {
   aplicarOpcoes();
   desenharMascoteDoMenu();
   montarSkins();
+  atualizarCaixaApoio();
+  retomarPixPendente();
   $("som").classList.toggle("mudo", Som.estaMudo());
 
   const salvo = lerProgresso();
@@ -4950,13 +5312,16 @@ const SUBIDA = 4200;
 
 // ---------- fim ----------
 
+function atualizarTextoCompartilhar() {
+  const seq = ALEATORIO ? 0 : sequencia();
+  const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao).emoji : "⚫"));
+  const skinObj = SKINS.find((k) => k.id === skinEscolhida()) || SKINS[0];
+  $("compartilhar").textContent =
+    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinObj.emoji || "🐻"}\n${LINK_JOGO}`;
+}
+
 function mostrarFim(comSom) {
-  if (LINK_APOIO) {
-    const apoio = $("apoio-link");
-    apoio.href = LINK_APOIO;
-    apoio.textContent = "APOIAR";
-    apoio.removeAttribute("aria-disabled");
-  }
+  atualizarCaixaApoio();
   Som.fundo(false);
   if (comSom) Som.fim();
   else cena.irPara(0);
@@ -4977,9 +5342,7 @@ function mostrarFim(comSom) {
 
   const seq = mostrarDiaESequencia();
   if (!ALEATORIO) avisarSkinNova(seq);
-  const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao).emoji : "⚫"));
-  $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
+  atualizarTextoCompartilhar();
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }
@@ -5522,6 +5885,354 @@ function enviar() {
   navigator.share?.({ text: $("compartilhar").textContent }).catch(() => {});
 }
 
+
+// ---------- apoio via Pix ----------
+// Gera uma cobrança Pix na API (/api/apoio, Mercado Pago) e consulta a confirmação.
+// Quando o Pix cai, libera e equipa a skin LAIKA e entrega um código NICHO-XXXX-XXXX
+// para liberar também em outros aparelhos. O pedido pendente fica no localStorage para
+// não se perder se o celular recarregar a aba na volta do aplicativo do banco.
+const API_APOIO = "/api/apoio";
+const CHAVE_APOIO_PENDENTE = "nicho:apoio-pendente";
+const CHAVE_APOIO_CODIGO = "nicho:apoio-codigo";
+const SIMULAR_PIX_LOCAL =
+  (location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1") &&
+  new URLSearchParams(location.search).has("simular-pix");
+
+const estadoApoio = {
+  modoValor: "10",
+  pedido: null, // { id, valor, qr_code, qr_code_base64, expira_em }
+  timerConsulta: null,
+  timerSprite: null,
+  quadroSprite: 0,
+  consultando: false,
+};
+
+function valorApoioEscolhido() {
+  if (estadoApoio.modoValor !== "outro") return Number(estadoApoio.modoValor);
+  const v = Number(String($("apoio-valor").value).replace(",", "."));
+  return Number.isFinite(v) ? Math.round(v * 100) / 100 : 0;
+}
+
+function formatarReais(v) {
+  return v.toLocaleString("pt-BR", { minimumFractionDigits: Number.isInteger(v) ? 0 : 2, maximumFractionDigits: 2 });
+}
+
+function atualizarBotaoGerarPix() {
+  const v = valorApoioEscolhido();
+  $("apoio-gerar").textContent = v >= 2 ? `GERAR PIX · R$ ${formatarReais(v)}` : "GERAR PIX";
+}
+
+function mostrarErroApoio(msg) {
+  const el = $("apoio-erro");
+  el.textContent = msg || "";
+  el.hidden = !msg;
+}
+
+function mostrarEtapaApoio(qual) {
+  $("apoio-etapa-valor").hidden = qual !== "valor";
+  $("apoio-etapa-pix").hidden = qual !== "pix";
+  $("apoio-etapa-pago").hidden = qual !== "pago";
+}
+
+function desenharLaikaApoio() {
+  if (typeof criarApoiador !== "function") return;
+  if (!estadoApoio.sprite) estadoApoio.sprite = criarApoiador();
+  const s = estadoApoio.sprite;
+  const q = opcoes.semEfeitos ? 0 : estadoApoio.quadroSprite % 4;
+  for (const [id, lista] of [["apoio-mascote", s.andar], ["apoio-mascote-pago", s.feliz]]) {
+    const tela = $(id);
+    if (!tela) continue;
+    const g = tela.getContext("2d");
+    g.imageSmoothingEnabled = false;
+    g.clearRect(0, 0, tela.width, tela.height);
+    g.drawImage(lista[q], 0, 0);
+  }
+}
+
+function iniciarAnimacaoLaika() {
+  desenharLaikaApoio();
+  clearInterval(estadoApoio.timerSprite);
+  if (opcoes.semEfeitos) return;
+  estadoApoio.timerSprite = setInterval(() => {
+    if (!$("janela-apoio").open) { clearInterval(estadoApoio.timerSprite); return; }
+    estadoApoio.quadroSprite = (estadoApoio.quadroSprite + 1) % 4;
+    desenharLaikaApoio();
+  }, 220);
+}
+
+function atualizarCaixaApoio() {
+  const apoio = $("apoio-link");
+  const sub = $("apoio-sub");
+  if (!apoio) return;
+  if (LINK_APOIO) return;
+  const ja = lerChave("nicho:skin-liberada:apoiador") === "1";
+  apoio.textContent = ja ? "APOIADOR ♥" : "APOIAR";
+  apoio.classList.toggle("botao-escuro", ja);
+  apoio.classList.toggle("botao-rosa", !ja);
+  if (sub) {
+    sub.textContent = ja
+      ? "Obrigado por apoiar o Nicho! A skin Laika está liberada."
+      : "Curtiu a incursão? Ajude a manter o Nicho no ar e libere a skin Laika.";
+  }
+  const salvo = lerChave(CHAVE_APOIO_CODIGO);
+  $("apoio-ja-liberada").hidden = !ja;
+  $("apoio-salvo-bloco").hidden = !salvo;
+  if (salvo) $("apoio-codigo-salvo").textContent = salvo;
+}
+
+function abrirApoio() {
+  if (LINK_APOIO) {
+    window.open(LINK_APOIO, "_blank", "noopener");
+    return;
+  }
+  mostrarErroApoio("");
+  atualizarCaixaApoio();
+  atualizarBotaoGerarPix();
+  if (estadoApoio.pedido && Date.parse(estadoApoio.pedido.expira_em) > Date.now()) {
+    exibirPixGerado(estadoApoio.pedido);
+  } else {
+    mostrarEtapaApoio("valor");
+  }
+  abrirJanela("janela-apoio");
+  iniciarAnimacaoLaika();
+}
+
+function copiarTextoComFallback(texto, campo, botao, rotuloOk = "COPIADO ✓", rotuloPadrao = "COPIAR") {
+  const marcar = (msg) => {
+    botao.textContent = msg;
+    setTimeout(() => { botao.textContent = rotuloPadrao; }, 2200);
+  };
+  const selecionar = () => {
+    if (campo && typeof campo.select === "function") {
+      campo.focus();
+      campo.select();
+    }
+    marcar("SELECIONADO");
+  };
+  try {
+    navigator.clipboard.writeText(texto).then(() => marcar(rotuloOk), selecionar);
+  } catch {
+    selecionar();
+  }
+}
+
+function exibirPixGerado(dados) {
+  estadoApoio.pedido = dados;
+  $("apoio-pix-valor").textContent = `PIX · R$ ${ Number(dados.valor).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }`;
+  $("apoio-copia-cola").value = dados.qr_code || "";
+  if (dados.qr_code_base64) {
+    $("apoio-qr").src = dados.qr_code_base64.startsWith("data:")
+      ? dados.qr_code_base64
+      : `data:image/png;base64,${dados.qr_code_base64}`;
+    $("apoio-qr-caixa").hidden = false;
+  } else {
+    $("apoio-qr-caixa").hidden = true;
+  }
+  mostrarEtapaApoio("pix");
+  agendarConsultaPix();
+}
+
+function limparPedidoPendente() {
+  estadoApoio.pedido = null;
+  clearInterval(estadoApoio.timerConsulta);
+  estadoApoio.timerConsulta = null;
+  try { localStorage.removeItem(CHAVE_APOIO_PENDENTE); } catch {}
+}
+
+function concluirApoio(codigo) {
+  limparPedidoPendente();
+  const antes = SKINS.find((k) => k.id === skinEscolhida()) || SKINS[0];
+  gravarChave("nicho:skin-liberada:apoiador", "1");
+  if (codigo) gravarChave(CHAVE_APOIO_CODIGO, codigo);
+  gravarChave("nicho:skin", "apoiador");
+
+  cena.skin("apoiador", true);
+  const nova = SKINS.find((k) => k.id === "apoiador");
+  if (!opcoes.semEfeitos && typeof Transicao === "object" && antes.id !== "apoiador") {
+    const de = antes.criar(), para = nova && nova.criar();
+    if (de && para && !$("inicio").hidden) Transicao.animarCanvas($("modo-mascote"), de.andar[0], para.andar[0]);
+    else desenharMascoteDoMenu();
+  } else {
+    desenharMascoteDoMenu();
+  }
+  montarSkins();
+  atualizarCaixaApoio();
+  if (!$("fim").hidden) atualizarTextoCompartilhar();
+
+  Som.ligar();
+  Som.materializar();
+
+  $("apoio-caixa-codigo").hidden = !codigo;
+  if (codigo) $("apoio-codigo-novo").textContent = codigo;
+  mostrarEtapaApoio("pago");
+  if (!$("janela-apoio").open) abrirJanela("janela-apoio");
+  iniciarAnimacaoLaika();
+}
+
+async function consultarPixPendente() {
+  const p = estadoApoio.pedido;
+  if (!p || estadoApoio.consultando) return;
+  if (Date.parse(p.expira_em) <= Date.now()) {
+    limparPedidoPendente();
+    if ($("janela-apoio").open) {
+      mostrarEtapaApoio("valor");
+      mostrarErroApoio("O QR Code expirou. Gere um novo Pix se ainda quiser apoiar.");
+    }
+    return;
+  }
+  if (p.simulado) {
+    if (Date.now() >= p.aprovarEm) concluirApoio("NICHO-TEST-2026");
+    return;
+  }
+  if (location.protocol === "file:") return;
+  estadoApoio.consultando = true;
+  try {
+    const r = await fetch(`${API_APOIO}?id=${encodeURIComponent(p.id)}`);
+    if (!r.ok) return;
+    const d = await r.json();
+    if (d.status === "approved") {
+      concluirApoio(d.codigo || "");
+    } else if (d.status === "cancelled" || d.status === "rejected") {
+      limparPedidoPendente();
+      if ($("janela-apoio").open) {
+        mostrarEtapaApoio("valor");
+        mostrarErroApoio("O pagamento foi cancelado. Você pode gerar outro Pix.");
+      }
+    }
+  } catch {
+    // sem conexão no momento: tenta de novo no próximo ciclo
+  } finally {
+    estadoApoio.consultando = false;
+  }
+}
+
+function agendarConsultaPix() {
+  clearInterval(estadoApoio.timerConsulta);
+  estadoApoio.timerConsulta = setInterval(consultarPixPendente, 3200);
+}
+
+function qrSimuladoDataUrl() {
+  const c = document.createElement("canvas");
+  c.width = 21; c.height = 21;
+  const g = c.getContext("2d");
+  g.fillStyle = "#ffffff"; g.fillRect(0, 0, 21, 21);
+  g.fillStyle = "#12082e";
+  const canto = (ox, oy) => {
+    g.fillRect(ox, oy, 7, 7);
+    g.fillStyle = "#ffffff"; g.fillRect(ox + 1, oy + 1, 5, 5);
+    g.fillStyle = "#12082e"; g.fillRect(ox + 2, oy + 2, 3, 3);
+  };
+  canto(0, 0); canto(14, 0); canto(0, 14);
+  for (let y = 0; y < 21; y++) for (let x = 0; x < 21; x++) {
+    if ((x < 8 && y < 8) || (x > 12 && y < 8) || (x < 8 && y > 12)) continue;
+    if (((x * 7 + y * 13) % 5) < 2) g.fillRect(x, y, 1, 1);
+  }
+  return c.toDataURL();
+}
+
+async function gerarPixApoio() {
+  mostrarErroApoio("");
+  const valor = valorApoioEscolhido();
+  if (!valor || valor < 2) {
+    mostrarErroApoio("O valor mínimo para Pix é R$ 2.");
+    if (estadoApoio.modoValor === "outro") $("apoio-valor").focus();
+    return;
+  }
+  if (valor > 1000) {
+    mostrarErroApoio("Escolha um valor de até R$ 1.000.");
+    return;
+  }
+
+  if (SIMULAR_PIX_LOCAL) {
+    const falso = {
+      id: "simulado-local",
+      valor,
+      qr_code: "00020126360014BR.GOV.BCB.PIX0114NICHO-SIMULADO5204000053039865802BR",
+      qr_code_base64: qrSimuladoDataUrl(),
+      expira_em: new Date(Date.now() + 15 * 60 * 1000).toISOString(),
+      simulado: true,
+      aprovarEm: Date.now() + 2600,
+    };
+    exibirPixGerado(falso);
+    return;
+  }
+
+  if (location.protocol === "file:") {
+    mostrarErroApoio("Abra nichoojogo.com com internet para gerar o Pix.");
+    return;
+  }
+
+  const botao = $("apoio-gerar");
+  botao.disabled = true;
+  botao.textContent = "GERANDO PIX…";
+  try {
+    const r = await fetch(API_APOIO, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ valor }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok || !d.qr_code) {
+      mostrarErroApoio(d.erro || "Não foi possível gerar o Pix agora. Tente em instantes.");
+      return;
+    }
+    gravarChave(CHAVE_APOIO_PENDENTE, JSON.stringify(d));
+    exibirPixGerado(d);
+  } catch {
+    mostrarErroApoio("Sem conexão com o servidor. Confira sua internet e tente de novo.");
+  } finally {
+    botao.disabled = false;
+    atualizarBotaoGerarPix();
+  }
+}
+
+async function validarCodigoApoiador(e) {
+  if (e) e.preventDefault();
+  mostrarErroApoio("");
+  const bruto = $("apoio-input-codigo").value.trim();
+  if (!bruto) {
+    $("apoio-input-codigo").focus();
+    return;
+  }
+  if (SIMULAR_PIX_LOCAL && bruto.toUpperCase() === "NICHO-TEST-2026") {
+    concluirApoio("NICHO-TEST-2026");
+    return;
+  }
+  if (location.protocol === "file:") {
+    mostrarErroApoio("Abra nichoojogo.com com internet para validar seu código.");
+    return;
+  }
+  const botao = $("apoio-validar-codigo");
+  botao.disabled = true;
+  try {
+    const r = await fetch(`${API_APOIO}?codigo=${encodeURIComponent(bruto)}`);
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok || d.status !== "approved") {
+      mostrarErroApoio(d.erro || "Código não encontrado.");
+      return;
+    }
+    $("apoio-input-codigo").value = "";
+    concluirApoio(d.codigo);
+  } catch {
+    mostrarErroApoio("Sem conexão para validar o código agora.");
+  } finally {
+    botao.disabled = false;
+  }
+}
+
+function retomarPixPendente() {
+  try {
+    const salvo = JSON.parse(lerChave(CHAVE_APOIO_PENDENTE) || "null");
+    if (!salvo || !salvo.id || Date.parse(salvo.expira_em) <= Date.now()) {
+      if (salvo) localStorage.removeItem(CHAVE_APOIO_PENDENTE);
+      return;
+    }
+    estadoApoio.pedido = salvo;
+    consultarPixPendente();
+    agendarConsultaPix();
+  } catch {}
+}
+
 // ---------- eventos ----------
 
 $("comecar").addEventListener("click", comecar);
@@ -5598,6 +6309,49 @@ $("copiar").addEventListener("click", copiar);
 $("enviar").addEventListener("click", enviar);
 $("abrir-skins").addEventListener("click", () => abrirJanela("janela-skins"));
 $("abrir-opcoes").addEventListener("click", () => abrirJanela("janela-opcoes"));
+$("apoio-link").addEventListener("click", abrirApoio);
+document.querySelectorAll(".apoio-pilula").forEach((b) => b.addEventListener("click", () => {
+  estadoApoio.modoValor = b.dataset.valor;
+  document.querySelectorAll(".apoio-pilula").forEach((p) => {
+    const ativa = p === b;
+    p.classList.toggle("escolhida", ativa);
+    p.setAttribute("aria-checked", String(ativa));
+  });
+  const outro = estadoApoio.modoValor === "outro";
+  $("apoio-outro-linha").hidden = !outro;
+  if (outro) $("apoio-valor").focus();
+  mostrarErroApoio("");
+  atualizarBotaoGerarPix();
+}));
+$("apoio-valor").addEventListener("input", () => { mostrarErroApoio(""); atualizarBotaoGerarPix(); });
+$("apoio-valor").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); gerarPixApoio(); } });
+$("apoio-gerar").addEventListener("click", gerarPixApoio);
+$("apoio-voltar").addEventListener("click", () => {
+  limparPedidoPendente();
+  mostrarErroApoio("");
+  mostrarEtapaApoio("valor");
+});
+$("apoio-copiar-pix").addEventListener("click", () => {
+  copiarTextoComFallback($("apoio-copia-cola").value, $("apoio-copia-cola"), $("apoio-copiar-pix"), "PIX COPIADO ✓", "COPIAR PIX COPIA E COLA");
+});
+$("apoio-copiar-novo").addEventListener("click", () => {
+  copiarTextoComFallback($("apoio-codigo-novo").textContent, null, $("apoio-copiar-novo"));
+});
+$("apoio-copiar-salvo").addEventListener("click", () => {
+  copiarTextoComFallback($("apoio-codigo-salvo").textContent, null, $("apoio-copiar-salvo"));
+});
+$("apoio-fechar-pago").addEventListener("click", () => $("janela-apoio").close());
+$("apoio-abrir-codigo").addEventListener("click", () => {
+  const form = $("apoio-form-codigo");
+  form.hidden = !form.hidden;
+  $("apoio-abrir-codigo").setAttribute("aria-expanded", String(!form.hidden));
+  if (!form.hidden) $("apoio-input-codigo").focus();
+});
+$("apoio-form-codigo").addEventListener("submit", validarCodigoApoiador);
+$("apoio-validar-codigo").addEventListener("click", validarCodigoApoiador);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && estadoApoio.pedido) consultarPixPendente();
+});
 $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());

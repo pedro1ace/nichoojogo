@@ -26,3 +26,16 @@ CREATE TABLE IF NOT EXISTS recusadas (
   n         INTEGER NOT NULL DEFAULT 0,
   PRIMARY KEY (dia, categoria, texto)
 );
+
+-- Apoios via Pix (functions/api/apoio/).
+-- Guarda só o identificador do pedido, o id do pagamento no Mercado Pago, o valor em centavos,
+-- o status e o código que libera a skin de apoiador em outros aparelhos. Sem nome, CPF ou IP.
+CREATE TABLE IF NOT EXISTS apoios (
+  id        TEXT    PRIMARY KEY,
+  mp_id     TEXT    UNIQUE,
+  centavos  INTEGER NOT NULL,
+  status    TEXT    NOT NULL DEFAULT 'pending',
+  codigo    TEXT    NOT NULL UNIQUE,
+  criado_em TEXT    NOT NULL,
+  pago_em   TEXT
+);

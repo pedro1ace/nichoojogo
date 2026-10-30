@@ -1250,9 +1250,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   // O mascote (um tardígrado de capacete) segue a câmera com uma mola suave.
-  // Skins: o tardígrado é o padrão; o Neil (alienígena no óvni) sai com 10 dias seguidos.
+  // Skins: o tardígrado é o padrão; o Neil sai com 10 dias seguidos; a Laika sai ao apoiar.
   const skins = { tardigrado: criarTardigrado() };
   if (typeof criarAlienigena === "function") skins.alien = criarAlienigena();
+  if (typeof criarApoiador === "function") skins.apoiador = criarApoiador();
   let tardigrado = skins.tardigrado;
   let skinAtual = "tardigrado";
   // troca animada de skin (teletransporte): de qual skin veio e quando começou
@@ -1403,6 +1404,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const rb = img.width * pz * (0.85 + festa * 1.6);
     const halo = tx.createRadialGradient(sx, sy, 0, sx, sy, rb);
     const alien = skinAtual === "alien";
+    const apoiador = skinAtual === "apoiador";
     if (mascote.dourado) {
       halo.addColorStop(0, `rgba(255, 220, 110, ${0.34 + festa * 0.5})`);
       halo.addColorStop(0.45, `rgba(255, 190, 70, ${0.14 + festa * 0.25})`);
@@ -1412,6 +1414,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
       halo.addColorStop(0, "rgba(120, 255, 170, 0.26)");
       halo.addColorStop(0.45, "rgba(80, 220, 200, 0.10)");
       halo.addColorStop(1, "rgba(60, 200, 220, 0)");
+    } else if (apoiador) {
+      // a mochila a jato e o vidro soltam um brilho rosa e estelar
+      halo.addColorStop(0, "rgba(255, 120, 190, 0.28)");
+      halo.addColorStop(0.45, "rgba(140, 200, 255, 0.12)");
+      halo.addColorStop(1, "rgba(120, 160, 255, 0)");
     } else {
       halo.addColorStop(0, "rgba(255, 150, 70, 0.30)");
       halo.addColorStop(0.45, "rgba(255, 120, 50, 0.12)");
@@ -1429,7 +1436,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.translate(sx, sy);
     tx.rotate(inclina * Math.sign(mascote.virar || 1));
     tx.scale(mascote.virar / resp, resp);
-    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : "rgba(255, 140, 60, 0.75)";
+    tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : apoiador ? "rgba(255, 120, 190, 0.75)" : "rgba(255, 140, 60, 0.75)";
     tx.shadowBlur = semEfeitos ? 0 : pz * 4;
     tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();

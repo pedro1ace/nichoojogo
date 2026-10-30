@@ -148,13 +148,15 @@ function sequencia() {
 // mesmo que a sequência zere. A escolha também fica guardada aqui.
 const DIAS_SKIN_ALIEN = 10;
 const SKINS = [
-  { id: "tardigrado", nome: "TARDÍGRADO", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
-  { id: "alien", nome: "NEIL", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
+  { id: "tardigrado", nome: "TARDÍGRADO", emoji: "🐻", criar: () => (typeof criarTardigrado === "function" ? criarTardigrado() : null) },
+  { id: "alien", nome: "NEIL", emoji: "🛸", criar: () => (typeof criarAlienigena === "function" ? criarAlienigena() : null), dias: DIAS_SKIN_ALIEN },
+  { id: "apoiador", nome: "LAIKA", emoji: "🐶", criar: () => (typeof criarApoiador === "function" ? criarApoiador() : null), apoio: true },
 ];
 const lerChave = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
 const gravarChave = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
 
 function skinLiberada(skin, seq) {
+  if (skin.apoio) return lerChave(`nicho:skin-liberada:${skin.id}`) === "1";
   if (!skin.dias) return true;
   if (lerChave(`nicho:skin-liberada:${skin.id}`) === "1") return true;
   if (seq >= skin.dias) { gravarChave(`nicho:skin-liberada:${skin.id}`, "1"); return true; }
@@ -190,7 +192,11 @@ function montarSkins() {
     const livre = skinLiberada(skin, seq);
     const b = document.createElement("button");
     b.type = "button";
-    b.className = "cartao-skin" + (livre ? "" : " trancada") + (skin.id === atual ? " escolhida" : "");
+    b.className =
+      "cartao-skin" +
+      (livre ? "" : " trancada") +
+      (!livre && skin.apoio ? " apoio-trancada" : "") +
+      (skin.id === atual ? " escolhida" : "");
     b.setAttribute("role", "radio");
     b.setAttribute("aria-checked", String(skin.id === atual));
     const tela = document.createElement("canvas");
@@ -201,21 +207,28 @@ function montarSkins() {
     nome.className = "skin-nome";
     nome.textContent = skin.nome;
     const dias = document.createElement("span");
-    dias.className = "skin-dias";
-    dias.textContent = !skin.dias ? "PADRÃO" : livre ? `${skin.dias} DIAS SEGUIDOS ✓` : `🔒 ${skin.dias} DIAS SEGUIDOS`;
+    dias.className = "skin-dias" + (skin.apoio ? " apoio" : "");
+    dias.textContent = skin.apoio
+      ? (livre ? "APOIADOR ♥" : "🔒 APOIADOR")
+      : (!skin.dias ? "PADRÃO" : livre ? `${skin.dias} DIAS SEGUIDOS ✓` : `🔒 ${skin.dias} DIAS SEGUIDOS`);
     b.append(tela, nome, dias);
     if (!livre) {
       const falta = document.createElement("span");
       falta.className = "skin-falta";
-      falta.textContent = `você está com ${Math.min(seq, skin.dias)}`;
+      falta.textContent = skin.apoio ? "toque para apoiar" : `você está com ${Math.min(seq, skin.dias)}`;
       b.append(falta);
     }
-    if (!livre) {
+    if (!livre && !skin.apoio) {
       b.setAttribute("aria-disabled", "true");
       b.setAttribute("aria-label", `${skin.nome}: libera com ${skin.dias} dias seguidos (você está com ${seq})`);
+    } else if (!livre && skin.apoio) {
+      b.setAttribute("aria-label", `${skin.nome}: skin exclusiva de apoiador, toque para apoiar via Pix`);
     }
     b.addEventListener("click", () => {
-      if (!livre) return;
+      if (!livre) {
+        if (skin.apoio) { $("janela-skins").close(); abrirApoio(); }
+        return;
+      }
       const antes = SKINS.find((k) => k.id === skinEscolhida());
       gravarChave("nicho:skin", skin.id);
       montarSkins();
@@ -394,6 +407,8 @@ function iniciar() {
   aplicarOpcoes();
   desenharMascoteDoMenu();
   montarSkins();
+  atualizarCaixaApoio();
+  retomarPixPendente();
   $("som").classList.toggle("mudo", Som.estaMudo());
 
   const salvo = lerProgresso();
@@ -790,13 +805,16 @@ const SUBIDA = 4200;
 
 // ---------- fim ----------
 
+function atualizarTextoCompartilhar() {
+  const seq = ALEATORIO ? 0 : sequencia();
+  const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao).emoji : "⚫"));
+  const skinObj = SKINS.find((k) => k.id === skinEscolhida()) || SKINS[0];
+  $("compartilhar").textContent =
+    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinObj.emoji || "🐻"}\n${LINK_JOGO}`;
+}
+
 function mostrarFim(comSom) {
-  if (LINK_APOIO) {
-    const apoio = $("apoio-link");
-    apoio.href = LINK_APOIO;
-    apoio.textContent = "APOIAR";
-    apoio.removeAttribute("aria-disabled");
-  }
+  atualizarCaixaApoio();
   Som.fundo(false);
   if (comSom) Som.fim();
   else cena.irPara(0);
@@ -817,9 +835,7 @@ function mostrarFim(comSom) {
 
   const seq = mostrarDiaESequencia();
   if (!ALEATORIO) avisarSkinNova(seq);
-  const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao).emoji : "⚫"));
-  $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
+  atualizarTextoCompartilhar();
   $("enviar").hidden = !navigator.share;
   contarAteAmanha();
 }
@@ -1362,6 +1378,354 @@ function enviar() {
   navigator.share?.({ text: $("compartilhar").textContent }).catch(() => {});
 }
 
+
+// ---------- apoio via Pix ----------
+// Gera uma cobrança Pix na API (/api/apoio, Mercado Pago) e consulta a confirmação.
+// Quando o Pix cai, libera e equipa a skin LAIKA e entrega um código NICHO-XXXX-XXXX
+// para liberar também em outros aparelhos. O pedido pendente fica no localStorage para
+// não se perder se o celular recarregar a aba na volta do aplicativo do banco.
+const API_APOIO = "/api/apoio";
+const CHAVE_APOIO_PENDENTE = "nicho:apoio-pendente";
+const CHAVE_APOIO_CODIGO = "nicho:apoio-codigo";
+const SIMULAR_PIX_LOCAL =
+  (location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1") &&
+  new URLSearchParams(location.search).has("simular-pix");
+
+const estadoApoio = {
+  modoValor: "10",
+  pedido: null, // { id, valor, qr_code, qr_code_base64, expira_em }
+  timerConsulta: null,
+  timerSprite: null,
+  quadroSprite: 0,
+  consultando: false,
+};
+
+function valorApoioEscolhido() {
+  if (estadoApoio.modoValor !== "outro") return Number(estadoApoio.modoValor);
+  const v = Number(String($("apoio-valor").value).replace(",", "."));
+  return Number.isFinite(v) ? Math.round(v * 100) / 100 : 0;
+}
+
+function formatarReais(v) {
+  return v.toLocaleString("pt-BR", { minimumFractionDigits: Number.isInteger(v) ? 0 : 2, maximumFractionDigits: 2 });
+}
+
+function atualizarBotaoGerarPix() {
+  const v = valorApoioEscolhido();
+  $("apoio-gerar").textContent = v >= 2 ? `GERAR PIX · R$ ${formatarReais(v)}` : "GERAR PIX";
+}
+
+function mostrarErroApoio(msg) {
+  const el = $("apoio-erro");
+  el.textContent = msg || "";
+  el.hidden = !msg;
+}
+
+function mostrarEtapaApoio(qual) {
+  $("apoio-etapa-valor").hidden = qual !== "valor";
+  $("apoio-etapa-pix").hidden = qual !== "pix";
+  $("apoio-etapa-pago").hidden = qual !== "pago";
+}
+
+function desenharLaikaApoio() {
+  if (typeof criarApoiador !== "function") return;
+  if (!estadoApoio.sprite) estadoApoio.sprite = criarApoiador();
+  const s = estadoApoio.sprite;
+  const q = opcoes.semEfeitos ? 0 : estadoApoio.quadroSprite % 4;
+  for (const [id, lista] of [["apoio-mascote", s.andar], ["apoio-mascote-pago", s.feliz]]) {
+    const tela = $(id);
+    if (!tela) continue;
+    const g = tela.getContext("2d");
+    g.imageSmoothingEnabled = false;
+    g.clearRect(0, 0, tela.width, tela.height);
+    g.drawImage(lista[q], 0, 0);
+  }
+}
+
+function iniciarAnimacaoLaika() {
+  desenharLaikaApoio();
+  clearInterval(estadoApoio.timerSprite);
+  if (opcoes.semEfeitos) return;
+  estadoApoio.timerSprite = setInterval(() => {
+    if (!$("janela-apoio").open) { clearInterval(estadoApoio.timerSprite); return; }
+    estadoApoio.quadroSprite = (estadoApoio.quadroSprite + 1) % 4;
+    desenharLaikaApoio();
+  }, 220);
+}
+
+function atualizarCaixaApoio() {
+  const apoio = $("apoio-link");
+  const sub = $("apoio-sub");
+  if (!apoio) return;
+  if (LINK_APOIO) return;
+  const ja = lerChave("nicho:skin-liberada:apoiador") === "1";
+  apoio.textContent = ja ? "APOIADOR ♥" : "APOIAR";
+  apoio.classList.toggle("botao-escuro", ja);
+  apoio.classList.toggle("botao-rosa", !ja);
+  if (sub) {
+    sub.textContent = ja
+      ? "Obrigado por apoiar o Nicho! A skin Laika está liberada."
+      : "Curtiu a incursão? Ajude a manter o Nicho no ar e libere a skin Laika.";
+  }
+  const salvo = lerChave(CHAVE_APOIO_CODIGO);
+  $("apoio-ja-liberada").hidden = !ja;
+  $("apoio-salvo-bloco").hidden = !salvo;
+  if (salvo) $("apoio-codigo-salvo").textContent = salvo;
+}
+
+function abrirApoio() {
+  if (LINK_APOIO) {
+    window.open(LINK_APOIO, "_blank", "noopener");
+    return;
+  }
+  mostrarErroApoio("");
+  atualizarCaixaApoio();
+  atualizarBotaoGerarPix();
+  if (estadoApoio.pedido && Date.parse(estadoApoio.pedido.expira_em) > Date.now()) {
+    exibirPixGerado(estadoApoio.pedido);
+  } else {
+    mostrarEtapaApoio("valor");
+  }
+  abrirJanela("janela-apoio");
+  iniciarAnimacaoLaika();
+}
+
+function copiarTextoComFallback(texto, campo, botao, rotuloOk = "COPIADO ✓", rotuloPadrao = "COPIAR") {
+  const marcar = (msg) => {
+    botao.textContent = msg;
+    setTimeout(() => { botao.textContent = rotuloPadrao; }, 2200);
+  };
+  const selecionar = () => {
+    if (campo && typeof campo.select === "function") {
+      campo.focus();
+      campo.select();
+    }
+    marcar("SELECIONADO");
+  };
+  try {
+    navigator.clipboard.writeText(texto).then(() => marcar(rotuloOk), selecionar);
+  } catch {
+    selecionar();
+  }
+}
+
+function exibirPixGerado(dados) {
+  estadoApoio.pedido = dados;
+  $("apoio-pix-valor").textContent = `PIX · R$ ${ Number(dados.valor).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }`;
+  $("apoio-copia-cola").value = dados.qr_code || "";
+  if (dados.qr_code_base64) {
+    $("apoio-qr").src = dados.qr_code_base64.startsWith("data:")
+      ? dados.qr_code_base64
+      : `data:image/png;base64,${dados.qr_code_base64}`;
+    $("apoio-qr-caixa").hidden = false;
+  } else {
+    $("apoio-qr-caixa").hidden = true;
+  }
+  mostrarEtapaApoio("pix");
+  agendarConsultaPix();
+}
+
+function limparPedidoPendente() {
+  estadoApoio.pedido = null;
+  clearInterval(estadoApoio.timerConsulta);
+  estadoApoio.timerConsulta = null;
+  try { localStorage.removeItem(CHAVE_APOIO_PENDENTE); } catch {}
+}
+
+function concluirApoio(codigo) {
+  limparPedidoPendente();
+  const antes = SKINS.find((k) => k.id === skinEscolhida()) || SKINS[0];
+  gravarChave("nicho:skin-liberada:apoiador", "1");
+  if (codigo) gravarChave(CHAVE_APOIO_CODIGO, codigo);
+  gravarChave("nicho:skin", "apoiador");
+
+  cena.skin("apoiador", true);
+  const nova = SKINS.find((k) => k.id === "apoiador");
+  if (!opcoes.semEfeitos && typeof Transicao === "object" && antes.id !== "apoiador") {
+    const de = antes.criar(), para = nova && nova.criar();
+    if (de && para && !$("inicio").hidden) Transicao.animarCanvas($("modo-mascote"), de.andar[0], para.andar[0]);
+    else desenharMascoteDoMenu();
+  } else {
+    desenharMascoteDoMenu();
+  }
+  montarSkins();
+  atualizarCaixaApoio();
+  if (!$("fim").hidden) atualizarTextoCompartilhar();
+
+  Som.ligar();
+  Som.materializar();
+
+  $("apoio-caixa-codigo").hidden = !codigo;
+  if (codigo) $("apoio-codigo-novo").textContent = codigo;
+  mostrarEtapaApoio("pago");
+  if (!$("janela-apoio").open) abrirJanela("janela-apoio");
+  iniciarAnimacaoLaika();
+}
+
+async function consultarPixPendente() {
+  const p = estadoApoio.pedido;
+  if (!p || estadoApoio.consultando) return;
+  if (Date.parse(p.expira_em) <= Date.now()) {
+    limparPedidoPendente();
+    if ($("janela-apoio").open) {
+      mostrarEtapaApoio("valor");
+      mostrarErroApoio("O QR Code expirou. Gere um novo Pix se ainda quiser apoiar.");
+    }
+    return;
+  }
+  if (p.simulado) {
+    if (Date.now() >= p.aprovarEm) concluirApoio("NICHO-TEST-2026");
+    return;
+  }
+  if (location.protocol === "file:") return;
+  estadoApoio.consultando = true;
+  try {
+    const r = await fetch(`${API_APOIO}?id=${encodeURIComponent(p.id)}`);
+    if (!r.ok) return;
+    const d = await r.json();
+    if (d.status === "approved") {
+      concluirApoio(d.codigo || "");
+    } else if (d.status === "cancelled" || d.status === "rejected") {
+      limparPedidoPendente();
+      if ($("janela-apoio").open) {
+        mostrarEtapaApoio("valor");
+        mostrarErroApoio("O pagamento foi cancelado. Você pode gerar outro Pix.");
+      }
+    }
+  } catch {
+    // sem conexão no momento: tenta de novo no próximo ciclo
+  } finally {
+    estadoApoio.consultando = false;
+  }
+}
+
+function agendarConsultaPix() {
+  clearInterval(estadoApoio.timerConsulta);
+  estadoApoio.timerConsulta = setInterval(consultarPixPendente, 3200);
+}
+
+function qrSimuladoDataUrl() {
+  const c = document.createElement("canvas");
+  c.width = 21; c.height = 21;
+  const g = c.getContext("2d");
+  g.fillStyle = "#ffffff"; g.fillRect(0, 0, 21, 21);
+  g.fillStyle = "#12082e";
+  const canto = (ox, oy) => {
+    g.fillRect(ox, oy, 7, 7);
+    g.fillStyle = "#ffffff"; g.fillRect(ox + 1, oy + 1, 5, 5);
+    g.fillStyle = "#12082e"; g.fillRect(ox + 2, oy + 2, 3, 3);
+  };
+  canto(0, 0); canto(14, 0); canto(0, 14);
+  for (let y = 0; y < 21; y++) for (let x = 0; x < 21; x++) {
+    if ((x < 8 && y < 8) || (x > 12 && y < 8) || (x < 8 && y > 12)) continue;
+    if (((x * 7 + y * 13) % 5) < 2) g.fillRect(x, y, 1, 1);
+  }
+  return c.toDataURL();
+}
+
+async function gerarPixApoio() {
+  mostrarErroApoio("");
+  const valor = valorApoioEscolhido();
+  if (!valor || valor < 2) {
+    mostrarErroApoio("O valor mínimo para Pix é R$ 2.");
+    if (estadoApoio.modoValor === "outro") $("apoio-valor").focus();
+    return;
+  }
+  if (valor > 1000) {
+    mostrarErroApoio("Escolha um valor de até R$ 1.000.");
+    return;
+  }
+
+  if (SIMULAR_PIX_LOCAL) {
+    const falso = {
+      id: "simulado-local",
+      valor,
+      qr_code: "00020126360014BR.GOV.BCB.PIX0114NICHO-SIMULADO5204000053039865802BR",
+      qr_code_base64: qrSimuladoDataUrl(),
+      expira_em: new Date(Date.now() + 15 * 60 * 1000).toISOString(),
+      simulado: true,
+      aprovarEm: Date.now() + 2600,
+    };
+    exibirPixGerado(falso);
+    return;
+  }
+
+  if (location.protocol === "file:") {
+    mostrarErroApoio("Abra nichoojogo.com com internet para gerar o Pix.");
+    return;
+  }
+
+  const botao = $("apoio-gerar");
+  botao.disabled = true;
+  botao.textContent = "GERANDO PIX…";
+  try {
+    const r = await fetch(API_APOIO, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ valor }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok || !d.qr_code) {
+      mostrarErroApoio(d.erro || "Não foi possível gerar o Pix agora. Tente em instantes.");
+      return;
+    }
+    gravarChave(CHAVE_APOIO_PENDENTE, JSON.stringify(d));
+    exibirPixGerado(d);
+  } catch {
+    mostrarErroApoio("Sem conexão com o servidor. Confira sua internet e tente de novo.");
+  } finally {
+    botao.disabled = false;
+    atualizarBotaoGerarPix();
+  }
+}
+
+async function validarCodigoApoiador(e) {
+  if (e) e.preventDefault();
+  mostrarErroApoio("");
+  const bruto = $("apoio-input-codigo").value.trim();
+  if (!bruto) {
+    $("apoio-input-codigo").focus();
+    return;
+  }
+  if (SIMULAR_PIX_LOCAL && bruto.toUpperCase() === "NICHO-TEST-2026") {
+    concluirApoio("NICHO-TEST-2026");
+    return;
+  }
+  if (location.protocol === "file:") {
+    mostrarErroApoio("Abra nichoojogo.com com internet para validar seu código.");
+    return;
+  }
+  const botao = $("apoio-validar-codigo");
+  botao.disabled = true;
+  try {
+    const r = await fetch(`${API_APOIO}?codigo=${encodeURIComponent(bruto)}`);
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok || d.status !== "approved") {
+      mostrarErroApoio(d.erro || "Código não encontrado.");
+      return;
+    }
+    $("apoio-input-codigo").value = "";
+    concluirApoio(d.codigo);
+  } catch {
+    mostrarErroApoio("Sem conexão para validar o código agora.");
+  } finally {
+    botao.disabled = false;
+  }
+}
+
+function retomarPixPendente() {
+  try {
+    const salvo = JSON.parse(lerChave(CHAVE_APOIO_PENDENTE) || "null");
+    if (!salvo || !salvo.id || Date.parse(salvo.expira_em) <= Date.now()) {
+      if (salvo) localStorage.removeItem(CHAVE_APOIO_PENDENTE);
+      return;
+    }
+    estadoApoio.pedido = salvo;
+    consultarPixPendente();
+    agendarConsultaPix();
+  } catch {}
+}
+
 // ---------- eventos ----------
 
 $("comecar").addEventListener("click", comecar);
@@ -1438,6 +1802,49 @@ $("copiar").addEventListener("click", copiar);
 $("enviar").addEventListener("click", enviar);
 $("abrir-skins").addEventListener("click", () => abrirJanela("janela-skins"));
 $("abrir-opcoes").addEventListener("click", () => abrirJanela("janela-opcoes"));
+$("apoio-link").addEventListener("click", abrirApoio);
+document.querySelectorAll(".apoio-pilula").forEach((b) => b.addEventListener("click", () => {
+  estadoApoio.modoValor = b.dataset.valor;
+  document.querySelectorAll(".apoio-pilula").forEach((p) => {
+    const ativa = p === b;
+    p.classList.toggle("escolhida", ativa);
+    p.setAttribute("aria-checked", String(ativa));
+  });
+  const outro = estadoApoio.modoValor === "outro";
+  $("apoio-outro-linha").hidden = !outro;
+  if (outro) $("apoio-valor").focus();
+  mostrarErroApoio("");
+  atualizarBotaoGerarPix();
+}));
+$("apoio-valor").addEventListener("input", () => { mostrarErroApoio(""); atualizarBotaoGerarPix(); });
+$("apoio-valor").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); gerarPixApoio(); } });
+$("apoio-gerar").addEventListener("click", gerarPixApoio);
+$("apoio-voltar").addEventListener("click", () => {
+  limparPedidoPendente();
+  mostrarErroApoio("");
+  mostrarEtapaApoio("valor");
+});
+$("apoio-copiar-pix").addEventListener("click", () => {
+  copiarTextoComFallback($("apoio-copia-cola").value, $("apoio-copia-cola"), $("apoio-copiar-pix"), "PIX COPIADO ✓", "COPIAR PIX COPIA E COLA");
+});
+$("apoio-copiar-novo").addEventListener("click", () => {
+  copiarTextoComFallback($("apoio-codigo-novo").textContent, null, $("apoio-copiar-novo"));
+});
+$("apoio-copiar-salvo").addEventListener("click", () => {
+  copiarTextoComFallback($("apoio-codigo-salvo").textContent, null, $("apoio-copiar-salvo"));
+});
+$("apoio-fechar-pago").addEventListener("click", () => $("janela-apoio").close());
+$("apoio-abrir-codigo").addEventListener("click", () => {
+  const form = $("apoio-form-codigo");
+  form.hidden = !form.hidden;
+  $("apoio-abrir-codigo").setAttribute("aria-expanded", String(!form.hidden));
+  if (!form.hidden) $("apoio-input-codigo").focus();
+});
+$("apoio-form-codigo").addEventListener("submit", validarCodigoApoiador);
+$("apoio-validar-codigo").addEventListener("click", validarCodigoApoiador);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && estadoApoio.pedido) consultarPixPendente();
+});
 $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());

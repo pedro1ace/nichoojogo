@@ -270,6 +270,31 @@ Configuração no Cloudflare (uma vez só):
 Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local`, depois crie a tabela com
 `banco/schema.sql` no banco local.
 
+## Apoio ao criador (Pix + skin Laika)
+
+O botão **APOIAR** no fim da viagem (e o cartão trancado da **Laika** na janela de skins) abre uma janela de Pix integrada à API do **Mercado Pago** (`POST /v1/payments`, `payment_method_id = "pix"`):
+
+- Valores rápidos de **R$ 5 / R$ 10 / R$ 20** ou outro valor (mínimo R$ 2).
+- `functions/api/apoio/index.js` cria a cobrança Pix, grava o pedido na tabela `apoios` do D1 (sem nome, CPF, e-mail nem IP) e consulta o status.
+- `functions/api/apoio/webhook.js` recebe o aviso de pagamento do Mercado Pago, valida o HMAC-SHA256 do cabeçalho `x-signature` (se `MP_WEBHOOK_SECRET` estiver configurada) e confirma o status direto na API do Mercado Pago antes de aprovar no D1. Se o webhook atrasar, a própria consulta `GET /api/apoio?id=...` do navegador confere direto no Mercado Pago.
+- Assim que o Pix é aprovado, o jogo libera e equipa a skin **Laika** (`jogo/apoiador.js`) e entrega um código `NICHO-XXXX-XXXX` para o apoiador liberar a skin em outros aparelhos (*"Já apoiou em outro aparelho? Usar código"*).
+- O pedido pendente fica salvo em `localStorage` (`nicho:apoio-pendente`): se o celular recarregar a aba na volta do app do banco, o jogo retoma a checagem sozinho e libera a skin.
+- Se quiser usar um link externo no lugar do Pix integrado, basta preencher `LINK_APOIO` no topo de `jogo/jogo.js`.
+
+Configuração no Cloudflare e no Mercado Pago (para ativar em produção):
+
+1. **Banco D1**: em **Workers & Pages → D1 → `nicho` → Console**, rode o bloco `CREATE TABLE IF NOT EXISTS apoios ...` do fim de [`banco/schema.sql`](banco/schema.sql). (Ele usa o mesmo binding `DB` já configurado para a curva.)
+2. **Mercado Pago Developers** ([mercadopago.com.br/developers/panel](https://www.mercadopago.com.br/developers/panel)):
+   - Crie uma aplicação (Checkout Transparente / Pagamentos online, aceita conta CPF ou CNPJ).
+   - Em **Credenciais de produção**, copie o **Access Token** (`APP_USR-...`). Para testar antes sem dinheiro real, dá para usar o Access Token de **Credenciais de teste** (`TEST-...`).
+   - Em **Suas integrações → Webhooks → Configurar notificações** (modo Produção), coloque a URL `https://nichoojogo.com/api/apoio/webhook`, marque o evento **Pagamentos** (`payment`), salve e copie a **Assinatura secreta**.
+3. **Variáveis no Cloudflare Pages**: no projeto do Pages, em **Settings → Environment variables** (em *Production*, marcando *Encrypt* / Secret), adicione:
+   - `MP_ACCESS_TOKEN` = o Access Token do Mercado Pago (`APP_USR-...`)
+   - `MP_WEBHOOK_SECRET` = a assinatura secreta do Webhook (opcional, mas recomendada)
+4. Faça um novo deploy (ou *Retry deployment* no último deploy) para as Functions carregarem as variáveis novas.
+
+Para testar a interface e o desbloqueio da Laika localmente sem chaves nem servidor, abra `jogar.html?aleatorio&simular-pix` (só funciona em `file://` ou `localhost`).
+
 ## Domínio
 
 O endereço oficial é **https://nichoojogo.com** (comprado no Cloudflare). No projeto do Pages, em
