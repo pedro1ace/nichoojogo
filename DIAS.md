@@ -31,12 +31,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas amarelas | Cite algo que é amarelo | 1351 |
+| 1 | Coisas amarelas | Cite algo que é amarelo | 1352 |
 | 2 | Legumes e verduras | Cite um legume ou uma verdura | 1079 |
 | 3 | Brincadeiras e jogos | Cite uma brincadeira ou um jogo (de rua, de mesa ou de cartas) | 1075 |
 | 4 | Gigantes do Spotify | Cite um dos 3 mil artistas mais ouvidos de todos os tempos no Spotify | 2989 |
 | 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 926 |
-| 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 1055 |
+| 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 1056 |
 | 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 8395 |
 
 ## Dia 4 · sáb 31/10/2026
