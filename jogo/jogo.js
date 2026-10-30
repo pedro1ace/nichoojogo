@@ -1063,7 +1063,8 @@ function montarFaixas() {
       faixa: i === 0 ? `${f.min}+ pts` : `${f.min}–${FAIXAS[i - 1].min - 1} pts`,
       texto: f.frase,
     })),
-    { ...ESPERTALHAO, faixa: "15 pts · às vezes", texto: ESPERTALHAO.frase },
+    // o espertalhão é escondido: só entra na tabela se você caiu nele hoje
+    ...(alcancadas.has(ESPERTALHAO.id) ? [{ ...ESPERTALHAO, faixa: "15 pts", texto: ESPERTALHAO.frase }] : []),
   ];
   for (const l of linhas) {
     const li = document.createElement("li");
@@ -1233,7 +1234,7 @@ function montarBanco(cat, sua) {
     .map((r) => {
       const sn = r.resposta === cat.supernova;
       const pontos = sn ? r.pontos * 2 : r.pontos;
-      return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn };
+      return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn, frase: r.frase };
     })
     .sort((a, b) => b.sn - a.sn || b.pontos - a.pontos || a.nome.localeCompare(b.nome, "pt"));
   const filtros = [{ id: "todas", nome: "Todas", cor: "#eef0ff" }, SUPERNOVA, ...FAIXAS, ESPERTALHAO];
@@ -1285,6 +1286,12 @@ function montarBanco(cat, sua) {
         const nota = document.createElement("span");
         nota.className = "nota";
         nota.textContent = `★ Singularidade. ${CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
+        li.append(nota);
+      } else if (it.frase) {
+        // frase própria da resposta (dados/frases.txt), a mesma do cartão de resultado
+        const nota = document.createElement("span");
+        nota.className = "nota";
+        nota.textContent = it.frase;
         li.append(nota);
       }
       lista.append(li);
