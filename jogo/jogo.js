@@ -1214,7 +1214,7 @@ const CURIOSIDADE_SUPERNOVA = {
   "material-escolar": "Papel grosso que chupava o excesso de tinta das canetas-tinteiro, antes das esferográficas.",
   "musicos-brasileiros": "O \"Nego Dito\" da Vanguarda Paulista, que fazia uma música que não cabia em gênero nenhum.",
   "objetos-da-cozinha": "Fatiador de lâmina afiadíssima que corta legumes em fatias finíssimas como papel.",
-  "ossos-do-corpo": "O único osso do corpo que não se encaixa em nenhum outro: fica solto no pescoço, segurando a língua.",
+  "ossos-do-corpo": "A primeira vértebra da coluna humana. O atlas segura o (seu) mundo!",
   "pedras-preciosas": "Pedra que muda de cor: é verde na luz do dia e fica vermelha na luz de lâmpada.",
   "peixes": "Eleito o animal mais feio do mundo, mas só fica assim fora d'água: lá no fundo do mar tem cara de peixe normal.",
   "profissoes": "Quem cuidava do farol, deixando a luz acesa a noite toda para guiar os navios.",
