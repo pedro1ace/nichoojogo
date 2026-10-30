@@ -1216,6 +1216,7 @@ const CURIOSIDADE_SUPERNOVA = {
   "musicos-brasileiros": "O \"Nego Dito\" da Vanguarda Paulista, que fazia uma música que não cabia em gênero nenhum.",
   "objetos-da-cozinha": "Fatiador de lâmina afiadíssima que corta legumes em fatias finíssimas como papel.",
   "ossos-do-corpo": "A primeira vértebra da coluna humana. O atlas segura o (seu) mundo!",
+  "palavras-do-termo": "um salve para a duzzi!",
   "pedras-preciosas": "Pedra que muda de cor: é verde na luz do dia e fica vermelha na luz de lâmpada.",
   "peixes": "Eleito o animal mais feio do mundo, mas só fica assim fora d'água: lá no fundo do mar tem cara de peixe normal.",
   "profissoes": "Quem cuidava do farol, deixando a luz acesa a noite toda para guiar os navios.",
