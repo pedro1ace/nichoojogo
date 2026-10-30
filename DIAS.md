@@ -116,12 +116,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Marcas de carro | Cite uma marca de carro | 3791 |
-| 2 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3759 |
-| 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1070 |
+| 2 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3760 |
+| 3 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1078 |
 | 4 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
-| 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1033 |
-| 6 | Coisas com camadas | Cite algo que tem camadas | 1389 |
-| 7 | Tipos de corrida | Cite um tipo de corrida | 1106 |
+| 5 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1035 |
+| 6 | Coisas com camadas | Cite algo que tem camadas | 1396 |
+| 7 | Tipos de corrida | Cite um tipo de corrida | 1109 |
 
 ## Dia 11 · sáb 07/11/2026
 
