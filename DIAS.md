@@ -127,13 +127,13 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Motivos para gritar | Cite um motivo para gritar | 1155 |
-| 2 | Motivos para rir | Cite um motivo para rir | 1491 |
-| 3 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1444 |
+| 1 | Motivos para gritar | Cite um motivo para gritar | 1168 |
+| 2 | Motivos para rir | Cite um motivo para rir | 1512 |
+| 3 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1446 |
 | 4 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1262 |
 | 5 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1201 |
-| 6 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4697 |
-| 7 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2087 |
+| 6 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4711 |
+| 7 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2093 |
 
 ## Na fila (ainda não formam um dia)
 
