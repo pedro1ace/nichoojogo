@@ -7,3 +7,22 @@ CREATE TABLE IF NOT EXISTS histograma (
   n     INTEGER NOT NULL DEFAULT 0,
   PRIMARY KEY (dia, faixa)
 );
+
+-- Contagem das respostas de cada dia (functions/api/respostas.js): é a fama de verdade.
+-- Só o dia, a categoria e a resposta. Nada que identifique quem jogou.
+CREATE TABLE IF NOT EXISTS respostas (
+  dia       TEXT    NOT NULL,  -- AAAA-MM-DD
+  categoria TEXT    NOT NULL,  -- id da categoria (dados/categorias/<id>.txt)
+  resposta  TEXT    NOT NULL,  -- o nome da resposta na lista
+  n         INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (dia, categoria, resposta)
+);
+
+-- O que os jogadores digitaram e a lista não aceitou, normalizado. Vira candidata na fila (scripts/fila.py).
+CREATE TABLE IF NOT EXISTS recusadas (
+  dia       TEXT    NOT NULL,
+  categoria TEXT    NOT NULL,
+  texto     TEXT    NOT NULL,
+  n         INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (dia, categoria, texto)
+);

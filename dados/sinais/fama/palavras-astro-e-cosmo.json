@@ -1,908 +1,1232 @@
 {
  "categoria": "palavras-astro-e-cosmo",
- "gerado_em": "2026-10-28",
- "sinais": [
-  "conhecem",
-  "lembranca",
-  "texto",
-  "visitas"
- ],
- "meses_de_visitas": [],
- "pesos": {
-  "lembranca": 0.65,
-  "conhecem": 0.1,
-  "visitas": 0.14,
-  "texto": 0.03
- },
- "estimadas_pelo_llm": 111,
+ "metodo": "simulacao",
+ "gerado_em": "2026-10-30",
+ "pergunta": "Cite uma palavra que comece com \"astro\" ou \"cosmo\"",
+ "simulados": 1000,
+ "na_simulacao": 29,
+ "massa_da_cauda": 121.0,
  "respostas": {
   "Astro": {
-   "fama": 0.7077,
+   "fama": 0.8253,
    "lembranca_em_1000": 40.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.6607,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 4116,
-   "tendencia": null
+   "fama_antiga": 0.7077
   },
   "Astroantena": {
-   "fama": 0.0023,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0011,
+   "lembranca_em_1000": 0.7858,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9818,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0023
   },
   "Astroarqueologia": {
-   "fama": 0.0071,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0036,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0071
   },
   "Astroarqueológico": {
-   "fama": 0.0013,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0006,
+   "lembranca_em_1000": 0.6679,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9916,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0013
   },
   "Astrobiologia": {
-   "fama": 0.3836,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.641,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8959,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 4374,
-   "tendencia": null
+   "fama_antiga": 0.3836
   },
   "Astrobiológico": {
-   "fama": 0.067,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0335,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.067
   },
   "Astroblema": {
-   "fama": 0.0976,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0488,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": 2292,
-   "tendencia": null
+   "fama_antiga": 0.0976
   },
   "Astrobolismo": {
-   "fama": 0.0866,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0433,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": 2070,
-   "tendencia": null
+   "fama_antiga": 0.0866
   },
   "Astrobotânica": {
-   "fama": 0.0036,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0018,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": 72,
-   "tendencia": null
+   "fama_antiga": 0.0036
   },
   "Astrobotânico": {
-   "fama": 0.001,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0005,
+   "lembranca_em_1000": 0.6361,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9945,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.001
   },
   "Astrocarpo": {
-   "fama": 0.003,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0015,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.003
   },
   "Astrocinologia": {
-   "fama": 0.0042,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0021,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0042
   },
   "Astrocinológico": {
-   "fama": 0.0025,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0013,
+   "lembranca_em_1000": 0.8096,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.98,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0025
   },
   "Astrocitoma": {
-   "fama": 0.1203,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5607,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9199,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 1230,
-   "tendencia": null
+   "fama_antiga": 0.1203
   },
   "Astroclima": {
-   "fama": 0.0025,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0013,
+   "lembranca_em_1000": 0.7975,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9809,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0025
   },
   "Astrocário": {
-   "fama": 0.0023,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0011,
+   "lembranca_em_1000": 0.7744,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9827,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0023
   },
   "Astrodinâmica": {
-   "fama": 0.1207,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.0604,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 684,
-   "tendencia": null
+   "fama_antiga": 0.1207
   },
   "Astrodinâmico": {
-   "fama": 0.0018,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0009,
+   "lembranca_em_1000": 0.703,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9885,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0018
   },
   "Astroesclereide": {
-   "fama": 0.0021,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.001,
+   "lembranca_em_1000": 0.7421,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9852,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0021
   },
   "Astrofanometria": {
-   "fama": 0.0013,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0006,
+   "lembranca_em_1000": 0.6596,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9923,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0013
   },
   "Astrofanômetro": {
-   "fama": 0.003,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0015,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.003
   },
   "Astrofobia": {
-   "fama": 0.1285,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5962,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9138,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 918,
-   "tendencia": null
+   "fama_antiga": 0.1285
   },
   "Astrofotografia": {
-   "fama": 0.232,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6215,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9059,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 426,
-   "tendencia": null
+   "fama_antiga": 0.232
   },
   "Astrofotográfico": {
-   "fama": 0.043,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0215,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.043
   },
   "Astrofotometria": {
-   "fama": 0.0039,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0019,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0039
   },
   "Astrofotométrico": {
-   "fama": 0.0018,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0009,
+   "lembranca_em_1000": 0.6939,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9893,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0018
   },
   "Astrofotômetro": {
-   "fama": 0.0029,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0014,
+   "lembranca_em_1000": 0.8759,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9752,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0029
   },
   "Astrofísica": {
-   "fama": 0.6686,
-   "lembranca_em_1000": 30.0,
+   "fama": 0.7854,
+   "lembranca_em_1000": 25.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7335,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 5268,
-   "tendencia": null
+   "fama_antiga": 0.6686
   },
   "Astrofísico": {
-   "fama": 0.5082,
+   "fama": 0.6925,
    "lembranca_em_1000": 8.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8667,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 5268,
-   "tendencia": null
+   "fama_antiga": 0.5082
   },
   "Astrofóbico": {
-   "fama": 0.0217,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0109,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0217
   },
   "Astrogenia": {
-   "fama": 0.0047,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0024,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0047
   },
   "Astrogeologia": {
-   "fama": 0.0977,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0488,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 504,
-   "tendencia": null
+   "fama_antiga": 0.0977
   },
   "Astrogeológico": {
-   "fama": 0.0023,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0011,
+   "lembranca_em_1000": 0.7633,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9835,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0023
   },
   "Astrognosia": {
-   "fama": 0.0034,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0017,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0034
   },
   "Astrogonia": {
-   "fama": 0.0038,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0019,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0038
   },
   "Astrografia": {
-   "fama": 0.0701,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.035,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 438,
-   "tendencia": null
+   "fama_antiga": 0.0701
   },
   "Astrográfico": {
-   "fama": 0.0027,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0014,
+   "lembranca_em_1000": 0.822,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9791,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0027
   },
   "Astrogênico": {
-   "fama": 0.0021,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.001,
+   "lembranca_em_1000": 0.7319,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9861,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0021
   },
   "Astrogônico": {
-   "fama": 0.0007,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0003,
+   "lembranca_em_1000": 0.6213,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9959,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0007
   },
   "Astroide": {
-   "fama": 0.0759,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5607,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9199,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 486,
-   "tendencia": null
+   "fama_antiga": 0.0759
   },
   "Astrola": {
-   "fama": 0.0029,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0014,
+   "lembranca_em_1000": 0.8618,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9762,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0029
   },
   "Astrolatria": {
-   "fama": 0.0109,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0054,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0109
   },
   "Astrologia": {
-   "fama": 0.8635,
-   "lembranca_em_1000": 100.0,
+   "fama": 0.8952,
+   "lembranca_em_1000": 90.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5039,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 23928,
-   "tendencia": null
+   "fama_antiga": 0.8635
   },
   "Astrolábio": {
-   "fama": 0.408,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.6705,
+   "lembranca_em_1000": 6.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8835,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 14238,
-   "tendencia": null
+   "fama_antiga": 0.408
   },
   "Astrolátrico": {
-   "fama": 0.0021,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.001,
+   "lembranca_em_1000": 0.722,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9869,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0021
   },
   "Astrológico": {
-   "fama": 0.4377,
-   "lembranca_em_1000": 6.0,
+   "fama": 0.6925,
+   "lembranca_em_1000": 8.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8667,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.4377
   },
   "Astromancia": {
-   "fama": 0.1868,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0934,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 23928,
-   "tendencia": null
+   "fama_antiga": 0.1868
   },
   "Astromante": {
-   "fama": 0.005,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0025,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.005
   },
   "Astrometria": {
-   "fama": 0.1289,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5607,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9199,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 786,
-   "tendencia": null
+   "fama_antiga": 0.1289
   },
   "Astrometrista": {
-   "fama": 0.001,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0005,
+   "lembranca_em_1000": 0.6286,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9952,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.001
   },
   "Astromântico": {
-   "fama": 0.0018,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0009,
+   "lembranca_em_1000": 0.685,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9901,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0018
   },
   "Astrométrico": {
-   "fama": 0.0099,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.005,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0099
   },
   "Astronauta": {
-   "fama": 0.9593,
-   "lembranca_em_1000": 280.0,
+   "fama": 1.0,
+   "lembranca_em_1000": 300.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 6930,
-   "tendencia": null
+   "fama_antiga": 0.9593
   },
   "Astronave": {
-   "fama": 0.6388,
+   "fama": 0.7854,
    "lembranca_em_1000": 25.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7335,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": 4884,
-   "tendencia": null
+   "fama_antiga": 0.6388
   },
   "Astronavegação": {
-   "fama": 0.0849,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.0425,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0849
   },
   "Astronomia": {
-   "fama": 0.8937,
-   "lembranca_em_1000": 120.0,
+   "fama": 0.9396,
+   "lembranca_em_1000": 150.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.3359,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 30900,
-   "tendencia": null
+   "fama_antiga": 0.8937
   },
   "Astronomicamente": {
-   "fama": 0.0987,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0493,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0987
   },
   "Astronáutica": {
-   "fama": 0.4333,
+   "fama": 0.6705,
    "lembranca_em_1000": 6.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8835,
    "conhecem_pct": 93.0,
    "visitas_pt_12m": 1026,
-   "tendencia": null
+   "fama_antiga": 0.4333
   },
   "Astronáutico": {
-   "fama": 0.2223,
-   "lembranca_em_1000": 1.0,
-   "estimada": true,
+   "fama": 0.1111,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.2223
   },
   "Astronímia": {
-   "fama": 0.0038,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0019,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0038
   },
   "Astronômico": {
-   "fama": 0.6307,
+   "fama": 0.7429,
    "lembranca_em_1000": 15.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8343,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 30900,
-   "tendencia": null
+   "fama_antiga": 0.6307
   },
   "Astrosclereídeo": {
    "fama": 0.0,
-   "lembranca_em_1000": 0.01,
+   "lembranca_em_1000": 0.5937,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9987,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0
   },
   "Astroscopia": {
-   "fama": 0.011,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0055,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.011
   },
   "Astroscópico": {
-   "fama": 0.0007,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0003,
+   "lembranca_em_1000": 0.6142,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9966,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0007
   },
   "Astroscópio": {
-   "fama": 0.0495,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0248,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0495
   },
   "Astrosfera": {
-   "fama": 0.0402,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0201,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 138,
-   "tendencia": null
+   "fama_antiga": 0.0402
   },
   "Astrosia": {
-   "fama": 0.0029,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0014,
+   "lembranca_em_1000": 0.8481,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9772,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0029
   },
   "Astroso": {
-   "fama": 0.0086,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0043,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0086
   },
   "Astrosofia": {
-   "fama": 0.0109,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0054,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0109
   },
   "Astrostatística": {
-   "fama": 0.0013,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0006,
+   "lembranca_em_1000": 0.6516,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9931,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0013
   },
   "Astrostatístico": {
-   "fama": 0.0007,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0003,
+   "lembranca_em_1000": 0.6004,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.998,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0007
   },
   "Astrostática": {
-   "fama": 0.0035,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0018,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0035
   },
   "Astrostático": {
-   "fama": 0.0007,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0003,
+   "lembranca_em_1000": 0.6072,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9973,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0007
   },
   "Astroteologia": {
-   "fama": 0.0084,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0042,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0084
   },
   "Astroteológico": {
-   "fama": 0.0032,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0016,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0032
   },
   "Astroturismo": {
-   "fama": 0.1181,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5607,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9199,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.1181
   },
   "Astrozoologia": {
-   "fama": 0.0035,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0018,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0035
   },
   "Astrozoológico": {
-   "fama": 0.0018,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0009,
+   "lembranca_em_1000": 0.6763,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9908,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0018
   },
   "Cosmo": {
-   "fama": 0.6665,
+   "fama": 0.7854,
    "lembranca_em_1000": 25.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7335,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 11010,
-   "tendencia": null
+   "fama_antiga": 0.6665
   },
   "Cosmobiologia": {
-   "fama": 0.032,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.016,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.032
   },
   "Cosmogenético": {
-   "fama": 0.0063,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0032,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0063
   },
   "Cosmognosia": {
-   "fama": 0.0021,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.001,
+   "lembranca_em_1000": 0.7124,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9877,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0021
   },
   "Cosmogonia": {
-   "fama": 0.2774,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6215,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9059,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 7158,
-   "tendencia": null
+   "fama_antiga": 0.2774
   },
   "Cosmogonista": {
-   "fama": 0.0038,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0019,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0038
   },
   "Cosmografia": {
-   "fama": 0.1831,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5962,
+   "lembranca_em_1000": 2.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9138,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 1062,
-   "tendencia": null
+   "fama_antiga": 0.1831
   },
   "Cosmográfico": {
-   "fama": 0.0107,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0053,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0107
   },
   "Cosmogênese": {
-   "fama": 0.1578,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0789,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 7158,
-   "tendencia": null
+   "fama_antiga": 0.1578
   },
   "Cosmogônico": {
-   "fama": 0.0389,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0194,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0389
   },
   "Cosmologia": {
-   "fama": 0.5425,
+   "fama": 0.7101,
    "lembranca_em_1000": 10.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8511,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 10008,
-   "tendencia": null
+   "fama_antiga": 0.5425
   },
   "Cosmologicamente": {
-   "fama": 0.046,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.023,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.046
   },
   "Cosmologista": {
-   "fama": 0.2285,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1143,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 10008,
-   "tendencia": null
+   "fama_antiga": 0.2285
   },
   "Cosmolábio": {
-   "fama": 0.003,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0015,
+   "lembranca_em_1000": 0.8905,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9743,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.003
   },
   "Cosmológico": {
-   "fama": 0.3076,
+   "fama": 0.5607,
    "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9199,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 10008,
-   "tendencia": null
+   "fama_antiga": 0.3076
   },
   "Cosmometria": {
-   "fama": 0.0154,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0077,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0154
   },
   "Cosmometrista": {
    "fama": 0.0,
-   "lembranca_em_1000": 0.01,
+   "lembranca_em_1000": 0.5872,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9993,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0
   },
   "Cosmométrico": {
-   "fama": 0.0032,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0016,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0032
   },
   "Cosmonauta": {
-   "fama": 0.6423,
-   "lembranca_em_1000": 25.0,
+   "fama": 0.7667,
+   "lembranca_em_1000": 20.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8007,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 6930,
-   "tendencia": null
+   "fama_antiga": 0.6423
   },
   "Cosmonave": {
-   "fama": 0.3358,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.641,
+   "lembranca_em_1000": 4.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8959,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 4884,
-   "tendencia": null
+   "fama_antiga": 0.3358
   },
   "Cosmonomia": {
-   "fama": 0.0079,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.004,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0079
   },
   "Cosmonáutica": {
-   "fama": 0.1507,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.0754,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 1026,
-   "tendencia": null
+   "fama_antiga": 0.1507
   },
   "Cosmonômico": {
-   "fama": 0.0023,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0011,
+   "lembranca_em_1000": 0.7526,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9844,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0023
   },
   "Cosmopolense": {
-   "fama": 0.1362,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0681,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": null,
    "visitas_pt_12m": 11334,
-   "tendencia": null
+   "fama_antiga": 0.1362
   },
   "Cosmopolita": {
-   "fama": 0.6442,
-   "lembranca_em_1000": 25.0,
+   "fama": 0.7667,
+   "lembranca_em_1000": 20.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8007,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 5388,
-   "tendencia": null
+   "fama_antiga": 0.6442
   },
   "Cosmopolitismo": {
-   "fama": 0.2453,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5607,
+   "lembranca_em_1000": 1.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9199,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 5388,
-   "tendencia": null
+   "fama_antiga": 0.2453
   },
   "Cosmopolizar": {
-   "fama": 0.0159,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.008,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0159
   },
   "Cosmorama": {
-   "fama": 0.1318,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0659,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 4284,
-   "tendencia": null
+   "fama_antiga": 0.1318
   },
   "Cosmoramense": {
-   "fama": 0.0029,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0014,
+   "lembranca_em_1000": 0.8349,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9781,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0029
   },
   "Cosmos": {
-   "fama": 0.7107,
-   "lembranca_em_1000": 40.0,
+   "fama": 0.8445,
+   "lembranca_em_1000": 50.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.6047,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 5736,
-   "tendencia": null
+   "fama_antiga": 0.7107
   },
   "Cosmosfera": {
-   "fama": 0.0338,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0169,
+   "lembranca_em_1000": 0.9,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9485,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0338
   },
   "Cosmosófico": {
-   "fama": 0.0013,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.0006,
+   "lembranca_em_1000": 0.6438,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9938,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0013
   },
   "Cosmovisão": {
-   "fama": 0.2986,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6215,
+   "lembranca_em_1000": 3.0,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9059,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 7374,
-   "tendencia": null
+   "fama_antiga": 0.2986
   }
  }
 }

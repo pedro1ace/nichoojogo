@@ -354,6 +354,10 @@ def main() -> None:
     visitas_por_mes(todos)
     FAMA.mkdir(parents=True, exist_ok=True)
     for cat_id in cats:
+        if (SINAIS / "lembranca" / f"{cat_id}.txt").exists():
+            # categoria com simulação de jogadores: quem manda é o scripts/fama.py
+            print(f"== {cat_id}: tem simulação de jogadores, use scripts/fama.py")
+            continue
         cat = ler_categoria(CATEGORIAS / f"{cat_id}.txt")
         print(f"== {cat_id}")
         llm = lembranca(cat, chamar)

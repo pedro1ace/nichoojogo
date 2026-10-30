@@ -675,6 +675,7 @@ function palpitar(evento) {
   if (busca && !busca.exato && opcoes.semCorrecao) busca = null;
 
   if (!busca) {
+    if (texto.length >= 3) enviarResposta(cat, { recusada: texto });
     avisar(`“${texto}” não está no mapa estelar. Tente outra.`, "erro");
     $("palpite").classList.remove("tremendo");
     void $("palpite").offsetWidth; // reinicia a animação
@@ -695,7 +696,8 @@ function palpitar(evento) {
   const achada = busca.resposta;
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
-  const percentil = cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
+  const percentil = percentilDe(cat, achada);
+  enviarResposta(cat, { resposta: achada.resposta });
   mostrarPergunta(false);
   cena.descer(achada.resposta, pontos, supernova);
   Som.descer(Math.min(1, pontos / 100));
@@ -803,7 +805,7 @@ function mostrarFim(comSom) {
   const marco = ultimoMarco();
   $("fim-profundidade").textContent = `↓ ${numero(anosLuzDoDia())} AL de profundidade` + (marco ? ` · além de ${marco.nome.toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase())}` : "");
   const media = estado.historico.reduce((s, h) => s + (h.percentil || 0), 0) / Math.max(1, estado.historico.length);
-  $("fim-comparacao").textContent = `Suas respostas foram mais nichadas que ${Math.round(media * 100)}% das respostas possíveis.`;
+  $("fim-comparacao").textContent = `Em média, suas respostas foram mais nichadas que as de ${Math.min(99, Math.round(media * 100))}% dos jogadores.`;
   montarGrafico();
   mostrarCurva();
   montarFaixas();
@@ -853,6 +855,38 @@ function montarGrafico() {
     col.append(fio, img, num, dica);
     g.append(col);
   });
+}
+
+// ---------- respostas do dia ----------
+// Os pontos são fixos (dados.js, da simulação de 1000 jogadores do scripts/fama.py): ainda não há
+// jogadores suficientes para a contagem real mandar sem ficar volátil. Mas as respostas vão
+// anônimas para /api/respostas (functions/api/respostas.js), por dois motivos:
+//   - as recusadas viram candidatas na fila (scripts/fila.py): a lista se completa sozinha;
+//   - somadas ao longo das semanas, mostram onde a simulação erra (scripts/fama.py --calibrar no futuro).
+const API_RESPOSTAS = "/api/respostas";
+
+// Cada navegador conta uma resposta aceita por categoria por dia; recusadas contam a cada tentativa.
+function enviarResposta(cat, corpo) {
+  if (location.protocol === "file:" || ALEATORIO || !cat.id) return;
+  const chave = `nicho:resposta:${estado.data}:${cat.id}`;
+  if (corpo.resposta) {
+    if (lerChave(chave)) return;
+    gravarChave(chave, "1");
+  }
+  fetch(API_RESPOSTAS, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ dia: estado.data, categoria: cat.id, ...corpo }),
+    keepalive: true,
+  }).catch(() => {});
+}
+
+// "acima" vem da simulação: a parte dos jogadores que daria uma resposta mais óbvia que esta.
+// Sem simulação, a conta antiga: a parte da lista que vale menos pontos.
+function percentilDe(cat, achada) {
+  return typeof achada.acima === "number"
+    ? achada.acima
+    : cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
 }
 
 // ---------- curva dos viajantes ----------
@@ -1073,7 +1107,7 @@ function montarRespostas() {
       ? ""
       : h.supernova
         ? "Singularidade! A resposta escondida desta pergunta."
-        : `${faixa.nome[0]}${faixa.nome.slice(1).toLowerCase()} · mais rara que ${Math.round((h.percentil || 0) * 100)}% das respostas`;
+        : `${faixa.nome[0]}${faixa.nome.slice(1).toLowerCase()} · mais nichada que ${Math.min(99, Math.round((h.percentil || 0) * 100))}% dos jogadores`;
     const seta = document.createElement("span");
     seta.className = "seta";
     seta.textContent = "▾";

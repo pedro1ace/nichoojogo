@@ -1,566 +1,759 @@
 {
  "categoria": "filmes-tom-hanks",
- "gerado_em": "2026-10-28",
- "sinais": [
-  "conhecem",
-  "lembranca",
-  "revisao",
-  "texto",
-  "visitas"
- ],
- "meses_de_visitas": [],
- "pesos": {
-  "lembranca": 0.65,
-  "conhecem": 0.1,
-  "revisao": 0.08,
-  "visitas": 0.14,
-  "texto": 0.03
- },
- "estimadas_pelo_llm": 50,
+ "metodo": "simulacao",
+ "gerado_em": "2026-10-30",
+ "pergunta": "Cite um filme com o Tom Hanks (atuando ou dublando)",
+ "simulados": 1000,
+ "na_simulacao": 42,
+ "massa_da_cauda": 40.0,
  "respostas": {
   "Forrest Gump: O Contador de Histórias": {
-   "fama": 0.9816,
-   "lembranca_em_1000": 380.0,
+   "fama": 1.0,
+   "lembranca_em_1000": 334.6614,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.0,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.9816
   },
   "Náufrago": {
-   "fama": 0.7564,
-   "lembranca_em_1000": 170.0,
+   "fama": 0.9431,
+   "lembranca_em_1000": 172.1116,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.3446,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 900,
-   "tendencia": null
+   "fama_antiga": 0.7564
   },
   "Toy Story": {
-   "fama": 0.8516,
-   "lembranca_em_1000": 140.0,
+   "fama": 0.9216,
+   "lembranca_em_1000": 133.8645,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5218,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 44694,
-   "tendencia": null
+   "fama_antiga": 0.8516
   },
   "O Resgate do Soldado Ryan": {
-   "fama": 0.6698,
-   "lembranca_em_1000": 40.0,
+   "fama": 0.8342,
+   "lembranca_em_1000": 47.8088,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.6596,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 20670,
-   "tendencia": null
+   "fama_antiga": 0.6698
   },
   "O Código Da Vinci": {
-   "fama": 0.6668,
-   "lembranca_em_1000": 40.0,
+   "fama": 0.8155,
+   "lembranca_em_1000": 38.247,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7286,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 17016,
-   "tendencia": null
+   "fama_antiga": 0.6668
   },
   "À Espera de um Milagre": {
-   "fama": 0.6838,
-   "lembranca_em_1000": 40.0,
+   "fama": 0.8155,
+   "lembranca_em_1000": 38.247,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7286,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 36810,
-   "tendencia": null
+   "fama_antiga": 0.6838
   },
   "Prenda-me Se For Capaz": {
-   "fama": 0.5807,
-   "lembranca_em_1000": 20.0,
+   "fama": 0.7915,
+   "lembranca_em_1000": 28.6853,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8024,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 13194,
-   "tendencia": null
+   "fama_antiga": 0.5807
   },
   "O Terminal": {
-   "fama": 0.605,
-   "lembranca_em_1000": 30.0,
+   "fama": 0.7915,
+   "lembranca_em_1000": 28.6853,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8024,
    "conhecem_pct": 72.0,
    "visitas_pt_12m": 8244,
-   "tendencia": null
+   "fama_antiga": 0.605
   },
   "Filadélfia": {
-   "fama": 0.4651,
-   "lembranca_em_1000": 8.0,
+   "fama": 0.7581,
+   "lembranca_em_1000": 19.1235,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8566,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 27978,
-   "tendencia": null
+   "fama_antiga": 0.4651
   },
   "Quero Ser Grande": {
-   "fama": 0.401,
-   "lembranca_em_1000": 6.0,
+   "fama": 0.7581,
+   "lembranca_em_1000": 19.1235,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8566,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 2952,
-   "tendencia": null
+   "fama_antiga": 0.401
   },
   "Apollo 13": {
-   "fama": 0.447,
-   "lembranca_em_1000": 8.0,
+   "fama": 0.7347,
+   "lembranca_em_1000": 14.3426,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8861,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 9588,
-   "tendencia": null
+   "fama_antiga": 0.447
   },
   "Anjos e Demônios": {
-   "fama": 0.3797,
-   "lembranca_em_1000": 5.0,
+   "fama": 0.7026,
+   "lembranca_em_1000": 9.5618,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9009,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.3797
   },
   "Elvis": {
-   "fama": 0.3696,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6855,
+   "lembranca_em_1000": 7.6494,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9186,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 163212,
-   "tendencia": null
+   "fama_antiga": 0.3696
   },
   "Capitão Phillips": {
-   "fama": 0.3578,
-   "lembranca_em_1000": 4.0,
+   "fama": 0.6855,
+   "lembranca_em_1000": 7.6494,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9186,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 6138,
-   "tendencia": null
+   "fama_antiga": 0.3578
   },
   "Sintonia de Amor": {
-   "fama": 0.3182,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.664,
+   "lembranca_em_1000": 5.7371,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9402,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 3786,
-   "tendencia": null
+   "fama_antiga": 0.3182
   },
   "Mensagem para Você": {
-   "fama": 0.3339,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.664,
+   "lembranca_em_1000": 5.7371,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9402,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 4842,
-   "tendencia": null
+   "fama_antiga": 0.3339
   },
   "Sully: O Herói do Rio Hudson": {
-   "fama": 0.3444,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.664,
+   "lembranca_em_1000": 5.7371,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9402,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 9132,
-   "tendencia": null
+   "fama_antiga": 0.3444
   },
   "O Expresso Polar": {
-   "fama": 0.3477,
-   "lembranca_em_1000": 4.0,
+   "fama": 0.6855,
+   "lembranca_em_1000": 7.6494,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9186,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 3750,
-   "tendencia": null
+   "fama_antiga": 0.3477
   },
   "Inferno": {
-   "fama": 0.2608,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6163,
+   "lembranca_em_1000": 2.8685,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9599,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 16722,
-   "tendencia": null
+   "fama_antiga": 0.2608
   },
   "Ponte dos Espiões": {
-   "fama": 0.2308,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6163,
+   "lembranca_em_1000": 2.8685,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9599,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 4116,
-   "tendencia": null
+   "fama_antiga": 0.2308
   },
   "O Pior Vizinho do Mundo": {
-   "fama": 0.262,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6508,
+   "lembranca_em_1000": 4.7809,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9521,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.262
   },
   "Estrada para Perdição": {
-   "fama": 0.2319,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.6163,
+   "lembranca_em_1000": 2.8685,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9599,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 5352,
-   "tendencia": null
+   "fama_antiga": 0.2319
   },
   "Splash: Uma Sereia em Minha Vida": {
-   "fama": 0.199,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5919,
+   "lembranca_em_1000": 1.9124,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9698,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.199
   },
   "The Post: A Guerra Secreta": {
-   "fama": 0.1432,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5919,
+   "lembranca_em_1000": 1.9124,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9698,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.1432
   },
   "Turner & Hooch: Uma Dupla Quase Perfeita": {
-   "fama": 0.1843,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5919,
+   "lembranca_em_1000": 1.9124,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9698,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.1843
   },
   "Uma Equipe Muito Especial": {
-   "fama": 0.1551,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 2676,
-   "tendencia": null
+   "fama_antiga": 0.1551
   },
   "Pinóquio": {
-   "fama": 0.1973,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5919,
+   "lembranca_em_1000": 1.9124,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9698,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 18726,
-   "tendencia": null
+   "fama_antiga": 0.1973
   },
   "Cloud Atlas: A Viagem": {
-   "fama": 0.1263,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5919,
+   "lembranca_em_1000": 1.9124,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9698,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.1263
   },
   "Um Dia a Casa Cai": {
-   "fama": 0.1613,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 1686,
-   "tendencia": null
+   "fama_antiga": 0.1613
   },
   "Matadores de Velhinha": {
-   "fama": 0.1118,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 1650,
-   "tendencia": null
+   "fama_antiga": 0.1118
   },
   "Jogos do Poder": {
-   "fama": 0.1569,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5336,
+   "lembranca_em_1000": 0.4781,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9872,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 9204,
-   "tendencia": null
+   "fama_antiga": 0.1569
   },
   "Walt nos Bastidores de Mary Poppins": {
-   "fama": 0.125,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 1500,
-   "tendencia": null
+   "fama_antiga": 0.125
   },
   "Um Lindo Dia na Vizinhança": {
-   "fama": 0.1334,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 2952,
-   "tendencia": null
+   "fama_antiga": 0.1334
   },
   "Greyhound: Na Mira do Inimigo": {
-   "fama": 0.103,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.103
   },
   "Tão Forte e Tão Perto": {
-   "fama": 0.1336,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 2172,
-   "tendencia": null
+   "fama_antiga": 0.1336
   },
   "Finch": {
-   "fama": 0.1041,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 1506,
-   "tendencia": null
+   "fama_antiga": 0.1041
   },
   "Relatos do Mundo": {
-   "fama": 0.0861,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 930,
-   "tendencia": null
+   "fama_antiga": 0.0861
   },
   "O Círculo": {
-   "fama": 0.1104,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": 12.0,
    "visitas_pt_12m": 3336,
-   "tendencia": null
+   "fama_antiga": 0.1104
   },
   "Larry Crowne: O Amor Está de Volta": {
-   "fama": 0.0802,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5336,
+   "lembranca_em_1000": 0.4781,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9872,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0802
   },
   "A Fogueira das Vaidades": {
-   "fama": 0.0762,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0381,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 1458,
-   "tendencia": null
+   "fama_antiga": 0.0762
   },
   "Meus Vizinhos São um Terror": {
-   "fama": 0.0927,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0464,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 1110,
-   "tendencia": null
+   "fama_antiga": 0.0927
   },
   "Joe Contra o Vulcão": {
-   "fama": 0.0656,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.0328,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 612,
-   "tendencia": null
+   "fama_antiga": 0.0656
   },
   "The Wonders: O Sonho Não Acabou": {
-   "fama": 0.1123,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0561,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 4836,
-   "tendencia": null
+   "fama_antiga": 0.1123
   },
   "Dragnet: Desafiando o Perigo": {
-   "fama": 0.0522,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0261,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 696,
-   "tendencia": null
+   "fama_antiga": 0.0522
   },
   "Asteroid City": {
-   "fama": 0.0834,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5336,
+   "lembranca_em_1000": 0.4781,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9872,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 2388,
-   "tendencia": null
+   "fama_antiga": 0.0834
   },
   "A Última Festa de Solteiro": {
-   "fama": 0.0738,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0369,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 1164,
-   "tendencia": null
+   "fama_antiga": 0.0738
   },
   "Um Holograma para o Rei": {
-   "fama": 0.055,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0275,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.055
   },
   "Aqui": {
-   "fama": 0.0791,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5336,
+   "lembranca_em_1000": 0.4781,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9872,
    "conhecem_pct": 10.0,
    "visitas_pt_12m": 768,
-   "tendencia": null
+   "fama_antiga": 0.0791
   },
   "Nada em Comum": {
-   "fama": 0.0593,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0296,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 4.0,
    "visitas_pt_12m": 666,
-   "tendencia": null
+   "fama_antiga": 0.0593
   },
   "Ele Sabe Que Você Está Sozinha": {
-   "fama": 0.0398,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0199,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": 3.0,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0398
   },
   "Os Voluntários": {
-   "fama": 0.0837,
-   "lembranca_em_1000": null,
+   "fama": 0.0418,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": 7680,
-   "tendencia": null
+   "fama_antiga": 0.0837
   },
   "O Homem do Sapato Vermelho": {
-   "fama": 0.0333,
-   "lembranca_em_1000": null,
+   "fama": 0.0167,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0333
   },
   "Every Time We Say Goodbye": {
-   "fama": 0.0356,
-   "lembranca_em_1000": null,
+   "fama": 0.0178,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0356
   },
   "Punchline": {
-   "fama": 0.0275,
-   "lembranca_em_1000": null,
+   "fama": 0.0138,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": 696,
-   "tendencia": null
+   "fama_antiga": 0.0275
   },
   "Radio Flyer": {
-   "fama": 0.0562,
-   "lembranca_em_1000": null,
+   "fama": 0.0281,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": 1458,
-   "tendencia": null
+   "fama_antiga": 0.0562
   },
   "O Grande Buck Howard": {
-   "fama": 0.0436,
-   "lembranca_em_1000": null,
+   "fama": 0.0218,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0436
   },
   "Os Simpsons: O Filme": {
-   "fama": 0.0818,
-   "lembranca_em_1000": null,
-   "estimada": false,
+   "fama": 0.5577,
+   "lembranca_em_1000": 0.9562,
+   "na_simulacao": true,
+   "criativa": false,
+   "estimada": true,
+   "acima": 0.9806,
    "conhecem_pct": null,
    "visitas_pt_12m": 2844,
-   "tendencia": null
+   "fama_antiga": 0.0818
   },
   "O Esquema Fenício": {
-   "fama": 0.0183,
-   "lembranca_em_1000": null,
+   "fama": 0.0092,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0183
   },
   "Mazes and Monsters": {
-   "fama": 0.0125,
-   "lembranca_em_1000": null,
+   "fama": 0.0063,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": 366,
-   "tendencia": null
+   "fama_antiga": 0.0125
   },
   "Ithaca": {
-   "fama": 0.0127,
-   "lembranca_em_1000": null,
+   "fama": 0.0063,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0127
   },
   "Magnificent Desolation": {
-   "fama": 0.0127,
-   "lembranca_em_1000": null,
+   "fama": 0.0063,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0127
   },
   "Beyond All Boundaries": {
-   "fama": 0.0127,
-   "lembranca_em_1000": null,
+   "fama": 0.0063,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0127
   },
   "Toy Story de Terror": {
-   "fama": 0.0339,
-   "lembranca_em_1000": null,
+   "fama": 0.0169,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": 522,
-   "tendencia": null
+   "fama_antiga": 0.0339
   },
   "Toy Story: Esquecidos pelo Tempo": {
-   "fama": 0.0371,
-   "lembranca_em_1000": null,
+   "fama": 0.0186,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0371
   },
   "Partysaurus Rex": {
-   "fama": 0.0109,
-   "lembranca_em_1000": null,
+   "fama": 0.0054,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": 342,
-   "tendencia": null
+   "fama_antiga": 0.0109
   },
   "Férias no Havaí": {
-   "fama": 0.0464,
-   "lembranca_em_1000": null,
+   "fama": 0.0232,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": 510,
-   "tendencia": null
+   "fama_antiga": 0.0464
   },
   "Small Fry": {
-   "fama": 0.0117,
-   "lembranca_em_1000": null,
+   "fama": 0.0059,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": 354,
-   "tendencia": null
+   "fama_antiga": 0.0117
   },
   "Killing Lincoln": {
-   "fama": 0.0127,
-   "lembranca_em_1000": null,
+   "fama": 0.0063,
+   "lembranca_em_1000": 0.4303,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.994,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0127
   }
  }
 }

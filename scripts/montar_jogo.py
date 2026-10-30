@@ -20,11 +20,13 @@ JOGO = RAIZ / "jogo"
 
 # O jogo só lê o nome, os apelidos e os pontos de cada resposta. Os sinais da conta
 # (icf, visitas, fama...) ficam em dados/pesos/ e deixariam o dados.js com o dobro do tamanho.
-CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos")
+# "acima" (só nas categorias com simulação de jogadores, scripts/fama.py): a parte dos jogadores
+# que daria uma resposta mais óbvia que esta. É o "melhor que X% dos jogadores" do diário de bordo.
+CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos", "acima")
 
 
 def enxugar(cat: dict) -> dict:
-    return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA} for r in cat["respostas"]]}
+    return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA if k in r} for r in cat["respostas"]]}
 
 
 ORDEM = RAIZ / "dados" / "ordem.txt"
@@ -78,7 +80,29 @@ def ordem_dos_dias(indice: list[dict]) -> list[str]:
     print(f"dados/ordem.txt: {len(fila)} categorias, dá até o dia #{len(fila) // 7} ({ultimo:%d/%m/%Y})")
     escrever_dias(indice, fila)
     avisar_pequenas(fila)
+    avisar_sem_simulacao(fila)
     return fila
+
+
+def avisar_sem_simulacao(fila: list[str]) -> None:
+    """Trava da fama: categoria que ainda vai ao ar precisa da simulação de jogadores
+    (dados/sinais/lembranca/<id>.txt, scripts/fama.py) com a mesma pergunta. Como nenhuma categoria
+    se repete, não dá para corrigir depois: a conferência completa é `python3 scripts/fama.py --conferir`."""
+    import datetime as dt
+    hoje = (dt.date.today() - dt.date(2026, 10, 28)).days
+    faltam = []
+    for i, cid in enumerate(fila[max(0, hoje) * 7:], start=max(0, hoje) * 7):
+        sim = RAIZ / "dados" / "sinais" / "lembranca" / f"{cid}.txt"
+        cat = RAIZ / "dados" / "categorias" / f"{cid}.txt"
+        pergunta = next((l for l in cat.read_text(encoding="utf-8").splitlines() if l.startswith("# pergunta:")), "")
+        if not sim.exists():
+            faltam.append((i // 7 + 1, cid, "sem simulação de jogadores"))
+        elif pergunta not in sim.read_text(encoding="utf-8").splitlines():
+            faltam.append((i // 7 + 1, cid, "a pergunta mudou depois da simulação"))
+    if faltam:
+        print(f"AVISO: {len(faltam)} categorias que ainda vão ao ar não passaram pela fama nova (scripts/fama.py):")
+        for dia, cid, motivo in faltam:
+            print(f"  dia #{dia}: {cid} ({motivo})")
 
 
 def escrever_dias(indice: list[dict], fila: list[str]) -> None:

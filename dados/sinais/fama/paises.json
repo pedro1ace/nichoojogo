@@ -1,1958 +1,2673 @@
 {
  "categoria": "paises",
- "gerado_em": "2026-10-28",
- "sinais": [
-  "conhecem",
-  "lembranca",
-  "revisao",
-  "texto",
-  "visitas"
- ],
- "meses_de_visitas": [],
- "pesos": {
-  "lembranca": 0.65,
-  "conhecem": 0.1,
-  "revisao": 0.08,
-  "visitas": 0.14,
-  "texto": 0.03
- },
- "estimadas_pelo_llm": 222,
+ "metodo": "simulacao",
+ "gerado_em": "2026-10-30",
+ "pergunta": "Cite um país",
+ "simulados": 1000,
+ "na_simulacao": 141,
+ "massa_da_cauda": 40.0,
  "respostas": {
   "Abecásia": {
-   "fama": 0.1046,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0523,
+   "lembranca_em_1000": 0.1792,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9967,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 34366,
-   "tendencia": null
+   "fama_antiga": 0.1046
   },
   "Afeganistão": {
-   "fama": 0.3528,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 124686,
-   "tendencia": null
+   "fama_antiga": 0.3528
   },
   "África do Sul": {
-   "fama": 0.4926,
-   "lembranca_em_1000": 4.0,
+   "fama": 0.6577,
+   "lembranca_em_1000": 4.8686,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8401,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 169231,
-   "tendencia": null
+   "fama_antiga": 0.4926
   },
   "Albânia": {
-   "fama": 0.2437,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.1218,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 96876,
-   "tendencia": null
+   "fama_antiga": 0.2437
   },
   "Alemanha": {
-   "fama": 0.7651,
-   "lembranca_em_1000": 40.0,
+   "fama": 0.8037,
+   "lembranca_em_1000": 29.2119,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5799,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 274312,
-   "tendencia": null
+   "fama_antiga": 0.7651
   },
   "Andorra": {
-   "fama": 0.2288,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 97392,
-   "tendencia": null
+   "fama_antiga": 0.2288
   },
   "Angola": {
-   "fama": 0.4606,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 206642,
-   "tendencia": null
+   "fama_antiga": 0.4606
   },
   "Antígua e Barbuda": {
-   "fama": 0.1429,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0714,
+   "lembranca_em_1000": 0.2174,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9935,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 25544,
-   "tendencia": null
+   "fama_antiga": 0.1429
   },
   "Arábia Saudita": {
-   "fama": 0.3564,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 148687,
-   "tendencia": null
+   "fama_antiga": 0.3564
   },
   "Argélia": {
-   "fama": 0.2721,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1361,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 155487,
-   "tendencia": null
+   "fama_antiga": 0.2721
   },
   "Argentina": {
-   "fama": 0.8607,
-   "lembranca_em_1000": 90.0,
+   "fama": 0.8639,
+   "lembranca_em_1000": 58.4238,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.3767,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 264267,
-   "tendencia": null
+   "fama_antiga": 0.8607
   },
   "Armênia": {
-   "fama": 0.2367,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.1183,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 82889,
-   "tendencia": null
+   "fama_antiga": 0.2367
   },
   "Aruba": {
-   "fama": 0.203,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1015,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 54744,
-   "tendencia": null
+   "fama_antiga": 0.203
   },
   "Austrália": {
-   "fama": 0.5645,
-   "lembranca_em_1000": 8.0,
+   "fama": 0.6937,
+   "lembranca_em_1000": 7.7898,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7931,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 165933,
-   "tendencia": null
+   "fama_antiga": 0.5645
   },
   "Áustria": {
-   "fama": 0.3525,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 115317,
-   "tendencia": null
+   "fama_antiga": 0.3525
   },
   "Azerbaijão": {
-   "fama": 0.2162,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1081,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 75476,
-   "tendencia": null
+   "fama_antiga": 0.2162
   },
   "Bahamas": {
-   "fama": 0.2574,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1287,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 55794,
-   "tendencia": null
+   "fama_antiga": 0.2574
   },
   "Bahrein": {
-   "fama": 0.2065,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 52253,
-   "tendencia": null
+   "fama_antiga": 0.2065
   },
   "Bangladesh": {
-   "fama": 0.2471,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 122377,
-   "tendencia": null
+   "fama_antiga": 0.2471
   },
   "Barbados": {
-   "fama": 0.2008,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1004,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 57261,
-   "tendencia": null
+   "fama_antiga": 0.2008
   },
   "Bélgica": {
-   "fama": 0.4148,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 147283,
-   "tendencia": null
+   "fama_antiga": 0.4148
   },
   "Belize": {
-   "fama": 0.1824,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0912,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 48553,
-   "tendencia": null
+   "fama_antiga": 0.1824
   },
   "Benim": {
-   "fama": 0.1669,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
+   "fama": 0.0834,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 59274,
-   "tendencia": null
+   "fama_antiga": 0.1669
   },
   "Bermudas": {
-   "fama": 0.2103,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1051,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 32453,
-   "tendencia": null
+   "fama_antiga": 0.2103
   },
   "Bielorrússia": {
-   "fama": 0.2148,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1074,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 71677,
-   "tendencia": null
+   "fama_antiga": 0.2148
   },
   "Bolívia": {
-   "fama": 0.5573,
-   "lembranca_em_1000": 8.0,
+   "fama": 0.6713,
+   "lembranca_em_1000": 5.8424,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8178,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 110731,
-   "tendencia": null
+   "fama_antiga": 0.5573
   },
   "Bósnia e Herzegovina": {
-   "fama": 0.2215,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1108,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 168007,
-   "tendencia": null
+   "fama_antiga": 0.2215
   },
   "Botswana": {
-   "fama": 0.1738,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 35347,
-   "tendencia": null
+   "fama_antiga": 0.1738
   },
   "Brasil": {
-   "fama": 0.9976,
-   "lembranca_em_1000": 220.0,
+   "fama": 1.0,
+   "lembranca_em_1000": 272.6443,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.0,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 1387279,
-   "tendencia": null
+   "fama_antiga": 0.9976
   },
   "Brunei": {
-   "fama": 0.1676,
-   "lembranca_em_1000": 0.03,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 47095,
-   "tendencia": null
+   "fama_antiga": 0.1676
   },
   "Bulgária": {
-   "fama": 0.2536,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 78529,
-   "tendencia": null
+   "fama_antiga": 0.2536
   },
   "Burkina Faso": {
-   "fama": 0.177,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 99055,
-   "tendencia": null
+   "fama_antiga": 0.177
   },
   "Burundi": {
-   "fama": 0.1686,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
+   "fama": 0.0843,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 49219,
-   "tendencia": null
+   "fama_antiga": 0.1686
   },
   "Butão": {
-   "fama": 0.177,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 51617,
-   "tendencia": null
+   "fama_antiga": 0.177
   },
   "Cabo Verde": {
-   "fama": 0.3398,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 813166,
-   "tendencia": null
+   "fama_antiga": 0.3398
   },
   "Camarões": {
-   "fama": 0.3295,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 65070,
-   "tendencia": null
+   "fama_antiga": 0.3295
   },
   "Camboja": {
-   "fama": 0.23,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 60686,
-   "tendencia": null
+   "fama_antiga": 0.23
   },
   "Canadá": {
-   "fama": 0.7009,
-   "lembranca_em_1000": 25.0,
+   "fama": 0.788,
+   "lembranca_em_1000": 24.3432,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.6518,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 205329,
-   "tendencia": null
+   "fama_antiga": 0.7009
   },
   "Cazaquistão": {
-   "fama": 0.2403,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 92544,
-   "tendencia": null
+   "fama_antiga": 0.2403
   },
   "Chade": {
-   "fama": 0.1828,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 45250,
-   "tendencia": null
+   "fama_antiga": 0.1828
   },
   "Chile": {
-   "fama": 0.6339,
-   "lembranca_em_1000": 15.0,
+   "fama": 0.7263,
+   "lembranca_em_1000": 11.6848,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7435,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 126286,
-   "tendencia": null
+   "fama_antiga": 0.6339
   },
   "China": {
-   "fama": 0.7624,
-   "lembranca_em_1000": 40.0,
+   "fama": 0.8037,
+   "lembranca_em_1000": 29.2119,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5799,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 222730,
-   "tendencia": null
+   "fama_antiga": 0.7624
   },
   "Chipre": {
-   "fama": 0.2005,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 13484,
-   "tendencia": null
+   "fama_antiga": 0.2005
   },
   "Colômbia": {
-   "fama": 0.5652,
-   "lembranca_em_1000": 8.0,
+   "fama": 0.7115,
+   "lembranca_em_1000": 9.7373,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7653,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 162673,
-   "tendencia": null
+   "fama_antiga": 0.5652
   },
   "Comores": {
-   "fama": 0.1437,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0718,
+   "lembranca_em_1000": 0.2203,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9932,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 45685,
-   "tendencia": null
+   "fama_antiga": 0.1437
   },
   "Congo": {
-   "fama": 0.2795,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 248268,
-   "tendencia": null
+   "fama_antiga": 0.2795
   },
   "Coreia do Norte": {
-   "fama": 0.4219,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": 147967,
-   "tendencia": null
+   "fama_antiga": 0.4219
   },
   "Coreia do Sul": {
-   "fama": 0.5124,
-   "lembranca_em_1000": 5.0,
+   "fama": 0.6713,
+   "lembranca_em_1000": 5.8424,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8178,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 133549,
-   "tendencia": null
+   "fama_antiga": 0.5124
   },
   "Costa do Marfim": {
-   "fama": 0.288,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.144,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 199011,
-   "tendencia": null
+   "fama_antiga": 0.288
   },
   "Costa Rica": {
-   "fama": 0.3124,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 67142,
-   "tendencia": null
+   "fama_antiga": 0.3124
   },
   "Croácia": {
-   "fama": 0.349,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 122030,
-   "tendencia": null
+   "fama_antiga": 0.349
   },
   "Cuba": {
-   "fama": 0.463,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 153803,
-   "tendencia": null
+   "fama_antiga": 0.463
   },
   "Curaçao": {
-   "fama": 0.2188,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.1094,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 738444,
-   "tendencia": null
+   "fama_antiga": 0.2188
   },
   "Dinamarca": {
-   "fama": 0.3572,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 119749,
-   "tendencia": null
+   "fama_antiga": 0.3572
   },
   "Djibuti": {
-   "fama": 0.1529,
-   "lembranca_em_1000": 0.03,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 27907,
-   "tendencia": null
+   "fama_antiga": 0.1529
   },
   "Dominica": {
-   "fama": 0.1416,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0708,
+   "lembranca_em_1000": 0.2118,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9939,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 19545,
-   "tendencia": null
+   "fama_antiga": 0.1416
   },
   "Egito": {
-   "fama": 0.5314,
-   "lembranca_em_1000": 6.0,
+   "fama": 0.6713,
+   "lembranca_em_1000": 5.8424,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8178,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 152297,
-   "tendencia": null
+   "fama_antiga": 0.5314
   },
   "El Salvador": {
-   "fama": 0.2819,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 104919,
-   "tendencia": null
+   "fama_antiga": 0.2819
   },
   "Emirados Árabes Unidos": {
-   "fama": 0.3184,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 133344,
-   "tendencia": null
+   "fama_antiga": 0.3184
   },
   "Equador": {
-   "fama": 0.4157,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6415,
+   "lembranca_em_1000": 3.8949,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8525,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": 109169,
-   "tendencia": null
+   "fama_antiga": 0.4157
   },
   "Eritreia": {
-   "fama": 0.1577,
-   "lembranca_em_1000": 0.02,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 54549,
-   "tendencia": null
+   "fama_antiga": 0.1577
   },
   "Escócia": {
-   "fama": 0.3549,
-   "lembranca_em_1000": 1.0,
-   "estimada": true,
+   "fama": 0.1774,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 119099,
-   "tendencia": null
+   "fama_antiga": 0.3549
   },
   "Eslováquia": {
-   "fama": 0.2239,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1119,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 67584,
-   "tendencia": null
+   "fama_antiga": 0.2239
   },
   "Eslovênia": {
-   "fama": 0.2131,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1066,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 57352,
-   "tendencia": null
+   "fama_antiga": 0.2131
   },
   "Espanha": {
-   "fama": 0.7311,
-   "lembranca_em_1000": 30.0,
+   "fama": 0.769,
+   "lembranca_em_1000": 19.4746,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.6989,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 288680,
-   "tendencia": null
+   "fama_antiga": 0.7311
   },
   "Estados Federados da Micronésia": {
-   "fama": 0.0447,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0223,
+   "lembranca_em_1000": 0.151,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9995,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 47,
-   "tendencia": null
+   "fama_antiga": 0.0447
   },
   "Estados Unidos da América": {
-   "fama": 0.8985,
-   "lembranca_em_1000": 110.0,
+   "fama": 0.9088,
+   "lembranca_em_1000": 97.373,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.2776,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 618364,
-   "tendencia": null
+   "fama_antiga": 0.8985
   },
   "Estônia": {
-   "fama": 0.2086,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1043,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 51395,
-   "tendencia": null
+   "fama_antiga": 0.2086
   },
   "Eswatini": {
-   "fama": 0.1287,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 115984,
-   "tendencia": null
+   "fama_antiga": 0.1287
   },
   "Etiópia": {
-   "fama": 0.2702,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 94857,
-   "tendencia": null
+   "fama_antiga": 0.2702
   },
   "Fiji": {
-   "fama": 0.1998,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 38652,
-   "tendencia": null
+   "fama_antiga": 0.1998
   },
   "Filipinas": {
-   "fama": 0.3425,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 94081,
-   "tendencia": null
+   "fama_antiga": 0.3425
   },
   "Finlândia": {
-   "fama": 0.3481,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 91240,
-   "tendencia": null
+   "fama_antiga": 0.3481
   },
   "França": {
-   "fama": 0.7917,
-   "lembranca_em_1000": 50.0,
+   "fama": 0.817,
+   "lembranca_em_1000": 34.0805,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5155,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 271803,
-   "tendencia": null
+   "fama_antiga": 0.7917
   },
   "Gabão": {
-   "fama": 0.1705,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
+   "fama": 0.0853,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 35416,
-   "tendencia": null
+   "fama_antiga": 0.1705
   },
   "Gâmbia": {
-   "fama": 0.1634,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
+   "fama": 0.0817,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 35076,
-   "tendencia": null
+   "fama_antiga": 0.1634
   },
   "Gana": {
-   "fama": 0.2807,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 133244,
-   "tendencia": null
+   "fama_antiga": 0.2807
   },
   "Geórgia": {
-   "fama": 0.2258,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1129,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 101804,
-   "tendencia": null
+   "fama_antiga": 0.2258
   },
   "Granada": {
-   "fama": 0.1539,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.077,
+   "lembranca_em_1000": 0.2398,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9918,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 31585,
-   "tendencia": null
+   "fama_antiga": 0.1539
   },
   "Grécia": {
-   "fama": 0.4825,
-   "lembranca_em_1000": 4.0,
+   "fama": 0.6577,
+   "lembranca_em_1000": 4.8686,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8401,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 107530,
-   "tendencia": null
+   "fama_antiga": 0.4825
   },
   "Groenlândia": {
-   "fama": 0.2794,
-   "lembranca_em_1000": 0.3,
-   "estimada": true,
+   "fama": 0.1397,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 235864,
-   "tendencia": null
+   "fama_antiga": 0.2794
   },
   "Guadalupe": {
-   "fama": 0.0608,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0304,
+   "lembranca_em_1000": 0.1524,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9994,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 43,
-   "tendencia": null
+   "fama_antiga": 0.0608
   },
   "Guatemala": {
-   "fama": 0.2708,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 51208,
-   "tendencia": null
+   "fama_antiga": 0.2708
   },
   "Guiana": {
-   "fama": 0.2936,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 86003,
-   "tendencia": null
+   "fama_antiga": 0.2936
   },
   "Guiana Francesa": {
-   "fama": 0.2952,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.1476,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 92252,
-   "tendencia": null
+   "fama_antiga": 0.2952
   },
   "Guiné": {
-   "fama": 0.2153,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1076,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 47974,
-   "tendencia": null
+   "fama_antiga": 0.2153
   },
   "Guiné Equatorial": {
-   "fama": 0.1926,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0963,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 102174,
-   "tendencia": null
+   "fama_antiga": 0.1926
   },
   "Guiné-Bissau": {
-   "fama": 0.269,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 119001,
-   "tendencia": null
+   "fama_antiga": 0.269
   },
   "Haiti": {
-   "fama": 0.3643,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 204646,
-   "tendencia": null
+   "fama_antiga": 0.3643
   },
   "Holanda": {
-   "fama": 0.5222,
-   "lembranca_em_1000": 5.0,
+   "fama": 0.6577,
+   "lembranca_em_1000": 4.8686,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8401,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 332543,
-   "tendencia": null
+   "fama_antiga": 0.5222
   },
   "Honduras": {
-   "fama": 0.2694,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 54050,
-   "tendencia": null
+   "fama_antiga": 0.2694
   },
   "Hong Kong": {
-   "fama": 0.2515,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.1258,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 114957,
-   "tendencia": null
+   "fama_antiga": 0.2515
   },
   "Hungria": {
-   "fama": 0.3069,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 132276,
-   "tendencia": null
+   "fama_antiga": 0.3069
   },
   "Iêmen": {
-   "fama": 0.2251,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 66545,
-   "tendencia": null
+   "fama_antiga": 0.2251
   },
   "Ilhas Caimão": {
-   "fama": 0.0775,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0387,
+   "lembranca_em_1000": 0.1583,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9988,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 63,
-   "tendencia": null
+   "fama_antiga": 0.0775
   },
   "Ilhas Marianas do Norte": {
-   "fama": 0.1171,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0585,
+   "lembranca_em_1000": 0.1896,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9957,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 9888,
-   "tendencia": null
+   "fama_antiga": 0.1171
   },
   "Ilhas Virgens": {
-   "fama": 0.1549,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0775,
+   "lembranca_em_1000": 0.2434,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9916,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 25221,
-   "tendencia": null
+   "fama_antiga": 0.1549
   },
   "Índia": {
-   "fama": 0.5639,
-   "lembranca_em_1000": 8.0,
+   "fama": 0.6937,
+   "lembranca_em_1000": 7.7898,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7931,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 150364,
-   "tendencia": null
+   "fama_antiga": 0.5639
   },
   "Indonésia": {
-   "fama": 0.3481,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 106284,
-   "tendencia": null
+   "fama_antiga": 0.3481
   },
   "Inglaterra": {
-   "fama": 0.7026,
-   "lembranca_em_1000": 25.0,
+   "fama": 0.769,
+   "lembranca_em_1000": 19.4746,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.6989,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 191875,
-   "tendencia": null
+   "fama_antiga": 0.7026
   },
   "Irã": {
-   "fama": 0.3743,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 328061,
-   "tendencia": null
+   "fama_antiga": 0.3743
   },
   "Iraque": {
-   "fama": 0.3575,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 94371,
-   "tendencia": null
+   "fama_antiga": 0.3575
   },
   "Irlanda": {
-   "fama": 0.4106,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 106403,
-   "tendencia": null
+   "fama_antiga": 0.4106
   },
   "Irlanda do Norte": {
-   "fama": 0.2624,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.1312,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 54421,
-   "tendencia": null
+   "fama_antiga": 0.2624
   },
   "Islândia": {
-   "fama": 0.3439,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 98654,
-   "tendencia": null
+   "fama_antiga": 0.3439
   },
   "Israel": {
-   "fama": 0.4298,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 243932,
-   "tendencia": null
+   "fama_antiga": 0.4298
   },
   "Itália": {
-   "fama": 0.7439,
-   "lembranca_em_1000": 35.0,
+   "fama": 0.8037,
+   "lembranca_em_1000": 29.2119,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.5799,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 199180,
-   "tendencia": null
+   "fama_antiga": 0.7439
   },
   "Jamaica": {
-   "fama": 0.3541,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 108477,
-   "tendencia": null
+   "fama_antiga": 0.3541
   },
   "Japão": {
-   "fama": 0.7761,
-   "lembranca_em_1000": 45.0,
+   "fama": 0.8286,
+   "lembranca_em_1000": 38.9492,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.456,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 236003,
-   "tendencia": null
+   "fama_antiga": 0.7761
   },
   "Jordânia": {
-   "fama": 0.2504,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 83306,
-   "tendencia": null
+   "fama_antiga": 0.2504
   },
   "Kiribati": {
-   "fama": 0.1184,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 24590,
-   "tendencia": null
+   "fama_antiga": 0.1184
   },
   "Kosovo": {
-   "fama": 0.2025,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.1013,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 101161,
-   "tendencia": null
+   "fama_antiga": 0.2025
   },
   "Kuwait": {
-   "fama": 0.2377,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 53395,
-   "tendencia": null
+   "fama_antiga": 0.2377
   },
   "Laos": {
-   "fama": 0.1811,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 48396,
-   "tendencia": null
+   "fama_antiga": 0.1811
   },
   "Lesoto": {
-   "fama": 0.1463,
-   "lembranca_em_1000": 0.02,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 44006,
-   "tendencia": null
+   "fama_antiga": 0.1463
   },
   "Letônia": {
-   "fama": 0.1989,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0994,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 56586,
-   "tendencia": null
+   "fama_antiga": 0.1989
   },
   "Líbano": {
-   "fama": 0.3087,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 130750,
-   "tendencia": null
+   "fama_antiga": 0.3087
   },
   "Libéria": {
-   "fama": 0.1975,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0988,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 61677,
-   "tendencia": null
+   "fama_antiga": 0.1975
   },
   "Líbia": {
-   "fama": 0.2521,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.126,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 65769,
-   "tendencia": null
+   "fama_antiga": 0.2521
   },
   "Liechtenstein": {
-   "fama": 0.1913,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 104279,
-   "tendencia": null
+   "fama_antiga": 0.1913
   },
   "Lituânia": {
-   "fama": 0.2046,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.1023,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 62705,
-   "tendencia": null
+   "fama_antiga": 0.2046
   },
   "Luxemburgo": {
-   "fama": 0.2645,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 128773,
-   "tendencia": null
+   "fama_antiga": 0.2645
   },
   "Macau": {
-   "fama": 0.1825,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0912,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 11361,
-   "tendencia": null
+   "fama_antiga": 0.1825
   },
   "Macedônia do Norte": {
-   "fama": 0.1931,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0965,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 57363,
-   "tendencia": null
+   "fama_antiga": 0.1931
   },
   "Madagascar": {
-   "fama": 0.2873,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 67626,
-   "tendencia": null
+   "fama_antiga": 0.2873
   },
   "Malásia": {
-   "fama": 0.2725,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 70464,
-   "tendencia": null
+   "fama_antiga": 0.2725
   },
   "Malawi": {
-   "fama": 0.1565,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0783,
+   "lembranca_em_1000": 0.247,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9913,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 31199,
-   "tendencia": null
+   "fama_antiga": 0.1565
   },
   "Maldivas": {
-   "fama": 0.2377,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 65942,
-   "tendencia": null
+   "fama_antiga": 0.2377
   },
   "Mali": {
-   "fama": 0.2178,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 75057,
-   "tendencia": null
+   "fama_antiga": 0.2178
   },
   "Malta": {
-   "fama": 0.2573,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 75.0,
    "visitas_pt_12m": 122927,
-   "tendencia": null
+   "fama_antiga": 0.2573
   },
   "Marrocos": {
-   "fama": 0.4209,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 303875,
-   "tendencia": null
+   "fama_antiga": 0.4209
   },
   "Marshall": {
-   "fama": 0.0682,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0341,
+   "lembranca_em_1000": 0.1538,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9992,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 360,
-   "tendencia": null
+   "fama_antiga": 0.0682
   },
   "Maurícia": {
-   "fama": 0.1459,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.073,
+   "lembranca_em_1000": 0.2265,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9928,
    "conhecem_pct": 20.0,
    "visitas_pt_12m": 58016,
-   "tendencia": null
+   "fama_antiga": 0.1459
   },
   "Mauritânia": {
-   "fama": 0.1782,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
+   "fama": 0.0891,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 71602,
-   "tendencia": null
+   "fama_antiga": 0.1782
   },
   "México": {
-   "fama": 0.7036,
-   "lembranca_em_1000": 25.0,
+   "fama": 0.788,
+   "lembranca_em_1000": 24.3432,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.6518,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 215710,
-   "tendencia": null
+   "fama_antiga": 0.7036
   },
   "Mianmar": {
-   "fama": 0.192,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 71291,
-   "tendencia": null
+   "fama_antiga": 0.192
   },
   "Micronésia": {
-   "fama": 0.1339,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0669,
+   "lembranca_em_1000": 0.2038,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9945,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 22722,
-   "tendencia": null
+   "fama_antiga": 0.1339
   },
   "Moldávia": {
-   "fama": 0.1772,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
+   "fama": 0.0886,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 45.0,
    "visitas_pt_12m": 66612,
-   "tendencia": null
+   "fama_antiga": 0.1772
   },
   "Mônaco": {
-   "fama": 0.2798,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 131656,
-   "tendencia": null
+   "fama_antiga": 0.2798
   },
   "Mongólia": {
-   "fama": 0.2495,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 70008,
-   "tendencia": null
+   "fama_antiga": 0.2495
   },
   "Montenegro": {
-   "fama": 0.2032,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.1016,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 81375,
-   "tendencia": null
+   "fama_antiga": 0.2032
   },
   "Moçambique": {
-   "fama": 0.4128,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 139655,
-   "tendencia": null
+   "fama_antiga": 0.4128
   },
   "Namíbia": {
-   "fama": 0.1979,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 59351,
-   "tendencia": null
+   "fama_antiga": 0.1979
   },
   "Nauru": {
-   "fama": 0.1291,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 53194,
-   "tendencia": null
+   "fama_antiga": 0.1291
   },
   "Nepal": {
-   "fama": 0.2557,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 97518,
-   "tendencia": null
+   "fama_antiga": 0.2557
   },
   "Nicarágua": {
-   "fama": 0.2648,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 65823,
-   "tendencia": null
+   "fama_antiga": 0.2648
   },
   "Níger": {
-   "fama": 0.1864,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 40537,
-   "tendencia": null
+   "fama_antiga": 0.1864
   },
   "Nigéria": {
-   "fama": 0.3512,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 118186,
-   "tendencia": null
+   "fama_antiga": 0.3512
   },
   "Noruega": {
-   "fama": 0.4213,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 305927,
-   "tendencia": null
+   "fama_antiga": 0.4213
   },
   "Nova Zelândia": {
-   "fama": 0.4183,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 120411,
-   "tendencia": null
+   "fama_antiga": 0.4183
   },
   "Omã": {
-   "fama": 0.199,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 70659,
-   "tendencia": null
+   "fama_antiga": 0.199
   },
   "Ossétia do Sul": {
-   "fama": 0.1211,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0605,
+   "lembranca_em_1000": 0.1941,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9953,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 17148,
-   "tendencia": null
+   "fama_antiga": 0.1211
   },
   "País de Gales": {
-   "fama": 0.2634,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.1317,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 70320,
-   "tendencia": null
+   "fama_antiga": 0.2634
   },
   "Países Baixos": {
-   "fama": 0.3619,
-   "lembranca_em_1000": 1.0,
-   "estimada": true,
+   "fama": 0.1809,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 332543,
-   "tendencia": null
+   "fama_antiga": 0.3619
   },
   "Palau": {
-   "fama": 0.1291,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0645,
+   "lembranca_em_1000": 0.1988,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9949,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 42757,
-   "tendencia": null
+   "fama_antiga": 0.1291
   },
   "Palestina": {
-   "fama": 0.3109,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 98075,
-   "tendencia": null
+   "fama_antiga": 0.3109
   },
   "Panamá": {
-   "fama": 0.3145,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 99095,
-   "tendencia": null
+   "fama_antiga": 0.3145
   },
   "Papua-Nova Guiné": {
-   "fama": 0.1749,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 42107,
-   "tendencia": null
+   "fama_antiga": 0.1749
   },
   "Paquistão": {
-   "fama": 0.3094,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 121319,
-   "tendencia": null
+   "fama_antiga": 0.3094
   },
   "Paraguai": {
-   "fama": 0.6106,
-   "lembranca_em_1000": 12.0,
+   "fama": 0.7115,
+   "lembranca_em_1000": 9.7373,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7653,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 156328,
-   "tendencia": null
+   "fama_antiga": 0.6106
   },
   "Peru": {
-   "fama": 0.5606,
-   "lembranca_em_1000": 8.0,
+   "fama": 0.6937,
+   "lembranca_em_1000": 7.7898,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7931,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 112552,
-   "tendencia": null
+   "fama_antiga": 0.5606
   },
   "Polinésia Francesa": {
-   "fama": 0.1596,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0798,
+   "lembranca_em_1000": 0.2588,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9905,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 27345,
-   "tendencia": null
+   "fama_antiga": 0.1596
   },
   "Polônia": {
-   "fama": 0.3581,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 96.0,
    "visitas_pt_12m": 116911,
-   "tendencia": null
+   "fama_antiga": 0.3581
   },
   "Porto Rico": {
-   "fama": 0.313,
-   "lembranca_em_1000": 0.5,
-   "estimada": true,
+   "fama": 0.1565,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 161680,
-   "tendencia": null
+   "fama_antiga": 0.313
   },
   "Portugal": {
-   "fama": 0.8262,
-   "lembranca_em_1000": 60.0,
+   "fama": 0.8286,
+   "lembranca_em_1000": 38.9492,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.456,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 565776,
-   "tendencia": null
+   "fama_antiga": 0.8262
   },
   "Qatar": {
-   "fama": 0.304,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 107726,
-   "tendencia": null
+   "fama_antiga": 0.304
   },
   "Quênia": {
-   "fama": 0.2649,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 44482,
-   "tendencia": null
+   "fama_antiga": 0.2649
   },
   "Quirguistão": {
-   "fama": 0.1518,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0759,
+   "lembranca_em_1000": 0.2329,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9923,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 51403,
-   "tendencia": null
+   "fama_antiga": 0.1518
   },
   "Reino Unido": {
-   "fama": 0.4284,
-   "lembranca_em_1000": 3.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 15121,
-   "tendencia": null
+   "fama_antiga": 0.4284
   },
   "República Árabe Saaraui Democrática": {
-   "fama": 0.0963,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0481,
+   "lembranca_em_1000": 0.1716,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9974,
    "conhecem_pct": 5.0,
    "visitas_pt_12m": 11707,
-   "tendencia": null
+   "fama_antiga": 0.0963
   },
   "República Centro-Africana": {
-   "fama": 0.1769,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0885,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 44173,
-   "tendencia": null
+   "fama_antiga": 0.1769
   },
   "República Democrática do Congo": {
-   "fama": 0.2261,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.113,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 248268,
-   "tendencia": null
+   "fama_antiga": 0.2261
   },
   "República do Congo": {
-   "fama": 0.2105,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.1052,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 137811,
-   "tendencia": null
+   "fama_antiga": 0.2105
   },
   "República Dominicana": {
-   "fama": 0.2785,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 87068,
-   "tendencia": null
+   "fama_antiga": 0.2785
   },
   "República Tcheca": {
-   "fama": 0.3062,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 88.0,
    "visitas_pt_12m": 125577,
-   "tendencia": null
+   "fama_antiga": 0.3062
   },
   "República Turca de Chipre do Norte": {
-   "fama": 0.1053,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0527,
+   "lembranca_em_1000": 0.1812,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9965,
    "conhecem_pct": 8.0,
    "visitas_pt_12m": 13484,
-   "tendencia": null
+   "fama_antiga": 0.1053
   },
   "Romênia": {
-   "fama": 0.2963,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 90.0,
    "visitas_pt_12m": 84781,
-   "tendencia": null
+   "fama_antiga": 0.2963
   },
   "Ruanda": {
-   "fama": 0.2205,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 56095,
-   "tendencia": null
+   "fama_antiga": 0.2205
   },
   "Rússia": {
-   "fama": 0.677,
-   "lembranca_em_1000": 20.0,
+   "fama": 0.7448,
+   "lembranca_em_1000": 14.6059,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7286,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 230081,
-   "tendencia": null
+   "fama_antiga": 0.677
   },
   "Salomão": {
-   "fama": 0.1525,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0762,
+   "lembranca_em_1000": 0.2363,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9921,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 128140,
-   "tendencia": null
+   "fama_antiga": 0.1525
   },
   "Samoa": {
-   "fama": 0.149,
-   "lembranca_em_1000": 0.02,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 25468,
-   "tendencia": null
+   "fama_antiga": 0.149
   },
   "San Marino": {
-   "fama": 0.1947,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 59984,
-   "tendencia": null
+   "fama_antiga": 0.1947
   },
   "Santa Lúcia": {
-   "fama": 0.1491,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0746,
+   "lembranca_em_1000": 0.2296,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9925,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 25688,
-   "tendencia": null
+   "fama_antiga": 0.1491
   },
   "São Cristóvão e Névis": {
-   "fama": 0.1426,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0713,
+   "lembranca_em_1000": 0.2145,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9937,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 28918,
-   "tendencia": null
+   "fama_antiga": 0.1426
   },
   "São Tomé e Príncipe": {
-   "fama": 0.2496,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 101567,
-   "tendencia": null
+   "fama_antiga": 0.2496
   },
   "São Vicente e Granadinas": {
-   "fama": 0.1319,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0659,
+   "lembranca_em_1000": 0.2013,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9947,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 19186,
-   "tendencia": null
+   "fama_antiga": 0.1319
   },
   "Senegal": {
-   "fama": 0.339,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 137502,
-   "tendencia": null
+   "fama_antiga": 0.339
   },
   "Serra Leoa": {
-   "fama": 0.1994,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0997,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 45568,
-   "tendencia": null
+   "fama_antiga": 0.1994
   },
   "Sérvia": {
-   "fama": 0.2857,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 64433,
-   "tendencia": null
+   "fama_antiga": 0.2857
   },
   "Seychelles": {
-   "fama": 0.1735,
-   "lembranca_em_1000": 0.03,
-   "estimada": true,
+   "fama": 0.0867,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 40.0,
    "visitas_pt_12m": 57695,
-   "tendencia": null
+   "fama_antiga": 0.1735
   },
   "Singapura": {
-   "fama": 0.2868,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 215083,
-   "tendencia": null
+   "fama_antiga": 0.2868
   },
   "Síria": {
-   "fama": 0.3097,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 92.0,
    "visitas_pt_12m": 90093,
-   "tendencia": null
+   "fama_antiga": 0.3097
   },
   "Somália": {
-   "fama": 0.257,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 75042,
-   "tendencia": null
+   "fama_antiga": 0.257
   },
   "Sri Lanka": {
-   "fama": 0.2145,
-   "lembranca_em_1000": 0.1,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 65.0,
    "visitas_pt_12m": 68980,
-   "tendencia": null
+   "fama_antiga": 0.2145
   },
   "Suazilândia": {
-   "fama": 0.1579,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.079,
+   "lembranca_em_1000": 0.2548,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9908,
    "conhecem_pct": 25.0,
    "visitas_pt_12m": 115984,
-   "tendencia": null
+   "fama_antiga": 0.1579
   },
   "Sudão": {
-   "fama": 0.2527,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 74507,
-   "tendencia": null
+   "fama_antiga": 0.2527
   },
   "Sudão do Sul": {
-   "fama": 0.2065,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.1032,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 66012,
-   "tendencia": null
+   "fama_antiga": 0.2065
   },
   "Suécia": {
-   "fama": 0.4147,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": 134061,
-   "tendencia": null
+   "fama_antiga": 0.4147
   },
   "Suíça": {
-   "fama": 0.4897,
-   "lembranca_em_1000": 4.0,
+   "fama": 0.6577,
+   "lembranca_em_1000": 4.8686,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8401,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 187836,
-   "tendencia": null
+   "fama_antiga": 0.4897
   },
   "Suriname": {
-   "fama": 0.2853,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 94518,
-   "tendencia": null
+   "fama_antiga": 0.2853
   },
   "Tailândia": {
-   "fama": 0.353,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 102051,
-   "tendencia": null
+   "fama_antiga": 0.353
   },
   "Taiwan": {
-   "fama": 0.282,
-   "lembranca_em_1000": 0.3,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 85.0,
    "visitas_pt_12m": 143563,
-   "tendencia": null
+   "fama_antiga": 0.282
   },
   "Tajiquistão": {
-   "fama": 0.1572,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0786,
+   "lembranca_em_1000": 0.2508,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9911,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 46917,
-   "tendencia": null
+   "fama_antiga": 0.1572
   },
   "Tanzânia": {
-   "fama": 0.2246,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1123,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 71938,
-   "tendencia": null
+   "fama_antiga": 0.2246
   },
   "Timor-Leste": {
-   "fama": 0.2487,
-   "lembranca_em_1000": 0.2,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 89102,
-   "tendencia": null
+   "fama_antiga": 0.2487
   },
   "Togo": {
-   "fama": 0.1747,
-   "lembranca_em_1000": 0.05,
-   "estimada": true,
+   "fama": 0.0873,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 32035,
-   "tendencia": null
+   "fama_antiga": 0.1747
   },
   "Tonga": {
-   "fama": 0.1458,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0729,
+   "lembranca_em_1000": 0.2234,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.993,
    "conhecem_pct": 30.0,
    "visitas_pt_12m": 26277,
-   "tendencia": null
+   "fama_antiga": 0.1458
   },
   "Trinidad e Tobago": {
-   "fama": 0.1881,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.094,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 60.0,
    "visitas_pt_12m": 70111,
-   "tendencia": null
+   "fama_antiga": 0.1881
   },
   "Tunísia": {
-   "fama": 0.2552,
-   "lembranca_em_1000": 0.2,
-   "estimada": true,
+   "fama": 0.1276,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 80.0,
    "visitas_pt_12m": 90459,
-   "tendencia": null
+   "fama_antiga": 0.2552
   },
   "Turcomenistão": {
-   "fama": 0.1648,
-   "lembranca_em_1000": 0.02,
-   "estimada": true,
+   "fama": 0.0824,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 35.0,
    "visitas_pt_12m": 67987,
-   "tendencia": null
+   "fama_antiga": 0.1648
   },
   "Turquia": {
-   "fama": 0.419,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 98.0,
    "visitas_pt_12m": 180693,
-   "tendencia": null
+   "fama_antiga": 0.419
   },
   "Tuvalu": {
-   "fama": 0.1264,
-   "lembranca_em_1000": 0.01,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 42047,
-   "tendencia": null
+   "fama_antiga": 0.1264
   },
   "Ucrânia": {
-   "fama": 0.4147,
-   "lembranca_em_1000": 2.0,
+   "fama": 0.6217,
+   "lembranca_em_1000": 2.9212,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8699,
    "conhecem_pct": 99.0,
    "visitas_pt_12m": 96723,
-   "tendencia": null
+   "fama_antiga": 0.4147
   },
   "Uganda": {
-   "fama": 0.2239,
-   "lembranca_em_1000": 0.1,
-   "estimada": true,
+   "fama": 0.1119,
+   "lembranca_em_1000": 0.2629,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9833,
    "conhecem_pct": 70.0,
    "visitas_pt_12m": 69365,
-   "tendencia": null
+   "fama_antiga": 0.2239
   },
   "Uruguai": {
-   "fama": 0.6113,
-   "lembranca_em_1000": 12.0,
+   "fama": 0.7115,
+   "lembranca_em_1000": 9.7373,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.7653,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 163094,
-   "tendencia": null
+   "fama_antiga": 0.6113
   },
   "Uzbequistão": {
-   "fama": 0.2047,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5353,
+   "lembranca_em_1000": 0.4869,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9616,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 157008,
-   "tendencia": null
+   "fama_antiga": 0.2047
   },
   "Vanuatu": {
-   "fama": 0.1216,
-   "lembranca_em_1000": 0.01,
-   "estimada": true,
+   "fama": 0.0608,
+   "lembranca_em_1000": 0.1964,
+   "na_simulacao": false,
+   "criativa": false,
+   "estimada": false,
+   "acima": 0.9951,
    "conhecem_pct": 15.0,
    "visitas_pt_12m": 22352,
-   "tendencia": null
+   "fama_antiga": 0.1216
   },
   "Vaticano": {
-   "fama": 0.3101,
-   "lembranca_em_1000": 0.5,
+   "fama": 0.5606,
+   "lembranca_em_1000": 0.9737,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9423,
    "conhecem_pct": 95.0,
    "visitas_pt_12m": 83898,
-   "tendencia": null
+   "fama_antiga": 0.3101
   },
   "Venezuela": {
-   "fama": 0.5443,
-   "lembranca_em_1000": 6.0,
+   "fama": 0.6713,
+   "lembranca_em_1000": 5.8424,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.8178,
    "conhecem_pct": 100.0,
    "visitas_pt_12m": 318019,
-   "tendencia": null
+   "fama_antiga": 0.5443
   },
   "Vietnã": {
-   "fama": 0.3494,
-   "lembranca_em_1000": 1.0,
+   "fama": 0.5963,
+   "lembranca_em_1000": 1.9475,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.9071,
    "conhecem_pct": 97.0,
    "visitas_pt_12m": 88538,
-   "tendencia": null
+   "fama_antiga": 0.3494
   },
   "Zâmbia": {
-   "fama": 0.1862,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 50.0,
    "visitas_pt_12m": 36802,
-   "tendencia": null
+   "fama_antiga": 0.1862
   },
   "Zimbábue": {
-   "fama": 0.1953,
-   "lembranca_em_1000": 0.05,
+   "fama": 0.5228,
+   "lembranca_em_1000": 0.2921,
+   "na_simulacao": true,
+   "criativa": false,
    "estimada": true,
+   "acima": 0.972,
    "conhecem_pct": 55.0,
    "visitas_pt_12m": 42570,
-   "tendencia": null
+   "fama_antiga": 0.1953
   },
   "Saara Ocidental": {
-   "fama": 0.134,
-   "lembranca_em_1000": null,
+   "fama": 0.067,
+   "lembranca_em_1000": 0.2064,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9943,
    "conhecem_pct": null,
    "visitas_pt_12m": 49068,
-   "tendencia": null
+   "fama_antiga": 0.134
   },
   "Transnístria": {
-   "fama": 0.1001,
-   "lembranca_em_1000": null,
+   "fama": 0.05,
+   "lembranca_em_1000": 0.1735,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9972,
    "conhecem_pct": null,
    "visitas_pt_12m": 41928,
-   "tendencia": null
+   "fama_antiga": 0.1001
   },
   "Somalilândia": {
-   "fama": 0.0895,
-   "lembranca_em_1000": null,
+   "fama": 0.0447,
+   "lembranca_em_1000": 0.1664,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9979,
    "conhecem_pct": null,
    "visitas_pt_12m": 19680,
-   "tendencia": null
+   "fama_antiga": 0.0895
   },
   "Nagorno-Karabakh": {
-   "fama": 0.0725,
-   "lembranca_em_1000": null,
+   "fama": 0.0362,
+   "lembranca_em_1000": 0.1553,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9991,
    "conhecem_pct": null,
    "visitas_pt_12m": 5820,
-   "tendencia": null
+   "fama_antiga": 0.0725
   },
   "Sealand": {
-   "fama": 0.0857,
-   "lembranca_em_1000": null,
+   "fama": 0.0428,
+   "lembranca_em_1000": 0.1614,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9984,
    "conhecem_pct": null,
    "visitas_pt_12m": 15012,
-   "tendencia": null
+   "fama_antiga": 0.0857
   },
   "Ordem de Malta": {
-   "fama": 0.1062,
-   "lembranca_em_1000": null,
+   "fama": 0.0531,
+   "lembranca_em_1000": 0.1832,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9963,
    "conhecem_pct": null,
    "visitas_pt_12m": 18198,
-   "tendencia": null
+   "fama_antiga": 0.1062
   },
   "Iugoslávia": {
-   "fama": 0.1006,
-   "lembranca_em_1000": null,
+   "fama": 0.0503,
+   "lembranca_em_1000": 0.1753,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.997,
    "conhecem_pct": null,
    "visitas_pt_12m": 56208,
-   "tendencia": null
+   "fama_antiga": 0.1006
   },
   "União Soviética": {
-   "fama": 0.1368,
-   "lembranca_em_1000": null,
+   "fama": 0.0684,
+   "lembranca_em_1000": 0.209,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9941,
    "conhecem_pct": null,
    "visitas_pt_12m": 187806,
-   "tendencia": null
+   "fama_antiga": 0.1368
   },
   "Tchecoslováquia": {
-   "fama": 0.0915,
-   "lembranca_em_1000": null,
+   "fama": 0.0457,
+   "lembranca_em_1000": 0.1698,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9976,
    "conhecem_pct": null,
    "visitas_pt_12m": 29508,
-   "tendencia": null
+   "fama_antiga": 0.0915
   },
   "Alemanha Oriental": {
-   "fama": 0.1117,
-   "lembranca_em_1000": null,
+   "fama": 0.0558,
+   "lembranca_em_1000": 0.1874,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9959,
    "conhecem_pct": null,
    "visitas_pt_12m": 36744,
-   "tendencia": null
+   "fama_antiga": 0.1117
   },
   "Prússia": {
-   "fama": 0.1008,
-   "lembranca_em_1000": null,
+   "fama": 0.0504,
+   "lembranca_em_1000": 0.1772,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9969,
    "conhecem_pct": null,
    "visitas_pt_12m": 57600,
-   "tendencia": null
+   "fama_antiga": 0.1008
   },
   "Império Otomano": {
-   "fama": 0.12,
-   "lembranca_em_1000": null,
+   "fama": 0.06,
+   "lembranca_em_1000": 0.1918,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9955,
    "conhecem_pct": null,
    "visitas_pt_12m": 89904,
-   "tendencia": null
+   "fama_antiga": 0.12
   },
   "Rodésia": {
-   "fama": 0.0907,
-   "lembranca_em_1000": null,
+   "fama": 0.0454,
+   "lembranca_em_1000": 0.1681,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9978,
    "conhecem_pct": null,
    "visitas_pt_12m": 28170,
-   "tendencia": null
+   "fama_antiga": 0.0907
   },
   "Sião": {
-   "fama": 0.0879,
-   "lembranca_em_1000": null,
+   "fama": 0.044,
+   "lembranca_em_1000": 0.163,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9983,
    "conhecem_pct": null,
    "visitas_pt_12m": 9540,
-   "tendencia": null
+   "fama_antiga": 0.0879
   },
   "Daomé": {
-   "fama": 0.0006,
-   "lembranca_em_1000": null,
+   "fama": 0.0003,
+   "lembranca_em_1000": 0.1496,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9997,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0006
   },
   "Tanganica": {
-   "fama": 0.0006,
-   "lembranca_em_1000": null,
+   "fama": 0.0003,
+   "lembranca_em_1000": 0.1482,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9998,
    "conhecem_pct": null,
    "visitas_pt_12m": null,
-   "tendencia": null
+   "fama_antiga": 0.0006
   },
   "Zanzibar": {
-   "fama": 0.1065,
-   "lembranca_em_1000": null,
+   "fama": 0.0532,
+   "lembranca_em_1000": 0.1853,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9961,
    "conhecem_pct": null,
    "visitas_pt_12m": 47652,
-   "tendencia": null
+   "fama_antiga": 0.1065
   },
   "Biafra": {
-   "fama": 0.0737,
-   "lembranca_em_1000": null,
+   "fama": 0.0369,
+   "lembranca_em_1000": 0.1568,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9989,
    "conhecem_pct": null,
    "visitas_pt_12m": 8472,
-   "tendencia": null
+   "fama_antiga": 0.0737
   },
   "Vietnã do Sul": {
-   "fama": 0.0882,
-   "lembranca_em_1000": null,
+   "fama": 0.0441,
+   "lembranca_em_1000": 0.1647,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9981,
    "conhecem_pct": null,
    "visitas_pt_12m": 6432,
-   "tendencia": null
+   "fama_antiga": 0.0882
   },
   "Iêmen do Sul": {
-   "fama": 0.0839,
-   "lembranca_em_1000": null,
+   "fama": 0.042,
+   "lembranca_em_1000": 0.1599,
+   "na_simulacao": false,
+   "criativa": false,
    "estimada": false,
+   "acima": 0.9986,
    "conhecem_pct": null,
    "visitas_pt_12m": 5256,
-   "tendencia": null
+   "fama_antiga": 0.0839
   }
  }
 }
