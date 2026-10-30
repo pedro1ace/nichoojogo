@@ -92,12 +92,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Novelas brasileiras | Cite uma novela brasileira | 677 |
-| 2 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1098 |
+| 2 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1101 |
 | 3 | Constelações | Cite uma das 88 constelações oficiais | 88 |
 | 4 | Raças de cachorro | Cite uma raça de cachorro | 1062 |
-| 5 | Capitais do mundo | Cite a capital de um país | 204 |
+| 5 | Capitais do mundo | Cite a capital de um país | 205 |
 | 6 | Times de futebol do Brasil | Cite um time de futebol brasileiro | 1216 |
-| 7 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2429 |
+| 7 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2430 |
 
 ## Dia 9 · qui 05/11/2026
 
