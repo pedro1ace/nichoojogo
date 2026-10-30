@@ -22,11 +22,19 @@ JOGO = RAIZ / "jogo"
 # (icf, visitas, fama...) ficam em dados/pesos/ e deixariam o dados.js com o dobro do tamanho.
 # "acima" (só nas categorias com simulação de jogadores, scripts/fama.py): a parte dos jogadores
 # que daria uma resposta mais óbvia que esta. É o "melhor que X% dos jogadores" do diário de bordo.
+# "l" (idem): quantos em 1000 jogadores simulados dariam a resposta. É o chute de partida que o jogo
+# mistura com a contagem real do dia (/api/respostas) para dar os pontos ao vivo.
 CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos", "acima")
 
 
 def enxugar(cat: dict) -> dict:
-    return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA if k in r} for r in cat["respostas"]]}
+    respostas = []
+    for r in cat["respostas"]:
+        e = {k: r[k] for k in CAMPOS_RESPOSTA if k in r}
+        if cat.get("metodo") == "simulacao" and isinstance(r.get("lembranca"), (int, float)):
+            e["l"] = round(r["lembranca"], 3)
+        respostas.append(e)
+    return {**cat, "respostas": respostas}
 
 
 ORDEM = RAIZ / "dados" / "ordem.txt"

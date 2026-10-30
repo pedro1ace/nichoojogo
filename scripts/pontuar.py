@@ -349,6 +349,7 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
         r["pontos"] = na_regua(i, n, faixas)
         r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
     if metodo_da_fama(cat["id"]) == "simulacao":
+        cat["metodo"] = "simulacao"
         # régua fixa: óbvia, comum e incomum pela contagem; a cauda (rara) se espalha de 60 a 90
         # na ordem da fama, como antes
         raras = []

@@ -44,11 +44,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Palavras astro e cosmo | Cite uma palavra que comece com "astro" ou "cosmo" | 111 |
-| 2 | Coisas da cozinha | Cite um objeto ou eletrodoméstico que tem numa cozinha | 1003 |
+| 2 | Coisas da cozinha | Cite um objeto ou eletrodoméstico que tem numa cozinha | 1006 |
 | 3 | Cidades do Brasil | Cite uma cidade brasileira | 5289 |
 | 4 | Coisas que voam | Cite algo que voa (bicho, máquina ou coisa) | 1127 |
-| 5 | Queijos | Cite um tipo de queijo | 1788 |
-| 6 | Missões espaciais | Cite uma missão espacial | 1020 |
+| 5 | Queijos | Cite um tipo de queijo | 1790 |
+| 6 | Missões espaciais | Cite uma missão espacial | 1030 |
 | 7 | Ossos do corpo | Cite um osso do corpo humano | 82 |
 
 ## Dia 5 · dom 01/11/2026
@@ -58,10 +58,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Corpos do Sistema Solar | Cite um planeta, lua, planeta anão, asteroide ou cometa do Sistema Solar | 4306 |
 | 2 | Países acima da linha do Equador | Cite um país que tem território ao norte da linha do Equador | 186 |
 | 3 | Turma da Mônica | Cite um personagem dos quadrinhos do Mauricio de Sousa | 62 |
-| 4 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 680 |
+| 4 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
 | 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1689 |
 | 6 | Frutas | Cite uma fruta | 1074 |
-| 7 | Peixes | Cite um peixe | 1012 |
+| 7 | Peixes | Cite um peixe | 1013 |
 
 ## Dia 6 · seg 02/11/2026
 

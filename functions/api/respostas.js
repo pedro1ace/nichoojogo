@@ -1,0 +1,98 @@
+// Contagem das respostas do dia (Cloudflare Pages Function, em /api/respostas).
+//
+// É daqui que sai a fama de verdade: quantos jogadores de hoje deram cada resposta.
+// O jogo mistura essa contagem com o chute de partida da simulação (scripts/fama.py)
+// e, com umas 100 pessoas, a contagem real já manda nos pontos.
+//
+// Guarda só o dia, a categoria e a resposta. Nada de IP, nome ou cookie.
+// As respostas que a lista recusou também são contadas (em "recusadas"), para entrarem
+// na fila de revisão (scripts/fila.py): é assim que a lista se completa sozinha.
+//
+//   GET  /api/respostas?dia=2026-10-30                        contagem das categorias do dia
+//   GET  /api/respostas?dia=2026-10-30&recusadas=1            o que foi recusado no dia
+//   POST /api/respostas {dia, categoria, resposta}            soma uma resposta aceita
+//   POST /api/respostas {dia, categoria, recusada}            soma uma resposta recusada
+//
+// Precisa do banco D1 da curva (DB), com as tabelas de banco/schema.sql.
+
+const json = (corpo, status = 200) =>
+  new Response(JSON.stringify(corpo), {
+    status,
+    headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
+  });
+
+// O jogo usa a data local do jogador, então aceita de ontem a amanhã em UTC.
+function diaValido(dia) {
+  if (typeof dia !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(dia)) return false;
+  const t = Date.parse(dia + "T00:00:00Z");
+  if (Number.isNaN(t)) return false;
+  const hoje = Date.parse(new Date().toISOString().slice(0, 10) + "T00:00:00Z");
+  return Math.abs(t - hoje) <= 86400000;
+}
+
+const textoValido = (t, max) => typeof t === "string" && t.trim().length > 0 && t.length <= max;
+const categoriaValida = (c) => typeof c === "string" && /^[a-z0-9-]{1,60}$/.test(c);
+
+// Recusada vai normalizada (minúsculas, sem acento, espaços simples), para "Setembro" e "setembro" somarem juntas.
+const normalizar = (t) =>
+  t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+async function contagem(db, dia) {
+  const { results } = await db
+    .prepare("SELECT categoria, resposta, n FROM respostas WHERE dia = ?")
+    .bind(dia)
+    .all();
+  const categorias = {};
+  for (const r of results) {
+    const c = (categorias[r.categoria] ||= { total: 0, contagem: {} });
+    c.contagem[r.resposta] = r.n;
+    c.total += r.n;
+  }
+  return { dia, categorias };
+}
+
+export async function onRequestGet({ request, env }) {
+  const url = new URL(request.url);
+  const dia = url.searchParams.get("dia");
+  if (!diaValido(dia)) return json({ erro: "dia inválido" }, 400);
+  if (url.searchParams.has("recusadas")) {
+    const { results } = await env.DB.prepare(
+      "SELECT categoria, texto, n FROM recusadas WHERE dia = ? ORDER BY n DESC LIMIT 2000",
+    )
+      .bind(dia)
+      .all();
+    return json({ dia, recusadas: results });
+  }
+  return json(await contagem(env.DB, dia));
+}
+
+export async function onRequestPost({ request, env }) {
+  let corpo;
+  try {
+    corpo = await request.json();
+  } catch {
+    return json({ erro: "corpo inválido" }, 400);
+  }
+  const { dia, categoria, resposta, recusada } = corpo || {};
+  if (!diaValido(dia)) return json({ erro: "dia inválido" }, 400);
+  if (!categoriaValida(categoria)) return json({ erro: "categoria inválida" }, 400);
+  if (textoValido(resposta, 120)) {
+    await env.DB.prepare(
+      "INSERT INTO respostas (dia, categoria, resposta, n) VALUES (?, ?, ?, 1) " +
+        "ON CONFLICT (dia, categoria, resposta) DO UPDATE SET n = n + 1",
+    )
+      .bind(dia, categoria, resposta.trim())
+      .run();
+    return json({ ok: true });
+  }
+  if (textoValido(recusada, 60) && normalizar(recusada).length >= 2) {
+    await env.DB.prepare(
+      "INSERT INTO recusadas (dia, categoria, texto, n) VALUES (?, ?, ?, 1) " +
+        "ON CONFLICT (dia, categoria, texto) DO UPDATE SET n = n + 1",
+    )
+      .bind(dia, categoria, normalizar(recusada))
+      .run();
+    return json({ ok: true });
+  }
+  return json({ erro: "resposta inválida" }, 400);
+}

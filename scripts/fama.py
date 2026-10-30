@@ -120,12 +120,24 @@ def singular(palavra: str) -> str:
     return palavra
 
 
+# Palavra genérica no começo do nome da lista que o jogador costuma pular ("Queijo minas" -> "minas").
+PREFIXOS = ("queijo de ", "queijo ", "cao de ", "cao ", "programa ", "missao ", "raca ", "jogo de ", "jogo ")
+
+
 def indice(cat: dict) -> dict[str, str]:
     idx: dict[str, str] = {}
     for r in cat["respostas"]:
         for nome in [r["resposta"], *r["apelidos"]]:
             for v in variantes(nome):
                 idx.setdefault(v, r["resposta"])
+    for r in cat["respostas"]:
+        for nome in [r["resposta"], *r["apelidos"]]:
+            t = normalizar(nome)
+            for pre in PREFIXOS:
+                if t.startswith(pre) and len(t) - len(pre) >= 4:
+                    for v in variantes(t[len(pre):]):
+                        idx.setdefault(v, r["resposta"])
+                    break
     # o nome principal vence o apelido de outra resposta
     for r in cat["respostas"]:
         idx[normalizar(r["resposta"])] = r["resposta"]
@@ -154,6 +166,9 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
         if alvo is None:
             faltando.append({"categoria": cat["id"], "resposta": it["alvo"] or it["dito"], "em_1000": it["n"]})
             continue
+        if it["alvo"] and casar(it["dito"], idx) is None:
+            # o jogador digitaria "dito", e o jogo não aceitaria: falta o apelido
+            faltando.append({"categoria": cat["id"], "resposta": it["dito"], "em_1000": it["n"], "apelido_de": alvo})
         contagem[alvo] = contagem.get(alvo, 0.0) + it["n"]
     soma_simulada = sum(it["n"] for it in sim["itens"])
     # Em 1000 pessoas sempre sobra uma cauda de respostas que só uma pessoa dá. Se a simulação
@@ -269,14 +284,20 @@ def simular(cat: dict) -> None:
 
 
 def completar(cat_id: str, faltando: list[dict]) -> int:
+    """Respostas novas vão para o fim da lista; apelidos novos, para a linha da resposta."""
     arq = CATEGORIAS / f"{cat_id}.txt"
-    texto = arq.read_text(encoding="utf-8").rstrip("\n")
-    novas = [f["resposta"] for f in faltando]
-    if not novas:
-        return 0
-    texto += "\n# entraram pela simulação de jogadores (scripts/fama.py --completar)\n" + "\n".join(novas) + "\n"
-    arq.write_text(texto, encoding="utf-8")
-    return len(novas)
+    linhas = arq.read_text(encoding="utf-8").rstrip("\n").split("\n")
+    apelidos = [f for f in faltando if f.get("apelido_de")]
+    for f in apelidos:
+        for i, linha in enumerate(linhas):
+            if not linha.startswith("#") and linha.split("|")[0].strip() == f["apelido_de"]:
+                linhas[i] = linha.rstrip() + " | " + f["resposta"]
+                break
+    novas = [f["resposta"] for f in faltando if not f.get("apelido_de")]
+    if novas:
+        linhas += ["# entraram pela simulação de jogadores (scripts/fama.py --completar)", *novas]
+    arq.write_text("\n".join(linhas) + "\n", encoding="utf-8")
+    return len(faltando)
 
 
 # ---------- trava ----------
@@ -357,7 +378,7 @@ def main() -> None:
         print(f"{cat_id}: {fama['na_simulacao']} respostas na simulação, cauda de {fama['massa_da_cauda']:.0f} em 1000{aviso}")
 
     REVISAO.mkdir(parents=True, exist_ok=True)
-    for nome, linhas, campos in (("faltando.csv", todas_faltando, ["categoria", "resposta", "em_1000"]),
+    for nome, linhas, campos in (("faltando.csv", todas_faltando, ["categoria", "resposta", "em_1000", "apelido_de"]),
                                  ("suspeitas.csv", todas_suspeitas, ["categoria", "resposta", "estimativa_antiga"])):
         with (REVISAO / nome).open("w", encoding="utf-8", newline="") as f:
             w = csv.DictWriter(f, fieldnames=campos)
