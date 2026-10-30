@@ -174,9 +174,9 @@
             <svg class="pixel-logo" viewBox="0 0 10 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="#5a0f2e" d="M2 1h1v1h-1zM3 1h1v1h-1zM7 1h1v1h-1zM8 1h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM9 2h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM8 3h1v1h-1zM9 3h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM8 4h1v1h-1zM9 4h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM8 5h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM5 8h1v1h-1z"/><path fill="#ff4f8b" d="M1 0h1v1h-1zM2 0h1v1h-1zM6 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM8 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM8 3h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM4 7h1v1h-1z"/><path fill="#ffc2d6" d="M1 1h1v1h-1zM1 2h1v1h-1z"/></svg>
             <span class="caixa-texto">
               <span class="caixa-titulo">APOIE O CRIADOR</span>
-              <span class="caixa-sub">Curtiu a incursão? Ajude a manter o Nicho no ar.</span>
+              <span id="apoio-sub" class="caixa-sub">Curtiu a incursão? Ajude a manter o Nicho no ar e libere a skin Laika.</span>
             </span>
-            <a id="apoio-link" class="botao-escuro" href="#" target="_blank" rel="noopener" aria-disabled="true">EM BREVE</a>
+            <button id="apoio-link" type="button" class="botao-rosa" aria-haspopup="dialog">APOIAR</button>
           </div>
         </div>
         <p class="links-fim"><a class="link-privacidade" href="../privacidade.html">privacidade</a> · <a class="link-privacidade" href="../termos.html">termos</a> · <a class="link-privacidade" href="../creditos.html">créditos</a></p>
@@ -224,9 +224,80 @@
       </button>
     </div>
   </dialog>
+  <!-- apoio ao criador: Pix pelo Mercado Pago, libera a skin Laika quando confirmado -->
+  <dialog id="janela-apoio" class="janela-menu" aria-labelledby="titulo-apoio">
+    <div class="janela-topo">
+      <p id="titulo-apoio" class="rotulo">APOIE O CRIADOR</p>
+      <button type="button" class="fechar" aria-label="Fechar">X</button>
+    </div>
+    <div class="apoio-corpo">
+      <div id="apoio-etapa-valor" class="apoio-etapa">
+        <div class="apoio-vitrine">
+          <canvas id="apoio-mascote" width="28" height="16" aria-hidden="true"></canvas>
+          <div class="apoio-vitrine-texto">
+            <span class="apoio-selo">SKIN EXCLUSIVA · LAIKA</span>
+            <p>Qualquer Pix ajuda a manter o Nicho no ar e libera a cachorrinha cosmonauta na hora.</p>
+          </div>
+        </div>
+        <div id="apoio-ja-liberada" class="apoio-ja-liberada" hidden>
+          <span>♥ Laika já liberada neste aparelho</span>
+          <div id="apoio-salvo-bloco" class="apoio-codigo-linha" hidden>
+            <code id="apoio-codigo-salvo"></code>
+            <button id="apoio-copiar-salvo" type="button" class="botao-escuro">COPIAR</button>
+          </div>
+        </div>
+        <div class="apoio-valores" role="radiogroup" aria-label="Valor do apoio">
+          <button type="button" class="apoio-pilula" role="radio" aria-checked="false" data-valor="5">R$ 5</button>
+          <button type="button" class="apoio-pilula escolhida" role="radio" aria-checked="true" data-valor="10">R$ 10</button>
+          <button type="button" class="apoio-pilula" role="radio" aria-checked="false" data-valor="20">R$ 20</button>
+          <button type="button" class="apoio-pilula" role="radio" aria-checked="false" data-valor="outro">OUTRO</button>
+        </div>
+        <label id="apoio-outro-linha" class="apoio-outro" hidden>
+          <span>R$</span>
+          <input id="apoio-valor" type="number" min="2" max="1000" step="1" inputmode="decimal" placeholder="mínimo 2">
+        </label>
+        <button id="apoio-gerar" type="button" class="botao-rosa apoio-acao">GERAR PIX · R$ 10</button>
+        <p id="apoio-erro" class="apoio-erro" role="alert" hidden></p>
+        <div class="apoio-resgate">
+          <button id="apoio-abrir-codigo" type="button" class="apoio-link-texto" aria-expanded="false">Já apoiou em outro aparelho? Usar código</button>
+          <form id="apoio-form-codigo" class="apoio-form-codigo" autocomplete="off" hidden>
+            <input id="apoio-input-codigo" type="text" maxlength="20" placeholder="NICHO-XXXX-XXXX" aria-label="Código de apoiador" autocapitalize="characters" spellcheck="false">
+            <button id="apoio-validar-codigo" type="submit" class="botao-escuro">LIBERAR</button>
+          </form>
+        </div>
+      </div>
+      <div id="apoio-etapa-pix" class="apoio-etapa" hidden>
+        <div class="apoio-pix-topo">
+          <span id="apoio-pix-valor" class="apoio-pix-valor">PIX · R$ 10,00</span>
+          <button id="apoio-voltar" type="button" class="apoio-link-texto">← trocar valor</button>
+        </div>
+        <div id="apoio-qr-caixa" class="apoio-qr-caixa">
+          <img id="apoio-qr" alt="QR Code Pix para pagamento">
+        </div>
+        <button id="apoio-copiar-pix" type="button" class="botao-rosa apoio-acao">COPIAR PIX COPIA E COLA</button>
+        <input id="apoio-copia-cola" class="apoio-copia-cola" type="text" readonly aria-label="Código Pix copia e cola">
+        <p id="apoio-aguardando" class="apoio-status" role="status"><i></i><span>Aguardando confirmação do Pix…</span></p>
+      </div>
+      <div id="apoio-etapa-pago" class="apoio-etapa apoio-festa" hidden>
+        <canvas id="apoio-mascote-pago" width="28" height="16" aria-hidden="true"></canvas>
+        <p class="apoio-festa-titulo">OBRIGADO PELO APOIO! ♥</p>
+        <p class="apoio-festa-sub">A skin <b>LAIKA</b> foi liberada e equipada.</p>
+        <div id="apoio-caixa-codigo" class="apoio-caixa-codigo">
+          <span class="rotulo">SEU CÓDIGO DE APOIADOR</span>
+          <div class="apoio-codigo-linha">
+            <code id="apoio-codigo-novo"></code>
+            <button id="apoio-copiar-novo" type="button" class="botao-escuro">COPIAR</button>
+          </div>
+          <p>Guarde este código para liberar a Laika em outro celular ou computador.</p>
+        </div>
+        <button id="apoio-fechar-pago" type="button" class="botao-rosa apoio-acao">CONTINUAR</button>
+      </div>
+    </div>
+  </dialog>
   <script src="som.js"></script>
   <script src="mascote.js"></script>
   <script src="alien.js"></script>
+  <script src="apoiador.js"></script>
   <script src="transicao.js"></script>
   <script src="naves.js"></script>
   <script src="cena.js"></script>

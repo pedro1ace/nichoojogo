@@ -91,3 +91,16 @@ CREATE TABLE IF NOT EXISTS resumo_dias (
 --   PRIMARY KEY (conta, dia)
 -- );
 -- CREATE INDEX IF NOT EXISTS placar ON viagens (dia, no_dia, pontos DESC);
+
+-- Apoios via Pix (functions/api/apoio/).
+-- Guarda só o identificador do pedido, o id do pagamento no Mercado Pago, o valor em centavos,
+-- o status e o código que libera a skin de apoiador em outros aparelhos. Sem nome, CPF ou IP.
+CREATE TABLE IF NOT EXISTS apoios (
+  id        TEXT    PRIMARY KEY,
+  mp_id     TEXT    UNIQUE,
+  centavos  INTEGER NOT NULL,
+  status    TEXT    NOT NULL DEFAULT 'pending',
+  codigo    TEXT    NOT NULL UNIQUE,
+  criado_em TEXT    NOT NULL,
+  pago_em   TEXT
+);
