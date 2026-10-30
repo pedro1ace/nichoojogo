@@ -736,7 +736,9 @@ function mostrarResultado(cat, resposta, pontos, supernova, espertalhao) {
   $("linha-pontos").innerHTML = resposta
     ? `<b>+${pontos} PONTOS</b> · viajou ${numero(Math.round(viagem(pontos) * AL_POR_U))} AL`
     : "+0 PONTOS";
-  $("frase").textContent = faixa.frase;
+  // algumas respostas têm frase própria (dados/frases.txt), no lugar da frase da faixa
+  const propria = resposta && !supernova && (cat.respostas || []).find((r) => r.resposta === resposta)?.frase;
+  $("frase").textContent = propria || faixa.frase;
 
   // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
   const nivel = !resposta ? 0 : supernova ? 4 : ["obvia", "comum", "incomum", "rara", "lendaria"].indexOf(faixa.id);

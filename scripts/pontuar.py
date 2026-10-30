@@ -266,6 +266,24 @@ def na_regua(i: int, n: int, faixas: list[int] | None = None) -> int:
     return REGUA[-1][4]
 
 
+FRASES = RAIZ / "dados" / "frases.txt"
+
+
+def frases_de(cat_id: str) -> dict[str, str]:
+    """Frase própria de uma resposta, no lugar da frase da faixa (dados/frases.txt:
+    "categoria | resposta | frase")."""
+    if not FRASES.exists():
+        return {}
+    saida = {}
+    for linha in FRASES.read_text(encoding="utf-8").splitlines():
+        if not linha.strip() or linha.startswith("#"):
+            continue
+        partes = [p.strip() for p in linha.split("|", 2)]
+        if len(partes) == 3 and partes[0] == cat_id:
+            saida[partes[1]] = partes[2]
+    return saida
+
+
 def fora_do_jogo() -> set[str]:
     if not FORA_DO_JOGO.exists():
         return set()
@@ -395,8 +413,13 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
     supernova["pontos"] = SUPERNOVA_PONTOS
     supernova["peso"] = round((SUPERNOVA_PONTOS / 100) ** (1 / CURVA), 3)
     respostas.sort(key=lambda r: (r["pontos"], r["resposta"]))
+    frases = frases_de(cat["id"])
     for r in respostas:
         del r["supernova_manual"]
+        if r["resposta"] in frases:
+            r["frase"] = frases.pop(r["resposta"])
+    for nome in frases:
+        print(f"AVISO: {cat['id']}: dados/frases.txt tem frase para {nome!r}, que não está na lista")
     return cat
 
 
