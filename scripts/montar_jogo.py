@@ -20,11 +20,13 @@ JOGO = RAIZ / "jogo"
 
 # O jogo só lê o nome, os apelidos e os pontos de cada resposta. Os sinais da conta
 # (icf, visitas, fama...) ficam em dados/pesos/ e deixariam o dados.js com o dobro do tamanho.
-CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos")
+# "acima" (só nas categorias com simulação de jogadores, scripts/fama.py): a parte dos jogadores
+# que daria uma resposta mais óbvia que esta. É o "melhor que X% dos jogadores" do diário de bordo.
+CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos", "acima")
 
 
 def enxugar(cat: dict) -> dict:
-    return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA} for r in cat["respostas"]]}
+    return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA if k in r} for r in cat["respostas"]]}
 
 
 ORDEM = RAIZ / "dados" / "ordem.txt"

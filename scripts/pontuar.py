@@ -53,6 +53,7 @@ from __future__ import annotations
 
 import csv
 import json
+import math
 import sys
 import unicodedata
 from pathlib import Path
@@ -181,6 +182,33 @@ def ler_fama(cat_id: str) -> dict[str, dict]:
     if not caminho.exists():
         return {}
     return json.loads(caminho.read_text(encoding="utf-8")).get("respostas", {})
+
+
+def metodo_da_fama(cat_id: str) -> str:
+    caminho = SINAIS_FAMA / f"{cat_id}.json"
+    if not caminho.exists():
+        return ""
+    return json.loads(caminho.read_text(encoding="utf-8")).get("metodo", "agente")
+
+
+# Régua fixa da simulação (scripts/fama.py): os pontos saem de "quantos em 1000 jogadores dariam
+# esta resposta", e não da posição na lista. Assim 20 pontos querem dizer a mesma coisa em toda
+# categoria. (de quantos em 1000, até quantos, pontos no "de", pontos no "até"), em escala log.
+REGUA_FIXA = [
+    (150.0, 15.0, 8, 15),   # óbvia: 15 ou mais em 1000
+    (15.0, 4.0, 18, 34),    # comum: de 4 a 15
+    (4.0, 1.0, 35, 58),     # incomum: de 1 a 4
+]
+RARA = (60, 90)  # menos de 1 em 1000: os pontos sobem pela ordem da cauda
+
+
+def pontos_fixos(lembra: float) -> int | None:
+    """Pontos pela régua fixa, ou None se é rara (menos de 1 em 1000)."""
+    for de, ate, p_de, p_ate in REGUA_FIXA:
+        if lembra >= ate:
+            k = (math.log(min(lembra, de)) - math.log(de)) / (math.log(ate) - math.log(de))
+            return round(p_de + (p_ate - p_de) * max(0.0, min(1.0, k)))
+    return None
 
 
 def percentis(valores: list[float]) -> list[float]:
@@ -320,6 +348,24 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
     for i, r in enumerate(ordenadas):
         r["pontos"] = na_regua(i, n, faixas)
         r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
+    if metodo_da_fama(cat["id"]) == "simulacao":
+        # régua fixa: óbvia, comum e incomum pela contagem; a cauda (rara) se espalha de 60 a 90
+        # na ordem da fama, como antes
+        raras = []
+        for r in ordenadas:
+            medida = fama_agente.get(r["resposta"]) or {}
+            r["lembranca"] = medida.get("lembranca_em_1000", 0.0)
+            r["acima"] = medida.get("acima", 0.0)
+            p = pontos_fixos(r["lembranca"])
+            if p is None:
+                raras.append(r)
+            else:
+                r["pontos"] = p
+        for i, r in enumerate(raras):
+            k = i / (len(raras) - 1) if len(raras) > 1 else 0.5
+            r["pontos"] = round(RARA[0] + (RARA[1] - RARA[0]) * k)
+        for r in ordenadas:
+            r["peso"] = round((r["pontos"] / 100) ** (1 / CURVA), 3)
 
     marcadas = [r for r in respostas if r["supernova_manual"]]
     if cat["fonte_peso"] == "agente":

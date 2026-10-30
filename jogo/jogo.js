@@ -695,7 +695,11 @@ function palpitar(evento) {
   const achada = busca.resposta;
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
-  const percentil = cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
+  // "acima" vem da simulação de jogadores (scripts/fama.py): a parte dos jogadores que daria uma
+  // resposta mais óbvia. Sem ela, a conta antiga: a parte da lista que vale menos pontos.
+  const percentil = typeof achada.acima === "number"
+    ? achada.acima
+    : cat.respostas.filter((r) => r.pontos < achada.pontos).length / cat.respostas.length;
   mostrarPergunta(false);
   cena.descer(achada.resposta, pontos, supernova);
   Som.descer(Math.min(1, pontos / 100));
@@ -803,7 +807,7 @@ function mostrarFim(comSom) {
   const marco = ultimoMarco();
   $("fim-profundidade").textContent = `↓ ${numero(anosLuzDoDia())} AL de profundidade` + (marco ? ` · além de ${marco.nome.toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase())}` : "");
   const media = estado.historico.reduce((s, h) => s + (h.percentil || 0), 0) / Math.max(1, estado.historico.length);
-  $("fim-comparacao").textContent = `Suas respostas foram mais nichadas que ${Math.round(media * 100)}% das respostas possíveis.`;
+  $("fim-comparacao").textContent = `Em média, suas respostas foram mais nichadas que as de ${Math.min(99, Math.round(media * 100))}% dos jogadores.`;
   montarGrafico();
   mostrarCurva();
   montarFaixas();
@@ -1073,7 +1077,7 @@ function montarRespostas() {
       ? ""
       : h.supernova
         ? "Singularidade! A resposta escondida desta pergunta."
-        : `${faixa.nome[0]}${faixa.nome.slice(1).toLowerCase()} · mais rara que ${Math.round((h.percentil || 0) * 100)}% das respostas`;
+        : `${faixa.nome[0]}${faixa.nome.slice(1).toLowerCase()} · mais nichada que ${Math.min(99, Math.round((h.percentil || 0) * 100))}% dos jogadores`;
     const seta = document.createElement("span");
     seta.className = "seta";
     seta.textContent = "▾";
