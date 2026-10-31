@@ -1,5 +1,5 @@
 resposta,apelidos,icf,sem_dado,lembranca,conhecem,visitas,percentil,fama,peso,pontos,ajustado
-Banana,banana-prata | banana-nanica | banana-maçã | banana-da-terra | banana-ouro,10.943,False,160.0,100.0,47202,0.0,0.0,0.283,8,True
+Banana,banana-prata | banana-nanica | banana-maçã | banana-ouro,10.943,False,160.0,100.0,47202,0.0,0.0,0.283,8,True
 Maçã,maçã gala | maçã fuji | maçã verde,11.175,False,150.0,100.0,37974,0.001,0.001,0.283,8,True
 Laranja,laranja-pera | laranja-lima | laranja-bahia | laranja-da-terra,10.278,False,55.0,100.0,31422,0.003,0.003,0.332,11,True
 Morango,,11.614,False,60.0,100.0,29280,0.002,0.002,0.332,11,True
@@ -81,7 +81,7 @@ Amêndoa,,12.846,False,0.27,45.0,14316,0.075,0.075,0.781,61,True
 Banana São Tomé,,9.507,False,0.27,50.0,0,0.084,0.084,0.781,61,True
 Banana ouro-da-mata,,9.995,False,0.27,50.0,0,0.1,0.1,0.781,61,True
 Banana-passa,,9.839,False,0.27,50.0,0,0.096,0.096,0.781,61,True
-Banana-terra,,9.603,False,0.27,50.0,0,0.088,0.088,0.781,61,True
+Banana-terra,banana-da-terra,9.603,False,0.27,50.0,0,0.088,0.088,0.781,61,True
 Castanha-do-pará,castanha-do-brasil,11.172,False,0.27,55.0,17364,0.072,0.072,0.781,61,True
 Coco-do-mar,coco-de-mer,9.661,False,0.27,50.0,0,0.091,0.091,0.781,61,True
 Cranberry,oxicoco | Airela,17.162,False,0.27,65.0,15186,0.071,0.071,0.781,61,True
@@ -105,13 +105,13 @@ Morango oso grande,,9.301,False,0.27,50.0,0,0.082,0.082,0.781,61,True
 Noz,,12.61,False,0.27,50.0,14556,0.073,0.073,0.781,61,True
 Pepino,,12.563,False,0.27,35.0,17838,0.079,0.079,0.781,61,True
 Pêssego em calda,,9.624,False,0.27,50.0,0,0.088,0.088,0.781,61,True
-Toranja,grapefruit | pomelo,14.689,False,0.27,60.0,37476,0.075,0.075,0.781,61,True
+Toranja,grapefruit | pomelo,14.689,False,0.27,60.0,37476,0.076,0.076,0.781,61,True
 Uva Brasil,,9.154,False,0.27,50.0,0,0.081,0.081,0.781,61,True
 Uva sem semente,,9.652,False,0.27,50.0,0,0.091,0.091,0.781,61,True
 Uva-passa-branca,,9.883,False,0.27,50.0,0,0.096,0.096,0.781,61,True
 Uva-passa-preta,,9.988,False,0.27,50.0,0,0.1,0.1,0.781,61,True
 Abacaxi vitória,,10.442,False,0.27,50.0,0,0.114,0.114,0.787,62,True
-Ameixa santa rosa,,10.116,False,0.27,50.0,0,0.103,0.103,0.787,62,True
+Ameixa santa rosa,,10.116,False,0.27,50.0,0,0.104,0.104,0.787,62,True
 Araçá-boi-grande,,10.856,False,0.27,50.0,0,0.137,0.137,0.787,62,True
 Açaí branco,,10.652,False,0.27,50.0,0,0.126,0.126,0.787,62,True
 Banana Blue Java,,10.886,False,0.27,50.0,0,0.137,0.137,0.787,62,True
@@ -130,9 +130,9 @@ Goji berry seco,,10.419,False,0.27,50.0,0,0.114,0.114,0.787,62,True
 Laranja hamlin,,10.278,False,0.27,50.0,0,0.109,0.109,0.787,62,True
 Laranja navelina,,10.278,False,0.27,50.0,0,0.109,0.109,0.787,62,True
 Limão meyer,,10.602,False,0.27,50.0,0,0.121,0.121,0.787,62,True
-Manga coração-de-boi,,10.111,False,0.27,50.0,0,0.103,0.103,0.787,62,True
+Manga coração-de-boi,,10.111,False,0.27,50.0,0,0.104,0.104,0.787,62,True
 Maçã Argentina,,10.603,False,0.27,50.0,0,0.121,0.121,0.787,62,True
-Morango camino real,,10.142,False,0.27,50.0,0,0.103,0.103,0.787,62,True
+Morango camino real,,10.142,False,0.27,50.0,0,0.104,0.104,0.787,62,True
 Pêssego branco,,10.719,False,0.27,50.0,0,0.126,0.126,0.787,62,True
 Siriguela-vermelha,,10.223,False,0.27,50.0,0,0.109,0.109,0.787,62,True
 Tangerina nova,,10.398,False,0.27,50.0,0,0.114,0.114,0.787,62,True
@@ -144,7 +144,7 @@ Uva-de-vinho,,10.543,False,0.27,50.0,0,0.121,0.121,0.787,62,True
 Uva-do-japão,hovênia,10.719,False,0.27,50.0,0,0.126,0.126,0.787,62,True
 Uva-preta,,10.615,False,0.27,50.0,0,0.126,0.126,0.787,62,True
 Uva-verde,,10.167,False,0.27,50.0,0,0.106,0.106,0.787,62,True
-Ananás-de-cerca,,11.112,False,0.2515,50.0,0,0.162,0.162,0.794,63,True
+Ananás-de-cerca,,11.112,False,0.2516,50.0,0,0.162,0.162,0.794,63,True
 Azeitona-verde,,10.9,False,0.27,50.0,0,0.145,0.145,0.794,63,True
 Banana Cavendish,,10.943,False,0.27,50.0,0,0.153,0.153,0.794,63,True
 Banana Grand Naine,,10.943,False,0.27,50.0,0,0.153,0.153,0.794,63,True
@@ -154,46 +154,46 @@ Banana pacovan,,10.943,False,0.27,50.0,0,0.153,0.153,0.794,63,True
 Banana-mysore,,10.943,False,0.27,50.0,0,0.153,0.153,0.794,63,True
 Banana-sapo,,10.932,False,0.27,50.0,0,0.153,0.153,0.794,63,True
 Banana-thap-maeo,,10.943,False,0.27,50.0,0,0.153,0.153,0.794,63,True
-Caqui-coração-de-boi,,11.135,False,0.2447,50.0,0,0.164,0.164,0.794,63,True
+Caqui-coração-de-boi,,11.135,False,0.2448,50.0,0,0.165,0.165,0.794,63,True
 Figo branco,,10.838,False,0.27,50.0,0,0.137,0.137,0.794,63,True
-Figo verde,,10.944,False,0.2689,50.0,0,0.153,0.153,0.794,63,True
+Figo verde,,10.944,False,0.269,50.0,0,0.153,0.153,0.794,63,True
 Figo-preto,,10.938,False,0.27,50.0,0,0.153,0.153,0.794,63,True
 Manga Alphonso,,10.787,False,0.27,50.0,0,0.137,0.137,0.794,63,True
 Manga Ataulfo,,10.787,False,0.27,50.0,0,0.137,0.137,0.794,63,True
-Manga Imperial,,11.121,False,0.2469,50.0,0,0.162,0.162,0.794,63,True
+Manga Imperial,,11.121,False,0.247,50.0,0,0.162,0.162,0.794,63,True
 Manga Keitt,,10.787,False,0.27,50.0,0,0.137,0.137,0.794,63,True
 Manga Kent,,10.787,False,0.27,50.0,0,0.137,0.137,0.794,63,True
 Manga Kesar,,10.787,False,0.27,50.0,0,0.137,0.137,0.794,63,True
 Manga Langra,,10.787,False,0.27,50.0,0,0.137,0.137,0.794,63,True
 Manga Tommy Atkins,,10.787,False,0.27,50.0,0,0.137,0.137,0.794,63,True
 Maçã Eva,,10.987,False,0.2612,50.0,0,0.153,0.153,0.794,63,True
-Maçã Jazz,,11.092,False,0.2492,50.0,0,0.162,0.162,0.794,63,True
+Maçã Jazz,,11.092,False,0.2493,50.0,0,0.162,0.162,0.794,63,True
 Maçã Red Delicious,,10.844,False,0.27,50.0,0,0.137,0.137,0.794,63,True
 Melancia mini,,10.886,False,0.27,50.0,0,0.137,0.137,0.794,63,True
-Melão net,,10.942,False,0.2663,50.0,0,0.153,0.153,0.794,63,True
+Melão net,,10.942,False,0.2664,50.0,0,0.153,0.153,0.794,63,True
 Melão pele-de-sapo,,10.845,False,0.27,50.0,0,0.137,0.137,0.794,63,True
-Mexerica-do-rio,,11.159,False,0.2425,50.0,0,0.164,0.164,0.794,63,True
+Mexerica-do-rio,,11.159,False,0.2426,50.0,0,0.165,0.165,0.794,63,True
 Morango gigante,,11.078,False,0.2539,50.0,0,0.162,0.162,0.794,63,True
 Pera portuguesa,,10.973,False,0.2587,50.0,0,0.153,0.153,0.794,63,True
 Siriguela-amarela,,10.898,False,0.27,50.0,0,0.145,0.145,0.794,63,True
 Uva Isabel,,11.035,False,0.2563,50.0,0,0.153,0.153,0.794,63,True
-Uva Red Globe,,10.956,False,0.2637,50.0,0,0.153,0.153,0.794,63,True
+Uva Red Globe,,10.956,False,0.2638,50.0,0,0.153,0.153,0.794,63,True
 Ameixa-japonesa vermelha,,11.334,False,0.2012,50.0,0,0.197,0.197,0.8,64,True
-Amora-vermelha,,11.367,False,0.1997,50.0,0,0.197,0.197,0.8,64,True
+Amora-vermelha,,11.367,False,0.1998,50.0,0,0.197,0.197,0.8,64,True
 Araçá-do-campo,,11.382,False,0.1983,50.0,0,0.197,0.197,0.8,64,True
-Açaí-do-pará,,11.445,False,0.1752,50.0,0,0.197,0.197,0.8,64,True
-Caju amarelo,,11.254,False,0.2122,50.0,0,0.175,0.175,0.8,64,True
-Caqui-café,,11.423,False,0.1741,50.0,0,0.197,0.197,0.8,64,True
+Açaí-do-pará,,11.445,False,0.1753,50.0,0,0.197,0.197,0.8,64,True
+Caju amarelo,,11.254,False,0.2123,50.0,0,0.175,0.175,0.8,64,True
+Caqui-café,,11.423,False,0.1742,50.0,0,0.197,0.197,0.8,64,True
 Coco ralado,,11.291,False,0.2106,50.0,0,0.175,0.175,0.8,64,True
-Fruta-pão-de-caroço,,11.275,False,0.2089,50.0,0,0.175,0.175,0.8,64,True
-Goiaba branca,,11.313,False,0.2042,50.0,0,0.185,0.185,0.8,64,True
-Kiwi-vermelho,,11.391,False,0.1968,50.0,0,0.197,0.197,0.8,64,True
+Fruta-pão-de-caroço,,11.275,False,0.209,50.0,0,0.175,0.175,0.8,64,True
+Goiaba branca,,11.313,False,0.2043,50.0,0,0.185,0.185,0.8,64,True
+Kiwi-vermelho,,11.391,False,0.1969,50.0,0,0.197,0.197,0.8,64,True
 Laranja folha-murcha,,11.239,False,0.2156,50.0,0,0.175,0.175,0.8,64,True
 Laranja valência,,11.428,False,0.173,50.0,0,0.197,0.197,0.8,64,True
 Mamão-do-mato,,11.21,False,0.2173,50.0,0,0.175,0.175,0.8,64,True
 Maracujá amarelo,,11.228,False,0.2139,50.0,0,0.175,0.175,0.8,64,True
 Maçã Braeburn,,11.175,False,0.2404,50.0,0,0.175,0.175,0.8,64,True
-Maçã Bravo de Esmolfe,,11.395,False,0.1954,50.0,0,0.197,0.197,0.8,64,True
+Maçã Bravo de Esmolfe,,11.395,False,0.1955,50.0,0,0.197,0.197,0.8,64,True
 Maçã Cortland,,11.175,False,0.2383,50.0,0,0.175,0.175,0.8,64,True
 Maçã Cosmic Crisp,,11.175,False,0.2362,50.0,0,0.175,0.175,0.8,64,True
 Maçã Empire,,11.175,False,0.2342,50.0,0,0.175,0.175,0.8,64,True
@@ -202,153 +202,152 @@ Maçã Golden Delicious,,11.175,False,0.2302,50.0,0,0.175,0.175,0.8,64,True
 Maçã Granny Smith,,11.175,False,0.2283,50.0,0,0.175,0.175,0.8,64,True
 Maçã Honeycrisp,,11.175,False,0.2264,50.0,0,0.175,0.175,0.8,64,True
 Maçã Jonagold,,11.175,False,0.2245,50.0,0,0.175,0.175,0.8,64,True
-Maçã Kanzi,,11.175,False,0.2226,50.0,0,0.175,0.175,0.8,64,True
-Maçã McIntosh,,11.175,False,0.2208,50.0,0,0.175,0.175,0.8,64,True
+Maçã Kanzi,,11.175,False,0.2227,50.0,0,0.175,0.175,0.8,64,True
+Maçã McIntosh,,11.175,False,0.2209,50.0,0,0.175,0.175,0.8,64,True
 Maçã Pink Lady,,11.179,False,0.2191,50.0,0,0.175,0.175,0.8,64,True
-Melancia baby,,11.39,False,0.194,50.0,0,0.197,0.197,0.8,64,True
-Melão espanhol,,11.302,False,0.2027,50.0,0,0.185,0.185,0.8,64,True
-Murici-da-praia,,11.397,False,0.1926,50.0,0,0.197,0.197,0.8,64,True
-Pera rocha,,11.254,False,0.2073,50.0,0,0.175,0.175,0.8,64,True
-Pêssego amarelo,,11.433,False,0.1719,50.0,0,0.197,0.197,0.8,64,True
-Uva Benitaka,,11.398,False,0.1913,50.0,0,0.197,0.197,0.8,64,True
+Melancia baby,,11.39,False,0.1941,50.0,0,0.197,0.197,0.8,64,True
+Melão espanhol,,11.302,False,0.2028,50.0,0,0.185,0.185,0.8,64,True
+Murici-da-praia,,11.397,False,0.1927,50.0,0,0.197,0.197,0.8,64,True
+Pera rocha,,11.254,False,0.2074,50.0,0,0.175,0.175,0.8,64,True
+Pêssego amarelo,,11.433,False,0.172,50.0,0,0.197,0.197,0.8,64,True
 Uva Patrícia,,11.266,False,0.2058,50.0,0,0.175,0.175,0.8,64,True
-Abacate-gigante,,11.557,False,0.1627,50.0,0,0.219,0.219,0.806,65,True
-Abacaxi-roxo,,11.537,False,0.1617,50.0,0,0.219,0.219,0.806,65,True
+Abacate-gigante,,11.557,False,0.1627,50.0,0,0.22,0.22,0.806,65,True
+Abacaxi-roxo,,11.537,False,0.1617,50.0,0,0.22,0.22,0.806,65,True
 Acerola doce,,11.691,False,0.1509,50.0,0,0.228,0.228,0.806,65,True
-Ameixa rainha-cláudia,,11.469,False,0.1708,50.0,0,0.212,0.212,0.806,65,True
-Ameixa vermelha,,11.549,False,0.1598,50.0,0,0.219,0.219,0.806,65,True
-Amora-gigante,,11.526,False,0.1656,50.0,0,0.212,0.212,0.806,65,True
-Açaí-do-amazonas,,11.569,False,0.1607,50.0,0,0.219,0.219,0.806,65,True
+Ameixa rainha-cláudia,,11.469,False,0.1709,50.0,0,0.212,0.212,0.806,65,True
+Ameixa vermelha,,11.549,False,0.1598,50.0,0,0.22,0.22,0.806,65,True
+Amora-gigante,,11.526,False,0.1657,50.0,0,0.212,0.212,0.806,65,True
+Açaí-do-amazonas,,11.569,False,0.1608,50.0,0,0.22,0.22,0.806,65,True
 Banana roxa,,11.595,False,0.1552,50.0,0,0.228,0.228,0.806,65,True
 Banana-comprida,,11.667,False,0.1501,50.0,0,0.228,0.228,0.806,65,True
-Costela-de-adão (fruto),,11.506,False,0.1646,50.0,0,0.212,0.212,0.806,65,True
+Costela-de-adão (fruto),,11.506,False,0.1647,50.0,0,0.212,0.212,0.806,65,True
 Damasco seco,,11.471,False,0.1698,50.0,0,0.212,0.212,0.806,65,True
-Figo seco,,11.686,False,0.1492,50.0,0,0.228,0.228,0.806,65,True
+Figo seco,,11.686,False,0.1493,50.0,0,0.228,0.228,0.806,65,True
 Fruta-do-conde-roxa,,11.458,False,0.1687,50.0,0,0.212,0.212,0.806,65,True
-Goiaba vermelha,,11.666,False,0.1484,50.0,0,0.228,0.228,0.806,65,True
-Jambo-branco,,11.568,False,0.1588,50.0,0,0.219,0.219,0.806,65,True
-Laranja champanhe,,11.456,False,0.1666,50.0,0,0.212,0.212,0.806,65,True
+Goiaba vermelha,,11.666,False,0.1485,50.0,0,0.228,0.228,0.806,65,True
+Jambo-branco,,11.568,False,0.1589,50.0,0,0.22,0.22,0.806,65,True
+Laranja champanhe,,11.456,False,0.1667,50.0,0,0.212,0.212,0.806,65,True
 Laranja-amarga,,11.455,False,0.1677,50.0,0,0.212,0.212,0.806,65,True
-Maracujá-de-cobra,,11.548,False,0.1579,50.0,0,0.219,0.219,0.806,65,True
-Melancia amarela,,11.525,False,0.1636,50.0,0,0.212,0.212,0.806,65,True
-Pera red,,11.536,False,0.157,50.0,0,0.219,0.219,0.806,65,True
-Pitanga-vermelha,,11.573,False,0.1561,50.0,0,0.219,0.219,0.806,65,True
-Uva Concord,,11.398,False,0.1899,50.0,0,0.197,0.197,0.806,65,True
-Uva Cotton Candy,,11.398,False,0.1886,50.0,0,0.197,0.197,0.806,65,True
-Uva Crimson,,11.398,False,0.1873,50.0,0,0.197,0.197,0.806,65,True
-Uva Malbec,,11.398,False,0.186,50.0,0,0.197,0.197,0.806,65,True
+Maracujá-de-cobra,,11.548,False,0.158,50.0,0,0.22,0.22,0.806,65,True
+Melancia amarela,,11.525,False,0.1637,50.0,0,0.212,0.212,0.806,65,True
+Pera red,,11.536,False,0.157,50.0,0,0.22,0.22,0.806,65,True
+Pitanga-vermelha,,11.573,False,0.1561,50.0,0,0.22,0.22,0.806,65,True
+Uva Benitaka,,11.398,False,0.1913,50.0,0,0.197,0.197,0.806,65,True
+Uva Concord,,11.398,False,0.19,50.0,0,0.197,0.197,0.806,65,True
+Uva Cotton Candy,,11.398,False,0.1887,50.0,0,0.197,0.197,0.806,65,True
+Uva Crimson,,11.398,False,0.1874,50.0,0,0.197,0.197,0.806,65,True
+Uva Malbec,,11.398,False,0.1861,50.0,0,0.197,0.197,0.806,65,True
 Uva Merlot,,11.398,False,0.1848,50.0,0,0.197,0.197,0.806,65,True
-Uva Nebbiolo,,11.398,False,0.1835,50.0,0,0.197,0.197,0.806,65,True
+Uva Nebbiolo,,11.398,False,0.1836,50.0,0,0.197,0.197,0.806,65,True
 Uva Pinot Noir,,11.398,False,0.1823,50.0,0,0.197,0.197,0.806,65,True
 Uva Sangiovese,,11.398,False,0.1811,50.0,0,0.197,0.197,0.806,65,True
 Uva Sauvignon Blanc,,11.398,False,0.1799,50.0,0,0.197,0.197,0.806,65,True
 Uva Tannat,,11.398,False,0.1787,50.0,0,0.197,0.197,0.806,65,True
-Uva Tempranillo,,11.398,False,0.1775,50.0,0,0.197,0.197,0.806,65,True
+Uva Tempranillo,,11.398,False,0.1776,50.0,0,0.197,0.197,0.806,65,True
 Uva Thompson,,11.398,False,0.1764,50.0,0,0.197,0.197,0.806,65,True
-Abacate fortuna,,11.964,False,0.1275,50.0,0,0.26,0.26,0.812,66,True
-Abacate quintal,,11.772,False,0.1437,50.0,0,0.242,0.242,0.812,66,True
+Abacate fortuna,,11.964,False,0.1276,50.0,0,0.26,0.26,0.812,66,True
+Abacate quintal,,11.772,False,0.1437,50.0,0,0.243,0.243,0.812,66,True
 Abacate-roxo,,11.887,False,0.1345,50.0,0,0.252,0.252,0.812,66,True
-Abacaxi do cerrado,,11.83,False,0.1386,50.0,0,0.242,0.242,0.812,66,True
+Abacaxi do cerrado,,11.83,False,0.1386,50.0,0,0.243,0.243,0.812,66,True
 Abacaxi gold,,11.87,False,0.1338,50.0,0,0.252,0.252,0.812,66,True
 Abacaxi havaí,,11.87,False,0.1332,50.0,0,0.252,0.252,0.812,66,True
-Abacaxi pérola,,11.771,False,0.143,50.0,0,0.242,0.242,0.812,66,True
+Abacaxi pérola,,11.771,False,0.143,50.0,0,0.243,0.243,0.812,66,True
 Abacaxi smooth cayenne,,11.87,False,0.1319,50.0,0,0.252,0.252,0.812,66,True
 Abacaxi-silvestre,,11.887,False,0.1325,50.0,0,0.252,0.252,0.812,66,True
 Araçá-vermelho,,11.89,False,0.1312,50.0,0,0.252,0.252,0.812,66,True
-Banana figo,,11.948,False,0.1269,50.0,0,0.26,0.26,0.812,66,True
-Cambuci-doce,,11.707,False,0.1468,50.0,0,0.234,0.234,0.812,66,True
-Caqui chocolate,,11.848,False,0.1379,50.0,0,0.242,0.242,0.812,66,True
-Carambola doce,,11.956,False,0.1263,50.0,0,0.26,0.26,0.812,66,True
-Coco anão,,11.696,False,0.146,50.0,0,0.234,0.234,0.812,66,True
-Framboesa vermelha,,11.706,False,0.1453,50.0,0,0.234,0.234,0.812,66,True
+Banana figo,,11.948,False,0.127,50.0,0,0.26,0.26,0.812,66,True
+Cambuci-doce,,11.707,False,0.1469,50.0,0,0.235,0.235,0.812,66,True
+Caqui chocolate,,11.848,False,0.1379,50.0,0,0.243,0.243,0.812,66,True
+Carambola doce,,11.956,False,0.1264,50.0,0,0.26,0.26,0.812,66,True
+Coco anão,,11.696,False,0.1461,50.0,0,0.235,0.235,0.812,66,True
+Framboesa vermelha,,11.706,False,0.1453,50.0,0,0.235,0.235,0.812,66,True
 Gravatá (fruto),,11.953,False,0.1258,50.0,0,0.26,0.26,0.812,66,True
-Groselha-branca,,11.831,False,0.1372,50.0,0,0.242,0.242,0.812,66,True
-Jabuticaba do mato,,11.804,False,0.1393,50.0,0,0.242,0.242,0.812,66,True
-Jabuticaba paulista,,11.684,False,0.1476,50.0,0,0.228,0.228,0.812,66,True
-Jaca-vermelha,,11.766,False,0.1422,50.0,0,0.242,0.242,0.812,66,True
-Jatobá-da-mata,,11.628,False,0.1517,50.0,0,0.228,0.228,0.812,66,True
+Groselha-branca,,11.831,False,0.1372,50.0,0,0.243,0.243,0.812,66,True
+Jabuticaba do mato,,11.804,False,0.1393,50.0,0,0.243,0.243,0.812,66,True
+Jabuticaba paulista,,11.684,False,0.1477,50.0,0,0.228,0.228,0.812,66,True
+Jaca-vermelha,,11.766,False,0.1422,50.0,0,0.243,0.243,0.812,66,True
+Jatobá-da-mata,,11.628,False,0.1518,50.0,0,0.228,0.228,0.812,66,True
 Limão capeta,,11.884,False,0.1306,50.0,0,0.252,0.252,0.812,66,True
 Mama-de-cachorra,,11.894,False,0.13,50.0,0,0.252,0.252,0.812,66,True
-Manga Bourbon,,11.773,False,0.1415,50.0,0,0.242,0.242,0.812,66,True
-Maracujá-de-rato,,11.835,False,0.1365,50.0,0,0.242,0.242,0.812,66,True
-Melão japonês,,11.738,False,0.1407,50.0,0,0.242,0.242,0.812,66,True
+Manga Bourbon,,11.773,False,0.1415,50.0,0,0.243,0.243,0.812,66,True
+Maracujá-de-rato,,11.835,False,0.1365,50.0,0,0.243,0.243,0.812,66,True
+Melão japonês,,11.738,False,0.1408,50.0,0,0.243,0.243,0.812,66,True
 Morango San Andreas,,11.614,False,0.1535,50.0,0,0.228,0.228,0.812,66,True
-Morango albion,,11.614,False,0.1543,50.0,0,0.228,0.228,0.812,66,True
-Morango silvestre,,11.759,False,0.14,50.0,0,0.242,0.242,0.812,66,True
+Morango albion,,11.614,False,0.1544,50.0,0,0.228,0.228,0.812,66,True
+Morango silvestre,,11.759,False,0.14,50.0,0,0.243,0.243,0.812,66,True
 Pitanga-laranja,,11.6,False,0.1526,50.0,0,0.228,0.228,0.812,66,True
-Romã vermelha,,11.818,False,0.1358,50.0,0,0.242,0.242,0.812,66,True
-Sapucaia-do-pará,,11.723,False,0.1445,50.0,0,0.234,0.234,0.812,66,True
-Uva-roxa,,11.822,False,0.1351,50.0,0,0.242,0.242,0.812,66,True
-Abacate margarida,,12.126,False,0.1161,50.0,0,0.281,0.281,0.819,67,True
+Romã vermelha,,11.818,False,0.1358,50.0,0,0.243,0.243,0.812,66,True
+Sapucaia-do-pará,,11.723,False,0.1445,50.0,0,0.235,0.235,0.812,66,True
+Uva-roxa,,11.822,False,0.1352,50.0,0,0.243,0.243,0.812,66,True
+Abacate margarida,,12.126,False,0.1161,50.0,0,0.282,0.282,0.819,67,True
 Buriti-mirim,,12.194,False,0.1113,50.0,0,0.289,0.289,0.819,67,True
-Caju anão-precoce,,12.1,False,0.1191,50.0,0,0.271,0.271,0.819,67,True
+Caju anão-precoce,,12.1,False,0.1192,50.0,0,0.271,0.271,0.819,67,True
 Caqui rama forte,,11.98,False,0.1246,50.0,0,0.271,0.271,0.819,67,True
 Caqui-mel,,12.073,False,0.1186,50.0,0,0.271,0.271,0.819,67,True
-Cereja bing,,12.108,False,0.1151,50.0,0,0.281,0.281,0.819,67,True
-Cereja rainier,,12.108,False,0.1146,50.0,0,0.281,0.281,0.819,67,True
-Cereja ácida,,12.108,False,0.1156,50.0,0,0.281,0.281,0.819,67,True
+Cereja bing,,12.108,False,0.1151,50.0,0,0.282,0.282,0.819,67,True
+Cereja rainier,,12.108,False,0.1146,50.0,0,0.282,0.282,0.819,67,True
+Cereja ácida,,12.108,False,0.1156,50.0,0,0.282,0.282,0.819,67,True
 Coco-de-dendê,dendê,12.089,False,0.1181,50.0,0,0.271,0.271,0.819,67,True
 Figo-roxo,,12.078,False,0.1176,50.0,0,0.271,0.271,0.819,67,True
-Fruta-de-sabiá,,12.083,False,0.1171,50.0,0,0.271,0.271,0.819,67,True
+Fruta-de-sabiá,Fruta-do-sabiá,12.083,False,0.1171,50.0,0,0.271,0.271,0.819,67,True
 Fruta-milagrosa,fruta-do-milagre,12.022,False,0.1207,50.0,0,0.271,0.271,0.819,67,True
-Goiaba-amarela,,12.003,False,0.124,50.0,0,0.271,0.271,0.819,67,True
+Goiaba-amarela,,12.003,False,0.1241,50.0,0,0.271,0.271,0.819,67,True
 Goiaba-japonesa,,12.007,False,0.1235,50.0,0,0.271,0.271,0.819,67,True
 Granadilla-roxa,,12.246,False,0.1104,50.0,0,0.289,0.289,0.819,67,True
 Graviola-do-mato,,12.091,False,0.1166,50.0,0,0.271,0.271,0.819,67,True
 Groselha-vermelha,,12.185,False,0.1109,50.0,0,0.289,0.289,0.819,67,True
-Inajá-do-campo,,11.909,False,0.1293,50.0,0,0.26,0.26,0.819,67,True
+Inajá-do-campo,,11.909,False,0.1294,50.0,0,0.26,0.26,0.819,67,True
 Jaca-manteiga,,11.987,False,0.1229,50.0,0,0.271,0.271,0.819,67,True
 Jamelão-branco,,11.94,False,0.1252,50.0,0,0.26,0.26,0.819,67,True
-Jatobá,,13.384,False,0.1141,45.0,42906,0.281,0.281,0.819,67,True
+Jatobá,,13.384,False,0.1142,45.0,42906,0.282,0.282,0.819,67,True
 Kiwi baby,,12.01,False,0.1224,50.0,0,0.271,0.271,0.819,67,True
 Kiwi-dourado,,12.008,False,0.1218,50.0,0,0.271,0.271,0.819,67,True
 Laranja baía-cabula,,12.257,False,0.11,50.0,0,0.289,0.289,0.819,67,True
-Laranja seleta,,12.246,False,0.1095,50.0,0,0.289,0.289,0.819,67,True
+Laranja seleta,,12.246,False,0.1096,50.0,0,0.289,0.289,0.819,67,True
 Limão eureka,,12.232,False,0.1091,50.0,0,0.289,0.289,0.819,67,True
 Manga carlota,,12.024,False,0.1202,50.0,0,0.271,0.271,0.819,67,True
 Maracujá pérola,,11.988,False,0.1213,50.0,0,0.271,0.271,0.819,67,True
 Maracujá-do-cerrado,,12.047,False,0.1197,50.0,0,0.271,0.271,0.819,67,True
-Maracujá-pérola-do-cerrado,,11.921,False,0.1287,50.0,0,0.26,0.26,0.819,67,True
+Maracujá-pérola-do-cerrado,,11.921,False,0.1288,50.0,0,0.26,0.26,0.819,67,True
 Melancia Crimson Sweet,,12.152,False,0.1127,50.0,0,0.289,0.289,0.819,67,True
-Pera-asiática-dourada,,12.103,False,0.1137,50.0,0,0.281,0.281,0.819,67,True
-Toranja-branca,,12.103,False,0.1132,50.0,0,0.281,0.281,0.819,67,True
-Toranja-rosa,,11.912,False,0.1281,50.0,0,0.26,0.26,0.819,67,True
-Abacate breda,,12.571,False,0.0988,50.0,0,0.325,0.325,0.825,68,True
-Abacate hass,,12.571,False,0.0984,50.0,0,0.325,0.325,0.825,68,True
-Abacate-anão,,12.611,False,0.094,50.0,0,0.325,0.325,0.825,68,True
-Araçá-de-coroa,,12.471,False,0.1021,50.0,0,0.308,0.308,0.825,68,True
-Araçá-una,,12.431,False,0.1029,50.0,0,0.308,0.308,0.825,68,True
-Azeitona-roxa,,12.555,False,0.0981,50.0,0,0.325,0.325,0.825,68,True
+Pera-asiática-dourada,,12.103,False,0.1137,50.0,0,0.282,0.282,0.819,67,True
+Toranja-branca,,12.103,False,0.1132,50.0,0,0.282,0.282,0.819,67,True
+Toranja-rosa,,11.912,False,0.1282,50.0,0,0.26,0.26,0.819,67,True
+Abacate breda,,12.571,False,0.0988,50.0,0,0.326,0.326,0.825,68,True
+Abacate hass,,12.571,False,0.0984,50.0,0,0.326,0.326,0.825,68,True
+Abacate-anão,,12.611,False,0.094,50.0,0,0.326,0.326,0.825,68,True
+Araçá-de-coroa,,12.471,False,0.1021,50.0,0,0.309,0.309,0.825,68,True
+Araçá-una,,12.431,False,0.1029,50.0,0,0.309,0.309,0.825,68,True
+Azeitona-roxa,,12.555,False,0.0981,50.0,0,0.326,0.326,0.825,68,True
 Bacuri-do-pará,,12.539,False,0.101,50.0,0,0.314,0.314,0.825,68,True
 Banana anã,,12.393,False,0.1045,50.0,0,0.302,0.302,0.825,68,True
-Cajá-manga,cajarana-do-pará,12.655,False,0.093,50.0,0,0.325,0.325,0.825,68,True
-Carambola-gigante,,12.454,False,0.1025,50.0,0,0.308,0.308,0.825,68,True
-Coco-babaçu,,12.568,False,0.0977,50.0,0,0.325,0.325,0.825,68,True
+Cajá-manga,cajarana-do-pará,12.655,False,0.093,50.0,0,0.326,0.326,0.825,68,True
+Carambola-gigante,,12.454,False,0.1025,50.0,0,0.309,0.309,0.825,68,True
+Coco-babaçu,,12.568,False,0.0977,50.0,0,0.326,0.326,0.825,68,True
 Coco-catolé,,12.519,False,0.1006,50.0,0,0.314,0.314,0.825,68,True
 Figo roxo de valinhos,,12.309,False,0.1065,50.0,0,0.302,0.302,0.825,68,True
-Figo turco,,12.511,False,0.1002,50.0,0,0.314,0.314,0.825,68,True
-Framboesa-dourada,,12.266,False,0.1087,50.0,0,0.295,0.295,0.825,68,True
+Figo turco,,12.511,False,0.1003,50.0,0,0.314,0.314,0.825,68,True
+Framboesa-dourada,,12.266,False,0.1087,50.0,0,0.296,0.296,0.825,68,True
 Goiaba-de-macaco,,12.338,False,0.1061,50.0,0,0.302,0.302,0.825,68,True
 Guabiroba-do-campo,,12.521,False,0.0999,50.0,0,0.314,0.314,0.825,68,True
-Jambo-amarelo,,12.282,False,0.1082,50.0,0,0.295,0.295,0.825,68,True
-Jatobá-do-cerrado,,12.586,False,0.0937,50.0,0,0.325,0.325,0.825,68,True
+Jambo-amarelo,,12.282,False,0.1082,50.0,0,0.296,0.296,0.825,68,True
+Jatobá-do-cerrado,,12.586,False,0.0937,50.0,0,0.326,0.326,0.825,68,True
 Jujuba (fruta),ziziphus,12.527,False,0.0995,50.0,0,0.314,0.314,0.825,68,True
 Manga Ubá,,12.331,False,0.1057,50.0,0,0.302,0.302,0.825,68,True
-Manga coité,,12.521,False,0.0991,50.0,0,0.314,0.314,0.825,68,True
+Manga coité,,12.521,False,0.0992,50.0,0,0.314,0.314,0.825,68,True
 Mangaba-doce,,12.405,False,0.1041,50.0,0,0.302,0.302,0.825,68,True
-Maracujá suspiro,,12.27,False,0.1078,50.0,0,0.295,0.295,0.825,68,True
-Maracujá-melão,maracujá-açu,12.495,False,0.1017,50.0,0,0.308,0.308,0.825,68,True
-Melancia quadrada,,12.18,False,0.1122,50.0,0,0.289,0.289,0.825,68,True
+Maracujá suspiro,,12.27,False,0.1078,50.0,0,0.296,0.296,0.825,68,True
+Maracujá-melão,maracujá-açu,12.495,False,0.1018,50.0,0,0.309,0.309,0.825,68,True
+Melancia quadrada,,12.18,False,0.1123,50.0,0,0.289,0.289,0.825,68,True
 Melão-caipira,,12.404,False,0.1037,50.0,0,0.302,0.302,0.825,68,True
 Mirtilo-vermelho-ártico,lingonberry,12.325,False,0.1053,50.0,0,0.302,0.302,0.825,68,True
 Polpa de açaí,,12.377,False,0.1049,50.0,0,0.302,0.302,0.825,68,True
 Pêssego aurora,,12.154,False,0.1118,50.0,0,0.289,0.289,0.825,68,True
-Tâmara seca,,12.476,False,0.1014,50.0,0,0.308,0.308,0.825,68,True
+Tâmara seca,,12.476,False,0.1014,50.0,0,0.309,0.309,0.825,68,True
 Uva Cabernet Sauvignon,,12.407,False,0.1033,50.0,0,0.302,0.302,0.825,68,True
-Uva Niágara rosada,,12.297,False,0.1074,50.0,0,0.295,0.295,0.825,68,True
-Uva-rosada,,12.297,False,0.1069,50.0,0,0.295,0.295,0.825,68,True
+Uva Niágara rosada,,12.297,False,0.1074,50.0,0,0.296,0.296,0.825,68,True
+Uva-rosada,,12.297,False,0.107,50.0,0,0.296,0.296,0.825,68,True
 Ameixa d'agen,,12.875,False,0.0862,50.0,0,0.356,0.356,0.831,69,True
-Ameixa rubimel,,12.875,False,0.086,50.0,0,0.356,0.356,0.831,69,True
 Araçá-roxo,,12.795,False,0.0876,50.0,0,0.348,0.348,0.831,69,True
 Banana-marmelo,,12.771,False,0.0882,50.0,0,0.348,0.348,0.831,69,True
 Coco-butiá,,12.698,False,0.0924,50.0,0,0.339,0.339,0.831,69,True
@@ -356,208 +355,209 @@ Framboesa roxa,,12.718,False,0.0894,50.0,0,0.348,0.348,0.831,69,True
 Goiaba-roxa,,12.678,False,0.0921,50.0,0,0.339,0.339,0.831,69,True
 Mamão golden,,12.698,False,0.0918,50.0,0,0.339,0.339,0.831,69,True
 Mamão havaí,,12.698,False,0.0915,50.0,0,0.339,0.339,0.831,69,True
-Manga coquinho,,12.814,False,0.0873,50.0,0,0.348,0.348,0.831,69,True
+Manga coquinho,,12.814,False,0.0874,50.0,0,0.348,0.348,0.831,69,True
 Maracujá azedo,,12.804,False,0.0871,50.0,0,0.348,0.348,0.831,69,True
 Marmelo-japonês,,12.695,False,0.0912,50.0,0,0.339,0.339,0.831,69,True
-Melão charentais,,12.685,False,0.0908,50.0,0,0.339,0.339,0.831,69,True
-Melão honeydew,,12.685,False,0.0905,50.0,0,0.339,0.339,0.831,69,True
-Melão orange,,12.685,False,0.0902,50.0,0,0.339,0.339,0.831,69,True
+Melão charentais,,12.685,False,0.0909,50.0,0,0.339,0.339,0.831,69,True
+Melão honeydew,,12.685,False,0.0906,50.0,0,0.339,0.339,0.831,69,True
+Melão orange,,12.685,False,0.0903,50.0,0,0.339,0.339,0.831,69,True
 Morango alpino,,12.727,False,0.0891,50.0,0,0.348,0.348,0.831,69,True
-Pequi-roxo,,12.549,False,0.0974,50.0,0,0.325,0.325,0.831,69,True
-Pera anjou,,12.559,False,0.097,50.0,0,0.325,0.325,0.831,69,True
-Pera bartlett,,12.559,False,0.0967,50.0,0,0.325,0.325,0.831,69,True
-Pera bosc,,12.559,False,0.0963,50.0,0,0.325,0.325,0.831,69,True
-Pera comice,,12.559,False,0.096,50.0,0,0.325,0.325,0.831,69,True
-Pera conference,,12.559,False,0.0956,50.0,0,0.325,0.325,0.831,69,True
-Pera forelle,,12.559,False,0.0953,50.0,0,0.325,0.325,0.831,69,True
-Pera nashi,,12.559,False,0.095,50.0,0,0.325,0.325,0.831,69,True
-Pera packham,,12.559,False,0.0946,50.0,0,0.325,0.325,0.831,69,True
-Pimentão,,12.493,False,0.0899,30.0,8292,0.339,0.339,0.831,69,True
-Pitanga-roxa,,12.584,False,0.0943,50.0,0,0.325,0.325,0.831,69,True
-Pitomba-da-bahia,,12.606,False,0.0933,50.0,0,0.325,0.325,0.831,69,True
+Pequi-roxo,,12.549,False,0.0974,50.0,0,0.326,0.326,0.831,69,True
+Pera anjou,,12.559,False,0.097,50.0,0,0.326,0.326,0.831,69,True
+Pera bartlett,,12.559,False,0.0967,50.0,0,0.326,0.326,0.831,69,True
+Pera bosc,,12.559,False,0.0963,50.0,0,0.326,0.326,0.831,69,True
+Pera comice,,12.559,False,0.096,50.0,0,0.326,0.326,0.831,69,True
+Pera conference,,12.559,False,0.0957,50.0,0,0.326,0.326,0.831,69,True
+Pera forelle,,12.559,False,0.0953,50.0,0,0.326,0.326,0.831,69,True
+Pera nashi,,12.559,False,0.095,50.0,0,0.326,0.326,0.831,69,True
+Pera packham,,12.559,False,0.0947,50.0,0,0.326,0.326,0.831,69,True
+Pimentão,,12.493,False,0.09,30.0,8292,0.339,0.339,0.831,69,True
+Pitanga-roxa,,12.584,False,0.0943,50.0,0,0.326,0.326,0.831,69,True
+Pitomba-da-bahia,,12.606,False,0.0934,50.0,0,0.326,0.326,0.831,69,True
 Tangerina cravo,,12.744,False,0.0888,50.0,0,0.348,0.348,0.831,69,True
 Tucumã-do-amazonas,,12.763,False,0.0879,50.0,0,0.348,0.348,0.831,69,True
-Tucumã-do-pará,,12.639,False,0.0927,50.0,0,0.325,0.325,0.831,69,True
+Tucumã-do-pará,,12.639,False,0.0927,50.0,0,0.326,0.326,0.831,69,True
 Umbu-gigante,,12.792,False,0.0868,50.0,0,0.348,0.348,0.831,69,True
 Uva Bordô,,12.74,False,0.0885,50.0,0,0.348,0.348,0.831,69,True
-Uva Chardonnay,,12.69,False,0.0896,50.0,0,0.339,0.339,0.831,69,True
-Abacate geada,,12.959,False,0.0838,50.0,0,0.366,0.366,0.837,70,True
+Uva Chardonnay,,12.69,False,0.0897,50.0,0,0.339,0.339,0.831,69,True
+Abacate geada,,12.959,False,0.0839,50.0,0,0.367,0.367,0.837,70,True
+Ameixa rubimel,,12.875,False,0.086,50.0,0,0.356,0.356,0.837,70,True
 Bacuri-mirim,,13.167,False,0.0792,50.0,0,0.38,0.38,0.837,70,True
 Banana plátano,,13.071,False,0.0816,50.0,0,0.373,0.373,0.837,70,True
-Berinjela,Beringela,12.742,False,0.0836,30.0,16044,0.366,0.366,0.837,70,True
+Berinjela,Beringela,12.742,False,0.0836,30.0,16044,0.367,0.367,0.837,70,True
 Cajá-do-sertão,,12.875,False,0.0857,50.0,0,0.356,0.356,0.837,70,True
-Camu-camu-açu,,12.968,False,0.0833,50.0,0,0.366,0.366,0.837,70,True
-Caqui taubaté,,12.985,False,0.0831,50.0,0,0.366,0.366,0.837,70,True
+Camu-camu-açu,,12.968,False,0.0833,50.0,0,0.367,0.367,0.837,70,True
+Caqui taubaté,,12.985,False,0.0831,50.0,0,0.367,0.367,0.837,70,True
 Cherimoia-peruana,,13.153,False,0.079,50.0,0,0.38,0.38,0.837,70,True
 Coco-macaúba,,13.139,False,0.0804,50.0,0,0.38,0.38,0.837,70,True
 Coco-tucum,,13.207,False,0.0787,50.0,0,0.38,0.38,0.837,70,True
 Gabiroba-vermelha,,13.21,False,0.0785,50.0,0,0.38,0.38,0.837,70,True
 Goiaba cortibel,,13.109,False,0.0813,50.0,0,0.373,0.373,0.837,70,True
 Goiaba paluma,,13.109,False,0.0811,50.0,0,0.373,0.373,0.837,70,True
-Goiaba pedro sato,,13.109,False,0.0808,50.0,0,0.373,0.373,0.837,70,True
+Goiaba pedro sato,,13.109,False,0.0809,50.0,0,0.373,0.373,0.837,70,True
 Graviola lisa,,12.877,False,0.0854,50.0,0,0.356,0.356,0.837,70,True
 Graviola morada,,12.852,False,0.0865,50.0,0,0.356,0.356,0.837,70,True
 Jenipapo-bravo,,13.077,False,0.0806,50.0,0,0.373,0.373,0.837,70,True
-Lichia-chinesa,,12.991,False,0.0826,50.0,0,0.366,0.366,0.837,70,True
-Mamão-de-veado,,13.024,False,0.0823,50.0,0,0.366,0.366,0.837,70,True
+Lichia-chinesa,,12.991,False,0.0826,50.0,0,0.367,0.367,0.837,70,True
+Mamão-de-veado,,13.024,False,0.0823,50.0,0,0.367,0.367,0.837,70,True
 Maracujá-alfazema,,13.123,False,0.0801,50.0,0,0.38,0.38,0.837,70,True
 Maçaranduba (fruto),,13.22,False,0.0783,50.0,0,0.38,0.38,0.837,70,True
-Maçã Ambrosia,,13.061,False,0.0821,50.0,0,0.366,0.366,0.837,70,True
+Maçã Ambrosia,,13.061,False,0.0821,50.0,0,0.367,0.367,0.837,70,True
 Melancia Charleston Gray,,12.928,False,0.0846,50.0,0,0.361,0.361,0.837,70,True
 Mirtilo-silvestre,,13.123,False,0.0799,50.0,0,0.38,0.38,0.837,70,True
 Murici-do-cerrado,,12.911,False,0.0844,50.0,0,0.361,0.361,0.837,70,True
 Nêspera-do-japão,,13.144,False,0.0797,50.0,0,0.38,0.38,0.837,70,True
-Pinha-do-cerrado,,13.037,False,0.0818,50.0,0,0.366,0.366,0.837,70,True
+Pinha-do-cerrado,,13.037,False,0.0818,50.0,0,0.367,0.367,0.837,70,True
 Pitomba-do-pará,,13.151,False,0.0794,50.0,0,0.38,0.38,0.837,70,True
 Pupunha,,14.465,False,0.0781,45.0,15426,0.385,0.385,0.837,70,True
 Pêssego paraguaio,,12.948,False,0.0841,50.0,0,0.361,0.361,0.837,70,True
-Uva Moscatel,,12.882,False,0.0851,50.0,0,0.356,0.356,0.837,70,True
+Uva Moscatel,,12.882,False,0.0852,50.0,0,0.356,0.356,0.837,70,True
 Uva Syrah,,12.881,False,0.0849,50.0,0,0.356,0.356,0.837,70,True
-Uvaia-doce,,12.988,False,0.0828,50.0,0,0.366,0.366,0.837,70,True
-Acerola olivier,,13.835,False,0.0722,50.0,0,0.414,0.414,0.843,71,True
-Babaçu,,14.393,False,0.072,45.0,17856,0.414,0.414,0.843,71,True
-Bacupari-do-mato,,13.393,False,0.0763,50.0,0,0.397,0.397,0.843,71,True
-Banana caturra,,13.46,False,0.0742,50.0,0,0.397,0.397,0.843,71,True
-Baru-do-cerrado,,13.44,False,0.074,50.0,0,0.397,0.397,0.843,71,True
+Uvaia-doce,,12.988,False,0.0828,50.0,0,0.367,0.367,0.837,70,True
+Acerola olivier,,13.835,False,0.0723,50.0,0,0.414,0.414,0.843,71,True
+Babaçu,,14.393,False,0.0721,45.0,17856,0.414,0.414,0.843,71,True
+Bacupari-do-mato,,13.393,False,0.0763,50.0,0,0.398,0.398,0.843,71,True
+Banana caturra,,13.46,False,0.0742,50.0,0,0.398,0.398,0.843,71,True
+Baru-do-cerrado,,13.44,False,0.074,50.0,0,0.398,0.398,0.843,71,True
 Caqui fuyu,,13.858,False,0.0713,50.0,0,0.414,0.414,0.843,71,True
 Caqui giombo,,13.858,False,0.0711,50.0,0,0.414,0.414,0.843,71,True
 Castanha-de-cutia,,13.836,False,0.0719,50.0,0,0.414,0.414,0.843,71,True
-Coco-jerivá,,13.585,False,0.0734,50.0,0,0.405,0.405,0.843,71,True
-Coco-licuri,,13.412,False,0.075,50.0,0,0.397,0.397,0.843,71,True
-Condessa,,13.515,False,0.0736,50.0,0,0.405,0.405,0.843,71,True
+Coco-jerivá,,13.585,False,0.0734,50.0,0,0.406,0.406,0.843,71,True
+Coco-licuri,,13.412,False,0.0751,50.0,0,0.398,0.398,0.843,71,True
+Condessa,,13.515,False,0.0736,50.0,0,0.406,0.406,0.843,71,True
 Jabuticaba-sabará-anã,,13.715,False,0.073,50.0,0,0.409,0.409,0.843,71,True
-Jaracatiá-do-mato,,13.42,False,0.0748,50.0,0,0.397,0.397,0.843,71,True
-Juá-mirim,,13.371,False,0.0761,50.0,0,0.397,0.397,0.843,71,True
-Kiwi gold,,13.39,False,0.0759,50.0,0,0.397,0.397,0.843,71,True
-Kiwi hayward,,13.39,False,0.0757,50.0,0,0.397,0.397,0.843,71,True
-Kiwi kiwiberry,,13.39,False,0.0755,50.0,0,0.397,0.397,0.843,71,True
+Jaracatiá-do-mato,,13.42,False,0.0748,50.0,0,0.398,0.398,0.843,71,True
+Juá-mirim,,13.371,False,0.0761,50.0,0,0.398,0.398,0.843,71,True
+Kiwi gold,,13.39,False,0.0759,50.0,0,0.398,0.398,0.843,71,True
+Kiwi hayward,,13.39,False,0.0757,50.0,0,0.398,0.398,0.843,71,True
+Kiwi kiwiberry,,13.39,False,0.0755,50.0,0,0.398,0.398,0.843,71,True
 Limão cidrão,,13.709,False,0.0728,50.0,0,0.409,0.409,0.843,71,True
 Murici-pitanga,,13.478,False,0.0738,50.0,0,0.404,0.404,0.843,71,True
 Patauá-do-pará,,13.781,False,0.0724,50.0,0,0.409,0.409,0.843,71,True
 Piquiá-do-pará,,13.335,False,0.0776,50.0,0,0.389,0.389,0.843,71,True
 Pitaya do cerrado,,13.726,False,0.0726,50.0,0,0.409,0.409,0.843,71,True
-Pêssego achatado,,13.372,False,0.0752,50.0,0,0.397,0.397,0.843,71,True
-Romã wonderful,,13.413,False,0.0746,50.0,0,0.397,0.397,0.843,71,True
-Romã-anã,,13.628,False,0.0732,50.0,0,0.405,0.405,0.843,71,True
+Pêssego achatado,,13.372,False,0.0753,50.0,0,0.398,0.398,0.843,71,True
+Romã wonderful,,13.413,False,0.0746,50.0,0,0.398,0.398,0.843,71,True
+Romã-anã,,13.628,False,0.0732,50.0,0,0.406,0.406,0.843,71,True
 Tangerina dancy,,13.324,False,0.0774,50.0,0,0.389,0.389,0.843,71,True
 Tangerina fremont,,13.324,False,0.0772,50.0,0,0.389,0.389,0.843,71,True
-Tangerina montenegrina,,13.324,False,0.0769,50.0,0,0.389,0.389,0.843,71,True
+Tangerina montenegrina,,13.324,False,0.077,50.0,0,0.389,0.389,0.843,71,True
 Tangerina murcote,,13.324,False,0.0767,50.0,0,0.389,0.389,0.843,71,True
 Tangerina okitsu,,13.324,False,0.0765,50.0,0,0.389,0.389,0.843,71,True
 Tarumã,,13.833,False,0.0717,50.0,0,0.414,0.414,0.843,71,True
 Uva Riesling,,13.299,False,0.0778,50.0,0,0.389,0.389,0.843,71,True
 Uva Sultana,,13.829,False,0.0715,50.0,0,0.414,0.414,0.843,71,True
-Uxi-coroa,,13.394,False,0.0744,50.0,0,0.397,0.397,0.843,71,True
+Uxi-coroa,,13.394,False,0.0744,50.0,0,0.398,0.398,0.843,71,True
 Abacaxi jupi,,13.928,False,0.0698,50.0,0,0.426,0.426,0.849,72,True
 Abiu-roxo,caimito | cainito,13.879,False,0.0709,50.0,0,0.42,0.42,0.849,72,True
 Ameixa mirabela,,14.427,False,0.0669,50.0,0,0.438,0.438,0.849,72,True
-Araticum-do-brejo,,14.278,False,0.0679,50.0,0,0.434,0.434,0.849,72,True
-Araticum-do-cerrado,,13.912,False,0.0707,50.0,0,0.42,0.42,0.849,72,True
+Araticum-do-brejo,,14.278,False,0.0679,50.0,0,0.435,0.435,0.849,72,True
+Araticum-do-cerrado,,13.912,False,0.0708,50.0,0,0.42,0.42,0.849,72,True
 Açaí de touceira,,14.352,False,0.0674,50.0,0,0.438,0.438,0.849,72,True
-Bacaba-de-leque,,14.032,False,0.0689,50.0,0,0.426,0.426,0.849,72,True
-Bacupari-mirim,,14.315,False,0.0676,50.0,0,0.434,0.434,0.849,72,True
+Bacaba-de-leque,,14.032,False,0.069,50.0,0,0.426,0.426,0.849,72,True
+Bacupari-mirim,,14.315,False,0.0676,50.0,0,0.435,0.435,0.849,72,True
 Bacuri-de-anta,,13.886,False,0.0706,50.0,0,0.42,0.42,0.849,72,True
-Bergamota-montenegrina,,14.256,False,0.0677,50.0,0,0.434,0.434,0.849,72,True
+Bergamota-montenegrina,,14.256,False,0.0678,50.0,0,0.435,0.435,0.849,72,True
 Biribá-do-pará,,13.972,False,0.0691,50.0,0,0.426,0.426,0.849,72,True
 Butiá,,14.654,False,0.0684,45.0,11742,0.431,0.431,0.849,72,True
-Cabeludinha-amarela,,13.92,False,0.0696,50.0,0,0.426,0.426,0.849,72,True
-Carambola azeda,,14.23,False,0.0681,50.0,0,0.432,0.432,0.849,72,True
+Cabeludinha-amarela,,13.92,False,0.0697,50.0,0,0.426,0.426,0.849,72,True
+Carambola azeda,,14.23,False,0.0681,50.0,0,0.433,0.433,0.849,72,True
 Cereja amarena,,14.586,False,0.0666,50.0,0,0.441,0.441,0.849,72,True
 Coquinho-azedo,,14.072,False,0.0686,50.0,0,0.43,0.43,0.849,72,True
 Feijoa-gigante,,14.022,False,0.0688,50.0,0,0.426,0.426,0.849,72,True
-Groselha-espinhosa,,14.146,False,0.0682,50.0,0,0.431,0.431,0.849,72,True
-Grumixama-roxa,,14.825,False,0.0658,50.0,0,0.445,0.445,0.849,72,True
+Groselha-espinhosa,,14.146,False,0.0683,50.0,0,0.431,0.431,0.849,72,True
+Grumixama-roxa,,14.825,False,0.0658,50.0,0,0.446,0.446,0.849,72,True
 Jabuticaba coroada,,13.886,False,0.0704,50.0,0,0.42,0.42,0.849,72,True
 Jabuticaba híbrida,,13.886,False,0.0702,50.0,0,0.42,0.42,0.849,72,True
 Jambolão-roxo,,13.953,False,0.0695,50.0,0,0.426,0.426,0.849,72,True
-Lichia bengal,,14.774,False,0.0659,50.0,0,0.445,0.445,0.849,72,True
+Lichia bengal,,14.774,False,0.0659,50.0,0,0.446,0.446,0.849,72,True
 Lúcuma-do-peru,,14.719,False,0.0661,50.0,0,0.443,0.443,0.849,72,True
-Manga Nam Dok Mai,,14.416,False,0.0667,50.0,0,0.438,0.438,0.849,72,True
+Manga Nam Dok Mai,,14.416,False,0.0668,50.0,0,0.438,0.438,0.849,72,True
 Maçã Reineta,,13.947,False,0.0693,50.0,0,0.426,0.426,0.849,72,True
 Mirtilo highbush,,14.342,False,0.0672,50.0,0,0.438,0.438,0.849,72,True
 Mirtilo rabbiteye,,14.342,False,0.0671,50.0,0,0.438,0.438,0.849,72,True
-Pêssego chimarrita,,14.835,False,0.0656,50.0,0,0.445,0.445,0.849,72,True
-Safou,,15.235,False,0.0653,50.0,0,0.448,0.448,0.849,72,True
-Tumbo-do-peru,,14.898,False,0.0655,50.0,0,0.447,0.447,0.849,72,True
+Pêssego chimarrita,,14.835,False,0.0656,50.0,0,0.446,0.446,0.849,72,True
+Safou,,15.235,False,0.0653,50.0,0,0.449,0.449,0.849,72,True
+Tumbo-do-peru,,14.898,False,0.0655,50.0,0,0.448,0.448,0.849,72,True
 Tâmara deglet nour,,14.672,False,0.0664,50.0,0,0.443,0.443,0.849,72,True
 Tâmara medjool,medjool,14.672,False,0.0663,50.0,0,0.443,0.443,0.849,72,True
 Uxi-liso,,13.884,False,0.07,50.0,0,0.42,0.42,0.849,72,True
-Abiurana,,18.539,False,0.0632,50.0,0,0.461,0.461,0.854,73,True
-Achachairu,,20.0,True,0.062,50.0,0,0.479,0.479,0.854,73,True
-Ackee,,20.0,True,0.0619,50.0,0,0.479,0.479,0.854,73,True
-Amelanchier,juneberry,20.0,True,0.0617,50.0,0,0.479,0.479,0.854,73,True
-Amla,groselha-indiana,12.918,False,0.0616,50.0,0,0.479,0.479,0.854,73,True
-Araticum-cagão,,15.425,False,0.0651,50.0,0,0.449,0.449,0.854,73,True
-Asimina,pawpaw,18.822,False,0.063,50.0,0,0.462,0.462,0.854,73,True
+Abiurana,,18.539,False,0.0632,50.0,0,0.462,0.462,0.854,73,True
+Achachairu,,20.0,True,0.062,50.0,0,0.48,0.48,0.854,73,True
+Ackee,,20.0,True,0.0619,50.0,0,0.48,0.48,0.854,73,True
+Amelanchier,juneberry,20.0,True,0.0617,50.0,0,0.48,0.48,0.854,73,True
+Amla,groselha-indiana,12.918,False,0.0616,50.0,0,0.48,0.48,0.854,73,True
+Araticum-cagão,,15.425,False,0.0652,50.0,0,0.45,0.45,0.854,73,True
+Asimina,pawpaw,18.822,False,0.063,50.0,0,0.463,0.463,0.854,73,True
 Atemoia-gefner,,17.611,False,0.0639,50.0,0,0.457,0.457,0.854,73,True
-Bael,,20.0,True,0.0615,50.0,0,0.479,0.479,0.854,73,True
-Bignay,,20.0,True,0.0613,50.0,0,0.479,0.479,0.854,73,True
-Bilberry,mirtilo-europeu,12.28,False,0.0612,50.0,0,0.479,0.479,0.854,73,True
+Bael,,20.0,True,0.0615,50.0,0,0.48,0.48,0.854,73,True
+Bignay,,20.0,True,0.0613,50.0,0,0.48,0.48,0.854,73,True
+Bilberry,mirtilo-europeu,12.28,False,0.0612,50.0,0,0.48,0.48,0.854,73,True
 Caraguatá,,16.717,False,0.0644,50.0,0,0.454,0.454,0.854,73,True
-Citrange,,20.0,True,0.061,50.0,0,0.479,0.479,0.854,73,True
-Citrumelo,,20.0,True,0.0609,50.0,0,0.479,0.479,0.854,73,True
-Crowberry,,20.0,True,0.0608,50.0,0,0.479,0.479,0.854,73,True
-Curuba,,18.277,False,0.0635,50.0,0,0.459,0.459,0.854,73,True
-Dewberry,,20.0,True,0.0606,50.0,0,0.479,0.479,0.854,73,True
-Gac,,20.0,True,0.0605,50.0,0,0.479,0.479,0.854,73,True
-Guaba,,20.0,True,0.0604,50.0,0,0.479,0.479,0.854,73,True
-Guapeva,,18.401,False,0.0633,50.0,0,0.46,0.46,0.854,73,True
+Citrange,,20.0,True,0.0611,50.0,0,0.48,0.48,0.854,73,True
+Citrumelo,,20.0,True,0.0609,50.0,0,0.48,0.48,0.854,73,True
+Crowberry,,20.0,True,0.0608,50.0,0,0.48,0.48,0.854,73,True
+Curuba,,18.277,False,0.0635,50.0,0,0.46,0.46,0.854,73,True
+Dewberry,,20.0,True,0.0606,50.0,0,0.48,0.48,0.854,73,True
+Gac,,20.0,True,0.0605,50.0,0,0.48,0.48,0.854,73,True
+Guapeva,,18.401,False,0.0633,50.0,0,0.461,0.461,0.854,73,True
 Ilama,,19.821,False,0.0622,50.0,0,0.468,0.468,0.854,73,True
 Jambolão,azeitona-preta | jamelão,16.703,False,0.0638,40.0,23316,0.458,0.458,0.854,73,True
 Longana,,19.582,False,0.0623,50.0,0,0.467,0.467,0.854,73,True
-Mabolo,velvet apple,19.499,False,0.0624,50.0,0,0.466,0.466,0.854,73,True
+Mabolo,velvet apple,19.499,False,0.0625,50.0,0,0.466,0.466,0.854,73,True
 Mamãozinho,,18.039,False,0.0636,50.0,0,0.459,0.459,0.854,73,True
 Manga Haden,,15.861,False,0.0648,50.0,0,0.451,0.451,0.854,73,True
 Marula,,16.322,False,0.0645,50.0,0,0.453,0.453,0.854,73,True
-Pajurá,,19.294,False,0.0629,50.0,0,0.463,0.463,0.854,73,True
-Pindaíba,,15.637,False,0.065,50.0,0,0.45,0.45,0.854,73,True
+Pajurá,,19.294,False,0.0629,50.0,0,0.464,0.464,0.854,73,True
+Pindaíba,,15.637,False,0.065,50.0,0,0.451,0.451,0.854,73,True
 Pitaia-do-saguaro,fruto do saguaro,16.869,False,0.0642,50.0,0,0.455,0.455,0.854,73,True
 Pitangão,,19.428,False,0.0626,50.0,0,0.466,0.466,0.854,73,True
 Pitomba,,15.992,False,0.0641,40.0,9168,0.456,0.456,0.854,73,True
-Rambutã,,19.389,False,0.0627,50.0,0,0.464,0.464,0.854,73,True
+Rambutã,,19.389,False,0.0627,50.0,0,0.465,0.465,0.854,73,True
 Uva Muscadínia,,16.177,False,0.0647,50.0,0,0.452,0.452,0.854,73,True
-Ameixa-japonesa,,11.89,False,0.0588,30.0,28434,0.491,0.491,0.86,74,True
-Ameixa-preta,ameixa seca,11.353,False,0.0585,,3828,0.493,0.493,0.86,74,True
+Ameixa-japonesa,,11.89,False,0.0588,30.0,28434,0.492,0.492,0.86,74,True
+Ameixa-preta,ameixa seca,11.353,False,0.0586,,3828,0.494,0.494,0.86,74,True
 Caju-do-campo,,10.367,False,0.0566,30.0,0,0.508,0.508,0.86,74,True
 Cereja-da-terra,,10.185,False,0.0579,30.0,0,0.498,0.498,0.86,74,True
 Groselha-negra,cassis,12.11,False,0.0578,,11310,0.503,0.503,0.86,74,True
-Huckleberry,,20.0,True,0.0602,50.0,0,0.479,0.479,0.86,74,True
-Jocote,,20.0,True,0.0601,50.0,0,0.479,0.479,0.86,74,True
-Kepel,,20.0,True,0.06,50.0,0,0.479,0.479,0.86,74,True
+Guaba,,20.0,True,0.0604,50.0,0,0.48,0.48,0.86,74,True
+Huckleberry,,20.0,True,0.0602,50.0,0,0.48,0.48,0.86,74,True
+Jocote,,20.0,True,0.0601,50.0,0,0.48,0.48,0.86,74,True
+Kepel,,20.0,True,0.06,50.0,0,0.48,0.48,0.86,74,True
 Laranja Jaffa,,10.278,False,0.0577,30.0,0,0.503,0.503,0.86,74,True
-Laranja Kinkan Nagami,,10.278,False,0.0575,30.0,0,0.503,0.503,0.86,74,True
+Laranja Kinkan Nagami,,10.278,False,0.0576,30.0,0,0.503,0.503,0.86,74,True
 Laranja Piralima,,10.278,False,0.0574,30.0,0,0.503,0.503,0.86,74,True
 Laranja Salustiana,,10.278,False,0.0573,30.0,0,0.503,0.503,0.86,74,True
 Laranja Sanguinelli,,10.278,False,0.0572,30.0,0,0.503,0.503,0.86,74,True
 Laranja Shamouti,,10.278,False,0.0571,30.0,0,0.503,0.503,0.86,74,True
-Laranja Tarocco,,10.278,False,0.0569,30.0,0,0.503,0.503,0.86,74,True
+Laranja Tarocco,,10.278,False,0.057,30.0,0,0.503,0.503,0.86,74,True
 Laranja Washington Navel,,10.278,False,0.0568,30.0,0,0.503,0.503,0.86,74,True
 Laranja Westin,,10.278,False,0.0567,30.0,0,0.503,0.503,0.86,74,True
-Limequat,,20.0,True,0.0598,50.0,0,0.479,0.479,0.86,74,True
-Limão Femminello,,10.602,False,0.0562,30.0,0,0.512,0.512,0.86,74,True
-Limão Lisboa,,9.825,False,0.0582,30.0,0,0.496,0.496,0.86,74,True
-Limão Ponderosa,,10.602,False,0.0561,30.0,0,0.512,0.512,0.86,74,True
-Mata-kucing,,9.872,False,0.058,30.0,0,0.496,0.496,0.86,74,True
-Minneola,,20.0,True,0.0597,50.0,0,0.479,0.479,0.86,74,True
+Limequat,,20.0,True,0.0598,50.0,0,0.48,0.48,0.86,74,True
+Limão Femminello,,10.602,False,0.0562,30.0,0,0.513,0.513,0.86,74,True
+Limão Lisboa,,9.825,False,0.0582,30.0,0,0.497,0.497,0.86,74,True
+Mata-kucing,,9.872,False,0.0581,30.0,0,0.497,0.497,0.86,74,True
+Minneola,,20.0,True,0.0597,50.0,0,0.48,0.48,0.86,74,True
 Morango Festival,,10.564,False,0.0564,30.0,0,0.51,0.51,0.86,74,True
-Ortanique,,20.0,True,0.0596,50.0,0,0.479,0.479,0.86,74,True
-Pacay,,20.0,True,0.0594,50.0,0,0.479,0.479,0.86,74,True
+Ortanique,,20.0,True,0.0596,50.0,0,0.48,0.48,0.86,74,True
+Pacay,,20.0,True,0.0594,50.0,0,0.48,0.48,0.86,74,True
 Pera Santa Maria,,9.74,False,0.0583,30.0,0,0.495,0.495,0.86,74,True
 Pera-do-campo,,10.468,False,0.0565,30.0,0,0.509,0.509,0.86,74,True
-Persimmon americano,,9.43,False,0.0587,30.0,0,0.492,0.492,0.86,74,True
-Pulasã,,20.0,True,0.0593,50.0,0,0.479,0.479,0.86,74,True
-Salmonberry,,20.0,True,0.0592,50.0,0,0.479,0.479,0.86,74,True
-Thimbleberry,,20.0,True,0.059,50.0,0,0.479,0.479,0.86,74,True
-Tucumã,,14.969,False,0.0584,35.0,13818,0.493,0.493,0.86,74,True
-Yangmei,morango chinês,11.28,False,0.0589,50.0,0,0.479,0.479,0.86,74,True
-Amora-branca-chinesa,,11.078,False,0.0535,30.0,0,0.535,0.535,0.866,75,True
-Amêndoa-de-praia,castanhola,10.803,False,0.0539,30.0,0,0.531,0.531,0.866,75,True
+Persimmon americano,,9.43,False,0.0587,30.0,0,0.493,0.493,0.86,74,True
+Pulasã,,20.0,True,0.0593,50.0,0,0.48,0.48,0.86,74,True
+Salmonberry,,20.0,True,0.0592,50.0,0,0.48,0.48,0.86,74,True
+Thimbleberry,,20.0,True,0.0591,50.0,0,0.48,0.48,0.86,74,True
+Tucumã,,14.969,False,0.0584,35.0,13818,0.494,0.494,0.86,74,True
+Yangmei,morango chinês,11.28,False,0.0589,50.0,0,0.48,0.48,0.86,74,True
+Amora-branca-chinesa,,11.078,False,0.0535,30.0,0,0.536,0.536,0.866,75,True
+Amêndoa-de-praia,castanhola,10.803,False,0.0539,30.0,0,0.532,0.532,0.866,75,True
 Cacau-do-mato,,10.635,False,0.0558,30.0,0,0.515,0.515,0.866,75,True
-Cereja-negra,,11.091,False,0.0534,30.0,0,0.535,0.535,0.866,75,True
-Juazeiro (fruto),,11.078,False,0.0533,30.0,0,0.535,0.535,0.866,75,True
-Limão Primofiori,,10.602,False,0.056,30.0,0,0.512,0.512,0.866,75,True
-Limão Volkameriano,,10.602,False,0.0559,30.0,0,0.512,0.512,0.866,75,True
-Manga Banganapalli,,10.787,False,0.0555,30.0,0,0.523,0.523,0.866,75,True
+Cereja-negra,,11.091,False,0.0534,30.0,0,0.536,0.536,0.866,75,True
+Juazeiro (fruto),,11.078,False,0.0533,30.0,0,0.536,0.536,0.866,75,True
+Limão Ponderosa,,10.602,False,0.0561,30.0,0,0.513,0.513,0.866,75,True
+Limão Primofiori,,10.602,False,0.056,30.0,0,0.513,0.513,0.866,75,True
+Limão Volkameriano,,10.602,False,0.0559,30.0,0,0.513,0.513,0.866,75,True
+Manga Banganapalli,,10.787,False,0.0556,30.0,0,0.523,0.523,0.866,75,True
 Manga Carabao,,10.787,False,0.0554,30.0,0,0.523,0.523,0.866,75,True
 Manga Chaunsa,,10.787,False,0.0553,30.0,0,0.523,0.523,0.866,75,True
 Manga Dasheri,,10.787,False,0.0552,30.0,0,0.523,0.523,0.866,75,True
@@ -566,25 +566,25 @@ Manga Irwin,,10.787,False,0.055,30.0,0,0.523,0.523,0.866,75,True
 Manga Itamaracá,,10.787,False,0.0549,30.0,0,0.523,0.523,0.866,75,True
 Manga Kensington Pride,,10.787,False,0.0548,30.0,0,0.523,0.523,0.866,75,True
 Manga Lancetilla,,10.787,False,0.0547,30.0,0,0.523,0.523,0.866,75,True
-Manga Maya,,10.787,False,0.0545,30.0,0,0.523,0.523,0.866,75,True
+Manga Maya,,10.787,False,0.0546,30.0,0,0.523,0.523,0.866,75,True
 Manga Omer,,10.787,False,0.0544,30.0,0,0.523,0.523,0.866,75,True
 Manga Parvin,,10.787,False,0.0543,30.0,0,0.523,0.523,0.866,75,True
 Manga R2E2,,10.787,False,0.0542,30.0,0,0.523,0.523,0.866,75,True
 Manga Totapuri,,10.787,False,0.0541,30.0,0,0.523,0.523,0.866,75,True
 Manga Van Dyke,,10.716,False,0.0557,30.0,0,0.515,0.515,0.866,75,True
 Manga Zill,,10.787,False,0.054,30.0,0,0.523,0.523,0.866,75,True
-Maracujá-de-pedra,,10.993,False,0.0536,30.0,0,0.533,0.533,0.866,75,True
+Maracujá-de-pedra,,10.993,False,0.0536,30.0,0,0.534,0.534,0.866,75,True
 Maçã Annurca,,11.175,False,0.0531,30.0,0,0.549,0.549,0.866,75,True
-Maçã Baldwin,,11.175,False,0.0529,30.0,0,0.549,0.549,0.866,75,True
-Maçã Belle de Boskoop,,11.175,False,0.0528,30.0,0,0.549,0.549,0.866,75,True
-Maçã Bramley,,11.175,False,0.0527,30.0,0,0.549,0.549,0.866,75,True
-Maçã Calville,,11.175,False,0.0526,30.0,0,0.549,0.549,0.866,75,True
-Maçã Cox,,11.175,False,0.0525,30.0,0,0.549,0.549,0.866,75,True
-Maçã Princesa,,10.822,False,0.0538,30.0,0,0.531,0.531,0.866,75,True
-Melancia Black Diamond,,11.127,False,0.0532,30.0,0,0.535,0.535,0.866,75,True
-Morango Campinas,,10.816,False,0.0537,30.0,0,0.531,0.531,0.866,75,True
+Maçã Baldwin,,11.175,False,0.053,30.0,0,0.549,0.549,0.866,75,True
+Maçã Belle de Boskoop,,11.175,False,0.0529,30.0,0,0.549,0.549,0.866,75,True
+Maçã Bramley,,11.175,False,0.0528,30.0,0,0.549,0.549,0.866,75,True
+Maçã Calville,,11.175,False,0.0527,30.0,0,0.549,0.549,0.866,75,True
+Maçã Cox,,11.175,False,0.0526,30.0,0,0.549,0.549,0.866,75,True
+Maçã Princesa,,10.822,False,0.0538,30.0,0,0.532,0.532,0.866,75,True
+Melancia Black Diamond,,11.127,False,0.0532,30.0,0,0.536,0.536,0.866,75,True
+Morango Campinas,,10.816,False,0.0537,30.0,0,0.532,0.532,0.866,75,True
 Ameixa-do-mato,,11.298,False,0.05,30.0,0,0.564,0.564,0.872,76,True
-Caju-de-árvore-do-cerrado,,11.412,False,0.0497,30.0,0,0.58,0.58,0.872,76,True
+Caju-de-árvore-do-cerrado,,11.412,False,0.0498,30.0,0,0.58,0.58,0.872,76,True
 Cambuí-preto,,11.425,False,0.0497,30.0,0,0.58,0.58,0.872,76,True
 Cereja-do-chile,,11.41,False,0.0496,30.0,0,0.58,0.58,0.872,76,True
 Fruta-de-macaco,,11.245,False,0.0501,30.0,0,0.564,0.564,0.872,76,True
@@ -594,17 +594,17 @@ Juçara,,14.661,False,0.0504,30.0,11820,0.564,0.564,0.872,76,True
 Marmelada-do-campo,,11.204,False,0.0503,30.0,0,0.564,0.564,0.872,76,True
 Maçã Daiane,,11.175,False,0.0524,30.0,0,0.549,0.549,0.872,76,True
 Maçã Elstar,,11.175,False,0.0523,30.0,0,0.549,0.549,0.872,76,True
-Maçã Fuji Suprema,,11.385,False,0.0498,30.0,0,0.58,0.58,0.872,76,True
+Maçã Fuji Suprema,,11.385,False,0.0499,30.0,0,0.58,0.58,0.872,76,True
 Maçã Gravenstein,,11.175,False,0.0522,30.0,0,0.549,0.549,0.872,76,True
 Maçã Idared,,11.175,False,0.0521,30.0,0,0.549,0.549,0.872,76,True
 Maçã Jonathan,,11.175,False,0.052,30.0,0,0.549,0.549,0.872,76,True
 Maçã Melrose,,11.175,False,0.0519,30.0,0,0.549,0.549,0.872,76,True
 Maçã Monalisa,,11.175,False,0.0518,30.0,0,0.549,0.549,0.872,76,True
 Maçã Mutsu,,11.175,False,0.0517,30.0,0,0.549,0.549,0.872,76,True
-Maçã Northern Spy,,11.175,False,0.0516,30.0,0,0.549,0.549,0.872,76,True
-Maçã Opal,,11.175,False,0.0515,30.0,0,0.549,0.549,0.872,76,True
-Maçã Pink Pearl,,11.175,False,0.0514,30.0,0,0.549,0.549,0.872,76,True
-Maçã Pippin,,11.175,False,0.0513,30.0,0,0.549,0.549,0.872,76,True
+Maçã Northern Spy,,11.175,False,0.0517,30.0,0,0.549,0.549,0.872,76,True
+Maçã Opal,,11.175,False,0.0516,30.0,0,0.549,0.549,0.872,76,True
+Maçã Pink Pearl,,11.175,False,0.0515,30.0,0,0.549,0.549,0.872,76,True
+Maçã Pippin,,11.175,False,0.0514,30.0,0,0.549,0.549,0.872,76,True
 Maçã Rome Beauty,,11.175,False,0.0513,30.0,0,0.549,0.549,0.872,76,True
 Maçã Rubens,,11.175,False,0.0512,30.0,0,0.549,0.549,0.872,76,True
 Maçã Sekai Ichi,,11.175,False,0.0511,30.0,0,0.549,0.549,0.872,76,True
@@ -617,314 +617,314 @@ Uva Barbera,,11.398,False,0.0495,30.0,0,0.58,0.58,0.872,76,True
 Uva Carménère,,11.398,False,0.0494,30.0,0,0.58,0.58,0.872,76,True
 Uva Chenin Blanc,,11.398,False,0.0493,30.0,0,0.58,0.58,0.872,76,True
 Uva Touriga Nacional,,11.199,False,0.0502,30.0,0,0.564,0.564,0.872,76,True
-Ameixa Black Amber,,11.489,False,0.0476,30.0,0,0.594,0.594,0.877,77,True
-Ameixa-europeia,,11.548,False,0.0473,30.0,0,0.594,0.594,0.877,77,True
-Araticum-de-terra-fria,,11.603,False,0.0471,30.0,0,0.603,0.603,0.877,77,True
-Baru,,15.091,False,0.0475,30.0,11178,0.594,0.594,0.877,77,True
-Bel (fruta),,11.518,False,0.0472,30.0,0,0.594,0.594,0.877,77,True
-Butiá-da-praia,,11.707,False,0.0466,30.0,0,0.603,0.603,0.877,77,True
-Laranja Lane Late,,11.716,False,0.0465,30.0,0,0.603,0.603,0.877,77,True
-Laranja Rubi,,11.472,False,0.0477,30.0,0,0.594,0.594,0.877,77,True
-Mandacaru,fruta do mandacaru,14.271,False,0.0474,30.0,16506,0.594,0.594,0.877,77,True
-Maçã Royal Gala,,11.629,False,0.047,30.0,0,0.603,0.603,0.877,77,True
-Morango Aromas,,11.614,False,0.0468,30.0,0,0.603,0.603,0.877,77,True
-Morango Dover,,11.614,False,0.0468,30.0,0,0.603,0.603,0.877,77,True
-Morango Pircinque,,11.614,False,0.0467,30.0,0,0.603,0.603,0.877,77,True
-Morango Sabrina,,11.719,False,0.0464,30.0,0,0.603,0.603,0.877,77,True
-Morango-amaou,,11.614,False,0.0469,30.0,0,0.603,0.603,0.877,77,True
+Ameixa Black Amber,,11.489,False,0.0476,30.0,0,0.595,0.595,0.877,77,True
+Ameixa-europeia,,11.548,False,0.0473,30.0,0,0.595,0.595,0.877,77,True
+Araticum-de-terra-fria,,11.603,False,0.0471,30.0,0,0.604,0.604,0.877,77,True
+Baru,,15.091,False,0.0475,30.0,11178,0.595,0.595,0.877,77,True
+Bel (fruta),,11.518,False,0.0472,30.0,0,0.595,0.595,0.877,77,True
+Butiá-da-praia,,11.707,False,0.0466,30.0,0,0.604,0.604,0.877,77,True
+Laranja Lane Late,,11.716,False,0.0465,30.0,0,0.604,0.604,0.877,77,True
+Laranja Rubi,,11.472,False,0.0477,30.0,0,0.595,0.595,0.877,77,True
+Mandacaru,fruta do mandacaru,14.271,False,0.0474,30.0,16506,0.595,0.595,0.877,77,True
+Maçã Royal Gala,,11.629,False,0.047,30.0,0,0.604,0.604,0.877,77,True
+Morango Aromas,,11.614,False,0.0468,30.0,0,0.604,0.604,0.877,77,True
+Morango Dover,,11.614,False,0.0468,30.0,0,0.604,0.604,0.877,77,True
+Morango Pircinque,,11.614,False,0.0467,30.0,0,0.604,0.604,0.877,77,True
+Morango-amaou,,11.614,False,0.0469,30.0,0,0.604,0.604,0.877,77,True
 Uva Couderc,,11.398,False,0.0492,30.0,0,0.58,0.58,0.877,77,True
 Uva Fiano,,11.398,False,0.0491,30.0,0,0.58,0.58,0.877,77,True
 Uva Gamay,,11.398,False,0.049,30.0,0,0.58,0.58,0.877,77,True
-Uva Glera,,11.398,False,0.0489,30.0,0,0.58,0.58,0.877,77,True
+Uva Glera,,11.398,False,0.049,30.0,0,0.58,0.58,0.877,77,True
 Uva Goethe,,11.398,False,0.0489,30.0,0,0.58,0.58,0.877,77,True
 Uva Herbemont,,11.398,False,0.0488,30.0,0,0.58,0.58,0.877,77,True
 Uva Jacquez,,11.398,False,0.0487,30.0,0,0.58,0.58,0.877,77,True
 Uva Montepulciano,,11.398,False,0.0485,30.0,0,0.58,0.58,0.877,77,True
 Uva Moscato Giallo,,11.398,False,0.0484,30.0,0,0.58,0.58,0.877,77,True
 Uva Mourvèdre,,11.398,False,0.0483,30.0,0,0.58,0.58,0.877,77,True
-Uva Petit Verdot,,11.398,False,0.0482,30.0,0,0.58,0.58,0.877,77,True
+Uva Petit Verdot,,11.398,False,0.0483,30.0,0,0.58,0.58,0.877,77,True
 Uva Pinot Grigio,,11.398,False,0.0482,30.0,0,0.58,0.58,0.877,77,True
 Uva Seibel,,11.398,False,0.0481,30.0,0,0.58,0.58,0.877,77,True
 Uva Sémillon,,11.398,False,0.048,30.0,0,0.58,0.58,0.877,77,True
 Uva Torrontés,,11.398,False,0.0478,30.0,0,0.58,0.58,0.877,77,True
 Uva Viognier,,11.398,False,0.0477,30.0,0,0.58,0.58,0.877,77,True
-Uva-do-cerrado,,11.593,False,0.0472,30.0,0,0.597,0.597,0.877,77,True
+Uva-do-cerrado,,11.593,False,0.0472,30.0,0,0.598,0.598,0.877,77,True
 Uva-kyoho,,11.398,False,0.0486,30.0,0,0.58,0.58,0.877,77,True
 Uva-shine-muscat,,11.398,False,0.0479,30.0,0,0.58,0.58,0.877,77,True
-Abacate Bacon,,12.219,False,0.0442,30.0,0,0.632,0.632,0.883,78,True
-Ameixa-chinesa,,12.042,False,0.0451,30.0,0,0.624,0.624,0.883,78,True
-Cacau-jacaré,,11.931,False,0.0456,30.0,0,0.615,0.615,0.883,78,True
-Cambuí-amarelo,,12.038,False,0.045,30.0,0,0.624,0.624,0.883,78,True
+Abacate Bacon,,12.219,False,0.0442,30.0,0,0.633,0.633,0.883,78,True
+Ameixa-chinesa,,12.042,False,0.0451,30.0,0,0.625,0.625,0.883,78,True
+Cacau-jacaré,,11.931,False,0.0456,30.0,0,0.616,0.616,0.883,78,True
+Cambuí-amarelo,,12.038,False,0.0451,30.0,0,0.625,0.625,0.883,78,True
 Caqui-japonês,,12.324,False,0.0442,30.0,0,0.635,0.635,0.883,78,True
-Castanha de caju,,12.195,False,0.044,,29838,0.638,0.638,0.883,78,True
-Cereja-mazzard,,12.108,False,0.0449,30.0,0,0.624,0.624,0.883,78,True
-Espinheiro-amarelo,,12.19,False,0.0443,30.0,0,0.632,0.632,0.883,78,True
-Fruta-de-anta,,11.964,False,0.0454,30.0,0,0.619,0.619,0.883,78,True
-Fruta-de-ema,,11.984,False,0.0453,30.0,0,0.619,0.619,0.883,78,True
-Fruta-do-pavão,,11.896,False,0.0458,30.0,0,0.615,0.615,0.883,78,True
-Fruto de roseira,rosa-canina,12.046,False,0.045,30.0,0,0.624,0.624,0.883,78,True
-Jambo-do-pará,,12.361,False,0.0439,30.0,0,0.638,0.638,0.883,78,True
-Manga Jasmim,,11.979,False,0.0453,30.0,0,0.619,0.619,0.883,78,True
+Castanha de caju,,12.195,False,0.044,,29838,0.639,0.639,0.883,78,True
+Cereja-mazzard,,12.108,False,0.0449,30.0,0,0.625,0.625,0.883,78,True
+Espinheiro-amarelo,,12.19,False,0.0443,30.0,0,0.633,0.633,0.883,78,True
+Fruta-de-anta,,11.964,False,0.0454,30.0,0,0.62,0.62,0.883,78,True
+Fruta-de-ema,,11.984,False,0.0454,30.0,0,0.62,0.62,0.883,78,True
+Fruta-do-pavão,,11.896,False,0.0458,30.0,0,0.616,0.616,0.883,78,True
+Fruto de roseira,rosa-canina,12.046,False,0.045,30.0,0,0.625,0.625,0.883,78,True
+Manga Jasmim,,11.979,False,0.0453,30.0,0,0.62,0.62,0.883,78,True
 Maracujá-de-maypop,maypop,12.305,False,0.0441,30.0,0,0.635,0.635,0.883,78,True
-Maracujá-mirim,,11.936,False,0.0455,30.0,0,0.615,0.615,0.883,78,True
+Maracujá-mirim,,11.936,False,0.0455,30.0,0,0.616,0.616,0.883,78,True
 Marmelada-de-cachorro,,12.149,False,0.0446,30.0,0,0.63,0.63,0.883,78,True
-Maçã Joaquina,,12.104,False,0.0448,30.0,0,0.624,0.624,0.883,78,True
+Maçã Joaquina,,12.104,False,0.0448,30.0,0,0.625,0.625,0.883,78,True
 Melancia Congo,,12.315,False,0.044,30.0,0,0.635,0.635,0.883,78,True
 Melancia Jubilee,,12.152,False,0.0445,30.0,0,0.63,0.63,0.883,78,True
 Melancia Moon and Stars,,12.152,False,0.0445,30.0,0,0.63,0.63,0.883,78,True
 Melancia Sugar Baby,,11.765,False,0.0461,30.0,0,0.611,0.611,0.883,78,True
-Murici-amarelo,,12.092,False,0.0447,30.0,0,0.624,0.624,0.883,78,True
-Murici-vermelho,,11.714,False,0.0464,30.0,0,0.603,0.603,0.883,78,True
-Pera-chinesa,,11.884,False,0.0457,30.0,0,0.615,0.615,0.883,78,True
-Pêssego Coral,,11.916,False,0.0457,30.0,0,0.615,0.615,0.883,78,True
+Morango Sabrina,,11.719,False,0.0464,30.0,0,0.604,0.604,0.883,78,True
+Murici-amarelo,,12.092,False,0.0448,30.0,0,0.625,0.625,0.883,78,True
+Murici-vermelho,,11.714,False,0.0464,30.0,0,0.604,0.604,0.883,78,True
+Pera-chinesa,,11.884,False,0.0457,30.0,0,0.616,0.616,0.883,78,True
+Pêssego Coral,,11.916,False,0.0457,30.0,0,0.616,0.616,0.883,78,True
 Rosa-mosqueta,,12.151,False,0.0444,30.0,0,0.63,0.63,0.883,78,True
 Sabugueiro-preto,,11.858,False,0.046,30.0,0,0.611,0.611,0.883,78,True
-Sabugueiro-vermelho,,12.092,False,0.0447,30.0,0,0.624,0.624,0.883,78,True
+Sabugueiro-vermelho,,12.092,False,0.0447,30.0,0,0.625,0.625,0.883,78,True
 Sete-capotes-do-mato,,11.816,False,0.046,30.0,0,0.611,0.611,0.883,78,True
 Uva Lorena,,11.721,False,0.0462,30.0,0,0.609,0.609,0.883,78,True
 Uva Nero d'Avola,,11.862,False,0.0459,30.0,0,0.611,0.611,0.883,78,True
-Uva Primitivo,,11.975,False,0.0452,30.0,0,0.619,0.619,0.883,78,True
-Uva-raposa,,11.708,False,0.0463,30.0,0,0.603,0.603,0.883,78,True
-Abacate Choquette,,12.571,False,0.0428,30.0,0,0.657,0.657,0.889,79,True
-Abacate Collinson,,12.571,False,0.0427,30.0,0,0.657,0.657,0.889,79,True
-Abacate Fuerte,,12.571,False,0.0426,30.0,0,0.657,0.657,0.889,79,True
-Abacate Lamb Hass,,12.571,False,0.0426,30.0,0,0.657,0.657,0.889,79,True
-Abacate Pinkerton,,12.571,False,0.0425,30.0,0,0.657,0.657,0.889,79,True
-Abacate Reed,,12.571,False,0.0424,30.0,0,0.657,0.657,0.889,79,True
-Abacate Simmonds,,12.571,False,0.0424,30.0,0,0.657,0.657,0.889,79,True
-Abacate Zutano,,12.571,False,0.0423,30.0,0,0.657,0.657,0.889,79,True
-Acerola-do-cerrado,,12.812,False,0.0413,30.0,0,0.672,0.672,0.889,79,True
+Uva Primitivo,,11.975,False,0.0452,30.0,0,0.62,0.62,0.883,78,True
+Uva-raposa,,11.708,False,0.0463,30.0,0,0.604,0.604,0.883,78,True
+Abacate Choquette,,12.571,False,0.0428,30.0,0,0.658,0.658,0.889,79,True
+Abacate Collinson,,12.571,False,0.0427,30.0,0,0.658,0.658,0.889,79,True
+Abacate Fuerte,,12.571,False,0.0427,30.0,0,0.658,0.658,0.889,79,True
+Abacate Lamb Hass,,12.571,False,0.0426,30.0,0,0.658,0.658,0.889,79,True
+Abacate Pinkerton,,12.571,False,0.0425,30.0,0,0.658,0.658,0.889,79,True
+Abacate Reed,,12.571,False,0.0425,30.0,0,0.658,0.658,0.889,79,True
+Abacate Simmonds,,12.571,False,0.0424,30.0,0,0.658,0.658,0.889,79,True
+Abacate Zutano,,12.571,False,0.0423,30.0,0,0.658,0.658,0.889,79,True
+Acerola-do-cerrado,,12.812,False,0.0413,30.0,0,0.673,0.673,0.889,79,True
 Babaçu-do-maranhão,,12.407,False,0.0437,30.0,0,0.643,0.643,0.889,79,True
-Baobá (fruto),múcua,12.699,False,0.042,30.0,0,0.665,0.665,0.889,79,True
-Buriti-do-brejo,,12.672,False,0.0422,30.0,0,0.657,0.657,0.889,79,True
-Cambucá-doce,,12.847,False,0.0412,30.0,0,0.672,0.672,0.889,79,True
+Baobá (fruto),múcua,12.699,False,0.0421,30.0,0,0.666,0.666,0.889,79,True
+Buriti-do-brejo,,12.672,False,0.0423,30.0,0,0.658,0.658,0.889,79,True
 Ingá-banana,,12.464,False,0.0435,30.0,0,0.643,0.643,0.889,79,True
+Jambo-do-pará,,12.361,False,0.0439,30.0,0,0.639,0.639,0.889,79,True
 Jatobá-mirim,,12.475,False,0.0435,30.0,0,0.643,0.643,0.889,79,True
-Jujuba-chinesa,,12.67,False,0.0422,30.0,0,0.657,0.657,0.889,79,True
+Jujuba-chinesa,,12.67,False,0.0422,30.0,0,0.658,0.658,0.889,79,True
 Manga Sabina,,12.559,False,0.0433,30.0,0,0.649,0.649,0.889,79,True
 Mangaba-da-mata,,12.568,False,0.0432,30.0,0,0.649,0.649,0.889,79,True
 Marmelo-europeu,,12.409,False,0.0436,30.0,0,0.643,0.643,0.889,79,True
-Melão-yubari,,12.685,False,0.0421,30.0,0,0.657,0.657,0.889,79,True
+Melão-yubari,,12.685,False,0.0421,30.0,0,0.658,0.658,0.889,79,True
 Pera Abate Fetel,,12.45,False,0.0434,30.0,0,0.643,0.643,0.889,79,True
 Pera Coscia,,12.559,False,0.0431,30.0,0,0.649,0.649,0.889,79,True
-Pera Hosui,,12.559,False,0.043,30.0,0,0.649,0.649,0.889,79,True
+Pera Hosui,,12.559,False,0.0431,30.0,0,0.649,0.649,0.889,79,True
 Pera Kosui,,12.559,False,0.043,30.0,0,0.649,0.649,0.889,79,True
 Pera Seckel,,12.559,False,0.0429,30.0,0,0.649,0.649,0.889,79,True
-Pera Shinseiki,,12.559,False,0.0428,30.0,0,0.649,0.649,0.889,79,True
+Pera Shinseiki,,12.559,False,0.0429,30.0,0,0.649,0.649,0.889,79,True
 Pêssego Eldorado,,12.505,False,0.0433,30.0,0,0.643,0.643,0.889,79,True
-Pêssego Flordaprince,,12.715,False,0.042,30.0,0,0.665,0.665,0.889,79,True
-Pêssego Maciel,,12.715,False,0.0419,30.0,0,0.665,0.665,0.889,79,True
-Pêssego Rubimel,,12.715,False,0.0418,30.0,0,0.665,0.665,0.889,79,True
-Pêssego Tropic Beauty,,12.715,False,0.0417,30.0,0,0.665,0.665,0.889,79,True
-Pêssego-hakuto,,12.715,False,0.0419,30.0,0,0.665,0.665,0.889,79,True
-Uva Cabernet Franc,,12.407,False,0.0438,30.0,0,0.638,0.638,0.889,79,True
-Uvaia-do-campo,,12.403,False,0.0437,30.0,0,0.638,0.638,0.889,79,True
-Acerola-roxa,,13.04,False,0.0402,30.0,0,0.689,0.689,0.894,80,True
-Ameixa Angeleno,,12.875,False,0.0411,30.0,0,0.68,0.68,0.894,80,True
-Ameixa Fortune,,12.875,False,0.041,30.0,0,0.68,0.68,0.894,80,True
-Ameixa Gulfblaze,,12.875,False,0.041,30.0,0,0.68,0.68,0.894,80,True
-Ameixa Laetitia,,12.875,False,0.0409,30.0,0,0.68,0.68,0.894,80,True
-Ameixa President,,12.875,False,0.0408,30.0,0,0.68,0.68,0.894,80,True
-Ameixa Reubennel,,12.875,False,0.0408,30.0,0,0.68,0.68,0.894,80,True
-Ameixa Stanley,,12.875,False,0.0407,30.0,0,0.68,0.68,0.894,80,True
-Araçá-mirim,,12.977,False,0.0405,30.0,0,0.689,0.689,0.894,80,True
-Araçá-piranga-vermelho,,12.968,False,0.0405,30.0,0,0.685,0.685,0.894,80,True
+Pêssego Flordaprince,,12.715,False,0.042,30.0,0,0.666,0.666,0.889,79,True
+Pêssego Maciel,,12.715,False,0.0419,30.0,0,0.666,0.666,0.889,79,True
+Pêssego Rubimel,,12.715,False,0.0418,30.0,0,0.666,0.666,0.889,79,True
+Pêssego Tropic Beauty,,12.715,False,0.0417,30.0,0,0.666,0.666,0.889,79,True
+Pêssego-hakuto,,12.715,False,0.0419,30.0,0,0.666,0.666,0.889,79,True
+Uva Cabernet Franc,,12.407,False,0.0438,30.0,0,0.639,0.639,0.889,79,True
+Uvaia-do-campo,,12.403,False,0.0437,30.0,0,0.639,0.639,0.889,79,True
+Acerola-roxa,,13.04,False,0.0402,30.0,0,0.69,0.69,0.894,80,True
+Ameixa Angeleno,,12.875,False,0.0411,30.0,0,0.681,0.681,0.894,80,True
+Ameixa Fortune,,12.875,False,0.041,30.0,0,0.681,0.681,0.894,80,True
+Ameixa Gulfblaze,,12.875,False,0.041,30.0,0,0.681,0.681,0.894,80,True
+Ameixa Laetitia,,12.875,False,0.0409,30.0,0,0.681,0.681,0.894,80,True
+Ameixa President,,12.875,False,0.0409,30.0,0,0.681,0.681,0.894,80,True
+Ameixa Reubennel,,12.875,False,0.0408,30.0,0,0.681,0.681,0.894,80,True
+Ameixa Stanley,,12.875,False,0.0407,30.0,0,0.681,0.681,0.894,80,True
+Araçá-mirim,,12.977,False,0.0405,30.0,0,0.69,0.69,0.894,80,True
+Araçá-piranga-vermelho,,12.968,False,0.0406,30.0,0,0.686,0.686,0.894,80,True
 Buriti-de-vereda,,13.331,False,0.0396,30.0,0,0.702,0.702,0.894,80,True
 Butiá-do-cerrado,,13.221,False,0.0398,30.0,0,0.696,0.696,0.894,80,True
-Camu-camu,,20.0,True,0.0401,35.0,8778,0.689,0.689,0.894,80,True
-Embaúba (fruto),,13.076,False,0.0401,30.0,0,0.689,0.689,0.894,80,True
+Cambucá-doce,,12.847,False,0.0412,30.0,0,0.673,0.673,0.894,80,True
+Camu-camu,,20.0,True,0.0401,35.0,8778,0.69,0.69,0.894,80,True
+Embaúba (fruto),,13.076,False,0.0401,30.0,0,0.69,0.69,0.894,80,True
 Fruta-de-cutia,,13.28,False,0.0397,30.0,0,0.702,0.702,0.894,80,True
-Fruta-de-jacu,,12.856,False,0.0407,30.0,0,0.68,0.68,0.894,80,True
-Fruta-de-paca,,12.753,False,0.0417,30.0,0,0.672,0.672,0.894,80,True
-Guaraná-da-amazônia,,12.734,False,0.0416,30.0,0,0.672,0.672,0.894,80,True
-Ingá-mirim,,12.775,False,0.0415,30.0,0,0.672,0.672,0.894,80,True
-Jenipapo-do-cerrado,,13.164,False,0.0399,30.0,0,0.696,0.696,0.894,80,True
-Manga Bacuri,,12.777,False,0.0415,30.0,0,0.672,0.672,0.894,80,True
-Maracujá-de-estalo,,12.992,False,0.0404,30.0,0,0.689,0.689,0.894,80,True
-Morango Monterey,,12.773,False,0.0414,30.0,0,0.672,0.672,0.894,80,True
-Nectarina Fantasia,,13.107,False,0.04,30.0,0,0.693,0.693,0.894,80,True
-Pequi-do-cerrado,,12.841,False,0.0412,30.0,0,0.672,0.672,0.894,80,True
-Pera Kaiser,,12.903,False,0.0406,30.0,0,0.68,0.68,0.894,80,True
-Pinhão,,12.763,False,0.0404,,15480,0.689,0.689,0.894,80,True
+Fruta-de-jacu,,12.856,False,0.0407,30.0,0,0.681,0.681,0.894,80,True
+Fruta-de-paca,,12.753,False,0.0417,30.0,0,0.673,0.673,0.894,80,True
+Guaraná-da-amazônia,,12.734,False,0.0416,30.0,0,0.673,0.673,0.894,80,True
+Ingá-mirim,,12.775,False,0.0415,30.0,0,0.673,0.673,0.894,80,True
+Jenipapo-do-cerrado,,13.164,False,0.04,30.0,0,0.696,0.696,0.894,80,True
+Manga Bacuri,,12.777,False,0.0415,30.0,0,0.673,0.673,0.894,80,True
+Maracujá-de-estalo,,12.992,False,0.0404,30.0,0,0.69,0.69,0.894,80,True
+Morango Monterey,,12.773,False,0.0414,30.0,0,0.673,0.673,0.894,80,True
+Nectarina Fantasia,,13.107,False,0.04,30.0,0,0.694,0.694,0.894,80,True
+Pequi-do-cerrado,,12.841,False,0.0412,30.0,0,0.673,0.673,0.894,80,True
+Pera Kaiser,,12.903,False,0.0406,30.0,0,0.681,0.681,0.894,80,True
+Pinhão,,12.763,False,0.0404,,15480,0.69,0.69,0.894,80,True
 Pitaya-amarela-colombiana,,13.281,False,0.0397,30.0,0,0.702,0.702,0.894,80,True
-Puçá-preto,,12.987,False,0.0403,30.0,0,0.689,0.689,0.894,80,True
-Tarumã-do-cerrado,,12.811,False,0.0413,30.0,0,0.672,0.672,0.894,80,True
-Uva Alvarinho,,12.993,False,0.0402,30.0,0,0.689,0.689,0.894,80,True
+Puçá-preto,,12.987,False,0.0403,30.0,0,0.69,0.69,0.894,80,True
+Tarumã-do-cerrado,,12.811,False,0.0414,30.0,0,0.673,0.673,0.894,80,True
+Uva Alvarinho,,12.993,False,0.0402,30.0,0,0.69,0.69,0.894,80,True
 Uva-espim,barberry,14.941,False,0.0399,,2856,0.696,0.696,0.894,80,True
 Uxi-amarelo,,13.192,False,0.0398,30.0,0,0.696,0.696,0.894,80,True
 Abricó-de-macaco,castanha-de-macaco,13.573,False,0.0388,30.0,0,0.715,0.715,0.9,81,True
 Algarrobo (fruto),alfarroba,13.404,False,0.0391,30.0,0,0.71,0.71,0.9,81,True
-Araticum-mirim,,13.801,False,0.0383,30.0,0,0.723,0.723,0.9,81,True
+Araticum-mirim,,13.801,False,0.0383,30.0,0,0.724,0.724,0.9,81,True
 Araçá-pitanga,,13.655,False,0.0386,30.0,0,0.715,0.715,0.9,81,True
-Avelã,,13.541,False,0.0384,,12432,0.72,0.72,0.9,81,True
-Bacuri-açu,,13.867,False,0.0382,30.0,0,0.723,0.723,0.9,81,True
-Biribá-do-mato,,13.678,False,0.0385,30.0,0,0.718,0.718,0.9,81,True
-Butiá-azedo,,13.979,False,0.038,30.0,0,0.727,0.727,0.9,81,True
-Calafate,,14.008,False,0.0379,30.0,0,0.727,0.727,0.9,81,True
-Espinheiro-alvar (fruto),,13.369,False,0.0392,30.0,0,0.706,0.706,0.9,81,True
-Guabiju-roxo,,13.944,False,0.038,30.0,0,0.727,0.727,0.9,81,True
+Avelã,,13.541,False,0.0384,,12432,0.721,0.721,0.9,81,True
+Bacuri-açu,,13.867,False,0.0382,30.0,0,0.724,0.724,0.9,81,True
+Biribá-do-mato,,13.678,False,0.0385,30.0,0,0.719,0.719,0.9,81,True
+Butiá-azedo,,13.979,False,0.0381,30.0,0,0.728,0.728,0.9,81,True
+Calafate,,14.008,False,0.0379,30.0,0,0.728,0.728,0.9,81,True
+Espinheiro-alvar (fruto),,13.369,False,0.0392,30.0,0,0.707,0.707,0.9,81,True
+Guabiju-roxo,,13.944,False,0.038,30.0,0,0.728,0.728,0.9,81,True
 Guabiroba-de-árvore,,13.378,False,0.0391,30.0,0,0.71,0.71,0.9,81,True
 Ingá-açu,,13.476,False,0.0389,30.0,0,0.71,0.71,0.9,81,True
 Jabuticaba-açu,,13.427,False,0.039,30.0,0,0.71,0.71,0.9,81,True
-Jabuticaba-de-cipó,,13.581,False,0.0387,30.0,0,0.715,0.715,0.9,81,True
+Jabuticaba-de-cipó,,13.581,False,0.0388,30.0,0,0.715,0.715,0.9,81,True
 Jabuticaba-rajada,,13.498,False,0.0389,30.0,0,0.71,0.71,0.9,81,True
 Jaracatiá-amarelo,,13.635,False,0.0386,30.0,0,0.715,0.715,0.9,81,True
 Limão Verna,,13.39,False,0.039,30.0,0,0.71,0.71,0.9,81,True
-Macaúba-do-cerrado,,13.662,False,0.0385,30.0,0,0.718,0.718,0.9,81,True
+Macaúba-do-cerrado,,13.662,False,0.0385,30.0,0,0.719,0.719,0.9,81,True
 Maracujá-de-garapa,,13.581,False,0.0387,30.0,0,0.715,0.715,0.9,81,True
-Pindaíba-do-brejo,,14.079,False,0.0378,30.0,0,0.73,0.73,0.9,81,True
-Pistache,,13.96,False,0.0377,,30144,0.732,0.732,0.9,81,True
-Pitomba-de-macaco,,13.78,False,0.0384,30.0,0,0.72,0.72,0.9,81,True
-Puçá-coca,,14.102,False,0.0378,30.0,0,0.73,0.73,0.9,81,True
-Sorva-europeia,,13.771,False,0.0383,30.0,0,0.72,0.72,0.9,81,True
+Pindaíba-do-brejo,,14.079,False,0.0378,30.0,0,0.731,0.731,0.9,81,True
+Pitomba-de-macaco,,13.78,False,0.0384,30.0,0,0.721,0.721,0.9,81,True
+Puçá-coca,,14.102,False,0.0378,30.0,0,0.731,0.731,0.9,81,True
+Sorva-europeia,,13.771,False,0.0383,30.0,0,0.721,0.721,0.9,81,True
 Tamarindo-de-veludo,,13.301,False,0.0395,30.0,0,0.702,0.702,0.9,81,True
 Tangerina Clemenules,,13.324,False,0.0395,30.0,0,0.702,0.702,0.9,81,True
 Tangerina Fallglo,,13.324,False,0.0394,30.0,0,0.702,0.702,0.9,81,True
 Tangerina Murcott,,13.324,False,0.0394,30.0,0,0.702,0.702,0.9,81,True
 Tangerina Nadorcott,,13.324,False,0.0393,30.0,0,0.702,0.702,0.9,81,True
 Tangerina Sunburst,,13.324,False,0.0393,30.0,0,0.702,0.702,0.9,81,True
-Tucumã-açu,,13.968,False,0.0379,30.0,0,0.727,0.727,0.9,81,True
-Uva Grenache,,13.842,False,0.0382,30.0,0,0.723,0.723,0.9,81,True
-Uva Zinfandel,,13.904,False,0.0381,30.0,0,0.725,0.725,0.9,81,True
+Tucumã-açu,,13.968,False,0.0379,30.0,0,0.728,0.728,0.9,81,True
+Uva Grenache,,13.842,False,0.0382,30.0,0,0.724,0.724,0.9,81,True
+Uva Zinfandel,,13.904,False,0.0381,30.0,0,0.726,0.726,0.9,81,True
 Abrunho,,18.155,False,0.0367,30.0,0,0.751,0.751,0.906,82,True
 Ajuru,,16.467,False,0.037,30.0,0,0.746,0.746,0.906,82,True
-Ameixa-damascena,,14.523,False,0.0374,30.0,0,0.738,0.738,0.906,82,True
-Arônia-negra,,15.229,False,0.0372,30.0,0,0.741,0.741,0.906,82,True
-Bacaba-açu,,14.589,False,0.0374,30.0,0,0.738,0.738,0.906,82,True
-Bérberis,,18.555,False,0.0364,30.0,0,0.756,0.756,0.906,82,True
-Cacauí,,19.543,False,0.0362,30.0,0,0.761,0.761,0.906,82,True
-Camboatá,,17.145,False,0.0369,30.0,0,0.747,0.747,0.906,82,True
-Chichá,,18.349,False,0.0365,30.0,0,0.754,0.754,0.906,82,True
+Ameixa-damascena,,14.523,False,0.0374,30.0,0,0.739,0.739,0.906,82,True
+Arônia-negra,,15.229,False,0.0372,30.0,0,0.742,0.742,0.906,82,True
+Bacaba-açu,,14.589,False,0.0374,30.0,0,0.739,0.739,0.906,82,True
+Bérberis,,18.555,False,0.0364,30.0,0,0.757,0.757,0.906,82,True
+Cacauí,,19.543,False,0.0362,30.0,0,0.762,0.762,0.906,82,True
+Camboatá,,17.145,False,0.0369,30.0,0,0.748,0.748,0.906,82,True
+Chichá,,18.349,False,0.0365,30.0,0,0.755,0.755,0.906,82,True
 Corozo,,18.895,False,0.0363,30.0,0,0.758,0.758,0.906,82,True
-Croá,,18.199,False,0.0366,30.0,0,0.752,0.752,0.906,82,True
-Cumbaru,,18.543,False,0.0365,30.0,0,0.756,0.756,0.906,82,True
-Durian-amarelo,,10.15,False,0.0361,10.0,0,0.761,0.761,0.906,82,True
-Ginja,,15.047,False,0.0373,30.0,0,0.74,0.74,0.906,82,True
-Juá-de-capote,,14.469,False,0.0375,30.0,0,0.736,0.736,0.906,82,True
-Macadâmia,,14.358,False,0.0373,,4794,0.738,0.738,0.906,82,True
-Manzana-de-agua,,7.934,False,0.0368,10.0,0,0.748,0.748,0.906,82,True
+Croá,,18.199,False,0.0366,30.0,0,0.753,0.753,0.906,82,True
+Cumbaru,,18.543,False,0.0365,30.0,0,0.757,0.757,0.906,82,True
+Durian-amarelo,,10.15,False,0.0361,10.0,0,0.762,0.762,0.906,82,True
+Ginja,,15.047,False,0.0373,30.0,0,0.741,0.741,0.906,82,True
+Juá-de-capote,,14.469,False,0.0375,30.0,0,0.737,0.737,0.906,82,True
+Macadâmia,,14.358,False,0.0373,,4794,0.739,0.739,0.906,82,True
+Manzana-de-agua,,7.934,False,0.0368,10.0,0,0.749,0.749,0.906,82,True
 Maqui,,16.147,False,0.0371,30.0,0,0.744,0.744,0.906,82,True
 Melão-de-são-caetano (fruto),,9.865,False,0.0363,10.0,0,0.759,0.759,0.906,82,True
 Mirabela,,15.978,False,0.0371,30.0,0,0.743,0.743,0.906,82,True
-Mirindiba,,18.237,False,0.0366,30.0,0,0.753,0.753,0.906,82,True
+Mirindiba,,18.237,False,0.0366,30.0,0,0.754,0.754,0.906,82,True
 Mucajá,,18.128,False,0.0367,30.0,0,0.751,0.751,0.906,82,True
-Murtinha,,19.691,False,0.036,30.0,0,0.763,0.763,0.906,82,True
-Nectarina Sunred,,15.835,False,0.0372,30.0,0,0.742,0.742,0.906,82,True
+Nectarina Sunred,,15.835,False,0.0372,30.0,0,0.743,0.743,0.906,82,True
 Pajurá-de-óbidos,,16.228,False,0.037,30.0,0,0.745,0.745,0.906,82,True
-Pariri,,17.978,False,0.0368,30.0,0,0.749,0.749,0.906,82,True
-Pêssego Douradão,,14.307,False,0.0376,30.0,0,0.734,0.734,0.906,82,True
-Sapoti-de-abelha,,14.173,False,0.0377,30.0,0,0.732,0.732,0.906,82,True
+Pariri,,17.978,False,0.0368,30.0,0,0.75,0.75,0.906,82,True
+Pistache,,13.96,False,0.0377,,30144,0.733,0.733,0.906,82,True
+Pêssego Douradão,,14.307,False,0.0376,30.0,0,0.735,0.735,0.906,82,True
+Sapoti-de-abelha,,14.173,False,0.0377,30.0,0,0.733,0.733,0.906,82,True
 Saputi,,19.33,False,0.0362,30.0,0,0.76,0.76,0.906,82,True
-Saputá,,19.571,False,0.0361,30.0,0,0.762,0.762,0.906,82,True
-Tapiá,,18.553,False,0.0364,30.0,0,0.756,0.756,0.906,82,True
+Saputá,,19.571,False,0.0361,30.0,0,0.763,0.763,0.906,82,True
+Tapiá,,18.553,False,0.0364,30.0,0,0.757,0.757,0.906,82,True
 Taxo,,16.889,False,0.0369,30.0,0,0.747,0.747,0.906,82,True
-Uva-ursina,,14.273,False,0.0376,30.0,0,0.734,0.734,0.906,82,True
-Uvaia-roxa,,14.338,False,0.0375,30.0,0,0.735,0.735,0.906,82,True
-Akebi,,20.0,True,0.0354,30.0,0,0.799,0.799,0.911,83,True
-Amanatsu,,20.0,True,0.0353,30.0,0,0.799,0.799,0.911,83,True
-Amra,,20.0,True,0.0353,30.0,0,0.799,0.799,0.911,83,True
-Araçazinho,,20.479,False,0.0358,30.0,0,0.768,0.768,0.911,83,True
-Asam gelugur,,20.0,True,0.0352,30.0,0,0.799,0.799,0.911,83,True
-Azarola,,20.287,False,0.0359,30.0,0,0.766,0.766,0.911,83,True
-Badea,,20.0,True,0.0352,30.0,0,0.799,0.799,0.911,83,True
-Bambangan,,20.0,True,0.0351,30.0,0,0.799,0.799,0.911,83,True
-Banana-BRS,,10.943,False,0.0358,10.0,0,0.767,0.767,0.911,83,True
-Beach plum,,20.0,True,0.0351,30.0,0,0.799,0.799,0.911,83,True
-Bisbul,,20.0,True,0.035,30.0,0,0.799,0.799,0.911,83,True
-Borojó,,20.0,True,0.035,30.0,0,0.799,0.799,0.911,83,True
-Caimarona,,20.0,True,0.035,30.0,0,0.799,0.799,0.911,83,True
-Capulín,,20.0,True,0.0349,30.0,0,0.799,0.799,0.911,83,True
-Cempedak,,20.0,True,0.0349,30.0,0,0.799,0.799,0.911,83,True
-Cereja-do-pará,,11.209,False,0.0357,10.0,0,0.769,0.769,0.911,83,True
-Cherimoia,chirimoia | Annona cherimola,20.014,False,0.0356,25.0,13572,0.771,0.771,0.911,83,True
-Chokecherry,,20.0,True,0.0348,30.0,0,0.799,0.799,0.911,83,True
-Cloudberry,amora-ártica,12.51,False,0.0348,30.0,0,0.799,0.799,0.911,83,True
-Coco-de-cachorro,,10.506,False,0.0359,10.0,0,0.765,0.765,0.911,83,True
+Uva-ursina,,14.273,False,0.0376,30.0,0,0.735,0.735,0.906,82,True
+Uvaia-roxa,,14.338,False,0.0375,30.0,0,0.736,0.736,0.906,82,True
+Akebi,,20.0,True,0.0354,30.0,0,0.8,0.8,0.911,83,True
+Amanatsu,,20.0,True,0.0353,30.0,0,0.8,0.8,0.911,83,True
+Amra,,20.0,True,0.0353,30.0,0,0.8,0.8,0.911,83,True
+Araçazinho,,20.479,False,0.0358,30.0,0,0.769,0.769,0.911,83,True
+Asam gelugur,,20.0,True,0.0352,30.0,0,0.8,0.8,0.911,83,True
+Azarola,,20.287,False,0.0359,30.0,0,0.767,0.767,0.911,83,True
+Badea,,20.0,True,0.0352,30.0,0,0.8,0.8,0.911,83,True
+Bambangan,,20.0,True,0.0351,30.0,0,0.8,0.8,0.911,83,True
+Banana-BRS,,10.943,False,0.0358,10.0,0,0.768,0.768,0.911,83,True
+Beach plum,,20.0,True,0.0351,30.0,0,0.8,0.8,0.911,83,True
+Bisbul,,20.0,True,0.0351,30.0,0,0.8,0.8,0.911,83,True
+Borojó,,20.0,True,0.035,30.0,0,0.8,0.8,0.911,83,True
+Caimarona,,20.0,True,0.035,30.0,0,0.8,0.8,0.911,83,True
+Capulín,,20.0,True,0.0349,30.0,0,0.8,0.8,0.911,83,True
+Cempedak,,20.0,True,0.0349,30.0,0,0.8,0.8,0.911,83,True
+Cereja-do-pará,,11.209,False,0.0357,10.0,0,0.77,0.77,0.911,83,True
+Cherimoia,chirimoia | Annona cherimola,20.014,False,0.0357,25.0,13572,0.771,0.771,0.911,83,True
+Chokecherry,,20.0,True,0.0348,30.0,0,0.8,0.8,0.911,83,True
+Cloudberry,amora-ártica,12.51,False,0.0348,30.0,0,0.8,0.8,0.911,83,True
+Coco-de-cachorro,,10.506,False,0.0359,10.0,0,0.766,0.766,0.911,83,True
 Coco-de-vassoura,,11.745,False,0.0356,10.0,0,0.773,0.773,0.911,83,True
-Copao,,20.0,True,0.0347,30.0,0,0.799,0.799,0.911,83,True
+Copao,,20.0,True,0.0347,30.0,0,0.8,0.8,0.911,83,True
 Cornisolo,cereja-do-corniso,21.245,False,0.0355,30.0,0,0.773,0.773,0.911,83,True
-Gandaria,,20.0,True,0.0347,30.0,0,0.799,0.799,0.911,83,True
-Garambullo,,20.0,True,0.0346,30.0,0,0.799,0.799,0.911,83,True
-Gulupa,,20.0,True,0.0346,30.0,0,0.799,0.799,0.911,83,True
-Hassaku,,20.0,True,0.0346,30.0,0,0.799,0.799,0.911,83,True
-Huaya,,20.0,True,0.0345,30.0,0,0.799,0.799,0.911,83,True
-Iyokan,,20.0,True,0.0345,30.0,0,0.799,0.799,0.911,83,True
-Jacaratiá,,19.866,False,0.036,30.0,0,0.764,0.764,0.911,83,True
-Jamelão-de-praia,,11.958,False,0.0354,10.0,0,0.799,0.799,0.911,83,True
-Kinkan,Citrus japonica,18.71,False,0.0357,25.0,6270,0.77,0.77,0.911,83,True
+Gandaria,,20.0,True,0.0347,30.0,0,0.8,0.8,0.911,83,True
+Garambullo,,20.0,True,0.0347,30.0,0,0.8,0.8,0.911,83,True
+Gulupa,,20.0,True,0.0346,30.0,0,0.8,0.8,0.911,83,True
+Hassaku,,20.0,True,0.0346,30.0,0,0.8,0.8,0.911,83,True
+Huaya,,20.0,True,0.0345,30.0,0,0.8,0.8,0.911,83,True
+Iyokan,,20.0,True,0.0345,30.0,0,0.8,0.8,0.911,83,True
+Jacaratiá,,19.866,False,0.036,30.0,0,0.765,0.765,0.911,83,True
+Kinkan,Citrus japonica,18.71,False,0.0357,25.0,6270,0.771,0.771,0.911,83,True
 Kiwi-de-árvore,,11.74,False,0.0356,10.0,0,0.773,0.773,0.911,83,True
-Mobola plum,,21.307,False,0.0355,30.0,0,0.774,0.774,0.911,83,True
-Cupuaçurana,,21.969,False,0.0331,30.0,0,0.825,0.825,0.917,84,True
+Mobola plum,,21.307,False,0.0355,30.0,0,0.775,0.775,0.911,83,True
+Murtinha,,19.691,False,0.036,30.0,0,0.764,0.764,0.911,83,True
+Cupuaçurana,,21.969,False,0.0331,30.0,0,0.826,0.826,0.917,84,True
 Envira (fruto),,12.985,False,0.0331,10.0,0,0.826,0.826,0.917,84,True
-Jostaberry,,20.0,True,0.0344,30.0,0,0.799,0.799,0.917,84,True
-Kaitha,,20.0,True,0.0344,30.0,0,0.799,0.799,0.917,84,True
-Karonda,,20.0,True,0.0343,30.0,0,0.799,0.799,0.917,84,True
-Kecapi,,20.0,True,0.0343,30.0,0,0.799,0.799,0.917,84,True
-Kepundung,,20.0,True,0.0343,30.0,0,0.799,0.799,0.917,84,True
-Kesemek,,20.0,True,0.0342,30.0,0,0.799,0.799,0.917,84,True
-Kokum,,20.0,True,0.0342,30.0,0,0.799,0.799,0.917,84,True
-Langsat-duku,,20.0,True,0.0341,30.0,0,0.799,0.799,0.917,84,True
-Marmelo-do-cerrado,,13.194,False,0.033,10.0,0,0.827,0.827,0.917,84,True
-Matoa,,20.0,True,0.0341,30.0,0,0.799,0.799,0.917,84,True
-Monkey orange,laranja-de-macaco,10.923,False,0.034,30.0,0,0.799,0.799,0.917,84,True
-Mortiño,,20.0,True,0.034,30.0,0,0.799,0.799,0.917,84,True
-Murtilla,,20.0,True,0.034,30.0,0,0.799,0.799,0.917,84,True
-Nam-nam,,20.0,True,0.0339,30.0,0,0.799,0.799,0.917,84,True
-Natsumikan,,20.0,True,0.0339,30.0,0,0.799,0.799,0.917,84,True
-Olallieberry,,20.0,True,0.0338,30.0,0,0.799,0.799,0.917,84,True
-Palmira (fruto),,12.251,False,0.0332,10.0,0,0.824,0.824,0.917,84,True
-Peumo,,20.0,True,0.0338,30.0,0,0.799,0.799,0.917,84,True
-Phalsa,,20.0,True,0.0337,30.0,0,0.799,0.799,0.917,84,True
-Rambai,,20.0,True,0.0337,30.0,0,0.799,0.799,0.917,84,True
-Rukam,,20.0,True,0.0337,30.0,0,0.799,0.799,0.917,84,True
-Sachatomate,,20.0,True,0.0336,30.0,0,0.799,0.799,0.917,84,True
-Salak-pondoh,,20.0,True,0.0336,30.0,0,0.799,0.799,0.917,84,True
-Saskatoon berry,,20.0,True,0.0335,30.0,0,0.799,0.799,0.917,84,True
-Shikuwasa,,20.0,True,0.0335,30.0,0,0.799,0.799,0.917,84,True
-Tarap,,20.0,True,0.0335,30.0,0,0.799,0.799,0.917,84,True
-Tayberry,,20.0,True,0.0334,30.0,0,0.799,0.799,0.917,84,True
-Tejocote,,20.0,True,0.0334,30.0,0,0.799,0.799,0.917,84,True
-Wineberry,,20.0,True,0.0333,30.0,0,0.799,0.799,0.917,84,True
-Xoconostle,,20.0,True,0.0333,30.0,0,0.799,0.799,0.917,84,True
-Youngberry,,20.0,True,0.0332,30.0,0,0.799,0.799,0.917,84,True
-Ziziphus mauritiana,jujuba-indiana,12.91,False,0.0332,30.0,0,0.799,0.799,0.917,84,True
-Ameixa-do-pará,,11.593,False,0.032,,954,0.852,0.852,0.922,85,True
-Amora-branca,,11.013,False,0.0319,,0,0.854,0.854,0.922,85,True
-Bacaba,,16.211,False,0.0329,15.0,14484,0.83,0.83,0.922,85,True
+Jamelão-de-praia,,11.958,False,0.0354,10.0,0,0.8,0.8,0.917,84,True
+Jostaberry,,20.0,True,0.0344,30.0,0,0.8,0.8,0.917,84,True
+Kaitha,,20.0,True,0.0344,30.0,0,0.8,0.8,0.917,84,True
+Karonda,,20.0,True,0.0343,30.0,0,0.8,0.8,0.917,84,True
+Kecapi,,20.0,True,0.0343,30.0,0,0.8,0.8,0.917,84,True
+Kepundung,,20.0,True,0.0343,30.0,0,0.8,0.8,0.917,84,True
+Kesemek,,20.0,True,0.0342,30.0,0,0.8,0.8,0.917,84,True
+Kokum,,20.0,True,0.0342,30.0,0,0.8,0.8,0.917,84,True
+Langsat-duku,,20.0,True,0.0341,30.0,0,0.8,0.8,0.917,84,True
+Matoa,,20.0,True,0.0341,30.0,0,0.8,0.8,0.917,84,True
+Monkey orange,laranja-de-macaco,10.923,False,0.034,30.0,0,0.8,0.8,0.917,84,True
+Mortiño,,20.0,True,0.034,30.0,0,0.8,0.8,0.917,84,True
+Murtilla,,20.0,True,0.034,30.0,0,0.8,0.8,0.917,84,True
+Nam-nam,,20.0,True,0.0339,30.0,0,0.8,0.8,0.917,84,True
+Natsumikan,,20.0,True,0.0339,30.0,0,0.8,0.8,0.917,84,True
+Olallieberry,,20.0,True,0.0338,30.0,0,0.8,0.8,0.917,84,True
+Palmira (fruto),,12.251,False,0.0332,10.0,0,0.825,0.825,0.917,84,True
+Peumo,,20.0,True,0.0338,30.0,0,0.8,0.8,0.917,84,True
+Phalsa,,20.0,True,0.0337,30.0,0,0.8,0.8,0.917,84,True
+Rambai,,20.0,True,0.0337,30.0,0,0.8,0.8,0.917,84,True
+Rukam,,20.0,True,0.0337,30.0,0,0.8,0.8,0.917,84,True
+Sachatomate,,20.0,True,0.0336,30.0,0,0.8,0.8,0.917,84,True
+Salak-pondoh,,20.0,True,0.0336,30.0,0,0.8,0.8,0.917,84,True
+Saskatoon berry,,20.0,True,0.0335,30.0,0,0.8,0.8,0.917,84,True
+Shikuwasa,,20.0,True,0.0335,30.0,0,0.8,0.8,0.917,84,True
+Tarap,,20.0,True,0.0335,30.0,0,0.8,0.8,0.917,84,True
+Tayberry,,20.0,True,0.0334,30.0,0,0.8,0.8,0.917,84,True
+Tejocote,,20.0,True,0.0334,30.0,0,0.8,0.8,0.917,84,True
+Wineberry,,20.0,True,0.0333,30.0,0,0.8,0.8,0.917,84,True
+Xoconostle,,20.0,True,0.0333,30.0,0,0.8,0.8,0.917,84,True
+Youngberry,,20.0,True,0.0333,30.0,0,0.8,0.8,0.917,84,True
+Ziziphus mauritiana,jujuba-indiana,12.91,False,0.0332,30.0,0,0.8,0.8,0.917,84,True
+Ameixa-do-pará,,11.593,False,0.032,,954,0.853,0.853,0.922,85,True
+Amora-branca,,11.013,False,0.0319,,0,0.855,0.855,0.922,85,True
+Bacaba,,16.211,False,0.0329,15.0,14484,0.831,0.831,0.922,85,True
 Bacuri-de-fuso,,13.723,False,0.033,10.0,0,0.828,0.828,0.922,85,True
-Banana-de-macaco,,11.256,False,0.0324,,6288,0.842,0.842,0.922,85,True
-Bilimbi-roxo,,14.901,False,0.0328,10.0,0,0.832,0.832,0.922,85,True
-Bromélia-comestível,,14.421,False,0.0328,10.0,0,0.831,0.831,0.922,85,True
+Banana-de-macaco,,11.256,False,0.0324,,6288,0.843,0.843,0.922,85,True
+Bilimbi-roxo,,14.901,False,0.0328,10.0,0,0.833,0.833,0.922,85,True
+Bromélia-comestível,,14.421,False,0.0329,10.0,0,0.832,0.832,0.922,85,True
 Cabacinha (fruta),,13.805,False,0.033,10.0,0,0.829,0.829,0.922,85,True
-Caju-do-cerrado,cajuí,12.073,False,0.0326,,4494,0.838,0.838,0.922,85,True
-Cereja-do-cerrado,,11.948,False,0.0322,,0,0.847,0.847,0.922,85,True
-Cereja-do-mato,,10.915,False,0.0325,,0,0.838,0.838,0.922,85,True
+Caju-do-cerrado,cajuí,12.073,False,0.0326,,4494,0.839,0.839,0.922,85,True
+Cereja-do-cerrado,,11.948,False,0.0322,,0,0.848,0.848,0.922,85,True
+Cereja-do-mato,,10.915,False,0.0325,,0,0.839,0.839,0.922,85,True
 Doum,,16.881,False,0.0318,10.0,0,0.857,0.857,0.922,85,True
-Feijoa,goiaba-serrana,17.502,False,0.0322,15.0,25554,0.846,0.846,0.922,85,True
-Fruta-de-lobo,lobeira,10.885,False,0.0327,,10494,0.835,0.835,0.922,85,True
-Fruta-do-conde-africana,,11.197,False,0.0325,,0,0.842,0.842,0.922,85,True
-Fruta-do-sabiá,,12.083,False,0.0318,,1830,0.856,0.856,0.922,85,True
+Feijoa,goiaba-serrana,17.502,False,0.0322,15.0,25554,0.847,0.847,0.922,85,True
+Fruta-de-lobo,lobeira,10.885,False,0.0327,,10494,0.836,0.836,0.922,85,True
+Fruta-do-conde-africana,,11.197,False,0.0325,,0,0.843,0.843,0.922,85,True
 Goiaba-do-campo,,10.743,False,0.0325,,0,0.84,0.84,0.922,85,True
-Jabuticaba-branca,,11.701,False,0.0318,,0,0.856,0.856,0.922,85,True
-Jaca-dura,,11.779,False,0.0321,,0,0.849,0.849,0.922,85,True
-Laranja-kinkan,kumquat,10.278,False,0.0329,,6270,0.829,0.829,0.922,85,True
-Mama-cadela,,11.693,False,0.0324,,6528,0.842,0.842,0.922,85,True
-Maracujá-do-mato,,11.013,False,0.0326,,0,0.837,0.837,0.922,85,True
-Maracujá-doce,,10.926,False,0.0326,,0,0.836,0.836,0.922,85,True
-Maracujá-roxo,,11.754,False,0.0319,,0,0.854,0.854,0.922,85,True
-Mari-mari,,11.625,False,0.0323,,798,0.842,0.842,0.922,85,True
-Mão-de-buda,,10.359,False,0.0321,,0,0.849,0.849,0.922,85,True
-Palma,figo-da-índia | figo-de-pita,11.366,False,0.0323,,0,0.842,0.842,0.922,85,True
-Pepino-doce,pepino-melão | pepino-dulce,11.055,False,0.032,,0,0.852,0.852,0.922,85,True
-Pitanga-preta,,11.377,False,0.0321,,0,0.849,0.849,0.922,85,True
-Uva-de-praia,,10.079,False,0.032,,0,0.849,0.849,0.922,85,True
-Uva-de-rei,,10.349,False,0.0328,,0,0.833,0.833,0.922,85,True
-Uva-do-mato,,10.56,False,0.0327,,402,0.834,0.834,0.922,85,True
-Uva-japonesa,,11.151,False,0.0323,,0,0.845,0.845,0.922,85,True
+Graviola-do-norte,,11.486,False,0.0318,,0,0.859,0.859,0.922,85,True
+Jabuticaba-branca,,11.701,False,0.0319,,0,0.856,0.856,0.922,85,True
+Jaca-dura,,11.779,False,0.0321,,0,0.85,0.85,0.922,85,True
+Laranja-kinkan,kumquat,10.278,False,0.0329,,6270,0.83,0.83,0.922,85,True
+Mama-cadela,,11.693,False,0.0324,,6528,0.843,0.843,0.922,85,True
+Maracujá-do-mato,,11.013,False,0.0326,,0,0.838,0.838,0.922,85,True
+Maracujá-doce,,10.926,False,0.0327,,0,0.837,0.837,0.922,85,True
+Maracujá-roxo,,11.754,False,0.0319,,0,0.855,0.855,0.922,85,True
+Mari-mari,,11.625,False,0.0323,,798,0.843,0.843,0.922,85,True
+Marmelo-do-cerrado,,13.194,False,0.0331,10.0,0,0.827,0.827,0.922,85,True
+Mão-de-buda,,10.359,False,0.0322,,0,0.85,0.85,0.922,85,True
+Palma,figo-da-índia | figo-de-pita,11.366,False,0.0323,,0,0.843,0.843,0.922,85,True
+Pepino-doce,pepino-melão | pepino-dulce,11.055,False,0.032,,0,0.853,0.853,0.922,85,True
+Pitanga-preta,,11.377,False,0.0321,,0,0.85,0.85,0.922,85,True
+Uva-de-praia,,10.079,False,0.032,,0,0.85,0.85,0.922,85,True
+Uva-de-rei,,10.349,False,0.0328,,0,0.834,0.834,0.922,85,True
+Uva-do-mato,,10.56,False,0.0327,,402,0.835,0.835,0.922,85,True
+Uva-japonesa,,11.151,False,0.0323,,0,0.846,0.846,0.922,85,True
 Abacate-manteiga,abacate avocado | avocado,11.618,False,0.0313,,0,0.87,0.87,0.927,86,True
 Ameixa-da-baía,,12.252,False,0.0316,,954,0.863,0.863,0.927,86,True
-Amora-silvestre,,12.207,False,0.031,,6792,0.875,0.875,0.927,86,True
-Araçá-amarelo,,12.269,False,0.0314,,0,0.867,0.867,0.927,86,True
+Amora-silvestre,,12.207,False,0.0311,,6792,0.875,0.875,0.927,86,True
+Araçá-amarelo,,12.269,False,0.0315,,0,0.867,0.867,0.927,86,True
 Araçá-boi,,12.79,False,0.0315,,9792,0.865,0.865,0.927,86,True
 Açaí-solteiro,,11.804,False,0.031,,0,0.878,0.878,0.927,86,True
 Bergamota-europeia,bergamota de cheiro,12.238,False,0.0309,,0,0.882,0.882,0.927,86,True
@@ -932,144 +932,143 @@ Caju-gigante,,11.45,False,0.0313,,696,0.87,0.87,0.927,86,True
 Carambola-amarela,,12.631,False,0.0309,,0,0.88,0.88,0.927,86,True
 Castanha-de-sapucaia,,12.585,False,0.0311,,6120,0.875,0.875,0.927,86,True
 Framboesa-amarela,Rubus chamaemorus,12.044,False,0.0312,,1080,0.872,0.872,0.927,86,True
-Framboesa-negra,,11.632,False,0.0315,,0,0.863,0.863,0.927,86,True
+Framboesa-negra,,11.632,False,0.0316,,0,0.863,0.863,0.927,86,True
 Fruta-de-morcego,,11.834,False,0.0307,,0,0.886,0.886,0.927,86,True
-Fruta-de-pombo,,11.952,False,0.0306,,0,0.888,0.888,0.927,86,True
+Fruta-de-pombo,,11.952,False,0.0307,,0,0.888,0.888,0.927,86,True
 Fruta-de-tatu,,12.014,False,0.0306,,0,0.888,0.888,0.927,86,True
-Graviola-do-norte,,11.486,False,0.0317,,0,0.859,0.859,0.927,86,True
-Ingá-cipó,Inga edulis,13.63,False,0.0307,,3066,0.884,0.884,0.927,86,True
+Ingá-cipó,Inga edulis,13.63,False,0.0308,,3066,0.884,0.884,0.927,86,True
 Jabuticaba-sabará,,13.651,False,0.0314,,2910,0.867,0.867,0.927,86,True
 Jaca-mole,,12.397,False,0.0317,,0,0.859,0.859,0.927,86,True
-Kinkan-redondo,,11.603,False,0.0312,,0,0.87,0.87,0.927,86,True
+Kinkan-redondo,,11.603,False,0.0313,,0,0.87,0.87,0.927,86,True
 Laranja-azeda,,12.186,False,0.0308,,3708,0.882,0.882,0.927,86,True
 Laranja-sanguínea,laranja moro,11.179,False,0.0317,,12384,0.859,0.859,0.927,86,True
 Limão-caviar,finger lime,11.913,False,0.0312,,19158,0.875,0.875,0.927,86,True
-Mangaba-de-cachorro,,12.766,False,0.0311,,0,0.875,0.875,0.927,86,True
+Mangaba-de-cachorro,,12.766,False,0.0312,,0,0.875,0.875,0.927,86,True
 Mangaba-de-praia,,12.012,False,0.0307,,0,0.886,0.886,0.927,86,True
-Mangaba-do-cerrado,,13.526,False,0.0309,,0,0.878,0.878,0.927,86,True
-Mirtilo-gigante,,12.443,False,0.0308,,0,0.882,0.882,0.927,86,True
+Mangaba-do-cerrado,,13.526,False,0.031,,0,0.878,0.878,0.927,86,True
+Mirtilo-gigante,,12.443,False,0.0309,,0,0.882,0.882,0.927,86,True
 Mirtilo-vermelho,,11.868,False,0.0314,,0,0.867,0.867,0.927,86,True
-Pera-asiática,nashi,12.484,False,0.0313,,156,0.867,0.867,0.927,86,True
-Pera-do-cerrado,,12.174,False,0.0316,,0,0.861,0.861,0.927,86,True
+Pera-asiática,nashi,12.484,False,0.0314,,156,0.867,0.867,0.927,86,True
+Pera-do-cerrado,,12.174,False,0.0317,,0,0.861,0.861,0.927,86,True
 Sapucaia,,13.137,False,0.0306,,0,0.888,0.888,0.927,86,True
-Sete-capotes,,12.863,False,0.0315,,0,0.863,0.863,0.927,86,True
+Sete-capotes,,12.863,False,0.0316,,0,0.863,0.863,0.927,86,True
 Tâmara-do-deserto,,12.739,False,0.0308,,0,0.882,0.882,0.927,86,True
 Abricó,abricó-do-pará,15.579,False,0.0298,,0,0.911,0.911,0.933,87,True
 Araticum,marolo,16.035,False,0.0297,,0,0.914,0.914,0.933,87,True
-Araçá-pera,,13.473,False,0.0303,,720,0.895,0.895,0.933,87,True
+Araçá-pera,,13.473,False,0.0304,,720,0.895,0.895,0.933,87,True
 Araçá-piranga,,14.756,False,0.0297,,1278,0.914,0.914,0.933,87,True
 Cajueiro-anão,,13.126,False,0.0299,,0,0.908,0.908,0.933,87,True
-Cambuí,,13.926,False,0.03,,1626,0.904,0.904,0.933,87,True
-Carnaúba,,13.905,False,0.0295,,12984,0.918,0.918,0.933,87,True
+Cambuí,,13.926,False,0.0301,,1626,0.904,0.904,0.933,87,True
+Carnaúba,,13.905,False,0.0296,,12984,0.918,0.918,0.933,87,True
 Cereja-de-barbados,,12.862,False,0.03,,0,0.904,0.904,0.933,87,True
-Coco-babão,,12.735,False,0.0302,,2148,0.897,0.897,0.933,87,True
+Coco-babão,,12.735,False,0.0303,,2148,0.897,0.897,0.933,87,True
 Coco-de-catarro,,12.457,False,0.0305,,11538,0.892,0.892,0.933,87,True
 Coco-indaiá,,12.484,False,0.0305,,0,0.892,0.892,0.933,87,True
 Feijoa-do-mato,,13.612,False,0.0302,,0,0.9,0.9,0.933,87,True
-Grumixama-branca,,13.46,False,0.0304,,0,0.892,0.892,0.933,87,True
-Guaraná,,12.734,False,0.0301,,24762,0.902,0.902,0.933,87,True
+Grumixama-branca,,13.46,False,0.0305,,0,0.892,0.892,0.933,87,True
+Guaraná,,12.734,False,0.0302,,24762,0.902,0.902,0.933,87,True
 Guariroba,,15.544,False,0.0295,,6594,0.92,0.92,0.933,87,True
 Inajá,,15.44,False,0.0296,,1872,0.917,0.917,0.933,87,True
 Ingá-de-metro,,12.251,False,0.0304,,0,0.892,0.892,0.933,87,True
-Ingá-feijão,,12.468,False,0.0302,,0,0.897,0.897,0.933,87,True
+Ingá-feijão,,12.468,False,0.0303,,0,0.897,0.897,0.933,87,True
 Jabuticaba-de-cabinho,,13.886,False,0.0295,,0,0.92,0.92,0.933,87,True
-Juá,,15.176,False,0.0296,,7476,0.914,0.914,0.933,87,True
+Juá,,15.176,False,0.0297,,7476,0.914,0.914,0.933,87,True
 Juçara-palmito,,13.81,False,0.0296,,0,0.917,0.917,0.933,87,True
-Macaúba,bocaiuva,15.535,False,0.0294,,0,0.92,0.92,0.933,87,True
+Macaúba,bocaiuva,15.535,False,0.0295,,0,0.92,0.92,0.933,87,True
 Néspera-europeia,,13.235,False,0.0301,,0,0.902,0.902,0.933,87,True
-Pequi-anão,,13.272,False,0.0298,,0,0.91,0.91,0.933,87,True
-Pera-espinhosa,,12.559,False,0.0305,,0,0.89,0.89,0.933,87,True
-Pitaia-amarela,,13.705,False,0.0299,,2538,0.906,0.906,0.933,87,True
-Pitaia-vermelha,,13.368,False,0.0301,,0,0.9,0.9,0.933,87,True
+Pequi-anão,,13.272,False,0.0299,,0,0.91,0.91,0.933,87,True
+Pera-espinhosa,,12.559,False,0.0306,,0,0.89,0.89,0.933,87,True
+Pitaia-amarela,,13.705,False,0.03,,2538,0.906,0.906,0.933,87,True
+Pitaia-vermelha,,13.368,False,0.0302,,0,0.9,0.9,0.933,87,True
 Pitanga-do-cerrado,,12.356,False,0.0303,,0,0.897,0.897,0.933,87,True
 Pomelo chinês,,13.63,False,0.0298,,0,0.911,0.911,0.933,87,True
-Sapote-branco,,14.195,False,0.0297,,0,0.912,0.912,0.933,87,True
-Sapoti-do-mato,,12.902,False,0.0298,,0,0.908,0.908,0.933,87,True
-Tangerina-satsuma,satsuma,13.324,False,0.0299,,0,0.906,0.906,0.933,87,True
-Ubá,,13.875,False,0.03,,24096,0.902,0.902,0.933,87,True
-Umbu-cajá,cajá-umbu,14.782,False,0.0303,,0,0.895,0.895,0.933,87,True
+Sapote-branco,,14.195,False,0.0298,,0,0.912,0.912,0.933,87,True
+Sapoti-do-mato,,12.902,False,0.0299,,0,0.908,0.908,0.933,87,True
+Tangerina-satsuma,satsuma,13.324,False,0.03,,0,0.906,0.906,0.933,87,True
+Ubá,,13.875,False,0.0301,,24096,0.902,0.902,0.933,87,True
+Umbu-cajá,cajá-umbu,14.782,False,0.0304,,0,0.895,0.895,0.933,87,True
 Bacupari,,17.064,False,0.029,,3954,0.933,0.933,0.938,88,True
 Biribá,,17.634,False,0.0288,,0,0.94,0.94,0.938,88,True
-Cajarana,,16.735,False,0.0292,,0,0.925,0.925,0.938,88,True
-Cambucá,,16.147,False,0.0289,,7722,0.936,0.936,0.938,88,True
+Cajarana,,16.735,False,0.0293,,0,0.925,0.925,0.938,88,True
+Cambucá,,16.147,False,0.029,,7722,0.936,0.936,0.938,88,True
 Cidra,,14.764,False,0.0292,,11244,0.928,0.928,0.938,88,True
 Clementina,,14.309,False,0.0294,,3282,0.922,0.922,0.938,88,True
 Gabiroba,guabiroba,16.196,False,0.0293,,11328,0.925,0.925,0.938,88,True
 Goiabinha,,16.204,False,0.0288,,0,0.94,0.94,0.938,88,True
 Guabiju,,16.685,False,0.0291,,5226,0.933,0.933,0.938,88,True
-Hackberry,,20.0,True,0.0286,10.0,0,0.947,0.947,0.938,88,True
-Jaracatiá,,17.119,False,0.0287,,7884,0.94,0.94,0.938,88,True
-Jerivá,,16.428,False,0.029,,12834,0.933,0.933,0.938,88,True
+Hackberry,,20.0,True,0.0287,10.0,0,0.947,0.947,0.938,88,True
+Jaracatiá,,17.119,False,0.0288,,7884,0.94,0.94,0.938,88,True
+Jerivá,,16.428,False,0.0291,,12834,0.933,0.933,0.938,88,True
 Kei apple,,20.0,True,0.0286,10.0,0,0.947,0.947,0.938,88,True
 Lakoocha,,20.0,True,0.0286,10.0,0,0.947,0.947,0.938,88,True
 Licuri,ouricuri | Uricuri,16.08,False,0.0292,,3882,0.928,0.928,0.938,88,True
 Mangabarana,,21.65,False,0.0287,10.0,0,0.943,0.943,0.938,88,True
 Maná-cubiu,cubiu | Solanum sessiliflorum,17.23,False,0.0289,8.0,1158,0.938,0.938,0.938,88,True
-Mayhaw,,20.0,True,0.0285,10.0,0,0.947,0.947,0.938,88,True
+Mayhaw,,20.0,True,0.0286,10.0,0,0.947,0.947,0.938,88,True
 Medronho,Arbutus unedo,15.358,False,0.029,,10716,0.935,0.935,0.938,88,True
 Murta,,13.962,False,0.0294,,0,0.922,0.922,0.938,88,True
-Murumuru,,16.091,False,0.0291,,2892,0.928,0.928,0.938,88,True
+Murumuru,,16.091,False,0.0292,,2892,0.928,0.928,0.938,88,True
 Oiti,,16.369,False,0.0287,,22590,0.942,0.942,0.938,88,True
 Patauá,,17.252,False,0.0289,,2190,0.936,0.936,0.938,88,True
 Piaçava,,15.582,False,0.0287,,4962,0.947,0.947,0.938,88,True
 Piquiá,Pequiá,16.359,False,0.0291,,18468,0.931,0.931,0.938,88,True
-Puçá,,17.05,False,0.0288,,0,0.938,0.938,0.938,88,True
+Puçá,,17.05,False,0.0289,,0,0.938,0.938,0.938,88,True
 Sabugueiro,,14.792,False,0.0293,,0,0.925,0.925,0.938,88,True
 Sapota,,17.988,False,0.0284,,20790,0.952,0.952,0.938,88,True
-Sapote-negro,,14.819,False,0.0293,,0,0.924,0.924,0.938,88,True
-Sorva,,17.322,False,0.0284,,2514,0.952,0.952,0.938,88,True
-Tucum,,15.671,False,0.0284,,4614,0.947,0.947,0.938,88,True
+Sapote-negro,,14.819,False,0.0294,,0,0.924,0.924,0.938,88,True
+Sorva,,17.322,False,0.0284,,2514,0.951,0.951,0.938,88,True
+Tucum,,15.671,False,0.0285,,4614,0.947,0.947,0.938,88,True
 Umbugueli,,20.0,True,0.0285,10.0,0,0.947,0.947,0.938,88,True
-Uxi,,16.234,False,0.0291,,1404,0.93,0.93,0.938,88,True
+Uxi,,16.234,False,0.0292,,1404,0.93,0.93,0.938,88,True
 Wood apple,limonia,22.949,False,0.0285,10.0,0,0.947,0.947,0.938,88,True
-Aronia,,20.384,False,0.0278,,2214,0.97,0.97,0.943,89,True
+Aronia,,20.384,False,0.0279,,2214,0.97,0.97,0.943,89,True
 Babaco,Vasconcellea × heilbornii,20.647,False,0.0278,,438,0.972,0.972,0.943,89,True
-Bacabinha,,19.173,False,0.0279,,330,0.967,0.967,0.943,89,True
+Bacabinha,,19.173,False,0.028,,330,0.967,0.967,0.943,89,True
 Bacuripari,,20.068,False,0.0281,,0,0.963,0.963,0.943,89,True
 Bacurizinho,,20.0,True,0.0277,,0,0.975,0.975,0.943,89,True
-Bilimbi,biri-biri,18.599,False,0.0281,,16986,0.961,0.961,0.943,89,True
+Bilimbi,biri-biri,18.599,False,0.0282,,16986,0.961,0.961,0.943,89,True
 Buritirana,,16.307,False,0.0284,,1608,0.953,0.953,0.943,89,True
-Cagaiteira,,18.144,False,0.028,,25800,0.963,0.963,0.943,89,True
-Canistel,gema-de-ovo,19.248,False,0.028,,3282,0.966,0.966,0.943,89,True
+Cagaiteira,,18.144,False,0.0281,,25800,0.963,0.963,0.943,89,True
+Canistel,gema-de-ovo,19.248,False,0.028,,3282,0.965,0.965,0.943,89,True
 Chempedak,,20.0,True,0.0275,,0,0.981,0.981,0.943,89,True
-Cornalina,corniso,16.669,False,0.0283,,2982,0.955,0.955,0.943,89,True
-Cupuí,,20.0,True,0.0277,,972,0.973,0.973,0.943,89,True
+Cornalina,corniso,16.669,False,0.0284,,2982,0.955,0.955,0.943,89,True
+Cupuí,,20.0,True,0.0278,,972,0.973,0.973,0.943,89,True
 Duku,,20.0,True,0.0276,,84,0.981,0.981,0.943,89,True
 Facheiro,,17.691,False,0.0283,,1878,0.955,0.955,0.943,89,True
 Grumixameira,,19.325,False,0.0279,,27006,0.968,0.968,0.943,89,True
-Guajiru,abajeru,16.391,False,0.0282,,2958,0.957,0.957,0.943,89,True
+Guajiru,abajeru,16.391,False,0.0283,,2958,0.957,0.957,0.943,89,True
 Guapuritis,,20.0,True,0.0277,,0,0.975,0.975,0.943,89,True
 Langsat,,20.0,True,0.0276,,0,0.981,0.981,0.943,89,True
 Longan,olho-de-dragão,10.337,False,0.0279,,4956,0.97,0.97,0.943,89,True
-Lúcuma,,18.404,False,0.0281,,5106,0.96,0.96,0.943,89,True
-Mamey,sapote-mamey,19.666,False,0.0274,,36,0.981,0.981,0.943,89,True
+Lúcuma,,18.404,False,0.0282,,5106,0.96,0.96,0.943,89,True
+Mamey,sapote-mamey,19.666,False,0.0275,,36,0.981,0.981,0.943,89,True
 Mapati,uva-da-amazônia,17.97,False,0.0283,,402,0.955,0.955,0.943,89,True
-Marang,,20.0,True,0.0275,,36,0.981,0.981,0.943,89,True
-Oiticoró,,22.033,False,0.0275,,0,0.981,0.981,0.943,89,True
-Pitangatuba,,19.15,False,0.0279,,1740,0.966,0.966,0.943,89,True
+Marang,,20.0,True,0.0276,,36,0.981,0.981,0.943,89,True
+Oiticoró,,22.033,False,0.0276,,0,0.981,0.981,0.943,89,True
+Pitangatuba,,19.15,False,0.028,,1740,0.966,0.966,0.943,89,True
 Pulasan,Nephelium mutabile,20.0,True,0.0274,,162,0.981,0.981,0.943,89,True
 Quiabento,,19.785,False,0.028,,0,0.965,0.965,0.943,89,True
-Salak,fruta-cobra | Salacca zalacca,10.857,False,0.0276,,2172,0.977,0.977,0.943,89,True
+Salak,fruta-cobra | Salacca zalacca,10.857,False,0.0277,,2172,0.977,0.977,0.943,89,True
 Santol,,20.0,True,0.0275,,282,0.981,0.981,0.943,89,True
 Sorveira,,17.69,False,0.0282,,2514,0.958,0.958,0.943,89,True
 Tangelo,,18.176,False,0.0281,,1170,0.962,0.962,0.943,89,True
 Tumbo,,18.762,False,0.0282,,0,0.959,0.959,0.943,89,True
 Ubajaí,,20.0,True,0.0278,,0,0.972,0.972,0.943,89,True
-Xique-xique,,20.0,True,0.0277,,2058,0.974,0.974,0.943,89,True
+Xique-xique,,20.0,True,0.0278,,2058,0.974,0.974,0.943,89,True
 Azarole,,20.0,True,0.0272,,0,0.992,0.992,0.949,90,True
-Boysenberry,,20.0,True,0.0273,,1050,0.988,0.988,0.949,90,True
+Boysenberry,,20.0,True,0.0274,,1050,0.988,0.988,0.949,90,True
 Calamansi,,20.0,True,0.0271,,2316,0.995,0.995,0.949,90,True
 Dekopon,,20.0,True,0.027,,0,0.999,0.999,0.949,90,True
 Goji,goji berry,20.0,True,0.0273,,5112,0.988,0.988,0.949,90,True
-Haskap,,20.0,True,0.0272,,0,0.992,0.992,0.949,90,True
+Haskap,,20.0,True,0.0273,,0,0.992,0.992,0.949,90,True
 Kabosu,,20.0,True,0.027,,324,0.999,0.999,0.949,90,True
 Limeta,,20.0,True,0.0271,,0,0.995,0.995,0.949,90,True
 Loganberry,Rubus x loganobaccus,20.0,True,0.0273,,264,0.988,0.988,0.949,90,True
-Mangava,,20.0,True,0.0269,,38430,1.0,1.0,0.949,90,True
-Marionberry,,20.0,True,0.0272,,0,0.988,0.988,0.949,90,True
+Mangava,,20.0,True,0.027,,38430,1.0,1.0,0.949,90,True
+Marionberry,,20.0,True,0.0273,,0,0.988,0.988,0.949,90,True
 Naranjilla,lulo,20.0,True,0.0274,,102,0.986,0.986,0.949,90,True
 Sea buckthorn,espinheiro-marítimo,13.102,False,0.0272,,2892,0.992,0.992,0.949,90,True
 Sudachi,,20.0,True,0.0271,,810,0.995,0.995,0.949,90,True
 Tamarillo,tomate-de-árvore | tomate-francês | Solanum betaceum,10.481,False,0.0274,,10344,0.986,0.986,0.949,90,True
-Ugli,,20.0,True,0.027,,414,0.997,0.997,0.949,90,True
-Yuzu,,20.0,True,0.0271,,6666,0.995,0.995,0.949,90,True
+Ugli,,20.0,True,0.0271,,414,0.997,0.997,0.949,90,True
+Yuzu,,20.0,True,0.0272,,6666,0.995,0.995,0.949,90,True

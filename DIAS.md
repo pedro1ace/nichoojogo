@@ -60,8 +60,8 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Turma da Mônica | Cite um personagem dos quadrinhos do Mauricio de Sousa | 62 |
 | 4 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
 | 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1689 |
-| 6 | Frutas | Cite uma fruta | 1074 |
-| 7 | Peixes | Cite um peixe | 1013 |
+| 6 | Frutas | Cite uma fruta | 1073 |
+| 7 | Peixes | Cite um peixe | 1007 |
 
 ## Dia 6 · seg 02/11/2026
 
