@@ -342,12 +342,14 @@ def completar(cat_id: str, faltando: list[dict]) -> int:
 # ---------- duplicatas ----------
 
 # Nomes próprios em que o plural é outro lugar (Dourado e Dourados são duas cidades).
-SEM_SINGULAR = {"cidades-do-brasil", "cidades-do-mundo", "capitais-do-mundo", "paises", "paises-acima-do-equador"}
+SEM_SINGULAR = {"cidades-do-brasil", "cidades-do-mundo", "capitais-do-mundo", "paises", "paises-acima-do-equador",
+                "corpos-do-sistema-solar"}  # nomes próprios: Pala e Palas são asteroides diferentes
 
 
 def chaves(nome: str, cat_id: str) -> set[str]:
     """Formas que tornam duas linhas da lista a mesma resposta ("Queijo de coalho" e "Coalho")."""
-    base = re.sub(r"\(.*?\)", "", nome)
+    # "Dourada (bagre)" vira "Dourada", mas "S/2003 (130) 1" fica inteiro: número é designação, não explicação
+    base = re.sub(r"\([^)0-9]*\)", "", nome)
     if cat_id in SEM_SINGULAR:
         t = normalizar(base)
         formas = {t, t.replace(" ", "")}
