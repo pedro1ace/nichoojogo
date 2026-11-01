@@ -9,7 +9,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Aves | Cite uma ave | 1184 |
 | 2 | Rios | Cite um rio (de qualquer lugar do mundo) | 3638 |
-| 3 | Doces e sobremesas | Cite um doce ou sobremesa | 1400 |
+| 3 | Doces e sobremesas | Cite um doce ou sobremesa | 1399 |
 | 4 | Insetos | Cite um inseto | 1033 |
 | 5 | Coisas da praia | Cite algo que você encontra ou leva para a praia | 992 |
 | 6 | Temperos e especiarias | Cite um tempero, erva ou especiaria | 915 |
@@ -21,7 +21,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Pokémon | Cite um Pokémon | 808 |
 | 2 | Dinossauros | Cite um dinossauro (ou réptil pré-histórico famoso) | 1662 |
-| 3 | Deuses e deusas | Cite um deus ou deusa de qualquer mitologia ou religião antiga | 1447 |
+| 3 | Deuses e deusas | Cite um deus ou deusa de qualquer mitologia ou religião antiga | 1445 |
 | 4 | Instrumentos musicais | Cite um instrumento musical | 423 |
 | 5 | Heróis e vilões dos quadrinhos | Cite um super-herói ou supervilão (de quadrinhos, filme ou desenho) | 766 |
 | 6 | Partes do corpo humano | Cite uma parte do corpo humano | 838 |
@@ -33,11 +33,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Coisas amarelas | Cite algo que é amarelo | 1353 |
 | 2 | Legumes e verduras | Cite um legume ou uma verdura | 1079 |
-| 3 | Brincadeiras e jogos | Cite uma brincadeira ou um jogo (de rua, de mesa ou de cartas) | 1075 |
+| 3 | Brincadeiras e jogos | Cite uma brincadeira ou um jogo (de rua, de mesa ou de cartas) | 1074 |
 | 4 | Gigantes do Spotify | Cite um dos 3 mil artistas mais ouvidos de todos os tempos no Spotify | 2989 |
 | 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 926 |
 | 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 1056 |
-| 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 7751 |
+| 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 7712 |
 
 ## Dia 4 · sáb 31/10/2026
 
@@ -58,7 +58,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Corpos do Sistema Solar | Cite um planeta, lua, planeta anão, asteroide ou cometa do Sistema Solar | 4306 |
 | 2 | Países acima da linha do Equador | Cite um país que tem território ao norte da linha do Equador | 186 |
 | 3 | Turma da Mônica | Cite um personagem dos quadrinhos do Mauricio de Sousa | 129 |
-| 4 | Filmes | Cite um filme | 3709 |
+| 4 | Filmes | Cite um filme | 3703 |
 | 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1689 |
 | 6 | Frutas | Cite uma fruta | 1073 |
 | 7 | Peixes | Cite um peixe | 1007 |
@@ -68,22 +68,22 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Estrelas | Cite o nome de uma estrela (de verdade, do céu) | 2363 |
-| 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2450 |
-| 3 | Profissões | Cite uma profissão | 1141 |
+| 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2449 |
+| 3 | Profissões | Cite uma profissão | 1106 |
 | 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1041 |
 | 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1060 |
 | 6 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1145 |
-| 7 | Jogos de videogame | Cite um jogo de videogame (de qualquer console, PC ou celular) | 1154 |
+| 7 | Jogos de videogame | Cite um jogo de videogame (de qualquer console, PC ou celular) | 1153 |
 
 ## Dia 7 · ter 03/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Ritmos e estilos musicais | Cite um ritmo ou estilo musical | 1196 |
-| 2 | Gírias brasileiras | Cite uma gíria brasileira | 1066 |
-| 3 | Coisas que brilham no céu | Cite algo que brilha no céu | 1027 |
-| 4 | Palavras terminadas em -io | Cite uma palavra que termina em "-io" | 4166 |
-| 5 | Animais do Brasil | Cite um animal da fauna brasileira | 3517 |
+| 1 | Ritmos e estilos musicais | Cite um ritmo ou estilo musical | 1192 |
+| 2 | Gírias brasileiras | Cite uma gíria brasileira | 1061 |
+| 3 | Coisas que brilham no céu | Cite algo que brilha no céu | 1021 |
+| 4 | Palavras terminadas em -io | Cite uma palavra que termina em "-io" | 4158 |
+| 5 | Animais do Brasil | Cite um animal da fauna brasileira | 3515 |
 | 6 | Esportes olímpicos | Cite um esporte disputado nas Olimpíadas | 133 |
 | 7 | Novelas brasileiras | Cite uma novela brasileira | 677 |
 
@@ -91,7 +91,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1101 |
+| 1 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1100 |
 | 2 | Constelações | Cite uma das 88 constelações oficiais | 88 |
 | 3 | Raças de cachorro | Cite uma raça de cachorro | 1062 |
 | 4 | Capitais do mundo | Cite a capital de um país | 205 |
@@ -115,7 +115,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3760 |
+| 1 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3754 |
 | 2 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1078 |
 | 3 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
 | 4 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1035 |
@@ -127,7 +127,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Motivos para rir | Cite um motivo para rir | 1512 |
+| 1 | Motivos para rir | Cite um motivo para rir | 1504 |
 | 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1446 |
 | 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1262 |
 | 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1201 |
