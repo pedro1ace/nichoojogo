@@ -68,11 +68,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Estrelas | Cite o nome de uma estrela (de verdade, do céu) | 2363 |
-| 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2451 |
-| 3 | Profissões | Cite uma profissão | 1142 |
-| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1045 |
-| 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1067 |
-| 6 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1146 |
+| 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2450 |
+| 3 | Profissões | Cite uma profissão | 1141 |
+| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1041 |
+| 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1060 |
+| 6 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1145 |
 | 7 | Jogos de videogame | Cite um jogo de videogame (de qualquer console, PC ou celular) | 1154 |
 
 ## Dia 7 · ter 03/11/2026

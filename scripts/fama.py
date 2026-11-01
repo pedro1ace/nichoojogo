@@ -360,7 +360,8 @@ def chaves(nome: str, cat_id: str) -> set[str]:
             if t.startswith(pre) and len(t) - len(pre) >= 4:
                 formas |= set(variantes(t[len(pre):]))
                 break
-        formas |= {re.sub(r"\b(de|do|da|dos|das|a)\b", " ", f) for f in list(formas)}
+        # "a" no fim é letra, não artigo: Alfa Centauri A não é Alfa Centauri
+        formas |= {re.sub(r"\b(de|do|da|dos|das|a)\b(?!$)", " ", f) for f in list(formas)}
         formas = {re.sub(r"\s+", "", f) for f in formas} | formas
     return {f for f in formas if len(f) >= 3}
 
