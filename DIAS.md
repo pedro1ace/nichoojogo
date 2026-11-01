@@ -57,8 +57,8 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Corpos do Sistema Solar | Cite um planeta, lua, planeta anão, asteroide ou cometa do Sistema Solar | 4306 |
 | 2 | Países acima da linha do Equador | Cite um país que tem território ao norte da linha do Equador | 186 |
-| 3 | Turma da Mônica | Cite um personagem dos quadrinhos do Mauricio de Sousa | 62 |
-| 4 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
+| 3 | Turma da Mônica | Cite um personagem dos quadrinhos do Mauricio de Sousa | 129 |
+| 4 | Filmes | Cite um filme | 3619 |
 | 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1689 |
 | 6 | Frutas | Cite uma fruta | 1073 |
 | 7 | Peixes | Cite um peixe | 1007 |
@@ -137,7 +137,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 ## Na fila (ainda não formam um dia)
 
-- Filmes
+- Astronautas
 - Séries de TV
 - Jogadores de futebol
 - Modelos de carro
