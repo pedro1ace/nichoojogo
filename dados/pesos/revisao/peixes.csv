@@ -24,7 +24,7 @@ Carpa,Carpa-comum,14.214,False,6.0,98.0,7632,0.022,0.022,0.539,29,True
 Cavalo-marinho,,10.574,False,6.0,100.0,27738,0.022,0.022,0.539,29,True
 Corvina,,15.242,False,6.0,90.0,9366,0.022,0.022,0.539,29,True
 Merluza,,15.459,False,6.0,95.0,11916,0.022,0.022,0.539,29,True
-Peixe-dourado,kinguio | peixinho dourado,10.357,False,6.0,98.0,6582,0.022,0.022,0.539,29,True
+Peixe-dourado,kinguio | peixinho dourado | goldfish | gold fish,10.357,False,6.0,98.0,6582,0.022,0.022,0.539,29,True
 Truta,,13.749,False,6.0,98.0,8622,0.022,0.022,0.539,29,True
 Tainha,,14.328,False,5.0,90.0,11448,0.027,0.027,0.557,31,True
 Badejo,,15.245,False,4.0,90.0,0,0.031,0.031,0.583,34,True
@@ -52,7 +52,7 @@ Matrinxã,,16.472,False,2.0,70.0,1350,0.048,0.048,0.678,46,True
 Namorado,,10.122,False,2.0,65.0,3480,0.048,0.048,0.678,46,True
 Pargo,,15.161,False,2.0,70.0,906,0.048,0.048,0.678,46,True
 Peixe-leão,,10.263,False,2.0,75.0,49098,0.048,0.048,0.678,46,True
-Peixe-voador,,11.252,False,2.0,85.0,5676,0.048,0.048,0.678,46,True
+Peixe-voador,voador,11.252,False,2.0,85.0,5676,0.048,0.048,0.678,46,True
 Piau,,14.461,False,2.0,70.0,3660,0.048,0.048,0.678,46,True
 Tubarão-baleia,,11.907,False,2.0,95.0,32502,0.048,0.048,0.678,46,True
 Tubarão-branco,,10.259,False,2.0,100.0,33756,0.048,0.048,0.678,46,True
@@ -69,7 +69,7 @@ Neon,,12.194,False,1.0,80.0,8394,0.066,0.066,0.762,58,True
 Oscar,apaiari | Acará-açu,13.263,False,1.0,55.0,48084,0.066,0.066,0.762,58,True
 Peixe-agulha,Agulha,10.789,False,1.0,,0,0.066,0.066,0.762,58,True
 Peixe-galo,,10.648,False,1.0,,522,0.066,0.066,0.762,58,True
-Peixe-gato,gato,10.138,False,1.0,80.0,4170,0.066,0.066,0.762,58,True
+Peixe-gato,gato | catfish,10.138,False,1.0,80.0,4170,0.066,0.066,0.762,58,True
 Peixe-lua,lua | peixe sol | peixe-sol,9.915,False,1.0,75.0,22986,0.066,0.066,0.762,58,True
 Peixe-pedra,pedra,9.885,False,1.0,60.0,108,0.066,0.066,0.762,58,True
 Pescadinha,,16.24,False,1.0,,0,0.066,0.066,0.762,58,True
@@ -354,7 +354,7 @@ Peixe-cirurgião-convicto,,11.558,False,0.1537,,234,0.353,0.353,0.831,69,True
 Peixe-de-são-pedro,,7.943,False,0.1526,,0,0.355,0.355,0.831,69,True
 Peixe-gato-vermelho,,9.889,False,0.1464,30.0,0,0.367,0.367,0.831,69,True
 Peixe-machado,,10.132,False,0.1605,,0,0.341,0.341,0.831,69,True
-Peixe-mão,,9.301,False,0.15,30.0,0,0.36,0.36,0.831,69,True
+Peixe-mão,peixe mão rosa | peixe-mão-rosa | peixe com mãos,9.301,False,0.15,30.0,0,0.36,0.36,0.831,69,True
 Peixe-sapo,,10.505,False,0.1459,,0,0.367,0.367,0.831,69,True
 Peixe-sapo-gigante,,10.517,False,0.157,,222,0.347,0.347,0.831,69,True
 Peixe-ventosa-de-bigode,,12.077,False,0.1469,,222,0.367,0.367,0.831,69,True
@@ -452,7 +452,7 @@ Peixe-cachorro-gigante,,10.3,False,0.1187,,0,0.435,0.435,0.849,72,True
 Peixe-cadela,,11.209,False,0.1097,,162,0.461,0.461,0.849,72,True
 Peixe-caracol,,11.468,False,0.1147,30.0,0,0.449,0.449,0.849,72,True
 Peixe-cobra,,10.44,False,0.1143,,0,0.449,0.449,0.849,72,True
-Peixe-diabo-negro,,10.252,False,0.1191,,0,0.432,0.432,0.849,72,True
+Peixe-diabo-negro,diabo negro,10.252,False,0.1191,,0,0.432,0.432,0.849,72,True
 Peixe-dragão-negro,,10.361,False,0.1162,,0,0.441,0.441,0.849,72,True
 Peixe-escorpião-folha,,10.66,False,0.1094,,0,0.461,0.461,0.849,72,True
 Peixe-espada-de-prata,,10.326,False,0.1181,,0,0.441,0.441,0.849,72,True
@@ -711,7 +711,7 @@ Tubarão-baleeiro,,13.417,False,0.0704,,0,0.682,0.682,0.894,80,True
 Tubarão-focinho-de-porco-zebra-do-norte,,11.47,False,0.0679,,114,0.706,0.706,0.894,80,True
 Tubarão-pigmeu,,13.596,False,0.0688,,0,0.695,0.695,0.894,80,True
 Ubarana-rato,,13.621,False,0.0687,,0,0.7,0.7,0.894,80,True
-Atum-rabilho,atum-azul,14.68,False,0.0646,,0,0.738,0.738,0.9,81,True
+Atum-rabilho,atum-azul | bluefin | atum bluefin,14.68,False,0.0646,,0,0.738,0.738,0.9,81,True
 Bagre-cabeçudo,,14.596,False,0.0653,,0,0.734,0.734,0.9,81,True
 Baiacu-de-cauda-vermelha,,12.531,False,0.0664,,120,0.723,0.723,0.9,81,True
 Barbo-cereja,,14.095,False,0.0673,,0,0.714,0.714,0.9,81,True
