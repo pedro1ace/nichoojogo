@@ -127,7 +127,14 @@ def singular(palavra: str) -> str:
 
 
 # Palavra genérica no começo do nome da lista que o jogador costuma pular ("Queijo minas" -> "minas").
-PREFIXOS = ("queijo de ", "queijo ", "cao de ", "cao ", "programa ", "missao ", "raca ", "jogo de ", "jogo ")
+# Fica restrita à categoria do tema, para "cão do sol" não virar "Sol" nem "Queijo bola" virar "Bola".
+PREFIXOS_POR_CATEGORIA = {
+    "queijos": ("queijo de ", "queijo "),
+    "racas-de-cachorro": ("cao de ", "cao ", "raca "),
+    "missoes-espaciais": ("programa ", "missao "),
+    "brincadeiras": ("jogo de ", "jogo "),
+    "jogos-de-videogame": ("jogo de ", "jogo "),
+}
 
 
 ULTIMA = "\x00ultima:"  # chave do índice pela última palavra
@@ -142,7 +149,7 @@ def indice(cat: dict) -> dict[str, str]:
     for r in cat["respostas"]:
         for nome in [r["resposta"], *r["apelidos"]]:
             t = normalizar(nome)
-            for pre in PREFIXOS:
+            for pre in PREFIXOS_POR_CATEGORIA.get(cat["id"], ()):
                 if t.startswith(pre) and len(t) - len(pre) >= 4:
                     for v in variantes(t[len(pre):]):
                         idx.setdefault(v, r["resposta"])
@@ -343,7 +350,7 @@ def completar(cat_id: str, faltando: list[dict]) -> int:
 
 # Nomes próprios em que o plural é outro lugar (Dourado e Dourados são duas cidades).
 SEM_SINGULAR = {"cidades-do-brasil", "cidades-do-mundo", "capitais-do-mundo", "paises", "paises-acima-do-equador",
-                "corpos-do-sistema-solar"}  # nomes próprios: Pala e Palas são asteroides diferentes
+                "corpos-do-sistema-solar", "novelas-brasileiras"}  # nomes próprios/títulos distintos no plural
 
 
 def chaves(nome: str, cat_id: str) -> set[str]:
@@ -356,7 +363,7 @@ def chaves(nome: str, cat_id: str) -> set[str]:
     else:
         formas = set(variantes(base))
         t = normalizar(base)
-        for pre in PREFIXOS:
+        for pre in PREFIXOS_POR_CATEGORIA.get(cat_id, ()):
             if t.startswith(pre) and len(t) - len(pre) >= 4:
                 formas |= set(variantes(t[len(pre):]))
                 break

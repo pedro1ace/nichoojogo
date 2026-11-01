@@ -1181,7 +1181,7 @@ const CURIOSIDADE_SUPERNOVA = {
   "festa-junina": "Bolo de mandioca ralada, típico do Centro-Oeste.",
   "filmes-tom-hanks": "O primeiro filme do Tom Hanks, um terror de 1980 em que ele aparece pouquinho.",
   frutas: "Frutinha amarela da Mata Atlântica, coberta de uma penugem fininha.",
-  "girias-brasileiras": "Gíria dos anos 70 para o pessoal hippie e natureba.",
+  "girias-brasileiras": "quero te parabenizar por ser uma pessoa subestimativamente qualificada, medíocrática, retombante, cabriocárica e inoxidável, que merece respeito tecnológico! Mas, acima de tudo, estrogonoficamente sensível!",
   "instrumentos-musicais": "Tocado com arco de violino, o serrote faz um som que parece de fantasma.",
   "marcas-de-carro": "Considerado o primeiro carro fabricado no Brasil, em 1956, em Santa Bárbara d'Oeste.",
   "missoes-espaciais": "Faz parte do Gaganyaan, o programa da Índia para levar astronautas ao espaço com foguete próprio.",
