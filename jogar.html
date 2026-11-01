@@ -4896,8 +4896,8 @@ function mostrarResultado(cat, resposta, pontos, supernova, espertalhao) {
   $("linha-pontos").innerHTML = resposta
     ? `<b>+${pontos} PONTOS</b> · viajou ${numero(Math.round(viagem(pontos) * AL_POR_U))} AL`
     : "+0 PONTOS";
-  // algumas respostas têm frase própria (dados/frases.txt), no lugar da frase da faixa
-  const propria = resposta && !supernova && (cat.respostas || []).find((r) => r.resposta === resposta)?.frase;
+  // algumas respostas têm frase própria (dados/frases.txt), no lugar da frase da faixa (vale também para a singularidade)
+  const propria = resposta && (cat.respostas || []).find((r) => r.resposta === resposta)?.frase;
   $("frase").textContent = propria || faixa.frase;
 
   // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
@@ -5446,7 +5446,7 @@ function montarBanco(cat, sua) {
       if (it.sn) {
         const nota = document.createElement("span");
         nota.className = "nota";
-        nota.textContent = `★ Singularidade. ${CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
+        nota.textContent = `★ Singularidade. ${it.frase || CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
         li.append(nota);
       } else if (it.frase) {
         // frase própria da resposta (dados/frases.txt), a mesma do cartão de resultado
