@@ -39,6 +39,8 @@ Com o projeto todo baixado, abrir `index.html` ou `jogo/index.html` com dois cli
 
 ## Como atualizar as perguntas
 
+Passo a passo completo, para mexer sozinho (singularidade, raridade, categoria nova, dia de hoje e de amanhã): [`docs/TUTORIAL.md`](docs/TUTORIAL.md).
+
 Precisa de Python 3 (sem dependências).
 
 ```bash
@@ -84,6 +86,7 @@ jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
   cena.js                  cena em pixel art: fundo, Terra, planetas, foguete, mascote, textos
   som.js                   sons 8-bit (Web Audio)
   jogo.js                  regras, rodada diária, salvar e compartilhar
+docs/TUTORIAL.md           passo a passo para manter o jogo sozinho
 docs/PIPELINE.md           etapas do projeto e próximos passos
 docs/BANCO-DE-PALAVRAS.md  fontes de palavras, raridade, LLM e apelidos (pesquisa e proposta)
 ```
