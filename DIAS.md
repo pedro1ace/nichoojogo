@@ -24,7 +24,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Deuses e deusas | Cite um deus ou deusa de qualquer mitologia ou religião antiga | 1445 |
 | 4 | Instrumentos musicais | Cite um instrumento musical | 423 |
 | 5 | Heróis e vilões dos quadrinhos | Cite um super-herói ou supervilão (de quadrinhos, filme ou desenho) | 766 |
-| 6 | Partes do corpo humano | Cite uma parte do corpo humano | 838 |
+| 6 | Partes do corpo humano | Cite uma parte do corpo humano | 837 |
 | 7 | Elementos químicos | Cite um elemento químico da tabela periódica | 118 |
 
 ## Dia 3 · sex 30/10/2026
@@ -37,7 +37,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Gigantes do Spotify | Cite um dos 3 mil artistas mais ouvidos de todos os tempos no Spotify | 2989 |
 | 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 926 |
 | 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 1056 |
-| 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 7712 |
+| 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 7710 |
 
 ## Dia 4 · sáb 31/10/2026
 
@@ -67,13 +67,13 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Estrelas | Cite o nome de uma estrela (de verdade, do céu) | 2363 |
-| 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2449 |
-| 3 | Profissões | Cite uma profissão | 1106 |
-| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1041 |
-| 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1060 |
-| 6 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1145 |
-| 7 | Jogos de videogame | Cite um jogo de videogame (de qualquer console, PC ou celular) | 1153 |
+| 1 | Jogadores de futebol | Cite um jogador ou jogadora de futebol | 2746 |
+| 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2486 |
+| 3 | Profissões | Cite uma profissão | 1398 |
+| 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1182 |
+| 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1176 |
+| 6 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1260 |
+| 7 | Jogos de videogame | Cite um jogo de videogame (de qualquer console, PC ou celular) | 1460 |
 
 ## Dia 7 · ter 03/11/2026
 
@@ -127,7 +127,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Motivos para rir | Cite um motivo para rir | 1504 |
+| 1 | Motivos para rir | Cite um motivo para rir | 1503 |
 | 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1446 |
 | 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1262 |
 | 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1201 |
@@ -139,6 +139,6 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 - Astronautas
 - Séries de TV
-- Jogadores de futebol
+- Estrelas
 - Modelos de carro
 - Missões espaciais

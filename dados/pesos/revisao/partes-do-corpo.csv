@@ -24,8 +24,8 @@ Costas,dorso,10.091,False,8.0,100.0,0,0.027,0.027,0.51,26,True
 Dente,dentes,11.177,False,8.0,100.0,10446,0.027,0.027,0.51,26,True
 Língua,,9.242,False,8.0,100.0,10596,0.027,0.027,0.51,26,True
 Unha,,11.214,False,8.0,100.0,5532,0.027,0.027,0.51,26,True
-Rim,,12.336,False,6.0,100.0,7194,0.03,0.03,0.539,29,True
-Umbigo,,12.38,False,6.0,100.0,5658,0.03,0.03,0.539,29,True
+Rim,,12.336,False,6.0,100.0,7194,0.031,0.031,0.539,29,True
+Umbigo,,12.38,False,6.0,100.0,5658,0.031,0.031,0.539,29,True
 Coxa,,11.903,False,5.0,100.0,2646,0.034,0.034,0.557,31,True
 Intestino,,11.642,False,5.0,100.0,4398,0.034,0.034,0.557,31,True
 Peito,tórax,10.172,False,5.0,100.0,0,0.034,0.034,0.557,31,True
@@ -39,7 +39,6 @@ Lábio,beiço | lábios,12.87,False,3.0,100.0,2460,0.043,0.043,0.632,40,True
 Sobrancelha,,12.479,False,3.0,100.0,1764,0.043,0.043,0.632,40,True
 Axila,sovaco | sobaco,14.166,False,2.0,99.0,4314,0.056,0.056,0.678,46,True
 Bexiga,bexiga urinária,12.328,False,2.0,98.0,6600,0.056,0.056,0.678,46,True
-Bunda,nádegas | nádega | bumbum | glúteo,10.825,False,2.0,100.0,0,0.056,0.056,0.678,46,True
 Bíceps,,13.996,False,2.0,99.0,7554,0.056,0.056,0.678,46,True
 Canela,,11.115,False,2.0,,13392,0.056,0.056,0.678,46,True
 Coluna,coluna vertebral | espinha,9.991,False,2.0,100.0,2808,0.056,0.056,0.678,46,True
@@ -49,13 +48,14 @@ Fêmur,,13.789,False,2.0,90.0,8880,0.056,0.056,0.678,46,True
 Garganta,,11.251,False,2.0,99.0,1794,0.056,0.056,0.678,46,True
 Músculo,,11.756,False,2.0,100.0,9582,0.056,0.056,0.678,46,True
 Nuca,cangote,12.367,False,2.0,98.0,1584,0.056,0.056,0.678,46,True
+Nádegas,nádega | bumbum | glúteo | bunda,13.285,False,2.0,,0,0.056,0.056,0.678,46,True
 Osso,,11.436,False,2.0,100.0,11340,0.056,0.056,0.678,46,True
 Panturrilha,batata da perna,13.753,False,2.0,98.0,6378,0.056,0.056,0.678,46,True
 Punho,,11.903,False,2.0,100.0,3012,0.056,0.056,0.678,46,True
 Pálpebra,,13.14,False,2.0,99.0,2418,0.056,0.056,0.678,46,True
 Pâncreas,,12.911,False,2.0,95.0,21336,0.056,0.056,0.678,46,True
 Quadril,,12.044,False,2.0,99.0,3636,0.056,0.056,0.678,46,True
-Glabela,,17.201,False,0.1294,15.0,3804,0.253,0.253,0.707,50,True
+Glabela,,17.201,False,0.1294,15.0,3804,0.254,0.254,0.707,50,True
 Úvula,campainha,16.567,False,1.5,60.0,3984,0.067,0.067,0.714,51,True
 Apêndice,,12.617,False,1.0,92.0,0,0.079,0.079,0.762,58,True
 Baço,,13.489,False,1.0,92.0,8874,0.079,0.079,0.762,58,True
@@ -93,17 +93,16 @@ Abdominal,tanquinho,11.809,False,0.27,98.0,1926,0.133,0.133,0.781,61,True
 Amígdala,amídalas | Tonsila,15.197,False,0.27,95.0,4086,0.13,0.13,0.781,61,True
 Antebraço,,13.604,False,0.27,100.0,4446,0.123,0.123,0.781,61,True
 Barba,,11.482,False,0.27,99.0,5880,0.122,0.122,0.781,61,True
-Bigode,,12.441,False,0.27,99.0,3396,0.125,0.125,0.781,61,True
+Bigode,,12.441,False,0.27,99.0,3396,0.126,0.126,0.781,61,True
 Cintura,,10.949,False,0.27,100.0,1104,0.121,0.121,0.781,61,True
-Cordas vocais,,11.248,False,0.27,95.0,2868,0.136,0.136,0.781,61,True
 Hipotálamo,,14.109,False,0.3,55.0,6186,0.108,0.108,0.781,61,True
 Intestino delgado,,11.978,False,0.27,95.0,6864,0.127,0.127,0.781,61,True
 Intestino grosso,,10.685,False,0.27,95.0,3234,0.134,0.134,0.781,61,True
 Ligamento,,13.571,False,0.3,,852,0.108,0.108,0.781,61,True
 Medula,,12.132,False,0.3,90.0,0,0.108,0.108,0.781,61,True
 Ouvido,,10.084,False,0.27,100.0,10314,0.112,0.112,0.781,61,True
-Ovário,,13.082,False,0.27,98.0,2766,0.131,0.131,0.781,61,True
-Pelo,pelos,6.38,False,0.27,99.0,7704,0.119,0.119,0.781,61,True
+Ovário,,13.082,False,0.27,98.0,2766,0.132,0.132,0.781,61,True
+Pelo,pelos,6.38,False,0.27,99.0,7704,0.12,0.12,0.781,61,True
 Pomo de adão,gogó,13.101,False,0.27,95.0,4194,0.128,0.128,0.781,61,True
 Próstata,,12.125,False,0.3,98.0,15096,0.108,0.108,0.781,61,True
 Pulso,munheca,11.54,False,0.27,100.0,3012,0.115,0.115,0.781,61,True
@@ -116,15 +115,16 @@ Vértebra,,14.501,False,0.27,95.0,4176,0.129,0.129,0.781,61,True
 Ânus,,13.066,False,0.27,99.0,35382,0.118,0.118,0.781,61,True
 Úmero,,14.733,False,0.27,85.0,7320,0.135,0.135,0.781,61,True
 Bacia,pelve,11.184,False,0.27,95.0,0,0.145,0.145,0.787,62,True
-Bigorna,,14.416,False,0.27,45.0,9192,0.155,0.155,0.787,62,True
+Bigorna,,14.416,False,0.27,45.0,9192,0.156,0.156,0.787,62,True
 Clitóris,,13.291,False,0.27,,34308,0.152,0.152,0.787,62,True
+Cordas vocais,,11.248,False,0.27,95.0,2868,0.136,0.136,0.787,62,True
 Cóccix,,15.184,False,0.27,85.0,7248,0.142,0.142,0.787,62,True
 Diafragma,,13.127,False,0.27,85.0,0,0.151,0.151,0.787,62,True
 Escroto,,13.355,False,0.27,,12048,0.159,0.159,0.787,62,True
 Esterno,,14.659,False,0.27,70.0,3774,0.148,0.148,0.787,62,True
 Estribo,,13.996,False,0.27,45.0,4236,0.16,0.16,0.787,62,True
 Falange,,13.526,False,0.27,70.0,10638,0.146,0.146,0.787,62,True
-Glande,,14.176,False,0.27,,50382,0.162,0.162,0.787,62,True
+Glande,,14.176,False,0.27,,50382,0.163,0.163,0.787,62,True
 Glândula pineal,pineal,13.47,False,0.27,,31770,0.153,0.153,0.787,62,True
 Medula espinhal,,12.81,False,0.27,,7230,0.166,0.166,0.787,62,True
 Medula óssea,,12.132,False,0.27,,6990,0.165,0.165,0.787,62,True
@@ -136,620 +136,619 @@ Rádio,,9.233,False,0.27,,16596,0.154,0.154,0.787,62,True
 Rótula,patela,14.731,False,0.27,80.0,2982,0.147,0.147,0.787,62,True
 Suor,,11.585,False,0.27,,10494,0.157,0.157,0.787,62,True
 Timo,,13.765,False,0.27,,13530,0.158,0.158,0.787,62,True
-Têmpora,,15.432,False,0.27,90.0,2562,0.143,0.143,0.787,62,True
-Tíbia,,14.169,False,0.27,85.0,2790,0.137,0.137,0.787,62,True
+Têmpora,,15.432,False,0.27,90.0,2562,0.144,0.144,0.787,62,True
+Tíbia,,14.169,False,0.27,85.0,2790,0.138,0.138,0.787,62,True
 Vesícula biliar,,13.421,False,0.27,,8598,0.164,0.164,0.787,62,True
-Vulva,,14.051,False,0.27,,81876,0.149,0.149,0.787,62,True
-Anelar,seu vizinho | Anular,14.132,False,0.2286,,2514,0.188,0.188,0.794,63,True
-Bursa,,15.516,False,0.2384,,16116,0.183,0.183,0.794,63,True
-Cartilagem,,13.394,False,0.2167,,2280,0.192,0.192,0.794,63,True
+Vulva,,14.051,False,0.27,,81876,0.15,0.15,0.787,62,True
+Anelar,seu vizinho | Anular,14.132,False,0.2287,,2514,0.188,0.188,0.794,63,True
+Bursa,,15.516,False,0.2385,,16116,0.183,0.183,0.794,63,True
+Cartilagem,,13.394,False,0.2168,,2280,0.193,0.193,0.794,63,True
 Coronária,Circulação coronária,14.021,False,0.2419,,14328,0.182,0.182,0.794,63,True
 Dedo médio,pai de todos,9.793,False,0.2692,,2658,0.173,0.173,0.794,63,True
-Dedão do pé,hálux,11.454,False,0.2491,,2676,0.179,0.179,0.794,63,True
-Duodeno,,14.549,False,0.2567,,4182,0.177,0.177,0.794,63,True
-Epiglote,,16.346,False,0.214,45.0,1398,0.192,0.192,0.794,63,True
-Fíbula,perônio,15.534,False,0.235,,3666,0.184,0.184,0.794,63,True
+Dedão do pé,hálux,11.454,False,0.2492,,2676,0.179,0.179,0.794,63,True
+Duodeno,,14.549,False,0.2568,,4182,0.178,0.178,0.794,63,True
+Epiglote,,16.346,False,0.214,45.0,1398,0.193,0.193,0.794,63,True
+Fíbula,perônio,15.534,False,0.2351,,3666,0.184,0.184,0.794,63,True
 Hipófise,,14.039,False,0.27,,6030,0.17,0.17,0.794,63,True
-Linfonodo,gânglio | íngua,15.461,False,0.2112,,3012,0.192,0.192,0.794,63,True
-Lágrima,,12.065,False,0.2649,,3240,0.174,0.174,0.794,63,True
-Lóbulo da orelha,lóbulo,13.136,False,0.2196,,2304,0.19,0.19,0.794,63,True
-Maxilar,,13.581,False,0.2529,,3936,0.177,0.177,0.794,63,True
-Melanina,,13.732,False,0.2086,,9882,0.196,0.196,0.794,63,True
-Neurônio,,13.985,False,0.206,,10578,0.196,0.196,0.794,63,True
-Pavilhão auricular,,12.46,False,0.2255,,10314,0.188,0.188,0.794,63,True
+Linfonodo,gânglio | íngua,15.461,False,0.2113,,3012,0.193,0.193,0.794,63,True
+Lágrima,,12.065,False,0.265,,3240,0.175,0.175,0.794,63,True
+Lóbulo da orelha,lóbulo,13.136,False,0.2197,,2304,0.19,0.19,0.794,63,True
+Maxilar,,13.581,False,0.2529,,3936,0.178,0.178,0.794,63,True
+Melanina,,13.732,False,0.2087,,9882,0.196,0.196,0.794,63,True
+Neurônio,,13.985,False,0.2061,,10578,0.196,0.196,0.794,63,True
+Pavilhão auricular,,12.46,False,0.2256,,10314,0.188,0.188,0.794,63,True
 Reto,,11.895,False,0.27,,3894,0.171,0.171,0.794,63,True
-Sacro,,13.487,False,0.2225,,2628,0.188,0.188,0.794,63,True
+Sacro,,13.487,False,0.2226,,2628,0.188,0.188,0.794,63,True
 Saliva,,12.606,False,0.2608,,3384,0.176,0.176,0.794,63,True
 Suprarrenal,adrenal,16.373,False,0.27,,6012,0.172,0.172,0.794,63,True
 Tarso,,12.427,False,0.27,,6642,0.167,0.167,0.794,63,True
-Tronco encefálico,Tronco cerebral,12.835,False,0.2454,,3318,0.18,0.18,0.794,63,True
-Ureter,,15.504,False,0.2318,,3558,0.185,0.185,0.794,63,True
-Uretra,,13.804,False,0.27,,7206,0.168,0.168,0.794,63,True
+Tronco encefálico,Tronco cerebral,12.835,False,0.2455,,3318,0.181,0.181,0.794,63,True
+Ureter,,15.504,False,0.2319,,3558,0.185,0.185,0.794,63,True
+Uretra,,13.804,False,0.27,,7206,0.169,0.169,0.794,63,True
 Adenoide,,16.647,False,0.1834,,2052,0.208,0.208,0.8,64,True
-Alvéolo,Alvéolo pulmonar,15.557,False,0.162,,1452,0.222,0.222,0.8,64,True
-Aorta,,13.823,False,0.1738,,5532,0.214,0.214,0.8,64,True
+Alvéolo,Alvéolo pulmonar,15.557,False,0.1621,,1452,0.222,0.222,0.8,64,True
+Aorta,,13.823,False,0.1739,,5532,0.215,0.215,0.8,64,True
 Artéria pulmonar,,12.477,False,0.1757,,5298,0.213,0.213,0.8,64,True
-Brônquio,brônquios,16.388,False,0.172,,1710,0.214,0.214,0.8,64,True
-Calo,,13.407,False,0.1794,,1344,0.21,0.21,0.8,64,True
-Carpo,,14.687,False,0.1775,,1662,0.211,0.211,0.8,64,True
+Brônquio,brônquios,16.388,False,0.1721,,1710,0.215,0.215,0.8,64,True
+Calo,,13.407,False,0.1795,,1344,0.211,0.211,0.8,64,True
+Carpo,,14.687,False,0.1776,,1662,0.212,0.212,0.8,64,True
 Covinha,,15.821,False,0.1669,,1494,0.219,0.219,0.8,64,True
-Cólon,,13.154,False,0.1589,,1008,0.225,0.225,0.8,64,True
+Cólon,,13.154,False,0.159,,1008,0.225,0.225,0.8,64,True
 Epitélio,,14.088,False,0.1686,,5748,0.219,0.219,0.8,64,True
-Esfíncter,,14.782,False,0.1854,,7656,0.207,0.207,0.8,64,True
-Glândula sebácea,,12.762,False,0.1574,,4266,0.226,0.226,0.8,64,True
-Glândula sudorípara,,12.762,False,0.1605,,4602,0.223,0.223,0.8,64,True
-Hipocampo,,14.57,False,0.1652,,6348,0.219,0.219,0.8,64,True
+Esfíncter,,14.782,False,0.1855,,7656,0.207,0.207,0.8,64,True
+Glândula sebácea,,12.762,False,0.1575,,4266,0.226,0.226,0.8,64,True
+Glândula sudorípara,,12.762,False,0.1605,,4602,0.224,0.224,0.8,64,True
+Hipocampo,,14.57,False,0.1653,,6348,0.219,0.219,0.8,64,True
 Hímen,,14.997,False,0.1987,,11142,0.2,0.2,0.8,64,True
-Labirinto,,12.08,False,0.1636,,4668,0.221,0.221,0.8,64,True
-Metacarpo,,16.541,False,0.1875,,2400,0.205,0.205,0.8,64,True
+Labirinto,,12.08,False,0.1637,,4668,0.221,0.221,0.8,64,True
+Metacarpo,,16.541,False,0.1876,,2400,0.206,0.206,0.8,64,True
 Metatarso,,15.732,False,0.1941,,2274,0.203,0.203,0.8,64,True
-Nervo ciático,ciático,13.624,False,0.2011,,9648,0.198,0.198,0.8,64,True
-Osso hioide,hioide,14.679,False,0.1918,,7524,0.203,0.203,0.8,64,True
-Palatino,,15.084,False,0.1814,,6708,0.209,0.209,0.8,64,True
-Períneo,,14.662,False,0.1896,,9390,0.203,0.203,0.8,64,True
-Placenta,,13.257,False,0.1703,,5760,0.216,0.216,0.8,64,True
-Planta do pé,sola do pé,9.709,False,0.1963,,1134,0.201,0.201,0.8,64,True
+Nervo ciático,ciático,13.624,False,0.2011,,9648,0.199,0.199,0.8,64,True
+Osso hioide,hioide,14.679,False,0.1919,,7524,0.203,0.203,0.8,64,True
+Palatino,,15.084,False,0.1815,,6708,0.209,0.209,0.8,64,True
+Períneo,,14.662,False,0.1897,,9390,0.203,0.203,0.8,64,True
+Placenta,,13.257,False,0.1703,,5760,0.217,0.217,0.8,64,True
+Planta do pé,sola do pé,9.709,False,0.1964,,1134,0.201,0.201,0.8,64,True
 Plexo solar,,12.057,False,0.156,,4182,0.227,0.227,0.8,64,True
-Ulna,cúbito,15.96,False,0.2035,,2892,0.196,0.196,0.8,64,True
+Ulna,cúbito,15.96,False,0.2036,,2892,0.196,0.196,0.8,64,True
 Acetábulo,,16.193,False,0.1255,,3402,0.258,0.258,0.806,65,True
-Articulação,,11.043,False,0.1426,,3336,0.241,0.241,0.806,65,True
+Articulação,,11.043,False,0.1427,,3336,0.241,0.241,0.806,65,True
 Calcâneo,,15.002,False,0.1368,,1032,0.245,0.245,0.806,65,True
-Canal auditivo,,11.172,False,0.1451,,3270,0.236,0.236,0.806,65,True
-Colo do útero,,11.269,False,0.1517,,3774,0.231,0.231,0.806,65,True
-Dente do siso,siso,12.642,False,0.1414,,3744,0.241,0.241,0.806,65,True
+Canal auditivo,,11.172,False,0.1452,,3270,0.236,0.236,0.806,65,True
+Colo do útero,,11.269,False,0.1518,,3774,0.231,0.231,0.806,65,True
+Dente do siso,siso,12.642,False,0.1415,,3744,0.241,0.241,0.806,65,True
 Dura-máter,,12.979,False,0.1335,,3444,0.249,0.249,0.806,65,True
 Epidídimo,,15.942,False,0.1357,,5142,0.246,0.246,0.806,65,True
 Lobo frontal,,11.011,False,0.1284,,2388,0.255,0.255,0.806,65,True
 Lobo temporal,,11.164,False,0.1274,,2418,0.255,0.255,0.806,65,True
-Martelo,,12.122,False,0.1531,,3420,0.229,0.229,0.806,65,True
-Menisco,,14.787,False,0.1379,,4206,0.244,0.244,0.806,65,True
+Martelo,,12.122,False,0.1532,,3420,0.229,0.229,0.806,65,True
+Menisco,,14.787,False,0.138,,4206,0.244,0.244,0.806,65,True
 Occipital,,15.041,False,0.1477,,4326,0.234,0.234,0.806,65,True
 Papila gustativa,,15.73,False,0.1314,,4104,0.251,0.251,0.806,65,True
-Plexo braquial,,14.491,False,0.1324,,3960,0.25,0.25,0.806,65,True
+Plexo braquial,,14.491,False,0.1325,,3960,0.25,0.25,0.806,65,True
 Púbis,,14.85,False,0.1439,,4212,0.238,0.238,0.806,65,True
-Trapezoide,,18.664,False,0.1503,,6654,0.232,0.232,0.806,65,True
-Trompa de falópio,,14.163,False,0.1346,,4218,0.247,0.247,0.806,65,True
+Trapezoide,,18.664,False,0.1504,,6654,0.232,0.232,0.806,65,True
+Trompa de falópio,,14.163,False,0.1346,,4218,0.248,0.248,0.806,65,True
 Tálamo,,15.201,False,0.1391,,4980,0.241,0.241,0.806,65,True
 Ventrículo,,14.011,False,0.149,,4362,0.234,0.234,0.806,65,True
-Válvula mitral,,13.041,False,0.1545,,4134,0.229,0.229,0.806,65,True
+Válvula mitral,,13.041,False,0.1546,,4134,0.229,0.229,0.806,65,True
 Válvula tricúspide,,13.829,False,0.1464,,4140,0.236,0.236,0.806,65,True
 Zigomático,maçã do rosto,16.262,False,0.1304,,3642,0.252,0.252,0.806,65,True
-Ílio,,16.698,False,0.1402,,4944,0.241,0.241,0.806,65,True
-Capilar,,11.697,False,0.1218,,2154,0.262,0.262,0.812,66,True
-Cordão umbilical,,12.525,False,0.1159,,2346,0.271,0.271,0.812,66,True
-Corpo caloso,,12.074,False,0.1077,,1824,0.284,0.284,0.812,66,True
-Cristalino,,13.077,False,0.1209,,2550,0.264,0.264,0.812,66,True
+Ílio,,16.698,False,0.1403,,4944,0.241,0.241,0.806,65,True
+Capilar,,11.697,False,0.1218,,2154,0.263,0.263,0.812,66,True
+Cordão umbilical,,12.525,False,0.1159,,2346,0.272,0.272,0.812,66,True
+Corpo caloso,,12.074,False,0.1077,,1824,0.285,0.285,0.812,66,True
+Cristalino,,13.077,False,0.121,,2550,0.264,0.264,0.812,66,True
 Cárdia,,16.722,False,0.1128,,3144,0.276,0.276,0.812,66,True
-Esmalte,,10.683,False,0.1245,,2178,0.258,0.258,0.812,66,True
+Esmalte,,10.683,False,0.1246,,2178,0.258,0.258,0.812,66,True
 Esternocleidomastoideo,,17.66,False,0.1192,,3618,0.267,0.267,0.812,66,True
-Glândula salivar,,13.477,False,0.1084,,2088,0.284,0.284,0.812,66,True
-Humor vítreo,,12.447,False,0.107,,1812,0.284,0.284,0.812,66,True
-Iliopsoas,,17.58,False,0.1105,,3036,0.28,0.28,0.812,66,True
+Glândula salivar,,13.477,False,0.1084,,2088,0.285,0.285,0.812,66,True
+Humor vítreo,,12.447,False,0.107,,1812,0.285,0.285,0.812,66,True
+Iliopsoas,,17.58,False,0.1106,,3036,0.28,0.28,0.812,66,True
 Jugular,,14.521,False,0.1098,,2226,0.281,0.281,0.812,66,True
-Manguito rotador,,14.942,False,0.1236,,3078,0.26,0.26,0.812,66,True
-Meninges,Meninge,17.278,False,0.1227,,5454,0.262,0.262,0.812,66,True
-Miocárdio,,13.167,False,0.1151,,2232,0.272,0.272,0.812,66,True
-Nervo vago,,12.546,False,0.1201,,2460,0.265,0.265,0.812,66,True
+Manguito rotador,,14.942,False,0.1237,,3078,0.261,0.261,0.812,66,True
+Meninges,Meninge,17.278,False,0.1227,,5454,0.263,0.263,0.812,66,True
+Miocárdio,,13.167,False,0.1151,,2232,0.273,0.273,0.812,66,True
+Nervo vago,,12.546,False,0.1201,,2460,0.266,0.266,0.812,66,True
 Peitoral,peitoral maior,13.441,False,0.1143,,2112,0.274,0.274,0.812,66,True
-Peritônio,,15.383,False,0.1167,,2940,0.269,0.269,0.812,66,True
-Pestana,,12.726,False,0.1113,,438,0.278,0.278,0.812,66,True
+Peritônio,,15.383,False,0.1167,,2940,0.27,0.27,0.812,66,True
+Pestana,,12.726,False,0.1113,,438,0.279,0.279,0.812,66,True
 Pleura,,15.265,False,0.1091,,2412,0.282,0.282,0.812,66,True
-Quadríceps,,14.829,False,0.1264,,3006,0.258,0.258,0.812,66,True
-Reto abdominal,Músculo reto do abdome,11.852,False,0.112,,1728,0.277,0.277,0.812,66,True
+Quadríceps,,14.829,False,0.1265,,3006,0.258,0.258,0.812,66,True
+Reto abdominal,Músculo reto do abdome,11.852,False,0.112,,1728,0.278,0.278,0.812,66,True
 Ruga,,14.496,False,0.1184,,606,0.267,0.267,0.812,66,True
-Topo da cabeça,cocuruto,9.372,False,0.1175,,1770,0.269,0.269,0.812,66,True
+Topo da cabeça,cocuruto,9.372,False,0.1176,,1770,0.27,0.27,0.812,66,True
 Veia cava,,12.686,False,0.1063,,1728,0.287,0.287,0.812,66,True
-Vesícula seminal,,13.758,False,0.1135,,2574,0.275,0.275,0.812,66,True
-Carótida,,15.164,False,0.0954,,1644,0.308,0.308,0.819,67,True
+Vesícula seminal,,13.758,False,0.1136,,2574,0.275,0.275,0.812,66,True
+Carótida,,15.164,False,0.0954,,1644,0.309,0.309,0.819,67,True
 Cóclea,,15.486,False,0.1024,,2040,0.294,0.294,0.819,67,True
-Dentina,,14.711,False,0.1043,,2070,0.29,0.29,0.819,67,True
+Dentina,,14.711,False,0.1043,,2070,0.291,0.291,0.819,67,True
 Derme,,13.946,False,0.103,,1728,0.293,0.293,0.819,67,True
-Endométrio,,14.051,False,0.0959,,1656,0.306,0.306,0.819,67,True
+Endométrio,,14.051,False,0.0959,,1656,0.307,0.307,0.819,67,True
 Escafoide,,18.029,False,0.0976,,2082,0.304,0.304,0.819,67,True
-Esclera,esclerótica,16.117,False,0.0987,,2004,0.301,0.301,0.819,67,True
-Fontanela,moleira,16.378,False,0.0917,,1770,0.317,0.317,0.819,67,True
+Esclera,esclerótica,16.117,False,0.0988,,2004,0.301,0.301,0.819,67,True
+Fontanela,moleira,16.378,False,0.0917,,1770,0.318,0.318,0.819,67,True
 Fossa cubital,,14.974,False,0.0927,,1614,0.315,0.315,0.819,67,True
 Gastrocnêmio,,16.513,False,0.105,,2448,0.289,0.289,0.819,67,True
-Glúteo máximo,,11.926,False,0.0965,,1128,0.306,0.306,0.819,67,True
-Isquiotibiais,posterior da coxa,11.447,False,0.0999,,2724,0.299,0.299,0.819,67,True
+Glúteo máximo,,11.926,False,0.0965,,1128,0.307,0.307,0.819,67,True
+Isquiotibiais,posterior da coxa,11.447,False,0.1,,2724,0.299,0.299,0.819,67,True
 Jejuno,,15.906,False,0.0943,,1800,0.31,0.31,0.819,67,True
-Lobo parietal,,12.962,False,0.097,,1452,0.304,0.304,0.819,67,True
-Masseter,,16.636,False,0.1011,,2046,0.297,0.297,0.819,67,True
+Lobo parietal,,12.962,False,0.0971,,1452,0.304,0.304,0.819,67,True
+Masseter,,16.636,False,0.1012,,2046,0.297,0.297,0.819,67,True
 Mesentério,,16.697,False,0.0922,,1728,0.315,0.315,0.819,67,True
 Nervo óptico,,12.489,False,0.1037,,1530,0.292,0.292,0.819,67,True
-Osso esfenoide,esfenoide,14.904,False,0.1056,,1968,0.288,0.288,0.819,67,True
-Parótida,,16.386,False,0.0993,,2130,0.3,0.3,0.819,67,True
-Peito do pé,,9.674,False,0.0932,,0,0.313,0.313,0.819,67,True
+Osso esfenoide,esfenoide,14.904,False,0.1057,,1968,0.288,0.288,0.819,67,True
+Parótida,,16.386,False,0.0994,,2130,0.3,0.3,0.819,67,True
+Peito do pé,,9.674,False,0.0933,,0,0.313,0.313,0.819,67,True
 Pericárdio,,15.418,False,0.0948,,1704,0.31,0.31,0.819,67,True
-Sóleo,,16.574,False,0.1005,,2028,0.297,0.297,0.819,67,True
-Tendão de aquiles,tendão calcâneo,13.58,False,0.0912,,1140,0.317,0.317,0.819,67,True
+Sóleo,,16.574,False,0.1006,,2028,0.297,0.297,0.819,67,True
 Trago,,11.509,False,0.1018,,1338,0.295,0.295,0.819,67,True
-Vômer,,18.155,False,0.0982,,2142,0.302,0.302,0.819,67,True
+Vômer,,18.155,False,0.0982,,2142,0.303,0.303,0.819,67,True
 Ísquio,,16.937,False,0.0938,,1812,0.312,0.312,0.819,67,True
-Canal lacrimal,,12.251,False,0.0843,,846,0.335,0.335,0.825,68,True
+Canal lacrimal,,12.251,False,0.0843,,846,0.336,0.336,0.825,68,True
 Ceco,,15.67,False,0.0888,,1380,0.324,0.324,0.825,68,True
 Cofrinho,,13.985,False,0.0818,,948,0.343,0.343,0.825,68,True
-Concha nasal,,12.459,False,0.083,,708,0.34,0.34,0.825,68,True
-Cutícula,,13.532,False,0.0847,,966,0.335,0.335,0.825,68,True
-Filtro labial,filtro,11.785,False,0.0865,,906,0.33,0.33,0.825,68,True
-Fáscia,,15.052,False,0.0802,,876,0.348,0.348,0.825,68,True
-Glote,,15.597,False,0.0806,,972,0.346,0.346,0.825,68,True
+Concha nasal,,12.459,False,0.0831,,708,0.34,0.34,0.825,68,True
+Cutícula,,13.532,False,0.0847,,966,0.336,0.336,0.825,68,True
+Filtro labial,filtro,11.785,False,0.0865,,906,0.331,0.331,0.825,68,True
+Fáscia,,15.052,False,0.0803,,876,0.348,0.348,0.825,68,True
+Glote,,15.597,False,0.0806,,972,0.347,0.347,0.825,68,True
 Incisivo,,13.983,False,0.0874,,1200,0.327,0.327,0.825,68,True
-Indicador,,11.141,False,0.0878,,0,0.327,0.327,0.825,68,True
+Indicador,,11.141,False,0.0879,,0,0.327,0.327,0.825,68,True
 Lacrimal,,15.036,False,0.0883,,1152,0.324,0.324,0.825,68,True
 Molar,,13.844,False,0.0869,,1152,0.329,0.329,0.825,68,True
-Mácula,,13.897,False,0.0892,,1182,0.324,0.324,0.825,68,True
-Omento,,16.743,False,0.0851,,1428,0.333,0.333,0.825,68,True
+Mácula,,13.897,False,0.0893,,1182,0.324,0.324,0.825,68,True
+Omento,,16.743,False,0.0852,,1428,0.333,0.333,0.825,68,True
 Piloro,,16.559,False,0.0907,,1572,0.319,0.319,0.825,68,True
-Pinta,pintas,12.12,False,0.0834,,0,0.338,0.338,0.825,68,True
+Pinta,pintas,12.12,False,0.0835,,0,0.339,0.339,0.825,68,True
 Piriforme,,16.035,False,0.0814,,984,0.344,0.344,0.825,68,True
 Pochete,,14.305,False,0.0856,,1254,0.333,0.333,0.825,68,True
-Polpa dentária,,12.057,False,0.081,,708,0.345,0.345,0.825,68,True
+Polpa dentária,,12.057,False,0.081,,708,0.346,0.346,0.825,68,True
 Pré-molar,,11.417,False,0.0902,,966,0.321,0.321,0.825,68,True
 Septo nasal,,13.482,False,0.0822,,900,0.342,0.342,0.825,68,True
 Sigmoide,,17.224,False,0.0897,,1692,0.321,0.321,0.825,68,True
+Tendão de aquiles,tendão calcâneo,13.58,False,0.0912,,1140,0.318,0.318,0.825,68,True
 Tálus,astrágalo,16.806,False,0.0826,,1140,0.34,0.34,0.825,68,True
 Áxis,,17.582,False,0.0839,,1266,0.337,0.337,0.825,68,True
-Íleo,,15.163,False,0.086,,1236,0.33,0.33,0.825,68,True
-Base da língua,,8.779,False,0.0748,,0,0.364,0.364,0.831,69,True
+Íleo,,15.163,False,0.086,,1236,0.331,0.331,0.825,68,True
+Base da língua,,8.779,False,0.0749,,0,0.364,0.364,0.831,69,True
 Bolsa dos olhos,,9.0,False,0.0732,,0,0.372,0.372,0.831,69,True
-Branco do olho,,9.187,False,0.0722,,0,0.377,0.377,0.831,69,True
-Bulbo,,13.461,False,0.0791,,0,0.352,0.352,0.831,69,True
-Cabelo branco,,8.887,False,0.0742,,0,0.369,0.369,0.831,69,True
+Branco do olho,,9.187,False,0.0723,,0,0.377,0.377,0.831,69,True
+Bulbo,,13.461,False,0.0791,,0,0.353,0.353,0.831,69,True
+Cabelo branco,,8.887,False,0.0742,,0,0.37,0.37,0.831,69,True
 Caixa craniana,,8.736,False,0.0762,,0,0.364,0.364,0.831,69,True
 Caixa torácica,,8.736,False,0.0759,,0,0.364,0.364,0.831,69,True
-Coração direito,,8.125,False,0.0787,,0,0.352,0.352,0.831,69,True
-Dedinho do pé,,9.177,False,0.0719,,0,0.377,0.377,0.831,69,True
-Digital,,8.916,False,0.0738,,0,0.369,0.369,0.831,69,True
+Coração direito,,8.125,False,0.0787,,0,0.353,0.353,0.831,69,True
+Dedinho do pé,,9.177,False,0.072,,0,0.377,0.377,0.831,69,True
+Digital,,8.916,False,0.0739,,0,0.37,0.37,0.831,69,True
 Gânglios da base,,8.315,False,0.0776,,0,0.357,0.357,0.831,69,True
-Hipoderme,,16.114,False,0.0783,,960,0.352,0.352,0.831,69,True
-Linha da vida,,7.696,False,0.0798,,0,0.349,0.349,0.831,69,True
+Hipoderme,,16.114,False,0.0784,,960,0.353,0.353,0.831,69,True
+Linha da vida,,7.696,False,0.0799,,0,0.349,0.349,0.831,69,True
 Linha média,,8.74,False,0.0755,,0,0.364,0.364,0.831,69,True
-Linhas da mão,,9.031,False,0.0729,,0,0.373,0.373,0.831,69,True
+Linhas da mão,,9.031,False,0.0729,,0,0.374,0.374,0.831,69,True
 Marca-passo natural,,8.773,False,0.0752,,0,0.364,0.364,0.831,69,True
 Massa cinzenta,,9.155,False,0.0716,,0,0.377,0.377,0.831,69,True
 Meio das costas,,8.815,False,0.0745,,0,0.364,0.364,0.831,69,True
-Pelo da orelha,,8.935,False,0.0735,,0,0.369,0.369,0.831,69,True
+Pelo da orelha,,8.935,False,0.0735,,0,0.37,0.37,0.831,69,True
 Pelo da perna,,8.631,False,0.0766,,0,0.36,0.36,0.831,69,True
 Pelo do braço,,8.311,False,0.0773,,0,0.357,0.357,0.831,69,True
-Pelo do nariz,,8.576,False,0.0769,,0,0.358,0.358,0.831,69,True
+Pelo do nariz,,8.576,False,0.0769,,0,0.359,0.359,0.831,69,True
 Ponto G,,8.202,False,0.078,,0,0.355,0.355,0.831,69,True
-Segundo dedo do pé,,9.116,False,0.0726,,0,0.373,0.373,0.831,69,True
+Segundo dedo do pé,,9.116,False,0.0726,,0,0.374,0.374,0.831,69,True
 Área de Wernicke,,7.891,False,0.0795,,0,0.35,0.35,0.831,69,True
 Atrás do joelho,,10.031,False,0.0647,,0,0.411,0.411,0.837,70,True
-Canal anal,,10.142,False,0.0639,,0,0.411,0.411,0.837,70,True
-Canto da boca,,9.519,False,0.0687,,0,0.389,0.389,0.837,70,True
+Canal anal,,10.142,False,0.064,,0,0.411,0.411,0.837,70,True
+Canto da boca,,9.519,False,0.0687,,0,0.39,0.39,0.837,70,True
 Canto do olho,,9.768,False,0.0676,,0,0.395,0.395,0.837,70,True
-Coluna torácica,,9.991,False,0.0654,,0,0.405,0.405,0.837,70,True
-Coração esquerdo,,9.426,False,0.0695,,0,0.386,0.386,0.837,70,True
-Costas da mão,,9.302,False,0.071,,0,0.382,0.382,0.837,70,True
+Coluna torácica,,9.991,False,0.0655,,0,0.406,0.406,0.837,70,True
+Coração esquerdo,,9.426,False,0.0696,,0,0.387,0.387,0.837,70,True
+Costas da mão,,9.302,False,0.071,,0,0.383,0.383,0.837,70,True
 Céu da boca mole,,9.949,False,0.066,,0,0.401,0.401,0.837,70,True
-Deltoide,,16.733,False,0.0678,,768,0.392,0.392,0.837,70,True
-Fundo do estômago,,10.01,False,0.0652,,0,0.405,0.405,0.837,70,True
-Fígado direito,,9.634,False,0.0681,,0,0.392,0.392,0.837,70,True
-Grandes lábios,,9.462,False,0.069,,0,0.389,0.389,0.837,70,True
-Impressão digital,,9.352,False,0.0707,,0,0.382,0.382,0.837,70,True
-Massa branca,,9.335,False,0.0704,,0,0.382,0.382,0.837,70,True
-Parte de trás do joelho,,9.387,False,0.0698,,0,0.382,0.382,0.837,70,True
-Peito do pé alto,,9.324,False,0.0701,,0,0.382,0.382,0.837,70,True
+Deltoide,,16.733,False,0.0679,,768,0.393,0.393,0.837,70,True
+Fundo do estômago,,10.01,False,0.0652,,0,0.406,0.406,0.837,70,True
+Fígado direito,,9.634,False,0.0681,,0,0.393,0.393,0.837,70,True
+Grandes lábios,,9.462,False,0.069,,0,0.39,0.39,0.837,70,True
+Impressão digital,,9.352,False,0.0707,,0,0.383,0.383,0.837,70,True
+Massa branca,,9.335,False,0.0704,,0,0.383,0.383,0.837,70,True
+Parte de trás do joelho,,9.387,False,0.0698,,0,0.383,0.383,0.837,70,True
+Peito do pé alto,,9.324,False,0.0701,,0,0.383,0.383,0.837,70,True
 Pele do rosto,,9.217,False,0.0713,,0,0.377,0.377,0.837,70,True
-Pequenos lábios,,10.01,False,0.0649,,0,0.405,0.405,0.837,70,True
-Ponta da língua,,9.548,False,0.0684,,0,0.389,0.389,0.837,70,True
+Pequenos lábios,,10.01,False,0.065,,0,0.406,0.406,0.837,70,True
+Ponta da língua,,9.548,False,0.0684,,0,0.39,0.39,0.837,70,True
 Ponte,,9.971,False,0.0657,,0,0.401,0.401,0.837,70,True
 Ponto cego,,9.755,False,0.0673,,0,0.395,0.395,0.837,70,True
 Raiz do cabelo,,9.906,False,0.0662,,0,0.401,0.401,0.837,70,True
-Sarda,sardas,15.77,False,0.067,,0,0.397,0.397,0.837,70,True
-Sistema nervoso,,9.409,False,0.0692,,0,0.386,0.386,0.837,70,True
-Tecido,,9.818,False,0.0668,,0,0.397,0.397,0.837,70,True
+Sarda,sardas,15.77,False,0.067,,0,0.398,0.398,0.837,70,True
+Sistema nervoso,,9.409,False,0.0693,,0,0.387,0.387,0.837,70,True
+Tecido,,9.818,False,0.0668,,0,0.398,0.398,0.837,70,True
 Unha da mão,,9.863,False,0.0665,,0,0.401,0.401,0.837,70,True
 Barriga de cerveja,,10.359,False,0.0605,,0,0.43,0.43,0.843,71,True
-Base do pulmão,,10.199,False,0.0625,,0,0.419,0.419,0.843,71,True
-Conjuntiva,,14.921,False,0.0644,,678,0.411,0.411,0.843,71,True
+Base do pulmão,,10.199,False,0.0625,,0,0.42,0.42,0.843,71,True
+Conjuntiva,,14.921,False,0.0645,,678,0.411,0.411,0.843,71,True
 Dente de leite,,10.147,False,0.0637,,0,0.411,0.411,0.843,71,True
 Dente permanente,,10.548,False,0.0584,,0,0.44,0.44,0.843,71,True
 Estômago cheio,,10.417,False,0.0596,,0,0.435,0.435,0.843,71,True
-Gordura,,10.169,False,0.063,,0,0.419,0.419,0.843,71,True
-Gordura localizada,,10.169,False,0.0627,,0,0.419,0.419,0.843,71,True
+Gordura,,10.169,False,0.063,,0,0.42,0.42,0.843,71,True
+Gordura localizada,,10.169,False,0.0628,,0,0.42,0.42,0.843,71,True
 Hemisfério direito,,10.043,False,0.0642,,0,0.411,0.411,0.843,71,True
 Leite materno,,10.347,False,0.0607,,0,0.43,0.43,0.843,71,True
-Orelha média,,10.226,False,0.0623,,0,0.419,0.419,0.843,71,True
+Orelha média,,10.226,False,0.0623,,0,0.42,0.42,0.843,71,True
 Osso da sorte,,10.405,False,0.0594,,0,0.435,0.435,0.843,71,True
-Pisiforme,,18.144,False,0.0602,,804,0.43,0.43,0.843,71,True
-Ponta do dedo,,10.21,False,0.062,,0,0.419,0.419,0.843,71,True
+Pisiforme,,18.144,False,0.0603,,804,0.43,0.43,0.843,71,True
+Ponta do dedo,,10.21,False,0.0621,,0,0.42,0.42,0.843,71,True
 Ponta do nariz,,10.313,False,0.0609,,0,0.43,0.43,0.843,71,True
 Ponte do nariz,,10.371,False,0.06,,0,0.43,0.43,0.843,71,True
 Pé de galinha,,10.108,False,0.0635,,0,0.411,0.411,0.843,71,True
 Redondo menor,,10.236,False,0.0614,,0,0.425,0.425,0.843,71,True
 Região lombar,,10.371,False,0.0598,,0,0.43,0.43,0.843,71,True
 Rim direito,,10.115,False,0.0632,,0,0.411,0.411,0.843,71,True
-Substância branca,,10.2,False,0.0618,,0,0.419,0.419,0.843,71,True
+Substância branca,,10.2,False,0.0618,,0,0.42,0.42,0.843,71,True
 Tornozelo de dentro,,10.244,False,0.0611,,0,0.425,0.425,0.843,71,True
-Unha do pé,,10.195,False,0.0616,,0,0.419,0.419,0.843,71,True
+Unha do pé,,10.195,False,0.0616,,0,0.42,0.42,0.843,71,True
 Veia porta,,10.428,False,0.0592,,0,0.435,0.435,0.843,71,True
 Área de Broca,,10.474,False,0.059,,0,0.44,0.44,0.843,71,True
 Asa do nariz,,10.914,False,0.0549,,0,0.461,0.461,0.849,72,True
-Barriga da perna,,10.681,False,0.0573,,0,0.446,0.446,0.849,72,True
-Bucinador,,18.097,False,0.0572,,798,0.45,0.45,0.849,72,True
-Bunda redonda,,10.952,False,0.0545,,0,0.473,0.473,0.849,72,True
-Calo da mão,,10.96,False,0.0544,,0,0.473,0.473,0.849,72,True
+Barriga da perna,,10.681,False,0.0574,,0,0.446,0.446,0.849,72,True
+Bucinador,,18.097,False,0.0572,,798,0.451,0.451,0.849,72,True
+Calo da mão,,10.96,False,0.0546,,0,0.472,0.472,0.849,72,True
 Canal vaginal,,10.892,False,0.0556,,0,0.461,0.461,0.849,72,True
-Canela da perna,,10.998,False,0.0535,,0,0.473,0.473,0.849,72,True
-Cera de ouvido,,10.813,False,0.0562,,0,0.455,0.455,0.849,72,True
-Colo do dente,,11.002,False,0.0533,,0,0.473,0.473,0.849,72,True
-Coroa do dente,,10.866,False,0.0554,,0,0.461,0.461,0.849,72,True
-Disco articular,,10.763,False,0.057,,0,0.45,0.45,0.849,72,True
-Frontal muscular,,10.976,False,0.0542,,0,0.473,0.473,0.849,72,True
+Canela da perna,,10.998,False,0.0537,,0,0.472,0.472,0.849,72,True
+Cera de ouvido,,10.813,False,0.0562,,0,0.456,0.456,0.849,72,True
+Colo do dente,,11.002,False,0.0535,,0,0.472,0.472,0.849,72,True
+Coroa do dente,,10.866,False,0.0555,,0,0.461,0.461,0.849,72,True
+Disco articular,,10.763,False,0.057,,0,0.451,0.451,0.849,72,True
+Frontal muscular,,10.976,False,0.0544,,0,0.472,0.472,0.849,72,True
 Globo ocular,,10.87,False,0.0553,,0,0.461,0.461,0.849,72,True
-Hamato,,17.652,False,0.0577,,744,0.446,0.446,0.849,72,True
-Juntas,,10.735,False,0.0568,,0,0.45,0.45,0.849,72,True
-Linha alba,,10.556,False,0.0581,,0,0.44,0.44,0.849,72,True
-Lábio superior,,10.755,False,0.0566,,0,0.45,0.45,0.849,72,True
-Lúnula,,18.037,False,0.0575,,870,0.446,0.446,0.849,72,True
+Hamato,,17.652,False,0.0578,,744,0.446,0.446,0.849,72,True
+Juntas,,10.735,False,0.0568,,0,0.451,0.451,0.849,72,True
+Linha alba,,10.556,False,0.0582,,0,0.44,0.44,0.849,72,True
+Lábio superior,,10.755,False,0.0566,,0,0.451,0.451,0.849,72,True
+Lúnula,,18.037,False,0.0576,,870,0.446,0.446,0.849,72,True
 Músculo da língua,,10.499,False,0.0586,,0,0.44,0.44,0.849,72,True
-Músculo do sorriso,,10.819,False,0.056,,0,0.455,0.455,0.849,72,True
+Músculo do sorriso,,10.819,False,0.056,,0,0.456,0.456,0.849,72,True
 Orelha externa,,10.909,False,0.0547,,0,0.461,0.461,0.849,72,True
-Orelha interna,,10.748,False,0.0564,,0,0.45,0.45,0.849,72,True
-Sistema linfático,,10.825,False,0.0558,,0,0.455,0.455,0.849,72,True
+Orelha interna,,10.748,False,0.0564,,0,0.451,0.451,0.849,72,True
+Sistema linfático,,10.825,False,0.0558,,0,0.456,0.456,0.849,72,True
 Substância cinzenta,,10.883,False,0.0551,,0,0.461,0.461,0.849,72,True
 Substância negra,,10.479,False,0.0588,,0,0.44,0.44,0.849,72,True
-Átrio direito,,10.579,False,0.0579,,0,0.443,0.443,0.849,72,True
-Arcada superior,,11.203,False,0.05,,0,0.498,0.498,0.854,73,True
-Arco plantar,,11.144,False,0.0512,,0,0.487,0.487,0.854,73,True
-Articulação do joelho,,11.194,False,0.0498,,0,0.498,0.498,0.854,73,True
-Articulação do ombro,,11.075,False,0.0517,,0,0.487,0.487,0.854,73,True
-Cabeça do fêmur,,11.225,False,0.0497,,0,0.498,0.498,0.854,73,True
-Canal vertebral,,11.111,False,0.051,,0,0.487,0.487,0.854,73,True
-Corpo ciliar,,11.047,False,0.0522,,0,0.487,0.487,0.854,73,True
-Couro cabeludo,,11.057,False,0.052,,0,0.487,0.487,0.854,73,True
-Córtex pré-frontal,,11.124,False,0.0509,,0,0.487,0.487,0.854,73,True
-Dorso do pé,,11.093,False,0.0515,,0,0.487,0.487,0.854,73,True
-Gordura abdominal,,10.989,False,0.0531,,0,0.473,0.473,0.854,73,True
-Lobo occipital,,12.945,False,0.053,,510,0.473,0.473,0.854,73,True
-Marca de nascença,,11.017,False,0.0528,,0,0.473,0.473,0.854,73,True
-Monte de Vênus,,11.014,False,0.0526,,0,0.473,0.473,0.854,73,True
-Nó dos dedos,,11.022,False,0.0518,,0,0.487,0.487,0.854,73,True
-Peitoral menor,,11.155,False,0.0506,,0,0.498,0.498,0.854,73,True
-Pneu,,11.085,False,0.0513,,0,0.487,0.487,0.854,73,True
-Ponta do cotovelo,,11.168,False,0.0504,,0,0.498,0.498,0.854,73,True
-Processo espinhoso,,11.197,False,0.0495,,0,0.498,0.498,0.854,73,True
-Rabo,,11.121,False,0.0507,,0,0.487,0.487,0.854,73,True
-Raiz da unha,,10.987,False,0.0525,,0,0.473,0.473,0.854,73,True
-Raiz do dente,,10.969,False,0.054,,0,0.473,0.473,0.854,73,True
-Suíça,,10.996,False,0.0523,,0,0.473,0.473,0.854,73,True
-Vasto lateral,,10.964,False,0.0538,,0,0.473,0.473,0.854,73,True
-Ventrículo direito,,10.953,False,0.0537,,0,0.473,0.473,0.854,73,True
-Anti-hélice,,11.492,False,0.047,,0,0.525,0.525,0.86,74,True
-Articulação do quadril,,11.544,False,0.0464,,0,0.531,0.531,0.86,74,True
-Coluna cervical,,11.392,False,0.0481,,0,0.517,0.517,0.86,74,True
-Coluna lombar,,11.283,False,0.0488,,0,0.507,0.507,0.86,74,True
-Célula,,11.235,False,0.0494,,0,0.507,0.507,0.86,74,True
-Córtex motor,,11.292,False,0.0487,,0,0.507,0.507,0.86,74,True
-Córtex visual,,11.4,False,0.0477,,0,0.517,0.517,0.86,74,True
-Dobra do braço,,11.258,False,0.0492,,0,0.507,0.507,0.86,74,True
-Giro,,11.26,False,0.0491,,0,0.507,0.507,0.86,74,True
-Hemisfério esquerdo,,11.344,False,0.0482,,0,0.513,0.513,0.86,74,True
-Intestino cego,,11.475,False,0.0471,,0,0.525,0.525,0.86,74,True
-Lobo pulmonar,,11.421,False,0.0475,,0,0.517,0.517,0.86,74,True
-Lábio inferior,,11.501,False,0.0469,,0,0.525,0.525,0.86,74,True
-Nuca do pescoço,,11.519,False,0.0467,,0,0.525,0.525,0.86,74,True
-Osso compacto,,11.479,False,0.0466,,0,0.525,0.525,0.86,74,True
-Osso da canela,,11.275,False,0.0485,,0,0.507,0.507,0.86,74,True
-Polpa do dedo,,11.37,False,0.048,,0,0.517,0.517,0.86,74,True
-Prega anal,,11.516,False,0.0465,,0,0.525,0.525,0.86,74,True
-Queixo duplo,,11.251,False,0.0489,,0,0.507,0.507,0.86,74,True
-Rim esquerdo,,11.416,False,0.0474,,0,0.517,0.517,0.86,74,True
-Seio frontal,,11.308,False,0.0484,,0,0.507,0.507,0.86,74,True
-Sistema límbico,,11.377,False,0.0478,,0,0.517,0.517,0.86,74,True
-Terceira pálpebra,,11.396,False,0.0473,,0,0.517,0.517,0.86,74,True
-Traseiro,,11.166,False,0.0503,,0,0.498,0.498,0.86,74,True
-Veia porta hepática,,11.161,False,0.0501,,0,0.498,0.498,0.86,74,True
-Capitato,,18.547,False,0.0447,,708,0.545,0.545,0.866,75,True
-Concha da orelha,,11.882,False,0.0439,,0,0.556,0.556,0.866,75,True
-Corpo cavernoso,,11.65,False,0.0458,,0,0.537,0.537,0.866,75,True
-Corpo esponjoso,,11.756,False,0.0451,,0,0.545,0.545,0.866,75,True
-Corpo lúteo,,11.886,False,0.0438,,0,0.556,0.556,0.866,75,True
-Dorso do nariz,,11.89,False,0.0437,,0,0.556,0.556,0.866,75,True
-Fossa poplítea,dobra do joelho,12.828,False,0.0457,,480,0.537,0.537,0.866,75,True
-Glúteo médio,,11.78,False,0.0446,,0,0.545,0.545,0.866,75,True
-Gêmeos,,11.768,False,0.045,,0,0.545,0.545,0.866,75,True
-Hemisfério cerebral,,11.727,False,0.0452,,0,0.537,0.537,0.866,75,True
-Mucosa oral,,11.647,False,0.0456,,0,0.537,0.537,0.866,75,True
-Músculo cardíaco,,11.856,False,0.0436,,0,0.556,0.556,0.866,75,True
-Músculo liso,,11.645,False,0.0455,,0,0.537,0.537,0.866,75,True
-Osso do riso,,11.556,False,0.0462,,0,0.531,0.531,0.866,75,True
-Pelo pubiano,,11.784,False,0.0445,,0,0.545,0.545,0.866,75,True
-Plasma,,11.903,False,0.0433,,0,0.556,0.556,0.866,75,True
-Quadrado lombar,,11.759,False,0.0449,,0,0.545,0.545,0.866,75,True
-Sobrancelha grossa,,11.831,False,0.0441,,0,0.551,0.551,0.866,75,True
-Tecido adiposo,,11.786,False,0.0444,,0,0.545,0.545,0.866,75,True
-Urina,,11.676,False,0.0453,,0,0.537,0.537,0.866,75,True
-Vaso sanguíneo,,11.909,False,0.0432,,0,0.556,0.556,0.866,75,True
-Veias do pulso,,11.54,False,0.0461,,0,0.531,0.531,0.866,75,True
-Válvula aórtica,,11.621,False,0.046,,0,0.531,0.531,0.866,75,True
-Válvula pulmonar,,11.808,False,0.0443,,0,0.545,0.545,0.866,75,True
-Zigomático maior,,11.857,False,0.0435,,0,0.556,0.556,0.866,75,True
-Átrio esquerdo,,11.88,False,0.044,,0,0.556,0.556,0.866,75,True
-Arcada inferior,,11.949,False,0.0431,,0,0.567,0.567,0.872,76,True
-Bochechas internas,,11.976,False,0.043,,0,0.567,0.567,0.872,76,True
-Bolsa escrotal,,12.081,False,0.0418,,0,0.581,0.581,0.872,76,True
-Canal inguinal,,12.082,False,0.0417,,0,0.581,0.581,0.872,76,True
-Celulite,,12.02,False,0.042,,0,0.581,0.581,0.872,76,True
-Cálice renal,,12.121,False,0.0412,,0,0.581,0.581,0.872,76,True
-Endocárdio,,17.006,False,0.0411,,630,0.581,0.581,0.872,76,True
-Extensor dos dedos,,12.006,False,0.0424,,0,0.567,0.567,0.872,76,True
-Freio labial,,12.109,False,0.041,,0,0.581,0.581,0.872,76,True
-Glúteo mínimo,,11.96,False,0.0429,,0,0.567,0.567,0.872,76,True
-Humor aquoso,,12.083,False,0.0416,,0,0.581,0.581,0.872,76,True
-Medula renal,,11.938,False,0.0428,,0,0.567,0.567,0.872,76,True
-Músculo da sobrancelha,,12.118,False,0.0409,,0,0.581,0.581,0.872,76,True
-Nervo acessório,,12.033,False,0.0419,,0,0.581,0.581,0.872,76,True
-Nervo facial,,11.982,False,0.0422,,0,0.567,0.567,0.872,76,True
-Nervos cranianos,,11.98,False,0.0421,,0,0.567,0.567,0.872,76,True
-Oblíquo interno,,12.077,False,0.0415,,0,0.581,0.581,0.872,76,True
-Osso do cotovelo,,11.958,False,0.0427,,0,0.567,0.567,0.872,76,True
-Suco gástrico,,12.095,False,0.0414,,0,0.581,0.581,0.872,76,True
-Uretra feminina,,11.961,False,0.0426,,0,0.567,0.567,0.872,76,True
-Veia cefálica,,12.136,False,0.0408,,0,0.581,0.581,0.872,76,True
-Veia pulmonar,,12.066,False,0.0413,,0,0.581,0.581,0.872,76,True
-Veia renal,,11.94,False,0.0425,,0,0.567,0.567,0.872,76,True
-Ápice do pulmão,,12.197,False,0.0406,,0,0.59,0.59,0.872,76,True
-Ângulo da mandíbula,,12.161,False,0.0407,,0,0.59,0.59,0.872,76,True
-Artéria renal,,12.351,False,0.0397,,0,0.602,0.602,0.877,77,True
-Baço acessório,,12.484,False,0.0389,,0,0.615,0.615,0.877,77,True
-Canal deferente,,12.421,False,0.0393,,0,0.606,0.606,0.877,77,True
-Colo do fêmur,,12.307,False,0.0399,,0,0.596,0.596,0.877,77,True
-Costela flutuante,,12.505,False,0.0388,,0,0.615,0.615,0.877,77,True
-Cápsula articular,,12.201,False,0.0405,,0,0.59,0.59,0.877,77,True
-Córtex renal,,12.476,False,0.0391,,0,0.615,0.615,0.877,77,True
-Disco intervertebral,,12.538,False,0.0385,,0,0.615,0.615,0.877,77,True
-Dobra do cotovelo,,12.377,False,0.0395,,0,0.606,0.606,0.877,77,True
-Fibular longo,,12.524,False,0.0385,,0,0.615,0.615,0.877,77,True
-Franja,,12.434,False,0.0392,,0,0.606,0.606,0.877,77,True
-Glóbulo branco,,12.255,False,0.0404,,0,0.596,0.596,0.877,77,True
-Lobo hepático,,12.453,False,0.039,,0,0.615,0.615,0.877,77,True
-Oblíquo externo,,12.37,False,0.0395,,0,0.606,0.606,0.877,77,True
-Palato duro,,12.27,False,0.0398,,0,0.596,0.596,0.877,77,True
-Pochete de gordura,,12.237,False,0.0403,,0,0.596,0.596,0.877,77,True
-Pulso radial,,12.336,False,0.0396,,0,0.602,0.602,0.877,77,True
-Púbis feminino,,12.243,False,0.0402,,0,0.596,0.596,0.877,77,True
-Rego,,12.532,False,0.0384,,0,0.615,0.615,0.877,77,True
-Rombóide,,17.643,False,0.0394,,624,0.606,0.606,0.877,77,True
-Saco escrotal,,12.516,False,0.0387,,0,0.615,0.615,0.877,77,True
-Seio maxilar,,12.512,False,0.0386,,0,0.615,0.615,0.877,77,True
-Vaso linfático,,12.529,False,0.0383,,0,0.615,0.615,0.877,77,True
-Veia basílica,,12.255,False,0.0401,,0,0.596,0.596,0.877,77,True
-Ventrículo esquerdo,,12.254,False,0.04,,0,0.596,0.596,0.877,77,True
-ATM,,12.678,False,0.0375,,0,0.634,0.634,0.883,78,True
-Aorta abdominal,,12.816,False,0.036,,0,0.651,0.651,0.883,78,True
-Artéria hepática,,12.793,False,0.0364,,0,0.651,0.651,0.883,78,True
-Bulbo capilar,,12.579,False,0.0382,,0,0.625,0.625,0.883,78,True
-Calcanhar de aquiles,,12.627,False,0.0378,,0,0.625,0.625,0.883,78,True
-Cartilagem articular,,12.728,False,0.0369,,0,0.642,0.642,0.883,78,True
+Átrio direito,,10.579,False,0.058,,0,0.444,0.444,0.849,72,True
+Arcada superior,,11.203,False,0.0501,,0,0.497,0.497,0.854,73,True
+Arco plantar,,11.144,False,0.0514,,0,0.486,0.486,0.854,73,True
+Articulação do joelho,,11.194,False,0.05,,0,0.497,0.497,0.854,73,True
+Articulação do ombro,,11.075,False,0.0518,,0,0.486,0.486,0.854,73,True
+Cabeça do fêmur,,11.225,False,0.0498,,0,0.497,0.497,0.854,73,True
+Canal vertebral,,11.111,False,0.0512,,0,0.486,0.486,0.854,73,True
+Corpo ciliar,,11.047,False,0.0523,,0,0.486,0.486,0.854,73,True
+Couro cabeludo,,11.057,False,0.0522,,0,0.486,0.486,0.854,73,True
+Córtex pré-frontal,,11.124,False,0.0511,,0,0.486,0.486,0.854,73,True
+Dorso do pé,,11.093,False,0.0517,,0,0.486,0.486,0.854,73,True
+Gordura abdominal,,10.989,False,0.0533,,0,0.472,0.472,0.854,73,True
+Lobo occipital,,12.945,False,0.0532,,510,0.472,0.472,0.854,73,True
+Marca de nascença,,11.017,False,0.053,,0,0.472,0.472,0.854,73,True
+Monte de Vênus,,11.014,False,0.0528,,0,0.472,0.472,0.854,73,True
+Nó dos dedos,,11.022,False,0.052,,0,0.486,0.486,0.854,73,True
+Peitoral menor,,11.155,False,0.0507,,0,0.497,0.497,0.854,73,True
+Pneu,,11.085,False,0.0515,,0,0.486,0.486,0.854,73,True
+Ponta do cotovelo,,11.168,False,0.0506,,0,0.497,0.497,0.854,73,True
+Processo espinhoso,,11.197,False,0.0497,,0,0.497,0.497,0.854,73,True
+Rabo,,11.121,False,0.0509,,0,0.486,0.486,0.854,73,True
+Raiz da unha,,10.987,False,0.0527,,0,0.472,0.472,0.854,73,True
+Raiz do dente,,10.969,False,0.0542,,0,0.472,0.472,0.854,73,True
+Suíça,,10.996,False,0.0525,,0,0.472,0.472,0.854,73,True
+Vasto lateral,,10.964,False,0.054,,0,0.472,0.472,0.854,73,True
+Ventrículo direito,,10.953,False,0.0538,,0,0.472,0.472,0.854,73,True
+Anti-hélice,,11.492,False,0.0472,,0,0.525,0.525,0.86,74,True
+Articulação do quadril,,11.544,False,0.0465,,0,0.531,0.531,0.86,74,True
+Coluna cervical,,11.392,False,0.0482,,0,0.517,0.517,0.86,74,True
+Coluna lombar,,11.283,False,0.049,,0,0.507,0.507,0.86,74,True
+Célula,,11.235,False,0.0495,,0,0.507,0.507,0.86,74,True
+Córtex motor,,11.292,False,0.0488,,0,0.507,0.507,0.86,74,True
+Córtex visual,,11.4,False,0.0478,,0,0.517,0.517,0.86,74,True
+Dobra do braço,,11.258,False,0.0494,,0,0.507,0.507,0.86,74,True
+Giro,,11.26,False,0.0492,,0,0.507,0.507,0.86,74,True
+Hemisfério esquerdo,,11.344,False,0.0484,,0,0.512,0.512,0.86,74,True
+Intestino cego,,11.475,False,0.0473,,0,0.525,0.525,0.86,74,True
+Lobo pulmonar,,11.421,False,0.0477,,0,0.517,0.517,0.86,74,True
+Lábio inferior,,11.501,False,0.047,,0,0.525,0.525,0.86,74,True
+Nuca do pescoço,,11.519,False,0.0469,,0,0.525,0.525,0.86,74,True
+Osso compacto,,11.479,False,0.0468,,0,0.525,0.525,0.86,74,True
+Osso da canela,,11.275,False,0.0487,,0,0.507,0.507,0.86,74,True
+Osso do riso,,11.556,False,0.0464,,0,0.531,0.531,0.86,74,True
+Polpa do dedo,,11.37,False,0.0481,,0,0.517,0.517,0.86,74,True
+Prega anal,,11.516,False,0.0466,,0,0.525,0.525,0.86,74,True
+Queixo duplo,,11.251,False,0.0491,,0,0.507,0.507,0.86,74,True
+Rim esquerdo,,11.416,False,0.0476,,0,0.517,0.517,0.86,74,True
+Seio frontal,,11.308,False,0.0485,,0,0.507,0.507,0.86,74,True
+Sistema límbico,,11.377,False,0.048,,0,0.517,0.517,0.86,74,True
+Terceira pálpebra,,11.396,False,0.0474,,0,0.517,0.517,0.86,74,True
+Traseiro,,11.166,False,0.0504,,0,0.497,0.497,0.86,74,True
+Veia porta hepática,,11.161,False,0.0503,,0,0.497,0.497,0.86,74,True
+Capitato,,18.547,False,0.0449,,708,0.545,0.545,0.866,75,True
+Concha da orelha,,11.882,False,0.044,,0,0.556,0.556,0.866,75,True
+Corpo cavernoso,,11.65,False,0.046,,0,0.536,0.536,0.866,75,True
+Corpo esponjoso,,11.756,False,0.0452,,0,0.545,0.545,0.866,75,True
+Corpo lúteo,,11.886,False,0.0439,,0,0.556,0.556,0.866,75,True
+Dorso do nariz,,11.89,False,0.0438,,0,0.556,0.556,0.866,75,True
+Fossa poplítea,dobra do joelho,12.828,False,0.0459,,480,0.536,0.536,0.866,75,True
+Glúteo médio,,11.78,False,0.0448,,0,0.545,0.545,0.866,75,True
+Gêmeos,,11.768,False,0.0451,,0,0.545,0.545,0.866,75,True
+Hemisfério cerebral,,11.727,False,0.0454,,0,0.536,0.536,0.866,75,True
+Mucosa oral,,11.647,False,0.0457,,0,0.536,0.536,0.866,75,True
+Músculo cardíaco,,11.856,False,0.0437,,0,0.556,0.556,0.866,75,True
+Músculo liso,,11.645,False,0.0456,,0,0.536,0.536,0.866,75,True
+Pelo pubiano,,11.784,False,0.0446,,0,0.545,0.545,0.866,75,True
+Plasma,,11.903,False,0.0435,,0,0.556,0.556,0.866,75,True
+Quadrado lombar,,11.759,False,0.045,,0,0.545,0.545,0.866,75,True
+Sobrancelha grossa,,11.831,False,0.0443,,0,0.55,0.55,0.866,75,True
+Tecido adiposo,,11.786,False,0.0445,,0,0.545,0.545,0.866,75,True
+Urina,,11.676,False,0.0455,,0,0.536,0.536,0.866,75,True
+Vaso sanguíneo,,11.909,False,0.0434,,0,0.556,0.556,0.866,75,True
+Veias do pulso,,11.54,False,0.0462,,0,0.531,0.531,0.866,75,True
+Válvula aórtica,,11.621,False,0.0461,,0,0.531,0.531,0.866,75,True
+Válvula pulmonar,,11.808,False,0.0444,,0,0.545,0.545,0.866,75,True
+Zigomático maior,,11.857,False,0.0436,,0,0.556,0.556,0.866,75,True
+Átrio esquerdo,,11.88,False,0.0442,,0,0.556,0.556,0.866,75,True
+Arcada inferior,,11.949,False,0.0432,,0,0.566,0.566,0.872,76,True
+Bochechas internas,,11.976,False,0.0431,,0,0.566,0.566,0.872,76,True
+Bolsa escrotal,,12.081,False,0.0419,,0,0.58,0.58,0.872,76,True
+Canal inguinal,,12.082,False,0.0418,,0,0.58,0.58,0.872,76,True
+Celulite,,12.02,False,0.0422,,0,0.58,0.58,0.872,76,True
+Cálice renal,,12.121,False,0.0413,,0,0.58,0.58,0.872,76,True
+Cápsula articular,,12.201,False,0.0406,,0,0.59,0.59,0.872,76,True
+Endocárdio,,17.006,False,0.0412,,630,0.58,0.58,0.872,76,True
+Extensor dos dedos,,12.006,False,0.0425,,0,0.566,0.566,0.872,76,True
+Freio labial,,12.109,False,0.0411,,0,0.58,0.58,0.872,76,True
+Glúteo mínimo,,11.96,False,0.043,,0,0.566,0.566,0.872,76,True
+Humor aquoso,,12.083,False,0.0417,,0,0.58,0.58,0.872,76,True
+Medula renal,,11.938,False,0.0429,,0,0.566,0.566,0.872,76,True
+Músculo da sobrancelha,,12.118,False,0.041,,0,0.58,0.58,0.872,76,True
+Nervo acessório,,12.033,False,0.042,,0,0.58,0.58,0.872,76,True
+Nervo facial,,11.982,False,0.0424,,0,0.566,0.566,0.872,76,True
+Nervos cranianos,,11.98,False,0.0423,,0,0.566,0.566,0.872,76,True
+Oblíquo interno,,12.077,False,0.0416,,0,0.58,0.58,0.872,76,True
+Osso do cotovelo,,11.958,False,0.0428,,0,0.566,0.566,0.872,76,True
+Suco gástrico,,12.095,False,0.0415,,0,0.58,0.58,0.872,76,True
+Uretra feminina,,11.961,False,0.0427,,0,0.566,0.566,0.872,76,True
+Veia cefálica,,12.136,False,0.0409,,0,0.58,0.58,0.872,76,True
+Veia pulmonar,,12.066,False,0.0414,,0,0.58,0.58,0.872,76,True
+Veia renal,,11.94,False,0.0426,,0,0.566,0.566,0.872,76,True
+Ápice do pulmão,,12.197,False,0.0407,,0,0.59,0.59,0.872,76,True
+Ângulo da mandíbula,,12.161,False,0.0408,,0,0.59,0.59,0.872,76,True
+Artéria renal,,12.351,False,0.0398,,0,0.601,0.601,0.877,77,True
+Baço acessório,,12.484,False,0.039,,0,0.614,0.614,0.877,77,True
+Bulbo capilar,,12.579,False,0.0383,,0,0.625,0.625,0.877,77,True
+Canal deferente,,12.421,False,0.0394,,0,0.605,0.605,0.877,77,True
+Colo do fêmur,,12.307,False,0.04,,0,0.596,0.596,0.877,77,True
+Costela flutuante,,12.505,False,0.0389,,0,0.614,0.614,0.877,77,True
+Córtex renal,,12.476,False,0.0392,,0,0.614,0.614,0.877,77,True
+Disco intervertebral,,12.538,False,0.0386,,0,0.614,0.614,0.877,77,True
+Dobra do cotovelo,,12.377,False,0.0397,,0,0.605,0.605,0.877,77,True
+Fibular longo,,12.524,False,0.0386,,0,0.614,0.614,0.877,77,True
+Franja,,12.434,False,0.0393,,0,0.605,0.605,0.877,77,True
+Glóbulo branco,,12.255,False,0.0405,,0,0.596,0.596,0.877,77,True
+Lobo hepático,,12.453,False,0.0391,,0,0.614,0.614,0.877,77,True
+Oblíquo externo,,12.37,False,0.0396,,0,0.605,0.605,0.877,77,True
+Palato duro,,12.27,False,0.0399,,0,0.596,0.596,0.877,77,True
+Pochete de gordura,,12.237,False,0.0404,,0,0.596,0.596,0.877,77,True
+Pulso radial,,12.336,False,0.0397,,0,0.601,0.601,0.877,77,True
+Púbis feminino,,12.243,False,0.0403,,0,0.596,0.596,0.877,77,True
+Rego,,12.532,False,0.0385,,0,0.614,0.614,0.877,77,True
+Rombóide,,17.643,False,0.0395,,624,0.605,0.605,0.877,77,True
+Saco escrotal,,12.516,False,0.0388,,0,0.614,0.614,0.877,77,True
+Seio maxilar,,12.512,False,0.0387,,0,0.614,0.614,0.877,77,True
+Vaso linfático,,12.529,False,0.0384,,0,0.614,0.614,0.877,77,True
+Veia basílica,,12.255,False,0.0402,,0,0.596,0.596,0.877,77,True
+Ventrículo esquerdo,,12.254,False,0.0401,,0,0.596,0.596,0.877,77,True
+ATM,,12.678,False,0.0376,,0,0.634,0.634,0.883,78,True
+Aorta abdominal,,12.816,False,0.0361,,0,0.651,0.651,0.883,78,True
+Artéria hepática,,12.793,False,0.0365,,0,0.651,0.651,0.883,78,True
+Calcanhar de aquiles,,12.627,False,0.0379,,0,0.625,0.625,0.883,78,True
+Cartilagem articular,,12.728,False,0.037,,0,0.642,0.642,0.883,78,True
 Cervical,,12.793,False,0.0364,,0,0.651,0.651,0.883,78,True
-Cicatriz,,12.587,False,0.0381,,0,0.625,0.625,0.883,78,True
-Colo vesical,,12.776,False,0.0363,,0,0.651,0.651,0.883,78,True
-Cólon ascendente,,12.792,False,0.0362,,0,0.651,0.651,0.883,78,True
-Cólon descendente,,12.596,False,0.038,,0,0.625,0.625,0.883,78,True
-Feixe de His,,12.725,False,0.0371,,0,0.634,0.634,0.883,78,True
-Glândula de Bartholin,,12.762,False,0.0368,,0,0.642,0.642,0.883,78,True
-Glóbulo vermelho,,12.59,False,0.0379,,0,0.625,0.625,0.883,78,True
-Lombar,,12.575,False,0.0378,,0,0.625,0.625,0.883,78,True
-Lombo,,12.643,False,0.0374,,0,0.634,0.634,0.883,78,True
-Líquido sinovial,,12.615,False,0.0377,,0,0.625,0.625,0.883,78,True
-Moleira do bebê,,12.607,False,0.0376,,0,0.625,0.625,0.883,78,True
-Mucosa nasal,,12.734,False,0.0368,,0,0.642,0.642,0.883,78,True
-Nervo auditivo,,12.732,False,0.0367,,0,0.642,0.642,0.883,78,True
-Palato mole,,12.728,False,0.0366,,0,0.642,0.642,0.883,78,True
-Pinta de nascença,,12.761,False,0.0365,,0,0.642,0.642,0.883,78,True
-Pênis ereto,,12.726,False,0.037,,0,0.634,0.634,0.883,78,True
-Saco lacrimal,,12.673,False,0.0373,,0,0.634,0.634,0.883,78,True
+Cicatriz,,12.587,False,0.0382,,0,0.625,0.625,0.883,78,True
+Colo vesical,,12.776,False,0.0364,,0,0.651,0.651,0.883,78,True
+Cólon ascendente,,12.792,False,0.0363,,0,0.651,0.651,0.883,78,True
+Cólon descendente,,12.596,False,0.0381,,0,0.625,0.625,0.883,78,True
+Feixe de His,,12.725,False,0.0372,,0,0.634,0.634,0.883,78,True
+Glândula de Bartholin,,12.762,False,0.0369,,0,0.642,0.642,0.883,78,True
+Glóbulo vermelho,,12.59,False,0.038,,0,0.625,0.625,0.883,78,True
+Lombar,,12.575,False,0.0379,,0,0.625,0.625,0.883,78,True
+Lombo,,12.643,False,0.0375,,0,0.634,0.634,0.883,78,True
+Líquido sinovial,,12.615,False,0.0378,,0,0.625,0.625,0.883,78,True
+Moleira do bebê,,12.607,False,0.0377,,0,0.625,0.625,0.883,78,True
+Mucosa nasal,,12.734,False,0.0369,,0,0.642,0.642,0.883,78,True
+Nervo auditivo,,12.732,False,0.0368,,0,0.642,0.642,0.883,78,True
+Palato mole,,12.728,False,0.0367,,0,0.642,0.642,0.883,78,True
+Pinta de nascença,,12.761,False,0.0366,,0,0.642,0.642,0.883,78,True
+Pênis ereto,,12.726,False,0.0371,,0,0.634,0.634,0.883,78,True
+Saco lacrimal,,12.673,False,0.0374,,0,0.634,0.634,0.883,78,True
 Semilunar,,17.186,False,0.0373,,546,0.634,0.634,0.883,78,True
-Vasto medial,,12.671,False,0.0372,,0,0.634,0.634,0.883,78,True
-Arcada dentária,,12.853,False,0.0357,,0,0.66,0.66,0.889,79,True
-Arco aórtico,,13.141,False,0.0342,,0,0.682,0.682,0.889,79,True
-Articulação temporomandibular,,13.022,False,0.0348,,0,0.671,0.671,0.889,79,True
-Artéria ilíaca,,12.959,False,0.0353,,0,0.671,0.671,0.889,79,True
-Artéria mesentérica,,12.959,False,0.0352,,0,0.671,0.671,0.889,79,True
-Artéria poplítea,,12.959,False,0.0351,,0,0.671,0.671,0.889,79,True
-Artéria radial,,13.045,False,0.0348,,0,0.671,0.671,0.889,79,True
+Vasto medial,,12.671,False,0.0373,,0,0.634,0.634,0.883,78,True
+Arcada dentária,,12.853,False,0.0358,,0,0.66,0.66,0.889,79,True
+Arco aórtico,,13.141,False,0.0343,,0,0.682,0.682,0.889,79,True
+Articulação temporomandibular,,13.022,False,0.0349,,0,0.67,0.67,0.889,79,True
+Artéria ilíaca,,12.959,False,0.0354,,0,0.67,0.67,0.889,79,True
+Artéria mesentérica,,12.959,False,0.0353,,0,0.67,0.67,0.889,79,True
+Artéria poplítea,,12.959,False,0.0352,,0,0.67,0.67,0.889,79,True
+Artéria radial,,13.045,False,0.0349,,0,0.67,0.67,0.889,79,True
 Artéria vertebral,,12.858,False,0.0357,,0,0.66,0.66,0.889,79,True
-Banda iliotibial,,13.053,False,0.0347,,0,0.671,0.671,0.889,79,True
-Barriguinha,,13.081,False,0.0344,,0,0.682,0.682,0.889,79,True
-Calota craniana,,13.005,False,0.0349,,0,0.671,0.671,0.889,79,True
-Crista ilíaca,,13.092,False,0.0343,,0,0.682,0.682,0.889,79,True
-Deltoide anterior,,12.882,False,0.0356,,0,0.66,0.66,0.889,79,True
-Esperma,,12.801,False,0.0361,,0,0.651,0.651,0.889,79,True
-Flexor dos dedos,,13.039,False,0.0346,,0,0.671,0.671,0.889,79,True
-Mucosa,,12.823,False,0.0359,,0,0.651,0.651,0.889,79,True
-Músculo esquelético,,12.859,False,0.0355,,0,0.66,0.66,0.889,79,True
-Navicular,,17.148,False,0.0358,,540,0.651,0.651,0.889,79,True
-Nervo mediano,,12.808,False,0.036,,0,0.651,0.651,0.889,79,True
-Nervo periférico,,12.884,False,0.0354,,0,0.66,0.66,0.889,79,True
+Banda iliotibial,,13.053,False,0.0348,,0,0.67,0.67,0.889,79,True
+Barriguinha,,13.081,False,0.0345,,0,0.682,0.682,0.889,79,True
+Calota craniana,,13.005,False,0.035,,0,0.67,0.67,0.889,79,True
+Crista ilíaca,,13.092,False,0.0344,,0,0.682,0.682,0.889,79,True
+Deltoide anterior,,12.882,False,0.0357,,0,0.66,0.66,0.889,79,True
+Esperma,,12.801,False,0.0362,,0,0.651,0.651,0.889,79,True
+Flexor dos dedos,,13.039,False,0.0347,,0,0.67,0.67,0.889,79,True
+Mucosa,,12.823,False,0.036,,0,0.651,0.651,0.889,79,True
+Músculo esquelético,,12.859,False,0.0356,,0,0.66,0.66,0.889,79,True
+Navicular,,17.148,False,0.0359,,540,0.651,0.651,0.889,79,True
+Nervo mediano,,12.808,False,0.0361,,0,0.651,0.651,0.889,79,True
+Nervo periférico,,12.884,False,0.0355,,0,0.66,0.66,0.889,79,True
 Nervo radial,,12.859,False,0.0354,,0,0.66,0.66,0.889,79,True
-Pandeiro,,13.037,False,0.0346,,0,0.671,0.671,0.889,79,True
-Pelve renal,,12.956,False,0.0351,,0,0.671,0.671,0.889,79,True
-Processo xifoide,,13.056,False,0.0345,,0,0.671,0.671,0.889,79,True
-Romboide maior,,12.971,False,0.035,,0,0.671,0.671,0.889,79,True
-Arco zigomático,,13.419,False,0.0327,,0,0.706,0.706,0.894,80,True
-Assoalho pélvico,,13.521,False,0.0324,,0,0.714,0.714,0.894,80,True
-Braquiorradial,,20.0,True,0.0325,,714,0.714,0.714,0.894,80,True
-Cartilagem tireoide,,13.385,False,0.033,,0,0.706,0.706,0.894,80,True
-Cós,,13.347,False,0.0334,,0,0.697,0.697,0.894,80,True
-Elevador da escápula,,13.109,False,0.0341,,0,0.682,0.682,0.894,80,True
-Fronte,,13.331,False,0.0333,,0,0.697,0.697,0.894,80,True
-Fáscia plantar,,13.382,False,0.033,,0,0.706,0.706,0.894,80,True
-Hemoglobina,,13.264,False,0.0337,,0,0.691,0.691,0.894,80,True
-Hilo pulmonar,,13.384,False,0.0329,,0,0.706,0.706,0.894,80,True
-Hélice,,13.169,False,0.0339,,0,0.688,0.688,0.894,80,True
+Pandeiro,,13.037,False,0.0346,,0,0.67,0.67,0.889,79,True
+Pelve renal,,12.956,False,0.0351,,0,0.67,0.67,0.889,79,True
+Processo xifoide,,13.056,False,0.0346,,0,0.67,0.67,0.889,79,True
+Romboide maior,,12.971,False,0.0351,,0,0.67,0.67,0.889,79,True
+Arco zigomático,,13.419,False,0.0328,,0,0.706,0.706,0.894,80,True
+Assoalho pélvico,,13.521,False,0.0325,,0,0.714,0.714,0.894,80,True
+Braquiorradial,,20.0,True,0.0326,,714,0.714,0.714,0.894,80,True
+Cartilagem tireoide,,13.385,False,0.0331,,0,0.706,0.706,0.894,80,True
+Cós,,13.347,False,0.0335,,0,0.697,0.697,0.894,80,True
+Elevador da escápula,,13.109,False,0.0342,,0,0.682,0.682,0.894,80,True
+Fronte,,13.331,False,0.0334,,0,0.697,0.697,0.894,80,True
+Fáscia plantar,,13.382,False,0.0331,,0,0.706,0.706,0.894,80,True
+Hemoglobina,,13.264,False,0.0338,,0,0.691,0.691,0.894,80,True
+Hilo pulmonar,,13.384,False,0.033,,0,0.706,0.706,0.894,80,True
+Hélice,,13.169,False,0.034,,0,0.688,0.688,0.894,80,True
 Líquido cefalorraquidiano,,13.102,False,0.0341,,0,0.682,0.682,0.894,80,True
-Matriz ungueal,,13.132,False,0.034,,0,0.682,0.682,0.894,80,True
-Medula adrenal,,13.292,False,0.0336,,0,0.697,0.697,0.894,80,True
+Matriz ungueal,,13.132,False,0.0341,,0,0.682,0.682,0.894,80,True
+Medula adrenal,,13.292,False,0.0337,,0,0.697,0.697,0.894,80,True
 Mento,,13.374,False,0.0329,,0,0.706,0.706,0.894,80,True
-Muco,,13.313,False,0.0332,,0,0.697,0.697,0.894,80,True
-Mucosa gástrica,,13.224,False,0.0338,,0,0.688,0.688,0.894,80,True
-Nó sinusal,,13.347,False,0.0332,,0,0.697,0.697,0.894,80,True
-Núcleo caudado,,13.236,False,0.0336,,0,0.691,0.691,0.894,80,True
+Muco,,13.313,False,0.0333,,0,0.697,0.697,0.894,80,True
+Mucosa gástrica,,13.224,False,0.0339,,0,0.688,0.688,0.894,80,True
+Nó sinusal,,13.347,False,0.0333,,0,0.697,0.697,0.894,80,True
+Núcleo caudado,,13.236,False,0.0337,,0,0.691,0.691,0.894,80,True
 Osso esponjoso,,13.4,False,0.0327,,0,0.706,0.706,0.894,80,True
-Pregas vocais,,13.375,False,0.0328,,0,0.706,0.706,0.894,80,True
+Pregas vocais,,13.375,False,0.0329,,0,0.706,0.706,0.894,80,True
 Reto femoral,,13.174,False,0.0339,,0,0.688,0.688,0.894,80,True
 Tensor da fáscia lata,,13.082,False,0.0343,,0,0.682,0.682,0.894,80,True
-Veia femoral,,13.294,False,0.0334,,0,0.697,0.697,0.894,80,True
-Veia jugular,,13.329,False,0.0331,,0,0.697,0.697,0.894,80,True
-Óvulo,,13.269,False,0.0335,,0,0.697,0.697,0.894,80,True
+Veia femoral,,13.294,False,0.0335,,0,0.697,0.697,0.894,80,True
+Veia jugular,,13.329,False,0.0332,,0,0.697,0.697,0.894,80,True
+Óvulo,,13.269,False,0.0336,,0,0.697,0.697,0.894,80,True
 Ampola retal,,13.662,False,0.0317,,0,0.731,0.731,0.9,81,True
-Aorta torácica,,13.823,False,0.0311,,0,0.74,0.74,0.9,81,True
-Artéria basilar,,13.64,False,0.0319,,0,0.723,0.723,0.9,81,True
-Artéria femoral,,13.705,False,0.0315,,0,0.731,0.731,0.9,81,True
-Cóccix do bumbum,,13.555,False,0.0323,,0,0.714,0.714,0.9,81,True
+Aorta torácica,,13.823,False,0.0312,,0,0.74,0.74,0.9,81,True
+Artéria basilar,,13.64,False,0.032,,0,0.723,0.723,0.9,81,True
+Artéria femoral,,13.705,False,0.0316,,0,0.731,0.731,0.9,81,True
+Cóccix do bumbum,,13.555,False,0.0324,,0,0.714,0.714,0.9,81,True
 Córtex adrenal,,13.829,False,0.0311,,0,0.74,0.74,0.9,81,True
-Diafragma pélvico,,13.655,False,0.0316,,0,0.731,0.731,0.9,81,True
+Diafragma pélvico,,13.655,False,0.0317,,0,0.731,0.731,0.9,81,True
 Fissura de Sylvius,,13.564,False,0.0322,,0,0.723,0.723,0.9,81,True
 Forame magno,,13.732,False,0.0314,,0,0.735,0.735,0.9,81,True
-Glândula adrenal,,13.606,False,0.0318,,0,0.723,0.723,0.9,81,True
-Goela,,13.565,False,0.0321,,0,0.723,0.723,0.9,81,True
-Leito ungueal,,13.694,False,0.0315,,0,0.731,0.731,0.9,81,True
-Ligamento periodontal,,13.716,False,0.0314,,0,0.731,0.731,0.9,81,True
-Lobo da ínsula,,13.744,False,0.0313,,0,0.735,0.735,0.9,81,True
-Maléolo lateral,,13.536,False,0.0323,,0,0.714,0.714,0.9,81,True
-Membrana sinovial,,13.56,False,0.032,,0,0.723,0.723,0.9,81,True
-Nervo coclear,,13.603,False,0.0318,,0,0.723,0.723,0.9,81,True
-Nervo femoral,,13.519,False,0.0322,,0,0.714,0.714,0.9,81,True
-Osso malar,,13.825,False,0.031,,0,0.74,0.74,0.9,81,True
-Pia-máter,,13.601,False,0.0317,,0,0.723,0.723,0.9,81,True
-Prega inguinal,,13.456,False,0.0326,,0,0.714,0.714,0.9,81,True
+Glândula adrenal,,13.606,False,0.0319,,0,0.723,0.723,0.9,81,True
+Goela,,13.565,False,0.0322,,0,0.723,0.723,0.9,81,True
+Leito ungueal,,13.694,False,0.0316,,0,0.731,0.731,0.9,81,True
+Ligamento periodontal,,13.716,False,0.0315,,0,0.731,0.731,0.9,81,True
+Lobo da ínsula,,13.744,False,0.0314,,0,0.735,0.735,0.9,81,True
+Maléolo lateral,,13.536,False,0.0324,,0,0.714,0.714,0.9,81,True
+Membrana sinovial,,13.56,False,0.0321,,0,0.723,0.723,0.9,81,True
+Nervo coclear,,13.603,False,0.0319,,0,0.723,0.723,0.9,81,True
+Nervo femoral,,13.519,False,0.0323,,0,0.714,0.714,0.9,81,True
+Osso malar,,13.825,False,0.0311,,0,0.74,0.74,0.9,81,True
+Pia-máter,,13.601,False,0.0318,,0,0.723,0.723,0.9,81,True
+Prega inguinal,,13.456,False,0.0327,,0,0.714,0.714,0.9,81,True
 Sacro-ilíaca,,13.487,False,0.0325,,0,0.714,0.714,0.9,81,True
 Tendão do bíceps,,13.788,False,0.0313,,0,0.74,0.74,0.9,81,True
 Traqueia cervical,,13.841,False,0.031,,0,0.74,0.74,0.9,81,True
 Veia safena,,13.57,False,0.032,,0,0.723,0.723,0.9,81,True
-Antro gástrico,,13.852,False,0.0309,,0,0.749,0.749,0.906,82,True
-Artéria braquial,,13.918,False,0.0307,,0,0.749,0.749,0.906,82,True
-Bainha de mielina,,14.107,False,0.0303,,0,0.758,0.758,0.906,82,True
-Bíceps femoral,,14.224,False,0.0298,,0,0.766,0.766,0.906,82,True
+Alvéolo dentário,,14.321,False,0.0295,,0,0.775,0.775,0.906,82,True
+Antro gástrico,,13.852,False,0.031,,0,0.748,0.748,0.906,82,True
+Artéria braquial,,13.918,False,0.0307,,0,0.748,0.748,0.906,82,True
+Bainha de mielina,,14.107,False,0.0304,,0,0.758,0.758,0.906,82,True
+Bíceps femoral,,14.224,False,0.0299,,0,0.766,0.766,0.906,82,True
 Cartilagem costal,,14.062,False,0.0305,,0,0.758,0.758,0.906,82,True
-Catarro,,14.172,False,0.03,,0,0.766,0.766,0.906,82,True
-Cuboide,,18.28,False,0.0304,,522,0.758,0.758,0.906,82,True
+Catarro,,14.172,False,0.0301,,0,0.766,0.766,0.906,82,True
+Cuboide,,18.28,False,0.0305,,522,0.758,0.758,0.906,82,True
 Cólon transverso,,14.161,False,0.03,,0,0.766,0.766,0.906,82,True
-Deltoide posterior,,13.862,False,0.0308,,0,0.749,0.749,0.906,82,True
-Ducto biliar,,14.108,False,0.0302,,0,0.758,0.758,0.906,82,True
-Glândula lacrimal,,13.899,False,0.0306,,0,0.749,0.749,0.906,82,True
-Glândula sublingual,,14.155,False,0.0299,,0,0.766,0.766,0.906,82,True
+Deltoide posterior,,13.862,False,0.0309,,0,0.748,0.748,0.906,82,True
+Ducto biliar,,14.108,False,0.0303,,0,0.758,0.758,0.906,82,True
+Glândula lacrimal,,13.899,False,0.0307,,0,0.748,0.748,0.906,82,True
+Glândula sublingual,,14.155,False,0.03,,0,0.766,0.766,0.906,82,True
 Ligamento inguinal,,14.135,False,0.0302,,0,0.758,0.758,0.906,82,True
-Meleca,,14.236,False,0.0297,,0,0.771,0.771,0.906,82,True
-Nervo tibial,,13.874,False,0.0308,,0,0.749,0.749,0.906,82,True
-Nervo trigêmeo,,14.186,False,0.0297,,0,0.766,0.766,0.906,82,True
-Nervo ulnar,,14.11,False,0.0301,,0,0.758,0.758,0.906,82,True
-Polígono de Willis,,13.907,False,0.0306,,0,0.749,0.749,0.906,82,True
-Sulco,,13.862,False,0.0307,,0,0.749,0.749,0.906,82,True
-Sutura craniana,,14.095,False,0.0303,,0,0.758,0.758,0.906,82,True
-Tendão patelar,,14.246,False,0.0296,,0,0.771,0.771,0.906,82,True
+Meleca,,14.236,False,0.0298,,0,0.771,0.771,0.906,82,True
+Nervo tibial,,13.874,False,0.0309,,0,0.748,0.748,0.906,82,True
+Nervo trigêmeo,,14.186,False,0.0298,,0,0.766,0.766,0.906,82,True
+Nervo ulnar,,14.11,False,0.0302,,0,0.758,0.758,0.906,82,True
+Polígono de Willis,,13.907,False,0.0306,,0,0.748,0.748,0.906,82,True
+Sulco,,13.862,False,0.0308,,0,0.748,0.748,0.906,82,True
+Sutura craniana,,14.095,False,0.0304,,0,0.758,0.758,0.906,82,True
+Tendão patelar,,14.246,False,0.0297,,0,0.771,0.771,0.906,82,True
 Transverso do abdome,,14.17,False,0.0299,,0,0.766,0.766,0.906,82,True
 Tuba uterina,,14.12,False,0.0301,,0,0.758,0.758,0.906,82,True
-Uretra masculina,,13.804,False,0.0312,,0,0.74,0.74,0.906,82,True
-Úvula da garganta,,13.909,False,0.0305,,0,0.749,0.749,0.906,82,True
-Alvéolo dentário,,14.321,False,0.0295,,0,0.775,0.775,0.911,83,True
-Artéria subclávia,,14.658,False,0.0288,,0,0.792,0.792,0.911,83,True
-Artéria ulnar,,14.296,False,0.0296,,0,0.775,0.775,0.911,83,True
-Bile,,14.274,False,0.0295,,0,0.775,0.775,0.911,83,True
-Colostro,,14.833,False,0.0283,,0,0.803,0.803,0.911,83,True
+Uretra masculina,,13.804,False,0.0313,,0,0.74,0.74,0.906,82,True
+Úvula da garganta,,13.909,False,0.0306,,0,0.748,0.748,0.906,82,True
+Artéria subclávia,,14.658,False,0.0289,,0,0.792,0.792,0.911,83,True
+Artéria ulnar,,14.296,False,0.0297,,0,0.775,0.775,0.911,83,True
+Bile,,14.274,False,0.0296,,0,0.775,0.775,0.911,83,True
+Colostro,,14.833,False,0.0284,,0,0.803,0.803,0.911,83,True
 Comissura labial,,14.807,False,0.0283,,0,0.803,0.803,0.911,83,True
-Ducto mamário,,14.574,False,0.029,,0,0.788,0.788,0.911,83,True
+Ducto mamário,,14.574,False,0.0291,,0,0.788,0.788,0.911,83,True
 Estria,,14.74,False,0.0286,,0,0.797,0.797,0.911,83,True
-Folículo ovariano,,14.805,False,0.0284,,0,0.803,0.803,0.911,83,True
+Folículo ovariano,,14.805,False,0.0285,,0,0.803,0.803,0.911,83,True
 Glândula mamária,,14.448,False,0.0293,,0,0.781,0.781,0.911,83,True
-Glândula submandibular,,14.753,False,0.0285,,0,0.797,0.797,0.911,83,True
+Glândula submandibular,,14.753,False,0.0286,,0,0.797,0.797,0.911,83,True
 Gânglio linfático,,14.717,False,0.0287,,0,0.797,0.797,0.911,83,True
 Linfa,,14.676,False,0.0288,,0,0.792,0.792,0.911,83,True
-Nervo fibular,,14.471,False,0.0292,,0,0.781,0.781,0.911,83,True
+Nervo fibular,,14.471,False,0.0293,,0,0.781,0.781,0.911,83,True
 Nervo olfatório,,14.619,False,0.0289,,0,0.788,0.788,0.911,83,True
 Nervo pudendo,,14.724,False,0.0285,,0,0.797,0.797,0.911,83,True
 Nó sinoatrial,,14.429,False,0.0294,,0,0.781,0.781,0.911,83,True
-Poro,,14.348,False,0.0294,,0,0.775,0.775,0.911,83,True
-Prega semilunar,,14.7,False,0.0286,,0,0.797,0.797,0.911,83,True
+Poro,,14.348,False,0.0295,,0,0.775,0.775,0.911,83,True
+Prega semilunar,,14.7,False,0.0287,,0,0.797,0.797,0.911,83,True
 Seio esfenoidal,,14.434,False,0.0292,,0,0.781,0.781,0.911,83,True
-Trato iliotibial,,14.424,False,0.0293,,0,0.781,0.781,0.911,83,True
+Trato iliotibial,,14.424,False,0.0294,,0,0.781,0.781,0.911,83,True
 Tutano,,14.57,False,0.029,,0,0.788,0.788,0.911,83,True
 Têmporas,,14.523,False,0.0291,,0,0.785,0.785,0.911,83,True
-Verruga,,14.444,False,0.0291,,0,0.781,0.781,0.911,83,True
-Vestíbulo,,14.655,False,0.0287,,0,0.792,0.792,0.911,83,True
-Válvula ileocecal,,14.597,False,0.0289,,0,0.788,0.788,0.911,83,True
+Verruga,,14.444,False,0.0292,,0,0.781,0.781,0.911,83,True
+Vestíbulo,,14.655,False,0.0288,,0,0.792,0.792,0.911,83,True
+Válvula ileocecal,,14.597,False,0.029,,0,0.788,0.788,0.911,83,True
 Amígdala palatina,,15.114,False,0.0275,,0,0.824,0.824,0.917,84,True
-Apêndice vermiforme,,14.938,False,0.0279,,0,0.811,0.811,0.917,84,True
+Apêndice vermiforme,,14.938,False,0.028,,0,0.81,0.81,0.917,84,True
 Aréola,,15.244,False,0.0273,,0,0.83,0.83,0.917,84,True
-Braquial,,14.877,False,0.0282,,348,0.811,0.811,0.917,84,True
-Bulbo olfatório,,15.056,False,0.0277,,0,0.818,0.818,0.917,84,True
+Braquial,,14.877,False,0.0282,,348,0.81,0.81,0.917,84,True
+Bulbo olfatório,,15.056,False,0.0278,,0,0.818,0.818,0.917,84,True
 Bulbo raquidiano,,15.078,False,0.0276,,0,0.824,0.824,0.917,84,True
-Cavanhaque,,14.985,False,0.0278,,0,0.818,0.818,0.917,84,True
+Cavanhaque,,14.985,False,0.0279,,0,0.818,0.818,0.917,84,True
 Costeleta,,15.179,False,0.0274,,0,0.828,0.828,0.917,84,True
 Culote,,14.979,False,0.0278,,0,0.818,0.818,0.917,84,True
-Cólon sigmoide,,15.189,False,0.0273,,0,0.83,0.83,0.917,84,True
+Cólon sigmoide,,15.189,False,0.0274,,0,0.83,0.83,0.917,84,True
 Ducto deferente,,15.022,False,0.0277,,0,0.818,0.818,0.917,84,True
-Ducto lacrimal,,14.853,False,0.0281,,0,0.811,0.811,0.917,84,True
-Eretor da espinha,,14.892,False,0.028,,0,0.811,0.811,0.917,84,True
-Espermatozoide,,14.909,False,0.028,,0,0.811,0.811,0.917,84,True
+Ducto lacrimal,,14.853,False,0.0282,,0,0.81,0.81,0.917,84,True
+Eretor da espinha,,14.892,False,0.0281,,0,0.81,0.81,0.917,84,True
+Espermatozoide,,14.909,False,0.028,,0,0.81,0.81,0.917,84,True
 Flexura hepática,,15.275,False,0.0272,,0,0.833,0.833,0.917,84,True
-Gradil costal,,14.848,False,0.0281,,0,0.811,0.811,0.917,84,True
-Maléolo medial,,15.243,False,0.0272,,0,0.83,0.83,0.917,84,True
-Mielina,,15.094,False,0.0275,,0,0.824,0.824,0.917,84,True
+Gradil costal,,14.848,False,0.0282,,0,0.81,0.81,0.917,84,True
+Maléolo medial,,15.243,False,0.0273,,0,0.83,0.83,0.917,84,True
+Mielina,,15.094,False,0.0276,,0,0.824,0.824,0.917,84,True
 Nervo frênico,,14.773,False,0.0284,,0,0.803,0.803,0.917,84,True
-Nervo glossofaríngeo,,15.114,False,0.0274,,0,0.824,0.824,0.917,84,True
-Nervo hipoglosso,,14.964,False,0.0279,,0,0.811,0.811,0.917,84,True
-Olheira,,15.105,False,0.0274,,0,0.824,0.824,0.917,84,True
-Penugem,,15.027,False,0.0276,,0,0.818,0.818,0.917,84,True
-Plaqueta,,14.887,False,0.028,,0,0.811,0.811,0.917,84,True
-Sinapse,,14.808,False,0.0282,,0,0.803,0.803,0.917,84,True
+Nervo glossofaríngeo,,15.114,False,0.0275,,0,0.824,0.824,0.917,84,True
+Nervo hipoglosso,,14.964,False,0.0279,,0,0.81,0.81,0.917,84,True
+Olheira,,15.105,False,0.0275,,0,0.824,0.824,0.917,84,True
+Penugem,,15.027,False,0.0277,,0,0.818,0.818,0.917,84,True
+Plaqueta,,14.887,False,0.0281,,0,0.81,0.81,0.917,84,True
+Sinapse,,14.808,False,0.0283,,0,0.803,0.803,0.917,84,True
 Abdutor,,16.65,False,0.0261,,0,0.864,0.864,0.922,85,True
-Apêndice xifoide,,15.466,False,0.027,,0,0.836,0.836,0.922,85,True
+Apêndice xifoide,,15.466,False,0.0271,,0,0.836,0.836,0.922,85,True
 Axônio,,15.605,False,0.0269,,0,0.841,0.841,0.922,85,True
 Cartilagem cricoide,,16.104,False,0.0266,,0,0.849,0.849,0.922,85,True
-Cemento,,15.981,False,0.0267,,0,0.846,0.846,0.922,85,True
+Cemento,,15.981,False,0.0268,,0,0.846,0.846,0.922,85,True
 Cerume,,16.458,False,0.0263,,0,0.858,0.858,0.922,85,True
-Coana,,16.206,False,0.0265,,0,0.851,0.851,0.922,85,True
-Cérvix,,16.264,False,0.0264,,0,0.855,0.855,0.922,85,True
+Coana,,16.206,False,0.0266,,0,0.851,0.851,0.922,85,True
+Cérvix,,16.264,False,0.0265,,0,0.855,0.855,0.922,85,True
 Côndilo,,16.018,False,0.0267,,0,0.846,0.846,0.922,85,True
-Glomérulo,,16.546,False,0.0262,,0,0.86,0.86,0.922,85,True
-Grácil,,16.51,False,0.0262,,0,0.86,0.86,0.922,85,True
-Hemorroida,,15.458,False,0.027,,0,0.836,0.836,0.922,85,True
+Glomérulo,,16.546,False,0.0262,,0,0.859,0.859,0.922,85,True
+Grácil,,16.51,False,0.0263,,0,0.859,0.859,0.922,85,True
+Hemorroida,,15.458,False,0.0271,,0,0.836,0.836,0.922,85,True
 Hemácia,,16.38,False,0.0264,,0,0.855,0.855,0.922,85,True
-Joanete,,15.294,False,0.0271,,0,0.833,0.833,0.922,85,True
-Linfócito,,15.995,False,0.0267,,0,0.846,0.846,0.922,85,True
-Líquor,,15.576,False,0.0269,,0,0.841,0.841,0.922,85,True
-Mediastino,,15.603,False,0.0268,,0,0.841,0.841,0.922,85,True
-Mesencéfalo,,16.361,False,0.0263,,0,0.855,0.855,0.922,85,True
+Joanete,,15.294,False,0.0272,,0,0.833,0.833,0.922,85,True
+Linfócito,,15.995,False,0.0268,,0,0.846,0.846,0.922,85,True
+Líquor,,15.576,False,0.027,,0,0.841,0.841,0.922,85,True
+Mediastino,,15.603,False,0.0269,,0,0.841,0.841,0.922,85,True
+Mesencéfalo,,16.361,False,0.0264,,0,0.855,0.855,0.922,85,True
 Nasofaringe,,16.187,False,0.0265,,0,0.851,0.851,0.922,85,True
 Orofaringe,,15.383,False,0.0271,,0,0.836,0.836,0.922,85,True
 Papila duodenal,,15.518,False,0.027,,0,0.839,0.839,0.922,85,True
-Periósteo,,16.311,False,0.0264,,0,0.855,0.855,0.922,85,True
+Periósteo,,16.311,False,0.0265,,0,0.855,0.855,0.922,85,True
 Plexo coroide,,15.916,False,0.0268,,0,0.843,0.843,0.922,85,True
-Remela,,16.013,False,0.0266,,0,0.846,0.846,0.922,85,True
+Remela,,16.013,False,0.0267,,0,0.846,0.846,0.922,85,True
 Subescapular,,16.562,False,0.0262,,0,0.861,0.861,0.922,85,True
-Arteríola,,17.442,False,0.0254,,0,0.884,0.884,0.927,86,True
+Arteríola,,17.442,False,0.0255,,0,0.883,0.883,0.927,86,True
 Bronquíolo,,17.931,False,0.0251,,0,0.895,0.895,0.927,86,True
-Carúncula,,17.625,False,0.0252,,0,0.89,0.89,0.927,86,True
-Columela,,17.29,False,0.0256,,0,0.881,0.881,0.927,86,True
-Colédoco,,16.651,False,0.026,,0,0.864,0.864,0.927,86,True
+Carúncula,,17.625,False,0.0253,,0,0.89,0.89,0.927,86,True
+Columela,,17.29,False,0.0256,,0,0.88,0.88,0.927,86,True
+Colédoco,,16.651,False,0.0261,,0,0.864,0.864,0.927,86,True
 Coroide,,17.727,False,0.0252,,0,0.892,0.892,0.927,86,True
 Dendrito,,17.52,False,0.0254,,0,0.886,0.886,0.927,86,True
-Diencéfalo,,16.809,False,0.026,,0,0.869,0.869,0.927,86,True
-Fóvea,,17.003,False,0.0258,,0,0.875,0.875,0.927,86,True
+Diencéfalo,,16.809,False,0.026,,0,0.868,0.868,0.927,86,True
+Fóvea,,17.003,False,0.0258,,0,0.874,0.874,0.927,86,True
 Grande dorsal,,9.892,False,0.0253,,0,0.888,0.888,0.927,86,True
-Hipofaringe,,17.385,False,0.0255,,0,0.881,0.881,0.927,86,True
-Leucócito,,17.063,False,0.0256,,0,0.877,0.877,0.927,86,True
-Maléolo,,16.808,False,0.0259,,0,0.869,0.869,0.927,86,True
-Manúbrio,,17.758,False,0.0251,,0,0.892,0.892,0.927,86,True
-Miométrio,,16.978,False,0.0257,,0,0.875,0.875,0.927,86,True
-Monocelha,,16.919,False,0.0258,,0,0.872,0.872,0.927,86,True
-Neutrófilo,,17.46,False,0.0254,,0,0.884,0.884,0.927,86,True
-Néfron,,16.811,False,0.0259,,0,0.869,0.869,0.927,86,True
-Olécrano,,17.571,False,0.0252,,0,0.888,0.888,0.927,86,True
-Paratireoide,,17.355,False,0.0255,,0,0.881,0.881,0.927,86,True
-Popô,,16.616,False,0.0261,,0,0.864,0.864,0.927,86,True
-Ramela,,17.047,False,0.0257,,0,0.875,0.875,0.927,86,True
-Redondo maior,,9.527,False,0.0253,,0,0.886,0.886,0.927,86,True
-Sartório,,15.912,False,0.0258,,294,0.872,0.872,0.927,86,True
+Hipofaringe,,17.385,False,0.0256,,0,0.88,0.88,0.927,86,True
+Leucócito,,17.063,False,0.0257,,0,0.877,0.877,0.927,86,True
+Maléolo,,16.808,False,0.026,,0,0.868,0.868,0.927,86,True
+Manúbrio,,17.758,False,0.0252,,0,0.892,0.892,0.927,86,True
+Miométrio,,16.978,False,0.0258,,0,0.874,0.874,0.927,86,True
+Monocelha,,16.919,False,0.0259,,0,0.871,0.871,0.927,86,True
+Neutrófilo,,17.46,False,0.0254,,0,0.883,0.883,0.927,86,True
+Néfron,,16.811,False,0.0259,,0,0.868,0.868,0.927,86,True
+Olécrano,,17.571,False,0.0253,,0,0.888,0.888,0.927,86,True
+Paratireoide,,17.355,False,0.0255,,0,0.88,0.88,0.927,86,True
+Popô,,16.616,False,0.0262,,0,0.864,0.864,0.927,86,True
+Ramela,,17.047,False,0.0257,,0,0.874,0.874,0.927,86,True
+Redondo maior,,9.527,False,0.0254,,0,0.886,0.886,0.927,86,True
+Sartório,,15.912,False,0.0258,,294,0.871,0.871,0.927,86,True
 Trocânter,,17.169,False,0.0256,,0,0.878,0.878,0.927,86,True
 Ínsula,,16.639,False,0.026,,0,0.864,0.864,0.927,86,True
-Aracnoide,,18.015,False,0.0249,,0,0.898,0.898,0.933,87,True
-Arco do pé,,9.876,False,0.0243,,0,0.918,0.918,0.933,87,True
+Aracnoide,,18.015,False,0.025,,0,0.898,0.898,0.933,87,True
+Arco do pé,,9.876,False,0.0244,,0,0.918,0.918,0.933,87,True
 Atlas,,11.812,False,0.0244,,0,0.918,0.918,0.933,87,True
 Corrugador,,18.634,False,0.0247,,0,0.907,0.907,0.933,87,True
 Entrada do cabelo,,8.977,False,0.0248,,0,0.904,0.904,0.933,87,True
@@ -757,83 +756,83 @@ Epitálamo,,18.752,False,0.0246,,0,0.911,0.911,0.933,87,True
 Flexura esplênica,,17.923,False,0.0251,,0,0.895,0.895,0.933,87,True
 Freio da língua,,10.195,False,0.0244,,0,0.916,0.916,0.933,87,True
 Frontal,osso frontal,11.173,False,0.0248,,0,0.904,0.904,0.933,87,True
-Genioglosso,,18.713,False,0.0246,,0,0.911,0.911,0.933,87,True
-Mentual,,18.1,False,0.0249,,0,0.9,0.9,0.933,87,True
+Genioglosso,,18.713,False,0.0247,,0,0.911,0.911,0.933,87,True
+Mentual,,18.1,False,0.025,,0,0.9,0.9,0.933,87,True
 Occipitofrontal,,19.724,False,0.0243,,0,0.92,0.92,0.933,87,True
-Pectíneo,,18.451,False,0.0247,,0,0.904,0.904,0.933,87,True
-Platisma,,17.958,False,0.025,,0,0.895,0.895,0.933,87,True
-Prócero,,18.75,False,0.0245,,0,0.911,0.911,0.933,87,True
+Pectíneo,,18.451,False,0.0248,,0,0.904,0.904,0.933,87,True
+Platisma,,17.958,False,0.0251,,0,0.895,0.895,0.933,87,True
+Prócero,,18.75,False,0.0246,,0,0.911,0.911,0.933,87,True
 Pterigoide,,19.889,False,0.0243,,0,0.922,0.922,0.933,87,True
 Putâmen,,18.176,False,0.0249,,0,0.901,0.901,0.933,87,True
 Risório,,18.593,False,0.0247,,0,0.907,0.907,0.933,87,True
-Semimembranoso,,18.202,False,0.0248,,0,0.901,0.901,0.933,87,True
+Semimembranoso,,18.202,False,0.0249,,0,0.901,0.901,0.933,87,True
 Semitendinoso,,17.969,False,0.025,,0,0.897,0.897,0.933,87,True
 Temporal,osso temporal,11.48,False,0.0245,,0,0.911,0.911,0.933,87,True
-Temporal muscular,,11.13,False,0.0245,,0,0.915,0.915,0.933,87,True
-Tibial anterior,,12.096,False,0.0242,,0,0.922,0.922,0.933,87,True
-Trapézio muscular,,12.298,False,0.0242,,0,0.924,0.924,0.933,87,True
-Vênula,,19.005,False,0.0244,,0,0.915,0.915,0.933,87,True
-Bastonetes,,20.0,True,0.0241,,0,0.94,0.94,0.938,88,True
+Temporal muscular,,11.13,False,0.0245,,0,0.914,0.914,0.933,87,True
+Tibial anterior,,12.096,False,0.0243,,0,0.922,0.922,0.933,87,True
+Trapézio muscular,,12.298,False,0.0242,,0,0.923,0.923,0.933,87,True
+Vênula,,19.005,False,0.0245,,0,0.914,0.914,0.933,87,True
+Bastonetes,,20.0,True,0.0242,,0,0.94,0.94,0.938,88,True
 Bronquíolos,,20.0,True,0.0241,,0,0.94,0.94,0.938,88,True
-Canais semicirculares,,20.0,True,0.024,,0,0.94,0.94,0.938,88,True
-Cones,,20.0,True,0.024,,0,0.94,0.94,0.938,88,True
+Canais semicirculares,,20.0,True,0.0241,,0,0.94,0.94,0.938,88,True
+Cones,,20.0,True,0.0241,,0,0.94,0.94,0.938,88,True
 Cornetos,,20.0,True,0.024,,0,0.94,0.94,0.938,88,True
-Costelas falsas,,20.0,True,0.0239,,0,0.94,0.94,0.938,88,True
-Costelas verdadeiras,,20.0,True,0.0239,,0,0.94,0.94,0.938,88,True
+Costelas falsas,,20.0,True,0.024,,0,0.94,0.94,0.938,88,True
+Costelas verdadeiras,,20.0,True,0.024,,0,0.94,0.94,0.938,88,True
 Dorso da mão,,10.761,False,0.0242,,0,0.925,0.925,0.938,88,True
 Esternohioide,,20.0,True,0.0239,,0,0.94,0.94,0.938,88,True
 Flancos,,20.0,True,0.0238,,0,0.94,0.94,0.938,88,True
-Fímbrias,,20.0,True,0.0238,,0,0.94,0.94,0.938,88,True
+Fímbrias,,20.0,True,0.0239,,0,0.94,0.94,0.938,88,True
 Gengivas,,20.0,True,0.0238,,0,0.94,0.94,0.938,88,True
-Glândulas paratireoides,,20.0,True,0.0237,,0,0.94,0.94,0.938,88,True
+Glândulas paratireoides,,20.0,True,0.0238,,0,0.94,0.94,0.938,88,True
 Glúteos,,20.0,True,0.0237,,0,0.94,0.94,0.938,88,True
 Gominhos,,20.0,True,0.0237,,0,0.94,0.94,0.938,88,True
-Ilhotas de Langerhans,,20.0,True,0.0236,,0,0.94,0.94,0.938,88,True
+Ilhotas de Langerhans,,20.0,True,0.0237,,0,0.94,0.94,0.938,88,True
 Ilhotas pancreáticas,,20.0,True,0.0236,,0,0.94,0.94,0.938,88,True
 Microvilosidades,,20.0,True,0.0236,,0,0.94,0.94,0.938,88,True
-Multífidos,,20.0,True,0.0235,,0,0.94,0.94,0.938,88,True
+Multífidos,,20.0,True,0.0236,,0,0.94,0.94,0.938,88,True
 Músculos,,20.0,True,0.0235,,0,0.94,0.94,0.938,88,True
 Músculos pélvicos,,20.0,True,0.0235,,0,0.94,0.94,0.938,88,True
-Papilas,,20.0,True,0.0234,,0,0.94,0.94,0.938,88,True
+Papilas,,20.0,True,0.0235,,0,0.94,0.94,0.938,88,True
 Quadris,,20.0,True,0.0234,,0,0.94,0.94,0.938,88,True
 Sobrancelhas,,20.0,True,0.0234,,0,0.94,0.94,0.938,88,True
-Vilosidades,,20.0,True,0.0233,,0,0.94,0.94,0.938,88,True
+Vilosidades,,20.0,True,0.0234,,0,0.94,0.94,0.938,88,True
+Vilosidades intestinais,,20.0,True,0.0233,,0,0.94,0.94,0.938,88,True
 Adutor,,15.084,False,0.0227,,0,0.978,0.978,0.943,89,True
 Amígdala cerebral,,13.229,False,0.0229,,0,0.971,0.971,0.943,89,True
 Antitrago,,20.891,False,0.0232,,0,0.958,0.958,0.943,89,True
 Canino,,13.504,False,0.0228,,0,0.974,0.974,0.943,89,True
-Cuneiforme,,15.329,False,0.0226,,0,0.98,0.98,0.943,89,True
+Cuneiforme,,15.329,False,0.0227,,0,0.98,0.98,0.943,89,True
 Córtex,,13.207,False,0.0229,,0,0.97,0.97,0.943,89,True
 Epiderme,,13.599,False,0.023,,0,0.968,0.968,0.943,89,True
 Extensor,,13.603,False,0.0231,,0,0.963,0.963,0.943,89,True
-Femoral,,14.452,False,0.0227,,0,0.976,0.976,0.943,89,True
+Femoral,,14.452,False,0.0228,,0,0.976,0.976,0.943,89,True
 Flexor,,15.668,False,0.0226,,0,0.983,0.983,0.943,89,True
 Folículo,,14.187,False,0.0227,,0,0.977,0.977,0.943,89,True
-Intercostal,,16.009,False,0.0225,,0,0.984,0.984,0.943,89,True
+Intercostal,,16.009,False,0.0226,,0,0.984,0.984,0.943,89,True
 Ligamento cruzado,,12.981,False,0.0232,,0,0.959,0.959,0.943,89,True
 Nó do dedo,junta,11.1,False,0.0233,,0,0.956,0.956,0.943,89,True
 Oblíquo,,14.319,False,0.023,,0,0.967,0.967,0.943,89,True
-Parietal,,15.075,False,0.0228,,0,0.973,0.973,0.943,89,True
-Piramidal,,14.453,False,0.023,,0,0.965,0.965,0.943,89,True
+Parietal,,15.075,False,0.0229,,0,0.972,0.972,0.943,89,True
+Piramidal,,14.453,False,0.0231,,0,0.965,0.965,0.943,89,True
 Safena,,15.003,False,0.0226,,0,0.982,0.982,0.943,89,True
-Seio nasal,seios da face,12.043,False,0.0232,,0,0.957,0.957,0.943,89,True
+Seio nasal,seios da face,12.043,False,0.0233,,0,0.957,0.957,0.943,89,True
 Septo,,14.32,False,0.0228,,0,0.975,0.975,0.943,89,True
 Sola,,12.317,False,0.0231,,0,0.964,0.964,0.943,89,True
-Trapézio,,13.816,False,0.0231,,0,0.961,0.961,0.943,89,True
-Trompa de eustáquio,,14.163,False,0.0226,,0,0.98,0.98,0.943,89,True
-Ventrículo cerebral,Ventrículos laterais,12.637,False,0.0229,,126,0.968,0.968,0.943,89,True
-Vilosidades intestinais,,20.0,True,0.0233,,0,0.94,0.94,0.943,89,True
-Átrio,,13.264,False,0.0231,,0,0.962,0.962,0.943,89,True
+Trapézio,,13.816,False,0.0232,,0,0.961,0.961,0.943,89,True
+Trompa de eustáquio,,14.163,False,0.0227,,0,0.98,0.98,0.943,89,True
+Ventrículo cerebral,Ventrículos laterais,12.637,False,0.023,,126,0.968,0.968,0.943,89,True
+Átrio,,13.264,False,0.0232,,0,0.962,0.962,0.943,89,True
 Cacunda,corcunda,16.938,False,0.0223,,0,0.995,0.995,0.949,90,True
 Escaleno,,16.442,False,0.0225,,0,0.987,0.987,0.949,90,True
 Etmoide,,19.064,False,0.0223,,0,0.993,0.993,0.949,90,True
 Hélix,,17.663,False,0.0223,,0,0.994,0.994,0.949,90,True
 Infraespinhal,,20.0,True,0.0222,,0,0.999,0.999,0.949,90,True
-Orbicular,,16.516,False,0.0224,,0,0.987,0.987,0.949,90,True
+Orbicular,,16.516,False,0.0225,,0,0.987,0.987,0.949,90,True
 Papada,,15.159,False,0.0224,,0,0.989,0.989,0.949,90,True
-Pneuzinho,,20.0,True,0.0221,,0,1.0,1.0,0.949,90,True
+Pneuzinho,,20.0,True,0.0222,,0,1.0,1.0,0.949,90,True
 Psoas,,16.325,False,0.0225,,0,0.986,0.986,0.949,90,True
-Saboneteira,,14.569,False,0.0223,,102,0.992,0.992,0.949,90,True
+Saboneteira,,14.569,False,0.0224,,102,0.992,0.992,0.949,90,True
 Serrátil,,17.396,False,0.0224,,0,0.99,0.99,0.949,90,True
-Sesamoide,,19.339,False,0.0222,,0,0.996,0.996,0.949,90,True
+Sesamoide,,19.339,False,0.0223,,0,0.996,0.996,0.949,90,True
 Supraespinhal,,20.0,True,0.0222,,0,0.998,0.998,0.949,90,True
