@@ -8,9 +8,33 @@
 const RODADAS_POR_DIA = 7;
 const SEGUNDOS = 25;
 const LANCAMENTO = "2026-10-28"; // dia #1
-// Modo teste: abrir com ?aleatorio no fim do endereço (jogar.html?aleatorio) sorteia
-// outras categorias a cada vez e não guarda o progresso do dia.
-const ALEATORIO = new URLSearchParams(location.search).has("aleatorio");
+// Modo teste:
+// - ?aleatorio sorteia categorias aleatórias;
+// - ?dia=6 (ou ?dia=2026-11-02) ou ?amanha carrega as 7 perguntas exatas daquele dia.
+// Em qualquer modo teste, o jogo não grava o progresso do dia nem envia dados para a API.
+const PARAMS = new URLSearchParams(location.search);
+const ALEATORIO = PARAMS.has("aleatorio");
+function dataDeTeste() {
+  if (PARAMS.has("amanha")) {
+    const d = new Date();
+    d.setDate(d.getDate() + 1);
+    const p = (n) => String(n).padStart(2, "0");
+    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+  }
+  const pDia = PARAMS.get("dia");
+  if (!pDia) return null;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(pDia)) return pDia;
+  const n = Number(pDia);
+  if (Number.isInteger(n) && n >= 1 && n <= 3650) {
+    const d = new Date(LANCAMENTO + "T12:00");
+    d.setDate(d.getDate() + (n - 1));
+    const p = (x) => String(x).padStart(2, "0");
+    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+  }
+  return null;
+}
+const DATA_TESTE = dataDeTeste();
+const MODO_TESTE = ALEATORIO || DATA_TESTE !== null;
 // Link do botão "Apoie o criador" no fim do jogo. Enquanto estiver vazio, o botão
 // aparece como "EM BREVE" e não clica. Para ativar, cole o link entre as aspas.
 const LINK_APOIO = "";
@@ -183,7 +207,7 @@ function desenharMascoteDoMenu() {
 function montarSkins() {
   const caixa = $("grade-skins");
   if (!caixa) return;
-  const seq = ALEATORIO ? 0 : sequencia();
+  const seq = MODO_TESTE ? 0 : sequencia();
   const atual = skinEscolhida();
   caixa.innerHTML = "";
   for (const skin of SKINS) {
@@ -288,8 +312,10 @@ function avisarSkinNova(seq) {
 // "DIA #3 · SEQUÊNCIA 2" no menu e no fim. A sequência são os dias seguidos com a viagem
 // completa, guardados neste navegador; ela zera quando você pula um dia.
 function mostrarDiaESequencia() {
-  const seq = ALEATORIO ? 0 : sequencia();
-  const texto = `DIA #${numeroDoDia(estado.data)} · SEQUÊNCIA ${seq}`;
+  const seq = MODO_TESTE ? 0 : sequencia();
+  const texto = DATA_TESTE
+    ? `DIA #${numeroDoDia(estado.data)} · MODO TESTE`
+    : `DIA #${numeroDoDia(estado.data)} · SEQUÊNCIA ${seq}`;
   $("dia").textContent = texto;
   $("fim-dia").textContent = texto;
   return seq;
@@ -302,13 +328,13 @@ function numeroDoDia(data) {
 // Progresso do dia fica no navegador, para não perder ao recarregar.
 // Se o armazenamento estiver bloqueado, o jogo funciona igual, só não lembra.
 function salvarProgresso() {
-  if (ALEATORIO) return;
+  if (MODO_TESTE) return;
   try {
     localStorage.setItem(`nicho:v7:${estado.data}`, JSON.stringify({ historico: estado.historico, total: estado.total }));
   } catch {}
 }
 function lerProgresso() {
-  if (ALEATORIO) return null;
+  if (MODO_TESTE) return null;
   try {
     return JSON.parse(localStorage.getItem(`nicho:v7:${estado.data}`) || "null");
   } catch {
@@ -337,7 +363,7 @@ function atualizarIconeAba(dourado = false) {
 }
 
 const estado = {
-  data: hojeLocal(),
+  data: DATA_TESTE || hojeLocal(),
   categorias: [],
   rodada: 0,
   total: 0,
@@ -816,7 +842,7 @@ function mostrarFim(comSom) {
   montarRespostas();
 
   const seq = mostrarDiaESequencia();
-  if (!ALEATORIO) avisarSkinNova(seq);
+  if (!MODO_TESTE) avisarSkinNova(seq);
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao).emoji : "⚫"));
   $("compartilhar").textContent =
     `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
@@ -871,7 +897,7 @@ const API_RESPOSTAS = "/api/respostas";
 
 // Cada navegador conta uma resposta aceita por categoria por dia; recusadas contam a cada tentativa.
 function enviarResposta(cat, corpo) {
-  if (location.protocol === "file:" || ALEATORIO || !cat.id) return;
+  if (location.protocol === "file:" || MODO_TESTE || !cat.id) return;
   const chave = `nicho:resposta:${estado.data}:${cat.id}`;
   if (corpo.resposta) {
     if (lerChave(chave)) return;
@@ -908,7 +934,7 @@ function mostrarCurva() {
   try {
     jaEnviou = !!localStorage.getItem(chave);
   } catch {}
-  const mandar = !ALEATORIO && !jaEnviou;
+  const mandar = !MODO_TESTE && !jaEnviou;
   const pedido = mandar
     ? fetch(API_PONTUACAO, {
         method: "POST",
@@ -1044,7 +1070,7 @@ function desenharCurva(c, pontos) {
   $("curva").querySelectorAll(".voce").forEach((v) => v !== voce && v.remove());
 
   const pct = Math.round(percentilNaCurva(c, pontos) * 100);
-  $("curva-texto").textContent = ALEATORIO
+  $("curva-texto").textContent = MODO_TESTE
     ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos viajantes de hoje.`
     : pct >= 99
       ? "Você foi mais fundo que 99% dos viajantes de hoje. Poucos chegaram tão longe!"
@@ -1205,11 +1231,13 @@ const CURIOSIDADE_SUPERNOVA = {
   "cores": "O primeiro pigmento sintético moderno, descoberto por acaso em Berlim por volta de 1706.",
   "criaturas-do-folclore": "Monstro do sertão nordestino que mora no fim do mundo: tem um olho só no meio da testa e pés redondos.",
   "deuses-e-deusas": "Deusa inuíte do fundo do mar: as focas e as baleias nasceram dos dedos dela.",
+  "desenhos-animados": "Clássico da Hanna-Barbera de 1967, com o rinoceronte laser Tundro e as gosmas Gloop e Gleep.",
   "doces-e-sobremesas": "Doce português de amêndoa e gema que, apesar do nome, não leva toucinho nenhum.",
   "idiomas": "A \"língua geral\" da Amazônia, criada a partir do tupi e ainda falada no Rio Negro.",
   "ilhas": "A \"Ilha das Cobras\" do litoral paulista, tão cheia de jararacas que a visita é proibida.",
   "insetos": "Inseto com uma \"cauda\" curvada que parece ferrão de escorpião, mas é totalmente inofensiva.",
   "jogadores-da-selecao": "O primeiro grande craque do futebol brasileiro: fez o gol do título sul-americano de 1919.",
+  "jogadores-de-futebol": "Única pessoa no futebol (homem ou mulher) a jogar sete Copas do Mundo e sete Olimpíadas.",
   "jogos-de-videogame": "Jogo japonês em que você rola uma bola que vai grudando tudo pelo caminho, até ficar do tamanho de uma estrela.",
   "legumes-e-verduras": "Folha de um cacto rica em proteína, chamada em Minas de \"carne de pobre\".",
   "material-escolar": "Papel grosso que chupava o excesso de tinta das canetas-tinteiro, antes das esferográficas.",
