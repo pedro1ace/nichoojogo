@@ -3,8 +3,11 @@
 // Guarda só um histograma anônimo: para cada dia, quantas viagens terminaram
 // em cada faixa de 10 pontos. Não guarda IP, nome, cookie nem as respostas.
 //
-//   GET  /api/pontuacao?dia=2026-10-28        devolve a curva do dia
-//   POST /api/pontuacao {dia, pontos}          soma uma viagem e devolve a curva
+//   GET  /api/pontuacao?dia=2026-10-28        devolve a curva do dia (também de dias antigos, para os ARQUIVOS)
+//   POST /api/pontuacao {dia, pontos}          soma uma viagem e devolve a curva (só no próprio dia)
+//
+// A curva é só de quem jogou NO DIA, uma vez por navegador (a 1ª viagem). Viagens pelos
+// ARQUIVOS e as jogadas de novo não são enviadas, e o POST recusa dias que já passaram.
 //
 // Precisa de um banco D1 ligado ao projeto com o nome DB (veja banco/schema.sql).
 
@@ -19,11 +22,13 @@ const resposta = (corpo, status = 200) =>
   });
 
 // O jogo usa a data local do jogador, então aceita de ontem a amanhã em UTC.
-function diaValido(dia) {
+// Para ler a curva (GET), vale também qualquer dia que já passou.
+function diaValido(dia, passados = false) {
   if (typeof dia !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(dia)) return false;
   const t = Date.parse(dia + "T00:00:00Z");
   if (Number.isNaN(t)) return false;
   const hoje = Date.parse(new Date().toISOString().slice(0, 10) + "T00:00:00Z");
+  if (passados && t <= hoje) return true;
   return Math.abs(t - hoje) <= 86400000;
 }
 
@@ -36,7 +41,7 @@ async function curva(db, dia) {
 
 export async function onRequestGet({ request, env }) {
   const dia = new URL(request.url).searchParams.get("dia");
-  if (!diaValido(dia)) return resposta({ erro: "dia inválido" }, 400);
+  if (!diaValido(dia, true)) return resposta({ erro: "dia inválido" }, 400);
   return resposta(await curva(env.DB, dia));
 }
 

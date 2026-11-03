@@ -29,6 +29,8 @@ Como funciona hoje no protótipo:
 - Sons 8-bit gerados no navegador (botão ♪ para desligar).
 - No fim: pontos, profundidade, diário de bordo com cada resposta, e um resultado em emoji para compartilhar.
   O progresso do dia fica salvo no navegador.
+- **Arquivos**: no menu e no fim, a lista dos dias anteriores para jogar (e jogar de novo). Só a 1ª viagem de
+  cada dia conta, e a curva é só de quem jogou no próprio dia. Detalhes e o plano do placar: [`docs/ARQUIVOS.md`](docs/ARQUIVOS.md).
 
 ## Como jogar
 
@@ -79,6 +81,7 @@ scripts/
   casar.py                 protótipo: autocorreção em camadas, com --avaliar
 functions/api/pontuacao.js curva dos viajantes (Cloudflare Pages Function + D1)
 functions/api/respostas.js contagem anônima das respostas do dia (aceitas e recusadas)
+functions/api/arquivo.js   lista dos dias anteriores para a aba ARQUIVOS (só data e temas, 30 por vez)
 banco/schema.sql           tabela do D1 da curva
 jogar.html                 o jogo num arquivo só (gerado, não edite à mão)
 jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
