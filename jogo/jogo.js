@@ -38,7 +38,7 @@ const MODO_TESTE = ALEATORIO || DATA_TESTE !== null;
 // Link do botão "Apoie o criador" no fim do jogo. Enquanto estiver vazio, o botão
 // aparece como "EM BREVE" e não clica. Para ativar, cole o link entre as aspas.
 const LINK_APOIO = "";
-const LINK_JOGO = "https://nichoojogo.com/jogar";
+const LINK_JOGO = "https://nichoojogo.com";
 
 // ---------- texto e autocorreção ----------
 
