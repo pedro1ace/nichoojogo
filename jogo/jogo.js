@@ -392,17 +392,36 @@ function prepararCategoria(cat) {
   return { ...cat, mapa };
 }
 
-function iniciar() {
-  const dados = window.NICHO_DADOS;
-  if (!dados) {
-    $("regras").textContent = "Não achei as perguntas (jogo/dados.js). Rode python3 scripts/pontuar.py.";
-    $("comecar").hidden = true;
-    return;
+async function carregarCategoriasDoDia() {
+  // 1. Tenta carregar do D1 (Cloudflare Pages Function /api/dia), muito mais leve (~150 KB)
+  if (!ALEATORIO && location.protocol !== "file:") {
+    try {
+      const r = await fetch(`/api/dia?dia=${estado.data}`);
+      if (r.ok) {
+        const pacote = await r.json();
+        if (pacote && Array.isArray(pacote.categorias) && pacote.categorias.length >= RODADAS_POR_DIA) {
+          return pacote.categorias.map(prepararCategoria);
+        }
+      }
+    } catch {}
   }
+  // 2. Fallback: se estiver offline, rodando local (file://), em ?aleatorio ou o D1 falhar, usa window.NICHO_DADOS
+  const dados = window.NICHO_DADOS;
+  if (!dados) return null;
   const escolhidas = ALEATORIO
     ? embaralhar(dados.indice, Math.random).slice(0, RODADAS_POR_DIA)
     : categoriasDoDia(dados.indice, estado.data, dados.ordem);
-  estado.categorias = escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
+  return escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
+}
+
+async function iniciar() {
+  const cats = await carregarCategoriasDoDia();
+  if (!cats || !cats.length) {
+    $("regras").textContent = "Não foi possível carregar as perguntas do dia. Verifique sua conexão.";
+    $("comecar").hidden = true;
+    return;
+  }
+  estado.categorias = cats;
 
   // título com as letras soltas, para a onda
   const titulo = $("titulo");

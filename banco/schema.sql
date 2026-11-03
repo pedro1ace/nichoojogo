@@ -26,3 +26,12 @@ CREATE TABLE IF NOT EXISTS recusadas (
   n         INTEGER NOT NULL DEFAULT 0,
   PRIMARY KEY (dia, categoria, texto)
 );
+
+-- Pacote das 7 perguntas de cada dia (functions/api/dia.js).
+-- Guarda o payload JSON enxuto de cada dia (~150 KB compactado) para que o jogador
+-- baixe apenas o dia atual em vez dos 9.7 MB do jogo todo.
+CREATE TABLE IF NOT EXISTS dias (
+  dia        TEXT NOT NULL PRIMARY KEY, -- AAAA-MM-DD
+  payload    TEXT NOT NULL,             -- JSON com as 7 categorias do dia
+  criado_em  TEXT NOT NULL DEFAULT (datetime('now'))
+);
