@@ -1,0 +1,89 @@
+# Descrição da singularidade (a resposta escondida) de cada pergunta.
+# Aparece no cartão do resultado quando o jogador acha a singularidade e na lista de respostas no fim.
+# Formato: categoria | resposta (igual ao "supernova" de dados/pesos/<categoria>.json) | descrição
+# A descrição é algo divertido ou curioso sobre a resposta e começa com letra maiúscula.
+# Toda categoria do jogo precisa de uma: sem ela, scripts/montar_jogo.py e scripts/sincronizar_d1.py param.
+
+aves | Kakapo | Papagaio gordo da Nova Zelândia que não voa, é noturno e faz um "bum" grave para chamar a fêmea.
+rios | Rio Okavango | Rio africano que nunca chega ao mar: some num delta no meio do deserto do Kalahari.
+doces-e-sobremesas | Toucinho do céu | Doce português de amêndoa e gema que, apesar do nome, não leva toucinho nenhum.
+insetos | Mosca-escorpião | Inseto com uma "cauda" curvada que parece ferrão de escorpião, mas é totalmente inofensiva.
+coisas-da-praia | Tatuíra | Bichinho que se enterra na areia molhada quando a onda volta, deixando só um furinho.
+temperos-e-especiarias | Cumaru | A "baunilha da Amazônia": semente perfumada que dá cheiro de baunilha a doces e sorvetes.
+ilhas | Ilha da Queimada Grande | A "Ilha das Cobras" do litoral paulista, tão cheia de jararacas que a visita é proibida.
+pokemon | Wishiwashi | Sozinho é um peixinho fraquíssimo, mas quando chama o cardume vira um Pokémon gigante e assustador.
+dinossauros | Pycnonemosaurus | Um dos maiores predadores já achados no Brasil, desenterrado em Mato Grosso.
+deuses-e-deusas | Sedna | Deusa inuíte do fundo do mar: as focas e as baleias nasceram dos dedos dela.
+instrumentos-musicais | Serrote | Tocado com arco de violino, o serrote faz um som que parece de fantasma.
+super-herois-e-viloes | Garota Esquilo | Heroína da Marvel que, nos quadrinhos, já venceu o Thanos e o Doutor Destino com a ajuda de esquilos.
+partes-do-corpo | Glabela | É o espacinho liso entre as sobrancelhas, logo acima do nariz.
+elementos-quimicos | Oganessônio | O elemento mais pesado já criado: só uns poucos átomos existiram, por menos de um milissegundo.
+coisas-amarelas | Enxofre | Elemento químico em pó amarelo vivo que, quando queima, solta cheiro de ovo podre.
+legumes-e-verduras | Ora-pro-nóbis | Folha de um cacto rica em proteína, chamada em Minas de "carne de pobre".
+brincadeiras | Bilboquê | Brinquedo de uma bola furada presa por um cordão a um bastão: o desafio é encaixar a bola no bastão.
+gigantes-do-spotify | Ivete Sangalo | A rainha do axé começou na Banda Eva e, em 2006, lotou o Maracanã num show que virou DVD.
+jogadores-da-selecao | Friedenreich | O primeiro grande craque do futebol brasileiro: fez o gol do título sul-americano de 1919.
+pedras-preciosas | Alexandrita | Pedra que muda de cor: é verde na luz do dia e fica vermelha na luz de lâmpada.
+palavras-do-termo | ajajá | Ajajá é o colhereiro, uma ave cor-de-rosa com bico em forma de colher. E um salve para a duzzi!
+palavras-astro-e-cosmo | Astrolábio | Os navegadores portugueses mediam a altura das estrelas com ele para saber onde estavam no mar.
+objetos-da-cozinha | Mandolina | Fatiador de lâmina afiadíssima que corta legumes em fatias finíssimas como papel.
+cidades-do-brasil | Chuí | A cidade mais ao sul do Brasil: um lado da avenida principal já é o Uruguai.
+coisas-que-voam | Dente-de-leão | As sementes dessa plantinha voam com paraquedas e podem viajar quilômetros pelo vento.
+queijos | Queijo Marajó | Queijo feito com leite de búfala na Ilha de Marajó, no Pará.
+coisas-com-dentes | Caracol | O caracol tem milhares de dentinhos numa espécie de língua-lixa, a rádula.
+ossos-do-corpo | Atlas | A primeira vértebra da coluna humana. O atlas segura o (seu) mundo!
+corpos-do-sistema-solar | Dáctilo | A primeira lua descoberta em volta de um asteroide (o Ida), vista pela sonda Galileo.
+paises-acima-do-equador | Brasil | Pegadinha: Roraima, o Amapá e pedaços do Amazonas e do Pará ficam acima do Equador.
+turma-da-monica | Cabeleira Negra | A cabelele.. cabelei... cabelela.. cabeleleila negla!
+filmes | Lawrence da Arábia | Um salve para os três fãs no mundo de Lawrence da Arábia! São quase 4 horas de filme e nenhuma mulher fala uma palavra.
+poetas-brasileiros | Pedro Kilkerry | Poeta simbolista baiano, redescoberto décadas depois de morrer pelos poetas concretos.
+frutas | Cabeludinha | Frutinha amarela da Mata Atlântica, coberta de uma penugem fininha.
+peixes | Peixe-bolha | Eleito o animal mais feio do mundo, mas só fica assim fora d'água: lá no fundo do mar tem cara de peixe normal.
+jogadores-de-futebol | Formiga | Única pessoa no futebol (homem ou mulher) a jogar sete Copas do Mundo e sete Olimpíadas.
+desenhos-animados | Os Herculóides | Clássico da Hanna-Barbera de 1967, com o rinoceronte laser Tundro e as gosmas Gloop e Gleep.
+profissoes | Faroleiro | Quem cuidava do farol, deixando a luz acesa a noite toda para guiar os navios.
+comidas-tipicas | Cabeça de galo | Caldo nordestino com farinha e ovo, servido bem quente.
+protecao-do-sol | Lama | Elefantes e porcos rolam na lama para proteger a pele do sol.
+festa-junina | Mané pelado | Bolo de mandioca ralada, típico do Centro-Oeste.
+jogos-de-videogame | Katamari Damacy | Jogo japonês em que você rola uma bola que vai grudando tudo pelo caminho, até ficar do tamanho de uma estrela.
+ritmos-musicais | Siriri | Dança e ritmo de Mato Grosso, tocado com viola de cocho, ganzá e mocho.
+girias-brasileiras | Estrogonoficamente sensível | Quero te parabenizar por ser uma pessoa subestimativamente qualificada, medíocrática, retombante, cabriocárica e inoxidável, que merece respeito tecnológico! Mas, acima de tudo, estrogonoficamente sensível!
+coisas-que-brilham-no-ceu | Vaga-lume | A luz do vaga-lume é fria: quase toda a energia vira luz, quase nada vira calor.
+palavras-em-io | Bugio | O bugio é o macaco do ronco: dá para ouvir o grito dele a quilômetros.
+animais-do-brasil | Tamanduaí | O menor tamanduá do mundo: cabe na palma da mão e vive no alto das árvores.
+esportes-olimpicos | Cabo de guerra | Foi esporte olímpico de verdade, de 1900 a 1920.
+novelas-brasileiras | Bang Bang | Novela-faroeste da Globo, de 2005, tão confusa que trocou de autor no meio do caminho.
+criaturas-do-folclore | Labatut | Monstro do sertão nordestino que mora no fim do mundo: tem um olho só no meio da testa e pés redondos.
+constelacoes | Cabeleira de Berenice | A única constelação com nome de uma pessoa real: a rainha Berenice II, do Egito.
+racas-de-cachorro | Veadeiro pampeano | Raça brasileira dos pampas gaúchos, criada para caçar veados.
+capitais-do-mundo | Ngerulmud | A capital de Palau, uma das menores capitais do mundo, com poucas centenas de moradores.
+times-de-futebol | Íbis | O time pernambucano famoso por ser chamado de "pior time do mundo".
+idiomas | Nheengatu | A "língua geral" da Amazônia, criada a partir do tupi e ainda falada no Rio Negro.
+bebidas | Vaca preta | Sorvete de creme boiando no refrigerante de cola: a espuma sobe e transborda o copo.
+bagagem-do-astronauta | Taco de golfe | Em 1971, o astronauta Alan Shepard levou um taco escondido e deu tacadas de golfe na Lua.
+cores | Azul-prússia | O primeiro pigmento sintético moderno, descoberto por acaso em Berlim por volta de 1706.
+paises | Bósnia e Herzegovina | Tem só uns 20 km de litoral, todos na cidadezinha de Neum.
+material-escolar | Mata-borrão | Papel grosso que chupava o excesso de tinta das canetas-tinteiro, antes das esferográficas.
+coisas-redondas | Hóstia | Pãozinho redondo, branco e fininho que é distribuído na missa.
+coisas-com-casca | Ferida | A casquinha da ferida é o curativo do próprio corpo, feito de sangue seco.
+marcas-de-carro | Romi-Isetta | Considerado o primeiro carro fabricado no Brasil, em 1956, em Santa Bárbara d'Oeste.
+musicos-brasileiros | Itamar Assumpção | O "Nego Dito" da Vanguarda Paulista, que fazia uma música que não cabia em gênero nenhum.
+defesas-dos-animais | Sangue pelos olhos | O lagarto-de-chifres espirra sangue dos olhos para assustar quem quer comê-lo.
+filmes-tom-hanks | Ele Sabe Que Você Está Sozinha | O primeiro filme do Tom Hanks, um terror de 1980 em que ele aparece pouquinho.
+plantas-de-casa | Chifre-de-veado | Uma samambaia que cresce presa no tronco das árvores, sem terra nenhuma.
+coisas-com-camadas | Nicho | O próprio jogo! Óbvia, letrado, raro, espaço profundo... e você chegou na última camada.
+tipos-de-corrida | A Lebre e a Tartaruga | A corrida da fábula de Esopo: a tartaruga ganhou devagar e sempre enquanto a lebre tirava um cochilo.
+motivos-para-gritar | Grito de Ipiranga | Em 7 de setembro de 1822, na beira do riacho Ipiranga, Dom Pedro I gritou "Independência ou morte!".
+motivos-para-rir | 7 a 1 | Alemanha 7 x 1 Brasil, na semifinal da Copa de 2014, no Mineirão. Rir para não chorar.
+porta-da-geladeira | Pinguim de geladeira | Ele morava em cima da geladeira, não na porta, mas a gente aceita: toda casa brasileira tinha um.
+formas-de-matar-inseto | Lupa | O raio de sol concentrado pela lupa: o jeito mais vilão de criança de acabar com uma formiga.
+animais-da-cidade | Jacaré de condomínio | No Rio, jacarés-de-papo-amarelo vivem nas lagoas da Barra da Tijuca, no meio dos prédios.
+cidades-do-mundo | Tombuctu | Cidade do Mali, na beira do Saara, tão distante que virou sinônimo de "fim do mundo".
+montanhas-e-vulcoes | Dedo de Deus | Pico da Serra dos Órgãos, em Teresópolis (RJ), com forma de uma mão apontando o dedo para o céu.
+lagos-e-mares | Mar de Aral | Já foi um dos maiores lagos do mundo, mas quase secou depois que desviaram os rios dele para irrigar plantações.
+astronautas | Eileen Collins | A primeira mulher a pilotar e, depois, a comandar um ônibus espacial da NASA.
+series-de-tv | Castelo Rá-Tim-Bum | O Nino tem 300 anos e ainda é aprendiz de feiticeiro. Estreou na TV Cultura em 1994.
+estrelas | Albireo | No telescópio ela vira duas: uma dourada e uma azul, lado a lado.
+modelos-de-carro | BR-800 | Da Gurgel, foi o primeiro carro projetado e fabricado só com tecnologia brasileira, em 1988.
+missoes-espaciais | Missão Centenário | Levou Marcos Pontes, o primeiro astronauta brasileiro, ao espaço em 2006. O nome lembra os 100 anos do 14-bis.
+exoplanetas | TOI-1452 b | Pode ser um "mundo-oceano": um planeta um pouco maior que a Terra, coberto por uma camada funda de água.

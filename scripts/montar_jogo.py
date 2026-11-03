@@ -11,7 +11,11 @@ Gera:
 """
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import singularidades  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 PESOS = RAIZ / "dados" / "pesos"
@@ -26,7 +30,10 @@ CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos", "acima", "espertalhao", "fr
 
 
 def enxugar(cat: dict) -> dict:
-    return {**cat, "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA if k in r} for r in cat["respostas"]]}
+    # "curiosidade": a descrição da singularidade (dados/singularidades.txt), que o jogo mostra
+    # no cartão do resultado e na lista de respostas do fim
+    return {**cat, "curiosidade": singularidades.descricao(cat["id"]),
+            "respostas": [{k: r[k] for k in CAMPOS_RESPOSTA if k in r} for r in cat["respostas"]]}
 
 
 ORDEM = RAIZ / "dados" / "ordem.txt"
@@ -132,8 +139,9 @@ def escrever_dias(indice: list[dict], fila: list[str]) -> None:
 
 def gerar_dados_js() -> str:
     indice = json.loads((PESOS / "indice.json").read_text(encoding="utf-8"))
-    categorias = {c["id"]: enxugar(json.loads((PESOS / f"{c['id']}.json").read_text(encoding="utf-8")))
-                  for c in indice}
+    brutas = {c["id"]: json.loads((PESOS / f"{c['id']}.json").read_text(encoding="utf-8")) for c in indice}
+    singularidades.conferir(brutas)  # toda singularidade precisa de descrição
+    categorias = {cid: enxugar(cat) for cid, cat in brutas.items()}
     dados = json.dumps({"indice": indice, "ordem": ordem_dos_dias(indice), "categorias": categorias}, ensure_ascii=False, separators=(",", ":"))
     return "// Gerado por scripts/montar_jogo.py. Não edite à mão.\nwindow.NICHO_DADOS = " + dados + ";\n"
 
