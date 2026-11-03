@@ -352,14 +352,19 @@ const ICONE_NORMAL = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYA
 const ICONE_OURO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAmklEQVR4nGNgGAWjYBQMMGBEF/j/cdl/rAr5oxipIY8OmIh1Ka0A3FW4XE51C9FCYvCEwKdDBnQJARjgs7vAyMAwCEKAhV4+90i6wMDAwMCwY54BiviAhwAjveMeHQx4CLAMlMWDJhfAy4EVBTx0SQsRE74M0pIQPQTQXUor+cETAv9/P0BxISOrAooPaCU/4CEwCkbBKBhwAAD6hUIFtihZUgAAAABJRU5ErkJggg==";
 
 function atualizarIconeAba(dourado = false) {
-  let link = document.querySelector("link[rel*='icon']");
-  if (!link) {
-    link = document.createElement("link");
+  // troca todos os ícones da aba (o navegador escolhe qualquer um deles)
+  let links = document.querySelectorAll("link[rel~='icon']");
+  if (!links.length) {
+    const link = document.createElement("link");
     link.rel = "icon";
     document.head.appendChild(link);
+    links = [link];
   }
-  link.type = "image/png";
-  link.href = dourado ? ICONE_OURO : ICONE_NORMAL;
+  for (const link of links) {
+    link.type = "image/png";
+    link.removeAttribute("sizes");
+    link.href = dourado ? ICONE_OURO : ICONE_NORMAL;
+  }
 }
 
 const estado = {
