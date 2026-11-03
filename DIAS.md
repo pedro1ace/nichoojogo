@@ -85,7 +85,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Palavras terminadas em -io | Cite uma palavra que termina em "-io" | 4158 |
 | 5 | Animais do Brasil | Cite um animal da fauna brasileira | 3515 |
 | 6 | Esportes olímpicos | Cite um esporte disputado nas Olimpíadas | 133 |
-| 7 | Novelas brasileiras | Cite uma novela brasileira | 677 |
+| 7 | Novelas brasileiras | Cite uma novela brasileira | 678 |
 
 ## Dia 8 · qua 04/11/2026
 

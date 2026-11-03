@@ -1,0 +1,54 @@
+name: 🤖 Plantão Diário Automático
+
+on:
+  schedule:
+    # Roda todos os dias às 23:00 UTC (20:00 Horário de Brasília)
+    - cron: '0 23 * * *'
+  workflow_dispatch: # Permite disparar manualmente com 1 clique no GitHub Actions
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  plantao:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Clonar base léxica pt-br se necessário
+        run: |
+          if [ ! -d "dados/brutos/pt-br" ]; then
+            git clone --depth 1 https://github.com/fserb/pt-br dados/brutos/pt-br
+          fi
+
+      - name: Executar Plantão Diário
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          python -X utf8 scripts/plantao_automatico.py
+
+      - name: Obter data de hoje
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Criar Pull Request se houver alterações
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(plantao): revisao diaria e recusadas de ${{ steps.date.outputs.date }}"
+          title: "🤖 Plantão Diário: Revisão e Recusadas de ${{ steps.date.outputs.date }}"
+          branch: "plantao/${{ steps.date.outputs.date }}"
+          delete-branch: true
+          body-path: PLANTAO_RESUMO.md
+          labels: |
+            plantão
+            automatizado
