@@ -518,6 +518,7 @@ async function iniciar() {
     $("pontos").textContent = numero(estado.total);
   }
   montarQuadrados();
+  mostrarMelhor();
   if (estado.rodada >= estado.categorias.length) {
     $("inicio").hidden = true;
     $("hud").hidden = false;
@@ -539,7 +540,32 @@ function mostrarInicioDoArquivo() {
   aviso.hidden = false;
   aviso.querySelector(".texto").textContent = estado.replay
     ? `Você já jogou este dia (${numero(estado.oficial.total)} pontos). Só a 1ª viagem conta: esta é só por diversão.`
-    : "Só a 1ª viagem de cada dia conta. Fora do dia, ela fica guardada para você, mas não entra na curva dos viajantes nem no placar.";
+    : "Só a 1ª viagem de cada dia conta, e ela entra na curva dos viajantes. O placar é só de quem joga no próprio dia.";
+}
+
+// A melhor pontuação deste navegador: só a 1ª viagem de cada dia conta (as jogadas extras ficam fora).
+function melhorPontuacao() {
+  let melhor = null;
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (!k || !/^nicho:v7:\d{4}-\d{2}-\d{2}$/.test(k)) continue;
+      const v = lerRegistro(k);
+      if (!completa(v) || typeof v.total !== "number") continue;
+      const dia = k.slice("nicho:v7:".length);
+      if (!melhor || v.total > melhor.total) melhor = { total: v.total, dia };
+    }
+  } catch {}
+  return melhor;
+}
+function mostrarMelhor() {
+  const m = MODO_TESTE ? null : melhorPontuacao();
+  for (const id of ["melhor-inicio", "melhor-fim"]) {
+    const el = $(id);
+    if (!el) continue;
+    el.hidden = !m;
+    if (m) el.innerHTML = `<span class="melhor-rotulo">★ SEU RECORDE</span> <b>${numero(m.total)}</b> <span class="melhor-dia">DIA #${numeroDoDia(m.dia)}</span>`;
+  }
 }
 
 // Endereço de um dia do arquivo, na mesma página (funciona em /jogar, /jogo/ e no arquivo baixado).
@@ -953,6 +979,7 @@ function mostrarFim(comSom) {
   $("enviar").hidden = !navigator.share;
   if (ARQUIVO) mostrarFimDoArquivo();
   else contarAteAmanha();
+  mostrarMelhor();
 }
 
 // No fim de um dia do arquivo: deixa claro qual viagem conta e oferece jogar de novo
@@ -966,7 +993,7 @@ function mostrarFimDoArquivo() {
     ? `JOGADA EXTRA · NÃO CONTA. Sua 1ª viagem neste dia: ${numero(oficial.total)} pontos. Essa é a que vale.`
     : foiNoDia(oficial)
       ? "Sua 1ª viagem, feita no próprio dia. É a que conta."
-      : "Sua 1ª viagem deste dia, feita pelo arquivo. É a que conta para você, mas fora do dia não entra na curva nem no placar.";
+      : "Sua 1ª viagem deste dia, feita pelo arquivo. É a que conta e entrou na curva dos viajantes. O placar é só de quem jogou no próprio dia.";
   if (estado.replay) history.replaceState(null, "", urlDoArquivo(estado.data));
   const el = $("amanha");
   el.innerHTML = "";
@@ -1069,8 +1096,9 @@ function mostrarCurva() {
   try {
     jaEnviou = !!localStorage.getItem(chave);
   } catch {}
-  // só a 1ª viagem, feita no próprio dia, entra na curva; pelo arquivo, a curva só é lida
-  const mandar = !MODO_TESTE && !ARQUIVO && !jaEnviou;
+  // só a 1ª viagem de cada dia entra na curva, também quando é feita pelo arquivo;
+  // a jogada extra só lê a curva
+  const mandar = !MODO_TESTE && !estado.replay && !jaEnviou;
   const pedido = mandar
     ? fetch(API_PONTUACAO, {
         method: "POST",
@@ -1210,8 +1238,8 @@ function desenharCurva(c, pontos) {
   const pct = Math.round(percentilNaCurva(c, pontos) * 100);
   $("curva-texto").textContent = MODO_TESTE
     ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos viajantes de hoje.`
-    : ARQUIVO && (estado.replay || !foiNoDia(lerRegistro(chaveOficial(estado.data))))
-      ? `Fora do dia, esta viagem não entrou na curva, mas ficaria acima de ${pct}% dos viajantes daquele dia.`
+    : estado.replay
+      ? `Jogada extra: não entrou na curva, mas ficaria acima de ${pct}% dos viajantes daquele dia.`
       : ARQUIVO
         ? `Você foi mais fundo que ${pct}% dos viajantes daquele dia.`
         : pct >= 99
@@ -1615,7 +1643,8 @@ function montarListaArquivos() {
     }
     topo.append(nome, situacao);
     li.append(topo);
-    if (d.titulos && d.titulos.length) {
+    // os temas só aparecem depois que você termina o dia: para quem não jogou, são surpresa
+    if (completa(oficial) && d.titulos && d.titulos.length) {
       const temas = document.createElement("p");
       temas.className = "dia-temas";
       temas.textContent = d.titulos.join(" · ");

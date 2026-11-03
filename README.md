@@ -30,7 +30,7 @@ Como funciona hoje no protótipo:
 - No fim: pontos, profundidade, diário de bordo com cada resposta, e um resultado em emoji para compartilhar.
   O progresso do dia fica salvo no navegador.
 - **Arquivos**: no menu e no fim, a lista dos dias anteriores para jogar (e jogar de novo). Só a 1ª viagem de
-  cada dia conta, e a curva é só de quem jogou no próprio dia. Detalhes e o plano do placar: [`docs/ARQUIVOS.md`](docs/ARQUIVOS.md).
+  cada dia conta (e entra na curva); o placar futuro é só de quem jogou no próprio dia. Detalhes e o plano do placar: [`docs/ARQUIVOS.md`](docs/ARQUIVOS.md).
 
 ## Como jogar
 

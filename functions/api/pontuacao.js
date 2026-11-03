@@ -4,10 +4,11 @@
 // em cada faixa de 10 pontos. Não guarda IP, nome, cookie nem as respostas.
 //
 //   GET  /api/pontuacao?dia=2026-10-28        devolve a curva do dia (também de dias antigos, para os ARQUIVOS)
-//   POST /api/pontuacao {dia, pontos}          soma uma viagem e devolve a curva (só no próprio dia)
+//   POST /api/pontuacao {dia, pontos}          soma uma viagem e devolve a curva
 //
-// A curva é só de quem jogou NO DIA, uma vez por navegador (a 1ª viagem). Viagens pelos
-// ARQUIVOS e as jogadas de novo não são enviadas, e o POST recusa dias que já passaram.
+// Entra na curva a 1ª viagem de cada navegador em cada dia, também quando é feita depois,
+// pelos ARQUIVOS. As jogadas extras ("jogar novamente") não são enviadas.
+// O placar com conta (futuro) é outra coisa: só conta quem jogou no próprio dia.
 //
 // Precisa de um banco D1 ligado ao projeto com o nome DB (veja banco/schema.sql).
 
@@ -21,14 +22,14 @@ const resposta = (corpo, status = 200) =>
     headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
   });
 
-// O jogo usa a data local do jogador, então aceita de ontem a amanhã em UTC.
-// Para ler a curva (GET), vale também qualquer dia que já passou.
+// O jogo usa a data local do jogador, então aceita até amanhã em UTC; dias que já
+// passaram (arquivos) valem desde o lançamento.
 function diaValido(dia, passados = false) {
   if (typeof dia !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(dia)) return false;
   const t = Date.parse(dia + "T00:00:00Z");
   if (Number.isNaN(t)) return false;
   const hoje = Date.parse(new Date().toISOString().slice(0, 10) + "T00:00:00Z");
-  if (passados && t <= hoje) return true;
+  if (passados && t <= hoje) return t >= Date.parse("2026-10-28T00:00:00Z");
   return Math.abs(t - hoje) <= 86400000;
 }
 
@@ -53,7 +54,7 @@ export async function onRequestPost({ request, env }) {
     return resposta({ erro: "corpo inválido" }, 400);
   }
   const { dia, pontos } = corpo || {};
-  if (!diaValido(dia)) return resposta({ erro: "dia inválido" }, 400);
+  if (!diaValido(dia, true)) return resposta({ erro: "dia inválido" }, 400);
   if (!Number.isInteger(pontos) || pontos < 0 || pontos > MAXIMO) return resposta({ erro: "pontos inválidos" }, 400);
   await env.DB.prepare(
     "INSERT INTO histograma (dia, faixa, n) VALUES (?, ?, 1) ON CONFLICT (dia, faixa) DO UPDATE SET n = n + 1",

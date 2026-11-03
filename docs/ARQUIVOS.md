@@ -2,8 +2,9 @@
 
 ## O que o jogador vê
 
-- Botão **ARQUIVOS** no menu inicial e no relatório do fim. Abre a lista dos dias que já passaram
-  (o dia de hoje nunca aparece), com os 7 temas de cada um e a sua situação:
+- Botão **ARQUIVOS** (ícone de pasta em pixel art) no menu inicial e no relatório do fim. Abre a lista
+  dos dias que já passaram (o dia de hoje nunca aparece), com a sua situação em cada um. Os temas só
+  aparecem depois que você termina o dia; para quem não jogou, são surpresa:
   `NÃO JOGADO`, `PELA METADE` ou `312 PTS · NO DIA` / `312 PTS · PELO ARQUIVO`.
 - **JOGAR** abre o dia em `/jogar?arquivo=2026-11-01`. Se você nunca jogou aquele dia, essa é a sua
   1ª viagem dele.
@@ -11,14 +12,19 @@
   (`?arquivo=2026-11-01&novamente`). A jogada extra mostra em amarelo que não conta e qual é a
   pontuação que vale.
 - O dia de hoje não tem "jogar novamente".
+- **★ SEU RECORDE** no menu e no fim: a maior pontuação entre as suas 1ªs viagens (jogadas extras
+  ficam fora).
 
 ## As regras
 
 1. **Só a 1ª viagem de cada dia conta.** Ela nunca é sobrescrita. Jogar de novo é só por diversão.
-2. **Curva dos viajantes e placar são só de quem jogou no próprio dia.** Viagens pelo arquivo e jogadas
-   extras não são enviadas para `/api/pontuacao` nem para `/api/respostas`. O servidor também recusa
-   POST de dia que já passou.
-3. Uma viagem pelo arquivo **não emenda a sequência** de dias seguidos (nem libera skin).
+2. **Curva dos viajantes:** todo dia mostra a curva. A 1ª viagem de um dia ainda não jogado entra
+   nela, mesmo feita depois, pelo arquivo. Jogadas extras não são enviadas.
+3. **Placar (futuro): só quem jogou no próprio dia.** Quem jogou pelo arquivo entra na curva, mas não
+   no placar.
+4. A contagem de respostas (`/api/respostas`) continua só com quem joga no dia, para não misturar
+   a fama de dias diferentes.
+5. Uma viagem pelo arquivo **não emenda a sequência** de dias seguidos (nem libera skin).
 
 ## Por que não pesa com o tempo
 

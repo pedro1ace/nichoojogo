@@ -600,3 +600,20 @@ pre {
 .arquivos-status { margin: 8px 0 0; font-family: var(--mono); font-size: 12px; color: var(--suave); text-align: center; }
 .arquivos-status:empty { display: none; }
 .mais-arquivos { margin-top: 8px; padding: 10px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; font-size: 12px; letter-spacing: 0.14em; }
+
+/* ícone da pasta em pixel art (botões e título dos arquivos) */
+.icone-arquivos { width: 18px; height: 16px; flex: none; image-rendering: pixelated; vertical-align: -3px; filter: drop-shadow(0 0 4px rgba(255, 184, 77, 0.45)); }
+#abrir-arquivos { display: inline-flex; align-items: center; gap: 7px; }
+#abrir-arquivos:hover .icone-arquivos { animation: pasta-pular 0.5s steps(2) infinite; }
+.abrir-arquivos-fim { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.abrir-arquivos-fim .icone-arquivos { width: 27px; height: 24px; }
+.titulo-arquivos { display: inline-flex; align-items: center; gap: 8px; }
+@keyframes pasta-pular { 50% { transform: translateY(-2px); } }
+@media (prefers-reduced-motion: reduce) { #abrir-arquivos:hover .icone-arquivos { animation: none; } }
+
+/* recorde: a melhor 1ª viagem deste navegador */
+.melhor { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; color: #dfe6ff; text-shadow: 0 2px 0 rgba(0, 0, 30, 0.55); }
+.melhor b { color: var(--amarelo); font-size: 15px; letter-spacing: 0.06em; text-shadow: 0 0 8px rgba(255, 210, 63, 0.6); }
+.melhor .melhor-rotulo { color: var(--amarelo); }
+.melhor .melhor-dia { color: var(--suave); }
+.melhor-fim { margin: 10px 0 0; }
