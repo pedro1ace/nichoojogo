@@ -125,9 +125,10 @@ Exemplo testado em Frutas: `Kiwi 15` (15 pontos) virou `Kiwi 2` (46 pontos), e `
 Detalhes que ajudam:
 
 - Use **ponto** para decimal (`0.5`). Vírgula também funciona, mas ponto é mais seguro.
-- Uma palavra que **não está** na simulação é sempre rara. Entre as raras, quem é mais conhecido (pelos sinais antigos:
+- Uma palavra que **não está** na simulação é quase sempre rara. Entre as raras, quem é mais conhecido (pelos sinais antigos:
   visitas na Wikipédia, frequência em textos) fica perto de 60, e o mais obscuro perto de 90. Com `0.5`, ela fica
-  no começo das raras (perto de 60).
+  no começo das raras (perto de 60). A exceção é a resposta óbvia que a simulação esqueceu (Ouvido em Partes do
+  corpo): se a estimativa antiga diz que bastante gente a daria, ela é resgatada (passo 4b em 2d).
 - O número tem que ser de uma resposta da lista. Se o jogador escreveria diferente do nome da lista, use
   `O que ele digita = Nome na lista 3` (ex.: `Batata inglesa = Batata 3`).
 - **Não use** a coluna `peso` de `dados/ajustes/` para isso: nas categorias com simulação ela é ignorada. Ela só vale
@@ -223,10 +224,19 @@ Confira o que ele fez com `git diff dados/categorias/`. Às vezes um apelido err
    linhas `!` são ignoradas. Linhas que caem na mesma resposta somam.
 2. **Cauda mínima**: se a soma da simulação passar de 960, todas as contagens encolhem na mesma proporção até 960.
    Os 40 (ou mais) que sobram são a **cauda**: gente que deu respostas que só uma pessoa daria.
-3. **Criativa** (`~`): a contagem dela vira no máximo 0,5 (sempre rara).
+3. **Criativa** (`~`): se a soma dela fica abaixo de 4 em 1000, a contagem vira no máximo 0,5 (sempre rara).
+   Com 4 ou mais, ela deixa de ser criativa e segue a régua como qualquer outra: muita gente pensa nela, então
+   não é sacada (Pikachu, com 30, e Bob Esponja, com 25, em Coisas amarelas).
 4. **Quem ficou fora da simulação** divide a cauda, em ordem de fama antiga (visitas na Wikipédia, frequência em
    textos, estimativa velha), cada um com `cauda ÷ H ÷ (posição + 10)`, onde `H` é a soma de `1/(i+10)` para todas
-   as posições. Ninguém da cauda passa de 0,9 em 1000, então todos são raros.
+   as posições. Ninguém da cauda passa de 0,9 em 1000, então todos são raros, menos os resgatados do 4b.
+4b. **Resgate da cauda** (`piso_antigo` em `scripts/fama.py`): a simulação esquece respostas óbvias. Para quem
+   ficou fora dela, a estimativa antiga do LLM (`dados/sinais/llm/<cat>.json`) vira um piso:
+   `estimativa × razão × 0,5`, até 15 em 1000. A `razão` é a mediana de "simulação ÷ estimativa antiga" nas
+   respostas que estão nas duas (corrige a estimativa que infla numa categoria e encolhe em outra), e o 0,5 é
+   porque a simulação não a citou. Só entra quem 80% ou mais reconhecem, quem não está num patamar repetido
+   (o mesmo valor em 30 ou mais respostas é chute padrão) e quem chega a 1 em 1000. Se os pisos somarem mais que
+   a cauda, todos encolhem até caber. Exemplo: Ouvido em Partes do corpo tinha 61 e foi para 46.
 5. **Régua fixa** (em `scripts/pontuar.py`, `REGUA_FIXA`), com `L` = quantos em 1000:
 
    | Faixa | L | Pontos |
@@ -240,7 +250,7 @@ Confira o que ele fez com `git diff dados/categorias/`. Às vezes um apelido err
    `pontos = p_de + (p_até − p_de) × (ln(L) − ln(de)) ÷ (ln(até) − ln(de))`.
    Exemplo: Jabuticaba com L = 8 está entre 15 e 4: `18 + 16 × (ln 8 − ln 15) ÷ (ln 4 − ln 15) ≈ 26 pontos`.
    Nas raras, a primeira (a mais conhecida) vale 60, a última 90, e as do meio sobem por igual.
-6. **Ajustes finais**: criativa vale no mínimo 70; espertalhão vale 15 fixo; a singularidade vale 50 (o jogo dobra
+6. **Ajustes finais**: criativa (abaixo de 4 em 1000) vale no mínimo 70; espertalhão vale 15 fixo; a singularidade vale 50 (o jogo dobra
    para 100).
 7. **"Mais nichada que X% dos jogadores"** (diário de bordo): a parte dos 1000 que daria uma resposta mais óbvia que
    esta.
@@ -251,7 +261,8 @@ Os números moram no código, se um dia quiser mudar a régua:
 |---|---|
 | Faixas e pontos (15/4/1 em 1000, 8–15, 18–34, 35–58, 60–90) | `REGUA_FIXA` e `RARA` em `scripts/pontuar.py` |
 | Criativa 70, espertalhão 15, singularidade 50 | `PONTOS_CRIATIVA`, `PONTOS_ESPERTALHAO`, `SUPERNOVA_PONTOS` em `scripts/pontuar.py` |
-| Cauda mínima de 40, teto da cauda 0,9, teto da criativa 0,5 | `MIN_CAUDA`, `TETO_CAUDA`, `TETO_CRIATIVA` em `scripts/fama.py` |
+| Cauda mínima de 40, teto da cauda 0,9, teto da criativa 0,5, criativa só abaixo de 4 | `MIN_CAUDA`, `TETO_CAUDA`, `TETO_CRIATIVA`, `LIMITE_CRIATIVA` em `scripts/fama.py` |
+| Resgate da cauda (metade, razão de 0,25 a 2, teto 15, 80% reconhecem, patamar de 30) | `DESCONTO_ANTIGA`, `RAZAO_ANTIGA`, `TETO_ANTIGA`, `CONHECEM_MINIMO`, `PATAMAR` em `scripts/fama.py` |
 | Cortes de cor no jogo (18, 35, 60) | `FAIXAS` em `jogo/cena.js` |
 
 Se mudar algum desses, rode `python3 scripts/fama.py` (sem categoria) para refazer todas.
