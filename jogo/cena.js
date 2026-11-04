@@ -1123,19 +1123,36 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Horizonte de eventos: chegando perto de Sagitário A*, o cenário vai virando
   // laranja e preto (só o fundo; o tardígrado, as caixas, as linhas e as raridades
   // vêm depois e mantêm as cores). Uma passada por tela, por quadro.
-  const temFiltro = "filter" in ctx;
-  const FILTRO_HORIZONTE = "grayscale(1) sepia(1) saturate(4.5) hue-rotate(-26deg) contrast(1.2) brightness(0.9)";
+  //
+  // Antes isto usava ctx.filter (grayscale + sepia + saturate...), que no celular custava
+  // ~50 ms por quadro na tela grande (largura x altura x devicePixelRatio²): o jogo caía
+  // para 15 quadros por segundo perto do buraco negro. Agora é a mistura "color" do canvas
+  // (tom e saturação do laranja, claridade do cenário), que a placa de vídeo faz de graça
+  // e dá praticamente a mesma cor. Também funciona no Safari, que não tem ctx.filter.
+  const COR_HORIZONTE = "rgb(240, 135, 20)";
+  const tinta = document.createElement("canvas");
+  const tintaCtx = tinta.getContext("2d");
+  function tingirCamada(c, k) {
+    const W = c.canvas.width, H = c.canvas.height;
+    if (tinta.width !== W || tinta.height !== H) { tinta.width = W; tinta.height = H; }
+    const o = tintaCtx;
+    o.globalAlpha = 1;
+    o.globalCompositeOperation = "copy";
+    o.drawImage(c.canvas, 0, 0);
+    o.globalCompositeOperation = "color";
+    o.fillStyle = COR_HORIZONTE;
+    o.fillRect(0, 0, W, H);
+    c.save();
+    c.setTransform(1, 0, 0, 1, 0, 0);
+    c.globalAlpha = k;
+    // a mistura pinta também o que era transparente; o "source-atop" só cobre o que já tinha desenho
+    c.globalCompositeOperation = "source-atop";
+    c.drawImage(tinta, 0, 0);
+    c.restore();
+  }
   function tingirHorizonte(k) {
-    if (!temFiltro) return;
-    for (const c of [ctx, tx]) {
-      c.save();
-      c.setTransform(1, 0, 0, 1, 0, 0);
-      c.filter = FILTRO_HORIZONTE;
-      c.globalAlpha = k;
-      c.globalCompositeOperation = k >= 0.999 ? "copy" : "source-atop";
-      c.drawImage(c.canvas, 0, 0);
-      c.restore();
-    }
+    tingirCamada(ctx, k);
+    tingirCamada(tx, k);
   }
   const forcaHorizonte = () => Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 900)) / 900));
 

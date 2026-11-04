@@ -38,8 +38,11 @@ Como funciona hoje no protótipo:
 
 ## Como jogar
 
-Baixe o arquivo [`jogar.html`](jogar.html) e abra com dois cliques. Ele tem o jogo inteiro e funciona sem
-instalar nada, nem internet (as fontes pixeladas vão dentro do arquivo).
+Baixe o arquivo [`jogar-completo.html`](jogar-completo.html) e abra com dois cliques. Ele tem o jogo inteiro
+e funciona sem instalar nada, nem internet (as perguntas e as fontes pixeladas vão dentro do arquivo).
+
+O `jogar.html` é a versão do site: leve (~0,4 MB), sem as perguntas dentro. Ele pede só o dia de hoje
+a `/api/dia` e, se a API falhar, baixa `jogo/dados.js` na hora.
 
 Com o projeto todo baixado, abrir `index.html` ou `jogo/index.html` com dois cliques também funciona.
 
@@ -87,7 +90,8 @@ functions/api/pontuacao.js curva dos viajantes (Cloudflare Pages Function + D1)
 functions/api/respostas.js contagem anônima das respostas do dia (aceitas e recusadas)
 functions/api/arquivo.js   lista dos dias anteriores para a aba ARQUIVOS (só data e temas, 30 por vez)
 banco/schema.sql           tabela do D1 da curva
-jogar.html                 o jogo num arquivo só (gerado, não edite à mão)
+jogar.html                 o jogo do site num arquivo só, sem as perguntas (gerado, não edite à mão)
+jogar-completo.html        o mesmo com todas as perguntas dentro, para abrir sem internet (gerado)
 jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
   dados.js                 perguntas e pesos (gerado pelo pontuar.py)
   cena.js                  cena em pixel art: fundo, Terra, planetas, foguete, mascote, textos
@@ -278,6 +282,11 @@ Configuração no Cloudflare (uma vez só):
 3. No projeto do Pages: **Settings → Bindings → Add → D1 database**, nome da variável `DB`, banco `nicho`
    (em Production e, se quiser testar, em Preview).
 4. Faça um novo deploy (ou reenvie o último) para a função pegar o banco.
+
+Carga automática dos dias: a action [`carga-banco.yml`](.github/workflows/carga-banco.yml) sobe
+`banco/carga_dias.sql` para o D1 sempre que ele muda no `main`. Ela precisa de dois segredos do repositório
+(**Settings → Secrets and variables → Actions**): `CLOUDFLARE_API_TOKEN` (token com permissão
+**Account → D1 → Edit**) e `CLOUDFLARE_ACCOUNT_ID`.
 
 Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local`, depois crie a tabela com
 `banco/schema.sql` no banco local.

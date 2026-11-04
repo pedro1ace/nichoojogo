@@ -2,7 +2,7 @@
 // Cada pergunta pede uma palavra de um tema; o jogador tem 25 segundos.
 // Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
 // Acertar a "singularidade" (a resposta secreta da pergunta; no código, "supernova") dobra os pontos.
-// Vem de outros arquivos: window.NICHO_DADOS (dados.js), Som (som.js),
+// Vem de outros arquivos: window.NICHO_DADOS (dados.js, baixado só se a API falhar), Som (som.js),
 // criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
 
 const RODADAS_POR_DIA = 7;
@@ -111,26 +111,36 @@ function compactar(texto) {
 
 // Distância de edição com troca de letras vizinhas: quantas letras faltam,
 // sobram, estão erradas ou trocadas de lugar ("eroupa" -> "europa" = 1).
-function distancia(a, b) {
+// Com "teto", para de contar assim que passa dele (devolve teto + 1): a busca
+// só quer saber das palavras bem parecidas, e isso deixa a digitação leve.
+function distancia(a, b, teto = Infinity) {
   const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
   for (let j = 1; j <= b.length; j++) d[0][j] = j;
   for (let i = 1; i <= a.length; i++) {
+    let menorDaLinha = Infinity;
     for (let j = 1; j <= b.length; j++) {
       const custo = a[i - 1] === b[j - 1] ? 0 : 1;
       d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + custo);
       if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
         d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
       }
+      if (d[i][j] < menorDaLinha) menorDaLinha = d[i][j];
     }
+    // a troca de vizinhas olha duas linhas para trás, então só desiste com duas linhas acima do teto
+    if (menorDaLinha > teto && i > 1 && Math.min(...d[i - 1].slice(1)) > teto) return teto + 1;
   }
   return d[a.length][b.length];
 }
 
-// Palavras curtas precisam vir quase certas; longas aceitam mais erros.
+// Quantos erros de digitação a correção aceita, pelo tamanho do que foi digitado.
+// Bem rígido de propósito: corrigir para uma palavra que o jogador não quis dizer
+// (às vezes uma mais nichada!) é pior do que pedir para ele digitar de novo.
+// Até 3 letras: só a palavra exata. 4 a 7: 1 erro. 8 a 11: 2 erros. 12 ou mais: 3.
+// (Com 4 letras, o erro tem que ser letra errada ou trocada: "gatp" -> "gato".)
 function tolerancia(tamanho) {
   if (tamanho <= 3) return 0;
-  if (tamanho <= 5) return 1;
-  if (tamanho <= 9) return 2;
+  if (tamanho <= 7) return 1;
+  if (tamanho <= 11) return 2;
   return 3;
 }
 
@@ -211,8 +221,30 @@ function chavesSoltas(texto, enfeites) {
   return chaves;
 }
 
+// Quem erra a digitação quase nunca erra a 1ª letra. Se a 1ª letra muda, é outra
+// palavra ("Pateta" não é "Cametá"). Só aceita a troca das duas primeiras ("rbasil").
+function mesmoComeco(a, b) {
+  return a[0] === b[0] || (a[0] === b[1] && a[1] === b[0]);
+}
+
+// Em respostas de várias palavras, o erro tem que estar espalhado como erro de digitação,
+// e não concentrado numa palavra que virou outra ("Água Santa" não é "Água benta",
+// "Mousse de limão" não é "Mousse de milho"). Cada palavra aceita no máximo os erros do
+// seu próprio tamanho (pelo menos 1). Se o número de palavras mudou (espaço esquecido),
+// vale só a regra geral.
+function palavrasBatem(texto, nome) {
+  const separar = (t) => normalizar(t).replace(/^(o|a|os|as|um|uma) /, "").split(" ");
+  const a = separar(texto), b = separar(nome);
+  if (a.length < 2 || a.length !== b.length) return true;
+  return a.every((p, i) => distancia(p, b[i]) <= Math.max(1, tolerancia(p.length)));
+}
+
 // Procura a resposta. Devolve { resposta, nome, exato } ou null.
 // "nome" é a grafia que casou (pode ser um apelido), para mostrar ao jogador.
+// A correção só acontece quando é óbvia: se duas respostas diferentes ficam igualmente
+// perto do que foi digitado ("galso": Galo ou Ganso?), o jogo não escolhe por ele.
+// Se a mais perto precisou de 2 erros ou mais, também não corrige quando outra resposta
+// diferente está só 1 erro mais longe: a dúvida é grande demais para chutar.
 function buscar(cat, texto) {
   const alvo = compactar(texto);
   if (!alvo) return null;
@@ -225,17 +257,28 @@ function buscar(cat, texto) {
     }
   }
   const limite = tolerancia(alvo.length);
+  if (!limite) return null;
   let melhor = null;
   let menor = Infinity;
+  let segunda = Infinity; // distância da melhor resposta *diferente* da escolhida
   for (const [chave, item] of cat.mapa) {
-    if (Math.abs(chave.length - alvo.length) > limite) continue;
-    const d = distancia(alvo, chave);
+    if (Math.abs(chave.length - alvo.length) > (alvo.length <= 4 ? 0 : limite)) continue;
+    if (!mesmoComeco(alvo, chave)) continue;
+    const d = distancia(alvo, chave, limite + 1);
+    if (d > limite + 1) continue;
     if (d < menor) {
+      if (melhor && melhor.resposta !== item.resposta) segunda = menor;
       menor = d;
       melhor = item;
+    } else if (item.resposta !== melhor.resposta && d < segunda) {
+      segunda = d;
     }
   }
-  return menor <= limite ? { ...melhor, exato: false } : null;
+  if (menor > limite) return null;
+  if (segunda === menor) return null; // empate entre respostas diferentes
+  if (menor >= 2 && segunda === menor + 1) return null;
+  if (!palavrasBatem(texto, melhor.nome)) return null;
+  return { ...melhor, exato: false };
 }
 
 // ---------- dia, sorteio e progresso ----------
@@ -582,6 +625,28 @@ function prepararCategoria(cat) {
   return { ...cat, mapa, soltas: SEM_FORMAS.has(cat.id) ? null : soltas };
 }
 
+// O pacote com todas as perguntas de todos os dias (jogo/dados.js, ~9 MB) não vai mais dentro da
+// página: ela ficava com 9,7 MB e o celular travava lendo tudo antes de mostrar o jogo. Agora a
+// página só pede o dia de hoje a /api/dia (~100 KB) e só baixa o pacote se a API falhar
+// (sem internet, aberto do computador, ?aleatorio ou dia que ainda não está no banco).
+// No jogar-completo.html (o arquivo único para abrir sem internet) o pacote já vem dentro.
+let promessaDadosLocais = null;
+function carregarDadosLocais() {
+  if (window.NICHO_DADOS) return Promise.resolve(window.NICHO_DADOS);
+  if (!promessaDadosLocais) {
+    promessaDadosLocais = new Promise((pronto) => {
+      const s = document.createElement("script");
+      // no site o jogo abre em "/", e jogo/index.html fica dentro da pasta jogo/
+      const naPastaJogo = /\/jogo\/[^/]*$/.test(location.pathname);
+      s.src = location.protocol === "file:" ? (naPastaJogo ? "dados.js" : "jogo/dados.js") : "/jogo/dados.js";
+      s.onload = () => pronto(window.NICHO_DADOS || null);
+      s.onerror = () => { promessaDadosLocais = null; pronto(null); };
+      document.head.append(s);
+    });
+  }
+  return promessaDadosLocais;
+}
+
 async function carregarCategoriasDoDia() {
   // 1. Tenta carregar do D1 (Cloudflare Pages Function /api/dia), muito mais leve (~150 KB)
   if (!ALEATORIO && location.protocol !== "file:") {
@@ -600,8 +665,9 @@ async function carregarCategoriasDoDia() {
       }
     } catch {}
   }
-  // 2. Fallback: se estiver offline, rodando local (file://), em ?aleatorio ou o D1 falhar, usa window.NICHO_DADOS
-  const dados = window.NICHO_DADOS;
+  // 2. Fallback: se estiver offline, rodando local (file://), em ?aleatorio ou o D1 falhar,
+  //    baixa o pacote com todos os dias (jogo/dados.js) só agora
+  const dados = await carregarDadosLocais();
   if (!dados) return null;
   const escolhidas = ALEATORIO
     ? embaralhar(dados.indice, Math.random).slice(0, RODADAS_POR_DIA)
@@ -1652,7 +1718,7 @@ function enviar() {
 // A lista vem de /api/arquivo (functions/api/arquivo.js), 30 dias por vez: só a data, o número
 // e os temas. As perguntas de um dia só são baixadas quando você abre aquele dia (/api/dia),
 // então o jogo não fica mais pesado conforme os dias se acumulam.
-// Sem internet ou aberto do computador (file://), a lista sai do window.NICHO_DADOS, se houver.
+// Sem internet ou aberto do computador (file://), a lista sai do pacote jogo/dados.js.
 const API_ARQUIVO = "/api/arquivo";
 const arquivos = { carregados: [], mais: false, carregando: false, iniciado: false };
 
@@ -1683,7 +1749,7 @@ async function carregarArquivos() {
       if (r.ok) pagina = await r.json();
     } catch {}
   }
-  if (!pagina || !Array.isArray(pagina.dias)) pagina = arquivosDoPacote(ultimo ? ultimo.dia : null);
+  if (!pagina || !Array.isArray(pagina.dias)) pagina = arquivosDoPacote(await carregarDadosLocais(), ultimo ? ultimo.dia : null);
   const hoje = hojeLocal();
   arquivos.carregados.push(...pagina.dias.filter((d) => d.dia < hoje && d.dia >= LANCAMENTO));
   arquivos.mais = !!pagina.mais;
@@ -1692,8 +1758,7 @@ async function carregarArquivos() {
 }
 
 // Plano B, sem a API: monta a lista com as categorias que já estão no navegador.
-function arquivosDoPacote(antes) {
-  const dados = window.NICHO_DADOS;
+function arquivosDoPacote(dados, antes) {
   if (!dados) return { dias: [], mais: false };
   const dias = [];
   const d = new Date((antes || hojeLocal()) + "T12:00");

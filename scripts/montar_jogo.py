@@ -6,8 +6,11 @@ Uso: python3 scripts/montar_jogo.py   (o pontuar.py já chama no fim)
 Gera:
     jogo/dados.js   as perguntas de dados/pesos/ num arquivo JS (o navegador
                     não deixa uma página aberta do computador ler arquivos JSON)
-    jogar.html      o jogo inteiro num arquivo só: estilo, código e perguntas.
-                    Dá para mandar esse arquivo para alguém e abrir direto.
+    jogar.html      o jogo num arquivo só (estilo e código), SEM as perguntas: é o que o site
+                    serve em nichoojogo.com. Fica leve (~0,4 MB) e pede só o dia de hoje a
+                    /api/dia; se a API falhar, baixa jogo/dados.js na hora.
+    jogar-completo.html  o mesmo, COM todas as perguntas dentro (~10 MB). Dá para mandar
+                    esse arquivo para alguém e abrir direto, sem internet. O site não serve ele.
 """
 import json
 import re
@@ -154,7 +157,7 @@ def main() -> None:
     css = (JOGO / "estilo.css").read_text(encoding="utf-8")
     # embute todo <script src="..."> de jogo/index.html, na mesma ordem
     nomes = re.findall(r'<script src="([^"]+)"></script>', html)
-    scripts = {n: dados_js if n == "dados.js" else (JOGO / n).read_text(encoding="utf-8") for n in nomes}
+    scripts = {n: (JOGO / n).read_text(encoding="utf-8") for n in nomes}
     html = html.replace('<link rel="stylesheet" href="estilo.css">', "<style>\n" + css + "</style>")
     acentos = (JOGO / "fonte-acentos.css").read_text(encoding="utf-8")
     html = html.replace('<link rel="stylesheet" href="fonte-acentos.css">', "<style>\n" + acentos + "</style>")
@@ -168,7 +171,12 @@ def main() -> None:
     for pagina in ("privacidade", "termos", "creditos"):
         html = html.replace(f'href="../{pagina}.html"', f'href="{pagina}.html"')
     (RAIZ / "jogar.html").write_text(html, encoding="utf-8")
-    print("jogo/dados.js e jogar.html atualizados")
+    # versão completa: as perguntas entram antes do primeiro script do jogo
+    primeiro = "<script>\n" + scripts[nomes[0]].replace("</script", "<\\/script") + "</script>"
+    assert primeiro in html
+    completo = html.replace(primeiro, "<script>\n" + dados_js.replace("</script", "<\\/script") + "</script>\n  " + primeiro, 1)
+    (RAIZ / "jogar-completo.html").write_text(completo, encoding="utf-8")
+    print("jogo/dados.js, jogar.html e jogar-completo.html atualizados")
 
 
 if __name__ == "__main__":

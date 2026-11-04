@@ -28,6 +28,8 @@ Júpiter,Jupiter,12.314,False,2.8169,80.0,0,0.025,0.025,0.64,41,True
 Lua cheia,,9.777,False,2.8169,98.0,11232,0.025,0.025,0.64,41,True
 Nebulosa,,13.316,False,2.8169,70.0,14496,0.025,0.025,0.64,41,True
 Três Marias,Cinturão de Órion,10.291,False,2.8169,88.0,4140,0.025,0.025,0.64,41,True
+Cometa Halley,halley | 2688 Halley,12.332,False,2.4257,90.0,36492,0.051,0.051,0.656,43,True
+Meteorito,,13.927,False,2.4257,95.0,6678,0.05,0.05,0.656,43,True
 Asteroide,,13.261,False,1.8779,90.0,9114,0.034,0.034,0.693,48,True
 Balão de São João,,8.576,False,1.8779,,0,0.034,0.034,0.693,48,True
 Bat-sinal,,9.447,False,1.8779,,0,0.034,0.034,0.693,48,True
@@ -40,25 +42,29 @@ Sinalizador,,13.985,False,1.8779,60.0,1572,0.034,0.034,0.693,48,False
 Starlink,trem de satélites,11.217,False,1.8779,55.0,27486,0.034,0.034,0.693,48,True
 Sírius,Sirius,20.0,True,1.8779,60.0,19116,0.034,0.034,0.693,48,True
 Vaga-lume,vagalume | pirilampo,10.706,False,14.0845,85.0,25644,0.01,0.01,0.707,50,True
+Foguete,,12.517,False,1.2128,85.0,0,0.052,0.052,0.742,55,True
+Superlua,,15.72,False,1.2128,90.0,2094,0.053,0.053,0.742,55,True
 Arco lunar,arco-íris lunar,11.445,False,0.2817,,0,0.048,0.048,0.775,60,True
 Buraco negro,,10.422,False,0.2535,85.0,47658,0.055,0.055,0.775,60,True
 Bólido,bola de fogo,15.074,False,0.4695,30.0,1464,0.045,0.045,0.775,60,False
-Cometa Halley,halley | 2688 Halley,12.332,False,0.2535,90.0,36492,0.051,0.051,0.775,60,True
+Crepúsculo,pôr do sol | nascer do sol,11.944,False,0.2535,70.0,11280,0.06,0.06,0.775,60,True
 Estrela Polar,Polaris,11.067,False,0.2535,70.0,3090,0.054,0.054,0.775,60,True
-Foguete,,12.517,False,0.2535,85.0,0,0.052,0.052,0.775,60,True
+Estrela vespertina,,9.793,False,0.2535,70.0,56862,0.059,0.059,0.775,60,True
 Halo solar,halo,11.43,False,0.939,45.0,0,0.042,0.042,0.775,60,True
 Lanterna,,11.168,False,0.939,,0,0.042,0.042,0.775,60,True
 Lanterna chinesa,lanterna de papel | balão de papel,11.188,False,0.939,60.0,324,0.042,0.042,0.775,60,True
 Laser,,10.893,False,0.939,,9156,0.042,0.042,0.775,60,True
+Lixo espacial,,10.397,False,0.2535,75.0,1842,0.057,0.057,0.775,60,True
+Lua nova,lua crescente | lua minguante,8.607,False,0.2535,70.0,7992,0.058,0.058,0.775,60,True
 Luz zodiacal,,11.893,False,0.2817,15.0,1044,0.048,0.048,0.775,60,True
 Mercúrio,,12.12,False,0.2535,65.0,0,0.056,0.056,0.775,60,True
-Meteorito,,13.927,False,0.2535,95.0,6678,0.05,0.05,0.775,60,True
 Parélio,cão do sol | Cão-de-sol | Sun dog | Sundog,18.775,False,0.2817,,7182,0.048,0.048,0.775,60,True
 Pulsar,,13.089,False,0.4695,40.0,11472,0.045,0.045,0.775,60,True
 Quasar,,14.635,False,0.4695,35.0,16182,0.045,0.045,0.775,60,True
-Superlua,,15.72,False,0.2535,90.0,2094,0.053,0.053,0.775,60,True
 AE Aurigae,,10.953,False,0.1918,,0,0.084,0.084,0.781,61,True
 Alfa Centauri,Rigil Kentaurus,11.553,False,0.2535,55.0,14358,0.067,0.067,0.781,61,True
+Alfa Centauri A,,11.553,False,0.1761,,0,0.089,0.089,0.781,61,True
+Alfa Centauri B,,11.553,False,0.1726,,0,0.089,0.089,0.781,61,True
 Alvorada,aurora da manhã,11.793,False,0.2535,65.0,0,0.064,0.064,0.781,61,True
 Anã branca,,11.679,False,0.2535,45.0,7320,0.07,0.07,0.781,61,True
 Arkab Posterior,Beta2 Sagittarii,10.991,False,0.1876,,0,0.085,0.085,0.781,61,True
@@ -66,17 +72,15 @@ Babcock's star,,10.312,False,0.2007,,0,0.082,0.082,0.781,61,True
 Beta Comae Berenices,43 Comae Berenices,11.239,False,0.1836,,0,0.086,0.086,0.781,61,True
 Betelgeuse,Betelgeuze,20.0,True,0.2535,45.0,9822,0.071,0.071,0.781,61,True
 Campbell's Hydrogen Star,,10.312,False,0.1961,,0,0.082,0.082,0.781,61,True
-Crepúsculo,pôr do sol | nascer do sol,11.944,False,0.2535,70.0,11280,0.06,0.06,0.781,61,True
+Delta Scuti,,11.689,False,0.166,,0,0.092,0.092,0.781,61,True
 Estrela binária,,11.747,False,0.2535,40.0,2412,0.074,0.074,0.781,61,True
 Estrela de Kapteyn,,9.793,False,0.2332,,0,0.077,0.077,0.781,61,True
 Estrela de Przybylski,,9.793,False,0.2271,,0,0.077,0.077,0.781,61,True
 Estrela de Tabby,kic 8462852 | estrela de boyajian,9.793,False,0.2213,,0,0.077,0.077,0.781,61,True
 Estrela de Van Maanen,,10.219,False,0.2055,,0,0.082,0.082,0.781,61,True
-Estrela vespertina,,9.793,False,0.2535,70.0,56862,0.059,0.059,0.781,61,True
 Galáxia de Andrômeda,andrômeda,13.101,False,0.2535,65.0,27906,0.063,0.063,0.781,61,True
 Gigante vermelha,,10.383,False,0.2535,45.0,3648,0.068,0.068,0.781,61,True
-Lixo espacial,,10.397,False,0.2535,75.0,1842,0.057,0.057,0.781,61,True
-Lua nova,lua crescente | lua minguante,8.607,False,0.2535,70.0,7992,0.058,0.058,0.781,61,True
+Grande Aniquilador,,11.661,False,0.1692,,0,0.089,0.089,0.781,61,True
 Matar,,9.932,False,0.2157,,0,0.08,0.08,0.781,61,True
 Musica,,9.977,False,0.2105,,0,0.08,0.08,0.781,61,True
 Nebulosa de Órion,,13.868,False,0.2535,45.0,10362,0.072,0.072,0.781,61,True
@@ -90,9 +94,8 @@ Raio verde,flash verde,9.766,False,0.2466,25.0,0,0.075,0.075,0.781,61,True
 Telescópio Hubble,hubble,12.554,False,0.2535,70.0,17886,0.061,0.061,0.781,61,True
 Urano,,13.214,False,0.2535,65.0,0,0.065,0.065,0.781,61,True
 AB Pictoris,HD 44627,11.978,False,0.1514,,0,0.097,0.097,0.787,62,True
-Alfa Centauri A,,11.553,False,0.1761,,0,0.089,0.089,0.787,62,True
-Alfa Centauri B,,11.553,False,0.1726,,0,0.089,0.089,0.787,62,True
 Arkab Prior,,13.714,False,0.1135,,0,0.115,0.115,0.787,62,True
+Barnard's Star,,10.312,False,0.1015,,0,0.125,0.125,0.787,62,True
 Castor B,,13.433,False,0.1215,,0,0.11,0.11,0.787,62,True
 Chi Centauri,,12.297,False,0.1415,,0,0.1,0.1,0.787,62,True
 Chi Virginis,,12.297,False,0.1392,,0,0.1,0.1,0.787,62,True
@@ -100,12 +103,10 @@ Cor Caroli,,8.57,False,0.137,,0,0.103,0.103,0.787,62,True
 Cor Caroli B,,8.57,False,0.1348,,0,0.103,0.103,0.787,62,True
 DEN 0255-4700,,12.855,False,0.1288,,0,0.106,0.106,0.787,62,True
 Delta Crucis,Decrux | Pálida,13.946,False,0.1065,,0,0.118,0.118,0.787,62,True
-Delta Scuti,,11.689,False,0.166,,0,0.092,0.092,0.787,62,True
 Delta3 Canis Minoris,,13.899,False,0.1106,,0,0.118,0.118,0.787,62,True
 EZ Aqr,,13.032,False,0.1233,,0,0.109,0.109,0.787,62,True
 Estrela de Barnard,,9.793,False,0.1121,,0,0.115,0.115,0.787,62,True
 Gamma Canis Minoris,,13.899,False,0.1092,,0,0.118,0.118,0.787,62,True
-Grande Aniquilador,,11.661,False,0.1692,,0,0.089,0.089,0.787,62,True
 Grande Cometa de 1106,,9.66,False,0.1199,,0,0.112,0.112,0.787,62,True
 Grande Cometa de 1577,,9.66,False,0.1182,,0,0.112,0.112,0.787,62,True
 Grande cometa de 1744,C/1743 X1,9.66,False,0.1166,,0,0.112,0.112,0.787,62,True
@@ -121,9 +122,11 @@ RR Lyrae,,11.856,False,0.1569,,0,0.095,0.095,0.787,62,True
 RR Pictoris,,11.856,False,0.1541,,0,0.095,0.095,0.787,62,True
 SS Cygni,,11.7,False,0.1628,,0,0.092,0.092,0.787,62,True
 Sigma Capricorni,,12.473,False,0.1328,,0,0.103,0.103,0.787,62,True
+Tau Ceti,,13.989,False,0.1052,,0,0.122,0.122,0.787,62,True
+Tau Librae,,13.989,False,0.104,,0,0.122,0.122,0.787,62,True
+V830 Tau,,13.989,False,0.1027,,0,0.122,0.122,0.787,62,True
 VY Canis Majoris,,13.899,False,0.1079,,0,0.118,0.118,0.787,62,True
 Atlas,,11.812,False,0.0854,,0,0.139,0.139,0.794,63,True
-Barnard's Star,,10.312,False,0.1015,,0,0.125,0.125,0.794,63,True
 Cometa Olinda,Cometa Olinda (C/1860 D1) | C/1860 D1,12.055,False,0.0846,,0,0.141,0.141,0.794,63,True
 Contas de Baily,,9.176,False,0.0777,,0,0.149,0.149,0.794,63,True
 Cursa,Beta Eridani,13.745,False,0.0744,,0,0.153,0.153,0.794,63,True
@@ -144,16 +147,16 @@ Matusalém,hd 140283,15.316,False,0.089,,0,0.136,0.136,0.794,63,True
 Meridiana,,15.441,False,0.0872,,0,0.137,0.137,0.794,63,True
 Mira,,11.463,False,0.0881,,0,0.136,0.136,0.794,63,True
 Nova,,7.472,False,0.0814,,2238,0.143,0.143,0.794,63,True
+Polis,,13.728,False,0.0738,,0,0.153,0.153,0.794,63,True
 Prima Hyadum,Gamma Tauri,10.394,False,0.0959,,0,0.128,0.128,0.794,63,True
+Propus,,13.687,False,0.0757,,0,0.153,0.153,0.794,63,True
 Red Rectangle,,10.513,False,0.0928,,0,0.131,0.131,0.794,63,True
 Sol da meia-noite,,8.694,False,0.0806,,9990,0.145,0.145,0.794,63,True
-Tau Ceti,,13.989,False,0.1052,,0,0.122,0.122,0.794,63,True
-Tau Librae,,13.989,False,0.104,,0,0.122,0.122,0.794,63,True
 Tupi,,12.029,False,0.0838,,0,0.141,0.141,0.794,63,True
 Tupã,,13.562,False,0.0764,,0,0.151,0.151,0.794,63,True
-V830 Tau,,13.989,False,0.1027,,0,0.122,0.122,0.794,63,True
 Van Maanen's Star,,10.478,False,0.0938,,0,0.13,0.13,0.794,63,True
 Yed Posterior,Epsilon Ophiuchi,10.991,False,0.0899,,0,0.134,0.134,0.794,63,True
+Yed Prior,Delta Ophiuchi,13.714,False,0.075,,0,0.153,0.153,0.794,63,True
 Zeta Ophiuchi,,14.255,False,0.097,,0,0.128,0.128,0.794,63,True
 Anel de diamante,,11.139,False,0.0612,,0,0.178,0.178,0.8,64,True
 Antena com luz,,8.049,False,0.0719,,0,0.158,0.158,0.8,64,True
@@ -162,12 +165,14 @@ Busca-pé,,8.828,False,0.0685,,624,0.164,0.164,0.8,64,True
 Caixa de Joias,,10.16,False,0.0664,,606,0.168,0.168,0.8,64,True
 Caminho de São Tiago,,7.187,False,0.0639,,0,0.172,0.172,0.8,64,True
 Chara,,14.977,False,0.0649,,0,0.172,0.172,0.8,64,True
+Chuva,,9.494,False,0.0579,,16398,0.188,0.188,0.8,64,True
 Coroa,,10.555,False,0.0659,,0,0.168,0.168,0.8,64,True
 Coroa solar,,10.282,False,0.0707,,1584,0.161,0.161,0.8,64,True
 Cão Maior,,8.855,False,0.0731,,3900,0.156,0.156,0.8,64,True
 Estação Espacial Tiangong,tiangong,10.217,False,0.0679,,2778,0.166,0.166,0.8,64,True
 Estrela variável,,10.413,False,0.0625,,840,0.176,0.176,0.8,64,True
 Estrela-guia,,9.414,False,0.0608,,19866,0.181,0.181,0.8,64,True
+Explosão de raios gama,,10.74,False,0.0575,,0,0.188,0.188,0.8,64,True
 Fang,,14.662,False,0.0669,,0,0.166,0.166,0.8,64,True
 Fogos de São João,,8.657,False,0.069,,0,0.163,0.163,0.8,64,True
 Glória,,10.132,False,0.0702,,0,0.161,0.161,0.8,64,True
@@ -179,18 +184,20 @@ Nova Cygni,,7.472,False,0.0591,,0,0.184,0.184,0.8,64,True
 Nuvem nacarada,,10.857,False,0.0635,,0,0.172,0.172,0.8,64,True
 Pilar solar,pilar de luz,10.907,False,0.0644,,390,0.172,0.172,0.8,64,True
 Pipa com luz,pipa iluminada,8.339,False,0.0725,,0,0.156,0.156,0.8,64,True
-Polis,,13.728,False,0.0738,,0,0.153,0.153,0.8,64,True
-Propus,,13.687,False,0.0757,,0,0.153,0.153,0.8,64,True
 Rana,,14.106,False,0.0713,,0,0.159,0.159,0.8,64,True
 Reflexo da cidade,,9.303,False,0.0674,,0,0.166,0.166,0.8,64,True
+Satélite Iridium,flash iridium,10.856,False,0.0587,,0,0.184,0.184,0.8,64,True
+Show de laser,,9.912,False,0.0583,,0,0.184,0.184,0.8,64,True
 Sinal de luz,,8.954,False,0.0654,,0,0.172,0.172,0.8,64,True
 Sol de verão,,9.025,False,0.0599,,23280,0.181,0.181,0.8,64,True
 Vulcão em erupção,vulcão,9.771,False,0.063,,21192,0.172,0.172,0.8,64,True
-Yed Prior,Delta Ophiuchi,13.714,False,0.075,,0,0.153,0.153,0.8,64,True
 122 Velorum,,20.0,True,0.0485,,0,0.287,0.287,0.806,65,True
 15 Orionis,HD 33276,20.0,True,0.0482,,0,0.287,0.287,0.806,65,True
 2 Andromedae,HD 217782,20.0,True,0.0479,,0,0.287,0.287,0.806,65,True
 4 Andromedae,HD 218452,20.0,True,0.0477,,0,0.287,0.287,0.806,65,True
+47 Ursae Majoris,,20.0,True,0.0474,,0,0.287,0.287,0.806,65,True
+51 Pegasi,,20.0,True,0.0472,,0,0.287,0.287,0.806,65,True
+59 Sagittarii,HD 188603,20.0,True,0.0469,,0,0.287,0.287,0.806,65,True
 Aeroporto,,9.813,False,0.0536,,3798,0.2,0.2,0.806,65,True
 Algol,,15.755,False,0.0533,,0,0.2,0.2,0.806,65,True
 Alula Australis,Xi Ursae Majoris,19.866,False,0.0505,,0,0.207,0.207,0.806,65,True
@@ -198,20 +205,16 @@ Alula Australis B,,19.866,False,0.0502,,0,0.207,0.207,0.806,65,True
 Balão de festa,,10.092,False,0.0546,,0,0.196,0.196,0.806,65,True
 Capela,Capella,11.057,False,0.0517,,4122,0.207,0.207,0.806,65,True
 Caça,avião de caça,10.646,False,0.0496,,6504,0.211,0.211,0.806,65,True
-Chuva,,9.494,False,0.0579,,16398,0.188,0.188,0.806,65,True
 Cinza vulcânica,,10.484,False,0.0529,,1320,0.2,0.2,0.806,65,True
 Disco solar,,9.736,False,0.0557,,83598,0.193,0.193,0.806,65,True
 Errai,,19.807,False,0.0511,,0,0.207,0.207,0.806,65,True
 Estrela de Belém,,10.158,False,0.0508,,5568,0.207,0.207,0.806,65,True
-Explosão de raios gama,,10.74,False,0.0575,,0,0.188,0.188,0.806,65,True
 Lava,,10.623,False,0.0514,,10764,0.207,0.207,0.806,65,True
 Leão,,10.437,False,0.0553,,83928,0.193,0.193,0.806,65,True
 Lua artificial,,10.412,False,0.0499,,0,0.207,0.207,0.806,65,True
 Lua em quarto crescente,,8.26,False,0.0493,,0,0.211,0.211,0.806,65,True
 Saco de Carvão,,10.873,False,0.0564,,0,0.191,0.191,0.806,65,True
 Sarin,,15.756,False,0.0526,,0,0.2,0.2,0.806,65,True
-Satélite Iridium,flash iridium,10.856,False,0.0587,,0,0.184,0.184,0.806,65,True
-Show de laser,,9.912,False,0.0583,,0,0.184,0.184,0.806,65,True
 Sol de inverno,,9.243,False,0.0571,,0,0.188,0.188,0.806,65,True
 Sol do meio-dia,,7.609,False,0.056,,0,0.191,0.191,0.806,65,True
 Sol entre nuvens,,7.753,False,0.055,,0,0.194,0.194,0.806,65,True
@@ -220,9 +223,6 @@ Triângulo de Verão,,10.388,False,0.0568,,1098,0.188,0.188,0.806,65,True
 Ursa Maior,,10.668,False,0.0539,,9858,0.196,0.196,0.806,65,True
 Vidro,,9.724,False,0.052,,11580,0.2,0.2,0.806,65,True
 Ônibus espacial,,10.207,False,0.0543,,8964,0.196,0.196,0.806,65,True
-47 Ursae Majoris,,20.0,True,0.0474,,0,0.287,0.287,0.812,66,True
-51 Pegasi,,20.0,True,0.0472,,0,0.287,0.287,0.812,66,True
-59 Sagittarii,HD 188603,20.0,True,0.0469,,0,0.287,0.287,0.812,66,True
 60 Sagittarii,HD 189005,20.0,True,0.0466,,0,0.287,0.287,0.812,66,True
 70 Virginis,,20.0,True,0.0464,,0,0.287,0.287,0.812,66,True
 83 Leonis,,20.0,True,0.0461,,0,0.287,0.287,0.812,66,True
@@ -253,9 +253,9 @@ Alya B,,20.0,True,0.0409,,0,0.287,0.287,0.812,66,True
 Ancha,Theta Aquarii,20.0,True,0.0407,,0,0.287,0.287,0.812,66,True
 Anser,,20.0,True,0.0405,,0,0.287,0.287,0.812,66,True
 Arco-íris branco,arco de névoa,10.31,False,0.049,,534,0.287,0.287,0.812,66,True
-Ascella,,20.0,True,0.0403,,0,0.287,0.287,0.819,67,True
-Axólotl,,20.0,True,0.0401,,0,0.287,0.287,0.819,67,True
-Azelfafage,Pi1 Cygni,20.0,True,0.04,,0,0.287,0.287,0.819,67,True
+Ascella,,20.0,True,0.0403,,0,0.287,0.287,0.812,66,True
+Axólotl,,20.0,True,0.0401,,0,0.287,0.287,0.812,66,True
+Azelfafage,Pi1 Cygni,20.0,True,0.04,,0,0.287,0.287,0.812,66,True
 Belel,,20.0,True,0.0398,,0,0.287,0.287,0.819,67,True
 Biham,,20.0,True,0.0396,,0,0.287,0.287,0.819,67,True
 Bosona,,20.0,True,0.0394,,0,0.287,0.287,0.819,67,True
@@ -285,9 +285,9 @@ Graffias,,20.0,True,0.0358,,0,0.287,0.287,0.819,67,True
 Gumala,,20.0,True,0.0357,,0,0.287,0.287,0.819,67,True
 Guniibuu B,,20.0,True,0.0355,,0,0.287,0.287,0.819,67,True
 Helvetios,,20.0,True,0.0354,,0,0.287,0.287,0.819,67,True
-Homam,,20.0,True,0.0352,,0,0.287,0.287,0.825,68,True
-Icarus,ícaro,13.706,False,0.0351,,0,0.287,0.287,0.825,68,True
-Incêndio florestal,queimada,10.939,False,0.0264,,1476,0.287,0.287,0.825,68,True
+Homam,,20.0,True,0.0352,,0,0.287,0.287,0.819,67,True
+Icarus,ícaro,13.706,False,0.0351,,0,0.287,0.287,0.819,67,True
+Incêndio florestal,queimada,10.939,False,0.0264,,1476,0.287,0.287,0.819,67,True
 Itonda,,20.0,True,0.0349,,0,0.287,0.287,0.825,68,True
 Jato,,10.781,False,0.0263,,0,0.287,0.287,0.825,68,True
 Kaewkosin,,20.0,True,0.0348,,0,0.287,0.287,0.825,68,True
@@ -318,9 +318,9 @@ Onkaria,,20.0,True,0.0317,,0,0.287,0.287,0.825,68,True
 P Cygni,34 Cygni,20.0,True,0.0316,,0,0.287,0.287,0.825,68,True
 Peacock,,20.0,True,0.0315,,0,0.287,0.287,0.825,68,True
 Phi Tauri,,20.0,True,0.0314,,0,0.287,0.287,0.825,68,True
-Pi2 Ursae Majoris,,20.0,True,0.0313,,0,0.287,0.287,0.831,69,True
-Pistol,estrela da pistola,10.846,False,0.0312,,0,0.287,0.287,0.831,69,True
-Poerava,,20.0,True,0.031,,0,0.287,0.287,0.831,69,True
+Pi2 Ursae Majoris,,20.0,True,0.0313,,0,0.287,0.287,0.825,68,True
+Pistol,estrela da pistola,10.846,False,0.0312,,0,0.287,0.287,0.825,68,True
+Poerava,,20.0,True,0.031,,0,0.287,0.287,0.825,68,True
 Polaris Australis,Sigma Octantis,12.473,False,0.0309,,0,0.287,0.287,0.831,69,True
 R136a1,RMC 136a1,20.0,True,0.0308,,0,0.287,0.287,0.831,69,True
 RW Cephei,,20.0,True,0.0299,,0,0.287,0.287,0.831,69,True
@@ -350,6 +350,8 @@ Solaris,,20.0,True,0.0283,,0,0.287,0.287,0.831,69,True
 Stephenson 2-18,,20.0,True,0.0282,,0,0.287,0.287,0.831,69,True
 Struve 2398 A,,20.0,True,0.0281,,0,0.287,0.287,0.831,69,True
 Struve 2398 B,,20.0,True,0.028,,0,0.287,0.287,0.831,69,True
+Sualocin,Alpha Delphini,20.0,True,0.0279,,0,0.287,0.287,0.831,69,True
+Sulafat,Gamma lyrae,20.0,True,0.0278,,0,0.287,0.287,0.831,69,True
 Sāmaya,,20.0,True,0.0291,,0,0.287,0.287,0.831,69,True
 Buna,,16.431,False,0.0253,,0,0.375,0.375,0.837,70,True
 Carro do Norte,,8.457,False,0.0262,,0,0.366,0.366,0.837,70,True
@@ -364,9 +366,10 @@ Luz anticolisão,,8.461,False,0.0261,,0,0.366,0.366,0.837,70,True
 Luz de Marfa,,8.461,False,0.026,,0,0.366,0.366,0.837,70,True
 Olho de Deus,,8.46,False,0.0259,,0,0.366,0.366,0.837,70,True
 Paraquedista com sinalizador,,11.014,False,0.025,,0,0.375,0.375,0.837,70,True
+Poluição luminosa,,11.081,False,0.0255,,1932,0.375,0.375,0.837,70,True
 Relâmpago de calor,,11.08,False,0.0258,,0,0.366,0.366,0.837,70,True
-Sualocin,Alpha Delphini,20.0,True,0.0279,,0,0.287,0.287,0.837,70,True
-Sulafat,Gamma lyrae,20.0,True,0.0278,,0,0.287,0.287,0.837,70,True
+Satélite de GPS,,10.856,False,0.0255,,0,0.375,0.375,0.837,70,True
+Show de drones,,11.047,False,0.0249,,0,0.375,0.375,0.837,70,True
 T Tauri,,20.0,True,0.0277,,0,0.287,0.287,0.837,70,True
 TRAPPIST-1,trappist,20.0,True,0.0273,,0,0.287,0.287,0.837,70,True
 TW Hydrae,,20.0,True,0.0272,,0,0.287,0.287,0.837,70,True
@@ -394,19 +397,18 @@ Cristais de gelo,,11.148,False,0.0227,,390,0.411,0.411,0.843,71,True
 Cristo Redentor iluminado,,10.928,False,0.0233,,0,0.404,0.404,0.843,71,True
 Cruz de luz,,8.884,False,0.0235,,0,0.398,0.398,0.843,71,True
 Céu estrelado,,10.712,False,0.0231,,0,0.411,0.411,0.843,71,True
+Estrela da tarde,,9.115,False,0.023,,0,0.411,0.411,0.843,71,True
+Eta Aquáridas,,12.776,False,0.0226,,300,0.411,0.411,0.843,71,True
 Gêmeos,,11.768,False,0.0234,,11394,0.404,0.404,0.843,71,True
 Halo lunar,,12.582,False,0.0242,,192,0.388,0.388,0.843,71,True
 Holofotes de estádio,,11.456,False,0.0234,,0,0.401,0.401,0.843,71,True
 Moeda,,10.43,False,0.0246,,13998,0.388,0.388,0.843,71,True
 Mãe-do-ouro,,8.729,False,0.0244,,0,0.388,0.388,0.843,71,True
 Pilares da Criação,,8.812,False,0.0238,,0,0.394,0.394,0.843,71,True
-Poluição luminosa,,11.081,False,0.0255,,1932,0.375,0.375,0.843,71,True
 Prédio iluminado,,10.941,False,0.0233,,0,0.404,0.404,0.843,71,True
 Raios de Deus,,9.061,False,0.0232,,0,0.404,0.404,0.843,71,True
 Ras Elased Australis,,16.865,False,0.0231,,0,0.404,0.404,0.843,71,True
-Satélite de GPS,,10.856,False,0.0255,,0,0.375,0.375,0.843,71,True
 Secunda Hyadum,Delta1 Tauri,16.544,False,0.0244,,0,0.388,0.388,0.843,71,True
-Show de drones,,11.047,False,0.0249,,0,0.375,0.375,0.843,71,True
 Sol nascente,,10.356,False,0.0245,,0,0.388,0.388,0.843,71,True
 Sol se pondo,,8.645,False,0.0247,,0,0.383,0.383,0.843,71,True
 Tempestade,,11.218,False,0.0247,,11028,0.383,0.383,0.843,71,True
@@ -424,9 +426,8 @@ Cápsula espacial,,11.629,False,0.0224,,240,0.42,0.42,0.849,72,True
 Escorpião,,12.392,False,0.0212,,41604,0.437,0.437,0.849,72,True
 Estrela azul,,9.426,False,0.0219,,0,0.427,0.427,0.849,72,True
 Estrela da manhã,,9.227,False,0.0225,,0,0.416,0.416,0.849,72,True
-Estrela da tarde,,9.115,False,0.023,,0,0.411,0.411,0.849,72,True
 Estrela de Natal,,9.284,False,0.0224,,0,0.42,0.42,0.849,72,True
-Eta Aquáridas,,12.776,False,0.0226,,300,0.411,0.411,0.849,72,True
+Estrela-guia dos Reis Magos,,9.61,False,0.021,,0,0.442,0.442,0.849,72,True
 Europa,,9.196,False,0.0225,,0,0.416,0.416,0.849,72,True
 Hubble passando,,9.541,False,0.0215,,0,0.437,0.437,0.849,72,True
 ISS passando,,9.541,False,0.0214,,0,0.437,0.437,0.849,72,True
@@ -437,8 +438,10 @@ Luz de avião,,9.324,False,0.0223,,0,0.42,0.42,0.849,72,True
 Luzes do norte,,9.549,False,0.0211,,0,0.437,0.437,0.849,72,True
 Lâmpada de poste,,11.403,False,0.0218,,0,0.427,0.427,0.849,72,True
 Medalha,,11.059,False,0.0222,,1374,0.42,0.42,0.849,72,True
+Meia-lua,,9.527,False,0.0213,,0,0.437,0.437,0.849,72,True
 Omega Centauri,,12.376,False,0.023,,1482,0.411,0.411,0.849,72,True
 Planeta vermelho,,9.473,False,0.0216,,0,0.427,0.427,0.849,72,True
+Poste,,11.476,False,0.0213,,2634,0.437,0.437,0.849,72,True
 Purpurina no ar,,9.148,False,0.0229,,0,0.411,0.411,0.849,72,True
 Raio de luz verde,,9.331,False,0.0222,,0,0.42,0.42,0.849,72,True
 Raio difuso,,12.077,False,0.0217,,0,0.427,0.427,0.849,72,True
@@ -454,6 +457,7 @@ Brilho das estrelas,,9.802,False,0.0204,,0,0.458,0.458,0.854,73,True
 Centro da Via Láctea,,9.881,False,0.0201,,0,0.458,0.458,0.854,73,True
 Chamas,,11.492,False,0.0207,,2646,0.447,0.447,0.854,73,True
 Chuva de prata,,9.677,False,0.0207,,0,0.447,0.447,0.854,73,True
+Cruzeiro,,10.253,False,0.0194,,0,0.475,0.475,0.854,73,True
 Céu laranja,,9.745,False,0.0205,,0,0.453,0.453,0.854,73,True
 Estação espacial passando,,9.992,False,0.0199,,0,0.466,0.466,0.854,73,True
 Estrada de Santiago,,10.142,False,0.0196,,0,0.472,0.472,0.854,73,True
@@ -461,8 +465,8 @@ Estrela de Davi,,9.793,False,0.0204,,0,0.458,0.458,0.854,73,True
 Estrela de nêutrons,,9.793,False,0.0203,,0,0.458,0.458,0.854,73,True
 Estrela dupla,,9.773,False,0.0205,,0,0.453,0.453,0.854,73,True
 Estrela vermelha,,10.008,False,0.0198,,0,0.466,0.466,0.854,73,True
-Estrela-guia dos Reis Magos,,9.61,False,0.021,,0,0.442,0.442,0.854,73,True
 Fogos de réveillon,,12.158,False,0.0198,,0,0.466,0.466,0.854,73,True
+Foguete da SpaceX,falcon 9,12.517,False,0.0196,,3828,0.472,0.472,0.854,73,True
 Foguete de sinalização,,11.988,False,0.0201,,0,0.458,0.458,0.854,73,True
 Grande Cometa,,9.66,False,0.021,,0,0.447,0.447,0.854,73,True
 Grande Cometa de 1811,,9.66,False,0.0209,,0,0.447,0.447,0.854,73,True
@@ -471,12 +475,10 @@ Helicóptero com holofote,,10.129,False,0.0197,,0,0.47,0.47,0.854,73,True
 Hora dourada,,9.717,False,0.0206,,0,0.447,0.447,0.854,73,True
 Luz de farol,,9.645,False,0.0208,,0,0.447,0.447,0.854,73,True
 Lâmpada,,11.329,False,0.0209,,0,0.447,0.447,0.854,73,True
-Meia-lua,,9.527,False,0.0213,,0,0.437,0.437,0.854,73,True
 Mercúrio no crepúsculo,,9.634,False,0.0208,,0,0.447,0.447,0.854,73,True
 Nebulosa do Caranguejo,,13.086,False,0.0203,,3606,0.458,0.458,0.854,73,True
 Nuvem rosa,,9.996,False,0.0197,,0,0.466,0.466,0.854,73,True
 Pipa,,12.012,False,0.0204,,0,0.453,0.453,0.854,73,True
-Poste,,11.476,False,0.0213,,2634,0.437,0.437,0.854,73,True
 Presépio,,12.897,False,0.0206,,3738,0.447,0.447,0.854,73,True
 Raios de sol,Raio de sol,9.815,False,0.0202,,0,0.458,0.458,0.854,73,True
 Sinalizador de emergência,,12.236,False,0.0197,,0,0.47,0.47,0.854,73,True
@@ -484,10 +486,11 @@ Zodíaco,,12.663,False,0.0199,,19104,0.466,0.466,0.854,73,True
 Altair,,13.443,False,0.019,,0,0.488,0.488,0.86,74,True
 Anta do Norte,,10.758,False,0.0184,,0,0.502,0.502,0.86,74,True
 Arco-íris de fogo,,10.477,False,0.019,,0,0.488,0.488,0.86,74,True
+Blue moon,,10.902,False,0.018,,0,0.508,0.508,0.86,74,True
 Bola de fogo de meteoro,,10.599,False,0.0187,,0,0.493,0.493,0.86,74,True
 Castor,,13.433,False,0.0188,,20130,0.493,0.493,0.86,74,True
 Ceres,,13.576,False,0.0193,,0,0.479,0.479,0.86,74,True
-Cruzeiro,,10.253,False,0.0194,,0,0.475,0.475,0.86,74,True
+Chuvinha de fogos,,13.041,False,0.018,,0,0.508,0.508,0.86,74,True
 Eclipse total,,10.182,False,0.0195,,0,0.475,0.475,0.86,74,True
 Erupção à noite,,10.349,False,0.0192,,0,0.483,0.483,0.86,74,True
 Espiga,Spica,13.568,False,0.0186,,942,0.497,0.497,0.86,74,True
@@ -497,7 +500,6 @@ Faixa da Via Láctea,,10.309,False,0.0193,,0,0.479,0.479,0.86,74,True
 Farol de avião,,10.507,False,0.0189,,0,0.488,0.488,0.86,74,True
 Fogo de sinalização,,10.342,False,0.0191,,0,0.483,0.483,0.86,74,True
 Fogueira,,12.029,False,0.0194,,2808,0.475,0.475,0.86,74,True
-Foguete da SpaceX,falcon 9,12.517,False,0.0196,,3828,0.472,0.472,0.86,74,True
 Foguete de festa,,10.554,False,0.0187,,0,0.493,0.493,0.86,74,True
 Lua de colheita,,10.525,False,0.0188,,0,0.488,0.488,0.86,74,True
 Lua de morango,,10.678,False,0.0184,,0,0.5,0.5,0.86,74,True
@@ -516,12 +518,11 @@ Tempestade elétrica,,10.525,False,0.0188,,0,0.488,0.488,0.86,74,True
 Trem do Starlink,,10.395,False,0.019,,0,0.483,0.483,0.86,74,True
 Aglomerado aberto,,11.303,False,0.0174,,0,0.528,0.528,0.866,75,True
 Alfa Centaurídeas,,11.553,False,0.0172,,0,0.533,0.533,0.866,75,True
+Alinhamento de planetas,,11.63,False,0.017,,0,0.539,0.539,0.866,75,True
 Antares,,13.951,False,0.0179,,11172,0.513,0.513,0.866,75,True
-Blue moon,,10.902,False,0.018,,0,0.508,0.508,0.866,75,True
 Borda dourada das nuvens,,11.453,False,0.0172,,0,0.531,0.531,0.866,75,True
 Brilho de Vênus,,11.267,False,0.0175,,0,0.523,0.523,0.866,75,True
 Chuva de estrelas cadentes,,11.226,False,0.0176,,0,0.523,0.523,0.866,75,True
-Chuvinha de fogos,,13.041,False,0.018,,0,0.508,0.508,0.866,75,True
 Disco voador iluminado,,11.23,False,0.0176,,0,0.523,0.523,0.866,75,True
 Elfo,elfos,13.644,False,0.0179,,11466,0.513,0.513,0.866,75,True
 Estrela gêmea,,11.352,False,0.0174,,0,0.528,0.528,0.866,75,True
@@ -536,6 +537,7 @@ Nebulosa Olho de Gato,,11.051,False,0.0178,,0,0.517,0.517,0.866,75,True
 Nuvem iluminada,,10.857,False,0.0182,,0,0.508,0.508,0.866,75,True
 Nuvem lenticular,,13.261,False,0.0175,,1026,0.523,0.523,0.866,75,True
 Nuvem mammatus,,10.857,False,0.0181,,0,0.508,0.508,0.866,75,True
+OVNI brilhante,,11.589,False,0.0171,,0,0.536,0.536,0.866,75,True
 Poeira de diamante,,11.486,False,0.0172,,0,0.533,0.533,0.866,75,True
 Raios crepusculares,,10.853,False,0.0181,,0,0.508,0.508,0.866,75,True
 Relâmpago globular,raio bola | Raio de bola | raio globular,13.974,False,0.0173,,0,0.528,0.528,0.866,75,True
@@ -546,7 +548,6 @@ Trânsito de Vênus,,11.06,False,0.0177,,0,0.517,0.517,0.866,75,True
 Vaga-lume voando,,11.063,False,0.0177,,0,0.517,0.517,0.866,75,True
 Vênus brilhante,,11.403,False,0.0173,,0,0.531,0.531,0.866,75,True
 Órion,,14.42,False,0.0171,,0,0.536,0.536,0.866,75,True
-Alinhamento de planetas,,11.63,False,0.017,,0,0.539,0.539,0.872,76,True
 Alula Borealis,Nu Ursae Majoris,19.866,False,0.0164,,0,0.558,0.558,0.872,76,True
 Anã vermelha,,12.033,False,0.0163,,0,0.558,0.558,0.872,76,True
 Arco circunzenital,,15.513,False,0.0168,,762,0.545,0.545,0.872,76,True
@@ -562,6 +563,7 @@ Dirigível,zepelim,14.621,False,0.016,,12810,0.568,0.568,0.872,76,True
 Eclipse anular,,12.069,False,0.0163,,0,0.558,0.558,0.872,76,True
 Estrela anã,,11.818,False,0.0166,,0,0.55,0.55,0.872,76,True
 Estrela fugaz,,11.674,False,0.0169,,0,0.539,0.539,0.872,76,True
+Faíscas,,14.058,False,0.016,,0,0.568,0.568,0.872,76,True
 Feixe do farol,,11.777,False,0.0167,,0,0.545,0.545,0.872,76,True
 Felis,,19.843,False,0.0163,,0,0.558,0.558,0.872,76,True
 Fogos de Copacabana,,11.837,False,0.0166,,0,0.55,0.55,0.872,76,True
@@ -572,11 +574,11 @@ Galáxia do Triângulo,,11.682,False,0.0168,,0,0.545,0.545,0.872,76,True
 Halo de 22 graus,,11.763,False,0.0167,,0,0.545,0.545,0.872,76,True
 Holofote de estádio,,12.054,False,0.0162,,0,0.558,0.558,0.872,76,True
 Io,,11.687,False,0.0168,,0,0.545,0.545,0.872,76,True
+Luar,,12.233,False,0.016,,0,0.568,0.568,0.872,76,True
 Nebulosa da Lagoa,,11.996,False,0.0164,,0,0.558,0.558,0.872,76,True
 Nebulosa do Anel,,11.986,False,0.0165,,0,0.553,0.553,0.872,76,True
 Nuvem estratosférica polar,,11.599,False,0.017,,0,0.539,0.539,0.872,76,True
 Nuvem prateada,,12.092,False,0.0162,,0,0.564,0.564,0.872,76,True
-OVNI brilhante,,11.589,False,0.0171,,0,0.536,0.536,0.872,76,True
 Planador,,14.386,False,0.0164,,3852,0.558,0.558,0.872,76,True
 Purpurina,glitter,14.151,False,0.0165,,600,0.553,0.553,0.872,76,True
 268 G. Cet,,20.0,True,0.0154,,0,0.744,0.744,0.877,77,True
@@ -592,6 +594,7 @@ Adhara,,20.0,True,0.0152,,0,0.744,0.744,0.877,77,True
 Adhil,,20.0,True,0.0152,,0,0.744,0.744,0.877,77,True
 Ain,,20.0,True,0.0151,,0,0.744,0.744,0.877,77,True
 Aiolos,,20.0,True,0.0151,,0,0.744,0.744,0.877,77,True
+Alanhale,4151 Alanhale,20.0,True,0.0151,,0,0.744,0.744,0.877,77,True
 Braço de Órion,,12.331,False,0.0159,,0,0.579,0.579,0.877,77,True
 Cometa 12P,,12.332,False,0.0158,,0,0.579,0.579,0.877,77,True
 Cometa Borisov,,12.332,False,0.0158,,0,0.579,0.579,0.877,77,True
@@ -606,13 +609,10 @@ Cometa Tempel-Tuttle,,12.332,False,0.0155,,0,0.579,0.579,0.877,77,True
 Cometa West,,12.332,False,0.0155,,0,0.579,0.579,0.877,77,True
 Cometa de Donati,,12.332,False,0.0158,,0,0.579,0.579,0.877,77,True
 Cápsula reentrando,,12.34,False,0.0159,,0,0.579,0.579,0.877,77,True
-Faíscas,,14.058,False,0.016,,0,0.568,0.568,0.877,77,True
 Hexágono de Inverno,,12.303,False,0.016,,0,0.579,0.579,0.877,77,True
 Lanterna voadora,,12.331,False,0.0155,,0,0.579,0.579,0.877,77,True
-Luar,,12.233,False,0.016,,0,0.568,0.568,0.877,77,True
 Rojão,,14.47,False,0.0155,,1872,0.579,0.579,0.877,77,True
 Sinalizador de socorro,,12.304,False,0.0159,,0,0.579,0.579,0.877,77,True
-Alanhale,4151 Alanhale,20.0,True,0.0151,,0,0.744,0.744,0.883,78,True
 Albireo,,20.0,True,0.0151,,0,0.744,0.744,0.883,78,True
 Alchiba,,20.0,True,0.015,,0,0.744,0.744,0.883,78,True
 Alcor,Zeta Ursae Majoris,14.255,False,0.015,,0,0.744,0.744,0.883,78,True
@@ -644,8 +644,8 @@ Alsciaukat,31 Lyncis,20.0,True,0.0144,,0,0.744,0.744,0.883,78,True
 Alsephina,Delta Velorum,11.689,False,0.0144,,0,0.744,0.744,0.883,78,True
 Alterf,Lambda Leonis,13.652,False,0.0143,,0,0.744,0.744,0.883,78,True
 Aludra,,20.0,True,0.0143,,0,0.744,0.744,0.883,78,True
-Alzirr,Xi Geminorum,11.403,False,0.0143,,0,0.744,0.744,0.889,79,True
-Amadioha,,20.0,True,0.0143,,0,0.744,0.744,0.889,79,True
+Alzirr,Xi Geminorum,11.403,False,0.0143,,0,0.744,0.744,0.883,78,True
+Amadioha,,20.0,True,0.0143,,0,0.744,0.744,0.883,78,True
 Angetenar,Tau2 Eridani,20.0,True,0.0142,,0,0.744,0.744,0.889,79,True
 Aniara,,20.0,True,0.0142,,0,0.744,0.744,0.889,79,True
 Ankaa,,20.0,True,0.0142,,0,0.744,0.744,0.889,79,True
@@ -677,7 +677,7 @@ Botein,Delta Arietis | 57 Arietis,11.689,False,0.0136,,0,0.744,0.744,0.889,79,Tr
 Brachium,,20.0,True,0.0136,,0,0.744,0.744,0.889,79,True
 Bubup,,20.0,True,0.0136,,0,0.744,0.744,0.889,79,True
 Bélénos,,20.0,True,0.0137,,0,0.744,0.744,0.889,79,True
-C/1264 N1,Grande Cometa de 1264,9.66,False,0.0135,,0,0.744,0.744,0.894,80,True
+C/1264 N1,Grande Cometa de 1264,9.66,False,0.0135,,0,0.744,0.744,0.889,79,True
 C/1471 Y1,Grande Cometa de 1472,9.66,False,0.0135,,0,0.744,0.744,0.894,80,True
 C/1556 D1,Grande Cometa de 1556,9.66,False,0.0135,,0,0.744,0.744,0.894,80,True
 Caph,Beta Cassiopeiae,11.239,False,0.0135,,0,0.744,0.744,0.894,80,True
@@ -709,8 +709,8 @@ Edasich,Iota Draconis,15.682,False,0.013,,0,0.744,0.744,0.894,80,True
 Electra,,20.0,True,0.013,,0,0.744,0.744,0.894,80,True
 Elgafar,Phi Virginis,20.0,True,0.0129,,0,0.744,0.744,0.894,80,True
 Elkurud,Theta Columbae,20.0,True,0.0129,,0,0.744,0.744,0.894,80,True
-Elnath,Beta Tauri,11.239,False,0.0129,,0,0.744,0.744,0.9,81,True
-Eltanin,Gamma Draconis,20.0,True,0.0129,,0,0.744,0.744,0.9,81,True
+Elnath,Beta Tauri,11.239,False,0.0129,,0,0.744,0.744,0.894,80,True
+Eltanin,Gamma Draconis,20.0,True,0.0129,,0,0.744,0.744,0.894,80,True
 Emiw,,20.0,True,0.0129,,0,0.744,0.744,0.9,81,True
 Encke,,20.0,True,0.0128,,0,0.744,0.744,0.9,81,True
 Enif,Epsilon Pegasi,16.967,False,0.0128,,0,0.744,0.744,0.9,81,True
@@ -742,7 +742,7 @@ Hoggar,,20.0,True,0.0124,,0,0.744,0.744,0.9,81,True
 Hunahpú,,20.0,True,0.0123,,0,0.744,0.744,0.9,81,True
 Hunor,,20.0,True,0.0123,,0,0.744,0.744,0.9,81,True
 Hyakutake,,20.0,True,0.0123,,0,0.744,0.744,0.9,81,True
-Iklil,,20.0,True,0.0123,,0,0.744,0.744,0.906,82,True
+Iklil,,20.0,True,0.0123,,0,0.744,0.744,0.9,81,True
 Illyrian,,20.0,True,0.0123,,0,0.744,0.744,0.906,82,True
 Imai,,20.0,True,0.0123,,0,0.744,0.744,0.906,82,True
 Inquill,,20.0,True,0.0122,,0,0.744,0.744,0.906,82,True
@@ -775,7 +775,7 @@ Mahsati,,20.0,True,0.0118,,0,0.744,0.744,0.906,82,True
 Marfik,Lambda Ophiuchi,13.652,False,0.0118,,0,0.744,0.744,0.906,82,True
 Markab,,20.0,True,0.0118,,0,0.744,0.744,0.906,82,True
 Markeb,,20.0,True,0.0118,,0,0.744,0.744,0.906,82,True
-Marsic,Kappa Herculis,20.0,True,0.0117,,0,0.744,0.744,0.911,83,True
+Marsic,Kappa Herculis,20.0,True,0.0117,,0,0.744,0.744,0.906,82,True
 Marsic B,,20.0,True,0.0117,,0,0.744,0.744,0.911,83,True
 Matza,,20.0,True,0.0117,,0,0.744,0.744,0.911,83,True
 Mebsuta,Epsilon Geminorum,16.967,False,0.0117,,0,0.744,0.744,0.911,83,True
@@ -807,7 +807,7 @@ Muphrid,Eta Boötis,12.776,False,0.0113,,0,0.744,0.744,0.911,83,True
 Muscida,Omicron Ursae Majoris,18.561,False,0.0113,,0,0.744,0.744,0.911,83,True
 Mönch,,20.0,True,0.0114,,0,0.744,0.744,0.911,83,True
 Nahn,Xi Cancri,11.403,False,0.0113,,0,0.744,0.744,0.911,83,True
-Naos,Zeta Puppis,14.255,False,0.0113,,0,0.744,0.744,0.917,84,True
+Naos,Zeta Puppis,14.255,False,0.0113,,0,0.744,0.744,0.911,83,True
 Natasha,,20.0,True,0.0112,,0,0.744,0.744,0.917,84,True
 Nekkar,Beta Boötis,11.239,False,0.0112,,0,0.744,0.744,0.917,84,True
 Nembus,51 Andromedae | HD 9927,20.0,True,0.0112,,0,0.744,0.744,0.917,84,True
@@ -839,8 +839,8 @@ Rasalas,Mu Leonis,12.169,False,0.0108,,0,0.744,0.744,0.917,84,True
 Rasalgethi,,20.0,True,0.0108,,0,0.744,0.744,0.917,84,True
 Rasalhague,Alpha Ophiuchi,20.0,True,0.0108,,0,0.744,0.744,0.917,84,True
 Rastaban,Beta Draconis,11.239,False,0.0108,,0,0.744,0.744,0.917,84,True
+Revati,,20.0,True,0.0108,,0,0.744,0.744,0.917,84,True
 p Eridani,,20.0,True,0.011,,0,0.744,0.744,0.917,84,True
-Revati,,20.0,True,0.0108,,0,0.744,0.744,0.922,85,True
 Revati B,,20.0,True,0.0108,,0,0.744,0.744,0.922,85,True
 Rosalíadecastro,,20.0,True,0.0108,,0,0.744,0.744,0.922,85,True
 Ross 128,,20.0,True,0.0107,,0,0.744,0.744,0.922,85,True
@@ -905,6 +905,7 @@ Wild 2,,20.0,True,0.01,,0,0.744,0.744,0.927,86,True
 Wildberg,117506 Wildberg,20.0,True,0.01,,0,0.744,0.744,0.927,86,True
 Wolf 1061,,20.0,True,0.01,,0,0.744,0.744,0.927,86,True
 Wurren,Zeta Phoenicis,14.255,False,0.01,,0,0.744,0.744,0.927,86,True
+Xamidimura,Mu1 Scorpii,20.0,True,0.01,,0,0.744,0.744,0.927,86,True
 Aglomerado de Hércules,,13.03,False,0.0097,,0,0.916,0.916,0.933,87,True
 Cabeleira do cometa,,12.872,False,0.0098,,0,0.908,0.908,0.933,87,True
 Clarão de vulcão,,12.956,False,0.0097,,0,0.912,0.912,0.933,87,True
@@ -926,7 +927,6 @@ Rastro de foguete,,12.502,False,0.0098,,0,0.9,0.9,0.933,87,True
 Reentrada de satélite,,12.868,False,0.0097,,0,0.908,0.908,0.933,87,True
 Régulo,Regulus,15.98,False,0.0096,,852,0.916,0.916,0.933,87,True
 Torcular,Omicron Piscium,20.771,False,0.0097,,0,0.912,0.912,0.933,87,True
-Xamidimura,Mu1 Scorpii,20.0,True,0.01,,0,0.744,0.744,0.933,87,True
 Xuange,Lambda Boötis,13.652,False,0.01,,0,0.744,0.744,0.933,87,True
 Yildun,Delta Ursae Minoris,11.689,False,0.01,,0,0.744,0.744,0.933,87,True
 Zaniah,Eta Virginis,12.776,False,0.0099,,0,0.744,0.744,0.933,87,True

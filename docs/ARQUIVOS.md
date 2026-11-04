@@ -34,7 +34,12 @@
 - No navegador ficam no máximo duas chaves por dia (`nicho:v7:<dia>` e `nicho:replay:<dia>`), com
   pouca coisa cada. Jogar de novo várias vezes não acumula.
 
-Para atualizar o banco, o mesmo comando de sempre carrega as duas tabelas:
+Para atualizar o banco não precisa rodar nada: quando `banco/carga_dias.sql` muda no `main`, a
+action `.github/workflows/carga-banco.yml` carrega as duas tabelas sozinha (dá para ver em
+**Actions > Carga do banco**, e rodar na mão pelo botão "Run workflow"). Ela usa os segredos
+`CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID` do repositório.
+
+Se um dia precisar rodar no computador, o comando continua sendo:
 
 ```
 npx wrangler d1 execute nicho --remote --file=banco/carga_dias.sql
@@ -65,6 +70,6 @@ O navegador não serve de prova para placar (qualquer um edita o localStorage). 
    Nos arquivos, cada dia mostra o seu placar com essa mesma consulta.
 5. Ao entrar na conta pela 1ª vez, as viagens já guardadas no navegador podem aparecer no perfil,
    mas **não entram no placar** (não dá para provar quando foram feitas).
-6. Antes do placar valer: `/api/dia` hoje entrega qualquer dia, inclusive os futuros, e o `jogar.html`
-   leva todas as perguntas dentro. Para um placar justo, o servidor deveria conferir as respostas
+6. Antes do placar valer: `/api/dia` hoje entrega qualquer dia, inclusive os futuros, e o `jogo/dados.js`
+   (que o jogo baixa quando a API falha) leva todas as perguntas. Para um placar justo, o servidor deveria conferir as respostas
    (ou ao menos não entregar dias futuros).
