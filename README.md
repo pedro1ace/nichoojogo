@@ -26,6 +26,10 @@ Como funciona hoje no protótipo:
 - A tela inteira treme mais quanto mais rara a resposta. A palavra aparece numa caixinha da cor da faixa e cai junto com a câmera; o foguete vai ao lado, acompanhando com um balanço suave.
 - Autocorreção: se a palavra está quase certa (inclusive contra os apelidos), o jogo sugere e preenche o campo,
   e você confirma com LANÇAR. Ele nunca envia sozinho.
+- Outra forma da mesma resposta vale direto, sem perguntar: plural ("Leões"), "de/e/com" a mais ou a menos
+  ("arco flecha") e a palavra do tema na frente ("constelação de Órion", "língua tupi"). Regra igual em
+  `jogo/jogo.js` (`chavesSoltas`) e `scripts/casar.py` (`chaves_soltas`).
+- Resposta que a lista não tem: o jogo avisa que ela foi anotada para revisão (e repete isso no tempo esgotado).
 - Sons 8-bit gerados no navegador (botão ♪ para desligar).
 - No fim: pontos, profundidade, diário de bordo com cada resposta, e um resultado em emoji para compartilhar.
   O progresso do dia fica salvo no navegador.

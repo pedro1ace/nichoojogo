@@ -7,6 +7,8 @@ Uso:
 
 Camadas, da mais segura para a menos segura (para na primeira que achar):
     1. exato        igual a uma resposta ou apelido, sem acento, artigo ou espaço
+    1b. forma       igual depois de tirar plural, "de/do/e/com" e a palavra do tema
+                    (o jogo também faz, e aceita direto: ver chaves_soltas)
     2. enfeite      igual depois de tirar palavras do tema ("planeta Marte",
                     "constelação de Órion", "estado do Acre")
     3. início       primeira palavra de um nome composto ("Cruzeiro" -> Cruzeiro do Sul);
@@ -20,7 +22,7 @@ Camadas, da mais segura para a menos segura (para na primeira que achar):
 Se nada casar, a resposta volta como "nao_achada" e deve ir para a fila de revisão
 (LLM + humano), que decide se é apelido novo, resposta nova ou erro do jogador.
 
-O jogo (jogo/jogo.js) hoje faz só as camadas 1 e 5, sem as travas da 5.
+O jogo (jogo/jogo.js) hoje faz as camadas 1, 1b e 5, sem as travas da 5.
 --avaliar compara as duas versões com erros de digitação gerados e com respostas
 de outras categorias, que não deveriam casar.
 """
@@ -54,6 +56,116 @@ ENFEITES = {
 def compactar(texto: str) -> str:
     """Igual ao jogo: sem acento, sem artigo no começo, sem espaço."""
     return ARTIGOS.sub("", normalizar(texto)).replace(" ", "")
+
+
+# ---------- formas da mesma resposta (igual a jogo/jogo.js: chavesSoltas) ----------
+# Plural, "de/do/e/com" no meio e a palavra do tema na frente não mudam a resposta.
+# O jogo aceita direto (sem perguntar) quando a chave solta serve para uma resposta só.
+CONECTORES = {"de", "do", "da", "dos", "das", "d", "e", "com", "ao", "aos", "a", "o", "os", "as"}
+# Categorias em que a forma conta (5 letras do Termo): aí só vale a grafia exata.
+SEM_FORMAS = {"palavras-do-termo"}
+ENFEITES_SOLTOS = {
+    "luas-do-sistema-solar": ["lua", "satelite natural", "satelite"],
+    "planetas-e-planetas-anoes": ["planeta anao", "planeta"],
+    "corpos-do-sistema-solar": ["planeta anao", "planeta", "cometa", "asteroide"],
+    "constelacoes": ["constelacao"],
+    "estrelas": ["estrela"],
+    "estados-do-brasil": ["estado"],
+    "capitais-do-brasil": ["cidade", "capital"],
+    "capitais-do-mundo": ["cidade", "capital"],
+    "cidades-do-brasil": ["cidade", "municipio"],
+    "cidades-do-mundo": ["cidade"],
+    "paises": ["pais", "republica", "reino"],
+    "paises-acima-do-equador": ["pais", "republica", "reino"],
+    "idiomas": ["lingua", "idioma", "dialeto"],
+    "racas-de-cachorro": ["cachorro", "cao", "raca"],
+    "queijos": ["queijo"],
+    "times-de-futebol": ["time", "clube", "esporte clube"],
+    "jogos-de-videogame": ["jogo"],
+    "brincadeiras": ["jogo", "brincadeira"],
+    "missoes-espaciais": ["missao", "programa"],
+    "ritmos-musicais": ["ritmo", "estilo"],
+    "elementos-quimicos": ["elemento"],
+    "marcas-de-carro": ["marca", "carro"],
+}
+PREFIXOS_DA_LISTA = {
+    "queijos": ["queijo"],
+    "racas-de-cachorro": ["cao", "raca"],
+    "missoes-espaciais": ["programa", "missao"],
+    "brincadeiras": ["jogo"],
+    "jogos-de-videogame": ["jogo"],
+}
+
+
+def radical(p: str) -> str:
+    """Tira o plural e o "e" final (dos dois lados): leoes = leao, flores = flor, tigres = tigre."""
+    if len(p) <= 3:
+        return p
+    if re.search(r"(oes|aes|aos)$", p):
+        p = p[:-3] + "ao"
+    elif len(p) > 4 and re.search(r"(ais|eis|ois|uis)$", p):
+        p = p[:-2] + "l"
+    elif p.endswith("ns"):
+        p = p[:-2] + "m"
+    elif p.endswith("s"):
+        p = p[:-1]
+    if len(p) > 3 and p.endswith("e"):
+        p = p[:-1]
+    return p
+
+
+def palavras_soltas(texto: str) -> list[str]:
+    todas = normalizar(texto.replace("&", " e ")).split()
+    sem = [p for p in todas if p not in CONECTORES]
+    return sem or todas
+
+
+def tirar_da_frente(palavras: list[str], enfeites) -> list[str] | None:
+    for e in enfeites or []:
+        partes = e.split()
+        if len(palavras) > len(partes) and palavras[: len(partes)] == partes:
+            return palavras[len(partes):]
+    return None
+
+
+def chaves_soltas(texto: str, cat_id: str) -> list[str]:
+    palavras = palavras_soltas(texto)
+    chaves = ["".join(radical(p) for p in palavras)]
+    sem = tirar_da_frente(palavras, ENFEITES_SOLTOS.get(cat_id))
+    if sem:
+        chaves.append("".join(radical(p) for p in sem))
+    return chaves
+
+
+def indice_solto(cat_id: str, respostas: list[dict]) -> dict[str, str | None]:
+    """chave solta -> resposta; None quando serve para duas (aí não adivinha)."""
+    soltas: dict[str, str | None] = {}
+
+    def guardar(chave: str, resposta: str) -> None:
+        if not chave:
+            return
+        if chave not in soltas:
+            soltas[chave] = resposta
+        elif soltas[chave] is not None and soltas[chave] != resposta:
+            soltas[chave] = None
+
+    for r in respostas:
+        for nome in [r["resposta"], *r["apelidos"]]:
+            palavras = palavras_soltas(nome)
+            guardar("".join(radical(p) for p in palavras), r["resposta"])
+            sem = tirar_da_frente(palavras, PREFIXOS_DA_LISTA.get(cat_id))
+            if sem and len("".join(sem)) >= 4:
+                guardar("".join(radical(p) for p in sem), r["resposta"])
+    return soltas
+
+
+def casar_solto(texto: str, cat_id: str, soltas: dict[str, str | None]) -> str | None:
+    if cat_id in SEM_FORMAS:
+        return None
+    for chave in chaves_soltas(texto, cat_id):
+        if soltas.get(chave):
+            return soltas[chave]
+    return None
 
 
 def tirar_enfeite(texto: str, cat_id: str) -> str:
@@ -132,6 +244,7 @@ class Categoria:
                 self.som.setdefault(chave_som(nome), set()).add(r["resposta"])
         self.respostas = [r["resposta"] for r in cat["respostas"]]
         self.nomes = cat["respostas"]
+        self.soltas = indice_solto(cat_id, cat["respostas"])
 
     def casar(self, texto: str) -> tuple[str | None, str]:
         """Devolve (resposta, camada): exato, enfeite, inicio, som, digitacao, ambigua ou nao_achada."""
@@ -140,6 +253,9 @@ class Categoria:
             return None, "nao_achada"
         if alvo in self.exato:
             return self.exato[alvo], "exato"
+        solta = casar_solto(texto, self.id, self.soltas)
+        if solta:
+            return solta, "forma"
         sem_enfeite = tirar_enfeite(texto, self.id)
         if sem_enfeite in self.exato:
             return self.exato[sem_enfeite], "enfeite"
@@ -187,6 +303,9 @@ class Categoria:
             return None
         if alvo in self.exato:
             return self.exato[alvo]
+        solta = casar_solto(texto, self.id, self.soltas)
+        if solta:
+            return solta
         limite = tolerancia(len(alvo))
         melhor, menor = None, 99
         for chave, resposta in self.exato.items():
