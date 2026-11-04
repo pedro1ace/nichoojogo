@@ -37,7 +37,7 @@
 Para atualizar o banco, o mesmo comando de sempre carrega as duas tabelas:
 
 ```
-npx wrangler d1 execute DB --remote --file=banco/carga_dias.sql
+npx wrangler d1 execute nicho --remote --file=banco/carga_dias.sql
 ```
 
 ## Como fica guardado no navegador
