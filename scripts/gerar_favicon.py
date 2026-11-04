@@ -1,6 +1,6 @@
 # Uso: python3 scripts/gerar_favicon.py saida_ampliada.png  (rode da raiz do repositório)
 # Favicon: tardígrado simples, sem fundo, virado para a direita. Grade 16x10, cada pixel = 2 unidades.
-import base64, io, re, sys, urllib.parse
+import base64, io, os, re, sys
 from PIL import Image
 G = [
 "..HHH.HHH.HHH...",
@@ -44,13 +44,15 @@ for y, linha in enumerate(G):
             for dy in range(2):
                 for dx in range(2): im.putpixel((x*2+dx, OY+y*2+dy), rgb + (255,))
 open("favicon.svg", "w").write(svg + "\n")
-im.save("favicon.png"); im.save("favicon.ico", sizes=[(32, 32), (16, 16)])
+im.save("favicon.png")
+# o .ico leva 48x48 porque o Google só mostra favicon com lado múltiplo de 48
+im.resize((48, 48), Image.NEAREST).save("favicon.ico", sizes=[(48, 48), (32, 32), (16, 16)])
+os.makedirs("imagens", exist_ok=True)
+im.resize((192, 192), Image.NEAREST).save("imagens/icone-192.png")
+# iPhone pinta fundo preto no que é transparente: fundo do jogo e um respiro em volta
+toque = Image.new("RGBA", (180, 180), (7, 3, 31, 255))
+toque.alpha_composite(im.resize((160, 160), Image.NEAREST), (10, 10))
+toque.save("imagens/apple-touch-icon.png")
 im.resize((256, 256), Image.NEAREST).save(sys.argv[1])
-b = io.BytesIO(); im.save(b, "PNG"); png = "data:image/png;base64," + base64.b64encode(b.getvalue()).decode()
-svgu = "data:image/svg+xml," + urllib.parse.quote(svg, safe="/")
-for p in ["jogo/index.html", "index.html"]:
-    s = open(p).read()
-    s = re.sub(r'(<link rel="icon" type="image/svg\+xml" href=")[^"]*', lambda m: m.group(1) + svgu, s)
-    s = re.sub(r'(<link rel="icon" type="image/png" sizes="32x32" href=")[^"]*', lambda m: m.group(1) + png, s)
-    s = re.sub(r'(<link rel="shortcut icon" href=")[^"]*', lambda m: m.group(1) + png, s)
-    open(p, "w").write(s)
+# As páginas apontam para os arquivos (/favicon.ico, /favicon.svg, /imagens/...).
+# Não use data: no <head>: o Google não lê ícone embutido e mostra o globo cinza.

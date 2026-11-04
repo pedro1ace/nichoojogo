@@ -35,3 +35,25 @@ CREATE TABLE IF NOT EXISTS dias (
   payload    TEXT NOT NULL,             -- JSON com as 7 categorias do dia
   criado_em  TEXT NOT NULL DEFAULT (datetime('now'))
 );
+
+-- Resumo de cada dia para a aba ARQUIVOS (functions/api/arquivo.js): só a data, o número e os 7 temas.
+-- Fica separado de "dias" para a lista dos dias anteriores nunca abrir os pacotes grandes,
+-- por mais dias que o jogo acumule. Carregada junto com os dias (banco/carga_dias.sql).
+CREATE TABLE IF NOT EXISTS resumo_dias (
+  dia     TEXT    NOT NULL PRIMARY KEY, -- AAAA-MM-DD
+  numero  INTEGER NOT NULL,             -- DIA #1, #2...
+  titulos TEXT    NOT NULL              -- JSON: ["Aves", "Rios", ...]
+);
+
+-- FUTURO (ainda não criar): placar diário com conta logada. Plano em docs/ARQUIVOS.md.
+-- A chave (conta, dia) guarda só a 1ª viagem de cada conta em cada dia (INSERT ... ON CONFLICT DO NOTHING),
+-- e no_dia é decidido pelo relógio do servidor. O placar de um dia lista só no_dia = 1.
+-- CREATE TABLE IF NOT EXISTS viagens (
+--   conta     TEXT    NOT NULL,
+--   dia       TEXT    NOT NULL,
+--   pontos    INTEGER NOT NULL,
+--   no_dia    INTEGER NOT NULL,  -- 1 = terminou no próprio dia; 0 = pelo arquivo
+--   criada_em TEXT    NOT NULL DEFAULT (datetime('now')),
+--   PRIMARY KEY (conta, dia)
+-- );
+-- CREATE INDEX IF NOT EXISTS placar ON viagens (dia, no_dia, pontos DESC);

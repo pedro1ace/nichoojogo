@@ -563,3 +563,57 @@ pre {
 
 /* "sem efeitos": nada pisca, pula ou desliza na interface */
 .sem-efeitos *, .sem-efeitos *::before, .sem-efeitos *::after { animation: none !important; transition: none !important; }
+
+/* ---------- arquivos: dias anteriores ---------- */
+.aviso-arquivo {
+  width: min(520px, 100%); margin: 0 0 4px; padding: 10px 14px; font-family: var(--mono); font-size: 13px; line-height: 1.45;
+  color: var(--suave); background: rgba(12, 10, 40, 0.92); box-shadow: inset 0 0 0 2px rgba(255, 210, 63, 0.55); clip-path: var(--recorte);
+}
+.aviso-arquivo a { color: var(--ciano); white-space: nowrap; }
+.modo-arquivo .modo-nome { color: var(--amarelo); }
+.fim-arquivo {
+  margin: 10px auto 0; max-width: 34em; padding: 8px 14px; font-family: var(--mono); font-size: 14px; line-height: 1.45;
+  color: var(--texto); background: rgba(12, 10, 40, 0.85); box-shadow: inset 0 0 0 2px rgba(125, 255, 176, 0.6);
+}
+.fim-arquivo.extra { box-shadow: inset 0 0 0 2px rgba(255, 210, 63, 0.7); color: var(--amarelo); }
+.botao-arquivo { padding: 12px 16px; font-weight: 700; letter-spacing: 2px; font-size: 14px; text-decoration: none; }
+.dica-arquivo { flex-basis: 100%; font-size: 12px; letter-spacing: 0.08em; color: var(--suave); }
+.abrir-arquivos-fim { display: block; width: 100%; margin: 4px 0 6px; padding: 12px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; font-size: 14px; letter-spacing: 2px; }
+
+.janela-arquivos { width: min(560px, calc(100% - 32px)); }
+.janela-arquivos[open] { max-height: calc(100% - 48px); }
+.regra-arquivos {
+  margin: 0 0 8px; padding: 10px 12px; font-family: var(--mono); font-size: 12px; line-height: 1.45; color: var(--suave);
+  background: rgba(12, 10, 40, 0.97); box-shadow: inset 0 0 0 2px rgba(255, 210, 63, 0.45);
+}
+.regra-arquivos b { color: var(--amarelo); }
+.lista-arquivos { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; overflow-y: auto; min-height: 0; }
+.dia-arquivo { padding: 12px 14px; background: rgba(12, 10, 40, 0.97); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.3); }
+.dia-topo { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.dia-topo b { font-size: 13px; letter-spacing: 0.14em; }
+.dia-situacao { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; color: var(--suave); }
+.dia-situacao.no-dia { color: #7dffb0; }
+.dia-situacao.fora { color: var(--amarelo); }
+.dia-temas { margin: 6px 0 0; font-family: var(--mono); font-size: 12px; line-height: 1.4; color: var(--suave); }
+.dia-botoes { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.dia-botoes a { flex: 1; min-width: 130px; padding: 9px 10px; text-align: center; text-decoration: none; font-weight: 700; font-size: 12px; letter-spacing: 0.14em; }
+.arquivos-status { margin: 8px 0 0; font-family: var(--mono); font-size: 12px; color: var(--suave); text-align: center; }
+.arquivos-status:empty { display: none; }
+.mais-arquivos { margin-top: 8px; padding: 10px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; font-size: 12px; letter-spacing: 0.14em; }
+
+/* ícone da pasta em pixel art (botões e título dos arquivos) */
+.icone-arquivos { width: 18px; height: 16px; flex: none; image-rendering: pixelated; vertical-align: -3px; filter: drop-shadow(0 0 4px rgba(255, 184, 77, 0.45)); }
+#abrir-arquivos { display: inline-flex; align-items: center; gap: 7px; }
+#abrir-arquivos:hover .icone-arquivos { animation: pasta-pular 0.5s steps(2) infinite; }
+.abrir-arquivos-fim { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.abrir-arquivos-fim .icone-arquivos { width: 27px; height: 24px; }
+.titulo-arquivos { display: inline-flex; align-items: center; gap: 8px; }
+@keyframes pasta-pular { 50% { transform: translateY(-2px); } }
+@media (prefers-reduced-motion: reduce) { #abrir-arquivos:hover .icone-arquivos { animation: none; } }
+
+/* recorde: a melhor 1ª viagem deste navegador */
+.melhor { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; color: #dfe6ff; text-shadow: 0 2px 0 rgba(0, 0, 30, 0.55); }
+.melhor b { color: var(--amarelo); font-size: 15px; letter-spacing: 0.06em; text-shadow: 0 0 8px rgba(255, 210, 63, 0.6); }
+.melhor .melhor-rotulo { color: var(--amarelo); }
+.melhor .melhor-dia { color: var(--suave); }
+.melhor-fim { margin: 10px 0 0; }
