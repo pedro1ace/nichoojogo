@@ -1,4 +1,4 @@
-// Duas tarefas, antes de qualquer página:
+// Três tarefas, antes de qualquer página:
 //
 // 1. Manda quem entra por um endereço velho para o endereço oficial, nichoojogo.com.
 //      nichoojogo.pages.dev/qualquer-coisa  ->  https://nichoojogo.com/qualquer-coisa
@@ -8,6 +8,11 @@
 // 2. Esconde o que não é do jogo. O Pages publica a pasta inteira do repositório,
 //    então README, LICENSE, dados/, scripts/, docs/ e banco/ ficariam abertos.
 //    Aqui só passam as páginas da lista abaixo e a API; o resto dá 404.
+//
+// 3. O jogo abre direto em nichoojogo.com/, sem página de "redirecionando".
+//    O arquivo continua sendo jogar.html (é o que os scripts geram); aqui ele é
+//    servido em "/". Links antigos para /jogar levam um 301 para "/" (o Pages já
+//    manda /jogar.html para /jogar sozinho).
 //
 // Os arquivos do jogo (jogo/, licencas/, favicons) nem passam por aqui: estão no
 // "exclude" do _routes.json, para não gastar uma execução por imagem ou script.
@@ -26,15 +31,27 @@ const PUBLICOS = new Set([
 
 const publico = (caminho) => PUBLICOS.has(caminho) || caminho.startsWith("/api/");
 
-export async function onRequest({ request, next }) {
+const ANTIGOS_DO_JOGO = new Set(["/jogar", "/jogar.html", "/index", "/index.html"]);
+
+export async function onRequest({ request, next, env }) {
   const url = new URL(request.url);
   if (!publico(url.pathname)) return new Response("Não encontrado", { status: 404 });
+  if (ANTIGOS_DO_JOGO.has(url.pathname) && (request.method === "GET" || request.method === "HEAD")) {
+    url.pathname = "/";
+    if (VELHOS.has(url.hostname)) { url.hostname = OFICIAL; url.protocol = "https:"; url.port = ""; }
+    return Response.redirect(url.toString(), 301);
+  }
   // POST da pontuação segue no endereço onde a página abriu, para não perder a viagem
   if (VELHOS.has(url.hostname) && (request.method === "GET" || request.method === "HEAD")) {
     url.hostname = OFICIAL;
     url.protocol = "https:";
     url.port = "";
     return Response.redirect(url.toString(), 301);
+  }
+  if (url.pathname === "/") {
+    const jogo = new URL(url);
+    jogo.pathname = "/jogar";
+    return env.ASSETS.fetch(new Request(jogo, request));
   }
   return next();
 }

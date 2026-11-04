@@ -35,10 +35,23 @@ function dataDeTeste() {
 }
 const DATA_TESTE = dataDeTeste();
 const MODO_TESTE = ALEATORIO || DATA_TESTE !== null;
+// ARQUIVOS (dias anteriores):
+// - ?arquivo=2026-11-01 abre um dia que já passou. Se você nunca jogou aquele dia, essa é a sua
+//   1ª viagem dele e fica guardada como a que conta (mas fora do dia não entra na curva nem no
+//   placar futuro). Se já jogou, mostra o relatório da sua 1ª viagem.
+// - ?arquivo=2026-11-01&novamente joga de novo um dia já terminado. Jogada extra: não conta,
+//   não substitui a 1ª e não é enviada para lugar nenhum.
+// O dia de hoje nunca abre pelo arquivo (nem tem "jogar novamente"): só dias anteriores.
+const ARQUIVO = (() => {
+  const d = PARAMS.get("arquivo");
+  if (MODO_TESTE || !d || !/^\d{4}-\d{2}-\d{2}$/.test(d)) return null;
+  return d >= LANCAMENTO && d < hojeLocal() ? d : null;
+})();
+const NOVAMENTE = ARQUIVO !== null && PARAMS.has("novamente");
 // Link do botão "Apoie o criador" no fim do jogo. Enquanto estiver vazio, o botão
 // aparece como "EM BREVE" e não clica. Para ativar, cole o link entre as aspas.
 const LINK_APOIO = "";
-const LINK_JOGO = "https://nichoojogo.com/jogar";
+const LINK_JOGO = "https://nichoojogo.com";
 
 // ---------- texto e autocorreção ----------
 
@@ -151,7 +164,8 @@ function sequencia() {
   const completo = (d) => {
     try {
       const v = JSON.parse(localStorage.getItem(chave(d)) || "null");
-      return !!v && v.historico && v.historico.length >= RODADAS_POR_DIA;
+      // viagem feita pelo arquivo (fora do dia) não emenda a sequência
+      return !!v && v.historico && v.historico.length >= RODADAS_POR_DIA && foiNoDia(v);
     } catch {
       return false;
     }
@@ -312,10 +326,12 @@ function avisarSkinNova(seq) {
 // "DIA #3 · SEQUÊNCIA 2" no menu e no fim. A sequência são os dias seguidos com a viagem
 // completa, guardados neste navegador; ela zera quando você pula um dia.
 function mostrarDiaESequencia() {
-  const seq = MODO_TESTE ? 0 : sequencia();
+  const seq = MODO_TESTE || ARQUIVO ? 0 : sequencia();
   const texto = DATA_TESTE
     ? `DIA #${numeroDoDia(estado.data)} · MODO TESTE`
-    : `DIA #${numeroDoDia(estado.data)} · SEQUÊNCIA ${seq}`;
+    : ARQUIVO
+      ? `DIA #${numeroDoDia(estado.data)} · ${dataCurta(estado.data)} · ARQUIVO${estado.replay ? " · JOGADA EXTRA" : ""}`
+      : `DIA #${numeroDoDia(estado.data)} · SEQUÊNCIA ${seq}`;
   $("dia").textContent = texto;
   $("fim-dia").textContent = texto;
   return seq;
@@ -325,21 +341,53 @@ function numeroDoDia(data) {
   return Math.round((new Date(data + "T12:00") - new Date(LANCAMENTO + "T12:00")) / 86400000) + 1;
 }
 
+// "seg 02/11"
+function dataCurta(dia) {
+  const d = new Date(dia + "T12:00");
+  const semana = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"][d.getDay()];
+  return `${semana} ${dia.slice(8, 10)}/${dia.slice(5, 7)}`;
+}
+
 // Progresso do dia fica no navegador, para não perder ao recarregar.
 // Se o armazenamento estiver bloqueado, o jogo funciona igual, só não lembra.
+//
+// Duas chaves por dia, pensando no placar diário com conta que vem depois:
+//   nicho:v7:<dia>      a 1ª viagem do dia, a ÚNICA que conta. Nunca é sobrescrita por outra.
+//                       { historico, total, inicio, fim, noDia }
+//                       inicio/fim: o dia (no relógio do jogador) em que começou e terminou;
+//                       noDia: terminou no próprio dia? Só essas entram na sequência (e, no
+//                       futuro, no placar). Registros antigos, sem noDia, são todos do próprio dia.
+//   nicho:replay:<dia>  a última "jogada extra" pelos ARQUIVOS. Não conta para nada; fica só para
+//                       continuar se a página recarregar no meio. Uma por dia, não acumula.
+const chaveOficial = (dia) => `nicho:v7:${dia}`;
+const chaveReplay = (dia) => `nicho:replay:${dia}`;
+const foiNoDia = (v) => !!v && v.noDia !== false;
+const completa = (v) => !!v && Array.isArray(v.historico) && v.historico.length >= RODADAS_POR_DIA;
+function lerRegistro(chave) {
+  try {
+    return JSON.parse(localStorage.getItem(chave) || "null");
+  } catch {
+    return null;
+  }
+}
+
 function salvarProgresso() {
   if (MODO_TESTE) return;
+  const registro = { historico: estado.historico, total: estado.total };
+  if (!estado.replay) {
+    registro.inicio = estado.inicio || (estado.inicio = hojeLocal());
+    if (estado.historico.length >= estado.categorias.length) {
+      registro.fim = estado.fim || (estado.fim = hojeLocal());
+      registro.noDia = registro.fim === estado.data;
+    }
+  }
   try {
-    localStorage.setItem(`nicho:v7:${estado.data}`, JSON.stringify({ historico: estado.historico, total: estado.total }));
+    localStorage.setItem(estado.replay ? chaveReplay(estado.data) : chaveOficial(estado.data), JSON.stringify(registro));
   } catch {}
 }
 function lerProgresso() {
   if (MODO_TESTE) return null;
-  try {
-    return JSON.parse(localStorage.getItem(`nicho:v7:${estado.data}`) || "null");
-  } catch {
-    return null;
-  }
+  return lerRegistro(estado.replay ? chaveReplay(estado.data) : chaveOficial(estado.data));
 }
 
 // ---------- estado e tela ----------
@@ -352,18 +400,27 @@ const ICONE_NORMAL = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYA
 const ICONE_OURO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAmklEQVR4nGNgGAWjYBQMMGBEF/j/cdl/rAr5oxipIY8OmIh1Ka0A3FW4XE51C9FCYvCEwKdDBnQJARjgs7vAyMAwCEKAhV4+90i6wMDAwMCwY54BiviAhwAjveMeHQx4CLAMlMWDJhfAy4EVBTx0SQsRE74M0pIQPQTQXUor+cETAv9/P0BxISOrAooPaCU/4CEwCkbBKBhwAAD6hUIFtihZUgAAAABJRU5ErkJggg==";
 
 function atualizarIconeAba(dourado = false) {
-  let link = document.querySelector("link[rel*='icon']");
-  if (!link) {
-    link = document.createElement("link");
+  // troca todos os ícones da aba (o navegador escolhe qualquer um deles)
+  let links = document.querySelectorAll("link[rel~='icon']");
+  if (!links.length) {
+    const link = document.createElement("link");
     link.rel = "icon";
     document.head.appendChild(link);
+    links = [link];
   }
-  link.type = "image/png";
-  link.href = dourado ? ICONE_OURO : ICONE_NORMAL;
+  for (const link of links) {
+    link.type = "image/png";
+    link.removeAttribute("sizes");
+    link.href = dourado ? ICONE_OURO : ICONE_NORMAL;
+  }
 }
 
 const estado = {
-  data: DATA_TESTE || hojeLocal(),
+  data: DATA_TESTE || ARQUIVO || hojeLocal(),
+  replay: false, // jogada extra de um dia do arquivo (não conta)
+  oficial: null, // no arquivo: a sua 1ª viagem daquele dia, se já existir
+  inicio: null,
+  fim: null,
   categorias: [],
   rodada: 0,
   total: 0,
@@ -441,8 +498,23 @@ async function iniciar() {
   montarSkins();
   $("som").classList.toggle("mudo", Som.estaMudo());
 
+  if (ARQUIVO) {
+    estado.oficial = lerRegistro(chaveOficial(estado.data));
+    estado.replay = NOVAMENTE && completa(estado.oficial);
+    // "jogar novamente" num dia que você ainda não terminou: vale como a 1ª viagem mesmo
+    if (NOVAMENTE && !estado.replay) history.replaceState(null, "", urlDoArquivo(estado.data));
+    // jogada extra que já tinha terminado: começa outra do zero
+    if (estado.replay && completa(lerProgresso())) {
+      try { localStorage.removeItem(chaveReplay(estado.data)); } catch {}
+    }
+    mostrarInicioDoArquivo();
+    mostrarDiaESequencia();
+  }
+
   const salvo = lerProgresso();
   if (salvo) {
+    estado.inicio = salvo.inicio || null;
+    estado.fim = salvo.fim || null;
     estado.historico = salvo.historico;
     estado.total = estado.totalMostrado = salvo.total;
     estado.rodada = salvo.historico.length;
@@ -451,6 +523,7 @@ async function iniciar() {
     $("pontos").textContent = numero(estado.total);
   }
   montarQuadrados();
+  mostrarMelhor();
   if (estado.rodada >= estado.categorias.length) {
     $("inicio").hidden = true;
     $("hud").hidden = false;
@@ -461,6 +534,48 @@ async function iniciar() {
   if (estado.rodada > 0) {
     $("comecar").textContent = "▼ CONTINUAR VIAGEM ▼";
   }
+}
+
+// Tela inicial de um dia do arquivo: diz que dia é e que só a 1ª viagem conta.
+function mostrarInicioDoArquivo() {
+  document.documentElement.classList.add("modo-arquivo");
+  $("modo-nome").textContent = estado.replay ? "JOGADA EXTRA" : "VIAGEM DO ARQUIVO";
+  $("comecar").textContent = estado.replay ? "▼ JOGAR NOVAMENTE ▼" : `▼ JOGAR O DIA #${numeroDoDia(estado.data)} ▼`;
+  const aviso = $("aviso-arquivo");
+  aviso.hidden = false;
+  aviso.querySelector(".texto").textContent = estado.replay
+    ? `Você já jogou este dia (${numero(estado.oficial.total)} pontos). Só a 1ª viagem conta: esta é só por diversão.`
+    : "Só a 1ª viagem de cada dia conta, e ela entra na curva dos viajantes. O placar é só de quem joga no próprio dia.";
+}
+
+// A melhor pontuação deste navegador: só a 1ª viagem de cada dia conta (as jogadas extras ficam fora).
+function melhorPontuacao() {
+  let melhor = null;
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (!k || !/^nicho:v7:\d{4}-\d{2}-\d{2}$/.test(k)) continue;
+      const v = lerRegistro(k);
+      if (!completa(v) || typeof v.total !== "number") continue;
+      const dia = k.slice("nicho:v7:".length);
+      if (!melhor || v.total > melhor.total) melhor = { total: v.total, dia };
+    }
+  } catch {}
+  return melhor;
+}
+function mostrarMelhor() {
+  const m = MODO_TESTE ? null : melhorPontuacao();
+  for (const id of ["melhor-inicio", "melhor-fim"]) {
+    const el = $(id);
+    if (!el) continue;
+    el.hidden = !m;
+    if (m) el.innerHTML = `<span class="melhor-rotulo">★ SEU RECORDE</span> <b>${numero(m.total)}</b> <span class="melhor-dia">DIA #${numeroDoDia(m.dia)}</span>`;
+  }
+}
+
+// Endereço de um dia do arquivo, na mesma página (funciona em /jogar, /jogo/ e no arquivo baixado).
+function urlDoArquivo(dia, novamente = false) {
+  return `${location.pathname}?arquivo=${dia}${novamente ? "&novamente" : ""}`;
 }
 
 // profundidade total do dia: soma da viagem de cada resposta
@@ -861,12 +976,44 @@ function mostrarFim(comSom) {
   montarRespostas();
 
   const seq = mostrarDiaESequencia();
-  if (!MODO_TESTE) avisarSkinNova(seq);
+  if (!MODO_TESTE && !ARQUIVO) avisarSkinNova(seq);
   const icones = estado.historico.map((h) => (h.resposta ? faixaDe(h.pontos, h.supernova, h.espertalhao).emoji : "⚫"));
+  const marcaArquivo = !ARQUIVO ? "" : estado.replay ? " · 📂 arquivo, jogada extra" : " · 📂 arquivo";
   $("compartilhar").textContent =
-    `NICHO · DIA #${numeroDoDia(estado.data)}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
+    `NICHO · DIA #${numeroDoDia(estado.data)}${marcaArquivo}${seq > 1 ? ` · 🔥 ${seq} dias seguidos` : ""}\n${icones.join(" ")}\n${numero(estado.total)} pontos · ↓ ${numero(anosLuzDoDia())} AL ${skinEscolhida() === "alien" ? "🛸" : "🐻"}\n${LINK_JOGO}`;
   $("enviar").hidden = !navigator.share;
-  contarAteAmanha();
+  if (ARQUIVO) mostrarFimDoArquivo();
+  else contarAteAmanha();
+  mostrarMelhor();
+}
+
+// No fim de um dia do arquivo: deixa claro qual viagem conta e oferece jogar de novo
+// (só em dias anteriores; o dia de hoje não tem "jogar novamente").
+function mostrarFimDoArquivo() {
+  const oficial = estado.replay ? estado.oficial : lerRegistro(chaveOficial(estado.data));
+  const nota = $("fim-arquivo");
+  nota.hidden = false;
+  nota.className = "fim-arquivo" + (estado.replay ? " extra" : "");
+  nota.textContent = estado.replay
+    ? `JOGADA EXTRA · NÃO CONTA. Sua 1ª viagem neste dia: ${numero(oficial.total)} pontos. Essa é a que vale.`
+    : foiNoDia(oficial)
+      ? "Sua 1ª viagem, feita no próprio dia. É a que conta."
+      : "Sua 1ª viagem deste dia, feita pelo arquivo. É a que conta e entrou na curva dos viajantes. O placar é só de quem jogou no próprio dia.";
+  if (estado.replay) history.replaceState(null, "", urlDoArquivo(estado.data));
+  const el = $("amanha");
+  el.innerHTML = "";
+  const novamente = document.createElement("a");
+  novamente.className = "botao-rosa botao-arquivo";
+  novamente.href = urlDoArquivo(estado.data, true);
+  novamente.textContent = "↻ JOGAR NOVAMENTE";
+  const hoje = document.createElement("a");
+  hoje.className = "botao-escuro botao-arquivo";
+  hoje.href = location.pathname;
+  hoje.textContent = "IR PARA O DIA DE HOJE";
+  const dica = document.createElement("span");
+  dica.className = "dica-arquivo";
+  dica.textContent = "jogar de novo é só por diversão: a pontuação que conta é sempre a da 1ª viagem";
+  el.append(novamente, hoje, dica);
 }
 
 function montarGrafico() {
@@ -916,7 +1063,8 @@ const API_RESPOSTAS = "/api/respostas";
 
 // Cada navegador conta uma resposta aceita por categoria por dia; recusadas contam a cada tentativa.
 function enviarResposta(cat, corpo) {
-  if (location.protocol === "file:" || MODO_TESTE || !cat.id) return;
+  // viagens pelo arquivo não são enviadas: a contagem é de quem joga no dia
+  if (location.protocol === "file:" || MODO_TESTE || ARQUIVO || !cat.id) return;
   const chave = `nicho:resposta:${estado.data}:${cat.id}`;
   if (corpo.resposta) {
     if (lerChave(chave)) return;
@@ -953,7 +1101,9 @@ function mostrarCurva() {
   try {
     jaEnviou = !!localStorage.getItem(chave);
   } catch {}
-  const mandar = !MODO_TESTE && !jaEnviou;
+  // só a 1ª viagem de cada dia entra na curva, também quando é feita pelo arquivo;
+  // a jogada extra só lê a curva
+  const mandar = !MODO_TESTE && !estado.replay && !jaEnviou;
   const pedido = mandar
     ? fetch(API_PONTUACAO, {
         method: "POST",
@@ -1021,7 +1171,9 @@ function desenharCurva(c, pontos) {
   secao.hidden = false;
   if (c.total < 5) {
     $("curva").hidden = true;
-    $("curva-texto").textContent = "Você está entre os primeiros viajantes de hoje. Volte mais tarde para ver onde ficou na curva.";
+    $("curva-texto").textContent = ARQUIVO
+      ? "Poucos viajantes jogaram este dia, ainda não dá para desenhar a curva."
+      : "Você está entre os primeiros viajantes de hoje. Volte mais tarde para ver onde ficou na curva.";
     return;
   }
   $("curva").hidden = false;
@@ -1091,7 +1243,11 @@ function desenharCurva(c, pontos) {
   const pct = Math.round(percentilNaCurva(c, pontos) * 100);
   $("curva-texto").textContent = MODO_TESTE
     ? `Modo teste: sua viagem não entrou na curva, mas ficaria acima de ${pct}% dos viajantes de hoje.`
-    : pct >= 99
+    : estado.replay
+      ? `Jogada extra: não entrou na curva, mas ficaria acima de ${pct}% dos viajantes daquele dia.`
+      : ARQUIVO
+        ? `Você foi mais fundo que ${pct}% dos viajantes daquele dia.`
+        : pct >= 99
       ? "Você foi mais fundo que 99% dos viajantes de hoje. Poucos chegaram tão longe!"
       : `Você foi mais fundo que ${pct}% dos viajantes de hoje.`;
 }
@@ -1410,6 +1566,119 @@ function enviar() {
   navigator.share?.({ text: $("compartilhar").textContent }).catch(() => {});
 }
 
+// ---------- arquivos: dias anteriores ----------
+// A lista vem de /api/arquivo (functions/api/arquivo.js), 30 dias por vez: só a data, o número
+// e os temas. As perguntas de um dia só são baixadas quando você abre aquele dia (/api/dia),
+// então o jogo não fica mais pesado conforme os dias se acumulam.
+// Sem internet ou aberto do computador (file://), a lista sai do window.NICHO_DADOS, se houver.
+const API_ARQUIVO = "/api/arquivo";
+const arquivos = { carregados: [], mais: false, carregando: false, iniciado: false };
+
+function abrirArquivos() {
+  const j = $("janela-arquivos");
+  if (typeof j.showModal !== "function") return;
+  j.showModal();
+  j.querySelector(".fechar").focus();
+  if (!arquivos.iniciado) {
+    arquivos.iniciado = true;
+    carregarArquivos();
+  } else {
+    montarListaArquivos(); // o progresso pode ter mudado
+  }
+}
+
+async function carregarArquivos() {
+  if (arquivos.carregando) return;
+  arquivos.carregando = true;
+  const status = $("arquivos-status");
+  status.textContent = "carregando…";
+  $("mais-arquivos").hidden = true;
+  const ultimo = arquivos.carregados[arquivos.carregados.length - 1];
+  let pagina = null;
+  if (location.protocol !== "file:") {
+    try {
+      const r = await fetch(`${API_ARQUIVO}?limite=30${ultimo ? `&antes=${ultimo.dia}` : ""}`);
+      if (r.ok) pagina = await r.json();
+    } catch {}
+  }
+  if (!pagina || !Array.isArray(pagina.dias)) pagina = arquivosDoPacote(ultimo ? ultimo.dia : null);
+  const hoje = hojeLocal();
+  arquivos.carregados.push(...pagina.dias.filter((d) => d.dia < hoje && d.dia >= LANCAMENTO));
+  arquivos.mais = !!pagina.mais;
+  arquivos.carregando = false;
+  montarListaArquivos();
+}
+
+// Plano B, sem a API: monta a lista com as categorias que já estão no navegador.
+function arquivosDoPacote(antes) {
+  const dados = window.NICHO_DADOS;
+  if (!dados) return { dias: [], mais: false };
+  const dias = [];
+  const d = new Date((antes || hojeLocal()) + "T12:00");
+  const p = (n) => String(n).padStart(2, "0");
+  for (let i = 0; i < 3650; i++) {
+    d.setDate(d.getDate() - 1);
+    const dia = `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+    if (dia < LANCAMENTO) break;
+    const titulos = categoriasDoDia(dados.indice, dia, dados.ordem).map((c) => c.titulo);
+    dias.push({ dia, numero: numeroDoDia(dia), titulos });
+  }
+  return { dias, mais: false };
+}
+
+function montarListaArquivos() {
+  const lista = $("lista-arquivos");
+  lista.innerHTML = "";
+  for (const d of arquivos.carregados) {
+    const oficial = lerRegistro(chaveOficial(d.dia));
+    const li = document.createElement("li");
+    li.className = "dia-arquivo";
+    const topo = document.createElement("div");
+    topo.className = "dia-topo";
+    const nome = document.createElement("b");
+    nome.textContent = `DIA #${d.numero} · ${dataCurta(d.dia)}`;
+    const situacao = document.createElement("span");
+    situacao.className = "dia-situacao";
+    if (completa(oficial)) {
+      situacao.textContent = `${numero(oficial.total)} PTS · ${foiNoDia(oficial) ? "NO DIA" : "PELO ARQUIVO"}`;
+      situacao.classList.add(foiNoDia(oficial) ? "no-dia" : "fora");
+      situacao.title = "A pontuação da sua 1ª viagem neste dia. É a que conta.";
+    } else {
+      situacao.textContent = oficial ? "PELA METADE" : "NÃO JOGADO";
+    }
+    topo.append(nome, situacao);
+    li.append(topo);
+    // os temas só aparecem depois que você termina o dia: para quem não jogou, são surpresa
+    if (completa(oficial) && d.titulos && d.titulos.length) {
+      const temas = document.createElement("p");
+      temas.className = "dia-temas";
+      temas.textContent = d.titulos.join(" · ");
+      li.append(temas);
+    }
+    const botoes = document.createElement("div");
+    botoes.className = "dia-botoes";
+    const botao = (texto, href, classe) => {
+      const a = document.createElement("a");
+      a.className = classe;
+      a.href = href;
+      a.textContent = texto;
+      botoes.append(a);
+    };
+    if (completa(oficial)) {
+      botao("VER RELATÓRIO", urlDoArquivo(d.dia), "botao-escuro");
+      botao("↻ JOGAR NOVAMENTE", urlDoArquivo(d.dia, true), "botao-rosa");
+    } else {
+      botao(oficial ? "▼ CONTINUAR" : "▼ JOGAR", urlDoArquivo(d.dia), "botao-rosa");
+    }
+    li.append(botoes);
+    lista.append(li);
+  }
+  $("arquivos-status").textContent = arquivos.carregados.length
+    ? ""
+    : "Ainda não há dias anteriores para abrir.";
+  $("mais-arquivos").hidden = !arquivos.mais;
+}
+
 // ---------- eventos ----------
 
 $("comecar").addEventListener("click", comecar);
@@ -1486,6 +1755,9 @@ $("copiar").addEventListener("click", copiar);
 $("enviar").addEventListener("click", enviar);
 $("abrir-skins").addEventListener("click", () => abrirJanela("janela-skins"));
 $("abrir-opcoes").addEventListener("click", () => abrirJanela("janela-opcoes"));
+$("abrir-arquivos").addEventListener("click", abrirArquivos);
+$("abrir-arquivos-fim").addEventListener("click", abrirArquivos);
+$("mais-arquivos").addEventListener("click", carregarArquivos);
 $("som").addEventListener("click", () => {
   Som.ligar();
   $("som").classList.toggle("mudo", Som.alternar());

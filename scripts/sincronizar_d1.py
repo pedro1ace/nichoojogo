@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Gera e sincroniza o payload de cada dia no banco Cloudflare D1 (tabela 'dias').
+"""Gera e sincroniza o payload de cada dia no banco Cloudflare D1 (tabelas 'dias' e 'resumo_dias').
+
+'dias' guarda o pacote completo de cada dia (as 7 categorias com todas as respostas).
+'resumo_dias' guarda só a data, o número e os 7 temas: é o que a aba ARQUIVOS lista
+(/api/arquivo), sem precisar abrir os pacotes grandes.
 
 Uso:
     python3 scripts/sincronizar_d1.py             # gera arquivo SQL para importar no D1
@@ -80,6 +84,7 @@ def exportar_sql(dias: dict[str, dict]) -> None:
     linhas_sql = [
         "-- Carga dos dias no Cloudflare D1",
         "CREATE TABLE IF NOT EXISTS dias (dia TEXT NOT NULL PRIMARY KEY, payload TEXT NOT NULL, criado_em TEXT NOT NULL DEFAULT (datetime('now')));",
+        "CREATE TABLE IF NOT EXISTS resumo_dias (dia TEXT NOT NULL PRIMARY KEY, numero INTEGER NOT NULL, titulos TEXT NOT NULL);",
     ]
     for dia_str, payload in dias.items():
         payload_json = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
@@ -88,6 +93,11 @@ def exportar_sql(dias: dict[str, dict]) -> None:
         linhas_sql.append(
             f"INSERT INTO dias (dia, payload) VALUES ('{dia_str}', '{payload_esc}') "
             f"ON CONFLICT(dia) DO UPDATE SET payload = excluded.payload, criado_em = datetime('now');"
+        )
+        titulos = json.dumps([c["titulo"] for c in payload["categorias"]], ensure_ascii=False).replace("'", "''")
+        linhas_sql.append(
+            f"INSERT INTO resumo_dias (dia, numero, titulos) VALUES ('{dia_str}', {payload['numero']}, '{titulos}') "
+            f"ON CONFLICT(dia) DO UPDATE SET numero = excluded.numero, titulos = excluded.titulos;"
         )
 
     SQL_OUT.write_text("\n".join(linhas_sql) + "\n", encoding="utf-8")
