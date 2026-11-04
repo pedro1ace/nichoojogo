@@ -40,8 +40,8 @@ jobs:
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       # Tudo automático, sem PR: o resultado entra direto no main. As travas estão no próprio
-      # plantão: só apelidos de erros de digitação óbvios e respostas que a IA aprovou, que 2 ou
-      # mais pessoas deram e que não caem em dados/bloqueadas.js. O relatório do dia fica no
+      # plantão: só apelidos de erros de digitação óbvios e respostas que a IA aprovou e que não
+      # caem em dados/bloqueadas.js. O relatório do dia fica no
       # resumo desta execução (aba Actions) e no histórico do commit.
       - name: Gravar no main
         id: gravar

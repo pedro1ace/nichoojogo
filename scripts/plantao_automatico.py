@@ -5,7 +5,7 @@ Etapas:
   1. Baixa as respostas recusadas do dia no ar de https://nichoojogo.com/api/respostas?recusadas=1
   2. Salva o CSV de auditoria em dados/sinais/revisao/recusadas-<dia>.csv
   3. Identifica erros de digitação óbvios (n >= 2, similaridade >= 0.88) e adiciona apelidos seguros,
-     e põe na lista as respostas que a IA aprovou (functions/api/juiz.js) e 2 ou mais pessoas deram
+     e põe na lista as respostas que a IA aprovou (functions/api/juiz.js), menos as de dados/bloqueadas.js
   4. Executa fama.py nas categorias modificadas
   5. Sincroniza carga do D1 (banco/carga_dias.sql) e empacota o jogo (jogar.html)
   6. Confere integridade dos próximos dias (fama.py --conferir)
@@ -91,7 +91,7 @@ def bloqueada(texto: str, lista: list[str]) -> bool:
     return any(f" {p} " in t for p in lista)
 
 
-MINIMO_APROVADA = 2  # quantas vezes (somando todas as formas) a aprovada precisa ter sido digitada
+MINIMO_APROVADA = 1  # basta 1 jogador: quem voltar pelo arquivo encontra a mesma resposta valendo
 
 
 def adicionar_aprovadas(linhas_csv: list[dict], cache_cat: dict, modificadas: set[str]) -> tuple[list, list]:
@@ -157,7 +157,16 @@ def executar_plantao() -> dict:
     REVISAO.mkdir(parents=True, exist_ok=True)
 
     print(f"=== Iniciando Plantão Diário Automático: {hoje} ===")
-    recusadas = baixar_recusadas(hoje)
+    # o plantão roda às 20h: as recusadas de ontem depois das 20h entram junto com as de hoje
+    ontem = (dt.date.fromisoformat(hoje) - dt.timedelta(days=1)).isoformat()
+    juntas: dict[tuple[str, str], dict] = {}
+    for r in baixar_recusadas(ontem) + baixar_recusadas(hoje):
+        chave = (r.get("categoria", ""), r.get("texto", ""))
+        if chave in juntas:
+            juntas[chave]["n"] = int(juntas[chave].get("n", 1)) + int(r.get("n", 1))
+        else:
+            juntas[chave] = dict(r)
+    recusadas = list(juntas.values())
     print(f"Total de respostas recusadas recebidas: {len(recusadas)}")
 
     linhas_csv = []
@@ -227,7 +236,7 @@ def executar_plantao() -> dict:
                     })
 
     # Aprovadas pela IA (functions/api/juiz.js): o nome no padrão vira resposta nova e as formas que
-    # os jogadores digitaram viram os apelidos dela. Só entram sozinhas as que 2 ou mais pessoas deram.
+    # os jogadores digitaram viram os apelidos dela. Entram sozinhas, menos as de dados/bloqueadas.js.
     aprovadas_ia, sugeridas_ia = adicionar_aprovadas(linhas_csv, cache_cat, categorias_modificadas)
 
     # Grava CSV de auditoria
@@ -272,8 +281,7 @@ def executar_plantao() -> dict:
     if aprovadas_ia or sugeridas_ia:
         resumo_md.extend([
             "### 🤖 Aprovadas pela IA",
-            "Entraram sozinhas na lista as que 2 ou mais pessoas digitaram (as formas digitadas viram apelidos).",
-            "As de 1 pessoa só ficam como sugestão.",
+            "Entraram sozinhas na lista (as formas digitadas viram apelidos), menos as que caem em dados/bloqueadas.js.",
             "",
             "| Categoria | Linha (resposta \\| apelidos) | Vezes | Situação |",
             "|---|---|---|---|",
