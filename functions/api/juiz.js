@@ -6,7 +6,9 @@
 // vão para a revisão diária (o veredito aparece em /api/respostas?recusadas=1).
 //
 //   POST /api/juiz {dia, categoria, texto}
-//     -> {veredito: "aceita" | "recusada" | "duvida" | "indisponivel", nome?}
+//     -> {veredito: "aceita" | "recusada" | "duvida" | "indisponivel", nome?, motivo?}
+//   GET  /api/juiz   diagnóstico: se este ambiente tem o banco e a IA, quantas chamadas hoje e
+//                    os últimos vereditos (não chama a IA, então não gasta nada)
 //
 // Custo: o plano grátis da Cloudflare dá 10.000 "neurônios" por dia (zeram 00:00 UTC). Cada
 // julgamento com o modelo abaixo gasta ~11, então cabem ~900 por dia. Para nunca chegar perto:
@@ -124,6 +126,25 @@ async function criarTabelas(db) {
   tabelasProntas = true;
 }
 
+let ultimoErro = null;
+
+export async function onRequestGet({ env }) {
+  const estado = { banco: !!env.DB, ia: !!env.AI, modelo: MODELO, teto_diario: TETO_DIARIO, ultimo_erro: ultimoErro };
+  if (env.DB) {
+    try {
+      await criarTabelas(env.DB);
+      const hojeUtc = new Date().toISOString().slice(0, 10);
+      estado.chamadas_hoje = (await env.DB.prepare("SELECT n FROM juiz_uso WHERE dia = ?").bind(hojeUtc).first())?.n || 0;
+      estado.ultimos = (
+        await env.DB.prepare("SELECT categoria, texto, veredito, criado_em FROM juizo ORDER BY criado_em DESC LIMIT 20").all()
+      ).results;
+    } catch (erro) {
+      estado.erro_banco = String(erro).slice(0, 300);
+    }
+  }
+  return json(estado);
+}
+
 export async function onRequestPost({ request, env, waitUntil }) {
   let corpo;
   try {
@@ -137,7 +158,8 @@ export async function onRequestPost({ request, env, waitUntil }) {
   if (typeof texto !== "string" || texto.length > 80) return json({ erro: "resposta inválida" }, 400);
   const nome = limpar(texto);
   const chave = normalizar(nome);
-  if (chave.length < 3 || !env.DB) return json({ veredito: "indisponivel" });
+  if (chave.length < 3) return json({ veredito: "indisponivel", motivo: "resposta curta" });
+  if (!env.DB) return json({ veredito: "indisponivel", motivo: "sem o banco DB neste ambiente" });
   await criarTabelas(env.DB);
 
   // 1. já foi julgada? (vale para qualquer dia: a pergunta de uma categoria não muda)
@@ -145,10 +167,10 @@ export async function onRequestPost({ request, env, waitUntil }) {
     .bind(categoria, chave)
     .first();
   if (guardado) return json({ veredito: guardado.veredito, nome });
-  if (!env.AI) return json({ veredito: "indisponivel" });
+  if (!env.AI) return json({ veredito: "indisponivel", motivo: "sem o binding AI neste ambiente" });
 
   const cat = await lerCategoria(env.DB, dia, categoria);
-  if (!cat) return json({ veredito: "indisponivel" });
+  if (!cat) return json({ veredito: "indisponivel", motivo: "categoria fora do dia" });
 
   // 2. ainda cabe no teto de hoje? (o limite da Cloudflare zera à meia-noite UTC)
   const hojeUtc = new Date().toISOString().slice(0, 10);
@@ -157,7 +179,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
   )
     .bind(hojeUtc)
     .first();
-  if (!uso || uso.n > TETO_DIARIO) return json({ veredito: "indisponivel" });
+  if (!uso || uso.n > TETO_DIARIO) return json({ veredito: "indisponivel", motivo: "teto do dia" });
 
   // 3. pergunta à IA
   let veredito;
@@ -171,9 +193,10 @@ export async function onRequestPost({ request, env, waitUntil }) {
       temperature: 0,
     });
     veredito = lerVeredito(saida);
-  } catch {
+  } catch (erro) {
     // limite do dia esgotado, modelo fora do ar... o jogo segue como antes
-    return json({ veredito: "indisponivel" });
+    ultimoErro = { quando: new Date().toISOString(), erro: String(erro).slice(0, 300) };
+    return json({ veredito: "indisponivel", motivo: "erro da IA" });
   }
 
   const gravar = env.DB.prepare(

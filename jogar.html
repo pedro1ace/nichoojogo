@@ -5149,6 +5149,7 @@ function iniciarRodada() {
   avisar("", "");
   $("palpite").value = "";
   estado.tentadas = [];
+  estado.consultas = 0;
   mostrarPergunta(true);
   Som.pergunta(); // avisa que chegou pergunta nova
 
@@ -5402,12 +5403,15 @@ function recusar(cat, texto, ia) {
 const API_JUIZ = "/api/juiz";
 const PONTOS_IA = 40; // faixa "RARO": meio da régua (8 a 90)
 const ESPERA_JUIZ = 5000;
+const CONSULTAS_POR_RODADA = 3; // depois disso, recusa direto (ninguém fica gastando a IA no Enter)
 
 async function consultarJuiz(cat, texto) {
   const chave = `${cat.id}:${compactar(texto)}`;
   estado.vereditos ||= {};
   const ja = estado.vereditos[chave];
   if (ja && ja.veredito !== "aceita") return recusar(cat, texto, ja.veredito);
+  if (!ja && (estado.consultas || 0) >= CONSULTAS_POR_RODADA) return recusar(cat, texto);
+  if (!ja) estado.consultas = (estado.consultas || 0) + 1;
 
   const restaMs = Math.max(0, estado.fimDoTempo - performance.now());
   pararRelogio();
@@ -5431,6 +5435,7 @@ async function consultarJuiz(cat, texto) {
     } catch {}
     clearTimeout(prazo);
     if (resposta.veredito !== "indisponivel") estado.vereditos[chave] = resposta;
+    else if (resposta.motivo) console.info("juiz indisponível:", resposta.motivo);
   }
   $("palpite").disabled = false;
   if (estado.rodada !== rodada) return;
