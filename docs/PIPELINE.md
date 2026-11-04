@@ -46,6 +46,9 @@ Seguimos o mesmo método do Krillion:
 - [ ] Simulação nas categorias dos dias 8 a 11 e da fila (o `montar_jogo.py` lista as que faltam).
 - [ ] **Faixa "esperta"** (o "Too Clever" do Krillion): resposta fora da caixa que ainda vale, com festa própria.
 - [ ] **Supernova pela graça, não só pela raridade**: algo que poucos acertam, mas que alguns acertam de verdade.
+- [x] **Descrição da singularidade**: toda pergunta tem uma em `dados/singularidades.txt` (algo divertido ou curioso,
+      começando com maiúscula). Aparece no cartão do resultado e na lista do fim. `montar_jogo.py` e `sincronizar_d1.py`
+      param se faltar alguma ou se ela for de outra resposta; para conferir sozinho: `python3 scripts/singularidades.py`.
 - [ ] Meta: 50 perguntas revisadas antes do lançamento, depois umas 7 novas por semana.
 
 ### Categorias integradas e fontes
