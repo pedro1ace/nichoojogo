@@ -64,7 +64,7 @@ def parecidas(texto: str, cat: dict) -> tuple[str, str]:
 
 
 def main() -> None:
-    dia = sys.argv[1] if len(sys.argv) > 1 else dt.date.today().isoformat()
+    dia = sys.argv[1] if len(sys.argv) > 1 else dt.datetime.now(dt.timezone(dt.timedelta(hours=-3))).date().isoformat()
     linhas = []
     cache: dict[str, dict] = {}
     for r in baixar(dia):

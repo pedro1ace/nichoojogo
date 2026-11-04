@@ -20,12 +20,23 @@ const json = (corpo, status = 200) =>
     headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
   });
 
-// O jogo usa a data local do jogador, então aceita de ontem a amanhã em UTC.
+const FUSO_BRASIL = "America/Sao_Paulo";
+
+function hojeBrasil() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: FUSO_BRASIL,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
+// O jogo usa o horário oficial de Brasília (America/Sao_Paulo, UTC-3).
 function diaValido(dia) {
   if (typeof dia !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(dia)) return false;
-  const t = Date.parse(dia + "T00:00:00Z");
+  const t = Date.parse(dia + "T00:00:00-03:00");
   if (Number.isNaN(t)) return false;
-  const hoje = Date.parse(new Date().toISOString().slice(0, 10) + "T00:00:00Z");
+  const hoje = Date.parse(hojeBrasil() + "T00:00:00-03:00");
   return Math.abs(t - hoje) <= 86400000;
 }
 
@@ -52,7 +63,7 @@ async function contagem(db, dia) {
 
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
-  const dia = url.searchParams.get("dia");
+  const dia = url.searchParams.get("dia") || hojeBrasil();
   if (!diaValido(dia)) return json({ erro: "dia inválido" }, 400);
   if (url.searchParams.has("recusadas")) {
     const { results } = await env.DB.prepare(

@@ -78,7 +78,7 @@ def avaliar_recusada(texto: str, cat: dict) -> tuple[str, str, float]:
 
 
 def executar_plantao() -> dict:
-    hoje = dt.date.today().isoformat()
+    hoje = dt.datetime.now(dt.timezone(dt.timedelta(hours=-3))).date().isoformat()
     REVISAO.mkdir(parents=True, exist_ok=True)
 
     print(f"=== Iniciando Plantão Diário Automático: {hoje} ===")

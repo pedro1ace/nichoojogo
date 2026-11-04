@@ -3,12 +3,8 @@
 // Guarda só um histograma anônimo: para cada dia, quantas viagens terminaram
 // em cada faixa de 10 pontos. Não guarda IP, nome, cookie nem as respostas.
 //
-//   GET  /api/pontuacao?dia=2026-10-28        devolve a curva do dia (também de dias antigos, para os ARQUIVOS)
+//   GET  /api/pontuacao?dia=2026-10-28        devolve a curva do dia
 //   POST /api/pontuacao {dia, pontos}          soma uma viagem e devolve a curva
-//
-// Entra na curva a 1ª viagem de cada navegador em cada dia, também quando é feita depois,
-// pelos ARQUIVOS. As jogadas extras ("jogar novamente") não são enviadas.
-// O placar com conta (futuro) é outra coisa: só conta quem jogou no próprio dia.
 //
 // Precisa de um banco D1 ligado ao projeto com o nome DB (veja banco/schema.sql).
 
@@ -22,14 +18,25 @@ const resposta = (corpo, status = 200) =>
     headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
   });
 
-// O jogo usa a data local do jogador, então aceita até amanhã em UTC; dias que já
+const FUSO_BRASIL = "America/Sao_Paulo";
+
+function hojeBrasil() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: FUSO_BRASIL,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
+// O jogo usa o horário oficial de Brasília (America/Sao_Paulo, UTC-3); dias que já
 // passaram (arquivos) valem desde o lançamento.
 function diaValido(dia, passados = false) {
   if (typeof dia !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(dia)) return false;
-  const t = Date.parse(dia + "T00:00:00Z");
+  const t = Date.parse(dia + "T00:00:00-03:00");
   if (Number.isNaN(t)) return false;
-  const hoje = Date.parse(new Date().toISOString().slice(0, 10) + "T00:00:00Z");
-  if (passados && t <= hoje) return t >= Date.parse("2026-10-28T00:00:00Z");
+  const hoje = Date.parse(hojeBrasil() + "T00:00:00-03:00");
+  if (passados && t <= hoje) return t >= Date.parse("2026-10-28T00:00:00-03:00");
   return Math.abs(t - hoje) <= 86400000;
 }
 
@@ -41,7 +48,7 @@ async function curva(db, dia) {
 }
 
 export async function onRequestGet({ request, env }) {
-  const dia = new URL(request.url).searchParams.get("dia");
+  const dia = new URL(request.url).searchParams.get("dia") || hojeBrasil();
   if (!diaValido(dia, true)) return resposta({ erro: "dia inválido" }, 400);
   return resposta(await curva(env.DB, dia));
 }
@@ -54,12 +61,13 @@ export async function onRequestPost({ request, env }) {
     return resposta({ erro: "corpo inválido" }, 400);
   }
   const { dia, pontos } = corpo || {};
-  if (!diaValido(dia, true)) return resposta({ erro: "dia inválido" }, 400);
+  const diaAlvo = dia || hojeBrasil();
+  if (!diaValido(diaAlvo, true)) return resposta({ erro: "dia inválido" }, 400);
   if (!Number.isInteger(pontos) || pontos < 0 || pontos > MAXIMO) return resposta({ erro: "pontos inválidos" }, 400);
   await env.DB.prepare(
     "INSERT INTO histograma (dia, faixa, n) VALUES (?, ?, 1) ON CONFLICT (dia, faixa) DO UPDATE SET n = n + 1",
   )
-    .bind(dia, Math.floor(pontos / LARGURA))
+    .bind(diaAlvo, Math.floor(pontos / LARGURA))
     .run();
-  return resposta(await curva(env.DB, dia));
+  return resposta(await curva(env.DB, diaAlvo));
 }

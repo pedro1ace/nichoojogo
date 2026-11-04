@@ -4246,6 +4246,48 @@ function criarCena(telaPixel, telaTexto, raiz) {
 const RODADAS_POR_DIA = 7;
 const SEGUNDOS = 25;
 const LANCAMENTO = "2026-10-28"; // dia #1
+// Horário universal do jogo unificado com base no Brasil (Horário de Brasília / UTC-3).
+const FUSO_BRASIL = "America/Sao_Paulo";
+let deltaServidorMs = 0; // sincronização com relógio atômico de rede do servidor via header 'Date'
+
+function agoraSincronizado() {
+  return new Date(Date.now() + deltaServidorMs);
+}
+
+function hojeBrasil(d = agoraSincronizado()) {
+  try {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: FUSO_BRASIL,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(d);
+  } catch {
+    const dBr = new Date(d.getTime() - 3 * 3600000);
+    const p = (n) => String(n).padStart(2, "0");
+    return `${dBr.getUTCFullYear()}-${p(dBr.getUTCMonth() + 1)}-${p(dBr.getUTCDate())}`;
+  }
+}
+
+function somarDias(diaStr, delta) {
+  const [ano, mes, dia] = diaStr.split("-").map(Number);
+  const d = new Date(Date.UTC(ano, mes - 1, dia + delta, 12, 0, 0));
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
+}
+
+function dataAmanhaBrasil(d = agoraSincronizado()) {
+  return somarDias(hojeBrasil(d), 1);
+}
+
+function segundosAteMeiaNoiteBrasil(agora = agoraSincronizado()) {
+  const proxDia = dataAmanhaBrasil(agora);
+  const proximaMeiaNoite = Date.parse(proxDia + "T00:00:00-03:00");
+  return Math.max(0, Math.floor((proximaMeiaNoite - agora.getTime()) / 1000));
+}
+
+const hojeLocal = hojeBrasil;
+
 // Modo teste:
 // - ?aleatorio sorteia categorias aleatórias;
 // - ?dia=6 (ou ?dia=2026-11-02) ou ?amanha carrega as 7 perguntas exatas daquele dia.
@@ -4254,20 +4296,17 @@ const PARAMS = new URLSearchParams(location.search);
 const ALEATORIO = PARAMS.has("aleatorio");
 function dataDeTeste() {
   if (PARAMS.has("amanha")) {
-    const d = new Date();
-    d.setDate(d.getDate() + 1);
-    const p = (n) => String(n).padStart(2, "0");
-    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+    return dataAmanhaBrasil();
   }
   const pDia = PARAMS.get("dia");
   if (!pDia) return null;
   if (/^\d{4}-\d{2}-\d{2}$/.test(pDia)) return pDia;
   const n = Number(pDia);
   if (Number.isInteger(n) && n >= 1 && n <= 3650) {
-    const d = new Date(LANCAMENTO + "T12:00");
-    d.setDate(d.getDate() + (n - 1));
+    const d = new Date(LANCAMENTO + "T12:00:00Z");
+    d.setUTCDate(d.getUTCDate() + (n - 1));
     const p = (x) => String(x).padStart(2, "0");
-    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+    return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
   }
   return null;
 }
@@ -4389,31 +4428,24 @@ function categoriasDoDia(indice, data, ordem) {
   return dia.map((id) => porId.get(id));
 }
 
-function hojeLocal() {
-  const d = new Date();
-  const p = (n) => String(n).padStart(2, "0");
-  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
-}
-
 // Quantos dias seguidos você completou a viagem (contando hoje, se já terminou).
 function sequencia() {
-  const p = (n) => String(n).padStart(2, "0");
-  const chave = (d) => `nicho:v7:${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
-  const completo = (d) => {
+  const chave = (diaStr) => `nicho:v7:${diaStr}`;
+  const completo = (diaStr) => {
     try {
-      const v = JSON.parse(localStorage.getItem(chave(d)) || "null");
+      const v = JSON.parse(localStorage.getItem(chave(diaStr)) || "null");
       // viagem feita pelo arquivo (fora do dia) não emenda a sequência
       return !!v && v.historico && v.historico.length >= RODADAS_POR_DIA && foiNoDia(v);
     } catch {
       return false;
     }
   };
-  const d = new Date();
-  if (!completo(d)) d.setDate(d.getDate() - 1);
+  let diaStr = hojeBrasil();
+  if (!completo(diaStr)) diaStr = somarDias(diaStr, -1);
   let n = 0;
-  while (n < 3650 && completo(d)) {
+  while (n < 3650 && completo(diaStr)) {
     n++;
-    d.setDate(d.getDate() - 1);
+    diaStr = somarDias(diaStr, -1);
   }
   return n;
 }
@@ -4576,7 +4608,7 @@ function mostrarDiaESequencia() {
 }
 
 function numeroDoDia(data) {
-  return Math.round((new Date(data + "T12:00") - new Date(LANCAMENTO + "T12:00")) / 86400000) + 1;
+  return Math.round((Date.parse(data + "T12:00:00Z") - Date.parse(LANCAMENTO + "T12:00:00Z")) / 86400000) + 1;
 }
 
 // "seg 02/11"
@@ -4692,6 +4724,11 @@ async function carregarCategoriasDoDia() {
   if (!ALEATORIO && location.protocol !== "file:") {
     try {
       const r = await fetch(`/api/dia?dia=${estado.data}`);
+      const serverDate = r.headers.get("date");
+      if (serverDate) {
+        const sEpoch = Date.parse(serverDate);
+        if (!Number.isNaN(sEpoch)) deltaServidorMs = sEpoch - Date.now();
+      }
       if (r.ok) {
         const pacote = await r.json();
         if (pacote && Array.isArray(pacote.categorias) && pacote.categorias.length >= RODADAS_POR_DIA) {
@@ -5679,12 +5716,11 @@ function contarAteAmanha() {
   el.innerHTML = '<span class="rotulo-amanha">PRÓXIMA INCURSÃO EM</span><span class="relogio-amanha" aria-hidden="true"><i></i></span><span class="digitos"></span>';
   const digitos = el.querySelector(".digitos");
   let anterior = "";
+  const diaDoJogo = hojeBrasil();
   const atualizar = () => {
-    const agora = new Date();
-    const amanha = new Date(agora);
-    amanha.setHours(24, 0, 0, 0);
-    const s = Math.floor((amanha - agora) / 1000);
-    if (s <= 0 || agora.toDateString() !== diaDoJogo) {
+    const agora = agoraSincronizado();
+    const s = segundosAteMeiaNoiteBrasil(agora);
+    if (s <= 0 || hojeBrasil(agora) !== diaDoJogo) {
       clearInterval(relogioAmanha);
       el.innerHTML = '<span class="rotulo-amanha">PRÓXIMA INCURSÃO EM</span> <b class="pronta">PRONTA</b> <a href="#" class="recarregar">recarregar</a>';
       el.querySelector(".recarregar").addEventListener("click", (e) => { e.preventDefault(); location.reload(); });
@@ -5703,7 +5739,6 @@ function contarAteAmanha() {
     });
     anterior = texto;
   };
-  const diaDoJogo = new Date().toDateString();
   clearInterval(relogioAmanha);
   atualizar();
   relogioAmanha = setInterval(atualizar, 1000);

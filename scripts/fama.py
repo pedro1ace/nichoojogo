@@ -429,7 +429,7 @@ def fila_de_hoje_em_diante() -> list[str]:
     fila = [l.strip() for l in linhas if l.strip() and not l.startswith(("#", "-"))]
     fora = pontuar.fora_do_jogo()
     fila = [c for c in fila if c not in fora and (CATEGORIAS / f"{c}.txt").exists()]
-    hoje = (dt.date.today() - INICIO).days
+    hoje = (dt.datetime.now(dt.timezone(dt.timedelta(hours=-3))).date() - INICIO).days
     return fila[max(0, hoje) * 7:]
 
 

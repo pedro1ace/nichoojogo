@@ -57,7 +57,7 @@ def contar_respostas(cid: str) -> int:
 def avisar_pequenas(fila: list[str]) -> None:
     """Avisa das categorias abertas da fila que ainda não chegaram a MINIMO_RESPOSTAS."""
     import datetime as dt
-    hoje = (dt.date.today() - dt.date(2026, 10, 28)).days  # índice do dia de hoje na fila
+    hoje = (dt.datetime.now(dt.timezone(dt.timedelta(hours=-3))).date() - dt.date(2026, 10, 28)).days  # índice do dia de hoje no Brasil (UTC-3)
     pequenas = [(i // 7 + 1, cid, n) for i, cid in enumerate(fila)
                 if cid not in FECHADAS and (n := contar_respostas(cid)) < MINIMO_RESPOSTAS]
     futuras = [p for p in pequenas if p[0] > hoje + 1]  # o dia de hoje já está no ar
@@ -96,7 +96,7 @@ def avisar_sem_simulacao(fila: list[str]) -> None:
     (dados/sinais/lembranca/<id>.txt, scripts/fama.py) com a mesma pergunta. Como nenhuma categoria
     se repete, não dá para corrigir depois: a conferência completa é `python3 scripts/fama.py --conferir`."""
     import datetime as dt
-    hoje = (dt.date.today() - dt.date(2026, 10, 28)).days
+    hoje = (dt.datetime.now(dt.timezone(dt.timedelta(hours=-3))).date() - dt.date(2026, 10, 28)).days
     faltam = []
     for i, cid in enumerate(fila[max(0, hoje) * 7:], start=max(0, hoje) * 7):
         sim = RAIZ / "dados" / "sinais" / "lembranca" / f"{cid}.txt"

@@ -17,13 +17,24 @@ const json = (corpo, status = 200, maxAge = 3600) =>
     },
   });
 
+const FUSO_BRASIL = "America/Sao_Paulo";
+
+function hojeBrasil() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: FUSO_BRASIL,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
 function diaValido(dia) {
   return typeof dia === "string" && /^\d{4}-\d{2}-\d{2}$/.test(dia);
 }
 
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
-  const dia = url.searchParams.get("dia");
+  const dia = url.searchParams.get("dia") || hojeBrasil();
 
   if (!diaValido(dia)) {
     return json({ erro: "formato de dia inválido (use AAAA-MM-DD)" }, 400, 0);
