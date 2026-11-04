@@ -58,7 +58,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Corpos do Sistema Solar | Cite um planeta, lua, planeta anão, asteroide ou cometa do Sistema Solar | 4306 |
 | 2 | Países acima da linha do Equador | Cite um país que tem território ao norte da linha do Equador | 186 |
 | 3 | Turma da Mônica | Cite um personagem dos quadrinhos do Mauricio de Sousa | 129 |
-| 4 | Filmes | Cite um filme | 3703 |
+| 4 | Filmes | Cite um filme | 4947 |
 | 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1689 |
 | 6 | Frutas | Cite uma fruta | 1073 |
 | 7 | Peixes | Cite um peixe | 1007 |
@@ -68,12 +68,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Jogadores de futebol | Cite um jogador ou jogadora de futebol | 2746 |
-| 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2486 |
+| 2 | Desenhos animados | Cite um desenho animado (série ou filme) | 2587 |
 | 3 | Profissões | Cite uma profissão | 1398 |
 | 4 | Comidas típicas brasileiras | Cite uma comida típica do Brasil | 1182 |
 | 5 | Proteção contra o sol | Cite algo que a gente usa para se proteger do sol | 1176 |
 | 6 | Comidas de festa junina | Cite uma comida ou bebida de festa junina | 1260 |
-| 7 | Jogos de videogame | Cite um jogo de videogame (de qualquer console, PC ou celular) | 1460 |
+| 7 | Jogos de videogame | Cite um jogo de videogame (de qualquer console, PC ou celular) | 3321 |
 
 ## Dia 7 · ter 03/11/2026
 
@@ -135,10 +135,34 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2093 |
 | 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1128 |
 
+## Dia 12 · dom 08/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
+| 2 | Séries de TV | Cite uma série de TV | 1729 |
+| 3 | Modelos de carro | Cite um modelo de carro | 2388 |
+| 4 | Atropelado por avião | Diga um animal que já foi atropelado por um avião. | 323 |
+| 5 | Sabores de pizza | Cite um sabor de pizza | 184 |
+| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1183 |
+| 7 | Superpoderes | Cite um superpoder | 148 |
+
+## Dia 13 · seg 09/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Resgate dos bombeiros | Diga um bicho que os bombeiros já tiveram que resgatar. | 81 |
+| 2 | Animações Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 139 |
+| 3 | Churrasco | Cite algo que tem num churrasco | 204 |
+| 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 231 |
+| 5 | Formas geométricas | Cite uma forma geométrica | 102 |
+| 6 | Contos de fadas | Cite um personagem de conto de fadas | 156 |
+| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 106 |
+
 ## Na fila (ainda não formam um dia)
 
-- Astronautas
-- Séries de TV
-- Estrelas
-- Modelos de carro
-- Missões espaciais
+- Meios de transporte
+- Danças
+- Personagens da Disney
+- Frutos do mar
+- Natal
