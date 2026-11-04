@@ -9,7 +9,7 @@ Etapas:
   4. Executa fama.py nas categorias modificadas
   5. Sincroniza carga do D1 (banco/carga_dias.sql) e empacota o jogo (jogar.html)
   6. Confere integridade dos próximos dias (fama.py --conferir)
-  7. Gera PLANTAO_RESUMO.md para a descrição do Pull Request automático no GitHub
+  7. Gera PLANTAO_RESUMO.md, o relatório do dia (vai para o resumo da execução no GitHub Actions)
 """
 from __future__ import annotations
 
