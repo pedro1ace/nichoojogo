@@ -288,7 +288,14 @@ Carga automática dos dias: a action [`carga-banco.yml`](.github/workflows/carga
 (**Settings → Secrets and variables → Actions**): `CLOUDFLARE_API_TOKEN` (token com permissão
 **Account → D1 → Edit**) e `CLOUDFLARE_ACCOUNT_ID`.
 
-Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local`, depois crie a tabela com
+Juiz das recusadas (IA): quando a lista não tem a resposta, [`functions/api/juiz.js`](functions/api/juiz.js)
+pergunta ao Workers AI da Cloudflare se ela vale. Se a IA disser SIM, vale 40 pontos na hora; NÃO e TALVEZ seguem
+para a revisão diária (o veredito sai no campo `ia` de `/api/respostas?recusadas=1`). Cada resposta é julgada uma vez
+só (tabela `juizo`) e há um teto de 700 julgamentos por dia, dentro dos 10.000 neurônios grátis da Cloudflare.
+Para ligar: no projeto do Pages, **Settings → Bindings → Add → Workers AI**, nome da variável `AI`, e um novo deploy.
+Sem esse binding, o jogo recusa como antes.
+
+Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local --ai AI`, depois crie a tabela com
 `banco/schema.sql` no banco local.
 
 ## Domínio
