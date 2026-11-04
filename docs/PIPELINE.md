@@ -38,7 +38,7 @@ Seguimos o mesmo método do Krillion:
       Reordena todas as categorias do jogo. Revisão das mudanças em `dados/sinais/revisao/agente-mudancas.csv`.
       Google Trends ficou de fora: não tem API pública e barra pedidos de servidor; a tendência sai das visitas.
 - [x] **Fama por simulação de jogadores** (`scripts/fama.py`): 1000 jogadores simulados respondem sem ver a lista;
-      a contagem é a fama, o que falta na lista aparece sozinho, criativas (`~`) valem no mínimo 70, régua fixa por
+      a contagem é a fama, o que falta na lista aparece sozinho, criativas (`~`, só abaixo de 4 em 1000) valem no mínimo 70, óbvias que a simulação esqueceu são resgatadas pela estimativa antiga, régua fixa por
       "quantos em 1000" e trava (`--conferir`) antes de a categoria ir ao ar. Substitui o agente nas categorias da fila.
 - [x] Respostas do dia registradas anônimas (`/api/respostas`), aceitas e recusadas. Não mudam pontos.
 - [ ] Puxar as recusadas do dia para `dados/fila/` e julgar em lote.

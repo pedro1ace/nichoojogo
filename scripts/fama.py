@@ -15,8 +15,12 @@ O método novo:
      gente que deu respostas que só uma pessoa daria).
   2. Completude: o que a simulação diz e a lista não tem é resposta faltando (Setembro em Coisas
      amarelas, Rayan nos Craques da Seleção). --completar põe na lista.
-  3. Fora da simulação = rara, por definição. Os sinais antigos (visitas, frequência em textos,
-     a estimativa velha do LLM) só ordenam a cauda entre si.
+  3. Fora da simulação = rara, em regra. Os sinais antigos (visitas, frequência em textos,
+     a estimativa velha do LLM) ordenam a cauda entre si. Exceção (piso_antigo): a simulação também
+     esquece respostas óbvias (Ouvido em Partes do corpo, Pão francês em Comidas típicas). Se a
+     estimativa velha do LLM diz que bastante gente daria a resposta, ela vira um piso, calibrado
+     pela categoria e pela metade, e a resposta sai do espaço profundo.
+     E a criativa ("~") só é criativa com menos de 4 em 1000: Pikachu (30) em Coisas amarelas é óbvia.
   4. Régua fixa (pontuar.py): os pontos saem de "quantos em 1000 diriam", com o mesmo sentido
      em toda categoria. E "acima" = a parte dos jogadores que daria uma resposta mais óbvia que
      esta: é o "melhor que X% dos jogadores" que o jogo mostra.
@@ -68,6 +72,17 @@ METODO = "simulacao"
 TETO_CAUDA = 0.9
 TETO_CRIATIVA = 0.5  # em 1000: resposta criativa nunca passa disto, então é sempre rara
 MIN_CAUDA = 40  # em 1000: no mínimo isto fica para a cauda (respostas que só uma pessoa daria)
+# Criativa só é criativa enquanto pouca gente pensa nela. Com 4 em 1000 ou mais (comum na régua fixa),
+# já é o que a galera responde: Pikachu (30) e Bob Esponja (25) em Coisas amarelas não são sacada.
+LIMITE_CRIATIVA = 4.0
+# Resgate da cauda: a simulação esquece respostas óbvias (Ouvido em Partes do corpo, Pão francês em
+# Comidas típicas), e fora dela tudo virava espaço profundo (60+). Se a estimativa antiga do LLM diz
+# que bastante gente daria a resposta, ela vale como piso, calibrada pela categoria (ver piso_antigo).
+DESCONTO_ANTIGA = 0.5  # a simulação não citou: a estimativa antiga vale pela metade
+RAZAO_ANTIGA = (0.25, 2.0)  # limites da calibração (simulação / estimativa antiga) de cada categoria
+TETO_ANTIGA = 15.0  # em 1000: pela estimativa antiga, no máximo comum (nunca óbvia)
+CONHECEM_MINIMO = 80.0  # % que reconhece a resposta: abaixo disso a estimativa antiga não resgata
+PATAMAR = 30  # um mesmo valor >= 2 repetido em tantas respostas da cauda é chute padrão, não medida
 MODELO = "claude-opus-5-5"
 
 
@@ -216,6 +231,7 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
     # Resposta criativa (associação lateral, "~" na simulação: Homer em Coisas amarelas, Panela em
     # Instrumentos): mesmo que algumas pessoas pensem nela, é a sacada que o jogo quer premiar.
     # Fica sempre rara, logo depois das raras literais que alguém da simulação citou.
+    criativas = {nome for nome in criativas if contagem[nome] < LIMITE_CRIATIVA}
     for nome in criativas:
         contagem[nome] = min(contagem[nome], TETO_CRIATIVA)
 
@@ -231,6 +247,9 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
     lembra = dict(contagem)
     for i, nome in enumerate(cauda):
         lembra[nome] = round(min(teto, massa_cauda / harmonico / (i + 10)), 4)
+    resgatadas = piso_antigo(contagem, cauda, antigo)
+    for nome, piso in resgatadas.items():
+        lembra[nome] = max(lembra[nome], piso)
 
     # "acima": a parte dos jogadores que daria uma resposta mais óbvia que esta (empate conta metade)
     total = sum(lembra.values()) or 1.0
@@ -261,6 +280,7 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
             "criativa": nome in criativas,
             "espertalhao": nome in espertalhoes,
             "estimada": na_cabeca,
+            "resgatada": nome in resgatadas,
             "acima": acima[nome],
             "conhecem_pct": a.get("conhecem_pct"),
             "visitas_pt_12m": a.get("visitas_pt_12m"),
@@ -277,6 +297,45 @@ def calcular(cat: dict, sim: dict, base: pontuar.BaseICF) -> tuple[dict, list[di
         "respostas": respostas,
     }
     return fama, faltando
+
+
+def piso_antigo(contagem: dict[str, float], cauda: list[str], antigo: dict[str, dict]) -> dict[str, float]:
+    """Piso de lembrança (em 1000) para as respostas da cauda que a estimativa antiga do LLM diz que
+    bastante gente daria. A estimativa antiga infla ou encolhe conforme a categoria, então ela é
+    calibrada pelas respostas que estão nas duas: razão = mediana de simulação / estimativa antiga.
+    Piso = estimativa x razão x DESCONTO_ANTIGA, até TETO_ANTIGA. Só entra quem passa de 1 em 1000
+    (sai do espaço profundo), quem CONHECEM_MINIMO% reconhecem e quem não está num patamar repetido
+    (Cidades do mundo tem 77 cidades com o mesmo 8 em 1000, de Zagreb a Łobez). E a soma dos pisos
+    não passa da cauda (o que a simulação deixou de fora dos 1000)."""
+    def estimativa(nome: str) -> float:
+        a = antigo.get(nome) or {}
+        if not a.get("estimada"):
+            return 0.0
+        return float(a.get("lembranca_em_1000") or 0.0)
+
+    pares = sorted(contagem[n] / estimativa(n) for n in contagem if estimativa(n) >= 1.0)
+    if not pares:
+        return {}
+    meio = len(pares) // 2
+    razao = pares[meio] if len(pares) % 2 else (pares[meio - 1] + pares[meio]) / 2
+    razao = max(RAZAO_ANTIGA[0], min(RAZAO_ANTIGA[1], razao))
+    repetidos: dict[float, int] = {}
+    for nome in cauda:
+        repetidos[estimativa(nome)] = repetidos.get(estimativa(nome), 0) + 1
+    pisos = {}
+    for nome in cauda:
+        e = estimativa(nome)
+        if e <= 0.0 or (e >= 2.0 and repetidos[e] >= PATAMAR):
+            continue
+        if float((antigo.get(nome) or {}).get("conhecem_pct") or 0.0) < CONHECEM_MINIMO:
+            continue
+        pisos[nome] = min(TETO_ANTIGA, e * razao * DESCONTO_ANTIGA)
+    # Quem a simulação não citou cabe na cauda dos 1000 jogadores. Se os pisos somam mais que ela, a
+    # estimativa antiga está inflada nesta categoria (Harare 7,8 em 1000 em Cidades do mundo): encolhe tudo.
+    soma = sum(v for v in pisos.values() if v >= 1.0)
+    massa = max(0.0, 1000.0 - sum(contagem.values()))
+    fator = min(1.0, massa / soma) if soma else 1.0
+    return {nome: round(v * fator, 4) for nome, v in pisos.items() if v * fator >= 1.0}
 
 
 def suspeitas(cat: dict, fama: dict) -> list[dict]:

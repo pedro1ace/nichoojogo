@@ -40,6 +40,8 @@ Queijo azul,azul | blue cheese | blue,9.669,False,2.0,,6204,0.021,0.021,0.678,46
 Queijo serrano,,11.447,False,2.0,,678,0.021,0.021,0.678,46,True
 Serra da Estrela,Queijo Serra da Estrela,9.605,False,2.0,45.0,24138,0.021,0.021,0.678,46,True
 Queijo Marajó,queijo do marajó | queijo de búfala do marajó,11.904,False,1.0,40.0,0,0.026,0.026,0.707,50,True
+Polenguinho,,20.0,True,1.2917,95.0,0,0.039,0.039,0.735,54,True
+Queijo frescal,frescal,12.834,False,1.2917,90.0,0,0.038,0.038,0.735,54,True
 Fondue de queijo,fondue,11.751,False,1.0,40.0,0,0.026,0.026,0.762,58,True
 Halloumi,,20.0,True,1.0,30.0,5388,0.026,0.026,0.762,58,True
 Maasdam,,20.0,True,1.0,35.0,954,0.026,0.026,0.762,58,True
@@ -66,15 +68,15 @@ Paneer,,20.0,True,0.5,20.0,1080,0.033,0.033,0.775,60,True
 Parmigiano Reggiano,parmigiano,20.0,True,0.27,70.0,0,0.04,0.04,0.775,60,True
 Pepper Jack,,20.0,True,0.5,,0,0.033,0.033,0.775,60,True
 Petit suisse,Queijo petit suisse,10.279,False,0.5,,2442,0.033,0.033,0.775,60,True
-Polenguinho,,20.0,True,0.27,95.0,0,0.039,0.039,0.775,60,True
 Port-Salut,,20.0,True,0.5,,0,0.033,0.033,0.775,60,True
 Président,,20.0,True,0.27,50.0,0,0.044,0.044,0.775,60,True
 Quark,Queijo quark,14.66,False,0.3,,10530,0.037,0.037,0.775,60,True
 Queijo caipira,,11.201,False,0.27,85.0,0,0.04,0.04,0.775,60,True
 Queijo coalho nordestino,,12.195,False,0.27,,0,0.046,0.046,0.775,60,True
+Queijo de coalho assado,,12.103,False,0.27,,0,0.047,0.047,0.775,60,True
 Queijo do Serro,serro | queijo serro,12.291,False,0.27,60.0,582,0.039,0.039,0.775,60,True
-Queijo frescal,frescal,12.834,False,0.27,90.0,0,0.038,0.038,0.775,60,True
 Queijo minas artesanal,,10.173,False,0.27,80.0,0,0.041,0.041,0.775,60,True
+Queijo prato lanche,,10.606,False,0.27,,0,0.047,0.047,0.775,60,True
 Queijo tipo suíço,,10.128,False,0.27,80.0,0,0.042,0.042,0.775,60,True
 Reblochon,,20.0,True,0.27,10.0,0,0.045,0.045,0.775,60,True
 Ricota defumada,,13.078,False,0.5,,0,0.033,0.033,0.775,60,True
@@ -133,12 +135,10 @@ Bovški sir,,12.333,False,0.27,40.0,0,0.197,0.197,0.781,61,True
 Bra Duro,,10.567,False,0.27,40.0,0,0.197,0.197,0.781,61,True
 Bra Tenero,,20.0,True,0.27,40.0,0,0.197,0.197,0.781,61,True
 Branzi,,20.0,True,0.2614,40.0,0,0.197,0.197,0.781,61,True
+Brick (queijo),Brick,10.279,False,0.2582,40.0,0,0.197,0.197,0.781,61,True
 Brânză de burduf,,19.929,False,0.268,40.0,0,0.197,0.197,0.781,61,True
 Brânză de vaci,,19.929,False,0.2647,40.0,0,0.197,0.197,0.781,61,True
-Queijo de coalho assado,,12.103,False,0.27,,0,0.047,0.047,0.781,61,True
 Queijo palmira,,12.222,False,0.27,,0,0.048,0.048,0.781,61,True
-Queijo prato lanche,,10.606,False,0.27,,0,0.047,0.047,0.781,61,True
-Brick (queijo),Brick,10.279,False,0.2582,40.0,0,0.197,0.197,0.787,62,True
 Brie brasileiro,,11.096,False,0.2551,40.0,0,0.197,0.197,0.787,62,True
 Brie de Nangis,,13.836,False,0.2521,40.0,0,0.197,0.197,0.787,62,True
 Brie noir,,13.836,False,0.2491,40.0,0,0.197,0.197,0.787,62,True
@@ -193,12 +193,12 @@ Cheddar vermont,,13.963,False,0.158,40.0,0,0.197,0.197,0.787,62,True
 Cheese curds,coalhada de queijo,12.224,False,0.1569,40.0,0,0.197,0.197,0.787,62,True
 Cheese stick,,12.891,False,0.1557,40.0,0,0.197,0.197,0.787,62,True
 Cheez Whiz,,20.0,True,0.1546,40.0,0,0.197,0.197,0.787,62,True
+Chèvre cendré,queijo de cabra com cinzas,8.955,False,0.1534,40.0,0,0.197,0.197,0.787,62,True
+Chèvre frais,,20.0,True,0.1523,40.0,0,0.197,0.197,0.787,62,True
 Çerkez peyniri,,20.0,True,0.175,40.0,0,0.197,0.197,0.787,62,True
 Chhena poda,,12.955,False,0.1513,40.0,0,0.197,0.197,0.794,63,True
 Chhurpi mole,,11.484,False,0.1502,40.0,0,0.197,0.197,0.794,63,True
 Chhurpi seco,,10.419,False,0.1491,40.0,0,0.197,0.197,0.794,63,True
-Chèvre cendré,queijo de cabra com cinzas,8.955,False,0.1534,40.0,0,0.197,0.197,0.794,63,True
-Chèvre frais,,20.0,True,0.1523,40.0,0,0.197,0.197,0.794,63,True
 Ciliegine,,20.0,True,0.1481,40.0,0,0.197,0.197,0.794,63,True
 Coeur d'Arras,,20.0,True,0.1471,40.0,0,0.197,0.197,0.794,63,True
 Colby Longhorn,,20.0,True,0.1441,40.0,0,0.197,0.197,0.794,63,True
@@ -250,9 +250,9 @@ Gaperon,,20.0,True,0.1109,40.0,0,0.197,0.197,0.794,63,True
 Garrotxa,,20.0,True,0.1103,40.0,0,0.197,0.197,0.794,63,True
 Geitost,,20.0,True,0.1097,40.0,0,0.197,0.197,0.794,63,True
 Gibna bayda,,20.0,True,0.1092,40.0,0,0.197,0.197,0.794,63,True
+Gibna rumi,,15.365,False,0.1086,40.0,0,0.197,0.197,0.794,63,True
+Gorgonzola brasileiro,,11.114,False,0.108,40.0,0,0.197,0.197,0.794,63,True
 Çökelek,,20.0,True,0.146,40.0,0,0.197,0.197,0.794,63,True
-Gibna rumi,,15.365,False,0.1086,40.0,0,0.197,0.197,0.8,64,True
-Gorgonzola brasileiro,,11.114,False,0.108,40.0,0,0.197,0.197,0.8,64,True
 Gorgonzola mascarpone,,14.317,False,0.1075,40.0,0,0.197,0.197,0.8,64,True
 Gouda com cominho,,11.329,False,0.1069,40.0,0,0.197,0.197,0.8,64,True
 Gouda de cabra,,13.73,False,0.1064,40.0,0,0.197,0.197,0.8,64,True
@@ -307,8 +307,8 @@ Lacey Swiss,,20.0,True,0.0857,40.0,0,0.197,0.197,0.8,64,True
 Lanark Blue,,10.902,False,0.0854,40.0,0,0.197,0.197,0.8,64,True
 Latteria,,20.0,True,0.085,40.0,0,0.197,0.197,0.8,64,True
 Liederkranz,,20.0,True,0.0844,40.0,0,0.197,0.197,0.8,64,True
+Lighvan,,20.0,True,0.084,40.0,0,0.197,0.197,0.8,64,True
 Lički škripavac,,20.0,True,0.0847,40.0,0,0.197,0.197,0.8,64,True
-Lighvan,,20.0,True,0.084,40.0,0,0.197,0.197,0.806,65,True
 Lincolnshire Poacher,,20.0,True,0.0837,40.0,0,0.197,0.197,0.806,65,True
 Liptauer,,20.0,True,0.0834,40.0,0,0.197,0.197,0.806,65,True
 Liptói,,20.0,True,0.083,40.0,0,0.197,0.197,0.806,65,True
@@ -363,9 +363,9 @@ Oka,,20.0,True,0.0699,40.0,0,0.197,0.197,0.806,65,True
 Olivet,,20.0,True,0.0697,40.0,0,0.197,0.197,0.806,65,True
 Oltermanni,,20.0,True,0.0694,40.0,0,0.197,0.197,0.806,65,True
 Orval (queijo),,10.279,False,0.069,40.0,0,0.197,0.197,0.806,65,True
+Otlu peynir,,20.0,True,0.0688,40.0,0,0.197,0.197,0.806,65,True
+Ovolini de búfala,,20.0,True,0.0685,40.0,0,0.197,0.197,0.806,65,True
 Örgü peyniri,,20.0,True,0.0692,40.0,0,0.197,0.197,0.806,65,True
-Otlu peynir,,20.0,True,0.0688,40.0,0,0.197,0.197,0.812,66,True
-Ovolini de búfala,,20.0,True,0.0685,40.0,0,0.197,0.197,0.812,66,True
 Paglierina,,20.0,True,0.0683,40.0,0,0.197,0.197,0.812,66,True
 Paneer de búfala,,20.0,True,0.0679,40.0,0,0.197,0.197,0.812,66,True
 Paneer defumado,,13.768,False,0.0677,40.0,0,0.197,0.197,0.812,66,True
@@ -421,6 +421,8 @@ Queijo cremoso de bisnaga,,12.088,False,0.0587,40.0,0,0.197,0.197,0.812,66,True
 Queijo da Graciosa,,11.542,False,0.0585,40.0,0,0.197,0.197,0.812,66,True
 Queijo das Flores,,9.874,False,0.0583,40.0,0,0.197,0.197,0.812,66,True
 Queijo de amêndoas,,11.24,False,0.0582,40.0,0,0.197,0.197,0.812,66,True
+Queijo de cabra do Cariri,,11.625,False,0.058,40.0,0,0.197,0.197,0.812,66,True
+Queijo de caju,,11.318,False,0.0579,40.0,0,0.197,0.197,0.812,66,True
 Queijo Entre Serras,,9.875,False,0.054,40.0,0,0.197,0.197,0.819,67,True
 Queijo Flamengo,,10.158,False,0.0537,40.0,0,0.197,0.197,0.819,67,True
 Queijo Ilha Azul,,9.607,False,0.0533,40.0,0,0.197,0.197,0.819,67,True
@@ -436,8 +438,6 @@ Queijo Tulha,,13.003,False,0.0516,40.0,0,0.197,0.197,0.819,67,True
 Queijo de Hokkaido,,10.279,False,0.0569,40.0,0,0.197,0.197,0.819,67,True
 Queijo de Seia,,10.279,False,0.0553,40.0,0,0.197,0.197,0.819,67,True
 Queijo de São Miguel,,8.617,False,0.0554,40.0,0,0.197,0.197,0.819,67,True
-Queijo de cabra do Cariri,,11.625,False,0.058,40.0,0,0.197,0.197,0.819,67,True
-Queijo de caju,,11.318,False,0.0579,40.0,0,0.197,0.197,0.819,67,True
 Queijo de casca florida,,11.111,False,0.0577,40.0,0,0.197,0.197,0.819,67,True
 Queijo de casca lavada,,11.432,False,0.0575,40.0,0,0.197,0.197,0.819,67,True
 Queijo de coalho de Jaguaribe,,12.612,False,0.0574,40.0,0,0.197,0.197,0.819,67,True
@@ -478,6 +478,7 @@ Queso crema hondureño,,14.469,False,0.0508,40.0,0,0.197,0.197,0.819,67,True
 Queso criollo,,20.0,True,0.0507,40.0,0,0.197,0.197,0.819,67,True
 Queso cuajada,,20.0,True,0.0505,40.0,0,0.197,0.197,0.819,67,True
 Queso de año,,7.123,False,0.0503,40.0,0,0.197,0.197,0.819,67,True
+Queso de bola,Queso bola,9.355,False,0.0502,40.0,0,0.197,0.197,0.819,67,True
 Queso Goya,,20.0,True,0.0488,40.0,0,0.197,0.197,0.825,68,True
 Queso Herreño,,20.0,True,0.0486,40.0,0,0.197,0.197,0.825,68,True
 Queso Ibores,,20.0,True,0.0485,40.0,0,0.197,0.197,0.825,68,True
@@ -490,7 +491,6 @@ Queso de Murcia,,20.0,True,0.0495,40.0,0,0.197,0.197,0.825,68,True
 Queso de Ocosingo,,20.0,True,0.0494,40.0,0,0.197,0.197,0.825,68,True
 Queso de Poro,,14.348,False,0.0492,40.0,0,0.197,0.197,0.825,68,True
 Queso de Tafí,,20.0,True,0.0491,40.0,0,0.197,0.197,0.825,68,True
-Queso de bola,Queso bola,9.355,False,0.0502,40.0,0,0.197,0.197,0.825,68,True
 Queso de capa,,9.339,False,0.0498,40.0,0,0.197,0.197,0.825,68,True
 Queso de hoja,,20.0,True,0.0497,40.0,0,0.197,0.197,0.825,68,True
 Queso doble crema,,14.37,False,0.049,40.0,0,0.197,0.197,0.825,68,True
@@ -534,8 +534,8 @@ Saint-André,,9.644,False,0.0447,40.0,0,0.197,0.197,0.825,68,True
 Salva Cremasco,,10.98,False,0.0446,40.0,0,0.197,0.197,0.825,68,True
 San Michali,,20.0,True,0.0445,40.0,0,0.197,0.197,0.825,68,True
 Scamorza affumicata,,20.0,True,0.0444,40.0,0,0.197,0.197,0.825,68,True
-Scamorza bianca,,20.0,True,0.0443,40.0,0,0.197,0.197,0.831,69,True
-Schabziger,,20.0,True,0.0442,40.0,0,0.197,0.197,0.831,69,True
+Scamorza bianca,,20.0,True,0.0443,40.0,0,0.197,0.197,0.825,68,True
+Schabziger,,20.0,True,0.0442,40.0,0,0.197,0.197,0.825,68,True
 Schichtkäse,,20.0,True,0.0441,40.0,0,0.197,0.197,0.831,69,True
 Selles-sur-Cher,,20.0,True,0.044,40.0,0,0.197,0.197,0.831,69,True
 Ser koryciński,,5.977,False,0.0439,40.0,0,0.197,0.197,0.831,69,True
@@ -591,6 +591,8 @@ Valle d'Aosta Fromadzo,,20.0,True,0.0399,40.0,0,0.197,0.197,0.831,69,True
 Valtellina Casera,,20.0,True,0.0398,40.0,0,0.197,0.197,0.831,69,True
 Vastedda del Belice,,9.536,False,0.0397,40.0,0,0.197,0.197,0.831,69,True
 Velveeta,,20.0,True,0.0397,40.0,0,0.197,0.197,0.831,69,True
+Vieux-Lille,,20.0,True,0.0396,40.0,0,0.197,0.197,0.831,69,True
+Vorarlberger Bergkäse,,20.0,True,0.0395,40.0,0,0.197,0.197,0.831,69,True
 Aligot (queijo),tomme fraîche de l'Aubrac,10.279,False,0.0369,30.0,0,0.369,0.369,0.837,70,True
 Ardi-Gasna,,16.482,False,0.0368,30.0,0,0.369,0.369,0.837,70,True
 Azeitão,Queijo de Azeitão,14.291,False,0.0381,,9516,0.349,0.349,0.837,70,True
@@ -619,6 +621,7 @@ Gloucester,Queijo de Gloucester,10.279,False,0.0371,,2052,0.358,0.358,0.837,70,T
 Idiazábal,Queijo Idiazábal | Queijo de Idiazábal,10.279,False,0.0385,,90,0.346,0.346,0.837,70,True
 Labneh,,20.0,True,0.0379,,4680,0.351,0.351,0.837,70,True
 Lancashire,Queijo Lancashire,10.279,False,0.037,,4314,0.359,0.359,0.837,70,True
+Le Maréchal,,10.926,False,0.0358,30.0,0,0.369,0.369,0.837,70,True
 Mahón,,20.0,True,0.0383,,1842,0.348,0.348,0.837,70,True
 Mimolette,Queijo Mimolette,10.279,False,0.0376,10.0,1092,0.353,0.353,0.837,70,True
 Munster,,20.0,True,0.0377,,510,0.353,0.353,0.837,70,True
@@ -631,8 +634,6 @@ Queijo da Ilha,,9.881,False,0.0382,,0,0.348,0.348,0.837,70,True
 Queijo fresco,,10.717,False,0.038,,2034,0.35,0.35,0.837,70,True
 Red Leicester,,16.211,False,0.0372,,0,0.357,0.357,0.837,70,True
 Saint-Nectaire,,20.0,True,0.0375,,78,0.354,0.354,0.837,70,True
-Vieux-Lille,,20.0,True,0.0396,40.0,0,0.197,0.197,0.837,70,True
-Vorarlberger Bergkäse,,20.0,True,0.0395,40.0,0,0.197,0.197,0.837,70,True
 Wagashi,,20.0,True,0.0394,40.0,0,0.197,0.197,0.837,70,True
 Wara,,20.0,True,0.0394,40.0,0,0.197,0.197,0.837,70,True
 Waterloo (queijo),Waterloo,10.279,False,0.0393,40.0,0,0.197,0.197,0.837,70,True
@@ -688,7 +689,7 @@ Feta grego,,12.891,False,0.0328,,0,0.425,0.425,0.843,71,True
 Fior di latte,,10.175,False,0.0328,,0,0.425,0.425,0.843,71,True
 Fiore Sardo,,15.4,False,0.0327,,0,0.425,0.425,0.843,71,True
 Fourme d'Ambert,,20.0,True,0.0327,,0,0.425,0.425,0.843,71,True
-Le Maréchal,,10.926,False,0.0358,30.0,0,0.369,0.369,0.843,71,True
+Gorgonzola dolce,,13.872,False,0.0326,,0,0.425,0.425,0.843,71,True
 Mont Vully,,20.0,True,0.0357,30.0,0,0.369,0.369,0.843,71,True
 Murol,,20.0,True,0.0356,30.0,0,0.369,0.369,0.843,71,True
 Niolo,,20.0,True,0.0356,30.0,0,0.369,0.369,0.843,71,True
@@ -705,7 +706,6 @@ Tomme de Lomagne,,20.0,True,0.0351,30.0,0,0.369,0.369,0.843,71,True
 Tomme fraîche,,20.0,True,0.035,30.0,0,0.369,0.369,0.843,71,True
 Tomme vaudoise fraîche,,20.0,True,0.0349,30.0,0,0.369,0.369,0.843,71,True
 Venaco,,20.0,True,0.0349,30.0,0,0.369,0.369,0.843,71,True
-Gorgonzola dolce,,13.872,False,0.0326,,0,0.425,0.425,0.849,72,True
 Gorgonzola piccante,,13.872,False,0.0326,,0,0.425,0.425,0.849,72,True
 Gouda defumado,,14.594,False,0.0325,,0,0.425,0.425,0.849,72,True
 Gouda envelhecido,,14.35,False,0.0325,,0,0.425,0.425,0.849,72,True
@@ -761,6 +761,7 @@ Queijo da Serra da Canastra,,11.165,False,0.0302,,0,0.425,0.425,0.849,72,True
 Queijo da Serra do Salitre,,11.362,False,0.0302,,0,0.425,0.425,0.849,72,True
 Queijo de Araxá,araxá | Queijo Araxá,11.538,False,0.0301,,0,0.425,0.425,0.849,72,True
 Queijo de alce,,12.417,False,0.0301,,0,0.425,0.425,0.849,72,True
+Queijo de cabra frescal,,12.569,False,0.03,,0,0.425,0.425,0.849,72,True
 Queijo Fontal,Fontal,13.968,False,0.0295,,0,0.425,0.425,0.854,73,True
 Queijo Manteca,Manteca,10.279,False,0.0295,,0,0.425,0.425,0.854,73,True
 Queijo Montebore,Montebore,10.279,False,0.0294,,0,0.425,0.425,0.854,73,True
@@ -773,7 +774,6 @@ Queijo Toma,Toma,10.324,False,0.029,,0,0.425,0.425,0.854,73,True
 Queijo Ubriaco,,10.279,False,0.029,,0,0.425,0.425,0.854,73,True
 Queijo Vieux Boulogne,Vieux-Boulogne,10.279,False,0.0288,,0,0.425,0.425,0.854,73,True
 Queijo de Goiás,,10.078,False,0.0299,,0,0.425,0.425,0.854,73,True
-Queijo de cabra frescal,,12.569,False,0.03,,0,0.425,0.425,0.854,73,True
 Queijo de cabra maturado,,12.736,False,0.03,,0,0.425,0.425,0.854,73,True
 Queijo de camela,,10.279,False,0.03,,0,0.425,0.425,0.854,73,True
 Queijo de castanha,,11.156,False,0.0299,,0,0.425,0.425,0.854,73,True
@@ -818,6 +818,7 @@ Sardo argentino,,13.308,False,0.0279,,0,0.425,0.425,0.854,73,True
 Shropshire Blue,,10.902,False,0.0279,,0,0.425,0.425,0.854,73,True
 Stilton azul,,9.059,False,0.0279,,0,0.425,0.425,0.854,73,True
 Telemea,,20.0,True,0.0278,,0,0.425,0.425,0.854,73,True
+Tête de Moine,,14.894,False,0.0278,,0,0.425,0.425,0.854,73,True
 A Vaca que Ri,,8.746,False,0.027,,3564,0.487,0.487,0.86,74,True
 Appenzeller,,20.0,True,0.027,,414,0.487,0.487,0.86,74,True
 Asiago DOP,,20.0,True,0.027,,0,0.487,0.487,0.86,74,True
@@ -857,6 +858,7 @@ Queijo de manteiga do Seridó,,11.322,False,0.0272,,0,0.476,0.476,0.86,74,True
 Queijo defumado,,12.024,False,0.0273,,0,0.474,0.474,0.86,74,True
 Queijo nozinho,nozinho,12.9,False,0.0273,,0,0.475,0.475,0.86,74,True
 Queijo palito,palitinho,11.212,False,0.0273,,0,0.475,0.475,0.86,74,True
+Queijo para pizza,,8.484,False,0.0259,,702,0.499,0.499,0.86,74,True
 Roncal,,18.218,False,0.0263,,138,0.487,0.487,0.86,74,True
 Sbrinz,,20.0,True,0.0263,,102,0.487,0.487,0.86,74,True
 Smažený sýr,,20.0,True,0.0263,,144,0.487,0.487,0.86,74,True
@@ -869,7 +871,6 @@ Tilsiter,,20.0,True,0.0278,,0,0.425,0.425,0.86,74,True
 Tomme de Savoie,tomme,20.0,True,0.0277,,0,0.425,0.425,0.86,74,True
 Tvorog,,20.0,True,0.0277,,0,0.425,0.425,0.86,74,True
 Twaróg,,20.0,True,0.0276,,0,0.425,0.425,0.86,74,True
-Tête de Moine,,14.894,False,0.0278,,0,0.425,0.425,0.86,74,True
 Urdă,,16.631,False,0.0261,,72,0.487,0.487,0.86,74,True
 Vacherin Fribourgeois,,18.836,False,0.0276,,0,0.425,0.425,0.86,74,True
 Vacherin Mont-d'Or,Vacherin | Mont d'Or,18.836,False,0.0261,,492,0.487,0.487,0.86,74,True
@@ -911,12 +912,12 @@ Pag,,20.0,True,0.0256,,0,0.504,0.504,0.866,75,True
 Paneer makhani,,20.0,True,0.0247,,0,0.522,0.522,0.866,75,True
 Passendale,,20.0,True,0.0246,,48,0.522,0.522,0.866,75,True
 Pasta filata,,10.093,False,0.0246,,0,0.522,0.522,0.866,75,True
+Pecorino Toscano DOP,,14.721,False,0.0242,,0,0.531,0.531,0.866,75,True
 Piave DOP,,20.0,True,0.0246,,0,0.522,0.522,0.866,75,True
 Prästost,,20.0,True,0.0245,,108,0.522,0.522,0.866,75,True
 Queijo do Pico,,10.755,False,0.0249,,390,0.515,0.515,0.866,75,True
 Queijo em bolinha,,8.738,False,0.0249,,0,0.518,0.518,0.866,75,True
 Queijo fatiado,,12.186,False,0.0253,,0,0.509,0.509,0.866,75,True
-Queijo para pizza,,8.484,False,0.0259,,702,0.499,0.499,0.866,75,True
 Queijo processado,,11.366,False,0.0253,,1050,0.511,0.511,0.866,75,True
 Raschera DOP,,20.0,True,0.0257,,0,0.502,0.502,0.866,75,True
 Saint Agur Blue,,10.902,False,0.0249,,0,0.515,0.515,0.866,75,True
@@ -962,7 +963,6 @@ Năsal,,12.644,False,0.0238,,0,0.539,0.539,0.872,76,True
 Olivet cendré,,20.0,True,0.0228,,0,0.562,0.562,0.872,76,True
 Oštiepok,,20.0,True,0.0233,,0,0.55,0.55,0.872,76,True
 Palmero,,20.0,True,0.0237,,0,0.539,0.539,0.872,76,True
-Pecorino Toscano DOP,,14.721,False,0.0242,,0,0.531,0.531,0.872,76,True
 Pecorino di Filiano DOP,,12.93,False,0.0233,,0,0.55,0.55,0.872,76,True
 Provoleta,,20.0,True,0.0233,,0,0.55,0.55,0.872,76,True
 Queijo Serpa,serpa,11.607,False,0.0242,,768,0.531,0.531,0.872,76,True
@@ -977,6 +977,7 @@ Requeijão de Ribeira,,12.197,False,0.0231,,0,0.556,0.556,0.872,76,True
 Requeijão do norte,,10.576,False,0.0236,,0,0.544,0.544,0.872,76,True
 Rochebaron,,20.0,True,0.0227,,0,0.562,0.562,0.872,76,True
 Romano,,11.058,False,0.0237,,0,0.539,0.539,0.872,76,True
+Rosa Camuna,,9.136,False,0.0227,,0,0.562,0.562,0.872,76,True
 Sakura,,20.0,True,0.0232,,132,0.55,0.55,0.872,76,True
 Salva,,10.98,False,0.0237,,0,0.539,0.539,0.872,76,True
 San Simón da Costa,,9.062,False,0.0236,,0,0.539,0.539,0.872,76,True
@@ -1008,6 +1009,7 @@ Chavroux,,20.0,True,0.0215,,0,0.6,0.6,0.877,77,True
 Cotija,,20.0,True,0.0217,,0,0.588,0.588,0.877,77,True
 Creole cream,,20.0,True,0.0214,,0,0.6,0.6,0.877,77,True
 Dali ni Horbo,,11.646,False,0.0214,,0,0.6,0.6,0.877,77,True
+Dolcelatte,,20.0,True,0.0214,,0,0.6,0.6,0.877,77,True
 Hauskyjza,,20.0,True,0.0221,,0,0.581,0.581,0.877,77,True
 Kars gravyer,,20.0,True,0.0221,,0,0.581,0.581,0.877,77,True
 Mimolette vieille,,20.0,True,0.0225,10.0,0,0.572,0.572,0.877,77,True
@@ -1036,7 +1038,6 @@ Queijo trança,trança,11.57,False,0.0226,,0,0.567,0.567,0.877,77,True
 Queso fresco,,11.154,False,0.0217,,0,0.588,0.588,0.877,77,True
 Reblochon fermier,,20.0,True,0.0222,10.0,0,0.572,0.572,0.877,77,True
 Robiola di Roccaverano DOP,,15.068,False,0.0219,,0,0.581,0.581,0.877,77,True
-Rosa Camuna,,9.136,False,0.0227,,0,0.562,0.562,0.877,77,True
 Rubing,,20.0,True,0.0219,,66,0.581,0.581,0.877,77,True
 Rushan,,20.0,True,0.0218,,78,0.581,0.581,0.877,77,True
 Santarém,,11.643,False,0.0218,,0,0.581,0.581,0.877,77,True
@@ -1065,7 +1066,6 @@ Chura kampo,,20.0,True,0.0204,,36,0.63,0.63,0.883,78,True
 Chura loenpa,,20.0,True,0.0204,,6,0.63,0.63,0.883,78,True
 Criollo,,20.0,True,0.0204,,0,0.63,0.63,0.883,78,True
 Dolaz,,20.0,True,0.0204,,0,0.63,0.63,0.883,78,True
-Dolcelatte,,20.0,True,0.0214,,0,0.6,0.6,0.883,78,True
 Dovedale,,20.0,True,0.0203,,0,0.63,0.63,0.883,78,True
 Džiugas,,20.0,True,0.0214,,0,0.6,0.6,0.883,78,True
 Emmental de Savoie,,20.0,True,0.0213,,0,0.6,0.6,0.883,78,True
@@ -1073,6 +1073,7 @@ Emmental français est-central,,8.81,False,0.0203,,0,0.63,0.63,0.883,78,True
 Farmer,,20.0,True,0.0213,,0,0.6,0.6,0.883,78,True
 Fontainebleau,,20.0,True,0.0203,,0,0.63,0.63,0.883,78,True
 Formaggella del Luinese DOP,,9.536,False,0.0203,,0,0.63,0.63,0.883,78,True
+Fresh Tomme,,20.0,True,0.0203,,0,0.63,0.63,0.883,78,True
 Friesian Clove,,20.0,True,0.0213,,0,0.6,0.6,0.883,78,True
 Jura,,12.65,False,0.0213,,0,0.6,0.6,0.883,78,True
 Le Bergues,,10.068,False,0.0213,,0,0.6,0.6,0.883,78,True
@@ -1120,7 +1121,7 @@ Canestrato di Moliterno IGP,,10.175,False,0.0193,,0,0.671,0.671,0.889,79,True
 Casatella Trevigiana DOP,,20.0,True,0.0193,,0,0.671,0.671,0.889,79,True
 Chällerhocker,,20.0,True,0.0193,,0,0.671,0.671,0.889,79,True
 Confit d'Époisses,,20.0,True,0.0192,,0,0.671,0.671,0.889,79,True
-Fresh Tomme,,20.0,True,0.0203,,0,0.63,0.63,0.889,79,True
+Cooleeney Farmhouse,,20.0,True,0.0192,,0,0.671,0.671,0.889,79,True
 Government,,20.0,True,0.0202,,0,0.63,0.63,0.889,79,True
 Green,,11.155,False,0.0202,,0,0.63,0.63,0.889,79,True
 Havarti,,20.0,True,0.0196,,0,0.649,0.649,0.889,79,True
@@ -1158,7 +1159,6 @@ Turrialba,,20.0,True,0.0198,,0,0.63,0.63,0.889,79,True
 Tybo,,20.0,True,0.0197,,0,0.646,0.646,0.889,79,True
 Vorarlberger Alpkäse,,20.0,True,0.0197,,0,0.63,0.63,0.889,79,True
 Yak's milk,,12.801,False,0.0197,,0,0.63,0.63,0.889,79,True
-Cooleeney Farmhouse,,20.0,True,0.0192,,0,0.671,0.671,0.894,80,True
 Couronne lochoise,,20.0,True,0.0192,,0,0.671,0.671,0.894,80,True
 Danbo,,20.0,True,0.0192,,756,0.671,0.671,0.894,80,True
 Dutch Mimolette,,20.0,True,0.0191,,0,0.671,0.671,0.894,80,True
@@ -1328,7 +1328,7 @@ Istrian sheep,,20.0,True,0.0167,,0,0.751,0.751,0.906,82,True
 Jadel,,20.0,True,0.0167,,0,0.751,0.751,0.906,82,True
 Korall,,20.0,True,0.0167,,0,0.751,0.751,0.906,82,True
 La Chivita,,7.862,False,0.0167,,0,0.751,0.751,0.906,82,True
-La Nucia,,7.862,False,0.0166,,0,0.751,0.751,0.911,83,True
+La Nucia,,7.862,False,0.0166,,0,0.751,0.751,0.906,82,True
 Lavort,,20.0,True,0.0166,,0,0.751,0.751,0.911,83,True
 Le Douanier,,10.068,False,0.0166,,0,0.751,0.751,0.911,83,True
 Le Montagnard,,10.068,False,0.0166,,0,0.751,0.751,0.911,83,True
@@ -1498,7 +1498,7 @@ Doré-mi,,10.454,False,0.0147,,0,0.876,0.876,0.922,85,True
 Duddleswell,,20.0,True,0.0147,,0,0.876,0.876,0.922,85,True
 Délice de la Sicalait,,7.862,False,0.0147,,0,0.876,0.876,0.922,85,True
 Ecorce,,20.0,True,0.0147,,0,0.876,0.876,0.922,85,True
-Edamski,,20.0,True,0.0147,,0,0.876,0.876,0.927,86,True
+Edamski,,20.0,True,0.0147,,0,0.876,0.876,0.922,85,True
 Edelpilz,,20.0,True,0.0147,,0,0.876,0.876,0.927,86,True
 Eden,,12.937,False,0.0147,,0,0.876,0.876,0.927,86,True
 Enzyme-modified,,20.0,True,0.0147,,0,0.876,0.876,0.927,86,True
@@ -1642,6 +1642,7 @@ Formaggio di capra a pasta molle PAT,,11.542,False,0.0132,,0,0.964,0.964,0.938,8
 Formaggio di pecora o capra a pasta pressata PAT,,12.732,False,0.0132,,0,0.964,0.964,0.938,88,True
 Formaggio misto PAT,,11.664,False,0.0132,,0,0.964,0.964,0.938,88,True
 Fourme de Pierre-sur-Haute,,20.0,True,0.0131,,0,0.964,0.964,0.938,88,True
+Fromage de Monsieur,,14.204,False,0.0131,,0,0.964,0.964,0.938,88,True
 Kefalotyri,,20.0,True,0.0134,,192,0.934,0.934,0.938,88,True
 Suffolk Gold,,20.0,True,0.0136,,0,0.876,0.876,0.938,88,True
 Swedish,,20.0,True,0.0136,,0,0.876,0.876,0.938,88,True
@@ -1668,7 +1669,6 @@ Wrekin White,,20.0,True,0.0134,,0,0.876,0.876,0.938,88,True
 Wyfe of Bath,,20.0,True,0.0134,,0,0.876,0.876,0.938,88,True
 Yellow,,20.0,True,0.0134,,0,0.876,0.876,0.938,88,True
 Łowicz,,20.0,True,0.0134,,0,0.876,0.876,0.938,88,True
-Fromage de Monsieur,,14.204,False,0.0131,,0,0.964,0.964,0.943,89,True
 Galait,,20.0,True,0.0131,,0,0.964,0.964,0.943,89,True
 German,,20.0,True,0.0131,,0,0.964,0.964,0.943,89,True
 Gevrik,,20.0,True,0.0131,,0,0.964,0.964,0.943,89,True
