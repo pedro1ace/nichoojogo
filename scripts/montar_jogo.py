@@ -49,6 +49,23 @@ FECHADAS = {
     "astronautas", "filmes-tom-hanks", "jogadores-da-selecao", "novelas-brasileiras",
     "ossos-do-corpo", "paises", "paises-acima-do-equador",
     "palavras-astro-e-cosmo", "turma-da-monica",
+    "animais-atropelados-por-aviao",  # base da FAA: só os bichos que já foram atropelados
+    # temas fechados que o brasileiro médio conhece (pedido de 04/11): a lista cobre o tema inteiro
+    "sabores-de-pizza",
+    "personagens-da-disney",
+    "formas-geometricas",
+    "salgadinhos-de-festa",
+    "personagens-biblicos",
+    "superpoderes",
+    "coisas-do-churrasco",
+    "meios-de-transporte",
+    "contos-de-fadas",
+    "animacoes-disney-pixar",
+    "bichos-resgatados-por-bombeiros",
+    "coisas-do-natal",
+    "frutos-do-mar",
+    "dancas",
+    "filmes-nota-imdb",
 }
 
 
