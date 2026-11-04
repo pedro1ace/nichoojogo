@@ -109,6 +109,30 @@ function lerVeredito(saida) {
 
 // A pergunta e uma amostra espalhada da lista, lidas direto do pacote do dia com as funções
 // JSON do próprio D1 (o pacote é grande; assim a função não precisa abrir ele inteiro).
+// Tira os acentos dentro do SQL (o lower() do SQLite só mexe em letras sem acento).
+const SEM_ACENTO = [..."áàâãäéèêëíìîïóòôõöúùûüç"].reduce(
+  (sql, letra) => `replace(${sql}, '${letra}', '${letra.normalize("NFD")[0]}')`,
+  "lower(json_extract(r.value, '$.resposta') || ' ' || coalesce(json_extract(r.value, '$.apelidos'), ''))",
+);
+
+// Respostas da lista parecidas com o que foi digitado (mesmo começo de palavra). A IA usa o nome
+// delas quando é a mesma coisa: "monitor ed aluno" vira "Monitor escolar", e não uma resposta nova.
+async function lerParecidas(db, dia, categoria, chave) {
+  const pedacos = [...new Set(chave.split(" ").filter((p) => p.length >= 4).map((p) => p.slice(0, 4)))].slice(0, 3);
+  if (!pedacos.length) return [];
+  const { results } = await db
+    .prepare(
+      "SELECT json_extract(r.value, '$.resposta') AS nome " +
+        "FROM dias, json_each(dias.payload, '$.categorias') AS c, json_each(c.value, '$.respostas') AS r " +
+        "WHERE dias.dia = ?1 AND json_extract(c.value, '$.id') = ?2 AND (" +
+        pedacos.map((_, i) => `(' ' || ${SEM_ACENTO}) LIKE ?${i + 3}`).join(" OR ") +
+        ") LIMIT 12",
+    )
+    .bind(dia, categoria, ...pedacos.map((p) => `% ${p}%`))
+    .all();
+  return results.map((r) => r.nome).filter(Boolean);
+}
+
 async function lerCategoria(db, dia, categoria) {
   const cat = await db
     .prepare(
@@ -138,13 +162,17 @@ function instrucoes(cat) {
     "com UMA resposta curta, e ganha mais pontos quanto mais rara (mas correta) ela for.",
     `A pergunta desta rodada é: "${cat.pergunta}".`,
     `Exemplos de respostas que a lista já aceita: ${cat.exemplos.join(", ")}.`,
+    cat.parecidas?.length
+      ? `Respostas da lista com palavras parecidas com a do jogador: ${cat.parecidas.join(", ")}.`
+      : "",
     "O jogador digitou uma resposta que não está na lista. Decida se ela responde corretamente à pergunta.",
     "Responda em UMA linha, sem explicar, num destes formatos:",
     "\"SIM | Nome | Fama\" se é claramente uma resposta correta e que existe de verdade, mesmo que pouco conhecida",
     "(aceite nomes em português ou no original, com ou sem acento, e erros pequenos de digitação).",
     "Em Nome, escreva a resposta do jeito oficial e mais conhecido no Brasil, com maiúsculas e acentos certos,",
     "sem artigo e sem enfeites (por exemplo, \"sao paulo fc\" vira \"São Paulo\", \"cachorro poodle\" vira \"Poodle\").",
-    "Se for a mesma coisa que um dos exemplos, use exatamente o nome do exemplo.",
+    "Se for a mesma coisa que um dos exemplos ou das respostas parecidas (mesmo com outras palavras ou erro",
+    "de digitação), use exatamente o nome que está na lista.",
     "Em Fama, escreva só um número: se 1000 brasileiros adultos comuns respondessem esta pergunta em 25 segundos,",
     "quantos dariam esta resposta (pode ser 0.5 ou 0.1 para respostas muito raras).",
     "\"NAO\" se é errada, inventada, uma piada, um palavrão, uma frase, ou não responde à pergunta.",
@@ -221,6 +249,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
   if (!env.AI) return json({ veredito: "indisponivel", motivo: "sem o binding AI neste ambiente" });
 
   const cat = await lerCategoria(env.DB, dia, categoria);
+  if (cat) cat.parecidas = await lerParecidas(env.DB, dia, categoria, chave);
   if (!cat) return json({ veredito: "indisponivel", motivo: "categoria fora do dia" });
 
   // 2. ainda cabe no teto de hoje? (o limite da Cloudflare zera à meia-noite UTC)
