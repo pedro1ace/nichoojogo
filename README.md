@@ -291,7 +291,7 @@ Carga automática dos dias: a action [`carga-banco.yml`](.github/workflows/carga
 Juiz das recusadas (IA): quando a lista não tem a resposta, [`functions/api/juiz.js`](functions/api/juiz.js)
 pergunta ao Workers AI da Cloudflare se ela vale. Se a IA disser SIM, vale 40 pontos na hora; NÃO e TALVEZ seguem
 para a revisão diária (o veredito sai no campo `ia` de `/api/respostas?recusadas=1`). Cada resposta é julgada uma vez
-só (tabela `vereditos`, que guarda também o nome no padrão, para juntar as formas da mesma resposta) e há um teto de 700 julgamentos por dia, dentro dos 10.000 neurônios grátis da Cloudflare.
+só (tabela `vereditos`, que guarda também o nome no padrão, para juntar as formas da mesma resposta) e há um teto de 600 julgamentos por dia, dentro dos 10.000 neurônios grátis da Cloudflare.
 Para ligar: no projeto do Pages, **Settings → Bindings → Add → Workers AI**, nome da variável `AI`, e um novo deploy.
 Sem esse binding, o jogo recusa como antes. Para o jogador nada indica que existe IA; os avisos da "central"
 aparecem só nas prévias (`*.pages.dev`). Diagnóstico (não gasta nada): `GET /api/juiz`.

@@ -5944,7 +5944,7 @@ function montarRespostas() {
       if (abrir) lista.querySelectorAll(":scope > li.aberta").forEach(fecharBanco);
       li.classList.toggle("aberta", abrir);
       li.setAttribute("aria-expanded", String(abrir));
-      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta));
+      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta, h.pontos));
     };
     li.addEventListener("click", alternar);
     li.addEventListener("keydown", (e) => {
@@ -5968,15 +5968,19 @@ document.addEventListener("keydown", (e) => {
 });
 
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
-function montarBanco(cat, sua) {
+function montarBanco(cat, sua, suaPontos = 0) {
   const banco = document.createElement("div");
   banco.className = "banco";
-  const itens = cat.respostas
-    .map((r) => {
-      const sn = r.resposta === cat.supernova;
-      const pontos = sn ? r.pontos * 2 : r.pontos;
-      return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn, frase: r.frase };
-    })
+  const itens = cat.respostas.map((r) => {
+    const sn = r.resposta === cat.supernova;
+    const pontos = sn ? r.pontos * 2 : r.pontos;
+    return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn, frase: r.frase };
+  });
+  // resposta aprovada pelo juiz: ainda não está na lista do dia, mas aparece aqui com a sua
+  if (sua && !itens.some((it) => it.nome === sua)) {
+    itens.push({ nome: sua, pontos: suaPontos, faixa: faixaDe(suaPontos, false, false), sn: false });
+  }
+  itens
     .sort((a, b) => b.sn - a.sn || b.pontos - a.pontos || a.nome.localeCompare(b.nome, "pt"));
   const filtros = [{ id: "todas", nome: "Todas", cor: "#eef0ff" }, SUPERNOVA, ...FAIXAS, ESPERTALHAO];
   let ativo = "todas";
