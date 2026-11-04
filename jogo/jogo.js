@@ -111,47 +111,90 @@ function compactar(texto) {
 
 // Distância de edição com troca de letras vizinhas: quantas letras faltam,
 // sobram, estão erradas ou trocadas de lugar ("eroupa" -> "europa" = 1).
-function distancia(a, b) {
+// Com "teto", para de contar assim que passa dele (devolve teto + 1): a busca
+// só quer saber das palavras bem parecidas, e isso deixa a digitação leve.
+function distancia(a, b, teto = Infinity) {
   const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
   for (let j = 1; j <= b.length; j++) d[0][j] = j;
   for (let i = 1; i <= a.length; i++) {
+    let menorDaLinha = Infinity;
     for (let j = 1; j <= b.length; j++) {
       const custo = a[i - 1] === b[j - 1] ? 0 : 1;
       d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + custo);
       if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
         d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
       }
+      if (d[i][j] < menorDaLinha) menorDaLinha = d[i][j];
     }
+    // a troca de vizinhas olha duas linhas para trás, então só desiste com duas linhas acima do teto
+    if (menorDaLinha > teto && i > 1 && Math.min(...d[i - 1].slice(1)) > teto) return teto + 1;
   }
   return d[a.length][b.length];
 }
 
-// Palavras curtas precisam vir quase certas; longas aceitam mais erros.
+// Quantos erros de digitação a correção aceita, pelo tamanho do que foi digitado.
+// Bem rígido de propósito: corrigir para uma palavra que o jogador não quis dizer
+// (às vezes uma mais nichada!) é pior do que pedir para ele digitar de novo.
+// Até 3 letras: só a palavra exata. 4 a 7: 1 erro. 8 a 11: 2 erros. 12 ou mais: 3.
+// (Com 4 letras, o erro tem que ser letra errada ou trocada: "gatp" -> "gato".)
 function tolerancia(tamanho) {
   if (tamanho <= 3) return 0;
-  if (tamanho <= 5) return 1;
-  if (tamanho <= 9) return 2;
+  if (tamanho <= 7) return 1;
+  if (tamanho <= 11) return 2;
   return 3;
+}
+
+// Quem erra a digitação quase nunca erra a 1ª letra. Se a 1ª letra muda, é outra
+// palavra ("Pateta" não é "Cametá"). Só aceita a troca das duas primeiras ("rbasil").
+function mesmoComeco(a, b) {
+  return a[0] === b[0] || (a[0] === b[1] && a[1] === b[0]);
+}
+
+// Em respostas de várias palavras, o erro tem que estar espalhado como erro de digitação,
+// e não concentrado numa palavra que virou outra ("Água Santa" não é "Água benta",
+// "Mousse de limão" não é "Mousse de milho"). Cada palavra aceita no máximo os erros do
+// seu próprio tamanho (pelo menos 1). Se o número de palavras mudou (espaço esquecido),
+// vale só a regra geral.
+function palavrasBatem(texto, nome) {
+  const separar = (t) => normalizar(t).replace(/^(o|a|os|as|um|uma) /, "").split(" ");
+  const a = separar(texto), b = separar(nome);
+  if (a.length < 2 || a.length !== b.length) return true;
+  return a.every((p, i) => distancia(p, b[i]) <= Math.max(1, tolerancia(p.length)));
 }
 
 // Procura a resposta. Devolve { resposta, nome, exato } ou null.
 // "nome" é a grafia que casou (pode ser um apelido), para mostrar ao jogador.
+// A correção só acontece quando é óbvia: se duas respostas diferentes ficam igualmente
+// perto do que foi digitado ("galso": Galo ou Ganso?), o jogo não escolhe por ele.
+// Se a mais perto precisou de 2 erros ou mais, também não corrige quando outra resposta
+// diferente está só 1 erro mais longe: a dúvida é grande demais para chutar.
 function buscar(cat, texto) {
   const alvo = compactar(texto);
   if (!alvo) return null;
   if (cat.mapa.has(alvo)) return { ...cat.mapa.get(alvo), exato: true };
   const limite = tolerancia(alvo.length);
+  if (!limite) return null;
   let melhor = null;
   let menor = Infinity;
+  let segunda = Infinity; // distância da melhor resposta *diferente* da escolhida
   for (const [chave, item] of cat.mapa) {
-    if (Math.abs(chave.length - alvo.length) > limite) continue;
-    const d = distancia(alvo, chave);
+    if (Math.abs(chave.length - alvo.length) > (alvo.length <= 4 ? 0 : limite)) continue;
+    if (!mesmoComeco(alvo, chave)) continue;
+    const d = distancia(alvo, chave, limite + 1);
+    if (d > limite + 1) continue;
     if (d < menor) {
+      if (melhor && melhor.resposta !== item.resposta) segunda = menor;
       menor = d;
       melhor = item;
+    } else if (item.resposta !== melhor.resposta && d < segunda) {
+      segunda = d;
     }
   }
-  return menor <= limite ? { ...melhor, exato: false } : null;
+  if (menor > limite) return null;
+  if (segunda === menor) return null; // empate entre respostas diferentes
+  if (menor >= 2 && segunda === menor + 1) return null;
+  if (!palavrasBatem(texto, melhor.nome)) return null;
+  return { ...melhor, exato: false };
 }
 
 // ---------- dia, sorteio e progresso ----------
