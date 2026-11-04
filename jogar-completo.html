@@ -5154,6 +5154,7 @@ function iniciarRodada() {
   $("palpite").value = "";
   estado.tentadas = [];
   estado.consultas = 0;
+  estado.anotadas = new Set();
   mostrarPergunta(true);
   Som.pergunta(); // avisa que chegou pergunta nova
 
@@ -5348,7 +5349,13 @@ function palpitar(evento) {
   if (busca && !busca.exato && opcoes.semCorrecao) busca = null;
 
   if (!busca) {
-    if (texto.length >= 3) enviarResposta(cat, { recusada: texto });
+    // a mesma recusada conta uma vez por pergunta: assim "2 ou mais" no plantão são 2 jogadores, não 2 Enter
+    const chave = compactar(texto);
+    estado.anotadas ||= new Set();
+    if (texto.length >= 3 && !estado.anotadas.has(chave)) {
+      estado.anotadas.add(chave);
+      enviarResposta(cat, { recusada: texto });
+    }
     if (texto.length >= 3 && vaiAnotar(cat)) consultarJuiz(cat, texto);
     else recusar(cat, texto);
     return;
