@@ -103,13 +103,13 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1054 |
-| 2 | Cores | Cite uma cor (ou um tom de cor) | 1057 |
+| 1 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1034 |
+| 2 | Cores | Cite uma cor (ou um tom de cor) | 1056 |
 | 3 | Países | Cite um país | 242 |
-| 4 | Material escolar | Cite um item de material escolar | 1040 |
-| 5 | Coisas redondas | Cite algo que é redondo | 1203 |
-| 6 | Coisas com casca | Cite algo que tem casca | 1040 |
-| 7 | Marcas de carro | Cite uma marca de carro | 3791 |
+| 4 | Material escolar | Cite um item de material escolar | 1031 |
+| 5 | Coisas redondas | Cite algo que é redondo | 1199 |
+| 6 | Coisas com casca | Cite algo que tem casca | 1039 |
+| 7 | Marcas de carro | Cite uma marca de carro | 3786 |
 
 ## Dia 10 · sex 06/11/2026
 
