@@ -10,6 +10,9 @@ Morro do Corcovado,Corcovado | Morro do Cristo Redentor (Brasil) | Morro do Corc
 Etna,,14.085,False,20.0,85.0,20484,0.004,0.004,0.374,14,True
 K2,Pico k2 | Monte K2 | Mont godwin-austen,11.231,False,15.0,75.0,17658,0.005,0.005,0.387,15,True
 Pico da Bandeira,Bandeira,10.751,False,15.0,85.0,13794,0.005,0.005,0.387,15,True
+Alpes,,12.293,False,12.0,95.0,0,0.032,0.032,0.458,21,True
+Andes,,12.594,False,10.0,95.0,0,0.033,0.033,0.48,23,True
+Himalaia,,20.0,True,10.0,95.0,0,0.033,0.033,0.48,23,True
 Monte Branco,Mont Blanc | Branco,9.188,False,10.0,78.0,12798,0.006,0.006,0.48,23,True
 Monte Olimpo,Olimpo | Cume Mitikas,11.372,False,10.0,88.0,15606,0.006,0.006,0.48,23,True
 Monte Roraima,Roraima,10.732,False,10.0,88.0,39150,0.006,0.006,0.48,23,True
@@ -29,8 +32,11 @@ Morro da Urca,Urca,11.954,False,3.0,28.7,14670,0.012,0.012,0.632,40,True
 Olympus Mons,,20.0,True,3.0,,0,0.012,0.012,0.632,40,False
 Pico do Jaraguá,Jaraguá,11.779,False,3.0,31.6,13530,0.012,0.012,0.632,40,True
 Popocatépetl,Vulcão Popocatépetl,12.287,False,3.0,55.0,3684,0.012,0.012,0.632,40,True
+Serra da Mantiqueira,,11.394,False,3.0,82.0,0,0.034,0.034,0.632,40,True
+Serra do Mar,,8.998,False,3.0,85.0,0,0.033,0.033,0.632,40,True
 Vulcão Eyjafjallajökull,Eyjafjallajökull,12.287,False,3.0,45.0,0,0.012,0.012,0.632,40,True
 Annapurna,,20.0,True,2.0,,0,0.018,0.018,0.678,46,False
+Chapada Diamantina,,12.481,False,2.0,80.0,0,0.034,0.034,0.678,46,True
 Monte Elbrus,Elbrus,9.653,False,2.0,40.0,7380,0.018,0.018,0.678,46,True
 Monte Pascoal,Pascoal,11.411,False,2.0,33.6,11886,0.018,0.018,0.678,46,True
 Morro do Pai Inácio,Pai Inácio,10.045,False,2.0,60.0,2526,0.018,0.018,0.678,46,True
@@ -58,12 +64,8 @@ Teide,El Teide,20.0,True,1.0,65.3,4950,0.024,0.024,0.762,58,True
 Tábua do Cabo,Montanha da Mesa | Monte Mesa,10.664,False,1.0,51.5,4080,0.024,0.024,0.762,58,True
 Villarrica,Vulcão Villarrica,12.287,False,1.0,37.5,3660,0.024,0.024,0.762,58,True
 Vinson,,20.0,True,1.0,,0,0.024,0.024,0.762,58,False
-Alpes,,12.293,False,0.27,95.0,0,0.032,0.032,0.775,60,True
-Andes,,12.594,False,0.27,95.0,0,0.033,0.033,0.775,60,True
 Ben Nevis,,20.0,True,0.5,49.7,1212,0.029,0.029,0.775,60,True
-Chapada Diamantina,,12.481,False,0.27,80.0,0,0.034,0.034,0.775,60,True
 Dhaulagiri,,20.0,True,0.3,53.8,990,0.031,0.031,0.775,60,True
-Himalaia,,20.0,True,0.27,95.0,0,0.033,0.033,0.775,60,True
 Makalu,,20.0,True,0.5,53.8,1122,0.029,0.029,0.775,60,True
 Montanha do Pico,Ponta do Pico | Monte pico | Pico,10.848,False,0.27,41.2,6696,0.039,0.039,0.775,60,True
 Monte Atos,República de Monte Atos | Monte athos | Atonitas | Atos,9.653,False,0.27,58.7,5790,0.036,0.036,0.775,60,True
@@ -76,20 +78,24 @@ Monte Hérmon,Hérmon,9.653,False,0.27,51.6,9378,0.035,0.035,0.775,60,True
 Monte Kailash,Kailash,9.653,False,0.5,60.1,5442,0.029,0.029,0.775,60,True
 Monte Kosciuszko,Kosciuszko,9.653,False,0.5,20.0,1638,0.029,0.029,0.775,60,True
 Monte Nebo,Nebo,9.653,False,0.27,40.9,5490,0.04,0.04,0.775,60,True
+Monte Parnaso,Monte Parnasso | Monte Fócida | Parnaso,12.487,False,0.27,48.0,3006,0.047,0.047,0.775,60,True
+Monte Quénia,Monte Kenya | Quénia,11.437,False,0.27,54.6,1416,0.046,0.046,0.775,60,True
+Monte Rainier,Rainier,9.653,False,0.27,48.9,2748,0.045,0.045,0.775,60,True
+Monte Tabor,Tabor,9.653,False,0.27,44.7,2910,0.046,0.046,0.775,60,True
 Monte Tai,Monte Taishan | Tai,11.189,False,0.3,45.9,912,0.031,0.031,0.775,60,True
 Monte das Oliveiras,Oliveiras,9.653,False,0.27,51.9,8208,0.036,0.036,0.775,60,True
 Morro Dois Irmãos,Dois Irmãos,9.221,False,0.27,28.6,7926,0.041,0.041,0.775,60,True
 Morro da Igreja,Igreja,9.516,False,0.27,29.0,7098,0.042,0.042,0.775,60,True
 Morro do Castelo,Castelo,10.353,False,0.27,28.0,9606,0.04,0.04,0.775,60,True
+Nevado del Ruiz,Ruiz,11.829,False,0.27,43.8,3558,0.045,0.045,0.775,60,True
 Ojos del Salado,Vulcão Ojos del Salado | Nevado Ojos del Salado,9.536,False,0.27,50.9,3450,0.043,0.043,0.775,60,True
 Pico do Arieiro,Pico do Areeiro | Arieiro | Areeiro,11.231,False,0.27,33.6,6756,0.041,0.041,0.775,60,True
 Pico do Cabuji,Pico do Cabugi | Cabuji,11.231,False,0.27,30.4,10764,0.037,0.037,0.775,60,True
 Pico dos Marins,Marins,11.231,False,0.27,29.1,10392,0.038,0.038,0.775,60,True
 Serra da Capivara,Capivara,11.615,False,0.27,31.6,34206,0.035,0.035,0.775,60,True
-Serra da Mantiqueira,,11.394,False,0.27,82.0,0,0.034,0.034,0.775,60,True
 Serra das Araras,Serra das Bananas | Araras,10.993,False,0.27,28.4,13614,0.037,0.037,0.775,60,True
 Serra do Caraça,Colégio do Caraça | Caraça,11.989,False,0.27,28.9,9876,0.039,0.039,0.775,60,True
-Serra do Mar,,8.998,False,0.27,85.0,0,0.033,0.033,0.775,60,True
+Vulcão de Fogo,Fogo,10.756,False,0.27,30.0,3228,0.044,0.044,0.775,60,True
 Vulcão de Nova Iguaçu,Nova Iguaçu,9.879,False,0.27,27.5,9198,0.042,0.042,0.775,60,True
 Vulcão dos Capelinhos,Capelinhos,12.287,False,0.27,33.3,8832,0.038,0.038,0.775,60,True
 Agulha do Midi,Aiguille du Midi,13.726,False,0.27,36.5,1752,0.073,0.073,0.781,61,True
@@ -99,6 +105,7 @@ Bazarduzu Dagi,Monte Bazardüzü | Bazardüzü Dağı | Bazardüzü,9.653,False,
 Broad Peak,,20.0,True,0.27,52.9,3492,0.049,0.049,0.781,61,True
 Cambirela,Morro do Cambirela,10.638,False,0.27,25.6,4290,0.076,0.076,0.781,61,True
 Cerro San Cristóbal,San Cristóbal,12.629,False,0.27,27.5,3636,0.058,0.058,0.781,61,True
+Cerro Santa Lucía,Santa Lucía,10.613,False,0.27,25.5,2040,0.078,0.078,0.781,61,True
 Cho Oyu,Cho oyo,13.198,False,0.27,50.6,804,0.059,0.059,0.781,61,True
 Cumbre Vieja,,20.0,True,0.27,36.3,4110,0.054,0.054,0.781,61,True
 Huascarán,Nevado Huascarán,14.122,False,0.27,40.7,2634,0.065,0.065,0.781,61,True
@@ -111,18 +118,18 @@ Maciço Logan,,12.662,False,0.27,46.2,636,0.075,0.075,0.781,61,True
 Manaslu,Kutang,20.0,True,0.27,51.5,1290,0.064,0.064,0.781,61,True
 Merapi,Monte Merapi,9.653,False,0.27,51.3,1740,0.061,0.061,0.781,61,True
 Montanha Baekdu,Paektu-san | Monte Paektu | Monte Baekdu | Baekdu,10.465,False,0.27,51.1,2052,0.051,0.051,0.781,61,True
+Monte Arafat,Monte Arafate | Arafat,9.653,False,0.27,41.2,750,0.078,0.078,0.781,61,True
 Monte Binga,Binga,12.833,False,0.27,32.2,2868,0.058,0.058,0.781,61,True
 Monte Brasil,Brasil,8.281,False,0.27,25.4,3138,0.06,0.06,0.781,61,True
 Monte Caburaí,Caburaí,9.653,False,0.27,25.7,2418,0.07,0.07,0.781,61,True
 Monte Damavand,Monte Damavande | Pico Demavend | Monte demavend | Damavand,9.653,False,0.27,47.8,630,0.063,0.063,0.781,61,True
 Monte Emei,Paisagem do Monte Emei | Emei,9.653,False,0.27,40.4,1176,0.068,0.068,0.781,61,True
+Monte Herzl,Herzl,9.653,False,0.27,37.3,972,0.079,0.079,0.781,61,True
+Monte Jackson,Jackson,9.653,False,0.27,27.0,1590,0.077,0.077,0.781,61,True
 Monte Licabeto,Licabeto,9.653,False,0.27,33.9,1302,0.074,0.074,0.781,61,True
-Monte Parnaso,Monte Parnasso | Monte Fócida | Parnaso,12.487,False,0.27,48.0,3006,0.047,0.047,0.781,61,True
 Monte Pilatus,Pilatus,9.653,False,0.27,37.5,1650,0.062,0.062,0.781,61,True
-Monte Quénia,Monte Kenya | Quénia,11.437,False,0.27,54.6,1416,0.046,0.046,0.781,61,True
-Monte Rainier,Rainier,9.653,False,0.27,48.9,2748,0.045,0.045,0.781,61,True
+Monte Semeru,Semeru,9.653,False,0.27,40.5,870,0.077,0.077,0.781,61,True
 Monte Shasta,Shasta,9.653,False,0.27,38.1,2466,0.054,0.054,0.781,61,True
-Monte Tabor,Tabor,9.653,False,0.27,44.7,2910,0.046,0.046,0.781,61,True
 Monte Triglav,Triglav,9.653,False,0.27,42.7,720,0.075,0.075,0.781,61,True
 Monte Unzen,Unzen,9.653,False,0.27,36.2,1398,0.068,0.068,0.781,61,True
 Monte Whitney,Whitney,9.653,False,0.27,42.4,1056,0.069,0.069,0.781,61,True
@@ -135,7 +142,7 @@ Morro das Pedras,Praia do Morro das Pedras | Pedras,10.399,False,0.27,25.1,5820,
 Morro do Moco,Morro de Moco | Moco,13.057,False,0.27,36.8,4230,0.048,0.048,0.781,61,True
 Nemrut Dağ,Monte Ninrode | Nemrud Daği | Monte Nemrut,14.709,False,0.27,44.1,1758,0.064,0.064,0.781,61,True
 Nevado Mismi,Mismi,14.122,False,0.27,33.1,2298,0.067,0.067,0.781,61,True
-Nevado del Ruiz,Ruiz,11.829,False,0.27,43.8,3558,0.045,0.045,0.781,61,True
+Osorno,,20.0,True,0.27,36.1,2196,0.079,0.079,0.781,61,True
 Pedra da Galinha Choca,,11.275,False,0.27,25.1,4170,0.061,0.061,0.781,61,True
 Pedra da Mina,,10.541,False,0.27,28.6,5100,0.047,0.047,0.781,61,True
 Pico Alto,Alto | Pico Alto (Santa Maria),9.927,False,0.27,24.3,2598,0.076,0.076,0.781,61,True
@@ -158,7 +165,6 @@ São Paulo,Ilha de São Paulo | Ilhas São Paulo | Ilha Saint-Paul | Île Saint-
 Torre do Diabo,,10.606,False,0.27,41.8,2874,0.051,0.051,0.781,61,True
 Victoria Peak,,13.519,False,0.27,36.0,3414,0.053,0.053,0.781,61,True
 Vulcão Mayon,Mayon,12.287,False,0.27,45.7,984,0.069,0.069,0.781,61,True
-Vulcão de Fogo,Fogo,10.756,False,0.27,30.0,3228,0.044,0.044,0.781,61,True
 Zugspitze,,20.0,True,0.27,52.1,3504,0.05,0.05,0.781,61,True
 Alto de El Angliru,,8.623,False,0.2402,25.9,816,0.108,0.108,0.787,62,True
 Ama Dablam,,9.865,False,0.2554,32.9,690,0.103,0.103,0.787,62,True
@@ -166,7 +172,6 @@ Arthur's Seat,,20.0,True,0.2522,31.6,1680,0.103,0.103,0.787,62,True
 Cerro Catedral,Catedral,11.943,False,0.2461,25.5,1164,0.106,0.106,0.787,62,True
 Cerro Paranal,Paranal,12.629,False,0.2446,28.5,1080,0.106,0.106,0.787,62,True
 Cerro Rico,Rico,11.412,False,0.27,28.3,1458,0.084,0.084,0.787,62,True
-Cerro Santa Lucía,Santa Lucía,10.613,False,0.27,25.5,2040,0.078,0.078,0.787,62,True
 Foia,,15.689,False,0.27,25.2,2106,0.096,0.096,0.787,62,True
 Gasherbrum II,,8.693,False,0.27,42.2,348,0.087,0.087,0.787,62,True
 Gaztelugatxe,,20.0,True,0.27,31.6,2388,0.082,0.082,0.787,62,True
@@ -178,34 +183,31 @@ Licancabur,Vulcão licancabour | Licancabour,12.287,False,0.27,34.9,1740,0.091,0
 Llullaillaco,Volcán Llullaillaco,20.0,True,0.2476,40.6,1122,0.105,0.105,0.787,62,True
 Monte Agung,Monte Gunung Agung | Agung,9.653,False,0.27,39.5,654,0.086,0.086,0.787,62,True
 Monte Aneto,Pico Aneto | Aneto,12.905,False,0.27,37.8,804,0.096,0.096,0.787,62,True
-Monte Arafat,Monte Arafate | Arafat,9.653,False,0.27,41.2,750,0.078,0.078,0.787,62,True
 Monte Augustus,Augustus,9.653,False,0.27,27.3,1218,0.086,0.086,0.787,62,True
 Monte Bromo,Bromo,12.487,False,0.2587,35.4,798,0.102,0.102,0.787,62,True
 Monte Camarões,Fako | Camarões,10.969,False,0.27,41.2,840,0.081,0.081,0.787,62,True
 Monte Ebal,Ebal,9.653,False,0.27,28.0,936,0.098,0.098,0.787,62,True
-Monte Herzl,Herzl,9.653,False,0.27,37.3,972,0.079,0.079,0.787,62,True
 Monte Hor,Hor,9.653,False,0.27,25.9,1152,0.091,0.091,0.787,62,True
 Monte Ida,Psilorítis | Monte Idi | Monte Ídhi | Ida,10.216,False,0.27,34.2,990,0.085,0.085,0.787,62,True
-Monte Jackson,Jackson,9.653,False,0.27,27.0,1590,0.077,0.077,0.787,62,True
 Monte Kazbek,Kazbek,9.653,False,0.27,40.4,474,0.09,0.09,0.787,62,True
 Monte Kinabalu,Gunung kinabalu | Kinabalu,9.653,False,0.27,42.9,426,0.084,0.084,0.787,62,True
 Monte Nyiragongo,Monte Niaragongo | Nyiragongo,9.653,False,0.27,38.2,492,0.098,0.098,0.787,62,True
 Monte Royal,Royal,9.653,False,0.27,26.8,1176,0.089,0.089,0.787,62,True
 Monte Scopus,Scopus,9.653,False,0.2673,35.7,618,0.099,0.099,0.787,62,True
-Monte Semeru,Semeru,9.653,False,0.27,40.5,870,0.077,0.077,0.787,62,True
 Monte Sinabung,Sinabung,9.653,False,0.2655,36.3,582,0.1,0.1,0.787,62,True
 Monte Sodoma,Sodoma,9.653,False,0.2538,26.7,924,0.103,0.103,0.787,62,True
 Monte Titlis,Titlis,9.653,False,0.27,30.5,870,0.095,0.095,0.787,62,True
 Monte Ventor,Monte Ventoux | Mont Ventoux | Mont Ventor | Ventor,12.915,False,0.27,37.0,804,0.099,0.099,0.787,62,True
 Monte Washington,Washington,9.653,False,0.27,31.1,1032,0.086,0.086,0.787,62,True
 Monte Yamantau,Monte Iamantau | Monte Yamantaw | Yamantau,9.653,False,0.2638,35.0,636,0.1,0.1,0.787,62,True
+Monte Ótris,Ótris,9.653,False,0.232,27.8,792,0.11,0.11,0.787,62,True
+Morro Cara de Cão,Cara de Cão,9.764,False,0.2333,22.1,1752,0.11,0.11,0.787,62,True
 Morro da Boa Vista,Boa Vista,8.889,False,0.27,22.7,2064,0.09,0.09,0.787,62,True
 Morro de Santo Antônio,Santo Antônio,9.677,False,0.2431,22.1,1968,0.106,0.106,0.787,62,True
 Morro do Borel,Borel,10.638,False,0.2604,22.5,2154,0.101,0.101,0.787,62,True
 Mulhacén,Pico Mulhacén,11.231,False,0.27,40.5,1728,0.082,0.082,0.787,62,True
 Nevado Sajama,Sajama,14.122,False,0.27,38.5,1218,0.083,0.083,0.787,62,True
 Ol Doinyo Lengai,,13.555,False,0.2374,35.8,792,0.109,0.109,0.787,62,True
-Osorno,,20.0,True,0.27,36.1,2196,0.079,0.079,0.787,62,True
 Paricutín,Vulcão de Paricutín,12.287,False,0.27,41.5,1314,0.091,0.091,0.787,62,True
 Passo de Jama,,8.782,False,0.27,22.8,1698,0.094,0.094,0.787,62,True
 Pico Bolívar,La Columna | Bolívar,12.317,False,0.27,36.8,1056,0.085,0.085,0.787,62,True
@@ -225,7 +227,10 @@ Serra de Baturité,Baturité,11.942,False,0.27,23.0,3156,0.089,0.089,0.787,62,Tr
 Serra de Santa Bárbara,Vulcão de Santa Bárbara | Maciço de Santa Bárbara | Caldeira de Santa Bárbara | Santa Bárbara,9.703,False,0.27,24.2,2268,0.08,0.08,0.787,62,True
 Serra do Imeri,,9.417,False,0.2491,23.0,1404,0.104,0.104,0.787,62,True
 Shishapangma,Xixabangma feng | Xixabangma | Gosainthan,20.0,True,0.27,47.6,672,0.088,0.088,0.787,62,True
+Sneffels,,20.0,True,0.2306,37.3,1218,0.11,0.11,0.787,62,True
+Tepeyac,Monte do Tepeyac | Cerro do Tepeyac,9.653,False,0.236,26.6,2022,0.109,0.109,0.787,62,True
 Tibidabo,,20.0,True,0.27,33.3,2430,0.079,0.079,0.787,62,True
+Torre de Cerredo,,10.518,False,0.2293,27.0,888,0.111,0.111,0.787,62,True
 Vulcão Lascar,Lascar,13.198,False,0.2417,28.3,1146,0.106,0.106,0.787,62,True
 Vulcão Puyehue,Puyehue,12.287,False,0.2388,31.7,864,0.108,0.108,0.787,62,True
 Calar Alto,,10.203,False,0.1818,21.6,1200,0.133,0.133,0.794,63,True
@@ -236,6 +241,7 @@ Corno Grande,,9.46,False,0.1717,29.9,402,0.139,0.139,0.794,63,True
 Doi Inthanon,,11.335,False,0.1835,29.9,582,0.133,0.133,0.794,63,True
 Eiger,,20.0,True,0.1843,40.1,768,0.132,0.132,0.794,63,True
 Emi Koussi,,13.19,False,0.1826,33.2,588,0.133,0.133,0.794,63,True
+Erta Ale,,12.233,False,0.1682,33.8,396,0.142,0.142,0.794,63,True
 Foho Tatamailau,Monte Ramelau | Tatamailau | Ramelau | Monte Tatamailau | Foho Ramelau,9.653,False,0.1851,31.6,1194,0.131,0.131,0.794,63,True
 Gangkhar Puensum,Gancar Punsum | Gangkhar punzum,21.215,False,0.1703,41.0,498,0.141,0.141,0.794,63,True
 Gasherbrum I,,20.0,True,0.1869,43.6,474,0.131,0.131,0.794,63,True
@@ -248,6 +254,7 @@ Jabal al-Lawz,,9.426,False,0.1762,23.4,624,0.136,0.136,0.794,63,True
 Jabal al-Nour,Monte Anur,9.426,False,0.171,29.5,408,0.14,0.14,0.794,63,True
 Kata Tjuta,,13.729,False,0.195,30.3,822,0.126,0.126,0.794,63,True
 Khan Tengri,,20.0,True,0.1696,41.0,498,0.141,0.141,0.794,63,True
+La Soufrière,,7.862,False,0.1661,29.5,318,0.143,0.143,0.794,63,True
 Langtang Lirung,,20.0,True,0.1689,29.3,1104,0.141,0.141,0.794,63,True
 Maciço de Tamu,Maciço Tamu,12.662,False,0.2158,31.4,792,0.117,0.117,0.794,63,True
 Monte Argeu,Argeu | Erciyes,9.653,False,0.2028,34.5,432,0.123,0.123,0.794,63,True
@@ -263,6 +270,7 @@ Monte Lu,Parque Nacional de Lushan | Monte Lushan,10.515,False,0.2205,34.9,540,0
 Monte Mitchell,Mitchell,9.653,False,0.1913,30.7,516,0.128,0.128,0.794,63,True
 Monte Moldoveanu,Moldoveanu,9.653,False,0.2135,34.5,480,0.117,0.117,0.794,63,True
 Monte Perdido,Perdido,9.916,False,0.2193,33.0,558,0.115,0.115,0.794,63,True
+Monte Pissis,Pissis,9.653,False,0.1654,30.4,372,0.144,0.144,0.794,63,True
 Monte Ruapehu,Ruapehu,9.653,False,0.2218,35.8,438,0.114,0.114,0.794,63,True
 Monte Santa Catarina,Santa Catarina,9.124,False,0.2113,30.3,576,0.119,0.119,0.794,63,True
 Monte Serrat,Serrat,9.653,False,0.1998,21.5,1638,0.123,0.123,0.794,63,True
@@ -273,10 +281,10 @@ Monte Terror,Terror,10.118,False,0.1959,30.6,564,0.126,0.126,0.794,63,True
 Monte Titano,Titano,13.621,False,0.2242,37.6,660,0.113,0.113,0.794,63,True
 Monte Viso,Viso,12.125,False,0.1904,31.4,636,0.129,0.129,0.794,63,True
 Monte Yasur,Yasur,9.653,False,0.1802,27.3,540,0.134,0.134,0.794,63,True
-Monte Ótris,Ótris,9.653,False,0.232,27.8,792,0.11,0.11,0.794,63,True
-Morro Cara de Cão,Cara de Cão,9.764,False,0.2333,22.1,1752,0.11,0.11,0.794,63,True
+Morro da Polícia,Morro da glória | Morro da Embratel | Polícia,9.689,False,0.1675,20.5,1386,0.143,0.143,0.794,63,True
 Morro de Monserrate,Monserrate,12.877,False,0.1922,25.9,924,0.127,0.127,0.794,63,True
 Morro do Pico,,10.934,False,0.2008,22.1,1542,0.123,0.123,0.794,63,True
+Pedra do Sino,,10.883,False,0.1668,20.8,1512,0.143,0.143,0.794,63,True
 Penha de França,Peña de Francia,10.396,False,0.1725,21.5,1020,0.139,0.139,0.794,63,True
 Pico Duarte,Duarte,11.231,False,0.2255,20.0,804,0.113,0.113,0.794,63,True
 Pico Ismail Samani,Pico ismail somoni | Pico do Comunismo | Ismail Samani,11.231,False,0.2182,37.1,462,0.115,0.115,0.794,63,True
@@ -289,9 +297,6 @@ Pico de São Tomé,São Tomé,9.603,False,0.181,27.3,540,0.134,0.134,0.794,63,Tr
 Pico do Papagaio,Papagaio,11.789,False,0.2038,22.7,1464,0.122,0.122,0.794,63,True
 Pirâmide de Ball,,11.922,False,0.1931,35.1,510,0.127,0.127,0.794,63,True
 Serra de São José,São José,7.852,False,0.2049,21.1,1614,0.121,0.121,0.794,63,True
-Sneffels,,20.0,True,0.2306,37.3,1218,0.11,0.11,0.794,63,True
-Tepeyac,Monte do Tepeyac | Cerro do Tepeyac,9.653,False,0.236,26.6,2022,0.109,0.109,0.794,63,True
-Torre de Cerredo,,10.518,False,0.2293,27.0,888,0.111,0.111,0.794,63,True
 Uludağ,Keşiş Dağı | Kesis Dagi | Kesis Dag,14.709,False,0.1786,33.1,1032,0.135,0.135,0.794,63,True
 Vulcão Arenal,Arenal,13.474,False,0.2102,33.6,750,0.119,0.119,0.794,63,True
 Vulcão Parinacota,Parinacota,12.287,False,0.1886,32.8,588,0.13,0.13,0.794,63,True
@@ -305,7 +310,6 @@ Barú,,15.091,False,0.1406,30.6,492,0.165,0.165,0.8,64,True
 Carrauntoohil,Carrauntoohill | Carrantuohill,20.0,True,0.1577,35.8,708,0.15,0.15,0.8,64,True
 Cheyenne Mountain,,14.994,False,0.1634,23.8,990,0.146,0.146,0.8,64,True
 Diamond Head,Lē'ahi,20.0,True,0.1345,28.2,798,0.171,0.171,0.8,64,True
-Erta Ale,,12.233,False,0.1682,33.8,396,0.142,0.142,0.8,64,True
 Fan Si Pan,,9.874,False,0.1373,30.7,228,0.168,0.168,0.8,64,True
 Half Dome,,13.495,False,0.1401,29.0,450,0.165,0.165,0.8,64,True
 Hallasan,,20.0,True,0.1452,34.7,648,0.16,0.16,0.8,64,True
@@ -315,33 +319,33 @@ Iztaccíhuatl,,20.0,True,0.1387,34.5,612,0.167,0.167,0.8,64,True
 Jbel Musa,Monte Muça | Serra de Anyera | Monte Musa | Monte Moussa | Monte Abyla | Mons Abyla | Jebel Musa | Jebel Moussa | Jabal Musa | Jabal Moussa | Djebel Musa | Djebel Moussa | Adrar Musa | Adrar Moussa | Musa,11.805,False,0.1495,27.1,462,0.157,0.157,0.8,64,True
 Kebnekaise,,20.0,True,0.1364,37.4,444,0.169,0.169,0.8,64,True
 Klyuchevskaya Sopka,Kliutchevskaia Sopka,20.0,True,0.1397,39.3,384,0.165,0.165,0.8,64,True
-La Soufrière,,7.862,False,0.1661,29.5,318,0.143,0.143,0.8,64,True
+Lanin,,20.0,True,0.1315,29.1,720,0.174,0.174,0.8,64,True
 Machapuchare,Machhapuchhare,20.0,True,0.1392,31.5,720,0.166,0.166,0.8,64,True
 Maciço do Urucum,,13.589,False,0.1602,22.0,1176,0.148,0.148,0.8,64,True
 Misti,,20.0,True,0.1641,32.3,918,0.145,0.145,0.8,64,True
 Monte Apo,Apo,11.849,False,0.1535,35.5,252,0.153,0.153,0.8,64,True
 Monte Baker,Baker,9.653,False,0.1627,30.3,360,0.146,0.146,0.8,64,True
+Monte Belukha,Monte Belucka | Berukha | Belucka | Belukha,9.653,False,0.131,32.4,162,0.174,0.174,0.8,64,True
+Monte Cleveland,Cleveland,9.653,False,0.1298,25.9,288,0.176,0.176,0.8,64,True
 Monte Elgon,Elgon,9.653,False,0.1457,30.7,258,0.16,0.16,0.8,64,True
 Monte Emilius,Emilius,9.653,False,0.1368,21.0,498,0.169,0.169,0.8,64,True
 Monte Hacho,Monte Ábila | Hacho,9.653,False,0.1473,25.6,378,0.158,0.158,0.8,64,True
 Monte Mabu,Mabu,12.548,False,0.1341,21.5,654,0.171,0.171,0.8,64,True
 Monte Meron,Meron,9.653,False,0.1359,29.4,246,0.169,0.169,0.8,64,True
+Monte Meru,Meru,12.871,False,0.1294,31.1,288,0.176,0.176,0.8,64,True
 Monte Narodnaya,Narodnaya,9.653,False,0.1608,31.1,324,0.147,0.147,0.8,64,True
 Monte Ontake,Kiso Ontake-San | Ontake,9.653,False,0.1489,30.3,288,0.157,0.157,0.8,64,True
 Monte Osore,Osorezan | Osore,9.653,False,0.1529,23.9,462,0.153,0.153,0.8,64,True
-Monte Pissis,Pissis,9.653,False,0.1654,30.4,372,0.144,0.144,0.8,64,True
 Monte Takamagahara,Takamagahara,9.653,False,0.1595,21.8,636,0.148,0.148,0.8,64,True
 Monte Toc,Toc,9.653,False,0.1546,21.5,648,0.152,0.152,0.8,64,True
 Monte Wilhelm,Wilhelm,9.653,False,0.1512,30.1,300,0.155,0.155,0.8,64,True
 Monte de Teso dos Bichos,teso marajoara | Teso dos Bichos,12.179,False,0.1589,20.9,1956,0.149,0.149,0.8,64,True
 Monte dos Descansos,Descansos,9.653,False,0.157,24.4,468,0.15,0.15,0.8,64,True
-Morro da Polícia,Morro da glória | Morro da Embratel | Polícia,9.689,False,0.1675,20.5,1386,0.143,0.143,0.8,64,True
 Morro do Sumaré,Sumaré,11.7,False,0.1621,20.9,1536,0.147,0.147,0.8,64,True
 Nanda Devi,,14.733,False,0.1506,37.4,282,0.156,0.156,0.8,64,True
 Nevado de Toluca,Toluca,14.122,False,0.1552,28.4,594,0.152,0.152,0.8,64,True
 Pacaya,,20.0,True,0.1332,30.8,666,0.173,0.173,0.8,64,True
 Pedra de São Domingos,,8.624,False,0.1564,20.2,894,0.15,0.15,0.8,64,True
-Pedra do Sino,,10.883,False,0.1668,20.8,1512,0.143,0.143,0.8,64,True
 Pic du Midi de Bigorre,,13.477,False,0.1436,25.4,564,0.162,0.162,0.8,64,True
 Pico Lenine,Lenine,11.231,False,0.1614,32.6,354,0.147,0.147,0.8,64,True
 Pico Simón Bolívar,Simón Bolívar,12.317,False,0.1328,24.9,426,0.173,0.173,0.8,64,True
@@ -355,9 +359,11 @@ Scafell Pike,,20.0,True,0.1377,30.4,750,0.167,0.167,0.8,64,True
 Serra Malagueta,Serra da Malagueta | Malagueta,11.647,False,0.1354,22.0,534,0.169,0.169,0.8,64,True
 Serra de Montesinho,Serra de Montezinho | Montezinho | Montesinho,12.566,False,0.1319,20.1,1242,0.173,0.173,0.8,64,True
 Sierra Negra,,10.074,False,0.1411,21.4,558,0.164,0.164,0.8,64,True
+Sněžka,,20.0,True,0.1302,37.6,378,0.175,0.175,0.8,64,True
 Soufrière Hills,Soufrière,20.0,True,0.15,31.8,804,0.156,0.156,0.8,64,True
 Taal,,20.0,True,0.1558,37.1,654,0.15,0.15,0.8,64,True
 Tharsis Montes,,10.945,False,0.1462,24.0,474,0.159,0.159,0.8,64,True
+Tirich Mir,,13.748,False,0.1306,35.9,198,0.174,0.174,0.8,64,True
 Tupungato,,20.0,True,0.154,32.3,828,0.152,0.152,0.8,64,True
 Vulcão Irazú,Irazú,12.287,False,0.1426,29.8,390,0.162,0.162,0.8,64,True
 Vulcão Pichincha,Pichincha | Rucu Pichincha | Guagua Pichincha,12.287,False,0.1517,29.0,450,0.154,0.154,0.8,64,True
@@ -370,23 +376,21 @@ Gebel Barkal,Jebel Barcal | Jebel Barkal,20.0,True,0.1163,33.8,438,0.193,0.193,0
 Gran Paradiso,Grand-Paradis,20.0,True,0.1091,32.2,450,0.204,0.204,0.806,65,True
 Grandes Jorasses,,8.286,False,0.1205,26.0,204,0.187,0.187,0.806,65,True
 Grímsvötn,,20.0,True,0.1131,34.5,384,0.199,0.199,0.806,65,True
+Hoverla,,20.0,True,0.1068,36.8,264,0.208,0.208,0.806,65,True
 Ilha de Pinta,Ilha Pinta | Ilha de Abingdon,10.801,False,0.1153,25.9,258,0.195,0.195,0.806,65,True
 Isla Incahuasi,,12.751,False,0.1173,21.3,486,0.192,0.192,0.806,65,True
 Kukenán Tepuy,Tepui Kukenán,17.794,False,0.1201,25.6,744,0.188,0.188,0.806,65,True
 La Grande Soufrière,,7.425,False,0.1234,24.9,216,0.184,0.184,0.806,65,True
-Lanin,,20.0,True,0.1315,29.1,720,0.174,0.174,0.806,65,True
 Montanha Sulayman,Montanha de Solimão | Sulayman,10.465,False,0.1216,30.1,192,0.187,0.187,0.806,65,True
 Monte Abu,Mount Abu | Abu,11.082,False,0.11,32.5,132,0.203,0.203,0.806,65,True
 Monte Adams,Adams,9.653,False,0.1265,26.4,264,0.179,0.179,0.806,65,True
 Monte Alverne,Alverne,9.653,False,0.1177,18.8,840,0.191,0.191,0.806,65,True
-Monte Belukha,Monte Belucka | Berukha | Belucka | Belukha,9.653,False,0.131,32.4,162,0.174,0.174,0.806,65,True
+Monte Cara,Cara,9.024,False,0.1059,18.7,402,0.209,0.209,0.806,65,True
 Monte Cinto,Cinto,10.487,False,0.1109,23.7,270,0.201,0.201,0.806,65,True
-Monte Cleveland,Cleveland,9.653,False,0.1298,25.9,288,0.176,0.176,0.806,65,True
 Monte Karisimbi,Karisimbi,9.653,False,0.1261,29.2,204,0.182,0.182,0.806,65,True
 Monte Katahdin,Katahdin,9.653,False,0.1223,24.6,282,0.185,0.185,0.806,65,True
 Monte Kirkpatrick,Kirkpatrick,9.653,False,0.1088,24.3,228,0.204,0.204,0.806,65,True
 Monte Kyllini,Kyllini,9.653,False,0.1184,24.1,270,0.19,0.19,0.806,65,True
-Monte Meru,Meru,12.871,False,0.1294,31.1,288,0.176,0.176,0.806,65,True
 Monte Niesen,Niesen,9.653,False,0.1134,21.8,282,0.197,0.197,0.806,65,True
 Monte Nyamuragira,Monte Niamuragira | Nyamuragira,9.653,False,0.1253,29.7,192,0.182,0.182,0.806,65,True
 Monte Orohena,Orohena,9.653,False,0.1124,25.1,228,0.199,0.199,0.806,65,True
@@ -402,6 +406,7 @@ Monte Verde,Verde,9.295,False,0.1273,19.9,510,0.179,0.179,0.806,65,True
 Monte Wutai,Wutai,9.653,False,0.1285,31.4,174,0.178,0.178,0.806,65,True
 Monte Zuma,Zuma,9.653,False,0.125,24.4,294,0.182,0.182,0.806,65,True
 Morro do Anhangava,Anhangava,10.638,False,0.1076,18.9,1098,0.206,0.206,0.806,65,True
+Morro do Juramento,Juramento,11.63,False,0.1073,19.0,1008,0.207,0.207,0.806,65,True
 Morro do Voturuá,Morro de Itararé | Voturuá,10.638,False,0.1194,19.3,762,0.188,0.188,0.806,65,True
 Musala,Monte Musala,9.653,False,0.116,36.1,342,0.193,0.193,0.806,65,True
 Nevado Coropuna,Coropuna,14.122,False,0.1085,26.4,336,0.206,0.206,0.806,65,True
@@ -416,16 +421,16 @@ Pico Turquino,Turquino,11.231,False,0.1094,26.5,240,0.204,0.204,0.806,65,True
 Pico de Ana Ferreira,Ana Ferreira,9.969,False,0.123,19.2,942,0.184,0.184,0.806,65,True
 Pico de las Nieves,las Nieves,10.167,False,0.1242,21.9,360,0.182,0.182,0.806,65,True
 Pico do Desengano,Desengano,13.086,False,0.1208,19.9,1158,0.187,0.187,0.806,65,True
+Pico do Facho,Facho,12.672,False,0.1071,19.5,720,0.207,0.207,0.806,65,True
 Pico do Itambé,Parque Estadual Pico do Itambé | Itambé,12.628,False,0.1115,19.6,1320,0.201,0.201,0.806,65,True
 Piz Palü,Palü,20.0,True,0.1121,27.0,624,0.199,0.199,0.806,65,True
 Roque de los Muchachos,,10.089,False,0.117,22.5,300,0.192,0.192,0.806,65,True
 Rysy,,20.0,True,0.1257,37.1,366,0.182,0.182,0.806,65,True
 Serra de Collserola,Collserola,9.417,False,0.115,22.5,270,0.195,0.195,0.806,65,True
+Serra de João do Vale,Serra João do Vale | João do Vale,8.74,False,0.1082,18.2,636,0.206,0.206,0.806,65,True
 Serra de São Francisco,São Francisco,8.138,False,0.1156,18.4,534,0.194,0.194,0.806,65,True
 Signal de Botrange,,20.0,True,0.1238,32.2,564,0.182,0.182,0.806,65,True
-Sněžka,,20.0,True,0.1302,37.6,378,0.175,0.175,0.806,65,True
 Thor Peak,Monte Thor,9.653,False,0.1289,27.3,774,0.176,0.176,0.806,65,True
-Tirich Mir,,13.748,False,0.1306,35.9,198,0.174,0.174,0.806,65,True
 Topo da Coroa,Topo de coroa | Tope de Coroa,10.318,False,0.114,19.4,504,0.197,0.197,0.806,65,True
 Tronador,Cerro Tronador,12.629,False,0.1103,28.9,552,0.203,0.203,0.806,65,True
 Vulcão Copahue,Copahue,12.287,False,0.1112,29.7,216,0.201,0.201,0.806,65,True
@@ -441,13 +446,13 @@ Cerro Bayo,Bayo,12.629,False,0.0915,19.2,378,0.238,0.238,0.812,66,True
 Cerro de la Silla,la Silla,10.245,False,0.0977,19.0,312,0.226,0.226,0.812,66,True
 Coma Pedrosa,Pic del Comapedrosa,11.354,False,0.1046,28.6,174,0.212,0.212,0.812,66,True
 Cornos de Hattin,Cornos de Hatim,13.473,False,0.0952,20.8,330,0.23,0.23,0.812,66,True
+Cumora,,20.0,True,0.0907,22.5,540,0.241,0.241,0.812,66,True
 Fagradalsfjall,,20.0,True,0.104,26.8,534,0.213,0.213,0.812,66,True
 Fanjingshan,,20.0,True,0.1022,29.4,438,0.217,0.217,0.812,66,True
 Galeras,Vulcão Galeras | Pico Galeras,12.287,False,0.1057,32.9,384,0.21,0.21,0.812,66,True
 Gerlachovský štít,Gerlachovsky,20.0,True,0.0989,35.3,240,0.222,0.222,0.812,66,True
 Haleakalā,,20.0,True,0.0997,31.2,372,0.222,0.222,0.812,66,True
 Hkakabo Razi,,20.0,True,0.0975,30.8,372,0.226,0.226,0.812,66,True
-Hoverla,,20.0,True,0.1068,36.8,264,0.208,0.208,0.812,66,True
 Huaynaputina,,20.0,True,0.1038,29.8,444,0.213,0.213,0.812,66,True
 Jabal an Nabi Shu'ayb,,13.283,False,0.0939,25.2,234,0.234,0.234,0.812,66,True
 Jezrael,,20.0,True,0.0982,23.5,570,0.224,0.224,0.812,66,True
@@ -456,7 +461,6 @@ Montanha Púrpura,Púrpura,11.788,False,0.095,21.5,252,0.231,0.231,0.812,66,True
 Montanha Whistler,Whistler,10.465,False,0.0934,19.5,252,0.234,0.234,0.812,66,True
 Monte Aigoual,Aigoual,9.653,False,0.1001,19.8,246,0.22,0.22,0.812,66,True
 Monte Ainos,Ainos,9.653,False,0.1019,21.7,216,0.217,0.217,0.812,66,True
-Monte Cara,Cara,9.024,False,0.1059,18.7,402,0.209,0.209,0.812,66,True
 Monte Chamor,Chamor,9.653,False,0.1017,18.0,660,0.217,0.217,0.812,66,True
 Monte Civetta,Civetta,9.653,False,0.0959,22.4,186,0.228,0.228,0.812,66,True
 Monte Darwin,Darwin,9.653,False,0.097,22.1,192,0.226,0.226,0.812,66,True
@@ -467,6 +471,7 @@ Monte Lico,Lico,13.219,False,0.1065,19.6,744,0.209,0.209,0.812,66,True
 Monte Marcy,Marcy,9.653,False,0.0984,21.9,198,0.222,0.222,0.812,66,True
 Monte Nyangani,Inyangani | Nyangani,9.653,False,0.0973,23.1,180,0.226,0.226,0.812,66,True
 Monte Obama,Pico Boggy | Obama,9.653,False,0.0926,23.9,156,0.235,0.235,0.812,66,True
+Monte Okmok,Okmok,9.653,False,0.0905,21.7,168,0.241,0.241,0.812,66,True
 Monte Paget,Paget,9.653,False,0.1009,20.7,228,0.219,0.219,0.812,66,True
 Monte Ross,Ross,9.653,False,0.0956,20.5,210,0.228,0.228,0.812,66,True
 Monte Salak,Salak,9.653,False,0.1054,24.1,210,0.21,0.21,0.812,66,True
@@ -475,9 +480,10 @@ Monte Sanqingshan,Sanqingshan,9.653,False,0.1004,29.2,114,0.219,0.219,0.812,66,T
 Monte Subásio,Subásio,9.653,False,0.0968,19.6,234,0.226,0.226,0.812,66,True
 Monte Süphan,Monte Supecane | Süphan,9.653,False,0.0921,23.5,156,0.236,0.236,0.812,66,True
 Monte Takahe,Takahe,9.653,False,0.1027,21.4,222,0.215,0.215,0.812,66,True
+Monte Tarawera,Tarawera,9.653,False,0.0911,24.0,144,0.239,0.239,0.812,66,True
 Monte Usborne,Usborne,9.653,False,0.0919,20.8,186,0.237,0.237,0.812,66,True
+Monte Wellington,Wellington,9.653,False,0.0903,19.7,192,0.241,0.241,0.812,66,True
 Morro da Viúva,Morro do Leryfe | Morro do Léry | Viúva,11.22,False,0.0947,18.2,792,0.231,0.231,0.812,66,True
-Morro do Juramento,Juramento,11.63,False,0.1073,19.0,1008,0.207,0.207,0.812,66,True
 Morro do Leme,Leme,11.272,False,0.0961,18.3,576,0.228,0.228,0.812,66,True
 Moré,,15.811,False,0.0932,21.7,384,0.234,0.234,0.812,66,True
 Muztagh Ata,,10.984,False,0.0945,27.8,138,0.231,0.231,0.812,66,True
@@ -491,12 +497,11 @@ Pico Guadalupe,Guadalupe Peak,12.134,False,0.0954,21.0,276,0.228,0.228,0.812,66,
 Pico Wheeler,Wheeler Peak | Wheeler,11.231,False,0.0924,19.9,252,0.236,0.236,0.812,66,True
 Pico das Almas,Almas,10.893,False,0.1014,18.3,738,0.217,0.217,0.812,66,True
 Pico do Calçado,Calçado,11.454,False,0.1043,18.7,822,0.212,0.212,0.812,66,True
-Pico do Facho,Facho,12.672,False,0.1071,19.5,720,0.207,0.207,0.812,66,True
 Piz Bernina,Bernina,20.0,True,0.0992,31.2,372,0.222,0.222,0.812,66,True
 Planalto das Cesaredas,,11.13,False,0.0943,18.1,780,0.232,0.232,0.812,66,True
+Qurnat as Sawda',,20.0,True,0.0909,27.1,408,0.239,0.239,0.812,66,True
 Ras Dashan,Ras dashen | Ras Dascian,16.865,False,0.0928,31.3,216,0.235,0.235,0.812,66,True
 Serra Imeri,Imeri,9.417,False,0.103,18.1,480,0.215,0.215,0.812,66,True
-Serra de João do Vale,Serra João do Vale | João do Vale,8.74,False,0.1082,18.2,636,0.206,0.206,0.812,66,True
 Vulcão Cayambe,"Cayambe | Cayambe, vulcão do Equador",12.287,False,0.1062,27.9,228,0.209,0.209,0.812,66,True
 Weisshorn,,20.0,True,0.0941,30.3,366,0.232,0.232,0.812,66,True
 Auyán Tepuy,Auyantepui,20.0,True,0.0796,25.1,366,0.27,0.27,0.819,67,True
@@ -508,7 +513,6 @@ Cerro Peró,Cerro Tres Kandú | Peró,13.948,False,0.0885,22.4,264,0.245,0.245,0
 Chaitén,Vulcão Chaitén,12.287,False,0.0794,28.1,306,0.27,0.27,0.819,67,True
 Colina 262,,11.936,False,0.0801,18.9,240,0.268,0.268,0.819,67,True
 Crêt de la Neige,,7.862,False,0.0874,20.5,132,0.248,0.248,0.819,67,True
-Cumora,,20.0,True,0.0907,22.5,540,0.241,0.241,0.819,67,True
 El Chichón,,20.0,True,0.0812,27.9,324,0.266,0.266,0.819,67,True
 Galán,,20.0,True,0.0891,23.0,498,0.244,0.244,0.819,67,True
 Grand Teton,,20.0,True,0.085,24.8,420,0.253,0.253,0.819,67,True
@@ -534,30 +538,30 @@ Monte Giluwe,Giluwe,9.653,False,0.0857,20.8,162,0.253,0.253,0.819,67,True
 Monte Hudson,Hudson,9.653,False,0.0804,22.3,126,0.267,0.267,0.819,67,True
 Monte Iwate,Iwate,9.653,False,0.0806,20.4,144,0.267,0.267,0.819,67,True
 Monte Kita,Kita,9.653,False,0.0843,23.3,132,0.256,0.256,0.819,67,True
+Monte Lucania,Lucania,9.653,False,0.079,20.6,138,0.27,0.27,0.819,67,True
 Monte Mazama,Mazama,13.469,False,0.0825,22.9,210,0.262,0.262,0.819,67,True
 Monte Melbourne,Melbourne,9.653,False,0.0899,22.7,156,0.243,0.243,0.819,67,True
 Monte Moncayo,Moncayo,9.653,False,0.0824,18.4,186,0.262,0.262,0.819,67,True
 Monte Odin,Odin,9.653,False,0.0881,20.9,168,0.246,0.246,0.819,67,True
-Monte Okmok,Okmok,9.653,False,0.0905,21.7,168,0.241,0.241,0.819,67,True
 Monte Ossa,Ossa,12.576,False,0.0893,24.9,192,0.243,0.243,0.819,67,True
 Monte Pindo,Pindo,9.653,False,0.0864,19.8,174,0.25,0.25,0.819,67,True
+Monte Shishaldin,Shishaldin,9.653,False,0.0788,22.6,120,0.27,0.27,0.819,67,True
 Monte Siple,Siple,9.653,False,0.0822,19.9,156,0.262,0.262,0.819,67,True
 Monte Smolikas,Smolikas,9.653,False,0.0879,24.7,126,0.246,0.246,0.819,67,True
-Monte Tarawera,Tarawera,9.653,False,0.0911,24.0,144,0.239,0.239,0.819,67,True
 Monte Tenakourou,Tenakourou,9.653,False,0.0809,21.4,138,0.266,0.266,0.819,67,True
 Monte Tendureque,Tendureque,9.653,False,0.0862,19.8,174,0.25,0.25,0.819,67,True
-Monte Wellington,Wellington,9.653,False,0.0903,19.7,192,0.241,0.241,0.819,67,True
 Monte Zoncolan,Zoncolan,9.653,False,0.0836,20.3,156,0.259,0.259,0.819,67,True
 Monte da Guia,Monte da Guia - Ilha do Faial | Guia,9.343,False,0.0883,17.2,468,0.246,0.246,0.819,67,True
 Ophel,Ofel,20.0,True,0.0897,21.8,624,0.243,0.243,0.819,67,True
+Penedo de Vitória,Penedo,11.033,False,0.0785,17.2,600,0.273,0.273,0.819,67,True
 Peña Ubiña,,8.61,False,0.0855,17.3,270,0.253,0.253,0.819,67,True
 Pico Basilé,Basilé,11.231,False,0.0814,22.7,156,0.264,0.264,0.819,67,True
+Pico Blue Mountain,Blue Mountain,11.066,False,0.0787,23.7,132,0.272,0.272,0.819,67,True
 Pico Lassen,Lassen,11.231,False,0.0848,24.5,150,0.255,0.255,0.819,67,True
 Pico San Jacinto,San Jacinto,11.931,False,0.0815,19.2,234,0.262,0.262,0.819,67,True
 Pico Veleta,Veleta,14.677,False,0.0861,23.5,258,0.25,0.25,0.819,67,True
 Piton des Neiges,Piton de Neige | Pico de Neves | Pico de Neve,13.06,False,0.0846,24.5,192,0.255,0.255,0.819,67,True
 Pitons,Área de Gestão Ambiental dos Pitons,8.585,False,0.0802,26.5,342,0.267,0.267,0.819,67,True
-Qurnat as Sawda',,20.0,True,0.0909,27.1,408,0.239,0.239,0.819,67,True
 Serra da Coroa,Coroa,9.986,False,0.087,18.3,252,0.248,0.248,0.819,67,True
 Serra das Almas,Serra das Almas (Bahia),9.986,False,0.0844,17.2,534,0.255,0.255,0.819,67,True
 Serra do Lima,Lima,9.444,False,0.0901,17.3,552,0.241,0.241,0.819,67,True
@@ -572,11 +576,14 @@ Askja,,20.0,True,0.0703,28.6,222,0.303,0.303,0.825,68,True
 Avachinsky,Avatchinski,20.0,True,0.0711,30.5,192,0.298,0.298,0.825,68,True
 Beerenberg,,20.0,True,0.0727,30.4,204,0.293,0.293,0.825,68,True
 Bola del Mundo,alto das Guarramillas,8.669,False,0.0745,17.0,174,0.286,0.286,0.825,68,True
+Cerro Negro,Negro,11.301,False,0.0686,20.1,132,0.307,0.307,0.825,68,True
 Cheekah Dar,,7.836,False,0.0773,20.8,102,0.28,0.28,0.825,68,True
 Chkhara,Monte Xecara | Shkhara | Monte Shkhara | Monte Chkhara,9.653,False,0.0739,33.2,162,0.288,0.288,0.825,68,True
 Cântaro Magro,,13.518,False,0.0762,18.0,846,0.28,0.28,0.825,68,True
 Dente Branco,Dent Blanche,9.95,False,0.0743,22.4,114,0.286,0.286,0.825,68,True
 Dykh-Tau,,13.989,False,0.0718,29.4,96,0.295,0.295,0.825,68,True
+Finsteraarhorn,,20.0,True,0.0685,29.2,204,0.307,0.307,0.825,68,True
+Formação Tendaguru,,8.607,False,0.0693,16.5,150,0.307,0.307,0.825,68,True
 Ilha Paulet,,9.483,False,0.0742,20.6,120,0.288,0.288,0.825,68,True
 Ilha do Pescado,,11.214,False,0.0707,17.7,192,0.301,0.301,0.825,68,True
 Ilhas Ofu-Olosega,,10.766,False,0.0709,21.4,120,0.298,0.298,0.825,68,True
@@ -595,7 +602,7 @@ Monte Hotham,Hotham,9.653,False,0.0732,18.2,138,0.29,0.29,0.825,68,True
 Monte Idoukal-n-Taghès,Idoukal-n-Taghès,9.653,False,0.0714,19.4,120,0.298,0.298,0.825,68,True
 Monte Kelut,Monte Kelud | Kelut | Kelud,9.653,False,0.0736,25.0,84,0.29,0.29,0.825,68,True
 Monte Liamuiga,Liamuiga,9.653,False,0.0722,21.4,108,0.295,0.295,0.825,68,True
-Monte Lucania,Lucania,9.653,False,0.079,20.6,138,0.27,0.27,0.825,68,True
+Monte Nantai,Nantai,9.653,False,0.0697,20.2,108,0.304,0.304,0.825,68,True
 Monte Naranco,Naranco,9.653,False,0.0781,17.9,180,0.275,0.275,0.825,68,True
 Monte Otemanu,Otemanu,9.653,False,0.0752,17.3,210,0.285,0.285,0.825,68,True
 Monte Pobeda,Pobeda,9.653,False,0.0708,21.6,102,0.3,0.3,0.825,68,True
@@ -603,7 +610,6 @@ Monte Pulag,Pulag,9.653,False,0.0721,21.4,108,0.295,0.295,0.825,68,True
 Monte Sabyinyo,Sabyinyo,9.653,False,0.0738,21.6,114,0.288,0.288,0.825,68,True
 Monte Sahand,Kuh-e Sahand | Sahand,9.653,False,0.0764,21.8,120,0.28,0.28,0.825,68,True
 Monte San Valentin,San Valentin,9.653,False,0.0729,20.8,114,0.293,0.293,0.825,68,True
-Monte Shishaldin,Shishaldin,9.653,False,0.0788,22.6,120,0.27,0.27,0.825,68,True
 Monte Sokbaro,Sokbaro,9.653,False,0.0776,20.5,132,0.276,0.276,0.825,68,True
 Monte Spurr,Spurr,9.653,False,0.0775,18.1,168,0.276,0.276,0.825,68,True
 Monte do Gozo,Gozo,10.659,False,0.0772,18.1,210,0.28,0.28,0.825,68,True
@@ -612,11 +618,9 @@ Mousa Ali,,9.002,False,0.0713,21.4,96,0.298,0.298,0.825,68,True
 Passo de Pino Hachado,,10.517,False,0.0779,17.5,258,0.275,0.275,0.825,68,True
 Pedra de Itaúna,,11.588,False,0.0719,16.9,486,0.295,0.295,0.825,68,True
 Pedra do Frade,Frade de Pedra,11.371,False,0.0706,16.8,528,0.301,0.301,0.825,68,True
-Penedo de Vitória,Penedo,11.033,False,0.0785,17.2,600,0.273,0.273,0.825,68,True
 Pequeno Cervino,,13.131,False,0.0701,22.1,150,0.303,0.303,0.825,68,True
 Pica d'Estats,,11.297,False,0.0731,20.1,150,0.29,0.29,0.825,68,True
 Pico Barbeau,Barbeau,11.231,False,0.0735,22.1,132,0.29,0.29,0.825,68,True
-Pico Blue Mountain,Blue Mountain,11.066,False,0.0787,23.7,132,0.272,0.272,0.825,68,True
 Pico Borah,Borah Peak | Borah,11.231,False,0.0699,18.3,156,0.303,0.303,0.825,68,True
 Pico Harney,Pico Black Elk | Harney Peak | Harney,11.231,False,0.0784,18.9,192,0.273,0.273,0.825,68,True
 Pico Humboldt,Humboldt,11.231,False,0.0746,20.3,156,0.286,0.286,0.825,68,True
@@ -639,7 +643,6 @@ Antofalla,,20.0,True,0.0665,25.2,264,0.319,0.319,0.831,69,True
 Cerro Bonete,Bonete Chico | Bonete,14.261,False,0.0628,22.2,138,0.336,0.336,0.831,69,True
 Cerro El Cóndor,El Cóndor,12.789,False,0.0629,20.1,132,0.336,0.336,0.831,69,True
 Cerro Las Minas,Las Minas,10.172,False,0.0677,19.6,114,0.313,0.313,0.831,69,True
-Cerro Negro,Negro,11.301,False,0.0686,20.1,132,0.307,0.307,0.831,69,True
 Cerro Potosí,Potosí,13.931,False,0.0657,18.5,216,0.322,0.322,0.831,69,True
 Cerro Zapaleri,Zapaleri,12.629,False,0.0639,20.5,132,0.331,0.331,0.831,69,True
 Cerro de la Muerte,la Muerte,10.245,False,0.0682,17.0,174,0.311,0.311,0.831,69,True
@@ -648,8 +651,6 @@ Chemin des Révoires,,10.837,False,0.0627,17.3,132,0.336,0.336,0.831,69,True
 Chogolisa,,20.0,True,0.0626,24.9,240,0.336,0.336,0.831,69,True
 Dom de Mischabel,,9.512,False,0.0664,25.9,60,0.319,0.319,0.831,69,True
 Dovrefjell,,20.0,True,0.0668,23.6,294,0.316,0.316,0.831,69,True
-Finsteraarhorn,,20.0,True,0.0685,29.2,204,0.307,0.307,0.831,69,True
-Formação Tendaguru,,8.607,False,0.0693,16.5,150,0.307,0.307,0.831,69,True
 Ilha Atlasov,,9.483,False,0.0667,24.1,72,0.316,0.316,0.831,69,True
 Ilha de Buckle,,9.483,False,0.0692,18.8,114,0.307,0.307,0.831,69,True
 Ilha de Española,Ilha Espanhola | Ilha de Hood,9.483,False,0.0651,20.8,90,0.324,0.324,0.831,69,True
@@ -657,6 +658,7 @@ Illampu,,20.0,True,0.0648,26.4,234,0.326,0.326,0.831,69,True
 Kabru,,20.0,True,0.063,23.3,270,0.333,0.333,0.831,69,True
 Kongur Tagh,,20.0,True,0.0691,28.9,210,0.307,0.307,0.831,69,True
 Llaima,,20.0,True,0.0632,26.2,222,0.333,0.333,0.831,69,True
+Monte Alvernia,Alvernia,9.653,False,0.0625,18.6,96,0.336,0.336,0.831,69,True
 Monte Archanda,Monte Artxanda | Artxanda | Archanda,9.653,False,0.0656,16.3,180,0.322,0.322,0.831,69,True
 Monte Balbi,Balbi,9.653,False,0.0645,18.2,108,0.326,0.326,0.831,69,True
 Monte Belinda,Belinda,9.653,False,0.069,17.4,138,0.307,0.307,0.831,69,True
@@ -668,14 +670,16 @@ Monte Conner,Conner,9.653,False,0.0638,16.6,138,0.331,0.331,0.831,69,True
 Monte Fairweather,Fairweather,9.653,False,0.0666,21.6,90,0.316,0.316,0.831,69,True
 Monte Foraker,Foraker,9.653,False,0.0684,19.8,108,0.309,0.309,0.831,69,True
 Monte Gimie,Gimie,9.653,False,0.0681,20.4,102,0.311,0.311,0.831,69,True
+Monte Gordo,Gordo,10.586,False,0.0624,15.8,282,0.336,0.336,0.831,69,True
 Monte Haguro,Haguro,9.653,False,0.0663,17.0,138,0.319,0.319,0.831,69,True
 Monte Hayes,Hayes,9.653,False,0.0689,17.1,156,0.307,0.307,0.831,69,True
 Monte Hotaka,Hotaka,9.653,False,0.0655,18.6,108,0.322,0.322,0.831,69,True
 Monte Kapudzhukh,Monte Caputejul | Kapudzhukh,9.653,False,0.0662,19.6,102,0.319,0.319,0.831,69,True
 Monte Lemmon,Lemmon,9.653,False,0.0647,17.1,126,0.326,0.326,0.831,69,True
 Monte Misen,Misen,9.653,False,0.0661,17.0,138,0.319,0.319,0.831,69,True
-Monte Nantai,Nantai,9.653,False,0.0697,20.2,108,0.304,0.304,0.831,69,True
+Monte Osutaka,Osutaka,9.653,False,0.0623,15.7,210,0.336,0.336,0.831,69,True
 Monte Popa,Popa,11.187,False,0.0679,23.8,96,0.311,0.311,0.831,69,True
+Monte Saint Catherine,Saint Catherine,9.653,False,0.0622,18.6,96,0.336,0.336,0.831,69,True
 Monte Tabwemasana,Tabwemasana,9.653,False,0.0696,21.8,96,0.307,0.307,0.831,69,True
 Monte Thielsen,Thielsen,9.653,False,0.0674,16.9,150,0.314,0.314,0.831,69,True
 Monte Tomor,Tomor,9.653,False,0.0637,19.4,96,0.331,0.331,0.831,69,True
@@ -725,13 +729,15 @@ Kerintji,Monte Kerinci | Kerinci,9.653,False,0.0582,29.7,132,0.359,0.359,0.837,7
 Korialsky,Koriakski,20.0,True,0.0602,28.4,162,0.347,0.347,0.837,70,True
 Kumgangsan,Montanha de Diamante | Kumgang | Geumgang,11.043,False,0.0607,28.1,168,0.347,0.347,0.837,70,True
 La Planche des Belles Filles,,9.349,False,0.0585,17.8,84,0.357,0.357,0.837,70,True
+La Tournette,,7.862,False,0.0561,14.8,102,0.37,0.37,0.837,70,True
 Montanha Green,Green,10.81,False,0.0594,16.4,144,0.352,0.352,0.837,70,True
 Monte Agou,Agou,9.653,False,0.0596,20.0,78,0.35,0.35,0.837,70,True
-Monte Alvernia,Alvernia,9.653,False,0.0625,18.6,96,0.336,0.336,0.837,70,True
 Monte Andrus,Andrus,9.653,False,0.06,18.0,90,0.35,0.35,0.837,70,True
 Monte Bintumani,Bintumani,9.653,False,0.0588,19.6,78,0.354,0.354,0.837,70,True
-Monte Gordo,Gordo,10.586,False,0.0624,15.8,282,0.336,0.336,0.837,70,True
+Monte Caubvick,monte D'Iberville | Caubvick,9.653,False,0.0566,16.0,102,0.37,0.37,0.837,70,True
+Monte Garibaldi,Garibaldi,11.051,False,0.0565,17.8,96,0.37,0.37,0.837,70,True
 Monte Graciosa,Graciosa,11.229,False,0.0612,16.1,216,0.343,0.343,0.837,70,True
+Monte Graham,Graham,9.653,False,0.0563,15.8,108,0.37,0.37,0.837,70,True
 Monte Grande,Grande,8.32,False,0.0587,14.8,162,0.357,0.357,0.837,70,True
 Monte Kujū,Kujū,9.653,False,0.0581,16.2,108,0.359,0.359,0.837,70,True
 Monte Lawu,Lawu,9.653,False,0.0578,17.8,84,0.361,0.361,0.837,70,True
@@ -739,10 +745,8 @@ Monte Leone,Leone,11.578,False,0.0575,20.4,90,0.363,0.363,0.837,70,True
 Monte Montasch,Jôf di Montasio | Montasch,9.653,False,0.0595,17.0,96,0.35,0.35,0.837,70,True
 Monte Musinè,Musinè,9.653,False,0.0577,16.8,90,0.361,0.361,0.837,70,True
 Monte Ngaoui,Ngaoui,9.653,False,0.0619,19.2,90,0.339,0.339,0.837,70,True
-Monte Osutaka,Osutaka,9.653,False,0.0623,15.7,210,0.336,0.336,0.837,70,True
 Monte Panié,Panié,9.653,False,0.0584,18.2,84,0.357,0.357,0.837,70,True
 Monte Popomanaseu,Popomanaseu,9.653,False,0.0568,18.4,78,0.366,0.366,0.837,70,True
-Monte Saint Catherine,Saint Catherine,9.653,False,0.0622,18.6,96,0.336,0.336,0.837,70,True
 Monte Siguniang,Siguniang,9.653,False,0.0621,17.0,108,0.339,0.339,0.837,70,True
 Monte Taur,Taur,9.653,False,0.0601,16.8,102,0.347,0.347,0.837,70,True
 Monte Tavan Bogd,Tavan Bogd,9.653,False,0.0611,20.8,78,0.343,0.343,0.837,70,True
@@ -775,6 +779,7 @@ Agulha Verde,Aiguille Verte,10.213,False,0.0524,19.0,66,0.395,0.395,0.843,71,Tru
 Ascraeus Mons,,20.0,True,0.054,24.9,168,0.386,0.386,0.843,71,True
 Cabeço da Cruz,,11.9,False,0.0522,16.0,522,0.397,0.397,0.843,71,True
 Canigó,Canigou,20.0,True,0.0559,23.6,204,0.372,0.372,0.843,71,True
+Clingmans Dome,Kuwohi,13.495,False,0.0514,18.0,102,0.403,0.403,0.843,71,True
 Cofre de Perote,,11.337,False,0.0553,19.4,84,0.376,0.376,0.843,71,True
 El Totumo,,19.11,False,0.0537,18.6,282,0.386,0.386,0.843,71,True
 Galunggung,,20.0,True,0.0557,25.1,180,0.374,0.374,0.843,71,True
@@ -786,7 +791,6 @@ Ilha Yunaska,,9.483,False,0.0535,15.8,84,0.389,0.389,0.843,71,True
 Janor,,20.0,True,0.0548,21.4,222,0.38,0.38,0.843,71,True
 Julianatop,Pico Juliana | Montanha Juliana,10.984,False,0.0542,22.4,204,0.383,0.383,0.843,71,True
 Kaiserstuhl,,20.0,True,0.0521,21.5,198,0.397,0.397,0.843,71,True
-La Tournette,,7.862,False,0.0561,14.8,102,0.37,0.37,0.843,71,True
 Le Grammont,,10.068,False,0.0552,15.8,108,0.376,0.376,0.843,71,True
 Mafadi,,20.0,True,0.0523,21.2,204,0.397,0.397,0.843,71,True
 Maja e Jezercit,Maja e Jezercës | Maja e Jezercë,15.425,False,0.0551,26.2,84,0.378,0.378,0.843,71,True
@@ -796,13 +800,10 @@ Monte Algidus,Monte Algido | Algidus,9.653,False,0.0539,14.9,132,0.386,0.386,0.8
 Monte Artos,Artos,9.653,False,0.0516,15.4,84,0.401,0.401,0.843,71,True
 Monte Binaiya,Binaiya,9.653,False,0.0545,16.8,78,0.383,0.383,0.843,71,True
 Monte Burney,Burney,9.653,False,0.0548,16.2,84,0.38,0.38,0.843,71,True
-Monte Caubvick,monte D'Iberville | Caubvick,9.653,False,0.0566,16.0,102,0.37,0.37,0.843,71,True
 Monte Dempo,Dempo,9.653,False,0.0532,19.9,60,0.389,0.389,0.843,71,True
 Monte Fontainhas,Fontainhas,9.653,False,0.0519,14.5,132,0.4,0.4,0.843,71,True
 Monte Gamkonora,Gamkonora,9.653,False,0.0554,18.5,72,0.376,0.376,0.843,71,True
-Monte Garibaldi,Garibaldi,11.051,False,0.0565,17.8,96,0.37,0.37,0.843,71,True
 Monte Gauss,Gauss,11.972,False,0.0532,19.4,84,0.389,0.389,0.843,71,True
-Monte Graham,Graham,9.653,False,0.0563,15.8,108,0.37,0.37,0.843,71,True
 Monte Hibok-Hibok,Hibok-Hibok,9.653,False,0.0535,17.3,72,0.389,0.389,0.843,71,True
 Monte Ishizuchi,Ishizuchi,9.653,False,0.0554,18.5,72,0.376,0.376,0.843,71,True
 Monte Leuser,Leuser,9.653,False,0.0547,16.2,84,0.38,0.38,0.843,71,True
@@ -810,6 +811,7 @@ Monte Manengouba,Manengouba,9.653,False,0.0546,16.2,84,0.38,0.38,0.843,71,True
 Monte Muhabura,Muhabura,9.653,False,0.0564,19.3,72,0.37,0.37,0.843,71,True
 Monte Mulu,Mulu,9.653,False,0.0545,16.2,84,0.38,0.38,0.843,71,True
 Monte Olivia,Olivia,9.653,False,0.0537,14.5,192,0.386,0.386,0.843,71,True
+Monte Papandayan,Papandayan,9.653,False,0.0517,18.7,60,0.401,0.401,0.843,71,True
 Monte San Lorenzo,San Lorenzo,9.653,False,0.0526,16.0,78,0.394,0.394,0.843,71,True
 Monte Shinn,Shinn,9.653,False,0.0528,15.8,84,0.394,0.394,0.843,71,True
 Monte Sumbing,Sumbing,9.653,False,0.0534,17.3,72,0.389,0.389,0.843,71,True
@@ -820,6 +822,7 @@ Morro do Cachorro,Morro do Cachorro (Blumenau) | Cachorro,10.453,False,0.0544,15
 Morro do Céu,Céu,9.925,False,0.0557,15.1,318,0.374,0.374,0.843,71,True
 Mount Scenery,Monte Scenery | Scenery,9.653,False,0.0523,24.4,162,0.397,0.397,0.843,71,True
 Nevado de Colima,,14.122,False,0.0561,17.1,198,0.37,0.37,0.843,71,True
+Pico Gnifetti,Gnifetti,11.231,False,0.0515,18.9,72,0.401,0.401,0.843,71,True
 Pico Korzhenevskoi,Korzhenevskoi,11.231,False,0.0531,21.4,66,0.389,0.389,0.843,71,True
 Pico Monte Belo,Serra Grande,9.973,False,0.0521,14.9,342,0.397,0.397,0.843,71,True
 Pico de Médécourbe,Médécourbe,11.231,False,0.0529,16.8,90,0.392,0.392,0.843,71,True
@@ -837,6 +840,7 @@ Vulcão Illiniza,Illiniza,12.287,False,0.0533,21.2,78,0.389,0.389,0.843,71,True
 Vulcão Kaimondake,Kaimondake,12.287,False,0.056,18.2,108,0.37,0.37,0.843,71,True
 Vulcão San Pedro,San Pedro,12.287,False,0.0536,19.2,90,0.389,0.389,0.843,71,True
 Vulcão Tinguiririca,Tinguiririca,12.287,False,0.0528,17.8,96,0.394,0.394,0.843,71,True
+Vulcão da Urzelina,Urzelina,14.823,False,0.0515,16.2,246,0.401,0.401,0.843,71,True
 Öræfajökull,,20.0,True,0.0525,26.0,144,0.394,0.394,0.843,71,True
 Agulha de Argentière,Aiguille d'Argentière,11.489,False,0.0499,18.1,72,0.415,0.415,0.849,72,True
 Ai-Petri,,8.744,False,0.0498,18.8,48,0.415,0.415,0.849,72,True
@@ -851,7 +855,6 @@ Cerro del Muerto,Muerto,11.083,False,0.0509,14.7,198,0.407,0.407,0.849,72,True
 Cerro del Nacimiento,Nacimiento,11.083,False,0.0479,15.6,78,0.431,0.431,0.849,72,True
 Changtse,,20.0,True,0.0486,22.9,150,0.426,0.426,0.849,72,True
 Cilindro de Marboré,,11.878,False,0.0479,17.3,72,0.429,0.429,0.849,72,True
-Clingmans Dome,Kuwohi,13.495,False,0.0514,18.0,102,0.403,0.403,0.849,72,True
 Colina dos Mirantes,,11.936,False,0.0476,14.6,282,0.433,0.433,0.849,72,True
 Complexo Vulcânico Monte Edziza,,11.512,False,0.0511,15.6,114,0.405,0.405,0.849,72,True
 Complexo vulcânico de Akan,,12.442,False,0.049,17.0,84,0.422,0.422,0.849,72,True
@@ -874,12 +877,12 @@ Monte Churchill,Churchill,9.653,False,0.0482,15.9,60,0.429,0.429,0.849,72,True
 Monte Disgrazia,Disgrazia,9.653,False,0.0504,16.2,66,0.411,0.411,0.849,72,True
 Monte Estância,Estância,10.893,False,0.0475,14.4,114,0.433,0.433,0.849,72,True
 Monte Isto,Isto,8.928,False,0.0478,14.6,66,0.431,0.431,0.849,72,True
+Monte Itome,Itome,9.653,False,0.0475,16.8,54,0.433,0.433,0.849,72,True
 Monte Li,,9.534,False,0.0503,14.8,90,0.411,0.411,0.849,72,True
 Monte Lyell,Lyell,9.653,False,0.0494,15.3,72,0.419,0.419,0.849,72,True
 Monte Massive,Massive,9.653,False,0.0508,15.7,72,0.407,0.407,0.849,72,True
 Monte Moulton,Moulton,9.653,False,0.05,15.0,84,0.413,0.413,0.849,72,True
 Monte Nabeba,Mont Nabemba | Nabeba,9.653,False,0.0478,15.5,60,0.431,0.431,0.849,72,True
-Monte Papandayan,Papandayan,9.653,False,0.0517,18.7,60,0.401,0.401,0.849,72,True
 Monte Sanford,Sanford,9.653,False,0.0491,16.7,60,0.419,0.419,0.849,72,True
 Monte Sannine,Sannine,9.653,False,0.0481,14.9,72,0.429,0.429,0.849,72,True
 Monte Sapper,Sapper,9.653,False,0.0503,14.1,150,0.411,0.411,0.849,72,True
@@ -892,7 +895,6 @@ Parângu Mare,,11.623,False,0.0493,16.8,78,0.419,0.419,0.849,72,True
 Pedra de Agando,,9.681,False,0.0502,14.4,114,0.411,0.411,0.849,72,True
 Peñalara,,20.0,True,0.0492,21.7,168,0.419,0.419,0.849,72,True
 Pico Espejo,Espejo,11.231,False,0.0489,15.2,102,0.422,0.422,0.849,72,True
-Pico Gnifetti,Gnifetti,11.231,False,0.0515,18.9,72,0.401,0.401,0.849,72,True
 Pico Timão,Timão,11.49,False,0.051,15.0,312,0.405,0.405,0.849,72,True
 Pico do Itobira,Pico do Itubira | Itobira,11.231,False,0.0512,15.2,372,0.405,0.405,0.849,72,True
 Pietra di Bismantova,Pedra de Bismantova,10.175,False,0.0482,15.3,72,0.429,0.429,0.849,72,True
@@ -900,13 +902,15 @@ Pular,,11.301,False,0.0505,15.8,96,0.409,0.409,0.849,72,True
 Pólux,,16.425,False,0.0489,19.4,120,0.422,0.422,0.849,72,True
 Sarychev,,20.0,True,0.0485,22.3,156,0.426,0.426,0.849,72,True
 Serra de Alhama,Alhama,9.417,False,0.0488,14.4,90,0.422,0.422,0.849,72,True
+Serra de Água de Pau,Vulcão de Água de Pau | Água de Pau,9.092,False,0.0474,13.7,210,0.433,0.433,0.849,72,True
 Serra do Cervo,Cervo,11.69,False,0.0487,14.6,222,0.422,0.422,0.849,72,True
 Valle Grande,,6.987,False,0.0512,14.2,66,0.405,0.405,0.849,72,True
+Vulcão Corazón,Corazón,12.287,False,0.0477,17.7,72,0.433,0.433,0.849,72,True
 Vulcão Makushin,Makushin,12.287,False,0.048,15.8,96,0.429,0.429,0.849,72,True
 Vulcão Orosí,Orosí,12.287,False,0.051,18.2,84,0.405,0.405,0.849,72,True
 Vulcão da Serreta,Vulcão Oceânico da Serreta | Serreta,14.399,False,0.049,15.9,462,0.419,0.419,0.849,72,True
-Vulcão da Urzelina,Urzelina,14.823,False,0.0515,16.2,246,0.401,0.401,0.849,72,True
 Agulha Branca de Peuterey,,10.503,False,0.0468,16.3,60,0.44,0.44,0.854,73,True
+Agulha de Tré la Tête,,12.723,False,0.044,15.2,90,0.466,0.466,0.854,73,True
 Agulha do Jardim,Aiguille du Jardin,10.195,False,0.0451,14.5,72,0.457,0.457,0.854,73,True
 Agulha do Tour,Aiguille du Tour,11.119,False,0.0446,15.9,60,0.462,0.462,0.854,73,True
 Ambrym,,20.0,True,0.0461,25.0,108,0.446,0.446,0.854,73,True
@@ -920,6 +924,7 @@ Chaparrastique,,20.0,True,0.0469,22.6,138,0.438,0.438,0.854,73,True
 Formação Hanson,,8.607,False,0.0473,13.4,96,0.435,0.435,0.854,73,True
 Gasherbrum IV,,20.0,True,0.0449,25.2,102,0.457,0.457,0.854,73,True
 Genting Highlands,,20.0,True,0.0469,23.9,126,0.438,0.438,0.854,73,True
+Grand Combin,,20.0,True,0.0439,23.2,114,0.468,0.468,0.854,73,True
 Grande Capuchinho,Grand Capucin,10.752,False,0.0461,14.6,84,0.446,0.446,0.854,73,True
 Grande Tête de l'Obiou,,10.941,False,0.0455,14.8,78,0.453,0.453,0.854,73,True
 Gyala Peri,,13.487,False,0.0463,18.9,72,0.444,0.444,0.854,73,True
@@ -927,6 +932,7 @@ Hochwanner,,20.0,True,0.0459,23.8,120,0.449,0.449,0.854,73,True
 Ilamatepec,,20.0,True,0.0458,22.5,132,0.449,0.449,0.854,73,True
 Ilha Herbert,,9.483,False,0.0458,14.7,60,0.449,0.449,0.854,73,True
 Izalco,,20.0,True,0.0464,22.9,132,0.444,0.444,0.854,73,True
+K12,,20.0,True,0.044,21.3,132,0.466,0.466,0.854,73,True
 Karthala,,20.0,True,0.0473,25.2,114,0.435,0.435,0.854,73,True
 Les Diablerets,,14.743,False,0.0448,18.2,84,0.457,0.457,0.854,73,True
 Lonquimay,,20.0,True,0.0466,19.0,174,0.442,0.442,0.854,73,True
@@ -940,7 +946,6 @@ Monte Giona,Giona,9.653,False,0.0441,14.8,54,0.465,0.465,0.854,73,True
 Monte Halcon,Halcon,9.653,False,0.0453,15.2,54,0.453,0.453,0.854,73,True
 Monte Hope,Hope,9.653,False,0.0452,15.2,54,0.453,0.453,0.854,73,True
 Monte Hubbard,Hubbard,9.653,False,0.0452,14.7,60,0.453,0.453,0.854,73,True
-Monte Itome,Itome,9.653,False,0.0475,16.8,54,0.433,0.433,0.854,73,True
 Monte Klabat,Klabat,9.653,False,0.046,15.6,54,0.446,0.446,0.854,73,True
 Monte Meager,Meager,9.653,False,0.0451,14.7,60,0.453,0.453,0.854,73,True
 Monte Meharry,Meharry,9.653,False,0.0445,14.2,66,0.462,0.462,0.854,73,True
@@ -955,6 +960,7 @@ Nevado de Cachi,Cachi,14.122,False,0.0442,16.6,84,0.465,0.465,0.854,73,True
 Newtontoppen,,20.0,True,0.0463,22.9,132,0.444,0.444,0.854,73,True
 Olavtoppen,,20.0,True,0.047,19.4,174,0.438,0.438,0.854,73,True
 Pedra da Fortaleza,,9.794,False,0.0467,13.8,222,0.44,0.44,0.854,73,True
+Pichu Pichu,,20.0,True,0.0439,20.0,144,0.466,0.466,0.854,73,True
 Pico Blanca,Blanca,11.231,False,0.0456,15.3,72,0.449,0.449,0.854,73,True
 Pico Emory,Emory,11.231,False,0.0444,14.4,90,0.462,0.462,0.854,73,True
 Pico Luigi Amedeo,Luigi Amedeo,11.231,False,0.0466,16.2,66,0.442,0.442,0.854,73,True
@@ -963,19 +969,17 @@ Pico Sem Nome,Sem Nome,8.44,False,0.0441,14.0,54,0.465,0.465,0.854,73,True
 Pico do Norte,,9.871,False,0.0472,13.9,228,0.435,0.435,0.854,73,True
 Pidurutalagala,Monte Pidurutalagala,9.653,False,0.0444,24.2,108,0.462,0.462,0.854,73,True
 Praděd,,20.0,True,0.0443,21.7,132,0.462,0.462,0.854,73,True
-Serra de Água de Pau,Vulcão de Água de Pau | Água de Pau,9.092,False,0.0474,13.7,210,0.433,0.433,0.854,73,True
 Shiveluch,,20.0,True,0.0447,26.4,90,0.459,0.459,0.854,73,True
 Socompa,,20.0,True,0.0443,21.7,132,0.462,0.462,0.854,73,True
 Tacora,,20.0,True,0.0442,20.4,144,0.462,0.462,0.854,73,True
 Triple Divide Peak,,12.375,False,0.0447,15.0,96,0.459,0.459,0.854,73,True
 Ubinas,,20.0,True,0.0449,22.1,132,0.457,0.457,0.854,73,True
-Vulcão Corazón,Corazón,12.287,False,0.0477,17.7,72,0.433,0.433,0.854,73,True
 Vulcão Turrialba,Turrialba,12.287,False,0.0464,19.5,60,0.442,0.442,0.854,73,True
 Wuzhi,,20.0,True,0.0457,18.9,168,0.449,0.449,0.854,73,True
 Ðeravica,,20.0,True,0.0456,25.6,102,0.449,0.449,0.854,73,True
-Agulha de Tré la Tête,,12.723,False,0.044,15.2,90,0.466,0.466,0.86,74,True
 Alto do Talefe,,13.269,False,0.0428,14.5,270,0.478,0.478,0.86,74,True
 Angels Landing,,20.0,True,0.0414,16.9,216,0.495,0.495,0.86,74,True
+As Drus,Les Drus | Petit Dru | Pequena Dru | Grande Dru,14.743,False,0.0409,20.8,114,0.499,0.499,0.86,74,True
 Bezymianny,,20.0,True,0.0413,23.4,96,0.495,0.495,0.86,74,True
 Bukit Pagon,,20.0,True,0.0431,20.5,132,0.475,0.475,0.86,74,True
 Cerro El Pital,El Pital,12.629,False,0.0413,17.6,54,0.495,0.495,0.86,74,True
@@ -985,13 +989,11 @@ Concepción,,20.0,True,0.0433,22.8,114,0.475,0.475,0.86,74,True
 Coxilha do Fogo,,12.165,False,0.0417,13.9,228,0.492,0.492,0.86,74,True
 Djebel Chambi,,20.0,True,0.043,21.8,120,0.475,0.475,0.86,74,True
 Esja,Monte Esja,9.653,False,0.0435,22.2,120,0.471,0.471,0.86,74,True
-Grand Combin,,20.0,True,0.0439,23.2,114,0.468,0.468,0.86,74,True
 Grande Casse,,11.557,False,0.043,15.5,60,0.475,0.475,0.86,74,True
 Grande Mèsule,,6.987,False,0.0412,12.8,42,0.497,0.497,0.86,74,True
 Grande Rochosa,,6.987,False,0.0411,12.8,42,0.497,0.497,0.86,74,True
 Himalchuli,,20.0,True,0.042,23.2,102,0.487,0.487,0.86,74,True
 Hochkönig,,20.0,True,0.0426,23.0,108,0.481,0.481,0.86,74,True
-K12,,20.0,True,0.044,21.3,132,0.466,0.466,0.86,74,True
 Khazret Sultan,,20.0,True,0.0438,22.6,120,0.468,0.468,0.86,74,True
 Kohala,,20.0,True,0.0423,18.4,144,0.484,0.484,0.86,74,True
 Lago Pizolseen,,10.371,False,0.0416,15.2,48,0.492,0.492,0.86,74,True
@@ -1004,6 +1006,7 @@ Mere Lava,,12.959,False,0.0419,15.8,66,0.487,0.487,0.86,74,True
 Monte Bove,Bove,9.653,False,0.0415,13.0,84,0.492,0.492,0.86,74,True
 Monte Buet,Buet,9.653,False,0.0418,13.3,72,0.487,0.487,0.86,74,True
 Monte Corona,Corona,11.554,False,0.0428,15.0,66,0.478,0.478,0.86,74,True
+Monte Dana,Dana,11.236,False,0.0408,14.8,54,0.499,0.499,0.86,74,True
 Monte Fisto,Monte Fisht | Fisto,9.653,False,0.0436,17.6,42,0.468,0.468,0.86,74,True
 Monte Genyen,Genyen,9.653,False,0.0411,12.8,90,0.497,0.497,0.86,74,True
 Monte Haddington,Haddington,9.653,False,0.0417,14.4,48,0.49,0.49,0.86,74,True
@@ -1022,7 +1025,6 @@ Ngga Pulu,,20.0,True,0.0427,18.3,156,0.478,0.478,0.86,74,True
 Olca,,20.0,True,0.042,19.0,138,0.487,0.487,0.86,74,True
 Ortler,,20.0,True,0.0437,23.2,114,0.468,0.468,0.86,74,True
 Phnom Kulen,,20.0,True,0.0425,20.1,132,0.481,0.481,0.86,74,True
-Pichu Pichu,,20.0,True,0.0439,20.0,144,0.466,0.466,0.86,74,True
 Pico Parrot,Parrot,11.231,False,0.0419,17.2,48,0.487,0.487,0.86,74,True
 Pico de Tancítaro,Tancítaro,11.231,False,0.0415,13.4,120,0.492,0.492,0.86,74,True
 Pico do Carvão,Carvão,11.333,False,0.0417,13.9,258,0.487,0.487,0.86,74,True
@@ -1040,10 +1042,10 @@ Serra do Ramalho,Ramalho,10.545,False,0.0414,14.1,306,0.492,0.492,0.86,74,True
 Tavurvur,,20.0,True,0.0429,21.1,126,0.475,0.475,0.86,74,True
 Tepui Wei-Assipu,,17.794,False,0.0412,15.6,294,0.495,0.495,0.86,74,True
 Toussidé,Tarso Toussidé,12.427,False,0.042,19.0,138,0.487,0.487,0.86,74,True
+Tunupa,,20.0,True,0.041,17.4,174,0.497,0.497,0.86,74,True
 Vulcão Miravalles,Miravalles,12.287,False,0.0427,16.7,60,0.478,0.478,0.86,74,True
 Agulha do Chardonnet,Aiguille du Chardonnet,11.489,False,0.0404,14.8,54,0.506,0.506,0.866,75,True
 Agulhas do Diabo,Aiguilles du Diable,11.358,False,0.0385,14.0,54,0.529,0.529,0.866,75,True
-As Drus,Les Drus | Petit Dru | Pequena Dru | Grande Dru,14.743,False,0.0409,20.8,114,0.499,0.499,0.866,75,True
 Blup Blup,,20.0,True,0.0393,17.4,138,0.519,0.519,0.866,75,True
 Cerro Minchincha,Minchincha,12.629,False,0.0387,14.1,72,0.527,0.527,0.866,75,True
 Cerro Negro de Mayasquer,Negro de Mayasquer,11.301,False,0.0385,14.4,48,0.527,0.527,0.866,75,True
@@ -1070,7 +1072,6 @@ Monte Api,Api,9.653,False,0.0395,16.0,36,0.516,0.516,0.866,75,True
 Monte Auseva,Auseva,9.653,False,0.0394,12.4,114,0.516,0.516,0.866,75,True
 Monte Baden-Powell,Baden-Powell,9.653,False,0.0402,13.0,66,0.509,0.509,0.866,75,True
 Monte Batu,Batu,9.653,False,0.0401,14.4,42,0.509,0.509,0.866,75,True
-Monte Dana,Dana,11.236,False,0.0408,14.8,54,0.499,0.499,0.866,75,True
 Monte Escuro,Escuro,10.003,False,0.0384,13.4,246,0.531,0.531,0.866,75,True
 Monte Gambier,Gambier,9.653,False,0.0397,13.1,60,0.513,0.513,0.866,75,True
 Monte Gusuku,Gusuku,9.653,False,0.0388,12.6,66,0.524,0.524,0.866,75,True
@@ -1080,6 +1081,7 @@ Monte Manaraga,Manaraga,9.653,False,0.0405,13.6,54,0.503,0.503,0.866,75,True
 Monte Mangengenge,Mangengenge,9.653,False,0.0403,12.8,78,0.506,0.506,0.866,75,True
 Monte Marcus Baker,Marcus Baker,9.653,False,0.0388,15.2,36,0.524,0.524,0.866,75,True
 Monte Maudit,Maudit,9.653,False,0.0392,15.6,36,0.519,0.519,0.866,75,True
+Monte Puke,Puke,9.653,False,0.0382,12.8,54,0.531,0.531,0.866,75,True
 Monte Santo António,,9.348,False,0.0391,12.2,108,0.519,0.519,0.866,75,True
 Monte Tahan,Tahan,9.653,False,0.0387,17.8,30,0.524,0.524,0.866,75,True
 Monte da Senhora da Ajuda,Senhora da Ajuda,9.149,False,0.0405,12.9,192,0.503,0.503,0.866,75,True
@@ -1094,18 +1096,19 @@ Pico da Barrosa,Barrosa,14.004,False,0.0404,14.6,312,0.503,0.503,0.866,75,True
 Pico da Independência,Independência,10.835,False,0.0398,16.4,42,0.512,0.512,0.866,75,True
 Pico das Éguas,Éguas,12.884,False,0.0406,14.7,366,0.503,0.503,0.866,75,True
 Piz Corvatsch,Corvatsch,20.0,True,0.0392,19.8,108,0.519,0.519,0.866,75,True
+Poco Mandasawu,,11.211,False,0.0383,12.8,90,0.531,0.531,0.866,75,True
 Ponta Sommeiller,,9.855,False,0.039,13.2,54,0.522,0.522,0.866,75,True
 Ponta da Restinga,Portela da Restinga,11.654,False,0.0399,14.3,318,0.509,0.509,0.866,75,True
 Ravna Gora,,14.41,False,0.0387,15.3,72,0.524,0.524,0.866,75,True
 Roca Entravessada,,13.209,False,0.04,14.8,78,0.509,0.509,0.866,75,True
 Rocciamelone,,20.0,True,0.0402,18.7,126,0.506,0.506,0.866,75,True
+Roman-Kosh,,20.0,True,0.0382,23.2,78,0.531,0.531,0.866,75,True
 Serra de Andia,Sierra de Andía | Andia,9.417,False,0.039,12.7,60,0.522,0.522,0.866,75,True
 Serra do Cavalo,Cavalo,9.906,False,0.0391,12.7,156,0.519,0.519,0.866,75,True
 Serra do Quilombo,Serra Careca | Morro do Quilombo | Quilombo,11.217,False,0.0386,13.3,216,0.527,0.527,0.866,75,True
 Shaiyb al-Banat,,9.426,False,0.0409,13.6,54,0.499,0.499,0.866,75,True
 Snøhetta,,20.0,True,0.0398,18.3,126,0.512,0.512,0.866,75,True
 Todt Hill,,20.0,True,0.0388,16.4,204,0.524,0.524,0.866,75,True
-Tunupa,,20.0,True,0.041,17.4,174,0.497,0.497,0.866,75,True
 Tutupaca,,20.0,True,0.0402,18.7,126,0.506,0.506,0.866,75,True
 Vulcão Tenorio,Tenorio,12.81,False,0.04,15.0,66,0.509,0.509,0.866,75,True
 Wase Rock,,9.359,False,0.0393,12.6,66,0.518,0.518,0.866,75,True
@@ -1148,23 +1151,22 @@ Monte Manaro,Manaro,9.653,False,0.0369,12.8,42,0.551,0.551,0.872,76,True
 Monte Medúlio,Medúlio,9.653,False,0.0368,11.8,108,0.554,0.554,0.872,76,True
 Monte Moroto,Moroto,13.645,False,0.037,14.8,54,0.549,0.549,0.872,76,True
 Monte Nirvana,Nirvana,11.194,False,0.0377,13.0,66,0.54,0.54,0.872,76,True
-Monte Puke,Puke,9.653,False,0.0382,12.8,54,0.531,0.531,0.872,76,True
+Nunataks Foca,Vulcão dos Nunataks Foca,12.326,False,0.036,13.0,66,0.563,0.563,0.872,76,True
 Patilla Pata,,12.333,False,0.0372,14.4,48,0.546,0.546,0.872,76,True
 Picacho del Diablo,,13.941,False,0.0371,14.0,78,0.547,0.547,0.872,76,True
 Pico Gaspar,Gaspar,11.575,False,0.0379,12.8,144,0.537,0.537,0.872,76,True
+Pico da Grande Agulha,Grande Agulha,9.902,False,0.0359,11.9,60,0.563,0.563,0.872,76,True
 Pico de Malpaso,Malpaso,11.231,False,0.0377,12.9,72,0.54,0.54,0.872,76,True
 Pik Talgar,,20.0,True,0.0362,17.8,96,0.56,0.56,0.872,76,True
 Pirâmide Vincent,,11.922,False,0.0373,15.2,42,0.544,0.544,0.872,76,True
 Piton de la Riviere Noire,Piton de la Petite Rivière Noire,11.573,False,0.0379,15.6,42,0.534,0.534,0.872,76,True
 Piz Kesch,Kesch,20.0,True,0.0362,18.8,90,0.56,0.56,0.872,76,True
-Poco Mandasawu,,11.211,False,0.0383,12.8,90,0.531,0.531,0.872,76,True
 Poike,,20.0,True,0.0369,16.5,132,0.549,0.549,0.872,76,True
 Ponto Elefante,,10.093,False,0.0381,12.4,78,0.534,0.534,0.872,76,True
 Presanella,,20.0,True,0.0367,17.0,108,0.554,0.554,0.872,76,True
 Puncak Trikora,,20.0,True,0.0376,18.8,102,0.54,0.54,0.872,76,True
 Putana,,20.0,True,0.0366,17.0,108,0.554,0.554,0.872,76,True
 Reventador,,20.0,True,0.038,21.2,90,0.534,0.534,0.872,76,True
-Roman-Kosh,,20.0,True,0.0382,23.2,78,0.531,0.531,0.872,76,True
 Saltoro Kangri,,20.0,True,0.0365,20.2,84,0.554,0.554,0.872,76,True
 Saser Kangri,,20.0,True,0.0374,21.4,84,0.544,0.544,0.872,76,True
 Serra de Tormantos,Tormantos,9.417,False,0.0368,11.7,72,0.554,0.554,0.872,76,True
@@ -1226,22 +1228,23 @@ Montejurra,,20.0,True,0.0341,16.0,102,0.592,0.592,0.877,77,True
 Montes Jura,,11.797,False,0.0344,13.2,42,0.587,0.587,0.877,77,True
 Montes Pentadáctilos,Pentadáctilos,10.945,False,0.0344,11.9,60,0.587,0.587,0.877,77,True
 Morro do Itatiaia,Morro Itatiaia | Itatiaia,11.736,False,0.0353,12.7,180,0.572,0.572,0.877,77,True
-Nunataks Foca,Vulcão dos Nunataks Foca,12.326,False,0.036,13.0,66,0.563,0.563,0.877,77,True
 Pedra Açu,,11.324,False,0.0352,12.2,138,0.575,0.575,0.877,77,True
 Pico Zumsteins,Zumsteins,11.231,False,0.035,15.8,30,0.577,0.577,0.877,77,True
-Pico da Grande Agulha,Grande Agulha,9.902,False,0.0359,11.9,60,0.563,0.563,0.877,77,True
 Pico do Ferro,Ferro,10.493,False,0.0354,12.9,210,0.572,0.572,0.877,77,True
 Ponta Perrucchetti,,9.855,False,0.0353,12.8,36,0.575,0.575,0.877,77,True
+Sabalan,,20.0,True,0.0339,22.8,54,0.596,0.596,0.877,77,True
 Schreckhorn,,20.0,True,0.0359,21.7,72,0.565,0.565,0.877,77,True
 Serra Arana,Serra Harana | Serra de Harana | Serra de Arana | Arana,13.887,False,0.0356,13.2,90,0.567,0.567,0.877,77,True
 Serra da Calçada,Calçada,10.444,False,0.0352,11.9,126,0.575,0.575,0.877,77,True
 Serra da Joaninha,Joaninha,11.118,False,0.034,11.6,90,0.592,0.592,0.877,77,True
 Serra da Ribeirinha,Ribeirinha,11.503,False,0.0348,12.5,168,0.581,0.581,0.877,77,True
+Serra das Fontes,Fontes,9.417,False,0.0339,11.2,102,0.596,0.596,0.877,77,True
 Serra de Santa Isabel,Santa Isabel,9.475,False,0.0356,12.0,144,0.569,0.569,0.877,77,True
 Serra do Comissário,Comissário,10.859,False,0.0348,12.3,156,0.581,0.581,0.877,77,True
 Serra do Pancas,Pancas,12.348,False,0.036,12.6,120,0.563,0.563,0.877,77,True
 Shimbiris,,20.0,True,0.0358,18.4,90,0.567,0.567,0.877,77,True
 Slamet,,20.0,True,0.0359,21.7,72,0.565,0.565,0.877,77,True
+Uia di Ciamarella,,10.175,False,0.034,12.4,36,0.592,0.592,0.877,77,True
 Viștea Mare,,11.623,False,0.0344,13.6,36,0.589,0.589,0.877,77,True
 Wildspitze,,20.0,True,0.0343,23.2,54,0.589,0.589,0.877,77,True
 A Torre Redonda,Tour Ronde | La Tour Ronde,10.799,False,0.0334,12.0,42,0.605,0.605,0.883,78,True
@@ -1299,11 +1302,11 @@ Pico Karl Marx,Karl Marx,11.231,False,0.0322,15.2,24,0.626,0.626,0.883,78,True
 Pico Semyonov,Semyonov,11.231,False,0.0335,12.4,42,0.601,0.601,0.883,78,True
 Pico das Camarinhas,Camarinhas,11.231,False,0.0332,12.5,192,0.608,0.608,0.883,78,True
 Pico do Penedo,,12.142,False,0.0335,12.9,216,0.603,0.603,0.883,78,True
+Ponta do Charbonnel,,9.855,False,0.0322,11.8,30,0.627,0.627,0.883,78,True
 Puy Mary,,20.0,True,0.0323,15.6,90,0.624,0.624,0.883,78,True
 Ridnitsohkka,,20.0,True,0.0327,17.7,72,0.616,0.616,0.883,78,True
-Sabalan,,20.0,True,0.0339,22.8,54,0.596,0.596,0.883,78,True
+Rochedo Rusokastro,,13.519,False,0.0322,12.1,72,0.627,0.627,0.883,78,True
 Saraghrar,,20.0,True,0.0326,18.6,66,0.62,0.62,0.883,78,True
-Serra das Fontes,Fontes,9.417,False,0.0339,11.2,102,0.596,0.596,0.883,78,True
 Serra de Mucaba,Mucaba,9.417,False,0.0323,10.8,90,0.624,0.624,0.883,78,True
 Slieve Donard,,20.0,True,0.0325,18.6,66,0.62,0.62,0.883,78,True
 Stok Kangri,,20.0,True,0.0333,15.8,96,0.605,0.605,0.883,78,True
@@ -1311,7 +1314,6 @@ Sumantri,,20.0,True,0.0337,17.6,78,0.601,0.601,0.883,78,True
 Tata Sabaya,,13.34,False,0.0325,16.6,30,0.62,0.62,0.883,78,True
 Torrecilla,,20.0,True,0.0325,15.0,120,0.62,0.62,0.883,78,True
 Tyatya,,20.0,True,0.0336,17.6,78,0.601,0.601,0.883,78,True
-Uia di Ciamarella,,10.175,False,0.034,12.4,36,0.592,0.592,0.883,78,True
 Afderà,,20.0,True,0.0306,16.3,60,0.659,0.659,0.889,79,True
 Agulha do Plan,Aiguille du Plan,11.489,False,0.0309,11.2,42,0.652,0.652,0.889,79,True
 Anamudi,,20.0,True,0.0319,20.4,54,0.633,0.633,0.889,79,True
@@ -1320,7 +1322,9 @@ Bishorn,,20.0,True,0.0316,18.3,60,0.638,0.638,0.889,79,True
 Bukadaban Feng,,20.0,True,0.032,14.8,114,0.63,0.63,0.889,79,True
 Cabeço da Brindeira,,14.493,False,0.0309,12.1,132,0.652,0.652,0.889,79,True
 Cabeço da Escaleira,,15.898,False,0.0307,12.5,150,0.657,0.657,0.889,79,True
+Cerro Miscanti,Miscanti,12.629,False,0.0305,11.6,42,0.662,0.662,0.889,79,True
 Chamechaude,,20.0,True,0.0312,15.0,84,0.647,0.647,0.889,79,True
+Corno Balmen,,11.932,False,0.0304,11.2,42,0.662,0.662,0.889,79,True
 Covão da Mula,,14.354,False,0.0308,12.9,210,0.655,0.655,0.889,79,True
 Crateras de Mono-Inyo,,12.529,False,0.0313,12.0,42,0.643,0.643,0.889,79,True
 Didi Abuli,,13.021,False,0.0318,14.6,30,0.633,0.633,0.889,79,True
@@ -1363,8 +1367,6 @@ Pico Truchas,Truchas,11.231,False,0.0307,10.8,48,0.655,0.655,0.889,79,True
 Pico de Alencar,Alencar,11.231,False,0.0307,10.8,48,0.655,0.655,0.889,79,True
 Pico dos Bodes,Bodes,11.231,False,0.0305,10.8,90,0.659,0.659,0.889,79,True
 Pizzo Badile,Piz Badile,20.0,True,0.0306,18.0,54,0.657,0.657,0.889,79,True
-Ponta do Charbonnel,,9.855,False,0.0322,11.8,30,0.627,0.627,0.889,79,True
-Rochedo Rusokastro,,13.519,False,0.0322,12.1,72,0.627,0.627,0.889,79,True
 Sapitwa,Maciço de Mulanje,12.662,False,0.031,14.6,96,0.65,0.65,0.889,79,True
 Sarektjåkkå,,20.0,True,0.0312,16.2,66,0.645,0.645,0.889,79,True
 Semnoz,,20.0,True,0.0316,15.6,78,0.638,0.638,0.889,79,True
@@ -1392,14 +1394,14 @@ Batura Sar,,20.0,True,0.0303,19.2,48,0.666,0.666,0.894,80,True
 Cabaray,,20.0,True,0.0296,16.4,54,0.679,0.679,0.894,80,True
 Cabeço da Junqueira,,13.563,False,0.0298,12.3,180,0.675,0.675,0.894,80,True
 Cabeço do Canto,,12.189,False,0.029,10.6,84,0.693,0.693,0.894,80,True
+Caixa,,8.736,False,0.029,9.2,42,0.693,0.693,0.894,80,True
 Cerro Baú,Baú,12.084,False,0.0303,11.6,36,0.666,0.666,0.894,80,True
+Cerro El Roble,El Roble,14.222,False,0.029,11.6,42,0.693,0.693,0.894,80,True
 Cerro Grande,,9.808,False,0.0296,9.9,60,0.679,0.679,0.894,80,True
-Cerro Miscanti,Miscanti,12.629,False,0.0305,11.6,42,0.662,0.662,0.894,80,True
 Cerro Tololo,Tololo,12.629,False,0.0297,10.9,72,0.677,0.677,0.894,80,True
 Chachacomani,,20.0,True,0.0302,15.9,60,0.666,0.666,0.894,80,True
 Chañi,,20.0,True,0.029,14.1,72,0.691,0.691,0.894,80,True
 Chomolhari,,20.0,True,0.0302,20.8,42,0.666,0.666,0.894,80,True
-Corno Balmen,,11.932,False,0.0304,11.2,42,0.662,0.662,0.894,80,True
 Corno Preto,Corno Nero,10.428,False,0.0295,12.8,18,0.68,0.68,0.894,80,True
 Golovnin,,20.0,True,0.0295,16.0,54,0.683,0.683,0.894,80,True
 Gula Mons,,13.088,False,0.0298,12.0,36,0.675,0.675,0.894,80,True
@@ -1457,10 +1459,8 @@ Biu,,19.252,False,0.0276,12.7,60,0.725,0.725,0.9,81,True
 Cabeço Redondo,,13.048,False,0.0277,11.1,126,0.725,0.725,0.9,81,True
 Cabeço Verde,,11.715,False,0.0288,10.6,96,0.696,0.696,0.9,81,True
 Cabeço dos Trinta,,12.502,False,0.0278,11.0,120,0.722,0.722,0.9,81,True
-Caixa,,8.736,False,0.029,9.2,42,0.693,0.693,0.9,81,True
 Casablanca,,20.0,True,0.0285,13.8,66,0.705,0.705,0.9,81,True
 Ceboruco,,20.0,True,0.0279,14.4,48,0.718,0.718,0.9,81,True
-Cerro El Roble,El Roble,14.222,False,0.029,11.6,42,0.693,0.693,0.9,81,True
 Cerro Toconce,Toconce,12.629,False,0.0278,10.0,48,0.722,0.722,0.9,81,True
 Chinameca,,20.0,True,0.0279,14.4,48,0.718,0.718,0.9,81,True
 Cima Autour,,8.859,False,0.0288,9.2,48,0.696,0.696,0.9,81,True
@@ -1484,6 +1484,7 @@ Monte Albert Edward,Albert Edward,9.653,False,0.0289,9.8,30,0.693,0.693,0.9,81,T
 Monte Banang,Banang,9.653,False,0.028,9.2,36,0.716,0.716,0.9,81,True
 Monte Batalha,Batalha,9.85,False,0.029,9.6,42,0.693,0.693,0.9,81,True
 Monte Galinheiro,Galinheiro,11.597,False,0.0283,10.1,72,0.71,0.71,0.9,81,True
+Monte Grosso,Grosso,9.69,False,0.0277,9.4,66,0.725,0.725,0.9,81,True
 Monte Lantoy,Lantoy,9.653,False,0.028,9.6,24,0.717,0.717,0.9,81,True
 Monte Lemerle,Lemerle,9.653,False,0.0283,9.7,72,0.71,0.71,0.9,81,True
 Monte Pleasant,Pleasant,9.653,False,0.0289,9.6,36,0.695,0.695,0.9,81,True
@@ -1495,6 +1496,7 @@ Pico Maystora,Maystora,11.231,False,0.0285,10.0,36,0.705,0.705,0.9,81,True
 Pico Momchil,Momchil,11.231,False,0.0278,9.8,30,0.722,0.722,0.9,81,True
 Pico Nipple,Nipple,11.231,False,0.0285,10.0,36,0.705,0.705,0.9,81,True
 Pico Razgrad,Razgrad,11.231,False,0.0284,10.0,36,0.705,0.705,0.9,81,True
+Pico Sitalk,Sitalk,11.231,False,0.0277,9.6,36,0.725,0.725,0.9,81,True
 Pico da Sé,,11.439,False,0.0289,11.1,126,0.695,0.695,0.9,81,True
 Pico das Três Lagoas,Três Lagoas,9.53,False,0.0279,9.2,54,0.72,0.72,0.9,81,True
 Pico dos Padres,Padres,11.231,False,0.0279,10.6,108,0.718,0.718,0.9,81,True
@@ -1533,10 +1535,10 @@ Mallahle,,20.0,True,0.0269,13.2,54,0.745,0.745,0.906,82,True
 Montanhas Eranos,Eranos,10.883,False,0.0273,9.2,48,0.735,0.735,0.906,82,True
 Monte Alice Gade,Alice Gade,11.831,False,0.0275,10.4,24,0.728,0.728,0.906,82,True
 Monte Arlan,Arlan,9.653,False,0.0267,8.6,30,0.748,0.748,0.906,82,True
+Monte Belo,Monte Belo (Pé de Serra) | Monte Belo (montanha) | Belo,9.344,False,0.0265,9.3,72,0.757,0.757,0.906,82,True
 Monte Conness,Conness,9.653,False,0.0273,9.6,18,0.735,0.735,0.906,82,True
 Monte Cosse,Cosse,9.653,False,0.0267,9.2,18,0.751,0.751,0.906,82,True
 Monte Français,Français,9.653,False,0.0273,9.6,18,0.735,0.735,0.906,82,True
-Monte Grosso,Grosso,9.69,False,0.0277,9.4,66,0.725,0.725,0.906,82,True
 Monte Kolovrat,Kolovrat,9.653,False,0.0273,8.8,42,0.735,0.735,0.906,82,True
 Monte Mequinassar,Mequinassar,9.653,False,0.0273,8.8,42,0.735,0.735,0.906,82,True
 Monte Mokoto,Mokoto,9.653,False,0.0272,8.8,36,0.735,0.735,0.906,82,True
@@ -1562,7 +1564,6 @@ Pico Matochina,Matochina,11.231,False,0.0274,10.0,24,0.732,0.732,0.906,82,True
 Pico Outlook,Outlook,11.231,False,0.0268,9.6,24,0.748,0.748,0.906,82,True
 Pico Rachado,Rachado,12.743,False,0.0275,10.1,72,0.728,0.728,0.906,82,True
 Pico Santos,Santos,9.913,False,0.0266,8.8,24,0.755,0.755,0.906,82,True
-Pico Sitalk,Sitalk,11.231,False,0.0277,9.6,36,0.725,0.725,0.906,82,True
 Pico Viskyar,Viskyar,11.231,False,0.0271,9.4,30,0.74,0.74,0.906,82,True
 Pico da Serreta,,13.871,False,0.027,11.1,126,0.74,0.74,0.906,82,True
 Pico do Cascalho,Cascalho,12.205,False,0.0272,10.6,108,0.735,0.735,0.906,82,True
@@ -1579,6 +1580,7 @@ Stecknadelhorn,,20.0,True,0.0272,16.4,36,0.735,0.735,0.906,82,True
 Store Lenangstind,,20.0,True,0.0274,12.9,72,0.732,0.732,0.906,82,True
 Tawesche,,20.0,True,0.0268,13.2,54,0.745,0.745,0.906,82,True
 Topo,,10.082,False,0.0265,9.6,78,0.755,0.755,0.906,82,True
+Tullu Dimtu,,20.0,True,0.0264,14.4,36,0.757,0.757,0.906,82,True
 Yunque de Baracoa,,20.0,True,0.0274,13.6,54,0.728,0.728,0.906,82,True
 Yuruaní Tepuy,Tepui Yuruaní,17.794,False,0.0272,12.6,84,0.735,0.735,0.906,82,True
 Zona Especial de Conservação da Zona Central e Morro Alto,Morro Alto (Santa Cruz das Flores),9.262,False,0.0265,9.3,72,0.755,0.755,0.906,82,True
@@ -1601,6 +1603,7 @@ Higravstinden,,20.0,True,0.0256,11.9,60,0.781,0.781,0.911,83,True
 Iyang-Argapura,,20.0,True,0.0262,12.8,48,0.766,0.766,0.911,83,True
 Jbel Yagour,Yagour,20.0,True,0.0259,12.4,54,0.771,0.771,0.911,83,True
 Kaçkar Dağı,Monte Cachecar,9.653,False,0.0264,17.0,30,0.758,0.758,0.911,83,True
+Khorgo,,20.0,True,0.0253,12.8,36,0.791,0.791,0.911,83,True
 Krotenkopf,Krottenkopf,20.0,True,0.0257,13.2,36,0.779,0.779,0.911,83,True
 Lemberg,,20.0,True,0.0262,12.8,48,0.766,0.766,0.911,83,True
 Lenzspitze,,20.0,True,0.0262,16.2,30,0.766,0.766,0.911,83,True
@@ -1613,7 +1616,6 @@ Montanha Metcalfe,Metcalfe,10.465,False,0.0263,8.8,24,0.761,0.761,0.911,83,True
 Montanha Pope,Pope,12.496,False,0.0263,9.4,30,0.761,0.761,0.911,83,True
 Montanhas Bilijane,Bilijane,10.883,False,0.0254,8.4,24,0.787,0.787,0.911,83,True
 Monte Angilaaq,Angilaaq,9.653,False,0.026,8.2,30,0.771,0.771,0.911,83,True
-Monte Belo,Monte Belo (Pé de Serra) | Monte Belo (montanha) | Belo,9.344,False,0.0265,9.3,72,0.757,0.757,0.911,83,True
 Monte Guna,Guna,13.042,False,0.0261,10.0,24,0.766,0.766,0.911,83,True
 Monte Tomi,Tomi,9.653,False,0.0257,8.4,18,0.777,0.777,0.911,83,True
 Nunatak Castor,,13.433,False,0.0256,9.4,30,0.781,0.781,0.911,83,True
@@ -1647,7 +1649,6 @@ Strahlhorn,,20.0,True,0.0261,16.2,30,0.766,0.766,0.911,83,True
 Svolværgeita,,20.0,True,0.0261,12.1,72,0.766,0.766,0.911,83,True
 Szrenica,,20.0,True,0.0257,13.2,36,0.779,0.779,0.911,83,True
 Tilicho,,20.0,True,0.0263,14.0,36,0.759,0.759,0.911,83,True
-Tullu Dimtu,,20.0,True,0.0264,14.4,36,0.757,0.757,0.911,83,True
 Täschhorn,,20.0,True,0.0264,17.0,30,0.758,0.758,0.911,83,True
 Wolchulsan,,20.0,True,0.0256,11.9,60,0.781,0.781,0.911,83,True
 Zirbitzkogel,,20.0,True,0.0256,13.2,36,0.779,0.779,0.911,83,True
@@ -1677,8 +1678,8 @@ Hiunchuli,,20.0,True,0.0248,12.4,36,0.805,0.805,0.917,84,True
 Hohes Licht,,20.0,True,0.0244,12.0,36,0.818,0.818,0.917,84,True
 Hohneck,,20.0,True,0.0248,12.4,36,0.805,0.805,0.917,84,True
 Hörnleberg,,20.0,True,0.0246,11.6,48,0.81,0.81,0.917,84,True
+Kangtega,,20.0,True,0.0242,14.0,24,0.822,0.822,0.917,84,True
 Kaskasatjåkka,,20.0,True,0.0247,12.4,36,0.805,0.805,0.917,84,True
-Khorgo,,20.0,True,0.0253,12.8,36,0.791,0.791,0.917,84,True
 Lauteraarhorn,,20.0,True,0.0249,16.0,24,0.801,0.801,0.917,84,True
 Lomba de Baixo,,11.192,False,0.0247,9.0,66,0.81,0.81,0.917,84,True
 Maciço do Pico Alto,,10.839,False,0.025,9.0,66,0.799,0.799,0.917,84,True
@@ -1736,7 +1737,6 @@ Falut,,20.0,True,0.0234,10.8,42,0.85,0.85,0.922,85,True
 Grotões,,20.0,True,0.0241,12.0,162,0.829,0.829,0.922,85,True
 Hlöðufell,,20.0,True,0.0239,11.2,42,0.835,0.835,0.922,85,True
 Hutyn Tomnatyk,,20.0,True,0.0241,12.2,30,0.829,0.829,0.922,85,True
-Kangtega,,20.0,True,0.0242,14.0,24,0.822,0.822,0.922,85,True
 Lashkendar,,20.0,True,0.0239,11.6,36,0.835,0.835,0.922,85,True
 Le Râteau,,10.068,False,0.0236,7.8,12,0.846,0.846,0.922,85,True
 Mont Gelé,,16.508,False,0.0242,9.8,30,0.826,0.826,0.922,85,True
@@ -1825,6 +1825,7 @@ Passagem,,9.514,False,0.0226,7.2,36,0.881,0.881,0.927,86,True
 Pequenas Jorasses,Petites Jorasses,16.157,False,0.023,10.4,42,0.865,0.865,0.927,86,True
 Pic Long,,20.0,True,0.0227,10.6,30,0.878,0.878,0.927,86,True
 Pico Gaiteiro,Gaiteiro,13.196,False,0.0226,8.4,54,0.881,0.881,0.927,86,True
+Pico Mencorne,Mencorne,11.231,False,0.0225,7.6,42,0.886,0.886,0.927,86,True
 Pico Moniz,Moniz,11.231,False,0.0231,8.0,48,0.865,0.865,0.927,86,True
 Pico Pelado,,12.045,False,0.0227,8.0,48,0.878,0.878,0.927,86,True
 Pico Stopford,Stopford,11.231,False,0.0227,7.4,12,0.878,0.878,0.927,86,True
@@ -1887,13 +1888,13 @@ Ngọc Linh,,20.0,True,0.0223,10.0,36,0.892,0.892,0.933,87,True
 Nilgiri Himal,Nilguiri Himal,20.0,True,0.0218,10.8,18,0.911,0.911,0.933,87,True
 Nunatak Arctowski,,20.0,True,0.0223,10.2,30,0.892,0.892,0.933,87,True
 Nunatak Hertha,,20.0,True,0.0217,9.4,30,0.919,0.919,0.933,87,True
+Nunatak Kerseblept,,20.0,True,0.0216,9.4,30,0.919,0.919,0.933,87,True
 Nunataks Harvey,,20.0,True,0.0221,9.8,30,0.901,0.901,0.933,87,True
 O Tridente,,20.0,True,0.0222,9.6,48,0.897,0.897,0.933,87,True
 Pico Arde,Arde,12.103,False,0.0221,7.6,42,0.899,0.899,0.933,87,True
 Pico Corre Água,Corre Água,9.875,False,0.0218,6.6,30,0.913,0.913,0.933,87,True
 Pico Maria Isabel,Maria Isabel,10.076,False,0.0224,7.2,36,0.888,0.888,0.933,87,True
 Pico Maria Pires,Maria Pires,10.116,False,0.0223,7.2,36,0.892,0.892,0.933,87,True
-Pico Mencorne,Mencorne,11.231,False,0.0225,7.6,42,0.886,0.886,0.933,87,True
 Pico Negrão,Negrão,12.292,False,0.0221,7.6,42,0.901,0.901,0.933,87,True
 Pico Rachado Novo,Rachado Novo,10.759,False,0.0217,6.4,24,0.915,0.915,0.933,87,True
 Pico Vermelho,Vermelho,10.312,False,0.0222,7.2,36,0.895,0.895,0.933,87,True
@@ -1953,7 +1954,6 @@ Lomba da Vaca,,12.437,False,0.0215,7.2,36,0.926,0.926,0.938,88,True
 Manucoco,,20.0,True,0.0212,8.6,30,0.939,0.939,0.938,88,True
 Michimahuida,,20.0,True,0.0214,12.2,12,0.927,0.927,0.938,88,True
 Mount Werner,Werner,20.0,True,0.0209,8.4,24,0.948,0.948,0.938,88,True
-Nunatak Kerseblept,,20.0,True,0.0216,9.4,30,0.919,0.919,0.938,88,True
 Nunatak Oceana,,20.0,True,0.0212,8.8,24,0.939,0.939,0.938,88,True
 Nunatak Panagyurishte,,20.0,True,0.0211,8.8,24,0.939,0.939,0.938,88,True
 Pico Barnabé,Barnabé,12.333,False,0.0211,6.6,30,0.94,0.94,0.938,88,True
