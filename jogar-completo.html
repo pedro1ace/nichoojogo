@@ -4318,30 +4318,67 @@ function dataDeTeste() {
   const pDia = PARAMS.get("dia");
   if (!pDia) return null;
   if (/^\d{4}-\d{2}-\d{2}$/.test(pDia)) return pDia;
-  const n = Number(pDia);
-  if (Number.isInteger(n) && n >= 1 && n <= 3650) {
-    const d = new Date(LANCAMENTO + "T12:00:00Z");
-    d.setUTCDate(d.getUTCDate() + (n - 1));
-    const p = (x) => String(x).padStart(2, "0");
-    return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
-  }
-  return null;
+  return dataDoNumero(Number(pDia));
+}
+// "DIA #2" -> "2026-10-29"
+function dataDoNumero(n) {
+  if (!Number.isInteger(n) || n < 1 || n > 3650) return null;
+  const d = new Date(LANCAMENTO + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() + (n - 1));
+  const p = (x) => String(x).padStart(2, "0");
+  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
 }
 const DATA_TESTE = dataDeTeste();
 const MODO_TESTE = ALEATORIO || DATA_TESTE !== null;
 // ARQUIVOS (dias anteriores):
+// - No site, cada dia tem um endereço limpo: nichoojogo.com/dia/2 (o número do dia, como no jogo).
+//   O _middleware.js serve o jogo nesses caminhos. Aberto do computador ou em /jogo/ continua
+//   ?arquivo=2026-10-29. Links velhos com ?arquivo= seguem abrindo e trocam para o endereço limpo.
 // - ?arquivo=2026-11-01 abre um dia que já passou. Se você nunca jogou aquele dia, essa é a sua
 //   1ª viagem dele e fica guardada como a que conta (mas fora do dia não entra na curva nem no
 //   placar futuro). Se já jogou, mostra o relatório da sua 1ª viagem.
 // - ?arquivo=2026-11-01&novamente joga de novo um dia já terminado. Jogada extra: não conta,
 //   não substitui a 1ª e não é enviada para lugar nenhum.
 // O dia de hoje nunca abre pelo arquivo (nem tem "jogar novamente"): só dias anteriores.
+const CAMINHO_DO_DIA = /^\/dia\/(\d+)\/?$/;
+const NO_SITE = location.protocol !== "file:" && (location.pathname === "/" || CAMINHO_DO_DIA.test(location.pathname));
 const ARQUIVO = (() => {
-  const d = PARAMS.get("arquivo");
+  const m = NO_SITE && location.pathname.match(CAMINHO_DO_DIA);
+  const d = m ? dataDoNumero(Number(m[1])) : PARAMS.get("arquivo");
   if (MODO_TESTE || !d || !/^\d{4}-\d{2}-\d{2}$/.test(d)) return null;
   return d >= LANCAMENTO && d < hojeLocal() ? d : null;
 })();
-const NOVAMENTE = ARQUIVO !== null && PARAMS.has("novamente");
+// "Jogar novamente" chega como ?novamente, mas o endereço visível fica limpo. Para um F5 no meio
+// da jogada extra não virar o relatório, a aba lembra (sessionStorage) que era jogada extra.
+const CHAVE_NOVAMENTE = "nicho:novamente";
+const recarregou = () => {
+  try { return performance.getEntriesByType("navigation")[0].type === "reload"; } catch { return false; }
+};
+const NOVAMENTE = ARQUIVO !== null && (PARAMS.has("novamente") || (recarregou() && lerSessao(CHAVE_NOVAMENTE) === ARQUIVO));
+function lerSessao(k) {
+  try { return sessionStorage.getItem(k); } catch { return null; }
+}
+function esquecerNovamente() {
+  try { sessionStorage.removeItem(CHAVE_NOVAMENTE); } catch {}
+}
+if (NO_SITE) {
+  // em /dia/2 os links relativos (termos.html...) precisam partir da raiz
+  const base = document.createElement("base");
+  base.href = "/";
+  document.head.prepend(base);
+  const resto = new URLSearchParams(location.search);
+  resto.delete("arquivo");
+  resto.delete("novamente");
+  const extra = resto.toString() ? `?${resto}` : "";
+  if (ARQUIVO) {
+    if (NOVAMENTE) try { sessionStorage.setItem(CHAVE_NOVAMENTE, ARQUIVO); } catch {}
+    const limpo = `/dia/${numeroDoDia(ARQUIVO)}`;
+    history.replaceState(null, "", extra ? `${limpo}${extra}` : limpo);
+  } else if (location.pathname !== "/" || PARAMS.has("arquivo")) {
+    // /dia/ de hoje, do futuro ou inválido: abre o dia de hoje em "/"
+    history.replaceState(null, "", `/${extra}`);
+  }
+}
 // Link do botão "Apoie o criador" no fim do jogo. Enquanto estiver vazio, o botão
 // aparece como "EM BREVE" e não clica. Para ativar, cole o link entre as aspas.
 const LINK_APOIO = "";
@@ -4961,7 +4998,10 @@ async function iniciar() {
     estado.oficial = lerRegistro(chaveOficial(estado.data));
     estado.replay = NOVAMENTE && completa(estado.oficial);
     // "jogar novamente" num dia que você ainda não terminou: vale como a 1ª viagem mesmo
-    if (NOVAMENTE && !estado.replay) history.replaceState(null, "", urlDoArquivo(estado.data));
+    if (NOVAMENTE && !estado.replay) {
+      esquecerNovamente();
+      if (!NO_SITE) history.replaceState(null, "", urlDoArquivo(estado.data));
+    }
     // jogada extra que já tinha terminado: começa outra do zero
     if (estado.replay && completa(lerProgresso())) {
       try { localStorage.removeItem(chaveReplay(estado.data)); } catch {}
@@ -5002,6 +5042,7 @@ function mostrarInicioDoArquivo() {
   $("comecar").textContent = estado.replay ? "▼ JOGAR NOVAMENTE ▼" : `▼ JOGAR O DIA #${numeroDoDia(estado.data)} ▼`;
   const aviso = $("aviso-arquivo");
   aviso.hidden = false;
+  aviso.querySelector("a").href = paginaDeHoje();
   aviso.querySelector(".texto").textContent = estado.replay
     ? `Você já jogou este dia (${numero(estado.oficial.total)} pontos). Só a 1ª viagem conta: esta é só por diversão.`
     : "Só a 1ª viagem de cada dia conta, e ela entra na curva dos viajantes. O placar é só de quem joga no próprio dia.";
@@ -5032,10 +5073,13 @@ function mostrarMelhor() {
   }
 }
 
-// Endereço de um dia do arquivo, na mesma página (funciona em /jogar, /jogo/ e no arquivo baixado).
+// Endereço de um dia do arquivo. No site: /dia/2 (o ?novamente some da barra assim que abre).
+// Fora dele, na mesma página (funciona em /jogo/ e no arquivo baixado): ?arquivo=2026-10-29.
 function urlDoArquivo(dia, novamente = false) {
+  if (NO_SITE) return `/dia/${numeroDoDia(dia)}${novamente ? "?novamente" : ""}`;
   return `${location.pathname}?arquivo=${dia}${novamente ? "&novamente" : ""}`;
 }
+const paginaDeHoje = () => (NO_SITE ? "/" : location.pathname);
 
 // profundidade total do dia: soma da viagem de cada resposta
 const DESCIDA_INICIAL = 1400;
@@ -5475,7 +5519,10 @@ function mostrarFimDoArquivo() {
     : foiNoDia(oficial)
       ? "Sua 1ª viagem, feita no próprio dia. É a que conta."
       : "Sua 1ª viagem deste dia, feita pelo arquivo. É a que conta e entrou na curva dos viajantes. O placar é só de quem jogou no próprio dia.";
-  if (estado.replay) history.replaceState(null, "", urlDoArquivo(estado.data));
+  if (estado.replay) {
+    esquecerNovamente();
+    if (!NO_SITE) history.replaceState(null, "", urlDoArquivo(estado.data));
+  }
   const el = $("amanha");
   el.innerHTML = "";
   const novamente = document.createElement("a");
@@ -5484,7 +5531,7 @@ function mostrarFimDoArquivo() {
   novamente.textContent = "↻ JOGAR NOVAMENTE";
   const hoje = document.createElement("a");
   hoje.className = "botao-escuro botao-arquivo";
-  hoje.href = location.pathname;
+  hoje.href = paginaDeHoje();
   hoje.textContent = "IR PARA O DIA DE HOJE";
   const dica = document.createElement("span");
   dica.className = "dica-arquivo";
