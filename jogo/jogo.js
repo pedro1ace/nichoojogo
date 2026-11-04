@@ -2,7 +2,7 @@
 // Cada pergunta pede uma palavra de um tema; o jogador tem 25 segundos.
 // Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
 // Acertar a "singularidade" (a resposta secreta da pergunta; no código, "supernova") dobra os pontos.
-// Vem de outros arquivos: window.NICHO_DADOS (dados.js), Som (som.js),
+// Vem de outros arquivos: window.NICHO_DADOS (dados.js, baixado só se a API falhar), Som (som.js),
 // criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
 
 const RODADAS_POR_DIA = 7;
@@ -524,6 +524,28 @@ function prepararCategoria(cat) {
   return { ...cat, mapa };
 }
 
+// O pacote com todas as perguntas de todos os dias (jogo/dados.js, ~9 MB) não vai mais dentro da
+// página: ela ficava com 9,7 MB e o celular travava lendo tudo antes de mostrar o jogo. Agora a
+// página só pede o dia de hoje a /api/dia (~100 KB) e só baixa o pacote se a API falhar
+// (sem internet, aberto do computador, ?aleatorio ou dia que ainda não está no banco).
+// No jogar-completo.html (o arquivo único para abrir sem internet) o pacote já vem dentro.
+let promessaDadosLocais = null;
+function carregarDadosLocais() {
+  if (window.NICHO_DADOS) return Promise.resolve(window.NICHO_DADOS);
+  if (!promessaDadosLocais) {
+    promessaDadosLocais = new Promise((pronto) => {
+      const s = document.createElement("script");
+      // no site o jogo abre em "/", e jogo/index.html fica dentro da pasta jogo/
+      const naPastaJogo = /\/jogo\/[^/]*$/.test(location.pathname);
+      s.src = location.protocol === "file:" ? (naPastaJogo ? "dados.js" : "jogo/dados.js") : "/jogo/dados.js";
+      s.onload = () => pronto(window.NICHO_DADOS || null);
+      s.onerror = () => { promessaDadosLocais = null; pronto(null); };
+      document.head.append(s);
+    });
+  }
+  return promessaDadosLocais;
+}
+
 async function carregarCategoriasDoDia() {
   // 1. Tenta carregar do D1 (Cloudflare Pages Function /api/dia), muito mais leve (~150 KB)
   if (!ALEATORIO && location.protocol !== "file:") {
@@ -542,8 +564,9 @@ async function carregarCategoriasDoDia() {
       }
     } catch {}
   }
-  // 2. Fallback: se estiver offline, rodando local (file://), em ?aleatorio ou o D1 falhar, usa window.NICHO_DADOS
-  const dados = window.NICHO_DADOS;
+  // 2. Fallback: se estiver offline, rodando local (file://), em ?aleatorio ou o D1 falhar,
+  //    baixa o pacote com todos os dias (jogo/dados.js) só agora
+  const dados = await carregarDadosLocais();
   if (!dados) return null;
   const escolhidas = ALEATORIO
     ? embaralhar(dados.indice, Math.random).slice(0, RODADAS_POR_DIA)
@@ -1574,7 +1597,7 @@ function enviar() {
 // A lista vem de /api/arquivo (functions/api/arquivo.js), 30 dias por vez: só a data, o número
 // e os temas. As perguntas de um dia só são baixadas quando você abre aquele dia (/api/dia),
 // então o jogo não fica mais pesado conforme os dias se acumulam.
-// Sem internet ou aberto do computador (file://), a lista sai do window.NICHO_DADOS, se houver.
+// Sem internet ou aberto do computador (file://), a lista sai do pacote jogo/dados.js.
 const API_ARQUIVO = "/api/arquivo";
 const arquivos = { carregados: [], mais: false, carregando: false, iniciado: false };
 
@@ -1605,7 +1628,7 @@ async function carregarArquivos() {
       if (r.ok) pagina = await r.json();
     } catch {}
   }
-  if (!pagina || !Array.isArray(pagina.dias)) pagina = arquivosDoPacote(ultimo ? ultimo.dia : null);
+  if (!pagina || !Array.isArray(pagina.dias)) pagina = arquivosDoPacote(await carregarDadosLocais(), ultimo ? ultimo.dia : null);
   const hoje = hojeLocal();
   arquivos.carregados.push(...pagina.dias.filter((d) => d.dia < hoje && d.dia >= LANCAMENTO));
   arquivos.mais = !!pagina.mais;
@@ -1614,8 +1637,7 @@ async function carregarArquivos() {
 }
 
 // Plano B, sem a API: monta a lista com as categorias que já estão no navegador.
-function arquivosDoPacote(antes) {
-  const dados = window.NICHO_DADOS;
+function arquivosDoPacote(dados, antes) {
   if (!dados) return { dias: [], mais: false };
   const dias = [];
   const d = new Date((antes || hojeLocal()) + "T12:00");

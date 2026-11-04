@@ -6,7 +6,10 @@
 //   GET /api/dia?dia=2026-11-03   devolve as 7 categorias daquele dia
 //
 // Usa o binding D1 (DB), tabela 'dias' (ver banco/schema.sql).
-// O cache na CDN (Cloudflare edge) é de 1 hora para respostas válidas.
+// Cache: o resultado de cada dia fica 1 hora no cache da Cloudflare (Cache API). Assim, com
+// muita gente jogando, o banco é lido uma vez por hora por servidor da Cloudflare, e não uma
+// vez por jogador. Quem recarregar o banco (carga_dias.sql) vê a mudança em até 1 hora.
+// (O cache só funciona no domínio próprio, nichoojogo.com; nas prévias *.pages.dev ele é ignorado.)
 
 const json = (corpo, status = 200, maxAge = 3600) =>
   new Response(JSON.stringify(corpo), {
@@ -32,7 +35,7 @@ function diaValido(dia) {
   return typeof dia === "string" && /^\d{4}-\d{2}-\d{2}$/.test(dia);
 }
 
-export async function onRequestGet({ request, env }) {
+export async function onRequestGet({ request, env, waitUntil }) {
   const url = new URL(request.url);
   const dia = url.searchParams.get("dia") || hojeBrasil();
 
@@ -44,19 +47,34 @@ export async function onRequestGet({ request, env }) {
     return json({ erro: "banco D1 não configurado" }, 500, 0);
   }
 
+  // a chave do cache usa o dia já resolvido (sem ?dia= vale "hoje", que muda à meia-noite)
+  const chave = new Request(`${url.origin}/api/dia?dia=${dia}`);
+  const cache = typeof caches !== "undefined" ? caches.default : null;
+  if (cache) {
+    try {
+      const guardado = await cache.match(chave);
+      if (guardado) return guardado;
+    } catch {}
+  }
+
   try {
     const row = await env.DB.prepare("SELECT payload FROM dias WHERE dia = ?").bind(dia).first();
     if (!row || !row.payload) {
       return json({ erro: "dia não encontrado no banco", dia }, 404, 0);
     }
     // row.payload já é uma string JSON gerada pelo scripts/sincronizar_d1.py
-    return new Response(row.payload, {
+    const resposta = new Response(row.payload, {
       status: 200,
       headers: {
         "content-type": "application/json; charset=utf-8",
-        "cache-control": "public, max-age=3600, s-maxage=86400",
+        "cache-control": "public, max-age=3600, s-maxage=3600",
       },
     });
+    if (cache) {
+      const guardar = cache.put(chave, resposta.clone()).catch(() => {});
+      if (typeof waitUntil === "function") waitUntil(guardar);
+    }
+    return resposta;
   } catch (err) {
     return json({ erro: "falha ao consultar banco", detalhe: String(err) }, 500, 0);
   }
