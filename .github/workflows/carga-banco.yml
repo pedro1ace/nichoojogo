@@ -1,0 +1,54 @@
+name: 🗄️ Carga do banco (Cloudflare D1)
+
+# Sobe banco/carga_dias.sql para o banco "nicho" no Cloudflare D1 sozinho,
+# sempre que esse arquivo (ou o schema) muda no main. Substitui o comando manual
+#   npx wrangler d1 execute nicho --remote --file=banco/carga_dias.sql
+# A carga pode rodar quantas vezes for: cada dia entra com ON CONFLICT DO UPDATE.
+#
+# Precisa de dois segredos no repositório (Settings > Secrets and variables > Actions):
+#   CLOUDFLARE_API_TOKEN   token com permissão "D1: Edit"
+#   CLOUDFLARE_ACCOUNT_ID  o ID da conta da Cloudflare
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'banco/carga_dias.sql'
+      - 'banco/schema.sql'
+  workflow_dispatch: # botão "Run workflow" para rodar na mão, se precisar
+
+permissions:
+  contents: read
+
+# Nunca duas cargas ao mesmo tempo; se vier outra, ela espera a atual terminar.
+concurrency:
+  group: carga-d1
+  cancel-in-progress: false
+
+jobs:
+  carga:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Conferir os segredos da Cloudflare
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::Faltam os segredos CLOUDFLARE_API_TOKEN e/ou CLOUDFLARE_ACCOUNT_ID (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Criar tabelas que faltarem (schema.sql)
+        run: npx --yes wrangler@4 d1 execute nicho --remote --file=banco/schema.sql --yes
+
+      - name: Carregar os dias (carga_dias.sql)
+        run: npx --yes wrangler@4 d1 execute nicho --remote --file=banco/carga_dias.sql --yes

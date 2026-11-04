@@ -275,6 +275,11 @@ Configuração no Cloudflare (uma vez só):
    (em Production e, se quiser testar, em Preview).
 4. Faça um novo deploy (ou reenvie o último) para a função pegar o banco.
 
+Carga automática dos dias: a action [`carga-banco.yml`](.github/workflows/carga-banco.yml) sobe
+`banco/carga_dias.sql` para o D1 sempre que ele muda no `main`. Ela precisa de dois segredos do repositório
+(**Settings → Secrets and variables → Actions**): `CLOUDFLARE_API_TOKEN` (token com permissão
+**Account → D1 → Edit**) e `CLOUDFLARE_ACCOUNT_ID`.
+
 Para testar no computador: `npx wrangler pages dev . --d1 DB=nicho-local`, depois crie a tabela com
 `banco/schema.sql` no banco local.
 
