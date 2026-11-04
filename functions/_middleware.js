@@ -12,7 +12,8 @@
 // 3. O jogo abre direto em nichoojogo.com/, sem página de "redirecionando".
 //    O arquivo continua sendo jogar.html (é o que os scripts geram); aqui ele é
 //    servido em "/". Links antigos para /jogar levam um 301 para "/" (o Pages já
-//    manda /jogar.html para /jogar sozinho).
+//    manda /jogar.html para /jogar sozinho). Os dias do arquivo também abrem o jogo,
+//    com endereço limpo: /dia/2 (quem lê o número é o jogo.js).
 //
 // Os arquivos do jogo (jogo/, licencas/, favicons) nem passam por aqui: estão no
 // "exclude" do _routes.json, para não gastar uma execução por imagem ou script.
@@ -29,7 +30,8 @@ const PUBLICOS = new Set([
   "/sitemap.xml",
 ]);
 
-const publico = (caminho) => PUBLICOS.has(caminho) || caminho.startsWith("/api/");
+const DIA_DO_ARQUIVO = /^\/dia\/\d+\/?$/;
+const publico = (caminho) => PUBLICOS.has(caminho) || DIA_DO_ARQUIVO.test(caminho) || caminho.startsWith("/api/");
 
 const ANTIGOS_DO_JOGO = new Set(["/jogar", "/jogar.html", "/index", "/index.html"]);
 
@@ -48,7 +50,7 @@ export async function onRequest({ request, next, env }) {
     url.port = "";
     return Response.redirect(url.toString(), 301);
   }
-  if (url.pathname === "/") {
+  if (url.pathname === "/" || DIA_DO_ARQUIVO.test(url.pathname)) {
     const jogo = new URL(url);
     jogo.pathname = "/jogar";
     return env.ASSETS.fetch(new Request(jogo, request));

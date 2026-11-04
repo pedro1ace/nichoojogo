@@ -6,10 +6,13 @@
   dos dias que já passaram (o dia de hoje nunca aparece), com a sua situação em cada um. Os temas só
   aparecem depois que você termina o dia; para quem não jogou, são surpresa:
   `NÃO JOGADO`, `PELA METADE` ou `312 PTS · NO DIA` / `312 PTS · PELO ARQUIVO`.
-- **JOGAR** abre o dia em `/jogar?arquivo=2026-11-01`. Se você nunca jogou aquele dia, essa é a sua
-  1ª viagem dele.
+- **JOGAR** abre o dia em `nichoojogo.com/dia/5` (o número do dia, como aparece no jogo). Se você
+  nunca jogou aquele dia, essa é a sua 1ª viagem dele. Links velhos (`/?arquivo=2026-11-01`) continuam
+  abrindo e trocam sozinhos para o endereço limpo. Fora do site (arquivo aberto do computador ou
+  `/jogo/`) o endereço segue sendo `?arquivo=2026-11-01`.
 - Dia já terminado: **VER RELATÓRIO** (a sua 1ª viagem) e **↻ JOGAR NOVAMENTE**
-  (`?arquivo=2026-11-01&novamente`). A jogada extra mostra em amarelo que não conta e qual é a
+  (`/dia/5?novamente`; o `?novamente` some da barra assim que a página abre, e um F5 no meio da
+  jogada extra continua nela). A jogada extra mostra em amarelo que não conta e qual é a
   pontuação que vale.
 - O dia de hoje não tem "jogar novamente".
 - **★ SEU RECORDE** no menu e no fim: a maior pontuação entre as suas 1ªs viagens (jogadas extras
