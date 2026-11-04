@@ -4395,6 +4395,83 @@ function tolerancia(tamanho) {
   return 3;
 }
 
+// ---------- formas da mesma resposta ----------
+// Mesma regra de scripts/casar.py (chave_solta). Se mudar aqui, mude lá.
+// Plural, "de/do/e/com" no meio e a palavra do tema na frente não mudam a resposta:
+// "Leões" = Leão, "arco flecha" = "Arco e flecha", "constelação de Órion" = Órion.
+const CONECTORES = new Set(["de", "do", "da", "dos", "das", "d", "e", "com", "ao", "aos", "a", "o", "os", "as"]);
+// Categorias em que a forma conta (5 letras do Termo): aí só vale a grafia exata.
+const SEM_FORMAS = new Set(["palavras-do-termo"]);
+
+// Palavras do tema que o jogador põe antes da resposta (só são tiradas do que ele digitou).
+const ENFEITES = {
+  "luas-do-sistema-solar": ["lua", "satelite natural", "satelite"],
+  "planetas-e-planetas-anoes": ["planeta anao", "planeta"],
+  "corpos-do-sistema-solar": ["planeta anao", "planeta", "cometa", "asteroide"],
+  constelacoes: ["constelacao"],
+  estrelas: ["estrela"],
+  "estados-do-brasil": ["estado"],
+  "capitais-do-brasil": ["cidade", "capital"],
+  "capitais-do-mundo": ["cidade", "capital"],
+  "cidades-do-brasil": ["cidade", "municipio"],
+  "cidades-do-mundo": ["cidade"],
+  paises: ["pais", "republica", "reino"],
+  "paises-acima-do-equador": ["pais", "republica", "reino"],
+  idiomas: ["lingua", "idioma", "dialeto"],
+  "racas-de-cachorro": ["cachorro", "cao", "raca"],
+  queijos: ["queijo"],
+  "times-de-futebol": ["time", "clube", "esporte clube"],
+  "jogos-de-videogame": ["jogo"],
+  brincadeiras: ["jogo", "brincadeira"],
+  "missoes-espaciais": ["missao", "programa"],
+  "ritmos-musicais": ["ritmo", "estilo"],
+  "elementos-quimicos": ["elemento"],
+  "marcas-de-carro": ["marca", "carro"],
+};
+
+// Palavra do tema que fica no começo do nome da lista e o jogador pula ("Queijo minas" -> "minas").
+const PREFIXOS_DA_LISTA = {
+  queijos: ["queijo"],
+  "racas-de-cachorro": ["cao", "raca"],
+  "missoes-espaciais": ["programa", "missao"],
+  brincadeiras: ["jogo"],
+  "jogos-de-videogame": ["jogo"],
+};
+
+// Tira o plural (e o "e" final, dos dois lados): "leoes" = "leao", "flores" = "flor", "tigres" = "tigre".
+function radical(p) {
+  if (p.length <= 3) return p;
+  if (/(oes|aes|aos)$/.test(p)) p = p.slice(0, -3) + "ao";
+  else if (p.length > 4 && /(ais|eis|ois|uis)$/.test(p)) p = p.slice(0, -2) + "l";
+  else if (p.endsWith("ns")) p = p.slice(0, -2) + "m";
+  else if (p.endsWith("s")) p = p.slice(0, -1);
+  if (p.length > 3 && p.endsWith("e")) p = p.slice(0, -1);
+  return p;
+}
+
+function palavrasSoltas(texto) {
+  const todas = normalizar(texto.replaceAll("&", " e ")).split(" ").filter(Boolean);
+  const sem = todas.filter((p) => !CONECTORES.has(p));
+  return sem.length ? sem : todas;
+}
+
+function tirarDaFrente(palavras, enfeites) {
+  for (const e of enfeites || []) {
+    const partes = e.split(" ");
+    if (palavras.length > partes.length && partes.every((p, i) => palavras[i] === p)) return palavras.slice(partes.length);
+  }
+  return null;
+}
+
+// As chaves "soltas" de um texto: a forma inteira e, se houver, a forma sem a palavra do tema.
+function chavesSoltas(texto, enfeites) {
+  const palavras = palavrasSoltas(texto);
+  const chaves = [palavras.map(radical).join("")];
+  const sem = tirarDaFrente(palavras, enfeites);
+  if (sem) chaves.push(sem.map(radical).join(""));
+  return chaves;
+}
+
 // Quem erra a digitação quase nunca erra a 1ª letra. Se a 1ª letra muda, é outra
 // palavra ("Pateta" não é "Cametá"). Só aceita a troca das duas primeiras ("rbasil").
 function mesmoComeco(a, b) {
@@ -4423,6 +4500,13 @@ function buscar(cat, texto) {
   const alvo = compactar(texto);
   if (!alvo) return null;
   if (cat.mapa.has(alvo)) return { ...cat.mapa.get(alvo), exato: true };
+  // mesma resposta com outra forma (plural, "de", palavra do tema): vale direto, sem perguntar
+  if (cat.soltas) {
+    for (const chave of chavesSoltas(texto, ENFEITES[cat.id])) {
+      const item = cat.soltas.get(chave);
+      if (item) return { ...item, exato: true };
+    }
+  }
   const limite = tolerancia(alvo.length);
   if (!limite) return null;
   let melhor = null;
@@ -4772,7 +4856,24 @@ function prepararCategoria(cat) {
   for (const r of cat.respostas) {
     for (const nome of [r.resposta, ...r.apelidos]) mapa.set(compactar(nome), { resposta: r, nome });
   }
-  return { ...cat, mapa };
+  // chave solta -> resposta; null quando a mesma chave serve para duas respostas (aí não adivinha)
+  const soltas = new Map();
+  const guardar = (chave, item) => {
+    if (!chave) return;
+    const ja = soltas.get(chave);
+    if (ja === undefined) soltas.set(chave, item);
+    else if (ja && ja.resposta !== item.resposta) soltas.set(chave, null);
+  };
+  for (const r of cat.respostas) {
+    for (const nome of [r.resposta, ...r.apelidos]) {
+      const item = { resposta: r, nome: r.resposta };
+      const palavras = palavrasSoltas(nome);
+      guardar(palavras.map(radical).join(""), item);
+      const sem = tirarDaFrente(palavras, PREFIXOS_DA_LISTA[cat.id]);
+      if (sem && sem.join("").length >= 4) guardar(sem.map(radical).join(""), item);
+    }
+  }
+  return { ...cat, mapa, soltas: SEM_FORMAS.has(cat.id) ? null : soltas };
 }
 
 // O pacote com todas as perguntas de todos os dias (jogo/dados.js, ~9 MB) não vai mais dentro da
@@ -5000,6 +5101,7 @@ function iniciarRodada() {
   $("sugestao").hidden = true;
   avisar("", "");
   $("palpite").value = "";
+  estado.tentadas = [];
   mostrarPergunta(true);
   Som.pergunta(); // avisa que chegou pergunta nova
 
@@ -5190,7 +5292,12 @@ function palpitar(evento) {
 
   if (!busca) {
     if (texto.length >= 3) enviarResposta(cat, { recusada: texto });
-    avisar(`“${texto}” não está no mapa estelar. Tente outra.`, "erro");
+    // a resposta pode ser boa e só faltar na lista: diz que ela foi anotada (vai para a revisão)
+    const anota = texto.length >= 3 && vaiAnotar(cat);
+    if (anota && estado.tentadas && !estado.tentadas.includes(texto)) estado.tentadas.push(texto);
+    avisar(anota
+      ? `“${texto}” ainda não está no nosso mapa. Anotamos para revisar! Tente outra.`
+      : `“${texto}” não está no mapa estelar. Tente outra.`, "erro");
     $("palpite").classList.remove("tremendo");
     void $("palpite").offsetWidth; // reinicia a animação
     $("palpite").classList.add("tremendo");
@@ -5238,10 +5345,20 @@ function registrar(cat, resposta, pontos, supernova, percentil, espertalhao = fa
   salvarProgresso();
 }
 
+// No tempo esgotado, quem tentou respostas que a lista não tinha fica sabendo que elas vão ser revisadas.
+function fraseDoTempo() {
+  const tentadas = (estado.tentadas || []).slice(-3).map((t) => `“${t}”`);
+  if (!tentadas.length) return "O relógio zerou. Esta fica sem pontos.";
+  const lista = tentadas.length > 1 ? `${tentadas.slice(0, -1).join(", ")} e ${tentadas.at(-1)}` : tentadas[0];
+  return tentadas.length > 1
+    ? `O relógio zerou. ${lista} ainda não estavam na lista, mas ficaram anotadas: se valerem, entram para os próximos jogadores.`
+    : `O relógio zerou. ${lista} ainda não estava na lista, mas ficou anotada: se valer, entra para os próximos jogadores.`;
+}
+
 function mostrarResultado(cat, resposta, pontos, supernova, espertalhao) {
   const faixa = resposta
     ? faixaDe(pontos, supernova, espertalhao)
-    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: "O relógio zerou. Esta fica sem pontos." };
+    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: fraseDoTempo() };
   const card = $("resultado");
   card.style.setProperty("--cor-faixa", faixa.cor);
   $("icone").src = cena.icones[faixa.id];
@@ -5417,9 +5534,13 @@ function montarGrafico() {
 const API_RESPOSTAS = "/api/respostas";
 
 // Cada navegador conta uma resposta aceita por categoria por dia; recusadas contam a cada tentativa.
+// viagens pelo arquivo não são enviadas: a contagem é de quem joga no dia
+function vaiAnotar(cat) {
+  return !(location.protocol === "file:" || MODO_TESTE || ARQUIVO || !cat.id);
+}
+
 function enviarResposta(cat, corpo) {
-  // viagens pelo arquivo não são enviadas: a contagem é de quem joga no dia
-  if (location.protocol === "file:" || MODO_TESTE || ARQUIVO || !cat.id) return;
+  if (!vaiAnotar(cat)) return;
   const chave = `nicho:resposta:${estado.data}:${cat.id}`;
   if (corpo.resposta) {
     if (lerChave(chave)) return;
