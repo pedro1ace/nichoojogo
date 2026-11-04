@@ -34,8 +34,11 @@ Como funciona hoje no protótipo:
 
 ## Como jogar
 
-Baixe o arquivo [`jogar.html`](jogar.html) e abra com dois cliques. Ele tem o jogo inteiro e funciona sem
-instalar nada, nem internet (as fontes pixeladas vão dentro do arquivo).
+Baixe o arquivo [`jogar-completo.html`](jogar-completo.html) e abra com dois cliques. Ele tem o jogo inteiro
+e funciona sem instalar nada, nem internet (as perguntas e as fontes pixeladas vão dentro do arquivo).
+
+O `jogar.html` é a versão do site: leve (~0,4 MB), sem as perguntas dentro. Ele pede só o dia de hoje
+a `/api/dia` e, se a API falhar, baixa `jogo/dados.js` na hora.
 
 Com o projeto todo baixado, abrir `index.html` ou `jogo/index.html` com dois cliques também funciona.
 
@@ -83,7 +86,8 @@ functions/api/pontuacao.js curva dos viajantes (Cloudflare Pages Function + D1)
 functions/api/respostas.js contagem anônima das respostas do dia (aceitas e recusadas)
 functions/api/arquivo.js   lista dos dias anteriores para a aba ARQUIVOS (só data e temas, 30 por vez)
 banco/schema.sql           tabela do D1 da curva
-jogar.html                 o jogo num arquivo só (gerado, não edite à mão)
+jogar.html                 o jogo do site num arquivo só, sem as perguntas (gerado, não edite à mão)
+jogar-completo.html        o mesmo com todas as perguntas dentro, para abrir sem internet (gerado)
 jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
   dados.js                 perguntas e pesos (gerado pelo pontuar.py)
   cena.js                  cena em pixel art: fundo, Terra, planetas, foguete, mascote, textos
