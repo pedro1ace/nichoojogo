@@ -110,7 +110,7 @@ def main() -> None:
 
     if "--executar" in sys.argv:
         print("Executando carga no Cloudflare D1 via wrangler...")
-        cmd = ["npx", "wrangler", "d1", "execute", "DB", f"--file={SQL_OUT}"]
+        cmd = ["npx", "wrangler", "d1", "execute", "nicho", "--remote", f"--file={SQL_OUT}"]  # "nicho" é o nome do banco; DB é só o nome do binding no Pages
         try:
             res = subprocess.run(cmd, check=True, capture_output=True, text=True)
             print(res.stdout)
