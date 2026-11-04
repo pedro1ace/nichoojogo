@@ -91,7 +91,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1101 |
+| 1 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1165 |
 | 2 | Constelações | Cite uma das 88 constelações oficiais | 88 |
 | 3 | Raças de cachorro | Cite uma raça de cachorro | 1049 |
 | 4 | Capitais do mundo | Cite a capital de um país | 205 |
