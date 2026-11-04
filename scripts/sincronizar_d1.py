@@ -19,6 +19,9 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RAIZ / "scripts"))
+import singularidades  # noqa: E402
+
 PESOS = RAIZ / "dados" / "pesos"
 ORDEM = RAIZ / "dados" / "ordem.txt"
 SQL_OUT = RAIZ / "banco" / "carga_dias.sql"
@@ -34,6 +37,8 @@ def enxugar(cat: dict) -> dict:
         "titulo": cat.get("titulo"),
         "pergunta": cat.get("pergunta"),
         "supernova": cat.get("supernova"),
+        # descrição da singularidade (dados/singularidades.txt), mostrada no cartão do resultado
+        "curiosidade": singularidades.descricao(cat.get("id")),
         "respostas": [
             {k: r[k] for k in CAMPOS_RESPOSTA if k in r}
             for r in cat.get("respostas", [])
@@ -62,6 +67,9 @@ def gerar_dias() -> dict[str, dict]:
         return categorias_cache[cid]
 
     total_dias = len(fila) // RODADAS_POR_DIA
+    # toda singularidade dos dias precisa de descrição (dados/singularidades.txt)
+    singularidades.conferir({cid: json.loads((PESOS / f"{cid}.json").read_text(encoding="utf-8"))
+                             for cid in fila[:total_dias * RODADAS_POR_DIA] if (PESOS / f"{cid}.json").exists()})
     dias_dict = {}
 
     for d in range(total_dias):

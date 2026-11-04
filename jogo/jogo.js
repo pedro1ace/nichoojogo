@@ -896,9 +896,10 @@ function mostrarResultado(cat, resposta, pontos, supernova, espertalhao) {
   $("linha-pontos").innerHTML = resposta
     ? `<b>+${pontos} PONTOS</b> · viajou ${numero(Math.round(viagem(pontos) * AL_POR_U))} AL`
     : "+0 PONTOS";
-  // algumas respostas têm frase própria (dados/frases.txt), no lugar da frase da faixa (vale também para a singularidade)
+  // a singularidade mostra a sua descrição (dados/singularidades.txt); as outras respostas podem ter
+  // frase própria (dados/frases.txt) no lugar da frase da faixa
   const propria = resposta && (cat.respostas || []).find((r) => r.resposta === resposta)?.frase;
-  $("frase").textContent = propria || faixa.frase;
+  $("frase").textContent = (supernova && cat.curiosidade) || propria || faixa.frase;
 
   // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
   const nivel = !resposta ? 0 : supernova ? 4 : ["obvia", "comum", "incomum", "rara", "lendaria"].indexOf(faixa.id);
@@ -1355,81 +1356,6 @@ document.addEventListener("keydown", (e) => {
   if (aberta) { fecharBanco(aberta); aberta.focus(); }
 });
 
-// Uma curiosidade para cada resposta escondida (supernova).
-const CURIOSIDADE_SUPERNOVA = {
-  "capitais-do-brasil": "A capital planejada mais nova do Brasil, fundada em 1989.",
-  constelacoes: "A única constelação com nome de uma pessoa real: a rainha Berenice II, do Egito.",
-  "estados-do-brasil": "O estado mais ao norte: lá fica o Monte Caburaí, o ponto mais setentrional do país.",
-  estrelas: "No telescópio ela vira duas: uma dourada e uma azul, lado a lado.",
-  "luas-do-sistema-solar": "Lua de Saturno que pode esconder um oceano debaixo do gelo.",
-  paises: "Tem só uns 20 km de litoral, todos na cidadezinha de Neum.",
-  "planetas-e-planetas-anoes": "Foi a descoberta dela, em 2005, que tirou Plutão da lista de planetas.",
-  "agencias-espaciais": "Criada em 1994, lança foguetes de Alcântara, no Maranhão, bem pertinho da linha do Equador.",
-  "bagagem-do-astronauta": "Em 1971, o astronauta Alan Shepard levou um taco escondido e deu tacadas de golfe na Lua.",
-  "coisas-com-casca": "A casquinha da ferida é o curativo do próprio corpo, feito de sangue seco.",
-  "coisas-que-brilham-no-ceu": "A luz do vaga-lume é fria: quase toda a energia vira luz, quase nada vira calor.",
-  "palavras-astro-e-cosmo": "Os navegadores portugueses mediam a altura das estrelas com ele para saber onde estavam no mar.",
-  "animais-do-brasil": "O menor tamanduá do mundo: cabe na palma da mão e vive no alto das árvores.",
-  astronautas: "Astronauta francês que voou numa Soyuz russa em 1992 e num ônibus espacial da NASA em 1999.",
-  "cidades-do-brasil": "A cidade mais ao sul do Brasil: um lado da avenida principal já é o Uruguai.",
-  "coisas-com-dentes": "O caracol tem milhares de dentinhos numa espécie de língua-lixa, a rádula.",
-  "comidas-tipicas": "Caldo nordestino com farinha e ovo, servido bem quente.",
-  "corpos-do-sistema-solar": "A primeira lua descoberta em volta de um asteroide (o Ida), vista pela sonda Galileo.",
-  "defesas-dos-animais": "O lagarto-de-chifres espirra sangue dos olhos para assustar quem quer comê-lo.",
-  dinossauros: "Um dos maiores predadores já achados no Brasil, desenterrado em Mato Grosso.",
-  "esportes-olimpicos": "Foi esporte olímpico de verdade, de 1900 a 1920.",
-  exoplanetas: "Um planeta gigante que gira em volta de uma estrela que está virando gigante vermelha.",
-  "festa-junina": "Bolo de mandioca ralada, típico do Centro-Oeste.",
-  "filmes-tom-hanks": "O primeiro filme do Tom Hanks, um terror de 1980 em que ele aparece pouquinho.",
-  frutas: "Frutinha amarela da Mata Atlântica, coberta de uma penugem fininha.",
-  "girias-brasileiras": "quero te parabenizar por ser uma pessoa subestimativamente qualificada, medíocrática, retombante, cabriocárica e inoxidável, que merece respeito tecnológico! Mas, acima de tudo, estrogonoficamente sensível!",
-  "instrumentos-musicais": "Tocado com arco de violino, o serrote faz um som que parece de fantasma.",
-  "marcas-de-carro": "Considerado o primeiro carro fabricado no Brasil, em 1956, em Santa Bárbara d'Oeste.",
-  "missoes-espaciais": "Faz parte do Gaganyaan, o programa da Índia para levar astronautas ao espaço com foguete próprio.",
-  "paises-acima-do-equador": "Pegadinha: Roraima, o Amapá e pedaços do Amazonas e do Pará ficam acima do Equador.",
-  "palavras-em-io": "O bugio é o macaco do ronco: dá para ouvir o grito dele a quilômetros.",
-  "partes-do-corpo": "É o espacinho liso entre as sobrancelhas, logo acima do nariz.",
-  "plantas-de-casa": "Uma samambaia que cresce presa no tronco das árvores, sem terra nenhuma.",
-  "poetas-brasileiros": "Poeta simbolista baiano, redescoberto décadas depois de morrer pelos poetas concretos.",
-  "protecao-do-sol": "Elefantes e porcos rolam na lama para proteger a pele do sol.",
-  "racas-de-cachorro": "Raça brasileira dos pampas gaúchos, criada para caçar veados.",
-  "times-de-futebol": "O time pernambucano famoso por ser chamado de \"pior time do mundo\".",
-  "elementos-quimicos": "O elemento mais pesado já criado: só uns poucos átomos existiram, por menos de um milissegundo.",
-  "aves": "Papagaio gordo da Nova Zelândia que não voa, é noturno e faz um \"bum\" grave para chamar a fêmea.",
-  "bebidas": "Bebida fermentada de milho ou de casca de abacaxi, das festas do Nordeste.",
-  "brincadeiras": "Brinquedo de uma bola furada presa por um cordão a um bastão: o desafio é encaixar a bola no bastão.",
-  "capitais-do-mundo": "A capital de Palau, uma das menores capitais do mundo, com poucas centenas de moradores.",
-  "coisas-amarelas": "Elemento químico em pó amarelo vivo que, quando queima, solta cheiro de ovo podre.",
-  "coisas-da-praia": "Bichinho que se enterra na areia molhada quando a onda volta, deixando só um furinho.",
-  "coisas-que-voam": "As sementes dessa plantinha voam com paraquedas e podem viajar quilômetros pelo vento.",
-  "coisas-redondas": "Pãozinho redondo, branco e fininho que é distribuído na missa.",
-  "cores": "O primeiro pigmento sintético moderno, descoberto por acaso em Berlim por volta de 1706.",
-  "criaturas-do-folclore": "Monstro do sertão nordestino que mora no fim do mundo: tem um olho só no meio da testa e pés redondos.",
-  "deuses-e-deusas": "Deusa inuíte do fundo do mar: as focas e as baleias nasceram dos dedos dela.",
-  "desenhos-animados": "Clássico da Hanna-Barbera de 1967, com o rinoceronte laser Tundro e as gosmas Gloop e Gleep.",
-  "doces-e-sobremesas": "Doce português de amêndoa e gema que, apesar do nome, não leva toucinho nenhum.",
-  "idiomas": "A \"língua geral\" da Amazônia, criada a partir do tupi e ainda falada no Rio Negro.",
-  "ilhas": "A \"Ilha das Cobras\" do litoral paulista, tão cheia de jararacas que a visita é proibida.",
-  "insetos": "Inseto com uma \"cauda\" curvada que parece ferrão de escorpião, mas é totalmente inofensiva.",
-  "jogadores-da-selecao": "O primeiro grande craque do futebol brasileiro: fez o gol do título sul-americano de 1919.",
-  "jogadores-de-futebol": "Única pessoa no futebol (homem ou mulher) a jogar sete Copas do Mundo e sete Olimpíadas.",
-  "jogos-de-videogame": "Jogo japonês em que você rola uma bola que vai grudando tudo pelo caminho, até ficar do tamanho de uma estrela.",
-  "legumes-e-verduras": "Folha de um cacto rica em proteína, chamada em Minas de \"carne de pobre\".",
-  "material-escolar": "Papel grosso que chupava o excesso de tinta das canetas-tinteiro, antes das esferográficas.",
-  "musicos-brasileiros": "O \"Nego Dito\" da Vanguarda Paulista, que fazia uma música que não cabia em gênero nenhum.",
-  "objetos-da-cozinha": "Fatiador de lâmina afiadíssima que corta legumes em fatias finíssimas como papel.",
-  "ossos-do-corpo": "A primeira vértebra da coluna humana. O atlas segura o (seu) mundo!",
-  "palavras-do-termo": "um salve para a duzzi!",
-  "pedras-preciosas": "Pedra que muda de cor: é verde na luz do dia e fica vermelha na luz de lâmpada.",
-  "peixes": "Eleito o animal mais feio do mundo, mas só fica assim fora d'água: lá no fundo do mar tem cara de peixe normal.",
-  "profissoes": "Quem cuidava do farol, deixando a luz acesa a noite toda para guiar os navios.",
-  "queijos": "Queijo feito com leite de búfala na Ilha de Marajó, no Pará.",
-  "rios": "Rio africano que nunca chega ao mar: some num delta no meio do deserto do Kalahari.",
-  "ritmos-musicais": "Dança e ritmo de Mato Grosso, tocado com viola de cocho, ganzá e mocho.",
-  "super-herois-e-viloes": "Heroína da Marvel que, nos quadrinhos, já venceu o Thanos e o Doutor Destino com a ajuda de esquilos.",
-  "temperos-e-especiarias": "A \"baunilha da Amazônia\": semente perfumada que dá cheiro de baunilha a doces e sorvetes.",
-};
-
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
 function montarBanco(cat, sua) {
   const banco = document.createElement("div");
@@ -1489,7 +1415,7 @@ function montarBanco(cat, sua) {
       if (it.sn) {
         const nota = document.createElement("span");
         nota.className = "nota";
-        nota.textContent = `★ Singularidade. ${it.frase || CURIOSIDADE_SUPERNOVA[cat.id] || "A resposta escondida desta pergunta."}`;
+        nota.textContent = `★ Singularidade. ${cat.curiosidade || it.frase || "A resposta escondida desta pergunta."}`;
         li.append(nota);
       } else if (it.frase) {
         // frase própria da resposta (dados/frases.txt), a mesma do cartão de resultado
