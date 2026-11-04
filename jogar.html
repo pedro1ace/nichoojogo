@@ -5401,7 +5401,9 @@ function recusar(cat, texto, ia) {
 // o relógio para. Se ela aprovar, a resposta vale PONTOS_IA até a revisão diária dar a nota certa.
 // Se recusar, ficar em dúvida, demorar ou estiver fora do ar, segue como antes: recusa e anota.
 const API_JUIZ = "/api/juiz";
-const PONTOS_IA = 40; // faixa "RARO": meio da régua (8 a 90)
+const PONTOS_IA = 40; // quando o juiz não diz os pontos: faixa "RARO"
+// o juiz estima a fama e manda os pontos (de 8 até o topo do Raro, 58); fora disso, PONTOS_IA
+const pontosDoJuiz = (p) => (Number.isInteger(p) && p >= 8 && p <= 58 ? p : PONTOS_IA);
 const ESPERA_JUIZ = 5000;
 // O jogador não fica sabendo do juiz: os avisos da "central" aparecem só nas prévias (*.pages.dev)
 // e no computador, para testar. No jogo de verdade, a resposta só demora um instante a mais.
@@ -5449,9 +5451,9 @@ async function consultarJuiz(cat, texto) {
     const naLista = buscar(cat, nome);
     const achada = naLista?.exato
       ? naLista.resposta
-      : { resposta: nome[0].toUpperCase() + nome.slice(1), apelidos: [], pontos: PONTOS_IA };
+      : { resposta: nome[0].toUpperCase() + nome.slice(1), apelidos: [], pontos: pontosDoJuiz(resposta.pontos) };
     pousar(cat, achada, MOSTRAR_JUIZ && !naLista?.exato
-      ? "Não estava no mapa, mas a central aprovou! Vale a nota padrão até a revisão de hoje."
+      ? "Não estava no mapa, mas a central aprovou! A nota é uma estimativa até a revisão de hoje."
       : undefined);
     return;
   }

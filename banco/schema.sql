@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS vereditos (
   texto     TEXT NOT NULL,  -- normalizado, igual a recusadas.texto
   veredito  TEXT NOT NULL,
   nome      TEXT,
+  pontos    INTEGER,  -- pontos na hora, pela fama que a IA estimou (no máximo o topo do Raro)
   modelo    TEXT NOT NULL,
   criado_em TEXT NOT NULL DEFAULT (datetime('now')),
   PRIMARY KEY (categoria, texto)
