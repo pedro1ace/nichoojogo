@@ -95,8 +95,8 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Constelações | Cite uma das 88 constelações oficiais | 88 |
 | 3 | Raças de cachorro | Cite uma raça de cachorro | 1049 |
 | 4 | Capitais do mundo | Cite a capital de um país | 205 |
-| 5 | Times de futebol do Brasil | Cite um time de futebol brasileiro | 1210 |
-| 6 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2429 |
+| 5 | Times de futebol do Brasil | Cite um time de futebol brasileiro | 1211 |
+| 6 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2430 |
 | 7 | Bebidas com gás | Cite uma bebida com gás | 1301 |
 
 ## Dia 9 · qui 05/11/2026
