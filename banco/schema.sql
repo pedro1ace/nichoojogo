@@ -29,10 +29,13 @@ CREATE TABLE IF NOT EXISTS recusadas (
 
 -- Vereditos da IA sobre as recusadas (functions/api/juiz.js). Cada resposta é julgada uma vez só,
 -- por categoria. veredito: aceita (valeu na hora), recusada ou duvida (as duas vão para a revisão).
-CREATE TABLE IF NOT EXISTS juizo (
+-- nome: como a IA escreve a resposta aceita no padrão ("sao paulo fc" -> "São Paulo"), para as
+-- formas diferentes da mesma resposta caírem num nome só.
+CREATE TABLE IF NOT EXISTS vereditos (
   categoria TEXT NOT NULL,
   texto     TEXT NOT NULL,  -- normalizado, igual a recusadas.texto
   veredito  TEXT NOT NULL,
+  nome      TEXT,
   modelo    TEXT NOT NULL,
   criado_em TEXT NOT NULL DEFAULT (datetime('now')),
   PRIMARY KEY (categoria, texto)

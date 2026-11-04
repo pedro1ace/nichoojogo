@@ -1130,7 +1130,7 @@ function recusar(cat, texto, ia) {
   // a resposta pode ser boa e só faltar na lista: diz que ela foi anotada (vai para a revisão)
   const anota = texto.length >= 3 && vaiAnotar(cat);
   if (anota && estado.tentadas && !estado.tentadas.includes(texto)) estado.tentadas.push(texto);
-  avisar(ia === "recusada"
+  avisar(ia === "recusada" && MOSTRAR_JUIZ
     ? `A central não reconheceu “${texto}”. Anotamos para revisar! Tente outra.`
     : anota
       ? `“${texto}” ainda não está no nosso mapa. Anotamos para revisar! Tente outra.`
@@ -1149,6 +1149,9 @@ function recusar(cat, texto, ia) {
 const API_JUIZ = "/api/juiz";
 const PONTOS_IA = 40; // faixa "RARO": meio da régua (8 a 90)
 const ESPERA_JUIZ = 5000;
+// O jogador não fica sabendo do juiz: os avisos da "central" aparecem só nas prévias (*.pages.dev)
+// e no computador, para testar. No jogo de verdade, a resposta só demora um instante a mais.
+const MOSTRAR_JUIZ = location.hostname.endsWith(".pages.dev") || location.hostname === "localhost";
 const CONSULTAS_POR_RODADA = 3; // depois disso, recusa direto (ninguém fica gastando a IA no Enter)
 
 async function consultarJuiz(cat, texto) {
@@ -1164,7 +1167,7 @@ async function consultarJuiz(cat, texto) {
   const rodada = estado.rodada;
   $("palpite").disabled = true;
   $("sugestao").hidden = true;
-  avisar(`📡 Consultando a central sobre “${texto}”…`, "aviso consultando");
+  avisar(MOSTRAR_JUIZ ? `📡 Consultando a central sobre “${texto}”…` : "", "aviso consultando");
 
   let resposta = ja || { veredito: "indisponivel" };
   if (!ja) {
@@ -1188,9 +1191,14 @@ async function consultarJuiz(cat, texto) {
 
   if (resposta.veredito === "aceita") {
     const nome = resposta.nome || texto;
-    const achada = { resposta: nome[0].toUpperCase() + nome.slice(1), apelidos: [], pontos: PONTOS_IA };
-    Som.sugestao();
-    pousar(cat, achada, "Não estava no mapa, mas a central aprovou! Vale a nota padrão até a revisão de hoje.");
+    // o nome no padrão pode ser uma resposta que a lista já tem: aí vale ela, com os pontos dela
+    const naLista = buscar(cat, nome);
+    const achada = naLista?.exato
+      ? naLista.resposta
+      : { resposta: nome[0].toUpperCase() + nome.slice(1), apelidos: [], pontos: PONTOS_IA };
+    pousar(cat, achada, MOSTRAR_JUIZ && !naLista?.exato
+      ? "Não estava no mapa, mas a central aprovou! Vale a nota padrão até a revisão de hoje."
+      : undefined);
     return;
   }
   rodarRelogio(restaMs);

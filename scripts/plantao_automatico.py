@@ -107,6 +107,8 @@ def executar_plantao() -> dict:
             "n": n,
             "como": como,
             "na_lista": resposta_alvo,
+            "ia": r.get("ia") or "",
+            "ia_nome": r.get("ia_nome") or "",
         })
 
         # Adição automática segura:
@@ -152,7 +154,7 @@ def executar_plantao() -> dict:
     # Grava CSV de auditoria
     csv_path = REVISAO / f"recusadas-{hoje}.csv"
     with csv_path.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=["categoria", "texto", "n", "como", "na_lista"])
+        w = csv.DictWriter(f, fieldnames=["categoria", "texto", "n", "como", "na_lista", "ia", "ia_nome"])
         w.writeheader()
         w.writerows(sorted(linhas_csv, key=lambda x: -int(x["n"])))
     print(f"CSV de recusadas gravado em: {csv_path.name}")
@@ -187,6 +189,28 @@ def executar_plantao() -> dict:
         f"- **Status de conferência da fila futura**: {'✅ 0 problemas' if erros_conferir else '⚠️ Atenção necessária'}",
         "",
     ]
+
+    # Aprovadas pela IA (functions/api/juiz.js): cada nome no padrão vira uma candidata a resposta nova,
+    # e as formas que os jogadores digitaram viram os apelidos dela. Não entram sozinhas: alguém confere.
+    aprovadas: dict[tuple[str, str], dict] = {}
+    for l in linhas_csv:
+        if l["ia"] != "aceita" or l["na_lista"]:
+            continue
+        nome = l["ia_nome"] or l["texto"]
+        g = aprovadas.setdefault((l["categoria"], nome), {"formas": set(), "vezes": 0})
+        if normalizar(l["texto"]) != normalizar(nome):
+            g["formas"].add(l["texto"])
+        g["vezes"] += int(l["n"])
+    if aprovadas:
+        resumo_md.extend([
+            "### 🤖 Aprovadas pela IA (conferir e colar em dados/categorias/<categoria>.txt)",
+            "| Categoria | Linha sugerida (resposta \\| apelidos) | Vezes |",
+            "|---|---|---|",
+        ])
+        for (cid, nome), g in sorted(aprovadas.items(), key=lambda x: -x[1]["vezes"]):
+            linha = " | ".join([nome, *sorted(g["formas"])]).replace("|", "\\|")
+            resumo_md.append(f"| `{cid}` | {linha} | {g['vezes']}x |")
+        resumo_md.append("")
 
     if apelidos_adicionados:
         resumo_md.extend([
