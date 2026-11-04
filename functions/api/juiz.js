@@ -109,6 +109,21 @@ function instrucoes(cat) {
   ].join(" ");
 }
 
+// As tabelas também estão em banco/schema.sql (a carga do banco cria no merge). Criar aqui também
+// deixa a prévia do PR funcionar antes disso. Roda uma vez por servidor da Cloudflare.
+let tabelasProntas = false;
+async function criarTabelas(db) {
+  if (tabelasProntas) return;
+  await db.batch([
+    db.prepare(
+      "CREATE TABLE IF NOT EXISTS juizo (categoria TEXT NOT NULL, texto TEXT NOT NULL, veredito TEXT NOT NULL, " +
+        "modelo TEXT NOT NULL, criado_em TEXT NOT NULL DEFAULT (datetime('now')), PRIMARY KEY (categoria, texto))",
+    ),
+    db.prepare("CREATE TABLE IF NOT EXISTS juiz_uso (dia TEXT NOT NULL PRIMARY KEY, n INTEGER NOT NULL DEFAULT 0)"),
+  ]);
+  tabelasProntas = true;
+}
+
 export async function onRequestPost({ request, env, waitUntil }) {
   let corpo;
   try {
@@ -123,6 +138,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const nome = limpar(texto);
   const chave = normalizar(nome);
   if (chave.length < 3 || !env.DB) return json({ veredito: "indisponivel" });
+  await criarTabelas(env.DB);
 
   // 1. já foi julgada? (vale para qualquer dia: a pergunta de uma categoria não muda)
   const guardado = await env.DB.prepare("SELECT veredito FROM juizo WHERE categoria = ? AND texto = ?")
