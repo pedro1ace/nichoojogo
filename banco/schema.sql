@@ -48,6 +48,12 @@ CREATE TABLE IF NOT EXISTS juiz_uso (
   n   INTEGER NOT NULL DEFAULT 0
 );
 
+-- Limpeza dos testes do juiz (04/11, pedido do pedrinho): a tabela "juizo" era da primeira versão
+-- e não é mais usada; os vereditos gravados antes do juiz entrar no ar (20:41 UTC) vieram dos testes
+-- na prévia. As duas linhas não fazem nada nas próximas cargas.
+DROP TABLE IF EXISTS juizo;
+DELETE FROM vereditos WHERE criado_em < '2026-11-04 20:41:00';
+
 -- Pacote das 7 perguntas de cada dia (functions/api/dia.js).
 -- Guarda o payload JSON enxuto de cada dia (~150 KB compactado) para que o jogador
 -- baixe apenas o dia atual em vez dos 9.7 MB do jogo todo.
