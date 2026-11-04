@@ -895,6 +895,8 @@ function iniciarRodada() {
   avisar("", "");
   $("palpite").value = "";
   estado.tentadas = [];
+  estado.consultas = 0;
+  estado.anotadas = new Set();
   mostrarPergunta(true);
   Som.pergunta(); // avisa que chegou pergunta nova
 
@@ -918,12 +920,17 @@ function iniciarRodada() {
 function abrirRelogio() {
   Som.contagem(true);
   cena.relogio();
+  rodarRelogio(SEGUNDOS * 1000);
+}
+
+// Liga (ou religa, depois de consultar o juiz) o relógio com "restaMs" de tempo.
+function rodarRelogio(restaMs) {
   estado.ativa = true;
-  estado.fimDoTempo = performance.now() + SEGUNDOS * 1000;
+  estado.fimDoTempo = performance.now() + restaMs;
   $("formulario").hidden = false;
   $("relogio").hidden = false;
   $("palpite").focus();
-  let ultimoSegundo = SEGUNDOS + 1;
+  let ultimoSegundo = restaMs >= SEGUNDOS * 1000 ? SEGUNDOS + 1 : Math.ceil(restaMs / 1000);
   const atualizar = () => {
     const resta = Math.max(0, estado.fimDoTempo - performance.now()) / 1000;
     $("barra-tempo").style.width = `${(resta / SEGUNDOS) * 100}%`;
@@ -1084,18 +1091,15 @@ function palpitar(evento) {
   if (busca && !busca.exato && opcoes.semCorrecao) busca = null;
 
   if (!busca) {
-    if (texto.length >= 3) enviarResposta(cat, { recusada: texto });
-    // a resposta pode ser boa e só faltar na lista: diz que ela foi anotada (vai para a revisão)
-    const anota = texto.length >= 3 && vaiAnotar(cat);
-    if (anota && estado.tentadas && !estado.tentadas.includes(texto)) estado.tentadas.push(texto);
-    avisar(anota
-      ? `“${texto}” ainda não está no nosso mapa. Anotamos para revisar! Tente outra.`
-      : `“${texto}” não está no mapa estelar. Tente outra.`, "erro");
-    $("palpite").classList.remove("tremendo");
-    void $("palpite").offsetWidth; // reinicia a animação
-    $("palpite").classList.add("tremendo");
-    $("palpite").select();
-    Som.erro();
+    // a mesma recusada conta uma vez por pergunta: assim "2 ou mais" no plantão são 2 jogadores, não 2 Enter
+    const chave = compactar(texto);
+    estado.anotadas ||= new Set();
+    if (texto.length >= 3 && !estado.anotadas.has(chave)) {
+      estado.anotadas.add(chave);
+      enviarResposta(cat, { recusada: texto });
+    }
+    if (texto.length >= 3 && vaiAnotar(cat)) consultarJuiz(cat, texto);
+    else recusar(cat, texto);
     return;
   }
   if (!busca.exato) {
@@ -1106,8 +1110,13 @@ function palpitar(evento) {
     return;
   }
 
+  pousar(cat, busca.resposta);
+}
+
+// A resposta valeu (da lista ou aprovada pelo juiz): o tardígrado desce e aparece o resultado.
+// "frase" troca a frase da faixa no cartão do resultado.
+function pousar(cat, achada, frase) {
   pararRelogio();
-  const achada = busca.resposta;
   const supernova = achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
   const espertalhao = !supernova && !!achada.espertalhao;
@@ -1120,7 +1129,89 @@ function palpitar(evento) {
   // nas raras, a festa da chegada aparece sozinha antes do resultado; no espertalhão, o
   // tardigradozinho atravessa a caixa e cai antes do resultado
   const pausa = supernova ? 1000 : espertalhao ? 2800 : pontos >= 60 ? 900 : pontos >= 35 ? 600 : 200;
-  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova, espertalhao), duracaoQueda(pontos, supernova) + pausa);
+  setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova, espertalhao, frase), duracaoQueda(pontos, supernova) + pausa);
+}
+
+// A lista não tem: avisa, treme o campo e deixa tentar outra. "ia" é o que o juiz disse, se disse.
+function recusar(cat, texto, ia) {
+  // a resposta pode ser boa e só faltar na lista: diz que ela foi anotada (vai para a revisão)
+  const anota = texto.length >= 3 && vaiAnotar(cat);
+  if (anota && estado.tentadas && !estado.tentadas.includes(texto)) estado.tentadas.push(texto);
+  avisar(ia === "recusada" && MOSTRAR_JUIZ
+    ? `A central não reconheceu “${texto}”. Anotamos para revisar! Tente outra.`
+    : anota
+      ? `“${texto}” ainda não está no nosso mapa. Anotamos para revisar! Tente outra.`
+      : `“${texto}” não está no mapa estelar. Tente outra.`, "erro");
+  $("palpite").classList.remove("tremendo");
+  void $("palpite").offsetWidth; // reinicia a animação
+  $("palpite").classList.add("tremendo");
+  $("palpite").select();
+  Som.erro();
+}
+
+// ---------- juiz das recusadas ----------
+// O que a lista não tem vai para uma IA (functions/api/juiz.js), que diz se vale. Enquanto ela pensa,
+// o relógio para. Se ela aprovar, a resposta vale PONTOS_IA até a revisão diária dar a nota certa.
+// Se recusar, ficar em dúvida, demorar ou estiver fora do ar, segue como antes: recusa e anota.
+const API_JUIZ = "/api/juiz";
+const PONTOS_IA = 40; // quando o juiz não diz os pontos: faixa "RARO"
+// o juiz estima a fama e manda os pontos (de 8 até o topo do Raro, 58); fora disso, PONTOS_IA
+const pontosDoJuiz = (p) => (Number.isInteger(p) && p >= 8 && p <= 58 ? p : PONTOS_IA);
+const ESPERA_JUIZ = 5000;
+// O jogador não fica sabendo do juiz: os avisos da "central" aparecem só nas prévias (*.pages.dev)
+// e no computador, para testar. No jogo de verdade, a resposta só demora um instante a mais.
+const MOSTRAR_JUIZ = location.hostname.endsWith(".pages.dev") || location.hostname === "localhost";
+const CONSULTAS_POR_RODADA = 3; // depois disso, recusa direto (ninguém fica gastando a IA no Enter)
+
+async function consultarJuiz(cat, texto) {
+  const chave = `${cat.id}:${compactar(texto)}`;
+  estado.vereditos ||= {};
+  const ja = estado.vereditos[chave];
+  if (ja && ja.veredito !== "aceita") return recusar(cat, texto, ja.veredito);
+  if (!ja && (estado.consultas || 0) >= CONSULTAS_POR_RODADA) return recusar(cat, texto);
+  if (!ja) estado.consultas = (estado.consultas || 0) + 1;
+
+  const restaMs = Math.max(0, estado.fimDoTempo - performance.now());
+  pararRelogio();
+  const rodada = estado.rodada;
+  $("palpite").disabled = true;
+  $("sugestao").hidden = true;
+  avisar(MOSTRAR_JUIZ ? `📡 Consultando a central sobre “${texto}”…` : "", "aviso consultando");
+
+  let resposta = ja || { veredito: "indisponivel" };
+  if (!ja) {
+    const parar = new AbortController();
+    const prazo = setTimeout(() => parar.abort(), ESPERA_JUIZ);
+    try {
+      const r = await fetch(API_JUIZ, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ dia: estado.data, categoria: cat.id, texto }),
+        signal: parar.signal,
+      });
+      if (r.ok) resposta = await r.json();
+    } catch {}
+    clearTimeout(prazo);
+    if (resposta.veredito !== "indisponivel") estado.vereditos[chave] = resposta;
+    else if (resposta.motivo) console.info("juiz indisponível:", resposta.motivo);
+  }
+  $("palpite").disabled = false;
+  if (estado.rodada !== rodada) return;
+
+  if (resposta.veredito === "aceita") {
+    const nome = resposta.nome || texto;
+    // o nome no padrão pode ser uma resposta que a lista já tem: aí vale ela, com os pontos dela
+    const naLista = buscar(cat, nome);
+    const achada = naLista?.exato
+      ? naLista.resposta
+      : { resposta: nome[0].toUpperCase() + nome.slice(1), apelidos: [], pontos: pontosDoJuiz(resposta.pontos) };
+    pousar(cat, achada, MOSTRAR_JUIZ && !naLista?.exato
+      ? "Não estava no mapa, mas a central aprovou! A nota é uma estimativa até a revisão de hoje."
+      : undefined);
+    return;
+  }
+  rodarRelogio(restaMs);
+  recusar(cat, texto, resposta.veredito);
 }
 
 function tempoEsgotado() {
@@ -1148,7 +1239,7 @@ function fraseDoTempo() {
     : `O relógio zerou. ${lista} ainda não estava na lista, mas ficou anotada: se valer, entra para os próximos jogadores.`;
 }
 
-function mostrarResultado(cat, resposta, pontos, supernova, espertalhao) {
+function mostrarResultado(cat, resposta, pontos, supernova, espertalhao, fraseExtra) {
   const faixa = resposta
     ? faixaDe(pontos, supernova, espertalhao)
     : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: fraseDoTempo() };
@@ -1163,7 +1254,7 @@ function mostrarResultado(cat, resposta, pontos, supernova, espertalhao) {
   // a singularidade mostra a sua descrição (dados/singularidades.txt); as outras respostas podem ter
   // frase própria (dados/frases.txt) no lugar da frase da faixa
   const propria = resposta && (cat.respostas || []).find((r) => r.resposta === resposta)?.frase;
-  $("frase").textContent = (supernova && cat.curiosidade) || propria || faixa.frase;
+  $("frase").textContent = (supernova && cat.curiosidade) || fraseExtra || propria || faixa.frase;
 
   // nome da faixa entra com um "pop" (maior nas raras) e os pontos sobem contando
   const nivel = !resposta ? 0 : supernova ? 4 : ["obvia", "comum", "incomum", "rara", "lendaria"].indexOf(faixa.id);
@@ -1604,7 +1695,7 @@ function montarRespostas() {
       if (abrir) lista.querySelectorAll(":scope > li.aberta").forEach(fecharBanco);
       li.classList.toggle("aberta", abrir);
       li.setAttribute("aria-expanded", String(abrir));
-      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta));
+      if (abrir && !li.querySelector(".banco")) li.append(montarBanco(estado.categorias[i], h.resposta, h.pontos));
     };
     li.addEventListener("click", alternar);
     li.addEventListener("keydown", (e) => {
@@ -1628,15 +1719,19 @@ document.addEventListener("keydown", (e) => {
 });
 
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
-function montarBanco(cat, sua) {
+function montarBanco(cat, sua, suaPontos = 0) {
   const banco = document.createElement("div");
   banco.className = "banco";
-  const itens = cat.respostas
-    .map((r) => {
-      const sn = r.resposta === cat.supernova;
-      const pontos = sn ? r.pontos * 2 : r.pontos;
-      return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn, frase: r.frase };
-    })
+  const itens = cat.respostas.map((r) => {
+    const sn = r.resposta === cat.supernova;
+    const pontos = sn ? r.pontos * 2 : r.pontos;
+    return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn, frase: r.frase };
+  });
+  // resposta aprovada pelo juiz: ainda não está na lista do dia, mas aparece aqui com a sua
+  if (sua && !itens.some((it) => it.nome === sua)) {
+    itens.push({ nome: sua, pontos: suaPontos, faixa: faixaDe(suaPontos, false, false), sn: false });
+  }
+  itens
     .sort((a, b) => b.sn - a.sn || b.pontos - a.pontos || a.nome.localeCompare(b.nome, "pt"));
   const filtros = [{ id: "todas", nome: "Todas", cor: "#eef0ff" }, SUPERNOVA, ...FAIXAS, ESPERTALHAO];
   let ativo = "todas";

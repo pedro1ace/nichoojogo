@@ -4,11 +4,12 @@
 Etapas:
   1. Baixa as respostas recusadas do dia no ar de https://nichoojogo.com/api/respostas?recusadas=1
   2. Salva o CSV de auditoria em dados/sinais/revisao/recusadas-<dia>.csv
-  3. Identifica erros de digitação óbvios (n >= 2, similaridade >= 0.88) e adiciona apelidos seguros
+  3. Identifica erros de digitação óbvios (n >= 2, similaridade >= 0.88) e adiciona apelidos seguros,
+     e põe na lista as respostas que a IA aprovou (functions/api/juiz.js), menos as de dados/bloqueadas.js
   4. Executa fama.py nas categorias modificadas
   5. Sincroniza carga do D1 (banco/carga_dias.sql) e empacota o jogo (jogar.html)
   6. Confere integridade dos próximos dias (fama.py --conferir)
-  7. Gera PLANTAO_RESUMO.md para a descrição do Pull Request automático no GitHub
+  7. Gera PLANTAO_RESUMO.md, o relatório do dia (vai para o resumo da execução no GitHub Actions)
 """
 from __future__ import annotations
 
@@ -17,6 +18,7 @@ import datetime as dt
 import difflib
 import json
 import os
+import re
 import subprocess
 import sys
 import urllib.request
@@ -77,12 +79,94 @@ def avaliar_recusada(texto: str, cat: dict) -> tuple[str, str, float]:
     return "", "", 0.0
 
 
+def ler_bloqueadas() -> list[str]:
+    """dados/bloqueadas.js: as palavras ofensivas ou bizarras que nunca entram sozinhas."""
+    texto = (RAIZ / "dados" / "bloqueadas.js").read_text(encoding="utf-8")
+    lista = re.sub(r",\s*\]", "]", texto[texto.index("["): texto.rindex("]") + 1])
+    return [normalizar(p) for p in json.loads(lista) if normalizar(p)]
+
+
+def bloqueada(texto: str, lista: list[str]) -> bool:
+    t = f" {normalizar(texto)} "
+    return any(f" {p} " in t for p in lista)
+
+
+MINIMO_APROVADA = 1  # basta 1 jogador: quem voltar pelo arquivo encontra a mesma resposta valendo
+
+
+def adicionar_aprovadas(linhas_csv: list[dict], cache_cat: dict, modificadas: set[str]) -> tuple[list, list]:
+    grupos: dict[tuple[str, str], dict] = {}
+    for l in linhas_csv:
+        if l["ia"] != "aceita" or l["na_lista"]:
+            continue
+        nome = (l["ia_nome"] or l["texto"]).strip()
+        g = grupos.setdefault((l["categoria"], nome), {"formas": [], "vezes": 0})
+        if normalizar(l["texto"]) != normalizar(nome) and l["texto"] not in g["formas"]:
+            g["formas"].append(l["texto"])
+        g["vezes"] += int(l["n"])
+
+    adicionadas, sugeridas = [], []
+    lista_negra = ler_bloqueadas()
+    for (cid, nome), g in sorted(grupos.items(), key=lambda x: -x[1]["vezes"]):
+        item = {"categoria": cid, "nome": nome, "formas": sorted(g["formas"]), "vezes": g["vezes"]}
+        cat = cache_cat.get(cid)
+        if bloqueada(nome, lista_negra) or any(bloqueada(f, lista_negra) for f in item["formas"]):
+            sugeridas.append({**item, "situacao": "bloqueada (dados/bloqueadas.js), não entra"})
+            continue
+        if g["vezes"] < MINIMO_APROVADA or cat is None:
+            sugeridas.append({**item, "situacao": "sugestão (1 pessoa)"})
+            continue
+        # de quem é cada chave na lista, para não criar resposta repetida nem roubar apelido de outra
+        dono: dict[str, str] = {}
+        for resp in cat["respostas"]:
+            for n in [resp["resposta"], *resp["apelidos"]]:
+                for k in fama.chaves(n, cid):
+                    dono.setdefault(k, resp["resposta"])
+        ja = {dono[k] for k in fama.chaves(nome, cid) if k in dono}
+        if len(ja) > 1:
+            sugeridas.append({**item, "situacao": "sugestão (parece mais de uma resposta da lista)"})
+            continue
+        alvo = next(iter(ja)) if ja else None
+        formas = [f for f in item["formas"] if all(dono.get(k, alvo) == alvo for k in fama.chaves(f, cid))]
+        arq = CATEGORIAS / f"{cid}.txt"
+        linhas = arq.read_text(encoding="utf-8").splitlines()
+        if alvo:
+            # o nome no padrão já está na lista: as formas digitadas viram apelidos dela
+            if not formas:
+                continue
+            for i, linha in enumerate(linhas):
+                if not linha.startswith("#") and linha.split("|")[0].strip() == alvo:
+                    linhas[i] = " | ".join([linha.rstrip(), *formas])
+                    break
+            situacao = f"apelidos de {alvo}"
+            for r in cat["respostas"]:
+                if r["resposta"] == alvo:
+                    r["apelidos"] = [*r["apelidos"], *formas]
+        else:
+            linhas.append(" | ".join([nome, *formas]))
+            situacao = "resposta nova"
+            cat["respostas"].append({"resposta": nome, "apelidos": formas})
+        arq.write_text("\n".join(linhas) + "\n", encoding="utf-8")
+        modificadas.add(cid)
+        adicionadas.append({**item, "formas": formas, "situacao": situacao})
+    return adicionadas, sugeridas
+
+
 def executar_plantao() -> dict:
     hoje = dt.datetime.now(dt.timezone(dt.timedelta(hours=-3))).date().isoformat()
     REVISAO.mkdir(parents=True, exist_ok=True)
 
     print(f"=== Iniciando Plantão Diário Automático: {hoje} ===")
-    recusadas = baixar_recusadas(hoje)
+    # o plantão roda às 20h: as recusadas de ontem depois das 20h entram junto com as de hoje
+    ontem = (dt.date.fromisoformat(hoje) - dt.timedelta(days=1)).isoformat()
+    juntas: dict[tuple[str, str], dict] = {}
+    for r in baixar_recusadas(ontem) + baixar_recusadas(hoje):
+        chave = (r.get("categoria", ""), r.get("texto", ""))
+        if chave in juntas:
+            juntas[chave]["n"] = int(juntas[chave].get("n", 1)) + int(r.get("n", 1))
+        else:
+            juntas[chave] = dict(r)
+    recusadas = list(juntas.values())
     print(f"Total de respostas recusadas recebidas: {len(recusadas)}")
 
     linhas_csv = []
@@ -107,6 +191,8 @@ def executar_plantao() -> dict:
             "n": n,
             "como": como,
             "na_lista": resposta_alvo,
+            "ia": r.get("ia") or "",
+            "ia_nome": r.get("ia_nome") or "",
         })
 
         # Adição automática segura:
@@ -149,10 +235,14 @@ def executar_plantao() -> dict:
                         "vezes": n
                     })
 
+    # Aprovadas pela IA (functions/api/juiz.js): o nome no padrão vira resposta nova e as formas que
+    # os jogadores digitaram viram os apelidos dela. Entram sozinhas, menos as de dados/bloqueadas.js.
+    aprovadas_ia, sugeridas_ia = adicionar_aprovadas(linhas_csv, cache_cat, categorias_modificadas)
+
     # Grava CSV de auditoria
     csv_path = REVISAO / f"recusadas-{hoje}.csv"
     with csv_path.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=["categoria", "texto", "n", "como", "na_lista"])
+        w = csv.DictWriter(f, fieldnames=["categoria", "texto", "n", "como", "na_lista", "ia", "ia_nome"])
         w.writeheader()
         w.writerows(sorted(linhas_csv, key=lambda x: -int(x["n"])))
     print(f"CSV de recusadas gravado em: {csv_path.name}")
@@ -187,6 +277,19 @@ def executar_plantao() -> dict:
         f"- **Status de conferência da fila futura**: {'✅ 0 problemas' if erros_conferir else '⚠️ Atenção necessária'}",
         "",
     ]
+
+    if aprovadas_ia or sugeridas_ia:
+        resumo_md.extend([
+            "### 🤖 Aprovadas pela IA",
+            "Entraram sozinhas na lista (as formas digitadas viram apelidos), menos as que caem em dados/bloqueadas.js.",
+            "",
+            "| Categoria | Linha (resposta \\| apelidos) | Vezes | Situação |",
+            "|---|---|---|---|",
+        ])
+        for a in aprovadas_ia + sugeridas_ia:
+            linha = " | ".join([a["nome"], *a["formas"]]).replace("|", "\\|")
+            resumo_md.append(f"| `{a['categoria']}` | {linha} | {a['vezes']}x | {a['situacao']} |")
+        resumo_md.append("")
 
     if apelidos_adicionados:
         resumo_md.extend([

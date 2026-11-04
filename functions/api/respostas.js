@@ -9,6 +9,7 @@
 //
 //   GET  /api/respostas?dia=2026-10-30                        contagem das categorias do dia
 //   GET  /api/respostas?dia=2026-10-30&recusadas=1            o que foi recusado no dia
+//        (com "ia": o veredito do juiz, functions/api/juiz.js, ou null; e "ia_nome": o nome no padrão)
 //   POST /api/respostas {dia, categoria, resposta}            soma uma resposta aceita
 //   POST /api/respostas {dia, categoria, recusada}            soma uma resposta recusada
 //
@@ -67,7 +68,9 @@ export async function onRequestGet({ request, env }) {
   if (!diaValido(dia)) return json({ erro: "dia inválido" }, 400);
   if (url.searchParams.has("recusadas")) {
     const { results } = await env.DB.prepare(
-      "SELECT categoria, texto, n FROM recusadas WHERE dia = ? ORDER BY n DESC LIMIT 2000",
+      "SELECT r.categoria, r.texto, r.n, j.veredito AS ia, j.nome AS ia_nome FROM recusadas r " +
+        "LEFT JOIN vereditos j ON j.categoria = r.categoria AND j.texto = r.texto " +
+        "WHERE r.dia = ? ORDER BY r.n DESC LIMIT 2000",
     )
       .bind(dia)
       .all();

@@ -27,6 +27,27 @@ CREATE TABLE IF NOT EXISTS recusadas (
   PRIMARY KEY (dia, categoria, texto)
 );
 
+-- Vereditos da IA sobre as recusadas (functions/api/juiz.js). Cada resposta é julgada uma vez só,
+-- por categoria. veredito: aceita (valeu na hora), recusada ou duvida (as duas vão para a revisão).
+-- nome: como a IA escreve a resposta aceita no padrão ("sao paulo fc" -> "São Paulo"), para as
+-- formas diferentes da mesma resposta caírem num nome só.
+CREATE TABLE IF NOT EXISTS vereditos (
+  categoria TEXT NOT NULL,
+  texto     TEXT NOT NULL,  -- normalizado, igual a recusadas.texto
+  veredito  TEXT NOT NULL,
+  nome      TEXT,
+  pontos    INTEGER,  -- pontos na hora, pela fama que a IA estimou (no máximo o topo do Raro)
+  modelo    TEXT NOT NULL,
+  criado_em TEXT NOT NULL DEFAULT (datetime('now')),
+  PRIMARY KEY (categoria, texto)
+);
+
+-- Quantas vezes a IA foi chamada em cada dia (UTC, que é quando o limite grátis da Cloudflare zera).
+CREATE TABLE IF NOT EXISTS juiz_uso (
+  dia TEXT    NOT NULL PRIMARY KEY,
+  n   INTEGER NOT NULL DEFAULT 0
+);
+
 -- Pacote das 7 perguntas de cada dia (functions/api/dia.js).
 -- Guarda o payload JSON enxuto de cada dia (~150 KB compactado) para que o jogador
 -- baixe apenas o dia atual em vez dos 9.7 MB do jogo todo.
