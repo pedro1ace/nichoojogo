@@ -80,6 +80,24 @@ def gerar_dias() -> dict[str, dict]:
     return dias_dict
 
 
+LIMITE_COMANDO = 90_000  # bytes por pedaço; o D1 aceita até 100 KB por comando
+
+
+def fatiar(texto: str) -> list[str]:
+    """Corta o texto em pedaços já escapados para SQL ('' no lugar de '), cada um com até LIMITE_COMANDO bytes."""
+    pedacos, atual, tamanho = [], [], 0
+    for ch in texto:
+        esc = "''" if ch == "'" else ch
+        n = len(esc.encode("utf-8"))
+        if tamanho + n > LIMITE_COMANDO:
+            pedacos.append("".join(atual))
+            atual, tamanho = [], 0
+        atual.append(esc)
+        tamanho += n
+    pedacos.append("".join(atual))
+    return pedacos
+
+
 def exportar_sql(dias: dict[str, dict]) -> None:
     linhas_sql = [
         "-- Carga dos dias no Cloudflare D1",
@@ -88,12 +106,15 @@ def exportar_sql(dias: dict[str, dict]) -> None:
     ]
     for dia_str, payload in dias.items():
         payload_json = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-        # Escapar aspas simples para SQL
-        payload_esc = payload_json.replace("'", "''")
+        # O D1 recusa comando SQL com mais de 100 KB (SQLITE_TOOBIG) e um dia passa de 1 MB.
+        # Então o payload entra em pedaços: o INSERT com o primeiro, e cada UPDATE emenda o próximo.
+        pedacos = fatiar(payload_json)
         linhas_sql.append(
-            f"INSERT INTO dias (dia, payload) VALUES ('{dia_str}', '{payload_esc}') "
+            f"INSERT INTO dias (dia, payload) VALUES ('{dia_str}', '{pedacos[0]}') "
             f"ON CONFLICT(dia) DO UPDATE SET payload = excluded.payload, criado_em = datetime('now');"
         )
+        for pedaco in pedacos[1:]:
+            linhas_sql.append(f"UPDATE dias SET payload = payload || '{pedaco}' WHERE dia = '{dia_str}';")
         titulos = json.dumps([c["titulo"] for c in payload["categorias"]], ensure_ascii=False).replace("'", "''")
         linhas_sql.append(
             f"INSERT INTO resumo_dias (dia, numero, titulos) VALUES ('{dia_str}', {payload['numero']}, '{titulos}') "
