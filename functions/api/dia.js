@@ -6,9 +6,11 @@
 //   GET /api/dia?dia=2026-11-03   devolve as 7 categorias daquele dia
 //
 // Usa o binding D1 (DB), tabela 'dias' (ver banco/schema.sql).
-// Cache: o resultado de cada dia fica 1 hora no cache da Cloudflare (Cache API). Assim, com
-// muita gente jogando, o banco é lido uma vez por hora por servidor da Cloudflare, e não uma
-// vez por jogador. Quem recarregar o banco (carga_dias.sql) vê a mudança em até 1 hora.
+// Cache: o pacote de cada dia fica no cache da Cloudflare (Cache API), para o banco não ler o
+// payload grande a cada jogador. A chave do cache leva a hora da última carga daquele dia
+// (dias.criado_em, que a carga_dias.sql atualiza): cada carga nova cai numa chave nova e aparece
+// na hora. Antes a chave era só o dia, e um pacote velho ficou preso no cache por horas depois
+// das cargas de 04-05/11 (as singularidades novas do Dia 9 não apareciam no jogo).
 // (O cache só funciona no domínio próprio, nichoojogo.com; nas prévias *.pages.dev ele é ignorado.)
 
 const json = (corpo, status = 200, maxAge = 3600) =>
@@ -47,27 +49,32 @@ export async function onRequestGet({ request, env, waitUntil }) {
     return json({ erro: "banco D1 não configurado" }, 500, 0);
   }
 
-  // a chave do cache usa o dia já resolvido (sem ?dia= vale "hoje", que muda à meia-noite)
-  const chave = new Request(`${url.origin}/api/dia?dia=${dia}`);
-  const cache = typeof caches !== "undefined" ? caches.default : null;
-  if (cache) {
-    try {
-      const guardado = await cache.match(chave);
-      if (guardado) return guardado;
-    } catch {}
-  }
-
   try {
+    // leitura leve: só a hora da última carga do dia, para montar a chave do cache
+    const versao = await env.DB.prepare("SELECT criado_em FROM dias WHERE dia = ?").bind(dia).first();
+    if (!versao) {
+      return json({ erro: "dia não encontrado no banco", dia }, 404, 0);
+    }
+    const chave = new Request(`${url.origin}/api/dia?dia=${dia}&v=${encodeURIComponent(versao.criado_em || "")}`);
+    const cache = typeof caches !== "undefined" ? caches.default : null;
+    if (cache) {
+      try {
+        const guardado = await cache.match(chave);
+        if (guardado) return guardado;
+      } catch {}
+    }
+
     const row = await env.DB.prepare("SELECT payload FROM dias WHERE dia = ?").bind(dia).first();
     if (!row || !row.payload) {
       return json({ erro: "dia não encontrado no banco", dia }, 404, 0);
     }
     // row.payload já é uma string JSON gerada pelo scripts/sincronizar_d1.py
+    // navegador guarda 5 minutos; o cache da Cloudflare (chave com a versão) guarda 1 hora
     const resposta = new Response(row.payload, {
       status: 200,
       headers: {
         "content-type": "application/json; charset=utf-8",
-        "cache-control": "public, max-age=3600, s-maxage=3600",
+        "cache-control": "public, max-age=300, s-maxage=3600",
       },
     });
     if (cache) {
