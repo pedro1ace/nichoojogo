@@ -12,6 +12,7 @@ Gera:
     jogar-completo.html  o mesmo, COM todas as perguntas dentro (~10 MB). Dá para mandar
                     esse arquivo para alguém e abrir direto, sem internet. O site não serve ele.
 """
+import hashlib
 import json
 import re
 import sys
@@ -180,6 +181,12 @@ def main() -> None:
     html = html.replace('<link rel="stylesheet" href="fonte-acentos.css">', "<style>\n" + acentos + "</style>")
     fontes = (JOGO / "fontes.css").read_text(encoding="utf-8")
     html = html.replace('<link rel="stylesheet" href="fontes.css">', "<style>\n" + fontes + "</style>")
+    # o endereço do dados.js leva um resumo do conteúdo: lista nova, endereço novo, e o navegador
+    # não fica com o pacote velho guardado (ele guarda /jogo/dados.js por 4 horas)
+    versao = hashlib.sha1(dados_js.encode("utf-8")).hexdigest()[:10]
+    marca_versao = 'const VERSAO_DADOS = "dev";'
+    assert marca_versao in scripts["jogo.js"], f"faltou {marca_versao} em jogo/jogo.js"
+    scripts["jogo.js"] = scripts["jogo.js"].replace(marca_versao, f'const VERSAO_DADOS = "{versao}";')
     for nome, codigo in scripts.items():
         marca = f'<script src="{nome}"></script>'
         assert marca in html, f"faltou {marca} em jogo/index.html"

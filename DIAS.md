@@ -109,7 +109,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Material escolar | Cite um item de material escolar | 1037 |
 | 5 | Coisas redondas | Cite algo que é redondo | 1267 |
 | 6 | Coisas com casca | Cite algo que tem casca | 1059 |
-| 7 | Marcas de carro | Cite uma marca de carro | 3786 |
+| 7 | Marcas de carro | Cite uma marca de carro | 3785 |
 
 ## Dia 10 · sex 06/11/2026
 

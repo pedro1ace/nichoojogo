@@ -4919,6 +4919,7 @@ function prepararCategoria(cat) {
 // página só pede o dia de hoje a /api/dia (~100 KB) e só baixa o pacote se a API falhar
 // (sem internet, aberto do computador, ?aleatorio ou dia que ainda não está no banco).
 // No jogar-completo.html (o arquivo único para abrir sem internet) o pacote já vem dentro.
+const VERSAO_DADOS = "3911e951fd"; // o montar_jogo.py troca pelo resumo do dados.js no jogar.html
 let promessaDadosLocais = null;
 function carregarDadosLocais() {
   if (window.NICHO_DADOS) return Promise.resolve(window.NICHO_DADOS);
@@ -4927,7 +4928,9 @@ function carregarDadosLocais() {
       const s = document.createElement("script");
       // no site o jogo abre em "/", e jogo/index.html fica dentro da pasta jogo/
       const naPastaJogo = /\/jogo\/[^/]*$/.test(location.pathname);
-      s.src = location.protocol === "file:" ? (naPastaJogo ? "dados.js" : "jogo/dados.js") : "/jogo/dados.js";
+      // VERSAO_DADOS muda a cada montar_jogo.py: o navegador guarda /jogo/dados.js por 4 horas, e sem
+      // ela uma correção na lista só aparecia para quem já tinha jogado depois que esse prazo vencesse
+      s.src = location.protocol === "file:" ? (naPastaJogo ? "dados.js" : "jogo/dados.js") : `/jogo/dados.js?v=${VERSAO_DADOS}`;
       s.onload = () => pronto(window.NICHO_DADOS || null);
       s.onerror = () => { promessaDadosLocais = null; pronto(null); };
       document.head.append(s);
@@ -5452,9 +5455,11 @@ async function consultarJuiz(cat, texto) {
 
   if (resposta.veredito === "aceita") {
     const nome = resposta.nome || texto;
-    // o nome no padrão pode ser uma resposta que a lista já tem: aí vale ela, com os pontos dela
-    const naLista = buscar(cat, nome);
-    const achada = naLista?.exato
+    // o nome no padrão pode ser uma resposta que a lista já tem: aí vale ela, com os pontos dela.
+    // Vale também quando ele é só a lista escrita errado ("Pegout" é a Peugeot): assim o jogador
+    // vê a grafia certa, e não o erro de digitação com a primeira letra maiúscula.
+    const naLista = buscar(cat, nome) || buscar(cat, texto);
+    const achada = naLista
       ? naLista.resposta
       : { resposta: nome[0].toUpperCase() + nome.slice(1), apelidos: [], pontos: pontosDoJuiz(resposta.pontos) };
     pousar(cat, achada);
