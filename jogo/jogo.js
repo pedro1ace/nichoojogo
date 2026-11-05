@@ -1082,7 +1082,7 @@ function usarSugestao() {
 
 function palpitar(evento) {
   evento.preventDefault();
-  if (!estado.ativa) return;
+  if (!estado.ativa || $("formulario").classList.contains("esperando")) return;
   const cat = estado.categorias[estado.rodada];
   const texto = $("palpite").value.trim();
   if (!texto) return;
@@ -1132,16 +1132,14 @@ function pousar(cat, achada, frase) {
   setTimeout(() => mostrarResultado(cat, achada.resposta, pontos, supernova, espertalhao, frase), duracaoQueda(pontos, supernova) + pausa);
 }
 
-// A lista não tem: avisa, treme o campo e deixa tentar outra. "ia" é o que o juiz disse, se disse.
-function recusar(cat, texto, ia) {
+// A lista não tem: avisa, treme o campo e deixa tentar outra (a mesma recusa, com ou sem juiz).
+function recusar(cat, texto) {
   // a resposta pode ser boa e só faltar na lista: diz que ela foi anotada (vai para a revisão)
   const anota = texto.length >= 3 && vaiAnotar(cat);
   if (anota && estado.tentadas && !estado.tentadas.includes(texto)) estado.tentadas.push(texto);
-  avisar(ia === "recusada" && MOSTRAR_JUIZ
-    ? `A central não reconheceu “${texto}”. Anotamos para revisar! Tente outra.`
-    : anota
-      ? `“${texto}” ainda não está no nosso mapa. Anotamos para revisar! Tente outra.`
-      : `“${texto}” não está no mapa estelar. Tente outra.`, "erro");
+  avisar(anota
+    ? `“${texto}” ainda não está no nosso mapa. Anotamos para revisar! Tente outra.`
+    : `“${texto}” não está no mapa estelar. Tente outra.`, "erro");
   $("palpite").classList.remove("tremendo");
   void $("palpite").offsetWidth; // reinicia a animação
   $("palpite").classList.add("tremendo");
@@ -1158,9 +1156,8 @@ const PONTOS_IA = 40; // quando o juiz não diz os pontos: faixa "RARO"
 // o juiz estima a fama e manda os pontos (de 8 até o topo do Raro, 58); fora disso, PONTOS_IA
 const pontosDoJuiz = (p) => (Number.isInteger(p) && p >= 8 && p <= 58 ? p : PONTOS_IA);
 const ESPERA_JUIZ = 5000;
-// O jogador não fica sabendo do juiz: os avisos da "central" aparecem só nas prévias (*.pages.dev)
-// e no computador, para testar. No jogo de verdade, a resposta só demora um instante a mais.
-const MOSTRAR_JUIZ = location.hostname.endsWith(".pages.dev") || location.hostname === "localhost";
+// O jogador não fica sabendo do juiz, nem na prévia: a aceita parece uma resposta da lista, a recusada
+// parece uma recusa normal. O único sinal é o botão LANÇAR escurecer enquanto espera.
 const CONSULTAS_POR_RODADA = 3; // depois disso, recusa direto (ninguém fica gastando a IA no Enter)
 
 async function consultarJuiz(cat, texto) {
@@ -1175,8 +1172,9 @@ async function consultarJuiz(cat, texto) {
   pararRelogio();
   const rodada = estado.rodada;
   $("palpite").disabled = true;
+  $("formulario").classList.add("esperando"); // botão LANÇAR escurece enquanto a central responde
   $("sugestao").hidden = true;
-  avisar(MOSTRAR_JUIZ ? `📡 Consultando a central sobre “${texto}”…` : "", "aviso consultando");
+  avisar(""); // sem aviso de "consultando": só o botão LANÇAR escurece
 
   let resposta = ja || { veredito: "indisponivel" };
   if (!ja) {
@@ -1196,6 +1194,7 @@ async function consultarJuiz(cat, texto) {
     else if (resposta.motivo) console.info("juiz indisponível:", resposta.motivo);
   }
   $("palpite").disabled = false;
+  $("formulario").classList.remove("esperando");
   if (estado.rodada !== rodada) return;
 
   if (resposta.veredito === "aceita") {
@@ -1205,9 +1204,7 @@ async function consultarJuiz(cat, texto) {
     const achada = naLista?.exato
       ? naLista.resposta
       : { resposta: nome[0].toUpperCase() + nome.slice(1), apelidos: [], pontos: pontosDoJuiz(resposta.pontos) };
-    pousar(cat, achada, MOSTRAR_JUIZ && !naLista?.exato
-      ? "Não estava no mapa, mas a central aprovou! A nota é uma estimativa até a revisão de hoje."
-      : undefined);
+    pousar(cat, achada);
     return;
   }
   rodarRelogio(restaMs);
@@ -1229,20 +1226,10 @@ function registrar(cat, resposta, pontos, supernova, percentil, espertalhao = fa
   salvarProgresso();
 }
 
-// No tempo esgotado, quem tentou respostas que a lista não tinha fica sabendo que elas vão ser revisadas.
-function fraseDoTempo() {
-  const tentadas = (estado.tentadas || []).slice(-3).map((t) => `“${t}”`);
-  if (!tentadas.length) return "O relógio zerou. Esta fica sem pontos.";
-  const lista = tentadas.length > 1 ? `${tentadas.slice(0, -1).join(", ")} e ${tentadas.at(-1)}` : tentadas[0];
-  return tentadas.length > 1
-    ? `O relógio zerou. ${lista} ainda não estavam na lista, mas ficaram anotadas: se valerem, entram para os próximos jogadores.`
-    : `O relógio zerou. ${lista} ainda não estava na lista, mas ficou anotada: se valer, entra para os próximos jogadores.`;
-}
-
 function mostrarResultado(cat, resposta, pontos, supernova, espertalhao, fraseExtra) {
   const faixa = resposta
     ? faixaDe(pontos, supernova, espertalhao)
-    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: fraseDoTempo() };
+    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: "O tempo acabou." };
   const card = $("resultado");
   card.style.setProperty("--cor-faixa", faixa.cor);
   $("icone").src = cena.icones[faixa.id];
