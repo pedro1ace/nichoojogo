@@ -1177,7 +1177,7 @@ async function consultarJuiz(cat, texto) {
   $("palpite").disabled = true;
   $("formulario").classList.add("esperando"); // botão LANÇAR escurece enquanto a central responde
   $("sugestao").hidden = true;
-  avisar(MOSTRAR_JUIZ ? `📡 Consultando a central sobre “${texto}”…` : "", "aviso consultando");
+  avisar(""); // sem aviso de "consultando": só o botão LANÇAR escurece
 
   let resposta = ja || { veredito: "indisponivel" };
   if (!ja) {

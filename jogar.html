@@ -348,9 +348,6 @@ form.esperando button { filter: brightness(0.5) saturate(0.6); cursor: wait; }
 #mensagem:empty { display: none; }
 #mensagem.erro { color: var(--vermelho); }
 #mensagem.aviso { color: var(--amarelo); }
-#mensagem.consultando { animation: consultando 1s ease-in-out infinite alternate; }
-@keyframes consultando { from { opacity: 1; } to { opacity: 0.45; } }
-@media (prefers-reduced-motion: reduce) { #mensagem.consultando { animation: none; } }
 #relogio { position: relative; flex: none; width: 64px; height: 64px; margin-top: -6px; }
 #radar { width: 64px; height: 64px; display: block; }
 #tempo { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--corpo); font-weight: 700; font-size: 20px; text-shadow: 0 0 12px rgba(95, 225, 255, 0.6); color: var(--ciano); font-variant-numeric: tabular-nums; pointer-events: none; }
@@ -5432,7 +5429,7 @@ async function consultarJuiz(cat, texto) {
   $("palpite").disabled = true;
   $("formulario").classList.add("esperando"); // botão LANÇAR escurece enquanto a central responde
   $("sugestao").hidden = true;
-  avisar(MOSTRAR_JUIZ ? `📡 Consultando a central sobre “${texto}”…` : "", "aviso consultando");
+  avisar(""); // sem aviso de "consultando": só o botão LANÇAR escurece
 
   let resposta = ja || { veredito: "indisponivel" };
   if (!ja) {
