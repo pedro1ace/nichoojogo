@@ -1,7 +1,7 @@
 resposta,apelidos,icf,sem_dado,lembranca,conhecem,visitas,percentil,fama,peso,pontos,ajustado
 Ferrari,ferari | ferrarri | ferrare,20.0,True,112.3902,100.0,26634,0.0,0.0,0.3,9,True
 Fiat,fiate | fiat do brasil | fiá,10.549,False,74.9268,100.0,21474,0.0,0.0,0.316,10,True
-Volkswagen,vw | volks | Volk | wolkswagen | wolksvagen | wolksvagem | wolkswagem | folksvagen | folks | fox wagen | volksvagen | volkswagem | volksvagem | volsvagen | volkswagen do brasil | vê dáblio | wv,10.963,False,74.9268,100.0,42780,0.0,0.0,0.316,10,True
+Volkswagen,vw | volks | Volk | wolkswagen | wolksvagen | wolksvagem | wolkswagem | folksvagen | folks | fox wagen | volksvagen | volkswagem | volksvagem | volsvagen | volkswagen do brasil | vê dáblio | wv | Voltswagen,10.963,False,74.9268,100.0,42780,0.0,0.0,0.316,10,True
 Chevrolet,gm | chevy | general motors | GMDL | General Motors Corporation | xevrolet | xevrolé | chevrolé | shevrolet | chevrolete | gm do brasil | xêvi,10.458,False,65.561,100.0,27534,0.001,0.001,0.332,11,True
 Ford,Ford Motor Company | Grupo Ford | forde,9.377,False,56.1951,100.0,29058,0.001,0.001,0.332,11,True
 Toyota,toiota | toyta | toyotta,20.0,True,56.1951,100.0,18048,0.001,0.001,0.332,11,True
@@ -74,7 +74,7 @@ Geely,,20.0,True,0.4683,50.0,49302,0.019,0.019,0.775,60,True
 Genesis,Genesis Motor,11.911,False,0.2234,30.0,34074,0.027,0.027,0.775,60,True
 Harley-Davidson,Harley-Davidson Motor Company,9.377,False,0.2529,90.0,7704,0.023,0.023,0.775,60,True
 Haval,,20.0,True,0.9366,65.0,0,0.015,0.015,0.775,60,True
-Hummer,,20.0,True,0.9366,75.0,6060,0.015,0.015,0.775,60,True
+Hummer,Hammer,20.0,True,0.9366,75.0,6060,0.015,0.015,0.775,60,True
 Infiniti,,20.0,True,0.4683,25.0,3906,0.019,0.019,0.775,60,True
 Isuzu,,20.0,True,0.2529,55.0,6894,0.023,0.023,0.775,60,True
 Iveco,,20.0,True,0.2529,65.0,13206,0.023,0.023,0.775,60,True
@@ -221,7 +221,7 @@ Packard,,20.0,True,0.1396,15.0,66,0.032,0.032,0.781,61,True
 Panhard,,20.0,True,0.0859,,1290,0.04,0.04,0.781,61,True
 Perodua,,20.0,True,0.0986,,0,0.038,0.038,0.781,61,True
 Pininfarina,,20.0,True,0.1,25.0,6990,0.037,0.037,0.781,61,True
-Plymouth,Chrysler Plymouth,20.0,True,0.1764,25.0,3546,0.03,0.03,0.781,61,True
+Plymouth,Chrysler Plymouth | Prowler,20.0,True,0.1764,25.0,3546,0.03,0.03,0.781,61,True
 Proton,,14.62,False,0.1289,10.0,8430,0.033,0.033,0.781,61,True
 Saturn,,20.0,True,0.0958,,1056,0.038,0.038,0.781,61,True
 Shineray,,20.0,True,0.1596,40.0,7980,0.031,0.031,0.781,61,True
@@ -1679,7 +1679,6 @@ Greenleaf,,20.0,True,0.0042,,0,0.448,0.448,0.854,73,True
 Groninger,,20.0,True,0.0042,,0,0.448,0.448,0.854,73,True
 Gukje Motors,,20.0,True,0.0042,,0,0.448,0.448,0.854,73,True
 Halladay,,20.0,True,0.0042,,0,0.448,0.448,0.854,73,True
-Hammer,,20.0,True,0.0042,,0,0.448,0.448,0.854,73,True
 Handley-Knight,,20.0,True,0.0042,,0,0.448,0.448,0.854,73,True
 Hanover,,20.0,True,0.0042,,0,0.448,0.448,0.854,73,True
 Harvard,,20.0,True,0.0042,,0,0.448,0.448,0.854,73,True
@@ -2645,7 +2644,6 @@ Progetti Gestioni Ecologiche,,20.0,True,0.0026,,0,0.641,0.641,0.9,81,True
 Prosper-Lambert,,13.597,False,0.0026,,0,0.641,0.641,0.9,81,True
 Proteus,,20.0,True,0.0026,,0,0.641,0.641,0.9,81,True
 Prova,,8.768,False,0.0026,,0,0.641,0.641,0.9,81,True
-Prowler,,20.0,True,0.0026,,0,0.641,0.641,0.9,81,True
 Pur Sang,,20.0,True,0.0026,,0,0.641,0.641,0.9,81,True
 Puritan,,20.0,True,0.0026,,0,0.641,0.641,0.9,81,True
 Pöhlmann,,20.0,True,0.0026,,0,0.641,0.641,0.9,81,True
@@ -3751,7 +3749,6 @@ Vintage Cars,,11.358,False,0.0018,,0,0.89,0.89,0.949,90,True
 Viscount Motors,,20.0,True,0.0018,,0,0.89,0.89,0.949,90,True
 Volgabus,,20.0,True,0.0018,,0,0.89,0.89,0.949,90,True
 Volksrod,,20.0,True,0.0018,,0,0.89,0.89,0.949,90,True
-Voltswagen,,20.0,True,0.0018,,0,0.997,0.997,0.949,90,True
 W. G. Windham,,20.0,True,0.0018,,0,0.89,0.89,0.949,90,True
 W. J. Stokvis,,20.0,True,0.0018,,0,0.89,0.89,0.949,90,True
 WMF Design,WMF Design Indústria e Comércio Ltda.,9.216,False,0.0018,,0,0.89,0.89,0.949,90,True
