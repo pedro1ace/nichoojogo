@@ -1082,7 +1082,7 @@ function usarSugestao() {
 
 function palpitar(evento) {
   evento.preventDefault();
-  if (!estado.ativa) return;
+  if (!estado.ativa || $("formulario").classList.contains("esperando")) return;
   const cat = estado.categorias[estado.rodada];
   const texto = $("palpite").value.trim();
   if (!texto) return;
@@ -1175,6 +1175,7 @@ async function consultarJuiz(cat, texto) {
   pararRelogio();
   const rodada = estado.rodada;
   $("palpite").disabled = true;
+  $("formulario").classList.add("esperando"); // botão LANÇAR escurece enquanto a central responde
   $("sugestao").hidden = true;
   avisar(MOSTRAR_JUIZ ? `📡 Consultando a central sobre “${texto}”…` : "", "aviso consultando");
 
@@ -1196,6 +1197,7 @@ async function consultarJuiz(cat, texto) {
     else if (resposta.motivo) console.info("juiz indisponível:", resposta.motivo);
   }
   $("palpite").disabled = false;
+  $("formulario").classList.remove("esperando");
   if (estado.rodada !== rodada) return;
 
   if (resposta.veredito === "aceita") {
@@ -1229,20 +1231,10 @@ function registrar(cat, resposta, pontos, supernova, percentil, espertalhao = fa
   salvarProgresso();
 }
 
-// No tempo esgotado, quem tentou respostas que a lista não tinha fica sabendo que elas vão ser revisadas.
-function fraseDoTempo() {
-  const tentadas = (estado.tentadas || []).slice(-3).map((t) => `“${t}”`);
-  if (!tentadas.length) return "O relógio zerou. Esta fica sem pontos.";
-  const lista = tentadas.length > 1 ? `${tentadas.slice(0, -1).join(", ")} e ${tentadas.at(-1)}` : tentadas[0];
-  return tentadas.length > 1
-    ? `O relógio zerou. ${lista} ainda não estavam na lista, mas ficaram anotadas: se valerem, entram para os próximos jogadores.`
-    : `O relógio zerou. ${lista} ainda não estava na lista, mas ficou anotada: se valer, entra para os próximos jogadores.`;
-}
-
 function mostrarResultado(cat, resposta, pontos, supernova, espertalhao, fraseExtra) {
   const faixa = resposta
     ? faixaDe(pontos, supernova, espertalhao)
-    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: fraseDoTempo() };
+    : { id: "nada", nome: "TEMPO ESGOTADO", cor: "#ff6b81", frase: "O tempo acabou." };
   const card = $("resultado");
   card.style.setProperty("--cor-faixa", faixa.cor);
   $("icone").src = cena.icones[faixa.id];
