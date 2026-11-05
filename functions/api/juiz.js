@@ -107,53 +107,50 @@ function lerVeredito(saida) {
   return { veredito, nome: normalizar(nome).length >= 2 ? nome : null, pontos: pontosDaFama(n) };
 }
 
-// A pergunta e uma amostra espalhada da lista, lidas direto do pacote do dia com as funções
-// JSON do próprio D1 (o pacote é grande; assim a função não precisa abrir ele inteiro).
-// Tira os acentos dentro do SQL (o lower() do SQLite só mexe em letras sem acento).
-const SEM_ACENTO = [..."áàâãäéèêëíìîïóòôõöúùûüç"].reduce(
-  (sql, letra) => `replace(${sql}, '${letra}', '${letra.normalize("NFD")[0]}')`,
-  "lower(json_extract(r.value, '$.resposta') || ' ' || coalesce(json_extract(r.value, '$.apelidos'), ''))",
-);
+// A pergunta, uma amostra espalhada da lista e as respostas parecidas saem do pacote do dia.
+// O pacote é lido UMA vez por servidor e por dia e fica guardado na memória. Antes isso era feito
+// com json_each dentro do D1, mas o D1 conta cada item do JSON como uma "linha lida": eram ~30 mil
+// linhas por julgamento, e o plano grátis (5 milhões por dia) acabou em 04/11.
+const pacotes = new Map();
+async function lerPacote(db, dia) {
+  if (pacotes.has(dia)) return pacotes.get(dia);
+  const row = await db.prepare("SELECT payload FROM dias WHERE dia = ?").bind(dia).first();
+  let pacote = null;
+  try {
+    pacote = row && row.payload ? JSON.parse(row.payload) : null;
+  } catch {}
+  if (pacotes.size > 3) pacotes.clear();
+  pacotes.set(dia, pacote);
+  return pacote;
+}
+
+async function acharCategoria(db, dia, categoria) {
+  const pacote = await lerPacote(db, dia);
+  return pacote?.categorias?.find((c) => c.id === categoria) || null;
+}
 
 // Respostas da lista parecidas com o que foi digitado (mesmo começo de palavra). A IA usa o nome
 // delas quando é a mesma coisa: "monitor ed aluno" vira "Monitor escolar", e não uma resposta nova.
 async function lerParecidas(db, dia, categoria, chave) {
   const pedacos = [...new Set(chave.split(" ").filter((p) => p.length >= 4).map((p) => p.slice(0, 4)))].slice(0, 3);
-  if (!pedacos.length) return [];
-  const { results } = await db
-    .prepare(
-      "SELECT json_extract(r.value, '$.resposta') AS nome " +
-        "FROM dias, json_each(dias.payload, '$.categorias') AS c, json_each(c.value, '$.respostas') AS r " +
-        "WHERE dias.dia = ?1 AND json_extract(c.value, '$.id') = ?2 AND (" +
-        pedacos.map((_, i) => `(' ' || ${SEM_ACENTO}) LIKE ?${i + 3}`).join(" OR ") +
-        ") LIMIT 12",
-    )
-    .bind(dia, categoria, ...pedacos.map((p) => `% ${p}%`))
-    .all();
-  return results.map((r) => r.nome).filter(Boolean);
+  const cat = await acharCategoria(db, dia, categoria);
+  if (!pedacos.length || !cat) return [];
+  const nomes = [];
+  for (const r of cat.respostas || []) {
+    const texto = " " + normalizar([r.resposta, ...(r.apelidos || [])].join(" "));
+    if (pedacos.some((p) => texto.includes(" " + p))) nomes.push(r.resposta);
+    if (nomes.length >= 12) break;
+  }
+  return nomes.filter(Boolean);
 }
 
 async function lerCategoria(db, dia, categoria) {
-  const cat = await db
-    .prepare(
-      "SELECT json_extract(c.value, '$.pergunta') AS pergunta, json_extract(c.value, '$.titulo') AS titulo, " +
-        "json_array_length(c.value, '$.respostas') AS total " +
-        "FROM dias, json_each(dias.payload, '$.categorias') AS c " +
-        "WHERE dias.dia = ?1 AND json_extract(c.value, '$.id') = ?2",
-    )
-    .bind(dia, categoria)
-    .first();
-  if (!cat || !cat.total) return null;
-  const passo = Math.max(1, Math.floor(cat.total / EXEMPLOS));
-  const { results } = await db
-    .prepare(
-      "SELECT json_extract(r.value, '$.resposta') AS nome " +
-        "FROM dias, json_each(dias.payload, '$.categorias') AS c, json_each(c.value, '$.respostas') AS r " +
-        "WHERE dias.dia = ?1 AND json_extract(c.value, '$.id') = ?2 AND r.key % ?3 = 0 LIMIT ?4",
-    )
-    .bind(dia, categoria, passo, EXEMPLOS)
-    .all();
-  return { pergunta: cat.pergunta || cat.titulo, exemplos: results.map((r) => r.nome).filter(Boolean) };
+  const cat = await acharCategoria(db, dia, categoria);
+  const respostas = cat?.respostas || [];
+  if (!respostas.length) return null;
+  const passo = Math.max(1, Math.floor(respostas.length / EXEMPLOS));
+  const exemplos = respostas.filter((_, k) => k % passo === 0).slice(0, EXEMPLOS).map((r) => r.resposta);
+  return { pergunta: cat.pergunta || cat.titulo, exemplos: exemplos.filter(Boolean) };
 }
 
 function instrucoes(cat) {
