@@ -4969,6 +4969,7 @@ async function carregarCategoriasDoDia() {
 }
 
 async function iniciar() {
+  reenviarPendentes();
   const cats = await carregarCategoriasDoDia();
   if (!cats || !cats.length) {
     $("regras").textContent = "Não foi possível carregar as perguntas do dia. Verifique sua conexão.";
@@ -5699,36 +5700,90 @@ function percentilDe(cat, achada) {
 // ou sem internet, a seção simplesmente não aparece.
 const API_PONTUACAO = "/api/pontuacao";
 
+// Se o banco estiver fora, a curva vem "guardada" (a última boa, com a sua viagem somada). Aí a
+// viagem fica pendente e é mandada de novo quando o jogo abrir outra vez. Sem resposta nenhuma,
+// usa a última curva daquele dia que este navegador viu.
+function lerJson(chave) {
+  try {
+    return JSON.parse(localStorage.getItem(chave) || "null");
+  } catch {
+    return null;
+  }
+}
+function gravar(chave, valor) {
+  try {
+    if (valor === null) localStorage.removeItem(chave);
+    else localStorage.setItem(chave, typeof valor === "string" ? valor : JSON.stringify(valor));
+  } catch {}
+}
+
+function mandarPontos(dia, pontos) {
+  return fetch(API_PONTUACAO, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ dia, pontos }),
+  }).then((r) => (r.ok ? r.json() : null));
+}
+
+// viagens que não entraram na curva porque o banco estava fora
+function reenviarPendentes() {
+  if (location.protocol === "file:" || MODO_TESTE) return;
+  let chaves = [];
+  try {
+    chaves = Object.keys(localStorage).filter((k) => k.startsWith("nicho:pendente:"));
+  } catch {}
+  for (const chave of chaves) {
+    const dia = chave.slice("nicho:pendente:".length);
+    const pontos = Number(lerJson(chave));
+    if (!Number.isInteger(pontos)) {
+      gravar(chave, null);
+      continue;
+    }
+    mandarPontos(dia, pontos)
+      .then((c) => {
+        if (c && Array.isArray(c.contagem) && !c.guardada) {
+          gravar(chave, null);
+          gravar(`nicho:enviado:${dia}`, "1");
+          gravar(`nicho:curva:${dia}`, c);
+        } else if (c && c.erro) gravar(chave, null); // dia fora do prazo: desiste
+      })
+      .catch(() => {});
+  }
+}
+
 function mostrarCurva() {
   $("secao-curva").hidden = true;
   if (location.protocol === "file:") return;
-  const chave = `nicho:enviado:${estado.data}`;
-  let jaEnviou = false;
-  try {
-    jaEnviou = !!localStorage.getItem(chave);
-  } catch {}
+  const dia = estado.data;
+  const pontos = Math.round(estado.total);
+  const jaEnviou = !!lerJson(`nicho:enviado:${dia}`) || lerJson(`nicho:pendente:${dia}`) !== null;
   // só a 1ª viagem de cada dia entra na curva, também quando é feita pelo arquivo;
   // a jogada extra só lê a curva
   const mandar = !MODO_TESTE && !estado.replay && !jaEnviou;
   const pedido = mandar
-    ? fetch(API_PONTUACAO, {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ dia: estado.data, pontos: Math.round(estado.total) }),
-      })
-    : fetch(`${API_PONTUACAO}?dia=${estado.data}`);
+    ? mandarPontos(dia, pontos)
+    : fetch(`${API_PONTUACAO}?dia=${dia}`).then((r) => (r.ok ? r.json() : null));
   pedido
-    .then((r) => (r.ok ? r.json() : null))
+    .catch(() => null)
     .then((c) => {
-      if (!c || !Array.isArray(c.contagem)) return;
-      if (mandar) {
-        try {
-          localStorage.setItem(chave, "1");
-        } catch {}
+      if (c && Array.isArray(c.contagem)) {
+        if (mandar && c.guardada) gravar(`nicho:pendente:${dia}`, String(pontos));
+        else if (mandar) gravar(`nicho:enviado:${dia}`, "1");
+        if (!c.guardada) gravar(`nicho:curva:${dia}`, c);
+        desenharCurva(c, pontos);
+        return;
       }
-      desenharCurva(c, Math.round(estado.total));
-    })
-    .catch(() => {});
+      // nenhuma resposta: a última curva que este navegador viu, com a sua viagem
+      if (mandar) gravar(`nicho:pendente:${dia}`, String(pontos));
+      const velha = lerJson(`nicho:curva:${dia}`);
+      if (velha && Array.isArray(velha.contagem)) {
+        if (mandar) {
+          velha.contagem[Math.min(velha.contagem.length - 1, Math.floor(pontos / velha.largura))] += 1;
+          velha.total += 1;
+        }
+        desenharCurva(velha, pontos);
+      }
+    });
 }
 
 // Fração dos viajantes que ficaram abaixo de você (empates contam metade).
