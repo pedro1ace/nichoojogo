@@ -50,6 +50,7 @@ async function curva(db, dia) {
 // Quando o banco falha (limite do plano grátis, Cloudflare fora...), a curva não some: cada curva
 // boa fica guardada no cache da Cloudflare e volta marcada com "guardada: true". Numa viagem nova,
 // os pontos dela entram só na cópia devolvida, e o jogo guarda a viagem para mandar de novo depois.
+// Sem curva guardada daquele dia, volta "indisponivel: true" e o jogo explica que a contagem está em pausa.
 const chaveCache = (dia) => new Request(`https://cache.nichoojogo.com/curva/${dia}`);
 
 async function guardarCurva(c) {
@@ -71,7 +72,10 @@ async function curvaGuardada(dia) {
 }
 
 async function semBanco(dia, pontos) {
-  const c = (await curvaGuardada(dia)) || { dia, largura: LARGURA, contagem: new Array(ULTIMA + 1).fill(0), total: 0 };
+  const c = await curvaGuardada(dia);
+  // nenhuma curva boa guardada deste dia: avisa, em vez de devolver uma curva vazia que parece
+  // "ninguém jogou hoje"
+  if (!c) return resposta({ dia, largura: LARGURA, guardada: true, indisponivel: true });
   if (Number.isInteger(pontos)) {
     c.contagem[Math.floor(pontos / LARGURA)] += 1;
     c.total += 1;

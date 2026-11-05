@@ -5767,24 +5767,37 @@ function mostrarCurva() {
   pedido
     .catch(() => null)
     .then((c) => {
-      if (c && Array.isArray(c.contagem)) {
-        if (mandar && c.guardada) gravar(`nicho:pendente:${dia}`, String(pontos));
-        else if (mandar) gravar(`nicho:enviado:${dia}`, "1");
-        if (!c.guardada) gravar(`nicho:curva:${dia}`, c);
+      if (c && Array.isArray(c.contagem) && !c.guardada) {
+        if (mandar) gravar(`nicho:enviado:${dia}`, "1");
+        gravar(`nicho:curva:${dia}`, c);
         desenharCurva(c, pontos);
         return;
       }
-      // nenhuma resposta: a última curva que este navegador viu, com a sua viagem
+      // banco fora: a viagem fica pendente e vale a curva guardada mais completa (a do servidor
+      // ou a última que este navegador viu, com a sua viagem somada)
       if (mandar) gravar(`nicho:pendente:${dia}`, String(pontos));
+      let melhor = c && Array.isArray(c.contagem) ? c : null;
       const velha = lerJson(`nicho:curva:${dia}`);
-      if (velha && Array.isArray(velha.contagem)) {
+      if (velha && Array.isArray(velha.contagem) && (!melhor || velha.total + 1 > melhor.total)) {
         if (mandar) {
           velha.contagem[Math.min(velha.contagem.length - 1, Math.floor(pontos / velha.largura))] += 1;
           velha.total += 1;
         }
-        desenharCurva(velha, pontos);
+        melhor = velha;
       }
+      if (melhor && melhor.total >= 5) desenharCurva(melhor, pontos);
+      else if (c || velha) curvaEmPausa();
     });
+}
+
+// Sem curva guardada nenhuma: não é que ninguém jogou, é a contagem que está parada.
+function curvaEmPausa() {
+  $("secao-curva").hidden = false;
+  $("curva").hidden = true;
+  $("curva-svg").innerHTML = "";
+  $("curva-eixo").innerHTML = "";
+  $("curva-texto").textContent =
+    "A contagem dos viajantes está em pausa agora. Sua viagem ficou guardada e entra na curva quando ela voltar.";
 }
 
 // Fração dos viajantes que ficaram abaixo de você (empates contam metade).
