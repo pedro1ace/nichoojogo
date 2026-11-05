@@ -47,13 +47,51 @@ async function curva(db, dia) {
   return { dia, largura: LARGURA, contagem, total: contagem.reduce((s, n) => s + n, 0) };
 }
 
-export async function onRequestGet({ request, env }) {
-  const dia = new URL(request.url).searchParams.get("dia") || hojeBrasil();
-  if (!diaValido(dia, true)) return resposta({ erro: "dia inválido" }, 400);
-  return resposta(await curva(env.DB, dia));
+// Quando o banco falha (limite do plano grátis, Cloudflare fora...), a curva não some: cada curva
+// boa fica guardada no cache da Cloudflare e volta marcada com "guardada: true". Numa viagem nova,
+// os pontos dela entram só na cópia devolvida, e o jogo guarda a viagem para mandar de novo depois.
+const chaveCache = (dia) => new Request(`https://cache.nichoojogo.com/curva/${dia}`);
+
+async function guardarCurva(c) {
+  try {
+    await caches.default.put(
+      chaveCache(c.dia),
+      new Response(JSON.stringify(c), { headers: { "cache-control": "public, max-age=604800" } }),
+    );
+  } catch {}
 }
 
-export async function onRequestPost({ request, env }) {
+async function curvaGuardada(dia) {
+  try {
+    const r = await caches.default.match(chaveCache(dia));
+    return r ? await r.json() : null;
+  } catch {
+    return null;
+  }
+}
+
+async function semBanco(dia, pontos) {
+  const c = (await curvaGuardada(dia)) || { dia, largura: LARGURA, contagem: new Array(ULTIMA + 1).fill(0), total: 0 };
+  if (Number.isInteger(pontos)) {
+    c.contagem[Math.floor(pontos / LARGURA)] += 1;
+    c.total += 1;
+  }
+  return resposta({ ...c, guardada: true });
+}
+
+export async function onRequestGet({ request, env, waitUntil }) {
+  const dia = new URL(request.url).searchParams.get("dia") || hojeBrasil();
+  if (!diaValido(dia, true)) return resposta({ erro: "dia inválido" }, 400);
+  try {
+    const c = await curva(env.DB, dia);
+    waitUntil?.(guardarCurva(c));
+    return resposta(c);
+  } catch {
+    return semBanco(dia, null);
+  }
+}
+
+export async function onRequestPost({ request, env, waitUntil }) {
   let corpo;
   try {
     corpo = await request.json();
@@ -64,10 +102,16 @@ export async function onRequestPost({ request, env }) {
   const diaAlvo = dia || hojeBrasil();
   if (!diaValido(diaAlvo, true)) return resposta({ erro: "dia inválido" }, 400);
   if (!Number.isInteger(pontos) || pontos < 0 || pontos > MAXIMO) return resposta({ erro: "pontos inválidos" }, 400);
-  await env.DB.prepare(
-    "INSERT INTO histograma (dia, faixa, n) VALUES (?, ?, 1) ON CONFLICT (dia, faixa) DO UPDATE SET n = n + 1",
-  )
-    .bind(diaAlvo, Math.floor(pontos / LARGURA))
-    .run();
-  return resposta(await curva(env.DB, diaAlvo));
+  try {
+    await env.DB.prepare(
+      "INSERT INTO histograma (dia, faixa, n) VALUES (?, ?, 1) ON CONFLICT (dia, faixa) DO UPDATE SET n = n + 1",
+    )
+      .bind(diaAlvo, Math.floor(pontos / LARGURA))
+      .run();
+    const c = await curva(env.DB, diaAlvo);
+    waitUntil?.(guardarCurva(c));
+    return resposta(c);
+  } catch {
+    return semBanco(diaAlvo, pontos);
+  }
 }
