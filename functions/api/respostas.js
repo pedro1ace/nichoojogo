@@ -79,7 +79,46 @@ export async function onRequestGet({ request, env }) {
   return json(await contagem(env.DB, dia));
 }
 
-export async function onRequestPost({ request, env }) {
+// Reserva para o essencial. O limite grátis do D1 é da conta inteira (100 mil linhas gravadas por dia,
+// zera à meia-noite UTC), então um segundo banco não ajudaria. Em vez disso, estas contagens (que são
+// para a revisão da lista, não para o jogo) param depois de TETO_ESCRITAS linhas no dia, e o resto da
+// cota fica para a curva dos viajantes e o juiz.
+// Para não gastar uma gravação a cada resposta só para contar, a conta é por amostra: 1 em cada
+// AMOSTRA gravações soma AMOSTRA x CUSTO no contador. O valor fica guardado no servidor por 1 minuto.
+const TETO_ESCRITAS = 60000;
+const AMOSTRA = 20;
+const CUSTO = 2; // uma linha nova grava 2 (a linha e o índice); uma que já existe grava 1
+const hojeUtc = () => new Date().toISOString().slice(0, 10);
+let cota = { dia: "", n: 0, lidaEm: 0, pronta: false };
+
+async function cotaCheia(db) {
+  const dia = hojeUtc();
+  if (cota.dia !== dia) cota = { dia, n: 0, lidaEm: 0, pronta: cota.pronta };
+  try {
+    if (!cota.pronta) {
+      await db.prepare("CREATE TABLE IF NOT EXISTS cota (dia TEXT NOT NULL PRIMARY KEY, n INTEGER NOT NULL DEFAULT 0)").run();
+      cota.pronta = true;
+    }
+    if (Date.now() - cota.lidaEm > 60000) {
+      cota.n = (await db.prepare("SELECT n FROM cota WHERE dia = ?").bind(dia).first())?.n || 0;
+      cota.lidaEm = Date.now();
+    }
+  } catch {} // sem o contador, segue gravando como antes
+  return cota.n >= TETO_ESCRITAS;
+}
+
+async function contarEscrita(db) {
+  if (Math.random() >= 1 / AMOSTRA) return;
+  try {
+    const r = await db
+      .prepare("INSERT INTO cota (dia, n) VALUES (?, ?) ON CONFLICT (dia) DO UPDATE SET n = n + excluded.n RETURNING n")
+      .bind(cota.dia || hojeUtc(), AMOSTRA * CUSTO + 1)
+      .first();
+    if (r) [cota.n, cota.lidaEm] = [r.n, Date.now()];
+  } catch {}
+}
+
+export async function onRequestPost({ request, env, waitUntil }) {
   let corpo;
   try {
     corpo = await request.json();
@@ -89,6 +128,8 @@ export async function onRequestPost({ request, env }) {
   const { dia, categoria, resposta, recusada } = corpo || {};
   if (!diaValido(dia)) return json({ erro: "dia inválido" }, 400);
   if (!categoriaValida(categoria)) return json({ erro: "categoria inválida" }, 400);
+  if (await cotaCheia(env.DB)) return json({ ok: false, pausado: "cota do dia reservada para a curva" });
+  const contar = () => (typeof waitUntil === "function" ? waitUntil(contarEscrita(env.DB)) : contarEscrita(env.DB));
   if (textoValido(resposta, 120)) {
     await env.DB.prepare(
       "INSERT INTO respostas (dia, categoria, resposta, n) VALUES (?, ?, ?, 1) " +
@@ -96,6 +137,7 @@ export async function onRequestPost({ request, env }) {
     )
       .bind(dia, categoria, resposta.trim())
       .run();
+    await contar();
     return json({ ok: true });
   }
   if (textoValido(recusada, 60) && normalizar(recusada).length >= 2) {
@@ -105,6 +147,7 @@ export async function onRequestPost({ request, env }) {
     )
       .bind(dia, categoria, normalizar(recusada))
       .run();
+    await contar();
     return json({ ok: true });
   }
   return json({ erro: "resposta inválida" }, 400);

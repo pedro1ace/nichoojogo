@@ -5669,7 +5669,7 @@ function montarGrafico() {
 //   - somadas ao longo das semanas, mostram onde a simulação erra (scripts/fama.py --calibrar no futuro).
 const API_RESPOSTAS = "/api/respostas";
 
-// Cada navegador conta uma resposta aceita por categoria por dia; recusadas contam a cada tentativa.
+// Cada navegador conta uma resposta aceita por categoria por dia, e cada recusada uma vez por dia.
 // viagens pelo arquivo não são enviadas: a contagem é de quem joga no dia
 function vaiAnotar(cat) {
   return !(location.protocol === "file:" || MODO_TESTE || ARQUIVO || !cat.id);
@@ -5681,6 +5681,12 @@ function enviarResposta(cat, corpo) {
   if (corpo.resposta) {
     if (lerChave(chave)) return;
     gravarChave(chave, "1");
+  }
+  // recusada: cada navegador conta cada palavra uma vez por dia (antes contava a cada tentativa)
+  if (corpo.recusada) {
+    const chaveRecusada = `nicho:recusada:${estado.data}:${cat.id}:${compactar(corpo.recusada)}`;
+    if (lerChave(chaveRecusada)) return;
+    gravarChave(chaveRecusada, "1");
   }
   fetch(API_RESPOSTAS, {
     method: "POST",
@@ -5736,6 +5742,9 @@ function reenviarPendentes() {
   let chaves = [];
   try {
     chaves = Object.keys(localStorage).filter((k) => k.startsWith("nicho:pendente:"));
+    // as marcas de recusada só valem no dia
+    for (const k of Object.keys(localStorage))
+      if (k.startsWith("nicho:recusada:") && !k.startsWith(`nicho:recusada:${estado.data}:`)) localStorage.removeItem(k);
   } catch {}
   for (const chave of chaves) {
     const dia = chave.slice("nicho:pendente:".length);

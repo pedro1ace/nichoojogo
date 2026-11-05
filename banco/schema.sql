@@ -48,6 +48,13 @@ CREATE TABLE IF NOT EXISTS juiz_uso (
   n   INTEGER NOT NULL DEFAULT 0
 );
 
+-- Contador aproximado (por amostra) das linhas que /api/respostas gravou no dia UTC. Passando do teto,
+-- as contagens param e o resto da cota grátis do D1 fica para a curva (functions/api/respostas.js).
+CREATE TABLE IF NOT EXISTS cota (
+  dia TEXT    NOT NULL PRIMARY KEY,
+  n   INTEGER NOT NULL DEFAULT 0
+);
+
 -- Limpeza dos testes do juiz (04/11, pedido do pedrinho): a tabela "juizo" era da primeira versão
 -- e não é mais usada; os vereditos gravados antes do juiz entrar no ar (20:41 UTC) vieram dos testes
 -- na prévia. As duas linhas não fazem nada nas próximas cargas.
