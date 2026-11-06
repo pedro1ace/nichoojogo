@@ -31,16 +31,27 @@ const MODELO = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 const TETO_DIARIO = 550;
 // A cota grátis zera 00:00 UTC (21h em Brasília), mas o dia do jogo vira 00h em Brasília. Sem divisão,
 // a noite do dia velho e a correria das categorias novas gastavam tudo juntas (06/11: o teto acabou às 00h06).
-// Por isso o teto vale como um total que cresce ao longo do dia UTC:
-//   21h-24h (Brasília): até RESERVA_NOITE chamadas, para o fim do dia que está acabando;
-//   00h: abre ABERTURA chamadas de uma vez, para as palavras novas das categorias do dia;
-//   00h-21h: o resto entra aos poucos, até TETO_DIARIO. O que não for usado numa hora fica para a próxima.
+// Por isso o teto vale como um total que cresce ao longo do dia UTC, com mais espaço de manhã,
+// quando a maior parte do pessoal joga. O que não for usado numa hora fica para a próxima.
+//   21h-24h (Brasília): até 50 chamadas, para o fim do dia que está acabando;
+//   00h: 150 (as palavras novas de quem joga de madrugada);
+//   06h: 250, 12h: 450 (a manhã ganha 200), 21h: 550.
+const ESCALA = [ // [hora UTC, total liberado]
+  [3, 150],
+  [9, 250],
+  [15, 450],
+  [24, TETO_DIARIO],
+];
 const RESERVA_NOITE = 50;
-const ABERTURA = 200;
 function tetoAgora(agora = new Date()) {
   const h = agora.getUTCHours() + agora.getUTCMinutes() / 60;
   if (h < 3) return RESERVA_NOITE;
-  return Math.floor(RESERVA_NOITE + ABERTURA + ((TETO_DIARIO - RESERVA_NOITE - ABERTURA) * (h - 3)) / 21);
+  for (let k = 1; k < ESCALA.length; k++) {
+    const [h0, t0] = ESCALA[k - 1];
+    const [h1, t1] = ESCALA[k];
+    if (h < h1) return Math.floor(t0 + ((t1 - t0) * (h - h0)) / (h1 - h0));
+  }
+  return TETO_DIARIO;
 }
 const EXEMPLOS = 15;
 
