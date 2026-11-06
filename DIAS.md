@@ -119,7 +119,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1078 |
 | 3 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
 | 4 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1035 |
-| 5 | Coisas com camadas | Cite algo que tem camadas | 1396 |
+| 5 | Coisas com camadas | Cite algo que tem camadas | 1533 |
 | 6 | Tipos de corrida | Cite um tipo de corrida | 1109 |
 | 7 | Motivos para gritar | Cite um motivo para gritar | 1168 |
 
