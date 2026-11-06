@@ -103,25 +103,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1120 |
-| 2 | Cores | Cite uma cor (ou um tom de cor) | 1054 |
-| 3 | Países | Cite um país | 253 |
-| 4 | Material escolar | Cite um item de material escolar | 1035 |
-| 5 | Coisas redondas | Cite algo que é redondo | 1267 |
-| 6 | Coisas com casca | Cite algo que tem casca | 1058 |
-| 7 | Marcas de carro | Cite uma marca de carro | 3782 |
+| 1 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1147 |
+| 2 | Cores | Cite uma cor (ou um tom de cor) | 1062 |
+| 3 | Países | Cite um país | 256 |
+| 4 | Material escolar | Cite um item de material escolar | 1045 |
+| 5 | Coisas redondas | Cite algo que é redondo | 1307 |
+| 6 | Coisas com casca | Cite algo que tem casca | 1079 |
+| 7 | Marcas de carro | Cite uma marca de carro | 3800 |
 
 ## Dia 10 · sex 06/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3754 |
-| 2 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1078 |
-| 3 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 68 |
-| 4 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1035 |
-| 5 | Coisas com camadas | Cite algo que tem camadas | 1533 |
-| 6 | Tipos de corrida | Cite um tipo de corrida | 1109 |
-| 7 | Motivos para gritar | Cite um motivo para gritar | 1168 |
+| 1 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3756 |
+| 2 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1081 |
+| 3 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 71 |
+| 4 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1038 |
+| 5 | Coisas com camadas | Cite algo que tem camadas | 1535 |
+| 6 | Tipos de corrida | Cite um tipo de corrida | 1110 |
+| 7 | Motivos para gritar | Cite um motivo para gritar | 1174 |
 
 ## Dia 11 · sáb 07/11/2026
 
