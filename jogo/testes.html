@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nicho · testes</title>
+<style>
+  :root { --fundo: #0d0b1e; --cartao: #1a1640; --texto: #f2efff; --fraco: #a59fd0; --destaque: #ffd84a; --linha: #2e2866; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font: 15px/1.4 system-ui, sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 22px; margin: 4px 0 4px; }
+  p.sub { color: var(--fraco); margin: 0 0 14px; }
+  .barra { position: sticky; top: 0; background: var(--fundo); padding: 10px 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; border-bottom: 1px solid var(--linha); z-index: 1; }
+  input[type=search] { flex: 1 1 220px; padding: 9px 10px; border-radius: 8px; border: 1px solid var(--linha); background: var(--cartao); color: var(--texto); font-size: 15px; }
+  select, button, a.botao { padding: 9px 12px; border-radius: 8px; border: 1px solid var(--linha); background: var(--cartao); color: var(--texto); font-size: 14px; cursor: pointer; text-decoration: none; }
+  button.forte { background: var(--destaque); color: #1a1400; border-color: var(--destaque); font-weight: 700; }
+  button:disabled { opacity: .5; cursor: default; }
+  .dias { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+  .dias a { padding: 5px 9px; border-radius: 6px; background: var(--cartao); color: var(--texto); text-decoration: none; font-size: 13px; border: 1px solid var(--linha); }
+  .dias a.hoje { border-color: var(--destaque); color: var(--destaque); }
+  ul { list-style: none; padding: 0; margin: 10px 0 0; }
+  li.cat { border-bottom: 1px solid var(--linha); padding: 9px 0; }
+  .linha { display: flex; gap: 10px; align-items: center; }
+  .linha label { flex: 1; min-width: 0; cursor: pointer; }
+  .titulo { font-weight: 600; }
+  .pergunta, .meta { color: var(--fraco); font-size: 13px; }
+  .linha a, .linha button { font-size: 13px; padding: 5px 9px; }
+  details { margin: 6px 0 0 28px; }
+  summary { color: var(--fraco); cursor: pointer; font-size: 13px; }
+  .respostas { columns: 2 220px; font-size: 13px; margin-top: 6px; }
+  .respostas div { break-inside: avoid; }
+  .respostas b { color: var(--destaque); font-weight: 600; display: inline-block; min-width: 2.5em; }
+  #status { color: var(--fraco); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Nicho · testes</h1>
+  <p class="sub">Escolha qualquer categoria (ou várias) e jogue. Nada aqui grava progresso nem manda pontuação.</p>
+  <div class="barra">
+    <input type="search" id="busca" placeholder="Buscar categoria…" autocomplete="off">
+    <select id="filtro">
+      <option value="">Todas</option>
+      <option value="fila">Na fila de dias</option>
+      <option value="fora">Fora da fila</option>
+    </select>
+    <button id="sortear">Sortear 7</button>
+    <button id="jogar" class="forte" disabled>Jogar selecionadas (0)</button>
+  </div>
+  <div class="dias" id="dias"></div>
+  <p id="status">Carregando todas as categorias…</p>
+  <ul id="lista"></ul>
+</main>
+<script>
+const RODADAS = 7;
+const LANCAMENTO = "2026-10-28";
+const local = location.protocol === "file:";
+const jogo = (q) => (local ? "../jogar.html" : "/") + "?" + q;
+const $ = (id) => document.getElementById(id);
+const sem = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const escolhidas = [];
+
+function dataDoDia(n) {
+  const d = new Date(LANCAMENTO + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() + n - 1);
+  return `${String(d.getUTCDate()).padStart(2, "0")}/${String(d.getUTCMonth() + 1).padStart(2, "0")}`;
+}
+function hojeNumero() {
+  const hoje = new Date().toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" });
+  return Math.round((Date.parse(hoje + "T12:00:00Z") - Date.parse(LANCAMENTO + "T12:00:00Z")) / 86400000) + 1;
+}
+function atualizarBotao() {
+  $("jogar").textContent = `Jogar selecionadas (${escolhidas.length})`;
+  $("jogar").disabled = !escolhidas.length;
+}
+
+function montar(D) {
+  const ids = new Set(D.indice.map((c) => c.id));
+  const fila = (D.ordem || []).filter((id) => ids.has(id));
+  const diaDe = new Map();
+  fila.forEach((id, i) => { if (!diaDe.has(id)) diaDe.set(id, Math.floor(i / RODADAS) + 1); });
+  const nDias = Math.floor(fila.length / RODADAS);
+  const hoje = hojeNumero();
+  for (let n = 1; n <= nDias; n++) {
+    const a = document.createElement("a");
+    a.href = jogo(`dia=${n}`);
+    a.textContent = `Dia ${n} · ${dataDoDia(n)}`;
+    if (n === hoje) a.className = "hoje";
+    $("dias").append(a);
+  }
+  const cats = D.indice.map((c) => ({ ...c, n: D.categorias[c.id].respostas.length, dia: diaDe.get(c.id) }))
+    .sort((a, b) => a.titulo.localeCompare(b.titulo, "pt"));
+  const lista = $("lista");
+  for (const c of cats) {
+    const li = document.createElement("li");
+    li.className = "cat";
+    li.dataset.busca = sem(`${c.titulo} ${c.pergunta} ${c.id}`);
+    li.dataset.fila = c.dia ? "fila" : "fora";
+    li.innerHTML = `
+      <div class="linha">
+        <input type="checkbox" id="c-${c.id}">
+        <label for="c-${c.id}"><span class="titulo"></span><br><span class="pergunta"></span>
+          <span class="meta"> · ${c.n.toLocaleString("pt-BR")} respostas${c.dia ? ` · dia ${c.dia} (${dataDoDia(c.dia)})` : " · fora da fila"}</span></label>
+        <a class="botao" href="${jogo("categorias=" + encodeURIComponent(c.id))}">Jogar</a>
+      </div>
+      <details><summary>Ver respostas e pontos</summary><div class="respostas"></div></details>`;
+    li.querySelector(".titulo").textContent = c.titulo;
+    li.querySelector(".pergunta").textContent = c.pergunta;
+    li.querySelector("input").addEventListener("change", (e) => {
+      const i = escolhidas.indexOf(c.id);
+      if (e.target.checked && i < 0) escolhidas.push(c.id);
+      if (!e.target.checked && i >= 0) escolhidas.splice(i, 1);
+      atualizarBotao();
+    });
+    li.querySelector("details").addEventListener("toggle", (e) => {
+      const caixa = li.querySelector(".respostas");
+      if (!e.target.open || caixa.childElementCount) return;
+      const frag = document.createDocumentFragment();
+      for (const r of D.categorias[c.id].respostas) {
+        const div = document.createElement("div");
+        const b = document.createElement("b");
+        b.textContent = r.pontos;
+        div.append(b, r.resposta + (r.apelidos.length ? ` (${r.apelidos.join(", ")})` : ""));
+        frag.append(div);
+      }
+      caixa.append(frag);
+    });
+    lista.append(li);
+  }
+  function filtrar() {
+    const q = sem($("busca").value.trim());
+    const f = $("filtro").value;
+    let vis = 0;
+    for (const li of lista.children) {
+      const ok = (!q || li.dataset.busca.includes(q)) && (!f || li.dataset.fila === f);
+      li.hidden = !ok;
+      if (ok) vis++;
+    }
+    $("status").textContent = `${vis} de ${cats.length} categorias · ${nDias} dias na fila`;
+  }
+  $("busca").addEventListener("input", filtrar);
+  $("filtro").addEventListener("change", filtrar);
+  $("jogar").addEventListener("click", () => { location.href = jogo("categorias=" + escolhidas.map(encodeURIComponent).join(",")); });
+  $("sortear").addEventListener("click", () => {
+    const ids = cats.map((c) => c.id).sort(() => Math.random() - 0.5).slice(0, RODADAS);
+    location.href = jogo("categorias=" + ids.map(encodeURIComponent).join(","));
+  });
+  filtrar();
+}
+
+const s = document.createElement("script");
+s.src = local ? "dados.js" : "/jogo/dados.js";
+s.onload = () => montar(window.NICHO_DADOS);
+s.onerror = () => { $("status").textContent = "Não consegui carregar jogo/dados.js."; };
+document.head.append(s);
+</script>
+</body>
+</html>
