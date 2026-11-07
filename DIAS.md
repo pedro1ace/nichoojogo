@@ -252,7 +252,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4014 |
 | 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 491 |
 | 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 544 |
-| 6 | Livros dos anos 2000 | Cite um livro de ficção lançado entre 2000 e 2009 | 157 |
+| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 1590 |
 | 7 | Pratos de outros países | Cite um prato típico de outro país | 215 |
 
 ## Dia 22 · qua 18/11/2026
