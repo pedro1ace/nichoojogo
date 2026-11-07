@@ -140,7 +140,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
-| 2 | Séries de TV | Cite uma série de TV | 1729 |
+| 2 | Séries de TV | Cite uma série de TV | 1727 |
 | 3 | Modelos de carro | Cite um modelo de carro | 2388 |
 | 4 | Atropelado por avião | Diga um animal que já foi atropelado por um avião. | 323 |
 | 5 | Sabores de pizza | Cite um sabor de pizza | 184 |
@@ -159,10 +159,164 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 6 | Contos de fadas | Cite um personagem de conto de fadas | 156 |
 | 7 | Salgadinhos de festa | Cite um salgadinho de festa | 106 |
 
+## Dia 14 · ter 10/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Meios de transporte | Cite um meio de transporte | 179 |
+| 2 | Danças | Cite uma dança | 147 |
+| 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 401 |
+| 4 | Frutos do mar | Cite um fruto do mar | 81 |
+| 5 | Natal | Cite algo do Natal | 167 |
+| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 142 |
+| 7 | Sabores de bolo | Cite um sabor de bolo | 221 |
+
+## Dia 15 · qua 11/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Personagens de videogame | Cite um personagem de videogame | 288 |
+| 2 | Pintores e artistas | Cite um pintor ou artista plástico | 167 |
+| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 234 |
+| 4 | Brinquedos | Cite um brinquedo | 198 |
+| 5 | Doenças | Cite uma doença | 200 |
+| 6 | Praias brasileiras | Cite uma praia brasileira | 230 |
+| 7 | Coisas geladas | Cite algo gelado | 207 |
+
+## Dia 16 · qui 12/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 144 |
+| 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 171 |
+| 3 | Coisas que dão medo | Cite algo que dá medo | 197 |
+| 4 | Estádios de futebol | Cite um estádio de futebol | 136 |
+| 5 | Árvores | Cite uma árvore | 160 |
+| 6 | Nomes masculinos | Cite um nome masculino | 303 |
+| 7 | Bandas | Cite uma banda (de qualquer país) | 296 |
+
+## Dia 17 · sex 13/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Filmes brasileiros | Cite um filme brasileiro | 182 |
+| 2 | Comida de rua | Cite uma comida de rua ou de lanchonete | 183 |
+| 3 | Aplicativos e sites | Cite um aplicativo ou site | 245 |
+| 4 | Motivos para chorar | Cite um motivo para chorar | 199 |
+| 5 | Coisas cheirosas | Cite algo cheiroso | 168 |
+| 6 | Nomes femininos | Cite um nome feminino | 280 |
+| 7 | Móveis | Cite um móvel | 168 |
+
+## Dia 18 · sáb 14/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas com rodas | Cite algo que tem rodas | 140 |
+| 2 | Café da manhã | Cite algo que se come ou bebe no café da manhã | 163 |
+| 3 | Programas de TV brasileiros | Cite um programa de TV brasileiro | 203 |
+| 4 | Calçados e acessórios | Cite um calçado ou acessório (sapato, bolsa, joia, chapéu...) | 168 |
+| 5 | Sobrenomes | Cite um sobrenome | 452 |
+| 6 | Animais venenosos e peçonhentos | Cite um animal venenoso ou peçonhento | 134 |
+| 7 | Carnaval | Cite algo do carnaval | 216 |
+
+## Dia 19 · dom 15/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Sentimentos e emoções | Cite um sentimento ou emoção | 157 |
+| 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 230 |
+| 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 159 |
+| 4 | Cientistas e inventores | Cite um cientista ou inventor famoso | 184 |
+| 5 | Coisas que grudam | Cite algo que gruda | 160 |
+| 6 | Aparelhos eletrônicos e eletrodomésticos | Cite um aparelho eletrônico ou eletrodoméstico | 164 |
+| 7 | Animais da África | Cite um animal que vive na África | 143 |
+
+## Dia 20 · seg 16/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Partes do carro | Cite uma peça ou parte do carro | 193 |
+| 2 | Supermercado | Cite algo que se compra no supermercado | 244 |
+| 3 | Animais que botam ovo | Cite um animal que bota ovo | 139 |
+| 4 | Palavras terminadas em -ão | Cite uma palavra que termina em "-ão" | 6260 |
+| 5 | Atores e atrizes de Hollywood | Cite um ator ou atriz de Hollywood | 211 |
+| 6 | Coisas que derretem | Cite algo que derrete | 143 |
+| 7 | Músicas brasileiras | Cite uma música brasileira (nome da música) | 380 |
+
+## Dia 21 · ter 17/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas que giram | Cite algo que gira | 195 |
+| 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 156 |
+| 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 234 |
+| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 193 |
+| 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 95 |
+| 6 | Livros | Cite um livro | 221 |
+| 7 | Pratos de outros países | Cite um prato típico de outro país | 215 |
+
+## Dia 22 · qua 18/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 225 |
+| 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 137 |
+| 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 145 |
+| 4 | Palavras em inglês do dia a dia | Cite uma palavra em inglês que o brasileiro usa no dia a dia | 251 |
+| 5 | Ferramentas | Cite uma ferramenta | 185 |
+| 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 193 |
+| 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 185 |
+
+## Dia 23 · qui 19/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas fedidas | Cite algo fedido | 152 |
+| 2 | Youtubers e influenciadores | Cite um youtuber, streamer ou influenciador brasileiro | 181 |
+| 3 | Cursos de faculdade | Cite um curso de faculdade | 176 |
+| 4 | Palavras com X no começo | Cite uma palavra que começa com X | 453 |
+| 5 | Coisas do quarto | Cite algo que tem num quarto | 177 |
+| 6 | Mamíferos | Cite um mamífero | 182 |
+| 7 | Tipos de pão | Cite um tipo de pão | 172 |
+
+## Dia 24 · sex 20/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Animais da fazenda | Cite um animal da fazenda | 138 |
+| 2 | Festa de aniversário | Cite algo que tem numa festa de aniversário | 196 |
+| 3 | Coisas quentes | Cite algo quente | 219 |
+| 4 | Padaria | Cite algo que se compra na padaria | 180 |
+| 5 | Palavras com Z no começo | Cite uma palavra que começa com Z | 672 |
+| 6 | Roupas | Cite uma peça de roupa | 161 |
+| 7 | Personagens de anime | Cite um personagem de anime | 275 |
+
+## Dia 25 · sáb 21/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Pilotos de Fórmula 1 | Cite um piloto de Fórmula 1 (de qualquer época) | 144 |
+| 2 | Sítio do Picapau Amarelo | Cite um personagem do Sítio do Picapau Amarelo | 60 |
+| 3 | Coisas azuis | Cite algo que é azul | 225 |
+| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 415 |
+| 5 | Flores | Cite uma flor | 158 |
+| 6 | Coisas do banheiro | Cite algo que tem num banheiro | 167 |
+| 7 | Recheios de pastel | Cite um recheio de pastel | 186 |
+
+## Dia 26 · dom 22/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Atletas brasileiros fora do futebol | Cite um atleta brasileiro que não seja jogador de futebol | 198 |
+| 2 | Coisas pontudas ou afiadas | Cite algo pontudo ou afiado | 174 |
+| 3 | Pontos turísticos | Cite um ponto turístico (do Brasil ou do mundo) | 200 |
+| 4 | Hobbies e passatempos | Cite um hobby ou passatempo | 185 |
+| 5 | Sabores de sorvete | Cite um sabor de sorvete | 187 |
+| 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 31 |
+| 7 | Coisas verdes | Cite algo que é verde | 181 |
+
 ## Na fila (ainda não formam um dia)
 
-- Meios de transporte
-- Danças
-- Personagens da Disney
-- Frutos do mar
-- Natal
+- Coisas vermelhas
+- Molhos
+- Coisas que fazem barulho
