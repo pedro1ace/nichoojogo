@@ -108,3 +108,18 @@ Tudo fica em `dados/fontes/engordar/`:
 
 O `engordar.py` não repete respostas e não deixa um apelido ligar duas respostas. Ele também pula o que está em `dados/bloqueadas.js`.
 Quando uma categoria passa de 1000 respostas, ela sai do pacote de férias em `FECHADAS` (`scripts/montar_jogo.py`).
+
+## Coletar muita resposta de uma vez (rodar na sua máquina)
+
+O `scripts/coletar_fontes.py` puxa do Wikidata (SPARQL), do IBGE (nomes do Censo) e do Open Library.
+Não precisa de chave de API. Daqui da nuvem esses sites são bloqueados, por isso ele roda na sua máquina.
+
+```bash
+python3 scripts/coletar_fontes.py            # tudo (demora; respeita limite dos sites)
+python3 scripts/coletar_fontes.py --listar   # o que ele cobre
+python3 scripts/coletar_fontes.py livros bandas --fonte wikidata
+python3 scripts/engordar.py && python3 scripts/fama.py && python3 scripts/fama.py --conferir
+python3 scripts/montar_jogo.py && python3 scripts/sincronizar_d1.py
+```
+
+Ele grava `dados/fontes/engordar/<cat>.<fonte>.txt`. Dá commit e push desses arquivos (ou de tudo), que eu encaixo.
