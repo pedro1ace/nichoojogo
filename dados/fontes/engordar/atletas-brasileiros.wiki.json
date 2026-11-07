@@ -1,19 +1,35 @@
 {
  "categorias": [
-  "Desportistas_do_Brasil"
+  "Medalhistas_olímpicos_do_Brasil",
+  "Medalhistas_olímpicos_de_ouro_do_Brasil",
+  "Medalhistas_olímpicos_de_prata_do_Brasil",
+  "Medalhistas_olímpicos_de_bronze_do_Brasil"
  ],
- "profundidade": 2,
+ "profundidade": 1,
  "excluir_categorias": [
   "futebol",
-  "dirigentes",
-  "treinadores",
-  "arbitros",
-  "comentaristas",
-  "naturais"
+  "Futebol"
  ],
  "excluir_de": [
-  "Futebolistas_do_Brasil"
+  "Futebolistas_do_Brasil",
+  "Futebolistas_olímpicos_do_Brasil",
+  "Jogadoras_de_futebol_feminino_do_Brasil",
+  "Jogadoras_de_futebol_feminino_por_clube_do_Brasil",
+  "Medalhistas_olímpicos_do_Brasil_no_futebol"
  ],
- "min_tamanho": 2500,
- "max": 6000
+ "profundidade_excluir": 3,
+ "excluir_titulos": [
+  "futebolista",
+  "renato augusto",
+  "cristiane",
+  "^marta",
+  "formiga",
+  "andressa",
+  "rafaelle",
+  "debinha",
+  "zaneratto",
+  "tamires",
+  "ludmila",
+  "gabi nunes"
+ ]
 }

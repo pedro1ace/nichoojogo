@@ -1,14 +1,14 @@
 {
  "categorias": [
-  "Atores_dos_Estados_Unidos",
-  "Atrizes_dos_Estados_Unidos"
+  "Óscar_de_melhor_ator",
+  "Óscar_de_melhor_atriz",
+  "Óscar_de_melhor_ator_secundário",
+  "Óscar_de_melhor_atriz_secundária"
  ],
- "profundidade": 1,
- "excluir_categorias": [
-  "porto rico",
-  "radio",
-  "teatro"
- ],
- "min_tamanho": 4000,
- "max": 5000
+ "profundidade": 0,
+ "excluir_titulos": [
+  "^oscar",
+  "^lista",
+  "^premio"
+ ]
 }

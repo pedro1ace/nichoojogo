@@ -140,34 +140,34 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
-| 2 | Séries de TV | Cite uma série de TV | 1727 |
+| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 660 |
 | 3 | Modelos de carro | Cite um modelo de carro | 2393 |
-| 4 | Atropelado por avião | Diga um animal que já foi atropelado por um avião. | 323 |
-| 5 | Sabores de pizza | Cite um sabor de pizza | 184 |
+| 4 | Atropelado por avião | Diga um animal que já foi atingido por um avião, segundo os registros oficiais de colisão com fauna (como a base da FAA, a aviação dos EUA). | 323 |
+| 5 | Sabores de pizza | Cite um sabor de pizza | 287 |
 | 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1183 |
-| 7 | Superpoderes | Cite um superpoder | 148 |
+| 7 | Superpoderes | Cite um superpoder | 247 |
 
 ## Dia 13 · seg 09/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Resgate dos bombeiros | Diga um bicho que os bombeiros já tiveram que resgatar. | 81 |
-| 2 | Animações Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 139 |
-| 3 | Churrasco | Cite algo que tem num churrasco | 204 |
-| 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 231 |
-| 5 | Formas geométricas | Cite uma forma geométrica | 102 |
-| 6 | Contos de fadas | Cite um personagem de conto de fadas | 156 |
-| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 106 |
+| 1 | Resgate dos bombeiros | Diga um bicho que já foi resgatado pelo Corpo de Bombeiros, em caso registrado e noticiado. | 136 |
+| 2 | Animações Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 148 |
+| 3 | Churrasco | Cite algo que tem num churrasco | 225 |
+| 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 547 |
+| 5 | Formas geométricas | Cite uma forma geométrica | 164 |
+| 6 | Contos de fadas | Cite um personagem de conto de fadas | 247 |
+| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 207 |
 
 ## Dia 14 · ter 10/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Meios de transporte | Cite um meio de transporte | 179 |
-| 2 | Danças | Cite uma dança | 147 |
+| 1 | Meios de transporte | Cite um meio de transporte | 322 |
+| 2 | Danças | Cite uma dança | 298 |
 | 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 401 |
-| 4 | Frutos do mar | Cite um fruto do mar | 81 |
-| 5 | Natal | Cite algo do Natal | 167 |
+| 4 | Frutos do mar | Cite um fruto do mar | 146 |
+| 5 | Natal | Cite algo do Natal | 299 |
 | 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 342 |
 | 7 | Sabores de bolo | Cite um sabor de bolo | 2847 |
 
@@ -176,7 +176,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Personagens de videogame | Cite um personagem de videogame | 843 |
-| 2 | Pintores e artistas | Cite um pintor ou artista plástico | 2574 |
+| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 977 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 392 |
 | 4 | Brinquedos | Cite um brinquedo | 532 |
 | 5 | Doenças | Cite uma doença | 1974 |
@@ -193,15 +193,15 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Estádios de futebol | Cite um estádio de futebol | 1541 |
 | 5 | Árvores | Cite uma árvore | 1386 |
 | 6 | Nomes masculinos | Cite um nome masculino | 1351 |
-| 7 | Bandas | Cite uma banda (de qualquer país) | 5506 |
+| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 329 |
 
 ## Dia 17 · sex 13/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Filmes brasileiros | Cite um filme brasileiro | 3339 |
+| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1745 |
 | 2 | Comida de rua | Cite uma comida de rua ou de lanchonete | 359 |
-| 3 | Aplicativos e sites | Cite um aplicativo ou site | 883 |
+| 3 | Redes sociais e mensageiros | Cite uma rede social ou aplicativo de mensagens | 126 |
 | 4 | Motivos para chorar | Cite um motivo para chorar | 427 |
 | 5 | Coisas cheirosas | Cite algo cheiroso | 1702 |
 | 6 | Nomes femininos | Cite um nome feminino | 856 |
@@ -239,7 +239,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Supermercado | Cite algo que se compra no supermercado | 8246 |
 | 3 | Animais que botam ovo | Cite um animal que bota ovo | 9947 |
 | 4 | Palavras terminadas em -ão | Cite uma palavra que termina em "-ão" | 6260 |
-| 5 | Atores e atrizes de Hollywood | Cite um ator ou atriz de Hollywood | 5052 |
+| 5 | Vencedores do Oscar de atuação | Cite um ator ou atriz que já ganhou o Oscar de atuação | 315 |
 | 6 | Coisas que derretem | Cite algo que derrete | 2036 |
 | 7 | Músicas brasileiras | Cite uma música brasileira (nome da música) | 1424 |
 
@@ -252,7 +252,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4014 |
 | 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 491 |
 | 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 544 |
-| 6 | Livros | Cite um livro | 3042 |
+| 6 | Livros dos anos 2000 | Cite um livro de ficção lançado entre 2000 e 2009 | 157 |
 | 7 | Pratos de outros países | Cite um prato típico de outro país | 215 |
 
 ## Dia 22 · qua 18/11/2026
@@ -262,7 +262,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 1581 |
 | 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1168 |
 | 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5088 |
-| 4 | Palavras em inglês do dia a dia | Cite uma palavra em inglês que o brasileiro usa no dia a dia | 488 |
+| 4 | Palavras aportuguesadas do inglês | Cite uma palavra que veio do inglês e ganhou grafia em português (como futebol, xampu ou sanduíche) | 141 |
 | 5 | Ferramentas | Cite uma ferramenta | 577 |
 | 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 344 |
 | 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 451 |
@@ -289,7 +289,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Padaria | Cite algo que se compra na padaria | 2996 |
 | 5 | Palavras com Z no começo | Cite uma palavra que começa com Z | 672 |
 | 6 | Roupas | Cite uma peça de roupa | 541 |
-| 7 | Personagens de anime | Cite um personagem de anime | 628 |
+| 7 | Personagens de anime | Cite um personagem de Dragon Ball, Naruto, One Piece ou Cavaleiros do Zodíaco | 461 |
 
 ## Dia 25 · sáb 21/11/2026
 
@@ -307,7 +307,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Atletas brasileiros fora do futebol | Cite um atleta brasileiro que não seja jogador de futebol | 2791 |
+| 1 | Medalhistas olímpicos do Brasil | Cite um atleta brasileiro que já ganhou medalha olímpica (fora do futebol) | 329 |
 | 2 | Coisas pontudas ou afiadas | Cite algo pontudo ou afiado | 410 |
 | 3 | Pontos turísticos | Cite um ponto turístico (do Brasil ou do mundo) | 2109 |
 | 4 | Hobbies e passatempos | Cite um hobby ou passatempo | 673 |

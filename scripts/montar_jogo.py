@@ -67,6 +67,9 @@ FECHADAS = {
     "frutos-do-mar",
     "dancas",
     "filmes-nota-imdb",
+    # fechadas em 07/11 (pedido do pedrinho): o tema aberto era grande demais para conferir
+    "livros", "atores-de-hollywood", "atletas-brasileiros", "bandas", "series-de-tv",
+    "pintores-e-artistas", "apps-e-sites", "palavras-em-ingles", "personagens-de-anime",
     # pacote de férias (pedido de 07/11): temas que o brasileiro médio conhece; a lista cobre o
     # que o público lembra, e as recusadas do plantão diário completam o resto. As que passaram de
     # 1000 com scripts/engordar.py (07/11) saíram daqui e viraram abertas como as outras.

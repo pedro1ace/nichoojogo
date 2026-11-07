@@ -1,5 +1,5 @@
 # titulo: Resgate dos bombeiros
-# pergunta: Diga um bicho que os bombeiros já tiveram que resgatar.
+# pergunta: Diga um bicho que já foi resgatado pelo Corpo de Bombeiros, em caso registrado e noticiado.
 # formato: uma resposta por linha; apelidos separados por " | "
 Gato | gatinho | filhote de gato | gato na árvore | gato no telhado
 Cachorro | cão | cachorrinho | filhote de cachorro | cadela
@@ -25,10 +25,10 @@ Hamster
 Porquinho-da-índia
 Furão
 Cobra | serpente | jiboia | píton | sucuri | cascavel | jararaca
-Lagarto | iguana | teiú
+Lagarto | iguana | teiú | lagarto teiú
 Tartaruga | jabuti | cágado
 Peixe
-Vaca | boi | bezerro | touro | gado
+Vaca | boi | bezerro | touro | gado | vaca atolada
 Ovelha | carneiro | cordeiro
 Cabra | bode
 Porco | leitão
@@ -43,7 +43,7 @@ Abelha | enxame | enxame de abelhas | colmeia
 Vespa | marimbondo
 Capivara
 Jacaré
-Macaco | mico | sagui
+Macaco | mico | sagui | mico-estrela
 Gambá | sariguê | saruê
 Tamanduá
 Tatu
@@ -52,7 +52,7 @@ Onça | onça-pintada | jaguatirica
 Lobo-guará
 Bicho-preguiça | preguiça
 Jumento | burro | jegue | mula
-Bugio
+Bugio | macaco bugio
 Quati
 Anta
 Urubu
@@ -82,3 +82,59 @@ Lagartixa
 Calango
 Caracol
 Siri | caranguejo
+# entraram por scripts/engordar.py (dados/fontes/engordar/bichos-resgatados-por-bombeiros.txt)
+Coral-verdadeira | cobra-coral
+Gambá-de-orelha-branca
+Macaco-prego
+Tamanduá-bandeira
+Tamanduá-mirim
+Tatu-galinha
+Paca
+Cutia
+Mão-pelada
+Ariranha
+Raposa-do-campo
+Cachorro-do-mato
+Onça-parda | suçuarana | puma
+Gato-do-mato
+Veado-catingueiro
+Cervo-do-pantanal
+Javali
+Marreco
+Peru
+Coruja-buraqueira
+Coruja-suindara | suindara
+Gavião-carijó
+Carcará
+Arara-azul
+Arara-vermelha
+Papagaio-verdadeiro
+Maritaca
+Canário
+Bem-te-vi
+Sabiá
+João-de-barro
+Beija-flor
+Garça-branca
+Socó
+Biguá
+Pinguim-de-magalhães
+Atobá
+Fragata
+Albatroz
+Tartaruga-verde
+Tartaruga-de-couro
+Jacaré-do-papo-amarelo
+Jacaré-açu
+Sapo-cururu
+Perereca
+Escorpião-amarelo
+Aranha-armadeira
+Lacraia | centopeia
+Baleia-jubarte
+Baleia-franca
+Boto-cinza
+Peixe-boi-marinho
+Lobo-marinho
+Leão-marinho
+Elefante-marinho
