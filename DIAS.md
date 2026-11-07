@@ -141,7 +141,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
 | 2 | Séries de TV | Cite uma série de TV | 1727 |
-| 3 | Modelos de carro | Cite um modelo de carro | 2388 |
+| 3 | Modelos de carro | Cite um modelo de carro | 2393 |
 | 4 | Atropelado por avião | Diga um animal que já foi atropelado por um avião. | 323 |
 | 5 | Sabores de pizza | Cite um sabor de pizza | 184 |
 | 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1183 |
