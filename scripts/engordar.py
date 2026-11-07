@@ -64,6 +64,11 @@ def limpo(nome: str) -> bool:
     return len(t.replace(" ", "")) >= 2 and not t.isdigit()
 
 
+def chaves(nome: str, cat_id: str) -> set[str]:
+    # fama.chaves ignora formas com menos de 3 letras; "Og" (rei de Basã) ainda é uma resposta
+    return fama.chaves(nome, cat_id) or ({normalizar(nome)} if limpo(nome) else set())
+
+
 def engordar(cat_id: str, gravar: bool = True) -> tuple[int, int, int]:
     """Devolve (respostas antes, respostas novas, apelidos novos em respostas antigas)."""
     arq = CATEGORIAS / f"{cat_id}.txt"
@@ -72,7 +77,7 @@ def engordar(cat_id: str, gravar: bool = True) -> tuple[int, int, int]:
     dono: dict[str, str] = {}  # chave -> resposta (só as que já estão ou já entraram)
     for r in cat["respostas"]:
         for nome in [r["resposta"], *r["apelidos"]]:
-            for k in fama.chaves(nome, cat_id):
+            for k in chaves(nome, cat_id):
                 dono.setdefault(k, r["resposta"])
     linhas = arq.read_text(encoding="utf-8").rstrip("\n").split("\n")
     pos = {l.split("|")[0].strip(): i for i, l in enumerate(linhas) if l.strip() and not l.startswith("#")}
@@ -85,7 +90,7 @@ def engordar(cat_id: str, gravar: bool = True) -> tuple[int, int, int]:
             nomes = [n for n in dict.fromkeys(nomes) if limpo(n) and not bloqueada(n, lista_negra)]
             if not nomes:
                 continue
-            chaves_nome = fama.chaves(nomes[0], cat_id)
+            chaves_nome = chaves(nomes[0], cat_id)
             ja = {dono[k] for k in chaves_nome if k in dono}
             if ja:
                 # já existe: só os apelidos que ninguém tem vão para a linha dela
@@ -94,7 +99,7 @@ def engordar(cat_id: str, gravar: bool = True) -> tuple[int, int, int]:
                     continue
                 extras = []
                 for ap in nomes[1:]:
-                    ks = fama.chaves(ap, cat_id)
+                    ks = chaves(ap, cat_id)
                     if ks and not any(k in dono for k in ks):
                         extras.append(ap)
                         for k in ks:
@@ -110,7 +115,7 @@ def engordar(cat_id: str, gravar: bool = True) -> tuple[int, int, int]:
             for k in chaves_nome:
                 dono[k] = principal
             for ap in nomes[1:]:
-                ks = fama.chaves(ap, cat_id)
+                ks = chaves(ap, cat_id)
                 if not ks or any(k in dono and dono[k] != principal for k in ks):
                     continue
                 aceitos.append(ap)
