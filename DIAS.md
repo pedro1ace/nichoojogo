@@ -128,7 +128,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Motivos para rir | Cite um motivo para rir | 1503 |
-| 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1446 |
+| 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1447 |
 | 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1262 |
 | 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1201 |
 | 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4711 |
