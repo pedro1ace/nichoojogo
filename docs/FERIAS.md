@@ -84,3 +84,27 @@ python3 scripts/fama.py --conferir
 ```
 
 As respostas que entram assim ficam como raras (fora da simulação), o que é o certo para elas.
+
+## Engordar sem API (dumps da Wikipédia)
+
+A API da Wikipédia e o Wikidata limitam demais para coletar milhares de respostas. O caminho que
+escala usa os dumps públicos da Wikipédia PT (categorias, páginas e redirecionamentos):
+
+```bash
+python3 scripts/coletar_wikipedia.py --baixar      # baixa os dumps para dados/brutos/ptwiki (fora do git)
+python3 scripts/coletar_wikipedia.py --preparar    # monta dados/brutos/ptwiki/ptwiki.db (sqlite)
+python3 scripts/coletar_wikipedia.py mamiferos     # lê a receita <cat>.wiki.json e grava <cat>.wiki.txt
+python3 scripts/engordar.py mamiferos              # acrescenta à lista (nunca tira nada)
+python3 scripts/fama.py mamiferos                  # refaz fama e pontos
+python3 scripts/fama.py --conferir
+```
+
+Tudo fica em `dados/fontes/engordar/`:
+
+- `<cat>.wiki.json` é a receita: categorias da Wikipédia, profundidade, o que excluir.
+- `<cat>.wiki.txt` é o que saiu dela.
+- `<cat>.txt` é a lista escrita à mão.
+- `emprestimos.json` liga uma categoria a outras cujas respostas também valem nela (por exemplo, supermercado pega frutas, queijos e as demais).
+
+O `engordar.py` não repete respostas e não deixa um apelido ligar duas respostas. Ele também pula o que está em `dados/bloqueadas.js`.
+Quando uma categoria passa de 1000 respostas, ela sai do pacote de férias em `FECHADAS` (`scripts/montar_jogo.py`).

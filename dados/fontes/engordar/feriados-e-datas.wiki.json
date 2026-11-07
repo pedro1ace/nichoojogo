@@ -1,0 +1,26 @@
+{
+ "categorias": [
+  "Feriados_do_Brasil",
+  "Datas_comemorativas",
+  "Datas_comemorativas_do_Brasil",
+  "Feriados"
+ ],
+ "profundidade": 2,
+ "excluir_categorias": [
+  "por pais$"
+ ],
+ "so_titulos": [
+  "^(dia|dias|festa|festas|semana|mes|natal|pascoa|ano novo|vespera|reveillon|carnaval|corpus|finados|halloween|independencia|proclamacao|tiradentes|consciencia|sexta|quarta|domingo|sabado|quinta|segunda|terca|noite|hanuca|ramad|diwali|holi|ano|black friday|cyber|thanksgiving|acao de gracas|saint|sao |santo|nossa senhora|epifania|pentecostes|assuncao|anunciacao|imaculada|todos os santos|aniversario|data|feriado|jornada|white day|valentine|namorados)"
+ ],
+ "excluir_titulos": [
+  "\\(filme",
+  "\\(cancao",
+  "\\(album",
+  "\\(single",
+  "\\(episodio",
+  "massacre",
+  "cinderella",
+  "^datas comemorativas$",
+  "^anos europeus"
+ ]
+}

@@ -9,7 +9,7 @@ Cachorro | latido
 Bebê | choro de bebê
 Moto
 Avião
-Bateria
+Bateria | bateria acústica | bateria eletrônica
 Sino
 Campainha
 Liquidificador
@@ -114,31 +114,31 @@ Trator
 Escavadeira
 Betoneira
 Bate-estaca
-Guitarra
-Violão
+Guitarra | guitarra elétrica
+Violão | violao de nylon | violão de aço | violão de 7 cordas | violão sete cordas | Guitarra clássica
 Bumbo
 Tambor
 Pandeiro
 Surdo
-Cuíca
+Cuíca | puíta
 Trompete
 Corneta
 Vuvuzela
 Trombone
-Saxofone
-Prato
+Saxofone | sax
+Prato | chimbal | hi-hat | crash | ride
 Chocalho
 Maraca | maracas
 Piano
 Xilofone
-Gaita
-Sanfona
+Gaita | harmônica | gaita de boca
+Sanfona | acordeão | acordeom | gaita ponto | gaita de botão
 Berrante
 Megafone
 Microfone
 Caixa registradora
 Impressora
-Teclado
+Teclado | sintetizador | synth
 Máquina de escrever
 Relógio | tique-taque
 Relógio cuco | cuco
@@ -231,3 +231,576 @@ Sirene de ambulância
 Ambulância
 Viatura de polícia
 Caminhão de bombeiro
+# entraram por scripts/engordar.py (dados/fontes/engordar/coisas-que-fazem-barulho.txt)
+Sirene de polícia
+Sirene de bombeiro
+Buzina de caminhão
+Buzina de ônibus
+Apito de trem
+Avião decolando
+Escapamento
+Carro rebaixado com som
+Paredão de som
+Alto-falante
+Microfonia
+TV alta
+Obra do vizinho
+Martelete
+Batedeira
+Moedor de café
+Secadora
+Lava-louça
+Chaleira apitando
+Pipoca estourando
+Pipoqueira
+Óleo quente
+Ar-condicionado velho
+Impressora matricial
+Teclado mecânico
+Mouse (clique)
+Computador velho
+Cooler do notebook
+Modem discado
+Internet discada
+Fax
+Telefone tocando
+Celular tocando
+Toque de celular
+Notificação do celular
+Vibração do celular
+Áudio do WhatsApp
+Arcade
+Máquina caça-níquel
+Cassino
+Bingo
+Grito de gol
+Gol
+Traque
+Biribinha
+Estalinho
+Revólver
+Metralhadora
+Chuva no telhado
+Granizo
+Vento forte
+Furacão
+Tornado
+Avalanche
+Onda do mar
+Rio correndo
+Goteira
+Descarga
+Cano
+Roncar
+Estômago roncando
+Mastigar de boca aberta
+Chiclete estalando
+Estalar os dedos
+Bater palma
+Criança birrenta
+Escola (recreio)
+Recreio
+Balada
+Show de rock
+Tamborim
+Caixa (tambor) | caixa clara | tarol
+Agogô
+Reco-reco
+Triângulo | ferrinho
+Gongo | gongue
+Sineta
+Interfone
+Porta rangendo
+Dobradiça rangendo
+Janela batendo
+Portão de garagem
+Portão eletrônico
+Elevador
+Escada rolante
+Salto alto no chão
+Sapato social
+Chinelo batendo
+Bola quicando
+Basquete
+Tênis (raquete)
+Pingue-pongue
+Boliche
+Taco de beisebol
+Buzina de bicicleta
+Cachorro latindo
+Gato miando
+Gato no cio
+Galo cantando
+Ganso
+Peru
+Boi
+Jumento
+Burro
+Cabra
+Ovelha
+Leão rugindo
+Tigre
+Lobo uivando
+Macaco-uivador | bugio
+Arara
+Periquito
+Gralha
+Corvo
+Sabiá
+Quero-quero
+Seriema
+Pica-pau
+Perereca
+Mosca
+Marimbondo
+Golfinho
+Foca
+Tiranossauro
+Dragão
+Monstro
+Fantasma
+Zumbi
+Panela batendo | panelaço
+Colher na panela
+Copo quebrando
+Papel amassando
+Bolha estourando
+Balão estourando
+Champanhe abrindo
+Rolha
+Lata de refrigerante abrindo
+Garrafa abrindo
+Unha no quadro
+Giz no quadro
+Lousa
+Cadeira arrastando
+Móvel arrastando
+Mudança do vizinho
+Carrinho de supermercado
+Mala de rodinha
+Carrinho de bebê
+Trem de pouso
+Ônibus freando
+Freio
+Pneu cantando
+Corrida de carro
+Stock car
+Kart
+Motocross
+Buzina de navio
+Farol de neblina
+Locomotiva
+Trem-bala
+Bonde
+Música do caminhão de gás
+Vendedor ambulante
+Feira livre
+Feirante gritando
+Leilão
+Torcida organizada
+Bateria de escola de samba
+Fanfarra
+Banda marcial
+Orquestra
+Coral
+Pastor gritando
+Comício
+Carro de som de político
+Rádio de pilha
+Vitrola
+Disco riscado
+Karaokê
+Videokê
+Cantor desafinado
+# entraram por scripts/engordar.py (dados/categorias/instrumentos-musicais.txt)
+Violino
+Flauta | flauta doce | flauta transversal | flauta transversa
+Baixo | contrabaixo | baixo elétrico | contrabaixo acústico | rabecão
+Cavaquinho
+Violoncelo | cello
+Harpa
+Clarinete
+Ukulele
+Berimbau
+Zabumba
+Atabaque
+Órgão
+Tuba
+Oboé
+Fagote
+Viola caipira | viola | viola de dez cordas | viola sertaneja
+Bandolim
+Banjo
+Castanhola | Castanholas
+Trompa
+Flautim | piccolo | pífano
+Bongô
+Marimba
+Cítara
+Alaúde
+Didgeridoo | didjeridu
+Gaita de foles | gaita galega | Gaita de fole
+Kalimba | mbira | piano de dedo
+Theremin | teremim
+Sitar
+Tabla
+Rabeca
+Ganzá
+Caxixi
+Vibrafone
+Celesta
+Fole de oito baixos | oito baixos
+Serrote
+Viola de arco | viola clássica
+Bumbo leguero | Bombo legüero
+Pandeirola | meia lua
+Washboard
+Carrilhão
+Clavinete | clavinet
+Cravo
+Piano de cauda
+Piano elétrico
+Órgão hammond | hammond
+Flugelhorn | fliscorne
+Bombardino | eufônio | euphonium
+Sousafone
+Trompa de caça
+Saxofone alto | sax alto
+Saxofone tenor | sax tenor
+Saxofone soprano | sax soprano
+Saxofone barítono | sax barítono
+Clarone | clarinete baixo | clarineta baixo
+Corne inglês
+Contrafagote
+Banjo de quatro cordas
+Ukulele baixo
+Gaita cromática
+Escaleta | melódica
+Steel drum | steelpan | tambor de aço
+Timbales
+Tímpano | tímpanos | timbale de orquestra
+Congas | conga | tumbadora
+Cajón
+Repique | repinique
+Rebolo
+Tantã | tan-tan
+Caixa de guerra
+Pandeiro de couro
+Agbê | xequerê | shekere
+Afoxé
+Matraca
+Apito de samba
+Ganzá de lata
+Chocalho de platinela
+Tambor falante | talking drum
+Djembê | Jembê
+Dumbek | darbuka | derbak
+Bodhrán
+Taiko
+Cajón peruano
+Washtub bass
+Gaita irlandesa | uilleann pipes
+Flauta de pan | flauta de pã | siku | zampoña
+Ocarina
+Kazoo
+Viola de cocho | viola de coxo
+Rabeca nordestina
+Viola machete | machete
+Viola de buriti
+Violão tenor
+Cavaco | cavaquinho de choro
+Banjo cavaquinho | banjolim
+Bandola
+Guitarra portuguesa
+Guitarra baiana
+Guitarra havaiana | steel guitar | lap steel
+Pedal steel
+Dobro | violão ressonador | resonator
+Contrabaixo de pau
+Charango
+Cuatro | cuatro venezuelano
+Tres cubano | tres
+Requinto
+Vihuela
+Guitarrón
+Bandurria
+Balalaica | balalaika
+Domra
+Gusli
+Bouzouki | buzuki
+Saz | bağlama
+Oud | alaúde árabe
+Kora
+Ngoni
+Valiha
+Koto
+Shamisen | Samisém
+Biwa
+Shakuhachi
+Erhu
+Pipa
+Guzheng
+Yangqin
+Dizi
+Sheng
+Suona
+Gayageum
+Haegeum
+Sarangi
+Sarod
+Santur | santoor
+Tanpura | tambura
+Veena
+Bansuri
+Mridangam
+Dhol
+Dholak
+Harmônio | harmonium
+Gamelão | gamelan
+Angklung
+Kulintang
+Duduk
+Zurna
+Kaval
+Ney
+Qanun | kanun
+Kemenche
+Rubab
+Dutar
+Tar
+Setar
+Kamancheh
+Morin khuur
+Hardanger fiddle | violino de hardanger
+Nyckelharpa
+Kantele
+Zither | cítara de mesa
+Saltério
+Dulcimer | dulcimer dos apalaches
+Hammered dulcimer
+Címbalo | cimbalom
+Lira
+Cítola
+Harpa celta
+Harpa paraguaia
+Harpa de boca | berimbau de boca | trompa de Paris
+Viela de roda | sanfona de roda | hurdy-gurdy
+Bandoneón
+Concertina
+Acordeão de botão
+Gaita de oito baixos
+Harmônica de vidro | harmônica de copos
+Copos musicais
+Ondas Martenot | ondes martenot
+Mellotron
+Moog
+Vocoder
+Keytar
+Talk box
+Sampler
+Drum machine | caixa de ritmos
+Toca-discos | pick-up | turntable
+Stylophone
+Otamatone
+Hang | handpan | hang drum
+Tambor de língua | steel tongue drum
+Glockenspiel | lira de marcha | metalofone
+Campanas tubulares | sinos tubulares
+Crotales
+Chimes | mark tree | carrilhão de vento
+Cowbell | campana | sino de vaca
+Wood block | bloco de madeira
+Temple block
+Clave | claves
+Guiro
+Vibraslap
+Flexatone
+Waterphone
+Spring drum | thunder drum
+Cuíca de boca
+Pau de chuva | rainstick
+Caxixi de palha
+Mineiro | chocalho de metal
+Ilu
+Rum, rumpi e lê | rum | rumpi
+Alfaia
+Mineiro ganzá
+Tambor de crioula
+Tambor de mina
+Caixa do divino
+Viola dinâmica
+Pífano de taboca
+Gaita de taquara
+Marimbau
+Urucungo
+Bumba
+Tamborim de couro
+Ganzá de cesto
+Canzá
+Atabaque rum
+Berimbau gunga | gunga
+Berimbau médio
+Berimbau viola
+Cuíca de lata
+Tambor de onça
+Matraca de São João
+Bombo
+Tamboril
+Txalaparta
+Pandereta
+Zambomba
+Cajón flamenco
+Gaita de fole escocesa
+Cornamusa
+Charamela
+Sacabuxa
+Corneto
+Serpentão | serpent
+Ofiocleide
+Cromorne
+Rauschpfeife
+Flauta de bisel
+Flauta de tamborileiro
+Tin whistle | apito irlandês
+Pife
+Quena
+Quenacho
+Antara
+Tarka
+Caja vidalera
+Cajón de tapeo
+Marimba de chonta
+Arpa llanera
+Cuatro porto-riquenho
+Jarana
+Marimbol
+Kalimba de caixa
+Balafon | Balafom
+Udu
+Mbira dzavadzimba
+Gankogui
+Kpanlogo
+Ashiko
+Bougarabou
+Dundun | Dundum
+Sabar
+Bendir
+Riq
+Tamborim de mão
+Daf
+Frame drum | tambor de moldura
+Tabla indiana
+Pakhawaj
+Ghatam
+Kanjira
+Tavil
+Nadaswaram
+Shehnai
+Ektara
+Dotara
+Gopichand
+Morsing | berimbau de boca indiano
+Sanxian
+Ruan
+Hulusi
+Xiao
+Guqin
+Bianzhong
+Muyu
+Kagura suzu
+Hichiriki
+Ryuteki
+Sho
+Taegeum
+Janggu
+Buk
+Piri
+Kkwaenggwari
+Gong chinês | tam-tam
+Gongo tailandês | khong wong
+Ranat
+Khim
+Khene | khaen
+Đàn bầu
+Đàn tranh
+Kecapi
+Suling
+Rebab
+Kendang
+Sasando
+Bonang
+Saron
+Gender
+Kenong
+Didjeridu de bambu
+Bullroarer | zunidor
+Tambor de sapo
+Lithophone | litofone
+Vibrafone de pedra
+Órgão de tubos
+Órgão de foles
+Harmônio indiano
+Órgão a vapor | calíope
+Realejo
+Pianola
+Piano de brinquedo
+Piano preparado
+Fortepiano
+Clavicórdio
+Virginal
+Espineta
+Harpsichord
+Celesta de teclado
+Acordeão piano
+Teclado arranjador
+Sintetizador modular
+Arpa de laser | harpa laser
+Guitarra de doze cordas | violão 12 cordas
+Guitarra barítono
+Baixo fretless
+Baixo de seis cordas
+Violão de cordas de aço
+Violino elétrico
+Violoncelo elétrico
+Contrabaixo elétrico vertical
+Viola da gamba
+Viola d'amore
+Baryton
+Rabeca de bacia
+Arpeggione
+Trompete piccolo
+Trompete de vara
+Cornetim
+Clarim
+Trombone de vara
+Trombone de pistão
+Trombone baixo
+Tuba wagneriana
+Helicon
+Mellofone
+Alto horn
+Saxhorn | Saxotrompa
+Tuba de pistos
+Saxofone sopranino
+Saxofone baixo
+Saxofone contrabaixo
+Clarinete requinta | requinta
+Clarinete em lá
+Clarinete alto
+Corne di bassetto | corne de basseto
+Oboé d'amore
+Heckelfone
+Sarrusofone
+Flauta baixo
+Flauta contralto | Flauta alto
+Flauta irlandesa
+Flauta nativa americana
+Flauta de osso
+Apito de pássaro
+Gaita de lata
+Pente com papel
+Colher | colheres
+Serrote musical
+Tábua de lavar
+Garrafa | garrafas
+Beatbox

@@ -1,0 +1,32 @@
+{
+ "categorias": [
+  "Brinquedos",
+  "Brinquedos_por_tipo",
+  "Brinquedos_por_material",
+  "Marcas_de_brinquedos"
+ ],
+ "profundidade": 1,
+ "excluir_categorias": [
+  "fabricantes",
+  "museus",
+  "inventores",
+  "lojas",
+  "jogos",
+  "ficcao",
+  "consola",
+  "montanha",
+  "parques",
+  "videogame",
+  "emulad",
+  "desenhos",
+  "series",
+  "filmes"
+ ],
+ "excluir_titulos": [
+  "campeonato",
+  "^montanha",
+  "emulador",
+  "\\(serie",
+  "\\(filme"
+ ]
+}

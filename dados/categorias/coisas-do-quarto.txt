@@ -3,33 +3,33 @@
 # formato: uma resposta por linha; apelidos separados por " | "
 Cama
 Travesseiro
-Guarda-roupa | armário | roupeiro
-Cobertor | edredom | coberta
+Guarda-roupa | armário | roupeiro | Assumida | Guardarroupas
+Cobertor | edredom | coberta | Edredão | Edredons
 Lençol
 Abajur | luminária
 Criado-mudo | mesa de cabeceira
 Colchão
 Cômoda
 Espelho
-Ventilador
+Ventilador | Ventoinha | Circulador
 Ar-condicionado | ar condicionado
-Televisão | TV
+Televisão | TV | televisor | Tevê | Caja tonta | Teledifusão | Televisiva | Televisivo | Afiliada | Televisão de Led | Canal de Televisão | Aparelho de televisão | Aparelho de TV | Receptor de televisão
 Cortina
 Janela
 Porta
 Tapete
 Escrivaninha
 Cadeira
-Computador | PC | notebook
-Celular
+Computador | PC | notebook | laptop
+Celular | smartphone
 Carregador
 Despertador | relógio
 Roupa | roupas
 Cabide
-Sapato | tênis
+Sapato | tênis | Çapato
 Chinelo | pantufa
 Pijama
-Bicho de pelúcia | pelúcia | ursinho
+Bicho de pelúcia | pelúcia | ursinho | Animal de pelúcia | Boneco de peluche | Boneco de pelúcia
 Quadro
 Pôster
 Foto | porta-retrato
@@ -40,14 +40,14 @@ Interruptor
 Tomada
 Cesto de roupa
 Lixeira
-Mochila
-Bolsa
+Mochila | mochila de rodinhas | mochilinha
+Bolsa | Bolsa feminina
 Videogame
 Controle remoto
-Fone de ouvido
-Caixa de som
+Fone de ouvido | fone
+Caixa de som | caixinha de som
 Violão
-Brinquedo
+Brinquedo | Brinquedinho
 Berço
 Beliche
 Cama box | box
@@ -62,9 +62,9 @@ Sofá-cama
 Rede
 Persiana
 Blackout
-Ventilador de teto
+Ventilador de teto | Ventoinha de teto
 Aquecedor
-Umidificador
+Umidificador | Humidificador
 Penteadeira
 Sapateira
 Baú
@@ -75,11 +75,11 @@ Difusor
 Planta
 Calendário
 Mural
-Caderno
-Caneta
+Caderno | caderninho
+Caneta | canetinha bic
 Agenda
 Diário
-Óculos
+Óculos | Óculos de grau | Eyewear | Óculus
 Remédio
 Copo d'água | copo
 Garrafa de água
@@ -88,8 +88,8 @@ Maquiagem
 Joias | porta-joias
 Bijuteria
 Relógio de pulso
-Meia
-Cueca
+Meia | Carpim | Peúgas
+Cueca | Roupa íntima masculina
 Calcinha
 Toalha
 Roupa suja
@@ -101,7 +101,7 @@ Mosquito
 Gato
 Cachorro
 Tablet
-Kindle
+Kindle | leitor digital
 Livro de cabeceira
 Bíblia
 Terço
@@ -153,7 +153,7 @@ Medalha
 Bola
 Patins
 Skate
-Bicicleta
+Bicicleta | Bike | Historia da bicicleta
 Violino
 Teclado
 Guitarra
@@ -178,3 +178,2779 @@ Trocador
 Fraldário
 Móbile
 Babá eletrônica
+# entraram por scripts/engordar.py (dados/categorias/moveis.txt)
+Sofá
+Rack
+Banqueta | banco
+Aparador
+Buffet | bufê
+Cristaleira
+Balcão
+Bancada
+Divã | Prima-dona
+Chaise | chaise longue
+Namoradeira
+Cadeira de balanço | Cadeira de baloiço | Cadeia de baloiço
+Cadeira de praia
+Espreguiçadeira
+Mesa de centro
+Mesa de jantar
+Mesa de canto
+Mesinha
+Mesa de escritório
+Mesa dobrável
+Cadeira de escritório
+Armário de cozinha
+Paneleiro
+Fruteira
+Arara
+Mancebo
+Banco de madeira
+Banquinho de cozinha
+Tamborete
+Mocho
+Painel de TV | painel
+Home theater
+Bar | barzinho
+Adega
+Carrinho de chá
+Carrinho bar
+Escrivaninha com gaveta
+Cama king
+Cama queen
+Cama de solteirão
+Biombo
+Lustre
+Estofado
+Recamier
+Otomana
+Sofá retrátil
+Sofá de canto | sofá em L
+Sofá de dois lugares
+Sofá de três lugares
+Poltrona do papai | poltrona reclinável
+Cadeira de rodas
+Cadeirinha de bebê
+Cadeirão | cadeira de alimentação
+Cercadinho
+Armário de banheiro
+Gabinete
+Bancada de banheiro
+Lavanderia
+Tanque
+Sapateira de porta
+Estante de ferro
+Prateleira de parede
+Cômoda de bebê
+Guarda-louça
+Cristaleira antiga
+Arca
+Oratório
+Penteadeira com espelho
+Mesa de passar roupa | tábua de passar
+Mesa de sinuca
+Mesa de pingue-pongue
+Mesa de pebolim | pebolim
+Mesa de bilhar
+Escrivaninha de canto
+Bancada de estudos
+Mesa de computador
+Mesa de cabeceira suspensa
+Rack suspenso
+Estante modular
+Banco de jardim
+Cadeira de jardim
+Ombrelone
+Mesa de plástico
+Cadeira de plástico
+Cadeira de madeira
+Cadeira de ferro
+Cadeira de vime
+Cadeira Eames
+Cadeira de diretor
+Cadeira dobrável
+Banqueta alta
+Banco alto
+Bistrô
+Mesa redonda
+Mesa quadrada
+Mesa retangular
+Mesa de vidro
+Mesa de mármore
+Mesa de madeira
+Mesa extensível
+Mesa de apoio
+Mesa lateral
+Mesa de cabeceira de vidro
+Console
+Credenza
+Secretária
+Cômoda com espelho
+Armário embutido
+Guarda-roupa de casal
+Guarda-roupa de solteiro
+Armário de aço
+Arquivo
+Armário de escritório
+Estante de aço
+Prateleira de madeira
+Prateleira de vidro
+Porta-chapéu
+Sapateira giratória
+Banco baú
+Sofá-baú
+Cama baú
+Cama com gavetas
+Cama infantil
+Cama montessoriana
+Minicama
+Moisés
+Cama de cachorro
+Arranhador
+Treliche
+Cama auxiliar
+Cama retrátil
+Cama de armar
+Mini berço
+Mesinha de cabeceira
+Pufe
+Cadeira do papai
+Cadeira de jantar
+Cadeira giratória
+Balanço
+Mesa de estudos
+Bibliotecário
+Mesa de cozinha
+Despenseiro
+Ilha de cozinha
+Arquivo de aço
+Mesa de reunião
+Púlpito
+Penteadeira de camarim
+Espelho de chão
+Porta-guarda-chuva
+Banco de praça
+Mesa de jardim
+Conjunto de jardim
+Guarda-sol
+Mesa de piquenique
+Mesa de passar
+Divisória
+Estante vazada
+Rack de parede
+Painel ripado
+Escadinha
+Banqueta-escada
+Mesa de armar
+Cadeira Thonet
+Poltrona de vime
+Chiqueirinho
+Casinha de cachorro
+Gaiola
+Aquário (móvel)
+Almofadão
+Cômoda de gavetas
+Altar | Altar-mor | Altar Dourado | Altar maior | Θυσία | Agnistério
+Genuflexório
+Confessionário
+Cadeira de barbeiro
+Cadeira de dentista
+Maca
+Mesa cirúrgica
+Carteira escolar
+Carteira
+Mesa do professor
+Trono
+Cadeira de imperador
+Cadeira de cinema
+Poltrona de cinema
+Banco de igreja
+Rack de bicicleta
+Bicicletário
+Rack de vinho
+Mesa de hall
+Aparador de hall
+Sapateira de hall
+Rede de dormir | Redes de dormir
+Terminologia do mobiliário | Glossário de termos do mobiliário | Lista de termos do mobiliário | Espaldar
+Mobiliário de Lina Bo Bardi
+Indústria moveleira no Brasil
+Cadeira Portuguesa | Cadeira Gonçalo
+Roupa de cama
+Marchetaria | Marchetado | Marqueteria
+Cadeiral do Mosteiro de Santa Cruz
+Dança de mesa | Dança da mesa
+Intársia | Entársia | Intarsia | Intársias
+Banco ritual taíno
+Poltrona dos Dragões | Fauteuil aux Dragons
+Rede de descanso
+Mesa do Resolute | Mesas do Resoluto
+Cama-armário | Armário-cama | Cama-caixa | Cama fechada
+Mobiliário | Indústria moveleira | Mobília | Indústria de móveis | Móveis para escritório | Carreteira
+Chabudai
+Conjunto de arcas do Museu Paulista
+Lierna | Lierna (cadeira)
+Cremme
+Cadeira elétrica | Cadeira eléctrica
+Cama patente
+Laskasas
+Sofá Chesterfield
+Soban
+Layout funcional
+Cadeira Tulipa
+Claviculário eletrônico | Clavium
+Estante de aço aramado | Estante de arame
+Cátedra | Trono episcopal
+Étagère
+Cadeira Vermelha e Azul | Cadeira em vermelho e azul | Cadeira em Vermelho e Azul | Cadeira Vermelho-Azul | Cadeira vermelho-azul | Cadeira Vermelho e Azul
+Cadeira Chiavari
+Assento
+Cadeira do dragão
+Sofá Marshmallow
+Assentos do aeroporto
+Plia | Plia (cadeira)
+Fauteuil
+Cadeiral | Cadeiral do coro | Cadeirais | Banco do coro
+Cadeira dos Leões
+Mesa de camilha | Camilha
+Escabelo
+Sofá Biedermeier
+Canapé
+Tapeceiro | Estofador
+Estrado
+Valete de roupas
+Bancos da Tribuna
+Atril
+Zafu
+Mesa de xadrez
+Colchão inflável | Colchão inflável (colchão de ar)
+Lençol térmico | Lençol termico | Manta elétrica | Cobertor elétrico | Manta térmica | Cobertor térmico
+Tábua de desenho | Estirador
+Faldistório
+Causeuse
+Gueridom
+Piorra
+Bandeja giratória | Lazy Susan
+Cadeira Louis Ghost
+Mesa de vinho
+# entraram por scripts/engordar.py (dados/categorias/eletronicos.txt)
+Geladeira | refrigerador | Congelador | Frigorifico | Geleira
+Micro-ondas | microondas
+Máquina de lavar | lava-roupas | máquina de lavar roupa | Lavadora de roupas
+Liquidificador | Liquidificadora
+Fogão
+Rádio
+Ferro de passar | ferro
+Secador de cabelo | secador
+Batedeira
+Torradeira
+Cafeteira
+Air fryer | fritadeira elétrica | airfryer
+Aspirador de pó | aspirador
+Chuveiro elétrico
+Freezer
+Lava-louças
+Sanduicheira
+Grill
+Panela elétrica | panela de arroz elétrica
+Panela de pressão elétrica
+Mixer
+Processador
+Espremedor | espremedor de laranja
+Chaleira elétrica
+Forno elétrico
+Smartwatch | relógio inteligente
+Câmera | máquina fotográfica | câmera fotográfica
+Roteador | modem
+Pen drive
+HD externo
+Power bank | bateria externa
+Alexa | assistente virtual | caixa inteligente
+Chromecast
+Fire TV
+TV box
+DVD | aparelho de DVD
+Videocassete | VCR | Videocassetes | Gravador de vídeo | Cassete de vídeo
+Blu-ray
+Toca-discos | vitrola
+Som | aparelho de som | micro system
+Walkman
+Discman
+MP3 | MP3 player | iPod
+Calculadora
+Relógio digital
+Telefone | telefone fixo
+Fax
+Pager | bip
+Drone
+Projetor
+Scanner
+Ring light
+Climatizador
+Desumidificador
+Purificador de água | filtro de água
+Purificador de ar
+Bebedouro
+Máquina de café | Nespresso | máquina de cápsula
+Máquina de pão
+Máquina de gelo
+Iogurteira
+Pipoqueira
+Máquina de algodão doce
+Sorveteira
+Fondue elétrico
+Waffle maker | máquina de waffle
+Crepeira
+Churrasqueira elétrica
+Cooktop
+Coifa
+Depurador
+Exaustor | Suggar
+Adega climatizada
+Frigobar
+Secadora
+Lava e seca | Máquina de lavar e secar | Máquina de lavar e secar roupa
+Tanquinho
+Centrífuga
+Vaporizador | passadeira a vapor
+Máquina de costura | Colareti
+Robô aspirador
+Enceradeira
+Lavadora de alta pressão | Wap
+Chapinha | prancha
+Babyliss | modelador de cachos
+Barbeador elétrico
+Máquina de cortar cabelo
+Depilador elétrico
+Escova elétrica
+Escova de dente elétrica
+Balança digital
+Termômetro digital
+Medidor de pressão
+Nebulizador
+Massageador
+Interfone
+Campainha
+Alarme
+Câmera de segurança
+Portão eletrônico
+Fechadura digital
+Gerador
+Nobreak
+Estabilizador
+Filtro de linha | régua | reguinha
+Extensão
+Bateria
+Pilha
+Painel solar
+Carro elétrico
+Patinete elétrico
+Bicicleta elétrica | E-Bike
+Hoverboard
+Óculos de realidade virtual | óculos VR
+Game Boy
+PlayStation
+Xbox
+Nintendo Switch
+Fliperama
+iPhone
+Samsung
+Motorola
+GPS
+Rádio comunicador | walkie-talkie
+Tamagotchi | Tamagochi | Tamaguchi | Tamagotchis | Tamagushi | Tamagotchi Connection Jinsei
+Rádio de pilha
+Lanterna
+Chuveiro
+Torneira elétrica
+Ebulidor
+Mergulhão
+Cortador de frios
+Moedor de café
+Moedor de carne
+Panela de fondue
+Grill George Foreman
+Mixer de mão
+Fritadeira
+Forno de pizza
+iPad
+Desktop
+Multifuncional
+Headphone
+Headset
+Fone Bluetooth
+AirPods
+Caixa de som Bluetooth
+JBL
+Soundbar
+Smart TV
+TV de LED
+TV de plasma
+TV de tubo
+Rádio-relógio
+Toca-fitas
+MP4
+DVD player
+Blu-ray player
+VHS
+PS5
+PS4
+PS2
+Wii
+Nintendo DS
+Mega Drive
+Super Nintendo
+Atari
+Controle de videogame
+Joystick
+Câmera digital
+Filmadora
+GoPro
+Apple Watch
+E-reader
+Calculadora científica
+Repetidor de sinal
+SSD
+Cartão de memória
+Carregador portátil
+Cabo USB
+Tomada inteligente
+Echo Dot
+Google Home
+Fire TV Stick
+Apple TV
+Meta Quest
+Rastreador
+Forno | Forno a lenha | Fornalha | Fornaça
+Multiprocessador
+Juicer
+Cafeteira elétrica
+Dolce Gusto
+Panela de arroz
+Lavadora
+Centrífuga de roupa
+Aspirador vertical
+Circulador de ar
+Escova secadora
+Aparador de pelos
+Balança
+Oxímetro
+Inalador
+Aquecedor de água
+Bomba d'água
+Furadeira
+Parafusadeira
+Serra elétrica
+Lixadeira
+Esmerilhadeira
+Cortador de grama
+Soprador
+Lâmpada inteligente
+Calculadora de bolso
+Agenda eletrônica
+Palm
+Telefone sem fio
+Secretária eletrônica
+Celular de flip
+Tijolão
+Nokia
+Nokia 3310
+Motorola V3
+BlackBerry
+Bichinho virtual
+Teclado musical
+Guitarra elétrica
+Amplificador
+Mesa de som
+Pedaleira
+Caixa amplificada
+Metrônomo
+Afinador
+Sintetizador
+Controladora de DJ
+Toca-CD
+CD player
+Rádio portátil
+Rádio amador
+Radinho
+Televisão portátil
+Máquina de escrever elétrica
+Fragmentadora
+Plastificadora
+Datashow
+Lousa digital
+Totem
+Caixa eletrônico
+Máquina de cartão
+Maquininha
+Leitor de código de barras
+Relógio de ponto
+Catraca eletrônica
+Condicionamento de ar | Condicionador de ar | Condicionadores de ar
+Forno de micro-ondas | Forno Microondas | Forno de microondas | Forno microondas | Forno micro-ondas
+Dispensador de água | Refrigerador de água
+Fogão por indução
+Amplificador de áudio
+Três Corações | Três Corações (empresa) | Café Santa Clara | Três Corações Alimentos S.A.
+Cápsula de café | Cápsulas de café | Café em cápsula
+Elevador de televisão
+Senseo
+Fritadeira de ar | Fritadeira sem óleo
+Teasmade
+Bimby | Thermomix
+Extrator de suco
+Aquecedor de infravermelhos
+Televisor a laser | Laser TV | TV a laser
+Máquina de waffles | Gofreira
+DVR | PVR | Digital Video Recorder | Digital video recorder | Personal Video Recorder | Personal video recorder | Gravador de vídeo digital | Gravadores de vídeo digital
+Faca elétrica
+Raquete elétrica
+Eletrodoméstico | Lista de eletrodomésticos | Eletrodomésticos | Electrodoméstico | Aparelho elétrico | Electrodomésticos | Vaporeta
+Varinha mágica | Varinha mágica (eletrodoméstico)
+Refrigerador inteligente | Frigorífico inteligente | Geladeira inteligente
+Máquina de lavar louça | Máquina de lavar loiça | Lavadora de louça
+Saeco
+Roomba | IRobot Roomba
+Sterilair | Esterilair
+Forno de convecção
+Soprador de folhas
+Televisor portátil | TV portátil
+Máquina de secar roupa | Secadora de roupas | Secador de roupa
+# entraram por scripts/engordar.py (dados/categorias/brinquedos.txt)
+Boneca
+Carrinho
+Pião
+Ioiô | Yo-yo
+Lego | LGEO | Lego Mixels
+Pipa | papagaio | arraia | pandorga | Pipeiros | Capucheta | Cafifa | Cervo-volante | Joeira | Rabiola | Estirante | Papagaio de papel
+Quebra-cabeça | Puzzle | Charadismo | Puzzles
+Ursinho de pelúcia
+Barbie
+Bolinha de gude | bola de gude | gude | burca
+Peteca
+Corda | corda de pular
+Patinete | Trotinete | Trotineta
+Bambolê | Hula hoop
+Dominó
+Massinha | massa de modelar
+Carrinho de controle remoto | Carrinho telecomandado | Carro rádio controlado
+Boneco
+Action figure | boneco de ação
+Hot Wheels
+Max Steel
+Polly | Polly Pocket
+Fofolete
+Susi
+Cubo mágico
+Slime | amoeba
+Fidget spinner
+Pop it
+Pogobol
+Genius
+Beyblade
+Tazo
+Bafo
+Figurinha | álbum de figurinhas | álbum da copa
+Pião de madeira
+Bilboquê | Biblioque
+Cavalinho de pau | cavalinho | Cavalo de balanço
+Cavalinho de balanço
+Escorregador | Escorrega
+Gangorra
+Trepa-trepa
+Casinha de boneca | casinha
+Kit de cozinha | panelinha
+Fogãozinho
+Boneca bebê | bebê reborn | reborn
+Baby Alive
+Moranguinho
+Meu Pequeno Pônei | My Little Pony
+Furby
+Pula-pula | cama elástica
+Piscina de bolinhas
+Pistola de água | arminha de água
+Arminha
+Estilingue | atiradeira | baladeira | bodoque | Fisga | Chepoca | Xifuta | Xiloida
+Espada
+Escudo
+Arco e flecha
+Nerf
+Microscópio
+Telescópio
+Kit de química
+Lousa mágica
+Etch A Sketch
+Caleidoscópio
+Bolhas de sabão | bolha de sabão | Bola de sabão
+Bexiga | balão
+Apito
+Tambor
+Xilofone
+Pianinho
+Violãozinho
+Chocalho
+Mordedor
+Andador
+Velotrol
+Triciclo
+Carrinho de rolimã | rolimã | Carrinho de rolemã | Carrinho de rolamentos | Carros de rolamentos | Carrinhos de lomba
+Carrinho de bebê de brinquedo
+Trenzinho | trem de brinquedo | ferrorama
+Autorama
+Pista de carrinho
+Aviãozinho
+Helicóptero
+Robô
+Dinossauro de brinquedo | dinossauro
+Soldadinho de chumbo | soldadinho
+Forte Apache
+Playmobil
+He-Man
+Transformers
+Power Rangers
+Tartarugas Ninja
+Comandos em ação | G.I. Joe
+Pequeno Pônei
+Pokémon
+Funko
+Ovo surpresa
+Massinha Play-Doh | Play-Doh
+Jogo da memória
+Banco Imobiliário
+War
+Detetive
+Jogo da vida
+Uno
+Baralho
+Damas | Dama
+Xadrez
+Ludo
+Pega-varetas
+Cai não cai
+Jenga
+Tapa certo
+Pula pirata
+Cara a cara
+Imagem e ação
+Twister
+Resta um
+Bingo
+Peão
+Boneco de neve
+Pião de corda
+Pião beyblade
+Pipa chilena
+Cerol | Cortante
+Linha de pipa
+Carretilha
+Taco de beisebol
+Bola de futebol
+Bola de basquete
+Bola de vôlei
+Bola de praia
+Frisbee
+Bumerangue
+Mola maluca
+Geleca
+Pó de mico
+Chiclete de mentira
+Cobra de borracha
+Aranha de borracha
+Boneco de vodu
+Fantoche | Títere | Bonifrate | Fantoches | Marioneta de luva
+Marionete
+Dedoche
+Teatrinho
+Fantasia
+Maquiagem infantil
+Kit médico
+Kit de ferramentas
+Bancada de ferramentas
+Caixa registradora
+Carrinho de supermercado
+Ferro de passar de brinquedo
+Vassourinha
+Boneca de pano
+Emília
+Bruxinha
+Bonequinho
+Pião da casa própria
+Ioiô de luz
+Spinner
+Squishy
+Cubo de Rubik | Rubik's Cube | Número de Deus
+Lego Duplo
+Blocos de montar
+Bloquinhos | bloco
+Peças de encaixe
+Ímã
+Massinha caseira
+Areia mágica | areia cinética
+Pista Hot Wheels
+Barbie Dreamhouse
+Ken | Ken Carson
+Bratz
+Monster High
+LOL Surprise
+Hatchimals
+Caixa de papelão
+Tampinha
+Panela
+Lata
+Cabo de vassoura
+Tampinha de garrafa
+Pedrinha
+Boneca Susi
+Boneca Barbie
+L.O.L.
+Boneco do Max Steel
+Falcon
+Boneco Falcon
+She-Ra
+Matchbox
+Carrinho de fricção
+Trem elétrico
+Pequeno Engenheiro
+Brinquedo de montar
+Massinha de modelar
+Kinetic sand
+Bola pula-pula
+Bola saltitante
+Raia
+Pula-corda
+Elástico
+Gira-gira
+Barraca
+Cabaninha
+Motoca
+Totó
+Futebol de botão | Jogo de botão
+Botão
+Air hockey
+Pingue-pongue
+Dardos
+Arco e flecha de brinquedo
+Arma de espuma
+Lançador Nerf
+Espada de brinquedo
+Sabre de luz
+Cozinha de brinquedo
+Jogo de chá
+Supermercado de brinquedo
+Caixa registradora de brinquedo
+Telefone de brinquedo
+Celular de brinquedo
+Microfone de brinquedo
+Teclado de brinquedo
+Tambor de brinquedo
+Urso de pelúcia | Urso de peluche | Teddy bear
+Teddy
+Ursinho Carinhoso
+Pokébola
+Cartinha de Pokémon
+Cartas de Pokémon
+Yu-Gi-Oh!
+Jogo da velha
+Jogo de tabuleiro
+Imagem & Ação
+Lince
+Batalha Naval
+Trilha
+Varetas
+Aquaplay
+Traço Mágico
+Spirograph
+Binóculo de brinquedo
+Robô de brinquedo
+Mini game
+Brick Game
+Corrupio
+Rói-rói | Urra-boi | Berra-boi
+Vai e vem
+Bate-bate
+Cata-vento
+Bolinha de sabão
+Soldadinho de plástico
+Sylvanian Families
+Meu Querido Pônei
+Kinder Ovo (brinquedo)
+Hand spinner
+Massinha slime
+Brinquedo de praia
+Baldinho
+Pazinha
+Forminha de areia
+Boia
+Boia de braço
+Bote
+Piscina de plástico
+Garagem de carrinhos
+Posto de gasolina de brinquedo
+Fazendinha
+Arca de Noé
+Tiranossauro de brinquedo
+Animais de plástico
+Jacaré de brinquedo
+Carrossel de brinquedo
+Caixinha de música
+Teatro de fantoches
+Slinky
+Escorregador inflável
+Castelo inflável
+Pula-pula inflável
+Tobogã
+Bilboquê de madeira
+Peteca de pena
+Funda
+Carrinho de mão de brinquedo
+Caminhão de brinquedo
+Caminhãozinho
+Tratorzinho
+Ambulância de brinquedo
+Carro de bombeiro de brinquedo
+Avião de brinquedo
+Aviãozinho de papel
+Barquinho de papel
+Cata-vento de papel
+Bola de meia
+Bola de papel
+Boneca de milho
+Bruxinha de pano
+Carrinho de lata
+Pé de lata
+Lalaloopsy
+Zootropo | Zootrópio
+Ball Jointed Dolls
+Rubble & Crew | Rubble e Companhia | Rubble And Crew
+Hello Kitty | Kitty White
+Pullip
+Spirit doll | Spirit Dolls | Spirit dolls
+Louro José | Tom Veiga | Pet Hits
+Jewelpet | Jewelpet (franquia)
+Speedcubing
+PAW Patrol | Patrulha Canina | Patrulha Pata | Chase
+Comparsaria de gigantones e cabeçudos de Pamplona
+Nathor
+Virtual pet Digimon
+Rubik's Magic
+Bionicle | Piraka
+Pistola d'água | Revolver de água | Revolver d'água
+Square-1
+Bicicleta utilitária | Bicicleta citadina
+Face Turning Octahedron
+Brinquedoteca
+The Secret | The Secret (Byron Preiss)
+Pyraminx
+Charadas de Smullyan
+Helicopter Cube
+Torre de Hanói | Torre de Hanoi
+Gear Cube | Gear Cube (Caution Cube)
+Megaminx
+N&B Block
+Espirógrafo
+Pet Rock
+Problema dos canibais e missionários | Problema dos maridos ciumentos | Problema dos missionários e dos canibais
+Kit Laboratório de Energia Atômica Gilbert U-238
+Tickle Me Elmo
+Aggretsuko
+Soldado de plástico
+Bicicleta-ambulância
+Pipas incendiárias
+Pyramorphix | Pyramorphinx
+Dogū | Dogu | Doguu
+Xaropinho
+Robert | Robert (boneco) | Robert, o boneco
+Jogos de cartas | Carta | Jogo de baralho | Jogos de baralho | Carta de baralho | Jogo de cartas
+Berlinde | Búlica | Berlindes | Biloca
+Kinkeshi
+Bonecos Waldorf
+Jogo eletrônico de quebra-cabeça | Jogo de puzzle | Jogos eletrônicos de quebra-cabeça | Jogo de quebra-cabeça | Jogo puzzle | Jogos puzzle | Jogos de quebra-cabeça | Jogos de puzzle | Jogos eletrônicos de puzzle | Jogo eletrônico de puzzle
+Problema do fazendeiro, o lobo, o carneiro e a alface | Problema do lobo, a cabra, e o repolho
+Bola 8 Mágica
+Nintendo Labo
+Foguete a água | Foguete à Água | Foguete à água
+Bicicleta segura
+Redução da pobreza através de bicicletas
+Sokoban
+Tropas ciclistas
+Disney Princess Palace Pets
+Melocoton
+Mamulengo
+Cicloturismo | Cicloturista
+Cobra de Rubik
+Torrecopos
+Meccano
+Dogic
+Annabelle | Annabelle (boneca) | Boneca Annabelle
+Bonecos de Estremoz | Boneco de Estremoz
+Madballs
+LEGO Mindstorms
+Abayomi
+Quebra-cabeça deslizante
+Problema da ponte e da tocha
+Blocos lógicos
+O jogo do 15 | Quebra-cabeças das Quinze Pastilhas | Charada de Boss
+Pyraminx Duo
+NeoCube
+Macaco de meia
+Gashapon
+Rubik's Revenge | A Vingança de Rubik
+Palavras cruzadas | Palavras-cruzadas | Cruzadinha | Cruciverbalismo | Cruciverbalista | Cruzadismo | Cruzadista | Cruciverbo
+Cuboku
+Desportos de disco | Esportes de disco
+Labubu
+Cube World | Cube World (brinquedo)
+Boneca de piche
+Ayupan
+Jolly Chimp | Musical Jolly Chimp
+Pyraminx Crystal
+A1z26
+Museu das Bonecas e Brinquedos
+Line Friends
+Soldado Quebra-nozes
+Quebra-cabeça de travessia de rio
+Ciclista mensageiro
+Skewb
+Zenit Polar
+Perna de pau | Perna-de-pau
+Tuttminx
+Kokeshi | Koqueshi
+Easy-Bake Oven
+Dia Mundial da Bicicleta
+Dreidel | Sevivon
+Trash Pack
+Marafona
+Skewb Ultimate
+Pense Bem
+Paradoxo do quadrado perdido | Paradoxo do Curry
+Kalkitos
+Escada de palavras
+Ligar os pontos
+Cubo de bolso | Pocket Cube
+Marcador de paintball
+Kapla | Klapa
+Feira Internacional de Brinquedos da América do Norte | North American International Toy Fair
+Alexander's Star
+Tangram | Sete tábuas da sabedoria | Tangran
+Van Rysel
+Teatro aquático de fantoches
+Littlest Pet Shop
+Matriosca | Matrioschka | Matryoshka | Boneca russa | Matriochka | Matrioska | Matrioshka
+Cubo soma
+Sanrio | Keroppi
+VTech Socrates
+Boneca de papel
+Magna Doodle
+Arma BB
+Pulseira de néon | Pulseira de neón | Pulseira de neônio
+V-Cube 9
+Martenitsa | Baba Marta
+Caixa de areia | Tanque de areia
+Problema do macaco e das bananas
+Frisbee nos Jogos Mundiais
+Meu Primeiro Gradiente
+Fantoche de meia | Boneco de meia
+Die-cast | Die Cast
+Otamatone
+Fidget Cube
+Brinquedo de miriti
+Zubbles | Zubble
+Gigantone | Gigantones
+Animal de estimação virtual | Animal de estimação digital | Virtual Pet | Virtual Pets | V-Pet | Virtual pet | Digital pet
+Amigurumi
+Arma de airsoft
+Superovo
+Stomachion
+Estacionamento de bicicletas | Estacionamento para bicicletas
+Rubik's Revolution
+Modelo didático
+Escada de jacó | Traca-traca
+Minus Cube
+João-bobo | João-bobo (brinquedo) | Cabeção | Cabesão
+Problema das três casas
+Kiddicraft
+Brinquedo educacional | Brinquedos educacionais
+Boneco de posto | Boneco biruta
+Imaginext
+Mr. Bucket
+Resusci Anne | Ressusci Anne
+Caloi 10
+Pedalinho | Gaivota a pedais
+Diaclone
+Chukudu
+Queens of Africa
+Elo Maluco
+Cavalo de Dalarna
+Kombolói
+Pato de borracha | Patinho de borracha | Patos de borracha | Patinhos de borracha
+Estafermo
+Dekochari
+World Puzzle Championship | Campeonato mundial de puzzle | Campeonato Mundial de Puzzle | Wpf
+Pipa caixa | Célula de Hargrave | Boxkite
+Globolinha
+Little People
+World Puzzle Federation
+Casa de bonecas | Casas de bonecas | Dolls House | Casa de boneca
+Diabolo
+Língua de sogra | Língua-de-sogra
+Daruma
+Monster in My Pocket
+Cicloficina
+Rubik's Domino
+Laurent Mourguet | Laurent Mourget
+Publicidade de brinquedos | Publicidade de brinquedo
+Brinquedos Coluna
+Carrinho de brinquedo | Carrinhos de brinquedo
+Balancé | Balancê | Sobe-e-desce
+Mr. Potato Head | Senhor Cabeça de Batata
+Bonecas-Repolho
+Aqua Dots | Bindeez
+Levitron
+Arma de espoleta
+Mini 4WD
+Futebol de pino
+Splash | Splash (parque de diversão)
+Powerball
+Decodificador secreto | Anéis decodificadores | Anel decodificador
+Quebra-cabeça de arame
+Cubo de Yoshimoto
+YikeBike | Yike Bike
+Geomag
+Queima da boneca
+Cubo bedlam
+H2GO
+Caixa-segredo | Caixas-segredo
+Okiagari-koboshi | Okiagari koboshi
+Domino Rally
+Gnafron
+Telefone de lata
+TCR | TCR (brinquedo)
+KEVA Planks
+K'NEX
+Animação com fantoches
+# entraram por scripts/engordar.py (dados/categorias/roupas.txt)
+Camiseta | camisa de manga curta | blusa de manga curta | T-shirt | Jérsei | Jerseys
+Calça
+Bermuda
+Camisa | Colarinho
+Blusa
+Saia
+Vestido
+Short | shorts
+Jaqueta
+Casaco
+Moletom
+Sutiã | Soutien
+Calça jeans | jeans | Calças de ganga | Lavagem à pedra
+Regata
+Cropped
+Biquíni | Mankini
+Sunga | Calção de banho
+Maiô
+Terno
+Paletó
+Blazer
+Gravata
+Suéter | pulôver
+Cardigã | cardigan
+Colete
+Macacão
+Jardineira
+Legging
+Calça de moletom
+Agasalho
+Corta-vento
+Capa de chuva
+Sobretudo
+Casacão
+Sobretudo de lã
+Parka
+Poncho
+Xale
+Cachecol | Echarpe
+Luva | Luva de couro
+Gorro | touca | Barrete
+Boné
+Chapéu | Chapeleiro
+Polo | camisa polo
+Camisa social
+Body
+Top
+Blusinha
+Bata
+Túnica
+Kimono | quimono
+Roupão
+Camisola | Camisa-de-dormir
+Baby-doll
+Samba-canção
+Ceroula
+Meia-calça
+Meião
+Polaina
+Avental
+Uniforme
+Farda
+Jaleco
+Smoking
+Fraque
+Vestido de noiva
+Saia longa
+Minissaia | Mini-saia
+Saia lápis
+Saia rodada
+Calça pantalona | pantalona
+Calça capri
+Calça cargo
+Calça de alfaiataria
+Calça skinny
+Calça flare
+Bermuda jeans
+Bermuda de tactel
+Short jeans
+Saia-short
+Macaquinho
+Conjunto
+Abrigo
+Uniforme escolar
+Camisa de time | camisa de futebol
+Abadá
+Kilt
+Sari
+Quimono de judô
+Collant
+Tutu
+Sunquíni
+Saída de praia | canga
+Camisa xadrez
+Camisa havaiana
+Camisa de flanela
+Camiseta de manga longa
+Segunda pele
+Jaqueta jeans
+Jaqueta de couro
+Jaqueta bomber
+Jaqueta puffer
+Blusa de frio
+Blusa de lã
+Blusão
+Bustiê
+Espartilho
+Corpete
+Cinta
+Cinta-liga
+Faixa
+Lingerie
+Camiseta regata
+Camisa sem manga
+Babador
+Macacão de bebê
+Mijão
+Fralda
+Sapatinho de bebê
+Touca de bebê
+Colete à prova de balas
+Roupa de mergulho | neoprene
+Roupa de astronauta | traje espacial
+Armadura
+Batina
+Toga
+Beca
+Capa
+Hábito
+Kimono de seda
+Vestido longo
+Vestido curto
+Vestido tubinho
+Tomara que caia
+Ombro a ombro
+Frente única
+Blusa de alça
+Blusa de gola alta | gola alta | cacharrel | Gola rulê | Gola olímpica
+Camiseta oversized
+Camiseta básica
+Calça de pijama
+Shortinho
+Fio dental
+Tanga
+Cueca boxer | Boxer
+Cueca slip
+Meia soquete | Meia invisível
+Meia de compressão | Meias elásticas
+Pochete
+Suspensório
+Cinto
+Lenço
+Bandana
+Máscara
+Baby look
+Calça social
+Calça boca de sino
+Pescador
+Saia midi
+Saia plissada
+Saia jeans
+Vestido de festa
+Tubinho
+Jaqueta corta-vento
+Bomber
+Trench coat
+Pala
+Tricô
+Moletom com capuz
+Canguru
+Hoodie
+Conjunto de moletom
+Robe
+Roupa de banho
+Bermuda de praia
+Judogi
+Maiô de balé
+Macacão de trabalho
+Sarongue | Sarong
+Djellaba
+Hijab
+Véu
+Turbante
+Kaftan
+Cafetã
+Bombacha
+Gibão
+Colete de couro
+Camisa do Brasil
+Uniforme de futebol
+Calção
+Cinta modeladora
+Corset
+Combinação
+Anágua
+Conjunto de lingerie
+Sunga de praia
+Short de corrida
+Bermuda ciclista
+Legging de academia
+Top de academia
+Roupa de ginástica
+Roupa de academia
+Roupa de esqui
+Macacão de neve
+Roupa de palhaço
+Roupa de Papai Noel
+Camisa de abadá
+Saia de baiana
+Vestido de prenda
+Vestido caipira
+Camisa xadrez caipira
+Roupa de quadrilha
+Estola
+Mantô
+Capote
+Jaquetão
+Japona
+Anoraque
+Colete puffer
+Puffer
+Casaco de pele
+Casaco de lã
+Capa de frio
+Camisa de manga longa
+Manga longa
+Manga curta
+Camisa de botão
+Camisa de linho
+Calça de linho
+Alfaiataria
+Tailleur
+Terninho
+Conjunto social
+Blusa de seda
+Blusa de alcinha
+Alcinha
+Gola rolê
+Henley
+Raglan
+Oversized
+Bermuda cargo
+Jogger
+Calça jogger
+Calça de sarja
+Sarja
+Chino
+Calça chino
+Bermuda de sarja
+Short saia
+Saia-calça
+Culotte
+Macacão pantacourt
+Pantacourt
+Calça pantacourt
+Body de bebê
+Macacãozinho
+Tamanho do sutiã
+Sports Illustrated Swimsuit Issue | Sports Illustrated Swimsuit Edition | Sports Illustrated Swimsuit
+Pickelhaube
+Head-mounted display | HMD | Oculus Rift S PCVR | TCL NXTWEAR V | Pimax Crystal QLED | Lenovo ThinkReality VRX | Lenovo ClassVR Premium | Arpara VR All In One | IQIYI Dream Pro | Xiaomi Mi VR | ClassVR Premium | XRSpace Manova | Simula One | IQIYI Qiyu Dream Pro | Meta Quest Pro | Oculus Quest Pro
+Relógio de bolso | Relógios de bolso
+Computação vestível
+Acessório de cabeça
+Vestido de casamento
+Pakol
+Boina
+Djabadouli
+Keffiyeh palestino
+Hanbok
+Espartilho cônico Gaultier de Madonna
+Capacete de combate | Capacete de batalha
+Vestido verde Versace de Jennifer Lopez | Vestido Versace verde da Jennifer Lopez | Vestido Versace verde de Jennifer Lopez | Jungle-Dress | Jungle Dress | Vestido verde Versace da Jennifer Lopez | Vestido verde da Jennifer Lopez | Vestido verde de Jennifer Lopez
+Guntō
+Lenço verde
+Mitra | Mitra (insígnia)
+Uniforme da Juventude Hitlerista
+K-beauty
+Vestido de anúncio de noivado de Catherine Middleton
+Vestido de casamento de Meghan Markle
+Salto-alto | Sapato de salto alto | Sapatos de salto alto | Sapatos salto alto | Sapato salto alto | Salto alto | Tacão | scarpin | sapato de salto
+Bojagi
+Ankara | Ankara (material)
+Sabonete artesanal
+Keffiyeh | Kaffiyeh
+Gandoura de Constantina | Constantino Gandoura | Djebba de Constantina
+Colar de cruz
+Suporte atlético
+Chapéu clochê | Cloche
+Šajkača
+Panchira
+Cor de revestimento
+Binder | Binding | Binder para seios
+Sol Nascente | Sol Nascente (distintivo)
+Miçanga | Miçangas | Missangas | Missanga
+Túnica chinesa | Túnica Mao | Túnica Zhongshan
+Faixa preta | Faixa preta (artes marciais)
+Chapéu de alumínio | Chapéu de papel alumínio
+Cocar
+Lenço de namorados | Lenços de Namorados | Lenços de namorados
+Cúpula de energia
+Vestido de casamento de Grace Kelly
+Leque | Leques | Abanico
+Vestido da vingança
+Vestido rosa de Marilyn Monroe
+Maquilhagem | Maquilagem | Maquiar | Maquiador | Maquiagens | Maquilhador | Maquiadora
+Velcro
+Torçal
+Jaqueta de Thriller
+Cucúlio | Koukoulion
+Vestido da Union Jack
+Chemise
+Vestido de casamento de Catherine Middleton | Vestido de casamento de Kate Middleton
+Merkin
+Triglavka
+Traje de banho | Roupa de praia
+Vestido de casamento da princesa Isabel do Reino Unido
+Crinolina
+Regalia Imperial | Imperial regalia | Imperial Regalia
+Ray-Ban | Ray Ban | Rayban
+Vestido damasco de Jacqueline Kennedy
+Uniforme e vestuário de corte no Império Otomano
+Vestido branco de Marilyn Monroe
+Litham
+Gymnastyorka
+Mântua | Mântua (roupa) | Mantua
+Vestido Travolta
+Kimono Jiu-Jitsu Brasileiro
+O Lenço das Sufragistas
+Stahlhelm
+Casaca
+Capacete | Chapéu de bombeiro
+Lantejoula | Lentejoula | Lantejoulas | Lentejoulas | Paetê | Paetês | Lantejoila | Lantejoilas | Lentejoilas | Lentejoila | Pailleté
+Coleção Philippi | Colecção Philippi
+Esqualano | Peridroesqualeno
+Cosmético | Cosméticos | Cosmética
+Facekini
+Telogreika
+Budiónovka
+Óculos de neve | Ilgaak
+Fedora | Fedora (chapéu)
+Uniforme militar | Farda militar | Uniformes militares | Fardamento
+Bordado Larisch
+Piercing | Piercing no Umbigo | Body piercer | Piercings | Piercing corporal
+Peliça
+Klobuk
+Biocosméticos
+Barretina | Shako
+Papakha
+Capacete de dragão
+Tenugui
+Gugu | Gugu (chapéu)
+Galero | Chapéu vermelho | Gallero
+Rosto de Mar-a-Lago
+Oleil adapalenato
+Óculos Groucho
+Indústria cosmética
+Chapéu Tembel
+Lenço de bolso
+Brinco | Brinco de argolas | Brincos | argola
+Wonderbra
+Óculos para eclipse
+Capacete de turbante
+Zíper | Ziper | Fecho éclair | Zipper | Fecho ecler
+Capirote
+Kalabubu
+Tornozeleira
+Burquíni | Burquini | Burkini | Burqini
+Cocktail dress
+Spectacles
+Saiote
+Barrete frígio | Boina frígia | Gorro frígio
+Furoshiki
+Alamares
+Solidéu
+Fita do Senhor do Bonfim | Fitinha do Bonfim | Fitinhas do Bonfim | Fitinha do Senhor do Bonfim | Fita do Bonfim
+Bolso | Bolsos | Gibeira | Algibeira
+Quitengue | Kitenge
+Vestido preto Versace de Elizabeth Hurley | AQUELE Vestido
+Lenço de Alcobaça | Alcobaça
+Lenço escoteiro
+Gorgeira
+Borsalino
+Agal | Agal (acessório)
+Óculos de segurança | Óculos de proteção
+Vertugado
+Tam o'shanter
+Picramato de sódio
+Balaclava | Toca ninja
+Joelheira
+Tricórnio
+Alfinete de dama | Alfinete-de-dama | Alfinete de segurança
+Primer | Primer (cosméticos)
+Phat pants
+Vestido de casamento de Lady Diana Spencer
+Nábrók
+Pa'u | Saia havaiana | Saia havaiana masculina | Saiote havaiano | Saiote havaiano masculino
+Dirndl
+Gola
+Ácido kójico | Ácido cójico
+Camisa de supino
+Palmilha ortopédica
+Kolpik
+Módio | Módio (toucado) | Modius
+Manga | Manga (roupa)
+Fundoshi
+Monoquíni | Monoquini | Monokini | Uniquíni | Uniquini | Unikini
+Abaia | Abaia (roupa)
+Capelo
+Chapéu cata ovo
+Piteira | Piteira (fumo)
+Calças de jogging
+Cornetas | Cornetas (vestimenta) | Cornette
+Tabi | Tabi (vestuário)
+Testeira | Bandolete | Gigolete
+Clareamento da pele | Clareamento de pele
+Tichel
+Bálsamo para os lábios
+Calça harém
+Di-hidroxiacetona | Diidroxiacetona
+Sutiã com aro | Sutiã com arco
+Chapéu judeu
+Sutiã de treinamento | Sutiã de treino
+Dólmã | Dólman | Dolmã | Dólma
+Hirbawi
+Spencer | Spencer (vestimenta)
+Corpse paint | Corpsepaint
+Quipá | Kipá | Quipa | Yarmulke
+Bronzeamento artificial
+Lampasse
+Abotoadura | Abotoaduras | Botão de punho | Botões de punho
+Piercing no mamilo
+Aguilha | Agulheta
+Touca de fumo
+Glíter | Glitter - o brilho de uma estrela | Glitter | Purpurina brilhante
+Tanquíni | Tanquini | Tankini
+Bicorne | Bicórnio
+Braguilha
+Salva-orelhas
+Parabenos | Parabeno
+Vestido preto de Rita Hayworth
+Piercing de língua
+Ínfula | Ínfulas
+Calpaque | Kalpak
+Escudete
+Comprimento da ópera
+Button | Bóton | Bottons | Botton
+Sutiã masculino
+Camelauco
+Clareamento anal | Branqueamento anal
+Cuecão | Calcinhão
+Kogal
+Charuteira | Cigarreira
+Saruel | Sarouel
+Croc O' Shirt
+Píleo | Píleo (chapéu)
+Brilhantina
+Meu Primeiro Sutiã
+Acessório | Acessórios | Acessório de moda | Acessórios de moda
+Monoï | Óleo de Monoï | Monoï do Tahiti | Monoï Tiaré
+Bracelete | Pulseira
+Lornhão
+Boyshorts | Boy shorts
+Chapéu-coco | Chapéu de coco
+Chapéu de caçador de veados
+Tecnologia vestível | Wearable | Dispositivo vestível
+Cadarço | Atacador
+Camauro
+Bandeau
+Dragona
+Coppola
+Fourragère
+Yukata
+Sutiã esportivo | Sutiã desportivo
+Lenço Farroupilha
+Adereço | Adereço de cabeça
+Prendedor de cabelo | Presilha | Piranha | grampo
+Gandola
+Baslique | Başlık | Başlıq | Bashlik | Bashlyk
+Gibão de couro | Gibãodecouro
+Uniforme escolar japonês | Seifuku | Sailor fuku
+Titovka
+Capuz | Capucho
+Sta-Prest
+Roupa interior | Roupa de baixo | Roupa íntima | Roupas íntimas
+Camisa regata
+Alimético | Aliméticos
+Carapuça
+Nomenclatura Internacional de Ingredientes de Cosméticos | INCI
+Jaqueta encerada
+Sherwani
+Tragus piercing | Piercing de tragus
+Armet
+Abola | Abolla
+Fontange
+Mackintosh
+Camisa de força | Camisa-de-força | Colete de forças
+Ombreira
+Fez | Fez (chapéu) | Tarbush
+Fitocosmético | Fitocosméticos
+Dermopigmentação
+Pince-nez | Pincenez | Pincenê | Pencenê | Pencinê
+BB Cream
+Knickerbocker
+Jarreteira | Liga
+Tudor bonnet
+Bisht | Bisht (vestimenta)
+Sutiã de aleitamento materno
+Casquete
+Chapéu de cozinheiro
+Óculos de natação
+Piercing anal | Anal piercing
+Caxangá | Caxangá (chapéu) | Gorro de marinheiro
+Cueca samba-canção
+Monroe piercing | Madonna piercing
+Piercing púbico
+Albogalero
+Kleenex
+Piercing de espartilho | Perfuração para corset | Corset piercing
+Lenço de papel | lencinho | papel higienico
+Vestido tomara que caia
+Pós-barba | After shave
+Canutilho
+Publicidade de cosméticos | Publicidade de cosmético
+Microssaia
+Botina | Botinas
+Triquíni | Trikini | Triquini
+Fivela
+Gargantilha
+Foulard
+# entraram por scripts/engordar.py (dados/categorias/calcados-e-acessorios.txt)
+Sandália
+Óculos de sol
+Colar
+Anel
+Bota
+Tiara
+Elástico de cabelo | xuxinha
+Corrente
+Pingente
+Alargador
+Aliança
+Broche
+Prendedor de gravata
+Viseira
+Lenço de cabeça
+Rasteirinha | rasteira
+Havaianas
+Crocs
+Mocassim
+Sapatilha
+Tamanco
+Plataforma
+Anabela
+Peep toe
+Oxford
+Coturno
+Galocha
+Bota de cano alto
+Bota de chuva
+Bota ortopédica
+Alpargata | alpercata | espadrille | Espadrilha | Alpergata | Espadrilho
+Sapatênis
+All Star | Converse
+Nike
+Adidas
+Mule
+Slide
+Chuteira
+Sapatilha de balé
+Pé de pato
+Clutch
+Bolsa de mão
+Bolsa transversal
+Bolsa tiracolo
+Bolsa de praia
+Sacola
+Ecobag
+Necessaire
+Maleta
+Pasta
+Porta-moedas | moedeiro
+Porta-cartão
+Chaveiro
+Guarda-chuva
+Sombrinha
+Bengala
+Cachimbo
+Lente de contato
+Monóculo
+Pulseira de relógio
+Pulseira de miçanga
+Pulseira da amizade
+Berloque
+Pandora
+Escapulário
+Amuleto
+Olho grego
+Figa
+Tatuagem
+Unha postiça
+Cílios postiços
+Peruca
+Aplique
+Coroa
+Diadema
+Grinalda
+Faixa de cabelo
+Arco de cabelo
+Scrunchie
+Laço
+Fita
+Gravata-borboleta
+Abotoadeira
+Pashmina
+Luva sem dedo
+Manguito
+Munhequeira
+Faixa de suor
+Touca de natação
+Pochete de corrida
+Bota de cowboy
+Chapéu de cowboy
+Chapéu panamá
+Chapéu de palha
+Cartola
+Sombreiro
+Bucket hat
+Protetor de orelha
+Tapa-olho
+Piercing de nariz
+Brinco de pressão
+Ear cuff
+Choker
+Colar de pérola
+Pérola
+Diamante
+Semijoia
+Ouro
+Prata
+Sapato social | Sapato Clássico | Sapato Derby | Sapato monk | Sapato oxford
+Chinelo de dedo
+Bota de cano curto
+Bota de borracha
+Bota de neve
+Ankle boot
+Salto agulha
+Salto plataforma
+Babuche
+Mocassim de couro
+Docksider
+Slip-on
+Vans
+Puma
+Olympikus
+Mizuno
+New Balance
+Asics
+Fila
+Reebok
+Melissa
+Grendene
+Ipanema
+Rider
+Kenner
+Mormaii
+Chuteira society
+Sapatilha de ponta
+Sapato de sapateado
+Nadadeira
+Palmilha
+Bolsa de ombro
+Tote bag
+Pasta executiva
+Moedeira
+Lenço de pescoço
+Arco
+Chapéu de pescador
+Óculos escuros
+Cordão
+Medalhinha
+Anel de noivado
+Solitário
+Anel de formatura
+Alfinete
+Tiara de princesa
+Luva de lã
+Meia-luva
+Máscara de dormir
+Faixa de miss
+Gravatinha
+Pochete esportiva
+Doleira
+Mega hair
+Tatuagem temporária
+Relógio Casio
+Casio
+Rolex
+Chilli Beans
+Vivara
+Swarovski
+Tiffany
+Cartier
+Louis Vuitton
+Gucci
+Prada
+Chanel
+Michael Kors
+Arezzo
+Schutz
+Santa Lolla
+Capodarte
+Dumond
+Carmen Steffens
+Anacapri
+Mr. Cat
+Democrata
+Ferracini
+Pegada
+Samello
+Freeway
+Timberland
+Dr. Martens | Doc Martens | Doctor Marten's
+Birkenstock
+UGG
+Crocs Classic
+Kichute
+Conga
+Bamba
+Tênis Bamba
+Tênis Rainha
+Rainha
+Topper
+Penalty
+Umbro
+Diadora
+Le Coq Sportif
+Lacoste
+Tommy Hilfiger
+Tiara papal | Mitra papal | Tripla Tiara
+Três Irmãos | Três Irmãos (joia)
+Gemologia
+Indústria do calçado | Indústria de calçados | Indústria calçadista
+Joias do Império do Brasil
+Pranchas de berço
+Joias de Diana, Princesa de Gales
+Espelho da Grã-Bretanha
+Balangandãs | Balangandã
+Big Nose George
+Maria Dolores
+Chuck Taylor All Star | Chucks | Chuck Taylor All-Stars | Chuck Taylor All-Star | Converse All Star
+Diadema de Moñes
+Carlos Santos Shoes
+Pedra Chintamani | Pedra Cintamani
+Cetro Imperial
+Honras do Principado de Gales
+Calçado | Calçados
+Plimsoll
+La Peregrina
+Safira de Santo Eduardo
+Retícula | Retícula (bolsa)
+Anel de noivado de Diana, Princesa de Gales
+Sapato boneca
+Babucha
+Bornal
+Sapatos de lótus
+Graxa para sapato | Graxa
+Bruaca | Bruaca (bolsa)
+Papete | Papete (calçado) | Percata
+Raquete de neve
+Calçadeira
+# entraram por scripts/engordar.py (dados/categorias/material-escolar.txt)
+Lápis | lapisinho | lápis nº 2 | lápis número 2 | lapis infinito
+Borracha | borrachinha | borracha de lápis | mercur | borrador
+Apontador | apontadorzinho | apontador de lápis
+Estojo | estojinho | estojo de três andares | estojo de 3 andares | estojo com zíper
+Tesoura
+Cola
+Lápis de cor
+Giz de cera
+Canetinha | caneta hidrocor | Caneta hidrográfica
+Marca-texto | marcador | marcadores | lumicolor
+Corretivo | liquid paper | branquinho | errorex | corretivo caneta | caneta corretiva
+Caderno de desenho
+Fichário
+Folha de papel
+Papel sulfite | sulfite
+Cartolina
+Papel crepom | crepom | crepon | papel crepon
+Papel de seda | Papel seda
+Papel cartão
+EVA
+Tinta guache | guache | Tinta
+Pincel
+Aquarela
+Compasso | compaço
+Transferidor
+Esquadro
+Lancheira | lancheirinha
+Garrafinha
+Etiqueta | Etiqueta de nome | etiquetas
+Encapador | plástico de encapar | papel de encapar | encapamento
+Contact
+Durex | fita adesiva | fita durex | fita transparente | cola em fita
+Fita crepe | crepe
+Grampeador | Agrafador
+Clipe | clipe de papel | clipes | Clips
+Percevejo
+Pasta catálogo
+Envelope
+Dicionário
+Atlas
+Quadro-negro | quadro verde | lousa verde
+Giz
+Apagador | apagador de quadro | apagador de caneta
+Pincel atômico | Marcador para quadro branco
+Quadro branco
+Lápis 6B
+Lapiseira
+Grafite | mina | minas | grafites
+Caneta esferográfica | bic | esferográfica | caneta comum | caneta bic cristal
+Caneta-tinteiro
+Caneta gel
+Caneta permanente | marcador permanente
+Caneta fineliner | fineliner
+Bloco de notas
+Post-it | bloquinho adesivo
+Caderno universitário
+Caderno de caligrafia
+Caderno brochura | brochura | brochurão | caderno brochurão
+Caderno quadriculado
+Caderno de música
+Livro didático
+Apostila
+Gibi
+Revista
+Prancheta
+Régua de 30 cm
+Régua T
+Escalímetro
+Normógrafo
+Tira-linhas
+Tinteiro
+Pena
+Lousa de ardósia
+Ábaco
+Tabuada
+Cartilha
+Caderneta
+Crachá
+Carteirinha
+Agenda escolar
+Cola bastão
+Cola branca
+Cola colorida
+Cola glitter
+Barbante
+Papel camurça | camurça
+Papel laminado
+Papel color set
+Papel kraft | kraft
+Papel vegetal
+Papel milimetrado
+Papel almaço | almaço | almasso
+Folha pautada
+Bloco de desenho
+Canson
+Carvão
+Pastel seco
+Pastel oleoso
+Nanquim
+Bico de pena
+Estilete
+Tesoura sem ponta
+Furador
+Perfurador
+Extrator de grampo | tira grampo
+Porta-lápis
+Porta-canetas
+Garrafa térmica | garrafa
+Pote de lanche
+Merendeira
+Guardanapo
+Lupa
+Tubo de ensaio
+Béquer
+Termômetro
+Bússola
+Mapa-múndi
+Planisfério
+Esqueleto
+Maquete
+Cartaz
+Lancheira térmica
+Squeeze
+Toalhinha
+Escova de dente
+Pasta de dente
+Álcool em gel
+Mata-borrão | Papel mata-borrão | mata burrao
+Lápis preto
+Lápis grafite
+Lápis 2B
+Lápis HB
+Lápis de carpinteiro
+Lápis jumbo
+Lápis triangular
+Lápis bicolor | lápis azul e vermelho
+Lápis vermelho e azul
+Lápis com borracha
+Lápis Faber-Castell
+Faber-Castell | faber
+Lapiseira 0.5
+Lapiseira 0.7
+Grafite de lapiseira
+Ponta de lapiseira | apontador de lapiseira
+Caneta azul
+Caneta preta
+Caneta vermelha
+Caneta verde
+Caneta Bic
+Bic Cristal
+Caneta de quatro cores | caneta 4 cores | caneta de 4 cores
+Caneta multicor
+Caneta apagável | caneta que apaga
+Caneta Frixion
+Pena de escrever
+Caneta nanquim
+Caneta brush
+Brush pen
+Caneta pincel
+Caneta para CD
+Caneta de quadro branco
+Marcador de quadro | pincel de quadro | pincel atômico de quadro
+Caneta marca-texto
+Stabilo
+Marca-texto pastel
+Canetinha hidrográfica
+Hidrocor
+Canetinha Faber
+Giz de cera Acrilex
+Giz pastel
+Giz pastel oleoso
+Giz de lousa
+Giz colorido
+Giz branco
+Giz de calçada
+Lápis de cor aquarelável
+Lápis aquarelável
+Lápis de cor 24 cores
+Lápis de cor 36 cores
+Lápis de cor 48 cores
+Lápis de cor 72 cores
+Caixa de lápis de cor | caixa de lápis | caixa de lápis de cor 24 cores
+Lápis metálico
+Lápis neon
+Lápis de cor pastel
+Borracha branca
+Borracha Mercur
+Borracha de bolinha
+Borracha de cheirinho
+Borracha colorida
+Borracha de lápis e caneta
+Borracha plástica
+Borracha limpa-tipos | limpa tipos
+Borracha elétrica
+Borracha caneta | Borracha de caneta | borracha bicolor
+Apontador com depósito
+Apontador simples
+Apontador duplo
+Apontador elétrico
+Apontador de mesa
+Apontador de manivela
+Régua de 15 cm
+Régua de 20 cm
+Régua flexível
+Régua de alumínio
+Régua de acrílico
+Régua paralela
+Esquadro de 45 graus
+Esquadro de 60 graus
+Jogo de esquadros
+Gabarito
+Régua de letras
+Régua de círculos
+Curva francesa
+Compasso escolar
+Compasso de precisão
+Transferidor de 180 graus
+Transferidor de 360 graus
+Caderno de uma matéria
+Caderno espiral
+Caderno pequeno
+Caderno de linguagem
+Caderno de matemática
+Caderno pautado
+Caderno de pauta musical
+Caderno de recado | Caderno de recados
+Caderno inteligente
+Fichário de argolas
+Refil de fichário | Folha de fichário | refil | folhas de fichário
+Divisória de fichário
+Folha quadriculada
+Folha milimetrada
+Folha de almaço
+Bloco de rascunho
+Bloco de anotações
+Bloco de papel
+Bloco canson
+Papel Canson
+Sulfite A4
+Resma de papel
+Papel A3
+Papel manteiga
+Cartolina branca
+Cartolina colorida
+Papel celofane
+Color set
+Papel dobradura
+Papel de origami
+Papel pardo
+Papel paraná
+Papel cartonado
+Papel colorido
+Papel lustroso
+Papel espelho
+Papel micro-ondulado
+Papelão
+Folha de EVA
+EVA com glitter
+Isopor
+Placa de isopor
+Bolinha de isopor
+Argila
+Biscuit
+Tinta acrílica
+Tinta plástica
+Tinta para tecido
+Tinta para rosto
+Tinta a dedo
+Tinta aquarela
+Aquarela em pastilha
+Estojo de aquarela
+Pincel chato
+Pincel redondo
+Pincel número 10
+Kit de pincéis
+Paleta de pintura
+Godê
+Pote d'água
+Avental de pintura
+Camiseta velha para pintura
+Cola Tenaz | tenaz
+Cola Pritt | pritt
+Cola instantânea
+Super Bonder
+Cola quente
+Pistola de cola quente
+Bastão de cola quente
+Cola de isopor
+Cola de EVA
+Cola spray
+Fita dupla-face | dupla face
+Fita adesiva transparente
+Fita colorida
+Fita washi
+Fita corretiva
+Corretivo líquido
+Corretivo em fita | corretivo de fita | corretivo fita
+Tesoura escolar
+Tesoura de picotar
+Tesoura de canhoto
+Tesoura Mundial
+Lâmina de estilete
+Base de corte
+Grampeador pequeno
+Prendedor de papel
+Binder clip
+Tachinha | taxinha | alfinete de mural
+Furador de papel
+Saca-grampo
+Elástico de dinheiro
+Pasta sanfonada
+Pasta polionda | polionda
+Pasta de plástico
+Pasta L
+Pasta suspensa
+Pasta arquivo
+Pasta de papelão
+Envelope pardo
+Plástico de folha
+Saco plástico
+Capa plástica
+Encapar caderno
+Papel contact | contact transparente
+Etiqueta escolar
+Etiqueta com nome
+Etiqueta adesiva
+Adesivo | adesivos
+Adesivos de estrelinha
+Adesivo de parabéns
+Carimbo de parabéns
+Carimbo
+Almofada de carimbo
+Planner
+Diário escolar
+Boletim
+Camiseta do uniforme
+Agasalho do uniforme
+Tênis escolar
+Mochila escolar
+Mochila de costas
+Pasta escolar
+Garrafinha de água
+Squeeze escolar
+Kit higiene
+Escova de dente da escola
+Estojo de zíper
+Estojo duplo
+Estojo triplo
+Estojo de lata
+Estojo de pano
+Livro de português
+Livro de matemática
+Livro de inglês
+Livro paradidático | paradidático
+Gramática
+Minidicionário | minidicionário aurélio
+Dicionário de inglês
+Atlas geográfico
+Calculadora simples
+Calculadora HP | hp 12c
+Calculadora Casio
+Material dourado
+Escala Cuisenaire
+Sólidos geométricos
+Alfabeto móvel
+Letras móveis
+Caminho Suave
+Livro de caligrafia
+Flauta doce
+Flauta
+Instrumento musical
+Tablet escolar
+Notebook escolar
+Jaleco de laboratório
+Bússola escolar
+Kit de ciências
+Papel para cartaz
+Apagador de lousa
+Giz de quadro
+Lousinha
+Tachinhas coloridas
+Post-it colorido
+Bloco adesivo
+Marcador de página
+Marca-página
+Clip marca-página
+Régua de leitura
+Suporte de livro
+Encadernação
+Espiral de encadernação
+Capa de encadernação
+Grampeador de mesa
+Fichas pautadas
+Fichas de estudo
+Flashcards
+Cartões de memorização
+Folha de prova
+Gabarito de prova
+Folha de redação
+Papel de carta
+Bilhete
+Escaninho
+Crachá escolar
+Carteirinha de estudante
+Passe escolar
+Caneta Compactor
+Compactor
+Caneta Pilot
+Pilot | pincel pilot
+Caneta Pentel
+Pentel
+Caneta Stabilo
+Caneta Uni-ball
+Uni-ball
+Caneta Cis
+Cis
+Caneta Tris
+Tris
+Caneta Maped
+Maped
+Acrilex
+Tilibra
+Jandaia
+Foroni
+Credeal
+Caderno Tilibra
+Caderno Jandaia
+Caderno Credeal
+Caderno da Barbie
+Caderno do Homem-Aranha
+Caderno do Flamengo
+Caderno de personagem
+Caderno de time
+Caderno de capa de desenho
+Caderno com adesivos
+Caderno com cadeado
+Diário com cadeado
+Caderno Moleskine
+Moleskine
+Bullet journal
+Caderno pontilhado
+Caderno sem pauta
+Caderno de anotações
+Caderneta de bolso
+Caderno de vocabulário
+Lápis Bic
+Lápis Evolution
+Lápis Ecolápis
+Ecolápis
+Lápis Staedtler
+Staedtler
+Lápis Koh-i-noor
+Lápis Cretacolor
+Lápis Derwent
+Lápis Prismacolor
+Prismacolor
+Lápis Caran d'Ache
+Lápis Polychromos
+Lápis de cor Faber-Castell
+Lápis de cor Acrilex
+Lápis de cor Bic
+Lápis de cor Tris
+Lápis de cor Maped
+Lápis de cor Giotto
+Giz de cera Faber-Castell
+Giz de cera grosso
+Giz de cera fino
+Giz de cera jumbo
+Giz de cera triangular
+Giz de cera de batom
+Lápis de cera
+Lápis dermatográfico
+Lápis carvão
+Carvão vegetal
+Carvão para desenho
+Sanguínea
+Grafite em pó
+Esfuminho
+Esfumador
+Spray fixador
+Prancheta de desenho
+Prancheta A4
+Prancheta portátil
+Mesa digitalizadora
+Cavalete
+Tela de pintura
+Tela de algodão
+Papel aquarela
+Papel A2
+Papel Kraft colorido
+Papel reciclado
+Papel colorido A4
+Papel de dobradura colorido
+Papel glitter
+Papel metalizado
+Papel fosforescente
+Papel neon
+Papel ofício
+Papel timbrado
+Papel de presente
+Papel jornal
+Jornal velho
+Revista para recortar
+Revista velha
+Retalho de tecido
+Feltro
+Lã para artesanato
+Barbante colorido
+Linha de bordar
+Agulha sem ponta
+Botões para artesanato
+Purpurina
+Olho móvel
+Pompom colorido
+Limpa-cachimbo
+Arame de chenille
+Palito de picolé colorido
+Palito de sorvete
+Palito de churrasco para maquete
+Canudo colorido
+Rolo de papel higiênico | Rolinho de papel higiênico
+Caixa de ovo
+Caixa de sapato
+Garrafa pet para reciclagem
+Sucata
+Tesourinha
+Tesoura de ponta redonda
+Tesoura de cortar papel
+Tesoura com mola
+Cortador de círculo
+Furador de papel decorativo
+Furador de EVA
+Furador de estrelinha
+Perfurador de dois furos
+Perfurador de um furo
+Grampeador alicate
+Grampo 26/6
+Grampo trilho
+Trilho de plástico
+Colchete
+Colchete de pasta
+Prendedor de pasta
+Prendedor de madeira
+Pregador colorido
+Ímã de quadro
+Fita métrica
+Trena
+Régua de geometria
+Kit de geometria
+Kit escolar
+Kit de volta às aulas
+Lista de material
+Lista de material escolar
+Livro de colorir escolar
+Livro de atividades
+Caderno de atividades
+Folha de atividade
+Fotocópia
+Xerox
+Impressão
+Cartucho de tinta
+Toner
+Impressora escolar
+Mochila Kipling
+Kipling
+Mochila Jansport
+Jansport
+Mochila de personagem
+Mochila de lancheira
+Mochila saco
+Pasta de couro
+Pasta 007
+Porta-documentos
+Tubo porta-projetos
+Canudo de papel
+Porta-desenho
+Porta-trecos
+Organizador de mesa
+Organizador de lápis
+Copo de lápis
+Lata de lápis
+Suporte de fita
+Suporte de durex
+Dispenser de clipes
+Bandeja de documentos
+Calendário de mesa
+Relógio de parede da sala
+Mapa do Brasil
+Mapa político
+Mapa físico
+Mapa mudo
+Mapa de estados
+Bandeira do Brasil de papel
+Hino nacional
+Livro de hino
+Cartaz do alfabeto
+Alfabeto ilustrado
+Silabário
+Tabela periódica
+Tabela de multiplicação
+Tabuada de bolso
+Cartela de tabuada
+Fita numérica
+Reta numérica
+Relógio de papel
+Material de contagem
+Palitos de contagem
+Tampinhas de contagem
+Dados
+Bingo de letras
+Quebra-cabeça educativo
+Ábaco de pinos
+Material Montessori
+Material de alfabetização
+Livro de leitura
+Livrinho de história
+Gibi da Turma da Mônica
+Revistinha
+Livro de literatura
+Livro de inglês com CD
+CD do livro
+DVD educativo
+Flauta Yamaha
+Escaleta
+Metalofone
+Triângulo
+Chocalho escolar
+Bandinha
+Uniforme de educação física
+Bermuda de educação física
+Tênis branco
+Meia branca
+Bola de educação física
+Bambolê escolar
+Cone
+Cronômetro de educação física
+Toalha de banho
+Sabonete líquido
+Escova de dente infantil
+Pasta de dente infantil
+Copo de escovação
+Lenço umedecido
+Fralda reserva
+Muda de roupa
+Pente
+Escova de cabelo
+Pasta transparente
+Pasta de projeto
+Projeto de feira de ciências
+Vulcão de bicarbonato
+Bicarbonato
+Vinagre para experiência
+Feijão no algodão
+Algodão
+Copo plástico para experiência
+Termômetro escolar
+Lâmpada de experiência
+Fio elétrico
+Motorzinho
+Kit robótica
+Robótica
+Lego Education
+Arduino
+Placa Arduino
+Raspberry Pi
+Calculadora gráfica
+Tablet Samsung
+Chromebook
+Notebook Positivo
+Pendrive escolar
+Fone de ouvido com fio
+Headset escolar
+Lápis de cor 12 cores
+Lápis de cor jumbo
+Lápis de cor metálico
+Lápis de cor neon
+Lápis de cor tons de pele
+Lápis cópia
+Giz de cera fluorescente
+Canetinha ponta grossa
+Canetinha ponta fina
+Canetinha lavável
+Canetinha 12 cores
+Canetinha 24 cores
+Canetinha dupla
+Canetinha de carimbo
+Caneta de tecido
+Caneta posca
+Posca
+Caneta metálica
+Caneta glitter | caneta com glitter
+Caneta perfumada
+Caneta com pompom
+Caneta de pena
+Caneta retrátil
+Caneta tampada
+Caneta BRW
+Caneta Faber-Castell
+Borracha macia
+Borracha de vinil
+Borracha perfumada
+Borracha moldável
+Borracha em formato de bicho
+Borracha ponteira | borracha de ponta
+Ponteira de lápis | ponta de lapis
+Apontador de metal
+Apontador jumbo
+Apontador com borracha
+Lâmina de apontador
+Régua de 50 cm
+Régua de metal
+Régua de madeira
+Régua de formas geométricas
+Régua escolar
+Régua de desenho
+Compasso de metal
+Compasso com lápis
+Prancheta A3
+Mesa de desenho
+Porta-projetos
+Pasta de elástico | Pasta com elástico
+Pasta com trilho
+Pasta com botão
+Pasta zip
+Pasta classificadora
+Caixa arquivo
+Fichário universitário
+Fichário escolar
+Índice
+Separador
+Caderno de argola
+Caderno capa dura | Caderno de capa dura
+Caderno 10 matérias | Caderno de 10 matérias
+Caderno 1 matéria
+Caderno de colorir
+Caderno de lettering
+Planner escolar
+Agenda permanente
+Caderneta de anotações
+Bloco quadriculado
+Bloco de redação
+Papel A4 | Folha A4
+Papel lustro
+Papel carbono
+Papel corrugado
+Papel adesivo
+Papel fotográfico
+Papel de desenho
+EVA atoalhado
+EVA estampado
+Tecido
+TNT
+Bola de isopor
+Palito de picolé
+Palito de churrasco
+Palito de dente
+Canudo
+Prendedor
+Pregador
+Pompom
+Olhinho móvel | Olhinhos móveis
+Limpador de cachimbo
+Arame encapado
+Fita de cetim
+Fita adesiva colorida
+Washi tape
+Fita métrica escolar
+Tesoura para canhoto
+Cola em spray
+Cola relevo
+Cola tubo
+Tinta PVA
+Tinta de tecido
+Tinta nanquim
+Tinta spray
+Tinta fosca
+Tinta fluorescente
+Pincel de cerda
+Pincel de pelo
+Rolinho de pintura
+Esponja de pintura
+Copo de água para pintura
+Pote de tinta
+Massa de biscuit
+Carimbo escolar
+Cartela de adesivos
+Estrelinha adesiva
+Encapador de livro
+Capa de caderno
+Capa de chuva da mochila
+Mochila infantil
+Mochila de rodas
+Estojo box
+Estojo de silicone
+Estojo de pelúcia
+Lancheira de alça
+Bolsa térmica
+Copo com canudo
+Talher portátil
+Kit lanche
+Porta-lanche
+Guardanapo de pano
+Toalha de mão
+Pente escolar
+Protetor solar escolar
+Boné escolar
+Agasalho escolar
+Meia escolar
+Camiseta escolar
+Bermuda escolar
+Calça escolar
+Saia escolar
+Livro de exercícios
+Caderno de exercícios
+Dicionário de português
+Atlas escolar
+Globo terrestre
+Flauta escolar
+Pandeiro escolar
+Cadeado de armário | Cadeado do armário | cadeado
+Chave do armário
+Fone de ouvido escolar
+Clips colorido | Clipes coloridos
+Clipe gigante | Clips gigante
+Prendedor binder
+Grampo de pasta
+Minigrampeador
+Percevejo colorido
+Alfinete de mapa
+Lousa infantil
+Marcador para lousa
+Giz líquido
+Caneta para retroprojetor
+Transparência
+Ponteiro
+Laser pointer
+Retroprojetor
+Cadeira escolar
+Mesa escolar
+Armário escolar
+Porta-durex
+Plástico bolha
+Saquinho plástico
+Envelope colorido
+Portfólio
+Pasta catálogo com 50 folhas
+Plástico para fichário
+Envelope plástico | Envelope de plástico
+Protetor de folha
+Lâmina de plastificação
+Guilhotina
+Cortador de papel
+Furador de 2 furos
+Furador de 1 furo
+Trabalho encadernado
+Caderno de desenho A3
+Caderno de desenho A4
+Caderno de cartografia
+Caderno de partitura
+Caderno de receitas
+Caderno de capa flexível
+Caderno costurado
+Caderno de bolso
+Caderno de folhas coloridas
+Caderno com elástico
+Caderno personalizado
+Caderno de futebol
+Caderno Foroni
+Lápis Labra
+Lápis Tris
+Caneta Cristal azul
+Caneta Bic preta
+Caneta Bic vermelha
+Caneta 0.7
+Caneta 1.0
+Caneta 0.5
+Caneta dourada
+Caneta prateada
+Caneta branca
+Caneta de lettering
+Caneta calígrafa
+Caneta tinteiro escolar
+Cartucho de caneta-tinteiro
+Carga de caneta
+Refil de caneta | carga
+Carga de grafite
+Grafite 0.5
+Grafite 0.7
+Grafite colorido
+Borracha Faber-Castell
+Borracha Staedtler
+Apontador Faber-Castell
+Apontador de lata
+Cola Acrilex
+Tinta Acrilex
+Guache Acrilex
+Massinha Acrilex
+Massinha Soft
+Lápis de cor Staedtler
+Lápis de cor Caran d'Ache
+Lata de lápis de cor
+Caixa de giz
+Caixa de canetinhas
+Estojo de lápis de cor
+Pote de massinha
+Pote de cola
+Frasco de cola
+Tubo de cola
+Pote de guache
+Kit de guache
+Caixa de aquarela
+Aquarela em tubo
+Lápis de desenho
+Lápis 4B
+Lápis 8B
+Lápis 2H
+Lápis 3B
+Borracha de desenho
+Fixador de desenho
+Prancheta escolar
+Prancheta de acrílico
+Prancheta de madeira
+Prancheta com prendedor
+Livro de ciências
+Livro de história
+Livro de geografia
+Livro de artes
+Livro de redação
+Caderno de redação
+Caderno de inglês
+Caderno de ciências
+Caderno de história
+Caderno de geografia
+Folha
+Papel
+Plástico para encapar
+Caderno de questões
+Caneta de retroprojetor
+Bolsinha de moedas
+Esquadro de 45 | esquadro 45
+Esquadro de 60
+Transferidor de 360
+Transferidor de 180
+Compasso com estilete
+Marca-passo
+Mimógrafo | mimiografo
+Disquete
+Lâmina
+Mimeógrafo
+Palito
+Pêndulo
+Tampa de caneta
+Trapézio

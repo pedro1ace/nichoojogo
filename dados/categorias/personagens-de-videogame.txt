@@ -1,18 +1,18 @@
 # titulo: Personagens de videogame
 # pergunta: Cite um personagem de videogame
 # formato: uma resposta por linha; apelidos separados por " | "
-Mario | Super Mario
+Mario | Super Mario | Jumpman | Super mario xp | Mario Mario
 Sonic
 Pikachu
-Luigi
+Luigi | Ruīji | Super Luigi
 Pac-Man
 Link
 Zelda | Princesa Zelda
-Princesa Peach | Peach
+Princesa Peach | Peach | Princess Peach | Nicole Mills | Princess Peach Toadstool | Princesa Toadstool
 Bowser
-Yoshi
+Yoshi | Yoshi's Cookie | Yoshis
 Donkey Kong
-Kratos
+Kratos | Ghost of Sparta | Blades of Chaos | Blades of caos
 Lara Croft
 Steve | Steve do Minecraft
 Creeper
@@ -20,9 +20,9 @@ Master Chief
 Crash | Crash Bandicoot
 Spyro
 Kirby
-Samus | Samus Aran
+Samus | Samus Aran | Zero Suit Samus
 Mega Man
-Ryu
+Ryu | Ryu Hoshi | Evil Ryu | Satsui no Hadou Ryu | Tatsumaki sempu kyaku
 Ken
 Chun-Li
 Blanka
@@ -31,24 +31,24 @@ Dhalsim
 Zangief
 M. Bison
 Sub-Zero
-Scorpion
+Scorpion | Hanzo Hasashi
 Liu Kang
-Raiden
+Raiden | Naked Raiden
 Kitana
 Goro
 Shao Kahn
 Johnny Cage
 Sonya Blade
-Tails
+Tails | Miles Tails Prower
 Knuckles
 Shadow
 Amy Rose
 Dr. Eggman | Robotnik | Eggman
-Wario
+Wario | WarioWare Twisted! | Virtual Boy Wario Land | Wario Land | Wario Cruise | Wario Land II | WarioWare D.I.Y.
 Waluigi
 Toad
 Daisy
-Rosalina
+Rosalina | Princesa Rosalina
 Diddy Kong
 Ganondorf | Ganon
 Navi
@@ -68,24 +68,24 @@ Eevee
 Lucario
 Arthur Morgan
 John Marston
-Geralt | Geralt de Rívia
+Geralt | Geralt de Rívia | Geralt of Rivia
 Ellie
-Joel
-Nathan Drake
+Joel | Joel Miller
+Nathan Drake | Nathan Morgan
 Aloy
 Ezio | Ezio Auditore
 Altaïr
 Kassandra
 Bayek
-CJ | Carl Johnson
+CJ | Carl Johnson | Carl "CJ" Johnson
 Tommy Vercetti
-Niko Bellic
+Niko Bellic | Michael Hollick
 Franklin
 Michael De Santa | Michael
 Trevor
-Claude
+Claude | Claude Speed
 Max Payne
-Solid Snake | Snake
+Solid Snake | Snake | Old Snake
 Big Boss
 Raiden de Metal Gear
 Cloud | Cloud Strife
@@ -144,7 +144,7 @@ Bomberman
 Dig Dug
 Q*bert
 Frogger
-Alex Kidd
+Alex Kidd | Alex Kidd in Shinobi World | Alex Kidd BMX Trial | Alex Kidd in High-Tech World | Alex Kidd Complete Album
 Wonder Boy
 Ristar
 Ecco
@@ -191,7 +191,7 @@ Plants vs. Zombies | Girassol
 Kid Icarus
 Simon Belmont
 Alucard
-Dante
+Dante | Dante Devil May Cry
 Vergil
 Nero
 Bayonetta
@@ -218,7 +218,7 @@ Cyrax
 Jax
 Mileena
 Kung Lao
-Noob Saibot
+Noob Saibot | Classic Sub-Zero
 Reptile
 Ermac
 Baraka
@@ -231,7 +231,7 @@ Marth
 Roy
 Ike
 Corrin
-Sora
+Sora | Sora kingdom hearts | Key Blade
 Riku
 Kairi
 Goofy
@@ -273,7 +273,7 @@ Isabelle
 Tom Nook
 K.K. Slider
 Villager do Animal Crossing
-Zero
+Zero | Mega Man Zero
 X
 Inkling
 Bubsy
@@ -289,3 +289,560 @@ Mr. Game & Watch
 R.O.B.
 Duck Hunt
 Cachorro do Duck Hunt
+# entraram por scripts/engordar.py (dados/fontes/engordar/personagens-de-videogame.txt)
+Princesa Daisy
+Toadette
+Bowser Jr.
+Dixie Kong
+Cranky Kong
+King K. Rool | Barão K. Roolestein
+Koopa
+Koopa Troopa
+Goomba
+Boo
+Shy Guy
+Lakitu
+Kamek
+Birdo
+Epona
+Midna
+Impa
+Sheik
+Tingle
+Ridley
+Metroid
+Rei Dedede
+King Dedede
+Meta Knight
+Waddle Dee
+Slippy
+Peppy
+Palutena
+Lucina
+Robin
+Byleth
+Rouge
+Silver
+Big the Cat
+Cream
+Metal Sonic
+Chao
+Proto Man
+Dr. Light
+Dr. Wily | Dr. Albert W. Wily
+Balrog
+Juri
+Sonya
+Shang Tsung
+Jade
+Kenshi
+Kabal
+Atreus
+Zeus (God of War)
+Sully
+Victor Sullivan
+Elena
+Abby
+Cortana
+Arbiter
+Duke Nukem
+G-Man
+Revolver Ocelot
+Liquid Snake
+Otacon
+Barret
+Zack
+Vincent Valentine
+Yuffie
+Red XIII
+Rinoa
+Zidane
+Tidus
+Yuna
+Lightning
+Cid
+Moogle
+Chocobo
+Cactuar
+Mickey (Kingdom Hearts)
+Roxas
+Axel
+Leon S. Kennedy | Leon Scott Kennedy
+Ethan Winters
+Rebecca Chambers
+Sheva
+Connor
+Edward Kenway
+Eivor
+Arno
+Jacob Frye
+Evie Frye
+Desmond
+Big Smoke
+Ryder
+Sweet
+Dutch
+Sadie Adler
+Ciri
+Yennefer
+Triss
+Dandelion
+Jaskier
+Johnny Silverhand
+Esqueleto (Minecraft)
+Wither
+Ender Dragon
+Raven (Fortnite)
+Drift
+Midas
+Toriel
+Undyne
+Flowey
+Asgore
+Alphys
+Mettaton
+Chara
+Hornet
+Knight (Hollow Knight)
+Globox
+Coco Bandicoot
+Neo Cortex
+Aku Aku
+Uka Uka
+Sparx
+Drácula (Castlevania) | Mathias Cronqvist | Dracula Castlevania | Dracula Vlad Tepes | Gilles de Rais | Mathias
+Ryu Hayabusa
+Arthur (Ghosts 'n Goblins)
+Bonk | BC Kid | PC Genjin
+Toejam
+Earl
+Astro Bot
+Rachet
+Kazuma Kiryu
+Kiryu
+Majima
+Goro Majima
+Joker (Persona) | Curinga | The Joker
+Morgana
+Yu Narukami
+Makoto
+Miles Edgeworth
+Luke
+Alma
+Jeanne
+Kat
+Ratchet & Clank
+Hanzo
+Reaper
+Widowmaker
+Reinhardt
+Winston
+Lúcio
+Soldado 76
+Mei
+Junkrat
+Roadhog
+Ana
+Pharah
+Torbjörn
+Bastion
+Zenyatta
+Symmetra
+Sombra
+Moira
+Brigitte
+Ashe
+Baptiste
+Kiriko
+Thresh
+Katarina
+Darius
+Draven
+Caitlyn
+Ekko
+Jayce
+Viktor
+Riven
+Aatrox
+Kayn
+Pyke
+Yuumi
+Akali
+Annie
+Miss Fortune
+Sett
+Crystal Maiden
+Axe
+Jaina
+Sylvanas
+Deathwing
+Jim Raynor
+Diablo
+Tyrael
+Deckard Cain
+Rei Lich
+Liara
+Tali
+Wrex
+Shepard
+Gordon
+Heavy
+Scout
+Spy
+Engineer
+Medic
+Sniper
+Pyro
+Demoman
+Soldier
+Pikmin
+Wii Fit Trainer
+Cão do Duck Hunt
+Mii | Miis
+Little Mac
+Captain Toad
+Funky Kong
+King Boo
+Petey Piranha
+Planta Piranha
+Chain Chomp
+Bob-omb
+Thwomp
+Hammer Bro
+Dry Bones
+Magikoopa
+Professor E. Gadd
+Pauline
+Cappy
+Paper Mario
+Fawful
+Dimentio
+Count Bleck
+Chibi-Robo
+Porky
+Ninten
+Lloyd
+Sonic Boom
+Blaze
+Espio
+Vector
+Charmy
+Omega
+Jet
+Wave
+Storm
+Infinite
+Mephiles
+Tikal
+Zavok
+Fang
+Bean
+Bark
+Opa-Opa
+Nights
+Ulala
+Beat
+Akira
+Jacky
+Nina Williams
+Lei Wulong
+Law (Tekken)
+Kuma
+Panda
+Lars
+Asuka (Tekken)
+Geese Howard
+Haohmaru
+Nakoruru
+Sol Badguy
+Ky Kiske
+May (Guilty Gear)
+Kasumi
+Ayane
+Hitomi
+Tina
+Lili
+Gouken
+Seth
+Abel | Abel Coelho | Coelho
+Rufus
+C. Viper
+Ibuki
+Rose
+Cody
+Guy
+Rolento
+Poison
+Hugo | Hugo, o trol | Programa do Hugo
+Necalli
+Rashid
+Kolin
+Menat
+Zeku
+Jamie
+Kimberly
+Manon
+Marisa
+Lily
+A.K.I.
+Mega Man X
+Bass
+Roll
+Rush
+Axl
+Sigma
+Vile
+Mother Brain
+Kraid
+Dark Samus
+Sylux
+Ghirahim
+Zant
+Vaati
+Skull Kid
+Majora
+Deku
+Goron
+Zora
+Gerudo
+Korok
+Riju
+Mipha
+Urbosa
+Daruk
+Revali
+Sidon
+Purah
+Rauru
+Sonia
+Yunobo
+Tulin
+Beedle
+Cheep Cheep
+Blooper
+Spiny
+Wiggler
+Pokey
+Bullet Bill
+Banzai Bill
+Rex
+Monty Mole
+Snifit
+Ninji
+Wart
+Mouser
+Tryclyde
+Fryguy
+Clawgrip
+Phanto
+Mask
+Bandana Dee
+Magolor
+Marx
+Dark Matter
+Galacta Knight
+Susie
+Taranza
+Elfilin
+Gooey
+Adeleine
+Ribbon
+Daroach
+# entraram por scripts/engordar.py (dados/fontes/engordar/personagens-de-videogame.wiki.txt)
+Jason Voorhees | Elias Voorhees
+Personagens de Halo | Projeto SPARTAN | Avery Johnson | Jacob Keyes | Tartarus | Lord Terrence Hood | Miranda Keyes | Spartans | Thomas Lasky | Catherine Elizabeth Halsey | Catherine Halsey | Dra. Halsey | Serin Osman | Hierarcas | Spartan | Sargento Johnson | Rtas 'Vadum | Prophet of Truth | Mendicant Bias | SPARTAN | James Ackerson | Prophet of Mercy | Prophet of Regret | SPARTAN-II | Prophets | High Prophet of Regret | Lord Hood | High Prophets | Spartan Locke | Avery Junior Johnson | Wallace Jenkins | Programa SPARTAN-II | Profetas Hierarcas | Prophet Of Regret | SPARTAN-III | Franklin Mendez | Sargento Avery Johnson | Prophet Hierarchs | Offensive Bias | Capitão Keyes | Sesa 'Refumee
+Darth Vader | Anakin Skywalker
+E.T. O Extraterrestre | E.T. - O extraterrestre | ET, o Extraterrestre | E.T. - O Extra-Terrestre | ET - O Extraterrestre | E.T. the Extra-Terrestrial | E.T. - O Extraterrestre
+Chloe Frazer
+Elena Fisher
+Samuel Drake | Samuel Morgan | Sam Morgan | Sam Drake
+Nadine Ross
+Tio Patinhas | Patinhas MacPatinhas
+Freeza | Botter | Cyber Freeza | Ginyu
+Sarah Kerrigan
+Doctor Neo Cortex
+Noctis Lucis Caelum
+Zumbis em Resident Evil
+Harry Flynn
+343 Guilty Spark | Guilty Spark
+Árbitro | Árbitro (Halo) | Thel 'Vadamee | Ripa 'Moramee | Thel 'Vadam
+Max Caulfield
+Rafe Adler
+Arno Dorian
+Banjo & Kazooie
+Conde Dookan | Conde Dooku | Darth Tyranus | Count Dooku | Darth Tyrannus | Dookan | Confederação dos Sistemas Independentes | Dooku
+Sonic the Hedgehog | Sonic the Hedgehog (personagem) | Sonic, o Ouriço | Personagem Sonic
+Ratonhnhaké:ton | Connor Kenway | Ratonhnhaké꞉ton | Ratonhnhaketon | Ratonhnaké꞉ton
+Majin Boo | Majin | Majin Buu | Kid Boo | Super Boo
+Kiritsugu Emiya
+Mickey Mouse | Rato Mickey | Ratinho Curioso
+Avatar | Avatar (Xbox) | Avatar Xbox | Xbox Live Avatar
+Equipe Rocket
+Sprigatito, Floragato e Meowscarada | Sprigatito | Floragato | Meowscarada | Sprigato
+Rainha Má | Rainha Má (Disney)
+Dark Queen
+Branca de Neve | Branca de Neve (Disney)
+Spawn | Malebolgia
+Flood | Flood (Halo) | Halo Flood | Flood halo
+Covenant | Covenant (Halo) | Covenant halo | Sangheili | Elite | Grunts | Jackals | Hunters | Elites | Brutes | Unggoy | Grunt | Brute | San'Shyuum | Kig-Yar | Jiralhanae | Elite Covenant | Grande Jornada
+Bela | Bela (Disney)
+Elaine Marley
+Serena | Serena (Pokémon)
+Blaze Fielding
+Sheng Long
+Tikal the Echidna
+Ursinho Pooh | Piglet's Big Movie | Pooh | Leitão, o Filme | Piglet - O filme | Ursinho Puff | Joanica-Puff | Dudu-de-Puf
+Gold Ship | Gold Ship (Umamusume: Pretty Derby)
+Ariel | Ariel (personagem)
+Brock
+WarioWare: Touched! | WarioWare Touched!
+Freddy Krueger
+Shinn Asuka
+Chloe Price
+Barry Burton
+Kefka Palazzo
+Monika | Monika (Doki Doki Literature Club!)
+Joanna Dark
+Misty | Misty (Pokémon)
+Ashley Graham | Ashley Graham (Resident Evil)
+Simba
+Cinderela | Cinderela (personagem da Disney) | Princesa Cinderela
+Battletoads | Battletoads (personagens)
+Giygas
+Vault Boy
+Arthas Menethil
+Jasmine | Jasmine (personagem)
+Scorbunny
+Aurora | Aurora (Disney)
+John Tanner
+Kazuya Mishima
+Koopalings
+Dwayne Hicks
+Mew | Mew (Pokémon)
+Zeratul
+Anran Ye | Anran Ye (Overwatch)
+Illidan Stormrage
+Gravemind
+Marshall Law
+Deathclaw
+Heihachi Mishima
+Shadow the Hedgehog
+Alice | Alice (Disney)
+Esmeralda | Esmeralda (Disney)
+Trevor Philips
+Desmond Miles
+Joe Musashi
+Fa Mulan
+Ling Xiaoyu | Xiaoyu
+Xenomorfo
+Haru Urara | Haru Urara (Umamusume: Pretty Derby)
+Sayori | Sayori (Doki Doki Literature Club!)
+Anna Williams
+Jack Skellington | Jack Esqueleto
+Sr. X | Sr. X (Resident Evil)
+Terminator | Terminator (personagem)
+Tux
+Yuri | Yuri (Doki Doki Literature Club!)
+Pocahontas | Pocahontas (personagem)
+MissingNo. | Missingno
+Natsuki | Natsuki (Doki Doki Literature Club!)
+Christie Monteiro
+Pateta
+Lisa Trevor
+Irmãos Metralha | Os Irmãos Metralha
+Julia Chang
+Huguinho, Zezinho e Luisinho | Huguinho, Zezinho e Luizinho | Huguinho
+Pato Donald | Ronrom | Donald Duck | Phooey Duck
+Capitão Price
+James Bond | James Bond (série de jogos eletrônicos) | The World Is Not Enough | A View to a Kill | From Russia with Love
+Moltres
+Morrigan Aensland
+Lord British
+The Narrator | The Narrator (Fight Club) | Tyler Durden | Narrador
+Ayla | Ayla (Chrono Trigger)
+Wario Land: Shake It – Amazing Footage!
+Metal Gear | Metal Gear (arma) | Metal Gear D | Arsenal Gear | Metal Gear RAY | Metal gear rex | Metal Gear REX | Metal gear ray | Shagohod | Metal Gear Mk. II | Shagohad | RAXA | Metal Gear Ray | ICBMG e RAXA | ICBMG | Metal Gear Mk. III | Outer Haven
+LeChuck
+Leatherface
+Capitão Sawada
+Soma Cruz | Soma
+Pulseman
+Elsword Sieghart
+Solaire de Astora
+Galen Marek
+Lunamaria Hawke
+WarioWare Gold
+Duck Hunt Dog
+Eddie Riggs | Eddie Riggs (personagem)
+Megatron
+Bafo de Onça | João bafo de onça | João Bafo de Onça | João Bafo-de-Onça | Bafo-de-Onça | João Bafodeonça
+Kuma e Panda
+Margarida | Margarida (Disney) | Donna Duck
+Wario World
+Melmetal | Meltan | Meltan e Melmetal
+Slowpoke
+Bryan Fury
+Razputin | Razputin (personagem)
+Alex Mason
+Ty the Tasmanian Tiger
+WarioWare: Smooth Moves | Form Baton | Temple of Form | Odoru! Made in Wario
+William Afton | Purple Guy | Scraptrap
+Sininho | Tinker Bell
+Riddler | Edward Nygma | Charada | O Charada | Edward Nigma
+Hazel Flood
+Togepi
+Guybrush Threepwood
+Toro Inoue
+Genjuro Kibagami | Genjuro | Genjyuro Kibagami | Kibagami Genjuro
+Rainha de Copas
+Reiko Nagase
+Wario Land: Shake It! | Wario Rando Sheiku
+Postal Dude | The Postal Dude
+Wario Land: Super Mario Land 3
+Clérigo | Clérigo (classe de personagem)
+Soap | Soap (personagem)
+Jane Porter | Jane Porter (Tarzan)
+Ozob
+Monstro | Monstro (Disney) | Fera
+Prince | Prince (Prince of Persia) | Príncipe
+Colt Vahn
+Alisa Bosconovitch
+Tiny Tiger | Tiny Tiger (personagem)
+Segata Sanshiro
+John Rambo
+Aladdin | Aladdin (personagem da Disney)
+Minnie Mouse
+Pluto
+Chefe | Chefe (jogos eletrônicos) | Chefão | Chefe de jogo | Chefe de jogos
+B.J. Blazkowicz | William "B.J." Blazkowicz
+Peter Pan
+Morshu
+Chris Walker
+Clara de Ovos
+Ezio Auditore da Firenze
+Dopefish
+Megurine Luka
+Leitão | Leitão (Disney) | Piglet
+Parodius
+Akito Izuki
+Ranger | Ranger (Quake)
+Mario & Wario
+Krang | Krang (Teenage Mutant Ninja Turtles)
+Grilo Falante | Jiminy Cricket
+WarioWare, Inc.: Mega Microgames! | Wario Ware, Inc. Mega Party Game$ | Wario Ware Inc.
+Tigrão | Tigger
+Roque-Roque | Dentucinho
+Tico e Teco | Chip 'n Dale | Chip and Dale | Tico & Teco
+Guru | Guru (Ursinho Pooh)
+Super Mario Land 2: 6 Golden Coins
+Victor Zsasz | Zsasz
+Pepsiman
+Clarabela | Clarabella
+Horácio | Horácio (Disney)
+Corujão | Corujão (Ursinho Pooh) | Senhor Coruja
+Dogmeat
+Mudkip | Família de Mudkip
+Tifa Lockhart
+Kremlings
+Wario Land 4
+Jarmen Kell

@@ -67,30 +67,22 @@ FECHADAS = {
     "frutos-do-mar",
     "dancas",
     "filmes-nota-imdb",
-    # pacote de férias (pedido de 07/11): 89 temas que o brasileiro médio conhece; a lista cobre o
-    # que o público lembra, e as recusadas do plantão diário completam o resto
-    "tipos-de-pao", "biscoitos-e-bolachas", "sabores-de-sorvete", "sabores-de-bolo",
-    "massas", "molhos", "recheios-de-pastel", "comidas-de-rua",
-    "pratos-internacionais", "cafe-da-manha", "padaria", "doces-de-mercado",
-    "supermercado", "graos-e-cereais", "mamiferos", "repteis-e-anfibios",
-    "animais-da-africa", "animais-da-fazenda", "animais-venenosos", "animais-que-botam-ovo",
-    "flores", "arvores", "coisas-do-banheiro", "coisas-do-quarto",
-    "moveis", "ferramentas", "eletronicos", "coisas-da-bolsa",
+    # pacote de férias (pedido de 07/11): temas que o brasileiro médio conhece; a lista cobre o
+    # que o público lembra, e as recusadas do plantão diário completam o resto. As que passaram de
+    # 1000 com scripts/engordar.py (07/11) saíram daqui e viraram abertas como as outras.
+    "tipos-de-pao", "biscoitos-e-bolachas", "massas", "molhos",
+    "comidas-de-rua", "pratos-internacionais", "doces-de-mercado", "graos-e-cereais",
+    "animais-da-africa", "animais-da-fazenda", "animais-venenosos", "flores",
+    "coisas-do-banheiro", "moveis", "ferramentas", "eletronicos",
     "partes-do-carro", "brinquedos", "higiene-e-beleza", "roupas",
     "calcados-e-acessorios", "coisas-verdes", "coisas-vermelhas", "coisas-azuis",
     "coisas-que-fazem-barulho", "coisas-quentes", "coisas-geladas", "coisas-fedidas",
-    "coisas-cheirosas", "coisas-pontudas", "coisas-com-rodas", "coisas-que-derretem",
-    "coisas-que-quebram", "coisas-que-grudam", "coisas-que-dao-medo", "coisas-que-dao-azar",
-    "coisas-que-giram", "feriados-e-datas", "festa-de-aniversario", "carnaval",
-    "motivos-para-chorar", "cursos-de-faculdade", "hobbies", "sentimentos",
-    "doencas", "palavras-em-ingles", "nomes-masculinos", "nomes-femininos",
-    "sobrenomes", "atores-brasileiros", "atores-de-hollywood", "apresentadores-de-tv",
-    "influenciadores", "atletas-brasileiros", "pilotos-de-f1", "cientistas-e-inventores",
-    "pintores-e-artistas", "personagens-de-videogame", "personagens-de-anime", "personagens-do-chaves",
-    "sitio-do-picapau", "monstros-e-criaturas", "bandas", "musicas-brasileiras",
-    "filmes-brasileiros", "programas-de-tv", "livros", "apps-e-sites",
-    "marcas-famosas", "lojas", "fast-food", "pontos-turisticos",
-    "praias-brasileiras", "estadios", "palavras-em-ao", "palavras-com-z",
+    "coisas-pontudas", "coisas-que-quebram", "coisas-que-grudam", "coisas-que-dao-azar",
+    "coisas-que-giram", "feriados-e-datas", "carnaval", "motivos-para-chorar",
+    "cursos-de-faculdade", "hobbies", "sentimentos", "palavras-em-ingles",
+    "nomes-femininos", "influenciadores", "pilotos-de-f1", "personagens-de-videogame",
+    "personagens-de-anime", "personagens-do-chaves", "sitio-do-picapau", "apps-e-sites",
+    "lojas", "fast-food", "praias-brasileiras", "palavras-com-z",
     "palavras-com-x",
 }
 

@@ -1,12 +1,12 @@
 # titulo: Fast-food e lanchonetes
 # pergunta: Cite uma rede de fast-food, lanchonete ou restaurante
 # formato: uma resposta por linha; apelidos separados por " | "
-McDonald's | Mc Donalds | Méqui | McDonalds
-Burger King | BK
+McDonald's | Mc Donalds | Méqui | McDonalds | Cheddar McMelt | Marca M | McDonald's Brasil | McDonald's Corporation
+Burger King | BK | Burger King Brasil
 Subway
 KFC
-Habib's
-Bob's
+Habib's | História do Habib's
+Bob's | Big Bob
 Pizza Hut
 Domino's | Dominos
 Giraffas
@@ -15,10 +15,10 @@ Madero
 Spoleto
 China in Box
 Popeyes
-Starbucks
+Starbucks | Starbucks Corporation
 Jeronimo
 Johnny Rockets
-Taco Bell
+Taco Bell | Taco Bell Corporation
 Wendy's
 Five Guys
 Shake Shack
@@ -31,7 +31,7 @@ Ragazzo
 Coco Bambu
 Fogo de Chão
 Applebee's
-TGI Fridays
+TGI Fridays | Friday's
 Hooters
 Ráscal
 Paris 6
@@ -96,3 +96,454 @@ Frango Frito do Gus | Los Pollos Hermanos
 Pizza Planet
 Restaurante Universitário | bandejão | RU
 Cantina
+# entraram por scripts/engordar.py (dados/fontes/engordar/fast-food.txt)
+Jack in the Box
+Hardee's
+Arby's
+Sonic
+Dairy Queen
+Baskin-Robbins
+Chipotle
+Panda Express
+Papa John's
+Little Caesars
+Pizza Hut Express
+Chili's
+Red Lobster
+Denny's | Denny's Corporation
+IHOP | International House of Pancakes | IHOP Restaurants LLC
+Koni
+Koni Store
+Temakeria
+Pastelaria Viçosa
+Pastel de feira
+Milkshake Mix
+Sukiya
+Jin Jin
+Burger King Whopper
+Jamba Juice | Jamba
+Auntie Anne's
+Pretzel Time
+Wienerschnitzel | John Galardi
+Nathan's
+White Castle
+Whataburger
+Culver's
+Steak 'n Shake
+Checkers
+Rally's
+Del Taco
+El Pollo Loco
+Church's Chicken
+Bojangles
+Raising Cane's
+Wingstop
+Buffalo Wild Wings
+Zaxby's
+Long John Silver's | Long John Silver's Seafood Shoppes | Long John Silver's LLC
+Captain D's
+Quiznos
+Jimmy John's
+Jersey Mike's
+Firehouse Subs
+Potbelly
+Panera Bread
+Pret A Manger | Manger
+Greggs
+Nando's
+Wimpy
+Hesburger
+Jollibee
+Mos Burger
+Lotteria
+Yoshinoya
+CoCo Ichibanya
+Telepizza
+Pizza Inn
+Sbarro
+Marco's Pizza
+Papa Murphy's
+Chuck E. Cheese
+Dave & Buster's
+Hard Rock Cafe
+Planet Hollywood
+Rainforest Cafe
+Pollo Tropical
+Pollo Campero
+Bembos
+Cheddar's
+Smashburger
+Fatburger
+Burger Fuel
+Lanchonete da esquina
+Hamburgueria
+Pizzaria
+Self-service
+Restaurante a quilo
+Buffet
+Barraca de cachorro-quente
+Cachorro-quente do Tio
+Bar
+Boteco
+Botequim
+Bar do Zé
+Sorveteria
+Açaiteria
+Doceria
+Confeitaria
+Cafeteria
+Creperia
+Sushi bar
+Esfiharia
+Esfirraria
+Galeteria
+Petiscaria
+Choperia
+Cervejaria
+Tapiocaria
+Pamonharia
+Restaurante japonês
+Restaurante chinês
+Restaurante árabe
+Restaurante italiano
+Restaurante mexicano
+Cantina italiana
+Bistrô
+Brasserie
+Trattoria
+Steakhouse
+Diner
+Drive-thru
+Drive-in
+Méqui Box
+McLanche Feliz
+Big Mac
+McFlurry
+Whopper
+Big Tasty | Big N'Tasty
+Quarterão
+Casquinha
+Ovomaltine do Bob's
+Milk-shake de Ovomaltine
+Esfiha do Habib's
+Beirute do Habib's
+Picolé Habib's
+Habib's Bib's
+Pizza Hut Pan
+Domino's Pizza
+Subway Footlong
+Spoleto massa
+Giraffas Brasileirinho
+China in Box yakisoba
+# entraram por scripts/engordar.py (dados/fontes/engordar/fast-food.wiki.txt)
+Dim sum
+In-N-Out Burger
+Pastel da Cornualha
+Fast food | Fast-Food | Comida rápida | Refeição rápida | Fast-food | Lanche rápido
+Grupo Trigo
+Arcos Dorados | Arcos Dourados | Arcos Dorados Holdings
+Momo | Momo (alimento)
+The Founder | Fome de Poder | O Fundador
+Cracker Barrel | Cracker Barrel Old Country Store, Inc.
+Rax Roast Beef
+Waffle House | Waffle House, Inc.
+Qdoba | Qdoba Mexican Grill
+Au Bon Pain
+MrBeast Burger
+Cheesesteak
+Ben & Jerry's
+Friendly's
+Taco John's
+Mixue Ice Cream & Tea | Mixue
+Arthur Treacher's
+Grimace Shake
+Boston Market | Boston Chicken | Boston Market Corporation
+Baja Fresh
+Red Robin
+Souplantation and Sweet Tomatoes
+Bruegger's | Michel's Bakery Café | Michel's Baguettes
+Chicken McNuggets
+Sweetgreen
+McCafé
+Kentucky Fried Chicken
+Burgerville
+Capriotti's
+Leonard's Bakery
+The Noid | Noid
+Sarku Japan
+Fuddruckers
+Nugget de Among Us
+&pizza
+Wayback Burgers
+Fast-food em Portugal
+Cold Stone Creamery
+McDonald's na Rússia
+Romano's Macaroni Grill
+Round Table Pizza
+White Tower Hamburgers
+Noodles & Company
+Back Yard Burgers
+Cousins Subs
+Cava | Cava (restaurante)
+Sweet Frog
+Teavana
+Wanderlust Creamery
+Orange Julius
+The Halal Guys
+Intelligentsia Coffee & Tea
+Dutch Bros. Coffee | Dutch Bros Inc. | Dutch Bros.
+Papa Gino's
+Druther's
+Chipotle Mexican Grill
+The Original Pancake House | TOPH
+Raising Cane's Chicken Fingers
+Così | Così (restaurante)
+Hot 'n Now
+Sonic Drive-In
+Cook Out | Cook Out (restaurante)
+H. Salt Esq. Fish & Chips | H. Salt Esquire
+Cha chaan teng
+The Habit Burger Grill
+Schlotzsky's
+Potbelly Sandwich Shop
+Blackjack Pizza
+Papa John's Pizza
+Yogurtland
+Brigham's Ice Cream
+Smoothie King | Smoothie King Franchises Inc.
+Jersey Mike's Subs | Sub Above, LLC
+Krystal | Krystal (restaurante)
+Sandy's
+Duck Donuts
+Burger Chef
+Pie Five
+CKE Restaurants
+Big Boy Restaurants
+ShowBiz Pizza Place
+McDia Feliz
+Fosters Freeze
+Good Times Burgers & Frozen Custard
+McDonald’s Israel
+Insomnia Cookies
+CBO | CBO (sanduíche) | McCrispy Chicken Legend
+D'Angelo Grilled Sandwiches
+Logan's Roadhouse
+Naugles
+Togo's
+Newk's Eatery
+Dippin' Dots
+Taco Bueno
+7 Leaves Cafe
+Swiss Chalet
+Rita's Italian Ice
+Crumbl Cookies
+Burgerim
+Freddy's Frozen Custard & Steakburgers | Freddy's
+Mac Tonight
+Biggby Coffee | Beaner's Coffee
+Miami Grill | Miami Subs Grill | Miami Subs
+Rubio's Coastal Grill
+Stonefire Grill
+Shipley Do-Nuts
+Morton's The Steakhouse
+Mitchell's Fish Market
+Checkers and Rally's
+Oberweis Dairy
+Blaze Pizza
+The Boiling Crab
+Pinkberry
+McCormick & Schmick's
+Zankou Chicken
+Salad and Go
+L&L Hawaiian Barbecue | L&L Drive-Inn | L&L
+Graeter's
+La Salsa
+Braum's
+Tutti Frutti Frozen Yogurt
+Seattle's Best Coffee
+Erbert & Gerbert's
+Jack's
+A&W Restaurants
+The Coffee Bean & Tea Leaf | International Coffee & Tea, LLC | Coffee Bean | The Coffee Bean
+Pretzelmaker
+Krispy Krunchy Chicken
+Tropical Smoothie Cafe | Tropical Smoothie | Tropical Smoothie Cafe, LLC
+Marble Slab Creamery
+Spangles | Spangles (restaurante)
+Happy Meal
+Shakey's Pizza
+Joe's Crab Shack
+Jason's Deli
+Orange Leaf Frozen Yogurt | Orange Leaf
+Moe's Southwest Grill
+Lee's Sandwiches
+Wetzel's Pretzels
+Mendocino Farms
+Zantigo
+Taco Cabana
+Pick Up Stix
+MOD Pizza
+German Doner Kebab
+Peet's Coffee
+Tastee-Freez
+TacoTime
+MaggieMoo's Ice Cream and Treatery
+Nation's Giant Hamburgers | Nation's
+Pei Wei Asian Diner | Pei Wei Asian Diner, LLC
+We, the Pizza
+Red Mango
+Gloria Jean's Coffees | Gloria Jean's
+Texas Roadhouse | Texas Roadhouse, Inc.
+Carvel
+Tubby's
+Mountain Mike's Pizza
+Pita Pit
+Mrs. Fields
+Hartz Chicken
+Dickey's Barbecue Pit
+Which Wich?
+Great American Cookies
+The Kickin' Crab
+McAlister's Deli
+Red Barn | Red Barn (restaurante)
+Golden Chick
+Dunn Brothers Coffee
+Ivar's
+Salsarita's Fresh Mexican Grill
+Einstein Bros. Bagels
+Wetson's
+85°C Bakery Cafe
+Cluck-U Chicken
+Ruby Tuesday | Ruby Tuesday (restaurante)
+Skippers Seafood & Chowder House
+Handel's Homemade Ice Cream & Yogurt
+BurgerFi
+Harold's Chicken Shack
+WaBa Grill
+Palitos de peixe
+Juice It Up!
+Bonchon Chicken
+Argo Tea
+Tudor's Biscuit World
+Manchu Wok | Manchu Wok Inc.
+Hwy 55 Burgers Shakes & Fries
+Ambiente obesogênico
+Gen Korean BBQ | Gen Restaurant Group, Inc.
+Kewpee
+Daylight Donuts
+Bush's Chicken | Bush's Chicken!
+Five Daughters Bakery
+Saladworks
+Bruster's Ice Cream
+Corner Bakery Cafe
+Black Bear Diner
+Golden Skillet
+Charleys Philly Steaks
+Guthrie's
+Skyline Chili
+Claim Jumper | Claim Jumper Restaurant and Saloon
+Fazoli's
+Yogen Früz
+Pancheros Mexican Grill
+Pizza Patrón
+El Torito | El Torito (rede)
+Mrs. Winner's Chicken & Biscuits
+Honey Dew Donuts
+Patxi's Chicago Pizza
+Atlanta Bread Company
+Chicken Salad Chick
+Coffee Beanery | The Coffee Beanery, Ltd.
+Cafe Rio
+Lee's Famous Recipe Chicken
+Church's Texas Chicken
+Arctic Circle Restaurants
+Rocklands Barbeque and Grilling Company
+Ford's Garage
+Red Ribbon Bakeshop
+Dave's Hot Chicken
+Fast-food no Brasil | Lista de redes de fast-food brasileiras
+Pizza My Heart | Pizza My Heart (restaurante)
+Mission BBQ
+TCBY
+Roy Rogers Restaurants
+Mooyah
+Texas de Brazil
+Índice KFC
+McDonaldização
+Manila Sunset
+Sandella's Flatbread Café
+Slim Chickens
+Planet Smoothie
+Cheeburger Cheeburger
+Jerry's Subs & Pizza
+Wrap
+Winchell's Donuts
+Fuzzy's Taco Shop
+Steak Escape
+On the Border Mexican Grill & Cantina
+Brown's Chicken & Pasta
+Tijuana Flats
+Portillo's Restaurants | Portillo's Restaurant Group, Inc.
+Kung Fu Tea
+Vic & Anthony's Steakhouse | Vic & Anthony's
+Paris Baguette
+Hot Dog on a Stick | HDOS Enterprises
+CosMc's | CosmMc's
+Dawn Donuts
+Henry's Hamburgers
+Hamburger Stand | Original Hamburger Stand
+Penn Station | Penn Station (restaurante)
+Uncle Maddio's Pizza Joint
+D'Lites | D'Lites of America
+California Fish Grill
+Taco Mayo
+Happi House
+Hot Sam Pretzels
+It's Boba Time
+Chicken Express
+Saltgrass Steak House
+Smithfield's Chicken 'N Bar-B-Q | Smithfield Bar-B-Q
+Nestlé Toll House Café
+Robeks | Robeks Fresh Juices & Smoothies
+McDonald's Video Game
+Tropical Sno
+Kyochon
+Port of Subs | Port of Subs, Inc. | Sub Shop
+Louisiana Famous Fried Chicken
+Menchie's Frozen Yogurt
+Golden Corral
+Tully's Coffee
+Primo Hoagies
+Bresler's 33 Flavors
+Straw Hat Pizza
+Anel de cebola
+Lennys Grill & Subs
+Ronald McDonald
+Roberto's Taco Shop
+Chester's
+Blimpie
+Sachê
+Gordão Lanches | Gordão
+T.J. Cinnamons
+Poutine
+NY Dosas
+Salgadinhos Lay's Wow
+Peppes Pizza
+MaDonal
+Kiwiburger
+McFish
+Publicidade de fast food
+McJob
+Hunt Brothers Pizza
+Great Wraps
+Fast Food Nation | Fast Food Nation (livro)
+Global Gladiators
+Pizza Meter
+McDonald's All-American Game
+Yo! Noid | Kamen no Ninja Hanamaru
+Golden Spoon
+Cervecería 100 Montaditos
+The Waffle King
+Hambúrguer Afegão
+McChicken
+Quarter Pounder | Quarterão com Queijo

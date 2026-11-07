@@ -1,40 +1,40 @@
 # titulo: Feriados e datas comemorativas
 # pergunta: Cite um feriado ou data comemorativa
 # formato: uma resposta por linha; apelidos separados por " | "
-Natal
+Natal | Natal de Jesus Cristo | Origem do Natal | Dia de Natal | Cartão de Natal | Símbolos do natal | Natal do Senhor | Filmes de natal | Filme de natal
 Carnaval
 Páscoa
-Ano-Novo | Réveillon | Ano Novo | virada do ano
-Dia das Mães
-Dia dos Pais
-Dia das Crianças | Dia da Criança
-Independência | Sete de Setembro | Dia da Independência | 7 de setembro
+Ano-Novo | Réveillon | Ano Novo | virada do ano | Passagem de ano | Dia de Ano Novo | Fim de ano | Dia de Ano Bom
+Dia das Mães | Dia da mãe
+Dia dos Pais | Dia do Pai
+Dia das Crianças | Dia da Criança | Dia Mundial da Criança
+Independência | Sete de Setembro | Dia da Independência | 7 de setembro | Dia da Independência do Brasil | Dia da Pátria
 Tiradentes
 Dia dos Namorados
 Finados | Dia de Finados
 Proclamação da República | 15 de novembro
 Dia do Trabalhador | Dia do Trabalho | Primeiro de Maio | 1º de maio
-Corpus Christi
-Sexta-feira Santa | Paixão de Cristo
-Halloween | Dia das Bruxas
-Festa junina | São João
+Corpus Christi | Corpus Cristi | Corpo de Deus | Corpo de Cristo | Corpus Christ | Festa de Corpus Christi | Solenidade do Corpo e Sangue de Cristo | Dia do Corpo de Deus | Procissão do Corpo de Deus | Procissão do Corpus Christi | Quinta-Feira do Corpo de Cristo | Corpus Domini
+Sexta-feira Santa | Paixão de Cristo | Oração Universal | Grande e Sagrada Sexta | Oração dos fiéis
+Halloween | Dia das Bruxas | Jack da lanterna | Haruí | Jack o'Lantern
+Festa junina | São João | Festejo junino | Festa Joanina | Santos Populares | Festa do Verão | Festa dos santos populares | Midsummer | Festas de São João Baptista
 Nossa Senhora Aparecida | 12 de outubro | Dia da Padroeira
 Consciência Negra | Dia da Consciência Negra | 20 de novembro
-Aniversário
-Dia dos Professores | Dia do Professor
+Aniversário | Festa de aniversário
+Dia dos Professores | Dia do Professor | Dia Mundial dos Professores
 Dia da Mulher | Dia Internacional da Mulher | 8 de março
 Dia de Ação de Graças | Thanksgiving
 Quarta-feira de Cinzas
-Dia dos Avós
+Dia dos Avós | Dia dos Avôs e das Avós
 Dia do Índio | Dia dos Povos Indígenas
-Dia da Árvore
+Dia da Árvore | Dia Mundial da Árvore | Dia Mundial da Floresta | Dia da Floresta | Festa Anual das Árvores
 Dia do Meio Ambiente
 Dia da Terra
 Dia do Amigo
 Dia do Orgulho LGBTQIA+ | Dia do Orgulho
 Black Friday
 Dia do Consumidor
-Dia da Mentira | primeiro de abril
+Dia da Mentira | primeiro de abril | Dia dos Bobos
 Dia de São Valentim | Valentine's Day
 Dia de Reis | Santos Reis
 Dia de São Jorge
@@ -48,7 +48,7 @@ Festa do Divino
 Oktoberfest
 Festa do Peão | Barretos
 Parintins | Festival de Parintins
-Dia da Bandeira
+Dia da Bandeira | Festa da Bandeira Nacional | Festa da bandeira
 Dia do Soldado
 Dia do Folclore
 Dia do Livro
@@ -78,15 +78,15 @@ Dia Mundial da Saúde
 Dia Mundial sem Tabaco
 Dia da Água
 Dia das Mulheres Negras
-Dia Internacional do Homem
+Dia Internacional do Homem | Dia Nacional do Homem | International Men's Day
 Dia do Homem
 Dia do Idoso
 Dia do Nascituro
-Dia de Todos os Santos
+Dia de Todos os Santos | Todos-os-Santos | Festa de Todos os Santos
 Dia de Nossa Senhora
 Imaculada Conceição
 Assunção de Nossa Senhora
-Domingo de Ramos
+Domingo de Ramos | Domingo de Ramos da Paixão | Procissão de Ramos
 Quinta-feira Santa
 Sábado de Aleluia
 Pentecostes
@@ -95,7 +95,7 @@ Advento
 Quaresma
 Véspera de Natal | Noite de Natal | Ceia de Natal
 Véspera de Ano-Novo
-Dia de São Silvestre
+Dia de São Silvestre | Noite de São Silvestre
 Semana Santa
 Hanukkah
 Yom Kippur
@@ -104,8 +104,8 @@ Pessach
 Ramadã
 Eid
 Diwali
-Ano-Novo Chinês
-Dia de los Muertos | Dia dos Mortos
+Ano-Novo Chinês | Ano-novo Budista | Xin nian kuai le
+Dia de los Muertos | Dia dos Mortos | Festa do dia dos mortos
 Dia de São Patrício
 Mardi Gras
 Independência dos Estados Unidos | 4 de julho
@@ -138,7 +138,7 @@ Dia do Músico
 Dia do Artista
 Dia do Ator
 Dia do Circo
-Dia do Palhaço
+Dia do Palhaço | Paliasso
 Dia do Samba
 Dia do Forró
 Dia do Choro
@@ -147,7 +147,7 @@ Dia do Cinema
 Dia do Teatro
 Dia da Poesia
 Dia do Escritor
-Dia do Quadrinho | Dia do Quadrinho Nacional
+Dia do Quadrinho | Dia do Quadrinho Nacional | Dia Nacional das Histórias em Quadrinhos
 Dia do Futebol
 Dia do Desafio
 Dia do Esporte
@@ -193,4 +193,304 @@ Sexta-feira
 Fim de semana
 Folga
 Meu aniversário
-Sexta-feira 13
+Sexta-feira 13 | Sexta feira treze | Paraskavedekatriaphobia | Paraskavedekatriafobia
+# entraram por scripts/engordar.py (dados/fontes/engordar/feriados-e-datas.txt)
+Sexta-feira da Paixão
+Dia de Tiradentes
+Dia de Nossa Senhora Aparecida
+Dia de Zumbi
+Dia da Amizade
+Dia da Enfermagem
+Dia do Marinheiro
+Dia do Aviador
+Dia do Gari
+Dia do Nutricionista
+Dia do Bibliotecário
+Dia Nacional do Livro
+Dia Mundial do Livro
+Dia do Poeta
+Dia da Família
+Dia do Hino Nacional
+Dia dos Animais
+Dia do Sertanejo
+Dia do Funk
+Dia do Orgulho Geek
+May the Fourth
+Dia do Pi
+Dia do Brigadeiro
+Dia da Saudade
+1º de Abril
+Dia do Fico
+Dia da Criatividade
+Dia do Orgulho LGBT
+Parada LGBT
+Dia contra a Homofobia
+Dia dos Direitos Humanos
+Dia Mundial da Paz
+Dia da Fraternidade
+Dia de São João
+Santo Antônio
+São Pedro
+Festa julina
+Dia de São Cosme e Damião
+Festa de Iemanjá
+2 de Fevereiro
+Folia de Reis
+Dia dos Reis Magos
+Epifania
+Data Magna
+2 de Julho
+Dia do Evangélico
+Dia da Reforma Protestante
+Reforma Protestante
+Dia do Saci-Pererê
+Cyber Monday
+Dia do Cliente
+11/11
+Ação de Graças | Acção de Graças | Dia de Acção de Graças | Thanksgiving Day
+St. Patrick's Day
+Dia da Marmota
+Super Bowl
+Chanucá
+Páscoa judaica
+Ramadan
+Eid al-Fitr
+Holi
+Ano-novo lunar
+Festival da Lua
+Festival das Lanternas
+Cinco de Mayo
+Bastille Day
+Queda da Bastilha
+14 de Julho
+Independence Day
+Tomatina
+San Fermín
+Carnaval de Veneza
+Natal ortodoxo
+Boxing Day
+Dia do Armistício
+Dia D
+Dia da Vitória
+Dia da Europa | Dia da União Europeia | Dia europeu
+Hora do Planeta
+Dia Mundial da Alimentação
+Dia Mundial do Coração
+Outubro Rosa
+Novembro Azul
+Setembro Amarelo
+Janeiro Branco
+Dezembro Vermelho
+Maio Amarelo
+Agosto Lilás
+Dia do Doador de Sangue
+Dia do Voluntário
+Dia do Bebê
+Dia da Gestante
+Dia do Sogro
+Dia da Secretária
+Dia do Contador
+Dia do Administrador
+Dia do Economista
+Dia do Publicitário
+Dia do Programador
+Dia do Videogame
+Dia da Internet
+Dia do Blog
+Dia do YouTube
+Dia do Selfie
+Dia do Emoji
+Dia do Meme
+Dia do Leite
+Dia do Pão
+Dia do Arroz
+Dia da Feijoada
+Dia da Caipirinha
+Dia da Cachaça
+Dia do Whisky
+Dia do Queijo
+Dia da Batata Frita
+Dia do Bacon
+Dia da Torta
+Dia do Doce
+Dia do Aniversário
+Bodas
+Crisma
+Bar mitzvá
+Quinze anos
+Chá de lingerie
+Noivado
+Aniversário de namoro
+Mesversário
+Dia de Cabral
+Dia da Imprensa
+Dia do Rádio
+Dia da Televisão
+Dia do Escoteiro
+Dia do Aposentado
+Dia do Irmão
+Dia da Irmã
+Dia do Primo
+Dia do Vizinho
+Dia do Colega
+Dia do Trabalho Voluntário
+Dia da Juventude
+Dia da Infância
+Dia do Brinquedo
+Dia do Desenho Animado
+Dia do Super-Herói
+# entraram por scripts/engordar.py (dados/fontes/engordar/feriados-e-datas.wiki.txt)
+Feriados no Brasil | Lista de feriados brasileiros | Lista de feriados do Brasil
+Dia Internacional do Fetiche | Dia Mundial do BDSM | Dia Internacional do BDSM | Dia Internacional do Kink
+Réveillon da Avenida Paulista
+Réveillon de Copacabana
+Dia Mundial do Emoji
+Natal paulistano
+Festas judaicas | Festividades judaicas | Feriado judaico | Feriados judaicos | Festa judaica | Yom Tov | Festivais judeus | Festival judaico | Festivais judaicos
+Dia Nacional de Zumbi e da Consciência Negra | Dia Nacional da Consciência Negra | Dia de Zumbi dos Palmares | Mês da Consciência Negra
+Dia Internacional dos Trabalhadores | Dia Internacional do Trabalhador | Festa do Costelão | Festa do Trabalho
+Dia do Domínio Público
+Dia do Canadá | Canada Day | Fête du Canada
+Natale di Roma
+Dia da Unidade Alemã | Dia da Unificação alemã | Dia da Unificação da Alemanha
+Dia Mundial de Combate à Hepatite
+Dia da Fundação do Partido
+Dia da Liberdade Fiscal
+Feriado nacional | Dia nacional | Dia Nacional | Festa nacional
+Dia Mundial da Luta contra a Malária
+Dia Mundial em Memória das Vítimas de Acidentes de Trânsito
+Noite Feliz | Stille Nacht
+Dia Internacional do Tigre
+Dia Mundial do Tai Chi Chuan e do Chi Kung | Dia Mundial do Tai Chi e Chi Kung | Dia Mundial do Tai Chi & Qigong
+Dia Internacional do Orgulho LGBT | Dia LGBT
+Semana Nacional de Trânsito
+Dia Internacional da Visibilidade Transgênero
+Dia da Pansexualidade | Dia do Orgulho Pansexual | Dia Internacional do Orgulho Pansexual | Dia da Visibilidade Pan
+Nossa Senhora do Rocio | Nossa Senhora do Rosário do Rocio
+Dia Internacional da Prostituta
+Dia Internacional da Memória Transgênero | Dia da Memória Transgênero
+Semana Mundial do Espaço | World Space Week
+Dia Internacional das Pessoas Não Binárias | Dia da Pessoa Não Binária | Dia Internacional de Não Binárie | Dia Internacional da Pessoa Não Binária | Dia do Orgulho Não Binário | Dia Internacional do Orgulho Não Binário | Dia Internacional des Não Bináries | Dia da Não Binariedade
+Dia Nacional da Galiza | Dia da Pátria Galega | Dia da Galiza
+Dia da Autonomia
+Dia de Homens Trans e Pessoas Transmasculinas | Dia do Homem Trans | Dia Nacional do Orgulho Transmasculino
+Dia Internacional da Mulher Indígena
+Dia do Mestiço
+Diamond Jubilee State Coach
+Festa do Sacrifício | Eid al-Adha | Eid ul-Adha | Aïd el-Kebir | Aïid el-Kebir | Eid Al-Adha | Eid el-Adha
+Dia de Abertura | Opening day
+Dia Mundial dos Animais
+Dia da Visibilidade Bissexual | Dia da celebração bissexual | Dia da Celebração Bissexual | Dia Internacional da Bissexualidade | Dia da Bissexualidade | Dia Nacional da Visibilidade Bissexual | Dia Municipal da Visibilidade Bissexual | Dia Nacional do Orgulho Bissexual | Dia do Orgulho Bissexual
+Dia da Rússia
+Dia dos Fiéis Defuntos | Feriado de finados | Feriado de Finados | Festa de finados
+Dia Nacional de Tereza de Benguela e da Mulher Negra
+Dia Internacional da Cobertura Universal de Saúde
+Dia da Proclamação da Independência | Dia da Proclamação da Independência (Timor-Leste)
+Dia em Memória de Todas as Vítimas da Guerra Química
+Dia Internacional da Mulher Negra Latino-Americana e Caribenha
+Dia Mundial Quântico
+Halloween Night
+Festa da Independência da Bahia | Festa dois de julho | Desfile do Dois de Julho | Festa de Independência da Bahia | Cortejo do Dois de Julho
+Dia Mundial da Água
+Dia Nacional da Visibilidade Trans | Mês da Visibilidade Trans | Dia da Visibilidade Trans
+Dia Mundial do Pianista
+Dia Internacional da Tradução
+Dia de Hangul
+Dia do Rei | Dia do Rei (Países Baixos) | Dia da Rainha
+Dia Mundial da Cultura Africana e Afrodescendente
+Dia Internacional do Ioga | Dia internacional do Yoga | Dia Internacional da Ioga
+Dia Internacional de Falar como um Pirata
+Aniversário de casamento
+Dia de Darwin
+Dia Mundial dos Pobres
+Dia Mundial da Fotografia
+Dia de Vesak | Vesak
+Dia Mundial sem Carro | Car free | Dia sem Carro
+Dia Nacional da Adoção
+Dia Mundial da Segurança do Paciente
+Dia Mundial da Língua Portuguesa
+Dia Europeu da Cultura Judaica
+Dia dos Açores | Dia da Região
+Mês do Orgulho LGBT | Mês do orgulho LGBTQIA+ | Mês do orgulho | Mês do orgulho LGBTI | Mês do orgulho LGBTQ+ | Mês do orgulho LGBTQIA | Mês da História LGBT | Mês do Orgulho | Mês do Orgulho LGBTQIA
+Dia das Rebeldias Lésbicas
+Dia de Trafalgar
+Dia Mundial do Patrimônio Audiovisual
+Dia Internacional do Nascituro
+Dia da Revolução Nacional e da Solidariedade
+Dia Internacional dos Estudantes
+Dia do Orgulho Autista | Dia Mundial do Orgulho Autista | Orgulho autista
+Dia Nacional da Masturbação
+Dia Mundial sem Compras | Dia mundial sem compra | Dia sem compras | DMsC | Buy Nothing Day
+Dia do Número Único Europeu de Emergência “112”
+Dia Internacional da Cerveja
+Dia Mundial da Música | Dia Internacional da Música
+Dia Internacional do Livro
+Dia Internacional sem Dieta
+Dia de Santa Luzia na Suécia
+Natal Luz | Natal Luz de Gramado
+Dia Nacional dos Surdos
+Dia Internacional dos Direitos Humanos
+Dia de Herzl
+Véspera de Todos os Santos
+Dia da Raiz Quadrada
+Dia da Independência do Turcomenistão
+Dia de Yitzhak Rabin
+Feriado Nacional do Quebec | Feriado Nacional de Quebec
+Dia Mundial do Yoga | Dia Mundial da Ioga
+Dia das Cidades pela Vida | Cities for Life Day
+Dia Internacional da Solidariedade ao Jornalista
+Dia do Psiquiatra
+Dia do Exército da República Islâmica do Irã
+Dia da Cultura
+Dia casual
+Dia Nacional de Oração
+Feriado bancário | Bank holiday
+Dia Mundial da Conscientização sobre a Acessibilidade
+Dia Mundial da Tartaruga | World Turtle Day
+Dia Internacional do Gato
+Dia da Restauração da Independência de Timor-Leste
+Dia Internacional da Paz
+Dia da Cultura Lusófona | Dia da Língua Portuguesa
+Dia Mundial da Arte Nova
+Dia do Herói Nacional
+Dia da Liberdade de Software | Dia da Liberdade do Software | Freedom Software Day | SFD | Software Freedom Day
+Feriado | Feriados | Tolerância de ponto
+Dia da Língua Mirandesa
+Dia do Adolescente
+Dia Internacional das Mulheres e Meninas na Ciência
+Dia Internacional dos Direitos Animais
+Dia do Engenheiro Eletricista
+Día Nacional del Candombe
+Dia Internacional para a Redução de Catástrofes
+Dia da OTAN
+Dia Nacional da Catalunha
+Noite do pijama | Festa do pijama
+Dia Nacional da Música Clássica
+Dia Internacional do Direito ao Saber
+Dia da Fraternidade Universal | Confraternização Universal | Dia Mundial da Fraternidade Universal
+Dia Internacional do Bombeiro
+Dia da Suécia | Sveriges nationaldag
+Dia Europeu sem Carros
+Dia de Jabotinsky
+Noite do Destino | Laylat al Kadr | Laylat al-Qadr
+Dia da Mulher Africana
+White Day
+Dia de Ben-Gurion
+Ano-novo japonês | Shōgatsu | Shogatsu | Ano Novo Japonês
+Dia Nacional da Fotografia e do Fotógrafo
+Dia Mundial dos Oceanos | World Ocean Day | Dia mundial do Oceano | Dia mundial do oceano
+Feriado móvel | Festa móvel
+Dia Internacional de Atenção à Gagueira
+Dia da Commonwealth
+Dia Mundial das Zonas Húmidas
+Dia da Inconfidência
+Dia Mundial da Fotografia Pinhole
+Dia da Promessa
+Dia Nacional de Gibraltar
+Dia Mundial das Zoonoses
+Dia Mundial da Diversidade Cultural para o Diálogo e o Desenvolvimento
+Dia do Patinador
+Dia Interamericano de Qualidade do Ar
+Dia das Glórias Navais
+Aniversário do Rei | Aniversário da Rainha
+Dia da Mulher Moçambicana
