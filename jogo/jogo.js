@@ -52,7 +52,8 @@ const hojeLocal = hojeBrasil;
 
 // Modo teste:
 // - ?aleatorio sorteia categorias aleatórias;
-// - ?dia=6 (ou ?dia=2026-11-02) ou ?amanha carrega as 7 perguntas exatas daquele dia.
+// - ?dia=6 (ou ?dia=2026-11-02) ou ?amanha carrega as 7 perguntas exatas daquele dia;
+// - ?categorias=flores,bandas joga essas categorias, na ordem (a página jogo/testes.html monta o link).
 // Em qualquer modo teste, o jogo não grava o progresso do dia nem envia dados para a API.
 const PARAMS = new URLSearchParams(location.search);
 const ALEATORIO = PARAMS.has("aleatorio");
@@ -74,7 +75,8 @@ function dataDoNumero(n) {
   return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
 }
 const DATA_TESTE = dataDeTeste();
-const MODO_TESTE = ALEATORIO || DATA_TESTE !== null;
+const CATEGORIAS_TESTE = (PARAMS.get("categorias") || "").split(",").map((c) => c.trim()).filter(Boolean);
+const MODO_TESTE = ALEATORIO || DATA_TESTE !== null || CATEGORIAS_TESTE.length > 0;
 // ARQUIVOS (dias anteriores):
 // - No site, cada dia tem um endereço limpo: nichoojogo.com/dia/2 (o número do dia, como no jogo).
 //   O _middleware.js serve o jogo nesses caminhos. Aberto do computador ou em /jogo/ continua
@@ -536,7 +538,9 @@ function avisarSkinNova(seq) {
 // completa, guardados neste navegador; ela zera quando você pula um dia.
 function mostrarDiaESequencia() {
   const seq = MODO_TESTE || ARQUIVO ? 0 : sequencia();
-  const texto = DATA_TESTE
+  const texto = CATEGORIAS_TESTE.length || ALEATORIO
+    ? "MODO TESTE"
+    : DATA_TESTE
     ? `DIA #${numeroDoDia(estado.data)} · MODO TESTE`
     : ARQUIVO
       ? `DIA #${numeroDoDia(estado.data)} · ${dataCurta(estado.data)} · ARQUIVO${estado.replay ? " · JOGADA EXTRA" : ""}`
@@ -702,7 +706,7 @@ function carregarDadosLocais() {
 
 async function carregarCategoriasDoDia() {
   // 1. Tenta carregar do D1 (Cloudflare Pages Function /api/dia), muito mais leve (~150 KB)
-  if (!ALEATORIO && location.protocol !== "file:") {
+  if (!ALEATORIO && !CATEGORIAS_TESTE.length && location.protocol !== "file:") {
     try {
       const r = await fetch(`/api/dia?dia=${estado.data}`);
       const serverDate = r.headers.get("date");
@@ -722,6 +726,9 @@ async function carregarCategoriasDoDia() {
   //    baixa o pacote com todos os dias (jogo/dados.js) só agora
   const dados = await carregarDadosLocais();
   if (!dados) return null;
+  if (CATEGORIAS_TESTE.length) {
+    return CATEGORIAS_TESTE.filter((id) => dados.categorias[id]).map((id) => prepararCategoria(dados.categorias[id]));
+  }
   const escolhidas = ALEATORIO
     ? embaralhar(dados.indice, Math.random).slice(0, RODADAS_POR_DIA)
     : categoriasDoDia(dados.indice, estado.data, dados.ordem);
