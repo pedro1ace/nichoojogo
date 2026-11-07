@@ -116,24 +116,24 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Música brasileira | Cite um cantor, cantora ou banda brasileira | 3756 |
-| 2 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1081 |
+| 2 | Defesas dos animais | Cite algo que um animal tem ou usa para se defender | 1082 |
 | 3 | Filmes com o Tom Hanks | Cite um filme com o Tom Hanks (atuando ou dublando) | 71 |
 | 4 | Plantas de casa | Cite uma planta que a gente costuma ter dentro de casa | 1038 |
-| 5 | Coisas com camadas | Cite algo que tem camadas | 1535 |
-| 6 | Tipos de corrida | Cite um tipo de corrida | 1110 |
-| 7 | Motivos para gritar | Cite um motivo para gritar | 1174 |
+| 5 | Coisas com camadas | Cite algo que tem camadas | 1536 |
+| 6 | Tipos de corrida | Cite um tipo de corrida | 1111 |
+| 7 | Motivos para gritar | Cite um motivo para gritar | 1175 |
 
 ## Dia 11 · sáb 07/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Motivos para rir | Cite um motivo para rir | 1503 |
-| 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1447 |
-| 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1262 |
-| 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1201 |
-| 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4711 |
-| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2093 |
-| 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1128 |
+| 1 | Motivos para rir | Cite um motivo para rir | 1516 |
+| 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1459 |
+| 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1273 |
+| 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1208 |
+| 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4756 |
+| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2105 |
+| 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1153 |
 
 ## Dia 12 · dom 08/11/2026
 
