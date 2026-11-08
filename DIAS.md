@@ -127,25 +127,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Motivos para rir | Cite um motivo para rir | 1516 |
-| 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1459 |
-| 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1273 |
+| 1 | Motivos para rir | Cite um motivo para rir | 1518 |
+| 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1463 |
+| 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1274 |
 | 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1208 |
-| 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4756 |
-| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2105 |
-| 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1153 |
+| 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4757 |
+| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2107 |
+| 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1155 |
 
 ## Dia 12 · dom 08/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 683 |
-| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 875 |
-| 3 | Modelos de carro | Cite um modelo de carro | 2393 |
-| 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 323 |
-| 5 | Sabores de pizza | Cite um sabor de pizza | 289 |
-| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1183 |
-| 7 | Superpoderes | Cite um superpoder | 425 |
+| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 693 |
+| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 890 |
+| 3 | Modelos de carro | Cite um modelo de carro | 2406 |
+| 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 350 |
+| 5 | Sabores de pizza | Cite um sabor de pizza | 297 |
+| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1195 |
+| 7 | Superpoderes | Cite um superpoder | 427 |
 
 ## Dia 13 · seg 09/11/2026
 
