@@ -139,7 +139,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
+| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 683 |
 | 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 875 |
 | 3 | Modelos de carro | Cite um modelo de carro | 2393 |
 | 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 323 |
