@@ -58,7 +58,7 @@ CONSULTAS: dict[str, tuple[str, int]] = {
         VALUES ?o {{ wd:Q33999 wd:Q10800557 wd:Q10798782 wd:Q2405480 wd:Q2259451 }}
         ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "apresentadores-de-tv": (f"""
-        VALUES ?o {{ wd:Q947873 wd:Q13590141 wd:Q1930187 }}
+        VALUES ?o {{ wd:Q947873 wd:Q13590141 }}
         ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "influenciadores": (f"""
         VALUES ?o {{ wd:Q17125263 wd:Q94791573 wd:Q50279140 wd:Q2045208 wd:Q1414443 }}
@@ -146,7 +146,7 @@ def wikidata(cat: str) -> list[list[str]]:
     for i in range(0, len(ids), 50):
         url = API + "?" + urllib.parse.urlencode({
             "action": "wbgetentities", "ids": "|".join(ids[i:i + 50]), "props": "labels|aliases",
-            "languages": "pt|pt-br|en", "format": "json", "maxlag": "5"})
+            "languages": "pt|pt-br|mul|en", "format": "json", "maxlag": "5"})
         for _ in range(4):
             resp = json.loads(pegar(url))
             if "error" not in resp:
@@ -156,7 +156,7 @@ def wikidata(cat: str) -> list[list[str]]:
         for q in ids[i:i + 50]:
             e = ents.get(q, {})
             lab = e.get("labels", {})
-            pt = (lab.get("pt") or lab.get("pt-br") or {}).get("value", "").strip()
+            pt = (lab.get("pt") or lab.get("pt-br") or lab.get("mul") or {}).get("value", "").strip()
             if not pt:
                 continue
             nomes = [pt]
