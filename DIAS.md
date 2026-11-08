@@ -143,7 +143,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 875 |
 | 3 | Modelos de carro | Cite um modelo de carro | 2393 |
 | 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 323 |
-| 5 | Sabores de pizza | Cite um sabor de pizza | 287 |
+| 5 | Sabores de pizza | Cite um sabor de pizza | 289 |
 | 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1183 |
 | 7 | Superpoderes | Cite um superpoder | 247 |
 
