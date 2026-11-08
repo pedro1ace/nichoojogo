@@ -145,7 +145,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 323 |
 | 5 | Sabores de pizza | Cite um sabor de pizza | 289 |
 | 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1183 |
-| 7 | Superpoderes | Cite um superpoder | 247 |
+| 7 | Superpoderes | Cite um superpoder | 425 |
 
 ## Dia 13 · seg 09/11/2026
 
