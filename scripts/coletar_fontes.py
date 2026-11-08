@@ -91,14 +91,17 @@ CONSULTAS: dict[str, tuple[str, int]] = {
         VALUES ?o { wd:Q901 wd:Q205375 wd:Q169470 wd:Q593644 wd:Q170790 wd:Q864503 wd:Q11063 wd:Q81096 }
         ?item wdt:P106 ?o .""", 30),
     "atletas-brasileiros": (f"""
-        ?item wdt:P27 {BR} ; wdt:P1344 ?jogos . ?jogos wdt:P31 wd:Q159821 .""", 3),
+        VALUES ?m {{ wd:Q15243387 wd:Q15889641 wd:Q15889643 }}
+        ?item wdt:P27 {BR} ; wdt:P166 ?m .
+        FILTER NOT EXISTS {{ ?item wdt:P106 wd:Q937857 }}""", 1),
     "estadios": ("""
         VALUES ?t { wd:Q1154710 wd:Q483110 }
         ?item wdt:P31 ?t .""", 3),
     "doencas": ("""
         VALUES ?t { wd:Q12136 wd:Q18123741 wd:Q929833 wd:Q112193867 }
         ?item wdt:P31 ?t .""", 5),
-    "arvores": ("""?item wdt:P2974 wd:Q10884 .""", 2),
+    "arvores": ("""?item wdt:P31 wd:Q16521 ; wdt:P105 wd:Q7432 ; wdt:P2974 ?h .
+        VALUES ?h { wd:Q10884 wd:Q757163 }""", 1),
 }
 
 MOLDE = """
@@ -135,10 +138,48 @@ def pegar(url: str, dados: bytes | None = None, tentativas: int = 5, espera: flo
     raise RuntimeError(f"desisti de {url[:80]}")
 
 
+SO_IDS = """SELECT ?item ?links WHERE {{ {corpo}
+  ?item wikibase:sitelinks ?links . FILTER(?links >= {minimo}) }} LIMIT 20000"""
+
+
+def wikidata_por_api(corpo: str, minimo: int) -> list[list[str]]:
+    """Plano B para consultas pesadas: só os ids pelo SPARQL, nomes pela API (50 por vez)."""
+    bruto = pegar(SPARQL, urllib.parse.urlencode({"query": SO_IDS.format(corpo=corpo, minimo=minimo),
+                                                   "format": "json"}).encode(), tentativas=3)
+    links: dict[str, int] = {}
+    for b in json.loads(bruto, strict=False)["results"]["bindings"]:
+        q = b["item"]["value"].rsplit("/", 1)[-1]
+        links[q] = max(links.get(q, 0), int(b["links"]["value"]))
+    ids = sorted(links, key=lambda q: -links[q])
+    print(f"  plano B: {len(ids)} itens, nomes pela API...", file=sys.stderr)
+    linhas = []
+    for i in range(0, len(ids), 50):
+        url = "https://www.wikidata.org/w/api.php?" + urllib.parse.urlencode({
+            "action": "wbgetentities", "ids": "|".join(ids[i:i + 50]), "props": "labels|aliases",
+            "languages": "pt|pt-br|mul|en", "format": "json"})
+        ents = json.loads(pegar(url), strict=False).get("entities", {})
+        for q in ids[i:i + 50]:
+            e = ents.get(q, {})
+            lab = e.get("labels", {})
+            pt = (lab.get("pt") or lab.get("pt-br") or lab.get("mul") or {}).get("value", "").strip()
+            if not pt:
+                continue
+            nomes = [pt] + ([lab["en"]["value"]] if "en" in lab else [])
+            for lg in ("pt", "pt-br"):
+                nomes += [a["value"].strip() for a in e.get("aliases", {}).get(lg, [])]
+            nomes = [n.split(" (")[0].strip() if n.endswith(")") else n for n in nomes]
+            linhas.append(list(dict.fromkeys(n for n in nomes if n and not n.startswith("Q"))))
+        time.sleep(1)
+    return linhas
+
+
 def wikidata(cat: str) -> list[list[str]]:
     corpo, minimo = CONSULTAS[cat]
     consulta = MOLDE.format(corpo=corpo, minimo=minimo)
-    bruto = pegar(SPARQL, urllib.parse.urlencode({"query": consulta, "format": "json"}).encode(), tentativas=3)
+    try:
+        bruto = pegar(SPARQL, urllib.parse.urlencode({"query": consulta, "format": "json"}).encode(), tentativas=2)
+    except RuntimeError:
+        return wikidata_por_api(corpo, minimo)
     itens: dict[str, tuple[int, list[str]]] = {}
     for b in json.loads(bruto, strict=False)["results"]["bindings"]:
         q = b["item"]["value"].rsplit("/", 1)[-1]
