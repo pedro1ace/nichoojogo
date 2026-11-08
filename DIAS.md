@@ -179,7 +179,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1949 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 392 |
 | 4 | Brinquedos | Cite um brinquedo | 532 |
-| 5 | Doenças | Cite uma doença | 1974 |
+| 5 | Doenças | Cite uma doença | 3947 |
 | 6 | Praias brasileiras | Cite uma praia brasileira | 690 |
 | 7 | Coisas geladas | Cite algo gelado | 457 |
 
@@ -190,7 +190,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 206 |
 | 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 410 |
 | 3 | Coisas que dão medo | Cite algo que dá medo | 1823 |
-| 4 | Estádios de futebol | Cite um estádio de futebol | 1541 |
+| 4 | Estádios de futebol | Cite um estádio de futebol | 2452 |
 | 5 | Árvores | Cite uma árvore | 1386 |
 | 6 | Nomes masculinos | Cite um nome masculino | 2739 |
 | 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 570 |
@@ -226,7 +226,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Sentimentos e emoções | Cite um sentimento ou emoção | 281 |
 | 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 577 |
 | 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 270 |
-| 4 | Cientistas e inventores | Cite um cientista ou inventor famoso | 1120 |
+| 4 | Cientistas e inventores | Cite um cientista ou inventor famoso | 3699 |
 | 5 | Coisas que grudam | Cite algo que gruda | 372 |
 | 6 | Aparelhos eletrônicos e eletrodomésticos | Cite um aparelho eletrônico ou eletrodoméstico | 313 |
 | 7 | Animais da África | Cite um animal que vive na África | 522 |
@@ -252,7 +252,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4687 |
 | 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 491 |
 | 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 544 |
-| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6160 |
+| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6866 |
 | 7 | Pratos de outros países | Cite um prato típico de outro país | 215 |
 
 ## Dia 22 · qua 18/11/2026
@@ -298,7 +298,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Pilotos de Fórmula 1 | Cite um piloto de Fórmula 1 (de qualquer época) | 847 |
 | 2 | Sítio do Picapau Amarelo | Cite um personagem do Sítio do Picapau Amarelo | 69 |
 | 3 | Coisas azuis | Cite algo que é azul | 596 |
-| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 1271 |
+| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2645 |
 | 5 | Flores | Cite uma flor | 498 |
 | 6 | Coisas do banheiro | Cite algo que tem num banheiro | 579 |
 | 7 | Recheios de pastel | Cite um recheio de pastel | 2099 |
@@ -309,7 +309,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Medalhistas olímpicos do Brasil | Cite um atleta brasileiro que já ganhou medalha olímpica (fora do futebol) | 329 |
 | 2 | Coisas pontudas ou afiadas | Cite algo pontudo ou afiado | 410 |
-| 3 | Pontos turísticos | Cite um ponto turístico (do Brasil ou do mundo) | 2109 |
+| 3 | Pontos turísticos | Cite um ponto turístico (do Brasil ou do mundo) | 2396 |
 | 4 | Hobbies e passatempos | Cite um hobby ou passatempo | 673 |
 | 5 | Sabores de sorvete | Cite um sabor de sorvete | 2801 |
 | 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 38 |
