@@ -1,0 +1,75 @@
+name: 📥 Coletar respostas (Wikidata, IBGE, Open Library)
+
+# Roda scripts/coletar_fontes.py num runner do GitHub, que tem internet livre.
+# Cada categoria roda num job separado, em paralelo; no fim um job junta tudo e
+# faz commit dos dados/fontes/engordar/*.{wikidata,ibge,openlibrary}.txt no mesmo branch.
+# Ninguém precisa rodar nada na própria máquina.
+
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['scripts/coletar_fontes.py', '.github/workflows/coletar-fontes.yml']
+  workflow_dispatch:
+    inputs:
+      categorias:
+        description: 'Categorias separadas por espaço (vazio = todas)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coletar-v2-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  listar:
+    runs-on: ubuntu-latest
+    outputs:
+      tarefas: ${{ steps.l.outputs.tarefas }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: |
+          python3 scripts/coletar_fontes.py ${{ github.event.inputs.categorias }} --listar \
+            | python3 -c 'import sys,json; print("tarefas="+json.dumps([dict(zip(("cat","fonte"),l.split())) for l in sys.stdin if l.strip()]))' >> "$GITHUB_OUTPUT"
+
+  coletar:
+    needs: listar
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4   # o Wikidata limita consultas simultâneas
+      matrix:
+        tarefa: ${{ fromJson(needs.listar.outputs.tarefas) }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/coletar_fontes.py ${{ matrix.tarefa.cat }} --fonte ${{ matrix.tarefa.fonte }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.tarefa.cat }}-${{ matrix.tarefa.fonte }}
+          path: dados/fontes/engordar/${{ matrix.tarefa.cat }}.${{ matrix.tarefa.fonte }}.txt
+          if-no-files-found: ignore
+
+  commit:
+    needs: coletar
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: coletados
+          merge-multiple: true
+      - name: Commit dos arquivos coletados
+        run: |
+          mkdir -p coletados && cp coletados/*.txt dados/fontes/engordar/ 2>/dev/null || true
+          wc -l dados/fontes/engordar/*.{wikidata,ibge,openlibrary}.txt 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add dados/fontes/engordar/
+          if git diff --cached --quiet; then echo "Nada novo."; exit 0; fi
+          git commit -m "Coleta automática de respostas (coletar_fontes.py)"
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"

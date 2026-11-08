@@ -42,74 +42,78 @@ SPARQL = "https://query.wikidata.org/sparql"
 # Cada consulta só precisa dizer quem é ?item. O resto (nome em português, apelidos, fama) é igual
 # para todas. MIN = quantas Wikipédias precisam ter artigo (corta o que ninguém conhece).
 BR = "wd:Q155"
+# Consultas leves: P31 direto com VALUES (nada de wdt:P279* em classes enormes), o filtro mais
+# restritivo primeiro. Nomes e apelidos vêm depois, pela API wbgetentities, 50 itens por vez.
 CONSULTAS: dict[str, tuple[str, int]] = {
     "musicas-brasileiras": (f"""
-        {{ ?item wdt:P31/wdt:P279* wd:Q7366 ; wdt:P495 {BR} . }}
-        UNION {{ ?item wdt:P31/wdt:P279* wd:Q7366 ; wdt:P175 ?a . ?a wdt:P27 {BR} . }}
-        UNION {{ ?item wdt:P31/wdt:P279* wd:Q7366 ; wdt:P175 ?a . ?a wdt:P495 {BR} . }}""", 1),
+        VALUES ?t {{ wd:Q7366 wd:Q134556 wd:Q105543609 }}
+        {{ ?item wdt:P495 {BR} ; wdt:P31 ?t . }}
+        UNION {{ ?a wdt:P27 {BR} . ?item wdt:P175 ?a ; wdt:P31 ?t . }}""", 1),
     "filmes-brasileiros": (f"""
-        ?item wdt:P31/wdt:P279* wd:Q11424 ; wdt:P495 {BR} ; wdt:P577 ?d .
-        FILTER(YEAR(?d) >= 2000)""", 1),
+        ?item wdt:P495 {BR} ; wdt:P31 wd:Q11424 ; wdt:P577 ?d . FILTER(YEAR(?d) >= 2000)""", 1),
     "livros": ("""
-        ?item wdt:P31/wdt:P279* wd:Q7725634 ; wdt:P577 ?d .
-        FILTER(YEAR(?d) >= 2000)""", 3),
+        VALUES ?t { wd:Q7725634 wd:Q571 wd:Q8261 wd:Q47461344 }
+        ?item wdt:P31 ?t ; wdt:P577 ?d . FILTER(YEAR(?d) >= 2000)""", 3),
     "atores-brasileiros": (f"""
-        ?item wdt:P106/wdt:P279* wd:Q33999 ; wdt:P27 {BR} .""", 2),
+        VALUES ?o {{ wd:Q33999 wd:Q10800557 wd:Q10798782 wd:Q2405480 wd:Q2259451 }}
+        ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "apresentadores-de-tv": (f"""
-        ?item wdt:P106 wd:Q947873 ; wdt:P27 {BR} .""", 1),
+        VALUES ?o {{ wd:Q947873 }}
+        ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "influenciadores": (f"""
-        ?item wdt:P106 ?o ; wdt:P27 {BR} .
-        VALUES ?o {{ wd:Q17125263 wd:Q94791573 wd:Q50279140 wd:Q2045208 wd:Q1414443 }}""", 1),
+        VALUES ?o {{ wd:Q17125263 wd:Q94791573 wd:Q50279140 wd:Q2045208 wd:Q1414443 }}
+        ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "bandas": (f"""
-        ?item wdt:P31/wdt:P279* wd:Q215380 ; wdt:P495 {BR} ; wdt:P136/wdt:P279* wd:Q11399 .""", 1),
+        VALUES ?t {{ wd:Q215380 wd:Q5741069 }}
+        ?item wdt:P495 {BR} ; wdt:P31 ?t ; wdt:P136 ?g . ?g wdt:P279* wd:Q11399 .""", 1),
     "series-de-tv": ("""
-        ?item wdt:P31/wdt:P279* wd:Q5398426 ; wdt:P495 wd:Q30 ; wdt:P580 ?d .
+        ?item wdt:P495 wd:Q30 ; wdt:P31 wd:Q5398426 ; wdt:P580 ?d .
         FILTER(YEAR(?d) >= 2000 && YEAR(?d) <= 2009)""", 2),
     "atores-de-hollywood": ("""
-        ?item p:P166 ?pr . ?pr ps:P166 ?premio .
-        VALUES ?premio { wd:Q103916 wd:Q103618 wd:Q106291 wd:Q106301 }""", 1),
+        VALUES ?premio { wd:Q103916 wd:Q103618 wd:Q106291 wd:Q106301 }
+        ?item wdt:P166 ?premio .""", 1),
     "pintores-e-artistas": (f"""
-        ?item wdt:P106 wd:Q1028181 ; wdt:P27 {BR} .""", 1),
+        VALUES ?o {{ wd:Q1028181 wd:Q483501 wd:Q1281618 wd:Q33231 }}
+        ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "marcas-famosas": ("""
-        { ?item wdt:P31/wdt:P279* wd:Q431289 . } UNION { ?item wdt:P31/wdt:P279* wd:Q167270 . }""", 15),
+        VALUES ?t { wd:Q431289 wd:Q167270 wd:Q4830453 wd:Q891723 wd:Q6881511 }
+        ?item wdt:P31 ?t .""", 25),
     "lojas": (f"""
-        ?item wdt:P31/wdt:P279* wd:Q507619 ; wdt:P17 {BR} .""", 1),
+        VALUES ?t {{ wd:Q507619 wd:Q216107 wd:Q180846 wd:Q1631129 }}
+        ?item wdt:P17 {BR} ; wdt:P31 ?t .""", 1),
     "pontos-turisticos": ("""
-        { ?item wdt:P31/wdt:P279* wd:Q570116 . } UNION { ?item wdt:P1435 wd:Q9259 . }""", 12),
-    "sobrenomes": ("""
-        ?item wdt:P31 wd:Q101352 .
-        ?art schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> .""", 1),
-    "nomes-femininos": ("""
-        ?item wdt:P31 wd:Q11879590 .
-        ?art schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> .""", 1),
-    "nomes-masculinos": ("""
-        ?item wdt:P31 wd:Q12308941 .
-        ?art schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> .""", 1),
+        VALUES ?t { wd:Q570116 wd:Q4989906 wd:Q33506 wd:Q16970 wd:Q23413 wd:Q12518 }
+        ?item wdt:P31 ?t .""", 30),
+    "sobrenomes": ("""?item wdt:P31 wd:Q101352 .""", 6),
+    "nomes-femininos": ("""?item wdt:P31 wd:Q11879590 .""", 6),
+    "nomes-masculinos": ("""?item wdt:P31 wd:Q12308941 .""", 6),
     "cientistas-e-inventores": ("""
-        { ?item wdt:P106/wdt:P279* wd:Q901 . } UNION { ?item wdt:P106 wd:Q205375 . }""", 30),
+        VALUES ?o { wd:Q901 wd:Q205375 wd:Q169470 wd:Q593644 wd:Q170790 wd:Q864503 wd:Q11063 wd:Q81096 }
+        ?item wdt:P106 ?o .""", 30),
     "atletas-brasileiros": (f"""
-        ?item wdt:P27 {BR} ; wdt:P1344 ?jogos . ?jogos wdt:P31 wd:Q159821 .
-        ?item p:P1344 ?part . ?part pq:P1352 ?colocacao . FILTER(?colocacao <= 3)
+        VALUES ?m {{ wd:Q15243387 wd:Q15889641 wd:Q15889643 }}
+        ?item wdt:P27 {BR} ; wdt:P166 ?m .
         FILTER NOT EXISTS {{ ?item wdt:P106 wd:Q937857 }}""", 1),
     "estadios": ("""
-        ?item wdt:P31/wdt:P279* wd:Q1154710 .""", 2),
+        VALUES ?t { wd:Q1154710 wd:Q483110 }
+        ?item wdt:P31 ?t .""", 3),
     "doencas": ("""
-        ?item wdt:P31/wdt:P279* wd:Q12136 .""", 5),
-    "arvores": ("""
-        ?item wdt:P31 wd:Q16521 ; wdt:P171* wd:Q25314 .
-        ?art schema:about ?item ; schema:isPartOf <https://pt.wikipedia.org/> .""", 1),
+        VALUES ?t { wd:Q12136 wd:Q18123741 wd:Q929833 wd:Q112193867 }
+        ?item wdt:P31 ?t .""", 5),
+    "arvores": ("""?item wdt:P31 wd:Q16521 ; wdt:P105 wd:Q7432 ; wdt:P2974 ?h .
+        VALUES ?h { wd:Q10884 wd:Q757163 }""", 1),
 }
 
 MOLDE = """
-SELECT ?item ?pt ?en (GROUP_CONCAT(DISTINCT ?alias; separator="|") AS ?apelidos) ?links WHERE {{
-  {{
-    SELECT DISTINCT ?item WHERE {{ {corpo} }} LIMIT 60000
-  }}
-  ?item wikibase:sitelinks ?links . FILTER(?links >= {minimo})
-  ?item rdfs:label ?pt . FILTER(LANG(?pt) = "pt")
+SELECT ?item ?links ?pt ?mul ?en WHERE {{
+  {{ SELECT DISTINCT ?item ?links WHERE {{
+    {corpo}
+    ?item wikibase:sitelinks ?links . FILTER(?links >= {minimo})
+  }} LIMIT 20000 }}
+  OPTIONAL {{ ?item rdfs:label ?pt . FILTER(LANG(?pt) = "pt") }}
+  OPTIONAL {{ ?item rdfs:label ?mul . FILTER(LANG(?mul) = "mul") }}
   OPTIONAL {{ ?item rdfs:label ?en . FILTER(LANG(?en) = "en") }}
-  OPTIONAL {{ ?item skos:altLabel ?alias . FILTER(LANG(?alias) IN ("pt", "pt-br")) }}
-}} GROUP BY ?item ?pt ?en ?links ORDER BY DESC(?links)
+}}
 """
 
 
@@ -128,23 +132,65 @@ def pegar(url: str, dados: bytes | None = None, tentativas: int = 5, espera: flo
                 time.sleep(pausa)
                 continue
             raise
-        except (urllib.error.URLError, TimeoutError) as e:
+        except Exception as e:  # noqa: BLE001  (rede caiu, resposta cortada etc.)
             print(f"    erro de rede ({e}), tentando de novo...", file=sys.stderr)
             time.sleep(espera * (i + 1))
     raise RuntimeError(f"desisti de {url[:80]}")
 
 
+SO_IDS = """SELECT ?item ?links WHERE {{ {corpo}
+  ?item wikibase:sitelinks ?links . FILTER(?links >= {minimo}) }} LIMIT 20000"""
+
+
+def wikidata_por_api(corpo: str, minimo: int) -> list[list[str]]:
+    """Plano B para consultas pesadas: só os ids pelo SPARQL, nomes pela API (50 por vez)."""
+    bruto = pegar(SPARQL, urllib.parse.urlencode({"query": SO_IDS.format(corpo=corpo, minimo=minimo),
+                                                   "format": "json"}).encode(), tentativas=3)
+    links: dict[str, int] = {}
+    for b in json.loads(bruto, strict=False)["results"]["bindings"]:
+        q = b["item"]["value"].rsplit("/", 1)[-1]
+        links[q] = max(links.get(q, 0), int(b["links"]["value"]))
+    ids = sorted(links, key=lambda q: -links[q])
+    print(f"  plano B: {len(ids)} itens, nomes pela API...", file=sys.stderr)
+    linhas = []
+    for i in range(0, len(ids), 50):
+        url = "https://www.wikidata.org/w/api.php?" + urllib.parse.urlencode({
+            "action": "wbgetentities", "ids": "|".join(ids[i:i + 50]), "props": "labels|aliases",
+            "languages": "pt|pt-br|mul|en", "format": "json"})
+        ents = json.loads(pegar(url), strict=False).get("entities", {})
+        for q in ids[i:i + 50]:
+            e = ents.get(q, {})
+            lab = e.get("labels", {})
+            pt = (lab.get("pt") or lab.get("pt-br") or lab.get("mul") or {}).get("value", "").strip()
+            if not pt:
+                continue
+            nomes = [pt] + ([lab["en"]["value"]] if "en" in lab else [])
+            for lg in ("pt", "pt-br"):
+                nomes += [a["value"].strip() for a in e.get("aliases", {}).get(lg, [])]
+            nomes = [n.split(" (")[0].strip() if n.endswith(")") else n for n in nomes]
+            linhas.append(list(dict.fromkeys(n for n in nomes if n and not n.startswith("Q"))))
+        time.sleep(1)
+    return linhas
+
+
 def wikidata(cat: str) -> list[list[str]]:
     corpo, minimo = CONSULTAS[cat]
     consulta = MOLDE.format(corpo=corpo, minimo=minimo)
-    bruto = pegar(SPARQL, urllib.parse.urlencode({"query": consulta, "format": "json"}).encode())
+    try:
+        bruto = pegar(SPARQL, urllib.parse.urlencode({"query": consulta, "format": "json"}).encode(), tentativas=2)
+    except RuntimeError:
+        return wikidata_por_api(corpo, minimo)
+    itens: dict[str, tuple[int, list[str]]] = {}
+    for b in json.loads(bruto, strict=False)["results"]["bindings"]:
+        q = b["item"]["value"].rsplit("/", 1)[-1]
+        nomes = [b[k]["value"].strip() for k in ("pt", "mul", "en") if k in b]
+        if not ("pt" in b or "mul" in b):
+            continue  # sem nome em português: pula
+        links, antes = itens.get(q, (0, []))
+        itens[q] = (max(links, int(b["links"]["value"])), antes + nomes)
+    print(f"  {len(itens)} itens com nome", file=sys.stderr)
     linhas = []
-    for b in json.loads(bruto)["results"]["bindings"]:
-        pt = b["pt"]["value"].strip()
-        nomes = [pt]
-        if "en" in b and b["en"]["value"].strip() != pt:
-            nomes.append(b["en"]["value"].strip())
-        nomes += [a.strip() for a in b.get("apelidos", {}).get("value", "").split("|") if a.strip()]
+    for q, (_, nomes) in sorted(itens.items(), key=lambda kv: -kv[1][0]):
         # "Fulano (cantor)" -> "Fulano"
         nomes = [n.split(" (")[0].strip() if n.endswith(")") else n for n in nomes]
         linhas.append(list(dict.fromkeys(n for n in nomes if n and not n.startswith("Q"))))

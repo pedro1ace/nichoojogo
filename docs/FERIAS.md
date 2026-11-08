@@ -7,13 +7,9 @@ termina com `0 problemas`.
 ## O que fazer antes de sair (uma vez)
 
 1. Mesclar o PR no `main` (o Cloudflare publica sozinho em 1 ou 2 minutos).
-2. Mandar os dias novos para o D1:
-   ```bash
-   git pull
-   npx wrangler d1 execute DB --remote --file=banco/carga_dias.sql
-   ```
-   Se der erro dizendo que não acha "DB", use o nome que aparece em `npx wrangler d1 list`.
-   Sem esse passo o jogo ainda funciona (cai para `jogo/dados.js`), mas fica mais pesado para carregar.
+2. Nada mais. A Action "Carga do banco" (`.github/workflows/carga-banco.yml`) sobe `banco/carga_dias.sql`
+   para o banco `nicho` sozinha a cada merge. Só se ela falhar, rode na mão:
+   `npx wrangler d1 execute nicho --remote --file=banco/carga_dias.sql`
 
 Pronto. Daqui até 22/11 não precisa rodar mais nada.
 
