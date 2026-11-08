@@ -12,6 +12,21 @@ const LANCAMENTO = "2026-10-28"; // dia #1
 const FUSO_BRASIL = "America/Sao_Paulo";
 let deltaServidorMs = 0; // sincronização com relógio atômico de rede do servidor via header 'Date'
 
+// Pergunta longa: diminui a fonte até o cartão parar de rolar (nunca corta o texto).
+function caberPergunta() {
+  const h = $("pergunta");
+  h.style.fontSize = "";
+  requestAnimationFrame(() => {
+    const c = h.closest(".cartao");
+    let px = parseFloat(getComputedStyle(h).fontSize);
+    while (c && c.scrollHeight > c.clientHeight + 1 && px > 14) {
+      px -= 1;
+      h.style.fontSize = px + "px";
+    }
+  });
+}
+addEventListener("resize", () => { if ($("pergunta") && $("pergunta").textContent) caberPergunta(); });
+
 function agoraSincronizado() {
   return new Date(Date.now() + deltaServidorMs);
 }
@@ -915,6 +930,7 @@ function iniciarRodada() {
   montarQuadrados();
   $("rotulo-pergunta").textContent = `INCURSÃO ${estado.rodada + 1} DE ${estado.categorias.length}`;
   $("pergunta").textContent = cat.pergunta || cat.titulo;
+  caberPergunta();
   $("formulario").hidden = true;
   $("relogio").hidden = true;
   $("sugestao").hidden = true;
