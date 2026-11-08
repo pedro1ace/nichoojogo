@@ -60,9 +60,6 @@ CONSULTAS: dict[str, tuple[str, int]] = {
     "apresentadores-de-tv": (f"""
         VALUES ?o {{ wd:Q947873 }}
         ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
-    "influenciadores": (f"""
-        VALUES ?o {{ wd:Q17125263 wd:Q94791573 wd:Q50279140 wd:Q2045208 wd:Q1414443 }}
-        ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "bandas": (f"""
         VALUES ?t {{ wd:Q215380 wd:Q5741069 }}
         ?item wdt:P495 {BR} ; wdt:P31 ?t ; wdt:P136 ?g . ?g wdt:P279* wd:Q11399 .""", 1),
@@ -78,9 +75,6 @@ CONSULTAS: dict[str, tuple[str, int]] = {
     "marcas-famosas": ("""
         VALUES ?t { wd:Q431289 wd:Q167270 wd:Q4830453 wd:Q891723 wd:Q6881511 }
         ?item wdt:P31 ?t .""", 25),
-    "lojas": (f"""
-        VALUES ?t {{ wd:Q507619 wd:Q216107 wd:Q180846 wd:Q1631129 }}
-        ?item wdt:P17 {BR} ; wdt:P31 ?t .""", 1),
     "pontos-turisticos": ("""
         VALUES ?t { wd:Q570116 wd:Q4989906 wd:Q33506 wd:Q16970 wd:Q23413 wd:Q12518 }
         ?item wdt:P31 ?t .""", 30),
@@ -248,8 +242,9 @@ def openlibrary(paginas: int = 60) -> list[list[str]]:
 
 
 # ---------------------------------------------------------------- tudo junto
-TAREFAS: list[tuple[str, str]] = [(c, "wikidata") for c in CONSULTAS] + [
-    ("nomes-femininos", "ibge"), ("nomes-masculinos", "ibge"), ("livros", "openlibrary")]
+TAREFAS: list[tuple[str, str]] = [(c, "wikidata") for c in CONSULTAS] + [("livros", "openlibrary")]
+# IBGE (nomes-*/ibge) fica de fora do "tudo": são ~540 pedidos e passa de uma hora. Rode à parte se quiser.
+EXTRAS: list[tuple[str, str]] = [("nomes-femininos", "ibge"), ("nomes-masculinos", "ibge")]
 
 
 def rodar(cat: str, fonte: str) -> None:
@@ -272,7 +267,7 @@ def main() -> None:
     ap.add_argument("--fonte", choices=["wikidata", "ibge", "openlibrary"])
     ap.add_argument("--listar", action="store_true")
     args = ap.parse_args()
-    tarefas = [(c, f) for c, f in TAREFAS
+    tarefas = [(c, f) for c, f in TAREFAS + (EXTRAS if args.fonte == "ibge" else [])
                if (not args.categorias or c in args.categorias) and (not args.fonte or f == args.fonte)]
     if args.listar:
         for c, f in tarefas:
