@@ -140,7 +140,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
-| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 660 |
+| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 875 |
 | 3 | Modelos de carro | Cite um modelo de carro | 2393 |
 | 4 | Atropelado por avião | Diga um animal que já foi atingido por um avião, segundo os registros oficiais de colisão com fauna (como a base da FAA, a aviação dos EUA). | 323 |
 | 5 | Sabores de pizza | Cite um sabor de pizza | 287 |
@@ -176,7 +176,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Personagens de videogame | Cite um personagem de videogame | 843 |
-| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 977 |
+| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1949 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 392 |
 | 4 | Brinquedos | Cite um brinquedo | 532 |
 | 5 | Doenças | Cite uma doença | 1974 |
@@ -192,19 +192,19 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Coisas que dão medo | Cite algo que dá medo | 1823 |
 | 4 | Estádios de futebol | Cite um estádio de futebol | 1541 |
 | 5 | Árvores | Cite uma árvore | 1386 |
-| 6 | Nomes masculinos | Cite um nome masculino | 1351 |
-| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 329 |
+| 6 | Nomes masculinos | Cite um nome masculino | 2739 |
+| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 570 |
 
 ## Dia 17 · sex 13/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1745 |
+| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1888 |
 | 2 | Comida de rua | Cite uma comida de rua ou de lanchonete | 359 |
 | 3 | Redes sociais e mensageiros | Cite uma rede social ou aplicativo de mensagens | 126 |
 | 4 | Motivos para chorar | Cite um motivo para chorar | 427 |
 | 5 | Coisas cheirosas | Cite algo cheiroso | 1702 |
-| 6 | Nomes femininos | Cite um nome feminino | 856 |
+| 6 | Nomes femininos | Cite um nome feminino | 1752 |
 | 7 | Móveis | Cite um móvel | 302 |
 
 ## Dia 18 · sáb 14/11/2026
@@ -215,7 +215,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Café da manhã | Cite algo que se come ou bebe no café da manhã | 3597 |
 | 3 | Programas de TV brasileiros | Cite um programa de TV brasileiro | 2355 |
 | 4 | Calçados e acessórios | Cite um calçado ou acessório (sapato, bolsa, joia, chapéu...) | 372 |
-| 5 | Sobrenomes | Cite um sobrenome | 1341 |
+| 5 | Sobrenomes | Cite um sobrenome | 3266 |
 | 6 | Animais venenosos e peçonhentos | Cite um animal venenoso ou peçonhento | 244 |
 | 7 | Carnaval | Cite algo do carnaval | 484 |
 
@@ -239,9 +239,9 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Supermercado | Cite algo que se compra no supermercado | 8246 |
 | 3 | Animais que botam ovo | Cite um animal que bota ovo | 9947 |
 | 4 | Palavras terminadas em -ão | Cite uma palavra que termina em "-ão" | 6260 |
-| 5 | Vencedores do Oscar de atuação | Cite um ator ou atriz que já ganhou o Oscar de atuação | 315 |
+| 5 | Vencedores do Oscar de atuação | Cite um ator ou atriz que já ganhou o Oscar de atuação | 649 |
 | 6 | Coisas que derretem | Cite algo que derrete | 2036 |
-| 7 | Músicas brasileiras | Cite uma música brasileira (nome da música) | 1424 |
+| 7 | Músicas brasileiras | Cite uma música brasileira (nome da música) | 2151 |
 
 ## Dia 21 · ter 17/11/2026
 
@@ -249,10 +249,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Coisas que giram | Cite algo que gira | 379 |
 | 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1513 |
-| 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4014 |
+| 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4687 |
 | 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 491 |
 | 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 544 |
-| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 1590 |
+| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6160 |
 | 7 | Pratos de outros países | Cite um prato típico de outro país | 215 |
 
 ## Dia 22 · qua 18/11/2026
@@ -260,7 +260,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 1581 |
-| 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1168 |
+| 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1265 |
 | 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5088 |
 | 4 | Palavras aportuguesadas do inglês | Cite uma palavra que veio do inglês e ganhou grafia em português (como futebol, xampu ou sanduíche) | 141 |
 | 5 | Ferramentas | Cite uma ferramenta | 577 |
