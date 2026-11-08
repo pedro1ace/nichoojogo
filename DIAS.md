@@ -142,7 +142,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 682 |
 | 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 875 |
 | 3 | Modelos de carro | Cite um modelo de carro | 2393 |
-| 4 | Atropelado por avião | Diga um animal que já foi atingido por um avião, segundo os registros oficiais de colisão com fauna (como a base da FAA, a aviação dos EUA). | 323 |
+| 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 323 |
 | 5 | Sabores de pizza | Cite um sabor de pizza | 287 |
 | 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1183 |
 | 7 | Superpoderes | Cite um superpoder | 247 |
@@ -151,7 +151,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Resgate dos bombeiros | Diga um bicho que já foi resgatado pelo Corpo de Bombeiros, em caso registrado e noticiado. | 136 |
+| 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 136 |
 | 2 | Animações Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 148 |
 | 3 | Churrasco | Cite algo que tem num churrasco | 225 |
 | 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 547 |
@@ -262,7 +262,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 1581 |
 | 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1265 |
 | 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5088 |
-| 4 | Palavras aportuguesadas do inglês | Cite uma palavra que veio do inglês e ganhou grafia em português (como futebol, xampu ou sanduíche) | 141 |
+| 4 | Palavras aportuguesadas do inglês | Cite uma palavra do inglês aportuguesada (tipo futebol, xampu, sanduíche) | 141 |
 | 5 | Ferramentas | Cite uma ferramenta | 577 |
 | 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 344 |
 | 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 451 |
