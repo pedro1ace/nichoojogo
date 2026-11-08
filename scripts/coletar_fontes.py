@@ -58,7 +58,7 @@ CONSULTAS: dict[str, tuple[str, int]] = {
         VALUES ?o {{ wd:Q33999 wd:Q10800557 wd:Q10798782 wd:Q2405480 wd:Q2259451 }}
         ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "apresentadores-de-tv": (f"""
-        VALUES ?o {{ wd:Q947873 wd:Q13590141 }}
+        VALUES ?o {{ wd:Q947873 }}
         ?item wdt:P27 {BR} ; wdt:P106 ?o .""", 1),
     "influenciadores": (f"""
         VALUES ?o {{ wd:Q17125263 wd:Q94791573 wd:Q50279140 wd:Q2045208 wd:Q1414443 }}
@@ -102,13 +102,16 @@ CONSULTAS: dict[str, tuple[str, int]] = {
 }
 
 MOLDE = """
-SELECT ?item ?links WHERE {{
-  {corpo}
-  ?item wikibase:sitelinks ?links . FILTER(?links >= {minimo})
-}} LIMIT 40000
+SELECT ?item ?links ?pt ?mul ?en WHERE {{
+  {{ SELECT DISTINCT ?item ?links WHERE {{
+    {corpo}
+    ?item wikibase:sitelinks ?links . FILTER(?links >= {minimo})
+  }} LIMIT 20000 }}
+  OPTIONAL {{ ?item rdfs:label ?pt . FILTER(LANG(?pt) = "pt") }}
+  OPTIONAL {{ ?item rdfs:label ?mul . FILTER(LANG(?mul) = "mul") }}
+  OPTIONAL {{ ?item rdfs:label ?en . FILTER(LANG(?en) = "en") }}
+}}
 """
-API = "https://www.wikidata.org/w/api.php"
-MAX_ITENS = 15000
 
 
 def pegar(url: str, dados: bytes | None = None, tentativas: int = 5, espera: float = 10) -> bytes:
@@ -126,7 +129,7 @@ def pegar(url: str, dados: bytes | None = None, tentativas: int = 5, espera: flo
                 time.sleep(pausa)
                 continue
             raise
-        except (urllib.error.URLError, TimeoutError) as e:
+        except Exception as e:  # noqa: BLE001  (rede caiu, resposta cortada etc.)
             print(f"    erro de rede ({e}), tentando de novo...", file=sys.stderr)
             time.sleep(espera * (i + 1))
     raise RuntimeError(f"desisti de {url[:80]}")
@@ -136,39 +139,20 @@ def wikidata(cat: str) -> list[list[str]]:
     corpo, minimo = CONSULTAS[cat]
     consulta = MOLDE.format(corpo=corpo, minimo=minimo)
     bruto = pegar(SPARQL, urllib.parse.urlencode({"query": consulta, "format": "json"}).encode(), tentativas=3)
-    links: dict[str, int] = {}
-    for b in json.loads(bruto)["results"]["bindings"]:
+    itens: dict[str, tuple[int, list[str]]] = {}
+    for b in json.loads(bruto, strict=False)["results"]["bindings"]:
         q = b["item"]["value"].rsplit("/", 1)[-1]
-        links[q] = max(links.get(q, 0), int(b["links"]["value"]))
-    ids = sorted(links, key=lambda q: -links[q])[:MAX_ITENS]
-    print(f"  {len(links)} itens no Wikidata, buscando nomes de {len(ids)}...", file=sys.stderr)
+        nomes = [b[k]["value"].strip() for k in ("pt", "mul", "en") if k in b]
+        if not ("pt" in b or "mul" in b):
+            continue  # sem nome em português: pula
+        links, antes = itens.get(q, (0, []))
+        itens[q] = (max(links, int(b["links"]["value"])), antes + nomes)
+    print(f"  {len(itens)} itens com nome", file=sys.stderr)
     linhas = []
-    for i in range(0, len(ids), 50):
-        url = API + "?" + urllib.parse.urlencode({
-            "action": "wbgetentities", "ids": "|".join(ids[i:i + 50]), "props": "labels|aliases",
-            "languages": "pt|pt-br|mul|en", "format": "json", "maxlag": "5"})
-        for _ in range(4):
-            resp = json.loads(pegar(url))
-            if "error" not in resp:
-                break
-            time.sleep(10)  # maxlag: o Wikidata pediu calma
-        ents = resp.get("entities", {})
-        for q in ids[i:i + 50]:
-            e = ents.get(q, {})
-            lab = e.get("labels", {})
-            pt = (lab.get("pt") or lab.get("pt-br") or lab.get("mul") or {}).get("value", "").strip()
-            if not pt:
-                continue
-            nomes = [pt]
-            en = lab.get("en", {}).get("value", "").strip()
-            if en:
-                nomes.append(en)
-            for lg in ("pt", "pt-br"):
-                nomes += [a["value"].strip() for a in e.get("aliases", {}).get(lg, [])]
-            # "Fulano (cantor)" -> "Fulano"
-            nomes = [n.split(" (")[0].strip() if n.endswith(")") else n for n in nomes]
-            linhas.append(list(dict.fromkeys(n for n in nomes if n and not n.startswith("Q"))))
-        time.sleep(0.3)
+    for q, (_, nomes) in sorted(itens.items(), key=lambda kv: -kv[1][0]):
+        # "Fulano (cantor)" -> "Fulano"
+        nomes = [n.split(" (")[0].strip() if n.endswith(")") else n for n in nomes]
+        linhas.append(list(dict.fromkeys(n for n in nomes if n and not n.startswith("Q"))))
     return linhas
 
 
