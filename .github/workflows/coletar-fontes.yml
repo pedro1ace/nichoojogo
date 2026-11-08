@@ -1,0 +1,44 @@
+name: 📥 Coletar respostas (Wikidata, IBGE, Open Library)
+
+# Roda scripts/coletar_fontes.py num runner do GitHub, que tem internet livre,
+# e faz commit dos dados/fontes/engordar/*.{wikidata,ibge,openlibrary}.txt no mesmo branch.
+# Ninguém precisa rodar nada na própria máquina. Depois é só rodar engordar.py e fama.py.
+
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['scripts/coletar_fontes.py', '.github/workflows/coletar-fontes.yml']
+  workflow_dispatch:
+    inputs:
+      categorias:
+        description: 'Categorias separadas por espaço (vazio = todas)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coletar-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Coletar
+        run: python3 scripts/coletar_fontes.py ${{ github.event.inputs.categorias }}
+      - name: Commit dos arquivos coletados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add dados/fontes/engordar/
+          if git diff --cached --quiet; then echo "Nada novo."; exit 0; fi
+          git diff --cached --stat
+          git commit -m "Coleta automática de respostas (coletar_fontes.py)"
+          git push
