@@ -1,16 +1,16 @@
 # titulo: Meios de transporte
 # pergunta: Cite um meio de transporte
 # formato: uma resposta por linha; apelidos separados por " | "
-Carro | automóvel | auto
-Ônibus | busão | buzão
-Moto | motocicleta | motoca
-Bicicleta | bike | magrela | bicicleta elétrica
-Avião | aeronave
+Carro | automóvel | auto | carrão | possante | carango
+Ônibus | busão | buzão | coletivo | ônibus de linha
+Moto | motocicleta | motoca | motinha | mota
+Bicicleta | bike | magrela | bicicleta elétrica | bici | bicicleta comum | bicileta | bicicreta | e-bike
+Avião | aeronave | avião comercial | aviãozinho
 Helicóptero
-Trem | comboio
-Metrô | metro
-Navio
-Barco
+Trem | comboio | trenzinho
+Metrô | metro | metropolitano | subway
+Navio | navio de passageiros
+Barco | barquinho | embarcação
 Canoa
 Caiaque
 Jangada
@@ -27,9 +27,9 @@ Prancha de surf | prancha
 Stand up paddle | SUP | stand up
 Jet ski | moto aquática
 Gôndola
-Caminhão
+Caminhão | camião | truck | caminhãozinho
 Carreta | jamanta
-Van | perua
+Van | perua | station wagon
 Kombi
 Táxi
 Uber | carro de aplicativo
@@ -44,7 +44,7 @@ Camelo
 Elefante
 Lhama
 Trenó | trenó puxado por cães
-Patinete | patinete elétrico
+Patinete | patinete elétrico | scooter elétrica | patinete motorizado
 Skate
 Patins | rollerblade
 Monociclo
@@ -74,12 +74,12 @@ Retroescavadeira
 Empilhadeira
 Ônibus escolar
 Ônibus de dois andares | ônibus double-decker
-Micro-ônibus | micro-ônibus | lotação
+Micro-ônibus | micro-ônibus | lotação | perua de lotação
 Van escolar
 Limusine
 Buggy
 Jipe
-Caminhonete | picape
+Caminhonete | picape | pickup
 Conversível
 Carro elétrico
 Carro voador
@@ -151,18 +151,18 @@ Guincho
 Betoneira
 Moto de trilha
 Scooter | lambreta
-Mobilete | ciclomotor
+Mobilete | ciclomotor | mobylette
 Motoneta
 Bicicleta tandem
 Bicicleta motorizada
 Patinete de criança
 Trem de carga
 Trem de passageiros
-Trem metropolitano | CPTM
+Trem metropolitano | CPTM | trem urbano
 BRT
 Ônibus articulado | sanfonão
 Ônibus biarticulado
-Trólebus
+Trólebus | ônibus elétrico de fio
 Ônibus leito
 Ônibus de turismo
 Ônibus elétrico
@@ -220,7 +220,7 @@ Trem turístico
 TGV
 Shinkansen
 Eurostar
-Expresso do Oriente
+Expresso do Oriente | orient express
 Transiberiana
 Trem-bala japonês
 Locomotiva
@@ -231,8 +231,8 @@ Vagonete
 Draisine
 Jato
 Jumbo
-Boeing
-Airbus
+Boeing | boeing 737 | boeing 747
+Airbus | airbus a320 | a380
 Concorde
 Avião de papel
 Avião monomotor
@@ -285,7 +285,7 @@ Vaporetto
 Junco chinês
 Sampana
 Dhow
-Drakkar | barco viking
+Drakkar | barco viking | navio viking
 Trirreme
 Galera
 Bergantim
@@ -299,7 +299,7 @@ Hatch
 Sedã
 SUV
 Minivan
-Cupê
+Cupê | coupé
 Esportivo
 Stock car
 Dragster
@@ -324,3 +324,211 @@ Búfalo
 Iaque
 Avestruz montado
 Cachorro de trenó
+# entraram por scripts/engordar.py (dados/fontes/engordar/meios-de-transporte.txt)
+Sedan
+Roadster
+Carro esportivo
+Supercarro
+Carro antigo | carro clássico
+Carro flex
+Carro a diesel
+Carro alugado
+Carro forte
+Carro funerário | rabecão
+Carro-pipa | caminhão-pipa
+Carro de som
+Carro de autoescola
+Motor home | motorhome
+Trailer
+Kombi home
+Caminhão-baú
+Caminhão-cegonha
+Caminhão-tanque
+Caminhão basculante | caçamba
+Caminhão de mudança
+Cavalo mecânico
+Carreta bitrem
+Caminhão guincho | reboque
+Motoniveladora
+Rolo compressor
+Escavadeira
+Pá carregadeira
+Guindaste
+Trator de esteira
+Ônibus intermunicipal
+Ônibus executivo
+Vanzinha
+Jardineira
+Caminhão de passageiros
+Vespa
+Motocross
+Moto esportiva
+Moto custom
+Harley-Davidson | harley
+Motocicleta com sidecar
+Motoboy
+Bicicleta dobrável
+Bicicleta de corrida | speed
+Mountain bike
+BMX
+Bicicleta de carga | cargo bike
+Tandem | bicicleta dupla
+Bicicleta reclinada
+Bicicleta compartilhada | bike itaú | yellow
+Fixa | fixie
+Bicicleta ergométrica
+Velocípede
+Bicicleta infantil
+Bicicleta de rodinha
+Bicitáxi
+Pedicab
+Carroça de burro
+Carro de bois
+Charrete de cavalo
+Tílburi
+Fiacre
+Calhambeque
+Cavalo de montaria
+Égua
+Mula
+Pônei
+Boi de carga
+Avestruz
+Dromedário
+Raquete de neve
+Aerotrem
+Trem noturno
+Locomotiva a diesel
+Locomotiva elétrica
+Vagão
+Litorina
+Trem do Corcovado
+Metrô de superfície
+Pré-metrô
+Aeromóvel
+People mover
+Elevador Lacerda
+Escada
+Esteira
+Avião a jato
+Avião a hélice | avião de hélice
+Avião turboélice | turboélice
+Avião bimotor
+Avião supersônico
+Avião de carga | cargueiro aéreo
+Avião anfíbio
+Avião agrícola
+Avião militar
+Bombardeiro
+Caça F-16
+Jato executivo
+Avião particular
+Ultraleve motorizado
+Helicóptero militar
+Helicóptero de resgate
+Helicóptero ambulância | aeromédico
+Hélice
+Paramotor
+Paraglider
+Balão de gás
+Carro voador elétrico | eVTOL
+Táxi aéreo
+Drone de entrega
+Space Shuttle
+Soyuz
+Falcon 9
+Starship
+Rover marciano
+Satélite
+Elevador espacial
+Máquina do tempo
+Portal
+Barco a motor
+Barco pesqueiro
+Barcaça
+Rabeta amazônica
+Lancha voadeira
+Recreio (barco)
+Ajojo
+Canoa canadense
+Caiaque oceânico
+Rafting | bote de rafting
+Esqui aquático
+Junco
+Felucca
+Navio-patrulha
+Graneleiro
+Navio quebra-gelo
+Navio-hospital
+Navio-escola
+Barca
+Barca Rio-Niterói
+Balsa de travessia
+Lancha de travessia
+Táxi aquático
+Hidrofólio
+Catamarã de passageiros
+Barco de cruzeiro
+Transatlântico Titanic | titanic
+Submarino nuclear
+Batiscafo
+Submersível
+Escafandro
+Jet boat
+Lancha de corrida
+Barco a pedal
+Colchão inflável
+Patins in-line | roller
+Patins de quatro rodas
+Patins de gelo
+Longboard
+Hoverboard elétrico
+Carrinho de supermercado
+Carrinho de feira
+Motoca infantil
+Andar a pé
+Correndo
+Nadando
+Rastejando
+Cavalinho (nas costas) | cavalinho | nas costas
+Colo
+Carona de bicicleta
+Carona de moto
+Uber Moto
+99 taxi
+Táxi lotação
+Mototáxi de aplicativo
+Patinete de aplicativo
+Ônibus de excursão
+Ônibus de time
+Ônibus de banda
+Ônibus da Xuxa
+Herbie
+Relâmpago McQueen
+Ônibus Mágico
+Trem de Hogwarts | expresso de hogwarts
+Carruagem de abóbora
+Hipogrifo
+Grifo
+Fênix
+Águia gigante
+Baleia (Pinóquio)
+Tartaruga marinha (Procurando Nemo)
+Golfinho
+Cavalo-marinho
+Arraia
+Avestruz de corrida
+Canguru
+Elefante indiano
+Rinoceronte
+Girafa
+Zebra
+Cervo
+Alce
+Lhama andina
+Alpaca
+Cabra de carga
+Carneiro
+Porco
+Galinha
+Pombo-correio

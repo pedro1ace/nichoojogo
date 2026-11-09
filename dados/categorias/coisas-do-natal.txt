@@ -1,16 +1,16 @@
 # titulo: Natal
 # pergunta: Cite algo do Natal
 # formato: uma resposta por linha; apelidos separados por " | "
-Papai Noel | Noel | Bom Velhinho | Santa Claus | São Nicolau
-Árvore de Natal | pinheiro | pinheirinho | árvore
-Presente | presentes
-Panetone | chocotone
-Peru | peru de Natal
+Papai Noel | Noel | Bom Velhinho | Santa Claus | São Nicolau | pai natal | velhinho
+Árvore de Natal | pinheiro | pinheirinho | árvore | pinheiro de natal
+Presente | presentes | presentinho | mimo
+Panetone | chocotone | panettone | panetone de frutas | panetone de gotas | chocottone
+Peru | peru de Natal | peru assado
 Chester
 Tender
 Pernil
-Bacalhau | bacalhoada
-Rabanada
+Bacalhau | bacalhoada | bacalhau à portuguesa
+Rabanada | fatia dourada
 Farofa | farofa de Natal
 Arroz com passas | passas | uva-passa
 Salpicão
@@ -24,10 +24,10 @@ Torta de limão
 Manjar
 Bolo de Natal | bolo inglês
 Biscoito de gengibre | homem de gengibre | boneco de gengibre
-Bengala doce | bengala de açúcar | bengalinha
+Bengala doce | bengala de açúcar | bengalinha | candy cane
 Chocolate
 Vinho
-Champanhe | espumante | sidra
+Champanhe | espumante | sidra | sidra cereser | espumante de natal
 Ceia | ceia de Natal
 Missa do Galo | missa
 Presépio
@@ -48,7 +48,7 @@ Boi
 Rena | renas
 Rudolph | Rodolfo | rena do nariz vermelho
 Trenó
-Duendes | elfo | duende
+Duendes | elfo | duende | elf
 Mamãe Noel
 Polo Norte
 Lapônia
@@ -73,12 +73,12 @@ Boneco de neve
 Floco de neve
 Sino | sininho | sinos
 Vela | velas
-Canção de Natal | música de Natal | Jingle Bells | Noite Feliz | Então É Natal | Bate o Sino
+Canção de Natal | música de Natal | Jingle Bells | Noite Feliz | Então É Natal | Bate o Sino | silent night
 Coral | coral de Natal
 Simone | Então é Natal da Simone
 Especial do Roberto Carlos | Roberto Carlos
 Mariah Carey | All I Want for Christmas
-Grinch (personagem) | Filme de Natal | Esqueceram de Mim | O Grinch | Grinch | Um Duende em Nova York | Milagre na Rua 34 | O Expresso Polar
+Grinch (personagem) | Filme de Natal | Esqueceram de Mim | O Grinch | Grinch | Um Duende em Nova York | Milagre na Rua 34 | O Expresso Polar | home alone
 Scrooge | Ebenezer Scrooge | Conto de Natal
 Quebra-Nozes
 Papai Noel de shopping
@@ -132,7 +132,7 @@ Salada de frutas
 Bombom
 Biscoito amanteigado | biscoito
 Natal Luz | Gramado
-Árvore da Lagoa
+Árvore da Lagoa | árvore da lagoa rodrigo de freitas
 Cantata de Natal
 Auto de Natal
 Pastorinhas | Pastoril
@@ -142,9 +142,9 @@ Krampus
 Befana
 Sinterklaas
 Papai Noel dos Correios
-Coca-Cola | caminhão da Coca-Cola
+Coca-Cola | caminhão da Coca-Cola | coca cola de natal | caravana da coca-cola
 Ursinho de Natal
-Gorro | gorro de Papai Noel | touca
+Gorro | gorro de Papai Noel | touca | gorrinho | touca de papai noel
 Suéter de Natal | suéter feio
 Pijama de Natal
 Roupa vermelha
@@ -180,14 +180,14 @@ Barba branca
 Botas do Papai Noel
 Cinto do Papai Noel
 Renas do Papai Noel
-Dasher
-Dancer
-Prancer
-Vixen
-Comet
-Cupid
-Donner
-Blitzen
+Dasher | corredora
+Dancer | dançarina
+Prancer | empinadora
+Vixen | raposa
+Comet | cometa
+Cupid | cupido
+Donner | trovão
+Blitzen | relâmpago
 Fábrica de brinquedos
 Oficina do Papai Noel
 Lista dos bem-comportados
@@ -209,7 +209,7 @@ Lâmpada colorida
 Enfeite de porta
 Guirlanda de porta
 Papai Noel inflável
-Papai Noel subindo a janela
+Papai Noel subindo a janela | papai noel escalador
 Papai Noel na varanda
 Casa enfeitada
 Rua enfeitada
@@ -231,7 +231,7 @@ Torta de nozes
 Tâmaras
 Damascos
 Figos secos
-Ameixa-preta | ameixa
+Ameixa-preta | ameixa | ameixa seca
 Cereja em calda
 Chester assado
 Pernil assado
@@ -271,11 +271,11 @@ All I Want for Christmas Is You
 Last Christmas
 Feliz Navidad
 Natal Branco
-Simplesmente Amor
+Simplesmente Amor | love actually
 O Estranho Mundo de Jack
 Especial de Natal
 Retrospectiva
-Décimo terceiro salário
+Décimo terceiro salário | 13º
 Fim de ano
 Recesso
 Festa da firma
@@ -300,4 +300,218 @@ Natividade
 Noite de Natal
 Dia de Natal
 Feliz Ano Novo
-Ano-Novo
+Ano-Novo | réveillon
+# entraram por scripts/engordar.py (dados/fontes/engordar/coisas-do-natal.txt)
+Tender assado
+Bolinho de bacalhau
+Arroz com lentilha
+Arroz com amêndoas
+Arroz de Natal
+Farofa de frutas
+Farofa de castanhas
+Salada de bacalhau
+Lombo de porco
+Cordeiro assado
+Fios de ovos
+Castanha-do-pará
+Pistache
+Romã
+Cereja
+Lichia
+Pêssego
+Abacaxi
+Manga
+Melancia de Natal
+Frutas cristalizadas
+Bolo de nozes
+Bolo de chocolate
+Tronco de Natal | bûche de noël
+Pudim de leite
+Manjar branco
+Mousse de maracujá
+Torta holandesa
+Sorvete de flocos
+Bombom de Natal
+Caixa de bombons
+Chocolate Garoto | caixa de bombom garoto
+Kinder
+Ferrero Rocher
+Biscoito amanteigado de lata | biscoito de lata
+Biscoito de Natal | cookie de natal
+Casinha de gengibre | casa de biscoito
+Homem-biscoito
+Pão de mel
+Torrone de amendoim
+Marzipã
+Doce de abóbora
+Doce de leite
+Brigadeiro
+Prosecco
+Licor
+Enfeite de Natal
+Bolinha de Natal
+Estrela na árvore
+Laço de fita
+Festão dourado
+Pisca-pisca colorido | luzes
+Cascata de luz
+Iluminação de Natal
+Decoração de Natal
+Prédio iluminado
+Árvore do Ibirapuera
+Natal Luz de Gramado
+Boneco do Papai Noel
+Papai Noel de chocolate
+Roupa de Papai Noel
+Trenó do Papai Noel
+Rudolph, a rena do nariz vermelho | rudolf
+Ajudante do Papai Noel
+Bicicleta de presente
+Celular de presente
+Carta ao Papai Noel dos Correios
+Correios
+Fila do shopping
+Black Friday
+Fita adesiva
+Etiqueta de presente
+Sacola de presente
+Caixa de presente
+Amigo chocolate
+Sorteio do amigo secreto
+Cesta básica
+Peru da empresa
+Confraternização da empresa
+Mesa posta
+Toalha vermelha
+Louça de Natal
+Centro de mesa
+Vela vermelha
+Vela dourada
+Castiçal
+Pinha dourada
+Neve artificial
+Globo de neve
+Boneco de neve de pelúcia
+Pinguim
+Urso polar
+Floco de neve de papel
+Anjo de Natal
+Arcanjo Gabriel
+Querubim
+Virgem Maria
+São José
+Belém
+Canto natalino
+White Christmas
+Rockin' Around the Christmas Tree
+Let It Snow
+Santa Claus Is Coming to Town
+Rudolph the Red-Nosed Reindeer
+Anoiteceu
+Adeste Fideles
+Oh Holy Night
+Hino de Natal
+Sinos de Belém
+Pinheirinho de Natal (música)
+Boa Noite (canção)
+Show do Roberto Carlos
+Especial de Natal da Globo
+Simone cantando Então É Natal
+Mariah Carey descongelando | mariah carey descongelou
+Kevin McCallister | kevin
+Fantasma do Natal Passado
+Fantasma do Natal Presente
+Fantasma do Natal Futuro
+Tiny Tim
+Um Herói de Brinquedo
+Klaus
+Operação Presente
+Meu Papai é Noel
+Natal dos Muppets
+Gremlins
+Duro de Matar
+Fada Açucarada
+Charlie Brown (Natal)
+Frosty
+Jack Frost
+Ded Moroz
+Papai Noel Negro | zwarte piet
+Mamãe Noel cozinhando
+Panetone na geladeira
+Geladeira cheia
+Pote de sorvete com feijão
+Marmita do dia seguinte
+Peru frio
+Ressaca de Natal
+Indigestão
+Barriga cheia
+Dieta depois do Natal
+Engordar no Natal
+Ar-condicionado
+Chuva de verão
+Estrada lotada
+Rodoviária cheia
+Aeroporto cheio
+Férias escolares
+Contagem regressiva
+Promessa de ano novo
+Gratificação
+Bônus
+Dívida de Natal
+Parcela
+Natal de Portugal
+Filhós
+Sonhos de Natal
+Coscorões
+Arroz-doce
+Cabrito assado
+Polvo à lagareiro
+Rabanada de vinho
+Sobrinhos
+Netos
+Criança acordada esperando o Papai Noel
+Criança que descobriu que Papai Noel não existe
+Tio vestido de Papai Noel | tio de papai noel
+Pai vestido de Papai Noel
+Papai Noel suado
+Papai Noel de bermuda
+Papai Noel na moto
+Papai Noel de helicóptero
+Papai Noel no Maracanã
+Chegada do Papai Noel
+Abertura dos presentes
+Rasgar papel de presente
+Presente de grego
+Presente repetido
+Meia de presente
+Cueca de presente
+Perfume de presente
+Kit de sabonete
+Vale-presente
+Roupa nova
+Roupa branca
+Prateado
+Brilho
+Glitter
+Lantejoula
+Sino dourado
+Cartão postal de Natal
+Corrente de WhatsApp de Natal | figurinha de natal
+Feliz Natal e próspero ano novo
+Natal sem fome
+Campanha de Natal
+Doação de brinquedos
+Visita ao orfanato
+Natal solidário
+Espírito natalino | espírito de natal
+Magia do Natal
+Milagre de Natal
+Fé
+Gratidão
+União
+Perdão
+Reconciliação
+Saudade
+Lembrança
+Tradição
+Ritual

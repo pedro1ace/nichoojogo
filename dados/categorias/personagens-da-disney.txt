@@ -1,21 +1,21 @@
 # titulo: Personagens da Disney
 # pergunta: Cite um personagem da Disney ou da Pixar
 # formato: uma resposta por linha; apelidos separados por " | "
-Mickey Mouse | Mickey | Mickey Mouse
-Minnie Mouse | Minnie
-Pato Donald | Donald
+Mickey Mouse | Mickey | Mickey Mouse | miquei | mique | mickey mause | aprendiz de feiticeiro
+Minnie Mouse | Minnie | mini | minie
+Pato Donald | Donald | pato donaldo
 Margarida | Daisy | Margarida Duck
 Pateta | Goofy
 Pluto
 Tio Patinhas | Patinhas | Scrooge McDuck
-Huguinho | Huguinho, Zezinho e Luisinho | Huguinho Zezinho e Luizinho
+Huguinho | Huguinho, Zezinho e Luisinho | Huguinho Zezinho e Luizinho | sobrinhos do donald
 Zezinho
 Luisinho | Luizinho
 Tico | Tico e Teco
 Teco
 Professor Pardal | Pardal
 Gastão (Disney) | Gastão
-Maga Patalójika | Maga Patalojika
+Maga Patalójika | Maga Patalojika | maga
 Irmãos Metralha | Metralhas
 João Bafo de Onça | Bafo de Onça | Pete
 Clarabela | Clarabela Cow
@@ -38,13 +38,13 @@ Ed (hiena) | Shenzi | Banzai | hienas
 Branca de Neve
 Rainha Má | Rainha Malvada | Madrasta da Branca de Neve | Bruxa Má
 Sete Anões | 7 anões | anões
-Dunga
+Dunga | dopey
 Mestre | Doc
-Zangado
-Feliz
-Soneca
-Dengoso
-Atchim
+Zangado | grumpy
+Feliz | happy
+Soneca | sleepy
+Dengoso | bashful
+Atchim | sneezy
 Príncipe Encantado | Príncipe
 Cinderela | Cinderella
 Fada Madrinha
@@ -97,7 +97,7 @@ Megara | Meg
 Hades
 Pégaso | Pegasus
 Filoctetes | Phil
-Agonia e Pânico | Agonia | Pânico
+Agonia e Pânico | Agonia | Pânico | pain e panic
 Zeus
 Tarzan
 Jane
@@ -110,7 +110,7 @@ Quasimodo
 Esmeralda
 Frollo
 Febo
-Victor, Hugo e Laverne | gárgulas
+Victor, Hugo e Laverne | gárgulas | victor | hugo | laverne
 Stitch
 Lilo
 Nani
@@ -254,7 +254,7 @@ Slinky
 Porquinho | Hamm | Porco Cofrinho
 Sr. Cabeça de Batata | Senhor Cabeça de Batata | Cabeça de Batata
 Sra. Cabeça de Batata
-Aliens (Toy Story) | Alienígenas | Ooooh
+Aliens (Toy Story) | Alienígenas | Ooooh | marcianinhos
 Betty (pastora) | Bo Peep | Betty
 Mineiro (Toy Story) | Pete Fedido | Fedido
 Lotso | Urso Lotso
@@ -282,7 +282,7 @@ Destiny
 Bailey
 Squirt
 Relâmpago McQueen | McQueen | Lightning McQueen
-Mate | Tow Mater
+Mate | Tow Mater | tom mate
 Sally (Carros) | Sally Carrera
 Doc Hudson
 Luigi
@@ -304,8 +304,8 @@ Dug | Doug
 Kevin (ave)
 Charles Muntz
 Ellie | Ellie Fredricksen
-Sr. Incrível | Senhor Incrível | Beto
-Mulher-Elástica | Helena
+Sr. Incrível | Senhor Incrível | Beto | bob parr
+Mulher-Elástica | Helena | helen parr
 Violeta
 Flecha | Dash
 Zezé | Jack-Jack
@@ -376,7 +376,7 @@ Hulk
 Groot
 Rocket | Rocket Raccoon
 Pantera Negra
-Kermit | Caco | Caco, o Sapo
+Kermit | Caco | Caco, o Sapo | sapo caco
 Miss Piggy
 Jack Sparrow | Capitão Jack Sparrow
 Mary Poppins
@@ -403,3 +403,185 @@ Copper
 Rei de Chifres
 # entraram pela simulação de jogadores (scripts/fama.py --completar)
 Walt Disney
+# entraram por scripts/engordar.py (dados/fontes/engordar/personagens-da-disney.txt)
+Max Pateta
+Mancha Negra
+Professor Ludovico | ludovico
+Gansolino
+Lampadinha
+Vovó Donalda
+Chip e Dale
+Butch
+Chiquinho e Francisquinho
+Mortimer
+Ludwig von Pato
+Gyro
+Patrícia (DuckTales)
+Webby
+Rebeca Cunningham
+Kit Nuvem
+Baloo piloto
+Capitão Bimbo
+Darkwing Duck | pato darkwing
+Launchpad | capitão boing
+Bonnie
+Gabby Gabby
+Bunny e Ducky
+Sargento (Toy Story)
+Waternoose
+Sr. Raia
+Darla
+Ramone
+Flo
+Fillmore
+Xerife (Carros)
+Jackson Storm
+Finn McMissile
+Skinner
+M-O
+Capitão (WALL-E)
+Auto
+Pepita
+Luca Paguro
+Elio (personagem)
+Yen Sid
+Chernabog
+Hipopótamo bailarino
+Cléo
+Gideão
+Sra. Jumbo
+Corvos (Dumbo)
+Pai de Bambi | grande príncipe
+Tatá
+Lebre de Março
+Tweedledee e Tweedledum
+João
+Crocodilo Tique-Taque
+Meninos Perdidos
+Si e Am
+Tia Sarah
+Jock
+Trusty
+Príncipe Filipe
+Gaspar e Horácio
+Roger e Anita
+Manchinha | patch
+Rolly
+Lucky
+Arthur (Espada era a Lei)
+Merlin
+Arquimedes
+Madame Min | madame mim
+Edgar
+Lady Marian
+Xerife de Nottingham
+Frei Tuck
+Penny
+Dodó (O Cão e a Raposa)
+Dawson
+Professor Ratigan
+Fagin
+Jenny
+Rajah
+Sarabi
+Shenzi, Banzai e Ed
+Vovó Salgueiro
+Fil
+Jane Porter
+Rino
+Charlotte
+Felix Conserta
+Sargento Calhoun
+Duque de Weselton
+Marshmallow
+Tadashi
+GoGo
+Honey Lemon
+Wasabi
+Fred
+Garra-Mansa
+Dawn Belwether
+Prefeito Bom-Leão | lionheart
+Tuk Tuk
+Camilo
+Dolores
+Pepa
+Valentino
+Rei Magnífico
+Searcher Clade
+Ethan Clade
+Splat
+Isabella
+Miley Stewart
+Zack e Cody
+London Tipton
+Raven
+Rony Stoppable
+Shego
+Sofia, a Princesa
+Elena de Avalor
+Jake (Piratas da Terra do Nunca)
+Kion
+Jack Skellington
+Zero
+Oogie Boogie
+Prefeito (Jack)
+Lock, Shock e Barrel
+Juiz Doom
+Eddie Valiant
+Frankenweenie | sparky
+Victor Frankenstein
+Bert
+Princesa Leia
+Han Solo
+Chewbacca
+R2-D2
+C-3PO
+Viúva Negra
+Thanos
+Doutor Estranho
+Gavião Arqueiro
+Feiticeira Escarlate
+Visão
+Loki
+Nick Fury
+Capitã Marvel
+Homem-Formiga
+Vespa
+Senhor das Estrelas | star-lord
+Gamora
+Drax
+Mantis
+Nebulosa
+Ultron
+Venom
+Deadpool
+Wolverine
+Doutor Octopus
+Obi-Wan Kenobi
+Anakin Skywalker
+Padmé Amidala
+Mace Windu
+Qui-Gon Jinn
+Darth Maul
+Imperador Palpatine
+Kylo Ren
+Rey
+Finn
+Poe Dameron
+BB-8
+Boba Fett
+Jabba
+Mando | mandalorian
+Ahsoka Tano
+Lando Calrissian
+Ewok
+Stormtrooper
+Will Turner
+Elizabeth Swann
+Capitão Barbossa
+Davy Jones
+Indiana Jones
+Fozzie
+Animal (Muppets)
+Gonzo
