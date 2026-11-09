@@ -153,11 +153,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 136 |
 | 2 | Animações Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 148 |
-| 3 | Churrasco | Cite algo que tem num churrasco | 225 |
+| 3 | Churrasco | Cite algo que tem num churrasco | 482 |
 | 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 547 |
 | 5 | Formas geométricas | Cite uma forma geométrica | 164 |
-| 6 | Contos de fadas | Cite um personagem de conto de fadas | 247 |
-| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 207 |
+| 6 | Contos de fadas | Cite um personagem de conto de fadas | 385 |
+| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 453 |
 
 ## Dia 14 · ter 10/11/2026
 
