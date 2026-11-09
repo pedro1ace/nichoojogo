@@ -139,25 +139,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 693 |
-| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 890 |
+| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 694 |
+| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 891 |
 | 3 | Modelos de carro | Cite um modelo de carro | 2406 |
-| 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 350 |
-| 5 | Sabores de pizza | Cite um sabor de pizza | 297 |
-| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1195 |
-| 7 | Superpoderes | Cite um superpoder | 427 |
+| 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 353 |
+| 5 | Sabores de pizza | Cite um sabor de pizza | 300 |
+| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1198 |
+| 7 | Superpoderes | Cite um superpoder | 433 |
 
 ## Dia 13 · seg 09/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 136 |
-| 2 | Filmes de animação Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 160 |
-| 3 | Churrasco | Cite algo que tem num churrasco | 1146 |
-| 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 676 |
-| 5 | Formas geométricas | Cite uma forma geométrica | 413 |
-| 6 | Contos de fadas | Cite um personagem de conto de fadas | 1057 |
-| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1802 |
+| 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 183 |
+| 2 | Filmes de animação Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 190 |
+| 3 | Churrasco | Cite algo que tem num churrasco | 1164 |
+| 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 682 |
+| 5 | Formas geométricas | Cite uma forma geométrica | 416 |
+| 6 | Contos de fadas | Cite um personagem de conto de fadas | 1072 |
+| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1824 |
 
 ## Dia 14 · ter 10/11/2026
 
