@@ -1,11 +1,11 @@
 # titulo: Resgate dos bombeiros
 # pergunta: Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado)
 # formato: uma resposta por linha; apelidos separados por " | "
-Gato | gatinho | filhote de gato | gato na árvore | gato no telhado
-Cachorro | cão | cachorrinho | filhote de cachorro | cadela
+Gato | gatinho | filhote de gato | gato na árvore | gato no telhado | gata | bichano
+Cachorro | cão | cachorrinho | filhote de cachorro | cadela | doguinho | vira-lata | caramelo | cachorro caramelo
 Pássaro | ave | passarinho
 Raposa
-Cavalo | égua | potro | pônei
+Cavalo | égua | potro | pônei | cavalo no buraco | cavalo atolado
 Pombo | pomba
 Gaivota
 Cisne
@@ -22,16 +22,16 @@ Veado | cervo | corça
 Esquilo
 Coelho
 Hamster
-Porquinho-da-índia
+Porquinho-da-índia | preá
 Furão
-Cobra | serpente | jiboia | píton | sucuri | cascavel | jararaca
+Cobra | serpente | jiboia | píton | sucuri | cascavel | jararaca | coral | anaconda | python
 Lagarto | iguana | teiú | lagarto teiú
 Tartaruga | jabuti | cágado
 Peixe
-Vaca | boi | bezerro | touro | gado | vaca atolada
-Ovelha | carneiro | cordeiro
+Vaca | boi | bezerro | touro | gado | vaca atolada | novilha
+Ovelha | carneiro | cordeiro | ovelhinha
 Cabra | bode
-Porco | leitão
+Porco | leitão | porquinho
 Galinha | galo | pintinho
 Ouriço
 Rato
@@ -43,7 +43,7 @@ Abelha | enxame | enxame de abelhas | colmeia
 Vespa | marimbondo
 Capivara
 Jacaré
-Macaco | mico | sagui | mico-estrela
+Macaco | mico | sagui | mico-estrela | sagui-de-tufo-branco | soim
 Gambá | sariguê | saruê
 Tamanduá
 Tatu
@@ -138,3 +138,266 @@ Peixe-boi-marinho
 Lobo-marinho
 Leão-marinho
 Elefante-marinho
+# entraram por scripts/engordar.py (dados/fontes/engordar/bichos-resgatados-por-bombeiros.txt)
+Jararacuçu
+Surucucu
+Cobra-cipó
+Cobra-d'água
+Caninana
+Cobra-coral falsa | falsa-coral
+Gato persa
+Gato siamês
+Gato frajola
+Gato preto
+Gato laranja | gato amarelo
+Filhote de gato no motor | gato no motor do carro
+Cachorro vira-lata caramelo
+Pit bull | pitbull
+Pastor-alemão | pastor alemão
+Labrador
+Golden retriever
+Poodle
+Rottweiler
+Shih-tzu | shih tzu
+Yorkshire
+Dachshund | salsicha
+Husky siberiano | husky
+Border collie
+Beagle
+Buldogue | bulldog
+Pinscher
+Chihuahua
+Filhote de cachorro no bueiro
+Búfalo
+Jumento nordestino
+Pato-do-mato
+Marreco-irerê | irerê
+Galinha-d'angola | galinha d'angola | angolinha
+Codorna
+Peru doméstico
+Ganso-do-canadá
+Pomba-rola | rolinha
+Pombo-doméstico
+Andorinha
+Andorinhão
+Pardal
+Tico-tico
+Canário-da-terra
+Sanhaço
+Saíra
+Cardeal
+Curió
+Coleiro
+Trinca-ferro
+Azulão
+Pintassilgo
+Agapornis
+Papagaio-do-mangue
+Papagaio-galego
+Arara-canindé
+Ararajuba
+Jandaia
+Tiriba
+Tucano-toco
+Araçari
+Pica-pau
+Pica-pau-de-cabeça-amarela
+Gavião-asa-de-telha
+Gavião-real | harpia
+Falcão-peregrino
+Águia
+Coruja-orelhuda
+Corujinha-do-mato
+Mocho
+Bacurau
+Urutau
+Quero-quero
+Seriema
+Jaburu | tuiuiú
+Cegonha
+Flamingo
+Colhereiro
+Garça-moura
+Martim-pescador
+Mergulhão
+Pelicano
+Gaivota-maria-velha
+Trinta-réis
+Pinguim-imperador
+Petrel
+Cormorão
+Cisne-negro
+Pavão-indiano
+Faisão
+Avestruz-africano
+Emu
+Morcego-frugívoro
+Morcego-vampiro
+Mico-leão-dourado
+Macaco-aranha
+Bugio-ruivo
+Macaco-barrigudo
+Chimpanzé
+Gorila
+Orangotango
+Lêmure
+Preguiça-de-três-dedos
+Preguiça-de-dois-dedos
+Tamanduá-colete
+Tatu-bola
+Tatu-canastra
+Tatu-peba
+Gambá-de-orelha-preta
+Cuíca
+Ratão-do-banhado
+Ratazana
+Camundongo
+Chinchila
+Gerbil
+Mocó
+Capivara filhote
+Paca filhote
+Lebre
+Coelho doméstico
+Furão doméstico
+Furão-pequeno
+Irara
+Lontra-neotropical
+Ariranha filhote
+Guaxinim
+Quati-de-cauda-anelada
+Raposa-vermelha
+Graxaim
+Lobo
+Lobo-cinzento
+Coiote
+Chacal
+Gato-maracajá
+Gato-palheiro
+Onça-preta
+Leopardo
+Guepardo
+Lince
+Urso-pardo
+Urso-negro
+Urso-polar
+Urso-panda | panda
+Alce
+Rena
+Gamo
+Veado-mateiro
+Cervo-nobre
+Javali-europeu
+Cateto | caititu
+Queixada
+Anta filhote
+Rinoceronte
+Hipopótamo-pigmeu
+Zebra
+Camelo-bactriano
+Dromedário
+Alpaca
+Vicunha
+Iaque
+Bisão
+Antílope
+Gnu
+Canguru-cinzento
+Wallaby
+Coala filhote
+Vombate
+Equidna
+Ornitorrinco
+Diabo-da-tasmânia
+Esquilo-cinzento
+Esquilo-vermelho
+Serelepe | caxinguelê
+Marmota
+Castor
+Toupeira
+Musaranho
+Doninha
+Arminho
+Texugo-europeu
+Ouriço-europeu
+Foca-comum
+Foca-cinzenta
+Foca-de-weddell
+Morsa
+Leão-marinho-da-patagônia
+Lobo-marinho-sul-americano
+Elefante-marinho-do-sul
+Baleia-minke
+Baleia-azul
+Baleia-piloto
+Orca
+Cachalote
+Boto-cor-de-rosa
+Golfinho-nariz-de-garrafa
+Toninha
+Tubarão
+Tubarão-baleia
+Raia
+Arraia
+Peixe-palhaço
+Carpa
+Tilápia
+Pirarucu
+Tambaqui
+Bagre
+Peixe dourado | peixinho dourado | kinguio
+Cavalo-marinho
+Polvo
+Lula
+Água-viva
+Estrela-do-mar
+Caranguejo-uçá
+Guaiamum
+Lagosta
+Camarão
+Tartaruga-cabeçuda
+Tartaruga-de-pente
+Tartaruga-oliva
+Tigre-d'água
+Jabuti-piranga
+Jabuti-tinga
+Tartaruga-da-amazônia
+Tartaruga-de-orelha-vermelha
+Camaleão
+Dragão-barbudo
+Gecko | lagartixa-leopardo
+Lagarto-monitor | varano
+Dragão-de-komodo
+Crocodilo
+Jacaré-coroa
+Jacaré-tinga
+Rã-touro
+Sapo-boi
+Salamandra
+Axolote
+Cobra-cega
+Tarântula
+Viúva-negra
+Aranha-marrom
+Escorpião-marrom
+Escorpião-preto
+Abelha-africana | abelha africanizada
+Abelha jataí | jataí
+Abelha-europeia
+Vespa-asiática
+Mamangava
+Cupim
+Formiga
+Formiga-de-fogo
+Lagarta-de-fogo | taturana
+Mariposa
+Borboleta
+Gafanhoto
+Louva-a-deus
+Besouro
+Barata
+Mosquito
+Lesma
+Minhoca
+Caramujo-africano
+Sanguessuga
