@@ -127,37 +127,37 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Motivos para rir | Cite um motivo para rir | 1516 |
-| 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1459 |
-| 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1273 |
+| 1 | Motivos para rir | Cite um motivo para rir | 1518 |
+| 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1463 |
+| 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1274 |
 | 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1208 |
-| 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4756 |
-| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2105 |
-| 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1153 |
+| 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4757 |
+| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2107 |
+| 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1155 |
 
 ## Dia 12 · dom 08/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 683 |
-| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 875 |
-| 3 | Modelos de carro | Cite um modelo de carro | 2393 |
-| 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 323 |
-| 5 | Sabores de pizza | Cite um sabor de pizza | 289 |
-| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1183 |
-| 7 | Superpoderes | Cite um superpoder | 425 |
+| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 693 |
+| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 890 |
+| 3 | Modelos de carro | Cite um modelo de carro | 2406 |
+| 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 350 |
+| 5 | Sabores de pizza | Cite um sabor de pizza | 297 |
+| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1195 |
+| 7 | Superpoderes | Cite um superpoder | 427 |
 
 ## Dia 13 · seg 09/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 136 |
-| 2 | Animações Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 148 |
-| 3 | Churrasco | Cite algo que tem num churrasco | 225 |
-| 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 547 |
-| 5 | Formas geométricas | Cite uma forma geométrica | 164 |
-| 6 | Contos de fadas | Cite um personagem de conto de fadas | 247 |
-| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 207 |
+| 2 | Animações Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 160 |
+| 3 | Churrasco | Cite algo que tem num churrasco | 1146 |
+| 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 676 |
+| 5 | Formas geométricas | Cite uma forma geométrica | 412 |
+| 6 | Contos de fadas | Cite um personagem de conto de fadas | 1057 |
+| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1802 |
 
 ## Dia 14 · ter 10/11/2026
 
