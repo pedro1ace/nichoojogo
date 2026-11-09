@@ -152,10 +152,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 136 |
-| 2 | Animações Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 160 |
+| 2 | Filmes de animação Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 160 |
 | 3 | Churrasco | Cite algo que tem num churrasco | 1146 |
 | 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 676 |
-| 5 | Formas geométricas | Cite uma forma geométrica | 412 |
+| 5 | Formas geométricas | Cite uma forma geométrica | 413 |
 | 6 | Contos de fadas | Cite um personagem de conto de fadas | 1057 |
 | 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1802 |
 
