@@ -163,7 +163,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Meios de transporte | Cite um meio de transporte | 612 |
+| 1 | Meios de transporte | Cite um meio de transporte | 613 |
 | 2 | Danças | Cite uma dança | 683 |
 | 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 930 |
 | 4 | Frutos do mar | Cite um fruto do mar | 536 |
