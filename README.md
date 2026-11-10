@@ -25,8 +25,14 @@ Como funciona hoje no protótipo:
   a resposta secreta de cada pergunta, que vale o dobro.
 - A tela inteira treme mais quanto mais rara a resposta. A palavra aparece numa caixinha da cor da faixa e cai junto com a câmera; o foguete vai ao lado, acompanhando com um balanço suave.
 - Autocorreção: se a palavra está quase certa (inclusive contra os apelidos), o jogo sugere e preenche o campo,
-  e você confirma com LANÇAR. Ele nunca envia sozinho.
-- Outra forma da mesma resposta vale direto, sem perguntar: plural ("Leões"), "de/e/com" a mais ou a menos
+  e você confirma com LANÇAR. Ele nunca envia sozinho. Pega também o que soa igual ("xinelo", "kuzco", "krill")
+  e a 1ª letra que sumiu ("scargot"). Para uma resposta de Espaço Profundo, só corrige o erro mais óbvio
+  (nada de "careta" virar Capeta).
+- Quando o juiz (a IA) diz que o que foi digitado é uma resposta da lista, ela só vale com os pontos cheios
+  se o jogador escreveu de fato aquilo; um pedaço dela ("estrela" para Estrela-do-mar) vale no máximo os
+  pontos do juiz, e um sinônimo só vale se a resposta da lista for comum. Regra em `jogo/jogo.js`
+  (`achadaDoJuiz`) e `scripts/parecenca.py`, que o plantão usa para não gravar esses casos como apelido.
+- Outra forma da mesma resposta vale direto, sem perguntar: plural ("Leões"), "de/e/com/na/em" a mais ou a menos
   ("arco flecha") e a palavra do tema na frente ("constelação de Órion", "língua tupi"). Regra igual em
   `jogo/jogo.js` (`chavesSoltas`) e `scripts/casar.py` (`chaves_soltas`).
 - Resposta que a lista não tem: o jogo avisa que ela foi anotada para revisão (e repete isso no tempo esgotado).
