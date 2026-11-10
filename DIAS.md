@@ -167,8 +167,8 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Danças | Cite uma dança | 462 |
 | 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 527 |
 | 4 | Frutos do mar | Cite um fruto do mar | 536 |
-| 5 | Natal | Cite algo do Natal | 432 |
-| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 455 |
+| 5 | Natal | Cite algo do Natal | 641 |
+| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 693 |
 | 7 | Sabores de bolo | Cite um sabor de bolo | 2847 |
 
 ## Dia 15 · qua 11/11/2026
