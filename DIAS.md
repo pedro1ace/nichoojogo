@@ -175,7 +175,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Personagens da Nintendo | Cite um personagem da Nintendo (Pokémon não contam) | 506 |
+| 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1648 |
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1981 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 664 |
 | 4 | Brinquedos | Cite um brinquedo | 590 |
@@ -321,3 +321,4 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 - Molhos
 - Coisas que fazem barulho
 - Personagens de videogame
+- Personagens da Nintendo
