@@ -59,7 +59,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Países acima da linha do Equador | Cite um país que tem território ao norte da linha do Equador | 186 |
 | 3 | Turma da Mônica | Cite um personagem dos quadrinhos do Mauricio de Sousa | 129 |
 | 4 | Filmes | Cite um filme | 4947 |
-| 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1689 |
+| 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1688 |
 | 6 | Frutas | Cite uma fruta | 1073 |
 | 7 | Peixes | Cite um peixe | 1007 |
 
@@ -81,22 +81,22 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Ritmos e estilos musicais | Cite um ritmo ou estilo musical | 1192 |
 | 2 | Gírias brasileiras | Cite uma gíria brasileira | 1061 |
-| 3 | Coisas que brilham no céu | Cite algo que brilha no céu | 1021 |
+| 3 | Coisas que brilham no céu | Cite algo que brilha no céu | 1020 |
 | 4 | Palavras terminadas em -io | Cite uma palavra que termina em "-io" | 4158 |
 | 5 | Animais do Brasil | Cite um animal da fauna brasileira | 3515 |
 | 6 | Esportes olímpicos | Cite um esporte disputado nas Olimpíadas | 133 |
-| 7 | Novelas brasileiras | Cite uma novela brasileira | 678 |
+| 7 | Novelas brasileiras | Cite uma novela brasileira | 676 |
 
 ## Dia 8 · qua 04/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1185 |
+| 1 | Folclore e mitologia | Cite uma criatura do folclore ou da mitologia (de qualquer lugar do mundo) | 1183 |
 | 2 | Constelações | Cite uma das 88 constelações oficiais | 102 |
 | 3 | Raças de cachorro | Cite uma raça de cachorro | 1052 |
-| 4 | Capitais do mundo | Cite a capital de um país | 227 |
+| 4 | Capitais do mundo | Cite a capital de um país | 226 |
 | 5 | Times de futebol do Brasil | Cite um time de futebol brasileiro | 1214 |
-| 6 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2435 |
+| 6 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2434 |
 | 7 | Bebidas com gás | Cite uma bebida com gás | 1328 |
 
 ## Dia 9 · qui 05/11/2026
@@ -104,12 +104,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1147 |
-| 2 | Cores | Cite uma cor (ou um tom de cor) | 1062 |
-| 3 | Países | Cite um país | 256 |
-| 4 | Material escolar | Cite um item de material escolar | 1045 |
+| 2 | Cores | Cite uma cor (ou um tom de cor) | 1061 |
+| 3 | Países | Cite um país | 255 |
+| 4 | Material escolar | Cite um item de material escolar | 1044 |
 | 5 | Coisas redondas | Cite algo que é redondo | 1307 |
 | 6 | Coisas com casca | Cite algo que tem casca | 1079 |
-| 7 | Marcas de carro | Cite uma marca de carro | 3800 |
+| 7 | Marcas de carro | Cite uma marca de carro | 3799 |
 
 ## Dia 10 · sex 06/11/2026
 
@@ -132,19 +132,19 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1274 |
 | 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1208 |
 | 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4757 |
-| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2107 |
+| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2102 |
 | 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1155 |
 
 ## Dia 12 · dom 08/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 694 |
-| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 891 |
+| 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 693 |
+| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 885 |
 | 3 | Modelos de carro | Cite um modelo de carro | 2406 |
 | 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 353 |
 | 5 | Sabores de pizza | Cite um sabor de pizza | 300 |
-| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1198 |
+| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1191 |
 | 7 | Superpoderes | Cite um superpoder | 433 |
 
 ## Dia 13 · seg 09/11/2026
@@ -152,12 +152,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 183 |
-| 2 | Filmes de animação Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 190 |
+| 2 | Filmes de animação Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 187 |
 | 3 | Churrasco | Cite algo que tem num churrasco | 1164 |
 | 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 682 |
 | 5 | Formas geométricas | Cite uma forma geométrica | 416 |
 | 6 | Contos de fadas | Cite um personagem de conto de fadas | 1072 |
-| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1824 |
+| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1823 |
 
 ## Dia 14 · ter 10/11/2026
 
@@ -166,7 +166,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Meios de transporte | Cite um meio de transporte | 613 |
 | 2 | Danças | Cite uma dança | 683 |
 | 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 1570 |
-| 4 | Frutos do mar | Cite um fruto do mar | 536 |
+| 4 | Frutos do mar | Cite um fruto do mar | 532 |
 | 5 | Natal | Cite algo do Natal | 641 |
 | 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 693 |
 | 7 | Sabores de bolo | Cite um sabor de bolo | 2871 |
@@ -176,7 +176,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1648 |
-| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1981 |
+| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1976 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 664 |
 | 4 | Brinquedos | Cite um brinquedo | 590 |
 | 5 | Doenças | Cite uma doença | 3980 |
@@ -193,13 +193,13 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Estádios de futebol | Cite um estádio de futebol | 2452 |
 | 5 | Árvores | Cite uma árvore | 1386 |
 | 6 | Nomes masculinos | Cite um nome masculino | 2739 |
-| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 570 |
+| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 566 |
 
 ## Dia 17 · sex 13/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1888 |
+| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1887 |
 | 2 | Comida de rua | Cite uma comida de rua ou de lanchonete | 359 |
 | 3 | Redes sociais e mensageiros | Cite uma rede social ou aplicativo de mensagens | 126 |
 | 4 | Motivos para chorar | Cite um motivo para chorar | 427 |
@@ -237,7 +237,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Partes do carro | Cite uma peça ou parte do carro | 307 |
 | 2 | Supermercado | Cite algo que se compra no supermercado | 8246 |
-| 3 | Animais que botam ovo | Cite um animal que bota ovo | 9947 |
+| 3 | Animais que botam ovo | Cite um animal que bota ovo | 9946 |
 | 4 | Palavras terminadas em -ão | Cite uma palavra que termina em "-ão" | 6260 |
 | 5 | Vencedores do Oscar de atuação | Cite um ator ou atriz que já ganhou o Oscar de atuação | 649 |
 | 6 | Coisas que derretem | Cite algo que derrete | 2036 |
@@ -252,7 +252,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4687 |
 | 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 491 |
 | 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 544 |
-| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6866 |
+| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6853 |
 | 7 | Pratos de outros países | Cite um prato típico de outro país | 215 |
 
 ## Dia 22 · qua 18/11/2026
