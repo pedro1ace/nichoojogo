@@ -178,10 +178,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Personagens de videogame | Cite um personagem de videogame | 1059 |
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1949 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 664 |
-| 4 | Brinquedos | Cite um brinquedo | 532 |
+| 4 | Brinquedos | Cite um brinquedo | 590 |
 | 5 | Doenças | Cite uma doença | 3947 |
 | 6 | Praias brasileiras | Cite uma praia brasileira | 690 |
-| 7 | Coisas geladas | Cite algo gelado | 457 |
+| 7 | Coisas geladas | Cite algo gelado | 754 |
 
 ## Dia 16 · qui 12/11/2026
 
