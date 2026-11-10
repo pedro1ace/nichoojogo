@@ -151,25 +151,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 183 |
-| 2 | Filmes de animação Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 187 |
-| 3 | Churrasco | Cite algo que tem num churrasco | 1164 |
+| 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 189 |
+| 2 | Filmes de animação Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 192 |
+| 3 | Churrasco | Cite algo que tem num churrasco | 1165 |
 | 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 682 |
 | 5 | Formas geométricas | Cite uma forma geométrica | 416 |
 | 6 | Contos de fadas | Cite um personagem de conto de fadas | 1072 |
-| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1823 |
+| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1825 |
 
 ## Dia 14 · ter 10/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Meios de transporte | Cite um meio de transporte | 613 |
-| 2 | Danças | Cite uma dança | 683 |
-| 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 1570 |
-| 4 | Frutos do mar | Cite um fruto do mar | 532 |
-| 5 | Natal | Cite algo do Natal | 641 |
-| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 693 |
-| 7 | Sabores de bolo | Cite um sabor de bolo | 2871 |
+| 1 | Meios de transporte | Cite um meio de transporte | 622 |
+| 2 | Danças | Cite uma dança | 694 |
+| 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 1581 |
+| 4 | Frutos do mar | Cite um fruto do mar | 541 |
+| 5 | Natal | Cite algo do Natal | 661 |
+| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 708 |
+| 7 | Sabores de bolo | Cite um sabor de bolo | 2884 |
 
 ## Dia 15 · qua 11/11/2026
 
