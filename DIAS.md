@@ -175,7 +175,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Personagens de videogame | Cite um personagem de videogame | 1059 |
+| 1 | Personagens da Nintendo | Cite um personagem da Nintendo | 540 |
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1981 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 664 |
 | 4 | Brinquedos | Cite um brinquedo | 590 |
@@ -320,3 +320,4 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 - Coisas vermelhas
 - Molhos
 - Coisas que fazem barulho
+- Personagens de videogame
