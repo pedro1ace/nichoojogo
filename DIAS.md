@@ -163,12 +163,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Meios de transporte | Cite um meio de transporte | 354 |
-| 2 | Danças | Cite uma dança | 337 |
-| 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 411 |
-| 4 | Frutos do mar | Cite um fruto do mar | 199 |
-| 5 | Natal | Cite algo do Natal | 341 |
-| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 342 |
+| 1 | Meios de transporte | Cite um meio de transporte | 489 |
+| 2 | Danças | Cite uma dança | 462 |
+| 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 527 |
+| 4 | Frutos do mar | Cite um fruto do mar | 347 |
+| 5 | Natal | Cite algo do Natal | 432 |
+| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 455 |
 | 7 | Sabores de bolo | Cite um sabor de bolo | 2847 |
 
 ## Dia 15 · qua 11/11/2026
