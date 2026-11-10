@@ -179,7 +179,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1981 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 664 |
 | 4 | Brinquedos | Cite um brinquedo | 590 |
-| 5 | Doenças | Cite uma doença | 3947 |
+| 5 | Doenças | Cite uma doença | 3980 |
 | 6 | Praias brasileiras | Cite uma praia brasileira | 836 |
 | 7 | Coisas geladas | Cite algo gelado | 754 |
 
