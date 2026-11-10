@@ -5298,7 +5298,7 @@ function prepararCategoria(cat) {
 // página só pede o dia de hoje a /api/dia (~100 KB) e só baixa o pacote se a API falhar
 // (sem internet, aberto do computador, ?aleatorio ou dia que ainda não está no banco).
 // No jogar-completo.html (o arquivo único para abrir sem internet) o pacote já vem dentro.
-const VERSAO_DADOS = "97a50b9389"; // o montar_jogo.py troca pelo resumo do dados.js no jogar.html
+const VERSAO_DADOS = "c647d5a8f8"; // o montar_jogo.py troca pelo resumo do dados.js no jogar.html
 let promessaDadosLocais = null;
 function carregarDadosLocais() {
   if (window.NICHO_DADOS) return Promise.resolve(window.NICHO_DADOS);
