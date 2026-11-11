@@ -59,9 +59,12 @@ def compactar(texto: str) -> str:
 
 
 # ---------- formas da mesma resposta (igual a jogo/jogo.js: chavesSoltas) ----------
-# Plural, "de/do/e/com" no meio e a palavra do tema na frente não mudam a resposta.
+# Plural, "de/do/e/com/na/em" no meio e a palavra do tema na frente não mudam a resposta.
 # O jogo aceita direto (sem perguntar) quando a chave solta serve para uma resposta só.
-CONECTORES = {"de", "do", "da", "dos", "das", "d", "e", "com", "ao", "aos", "a", "o", "os", "as"}
+CONECTORES = {
+    "de", "do", "da", "dos", "das", "d", "e", "com", "ao", "aos", "a", "o", "os", "as",
+    "em", "no", "na", "nos", "nas", "num", "numa", "um", "uma", "pra", "pro", "para", "por", "pelo", "pela",
+}
 # Categorias em que a forma conta (5 letras do Termo): aí só vale a grafia exata.
 SEM_FORMAS = {"palavras-do-termo"}
 ENFEITES_SOLTOS = {

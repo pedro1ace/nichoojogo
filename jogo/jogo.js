@@ -200,9 +200,12 @@ function tolerancia(tamanho) {
 
 // ---------- formas da mesma resposta ----------
 // Mesma regra de scripts/casar.py (chave_solta). Se mudar aqui, mude lá.
-// Plural, "de/do/e/com" no meio e a palavra do tema na frente não mudam a resposta:
+// Plural, "de/do/e/com/na/em" no meio e a palavra do tema na frente não mudam a resposta:
 // "Leões" = Leão, "arco flecha" = "Arco e flecha", "constelação de Órion" = Órion.
-const CONECTORES = new Set(["de", "do", "da", "dos", "das", "d", "e", "com", "ao", "aos", "a", "o", "os", "as"]);
+const CONECTORES = new Set([
+  "de", "do", "da", "dos", "das", "d", "e", "com", "ao", "aos", "a", "o", "os", "as",
+  "em", "no", "na", "nos", "nas", "num", "numa", "um", "uma", "pra", "pro", "para", "por", "pelo", "pela",
+]);
 // Categorias em que a forma conta (5 letras do Termo): aí só vale a grafia exata.
 const SEM_FORMAS = new Set(["palavras-do-termo"]);
 
@@ -275,65 +278,219 @@ function chavesSoltas(texto, enfeites) {
   return chaves;
 }
 
+// Como a palavra soa: grafias que se leem igual viram a mesma chave ("xinelo" = "chinelo",
+// "kuzco" = "cuzco", "krill" = "kril", "nosses" = "nozes", "oracio" = "Horácio", "mikey" = "Mickey").
+function som(t) {
+  return t
+    .replace(/^h/, "")
+    .replace(/ph/g, "f")
+    .replace(/[cs]h/g, "x")
+    .replace(/lh/g, "li")
+    .replace(/nh/g, "ni")
+    .replace(/qu(?=[ei])/g, "k")
+    .replace(/gu(?=[ei])/g, "g")
+    .replace(/c(?=[ei])/g, "s")
+    .replace(/g(?=[ei])/g, "j")
+    .replace(/[kq]/g, "c")
+    .replace(/y/g, "i")
+    .replace(/w/g, "u")
+    .replace(/z/g, "s")
+    .replace(/m$/, "n")
+    .replace(/(.)\1+/g, "$1");
+}
+
+// Teclas vizinhas no teclado, para a 1ª letra errada por escorregar o dedo ("purico" -> "ouriço").
+const VIZINHAS = (() => {
+  const linhas = ["qwertyuiop", "asdfghjkl", "zxcvbnm"];
+  const pos = {};
+  linhas.forEach((l, y) => [...l].forEach((c, x) => (pos[c] = [x + y * 0.5, y])));
+  return (a, b) => {
+    const p = pos[a], q = pos[b];
+    return !!p && !!q && a !== b && Math.abs(p[1] - q[1]) <= 1 && Math.abs(p[0] - q[0]) <= 1;
+  };
+})();
+
 // Quem erra a digitação quase nunca erra a 1ª letra. Se a 1ª letra muda, é outra
-// palavra ("Pateta" não é "Cametá"). Só aceita a troca das duas primeiras ("rbasil").
+// palavra ("Pateta" não é "Cametá", "ninho" não é "Vinho"). Passa só quando:
+// as duas primeiras trocaram de lugar ("rbasil"), soam igual ("xinelo", "kuzco"),
+// ou, em palavra de 6 letras ou mais, a 1ª letra sumiu ou sobrou ("scargot", "rvore", "overboard").
+// A 1ª letra trocada por uma vizinha do teclado ("purico", "farrer") é vista em buscar(), que
+// só deixa quando esse é o único erro.
 function mesmoComeco(a, b) {
-  return a[0] === b[0] || (a[0] === b[1] && a[1] === b[0]);
+  if (a[0] === b[0] || (a[0] === b[1] && a[1] === b[0])) return true;
+  const sa = som(a), sb = som(b);
+  if (sa[0] === sb[0]) return true;
+  if (a.length >= 6 || b.length >= 6) {
+    if (b.slice(1, 3) === a.slice(0, 2) || a.slice(1, 3) === b.slice(0, 2)) return true;
+  }
+  return false;
+}
+
+// Erros entre duas chaves, contando os de som pela metade: "xinelo" e "chinelo" ficam a 0,5
+// (é a mesma palavra, mas não é a grafia exata, então o jogo pergunta antes).
+// "merlim" = "Merlin" também: o "m" final soa como "n".
+function erros(a, b, teto) {
+  const crua = distancia(a, b, teto);
+  if (crua <= 1) return crua;
+  const pelaVoz = distancia(som(a), som(b), teto) + 0.5;
+  return Math.min(crua, pelaVoz);
+}
+function errosComSom(a, b, sa, sb, teto) {
+  const crua = distancia(a, b, teto);
+  if (crua === 0) return 0;
+  return Math.min(crua, (sa === sb ? 0 : distancia(sa, sb, teto)) + 0.5);
+}
+
+// Uma palavra digitada bate com uma da lista? (mesma raiz, ou erro de digitação do tamanho dela)
+// "folga" deixa uma palavra de 5 letras ou mais ter 1 erro a mais.
+// (só entre palavras do mesmo tamanho: "rpero" = "preto", mas "russa" não é "rua").
+function palavraBate(p, q, folga = 0) {
+  if (p === q || radical(p) === radical(q)) return true;
+  // 1ª letra trocada pela vizinha do teclado, e só esse erro ("barco a notor")
+  // ou a 1ª letra da palavra sumiu ("caiaque uplo")
+  if (!mesmoComeco(p, q)) return p.length >= 4 && ((VIZINHAS(p[0], q[0]) && p.slice(1) === q.slice(1)) || p === q.slice(1));
+  const extra = p.length >= 5 && p.length === q.length ? folga : 0;
+  return erros(p, q, 3) <= Math.max(1, tolerancia(p.length)) + extra;
 }
 
 // Em respostas de várias palavras, o erro tem que estar espalhado como erro de digitação,
 // e não concentrado numa palavra que virou outra ("Água Santa" não é "Água benta",
-// "Mousse de limão" não é "Mousse de milho"). Cada palavra aceita no máximo os erros do
-// seu próprio tamanho (pelo menos 1). Se o número de palavras mudou (espaço esquecido),
-// vale só a regra geral.
+// "Mousse de limão" não é "Mousse de milho"). Cada palavra precisa começar igual e aceita
+// os erros do seu próprio tamanho (pelo menos 1); uma só pode ter 1 erro a mais ("gato rpero",
+// "chileno virado"). "de", "na", "em"... não contam. Se o número de palavras mudou (espaço
+// esquecido), vale só a regra geral.
 function palavrasBatem(texto, nome) {
-  const separar = (t) => normalizar(t).replace(/^(o|a|os|as|um|uma) /, "").split(" ");
-  const a = separar(texto), b = separar(nome);
+  if (normalizar(texto).split(" ").length !== normalizar(nome).split(" ").length) return true;
+  const a = palavrasSoltas(texto), b = palavrasSoltas(nome);
   if (a.length < 2 || a.length !== b.length) return true;
-  return a.every((p, i) => distancia(p, b[i]) <= Math.max(1, tolerancia(p.length)));
+  let folgas = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (palavraBate(a[i], b[i])) continue;
+    if (folgas++ || !palavraBate(a[i], b[i], 1)) return false;
+  }
+  return true;
+}
+
+// Correção para uma resposta de Espaço Profundo (60 pontos ou mais) só quando o erro é o mais
+// óbvio: mesma pronúncia ("oracio" -> Horácio), ou uma letra a mais, a menos ou trocada de lugar,
+// sem mexer na 1ª. Uma letra trocada por outra só vale se as duas são vizinhas no teclado
+// ("presenre") ou se a palavra é longa (7 letras ou mais: "comvrcial"). Antes, "careta" virava
+// Capeta (89 pontos) e "gelo" virava Galo (80): o corretor nunca pode virar um atalho para a
+// resposta mais nichada. "palavras" são as palavras de "a", para achar onde está a letra trocada.
+const PONTOS_NICHADA = 60;
+function erroSeguro(d, a, b, palavras) {
+  if (d <= 0.5) return true;
+  if (d !== 1 || a[0] !== b[0]) return false;
+  if (a.length !== b.length) return true;
+  const i = [...a].findIndex((c, k) => c !== b[k]);
+  if (i < 0 || a[i + 1] === b[i]) return true; // letras vizinhas trocadas de lugar
+  if (VIZINHAS(a[i], b[i])) return true;
+  let fim = 0;
+  for (const p of palavras) {
+    fim += p.length;
+    if (i < fim) return p.length >= 7;
+  }
+  return false;
 }
 
 // Procura a resposta. Devolve { resposta, nome, exato } ou null.
 // "nome" é a grafia que casou (pode ser um apelido), para mostrar ao jogador.
+// Compara a grafia, o som ("xinelo" = "chinelo") e a forma solta (sem plural e sem "de/na/em").
 // A correção só acontece quando é óbvia: se duas respostas diferentes ficam igualmente
 // perto do que foi digitado ("galso": Galo ou Ganso?), o jogo não escolhe por ele.
 // Se a mais perto precisou de 2 erros ou mais, também não corrige quando outra resposta
-// diferente está só 1 erro mais longe: a dúvida é grande demais para chutar.
-function buscar(cat, texto) {
+// diferente está até 1 erro mais longe: a dúvida é grande demais para chutar.
+// soExata: só a grafia da lista ou outra forma da mesma resposta, sem correção.
+function buscar(cat, texto, soExata = false) {
   const alvo = compactar(texto);
   if (!alvo) return null;
   if (cat.mapa.has(alvo)) return { ...cat.mapa.get(alvo), exato: true };
   // mesma resposta com outra forma (plural, "de", palavra do tema): vale direto, sem perguntar
+  const soltasDoTexto = chavesSoltas(texto, ENFEITES[cat.id]);
   if (cat.soltas) {
-    for (const chave of chavesSoltas(texto, ENFEITES[cat.id])) {
+    for (const chave of soltasDoTexto) {
       const item = cat.soltas.get(chave);
       if (item) return { ...item, exato: true };
     }
   }
-  const limite = tolerancia(alvo.length);
-  if (!limite) return null;
+  if (soExata || !cat.formas) return null;
+  // até 3 letras, só quando soa igual ("cid" -> "Sid")
+  const limite = Math.max(0.5, tolerancia(alvo.length));
+  const somAlvo = som(alvo);
+  const palavrasDoAlvo = normalizar(texto).replace(/^(o|a|os|as|um|uma) /, "").split(" ");
+  // a forma solta (sem "de/na/em" e sem plural) só entra na correção quando há mais de uma palavra:
+  // numa palavra só, tirar o plural encurta demais ("menta" ficava a 1 erro de "Mentos")
+  const variasPalavras = normalizar(texto).split(" ").length >= 2;
+  const soltaAlvo = soltasDoTexto[0];
+  const somSolta = som(soltaAlvo);
   let melhor = null;
   let menor = Infinity;
+  let par = null; // as duas chaves que deram a menor distância
   let segunda = Infinity; // distância da melhor resposta *diferente* da escolhida
-  for (const [chave, item] of cat.mapa) {
-    if (Math.abs(chave.length - alvo.length) > (alvo.length <= 4 ? 0 : limite)) continue;
-    if (!mesmoComeco(alvo, chave)) continue;
-    const d = distancia(alvo, chave, limite + 1);
+  for (const f of cat.formas) {
+    let d = Infinity;
+    const perto = Math.abs(f.chave.length - alvo.length) <= (alvo.length <= 4 ? 0 : limite);
+    if (perto && mesmoComeco(alvo, f.chave)) d = errosComSom(alvo, f.chave, somAlvo, f.som, limite + 1);
+    else if (f.som === somAlvo) d = 0.5;
+    else if (alvo.length >= 6 && f.chave.length === alvo.length && VIZINHAS(alvo[0], f.chave[0]) && alvo.slice(1) === f.chave.slice(1)) d = 1;
+    let qual = [alvo, f.chave, palavrasDoAlvo];
+    if (cat.soltas && variasPalavras && d > 0.5 && Math.abs(f.solta.length - soltaAlvo.length) <= limite && mesmoComeco(soltaAlvo, f.solta)) {
+      const ds = errosComSom(soltaAlvo, f.solta, somSolta, f.somSolta, limite + 1);
+      if (ds < d) [d, qual] = [ds, [soltaAlvo, f.solta, palavrasSoltas(texto).map(radical)]];
+    }
     if (d > limite + 1) continue;
+    const item = f.item;
     if (d < menor) {
       if (melhor && melhor.resposta !== item.resposta) segunda = menor;
       menor = d;
       melhor = item;
+      par = qual;
     } else if (item.resposta !== melhor.resposta && d < segunda) {
       segunda = d;
     }
   }
   if (menor > limite) return null;
   if (segunda === menor) return null; // empate entre respostas diferentes
-  if (menor >= 2 && segunda === menor + 1) return null;
+  if (menor >= 2 && segunda <= menor + 1) return null;
+  if (melhor.resposta.pontos >= PONTOS_NICHADA && !erroSeguro(menor, ...par)) return null;
   if (!palavrasBatem(texto, melhor.nome)) return null;
   return { ...melhor, exato: false };
 }
+
+// ---------- o juiz juntou a resposta com uma da lista ----------
+// O juiz (functions/api/juiz.js) às vezes diz que o que foi digitado é uma resposta que a lista já
+// tem. Só vale a resposta da lista, com os pontos dela, quando o jogador escreveu de fato aquilo
+// (com outras palavras em volta, ou um erro que o corretor não pegou). Senão o jogador digitava
+// algo vago ou diferente e ganhava os pontos de uma resposta nichada ("gaúcha" virava "Chula
+// gaúcha", 86 pontos; "Megamente" virava "Megara"; "chinelo de ponta-cabeça" virava "Ferradura de
+// ponta-cabeça"). Devolve:
+//   "inteira": o jogador disse a resposta toda ("deixar o chinelo virado" = "Chinelo virado");
+//   "parte":   disse só um pedaço dela ("estrela" = "Estrela-do-mar") ou quase toda, começando
+//              igual ("passar embaixo da escada"): vale, mas com no máximo os pontos do juiz;
+//   null:      as palavras não batem: é outra coisa ou um sinônimo.
+function comoBate(texto, nomes, enfeites) {
+  const a0 = palavrasSoltas(texto);
+  const a = tirarDaFrente(a0, enfeites) || a0;
+  let melhor = null;
+  for (const nome of nomes) {
+    const b = palavrasSoltas(nome);
+    const usadas = new Set();
+    let m = 0;
+    for (const p of a) {
+      const k = b.findIndex((q, i) => !usadas.has(i) && palavraBate(p, q));
+      if (k >= 0) { usadas.add(k); m++; }
+    }
+    const cobreNome = usadas.size === b.length;
+    const comecoIgual = a.length && b.length && palavraBate(a[0], b[0]);
+    if (cobreNome && (comecoIgual || m >= 2 || m >= a.length - 1)) return "inteira";
+    if (m === a.length || (m >= 2 && m >= a.length - 1 && m >= b.length - 1 && comecoIgual)) melhor = "parte";
+  }
+  return melhor;
+}
+
+// Sinônimo que o juiz juntou com uma resposta comum (até o topo do Letrado) vale como ela:
+// "tênis de rodinha" = Patins. Com uma resposta mais rara, não: aí é pedir a revisão.
+const TETO_SINONIMO = 34;
 
 // ---------- dia, sorteio e progresso ----------
 
@@ -691,7 +848,13 @@ function prepararCategoria(cat) {
       if (sem && sem.join("").length >= 4) guardar(sem.map(radical).join(""), item);
     }
   }
-  return { ...cat, mapa, soltas: SEM_FORMAS.has(cat.id) ? null : soltas };
+  // para a correção: cada grafia (nome e apelidos) com o som e a forma solta dela
+  const formas = [];
+  for (const [chave, item] of mapa) {
+    const solta = chavesSoltas(item.nome)[0];
+    formas.push({ chave, som: som(chave), solta, somSolta: som(solta), item });
+  }
+  return { ...cat, mapa, formas, soltas: SEM_FORMAS.has(cat.id) ? null : soltas };
 }
 
 // O pacote com todas as perguntas de todos os dias (jogo/dados.js, ~9 MB) não vai mais dentro da
@@ -1159,7 +1322,8 @@ function palpitar(evento) {
 // "frase" troca a frase da faixa no cartão do resultado.
 function pousar(cat, achada, frase) {
   pararRelogio();
-  const supernova = achada.resposta === cat.supernova;
+  // a resposta aceita só por um pedaço (achadaDoJuiz) nunca é a singularidade
+  const supernova = !achada.parcial && achada.resposta === cat.supernova;
   const pontos = supernova ? achada.pontos * 2 : achada.pontos;
   const espertalhao = !supernova && !!achada.espertalhao;
   const percentil = percentilDe(cat, achada);
@@ -1240,19 +1404,44 @@ async function consultarJuiz(cat, texto) {
   if (estado.rodada !== rodada) return;
 
   if (resposta.veredito === "aceita") {
-    const nome = resposta.nome || texto;
-    // o nome no padrão pode ser uma resposta que a lista já tem: aí vale ela, com os pontos dela.
-    // Vale também quando ele é só a lista escrita errado ("Pegout" é a Peugeot): assim o jogador
-    // vê a grafia certa, e não o erro de digitação com a primeira letra maiúscula.
-    const naLista = buscar(cat, nome) || buscar(cat, texto);
-    const achada = naLista
-      ? naLista.resposta
-      : { resposta: nome[0].toUpperCase() + nome.slice(1), apelidos: [], pontos: pontosDoJuiz(resposta.pontos) };
-    pousar(cat, achada);
-    return;
+    const achada = achadaDoJuiz(cat, texto, resposta);
+    if (achada) {
+      pousar(cat, achada);
+      return;
+    }
   }
   rodarRelogio(restaMs);
   recusar(cat, texto, resposta.veredito);
+}
+
+// O que vale quando o juiz aprova. O nome no padrão pode ser uma resposta que a lista já tem:
+// - o jogador escreveu de fato essa resposta (só com um erro ou palavras a mais): vale ela, com os
+//   pontos dela. Assim "Pegout" aparece como Peugeot, e não com o erro de digitação;
+// - escreveu só um pedaço dela ("estrela" = Estrela-do-mar): vale, mas com no máximo os pontos do
+//   juiz (que nunca passam do Raro), e nunca como singularidade ou espertalhão;
+// - escreveu outra coisa, que o juiz achou sinônimo: vale como ela só se ela for comum
+//   (TETO_SINONIMO), também com no máximo os pontos do juiz. Se ela for rara, é recusada e anotada
+//   para a revisão: "Megamente" não vira Megara, "gaúcha" não vira os 86 pontos de Chula gaúcha.
+// Quando o nome do juiz é novo (a lista não tem), vale ele, se parece com o que foi digitado;
+// se não parece, vale o que o jogador escreveu.
+// Devolve a resposta para pousar, ou null para recusar.
+function achadaDoJuiz(cat, texto, resposta) {
+  const nome = resposta.nome || texto;
+  const pontosIa = pontosDoJuiz(resposta.pontos);
+  const naLista = buscar(cat, nome, true);
+  if (naLista) {
+    const r = naLista.resposta;
+    const como = comoBate(texto, [r.resposta, ...(r.apelidos || [])], ENFEITES[cat.id]);
+    if (como === "inteira") return r;
+    if (como === "parte" || r.pontos <= TETO_SINONIMO) {
+      const pontos = Math.min(r.pontos, pontosIa);
+      return { resposta: r.resposta, apelidos: [], pontos, parcial: true, frase: r.frase };
+    }
+    return null;
+  }
+  const parecido = comoBate(texto, [nome]) || distancia(compactar(texto), compactar(nome)) <= Math.max(1, tolerancia(compactar(texto).length));
+  const proprio = parecido ? nome : texto;
+  return { resposta: proprio[0].toUpperCase() + proprio.slice(1), apelidos: [], pontos: pontosIa };
 }
 
 function tempoEsgotado() {
