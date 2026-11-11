@@ -27,7 +27,7 @@ body { color: var(--texto); font-family: var(--corpo); font-size: 18px; line-hei
 
 /* Tudo dentro de #tela, para o tremor sacudir a tela inteira */
 #tela { position: fixed; inset: 0; overflow: hidden; }
-#cena, #camada { position: absolute; inset: 0; width: 100%; height: 100%; }
+#cena, #camada { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } /* tamanho exato vem de cena.js */
 #cena { image-rendering: pixelated; image-rendering: crisp-edges; }
 /* último estágio: o cenário vira negativo (feito no desenho, em cena.js, para a caixa e as raridades manterem a cor) */
 body.distorcer #cena, body.distorcer #camada { animation: distorcer 0.9s ease-out; }
@@ -484,6 +484,36 @@ pre {
 #apoio-link { flex: none; padding: 10px 16px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; letter-spacing: 2px; font-size: 13px; text-decoration: none; }
 #apoio-link.botao-escuro { color: var(--texto); }
 #apoio-link[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
+/* durante a viagem, sem botão de conta (volta na tela final) */
+body.em-viagem #abrir-conta { display: none !important; }
+@media (max-width: 560px) {
+  /* no celular, o cartão da pergunta deixa a coluna da direita livre para os botões do menu */
+  body.em-viagem .cartao { width: calc(100% - 78px); margin-left: -23px; }
+}
+
+/* Teclado do celular aberto: a tela do jogo vira só a parte visível (jogo.js) e fica compacta,
+   para a pergunta continuar à vista enquanto você digita. */
+body.teclado #lateral, body.teclado .progresso, body.teclado .cartao .dica { display: none; }
+body.teclado #hud { grid-template-columns: 1fr 1fr; gap: 8px; padding: 6px 12px 0; }
+body.teclado .placa { flex-direction: row; align-items: baseline; gap: 8px; min-width: 0; padding: 4px 10px 5px; }
+body.teclado .placa.direita { justify-content: flex-end; }
+body.teclado .placa .rotulo { font-size: 10px; letter-spacing: 0.12em; }
+body.teclado .valor { font-size: 16px; white-space: nowrap; }
+body.teclado .cartao {
+  top: 40px; width: calc(100% - 24px); margin-left: 0; max-height: calc(100% - 40px - 86px);
+  padding: 10px 14px; animation: none;
+}
+body.teclado #rotulo-pergunta { font-size: 10px; }
+body.teclado .cartao h2 { margin-top: 4px !important; margin-bottom: 0; line-height: 1.2; }
+body.teclado .painel-resposta { bottom: 8px; width: calc(100% - 24px); gap: 8px; align-items: center; animation: none; }
+body.teclado #relogio { width: 46px; height: 46px; margin-top: 0; }
+body.teclado #radar { width: 46px !important; height: 46px !important; }
+body.teclado #tempo { font-size: 16px; }
+body.teclado input { padding: 8px 10px; font-size: 17px; }
+body.teclado form button { padding: 8px 12px; }
+body.teclado #sugestao { margin-top: 6px; font-size: 15px; }
+body.teclado #mensagem { margin-top: 6px; font-size: 14px; }
+
 @media (max-width: 420px) {
   .caixa-apoio { flex-wrap: wrap; }
   .caixa-apoio #apoio-link { width: 100%; text-align: center; }

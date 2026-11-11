@@ -564,17 +564,35 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let anterior = performance.now();
   let aoQuadro = () => {};
 
+  // Tamanho da cena. No iPhone, abrir o teclado encolhe a altura da janela, mas a tela do
+  // jogo continua do mesmo tamanho por baixo dele: se a cena encolhesse junto, o fundo
+  // ficava cortado pela metade. Então, com a mesma largura, a altura só cresce
+  // (teclado e barras do navegador escondem um pedaço, sem refazer a cena).
+  let telaL = 0, telaA = 0;
+  function medirTela() {
+    const l = innerWidth;
+    const a = Math.max(innerHeight, document.documentElement.clientHeight);
+    const mudou = l !== telaL || a > telaA;
+    if (l !== telaL) telaA = a;
+    else telaA = Math.max(telaA, a);
+    telaL = l;
+    return mudou;
+  }
+
   function ajustarTamanho() {
+    if (!medirTela() && dpr === (window.devicePixelRatio || 1)) return;
     dpr = window.devicePixelRatio || 1;
-    escala = Math.max(2, Math.round(Math.max(innerWidth, innerHeight * 1.6) / 330));
-    L = Math.ceil(innerWidth / escala);
-    A = Math.ceil(innerHeight / escala) + 2; // uma folga para o deslocamento suave
+    escala = Math.max(2, Math.round(Math.max(telaL, telaA * 1.6) / 330));
+    L = Math.ceil(telaL / escala);
+    A = Math.ceil(telaA / escala) + 2; // uma folga para o deslocamento suave
     telaPixel.width = L;
     telaPixel.height = A;
     telaPixel.style.width = `${L * escala}px`;
     telaPixel.style.height = `${A * escala}px`;
-    telaTexto.width = Math.round(innerWidth * dpr);
-    telaTexto.height = Math.round(innerHeight * dpr);
+    telaTexto.width = Math.round(telaL * dpr);
+    telaTexto.height = Math.round(telaA * dpr);
+    telaTexto.style.width = `${telaL}px`;
+    telaTexto.style.height = `${telaA}px`;
     focoY = Math.round(A * 0.4);
     terra = desenharTerra(L, Math.round(A * 0.6));
     // planetas grandes, em escala com a tela (parte deles fica para fora)
@@ -878,8 +896,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
         proximaCadente = 4 + Math.random() * 6;
         const esquerda = Math.random() > 0.5;
         cadentes.push({
-          x: esquerda ? Math.random() * innerWidth * 0.4 : innerWidth * (0.6 + Math.random() * 0.4),
-          y: Math.random() * innerHeight * 0.4,
+          x: esquerda ? Math.random() * telaL * 0.4 : telaL * (0.6 + Math.random() * 0.4),
+          y: Math.random() * telaA * 0.4,
           vx: (esquerda ? 1 : -1) * (70 + Math.random() * 50),
           vy: 30 + Math.random() * 30,
           vida: 0,
@@ -939,8 +957,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const pz = Math.max(2, Math.round(escala * 0.5));
     const w = img.width * pz, h = img.height * pz;
     const y = naTelaTexto(62);
-    if (y < -h || y > innerHeight + h) return;
-    const x = ((tempo * 7 * escala) % (innerWidth + w * 2)) - w;
+    if (y < -h || y > telaA + h) return;
+    const x = ((tempo * 7 * escala) % (telaL + w * 2)) - w;
     desenharNave(img, x, y + Math.sin(tempo * 0.7) * 3, pz, Math.sin(tempo * 0.4) * 0.04, "rgba(220, 235, 255, 0.55)");
     // luzinha piscando na ponta
     tx.globalAlpha = Math.max(0, Math.sin(tempo * 4));
@@ -970,7 +988,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const img = corpos[m.corpo];
       const y = naTelaTexto(m.al) + (m.dy || 0) * escala;
       const r = img.raio * escala;
-      if (y < -r * 3 || y > innerHeight + r * 3) continue;
+      if (y < -r * 3 || y > telaA + r * 3) continue;
       const x = posicaoCorpo(img, m) * escala;
       const brilha = ["estrela", "azul", "gigante"].includes(m.corpo);
       const cor = { buraco: "255,154,31", estrela: "255,210,63", azul: "170,205,255", gigante: "255,110,60" }[m.corpo] || "160,200,255";
@@ -1040,10 +1058,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
         const pz = Math.max(2, Math.round(escala * 0.5));
         desenharNave(naves.voyager, L * 0.26 * escala, naTelaTexto(m.al) + 30, pz, -0.25 + Math.sin(tempo * 0.2) * 0.08, "rgba(210, 225, 255, 0.5)");
       }
-      if (m.aglomerado) desenharAglomerado(innerWidth * m.x, naTelaTexto(m.al), m.aglomerado, Math.round(m.al));
+      if (m.aglomerado) desenharAglomerado(telaL * m.x, naTelaTexto(m.al), m.aglomerado, Math.round(m.al));
       if (m.anel) {
         // nebulosa planetária: um anel de gás em volta de uma estrelinha
-        const x = innerWidth * 0.8, y = naTelaTexto(m.al), r = 14 * escala * 0.6;
+        const x = telaL * 0.8, y = naTelaTexto(m.al), r = 14 * escala * 0.6;
         tx.save();
         tx.globalCompositeOperation = "lighter";
         const g = tx.createRadialGradient(x, y, r * 0.35, x, y, r * 1.25);
@@ -1062,7 +1080,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // Aglomerado de estrelas: pontinhos brilhantes juntos numa bola (fixos, com cintilar leve).
   function desenharAglomerado(x, y, { n, raio, cor }, semente, escalaExtra = 1) {
     const r = raio * escala * 0.6 * escalaExtra;
-    if (y < -r * 2 || y > innerHeight + r * 2) return;
+    if (y < -r * 2 || y > telaA + r * 2) return;
     tx.save();
     tx.globalCompositeOperation = "lighter";
     const g = tx.createRadialGradient(x, y, 0, x, y, r * 1.4);
@@ -1107,7 +1125,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const surge = Math.min(1, Math.max(0, (camera.atual - (AL_NEGATIVO - 2400)) / 2400));
     if (surge <= 0) return;
     const img = naves.buraco;
-    const W = innerWidth, H = innerHeight;
+    const W = telaL, H = telaA;
     // cabe entre as paredes (as bordas da imagem já somem em degradê)
     const largo = Math.min(W * 0.82, H * 1.5);
     const alto = largo * (img.height / img.width);
@@ -1209,7 +1227,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
 
   function desenharPanoDeFundo() {
     const al = camera.atual;
-    const W = innerWidth, H = innerHeight;
+    const W = telaL, H = telaA;
     verificarNegativo();
     for (const p of PAISAGENS) desenharPaisagem(p, al, W, H);
     desenharNucleoGalactico(al, W, H);
@@ -1221,7 +1239,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // no horizonte de eventos a penumbra sai: o laranja e preto já fazem o clima
     const k = negativo ? 0 : Math.min(1, Math.max(0, (camera.atual - U(9000)) / (U(12000) - U(9000)))) * 0.65;
     if (k <= 0.01) return;
-    const W = innerWidth, H = innerHeight;
+    const W = telaL, H = telaA;
     const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
     const r = Math.max(150, larguraCaixa * 0.8);
     const g = tx.createRadialGradient(cx, cy, r * 0.35, cx, cy, r * 2.4);
@@ -1252,7 +1270,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     const k = apagao.forca * suave(sobe) * suave(desce);
     if (desce <= 0) { apagao = null; return; }
     if (k <= 0.01) return;
-    const W = innerWidth, H = innerHeight;
+    const W = telaL, H = telaA;
     const cx = W / 2, cy = naTelaTexto(camera.atual) + 18;
     const r = Math.max(110, larguraCaixa * 0.72);
     // luz difusa em volta da caixa, sem borda: clareia no meio e vai escurecendo aos poucos
@@ -1285,14 +1303,14 @@ function criarCena(telaPixel, telaTexto, raiz) {
     mascote.pulo *= Math.exp(-dt * 6);
     modoCanto += (alvoCanto - modoCanto) * (1 - Math.exp(-dt * 3));
     // ao lado direito da caixa (que fica no centro da tela)
-    const xLivre = (innerWidth / 2 + larguraCaixa / 2) / escala + 28;
+    const xLivre = (telaL / 2 + larguraCaixa / 2) / escala + 28;
     const xCaixa = Math.min(L - 26, xLivre);
     // tela estreita: sem espaço do lado, ele flutua logo acima da caixa
     const yCaixa = naTelaExata(foguete.al) + 4 - (xLivre > L - 26 ? 34 : 0);
     // no cantinho esquerdo, flutuando, enquanto você digita
     const xCanto = Math.max(22, L * 0.08);
     // no celular, com o resultado no meio, ele sobe para não ficar por cima do texto
-    const yCanto = mostrandoResultado && innerWidth < 560 ? A * 0.2 : A * 0.55;
+    const yCanto = mostrandoResultado && telaL < 560 ? A * 0.2 : A * 0.55;
     const m = suave(Math.min(1, Math.max(0, modoCanto)));
     let x = xCaixa + (xCanto - xCaixa) * m;
     let y = yCaixa + (yCanto - yCaixa) * m;
@@ -1301,6 +1319,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     modoPergunta += (alvoPergunta - modoPergunta) * (1 - Math.exp(-dt * 2.4));
     cartaoPergunta = cartaoPergunta || document.getElementById("cartao-pergunta");
     const r = cartaoPergunta && cartaoPergunta.getBoundingClientRect();
+    const topoTela = r ? raiz.getBoundingClientRect().top : 0; // com o teclado aberto, a tela acompanha a parte visível
     const temCartao = r && r.width > 0;
     // meia largura e meia altura do bichinho na tela, com uma folguinha
     const pzT = Math.max(1.6, escala * 0.4);
@@ -1309,9 +1328,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
     let perto = 0;
     if (modoPergunta > 0.001 && temCartao) {
       // cabe do lado direito do cartão? senão (celular), fica logo embaixo, na ponta direita
-      const doLado = r.right + 2 * mw + 24 < innerWidth;
+      const doLado = r.right + 2 * mw + 24 < telaL;
       const xp = (doLado ? r.right + mw + 6 : r.right - mw) / escala;
-      const yp = (doLado ? r.top + r.height / 2 : r.bottom + mh + 6) / escala;
+      const yp = ((doLado ? r.top + r.height / 2 : r.bottom + mh + 6) - topoTela) / escala;
       const k = suave(Math.min(1, modoPergunta));
       x += (xp - x) * k;
       y += (yp - y) * k;
@@ -1347,7 +1366,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // "respira": estica e encolhe de leve
     const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
     // olha sempre para o meio da tela (para a caixa): vira devagar, como quem se ajeita
-    const alvoVirar = foguete.x * escala > innerWidth / 2 ? -1 : 1;
+    const alvoVirar = foguete.x * escala > telaL / 2 ? -1 : 1;
     mascote.virar += (alvoVirar - mascote.virar) * (1 - Math.exp(-dt * 8));
     const sx = foguete.x * escala, sy = foguete.y * escala;
     // singularidade: ele brilha na cor da resposta enquanto ela cai e fica na tela;
@@ -1384,7 +1403,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   const CORES_SING = ["#ff4fd8", "#ff4fd8", "#ffffff", "#c38bff", "#ffd6f6"];
   // feixe de luz do teletransporte: uma coluna ciano que acende e apaga, com faíscas subindo
   function pintarFeixe(img, pz, sx, sy, k) {
-    const larg = img.width * pz * 0.75, alto = Math.max(innerHeight * 0.5, img.height * pz * 6);
+    const larg = img.width * pz * 0.75, alto = Math.max(telaA * 0.5, img.height * pz * 6);
     const g = tx.createLinearGradient(sx - larg, 0, sx + larg, 0);
     g.addColorStop(0, "rgba(95, 225, 255, 0)");
     g.addColorStop(0.35, `rgba(95, 225, 255, ${0.18 * k})`);
@@ -1542,8 +1561,8 @@ function criarCena(telaPixel, telaTexto, raiz) {
   }
 
   function desenharTextos(agora) {
-    const W = innerWidth;
-    const H = innerHeight;
+    const W = telaL;
+    const H = telaA;
     const escuro = escuridao(camera.atual);
     const claro = false; // o céu do início é azul médio: texto claro com contorno escuro serve em todo lugar
     const corSuave = claro ? "#0d1a4a" : "rgba(215, 222, 250, 0.82)";
@@ -1624,7 +1643,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       cobertas = ["cartao-pergunta", "painel-resposta", "resultado"]
         .map((id) => document.getElementById(id))
         .filter((el) => el && !el.hidden)
-        .map((el) => { const r = el.getBoundingClientRect(); return [r.top - 14, r.bottom + 14]; });
+        .map((el) => { const r = el.getBoundingClientRect(), t = raiz.getBoundingClientRect().top; return [r.top - t - 14, r.bottom - t + 14]; });
     }
     // enquanto você digita, as curiosidades somem devagar: só a pergunta e o campo na tela
     alfaCurio += ((digitando || fimDeJogo ? 0 : 1) - alfaCurio) * (1 - Math.exp(-dt * 3));
@@ -1747,7 +1766,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       dobra = 0;
       mascote.festaSing = performance.now();
       mascote.estouroSing = true;
-      aneis.push({ x: cx, y: cy, vida: -0.25, dura: 1.3, cor: "#ff4fd8", max: Math.max(innerWidth, innerHeight) * 0.9 });
+      aneis.push({ x: cx, y: cy, vida: -0.25, dura: 1.3, cor: "#ff4fd8", max: Math.max(telaL, telaA) * 0.9 });
       if (window.Som && Som.buraco) Som.buraco();
     }
     for (let i = 0; i < n * (c.supernova ? 2 : 1); i++) {
@@ -1772,7 +1791,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     felizAte = performance.now() + 2200;
   }
   function desenharEstouros() {
-    const W = innerWidth, H = innerHeight;
+    const W = telaL, H = telaA;
     if (borda > 0.01 && bordaCor) {
       const g = tx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.75);
       g.addColorStop(0, "rgba(0,0,0,0)");
@@ -1829,7 +1848,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
       const fumaca = tipo === "fumaca" || tipo === "plasma";
       rastro.push({
         al: al - (18 + Math.random() * 10) / (PX_POR_AL * escala), // logo acima da caixa
-        x: innerWidth / 2 + (Math.random() - 0.5) * larguraCaixa * 0.8,
+        x: telaL / 2 + (Math.random() - 0.5) * larguraCaixa * 0.8,
         vx: (Math.random() - 0.5) * 20,
         vida: 0,
         dura: fumaca ? 1.4 + Math.random() : 0.6 + Math.random() * 0.6,
@@ -1888,7 +1907,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // A resposta caindo (balanço, fumaça, companheiros e brilhos) fica igual no modo
   // sem efeitos: só some com o movimento reduzido do sistema.
   function desenharCaixas(agora) {
-    const W = innerWidth;
+    const W = telaL;
     for (let i = caixas.length - 1; i >= 0; i--) {
       const c = caixas[i];
       const t = agora - c.inicio;
@@ -2114,7 +2133,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
     anterior = agora;
     desenharFundo();
     tx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    tx.clearRect(0, 0, innerWidth, innerHeight);
+    tx.clearRect(0, 0, telaL, telaA);
     if (semEfeitos) {
       // modo simples: degradê do fundo, paredes, poucas estrelas, a Terra no começo,
       // o mascote e as caixas
