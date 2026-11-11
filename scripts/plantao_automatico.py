@@ -28,6 +28,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ / "scripts"))
 import fama  # noqa: E402
 from pontuar import ler_categoria, normalizar  # noqa: E402
+from parecenca import como_bate, mesmo_comeco  # noqa: E402
 
 CATEGORIAS = RAIZ / "dados" / "categorias"
 REVISAO = RAIZ / "dados" / "sinais" / "revisao"
@@ -128,6 +129,16 @@ def adicionar_aprovadas(linhas_csv: list[dict], cache_cat: dict, modificadas: se
             continue
         alvo = next(iter(ja)) if ja else None
         formas = [f for f in item["formas"] if all(dono.get(k, alvo) == alvo for k in fama.chaves(f, cid))]
+        if alvo:
+            # Só vira apelido o que é de fato a resposta da lista (scripts/parecenca.py, igual ao jogo).
+            # Pedaço dela ("estrela" de Estrela-do-mar, "gaúcha" de Chula gaúcha) ou outra coisa que o
+            # juiz achou sinônimo ("Megamente" para Megara) não: como apelido, valeria os pontos
+            # cheios da resposta da lista, e ela pode ser bem nichada. Essas o juiz resolve na hora.
+            nomes_alvo = next([r["resposta"], *r["apelidos"]] for r in cat["respostas"] if r["resposta"] == alvo)
+            fora = [f for f in formas if como_bate(f, nomes_alvo) != "inteira"]
+            if fora:
+                sugeridas.append({**item, "formas": fora, "situacao": f"sugestão (pedaço ou sinônimo de {alvo}: não vira apelido)"})
+            formas = [f for f in formas if f not in fora]
         arq = CATEGORIAS / f"{cid}.txt"
         linhas = arq.read_text(encoding="utf-8").splitlines()
         if alvo:
@@ -197,7 +208,12 @@ def executar_plantao() -> dict:
 
         # Adição automática segura:
         # Se 2 ou mais pessoas digitaram, tem alta similaridade (>= 0.88), e não colide
-        if n >= 2 and como == "parecida" and sim >= 0.88 and resposta_alvo:
+        # (e começa como ela, a mesma regra do jogo: "dinheiro" não vira apelido de "pinheiro")
+        # e é de fato ela, palavra por palavra (scripts/parecenca.py): "corrida de caes" não é "Corrida de mães"
+        if (n >= 2 and como == "parecida" and sim >= 0.88 and resposta_alvo
+                and mesmo_comeco(normalizar(texto), normalizar(resposta_alvo))
+                and como_bate(texto, next(([r["resposta"], *r["apelidos"]] for r in cat["respostas"]
+                                           if r["resposta"] == resposta_alvo), [resposta_alvo])) == "inteira"):
             # Verifica colisão
             chaves_novo = fama.chaves(texto, cid)
             colide = False
