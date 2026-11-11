@@ -497,7 +497,7 @@ pre {
   width: min(760px, calc(100% - 32px)); height: min(80vh, 760px); max-height: calc(100% - 64px);
   padding: 0; border: 0; overflow: visible; background: transparent; color: var(--texto);
 }
-#janela-info[open] { display: flex; flex-direction: column; animation: janela-abrir 0.18s ease-out both; }
+#janela-info[open] { display: flex; flex-direction: column; }
 #janela-info::backdrop { background: rgba(4, 2, 18, 0.84); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
 #janela-quadro {
   flex: 1; width: 100%; border: 0; display: block; clip-path: var(--recorte);
@@ -507,23 +507,84 @@ pre {
   margin: 10px 0 0; text-align: center; font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em;
   color: rgba(223, 230, 255, 0.6); pointer-events: none;
 }
-@keyframes janela-abrir { from { opacity: 0; transform: translateY(8px); } }
-@media (prefers-reduced-motion: reduce) { #janela-info[open] { animation: none; } }
 
-/* Janelas de skins e de opções: quadro escuro com o X no canto */
+/* Janelas do menu (skins, opções, conta, arquivos, apoio): uma janela de computador antigo, com
+   barra de título listrada, luzinha, título em pixel e o X num botão com relevo. */
 .janela-menu {
-  width: min(440px, calc(100% - 32px)); max-height: calc(100% - 64px); padding: 0; border: 0; overflow: visible;
-  background: transparent; color: var(--texto);
+  width: min(440px, calc(100% - 32px)); max-height: calc(100% - 64px); padding: 0 14px 14px; border: 0; overflow: visible;
+  color: var(--texto);
+  background: repeating-linear-gradient(0deg, rgba(var(--luz), 0.025) 0 1px, transparent 1px 3px), #0d0929;
+  box-shadow:
+    inset 0 0 0 2px #6f5bd6, inset 0 0 0 3px #07031f, inset 0 0 0 4px rgba(95, 225, 255, 0.14),
+    0 0 0 2px #07031f, 8px 8px 0 2px rgba(0, 0, 0, 0.45), 0 0 40px rgba(150, 80, 255, 0.3);
 }
-.janela-menu[open] { display: flex; flex-direction: column; animation: janela-abrir 0.18s ease-out both; }
-.janela-menu::backdrop { background: rgba(4, 2, 18, 0.84); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
-.janela-topo { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-.janela-topo .rotulo { margin: 0; }
+.janela-menu[open] { display: flex; flex-direction: column; }
+.janela-menu::backdrop, #janela-info::backdrop { background: rgba(4, 2, 18, 0.84); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
+dialog[open]::backdrop { animation: janela-fundo 0.16s steps(4) both; }
+@keyframes janela-fundo { from { opacity: 0; } }
+.janela-topo {
+  flex: none; display: flex; align-items: center; gap: 10px; height: 38px; margin: 4px -10px 14px; padding: 0 5px 0 12px;
+  background: linear-gradient(#211862, #160f45);
+  box-shadow: inset 0 -2px 0 #07031f, inset 0 -3px 0 rgba(111, 91, 214, 0.7), inset 0 1px 0 rgba(185, 140, 255, 0.35);
+}
+/* listras da barra, entre o título e o X */
+.janela-topo::after {
+  content: ""; order: 1; flex: 1; min-width: 12px; height: 12px;
+  background: repeating-linear-gradient(180deg, rgba(95, 225, 255, 0.32) 0 2px, transparent 2px 4px);
+}
+.janela-topo .rotulo {
+  margin: 0; display: inline-flex; align-items: center; gap: 8px; min-width: 0;
+  font-family: var(--titulo); font-size: 10px; line-height: 1; letter-spacing: 0.12em; color: var(--texto);
+  text-shadow: 0 0 8px rgba(95, 225, 255, 0.5), 2px 2px 0 #07031f;
+}
+.janela-topo .rotulo::before { content: ""; flex: none; width: 8px; height: 8px; background: var(--rosa); box-shadow: 0 0 8px var(--rosa); }
+.janela-topo .titulo-arquivos::before { display: none; }
 .janela-menu .fechar {
-  width: 38px; height: 34px; padding: 0; border: 0; cursor: pointer; font-family: var(--mono); font-size: 16px; font-weight: 700;
-  background: var(--painel); color: var(--texto); clip-path: var(--recorte); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.35);
+  order: 2; flex: none; width: 30px; height: 28px; padding: 0; border: 0; cursor: pointer;
+  font-family: var(--titulo); font-size: 10px; line-height: 1; color: var(--texto);
+  background: #2a2070; box-shadow: inset 2px 2px 0 #5848c0, inset -2px -2px 0 #0b0726, 0 0 0 1px #07031f;
 }
-.janela-menu .fechar:hover, .janela-menu .fechar:focus-visible { color: var(--ciano); box-shadow: inset 0 0 0 2px var(--ciano); }
+.janela-menu .fechar:hover, .janela-menu .fechar:focus-visible { color: #fff; background: #b02a5a; box-shadow: inset 2px 2px 0 #ff7aa8, inset -2px -2px 0 #5a0f2c, 0 0 0 1px #07031f, 0 0 12px rgba(255, 79, 139, 0.6); }
+.janela-menu .fechar:active { box-shadow: inset -2px -2px 0 #5848c0, inset 2px 2px 0 #0b0726, 0 0 0 1px #07031f; }
+
+/* ---------- abrir e fechar (jogo/janelas.js) ---------- */
+/* enquanto os contornos crescem, a janela ainda não aparece (só os contornos, numa camada fixa) */
+dialog.janela-abrindo { background: transparent !important; box-shadow: none !important; }
+dialog.janela-abrindo > :not(.zoom-camada) { opacity: 0; }
+.zoom-camada { position: fixed; inset: 0; z-index: 2147483000; pointer-events: none; }
+.zoom-contorno {
+  position: absolute; box-sizing: border-box; border: 2px solid var(--ciano);
+  box-shadow: 0 0 0 1px #07031f, inset 0 0 0 1px #07031f, 0 0 12px rgba(95, 225, 255, 0.45);
+}
+.zoom-fechando .zoom-contorno { border-color: #b98cff; box-shadow: 0 0 0 1px #07031f, inset 0 0 0 1px #07031f, 0 0 12px rgba(185, 140, 255, 0.45); }
+/* o fundo escuro da janela que fechou some em passos, em vez de sumir de uma vez */
+.zoom-fundo { position: absolute; inset: 0; background: rgba(4, 2, 18, 0.84); animation: zoom-fundo 0.15s steps(3) forwards; }
+@keyframes zoom-fundo { to { opacity: 0; } }
+/* a janela "liga" como um monitor velho: um clarão em passos e uma faixa de luz descendo */
+dialog.janela-pop { animation: janela-pop 0.22s steps(4) both; }
+@keyframes janela-pop {
+  0% { transform: scale(1.02, 0.96); filter: brightness(2.2) saturate(0.6); }
+  50% { transform: scale(0.995, 1.01); filter: brightness(1.3); }
+}
+dialog.janela-pop::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(transparent, rgba(95, 225, 255, 0.16) 45%, rgba(255, 255, 255, 0.22) 50%, transparent 55%) 0 0 / 100% 300% no-repeat;
+  animation: janela-varredura 0.22s steps(5) forwards;
+}
+@keyframes janela-varredura { from { background-position: 0 100%; } to { background-position: 0 0; opacity: 0.3; } }
+dialog.janela-surge { animation: janela-surge 0.14s steps(3) both; }
+@keyframes janela-surge { from { opacity: 0; } }
+/* deu certo: a moldura pisca verde */
+dialog.janela-ok::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  box-shadow: inset 0 0 0 2px #7dffb0, inset 0 0 26px rgba(125, 255, 176, 0.25), 0 0 30px rgba(125, 255, 176, 0.55);
+  animation: janela-ok 0.8s steps(8) forwards;
+}
+@keyframes janela-ok { 0%, 40% { opacity: 1; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  dialog.janela-pop, dialog.janela-pop::after, dialog[open]::backdrop { animation: none; }
+}
+
 .grade-skins { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; overflow-y: auto; }
 .cartao-skin {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-height: 150px; padding: 14px 8px;
@@ -714,20 +775,46 @@ pre {
 
 /* ---------- conta (jogo/conta.js) ---------- */
 #abrir-conta.logado { color: var(--ciano); box-shadow: inset 0 0 0 2px rgba(95, 225, 255, 0.45); }
-.conta-corpo {
-  display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; overflow-y: auto;
-  background: rgba(12, 10, 40, 0.97); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.3);
-}
+.conta-corpo { display: flex; flex-direction: column; gap: 12px; overflow-y: auto; }
 .conta-corpo [hidden] { display: none !important; }
-#conta-fora, #conta-dentro { display: flex; flex-direction: column; gap: 10px; }
-.conta-titulo { margin: 0; font-weight: 700; font-size: 14px; letter-spacing: 0.18em; color: var(--ciano); }
-.conta-texto { margin: 0; font-size: 15px; line-height: 1.4; }
+#conta-fora, #conta-dentro { display: flex; flex-direction: column; gap: 12px; }
+/* topo: o mascote escolhido flutuando numa janelinha de "monitor" e a chamada */
+.conta-heroi { display: flex; align-items: center; gap: 14px; }
+.conta-mascote {
+  flex: none; width: 84px; height: 56px; padding: 6px; object-fit: contain; object-position: 50% 75%; image-rendering: pixelated;
+  background: radial-gradient(ellipse at 50% 60%, rgba(95, 225, 255, 0.16), transparent 70%), #07031f;
+  box-shadow: inset 0 0 0 2px #2c2470, 0 0 0 1px #07031f;
+  animation: conta-boiar 2.4s steps(4) infinite alternate;
+}
+@keyframes conta-boiar { to { object-position: 50% 25%; } }
+.conta-heroi-texto { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.conta-titulo { margin: 0; font-family: var(--titulo); font-size: 13px; line-height: 1.3; letter-spacing: 0.08em; color: var(--ciano); text-shadow: 0 0 10px rgba(95, 225, 255, 0.55), 2px 2px 0 #07031f; }
+.conta-texto { margin: 0; font-size: 14px; line-height: 1.45; color: var(--texto); }
 .conta-texto b { color: var(--amarelo); }
-.conta-vantagens { margin: 0; padding-left: 20px; font-family: var(--mono); font-size: 13px; line-height: 1.45; color: var(--suave); }
-.conta-vantagens b { color: var(--texto); }
-.conta-botao-google { display: flex; justify-content: center; min-height: 44px; }
+.conta-status { margin: 0; display: flex; align-items: center; gap: 8px; font-family: var(--titulo); font-size: 10px; letter-spacing: 0.12em; color: #7dffb0; }
+.conta-status i { width: 8px; height: 8px; background: #7dffb0; box-shadow: 0 0 8px #7dffb0; animation: respirar 1.6s ease-in-out infinite; }
+/* vantagens: duas fichas com ícone em pixel */
+.conta-vantagens { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.conta-vantagens li {
+  display: flex; align-items: center; gap: 12px; padding: 10px 12px;
+  background: rgba(20, 14, 54, 0.9); box-shadow: inset 0 0 0 1px rgba(120, 140, 220, 0.28), inset 3px 0 0 currentColor;
+}
+.conta-vantagens li.amarelo { color: var(--amarelo); }
+.conta-vantagens span { display: flex; flex-direction: column; gap: 3px; font-family: var(--mono); font-size: 12px; line-height: 1.4; color: var(--suave); }
+.conta-vantagens b { font-family: var(--corpo); font-size: 11px; letter-spacing: 0.14em; color: var(--texto); }
+.conta-icone { flex: none; width: 18px; height: 18px; filter: drop-shadow(0 0 5px currentColor); }
+/* o botão do Google numa "baia" tracejada, para não parecer colado de outro site */
+.conta-encaixe {
+  display: flex; justify-content: center; padding: 14px 10px;
+  background: repeating-linear-gradient(0deg, rgba(var(--luz), 0.03) 0 1px, transparent 1px 3px), #08051f;
+  outline: 1px dashed rgba(95, 225, 255, 0.35); outline-offset: -5px;
+}
+.conta-botao-google { display: flex; justify-content: center; min-height: 44px; align-items: center; }
 .conta-nota { margin: 0; font-family: var(--mono); font-size: 11px; line-height: 1.45; color: var(--suave); }
 .conta-nota a { color: var(--ciano); }
+.conta-nota-cadeado { display: flex; gap: 8px; align-items: flex-start; }
+.conta-nota-cadeado .conta-icone { width: 11px; height: 11px; margin-top: 2px; color: var(--suave); filter: none; }
+@media (prefers-reduced-motion: reduce) { .conta-mascote, .conta-status i { animation: none; } }
 .conta-form { display: flex; flex-direction: column; gap: 6px; }
 .conta-linha { display: flex; gap: 8px; }
 .conta-linha input {

@@ -37,6 +37,7 @@ Como funciona hoje no protótipo:
   `jogo/jogo.js` (`chavesSoltas`) e `scripts/casar.py` (`chaves_soltas`).
 - Resposta que a lista não tem: o jogo avisa que ela foi anotada para revisão (e repete isso no tempo esgotado).
 - Sons 8-bit gerados no navegador (botão ♪ para desligar).
+- Janelas do menu (conta, skins, opções, arquivos, apoio) abrem e fecham como num computador antigo: contornos saem do botão e crescem em passos até a janela, com sons de interface baixinhos e um "tlin" quando algo dá certo (login, apelido salvo, código copiado). Código em `jogo/janelas.js`; sem efeitos ou com "reduzir movimento" vira só um surgir rápido.
 - No fim: pontos, profundidade, diário de bordo com cada resposta, e um resultado em emoji para compartilhar.
   O progresso do dia fica salvo no navegador.
 - **Conta opcional com Google**: progresso salvo em qualquer aparelho e **placar do dia** (só logados, só no

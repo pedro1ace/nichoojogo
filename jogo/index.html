@@ -241,17 +241,30 @@
     </div>
     <div class="conta-corpo">
       <div id="conta-fora">
-        <p class="conta-titulo">ENTRAR É OPCIONAL</p>
-        <p class="conta-texto">Sem conta, o jogo continua igualzinho. Com conta:</p>
+        <div class="conta-heroi">
+          <canvas id="conta-mascote" class="conta-mascote" width="28" height="16" aria-hidden="true"></canvas>
+          <div class="conta-heroi-texto">
+            <p class="conta-titulo">SALVE SUA VIAGEM</p>
+            <p class="conta-texto">Entrar é opcional. Sem conta, o jogo continua igualzinho.</p>
+          </div>
+        </div>
         <ul class="conta-vantagens">
-          <li>suas viagens, sequência e recorde ficam salvos em qualquer aparelho;</li>
-          <li>seu apelido aparece no <b>placar do dia</b>.</li>
+          <li class="ciano"><svg class="conta-icone" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M0 0h7v1h-7zM0 1h1v1h-1zM2 1h5v1h-5zM8 1h1v1h-1zM0 2h1v1h-1zM2 2h2v1h-2zM6 2h1v1h-1zM8 2h1v1h-1zM0 3h1v1h-1zM2 3h5v1h-5zM8 3h1v1h-1zM0 4h1v1h-1zM8 4h1v1h-1zM0 5h1v1h-1zM2 5h5v1h-5zM8 5h1v1h-1zM0 6h1v1h-1zM2 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM0 7h1v1h-1zM2 7h5v1h-5zM8 7h1v1h-1zM0 8h9v1h-9z"/></svg><span><b>PROGRESSO EM QUALQUER APARELHO</b>Suas viagens, sequência e recorde ficam salvos na conta.</span></li>
+          <li class="amarelo"><svg class="conta-icone" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M1 0h7v1h-7zM0 1h2v1h-2zM3 1h4v1h-4zM8 1h1v1h-1zM0 2h1v1h-1zM2 2h5v1h-5zM8 2h1v1h-1zM0 3h2v1h-2zM3 3h3v1h-3zM7 3h2v1h-2zM2 4h5v1h-5zM3 5h3v1h-3zM4 6h1v1h-1zM2 7h5v1h-5zM1 8h7v1h-7z"/></svg><span><b>PLACAR DO DIA</b>Seu apelido aparece no ranking de quem jogou hoje.</span></li>
         </ul>
-        <div id="conta-botao-google" class="conta-botao-google"></div>
-        <p class="conta-nota">Do Google guardamos só um código que identifica a conta. Nada de nome, e-mail ou foto. <a href="privacidade.html">Privacidade</a></p>
+        <div class="conta-encaixe">
+          <div id="conta-botao-google" class="conta-botao-google"></div>
+        </div>
+        <p class="conta-nota conta-nota-cadeado"><svg class="conta-icone" viewBox="0 0 7 7" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M2 0h3v1h-3zM1 1h1v1h-1zM5 1h1v1h-1zM1 2h1v1h-1zM5 2h1v1h-1zM0 3h7v1h-7zM0 4h3v1h-3zM4 4h3v1h-3zM0 5h3v1h-3zM4 5h3v1h-3zM0 6h7v1h-7z"/></svg><span>Do Google guardamos só um código que identifica a conta. Nada de nome, e-mail ou foto. <a href="privacidade.html">Privacidade</a></span></p>
       </div>
       <div id="conta-dentro" hidden>
-        <p class="conta-texto">No placar você aparece como <b id="conta-apelido"></b>.</p>
+        <div class="conta-heroi">
+          <canvas id="conta-mascote-dentro" class="conta-mascote" width="28" height="16" aria-hidden="true"></canvas>
+          <div class="conta-heroi-texto">
+            <p class="conta-status"><i aria-hidden="true"></i>CONECTADO</p>
+            <p class="conta-texto">No placar você aparece como <b id="conta-apelido"></b>.</p>
+          </div>
+        </div>
         <form id="conta-form-apelido" class="conta-form" autocomplete="off">
           <label for="conta-input-apelido" class="rotulo">APELIDO DO PLACAR</label>
           <div class="conta-linha">
@@ -341,6 +354,7 @@
     </div>
   </dialog>
   <script src="som.js"></script>
+  <script src="janelas.js"></script>
   <script src="mascote.js"></script>
   <script src="alien.js"></script>
   <script src="apoiador.js"></script>
