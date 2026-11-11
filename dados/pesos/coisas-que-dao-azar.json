@@ -28,7 +28,9 @@
     "andar debaixo da escada",
     "andar em baixo de escada",
     "embaixo de escada",
-    "passar escada"
+    "passar escada",
+    "embaixo da escada",
+    "andar embaixo da escada"
    ],
    "sem_dado": false,
    "icf": 10.071,
@@ -81,7 +83,8 @@
     "guarda-chuva aberto",
     "guarda-chuva",
     "guarda chuva dentro de casa",
-    "abrir guarda chuva em ambiente fechado"
+    "abrir guarda chuva em ambiente fechado",
+    "abrir guarda chuva em casa"
    ],
    "sem_dado": false,
    "icf": 8.664,
@@ -972,7 +975,12 @@
     "chinelo ao contrario",
     "chinelo virado pra cama",
     "deixar a chinela virada pra cima",
-    "deixar o chinelo virado"
+    "deixar o chinelo virado",
+    "chinelo virado para baixo",
+    "chinelo virado pra baixo",
+    "virar o chinelo",
+    "chinelo de cabeça para baixo",
+    "chinelo do avesso"
    ],
    "sem_dado": false,
    "icf": 12.207,
@@ -1952,7 +1960,9 @@
   },
   {
    "resposta": "Guarda-chuva aberto em casa",
-   "apelidos": [],
+   "apelidos": [
+    "guarda chuva em casa"
+   ],
    "sem_dado": false,
    "icf": 7.976,
    "lembranca": 0.45,
@@ -4886,7 +4896,9 @@
   },
   {
    "resposta": "Derrubar uma faca",
-   "apelidos": [],
+   "apelidos": [
+    "derrubar faca"
+   ],
    "sem_dado": false,
    "icf": 9.192,
    "lembranca": 0.2518,
@@ -6881,7 +6893,9 @@
   },
   {
    "resposta": "Pisar em cocô",
-   "apelidos": [],
+   "apelidos": [
+    "pisar no cocô"
+   ],
    "sem_dado": false,
    "icf": 9.853,
    "lembranca": 0.1744,
