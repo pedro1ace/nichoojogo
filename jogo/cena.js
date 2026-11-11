@@ -543,6 +543,7 @@ function criarCena(telaPixel, telaTexto, raiz) {
   // 1 = mascote ao lado do cartão da pergunta (na contagem antes do relógio)
   let modoPergunta = 0, alvoPergunta = 0;
   let cartaoPergunta = null;
+  let ultimoCartao = null;
   let larguraCaixa = 200;
   let cobertas = [];
   let alfaCurio = 1;
@@ -551,7 +552,13 @@ function criarCena(telaPixel, telaTexto, raiz) {
   let fimDeJogo = false; // na tela final as curiosidades somem
   const rastro = [];
   const caixas = [];
-  const mascote = { x: 0, y: 0, pulo: 0, virar: 1, singular: 0 };
+  // virar: 1 olha para a direita, -1 para a esquerda. frente: 0 de lado, 1 de frente para a tela
+  // (só a Laika tem a pose de frente). escX: a escala horizontal usada no quadro (giro + espelho).
+  const mascote = { x: 0, y: 0, pulo: 0, virar: 1, singular: 0, frente: 0, escX: 1, ocioso: 0, proxGracinha: 7, ultGracinha: "", ultX: 0, ultY: 0 };
+  // Gracinha da Laika quando ela fica um tempo de lado à toa: { tipo: "olhar" | "rabo", inicio, dura }
+  let gracinha = null;
+  // Tempo esgotado: ela vira de frente e tapa os olhos de vergonha por uns 3 segundos ({ inicio })
+  let vergonha = null;
   // o foguete acompanha a câmera com um atraso suave (mola), ao lado da palavra
   const foguete = { al: 0, x: 0, y: 0 };
   let flash = 0;
@@ -1292,7 +1299,12 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // no cantinho esquerdo, flutuando, enquanto você digita
     const xCanto = Math.max(22, L * 0.08);
     // no celular, com o resultado no meio, ele sobe para não ficar por cima do texto
-    const yCanto = mostrandoResultado && innerWidth < 560 ? A * 0.2 : A * 0.55;
+    const yCantoAlvo = mostrandoResultado && innerWidth < 560 ? A * 0.2 : A * 0.55;
+    // desliza até o novo cantinho em vez de teletransportar (no celular ele muda quando o
+    // resultado aparece, e ela pulava do meio da tela para o alto num quadro só)
+    if (mascote.yCanto === undefined) mascote.yCanto = yCantoAlvo;
+    mascote.yCanto += (yCantoAlvo - mascote.yCanto) * (1 - Math.exp(-dt * 4));
+    const yCanto = mascote.yCanto;
     const m = suave(Math.min(1, Math.max(0, modoCanto)));
     let x = xCaixa + (xCanto - xCaixa) * m;
     let y = yCaixa + (yCanto - yCaixa) * m;
@@ -1300,12 +1312,18 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // quando o relógio começa, desliza de volta para o cantinho
     modoPergunta += (alvoPergunta - modoPergunta) * (1 - Math.exp(-dt * 2.4));
     cartaoPergunta = cartaoPergunta || document.getElementById("cartao-pergunta");
-    const r = cartaoPergunta && cartaoPergunta.getBoundingClientRect();
-    const temCartao = r && r.width > 0;
+    // guarda o último lugar do cartão: quando ele some (ao lançar a resposta) ela ainda está
+    // saindo do lado dele, e sem isso dava um pulo de centenas de pixels num quadro só
+    const rAgora = cartaoPergunta && cartaoPergunta.getBoundingClientRect();
+    if (rAgora && rAgora.width > 0) ultimoCartao = rAgora;
+    const r = ultimoCartao;
+    const temCartao = !!r;
     // meia largura e meia altura do bichinho na tela, com uma folguinha
     const pzT = Math.max(1.6, escala * 0.4);
-    const mw = (tardigrado.andar[0].width * pzT) / 2 + 8;
-    const mh = (tardigrado.andar[0].height * pzT) / 2 + 8;
+    // a Laika espera de frente para a tela, então o espaço reservado é o da pose de frente
+    const ref = tardigrado.frente ? tardigrado.frente.andar[0] : tardigrado.andar[0];
+    const mw = (ref.width * pzT) / 2 + 8;
+    const mh = (ref.height * pzT) / 2 + 8;
     let perto = 0;
     if (modoPergunta > 0.001 && temCartao) {
       // cabe do lado direito do cartão? senão (celular), fica logo embaixo, na ponta direita
@@ -1321,17 +1339,100 @@ function criarCena(telaPixel, telaTexto, raiz) {
     foguete.x = x + lado * (1 - perto);
     foguete.y = y + balanco - mascote.pulo;
     const descendo = camera.velocidade > 20;
-    const inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.08 + Math.min(0.3, camera.velocidade / 3000);
+    let inclina = reduzirMovimento ? 0 : Math.sin(tempo * 0.9) * 0.08 + Math.min(0.3, camera.velocidade / 3000);
+    // Laika ao lado do cartão: dá um giro rápido e fica de frente para a tela, suspensa,
+    // com as patinhas para a frente. Quando o relógio começa, gira de volta para o lado.
+    const temFrente = !!tardigrado.frente;
+    const tv = vergonha ? (performance.now() - vergonha.inicio) / 1000 : 0;
+    if (vergonha && tv > 3.4) vergonha = null;
+    const alvoFrente = temFrente && (perto > 0.55 || (vergonha && tv < 3.0)) ? 1 : 0;
+    const passoGiro = reduzirMovimento ? 1 : dt / 0.3;
+    // (só anda quando falta chegar: com "senão, volta" ela ficava indo e vindo entre 1 e 0,94
+    // a cada quadro, encolhendo 11% na horizontal, e era essa a tremedeira de frente)
+    if (alvoFrente > mascote.frente) mascote.frente = Math.min(alvoFrente, mascote.frente + passoGiro);
+    else if (alvoFrente < mascote.frente) mascote.frente = Math.max(alvoFrente, mascote.frente - passoGiro);
+    const deFrente = temFrente && mascote.frente >= 0.5;
+    // de frente ela fica reta: girar o desenho de pixel por ângulos pequenos faz os pixels
+    // "pularem" de um quadro para o outro, e era isso que deixava ela tremendo
+    if (deFrente) inclina = 0;
     // quadro: perninhas remando (rápido descendo, devagar parado), pisca de vez em quando
     const agoraS = performance.now();
     const feliz = agoraS < felizAte;
     const ciclo = Math.floor(tempo * (descendo ? 10 : 2.5)) % 4;
+    // de frente: 16 quadros, as chamas trocam a 8 por segundo e o rabo a 2 por segundo
+    const cicloFrente = Math.floor(tempo * 8) % 16;
     const piscando = !feliz && tempo % 3.7 < 0.13;
+
+    // Gracinhas da Laika: parada de lado por uns segundos, ela sorteia uma de duas
+    // (virar a cabeça para a tela ou enrolar e caçar o próprio rabo, girando).
+    const temGracinhas = !!(tardigrado.olhar && tardigrado.enrolada);
+    // (sem contar o pulinho, senão o próprio pulinho do começo da gracinha a cancelava)
+    const yParado = foguete.y + mascote.pulo;
+    const velMascote = Math.hypot(foguete.x - mascote.ultX, yParado - mascote.ultY) / Math.max(dt, 1e-3);
+    mascote.ultX = foguete.x; mascote.ultY = yParado;
+    const calma = temGracinhas && !vergonha && !descendo && mascote.frente === 0 && !troca && !feliz && !mascote.singular && velMascote < 30;
+    if (!calma) {
+      gracinha = null;
+      mascote.ocioso = 0;
+    } else if (!gracinha) {
+      mascote.ocioso += dt;
+      if (mascote.ocioso > mascote.proxGracinha) {
+        // não repete a mesma duas vezes seguidas (com o movimento reduzido, só olha)
+        let tipo = Math.random() < 0.5 ? "olhar" : "rabo";
+        if (tipo === mascote.ultGracinha && Math.random() < 0.7) tipo = tipo === "olhar" ? "rabo" : "olhar";
+        if (reduzirMovimento) tipo = "olhar";
+        gracinha = { tipo, inicio: agoraS, dura: tipo === "olhar" ? 2700 : 2700 };
+        mascote.ultGracinha = tipo;
+        mascote.pulo += 3; // pulinho de quem teve uma ideia
+      }
+    }
+    if (gracinha && agoraS - gracinha.inicio > gracinha.dura) {
+      gracinha = null;
+      mascote.ocioso = 0;
+      mascote.proxGracinha = 7 + Math.random() * 9;
+    }
+    const tg = gracinha ? (agoraS - gracinha.inicio) / 1000 : 0;
+    let enrolada = false;
+
     const quadroDe = (s) => {
-      const pele = mascote.dourado ? s.dourado : s;
-      return piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[ciclo];
+      const base = mascote.dourado ? s.dourado : s;
+      // vergonha: tapa os olhos, espia por uma patinha no meio e tapa de novo
+      if (vergonha && deFrente && s === tardigrado && base.vergonha) {
+        return (tv > 1.45 && tv < 2.25 ? base.vergonha.espiando : base.vergonha.tapando)[cicloFrente % 4];
+      }
+      if (gracinha && s === tardigrado && base.olhar) {
+        if (gracinha.tipo === "olhar") {
+          // olha para a tela, pisca, abre um sorrisão com a linguinha e volta
+          if (tg < 0.18 || tg > 2.5) return base.andar[ciclo];
+          if (tg > 1.05 && tg < 1.18) return base.olhar.piscar;
+          return (tg > 1.55 && tg < 2.35 ? base.olhar.feliz : base.olhar.andar)[ciclo];
+        }
+        // rabo: percebe o rabo (abana rápido), enrola girando atrás dele, desenrola tontinha
+        const rapido = Math.floor(tempo * 12) % 4;
+        if (tg < 0.4) return base.andar[rapido];
+        if (tg < 2.15) { enrolada = true; return base.enrolada[rapido]; }
+        return base.feliz[rapido];
+      }
+      const pele = deFrente && base.frente ? base.frente : base;
+      return piscando ? pele.piscar : (feliz ? pele.feliz : pele.andar)[pele === base ? ciclo : cicloFrente];
     };
     let img = quadroDe(tardigrado);
+    // giro da caçada ao rabo: 3 voltas no sentido em que a cabeça vai atrás do rabo,
+    // começando devagar, acelerando e freando; depois balança um pouco, tontinha
+    if (gracinha && gracinha.tipo === "rabo") {
+      if (enrolada) {
+        const u = (tg - 0.4) / 1.75;
+        const e = u < 0.5 ? 2 * u * u : 1 - (-2 * u + 2) ** 2 / 2;
+        inclina = -Math.PI * 2 * 3 * e;
+        if (!reduzirMovimento && Math.random() < dt * 14) soltarBrilhoMascote(foguete.x * escala, foguete.y * escala, 14 * Math.max(1.6, escala * 0.4), false, ["#ffd23f", "#ff9a3c", "#ff4f8b", "#ffffff"]);
+      } else if (tg < 0.4) {
+        inclina = Math.sin(tg * 60) * 0.06; // tremidinha de empolgação
+      } else {
+        const v = (tg - 2.15) / 0.55;
+        inclina = Math.sin(v * 18) * 0.28 * (1 - Math.min(1, v));
+        if (!reduzirMovimento && Math.random() < dt * 9) soltarBrilhoMascote(foguete.x * escala, foguete.y * escala - 10, 18, false, ["#ffd84a", "#ffffff", "#c38bff"]);
+      }
+    }
     // trocando de skin: mistura o antigo se desfazendo com o novo se materializando
     let feixe = 0;
     if (troca) {
@@ -1345,11 +1446,17 @@ function criarCena(telaPixel, telaTexto, raiz) {
     // pequeno: cada pixel do bichinho vira 2 a 3 px na tela
     const pz = Math.max(1.6, escala * 0.4);
     // "respira": estica e encolhe de leve
-    const resp = reduzirMovimento ? 1 : 1 + Math.sin(tempo * 2.2) * 0.025;
+    // (de frente não: esticar o desenho em frações de pixel também fazia ela tremer)
+    const resp = reduzirMovimento || deFrente ? 1 : (1 + Math.sin(tempo * 2.2) * 0.025);
     // olha sempre para o meio da tela (para a caixa): vira devagar, como quem se ajeita
     const alvoVirar = foguete.x * escala > innerWidth / 2 ? -1 : 1;
     mascote.virar += (alvoVirar - mascote.virar) * (1 - Math.exp(-dt * 8));
-    const sx = foguete.x * escala, sy = foguete.y * escala;
+    // no giro para ficar de frente, o quadro encolhe na horizontal até virar uma linha e abre
+    // de novo já na outra pose (1 → 0 → 1); de frente não espelha
+    const giro = temFrente ? Math.max(0.06, Math.abs(1 - 2 * mascote.frente)) : 1;
+    mascote.escX = deFrente ? giro : mascote.virar * giro;
+    // posição em pixel inteiro da tela: sem isso o desenho "nada" entre dois pixels
+    const sx = Math.round(foguete.x * escala), sy = Math.round(foguete.y * escala);
     // singularidade: ele brilha na cor da resposta enquanto ela cai e fica na tela;
     // nesse caso o bichinho é pintado depois do apagão, para não ficar no escuro
     const sing = caixas.find((c) => c.supernova && !c.saida);
@@ -1451,11 +1558,11 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.save();
     tx.imageSmoothingEnabled = false;
     tx.translate(sx, sy);
-    tx.rotate(inclina * Math.sign(mascote.virar || 1));
-    tx.scale(mascote.virar / resp, resp);
+    tx.rotate(inclina * Math.sign(mascote.escX || 1));
+    tx.scale(mascote.escX / resp, resp);
     tx.shadowColor = mascote.dourado ? "rgba(255, 210, 90, 0.9)" : alien ? "rgba(110, 255, 180, 0.7)" : apoiador ? "rgba(255, 120, 190, 0.75)" : "rgba(255, 140, 60, 0.75)";
     tx.shadowBlur = semEfeitos ? 0 : pz * 4;
-    tx.drawImage(img, (-img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
+    tx.drawImage(img, -(img.centroX ?? img.width / 2) * pz, (-img.height / 2) * pz, img.width * pz, img.height * pz);
     tx.restore();
     const k = mascote.singular;
     if (k) pintarSingular(img, pz, resp, inclina, sx, sy, k, agoraS);
@@ -1480,9 +1587,9 @@ function criarCena(telaPixel, telaTexto, raiz) {
     tx.save();
     tx.imageSmoothingEnabled = false;
     tx.translate(sx, sy);
-    tx.rotate(inclina * Math.sign(mascote.virar || 1));
-    tx.scale(mascote.virar / resp, resp);
-    const ox = (-img.width / 2) * pz, oy = (-img.height / 2) * pz, iw = img.width * pz, ih = img.height * pz;
+    tx.rotate(inclina * Math.sign(mascote.escX || 1));
+    tx.scale(mascote.escX / resp, resp);
+    const ox = -(img.centroX ?? img.width / 2) * pz, oy = (-img.height / 2) * pz, iw = img.width * pz, ih = img.height * pz;
     tx.shadowColor = "#ff4fd8";
     tx.shadowBlur = pz * (6 + 6 * pulso) * k + explode * 30;
     tx.globalAlpha = Math.min(1, k * 1.2);
@@ -2174,12 +2281,21 @@ function criarCena(telaPixel, telaTexto, raiz) {
       // (em relogio()): mudar os dois ao mesmo tempo fazia ele ir para a esquerda e
       // voltar para a direita na primeira pergunta, quando ainda estava no meio
       alvoPergunta = 1;
+      vergonha = null;
       digitando = true;
       mostrandoResultado = false;
       for (const antiga of caixas) if (!antiga.saida) antiga.saida = agora;
       rodadaAl = camera.para;
       alvos = alvosDaPergunta(cat);
       mostrarLinhas = true;
+    },
+    // Tempo esgotado: quem tem a pose (a Laika) tapa os olhos de vergonha.
+    // Devolve true se fez a animação (para o jogo tocar o latidinho triste).
+    vergonha() {
+      if (!tardigrado.vergonha) return false;
+      vergonha = { inicio: performance.now() };
+      gracinha = null;
+      return true;
     },
     // O relógio começou: o tardígrado sai do lado da pergunta e vai para o cantinho.
     relogio() {

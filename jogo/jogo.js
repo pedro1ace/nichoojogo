@@ -570,13 +570,26 @@ function skinLiberada(skin, seq) {
   if (seq >= skin.dias) { gravarChave(`nicho:skin-liberada:${skin.id}`, "1"); return true; }
   return false;
 }
+// Teste local de skin: ?skin=laika (ou apoiador, alien, tardigrado) veste o mascote sem liberar
+// nem gravar nada. Só vale aberto do computador (file://) ou em localhost, como o ?simular-pix.
+const SKIN_TESTE = (() => {
+  const local = location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1";
+  const pedida = local ? (PARAMS.get("skin") || "").toLowerCase() : "";
+  const id = { laika: "apoiador", neil: "alien" }[pedida] || pedida;
+  return SKINS.some((k) => k.id === id) ? id : null;
+})();
+
 function skinEscolhida() {
+  if (SKIN_TESTE) return SKIN_TESTE;
   const id = lerChave("nicho:skin");
   const skin = SKINS.find((k) => k.id === id);
   return skin && skinLiberada(skin, 0) ? skin.id : "tardigrado";
 }
+// O desenho do menu e dos cartões: se a skin tiver um ícone próprio (a Laika, que na
+// cena é maior), usa ele, para caber nas telinhas de 28x16.
+const iconeDe = (s) => (s && s.icone) || s;
 function desenharSkin(tela, skin) {
-  const s = skin.criar();
+  const s = iconeDe(skin.criar());
   if (!tela || !s) return;
   const g = tela.getContext("2d");
   g.imageSmoothingEnabled = false;
@@ -644,7 +657,7 @@ function montarSkins() {
       // fecha a janela e faz o teletransporte à vista: no mascote da cena e no cartão do modo
       $("janela-skins").close();
       cena.skin(skin.id, true);
-      const de = antes.criar(), para = skin.criar();
+      const de = iconeDe(antes.criar()), para = iconeDe(skin.criar());
       if (opcoes.semEfeitos || typeof Transicao !== "object" || !de || !para) desenharMascoteDoMenu();
       else Transicao.animarCanvas($("modo-mascote"), de.andar[0], para.andar[0]);
       Som.ligar();
@@ -1453,6 +1466,8 @@ function tempoEsgotado() {
   const cat = estado.categorias[estado.rodada];
   mostrarPergunta(false);
   Som.erro();
+  // a Laika tapa os olhos de vergonha e solta um latidinho triste, bem baixinho
+  if (cena.vergonha && cena.vergonha() && Som.latidoTriste) Som.latidoTriste();
   registrar(cat, null, 0, false, 0);
   mostrarResultado(cat, null, 0, false);
 }
@@ -2320,7 +2335,7 @@ function mostrarEtapaApoio(qual) {
 function desenharLaikaApoio() {
   if (typeof criarApoiador !== "function") return;
   if (!estadoApoio.sprite) estadoApoio.sprite = criarApoiador();
-  const s = estadoApoio.sprite;
+  const s = iconeDe(estadoApoio.sprite);
   const q = opcoes.semEfeitos ? 0 : estadoApoio.quadroSprite % 4;
   for (const [id, lista] of [["apoio-mascote", s.andar], ["apoio-mascote-pago", s.feliz]]) {
     const tela = $(id);
@@ -2432,7 +2447,7 @@ function concluirApoio(codigo) {
   cena.skin("apoiador", true);
   const nova = SKINS.find((k) => k.id === "apoiador");
   if (!opcoes.semEfeitos && typeof Transicao === "object" && antes.id !== "apoiador") {
-    const de = antes.criar(), para = nova && nova.criar();
+    const de = iconeDe(antes.criar()), para = nova && iconeDe(nova.criar());
     if (de && para && !$("inicio").hidden) Transicao.animarCanvas($("modo-mascote"), de.andar[0], para.andar[0]);
     else desenharMascoteDoMenu();
   } else {

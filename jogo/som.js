@@ -254,6 +254,42 @@ const Som = (() => {
       [523.25, 659.25, 783.99, 1046.5, 1318.5].forEach((f, i) => tom(f, 0.09, { tipo: "square", volume: 0.045, atraso: 0.42 + i * 0.06 }));
       tom(2093, 0.25, { tipo: "triangle", volume: 0.035, atraso: 0.75 });
     },
+    // tempo esgotado com a Laika: um "uf" abafado e um chorinho "iiinn" descendo, bem baixinho
+    latidoTriste() {
+      if (!ac) return;
+      const t0 = ac.currentTime;
+      // "uf": sopro curto e um tom que cai, passando por um filtro de boca fechada
+      const latido = (t, f0, f1, dura, vol) => {
+        const o = ac.createOscillator(), g = ac.createGain(), fl = ac.createBiquadFilter();
+        o.type = "sawtooth";
+        o.frequency.setValueAtTime(f0, t); o.frequency.exponentialRampToValueAtTime(f1, t + dura);
+        fl.type = "lowpass"; fl.frequency.setValueAtTime(1400, t); fl.frequency.exponentialRampToValueAtTime(500, t + dura); fl.Q.value = 6;
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(vol, t + 0.012);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + dura);
+        o.connect(fl).connect(g).connect(mestre);
+        o.start(t); o.stop(t + dura + 0.05);
+      };
+      latido(t0, 560, 330, 0.11, 0.045);
+      // "iiinn": chorinho fino que desce tremendo (vibrato), duas vezes, a segunda mais curta
+      const choro = (t, f0, f1, dura, vol) => {
+        const o = ac.createOscillator(), g = ac.createGain(), fl = ac.createBiquadFilter();
+        const vib = ac.createOscillator(), vg = ac.createGain();
+        o.type = "triangle";
+        o.frequency.setValueAtTime(f0, t); o.frequency.exponentialRampToValueAtTime(f1, t + dura);
+        vib.frequency.value = 7.5; vg.gain.value = f0 * 0.025;
+        vib.connect(vg).connect(o.frequency);
+        fl.type = "lowpass"; fl.frequency.value = 1800;
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(vol, t + 0.06);
+        g.gain.setValueAtTime(vol, t + dura * 0.6);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + dura);
+        o.connect(fl).connect(g).connect(mestre);
+        [o, vib].forEach((x) => { x.start(t); x.stop(t + dura + 0.05); });
+      };
+      choro(t0 + 0.2, 980, 640, 0.55, 0.03);
+      choro(t0 + 0.85, 860, 560, 0.4, 0.022);
+    },
     tique: (urgente) => tom(urgente ? 1400 : 1000, 0.04, { volume: urgente ? 0.07 : 0.04 }),
     // pergunta nova chegou: "pi-pi-plim!" de radar, três notas rápidas subindo e um brilho no fim
     pergunta() {
