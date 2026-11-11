@@ -97,6 +97,25 @@
    "acima": 0.1689
   },
   {
+   "resposta": "Catapora",
+   "apelidos": [
+    "varicela",
+    "Zoster",
+    "chickenpox"
+   ],
+   "sem_dado": false,
+   "icf": 14.193,
+   "lembranca": 26.9159,
+   "conhecem": null,
+   "visitas": 0,
+   "ajustado": false,
+   "percentil": 0.001,
+   "fama": 0.001,
+   "pontos": 13,
+   "peso": 0.361,
+   "acima": 0.2297
+  },
+  {
    "resposta": "Caxumba",
    "apelidos": [],
    "sem_dado": false,
@@ -2097,23 +2116,6 @@
    "acima": 0.9135
   },
   {
-   "resposta": "Escorbuto",
-   "apelidos": [
-    "scurvy"
-   ],
-   "sem_dado": false,
-   "icf": 15.284,
-   "lembranca": 2.6916,
-   "conhecem": null,
-   "visitas": 0,
-   "ajustado": false,
-   "percentil": 0.029,
-   "fama": 0.029,
-   "pontos": 42,
-   "peso": 0.648,
-   "acima": 0.9135
-  },
-  {
    "resposta": "Febre maculosa",
    "apelidos": [
     "Febre de São Paulo",
@@ -2440,23 +2442,21 @@
    "acima": 0.9135
   },
   {
-   "resposta": "Catapora",
+   "resposta": "Escorbuto",
    "apelidos": [
-    "varicela",
-    "Zoster",
-    "chickenpox"
+    "scurvy"
    ],
    "sem_dado": false,
-   "icf": 14.193,
-   "lembranca": 26.9159,
+   "icf": 15.284,
+   "lembranca": 2.6916,
    "conhecem": null,
    "visitas": 0,
    "ajustado": false,
-   "percentil": 0.001,
-   "fama": 0.001,
+   "percentil": 0.029,
+   "fama": 0.029,
    "pontos": 50,
    "peso": 0.707,
-   "acima": 0.2297
+   "acima": 0.9135
   },
   {
    "resposta": "Amamentação por mães infectadas pelo HIV",
@@ -69065,5 +69065,5 @@
  ],
  "fonte_peso": "agente",
  "metodo": "simulacao",
- "supernova": "Catapora"
+ "supernova": "Escorbuto"
 }
