@@ -88,6 +88,7 @@ CREATE TABLE IF NOT EXISTS contas (
   apelido           TEXT NOT NULL,
   apelido_chave     TEXT NOT NULL UNIQUE,       -- sem acento, minúsculo, só letras e números
   apelido_escolhido INTEGER NOT NULL DEFAULT 0, -- 0 = ainda é o automático (Viajante-0000)
+  dev               INTEGER NOT NULL DEFAULT 0, -- 1 = equipe (selo DEV amarelo), decidido no login pelo e-mail do token
   trocas_dia        TEXT,                       -- limite de trocas de apelido por dia
   trocas_n          INTEGER NOT NULL DEFAULT 0,
   criada_em         TEXT NOT NULL DEFAULT (datetime('now'))

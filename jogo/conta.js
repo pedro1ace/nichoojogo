@@ -194,6 +194,7 @@ const Conta = (() => {
     $("abrir-conta").setAttribute("aria-label", conta ? `Conta: ${conta.apelido}` : "Entrar com Google");
     if (conta) {
       $("conta-apelido").textContent = conta.apelido;
+      $("conta-apelido").classList.toggle("dev", !!conta.dev);
       if (document.activeElement !== $("conta-input-apelido")) $("conta-input-apelido").value = conta.escolheuApelido ? conta.apelido : "";
       $("conta-input-apelido").placeholder = conta.apelido;
     } else {
@@ -247,11 +248,19 @@ const Conta = (() => {
       const nome = document.createElement("span");
       nome.className = "placar-nome";
       nome.textContent = linha.apelido + (linha.voce ? " (você)" : "");
+      if (linha.dev) {
+        li.classList.add("dev");
+        const selo = document.createElement("span");
+        selo.className = "selo-dev";
+        selo.textContent = "DEV";
+        selo.title = "Equipe do Nicho";
+        nome.prepend(selo);
+      }
       const pts = document.createElement("span");
       pts.className = "placar-pontos";
       pts.textContent = numero(linha.pontos);
       li.append(pos, nome, pts);
-      if (conta && !linha.voce && !/^Viajante[- ]/.test(linha.apelido)) li.append(botaoDenunciar(linha));
+      if (conta && !linha.voce && !linha.dev && !/^Viajante[- ]/.test(linha.apelido)) li.append(botaoDenunciar(linha));
       lista.append(li);
     });
     if (!p.top.length) {
