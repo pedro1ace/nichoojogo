@@ -39,8 +39,10 @@ Como funciona hoje no protótipo:
 - Sons 8-bit gerados no navegador (botão ♪ para desligar).
 - No fim: pontos, profundidade, diário de bordo com cada resposta, e um resultado em emoji para compartilhar.
   O progresso do dia fica salvo no navegador.
+- **Conta opcional com Google**: progresso salvo em qualquer aparelho e **placar do dia** (só logados, só no
+  próprio dia, fecha às 23:59). Apelidos ofensivos são barrados por listas, IA e denúncia. Detalhes: [`docs/CONTA.md`](docs/CONTA.md).
 - **Arquivos**: no menu e no fim, a lista dos dias anteriores para jogar (e jogar de novo). Só a 1ª viagem de
-  cada dia conta (e entra na curva); o placar futuro é só de quem jogou no próprio dia. Detalhes e o plano do placar: [`docs/ARQUIVOS.md`](docs/ARQUIVOS.md).
+  cada dia conta (e entra na curva); o placar é só de quem jogou no próprio dia. Detalhes e o plano do placar: [`docs/ARQUIVOS.md`](docs/ARQUIVOS.md).
 
 ## Como jogar
 
@@ -95,6 +97,9 @@ scripts/
 functions/api/pontuacao.js curva dos viajantes (Cloudflare Pages Function + D1)
 functions/api/respostas.js contagem anônima das respostas do dia (aceitas e recusadas)
 functions/api/arquivo.js   lista dos dias anteriores para a aba ARQUIVOS (só data e temas, 30 por vez)
+functions/api/conta/       conta opcional com Google e progresso salvo (docs/CONTA.md)
+functions/api/placar/      placar do dia: só logados, só no próprio dia, pontos conferidos pelo servidor
+servidor/                  código do servidor usado pelas functions (login, apelidos, placar)
 banco/schema.sql           tabela do D1 da curva
 jogar.html                 o jogo do site num arquivo só, sem as perguntas (gerado, não edite à mão)
 jogar-completo.html        o mesmo com todas as perguntas dentro, para abrir sem internet (gerado)
@@ -103,6 +108,7 @@ jogo/                      código do jogo (HTML + CSS + JS puro, sem build)
   cena.js                  cena em pixel art: fundo, Terra, planetas, foguete, mascote, textos
   som.js                   sons 8-bit (Web Audio)
   jogo.js                  regras, rodada diária, salvar e compartilhar
+  conta.js                 conta opcional, progresso salvo e placar no fim (docs/CONTA.md)
 docs/TUTORIAL.md           passo a passo para manter o jogo sozinho
 docs/PIPELINE.md           etapas do projeto e próximos passos
 docs/BANCO-DE-PALAVRAS.md  fontes de palavras, raridade, LLM e apelidos (pesquisa e proposta)
