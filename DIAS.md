@@ -179,18 +179,18 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1976 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 527 |
 | 4 | Brinquedos | Cite um brinquedo | 590 |
-| 5 | Doenças | Cite uma doença | 3980 |
-| 6 | Praias brasileiras | Cite uma praia brasileira | 836 |
+| 5 | Doenças | Cite uma doença | 3972 |
+| 6 | Praias brasileiras | Cite uma praia brasileira | 725 |
 | 7 | Coisas geladas | Cite algo gelado | 754 |
 
 ## Dia 16 · qui 12/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 206 |
+| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 199 |
 | 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 410 |
 | 3 | Coisas que dão medo | Cite algo que dá medo | 1823 |
-| 4 | Estádios de futebol | Cite um estádio de futebol | 2452 |
+| 4 | Estádios de futebol | Cite um estádio de futebol | 2411 |
 | 5 | Árvores | Cite uma árvore | 1386 |
 | 6 | Nomes masculinos | Cite um nome masculino | 2739 |
 | 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 566 |
@@ -217,15 +217,15 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Calçados e acessórios | Cite um calçado ou acessório (sapato, bolsa, joia, chapéu...) | 372 |
 | 5 | Sobrenomes | Cite um sobrenome | 3266 |
 | 6 | Animais venenosos e peçonhentos | Cite um animal venenoso ou peçonhento | 244 |
-| 7 | Carnaval | Cite algo do carnaval | 484 |
+| 7 | Carnaval | Cite algo do carnaval | 477 |
 
 ## Dia 19 · dom 15/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Sentimentos e emoções | Cite um sentimento ou emoção | 281 |
-| 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 577 |
-| 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 270 |
+| 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 568 |
+| 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 263 |
 | 4 | Cientistas e inventores | Cite um cientista ou inventor famoso | 3699 |
 | 5 | Coisas que grudam | Cite algo que gruda | 372 |
 | 6 | Aparelhos eletrônicos e eletrodomésticos | Cite um aparelho eletrônico ou eletrodoméstico | 313 |
@@ -250,7 +250,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Coisas que giram | Cite algo que gira | 379 |
 | 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1513 |
 | 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4687 |
-| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 491 |
+| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 483 |
 | 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 544 |
 | 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6853 |
 | 7 | Pratos de outros países | Cite um prato típico de outro país | 215 |
@@ -264,7 +264,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5088 |
 | 4 | Palavras aportuguesadas do inglês | Cite uma palavra do inglês aportuguesada (tipo futebol, xampu, sanduíche) | 141 |
 | 5 | Ferramentas | Cite uma ferramenta | 577 |
-| 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 344 |
+| 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 317 |
 | 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 451 |
 
 ## Dia 23 · qui 19/11/2026
@@ -298,8 +298,8 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Pilotos de Fórmula 1 | Cite um piloto de Fórmula 1 (de qualquer época) | 847 |
 | 2 | Sítio do Picapau Amarelo | Cite um personagem do Sítio do Picapau Amarelo | 69 |
 | 3 | Coisas azuis | Cite algo que é azul | 596 |
-| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2645 |
-| 5 | Flores | Cite uma flor | 498 |
+| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2642 |
+| 5 | Flores | Cite uma flor | 495 |
 | 6 | Coisas do banheiro | Cite algo que tem num banheiro | 579 |
 | 7 | Recheios de pastel | Cite um recheio de pastel | 2099 |
 
@@ -311,7 +311,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 2 | Coisas pontudas ou afiadas | Cite algo pontudo ou afiado | 410 |
 | 3 | Pontos turísticos | Cite um ponto turístico (do Brasil ou do mundo) | 2396 |
 | 4 | Hobbies e passatempos | Cite um hobby ou passatempo | 673 |
-| 5 | Sabores de sorvete | Cite um sabor de sorvete | 2801 |
+| 5 | Sabores de sorvete | Cite um sabor de sorvete | 2777 |
 | 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 38 |
 | 7 | Coisas verdes | Cite algo que é verde | 771 |
 
