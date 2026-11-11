@@ -27,6 +27,40 @@ function caberPergunta() {
 }
 addEventListener("resize", () => { if ($("pergunta") && $("pergunta").textContent) caberPergunta(); });
 
+// Teclado do celular aberto: no iPhone a página não encolhe, o navegador só rola para mostrar
+// o campo, e a pergunta sumia lá em cima. Aqui a tela do jogo passa a ocupar só a parte que
+// dá para ver (visualViewport) e o body ganha a classe "teclado", com um layout mais compacto.
+(function acompanharTeclado() {
+  const vv = window.visualViewport;
+  if (!vv) return;
+  const tela = document.getElementById("tela");
+  let largura = 0, alturaCheia = 0; // maior altura vista com esta largura (teclado fechado)
+  let aberto = false;
+  const atualizar = () => {
+    if (innerWidth !== largura) { largura = innerWidth; alturaCheia = 0; }
+    alturaCheia = Math.max(alturaCheia, innerHeight, document.documentElement.clientHeight);
+    const semZoom = Math.abs(vv.scale - 1) < 0.05;
+    const digitando = document.activeElement && document.activeElement.tagName === "INPUT";
+    const agora = semZoom && digitando && vv.height < alturaCheia - 120;
+    if (agora) {
+      tela.style.top = `${Math.round(vv.offsetTop)}px`;
+      tela.style.height = `${Math.round(vv.height)}px`;
+      tela.style.bottom = "auto";
+    } else if (aberto) {
+      tela.style.top = tela.style.height = tela.style.bottom = "";
+    }
+    if (agora !== aberto) {
+      aberto = agora;
+      document.body.classList.toggle("teclado", agora);
+      if (document.getElementById("pergunta").textContent) caberPergunta();
+    }
+  };
+  vv.addEventListener("resize", atualizar);
+  vv.addEventListener("scroll", atualizar);
+  addEventListener("focusin", () => setTimeout(atualizar, 50));
+  addEventListener("focusout", () => setTimeout(atualizar, 50));
+})();
+
 function agoraSincronizado() {
   return new Date(Date.now() + deltaServidorMs);
 }
@@ -1078,6 +1112,9 @@ function comecar() {
   // a skin só troca na tela inicial: com a viagem começada, o botão some
   $("abrir-skins").hidden = true;
   if ($("janela-skins").open) $("janela-skins").close();
+  // a conta também: trocar de conta no meio da viagem não faz sentido (volta no fim)
+  document.body.classList.add("em-viagem");
+  if ($("janela-conta") && $("janela-conta").open) $("janela-conta").close();
   if (estado.rodada === 0) {
     // sai do ladinho da Terra e desce até o céu escuro; aí começa a primeira incursão
     // modo teste: ?ir=20000 na URL começa a viagem já nesses anos-luz (para ver o fundo de perto)
@@ -1545,6 +1582,7 @@ function mostrarFim(comSom) {
   else cena.irPara(0);
   cena.limpar();
   mostrarPergunta(false);
+  document.body.classList.remove("em-viagem");
   $("fim").hidden = false;
   montarQuadrados();
   $("rotulo-rodada").textContent = "VIAGEM COMPLETA";
