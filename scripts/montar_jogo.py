@@ -187,9 +187,32 @@ def gerar_dados_js() -> str:
     return "// Gerado por scripts/montar_jogo.py. Não edite à mão.\nwindow.NICHO_DADOS = " + dados + ";\n"
 
 
+def busca_do_servidor() -> str:
+    """jogo/busca.js como módulo, para as Functions (functions/api/conferir.js) buscarem com a mesma regra."""
+    codigo = (JOGO / "busca.js").read_text(encoding="utf-8")
+    nomes = re.findall(r"^(?:function|const) ([A-Za-z_]\w*)", codigo, flags=re.M)
+    return ("// Gerado por scripts/montar_jogo.py a partir de jogo/busca.js. Não edite à mão.\n"
+            + codigo + "\nexport { " + ", ".join(nomes) + " };\n")
+
+
+def atualizar_rotas() -> None:
+    """_routes.json: os arquivos de jogo/ não passam pelas Functions (não gastam execução), menos o
+    dados.js, que tem as respostas de todos os dias e todas as singularidades. Ele passa pelo
+    functions/_middleware.js, que dá 404: fica só dentro do jogar-completo.html (o arquivo para jogar
+    sem internet). Arquivo novo em jogo/ entra sozinho na lista quando este script roda."""
+    rotas_caminho = JOGO.parent / "_routes.json"
+    rotas = json.loads(rotas_caminho.read_text(encoding="utf-8"))
+    outros = [r for r in rotas["exclude"] if not r.startswith("/jogo/")]
+    do_jogo = [f"/jogo/{a.name}" for a in sorted(JOGO.iterdir()) if a.is_file() and a.name != "dados.js"]
+    rotas["exclude"] = do_jogo + ["/jogo/"] + outros
+    rotas_caminho.write_text(json.dumps(rotas, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
 def main() -> None:
+    atualizar_rotas()
     dados_js = gerar_dados_js()
     (JOGO / "dados.js").write_text(dados_js, encoding="utf-8")
+    (JOGO.parent / "servidor" / "busca.js").write_text(busca_do_servidor(), encoding="utf-8")
 
     html = (JOGO / "index.html").read_text(encoding="utf-8")
     css = (JOGO / "estilo.css").read_text(encoding="utf-8")

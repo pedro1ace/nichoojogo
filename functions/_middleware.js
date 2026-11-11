@@ -17,6 +17,8 @@
 //
 // Os arquivos do jogo (jogo/, licencas/, favicons) nem passam por aqui: estão no
 // "exclude" do _routes.json, para não gastar uma execução por imagem ou script.
+// A exceção é o /jogo/dados.js (todas as respostas de todos os dias): ele fica fora do "exclude"
+// (o scripts/montar_jogo.py monta a lista) e cai aqui, no 404. Ver docs/CONTA.md.
 // Arquivo novo na raiz que precise ficar público (ads.txt, robots.txt...) entra em PUBLICOS.
 
 const OFICIAL = "nichoojogo.com";

@@ -966,6 +966,7 @@ dialog.janela-ok::before {
 .placar-pos { flex: none; width: 3em; font-family: var(--mono); font-size: 13px; color: var(--suave); font-variant-numeric: tabular-nums; }
 .placar-nome { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .placar-pontos { flex: none; font-weight: 700; color: var(--rosa); font-variant-numeric: tabular-nums; }
+.placar-hora { flex: none; font-size: 0.75em; color: #8c8ab8; font-variant-numeric: tabular-nums; }
 .placar-linha.podio-1 .placar-pos { color: var(--amarelo); }
 .placar-linha.podio-2 .placar-pos { color: #dfe6ff; }
 .placar-linha.podio-3 .placar-pos { color: #ffb070; }
@@ -5074,188 +5075,10 @@ function criarCena(telaPixel, telaTexto, raiz) {
 }
 </script>
   <script>
-// Nicho: regras do jogo diário.
-// Cada pergunta pede uma palavra de um tema; o jogador tem 25 segundos.
-// Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
-// Acertar a "singularidade" (a resposta secreta da pergunta; no código, "supernova") dobra os pontos.
-// Vem de outros arquivos: window.NICHO_DADOS (dados.js, baixado só se a API falhar), Som (som.js),
-// criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
-
-const RODADAS_POR_DIA = 7;
-const SEGUNDOS = 25;
-const LANCAMENTO = "2026-10-28"; // dia #1
-// Horário universal do jogo unificado com base no Brasil (Horário de Brasília / UTC-3).
-const FUSO_BRASIL = "America/Sao_Paulo";
-let deltaServidorMs = 0; // sincronização com relógio atômico de rede do servidor via header 'Date'
-
-// Pergunta longa: diminui a fonte até o cartão parar de rolar (nunca corta o texto).
-function caberPergunta() {
-  const h = $("pergunta");
-  h.style.fontSize = "";
-  requestAnimationFrame(() => {
-    const c = h.closest(".cartao");
-    let px = parseFloat(getComputedStyle(h).fontSize);
-    while (c && c.scrollHeight > c.clientHeight + 1 && px > 14) {
-      px -= 1;
-      h.style.fontSize = px + "px";
-    }
-  });
-}
-addEventListener("resize", () => { if ($("pergunta") && $("pergunta").textContent) caberPergunta(); });
-
-// Teclado do celular aberto: no iPhone a página não encolhe, o navegador só rola para mostrar
-// o campo, e a pergunta sumia lá em cima. Aqui a tela do jogo passa a ocupar só a parte que
-// dá para ver (visualViewport) e o body ganha a classe "teclado", com um layout mais compacto.
-(function acompanharTeclado() {
-  const vv = window.visualViewport;
-  if (!vv) return;
-  const tela = document.getElementById("tela");
-  let largura = 0, alturaCheia = 0; // maior altura vista com esta largura (teclado fechado)
-  let aberto = false;
-  const atualizar = () => {
-    if (innerWidth !== largura) { largura = innerWidth; alturaCheia = 0; }
-    alturaCheia = Math.max(alturaCheia, innerHeight, document.documentElement.clientHeight);
-    const semZoom = Math.abs(vv.scale - 1) < 0.05;
-    const digitando = document.activeElement && document.activeElement.tagName === "INPUT";
-    const agora = semZoom && digitando && vv.height < alturaCheia - 120;
-    if (agora) {
-      tela.style.top = `${Math.round(vv.offsetTop)}px`;
-      tela.style.height = `${Math.round(vv.height)}px`;
-      tela.style.bottom = "auto";
-    } else if (aberto) {
-      tela.style.top = tela.style.height = tela.style.bottom = "";
-    }
-    if (agora !== aberto) {
-      aberto = agora;
-      document.body.classList.toggle("teclado", agora);
-      if (document.getElementById("pergunta").textContent) caberPergunta();
-    }
-  };
-  vv.addEventListener("resize", atualizar);
-  vv.addEventListener("scroll", atualizar);
-  addEventListener("focusin", () => setTimeout(atualizar, 50));
-  addEventListener("focusout", () => setTimeout(atualizar, 50));
-})();
-
-function agoraSincronizado() {
-  return new Date(Date.now() + deltaServidorMs);
-}
-
-function hojeBrasil(d = agoraSincronizado()) {
-  try {
-    return new Intl.DateTimeFormat("en-CA", {
-      timeZone: FUSO_BRASIL,
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-    }).format(d);
-  } catch {
-    const dBr = new Date(d.getTime() - 3 * 3600000);
-    const p = (n) => String(n).padStart(2, "0");
-    return `${dBr.getUTCFullYear()}-${p(dBr.getUTCMonth() + 1)}-${p(dBr.getUTCDate())}`;
-  }
-}
-
-function somarDias(diaStr, delta) {
-  const [ano, mes, dia] = diaStr.split("-").map(Number);
-  const d = new Date(Date.UTC(ano, mes - 1, dia + delta, 12, 0, 0));
-  const p = (n) => String(n).padStart(2, "0");
-  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
-}
-
-function dataAmanhaBrasil(d = agoraSincronizado()) {
-  return somarDias(hojeBrasil(d), 1);
-}
-
-function segundosAteMeiaNoiteBrasil(agora = agoraSincronizado()) {
-  const proxDia = dataAmanhaBrasil(agora);
-  const proximaMeiaNoite = Date.parse(proxDia + "T00:00:00-03:00");
-  return Math.max(0, Math.floor((proximaMeiaNoite - agora.getTime()) / 1000));
-}
-
-const hojeLocal = hojeBrasil;
-
-// Modo teste:
-// - ?aleatorio sorteia categorias aleatórias;
-// - ?dia=6 (ou ?dia=2026-11-02) ou ?amanha carrega as 7 perguntas exatas daquele dia;
-// - ?categorias=flores,bandas joga essas categorias, na ordem (a página jogo/testes.html monta o link).
-// Em qualquer modo teste, o jogo não grava o progresso do dia nem envia dados para a API.
-const PARAMS = new URLSearchParams(location.search);
-const ALEATORIO = PARAMS.has("aleatorio");
-function dataDeTeste() {
-  if (PARAMS.has("amanha")) {
-    return dataAmanhaBrasil();
-  }
-  const pDia = PARAMS.get("dia");
-  if (!pDia) return null;
-  if (/^\d{4}-\d{2}-\d{2}$/.test(pDia)) return pDia;
-  return dataDoNumero(Number(pDia));
-}
-// "DIA #2" -> "2026-10-29"
-function dataDoNumero(n) {
-  if (!Number.isInteger(n) || n < 1 || n > 3650) return null;
-  const d = new Date(LANCAMENTO + "T12:00:00Z");
-  d.setUTCDate(d.getUTCDate() + (n - 1));
-  const p = (x) => String(x).padStart(2, "0");
-  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
-}
-const DATA_TESTE = dataDeTeste();
-const CATEGORIAS_TESTE = (PARAMS.get("categorias") || "").split(",").map((c) => c.trim()).filter(Boolean);
-const MODO_TESTE = ALEATORIO || DATA_TESTE !== null || CATEGORIAS_TESTE.length > 0;
-// ARQUIVOS (dias anteriores):
-// - No site, cada dia tem um endereço limpo: nichoojogo.com/dia/2 (o número do dia, como no jogo).
-//   O _middleware.js serve o jogo nesses caminhos. Aberto do computador ou em /jogo/ continua
-//   ?arquivo=2026-10-29. Links velhos com ?arquivo= seguem abrindo e trocam para o endereço limpo.
-// - ?arquivo=2026-11-01 abre um dia que já passou. Se você nunca jogou aquele dia, essa é a sua
-//   1ª viagem dele e fica guardada como a que conta (mas fora do dia não entra na curva nem no
-//   placar futuro). Se já jogou, mostra o relatório da sua 1ª viagem.
-// - ?arquivo=2026-11-01&novamente joga de novo um dia já terminado. Jogada extra: não conta,
-//   não substitui a 1ª e não é enviada para lugar nenhum.
-// O dia de hoje nunca abre pelo arquivo (nem tem "jogar novamente"): só dias anteriores.
-const CAMINHO_DO_DIA = /^\/dia\/(\d+)\/?$/;
-const NO_SITE = location.protocol !== "file:" && (location.pathname === "/" || CAMINHO_DO_DIA.test(location.pathname));
-const ARQUIVO = (() => {
-  const m = NO_SITE && location.pathname.match(CAMINHO_DO_DIA);
-  const d = m ? dataDoNumero(Number(m[1])) : PARAMS.get("arquivo");
-  if (MODO_TESTE || !d || !/^\d{4}-\d{2}-\d{2}$/.test(d)) return null;
-  return d >= LANCAMENTO && d < hojeLocal() ? d : null;
-})();
-// "Jogar novamente" chega como ?novamente, mas o endereço visível fica limpo. Para um F5 no meio
-// da jogada extra não virar o relatório, a aba lembra (sessionStorage) que era jogada extra.
-const CHAVE_NOVAMENTE = "nicho:novamente";
-const recarregou = () => {
-  try { return performance.getEntriesByType("navigation")[0].type === "reload"; } catch { return false; }
-};
-const NOVAMENTE = ARQUIVO !== null && (PARAMS.has("novamente") || (recarregou() && lerSessao(CHAVE_NOVAMENTE) === ARQUIVO));
-function lerSessao(k) {
-  try { return sessionStorage.getItem(k); } catch { return null; }
-}
-function esquecerNovamente() {
-  try { sessionStorage.removeItem(CHAVE_NOVAMENTE); } catch {}
-}
-if (NO_SITE) {
-  // em /dia/2 os links relativos (termos.html...) precisam partir da raiz
-  const base = document.createElement("base");
-  base.href = "/";
-  document.head.prepend(base);
-  const resto = new URLSearchParams(location.search);
-  resto.delete("arquivo");
-  resto.delete("novamente");
-  const extra = resto.toString() ? `?${resto}` : "";
-  if (ARQUIVO) {
-    if (NOVAMENTE) try { sessionStorage.setItem(CHAVE_NOVAMENTE, ARQUIVO); } catch {}
-    const limpo = `/dia/${numeroDoDia(ARQUIVO)}`;
-    history.replaceState(null, "", extra ? `${limpo}${extra}` : limpo);
-  } else if (location.pathname !== "/" || PARAMS.has("arquivo")) {
-    // /dia/ de hoje, do futuro ou inválido: abre o dia de hoje em "/"
-    history.replaceState(null, "", `/${extra}`);
-  }
-}
-// Link do botão "Apoie o criador" no fim do jogo. Enquanto estiver vazio, o botão
-// aparece como "EM BREVE" e não clica. Para ativar, cole o link entre as aspas.
-const LINK_APOIO = "";
-const LINK_JOGO = "https://nichoojogo.com";
-
+// Busca das respostas: normalização, autocorreção e as formas da mesma resposta.
+// Roda no navegador (script comum, antes do jogo.js) e no servidor: o scripts/montar_jogo.py copia
+// este arquivo para servidor/busca.js com um "export" no fim, para o /api/conferir achar as respostas
+// escondidas de quem não está logado com a mesma regra do jogo. Edite só aqui.
 // ---------- texto e autocorreção ----------
 
 // Mesma regra de scripts/pontuar.py: minúsculas, sem acento, hífen vira espaço.
@@ -5602,6 +5425,223 @@ function comoBate(texto, nomes, enfeites) {
 // "tênis de rodinha" = Patins. Com uma resposta mais rara, não: aí é pedir a revisão.
 const TETO_SINONIMO = 34;
 
+// Monta o que a busca usa para uma pergunta: grafia -> resposta, formas soltas e a lista da correção.
+function prepararCategoria(cat) {
+  const mapa = new Map();
+  for (const r of cat.respostas) {
+    for (const nome of [r.resposta, ...r.apelidos]) mapa.set(compactar(nome), { resposta: r, nome });
+  }
+  // chave solta -> resposta; null quando a mesma chave serve para duas respostas (aí não adivinha)
+  const soltas = new Map();
+  const guardar = (chave, item) => {
+    if (!chave) return;
+    const ja = soltas.get(chave);
+    if (ja === undefined) soltas.set(chave, item);
+    else if (ja && ja.resposta !== item.resposta) soltas.set(chave, null);
+  };
+  for (const r of cat.respostas) {
+    for (const nome of [r.resposta, ...r.apelidos]) {
+      const item = { resposta: r, nome: r.resposta };
+      const palavras = palavrasSoltas(nome);
+      guardar(palavras.map(radical).join(""), item);
+      const sem = tirarDaFrente(palavras, PREFIXOS_DA_LISTA[cat.id]);
+      if (sem && sem.join("").length >= 4) guardar(sem.map(radical).join(""), item);
+    }
+  }
+  // para a correção: cada grafia (nome e apelidos) com o som e a forma solta dela
+  const formas = [];
+  for (const [chave, item] of mapa) {
+    const solta = chavesSoltas(item.nome)[0];
+    formas.push({ chave, som: som(chave), solta, somSolta: som(solta), item });
+  }
+  return { ...cat, mapa, formas, soltas: SEM_FORMAS.has(cat.id) ? null : soltas };
+}
+</script>
+  <script>
+// Nicho: regras do jogo diário.
+// Cada pergunta pede uma palavra de um tema; o jogador tem 25 segundos.
+// Quanto mais nichada a resposta, mais pontos e mais fundo o foguete desce.
+// Acertar a "singularidade" (a resposta secreta da pergunta; no código, "supernova") dobra os pontos.
+// Vem de outros arquivos: window.NICHO_DADOS (dados.js, baixado só se a API falhar), Som (som.js),
+// criarCena, faixaDe, FAIXAS, viagem, DURACAO_DESCIDA (cena.js).
+
+const RODADAS_POR_DIA = 7;
+const SEGUNDOS = 25;
+const LANCAMENTO = "2026-10-28"; // dia #1
+// Horário universal do jogo unificado com base no Brasil (Horário de Brasília / UTC-3).
+const FUSO_BRASIL = "America/Sao_Paulo";
+let deltaServidorMs = 0; // sincronização com relógio atômico de rede do servidor via header 'Date'
+
+// Pergunta longa: diminui a fonte até o cartão parar de rolar (nunca corta o texto).
+function caberPergunta() {
+  const h = $("pergunta");
+  h.style.fontSize = "";
+  requestAnimationFrame(() => {
+    const c = h.closest(".cartao");
+    let px = parseFloat(getComputedStyle(h).fontSize);
+    while (c && c.scrollHeight > c.clientHeight + 1 && px > 14) {
+      px -= 1;
+      h.style.fontSize = px + "px";
+    }
+  });
+}
+addEventListener("resize", () => { if ($("pergunta") && $("pergunta").textContent) caberPergunta(); });
+
+// Teclado do celular aberto: no iPhone a página não encolhe, o navegador só rola para mostrar
+// o campo, e a pergunta sumia lá em cima. Aqui a tela do jogo passa a ocupar só a parte que
+// dá para ver (visualViewport) e o body ganha a classe "teclado", com um layout mais compacto.
+(function acompanharTeclado() {
+  const vv = window.visualViewport;
+  if (!vv) return;
+  const tela = document.getElementById("tela");
+  let largura = 0, alturaCheia = 0; // maior altura vista com esta largura (teclado fechado)
+  let aberto = false;
+  const atualizar = () => {
+    if (innerWidth !== largura) { largura = innerWidth; alturaCheia = 0; }
+    alturaCheia = Math.max(alturaCheia, innerHeight, document.documentElement.clientHeight);
+    const semZoom = Math.abs(vv.scale - 1) < 0.05;
+    const digitando = document.activeElement && document.activeElement.tagName === "INPUT";
+    const agora = semZoom && digitando && vv.height < alturaCheia - 120;
+    if (agora) {
+      tela.style.top = `${Math.round(vv.offsetTop)}px`;
+      tela.style.height = `${Math.round(vv.height)}px`;
+      tela.style.bottom = "auto";
+    } else if (aberto) {
+      tela.style.top = tela.style.height = tela.style.bottom = "";
+    }
+    if (agora !== aberto) {
+      aberto = agora;
+      document.body.classList.toggle("teclado", agora);
+      if (document.getElementById("pergunta").textContent) caberPergunta();
+    }
+  };
+  vv.addEventListener("resize", atualizar);
+  vv.addEventListener("scroll", atualizar);
+  addEventListener("focusin", () => setTimeout(atualizar, 50));
+  addEventListener("focusout", () => setTimeout(atualizar, 50));
+})();
+
+function agoraSincronizado() {
+  return new Date(Date.now() + deltaServidorMs);
+}
+
+function hojeBrasil(d = agoraSincronizado()) {
+  try {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: FUSO_BRASIL,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(d);
+  } catch {
+    const dBr = new Date(d.getTime() - 3 * 3600000);
+    const p = (n) => String(n).padStart(2, "0");
+    return `${dBr.getUTCFullYear()}-${p(dBr.getUTCMonth() + 1)}-${p(dBr.getUTCDate())}`;
+  }
+}
+
+function somarDias(diaStr, delta) {
+  const [ano, mes, dia] = diaStr.split("-").map(Number);
+  const d = new Date(Date.UTC(ano, mes - 1, dia + delta, 12, 0, 0));
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
+}
+
+function dataAmanhaBrasil(d = agoraSincronizado()) {
+  return somarDias(hojeBrasil(d), 1);
+}
+
+function segundosAteMeiaNoiteBrasil(agora = agoraSincronizado()) {
+  const proxDia = dataAmanhaBrasil(agora);
+  const proximaMeiaNoite = Date.parse(proxDia + "T00:00:00-03:00");
+  return Math.max(0, Math.floor((proximaMeiaNoite - agora.getTime()) / 1000));
+}
+
+const hojeLocal = hojeBrasil;
+
+// Modo teste:
+// - ?aleatorio sorteia categorias aleatórias;
+// - ?dia=6 (ou ?dia=2026-11-02) ou ?amanha carrega as 7 perguntas exatas daquele dia;
+// - ?categorias=flores,bandas joga essas categorias, na ordem (a página jogo/testes.html monta o link).
+// Em qualquer modo teste, o jogo não grava o progresso do dia nem envia dados para a API.
+const PARAMS = new URLSearchParams(location.search);
+const ALEATORIO = PARAMS.has("aleatorio");
+function dataDeTeste() {
+  if (PARAMS.has("amanha")) {
+    return dataAmanhaBrasil();
+  }
+  const pDia = PARAMS.get("dia");
+  if (!pDia) return null;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(pDia)) return pDia;
+  return dataDoNumero(Number(pDia));
+}
+// "DIA #2" -> "2026-10-29"
+function dataDoNumero(n) {
+  if (!Number.isInteger(n) || n < 1 || n > 3650) return null;
+  const d = new Date(LANCAMENTO + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() + (n - 1));
+  const p = (x) => String(x).padStart(2, "0");
+  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
+}
+const DATA_TESTE = dataDeTeste();
+const CATEGORIAS_TESTE = (PARAMS.get("categorias") || "").split(",").map((c) => c.trim()).filter(Boolean);
+const MODO_TESTE = ALEATORIO || DATA_TESTE !== null || CATEGORIAS_TESTE.length > 0;
+// ARQUIVOS (dias anteriores):
+// - No site, cada dia tem um endereço limpo: nichoojogo.com/dia/2 (o número do dia, como no jogo).
+//   O _middleware.js serve o jogo nesses caminhos. Aberto do computador ou em /jogo/ continua
+//   ?arquivo=2026-10-29. Links velhos com ?arquivo= seguem abrindo e trocam para o endereço limpo.
+// - ?arquivo=2026-11-01 abre um dia que já passou. Se você nunca jogou aquele dia, essa é a sua
+//   1ª viagem dele e fica guardada como a que conta (mas fora do dia não entra na curva nem no
+//   placar futuro). Se já jogou, mostra o relatório da sua 1ª viagem.
+// - ?arquivo=2026-11-01&novamente joga de novo um dia já terminado. Jogada extra: não conta,
+//   não substitui a 1ª e não é enviada para lugar nenhum.
+// O dia de hoje nunca abre pelo arquivo (nem tem "jogar novamente"): só dias anteriores.
+const CAMINHO_DO_DIA = /^\/dia\/(\d+)\/?$/;
+const NO_SITE = location.protocol !== "file:" && (location.pathname === "/" || CAMINHO_DO_DIA.test(location.pathname));
+const ARQUIVO = (() => {
+  const m = NO_SITE && location.pathname.match(CAMINHO_DO_DIA);
+  const d = m ? dataDoNumero(Number(m[1])) : PARAMS.get("arquivo");
+  if (MODO_TESTE || !d || !/^\d{4}-\d{2}-\d{2}$/.test(d)) return null;
+  return d >= LANCAMENTO && d < hojeLocal() ? d : null;
+})();
+// "Jogar novamente" chega como ?novamente, mas o endereço visível fica limpo. Para um F5 no meio
+// da jogada extra não virar o relatório, a aba lembra (sessionStorage) que era jogada extra.
+const CHAVE_NOVAMENTE = "nicho:novamente";
+const recarregou = () => {
+  try { return performance.getEntriesByType("navigation")[0].type === "reload"; } catch { return false; }
+};
+const NOVAMENTE = ARQUIVO !== null && (PARAMS.has("novamente") || (recarregou() && lerSessao(CHAVE_NOVAMENTE) === ARQUIVO));
+function lerSessao(k) {
+  try { return sessionStorage.getItem(k); } catch { return null; }
+}
+function esquecerNovamente() {
+  try { sessionStorage.removeItem(CHAVE_NOVAMENTE); } catch {}
+}
+if (NO_SITE) {
+  // em /dia/2 os links relativos (termos.html...) precisam partir da raiz
+  const base = document.createElement("base");
+  base.href = "/";
+  document.head.prepend(base);
+  const resto = new URLSearchParams(location.search);
+  resto.delete("arquivo");
+  resto.delete("novamente");
+  const extra = resto.toString() ? `?${resto}` : "";
+  if (ARQUIVO) {
+    if (NOVAMENTE) try { sessionStorage.setItem(CHAVE_NOVAMENTE, ARQUIVO); } catch {}
+    const limpo = `/dia/${numeroDoDia(ARQUIVO)}`;
+    history.replaceState(null, "", extra ? `${limpo}${extra}` : limpo);
+  } else if (location.pathname !== "/" || PARAMS.has("arquivo")) {
+    // /dia/ de hoje, do futuro ou inválido: abre o dia de hoje em "/"
+    history.replaceState(null, "", `/${extra}`);
+  }
+}
+// Link do botão "Apoie o criador" no fim do jogo. Enquanto estiver vazio, o botão
+// aparece como "EM BREVE" e não clica. Para ativar, cole o link entre as aspas.
+const LINK_APOIO = "";
+const LINK_JOGO = "https://nichoojogo.com";
+
+// (a busca das respostas está em jogo/busca.js)
+
 // ---------- dia, sorteio e progresso ----------
 
 function geradorDoDia(data) {
@@ -5940,41 +5980,12 @@ cena.aoQuadro((al) => {
   }
 });
 
-function prepararCategoria(cat) {
-  const mapa = new Map();
-  for (const r of cat.respostas) {
-    for (const nome of [r.resposta, ...r.apelidos]) mapa.set(compactar(nome), { resposta: r, nome });
-  }
-  // chave solta -> resposta; null quando a mesma chave serve para duas respostas (aí não adivinha)
-  const soltas = new Map();
-  const guardar = (chave, item) => {
-    if (!chave) return;
-    const ja = soltas.get(chave);
-    if (ja === undefined) soltas.set(chave, item);
-    else if (ja && ja.resposta !== item.resposta) soltas.set(chave, null);
-  };
-  for (const r of cat.respostas) {
-    for (const nome of [r.resposta, ...r.apelidos]) {
-      const item = { resposta: r, nome: r.resposta };
-      const palavras = palavrasSoltas(nome);
-      guardar(palavras.map(radical).join(""), item);
-      const sem = tirarDaFrente(palavras, PREFIXOS_DA_LISTA[cat.id]);
-      if (sem && sem.join("").length >= 4) guardar(sem.map(radical).join(""), item);
-    }
-  }
-  // para a correção: cada grafia (nome e apelidos) com o som e a forma solta dela
-  const formas = [];
-  for (const [chave, item] of mapa) {
-    const solta = chavesSoltas(item.nome)[0];
-    formas.push({ chave, som: som(chave), solta, somSolta: som(solta), item });
-  }
-  return { ...cat, mapa, formas, soltas: SEM_FORMAS.has(cat.id) ? null : soltas };
-}
 
 // O pacote com todas as perguntas de todos os dias (jogo/dados.js, ~9 MB) não vai mais dentro da
 // página: ela ficava com 9,7 MB e o celular travava lendo tudo antes de mostrar o jogo. Agora a
 // página só pede o dia de hoje a /api/dia (~100 KB) e só baixa o pacote se a API falhar
 // (sem internet, aberto do computador, ?aleatorio ou dia que ainda não está no banco).
+// No site o dados.js não abre mais (tem todas as respostas, docs/CONTA.md): lá o fallback só falha.
 // No jogar-completo.html (o arquivo único para abrir sem internet) o pacote já vem dentro.
 const VERSAO_DADOS = "140124862c"; // o montar_jogo.py troca pelo resumo do dados.js no jogar.html
 let promessaDadosLocais = null;
@@ -6413,26 +6424,111 @@ function palpitar(evento) {
   if (busca && !busca.exato && opcoes.semCorrecao) busca = null;
 
   if (!busca) {
-    // a mesma recusada conta uma vez por pergunta: assim "2 ou mais" no plantão são 2 jogadores, não 2 Enter
-    const chave = compactar(texto);
-    estado.anotadas ||= new Set();
-    if (texto.length >= 3 && !estado.anotadas.has(chave)) {
-      estado.anotadas.add(chave);
-      enviarResposta(cat, { recusada: texto });
-    }
-    if (texto.length >= 3 && vaiAnotar(cat)) consultarJuiz(cat, texto);
-    else recusar(cat, texto);
+    // sem login, as raras e a singularidade não vieram: pergunta ao servidor antes de recusar
+    if (cat.ocultas) conferirEscondida(cat, texto);
+    else naoAchou(cat, texto);
     return;
   }
   if (!busca.exato) {
-    // escrito quase certo: corrige no campo e espera a confirmação
-    $("sugestao").dataset.nome = busca.nome;
-    usarSugestao();
-    avisar(`Você digitou “${texto}”. Corrigido para “${busca.nome}”: aperte LANÇAR para confirmar.`, "aviso");
+    corrigirPara(texto, busca.nome);
     return;
   }
 
   pousar(cat, busca.resposta);
+}
+
+// escrito quase certo: corrige no campo e espera a confirmação
+function corrigirPara(texto, nome) {
+  $("sugestao").dataset.nome = nome;
+  usarSugestao();
+  avisar(`Você digitou “${texto}”. Corrigido para “${nome}”: aperte LANÇAR para confirmar.`, "aviso");
+}
+
+// Nem a lista nem as escondidas têm: anota como recusada e chama o juiz (ou só recusa).
+function naoAchou(cat, texto) {
+  // a mesma recusada conta uma vez por pergunta: assim "2 ou mais" no plantão são 2 jogadores, não 2 Enter
+  const chave = compactar(texto);
+  estado.anotadas ||= new Set();
+  if (texto.length >= 3 && !estado.anotadas.has(chave)) {
+    estado.anotadas.add(chave);
+    enviarResposta(cat, { recusada: texto });
+  }
+  if (texto.length >= 3 && vaiAnotar(cat)) consultarJuiz(cat, texto);
+  else recusar(cat, texto);
+}
+
+// ---------- respostas escondidas ----------
+// Quem não está logado recebe o dia de hoje sem as respostas do espaço profundo e sem a singularidade
+// (functions/api/dia.js): é para não dar para copiar as que valem mais. O que não está na lista recebida
+// é conferido em /api/conferir, com a mesma busca (jogo/busca.js). Enquanto espera, o relógio para,
+// como no juiz. Se o servidor não responder, segue como recusa.
+const ESPERA_CONFERIR = 4000;
+
+async function conferirEscondida(cat, texto) {
+  const chave = `${cat.id}:${compactar(texto)}`;
+  estado.conferidas ||= {};
+  const rodada = estado.rodada;
+  let r = estado.conferidas[chave];
+  let restaMs = null;
+  if (r === undefined) {
+    restaMs = Math.max(0, estado.fimDoTempo - performance.now());
+    pararRelogio();
+    $("palpite").disabled = true;
+    $("formulario").classList.add("esperando");
+    $("sugestao").hidden = true;
+    avisar("");
+    const parar = new AbortController();
+    const prazo = setTimeout(() => parar.abort(), ESPERA_CONFERIR);
+    r = null;
+    try {
+      const resp = await fetch("/api/conferir", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ dia: estado.data, categoria: cat.id, texto }),
+        signal: parar.signal,
+      });
+      if (resp.ok) {
+        r = await resp.json();
+        estado.conferidas[chave] = r;
+      }
+    } catch {}
+    clearTimeout(prazo);
+    $("palpite").disabled = false;
+    $("formulario").classList.remove("esperando");
+    if (estado.rodada !== rodada) return;
+  }
+  const achada = r && r.achada;
+  if (achada && (r.exato || !opcoes.semCorrecao)) {
+    if (r.supernova) {
+      cat.supernova = achada.resposta;
+      if (r.curiosidade) cat.curiosidade = r.curiosidade;
+    }
+    // entra na lista desta pergunta, para aparecer no fim junto com as outras
+    if (!cat.respostas.some((x) => x.resposta === achada.resposta)) cat.respostas.push(achada);
+    if (!r.exato) {
+      if (restaMs !== null) rodarRelogio(restaMs);
+      corrigirPara(texto, r.nome);
+      return;
+    }
+    pousar(cat, achada);
+    return;
+  }
+  if (restaMs !== null) rodarRelogio(restaMs);
+  naoAchou(cat, texto);
+}
+
+// Entrou na conta no meio do dia: baixa de novo o dia, agora com as respostas escondidas.
+async function completarRespostas() {
+  if (!estado.categorias || !estado.categorias.some((c) => c.ocultas)) return;
+  try {
+    const r = await fetch(`/api/dia?dia=${estado.data}`, { cache: "no-store" });
+    if (!r.ok) return;
+    const pacote = await r.json();
+    if (!Array.isArray(pacote.categorias) || pacote.categorias.some((c) => c.ocultas)) return;
+    estado.categorias = estado.categorias.map((c, i) =>
+      pacote.categorias[i] && pacote.categorias[i].id === c.id ? prepararCategoria(pacote.categorias[i]) : c,
+    );
+  } catch {}
 }
 
 // A resposta valeu (da lista ou aprovada pelo juiz): o tardígrado desce e aparece o resultado.
@@ -7207,7 +7303,8 @@ function montarBanco(cat, sua, suaPontos = 0) {
       }
       lista.append(li);
     }
-    rodape.textContent = `${vis.length} de ${itens.length} respostas`;
+    rodape.textContent = `${vis.length} de ${itens.length} respostas` +
+      (cat.ocultas ? " · as do espaço profundo e a singularidade aparecem para quem entra na conta" : "");
   }
   desenhar();
   banco.append(chips, campo, lista, rodape);
@@ -8028,6 +8125,7 @@ const Conta = (() => {
     window.Janelas?.confirmar($("conta-dentro"));
     envio = sincronizar().catch(() => {});
     await envio;
+    if (typeof completarRespostas === "function") await completarRespostas();
     if (!$("fim").hidden) mostrarPlacar(estado.data);
     if (!conta.escolheuApelido) {
       $("conta-msg").textContent = "Escolha como você quer aparecer no placar.";
@@ -8145,10 +8243,10 @@ const Conta = (() => {
     const lista = $("placar-lista");
     lista.innerHTML = "";
     const mostrar = mostrarTodos ? p.top : p.top.slice(0, TOP_CURTO);
-    let posicao = 0;
-    p.top.forEach((linha, i) => {
-      if (i === 0 || linha.pontos !== p.top[i - 1].pontos) posicao = i + 1;
-      if (i >= mostrar.length) return;
+    // empate: o servidor já manda na ordem de quem terminou primeiro, então cada um tem a sua posição
+    mostrar.forEach((linha, i) => {
+      const posicao = i + 1;
+      const empatado = p.top.some((o, j) => j !== i && o.pontos === linha.pontos);
       const li = document.createElement("li");
       li.className = "placar-linha" + (linha.voce ? " voce" : "") + (posicao <= 3 ? ` podio podio-${posicao}` : "");
       const pos = document.createElement("span");
@@ -8168,7 +8266,15 @@ const Conta = (() => {
       const pts = document.createElement("span");
       pts.className = "placar-pontos";
       pts.textContent = numero(linha.pontos);
-      li.append(pos, nome, pts);
+      li.append(pos, nome);
+      if (empatado && linha.hora) {
+        const hora = document.createElement("span");
+        hora.className = "placar-hora";
+        hora.textContent = linha.hora;
+        hora.title = "Empate: fica na frente quem terminou primeiro";
+        li.append(hora);
+      }
+      li.append(pts);
       if (conta && !linha.voce && !linha.dev && !/^Viajante[- ]/.test(linha.apelido)) li.append(botaoDenunciar(linha));
       lista.append(li);
     });
