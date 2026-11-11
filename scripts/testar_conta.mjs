@@ -154,6 +154,14 @@ conferir(!JSON.stringify(db.sqlite.prepare("SELECT * FROM contas").all()).includ
 await progresso.onRequestPost(pedido("/api/conta/progresso", { metodo: "POST", corpo: { registros: { [hoje]: outra } }, cookie: dev.cookie }));
 r = await ler(await placar.onRequestGet(pedido(`/api/placar?dia=${hoje}`)));
 conferir(r.corpo.top.some((l) => l.dev) && r.corpo.top.filter((l) => l.dev).length === 1, "o placar marca só a conta da equipe como DEV");
+db.sqlite.exec("CREATE TABLE IF NOT EXISTS apoios (id TEXT, codigo TEXT, status TEXT)");
+db.prepare("INSERT INTO apoios VALUES ('1', 'NICHO-ABCD-EFGH', 'approved'), ('2', 'NICHO-ZZZZ-ZZZZ', 'pending')").run();
+r = await ler(await progresso.onRequestPost(pedido("/api/conta/progresso", { metodo: "POST", corpo: { extras: { skins: ["alien", "apoiador"], skin: "apoiador", apoio: "NICHO-ZZZZ-ZZZZ" } }, cookie: bruno })));
+conferir(r.corpo.extras.skins.join() === "alien" && r.corpo.extras.skin === null, "Laika não libera sem código pago (Neil sim)");
+r = await ler(await progresso.onRequestPost(pedido("/api/conta/progresso", { metodo: "POST", corpo: { extras: { skin: "apoiador", apoio: "nicho abcd efgh" } }, cookie: bruno })));
+conferir(r.corpo.extras.skins.includes("apoiador") && r.corpo.extras.skin === "apoiador" && r.corpo.extras.apoio === "NICHO-ABCD-EFGH", "código pago libera a Laika na conta");
+r = await ler(await progresso.onRequestGet(pedido("/api/conta/progresso", { cookie: bruno })));
+conferir(r.corpo.extras.skins.includes("alien") && r.corpo.extras.apoio === "NICHO-ABCD-EFGH", "outro aparelho recebe as skins da conta");
 r = await ler(await sair.onRequestPost(pedido("/api/conta/sair", { metodo: "POST", cookie: bruno })));
 r = await ler(await conta.onRequestGet(pedido("/api/conta", { cookie: bruno })));
 conferir(r.corpo.conta === null, "sair apaga a sessão");

@@ -38,8 +38,10 @@ Os registros do navegador (`nicho:v7:<dia>`) vão para a tabela `progresso`:
 - conflito entre aparelhos: vale a viagem completa que chegou primeiro à conta (a mesma do placar);
   sem nenhuma completa, a mais adiantada.
 
-Sequência, recorde e a skin do Neil saem desses registros, então vêm junto. A Laika (apoio via Pix)
-continua com o código `NICHO-XXXX-XXXX`.
+Sequência e recorde saem desses registros, então vêm junto. As **skins** também ficam na conta
+(`contas.extras`): as liberadas, a escolhida e o código de apoiador. O Neil vem do navegador; a **Laika** só
+entra na conta com um código `NICHO-XXXX-XXXX` de Pix aprovado, conferido pelo servidor na tabela `apoios`.
+Num aparelho novo, entrar na conta já libera as duas e equipa a escolhida.
 
 ## Apelidos: como evitar nomes preconceituosos
 

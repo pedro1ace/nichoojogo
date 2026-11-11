@@ -12,6 +12,7 @@
 
 import {
   json, lerCorpo, mesmaOrigem, criarTabelas, contaDoPedido, limparRegistro, conferirPontos, hojeBrasil, diaComFormato, RODADAS,
+  lerExtras, juntarExtras,
 } from "../../../servidor/conta.js";
 
 const LANCAMENTO = "2026-10-28";
@@ -29,7 +30,8 @@ export async function onRequestGet({ request, env }) {
       registros[r.dia] = JSON.parse(r.dados);
     } catch {}
   }
-  return json({ registros });
+  const linha = await env.DB.prepare("SELECT extras FROM contas WHERE id = ?").bind(conta.id).first();
+  return json({ registros, extras: lerExtras(linha?.extras) });
 }
 
 export async function onRequestPost({ request, env }) {
@@ -40,8 +42,10 @@ export async function onRequestPost({ request, env }) {
   const conta = await contaDoPedido(request, env.DB);
   if (!conta) return json({ erro: "não está logado" }, 401);
   const corpo = await lerCorpo(request);
-  const brutos = corpo?.registros;
-  if (!brutos || typeof brutos !== "object") return json({ erro: "corpo inválido" }, 400);
+  const brutos = corpo?.registros || {};
+  if (typeof brutos !== "object") return json({ erro: "corpo inválido" }, 400);
+  // skins liberadas, a escolhida e o código de apoiador (a Laika só com código pago)
+  const extras = corpo.extras && typeof corpo.extras === "object" ? await juntarExtras(env.DB, conta.id, corpo.extras) : undefined;
 
   const hoje = hojeBrasil();
   const comandos = [];
@@ -78,5 +82,5 @@ export async function onRequestPost({ request, env }) {
       placar = { dia: hoje, pontos: v?.pontos ?? pontos };
     }
   }
-  return json({ ok: true, guardados: comandos.length, placar });
+  return json({ ok: true, guardados: comandos.length, placar, extras });
 }

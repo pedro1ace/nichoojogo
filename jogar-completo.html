@@ -7921,13 +7921,48 @@ const Conta = (() => {
   const resumoDaViagem = (r) => r && `${r.total}|${r.historico.map((h) => `${h.resposta}:${h.pontos}`).join(",")}`;
   const mesmaViagem = (a, b) => !!a && !!b && resumoDaViagem(a) === resumoDaViagem(b);
 
+  // ---------- skins ----------
+  // As skins liberadas, a escolhida e o código de apoiador (Laika) também vão para a conta.
+  const ler = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+  const gravarLocal = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+  function extrasLocais() {
+    const skins = ["alien", "apoiador"].filter((id) => ler(`nicho:skin-liberada:${id}`) === "1");
+    return { skins, skin: ler("nicho:skin"), apoio: ler("nicho:apoio-codigo") };
+  }
+  let ultimosExtras = "";
+  function aplicarExtras(e) {
+    if (!e) return;
+    let mudou = false;
+    for (const id of e.skins || []) {
+      if (ler(`nicho:skin-liberada:${id}`) !== "1") { gravarLocal(`nicho:skin-liberada:${id}`, "1"); mudou = true; }
+    }
+    if (e.apoio && !ler("nicho:apoio-codigo")) { gravarLocal("nicho:apoio-codigo", e.apoio); mudou = true; }
+    // aparelho novo (nunca escolheu skin): usa a da conta
+    if (e.skin && !ler("nicho:skin")) { gravarLocal("nicho:skin", e.skin); mudou = true; }
+    ultimosExtras = JSON.stringify(extrasLocais());
+    if (!mudou) return;
+    try {
+      cena.skin(skinEscolhida());
+      montarSkins();
+      desenharMascoteDoMenu();
+      atualizarCaixaApoio();
+    } catch {}
+  }
+  // ao fechar as janelas de skins e de apoio, manda o que mudou
+  function enviarExtras() {
+    if (!conta) return;
+    const agora = JSON.stringify(extrasLocais());
+    if (agora === ultimosExtras) return;
+    ultimosExtras = agora;
+    api("/api/conta/progresso", { method: "POST", corpo: { extras: extrasLocais() } }).catch(() => null);
+  }
+
   async function sincronizar() {
     const locais = registrosLocais();
-    if (Object.keys(locais).length) {
-      await api("/api/conta/progresso", { method: "POST", corpo: { registros: locais } }).catch(() => null);
-    }
+    await api("/api/conta/progresso", { method: "POST", corpo: { registros: locais, extras: extrasLocais() } }).catch(() => null);
     const r = await api("/api/conta/progresso").catch(() => null);
     if (!r?.ok || !r.corpo.registros) return;
+    aplicarExtras(r.corpo.extras);
     let mudouHoje = false;
     for (const [dia, daConta] of Object.entries(r.corpo.registros)) {
       const local = locais[dia];
@@ -7952,7 +7987,7 @@ const Conta = (() => {
   // jogo.js chama a cada resposta; só manda a viagem completa (1 envio por dia, não 7)
   function registroSalvo(dia, registro) {
     if (!LIGADA || !conta || !completa(registro)) return;
-    envio = api("/api/conta/progresso", { method: "POST", corpo: { registros: { [dia]: registro } } }).catch(() => null);
+    envio = api("/api/conta/progresso", { method: "POST", corpo: { registros: { [dia]: registro }, extras: extrasLocais() } }).catch(() => null);
   }
 
   // ---------- login ----------
@@ -8211,6 +8246,7 @@ const Conta = (() => {
   })();
 
   $("abrir-conta").addEventListener("click", abrir);
+  for (const id of ["janela-skins", "janela-apoio"]) $(id)?.addEventListener("close", enviarExtras);
   $("placar-entrar").addEventListener("click", abrir);
   $("placar-mais").addEventListener("click", () => { mostrarTodos = !mostrarTodos; desenharPlacar(); });
   $("conta-form-apelido").addEventListener("submit", salvarApelido);

@@ -138,7 +138,7 @@ export async function conferirTokenGoogle(token, clientId, { buscar = fetch, ago
 export const SQL_TABELAS = [
   `CREATE TABLE IF NOT EXISTS contas (
     id TEXT PRIMARY KEY, google TEXT NOT NULL UNIQUE, apelido TEXT NOT NULL, apelido_chave TEXT NOT NULL UNIQUE,
-    apelido_escolhido INTEGER NOT NULL DEFAULT 0, dev INTEGER NOT NULL DEFAULT 0, trocas_dia TEXT, trocas_n INTEGER NOT NULL DEFAULT 0,
+    apelido_escolhido INTEGER NOT NULL DEFAULT 0, dev INTEGER NOT NULL DEFAULT 0, extras TEXT, trocas_dia TEXT, trocas_n INTEGER NOT NULL DEFAULT 0,
     criada_em TEXT NOT NULL DEFAULT (datetime('now')))`,
   `CREATE TABLE IF NOT EXISTS sessoes (
     token TEXT PRIMARY KEY, conta TEXT NOT NULL, expira_em TEXT NOT NULL)`,
@@ -163,6 +163,7 @@ export async function criarTabelas(db) {
   await db.batch(SQL_TABELAS.map((s) => db.prepare(s)));
   // a coluna "dev" veio depois da tabela: acrescenta (dá erro se já existe, e tudo bem)
   await db.prepare("ALTER TABLE contas ADD COLUMN dev INTEGER NOT NULL DEFAULT 0").run().catch(() => {});
+  await db.prepare("ALTER TABLE contas ADD COLUMN extras TEXT").run().catch(() => {});
   tabelasProntas = true;
 }
 
@@ -321,6 +322,51 @@ export async function trocarApelido(env, conta, texto) {
     return { ok: false, motivo: "Esse apelido já é de outro viajante. Tente outro." };
   }
   return { ok: true, apelido: conferido.apelido };
+}
+
+// ---------- skins na conta ----------
+// Guardado em contas.extras (JSON): { skins: ["alien", "apoiador"], skin: "alien", apoio: "NICHO-XXXX-XXXX" }.
+// O Neil é só enfeite e vem do navegador (sai da sequência de dias). A Laika só entra com um código de
+// apoiador que o servidor confere na tabela "apoios" (Pix aprovado).
+const SKINS_DO_JOGO = new Set(["tardigrado", "alien", "apoiador"]);
+const ALFABETO_CODIGO = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+function normalizarCodigoApoio(texto) {
+  if (typeof texto !== "string") return null;
+  let limpo = texto.toUpperCase().replace(/[^A-Z0-9]/g, "");
+  if (limpo.startsWith("NICHO")) limpo = limpo.slice(5);
+  if (limpo.length !== 8 || [...limpo].some((c) => !ALFABETO_CODIGO.includes(c))) return null;
+  return `NICHO-${limpo.slice(0, 4)}-${limpo.slice(4)}`;
+}
+
+export function lerExtras(texto) {
+  try {
+    const e = JSON.parse(texto || "{}");
+    return { skins: Array.isArray(e.skins) ? e.skins.filter((s) => SKINS_DO_JOGO.has(s)) : [], skin: SKINS_DO_JOGO.has(e.skin) ? e.skin : null, apoio: e.apoio || null };
+  } catch {
+    return { skins: [], skin: null, apoio: null };
+  }
+}
+
+// Junta o que o navegador mandou com o que a conta já tinha. Devolve o novo extras.
+export async function juntarExtras(db, contaId, bruto) {
+  const linha = await db.prepare("SELECT extras FROM contas WHERE id = ?").bind(contaId).first();
+  const atual = lerExtras(linha?.extras);
+  const skins = new Set(atual.skins);
+  if (Array.isArray(bruto?.skins) && bruto.skins.includes("alien")) skins.add("alien");
+  let apoio = atual.apoio;
+  const codigo = normalizarCodigoApoio(bruto?.apoio);
+  if (codigo && codigo !== apoio) {
+    const pago = await db.prepare("SELECT 1 FROM apoios WHERE codigo = ? AND status = 'approved'").bind(codigo).first().catch(() => null);
+    if (pago) apoio = codigo;
+  }
+  if (apoio) skins.add("apoiador");
+  let skin = atual.skin;
+  if (typeof bruto?.skin === "string" && SKINS_DO_JOGO.has(bruto.skin) && (bruto.skin === "tardigrado" || skins.has(bruto.skin))) skin = bruto.skin;
+  const novo = { skins: [...skins], skin, apoio };
+  if (JSON.stringify(novo) !== JSON.stringify(atual)) {
+    await db.prepare("UPDATE contas SET extras = ? WHERE id = ?").bind(JSON.stringify(novo), contaId).run();
+  }
+  return novo;
 }
 
 // ---------- progresso e placar ----------
