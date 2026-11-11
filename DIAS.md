@@ -177,7 +177,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1792 |
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1976 |
-| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 664 |
+| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 527 |
 | 4 | Brinquedos | Cite um brinquedo | 590 |
 | 5 | Doenças | Cite uma doença | 3980 |
 | 6 | Praias brasileiras | Cite uma praia brasileira | 836 |
