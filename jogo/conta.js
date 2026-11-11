@@ -127,6 +127,7 @@ const Conta = (() => {
     $("conta-erro").textContent = "";
     conta = r.corpo.conta;
     atualizarJanela();
+    window.Janelas?.confirmar($("conta-dentro"));
     envio = sincronizar().catch(() => {});
     await envio;
     if (!$("fim").hidden) mostrarPlacar(estado.data);
@@ -179,6 +180,7 @@ const Conta = (() => {
       conta = { apelido: r.corpo.apelido, escolheuApelido: true };
       msg.textContent = "Apelido salvo ✓";
       msg.className = "conta-msg certo";
+      window.Janelas?.confirmar(msg);
       atualizarJanela();
       if (!$("fim").hidden) mostrarPlacar(estado.data);
     } else {
@@ -187,7 +189,16 @@ const Conta = (() => {
     }
   }
 
+  // o mascote escolhido no topo da janela (desenharSkin e SKINS vêm de jogo.js)
+  function desenharMascote() {
+    try {
+      const skin = SKINS.find((k) => k.id === skinEscolhida());
+      desenharSkin($(conta ? "conta-mascote-dentro" : "conta-mascote"), skin);
+    } catch {}
+  }
+
   function atualizarJanela() {
+    desenharMascote();
     $("conta-fora").hidden = !!conta;
     $("conta-dentro").hidden = !conta;
     $("abrir-conta").classList.toggle("logado", !!conta);

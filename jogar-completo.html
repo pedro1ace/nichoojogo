@@ -592,7 +592,7 @@ pre {
   width: min(760px, calc(100% - 32px)); height: min(80vh, 760px); max-height: calc(100% - 64px);
   padding: 0; border: 0; overflow: visible; background: transparent; color: var(--texto);
 }
-#janela-info[open] { display: flex; flex-direction: column; animation: janela-abrir 0.18s ease-out both; }
+#janela-info[open] { display: flex; flex-direction: column; }
 #janela-info::backdrop { background: rgba(4, 2, 18, 0.84); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
 #janela-quadro {
   flex: 1; width: 100%; border: 0; display: block; clip-path: var(--recorte);
@@ -602,23 +602,84 @@ pre {
   margin: 10px 0 0; text-align: center; font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em;
   color: rgba(223, 230, 255, 0.6); pointer-events: none;
 }
-@keyframes janela-abrir { from { opacity: 0; transform: translateY(8px); } }
-@media (prefers-reduced-motion: reduce) { #janela-info[open] { animation: none; } }
 
-/* Janelas de skins e de opções: quadro escuro com o X no canto */
+/* Janelas do menu (skins, opções, conta, arquivos, apoio): uma janela de computador antigo, com
+   barra de título listrada, luzinha, título em pixel e o X num botão com relevo. */
 .janela-menu {
-  width: min(440px, calc(100% - 32px)); max-height: calc(100% - 64px); padding: 0; border: 0; overflow: visible;
-  background: transparent; color: var(--texto);
+  width: min(440px, calc(100% - 32px)); max-height: calc(100% - 64px); padding: 0 14px 14px; border: 0; overflow: visible;
+  color: var(--texto);
+  background: repeating-linear-gradient(0deg, rgba(var(--luz), 0.025) 0 1px, transparent 1px 3px), #0d0929;
+  box-shadow:
+    inset 0 0 0 2px #6f5bd6, inset 0 0 0 3px #07031f, inset 0 0 0 4px rgba(95, 225, 255, 0.14),
+    0 0 0 2px #07031f, 8px 8px 0 2px rgba(0, 0, 0, 0.45), 0 0 40px rgba(150, 80, 255, 0.3);
 }
-.janela-menu[open] { display: flex; flex-direction: column; animation: janela-abrir 0.18s ease-out both; }
-.janela-menu::backdrop { background: rgba(4, 2, 18, 0.84); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
-.janela-topo { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-.janela-topo .rotulo { margin: 0; }
+.janela-menu[open] { display: flex; flex-direction: column; }
+.janela-menu::backdrop, #janela-info::backdrop { background: rgba(4, 2, 18, 0.84); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
+dialog[open]::backdrop { animation: janela-fundo 0.16s steps(4) both; }
+@keyframes janela-fundo { from { opacity: 0; } }
+.janela-topo {
+  flex: none; display: flex; align-items: center; gap: 10px; height: 38px; margin: 4px -10px 14px; padding: 0 5px 0 12px;
+  background: linear-gradient(#211862, #160f45);
+  box-shadow: inset 0 -2px 0 #07031f, inset 0 -3px 0 rgba(111, 91, 214, 0.7), inset 0 1px 0 rgba(185, 140, 255, 0.35);
+}
+/* listras da barra, entre o título e o X */
+.janela-topo::after {
+  content: ""; order: 1; flex: 1; min-width: 12px; height: 12px;
+  background: repeating-linear-gradient(180deg, rgba(95, 225, 255, 0.32) 0 2px, transparent 2px 4px);
+}
+.janela-topo .rotulo {
+  margin: 0; display: inline-flex; align-items: center; gap: 8px; min-width: 0;
+  font-family: var(--titulo); font-size: 10px; line-height: 1; letter-spacing: 0.12em; color: var(--texto);
+  text-shadow: 0 0 8px rgba(95, 225, 255, 0.5), 2px 2px 0 #07031f;
+}
+.janela-topo .rotulo::before { content: ""; flex: none; width: 8px; height: 8px; background: var(--rosa); box-shadow: 0 0 8px var(--rosa); }
+.janela-topo .titulo-arquivos::before { display: none; }
 .janela-menu .fechar {
-  width: 38px; height: 34px; padding: 0; border: 0; cursor: pointer; font-family: var(--mono); font-size: 16px; font-weight: 700;
-  background: var(--painel); color: var(--texto); clip-path: var(--recorte); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.35);
+  order: 2; flex: none; width: 30px; height: 28px; padding: 0; border: 0; cursor: pointer;
+  font-family: var(--titulo); font-size: 10px; line-height: 1; color: var(--texto);
+  background: #2a2070; box-shadow: inset 2px 2px 0 #5848c0, inset -2px -2px 0 #0b0726, 0 0 0 1px #07031f;
 }
-.janela-menu .fechar:hover, .janela-menu .fechar:focus-visible { color: var(--ciano); box-shadow: inset 0 0 0 2px var(--ciano); }
+.janela-menu .fechar:hover, .janela-menu .fechar:focus-visible { color: #fff; background: #b02a5a; box-shadow: inset 2px 2px 0 #ff7aa8, inset -2px -2px 0 #5a0f2c, 0 0 0 1px #07031f, 0 0 12px rgba(255, 79, 139, 0.6); }
+.janela-menu .fechar:active { box-shadow: inset -2px -2px 0 #5848c0, inset 2px 2px 0 #0b0726, 0 0 0 1px #07031f; }
+
+/* ---------- abrir e fechar (jogo/janelas.js) ---------- */
+/* enquanto os contornos crescem, a janela ainda não aparece (só os contornos, numa camada fixa) */
+dialog.janela-abrindo { background: transparent !important; box-shadow: none !important; }
+dialog.janela-abrindo > :not(.zoom-camada) { opacity: 0; }
+.zoom-camada { position: fixed; inset: 0; z-index: 2147483000; pointer-events: none; }
+.zoom-contorno {
+  position: absolute; box-sizing: border-box; border: 2px solid var(--ciano);
+  box-shadow: 0 0 0 1px #07031f, inset 0 0 0 1px #07031f, 0 0 12px rgba(95, 225, 255, 0.45);
+}
+.zoom-fechando .zoom-contorno { border-color: #b98cff; box-shadow: 0 0 0 1px #07031f, inset 0 0 0 1px #07031f, 0 0 12px rgba(185, 140, 255, 0.45); }
+/* o fundo escuro da janela que fechou some em passos, em vez de sumir de uma vez */
+.zoom-fundo { position: absolute; inset: 0; background: rgba(4, 2, 18, 0.84); animation: zoom-fundo 0.15s steps(3) forwards; }
+@keyframes zoom-fundo { to { opacity: 0; } }
+/* a janela "liga" como um monitor velho: um clarão em passos e uma faixa de luz descendo */
+dialog.janela-pop { animation: janela-pop 0.22s steps(4) both; }
+@keyframes janela-pop {
+  0% { transform: scale(1.02, 0.96); filter: brightness(2.2) saturate(0.6); }
+  50% { transform: scale(0.995, 1.01); filter: brightness(1.3); }
+}
+dialog.janela-pop::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(transparent, rgba(95, 225, 255, 0.16) 45%, rgba(255, 255, 255, 0.22) 50%, transparent 55%) 0 0 / 100% 300% no-repeat;
+  animation: janela-varredura 0.22s steps(5) forwards;
+}
+@keyframes janela-varredura { from { background-position: 0 100%; } to { background-position: 0 0; opacity: 0.3; } }
+dialog.janela-surge { animation: janela-surge 0.14s steps(3) both; }
+@keyframes janela-surge { from { opacity: 0; } }
+/* deu certo: a moldura pisca verde */
+dialog.janela-ok::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  box-shadow: inset 0 0 0 2px #7dffb0, inset 0 0 26px rgba(125, 255, 176, 0.25), 0 0 30px rgba(125, 255, 176, 0.55);
+  animation: janela-ok 0.8s steps(8) forwards;
+}
+@keyframes janela-ok { 0%, 40% { opacity: 1; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  dialog.janela-pop, dialog.janela-pop::after, dialog[open]::backdrop { animation: none; }
+}
+
 .grade-skins { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; overflow-y: auto; }
 .cartao-skin {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-height: 150px; padding: 14px 8px;
@@ -809,20 +870,46 @@ pre {
 
 /* ---------- conta (jogo/conta.js) ---------- */
 #abrir-conta.logado { color: var(--ciano); box-shadow: inset 0 0 0 2px rgba(95, 225, 255, 0.45); }
-.conta-corpo {
-  display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; overflow-y: auto;
-  background: rgba(12, 10, 40, 0.97); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.3);
-}
+.conta-corpo { display: flex; flex-direction: column; gap: 12px; overflow-y: auto; }
 .conta-corpo [hidden] { display: none !important; }
-#conta-fora, #conta-dentro { display: flex; flex-direction: column; gap: 10px; }
-.conta-titulo { margin: 0; font-weight: 700; font-size: 14px; letter-spacing: 0.18em; color: var(--ciano); }
-.conta-texto { margin: 0; font-size: 15px; line-height: 1.4; }
+#conta-fora, #conta-dentro { display: flex; flex-direction: column; gap: 12px; }
+/* topo: o mascote escolhido flutuando numa janelinha de "monitor" e a chamada */
+.conta-heroi { display: flex; align-items: center; gap: 14px; }
+.conta-mascote {
+  flex: none; width: 84px; height: 56px; padding: 6px; object-fit: contain; object-position: 50% 75%; image-rendering: pixelated;
+  background: radial-gradient(ellipse at 50% 60%, rgba(95, 225, 255, 0.16), transparent 70%), #07031f;
+  box-shadow: inset 0 0 0 2px #2c2470, 0 0 0 1px #07031f;
+  animation: conta-boiar 2.4s steps(4) infinite alternate;
+}
+@keyframes conta-boiar { to { object-position: 50% 25%; } }
+.conta-heroi-texto { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.conta-titulo { margin: 0; font-family: var(--titulo); font-size: 13px; line-height: 1.3; letter-spacing: 0.08em; color: var(--ciano); text-shadow: 0 0 10px rgba(95, 225, 255, 0.55), 2px 2px 0 #07031f; }
+.conta-texto { margin: 0; font-size: 14px; line-height: 1.45; color: var(--texto); }
 .conta-texto b { color: var(--amarelo); }
-.conta-vantagens { margin: 0; padding-left: 20px; font-family: var(--mono); font-size: 13px; line-height: 1.45; color: var(--suave); }
-.conta-vantagens b { color: var(--texto); }
-.conta-botao-google { display: flex; justify-content: center; min-height: 44px; }
+.conta-status { margin: 0; display: flex; align-items: center; gap: 8px; font-family: var(--titulo); font-size: 10px; letter-spacing: 0.12em; color: #7dffb0; }
+.conta-status i { width: 8px; height: 8px; background: #7dffb0; box-shadow: 0 0 8px #7dffb0; animation: respirar 1.6s ease-in-out infinite; }
+/* vantagens: duas fichas com ícone em pixel */
+.conta-vantagens { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.conta-vantagens li {
+  display: flex; align-items: center; gap: 12px; padding: 10px 12px;
+  background: rgba(20, 14, 54, 0.9); box-shadow: inset 0 0 0 1px rgba(120, 140, 220, 0.28), inset 3px 0 0 currentColor;
+}
+.conta-vantagens li.amarelo { color: var(--amarelo); }
+.conta-vantagens span { display: flex; flex-direction: column; gap: 3px; font-family: var(--mono); font-size: 12px; line-height: 1.4; color: var(--suave); }
+.conta-vantagens b { font-family: var(--corpo); font-size: 11px; letter-spacing: 0.14em; color: var(--texto); }
+.conta-icone { flex: none; width: 18px; height: 18px; filter: drop-shadow(0 0 5px currentColor); }
+/* o botão do Google numa "baia" tracejada, para não parecer colado de outro site */
+.conta-encaixe {
+  display: flex; justify-content: center; padding: 14px 10px;
+  background: repeating-linear-gradient(0deg, rgba(var(--luz), 0.03) 0 1px, transparent 1px 3px), #08051f;
+  outline: 1px dashed rgba(95, 225, 255, 0.35); outline-offset: -5px;
+}
+.conta-botao-google { display: flex; justify-content: center; min-height: 44px; align-items: center; }
 .conta-nota { margin: 0; font-family: var(--mono); font-size: 11px; line-height: 1.45; color: var(--suave); }
 .conta-nota a { color: var(--ciano); }
+.conta-nota-cadeado { display: flex; gap: 8px; align-items: flex-start; }
+.conta-nota-cadeado .conta-icone { width: 11px; height: 11px; margin-top: 2px; color: var(--suave); filter: none; }
+@media (prefers-reduced-motion: reduce) { .conta-mascote, .conta-status i { animation: none; } }
 .conta-form { display: flex; flex-direction: column; gap: 6px; }
 .conta-linha { display: flex; gap: 8px; }
 .conta-linha input {
@@ -1084,17 +1171,30 @@ pre {
     </div>
     <div class="conta-corpo">
       <div id="conta-fora">
-        <p class="conta-titulo">ENTRAR É OPCIONAL</p>
-        <p class="conta-texto">Sem conta, o jogo continua igualzinho. Com conta:</p>
+        <div class="conta-heroi">
+          <canvas id="conta-mascote" class="conta-mascote" width="28" height="16" aria-hidden="true"></canvas>
+          <div class="conta-heroi-texto">
+            <p class="conta-titulo">SALVE SUA VIAGEM</p>
+            <p class="conta-texto">Entrar é opcional. Sem conta, o jogo continua igualzinho.</p>
+          </div>
+        </div>
         <ul class="conta-vantagens">
-          <li>suas viagens, sequência e recorde ficam salvos em qualquer aparelho;</li>
-          <li>seu apelido aparece no <b>placar do dia</b>.</li>
+          <li class="ciano"><svg class="conta-icone" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M0 0h7v1h-7zM0 1h1v1h-1zM2 1h5v1h-5zM8 1h1v1h-1zM0 2h1v1h-1zM2 2h2v1h-2zM6 2h1v1h-1zM8 2h1v1h-1zM0 3h1v1h-1zM2 3h5v1h-5zM8 3h1v1h-1zM0 4h1v1h-1zM8 4h1v1h-1zM0 5h1v1h-1zM2 5h5v1h-5zM8 5h1v1h-1zM0 6h1v1h-1zM2 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM0 7h1v1h-1zM2 7h5v1h-5zM8 7h1v1h-1zM0 8h9v1h-9z"/></svg><span><b>PROGRESSO EM QUALQUER APARELHO</b>Suas viagens, sequência e recorde ficam salvos na conta.</span></li>
+          <li class="amarelo"><svg class="conta-icone" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M1 0h7v1h-7zM0 1h2v1h-2zM3 1h4v1h-4zM8 1h1v1h-1zM0 2h1v1h-1zM2 2h5v1h-5zM8 2h1v1h-1zM0 3h2v1h-2zM3 3h3v1h-3zM7 3h2v1h-2zM2 4h5v1h-5zM3 5h3v1h-3zM4 6h1v1h-1zM2 7h5v1h-5zM1 8h7v1h-7z"/></svg><span><b>PLACAR DO DIA</b>Seu apelido aparece no ranking de quem jogou hoje.</span></li>
         </ul>
-        <div id="conta-botao-google" class="conta-botao-google"></div>
-        <p class="conta-nota">Do Google guardamos só um código que identifica a conta. Nada de nome, e-mail ou foto. <a href="privacidade.html">Privacidade</a></p>
+        <div class="conta-encaixe">
+          <div id="conta-botao-google" class="conta-botao-google"></div>
+        </div>
+        <p class="conta-nota conta-nota-cadeado"><svg class="conta-icone" viewBox="0 0 7 7" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M2 0h3v1h-3zM1 1h1v1h-1zM5 1h1v1h-1zM1 2h1v1h-1zM5 2h1v1h-1zM0 3h7v1h-7zM0 4h3v1h-3zM4 4h3v1h-3zM0 5h3v1h-3zM4 5h3v1h-3zM0 6h7v1h-7z"/></svg><span>Do Google guardamos só um código que identifica a conta. Nada de nome, e-mail ou foto. <a href="privacidade.html">Privacidade</a></span></p>
       </div>
       <div id="conta-dentro" hidden>
-        <p class="conta-texto">No placar você aparece como <b id="conta-apelido"></b>.</p>
+        <div class="conta-heroi">
+          <canvas id="conta-mascote-dentro" class="conta-mascote" width="28" height="16" aria-hidden="true"></canvas>
+          <div class="conta-heroi-texto">
+            <p class="conta-status"><i aria-hidden="true"></i>CONECTADO</p>
+            <p class="conta-texto">No placar você aparece como <b id="conta-apelido"></b>.</p>
+          </div>
+        </div>
         <form id="conta-form-apelido" class="conta-form" autocomplete="off">
           <label for="conta-input-apelido" class="rotulo">APELIDO DO PLACAR</label>
           <div class="conta-linha">
@@ -1372,6 +1472,35 @@ const Som = (() => {
       tom(660, 0.06, { tipo: "square", volume: 0.07 });
       tom(1320, 0.08, { tipo: "triangle", volume: 0.06, atraso: 0.04 });
     },
+    // Sons de interface das janelas (jogo/janelas.js): baixinhos, só para o ouvido saber
+    // que algo abriu, fechou ou deu certo. Ficam bem abaixo dos sons da viagem.
+    // abrir: dois "tic" subindo e um sopro curto, como uma janela de computador antigo
+    janelaAbrir() {
+      if (!ac) return;
+      ruido(0.14, { volume: 0.018, de: 700, ate: 3400 });
+      tom(784, 0.045, { tipo: "square", volume: 0.022 });
+      tom(1175, 0.07, { tipo: "triangle", volume: 0.03, atraso: 0.045 });
+    },
+    // fechar: o mesmo, descendo
+    janelaFechar() {
+      if (!ac) return;
+      ruido(0.11, { volume: 0.014, de: 3000, ate: 600 });
+      tom(1047, 0.045, { tipo: "triangle", volume: 0.026 });
+      tom(659, 0.07, { tipo: "square", volume: 0.018, atraso: 0.04 });
+    },
+    // deu certo (login, apelido salvo, código copiado): um "tlin-tlim" curto de confirmação
+    confirmar() {
+      if (!ac) return;
+      tom(1319, 0.06, { tipo: "square", volume: 0.022 });
+      tom(1976, 0.26, { tipo: "triangle", volume: 0.04, atraso: 0.075 });
+      tom(3951, 0.18, { tipo: "sine", volume: 0.01, atraso: 0.075 }); // brilho
+    },
+    // ligar ou desligar uma chave das opções: um clique seco, mais agudo ao ligar
+    chave(ligada) {
+      if (!ac) return;
+      tom(ligada ? 1480 : 990, 0.035, { tipo: "square", volume: 0.022 });
+      tom(ligada ? 2217 : 740, 0.04, { tipo: "triangle", volume: 0.018, atraso: 0.03 });
+    },
     // passar o mouse no botão de jogar: um "tuuuuu" grave e espacial, bem baixinho
     pairar() {
       if (!ac) return;
@@ -1577,6 +1706,192 @@ const Som = (() => {
 })();
 // "const" no topo do arquivo não vira window.Som; a cena procura window.Som antes de tocar
 window.Som = Som;
+</script>
+  <script>
+// Janelas que abrem e fecham como num computador antigo: contornos saem do botão que abriu
+// e crescem em passos até o tamanho da janela (e voltam para ele ao fechar), com um "tic"
+// baixinho de interface (Som.janelaAbrir / Som.janelaFechar, que respeitam o ♪).
+//
+// Vale para todo <dialog> da página, sem mudar como o resto do código abre e fecha:
+// showModal() e close() continuam iguais (a janela fecha na hora; o contorno é só um eco).
+// Sem efeitos (opções) ou com "reduzir movimento" no aparelho: só um surgir rápido.
+//
+// Janelas.confirmar(el): som de "deu certo" e um brilho verde na janela de el.
+
+const Janelas = (() => {
+  const PASSOS_ABRIR = 6;
+  const PASSOS_FECHAR = 5;
+  const QUADRO_MS = 26; // devagar o bastante para ver cada contorno, como nos sistemas antigos
+  const RASTRO = 3; // quantos contornos ficam na tela ao mesmo tempo
+
+  const semMovimento = () =>
+    document.documentElement.classList.contains("sem-efeitos") ||
+    (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches);
+  const som = (nome) => {
+    if (typeof Som !== "object") return;
+    Som.ligar();
+    Som[nome]?.();
+  };
+
+  // o último botão tocado: é dele que a janela sai
+  let origem = null;
+  let quando = 0;
+  const marcar = (e) => {
+    const b = e.target?.closest?.("button, a, [role=button], [role=radio], [role=switch]");
+    if (b) { origem = b; quando = performance.now(); }
+  };
+  document.addEventListener("pointerdown", marcar, true);
+  document.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") marcar(e); }, true);
+
+  const visivel = (el) => {
+    if (!el || !el.isConnected) return null;
+    const r = el.getBoundingClientRect();
+    return r.width > 0 && r.height > 0 ? r : null;
+  };
+  const caixa = (r) => ({ x: r.left, y: r.top, w: r.width, h: r.height });
+  const pontinho = (r) => ({ x: r.x + r.w / 2 - 14, y: r.y + r.h / 2 - 10, w: 28, h: 20 });
+  const mistura = (a, b, t) => ({ x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, w: a.w + (b.w - a.w) * t, h: a.h + (b.h - a.h) * t });
+  // números inteiros: o contorno fica nítido, sem meio pixel borrado
+  const posicionar = (el, r) => {
+    el.style.left = Math.round(r.x) + "px";
+    el.style.top = Math.round(r.y) + "px";
+    el.style.width = Math.round(r.w) + "px";
+    el.style.height = Math.round(r.h) + "px";
+  };
+
+  // Desenha os contornos de "de" até "para", um por quadro, deixando um rastro curto.
+  function zoom(camada, de, para, passos, aoFim) {
+    const contornos = [];
+    let i = 0;
+    const quadro = () => {
+      i++;
+      const t = i / passos;
+      const r = document.createElement("i");
+      r.className = "zoom-contorno";
+      posicionar(r, mistura(de, para, t * t * (3 - 2 * t)));
+      camada.append(r);
+      contornos.push(r);
+      if (contornos.length > RASTRO) contornos.shift().remove();
+      contornos.forEach((c, k) => { c.style.opacity = String((k + 1) / contornos.length); });
+      if (i < passos) setTimeout(quadro, QUADRO_MS);
+      else setTimeout(() => { camada.remove(); aoFim?.(); }, QUADRO_MS);
+    };
+    quadro();
+  }
+
+  const dados = new WeakMap(); // janela -> { origem, rect, fim }
+
+  function aoAbrir(d) {
+    som("janelaAbrir");
+    const recente = origem && performance.now() - quando < 2000 && !d.contains(origem) ? origem : null;
+    const info = { origem: recente, rect: null, fim: null };
+    dados.set(d, info);
+    d.classList.remove("janela-pop", "janela-surge", "janela-abrindo");
+    void d.offsetWidth; // reinicia a animação se a mesma janela abrir de novo logo em seguida
+    const alvo = visivel(d);
+    if (!alvo || semMovimento()) {
+      d.classList.add("janela-surge");
+      return;
+    }
+    info.rect = caixa(alvo);
+    const de = visivel(recente) ? caixa(visivel(recente)) : pontinho(info.rect);
+    // os contornos ficam dentro da janela (camada fixa), porque só ela está acima do fundo escurecido
+    d.classList.add("janela-abrindo");
+    const camada = document.createElement("div");
+    camada.className = "zoom-camada";
+    camada.setAttribute("aria-hidden", "true");
+    d.append(camada);
+    let feito = false;
+    const terminar = () => {
+      if (feito) return;
+      feito = true;
+      camada.remove();
+      d.classList.remove("janela-abrindo");
+      if (d.open) d.classList.add("janela-pop");
+    };
+    info.fim = terminar;
+    zoom(camada, de, info.rect, PASSOS_ABRIR, terminar);
+  }
+
+  function aoFechar(d, outraAbriu) {
+    const info = dados.get(d) || {};
+    info.fim?.(); // fechou no meio da abertura
+    d.classList.remove("janela-pop", "janela-surge", "janela-abrindo");
+    if (outraAbriu) return; // trocou de janela (skins → apoio): o som e o contorno ficam com a nova
+    som("janelaFechar");
+    const rect = info.rect;
+    if (!rect || semMovimento()) return;
+    const destino = visivel(info.origem);
+    const para = destino ? caixa(destino) : pontinho(rect);
+    const camada = document.createElement("div");
+    camada.className = "zoom-camada zoom-fechando";
+    camada.setAttribute("aria-hidden", "true");
+    const fundo = document.createElement("b");
+    fundo.className = "zoom-fundo";
+    camada.append(fundo);
+    document.body.append(camada);
+    zoom(camada, rect, para, PASSOS_FECHAR);
+  }
+
+  // guarda o tamanho da janela antes de fechar (fechada, ela some e não dá mais para medir)
+  function medir(d) {
+    const r = visivel(d);
+    const info = dados.get(d);
+    if (r && info && !d.classList.contains("janela-abrindo")) info.rect = caixa(r);
+  }
+
+  function vigiar(d) {
+    if (d.dataset.janela) return;
+    d.dataset.janela = "1";
+    const fecharOriginal = d.close.bind(d);
+    d.close = (valor) => {
+      if (d.open) medir(d);
+      return valor === undefined ? fecharOriginal() : fecharOriginal(valor);
+    };
+    d.addEventListener("cancel", () => medir(d)); // Esc
+    d.addEventListener("animationend", (e) => {
+      // cada classe tem a animação de mesmo nome
+      if (e.target === d) d.classList.remove(e.animationName);
+    });
+  }
+
+  // showModal() e close() mudam o atributo "open"; o observador avisa antes da tela ser desenhada
+  const observador = new MutationObserver((mudancas) => {
+    const abriram = [];
+    const fecharam = [];
+    for (const m of mudancas) {
+      const d = m.target;
+      const agora = d.hasAttribute("open");
+      if (agora === (m.oldValue !== null)) continue;
+      (agora ? abriram : fecharam).push(d);
+    }
+    fecharam.forEach((d) => aoFechar(d, abriram.length > 0));
+    abriram.forEach(aoAbrir);
+  });
+
+  function preparar() {
+    for (const d of document.querySelectorAll("dialog")) {
+      if (typeof d.showModal !== "function") continue;
+      vigiar(d);
+      observador.observe(d, { attributes: true, attributeFilter: ["open"], attributeOldValue: true });
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", preparar);
+  else preparar();
+
+  return {
+    // "deu certo": o som de confirmação e um brilho verde passando pela janela
+    confirmar(el) {
+      som("confirmar");
+      const d = el?.closest?.("dialog");
+      if (!d || !d.open) return;
+      d.classList.remove("janela-ok");
+      void d.offsetWidth;
+      d.classList.add("janela-ok");
+    },
+  };
+})();
+window.Janelas = Janelas;
 </script>
   <script>
 // Tardígrado mascote (28x16), desenhado pixel a pixel por código.
@@ -5384,6 +5699,8 @@ function aplicarOpcoes() {
 }
 document.querySelectorAll(".opcao").forEach((b) => b.addEventListener("click", () => {
   opcoes[b.dataset.opcao] = !opcoes[b.dataset.opcao];
+  Som.ligar();
+  Som.chave(opcoes[b.dataset.opcao]);
   gravarChave("nicho:opcoes", JSON.stringify(opcoes));
   aplicarOpcoes();
 }));
@@ -7107,7 +7424,7 @@ function copiarTextoComFallback(texto, campo, botao, rotuloOk = "COPIADO ✓", r
     marcar("SELECIONADO");
   };
   try {
-    navigator.clipboard.writeText(texto).then(() => marcar(rotuloOk), selecionar);
+    navigator.clipboard.writeText(texto).then(() => { marcar(rotuloOk); window.Janelas?.confirmar(botao); }, selecionar);
   } catch {
     selecionar();
   }
@@ -7590,6 +7907,7 @@ const Conta = (() => {
     $("conta-erro").textContent = "";
     conta = r.corpo.conta;
     atualizarJanela();
+    window.Janelas?.confirmar($("conta-dentro"));
     envio = sincronizar().catch(() => {});
     await envio;
     if (!$("fim").hidden) mostrarPlacar(estado.data);
@@ -7642,6 +7960,7 @@ const Conta = (() => {
       conta = { apelido: r.corpo.apelido, escolheuApelido: true };
       msg.textContent = "Apelido salvo ✓";
       msg.className = "conta-msg certo";
+      window.Janelas?.confirmar(msg);
       atualizarJanela();
       if (!$("fim").hidden) mostrarPlacar(estado.data);
     } else {
@@ -7650,7 +7969,16 @@ const Conta = (() => {
     }
   }
 
+  // o mascote escolhido no topo da janela (desenharSkin e SKINS vêm de jogo.js)
+  function desenharMascote() {
+    try {
+      const skin = SKINS.find((k) => k.id === skinEscolhida());
+      desenharSkin($(conta ? "conta-mascote-dentro" : "conta-mascote"), skin);
+    } catch {}
+  }
+
   function atualizarJanela() {
+    desenharMascote();
     $("conta-fora").hidden = !!conta;
     $("conta-dentro").hidden = !conta;
     $("abrir-conta").classList.toggle("logado", !!conta);

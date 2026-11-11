@@ -668,6 +668,8 @@ function aplicarOpcoes() {
 }
 document.querySelectorAll(".opcao").forEach((b) => b.addEventListener("click", () => {
   opcoes[b.dataset.opcao] = !opcoes[b.dataset.opcao];
+  Som.ligar();
+  Som.chave(opcoes[b.dataset.opcao]);
   gravarChave("nicho:opcoes", JSON.stringify(opcoes));
   aplicarOpcoes();
 }));
@@ -2391,7 +2393,7 @@ function copiarTextoComFallback(texto, campo, botao, rotuloOk = "COPIADO ✓", r
     marcar("SELECIONADO");
   };
   try {
-    navigator.clipboard.writeText(texto).then(() => marcar(rotuloOk), selecionar);
+    navigator.clipboard.writeText(texto).then(() => { marcar(rotuloOk); window.Janelas?.confirmar(botao); }, selecionar);
   } catch {
     selecionar();
   }

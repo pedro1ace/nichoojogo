@@ -182,6 +182,35 @@ const Som = (() => {
       tom(660, 0.06, { tipo: "square", volume: 0.07 });
       tom(1320, 0.08, { tipo: "triangle", volume: 0.06, atraso: 0.04 });
     },
+    // Sons de interface das janelas (jogo/janelas.js): baixinhos, só para o ouvido saber
+    // que algo abriu, fechou ou deu certo. Ficam bem abaixo dos sons da viagem.
+    // abrir: dois "tic" subindo e um sopro curto, como uma janela de computador antigo
+    janelaAbrir() {
+      if (!ac) return;
+      ruido(0.14, { volume: 0.018, de: 700, ate: 3400 });
+      tom(784, 0.045, { tipo: "square", volume: 0.022 });
+      tom(1175, 0.07, { tipo: "triangle", volume: 0.03, atraso: 0.045 });
+    },
+    // fechar: o mesmo, descendo
+    janelaFechar() {
+      if (!ac) return;
+      ruido(0.11, { volume: 0.014, de: 3000, ate: 600 });
+      tom(1047, 0.045, { tipo: "triangle", volume: 0.026 });
+      tom(659, 0.07, { tipo: "square", volume: 0.018, atraso: 0.04 });
+    },
+    // deu certo (login, apelido salvo, código copiado): um "tlin-tlim" curto de confirmação
+    confirmar() {
+      if (!ac) return;
+      tom(1319, 0.06, { tipo: "square", volume: 0.022 });
+      tom(1976, 0.26, { tipo: "triangle", volume: 0.04, atraso: 0.075 });
+      tom(3951, 0.18, { tipo: "sine", volume: 0.01, atraso: 0.075 }); // brilho
+    },
+    // ligar ou desligar uma chave das opções: um clique seco, mais agudo ao ligar
+    chave(ligada) {
+      if (!ac) return;
+      tom(ligada ? 1480 : 990, 0.035, { tipo: "square", volume: 0.022 });
+      tom(ligada ? 2217 : 740, 0.04, { tipo: "triangle", volume: 0.018, atraso: 0.03 });
+    },
     // passar o mouse no botão de jogar: um "tuuuuu" grave e espacial, bem baixinho
     pairar() {
       if (!ac) return;
