@@ -1,5 +1,32 @@
 {
   "version": 1,
-  "include": ["/*"],
-  "exclude": ["/jogo/*", "/licencas/*", "/favicon.ico", "/favicon.png", "/favicon.svg", "/imagens/*"]
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/jogo/alien.js",
+    "/jogo/apoiador.js",
+    "/jogo/busca.js",
+    "/jogo/cena.js",
+    "/jogo/conta.js",
+    "/jogo/estilo.css",
+    "/jogo/favicon.png",
+    "/jogo/favicon.svg",
+    "/jogo/fonte-acentos.css",
+    "/jogo/fontes.css",
+    "/jogo/index.html",
+    "/jogo/janelas.js",
+    "/jogo/jogo.js",
+    "/jogo/mascote.js",
+    "/jogo/naves.js",
+    "/jogo/som.js",
+    "/jogo/testes.html",
+    "/jogo/transicao.js",
+    "/jogo/",
+    "/licencas/*",
+    "/favicon.ico",
+    "/favicon.png",
+    "/favicon.svg",
+    "/imagens/*"
+  ]
 }

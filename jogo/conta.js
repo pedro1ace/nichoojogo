@@ -165,6 +165,7 @@ const Conta = (() => {
     window.Janelas?.confirmar($("conta-dentro"));
     envio = sincronizar().catch(() => {});
     await envio;
+    if (typeof completarRespostas === "function") await completarRespostas();
     if (!$("fim").hidden) mostrarPlacar(estado.data);
     if (!conta.escolheuApelido) {
       $("conta-msg").textContent = "Escolha como você quer aparecer no placar.";
