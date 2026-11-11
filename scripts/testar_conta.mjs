@@ -37,9 +37,9 @@ function criarD1() {
 const { privateKey, publicKey } = generateKeyPairSync("rsa", { modulusLength: 2048 });
 const jwk = { ...publicKey.export({ format: "jwk" }), kid: "teste", alg: "RS256", use: "sig" };
 const b64 = (o) => Buffer.from(typeof o === "string" ? o : JSON.stringify(o)).toString("base64url");
-function tokenGoogle(sub, { aud = "cliente-teste", exp = Math.floor(Date.now() / 1000) + 600, iss = "https://accounts.google.com" } = {}) {
+function tokenGoogle(sub, { aud = "cliente-teste", exp = Math.floor(Date.now() / 1000) + 600, iss = "https://accounts.google.com", email = "nao-guardar@exemplo.com" } = {}) {
   const h = b64({ alg: "RS256", kid: "teste", typ: "JWT" });
-  const p = b64({ sub, aud, exp, iss, iat: Math.floor(Date.now() / 1000), email: "nao-guardar@exemplo.com" });
+  const p = b64({ sub, aud, exp, iss, iat: Math.floor(Date.now() / 1000), email, email_verified: true });
   const s = createSign("RSA-SHA256").update(`${h}.${p}`).sign(privateKey).toString("base64url");
   return `${h}.${p}.${s}`;
 }
@@ -148,14 +148,20 @@ conferir(/^Viajante-/.test(r.corpo.conta.apelido) && !r.corpo.conta.escolheuApel
 r = await ler(await apelido.onRequestPost(pedido("/api/conta/apelido", { metodo: "POST", corpo: { apelido: "Ana Astro" }, cookie: bruno })));
 conferir(r.corpo.ok === false, "apelido denunciado fica barrado para todos");
 
+const dev = await ler(await entrar.onRequestPost(pedido("/api/conta/entrar", { metodo: "POST", corpo: { credential: tokenGoogle("equipe", { email: "NichoOJogo@gmail.com" }) } })));
+conferir(dev.corpo.conta.dev === true && r.corpo.ok !== undefined, "conta da equipe ganha o selo DEV");
+conferir(!JSON.stringify(db.sqlite.prepare("SELECT * FROM contas").all()).includes("@"), "o e-mail da equipe também não é guardado");
+await progresso.onRequestPost(pedido("/api/conta/progresso", { metodo: "POST", corpo: { registros: { [hoje]: outra } }, cookie: dev.cookie }));
+r = await ler(await placar.onRequestGet(pedido(`/api/placar?dia=${hoje}`)));
+conferir(r.corpo.top.some((l) => l.dev) && r.corpo.top.filter((l) => l.dev).length === 1, "o placar marca só a conta da equipe como DEV");
 r = await ler(await sair.onRequestPost(pedido("/api/conta/sair", { metodo: "POST", cookie: bruno })));
 r = await ler(await conta.onRequestGet(pedido("/api/conta", { cookie: bruno })));
 conferir(r.corpo.conta === null, "sair apaga a sessão");
 
 r = await ler(await conta.onRequestDelete(pedido("/api/conta", { metodo: "DELETE", cookie: ana })));
 r = await ler(await placar.onRequestGet(pedido(`/api/placar?dia=${hoje}`)));
-conferir(r.corpo.total === 1, "excluir a conta tira a viagem do placar");
-conferir(db.sqlite.prepare("SELECT COUNT(*) n FROM progresso").get().n === 1, "excluir a conta apaga o progresso dela");
+conferir(r.corpo.total === 2, "excluir a conta tira a viagem do placar");
+conferir(db.sqlite.prepare("SELECT COUNT(*) n FROM progresso").get().n === 2, "excluir a conta apaga o progresso dela");
 
 console.log(falhas ? `\n${falhas} falhas` : "\ntudo certo");
 process.exit(falhas ? 1 : 0);

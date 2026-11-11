@@ -864,6 +864,15 @@ pre {
 .placar-voce { margin: 8px 0 0; font-family: var(--mono); font-size: 13px; line-height: 1.4; color: #dfe6ff; }
 .placar-voce.aviso { color: var(--amarelo); }
 .placar-entrar { margin-top: 8px; padding: 10px 16px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; font-size: 13px; letter-spacing: 0.16em; }
+
+/* conta da equipe (selo DEV, marcado pelo servidor) */
+.placar-linha.dev .placar-nome, #conta-apelido.dev { color: var(--amarelo); text-shadow: 0 0 8px rgba(255, 210, 63, 0.55); }
+.placar-linha.dev { box-shadow: inset 0 0 0 1px rgba(255, 210, 63, 0.5); }
+.placar-linha.dev.voce { box-shadow: inset 0 0 0 2px var(--amarelo); }
+.selo-dev {
+  display: inline-block; margin-right: 6px; padding: 1px 4px; vertical-align: 1px; font-family: var(--mono); font-size: 10px;
+  font-weight: 700; letter-spacing: 0.12em; color: #1a1000; background: var(--amarelo); text-shadow: none;
+}
 </style>
 </head>
 <body>
@@ -7648,6 +7657,7 @@ const Conta = (() => {
     $("abrir-conta").setAttribute("aria-label", conta ? `Conta: ${conta.apelido}` : "Entrar com Google");
     if (conta) {
       $("conta-apelido").textContent = conta.apelido;
+      $("conta-apelido").classList.toggle("dev", !!conta.dev);
       if (document.activeElement !== $("conta-input-apelido")) $("conta-input-apelido").value = conta.escolheuApelido ? conta.apelido : "";
       $("conta-input-apelido").placeholder = conta.apelido;
     } else {
@@ -7701,11 +7711,19 @@ const Conta = (() => {
       const nome = document.createElement("span");
       nome.className = "placar-nome";
       nome.textContent = linha.apelido + (linha.voce ? " (você)" : "");
+      if (linha.dev) {
+        li.classList.add("dev");
+        const selo = document.createElement("span");
+        selo.className = "selo-dev";
+        selo.textContent = "DEV";
+        selo.title = "Equipe do Nicho";
+        nome.prepend(selo);
+      }
       const pts = document.createElement("span");
       pts.className = "placar-pontos";
       pts.textContent = numero(linha.pontos);
       li.append(pos, nome, pts);
-      if (conta && !linha.voce && !/^Viajante[- ]/.test(linha.apelido)) li.append(botaoDenunciar(linha));
+      if (conta && !linha.voce && !linha.dev && !/^Viajante[- ]/.test(linha.apelido)) li.append(botaoDenunciar(linha));
       lista.append(li);
     });
     if (!p.top.length) {

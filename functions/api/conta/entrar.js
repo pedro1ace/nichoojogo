@@ -4,7 +4,7 @@
 //     -> { conta: { apelido, escolheuApelido }, nova } e o cookie da sessão
 
 import {
-  json, lerCorpo, mesmaOrigem, criarTabelas, conferirTokenGoogle, acharOuCriarConta, criarSessao, cookieDaSessao,
+  json, lerCorpo, mesmaOrigem, criarTabelas, conferirTokenGoogle, acharOuCriarConta, criarSessao, cookieDaSessao, ehDev,
 } from "../../../servidor/conta.js";
 
 export async function onRequestPost({ request, env }) {
@@ -19,10 +19,12 @@ export async function onRequestPost({ request, env }) {
   }
   await criarTabelas(env.DB);
   const { id, nova } = await acharOuCriarConta(env.DB, dados.sub);
+  // selo DEV: decidido aqui, a cada login, pelo e-mail verificado do token (não é guardado)
+  await env.DB.prepare("UPDATE contas SET dev = ? WHERE id = ?").bind(ehDev(env, dados) ? 1 : 0, id).run();
   const token = await criarSessao(env.DB, id);
-  const conta = await env.DB.prepare("SELECT apelido, apelido_escolhido FROM contas WHERE id = ?").bind(id).first();
+  const conta = await env.DB.prepare("SELECT apelido, apelido_escolhido, dev FROM contas WHERE id = ?").bind(id).first();
   return json(
-    { conta: { apelido: conta.apelido, escolheuApelido: !!conta.apelido_escolhido }, nova },
+    { conta: { apelido: conta.apelido, escolheuApelido: !!conta.apelido_escolhido, dev: !!conta.dev }, nova },
     200,
     { "set-cookie": cookieDaSessao(token, request) },
   );

@@ -24,7 +24,7 @@ export async function onRequestGet({ request, env }) {
     const [top, total, minha] = await env.DB.batch([
       env.DB.prepare(
         // apelido barrado depois de escolhido (à mão ou por denúncia) não aparece, nem antes do dono trocar
-        "SELECT v.conta AS id, CASE WHEN b.chave IS NULL THEN c.apelido ELSE 'Viajante oculto' END AS apelido, v.pontos " +
+        "SELECT v.conta AS id, CASE WHEN b.chave IS NULL THEN c.apelido ELSE 'Viajante oculto' END AS apelido, c.dev, v.pontos " +
           "FROM viagens v JOIN contas c ON c.id = v.conta LEFT JOIN apelidos_barrados b ON b.chave = c.apelido_chave AND c.apelido_escolhido = 1 " +
           "WHERE v.dia = ? AND v.no_dia = 1 ORDER BY v.pontos DESC, v.criada_em ASC LIMIT ?",
       ).bind(dia, TOP),
@@ -43,7 +43,7 @@ export async function onRequestGet({ request, env }) {
       dia,
       fechado: dia < hoje,
       total: total.results[0]?.n || 0,
-      top: top.results.map((r) => ({ id: r.id, apelido: r.apelido, pontos: r.pontos, voce: r.id === conta?.id })),
+      top: top.results.map((r) => ({ id: r.id, apelido: r.apelido, pontos: r.pontos, voce: r.id === conta?.id, ...(r.dev ? { dev: true } : {}) })),
       voce,
       logado: !!conta,
     });

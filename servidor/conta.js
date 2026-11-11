@@ -23,6 +23,14 @@ export const MAXIMO_PONTOS = 700;
 export const DENUNCIAS_PARA_ESCONDER = 3;
 export const DENUNCIAS_POR_DIA = 10; // por conta que denuncia
 export const TROCAS_DE_APELIDO_POR_DIA = 5;
+// Contas da equipe: o apelido aparece em amarelo com o selo DEV. Quem decide é o servidor, no login, pelo
+// e-mail que vem no token do Google (verificado). O e-mail é só comparado, nunca guardado.
+// Para mudar a lista sem mexer no código: variável DEV_EMAILS no Cloudflare (separados por vírgula).
+const DEVS_PADRAO = ["nichoojogo@gmail.com"];
+export const ehDev = (env, dados) => {
+  const lista = (env.DEV_EMAILS ? env.DEV_EMAILS.split(",") : DEVS_PADRAO).map((e) => e.trim().toLowerCase()).filter(Boolean);
+  return dados?.email_verified === true && typeof dados.email === "string" && lista.includes(dados.email.toLowerCase());
+};
 
 export const json = (corpo, status = 200, extras = {}) =>
   new Response(JSON.stringify(corpo), {
@@ -130,7 +138,7 @@ export async function conferirTokenGoogle(token, clientId, { buscar = fetch, ago
 export const SQL_TABELAS = [
   `CREATE TABLE IF NOT EXISTS contas (
     id TEXT PRIMARY KEY, google TEXT NOT NULL UNIQUE, apelido TEXT NOT NULL, apelido_chave TEXT NOT NULL UNIQUE,
-    apelido_escolhido INTEGER NOT NULL DEFAULT 0, trocas_dia TEXT, trocas_n INTEGER NOT NULL DEFAULT 0,
+    apelido_escolhido INTEGER NOT NULL DEFAULT 0, dev INTEGER NOT NULL DEFAULT 0, trocas_dia TEXT, trocas_n INTEGER NOT NULL DEFAULT 0,
     criada_em TEXT NOT NULL DEFAULT (datetime('now')))`,
   `CREATE TABLE IF NOT EXISTS sessoes (
     token TEXT PRIMARY KEY, conta TEXT NOT NULL, expira_em TEXT NOT NULL)`,
@@ -153,6 +161,8 @@ let tabelasProntas = false;
 export async function criarTabelas(db) {
   if (tabelasProntas) return;
   await db.batch(SQL_TABELAS.map((s) => db.prepare(s)));
+  // a coluna "dev" veio depois da tabela: acrescenta (dá erro se já existe, e tudo bem)
+  await db.prepare("ALTER TABLE contas ADD COLUMN dev INTEGER NOT NULL DEFAULT 0").run().catch(() => {});
   tabelasProntas = true;
 }
 
@@ -191,14 +201,14 @@ export async function contaDoPedido(request, db) {
   if (!token || token.length > 100) return null;
   const linha = await db
     .prepare(
-      "SELECT c.id, c.apelido, c.apelido_chave, c.apelido_escolhido, c.trocas_dia, c.trocas_n FROM sessoes s JOIN contas c ON c.id = s.conta WHERE s.token = ? AND s.expira_em > ?",
+      "SELECT c.id, c.apelido, c.apelido_chave, c.apelido_escolhido, c.dev, c.trocas_dia, c.trocas_n FROM sessoes s JOIN contas c ON c.id = s.conta WHERE s.token = ? AND s.expira_em > ?",
     )
     .bind(await resumo(token), new Date().toISOString())
     .first();
   return linha || null;
 }
 
-export const contaPublica = (c) => (c ? { apelido: c.apelido, escolheuApelido: !!c.apelido_escolhido } : null);
+export const contaPublica = (c) => (c ? { apelido: c.apelido, escolheuApelido: !!c.apelido_escolhido, dev: !!c.dev } : null);
 
 // Conta nova (1º login) ou a que já existia para aquela conta Google.
 export async function acharOuCriarConta(db, sub) {
