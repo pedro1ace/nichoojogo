@@ -282,10 +282,10 @@ const Conta = (() => {
     const lista = $("placar-lista");
     lista.innerHTML = "";
     const mostrar = mostrarTodos ? p.top : p.top.slice(0, TOP_CURTO);
-    let posicao = 0;
-    p.top.forEach((linha, i) => {
-      if (i === 0 || linha.pontos !== p.top[i - 1].pontos) posicao = i + 1;
-      if (i >= mostrar.length) return;
+    // empate: o servidor já manda na ordem de quem terminou primeiro, então cada um tem a sua posição
+    mostrar.forEach((linha, i) => {
+      const posicao = i + 1;
+      const empatado = p.top.some((o, j) => j !== i && o.pontos === linha.pontos);
       const li = document.createElement("li");
       li.className = "placar-linha" + (linha.voce ? " voce" : "") + (posicao <= 3 ? ` podio podio-${posicao}` : "");
       const pos = document.createElement("span");
@@ -305,7 +305,15 @@ const Conta = (() => {
       const pts = document.createElement("span");
       pts.className = "placar-pontos";
       pts.textContent = numero(linha.pontos);
-      li.append(pos, nome, pts);
+      li.append(pos, nome);
+      if (empatado && linha.hora) {
+        const hora = document.createElement("span");
+        hora.className = "placar-hora";
+        hora.textContent = linha.hora;
+        hora.title = "Empate: fica na frente quem terminou primeiro";
+        li.append(hora);
+      }
+      li.append(pts);
       if (conta && !linha.voce && !linha.dev && !/^Viajante[- ]/.test(linha.apelido)) li.append(botaoDenunciar(linha));
       lista.append(li);
     });

@@ -23,7 +23,7 @@ Entrar é **opcional**. Sem conta, o jogo é exatamente o mesmo de antes (progre
 4. **Pontos conferidos pelo servidor.** O navegador manda as respostas; cada uma vale no máximo os pontos
    que ela tem na lista do dia (o dobro, se é a singularidade) ou os que o juiz de IA deu. Resposta que o
    servidor não reconhece vale 0. Mexer no `localStorage` não sobe ninguém no placar.
-5. Empate: fica na frente quem terminou primeiro (a posição mostrada é a mesma para os empatados).
+5. Empate: fica na frente quem terminou primeiro, e ninguém divide posição. "Terminou" é a hora em que a viagem completa chegou ao servidor (no mesmo segundo, a ordem de chegada). Os empatados mostram essa hora (Brasília) ao lado dos pontos.
 
 Limites que continuam (já estavam em `docs/ARQUIVOS.md`): `jogo/dados.js` tem as respostas de todos
 os dias, e quem joga primeiro sem conta (ou em outra aba anônima) vê as perguntas antes. O placar é

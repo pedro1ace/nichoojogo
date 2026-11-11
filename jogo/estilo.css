@@ -871,6 +871,7 @@ dialog.janela-ok::before {
 .placar-pos { flex: none; width: 3em; font-family: var(--mono); font-size: 13px; color: var(--suave); font-variant-numeric: tabular-nums; }
 .placar-nome { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .placar-pontos { flex: none; font-weight: 700; color: var(--rosa); font-variant-numeric: tabular-nums; }
+.placar-hora { flex: none; font-size: 0.75em; color: #8c8ab8; font-variant-numeric: tabular-nums; }
 .placar-linha.podio-1 .placar-pos { color: var(--amarelo); }
 .placar-linha.podio-2 .placar-pos { color: #dfe6ff; }
 .placar-linha.podio-3 .placar-pos { color: #ffb070; }

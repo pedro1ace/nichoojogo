@@ -136,6 +136,20 @@ r = await ler(await placar.onRequestGet(pedido(`/api/placar?dia=${hoje}`, { cook
 conferir(r.corpo.total === 2 && r.corpo.top[0].apelido === "Ana Astro" && r.corpo.voce?.posicao === 2, "placar de hoje em ordem, com a posição de quem pediu");
 conferir(!r.corpo.fechado, "placar de hoje ainda está aberto");
 
+// empate: quem terminou primeiro fica na frente, cada um com a sua posição
+{
+  const pts = db.sqlite.prepare("SELECT pontos FROM viagens WHERE dia = ? ORDER BY pontos DESC").all(hoje)[0].pontos;
+  db.sqlite.prepare("INSERT INTO contas (id, google, apelido, apelido_chave) VALUES ('cedo', 'g-cedo', 'Madrugador', 'madrugador'), ('tarde', 'g-tarde', 'Atrasado', 'atrasado')").run();
+  db.sqlite.prepare("INSERT INTO viagens (conta, dia, pontos, no_dia, criada_em) VALUES ('tarde', ?, ?, 1, '2999-01-01 00:00:00'), ('cedo', ?, ?, 1, '2026-01-01 03:05:09')").run(hoje, pts, hoje, pts);
+  const e = await ler(await placar.onRequestGet(pedido(`/api/placar?dia=${hoje}`, { cookie: bruno })));
+  const nomes = e.corpo.top.map((l) => l.apelido);
+  conferir(nomes.slice(0, 3).join() === "Madrugador,Ana Astro,Atrasado", `empate desfeito por quem terminou primeiro (${nomes.join(", ")})`);
+  conferir(e.corpo.top.find((l) => l.apelido === "Madrugador").hora === "00:05:09", "a hora vem em Brasília");
+  conferir(e.corpo.voce?.posicao === e.corpo.top.findIndex((l) => l.voce) + 1, "a posição de quem pede conta o desempate");
+  db.sqlite.prepare("DELETE FROM viagens WHERE conta IN ('cedo', 'tarde')").run();
+  db.sqlite.prepare("DELETE FROM contas WHERE id IN ('cedo', 'tarde')").run();
+}
+
 // denúncias: 3 contas diferentes escondem o apelido
 const idAna = r.corpo.top[0].id;
 for (const sub of ["c1", "c2", "c3"]) {
