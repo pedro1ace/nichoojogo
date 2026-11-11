@@ -806,6 +806,64 @@ pre {
 .melhor .melhor-rotulo { color: var(--amarelo); }
 .melhor .melhor-dia { color: var(--suave); }
 .melhor-fim { margin: 10px 0 0; }
+
+/* ---------- conta (jogo/conta.js) ---------- */
+#abrir-conta.logado { color: var(--ciano); box-shadow: inset 0 0 0 2px rgba(95, 225, 255, 0.45); }
+.conta-corpo {
+  display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; overflow-y: auto;
+  background: rgba(12, 10, 40, 0.97); box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.3);
+}
+.conta-corpo [hidden] { display: none !important; }
+#conta-fora, #conta-dentro { display: flex; flex-direction: column; gap: 10px; }
+.conta-titulo { margin: 0; font-weight: 700; font-size: 14px; letter-spacing: 0.18em; color: var(--ciano); }
+.conta-texto { margin: 0; font-size: 15px; line-height: 1.4; }
+.conta-texto b { color: var(--amarelo); }
+.conta-vantagens { margin: 0; padding-left: 20px; font-family: var(--mono); font-size: 13px; line-height: 1.45; color: var(--suave); }
+.conta-vantagens b { color: var(--texto); }
+.conta-botao-google { display: flex; justify-content: center; min-height: 44px; }
+.conta-nota { margin: 0; font-family: var(--mono); font-size: 11px; line-height: 1.45; color: var(--suave); }
+.conta-nota a { color: var(--ciano); }
+.conta-form { display: flex; flex-direction: column; gap: 6px; }
+.conta-linha { display: flex; gap: 8px; }
+.conta-linha input {
+  flex: 1; min-width: 0; padding: 10px 12px; border: 0; font-family: var(--corpo); font-size: 16px; color: var(--texto);
+  background: #0b0826; box-shadow: inset 0 0 0 2px rgba(120, 140, 220, 0.45);
+}
+.conta-linha input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ciano); }
+.conta-linha button { padding: 0 14px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; font-size: 12px; letter-spacing: 0.14em; }
+.conta-dica { margin: 0; font-family: var(--mono); font-size: 11px; line-height: 1.45; color: var(--suave); }
+.conta-msg { margin: 0; font-family: var(--mono); font-size: 12px; line-height: 1.4; color: var(--suave); }
+.conta-msg:empty { display: none; }
+.conta-msg.erro { color: var(--vermelho); }
+.conta-msg.certo { color: #7dffb0; }
+.conta-botoes { display: flex; gap: 8px; flex-wrap: wrap; }
+.conta-botoes button { flex: 1; min-width: 130px; padding: 10px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; font-size: 12px; letter-spacing: 0.14em; }
+.conta-perigo { color: var(--vermelho) !important; }
+
+/* placar do dia, no fim */
+.placar-lista { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.placar-linha {
+  display: flex; align-items: center; gap: 10px; padding: 7px 10px; font-size: 15px;
+  background: rgba(12, 10, 40, 0.85); box-shadow: inset 0 0 0 1px rgba(120, 140, 220, 0.25);
+}
+.placar-pos { flex: none; width: 3em; font-family: var(--mono); font-size: 13px; color: var(--suave); font-variant-numeric: tabular-nums; }
+.placar-nome { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.placar-pontos { flex: none; font-weight: 700; color: var(--rosa); font-variant-numeric: tabular-nums; }
+.placar-linha.podio-1 .placar-pos { color: var(--amarelo); }
+.placar-linha.podio-2 .placar-pos { color: #dfe6ff; }
+.placar-linha.podio-3 .placar-pos { color: #ffb070; }
+.placar-linha.voce { box-shadow: inset 0 0 0 2px var(--ciano); }
+.placar-linha.voce .placar-nome { color: var(--ciano); }
+.placar-vazio { padding: 8px 0; font-family: var(--mono); font-size: 13px; color: var(--suave); }
+.placar-denunciar {
+  flex: none; padding: 2px 6px; border: 0; cursor: pointer; background: transparent; color: rgba(179, 187, 223, 0.55);
+  font-family: var(--mono); font-size: 12px;
+}
+.placar-denunciar:hover, .placar-denunciar:focus-visible, .placar-denunciar.armado { color: var(--vermelho); }
+.placar-mais { margin: 6px 0 0; padding: 0; border: 0; background: none; cursor: pointer; font-family: var(--mono); font-size: 12px; color: var(--ciano); text-decoration: underline; }
+.placar-voce { margin: 8px 0 0; font-family: var(--mono); font-size: 13px; line-height: 1.4; color: #dfe6ff; }
+.placar-voce.aviso { color: var(--amarelo); }
+.placar-entrar { margin-top: 8px; padding: 10px 16px; border: 0; cursor: pointer; font-family: var(--corpo); font-weight: 700; font-size: 13px; letter-spacing: 0.16em; }
 </style>
 </head>
 <body>
@@ -832,6 +890,7 @@ pre {
     <div id="lateral">
       <button id="som" type="button" aria-label="Ligar ou desligar o som">♪</button>
       <button id="abrir-opcoes" type="button" aria-label="Opções" aria-haspopup="dialog"><svg viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM7 1h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM8 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM8 4h1v1h-1zM0 5h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM8 5h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM1 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM7 7h1v1h-1zM3 8h1v1h-1zM4 8h1v1h-1zM5 8h1v1h-1z"/></svg></button>
+      <button id="abrir-conta" type="button" aria-label="Entrar com Google" aria-haspopup="dialog" hidden><svg viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM1 7h1v1h-1zM2 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1zM8 7h1v1h-1zM0 8h1v1h-1zM1 8h1v1h-1zM2 8h1v1h-1zM3 8h1v1h-1zM4 8h1v1h-1zM5 8h1v1h-1zM6 8h1v1h-1zM7 8h1v1h-1zM8 8h1v1h-1z"/></svg></button>
       <button id="abrir-skins" type="button" aria-label="Skins" aria-haspopup="dialog"><svg viewBox="0 0 11 8" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM7 0h1v1h-1zM8 0h1v1h-1zM9 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM7 1h1v1h-1zM8 1h1v1h-1zM9 1h1v1h-1zM10 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM9 2h1v1h-1zM10 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM9 3h1v1h-1zM10 3h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1z"/></svg></button>
     </div>
 
@@ -917,6 +976,14 @@ pre {
           </div>
           <p id="curva-texto"></p>
         </div>
+        <!-- placar do dia: só quem estava logado e jogou no próprio dia (jogo/conta.js, /api/placar) -->
+        <div id="secao-placar" class="secao" hidden>
+          <p class="rotulo">PLACAR DO DIA <span id="placar-estado" class="suave"></span></p>
+          <ol id="placar-lista" class="placar-lista"></ol>
+          <button id="placar-mais" type="button" class="placar-mais" hidden></button>
+          <p id="placar-voce" class="placar-voce"></p>
+          <button id="placar-entrar" type="button" class="botao-rosa placar-entrar" aria-haspopup="dialog" hidden>ENTRAR COM GOOGLE</button>
+        </div>
         <div class="diario secao">
           <p class="rotulo">DIÁRIO DE BORDO <span class="suave">· mais fundo = mais raro</span></p>
           <div id="grafico"></div>
@@ -998,6 +1065,43 @@ pre {
         <span class="opcao-texto"><b>SEM EFEITOS</b><span>Sem tremor, clarões e enfeites. O cenário fica simples e leve, sem planetas e curiosidades.</span></span>
         <span class="chave" aria-hidden="true"><i></i></span>
       </button>
+    </div>
+  </dialog>
+  <!-- conta opcional com Google: progresso em qualquer aparelho e placar do dia (jogo/conta.js) -->
+  <dialog id="janela-conta" class="janela-menu" aria-labelledby="titulo-conta">
+    <div class="janela-topo">
+      <p id="titulo-conta" class="rotulo">CONTA</p>
+      <button type="button" class="fechar" aria-label="Fechar">X</button>
+    </div>
+    <div class="conta-corpo">
+      <div id="conta-fora">
+        <p class="conta-titulo">ENTRAR É OPCIONAL</p>
+        <p class="conta-texto">Sem conta, o jogo continua igualzinho. Com conta:</p>
+        <ul class="conta-vantagens">
+          <li>suas viagens, sequência e recorde ficam salvos em qualquer aparelho;</li>
+          <li>seu apelido aparece no <b>placar do dia</b>.</li>
+        </ul>
+        <div id="conta-botao-google" class="conta-botao-google"></div>
+        <p class="conta-nota">Do Google guardamos só um código que identifica a conta. Nada de nome, e-mail ou foto. <a href="privacidade.html">Privacidade</a></p>
+      </div>
+      <div id="conta-dentro" hidden>
+        <p class="conta-texto">No placar você aparece como <b id="conta-apelido"></b>.</p>
+        <form id="conta-form-apelido" class="conta-form" autocomplete="off">
+          <label for="conta-input-apelido" class="rotulo">APELIDO DO PLACAR</label>
+          <div class="conta-linha">
+            <input id="conta-input-apelido" type="text" minlength="3" maxlength="16" spellcheck="false" autocapitalize="off">
+            <button type="submit" class="botao-rosa">SALVAR</button>
+          </div>
+          <p class="conta-dica">De 3 a 16 letras ou números. Apelido com palavrão, ofensa ou preconceito é barrado, e qualquer viajante pode denunciar (⚑) no placar.</p>
+          <p id="conta-msg" class="conta-msg" role="status"></p>
+        </form>
+        <p class="conta-nota">O placar de cada dia fecha às 23:59 (horário de Brasília). Só entra a 1ª viagem feita no próprio dia, com você logado.</p>
+        <div class="conta-botoes">
+          <button id="conta-sair" type="button" class="botao-escuro">SAIR</button>
+          <button id="conta-excluir" type="button" class="botao-escuro conta-perigo">EXCLUIR CONTA</button>
+        </div>
+      </div>
+      <p id="conta-erro" class="conta-msg erro" role="alert"></p>
     </div>
   </dialog>
   <!-- apoio ao criador: Pix pelo Mercado Pago, libera a skin Laika quando confirmado -->
@@ -5372,6 +5476,8 @@ function salvarProgresso() {
   try {
     localStorage.setItem(estado.replay ? chaveReplay(estado.data) : chaveOficial(estado.data), JSON.stringify(registro));
   } catch {}
+  // com conta (jogo/conta.js): a 1ª viagem completa também fica na conta, e a de hoje vai para o placar
+  if (!estado.replay && typeof Conta !== "undefined") Conta.registroSalvo(estado.data, registro);
 }
 function lerProgresso() {
   if (MODO_TESTE) return null;
@@ -6154,6 +6260,7 @@ function mostrarFim(comSom) {
   $("fim-comparacao").textContent = `Em média, suas respostas foram mais nichadas que as de ${Math.min(99, Math.round(media * 100))}% dos jogadores.`;
   montarGrafico();
   mostrarCurva();
+  if (typeof Conta !== "undefined") Conta.mostrarPlacar(estado.data);
   montarFaixas();
   montarRespostas();
 
@@ -7343,6 +7450,342 @@ $("som").addEventListener("click", () => {
 });
 
 iniciar();
+</script>
+  <script>
+// Conta opcional com Google, progresso salvo na conta e placar do dia.
+// Servidor: functions/api/conta/ e functions/api/placar/ (regras em servidor/conta.js e docs/CONTA.md).
+//
+// Sem conta, o jogo é exatamente o mesmo de antes. Com conta:
+//   - as viagens guardadas no navegador (nicho:v7:<dia>) também ficam na conta, e outro aparelho
+//     recebe tudo ao entrar (sequência, recorde e skins vêm junto, porque saem desses registros);
+//   - a viagem completa de HOJE entra no placar do dia (o servidor confere o relógio e os pontos).
+// Aberto do computador (file://), em /jogo/ ou nos modos de teste, nada disto aparece.
+// Vem de jogo.js: estado, $, MODO_TESTE, RODADAS_POR_DIA, completa, hojeLocal, numero, dataCurta,
+// mostrarMelhor, mostrarDiaESequencia, abrirJanela.
+
+const Conta = (() => {
+  const LIGADA = location.protocol !== "file:" && !MODO_TESTE && !/\/jogo\//.test(location.pathname);
+  const GSI = "https://accounts.google.com/gsi/client";
+  const TOP_CURTO = 10;
+  let google = null; // client id do Google, ou null (login desligado no servidor)
+  let conta = null; // { apelido, escolheuApelido }
+  let envio = Promise.resolve(); // último envio de progresso (o placar espera ele terminar)
+  let ultimoPlacar = null;
+  let mostrarTodos = false;
+
+  const api = (caminho, opcoes = {}) =>
+    fetch(caminho, {
+      credentials: "same-origin",
+      ...opcoes,
+      headers: { "content-type": "application/json", ...(opcoes.headers || {}) },
+      body: opcoes.corpo !== undefined ? JSON.stringify(opcoes.corpo) : undefined,
+    }).then(async (r) => ({ ok: r.ok, status: r.status, corpo: await r.json().catch(() => ({})) }));
+
+  // ---------- progresso ----------
+
+  function registrosLocais() {
+    const saida = {};
+    try {
+      for (const k of Object.keys(localStorage)) {
+        if (!k.startsWith("nicho:v7:")) continue;
+        const r = JSON.parse(localStorage.getItem(k) || "null");
+        if (r && Array.isArray(r.historico) && r.historico.length) saida[k.slice(9)] = r;
+      }
+    } catch {}
+    return saida;
+  }
+
+  // O que vale quando o navegador e a conta têm o mesmo dia: a completa (a 1ª que chegou à conta é a que
+  // conta, como no placar) ou, se nenhuma terminou, a mais adiantada.
+  function escolher(local, daConta) {
+    if (!local) return daConta;
+    if (completa(daConta)) return daConta;
+    if (completa(local)) return local;
+    return daConta.historico.length > local.historico.length ? daConta : local;
+  }
+
+  // a conta guarda uma cópia limpa do registro: compara o que importa
+  const resumoDaViagem = (r) => r && `${r.total}|${r.historico.map((h) => `${h.resposta}:${h.pontos}`).join(",")}`;
+  const mesmaViagem = (a, b) => !!a && !!b && resumoDaViagem(a) === resumoDaViagem(b);
+
+  async function sincronizar() {
+    const locais = registrosLocais();
+    if (Object.keys(locais).length) {
+      await api("/api/conta/progresso", { method: "POST", corpo: { registros: locais } }).catch(() => null);
+    }
+    const r = await api("/api/conta/progresso").catch(() => null);
+    if (!r?.ok || !r.corpo.registros) return;
+    let mudouHoje = false;
+    for (const [dia, daConta] of Object.entries(r.corpo.registros)) {
+      const local = locais[dia];
+      const vale = escolher(local, daConta);
+      if (vale === local || mesmaViagem(vale, local)) continue;
+      try { localStorage.setItem(`nicho:v7:${dia}`, JSON.stringify(vale)); } catch {}
+      if (dia === estado.data && !estado.replay) mudouHoje = true;
+    }
+    // o dia aberto mudou (terminado em outro aparelho): recarrega, se não estiver no meio da viagem
+    const parado = !$("inicio").hidden || !$("fim").hidden;
+    const chave = `nicho:recarregou:${estado.data}`;
+    let jaRecarregou = false;
+    try { jaRecarregou = sessionStorage.getItem(chave) === "1"; } catch {}
+    if (mudouHoje && parado && !estado.ativa && !jaRecarregou) {
+      try { sessionStorage.setItem(chave, "1"); } catch {}
+      location.reload();
+      return;
+    }
+    try { mostrarMelhor(); mostrarDiaESequencia(); } catch {}
+  }
+
+  // jogo.js chama a cada resposta; só manda a viagem completa (1 envio por dia, não 7)
+  function registroSalvo(dia, registro) {
+    if (!LIGADA || !conta || !completa(registro)) return;
+    envio = api("/api/conta/progresso", { method: "POST", corpo: { registros: { [dia]: registro } } }).catch(() => null);
+  }
+
+  // ---------- login ----------
+
+  let promessaGsi = null;
+  function carregarGsi() {
+    if (window.google?.accounts?.id) return Promise.resolve(true);
+    promessaGsi ||= new Promise((pronto) => {
+      const s = document.createElement("script");
+      s.src = GSI;
+      s.async = true;
+      s.onload = () => pronto(true);
+      s.onerror = () => { promessaGsi = null; pronto(false); };
+      document.head.append(s);
+    });
+    return promessaGsi;
+  }
+
+  async function mostrarBotaoGoogle() {
+    const lugar = $("conta-botao-google");
+    if (!google || lugar.dataset.pronto) return;
+    $("conta-erro").textContent = "";
+    if (!(await carregarGsi())) {
+      $("conta-erro").textContent = "Não deu para carregar o login do Google. Confira a conexão (ou um bloqueador de anúncios) e tente de novo.";
+      return;
+    }
+    window.google.accounts.id.initialize({ client_id: google, callback: aoEntrar, ux_mode: "popup", cancel_on_tap_outside: true });
+    window.google.accounts.id.renderButton(lugar, { theme: "filled_black", size: "large", text: "signin_with", shape: "rectangular", locale: "pt-BR", width: 260 });
+    lugar.dataset.pronto = "1";
+  }
+
+  async function aoEntrar(resposta) {
+    $("conta-erro").textContent = "Entrando…";
+    const r = await api("/api/conta/entrar", { method: "POST", corpo: { credential: resposta.credential } }).catch(() => null);
+    if (!r?.ok) {
+      $("conta-erro").textContent = "Não deu para entrar agora. Tente de novo daqui a pouco.";
+      return;
+    }
+    $("conta-erro").textContent = "";
+    conta = r.corpo.conta;
+    atualizarJanela();
+    envio = sincronizar().catch(() => {});
+    await envio;
+    if (!$("fim").hidden) mostrarPlacar(estado.data);
+    if (!conta.escolheuApelido) {
+      $("conta-msg").textContent = "Escolha como você quer aparecer no placar.";
+      $("conta-input-apelido").focus();
+      $("conta-input-apelido").select();
+    }
+  }
+
+  async function sair() {
+    await api("/api/conta/sair", { method: "POST" }).catch(() => null);
+    try { window.google?.accounts?.id?.disableAutoSelect(); } catch {}
+    conta = null;
+    atualizarJanela();
+    if (!$("fim").hidden) mostrarPlacar(estado.data);
+  }
+
+  let confirmarExclusao = 0;
+  async function excluir() {
+    const b = $("conta-excluir");
+    if (Date.now() - confirmarExclusao > 5000) {
+      confirmarExclusao = Date.now();
+      b.textContent = "TOQUE DE NOVO PARA EXCLUIR";
+      setTimeout(() => { b.textContent = "EXCLUIR CONTA"; }, 5000);
+      return;
+    }
+    const r = await api("/api/conta", { method: "DELETE" }).catch(() => null);
+    if (!r?.ok) {
+      $("conta-msg").textContent = "Não deu para excluir agora. Tente de novo.";
+      return;
+    }
+    conta = null;
+    b.textContent = "EXCLUIR CONTA";
+    atualizarJanela();
+    $("conta-erro").textContent = "Conta excluída. O progresso continua só neste navegador.";
+    if (!$("fim").hidden) mostrarPlacar(estado.data);
+  }
+
+  async function salvarApelido(e) {
+    e.preventDefault();
+    const campo = $("conta-input-apelido");
+    const msg = $("conta-msg");
+    const texto = campo.value.trim();
+    if (!texto) return;
+    msg.textContent = "Conferindo…";
+    msg.className = "conta-msg";
+    const r = await api("/api/conta/apelido", { method: "POST", corpo: { apelido: texto } }).catch(() => null);
+    if (r?.corpo?.ok) {
+      conta = { apelido: r.corpo.apelido, escolheuApelido: true };
+      msg.textContent = "Apelido salvo ✓";
+      msg.className = "conta-msg certo";
+      atualizarJanela();
+      if (!$("fim").hidden) mostrarPlacar(estado.data);
+    } else {
+      msg.textContent = r?.corpo?.motivo || "Não deu para salvar agora. Tente de novo.";
+      msg.className = "conta-msg erro";
+    }
+  }
+
+  function atualizarJanela() {
+    $("conta-fora").hidden = !!conta;
+    $("conta-dentro").hidden = !conta;
+    $("abrir-conta").classList.toggle("logado", !!conta);
+    $("abrir-conta").setAttribute("aria-label", conta ? `Conta: ${conta.apelido}` : "Entrar com Google");
+    if (conta) {
+      $("conta-apelido").textContent = conta.apelido;
+      if (document.activeElement !== $("conta-input-apelido")) $("conta-input-apelido").value = conta.escolheuApelido ? conta.apelido : "";
+      $("conta-input-apelido").placeholder = conta.apelido;
+    } else {
+      $("conta-msg").textContent = "";
+      mostrarBotaoGoogle();
+    }
+  }
+
+  function abrir() {
+    atualizarJanela();
+    abrirJanela("janela-conta");
+  }
+
+  // ---------- placar ----------
+
+  async function mostrarPlacar(dia) {
+    const secao = $("secao-placar");
+    await pronto;
+    if (!LIGADA || !google) {
+      secao.hidden = true;
+      return;
+    }
+    await envio;
+    const r = await api(`/api/placar?dia=${dia}`).catch(() => null);
+    if (!r?.ok) {
+      secao.hidden = true;
+      return;
+    }
+    ultimoPlacar = r.corpo;
+    secao.hidden = false;
+    desenharPlacar();
+  }
+
+  function desenharPlacar() {
+    const p = ultimoPlacar;
+    if (!p) return;
+    const hoje = p.dia === hojeLocal();
+    $("placar-estado").textContent = p.fechado ? `· fechou às 23:59 de ${dataCurta(p.dia)}` : "· aberto até 23:59";
+    const lista = $("placar-lista");
+    lista.innerHTML = "";
+    const mostrar = mostrarTodos ? p.top : p.top.slice(0, TOP_CURTO);
+    let posicao = 0;
+    p.top.forEach((linha, i) => {
+      if (i === 0 || linha.pontos !== p.top[i - 1].pontos) posicao = i + 1;
+      if (i >= mostrar.length) return;
+      const li = document.createElement("li");
+      li.className = "placar-linha" + (linha.voce ? " voce" : "") + (posicao <= 3 ? ` podio podio-${posicao}` : "");
+      const pos = document.createElement("span");
+      pos.className = "placar-pos";
+      pos.textContent = `${posicao}º`;
+      const nome = document.createElement("span");
+      nome.className = "placar-nome";
+      nome.textContent = linha.apelido + (linha.voce ? " (você)" : "");
+      const pts = document.createElement("span");
+      pts.className = "placar-pontos";
+      pts.textContent = numero(linha.pontos);
+      li.append(pos, nome, pts);
+      if (conta && !linha.voce && !/^Viajante[- ]/.test(linha.apelido)) li.append(botaoDenunciar(linha));
+      lista.append(li);
+    });
+    if (!p.top.length) {
+      const li = document.createElement("li");
+      li.className = "placar-vazio";
+      li.textContent = p.fechado ? "Ninguém entrou no placar deste dia." : "Ninguém no placar ainda. O primeiro lugar está livre!";
+      lista.append(li);
+    }
+    const mais = $("placar-mais");
+    mais.hidden = p.top.length <= TOP_CURTO;
+    mais.textContent = mostrarTodos ? "mostrar só o top 10" : `ver o top ${p.top.length}`;
+
+    const voce = $("placar-voce");
+    const entrar = $("placar-entrar");
+    entrar.hidden = true;
+    voce.className = "placar-voce";
+    if (p.voce) {
+      voce.textContent = `Você ficou em ${p.voce.posicao}º de ${numero(p.total)} · ${numero(p.voce.pontos)} pts`;
+      if (p.voce.pontos < Math.round(estado.total) && hoje) voce.textContent += " (pontos conferidos pelo servidor)";
+    } else if (!conta && hoje && !estado.replay) {
+      voce.textContent = "Sua viagem de hoje ainda pode entrar: o placar é só de quem está logado.";
+      entrar.hidden = false;
+    } else if (!conta) {
+      voce.textContent = `${numero(p.total)} viajantes no placar. Só entra quem estava logado e jogou no próprio dia.`;
+    } else if (!hoje) {
+      voce.textContent = "O placar é só de quem jogou no próprio dia, logado. Viagens pelo arquivo não entram.";
+    } else {
+      voce.textContent = "Sua viagem ainda não entrou no placar. Confira a conexão e abra o jogo de novo.";
+      voce.className = "placar-voce aviso";
+    }
+  }
+
+  function botaoDenunciar(linha) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "placar-denunciar";
+    b.textContent = "⚑";
+    b.title = "Denunciar apelido ofensivo";
+    b.setAttribute("aria-label", `Denunciar o apelido ${linha.apelido}`);
+    let armado = false;
+    b.addEventListener("click", async () => {
+      if (!armado) {
+        armado = true;
+        b.textContent = "denunciar?";
+        b.classList.add("armado");
+        setTimeout(() => { if (armado && b.isConnected) { armado = false; b.textContent = "⚑"; b.classList.remove("armado"); } }, 4000);
+        return;
+      }
+      armado = false;
+      b.disabled = true;
+      const r = await api("/api/placar/denunciar", { method: "POST", corpo: { id: linha.id } }).catch(() => null);
+      b.textContent = r?.corpo?.ok ? "denunciado ✓" : r?.corpo?.motivo || "erro";
+      b.classList.remove("armado");
+      if (r?.corpo?.escondido) mostrarPlacar(ultimoPlacar.dia);
+    });
+    return b;
+  }
+
+  // ---------- começo ----------
+
+  const pronto = (async () => {
+    if (!LIGADA) return;
+    const r = await api("/api/conta").catch(() => null);
+    google = r?.corpo?.google || null;
+    conta = r?.corpo?.conta || null;
+    if (!google) return;
+    $("abrir-conta").hidden = false;
+    atualizarJanela();
+    if (conta) envio = sincronizar().catch(() => {});
+  })();
+
+  $("abrir-conta").addEventListener("click", abrir);
+  $("placar-entrar").addEventListener("click", abrir);
+  $("placar-mais").addEventListener("click", () => { mostrarTodos = !mostrarTodos; desenharPlacar(); });
+  $("conta-form-apelido").addEventListener("submit", salvarApelido);
+  $("conta-sair").addEventListener("click", sair);
+  $("conta-excluir").addEventListener("click", excluir);
+
+  return { registroSalvo, mostrarPlacar };
+})();
 </script>
 </body>
 </html>

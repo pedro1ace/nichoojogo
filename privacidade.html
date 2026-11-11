@@ -67,12 +67,15 @@
     <a class="voltar" href="./">◀ VOLTAR AO JOGO</a>
 
     <h1>Privacidade</h1>
-    <p class="atualizado">Última atualização: 30 de outubro de 2026</p>
+    <p class="atualizado">Última atualização: 11 de novembro de 2026</p>
 
     <div class="caixa">
-      <p><b>Resumo:</b> o Nicho não pede cadastro, nome nem e-mail. Seu progresso fica no seu próprio navegador.
+      <p><b>Resumo:</b> para jogar, o Nicho não pede cadastro, nome nem e-mail. Seu progresso fica no seu próprio navegador.
       Guardamos sua pontuação e as palavras que você responde, de forma anônima, para comparar com os outros jogadores
       e melhorar as perguntas.
+      Se você <b>quiser</b>, pode entrar com a sua conta Google para salvar o progresso e aparecer no placar do dia:
+      aí guardamos só um código que identifica a conta, o apelido que você escolher e as suas viagens. Nada de nome,
+      e-mail ou foto, e você pode excluir tudo quando quiser.
       O site exibe anúncios do Google, que podem usar cookies.</p>
     </div>
 
@@ -99,14 +102,44 @@
     as palavras que o jogo não aceitou. O servidor guarda só a contagem de cada palavra por dia. Usamos isso para
     descobrir respostas que faltam nas listas e para calibrar a pontuação das próximas perguntas.</p>
     <ul>
-      <li>Não enviamos nome, e-mail, conta ou qualquer dado que identifique você.</li>
+      <li>Sem conta, não enviamos nome, e-mail ou qualquer dado que identifique você.</li>
       <li>Não juntamos essa pontuação com os dados de anúncios.</li>
       <li>Os números são exibidos só de forma agregada (por exemplo, "você foi mais longe que 80% dos jogadores").</li>
     </ul>
     <p>Como qualquer site, o servidor que hospeda o jogo recebe dados técnicos da conexão, como o endereço IP e o
     tipo de navegador, para entregar a página e se proteger de abusos. Não usamos esses dados para identificar jogadores.</p>
 
-    <h2>4. Anúncios (Google AdSense)</h2>
+    <h2>4. Conta opcional com Google e placar do dia</h2>
+    <p>Entrar é opcional: sem conta, o jogo funciona igual e nada desta seção acontece. Se você tocar em
+    <b>Fazer login com o Google</b>, o Google confirma quem você é e entrega ao jogo um comprovante assinado.
+    Desse comprovante, nosso servidor guarda <b>só um resumo criptográfico (SHA-256) do identificador da sua conta Google</b>,
+    para reconhecer você no próximo login. Não guardamos seu nome, e-mail, foto nem nada da sua conta Google.</p>
+    <p>Com a conta, guardamos:</p>
+    <ul>
+      <li>um <b>apelido</b> para o placar, que você escolhe (até lá, um automático como "Viajante-4821"). Ele é
+        <b>público</b>: aparece no placar para todos os jogadores. Não use seu nome completo nem dados pessoais nele;</li>
+      <li>as suas <b>viagens</b> de cada dia (as respostas e os pontos, o mesmo que fica no navegador), para você
+        recuperar o progresso, a sequência e o recorde em outro aparelho;</li>
+      <li>a sua <b>pontuação no placar</b> de cada dia em que você jogou logado, no próprio dia;</li>
+      <li>um <b>cookie de sessão</b> (<code>nicho_sessao</code>), que mantém você logado neste aparelho por até 180 dias.
+        É um cookie nosso, necessário para o login funcionar, e não serve para anúncios. No servidor fica só o resumo dele;</li>
+      <li>as <b>denúncias</b> de apelido que você fizer ou receber (qual conta denunciou qual apelido e quando).</li>
+    </ul>
+    <p>Para que usamos: guardar o seu progresso, montar o placar e manter o placar livre de apelidos ofensivos.
+    A base legal é a execução do serviço que você pediu ao criar a conta (LGPD, art. 7º, V) e o nosso legítimo
+    interesse em evitar abusos (art. 7º, IX).</p>
+    <p><b>Apelidos:</b> para barrar apelidos preconceituosos, racistas, sexuais ou de ódio, o apelido que você
+    escolhe é conferido por uma lista de palavras proibidas e por uma inteligência artificial da Cloudflare
+    (Workers AI), que recebe só o apelido. Um apelido denunciado por 3 jogadores diferentes sai do placar e não pode
+    mais ser usado.</p>
+    <p>O login é feito pelo Google Identity Services: ao usar o botão, o Google trata os seus dados segundo a
+    <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener">política de privacidade do Google</a>.
+    O botão do Google só é carregado quando você abre a janela de conta.</p>
+    <p><b>Como sair ou excluir:</b> em <b>Conta</b> (o botão com o bonequinho, no canto da tela), <b>SAIR</b> desconecta
+    este aparelho e <b>EXCLUIR CONTA</b> apaga na hora a conta, o apelido, o progresso salvo e as suas posições nos placares.
+    O progresso que estiver no seu navegador continua lá.</p>
+
+    <h2>5. Anúncios (Google AdSense)</h2>
     <p>Para manter o jogo gratuito, exibimos anúncios do Google AdSense. O Google e seus parceiros, como
     fornecedores terceiros, usam cookies e identificadores semelhantes para mostrar anúncios com base nas suas
     visitas a este e a outros sites, medir o desempenho dos anúncios e evitar fraudes.</p>
@@ -127,7 +160,7 @@
     consentimento antes de usar cookies de anúncios personalizados. Sem consentimento, os anúncios podem continuar
     aparecendo, mas não personalizados.</p>
 
-    <h2>5. Apoio voluntário via Pix (Mercado Pago)</h2>
+    <h2>6. Apoio voluntário via Pix (Mercado Pago)</h2>
     <p>Se você escolher apoiar o jogo na seção "Apoie o criador", geramos uma cobrança Pix pela API do
     <b>Mercado Pago</b>. O pagamento acontece direto no aplicativo do seu banco e é processado pelo Mercado Pago,
     segundo a <a href="https://www.mercadopago.com.br/privacidade" target="_blank" rel="noopener">política de privacidade do Mercado Pago</a>.</p>
@@ -136,23 +169,26 @@
       <li>Guardamos apenas um identificador aleatório do pedido, o valor, a confirmação de pagamento e um código (<code>NICHO-XXXX-XXXX</code>) para você liberar a skin de apoiador nos seus aparelhos.</li>
     </ul>
 
-    <h2>6. Fontes</h2>
+    <h2>7. Fontes</h2>
     <p>As fontes pixeladas do jogo (Press Start 2P e Space Mono) vêm junto com o próprio site.
     Seu navegador não se conecta ao Google Fonts para carregá-las.</p>
 
-    <h2>7. Crianças</h2>
-    <p>O jogo pode ser jogado por qualquer idade e não pede dados pessoais. Os anúncios exibidos seguem as regras do Google.
+    <h2>8. Crianças e adolescentes</h2>
+    <p>O jogo pode ser jogado por qualquer idade sem dar dados pessoais. A conta opcional usa uma conta Google, que tem
+    as próprias regras de idade mínima; crianças e adolescentes só devem entrar com o conhecimento dos pais ou responsáveis.
+    Os anúncios exibidos seguem as regras do Google.
     Se você é responsável por uma criança e tem alguma dúvida, fale com a gente.</p>
 
-    <h2>8. Seus direitos</h2>
-    <p>Pela LGPD, você pode pedir informações sobre os dados tratados, correção ou exclusão. Como não guardamos dados que
-    identifiquem você, na maioria dos casos basta limpar os dados do site no seu navegador. Para os dados de anúncios,
-    use as configurações do Google indicadas acima.</p>
+    <h2>9. Seus direitos</h2>
+    <p>Pela LGPD, você pode pedir informações sobre os dados tratados, correção ou exclusão. Sem conta, não guardamos dados que
+    identifiquem você, e na maioria dos casos basta limpar os dados do site no seu navegador. Com conta, você troca o apelido
+    e exclui tudo direto no jogo, em <b>Conta</b>; para qualquer outro pedido, escreva para o contato abaixo.
+    Para os dados de anúncios, use as configurações do Google indicadas acima.</p>
 
-    <h2>9. Mudanças nesta página</h2>
+    <h2>10. Mudanças nesta página</h2>
     <p>Se mudarmos o que coletamos, atualizamos esta página e a data no topo.</p>
 
-    <h2>10. Contato</h2>
+    <h2>11. Contato</h2>
     <p>Dúvidas ou pedidos sobre privacidade: <a href="mailto:nichoojogo@gmail.com">contato@nichoojogo.com</a></p>
 
     <p style="margin-top: 40px"><a class="voltar" href="./">◀ VOLTAR AO JOGO</a></p>

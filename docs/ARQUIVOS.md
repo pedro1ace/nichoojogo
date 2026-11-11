@@ -59,20 +59,9 @@ nicho:replay:<dia>  a última jogada extra: { historico, total }
 diz se terminou no próprio dia. Registros antigos, de antes dos arquivos, não têm `noDia` e contam
 como feitos no dia.
 
-## Placar diário com conta (futuro, ainda não feito)
+## Placar diário com conta
 
-O navegador não serve de prova para placar (qualquer um edita o localStorage). Quando houver login:
-
-1. Tabela `viagens` no D1 (rascunho comentado em `banco/schema.sql`) com chave `(conta, dia)`.
-   O envio usa `INSERT ... ON CONFLICT DO NOTHING`: a 1ª viagem fica e as outras são ignoradas,
-   sem depender do jogo.
-2. `no_dia` é decidido pelo **relógio do servidor** na hora do envio (dia do jogo = hoje, com folga
-   de fuso), nunca pelo que o navegador diz.
-3. Só a viagem de quem está logado vai para `viagens`. Jogadas extras nunca são enviadas.
-4. O placar de cada dia: `SELECT ... FROM viagens WHERE dia = ? AND no_dia = 1 ORDER BY pontos DESC LIMIT 100`.
-   Nos arquivos, cada dia mostra o seu placar com essa mesma consulta.
-5. Ao entrar na conta pela 1ª vez, as viagens já guardadas no navegador podem aparecer no perfil,
-   mas **não entram no placar** (não dá para provar quando foram feitas).
-6. Antes do placar valer: `/api/dia` hoje entrega qualquer dia, inclusive os futuros, e o `jogo/dados.js`
-   (que o jogo baixa quando a API falha) leva todas as perguntas. Para um placar justo, o servidor deveria conferir as respostas
-   (ou ao menos não entregar dias futuros).
+Feito: login opcional com Google, progresso salvo na conta e placar do dia. Regras e como ligar em
+[`docs/CONTA.md`](CONTA.md). Em resumo: só quem está logado, só a 1ª viagem, só no próprio dia
+(relógio do servidor, fecha às 23:59 de Brasília), pontos conferidos pelo servidor. O placar de cada
+dia aparece no fim daquele dia, também pelos arquivos.

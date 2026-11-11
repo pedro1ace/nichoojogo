@@ -769,6 +769,8 @@ function salvarProgresso() {
   try {
     localStorage.setItem(estado.replay ? chaveReplay(estado.data) : chaveOficial(estado.data), JSON.stringify(registro));
   } catch {}
+  // com conta (jogo/conta.js): a 1ª viagem completa também fica na conta, e a de hoje vai para o placar
+  if (!estado.replay && typeof Conta !== "undefined") Conta.registroSalvo(estado.data, registro);
 }
 function lerProgresso() {
   if (MODO_TESTE) return null;
@@ -1551,6 +1553,7 @@ function mostrarFim(comSom) {
   $("fim-comparacao").textContent = `Em média, suas respostas foram mais nichadas que as de ${Math.min(99, Math.round(media * 100))}% dos jogadores.`;
   montarGrafico();
   mostrarCurva();
+  if (typeof Conta !== "undefined") Conta.mostrarPlacar(estado.data);
   montarFaixas();
   montarRespostas();
 
