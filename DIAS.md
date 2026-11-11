@@ -165,23 +165,23 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Meios de transporte | Cite um meio de transporte | 622 |
 | 2 | Danças | Cite uma dança | 694 |
-| 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 1581 |
+| 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 1582 |
 | 4 | Frutos do mar | Cite um fruto do mar | 541 |
-| 5 | Natal | Cite algo do Natal | 661 |
-| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 708 |
-| 7 | Sabores de bolo | Cite um sabor de bolo | 2884 |
+| 5 | Natal | Cite algo do Natal | 663 |
+| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 709 |
+| 7 | Sabores de bolo | Cite um sabor de bolo | 2886 |
 
 ## Dia 15 · qua 11/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1792 |
-| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1976 |
-| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 527 |
-| 4 | Brinquedos | Cite um brinquedo | 590 |
-| 5 | Doenças | Cite uma doença | 3972 |
-| 6 | Praias brasileiras | Cite uma praia brasileira | 725 |
-| 7 | Coisas geladas | Cite algo gelado | 754 |
+| 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1811 |
+| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1988 |
+| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 539 |
+| 4 | Brinquedos | Cite um brinquedo | 609 |
+| 5 | Doenças | Cite uma doença | 3982 |
+| 6 | Praias brasileiras | Cite uma praia brasileira | 733 |
+| 7 | Coisas geladas | Cite algo gelado | 765 |
 
 ## Dia 16 · qui 12/11/2026
 
