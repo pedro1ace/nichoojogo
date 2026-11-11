@@ -337,6 +337,8 @@ Configuração no Cloudflare e no Mercado Pago (para ativar em produção):
 
 Para testar a interface e o desbloqueio da Laika localmente sem chaves nem servidor, abra `jogar.html?aleatorio&simular-pix` (só funciona em `file://` ou `localhost`).
 
+Para ver a Laika em jogo sem liberar nada, abra `jogar-completo.html?aleatorio&skin=laika` (também só em `file://` ou `localhost`; não grava a skin). Ao lado do cartão da pergunta, na contagem, ela gira e fica de frente para a tela; quando o relógio começa, volta a voar de lado.
+
 ## Domínio
 
 O endereço oficial é **https://nichoojogo.com** (comprado no Cloudflare). No projeto do Pages, em
