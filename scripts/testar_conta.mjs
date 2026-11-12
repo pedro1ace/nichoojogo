@@ -10,6 +10,7 @@ import * as apelido from "../functions/api/conta/apelido.js";
 import * as progresso from "../functions/api/conta/progresso.js";
 import * as placar from "../functions/api/placar/index.js";
 import * as denunciar from "../functions/api/placar/denunciar.js";
+import * as refazer from "../functions/api/refazer.js";
 
 // ---------- D1 de mentira ----------
 function criarD1() {
@@ -184,6 +185,21 @@ r = await ler(await conta.onRequestDelete(pedido("/api/conta", { metodo: "DELETE
 r = await ler(await placar.onRequestGet(pedido(`/api/placar?dia=${hoje}`)));
 conferir(r.corpo.total === 2, "excluir a conta tira a viagem do placar");
 conferir(db.sqlite.prepare("SELECT COUNT(*) n FROM progresso").get().n === 2, "excluir a conta apaga o progresso dela");
+
+// refazer o dia: um código vale uma vez, só no dia dele, e só apaga a viagem de quem usou
+{
+  db.prepare("INSERT INTO refazer (codigo, dia) VALUES ('ABC123', ?), ('VELHO1', '2026-01-01')").bind(hoje).run();
+  const usar = async (codigo, cookie) => (await ler(await refazer.onRequestPost(pedido("/api/refazer", { metodo: "POST", corpo: { codigo }, cookie })))).corpo;
+  const viagensAntes = db.sqlite.prepare("SELECT COUNT(*) n FROM viagens WHERE dia = ?").get(hoje).n;
+  conferir((await usar("NAOEXISTE", dev.cookie)).ok === false, "código que não existe é recusado");
+  conferir(/outro dia/.test((await usar("velho1", dev.cookie)).motivo), "código de outro dia é recusado");
+  let u = await usar("abc123", dev.cookie);
+  conferir(u.ok && u.dia === hoje && u.logado, "código certo (maiúscula ou minúscula) refaz o dia");
+  const devId = db.sqlite.prepare("SELECT id FROM contas WHERE dev = 1").get().id;
+  conferir(!db.sqlite.prepare("SELECT 1 FROM progresso WHERE conta = ? AND dia = ?").get(devId, hoje) && !db.sqlite.prepare("SELECT 1 FROM viagens WHERE conta = ? AND dia = ?").get(devId, hoje), "apaga a viagem de hoje de quem usou o código");
+  conferir(db.sqlite.prepare("SELECT COUNT(*) n FROM viagens WHERE dia = ?").get(hoje).n === viagensAntes - 1, "não mexe na viagem de mais ninguém");
+  conferir(/já foi usado/.test((await usar("ABC123", dev.cookie)).motivo), "o mesmo código não vale duas vezes");
+}
 
 console.log(falhas ? `\n${falhas} falhas` : "\ntudo certo");
 process.exit(falhas ? 1 : 0);

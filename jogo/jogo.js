@@ -578,7 +578,32 @@ async function carregarCategoriasDoDia() {
   return escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
 }
 
+// ?refazer=<código>: link que quem cuida do jogo manda para UMA pessoa refazer o dia de hoje, quando um
+// erro do jogo atrapalhou a viagem dela (functions/api/refazer.js, docs/CONTA.md). O código vale uma vez.
+// Deu certo: apaga a viagem daquele dia neste navegador e abre o jogo de novo. Devolve true nesse caso.
+async function refazerDia() {
+  const codigo = PARAMS.get("refazer");
+  if (!codigo || location.protocol === "file:") return false;
+  let r = null;
+  try {
+    const resp = await fetch("/api/refazer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ codigo }) });
+    r = await resp.json();
+  } catch {}
+  if (r && r.ok) {
+    try {
+      localStorage.removeItem(chaveOficial(r.dia));
+      localStorage.removeItem(chaveReplay(r.dia));
+    } catch {}
+    location.replace("/");
+    return true;
+  }
+  history.replaceState(null, "", location.pathname);
+  estado.avisoRefazer = (r && r.motivo) || "Não deu para refazer o dia agora. Tente o link de novo daqui a pouco.";
+  return false;
+}
+
 async function iniciar() {
+  if (await refazerDia()) return;
   reenviarPendentes();
   const cats = await carregarCategoriasDoDia();
   if (!cats || !cats.length) {
@@ -598,6 +623,7 @@ async function iniciar() {
     titulo.append(s);
   });
   $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
+  if (estado.avisoRefazer) $("regras").textContent = `Refazer o dia: ${estado.avisoRefazer}`;
   mostrarDiaESequencia();
   $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
   cena.skin(skinEscolhida());
@@ -1306,6 +1332,7 @@ function mostrarFim(comSom) {
   montarGrafico();
   mostrarCurva();
   if (typeof Conta !== "undefined") Conta.mostrarPlacar(estado.data);
+  if (comSom && !estado.replay && typeof Conta !== "undefined") Conta.avisarRaras(estado.data);
   montarFaixas();
   montarRespostas();
 
