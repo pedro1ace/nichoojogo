@@ -175,25 +175,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1811 |
+| 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1812 |
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1988 |
-| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 539 |
-| 4 | Brinquedos | Cite um brinquedo | 609 |
+| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 542 |
+| 4 | Brinquedos | Cite um brinquedo | 611 |
 | 5 | Doenças | Cite uma doença | 3982 |
-| 6 | Praias brasileiras | Cite uma praia brasileira | 733 |
-| 7 | Coisas geladas | Cite algo gelado | 765 |
+| 6 | Praias brasileiras | Cite uma praia brasileira | 738 |
+| 7 | Coisas geladas | Cite algo gelado | 766 |
 
 ## Dia 16 · qui 12/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 315 |
-| 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 621 |
-| 3 | Coisas que dão medo | Cite algo que dá medo | 1960 |
-| 4 | Estádios de futebol | Cite um estádio de futebol | 3566 |
-| 5 | Árvores | Cite uma árvore | 1464 |
-| 6 | Nomes masculinos | Cite um nome masculino | 2995 |
-| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 902 |
+| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 328 |
+| 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 641 |
+| 3 | Coisas que dão medo | Cite algo que dá medo | 1970 |
+| 4 | Estádios de futebol | Cite um estádio de futebol | 3571 |
+| 5 | Árvores | Cite uma árvore | 1474 |
+| 6 | Nomes masculinos | Cite um nome masculino | 3006 |
+| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 926 |
 
 ## Dia 17 · sex 13/11/2026
 
