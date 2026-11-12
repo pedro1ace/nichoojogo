@@ -238,12 +238,16 @@ def main() -> None:
     for pagina in ("privacidade", "termos", "creditos"):
         html = html.replace(f'href="../{pagina}.html"', f'href="{pagina}.html"')
     (RAIZ / "jogar.html").write_text(html, encoding="utf-8")
+    # index.html: a mesma página, servida em "/" direto como arquivo, sem passar pela Function
+    # (o "/" está no "exclude" do _routes.json). Cada visita deixa de gastar uma execução, e se o
+    # limite diário das Functions estourar (o projeto está em "fail open"), o jogo continua abrindo.
+    (RAIZ / "index.html").write_text(html, encoding="utf-8")
     # versão completa: as perguntas entram antes do primeiro script do jogo
     primeiro = "<script>\n" + scripts[nomes[0]].replace("</script", "<\\/script") + "</script>"
     assert primeiro in html
     completo = html.replace(primeiro, "<script>\n" + dados_js.replace("</script", "<\\/script") + "</script>\n  " + primeiro, 1)
     (RAIZ / "jogar-completo.html").write_text(completo, encoding="utf-8")
-    print("jogo/dados.js, jogar.html e jogar-completo.html atualizados")
+    print("jogo/dados.js, jogar.html, index.html e jogar-completo.html atualizados")
 
 
 if __name__ == "__main__":

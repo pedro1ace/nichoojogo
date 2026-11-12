@@ -605,6 +605,7 @@ async function refazerDia() {
 async function iniciar() {
   if (await refazerDia()) return;
   reenviarPendentes();
+  mandarRespostas();
   const cats = await carregarCategoriasDoDia();
   if (!cats || !cats.length) {
     $("regras").textContent = "Não foi possível carregar as perguntas do dia. Verifique sua conexão.";
@@ -1331,6 +1332,7 @@ function mostrarFim(comSom) {
   $("fim-comparacao").textContent = `Em média, suas respostas foram mais nichadas que as de ${Math.min(99, Math.round(media * 100))}% dos jogadores.`;
   montarGrafico();
   mostrarCurva();
+  mandarRespostas();
   if (typeof Conta !== "undefined") Conta.mostrarPlacar(estado.data);
   if (comSom && !estado.replay && typeof Conta !== "undefined") Conta.avisarRaras(estado.data);
   montarFaixas();
@@ -1424,6 +1426,13 @@ const API_RESPOSTAS = "/api/respostas";
 
 // Cada navegador conta uma resposta aceita por categoria por dia, e cada recusada uma vez por dia.
 // viagens pelo arquivo não são enviadas: a contagem é de quem joga no dia
+//
+// Para não gastar uma execução da Function por palpite (o limite grátis da Cloudflare é de 100 mil
+// por dia, somando todas as rotas), as respostas ficam numa fila no navegador e vão juntas, num
+// POST só: no fim da viagem, quando a aba fica escondida (troca de aba, fecha o celular) e, se
+// sobrou algo de outra visita, quando o jogo abre.
+const FILA_RESPOSTAS = "nicho:fila-respostas";
+const MAX_FILA_RESPOSTAS = 100; // o mesmo teto do servidor
 function vaiAnotar(cat) {
   return !(location.protocol === "file:" || MODO_TESTE || ARQUIVO || !cat.id);
 }
@@ -1441,13 +1450,28 @@ function enviarResposta(cat, corpo) {
     if (lerChave(chaveRecusada)) return;
     gravarChave(chaveRecusada, "1");
   }
+  const fila = lerJson(FILA_RESPOSTAS);
+  const itens = Array.isArray(fila) ? fila : [];
+  if (itens.length >= MAX_FILA_RESPOSTAS) return;
+  itens.push({ dia: estado.data, categoria: cat.id, ...corpo });
+  gravar(FILA_RESPOSTAS, itens);
+}
+
+function mandarRespostas() {
+  if (location.protocol === "file:" || MODO_TESTE) return;
+  const fila = lerJson(FILA_RESPOSTAS);
+  if (!Array.isArray(fila) || !fila.length) return;
+  gravar(FILA_RESPOSTAS, null);
   fetch(API_RESPOSTAS, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ dia: estado.data, categoria: cat.id, ...corpo }),
+    body: JSON.stringify({ itens: fila.slice(0, MAX_FILA_RESPOSTAS) }),
     keepalive: true,
   }).catch(() => {});
 }
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") mandarRespostas();
+});
 
 // "acima" vem da simulação: a parte dos jogadores que daria uma resposta mais óbvia que esta.
 // Sem simulação, a conta antiga: a parte da lista que vale menos pontos.
