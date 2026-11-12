@@ -7,10 +7,8 @@
 //
 // Usa o binding D1 (DB), tabela 'dias' (ver banco/schema.sql).
 //
-// Respostas escondidas (servidor/dias.js): quem não está logado recebe o dia de hoje sem as respostas do
-// espaço profundo e sem a singularidade (cada categoria vem com "ocultas": quantas ficaram de fora). O jogo
-// confere o que digitar contra elas em /api/conferir. Dias que ainda não chegaram vão sempre sem elas,
-// até para quem está logado. Dias que já passaram vão completos para todo mundo.
+// Hoje e os dias que já passaram vão completos para todo mundo. Dias que ainda não chegaram vão sem as
+// respostas do espaço profundo e sem a singularidade (servidor/dias.js), até para quem está logado.
 //
 // Cache: o pacote de cada dia fica no cache da Cloudflare (Cache API), para o banco não ler o
 // payload grande a cada jogador. A chave do cache leva a hora da última carga daquele dia
@@ -18,10 +16,9 @@
 // na hora. Antes a chave era só o dia, e um pacote velho ficou preso no cache por horas depois
 // das cargas de 04-05/11 (as singularidades novas do Dia 9 não apareciam no jogo).
 // (O cache só funciona no domínio próprio, nichoojogo.com; nas prévias *.pages.dev ele é ignorado.)
-// No navegador, o dia de hoje não fica guardado ("private, no-cache"): a mesma URL muda de conteúdo
-// quando a pessoa entra na conta.
+// No navegador, o dia de hoje não fica guardado ("private, no-cache").
 
-import { contaDoPedido, hojeBrasil, diaComFormato } from "../../servidor/conta.js";
+import { hojeBrasil, diaComFormato } from "../../servidor/conta.js";
 import { lerPacote, semRaras } from "../../servidor/dias.js";
 
 const json = (corpo, status = 200) =>
@@ -44,8 +41,11 @@ export async function onRequestGet({ request, env, waitUntil }) {
   }
 
   try {
-    let completo = dia < hoje;
-    if (dia === hoje) completo = !!(await contaDoPedido(request, env.DB).catch(() => null));
+    // O dia de hoje vai completo para todo mundo: o jogo precisa aceitar as raras e a singularidade de quem
+    // não está logado também (em 11/11 elas iam escondidas e conferidas no /api/conferir, e jogadores sem
+    // login não conseguiam acertá-las). Quem não está logado só não vê, no relatório do fim, as raras que não
+    // pegou (jogo.js, montarBanco). Só os dias que ainda não chegaram vão sem as raras.
+    const completo = dia <= hoje;
     const pacote = await lerPacote(
       env,
       url.origin,
