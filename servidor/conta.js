@@ -156,6 +156,9 @@ export const SQL_TABELAS = [
   "CREATE INDEX IF NOT EXISTS denuncias_autor ON denuncias (autor, dia)",
   `CREATE TABLE IF NOT EXISTS apelidos_barrados (
     chave TEXT PRIMARY KEY, origem TEXT NOT NULL, criado_em TEXT NOT NULL DEFAULT (datetime('now')))`,
+  // códigos de "refazer o dia" (functions/api/refazer.js): cada um vale uma vez, só no dia dele
+  `CREATE TABLE IF NOT EXISTS refazer (
+    codigo TEXT PRIMARY KEY, dia TEXT NOT NULL, usado_em TEXT, conta TEXT)`,
 ];
 let tabelasProntas = false;
 export async function criarTabelas(db) {

@@ -991,6 +991,11 @@ dialog.janela-ok::before {
   display: inline-block; margin-right: 6px; padding: 1px 4px; vertical-align: 1px; font-family: var(--mono); font-size: 10px;
   font-weight: 700; letter-spacing: 0.12em; color: #1a1000; background: var(--amarelo); text-shadow: none;
 }
+
+/* aviso do fim da viagem, sem login: as raras que você não pegou ficam escondidas no relatório */
+#janela-raras .conta-corpo { display: flex; flex-direction: column; gap: 12px; }
+.raras-botoes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.raras-botoes button { flex: 1 1 160px; }
 </style>
 </head>
 <body>
@@ -1245,6 +1250,22 @@ dialog.janela-ok::before {
     </div>
   </dialog>
   <!-- apoio ao criador: Pix pelo Mercado Pago, libera a skin Laika quando confirmado -->
+  <!-- fim da viagem, sem login (uma vez por dia): o relatório não mostra as raras que a pessoa não pegou -->
+  <dialog id="janela-raras" class="janela-menu" aria-labelledby="titulo-raras">
+    <div class="janela-topo">
+      <p id="titulo-raras" class="rotulo">RESPOSTAS RARAS</p>
+      <button type="button" class="fechar" aria-label="Fechar">X</button>
+    </div>
+    <div class="conta-corpo">
+      <p class="conta-titulo">QUER VER O QUE FICOU NO FUNDO?</p>
+      <p class="conta-texto">As respostas do <b>espaço profundo</b> e a <b>singularidade</b> que você não pegou ficam escondidas no relatório de quem não entrou na conta. As que você acertou aparecem normalmente.</p>
+      <p class="conta-texto">Entre com o Google para ver todas, salvar sua viagem e aparecer no placar do dia.</p>
+      <div class="raras-botoes">
+        <button type="button" id="raras-entrar" class="botao-rosa">ENTRAR E VER TODAS</button>
+        <button type="button" id="raras-depois" class="botao-escuro">AGORA NÃO</button>
+      </div>
+    </div>
+  </dialog>
   <dialog id="janela-apoio" class="janela-menu" aria-labelledby="titulo-apoio">
     <div class="janela-topo">
       <p id="titulo-apoio" class="rotulo">APOIE O CRIADOR</p>
@@ -6038,7 +6059,32 @@ async function carregarCategoriasDoDia() {
   return escolhidas.map((c) => prepararCategoria(dados.categorias[c.id]));
 }
 
+// ?refazer=<código>: link que quem cuida do jogo manda para UMA pessoa refazer o dia de hoje, quando um
+// erro do jogo atrapalhou a viagem dela (functions/api/refazer.js, docs/CONTA.md). O código vale uma vez.
+// Deu certo: apaga a viagem daquele dia neste navegador e abre o jogo de novo. Devolve true nesse caso.
+async function refazerDia() {
+  const codigo = PARAMS.get("refazer");
+  if (!codigo || location.protocol === "file:") return false;
+  let r = null;
+  try {
+    const resp = await fetch("/api/refazer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ codigo }) });
+    r = await resp.json();
+  } catch {}
+  if (r && r.ok) {
+    try {
+      localStorage.removeItem(chaveOficial(r.dia));
+      localStorage.removeItem(chaveReplay(r.dia));
+    } catch {}
+    location.replace("/");
+    return true;
+  }
+  history.replaceState(null, "", location.pathname);
+  estado.avisoRefazer = (r && r.motivo) || "Não deu para refazer o dia agora. Tente o link de novo daqui a pouco.";
+  return false;
+}
+
 async function iniciar() {
+  if (await refazerDia()) return;
   reenviarPendentes();
   const cats = await carregarCategoriasDoDia();
   if (!cats || !cats.length) {
@@ -6058,6 +6104,7 @@ async function iniciar() {
     titulo.append(s);
   });
   $("regras").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} segundos cada · quanto mais rara, mais fundo`;
+  if (estado.avisoRefazer) $("regras").textContent = `Refazer o dia: ${estado.avisoRefazer}`;
   mostrarDiaESequencia();
   $("modo-info").textContent = `${estado.categorias.length} incursões · ${SEGUNDOS} s`;
   cena.skin(skinEscolhida());
@@ -6766,6 +6813,7 @@ function mostrarFim(comSom) {
   montarGrafico();
   mostrarCurva();
   if (typeof Conta !== "undefined") Conta.mostrarPlacar(estado.data);
+  if (comSom && !estado.replay && typeof Conta !== "undefined") Conta.avisarRaras(estado.data);
   montarFaixas();
   montarRespostas();
 
@@ -8354,7 +8402,8 @@ const Conta = (() => {
     if (!google) return;
     $("abrir-conta").hidden = false;
     atualizarJanela();
-    if (conta) envio = sincronizar().catch(() => {});
+    // com ?refazer=, o jogo.js está apagando a viagem de hoje: não manda a velha de volta ao servidor
+    if (conta && !new URLSearchParams(location.search).has("refazer")) envio = sincronizar().catch(() => {});
   })();
 
   $("abrir-conta").addEventListener("click", abrir);
@@ -8365,7 +8414,25 @@ const Conta = (() => {
   $("conta-sair").addEventListener("click", sair);
   $("conta-excluir").addEventListener("click", excluir);
 
-  return { registroSalvo, mostrarPlacar, logado: () => !!conta };
+  // Fim da viagem sem login: avisa (uma vez por dia neste navegador) que o relatório esconde as respostas
+  // do espaço profundo e a singularidade que a pessoa não pegou, e que entrando ela vê todas.
+  async function avisarRaras(dia) {
+    await pronto;
+    if (!google || conta) return;
+    const chave = `nicho:aviso-raras:${dia}`;
+    try {
+      if (localStorage.getItem(chave)) return;
+      localStorage.setItem(chave, "1");
+    } catch {}
+    setTimeout(() => {
+      if (conta || document.querySelector("dialog[open]")) return;
+      abrirJanela("janela-raras");
+    }, 1800);
+  }
+  $("raras-entrar").addEventListener("click", () => { $("janela-raras").close(); abrir(); });
+  $("raras-depois").addEventListener("click", () => $("janela-raras").close());
+
+  return { registroSalvo, mostrarPlacar, avisarRaras, logado: () => !!conta };
 })();
 </script>
 </body>

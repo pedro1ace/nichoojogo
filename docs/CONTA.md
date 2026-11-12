@@ -126,3 +126,30 @@ scripts/testar_apelidos.mjs  teste do filtro de apelidos
   `/api/conferir` e o `jogo/busca.js` (gerando `servidor/busca.js`) continuam no código, sem uso pelo jogo.
 
 Teste: `node scripts/testar_escondidas.mjs`.
+
+## Aviso das respostas raras no fim da viagem
+
+Quem não está logado, ao terminar a viagem, vê uma janela (uma vez por dia neste navegador) dizendo que o
+relatório esconde as respostas do espaço profundo e a singularidade que a pessoa não pegou, com o botão
+"ENTRAR E VER TODAS" (abre a janela da conta). Código: `avisarRaras` em `jogo/conta.js`, janela
+`#janela-raras` em `jogo/index.html`. Não aparece em jogada extra nem quando o login está desligado.
+
+## Refazer o dia de hoje de UMA pessoa
+
+Quando um erro do jogo atrapalhou a viagem de alguém, dá para deixar só essa pessoa jogar o dia de hoje de
+novo, valendo. Cada código vale uma vez e só no dia dele (até 23:59 de Brasília).
+
+1. No Cloudflare: **Storage & Databases > D1 > (o banco do jogo) > Console**, rode, trocando o código e o dia:
+
+   ```sql
+   INSERT INTO refazer (codigo, dia) VALUES ('PEDRO1', '2026-11-12');
+   ```
+
+   O código pode ter letras, números e "-" (de 4 a 40). Maiúscula e minúscula dão no mesmo.
+2. Mande para a pessoa o link `https://nichoojogo.com/?refazer=PEDRO1`.
+3. Ela abre o link **no aparelho e navegador em que jogou**. O jogo apaga a viagem de hoje daquele navegador e
+   abre do começo. Se ela estiver logada, apaga também a viagem de hoje dela no servidor (progresso e placar),
+   para a nova contar. Ninguém mais é afetado.
+
+Ver quais códigos já foram usados: `SELECT * FROM refazer ORDER BY dia DESC;`. Código: `functions/api/refazer.js`.
+Teste: o fim de `scripts/testar_conta.mjs`.

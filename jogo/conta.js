@@ -385,7 +385,8 @@ const Conta = (() => {
     if (!google) return;
     $("abrir-conta").hidden = false;
     atualizarJanela();
-    if (conta) envio = sincronizar().catch(() => {});
+    // com ?refazer=, o jogo.js está apagando a viagem de hoje: não manda a velha de volta ao servidor
+    if (conta && !new URLSearchParams(location.search).has("refazer")) envio = sincronizar().catch(() => {});
   })();
 
   $("abrir-conta").addEventListener("click", abrir);
@@ -396,5 +397,23 @@ const Conta = (() => {
   $("conta-sair").addEventListener("click", sair);
   $("conta-excluir").addEventListener("click", excluir);
 
-  return { registroSalvo, mostrarPlacar, logado: () => !!conta };
+  // Fim da viagem sem login: avisa (uma vez por dia neste navegador) que o relatório esconde as respostas
+  // do espaço profundo e a singularidade que a pessoa não pegou, e que entrando ela vê todas.
+  async function avisarRaras(dia) {
+    await pronto;
+    if (!google || conta) return;
+    const chave = `nicho:aviso-raras:${dia}`;
+    try {
+      if (localStorage.getItem(chave)) return;
+      localStorage.setItem(chave, "1");
+    } catch {}
+    setTimeout(() => {
+      if (conta || document.querySelector("dialog[open]")) return;
+      abrirJanela("janela-raras");
+    }, 1800);
+  }
+  $("raras-entrar").addEventListener("click", () => { $("janela-raras").close(); abrir(); });
+  $("raras-depois").addEventListener("click", () => $("janela-raras").close());
+
+  return { registroSalvo, mostrarPlacar, avisarRaras, logado: () => !!conta };
 })();

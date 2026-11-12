@@ -138,6 +138,14 @@ CREATE TABLE IF NOT EXISTS apelidos_barrados (
   origem    TEXT NOT NULL,
   criado_em TEXT NOT NULL DEFAULT (datetime('now'))
 );
+-- Códigos para uma pessoa refazer o dia de hoje (functions/api/refazer.js, docs/CONTA.md).
+-- Criados à mão; cada um vale uma vez e só no dia dele.
+CREATE TABLE IF NOT EXISTS refazer (
+  codigo   TEXT PRIMARY KEY,
+  dia      TEXT NOT NULL,
+  usado_em TEXT,             -- quando foi usado (NULL = ainda não)
+  conta    TEXT              -- a conta de quem usou, se estava logado
+);
 
 -- Apoios via Pix (functions/api/apoio/).
 -- Guarda só o identificador do pedido, o id do pagamento no Mercado Pago, o valor em centavos,
