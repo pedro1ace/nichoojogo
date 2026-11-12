@@ -979,6 +979,23 @@ function usarSugestao() {
   $("palpite").focus();
 }
 
+// Enquanto o servidor confere (juiz ou escondidas) o campo não aceita letras, mas continua focado.
+// Antes ele ficava "disabled": isso tira o foco e, no celular, fecha o teclado; depois de errar,
+// o jogador tinha de tocar no campo de novo para continuar digitando.
+function travarCampo(travar) {
+  $("palpite").setAttribute("aria-busy", String(travar));
+}
+
+// Devolve o foco ao campo (o teclado do celular continua aberto). Com "selecionar", o texto errado
+// fica selecionado: a próxima letra digitada já apaga ele.
+function focarCampo(selecionar) {
+  const campo = $("palpite");
+  if (document.activeElement !== campo) campo.focus({ preventScroll: true });
+  if (selecionar) {
+    try { campo.setSelectionRange(0, campo.value.length); } catch { campo.select(); }
+  }
+}
+
 function palpitar(evento) {
   evento.preventDefault();
   if (!estado.ativa || $("formulario").classList.contains("esperando")) return;
@@ -1039,7 +1056,7 @@ async function conferirEscondida(cat, texto) {
   if (r === undefined) {
     restaMs = Math.max(0, estado.fimDoTempo - performance.now());
     pararRelogio();
-    $("palpite").disabled = true;
+    travarCampo(true);
     $("formulario").classList.add("esperando");
     $("sugestao").hidden = true;
     avisar("");
@@ -1059,7 +1076,7 @@ async function conferirEscondida(cat, texto) {
       }
     } catch {}
     clearTimeout(prazo);
-    $("palpite").disabled = false;
+    travarCampo(false);
     $("formulario").classList.remove("esperando");
     if (estado.rodada !== rodada) return;
   }
@@ -1128,7 +1145,7 @@ function recusar(cat, texto) {
   $("palpite").classList.remove("tremendo");
   void $("palpite").offsetWidth; // reinicia a animação
   $("palpite").classList.add("tremendo");
-  $("palpite").select();
+  focarCampo(true);
   Som.erro();
 }
 
@@ -1156,7 +1173,7 @@ async function consultarJuiz(cat, texto) {
   const restaMs = Math.max(0, estado.fimDoTempo - performance.now());
   pararRelogio();
   const rodada = estado.rodada;
-  $("palpite").disabled = true;
+  travarCampo(true);
   $("formulario").classList.add("esperando"); // botão LANÇAR escurece enquanto a central responde
   $("sugestao").hidden = true;
   avisar(""); // sem aviso de "consultando": só o botão LANÇAR escurece
@@ -1178,7 +1195,7 @@ async function consultarJuiz(cat, texto) {
     if (resposta.veredito !== "indisponivel") estado.vereditos[chave] = resposta;
     else if (resposta.motivo) console.info("juiz indisponível:", resposta.motivo);
   }
-  $("palpite").disabled = false;
+  travarCampo(false);
   $("formulario").classList.remove("esperando");
   if (estado.rodada !== rodada) return;
 
@@ -2459,6 +2476,15 @@ $("abrir-como").addEventListener("click", () => {
 });
 $("formulario").addEventListener("submit", palpitar);
 $("palpite").addEventListener("input", aoDigitar);
+// enquanto espera a resposta do servidor, as letras não entram (o campo segue focado, sem fechar o teclado)
+$("palpite").addEventListener("beforeinput", (e) => {
+  if ($("formulario").classList.contains("esperando")) e.preventDefault();
+});
+// Tocar em LANÇAR ou na sugestão não tira o foco do campo: no celular, o teclado não fecha
+// e dá para digitar a próxima resposta direto, sem tocar no campo de novo.
+for (const b of [$("formulario").querySelector("button[type=submit]"), $("sugestao")]) {
+  b.addEventListener("mousedown", (e) => e.preventDefault());
+}
 // Enter e o botão LANÇAR chamam palpitar() direto, sem depender do envio do formulário:
 // em visualizadores que abrem o jogo numa moldura sem formulários (prévia de arquivo do
 // celular, por exemplo), o envio é bloqueado e a resposta não saía.
