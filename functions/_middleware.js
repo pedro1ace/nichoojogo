@@ -15,6 +15,9 @@
 //    manda /jogar.html para /jogar sozinho). Os dias do arquivo também abrem o jogo,
 //    com endereço limpo: /dia/2 (quem lê o número é o jogo.js).
 //
+// O "/" também não passa: é o index.html (cópia do jogar.html, feita pelo scripts/montar_jogo.py),
+// servido direto como arquivo. Assim cada visita não gasta uma execução, e o jogo abre mesmo se o
+// limite diário das Functions estourar ("fail open"). O código do "/" abaixo fica para as prévias.
 // Os arquivos do jogo (jogo/, licencas/, favicons) nem passam por aqui: estão no
 // "exclude" do _routes.json, para não gastar uma execução por imagem ou script.
 // A exceção é o /jogo/dados.js (todas as respostas de todos os dias): ele fica fora do "exclude"

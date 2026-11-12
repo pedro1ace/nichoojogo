@@ -161,6 +161,7 @@ const Conta = (() => {
     }
     $("conta-erro").textContent = "";
     conta = r.corpo.conta;
+    guardarConta();
     atualizarJanela();
     window.Janelas?.confirmar($("conta-dentro"));
     envio = sincronizar().catch(() => {});
@@ -179,6 +180,7 @@ const Conta = (() => {
     await api("/api/conta/sair", { method: "POST" }).catch(() => null);
     try { window.google?.accounts?.id?.disableAutoSelect(); } catch {}
     conta = null;
+    guardarConta();
     atualizarJanela();
     if (!$("fim").hidden) mostrarPlacar(estado.data);
   }
@@ -198,6 +200,7 @@ const Conta = (() => {
       return;
     }
     conta = null;
+    guardarConta();
     b.textContent = "EXCLUIR CONTA";
     atualizarJanela();
     $("conta-erro").textContent = "Conta excluída. O progresso continua só neste navegador.";
@@ -258,6 +261,7 @@ const Conta = (() => {
 
   // ---------- placar ----------
 
+  const GUARDA_PLACAR_MS = 5 * 60000;
   async function mostrarPlacar(dia) {
     const secao = $("secao-placar");
     await pronto;
@@ -266,10 +270,30 @@ const Conta = (() => {
       return;
     }
     await envio;
+    // sem conta, o placar de um dia é o mesmo para todo mundo: guarda por GUARDA_PLACAR_MS, para não
+    // pedir de novo a cada vez que o fim da viagem aparece (recarregar, voltar à aba, abrir o arquivo)
+    const chave = `nicho:placar-cache:${dia}`;
+    if (!conta) {
+      try {
+        const c = JSON.parse(localStorage.getItem(chave) || "null");
+        if (c && Date.now() - c.em < GUARDA_PLACAR_MS && c.corpo) {
+          ultimoPlacar = c.corpo;
+          secao.hidden = false;
+          desenharPlacar();
+          return;
+        }
+      } catch {}
+    }
     const r = await api(`/api/placar?dia=${dia}`).catch(() => null);
     if (!r?.ok) {
       secao.hidden = true;
       return;
+    }
+    if (!conta) {
+      try {
+        for (const k of Object.keys(localStorage)) if (k.startsWith("nicho:placar-cache:")) localStorage.removeItem(k);
+        localStorage.setItem(chave, JSON.stringify({ em: Date.now(), corpo: r.corpo }));
+      } catch {}
     }
     ultimoPlacar = r.corpo;
     secao.hidden = false;
@@ -377,11 +401,35 @@ const Conta = (() => {
 
   // ---------- começo ----------
 
+  // GET /api/conta a cada visita era ~1/8 de todas as execuções das Functions do dia, quase todas de
+  // quem nunca entrou. O navegador guarda a última resposta (nicho:conta-cache): sem conta, só
+  // pergunta de novo depois de GUARDA_CONTA_MS. Com conta, pergunta sempre (a sessão pode ter
+  // vencido, e o apelido pode ter sido barrado). Entrar, sair e excluir atualizam a guarda na hora.
+  const CACHE_CONTA = "nicho:conta-cache";
+  const GUARDA_CONTA_MS = 3 * 86400000;
+  function guardarConta() {
+    try { localStorage.setItem(CACHE_CONTA, JSON.stringify({ google, logado: !!conta, em: Date.now() })); } catch {}
+  }
+  function contaGuardada() {
+    try {
+      const c = JSON.parse(localStorage.getItem(CACHE_CONTA) || "null");
+      if (c && !c.logado && typeof c.em === "number" && Date.now() - c.em < GUARDA_CONTA_MS) return c;
+    } catch {}
+    return null;
+  }
+
   const pronto = (async () => {
     if (!LIGADA) return;
-    const r = await api("/api/conta").catch(() => null);
-    google = r?.corpo?.google || null;
-    conta = r?.corpo?.conta || null;
+    const guardada = contaGuardada();
+    if (guardada) {
+      google = guardada.google || null;
+      conta = null;
+    } else {
+      const r = await api("/api/conta").catch(() => null);
+      google = r?.corpo?.google || null;
+      conta = r?.corpo?.conta || null;
+      if (r?.ok) guardarConta();
+    }
     if (!google) return;
     $("abrir-conta").hidden = false;
     atualizarJanela();
