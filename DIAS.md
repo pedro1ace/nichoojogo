@@ -187,13 +187,13 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 263 |
-| 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 540 |
-| 3 | Coisas que dão medo | Cite algo que dá medo | 1886 |
-| 4 | Estádios de futebol | Cite um estádio de futebol | 2409 |
-| 5 | Árvores | Cite uma árvore | 1425 |
-| 6 | Nomes masculinos | Cite um nome masculino | 2824 |
-| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 615 |
+| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 315 |
+| 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 621 |
+| 3 | Coisas que dão medo | Cite algo que dá medo | 1959 |
+| 4 | Estádios de futebol | Cite um estádio de futebol | 3209 |
+| 5 | Árvores | Cite uma árvore | 1464 |
+| 6 | Nomes masculinos | Cite um nome masculino | 4434 |
+| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 722 |
 
 ## Dia 17 · sex 13/11/2026
 
