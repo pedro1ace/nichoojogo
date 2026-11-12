@@ -90,6 +90,7 @@ ENFEITES_SOLTOS = {
     "ritmos-musicais": ["ritmo", "estilo"],
     "elementos-quimicos": ["elemento"],
     "marcas-de-carro": ["marca", "carro"],
+    "estadios": ["estadio"],
 }
 PREFIXOS_DA_LISTA = {
     "queijos": ["queijo"],
@@ -97,6 +98,7 @@ PREFIXOS_DA_LISTA = {
     "missoes-espaciais": ["programa", "missao"],
     "brincadeiras": ["jogo"],
     "jogos-de-videogame": ["jogo"],
+    "estadios": ["estadio municipal doutor", "estadio municipal", "estadio olimpico", "estadio doutor", "estadio dr", "estadio"],
 }
 
 
