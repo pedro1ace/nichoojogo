@@ -110,32 +110,19 @@ scripts/testar_conta.mjs     teste do fluxo todo com um banco SQLite em memória
 scripts/testar_apelidos.mjs  teste do filtro de apelidos
 ```
 
-## Respostas escondidas de quem não está logado (contra trapaça)
+## Respostas raras no relatório de quem não está logado
 
-Antes, `/api/dia` mandava ao navegador a lista inteira do dia, com um campo `supernova` dizendo qual era a
-singularidade, e o `/jogo/dados.js` (todos os dias, inclusive os que ainda não chegaram) ficava aberto no site.
-Agora:
-
-- **Sem login, o dia de hoje vem sem o espaço profundo (60 pontos ou mais) e sem a singularidade** (nem o
-  nome nem a descrição). Cada categoria vem com `ocultas`: quantas respostas ficaram de fora.
-  Quem está logado recebe tudo. Dias que já passaram vão completos para todo mundo; dias que ainda não
-  chegaram vão sempre sem as raras. Código: `servidor/dias.js` e `functions/api/dia.js`.
-- O que a pessoa digita e não está na lista recebida vai para **`POST /api/conferir`**, que procura entre as
-  escondidas com a mesma busca do jogo (grafia, apelidos, plural, correção de digitação). O relógio para
-  enquanto espera, como no juiz. Se não achar, segue como antes (recusada, juiz).
-- A busca do jogo saiu do `jogo/jogo.js` para **`jogo/busca.js`**. O `scripts/montar_jogo.py` copia esse
-  arquivo para `servidor/busca.js` (com `export`), que é o que o `/api/conferir` usa. Edite só o `jogo/busca.js`
-  e rode o `montar_jogo.py`.
-- Quem entra na conta no meio da viagem recebe o dia completo na hora (`completarRespostas` no `jogo.js`).
-- No fim da viagem, a lista de respostas de quem não está logado mostra só as que ele recebeu, mais as
-  escondidas que ele acertou, com o aviso de que o resto aparece para quem entra na conta.
-- **`/jogo/dados.js` não abre mais no site** (404 pelo `functions/_middleware.js`). O `_routes.json` lista
-  um por um os arquivos de `jogo/`, menos ele, e o `montar_jogo.py` refaz essa lista sozinho. Ele continua
-  dentro do `jogar-completo.html` (para jogar sem internet). No site, os modos de teste `?aleatorio` e
-  `?categorias=` e a página `jogo/testes.html` dependiam dele e deixam de funcionar; continuam funcionando abertos do computador.
-- Custo: cada palpite que não está na lista recebida, de quem não está logado, é uma chamada ao
-  `/api/conferir`. Ele guarda o dia preparado na memória por 1 minuto, então quase nunca lê o banco.
-- Limite: o repositório no GitHub é público, e as listas (`dados/`) ficam lá. Para fechar de vez, deixe o
-  repositório privado (Settings > General > Danger Zone > Change visibility).
+- O jogo aceita as respostas do espaço profundo e a singularidade de **todo mundo**, logado ou não, e elas
+  aparecem no relatório do fim de quem acertou.
+- Sem login, o relatório do fim (a lista de respostas de cada pergunta) **não mostra as respostas do espaço
+  profundo (60 pontos ou mais) nem a singularidade que a pessoa não pegou**, com o aviso de que elas aparecem
+  para quem entra na conta. Código: `montarBanco` em `jogo/jogo.js`. Entrar na conta mostra todas.
+- Isso esconde só na tela: a lista inteira do dia continua indo para o navegador (`/api/dia`).
+- Dias que ainda não chegaram vão sem as raras (`servidor/dias.js`), até para quem está logado.
+- `/jogo/dados.js` (todas as respostas de todos os dias) não abre no site: o `_routes.json` lista os arquivos
+  de `jogo/` menos ele, e o `scripts/montar_jogo.py` refaz essa lista. Continua dentro do `jogar-completo.html`.
+- Histórico: em 11/11 (#163) o dia de hoje ia sem as raras para quem não estava logado, conferidas uma a uma
+  em `/api/conferir`. Jogadores sem login não conseguiam acertá-las e isso foi desfeito em 12/11. O
+  `/api/conferir` e o `jogo/busca.js` (gerando `servidor/busca.js`) continuam no código, sem uso pelo jogo.
 
 Teste: `node scripts/testar_escondidas.mjs`.

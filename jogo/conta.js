@@ -165,7 +165,8 @@ const Conta = (() => {
     window.Janelas?.confirmar($("conta-dentro"));
     envio = sincronizar().catch(() => {});
     await envio;
-    if (typeof completarRespostas === "function") await completarRespostas();
+    // o relatório do fim, se já aberto, monta de novo com todas as respostas
+    document.querySelectorAll("#respostas-dia .banco").forEach((b) => b.remove());
     if (!$("fim").hidden) mostrarPlacar(estado.data);
     if (!conta.escolheuApelido) {
       $("conta-msg").textContent = "Escolha como você quer aparecer no placar.";
@@ -395,5 +396,5 @@ const Conta = (() => {
   $("conta-sair").addEventListener("click", sair);
   $("conta-excluir").addEventListener("click", excluir);
 
-  return { registroSalvo, mostrarPlacar };
+  return { registroSalvo, mostrarPlacar, logado: () => !!conta };
 })();

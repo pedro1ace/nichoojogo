@@ -65,20 +65,13 @@ const pedir = async (fn, caminho, { cookie, corpo } = {}) => {
 const raras = (c) => c.respostas.filter((r) => r.pontos >= PONTOS_ESCONDIDOS || r.resposta === c.supernova);
 
 // ---------- /api/dia ----------
+// hoje vai completo para todo mundo: o jogo tem que aceitar as raras de quem não está logado (12/11)
 let r = await pedir(dia.onRequestGet, `/api/dia?dia=${hoje}`);
 let c = r.corpo.categorias[0];
-conferir(r.status === 200 && !("supernova" in c) && !("curiosidade" in c), "sem login: hoje vem sem a singularidade nem a descrição dela");
-conferir(raras(doencas).length > 0 && c.respostas.every((x) => x.pontos < PONTOS_ESCONDIDOS && x.resposta !== doencas.supernova), "sem login: hoje vem sem o espaço profundo");
-conferir(c.ocultas === raras(doencas).length && c.respostas.length + c.ocultas === doencas.respostas.length, `sem login: "ocultas" diz quantas ficaram de fora (${c.ocultas})`);
-conferir(!JSON.stringify(r.corpo).includes(`"${doencas.supernova}"`), "o nome da singularidade não aparece em lugar nenhum do pacote");
-conferir(r.cache === "private, no-cache", "hoje não fica guardado no navegador");
-
+conferir(r.status === 200 && c.supernova === doencas.supernova && c.respostas.length === doencas.respostas.length && !c.ocultas, "sem login: hoje vem completo (o jogo aceita as raras)");
 r = await pedir(dia.onRequestGet, `/api/dia?dia=${hoje}`, { cookie: logado });
 c = r.corpo.categorias[0];
 conferir(c.supernova === doencas.supernova && c.respostas.length === doencas.respostas.length && !c.ocultas, "logado: hoje vem completo");
-
-r = await pedir(dia.onRequestGet, `/api/dia?dia=${hoje}`, { cookie: `${COOKIE}=token-falso` });
-conferir(!r.corpo.categorias[0].supernova, "sessão falsa conta como sem login");
 
 r = await pedir(dia.onRequestGet, `/api/dia?dia=${ontem}`);
 conferir(r.corpo.categorias[0].supernova === doencas.supernova && /public/.test(r.cache), "dia que já passou vem completo para todo mundo");

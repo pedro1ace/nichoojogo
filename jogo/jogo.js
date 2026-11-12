@@ -1770,13 +1770,22 @@ document.addEventListener("keydown", (e) => {
 });
 
 // Todas as respostas aceitas de uma pergunta, com os pontos, filtro por faixa e busca.
+const PONTOS_ESCONDIDOS_NO_RELATORIO = 60; // a faixa ESPAÇO PROFUNDO (cena.js, FAIXAS)
 function montarBanco(cat, sua, suaPontos = 0) {
   const banco = document.createElement("div");
   banco.className = "banco";
-  const itens = cat.respostas.map((r) => {
+  // Sem login, o relatório não mostra as respostas do espaço profundo nem a singularidade que a pessoa
+  // não pegou (a que ela pegou aparece). Entrar na conta mostra todas.
+  const logado = typeof Conta !== "undefined" && Conta.logado();
+  let escondidas = 0;
+  const itens = cat.respostas.flatMap((r) => {
     const sn = r.resposta === cat.supernova;
     const pontos = sn ? r.pontos * 2 : r.pontos;
-    return { nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn, frase: r.frase };
+    if (!logado && r.resposta !== sua && (sn || r.pontos >= PONTOS_ESCONDIDOS_NO_RELATORIO)) {
+      escondidas++;
+      return [];
+    }
+    return [{ nome: r.resposta, pontos, faixa: faixaDe(pontos, sn, r.espertalhao), sn, frase: r.frase }];
   });
   // resposta aprovada pelo juiz: ainda não está na lista do dia, mas aparece aqui com a sua
   if (sua && !itens.some((it) => it.nome === sua)) {
@@ -1844,7 +1853,7 @@ function montarBanco(cat, sua, suaPontos = 0) {
       lista.append(li);
     }
     rodape.textContent = `${vis.length} de ${itens.length} respostas` +
-      (cat.ocultas ? " · as do espaço profundo e a singularidade aparecem para quem entra na conta" : "");
+      (escondidas ? ` · mais ${numero(escondidas)} do espaço profundo e a singularidade aparecem para quem entra na conta` : "");
   }
   desenhar();
   banco.append(chips, campo, lista, rodape);
