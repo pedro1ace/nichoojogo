@@ -189,11 +189,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 315 |
 | 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 621 |
-| 3 | Coisas que dão medo | Cite algo que dá medo | 1959 |
+| 3 | Coisas que dão medo | Cite algo que dá medo | 1960 |
 | 4 | Estádios de futebol | Cite um estádio de futebol | 3209 |
 | 5 | Árvores | Cite uma árvore | 1464 |
-| 6 | Nomes masculinos | Cite um nome masculino | 4434 |
-| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 722 |
+| 6 | Nomes masculinos | Cite um nome masculino | 2995 |
+| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 902 |
 
 ## Dia 17 · sex 13/11/2026
 
