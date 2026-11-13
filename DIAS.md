@@ -199,13 +199,13 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1887 |
-| 2 | Comida de rua | Cite uma comida de rua ou de lanchonete | 359 |
-| 3 | Redes sociais e mensageiros | Cite uma rede social ou aplicativo de mensagens | 126 |
-| 4 | Motivos para chorar | Cite um motivo para chorar | 427 |
-| 5 | Coisas cheirosas | Cite algo cheiroso | 1702 |
-| 6 | Nomes femininos | Cite um nome feminino | 1752 |
-| 7 | Móveis | Cite um móvel | 302 |
+| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1879 |
+| 2 | Comida de rua | Cite uma comida de rua ou de lanchonete | 369 |
+| 3 | Redes sociais e mensageiros | Cite uma rede social ou aplicativo de mensagens | 256 |
+| 4 | Motivos para chorar | Cite um motivo para chorar | 628 |
+| 5 | Coisas cheirosas | Cite algo cheiroso | 1775 |
+| 6 | Nomes femininos | Cite um nome feminino | 1652 |
+| 7 | Móveis | Cite um móvel | 294 |
 
 ## Dia 18 · sáb 14/11/2026
 
