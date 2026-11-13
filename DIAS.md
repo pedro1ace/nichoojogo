@@ -175,37 +175,37 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1811 |
+| 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1812 |
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1988 |
-| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 539 |
-| 4 | Brinquedos | Cite um brinquedo | 609 |
+| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 542 |
+| 4 | Brinquedos | Cite um brinquedo | 611 |
 | 5 | Doenças | Cite uma doença | 3982 |
-| 6 | Praias brasileiras | Cite uma praia brasileira | 733 |
-| 7 | Coisas geladas | Cite algo gelado | 765 |
+| 6 | Praias brasileiras | Cite uma praia brasileira | 738 |
+| 7 | Coisas geladas | Cite algo gelado | 766 |
 
 ## Dia 16 · qui 12/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 315 |
-| 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 621 |
-| 3 | Coisas que dão medo | Cite algo que dá medo | 1960 |
-| 4 | Estádios de futebol | Cite um estádio de futebol | 3209 |
-| 5 | Árvores | Cite uma árvore | 1464 |
-| 6 | Nomes masculinos | Cite um nome masculino | 2995 |
-| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 902 |
+| 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 328 |
+| 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 641 |
+| 3 | Coisas que dão medo | Cite algo que dá medo | 1970 |
+| 4 | Estádios de futebol | Cite um estádio de futebol | 3571 |
+| 5 | Árvores | Cite uma árvore | 1474 |
+| 6 | Nomes masculinos | Cite um nome masculino | 3006 |
+| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 926 |
 
 ## Dia 17 · sex 13/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1887 |
-| 2 | Comida de rua | Cite uma comida de rua ou de lanchonete | 359 |
-| 3 | Redes sociais e mensageiros | Cite uma rede social ou aplicativo de mensagens | 126 |
-| 4 | Motivos para chorar | Cite um motivo para chorar | 427 |
-| 5 | Coisas cheirosas | Cite algo cheiroso | 1702 |
-| 6 | Nomes femininos | Cite um nome feminino | 1752 |
-| 7 | Móveis | Cite um móvel | 302 |
+| 1 | Filmes brasileiros de 2000 para cá | Cite um filme brasileiro lançado de 2000 em diante | 1879 |
+| 2 | Comida de rua | Cite uma comida de rua ou de lanchonete | 369 |
+| 3 | Redes sociais e mensageiros | Cite uma rede social ou aplicativo de mensagens | 256 |
+| 4 | Motivos para chorar | Cite um motivo para chorar | 628 |
+| 5 | Coisas cheirosas | Cite algo cheiroso | 1775 |
+| 6 | Nomes femininos | Cite um nome feminino | 1652 |
+| 7 | Móveis | Cite um móvel | 294 |
 
 ## Dia 18 · sáb 14/11/2026
 

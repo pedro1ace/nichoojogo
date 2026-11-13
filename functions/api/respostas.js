@@ -12,6 +12,9 @@
 //        (com "ia": o veredito do juiz, functions/api/juiz.js, ou null; e "ia_nome": o nome no padrão)
 //   POST /api/respostas {dia, categoria, resposta}            soma uma resposta aceita
 //   POST /api/respostas {dia, categoria, recusada}            soma uma resposta recusada
+//   POST /api/respostas {itens: [{dia, categoria, resposta | recusada}, ...]}
+//        várias de uma vez (até MAX_ITENS): é o que o jogo manda, para gastar uma execução
+//        da Function por viagem e não uma por palpite. Item inválido é pulado.
 //
 // Precisa do banco D1 da curva (DB), com as tabelas de banco/schema.sql.
 
@@ -118,6 +121,29 @@ async function contarEscrita(db) {
   } catch {}
 }
 
+const MAX_ITENS = 100;
+
+// O comando que soma um item, ou null se o item não vale.
+function gravacao(db, item) {
+  const { dia, categoria, resposta, recusada } = item || {};
+  if (!diaValido(dia) || !categoriaValida(categoria)) return null;
+  if (textoValido(resposta, 120))
+    return db
+      .prepare(
+        "INSERT INTO respostas (dia, categoria, resposta, n) VALUES (?, ?, ?, 1) " +
+          "ON CONFLICT (dia, categoria, resposta) DO UPDATE SET n = n + 1",
+      )
+      .bind(dia, categoria, resposta.trim());
+  if (textoValido(recusada, 60) && normalizar(recusada).length >= 2)
+    return db
+      .prepare(
+        "INSERT INTO recusadas (dia, categoria, texto, n) VALUES (?, ?, ?, 1) " +
+          "ON CONFLICT (dia, categoria, texto) DO UPDATE SET n = n + 1",
+      )
+      .bind(dia, categoria, normalizar(recusada));
+  return null;
+}
+
 export async function onRequestPost({ request, env, waitUntil }) {
   let corpo;
   try {
@@ -125,30 +151,21 @@ export async function onRequestPost({ request, env, waitUntil }) {
   } catch {
     return json({ erro: "corpo inválido" }, 400);
   }
-  const { dia, categoria, resposta, recusada } = corpo || {};
-  if (!diaValido(dia)) return json({ erro: "dia inválido" }, 400);
-  if (!categoriaValida(categoria)) return json({ erro: "categoria inválida" }, 400);
+  const lote = Array.isArray(corpo?.itens);
+  const itens = lote ? corpo.itens.slice(0, MAX_ITENS) : [corpo];
+  if (!lote) {
+    // formato antigo (uma resposta por POST): páginas abertas antes da atualização
+    if (!diaValido(corpo?.dia)) return json({ erro: "dia inválido" }, 400);
+    if (!categoriaValida(corpo?.categoria)) return json({ erro: "categoria inválida" }, 400);
+  }
+  const comandos = itens.map((item) => gravacao(env.DB, item)).filter(Boolean);
+  if (!comandos.length) return json(lote ? { ok: true, gravadas: 0 } : { erro: "resposta inválida" }, lote ? 200 : 400);
   if (await cotaCheia(env.DB)) return json({ ok: false, pausado: "cota do dia reservada para a curva" });
-  const contar = () => (typeof waitUntil === "function" ? waitUntil(contarEscrita(env.DB)) : contarEscrita(env.DB));
-  if (textoValido(resposta, 120)) {
-    await env.DB.prepare(
-      "INSERT INTO respostas (dia, categoria, resposta, n) VALUES (?, ?, ?, 1) " +
-        "ON CONFLICT (dia, categoria, resposta) DO UPDATE SET n = n + 1",
-    )
-      .bind(dia, categoria, resposta.trim())
-      .run();
-    await contar();
-    return json({ ok: true });
-  }
-  if (textoValido(recusada, 60) && normalizar(recusada).length >= 2) {
-    await env.DB.prepare(
-      "INSERT INTO recusadas (dia, categoria, texto, n) VALUES (?, ?, ?, 1) " +
-        "ON CONFLICT (dia, categoria, texto) DO UPDATE SET n = n + 1",
-    )
-      .bind(dia, categoria, normalizar(recusada))
-      .run();
-    await contar();
-    return json({ ok: true });
-  }
-  return json({ erro: "resposta inválida" }, 400);
+  await env.DB.batch(comandos);
+  const contar = async () => {
+    for (let i = 0; i < comandos.length; i++) await contarEscrita(env.DB);
+  };
+  if (typeof waitUntil === "function") waitUntil(contar());
+  else await contar();
+  return json({ ok: true, gravadas: comandos.length });
 }

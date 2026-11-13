@@ -605,6 +605,7 @@ async function refazerDia() {
 async function iniciar() {
   if (await refazerDia()) return;
   reenviarPendentes();
+  mandarRespostas();
   const cats = await carregarCategoriasDoDia();
   if (!cats || !cats.length) {
     $("regras").textContent = "Não foi possível carregar as perguntas do dia. Verifique sua conexão.";
@@ -979,6 +980,23 @@ function usarSugestao() {
   $("palpite").focus();
 }
 
+// Enquanto o servidor confere (juiz ou escondidas) o campo não aceita letras, mas continua focado.
+// Antes ele ficava "disabled": isso tira o foco e, no celular, fecha o teclado; depois de errar,
+// o jogador tinha de tocar no campo de novo para continuar digitando.
+function travarCampo(travar) {
+  $("palpite").setAttribute("aria-busy", String(travar));
+}
+
+// Devolve o foco ao campo (o teclado do celular continua aberto). Com "selecionar", o texto errado
+// fica selecionado: a próxima letra digitada já apaga ele.
+function focarCampo(selecionar) {
+  const campo = $("palpite");
+  if (document.activeElement !== campo) campo.focus({ preventScroll: true });
+  if (selecionar) {
+    try { campo.setSelectionRange(0, campo.value.length); } catch { campo.select(); }
+  }
+}
+
 function palpitar(evento) {
   evento.preventDefault();
   if (!estado.ativa || $("formulario").classList.contains("esperando")) return;
@@ -1039,7 +1057,7 @@ async function conferirEscondida(cat, texto) {
   if (r === undefined) {
     restaMs = Math.max(0, estado.fimDoTempo - performance.now());
     pararRelogio();
-    $("palpite").disabled = true;
+    travarCampo(true);
     $("formulario").classList.add("esperando");
     $("sugestao").hidden = true;
     avisar("");
@@ -1059,7 +1077,7 @@ async function conferirEscondida(cat, texto) {
       }
     } catch {}
     clearTimeout(prazo);
-    $("palpite").disabled = false;
+    travarCampo(false);
     $("formulario").classList.remove("esperando");
     if (estado.rodada !== rodada) return;
   }
@@ -1128,7 +1146,7 @@ function recusar(cat, texto) {
   $("palpite").classList.remove("tremendo");
   void $("palpite").offsetWidth; // reinicia a animação
   $("palpite").classList.add("tremendo");
-  $("palpite").select();
+  focarCampo(true);
   Som.erro();
 }
 
@@ -1156,7 +1174,7 @@ async function consultarJuiz(cat, texto) {
   const restaMs = Math.max(0, estado.fimDoTempo - performance.now());
   pararRelogio();
   const rodada = estado.rodada;
-  $("palpite").disabled = true;
+  travarCampo(true);
   $("formulario").classList.add("esperando"); // botão LANÇAR escurece enquanto a central responde
   $("sugestao").hidden = true;
   avisar(""); // sem aviso de "consultando": só o botão LANÇAR escurece
@@ -1178,7 +1196,7 @@ async function consultarJuiz(cat, texto) {
     if (resposta.veredito !== "indisponivel") estado.vereditos[chave] = resposta;
     else if (resposta.motivo) console.info("juiz indisponível:", resposta.motivo);
   }
-  $("palpite").disabled = false;
+  travarCampo(false);
   $("formulario").classList.remove("esperando");
   if (estado.rodada !== rodada) return;
 
@@ -1331,6 +1349,7 @@ function mostrarFim(comSom) {
   $("fim-comparacao").textContent = `Em média, suas respostas foram mais nichadas que as de ${Math.min(99, Math.round(media * 100))}% dos jogadores.`;
   montarGrafico();
   mostrarCurva();
+  mandarRespostas();
   if (typeof Conta !== "undefined") Conta.mostrarPlacar(estado.data);
   if (comSom && !estado.replay && typeof Conta !== "undefined") Conta.avisarRaras(estado.data);
   montarFaixas();
@@ -1424,6 +1443,13 @@ const API_RESPOSTAS = "/api/respostas";
 
 // Cada navegador conta uma resposta aceita por categoria por dia, e cada recusada uma vez por dia.
 // viagens pelo arquivo não são enviadas: a contagem é de quem joga no dia
+//
+// Para não gastar uma execução da Function por palpite (o limite grátis da Cloudflare é de 100 mil
+// por dia, somando todas as rotas), as respostas ficam numa fila no navegador e vão juntas, num
+// POST só: no fim da viagem, quando a aba fica escondida (troca de aba, fecha o celular) e, se
+// sobrou algo de outra visita, quando o jogo abre.
+const FILA_RESPOSTAS = "nicho:fila-respostas";
+const MAX_FILA_RESPOSTAS = 100; // o mesmo teto do servidor
 function vaiAnotar(cat) {
   return !(location.protocol === "file:" || MODO_TESTE || ARQUIVO || !cat.id);
 }
@@ -1441,13 +1467,28 @@ function enviarResposta(cat, corpo) {
     if (lerChave(chaveRecusada)) return;
     gravarChave(chaveRecusada, "1");
   }
+  const fila = lerJson(FILA_RESPOSTAS);
+  const itens = Array.isArray(fila) ? fila : [];
+  if (itens.length >= MAX_FILA_RESPOSTAS) return;
+  itens.push({ dia: estado.data, categoria: cat.id, ...corpo });
+  gravar(FILA_RESPOSTAS, itens);
+}
+
+function mandarRespostas() {
+  if (location.protocol === "file:" || MODO_TESTE) return;
+  const fila = lerJson(FILA_RESPOSTAS);
+  if (!Array.isArray(fila) || !fila.length) return;
+  gravar(FILA_RESPOSTAS, null);
   fetch(API_RESPOSTAS, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ dia: estado.data, categoria: cat.id, ...corpo }),
+    body: JSON.stringify({ itens: fila.slice(0, MAX_FILA_RESPOSTAS) }),
     keepalive: true,
   }).catch(() => {});
 }
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") mandarRespostas();
+});
 
 // "acima" vem da simulação: a parte dos jogadores que daria uma resposta mais óbvia que esta.
 // Sem simulação, a conta antiga: a parte da lista que vale menos pontos.
@@ -2459,6 +2500,15 @@ $("abrir-como").addEventListener("click", () => {
 });
 $("formulario").addEventListener("submit", palpitar);
 $("palpite").addEventListener("input", aoDigitar);
+// enquanto espera a resposta do servidor, as letras não entram (o campo segue focado, sem fechar o teclado)
+$("palpite").addEventListener("beforeinput", (e) => {
+  if ($("formulario").classList.contains("esperando")) e.preventDefault();
+});
+// Tocar em LANÇAR ou na sugestão não tira o foco do campo: no celular, o teclado não fecha
+// e dá para digitar a próxima resposta direto, sem tocar no campo de novo.
+for (const b of [$("formulario").querySelector("button[type=submit]"), $("sugestao")]) {
+  b.addEventListener("mousedown", (e) => e.preventDefault());
+}
 // Enter e o botão LANÇAR chamam palpitar() direto, sem depender do envio do formulário:
 // em visualizadores que abrem o jogo numa moldura sem formulários (prévia de arquivo do
 // celular, por exemplo), o envio é bloqueado e a resposta não saía.

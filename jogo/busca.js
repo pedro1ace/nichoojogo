@@ -89,6 +89,7 @@ const ENFEITES = {
   "ritmos-musicais": ["ritmo", "estilo"],
   "elementos-quimicos": ["elemento"],
   "marcas-de-carro": ["marca", "carro"],
+  estadios: ["estadio"],
 };
 
 // Palavra do tema que fica no começo do nome da lista e o jogador pula ("Queijo minas" -> "minas").
@@ -98,6 +99,7 @@ const PREFIXOS_DA_LISTA = {
   "missoes-espaciais": ["programa", "missao"],
   brincadeiras: ["jogo"],
   "jogos-de-videogame": ["jogo"],
+  estadios: ["estadio municipal doutor", "estadio municipal", "estadio olimpico", "estadio doutor", "estadio dr", "estadio"],
 };
 
 // Tira o plural (e o "e" final, dos dois lados): "leoes" = "leao", "flores" = "flor", "tigres" = "tigre".

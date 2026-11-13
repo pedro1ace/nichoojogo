@@ -5187,6 +5187,7 @@ const ENFEITES = {
   "ritmos-musicais": ["ritmo", "estilo"],
   "elementos-quimicos": ["elemento"],
   "marcas-de-carro": ["marca", "carro"],
+  estadios: ["estadio"],
 };
 
 // Palavra do tema que fica no começo do nome da lista e o jogador pula ("Queijo minas" -> "minas").
@@ -5196,6 +5197,7 @@ const PREFIXOS_DA_LISTA = {
   "missoes-espaciais": ["programa", "missao"],
   brincadeiras: ["jogo"],
   "jogos-de-videogame": ["jogo"],
+  estadios: ["estadio municipal doutor", "estadio municipal", "estadio olimpico", "estadio doutor", "estadio dr", "estadio"],
 };
 
 // Tira o plural (e o "e" final, dos dois lados): "leoes" = "leao", "flores" = "flor", "tigres" = "tigre".
@@ -6008,7 +6010,7 @@ cena.aoQuadro((al) => {
 // (sem internet, aberto do computador, ?aleatorio ou dia que ainda não está no banco).
 // No site o dados.js não abre mais (tem todas as respostas, docs/CONTA.md): lá o fallback só falha.
 // No jogar-completo.html (o arquivo único para abrir sem internet) o pacote já vem dentro.
-const VERSAO_DADOS = "89c4d557bb"; // o montar_jogo.py troca pelo resumo do dados.js no jogar.html
+const VERSAO_DADOS = "45daef33b4"; // o montar_jogo.py troca pelo resumo do dados.js no jogar.html
 let promessaDadosLocais = null;
 function carregarDadosLocais() {
   if (window.NICHO_DADOS) return Promise.resolve(window.NICHO_DADOS);
@@ -6086,6 +6088,7 @@ async function refazerDia() {
 async function iniciar() {
   if (await refazerDia()) return;
   reenviarPendentes();
+  mandarRespostas();
   const cats = await carregarCategoriasDoDia();
   if (!cats || !cats.length) {
     $("regras").textContent = "Não foi possível carregar as perguntas do dia. Verifique sua conexão.";
@@ -6460,6 +6463,23 @@ function usarSugestao() {
   $("palpite").focus();
 }
 
+// Enquanto o servidor confere (juiz ou escondidas) o campo não aceita letras, mas continua focado.
+// Antes ele ficava "disabled": isso tira o foco e, no celular, fecha o teclado; depois de errar,
+// o jogador tinha de tocar no campo de novo para continuar digitando.
+function travarCampo(travar) {
+  $("palpite").setAttribute("aria-busy", String(travar));
+}
+
+// Devolve o foco ao campo (o teclado do celular continua aberto). Com "selecionar", o texto errado
+// fica selecionado: a próxima letra digitada já apaga ele.
+function focarCampo(selecionar) {
+  const campo = $("palpite");
+  if (document.activeElement !== campo) campo.focus({ preventScroll: true });
+  if (selecionar) {
+    try { campo.setSelectionRange(0, campo.value.length); } catch { campo.select(); }
+  }
+}
+
 function palpitar(evento) {
   evento.preventDefault();
   if (!estado.ativa || $("formulario").classList.contains("esperando")) return;
@@ -6520,7 +6540,7 @@ async function conferirEscondida(cat, texto) {
   if (r === undefined) {
     restaMs = Math.max(0, estado.fimDoTempo - performance.now());
     pararRelogio();
-    $("palpite").disabled = true;
+    travarCampo(true);
     $("formulario").classList.add("esperando");
     $("sugestao").hidden = true;
     avisar("");
@@ -6540,7 +6560,7 @@ async function conferirEscondida(cat, texto) {
       }
     } catch {}
     clearTimeout(prazo);
-    $("palpite").disabled = false;
+    travarCampo(false);
     $("formulario").classList.remove("esperando");
     if (estado.rodada !== rodada) return;
   }
@@ -6609,7 +6629,7 @@ function recusar(cat, texto) {
   $("palpite").classList.remove("tremendo");
   void $("palpite").offsetWidth; // reinicia a animação
   $("palpite").classList.add("tremendo");
-  $("palpite").select();
+  focarCampo(true);
   Som.erro();
 }
 
@@ -6637,7 +6657,7 @@ async function consultarJuiz(cat, texto) {
   const restaMs = Math.max(0, estado.fimDoTempo - performance.now());
   pararRelogio();
   const rodada = estado.rodada;
-  $("palpite").disabled = true;
+  travarCampo(true);
   $("formulario").classList.add("esperando"); // botão LANÇAR escurece enquanto a central responde
   $("sugestao").hidden = true;
   avisar(""); // sem aviso de "consultando": só o botão LANÇAR escurece
@@ -6659,7 +6679,7 @@ async function consultarJuiz(cat, texto) {
     if (resposta.veredito !== "indisponivel") estado.vereditos[chave] = resposta;
     else if (resposta.motivo) console.info("juiz indisponível:", resposta.motivo);
   }
-  $("palpite").disabled = false;
+  travarCampo(false);
   $("formulario").classList.remove("esperando");
   if (estado.rodada !== rodada) return;
 
@@ -6812,6 +6832,7 @@ function mostrarFim(comSom) {
   $("fim-comparacao").textContent = `Em média, suas respostas foram mais nichadas que as de ${Math.min(99, Math.round(media * 100))}% dos jogadores.`;
   montarGrafico();
   mostrarCurva();
+  mandarRespostas();
   if (typeof Conta !== "undefined") Conta.mostrarPlacar(estado.data);
   if (comSom && !estado.replay && typeof Conta !== "undefined") Conta.avisarRaras(estado.data);
   montarFaixas();
@@ -6905,6 +6926,13 @@ const API_RESPOSTAS = "/api/respostas";
 
 // Cada navegador conta uma resposta aceita por categoria por dia, e cada recusada uma vez por dia.
 // viagens pelo arquivo não são enviadas: a contagem é de quem joga no dia
+//
+// Para não gastar uma execução da Function por palpite (o limite grátis da Cloudflare é de 100 mil
+// por dia, somando todas as rotas), as respostas ficam numa fila no navegador e vão juntas, num
+// POST só: no fim da viagem, quando a aba fica escondida (troca de aba, fecha o celular) e, se
+// sobrou algo de outra visita, quando o jogo abre.
+const FILA_RESPOSTAS = "nicho:fila-respostas";
+const MAX_FILA_RESPOSTAS = 100; // o mesmo teto do servidor
 function vaiAnotar(cat) {
   return !(location.protocol === "file:" || MODO_TESTE || ARQUIVO || !cat.id);
 }
@@ -6922,13 +6950,28 @@ function enviarResposta(cat, corpo) {
     if (lerChave(chaveRecusada)) return;
     gravarChave(chaveRecusada, "1");
   }
+  const fila = lerJson(FILA_RESPOSTAS);
+  const itens = Array.isArray(fila) ? fila : [];
+  if (itens.length >= MAX_FILA_RESPOSTAS) return;
+  itens.push({ dia: estado.data, categoria: cat.id, ...corpo });
+  gravar(FILA_RESPOSTAS, itens);
+}
+
+function mandarRespostas() {
+  if (location.protocol === "file:" || MODO_TESTE) return;
+  const fila = lerJson(FILA_RESPOSTAS);
+  if (!Array.isArray(fila) || !fila.length) return;
+  gravar(FILA_RESPOSTAS, null);
   fetch(API_RESPOSTAS, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ dia: estado.data, categoria: cat.id, ...corpo }),
+    body: JSON.stringify({ itens: fila.slice(0, MAX_FILA_RESPOSTAS) }),
     keepalive: true,
   }).catch(() => {});
 }
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") mandarRespostas();
+});
 
 // "acima" vem da simulação: a parte dos jogadores que daria uma resposta mais óbvia que esta.
 // Sem simulação, a conta antiga: a parte da lista que vale menos pontos.
@@ -7940,6 +7983,15 @@ $("abrir-como").addEventListener("click", () => {
 });
 $("formulario").addEventListener("submit", palpitar);
 $("palpite").addEventListener("input", aoDigitar);
+// enquanto espera a resposta do servidor, as letras não entram (o campo segue focado, sem fechar o teclado)
+$("palpite").addEventListener("beforeinput", (e) => {
+  if ($("formulario").classList.contains("esperando")) e.preventDefault();
+});
+// Tocar em LANÇAR ou na sugestão não tira o foco do campo: no celular, o teclado não fecha
+// e dá para digitar a próxima resposta direto, sem tocar no campo de novo.
+for (const b of [$("formulario").querySelector("button[type=submit]"), $("sugestao")]) {
+  b.addEventListener("mousedown", (e) => e.preventDefault());
+}
 // Enter e o botão LANÇAR chamam palpitar() direto, sem depender do envio do formulário:
 // em visualizadores que abrem o jogo numa moldura sem formulários (prévia de arquivo do
 // celular, por exemplo), o envio é bloqueado e a resposta não saía.
@@ -8178,6 +8230,7 @@ const Conta = (() => {
     }
     $("conta-erro").textContent = "";
     conta = r.corpo.conta;
+    guardarConta();
     atualizarJanela();
     window.Janelas?.confirmar($("conta-dentro"));
     envio = sincronizar().catch(() => {});
@@ -8196,6 +8249,7 @@ const Conta = (() => {
     await api("/api/conta/sair", { method: "POST" }).catch(() => null);
     try { window.google?.accounts?.id?.disableAutoSelect(); } catch {}
     conta = null;
+    guardarConta();
     atualizarJanela();
     if (!$("fim").hidden) mostrarPlacar(estado.data);
   }
@@ -8215,6 +8269,7 @@ const Conta = (() => {
       return;
     }
     conta = null;
+    guardarConta();
     b.textContent = "EXCLUIR CONTA";
     atualizarJanela();
     $("conta-erro").textContent = "Conta excluída. O progresso continua só neste navegador.";
@@ -8275,6 +8330,7 @@ const Conta = (() => {
 
   // ---------- placar ----------
 
+  const GUARDA_PLACAR_MS = 5 * 60000;
   async function mostrarPlacar(dia) {
     const secao = $("secao-placar");
     await pronto;
@@ -8283,10 +8339,30 @@ const Conta = (() => {
       return;
     }
     await envio;
+    // sem conta, o placar de um dia é o mesmo para todo mundo: guarda por GUARDA_PLACAR_MS, para não
+    // pedir de novo a cada vez que o fim da viagem aparece (recarregar, voltar à aba, abrir o arquivo)
+    const chave = `nicho:placar-cache:${dia}`;
+    if (!conta) {
+      try {
+        const c = JSON.parse(localStorage.getItem(chave) || "null");
+        if (c && Date.now() - c.em < GUARDA_PLACAR_MS && c.corpo) {
+          ultimoPlacar = c.corpo;
+          secao.hidden = false;
+          desenharPlacar();
+          return;
+        }
+      } catch {}
+    }
     const r = await api(`/api/placar?dia=${dia}`).catch(() => null);
     if (!r?.ok) {
       secao.hidden = true;
       return;
+    }
+    if (!conta) {
+      try {
+        for (const k of Object.keys(localStorage)) if (k.startsWith("nicho:placar-cache:")) localStorage.removeItem(k);
+        localStorage.setItem(chave, JSON.stringify({ em: Date.now(), corpo: r.corpo }));
+      } catch {}
     }
     ultimoPlacar = r.corpo;
     secao.hidden = false;
@@ -8394,11 +8470,35 @@ const Conta = (() => {
 
   // ---------- começo ----------
 
+  // GET /api/conta a cada visita era ~1/8 de todas as execuções das Functions do dia, quase todas de
+  // quem nunca entrou. O navegador guarda a última resposta (nicho:conta-cache): sem conta, só
+  // pergunta de novo depois de GUARDA_CONTA_MS. Com conta, pergunta sempre (a sessão pode ter
+  // vencido, e o apelido pode ter sido barrado). Entrar, sair e excluir atualizam a guarda na hora.
+  const CACHE_CONTA = "nicho:conta-cache";
+  const GUARDA_CONTA_MS = 3 * 86400000;
+  function guardarConta() {
+    try { localStorage.setItem(CACHE_CONTA, JSON.stringify({ google, logado: !!conta, em: Date.now() })); } catch {}
+  }
+  function contaGuardada() {
+    try {
+      const c = JSON.parse(localStorage.getItem(CACHE_CONTA) || "null");
+      if (c && !c.logado && typeof c.em === "number" && Date.now() - c.em < GUARDA_CONTA_MS) return c;
+    } catch {}
+    return null;
+  }
+
   const pronto = (async () => {
     if (!LIGADA) return;
-    const r = await api("/api/conta").catch(() => null);
-    google = r?.corpo?.google || null;
-    conta = r?.corpo?.conta || null;
+    const guardada = contaGuardada();
+    if (guardada) {
+      google = guardada.google || null;
+      conta = null;
+    } else {
+      const r = await api("/api/conta").catch(() => null);
+      google = r?.corpo?.google || null;
+      conta = r?.corpo?.conta || null;
+      if (r?.ok) guardarConta();
+    }
     if (!google) return;
     $("abrir-conta").hidden = false;
     atualizarJanela();
