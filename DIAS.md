@@ -211,25 +211,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas com rodas | Cite algo que tem rodas | 2636 |
-| 2 | Café da manhã | Cite algo que se come ou bebe no café da manhã | 3597 |
-| 3 | Programas de TV brasileiros | Cite um programa de TV brasileiro | 2355 |
-| 4 | Calçados e acessórios | Cite um calçado ou acessório (sapato, bolsa, joia, chapéu...) | 372 |
-| 5 | Sobrenomes | Cite um sobrenome | 3266 |
-| 6 | Animais venenosos e peçonhentos | Cite um animal venenoso ou peçonhento | 244 |
-| 7 | Carnaval | Cite algo do carnaval | 477 |
+| 1 | Coisas com rodas | Cite algo que tem rodas | 2651 |
+| 2 | Café da manhã | Cite algo que se come ou bebe no café da manhã | 3646 |
+| 3 | Programas de TV brasileiros | Cite um programa de TV brasileiro | 2371 |
+| 4 | Calçados e acessórios | Cite um calçado ou acessório (sapato, bolsa, joia, chapéu...) | 391 |
+| 5 | Sobrenomes | Cite um sobrenome | 3288 |
+| 6 | Animais venenosos e peçonhentos | Cite um animal venenoso ou peçonhento | 260 |
+| 7 | Carnaval | Cite algo do carnaval | 497 |
 
 ## Dia 19 · dom 15/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Sentimentos e emoções | Cite um sentimento ou emoção | 281 |
-| 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 568 |
-| 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 263 |
-| 4 | Cientistas e inventores | Cite um cientista ou inventor famoso | 3699 |
-| 5 | Coisas que grudam | Cite algo que gruda | 372 |
-| 6 | Aparelhos eletrônicos e eletrodomésticos | Cite um aparelho eletrônico ou eletrodoméstico | 313 |
-| 7 | Animais da África | Cite um animal que vive na África | 522 |
+| 1 | Sentimentos e emoções | Cite um sentimento ou emoção | 316 |
+| 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 602 |
+| 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 275 |
+| 4 | Cientistas e inventores | Cite um cientista ou inventor famoso | 3713 |
+| 5 | Coisas que grudam | Cite algo que gruda | 385 |
+| 6 | Aparelhos eletrônicos e eletrodomésticos | Cite um aparelho eletrônico ou eletrodoméstico | 333 |
+| 7 | Animais da África | Cite um animal que vive na África | 561 |
 
 ## Dia 20 · seg 16/11/2026
 
