@@ -7,8 +7,8 @@ Miojo,macarrão instantâneo | lámen instantâneo,12.138,False,40.0,,0,0.022,0.
 Nhoque,gnocchi | inhoque | Nhoqui,13.79,False,45.0,,0,0.015,0.015,0.346,12,False
 Ravióli,ravioli | Ravjul,15.64,False,40.0,,0,0.022,0.022,0.346,12,False
 Talharim,tagliatelle | Taiadela | Tagliatella | Tagliatelline,14.823,False,40.0,,0,0.022,0.022,0.346,12,False
-Fettuccine,fetuccine | fettucine,20.0,True,30.0,,0,0.029,0.029,0.361,13,False
-Gravatinha,farfalle | borboleta,14.788,False,25.0,,0,0.033,0.033,0.361,13,False
+Fettuccine,fetuccine | fettucine | fetutini | fetuttini,20.0,True,30.0,,0,0.029,0.029,0.361,13,False
+Gravatinha,farfalle | borboleta | gravata | macarrao gravata,14.788,False,25.0,,0,0.033,0.033,0.361,13,False
 Canelone,canelloni | cannelloni,15.561,False,22.0,,0,0.036,0.036,0.374,14,False
 Capeletti,capelete | cappelletti,17.149,False,20.0,,0,0.04,0.04,0.374,14,False
 Conchinha,conchiglie | concha,14.612,False,18.0,,0,0.044,0.044,0.374,14,False
@@ -27,7 +27,7 @@ Estrelinha,,13.29,False,6.0,,0,0.099,0.099,0.539,29,False
 Macarrão alho e óleo,alho e óleo,10.741,False,6.0,,0,0.099,0.099,0.539,29,False
 Macarrão à bolonhesa,bolonhesa,11.787,False,6.0,,0,0.099,0.099,0.539,29,False
 Pappardelle,,20.0,True,6.0,,0,0.099,0.099,0.539,29,False
-Rondelli,Massa de rondelli,9.155,False,6.0,,0,0.099,0.099,0.539,29,False
+Rondelli,Massa de rondelli | rondele,9.155,False,6.0,,0,0.099,0.099,0.539,29,False
 Udon,,20.0,True,6.0,,0,0.099,0.099,0.539,29,False
 Bifum,,20.0,True,5.0,,0,0.117,0.117,0.557,31,False
 Carbonara,Spaghetti alla carbonara,15.068,False,5.0,,0,0.117,0.117,0.557,31,False
@@ -124,7 +124,7 @@ Lasanha verde,Massa de lasanha verde,10.807,False,0.8643,,0,0.453,0.453,0.819,67
 Macarrão americana,americana,10.667,False,0.8963,,0,0.445,0.445,0.819,67,False
 Macarrão de batata-doce,macarrão de batata doce,10.737,False,0.88,,0,0.449,0.449,0.819,67,False
 Massa de bolinho,,10.661,False,0.9,,0,0.442,0.442,0.819,67,False
-Massa de modelar,de modelar,10.89,False,0.8345,,0,0.46,0.46,0.819,67,False
+Massa de modelar,de modelar | massinha de modelar,10.89,False,0.8345,,0,0.46,0.46,0.819,67,False
 Su filindeu,,10.873,False,0.8491,,0,0.456,0.456,0.819,67,False
 Fettuccine Alfredo,fettuccine alfredo,11.364,False,0.7446,,0,0.485,0.485,0.825,68,False
 Macarrão colorido,,11.339,False,0.7562,,0,0.482,0.482,0.825,68,False
@@ -143,7 +143,7 @@ Pastel chinês,,11.471,False,0.6914,,0,0.504,0.504,0.831,69,False
 Amatriciana,,20.0,True,0.6368,,0,0.684,0.684,0.837,70,False
 Anelli,,20.0,True,0.6286,,0,0.684,0.684,0.837,70,False
 Anellini,,20.0,True,0.6205,,0,0.684,0.684,0.837,70,False
-Arancini,,20.0,True,0.6127,,0,0.684,0.684,0.837,70,False
+Arancini,aranchini,20.0,True,0.6127,,0,0.684,0.684,0.837,70,False
 Bolinho chinês,,11.557,False,0.663,,0,0.515,0.515,0.837,70,False
 Parafuso tricolor,Macarrão parafuso tricolor,11.615,False,0.654,,0,0.518,0.518,0.837,70,False
 Arrabbiata,,20.0,True,0.605,,0,0.684,0.684,0.843,71,False
@@ -153,7 +153,7 @@ Busiate,,20.0,True,0.5831,,0,0.684,0.684,0.843,71,False
 Calamarata,,20.0,True,0.5762,,0,0.684,0.684,0.843,71,False
 Campanelle,,20.0,True,0.5694,,0,0.684,0.684,0.843,71,False
 Canelones,Canelones (massa),9.155,False,0.5628,,0,0.684,0.684,0.843,71,False
-Cannoli,canolli,20.0,True,0.5563,,0,0.684,0.684,0.849,72,False
+Cannoli,canolli | canoli,20.0,True,0.5563,,0,0.684,0.684,0.849,72,False
 Cappellacci,,20.0,True,0.55,,0,0.684,0.684,0.849,72,False
 Cappelletti romanha,,20.0,True,0.5438,,0,0.684,0.684,0.849,72,False
 Cappellini,,20.0,True,0.5378,,0,0.684,0.684,0.849,72,False
@@ -164,7 +164,7 @@ Cavatappi,,20.0,True,0.5149,,0,0.684,0.684,0.854,73,False
 Cavatelli,,20.0,True,0.5095,,0,0.684,0.684,0.854,73,False
 Champon,,20.0,True,0.5042,,0,0.684,0.684,0.854,73,False
 Chow mein,,20.0,True,0.499,,0,0.684,0.684,0.854,73,False
-Conchiglione,conchilhone,20.0,True,0.4939,,0,0.684,0.684,0.854,73,False
+Conchiglione,conchilhone | conchilione | conciglione,20.0,True,0.4939,,0,0.684,0.684,0.854,73,False
 Culurgiones,,20.0,True,0.4889,,0,0.684,0.684,0.854,73,False
 Fagottini,,20.0,True,0.484,,0,0.684,0.684,0.86,74,False
 Fideo,fideos,20.0,True,0.4792,,0,0.684,0.684,0.86,74,False
@@ -196,7 +196,7 @@ Mezze maniche,,20.0,True,0.3872,,0,0.684,0.684,0.883,78,False
 Mezzi rigatoni,,20.0,True,0.3841,,0,0.684,0.684,0.883,78,False
 Noodle,,20.0,True,0.3811,,0,0.684,0.684,0.883,78,False
 Noodles,,20.0,True,0.3781,,0,0.684,0.684,0.883,78,False
-Orechiette,orichete,20.0,True,0.3752,,0,0.684,0.684,0.883,78,False
+Orechiette,orichete | orichette,20.0,True,0.3752,,0,0.684,0.684,0.883,78,False
 Orvietto,,20.0,True,0.3723,,0,0.684,0.684,0.883,78,False
 Pansotti,,20.0,True,0.3695,,0,0.684,0.684,0.889,79,False
 Panzerotti,,20.0,True,0.3667,,0,0.684,0.684,0.889,79,False
@@ -206,7 +206,7 @@ Pelmeni,,20.0,True,0.3585,,0,0.684,0.684,0.889,79,False
 Pho,,20.0,True,0.3559,,0,0.684,0.684,0.889,79,False
 Pici,,20.0,True,0.3533,,0,0.684,0.684,0.889,79,False
 Pizzoccheri,Pizzocheri,20.0,True,0.3507,,0,0.684,0.684,0.894,80,False
-Plini,,20.0,True,0.3482,,0,0.684,0.684,0.894,80,False
+Plini,plin,20.0,True,0.3482,,0,0.684,0.684,0.894,80,False
 Puttanesca,,20.0,True,0.3457,,0,0.684,0.684,0.894,80,False
 Radiatori,,20.0,True,0.3433,,0,0.684,0.684,0.894,80,False
 Raviolini,,20.0,True,0.3408,,0,0.684,0.684,0.894,80,False

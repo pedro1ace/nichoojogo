@@ -29,10 +29,10 @@ Requeijão,ricotta,12.642,False,11.0345,,0,0.007,0.007,0.469,22,False
 Vitamina,vitamina de banana | vitamina de abacate,10.845,False,11.0345,,0,0.007,0.007,0.469,22,False
 Geleia,,13.004,False,9.1954,,0,0.008,0.008,0.49,24,False
 Panqueca,panqueca de maca,13.322,False,9.1954,,0,0.008,0.008,0.49,24,False
-Presunto,presunto parma,12.165,False,9.1954,,0,0.008,0.008,0.49,24,False
+Presunto,presunto parma | presunto de parma,12.165,False,9.1954,,0,0.008,0.008,0.49,24,False
 Bacon,,11.867,False,7.3563,,0,0.009,0.009,0.52,27,False
 Croissant,Croassã,14.364,False,7.3563,,0,0.009,0.009,0.52,27,False
-Macaxeira cozida,aipim cozido | mandioca cozida,14.097,False,7.3563,,0,0.009,0.009,0.52,27,False
+Macaxeira cozida,aipim cozido | mandioca cozida | aipim,14.097,False,7.3563,,0,0.009,0.009,0.52,27,False
 Manteiga,,10.665,False,7.3563,,0,0.009,0.009,0.52,27,False
 Mel,,10.288,False,7.3563,,0,0.009,0.009,0.52,27,False
 Omelete,,12.812,False,7.3563,,0,0.009,0.009,0.52,27,False
@@ -183,13 +183,13 @@ Monte Veronese DOP,,9.653,False,0.0475,,0,0.06,0.06,0.781,61,False
 Morango oso grande,,9.301,False,0.0726,,0,0.047,0.047,0.781,61,False
 Muenster americano,,9.43,False,0.0592,,0,0.053,0.053,0.781,61,False
 Murcia al vino,,9.426,False,0.0613,,0,0.052,0.052,0.781,61,False
-Ovos no Purgatório,,9.379,False,0.0668,,0,0.049,0.049,0.781,61,False
+Ovos no Purgatório,ovos no purgatorio,9.379,False,0.0668,,0,0.049,0.049,0.781,61,False
 Pera Santa Maria,,9.74,False,0.0414,,0,0.066,0.066,0.781,61,False
 Persimmon americano,,9.43,False,0.0587,,0,0.053,0.053,0.781,61,False
 Pão bola,,9.574,False,0.05,,0,0.058,0.058,0.781,61,False
 Pão branco,,9.258,False,0.0776,,0,0.045,0.045,0.781,61,False
 Pão cheio,,9.727,False,0.0422,,0,0.065,0.065,0.781,61,False
-Pão com granulado,,9.253,False,0.0785,,0,0.045,0.045,0.781,61,False
+Pão com granulado,pao com granulado,9.253,False,0.0785,,0,0.045,0.045,0.781,61,False
 Pão com mortadela,,9.408,False,0.0625,,0,0.051,0.051,0.781,61,False
 Pão d'avó,,9.793,False,0.0399,,0,0.069,0.069,0.781,61,False
 Pão da Mealhada,,9.793,False,0.0397,,0,0.069,0.069,0.781,61,False
@@ -606,8 +606,8 @@ Requeijão da Beira Baixa,,10.742,False,0.0132,,0,0.162,0.162,0.8,64,False
 Requeijão da Serra da Estrela,,10.617,False,0.0142,,0,0.152,0.152,0.8,64,False
 Requeijão do norte,,10.576,False,0.0147,,0,0.147,0.147,0.8,64,False
 Requeijão português,,10.707,False,0.0135,,0,0.158,0.158,0.8,64,False
-Shot de limão,,10.602,False,0.0143,,0,0.15,0.15,0.8,64,False
-Suco de limão,,10.619,False,0.0141,,0,0.152,0.152,0.8,64,False
+Shot de limão,shot de limao,10.602,False,0.0143,,0,0.15,0.15,0.8,64,False
+Suco de limão,suco de limao,10.619,False,0.0141,,0,0.152,0.152,0.8,64,False
 Suco de tomate,,10.753,False,0.0131,,0,0.163,0.163,0.8,64,False
 Tim Tam,,10.676,False,0.0137,,0,0.157,0.157,0.8,64,False
 Torta del Casar,,10.502,False,0.0155,,0,0.141,0.141,0.8,64,False
@@ -660,7 +660,7 @@ Cashel Blue,,10.902,False,0.0109,,0,0.191,0.191,0.806,65,False
 Castello Blue,,10.902,False,0.0109,,0,0.191,0.191,0.806,65,False
 Cereja doce,,10.828,False,0.012,,0,0.175,0.175,0.806,65,False
 Cereja-do-mato,,10.915,False,0.0106,,0,0.196,0.196,0.806,65,False
-Coca-Cola,,10.824,False,0.0121,,0,0.174,0.174,0.806,65,False
+Coca-Cola,coca cola,10.824,False,0.0121,,0,0.174,0.174,0.806,65,False
 Cookies,,10.867,False,0.0115,,0,0.182,0.182,0.806,65,False
 Cookies Nestlé,,10.867,False,0.0115,,0,0.182,0.182,0.806,65,False
 Cornish Blue,,10.902,False,0.0109,,0,0.191,0.191,0.806,65,False
@@ -764,7 +764,7 @@ Castanha-do-pará,castanha-do-brasil,11.172,False,0.0088,,0,0.233,0.233,0.812,66
 Casàda PAT,Colostra,11.044,False,0.0095,,0,0.216,0.216,0.812,66,False
 Cereja-negra,,11.091,False,0.0093,,0,0.22,0.22,0.812,66,False
 Chabichou du Poitou,,10.99,False,0.0099,,0,0.209,0.209,0.812,66,False
-Chá de hortelã,,11.003,False,0.0097,,0,0.213,0.213,0.812,66,False
+Chá de hortelã,cha de hortela,11.003,False,0.0097,,0,0.213,0.213,0.812,66,False
 Coca,coca coca,11.155,False,0.009,,0,0.228,0.228,0.812,66,False
 Crémeux du Puy,,10.99,False,0.0099,,0,0.209,0.209,0.812,66,False
 Formaggio di Fossa di Sogliano DOP,,11.059,False,0.0094,,0,0.218,0.218,0.812,66,False
@@ -1136,7 +1136,7 @@ Coco-de-vassoura,,11.745,False,0.0062,,0,0.322,0.322,0.831,69,False
 Cuscuz doce,,11.613,False,0.0066,,0,0.305,0.305,0.831,69,False
 Dali ni Horbo,,11.646,False,0.0064,,0,0.311,0.311,0.831,69,False
 Derby (queijo),Derby,11.638,False,0.0064,,0,0.309,0.309,0.831,69,False
-Energético,,11.681,False,0.0063,,0,0.314,0.314,0.831,69,False
+Energético,energetico,11.681,False,0.0063,,0,0.314,0.314,0.831,69,False
 Exmoor Jersey Blue,,11.66,False,0.0064,,0,0.312,0.312,0.831,69,False
 Figo seco,,11.686,False,0.0063,,0,0.314,0.314,0.831,69,False
 Fondue de queijo,fondue,11.751,False,0.0062,,0,0.322,0.322,0.831,69,False
@@ -1380,7 +1380,7 @@ Cereja ácida,,12.108,False,0.0052,,0,0.376,0.376,0.843,71,False
 Cereja-mazzard,,12.108,False,0.0052,,0,0.376,0.376,0.843,71,False
 Cheddar laranja,,12.121,False,0.0052,,0,0.379,0.379,0.843,71,False
 Chihuahua (queijo),,12.203,False,0.005,,0,0.389,0.389,0.843,71,False
-Chá de Boldo,,12.121,False,0.0052,,0,0.379,0.379,0.843,71,False
+Chá de Boldo,cha de boldo,12.121,False,0.0052,,0,0.379,0.379,0.843,71,False
 Coalhada seca,,12.224,False,0.005,,0,0.39,0.39,0.843,71,False
 Coco-de-dendê,dendê,12.089,False,0.0053,,0,0.372,0.372,0.843,71,False
 Croissant de chocolate,,12.102,False,0.0053,,0,0.374,0.374,0.843,71,False
@@ -2262,7 +2262,7 @@ Fourme d'Yssingeaux,,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
 Fourme de Montbrison,,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
 Fourme de Pierre-sur-Haute,,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
 Fourme de Rochefort,,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
-Frappuccino,frappucino,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
+Frappuccino,frappucino | frapuccino,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
 Fresh Tomme,,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
 Frico,,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
 Friesian Clove,,20.0,True,0.0031,,0,0.674,0.674,0.883,78,False
@@ -3414,12 +3414,12 @@ Madrigal,,15.035,False,0.002,,0,0.932,0.932,0.938,88,False
 Manchego curado,,14.656,False,0.0021,,0,0.92,0.92,0.938,88,False
 Mangaba,,15.264,False,0.002,,0,0.938,0.938,0.938,88,False
 Mascarpone,,14.763,False,0.002,,0,0.925,0.925,0.938,88,False
-Matcha,matcha com cafe,15.489,False,0.002,,0,0.943,0.943,0.938,88,False
+Matcha,matcha com cafe | match,15.489,False,0.002,,0,0.943,0.943,0.938,88,False
 Medronho,Arbutus unedo,15.358,False,0.002,,0,0.94,0.94,0.938,88,False
 Mozzarella affumicata,,14.695,False,0.0021,,0,0.923,0.923,0.938,88,False
 Ménez Hom,,14.758,False,0.002,,0,0.924,0.924,0.938,88,False
 Noord-Hollandse Gouda,,15.419,False,0.002,,0,0.942,0.942,0.938,88,False
-Overnight oats,,14.962,False,0.002,,0,0.931,0.931,0.938,88,False
+Overnight oats,overnight oat,14.962,False,0.002,,0,0.931,0.931,0.938,88,False
 Palitinho,,14.924,False,0.002,,0,0.93,0.93,0.938,88,False
 Pasteurized camembert,,15.4,False,0.002,,0,0.942,0.942,0.938,88,False
 Pecorino,,15.685,False,0.002,,0,0.949,0.949,0.938,88,False
@@ -3559,7 +3559,7 @@ Piraquê Goiabinha,,15.949,False,0.002,,0,0.954,0.954,0.943,89,False
 Pitaia-do-saguaro,fruto do saguaro,16.869,False,0.002,,0,0.97,0.97,0.943,89,False
 Pite,,16.579,False,0.002,,0,0.966,0.966,0.943,89,False
 Pitomba,,15.992,False,0.002,,0,0.955,0.955,0.943,89,False
-Psílio,psylium,18.11,False,0.0019,,0,0.982,0.982,0.943,89,False
+Psílio,psylium | psyllium,18.11,False,0.0019,,0,0.982,0.982,0.943,89,False
 Puçá,,17.05,False,0.0019,,0,0.972,0.972,0.943,89,False
 Queso añejo,,18.042,False,0.0019,,0,0.981,0.981,0.943,89,False
 Queso campesino,,16.071,False,0.002,,0,0.956,0.956,0.943,89,False

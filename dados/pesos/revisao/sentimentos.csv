@@ -3,7 +3,7 @@ Amor,,7.711,False,69.3498,,0,0.0,0.0,0.316,10,False
 Alegria,,9.267,False,49.5356,,0,0.01,0.01,0.332,11,False
 Raiva,,10.609,False,54.4892,,0,0.005,0.005,0.332,11,False
 Tristeza,,10.408,False,54.4892,,0,0.005,0.005,0.332,11,False
-Felicidade,,9.543,False,44.582,,0,0.013,0.013,0.346,12,False
+Felicidade,feliz,9.543,False,44.582,,0,0.013,0.013,0.346,12,False
 Medo,,8.862,False,39.6285,,0,0.017,0.017,0.346,12,False
 Saudade,,9.995,False,39.6285,,0,0.017,0.017,0.346,12,False
 Ansiedade,,10.502,False,24.7678,,0,0.024,0.024,0.361,13,False
@@ -209,8 +209,8 @@ Rivalidade,,12.324,False,0.1211,,0,0.657,0.657,0.86,74,False
 Zelo,,12.238,False,0.1234,,0,0.651,0.651,0.86,74,False
 Aconchego,,12.406,False,0.1167,,0,0.67,0.67,0.866,75,False
 Apego,,12.431,False,0.1156,,0,0.673,0.673,0.866,75,False
-Distúrbio,,12.386,False,0.1177,,0,0.667,0.667,0.866,75,False
-Exaustão,exaurido,12.346,False,0.12,,0,0.66,0.66,0.866,75,False
+Distúrbio,disturbio,12.386,False,0.1177,,0,0.667,0.667,0.866,75,False
+Exaustão,exaurido | exaustao,12.346,False,0.12,,0,0.66,0.66,0.866,75,False
 Excitação,,12.437,False,0.1146,,0,0.676,0.676,0.866,75,False
 Sensação de déjà vu,,12.374,False,0.1188,,0,0.663,0.663,0.866,75,False
 Covardia,,12.567,False,0.1088,,0,0.695,0.695,0.872,76,False
@@ -244,8 +244,8 @@ Saciedade,,12.874,False,0.0958,,0,0.746,0.746,0.889,79,False
 Anemoia,,20.0,True,0.091,,0,0.773,0.773,0.894,80,False
 Hostilidade,,13.125,False,0.0879,,0,0.784,0.784,0.894,80,False
 Komorebi,,20.0,True,0.0904,,0,0.773,0.773,0.894,80,False
-Limerência,limerancia,20.0,True,0.0898,,0,0.773,0.773,0.894,80,False
-Luxúria,,13.113,False,0.0885,,0,0.781,0.781,0.894,80,False
+Limerência,limerancia | limerencia,20.0,True,0.0898,,0,0.773,0.773,0.894,80,False
+Luxúria,luxuria,13.113,False,0.0885,,0,0.781,0.781,0.894,80,False
 Schadenfreude,schadenfraude,20.0,True,0.0891,,0,0.773,0.773,0.894,80,False
 Vertigem,,13.137,False,0.0873,,0,0.787,0.787,0.894,80,False
 Bravura,,13.153,False,0.0861,,0,0.794,0.794,0.9,81,False
@@ -259,7 +259,7 @@ Ambiguidade,,13.47,False,0.0797,,0,0.832,0.832,0.906,82,False
 Birra,,13.336,False,0.0817,,0,0.819,0.819,0.906,82,False
 Catarse,,13.391,False,0.0807,,0,0.825,0.825,0.906,82,False
 Incredulidade,,13.306,False,0.0828,,0,0.813,0.813,0.906,82,False
-Indecisão,,13.33,False,0.0823,,0,0.816,0.816,0.906,82,False
+Indecisão,indecisao,13.33,False,0.0823,,0,0.816,0.816,0.906,82,False
 Júbilo,,13.401,False,0.0802,,0,0.829,0.829,0.906,82,False
 Resignação,,13.354,False,0.0812,,0,0.822,0.822,0.906,82,False
 Altruísmo,,13.578,False,0.0778,,0,0.844,0.844,0.911,83,False
@@ -269,12 +269,12 @@ Dopamina,,13.637,False,0.0764,,0,0.854,0.854,0.911,83,False
 Hesitação,,13.487,False,0.0792,,0,0.835,0.835,0.911,83,False
 Pertencimento,,13.618,False,0.0769,,0,0.851,0.851,0.911,83,False
 Prepotência,,13.6,False,0.0773,,0,0.848,0.848,0.911,83,False
-Alucinação,,13.684,False,0.0755,,0,0.86,0.86,0.917,84,False
+Alucinação,alucinacao,13.684,False,0.0755,,0,0.86,0.86,0.917,84,False
 Antipatia,,13.708,False,0.0751,,0,0.863,0.863,0.917,84,False
 Avareza,,13.672,False,0.0759,,0,0.857,0.857,0.917,84,False
 Conformismo,,13.74,False,0.0733,,0,0.876,0.876,0.917,84,False
 Embaraço,,13.725,False,0.0746,,0,0.868,0.868,0.917,84,False
-Introspecção,,13.732,False,0.0738,,0,0.873,0.873,0.917,84,False
+Introspecção,introspeccao,13.732,False,0.0738,,0,0.873,0.873,0.917,84,False
 Recalque,,13.725,False,0.0742,,0,0.868,0.868,0.917,84,False
 Deja Vu,,13.797,False,0.0729,,0,0.879,0.879,0.922,85,False
 Desamparo,,13.838,False,0.0725,,0,0.883,0.883,0.922,85,False
@@ -299,8 +299,8 @@ Susceptibilidade,,14.293,False,0.0676,,0,0.924,0.924,0.933,87,False
 Zanga,,14.832,False,0.0655,,0,0.943,0.943,0.933,87,False
 Banzo,,15.553,False,0.0639,,0,0.959,0.959,0.938,88,False
 Benquerença,,15.678,False,0.0635,,0,0.962,0.962,0.938,88,False
-Despersonalização,,14.987,False,0.0652,,0,0.946,0.946,0.938,88,False
-Estupefação,estupefato,15.345,False,0.0645,,0,0.952,0.952,0.938,88,False
+Despersonalização,despersonalizacao,14.987,False,0.0652,,0,0.946,0.946,0.938,88,False
+Estupefação,estupefato | estupefacao,15.345,False,0.0645,,0,0.952,0.952,0.938,88,False
 Exultação,,15.776,False,0.0632,,0,0.965,0.965,0.938,88,False
 FOMO,,15.535,False,0.0642,,0,0.956,0.956,0.938,88,False
 Paixonite,,15.194,False,0.0648,,0,0.949,0.949,0.938,88,False
@@ -313,5 +313,5 @@ Rabugice,,16.315,False,0.0617,,0,0.981,0.981,0.943,89,False
 Sodade,,15.847,False,0.0629,,0,0.968,0.968,0.943,89,False
 Cringe,,18.453,False,0.06,,0,1.0,1.0,0.949,90,False
 Malquerer,,18.42,False,0.0603,,0,0.997,0.997,0.949,90,False
-Páura,,17.114,False,0.0608,,0,0.99,0.99,0.949,90,False
+Páura,paura,17.114,False,0.0608,,0,0.99,0.99,0.949,90,False
 Ranzinzice,,18.105,False,0.0605,,0,0.994,0.994,0.949,90,False

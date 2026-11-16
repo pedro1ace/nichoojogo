@@ -37,7 +37,7 @@ Gargantilha,,13.956,False,6.0,,0,0.095,0.095,0.539,29,False
 Gorro,touca | Barrete,12.981,False,6.0,,0,0.095,0.095,0.539,29,False
 Guarda-chuva,,9.474,False,6.0,,0,0.095,0.095,0.539,29,False
 Pantufa,,14.398,False,6.0,,0,0.095,0.095,0.539,29,False
-Piercing,piercing falso | piercing no umbigo,12.693,False,6.0,,0,0.095,0.095,0.539,29,False
+Piercing,piercing falso | piercing no umbigo | piercing de umbigo,12.693,False,6.0,,0,0.095,0.095,0.539,29,False
 Pochete,,14.305,False,6.0,,0,0.095,0.095,0.539,29,False
 Presilha,piranha | grampo | presilha de cabelo,13.909,False,6.0,,0,0.095,0.095,0.539,29,False
 Sapatênis,,13.619,False,6.0,,0,0.095,0.095,0.539,29,False
@@ -156,7 +156,7 @@ Adesivo,,10.964,False,0.235,,0,0.413,0.413,0.819,67,False
 Bota de borracha,,10.899,False,0.2437,,0,0.405,0.405,0.819,67,False
 Bota de cano curto,,10.863,False,0.2467,,0,0.403,0.403,0.819,67,False
 Chapéu de alumínio,Chapéu de papel alumínio,10.844,False,0.2563,,0,0.396,0.396,0.819,67,False
-Cinta-liga,,10.956,False,0.2378,,0,0.41,0.41,0.819,67,False
+Cinta-liga,cinta liga,10.956,False,0.2378,,0,0.41,0.41,0.819,67,False
 Mala,,10.859,False,0.2498,,0,0.4,0.4,0.819,67,False
 Relógio de pulso,,10.845,False,0.253,,0,0.396,0.396,0.819,67,False
 Sapatilha de ponta,,10.915,False,0.2407,,0,0.408,0.408,0.819,67,False
@@ -217,11 +217,11 @@ Button,Bóton | Bottons | Botton,12.345,False,0.1361,,0,0.571,0.571,0.854,73,Fal
 Chapéu de caçador de veados,,12.333,False,0.1371,,0,0.567,0.567,0.854,73,False
 Diadema,,12.266,False,0.14,,0,0.56,0.56,0.854,73,False
 Diadema de Moñes,,12.266,False,0.139,,0,0.56,0.56,0.854,73,False
-Hermès,,12.346,False,0.1352,,0,0.571,0.571,0.854,73,False
+Hermès,hermes,12.346,False,0.1352,,0,0.571,0.571,0.854,73,False
 Maleta,,12.215,False,0.141,,0,0.555,0.555,0.854,73,False
 Puma,,12.213,False,0.142,,0,0.555,0.555,0.854,73,False
 Sapatilha de balé,,12.311,False,0.138,,0,0.564,0.564,0.854,73,False
-Tornozeleira eletrônica,,12.108,False,0.1441,,0,0.549,0.549,0.854,73,False
+Tornozeleira eletrônica,tornozeleira eletronica,12.108,False,0.1441,,0,0.549,0.549,0.854,73,False
 Touca de fumo,,12.211,False,0.143,,0,0.551,0.551,0.854,73,False
 Alfinete de dama,Alfinete-de-dama | Alfinete de segurança,12.457,False,0.1325,,0,0.579,0.579,0.86,74,False
 Capuz,Capucho,12.766,False,0.1273,,0,0.595,0.595,0.86,74,False
@@ -260,12 +260,12 @@ Arezzo,,20.0,True,0.1073,,0,0.76,0.76,0.877,77,False
 Armet,,20.0,True,0.1067,,0,0.76,0.76,0.877,77,False
 Asics,,20.0,True,0.1061,,0,0.76,0.76,0.877,77,False
 Carapuça,,14.301,False,0.1096,,0,0.659,0.659,0.877,77,False
-Relicário,,14.281,False,0.1103,,0,0.656,0.656,0.877,77,False
+Relicário,relicario,14.281,False,0.1103,,0,0.656,0.656,0.877,77,False
 Sombrinha,,13.957,False,0.1115,,0,0.651,0.651,0.877,77,False
 Xale,,13.976,False,0.1109,,0,0.654,0.654,0.877,77,False
 Balangandãs,Balangandã,17.292,False,0.1055,,0,0.76,0.76,0.883,78,False
 Baslique,Başlık | Başlıq | Bashlik | Bashlyk,20.0,True,0.105,,0,0.76,0.76,0.883,78,False
-Birkenstock,,20.0,True,0.1044,,0,0.76,0.76,0.883,78,False
+Birkenstock,birken,20.0,True,0.1044,,0,0.76,0.76,0.883,78,False
 Birkin,,20.0,True,0.1039,,0,0.76,0.76,0.883,78,False
 Borsalino,,20.0,True,0.1033,,0,0.76,0.76,0.883,78,False
 Bucket hat,,20.0,True,0.1028,,0,0.76,0.76,0.883,78,False
@@ -336,7 +336,7 @@ UGG,,20.0,True,0.0771,,0,0.76,0.76,0.917,84,False
 Vans,,20.0,True,0.0768,,0,0.76,0.76,0.917,84,False
 Adereço,Adereço de cabeça,14.456,False,0.0759,,0,0.864,0.864,0.922,85,False
 Capelo,,14.513,False,0.0756,,0,0.867,0.867,0.922,85,False
-Cardigã,,14.66,False,0.0745,,0,0.877,0.877,0.922,85,False
+Cardigã,cardigan | cardiga,14.66,False,0.0745,,0,0.877,0.877,0.922,85,False
 Conga,,14.575,False,0.0748,,0,0.874,0.874,0.922,85,False
 Figa,,14.726,False,0.0739,,0,0.882,0.882,0.922,85,False
 Grinalda,,14.448,False,0.0762,,0,0.862,0.862,0.922,85,False
@@ -369,7 +369,7 @@ Babuche,,16.189,False,0.0681,,0,0.941,0.941,0.938,88,False
 Bruaca,Bruaca (bolsa),16.669,False,0.0665,,0,0.959,0.959,0.938,88,False
 Calçadeira,,16.526,False,0.0669,,0,0.954,0.954,0.938,88,False
 Canutilho,,16.545,False,0.0667,,0,0.956,0.956,0.938,88,False
-Dedéira,,16.134,False,0.0685,,0,0.936,0.936,0.938,88,False
+Dedéira,dedeira,16.134,False,0.0685,,0,0.936,0.936,0.938,88,False
 Guaiaca,,16.467,False,0.0671,,0,0.951,0.951,0.938,88,False
 Kichute,,16.274,False,0.0678,,0,0.944,0.944,0.938,88,False
 Pince-nez,Pincenez | Pincenê | Pencenê | Pencinê,16.177,False,0.0683,,0,0.938,0.938,0.938,88,False
