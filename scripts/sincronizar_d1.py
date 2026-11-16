@@ -25,6 +25,8 @@ import singularidades  # noqa: E402
 PESOS = RAIZ / "dados" / "pesos"
 ORDEM = RAIZ / "dados" / "ordem.txt"
 SQL_OUT = RAIZ / "banco" / "carga_dias.sql"
+# Cópia estática de cada pacote: o /api/dia usa quando o D1 falha (servidor/dias.js). Não é pública.
+ESTATICOS = RAIZ / "banco" / "dias"
 
 CAMPOS_RESPOSTA = ("resposta", "apelidos", "pontos", "acima", "espertalhao", "frase")
 LANCAMENTO = dt.date(2026, 10, 28)
@@ -133,9 +135,23 @@ def exportar_sql(dias: dict[str, dict]) -> None:
     print(f"Gerado {SQL_OUT} com {len(dias)} dias ({LANCAMENTO} até {list(dias.keys())[-1]}).")
 
 
+def exportar_estaticos(dias: dict[str, dict]) -> None:
+    ESTATICOS.mkdir(parents=True, exist_ok=True)
+    for velho in ESTATICOS.glob("*.json"):
+        if velho.stem not in dias:
+            velho.unlink()
+    for dia_str, payload in dias.items():
+        texto = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+        alvo = ESTATICOS / f"{dia_str}.json"
+        if not alvo.exists() or alvo.read_text(encoding="utf-8") != texto:
+            alvo.write_text(texto, encoding="utf-8")
+    print(f"Gerada a cópia estática de {len(dias)} dias em {ESTATICOS}.")
+
+
 def main() -> None:
     dias = gerar_dias()
     exportar_sql(dias)
+    exportar_estaticos(dias)
 
     if "--executar" in sys.argv:
         print("Executando carga no Cloudflare D1 via wrangler...")

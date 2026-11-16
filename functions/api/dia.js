@@ -36,10 +36,6 @@ export async function onRequestGet({ request, env, waitUntil }) {
     return json({ erro: "formato de dia inválido (use AAAA-MM-DD)" }, 400);
   }
 
-  if (!env.DB) {
-    return json({ erro: "banco D1 não configurado" }, 500);
-  }
-
   try {
     // O dia de hoje vai completo para todo mundo: o jogo precisa aceitar as raras e a singularidade de quem
     // não está logado também (em 11/11 elas iam escondidas e conferidas no /api/conferir, e jogadores sem
