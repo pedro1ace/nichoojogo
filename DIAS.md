@@ -235,25 +235,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Partes do carro | Cite uma peça ou parte do carro | 307 |
-| 2 | Supermercado | Cite algo que se compra no supermercado | 8246 |
-| 3 | Animais que botam ovo | Cite um animal que bota ovo | 9946 |
-| 4 | Palavras terminadas em -ão | Cite uma palavra que termina em "-ão" | 6260 |
-| 5 | Vencedores do Oscar de atuação | Cite um ator ou atriz que já ganhou o Oscar de atuação | 649 |
-| 6 | Coisas que derretem | Cite algo que derrete | 2036 |
-| 7 | Músicas brasileiras | Cite uma música brasileira (nome da música) | 2151 |
+| 1 | Partes do carro | Cite uma peça ou parte do carro | 329 |
+| 2 | Supermercado | Cite algo que se compra no supermercado | 8276 |
+| 3 | Animais que botam ovo | Cite um animal que bota ovo | 9947 |
+| 4 | Palavras terminadas em -ão | Cite uma palavra que termina em "-ão" | 6266 |
+| 5 | Vencedores do Oscar de atuação | Cite um ator ou atriz que já ganhou o Oscar de atuação | 690 |
+| 6 | Coisas que derretem | Cite algo que derrete | 2049 |
+| 7 | Músicas brasileiras | Cite uma música brasileira (nome da música) | 2191 |
 
 ## Dia 21 · ter 17/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas que giram | Cite algo que gira | 379 |
-| 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1513 |
-| 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4687 |
-| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 483 |
-| 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 544 |
-| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6853 |
-| 7 | Pratos de outros países | Cite um prato típico de outro país | 215 |
+| 1 | Coisas que giram | Cite algo que gira | 393 |
+| 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1544 |
+| 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4705 |
+| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 492 |
+| 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 562 |
+| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6873 |
+| 7 | Pratos de outros países | Cite um prato típico de outro país | 235 |
 
 ## Dia 22 · qua 18/11/2026
 
