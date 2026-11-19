@@ -247,25 +247,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas que giram | Cite algo que gira | 393 |
-| 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1544 |
+| 1 | Coisas que giram | Cite algo que gira | 395 |
+| 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1545 |
 | 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4705 |
-| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 492 |
-| 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 562 |
-| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6873 |
-| 7 | Pratos de outros países | Cite um prato típico de outro país | 235 |
+| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 494 |
+| 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 563 |
+| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6874 |
+| 7 | Pratos de outros países | Cite um prato típico de outro país | 237 |
 
 ## Dia 22 · qua 18/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 1581 |
-| 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1265 |
-| 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5088 |
-| 4 | Palavras aportuguesadas do inglês | Cite uma palavra do inglês aportuguesada (tipo futebol, xampu, sanduíche) | 141 |
-| 5 | Ferramentas | Cite uma ferramenta | 577 |
-| 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 317 |
-| 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 451 |
+| 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 1592 |
+| 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1294 |
+| 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5094 |
+| 4 | Palavras aportuguesadas do inglês | Cite uma palavra do inglês aportuguesada (tipo futebol, xampu, sanduíche) | 216 |
+| 5 | Ferramentas | Cite uma ferramenta | 596 |
+| 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 352 |
+| 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 472 |
 
 ## Dia 23 · qui 19/11/2026
 
