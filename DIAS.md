@@ -259,25 +259,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 1592 |
-| 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1294 |
+| 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 1593 |
+| 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1299 |
 | 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5094 |
-| 4 | Palavras aportuguesadas do inglês | Cite uma palavra do inglês aportuguesada (tipo futebol, xampu, sanduíche) | 216 |
-| 5 | Ferramentas | Cite uma ferramenta | 596 |
+| 4 | Palavras aportuguesadas do inglês | Cite uma palavra do inglês aportuguesada (tipo futebol, xampu, sanduíche) | 222 |
+| 5 | Ferramentas | Cite uma ferramenta | 600 |
 | 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 352 |
-| 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 472 |
+| 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 473 |
 
 ## Dia 23 · qui 19/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas fedidas | Cite algo fedido | 412 |
-| 2 | Youtubers e influenciadores | Cite um youtuber, streamer ou influenciador brasileiro | 659 |
-| 3 | Cursos de faculdade | Cite um curso de faculdade | 253 |
-| 4 | Palavras com X no começo | Cite uma palavra que começa com X | 453 |
-| 5 | Coisas do quarto | Cite algo que tem num quarto | 2947 |
-| 6 | Mamíferos | Cite um mamífero | 2296 |
-| 7 | Tipos de pão | Cite um tipo de pão | 317 |
+| 1 | Coisas fedidas | Cite algo fedido | 444 |
+| 2 | Youtubers e influenciadores | Cite um youtuber, streamer ou influenciador brasileiro | 700 |
+| 3 | Cursos de faculdade | Cite um curso de faculdade | 257 |
+| 4 | Palavras com X no começo | Cite uma palavra que começa com X | 470 |
+| 5 | Coisas do quarto | Cite algo que tem num quarto | 2975 |
+| 6 | Mamíferos | Cite um mamífero | 2298 |
+| 7 | Tipos de pão | Cite um tipo de pão | 322 |
 
 ## Dia 24 · sex 20/11/2026
 
