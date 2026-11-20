@@ -271,25 +271,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas fedidas | Cite algo fedido | 444 |
-| 2 | Youtubers e influenciadores | Cite um youtuber, streamer ou influenciador brasileiro | 700 |
-| 3 | Cursos de faculdade | Cite um curso de faculdade | 257 |
-| 4 | Palavras com X no começo | Cite uma palavra que começa com X | 470 |
-| 5 | Coisas do quarto | Cite algo que tem num quarto | 2975 |
+| 1 | Coisas fedidas | Cite algo fedido | 447 |
+| 2 | Youtubers e influenciadores | Cite um youtuber, streamer ou influenciador brasileiro | 708 |
+| 3 | Cursos de faculdade | Cite um curso de faculdade | 260 |
+| 4 | Palavras com X no começo | Cite uma palavra que começa com X | 473 |
+| 5 | Coisas do quarto | Cite algo que tem num quarto | 2980 |
 | 6 | Mamíferos | Cite um mamífero | 2298 |
-| 7 | Tipos de pão | Cite um tipo de pão | 322 |
+| 7 | Tipos de pão | Cite um tipo de pão | 325 |
 
 ## Dia 24 · sex 20/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Animais da fazenda | Cite um animal da fazenda | 217 |
-| 2 | Festa de aniversário | Cite algo que tem numa festa de aniversário | 2681 |
-| 3 | Coisas quentes | Cite algo quente | 579 |
-| 4 | Padaria | Cite algo que se compra na padaria | 2996 |
-| 5 | Palavras com Z no começo | Cite uma palavra que começa com Z | 672 |
-| 6 | Roupas | Cite uma peça de roupa | 541 |
-| 7 | Personagens de anime | Cite um personagem de Dragon Ball, Naruto, One Piece ou Cavaleiros do Zodíaco | 461 |
+| 1 | Animais da fazenda | Cite um animal da fazenda | 264 |
+| 2 | Festa de aniversário | Cite algo que tem numa festa de aniversário | 2713 |
+| 3 | Coisas quentes | Cite algo quente | 623 |
+| 4 | Padaria | Cite algo que se compra na padaria | 3009 |
+| 5 | Palavras com Z no começo | Cite uma palavra que começa com Z | 686 |
+| 6 | Roupas | Cite uma peça de roupa | 571 |
+| 7 | Personagens de anime | Cite um personagem de Dragon Ball, Naruto, One Piece ou Cavaleiros do Zodíaco | 472 |
 
 ## Dia 25 · sáb 21/11/2026
 
