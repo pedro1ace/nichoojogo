@@ -5368,6 +5368,10 @@ function buscar(cat, texto, soExata = false) {
       const item = cat.soltas.get(chave);
       if (item) return { ...item, exato: true };
     }
+    for (const chave of soltasDoTexto) {
+      const item = !cat.soltas.has(chave) && cat.derivadas && cat.derivadas.get(chave);
+      if (item) return { ...item, exato: true };
+    }
   }
   if (soExata || !cat.formas) return null;
   // até 3 letras, só quando soa igual ("cid" -> "Sid")
@@ -5448,6 +5452,37 @@ function comoBate(texto, nomes, enfeites) {
 // "tênis de rodinha" = Patins. Com uma resposta mais rara, não: aí é pedir a revisão.
 const TETO_SINONIMO = 34;
 
+// Palavras do tema que se repetem nas respostas da lista: "pao" em "Pão australiano", "pastel"
+// em "Pastel de vento", "azul" em "Olhos azuis". O jogador costuma escrever só o resto
+// ("australiano", "vento", "olhos"). Vale a palavra que está no nome da categoria e abre (ou
+// fecha) pelo menos 2 respostas, ou a que abre (ou fecha) 1 de cada 4 respostas compostas.
+function palavrasDoTema(cat) {
+  const doNome = new Set(cat.id.split("-").map(radical).filter((p) => p.length >= 3 && !CONECTORES.has(p)));
+  const frente = new Map();
+  const fim = new Map();
+  let compostas = 0;
+  for (const r of cat.respostas) {
+    const ps = palavrasSoltas(r.resposta).map(radical);
+    if (ps.length < 2) continue;
+    compostas++;
+    frente.set(ps[0], (frente.get(ps[0]) || 0) + 1);
+    fim.set(ps[ps.length - 1], (fim.get(ps[ps.length - 1]) || 0) + 1);
+  }
+  const escolher = (m) => new Set([...m]
+    .filter(([p, n]) => p.length >= 3 && ((doNome.has(p) && n >= 2) || (n >= 5 && n >= compostas / 4)))
+    .map(([p]) => p));
+  return { frente: escolher(frente), fim: escolher(fim) };
+}
+
+// O resto de um nome sem as palavras do tema da frente e do fim (já com radical), ou null.
+function semPalavrasDoTema(palavras, tema) {
+  let ps = palavras.map(radical);
+  const antes = ps.length;
+  while (ps.length > 1 && tema.frente.has(ps[0])) ps = ps.slice(1);
+  while (ps.length > 1 && tema.fim.has(ps[ps.length - 1])) ps = ps.slice(0, -1);
+  return ps.length < antes ? ps : null;
+}
+
 // Monta o que a busca usa para uma pergunta: grafia -> resposta, formas soltas e a lista da correção.
 function prepararCategoria(cat) {
   const mapa = new Map();
@@ -5471,13 +5506,30 @@ function prepararCategoria(cat) {
       if (sem && sem.join("").length >= 4) guardar(sem.map(radical).join(""), item);
     }
   }
+  // O nome sem a palavra do tema ("australiano" = Pão australiano, "vento" = Pastel de vento),
+  // que só vale quando o que foi digitado não é a forma de outra resposta. Se a mesma forma
+  // serve para duas respostas, não vale para nenhuma (o jogo não adivinha).
+  const tema = palavrasDoTema(cat);
+  const derivadas = new Map();
+  for (const r of cat.respostas) {
+    for (const nome of [r.resposta, ...r.apelidos]) {
+      const item = { resposta: r, nome: r.resposta };
+      const resto = semPalavrasDoTema(palavrasSoltas(nome), tema);
+      const chave = resto && resto.join("");
+      if (!chave || chave.length < 3 || soltas.has(chave)) continue;
+      const ja = derivadas.get(chave);
+      if (ja === undefined) derivadas.set(chave, item);
+      else if (ja && ja.resposta !== item.resposta) derivadas.set(chave, null);
+    }
+  }
   // para a correção: cada grafia (nome e apelidos) com o som e a forma solta dela
   const formas = [];
   for (const [chave, item] of mapa) {
     const solta = chavesSoltas(item.nome)[0];
     formas.push({ chave, som: som(chave), solta, somSolta: som(solta), item });
   }
-  return { ...cat, mapa, formas, soltas: SEM_FORMAS.has(cat.id) ? null : soltas };
+  const semFormas = SEM_FORMAS.has(cat.id);
+  return { ...cat, mapa, formas, soltas: semFormas ? null : soltas, derivadas: semFormas ? null : derivadas };
 }
 </script>
   <script>
@@ -6010,7 +6062,7 @@ cena.aoQuadro((al) => {
 // (sem internet, aberto do computador, ?aleatorio ou dia que ainda não está no banco).
 // No site o dados.js não abre mais (tem todas as respostas, docs/CONTA.md): lá o fallback só falha.
 // No jogar-completo.html (o arquivo único para abrir sem internet) o pacote já vem dentro.
-const VERSAO_DADOS = "da54323238"; // o montar_jogo.py troca pelo resumo do dados.js no jogar.html
+const VERSAO_DADOS = "fc6359459e"; // o montar_jogo.py troca pelo resumo do dados.js no jogar.html
 let promessaDadosLocais = null;
 function carregarDadosLocais() {
   if (window.NICHO_DADOS) return Promise.resolve(window.NICHO_DADOS);
