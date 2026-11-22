@@ -149,6 +149,7 @@ PREFIXOS_POR_CATEGORIA = {
     "missoes-espaciais": ("programa ", "missao "),
     "brincadeiras": ("jogo de ", "jogo "),
     "jogos-de-videogame": ("jogo de ", "jogo "),
+    "molhos": ("molho de ", "molho "),
 }
 
 
