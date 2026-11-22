@@ -315,10 +315,14 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 38 |
 | 7 | Coisas verdes | Cite algo que é verde | 771 |
 
-## Na fila (ainda não formam um dia)
+## Dia 27 · seg 23/11/2026
 
-- Coisas vermelhas
-- Molhos
-- Coisas que fazem barulho
-- Personagens de videogame
-- Personagens da Nintendo
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas vermelhas | Cite algo que é vermelho | 605 |
+| 2 | Molhos | Cite um molho | 337 |
+| 3 | Coisas que fazem barulho | Cite algo que faz barulho | 981 |
+| 4 | Personagens de videogame | Cite um personagem de videogame | 1385 |
+| 5 | Personagens da Nintendo | Cite um personagem da Nintendo (Pokémon não contam) | 747 |
+| 6 | Coisas do hospital | Cite algo que tem num hospital | 1037 |
+| 7 | Coisas para acampar | Cite algo que se leva para acampar | 2404 |
