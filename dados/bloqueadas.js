@@ -12,6 +12,6 @@ export default [
   "vagabunda", "vadia", "merda", "bosta", "xoxota", "xereca", "punheta", "boquete", "piroca",
   "viado", "traveco", "sapatao", "macumbeiro", "favelado", "retardado", "aleijado",
   "nego", "negao", "crioulo", "tiziu", "japa", "chingling", "judeu safado",
-  "suicidio", "se matar", "overdose", "cocaina", "crack", "maconha", "heroina", "droga", "drogas",
+  "zoofilia", "suicidio", "se matar", "overdose", "cocaina", "crack", "maconha", "heroina", "droga", "drogas",
   "bolsonaro", "trump", "comunista", "petista", "bolsominion",
 ];

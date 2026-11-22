@@ -263,6 +263,20 @@ def executar_plantao() -> dict:
         w.writerows(sorted(linhas_csv, key=lambda x: -int(x["n"])))
     print(f"CSV de recusadas gravado em: {csv_path.name}")
 
+    # Guarda o que os jogadores responderam (ontem fechado, hoje parcial) e recalcula a raridade
+    # das categorias de ontem com as partidas de verdade (scripts/partidas.py, pontuar.partidas_de).
+    # As de hoje não mudam: o pontuar só usa dias fechados.
+    try:
+        subprocess.run([sys.executable, "-X", "utf8", "scripts/partidas.py"], check=True)
+        ontem = (dt.date.fromisoformat(hoje) - dt.timedelta(days=1)).isoformat()
+        arq_ontem = RAIZ / "dados" / "sinais" / "partidas" / f"{ontem}.json"
+        if arq_ontem.exists():
+            for cid in json.loads(arq_ontem.read_text(encoding="utf-8"))["categorias"]:
+                if (RAIZ / "dados" / "categorias" / f"{cid}.txt").exists():
+                    categorias_modificadas.add(cid)
+    except Exception as erro:  # sem a API, o plantão segue sem as partidas
+        print(f"AVISO: não deu para guardar as partidas: {erro}")
+
     # Regera dados para categorias afetadas
     for cid in categorias_modificadas:
         print(f"Recalculando fama de {cid}...")

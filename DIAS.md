@@ -97,18 +97,18 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Capitais do mundo | Cite a capital de um país | 226 |
 | 5 | Times de futebol do Brasil | Cite um time de futebol brasileiro | 1214 |
 | 6 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2410 |
-| 7 | Bebidas com gás | Cite uma bebida com gás | 1328 |
+| 7 | Bebidas com gás | Cite uma bebida com gás | 1329 |
 
 ## Dia 9 · qui 05/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1147 |
+| 1 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1151 |
 | 2 | Cores | Cite uma cor (ou um tom de cor) | 1053 |
 | 3 | Países | Cite um país | 255 |
 | 4 | Material escolar | Cite um item de material escolar | 1044 |
-| 5 | Coisas redondas | Cite algo que é redondo | 1307 |
-| 6 | Coisas com casca | Cite algo que tem casca | 1079 |
+| 5 | Coisas redondas | Cite algo que é redondo | 1309 |
+| 6 | Coisas com casca | Cite algo que tem casca | 1080 |
 | 7 | Marcas de carro | Cite uma marca de carro | 3799 |
 
 ## Dia 10 · sex 06/11/2026
@@ -127,24 +127,24 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Motivos para rir | Cite um motivo para rir | 1518 |
+| 1 | Motivos para rir | Cite um motivo para rir | 1519 |
 | 2 | Porta da geladeira | Cite algo que se encontra na porta da geladeira | 1463 |
-| 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1274 |
+| 3 | Formas de matar um inseto | Cite uma forma de matar um inseto | 1275 |
 | 4 | Animais da cidade | Cite um animal que dá pra encontrar na cidade | 1208 |
 | 5 | Cidades do mundo | Cite uma cidade de fora do Brasil | 4757 |
-| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2102 |
-| 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1155 |
+| 6 | Montanhas e vulcões | Cite uma montanha, pico ou vulcão | 2106 |
+| 7 | Lagos e mares | Cite um lago, lagoa, mar ou represa | 1157 |
 
 ## Dia 12 · dom 08/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Astronautas | Cite um astronauta (ou cosmonauta) que já foi ao espaço | 693 |
-| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 885 |
-| 3 | Modelos de carro | Cite um modelo de carro | 2406 |
+| 2 | Séries americanas dos anos 2000 | Cite uma série americana que estreou entre 2000 e 2009 | 890 |
+| 3 | Modelos de carro | Cite um modelo de carro | 2409 |
 | 4 | Atropelado por avião | Diga um animal que já foi atingido por avião (registro oficial de colisão) | 353 |
-| 5 | Sabores de pizza | Cite um sabor de pizza | 300 |
-| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1191 |
+| 5 | Sabores de pizza | Cite um sabor de pizza | 301 |
+| 6 | Filmes bem avaliados no IMDb | Cite um filme com nota 7,5 ou mais no IMDb | 1195 |
 | 7 | Superpoderes | Cite um superpoder | 433 |
 
 ## Dia 13 · seg 09/11/2026
@@ -153,11 +153,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Resgate dos bombeiros | Diga um bicho já resgatado pelos bombeiros (caso registrado e noticiado) | 189 |
 | 2 | Filmes de animação Disney e Pixar | Diga um filme de animação da Disney ou da Pixar. | 192 |
-| 3 | Churrasco | Cite algo que tem num churrasco | 1165 |
+| 3 | Churrasco | Cite algo que tem num churrasco | 1170 |
 | 4 | Personagens da Bíblia | Cite um personagem da Bíblia | 682 |
-| 5 | Formas geométricas | Cite uma forma geométrica | 416 |
+| 5 | Formas geométricas | Cite uma forma geométrica | 417 |
 | 6 | Contos de fadas | Cite um personagem de conto de fadas | 1072 |
-| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1825 |
+| 7 | Salgadinhos de festa | Cite um salgadinho de festa | 1826 |
 
 ## Dia 14 · ter 10/11/2026
 
@@ -168,7 +168,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 1582 |
 | 4 | Frutos do mar | Cite um fruto do mar | 541 |
 | 5 | Natal | Cite algo do Natal | 663 |
-| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 709 |
+| 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 710 |
 | 7 | Sabores de bolo | Cite um sabor de bolo | 2802 |
 
 ## Dia 15 · qua 11/11/2026
@@ -176,12 +176,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1812 |
-| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1988 |
+| 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1989 |
 | 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 534 |
-| 4 | Brinquedos | Cite um brinquedo | 611 |
-| 5 | Doenças | Cite uma doença | 3981 |
+| 4 | Brinquedos | Cite um brinquedo | 612 |
+| 5 | Doenças | Cite uma doença | 3982 |
 | 6 | Praias brasileiras | Cite uma praia brasileira | 736 |
-| 7 | Coisas geladas | Cite algo gelado | 766 |
+| 7 | Coisas geladas | Cite algo gelado | 767 |
 
 ## Dia 16 · qui 12/11/2026
 
@@ -189,11 +189,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Grãos, sementes e cereais | Cite um grão, semente ou cereal | 328 |
 | 2 | Higiene e beleza | Cite um produto de higiene ou beleza | 641 |
-| 3 | Coisas que dão medo | Cite algo que dá medo | 1970 |
+| 3 | Coisas que dão medo | Cite algo que dá medo | 1973 |
 | 4 | Estádios de futebol | Cite um estádio de futebol | 3571 |
-| 5 | Árvores | Cite uma árvore | 1474 |
-| 6 | Nomes masculinos | Cite um nome masculino | 3006 |
-| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 926 |
+| 5 | Árvores | Cite uma árvore | 1475 |
+| 6 | Nomes masculinos | Cite um nome masculino | 3009 |
+| 7 | Bandas de rock brasileiras | Cite uma banda de rock brasileira | 927 |
 
 ## Dia 17 · sex 13/11/2026
 
@@ -212,23 +212,23 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Coisas com rodas | Cite algo que tem rodas | 2651 |
-| 2 | Café da manhã | Cite algo que se come ou bebe no café da manhã | 3646 |
+| 2 | Café da manhã | Cite algo que se come ou bebe no café da manhã | 3655 |
 | 3 | Programas de TV brasileiros | Cite um programa de TV brasileiro | 2368 |
-| 4 | Calçados e acessórios | Cite um calçado ou acessório (sapato, bolsa, joia, chapéu...) | 391 |
+| 4 | Calçados e acessórios | Cite um calçado ou acessório (sapato, bolsa, joia, chapéu...) | 392 |
 | 5 | Sobrenomes | Cite um sobrenome | 3288 |
 | 6 | Animais venenosos e peçonhentos | Cite um animal venenoso ou peçonhento | 260 |
-| 7 | Carnaval | Cite algo do carnaval | 497 |
+| 7 | Carnaval | Cite algo do carnaval | 498 |
 
 ## Dia 19 · dom 15/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Sentimentos e emoções | Cite um sentimento ou emoção | 316 |
-| 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 602 |
+| 1 | Sentimentos e emoções | Cite um sentimento ou emoção | 318 |
+| 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 606 |
 | 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 274 |
 | 4 | Cientistas e inventores | Cite um cientista ou inventor famoso | 3713 |
 | 5 | Coisas que grudam | Cite algo que gruda | 385 |
-| 6 | Aparelhos eletrônicos e eletrodomésticos | Cite um aparelho eletrônico ou eletrodoméstico | 333 |
+| 6 | Aparelhos eletrônicos e eletrodomésticos | Cite um aparelho eletrônico ou eletrodoméstico | 338 |
 | 7 | Animais da África | Cite um animal que vive na África | 561 |
 
 ## Dia 20 · seg 16/11/2026
@@ -236,24 +236,24 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Partes do carro | Cite uma peça ou parte do carro | 329 |
-| 2 | Supermercado | Cite algo que se compra no supermercado | 8276 |
+| 2 | Supermercado | Cite algo que se compra no supermercado | 8284 |
 | 3 | Animais que botam ovo | Cite um animal que bota ovo | 9947 |
-| 4 | Palavras terminadas em -ão | Cite uma palavra que termina em "-ão" | 6266 |
+| 4 | Palavras terminadas em -ão | Cite uma palavra que termina em "-ão" | 6269 |
 | 5 | Vencedores do Oscar de atuação | Cite um ator ou atriz que já ganhou o Oscar de atuação | 690 |
-| 6 | Coisas que derretem | Cite algo que derrete | 2049 |
+| 6 | Coisas que derretem | Cite algo que derrete | 2050 |
 | 7 | Músicas brasileiras | Cite uma música brasileira (nome da música) | 2191 |
 
 ## Dia 21 · ter 17/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas que giram | Cite algo que gira | 395 |
-| 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1545 |
+| 1 | Coisas que giram | Cite algo que gira | 396 |
+| 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1549 |
 | 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4705 |
-| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 493 |
+| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 494 |
 | 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 563 |
-| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6874 |
-| 7 | Pratos de outros países | Cite um prato típico de outro país | 237 |
+| 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6880 |
+| 7 | Pratos de outros países | Cite um prato típico de outro país | 238 |
 
 ## Dia 22 · qua 18/11/2026
 
@@ -261,35 +261,35 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Monstros e criaturas | Cite um monstro ou criatura assustadora | 1593 |
 | 2 | Apresentadores de TV | Cite um apresentador ou apresentadora de TV brasileiro | 1299 |
-| 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5094 |
-| 4 | Palavras aportuguesadas do inglês | Cite uma palavra do inglês aportuguesada (tipo futebol, xampu, sanduíche) | 222 |
-| 5 | Ferramentas | Cite uma ferramenta | 600 |
-| 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 352 |
-| 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 473 |
+| 3 | Répteis e anfíbios | Cite um réptil ou anfíbio | 5095 |
+| 4 | Palavras aportuguesadas do inglês | Cite uma palavra do inglês aportuguesada (tipo futebol, xampu, sanduíche) | 223 |
+| 5 | Ferramentas | Cite uma ferramenta | 603 |
+| 6 | Biscoitos e bolachas | Cite um biscoito ou bolacha (tipo ou marca) | 355 |
+| 7 | Coisas que quebram fácil | Cite algo que quebra fácil | 474 |
 
 ## Dia 23 · qui 19/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas fedidas | Cite algo fedido | 447 |
+| 1 | Coisas fedidas | Cite algo fedido | 449 |
 | 2 | Youtubers e influenciadores | Cite um youtuber, streamer ou influenciador brasileiro | 708 |
-| 3 | Cursos de faculdade | Cite um curso de faculdade | 260 |
+| 3 | Cursos de faculdade | Cite um curso de faculdade | 261 |
 | 4 | Palavras com X no começo | Cite uma palavra que começa com X | 473 |
-| 5 | Coisas do quarto | Cite algo que tem num quarto | 2980 |
+| 5 | Coisas do quarto | Cite algo que tem num quarto | 2985 |
 | 6 | Mamíferos | Cite um mamífero | 2298 |
-| 7 | Tipos de pão | Cite um tipo de pão | 323 |
+| 7 | Tipos de pão | Cite um tipo de pão | 325 |
 
 ## Dia 24 · sex 20/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Animais da fazenda | Cite um animal da fazenda | 266 |
-| 2 | Festa de aniversário | Cite algo que tem numa festa de aniversário | 2714 |
-| 3 | Coisas quentes | Cite algo quente | 629 |
-| 4 | Padaria | Cite algo que se compra na padaria | 3010 |
-| 5 | Palavras com Z no começo | Cite uma palavra que começa com Z | 688 |
-| 6 | Roupas | Cite uma peça de roupa | 575 |
-| 7 | Personagens de anime | Cite um personagem de Dragon Ball, Naruto, One Piece ou Cavaleiros do Zodíaco | 476 |
+| 2 | Festa de aniversário | Cite algo que tem numa festa de aniversário | 2719 |
+| 3 | Coisas quentes | Cite algo quente | 633 |
+| 4 | Padaria | Cite algo que se compra na padaria | 3013 |
+| 5 | Palavras com Z no começo | Cite uma palavra que começa com Z | 690 |
+| 6 | Roupas | Cite uma peça de roupa | 576 |
+| 7 | Personagens de anime | Cite um personagem de Dragon Ball, Naruto, One Piece ou Cavaleiros do Zodíaco | 477 |
 
 ## Dia 25 · sáb 21/11/2026
 
@@ -297,11 +297,11 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Pilotos de Fórmula 1 | Cite um piloto de Fórmula 1 (de qualquer época) | 852 |
 | 2 | Sítio do Picapau Amarelo | Cite um personagem do Sítio do Picapau Amarelo | 95 |
-| 3 | Coisas azuis | Cite algo que é azul | 675 |
-| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2659 |
+| 3 | Coisas azuis | Cite algo que é azul | 676 |
+| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2665 |
 | 5 | Flores | Cite uma flor | 508 |
-| 6 | Coisas do banheiro | Cite algo que tem num banheiro | 613 |
-| 7 | Recheios de pastel | Cite um recheio de pastel | 2113 |
+| 6 | Coisas do banheiro | Cite algo que tem num banheiro | 614 |
+| 7 | Recheios de pastel | Cite um recheio de pastel | 2114 |
 
 ## Dia 26 · dom 22/11/2026
 
