@@ -295,25 +295,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Pilotos de Fórmula 1 | Cite um piloto de Fórmula 1 (de qualquer época) | 852 |
-| 2 | Sítio do Picapau Amarelo | Cite um personagem do Sítio do Picapau Amarelo | 95 |
-| 3 | Coisas azuis | Cite algo que é azul | 676 |
-| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2665 |
+| 1 | Pilotos de Fórmula 1 | Cite um piloto de Fórmula 1 (de qualquer época) | 853 |
+| 2 | Sítio do Picapau Amarelo | Cite um personagem do Sítio do Picapau Amarelo | 97 |
+| 3 | Coisas azuis | Cite algo que é azul | 680 |
+| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2673 |
 | 5 | Flores | Cite uma flor | 508 |
-| 6 | Coisas do banheiro | Cite algo que tem num banheiro | 614 |
+| 6 | Coisas do banheiro | Cite algo que tem num banheiro | 617 |
 | 7 | Recheios de pastel | Cite um recheio de pastel | 2114 |
 
 ## Dia 26 · dom 22/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Medalhistas olímpicos do Brasil | Cite um atleta brasileiro que já ganhou medalha olímpica (fora do futebol) | 329 |
-| 2 | Coisas pontudas ou afiadas | Cite algo pontudo ou afiado | 410 |
-| 3 | Pontos turísticos | Cite um ponto turístico (do Brasil ou do mundo) | 2396 |
-| 4 | Hobbies e passatempos | Cite um hobby ou passatempo | 673 |
-| 5 | Sabores de sorvete | Cite um sabor de sorvete | 2777 |
-| 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 34 |
-| 7 | Coisas verdes | Cite algo que é verde | 771 |
+| 1 | Medalhistas olímpicos do Brasil | Cite um atleta brasileiro que já ganhou medalha olímpica (fora do futebol) | 376 |
+| 2 | Coisas pontudas ou afiadas | Cite algo pontudo ou afiado | 445 |
+| 3 | Pontos turísticos | Cite um ponto turístico (do Brasil ou do mundo) | 2424 |
+| 4 | Hobbies e passatempos | Cite um hobby ou passatempo | 690 |
+| 5 | Sabores de sorvete | Cite um sabor de sorvete | 2789 |
+| 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 44 |
+| 7 | Coisas verdes | Cite algo que é verde | 789 |
 
 ## Dia 27 · seg 23/11/2026
 
