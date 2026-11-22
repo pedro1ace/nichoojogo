@@ -283,25 +283,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Animais da fazenda | Cite um animal da fazenda | 264 |
-| 2 | Festa de aniversário | Cite algo que tem numa festa de aniversário | 2713 |
-| 3 | Coisas quentes | Cite algo quente | 623 |
-| 4 | Padaria | Cite algo que se compra na padaria | 3009 |
-| 5 | Palavras com Z no começo | Cite uma palavra que começa com Z | 686 |
-| 6 | Roupas | Cite uma peça de roupa | 571 |
-| 7 | Personagens de anime | Cite um personagem de Dragon Ball, Naruto, One Piece ou Cavaleiros do Zodíaco | 472 |
+| 1 | Animais da fazenda | Cite um animal da fazenda | 266 |
+| 2 | Festa de aniversário | Cite algo que tem numa festa de aniversário | 2714 |
+| 3 | Coisas quentes | Cite algo quente | 629 |
+| 4 | Padaria | Cite algo que se compra na padaria | 3010 |
+| 5 | Palavras com Z no começo | Cite uma palavra que começa com Z | 688 |
+| 6 | Roupas | Cite uma peça de roupa | 575 |
+| 7 | Personagens de anime | Cite um personagem de Dragon Ball, Naruto, One Piece ou Cavaleiros do Zodíaco | 476 |
 
 ## Dia 25 · sáb 21/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Pilotos de Fórmula 1 | Cite um piloto de Fórmula 1 (de qualquer época) | 847 |
-| 2 | Sítio do Picapau Amarelo | Cite um personagem do Sítio do Picapau Amarelo | 69 |
-| 3 | Coisas azuis | Cite algo que é azul | 596 |
-| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2642 |
-| 5 | Flores | Cite uma flor | 495 |
-| 6 | Coisas do banheiro | Cite algo que tem num banheiro | 579 |
-| 7 | Recheios de pastel | Cite um recheio de pastel | 2099 |
+| 1 | Pilotos de Fórmula 1 | Cite um piloto de Fórmula 1 (de qualquer época) | 852 |
+| 2 | Sítio do Picapau Amarelo | Cite um personagem do Sítio do Picapau Amarelo | 95 |
+| 3 | Coisas azuis | Cite algo que é azul | 675 |
+| 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2659 |
+| 5 | Flores | Cite uma flor | 508 |
+| 6 | Coisas do banheiro | Cite algo que tem num banheiro | 613 |
+| 7 | Recheios de pastel | Cite um recheio de pastel | 2115 |
 
 ## Dia 26 · dom 22/11/2026
 
