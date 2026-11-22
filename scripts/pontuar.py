@@ -219,6 +219,49 @@ PONTOS_ESPERTALHAO = 15  # espertalhão (scripts/fama.py, "@"): o clichê espert
 PONTOS_CRIATIVA = 70  # resposta criativa (scripts/fama.py, "~"): Homer em Coisas amarelas, Panela em Instrumentos  # menos de 1 em 1000: os pontos sobem pela ordem da cauda
 
 
+# ---------- raridade pelas partidas de verdade ----------
+# Quantos jogadores deram cada resposta (dados/sinais/partidas/, scripts/partidas.py) é a medida
+# direta do que a régua fixa quer dizer ("quantos em 1000 dariam esta resposta"). A simulação vira
+# só o ponto de partida: vale como PSEUDO_JOGADORES jogadores. Com 2300 jogadores num dia, quem manda
+# é a partida; com 100, a simulação ainda pesa bastante. Abaixo de MIN_PARTIDAS, nem entra.
+# Só dias fechados (o de hoje ainda está no ar e os pontos dele não podem mudar no meio do dia).
+MIN_PARTIDAS = 300
+PSEUDO_JOGADORES = 300
+
+
+def partidas_de(cat: dict) -> dict | None:
+    """{"total": jogadores, "contagem": {resposta da lista: n}} somando os dias fechados, ou None."""
+    import partidas  # noqa: PLC0415 (só quando precisa)
+
+    soma = partidas.ler().get(cat["id"])
+    if not soma or soma["total"] < MIN_PARTIDAS:
+        return None
+    # o jogo grava o nome da resposta; se a lista mudou o nome depois, acha pelo apelido
+    nomes: dict[str, str] = {}
+    for r in cat["respostas"]:
+        for n in [r["resposta"], *r["apelidos"]]:
+            nomes.setdefault(normalizar(n), r["resposta"])
+    contagem: dict[str, int] = {}
+    for nome, n in soma["contagem"].items():
+        resposta = nomes.get(normalizar(nome))
+        if resposta:
+            contagem[resposta] = contagem.get(resposta, 0) + n
+    return {"total": soma["total"], "contagem": contagem}
+
+
+# Quem joga foge das óbvias de propósito (Rosa quase não aparece em Flores: todo mundo sabe que vale
+# pouco). Então a partida pode deixar uma resposta muito mais óbvia (Barrichello, 77 em 1000, valia 86),
+# mas só a deixa mais rara até QUEDA_MAXIMA vezes menos que a simulação. Senão Rosa viraria rara e,
+# na próxima vez, todo mundo diria Rosa.
+QUEDA_MAXIMA = 4.0
+
+
+def lembranca_real(jogadores: int, total: int, simulada: float) -> float:
+    """Quantos em 1000 dão a resposta: a partida, com a simulação valendo PSEUDO_JOGADORES jogadores."""
+    mistura = 1000 * (jogadores + PSEUDO_JOGADORES * simulada / 1000) / (total + PSEUDO_JOGADORES)
+    return round(max(mistura, simulada / QUEDA_MAXIMA), 2)
+
+
 def pontos_fixos(lembra: float) -> int | None:
     """Pontos pela régua fixa, ou None se é rara (menos de 1 em 1000)."""
     for de, ate, p_de, p_ate in REGUA_FIXA:
@@ -393,6 +436,11 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
             # lista de palavras comuns: a cauda rara vai da mais frequente (60) à mais difícil (90)
             ordenadas.sort(key=lambda r: (-frequencia.get(r["resposta"], 0.0), r["fama"],
                                           normalizar(r["resposta"])))
+        reais = partidas_de(cat)
+        if reais:
+            cat["partidas"] = reais["total"]
+            # na cauda, quem algum jogador deu de verdade vem antes (mais óbvia) de quem ninguém deu
+            ordenadas.sort(key=lambda r: -reais["contagem"].get(r["resposta"], 0))
         for r in ordenadas:
             medida = fama_agente.get(r["resposta"]) or {}
             r["lembranca"] = medida.get("lembranca_em_1000", 0.0)
@@ -400,6 +448,10 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
                 r["zipf"] = frequencia.get(r["resposta"], 0.0)
                 r["lembranca"] = round(max(r["lembranca"], lembranca_pela_frequencia(r["zipf"])), 2)
             r["acima"] = medida.get("acima", 0.0)
+            if reais:
+                r["lembranca_simulada"] = r["lembranca"]
+                r["jogadores"] = reais["contagem"].get(r["resposta"], 0)
+                r["lembranca"] = lembranca_real(r["jogadores"], reais["total"], r["lembranca"])
             p = pontos_fixos(r["lembranca"])
             if p is None:
                 raras.append(r)
@@ -456,11 +508,13 @@ def salvar(cat: dict) -> None:
         campos.insert(4, "visitas")
     if cat["fonte_peso"] == "agente":
         campos[4:4] = ["lembranca", "conhecem", "visitas"]
+    if cat.get("partidas"):
+        campos[4:4] = ["jogadores", "lembranca_simulada"]
     with (SAIDA / "revisao" / f"{cat['id']}.csv").open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=campos)
         w.writeheader()
         for r in cat["respostas"]:
-            w.writerow({**{k: r[k] for k in campos}, "apelidos": " | ".join(r["apelidos"])})
+            w.writerow({**{k: r.get(k) for k in campos}, "apelidos": " | ".join(r["apelidos"])})
 
 
 def main() -> None:

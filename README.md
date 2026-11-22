@@ -73,6 +73,7 @@ python3 scripts/importar.py        # gera as categorias que têm receita em dado
 python3 scripts/pontuar.py         # calcula os pesos e atualiza jogo/dados.js e jogar.html
 python3 scripts/fama.py            # fama nova: simulação de jogadores, completude e pontos (roda o pontuar.py)
 python3 scripts/fama.py --conferir # trava: toda categoria da fila tem simulação e lista completa?
+python3 scripts/partidas.py         # guarda o que os jogadores responderam (ontem e hoje); o pontuar usa os dias fechados
 ```
 
 ## Estrutura
