@@ -3,24 +3,24 @@
 # formato: uma resposta por linha; apelidos separados por " | "
 Ketchup | catchup | catchup | Catchupe | Quetchup
 Maionese
-Mostarda
+Mostarda | Molho de mostarda
 Molho de tomate | molho vermelho | sugo
-Molho branco | bechamel | bechamel
+Molho branco | bechamel | bechamel | Molho bechamel
 Molho shoyu | shoyu | molho de soja | Soja molho
 Barbecue | molho barbecue | bbq | BBQ sauce
 Molho rosé | rose
 Molho de pimenta | pimenta
 Bolonhesa | molho bolonhesa
-Pesto
-Vinagrete | vinagrete de churrasco
-Molho madeira
-Molho tártaro | tartar
-Molho inglês | worcestershire
+Pesto | Molho pesto
+Vinagrete | vinagrete de churrasco | Molho vinagrete
+Molho madeira | Madeira
+Molho tártaro | tartar | Tártaro
+Molho inglês | worcestershire | Molho Worcestershire
 Molho quatro queijos | quatro queijos
 Molho de alho
 Molho verde
-Chimichurri
-Tarê | teriyaki | molho teriyaki
+Chimichurri | Molho chimichurri
+Tarê | teriyaki | molho teriyaki | Molho tarê
 Molho agridoce | agridoce
 Molho de mostarda e mel | mostarda e mel
 Molho de queijo | cheddar
@@ -29,7 +29,7 @@ Molho parisiense
 Molho de iogurte
 Molho caesar | caesar
 Molho de ervas
-Molho holandês
+Molho holandês | Holandês
 Molho funghi | funghi
 Molho de cogumelos
 Molho pomodoro | pomodoro
@@ -41,33 +41,30 @@ Molho de laranja
 Molho de maracujá
 Molho de manga
 Molho de hortelã
-Molho de amendoim | satay
+Molho de amendoim | satay | Molho satay
 Molho tahine | tahine | tahini
 Molho sriracha | sriracha
 Molho chipotle | chipotle
 Molho tabasco | tabasco
-Guacamole
+Guacamole | Molho de guacamole
 Salsa | salsa mexicana
 Pico de gallo
 Molho de cheddar
 Molho de churrasco
 Molho de salada
 Molho de limão
-Molho de mostarda
 Molho thai
 Molho de ostra
-Molho hoisin
-Molho ponzu
-Molho tarê
+Molho hoisin | Hoisin
+Molho ponzu | Ponzu
 Molho de gengibre
 Molho de wasabi | wasabi
-Molho de raiz-forte
 Molho de cebola
 Molho de vinho
 Molho de vinho tinto
 Molho bordelaise
 Molho béarnaise | bearnaise
-Molho rôti
+Molho rôti | Roti
 Molho demi-glace | demi-glace
 Molho poivre | molho de pimenta-do-reino
 Molho aioli | aioli | Alioli
@@ -103,7 +100,7 @@ Doce de leite
 Molho de iogurte com hortelã
 Tzatziki | Tsatsiki | Ttalattouri
 Molho ranch | ranch
-Molho mil ilhas | thousand island
+Molho mil ilhas | thousand island | Mil ilhas
 Molho big mac | molho especial
 Molho do Habib's
 Molho cheddar cremoso
@@ -118,7 +115,7 @@ Molho de amendoim tailandês
 Molho de curry | curry
 Molho de tamarindo
 Molho de azeitona
-Molho de alcaparras
+Molho de alcaparras | Alcaparras
 Molho de anchova
 Molho de mostarda dijon | dijon
 Molho de mostarda escura
@@ -140,7 +137,7 @@ Molho de laranja agridoce
 Molho de abacaxi
 Molho de ameixa
 Molho de cranberry
-Molho de pimenta coreana | gochujang
+Molho de pimenta coreana | gochujang | Molho gochujang
 Molho de soja light
 Molho de missô | missô
 Molho tare de sushi
@@ -168,7 +165,7 @@ Molho de cupuaçu
 Molho de açaí
 Molho de vinagre
 Molho de vinagrete de manga
-Molho buffalo
+Molho buffalo | Buffalo
 Molho de asinha
 Molho chili
 Chilli com carne
@@ -192,41 +189,25 @@ Molho de mostarda com ervas
 Molho de manteiga e sálvia
 # entraram por scripts/engordar.py (dados/fontes/engordar/molhos.txt)
 Ragu
-Molho bechamel
-Molho pesto
 Pesto genovês
-Madeira
 Maionese verde
 Maionese temperada
-Tártaro
 Molho de peixe | Molho de peixe tailandês
 Molho picante
 Molho de pimenta-de-cheiro
 Harissa
-Piri-piri
-Molho piri-piri
-Molho chimichurri
-Molho vinagrete
-Molho de guacamole
+Molho piri-piri | Piri-piri
 Salsa verde
-Molho satay
-Molho tikka masala
-Tikka masala
-Molho de champignon
-Champignon
-Molho strogonoff
-Strogonoff
+Molho tikka masala | Tikka masala
+Molho de champignon | Champignon
+Molho strogonoff | Strogonoff
 Molho de tomate pronto
-Pomarola
-Molho Pomarola
-Molho Tarantella
-Tarantella
+Molho Pomarola | Pomarola
+Molho Tarantella | Tarantella
 Molho Fugini
 Molho Quero
-Molho Heinz
-Heinz
-Hellmann's
-Molho Hellmann's
+Molho Heinz | Heinz
+Molho Hellmann's | Hellmann's
 Ketchup Heinz
 Maionese Hellmann's
 Molho Billy & Jack
@@ -237,48 +218,31 @@ Molho de peixe com coco
 Molho de galinha
 Molho pardo
 Molho de sangue
-Holandês
-Molho beurre blanc
-Beurre blanc
-Roti
-Molho gravy
-Gravy
+Molho beurre blanc | Beurre blanc
+Molho gravy | Gravy
 Molho Rancho
-Mil ilhas
 Molho francês
 Molho italiano
 Molho de iogurte para salada
-Raiz-forte
-Ponzu
+Raiz-forte | Molho de raiz-forte
 Molho de gergelim
-Hoisin
 Molho de feijão preto
-Molho gochujang
 Molho de kimchi
-Buffalo
 Molho de pimenta buffalo
-Molho Sweet chili
-Sweet chili
+Molho Sweet chili | Sweet chili
 Molho de pimenta doce
 Molho tailandês
 Nam pla
-Molho mole
+Molho mole | Mole
 Mole poblano
-Mole
-Molho romesco
-Romesco
-Molho puttanesca
-Puttanesca
-Molho arrabbiata
-Arrabbiata
-Molho amatriciana
-Amatriciana
+Molho romesco | Romesco
+Molho puttanesca | Puttanesca
+Molho arrabbiata | Arrabbiata
+Molho amatriciana | Amatriciana
 Molho de vôngole
-Alcaparras
 Tapenade
 Bagna cauda
-Molho de catupiry
-Catupiry
+Molho de catupiry | Catupiry
 Manteiga de alho
 Molho de alcaparras e limão
 Molho de jambu
@@ -314,7 +278,6 @@ Molho rancheiro | Ranch dressing
 Óleo de pimenta | Óleo de chili | La-Yu
 Ajvar
 Doce de oxicoco
-Molho Worcestershire
 Fricassé | Fricassée | Fricassê
 Molho Lizano | Salsa Lizano
 Molho Joppie
