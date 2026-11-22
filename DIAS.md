@@ -12,7 +12,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Doces e sobremesas | Cite um doce ou sobremesa | 1399 |
 | 4 | Insetos | Cite um inseto | 1033 |
 | 5 | Coisas da praia | Cite algo que você encontra ou leva para a praia | 992 |
-| 6 | Temperos e especiarias | Cite um tempero, erva ou especiaria | 915 |
+| 6 | Temperos e especiarias | Cite um tempero, erva ou especiaria | 909 |
 | 7 | Ilhas | Cite uma ilha (de qualquer lugar do mundo) | 2209 |
 
 ## Dia 2 · qui 29/10/2026
@@ -36,7 +36,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Brincadeiras e jogos | Cite uma brincadeira ou um jogo (de rua, de mesa ou de cartas) | 1074 |
 | 4 | Gigantes do Spotify | Cite um dos 3 mil artistas mais ouvidos de todos os tempos no Spotify | 2989 |
 | 5 | Craques da Seleção | Cite um jogador que já jogou pela Seleção Brasileira masculina | 926 |
-| 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 1056 |
+| 6 | Pedras e minerais | Cite uma pedra preciosa, semipreciosa ou mineral | 1053 |
 | 7 | Palavras do Termo | Cite uma palavra de 5 letras que poderia aparecer no Termo | 7710 |
 
 ## Dia 4 · sáb 31/10/2026
@@ -61,7 +61,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Filmes | Cite um filme | 4947 |
 | 5 | Poetas brasileiros | Cite um poeta ou uma poeta brasileira | 1689 |
 | 6 | Frutas | Cite uma fruta | 1073 |
-| 7 | Peixes | Cite um peixe | 1007 |
+| 7 | Peixes | Cite um peixe | 1000 |
 
 ## Dia 6 · seg 02/11/2026
 
@@ -81,7 +81,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Ritmos e estilos musicais | Cite um ritmo ou estilo musical | 1192 |
 | 2 | Gírias brasileiras | Cite uma gíria brasileira | 1061 |
-| 3 | Coisas que brilham no céu | Cite algo que brilha no céu | 1020 |
+| 3 | Coisas que brilham no céu | Cite algo que brilha no céu | 1014 |
 | 4 | Palavras terminadas em -io | Cite uma palavra que termina em "-io" | 4158 |
 | 5 | Animais do Brasil | Cite um animal da fauna brasileira | 3515 |
 | 6 | Esportes olímpicos | Cite um esporte disputado nas Olimpíadas | 133 |
@@ -96,7 +96,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Raças de cachorro | Cite uma raça de cachorro | 1052 |
 | 4 | Capitais do mundo | Cite a capital de um país | 226 |
 | 5 | Times de futebol do Brasil | Cite um time de futebol brasileiro | 1214 |
-| 6 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2434 |
+| 6 | Idiomas | Cite um idioma (vivo, morto ou inventado) | 2410 |
 | 7 | Bebidas com gás | Cite uma bebida com gás | 1328 |
 
 ## Dia 9 · qui 05/11/2026
@@ -104,7 +104,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Bagagem do astronauta | Cite algo que um astronauta leva (ou já levou) para o espaço | 1147 |
-| 2 | Cores | Cite uma cor (ou um tom de cor) | 1061 |
+| 2 | Cores | Cite uma cor (ou um tom de cor) | 1053 |
 | 3 | Países | Cite um país | 255 |
 | 4 | Material escolar | Cite um item de material escolar | 1044 |
 | 5 | Coisas redondas | Cite algo que é redondo | 1307 |
@@ -164,12 +164,12 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
 | 1 | Meios de transporte | Cite um meio de transporte | 622 |
-| 2 | Danças | Cite uma dança | 694 |
+| 2 | Danças | Cite uma dança | 688 |
 | 3 | Personagens da Disney | Cite um personagem da Disney ou da Pixar | 1582 |
 | 4 | Frutos do mar | Cite um fruto do mar | 541 |
 | 5 | Natal | Cite algo do Natal | 663 |
 | 6 | Coisas que dão azar | Cite algo que dá azar (superstição) | 709 |
-| 7 | Sabores de bolo | Cite um sabor de bolo | 2886 |
+| 7 | Sabores de bolo | Cite um sabor de bolo | 2802 |
 
 ## Dia 15 · qua 11/11/2026
 
@@ -177,10 +177,10 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Jogos de Nintendo Wii | Cite um jogo do Nintendo Wii | 1812 |
 | 2 | Pintores brasileiros | Cite um pintor ou pintora brasileiro | 1988 |
-| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 542 |
+| 3 | Chocolates, balas e chicletes | Cite um chocolate, bala ou chiclete de marca | 534 |
 | 4 | Brinquedos | Cite um brinquedo | 611 |
-| 5 | Doenças | Cite uma doença | 3982 |
-| 6 | Praias brasileiras | Cite uma praia brasileira | 738 |
+| 5 | Doenças | Cite uma doença | 3981 |
+| 6 | Praias brasileiras | Cite uma praia brasileira | 736 |
 | 7 | Coisas geladas | Cite algo gelado | 766 |
 
 ## Dia 16 · qui 12/11/2026
@@ -213,7 +213,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Coisas com rodas | Cite algo que tem rodas | 2651 |
 | 2 | Café da manhã | Cite algo que se come ou bebe no café da manhã | 3646 |
-| 3 | Programas de TV brasileiros | Cite um programa de TV brasileiro | 2371 |
+| 3 | Programas de TV brasileiros | Cite um programa de TV brasileiro | 2368 |
 | 4 | Calçados e acessórios | Cite um calçado ou acessório (sapato, bolsa, joia, chapéu...) | 391 |
 | 5 | Sobrenomes | Cite um sobrenome | 3288 |
 | 6 | Animais venenosos e peçonhentos | Cite um animal venenoso ou peçonhento | 260 |
@@ -225,7 +225,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 |---|---|---|---|
 | 1 | Sentimentos e emoções | Cite um sentimento ou emoção | 316 |
 | 2 | Lojas e redes de lojas | Cite uma loja ou rede de lojas | 602 |
-| 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 275 |
+| 3 | Massas e macarrão | Cite um tipo de massa ou macarrão | 274 |
 | 4 | Cientistas e inventores | Cite um cientista ou inventor famoso | 3713 |
 | 5 | Coisas que grudam | Cite algo que gruda | 385 |
 | 6 | Aparelhos eletrônicos e eletrodomésticos | Cite um aparelho eletrônico ou eletrodoméstico | 333 |
@@ -250,7 +250,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 1 | Coisas que giram | Cite algo que gira | 395 |
 | 2 | Coisas da bolsa ou mochila | Cite algo que se carrega na bolsa ou mochila | 1545 |
 | 3 | Atores e atrizes brasileiros | Cite um ator ou atriz brasileiro | 4705 |
-| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 494 |
+| 4 | Feriados e datas comemorativas | Cite um feriado ou data comemorativa | 493 |
 | 5 | Fast-food e lanchonetes | Cite uma rede de fast-food, lanchonete ou restaurante | 563 |
 | 6 | Livros de 2000 para cá | Cite um livro lançado de 2000 em diante | 6874 |
 | 7 | Pratos de outros países | Cite um prato típico de outro país | 237 |
@@ -277,7 +277,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Palavras com X no começo | Cite uma palavra que começa com X | 473 |
 | 5 | Coisas do quarto | Cite algo que tem num quarto | 2980 |
 | 6 | Mamíferos | Cite um mamífero | 2298 |
-| 7 | Tipos de pão | Cite um tipo de pão | 325 |
+| 7 | Tipos de pão | Cite um tipo de pão | 323 |
 
 ## Dia 24 · sex 20/11/2026
 
@@ -301,7 +301,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Marcas famosas | Cite uma marca famosa (de qualquer coisa) | 2659 |
 | 5 | Flores | Cite uma flor | 508 |
 | 6 | Coisas do banheiro | Cite algo que tem num banheiro | 613 |
-| 7 | Recheios de pastel | Cite um recheio de pastel | 2115 |
+| 7 | Recheios de pastel | Cite um recheio de pastel | 2113 |
 
 ## Dia 26 · dom 22/11/2026
 
@@ -315,10 +315,14 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 38 |
 | 7 | Coisas verdes | Cite algo que é verde | 771 |
 
-## Na fila (ainda não formam um dia)
+## Dia 27 · seg 23/11/2026
 
-- Coisas vermelhas
-- Molhos
-- Coisas que fazem barulho
-- Personagens de videogame
-- Personagens da Nintendo
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas vermelhas | Cite algo que é vermelho | 605 |
+| 2 | Molhos | Cite um molho | 337 |
+| 3 | Coisas que fazem barulho | Cite algo que faz barulho | 981 |
+| 4 | Personagens de videogame | Cite um personagem de videogame | 1385 |
+| 5 | Personagens da Nintendo | Cite um personagem da Nintendo (Pokémon não contam) | 747 |
+| 6 | Coisas do hospital | Cite algo que tem num hospital | 1037 |
+| 7 | Coisas para acampar | Cite algo que se leva para acampar | 2404 |
