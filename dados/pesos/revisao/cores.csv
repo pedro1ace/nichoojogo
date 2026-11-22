@@ -8,9 +8,9 @@ Branco,white | branquinho,8.723,False,35.3331,100.0,17958,0.007,0.007,0.346,12,T
 Laranja,Cor de laranja | orange,10.278,False,35.3331,100.0,31656,0.007,0.007,0.346,12,True
 Preto,negro | black | pretinho | preto básico,8.924,False,46.8163,100.0,12246,0.005,0.005,0.346,12,True
 Roxo,rocho | roxinho | purple,11.204,False,44.1664,100.0,12150,0.006,0.006,0.346,12,True
-Cinza,Cor de cinza | cinzento | cinzenta | gray | grey | cinzinha | elefante cinza,10.484,False,18.5499,100.0,4476,0.008,0.008,0.374,14,True
-Marrom,marron | maron | brown,10.862,False,17.6665,100.0,7944,0.009,0.009,0.387,15,True
-Multicolorido,Colorido | colorida | todas as cores,14.421,False,0.8833,,0,0.064,0.064,0.387,15,True
+Cinza,Cor de cinza | cinzento | cinzenta | gray | grey | cinzinha | elefante cinza,10.484,False,18.5499,100.0,4476,0.009,0.009,0.374,14,True
+Marrom,marron | maron | brown,10.862,False,17.6665,100.0,7944,0.01,0.01,0.387,15,True
+Multicolorido,Colorido | colorida | todas as cores,14.421,False,0.8833,,0,0.065,0.065,0.387,15,True
 Lilás,Cor de lilás,11.944,False,13.2499,100.0,7236,0.01,0.01,0.447,20,True
 Azul-marinho,Naval | Navy | marinho | azul marinha,9.906,False,8.8333,100.0,6552,0.013,0.013,0.49,24,True
 Bege,Cor de bege | Beige,11.629,False,8.8333,100.0,8874,0.013,0.013,0.49,24,True
@@ -26,17 +26,17 @@ Fúcsia,fuxia | fucshia | fuchsia,14.22,False,5.3,80.0,3318,0.021,0.021,0.557,31
 Prateado,Silver,12.634,False,5.3,100.0,1926,0.021,0.021,0.557,31,True
 Salmão,Cor de salmão | salmon | saumão,11.966,False,5.3,95.0,22248,0.021,0.021,0.557,31,True
 Verde-limão,Lime | Limão,9.769,False,3.975,100.0,0,0.024,0.024,0.592,35,True
-Azul-bebê,Baby blue,9.312,False,3.5333,90.0,0,0.028,0.028,0.608,37,True
-Coral,Cor de coral,11.117,False,3.5333,90.0,13878,0.028,0.028,0.608,37,True
-Creme,Cor de creme | Cream,10.056,False,3.5333,100.0,0,0.028,0.028,0.608,37,True
-Lavanda,Cor de lavanda | Lavender,12.86,False,3.5333,85.0,30870,0.028,0.028,0.608,37,True
-Mostarda,Cor de mostarda | Mustard,12.372,False,3.5333,95.0,546,0.028,0.028,0.608,37,True
-Pink,,20.0,True,3.5333,100.0,60048,0.028,0.028,0.608,37,True
-Prata,Cor de prata,9.859,False,3.5333,100.0,13422,0.028,0.028,0.608,37,True
-Rosa-choque,Hot pink,9.905,False,3.5333,95.0,0,0.028,0.028,0.608,37,True
-Verde-água,Aqua,8.435,False,3.5333,98.0,11214,0.028,0.028,0.608,37,True
-Oliva,verde-oliva | Cor de oliva | Olive green,12.054,False,3.0916,95.0,7080,0.033,0.033,0.624,39,True
-Verde-musgo,Musgo,11.143,False,3.0916,95.0,0,0.033,0.033,0.624,39,True
+Azul-bebê,Baby blue,9.312,False,3.5333,90.0,0,0.029,0.029,0.608,37,True
+Coral,Cor de coral,11.117,False,3.5333,90.0,13878,0.029,0.029,0.608,37,True
+Creme,Cor de creme | Cream,10.056,False,3.5333,100.0,0,0.029,0.029,0.608,37,True
+Lavanda,Cor de lavanda | Lavender,12.86,False,3.5333,85.0,30870,0.029,0.029,0.608,37,True
+Mostarda,Cor de mostarda | Mustard,12.372,False,3.5333,95.0,546,0.029,0.029,0.608,37,True
+Pink,,20.0,True,3.5333,100.0,60048,0.029,0.029,0.608,37,True
+Prata,Cor de prata,9.859,False,3.5333,100.0,13422,0.029,0.029,0.608,37,True
+Rosa-choque,Hot pink,9.905,False,3.5333,95.0,0,0.029,0.029,0.608,37,True
+Verde-água,Aqua,8.435,False,3.5333,98.0,11214,0.029,0.029,0.608,37,True
+Oliva,verde-oliva | Cor de oliva | Olive green,12.054,False,3.0916,95.0,7080,0.034,0.034,0.624,39,True
+Verde-musgo,Musgo,11.143,False,3.0916,95.0,0,0.034,0.034,0.624,39,True
 Azul-anil,anil,11.338,False,2.65,75.0,7860,0.038,0.038,0.648,42,True
 Caramelo,Cor de caramelo,12.238,False,2.65,95.0,3504,0.038,0.038,0.648,42,True
 Grafite,Cor de grafite,12.045,False,2.65,90.0,9912,0.038,0.038,0.648,42,True
@@ -59,1004 +59,996 @@ Terracota,,13.891,False,1.7667,75.0,10716,0.048,0.048,0.7,49,True
 Verde-claro,,8.657,False,1.7667,,0,0.048,0.048,0.7,49,True
 Verde-escuro,,9.644,False,1.7667,,0,0.048,0.048,0.7,49,True
 Azul-prússia,azul da prússia,9.059,False,0.0091,,4410,0.975,0.975,0.707,50,True
-Areia,Cor de areia,10.198,False,0.8833,,7122,0.064,0.064,0.775,60,True
-Azul-piscina,,9.256,False,0.8833,,11214,0.064,0.064,0.775,60,True
-Azul-turquesa,,10.877,False,0.8833,,0,0.064,0.064,0.775,60,True
-Café,Cor de café,8.987,False,0.8833,,102966,0.064,0.064,0.775,60,True
-Carmim,,14.048,False,0.8833,65.0,3678,0.064,0.064,0.775,60,True
-Cereja,Cor de cereja,12.108,False,0.8833,,11442,0.064,0.064,0.775,60,True
-Cerúleo,azul-cerúleo,16.582,False,0.8833,25.0,1278,0.064,0.064,0.775,60,True
-Champanhe,xampanhe | champanha | champagne,12.634,False,0.8833,80.0,0,0.064,0.064,0.775,60,True
-Cobre,Cor de cobre,10.738,False,0.8833,90.0,18132,0.064,0.064,0.775,60,True
-Cor de goiaba,Goiaba,10.839,False,0.8833,,0,0.064,0.064,0.775,60,True
-Cáqui,Cor de cáqui | kaki | khaki,15.032,False,0.8833,80.0,5934,0.064,0.064,0.775,60,True
-Ferrugem,Cor de ferrugem,12.578,False,0.8833,80.0,2688,0.064,0.064,0.775,60,True
-Jade,Cor de jade,12.498,False,0.8833,,9156,0.064,0.064,0.775,60,True
-Marfim,Cor de marfim | Ivory,12.317,False,0.8833,85.0,9180,0.064,0.064,0.775,60,True
-Neon,,12.194,False,0.8833,,8394,0.064,0.064,0.775,60,True
-Rubi,Cor de rubi,12.666,False,0.8833,,12198,0.064,0.064,0.775,60,True
+Areia,Cor de areia,10.198,False,0.8833,,7122,0.065,0.065,0.775,60,True
+Azul-piscina,,9.256,False,0.8833,,11214,0.065,0.065,0.775,60,True
+Azul-turquesa,,10.877,False,0.8833,,0,0.065,0.065,0.775,60,True
+Café,Cor de café,8.987,False,0.8833,,102966,0.065,0.065,0.775,60,True
+Carmim,,14.048,False,0.8833,65.0,3678,0.065,0.065,0.775,60,True
+Cereja,Cor de cereja,12.108,False,0.8833,,11442,0.065,0.065,0.775,60,True
+Cerúleo,azul-cerúleo,16.582,False,0.8833,25.0,1278,0.065,0.065,0.775,60,True
+Champanhe,xampanhe | champanha | champagne | Cor de champanhe,12.634,False,0.8833,80.0,0,0.065,0.065,0.775,60,True
+Cobre,Cor de cobre,10.738,False,0.8833,90.0,18132,0.065,0.065,0.775,60,True
+Cor de goiaba,Goiaba,10.839,False,0.8833,,0,0.065,0.065,0.775,60,True
+Cáqui,Cor de cáqui | kaki | khaki,15.032,False,0.8833,80.0,5934,0.065,0.065,0.775,60,True
+Ferrugem,Cor de ferrugem,12.578,False,0.8833,80.0,2688,0.065,0.065,0.775,60,True
+Jade,Cor de jade,12.498,False,0.8833,,9156,0.065,0.065,0.775,60,True
+Marfim,Cor de marfim | Ivory,12.317,False,0.8833,85.0,9180,0.065,0.065,0.775,60,True
+Neon,,12.194,False,0.8833,,8394,0.065,0.065,0.775,60,True
+Rubi,Cor de rubi,12.666,False,0.8833,,12198,0.065,0.065,0.775,60,True
 Abóbora,Cor de abóbora,12.0,False,0.4417,80.0,19392,0.079,0.079,0.781,61,True
-Amarelo-ouro,,9.66,False,0.2385,85.0,4818,0.085,0.085,0.781,61,True
+Amarelo-ouro,,9.66,False,0.2385,85.0,4818,0.086,0.086,0.781,61,True
 Ameixa,Cor de ameixa,12.875,False,0.4417,75.0,13134,0.079,0.079,0.781,61,True
 Ametista,Cor de ametista,13.613,False,0.4417,,17460,0.079,0.079,0.781,61,True
 Azul-cobalto,,11.426,False,0.4417,,960,0.079,0.079,0.781,61,True
-Azul-rio,,8.146,False,0.2385,65.0,0,0.092,0.092,0.781,61,True
+Azul-rio,,8.146,False,0.2385,65.0,0,0.091,0.091,0.781,61,True
 Azul-tiffany,tiffany,9.059,False,0.2385,50.0,0,0.088,0.088,0.781,61,True
 Azul-água,,8.497,False,0.2385,65.0,0,0.095,0.095,0.781,61,True
 Berinjela,Cor de berinjela,12.742,False,0.4417,70.0,15924,0.079,0.079,0.781,61,True
-Branco-papel,,8.609,False,0.2385,65.0,0,0.097,0.097,0.781,61,True
+Branco-papel,,8.609,False,0.2385,65.0,0,0.096,0.096,0.781,61,True
 Cinza-carvão,carvão | Cor de carvão | Charcoal,10.96,False,0.4417,,0,0.079,0.079,0.781,61,True
-Cor de café com leite,,7.805,False,0.2385,65.0,0,0.089,0.089,0.781,61,True
 Cor de fogo,,8.897,False,0.2385,65.0,0,0.101,0.101,0.781,61,True
 Cor de jornal,,8.732,False,0.2385,65.0,0,0.1,0.1,0.781,61,True
 Cor de madeira,,8.877,False,0.2385,65.0,0,0.101,0.101,0.781,61,True
 Cor de noite,,8.28,False,0.2385,65.0,0,0.093,0.093,0.781,61,True
-Cor de papel,,8.532,False,0.2385,65.0,0,0.097,0.097,0.781,61,True
+Cor de papel,,8.532,False,0.2385,65.0,0,0.096,0.096,0.781,61,True
 Cor de rio,,7.901,False,0.2385,65.0,0,0.09,0.09,0.781,61,True
-Cor de sol,,8.674,False,0.2385,65.0,0,0.099,0.099,0.781,61,True
+Cor de sol,,8.674,False,0.2385,65.0,0,0.098,0.098,0.781,61,True
 Cor de água,,8.252,False,0.2385,65.0,0,0.093,0.093,0.781,61,True
 Grená,Cor de grená,14.42,False,0.2385,60.0,5130,0.087,0.087,0.781,61,True
 Perolado,,13.954,False,0.4417,,0,0.079,0.079,0.781,61,True
-Preto-total,,8.681,False,0.2385,65.0,0,0.099,0.099,0.781,61,True
-Preto-ébano,ébano,11.467,False,0.265,,0,0.084,0.084,0.781,61,True
+Preto-total,,8.681,False,0.2385,65.0,0,0.098,0.098,0.781,61,True
+Preto-ébano,ébano,11.467,False,0.265,,0,0.085,0.085,0.781,61,True
 Pérola,Cor de pérola,11.671,False,0.4417,85.0,9312,0.079,0.079,0.781,61,True
-Sépia,,14.376,False,0.8833,55.0,12882,0.064,0.064,0.781,61,True
+Sépia,,14.376,False,0.8833,55.0,12882,0.065,0.065,0.781,61,True
 Tangerina,,13.324,False,0.4417,,27210,0.079,0.079,0.781,61,True
 Uva,Cor de uva,11.398,False,0.4417,,12618,0.079,0.079,0.781,61,True
 Verde-Brasil,,7.923,False,0.2385,65.0,0,0.09,0.09,0.781,61,True
-Verde-bandeira,,9.604,False,0.8833,90.0,0,0.064,0.064,0.781,61,True
-Verde-menta,menta | Cor de menta | Mint | Mint green,10.953,False,0.8833,80.0,4458,0.064,0.064,0.781,61,True
-Verde-pistache,pistache | Cor de pistache,11.448,False,0.8833,70.0,30078,0.064,0.064,0.781,61,True
+Verde-bandeira,,9.604,False,0.8833,90.0,0,0.065,0.065,0.781,61,True
+Verde-menta,menta | Cor de menta | Mint | Mint green,10.953,False,0.8833,80.0,4458,0.065,0.065,0.781,61,True
+Verde-pistache,pistache | Cor de pistache,11.448,False,0.8833,70.0,30078,0.065,0.065,0.781,61,True
 Verde-água-claro,,8.416,False,0.2385,65.0,0,0.094,0.094,0.781,61,True
-Vermelho-sangue,Sangue | Cor de sangue,9.333,False,0.2385,95.0,0,0.086,0.086,0.781,61,True
+Vermelho-sangue,Sangue | Cor de sangue,9.333,False,0.2385,95.0,0,0.087,0.087,0.781,61,True
 Azul-Facebook,,8.924,False,0.2385,65.0,0,0.104,0.104,0.787,62,True
-Azul-Frozen,,9.059,False,0.2332,65.0,0,0.112,0.112,0.787,62,True
-Azul-Santorini,,9.059,False,0.227,65.0,0,0.112,0.112,0.787,62,True
-Azul-Smurf,,9.059,False,0.2157,65.0,0,0.112,0.112,0.787,62,True
-Azul-Twitter,,9.059,False,0.2104,65.0,0,0.112,0.112,0.787,62,True
-Azul-acqua,,9.059,False,0.2385,65.0,0,0.112,0.112,0.787,62,True
-Azul-candy,,9.059,False,0.2385,65.0,0,0.112,0.112,0.787,62,True
-Azul-chuva,,9.277,False,0.1514,65.0,0,0.132,0.132,0.787,62,True
-Azul-escolar,,9.319,False,0.1414,65.0,0,0.132,0.132,0.787,62,True
-Azul-horizonte,,9.289,False,0.1488,65.0,0,0.132,0.132,0.787,62,True
-Azul-médio,,9.04,False,0.2385,65.0,0,0.112,0.112,0.787,62,True
+Azul-Frozen,,9.059,False,0.2385,65.0,0,0.111,0.111,0.787,62,True
+Azul-Santorini,,9.059,False,0.2336,65.0,0,0.111,0.111,0.787,62,True
+Azul-Smurf,,9.059,False,0.2216,65.0,0,0.111,0.111,0.787,62,True
+Azul-Twitter,,9.059,False,0.2161,65.0,0,0.111,0.111,0.787,62,True
+Azul-acqua,,9.059,False,0.2385,65.0,0,0.111,0.111,0.787,62,True
+Azul-candy,,9.059,False,0.2385,65.0,0,0.111,0.111,0.787,62,True
+Azul-chuva,,9.277,False,0.1571,65.0,0,0.131,0.131,0.787,62,True
+Azul-escolar,,9.319,False,0.1465,65.0,0,0.131,0.131,0.787,62,True
+Azul-horizonte,,9.289,False,0.1543,65.0,0,0.131,0.131,0.787,62,True
+Azul-médio,,9.04,False,0.2385,65.0,0,0.111,0.111,0.787,62,True
 Azul-piscina-claro,,8.963,False,0.2385,65.0,0,0.104,0.104,0.787,62,True
-Azul-serenity,,9.059,False,0.2212,65.0,0,0.112,0.112,0.787,62,True
-Azul-zafiro,,9.059,False,0.2054,65.0,0,0.112,0.112,0.787,62,True
-Branco-açúcar,,9.25,False,0.1541,65.0,0,0.127,0.127,0.787,62,True
-Branco-sal,,9.237,False,0.1628,65.0,0,0.127,0.127,0.787,62,True
-Cor de burro quando foge,burro quando foge,9.505,False,0.1598,70.0,0,0.127,0.127,0.787,62,True
-Cor de chá,,9.105,False,0.1917,65.0,0,0.119,0.119,0.787,62,True
-Cor de couro,,9.292,False,0.1462,65.0,0,0.132,0.132,0.787,62,True
-Cor de doce de leite,,9.078,False,0.2006,65.0,0,0.112,0.112,0.787,62,True
-Cor de estrela,,9.182,False,0.1761,65.0,0,0.123,0.123,0.787,62,True
-Cor de ferro,,9.163,False,0.1726,65.0,0,0.123,0.123,0.787,62,True
-Cor de lima,,9.021,False,0.2385,65.0,0,0.112,0.112,0.787,62,True
-Cor de lua,,9.156,False,0.1876,65.0,0,0.119,0.119,0.787,62,True
-Cor de nascer do sol,,9.348,False,0.1392,65.0,0,0.132,0.132,0.787,62,True
+Azul-serenity,,9.059,False,0.2274,65.0,0,0.111,0.111,0.787,62,True
+Azul-zafiro,,9.059,False,0.2108,65.0,0,0.111,0.111,0.787,62,True
+Branco-açúcar,,9.25,False,0.1601,65.0,0,0.126,0.126,0.787,62,True
+Branco-sal,,9.237,False,0.1695,65.0,0,0.126,0.126,0.787,62,True
+Cor de burro quando foge,burro quando foge,9.505,False,0.1662,70.0,0,0.126,0.126,0.787,62,True
+Cor de chá,,9.105,False,0.201,65.0,0,0.118,0.118,0.787,62,True
+Cor de couro,,9.292,False,0.1516,65.0,0,0.131,0.131,0.787,62,True
+Cor de estrela,,9.182,False,0.1839,65.0,0,0.122,0.122,0.787,62,True
+Cor de ferro,,9.163,False,0.1801,65.0,0,0.122,0.122,0.787,62,True
+Cor de lima,,9.021,False,0.2385,65.0,0,0.111,0.111,0.787,62,True
+Cor de lua,,9.156,False,0.1964,65.0,0,0.118,0.118,0.787,62,True
+Cor de nascer do sol,,9.348,False,0.144,65.0,0,0.131,0.131,0.787,62,True
 Cor de piscina,,9.011,False,0.2385,65.0,0,0.104,0.104,0.787,62,True
-Cor de pão,,9.181,False,0.1692,65.0,0,0.123,0.123,0.787,62,True
-Cor de vidro,,9.147,False,0.1836,65.0,0,0.119,0.119,0.787,62,True
-Ouro-18,,9.171,False,0.1659,65.0,0,0.123,0.123,0.787,62,True
-Rosa-candy,,9.136,False,0.1797,65.0,0,0.119,0.119,0.787,62,True
-Rosa-chá-claro,,9.051,False,0.1961,65.0,0,0.112,0.112,0.787,62,True
+Cor de pão,,9.181,False,0.1764,65.0,0,0.122,0.122,0.787,62,True
+Cor de pôr do sol,,9.287,False,0.149,65.0,0,0.131,0.131,0.787,62,True
+Cor de vidro,,9.147,False,0.1921,65.0,0,0.118,0.118,0.787,62,True
+Ouro-18,,9.171,False,0.1729,65.0,0,0.122,0.122,0.787,62,True
+Rosa-candy,,9.136,False,0.1879,65.0,0,0.118,0.118,0.787,62,True
+Rosa-chá-claro,,9.051,False,0.2058,65.0,0,0.111,0.111,0.787,62,True
 Verde-candy,,8.936,False,0.2385,65.0,0,0.104,0.104,0.787,62,True
-Verde-esperança,,9.221,False,0.1569,65.0,0,0.127,0.127,0.787,62,True
-Azul-Cruzeiro,,9.656,False,0.1106,65.0,0,0.156,0.156,0.794,63,True
-Azul-Grêmio,,9.827,False,0.0899,65.0,0,0.165,0.165,0.794,63,True
-Azul-concreto,,9.77,False,0.0928,65.0,0,0.165,0.165,0.794,63,True
-Azul-lago,,9.715,False,0.1039,65.0,0,0.156,0.156,0.794,63,True
-Azul-neve,,9.742,False,0.1015,65.0,0,0.156,0.156,0.794,63,True
-Azul-policial,,9.513,False,0.1269,65.0,0,0.141,0.141,0.794,63,True
-Azul-tinta,,9.74,False,0.1003,65.0,0,0.156,0.156,0.794,63,True
-Branco-coco,coco,9.733,False,0.0992,65.0,0,0.156,0.156,0.794,63,True
-Cinza-médio,,9.752,False,0.098,65.0,0,0.156,0.156,0.794,63,True
-Cor de arroz,,9.394,False,0.1369,65.0,0,0.136,0.136,0.794,63,True
-Cor de batata,,9.723,False,0.0969,65.0,0,0.156,0.156,0.794,63,True
-Cor de coco,,9.656,False,0.1092,65.0,0,0.156,0.156,0.794,63,True
-Cor de cristal,,9.728,False,0.0959,65.0,0,0.156,0.156,0.794,63,True
-Cor de lago,,9.47,False,0.1288,65.0,0,0.141,0.141,0.794,63,True
-Cor de lava,,9.596,False,0.1182,65.0,0,0.146,0.146,0.794,63,True
-Cor de leão,,9.503,False,0.125,65.0,0,0.141,0.141,0.794,63,True
-Cor de madrugada,,9.442,False,0.1327,65.0,0,0.136,0.136,0.794,63,True
-Cor de manteiga,,9.617,False,0.1166,65.0,0,0.146,0.146,0.794,63,True
-Cor de ovo,,9.611,False,0.115,65.0,0,0.146,0.146,0.794,63,True
-Cor de pôr do sol,,9.287,False,0.1438,65.0,0,0.132,0.132,0.794,63,True
-Cor de queijo,,9.424,False,0.1307,65.0,0,0.136,0.136,0.794,63,True
-Cor de sapo,,9.745,False,0.0948,65.0,0,0.156,0.156,0.794,63,True
-Cor de terra molhada,,9.651,False,0.1078,65.0,0,0.156,0.156,0.794,63,True
-Dourado-claro,,9.501,False,0.1233,65.0,0,0.141,0.141,0.794,63,True
-Laranja-sol,,9.528,False,0.1215,65.0,0,0.141,0.141,0.794,63,True
-Ouro-amarelo,,9.66,False,0.1065,65.0,0,0.156,0.156,0.794,63,True
-Preto-profundo,,9.753,False,0.0938,65.0,0,0.156,0.156,0.794,63,True
-Preto-tinta,,9.673,False,0.1052,65.0,0,0.156,0.156,0.794,63,True
-Rosa-pó,,9.613,False,0.1135,65.0,0,0.146,0.146,0.794,63,True
-Verde-Palmeiras,,9.615,False,0.112,65.0,0,0.146,0.146,0.794,63,True
-Vermelho-Flamengo,,9.715,False,0.1027,65.0,0,0.156,0.156,0.794,63,True
-Vermelho-china,,9.52,False,0.1198,65.0,0,0.141,0.141,0.794,63,True
-Vermelho-sinal,,9.42,False,0.1348,65.0,0,0.136,0.136,0.794,63,True
-Amarelo-bebê,,9.857,False,0.0889,65.0,0,0.17,0.17,0.8,64,True
-Amarelo-escolar,,9.865,False,0.088,65.0,0,0.17,0.17,0.8,64,True
-Azul-Cruzeiro-escuro,,9.888,False,0.0822,65.0,0,0.177,0.177,0.8,64,True
-Azul-cristal,,9.973,False,0.077,65.0,0,0.184,0.184,0.8,64,True
-Azul-espacial,,9.989,False,0.0725,65.0,0,0.184,0.184,0.8,64,True
-Azul-grego,,9.964,False,0.0764,65.0,0,0.184,0.184,0.8,64,True
-Azul-lagoa,,9.867,False,0.0871,65.0,0,0.17,0.17,0.8,64,True
-Azul-marinho-escuro,,10.055,False,0.0719,65.0,0,0.197,0.197,0.8,64,True
-Azul-nuvem,,9.958,False,0.0757,65.0,0,0.184,0.184,0.8,64,True
-Azul-uniforme,,10.041,False,0.0713,65.0,0,0.197,0.197,0.8,64,True
-Branco-gelo-escuro,,9.872,False,0.0814,65.0,0,0.177,0.177,0.8,64,True
-Branco-nuvem,,9.79,False,0.0918,65.0,0,0.165,0.165,0.8,64,True
-Cinza-ferro,,10.12,False,0.0659,65.0,0,0.197,0.197,0.8,64,True
-Cinza-lua,,10.113,False,0.0654,65.0,0,0.197,0.197,0.8,64,True
-Cinza-pedra,,10.083,False,0.069,65.0,0,0.197,0.197,0.8,64,True
-Cor de asfalto,,10.035,False,0.0707,65.0,0,0.197,0.197,0.8,64,True
-Cor de beija-flor,,9.963,False,0.075,65.0,0,0.184,0.184,0.8,64,True
-Cor de beijinho,,9.908,False,0.0806,65.0,0,0.177,0.177,0.8,64,True
-Cor de brigadeiro,,10.025,False,0.0701,65.0,0,0.197,0.197,0.8,64,True
-Cor de cacau,,10.059,False,0.0685,65.0,0,0.197,0.197,0.8,64,True
-Cor de chá-mate,,9.896,False,0.0799,65.0,0,0.177,0.177,0.8,64,True
-Cor de coca-cola,,10.073,False,0.0679,65.0,0,0.197,0.197,0.8,64,True
-Cor de feijão,,9.761,False,0.0908,65.0,0,0.165,0.165,0.8,64,True
-Cor de lama,,9.976,False,0.0744,65.0,0,0.184,0.184,0.8,64,True
-Cor de leite condensado,,9.881,False,0.0792,65.0,0,0.177,0.177,0.8,64,True
-Cor de poeira,,9.96,False,0.0737,65.0,0,0.184,0.184,0.8,64,True
-Laranja-pôr-do-sol,,9.856,False,0.0863,65.0,0,0.17,0.17,0.8,64,True
-Prata-esterlina,,9.859,False,0.0854,65.0,0,0.17,0.17,0.8,64,True
-Prata-metálica,,9.859,False,0.0846,65.0,0,0.17,0.17,0.8,64,True
-Preto-absoluto,,9.974,False,0.0731,65.0,0,0.184,0.184,0.8,64,True
-Preto-carbono,,9.857,False,0.0838,65.0,0,0.17,0.17,0.8,64,True
-Verde-jade-claro,,9.937,False,0.0784,65.0,0,0.177,0.177,0.8,64,True
-Verde-ácido,,9.842,False,0.083,65.0,0,0.17,0.17,0.8,64,True
-Vermelho-pimenta,,9.938,False,0.0777,65.0,0,0.177,0.177,0.8,64,True
-Amarelo-areia,,10.174,False,0.0612,65.0,0,0.21,0.21,0.806,65,True
-Azul-atlântico,,10.233,False,0.0583,65.0,0,0.216,0.216,0.806,65,True
-Azul-cimento,,10.25,False,0.0571,65.0,0,0.224,0.224,0.806,65,True
-Azul-fumaça,,10.142,False,0.0625,65.0,0,0.21,0.21,0.806,65,True
-Azul-pacífico,,10.313,False,0.055,65.0,0,0.224,0.224,0.806,65,True
-Branco-baunilha,,10.296,False,0.0546,65.0,0,0.224,0.224,0.806,65,True
-Branco-gesso,,10.179,False,0.0608,65.0,0,0.21,0.21,0.806,65,True
-Cinza-chumbo-claro,,10.233,False,0.0579,65.0,0,0.216,0.216,0.806,65,True
-Cinza-londres,,10.266,False,0.0568,65.0,0,0.224,0.224,0.806,65,True
-Cinza-metal,,10.179,False,0.0603,65.0,0,0.21,0.21,0.806,65,True
-Cor de arco-íris,,10.259,False,0.0564,65.0,0,0.224,0.224,0.806,65,True
-Cor de aveia,,10.284,False,0.0543,65.0,0,0.224,0.224,0.806,65,True
-Cor de baleia,,10.295,False,0.0539,65.0,0,0.224,0.224,0.806,65,True
-Cor de biscoito,,10.313,False,0.0536,65.0,0,0.224,0.224,0.806,65,True
-Cor de café torrado,,10.298,False,0.0533,65.0,0,0.224,0.224,0.806,65,True
-Cor de castanha,,10.302,False,0.0529,65.0,0,0.224,0.224,0.806,65,True
-Cor de elefante,,10.276,False,0.056,65.0,0,0.224,0.224,0.806,65,True
-Cor de iogurte,,10.102,False,0.0649,65.0,0,0.197,0.197,0.806,65,True
-Cor de nozes,,10.203,False,0.0599,65.0,0,0.21,0.21,0.806,65,True
-Cor de papelão,,10.226,False,0.0575,65.0,0,0.216,0.216,0.806,65,True
-Cor de pipoca,,10.103,False,0.0644,65.0,0,0.197,0.197,0.806,65,True
-Cor de suco de uva,,10.201,False,0.0595,65.0,0,0.21,0.21,0.806,65,True
-Cor de tigre,,10.115,False,0.0639,65.0,0,0.197,0.197,0.806,65,True
-Cor de tubarão,,10.182,False,0.0591,65.0,0,0.21,0.21,0.806,65,True
-Cor de tucano,,10.142,False,0.0621,65.0,0,0.21,0.21,0.806,65,True
-Cor de urso,,10.099,False,0.0634,65.0,0,0.197,0.197,0.806,65,True
-Marrom-madeira,,10.024,False,0.0696,65.0,0,0.197,0.197,0.806,65,True
-Nude-claro,,10.198,False,0.0587,65.0,0,0.21,0.21,0.806,65,True
-Prata-brilhante,,10.145,False,0.0616,65.0,0,0.21,0.21,0.806,65,True
-Rosa-coral,,10.126,False,0.063,65.0,0,0.197,0.197,0.806,65,True
-Rosa-quartzo-claro,,10.094,False,0.0674,65.0,0,0.197,0.197,0.806,65,True
-Roxo-vivo,,10.06,False,0.0669,65.0,0,0.197,0.197,0.806,65,True
-Vermelho-cobre,,10.065,False,0.0664,65.0,0,0.197,0.197,0.806,65,True
-Amarelo-dourado,,10.388,False,0.0499,65.0,0,0.236,0.236,0.812,66,True
-Amarelo-trigo,,10.459,False,0.0482,65.0,0,0.249,0.249,0.812,66,True
-Azul-Itaú,,10.325,False,0.0517,65.0,0,0.236,0.236,0.812,66,True
-Azul-alvorada,,10.426,False,0.0487,65.0,0,0.249,0.249,0.812,66,True
-Azul-aurora,,10.326,False,0.0523,65.0,0,0.236,0.236,0.812,66,True
-Azul-crepúsculo,,10.502,False,0.0464,65.0,0,0.249,0.249,0.812,66,True
-Azul-diamante,,10.341,False,0.052,65.0,0,0.236,0.236,0.812,66,True
-Azul-galáxia,,10.46,False,0.0479,65.0,0,0.249,0.249,0.812,66,True
-Azul-naval,,10.336,False,0.0514,65.0,0,0.236,0.236,0.812,66,True
-Azul-pastel,,10.528,False,0.0449,65.0,0,0.261,0.261,0.812,66,True
-Branco-cal,,10.351,False,0.0511,65.0,0,0.236,0.236,0.812,66,True
-Cinza-alumínio,,10.488,False,0.0461,65.0,0,0.249,0.249,0.812,66,True
-Cinza-gelo,,10.512,False,0.0447,65.0,0,0.261,0.261,0.812,66,True
-Cinza-greige,,10.484,False,0.0459,65.0,0,0.249,0.249,0.812,66,True
-Cinza-petróleo,,10.382,False,0.0496,65.0,0,0.236,0.236,0.812,66,True
-Cinza-taupe,,10.484,False,0.0456,65.0,0,0.249,0.249,0.812,66,True
-Cor de alface,,10.33,False,0.0508,65.0,0,0.236,0.236,0.812,66,True
-Cor de amendoim,,10.384,False,0.0493,65.0,0,0.236,0.236,0.812,66,True
-Cor de brasa,,10.569,False,0.0438,65.0,0,0.261,0.261,0.812,66,True
-Cor de damasco,,10.546,False,0.0436,65.0,0,0.261,0.261,0.812,66,True
-Cor de gema,,10.459,False,0.0477,65.0,0,0.249,0.249,0.812,66,True
-Cor de maionese,,10.403,False,0.0485,65.0,0,0.249,0.249,0.812,66,True
-Cor de onça,,10.33,False,0.0505,65.0,0,0.236,0.236,0.812,66,True
-Cor de papagaio,,10.458,False,0.0474,65.0,0,0.249,0.249,0.812,66,True
-Cor de raposa,,10.294,False,0.0526,65.0,0,0.224,0.224,0.812,66,True
-Cor de telha,,10.446,False,0.0471,65.0,0,0.249,0.249,0.812,66,True
-Dourado-escuro,,10.489,False,0.0454,65.0,0,0.249,0.249,0.812,66,True
-Marrom-carvalho,,10.269,False,0.0557,65.0,0,0.224,0.224,0.812,66,True
-Preto-chumbo,,10.38,False,0.049,65.0,0,0.236,0.236,0.812,66,True
-Preto-grafite,,10.485,False,0.0452,65.0,0,0.249,0.249,0.812,66,True
-Roxo-vinho,,10.446,False,0.0469,65.0,0,0.249,0.249,0.812,66,True
-Verde-caribe,,10.264,False,0.0553,65.0,0,0.224,0.224,0.812,66,True
-Verde-pastel,,10.466,False,0.0466,65.0,0,0.249,0.249,0.812,66,True
-Vermelho-coca-cola,,10.347,False,0.0502,65.0,0,0.236,0.236,0.812,66,True
-Azul-lunar,,10.687,False,0.0396,65.0,0,0.279,0.279,0.819,67,True
-Azul-marinheiro,,10.766,False,0.0378,65.0,0,0.289,0.289,0.819,67,True
-Azul-mediterrâneo,,10.594,False,0.0427,65.0,0,0.27,0.27,0.819,67,True
-Azul-polar,,10.7,False,0.039,65.0,0,0.289,0.289,0.819,67,True
-Bege-areia-escuro,,10.726,False,0.0389,65.0,0,0.289,0.289,0.819,67,True
-Branco-algodão-egípcio,,10.604,False,0.0425,65.0,0,0.27,0.27,0.819,67,True
-Branco-rosado,,10.618,False,0.0409,65.0,0,0.279,0.279,0.819,67,True
-Cinza-marinho,,10.619,False,0.0407,65.0,0,0.279,0.279,0.819,67,True
-Cor de abobrinha,,10.693,False,0.0387,65.0,0,0.289,0.289,0.819,67,True
-Cor de amêndoa,,10.708,False,0.0385,65.0,0,0.289,0.289,0.819,67,True
-Cor de arara,,10.725,False,0.0383,65.0,0,0.289,0.289,0.819,67,True
-Cor de azeitona,,10.717,False,0.0382,65.0,0,0.289,0.289,0.819,67,True
-Cor de beterraba,,10.663,False,0.0394,65.0,0,0.279,0.279,0.819,67,True
-Cor de bolacha,,10.613,False,0.0423,65.0,0,0.27,0.27,0.819,67,True
-Cor de brócolis,,10.66,False,0.0392,65.0,0,0.279,0.279,0.819,67,True
-Cor de camelo,,10.6,False,0.0421,65.0,0,0.27,0.27,0.819,67,True
-Cor de champanhe,,10.602,False,0.0419,65.0,0,0.27,0.27,0.819,67,True
-Cor de corvo,,10.606,False,0.0417,65.0,0,0.27,0.27,0.819,67,True
-Cor de espinafre,,10.653,False,0.0405,65.0,0,0.279,0.279,0.819,67,True
-Cor de giz,,10.519,False,0.0445,65.0,0,0.261,0.261,0.819,67,True
-Cor de guaraná,,10.652,False,0.0403,65.0,0,0.279,0.279,0.819,67,True
-Cor de pantera,,10.634,False,0.0401,65.0,0,0.279,0.279,0.819,67,True
-Cor de pepino,,10.566,False,0.0434,65.0,0,0.261,0.261,0.819,67,True
-Cor de requeijão,,10.606,False,0.0415,65.0,0,0.27,0.27,0.819,67,True
-Cor de zebra,,10.608,False,0.0413,65.0,0,0.27,0.27,0.819,67,True
-Dourado-brilhante,,10.528,False,0.0442,65.0,0,0.261,0.261,0.819,67,True
-Marrom-dourado,,10.744,False,0.0377,65.0,0,0.289,0.289,0.819,67,True
-Rosa-argila,,10.652,False,0.0399,65.0,0,0.279,0.279,0.819,67,True
-Rosa-bailarina,,10.583,False,0.0411,65.0,0,0.27,0.27,0.819,67,True
-Rosa-melancia,,10.644,False,0.0398,65.0,0,0.279,0.279,0.819,67,True
-Rosa-pastel,,10.566,False,0.0431,65.0,0,0.261,0.261,0.819,67,True
-Verde-bambu,,10.519,False,0.044,65.0,0,0.261,0.261,0.819,67,True
-Verde-capim,,10.557,False,0.0429,65.0,0,0.261,0.261,0.819,67,True
-Amarelo-abacaxi,,11.01,False,0.0337,65.0,0,0.321,0.321,0.825,68,True
-Amarelo-mostarda-escuro,,10.958,False,0.0344,65.0,0,0.314,0.314,0.825,68,True
-Azul-astronauta,,10.948,False,0.0349,65.0,0,0.308,0.308,0.825,68,True
-Azul-cósmico,,10.997,False,0.0336,65.0,0,0.321,0.321,0.825,68,True
-Azul-estelar,,10.838,False,0.0366,65.0,0,0.299,0.299,0.825,68,True
-Azul-hortênsia-claro,,10.88,False,0.0355,65.0,0,0.308,0.308,0.825,68,True
-Bege-mel,,10.958,False,0.0342,65.0,0,0.314,0.314,0.825,68,True
-Branco-amarelado,,10.947,False,0.0348,65.0,0,0.308,0.308,0.825,68,True
-Bronze-dourado,,10.855,False,0.0358,65.0,0,0.299,0.299,0.825,68,True
-Cinza-asfalto,,10.992,False,0.0334,65.0,0,0.321,0.321,0.825,68,True
-Cinza-tempestade,,10.851,False,0.0357,65.0,0,0.299,0.299,0.825,68,True
-Cor de avelã,,11.055,False,0.0328,65.0,0,0.321,0.321,0.825,68,True
-Cor de entardecer,,10.82,False,0.0364,65.0,0,0.299,0.299,0.825,68,True
-Cor de ervilha,,10.771,False,0.0372,65.0,0,0.299,0.299,0.825,68,True
-Cor de feno,,11.029,False,0.0327,65.0,0,0.321,0.321,0.825,68,True
-Cor de golfinho,,10.896,False,0.0354,65.0,0,0.308,0.308,0.825,68,True
-Cor de kraft,,11.009,False,0.0333,65.0,0,0.321,0.321,0.825,68,True
-Cor de limão-siciliano,,10.836,False,0.0363,65.0,0,0.299,0.299,0.825,68,True
-Cor de pombo,,10.776,False,0.037,65.0,0,0.299,0.299,0.825,68,True
-Marrom-bronze,,10.974,False,0.0341,65.0,0,0.314,0.314,0.825,68,True
-Preto-corvo,,10.783,False,0.0369,65.0,0,0.299,0.299,0.825,68,True
-Rosa-champanhe,,10.885,False,0.0352,65.0,0,0.308,0.308,0.825,68,True
-Rosa-telha,,10.729,False,0.038,65.0,0,0.289,0.289,0.825,68,True
-Roxo-bispo,,10.925,False,0.0346,65.0,0,0.308,0.308,0.825,68,True
-Roxo-uva-escuro,,10.985,False,0.034,65.0,0,0.314,0.314,0.825,68,True
-Verde-azeitona,,10.9,False,0.0351,65.0,0,0.308,0.308,0.825,68,True
-Verde-espinafre,,10.836,False,0.0361,65.0,0,0.299,0.299,0.825,68,True
-Verde-pera,,10.748,False,0.0375,65.0,0,0.289,0.289,0.825,68,True
-Verde-trevo,,10.794,False,0.0367,65.0,0,0.299,0.299,0.825,68,True
-Vermelho-amora,,10.951,False,0.0345,65.0,0,0.308,0.308,0.825,68,True
-Vermelho-ferrugem,,10.985,False,0.0338,65.0,0,0.314,0.314,0.825,68,True
-Vermelho-granada,,10.806,False,0.0359,65.0,0,0.299,0.299,0.825,68,True
-Violeta-pensamento,,10.749,False,0.0373,65.0,0,0.289,0.289,0.825,68,True
-Amarelo-gema,,11.249,False,0.0308,65.0,0,0.341,0.341,0.831,69,True
-Amarelo-maracujá,,11.228,False,0.0307,65.0,0,0.341,0.341,0.831,69,True
-Azul-ártico,,11.149,False,0.0318,65.0,0,0.331,0.331,0.831,69,True
-Bege-trigo,,11.198,False,0.0313,65.0,0,0.341,0.341,0.831,69,True
-Branco-acetinado,,11.303,False,0.0296,65.0,0,0.349,0.349,0.831,69,True
-Branco-acinzentado,,11.339,False,0.0293,65.0,0,0.354,0.354,0.831,69,True
-Branco-azulado,,11.228,False,0.0306,65.0,0,0.341,0.341,0.831,69,True
-Branco-esverdeado,,11.354,False,0.0292,65.0,0,0.354,0.354,0.831,69,True
-Cinza-granito,,11.15,False,0.0317,65.0,0,0.331,0.331,0.831,69,True
-Cinza-mescla-escuro,,11.104,False,0.0321,65.0,0,0.331,0.331,0.831,69,True
-Cinza-oliva,,11.269,False,0.0301,65.0,0,0.349,0.349,0.831,69,True
-Cinza-pérola,dove,11.077,False,0.0324,65.0,0,0.331,0.331,0.831,69,True
-Cor de cervo,,11.266,False,0.03,65.0,0,0.349,0.349,0.831,69,True
-Cor de ketchup,,11.221,False,0.0305,65.0,0,0.341,0.341,0.831,69,True
-Cor de lagarta,,11.003,False,0.0332,65.0,0,0.321,0.321,0.831,69,True
-Cor de limonada,,11.096,False,0.0323,65.0,0,0.331,0.331,0.831,69,True
-Cor de mogno,,11.093,False,0.0322,65.0,0,0.331,0.331,0.831,69,True
-Cor de paçoca,,11.221,False,0.0304,65.0,0,0.341,0.341,0.831,69,True
-Cor de torrada,,11.04,False,0.0326,65.0,0,0.321,0.321,0.831,69,True
-Laranja-cone,,11.27,False,0.0299,65.0,0,0.349,0.349,0.831,69,True
-Laranja-pastel,,11.137,False,0.032,65.0,0,0.331,0.331,0.831,69,True
-Marrom-barro,,11.145,False,0.0316,65.0,0,0.331,0.331,0.831,69,True
-Marrom-ferrugem-escuro,,11.264,False,0.0298,65.0,0,0.349,0.349,0.831,69,True
-Nude-escuro,,11.186,False,0.0311,65.0,0,0.341,0.341,0.831,69,True
-Ouro-envelhecido,,11.225,False,0.0303,65.0,0,0.341,0.341,0.831,69,True
-Preto-avermelhado,,11.213,False,0.031,65.0,0,0.341,0.341,0.831,69,True
-Preto-breu,,11.242,False,0.0302,65.0,0,0.341,0.341,0.831,69,True
-Preto-nanquim,,11.298,False,0.0295,65.0,0,0.349,0.349,0.831,69,True
-Rosa-lavanda,,10.998,False,0.0331,65.0,0,0.321,0.321,0.831,69,True
-Rosa-tulipa,,11.15,False,0.0315,65.0,0,0.331,0.331,0.831,69,True
-Roxo-Barney,,11.204,False,0.0309,65.0,0,0.341,0.341,0.831,69,True
-Verde-hera,,11.169,False,0.0314,65.0,0,0.331,0.331,0.831,69,True
-Verde-lodo,,11.011,False,0.0329,65.0,0,0.321,0.321,0.831,69,True
-Verde-periquito,,11.303,False,0.0294,65.0,0,0.349,0.349,0.831,69,True
-Amarelo-curry,,11.664,False,0.0262,65.0,0,0.385,0.385,0.837,70,True
-Azul-jacarandá,,11.563,False,0.027,65.0,0,0.378,0.378,0.837,70,True
-Azul-maldivas,,11.501,False,0.028,65.0,0,0.368,0.368,0.837,70,True
-Azul-topázio,,11.539,False,0.0276,65.0,0,0.368,0.368,0.837,70,True
-Azul-turmalina,,11.402,False,0.0289,65.0,0,0.358,0.358,0.837,70,True
-Bege-latte,,11.629,False,0.0266,65.0,0,0.385,0.385,0.837,70,True
-Bege-pérola,,11.65,False,0.0265,65.0,0,0.385,0.385,0.837,70,True
-Bronze-metálico,,11.678,False,0.0261,65.0,0,0.385,0.385,0.837,70,True
-Champanhe-dourado,,11.629,False,0.0265,65.0,0,0.385,0.385,0.837,70,True
-Cinza-cromo,,11.583,False,0.027,65.0,0,0.378,0.378,0.837,70,True
-Cinza-mescla,,11.479,False,0.0279,65.0,0,0.368,0.368,0.837,70,True
-Cinza-neblina,,11.408,False,0.0288,65.0,0,0.358,0.358,0.837,70,True
-Cinza-rosado,,11.499,False,0.0278,65.0,0,0.368,0.368,0.837,70,True
-Cobre-metálico,,11.505,False,0.0277,65.0,0,0.368,0.368,0.837,70,True
-Cor de groselha,,11.358,False,0.0291,65.0,0,0.354,0.354,0.837,70,True
-Cor de hipopótamo,,11.461,False,0.0286,65.0,0,0.368,0.368,0.837,70,True
-Dourado-fosco,,11.513,False,0.0275,65.0,0,0.368,0.368,0.837,70,True
-Dourado-metálico,,11.448,False,0.0285,65.0,0,0.368,0.368,0.837,70,True
-Laranja-damasco,,11.4,False,0.029,65.0,0,0.358,0.358,0.837,70,True
-Marrom-argila,,11.516,False,0.0274,65.0,0,0.368,0.368,0.837,70,True
-Marrom-castanha,,11.448,False,0.0284,65.0,0,0.368,0.368,0.837,70,True
-Marrom-nozes,,11.349,False,0.029,65.0,0,0.354,0.354,0.837,70,True
-Marrom-oliva,,11.458,False,0.0283,65.0,0,0.368,0.368,0.837,70,True
-Prata-fosca,,11.614,False,0.0269,65.0,0,0.378,0.378,0.837,70,True
-Preto-esverdeado,,11.455,False,0.0282,65.0,0,0.368,0.368,0.837,70,True
-Rosa-hibisco,,11.512,False,0.0277,65.0,0,0.368,0.368,0.837,70,True
-Roxo-galáxia,,11.532,False,0.0273,65.0,0,0.368,0.368,0.837,70,True
-Roxo-pastel,,11.6,False,0.0268,65.0,0,0.378,0.378,0.837,70,True
-Roxo-quaresma,,11.593,False,0.0267,65.0,0,0.378,0.378,0.837,70,True
-Verde-cacto,,11.524,False,0.0272,65.0,0,0.368,0.368,0.837,70,True
-Verde-gafanhoto,,11.533,False,0.0271,65.0,0,0.368,0.368,0.837,70,True
-Vermelho-alaranjado,,11.459,False,0.0281,65.0,0,0.368,0.368,0.837,70,True
-Vermelho-romã,,11.403,False,0.0287,65.0,0,0.358,0.358,0.837,70,True
-Amarelo-pintinho,,11.929,False,0.0249,65.0,0,0.405,0.405,0.843,71,True
-Amarelo-topázio,,12.084,False,0.0242,65.0,0,0.413,0.413,0.843,71,True
-Azul-tempestuoso,,12.037,False,0.0244,65.0,0,0.409,0.409,0.843,71,True
-Bege-aveia,,11.813,False,0.0255,65.0,0,0.399,0.399,0.843,71,True
-Bege-camelo,,12.13,False,0.024,65.0,0,0.418,0.418,0.843,71,True
-Bege-champagne,,12.099,False,0.0241,65.0,0,0.413,0.413,0.843,71,True
-Bege-linho,,11.997,False,0.0247,65.0,0,0.405,0.405,0.843,71,True
-Cal,,11.978,False,0.0247,65.0,0,0.405,0.405,0.843,71,True
-Chumbo-metálico,,12.054,False,0.0243,65.0,0,0.409,0.409,0.843,71,True
-Cinza-chumbo-azulado,,12.018,False,0.0245,65.0,0,0.409,0.409,0.843,71,True
-Cinza-lavanda,,11.672,False,0.0261,65.0,0,0.385,0.385,0.843,71,True
-Cinza-musgo,,11.917,False,0.0252,65.0,0,0.399,0.399,0.843,71,True
-Cinza-névoa,,11.631,False,0.0264,65.0,0,0.385,0.385,0.843,71,True
-Cobre-rosé,,12.075,False,0.024,65.0,0,0.413,0.413,0.843,71,True
-Cor de laranjada,,12.179,False,0.0237,65.0,0,0.418,0.418,0.843,71,True
-Grafite-metálico,,12.158,False,0.0236,65.0,0,0.418,0.418,0.843,71,True
-Laranja-avermelhado,,11.889,False,0.0251,65.0,0,0.399,0.399,0.843,71,True
-Laranja-gari,,12.025,False,0.0244,65.0,0,0.409,0.409,0.843,71,True
-Marrom-amêndoa,,11.854,False,0.0254,65.0,0,0.399,0.399,0.843,71,True
-Marrom-camelo,,11.746,False,0.0259,65.0,0,0.392,0.392,0.843,71,True
-Marrom-cedro,,11.781,False,0.0256,65.0,0,0.392,0.392,0.843,71,True
-Marrom-ipê,,11.947,False,0.0248,65.0,0,0.405,0.405,0.843,71,True
-Preto-asa-de-graúna,,11.767,False,0.0258,65.0,0,0.392,0.392,0.843,71,True
-Preto-piche,,11.901,False,0.025,65.0,0,0.399,0.399,0.843,71,True
-Rosa-camélia,,11.775,False,0.0255,65.0,0,0.392,0.392,0.843,71,True
-Rosa-fúcsia,,11.678,False,0.026,65.0,0,0.385,0.385,0.843,71,True
-Roxo-amora,,11.857,False,0.0253,65.0,0,0.399,0.399,0.843,71,True
-Roxo-beterraba,,11.98,False,0.0246,65.0,0,0.405,0.405,0.843,71,True
-Roxo-repolho,,12.04,False,0.0242,65.0,0,0.409,0.409,0.843,71,True
-Verde-cipreste,,11.859,False,0.0252,65.0,0,0.399,0.399,0.843,71,True
-Vermelho-bordô,,11.738,False,0.0258,65.0,0,0.392,0.392,0.843,71,True
-Vermelho-groselha,,11.77,False,0.0257,65.0,0,0.392,0.392,0.843,71,True
-Vermelho-marsala,,11.915,False,0.0249,65.0,0,0.399,0.399,0.843,71,True
-Vermelho-terracota,,11.642,False,0.0263,65.0,0,0.385,0.385,0.843,71,True
-Amarelo-citrino,,12.422,False,0.0229,65.0,0,0.432,0.432,0.849,72,True
-Asa-de-graúna,,13.188,False,0.022,65.0,0,0.445,0.445,0.849,72,True
-Azul-centáurea,,13.276,False,0.022,65.0,0,0.446,0.446,0.849,72,True
-Azul-miosótis,,12.362,False,0.0232,65.0,0,0.427,0.427,0.849,72,True
-Bege-cappuccino,,12.751,False,0.0224,65.0,0,0.439,0.439,0.849,72,True
-Bege-fendi,,12.964,False,0.0222,65.0,0,0.442,0.442,0.849,72,True
-Breu,,13.56,False,0.0219,65.0,0,0.447,0.447,0.849,72,True
-Cinza-arroxeado,,13.133,False,0.0221,65.0,0,0.444,0.444,0.849,72,True
-Cinza-sálvia,,12.236,False,0.0234,65.0,0,0.424,0.424,0.849,72,True
-Lilás-glicínia,,14.294,False,0.0218,65.0,0,0.448,0.448,0.849,72,True
-Lilás-orquídea,,12.5,False,0.0226,65.0,0,0.436,0.436,0.849,72,True
-Lilás-rosado,,12.229,False,0.0233,65.0,0,0.424,0.424,0.849,72,True
-Marrom-acinzentado,,12.408,False,0.0229,65.0,0,0.432,0.432,0.849,72,True
-Marrom-avermelhado,,12.182,False,0.0236,65.0,0,0.418,0.418,0.849,72,True
-Marrom-cerejeira,,12.203,False,0.0234,65.0,0,0.424,0.424,0.849,72,True
-Marrom-cupuaçu,,12.506,False,0.0226,65.0,0,0.436,0.436,0.849,72,True
-Marrom-cáqui,,12.947,False,0.0222,65.0,0,0.442,0.442,0.849,72,True
-Marrom-imbuia,marrom mumia,12.42,False,0.0228,65.0,0,0.432,0.432,0.849,72,True
-Marrom-jacarandá,,12.465,False,0.0227,65.0,0,0.432,0.432,0.849,72,True
-Marrom-mocha,,13.049,False,0.0221,65.0,0,0.443,0.443,0.849,72,True
-Nude-rosado,,12.267,False,0.0233,65.0,0,0.424,0.424,0.849,72,True
-Preto-amarronzado,,12.367,False,0.0231,65.0,0,0.427,0.427,0.849,72,True
-Preto-arroxeado,,12.353,False,0.0231,65.0,0,0.427,0.427,0.849,72,True
-Preto-retinto,,12.882,False,0.0224,65.0,0,0.44,0.44,0.849,72,True
-Rosa-azaleia,,12.118,False,0.0239,65.0,0,0.418,0.418,0.849,72,True
-Rosa-peônia,,12.434,False,0.0228,65.0,0,0.432,0.432,0.849,72,True
-Rosa-terroso,,12.157,False,0.0235,65.0,0,0.418,0.418,0.849,72,True
-Roxo-ametista,,12.408,False,0.023,65.0,0,0.429,0.429,0.849,72,True
-Roxo-ipê,,12.117,False,0.0238,65.0,0,0.418,0.418,0.849,72,True
-Roxo-jabuticaba,,12.545,False,0.0225,65.0,0,0.436,0.436,0.849,72,True
-Roxo-orquídea,,12.13,False,0.0238,65.0,0,0.418,0.418,0.849,72,True
-Vermelho-arroxeado,,12.587,False,0.0225,65.0,0,0.438,0.438,0.849,72,True
-Vermelho-paprica,,12.901,False,0.0223,65.0,0,0.44,0.44,0.849,72,True
-Amarelo-Brasil,,8.53,False,0.0207,,0,0.468,0.468,0.854,73,True
-Azul-mar,,8.82,False,0.0204,,0,0.475,0.475,0.854,73,True
-Azul-meia-noite,,8.788,False,0.0204,,0,0.473,0.473,0.854,73,True
-Azul-noite,,8.525,False,0.0207,,0,0.468,0.468,0.854,73,True
-Branco-de-meudon,,8.723,False,0.0205,,0,0.473,0.473,0.854,73,True
-Branco-leite,leite,8.92,False,0.0202,,0,0.48,0.48,0.854,73,True
-Branco-neve,neve,9.574,False,0.021,,0,0.462,0.462,0.854,73,True
-Café com leite,,7.55,False,0.0211,,0,0.461,0.461,0.854,73,True
-Castanho,,11.912,False,0.0215,,7944,0.455,0.455,0.854,73,True
-Cinza-chumbo,,11.16,False,0.0206,,0,0.47,0.47,0.854,73,True
-Cinza-claro,,9.431,False,0.0211,,0,0.46,0.46,0.854,73,True
-Cinza-escuro,,10.418,False,0.021,,0,0.464,0.464,0.854,73,True
-Cor de leite,,8.843,False,0.0203,,0,0.48,0.48,0.854,73,True
-Cor de terra,,8.416,False,0.0208,,0,0.466,0.466,0.854,73,True
-Fendi,,14.298,False,0.0212,20.0,2502,0.459,0.459,0.854,73,True
-Furta-cor,,11.32,False,0.0216,50.0,0,0.452,0.452,0.854,73,True
-Greige,,20.0,True,0.0218,65.0,0,0.449,0.449,0.854,73,True
-Natural,,8.906,False,0.0203,,0,0.48,0.48,0.854,73,True
-Ouro-branco,,8.947,False,0.0201,,0,0.48,0.48,0.854,73,True
-Preto-noite,,8.458,False,0.0208,,0,0.467,0.467,0.854,73,True
-Rosa-bebê,,9.35,False,0.0217,,0,0.45,0.45,0.854,73,True
-Rosa-claro,,8.756,False,0.0205,,0,0.473,0.473,0.854,73,True
-Terra-de-cassel,,8.262,False,0.0209,,0,0.464,0.464,0.854,73,True
-Terra-verde,,8.599,False,0.0206,,0,0.47,0.47,0.854,73,True
-Tijolo,Cor de tijolo,12.31,False,0.0209,,6018,0.464,0.464,0.854,73,True
-Verde-abacate,,10.754,False,0.0213,,0,0.458,0.458,0.854,73,True
-Verde-esmeralda,,10.613,False,0.0214,,0,0.456,0.456,0.854,73,True
-Verde-floresta,Forest green,9.565,False,0.0215,,462,0.454,0.454,0.854,73,True
-Verde-garrafa,,9.86,False,0.0214,,0,0.457,0.457,0.854,73,True
-Verde-militar,,9.063,False,0.0216,,0,0.453,0.453,0.854,73,True
-Verde-neon,,10.565,False,0.0213,,0,0.458,0.458,0.854,73,True
-Vermelho-terra,,8.828,False,0.0203,,0,0.475,0.475,0.854,73,True
-Vermilion,vermelhão,14.571,False,0.0217,40.0,1554,0.451,0.451,0.854,73,True
-Amarelo-claro,,9.264,False,0.019,,0,0.503,0.503,0.86,74,True
-Amarelo-limão,,10.376,False,0.0189,,0,0.508,0.508,0.86,74,True
-Amarelo-sol,,9.464,False,0.0186,,0,0.512,0.512,0.86,74,True
-Azul-bic,azul-caneta,9.059,False,0.0198,,0,0.488,0.488,0.86,74,True
-Azul-capri,,9.059,False,0.0198,,0,0.488,0.488,0.86,74,True
-Azul-denim,denim,9.059,False,0.0197,,0,0.488,0.488,0.86,74,True
-Azul-ftalo,azul-ftalocianina,9.059,False,0.0197,,0,0.488,0.488,0.86,74,True
-Azul-hospital,,9.186,False,0.0193,,0,0.499,0.499,0.86,74,True
-Azul-majorelle,,9.059,False,0.0197,,0,0.488,0.488,0.86,74,True
-Branco-de-espanha,,9.237,False,0.0191,,0,0.503,0.503,0.86,74,True
-Cor de chuva,,9.032,False,0.0196,,0,0.488,0.488,0.86,74,True
-Cor de folha,,9.035,False,0.0196,,0,0.488,0.488,0.86,74,True
-Cor de pele morena,,9.338,False,0.0188,,0,0.508,0.508,0.86,74,True
-Cor de pó,,9.33,False,0.0188,,0,0.508,0.508,0.86,74,True
-Creme-claro,,9.217,False,0.0191,,0,0.503,0.503,0.86,74,True
-Doce de leite,,9.332,False,0.0188,,0,0.508,0.508,0.86,74,True
-Laranja-claro,,9.328,False,0.0187,,0,0.508,0.508,0.86,74,True
-Laranja-segurança,,9.195,False,0.0193,,0,0.499,0.499,0.86,74,True
-Ouro-velho,,9.226,False,0.019,,0,0.503,0.503,0.86,74,True
-Rosa-ouro,rose gold,9.153,False,0.0195,,0,0.494,0.494,0.86,74,True
-Rosa-pink,,9.136,False,0.0194,,0,0.494,0.494,0.86,74,True
-Rosa-shocking,,9.136,False,0.0194,,0,0.494,0.494,0.86,74,True
-Rosa-velho,,9.208,False,0.0192,,0,0.499,0.499,0.86,74,True
-Verde-ftalo,verde-ftalocianina,8.936,False,0.0201,,0,0.48,0.48,0.86,74,True
-Verde-hooker,,8.936,False,0.02,,0,0.48,0.48,0.86,74,True
-Verde-lima,,9.204,False,0.0192,,0,0.499,0.499,0.86,74,True
-Verde-oliveira,,9.012,False,0.0199,,0,0.488,0.488,0.86,74,True
-Verde-tiffany,,8.936,False,0.02,,0,0.48,0.48,0.86,74,True
-Verde-viridiano,,8.936,False,0.0199,,0,0.48,0.48,0.86,74,True
-Verde-água-marinha,aquamarine | água-marinha,9.223,False,0.019,,0,0.503,0.503,0.86,74,True
-Vermelho-claro,,8.885,False,0.0202,,0,0.48,0.48,0.86,74,True
-Vermelho-fogo,,9.309,False,0.0189,,0,0.503,0.503,0.86,74,True
-Vermelho-inglês,,9.073,False,0.0195,,0,0.494,0.494,0.86,74,True
-Vermelho-vivo,,9.155,False,0.0193,,0,0.494,0.494,0.86,74,True
-Amarelo-ovo,,10.401,False,0.0176,,0,0.541,0.541,0.866,75,True
-Azul-bandeira,,9.665,False,0.0178,,0,0.532,0.532,0.866,75,True
-Azul-de-prússia-escuro,,9.706,False,0.0175,,0,0.541,0.541,0.866,75,True
-Azul-escuro,,9.706,False,0.0175,,0,0.541,0.541,0.866,75,True
-Azul-francês,,9.501,False,0.0186,,0,0.517,0.517,0.866,75,True
-Azul-pó,,9.575,False,0.0182,,0,0.523,0.523,0.866,75,True
-Azul-real-escuro,,9.361,False,0.0187,,0,0.512,0.512,0.866,75,True
-Branco-algodão,,9.62,False,0.0179,,0,0.532,0.532,0.866,75,True
-Branco-gelo,,9.632,False,0.0179,,0,0.532,0.532,0.866,75,True
-Branco-puro,,9.595,False,0.0181,,0,0.532,0.532,0.866,75,True
-Cor de algodão-doce,,9.544,False,0.0185,,0,0.517,0.517,0.866,75,True
-Cor de cobre-velho,,9.529,False,0.0185,,0,0.517,0.517,0.866,75,True
-Cor de limão,,9.586,False,0.018,,0,0.532,0.532,0.866,75,True
-Cor de manga,,9.678,False,0.0177,,0,0.532,0.532,0.866,75,True
-Cor de milho,,9.53,False,0.0184,,0,0.517,0.517,0.866,75,True
-Cor de neve,,9.497,False,0.0186,,0,0.517,0.517,0.866,75,True
-Cor de nuvem,,9.714,False,0.0175,,0,0.541,0.541,0.866,75,True
-Cor de pimenta,,9.526,False,0.0184,,0,0.517,0.517,0.866,75,True
-Cor de tomate,,9.721,False,0.0174,,0,0.541,0.541,0.866,75,True
-Cor de uva-passa,,9.567,False,0.0182,,0,0.523,0.523,0.866,75,True
-Marrom-claro,,9.62,False,0.0178,,0,0.532,0.532,0.866,75,True
-Marrom-terra,,9.562,False,0.0182,,0,0.523,0.523,0.866,75,True
-Preto-azulado,,11.328,False,0.018,,0,0.532,0.532,0.866,75,True
-Preto-brilhante,,9.678,False,0.0177,,0,0.532,0.532,0.866,75,True
-Preto-de-vinha,,9.686,False,0.0176,,0,0.532,0.532,0.866,75,True
-Preto-petróleo,,9.603,False,0.018,,0,0.532,0.532,0.866,75,True
-Verde-amarelo,,9.543,False,0.0184,,0,0.517,0.517,0.866,75,True
-Verde-exército,,9.541,False,0.0183,,0,0.517,0.517,0.866,75,True
-Verde-paris-escuro,,9.682,False,0.0176,,0,0.532,0.532,0.866,75,True
-Verde-petróleo,,9.609,False,0.0179,,0,0.532,0.532,0.866,75,True
-Verde-primavera,,9.656,False,0.0178,,0,0.532,0.532,0.866,75,True
-Vermelho-paixão,,9.572,False,0.0181,,0,0.523,0.523,0.866,75,True
-Vermelho-vinho,,9.54,False,0.0183,,0,0.517,0.517,0.866,75,True
-Amarelo-creme,,10.103,False,0.0163,,0,0.576,0.576,0.872,76,True
-Areia-clara,,9.988,False,0.0167,,0,0.568,0.568,0.872,76,True
-Azul-alice,,9.838,False,0.0171,,0,0.548,0.548,0.872,76,True
-Azul-elétrico,,9.766,False,0.0174,,0,0.548,0.548,0.872,76,True
-Azul-gelo,,9.8,False,0.0172,,0,0.548,0.548,0.872,76,True
-Azul-maia,,9.814,False,0.0171,,0,0.548,0.548,0.872,76,True
-Azul-oceano,,9.987,False,0.0167,,0,0.568,0.568,0.872,76,True
-Bege-claro,,10.003,False,0.0165,,0,0.568,0.568,0.872,76,True
-Branco-neve-puro,,9.872,False,0.017,,0,0.555,0.555,0.872,76,True
-Cinza-frio,,9.99,False,0.0167,,0,0.568,0.568,0.872,76,True
-Cinza-quente,,10.04,False,0.0164,,0,0.568,0.568,0.872,76,True
-Cor de banana,,9.757,False,0.0174,,0,0.548,0.548,0.872,76,True
-Cor de barro,barro,9.999,False,0.0165,,0,0.568,0.568,0.872,76,True
-Cor de camarão,camarão,10.037,False,0.0164,,0,0.568,0.568,0.872,76,True
-Cor de fumaça,,9.897,False,0.017,,0,0.555,0.555,0.872,76,True
-Cor de grama,,9.959,False,0.0166,,0,0.568,0.568,0.872,76,True
-Cor de oceano,,9.742,False,0.0173,,0,0.548,0.548,0.872,76,True
-Cor de rato,,9.967,False,0.0166,,0,0.568,0.568,0.872,76,True
-Cor de sorvete,,9.887,False,0.0169,,0,0.555,0.555,0.872,76,True
-Cor de vinho tinto,,10.057,False,0.0163,,0,0.568,0.568,0.872,76,True
-Dourado-velho,,9.953,False,0.0169,,0,0.559,0.559,0.872,76,True
-Marrom-café,,9.925,False,0.0169,,0,0.559,0.559,0.872,76,True
-Prata-velha,,9.834,False,0.0171,,0,0.548,0.548,0.872,76,True
-Preto-de-marte,,9.974,False,0.0166,,0,0.568,0.568,0.872,76,True
-Preto-piano,,9.989,False,0.0165,,0,0.568,0.568,0.872,76,True
-Rosa-algodão-doce,,9.733,False,0.0173,,0,0.548,0.548,0.872,76,True
-Rosa-cobre,,9.937,False,0.0168,,0,0.559,0.559,0.872,76,True
-Rosa-escuro,,9.744,False,0.0173,,0,0.548,0.548,0.872,76,True
-Rosa-seco,,9.777,False,0.0172,,0,0.548,0.548,0.872,76,True
-Roxo-claro,,9.79,False,0.0172,,0,0.548,0.548,0.872,76,True
-Roxo-real,,9.937,False,0.0168,,0,0.559,0.559,0.872,76,True
-Verde-britânico,british racing green,9.998,False,0.0164,,0,0.568,0.568,0.872,76,True
-Verde-sapo,,9.929,False,0.0168,,0,0.559,0.559,0.872,76,True
-Vermelho-escuro,,9.873,False,0.017,,0,0.555,0.555,0.872,76,True
-Amarelo-canário,,11.57,False,0.0159,,0,0.585,0.585,0.877,77,True
-Amarelo-escuro,,10.251,False,0.0157,,0,0.594,0.594,0.877,77,True
-Amarelo-manteiga,,10.408,False,0.0152,,0,0.608,0.608,0.877,77,True
-Amarelo-mel,,10.219,False,0.0157,,0,0.594,0.594,0.877,77,True
-Amarelo-milho,,10.32,False,0.0156,,0,0.599,0.599,0.877,77,True
-Amarelo-queimado,,11.06,False,0.0159,,0,0.585,0.585,0.877,77,True
-Azul-calcinha,,10.116,False,0.0162,,0,0.585,0.585,0.877,77,True
-Azul-caribe,,10.326,False,0.0156,,0,0.599,0.599,0.877,77,True
-Azul-cobalto-claro,,10.41,False,0.0152,,0,0.608,0.608,0.877,77,True
-Azul-egípcio-antigo,,10.365,False,0.0155,,0,0.608,0.608,0.877,77,True
-Azul-tempestade,,10.139,False,0.0162,,0,0.585,0.585,0.877,77,True
-Branco-cru,,10.343,False,0.0154,,0,0.608,0.608,0.877,77,True
-Branco-de-zinco,,10.41,False,0.0152,,0,0.608,0.608,0.877,77,True
-Branco-osso,,10.079,False,0.0163,,0,0.576,0.576,0.877,77,True
-Cinza-aço,,10.177,False,0.0161,,0,0.585,0.585,0.877,77,True
-Cinza-prata,,10.171,False,0.016,,0,0.585,0.585,0.877,77,True
-Cor de areia molhada,,10.296,False,0.0155,,0,0.599,0.599,0.877,77,True
-Cor de morango,,10.092,False,0.0162,,0,0.576,0.576,0.877,77,True
-Laranja-escuro,,10.315,False,0.0155,,0,0.599,0.599,0.877,77,True
-Off-black,,10.091,False,0.0162,,0,0.576,0.576,0.877,77,True
-Preto-carvão,,10.18,False,0.0159,,0,0.585,0.585,0.877,77,True
-Preto-de-osso,,10.18,False,0.0158,,0,0.585,0.585,0.877,77,True
-Rosa-barbie,barbie pink,10.138,False,0.0161,,0,0.585,0.585,0.877,77,True
-Sangue de boi,,10.233,False,0.0157,,0,0.594,0.594,0.877,77,True
-Verde-caçador,,10.304,False,0.0155,,0,0.599,0.599,0.877,77,True
-Verde-erva,,10.246,False,0.0157,,0,0.594,0.594,0.877,77,True
-Verde-grama,,10.142,False,0.016,,0,0.585,0.585,0.877,77,True
-Vermelho-batom,,10.173,False,0.016,,0,0.585,0.585,0.877,77,True
-Vermelho-chinês,,10.169,False,0.0159,,0,0.585,0.585,0.877,77,True
-Vermelho-coral,,10.255,False,0.0156,,0,0.599,0.599,0.877,77,True
-Vermelho-de-marte,,10.208,False,0.0158,,0,0.585,0.585,0.877,77,True
-Vermelho-tomate,,10.132,False,0.0161,,0,0.585,0.585,0.877,77,True
-Violeta-claro,,10.181,False,0.0158,,0,0.585,0.585,0.877,77,True
-Algodão,,10.516,False,0.0149,,0,0.629,0.629,0.883,78,True
-Amarelo-banana,,10.547,False,0.0148,,0,0.629,0.629,0.883,78,True
-Amarelo-de-marte,,10.587,False,0.0146,,0,0.629,0.629,0.883,78,True
-Azul-oxford,,10.569,False,0.0146,,0,0.629,0.629,0.883,78,True
-Branco-fosco,,10.562,False,0.0146,,0,0.629,0.629,0.883,78,True
-Branco-marfim,,10.52,False,0.0148,,0,0.629,0.629,0.883,78,True
-Branco-polar,,10.532,False,0.0148,,0,0.629,0.629,0.883,78,True
-Cinza-concreto,concreto | Cor de concreto,10.482,False,0.015,,0,0.629,0.629,0.883,78,True
-Cinza-urbano,,10.441,False,0.0151,,0,0.617,0.617,0.883,78,True
-Cor de abacate,,10.57,False,0.0146,,0,0.629,0.629,0.883,78,True
-Cor de alecrim,,10.36,False,0.0154,,0,0.608,0.608,0.883,78,True
-Cor de amora,amora,10.54,False,0.0148,,0,0.629,0.629,0.883,78,True
-Cor de argila,argila,10.37,False,0.0153,,0,0.608,0.608,0.883,78,True
-Cor de chiclete,,10.582,False,0.0145,,0,0.629,0.629,0.883,78,True
-Cor de hortelã,,10.467,False,0.0151,,0,0.617,0.617,0.883,78,True
-Cor de maracujá,,10.437,False,0.0151,,0,0.608,0.608,0.883,78,True
-Cor de melancia,melancia,10.361,False,0.0154,,0,0.608,0.608,0.883,78,True
-Cor de pimentão,,10.532,False,0.0147,,0,0.629,0.629,0.883,78,True
-Cor de vinho-rosé,,10.557,False,0.0145,,0,0.629,0.629,0.883,78,True
-Laranja-cobre,,10.508,False,0.015,,0,0.629,0.629,0.883,78,True
-Laranja-manga,,10.532,False,0.0147,,0,0.629,0.629,0.883,78,True
-Marrom-chocolate,,10.351,False,0.0154,,0,0.608,0.608,0.883,78,True
-Marrom-couro,couro,10.438,False,0.0151,,0,0.608,0.608,0.883,78,True
-Rosa-blush,blush,10.579,False,0.0145,,0,0.629,0.629,0.883,78,True
-Rosa-nude,,10.577,False,0.0145,,0,0.629,0.629,0.883,78,True
-Rosa-queimado,,10.553,False,0.0145,,0,0.629,0.629,0.883,78,True
-Rosa-salmão,,10.551,False,0.0147,,0,0.629,0.629,0.883,78,True
-Roxo-uva-passa,,10.445,False,0.015,,0,0.617,0.617,0.883,78,True
-Siena-natural,,10.398,False,0.0153,,0,0.608,0.608,0.883,78,True
-Verde-bosque,,10.381,False,0.0152,,0,0.608,0.608,0.883,78,True
-Verde-esmeralda-escuro,,10.526,False,0.0147,,0,0.629,0.629,0.883,78,True
-Verde-salsa,,10.459,False,0.015,,0,0.617,0.617,0.883,78,True
-Verde-selva,,10.352,False,0.0153,,0,0.608,0.608,0.883,78,True
-Amarelo-palha,,10.829,False,0.0138,,0,0.667,0.667,0.889,79,True
-Amarelo-táxi,,10.778,False,0.014,,0,0.66,0.66,0.889,79,True
-Azul-cinzento,,10.664,False,0.0142,,0,0.651,0.651,0.889,79,True
-Azul-egípcio,,10.816,False,0.0138,,0,0.667,0.667,0.889,79,True
-Azul-neon,,10.627,False,0.0144,,0,0.642,0.642,0.889,79,True
-Azul-sereno,,10.716,False,0.0141,,0,0.651,0.651,0.889,79,True
-Baunilha-clara,,10.823,False,0.0138,,0,0.667,0.667,0.889,79,True
-Branco-giz,,10.595,False,0.0144,,0,0.642,0.642,0.889,79,True
-Cinza-espacial,space gray,10.702,False,0.0141,,0,0.651,0.651,0.889,79,True
-Cinza-nuvem,,10.671,False,0.0142,,0,0.651,0.651,0.889,79,True
-Cor de berinjela-escura,,10.83,False,0.0137,,0,0.667,0.667,0.889,79,True
-Cor de canário,,10.78,False,0.0139,,0,0.66,0.66,0.889,79,True
-Cor de cereja-escura,,10.619,False,0.0144,,0,0.642,0.642,0.889,79,True
-Cor de oliva-escura,,10.6,False,0.0144,,0,0.642,0.642,0.889,79,True
-Cor de pavão,,10.72,False,0.0141,,0,0.651,0.651,0.889,79,True
-Cor de pitanga,,10.746,False,0.014,,0,0.66,0.66,0.889,79,True
-Laranja-coral,,10.697,False,0.0141,,0,0.651,0.651,0.889,79,True
-Laranja-queimado,Burnt orange,11.124,False,0.0139,,0,0.66,0.66,0.889,79,True
-Marrom-cobre,,10.8,False,0.0139,,0,0.66,0.66,0.889,79,True
-Marrom-escuro,,10.607,False,0.0143,,0,0.642,0.642,0.889,79,True
-Preto-fosco,,10.663,False,0.0143,,0,0.651,0.651,0.889,79,True
-Rosa-cereja,,10.622,False,0.0143,,0,0.642,0.642,0.889,79,True
-Rosa-neon,,10.665,False,0.0141,,0,0.651,0.651,0.889,79,True
-Roxo-escuro,,10.778,False,0.0139,,0,0.66,0.66,0.889,79,True
-Rubro-negro,,10.81,False,0.0138,,0,0.66,0.66,0.889,79,True
-Verde-eucalipto,,10.732,False,0.014,,0,0.651,0.651,0.889,79,True
-Verde-hortelã,hortelã,10.651,False,0.0142,,0,0.651,0.651,0.889,79,True
-Verde-papagaio,,10.641,False,0.0142,,0,0.651,0.651,0.889,79,True
-Verde-pinho,,10.501,False,0.0149,,0,0.629,0.629,0.889,79,True
-Verde-turquesa,,10.815,False,0.0137,,0,0.667,0.667,0.889,79,True
-Vermelho-bombeiro,,10.79,False,0.0138,,0,0.66,0.66,0.889,79,True
-Vermelho-de-chumbo,mínio,10.615,False,0.0143,,0,0.642,0.642,0.889,79,True
-Vermelho-indiano,,10.751,False,0.014,,0,0.66,0.66,0.889,79,True
-Vermelho-morango,morango,10.504,False,0.0149,,0,0.629,0.629,0.889,79,True
-Amarelo-baunilha,baunilha | Cor de baunilha,11.01,False,0.0131,,0,0.705,0.705,0.894,80,True
-Amarelo-de-cromo-escuro,,11.061,False,0.013,,0,0.705,0.705,0.894,80,True
-Amarelo-de-cádmio-claro,,10.932,False,0.0133,,0,0.682,0.682,0.894,80,True
-Amarelo-indiano-escuro,,10.871,False,0.0137,,0,0.682,0.682,0.894,80,True
-Azul-lavanda,,10.96,False,0.0133,,0,0.682,0.682,0.894,80,True
-Azul-persa,,10.874,False,0.0137,,0,0.682,0.682,0.894,80,True
-Bege-areia,,10.914,False,0.0135,,0,0.682,0.682,0.894,80,True
-Bege-escuro,,10.991,False,0.0132,,0,0.696,0.696,0.894,80,True
-Casca de ovo,,10.924,False,0.0134,,0,0.682,0.682,0.894,80,True
-Cinza-chumbo-escuro,,10.891,False,0.0134,,0,0.682,0.682,0.894,80,True
-Cinza-cimento,cimento | Cor de cimento,10.962,False,0.0132,,0,0.682,0.682,0.894,80,True
-Cinza-fumaça,,10.854,False,0.0137,,0,0.682,0.682,0.894,80,True
-Cinza-rato,rato,10.924,False,0.0134,,0,0.682,0.682,0.894,80,True
-Cor de curry,curry,10.874,False,0.0136,,0,0.682,0.682,0.894,80,True
-Cor de kiwi,,10.98,False,0.0131,,0,0.696,0.696,0.894,80,True
-Cor de lagosta,lagosta,10.866,False,0.0136,,0,0.682,0.682,0.894,80,True
-Cor de musgo,,10.96,False,0.0132,,0,0.682,0.682,0.894,80,True
-Laranja-cenoura,cenoura | Cor de cenoura,10.916,False,0.0134,,0,0.682,0.682,0.894,80,True
-Marfim-antigo,,10.889,False,0.0134,,0,0.682,0.682,0.894,80,True
-Marrom-canela,,10.989,False,0.0131,,0,0.696,0.696,0.894,80,True
-Marrom-taupe,,10.862,False,0.0136,,0,0.682,0.682,0.894,80,True
-Mel,Cor de mel,10.288,False,0.0131,,16596,0.696,0.696,0.894,80,True
-Púrpura-real,,10.891,False,0.0133,,0,0.682,0.682,0.894,80,True
-Rosa-chiclete,,10.865,False,0.0136,,0,0.682,0.682,0.894,80,True
-Rosa-poá,,10.963,False,0.0131,,0,0.696,0.696,0.894,80,True
-Rosa-pêssego,,10.925,False,0.0133,,0,0.682,0.682,0.894,80,True
-Transparente,,10.883,False,0.0135,,0,0.682,0.682,0.894,80,True
-Verde-ervilha,,10.954,False,0.0132,,0,0.682,0.682,0.894,80,True
-Verde-musgo-escuro,,10.88,False,0.0135,,0,0.682,0.682,0.894,80,True
-Verde-pavão,,10.904,False,0.0133,,0,0.682,0.682,0.894,80,True
-Verde-vômito,,10.935,False,0.0132,,0,0.682,0.682,0.894,80,True
-Vermelho-telha,telha,10.858,False,0.0135,,0,0.682,0.682,0.894,80,True
-Vermelho-tijolo,,10.851,False,0.0135,,0,0.682,0.682,0.894,80,True
-Amarelo-de-zinco,,11.123,False,0.0128,,0,0.714,0.714,0.9,81,True
-Amarelo-girassol,,11.267,False,0.0124,,0,0.734,0.734,0.9,81,True
-Amarelo-indiano,,11.13,False,0.0128,,0,0.714,0.714,0.9,81,True
-Amarelo-mostarda,,11.261,False,0.0124,,0,0.734,0.734,0.9,81,True
-Amarelo-neon,,11.172,False,0.0127,,0,0.722,0.722,0.9,81,True
-Amarelo-pastel,,11.073,False,0.0129,,0,0.705,0.705,0.9,81,True
-Azul-manganês,,11.221,False,0.0126,,0,0.722,0.722,0.9,81,True
-Ciano-claro,,11.242,False,0.0125,,0,0.734,0.734,0.9,81,True
-Cinza-elefante,,11.234,False,0.0125,,0,0.734,0.734,0.9,81,True
-Cinza-grafite,,11.264,False,0.0124,,0,0.734,0.734,0.9,81,True
-Cor de flamingo,,11.263,False,0.0124,,0,0.734,0.734,0.9,81,True
-Laranja-abóbora,,11.139,False,0.0128,,0,0.714,0.714,0.9,81,True
-Laranja-holandês,,11.066,False,0.0129,,0,0.705,0.705,0.9,81,True
-Laranja-salmão,,11.122,False,0.0127,,0,0.714,0.714,0.9,81,True
-Lilás-escuro,,11.148,False,0.0127,,0,0.714,0.714,0.9,81,True
-Marrom-cacau,cacau,11.205,False,0.0126,,0,0.722,0.722,0.9,81,True
-Opala,opalino,11.21,False,0.0125,,0,0.722,0.722,0.9,81,True
-Rosa-fluorescente,,11.201,False,0.0125,,0,0.722,0.722,0.9,81,True
-Rosa-framboesa,,11.162,False,0.0127,,0,0.722,0.722,0.9,81,True
-Rosa-goiaba,,11.122,False,0.0127,,0,0.714,0.714,0.9,81,True
-Rosa-orquídea,,11.096,False,0.0129,,0,0.705,0.705,0.9,81,True
-Tricolor,,11.167,False,0.0126,,0,0.722,0.722,0.9,81,True
-Verde-amarelado,,11.054,False,0.0129,,0,0.705,0.705,0.9,81,True
-Verde-fluorescente,,11.101,False,0.0128,,0,0.705,0.705,0.9,81,True
-Verde-kiwi,,11.163,False,0.0126,,0,0.722,0.722,0.9,81,True
-Verde-pântano,,11.022,False,0.013,,0,0.705,0.705,0.9,81,True
-Verde-samambaia,,11.006,False,0.013,,0,0.705,0.705,0.9,81,True
-Verde-seiva,,11.136,False,0.0127,,0,0.714,0.714,0.9,81,True
-Vermelho-de-cromo,,11.037,False,0.013,,0,0.705,0.705,0.9,81,True
-Vermelho-encarnado,,11.075,False,0.0128,,0,0.705,0.705,0.9,81,True
-Vermelho-pompeia,,11.206,False,0.0125,,0,0.722,0.722,0.9,81,True
-Vermelho-rubi,,11.029,False,0.013,,0,0.705,0.705,0.9,81,True
-Vermelho-óxido,,11.064,False,0.0129,,0,0.705,0.705,0.9,81,True
-Violeta-escuro,,11.168,False,0.0126,,0,0.722,0.722,0.9,81,True
-Amarelo-cromo,,11.416,False,0.0121,,0,0.752,0.752,0.906,82,True
-Amarelo-enxofre,,11.355,False,0.0122,,0,0.743,0.743,0.906,82,True
-Amarelo-limão-siciliano,,11.363,False,0.0122,,0,0.743,0.743,0.906,82,True
-Azul-acinzentado,,11.507,False,0.0119,,0,0.762,0.762,0.906,82,True
-Azul-anis,,11.447,False,0.0121,,0,0.752,0.752,0.906,82,True
-Azul-cadete,,11.438,False,0.0121,,0,0.752,0.752,0.906,82,True
-Azul-esverdeado,,11.522,False,0.0119,,0,0.762,0.762,0.906,82,True
-Azul-glacial,,11.457,False,0.012,,0,0.752,0.752,0.906,82,True
-Azul-índigo,,11.399,False,0.0121,,0,0.752,0.752,0.906,82,True
-Branco-perolado,,11.339,False,0.0122,,0,0.743,0.743,0.906,82,True
-Cor de jabuticaba,,11.228,False,0.0124,,0,0.734,0.734,0.906,82,True
-Cor de jambo,jambo,11.491,False,0.0119,,0,0.762,0.762,0.906,82,True
-Cor de mirtilo,mirtilo,11.456,False,0.012,,0,0.752,0.752,0.906,82,True
-Cor de páprica,páprica,11.435,False,0.012,,0,0.752,0.752,0.906,82,True
-Cor de topázio,topázio,11.294,False,0.0123,,0,0.734,0.734,0.906,82,True
-Laranja-de-cromo,,11.48,False,0.0119,,0,0.752,0.752,0.906,82,True
-Laranja-ferrugem,,11.428,False,0.012,,0,0.752,0.752,0.906,82,True
-Laranja-mamão,,11.488,False,0.0119,,0,0.762,0.762,0.906,82,True
-Laranja-neon,,11.236,False,0.0124,,0,0.734,0.734,0.906,82,True
-Laranja-pêssego,,11.496,False,0.0118,,0,0.762,0.762,0.906,82,True
-Laranja-tijolo,,11.294,False,0.0123,,0,0.734,0.734,0.906,82,True
-Marrom-castanho,,11.387,False,0.0121,,0,0.752,0.752,0.906,82,True
-Marrom-tabaco,tabaco,11.274,False,0.0123,,0,0.734,0.734,0.906,82,True
-Osso,cor de osso,11.436,False,0.012,,0,0.752,0.752,0.906,82,True
-Ouro-rosé,,11.292,False,0.0123,,0,0.734,0.734,0.906,82,True
-Rosa-magenta,,11.277,False,0.0123,,0,0.734,0.734,0.906,82,True
-Roxo-imperial,carmin imperial,11.329,False,0.0122,,0,0.734,0.734,0.906,82,True
-Verde-acinzentado,,11.445,False,0.012,,0,0.752,0.752,0.906,82,True
-Verde-alga,,11.373,False,0.0122,,0,0.743,0.743,0.906,82,True
-Verde-cobalto,,11.365,False,0.0122,,0,0.743,0.743,0.906,82,True
-Verde-sálvia,sálvia,11.462,False,0.0119,,0,0.752,0.752,0.906,82,True
-Verde-óxido-de-cromo,,11.451,False,0.0119,,0,0.752,0.752,0.906,82,True
-Vermelho-framboesa,framboesa | Cor de framboesa,11.291,False,0.0123,,0,0.734,0.734,0.906,82,True
-Amarelo-açafrão,açafrão | Cor de açafrão,11.718,False,0.0114,,0,0.79,0.79,0.911,83,True
-Amarelo-fluorescente,,11.708,False,0.0115,,0,0.783,0.783,0.911,83,True
-Amarelo-ipê,,11.591,False,0.0117,,0,0.772,0.772,0.911,83,True
-Amarelo-limão-cádmio,,11.673,False,0.0115,,0,0.783,0.783,0.911,83,True
-Amarelo-pálido,,11.673,False,0.0115,,0,0.783,0.783,0.911,83,True
-Amarelo-âmbar,,11.691,False,0.0115,,0,0.783,0.783,0.911,83,True
-Aurora,,11.593,False,0.0117,,0,0.772,0.772,0.911,83,True
-Azul-grená,,11.739,False,0.0114,,0,0.79,0.79,0.911,83,True
-Azul-ultramarino,,11.843,False,0.0113,,0,0.797,0.797,0.911,83,True
-Bege-nude,,11.824,False,0.0113,,0,0.797,0.797,0.911,83,True
-Bege-palha,,11.568,False,0.0117,,0,0.772,0.772,0.911,83,True
-Cinza-platina,platina,11.526,False,0.0118,,0,0.772,0.772,0.911,83,True
-Cinza-pombo,,11.733,False,0.0114,,0,0.79,0.79,0.911,83,True
-Cinza-titânio,titânio,11.741,False,0.0114,,0,0.79,0.79,0.911,83,True
-Cor de citrino,citrino,11.631,False,0.0116,,0,0.783,0.783,0.911,83,True
-Cor de piche,piche,11.723,False,0.0114,,0,0.79,0.79,0.911,83,True
-Dourado-champanhe,,11.629,False,0.0115,,0,0.783,0.783,0.911,83,True
-Fumê,,13.632,False,0.0117,,0,0.772,0.772,0.911,83,True
-Marrom-caramelo,,11.55,False,0.0118,,0,0.772,0.772,0.911,83,True
-Marrom-ferrugem,,11.72,False,0.0114,,0,0.79,0.79,0.911,83,True
-Marrom-telha,,11.593,False,0.0117,,0,0.772,0.772,0.911,83,True
-Marrom-tijolo,,11.586,False,0.0116,,0,0.772,0.772,0.911,83,True
-Moreno,,11.575,False,0.0116,,0,0.772,0.772,0.911,83,True
-Preto-ônix,,11.58,False,0.0116,,0,0.772,0.772,0.911,83,True
-Rosa-flamingo,,11.546,False,0.0118,,0,0.772,0.772,0.911,83,True
-Roxo-lilás,,11.574,False,0.0116,,0,0.772,0.772,0.911,83,True
-Roxo-neon,,11.699,False,0.0115,,0,0.783,0.783,0.911,83,True
-Roxo-violeta,,11.594,False,0.0116,,0,0.772,0.772,0.911,83,True
-Verde-absinto,,11.559,False,0.0118,,0,0.772,0.772,0.911,83,True
-Verde-catarro,,11.554,False,0.0117,,0,0.772,0.772,0.911,83,True
-Vermelho-carmim,,11.72,False,0.0114,,0,0.79,0.79,0.911,83,True
-Vermelho-escarlate,,11.507,False,0.0118,,0,0.762,0.762,0.911,83,True
-Vermelho-veneziano,,11.694,False,0.0115,,0,0.783,0.783,0.911,83,True
-Amarelo-ocre,,12.23,False,0.0108,,0,0.829,0.829,0.917,84,True
-Azul-cerúleo-escuro,,11.998,False,0.0111,,0,0.809,0.809,0.917,84,True
-Azul-hortênsia,,12.131,False,0.0109,,0,0.829,0.829,0.917,84,True
-Azul-lápis-lazúli,lápis-lazúli,11.968,False,0.0111,,0,0.809,0.809,0.917,84,True
-Bege-rosado,,12.071,False,0.011,,0,0.817,0.817,0.917,84,True
-Bronze-envelhecido,,12.182,False,0.0108,,0,0.829,0.829,0.917,84,True
-Chumbo-fosco,,12.119,False,0.0109,,0,0.822,0.822,0.917,84,True
-Cinza-azulado,,12.108,False,0.0109,,0,0.822,0.822,0.917,84,True
-Cobalto-escuro,,12.073,False,0.0109,,0,0.817,0.817,0.917,84,True
-Cobre-envelhecido,,12.009,False,0.011,,0,0.817,0.817,0.917,84,True
-Crepúsculo,,11.944,False,0.0111,,0,0.809,0.809,0.917,84,True
-Cru,cor crua,11.963,False,0.0111,,0,0.809,0.809,0.917,84,True
-Dourado-rosé,,12.019,False,0.011,,0,0.817,0.817,0.917,84,True
-Gema,,12.347,False,0.0112,,0,0.797,0.797,0.917,84,True
-Laranja-fluorescente,,11.772,False,0.0113,,0,0.797,0.797,0.917,84,True
-Laranja-tangerina,,11.801,False,0.0113,,0,0.797,0.797,0.917,84,True
-Laranja-terracota,,12.084,False,0.0109,,0,0.822,0.822,0.917,84,True
-Lilás-pastel,,11.97,False,0.0111,,0,0.809,0.809,0.917,84,True
-Magenta-escuro,,11.885,False,0.0112,,0,0.803,0.803,0.917,84,True
-Marrom-bombom,,11.861,False,0.0112,,0,0.803,0.803,0.917,84,True
-Marrom-camurça,camurça,11.886,False,0.0112,,0,0.803,0.803,0.917,84,True
-Marrom-whisky,whisky,11.778,False,0.0113,,0,0.797,0.797,0.917,84,True
-Ocre-vermelho,,11.851,False,0.0112,,0,0.797,0.797,0.917,84,True
-Roxo-ameixa,,12.04,False,0.011,,0,0.817,0.817,0.917,84,True
-Roxo-açaí,açaí | Cor de açaí | acaju,11.892,False,0.0112,,0,0.803,0.803,0.917,84,True
-Roxo-berinjela,,11.973,False,0.0111,,0,0.809,0.809,0.917,84,True
-Roxo-lavanda,,12.032,False,0.011,,0,0.817,0.817,0.917,84,True
-Trigo,Cor de trigo,10.767,False,0.0113,,13206,0.797,0.797,0.917,84,True
-Verde-abeto,,12.027,False,0.011,,0,0.817,0.817,0.917,84,True
-Verde-cáqui,,11.984,False,0.011,,0,0.809,0.809,0.917,84,True
-Vermelho-cardinal,cardeal,11.903,False,0.0111,,0,0.809,0.809,0.917,84,True
-Vermelho-ocre,,11.851,False,0.0112,,0,0.797,0.797,0.917,84,True
-Índigo-escuro,,12.045,False,0.0109,,0,0.817,0.817,0.917,84,True
-Úmbria-natural,,12.111,False,0.0109,,0,0.822,0.822,0.917,84,True
-Alvinegro,,12.406,False,0.0106,,0,0.846,0.846,0.922,85,True
-Amarelo-cúrcuma,,12.319,False,0.0107,,0,0.841,0.841,0.922,85,True
-Bege-acinzentado,,12.792,False,0.0104,,0,0.858,0.858,0.922,85,True
-Carmim-escuro,,12.2,False,0.0108,,0,0.829,0.829,0.922,85,True
-Ciano-escuro,,12.23,False,0.0108,,0,0.829,0.829,0.922,85,True
-Cinza-ardósia,ardósia,12.366,False,0.0107,,0,0.841,0.841,0.922,85,True
-Cinza-esverdeado,,12.234,False,0.0107,,0,0.835,0.835,0.922,85,True
-Cinza-perolado,,12.219,False,0.0108,,0,0.829,0.829,0.922,85,True
-Cromado,,12.147,False,0.0109,,0,0.829,0.829,0.922,85,True
-Damasco,,12.523,False,0.0105,,21480,0.853,0.853,0.922,85,True
-Encarnado,,12.757,False,0.0104,,0,0.856,0.856,0.922,85,True
-Grafite-fosco,,12.223,False,0.0107,,0,0.829,0.829,0.922,85,True
-Laranja-cádmio,,12.273,False,0.0107,,0,0.841,0.841,0.922,85,True
-Laranja-mexerica,,12.682,False,0.0105,,0,0.853,0.853,0.922,85,True
-Laranja-papaia,papaia,12.349,False,0.0106,,0,0.841,0.841,0.922,85,True
-Lilás-lavanda,,12.402,False,0.0106,,0,0.846,0.846,0.922,85,True
-Linho,cor de linho,12.364,False,0.0106,,0,0.841,0.841,0.922,85,True
-Marrom-avelã,,12.202,False,0.0107,,0,0.829,0.829,0.922,85,True
-Marrom-conhaque,conhaque,12.151,False,0.0108,,0,0.829,0.829,0.922,85,True
-Marrom-glacê,,12.301,False,0.0107,,0,0.841,0.841,0.922,85,True
-Marrom-mogno,,12.24,False,0.0107,,0,0.835,0.835,0.922,85,True
-Marrom-sépia,,12.619,False,0.0105,,0,0.851,0.851,0.922,85,True
-Marrom-tâmara,,12.767,False,0.0104,,0,0.856,0.856,0.922,85,True
-Ocre-dourado,,12.467,False,0.0105,,0,0.848,0.848,0.922,85,True
-Palha,Cor de palha,11.508,False,0.0106,,3162,0.841,0.841,0.922,85,True
-Preto-azeviche,azeviche,12.58,False,0.0105,,0,0.85,0.85,0.922,85,True
-Rosa-pitaya,,12.399,False,0.0105,,0,0.846,0.846,0.922,85,True
-Rosado,,12.514,False,0.0105,,0,0.85,0.85,0.922,85,True
-Sépia-escuro,,12.364,False,0.0106,,0,0.841,0.841,0.922,85,True
-Vermelho-carmesim,,12.12,False,0.0108,,0,0.829,0.829,0.922,85,True
-Vermelhão-chinês,,12.759,False,0.0104,,0,0.856,0.856,0.922,85,True
-Violeta-manganês,,12.684,False,0.0105,,0,0.853,0.853,0.922,85,True
-Ônix,Cor de ônix,14.236,False,0.0106,,6948,0.841,0.841,0.922,85,True
-Alaranjado,,13.526,False,0.0101,,0,0.879,0.879,0.927,86,True
-Alviverde,,13.229,False,0.0102,,0,0.871,0.871,0.927,86,True
-Amarelado,,13.171,False,0.0103,,0,0.871,0.871,0.927,86,True
-Avermelhado,,13.501,False,0.0101,,0,0.879,0.879,0.927,86,True
-Azul-pervinca,pervinca,13.474,False,0.0102,,0,0.876,0.876,0.927,86,True
-Azulado,,13.732,False,0.01,,0,0.886,0.886,0.927,86,True
-Bicolor,,13.469,False,0.0102,,0,0.876,0.876,0.927,86,True
-Bronzeado,,13.146,False,0.0103,,0,0.868,0.868,0.927,86,True
-Camuflado,,13.661,False,0.0101,,0,0.883,0.883,0.927,86,True
-Canela,Cor de canela,11.115,False,0.0102,,13362,0.871,0.871,0.927,86,True
-Champagne-rosé,,12.991,False,0.0103,,0,0.865,0.865,0.927,86,True
-Cáqui-claro,,11.704,False,0.0104,,0,0.862,0.862,0.927,86,True
-Degradê,,13.463,False,0.0102,,0,0.876,0.876,0.927,86,True
-Fúcsia-neon,,13.207,False,0.0102,,0,0.871,0.871,0.927,86,True
-Goles,,13.795,False,0.01,,0,0.892,0.892,0.927,86,True
-Incolor,,12.931,False,0.0104,,0,0.862,0.862,0.927,86,True
-Latão,,12.923,False,0.0103,,0,0.862,0.862,0.927,86,True
-Lilás-acinzentado,,12.949,False,0.0103,,0,0.862,0.862,0.927,86,True
-Marrom-amendoado,amêndoa,13.721,False,0.0101,,0,0.886,0.886,0.927,86,True
-Metalizado,,12.99,False,0.0103,,0,0.865,0.865,0.927,86,True
-Nogueira,,10.965,False,0.0101,,0,0.881,0.881,0.927,86,True
-Níquel,,12.856,False,0.0104,,0,0.858,0.858,0.927,86,True
-Prateado-escovado,,13.037,False,0.0103,,0,0.867,0.867,0.927,86,True
-Púrpura-de-cássio,,13.112,False,0.0103,,0,0.867,0.867,0.927,86,True
-Rosa-antigo,,9.299,False,0.0102,,0,0.876,0.876,0.927,86,True
-Rosa-chá,,9.388,False,0.0101,,0,0.883,0.883,0.927,86,True
-Rosa-garança,,13.739,False,0.01,,0,0.886,0.886,0.927,86,True
-Translúcido,,13.757,False,0.01,,0,0.886,0.886,0.927,86,True
-Turquesa-cobalto,,13.244,False,0.0102,,0,0.871,0.871,0.927,86,True
-Vermelho-alizarina,,13.613,False,0.0101,,0,0.881,0.881,0.927,86,True
-Vermelho-ferrari,,9.393,False,0.0102,,0,0.871,0.871,0.927,86,True
-Violeta-cobalto,,12.889,False,0.0104,,0,0.858,0.858,0.927,86,True
-Violeta-genciana,,13.752,False,0.01,,0,0.886,0.886,0.927,86,True
-Âmbar,Cor de âmbar,13.231,False,0.0101,,16740,0.886,0.886,0.927,86,True
-Acinzentado,,13.954,False,0.0099,,0,0.896,0.896,0.933,87,True
-Acobreado,,14.959,False,0.0098,,0,0.907,0.907,0.933,87,True
-Alvirrubro,,14.465,False,0.0099,,0,0.901,0.901,0.933,87,True
-Amarronzado,,15.81,False,0.0097,,0,0.915,0.915,0.933,87,True
-Argento,,14.81,False,0.0098,,0,0.904,0.904,0.933,87,True
-Arroxeado,,15.782,False,0.0097,,0,0.915,0.915,0.933,87,True
-Avelã,,13.541,False,0.0097,,12378,0.913,0.913,0.933,87,True
-Azul-aço,,9.465,False,0.0097,,0,0.909,0.909,0.933,87,True
-Azul-céu,Cor de céu | Sky blue | céu | azul do céu | cor do céu | azul da cor do céu,9.135,False,0.0097,,0,0.911,0.911,0.933,87,True
-Azul-jeans,jeans,9.85,False,0.0096,,8124,0.92,0.92,0.933,87,True
-Azul-violeta,,10.522,False,0.0096,,0,0.92,0.92,0.933,87,True
-Bistre-escuro,,14.765,False,0.0098,,0,0.902,0.902,0.933,87,True
-Blau,,14.403,False,0.0099,,0,0.9,0.9,0.933,87,True
-Camelo,,12.63,False,0.0099,,22620,0.896,0.896,0.933,87,True
-Cappuccino,,13.874,False,0.0097,,13974,0.913,0.913,0.933,87,True
-Cedro,,12.7,False,0.0098,,0,0.909,0.909,0.933,87,True
-Enegrecido,,16.086,False,0.0097,,0,0.918,0.918,0.933,87,True
-Esbranquiçado,,14.371,False,0.0099,,0,0.899,0.899,0.933,87,True
-Esverdeado,,13.985,False,0.0099,,0,0.896,0.896,0.933,87,True
-Holográfico,,13.861,False,0.01,,0,0.892,0.892,0.933,87,True
-Iridescente,,16.114,False,0.0097,,0,0.919,0.919,0.933,87,True
-Laca-carmim,,13.855,False,0.01,,0,0.892,0.892,0.933,87,True
-Laca-de-garança,garança,16.002,False,0.0097,,0,0.917,0.917,0.933,87,True
-Lilás-claro,,10.161,False,0.0098,,0,0.908,0.908,0.933,87,True
-Madrepérola,,14.35,False,0.0099,,0,0.899,0.899,0.933,87,True
-Mesclado,,13.79,False,0.01,,0,0.892,0.892,0.933,87,True
-Mogno,,13.617,False,0.0097,,6648,0.917,0.917,0.933,87,True
-Rosa-quartzo,,10.952,False,0.0098,,0,0.909,0.909,0.933,87,True
-Sable (heráldica),,14.893,False,0.0098,,0,0.905,0.905,0.933,87,True
-Tie-dye,,14.907,False,0.0098,,0,0.905,0.905,0.933,87,True
-Verde-celadon,celadon,13.883,False,0.0099,,0,0.894,0.894,0.933,87,True
-Vermelho-cereja,Cherry red,10.751,False,0.0098,,0,0.902,0.902,0.933,87,True
-Úmbria-queimada,,13.82,False,0.01,,0,0.892,0.892,0.933,87,True
-Auriverde,,16.335,False,0.0096,,0,0.922,0.922,0.938,88,True
-Azul-ardósia,,11.654,False,0.0095,,0,0.929,0.929,0.938,88,True
-Azul-pavão,,10.965,False,0.0095,,0,0.93,0.93,0.938,88,True
-Azul-safira,,11.016,False,0.0095,,0,0.933,0.933,0.938,88,True
-Carmesim,,14.847,False,0.0095,,9486,0.936,0.936,0.938,88,True
-Cobreado,,17.09,False,0.0096,,0,0.927,0.927,0.938,88,True
-Dioxazina,,20.0,True,0.0093,,0,0.948,0.948,0.938,88,True
-Gris,,14.39,False,0.0093,15.0,0,0.951,0.951,0.938,88,True
-Heliotrópio,,17.019,False,0.0096,,0,0.926,0.926,0.938,88,True
-Jalde,,16.553,False,0.0096,,0,0.923,0.923,0.938,88,True
-Malva,,14.361,False,0.0094,,10062,0.942,0.942,0.938,88,True
-Marsala,Cor de marsala,14.436,False,0.0095,,1578,0.928,0.928,0.938,88,True
-Mauve,malva-clara,12.069,False,0.0093,,0,0.948,0.948,0.938,88,True
-Ombré,,20.0,True,0.0093,,0,0.948,0.948,0.938,88,True
-Orquídea,Cor de orquídea,13.056,False,0.0095,,27732,0.932,0.932,0.938,88,True
-Quinacridona,,20.0,True,0.0093,,0,0.948,0.948,0.938,88,True
-Roxo-uva,,11.301,False,0.0096,,0,0.925,0.925,0.938,88,True
-Safira,Cor de safira,12.972,False,0.0093,,10650,0.95,0.95,0.938,88,True
-Sinopla,,18.013,False,0.0095,,0,0.934,0.934,0.938,88,True
-Verde-alface,,10.513,False,0.0094,,0,0.945,0.945,0.938,88,True
-Verde-azulado,,11.334,False,0.0094,,2322,0.941,0.941,0.938,88,True
-Verde-cana,,10.011,False,0.0094,,0,0.944,0.944,0.938,88,True
-Verde-chá,,9.288,False,0.0095,,0,0.931,0.931,0.938,88,True
-Verde-cromo,,10.809,False,0.0093,,0,0.952,0.952,0.938,88,True
-Verde-folha,,9.218,False,0.0095,,0,0.934,0.934,0.938,88,True
-Verde-hospital,,9.125,False,0.0094,,0,0.939,0.939,0.938,88,True
-Verde-jade,,10.717,False,0.0094,,0,0.939,0.939,0.938,88,True
-Verde-mar,,8.758,False,0.0096,,0,0.924,0.924,0.938,88,True
-Verde-maçã,,10.056,False,0.0094,,0,0.937,0.937,0.938,88,True
-Verde-oliva-escuro,,10.447,False,0.0094,,0,0.943,0.943,0.938,88,True
-Verde-paris,,9.346,False,0.0094,,546,0.942,0.942,0.938,88,True
-Verde-veronese,,8.936,False,0.0094,,0,0.938,0.938,0.938,88,True
-Água-marinha,,9.367,False,0.0096,,7596,0.925,0.925,0.938,88,True
-Alvo,,9.933,False,0.0091,,0,0.968,0.968,0.943,89,True
-Amarelo de Nápoles,,15.836,False,0.009,,0,0.98,0.98,0.943,89,True
-Amarelo-cádmio,,12.209,False,0.0092,,0,0.964,0.964,0.943,89,True
-Azul-cavalaria,,10.902,False,0.009,,0,0.978,0.978,0.943,89,False
-Azul-klein,international klein blue,9.059,False,0.0091,,0,0.971,0.971,0.943,89,True
-Azul-saxão,,11.882,False,0.009,,0,0.983,0.983,0.943,89,False
-Azul-zafre,zaffre,9.059,False,0.0091,,0,0.97,0.97,0.943,89,False
-Branco de chumbo,,10.28,False,0.0092,,0,0.964,0.964,0.943,89,True
-Branco de titânio,,10.861,False,0.0091,,0,0.965,0.965,0.943,89,True
-Burgundy,,20.0,True,0.0092,,0,0.961,0.961,0.943,89,True
-Carmim de cochonilha,,14.876,False,0.009,,0,0.981,0.981,0.943,89,True
-Chartreuse,Chartreuse-amarelado | Verde-chartreuse | Amarelo-chartreuse,16.142,False,0.009,,1356,0.975,0.975,0.943,89,True
-Cobalto,,13.793,False,0.0091,,8010,0.973,0.973,0.943,89,True
-Glicínia,,16.643,False,0.0092,,5460,0.956,0.956,0.943,89,True
-Malaquita,,15.987,False,0.0091,,4284,0.973,0.973,0.943,89,True
-Nanquim,,13.672,False,0.009,,9528,0.982,0.982,0.943,89,True
-Negro de fumo,Negro de carbono,10.77,False,0.0091,,2316,0.968,0.968,0.943,89,True
-Ocre-amarelo,,12.23,False,0.0092,,0,0.959,0.959,0.943,89,True
-Pardo,,12.371,False,0.009,,30438,0.979,0.979,0.943,89,True
-Pastel,,11.996,False,0.009,,3390,0.984,0.984,0.943,89,True
-Preto de marfim,,10.621,False,0.0091,,0,0.966,0.966,0.943,89,True
-Púrpura de Tiro,Púrpura tíria,11.765,False,0.0091,,3678,0.968,0.968,0.943,89,True
-Rubro,,11.647,False,0.009,,0,0.977,0.977,0.943,89,True
-Siena,,11.891,False,0.0092,,9384,0.958,0.958,0.943,89,True
-Siena-queimada,,12.107,False,0.0092,,0,0.96,0.96,0.943,89,True
-Sombra queimada,,11.259,False,0.0092,,0,0.957,0.957,0.943,89,True
-Taupe,,20.0,True,0.0093,,0,0.955,0.955,0.943,89,True
-Terra de siena,,10.077,False,0.0093,,0,0.954,0.954,0.943,89,True
-Turmalina,,13.745,False,0.0093,,7926,0.953,0.953,0.943,89,True
-Ultramar,azul-ultramar,13.53,False,0.0091,,1158,0.973,0.973,0.943,89,True
-Verde Scheele,,8.936,False,0.0092,,0,0.958,0.958,0.943,89,True
-Vermelho-cádmio,,11.831,False,0.0092,,0,0.962,0.962,0.943,89,True
-Úmbria,,15.316,False,0.009,,6984,0.976,0.976,0.943,89,True
-Alizarina,,17.833,False,0.0089,,1164,0.992,0.992,0.949,90,True
-Bistre,,19.177,False,0.0088,,0,0.997,0.997,0.949,90,True
-Estanho,,13.438,False,0.0089,,0,0.989,0.989,0.949,90,False
-Fluorescente,Fluorescência,13.266,False,0.0089,,3282,0.987,0.987,0.949,90,True
-Fosco,,12.401,False,0.0089,,0,0.986,0.986,0.949,90,False
-Fulvo,,16.057,False,0.0089,,0,0.993,0.993,0.949,90,True
-Gamboge,,20.0,True,0.0088,,0,0.995,0.995,0.949,90,True
-Glauco,Glaucous,13.14,False,0.0089,,3348,0.985,0.985,0.949,90,True
-Mauveína,,20.567,False,0.0088,,282,0.998,0.998,0.949,90,True
-Pantone,,20.0,True,0.0088,,0,1.0,1.0,0.949,90,False
-Rosa-millennial,,12.731,False,0.0089,,0,0.987,0.987,0.949,90,True
-Roxo-petúnia,petunia,13.375,False,0.0089,,0,0.989,0.989,0.949,90,False
-Rútilo,,17.127,False,0.0088,,2022,0.996,0.996,0.949,90,True
-Sagu,cor sagu,14.729,False,0.0089,,0,0.992,0.992,0.949,90,False
+Verde-esperança,,9.221,False,0.1631,65.0,0,0.126,0.126,0.787,62,True
+Azul-Cruzeiro,,9.656,False,0.1137,65.0,0,0.155,0.155,0.794,63,True
+Azul-Grêmio,,9.827,False,0.0919,65.0,0,0.164,0.164,0.794,63,True
+Azul-concreto,,9.77,False,0.095,65.0,0,0.164,0.164,0.794,63,True
+Azul-lago,,9.715,False,0.1067,65.0,0,0.155,0.155,0.794,63,True
+Azul-neve,,9.742,False,0.1041,65.0,0,0.155,0.155,0.794,63,True
+Azul-policial,,9.513,False,0.131,65.0,0,0.14,0.14,0.794,63,True
+Azul-tinta,,9.74,False,0.1029,65.0,0,0.155,0.155,0.794,63,True
+Branco-coco,coco,9.733,False,0.1017,65.0,0,0.155,0.155,0.794,63,True
+Branco-nuvem,,9.79,False,0.0939,65.0,0,0.164,0.164,0.794,63,True
+Cinza-médio,,9.752,False,0.1005,65.0,0,0.155,0.155,0.794,63,True
+Cor de arroz,,9.394,False,0.1417,65.0,0,0.135,0.135,0.794,63,True
+Cor de batata,,9.723,False,0.0993,65.0,0,0.155,0.155,0.794,63,True
+Cor de coco,,9.656,False,0.1122,65.0,0,0.155,0.155,0.794,63,True
+Cor de cristal,,9.728,False,0.0982,65.0,0,0.155,0.155,0.794,63,True
+Cor de lago,,9.47,False,0.133,65.0,0,0.14,0.14,0.794,63,True
+Cor de lava,,9.596,False,0.1217,65.0,0,0.145,0.145,0.794,63,True
+Cor de leão,,9.503,False,0.129,65.0,0,0.14,0.14,0.794,63,True
+Cor de madrugada,,9.442,False,0.1372,65.0,0,0.135,0.135,0.794,63,True
+Cor de manteiga,,9.617,False,0.12,65.0,0,0.145,0.145,0.794,63,True
+Cor de ovo,,9.611,False,0.1184,65.0,0,0.145,0.145,0.794,63,True
+Cor de queijo,,9.424,False,0.135,65.0,0,0.135,0.135,0.794,63,True
+Cor de sapo,,9.745,False,0.0971,65.0,0,0.155,0.155,0.794,63,True
+Cor de terra molhada,,9.651,False,0.1108,65.0,0,0.155,0.155,0.794,63,True
+Dourado-claro,,9.501,False,0.1271,65.0,0,0.14,0.14,0.794,63,True
+Laranja-sol,,9.528,False,0.1253,65.0,0,0.14,0.14,0.794,63,True
+Ouro-amarelo,,9.66,False,0.1094,65.0,0,0.155,0.155,0.794,63,True
+Preto-profundo,,9.753,False,0.096,65.0,0,0.155,0.155,0.794,63,True
+Preto-tinta,,9.673,False,0.108,65.0,0,0.155,0.155,0.794,63,True
+Rosa-pó,,9.613,False,0.1168,65.0,0,0.145,0.145,0.794,63,True
+Verde-Palmeiras,,9.615,False,0.1152,65.0,0,0.145,0.145,0.794,63,True
+Vermelho-Flamengo,,9.715,False,0.1054,65.0,0,0.155,0.155,0.794,63,True
+Vermelho-china,,9.52,False,0.1235,65.0,0,0.14,0.14,0.794,63,True
+Vermelho-sinal,,9.42,False,0.1394,65.0,0,0.135,0.135,0.794,63,True
+Amarelo-bebê,,9.857,False,0.091,65.0,0,0.17,0.17,0.8,64,True
+Amarelo-escolar,,9.865,False,0.09,65.0,0,0.17,0.17,0.8,64,True
+Azul-Cruzeiro-escuro,,9.888,False,0.0839,65.0,0,0.177,0.177,0.8,64,True
+Azul-cristal,,9.973,False,0.0786,65.0,0,0.184,0.184,0.8,64,True
+Azul-espacial,,9.989,False,0.0739,65.0,0,0.184,0.184,0.8,64,True
+Azul-grego,,9.964,False,0.0779,65.0,0,0.184,0.184,0.8,64,True
+Azul-lagoa,,9.867,False,0.0891,65.0,0,0.17,0.17,0.8,64,True
+Azul-marinho-escuro,,10.055,False,0.0732,65.0,0,0.196,0.196,0.8,64,True
+Azul-nuvem,,9.958,False,0.0772,65.0,0,0.184,0.184,0.8,64,True
+Azul-uniforme,,10.041,False,0.0726,65.0,0,0.196,0.196,0.8,64,True
+Branco-gelo-escuro,,9.872,False,0.0831,65.0,0,0.177,0.177,0.8,64,True
+Cinza-ferro,,10.12,False,0.067,65.0,0,0.196,0.196,0.8,64,True
+Cinza-lua,,10.113,False,0.0665,65.0,0,0.196,0.196,0.8,64,True
+Cinza-pedra,,10.083,False,0.0703,65.0,0,0.196,0.196,0.8,64,True
+Cor de asfalto,,10.035,False,0.072,65.0,0,0.196,0.196,0.8,64,True
+Cor de beija-flor,,9.963,False,0.0765,65.0,0,0.184,0.184,0.8,64,True
+Cor de beijinho,,9.908,False,0.0823,65.0,0,0.177,0.177,0.8,64,True
+Cor de brigadeiro,,10.025,False,0.0714,65.0,0,0.196,0.196,0.8,64,True
+Cor de cacau,,10.059,False,0.0697,65.0,0,0.196,0.196,0.8,64,True
+Cor de chá-mate,,9.896,False,0.0815,65.0,0,0.177,0.177,0.8,64,True
+Cor de coca-cola,,10.073,False,0.0691,65.0,0,0.196,0.196,0.8,64,True
+Cor de feijão,,9.761,False,0.0929,65.0,0,0.164,0.164,0.8,64,True
+Cor de iogurte,,10.102,False,0.066,65.0,0,0.196,0.196,0.8,64,True
+Cor de lama,,9.976,False,0.0758,65.0,0,0.184,0.184,0.8,64,True
+Cor de leite condensado,,9.881,False,0.0808,65.0,0,0.177,0.177,0.8,64,True
+Cor de poeira,,9.96,False,0.0752,65.0,0,0.184,0.184,0.8,64,True
+Laranja-pôr-do-sol,,9.856,False,0.0882,65.0,0,0.17,0.17,0.8,64,True
+Prata-esterlina,,9.859,False,0.0873,65.0,0,0.17,0.17,0.8,64,True
+Prata-metálica,,9.859,False,0.0864,65.0,0,0.17,0.17,0.8,64,True
+Preto-absoluto,,9.974,False,0.0745,65.0,0,0.184,0.184,0.8,64,True
+Preto-carbono,,9.857,False,0.0856,65.0,0,0.17,0.17,0.8,64,True
+Verde-jade-claro,,9.937,False,0.08,65.0,0,0.177,0.177,0.8,64,True
+Verde-ácido,,9.842,False,0.0847,65.0,0,0.17,0.17,0.8,64,True
+Vermelho-pimenta,,9.938,False,0.0793,65.0,0,0.177,0.177,0.8,64,True
+Amarelo-areia,,10.174,False,0.0622,65.0,0,0.21,0.21,0.806,65,True
+Azul-atlântico,,10.233,False,0.0592,65.0,0,0.216,0.216,0.806,65,True
+Azul-cimento,,10.25,False,0.058,65.0,0,0.224,0.224,0.806,65,True
+Azul-fumaça,,10.142,False,0.0636,65.0,0,0.21,0.21,0.806,65,True
+Azul-pacífico,,10.313,False,0.0558,65.0,0,0.224,0.224,0.806,65,True
+Branco-baunilha,,10.296,False,0.0554,65.0,0,0.224,0.224,0.806,65,True
+Branco-gesso,,10.179,False,0.0617,65.0,0,0.21,0.21,0.806,65,True
+Cinza-chumbo-claro,,10.233,False,0.0588,65.0,0,0.216,0.216,0.806,65,True
+Cinza-londres,,10.266,False,0.0576,65.0,0,0.224,0.224,0.806,65,True
+Cinza-metal,,10.179,False,0.0613,65.0,0,0.21,0.21,0.806,65,True
+Cor de arco-íris,,10.259,False,0.0572,65.0,0,0.224,0.224,0.806,65,True
+Cor de aveia,,10.284,False,0.055,65.0,0,0.224,0.224,0.806,65,True
+Cor de baleia,,10.295,False,0.0547,65.0,0,0.224,0.224,0.806,65,True
+Cor de biscoito,,10.313,False,0.0544,65.0,0,0.224,0.224,0.806,65,True
+Cor de café torrado,,10.298,False,0.054,65.0,0,0.224,0.224,0.806,65,True
+Cor de castanha,,10.302,False,0.0537,65.0,0,0.224,0.224,0.806,65,True
+Cor de elefante,,10.276,False,0.0569,65.0,0,0.224,0.224,0.806,65,True
+Cor de nozes,,10.203,False,0.0609,65.0,0,0.21,0.21,0.806,65,True
+Cor de papelão,,10.226,False,0.0584,65.0,0,0.216,0.216,0.806,65,True
+Cor de pipoca,,10.103,False,0.0655,65.0,0,0.196,0.196,0.806,65,True
+Cor de raposa,,10.294,False,0.0534,65.0,0,0.224,0.224,0.806,65,True
+Cor de suco de uva,,10.201,False,0.0604,65.0,0,0.21,0.21,0.806,65,True
+Cor de tigre,,10.115,False,0.065,65.0,0,0.196,0.196,0.806,65,True
+Cor de tubarão,,10.182,False,0.06,65.0,0,0.21,0.21,0.806,65,True
+Cor de tucano,,10.142,False,0.0631,65.0,0,0.21,0.21,0.806,65,True
+Cor de urso,,10.099,False,0.0645,65.0,0,0.196,0.196,0.806,65,True
+Marrom-madeira,,10.024,False,0.0708,65.0,0,0.196,0.196,0.806,65,True
+Nude-claro,,10.198,False,0.0596,65.0,0,0.21,0.21,0.806,65,True
+Prata-brilhante,,10.145,False,0.0626,65.0,0,0.21,0.21,0.806,65,True
+Rosa-coral,,10.126,False,0.064,65.0,0,0.196,0.196,0.806,65,True
+Rosa-quartzo-claro,,10.094,False,0.0686,65.0,0,0.196,0.196,0.806,65,True
+Roxo-vivo,,10.06,False,0.0681,65.0,0,0.196,0.196,0.806,65,True
+Vermelho-cobre,,10.065,False,0.0675,65.0,0,0.196,0.196,0.806,65,True
+Amarelo-dourado,,10.388,False,0.0505,65.0,0,0.236,0.236,0.812,66,True
+Amarelo-trigo,,10.459,False,0.0488,65.0,0,0.249,0.249,0.812,66,True
+Azul-Itaú,,10.325,False,0.0524,65.0,0,0.236,0.236,0.812,66,True
+Azul-alvorada,,10.426,False,0.0494,65.0,0,0.249,0.249,0.812,66,True
+Azul-aurora,,10.326,False,0.053,65.0,0,0.236,0.236,0.812,66,True
+Azul-crepúsculo,,10.502,False,0.0472,65.0,0,0.249,0.249,0.812,66,True
+Azul-diamante,,10.341,False,0.0527,65.0,0,0.236,0.236,0.812,66,True
+Azul-galáxia,,10.46,False,0.0486,65.0,0,0.249,0.249,0.812,66,True
+Azul-naval,,10.336,False,0.0521,65.0,0,0.236,0.236,0.812,66,True
+Azul-pastel,,10.528,False,0.0457,65.0,0,0.26,0.26,0.812,66,True
+Branco-cal,,10.351,False,0.0518,65.0,0,0.236,0.236,0.812,66,True
+Cinza-alumínio,,10.488,False,0.047,65.0,0,0.249,0.249,0.812,66,True
+Cinza-gelo,,10.512,False,0.0455,65.0,0,0.26,0.26,0.812,66,True
+Cinza-greige,,10.484,False,0.0467,65.0,0,0.249,0.249,0.812,66,True
+Cinza-petróleo,,10.382,False,0.0502,65.0,0,0.236,0.236,0.812,66,True
+Cinza-taupe,,10.484,False,0.0465,65.0,0,0.249,0.249,0.812,66,True
+Cor de alface,,10.33,False,0.0514,65.0,0,0.236,0.236,0.812,66,True
+Cor de amendoim,,10.384,False,0.05,65.0,0,0.236,0.236,0.812,66,True
+Cor de brasa,,10.569,False,0.0446,65.0,0,0.26,0.26,0.812,66,True
+Cor de giz,,10.519,False,0.0453,65.0,0,0.26,0.26,0.812,66,True
+Cor de maionese,,10.403,False,0.0491,65.0,0,0.249,0.249,0.812,66,True
+Cor de onça,,10.33,False,0.0511,65.0,0,0.236,0.236,0.812,66,True
+Cor de papagaio,,10.458,False,0.0483,65.0,0,0.249,0.249,0.812,66,True
+Cor de pepino,,10.566,False,0.0443,65.0,0,0.26,0.26,0.812,66,True
+Cor de telha,,10.446,False,0.048,65.0,0,0.249,0.249,0.812,66,True
+Dourado-escuro,,10.489,False,0.0462,65.0,0,0.249,0.249,0.812,66,True
+Marrom-carvalho,,10.269,False,0.0565,65.0,0,0.224,0.224,0.812,66,True
+Preto-chumbo,,10.38,False,0.0497,65.0,0,0.236,0.236,0.812,66,True
+Preto-grafite,,10.485,False,0.046,65.0,0,0.249,0.249,0.812,66,True
+Roxo-vinho,,10.446,False,0.0478,65.0,0,0.249,0.249,0.812,66,True
+Verde-caribe,,10.264,False,0.0561,65.0,0,0.224,0.224,0.812,66,True
+Verde-pastel,,10.466,False,0.0475,65.0,0,0.249,0.249,0.812,66,True
+Vermelho-coca-cola,,10.347,False,0.0508,65.0,0,0.236,0.236,0.812,66,True
+Azul-estelar,,10.838,False,0.0376,65.0,0,0.296,0.296,0.819,67,True
+Azul-lunar,,10.687,False,0.0408,65.0,0,0.275,0.275,0.819,67,True
+Azul-marinheiro,,10.766,False,0.0389,65.0,0,0.285,0.285,0.819,67,True
+Azul-mediterrâneo,,10.594,False,0.0437,65.0,0,0.267,0.267,0.819,67,True
+Azul-polar,,10.7,False,0.0402,65.0,0,0.285,0.285,0.819,67,True
+Bege-areia-escuro,,10.726,False,0.04,65.0,0,0.285,0.285,0.819,67,True
+Branco-algodão-egípcio,,10.604,False,0.0434,65.0,0,0.267,0.267,0.819,67,True
+Branco-rosado,,10.618,False,0.0422,65.0,0,0.275,0.275,0.819,67,True
+Cinza-marinho,,10.619,False,0.042,65.0,0,0.275,0.275,0.819,67,True
+Cor de abobrinha,,10.693,False,0.0398,65.0,0,0.285,0.285,0.819,67,True
+Cor de amêndoa,,10.708,False,0.0396,65.0,0,0.285,0.285,0.819,67,True
+Cor de arara,,10.725,False,0.0395,65.0,0,0.285,0.285,0.819,67,True
+Cor de azeitona,,10.717,False,0.0393,65.0,0,0.285,0.285,0.819,67,True
+Cor de beterraba,,10.663,False,0.0406,65.0,0,0.275,0.275,0.819,67,True
+Cor de bolacha,,10.613,False,0.0432,65.0,0,0.267,0.267,0.819,67,True
+Cor de brócolis,,10.66,False,0.0404,65.0,0,0.275,0.275,0.819,67,True
+Cor de corvo,,10.606,False,0.043,65.0,0,0.267,0.267,0.819,67,True
+Cor de espinafre,,10.653,False,0.0418,65.0,0,0.275,0.275,0.819,67,True
+Cor de guaraná,,10.652,False,0.0416,65.0,0,0.275,0.275,0.819,67,True
+Cor de pantera,,10.634,False,0.0414,65.0,0,0.275,0.275,0.819,67,True
+Cor de requeijão,,10.606,False,0.0428,65.0,0,0.267,0.267,0.819,67,True
+Cor de zebra,,10.608,False,0.0426,65.0,0,0.267,0.267,0.819,67,True
+Dourado-brilhante,,10.528,False,0.045,65.0,0,0.26,0.26,0.819,67,True
+Marrom-dourado,,10.744,False,0.0388,65.0,0,0.285,0.285,0.819,67,True
+Rosa-argila,,10.652,False,0.0412,65.0,0,0.275,0.275,0.819,67,True
+Rosa-bailarina,,10.583,False,0.0424,65.0,0,0.267,0.267,0.819,67,True
+Rosa-melancia,,10.644,False,0.041,65.0,0,0.275,0.275,0.819,67,True
+Rosa-pastel,,10.566,False,0.0441,65.0,0,0.26,0.26,0.819,67,True
+Rosa-telha,,10.729,False,0.0391,65.0,0,0.285,0.285,0.819,67,True
+Verde-bambu,,10.519,False,0.0448,65.0,0,0.26,0.26,0.819,67,True
+Verde-capim,,10.557,False,0.0439,65.0,0,0.26,0.26,0.819,67,True
+Verde-pera,,10.748,False,0.0386,65.0,0,0.285,0.285,0.819,67,True
+Violeta-pensamento,,10.749,False,0.0384,65.0,0,0.285,0.285,0.819,67,True
+Amarelo-abacaxi,,11.01,False,0.0346,65.0,0,0.317,0.317,0.825,68,True
+Amarelo-mostarda-escuro,,10.958,False,0.0353,65.0,0,0.311,0.311,0.825,68,True
+Azul-astronauta,,10.948,False,0.0359,65.0,0,0.305,0.305,0.825,68,True
+Azul-cósmico,,10.997,False,0.0344,65.0,0,0.317,0.317,0.825,68,True
+Azul-hortênsia-claro,,10.88,False,0.0365,65.0,0,0.305,0.305,0.825,68,True
+Azul-ártico,,11.149,False,0.0329,65.0,0,0.326,0.326,0.825,68,True
+Bege-mel,,10.958,False,0.0351,65.0,0,0.311,0.311,0.825,68,True
+Branco-amarelado,,10.947,False,0.0357,65.0,0,0.305,0.305,0.825,68,True
+Bronze-dourado,,10.855,False,0.0368,65.0,0,0.296,0.296,0.825,68,True
+Cinza-asfalto,,10.992,False,0.0343,65.0,0,0.317,0.317,0.825,68,True
+Cinza-tempestade,,10.851,False,0.0366,65.0,0,0.296,0.296,0.825,68,True
+Cor de entardecer,,10.82,False,0.0374,65.0,0,0.296,0.296,0.825,68,True
+Cor de ervilha,,10.771,False,0.0382,65.0,0,0.296,0.296,0.825,68,True
+Cor de feno,,11.029,False,0.0336,65.0,0,0.317,0.317,0.825,68,True
+Cor de golfinho,,10.896,False,0.0363,65.0,0,0.305,0.305,0.825,68,True
+Cor de kraft,,11.009,False,0.0342,65.0,0,0.317,0.317,0.825,68,True
+Cor de lagarta,,11.003,False,0.034,65.0,0,0.317,0.317,0.825,68,True
+Cor de limão-siciliano,,10.836,False,0.0373,65.0,0,0.296,0.296,0.825,68,True
+Cor de pombo,,10.776,False,0.0381,65.0,0,0.296,0.296,0.825,68,True
+Cor de torrada,,11.04,False,0.0335,65.0,0,0.317,0.317,0.825,68,True
+Marrom-bronze,,10.974,False,0.035,65.0,0,0.311,0.311,0.825,68,True
+Preto-corvo,,10.783,False,0.0379,65.0,0,0.296,0.296,0.825,68,True
+Rosa-champanhe,,10.885,False,0.0362,65.0,0,0.305,0.305,0.825,68,True
+Rosa-lavanda,,10.998,False,0.0339,65.0,0,0.317,0.317,0.825,68,True
+Roxo-bispo,,10.925,False,0.0356,65.0,0,0.305,0.305,0.825,68,True
+Roxo-uva-escuro,,10.985,False,0.0349,65.0,0,0.311,0.311,0.825,68,True
+Verde-azeitona,,10.9,False,0.036,65.0,0,0.305,0.305,0.825,68,True
+Verde-espinafre,,10.836,False,0.0371,65.0,0,0.296,0.296,0.825,68,True
+Verde-lodo,,11.011,False,0.0338,65.0,0,0.317,0.317,0.825,68,True
+Verde-trevo,,10.794,False,0.0377,65.0,0,0.296,0.296,0.825,68,True
+Vermelho-amora,,10.951,False,0.0354,65.0,0,0.305,0.305,0.825,68,True
+Vermelho-ferrugem,,10.985,False,0.0347,65.0,0,0.311,0.311,0.825,68,True
+Vermelho-granada,,10.806,False,0.0369,65.0,0,0.296,0.296,0.825,68,True
+Amarelo-gema,,11.249,False,0.0318,65.0,0,0.336,0.336,0.831,69,True
+Amarelo-maracujá,,11.228,False,0.0317,65.0,0,0.336,0.336,0.831,69,True
+Azul-turmalina,,11.402,False,0.0297,65.0,0,0.353,0.353,0.831,69,True
+Bege-trigo,,11.198,False,0.0322,65.0,0,0.336,0.336,0.831,69,True
+Branco-acetinado,,11.303,False,0.0305,65.0,0,0.344,0.344,0.831,69,True
+Branco-acinzentado,,11.339,False,0.0302,65.0,0,0.349,0.349,0.831,69,True
+Branco-azulado,,11.228,False,0.0315,65.0,0,0.336,0.336,0.831,69,True
+Branco-esverdeado,,11.354,False,0.0301,65.0,0,0.349,0.349,0.831,69,True
+Cinza-granito,,11.15,False,0.0327,65.0,0,0.326,0.326,0.831,69,True
+Cinza-mescla-escuro,,11.104,False,0.0331,65.0,0,0.326,0.326,0.831,69,True
+Cinza-neblina,,11.408,False,0.0296,65.0,0,0.353,0.353,0.831,69,True
+Cinza-oliva,,11.269,False,0.031,65.0,0,0.344,0.344,0.831,69,True
+Cinza-pérola,dove,11.077,False,0.0334,65.0,0,0.326,0.326,0.831,69,True
+Cor de cervo,,11.266,False,0.0309,65.0,0,0.344,0.344,0.831,69,True
+Cor de groselha,,11.358,False,0.03,65.0,0,0.349,0.349,0.831,69,True
+Cor de ketchup,,11.221,False,0.0314,65.0,0,0.336,0.336,0.831,69,True
+Cor de limonada,,11.096,False,0.0332,65.0,0,0.326,0.326,0.831,69,True
+Cor de paçoca,,11.221,False,0.0313,65.0,0,0.336,0.336,0.831,69,True
+Laranja-cone,,11.27,False,0.0308,65.0,0,0.344,0.344,0.831,69,True
+Laranja-damasco,,11.4,False,0.0298,65.0,0,0.353,0.353,0.831,69,True
+Laranja-pastel,,11.137,False,0.033,65.0,0,0.326,0.326,0.831,69,True
+Marrom-barro,,11.145,False,0.0326,65.0,0,0.326,0.326,0.831,69,True
+Marrom-ferrugem-escuro,,11.264,False,0.0306,65.0,0,0.344,0.344,0.831,69,True
+Marrom-nozes,,11.349,False,0.0299,65.0,0,0.349,0.349,0.831,69,True
+Nude-escuro,,11.186,False,0.0321,65.0,0,0.336,0.336,0.831,69,True
+Ouro-envelhecido,,11.225,False,0.0312,65.0,0,0.336,0.336,0.831,69,True
+Preto-avermelhado,,11.213,False,0.032,65.0,0,0.336,0.336,0.831,69,True
+Preto-breu,,11.242,False,0.0311,65.0,0,0.336,0.336,0.831,69,True
+Preto-nanquim,,11.298,False,0.0304,65.0,0,0.344,0.344,0.831,69,True
+Rosa-tulipa,,11.15,False,0.0325,65.0,0,0.326,0.326,0.831,69,True
+Roxo-Barney,,11.204,False,0.0319,65.0,0,0.336,0.336,0.831,69,True
+Verde-hera,,11.169,False,0.0324,65.0,0,0.326,0.326,0.831,69,True
+Verde-periquito,,11.303,False,0.0303,65.0,0,0.344,0.344,0.831,69,True
+Amarelo-curry,,11.664,False,0.0269,65.0,0,0.38,0.38,0.837,70,True
+Azul-jacarandá,,11.563,False,0.0278,65.0,0,0.374,0.374,0.837,70,True
+Azul-maldivas,,11.501,False,0.0288,65.0,0,0.363,0.363,0.837,70,True
+Azul-topázio,,11.539,False,0.0283,65.0,0,0.363,0.363,0.837,70,True
+Bege-latte,,11.629,False,0.0274,65.0,0,0.38,0.38,0.837,70,True
+Bege-pérola,,11.65,False,0.0273,65.0,0,0.38,0.38,0.837,70,True
+Bronze-metálico,,11.678,False,0.0268,65.0,0,0.38,0.38,0.837,70,True
+Champanhe-dourado,,11.629,False,0.0272,65.0,0,0.38,0.38,0.837,70,True
+Cinza-cromo,,11.583,False,0.0277,65.0,0,0.374,0.374,0.837,70,True
+Cinza-lavanda,,11.672,False,0.0268,65.0,0,0.38,0.38,0.837,70,True
+Cinza-mescla,,11.479,False,0.0287,65.0,0,0.363,0.363,0.837,70,True
+Cinza-névoa,,11.631,False,0.0271,65.0,0,0.38,0.38,0.837,70,True
+Cinza-rosado,,11.499,False,0.0286,65.0,0,0.363,0.363,0.837,70,True
+Cobre-metálico,,11.505,False,0.0285,65.0,0,0.363,0.363,0.837,70,True
+Cor de hipopótamo,,11.461,False,0.0294,65.0,0,0.363,0.363,0.837,70,True
+Dourado-fosco,,11.513,False,0.0282,65.0,0,0.363,0.363,0.837,70,True
+Dourado-metálico,,11.448,False,0.0293,65.0,0,0.363,0.363,0.837,70,True
+Marrom-argila,,11.516,False,0.0282,65.0,0,0.363,0.363,0.837,70,True
+Marrom-camelo,,11.746,False,0.0266,65.0,0,0.387,0.387,0.837,70,True
+Marrom-castanha,,11.448,False,0.0292,65.0,0,0.363,0.363,0.837,70,True
+Marrom-oliva,,11.458,False,0.0291,65.0,0,0.363,0.363,0.837,70,True
+Prata-fosca,,11.614,False,0.0276,65.0,0,0.374,0.374,0.837,70,True
+Preto-esverdeado,,11.455,False,0.029,65.0,0,0.363,0.363,0.837,70,True
+Rosa-fúcsia,,11.678,False,0.0267,65.0,0,0.38,0.38,0.837,70,True
+Rosa-hibisco,,11.512,False,0.0284,65.0,0,0.363,0.363,0.837,70,True
+Roxo-galáxia,,11.532,False,0.0281,65.0,0,0.363,0.363,0.837,70,True
+Roxo-pastel,,11.6,False,0.0275,65.0,0,0.374,0.374,0.837,70,True
+Roxo-quaresma,,11.593,False,0.0274,65.0,0,0.374,0.374,0.837,70,True
+Verde-cacto,,11.524,False,0.028,65.0,0,0.363,0.363,0.837,70,True
+Verde-gafanhoto,,11.533,False,0.0279,65.0,0,0.363,0.363,0.837,70,True
+Vermelho-alaranjado,,11.459,False,0.0289,65.0,0,0.363,0.363,0.837,70,True
+Vermelho-romã,,11.403,False,0.0295,65.0,0,0.353,0.353,0.837,70,True
+Vermelho-terracota,,11.642,False,0.027,65.0,0,0.38,0.38,0.837,70,True
+Amarelo-pintinho,,11.929,False,0.0255,65.0,0,0.4,0.4,0.843,71,True
+Amarelo-topázio,,12.084,False,0.0248,65.0,0,0.409,0.409,0.843,71,True
+Azul-tempestuoso,,12.037,False,0.025,65.0,0,0.405,0.405,0.843,71,True
+Bege-aveia,,11.813,False,0.0261,65.0,0,0.394,0.394,0.843,71,True
+Bege-camelo,,12.13,False,0.0246,65.0,0,0.414,0.414,0.843,71,True
+Bege-champagne,,12.099,False,0.0247,65.0,0,0.409,0.409,0.843,71,True
+Bege-linho,,11.997,False,0.0253,65.0,0,0.4,0.4,0.843,71,True
+Cal,,11.978,False,0.0253,65.0,0,0.4,0.4,0.843,71,True
+Chumbo-metálico,,12.054,False,0.0249,65.0,0,0.405,0.405,0.843,71,True
+Cinza-chumbo-azulado,,12.018,False,0.0251,65.0,0,0.405,0.405,0.843,71,True
+Cinza-musgo,,11.917,False,0.0258,65.0,0,0.394,0.394,0.843,71,True
+Cobre-rosé,,12.075,False,0.0246,65.0,0,0.409,0.409,0.843,71,True
+Cor de laranjada,,12.179,False,0.0243,65.0,0,0.414,0.414,0.843,71,True
+Grafite-metálico,,12.158,False,0.0242,65.0,0,0.414,0.414,0.843,71,True
+Laranja-avermelhado,,11.889,False,0.0257,65.0,0,0.394,0.394,0.843,71,True
+Laranja-gari,,12.025,False,0.0251,65.0,0,0.405,0.405,0.843,71,True
+Marrom-amêndoa,,11.854,False,0.026,65.0,0,0.394,0.394,0.843,71,True
+Marrom-avermelhado,,12.182,False,0.0241,65.0,0,0.414,0.414,0.843,71,True
+Marrom-cedro,,11.781,False,0.0263,65.0,0,0.387,0.387,0.843,71,True
+Marrom-ipê,,11.947,False,0.0254,65.0,0,0.4,0.4,0.843,71,True
+Preto-asa-de-graúna,,11.767,False,0.0265,65.0,0,0.387,0.387,0.843,71,True
+Preto-piche,,11.901,False,0.0256,65.0,0,0.394,0.394,0.843,71,True
+Rosa-azaleia,,12.118,False,0.0245,65.0,0,0.414,0.414,0.843,71,True
+Rosa-camélia,,11.775,False,0.0262,65.0,0,0.387,0.387,0.843,71,True
+Rosa-terroso,,12.157,False,0.0241,65.0,0,0.414,0.414,0.843,71,True
+Roxo-amora,,11.857,False,0.026,65.0,0,0.394,0.394,0.843,71,True
+Roxo-beterraba,,11.98,False,0.0252,65.0,0,0.4,0.4,0.843,71,True
+Roxo-ipê,,12.117,False,0.0244,65.0,0,0.414,0.414,0.843,71,True
+Roxo-orquídea,,12.13,False,0.0243,65.0,0,0.414,0.414,0.843,71,True
+Roxo-repolho,,12.04,False,0.0248,65.0,0,0.405,0.405,0.843,71,True
+Verde-cipreste,,11.859,False,0.0259,65.0,0,0.394,0.394,0.843,71,True
+Vermelho-bordô,,11.738,False,0.0264,65.0,0,0.387,0.387,0.843,71,True
+Vermelho-groselha,,11.77,False,0.0264,65.0,0,0.387,0.387,0.843,71,True
+Vermelho-marsala,,11.915,False,0.0256,65.0,0,0.394,0.394,0.843,71,True
+Amarelo-citrino,,12.422,False,0.0235,65.0,0,0.428,0.428,0.849,72,True
+Asa-de-graúna,,13.188,False,0.0225,65.0,0,0.441,0.441,0.849,72,True
+Azul-centáurea,,13.276,False,0.0224,65.0,0,0.442,0.442,0.849,72,True
+Azul-miosótis,,12.362,False,0.0237,65.0,0,0.423,0.423,0.849,72,True
+Bege-cappuccino,,12.751,False,0.0229,65.0,0,0.434,0.434,0.849,72,True
+Bege-fendi,,12.964,False,0.0227,65.0,0,0.438,0.438,0.849,72,True
+Breu,,13.56,False,0.0224,65.0,0,0.443,0.443,0.849,72,True
+Cinza-arroxeado,,13.133,False,0.0226,65.0,0,0.44,0.44,0.849,72,True
+Cinza-sálvia,,12.236,False,0.0239,65.0,0,0.42,0.42,0.849,72,True
+Furta-cor,,11.32,False,0.0221,50.0,0,0.448,0.448,0.849,72,True
+Greige,,20.0,True,0.0223,65.0,0,0.445,0.445,0.849,72,True
+Lilás-glicínia,,14.294,False,0.0223,65.0,0,0.444,0.444,0.849,72,True
+Lilás-orquídea,,12.5,False,0.0232,65.0,0,0.432,0.432,0.849,72,True
+Lilás-rosado,,12.229,False,0.0239,65.0,0,0.42,0.42,0.849,72,True
+Marrom-acinzentado,,12.408,False,0.0234,65.0,0,0.428,0.428,0.849,72,True
+Marrom-cerejeira,,12.203,False,0.024,65.0,0,0.42,0.42,0.849,72,True
+Marrom-cupuaçu,,12.506,False,0.0231,65.0,0,0.432,0.432,0.849,72,True
+Marrom-cáqui,,12.947,False,0.0227,65.0,0,0.438,0.438,0.849,72,True
+Marrom-imbuia,marrom mumia,12.42,False,0.0234,65.0,0,0.428,0.428,0.849,72,True
+Marrom-jacarandá,,12.465,False,0.0232,65.0,0,0.428,0.428,0.849,72,True
+Marrom-mocha,,13.049,False,0.0226,65.0,0,0.439,0.439,0.849,72,True
+Nude-rosado,,12.267,False,0.0238,65.0,0,0.42,0.42,0.849,72,True
+Preto-amarronzado,,12.367,False,0.0237,65.0,0,0.423,0.423,0.849,72,True
+Preto-arroxeado,,12.353,False,0.0236,65.0,0,0.423,0.423,0.849,72,True
+Preto-retinto,,12.882,False,0.0229,65.0,0,0.436,0.436,0.849,72,True
+Rosa-bebê,,9.35,False,0.0222,,0,0.446,0.446,0.849,72,True
+Rosa-peônia,,12.434,False,0.0233,65.0,0,0.428,0.428,0.849,72,True
+Roxo-ametista,,12.408,False,0.0235,65.0,0,0.425,0.425,0.849,72,True
+Roxo-jabuticaba,,12.545,False,0.023,65.0,0,0.432,0.432,0.849,72,True
+Verde-militar,,9.063,False,0.022,,0,0.449,0.449,0.849,72,True
+Vermelho-arroxeado,,12.587,False,0.023,65.0,0,0.433,0.433,0.849,72,True
+Vermelho-paprica,,12.901,False,0.0228,65.0,0,0.436,0.436,0.849,72,True
+Vermilion,vermelhão,14.571,False,0.0222,40.0,1554,0.447,0.447,0.849,72,True
+Amarelo-Brasil,,8.53,False,0.0212,,0,0.464,0.464,0.854,73,True
+Azul-mar,,8.82,False,0.0208,,0,0.471,0.471,0.854,73,True
+Azul-meia-noite,,8.788,False,0.0209,,0,0.469,0.469,0.854,73,True
+Azul-noite,,8.525,False,0.0211,,0,0.464,0.464,0.854,73,True
+Branco-de-meudon,,8.723,False,0.021,,0,0.469,0.469,0.854,73,True
+Branco-leite,leite,8.92,False,0.0206,,0,0.476,0.476,0.854,73,True
+Branco-neve,neve,9.574,False,0.0215,,0,0.458,0.458,0.854,73,True
+Café com leite,Cor de café com leite,7.55,False,0.0216,,0,0.457,0.457,0.854,73,True
+Castanho,,11.912,False,0.0219,,7944,0.451,0.451,0.854,73,True
+Cinza-chumbo,,11.16,False,0.0211,,0,0.466,0.466,0.854,73,True
+Cinza-claro,,9.431,False,0.0216,,0,0.456,0.456,0.854,73,True
+Cinza-escuro,,10.418,False,0.0214,,0,0.46,0.46,0.854,73,True
+Cor de leite,,8.843,False,0.0207,,0,0.476,0.476,0.854,73,True
+Cor de terra,,8.416,False,0.0213,,0,0.462,0.462,0.854,73,True
+Fendi,,14.298,False,0.0217,20.0,2502,0.455,0.455,0.854,73,True
+Natural,,8.906,False,0.0207,,0,0.476,0.476,0.854,73,True
+Ouro-branco,,8.947,False,0.0205,,0,0.476,0.476,0.854,73,True
+Preto-noite,,8.458,False,0.0212,,0,0.463,0.463,0.854,73,True
+Rosa-claro,,8.756,False,0.0209,,0,0.469,0.469,0.854,73,True
+Terra-de-cassel,,8.262,False,0.0213,,0,0.46,0.46,0.854,73,True
+Terra-verde,,8.599,False,0.021,,0,0.466,0.466,0.854,73,True
+Tijolo,Cor de tijolo,12.31,False,0.0214,,6018,0.46,0.46,0.854,73,True
+Verde-abacate,,10.754,False,0.0218,,0,0.454,0.454,0.854,73,True
+Verde-esmeralda,,10.613,False,0.0219,,0,0.452,0.452,0.854,73,True
+Verde-floresta,Forest green,9.565,False,0.022,,462,0.45,0.45,0.854,73,True
+Verde-ftalo,verde-ftalocianina,8.936,False,0.0205,,0,0.476,0.476,0.854,73,True
+Verde-garrafa,,9.86,False,0.0218,,0,0.452,0.452,0.854,73,True
+Verde-hooker,,8.936,False,0.0204,,0,0.476,0.476,0.854,73,True
+Verde-neon,,10.565,False,0.0217,,0,0.454,0.454,0.854,73,True
+Verde-tiffany,,8.936,False,0.0204,,0,0.476,0.476,0.854,73,True
+Verde-viridiano,,8.936,False,0.0203,,0,0.476,0.476,0.854,73,True
+Vermelho-claro,,8.885,False,0.0206,,0,0.476,0.476,0.854,73,True
+Vermelho-terra,,8.828,False,0.0208,,0,0.471,0.471,0.854,73,True
+Amarelo-claro,,9.264,False,0.0193,,0,0.5,0.5,0.86,74,True
+Amarelo-limão,,10.376,False,0.0192,,0,0.505,0.505,0.86,74,True
+Amarelo-sol,,9.464,False,0.019,,0,0.508,0.508,0.86,74,True
+Azul-bic,azul-caneta,9.059,False,0.0202,,0,0.484,0.484,0.86,74,True
+Azul-capri,,9.059,False,0.0202,,0,0.484,0.484,0.86,74,True
+Azul-denim,denim,9.059,False,0.0201,,0,0.484,0.484,0.86,74,True
+Azul-francês,,9.501,False,0.019,,0,0.513,0.513,0.86,74,True
+Azul-ftalo,azul-ftalocianina,9.059,False,0.0201,,0,0.484,0.484,0.86,74,True
+Azul-hospital,,9.186,False,0.0197,,0,0.495,0.495,0.86,74,True
+Azul-majorelle,,9.059,False,0.0201,,0,0.484,0.484,0.86,74,True
+Azul-real-escuro,,9.361,False,0.019,,0,0.508,0.508,0.86,74,True
+Branco-de-espanha,,9.237,False,0.0195,,0,0.5,0.5,0.86,74,True
+Cor de algodão-doce,,9.544,False,0.0189,,0,0.513,0.513,0.86,74,True
+Cor de chuva,,9.032,False,0.02,,0,0.484,0.484,0.86,74,True
+Cor de cobre-velho,,9.529,False,0.0188,,0,0.513,0.513,0.86,74,True
+Cor de folha,,9.035,False,0.02,,0,0.484,0.484,0.86,74,True
+Cor de pele morena,,9.338,False,0.0192,,0,0.505,0.505,0.86,74,True
+Cor de pó,,9.33,False,0.0192,,0,0.505,0.505,0.86,74,True
+Creme-claro,,9.217,False,0.0195,,0,0.5,0.5,0.86,74,True
+Doce de leite,Cor de doce de leite,9.332,False,0.0191,,0,0.505,0.505,0.86,74,True
+Laranja-claro,,9.328,False,0.0191,,0,0.505,0.505,0.86,74,True
+Laranja-segurança,,9.195,False,0.0196,,0,0.495,0.495,0.86,74,True
+Ouro-velho,,9.226,False,0.0194,,0,0.5,0.5,0.86,74,True
+Rosa-ouro,rose gold,9.153,False,0.0199,,0,0.49,0.49,0.86,74,True
+Rosa-pink,,9.136,False,0.0198,,0,0.49,0.49,0.86,74,True
+Rosa-shocking,,9.136,False,0.0198,,0,0.49,0.49,0.86,74,True
+Rosa-velho,,9.208,False,0.0196,,0,0.495,0.495,0.86,74,True
+Verde-lima,,9.204,False,0.0196,,0,0.495,0.495,0.86,74,True
+Verde-oliveira,,9.012,False,0.0203,,0,0.484,0.484,0.86,74,True
+Verde-água-marinha,aquamarine | água-marinha,9.223,False,0.0194,,0,0.5,0.5,0.86,74,True
+Vermelho-fogo,,9.309,False,0.0193,,0,0.5,0.5,0.86,74,True
+Vermelho-inglês,,9.073,False,0.0199,,0,0.49,0.49,0.86,74,True
+Vermelho-vivo,,9.155,False,0.0197,,0,0.49,0.49,0.86,74,True
+Amarelo-ovo,,10.401,False,0.0179,,0,0.537,0.537,0.866,75,True
+Azul-alice,,9.838,False,0.0174,,0,0.545,0.545,0.866,75,True
+Azul-bandeira,,9.665,False,0.0181,,0,0.528,0.528,0.866,75,True
+Azul-de-prússia-escuro,,9.706,False,0.0179,,0,0.537,0.537,0.866,75,True
+Azul-elétrico,,9.766,False,0.0177,,0,0.545,0.545,0.866,75,True
+Azul-escuro,,9.706,False,0.0178,,0,0.537,0.537,0.866,75,True
+Azul-gelo,,9.8,False,0.0175,,0,0.545,0.545,0.866,75,True
+Azul-maia,,9.814,False,0.0174,,0,0.545,0.545,0.866,75,True
+Azul-pó,,9.575,False,0.0186,,0,0.519,0.519,0.866,75,True
+Branco-algodão,,9.62,False,0.0182,,0,0.528,0.528,0.866,75,True
+Branco-gelo,,9.632,False,0.0182,,0,0.528,0.528,0.866,75,True
+Branco-puro,,9.595,False,0.0184,,0,0.528,0.528,0.866,75,True
+Cor de limão,,9.586,False,0.0184,,0,0.528,0.528,0.866,75,True
+Cor de manga,,9.678,False,0.018,,0,0.528,0.528,0.866,75,True
+Cor de milho,,9.53,False,0.0188,,0,0.513,0.513,0.866,75,True
+Cor de neve,,9.497,False,0.0189,,0,0.513,0.513,0.866,75,True
+Cor de nuvem,,9.714,False,0.0178,,0,0.537,0.537,0.866,75,True
+Cor de pimenta,,9.526,False,0.0187,,0,0.513,0.513,0.866,75,True
+Cor de tomate,,9.721,False,0.0177,,0,0.537,0.537,0.866,75,True
+Cor de uva-passa,,9.567,False,0.0185,,0,0.519,0.519,0.866,75,True
+Marrom-claro,,9.62,False,0.0182,,0,0.528,0.528,0.866,75,True
+Marrom-terra,,9.562,False,0.0185,,0,0.519,0.519,0.866,75,True
+Preto-azulado,,11.328,False,0.0183,,0,0.528,0.528,0.866,75,True
+Preto-brilhante,,9.678,False,0.018,,0,0.528,0.528,0.866,75,True
+Preto-de-vinha,,9.686,False,0.018,,0,0.528,0.528,0.866,75,True
+Preto-petróleo,,9.603,False,0.0183,,0,0.528,0.528,0.866,75,True
+Verde-amarelo,,9.543,False,0.0187,,0,0.513,0.513,0.866,75,True
+Verde-exército,,9.541,False,0.0187,,0,0.513,0.513,0.866,75,True
+Verde-paris-escuro,,9.682,False,0.0179,,0,0.528,0.528,0.866,75,True
+Verde-petróleo,,9.609,False,0.0183,,0,0.528,0.528,0.866,75,True
+Verde-primavera,,9.656,False,0.0181,,0,0.528,0.528,0.866,75,True
+Vermelho-paixão,,9.572,False,0.0185,,0,0.519,0.519,0.866,75,True
+Vermelho-vinho,,9.54,False,0.0186,,0,0.513,0.513,0.866,75,True
+Amarelo-creme,,10.103,False,0.0166,,0,0.573,0.573,0.872,76,True
+Areia-clara,,9.988,False,0.017,,0,0.565,0.565,0.872,76,True
+Azul-oceano,,9.987,False,0.017,,0,0.565,0.565,0.872,76,True
+Bege-claro,,10.003,False,0.0168,,0,0.565,0.565,0.872,76,True
+Branco-neve-puro,,9.872,False,0.0173,,0,0.552,0.552,0.872,76,True
+Branco-osso,,10.079,False,0.0166,,0,0.573,0.573,0.872,76,True
+Cinza-frio,,9.99,False,0.0169,,0,0.565,0.565,0.872,76,True
+Cinza-quente,,10.04,False,0.0167,,0,0.565,0.565,0.872,76,True
+Cor de banana,,9.757,False,0.0177,,0,0.545,0.545,0.872,76,True
+Cor de barro,barro,9.999,False,0.0167,,0,0.565,0.565,0.872,76,True
+Cor de camarão,camarão,10.037,False,0.0167,,0,0.565,0.565,0.872,76,True
+Cor de fumaça,,9.897,False,0.0173,,0,0.552,0.552,0.872,76,True
+Cor de grama,,9.959,False,0.0169,,0,0.565,0.565,0.872,76,True
+Cor de morango,,10.092,False,0.0165,,0,0.573,0.573,0.872,76,True
+Cor de oceano,,9.742,False,0.0176,,0,0.545,0.545,0.872,76,True
+Cor de rato,,9.967,False,0.0169,,0,0.565,0.565,0.872,76,True
+Cor de sorvete,,9.887,False,0.0172,,0,0.552,0.552,0.872,76,True
+Cor de vinho tinto,,10.057,False,0.0166,,0,0.565,0.565,0.872,76,True
+Dourado-velho,,9.953,False,0.0172,,0,0.556,0.556,0.872,76,True
+Marrom-café,,9.925,False,0.0171,,0,0.556,0.556,0.872,76,True
+Off-black,,10.091,False,0.0165,,0,0.573,0.573,0.872,76,True
+Prata-velha,,9.834,False,0.0174,,0,0.545,0.545,0.872,76,True
+Preto-de-marte,,9.974,False,0.0168,,0,0.565,0.565,0.872,76,True
+Preto-piano,,9.989,False,0.0168,,0,0.565,0.565,0.872,76,True
+Rosa-algodão-doce,,9.733,False,0.0176,,0,0.545,0.545,0.872,76,True
+Rosa-cobre,,9.937,False,0.0171,,0,0.556,0.556,0.872,76,True
+Rosa-escuro,,9.744,False,0.0176,,0,0.545,0.545,0.872,76,True
+Rosa-seco,,9.777,False,0.0175,,0,0.545,0.545,0.872,76,True
+Roxo-claro,,9.79,False,0.0175,,0,0.545,0.545,0.872,76,True
+Roxo-real,,9.937,False,0.0171,,0,0.556,0.556,0.872,76,True
+Verde-britânico,british racing green,9.998,False,0.0167,,0,0.565,0.565,0.872,76,True
+Verde-sapo,,9.929,False,0.017,,0,0.556,0.556,0.872,76,True
+Vermelho-escuro,,9.873,False,0.0173,,0,0.552,0.552,0.872,76,True
+Amarelo-canário,,11.57,False,0.0162,,0,0.582,0.582,0.877,77,True
+Amarelo-escuro,,10.251,False,0.016,,0,0.591,0.591,0.877,77,True
+Amarelo-manteiga,,10.408,False,0.0155,,0,0.605,0.605,0.877,77,True
+Amarelo-mel,,10.219,False,0.016,,0,0.591,0.591,0.877,77,True
+Amarelo-milho,,10.32,False,0.0159,,0,0.596,0.596,0.877,77,True
+Amarelo-queimado,,11.06,False,0.0162,,0,0.582,0.582,0.877,77,True
+Azul-calcinha,,10.116,False,0.0165,,0,0.582,0.582,0.877,77,True
+Azul-caribe,,10.326,False,0.0158,,0,0.596,0.596,0.877,77,True
+Azul-cobalto-claro,,10.41,False,0.0154,,0,0.605,0.605,0.877,77,True
+Azul-egípcio-antigo,,10.365,False,0.0157,,0,0.605,0.605,0.877,77,True
+Azul-tempestade,,10.139,False,0.0164,,0,0.582,0.582,0.877,77,True
+Branco-cru,,10.343,False,0.0157,,0,0.605,0.605,0.877,77,True
+Branco-de-zinco,,10.41,False,0.0154,,0,0.605,0.605,0.877,77,True
+Cinza-aço,,10.177,False,0.0163,,0,0.582,0.582,0.877,77,True
+Cinza-prata,,10.171,False,0.0163,,0,0.582,0.582,0.877,77,True
+Cor de alecrim,,10.36,False,0.0157,,0,0.605,0.605,0.877,77,True
+Cor de areia molhada,,10.296,False,0.0158,,0,0.596,0.596,0.877,77,True
+Cor de argila,argila,10.37,False,0.0155,,0,0.605,0.605,0.877,77,True
+Cor de maracujá,,10.437,False,0.0154,,0,0.605,0.605,0.877,77,True
+Laranja-escuro,,10.315,False,0.0158,,0,0.596,0.596,0.877,77,True
+Preto-carvão,,10.18,False,0.0161,,0,0.582,0.582,0.877,77,True
+Preto-de-osso,,10.18,False,0.0161,,0,0.582,0.582,0.877,77,True
+Rosa-barbie,barbie pink,10.138,False,0.0164,,0,0.582,0.582,0.877,77,True
+Sangue de boi,,10.233,False,0.0159,,0,0.591,0.591,0.877,77,True
+Verde-caçador,,10.304,False,0.0157,,0,0.596,0.596,0.877,77,True
+Verde-erva,,10.246,False,0.0159,,0,0.591,0.591,0.877,77,True
+Verde-grama,,10.142,False,0.0163,,0,0.582,0.582,0.877,77,True
+Vermelho-batom,,10.173,False,0.0162,,0,0.582,0.582,0.877,77,True
+Vermelho-chinês,,10.169,False,0.0162,,0,0.582,0.582,0.877,77,True
+Vermelho-coral,,10.255,False,0.0159,,0,0.596,0.596,0.877,77,True
+Vermelho-de-marte,,10.208,False,0.0161,,0,0.582,0.582,0.877,77,True
+Vermelho-tomate,,10.132,False,0.0164,,0,0.582,0.582,0.877,77,True
+Violeta-claro,,10.181,False,0.016,,0,0.582,0.582,0.877,77,True
+Algodão,,10.516,False,0.0151,,0,0.626,0.626,0.883,78,True
+Amarelo-banana,,10.547,False,0.0151,,0,0.626,0.626,0.883,78,True
+Amarelo-de-marte,,10.587,False,0.0149,,0,0.626,0.626,0.883,78,True
+Azul-neon,,10.627,False,0.0146,,0,0.64,0.64,0.883,78,True
+Azul-oxford,,10.569,False,0.0149,,0,0.626,0.626,0.883,78,True
+Branco-fosco,,10.562,False,0.0148,,0,0.626,0.626,0.883,78,True
+Branco-marfim,,10.52,False,0.0151,,0,0.626,0.626,0.883,78,True
+Branco-polar,,10.532,False,0.015,,0,0.626,0.626,0.883,78,True
+Cinza-concreto,concreto | Cor de concreto,10.482,False,0.0152,,0,0.626,0.626,0.883,78,True
+Cinza-urbano,,10.441,False,0.0153,,0,0.614,0.614,0.883,78,True
+Cor de abacate,,10.57,False,0.0148,,0,0.626,0.626,0.883,78,True
+Cor de amora,amora,10.54,False,0.015,,0,0.626,0.626,0.883,78,True
+Cor de chiclete,,10.582,False,0.0148,,0,0.626,0.626,0.883,78,True
+Cor de hortelã,,10.467,False,0.0153,,0,0.614,0.614,0.883,78,True
+Cor de melancia,melancia,10.361,False,0.0156,,0,0.605,0.605,0.883,78,True
+Cor de pimentão,,10.532,False,0.015,,0,0.626,0.626,0.883,78,True
+Cor de vinho-rosé,,10.557,False,0.0147,,0,0.626,0.626,0.883,78,True
+Laranja-cobre,,10.508,False,0.0152,,0,0.626,0.626,0.883,78,True
+Laranja-manga,,10.532,False,0.015,,0,0.626,0.626,0.883,78,True
+Marrom-chocolate,,10.351,False,0.0156,,0,0.605,0.605,0.883,78,True
+Marrom-couro,couro,10.438,False,0.0154,,0,0.605,0.605,0.883,78,True
+Rosa-blush,blush,10.579,False,0.0147,,0,0.626,0.626,0.883,78,True
+Rosa-nude,,10.577,False,0.0147,,0,0.626,0.626,0.883,78,True
+Rosa-queimado,,10.553,False,0.0147,,0,0.626,0.626,0.883,78,True
+Rosa-salmão,,10.551,False,0.0149,,0,0.626,0.626,0.883,78,True
+Roxo-uva-passa,,10.445,False,0.0153,,0,0.614,0.614,0.883,78,True
+Siena-natural,,10.398,False,0.0155,,0,0.605,0.605,0.883,78,True
+Verde-bosque,,10.381,False,0.0155,,0,0.605,0.605,0.883,78,True
+Verde-esmeralda-escuro,,10.526,False,0.0149,,0,0.626,0.626,0.883,78,True
+Verde-pinho,,10.501,False,0.0152,,0,0.626,0.626,0.883,78,True
+Verde-salsa,,10.459,False,0.0152,,0,0.614,0.614,0.883,78,True
+Verde-selva,,10.352,False,0.0156,,0,0.605,0.605,0.883,78,True
+Vermelho-morango,morango,10.504,False,0.0151,,0,0.626,0.626,0.883,78,True
+Amarelo-de-cádmio-claro,,10.932,False,0.0135,,0,0.679,0.679,0.889,79,True
+Amarelo-indiano-escuro,,10.871,False,0.0139,,0,0.679,0.679,0.889,79,True
+Amarelo-palha,,10.829,False,0.014,,0,0.664,0.664,0.889,79,True
+Amarelo-táxi,,10.778,False,0.0142,,0,0.658,0.658,0.889,79,True
+Azul-cinzento,,10.664,False,0.0144,,0,0.648,0.648,0.889,79,True
+Azul-egípcio,,10.816,False,0.014,,0,0.664,0.664,0.889,79,True
+Azul-lavanda,,10.96,False,0.0134,,0,0.679,0.679,0.889,79,True
+Azul-sereno,,10.716,False,0.0143,,0,0.648,0.648,0.889,79,True
+Baunilha-clara,,10.823,False,0.014,,0,0.664,0.664,0.889,79,True
+Branco-giz,,10.595,False,0.0146,,0,0.64,0.64,0.889,79,True
+Cinza-espacial,space gray,10.702,False,0.0143,,0,0.648,0.648,0.889,79,True
+Cinza-nuvem,,10.671,False,0.0144,,0,0.648,0.648,0.889,79,True
+Cor de berinjela-escura,,10.83,False,0.0139,,0,0.664,0.664,0.889,79,True
+Cor de canário,,10.78,False,0.0141,,0,0.658,0.658,0.889,79,True
+Cor de cereja-escura,,10.619,False,0.0146,,0,0.64,0.64,0.889,79,True
+Cor de oliva-escura,,10.6,False,0.0146,,0,0.64,0.64,0.889,79,True
+Cor de pavão,,10.72,False,0.0143,,0,0.648,0.648,0.889,79,True
+Cor de pitanga,,10.746,False,0.0142,,0,0.658,0.658,0.889,79,True
+Laranja-coral,,10.697,False,0.0144,,0,0.648,0.648,0.889,79,True
+Laranja-queimado,Burnt orange,11.124,False,0.0141,,0,0.658,0.658,0.889,79,True
+Marrom-cobre,,10.8,False,0.0141,,0,0.658,0.658,0.889,79,True
+Marrom-escuro,,10.607,False,0.0146,,0,0.64,0.64,0.889,79,True
+Preto-fosco,,10.663,False,0.0145,,0,0.648,0.648,0.889,79,True
+Rosa-cereja,,10.622,False,0.0145,,0,0.64,0.64,0.889,79,True
+Rosa-neon,,10.665,False,0.0143,,0,0.648,0.648,0.889,79,True
+Roxo-escuro,,10.778,False,0.0141,,0,0.658,0.658,0.889,79,True
+Rubro-negro,,10.81,False,0.0141,,0,0.658,0.658,0.889,79,True
+Verde-eucalipto,,10.732,False,0.0142,,0,0.648,0.648,0.889,79,True
+Verde-hortelã,hortelã,10.651,False,0.0145,,0,0.648,0.648,0.889,79,True
+Verde-papagaio,,10.641,False,0.0144,,0,0.648,0.648,0.889,79,True
+Verde-turquesa,,10.815,False,0.0139,,0,0.664,0.664,0.889,79,True
+Vermelho-bombeiro,,10.79,False,0.014,,0,0.658,0.658,0.889,79,True
+Vermelho-de-chumbo,mínio,10.615,False,0.0145,,0,0.64,0.64,0.889,79,True
+Vermelho-indiano,,10.751,False,0.0142,,0,0.658,0.658,0.889,79,True
+Amarelo-baunilha,baunilha | Cor de baunilha,11.01,False,0.0132,,0,0.702,0.702,0.894,80,True
+Amarelo-de-cromo-escuro,,11.061,False,0.0131,,0,0.702,0.702,0.894,80,True
+Amarelo-pastel,,11.073,False,0.0131,,0,0.702,0.702,0.894,80,True
+Azul-persa,,10.874,False,0.0139,,0,0.679,0.679,0.894,80,True
+Bege-areia,,10.914,False,0.0137,,0,0.679,0.679,0.894,80,True
+Bege-escuro,,10.991,False,0.0133,,0,0.694,0.694,0.894,80,True
+Casca de ovo,,10.924,False,0.0136,,0,0.679,0.679,0.894,80,True
+Cinza-chumbo-escuro,,10.891,False,0.0136,,0,0.679,0.679,0.894,80,True
+Cinza-cimento,cimento | Cor de cimento,10.962,False,0.0134,,0,0.679,0.679,0.894,80,True
+Cinza-fumaça,,10.854,False,0.0139,,0,0.679,0.679,0.894,80,True
+Cinza-rato,rato,10.924,False,0.0136,,0,0.679,0.679,0.894,80,True
+Cor de curry,curry,10.874,False,0.0138,,0,0.679,0.679,0.894,80,True
+Cor de kiwi,,10.98,False,0.0133,,0,0.694,0.694,0.894,80,True
+Cor de lagosta,lagosta,10.866,False,0.0138,,0,0.679,0.679,0.894,80,True
+Cor de musgo,,10.96,False,0.0134,,0,0.679,0.679,0.894,80,True
+Laranja-cenoura,cenoura | Cor de cenoura,10.916,False,0.0136,,0,0.679,0.679,0.894,80,True
+Laranja-holandês,,11.066,False,0.0131,,0,0.702,0.702,0.894,80,True
+Marfim-antigo,,10.889,False,0.0135,,0,0.679,0.679,0.894,80,True
+Marrom-canela,,10.989,False,0.0133,,0,0.694,0.694,0.894,80,True
+Marrom-taupe,,10.862,False,0.0138,,0,0.679,0.679,0.894,80,True
+Mel,Cor de mel,10.288,False,0.0133,,16596,0.694,0.694,0.894,80,True
+Púrpura-real,,10.891,False,0.0135,,0,0.679,0.679,0.894,80,True
+Rosa-chiclete,,10.865,False,0.0138,,0,0.679,0.679,0.894,80,True
+Rosa-orquídea,,11.096,False,0.013,,0,0.702,0.702,0.894,80,True
+Rosa-poá,,10.963,False,0.0133,,0,0.694,0.694,0.894,80,True
+Rosa-pêssego,,10.925,False,0.0135,,0,0.679,0.679,0.894,80,True
+Transparente,,10.883,False,0.0137,,0,0.679,0.679,0.894,80,True
+Verde-ervilha,,10.954,False,0.0134,,0,0.679,0.679,0.894,80,True
+Verde-musgo-escuro,,10.88,False,0.0137,,0,0.679,0.679,0.894,80,True
+Verde-pavão,,10.904,False,0.0135,,0,0.679,0.679,0.894,80,True
+Verde-vômito,,10.935,False,0.0134,,0,0.679,0.679,0.894,80,True
+Vermelho-telha,telha,10.858,False,0.0137,,0,0.679,0.679,0.894,80,True
+Vermelho-tijolo,,10.851,False,0.0137,,0,0.679,0.679,0.894,80,True
+Amarelo-de-zinco,,11.123,False,0.013,,0,0.712,0.712,0.9,81,True
+Amarelo-girassol,,11.267,False,0.0126,,0,0.732,0.732,0.9,81,True
+Amarelo-indiano,,11.13,False,0.013,,0,0.712,0.712,0.9,81,True
+Amarelo-mostarda,,11.261,False,0.0126,,0,0.732,0.732,0.9,81,True
+Amarelo-neon,,11.172,False,0.0128,,0,0.72,0.72,0.9,81,True
+Azul-manganês,,11.221,False,0.0127,,0,0.72,0.72,0.9,81,True
+Ciano-claro,,11.242,False,0.0127,,0,0.732,0.732,0.9,81,True
+Cinza-elefante,,11.234,False,0.0126,,0,0.732,0.732,0.9,81,True
+Cinza-grafite,,11.264,False,0.0125,,0,0.732,0.732,0.9,81,True
+Cor de flamingo,,11.263,False,0.0125,,0,0.732,0.732,0.9,81,True
+Cor de jabuticaba,,11.228,False,0.0126,,0,0.732,0.732,0.9,81,True
+Cor de topázio,topázio,11.294,False,0.0125,,0,0.732,0.732,0.9,81,True
+Laranja-abóbora,,11.139,False,0.0129,,0,0.712,0.712,0.9,81,True
+Laranja-salmão,,11.122,False,0.0129,,0,0.712,0.712,0.9,81,True
+Lilás-escuro,,11.148,False,0.0129,,0,0.712,0.712,0.9,81,True
+Marrom-cacau,cacau,11.205,False,0.0127,,0,0.72,0.72,0.9,81,True
+Opala,opalino,11.21,False,0.0127,,0,0.72,0.72,0.9,81,True
+Rosa-fluorescente,,11.201,False,0.0127,,0,0.72,0.72,0.9,81,True
+Rosa-framboesa,,11.162,False,0.0128,,0,0.72,0.72,0.9,81,True
+Rosa-goiaba,,11.122,False,0.0129,,0,0.712,0.712,0.9,81,True
+Tricolor,,11.167,False,0.0128,,0,0.72,0.72,0.9,81,True
+Verde-amarelado,,11.054,False,0.0131,,0,0.702,0.702,0.9,81,True
+Verde-fluorescente,,11.101,False,0.013,,0,0.702,0.702,0.9,81,True
+Verde-kiwi,,11.163,False,0.0128,,0,0.72,0.72,0.9,81,True
+Verde-pântano,,11.022,False,0.0132,,0,0.702,0.702,0.9,81,True
+Verde-samambaia,,11.006,False,0.0132,,0,0.702,0.702,0.9,81,True
+Verde-seiva,,11.136,False,0.0129,,0,0.712,0.712,0.9,81,True
+Vermelho-de-cromo,,11.037,False,0.0132,,0,0.702,0.702,0.9,81,True
+Vermelho-encarnado,,11.075,False,0.013,,0,0.702,0.702,0.9,81,True
+Vermelho-pompeia,,11.206,False,0.0127,,0,0.72,0.72,0.9,81,True
+Vermelho-rubi,,11.029,False,0.0132,,0,0.702,0.702,0.9,81,True
+Vermelho-óxido,,11.064,False,0.0131,,0,0.702,0.702,0.9,81,True
+Violeta-escuro,,11.168,False,0.0128,,0,0.72,0.72,0.9,81,True
+Amarelo-cromo,,11.416,False,0.0123,,0,0.75,0.75,0.906,82,True
+Amarelo-enxofre,,11.355,False,0.0124,,0,0.741,0.741,0.906,82,True
+Amarelo-ipê,,11.591,False,0.0119,,0,0.77,0.77,0.906,82,True
+Amarelo-limão-siciliano,,11.363,False,0.0124,,0,0.741,0.741,0.906,82,True
+Azul-acinzentado,,11.507,False,0.0121,,0,0.76,0.76,0.906,82,True
+Azul-anis,,11.447,False,0.0122,,0,0.75,0.75,0.906,82,True
+Azul-cadete,,11.438,False,0.0122,,0,0.75,0.75,0.906,82,True
+Azul-esverdeado,,11.522,False,0.012,,0,0.76,0.76,0.906,82,True
+Azul-glacial,,11.457,False,0.0121,,0,0.75,0.75,0.906,82,True
+Azul-índigo,,11.399,False,0.0123,,0,0.75,0.75,0.906,82,True
+Branco-perolado,,11.339,False,0.0123,,0,0.741,0.741,0.906,82,True
+Cor de jambo,jambo,11.491,False,0.012,,0,0.76,0.76,0.906,82,True
+Cor de mirtilo,mirtilo,11.456,False,0.0121,,0,0.75,0.75,0.906,82,True
+Cor de páprica,páprica,11.435,False,0.0122,,0,0.75,0.75,0.906,82,True
+Laranja-de-cromo,,11.48,False,0.0121,,0,0.75,0.75,0.906,82,True
+Laranja-ferrugem,,11.428,False,0.0122,,0,0.75,0.75,0.906,82,True
+Laranja-mamão,,11.488,False,0.012,,0,0.76,0.76,0.906,82,True
+Laranja-neon,,11.236,False,0.0126,,0,0.732,0.732,0.906,82,True
+Laranja-pêssego,,11.496,False,0.012,,0,0.76,0.76,0.906,82,True
+Laranja-tijolo,,11.294,False,0.0125,,0,0.732,0.732,0.906,82,True
+Marrom-castanho,,11.387,False,0.0123,,0,0.75,0.75,0.906,82,True
+Marrom-tabaco,tabaco,11.274,False,0.0125,,0,0.732,0.732,0.906,82,True
+Osso,cor de osso,11.436,False,0.0122,,0,0.75,0.75,0.906,82,True
+Ouro-rosé,,11.292,False,0.0125,,0,0.732,0.732,0.906,82,True
+Rosa-magenta,,11.277,False,0.0124,,0,0.732,0.732,0.906,82,True
+Roxo-imperial,carmin imperial,11.329,False,0.0124,,0,0.732,0.732,0.906,82,True
+Verde-acinzentado,,11.445,False,0.0122,,0,0.75,0.75,0.906,82,True
+Verde-alga,,11.373,False,0.0123,,0,0.741,0.741,0.906,82,True
+Verde-cobalto,,11.365,False,0.0123,,0,0.741,0.741,0.906,82,True
+Verde-sálvia,sálvia,11.462,False,0.0121,,0,0.75,0.75,0.906,82,True
+Verde-óxido-de-cromo,,11.451,False,0.0121,,0,0.75,0.75,0.906,82,True
+Vermelho-escarlate,,11.507,False,0.012,,0,0.76,0.76,0.906,82,True
+Vermelho-framboesa,framboesa | Cor de framboesa,11.291,False,0.0124,,0,0.732,0.732,0.906,82,True
+Amarelo-açafrão,açafrão | Cor de açafrão,11.718,False,0.0116,,0,0.788,0.788,0.911,83,True
+Amarelo-fluorescente,,11.708,False,0.0117,,0,0.781,0.781,0.911,83,True
+Amarelo-limão-cádmio,,11.673,False,0.0116,,0,0.781,0.781,0.911,83,True
+Amarelo-pálido,,11.673,False,0.0116,,0,0.781,0.781,0.911,83,True
+Amarelo-âmbar,,11.691,False,0.0117,,0,0.781,0.781,0.911,83,True
+Aurora,,11.593,False,0.0119,,0,0.77,0.77,0.911,83,True
+Azul-grená,,11.739,False,0.0116,,0,0.788,0.788,0.911,83,True
+Azul-ultramarino,,11.843,False,0.0114,,0,0.796,0.796,0.911,83,True
+Bege-nude,,11.824,False,0.0114,,0,0.796,0.796,0.911,83,True
+Bege-palha,,11.568,False,0.0118,,0,0.77,0.77,0.911,83,True
+Cinza-platina,platina,11.526,False,0.012,,0,0.77,0.77,0.911,83,True
+Cinza-pombo,,11.733,False,0.0116,,0,0.788,0.788,0.911,83,True
+Cinza-titânio,titânio,11.741,False,0.0115,,0,0.788,0.788,0.911,83,True
+Cor de citrino,citrino,11.631,False,0.0117,,0,0.781,0.781,0.911,83,True
+Cor de piche,piche,11.723,False,0.0115,,0,0.788,0.788,0.911,83,True
+Dourado-champanhe,,11.629,False,0.0117,,0,0.781,0.781,0.911,83,True
+Fumê,,13.632,False,0.0118,,0,0.77,0.77,0.911,83,True
+Gema,Cor de gema,12.347,False,0.0114,,0,0.796,0.796,0.911,83,True
+Laranja-fluorescente,,11.772,False,0.0115,,0,0.796,0.796,0.911,83,True
+Marrom-caramelo,,11.55,False,0.0119,,0,0.77,0.77,0.911,83,True
+Marrom-ferrugem,,11.72,False,0.0115,,0,0.788,0.788,0.911,83,True
+Marrom-telha,,11.593,False,0.0118,,0,0.77,0.77,0.911,83,True
+Marrom-tijolo,,11.586,False,0.0118,,0,0.77,0.77,0.911,83,True
+Moreno,,11.575,False,0.0118,,0,0.77,0.77,0.911,83,True
+Preto-ônix,,11.58,False,0.0118,,0,0.77,0.77,0.911,83,True
+Rosa-flamingo,,11.546,False,0.0119,,0,0.77,0.77,0.911,83,True
+Roxo-lilás,,11.574,False,0.0117,,0,0.77,0.77,0.911,83,True
+Roxo-neon,,11.699,False,0.0116,,0,0.781,0.781,0.911,83,True
+Roxo-violeta,,11.594,False,0.0117,,0,0.77,0.77,0.911,83,True
+Verde-absinto,,11.559,False,0.0119,,0,0.77,0.77,0.911,83,True
+Verde-catarro,,11.554,False,0.0119,,0,0.77,0.77,0.911,83,True
+Vermelho-carmim,,11.72,False,0.0115,,0,0.788,0.788,0.911,83,True
+Vermelho-veneziano,,11.694,False,0.0116,,0,0.781,0.781,0.911,83,True
+Amarelo-ocre,,12.23,False,0.0109,,0,0.828,0.828,0.917,84,True
+Azul-cerúleo-escuro,,11.998,False,0.0112,,0,0.808,0.808,0.917,84,True
+Azul-hortênsia,,12.131,False,0.011,,0,0.828,0.828,0.917,84,True
+Azul-lápis-lazúli,lápis-lazúli,11.968,False,0.0113,,0,0.808,0.808,0.917,84,True
+Bege-rosado,,12.071,False,0.0111,,0,0.815,0.815,0.917,84,True
+Bronze-envelhecido,,12.182,False,0.0109,,0,0.828,0.828,0.917,84,True
+Carmim-escuro,,12.2,False,0.0109,,0,0.828,0.828,0.917,84,True
+Chumbo-fosco,,12.119,False,0.0111,,0,0.821,0.821,0.917,84,True
+Cinza-azulado,,12.108,False,0.011,,0,0.821,0.821,0.917,84,True
+Cobalto-escuro,,12.073,False,0.0111,,0,0.815,0.815,0.917,84,True
+Cobre-envelhecido,,12.009,False,0.0112,,0,0.815,0.815,0.917,84,True
+Crepúsculo,,11.944,False,0.0113,,0,0.808,0.808,0.917,84,True
+Cru,cor crua,11.963,False,0.0112,,0,0.808,0.808,0.917,84,True
+Dourado-rosé,,12.019,False,0.0112,,0,0.815,0.815,0.917,84,True
+Laranja-tangerina,,11.801,False,0.0114,,0,0.796,0.796,0.917,84,True
+Laranja-terracota,,12.084,False,0.011,,0,0.821,0.821,0.917,84,True
+Lilás-pastel,,11.97,False,0.0112,,0,0.808,0.808,0.917,84,True
+Magenta-escuro,,11.885,False,0.0113,,0,0.802,0.802,0.917,84,True
+Marrom-bombom,,11.861,False,0.0113,,0,0.802,0.802,0.917,84,True
+Marrom-camurça,camurça,11.886,False,0.0113,,0,0.802,0.802,0.917,84,True
+Marrom-whisky,whisky,11.778,False,0.0115,,0,0.796,0.796,0.917,84,True
+Ocre-vermelho,,11.851,False,0.0114,,0,0.796,0.796,0.917,84,True
+Roxo-ameixa,,12.04,False,0.0111,,0,0.815,0.815,0.917,84,True
+Roxo-açaí,açaí | Cor de açaí | acaju,11.892,False,0.0113,,0,0.802,0.802,0.917,84,True
+Roxo-berinjela,,11.973,False,0.0112,,0,0.808,0.808,0.917,84,True
+Roxo-lavanda,,12.032,False,0.0111,,0,0.815,0.815,0.917,84,True
+Trigo,Cor de trigo,10.767,False,0.0114,,13206,0.796,0.796,0.917,84,True
+Verde-abeto,,12.027,False,0.0111,,0,0.815,0.815,0.917,84,True
+Verde-cáqui,,11.984,False,0.0112,,0,0.808,0.808,0.917,84,True
+Vermelho-cardinal,cardeal,11.903,False,0.0113,,0,0.808,0.808,0.917,84,True
+Vermelho-ocre,,11.851,False,0.0114,,0,0.796,0.796,0.917,84,True
+Índigo-escuro,,12.045,False,0.0111,,0,0.815,0.815,0.917,84,True
+Úmbria-natural,,12.111,False,0.011,,0,0.821,0.821,0.917,84,True
+Alvinegro,,12.406,False,0.0107,,0,0.845,0.845,0.922,85,True
+Amarelo-cúrcuma,,12.319,False,0.0108,,0,0.839,0.839,0.922,85,True
+Bege-acinzentado,,12.792,False,0.0105,,0,0.857,0.857,0.922,85,True
+Ciano-escuro,,12.23,False,0.0109,,0,0.828,0.828,0.922,85,True
+Cinza-ardósia,ardósia,12.366,False,0.0108,,0,0.839,0.839,0.922,85,True
+Cinza-esverdeado,,12.234,False,0.0108,,0,0.834,0.834,0.922,85,True
+Cinza-perolado,,12.219,False,0.0109,,0,0.828,0.828,0.922,85,True
+Cromado,,12.147,False,0.011,,0,0.828,0.828,0.922,85,True
+Damasco,Cor de damasco,12.523,False,0.0106,,21480,0.852,0.852,0.922,85,True
+Encarnado,,12.757,False,0.0106,,0,0.855,0.855,0.922,85,True
+Grafite-fosco,,12.223,False,0.0109,,0,0.828,0.828,0.922,85,True
+Laranja-cádmio,,12.273,False,0.0108,,0,0.839,0.839,0.922,85,True
+Laranja-mexerica,,12.682,False,0.0106,,0,0.852,0.852,0.922,85,True
+Laranja-papaia,papaia,12.349,False,0.0108,,0,0.839,0.839,0.922,85,True
+Lilás-lavanda,,12.402,False,0.0107,,0,0.845,0.845,0.922,85,True
+Linho,cor de linho,12.364,False,0.0107,,0,0.839,0.839,0.922,85,True
+Marrom-avelã,,12.202,False,0.0109,,0,0.828,0.828,0.922,85,True
+Marrom-conhaque,conhaque,12.151,False,0.011,,0,0.828,0.828,0.922,85,True
+Marrom-glacê,,12.301,False,0.0108,,0,0.839,0.839,0.922,85,True
+Marrom-mogno,,12.24,False,0.0108,,0,0.834,0.834,0.922,85,True
+Marrom-sépia,,12.619,False,0.0106,,0,0.85,0.85,0.922,85,True
+Marrom-tâmara,,12.767,False,0.0106,,0,0.855,0.855,0.922,85,True
+Níquel,,12.856,False,0.0105,,0,0.857,0.857,0.922,85,True
+Ocre-dourado,,12.467,False,0.0107,,0,0.847,0.847,0.922,85,True
+Palha,Cor de palha,11.508,False,0.0107,,3162,0.839,0.839,0.922,85,True
+Preto-azeviche,azeviche,12.58,False,0.0106,,0,0.848,0.848,0.922,85,True
+Rosa-pitaya,,12.399,False,0.0107,,0,0.845,0.845,0.922,85,True
+Rosado,,12.514,False,0.0106,,0,0.848,0.848,0.922,85,True
+Sépia-escuro,,12.364,False,0.0107,,0,0.839,0.839,0.922,85,True
+Vermelho-carmesim,,12.12,False,0.011,,0,0.828,0.828,0.922,85,True
+Vermelhão-chinês,,12.759,False,0.0105,,0,0.855,0.855,0.922,85,True
+Violeta-manganês,,12.684,False,0.0106,,0,0.852,0.852,0.922,85,True
+Ônix,Cor de ônix,14.236,False,0.0107,,6948,0.839,0.839,0.922,85,True
+Alaranjado,,13.526,False,0.0103,,0,0.878,0.878,0.927,86,True
+Alviverde,,13.229,False,0.0103,,0,0.87,0.87,0.927,86,True
+Amarelado,,13.171,False,0.0104,,0,0.87,0.87,0.927,86,True
+Avermelhado,,13.501,False,0.0102,,0,0.878,0.878,0.927,86,True
+Azul-pervinca,pervinca,13.474,False,0.0103,,0,0.875,0.875,0.927,86,True
+Azulado,,13.732,False,0.0102,,0,0.885,0.885,0.927,86,True
+Bicolor,,13.469,False,0.0103,,0,0.875,0.875,0.927,86,True
+Bronzeado,,13.146,False,0.0104,,0,0.867,0.867,0.927,86,True
+Camuflado,,13.661,False,0.0102,,0,0.882,0.882,0.927,86,True
+Canela,Cor de canela,11.115,False,0.0104,,13362,0.87,0.87,0.927,86,True
+Champagne-rosé,,12.991,False,0.0104,,0,0.864,0.864,0.927,86,True
+Cáqui-claro,,11.704,False,0.0105,,0,0.861,0.861,0.927,86,True
+Degradê,,13.463,False,0.0103,,0,0.875,0.875,0.927,86,True
+Fúcsia-neon,,13.207,False,0.0103,,0,0.87,0.87,0.927,86,True
+Goles,,13.795,False,0.0101,,0,0.891,0.891,0.927,86,True
+Holográfico,,13.861,False,0.0101,,0,0.891,0.891,0.927,86,True
+Incolor,,12.931,False,0.0105,,0,0.861,0.861,0.927,86,True
+Latão,,12.923,False,0.0105,,0,0.861,0.861,0.927,86,True
+Lilás-acinzentado,,12.949,False,0.0105,,0,0.861,0.861,0.927,86,True
+Marrom-amendoado,amêndoa,13.721,False,0.0102,,0,0.885,0.885,0.927,86,True
+Metalizado,,12.99,False,0.0104,,0,0.864,0.864,0.927,86,True
+Nogueira,,10.965,False,0.0102,,0,0.88,0.88,0.927,86,True
+Prateado-escovado,,13.037,False,0.0104,,0,0.865,0.865,0.927,86,True
+Púrpura-de-cássio,,13.112,False,0.0104,,0,0.865,0.865,0.927,86,True
+Rosa-antigo,,9.299,False,0.0103,,0,0.875,0.875,0.927,86,True
+Rosa-chá,,9.388,False,0.0102,,0,0.882,0.882,0.927,86,True
+Rosa-garança,,13.739,False,0.0101,,0,0.885,0.885,0.927,86,True
+Translúcido,,13.757,False,0.0101,,0,0.885,0.885,0.927,86,True
+Turquesa-cobalto,,13.244,False,0.0103,,0,0.87,0.87,0.927,86,True
+Vermelho-alizarina,,13.613,False,0.0102,,0,0.88,0.88,0.927,86,True
+Vermelho-ferrari,,9.393,False,0.0104,,0,0.87,0.87,0.927,86,True
+Violeta-cobalto,,12.889,False,0.0105,,0,0.857,0.857,0.927,86,True
+Violeta-genciana,,13.752,False,0.0101,,0,0.885,0.885,0.927,86,True
+Âmbar,Cor de âmbar,13.231,False,0.0102,,16740,0.885,0.885,0.927,86,True
+Acinzentado,,13.954,False,0.01,,0,0.895,0.895,0.933,87,True
+Acobreado,,14.959,False,0.0099,,0,0.906,0.906,0.933,87,True
+Alvirrubro,,14.465,False,0.01,,0,0.9,0.9,0.933,87,True
+Amarronzado,,15.81,False,0.0098,,0,0.914,0.914,0.933,87,True
+Argento,,14.81,False,0.0099,,0,0.903,0.903,0.933,87,True
+Arroxeado,,15.782,False,0.0098,,0,0.914,0.914,0.933,87,True
+Auriverde,,16.335,False,0.0097,,0,0.921,0.921,0.933,87,True
+Avelã,Cor de avelã,13.541,False,0.0098,,12378,0.912,0.912,0.933,87,True
+Azul-aço,,9.465,False,0.0099,,0,0.909,0.909,0.933,87,True
+Azul-céu,Cor de céu | Sky blue | céu | azul do céu | cor do céu | azul da cor do céu,9.135,False,0.0098,,0,0.911,0.911,0.933,87,True
+Azul-jeans,jeans,9.85,False,0.0097,,8124,0.92,0.92,0.933,87,True
+Azul-violeta,,10.522,False,0.0097,,0,0.92,0.92,0.933,87,True
+Bistre-escuro,,14.765,False,0.0099,,0,0.902,0.902,0.933,87,True
+Blau,,14.403,False,0.01,,0,0.899,0.899,0.933,87,True
+Camelo,Cor de camelo,12.63,False,0.01,,22620,0.895,0.895,0.933,87,True
+Cappuccino,,13.874,False,0.0098,,13974,0.912,0.912,0.933,87,True
+Cedro,,12.7,False,0.0099,,0,0.909,0.909,0.933,87,True
+Enegrecido,,16.086,False,0.0098,,0,0.917,0.917,0.933,87,True
+Esbranquiçado,,14.371,False,0.01,,0,0.898,0.898,0.933,87,True
+Esverdeado,,13.985,False,0.01,,0,0.895,0.895,0.933,87,True
+Iridescente,,16.114,False,0.0098,,0,0.918,0.918,0.933,87,True
+Laca-carmim,,13.855,False,0.0101,,0,0.891,0.891,0.933,87,True
+Laca-de-garança,garança,16.002,False,0.0098,,0,0.916,0.916,0.933,87,True
+Lilás-claro,,10.161,False,0.0099,,0,0.907,0.907,0.933,87,True
+Madrepérola,,14.35,False,0.01,,0,0.898,0.898,0.933,87,True
+Mesclado,,13.79,False,0.0101,,0,0.891,0.891,0.933,87,True
+Mogno,Cor de mogno,13.617,False,0.0098,,6648,0.916,0.916,0.933,87,True
+Rosa-quartzo,,10.952,False,0.0099,,0,0.909,0.909,0.933,87,True
+Sable (heráldica),,14.893,False,0.0099,,0,0.904,0.904,0.933,87,True
+Tie-dye,,14.907,False,0.0099,,0,0.904,0.904,0.933,87,True
+Verde-celadon,celadon,13.883,False,0.01,,0,0.894,0.894,0.933,87,True
+Vermelho-cereja,Cherry red,10.751,False,0.01,,0,0.902,0.902,0.933,87,True
+Úmbria-queimada,,13.82,False,0.0101,,0,0.891,0.891,0.933,87,True
+Azul-ardósia,,11.654,False,0.0096,,0,0.929,0.929,0.938,88,True
+Azul-pavão,,10.965,False,0.0096,,0,0.93,0.93,0.938,88,True
+Azul-safira,,11.016,False,0.0096,,0,0.933,0.933,0.938,88,True
+Carmesim,,14.847,False,0.0096,,9486,0.935,0.935,0.938,88,True
+Cobreado,,17.09,False,0.0097,,0,0.927,0.927,0.938,88,True
+Dioxazina,,20.0,True,0.0094,,0,0.947,0.947,0.938,88,True
+Gris,,14.39,False,0.0094,15.0,0,0.951,0.951,0.938,88,True
+Heliotrópio,,17.019,False,0.0097,,0,0.926,0.926,0.938,88,True
+Jalde,,16.553,False,0.0097,,0,0.922,0.922,0.938,88,True
+Malva,,14.361,False,0.0095,,10062,0.942,0.942,0.938,88,True
+Marsala,Cor de marsala,14.436,False,0.0096,,1578,0.928,0.928,0.938,88,True
+Mauve,malva-clara,12.069,False,0.0094,,0,0.947,0.947,0.938,88,True
+Ombré,,20.0,True,0.0094,,0,0.947,0.947,0.938,88,True
+Orquídea,Cor de orquídea,13.056,False,0.0096,,27732,0.932,0.932,0.938,88,True
+Quinacridona,,20.0,True,0.0094,,0,0.947,0.947,0.938,88,True
+Roxo-uva,,11.301,False,0.0097,,0,0.925,0.925,0.938,88,True
+Safira,Cor de safira,12.972,False,0.0094,,10650,0.95,0.95,0.938,88,True
+Sinopla,,18.013,False,0.0096,,0,0.934,0.934,0.938,88,True
+Turmalina,,13.745,False,0.0094,,7926,0.952,0.952,0.938,88,True
+Verde-alface,,10.513,False,0.0095,,0,0.945,0.945,0.938,88,True
+Verde-azulado,,11.334,False,0.0095,,2322,0.94,0.94,0.938,88,True
+Verde-cana,,10.011,False,0.0095,,0,0.944,0.944,0.938,88,True
+Verde-chá,,9.288,False,0.0096,,0,0.931,0.931,0.938,88,True
+Verde-cromo,,10.809,False,0.0094,,0,0.952,0.952,0.938,88,True
+Verde-folha,,9.218,False,0.0096,,0,0.934,0.934,0.938,88,True
+Verde-hospital,,9.125,False,0.0095,,0,0.939,0.939,0.938,88,True
+Verde-jade,,10.717,False,0.0095,,0,0.939,0.939,0.938,88,True
+Verde-mar,,8.758,False,0.0097,,0,0.923,0.923,0.938,88,True
+Verde-maçã,,10.056,False,0.0096,,0,0.936,0.936,0.938,88,True
+Verde-oliva-escuro,,10.447,False,0.0095,,0,0.943,0.943,0.938,88,True
+Verde-paris,,9.346,False,0.0095,,546,0.942,0.942,0.938,88,True
+Verde-veronese,,8.936,False,0.0095,,0,0.937,0.937,0.938,88,True
+Água-marinha,,9.367,False,0.0097,,7596,0.924,0.924,0.938,88,True
+Alvo,,9.933,False,0.0092,,0,0.968,0.968,0.943,89,True
+Amarelo de Nápoles,,15.836,False,0.0091,,0,0.98,0.98,0.943,89,True
+Amarelo-cádmio,,12.209,False,0.0093,,0,0.963,0.963,0.943,89,True
+Azul-cavalaria,,10.902,False,0.0091,,0,0.978,0.978,0.943,89,False
+Azul-klein,international klein blue,9.059,False,0.0092,,0,0.971,0.971,0.943,89,True
+Azul-saxão,,11.882,False,0.0091,,0,0.983,0.983,0.943,89,False
+Azul-zafre,zaffre,9.059,False,0.0092,,0,0.97,0.97,0.943,89,False
+Branco de chumbo,,10.28,False,0.0093,,0,0.963,0.963,0.943,89,True
+Branco de titânio,,10.861,False,0.0092,,0,0.965,0.965,0.943,89,True
+Burgundy,,20.0,True,0.0093,,0,0.961,0.961,0.943,89,True
+Carmim de cochonilha,,14.876,False,0.0091,,0,0.981,0.981,0.943,89,True
+Chartreuse,Chartreuse-amarelado | Verde-chartreuse | Amarelo-chartreuse,16.142,False,0.0091,,1356,0.975,0.975,0.943,89,True
+Cobalto,,13.793,False,0.0092,,8010,0.972,0.972,0.943,89,True
+Glicínia,,16.643,False,0.0093,,5460,0.955,0.955,0.943,89,True
+Malaquita,,15.987,False,0.0092,,4284,0.972,0.972,0.943,89,True
+Nanquim,,13.672,False,0.0091,,9528,0.982,0.982,0.943,89,True
+Negro de fumo,Negro de carbono,10.77,False,0.0092,,2316,0.968,0.968,0.943,89,True
+Ocre-amarelo,,12.23,False,0.0093,,0,0.959,0.959,0.943,89,True
+Pardo,,12.371,False,0.0091,,30438,0.979,0.979,0.943,89,True
+Pastel,,11.996,False,0.0091,,3390,0.984,0.984,0.943,89,True
+Preto de marfim,,10.621,False,0.0092,,0,0.966,0.966,0.943,89,True
+Púrpura de Tiro,Púrpura tíria,11.765,False,0.0092,,3678,0.968,0.968,0.943,89,True
+Rubro,,11.647,False,0.0091,,0,0.977,0.977,0.943,89,True
+Siena,,11.891,False,0.0093,,9384,0.958,0.958,0.943,89,True
+Siena-queimada,,12.107,False,0.0093,,0,0.96,0.96,0.943,89,True
+Sombra queimada,,11.259,False,0.0093,,0,0.956,0.956,0.943,89,True
+Taupe,,20.0,True,0.0094,,0,0.954,0.954,0.943,89,True
+Terra de siena,,10.077,False,0.0094,,0,0.953,0.953,0.943,89,True
+Ultramar,azul-ultramar,13.53,False,0.0092,,1158,0.972,0.972,0.943,89,True
+Verde Scheele,,8.936,False,0.0093,,0,0.957,0.957,0.943,89,True
+Vermelho-cádmio,,11.831,False,0.0093,,0,0.962,0.962,0.943,89,True
+Úmbria,,15.316,False,0.0091,,6984,0.976,0.976,0.943,89,True
+Alizarina,,17.833,False,0.009,,1164,0.991,0.991,0.949,90,True
+Bistre,,19.177,False,0.0089,,0,0.997,0.997,0.949,90,True
+Estanho,,13.438,False,0.009,,0,0.989,0.989,0.949,90,False
+Fluorescente,Fluorescência,13.266,False,0.009,,3282,0.987,0.987,0.949,90,True
+Fosco,,12.401,False,0.009,,0,0.986,0.986,0.949,90,False
+Fulvo,,16.057,False,0.009,,0,0.993,0.993,0.949,90,True
+Gamboge,,20.0,True,0.0089,,0,0.995,0.995,0.949,90,True
+Glauco,Glaucous,13.14,False,0.009,,3348,0.985,0.985,0.949,90,True
+Mauveína,,20.567,False,0.0089,,282,0.998,0.998,0.949,90,True
+Pantone,,20.0,True,0.0089,,0,1.0,1.0,0.949,90,False
+Rosa-millennial,,12.731,False,0.009,,0,0.987,0.987,0.949,90,True
+Roxo-petúnia,petunia,13.375,False,0.009,,0,0.989,0.989,0.949,90,False
+Rútilo,,17.127,False,0.0089,,2022,0.996,0.996,0.949,90,True
+Sagu,cor sagu,14.729,False,0.009,,0,0.992,0.992,0.949,90,False
 Vandyke,,20.0,True,0.0089,,0,0.994,0.994,0.949,90,True
-Vantablack,,20.0,True,0.0088,,6252,0.999,0.999,0.949,90,True
-Viridiana,,20.0,True,0.0089,,1440,0.991,0.991,0.949,90,True
+Vantablack,,20.0,True,0.0089,,6252,0.999,0.999,0.949,90,True
+Viridiana,,20.0,True,0.009,,1440,0.99,0.99,0.949,90,True
