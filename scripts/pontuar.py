@@ -256,6 +256,19 @@ def partidas_de(cat: dict) -> dict | None:
 QUEDA_MAXIMA = 4.0
 
 
+# Resposta que entrou na lista porque jogadores a digitaram e o jogo recusou (scripts/recuperar_recusadas.py):
+# quantos a digitaram no dia em que mais digitaram, sobre um dia típico de JOGADORES_POR_DIA. Vira um piso da
+# lembrança: Friends, que a simulação não tinha, não pode valer como Espaço Profundo.
+JOGADORES_POR_DIA = 2000
+
+
+def recusadas_de(cat_id: str) -> dict[str, float]:
+    caminho = RAIZ / "dados" / "sinais" / "recusadas" / f"{cat_id}.json"
+    if not caminho.exists():
+        return {}
+    return {nome: 1000 * n / JOGADORES_POR_DIA for nome, n in json.loads(caminho.read_text(encoding="utf-8")).items()}
+
+
 def lembranca_real(jogadores: int, total: int, simulada: float) -> float:
     """Quantos em 1000 dão a resposta: a partida, com a simulação valendo PSEUDO_JOGADORES jogadores."""
     mistura = 1000 * (jogadores + PSEUDO_JOGADORES * simulada / 1000) / (total + PSEUDO_JOGADORES)
@@ -437,6 +450,7 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
             ordenadas.sort(key=lambda r: (-frequencia.get(r["resposta"], 0.0), r["fama"],
                                           normalizar(r["resposta"])))
         reais = partidas_de(cat)
+        digitadas = recusadas_de(cat["id"])
         if reais:
             cat["partidas"] = reais["total"]
             # na cauda, quem algum jogador deu de verdade vem antes (mais óbvia) de quem ninguém deu
@@ -448,6 +462,8 @@ def pontuar(caminho: Path, base: BaseICF) -> dict:
                 r["zipf"] = frequencia.get(r["resposta"], 0.0)
                 r["lembranca"] = round(max(r["lembranca"], lembranca_pela_frequencia(r["zipf"])), 2)
             r["acima"] = medida.get("acima", 0.0)
+            if r["resposta"] in digitadas:
+                r["lembranca"] = round(max(r["lembranca"], digitadas[r["resposta"]]), 2)
             if reais:
                 r["lembranca_simulada"] = r["lembranca"]
                 r["jogadores"] = reais["contagem"].get(r["resposta"], 0)

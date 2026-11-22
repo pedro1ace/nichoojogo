@@ -64,6 +64,7 @@ from pontuar import CATEGORIAS, ler_categoria, normalizar  # noqa: E402
 RAIZ = Path(__file__).resolve().parent.parent
 LEMBRANCA = RAIZ / "dados" / "sinais" / "lembranca"
 FAMA = RAIZ / "dados" / "sinais" / "fama"
+PESOS = RAIZ / "dados" / "pesos"
 REVISAO = RAIZ / "dados" / "sinais" / "revisao"
 ORDEM = RAIZ / "dados" / "ordem.txt"
 INICIO = dt.date(2026, 10, 28)  # dia #1
@@ -522,7 +523,20 @@ def conferir(cats: list[str], base: pontuar.BaseICF, perto: range = range(7, 14)
         fama = agente_fama.ler_json(FAMA / f"{cat_id}.json")
         if fama.get("metodo") != METODO or set(fama.get("respostas", {})) != {r["resposta"] for r in cat["respostas"]}:
             problemas.append(f"{cat_id}: a fama está velha (a lista mudou); rode scripts/fama.py {cat_id}")
+        # Singularidade óbvia ("Bolo formigueiro" em sabores de bolo, Fittipaldi em pilotos): ela tem de ser
+        # rara de lembrar (menos de SUPERNOVA_MAX em 1000 na simulação), mas conhecida quando aparece.
+        # Só para o que ainda não foi ao ar: a de dia que já passou não muda.
+        pesos = PESOS / f"{cat_id}.json"
+        if n >= 7 and pesos.exists():  # as 7 primeiras são as de hoje, já no ar
+            nova = json.loads(pesos.read_text(encoding="utf-8")).get("supernova")
+            lembra = (fama.get("respostas", {}).get(nova) or {}).get("lembranca_em_1000") or 0
+            if lembra >= SUPERNOVA_MAX:
+                problemas.append(f"{cat_id}: a singularidade {nova!r} é óbvia demais ({lembra:.1f} em 1000 na simulação; "
+                                 f"o máximo é {SUPERNOVA_MAX}). Troque em dados/ajustes/{cat_id}.csv e dados/singularidades.txt")
     return problemas
+
+
+SUPERNOVA_MAX = 1.0
 
 
 def main() -> None:

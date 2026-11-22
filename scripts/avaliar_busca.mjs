@@ -138,6 +138,33 @@ export function avaliar(busca, categorias) {
   return { metricas: m, erros };
 }
 
+// O que a IA aceitou e a busca de hoje não acha, nem pela grafia nem pelo nome que a IA deu:
+// falta na lista. Soma os dias. É a entrada do scripts/recuperar_recusadas.py.
+export function faltando(busca, categorias) {
+  const arquivos = fs.readdirSync(REVISAO).filter((f) => /^recusadas-\d{4}-\d{2}-\d{2}\.csv$/.test(f)).sort();
+  const preparadas = new Map();
+  const juntas = new Map();
+  for (const f of arquivos) {
+    for (const r of lerCsv(path.join(REVISAO, f))) {
+      const cat = categorias[r.categoria];
+      if (r.ia !== "aceita" || !cat) continue;
+      if (!preparadas.has(r.categoria)) preparadas.set(r.categoria, busca.prepararCategoria(cat));
+      const prep = preparadas.get(r.categoria);
+      if (busca.buscar(prep, r.texto) || (r.ia_nome && prep.mapa.has(busca.compactar(r.ia_nome)))) continue;
+      const chave = `${r.categoria}|${r.texto}|${r.ia_nome}`;
+      const ja = juntas.get(chave);
+      if (ja) ja.n += Number(r.n) || 1;
+      else juntas.set(chave, { categoria: r.categoria, texto: r.texto, n: Number(r.n) || 1, como: "", na_lista: "", ia: "aceita", ia_nome: r.ia_nome || "" });
+    }
+  }
+  return [...juntas.values()];
+}
+
+if (import.meta.url === `file://${process.argv[1]}` && args.includes("--faltando")) {
+  console.log(JSON.stringify(faltando(carregarBusca(arquivoBusca), carregarCategorias())));
+  process.exit(0);
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const busca = carregarBusca(arquivoBusca);
   const { metricas, erros } = avaliar(busca, carregarCategorias());
