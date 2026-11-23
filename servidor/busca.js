@@ -465,6 +465,10 @@ function prepararCategoria(cat) {
       guardar(palavras.map(radical).join(""), item);
       const sem = tirarDaFrente(palavras, PREFIXOS_DA_LISTA[cat.id]);
       if (sem && sem.join("").length >= 4) guardar(sem.map(radical).join(""), item);
+      // sem o que está entre parênteses, que só desfaz a dúvida: "lucia" = Lucia (GTA VI),
+      // "fosforo" = Fósforo (cabeça)
+      const semParenteses = nome.replace(/\([^)]*\)/g, " ").trim();
+      if (semParenteses !== nome && compactar(semParenteses).length >= 3) guardar(palavrasSoltas(semParenteses).map(radical).join(""), item);
     }
   }
   // O nome sem a palavra do tema ("australiano" = Pão australiano, "vento" = Pastel de vento),
