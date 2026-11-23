@@ -260,6 +260,54 @@ function erroSeguro(d, a, b, palavras) {
 // diferente está até 1 erro mais longe: a dúvida é grande demais para chutar.
 // soExata: só a grafia da lista ou outra forma da mesma resposta, sem correção.
 function buscar(cat, texto, soExata = false) {
+  const achada = buscarGrafia(cat, texto, soExata);
+  if (achada || soExata) return achada;
+  return buscarPedaco(cat, texto);
+}
+
+// ---------- o jogador escreveu só a palavra que distingue a resposta ----------
+// "trio" = Trio elétrico, "chiquinho" = Chiquinho Sorvetes, "madalena" = Maria Madalena, "fita" =
+// Fita adesiva. Quando nada casou pela grafia, cada palavra digitada (com radical, sem "de/na/em")
+// é procurada como palavra inteira dentro das respostas. Só sugere (o jogador confirma) e só quando:
+//   - uma única resposta tem todas essas palavras, ou uma delas é bem mais óbvia que as outras;
+//   - o que foi digitado tem pelo menos 4 letras e cobre metade da resposta ou 1 palavra dela;
+//   - a resposta não é do Espaço Profundo nem a singularidade (nada de atalho para os 60+ pontos).
+// Erro de digitação numa das palavras também vale ("chiquiho"), com a mesma régua de palavraBate.
+const PEDACO_MINIMO = 4;
+const PEDACO_FOLGA = 8;
+function buscarPedaco(cat, texto) {
+  if (!cat.palavras || SEM_FORMAS.has(cat.id)) return null;
+  const digitadas = palavrasSoltas(texto).map(radical);
+  if (!digitadas.length || digitadas.join("").length < PEDACO_MINIMO || digitadas.length > 3) return null;
+  let candidatas = null;
+  for (const p of digitadas) {
+    const daPalavra = new Set();
+    const exata = cat.palavras.get(p);
+    if (exata) for (const r of exata) daPalavra.add(r);
+    else if (p.length >= 5) {
+      // palavra com erro de digitação: só quando uma única palavra da lista fica perto dela
+      let achou = null;
+      for (const [q, rs] of cat.palavras) {
+        if (Math.abs(q.length - p.length) > 1 || q[0] !== p[0] || !palavraBate(p, q)) continue;
+        if (achou) { achou = null; break; }
+        achou = rs;
+      }
+      if (achou) for (const r of achou) daPalavra.add(r);
+    }
+    candidatas = candidatas ? new Set([...candidatas].filter((r) => daPalavra.has(r))) : daPalavra;
+    if (!candidatas.size) return null;
+  }
+  // Várias respostas têm a palavra ("fita": adesiva, crepe, isolante...). O jogador que escreve só
+  // "fita" quase sempre quer a mais óbvia: sugere ela quando é Óbvia ou Letrada e está bem à frente
+  // da segunda (pelo menos PEDACO_FOLGA pontos), senão não adivinha ("emma": Stone ou Watson?).
+  const ordem = [...candidatas].sort((a, b) => a.pontos - b.pontos);
+  const r = ordem[0];
+  if (ordem.length > 1 && (r.pontos > TETO_SINONIMO || ordem[1].pontos - r.pontos < PEDACO_FOLGA)) return null;
+  if (r.pontos >= PONTOS_NICHADA || r.resposta === cat.supernova) return null;
+  return { resposta: r, nome: r.resposta, exato: false, pedaco: true };
+}
+
+function buscarGrafia(cat, texto, soExata = false) {
   const alvo = compactar(texto);
   if (!alvo) return null;
   if (cat.mapa.has(alvo)) return { ...cat.mapa.get(alvo), exato: true };
@@ -476,6 +524,21 @@ function prepararCategoria(cat) {
     const solta = chavesSoltas(item.nome)[0];
     formas.push({ chave, som: som(chave), solta, somSolta: som(solta), item });
   }
+  // palavra (com radical) -> respostas que a têm como palavra inteira, para buscarPedaco()
+  const palavras = new Map();
+  // Só o nome da resposta, não os apelidos: num apelido a palavra costuma ser enfeite ("vinho
+  // espumante" faria "vinho" virar Espumante; "coelho da páscoa", "coelho" virar Páscoa).
+  // As palavras do nome da categoria também ficam de fora ("aniversário" em festa de aniversário).
+  const doNome = new Set(cat.id.split("-").map(radical));
+  for (const r of cat.respostas) {
+    const ps = palavrasSoltas(r.resposta);
+    if (ps.length < 2) continue; // resposta de uma palavra só já é casada pela grafia
+    for (const p of ps.map(radical)) {
+      if (p.length < 3 || doNome.has(p)) continue;
+      if (!palavras.has(p)) palavras.set(p, new Set());
+      palavras.get(p).add(r);
+    }
+  }
   const semFormas = SEM_FORMAS.has(cat.id);
-  return { ...cat, mapa, formas, soltas: semFormas ? null : soltas, derivadas: semFormas ? null : derivadas, nomesProprios: semFormas ? null : nomesProprios };
+  return { ...cat, mapa, formas, palavras, soltas: semFormas ? null : soltas, derivadas: semFormas ? null : derivadas, nomesProprios: semFormas ? null : nomesProprios };
 }

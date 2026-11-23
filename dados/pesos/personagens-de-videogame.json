@@ -445,6 +445,26 @@
    "acima": 0.454
   },
   {
+   "resposta": "Alex Kidd",
+   "apelidos": [
+    "Alex Kidd in Shinobi World",
+    "Alex Kidd BMX Trial",
+    "Alex Kidd in High-Tech World",
+    "Alex Kidd Complete Album"
+   ],
+   "sem_dado": false,
+   "icf": 8.381,
+   "lembranca": 7.657,
+   "conhecem": 95.0,
+   "visitas": 0,
+   "ajustado": false,
+   "percentil": 0.023,
+   "fama": 0.023,
+   "pontos": 26,
+   "peso": 0.51,
+   "acima": 0.5461
+  },
+  {
    "resposta": "Arthur Morgan",
    "apelidos": [],
    "sem_dado": true,
@@ -1883,24 +1903,19 @@
    "acima": 0.9357
   },
   {
-   "resposta": "Alex Kidd",
-   "apelidos": [
-    "Alex Kidd in Shinobi World",
-    "Alex Kidd BMX Trial",
-    "Alex Kidd in High-Tech World",
-    "Alex Kidd Complete Album"
-   ],
+   "resposta": "Zumbi do Minecraft",
+   "apelidos": [],
    "sem_dado": false,
-   "icf": 8.381,
-   "lembranca": 7.657,
-   "conhecem": 95.0,
+   "icf": 11.795,
+   "lembranca": 0.0571,
+   "conhecem": 65.0,
    "visitas": 0,
    "ajustado": false,
-   "percentil": 0.023,
-   "fama": 0.023,
+   "percentil": 0.14,
+   "fama": 0.14,
    "pontos": 50,
    "peso": 0.707,
-   "acima": 0.5461
+   "acima": 0.9824
   },
   {
    "resposta": "Blastoise",
@@ -4412,21 +4427,6 @@
    "sem_dado": true,
    "icf": 20.0,
    "lembranca": 0.0575,
-   "conhecem": 65.0,
-   "visitas": 0,
-   "ajustado": false,
-   "percentil": 0.14,
-   "fama": 0.14,
-   "pontos": 63,
-   "peso": 0.794,
-   "acima": 0.9824
-  },
-  {
-   "resposta": "Zumbi do Minecraft",
-   "apelidos": [],
-   "sem_dado": false,
-   "icf": 11.795,
-   "lembranca": 0.0571,
    "conhecem": 65.0,
    "visitas": 0,
    "ajustado": false,
@@ -21348,5 +21348,5 @@
  ],
  "fonte_peso": "agente",
  "metodo": "simulacao",
- "supernova": "Alex Kidd"
+ "supernova": "Zumbi do Minecraft"
 }

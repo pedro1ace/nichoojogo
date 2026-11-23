@@ -35,6 +35,11 @@ Como funciona hoje no protótipo:
 - Outra forma da mesma resposta vale direto, sem perguntar: plural ("Leões"), "de/e/com/na/em" a mais ou a menos
   ("arco flecha") e a palavra do tema na frente ("constelação de Órion", "língua tupi"). Regra igual em
   `jogo/jogo.js` (`chavesSoltas`) e `scripts/casar.py` (`chaves_soltas`).
+- Só a palavra que distingue a resposta ("trio", "fita", "chiquinho", "madalena") sugere a resposta, e o jogador
+  confirma: quando uma única resposta tem essa palavra no nome, ou quando uma delas é bem mais óbvia que as outras
+  ("fita" = Fita adesiva). Nunca sugere Espaço Profundo nem a singularidade. Regra em `jogo/busca.js` (`buscarPedaco`).
+  Teste de regressão com o log de recusadas: `node scripts/avaliar_busca.mjs --trava`; relatório do dia:
+  `node scripts/relatorio_recusadas.mjs`.
 - Resposta que a lista não tem: o jogo avisa que ela foi anotada para revisão (e repete isso no tempo esgotado).
 - Sons 8-bit gerados no navegador (botão ♪ para desligar).
 - Janelas do menu (conta, skins, opções, arquivos, apoio) abrem e fecham como num computador antigo: contornos saem do botão e crescem em passos até a janela, com sons de interface baixinhos e um "tlin" quando algo dá certo (login, apelido salvo, código copiado). Código em `jogo/janelas.js`; sem efeitos ou com "reduzir movimento" vira só um surgir rápido.
@@ -68,6 +73,7 @@ python3 scripts/importar.py        # gera as categorias que têm receita em dado
 python3 scripts/pontuar.py         # calcula os pesos e atualiza jogo/dados.js e jogar.html
 python3 scripts/fama.py            # fama nova: simulação de jogadores, completude e pontos (roda o pontuar.py)
 python3 scripts/fama.py --conferir # trava: toda categoria da fila tem simulação e lista completa?
+python3 scripts/partidas.py         # guarda o que os jogadores responderam (ontem e hoje); o pontuar usa os dias fechados
 ```
 
 ## Estrutura

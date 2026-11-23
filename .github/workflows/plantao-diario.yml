@@ -35,6 +35,19 @@ jobs:
         run: |
           python -X utf8 scripts/plantao_automatico.py
 
+      # Relatório das recusadas mais digitadas (falta apelido, lista duplicada, falta na lista) e
+      # o teste de regressão da busca com todo o log de recusadas. Não trava o plantão: só avisa.
+      - name: Relatório das recusadas e regressão da busca
+        run: |
+          {
+            echo ""
+            node scripts/relatorio_recusadas.mjs --top 15 || true
+            echo ""
+            echo '```'
+            node scripts/avaliar_busca.mjs --trava || echo "ATENÇÃO: a busca piorou a referência"
+            echo '```'
+          } >> PLANTAO_RESUMO.md
+
       - name: Obter data de hoje
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
