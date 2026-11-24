@@ -326,3 +326,75 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 5 | Personagens da Nintendo | Cite um personagem da Nintendo (Pokémon não contam) | 747 |
 | 6 | Coisas do hospital | Cite algo que tem num hospital | 1037 |
 | 7 | Coisas para acampar | Cite algo que se leva para acampar | 2404 |
+
+## Dia 28 · ter 24/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas do escritório | Cite algo que tem num escritório | 339 |
+| 2 | Personagens de Harry Potter | Cite um personagem de Harry Potter (livros ou filmes, Animais Fantásticos não contam) | 212 |
+| 3 | Petiscos de boteco | Cite um petisco de boteco | 218 |
+| 4 | Animais do mar | Cite um animal que vive no mar | 183 |
+| 5 | Coisas que dão sono | Cite algo que dá sono | 155 |
+| 6 | Coisas de casamento | Cite algo que tem num casamento | 168 |
+| 7 | Cantores internacionais | Cite um cantor ou cantora de fora do Brasil (bandas não contam) | 329 |
+
+## Dia 29 · qua 25/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas da academia | Cite algo que tem numa academia de ginástica | 147 |
+| 2 | Personagens de Os Simpsons | Cite um personagem de Os Simpsons | 123 |
+| 3 | Drinks e coquetéis | Cite um drink ou coquetel | 119 |
+| 4 | Jogos de tabuleiro | Cite um jogo de tabuleiro | 138 |
+| 5 | Animais de estimação | Cite um animal de estimação | 92 |
+| 6 | Coisas que dão coceira | Cite algo que dá coceira | 94 |
+| 7 | Marcas de roupa | Cite uma marca de roupa | 193 |
+
+## Dia 30 · qui 26/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas da casa da vó | Cite algo que tem na casa da vó | 131 |
+| 2 | Comida japonesa | Cite uma comida japonesa | 102 |
+| 3 | Personagens de Star Wars | Cite um personagem de Star Wars | 132 |
+| 4 | Coisas brancas | Cite algo que é branco | 137 |
+| 5 | Esportes radicais | Cite um esporte radical | 104 |
+| 6 | Coisas do circo | Cite algo que tem num circo | 90 |
+| 7 | Marcas de cerveja | Cite uma marca de cerveja | 148 |
+
+## Dia 31 · sex 27/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas de bebê | Cite algo de bebê | 98 |
+| 2 | Sertanejo | Cite um cantor, cantora ou dupla sertaneja | 110 |
+| 3 | Coisas quadradas | Cite algo que é quadrado | 104 |
+| 4 | Coisas do aeroporto | Cite algo que tem num aeroporto | 98 |
+| 5 | Coisas macias | Cite algo que é macio | 89 |
+| 6 | Coisas do jardim | Cite algo que tem num jardim | 131 |
+| 7 | Coisas que têm rabo | Cite algo que tem rabo (ou cauda) | 97 |
+
+## Dia 32 · sáb 28/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas pretas | Cite algo que é preto | 127 |
+| 2 | Coisas do parque de diversões | Cite algo que tem num parque de diversões | 86 |
+| 3 | Personagens de O Senhor dos Anéis | Cite um personagem de O Senhor dos Anéis ou O Hobbit | 107 |
+| 4 | Coisas que cabem no bolso | Cite algo que cabe no bolso | 114 |
+| 5 | Coisas do shopping | Cite algo que tem num shopping | 98 |
+| 6 | Coisas transparentes | Cite algo que é transparente | 84 |
+| 7 | Coisas que pulam | Cite algo que pula | 91 |
+
+## Dia 33 · dom 29/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas rosas | Cite algo que é rosa | 142 |
+| 2 | Coisas do cinema | Cite algo que tem num cinema | 93 |
+| 3 | Coisas que têm buraco | Cite algo que tem buraco | 190 |
+| 4 | Coisas da roça | Cite algo que tem na roça | 251 |
+| 5 | Presentes de amigo secreto | Cite um presente de amigo secreto | 141 |
+| 6 | Coisas de Ano-Novo | Cite algo do Ano-Novo | 105 |
+| 7 | Coisas laranjas | Cite algo que é laranja | 104 |

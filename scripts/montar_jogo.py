@@ -87,6 +87,19 @@ FECHADAS = {
     "personagens-de-anime", "personagens-do-chaves", "sitio-do-picapau", "apps-e-sites",
     "lojas", "fast-food", "praias-brasileiras", "palavras-com-z",
     "palavras-com-x",
+    # Dia 28 (24/11/2026): montado às pressas quando a fila acabou; as recusadas do plantão completam
+    "coisas-do-escritorio", "personagens-de-harry-potter", "petiscos-de-boteco", "animais-do-mar",
+    "coisas-que-dao-sono", "coisas-de-casamento", "cantores-internacionais",
+    # Dia 33 (29/11/2026)
+    "coisas-rosas", "coisas-do-cinema", "coisas-que-tem-buraco", "coisas-da-roca", "presentes-de-amigo-secreto", "coisas-de-ano-novo", "coisas-laranjas",
+    # Dia 32 (28/11/2026)
+    "coisas-pretas", "coisas-do-parque-de-diversoes", "personagens-do-senhor-dos-aneis", "coisas-que-cabem-no-bolso", "coisas-do-shopping", "coisas-transparentes", "coisas-que-pulam",
+    # Dia 31 (27/11/2026)
+    "coisas-de-bebe", "cantores-sertanejos", "coisas-quadradas", "coisas-do-aeroporto", "coisas-macias", "coisas-do-jardim", "coisas-que-tem-rabo",
+    # Dia 30 (26/11/2026)
+    "coisas-da-casa-da-vo", "comidas-japonesas", "personagens-de-star-wars", "coisas-brancas", "esportes-radicais", "coisas-do-circo", "marcas-de-cerveja",
+    # Dia 29 (25/11/2026)
+    "coisas-da-academia", "personagens-dos-simpsons", "drinks-e-coqueteis", "jogos-de-tabuleiro", "animais-de-estimacao", "coisas-que-cocam", "marcas-de-roupa",
 }
 
 
