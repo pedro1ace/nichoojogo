@@ -386,3 +386,15 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 5 | Coisas do shopping | Cite algo que tem num shopping | 98 |
 | 6 | Coisas transparentes | Cite algo que é transparente | 84 |
 | 7 | Coisas que pulam | Cite algo que pula | 93 |
+
+## Dia 33 · dom 29/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas rosas | Cite algo que é rosa | 144 |
+| 2 | Coisas do cinema | Cite algo que tem num cinema | 95 |
+| 3 | Coisas que têm buraco | Cite algo que tem buraco | 192 |
+| 4 | Coisas da roça | Cite algo que tem na roça | 253 |
+| 5 | Presentes de amigo secreto | Cite um presente de amigo secreto | 143 |
+| 6 | Coisas de Ano-Novo | Cite algo do Ano-Novo | 107 |
+| 7 | Coisas laranjas | Cite algo que é laranja | 106 |
