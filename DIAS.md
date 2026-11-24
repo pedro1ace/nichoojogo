@@ -374,3 +374,15 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 5 | Coisas macias | Cite algo que é macio | 89 |
 | 6 | Coisas do jardim | Cite algo que tem num jardim | 131 |
 | 7 | Coisas que têm rabo | Cite algo que tem rabo (ou cauda) | 97 |
+
+## Dia 32 · sáb 28/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas pretas | Cite algo que é preto | 127 |
+| 2 | Coisas do parque de diversões | Cite algo que tem num parque de diversões | 86 |
+| 3 | Personagens de O Senhor dos Anéis | Cite um personagem de O Senhor dos Anéis ou O Hobbit | 107 |
+| 4 | Coisas que cabem no bolso | Cite algo que cabe no bolso | 114 |
+| 5 | Coisas do shopping | Cite algo que tem num shopping | 98 |
+| 6 | Coisas transparentes | Cite algo que é transparente | 84 |
+| 7 | Coisas que pulam | Cite algo que pula | 93 |
