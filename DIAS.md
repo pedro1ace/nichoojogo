@@ -338,3 +338,15 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 5 | Coisas que dão sono | Cite algo que dá sono | 155 |
 | 6 | Coisas de casamento | Cite algo que tem num casamento | 168 |
 | 7 | Cantores internacionais | Cite um cantor ou cantora de fora do Brasil (bandas não contam) | 329 |
+
+## Dia 29 · qua 25/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas da academia | Cite algo que tem numa academia de ginástica | 147 |
+| 2 | Personagens de Os Simpsons | Cite um personagem de Os Simpsons | 123 |
+| 3 | Drinks e coquetéis | Cite um drink ou coquetel | 119 |
+| 4 | Jogos de tabuleiro | Cite um jogo de tabuleiro | 138 |
+| 5 | Animais de estimação | Cite um animal de estimação | 92 |
+| 6 | Coisas que dão coceira | Cite algo que dá coceira | 94 |
+| 7 | Marcas de roupa | Cite uma marca de roupa | 193 |

@@ -90,6 +90,8 @@ FECHADAS = {
     # Dia 28 (24/11/2026): montado às pressas quando a fila acabou; as recusadas do plantão completam
     "coisas-do-escritorio", "personagens-de-harry-potter", "petiscos-de-boteco", "animais-do-mar",
     "coisas-que-dao-sono", "coisas-de-casamento", "cantores-internacionais",
+    # Dia 29 (25/11/2026)
+    "coisas-da-academia", "personagens-dos-simpsons", "drinks-e-coqueteis", "jogos-de-tabuleiro", "animais-de-estimacao", "coisas-que-cocam", "marcas-de-roupa",
 }
 
 
