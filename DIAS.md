@@ -326,3 +326,15 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 5 | Personagens da Nintendo | Cite um personagem da Nintendo (Pokémon não contam) | 747 |
 | 6 | Coisas do hospital | Cite algo que tem num hospital | 1037 |
 | 7 | Coisas para acampar | Cite algo que se leva para acampar | 2404 |
+
+## Dia 28 · ter 24/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas do escritório | Cite algo que tem num escritório | 338 |
+| 2 | Personagens de Harry Potter | Cite um personagem de Harry Potter (livros ou filmes, Animais Fantásticos não contam) | 212 |
+| 3 | Petiscos de boteco | Cite um petisco de boteco | 218 |
+| 4 | Animais do mar | Cite um animal que vive no mar | 183 |
+| 5 | Coisas que dão sono | Cite algo que dá sono | 155 |
+| 6 | Coisas de casamento | Cite algo que tem num casamento | 168 |
+| 7 | Cantores internacionais | Cite um cantor ou cantora de fora do Brasil (bandas não contam) | 329 |

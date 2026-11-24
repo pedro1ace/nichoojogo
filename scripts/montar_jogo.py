@@ -87,6 +87,9 @@ FECHADAS = {
     "personagens-de-anime", "personagens-do-chaves", "sitio-do-picapau", "apps-e-sites",
     "lojas", "fast-food", "praias-brasileiras", "palavras-com-z",
     "palavras-com-x",
+    # Dia 28 (24/11/2026): montado às pressas quando a fila acabou; as recusadas do plantão completam
+    "coisas-do-escritorio", "personagens-de-harry-potter", "petiscos-de-boteco", "animais-do-mar",
+    "coisas-que-dao-sono", "coisas-de-casamento", "cantores-internacionais",
 }
 
 
