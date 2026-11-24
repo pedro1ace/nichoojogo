@@ -350,3 +350,15 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 5 | Animais de estimação | Cite um animal de estimação | 92 |
 | 6 | Coisas que dão coceira | Cite algo que dá coceira | 94 |
 | 7 | Marcas de roupa | Cite uma marca de roupa | 193 |
+
+## Dia 30 · qui 26/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas da casa da vó | Cite algo que tem na casa da vó | 131 |
+| 2 | Comida japonesa | Cite uma comida japonesa | 102 |
+| 3 | Personagens de Star Wars | Cite um personagem de Star Wars | 132 |
+| 4 | Coisas brancas | Cite algo que é branco | 137 |
+| 5 | Esportes radicais | Cite um esporte radical | 104 |
+| 6 | Coisas do circo | Cite algo que tem num circo | 90 |
+| 7 | Marcas de cerveja | Cite uma marca de cerveja | 148 |
