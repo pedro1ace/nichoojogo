@@ -362,3 +362,15 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 5 | Esportes radicais | Cite um esporte radical | 104 |
 | 6 | Coisas do circo | Cite algo que tem num circo | 90 |
 | 7 | Marcas de cerveja | Cite uma marca de cerveja | 148 |
+
+## Dia 31 · sex 27/11/2026
+
+| # | Categoria | Pergunta | Respostas |
+|---|---|---|---|
+| 1 | Coisas de bebê | Cite algo de bebê | 98 |
+| 2 | Sertanejo | Cite um cantor, cantora ou dupla sertaneja | 110 |
+| 3 | Coisas quadradas | Cite algo que é quadrado | 104 |
+| 4 | Coisas do aeroporto | Cite algo que tem num aeroporto | 98 |
+| 5 | Coisas macias | Cite algo que é macio | 89 |
+| 6 | Coisas do jardim | Cite algo que tem num jardim | 131 |
+| 7 | Coisas que têm rabo | Cite algo que tem rabo (ou cauda) | 97 |
