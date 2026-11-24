@@ -331,7 +331,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas do escritório | Cite algo que tem num escritório | 338 |
+| 1 | Coisas do escritório | Cite algo que tem num escritório | 339 |
 | 2 | Personagens de Harry Potter | Cite um personagem de Harry Potter (livros ou filmes, Animais Fantásticos não contam) | 212 |
 | 3 | Petiscos de boteco | Cite um petisco de boteco | 218 |
 | 4 | Animais do mar | Cite um animal que vive no mar | 183 |
@@ -385,16 +385,16 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 4 | Coisas que cabem no bolso | Cite algo que cabe no bolso | 114 |
 | 5 | Coisas do shopping | Cite algo que tem num shopping | 98 |
 | 6 | Coisas transparentes | Cite algo que é transparente | 84 |
-| 7 | Coisas que pulam | Cite algo que pula | 93 |
+| 7 | Coisas que pulam | Cite algo que pula | 91 |
 
 ## Dia 33 · dom 29/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas rosas | Cite algo que é rosa | 144 |
-| 2 | Coisas do cinema | Cite algo que tem num cinema | 95 |
-| 3 | Coisas que têm buraco | Cite algo que tem buraco | 192 |
-| 4 | Coisas da roça | Cite algo que tem na roça | 253 |
-| 5 | Presentes de amigo secreto | Cite um presente de amigo secreto | 143 |
-| 6 | Coisas de Ano-Novo | Cite algo do Ano-Novo | 107 |
-| 7 | Coisas laranjas | Cite algo que é laranja | 106 |
+| 1 | Coisas rosas | Cite algo que é rosa | 142 |
+| 2 | Coisas do cinema | Cite algo que tem num cinema | 93 |
+| 3 | Coisas que têm buraco | Cite algo que tem buraco | 190 |
+| 4 | Coisas da roça | Cite algo que tem na roça | 251 |
+| 5 | Presentes de amigo secreto | Cite um presente de amigo secreto | 141 |
+| 6 | Coisas de Ano-Novo | Cite algo do Ano-Novo | 105 |
+| 7 | Coisas laranjas | Cite algo que é laranja | 104 |
