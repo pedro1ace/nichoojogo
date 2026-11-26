@@ -343,25 +343,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas da academia | Cite algo que tem numa academia de ginástica | 162 |
-| 2 | Personagens de Os Simpsons | Cite um personagem de Os Simpsons | 131 |
-| 3 | Drinks e coquetéis | Cite um drink ou coquetel | 133 |
-| 4 | Jogos de tabuleiro | Cite um jogo de tabuleiro | 152 |
-| 5 | Animais de estimação | Cite um animal de estimação | 102 |
-| 6 | Coisas que dão coceira | Cite algo que dá coceira | 104 |
-| 7 | Marcas de roupa | Cite uma marca de roupa | 212 |
+| 1 | Coisas da academia | Cite algo que tem numa academia de ginástica | 199 |
+| 2 | Personagens de Os Simpsons | Cite um personagem de Os Simpsons | 142 |
+| 3 | Drinks e coquetéis | Cite um drink ou coquetel | 146 |
+| 4 | Jogos de tabuleiro | Cite um jogo de tabuleiro | 159 |
+| 5 | Animais de estimação | Cite um animal de estimação | 123 |
+| 6 | Coisas que dão coceira | Cite algo que dá coceira | 117 |
+| 7 | Marcas de roupa | Cite uma marca de roupa | 228 |
 
 ## Dia 30 · qui 26/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas da casa da vó | Cite algo que tem na casa da vó | 131 |
-| 2 | Comida japonesa | Cite uma comida japonesa | 102 |
-| 3 | Personagens de Star Wars | Cite um personagem de Star Wars | 132 |
-| 4 | Coisas brancas | Cite algo que é branco | 137 |
-| 5 | Esportes radicais | Cite um esporte radical | 104 |
-| 6 | Coisas do circo | Cite algo que tem num circo | 90 |
-| 7 | Marcas de cerveja | Cite uma marca de cerveja | 148 |
+| 1 | Coisas da casa da vó | Cite algo que tem na casa da vó | 155 |
+| 2 | Comida japonesa | Cite uma comida japonesa | 116 |
+| 3 | Personagens de Star Wars | Cite um personagem de Star Wars | 137 |
+| 4 | Coisas brancas | Cite algo que é branco | 163 |
+| 5 | Esportes radicais | Cite um esporte radical | 111 |
+| 6 | Coisas do circo | Cite algo que tem num circo | 103 |
+| 7 | Marcas de cerveja | Cite uma marca de cerveja | 159 |
 
 ## Dia 31 · sex 27/11/2026
 
