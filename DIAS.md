@@ -355,25 +355,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas da casa da vó | Cite algo que tem na casa da vó | 155 |
-| 2 | Comida japonesa | Cite uma comida japonesa | 116 |
-| 3 | Personagens de Star Wars | Cite um personagem de Star Wars | 137 |
-| 4 | Coisas brancas | Cite algo que é branco | 163 |
-| 5 | Esportes radicais | Cite um esporte radical | 111 |
-| 6 | Coisas do circo | Cite algo que tem num circo | 103 |
-| 7 | Marcas de cerveja | Cite uma marca de cerveja | 159 |
+| 1 | Coisas da casa da vó | Cite algo que tem na casa da vó | 189 |
+| 2 | Comida japonesa | Cite uma comida japonesa | 131 |
+| 3 | Personagens de Star Wars | Cite um personagem de Star Wars | 143 |
+| 4 | Coisas brancas | Cite algo que é branco | 213 |
+| 5 | Esportes radicais | Cite um esporte radical | 116 |
+| 6 | Coisas do circo | Cite algo que tem num circo | 119 |
+| 7 | Marcas de cerveja | Cite uma marca de cerveja | 175 |
 
 ## Dia 31 · sex 27/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas de bebê | Cite algo de bebê | 98 |
-| 2 | Sertanejo | Cite um cantor, cantora ou dupla sertaneja | 110 |
-| 3 | Coisas quadradas | Cite algo que é quadrado | 104 |
-| 4 | Coisas do aeroporto | Cite algo que tem num aeroporto | 98 |
-| 5 | Coisas macias | Cite algo que é macio | 89 |
-| 6 | Coisas do jardim | Cite algo que tem num jardim | 131 |
-| 7 | Coisas que têm rabo | Cite algo que tem rabo (ou cauda) | 97 |
+| 1 | Coisas de bebê | Cite algo de bebê | 109 |
+| 2 | Sertanejo | Cite um cantor, cantora ou dupla sertaneja | 134 |
+| 3 | Coisas quadradas | Cite algo que é quadrado | 123 |
+| 4 | Coisas do aeroporto | Cite algo que tem num aeroporto | 117 |
+| 5 | Coisas macias | Cite algo que é macio | 102 |
+| 6 | Coisas do jardim | Cite algo que tem num jardim | 151 |
+| 7 | Coisas que têm rabo | Cite algo que tem rabo (ou cauda) | 110 |
 
 ## Dia 32 · sáb 28/11/2026
 
