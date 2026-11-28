@@ -367,25 +367,25 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas de bebê | Cite algo de bebê | 109 |
-| 2 | Sertanejo | Cite um cantor, cantora ou dupla sertaneja | 134 |
-| 3 | Coisas quadradas | Cite algo que é quadrado | 123 |
-| 4 | Coisas do aeroporto | Cite algo que tem num aeroporto | 117 |
-| 5 | Coisas macias | Cite algo que é macio | 102 |
-| 6 | Coisas do jardim | Cite algo que tem num jardim | 151 |
-| 7 | Coisas que têm rabo | Cite algo que tem rabo (ou cauda) | 110 |
+| 1 | Coisas de bebê | Cite algo de bebê | 131 |
+| 2 | Sertanejo | Cite um cantor, cantora ou dupla sertaneja | 167 |
+| 3 | Coisas quadradas | Cite algo que é quadrado | 144 |
+| 4 | Coisas do aeroporto | Cite algo que tem num aeroporto | 150 |
+| 5 | Coisas macias | Cite algo que é macio | 117 |
+| 6 | Coisas do jardim | Cite algo que tem num jardim | 177 |
+| 7 | Coisas que têm rabo | Cite algo que tem rabo (ou cauda) | 127 |
 
 ## Dia 32 · sáb 28/11/2026
 
 | # | Categoria | Pergunta | Respostas |
 |---|---|---|---|
-| 1 | Coisas pretas | Cite algo que é preto | 127 |
-| 2 | Coisas do parque de diversões | Cite algo que tem num parque de diversões | 86 |
-| 3 | Personagens de O Senhor dos Anéis | Cite um personagem de O Senhor dos Anéis ou O Hobbit | 107 |
-| 4 | Coisas que cabem no bolso | Cite algo que cabe no bolso | 114 |
-| 5 | Coisas do shopping | Cite algo que tem num shopping | 98 |
-| 6 | Coisas transparentes | Cite algo que é transparente | 84 |
-| 7 | Coisas que pulam | Cite algo que pula | 91 |
+| 1 | Coisas pretas | Cite algo que é preto | 150 |
+| 2 | Coisas do parque de diversões | Cite algo que tem num parque de diversões | 109 |
+| 3 | Personagens de O Senhor dos Anéis | Cite um personagem de O Senhor dos Anéis ou O Hobbit | 114 |
+| 4 | Coisas que cabem no bolso | Cite algo que cabe no bolso | 129 |
+| 5 | Coisas do shopping | Cite algo que tem num shopping | 121 |
+| 6 | Coisas transparentes | Cite algo que é transparente | 105 |
+| 7 | Coisas que pulam | Cite algo que pula | 104 |
 
 ## Dia 33 · dom 29/11/2026
 
