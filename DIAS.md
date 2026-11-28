@@ -312,7 +312,7 @@ Nenhuma categoria se repete; categoria nova entra no fim da fila.
 | 3 | Pontos turísticos | Cite um ponto turístico (do Brasil ou do mundo) | 2424 |
 | 4 | Hobbies e passatempos | Cite um hobby ou passatempo | 690 |
 | 5 | Sabores de sorvete | Cite um sabor de sorvete | 2789 |
-| 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 44 |
+| 6 | Chaves e Chapolin | Cite um personagem de Chaves ou Chapolin | 45 |
 | 7 | Coisas verdes | Cite algo que é verde | 789 |
 
 ## Dia 27 · seg 23/11/2026

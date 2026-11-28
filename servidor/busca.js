@@ -323,6 +323,8 @@ function buscarGrafia(cat, texto, soExata = false) {
       const item = !cat.soltas.has(chave) && cat.derivadas && cat.derivadas.get(chave);
       if (item) return { ...item, exato: true };
     }
+    const proprio = cat.nomesProprios && cat.nomesProprios.get(palavrasSoltas(texto).filter((p) => !TITULOS.has(p)).join(""));
+    if (proprio) return { ...proprio, exato: true };
   }
   if (soExata || !cat.formas) return null;
   // até 3 letras, só quando soa igual ("cid" -> "Sid")
@@ -406,7 +408,15 @@ const TETO_SINONIMO = 34;
 // Palavras do tema que se repetem nas respostas da lista: "pao" em "Pão australiano", "pastel"
 // em "Pastel de vento", "azul" em "Olhos azuis". O jogador costuma escrever só o resto
 // ("australiano", "vento", "olhos"). Vale a palavra que está no nome da categoria e abre (ou
-// fecha) pelo menos 2 respostas, ou a que abre (ou fecha) 1 de cada 4 respostas compostas.
+// fecha) alguma resposta, ou a que abre (ou fecha) 1 de cada 4 respostas compostas.
+// Título na frente do nome, que o jogador pula. E as listas de gente, onde vale só o nome ou só o sobrenome.
+const TITULOS = new Set(["seu", "sr", "senhor", "dona", "dna", "sra", "senhora", "dom", "dr", "doutor", "doutora",
+  "professor", "professora", "prof", "tio", "tia", "vovo", "vo", "rei", "rainha", "king", "queen", "mr", "mrs",
+  "miss", "sir", "lady", "capitao", "captain", "general", "sargento", "cabo", "coronel", "major", "tenente",
+  "princesa", "principe", "prince", "princess", "conde", "count", "lord", "mestre", "padre", "frei", "irma", "santo", "sao"]);
+const SUFIXOS = new Set(["jr", "junior", "filho", "neto", "sobrinho", "segundo", "terceiro", "ii", "iii"]);
+const PESSOAS = /^(personagens|atletas|jogadores|jogadoras|pilotos|poetas|escritores|cantores|cantoras|atores|atrizes|musicos|cientistas|apresentadores|astronautas|pintores|artistas|youtubers|humoristas|presidentes|herois|viloes|tenistas|lutadores|nadadores|ginastas|treinadores|tecnicos|compositores|filosofos|inventores|personalidades|famosos|celebridades|rappers|djs|influenciadores|santos|reis|rainhas|deuses|imperadores|jornalistas|modelos-famosas)(-|$)/;
+
 function palavrasDoTema(cat) {
   const doNome = new Set(cat.id.split("-").map(radical).filter((p) => p.length >= 3 && !CONECTORES.has(p)));
   const frente = new Map();
@@ -420,7 +430,7 @@ function palavrasDoTema(cat) {
     fim.set(ps[ps.length - 1], (fim.get(ps[ps.length - 1]) || 0) + 1);
   }
   const escolher = (m) => new Set([...m]
-    .filter(([p, n]) => p.length >= 3 && ((doNome.has(p) && n >= 2) || (n >= 5 && n >= compostas / 4)))
+    .filter(([p, n]) => p.length >= 3 && ((doNome.has(p) && n >= 1) || (n >= 5 && n >= compostas / 4)))
     .map(([p]) => p));
   return { frente: escolher(frente), fim: escolher(fim) };
 }
@@ -455,11 +465,16 @@ function prepararCategoria(cat) {
       guardar(palavras.map(radical).join(""), item);
       const sem = tirarDaFrente(palavras, PREFIXOS_DA_LISTA[cat.id]);
       if (sem && sem.join("").length >= 4) guardar(sem.map(radical).join(""), item);
+      // sem o que está entre parênteses, que só desfaz a dúvida: "lucia" = Lucia (GTA VI),
+      // "fosforo" = Fósforo (cabeça)
+      const semParenteses = nome.replace(/\([^)]*\)/g, " ").trim();
+      if (semParenteses !== nome && compactar(semParenteses).length >= 3) guardar(palavrasSoltas(semParenteses).map(radical).join(""), item);
     }
   }
   // O nome sem a palavra do tema ("australiano" = Pão australiano, "vento" = Pastel de vento),
   // que só vale quando o que foi digitado não é a forma de outra resposta. Se a mesma forma
-  // serve para duas respostas, não vale para nenhuma (o jogo não adivinha).
+  // serve para duas respostas ("pipa": Corrida de pipa e Corrida de pipas; "negro": Lago Negro e
+  // Mar Negro), vale a mais comum, com os pontos dela: recusar o que o jogador sabe é pior.
   const tema = palavrasDoTema(cat);
   const derivadas = new Map();
   for (const r of cat.respostas) {
@@ -469,8 +484,43 @@ function prepararCategoria(cat) {
       const chave = resto && resto.join("");
       if (!chave || chave.length < 3 || soltas.has(chave)) continue;
       const ja = derivadas.get(chave);
-      if (ja === undefined) derivadas.set(chave, item);
-      else if (ja && ja.resposta !== item.resposta) derivadas.set(chave, null);
+      if (ja === undefined || item.resposta.pontos < ja.resposta.pontos) derivadas.set(chave, item);
+    }
+  }
+  // Sem o título na frente ("madruga" = Seu Madruga, "clotilde" = Dona Clotilde, "falcon" = Captain
+  // Falcon), em lista de gente. Ali também vale o sobrenome que só uma resposta tem ("hypolito" =
+  // Diego Hypólito, "armstrong" = Neil Armstrong) e o primeiro nome que só uma resposta tem, quando
+  // ela não é rara ("flavia" = Flávia Saraiva): um nome comum não pode dar os pontos de uma nichada.
+  // Conta só o nome principal, sem o que vem entre parênteses ("Gary Payton (astronauta)").
+  // A palavra tem de ser igual à do nome (sem radical): "matue" não vira Moduan Matus.
+  const nomesProprios = new Map();
+  if (PESSOAS.test(cat.id)) {
+    const doNome = new Set(cat.id.split("-").map(radical));
+    const usos = new Map(); // palavra -> respostas que abrem ou fecham com ela ("Ana Flávia Sanglard" não tira "flavia" de Flávia Saraiva)
+    const pontas = []; // [chave, resposta, true se é o primeiro nome / "titulo" se é o nome sem o título]
+    for (const r of cat.respostas) {
+      const todas = palavrasSoltas(r.resposta.replace(/\([^)]*\)/g, " "));
+      let ps = todas;
+      while (ps.length > 1 && TITULOS.has(ps[0])) ps = ps.slice(1);
+      while (ps.length > 1 && SUFIXOS.has(ps[ps.length - 1])) ps = ps.slice(0, -1);
+      for (const p of new Set([ps[0], ps[ps.length - 1]])) {
+        const k = radical(p);
+        if (!usos.has(k)) usos.set(k, new Set());
+        usos.get(k).add(r);
+      }
+      if (ps.length < todas.length && ps.join("").length >= 3) pontas.push([ps.join(""), r, "titulo"]);
+      if (ps.length >= 2) {
+        pontas.push([ps[ps.length - 1], r, false]);
+        pontas.push([ps[0], r, true]);
+      }
+    }
+    for (const [chave, r, primeiro] of pontas) {
+      const k = radical(chave);
+      if (chave.length < 4 || doNome.has(k) || soltas.has(k) || derivadas.has(k) || nomesProprios.has(chave)) continue;
+      const u = usos.get(k);
+      if (u && u.size > 1 && primeiro !== "titulo") continue;
+      if (primeiro === true && r.pontos >= PONTOS_NICHADA) continue;
+      nomesProprios.set(chave, { resposta: r, nome: r.resposta });
     }
   }
   // para a correção: cada grafia (nome e apelidos) com o som e a forma solta dela
@@ -495,7 +545,7 @@ function prepararCategoria(cat) {
     }
   }
   const semFormas = SEM_FORMAS.has(cat.id);
-  return { ...cat, mapa, formas, palavras, soltas: semFormas ? null : soltas, derivadas: semFormas ? null : derivadas };
+  return { ...cat, mapa, formas, palavras, soltas: semFormas ? null : soltas, derivadas: semFormas ? null : derivadas, nomesProprios: semFormas ? null : nomesProprios };
 }
 
-export { normalizar, compactar, distancia, tolerancia, CONECTORES, SEM_FORMAS, ENFEITES, PREFIXOS_DA_LISTA, radical, palavrasSoltas, tirarDaFrente, chavesSoltas, som, VIZINHAS, mesmoComeco, erros, errosComSom, palavraBate, palavrasBatem, PONTOS_NICHADA, erroSeguro, buscar, PEDACO_MINIMO, PEDACO_FOLGA, buscarPedaco, buscarGrafia, comoBate, TETO_SINONIMO, palavrasDoTema, semPalavrasDoTema, prepararCategoria };
+export { normalizar, compactar, distancia, tolerancia, CONECTORES, SEM_FORMAS, ENFEITES, PREFIXOS_DA_LISTA, radical, palavrasSoltas, tirarDaFrente, chavesSoltas, som, VIZINHAS, mesmoComeco, erros, errosComSom, palavraBate, palavrasBatem, PONTOS_NICHADA, erroSeguro, buscar, PEDACO_MINIMO, PEDACO_FOLGA, buscarPedaco, buscarGrafia, comoBate, TETO_SINONIMO, TITULOS, SUFIXOS, PESSOAS, palavrasDoTema, semPalavrasDoTema, prepararCategoria };
